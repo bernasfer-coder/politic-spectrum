@@ -8,6 +8,61 @@ There is no universally correct number of political dimensions. Established proj
 
 The current five axes are a reasonable educational starting point because they separate economic policy, social values, authority, national identity, and foreign policy. That is a design hypothesis, not proof that five is optimal. The project should keep five for v1 unless research finds a clear defect, while testing possible additions as optional facets or a versioned expanded model rather than silently changing the meaning of existing scores.
 
+## Final product decision
+
+**Decision: ship a five-dimensional core for v1, keep the 5D branding, and move additional concepts into optional facets, tags, and context-specific profiles.** This resolves the four-dimensional versus five-dimensional branding question and establishes the threshold for any future sixth or later core dimension.
+
+### 4D: rejected for v1
+
+The project will not reduce the core to four dimensions. The current five axes answer different questions: economic organization, social values, domestic authority, national belonging, and the use of power abroad. Removing one would force at least two of those disagreements into a composite score, making mixed profiles harder to interpret and making the “why did my score move?” explanation less honest. This is a product-design judgment based on the current construct map, not a claim that a four-factor model is impossible in every research setting.
+
+### 5D: approved as the public core
+
+The public product remains:
+
+1. Economic model.
+2. Social values.
+3. Authority.
+4. National identity.
+5. Foreign policy.
+
+The 5D label is therefore accurate. Every questionnaire item, slider, result card, library profile, cache payload, and piece of branding must derive its count from the canonical `DIMENSIONS` list. Five is a useful explanatory compromise for this educational product: it is richer than a single left-right line while still fitting in one understandable result experience.
+
+The evidence does not establish “five” as a universal natural structure. The World Values Survey presents two broad cross-cultural value dimensions derived from factor analysis and explicitly describes its indicators as a small representation of wider underlying values.^9 CHES uses recurring measures such as economic left-right, GAL-TAN, and European integration, then adds issue-specific positions; its structure is designed for party comparison in a defined regional context rather than as a universal human political map.^10 These are reasons to treat five as a scoped product model, not as a law of politics.
+
+### Many dimensions: not a single public slider wall
+
+The project will not add six, seven, or ten mandatory core sliders at this stage. Additional concepts remain valuable, but they should first enter as optional modules or library filters:
+
+- religion / secularism;
+- democracy and institutionalism;
+- ecology and growth;
+- immigration and integration;
+- decentralization and territorial autonomy;
+- populism and anti-elite politics;
+- equality / hierarchy;
+- technology, expertise, and knowledge governance.
+
+This layered approach follows a distinction already visible in comparative research. The Manifesto Project uses many coded categories across policy domains to analyze party texts; that does not mean all categories should become person-level axes.^11 Pew’s 2026 political typology uses 30 questions and cluster analysis to classify U.S. adults into groups, not to claim that a fixed number of sliders is the one true dimensionality.^12 A recent comparative study also reports that mass opinion can be weakly structured, sometimes two-dimensional or multidimensional and sometimes effectively non-dimensional, while elite positions are more constrained.^13
+
+### Product architecture after the decision
+
+1. **Core profile:** the five public axes remain the stable v1 result.
+2. **Optional issue modules:** users may explore religion, ecology, immigration, democracy, populism, decentralization, or other candidates without changing the core score.
+3. **Taxonomy and context:** political labels, countries, movements, parties, cities, and historical cases remain searchable by time, geography, family, label type, and evidence.
+4. **Future model versions:** a genuinely different six-dimensional or larger model must be introduced as a named, versioned alternative, such as `core-6d-v2`, with its own items, sources, validation, UI, migration rules, and comparison explanation.
+
+### Gate for adding a new core dimension
+
+No candidate becomes a mandatory core axis until it demonstrates: a distinct construct beyond the existing five; theoretical and comparative support for the intended scope; balanced and understandable items; reliability and test-retest stability; measurement invariance across the intended languages or populations; incremental explanatory value; and acceptable completion burden and accessibility. A candidate that is important but fails one of those tests belongs in a facet or filter instead.
+
+### What is resolved and what remains open
+
+- **Resolved:** the v1 product is 5D, not 4D or an unbounded many-dimensional questionnaire.
+- **Resolved:** the existing 5D logo and visible five-axis UI are conceptually consistent; Issue #6 can close after the browser check already completed.
+- **Resolved:** Issue #10 has a decision and can close as a research decision record.
+- **Still open:** empirical validation of the item battery, cross-cultural measurement, and optional-facet usefulness. Those are follow-up research, not reasons to delay the 5D v1 scope.
+
 ## Current five-axis hypothesis
 
 1. **Economic:** public/collectivist intervention ↔ market/private ownership.
@@ -189,6 +244,12 @@ This structure preserves a readable v1 while allowing deeper research and differ
 - [ ] Public methodology page explaining that the model is an educational framework with uncertainty and limitations.
 
 ## Sources
+
+[^9]: World Values Survey, [Findings and Insights: Inglehart–Welzel cultural map](https://www.worldvaluessurvey.org/WVSContents.jsp?CMSID=Findings), especially the explanation of the two factor-derived dimensions and their limits.
+[^10]: Chapel Hill Expert Survey, [CHES-Europe](https://www.chesdata.eu/ches-europe/), describing recurring economic left-right, GAL-TAN, European-integration, and issue-specific measures across party systems.
+[^11]: Manifesto Project, [coding instructions and policy domains](https://manifestoproject.wzb.eu/information/documents/handbooks), describing its many category text-analysis framework for party programmes.
+[^12]: Pew Research Center, [About the 2026 Political Typology: Methods & Quiz](https://www.pewresearch.org/about-the-political-typology/), describing its 30-question cluster-analysis approach to nine U.S. groups.
+[^13]: [One-dimensional, multidimensional, or non-dimensional? Ideological structure in mass and elite opinion](https://www.cambridge.org/core/journals/european-journal-of-political-research/article/onedimensional-multidimensional-or-nondimensional-ideological-structure-in-mass-and-elite-opinion/78C953E1B5CC289B183AC549621DB14D), *European Journal of Political Research*, reporting cross-national variation in ideological constraint and structure.
 
 [^1]: World Values Survey, [Findings and Insights: Inglehart–Welzel cultural map](https://www.worldvaluessurvey.org/WVSContents.jsp?CMSID=Findings).
 [^2]: Pew Research Center, [About the 2026 Political Typology: Methods & Quiz](https://www.pewresearch.org/about-the-political-typology/).

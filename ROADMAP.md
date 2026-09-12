@@ -29,7 +29,7 @@ This roadmap is sequential where a later step depends on an earlier quality or s
 ### Milestone 0 — freeze the v1 scope
 
 - [ ] Confirm the v1 feature list and stop unrelated feature expansion.
-- [ ] Confirm the canonical five-dimension model and release terminology.
+- [x] Confirm the canonical five-dimension model and release terminology; document the 4D/5D/many-dimensional decision in `DIMENSION_COUNT_RESEARCH.md`.
 - [ ] Define the release owner, reviewer, incident contact, and publication domain.
 - [ ] Create a `v1` release checklist and keep all changes in Git.
 
@@ -39,7 +39,7 @@ This roadmap is sequential where a later step depends on an earlier quality or s
 
 Resolve the current content/branding work before launch:
 
-- [ ] Close or complete [Issue #6](https://github.com/bernasfer-coder/politic-spectrum/issues/6): reconcile the “5D” logo with the actual dimensions shown.
+- [x] Close or complete [Issue #6](https://github.com/bernasfer-coder/politic-spectrum/issues/6): reconcile the “5D” logo with the actual dimensions shown.
 - [ ] Continue [Issue #1](https://github.com/bernasfer-coder/politic-spectrum/issues/1): normalize labels, overlaps, distinctions, and filters.
 - [ ] Review all author, movement, country, historical, and city claims with source links and confidence/qualification language.
 - [ ] Complete [Issue #5](https://github.com/bernasfer-coder/politic-spectrum/issues/5): publish accurate AI-assistance and human-review disclosure where appropriate.
