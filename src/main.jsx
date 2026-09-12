@@ -54,6 +54,86 @@ const DEFAULT_SCORES = Object.fromEntries(DIMENSIONS.map(({ id }) => [id, 0]));
 const OPTION_VALUES = [-100, -50, 0, 50, 100];
 const OPTION_LABELS = ['Strongly disagree', 'Disagree', 'Unsure / mixed', 'Agree', 'Strongly agree'];
 
+const PALETTES = {
+  neutral: {
+    label: 'Neutral / mixed',
+    primary: '#55d6be',
+    secondary: '#8c84ff',
+    warm: '#ff9f43',
+    background: '#07101d',
+    glow: 'rgba(85, 214, 190, .18)',
+    soft: '#c1ccda',
+    muted: '#8393a9',
+    line: 'rgba(165, 188, 214, .15)',
+  },
+  'authoritarian-collectivist': {
+    label: 'Collectivist red · gold',
+    primary: '#d62828',
+    secondary: '#f4d35e',
+    warm: '#fff4d6',
+    background: '#160b0b',
+    glow: 'rgba(214, 40, 40, .22)',
+    soft: '#f0d7c2',
+    muted: '#b89b91',
+    line: 'rgba(244, 211, 94, .18)',
+  },
+  'historical-fascist': {
+    label: 'Historical warning · rust',
+    primary: '#d04a2f',
+    secondary: '#d9b44a',
+    warm: '#e9e1cd',
+    background: '#11100f',
+    glow: 'rgba(208, 74, 47, .2)',
+    soft: '#ddd1bc',
+    muted: '#9e9282',
+    line: 'rgba(217, 180, 74, .18)',
+  },
+  'libertarian-market': {
+    label: 'Libertarian teal · gold',
+    primary: '#55d6be',
+    secondary: '#d8c06a',
+    warm: '#b7ecdf',
+    background: '#071414',
+    glow: 'rgba(85, 214, 190, .2)',
+    soft: '#c2dfda',
+    muted: '#819f9c',
+    line: 'rgba(85, 214, 190, .16)',
+  },
+  'progressive-liberal': {
+    label: 'Progressive violet · cyan',
+    primary: '#9b8cff',
+    secondary: '#65d6ff',
+    warm: '#f28db2',
+    background: '#0b0c1c',
+    glow: 'rgba(155, 140, 255, .2)',
+    soft: '#d4d4ed',
+    muted: '#9295b9',
+    line: 'rgba(155, 140, 255, .17)',
+  },
+  'national-conservative': {
+    label: 'National conservative · red',
+    primary: '#ef4d4d',
+    secondary: '#e4bd51',
+    warm: '#f0efe8',
+    background: '#11111a',
+    glow: 'rgba(239, 77, 77, .18)',
+    soft: '#d8d9df',
+    muted: '#9699aa',
+    line: 'rgba(228, 189, 81, .18)',
+  },
+  'social-democratic': {
+    label: 'Social democratic · blue',
+    primary: '#5ea7ff',
+    secondary: '#ef91b4',
+    warm: '#f2cf76',
+    background: '#081321',
+    glow: 'rgba(94, 167, 255, .2)',
+    soft: '#c9d7e8',
+    muted: '#8498b2',
+    line: 'rgba(94, 167, 255, .17)',
+  },
+};
+
 const QUESTIONS = [
   { id: 'economic-1', dimension: 'economic', prompt: 'The state should own or tightly control essential industries.', polarity: -1 },
   { id: 'economic-2', dimension: 'economic', prompt: 'Higher taxes and public spending are worth it if they substantially reduce inequality.', polarity: -1 },
@@ -271,6 +351,22 @@ function App() {
 
   const matches = useMemo(() => getMatches(scores), [scores]);
   const topMatch = matches[0];
+  const themeScores = mode === 'questionnaire' ? calculateScores(answers) : scores;
+  const themeMatch = useMemo(() => {
+    const hasSignal = Object.values(themeScores).some((value) => value !== 0);
+    return hasSignal ? getMatches(themeScores)[0] : { id: 'neutral' };
+  }, [mode, themeScores]);
+  const palette = PALETTES[themeMatch.id] || PALETTES.neutral;
+  const themeStyle = {
+    '--cyan': palette.primary,
+    '--violet': palette.secondary,
+    '--orange': palette.warm,
+    '--bg': palette.background,
+    '--soft': palette.soft,
+    '--muted': palette.muted,
+    '--line': palette.line,
+    '--theme-glow': palette.glow,
+  };
   const currentQuestion = QUESTIONS[questionIndex];
   const currentDimension = DIMENSIONS.find(({ id }) => id === currentQuestion.dimension);
   const completedCount = QUESTIONS.filter(({ id }) => answers[id] !== undefined).length;
@@ -296,7 +392,7 @@ function App() {
   }
 
   return (
-    <div className="app-shell">
+    <div className="app-shell" style={themeStyle}>
       <header className="topbar">
         <div className="brand-lockup">
           <div className="brand-mark" aria-hidden="true"><span /><span /><span /></div>
@@ -305,7 +401,7 @@ function App() {
             <p className="brand-tagline">A five-axis political fingerprint</p>
           </div>
         </div>
-        <div className="topbar-meta"><span className="live-dot" /> Educational prototype <span className="meta-divider" /> v0.1</div>
+        <div className="topbar-meta"><span className="palette-readout"><i className="palette-swatch" /> Palette: {palette.label}</span><span className="meta-divider" /> v0.1</div>
       </header>
 
       <main>
