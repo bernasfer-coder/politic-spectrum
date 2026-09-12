@@ -1,4 +1,7 @@
+import { RESEARCH_WORKS } from './research.js';
+
 const REVIEWED_AT = '2026-09-12';
+const RESEARCH_WORKS_REVIEWED_AT = '2026-09-13';
 
 function record(rightsStatus, license, commercialUse, publicationStatus, action, notes) {
   return {
@@ -57,7 +60,111 @@ const OPEN_LICENSE = record(
   'This status applies to the V-Dem dataset terms, not automatically to every page, graphic, or third-party source linked from V-Dem.',
 );
 
+const OFFICIAL_TEXT = record(
+  'official or institutional text / jurisdiction-dependent',
+  'The official text is publicly accessible, but no blanket commercial-reuse licence is recorded for this project.',
+  'Publish an independent summary and link to the official text. Do not assume that public access clears reproduction, translation, or derivative publication.',
+  'link-only',
+  'Link to the official repository and paraphrase independently. Verify the issuing institution’s terms before reproducing text, translations, or facsimiles.',
+  'Legal and international instruments may have special publication rules, but the exact repository and jurisdiction still control reuse.',
+);
+
+const COMMUNITY_CONTROLLED = record(
+  'community-controlled / permission-sensitive',
+  'No blanket commercial-reuse licence identified for the oral tradition, community-held knowledge, or modern transcription/translation.',
+  'Do not commercially reproduce, adapt, or package the tradition, performance, translation, or transcription without source-owner or community review.',
+  'link-only',
+  'Use contextual description and a stable link only. Preserve community attribution and distinguish living oral transmission from a later written edition.',
+  'A public archive or UNESCO listing documents access or recognition; it does not automatically grant commercial rights to every version or translation.',
+);
+
+const PUBLIC_DOMAIN_CANDIDATE_WORK_IDS = new Set([
+  'plato-republic',
+  'aristotle-politics',
+  'confucius-analects',
+  'kautilya-arthashastra',
+  'ptahhotep-instruction',
+  'hammurabi-code',
+  'thucydides-peloponnesian-war',
+  'polybius-histories',
+  'cicero-de-republica',
+  'augustine-city-of-god',
+  'justinian-corpus-juris-civilis',
+  'aquinas-de-regno',
+  'magna-carta-1215',
+  'constitution-medina',
+  'laozi-dao-de-jing',
+  'sunzi-art-of-war',
+  'mencius',
+  'xunzi',
+  'mozi',
+  'han-feizi',
+  'book-lord-shang',
+  'ashoka-edicts',
+  'manusmriti',
+  'tirukkural',
+  'agganna-sutta',
+  'al-farabi-virtuous-city',
+  'al-mawardi-ordinances',
+  'nizam-siyasatnama',
+  'ibn-khaldun-muqaddimah',
+  'machiavelli-prince',
+  'machiavelli-discourses',
+  'grotius-rights-war-peace',
+  'hobbes-leviathan',
+  'locke-second-treatise',
+  'rousseau-social-contract',
+  'montesquieu-spirit-laws',
+  'wollstonecraft-vindication',
+  'federalist-papers',
+  'tocqueville-democracy-america',
+  'mill-on-liberty',
+  'marx-engels-communist-manifesto',
+]);
+
+const OFFICIAL_TEXT_WORK_IDS = new Set([
+  'constitution-united-states',
+  'constitution-india',
+  'constitution-south-africa',
+  'universal-declaration-human-rights',
+]);
+
+const COMMUNITY_CONTROLLED_WORK_IDS = new Set([
+  'great-law-peace',
+  'manden-charter',
+  'sunjata-epic',
+]);
+
+function researchWorkRights(work) {
+  const base = OFFICIAL_TEXT_WORK_IDS.has(work.id)
+    ? OFFICIAL_TEXT
+    : COMMUNITY_CONTROLLED_WORK_IDS.has(work.id)
+      ? COMMUNITY_CONTROLLED
+      : PUBLIC_DOMAIN_CANDIDATE_WORK_IDS.has(work.id)
+        ? PUBLIC_DOMAIN_CANDIDATE
+        : PERMISSION_SENSITIVE;
+
+  const focus = work.originalLanguage.includes('translated') || work.originalLanguage.includes('translations')
+    ? 'Translation and edition review is mandatory because the inventory includes later translations.'
+    : work.sourceType.includes('manuscript')
+      ? 'Archive, manuscript-image, and transcription rights must be checked separately.'
+      : work.sourceType.includes('inscription') || work.sourceType.includes('legal')
+        ? 'Check the exact inscription, official repository, transcription, and jurisdiction before quoting.'
+        : 'Check the exact edition, transcription, translation, and repository terms before quoting.';
+
+  return {
+    ...base,
+    reviewedAt: RESEARCH_WORKS_REVIEWED_AT,
+    notes: `${base.notes} ${focus} Inventory record: ${work.title} (${work.originalLanguage}).`,
+  };
+}
+
+const RESEARCH_WORK_RIGHTS = Object.fromEntries(
+  RESEARCH_WORKS.map((work) => [work.id, researchWorkRights(work)]),
+);
+
 const RIGHTS_RECORDS = {
+  researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
     panXu: { ...LINK_ONLY, notes: 'Scholarly article used as a claim-level reference; the article text is not reproduced.' },
     sepSocialism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },

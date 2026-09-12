@@ -7,6 +7,7 @@ import {
   RESEARCH_POLITICAL_FORMS,
   RESEARCH_RELATIONSHIPS,
   RESEARCH_WORKS,
+  RIGHTS_RECORDS,
 } from '../src/content/index.js';
 
 const dimensionIds = new Set(DIMENSIONS.map(({ id }) => id));
@@ -17,8 +18,14 @@ const bibliographyFor = (field, id) => BIBLIOGRAPHY_RECORDS.filter((record) => r
 assert.equal(RESEARCH_WORKS.length, 61, 'the curated research inventory should contain 61 works/legal texts');
 assert.equal(RESEARCH_PEOPLE.length, 21, 'the curated research inventory should contain 21 people');
 assert.equal(RESEARCH_COVERAGE_MATRIX.length, DIMENSIONS.length, 'coverage must include every dimension');
+assert.equal(Object.keys(RIGHTS_RECORDS.researchWorks ?? {}).length, RESEARCH_WORKS.length, 'every research work must have a rights record');
 
 for (const work of RESEARCH_WORKS) {
+  const rights = RIGHTS_RECORDS.researchWorks[work.id];
+  const bibliographyRecord = bibliographyFor('researchWorkIds', work.id)[0];
+  assert.ok(rights, `${work.id} must have a rights decision`);
+  assert.ok(rights.notes, `${work.id} rights decision must include a rationale`);
+  assert.ok(bibliographyRecord, `${work.id} must have a bibliography record before rights can be mirrored`);
   assert.ok(work.claims.length >= 2, `${work.id} should expose at least two claim-level evidence records`);
   assert.equal(new Set(work.claims.map(({ id }) => id)).size, work.claims.length, `${work.id} claim IDs must be unique`);
   for (const item of work.claims) {
@@ -27,6 +34,12 @@ for (const work of RESEARCH_WORKS) {
     assert.ok(item.positionRange[0] >= -100 && item.positionRange[1] <= 100, `${work.id} claim range must fit the five-axis scale`);
   }
   assert.equal(bibliographyFor('researchWorkIds', work.id).length, 1, `${work.id} must have one bibliography record`);
+  assert.equal(bibliographyRecord.rightsStatus, rights.rightsStatus, `${work.id} bibliography must mirror its rights status`);
+  assert.equal(bibliographyRecord.license, rights.license, `${work.id} bibliography must mirror its licence note`);
+  assert.equal(bibliographyRecord.commercialUse, rights.commercialUse, `${work.id} bibliography must mirror its commercial-use decision`);
+  assert.equal(bibliographyRecord.publicationStatus, rights.publicationStatus, `${work.id} bibliography must mirror its publication status`);
+  assert.equal(bibliographyRecord.editorialAction, rights.action, `${work.id} bibliography must mirror its editorial action`);
+  assert.equal(bibliographyRecord.review.reviewedAt, rights.reviewedAt, `${work.id} bibliography must mirror its rights review date`);
 }
 
 for (const person of RESEARCH_PEOPLE) {

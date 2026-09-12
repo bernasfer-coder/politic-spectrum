@@ -15,11 +15,26 @@ This is a risk-control and editorial policy, not legal advice. Fair use, quotati
 
 ## Current status
 
-The current app publishes original interface and explanatory text with links to external sources. It does not bundle external datasets, photographs, maps, logos, screenshots, or copied chapters. The content layer now includes a rights/provenance record for every research source, source link, and author reference in `src/content/rights.js`.
+The current app publishes original interface and explanatory text with links to external sources. It does not bundle external datasets, photographs, maps, logos, screenshots, or copied chapters. The content layer now includes a rights/provenance record for every research source, source link, author reference, and research work in `src/content/rights.js`.
 
 Direct quotations are currently treated as **review-required** and are no longer displayed in the public UI. The author/work link remains available with a notice that the quotation is held. This is intentionally conservative while the exact edition, translation, and commercial publication position are verified.
 
 The existing 25-word automated quote limit is an editorial guardrail only. It is not a legal safe harbour or a universal quotation limit.
+
+## Research-work rights gate (13 September 2026)
+
+All 61 entries in the research-work inventory now have an explicit rights record. The generated Bibliography entry mirrors that record, so a work cannot appear as ordinary citation metadata while its publication posture is missing.
+
+| Classification | Count | Publication posture |
+| --- | ---: | --- |
+| `public-domain candidate` | 41 | `review-required`; link and independently paraphrase until the exact edition, translation, transcription, jurisdiction, and repository terms are checked |
+| `permission-sensitive` | 13 | `link-only`; no expressive reproduction, translation, adaptation, or media reuse is cleared |
+| `official or institutional text / jurisdiction-dependent` | 4 | `link-only`; public access to a constitution or international instrument is not treated as a blanket commercial licence |
+| `community-controlled / permission-sensitive` | 3 | `link-only`; preserve community attribution and obtain source-owner or community review before reproducing or adapting oral-tradition material |
+
+This is deliberately a rights gate, not a claim that every historical work is copyrighted. A public-domain candidate is a research conclusion requiring edition-level confirmation, not a permission grant. The U.S. Copyright Office describes fair use as a case-specific analysis with no automatic word-count safe harbour[^7]. Brazil’s quotation rules and Switzerland’s quotation exception likewise depend on purpose, attribution, necessity, and extent rather than on a blanket “educational” label[^9][^10]. International access does not remove territorial or edition-specific questions[^11].
+
+The inventory includes translations, transcriptions, archive pages, legal instruments, and living oral traditions. Those are separate rights objects from the underlying historical idea or event. Public repositories such as Perseus, the Chinese Text Project, and UNESCO’s Manden Charter page are therefore treated as source links to verify, not as automatic permission to copy their text, translations, images, or metadata. The app currently publishes zero direct quotations, source-page extracts, dataset files, or third-party media from this research-work set.
 
 ## Rights vocabulary
 
@@ -27,10 +42,12 @@ The existing 25-word automated quote limit is an editorial guardrail only. It is
 | --- | --- | --- |
 | `original-analysis` | Text written by this project from independently checked facts and interpretations | Publish with claim-level provenance and editorial review |
 | `link-only` | External source is useful to consult or cite, but no reproduction right has been recorded | Link and paraphrase independently; do not copy expressive text or media |
-| `public-domain-candidate` | The underlying historical work may be public domain, but the edition, transcription, translation, or jurisdiction still needs checking | Link and paraphrase; quote only after edition/translation review |
+| `public-domain candidate` | The underlying historical work may be public domain, but the edition, transcription, translation, or jurisdiction still needs checking | Link and paraphrase; quote only after edition/translation review |
 | `open-license` | A licence gives reuse permission under stated conditions | Follow attribution, licence, ShareAlike, and change-notice requirements exactly |
 | `restricted-data` | Provider terms restrict redistribution, commercial use, or both | Do not mirror or bundle the data; use permitted derived results and citations only |
 | `permission-sensitive` | Copyright or other rights make reproduction uncertain or permission-dependent | Link only until permission or qualified legal review is recorded |
+| `official or institutional text / jurisdiction-dependent` | Publicly issued legal or institutional material whose exact repository and reuse terms still need checking | Link to the issuing institution and independently summarize |
+| `community-controlled / permission-sensitive` | Oral, Indigenous, or living-tradition material requiring source-owner and community-aware review | Contextual link and attribution only until appropriate review or permission |
 | `unknown-escalate` | Rights holder, licence, or terms cannot be identified confidently | Do not publish the material; replace, obtain permission, or escalate |
 
 `publicationStatus` is separate from `rightsStatus`. A source can be publicly readable but still be `link-only`; a work can be historically old but still be `review-required` because the online translation or edition may be protected.
@@ -187,8 +204,9 @@ The distinction between `quote`, `close paraphrase`, `original analysis`, and `i
 
 ## Implementation safeguards added
 
-- `src/content/rights.js` records a rights status, licence note, commercial-use decision, publication status, editorial action, and review date for every current source and author reference.
-- `scripts/validate-content.mjs` fails when any current research source, source link, or author reference lacks a rights record or required provenance fields.
+- `src/content/rights.js` records a rights status, licence note, commercial-use decision, publication status, editorial action, and review date for every current source, author reference, and research work.
+- `scripts/validate-content.mjs` fails when any current research source, source link, author reference, or research work lacks a rights record or required provenance fields.
+- The research tests verify that all 61 work-level bibliography records mirror their rights decisions, including the edition/translation review date and publication gate.
 - Direct quotations that are not marked `allowed` are held from public display; the app shows a rights-review notice instead.
 - The current app bundles no external dataset, source-page copy, photograph, map, logo, or screenshot.
 - The 25-word quote guard remains a content-quality check, not a legal test.

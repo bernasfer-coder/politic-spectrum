@@ -113,6 +113,17 @@ for (const [referenceId, reference] of Object.entries(AUTHOR_REFERENCES)) {
   }
 }
 
+const researchWorkRights = RIGHTS_RECORDS.researchWorks ?? {};
+assert(Object.keys(researchWorkRights).length === researchWorkSet.size, `Research-work rights inventory must cover exactly ${researchWorkSet.size} works`);
+for (const work of RESEARCH_WORKS) {
+  const rights = researchWorkRights[work.id];
+  assertRightsRecord(rights, `Research work ${work.id}`);
+  if (rights) {
+    assert(['link-only', 'review-required', 'allowed-with-attribution'].includes(rights.publicationStatus), `Research work ${work.id} has an invalid publication status`);
+    assert(Boolean(rights.notes), `Research work ${work.id} is missing a rights rationale`);
+  }
+}
+
 assertUnique(BIBLIOGRAPHY_RECORDS.map(({ id }) => id), 'Bibliography record');
 assertUnique(BIBLIOGRAPHY_RECORDS.map(({ canonicalUrl }) => canonicalUrl), 'Bibliography canonical URL');
 for (const record of BIBLIOGRAPHY_RECORDS) {
