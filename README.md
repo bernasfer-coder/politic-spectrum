@@ -22,7 +22,7 @@ npm run build
 npm run preview -- --host 0.0.0.0
 ```
 
-The app has three modes: Questionnaire contains five questions per axis; FreeMode exposes five sliders and updates the closest documented reference patterns live; Spectrum Library lets users select a reference profile and read the reasoning behind its position on every axis. The selected library profile can also be loaded directly into FreeMode.
+The app has four modes: Questionnaire contains five questions per axis; FreeMode exposes five sliders and updates the closest documented reference patterns live; Spectrum Library lets users select a reference profile and read the reasoning behind its position on every axis; Bibliography exposes the complete source registry. The selected library profile can also be loaded directly into FreeMode.
 
 The Spectrum Library also includes a normalized starter catalogue of historical and contemporary political labels. It preserves aliases, label types, families, regions, periods, statuses, differences between nearby concepts, approximate axis coverage, and source links. The catalogue can be searched and filtered without treating broad labels such as populism or monarchism as fixed five-axis ideologies.
 
@@ -37,5 +37,7 @@ The validation plan for the 5D core, candidate facets, questionnaire audit, priv
 The citation, licence, quotation, dataset, privacy, and commercial-publication audit is documented in [`RIGHTS_AND_PROVENANCE.md`](RIGHTS_AND_PROVENANCE.md). The application links to external sources and uses original summaries; restricted data and uncleared quotations are not bundled or displayed.
 
 Each 20-point band and each reference-profile explanation also carries explicit author/work evidence. The UI distinguishes interpretive synthesis from quotation text held for rights review; the full reference map lives in `src/content/references.js` and is validated during every build.
+
+The Bibliography mode is generated from `src/content/index.js` and `src/content/bibliography.js`. It currently contains 67 records covering research sources, author/work references, and contextual profile links. Each record has a stable ID, canonical URL, access date, rights/provenance status, review confidence, and mapped downstream usage. Unverified bibliographic fields remain explicitly marked “Not recorded”; citation IDs must resolve to exactly one record, and duplicate canonical URLs or orphaned records fail validation.
 
 Questionnaire answers are cached locally in the browser under a versioned key. Incomplete questionnaires resume at the first unanswered question; complete questionnaires restore the calculated result view after refresh. Reset removes the local cache.

@@ -1,6 +1,7 @@
 import {
   ARCHETYPES,
   AUTHOR_REFERENCES,
+  BIBLIOGRAPHY_RECORDS,
   BAND_RANGES,
   DIMENSIONS,
   QUESTIONS,
@@ -17,6 +18,9 @@ const dimensionIds = DIMENSIONS.map(({ id }) => id);
 const dimensionSet = new Set(dimensionIds);
 const researchSourceSet = new Set(RESEARCH_SOURCES.map(({ id }) => id));
 const authorReferenceSet = new Set(Object.keys(AUTHOR_REFERENCES));
+const bibliographyRecordSet = new Set(BIBLIOGRAPHY_RECORDS.map(({ id }) => id));
+const taxonomyLabelSet = new Set(TAXONOMY_LABELS.map(({ id }) => id));
+const archetypeSet = new Set(ARCHETYPES.map(({ id }) => id));
 
 function assert(condition, message) {
   if (!condition) errors.push(message);
@@ -44,6 +48,16 @@ function assertRightsRecord(rightsRecord, label) {
   assert(Boolean(rightsRecord.commercialUse), `${label} is missing a commercial-use decision`);
   assert(Boolean(rightsRecord.publicationStatus), `${label} is missing a publication status`);
   assert(Boolean(rightsRecord.action), `${label} is missing an editorial action`);
+}
+
+function assertBibliographyRecordReview(record, label) {
+  assert(Boolean(record.review?.reviewedAt), `${label} is missing a review date`);
+  assert(Boolean(record.review?.reviewer), `${label} is missing a reviewer`);
+  assert(Boolean(record.rightsStatus), `${label} is missing a rights status`);
+  assert(Boolean(record.license), `${label} is missing a licence note`);
+  assert(Boolean(record.commercialUse), `${label} is missing a commercial-use decision`);
+  assert(Boolean(record.publicationStatus), `${label} is missing a publication status`);
+  assert(Boolean(record.editorialAction), `${label} is missing an editorial action`);
 }
 
 assert(DIMENSIONS.length === 5, `Expected exactly 5 dimensions, found ${DIMENSIONS.length}`);
@@ -89,6 +103,53 @@ for (const [referenceId, reference] of Object.entries(AUTHOR_REFERENCES)) {
       warnings.push(`Direct quote ${referenceId} is held from publication pending rights review`);
     }
   }
+}
+
+assertUnique(BIBLIOGRAPHY_RECORDS.map(({ id }) => id), 'Bibliography record');
+assertUnique(BIBLIOGRAPHY_RECORDS.map(({ canonicalUrl }) => canonicalUrl), 'Bibliography canonical URL');
+for (const record of BIBLIOGRAPHY_RECORDS) {
+  assert(Boolean(record.id), 'Bibliography record is missing a stable ID');
+  assert(Boolean(record.citationKey), `Bibliography ${record.id} is missing a citation key`);
+  assert(Boolean(record.title), `Bibliography ${record.id} is missing a title`);
+  assert(Boolean(record.recordType), `Bibliography ${record.id} is missing a record type`);
+  assert(Boolean(record.sourceType), `Bibliography ${record.id} is missing a source type`);
+  assert(Boolean(record.discipline), `Bibliography ${record.id} is missing a discipline`);
+  assertUrl(record.canonicalUrl, `Bibliography ${record.id}`);
+  assert(Boolean(record.accessDate), `Bibliography ${record.id} is missing an access date`);
+  assertBibliographyRecordReview(record, `Bibliography ${record.id}`);
+  assert(['primary', 'secondary', 'methodology', 'contextual'].includes(record.evidenceRole), `Bibliography ${record.id} has an invalid evidence role`);
+  assert(['reviewed', 'needs-review'].includes(record.review?.status), `Bibliography ${record.id} has an invalid review status`);
+  assert(['high', 'medium', 'low'].includes(record.review?.confidence), `Bibliography ${record.id} has an invalid confidence value`);
+  assert(Array.isArray(record.creators), `Bibliography ${record.id} creators must be an array`);
+  for (const dimensionId of record.relationships?.dimensionIds ?? []) {
+    assert(dimensionSet.has(dimensionId), `Bibliography ${record.id} references unknown dimension ${dimensionId}`);
+  }
+  for (const labelId of record.relationships?.taxonomyLabelIds ?? []) {
+    assert(taxonomyLabelSet.has(labelId), `Bibliography ${record.id} references unknown taxonomy label ${labelId}`);
+  }
+  for (const archetypeId of record.relationships?.archetypeIds ?? []) {
+    assert(archetypeSet.has(archetypeId), `Bibliography ${record.id} references unknown archetype ${archetypeId}`);
+  }
+  const relationshipCount = Object.values(record.relationships ?? {}).reduce((sum, values) => sum + (Array.isArray(values) ? values.length : 0), 0);
+  assert(relationshipCount > 0, `Bibliography ${record.id} is orphaned from the content model`);
+}
+
+function recordsForCitation(field, citationId) {
+  return BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds?.[field]?.includes(citationId));
+}
+
+for (const source of RESEARCH_SOURCES) {
+  const matches = recordsForCitation('researchSourceIds', source.id);
+  assert(matches.length === 1, `Research source ${source.id} must resolve to exactly one bibliography record; found ${matches.length}`);
+  if (matches[0]) assert(bibliographyRecordSet.has(matches[0].id), `Research source ${source.id} resolves outside the bibliography set`);
+}
+for (const referenceId of authorReferenceSet) {
+  const matches = recordsForCitation('authorReferenceIds', referenceId);
+  assert(matches.length === 1, `Author reference ${referenceId} must resolve to exactly one bibliography record; found ${matches.length}`);
+}
+for (const sourceLinkId of Object.keys(SOURCES)) {
+  const matches = recordsForCitation('sourceLinkIds', sourceLinkId);
+  assert(matches.length === 1, `Source link ${sourceLinkId} must resolve to exactly one bibliography record; found ${matches.length}`);
 }
 
 assert(TAXONOMY_LABELS.length >= 20, `Expected at least 20 normalized taxonomy labels, found ${TAXONOMY_LABELS.length}`);
@@ -166,7 +227,7 @@ if (errors.length > 0) {
   for (const error of errors) console.error(`- ${error}`);
   process.exitCode = 1;
 } else {
-  console.log(`Content validation passed: ${DIMENSIONS.length} dimensions, ${QUESTIONS.length} questions, ${ARCHETYPES.length} archetypes, and ${RESEARCH_SOURCES.length} research sources.`);
+  console.log(`Content validation passed: ${DIMENSIONS.length} dimensions, ${QUESTIONS.length} questions, ${ARCHETYPES.length} archetypes, ${RESEARCH_SOURCES.length} research sources, and ${BIBLIOGRAPHY_RECORDS.length} bibliography records.`);
   if (warnings.length > 0) {
     console.warn(`Rights review warnings (${warnings.length}):`);
     for (const warning of warnings) console.warn(`- ${warning}`);

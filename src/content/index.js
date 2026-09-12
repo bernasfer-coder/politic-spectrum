@@ -1,6 +1,7 @@
 import { ARCHETYPE_CITATIONS, AUTHOR_REFERENCES, BAND_CITATIONS } from './references.js';
 import { RIGHTS_RECORDS } from './rights.js';
 import { TAXONOMY_LABELS as RAW_TAXONOMY_LABELS } from './taxonomy.js';
+import { BIBLIOGRAPHY_ACCESS_DATE, BIBLIOGRAPHY_METADATA } from './bibliography.js';
 
 const DIMENSIONS = [
   {
@@ -513,6 +514,211 @@ const TAXONOMY_LABELS = RAW_TAXONOMY_LABELS.map((label) => ({
   axisPositions: orientProfile(label.axisPositions),
 }));
 
+const BIBLIOGRAPHY_REVIEWER = 'Politic Spectrum editorial review';
+
+function createRelationshipSets() {
+  return {
+    dimensions: new Set(),
+    bands: new Set(),
+    taxonomyLabelIds: new Set(),
+    archetypeIds: new Set(),
+    profileEntries: new Set(),
+    claims: new Set(),
+    regions: new Set(),
+    traditions: new Set(),
+    periods: new Set(),
+    entities: new Set(),
+  };
+}
+
+function addRelationship(relationships, key, value) {
+  if (relationships[key] && value) relationships[key].add(value);
+}
+
+function buildBibliographyRecords() {
+  const researchUsage = Object.fromEntries(RESEARCH_SOURCES.map(({ id }) => [id, createRelationshipSets()]));
+  const authorUsage = Object.fromEntries(Object.keys(AUTHOR_REFERENCES).map((id) => [id, createRelationshipSets()]));
+  const sourceLinkUsage = Object.fromEntries(Object.keys(SOURCES).map((id) => [id, createRelationshipSets()]));
+  addRelationship(researchUsage.panXu, 'claims', '5D model / multidimensionality');
+
+  for (const dimension of DIMENSIONS) {
+    const taxonomy = SPECTRUM_BANDS[dimension.id];
+    for (const sourceId of taxonomy.sourceIds ?? []) {
+      addRelationship(researchUsage[sourceId], 'dimensions', dimension.label);
+    }
+    for (const citationId of taxonomy.basisCitationIds ?? []) {
+      addRelationship(authorUsage[citationId], 'dimensions', dimension.label);
+    }
+    taxonomy.bands.forEach((band, index) => {
+      const bandId = `${dimension.id}-band-${String(index + 1).padStart(2, '0')}`;
+      for (const citationId of band.citationIds ?? []) {
+        addRelationship(authorUsage[citationId], 'bands', `${bandId} · ${band.label}`);
+      }
+    });
+  }
+
+  for (const label of TAXONOMY_LABELS) {
+    for (const sourceId of label.sourceIds ?? []) {
+      addRelationship(researchUsage[sourceId], 'taxonomyLabelIds', label.id);
+      addRelationship(researchUsage[sourceId], 'regions', label.region);
+      addRelationship(researchUsage[sourceId], 'traditions', label.family);
+      addRelationship(researchUsage[sourceId], 'periods', label.period);
+    }
+  }
+
+  for (const archetype of ARCHETYPES) {
+    for (const citationId of archetype.summaryCitationIds ?? []) {
+      addRelationship(authorUsage[citationId], 'archetypeIds', archetype.id);
+    }
+    for (const dimension of DIMENSIONS) {
+      for (const citationId of archetype.dimensionCitationIds?.[dimension.id] ?? []) {
+        addRelationship(authorUsage[citationId], 'archetypeIds', archetype.id);
+        addRelationship(authorUsage[citationId], 'dimensions', dimension.label);
+      }
+    }
+    for (const section of ['people', 'current', 'historical']) {
+      for (const entry of archetype[section] ?? []) {
+        const sourceLinkId = Object.entries(SOURCES).find(([, source]) => source.url === entry.source?.url)?.[0];
+        if (!sourceLinkId) continue;
+        addRelationship(sourceLinkUsage[sourceLinkId], 'archetypeIds', archetype.id);
+        addRelationship(sourceLinkUsage[sourceLinkId], 'profileEntries', `${archetype.id} · ${section} · ${entry.name}`);
+        addRelationship(sourceLinkUsage[sourceLinkId], 'entities', entry.name);
+      }
+    }
+  }
+
+  const toArrays = (relationships) => Object.fromEntries(Object.entries(relationships).map(([key, values]) => [key, [...values]]));
+  const rightsFor = (group, id) => RIGHTS_RECORDS[group]?.[id] ?? {};
+  const reviewFor = (rights, confidence = 'medium') => ({
+    status: rights.publicationStatus === 'review-required' ? 'needs-review' : 'reviewed',
+    reviewer: BIBLIOGRAPHY_REVIEWER,
+    reviewedAt: rights.reviewedAt ?? BIBLIOGRAPHY_ACCESS_DATE,
+    confidence,
+    limitations: rights.notes ?? null,
+  });
+
+  const researchRecords = RESEARCH_SOURCES.map((source) => {
+    const metadata = BIBLIOGRAPHY_METADATA[source.id] ?? {};
+    const rights = rightsFor('researchSources', source.id);
+    return {
+      id: `research-${source.id}`,
+      citationKey: source.id,
+      recordType: 'research-source',
+      evidenceRole: metadata.evidenceRole ?? (metadata.sourceType?.includes('codebook') || metadata.sourceType?.includes('documentation') || metadata.sourceType?.includes('survey') ? 'methodology' : 'secondary'),
+      title: metadata.title ?? source.label,
+      creators: metadata.creators ?? [],
+      institution: metadata.institution ?? null,
+      contributors: [],
+      sourceType: metadata.sourceType ?? 'research source',
+      discipline: metadata.discipline ?? 'political studies',
+      publicationDate: metadata.publicationDate ?? null,
+      publisher: metadata.publisher ?? null,
+      identifiers: metadata.identifiers ?? {},
+      canonicalUrl: source.url,
+      archiveUrl: metadata.archiveUrl ?? null,
+      accessDate: BIBLIOGRAPHY_ACCESS_DATE,
+      languages: metadata.languages ?? null,
+      quoteLocator: null,
+      directQuote: null,
+      rightsStatus: rights.rightsStatus ?? 'not recorded',
+      license: rights.license ?? 'not recorded',
+      commercialUse: rights.commercialUse ?? 'not recorded',
+      publicationStatus: rights.publicationStatus ?? 'not recorded',
+      accessStatus: rights.rightsStatus === 'open-license' ? 'open-license' : rights.publicationStatus === 'review-required' ? 'rights-review' : 'link-only',
+      editorialAction: rights.action ?? 'not recorded',
+      review: reviewFor(rights, metadata.confidence),
+      description: metadata.description ?? source.note,
+      note: source.note,
+      relationships: toArrays(researchUsage[source.id]),
+      citationIds: { researchSourceIds: [source.id], authorReferenceIds: [], sourceLinkIds: [] },
+    };
+  });
+
+  const authorRecords = Object.entries(AUTHOR_REFERENCES).map(([id, reference]) => {
+    const rights = rightsFor('authorReferences', id);
+    const confidence = reference.kind === 'direct' ? 'high' : 'medium';
+    return {
+      id: `author-${id}`,
+      citationKey: id,
+      recordType: 'author-reference',
+      evidenceRole: reference.kind === 'scholarly' ? 'secondary' : 'primary',
+      title: reference.work,
+      creators: [reference.author],
+      institution: null,
+      contributors: [],
+      sourceType: reference.kind === 'direct' ? 'primary text / quotation anchor' : reference.kind === 'scholarly' ? 'scholarly work' : 'primary text',
+      discipline: 'political thought',
+      publicationDate: reference.year ?? null,
+      publisher: null,
+      identifiers: {},
+      canonicalUrl: reference.url,
+      archiveUrl: null,
+      accessDate: BIBLIOGRAPHY_ACCESS_DATE,
+      languages: null,
+      quoteLocator: reference.locator ?? null,
+      directQuote: reference.quote ?? null,
+      rightsStatus: rights.rightsStatus ?? 'not recorded',
+      license: rights.license ?? 'not recorded',
+      commercialUse: rights.commercialUse ?? 'not recorded',
+      publicationStatus: rights.publicationStatus ?? 'not recorded',
+      accessStatus: rights.rightsStatus === 'open-license' ? 'open-license' : rights.publicationStatus === 'review-required' ? 'rights-review' : 'link-only',
+      editorialAction: rights.action ?? 'not recorded',
+      review: reviewFor(rights, confidence),
+      description: reference.context ?? `Author and work used as an evidence anchor for political-theory interpretation.`,
+      note: reference.context ?? null,
+      relationships: { ...toArrays(authorUsage[id]), periods: reference.year ? [reference.year] : [] },
+      citationIds: { researchSourceIds: [], authorReferenceIds: [id], sourceLinkIds: [] },
+    };
+  });
+
+  const sourceLinkRecords = Object.entries(SOURCES).map(([id, source]) => {
+    const rights = rightsFor('sourceLinks', id);
+    return {
+      id: `link-${id}`,
+      citationKey: id,
+      recordType: 'source-link',
+      evidenceRole: 'contextual',
+      title: `Source link — ${source.label}`,
+      creators: [],
+      institution: source.label,
+      contributors: [],
+      sourceType: 'institutional or profile source link',
+      discipline: 'contextual evidence',
+      publicationDate: null,
+      publisher: null,
+      identifiers: {},
+      canonicalUrl: source.url,
+      archiveUrl: null,
+      accessDate: BIBLIOGRAPHY_ACCESS_DATE,
+      languages: null,
+      quoteLocator: null,
+      directQuote: null,
+      rightsStatus: rights.rightsStatus ?? 'not recorded',
+      license: rights.license ?? 'not recorded',
+      commercialUse: rights.commercialUse ?? 'not recorded',
+      publicationStatus: rights.publicationStatus ?? 'not recorded',
+      accessStatus: rights.rightsStatus === 'open-license' ? 'open-license' : rights.publicationStatus === 'review-required' ? 'rights-review' : 'link-only',
+      editorialAction: rights.action ?? 'not recorded',
+      review: reviewFor(rights, 'medium'),
+      description: 'External source link used to contextualize a person, movement, country, city, or historical example. The app publishes an independent summary rather than reproducing the linked source.',
+      note: null,
+      relationships: toArrays(sourceLinkUsage[id]),
+      citationIds: { researchSourceIds: [], authorReferenceIds: [], sourceLinkIds: [id] },
+    };
+  });
+
+  return [...researchRecords, ...authorRecords, ...sourceLinkRecords].map((record) => ({
+    ...record,
+    relationships: {
+      ...record.relationships,
+      dimensionIds: record.relationships.dimensions.map((label) => DIMENSIONS.find((dimension) => dimension.label === label)?.id ?? label),
+    },
+  }));
+}
+
+const BIBLIOGRAPHY_RECORDS = buildBibliographyRecords();
+const BIBLIOGRAPHY_BY_ID = Object.fromEntries(BIBLIOGRAPHY_RECORDS.map((record) => [record.id, record]));
+
 export {
   ARCHETYPES,
   BAND_RANGES,
@@ -529,4 +735,7 @@ export {
   SPECTRUM_BANDS,
   TAXONOMY_LABELS,
   AUTHOR_REFERENCES,
+  BIBLIOGRAPHY_ACCESS_DATE,
+  BIBLIOGRAPHY_BY_ID,
+  BIBLIOGRAPHY_RECORDS,
 };

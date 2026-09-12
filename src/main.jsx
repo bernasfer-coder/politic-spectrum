@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import {
   ARCHETYPES,
   AUTHOR_REFERENCES,
+  BIBLIOGRAPHY_ACCESS_DATE,
+  BIBLIOGRAPHY_RECORDS,
   BAND_RANGES,
   DEFAULT_SCORES,
   DIMENSIONS,
@@ -112,9 +114,14 @@ function saveQuestionnaireCache(answers, questionIndex) {
   }
 }
 
+function getInitialMode() {
+  if (typeof window !== 'undefined' && window.location.hash.startsWith('#bibliography')) return 'bibliography';
+  return null;
+}
+
 function App() {
   const [cachedQuestionnaire] = useState(loadQuestionnaireCache);
-  const [mode, setMode] = useState(cachedQuestionnaire?.complete ? 'freemode' : 'questionnaire');
+  const [mode, setMode] = useState(() => getInitialMode() || (cachedQuestionnaire?.complete ? 'freemode' : 'questionnaire'));
   const [scores, setScores] = useState(cachedQuestionnaire?.complete ? calculateScores(cachedQuestionnaire.answers) : DEFAULT_SCORES);
   const [answers, setAnswers] = useState(cachedQuestionnaire?.answers ?? {});
   const [questionIndex, setQuestionIndex] = useState(cachedQuestionnaire?.questionIndex ?? 0);
@@ -155,14 +162,21 @@ function App() {
   function showResult() {
     if (!questionnaireComplete) return;
     setScores(calculateScores(answers));
-    setMode('freemode');
+    changeMode('freemode');
+  }
+
+  function changeMode(nextMode) {
+    setMode(nextMode);
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(null, '', nextMode === 'bibliography' ? '#bibliography' : window.location.pathname);
+    }
   }
 
   function resetQuestionnaire() {
     setAnswers({});
     setQuestionIndex(0);
     setScores(DEFAULT_SCORES);
-    setMode('questionnaire');
+    changeMode('questionnaire');
     if (typeof window !== 'undefined') window.localStorage.removeItem(LEGACY_QUESTIONNAIRE_CACHE_KEY);
   }
 
@@ -200,14 +214,17 @@ function App() {
 
         <section className="workspace-panel">
           <div className="mode-switcher" role="tablist" aria-label="Analysis mode">
-            <button className={mode === 'questionnaire' ? 'mode-tab active' : 'mode-tab'} onClick={() => setMode('questionnaire')} role="tab" aria-selected={mode === 'questionnaire'}>
+            <button className={mode === 'questionnaire' ? 'mode-tab active' : 'mode-tab'} onClick={() => changeMode('questionnaire')} role="tab" aria-selected={mode === 'questionnaire'}>
               <span className="tab-number">01</span><span><strong>Questionnaire</strong><small>Let the model find your position</small></span>
             </button>
-            <button className={mode === 'freemode' ? 'mode-tab active' : 'mode-tab'} onClick={() => setMode('freemode')} role="tab" aria-selected={mode === 'freemode'}>
+            <button className={mode === 'freemode' ? 'mode-tab active' : 'mode-tab'} onClick={() => changeMode('freemode')} role="tab" aria-selected={mode === 'freemode'}>
               <span className="tab-number">02</span><span><strong>FreeMode</strong><small>Move the five axes yourself</small></span>
             </button>
-            <button className={mode === 'library' ? 'mode-tab active' : 'mode-tab'} onClick={() => { setSelectedTypeId(topMatch.id); setMode('library'); }} role="tab" aria-selected={mode === 'library'}>
+            <button className={mode === 'library' ? 'mode-tab active' : 'mode-tab'} onClick={() => { setSelectedTypeId(topMatch.id); changeMode('library'); }} role="tab" aria-selected={mode === 'library'}>
               <span className="tab-number">03</span><span><strong>Spectrum Library</strong><small>Study each political type</small></span>
+            </button>
+            <button className={mode === 'bibliography' ? 'mode-tab active' : 'mode-tab'} onClick={() => changeMode('bibliography')} role="tab" aria-selected={mode === 'bibliography'}>
+              <span className="tab-number">04</span><span><strong>Bibliography</strong><small>Trace every source and claim</small></span>
             </button>
           </div>
 
@@ -226,16 +243,18 @@ function App() {
               onReset={resetQuestionnaire}
             />
           ) : mode === 'freemode' ? (
-            <FreeMode scores={scores} matches={matches} topMatch={topMatch} onUpdateScore={updateScore} onUseQuestionnaire={() => setMode('questionnaire')} />
+            <FreeMode scores={scores} matches={matches} topMatch={topMatch} onUpdateScore={updateScore} onUseQuestionnaire={() => changeMode('questionnaire')} />
+          ) : mode === 'library' ? (
+            <SpectrumLibrary selectedType={selectedType} onSelectType={setSelectedTypeId} onLoadInFreeMode={() => { setScores({ ...selectedType.profile }); changeMode('freemode'); }} />
           ) : (
-            <SpectrumLibrary selectedType={selectedType} onSelectType={setSelectedTypeId} onLoadInFreeMode={() => { setScores({ ...selectedType.profile }); setMode('freemode'); }} />
+            <BibliographyPage />
           )}
         </section>
       </main>
 
       <footer className="site-footer">
         <p><strong>POLITIC SPECTRUM</strong> is an educational model, not a clinical or scientific diagnosis.</p>
-        <p>Profiles are approximate. Sources and context matter more than labels.</p>
+        <p>Profiles are approximate. Sources and context matter more than labels. <button className="footer-link" onClick={() => changeMode('bibliography')}>Bibliography ↗</button></p>
       </footer>
     </div>
   );
@@ -281,6 +300,164 @@ function Questionnaire({ currentQuestion, currentDimension, questionIndex, answe
       </div>
       <div className="utility-row"><button className="text-button subdued" onClick={onReset}>Reset questionnaire</button><p>About 5 minutes <span>·</span> 25 questions <span>·</span> 5 dimensions <span>·</span> Saved locally in this browser</p></div>
     </div>
+  );
+}
+
+function displayBibliographyValue(value) {
+  if (value === null || value === undefined || value === '') return 'Not recorded';
+  if (Array.isArray(value)) return value.length ? value.join(' · ') : 'Not recorded';
+  return String(value);
+}
+
+function bibliographyRecordTypeLabel(recordType) {
+  return recordType === 'author-reference' ? 'Author / work' : recordType === 'research-source' ? 'Research source' : 'Context source';
+}
+
+function BibliographyPage() {
+  const [filters, setFilters] = useState({ query: '', recordType: 'all', sourceType: 'all', discipline: 'all', dimension: 'all', region: 'all', tradition: 'all', period: 'all', entity: 'all', evidenceRole: 'all', reviewStatus: 'all', confidence: 'all', accessStatus: 'all', quote: 'all' });
+  const [sort, setSort] = useState('title');
+  const filterOptions = useMemo(() => ({
+    recordType: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.recordType))].map(bibliographyRecordTypeLabel),
+    sourceType: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.sourceType))].sort(),
+    discipline: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.discipline))].sort(),
+    dimension: DIMENSIONS.map(({ id, label }) => ({ value: id, label })),
+    region: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.regions))].sort(),
+    tradition: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.traditions))].sort(),
+    period: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.periods))].sort(),
+    entity: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.entities))].sort(),
+    evidenceRole: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.evidenceRole))].sort(),
+    reviewStatus: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.review.status))].sort(),
+    confidence: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.review.confidence))].sort(),
+    accessStatus: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.accessStatus))].sort(),
+  }), []);
+  const filteredRecords = useMemo(() => {
+    const query = filters.query.trim().toLowerCase();
+    const records = BIBLIOGRAPHY_RECORDS.filter((record) => {
+      const searchable = [
+        record.id,
+        record.citationKey,
+        record.title,
+        ...record.creators,
+        record.institution,
+        record.sourceType,
+        record.discipline,
+        record.description,
+        ...record.relationships.dimensions,
+        ...record.relationships.bands,
+        ...record.relationships.taxonomyLabelIds,
+        ...record.relationships.archetypeIds,
+        ...record.relationships.profileEntries,
+        ...record.relationships.regions,
+        ...record.relationships.traditions,
+        ...record.relationships.periods,
+        ...record.relationships.entities,
+      ].filter(Boolean).join(' ').toLowerCase();
+      const recordTypeMatches = filters.recordType === 'all' || bibliographyRecordTypeLabel(record.recordType) === filters.recordType;
+      const sourceTypeMatches = filters.sourceType === 'all' || record.sourceType === filters.sourceType;
+      const disciplineMatches = filters.discipline === 'all' || record.discipline === filters.discipline;
+      const dimensionMatches = filters.dimension === 'all' || record.relationships.dimensionIds.includes(filters.dimension);
+      const regionMatches = filters.region === 'all' || record.relationships.regions.includes(filters.region);
+      const traditionMatches = filters.tradition === 'all' || record.relationships.traditions.includes(filters.tradition);
+      const periodMatches = filters.period === 'all' || record.relationships.periods.includes(filters.period);
+      const entityMatches = filters.entity === 'all' || record.relationships.entities.includes(filters.entity);
+      const roleMatches = filters.evidenceRole === 'all' || record.evidenceRole === filters.evidenceRole;
+      const reviewMatches = filters.reviewStatus === 'all' || record.review.status === filters.reviewStatus;
+      const confidenceMatches = filters.confidence === 'all' || record.review.confidence === filters.confidence;
+      const accessMatches = filters.accessStatus === 'all' || record.accessStatus === filters.accessStatus;
+      const quoteMatches = filters.quote === 'all' || (filters.quote === 'quote' ? Boolean(record.quoteLocator) : !record.quoteLocator);
+      return (!query || searchable.includes(query)) && recordTypeMatches && sourceTypeMatches && disciplineMatches && dimensionMatches && regionMatches && traditionMatches && periodMatches && entityMatches && roleMatches && reviewMatches && confidenceMatches && accessMatches && quoteMatches;
+    });
+
+    return records.sort((left, right) => {
+      if (sort === 'author') return displayBibliographyValue(left.creators[0] || left.institution).localeCompare(displayBibliographyValue(right.creators[0] || right.institution));
+      if (sort === 'oldest' || sort === 'newest') {
+        const leftYear = Number.parseInt(String(left.publicationDate ?? '').slice(0, 4), 10) || (sort === 'oldest' ? Number.MAX_SAFE_INTEGER : 0);
+        const rightYear = Number.parseInt(String(right.publicationDate ?? '').slice(0, 4), 10) || (sort === 'oldest' ? Number.MAX_SAFE_INTEGER : 0);
+        return sort === 'oldest' ? leftYear - rightYear : rightYear - leftYear;
+      }
+      if (sort === 'review') return left.review.status.localeCompare(right.review.status) || left.review.confidence.localeCompare(right.review.confidence);
+      return left.title.localeCompare(right.title);
+    });
+  }, [filters, sort]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.location.hash.startsWith('#bibliography/')) return;
+    const recordId = window.location.hash.slice('#bibliography/'.length);
+    window.requestAnimationFrame(() => document.getElementById(`source-${recordId}`)?.scrollIntoView({ block: 'start' }));
+  }, []);
+
+  function updateFilter(key, value) {
+    setFilters((previous) => ({ ...previous, [key]: value }));
+  }
+
+  function clearFilters() {
+    setFilters({ query: '', recordType: 'all', sourceType: 'all', discipline: 'all', dimension: 'all', region: 'all', tradition: 'all', period: 'all', entity: 'all', evidenceRole: 'all', reviewStatus: 'all', confidence: 'all', accessStatus: 'all', quote: 'all' });
+  }
+
+  return (
+    <div className="bibliography-view">
+      <div className="section-heading-row bibliography-heading">
+        <div><p className="eyebrow">SOURCE REGISTRY</p><h2>Every claim has a trail.</h2></div>
+        <div className="bibliography-count"><strong>{BIBLIOGRAPHY_RECORDS.length}</strong><span>records · reviewed {BIBLIOGRAPHY_ACCESS_DATE}</span></div>
+      </div>
+      <p className="bibliography-intro">This catalogue records the sources currently used by the questionnaire, five-axis bands, spectrum profiles, and normalized label catalogue. It distinguishes primary texts, scholarly interpretation, methodology, and contextual links so a citation is not mistaken for proof of an exact label or position.</p>
+      <div className="bibliography-notice"><span>!</span><p><strong>Editorial rule:</strong> “Not recorded” means the project has not verified that field. Rights status describes what this app may publish, not a legal clearance for the linked work. <a href="https://github.com/bernasfer-coder/politic-spectrum/issues/12" target="_blank" rel="noreferrer">Suggest a correction or source update ↗</a></p></div>
+
+      <div className="bibliography-filters" aria-label="Filter bibliography records">
+        <label className="bibliography-search"><span>Search title, author, ID, claim, or place</span><input type="search" value={filters.query} onChange={(event) => updateFilter('query', event.target.value)} placeholder="e.g. nationalism, Hayek, foreign policy" /></label>
+        <FilterSelect label="Record" value={filters.recordType} options={filterOptions.recordType.map((label) => ({ value: label, label }))} onChange={(value) => updateFilter('recordType', value)} />
+        <FilterSelect label="Source type" value={filters.sourceType} options={filterOptions.sourceType} onChange={(value) => updateFilter('sourceType', value)} />
+        <FilterSelect label="Discipline" value={filters.discipline} options={filterOptions.discipline} onChange={(value) => updateFilter('discipline', value)} />
+        <FilterSelect label="Dimension" value={filters.dimension} options={filterOptions.dimension} onChange={(value) => updateFilter('dimension', value)} />
+        <FilterSelect label="Region" value={filters.region} options={filterOptions.region} onChange={(value) => updateFilter('region', value)} />
+        <FilterSelect label="Tradition / family" value={filters.tradition} options={filterOptions.tradition} onChange={(value) => updateFilter('tradition', value)} />
+        <FilterSelect label="Period" value={filters.period} options={filterOptions.period} onChange={(value) => updateFilter('period', value)} />
+        <FilterSelect label="Entity / place" value={filters.entity} options={filterOptions.entity} onChange={(value) => updateFilter('entity', value)} />
+        <FilterSelect label="Evidence role" value={filters.evidenceRole} options={filterOptions.evidenceRole} onChange={(value) => updateFilter('evidenceRole', value)} />
+        <FilterSelect label="Review" value={filters.reviewStatus} options={filterOptions.reviewStatus} onChange={(value) => updateFilter('reviewStatus', value)} />
+        <FilterSelect label="Confidence" value={filters.confidence} options={filterOptions.confidence} onChange={(value) => updateFilter('confidence', value)} />
+        <FilterSelect label="Access" value={filters.accessStatus} options={filterOptions.accessStatus} onChange={(value) => updateFilter('accessStatus', value)} />
+        <FilterSelect label="Direct quote" value={filters.quote} options={[{ value: 'quote', label: 'Has locator' }, { value: 'no-quote', label: 'No locator' }]} onChange={(value) => updateFilter('quote', value)} />
+      </div>
+
+      <div className="bibliography-result-bar"><span>{filteredRecords.length} of {BIBLIOGRAPHY_RECORDS.length} records</span><label>Sort <select value={sort} onChange={(event) => setSort(event.target.value)}><option value="title">Title A–Z</option><option value="author">Author / institution</option><option value="oldest">Publication oldest</option><option value="newest">Publication newest</option><option value="review">Review status</option></select></label><button className="text-button subdued" onClick={clearFilters}>Clear filters</button></div>
+
+      {filteredRecords.length ? <div className="bibliography-grid">{filteredRecords.map((record) => <BibliographyRecord key={record.id} record={record} />)}</div> : <div className="bibliography-empty"><strong>No bibliography records match these filters.</strong><p>Clear one filter or search for an author, source ID, dimension, or label.</p></div>}
+      <p className="bibliography-footnote">Stable anchors use each record’s ID. The catalogue is generated from structured content in the repository; build validation checks citation resolution, duplicate IDs and URLs, rights metadata, and relationship integrity.</p>
+    </div>
+  );
+}
+
+function BibliographyRecord({ record }) {
+  const relationships = [
+    ['Dimensions', record.relationships.dimensions],
+    ['Bands', record.relationships.bands],
+    ['Labels', record.relationships.taxonomyLabelIds],
+    ['Regions', record.relationships.regions],
+    ['Traditions / families', record.relationships.traditions],
+    ['Periods', record.relationships.periods],
+    ['Entities / places', record.relationships.entities],
+    ['Spectrum profiles', record.relationships.archetypeIds],
+    ['Profile examples', record.relationships.profileEntries],
+    ['Claims', record.relationships.claims],
+  ].filter(([, values]) => values.length);
+  const publicationNote = record.quoteLocator ? record.publicationStatus === 'allowed' ? 'Direct quotation approved for this record.' : 'Direct quotation held pending exact edition, translation, and rights review.' : 'No direct quotation is published for this record.';
+
+  return (
+    <article className="bibliography-card" id={`source-${record.id}`}>
+      <div className="bibliography-card-top"><div><p className="bibliography-card-kicker">{bibliographyRecordTypeLabel(record.recordType)} · {record.evidenceRole}</p><h3>{record.title}</h3><p className="bibliography-creators">{displayBibliographyValue(record.creators.length ? record.creators : record.institution)}</p></div><a className="bibliography-anchor" href={`#bibliography/${record.id}`} aria-label={`Stable link to ${record.title}`}>#{record.citationKey}</a></div>
+      <p className="bibliography-description">{record.description}</p>
+      <div className="bibliography-meta-grid">
+        <div><span>Type / discipline</span><strong>{record.sourceType}</strong><small>{record.discipline}</small></div>
+        <div><span>Publication / publisher</span><strong>{displayBibliographyValue(record.publicationDate)}</strong><small>{displayBibliographyValue(record.publisher)}</small></div>
+        <div><span>Language / identifier</span><strong>{displayBibliographyValue(record.languages)}</strong><small>{Object.keys(record.identifiers).length ? Object.entries(record.identifiers).map(([key, value]) => `${key}: ${value}`).join(' · ') : 'Not recorded'}</small></div>
+        <div><span>Review / confidence</span><strong>{record.review.status}</strong><small>{record.review.confidence} · {record.review.reviewedAt}</small></div>
+      </div>
+      <div className="bibliography-badges"><span>{record.accessStatus}</span><span>{record.publicationStatus}</span><span>{record.rightsStatus}</span>{record.quoteLocator && <span>locator: {record.quoteLocator}</span>}</div>
+      <p className="bibliography-rights"><strong>Rights note:</strong> {record.license} {publicationNote}</p>
+      <div className="bibliography-card-actions"><a href={record.canonicalUrl} target="_blank" rel="noreferrer">Open canonical source ↗</a><span>accessed {record.accessDate}</span></div>
+      <details className="bibliography-usage"><summary>Where this record is used</summary><div className="bibliography-usage-grid">{relationships.length ? relationships.map(([label, values]) => <div key={label}><span>{label}</span><p>{values.join(' · ')}</p></div>) : <p>No downstream usage mapping is recorded.</p>}</div></details>
+    </article>
   );
 }
 
