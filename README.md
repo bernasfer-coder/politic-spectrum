@@ -34,7 +34,7 @@ The taxonomy draws on the Stanford Encyclopedia of Philosophy, the World Values 
 
 Content is intentionally framed as approximate and educational: a person, country, state, or city cannot be reduced to five numbers, and the historical fascist/Nazi-like pattern is included only for analysis and historical context.
 
-The validation plan for the 5D core, candidate facets, questionnaire audit, privacy-safe pilot, and future 4D/5D/6D/7D comparisons is documented in [`VALIDATION_METHODOLOGY.md`](VALIDATION_METHODOLOGY.md). It keeps the public v1 model stable until empirical evidence supports a versioned change.
+The validation plan for the 5D core, candidate facets, questionnaire audit, privacy-safe pilot, and future 4D/5D/6D/7D comparisons is documented in [`VALIDATION_METHODOLOGY.md`](VALIDATION_METHODOLOGY.md). Its machine-readable construct map, 25-item audit, candidate facets, model registry, and evidence boundary live in `src/content/validation.js` and are checked by `scripts/test-validation.mjs`. It keeps the public v1 model stable until empirical evidence supports a versioned change.
 
 The citation, licence, quotation, dataset, privacy, and commercial-publication audit is documented in [`RIGHTS_AND_PROVENANCE.md`](RIGHTS_AND_PROVENANCE.md). The application links to external sources and uses original summaries; restricted data and uncleared quotations are not bundled or displayed.
 

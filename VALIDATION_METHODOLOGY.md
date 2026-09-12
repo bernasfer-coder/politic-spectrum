@@ -22,6 +22,18 @@ The current decision is:
 - **Run 4D, 5D, 6D, 7D, and core-plus-facets as preregistered comparisons.** A model wins only when it adds information without creating unacceptable confusion, instability, bias, or maintenance cost.
 - **Report uncertainty and limitations.** A score is an estimate from a short questionnaire, not a discovered essence of a person, country, party, city, or historical case.
 
+## Implementation status (13 September 2026)
+
+The validation plan is now represented in `src/content/validation.js` and checked by `scripts/test-validation.mjs` and the build validator. The registry contains:
+
+- operational construct boundaries for all five core dimensions;
+- a single-construct, polarity, cultural-portability, and cross-loading audit for all 25 current items;
+- eight candidate facets with their provisional treatment;
+- all five M4 leave-one-out variants, the stable `5d-v1` baseline, eight M6 facet additions, all 28 preregistered M7 facet pairs, and the core-plus-facets module model;
+- an explicit `not-run` evidence status.
+
+This registry is a readiness and version-control safeguard, not empirical evidence. Random or synthetic answers can exercise scoring code and fixtures, but they cannot establish reliability, validity, comprehension, measurement invariance, or incremental value. Participant results must come from the consented, privacy-safe study described below, and the public 5D model must not change before that evidence is reviewed.
+
 ## What is being validated
 
 Validity concerns the interpretation and use of scores, not whether a questionnaire has a magical label of “valid.” The evidence should cover content, response processes, internal structure, relations with external variables, reliability, measurement error, usability, and comparability. The AERA/APA/NCME testing standards frame validity as evidence supporting proposed score interpretations, while COSMIN provides a useful checklist of content validity, structural validity, reliability, measurement error, and cross-cultural validity.[^5][^6]

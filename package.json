@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "vite",
     "test": "npm run test:content && npm run test:unit",
-    "test:content": "node scripts/test-polarity.mjs && node scripts/test-bibliography.mjs && node scripts/test-research.mjs",
+    "test:content": "node scripts/test-polarity.mjs && node scripts/test-bibliography.mjs && node scripts/test-research.mjs && node scripts/test-validation.mjs",
     "test:unit": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",

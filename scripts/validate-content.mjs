@@ -17,6 +17,14 @@ import {
   SPECTRUM_BANDS,
   TAXONOMY_LABELS,
 } from '../src/content/index.js';
+import {
+  CANDIDATE_FACETS,
+  CORE_CONSTRUCT_MAP,
+  CORE_DIMENSION_IDS,
+  QUESTION_AUDIT,
+  VALIDATION_MODEL_DEFINITIONS,
+  VALIDATION_STATUS,
+} from '../src/content/validation.js';
 
 const errors = [];
 const warnings = [];
@@ -29,6 +37,8 @@ const taxonomyLabelSet = new Set(TAXONOMY_LABELS.map(({ id }) => id));
 const archetypeSet = new Set(ARCHETYPES.map(({ id }) => id));
 const researchWorkSet = new Set(RESEARCH_WORKS.map(({ id }) => id));
 const researchPersonSet = new Set(RESEARCH_PEOPLE.map(({ id }) => id));
+const questionSet = new Set(QUESTIONS.map(({ id }) => id));
+const candidateFacetSet = new Set(CANDIDATE_FACETS.map(({ id }) => id));
 
 function assert(condition, message) {
   if (!condition) errors.push(message);
@@ -83,6 +93,26 @@ for (let index = 1; index < BAND_RANGES.length; index += 1) {
 
 assert(QUESTIONS.length === 25, `Expected 25 questionnaire items, found ${QUESTIONS.length}`);
 assertUnique(QUESTIONS.map(({ id }) => id), 'Question');
+assert(JSON.stringify(CORE_DIMENSION_IDS) === JSON.stringify(dimensionIds), 'Validation construct map must follow the public dimension order');
+assert(Object.keys(CORE_CONSTRUCT_MAP).length === DIMENSIONS.length, 'Every core dimension needs an operational construct map');
+assert(Object.keys(QUESTION_AUDIT).length === questionSet.size, 'Every questionnaire item needs a validation audit entry');
+for (const questionId of questionSet) {
+  const audit = QUESTION_AUDIT[questionId];
+  assert(Boolean(audit), `Question ${questionId} is missing from the validation audit`);
+  if (audit) {
+    assert(['keep-provisionally', 'review'].includes(audit.status), `Question ${questionId} has an invalid validation-audit status`);
+    assert(Boolean(audit.concern) && Boolean(audit.futureAction), `Question ${questionId} validation audit is incomplete`);
+  }
+}
+assert(VALIDATION_STATUS.coreModel === '5d-v1', 'Validation registry must preserve the 5d-v1 core');
+assert(VALIDATION_STATUS.empiricalStatus === 'not-run', 'Validation registry must not imply that participant validation has occurred');
+assert(VALIDATION_MODEL_DEFINITIONS.length > 0, 'Validation registry must contain model definitions');
+for (const model of VALIDATION_MODEL_DEFINITIONS) {
+  assert(Boolean(model.id) && Boolean(model.family) && Boolean(model.purpose) && Boolean(model.status), `Validation model ${model.id ?? 'unknown'} is incomplete`);
+  assert(model.axisIds.length >= 4, `Validation model ${model.id ?? 'unknown'} must retain at least four axes`);
+  assert(model.axisIds.every((axisId) => CORE_DIMENSION_IDS.includes(axisId) || candidateFacetSet.has(axisId)), `Validation model ${model.id ?? 'unknown'} references an unknown axis or facet`);
+  assert((model.facetIds ?? []).every((facetId) => candidateFacetSet.has(facetId)), `Validation model ${model.id ?? 'unknown'} references an unknown candidate facet`);
+}
 for (const dimension of DIMENSIONS) {
   const dimensionQuestions = QUESTIONS.filter(({ dimension: questionDimension }) => questionDimension === dimension.id);
   assert(dimensionQuestions.length === 5, `${dimension.id} must have exactly 5 questions`);
