@@ -300,6 +300,13 @@ const ARCHETYPES = [
     accent: '#ff5c77',
     profile: { economic: -88, social: -18, authority: 86, identity: -38, foreign: 24 },
     summary: 'Strong public ownership and redistribution combined with a powerful state and limited tolerance for organized dissent.',
+    dimensionNotes: {
+      economic: 'Major industries and productive resources are treated as collective or public property, with redistribution prioritized over private accumulation.',
+      social: 'Social norms can be reorganized in service of collective goals, while private moral pluralism is secondary to the political project.',
+      authority: 'A disciplined party-state is considered necessary to coordinate transformation and suppress counter-revolution or organized opposition.',
+      identity: 'Universalist class solidarity tempers nationalism, although the state may still cultivate its own official patriotism.',
+      foreign: 'International conflict is read through class solidarity and geopolitical security; force may be defended as revolutionary or defensive.',
+    },
     people: [
       { name: 'Karl Marx', detail: 'Foundational theorist of communism and common ownership of productive resources.', source: SOURCES.marx },
       { name: 'Vladimir Lenin', detail: 'Revolutionary communist leader who developed a centralized party-state model.', source: SOURCES.lenin },
@@ -322,6 +329,13 @@ const ARCHETYPES = [
     accent: '#ff9f43',
     profile: { economic: -18, social: 92, authority: 98, identity: 96, foreign: 90 },
     summary: 'A historical warning profile: extreme hierarchy, authoritarian rule, aggressive nationalism, and militarized foreign policy.',
+    dimensionNotes: {
+      economic: 'Private property can remain, but production and labor are subordinated to state-defined national goals and corporatist control.',
+      social: 'Rigid hierarchy, traditional gender roles, racial ordering, and enforced conformity define the social vision.',
+      authority: 'The state claims total political authority, suppresses independent organizations, and demands personal loyalty to the regime.',
+      identity: 'The nation is defined as an organic, hierarchical, and often racial community whose interests override individual equality.',
+      foreign: 'Military power, territorial expansion, and the remaking of neighboring states are treated as central instruments of politics.',
+    },
     warning: 'This is a historical-analytical category, not a legitimate contemporary political recommendation.',
     people: [
       { name: 'Adolf Hitler', detail: 'Leader of Nazi Germany; the regime combined racial dictatorship, totalitarian control, and expansionist war.', source: SOURCES.hitler },
@@ -341,6 +355,13 @@ const ARCHETYPES = [
     accent: '#55d6be',
     profile: { economic: 86, social: -34, authority: -88, identity: -34, foreign: -72 },
     summary: 'Strong private-property and market preferences, broad civil liberties, and skepticism toward state coercion and military intervention.',
+    dimensionNotes: {
+      economic: 'Private property, free contract, competition, and voluntary exchange are preferred to planning, high taxation, and extensive regulation.',
+      social: 'Adults should choose their relationships, beliefs, and lifestyles without government imposing a single moral code.',
+      authority: 'Coercive power is tightly constrained by individual rights; privacy, speech, and peaceful dissent receive strong protection.',
+      identity: 'Individual rights and voluntary cooperation matter more than enforced national unity or state-defined cultural identity.',
+      foreign: 'Military alliances, intervention, and nation-building are viewed skeptically; trade and non-interference are preferred.',
+    },
     people: [
       { name: 'Robert Nozick', detail: 'Philosopher associated with strong individual rights and a minimal-state argument.', source: SOURCES.nozik },
       { name: 'Friedrich Hayek', detail: 'Economist and political thinker who defended dispersed knowledge, markets, and limited planning.', source: SOURCES.hayek },
@@ -363,6 +384,13 @@ const ARCHETYPES = [
     accent: '#7c83fd',
     profile: { economic: -32, social: -78, authority: -36, identity: -54, foreign: 28 },
     summary: 'Socially progressive and institutionally liberal, with a mixed economy and support for international cooperation.',
+    dimensionNotes: {
+      economic: 'Markets remain important, but taxation, regulation, public services, and redistribution are used to expand practical opportunity.',
+      social: 'The state should protect personal autonomy and actively reduce discrimination, even when that changes inherited norms.',
+      authority: 'Rights, elections, courts, and civil liberties limit public power, while government remains active in providing common goods.',
+      identity: 'Belonging is defined inclusively through equal citizenship, pluralism, and cooperation across national borders.',
+      foreign: 'Diplomacy and alliances are preferred, but limited force or sanctions can be justified for collective security or human rights.',
+    },
     people: [
       { name: 'John Stuart Mill', detail: 'Classical liberal thinker associated with individual liberty, free expression, and social reform.', source: SOURCES.mill },
       { name: 'Franklin D. Roosevelt', detail: 'U.S. liberal reformer associated with an expanded welfare state and regulatory government.', source: SOURCES.mill },
@@ -385,6 +413,13 @@ const ARCHETYPES = [
     accent: '#f2c14e',
     profile: { economic: 34, social: 68, authority: 46, identity: 82, foreign: 34 },
     summary: 'National sovereignty, cultural continuity, and stricter borders paired with a mixed or market-friendly economy.',
+    dimensionNotes: {
+      economic: 'A market-friendly mixed economy is accepted, but strategic industries, welfare, and trade may be shaped around national priorities.',
+      social: 'Family, religion, language, and inherited cultural norms are viewed as stabilizing institutions that deserve public support.',
+      authority: 'Law, order, and a capable executive receive extra weight, while elections and some legal limits remain important.',
+      identity: 'The nation, its borders, sovereignty, and cultural continuity are central sources of political legitimacy.',
+      foreign: 'The state should defend its interests and sovereignty actively, while avoiding unlimited ideological or nation-building wars.',
+    },
     people: [
       { name: 'Edmund Burke', detail: 'Conservative thinker associated with tradition, gradual change, and inherited institutions.', source: SOURCES.burke },
       { name: 'Charles de Gaulle', detail: 'French leader associated with national independence, state authority, and strategic sovereignty.', source: SOURCES.degaulle },
@@ -407,6 +442,13 @@ const ARCHETYPES = [
     accent: '#9b8afd',
     profile: { economic: -58, social: -62, authority: -26, identity: -34, foreign: -14 },
     summary: 'A regulated mixed economy, strong public services, civil liberties, and gradual reform through democratic institutions.',
+    dimensionNotes: {
+      economic: 'Private enterprise remains, but strong welfare provision, labor rights, collective bargaining, and redistribution reduce inequality.',
+      social: 'Progressive reform is supported, usually through gradual democratic change rather than a rejection of every inherited institution.',
+      authority: 'Democratic accountability, civil liberties, and rule-of-law constraints are combined with an active administrative state.',
+      identity: 'Civic belonging and international solidarity can coexist; national identity is less important than equal citizenship and welfare.',
+      foreign: 'Diplomacy, international law, and defensive cooperation are preferred over unilateral force or open-ended intervention.',
+    },
     people: [
       { name: 'Olof Palme', detail: 'Swedish social-democratic leader associated with an expansive welfare state and international solidarity.', source: SOURCES.palme },
       { name: 'Clement Attlee', detail: 'British Labour prime minister whose government built major postwar public institutions.', source: SOURCES.palme },
@@ -465,14 +507,16 @@ function App() {
   const [scores, setScores] = useState(DEFAULT_SCORES);
   const [answers, setAnswers] = useState({});
   const [questionIndex, setQuestionIndex] = useState(0);
+  const [selectedTypeId, setSelectedTypeId] = useState('social-democratic');
 
   const matches = useMemo(() => getMatches(scores), [scores]);
   const topMatch = matches[0];
-  const themeScores = mode === 'questionnaire' ? calculateScores(answers) : scores;
+  const selectedType = ARCHETYPES.find((archetype) => archetype.id === selectedTypeId) || ARCHETYPES[0];
+  const themeScores = mode === 'questionnaire' ? calculateScores(answers) : mode === 'library' ? selectedType.profile : scores;
   const themeMatch = useMemo(() => {
     const hasSignal = Object.values(themeScores).some((value) => value !== 0);
-    return hasSignal ? getMatches(themeScores)[0] : { id: 'neutral' };
-  }, [mode, themeScores]);
+    return mode === 'library' ? selectedType : hasSignal ? getMatches(themeScores)[0] : { id: 'neutral' };
+  }, [mode, selectedType, themeScores]);
   const palette = PALETTES[themeMatch.id] || PALETTES.neutral;
   const themeStyle = {
     '--cyan': palette.primary,
@@ -544,6 +588,9 @@ function App() {
             <button className={mode === 'freemode' ? 'mode-tab active' : 'mode-tab'} onClick={() => setMode('freemode')} role="tab" aria-selected={mode === 'freemode'}>
               <span className="tab-number">02</span><span><strong>FreeMode</strong><small>Move the five axes yourself</small></span>
             </button>
+            <button className={mode === 'library' ? 'mode-tab active' : 'mode-tab'} onClick={() => { setSelectedTypeId(topMatch.id); setMode('library'); }} role="tab" aria-selected={mode === 'library'}>
+              <span className="tab-number">03</span><span><strong>Spectrum Library</strong><small>Study each political type</small></span>
+            </button>
           </div>
 
           {mode === 'questionnaire' ? (
@@ -560,8 +607,10 @@ function App() {
               onShowResult={showResult}
               onReset={resetQuestionnaire}
             />
-          ) : (
+          ) : mode === 'freemode' ? (
             <FreeMode scores={scores} matches={matches} topMatch={topMatch} onUpdateScore={updateScore} onUseQuestionnaire={() => setMode('questionnaire')} />
+          ) : (
+            <SpectrumLibrary selectedType={selectedType} onSelectType={setSelectedTypeId} onLoadInFreeMode={() => { setScores({ ...selectedType.profile }); setMode('freemode'); }} />
           )}
         </section>
       </main>
@@ -613,6 +662,28 @@ function Questionnaire({ currentQuestion, currentDimension, questionIndex, answe
         </div>
       </div>
       <div className="utility-row"><button className="text-button subdued" onClick={onReset}>Reset questionnaire</button><p>About 5 minutes <span>·</span> 25 questions <span>·</span> 5 dimensions</p></div>
+    </div>
+  );
+}
+
+function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
+  return (
+    <div className="library-view">
+      <div className="section-heading-row">
+        <div><p className="eyebrow">REFERENCE PROFILES</p><h2>Select a spectrum. Read the logic.</h2></div>
+        <button className="secondary-button" onClick={onLoadInFreeMode}>Load this profile <span>↗</span></button>
+      </div>
+      <p className="library-intro">Choose a reference pattern below. The five cards explain not only where it sits on each axis, but why that position follows from the underlying political ideas.</p>
+
+      <div className="type-picker" role="listbox" aria-label="Political spectrum reference profiles">
+        {ARCHETYPES.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-selected={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Collectivist-leaning' : 'Market-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}
+      </div>
+
+      <div className="library-detail">
+        <div className="library-detail-heading"><div><p className="eyebrow">SELECTED REFERENCE</p><h3><span className="accent-dot" style={{ background: selectedType.accent }} />{selectedType.name}</h3><p>{selectedType.summary}</p></div><div className="library-score-note"><span>Profile coordinates</span><strong>5 axes · −100 to +100</strong></div></div>
+        {selectedType.warning && <div className="warning-banner"><span>!</span><p><strong>Historical context:</strong> {selectedType.warning}</p></div>}
+        <div className="library-axis-list">{DIMENSIONS.map((dimension) => { const value = selectedType.profile[dimension.id]; const band = getBand(dimension.id, value); const fill = `${(value + 100) / 2}%`; return <article className="library-axis-card" key={dimension.id}><div className="library-axis-top"><span className="axis-index">{dimension.index}</span><div><h4>{dimension.label}</h4><p>{dimension.low} <span>↔</span> {dimension.high}</p></div><strong>{formatScore(value)}</strong></div><div className="library-range"><i><b style={{ width: fill, background: selectedType.accent }} /></i><span className="library-zero" /><span className="library-marker" style={{ left: fill, borderColor: selectedType.accent, background: selectedType.accent }} /></div><div className="library-axis-label"><strong>{band.label}</strong><span>Band {BAND_RANGES.findIndex(([min, max]) => value >= min && value <= max) + 1} / 10</span></div><p className="band-description">{band.summary}</p><div className="reason-block"><span>Why this profile lands here</span><p>{selectedType.dimensionNotes[dimension.id]}</p></div></article>; })}</div>
+      </div>
     </div>
   );
 }
