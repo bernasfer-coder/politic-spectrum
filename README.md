@@ -22,7 +22,9 @@ npm run build
 npm run preview -- --host 0.0.0.0
 ```
 
-The questionnaire contains five questions per axis. FreeMode exposes five sliders and updates the closest documented reference patterns live. The researched taxonomy divides every axis into ten 20-point bands, from -100 to +100. Each band has its own descriptive tendency and related political families; the five band labels are kept independent so mixed positions remain visible.
+The app has three modes: Questionnaire contains five questions per axis; FreeMode exposes five sliders and updates the closest documented reference patterns live; Spectrum Library lets users select a reference profile and read the reasoning behind its position on every axis. The selected library profile can also be loaded directly into FreeMode.
+
+The researched taxonomy divides every axis into ten 20-point bands, from -100 to +100. Each band has its own descriptive tendency and related political families; the five band labels are kept independent so mixed positions remain visible.
 
 The taxonomy draws on the Stanford Encyclopedia of Philosophy, the World Values Survey, V-Dem’s democracy indices, the Chapel Hill Expert Survey, the Manifesto Project, and comparative foreign-policy research. The app links to these references in its in-page “Researched taxonomy” guide.
 
