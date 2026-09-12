@@ -54,6 +54,20 @@ const DEFAULT_SCORES = Object.fromEntries(DIMENSIONS.map(({ id }) => [id, 0]));
 const OPTION_VALUES = [-100, -50, 0, 50, 100];
 const OPTION_LABELS = ['Strongly disagree', 'Disagree', 'Unsure / mixed', 'Agree', 'Strongly agree'];
 
+const RESEARCH_SOURCES = [
+  { id: 'panXu', label: 'Pan & Xu — China’s Ideological Spectrum', url: 'https://www.journals.uchicago.edu/doi/abs/10.1086/694255', note: 'Evidence that political preferences can be multidimensional rather than a single left–right line.' },
+  { id: 'sepSocialism', label: 'Stanford Encyclopedia — Socialism', url: 'https://plato.stanford.edu/entries/socialism/', note: 'Definitions and internal diversity of socialist traditions.' },
+  { id: 'sepLiberalism', label: 'Stanford Encyclopedia — Liberalism', url: 'https://plato.stanford.edu/entries/liberalism/', note: 'Liberal approaches to liberty, property, authority, and the state.' },
+  { id: 'sepLibertarianism', label: 'Stanford Encyclopedia — Libertarianism', url: 'https://plato.stanford.edu/entries/libertarianism/', note: 'Individual liberty, coercion, property, and market arguments.' },
+  { id: 'sepConservatism', label: 'Stanford Encyclopedia — Conservatism', url: 'https://plato.stanford.edu/entries/conservatism/', note: 'Tradition, authority, gradual change, and paternalism.' },
+  { id: 'sepNationalism', label: 'Stanford Encyclopedia — Nationalism', url: 'https://plato.stanford.edu/entries/nationalism/', note: 'Distinction between civic, liberal, conservative, and ethnic forms of nationalism.' },
+  { id: 'vdem', label: 'V-Dem Democracy Indices Codebook', url: 'https://www.v-dem.net/documents/55/codebook.pdf', note: 'Operationalization of liberal democracy, civil liberties, rule of law, and limits on executive power.' },
+  { id: 'wvs', label: 'World Values Survey — Findings & Insights', url: 'https://www.worldvaluessurvey.org/WVSContents.jsp?CMSID=Findings', note: 'Empirical traditional/secular-rational and survival/self-expression value dimensions.' },
+  { id: 'ches', label: 'Chapel Hill Expert Survey Codebook', url: 'https://www.chesdata.eu/s/2014_CHES_codebook.pdf', note: 'Comparable issue scales for economic, lifestyle, religion, immigration, multiculturalism, and decentralization positions.' },
+  { id: 'manifesto', label: 'Manifesto Project Coding Handbook', url: 'https://manifesto-project.wzb.eu/down/papers/handbook_v4.pdf', note: 'Cross-national coding of controlled economy, social justice, political system, and internationalism.' },
+  { id: 'foreignPolicy', label: 'Oxford — Party Politics of Foreign and Security Policy', url: 'https://academic.oup.com/fpa/article/16/4/515/5911933', note: 'Comparative evidence on dovish/hawkish, multilateralist, alliance, and interventionist party positions.' },
+];
+
 const PALETTES = {
   neutral: {
     label: 'Neutral / mixed',
@@ -138,18 +152,28 @@ const QUESTIONS = [
   { id: 'economic-1', dimension: 'economic', prompt: 'The state should own or tightly control essential industries.', polarity: -1 },
   { id: 'economic-2', dimension: 'economic', prompt: 'Higher taxes and public spending are worth it if they substantially reduce inequality.', polarity: -1 },
   { id: 'economic-3', dimension: 'economic', prompt: 'Private competition usually allocates resources better than public planning.', polarity: 1 },
+  { id: 'economic-4', dimension: 'economic', prompt: 'Workers should have a meaningful say in the ownership or governance of the firms where they work.', polarity: -1 },
+  { id: 'economic-5', dimension: 'economic', prompt: 'The state should keep taxes and regulation low even if public services are narrower.', polarity: 1 },
   { id: 'social-1', dimension: 'social', prompt: 'The law should actively remove traditional restrictions on personal relationships and gender roles.', polarity: -1 },
   { id: 'social-2', dimension: 'social', prompt: 'A stable society should preserve established family, religious, and cultural norms.', polarity: 1 },
   { id: 'social-3', dimension: 'social', prompt: 'Government should avoid imposing one moral tradition on everyone.', polarity: -1 },
+  { id: 'social-4', dimension: 'social', prompt: 'Public institutions should protect people from discrimination based on identity, even when that challenges local traditions.', polarity: -1 },
+  { id: 'social-5', dimension: 'social', prompt: 'Schools should reinforce inherited cultural and religious norms rather than emphasize individual self-expression.', polarity: 1 },
   { id: 'authority-1', dimension: 'authority', prompt: 'The state may restrict speech when officials believe it threatens social order.', polarity: 1 },
   { id: 'authority-2', dimension: 'authority', prompt: 'Adults should be free to make personal choices unless they directly harm others.', polarity: -1 },
   { id: 'authority-3', dimension: 'authority', prompt: 'Police and intelligence agencies should receive broad powers to prevent dissent and disorder.', polarity: 1 },
+  { id: 'authority-4', dimension: 'authority', prompt: 'Peaceful protest should remain legal even when it disrupts normal life.', polarity: -1 },
+  { id: 'authority-5', dimension: 'authority', prompt: 'A strong leader should be able to bypass slow institutions during emergencies.', polarity: 1 },
   { id: 'identity-1', dimension: 'identity', prompt: 'National laws should take precedence over international courts and institutions.', polarity: 1 },
   { id: 'identity-2', dimension: 'identity', prompt: 'Migration and cultural exchange generally strengthen a society.', polarity: -1 },
   { id: 'identity-3', dimension: 'identity', prompt: 'A common national culture is more important than preserving separate group identities.', polarity: 1 },
+  { id: 'identity-4', dimension: 'identity', prompt: 'International institutions should share some authority when problems cross national borders.', polarity: -1 },
+  { id: 'identity-5', dimension: 'identity', prompt: 'Citizens owe special political and economic duties to co-nationals even when outsiders are equally needy.', polarity: 1 },
   { id: 'foreign-1', dimension: 'foreign', prompt: 'Military force should be used abroad to defend interests, allies, and influence.', polarity: 1 },
   { id: 'foreign-2', dimension: 'foreign', prompt: 'A country should avoid military alliances and foreign interventions whenever possible.', polarity: -1 },
   { id: 'foreign-3', dimension: 'foreign', prompt: 'Diplomacy and trade are usually preferable to coercive force.', polarity: -1 },
+  { id: 'foreign-4', dimension: 'foreign', prompt: 'Military force can be justified to stop mass atrocities even without a direct national interest.', polarity: 1 },
+  { id: 'foreign-5', dimension: 'foreign', prompt: 'Defense policy should prioritize deterrence and territorial protection over attempts to remake other countries.', polarity: -1 },
 ];
 
 const SOURCES = {
@@ -175,6 +199,98 @@ const SOURCES = {
   freedomNorway: { label: 'Freedom House — Norway', url: 'https://freedomhouse.org/country/norway/freedom-world/2026' },
   freedomSweden: { label: 'Freedom House — Sweden', url: 'https://freedomhouse.org/country/sweden/freedom-world/2026' },
   holocaust: { label: 'United States Holocaust Memorial Museum', url: 'https://encyclopedia.ushmm.org/content/en/article/nazi-racism-an-overview' },
+};
+
+const BAND_RANGES = [[-100, -81], [-80, -61], [-60, -41], [-40, -21], [-20, -1], [0, 19], [20, 39], [40, 59], [60, 79], [80, 100]];
+
+function buildBands(entries) {
+  return entries.map(([label, summary, families], index) => {
+    const [min, max] = BAND_RANGES[index];
+    return { min, max, label, summary, families };
+  });
+}
+
+const SPECTRUM_BANDS = {
+  economic: {
+    basis: 'This axis tracks ownership, redistribution, taxation, regulation, and the role of markets. It is not a proxy for how democratic or authoritarian a system is.',
+    sourceIds: ['sepSocialism', 'sepLiberalism', 'ches', 'manifesto'],
+    bands: buildBands([
+      ['Revolutionary state-socialist', 'Major productive assets are publicly or collectively owned; extensive planning and equalization are preferred over private accumulation.', ['communist', 'revolutionary socialism']],
+      ['State-socialist', 'The state directs most strategic sectors and uses extensive planning or public ownership, while limited markets may remain.', ['state socialism', 'hard-left']],
+      ['Democratic socialist', 'Substantial public ownership, worker power, and redistribution are pursued through democratic institutions rather than one-party rule.', ['democratic socialism', 'left socialism']],
+      ['Social democratic', 'A regulated mixed economy combines private enterprise with strong welfare provision, labor rights, and redistribution.', ['social democracy', 'laborism']],
+      ['Welfare liberal', 'Markets remain primary, with a meaningful safety net, targeted transfers, and regulation to protect opportunity and public goods.', ['social liberalism', 'welfare liberalism']],
+      ['Centrist mixed economy', 'A pragmatic balance between market allocation and public provision; the answer depends strongly on the sector and policy.', ['centrism', 'mixed economy']],
+      ['Market-oriented mixed economy', 'Private competition is preferred in most sectors, with selective welfare, public goods, and regulation retained.', ['market liberalism', 'liberal conservatism']],
+      ['Classical liberal', 'Low taxes and regulation, secure property and contract rights, and broad reliance on voluntary exchange are emphasized.', ['classical liberalism', 'economic liberalism']],
+      ['Free-market liberal', 'Broad privatization, light regulation, and strong skepticism toward redistribution define the preferred economic order.', ['free-market liberalism', 'laissez-faire']],
+      ['Laissez-faire / minarchist', 'The state’s economic role is reduced close to rights, courts, and security; voluntary exchange is treated as the default.', ['minarchism', 'radical market liberalism']],
+    ]),
+  },
+  social: {
+    basis: 'This axis tracks the preferred pace of cultural change, the role of inherited norms, personal autonomy, and equality in social life. It is separate from economic policy.',
+    sourceIds: ['sepLiberalism', 'sepConservatism', 'wvs', 'ches'],
+    bands: buildBands([
+      ['Revolutionary emancipatory', 'Inherited social roles are treated as structures to be dismantled; rapid expansion of personal autonomy and equality is favored.', ['radical progressivism', 'emancipatory politics']],
+      ['Radical progressive', 'Strong support for rapid reform on gender, sexuality, family, identity, and anti-discrimination issues.', ['progressive left', 'social liberalism']],
+      ['Progressive egalitarian', 'Social equality and protection from discrimination are prioritized, with openness to substantial cultural change.', ['progressivism', 'egalitarian liberalism']],
+      ['Social liberal', 'Personal autonomy is broadly protected and social norms may evolve, while pluralism and voluntary association remain central.', ['social liberalism', 'liberalism']],
+      ['Liberal pluralist', 'Individuals may follow traditional or new ways of life; the state should avoid imposing one moral tradition.', ['liberal pluralism', 'moderate liberalism']],
+      ['Socially centrist', 'A mixed position: preserve some norms while accepting gradual change and individual differences.', ['social centrism', 'moderate conservatism']],
+      ['Traditionalist pluralist', 'Inherited family, religious, or cultural norms deserve public respect, but peaceful pluralism remains acceptable.', ['traditional conservatism', 'communitarianism']],
+      ['Social conservative', 'Established family, religious, and cultural norms should shape public institutions and social policy.', ['social conservatism', 'religious conservatism']],
+      ['National-conservative social order', 'Cultural continuity and conformity are strongly preferred; social change is viewed as a risk to cohesion.', ['national conservatism', 'paternal conservatism']],
+      ['Hard traditionalist', 'Very strong preference for inherited moral authority and social hierarchy; when paired with high authority, this can become reactionary or theocratic.', ['reactionary traditionalism', 'religious authoritarianism']],
+    ]),
+  },
+  authority: {
+    basis: 'This axis tracks tolerance for coercion, dissent, executive power, surveillance, and institutional limits. A high score does not automatically mean a person supports a particular regime.',
+    sourceIds: ['sepLibertarianism', 'sepLiberalism', 'vdem', 'wvs'],
+    bands: buildBands([
+      ['Anarchist / anti-state', 'Coercive government is viewed as broadly illegitimate; voluntary association and self-government should replace most state power.', ['anarchism', 'anti-statism']],
+      ['Hard libertarian', 'The state should be minimal and tightly limited to preventing direct rights violations, with strong protection for dissent.', ['radical libertarianism', 'minarchism']],
+      ['Civil-libertarian', 'Individual rights, privacy, free speech, and limits on police power take priority over administrative convenience.', ['civil libertarianism', 'liberalism']],
+      ['Limited-state liberal', 'Government is legitimate but should be constrained by rights, due process, independent courts, and accountable institutions.', ['classical liberalism', 'constitutionalism']],
+      ['Liberal institutionalist', 'Democratic institutions and civil liberties are valued, while reasonable public authority is accepted for common goods.', ['liberal democracy', 'constitutional democracy']],
+      ['Rule-of-law centrist', 'Neither maximum liberty nor maximum order dominates; authority is accepted when lawful, proportionate, and reviewable.', ['moderate constitutionalism', 'civic republicanism']],
+      ['Order-oriented democratic', 'Public order, enforcement, and social discipline receive more weight, but elections and legal constraints remain important.', ['law-and-order democracy', 'communitarian conservatism']],
+      ['Paternalist / law-and-order', 'A strong state may restrict conduct, speech, or protest to protect morality, security, or social cohesion.', ['paternalism', 'illiberal conservatism']],
+      ['Illiberal majoritarian', 'A leader or majority is given broad discretion to override independent institutions and some minority or opposition rights.', ['illiberal democracy', 'majoritarian authoritarianism']],
+      ['Authoritarian / totalizing', 'Centralized power, obedience, and extensive coercion dominate; dissent and independent social organizations are treated as threats.', ['authoritarianism', 'totalitarianism']],
+    ]),
+  },
+  identity: {
+    basis: 'This axis tracks how strongly political loyalty should be organized around the nation, sovereignty, and a shared national culture. National identity can be civic and inclusive or ethnic and exclusionary; the axis alone does not decide which.',
+    sourceIds: ['sepNationalism', 'wvs', 'ches', 'manifesto'],
+    bands: buildBands([
+      ['Cosmopolitan / post-national', 'Political obligations are understood primarily in universal or global terms; national borders should have limited moral and political weight.', ['cosmopolitanism', 'post-nationalism']],
+      ['Internationalist', 'Strong support for cross-border institutions, migration, and universal rights, with only a modest role for national preference.', ['internationalism', 'cosmopolitan liberalism']],
+      ['Civic internationalist', 'National institutions matter, but international law, cooperation, and equal rights across borders are strongly valued.', ['liberal internationalism', 'civic universalism']],
+      ['Pluralist civic patriot', 'Attachment to a constitutional community is compatible with multiple cultures, identities, and substantial international cooperation.', ['civic patriotism', 'liberal nationalism']],
+      ['Civic pluralist', 'National belonging is accepted as important, but it is defined mainly through citizenship and shared political rules.', ['civic nationalism', 'constitutional patriotism']],
+      ['Civic national', 'The nation is a primary democratic community; equal citizenship and a common civic culture are emphasized.', ['civic nationalism', 'moderate patriotism']],
+      ['Patriotic', 'National solidarity and national preference receive clear priority, while pluralism and international cooperation remain possible.', ['patriotism', 'moderate nationalism']],
+      ['National-conservative', 'Sovereignty, cultural continuity, national borders, and inherited national institutions are strongly prioritized.', ['national conservatism', 'sovereigntism']],
+      ['Hard nationalist', 'National interest is treated as the overriding political standard; outsiders and international constraints are viewed with deep suspicion.', ['hard nationalism', 'sovereigntist nationalism']],
+      ['Exclusionary ethnonationalist tendency', 'National identity is defined in narrow ethnic, religious, or cultural terms; this label applies only when the view explicitly excludes equal belonging.', ['ethnonationalism', 'chauvinism']],
+    ]),
+  },
+  foreign: {
+    basis: 'This axis tracks willingness to use force, alliances, sanctions, and coercive influence abroad. Interventionism can be humanitarian, defensive, or imperial; the reason for action matters.',
+    sourceIds: ['foreignPolicy', 'ches', 'manifesto'],
+    bands: buildBands([
+      ['Pacifist / non-interventionist', 'Military force is rejected except in the most immediate defense; diplomacy and nonviolent settlement are the default.', ['pacifism', 'non-interventionism']],
+      ['Strict restraint', 'Foreign commitments, alliances, and military deployments should be rare, limited, and directly tied to territorial defense.', ['restraint', 'isolationism']],
+      ['Defensive realist', 'A state should maintain credible defense and deterrence but avoid nation-building, regime change, and open-ended wars.', ['defensive realism', 'restrained realism']],
+      ['Restrained internationalist', 'International cooperation is valued, but force and coercion require clear legal and strategic limits.', ['restrained internationalism', 'limited multilateralism']],
+      ['Cautious multilateralist', 'Diplomacy and international institutions lead; force may be acceptable with broad legitimacy and a defined objective.', ['multilateralism', 'liberal internationalism']],
+      ['Pragmatic internationalist', 'The state actively engages abroad and balances diplomacy, alliances, trade, sanctions, and limited force.', ['pragmatic internationalism', 'moderate internationalism']],
+      ['Alliance-oriented activist', 'Strong alliances, forward presence, and active diplomatic or economic pressure are considered necessary for security.', ['Atlanticism', 'activist internationalism']],
+      ['Interventionist', 'Military force or coercive influence may be used proactively to defend interests, allies, or values beyond the homeland.', ['interventionism', 'hawkish internationalism']],
+      ['Assertive interventionist', 'A state should actively shape the international order and accept significant risk or cost to impose outcomes.', ['assertive realism', 'power politics']],
+      ['Militarist / expansionist tendency', 'Force, hierarchy, and territorial or political expansion are treated as central instruments of national power.', ['militarism', 'expansionism']],
+    ]),
+  },
 };
 
 const ARCHETYPES = [
@@ -311,12 +427,12 @@ const ARCHETYPES = [
 
 function calculateScores(answers) {
   return Object.fromEntries(DIMENSIONS.map(({ id }) => {
-    const relevant = QUESTIONS.filter((question) => question.dimension === id);
+    const relevant = QUESTIONS.filter((question) => question.dimension === id && answers[question.id] !== undefined);
     const total = relevant.reduce((sum, question) => {
       const answer = answers[question.id];
-      return sum + (answer === undefined ? 0 : answer * question.polarity);
+      return sum + answer * question.polarity;
     }, 0);
-    return [id, Math.round(total / relevant.length)];
+    return [id, relevant.length ? Math.round(total / relevant.length) : 0];
   }));
 }
 
@@ -335,12 +451,13 @@ function formatScore(value) {
   return value > 0 ? `+${value}` : `${value}`;
 }
 
+function getBand(dimensionId, value) {
+  const bands = SPECTRUM_BANDS[dimensionId].bands;
+  return bands.find((band) => value >= band.min && value <= band.max) || bands[bands.length - 1];
+}
+
 function scoreLabel(value, dimension) {
-  if (value <= -60) return dimension.low;
-  if (value >= 60) return dimension.high;
-  if (value < 0) return `Leaning ${dimension.low.toLowerCase()}`;
-  if (value > 0) return `Leaning ${dimension.high.toLowerCase()}`;
-  return 'Balanced / mixed';
+  return getBand(dimension.id, value).label;
 }
 
 function App() {
@@ -495,7 +612,7 @@ function Questionnaire({ currentQuestion, currentDimension, questionIndex, answe
           </div>
         </div>
       </div>
-      <div className="utility-row"><button className="text-button subdued" onClick={onReset}>Reset questionnaire</button><p>About 3 minutes <span>·</span> 15 questions <span>·</span> 5 dimensions</p></div>
+      <div className="utility-row"><button className="text-button subdued" onClick={onReset}>Reset questionnaire</button><p>About 5 minutes <span>·</span> 25 questions <span>·</span> 5 dimensions</p></div>
     </div>
   );
 }
@@ -518,6 +635,8 @@ function FreeMode({ scores, matches, topMatch, onUpdateScore, onUseQuestionnaire
         <div className="match-stack">{matches.slice(0, 3).map((match, index) => <div className="match-row" key={match.id}><span>{String(index + 1).padStart(2, '0')}</span><strong>{match.name}</strong><i><b style={{ width: `${Math.max(8, 100 - match.distance / 2)}%`, background: match.accent }} /></i><em>{Math.round(match.distance)} distance</em></div>)}</div>
       </div>
 
+      <div className="axis-readout"><div className="axis-readout-heading"><p className="eyebrow">YOUR FIVE-BAND READOUT</p><p>One independent interpretation for every axis.</p></div>{DIMENSIONS.map((dimension) => { const band = getBand(dimension.id, scores[dimension.id]); return <div className="axis-readout-item" key={dimension.id}><span>{dimension.index}</span><div><strong>{dimension.label}</strong><small>{band.label}</small></div><em>{formatScore(scores[dimension.id])}</em></div>; })}</div>
+
       {topMatch.warning && <div className="warning-banner"><span>!</span><p><strong>Historical context:</strong> {topMatch.warning}</p></div>}
 
       <div className="insight-grid">
@@ -527,6 +646,7 @@ function FreeMode({ scores, matches, topMatch, onUpdateScore, onUseQuestionnaire
       </div>
 
       <p className="data-note">The matching engine uses simple geometric distance across five independent axes. People and places are selected as documented reference points, not as proof that every belief or policy matched.</p>
+      <SpectrumGuide scores={scores} />
     </div>
   );
 }
@@ -538,6 +658,10 @@ function AxisSlider({ dimension, value, onChange }) {
 
 function InsightSection({ number, title, subtitle, items, emptyMessage }) {
   return <section className="insight-section"><div className="insight-header"><span className="insight-number">{number}</span><div><h3>{title}</h3><p>{subtitle}</p></div></div>{items?.length ? <div className="insight-list">{items.map((item) => <article className="insight-card" key={item.name}><div><h4>{item.name}</h4><p>{item.detail}</p></div><a href={item.source.url} target="_blank" rel="noreferrer">{item.source.label} <span>↗</span></a></article>)}</div> : <div className="empty-insight"><span>—</span><p>{emptyMessage}</p></div>}</section>;
+}
+
+function SpectrumGuide({ scores }) {
+  return <section className="spectrum-guide"><div className="guide-heading"><div><p className="eyebrow">RESEARCHED TAXONOMY</p><h3>Ten 20-point bands on every axis.</h3></div><p>Each band names a policy tendency, not a complete ideology. Your five independent labels should be read together.</p></div><div className="guide-list">{DIMENSIONS.map((dimension, index) => { const taxonomy = SPECTRUM_BANDS[dimension.id]; const activeBand = getBand(dimension.id, scores[dimension.id]); return <details className="guide-dimension" key={dimension.id} open={index === 0}><summary><span className="guide-dimension-index">{dimension.index}</span><span className="guide-dimension-name"><strong>{dimension.label}</strong><small>Current: {activeBand.label}</small></span><span className="guide-count">10 bands <b>＋</b></span></summary><div className="guide-content"><p className="guide-basis">{taxonomy.basis}</p><div className="band-table">{taxonomy.bands.map((band) => <div className={band.label === activeBand.label ? 'band-row active' : 'band-row'} key={band.label}><span className="band-range">{formatScore(band.min)} to {formatScore(band.max)}</span><div><strong>{band.label}</strong><p>{band.summary}</p><small>{band.families.join(' · ')}</small></div></div>)}</div><div className="guide-sources"><span>Research basis</span>{taxonomy.sourceIds.map((sourceId) => { const source = RESEARCH_SOURCES.find((item) => item.id === sourceId); return <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>; })}</div></div></details>; })}</div><div className="research-note"><strong>How the bands were chosen.</strong> The labels synthesize political-theory definitions with comparative measurement practice. They are intentionally descriptive and probabilistic: a score at one band does not prove a person belongs to a named movement, and country or historical comparisons require separate evidence.</div></section>;
 }
 
 createRoot(document.getElementById('root')).render(<App />);
