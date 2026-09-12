@@ -1,3 +1,5 @@
+import { ARCHETYPE_CITATIONS, AUTHOR_REFERENCES, BAND_CITATIONS } from './references.js';
+
 const DIMENSIONS = [
   {
     id: 'economic',
@@ -206,7 +208,7 @@ function buildBands(entries) {
   });
 }
 
-const SPECTRUM_BANDS = {
+const SPECTRUM_BANDS_RAW = {
   economic: {
     basis: 'This axis tracks ownership, redistribution, taxation, regulation, and the role of markets. It is not a proxy for how democratic or authoritarian a system is.',
     sourceIds: ['sepSocialism', 'sepLiberalism', 'ches', 'manifesto'],
@@ -289,7 +291,7 @@ const SPECTRUM_BANDS = {
   },
 };
 
-const ARCHETYPES = [
+const ARCHETYPES_RAW = [
   {
     id: 'authoritarian-collectivist',
     name: 'Authoritarian collectivist',
@@ -463,6 +465,25 @@ const ARCHETYPES = [
   },
 ];
 
+const SPECTRUM_BANDS = Object.fromEntries(Object.entries(SPECTRUM_BANDS_RAW).map(([dimensionId, taxonomy]) => [
+  dimensionId,
+  {
+    ...taxonomy,
+    basisCitationIds: [...new Set((BAND_CITATIONS[dimensionId] ?? []).flat())],
+    bands: taxonomy.bands.map((band, index) => ({
+      ...band,
+      citationIds: BAND_CITATIONS[dimensionId]?.[index] ?? [],
+      evidenceType: 'synthesis',
+    })),
+  },
+]));
+
+const ARCHETYPES = ARCHETYPES_RAW.map((archetype) => ({
+  ...archetype,
+  summaryCitationIds: ARCHETYPE_CITATIONS[archetype.id]?.summary ?? [],
+  dimensionCitationIds: ARCHETYPE_CITATIONS[archetype.id]?.dimensions ?? {},
+}));
+
 export {
   ARCHETYPES,
   BAND_RANGES,
@@ -475,4 +496,5 @@ export {
   RESEARCH_SOURCES,
   SOURCES,
   SPECTRUM_BANDS,
+  AUTHOR_REFERENCES,
 };

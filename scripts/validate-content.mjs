@@ -1,5 +1,6 @@
 import {
   ARCHETYPES,
+  AUTHOR_REFERENCES,
   BAND_RANGES,
   DIMENSIONS,
   QUESTIONS,
@@ -11,6 +12,7 @@ const errors = [];
 const dimensionIds = DIMENSIONS.map(({ id }) => id);
 const dimensionSet = new Set(dimensionIds);
 const researchSourceSet = new Set(RESEARCH_SOURCES.map(({ id }) => id));
+const authorReferenceSet = new Set(Object.keys(AUTHOR_REFERENCES));
 
 function assert(condition, message) {
   if (!condition) errors.push(message);
@@ -55,6 +57,13 @@ for (const question of QUESTIONS) {
 
 assertUnique(RESEARCH_SOURCES.map(({ id }) => id), 'Research source');
 for (const source of RESEARCH_SOURCES) assertUrl(source.url, `Research source ${source.id}`);
+for (const [referenceId, reference] of Object.entries(AUTHOR_REFERENCES)) {
+  assertUrl(reference.url, `Author reference ${referenceId}`);
+  if (reference.quote) {
+    assert(reference.quote.trim().split(/\s+/).length <= 25, `Direct quote ${referenceId} exceeds 25 words`);
+    assert(Boolean(reference.locator), `Direct quote ${referenceId} needs a locator`);
+  }
+}
 
 assert(Object.keys(SPECTRUM_BANDS).length === DIMENSIONS.length, 'Spectrum bands must cover every dimension exactly once');
 for (const dimension of DIMENSIONS) {
@@ -63,6 +72,10 @@ for (const dimension of DIMENSIONS) {
   if (!catalog) continue;
 
   assert(Array.isArray(catalog.bands) && catalog.bands.length === 10, `${dimension.id} must have 10 spectrum bands`);
+  assert(Array.isArray(catalog.basisCitationIds) && catalog.basisCitationIds.length > 0, `${dimension.id} basis is missing author references`);
+  for (const citationId of catalog.basisCitationIds ?? []) {
+    assert(authorReferenceSet.has(citationId), `${dimension.id} basis references unknown author work ${citationId}`);
+  }
   for (const sourceId of catalog.sourceIds ?? []) {
     assert(researchSourceSet.has(sourceId), `${dimension.id} references unknown research source ${sourceId}`);
   }
@@ -70,6 +83,10 @@ for (const dimension of DIMENSIONS) {
     const band = catalog.bands[index];
     assert(Number.isInteger(band.min) && Number.isInteger(band.max), `${dimension.id} band ${index} must have integer bounds`);
     assert(band.min <= band.max, `${dimension.id} band ${index} has inverted bounds`);
+    assert(Array.isArray(band.citationIds) && band.citationIds.length > 0, `${dimension.id} band ${index} is missing author references`);
+    for (const citationId of band.citationIds ?? []) {
+      assert(authorReferenceSet.has(citationId), `${dimension.id} band ${index} references unknown author work ${citationId}`);
+    }
     if (index > 0) {
       assert(catalog.bands[index - 1].max + 1 === band.min, `${dimension.id} bands overlap or have a gap at index ${index}`);
     }
@@ -80,10 +97,19 @@ for (const dimension of DIMENSIONS) {
 
 assertUnique(ARCHETYPES.map(({ id }) => id), 'Archetype');
 for (const archetype of ARCHETYPES) {
+  assert(Array.isArray(archetype.summaryCitationIds) && archetype.summaryCitationIds.length > 0, `${archetype.id} is missing summary references`);
+  for (const citationId of archetype.summaryCitationIds ?? []) {
+    assert(authorReferenceSet.has(citationId), `${archetype.id} references unknown summary work ${citationId}`);
+  }
   for (const dimension of DIMENSIONS) {
     const value = archetype.profile?.[dimension.id];
     assert(Number.isFinite(value) && value >= -100 && value <= 100, `${archetype.id} has an invalid ${dimension.id} profile value`);
     assert(Boolean(archetype.dimensionNotes?.[dimension.id]), `${archetype.id} is missing a ${dimension.id} explanation`);
+    const dimensionCitations = archetype.dimensionCitationIds?.[dimension.id] ?? [];
+    assert(dimensionCitations.length > 0, `${archetype.id} is missing ${dimension.id} references`);
+    for (const citationId of dimensionCitations) {
+      assert(authorReferenceSet.has(citationId), `${archetype.id} references unknown ${dimension.id} work ${citationId}`);
+    }
   }
 }
 
