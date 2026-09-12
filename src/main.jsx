@@ -511,8 +511,8 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
       </div>
       <p className="library-intro">Choose a reference pattern below. The five cards explain not only where it sits on each axis, but why that position follows from the underlying political ideas.</p>
 
-      <div className="type-picker" role="listbox" aria-label="Political spectrum reference profiles">
-        {ARCHETYPES.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-selected={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Market-leaning' : 'Collectivist-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}
+      <div className="type-picker" role="group" aria-label="Political spectrum reference profiles">
+        {ARCHETYPES.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-pressed={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Market-leaning' : 'Collectivist-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}
       </div>
 
       <div className="library-detail">
@@ -722,4 +722,19 @@ function SpectrumGuide({ scores }) {
   return <section className="spectrum-guide"><div className="guide-heading"><div><p className="eyebrow">RESEARCHED TAXONOMY</p><h3>Ten 20-point bands on every axis.</h3></div><p>Each band names a policy tendency, not a complete ideology. Your five independent labels should be read together.</p></div><div className="guide-list">{DIMENSIONS.map((dimension, index) => { const taxonomy = SPECTRUM_BANDS[dimension.id]; const activeBand = getBand(dimension.id, scores[dimension.id]); return <details className="guide-dimension" key={dimension.id} open={index === 0}><summary><span className="guide-dimension-index">{dimension.index}</span><span className="guide-dimension-name"><strong>{dimension.label}</strong><small>Current: {activeBand.label}</small></span><span className="guide-count">10 bands <b>＋</b></span></summary><div className="guide-content"><p className="guide-basis">{taxonomy.basis}</p><EvidenceLinks citationIds={taxonomy.basisCitationIds} compact /><div className="band-table">{taxonomy.bands.map((band) => <div className={band.label === activeBand.label ? 'band-row active' : 'band-row'} key={band.label}><span className="band-range">{formatScore(band.min)} to {formatScore(band.max)}</span><div><strong>{band.label}</strong><div className="band-summary"><p>{band.summary}</p><EvidenceLinks citationIds={band.citationIds} compact /></div><small>{band.families.join(' · ')}</small></div></div>)}</div><div className="guide-sources"><span>Research basis</span>{taxonomy.sourceIds.map((sourceId) => { const source = RESEARCH_SOURCES.find((item) => item.id === sourceId); return <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>; })}</div></div></details>; })}</div><div className="research-note"><strong>How the bands were chosen.</strong> The labels synthesize political-theory definitions with comparative measurement practice. They are intentionally descriptive and probabilistic: a score at one band does not prove a person belongs to a named movement, and country or historical comparisons require separate evidence.</div></section>;
 }
 
-createRoot(document.getElementById('root')).render(<App />);
+export {
+  App,
+  calculateScores,
+  distanceBetween,
+  formatRange,
+  formatScore,
+  getBand,
+  getMatches,
+  loadQuestionnaireCache,
+  saveQuestionnaireCache,
+};
+
+if (typeof document !== 'undefined') {
+  const rootElement = document.getElementById('root');
+  if (rootElement) createRoot(rootElement).render(<App />);
+}
