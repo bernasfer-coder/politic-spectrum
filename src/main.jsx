@@ -16,6 +16,7 @@ import {
   RESEARCH_BACKLOG,
   RESEARCH_COVERAGE_MATRIX,
   RESEARCH_PEOPLE,
+  RESEARCH_POLITICAL_FORMS,
   RESEARCH_RELATIONSHIPS,
   RESEARCH_SECTIONS,
   RESEARCH_WORKS,
@@ -632,6 +633,7 @@ function ResearchAtlas() {
       </div>
       <div className="atlas-stats"><div><strong>{RESEARCH_WORKS.length}</strong><span>works & legal texts</span></div><div><strong>{RESEARCH_PEOPLE.length}</strong><span>documented people</span></div><div><strong>{RESEARCH_RELATIONSHIPS.length}</strong><span>cautious relationships</span></div><div><strong>{RESEARCH_BACKLOG.length}</strong><span>open research gaps</span></div></div>
       <ResearchCoverageMatrix />
+      <details className="atlas-sections"><summary>Recurring political forms · {RESEARCH_POLITICAL_FORMS.length} patterns</summary><div className="atlas-section-grid">{RESEARCH_POLITICAL_FORMS.map((form) => <div key={form.id}><strong>{form.label}</strong><p>{form.description}</p><small><strong>Anchors:</strong> {form.workIds.map((workId) => workById[workId]?.title ?? workId).join(' · ')}</small><p className="atlas-coverage-note"><strong>Boundary:</strong> {form.caution}</p></div>)}</div></details>
       <details className="atlas-sections"><summary>Editorial map · {RESEARCH_SECTIONS.length} sections</summary><div className="atlas-section-grid">{RESEARCH_SECTIONS.map((section) => <div key={section.id}><strong>{section.label}</strong><p>{section.description}</p></div>)}</div></details>
       <details className="atlas-backlog"><summary>Prioritized bibliography backlog · {RESEARCH_BACKLOG.length} items</summary><div className="atlas-backlog-list">{RESEARCH_BACKLOG.map((item) => <div key={item.id}><span className={`atlas-priority ${item.priority}`}>{item.priority}</span><strong>{item.title}</strong><p>{item.reason}</p></div>)}</div></details>
 

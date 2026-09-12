@@ -4,6 +4,7 @@ import {
   DIMENSIONS,
   RESEARCH_COVERAGE_MATRIX,
   RESEARCH_PEOPLE,
+  RESEARCH_POLITICAL_FORMS,
   RESEARCH_RELATIONSHIPS,
   RESEARCH_WORKS,
 } from '../src/content/index.js';
@@ -13,7 +14,7 @@ const workIds = new Set(RESEARCH_WORKS.map(({ id }) => id));
 const personIds = new Set(RESEARCH_PEOPLE.map(({ id }) => id));
 const bibliographyFor = (field, id) => BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds[field]?.includes(id));
 
-assert.equal(RESEARCH_WORKS.length, 21, 'the curated research inventory should contain 21 works/legal texts');
+assert.equal(RESEARCH_WORKS.length, 61, 'the curated research inventory should contain 61 works/legal texts');
 assert.equal(RESEARCH_PEOPLE.length, 21, 'the curated research inventory should contain 21 people');
 assert.equal(RESEARCH_COVERAGE_MATRIX.length, DIMENSIONS.length, 'coverage must include every dimension');
 
@@ -58,5 +59,19 @@ assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Portuguese'),
 assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'French'), 'French-language research must be represented');
 assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'German'), 'German-language research must be represented');
 assert.ok(RESEARCH_WORKS.some((work) => work.regions.some((region) => region.includes('Latin America'))));
+for (const form of RESEARCH_POLITICAL_FORMS) {
+  assert.ok(form.description && form.caution, `${form.id} must explain its scope and boundary`);
+  assert.ok(form.workIds.length >= 3, `${form.id} must have multiple evidence anchors`);
+  assert.ok(form.workIds.every((id) => workIds.has(id)), `${form.id} references an unknown work`);
+}
+assert.ok(RESEARCH_POLITICAL_FORMS.length >= 10, 'the atlas should expose recurring political forms');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Middle Egyptian'), 'Middle Egyptian research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Akkadian'), 'Akkadian research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Sanskrit'), 'Sanskrit research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Classical Tamil'), 'Classical Tamil research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Pali'), 'Pali research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Arabic'), 'Arabic research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Persian'), 'Persian research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage.includes('Mande')), 'Mande research must be represented');
 
 console.log(`Research tests passed: ${RESEARCH_WORKS.length} works, ${RESEARCH_PEOPLE.length} people, ${RESEARCH_RELATIONSHIPS.length} relationships, and ${DIMENSIONS.length * 10} coverage cells.`);

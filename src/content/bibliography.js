@@ -154,4 +154,4 @@ export const BIBLIOGRAPHY_METADATA = {
   },
 };
 
-export const BIBLIOGRAPHY_ACCESS_DATE = '2026-09-12';
+export const BIBLIOGRAPHY_ACCESS_DATE = '2026-09-13';
