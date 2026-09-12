@@ -1,0 +1,14 @@
+[Unit]
+Description=Politic Spectrum web app
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/politic-spectrum
+ExecStart=/root/.nvm/versions/node/v24.15.0/bin/npm run preview -- --host 0.0.0.0 --port 4173
+Restart=on-failure
+RestartSec=3
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
