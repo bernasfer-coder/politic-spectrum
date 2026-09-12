@@ -31,3 +31,5 @@ The taxonomy draws on the Stanford Encyclopedia of Philosophy, the World Values 
 Content is intentionally framed as approximate and educational: a person, country, state, or city cannot be reduced to five numbers, and the historical fascist/Nazi-like pattern is included only for analysis and historical context.
 
 Each 20-point band and each reference-profile explanation also carries explicit author/work evidence. The UI distinguishes interpretive synthesis from short direct primary-text citations; the full reference map lives in `src/content/references.js` and is validated during every build.
+
+Questionnaire answers are cached locally in the browser under a versioned key. Incomplete questionnaires resume at the first unanswered question; complete questionnaires restore the calculated result view after refresh. Reset removes the local cache.
