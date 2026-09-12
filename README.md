@@ -34,6 +34,8 @@ Content is intentionally framed as approximate and educational: a person, countr
 
 The validation plan for the 5D core, candidate facets, questionnaire audit, privacy-safe pilot, and future 4D/5D/6D/7D comparisons is documented in [`VALIDATION_METHODOLOGY.md`](VALIDATION_METHODOLOGY.md). It keeps the public v1 model stable until empirical evidence supports a versioned change.
 
-Each 20-point band and each reference-profile explanation also carries explicit author/work evidence. The UI distinguishes interpretive synthesis from short direct primary-text citations; the full reference map lives in `src/content/references.js` and is validated during every build.
+The citation, licence, quotation, dataset, privacy, and commercial-publication audit is documented in [`RIGHTS_AND_PROVENANCE.md`](RIGHTS_AND_PROVENANCE.md). The application links to external sources and uses original summaries; restricted data and uncleared quotations are not bundled or displayed.
+
+Each 20-point band and each reference-profile explanation also carries explicit author/work evidence. The UI distinguishes interpretive synthesis from quotation text held for rights review; the full reference map lives in `src/content/references.js` and is validated during every build.
 
 Questionnaire answers are cached locally in the browser under a versioned key. Incomplete questionnaires resume at the first unanswered question; complete questionnaires restore the calculated result view after refresh. Reset removes the local cache.

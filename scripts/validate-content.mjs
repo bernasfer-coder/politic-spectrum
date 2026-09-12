@@ -5,11 +5,14 @@ import {
   DIMENSIONS,
   QUESTIONS,
   RESEARCH_SOURCES,
+  RIGHTS_RECORDS,
+  SOURCES,
   SPECTRUM_BANDS,
   TAXONOMY_LABELS,
 } from '../src/content/index.js';
 
 const errors = [];
+const warnings = [];
 const dimensionIds = DIMENSIONS.map(({ id }) => id);
 const dimensionSet = new Set(dimensionIds);
 const researchSourceSet = new Set(RESEARCH_SOURCES.map(({ id }) => id));
@@ -30,6 +33,17 @@ function assertUrl(url, label) {
   } catch {
     errors.push(`${label} is not a valid URL: ${url}`);
   }
+}
+
+function assertRightsRecord(rightsRecord, label) {
+  assert(Boolean(rightsRecord), `${label} is missing a rights/provenance record`);
+  if (!rightsRecord) return;
+  assert(Boolean(rightsRecord.reviewedAt), `${label} is missing a rights review date`);
+  assert(Boolean(rightsRecord.rightsStatus), `${label} is missing a rights status`);
+  assert(Boolean(rightsRecord.license), `${label} is missing a licence note`);
+  assert(Boolean(rightsRecord.commercialUse), `${label} is missing a commercial-use decision`);
+  assert(Boolean(rightsRecord.publicationStatus), `${label} is missing a publication status`);
+  assert(Boolean(rightsRecord.action), `${label} is missing an editorial action`);
 }
 
 assert(DIMENSIONS.length === 5, `Expected exactly 5 dimensions, found ${DIMENSIONS.length}`);
@@ -57,12 +71,23 @@ for (const question of QUESTIONS) {
 }
 
 assertUnique(RESEARCH_SOURCES.map(({ id }) => id), 'Research source');
-for (const source of RESEARCH_SOURCES) assertUrl(source.url, `Research source ${source.id}`);
+for (const source of RESEARCH_SOURCES) {
+  assertUrl(source.url, `Research source ${source.id}`);
+  assertRightsRecord(RIGHTS_RECORDS.researchSources[source.id], `Research source ${source.id}`);
+}
+for (const [sourceId, source] of Object.entries(SOURCES)) {
+  assertUrl(source.url, `Source link ${sourceId}`);
+  assertRightsRecord(RIGHTS_RECORDS.sourceLinks[sourceId], `Source link ${sourceId}`);
+}
 for (const [referenceId, reference] of Object.entries(AUTHOR_REFERENCES)) {
   assertUrl(reference.url, `Author reference ${referenceId}`);
+  assertRightsRecord(RIGHTS_RECORDS.authorReferences[referenceId], `Author reference ${referenceId}`);
   if (reference.quote) {
     assert(reference.quote.trim().split(/\s+/).length <= 25, `Direct quote ${referenceId} exceeds 25 words`);
     assert(Boolean(reference.locator), `Direct quote ${referenceId} needs a locator`);
+    if (RIGHTS_RECORDS.authorReferences[referenceId]?.publicationStatus !== 'allowed') {
+      warnings.push(`Direct quote ${referenceId} is held from publication pending rights review`);
+    }
   }
 }
 
@@ -142,4 +167,8 @@ if (errors.length > 0) {
   process.exitCode = 1;
 } else {
   console.log(`Content validation passed: ${DIMENSIONS.length} dimensions, ${QUESTIONS.length} questions, ${ARCHETYPES.length} archetypes, and ${RESEARCH_SOURCES.length} research sources.`);
+  if (warnings.length > 0) {
+    console.warn(`Rights review warnings (${warnings.length}):`);
+    for (const warning of warnings) console.warn(`- ${warning}`);
+  }
 }

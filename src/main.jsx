@@ -11,6 +11,7 @@ import {
   PALETTES,
   QUESTIONS,
   RESEARCH_SOURCES,
+  RIGHTS_RECORDS,
   SOURCES,
   SPECTRUM_BANDS,
   TAXONOMY_LABELS,
@@ -54,13 +55,15 @@ function scoreLabel(value, dimension) {
 }
 
 function EvidenceLinks({ citationIds = [], compact = false }) {
-  const citations = citationIds.map((id) => AUTHOR_REFERENCES[id]).filter(Boolean);
+  const citations = citationIds.map((id) => ({ id, ...AUTHOR_REFERENCES[id] })).filter(({ author }) => author);
   if (!citations.length) return null;
-  const directCitations = citations.filter((citation) => citation.quote);
+  const directCitations = citations.filter((citation) => citation.quote && RIGHTS_RECORDS.authorReferences[citation.id]?.publicationStatus === 'allowed');
+  const withheldDirectCitations = citations.filter((citation) => citation.quote && !directCitations.includes(citation));
 
   return <div className={compact ? 'evidence-links compact' : 'evidence-links'}>
     <div className="evidence-links-header"><span>{directCitations.length ? 'Text & authors' : 'Authors & works'}</span><em>{directCitations.length ? 'includes direct text' : 'interpretive synthesis'}</em></div>
     <div className="evidence-link-list">{citations.map((citation) => <a key={`${citation.author}-${citation.work}`} href={citation.url} target="_blank" rel="noreferrer">{citation.author} · {citation.work} ({citation.year}) ↗</a>)}</div>
+    {withheldDirectCitations.length ? <small className="direct-citation"><strong>Quotation held:</strong> direct text is withheld until the exact edition/translation and publication rights are verified.</small> : null}
     {directCitations.map((citation) => <small className="direct-citation" key={`${citation.author}-${citation.locator}`}><strong>Direct text:</strong> “{citation.quote}” — {citation.author}, {citation.locator}.{citation.context ? ` ${citation.context}` : ''}</small>)}
   </div>;
 }

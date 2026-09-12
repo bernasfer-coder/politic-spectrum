@@ -1,4 +1,5 @@
 import { ARCHETYPE_CITATIONS, AUTHOR_REFERENCES, BAND_CITATIONS } from './references.js';
+import { RIGHTS_RECORDS } from './rights.js';
 import { TAXONOMY_LABELS as RAW_TAXONOMY_LABELS } from './taxonomy.js';
 
 const DIMENSIONS = [
@@ -523,6 +524,7 @@ export {
   PALETTES,
   QUESTIONS,
   RESEARCH_SOURCES,
+  RIGHTS_RECORDS,
   SOURCES,
   SPECTRUM_BANDS,
   TAXONOMY_LABELS,
