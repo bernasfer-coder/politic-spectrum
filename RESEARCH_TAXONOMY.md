@@ -20,13 +20,15 @@ Political labels must be separated into different kinds:
 
 ## Core dimensions
 
-The current five dimensions are:
+The current five dimensions use the following score orientation (the endpoints are descriptive, not normative):
 
-1. **Economy:** collectivist/public ownership and redistribution <-> mixed economy <-> market-oriented/private ownership.
-2. **Social values:** emancipatory/progressive <-> socially mixed <-> traditionalist/reactionary.
+1. **Economy:** market-oriented/private ownership <-> mixed economy <-> collectivist/public ownership and redistribution.
+2. **Social values:** traditionalist/reactionary <-> socially mixed <-> emancipatory/progressive.
 3. **Authority:** decentralized/libertarian <-> rule-of-law institutionalism <-> authoritarian/totalizing.
-4. **National identity:** cosmopolitan/pluralist <-> civic patriotism <-> nationalist/ethnonationalist.
-5. **Foreign policy:** restraint/non-intervention <-> multilateral security <-> interventionist/militarist/expansionist.
+4. **National identity:** nationalist/ethnonationalist <-> civic patriotism <-> cosmopolitan/pluralist.
+5. **Foreign policy:** interventionist/militarist/expansionist <-> multilateral security <-> restraint/non-intervention.
+
+The Authority axis is intentionally not reoriented. The sign convention is a product choice that keeps the four requested endpoints consistent across Questionnaire, FreeMode, Spectrum Library, cached results, and documentation; it does not make either endpoint morally superior or imply that a person at one endpoint belongs to a complete ideology.
 
 Additional dimensions or filters to evaluate separately:
 

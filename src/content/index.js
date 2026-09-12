@@ -1,22 +1,22 @@
 import { ARCHETYPE_CITATIONS, AUTHOR_REFERENCES, BAND_CITATIONS } from './references.js';
-import { TAXONOMY_LABELS } from './taxonomy.js';
+import { TAXONOMY_LABELS as RAW_TAXONOMY_LABELS } from './taxonomy.js';
 
 const DIMENSIONS = [
   {
     id: 'economic',
     index: '01',
     label: 'Economic model',
-    low: 'Collectivist',
-    high: 'Free-market',
+    low: 'Free-market',
+    high: 'Collectivist',
     questionLabel: 'Economic',
-    description: 'Who should own and direct resources: the public, or private individuals and markets?',
+    description: 'Who should own and direct resources: private individuals and markets, or the public?',
   },
   {
     id: 'social',
     index: '02',
     label: 'Social values',
-    low: 'Progressive',
-    high: 'Traditionalist',
+    low: 'Traditionalist',
+    high: 'Progressive',
     questionLabel: 'Social values',
     description: 'How much should society preserve inherited norms versus change them as people’s lives change?',
   },
@@ -33,22 +33,24 @@ const DIMENSIONS = [
     id: 'identity',
     index: '04',
     label: 'National identity',
-    low: 'Internationalist',
-    high: 'Nationalist',
+    low: 'Nationalist',
+    high: 'Internationalist',
     questionLabel: 'Identity',
-    description: 'Should political loyalty center on global cooperation or the nation and its sovereignty?',
+    description: 'Should political loyalty center on the nation and its sovereignty or global cooperation?',
   },
   {
     id: 'foreign',
     index: '05',
     label: 'Foreign policy',
-    low: 'Restraint',
-    high: 'Interventionist',
+    low: 'Interventionist',
+    high: 'Pacifist / restraint',
     questionLabel: 'Foreign policy',
-    description: 'When should a state use alliances, sanctions, or military force beyond its borders?',
+    description: 'When should a state use diplomacy and restraint versus alliances, sanctions, or military force abroad?',
   },
 ];
 
+const FLIPPED_DIMENSION_IDS = ['economic', 'social', 'identity', 'foreign'];
+const FLIPPED_DIMENSION_SET = new Set(FLIPPED_DIMENSION_IDS);
 const DEFAULT_SCORES = Object.fromEntries(DIMENSIONS.map(({ id }) => [id, 0]));
 const OPTION_VALUES = [-100, -50, 0, 50, 100];
 const OPTION_LABELS = ['Strongly disagree', 'Disagree', 'Unsure / mixed', 'Agree', 'Strongly agree'];
@@ -158,31 +160,31 @@ const PALETTES = {
 };
 
 const QUESTIONS = [
-  { id: 'economic-1', dimension: 'economic', prompt: 'The state should own or tightly control essential industries.', polarity: -1 },
-  { id: 'economic-2', dimension: 'economic', prompt: 'Higher taxes and public spending are worth it if they substantially reduce inequality.', polarity: -1 },
-  { id: 'economic-3', dimension: 'economic', prompt: 'Private competition usually allocates resources better than public planning.', polarity: 1 },
-  { id: 'economic-4', dimension: 'economic', prompt: 'Workers should have a meaningful say in the ownership or governance of the firms where they work.', polarity: -1 },
-  { id: 'economic-5', dimension: 'economic', prompt: 'The state should keep taxes and regulation low even if public services are narrower.', polarity: 1 },
-  { id: 'social-1', dimension: 'social', prompt: 'The law should actively remove traditional restrictions on personal relationships and gender roles.', polarity: -1 },
-  { id: 'social-2', dimension: 'social', prompt: 'A stable society should preserve established family, religious, and cultural norms.', polarity: 1 },
-  { id: 'social-3', dimension: 'social', prompt: 'Government should avoid imposing one moral tradition on everyone.', polarity: -1 },
-  { id: 'social-4', dimension: 'social', prompt: 'Public institutions should protect people from discrimination based on identity, even when that challenges local traditions.', polarity: -1 },
-  { id: 'social-5', dimension: 'social', prompt: 'Schools should reinforce inherited cultural and religious norms rather than emphasize individual self-expression.', polarity: 1 },
+  { id: 'economic-1', dimension: 'economic', prompt: 'The state should own or tightly control essential industries.', polarity: 1 },
+  { id: 'economic-2', dimension: 'economic', prompt: 'Higher taxes and public spending are worth it if they substantially reduce inequality.', polarity: 1 },
+  { id: 'economic-3', dimension: 'economic', prompt: 'Private competition usually allocates resources better than public planning.', polarity: -1 },
+  { id: 'economic-4', dimension: 'economic', prompt: 'Workers should have a meaningful say in the ownership or governance of the firms where they work.', polarity: 1 },
+  { id: 'economic-5', dimension: 'economic', prompt: 'The state should keep taxes and regulation low even if public services are narrower.', polarity: -1 },
+  { id: 'social-1', dimension: 'social', prompt: 'The law should actively remove traditional restrictions on personal relationships and gender roles.', polarity: 1 },
+  { id: 'social-2', dimension: 'social', prompt: 'A stable society should preserve established family, religious, and cultural norms.', polarity: -1 },
+  { id: 'social-3', dimension: 'social', prompt: 'Government should avoid imposing one moral tradition on everyone.', polarity: 1 },
+  { id: 'social-4', dimension: 'social', prompt: 'Public institutions should protect people from discrimination based on identity, even when that challenges local traditions.', polarity: 1 },
+  { id: 'social-5', dimension: 'social', prompt: 'Schools should reinforce inherited cultural and religious norms rather than emphasize individual self-expression.', polarity: -1 },
   { id: 'authority-1', dimension: 'authority', prompt: 'The state may restrict speech when officials believe it threatens social order.', polarity: 1 },
   { id: 'authority-2', dimension: 'authority', prompt: 'Adults should be free to make personal choices unless they directly harm others.', polarity: -1 },
   { id: 'authority-3', dimension: 'authority', prompt: 'Police and intelligence agencies should receive broad powers to prevent dissent and disorder.', polarity: 1 },
   { id: 'authority-4', dimension: 'authority', prompt: 'Peaceful protest should remain legal even when it disrupts normal life.', polarity: -1 },
   { id: 'authority-5', dimension: 'authority', prompt: 'A strong leader should be able to bypass slow institutions during emergencies.', polarity: 1 },
-  { id: 'identity-1', dimension: 'identity', prompt: 'National laws should take precedence over international courts and institutions.', polarity: 1 },
-  { id: 'identity-2', dimension: 'identity', prompt: 'Migration and cultural exchange generally strengthen a society.', polarity: -1 },
-  { id: 'identity-3', dimension: 'identity', prompt: 'A common national culture is more important than preserving separate group identities.', polarity: 1 },
-  { id: 'identity-4', dimension: 'identity', prompt: 'International institutions should share some authority when problems cross national borders.', polarity: -1 },
-  { id: 'identity-5', dimension: 'identity', prompt: 'Citizens owe special political and economic duties to co-nationals even when outsiders are equally needy.', polarity: 1 },
-  { id: 'foreign-1', dimension: 'foreign', prompt: 'Military force should be used abroad to defend interests, allies, and influence.', polarity: 1 },
-  { id: 'foreign-2', dimension: 'foreign', prompt: 'A country should avoid military alliances and foreign interventions whenever possible.', polarity: -1 },
-  { id: 'foreign-3', dimension: 'foreign', prompt: 'Diplomacy and trade are usually preferable to coercive force.', polarity: -1 },
-  { id: 'foreign-4', dimension: 'foreign', prompt: 'Military force can be justified to stop mass atrocities even without a direct national interest.', polarity: 1 },
-  { id: 'foreign-5', dimension: 'foreign', prompt: 'Defense policy should prioritize deterrence and territorial protection over attempts to remake other countries.', polarity: -1 },
+  { id: 'identity-1', dimension: 'identity', prompt: 'National laws should take precedence over international courts and institutions.', polarity: -1 },
+  { id: 'identity-2', dimension: 'identity', prompt: 'Migration and cultural exchange generally strengthen a society.', polarity: 1 },
+  { id: 'identity-3', dimension: 'identity', prompt: 'A common national culture is more important than preserving separate group identities.', polarity: -1 },
+  { id: 'identity-4', dimension: 'identity', prompt: 'International institutions should share some authority when problems cross national borders.', polarity: 1 },
+  { id: 'identity-5', dimension: 'identity', prompt: 'Citizens owe special political and economic duties to co-nationals even when outsiders are equally needy.', polarity: -1 },
+  { id: 'foreign-1', dimension: 'foreign', prompt: 'Military force should be used abroad to defend interests, allies, and influence.', polarity: -1 },
+  { id: 'foreign-2', dimension: 'foreign', prompt: 'A country should avoid military alliances and foreign interventions whenever possible.', polarity: 1 },
+  { id: 'foreign-3', dimension: 'foreign', prompt: 'Diplomacy and trade are usually preferable to coercive force.', polarity: 1 },
+  { id: 'foreign-4', dimension: 'foreign', prompt: 'Military force can be justified to stop mass atrocities even without a direct national interest.', polarity: -1 },
+  { id: 'foreign-5', dimension: 'foreign', prompt: 'Defense policy should prioritize deterrence and territorial protection over attempts to remake other countries.', polarity: 1 },
 ];
 
 const SOURCES = {
@@ -481,18 +483,33 @@ const SPECTRUM_BANDS = Object.fromEntries(Object.entries(SPECTRUM_BANDS_RAW).map
   {
     ...taxonomy,
     basisCitationIds: [...new Set((BAND_CITATIONS[dimensionId] ?? []).flat())],
-    bands: taxonomy.bands.map((band, index) => ({
+    bands: (FLIPPED_DIMENSION_SET.has(dimensionId) ? [...taxonomy.bands].reverse() : taxonomy.bands).map((band, index) => ({
       ...band,
-      citationIds: BAND_CITATIONS[dimensionId]?.[index] ?? [],
+      min: BAND_RANGES[index][0],
+      max: BAND_RANGES[index][1],
+      citationIds: (FLIPPED_DIMENSION_SET.has(dimensionId) ? [...(BAND_CITATIONS[dimensionId] ?? [])].reverse() : (BAND_CITATIONS[dimensionId] ?? []))[index] ?? [],
       evidenceType: 'synthesis',
     })),
   },
 ]));
 
+function orientProfile(profile) {
+  return Object.fromEntries(DIMENSIONS.map(({ id }) => {
+    const value = profile?.[id];
+    return [id, FLIPPED_DIMENSION_SET.has(id) && Number.isFinite(value) ? -value : value];
+  }));
+}
+
 const ARCHETYPES = ARCHETYPES_RAW.map((archetype) => ({
   ...archetype,
+  profile: orientProfile(archetype.profile),
   summaryCitationIds: ARCHETYPE_CITATIONS[archetype.id]?.summary ?? [],
   dimensionCitationIds: ARCHETYPE_CITATIONS[archetype.id]?.dimensions ?? {},
+}));
+
+const TAXONOMY_LABELS = RAW_TAXONOMY_LABELS.map((label) => ({
+  ...label,
+  axisPositions: orientProfile(label.axisPositions),
 }));
 
 export {
@@ -500,6 +517,7 @@ export {
   BAND_RANGES,
   DEFAULT_SCORES,
   DIMENSIONS,
+  FLIPPED_DIMENSION_IDS,
   OPTION_LABELS,
   OPTION_VALUES,
   PALETTES,

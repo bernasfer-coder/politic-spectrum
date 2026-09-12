@@ -65,13 +65,25 @@ function EvidenceLinks({ citationIds = [], compact = false }) {
   </div>;
 }
 
-const QUESTIONNAIRE_CACHE_KEY = 'politic-spectrum:questionnaire:v1';
+const QUESTIONNAIRE_CACHE_KEY = 'politic-spectrum:questionnaire:v2';
+const LEGACY_QUESTIONNAIRE_CACHE_KEY = 'politic-spectrum:questionnaire:v1';
+const QUESTIONNAIRE_CACHE_VERSION = 2;
 
 function loadQuestionnaireCache() {
   if (typeof window === 'undefined') return null;
   try {
-    const stored = JSON.parse(window.localStorage.getItem(QUESTIONNAIRE_CACHE_KEY));
-    if (!stored || stored.version !== 1 || !stored.answers || typeof stored.answers !== 'object') return null;
+    const stored = [QUESTIONNAIRE_CACHE_KEY, LEGACY_QUESTIONNAIRE_CACHE_KEY]
+      .map((key) => window.localStorage.getItem(key))
+      .filter(Boolean)
+      .map((value) => {
+        try {
+          return JSON.parse(value);
+        } catch {
+          return null;
+        }
+      })
+      .find((entry) => entry?.version === QUESTIONNAIRE_CACHE_VERSION || entry?.version === 1);
+    if (!stored || !stored.answers || typeof stored.answers !== 'object') return null;
     const validQuestionIds = new Set(QUESTIONS.map(({ id }) => id));
     const answers = Object.fromEntries(Object.entries(stored.answers).filter(([id, value]) => validQuestionIds.has(id) && OPTION_VALUES.includes(value)));
     const firstUnanswered = QUESTIONS.findIndex(({ id }) => answers[id] === undefined);
@@ -88,9 +100,10 @@ function saveQuestionnaireCache(answers, questionIndex) {
   try {
     if (Object.keys(answers).length === 0) {
       window.localStorage.removeItem(QUESTIONNAIRE_CACHE_KEY);
+      window.localStorage.removeItem(LEGACY_QUESTIONNAIRE_CACHE_KEY);
       return;
     }
-    window.localStorage.setItem(QUESTIONNAIRE_CACHE_KEY, JSON.stringify({ version: 1, answers, questionIndex }));
+    window.localStorage.setItem(QUESTIONNAIRE_CACHE_KEY, JSON.stringify({ version: QUESTIONNAIRE_CACHE_VERSION, answers, questionIndex }));
   } catch {
     // Local storage can be unavailable in private browsing or restricted contexts.
   }
@@ -147,6 +160,7 @@ function App() {
     setQuestionIndex(0);
     setScores(DEFAULT_SCORES);
     setMode('questionnaire');
+    if (typeof window !== 'undefined') window.localStorage.removeItem(LEGACY_QUESTIONNAIRE_CACHE_KEY);
   }
 
   function updateScore(dimensionId, value) {
@@ -302,7 +316,7 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
       <p className="library-intro">Choose a reference pattern below. The five cards explain not only where it sits on each axis, but why that position follows from the underlying political ideas.</p>
 
       <div className="type-picker" role="listbox" aria-label="Political spectrum reference profiles">
-        {ARCHETYPES.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-selected={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Collectivist-leaning' : 'Market-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}
+        {ARCHETYPES.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-selected={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Market-leaning' : 'Collectivist-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}
       </div>
 
       <div className="library-detail">

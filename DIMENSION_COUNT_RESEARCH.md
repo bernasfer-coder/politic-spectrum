@@ -65,11 +65,11 @@ No candidate becomes a mandatory core axis until it demonstrates: a distinct con
 
 ## Current five-axis hypothesis
 
-1. **Economic:** public/collectivist intervention ↔ market/private ownership.
-2. **Social:** progressive/autonomy-oriented change ↔ traditionalist/inherited norms.
+1. **Economic:** market/private ownership ↔ public/collectivist intervention.
+2. **Social:** traditionalist/inherited norms ↔ progressive/autonomy-oriented change.
 3. **Authority:** libertarian/civil-liberties constraints ↔ coercive/centralized authority.
-4. **Identity:** internationalist/pluralist orientation ↔ national sovereignty/shared national culture.
-5. **Foreign policy:** restraint/diplomacy ↔ intervention/coercive influence abroad.
+4. **Identity:** national sovereignty/shared national culture ↔ internationalist/pluralist orientation.
+5. **Foreign policy:** intervention/coercive influence abroad ↔ restraint/diplomacy.
 
 These axes are intended to be independent enough to show mixed profiles. They must not be treated as natural laws, psychological traits, or a replacement for the full complexity of a person’s political views.
 

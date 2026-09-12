@@ -2,11 +2,11 @@
 
 An npm/Vite/React prototype for exploring political positions across five independent dimensions:
 
-1. Economic model: collectivist ↔ free-market
-2. Social values: progressive ↔ traditionalist
+1. Economic model: free-market ↔ collectivist
+2. Social values: traditionalist ↔ progressive
 3. Authority: libertarian ↔ authoritarian
-4. National identity: internationalist ↔ nationalist
-5. Foreign policy: restraint ↔ interventionist
+4. National identity: nationalist ↔ internationalist
+5. Foreign policy: interventionist ↔ pacifist / restraint
 
 ## Run locally
 
@@ -28,7 +28,7 @@ The Spectrum Library also includes a normalized starter catalogue of historical 
 
 The researched taxonomy divides every axis into ten 20-point bands, from -100 to +100. Each band has its own descriptive tendency and related political families; the five band labels are kept independent so mixed positions remain visible.
 
-The taxonomy draws on the Stanford Encyclopedia of Philosophy, the World Values Survey, V-Dem’s democracy indices, the Chapel Hill Expert Survey, the Manifesto Project, and comparative foreign-policy research. The app links to these references in its in-page “Researched taxonomy” guide.
+The taxonomy draws on the Stanford Encyclopedia of Philosophy, the World Values Survey, V-Dem’s democracy indices, the Chapel Hill Expert Survey, the Manifesto Project, and comparative foreign-policy research. The app links to these references in its in-page “Researched taxonomy” guide. Score direction is intentionally standardized: −100 means free-market, traditionalist, nationalist, and interventionist on the four reoriented axes; +100 means collectivist, progressive, internationalist, and pacifist/restraint. Authority remains libertarian (−100) to authoritarian (+100).
 
 Content is intentionally framed as approximate and educational: a person, country, state, or city cannot be reduced to five numbers, and the historical fascist/Nazi-like pattern is included only for analysis and historical context.
 

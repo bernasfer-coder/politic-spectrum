@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "test": "node scripts/test-polarity.mjs",
     "validate:content": "node scripts/validate-content.mjs",
     "build": "npm run validate:content && vite build",
     "preview": "vite preview"
