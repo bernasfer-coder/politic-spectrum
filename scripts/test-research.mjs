@@ -13,8 +13,8 @@ const workIds = new Set(RESEARCH_WORKS.map(({ id }) => id));
 const personIds = new Set(RESEARCH_PEOPLE.map(({ id }) => id));
 const bibliographyFor = (field, id) => BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds[field]?.includes(id));
 
-assert.equal(RESEARCH_WORKS.length, 17, 'the curated research inventory should contain 17 works/legal texts');
-assert.equal(RESEARCH_PEOPLE.length, 17, 'the curated research inventory should contain 17 people');
+assert.equal(RESEARCH_WORKS.length, 21, 'the curated research inventory should contain 21 works/legal texts');
+assert.equal(RESEARCH_PEOPLE.length, 21, 'the curated research inventory should contain 21 people');
 assert.equal(RESEARCH_COVERAGE_MATRIX.length, DIMENSIONS.length, 'coverage must include every dimension');
 
 for (const work of RESEARCH_WORKS) {
@@ -54,6 +54,9 @@ for (const relationship of RESEARCH_RELATIONSHIPS) {
 const roleMatches = RESEARCH_PEOPLE.filter((person) => person.roles.includes('lawyer') || person.roles.includes('jurist') || person.roles.includes('legal scholar'));
 assert.ok(roleMatches.length >= 3, 'research filters should have a meaningful legal role cohort');
 assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage.includes('Classical Chinese')));
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'Portuguese'), 'Portuguese-language research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'French'), 'French-language research must be represented');
+assert.ok(RESEARCH_WORKS.some((work) => work.originalLanguage === 'German'), 'German-language research must be represented');
 assert.ok(RESEARCH_WORKS.some((work) => work.regions.some((region) => region.includes('Latin America'))));
 
 console.log(`Research tests passed: ${RESEARCH_WORKS.length} works, ${RESEARCH_PEOPLE.length} people, ${RESEARCH_RELATIONSHIPS.length} relationships, and ${DIMENSIONS.length * 10} coverage cells.`);

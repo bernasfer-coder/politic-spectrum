@@ -407,6 +407,98 @@ export const RESEARCH_WORKS = [
       claim('udhr-social-economic-rights', 'economic', [-20, 45], 'primary international text', 'The declaration pairs civil liberties with work, social security, education, and an adequate standard of living.', 'Articles 22–26'),
     ],
   },
+  {
+    id: 'nabuco-abolitionism',
+    title: 'O Abolicionismo',
+    creators: ['Joaquim Nabuco'],
+    originalLanguage: 'Portuguese',
+    publicationDate: '1883',
+    publisher: 'Senado Federal do Brasil / historical editions',
+    canonicalUrl: 'https://livraria.senado.leg.br/product/o-abolicionismo/',
+    sourceType: 'primary political essay / book',
+    evidenceRole: 'primary',
+    discipline: 'Brazilian political thought and legal history',
+    regions: ['Brazil / Latin America'],
+    periods: ['19th century abolitionism'],
+    traditions: ['abolitionism', 'Brazilian liberalism', 'constitutional reform'],
+    dimensionIds: ['economic', 'social', 'authority', 'identity'],
+    translationNote: 'The original is in Portuguese. The Senate record links a digitized edition; translations should not be used as substitutes for the Portuguese text without a translator and edition note.',
+    context: 'A Brazilian abolitionist work that connects slavery to law, political economy, citizenship, and national development. It is also evidence of the limits and contradictions of nineteenth-century elite liberalism.',
+    review: { status: 'reviewed', confidence: 'high' },
+    claims: [
+      claim('nabuco-abolition-law', 'social', [55, 100], 'primary-text reading', 'The work treats abolition as a national political and legal transformation rather than only a private moral appeal.', 'Chapters I–IV; conclusion'),
+      claim('nabuco-slavery-economy', 'economic', [-15, 30], 'primary-text reading', 'Nabuco criticizes the economic and institutional dependence created by slavery while remaining within a reformist, constitutional vocabulary rather than advocating full economic collectivization.', 'Chapters V–XIII'),
+    ],
+  },
+  {
+    id: 'freire-pedagogy-oppressed-manuscript',
+    title: 'Manuscripts of Pedagogy of the Oppressed',
+    creators: ['Paulo Freire'],
+    originalLanguage: 'Portuguese',
+    publicationDate: '1968 manuscript materials',
+    publisher: 'Instituto Paulo Freire archive',
+    canonicalUrl: 'https://acervo.paulofreire.org/handle/7891/3629',
+    sourceType: 'primary manuscript archive',
+    evidenceRole: 'primary',
+    discipline: 'critical pedagogy and political theory',
+    regions: ['Brazil / Latin America / Global'],
+    periods: ['20th century liberation pedagogy'],
+    traditions: ['critical pedagogy', 'popular education', 'liberation thought'],
+    dimensionIds: ['social', 'authority', 'economic', 'identity'],
+    translationNote: 'The archive identifies Portuguese manuscript materials and a CC BY-SA 4.0 availability statement. The application links and paraphrases; it does not reproduce manuscript pages or the book text.',
+    context: 'A primary archival source for dialogical education, conscientização, oppression, and learner agency. It should be read as a pedagogical and political intervention, not as a complete economic or party program.',
+    review: { status: 'reviewed', confidence: 'high' },
+    claims: [
+      claim('freire-dialogue', 'authority', [-75, -15], 'primary manuscript reading', 'Dialogical and problem-posing education challenges one-way authority and treats learners as co-creators of knowledge.', 'Manuscript sections on banking and problem-posing education'),
+      claim('freire-oppression', 'social', [45, 95], 'primary manuscript reading', 'The text links education to the struggle against dehumanizing social relations and to the agency of oppressed groups.', 'Manuscript sections on oppression, dialogue, and liberation'),
+    ],
+  },
+  {
+    id: 'rosa-luxemburg-social-reform-revolution',
+    title: 'Sozialreform oder Revolution?',
+    creators: ['Rosa Luxemburg'],
+    originalLanguage: 'German',
+    publicationDate: '1899',
+    publisher: 'German original; editions vary',
+    canonicalUrl: 'https://www.deutsche-digitale-bibliothek.de/item/GMGBUU7TNUPVV5BBXGOSM3DCXFH6GR25',
+    sourceType: 'primary political pamphlet',
+    evidenceRole: 'primary',
+    discipline: 'socialist political theory',
+    regions: ['Germany / Europe / Poland'],
+    periods: ['Late 19th century social democracy'],
+    traditions: ['revolutionary socialism', 'social democracy', 'internationalism'],
+    dimensionIds: ['economic', 'authority', 'identity', 'foreign'],
+    translationNote: 'The German title and text are primary evidence. English-language discussions and translations should identify the edition rather than silently harmonize terminology.',
+    context: 'Luxemburg’s polemic against reducing socialism to incremental reform, while also defending mass democratic activity. Her later criticism of authoritarian tendencies is part of the relevant context.',
+    review: { status: 'reviewed', confidence: 'high' },
+    claims: [
+      claim('luxemburg-revolution', 'economic', [55, 100], 'primary-text reading', 'The pamphlet argues that reforms alone do not replace the capitalist structure and that political power and social ownership remain central to socialism.', 'Sections I–VIII'),
+      claim('luxemburg-mass-democracy', 'authority', [-35, 25], 'primary-text reading', 'Political transformation is tied to organized mass participation rather than only to an administrative elite; later writings sharpen the democratic tension.', 'Sections on trade unions, political power, and mass action'),
+    ],
+  },
+  {
+    id: 'beauvoir-second-sex',
+    title: 'Le Deuxième Sexe',
+    creators: ['Simone de Beauvoir'],
+    originalLanguage: 'French',
+    publicationDate: '1949',
+    publisher: 'Gallimard',
+    canonicalUrl: 'https://catalogue.bnf.fr/ark:/12148/cb37700172p',
+    sourceType: 'feminist philosophy / book',
+    evidenceRole: 'primary',
+    discipline: 'feminist political philosophy',
+    regions: ['France / Europe / Global feminist thought'],
+    periods: ['20th century feminism'],
+    traditions: ['existentialist feminism', 'feminist philosophy', 'gender equality'],
+    dimensionIds: ['social', 'authority', 'identity'],
+    translationNote: 'The original French work and its translations have distinct publication histories. The app uses no quotation and points to the BnF bibliographic record.',
+    context: 'A major feminist philosophical analysis of women’s social situation, embodiment, freedom, and institutional power. It is a foundational work but not a complete account of every feminist tradition.',
+    review: { status: 'reviewed', confidence: 'high' },
+    claims: [
+      claim('beauvoir-social-construction', 'social', [55, 100], 'primary-text reading', 'The analysis challenges inherited gender roles and treats women’s social position as historically and institutionally produced rather than natural destiny.', 'Introduction; Book I; Book II'),
+      claim('beauvoir-freedom', 'authority', [-45, 20], 'primary-text reading', 'Freedom, reciprocity, and the critique of domination make personal autonomy central, while the philosophical account also recognizes material constraints.', 'Introduction; conclusion'),
+    ],
+  },
 ];
 
 const profile = (economic, social, authority, identity, foreign) => ({ economic, social, authority, identity, foreign });
@@ -463,6 +555,18 @@ const RAW_RESEARCH_PEOPLE = [
   {
     id: 'person-cesaire', fullName: 'Aimé Césaire', dates: '1913–2008', roles: ['poet', 'writer', 'politician', 'anti-colonial thinker'], region: 'Martinique / Caribbean', period: '20th century decolonization', selfDescription: 'Developed Négritude and an anti-colonial critique of racial hierarchy and empire.', affiliations: ['Mayor of Fort-de-France; French National Assembly'], traditions: ['Négritude', 'anti-colonialism', 'decolonial thought'], canonicalUrl: 'https://www.britannica.com/biography/Aime-Cesaire', sourceType: 'reference profile', discipline: 'anti-colonial political thought', confidence: 'documented', works: ['cesaire-discourse-colonialism'], profile: profile({ range: [15, 65], note: 'His anti-colonial critique is materially focused, but it does not prescribe one uniform postcolonial economic system.' }, { range: [40, 90], note: 'He attacked racial hierarchy and colonial dehumanization while participating in electoral politics.' }, { range: [-20, 35], note: 'He worked within and against French institutions; the profile therefore stays broad.' }, { range: [0, 65], note: 'Négritude and anti-colonial identity are not reducible to European nationalism or a simple internationalism score.' }, { range: [15, 75], note: 'His work critiques empire and supports anti-colonial solidarity rather than a complete military doctrine.' }), context: 'Césaire’s poetry, political office, and anti-colonial essays should be read together but not assumed to express a single unchanging position.', relatedPeople: ['person-fanon', 'person-mariategui'],
   },
+  {
+    id: 'person-nabuco', fullName: 'Joaquim Nabuco', dates: '1849–1910', roles: ['lawyer', 'diplomat', 'writer', 'abolitionist'], region: 'Brazil / Latin America', period: '19th century abolitionism', selfDescription: 'Organized and argued publicly for abolition while later defending a monarchical constitutional outlook.', affiliations: ['Brazilian Chamber of Deputies; Academia Brasileira de Letras; Brazilian diplomatic service'], traditions: ['abolitionism', 'Brazilian liberalism', 'constitutional reform'], canonicalUrl: 'https://www.academia.org.br/academicos/joaquim-nabuco/biografia', sourceType: 'institutional biography', discipline: 'Brazilian political thought and legal history', confidence: 'documented', works: ['nabuco-abolitionism'], profile: profile({ range: [-20, 30], note: 'His abolitionism criticized the political economy of slavery but did not amount to a socialist economic program.' }, { range: [55, 100], note: 'Abolition and legal emancipation are explicit themes, though his social vision retained nineteenth-century elite limits.' }, { range: [-15, 35], note: 'He worked through parliamentary and constitutional reform while remaining committed to a monarchical framework.' }, { range: [-35, 45], note: 'Brazilian national development and universalist anti-slavery language coexist with imperial diplomacy.' }, { range: [15, 60], note: 'Diplomatic and pan-American activity provide some evidence, but not a comprehensive foreign-policy doctrine.' }), context: 'Nabuco widens the inventory into Portuguese-language Brazilian legal and abolitionist history; his liberalism and monarchical commitments should remain visible alongside his anti-slavery work.', relatedPeople: ['person-gandhi', 'person-ambedkar'],
+  },
+  {
+    id: 'person-freire', fullName: 'Paulo Freire', dates: '1921–1997', roles: ['educator', 'writer', 'critical pedagogue'], region: 'Brazil / Latin America / Global', period: '20th century liberation pedagogy', selfDescription: 'Developed dialogical, problem-posing education and wrote against dehumanizing relations of oppression.', affiliations: ['Instituto Paulo Freire; popular-education movements'], traditions: ['critical pedagogy', 'popular education', 'liberation thought'], canonicalUrl: 'https://acervo.paulofreire.org/items/013e5bc8-5368-4342-9a9d-88722aa5d686/full', sourceType: 'institutional archive profile', discipline: 'critical pedagogy and political theory', confidence: 'documented', works: ['freire-pedagogy-oppressed-manuscript'], profile: profile({ range: [15, 60], note: 'Freire’s work centers oppression, labor, and social transformation but is not a detailed theory of ownership or markets.' }, { range: [45, 95], note: 'Education is connected to dignity, agency, and collective liberation from oppressive social relations.' }, { range: [-75, -15], note: 'Dialogical education and learner agency challenge one-way authority, while Freire still treats organized practice as necessary.' }, { range: [15, 65], note: 'The framework is universalist and anti-colonial, with local culture and language treated as sources of knowledge.' }, { range: [15, 65], note: 'The political orientation is anti-imperial and solidaristic, but the cited pedagogical work is not a complete foreign-policy platform.' }), context: 'Freire is included as a Portuguese-language Brazilian thinker whose work links education, power, and liberation. The archive and later reception should be distinguished from simplified partisan uses of his name.', relatedPeople: ['person-cesaire', 'person-gandhi'],
+  },
+  {
+    id: 'person-luxemburg', fullName: 'Rosa Luxemburg', dates: '1871–1919', roles: ['economist', 'writer', 'organizer', 'revolutionary socialist'], region: 'Poland / Germany / Europe', period: 'Late 19th–early 20th century', selfDescription: 'Argued for revolutionary socialism, mass democratic action, internationalism, and opposition to militarism.', affiliations: ['Social Democracy of the Kingdom of Poland and Lithuania; German Social Democratic movement; Spartacus League'], traditions: ['revolutionary socialism', 'social democracy', 'internationalism'], canonicalUrl: 'https://www.rosalux.de/en/foundation/historical-centre-for-democratic-socialism-1/rosa-luxemburg/the-life-of-rosa-luxemburg', sourceType: 'institutional biography', discipline: 'socialist political theory', confidence: 'documented', works: ['rosa-luxemburg-social-reform-revolution'], profile: profile({ range: [55, 100], note: 'She rejected reformism as a substitute for transforming capitalist property relations, while defending practical democratic struggle.' }, { range: [20, 75], note: 'Mass participation and emancipation are central, though her revolutionary vocabulary differs from contemporary progressive politics.' }, { range: [-35, 25], note: 'She criticized bureaucratic domination and defended political freedom, while supporting organized revolutionary power.' }, { range: [35, 90], note: 'Her socialism was explicitly internationalist and opposed to narrow national closure.' }, { range: [40, 90], note: 'Anti-militarism and international worker solidarity are strongly documented across her political writings.' }), context: 'Luxemburg is a useful counterpoint to both gradualist social democracy and one-party authoritarianism. Her revolutionary strategy and democratic commitments should be shown together, not flattened into one label.', relatedPeople: ['person-weber', 'person-mariategui'],
+  },
+  {
+    id: 'person-beauvoir', fullName: 'Simone de Beauvoir', dates: '1908–1986', roles: ['philosopher', 'writer', 'feminist thinker'], region: 'France / Europe / Global feminist thought', period: '20th century feminism', selfDescription: 'Analyzed women’s social situation through existentialist philosophy, freedom, embodiment, and institutional power.', affiliations: ['French intellectual and feminist movements'], traditions: ['existentialist feminism', 'feminist philosophy', 'gender equality'], canonicalUrl: 'https://plato.stanford.edu/entries/beauvoir/', sourceType: 'scholarly reference profile', discipline: 'feminist political philosophy', confidence: 'documented', works: ['beauvoir-second-sex'], profile: profile({ range: [-15, 35], note: 'The cited work analyzes material and social conditions but does not determine one complete economic system.' }, { range: [55, 100], note: 'The critique of women’s subordination and inherited gender roles is central.' }, { range: [-45, 20], note: 'Freedom and reciprocity oppose domination, while social institutions are treated as necessary sites of collective change.' }, { range: [25, 70], note: 'The work critiques universal claims built around male experience and develops a broader account of human freedom.' }, { range: [10, 55], note: 'The record gives some evidence for international solidarity, but not a full foreign-policy position.' }), context: 'Beauvoir strengthens French-language feminist coverage. The entry is about a major work and a specific intellectual tradition, not a verdict on every later feminist movement.', relatedPeople: ['person-ginsburg', 'person-cesaire'],
+  },
 ];
 
 const workTitleById = Object.fromEntries(RESEARCH_WORKS.map((work) => [work.id, work.title]));
@@ -493,6 +597,8 @@ export const RESEARCH_RELATIONSHIPS = [
   { from: 'person-king', to: 'person-dubois', type: 'successor_to', note: 'King’s movement inherited and revised earlier Black freedom, anti-racist, and democratic traditions that Du Bois helped develop.' },
   { from: 'person-ambedkar', to: 'person-ginsburg', type: 'close_to', note: 'Both illuminate rights-based legal equality, but their jurisdictions, social problems, and constitutional contexts are distinct.' },
   { from: 'person-weber', to: 'person-rawls', type: 'distinct_from', note: 'Weber analyzes legitimacy and political responsibility sociologically; Rawls offers a normative theory of justice.' },
+  { from: 'person-beauvoir', to: 'person-ginsburg', type: 'close_to', note: 'Both illuminate gender equality, but existentialist philosophy and constitutional litigation are different forms of evidence and political practice.' },
+  { from: 'person-freire', to: 'person-fanon', type: 'close_to', note: 'Both connect education, subject formation, and liberation to anti-colonial struggle, but their methods and institutional projects differ.' },
 ];
 
 export const RESEARCH_SECTIONS = [

@@ -580,7 +580,7 @@ function TaxonomyCard({ label }) {
 }
 
 function ResearchAtlas() {
-  const [filters, setFilters] = useState({ query: '', recordType: 'all', role: 'all', region: 'all', period: 'all', dimension: 'all', confidence: 'all' });
+  const [filters, setFilters] = useState({ query: '', recordType: 'all', role: 'all', region: 'all', period: 'all', language: 'all', dimension: 'all', confidence: 'all' });
   const [showAll, setShowAll] = useState(false);
   const workEntries = useMemo(() => RESEARCH_WORKS.map((work) => ({ ...work, entryType: 'work', recordId: `work-${work.id}` })), []);
   const peopleEntries = useMemo(() => RESEARCH_PEOPLE.map((person) => ({ ...person, entryType: 'person', recordId: `person-${person.id}` })), []);
@@ -591,9 +591,10 @@ function ResearchAtlas() {
     role: [...new Set(RESEARCH_PEOPLE.flatMap(({ roles }) => roles))].sort(),
     region: [...new Set(entries.flatMap((entry) => entry.regions ?? [entry.region]))].filter(Boolean).sort(),
     period: [...new Set(entries.flatMap((entry) => entry.periods ?? [entry.period]))].filter(Boolean).sort(),
+    language: [...new Set(entries.flatMap((entry) => entry.entryType === 'work' ? [entry.originalLanguage] : entry.works.flatMap((workId) => workById[workId]?.originalLanguage ?? [])))].filter(Boolean).sort(),
     dimension: DIMENSIONS.map(({ id, label }) => ({ value: id, label })),
     confidence: [...new Set(RESEARCH_PEOPLE.map(({ confidence }) => confidence))].sort(),
-  }), [entries]);
+  }), [entries, workById]);
   const filteredEntries = useMemo(() => {
     const query = filters.query.trim().toLowerCase();
     return entries.filter((entry) => {
@@ -603,11 +604,13 @@ function ResearchAtlas() {
       const roleMatches = filters.role === 'all' || entry.roles?.includes(filters.role);
       const regionMatches = filters.region === 'all' || (entry.regions ?? [entry.region]).includes(filters.region);
       const periodMatches = filters.period === 'all' || (entry.periods ?? [entry.period]).includes(filters.period);
+      const languages = entry.entryType === 'work' ? [entry.originalLanguage] : entry.works.flatMap((workId) => workById[workId]?.originalLanguage ?? []);
+      const languageMatches = filters.language === 'all' || languages.includes(filters.language);
       const dimensionMatches = filters.dimension === 'all' || entry.dimensionIds?.includes(filters.dimension);
       const confidenceMatches = filters.confidence === 'all' || entry.confidence === filters.confidence || entry.review?.confidence === filters.confidence;
-      return queryMatches && typeMatches && roleMatches && regionMatches && periodMatches && dimensionMatches && confidenceMatches;
+      return queryMatches && typeMatches && roleMatches && regionMatches && periodMatches && languageMatches && dimensionMatches && confidenceMatches;
     });
-  }, [entries, filters]);
+  }, [entries, filters, workById]);
 
   function updateFilter(key, value) {
     setShowAll(false);
@@ -616,7 +619,7 @@ function ResearchAtlas() {
 
   function clearFilters() {
     setShowAll(false);
-    setFilters({ query: '', recordType: 'all', role: 'all', region: 'all', period: 'all', dimension: 'all', confidence: 'all' });
+    setFilters({ query: '', recordType: 'all', role: 'all', region: 'all', period: 'all', language: 'all', dimension: 'all', confidence: 'all' });
   }
 
   const visibleEntries = showAll ? filteredEntries : filteredEntries.slice(0, 8);
@@ -639,6 +642,7 @@ function ResearchAtlas() {
         <FilterSelect label="Role" value={filters.role} options={filterOptions.role} onChange={(value) => updateFilter('role', value)} />
         <FilterSelect label="Region" value={filters.region} options={filterOptions.region} onChange={(value) => updateFilter('region', value)} />
         <FilterSelect label="Period" value={filters.period} options={filterOptions.period} onChange={(value) => updateFilter('period', value)} />
+        <FilterSelect label="Language" value={filters.language} options={filterOptions.language} onChange={(value) => updateFilter('language', value)} />
         <FilterSelect label="Dimension" value={filters.dimension} options={filterOptions.dimension} onChange={(value) => updateFilter('dimension', value)} />
         <FilterSelect label="Confidence" value={filters.confidence} options={filterOptions.confidence} onChange={(value) => updateFilter('confidence', value)} />
       </div>
