@@ -32,6 +32,8 @@ The taxonomy draws on the Stanford Encyclopedia of Philosophy, the World Values 
 
 Content is intentionally framed as approximate and educational: a person, country, state, or city cannot be reduced to five numbers, and the historical fascist/Nazi-like pattern is included only for analysis and historical context.
 
+The validation plan for the 5D core, candidate facets, questionnaire audit, privacy-safe pilot, and future 4D/5D/6D/7D comparisons is documented in [`VALIDATION_METHODOLOGY.md`](VALIDATION_METHODOLOGY.md). It keeps the public v1 model stable until empirical evidence supports a versioned change.
+
 Each 20-point band and each reference-profile explanation also carries explicit author/work evidence. The UI distinguishes interpretive synthesis from short direct primary-text citations; the full reference map lives in `src/content/references.js` and is validated during every build.
 
 Questionnaire answers are cached locally in the browser under a versioned key. Incomplete questionnaires resume at the first unanswered question; complete questionnaires restore the calculated result view after refresh. Reset removes the local cache.
