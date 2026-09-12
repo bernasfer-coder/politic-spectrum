@@ -123,6 +123,12 @@ Agrarian populism, People's Party populism, left populism, right populism, natio
 7. Never infer a historical ideology solely from numerical scores. Scores produce approximate family matches; documented sources are required for historical claims.
 8. Treat fascist and Nazi-related entries as historical analytical categories with explicit context and no contemporary endorsement.
 
+## First implementation milestone
+
+The application now ships a deliberately bounded starter registry in `src/content/taxonomy.js`. It is not a claim to contain every label ever coined. Each record has a canonical name, aliases, label type, family, region, period, status, summary, differences note, approximate five-axis coordinates where a comparison is meaningful, and one or more research-source identifiers.
+
+The Spectrum Library exposes this registry through text search and filters for family, label type, region, status, and axis coverage. Broad or context-sensitive labels may leave some axis coordinates unset; the UI presents those as variable rather than inventing a false universal position. The registry is validated during the production build so labels cannot be added without provenance and the required contextual fields.
+
 ## Proposed filters
 
 Region, civilization, country, state, city, empire, start date, end date, active/historical/revived/disputed status, ideology family, subfamily, label type, economic position, social position, authority position, national identity, foreign policy, environment, religion, democracy/regime relationship, anti-colonial or imperial status, separatism, internationalism, evidence level, aliases, translations, and contested meanings.

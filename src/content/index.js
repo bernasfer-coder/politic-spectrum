@@ -1,4 +1,5 @@
 import { ARCHETYPE_CITATIONS, AUTHOR_REFERENCES, BAND_CITATIONS } from './references.js';
+import { TAXONOMY_LABELS } from './taxonomy.js';
 
 const DIMENSIONS = [
   {
@@ -64,6 +65,16 @@ const RESEARCH_SOURCES = [
   { id: 'ches', label: 'Chapel Hill Expert Survey Codebook', url: 'https://www.chesdata.eu/s/2014_CHES_codebook.pdf', note: 'Comparable issue scales for economic, lifestyle, religion, immigration, multiculturalism, and decentralization positions.' },
   { id: 'manifesto', label: 'Manifesto Project Coding Handbook', url: 'https://manifesto-project.wzb.eu/down/papers/handbook_v4.pdf', note: 'Cross-national coding of controlled economy, social justice, political system, and internationalism.' },
   { id: 'foreignPolicy', label: 'Oxford — Party Politics of Foreign and Security Policy', url: 'https://academic.oup.com/fpa/article/16/4/515/5911933', note: 'Comparative evidence on dovish/hawkish, multilateralist, alliance, and interventionist party positions.' },
+  { id: 'openTextbook', label: 'Political Ideologies and Worldviews — Open Textbook', url: 'https://open.umn.edu/opentextbooks/textbooks/political-ideologies-and-worldviews-an-introduction', note: 'Comparative introduction to ideology, including liberalism, conservatism, socialism, anarchism, nationalism, populism, fascism, Islamism, Confucianism, environmentalism, and feminism.' },
+  { id: 'sepAnarchism', label: 'Stanford Encyclopedia — Anarchism', url: 'https://plato.stanford.edu/entries/anarchism/', note: 'Philosophical distinctions among anarchist arguments and traditions.' },
+  { id: 'sepFascism', label: 'Stanford Encyclopedia — Fascism', url: 'https://plato.stanford.edu/entries/fascism/', note: 'Conceptual and historical analysis of fascist ideology and its variants.' },
+  { id: 'sepFeminism', label: 'Stanford Encyclopedia — Feminist Philosophy', url: 'https://plato.stanford.edu/entries/feminism/', note: 'Overview of feminist philosophical traditions and disagreements.' },
+  { id: 'sepPopulism', label: 'Stanford Encyclopedia — Populism', url: 'https://plato.stanford.edu/entries/populism/', note: 'Conceptual debates about populism as a thin ideology, discourse, or political style.' },
+  { id: 'sepConfucianism', label: 'Stanford Encyclopedia — Chinese Social and Political Thought', url: 'https://seop.illc.uva.nl/entries/chinese-social-political/', note: 'Chinese political traditions including Confucian accounts of order and governance.' },
+  { id: 'sepLegalism', label: 'Stanford Encyclopedia — Legalism', url: 'https://plato.stanford.edu/entries/chinese-legalism/', note: 'Historical scholarship on the fa tradition and classical Chinese statecraft.' },
+  { id: 'sepMedieval', label: 'Stanford Encyclopedia — Medieval Political Philosophy', url: 'https://plato.stanford.edu/entries/medieval-political/', note: 'Historical political concepts including kingship, republicanism, law, and authority.' },
+  { id: 'ushmmFascism', label: 'United States Holocaust Memorial Museum — Fascism', url: 'https://encyclopedia.ushmm.org/content/en/article/fascism-1', note: 'Historical context for fascism and the Nazi regime; used for warning and contextualization.' },
+  { id: 'panAfricanism', label: 'African Affairs — Pan-Africanism', url: 'https://academic.oup.com/afraf/article/125/498/1/8512174', note: 'Scholarly treatment of Pan-African political thought and transnational solidarity.' },
 ];
 
 const PALETTES = {
@@ -496,5 +507,6 @@ export {
   RESEARCH_SOURCES,
   SOURCES,
   SPECTRUM_BANDS,
+  TAXONOMY_LABELS,
   AUTHOR_REFERENCES,
 };

@@ -6,6 +6,7 @@ import {
   QUESTIONS,
   RESEARCH_SOURCES,
   SPECTRUM_BANDS,
+  TAXONOMY_LABELS,
 } from '../src/content/index.js';
 
 const errors = [];
@@ -62,6 +63,28 @@ for (const [referenceId, reference] of Object.entries(AUTHOR_REFERENCES)) {
   if (reference.quote) {
     assert(reference.quote.trim().split(/\s+/).length <= 25, `Direct quote ${referenceId} exceeds 25 words`);
     assert(Boolean(reference.locator), `Direct quote ${referenceId} needs a locator`);
+  }
+}
+
+assert(TAXONOMY_LABELS.length >= 20, `Expected at least 20 normalized taxonomy labels, found ${TAXONOMY_LABELS.length}`);
+assertUnique(TAXONOMY_LABELS.map(({ id }) => id), 'Taxonomy label');
+for (const label of TAXONOMY_LABELS) {
+  assert(Boolean(label.canonicalName), `${label.id} is missing a canonical name`);
+  assert(Array.isArray(label.aliases) && label.aliases.length > 0, `${label.id} is missing aliases`);
+  assert(Boolean(label.labelType), `${label.id} is missing a label type`);
+  assert(Boolean(label.family), `${label.id} is missing an ideology family`);
+  assert(Boolean(label.region), `${label.id} is missing a region`);
+  assert(Boolean(label.period), `${label.id} is missing a period`);
+  assert(Boolean(label.status), `${label.id} is missing a status`);
+  assert(Boolean(label.summary), `${label.id} is missing a summary`);
+  assert(Boolean(label.differences), `${label.id} is missing a differences note`);
+  assert(Array.isArray(label.sourceIds) && label.sourceIds.length > 0, `${label.id} is missing sources`);
+  for (const sourceId of label.sourceIds ?? []) {
+    assert(researchSourceSet.has(sourceId), `${label.id} references unknown research source ${sourceId}`);
+  }
+  for (const dimension of DIMENSIONS) {
+    const value = label.axisPositions?.[dimension.id];
+    assert(value === null || (Number.isFinite(value) && value >= -100 && value <= 100), `${label.id} has an invalid ${dimension.id} taxonomy position`);
   }
 }
 

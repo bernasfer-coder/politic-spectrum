@@ -13,6 +13,7 @@ import {
   RESEARCH_SOURCES,
   SOURCES,
   SPECTRUM_BANDS,
+  TAXONOMY_LABELS,
 } from './content/index.js';
 import './styles.css';
 
@@ -267,6 +268,31 @@ function Questionnaire({ currentQuestion, currentDimension, questionIndex, answe
 }
 
 function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
+  const [filters, setFilters] = useState({ query: '', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' });
+  const filterOptions = useMemo(() => ({
+    family: [...new Set(TAXONOMY_LABELS.map(({ family }) => family))].sort(),
+    labelType: [...new Set(TAXONOMY_LABELS.map(({ labelType }) => labelType))].sort(),
+    region: [...new Set(TAXONOMY_LABELS.map(({ region }) => region))].sort(),
+    status: [...new Set(TAXONOMY_LABELS.map(({ status }) => status))].sort(),
+  }), []);
+  const filteredLabels = useMemo(() => {
+    const query = filters.query.trim().toLowerCase();
+    return TAXONOMY_LABELS.filter((label) => {
+      const searchable = [label.canonicalName, ...label.aliases, label.family, label.region, label.period, label.summary].join(' ').toLowerCase();
+      const queryMatches = !query || searchable.includes(query);
+      const familyMatches = filters.family === 'all' || label.family === filters.family;
+      const typeMatches = filters.labelType === 'all' || label.labelType === filters.labelType;
+      const regionMatches = filters.region === 'all' || label.region === filters.region;
+      const statusMatches = filters.status === 'all' || label.status === filters.status;
+      const axisMatches = filters.axis === 'all' || Number.isFinite(label.axisPositions?.[filters.axis]);
+      return queryMatches && familyMatches && typeMatches && regionMatches && statusMatches && axisMatches;
+    });
+  }, [filters]);
+
+  function updateFilter(key, value) {
+    setFilters((previous) => ({ ...previous, [key]: value }));
+  }
+
   return (
     <div className="library-view">
       <div className="section-heading-row">
@@ -284,7 +310,62 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
         {selectedType.warning && <div className="warning-banner"><span>!</span><p><strong>Historical context:</strong> {selectedType.warning}</p></div>}
         <div className="library-axis-list">{DIMENSIONS.map((dimension) => { const value = selectedType.profile[dimension.id]; const band = getBand(dimension.id, value); const fill = `${(value + 100) / 2}%`; return <article className="library-axis-card" key={dimension.id}><div className="library-axis-top"><span className="axis-index">{dimension.index}</span><div><h4>{dimension.label}</h4><p>{dimension.low} <span>↔</span> {dimension.high}</p></div><strong>{formatScore(value)}</strong></div><div className="library-range"><i><b style={{ width: fill, background: selectedType.accent }} /></i><span className="library-zero" /><span className="library-marker" style={{ left: fill, borderColor: selectedType.accent, background: selectedType.accent }} /></div><div className="library-axis-label"><strong>{band.label}</strong><span>Band {BAND_RANGES.findIndex(([min, max]) => value >= min && value <= max) + 1} / 10</span></div><div className="band-description"><p>{band.summary}</p><EvidenceLinks citationIds={band.citationIds} compact /></div><div className="reason-block"><span>Why this profile lands here</span><p>{selectedType.dimensionNotes[dimension.id]}</p><EvidenceLinks citationIds={selectedType.dimensionCitationIds[dimension.id]} compact /></div></article>; })}</div>
       </div>
+
+      <TaxonomyCatalogue filters={filters} filterOptions={filterOptions} filteredLabels={filteredLabels} onUpdateFilter={updateFilter} />
     </div>
+  );
+}
+
+function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFilter }) {
+  return (
+    <section className="taxonomy-catalogue">
+      <div className="taxonomy-heading">
+        <div><p className="eyebrow">NORMALIZED LABEL CATALOGUE</p><h3>Search political traditions without flattening them.</h3></div>
+        <p>A sourced starter registry of historical and contemporary labels. Aliases are searchable, while differences and uncertainty stay visible.</p>
+      </div>
+
+      <div className="taxonomy-filters" aria-label="Filter political labels">
+        <label className="taxonomy-search"><span>Search labels</span><input type="search" value={filters.query} onChange={(event) => onUpdateFilter('query', event.target.value)} placeholder="e.g. nationalism, councils, liberal" /></label>
+        <FilterSelect label="Family" value={filters.family} options={filterOptions.family} onChange={(value) => onUpdateFilter('family', value)} />
+        <FilterSelect label="Label type" value={filters.labelType} options={filterOptions.labelType} onChange={(value) => onUpdateFilter('labelType', value)} />
+        <FilterSelect label="Region" value={filters.region} options={filterOptions.region} onChange={(value) => onUpdateFilter('region', value)} />
+        <FilterSelect label="Status" value={filters.status} options={filterOptions.status} onChange={(value) => onUpdateFilter('status', value)} />
+        <FilterSelect label="Axis coverage" value={filters.axis} options={DIMENSIONS.map(({ id, label }) => ({ value: id, label }))} onChange={(value) => onUpdateFilter('axis', value)} />
+      </div>
+
+      <div className="taxonomy-result-bar"><span>{filteredLabels.length} of {TAXONOMY_LABELS.length} labels</span><span>Search covers canonical names, aliases, periods, regions, and summaries.</span></div>
+
+      {filteredLabels.length ? (
+        <div className="taxonomy-grid">
+          {filteredLabels.map((label) => <TaxonomyCard key={label.id} label={label} />)}
+        </div>
+      ) : (
+        <div className="taxonomy-empty"><strong>No labels match these filters.</strong><p>Try clearing one filter or searching for an alias.</p></div>
+      )}
+
+      <p className="taxonomy-disclaimer">The axis positions are approximate interpretive coordinates, not historical measurements. Broad labels such as populism and monarchism can vary substantially by time, place, faction, and policy.</p>
+    </section>
+  );
+}
+
+function FilterSelect({ label, value, options, onChange }) {
+  const normalizedOptions = options.map((option) => typeof option === 'string' ? { value: option, label: option } : option);
+  return <label className="taxonomy-select"><span>{label}</span><select value={value} onChange={(event) => onChange(event.target.value)}><option value="all">All</option>{normalizedOptions.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}</select></label>;
+}
+
+function TaxonomyCard({ label }) {
+  const coveredAxes = DIMENSIONS.filter((dimension) => Number.isFinite(label.axisPositions?.[dimension.id]));
+  return (
+    <article className="taxonomy-card">
+      <div className="taxonomy-card-top"><div><p className="taxonomy-card-kicker">{label.labelType} · {label.status}</p><h4>{label.canonicalName}</h4></div>{label.warning && <span className="taxonomy-warning">Context-sensitive</span>}</div>
+      <p className="taxonomy-summary">{label.summary}</p>
+      <div className="taxonomy-meta"><span>{label.family}</span><span>{label.region}</span><span>{label.period}</span></div>
+      <div className="taxonomy-axis-chips">{coveredAxes.length ? coveredAxes.map((dimension) => { const value = label.axisPositions[dimension.id]; return <span key={dimension.id}><b>{dimension.questionLabel}</b> {getBand(dimension.id, value).label}</span>; }) : <span><b>Axis profile</b> varies by context</span>}</div>
+      <details className="taxonomy-differences"><summary>How this differs from nearby labels</summary><p>{label.differences}</p></details>
+      <div className="taxonomy-aliases"><span>Aliases</span><p>{label.aliases.join(' · ')}</p></div>
+      {label.warning && <p className="taxonomy-warning-note">{label.warning}</p>}
+      <div className="taxonomy-sources"><span>Sources</span>{label.sourceIds.map((sourceId) => { const source = RESEARCH_SOURCES.find((item) => item.id === sourceId); return source ? <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a> : null; })}</div>
+    </article>
   );
 }
 
