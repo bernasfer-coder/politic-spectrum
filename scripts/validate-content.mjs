@@ -6,6 +6,12 @@ import {
   DIMENSIONS,
   QUESTIONS,
   RESEARCH_SOURCES,
+  RESEARCH_BACKLOG,
+  RESEARCH_COVERAGE_MATRIX,
+  RESEARCH_PEOPLE,
+  RESEARCH_RELATIONSHIPS,
+  RESEARCH_SECTIONS,
+  RESEARCH_WORKS,
   RIGHTS_RECORDS,
   SOURCES,
   SPECTRUM_BANDS,
@@ -21,6 +27,8 @@ const authorReferenceSet = new Set(Object.keys(AUTHOR_REFERENCES));
 const bibliographyRecordSet = new Set(BIBLIOGRAPHY_RECORDS.map(({ id }) => id));
 const taxonomyLabelSet = new Set(TAXONOMY_LABELS.map(({ id }) => id));
 const archetypeSet = new Set(ARCHETYPES.map(({ id }) => id));
+const researchWorkSet = new Set(RESEARCH_WORKS.map(({ id }) => id));
+const researchPersonSet = new Set(RESEARCH_PEOPLE.map(({ id }) => id));
 
 function assert(condition, message) {
   if (!condition) errors.push(message);
@@ -151,6 +159,70 @@ for (const sourceLinkId of Object.keys(SOURCES)) {
   const matches = recordsForCitation('sourceLinkIds', sourceLinkId);
   assert(matches.length === 1, `Source link ${sourceLinkId} must resolve to exactly one bibliography record; found ${matches.length}`);
 }
+for (const workId of researchWorkSet) {
+  const matches = recordsForCitation('researchWorkIds', workId);
+  assert(matches.length === 1, `Research work ${workId} must resolve to exactly one bibliography record; found ${matches.length}`);
+}
+for (const personId of researchPersonSet) {
+  const matches = recordsForCitation('researchPersonIds', personId);
+  assert(matches.length === 1, `Research person ${personId} must resolve to exactly one bibliography record; found ${matches.length}`);
+}
+for (const work of RESEARCH_WORKS) {
+  assertUrl(work.canonicalUrl, `Research work ${work.id}`);
+  assertUnique(work.claims.map(({ id }) => id), `Research work ${work.id} claim`);
+  assert(work.creators?.length > 0, `Research work ${work.id} is missing creators`);
+  assert(Boolean(work.originalLanguage), `Research work ${work.id} is missing original language`);
+  assert(Boolean(work.context), `Research work ${work.id} is missing context`);
+  assert(['reviewed', 'needs-review'].includes(work.review?.status), `Research work ${work.id} has invalid review status`);
+  assert(['high', 'medium', 'low'].includes(work.review?.confidence), `Research work ${work.id} has invalid confidence`);
+  for (const dimensionId of work.dimensionIds ?? []) assert(dimensionSet.has(dimensionId), `Research work ${work.id} references unknown dimension ${dimensionId}`);
+  for (const item of work.claims ?? []) {
+    assert(dimensionSet.has(item.dimensionId), `Research work ${work.id} claim ${item.id} references unknown dimension ${item.dimensionId}`);
+    assert(Array.isArray(item.positionRange) && item.positionRange.length === 2 && item.positionRange[0] <= item.positionRange[1] && item.positionRange[0] >= -100 && item.positionRange[1] <= 100, `Research work ${work.id} claim ${item.id} has invalid position range`);
+    assert(Boolean(item.summary), `Research work ${work.id} claim ${item.id} is missing a summary`);
+    assert(Boolean(item.locator), `Research work ${work.id} claim ${item.id} is missing a locator`);
+  }
+}
+assertUnique(RESEARCH_WORKS.map(({ id }) => id), 'Research work');
+for (const person of RESEARCH_PEOPLE) {
+  assertUrl(person.canonicalUrl, `Research person ${person.id}`);
+  assert(Boolean(person.fullName), `Research person ${person.id} is missing a name`);
+  assert(person.roles?.length > 0, `Research person ${person.id} is missing roles`);
+  assert(Boolean(person.region) && Boolean(person.period), `Research person ${person.id} is missing region or period`);
+  assert(['documented', 'strongly-supported', 'plausible/partial', 'contested', 'insufficient evidence'].includes(person.confidence), `Research person ${person.id} has invalid confidence`);
+  for (const workId of person.works ?? []) assert(researchWorkSet.has(workId), `Research person ${person.id} references unknown work ${workId}`);
+  for (const relatedId of person.relatedPeople ?? []) assert(researchPersonSet.has(relatedId), `Research person ${person.id} references unknown related person ${relatedId}`);
+  assert(person.claimEvidence?.length === DIMENSIONS.length, `Research person ${person.id} must have one claim-evidence record per dimension`);
+  for (const item of person.claimEvidence ?? []) {
+    assert(dimensionSet.has(item.dimensionId), `Research person ${person.id} claim evidence references unknown dimension ${item.dimensionId}`);
+    assert(Boolean(item.summary) && Boolean(item.sourceUrl) && Boolean(item.locator), `Research person ${person.id} claim evidence for ${item.dimensionId} is incomplete`);
+    assert(Array.isArray(item.sourceIds), `Research person ${person.id} claim evidence for ${item.dimensionId} must list source IDs`);
+  }
+  for (const dimension of DIMENSIONS) {
+    const range = person.profile?.[dimension.id]?.range;
+    assert(Array.isArray(range) && range.length === 2 && range[0] <= range[1] && range[0] >= -100 && range[1] <= 100, `Research person ${person.id} has invalid ${dimension.id} range`);
+    assert(Boolean(person.profile?.[dimension.id]?.note), `Research person ${person.id} is missing ${dimension.id} interpretation`);
+  }
+}
+assertUnique(RESEARCH_PEOPLE.map(({ id }) => id), 'Research person');
+for (const relationship of RESEARCH_RELATIONSHIPS) {
+  assert(researchPersonSet.has(relationship.from) || researchWorkSet.has(relationship.from), `Research relationship has unknown source ${relationship.from}`);
+  assert(researchPersonSet.has(relationship.to) || researchWorkSet.has(relationship.to), `Research relationship has unknown target ${relationship.to}`);
+  assert(['same_as', 'close_to', 'distinct_from', 'influenced', 'opposed', 'successor_to', 'criticized', 'historically_contextualized'].includes(relationship.type), `Research relationship ${relationship.from} → ${relationship.to} has invalid type`);
+  assert(Boolean(relationship.note), `Research relationship ${relationship.from} → ${relationship.to} is missing a note`);
+}
+assertUnique(RESEARCH_RELATIONSHIPS.map(({ from, to, type }) => `${from}:${to}:${type}`), 'Research relationship');
+for (const row of RESEARCH_COVERAGE_MATRIX) {
+  assert(dimensionSet.has(row.dimensionId), `Coverage matrix references unknown dimension ${row.dimensionId}`);
+  assert(row.bands.length === BAND_RANGES.length, `Coverage matrix ${row.dimensionId} must contain one cell per band`);
+  for (const cell of row.bands) {
+    assert(['strong', 'thin', 'gap'].includes(cell.status), `Coverage matrix ${row.dimensionId} band ${cell.band} has invalid status`);
+    assert(cell.works.every((id) => researchWorkSet.has(id)), `Coverage matrix ${row.dimensionId} references unknown work`);
+    assert(cell.people.every((id) => researchPersonSet.has(id)), `Coverage matrix ${row.dimensionId} references unknown person`);
+  }
+}
+assert(RESEARCH_SECTIONS.length >= 7, 'Research atlas is missing editorial sections');
+assert(RESEARCH_BACKLOG.length > 0, 'Research atlas must record unresolved bibliography gaps');
 
 assert(TAXONOMY_LABELS.length >= 20, `Expected at least 20 normalized taxonomy labels, found ${TAXONOMY_LABELS.length}`);
 assertUnique(TAXONOMY_LABELS.map(({ id }) => id), 'Taxonomy label');

@@ -17,7 +17,7 @@ assert.ok(unique(BIBLIOGRAPHY_RECORDS.map((record) => record.id)), 'bibliography
 assert.ok(unique(BIBLIOGRAPHY_RECORDS.map((record) => record.canonicalUrl)), 'bibliography canonical URLs must be unique');
 
 for (const record of BIBLIOGRAPHY_RECORDS) {
-  assert.match(record.id, /^(research|author|link)-[A-Za-z0-9-]+$/);
+  assert.match(record.id, /^(research|author|link|work|person)-[A-Za-z0-9-]+$/);
   assert.ok(record.title && record.canonicalUrl && record.accessDate, `${record.id} must have stable source metadata`);
   assert.ok(record.review?.reviewer && record.review?.reviewedAt, `${record.id} must have review provenance`);
   assert.ok(record.rightsStatus && record.license && record.commercialUse && record.publicationStatus && record.editorialAction, `${record.id} must have rights metadata`);

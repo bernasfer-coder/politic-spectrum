@@ -13,6 +13,12 @@ import {
   PALETTES,
   QUESTIONS,
   RESEARCH_SOURCES,
+  RESEARCH_BACKLOG,
+  RESEARCH_COVERAGE_MATRIX,
+  RESEARCH_PEOPLE,
+  RESEARCH_RELATIONSHIPS,
+  RESEARCH_SECTIONS,
+  RESEARCH_WORKS,
   RIGHTS_RECORDS,
   SOURCES,
   SPECTRUM_BANDS,
@@ -45,6 +51,10 @@ function getMatches(scores) {
 
 function formatScore(value) {
   return value > 0 ? `+${value}` : `${value}`;
+}
+
+function formatRange(range) {
+  return `${formatScore(range[0])} to ${formatScore(range[1])}`;
 }
 
 function getBand(dimensionId, value) {
@@ -310,7 +320,7 @@ function displayBibliographyValue(value) {
 }
 
 function bibliographyRecordTypeLabel(recordType) {
-  return recordType === 'author-reference' ? 'Author / work' : recordType === 'research-source' ? 'Research source' : 'Context source';
+  return recordType === 'author-reference' ? 'Author / work' : recordType === 'research-source' ? 'Research source' : recordType === 'research-work' ? 'Research work' : recordType === 'research-person' ? 'Person profile' : 'Context source';
 }
 
 function BibliographyPage() {
@@ -351,6 +361,9 @@ function BibliographyPage() {
         ...record.relationships.traditions,
         ...record.relationships.periods,
         ...record.relationships.entities,
+        ...record.relationships.works,
+        ...record.relationships.people,
+        ...record.relationships.claims,
       ].filter(Boolean).join(' ').toLowerCase();
       const recordTypeMatches = filters.recordType === 'all' || bibliographyRecordTypeLabel(record.recordType) === filters.recordType;
       const sourceTypeMatches = filters.sourceType === 'all' || record.sourceType === filters.sourceType;
@@ -440,6 +453,8 @@ function BibliographyRecord({ record }) {
     ['Spectrum profiles', record.relationships.archetypeIds],
     ['Profile examples', record.relationships.profileEntries],
     ['Claims', record.relationships.claims],
+    ['Works / evidence base', record.relationships.works],
+    ['People', record.relationships.people],
   ].filter(([, values]) => values.length);
   const publicationNote = record.quoteLocator ? record.publicationStatus === 'allowed' ? 'Direct quotation approved for this record.' : 'Direct quotation held pending exact edition, translation, and rights review.' : 'No direct quotation is published for this record.';
 
@@ -506,6 +521,7 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
       </div>
 
       <TaxonomyCatalogue filters={filters} filterOptions={filterOptions} filteredLabels={filteredLabels} onUpdateFilter={updateFilter} />
+      <ResearchAtlas />
     </div>
   );
 }
@@ -561,6 +577,96 @@ function TaxonomyCard({ label }) {
       <div className="taxonomy-sources"><span>Sources</span>{label.sourceIds.map((sourceId) => { const source = RESEARCH_SOURCES.find((item) => item.id === sourceId); return source ? <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a> : null; })}</div>
     </article>
   );
+}
+
+function ResearchAtlas() {
+  const [filters, setFilters] = useState({ query: '', recordType: 'all', role: 'all', region: 'all', period: 'all', dimension: 'all', confidence: 'all' });
+  const [showAll, setShowAll] = useState(false);
+  const workEntries = useMemo(() => RESEARCH_WORKS.map((work) => ({ ...work, entryType: 'work', recordId: `work-${work.id}` })), []);
+  const peopleEntries = useMemo(() => RESEARCH_PEOPLE.map((person) => ({ ...person, entryType: 'person', recordId: `person-${person.id}` })), []);
+  const entries = useMemo(() => [...workEntries, ...peopleEntries], [peopleEntries, workEntries]);
+  const personById = useMemo(() => Object.fromEntries(RESEARCH_PEOPLE.map((person) => [person.id, person])), []);
+  const workById = useMemo(() => Object.fromEntries(RESEARCH_WORKS.map((work) => [work.id, work])), []);
+  const filterOptions = useMemo(() => ({
+    role: [...new Set(RESEARCH_PEOPLE.flatMap(({ roles }) => roles))].sort(),
+    region: [...new Set(entries.flatMap((entry) => entry.regions ?? [entry.region]))].filter(Boolean).sort(),
+    period: [...new Set(entries.flatMap((entry) => entry.periods ?? [entry.period]))].filter(Boolean).sort(),
+    dimension: DIMENSIONS.map(({ id, label }) => ({ value: id, label })),
+    confidence: [...new Set(RESEARCH_PEOPLE.map(({ confidence }) => confidence))].sort(),
+  }), [entries]);
+  const filteredEntries = useMemo(() => {
+    const query = filters.query.trim().toLowerCase();
+    return entries.filter((entry) => {
+      const searchable = [entry.id, entry.title, entry.fullName, ...(entry.creators ?? []), ...(entry.roles ?? []), ...(entry.traditions ?? []), ...(entry.regions ?? [entry.region]), ...(entry.periods ?? [entry.period]), entry.context, entry.selfDescription].filter(Boolean).join(' ').toLowerCase();
+      const queryMatches = !query || searchable.includes(query);
+      const typeMatches = filters.recordType === 'all' || entry.entryType === filters.recordType;
+      const roleMatches = filters.role === 'all' || entry.roles?.includes(filters.role);
+      const regionMatches = filters.region === 'all' || (entry.regions ?? [entry.region]).includes(filters.region);
+      const periodMatches = filters.period === 'all' || (entry.periods ?? [entry.period]).includes(filters.period);
+      const dimensionMatches = filters.dimension === 'all' || entry.dimensionIds?.includes(filters.dimension);
+      const confidenceMatches = filters.confidence === 'all' || entry.confidence === filters.confidence || entry.review?.confidence === filters.confidence;
+      return queryMatches && typeMatches && roleMatches && regionMatches && periodMatches && dimensionMatches && confidenceMatches;
+    });
+  }, [entries, filters]);
+
+  function updateFilter(key, value) {
+    setShowAll(false);
+    setFilters((previous) => ({ ...previous, [key]: value }));
+  }
+
+  function clearFilters() {
+    setShowAll(false);
+    setFilters({ query: '', recordType: 'all', role: 'all', region: 'all', period: 'all', dimension: 'all', confidence: 'all' });
+  }
+
+  const visibleEntries = showAll ? filteredEntries : filteredEntries.slice(0, 8);
+
+  return (
+    <section className="research-atlas">
+      <div className="research-atlas-heading">
+        <div><p className="eyebrow">RESEARCH ATLAS</p><h3>Read the evidence behind the labels.</h3></div>
+        <p>A curated, expandable inventory of primary works, legal documents, scholars, leaders, and movement voices. Ranges show interpretation; they are not claims of exact ideological identity.</p>
+      </div>
+      <div className="atlas-stats"><div><strong>{RESEARCH_WORKS.length}</strong><span>works & legal texts</span></div><div><strong>{RESEARCH_PEOPLE.length}</strong><span>documented people</span></div><div><strong>{RESEARCH_RELATIONSHIPS.length}</strong><span>cautious relationships</span></div><div><strong>{RESEARCH_BACKLOG.length}</strong><span>open research gaps</span></div></div>
+      <ResearchCoverageMatrix />
+      <details className="atlas-sections"><summary>Editorial map · {RESEARCH_SECTIONS.length} sections</summary><div className="atlas-section-grid">{RESEARCH_SECTIONS.map((section) => <div key={section.id}><strong>{section.label}</strong><p>{section.description}</p></div>)}</div></details>
+      <details className="atlas-backlog"><summary>Prioritized bibliography backlog · {RESEARCH_BACKLOG.length} items</summary><div className="atlas-backlog-list">{RESEARCH_BACKLOG.map((item) => <div key={item.id}><span className={`atlas-priority ${item.priority}`}>{item.priority}</span><strong>{item.title}</strong><p>{item.reason}</p></div>)}</div></details>
+
+      <div className="atlas-filter-heading"><div><p className="eyebrow">EXPLORE THE INVENTORY</p><h4>Curated first, searchable when you want depth.</h4></div><button className="text-button subdued" onClick={clearFilters}>Clear filters</button></div>
+      <div className="atlas-filters" aria-label="Filter research inventory">
+        <label className="atlas-search"><span>Search people, works, traditions</span><input type="search" value={filters.query} onChange={(event) => updateFilter('query', event.target.value)} placeholder="e.g. constitutionalism, Gandhi, commons" /></label>
+        <FilterSelect label="Record" value={filters.recordType} options={[{ value: 'work', label: 'Works & legal texts' }, { value: 'person', label: 'People' }]} onChange={(value) => updateFilter('recordType', value)} />
+        <FilterSelect label="Role" value={filters.role} options={filterOptions.role} onChange={(value) => updateFilter('role', value)} />
+        <FilterSelect label="Region" value={filters.region} options={filterOptions.region} onChange={(value) => updateFilter('region', value)} />
+        <FilterSelect label="Period" value={filters.period} options={filterOptions.period} onChange={(value) => updateFilter('period', value)} />
+        <FilterSelect label="Dimension" value={filters.dimension} options={filterOptions.dimension} onChange={(value) => updateFilter('dimension', value)} />
+        <FilterSelect label="Confidence" value={filters.confidence} options={filterOptions.confidence} onChange={(value) => updateFilter('confidence', value)} />
+      </div>
+      <div className="atlas-result-bar"><span>{filteredEntries.length} of {entries.length} entries</span><span>Every entry shows its evidence boundary and review state.</span></div>
+      {visibleEntries.length ? <div className="atlas-grid">{visibleEntries.map((entry) => <ResearchEntryCard key={entry.recordId} entry={entry} workById={workById} />)}</div> : <div className="atlas-empty"><strong>No research entries match these filters.</strong><p>Clear one filter or broaden the search.</p></div>}
+      {filteredEntries.length > 8 && <button className="atlas-more" onClick={() => setShowAll((previous) => !previous)}>{showAll ? 'Show curated set' : `Show all ${filteredEntries.length} entries`} <span>{showAll ? '↑' : '↓'}</span></button>}
+      <ResearchRelationshipMap personById={personById} workById={workById} />
+      <p className="research-atlas-note">Editorial rule: direct evidence, paraphrase, analyst interpretation, and illustrative matching remain separate. A person may illuminate one dimension and be a poor match on another.</p>
+    </section>
+  );
+}
+
+function ResearchCoverageMatrix() {
+  return <details className="atlas-coverage"><summary>Coverage matrix · {RESEARCH_COVERAGE_MATRIX.reduce((sum, row) => sum + row.bands.filter((band) => band.status === 'strong').length, 0)} strong bands, gaps marked</summary><p className="atlas-coverage-note">Counts combine works and people whose documented position range overlaps a 20-point band. “Thin” means one or two evidence anchors; “gap” means the expanded inventory still needs research.</p><div className="coverage-grid">{RESEARCH_COVERAGE_MATRIX.map((row) => { const dimension = DIMENSIONS.find(({ id }) => id === row.dimensionId); return <div className="coverage-row" key={row.dimensionId}><div className="coverage-label"><strong>{dimension.label}</strong><span>{dimension.low} ↔ {dimension.high}</span></div><div className="coverage-bands">{row.bands.map((band) => <span className={`coverage-cell ${band.status}`} key={`${row.dimensionId}-${band.band}`} title={`${dimension.label}, band ${band.band}: ${band.total} evidence anchors`}><b>{band.band}</b><small>{band.total}</small></span>)}</div></div>; })}</div><div className="coverage-legend"><span className="strong">Strong · 3+</span><span className="thin">Thin · 1–2</span><span className="gap">Gap · 0</span></div></details>;
+}
+
+function ResearchEntryCard({ entry, workById }) {
+  const isWork = entry.entryType === 'work';
+  const dimensionItems = isWork ? entry.claims : DIMENSIONS.map((dimension) => ({ dimensionId: dimension.id, positionRange: entry.profile[dimension.id].range, summary: entry.profile[dimension.id].note, evidenceType: 'analyst range' }));
+  const confidence = isWork ? entry.review.confidence : entry.confidence;
+  const regions = isWork ? entry.regions : [entry.region];
+  const periods = isWork ? entry.periods : [entry.period];
+  return <article className="research-entry-card"><div className="research-entry-top"><div><p className="research-entry-kicker">{isWork ? 'WORK / LEGAL TEXT' : 'DOCUMENTED PERSON'} · {isWork ? entry.evidenceRole : entry.roles.slice(0, 2).join(' · ')}</p><h4>{isWork ? entry.title : entry.fullName}</h4><p className="research-entry-creators">{isWork ? entry.creators.join(' · ') : entry.dates}</p></div><span className={`research-confidence ${confidence}`}>{confidence}</span></div><p className="research-entry-context"><strong>Why this appears:</strong> {entry.context}</p><div className="research-entry-meta"><span>{isWork ? entry.sourceType : entry.discipline}</span><span>{regions.join(' · ')}</span><span>{periods.join(' · ')}</span></div>{!isWork && <p className="research-self-description"><strong>Self-description:</strong> {entry.selfDescription}</p>}<div className="research-claims"><span>Evidence by dimension</span>{dimensionItems.map((item) => { const dimension = DIMENSIONS.find(({ id }) => id === item.dimensionId); return <div className="research-claim" key={item.id ?? item.dimensionId}><div><strong>{dimension?.questionLabel ?? item.dimensionId}</strong><em>{formatRange(item.positionRange)}</em></div><p>{item.summary}</p><small>{item.evidenceType}{item.locator ? ` · ${item.locator}` : ''}</small></div>; })}</div>{isWork && <p className="research-translation"><strong>Language / translation:</strong> {entry.translationNote}</p>}{!isWork && <div className="research-work-links"><span>Works / evidence base</span><p>{entry.works.length ? entry.works.map((workId) => workById[workId]?.title ?? workId).join(' · ') : 'Institutional archive, indexed speeches, opinions, or documented public record; see the source link.'}</p></div>}<div className="research-entry-actions"><a href={entry.canonicalUrl} target="_blank" rel="noreferrer">Open source record ↗</a><a href={`#bibliography/${entry.recordId}`}>Bibliography record ↗</a></div></article>;
+}
+
+function ResearchRelationshipMap({ personById, workById }) {
+  const labelFor = (id) => personById[id]?.fullName ?? workById[id]?.title ?? id;
+  return <details className="atlas-relationships"><summary>Relationship map · same, close, distinct, influence, opposition</summary><div className="relationship-list">{RESEARCH_RELATIONSHIPS.map((relationship) => <div key={`${relationship.from}-${relationship.to}-${relationship.type}`}><span>{relationship.type.replaceAll('_', ' ')}</span><strong>{labelFor(relationship.from)} → {labelFor(relationship.to)}</strong><p>{relationship.note}</p></div>)}</div></details>;
 }
 
 function FreeMode({ scores, matches, topMatch, onUpdateScore, onUseQuestionnaire }) {

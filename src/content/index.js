@@ -2,6 +2,15 @@ import { ARCHETYPE_CITATIONS, AUTHOR_REFERENCES, BAND_CITATIONS } from './refere
 import { RIGHTS_RECORDS } from './rights.js';
 import { TAXONOMY_LABELS as RAW_TAXONOMY_LABELS } from './taxonomy.js';
 import { BIBLIOGRAPHY_ACCESS_DATE, BIBLIOGRAPHY_METADATA } from './bibliography.js';
+import {
+  RESEARCH_BACKLOG,
+  RESEARCH_COVERAGE_MATRIX,
+  RESEARCH_PEOPLE,
+  RESEARCH_RELATIONSHIPS,
+  RESEARCH_REVIEW_DATE,
+  RESEARCH_SECTIONS,
+  RESEARCH_WORKS,
+} from './research.js';
 
 const DIMENSIONS = [
   {
@@ -528,6 +537,8 @@ function createRelationshipSets() {
     traditions: new Set(),
     periods: new Set(),
     entities: new Set(),
+    works: new Set(),
+    people: new Set(),
   };
 }
 
@@ -539,6 +550,8 @@ function buildBibliographyRecords() {
   const researchUsage = Object.fromEntries(RESEARCH_SOURCES.map(({ id }) => [id, createRelationshipSets()]));
   const authorUsage = Object.fromEntries(Object.keys(AUTHOR_REFERENCES).map((id) => [id, createRelationshipSets()]));
   const sourceLinkUsage = Object.fromEntries(Object.keys(SOURCES).map((id) => [id, createRelationshipSets()]));
+  const researchWorkUsage = Object.fromEntries(RESEARCH_WORKS.map(({ id }) => [id, createRelationshipSets()]));
+  const researchPersonUsage = Object.fromEntries(RESEARCH_PEOPLE.map(({ id }) => [id, createRelationshipSets()]));
   addRelationship(researchUsage.panXu, 'claims', '5D model / multidimensionality');
 
   for (const dimension of DIMENSIONS) {
@@ -587,6 +600,40 @@ function buildBibliographyRecords() {
     }
   }
 
+  for (const work of RESEARCH_WORKS) {
+    for (const dimensionId of work.dimensionIds ?? []) {
+      const dimension = DIMENSIONS.find(({ id }) => id === dimensionId);
+      addRelationship(researchWorkUsage[work.id], 'dimensions', dimension?.label);
+    }
+    for (const region of work.regions ?? []) addRelationship(researchWorkUsage[work.id], 'regions', region);
+    for (const tradition of work.traditions ?? []) addRelationship(researchWorkUsage[work.id], 'traditions', tradition);
+    for (const period of work.periods ?? []) addRelationship(researchWorkUsage[work.id], 'periods', period);
+    for (const item of work.claims ?? []) {
+      addRelationship(researchWorkUsage[work.id], 'claims', item.id);
+      const dimension = DIMENSIONS.find(({ id }) => id === item.dimensionId);
+      addRelationship(researchWorkUsage[work.id], 'dimensions', dimension?.label);
+      for (let index = 0; index < BAND_RANGES.length; index += 1) {
+        if (item.positionRange?.[0] <= BAND_RANGES[index][1] && item.positionRange?.[1] >= BAND_RANGES[index][0]) {
+          addRelationship(researchWorkUsage[work.id], 'bands', `${item.dimensionId}-band-${String(index + 1).padStart(2, '0')}`);
+        }
+      }
+    }
+  }
+
+  for (const person of RESEARCH_PEOPLE) {
+    for (const dimension of DIMENSIONS) {
+      if (person.profile?.[dimension.id]) addRelationship(researchPersonUsage[person.id], 'dimensions', dimension.label);
+    }
+    addRelationship(researchPersonUsage[person.id], 'regions', person.region);
+    addRelationship(researchPersonUsage[person.id], 'periods', person.period);
+    for (const tradition of person.traditions ?? []) addRelationship(researchPersonUsage[person.id], 'traditions', tradition);
+    for (const workId of person.works ?? []) {
+      addRelationship(researchPersonUsage[person.id], 'works', workId);
+      addRelationship(researchWorkUsage[workId], 'people', person.fullName);
+    }
+    addRelationship(researchPersonUsage[person.id], 'entities', person.fullName);
+  }
+
   const toArrays = (relationships) => Object.fromEntries(Object.entries(relationships).map(([key, values]) => [key, [...values]]));
   const rightsFor = (group, id) => RIGHTS_RECORDS[group]?.[id] ?? {};
   const reviewFor = (rights, confidence = 'medium') => ({
@@ -630,7 +677,7 @@ function buildBibliographyRecords() {
       description: metadata.description ?? source.note,
       note: source.note,
       relationships: toArrays(researchUsage[source.id]),
-      citationIds: { researchSourceIds: [source.id], authorReferenceIds: [], sourceLinkIds: [] },
+      citationIds: { researchSourceIds: [source.id], authorReferenceIds: [], sourceLinkIds: [], researchWorkIds: [], researchPersonIds: [] },
     };
   });
 
@@ -667,7 +714,7 @@ function buildBibliographyRecords() {
       description: reference.context ?? `Author and work used as an evidence anchor for political-theory interpretation.`,
       note: reference.context ?? null,
       relationships: { ...toArrays(authorUsage[id]), periods: reference.year ? [reference.year] : [] },
-      citationIds: { researchSourceIds: [], authorReferenceIds: [id], sourceLinkIds: [] },
+      citationIds: { researchSourceIds: [], authorReferenceIds: [id], sourceLinkIds: [], researchWorkIds: [], researchPersonIds: [] },
     };
   });
 
@@ -703,14 +750,127 @@ function buildBibliographyRecords() {
       description: 'External source link used to contextualize a person, movement, country, city, or historical example. The app publishes an independent summary rather than reproducing the linked source.',
       note: null,
       relationships: toArrays(sourceLinkUsage[id]),
-      citationIds: { researchSourceIds: [], authorReferenceIds: [], sourceLinkIds: [id] },
+      citationIds: { researchSourceIds: [], authorReferenceIds: [], sourceLinkIds: [id], researchWorkIds: [], researchPersonIds: [] },
     };
   });
 
-  return [...researchRecords, ...authorRecords, ...sourceLinkRecords].map((record) => ({
+  const researchWorkRecords = RESEARCH_WORKS.map((work) => ({
+    id: `work-${work.id}`,
+    citationKey: work.id,
+    recordType: 'research-work',
+    evidenceRole: work.evidenceRole,
+    title: work.title,
+    creators: work.creators,
+    institution: null,
+    contributors: [],
+    sourceType: work.sourceType,
+    discipline: work.discipline,
+    publicationDate: work.publicationDate,
+    publisher: work.publisher,
+    identifiers: {},
+    canonicalUrl: work.canonicalUrl,
+    archiveUrl: null,
+    accessDate: BIBLIOGRAPHY_ACCESS_DATE,
+    languages: work.originalLanguage,
+    quoteLocator: null,
+    directQuote: null,
+    rightsStatus: 'copyrighted / link-only',
+    license: 'No reuse licence identified for the referenced work or edition.',
+    commercialUse: 'Independent summaries and links only; no expressive text reproduced.',
+    publicationStatus: work.review.status === 'needs-review' ? 'review-required' : 'link-only',
+    accessStatus: 'link-only',
+    editorialAction: 'Link and paraphrase only until edition, translation, and rights review are complete.',
+    review: {
+      status: work.review.status,
+      reviewer: BIBLIOGRAPHY_REVIEWER,
+      reviewedAt: RESEARCH_REVIEW_DATE,
+      confidence: work.review.confidence,
+      limitations: work.translationNote,
+    },
+    description: work.context,
+    note: work.translationNote,
+    researchMeta: {
+      originalLanguage: work.originalLanguage,
+      translationNote: work.translationNote,
+      regions: work.regions,
+      periods: work.periods,
+      traditions: work.traditions,
+      dimensionIds: work.dimensionIds,
+      claims: work.claims,
+    },
+    relationships: toArrays(researchWorkUsage[work.id]),
+    citationIds: { researchSourceIds: [], authorReferenceIds: [], sourceLinkIds: [], researchWorkIds: [work.id], researchPersonIds: [] },
+  }));
+
+  const researchPersonRecords = RESEARCH_PEOPLE.map((person) => ({
+    id: `person-${person.id}`,
+    citationKey: person.id,
+    recordType: 'research-person',
+    evidenceRole: 'contextual',
+    title: person.fullName,
+    creators: [person.fullName],
+    institution: person.affiliations?.join(' · ') ?? null,
+    contributors: person.roles,
+    sourceType: person.sourceType,
+    discipline: person.discipline,
+    publicationDate: person.dates,
+    publisher: null,
+    identifiers: {},
+    canonicalUrl: person.canonicalUrl,
+    archiveUrl: null,
+    accessDate: BIBLIOGRAPHY_ACCESS_DATE,
+    languages: null,
+    quoteLocator: null,
+    directQuote: null,
+    rightsStatus: 'copyrighted / link-only',
+    license: 'No reuse licence identified for the referenced profile, archive, or institutional page.',
+    commercialUse: 'Independent summaries and links only; no expressive text or media reproduced.',
+    publicationStatus: 'link-only',
+    accessStatus: 'link-only',
+    editorialAction: 'Link to the record and explain the evidence boundary; do not imply an exact ideological match.',
+    review: {
+      status: 'reviewed',
+      reviewer: BIBLIOGRAPHY_REVIEWER,
+      reviewedAt: RESEARCH_REVIEW_DATE,
+      confidence: person.confidence === 'documented' ? 'high' : 'medium',
+      limitations: person.context,
+    },
+    description: person.context,
+    note: person.selfDescription,
+    researchMeta: {
+      dates: person.dates,
+      roles: person.roles,
+      region: person.region,
+      period: person.period,
+      selfDescription: person.selfDescription,
+      affiliations: person.affiliations,
+      traditions: person.traditions,
+      confidence: person.confidence,
+      works: person.works,
+      profile: person.profile,
+      claimEvidence: person.claimEvidence,
+      relatedPeople: person.relatedPeople,
+    },
+    relationships: toArrays(researchPersonUsage[person.id]),
+    citationIds: { researchSourceIds: [], authorReferenceIds: [], sourceLinkIds: [], researchWorkIds: [], researchPersonIds: [person.id] },
+  }));
+
+  return [...researchRecords, ...authorRecords, ...sourceLinkRecords, ...researchWorkRecords, ...researchPersonRecords].map((record) => ({
     ...record,
     relationships: {
       ...record.relationships,
+      dimensions: record.relationships.dimensions ?? [],
+      bands: record.relationships.bands ?? [],
+      taxonomyLabelIds: record.relationships.taxonomyLabelIds ?? [],
+      archetypeIds: record.relationships.archetypeIds ?? [],
+      profileEntries: record.relationships.profileEntries ?? [],
+      claims: record.relationships.claims ?? [],
+      regions: record.relationships.regions ?? [],
+      traditions: record.relationships.traditions ?? [],
+      periods: record.relationships.periods ?? [],
+      entities: record.relationships.entities ?? [],
+      works: record.relationships.works ?? [],
+      people: record.relationships.people ?? [],
       dimensionIds: record.relationships.dimensions.map((label) => DIMENSIONS.find((dimension) => dimension.label === label)?.id ?? label),
     },
   }));
@@ -738,4 +898,10 @@ export {
   BIBLIOGRAPHY_ACCESS_DATE,
   BIBLIOGRAPHY_BY_ID,
   BIBLIOGRAPHY_RECORDS,
+  RESEARCH_BACKLOG,
+  RESEARCH_COVERAGE_MATRIX,
+  RESEARCH_PEOPLE,
+  RESEARCH_RELATIONSHIPS,
+  RESEARCH_SECTIONS,
+  RESEARCH_WORKS,
 };
