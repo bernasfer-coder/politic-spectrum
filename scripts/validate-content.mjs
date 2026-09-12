@@ -265,7 +265,7 @@ for (const row of RESEARCH_COVERAGE_MATRIX) {
 assert(RESEARCH_SECTIONS.length >= 7, 'Research atlas is missing editorial sections');
 assert(RESEARCH_BACKLOG.length > 0, 'Research atlas must record unresolved bibliography gaps');
 
-assert(TAXONOMY_LABELS.length >= 20, `Expected at least 20 normalized taxonomy labels, found ${TAXONOMY_LABELS.length}`);
+assert(TAXONOMY_LABELS.length >= 63, `Expected at least 63 normalized taxonomy labels, found ${TAXONOMY_LABELS.length}`);
 assertUnique(TAXONOMY_LABELS.map(({ id }) => id), 'Taxonomy label');
 for (const label of TAXONOMY_LABELS) {
   assert(Boolean(label.canonicalName), `${label.id} is missing a canonical name`);

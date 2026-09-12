@@ -127,7 +127,13 @@ Agrarian populism, People's Party populism, left populism, right populism, natio
 
 ## First implementation milestone
 
-The application now ships a deliberately bounded starter registry in `src/content/taxonomy.js`. It is not a claim to contain every label ever coined. Each record has a canonical name, aliases, label type, family, region, period, status, summary, differences note, approximate five-axis coordinates where a comparison is meaningful, and one or more research-source identifiers.
+The application now ships a deliberately bounded 63-label registry in `src/content/taxonomy.js`. It is not a claim to contain every label ever coined. Each record has a canonical name, aliases, label type, family, region, period, status, summary, differences note, approximate five-axis coordinates where a comparison is meaningful, and one or more research-source identifiers.
+
+## Ready batch added (13 September 2026)
+
+The latest batch adds 33 labels that already had enough definition and source coverage for structured inclusion: aristocracy, democracy, oligarchy, theocracy, constitutionalism, federalism, confederalism, mercantilism, libertarianism, minarchism, philosophical anarchism, individualist anarchism, anarcho-syndicalism, utopian socialism, revolutionary socialism, Marxism, Leninism, Trotskyism, Maoism, Stalinism, Eurocommunism, syndicalism, Christian democracy, social conservatism, paleoconservatism, neoconservatism, radical feminism, socialist feminism, intersectional feminism, deep ecology, degrowth, nativism, and sovereigntism.
+
+These entries are deliberately conservative: a coordinate is an approximate family-level teaching aid, not a claim that every adherent or historical case shares the same profile. Regime types, state structures, analytical traditions, and ideologies are kept as different label types. The remaining labels in the research lists stay in the research queue until they have a dedicated source record, non-duplicate canonical identity, period/region boundary, differences note, and enough evidence for responsible coordinates.
 
 The Spectrum Library exposes this registry through text search and filters for family, label type, region, status, and axis coverage. Broad or context-sensitive labels may leave some axis coordinates unset; the UI presents those as variable rather than inventing a false universal position. The registry is validated during the production build so labels cannot be added without provenance and the required contextual fields.
 
