@@ -509,7 +509,7 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
         <div><p className="eyebrow">REFERENCE PROFILES</p><h2>Select a spectrum. Read the logic.</h2></div>
         <button className="secondary-button" onClick={onLoadInFreeMode}>Load this profile <span>↗</span></button>
       </div>
-      <p className="library-intro">Choose a reference pattern below. The five cards explain not only where it sits on each axis, but why that position follows from the underlying political ideas.</p>
+      <p className="library-intro">Choose a reference pattern below. The {ARCHETYPES.length} cards explain not only where each profile sits on every axis, but why that position follows from the underlying political ideas.</p>
 
       <div className="type-picker" role="group" aria-label="Political spectrum reference profiles">
         {ARCHETYPES.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-pressed={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Market-leaning' : 'Collectivist-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}

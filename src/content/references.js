@@ -184,6 +184,38 @@ export const AUTHOR_REFERENCES = {
     kind: 'primary',
     url: 'https://www.gutenberg.org/ebooks/1946',
   },
+  gandhiHindSwaraj: {
+    author: 'M. K. Gandhi',
+    work: 'Hind Swaraj / Indian Home Rule',
+    year: '1909',
+    kind: 'primary',
+    context: 'A primary anti-colonial text used to interpret ethical self-rule, nonviolence, and decentralized political economy.',
+    url: 'https://www.gandhiheritageportal.org/mahatma-gandhi-books/hind-swaraj-indian-opinion-hindi',
+  },
+  duboisBlackReconstruction: {
+    author: 'W. E. B. Du Bois',
+    work: 'Black Reconstruction in America, 1860–1880',
+    year: '1935',
+    kind: 'primary',
+    context: 'A historical analysis used to interpret emancipation, labor power, equal citizenship, and Black democratic agency.',
+    url: 'https://www.loa.org/books/698-black-reconstruction/',
+  },
+  fanonWretchedEarth: {
+    author: 'Frantz Fanon',
+    work: 'The Wretched of the Earth',
+    year: '1961',
+    kind: 'primary',
+    context: 'A historically situated anti-colonial text; it is cited critically and does not constitute a universal endorsement of revolutionary violence.',
+    url: 'https://archive.org/details/wretchedofearth00fano',
+  },
+  ostromGoverningCommons: {
+    author: 'Elinor Ostrom',
+    work: 'Beyond Markets and States: Polycentric Governance of Complex Economic Systems',
+    year: '2009',
+    kind: 'primary',
+    context: 'A Nobel Prize lecture used to interpret commons governance, polycentric institutions, and alternatives to a state-versus-market binary.',
+    url: 'https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/',
+  },
 };
 
 // Every band receives an explicit list. These are references for the
@@ -310,6 +342,66 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['lockeSecondTreatise', 'millOnLiberty'],
       identity: ['renanNation', 'andersonImaginedCommunities'],
       foreign: ['kantPerpetualPeace', 'morgenthauRealism'],
+    },
+  },
+  'classical-liberal': {
+    summary: ['adamSmithWealth', 'lockeSecondTreatise', 'millOnLiberty'],
+    dimensions: {
+      economic: ['adamSmithWealth', 'hayekKnowledge'],
+      social: ['millOnLiberty', 'lockeSecondTreatise'],
+      authority: ['lockeSecondTreatise', 'millOnLiberty'],
+      identity: ['lockeSecondTreatise', 'kantPerpetualPeace'],
+      foreign: ['kantPerpetualPeace', 'millOnLiberty'],
+    },
+  },
+  'democratic-socialist': {
+    summary: ['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'keynesGeneralTheory'],
+    dimensions: {
+      economic: ['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'keynesGeneralTheory'],
+      social: ['wollstonecraftRights', 'millOnLiberty'],
+      authority: ['millOnLiberty', 'lockeSecondTreatise'],
+      identity: ['andersonImaginedCommunities', 'renanNation'],
+      foreign: ['kantPerpetualPeace', 'walzerJustWars'],
+    },
+  },
+  'anarchist-communalist': {
+    summary: ['bakuninStatism', 'marxEngelsManifesto', 'millOnLiberty'],
+    dimensions: {
+      economic: ['marxEngelsManifesto', 'bakuninStatism'],
+      social: ['bakuninStatism', 'millOnLiberty'],
+      authority: ['bakuninStatism', 'millOnLiberty'],
+      identity: ['bakuninStatism', 'andersonImaginedCommunities'],
+      foreign: ['bakuninStatism', 'kantPerpetualPeace'],
+    },
+  },
+  'green-commons': {
+    summary: ['ostromGoverningCommons', 'millOnLiberty', 'kantPerpetualPeace'],
+    dimensions: {
+      economic: ['ostromGoverningCommons', 'adamSmithWealth'],
+      social: ['ostromGoverningCommons', 'millOnLiberty'],
+      authority: ['ostromGoverningCommons', 'lockeSecondTreatise'],
+      identity: ['ostromGoverningCommons', 'kantPerpetualPeace'],
+      foreign: ['ostromGoverningCommons', 'kantPerpetualPeace'],
+    },
+  },
+  'religious-traditionalist': {
+    summary: ['burkeReflections', 'hobbesLeviathan', 'renanNation'],
+    dimensions: {
+      economic: ['burkeReflections', 'adamSmithWealth'],
+      social: ['burkeReflections', 'hobbesLeviathan'],
+      authority: ['hobbesLeviathan', 'burkeReflections'],
+      identity: ['burkeReflections', 'renanNation'],
+      foreign: ['morgenthauRealism', 'burkeReflections'],
+    },
+  },
+  'anti-colonial-liberation': {
+    summary: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction'],
+    dimensions: {
+      economic: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction'],
+      social: ['duboisBlackReconstruction', 'fanonWretchedEarth', 'gandhiHindSwaraj'],
+      authority: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'lockeSecondTreatise'],
+      identity: ['fanonWretchedEarth', 'gandhiHindSwaraj', 'duboisBlackReconstruction'],
+      foreign: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'kantPerpetualPeace'],
     },
   },
 };
