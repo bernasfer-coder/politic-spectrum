@@ -113,6 +113,10 @@ describe('primary user flows', () => {
     render(<App />);
     await user.click(screen.getByRole('tab', { name: /Spectrum Library/i }));
 
+    expect(screen.getByRole('grid', { name: /Nine-cell political spectrum profile map/i })).toBeInTheDocument();
+    expect(screen.getAllByRole('gridcell')).toHaveLength(9);
+    expect(screen.getByRole('button', { name: /Communist \/ Marxist-Leninist/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Anarcho-capitalist/i })).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: /Historical fascist \/ Nazi-like/i }));
     expect(screen.getByRole('heading', { name: /Historical fascist \/ Nazi-like/i })).toBeInTheDocument();
     expect(screen.getByText(/Palette: Historical warning · rust/i)).toBeInTheDocument();

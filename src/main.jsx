@@ -63,6 +63,24 @@ function getBand(dimensionId, value) {
   return bands.find((band) => value >= band.min && value <= band.max) || bands[bands.length - 1];
 }
 
+const PROFILE_GRID_COLUMNS = [
+  { id: 'collectivist', label: 'Collectivist / left', note: 'More public or common ownership' },
+  { id: 'mixed', label: 'Mixed / center', note: 'Mixed economy or intermediate' },
+  { id: 'market', label: 'Market / right', note: 'More private or market coordination' },
+];
+
+const PROFILE_GRID_ROWS = [
+  { id: 'authority', label: 'Authority-centered', note: 'Centralized or hierarchical power' },
+  { id: 'pluralist', label: 'Pluralist / constitutional', note: 'Institutional checks and contestation' },
+  { id: 'libertarian', label: 'Libertarian / decentralized', note: 'Distributed or voluntary power' },
+];
+
+function getProfileGridCell(archetype) {
+  const economic = archetype.profile.economic > 33 ? 'collectivist' : archetype.profile.economic < -33 ? 'market' : 'mixed';
+  const authority = archetype.profile.authority > 33 ? 'authority' : archetype.profile.authority < -33 ? 'libertarian' : 'pluralist';
+  return `${authority}-${economic}`;
+}
+
 function scoreLabel(value, dimension) {
   return getBand(dimension.id, value).label;
 }
@@ -488,6 +506,10 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
     if (!query) return ARCHETYPES;
     return ARCHETYPES.filter((archetype) => [archetype.name, archetype.id, archetype.summary, archetype.warning].filter(Boolean).join(' ').toLowerCase().includes(query));
   }, [profileQuery]);
+  const profileGrid = useMemo(() => Object.fromEntries(PROFILE_GRID_ROWS.flatMap((row) => PROFILE_GRID_COLUMNS.map((column) => {
+    const key = `${row.id}-${column.id}`;
+    return [key, visibleProfiles.filter((archetype) => getProfileGridCell(archetype) === key)];
+  }))), [visibleProfiles]);
   const filterOptions = useMemo(() => ({
     family: [...new Set(TAXONOMY_LABELS.map(({ family }) => family))].sort(),
     labelType: [...new Set(TAXONOMY_LABELS.map(({ labelType }) => labelType))].sort(),
@@ -524,8 +546,28 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
         <label className="profile-search"><span>SEARCH MAIN PROFILES</span><input value={profileQuery} onChange={(event) => setProfileQuery(event.target.value)} placeholder="Try communism, anarcho-capitalism, monarchism..." aria-label="Search main profiles" /></label>
         <span className="profile-count">{visibleProfiles.length} of {ARCHETYPES.length} profiles</span>
       </div>
-      <div className="type-picker" role="group" aria-label="Political spectrum reference profiles">
-        {visibleProfiles.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-pressed={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Market-leaning' : 'Collectivist-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}
+      <p className="profile-grid-explainer">A compact 3×3 map: columns use the economic axis, rows use the Authority axis. “Left / center / right” is shown as an economic shorthand, not as a universal judgment of the whole ideology. Select any profile to open its full six-axis explanation.</p>
+      <div className="profile-grid-wrap">
+        <div className="profile-grid" role="grid" aria-label="Nine-cell political spectrum profile map">
+          <div className="profile-grid-header" role="row">
+            <div className="profile-grid-corner" role="columnheader"><span>MAP KEY</span><strong>Authority × economy</strong></div>
+            {PROFILE_GRID_COLUMNS.map((column) => <div className="profile-grid-axis-header" role="columnheader" key={column.id}><strong>{column.label}</strong><small>{column.note}</small></div>)}
+          </div>
+          <div className="profile-grid-body">
+            {PROFILE_GRID_ROWS.map((row) => <div className="profile-grid-row" role="row" key={row.id}>
+              <div className="profile-grid-row-label" role="rowheader"><strong>{row.label}</strong><small>{row.note}</small></div>
+              <div className="profile-grid-row-cells">
+                {PROFILE_GRID_COLUMNS.map((column) => {
+                  const cellProfiles = profileGrid[`${row.id}-${column.id}`];
+                  return <div className="profile-grid-cell" role="gridcell" key={column.id}>
+                    <div className="profile-grid-cell-heading"><span>{cellProfiles.length} {cellProfiles.length === 1 ? 'profile' : 'profiles'}</span><b>↘</b></div>
+                    {cellProfiles.length ? <div className="profile-grid-card-list">{cellProfiles.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'profile-grid-card selected' : 'profile-grid-card'} onClick={() => onSelectType(archetype.id)} aria-pressed={selectedType.id === archetype.id}><span className="profile-grid-card-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.warning ? 'Historical context' : `Religion ${formatScore(archetype.profile.religion)}`}</small></span></button>)}</div> : <p className="profile-grid-empty">{profileQuery ? 'No matching profile' : 'No primary profile here yet'}</p>}
+                  </div>;
+                })}
+              </div>
+            </div>)}
+          </div>
+        </div>
       </div>
       {!visibleProfiles.length && <div className="profile-search-empty"><strong>No main profile matches that search.</strong><p>Try a broader term such as “liberal”, “socialist”, “national”, “religious”, or “anarchist”.</p></div>}
 
