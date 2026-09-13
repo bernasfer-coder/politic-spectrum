@@ -113,7 +113,9 @@ describe('primary user flows', () => {
     render(<App />);
     await user.click(screen.getByRole('tab', { name: /Spectrum Library/i }));
 
-    expect(screen.getByRole('grid', { name: /Nine-cell political spectrum profile map/i })).toBeInTheDocument();
+    const selectedReference = screen.getByText('SELECTED REFERENCE');
+    const profileMap = screen.getByRole('grid', { name: /Nine-cell political spectrum profile map/i });
+    expect(selectedReference.compareDocumentPosition(profileMap) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(screen.getAllByRole('gridcell')).toHaveLength(9);
     expect(screen.getByRole('button', { name: /Communist \/ Marxist-Leninist/i })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Anarcho-capitalist/i })).toBeInTheDocument();
