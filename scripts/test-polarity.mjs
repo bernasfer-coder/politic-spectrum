@@ -69,6 +69,34 @@ assert(libertarianMarket.profile.identity === 34, 'Market archetype identity sco
 assert(libertarianMarket.profile.foreign === 72, 'Market archetype foreign score should be positive after reorientation');
 assert(libertarianMarket.profile.authority === -88, 'Authority must remain unchanged for the market archetype');
 
+const expectedMainProfiles = [
+  'communist',
+  'anarcho-capitalist',
+  'anarcho-communist',
+  'conservative',
+  'civic-nationalist',
+  'ethnic-nationalist',
+  'monarchist',
+  'theocratic',
+  'christian-democratic',
+  'religious-socialist',
+  'populist',
+  'centrist-pragmatist',
+  'liberal-constitutionalist',
+  'militarist-imperialist',
+  'national-socialist',
+  'libertarian-socialist',
+];
+assert(ARCHETYPES.length >= 28, 'The reference library should expose the expanded main profile set');
+for (const id of expectedMainProfiles) {
+  const archetype = ARCHETYPES.find((entry) => entry.id === id);
+  assert(Boolean(archetype), `Main profile ${id} must be registered`);
+  if (archetype) {
+    assert(Object.keys(archetype.dimensionNotes).length === DIMENSIONS.length, `${id} must explain every dimension`);
+    assert(archetype.people.length >= 3 && archetype.current.length >= 3 && archetype.historical.length >= 3, `${id} must include people, current, and historical examples`);
+  }
+}
+
 const classicalLiberal = TAXONOMY_LABELS.find(({ id }) => id === 'classical-liberalism');
 assert(classicalLiberal.axisPositions.economic === -65, 'Taxonomy coordinates must use the new economic orientation');
 assert(classicalLiberal.axisPositions.social === 20, 'Taxonomy coordinates must use the new social orientation');

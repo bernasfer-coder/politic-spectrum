@@ -150,7 +150,7 @@ function App() {
     const hasSignal = Object.values(themeScores).some((value) => value !== 0);
     return mode === 'library' ? selectedType : hasSignal ? getMatches(themeScores)[0] : { id: 'neutral' };
   }, [mode, selectedType, themeScores]);
-  const palette = PALETTES[themeMatch.id] || PALETTES.neutral;
+  const palette = PALETTES[themeMatch.id] || PALETTES[themeMatch.palette] || PALETTES.neutral;
   const themeStyle = {
     '--cyan': palette.primary,
     '--violet': palette.secondary,
@@ -481,7 +481,13 @@ function BibliographyRecord({ record }) {
 }
 
 function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
+  const [profileQuery, setProfileQuery] = useState('');
   const [filters, setFilters] = useState({ query: '', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' });
+  const visibleProfiles = useMemo(() => {
+    const query = profileQuery.trim().toLowerCase();
+    if (!query) return ARCHETYPES;
+    return ARCHETYPES.filter((archetype) => [archetype.name, archetype.id, archetype.summary, archetype.warning].filter(Boolean).join(' ').toLowerCase().includes(query));
+  }, [profileQuery]);
   const filterOptions = useMemo(() => ({
     family: [...new Set(TAXONOMY_LABELS.map(({ family }) => family))].sort(),
     labelType: [...new Set(TAXONOMY_LABELS.map(({ labelType }) => labelType))].sort(),
@@ -512,11 +518,16 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
         <div><p className="eyebrow">REFERENCE PROFILES</p><h2>Select a spectrum. Read the logic.</h2></div>
         <button className="secondary-button" onClick={onLoadInFreeMode}>Load this profile <span>↗</span></button>
       </div>
-      <p className="library-intro">Choose a reference pattern below. The {ARCHETYPES.length} cards explain not only where each profile sits on every axis, but why that position follows from the underlying political ideas.</p>
+      <p className="library-intro">Choose a reference pattern below. The {ARCHETYPES.length} cards explain not only where each profile sits on every axis, but why that position follows from the underlying political ideas. These are cross-axis teaching profiles; the normalized catalogue below contains additional narrower labels and aliases.</p>
 
-      <div className="type-picker" role="group" aria-label="Political spectrum reference profiles">
-        {ARCHETYPES.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-pressed={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Market-leaning' : 'Collectivist-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}
+      <div className="profile-picker-toolbar">
+        <label className="profile-search"><span>SEARCH MAIN PROFILES</span><input value={profileQuery} onChange={(event) => setProfileQuery(event.target.value)} placeholder="Try communism, anarcho-capitalism, monarchism..." aria-label="Search main profiles" /></label>
+        <span className="profile-count">{visibleProfiles.length} of {ARCHETYPES.length} profiles</span>
       </div>
+      <div className="type-picker" role="group" aria-label="Political spectrum reference profiles">
+        {visibleProfiles.map((archetype) => <button key={archetype.id} className={selectedType.id === archetype.id ? 'type-option selected' : 'type-option'} onClick={() => onSelectType(archetype.id)} aria-pressed={selectedType.id === archetype.id}><span className="type-swatch" style={{ background: archetype.accent }} /><span><strong>{archetype.name}</strong><small>{archetype.profile.economic < 0 ? 'Market-leaning' : 'Collectivist-leaning'} · {archetype.profile.authority < 0 ? 'Low authority' : 'High authority'}</small></span><span className="type-arrow">→</span></button>)}
+      </div>
+      {!visibleProfiles.length && <div className="profile-search-empty"><strong>No main profile matches that search.</strong><p>Try a broader term such as “liberal”, “socialist”, “national”, “religious”, or “anarchist”.</p></div>}
 
       <div className="library-detail">
         <div className="library-detail-heading"><div><p className="eyebrow">SELECTED REFERENCE</p><h3><span className="accent-dot" style={{ background: selectedType.accent }} />{selectedType.name}</h3><p>{selectedType.summary}</p><EvidenceLinks citationIds={selectedType.summaryCitationIds} /></div><div className="library-score-note"><span>Profile coordinates</span><strong>{DIMENSIONS.length} axes · −100 to +100</strong></div></div>

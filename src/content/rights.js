@@ -225,6 +225,11 @@ const RIGHTS_RECORDS = {
     freedomSouthAfrica: { ...PERMISSION_SENSITIVE, notes: 'Freedom House requires prior approval for commercial use of its content; the app currently links and writes independent summaries only.' },
     freedomNorway: { ...PERMISSION_SENSITIVE, notes: 'Freedom House requires prior approval for commercial use of its content; the app currently links and writes independent summaries only.' },
     freedomSweden: { ...PERMISSION_SENSITIVE, notes: 'Freedom House requires prior approval for commercial use of its content; the app currently links and writes independent summaries only.' },
+    freedomItaly: { ...PERMISSION_SENSITIVE, notes: 'Freedom House requires prior approval for commercial use of its content; the app currently links and writes independent summaries only.' },
+    renan: { ...LINK_ONLY, notes: 'Biographical reference used for an independent summary of Renan’s account of nationhood; no Britannica text is reproduced.' },
+    kant: { ...LINK_ONLY, notes: 'Biographical reference used for an independent summary of Kant’s political thought; no Britannica text is reproduced.' },
+    king: { ...LINK_ONLY, notes: 'University archive used as a link to primary and biographical materials; no archive text, images, or media are reproduced.' },
+    morgenthau: { ...LINK_ONLY, notes: 'Biographical reference used for an independent summary of classical realism; no Britannica text is reproduced.' },
     holocaust: { ...PERMISSION_SENSITIVE, notes: 'US Holocaust Memorial Museum page used as a link; no institutional text or media is copied.' },
   },
   authorReferences: {
