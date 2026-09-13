@@ -15,8 +15,8 @@ const workIds = new Set(RESEARCH_WORKS.map(({ id }) => id));
 const personIds = new Set(RESEARCH_PEOPLE.map(({ id }) => id));
 const bibliographyFor = (field, id) => BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds[field]?.includes(id));
 
-assert.equal(RESEARCH_WORKS.length, 61, 'the curated research inventory should contain 61 works/legal texts');
-assert.equal(RESEARCH_PEOPLE.length, 21, 'the curated research inventory should contain 21 people');
+assert.equal(RESEARCH_WORKS.length, 65, 'the curated research inventory should contain 65 works/legal texts');
+assert.equal(RESEARCH_PEOPLE.length, 24, 'the curated research inventory should contain 24 people');
 assert.equal(RESEARCH_COVERAGE_MATRIX.length, DIMENSIONS.length, 'coverage must include every dimension');
 assert.equal(Object.keys(RIGHTS_RECORDS.researchWorks ?? {}).length, RESEARCH_WORKS.length, 'every research work must have a rights record');
 

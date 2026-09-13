@@ -1427,6 +1427,98 @@ export const RESEARCH_WORKS = [
       claim('marx-manifesto-internationalism', 'identity', [35, 85], 'primary pamphlet reading', 'The analysis treats capitalism as world-spanning and calls for working-class solidarity across national boundaries, while the political program still engages national state power.', 'Sections I–IV'),
     ],
   },
+  {
+    id: 'maimonides-mishneh-torah',
+    title: 'Mishneh Torah, Kings and Wars',
+    creators: ['Moses ben Maimon (Maimonides)'],
+    originalLanguage: 'Hebrew',
+    publicationDate: 'c. 1170–1180',
+    publisher: 'Sefaria Library; translation and edition vary',
+    canonicalUrl: 'https://www.sefaria.org/Mishneh_Torah%2C_Kings_and_Wars',
+    sourceType: 'primary legal code / Jewish political thought',
+    evidenceRole: 'primary',
+    discipline: 'Jewish legal and political thought',
+    regions: ['Jewish world / Mediterranean / Middle East'],
+    periods: ['Medieval Jewish political thought'],
+    traditions: ['Jewish law', 'religious political thought', 'monarchy and messianism'],
+    dimensionIds: ['religion', 'authority', 'identity', 'foreign', 'social'],
+    translationNote: 'Sefaria provides Hebrew and multiple English translations; section numbering and translation choices must be recorded for any close quotation.',
+    context: 'A legal code treating kingship, war, public offices, Torah obligations, and messianic political order. It is evidence about halakhic political reasoning, not a simple description of every Jewish community or modern religious state.',
+    review: { status: 'reviewed', confidence: 'high' },
+    claims: [
+      claim('maimonides-kingship', 'religion', [-100, -55], 'primary legal reading', 'Public kingship and political obligation are defined within Torah law and religious commandment, placing religious authority near the negative end of this project’s public-law axis.', 'Kings and Wars 1.1–1.7'),
+      claim('maimonides-war', 'foreign', [-70, -10], 'primary legal reading', 'The code distinguishes commanded, defensive, and discretionary wars and gives the king legal authority to wage them within a religious-legal framework.', 'Kings and Wars 5.1–5.2'),
+    ],
+  },
+  {
+    id: 'rizal-philippines-century',
+    title: 'The Philippines a Century Hence',
+    creators: ['José Rizal'],
+    originalLanguage: 'Spanish',
+    publicationDate: '1889–1890',
+    publisher: 'La Solidaridad; Project Gutenberg English translation',
+    canonicalUrl: 'https://www.gutenberg.org/files/35899/35899-h/h.htm',
+    sourceType: 'primary anti-colonial political essay',
+    evidenceRole: 'primary',
+    discipline: 'Southeast Asian anti-colonial political thought',
+    regions: ['Philippines / Southeast Asia'],
+    periods: ['Late 19th century anti-colonial thought'],
+    traditions: ['Filipino nationalism', 'anti-colonial liberalism', 'reformism'],
+    dimensionIds: ['identity', 'authority', 'social', 'foreign', 'religion'],
+    translationNote: 'The original essay is Spanish; the linked page is an English translation. Compare the Spanish publication in La Solidaridad and later translations before quoting.',
+    context: 'A forecast and critique of Spanish colonial rule, Filipino political development, education, civic identity, and the possibility of self-government. It is not a complete program for the later Philippine state.',
+    review: { status: 'reviewed', confidence: 'high' },
+    claims: [
+      claim('rizal-colonial-rule', 'authority', [-30, 35], 'primary political essay reading', 'Rizal criticizes colonial domination and argues for civic development and accountable government, while his reformist horizon is not identical to a fully libertarian program.', 'Chapters on colonial administration and the political future'),
+      claim('rizal-national-development', 'identity', [-20, 60], 'primary political essay reading', 'The essay constructs Filipino historical and civic identity against colonial subordination while connecting national development to broader Pacific and international change.', 'Chapters on Filipino identity, education, and future political status'),
+    ],
+  },
+  {
+    id: 'florentine-codex',
+    title: 'Florentine Codex / Historia general de las cosas de Nueva España',
+    creators: ['Bernardino de Sahagún with Nahua elders, authors, and artists'],
+    originalLanguage: 'Nahuatl and Spanish',
+    publicationDate: 'c. 1547–1577',
+    publisher: 'Getty Research Institute Digital Florentine Codex',
+    canonicalUrl: 'https://florentinecodex.getty.edu/',
+    sourceType: 'layered Indigenous/colonial ethnographic and historical source',
+    evidenceRole: 'contextual',
+    discipline: 'Mesoamerican history and Indigenous political thought',
+    regions: ['Central Mexico / Mesoamerica'],
+    periods: ['16th-century early colonial period'],
+    traditions: ['Nahua political thought', 'Mexica political history', 'Indigenous knowledge transmission'],
+    dimensionIds: ['authority', 'identity', 'religion', 'social', 'economic'],
+    translationNote: 'Parallel Nahuatl and Spanish columns reflect collaboration and colonial mediation; translations, glosses, and image/text relationships must be read together.',
+    context: 'A major layered record of Nahua/Mexica knowledge, social order, ritual, warfare, tribute, and conquest, created with Nahua contributors under colonial conditions. It should not be treated as an unmediated voice of one “Aztec ideology.”',
+    review: { status: 'needs-review', confidence: 'medium' },
+    claims: [
+      claim('florentine-codex-nahua-order', 'authority', [20, 75], 'layered primary-source reading', 'Descriptions of rulers, councils, offices, tribute, warfare, and social roles provide evidence of an ordered and stratified political world, but the codex is not a neutral constitutional manual.', 'Books 6, 8, 10–12'),
+      claim('florentine-codex-ritual-polity', 'religion', [-95, -35], 'layered primary-source reading', 'Ritual, sacred history, calendrical practice, and political order are interwoven in the record, while colonial authorship and translation require caution.', 'Books 1, 2, 6, and 12'),
+    ],
+  },
+  {
+    id: 'treaty-waitangi',
+    title: 'Te Tiriti o Waitangi / Treaty of Waitangi',
+    creators: ['Māori rangatira and representatives of the British Crown'],
+    originalLanguage: 'Māori and English',
+    publicationDate: '1840',
+    publisher: 'Manatū Taonga — Ministry for Culture and Heritage / NZ History',
+    canonicalUrl: 'https://nzhistory.govt.nz/politics/treaty/read-the-treaty/maori-text',
+    sourceType: 'primary treaty / constitutional founding document',
+    evidenceRole: 'primary',
+    discipline: 'constitutional and Indigenous political history',
+    regions: ['Aotearoa New Zealand / Pacific'],
+    periods: ['19th-century colonial encounter'],
+    traditions: ['Māori constitutional traditions', 'treaty constitutionalism', 'Indigenous sovereignty'],
+    dimensionIds: ['authority', 'identity', 'social', 'economic', 'religion'],
+    translationNote: 'The Māori and English texts are not interchangeable; the official history resource provides both and explains that the treaty was prepared, signed, and circulated in multiple versions and sheets.',
+    context: 'A treaty framework whose meanings turn on sovereignty, kāwanatanga, tino rangatiratanga, rights, property, and the relationship between Māori communities and the Crown. It should be taught as a contested constitutional relationship, not a settled transfer story.',
+    review: { status: 'reviewed', confidence: 'high' },
+    claims: [
+      claim('treaty-waitangi-authority', 'authority', [-20, 55], 'primary treaty reading', 'The treaty establishes a relationship involving Crown governance and Māori authority, but the scope and translation of that relationship remain contested.', 'Articles 1–2 and official Māori/English comparison'),
+      claim('treaty-waitangi-indigenous-sovereignty', 'identity', [-30, 55], 'primary treaty reading', 'The text preserves a strong basis for Māori collective authority and identity while creating a treaty relationship with the Crown, rather than one simple nationalist or internationalist position.', 'Article 2 and official explanations of tino rangatiratanga'),
+    ],
+  },
 ];
 
 const profile = (economic, social, authority, identity, foreign, religion = {
@@ -1498,6 +1590,15 @@ const RAW_RESEARCH_PEOPLE = [
   {
     id: 'person-beauvoir', fullName: 'Simone de Beauvoir', dates: '1908–1986', roles: ['philosopher', 'writer', 'feminist thinker'], region: 'France / Europe / Global feminist thought', period: '20th century feminism', selfDescription: 'Analyzed women’s social situation through existentialist philosophy, freedom, embodiment, and institutional power.', affiliations: ['French intellectual and feminist movements'], traditions: ['existentialist feminism', 'feminist philosophy', 'gender equality'], canonicalUrl: 'https://plato.stanford.edu/entries/beauvoir/', sourceType: 'scholarly reference profile', discipline: 'feminist political philosophy', confidence: 'documented', works: ['beauvoir-second-sex'], profile: profile({ range: [-15, 35], note: 'The cited work analyzes material and social conditions but does not determine one complete economic system.' }, { range: [55, 100], note: 'The critique of women’s subordination and inherited gender roles is central.' }, { range: [-45, 20], note: 'Freedom and reciprocity oppose domination, while social institutions are treated as necessary sites of collective change.' }, { range: [25, 70], note: 'The work critiques universal claims built around male experience and develops a broader account of human freedom.' }, { range: [10, 55], note: 'The record gives some evidence for international solidarity, but not a full foreign-policy position.' }), context: 'Beauvoir strengthens French-language feminist coverage. The entry is about a major work and a specific intellectual tradition, not a verdict on every later feminist movement.', relatedPeople: ['person-ginsburg', 'person-cesaire'],
   },
+  {
+    id: 'person-maimonides', fullName: 'Moses ben Maimon (Maimonides)', dates: '1138–1204', roles: ['rabbi', 'jurist', 'philosopher'], region: 'Andalusia / Egypt / Jewish Mediterranean', period: 'Medieval Jewish political thought', selfDescription: 'A major codifier of Jewish law whose political reasoning is embedded in halakhic, philosophical, and communal traditions.', affiliations: ['Jewish communities of Córdoba and Fustat'], traditions: ['Jewish law', 'religious political thought', 'medieval philosophy'], canonicalUrl: 'https://plato.stanford.edu/entries/maimonides/', sourceType: 'scholarly reference profile', discipline: 'Jewish legal and political thought', confidence: 'documented', works: ['maimonides-mishneh-torah'], profile: profile({ range: [-20, 30], note: 'The cited code addresses property, public obligations, and administration without offering a modern market-versus-collective program.' }, { range: [-50, 5], note: 'The code is rooted in inherited religious law and communal obligations, with historical categories that do not map neatly onto modern social values.' }, { range: [20, 75], note: 'Kingship, legal offices, and a structured community are treated as legitimate forms of public order within the law.' }, { range: [-35, 20], note: 'The relevant political unit is a religious-legal community and historical polity, not a modern nation-state.' }, { range: [-70, -10], note: 'War is classified and bounded by religious law, but the text recognizes legitimate coercive statecraft in some circumstances.' }, { range: [-100, -55], note: 'Public kingship and political obligation are defined within Torah law and religious commandment.' }), context: 'This profile is a Jewish legal-political anchor. It must not be generalized to all Jewish communities, later Jewish political movements, or modern religious states.', relatedPeople: ['person-gandhi'],
+  },
+  {
+    id: 'person-rizal', fullName: 'José Rizal', dates: '1861–1896', roles: ['writer', 'physician', 'anti-colonial thinker'], region: 'Philippines / Southeast Asia', period: 'Late 19th-century anti-colonial thought', selfDescription: 'Critiqued Spanish colonial rule and argued for Filipino civic development, education, and political self-government.', affiliations: ['La Solidaridad reform movement; Filipino civic and reform networks'], traditions: ['Filipino nationalism', 'anti-colonial liberalism', 'reformism'], canonicalUrl: 'https://www.britannica.com/biography/Jose-Rizal', sourceType: 'reference profile', discipline: 'Southeast Asian anti-colonial political thought', confidence: 'documented', works: ['rizal-philippines-century'], profile: profile({ range: [-25, 25], note: 'The essay addresses colonial extraction and development but does not establish a complete economic program.' }, { range: [35, 85], note: 'Education, civic dignity, and opposition to colonial hierarchy support an emancipatory reading, while the nineteenth-century context matters.' }, { range: [-35, 30], note: 'Rizal criticizes arbitrary colonial power and favors civic accountability, but his reformism is not identical to a fully libertarian program.' }, { range: [-20, 60], note: 'Filipino historical and civic identity is developed against colonial subordination without excluding wider international exchange.' }, { range: [10, 55], note: 'The essay critiques imperial domination and looks toward international political change, but it is not a complete foreign-policy doctrine.' }, { range: [-10, 35], note: 'Religious institutions are part of the colonial context, while the political critique is not a program for confessional government.' }), context: 'Rizal broadens the canon into Southeast Asian anti-colonial reform. The English access link is a translation of a Spanish essay and should not be presented as his original wording.', relatedPeople: ['person-gandhi', 'person-nabuco', 'person-freire'],
+  },
+  {
+    id: 'person-sahagun', fullName: 'Bernardino de Sahagún', dates: 'c. 1499–1590', roles: ['friar', 'ethnographer', 'compiler'], region: 'New Spain / Central Mexico', period: '16th-century early colonial period', selfDescription: 'A Franciscan compiler associated with the Florentine Codex, produced with Nahua elders, authors, and artists under colonial conditions.', affiliations: ['Franciscan order; Colegio de Santa Cruz de Tlatelolco'], traditions: ['Nahua knowledge transmission', 'Mexica political history', 'colonial ethnography'], canonicalUrl: 'https://www.britannica.com/biography/Bernardino-de-Sahagun', sourceType: 'reference profile', discipline: 'Mesoamerican history and Indigenous political thought', confidence: 'strongly-supported', works: ['florentine-codex'], profile: profile({ range: [-10, 40], note: 'The codex records tribute, labor, household, and material life but does not provide Sahagún with a modern economic position.' }, { range: [-25, 45], note: 'The source describes social roles and institutions through a layered Nahua and colonial record; it cannot be reduced to the compiler’s personal social doctrine.' }, { range: [20, 70], note: 'The recorded political world includes rulers, offices, councils, tribute, and military organization, while authorship is collaborative and mediated.' }, { range: [25, 80], note: 'The codex is valuable for Nahua/Mexica historical identity but must not be treated as one transparent voice or a timeless “Aztec ideology.”' }, { range: [20, 70], note: 'Warfare, conquest, tribute, and colonial encounter are central to the record; description is not endorsement.' }, { range: [-90, -25], note: 'The work combines Nahua ritual knowledge with a Franciscan and colonial recording context; it is not a simple personal theology.' }), context: 'Sahagún is included as a documented compiler and mediation point, not as a proxy for Nahua political thought. The contributors, languages, images, and colonial setting must remain visible.', relatedPeople: ['person-fanon', 'person-cesaire'],
+  },
 ];
 
 const workTitleById = Object.fromEntries(RESEARCH_WORKS.map((work) => [work.id, work.title]));
@@ -1523,6 +1624,9 @@ const RELIGION_PERSON_PROFILES = {
   'person-freire': { range: [-60, -15], note: 'Christian and liberation-ethical language informs the pedagogy, while dialogical education resists clerical or coercive monopoly over public truth.' },
   'person-luxemburg': { range: [-20, 20], note: 'The political tradition is largely secular and internationalist, though this does not imply hostility to private religious belief.' },
   'person-beauvoir': { range: [-10, 40], note: 'The philosophical critique of gender hierarchy is secular in method, while religious institutions are treated as one historical source of social norms.' },
+  'person-maimonides': { range: [-100, -55], note: 'The cited legal code grounds public kingship and obligation in Torah law; this is a source-specific range, not a verdict on Jewish communities generally.' },
+  'person-rizal': { range: [-10, 35], note: 'Religious institutions are part of the colonial context, while Rizal’s political critique is not a program for confessional government.' },
+  'person-sahagun': { range: [-90, -25], note: 'The Florentine Codex combines Nahua ritual knowledge with a Franciscan and colonial recording context; it is not a simple personal theology.' },
 };
 
 export const RESEARCH_PEOPLE = RAW_RESEARCH_PEOPLE.map((person) => {
@@ -1557,6 +1661,10 @@ export const RESEARCH_RELATIONSHIPS = [
   { from: 'person-weber', to: 'person-rawls', type: 'distinct_from', note: 'Weber analyzes legitimacy and political responsibility sociologically; Rawls offers a normative theory of justice.' },
   { from: 'person-beauvoir', to: 'person-ginsburg', type: 'close_to', note: 'Both illuminate gender equality, but existentialist philosophy and constitutional litigation are different forms of evidence and political practice.' },
   { from: 'person-freire', to: 'person-fanon', type: 'close_to', note: 'Both connect education, subject formation, and liberation to anti-colonial struggle, but their methods and institutional projects differ.' },
+  { from: 'person-maimonides', to: 'person-gandhi', type: 'distinct_from', note: 'Both make religious ethics politically relevant, but Maimonides writes within medieval Jewish law while Gandhi develops anti-colonial ethical self-rule in a modern imperial context.' },
+  { from: 'person-rizal', to: 'person-gandhi', type: 'close_to', note: 'Both critique imperial domination and connect political emancipation to civic formation, while their strategies, periods, and religious contexts differ.' },
+  { from: 'person-sahagun', to: 'florentine-codex', type: 'historically_contextualized', note: 'Sahagún is a compiler and mediation point for a collaborative Nahuatl/Spanish record; he should not stand in for all Nahua contributors or traditions.' },
+  { from: 'florentine-codex', to: 'treaty-waitangi', type: 'distinct_from', note: 'Both require careful reading of Indigenous and colonial layers, but the codex is a sixteenth-century ethnographic record while the treaty is a nineteenth-century constitutional agreement.' },
 ];
 
 export const RESEARCH_POLITICAL_FORMS = [
@@ -1606,28 +1714,28 @@ export const RESEARCH_POLITICAL_FORMS = [
     id: 'religious-covenantal-polity',
     label: 'Religious or covenantal polity',
     description: 'Political membership and public law are anchored in a religious community, moral covenant, sacred history, or theological account of legitimate authority.',
-    workIds: ['augustine-city-of-god', 'constitution-medina', 'al-farabi-virtuous-city', 'al-mawardi-ordinances'],
+    workIds: ['augustine-city-of-god', 'constitution-medina', 'al-farabi-virtuous-city', 'al-mawardi-ordinances', 'maimonides-mishneh-torah'],
     caution: 'The category includes very different arrangements, from theological critique of empire to juridical administration; it is not a single theocracy label.',
   },
   {
     id: 'confederated-customary-governance',
     label: 'Confederated and customary governance',
     description: 'Multiple communities coordinate through councils, kinship, customary law, oral constitutional memory, diplomacy, and layered authority.',
-    workIds: ['great-law-peace', 'manden-charter', 'sunjata-epic', 'tirukkural'],
+    workIds: ['great-law-peace', 'manden-charter', 'sunjata-epic', 'tirukkural', 'treaty-waitangi'],
     caution: 'Oral constitutional traditions are living and community-owned; later transcriptions and translations must not be presented as complete original statutes.',
   },
   {
     id: 'war-making-security-state',
     label: 'War-making and security statecraft',
     description: 'Political order is shaped by military organization, strategic competition, intelligence, territorial defense, conquest, or the need to extract resources for war.',
-    workIds: ['thucydides-peloponnesian-war', 'sunzi-art-of-war', 'machiavelli-prince', 'machiavelli-discourses', 'ashoka-edicts'],
+    workIds: ['thucydides-peloponnesian-war', 'sunzi-art-of-war', 'machiavelli-prince', 'machiavelli-discourses', 'ashoka-edicts', 'florentine-codex'],
     caution: 'A work can analyze war realistically while criticizing it or limiting its use; descriptive strategic analysis is not proof of militarist commitment.',
   },
   {
     id: 'liberal-constitutional-government',
     label: 'Liberal and constitutional government',
     description: 'Government is limited by rights, law, representation, divided powers, individual liberty, or a fiduciary relationship with citizens.',
-    workIds: ['magna-carta-1215', 'locke-second-treatise', 'montesquieu-spirit-laws', 'wollstonecraft-vindication', 'mill-on-liberty'],
+    workIds: ['magna-carta-1215', 'locke-second-treatise', 'montesquieu-spirit-laws', 'wollstonecraft-vindication', 'mill-on-liberty', 'rizal-philippines-century'],
     caution: 'Historical liberalism often coexisted with empire, property exclusions, slavery, gender hierarchy, and restricted citizenship.',
   },
   {
@@ -1664,7 +1772,7 @@ export const RESEARCH_BACKLOG = [
   { id: 'backlog-latin-america', priority: 'medium', title: 'Add more Latin American constitutional and feminist sources', reason: 'Mariátegui and Césaire widen coverage, but do not represent the region’s full diversity.' },
   { id: 'backlog-legal-case-law', priority: 'medium', title: 'Add claim-level court opinions for rights and executive power', reason: 'Constitutional texts alone do not show how legal doctrines operate in practice.' },
   { id: 'backlog-contemporary-parties', priority: 'medium', title: 'Add time-indexed party platforms with versioned datasets', reason: 'Current people and works should be complemented by carefully dated party documents, not assumed from labels.' },
-  { id: 'backlog-classical-remaining', priority: 'high', title: 'Verify remaining classical and oral traditions with linguistic and community reviewers', reason: 'No finite inventory can contain every political text; Southeast Asian, Jewish, African, Indigenous, and Mesoamerican sources still require provenance-aware expansion.' },
+  { id: 'backlog-classical-remaining', priority: 'high', title: 'Verify remaining classical and oral traditions with linguistic and community reviewers', reason: 'This tranche adds Jewish, Southeast Asian, Mesoamerican, and Pacific anchors, but further regional sources, living-language review, provenance checks, and community governance are still required.' },
 ];
 
 function overlaps(range, band) {

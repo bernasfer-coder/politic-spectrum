@@ -120,6 +120,8 @@ const PUBLIC_DOMAIN_CANDIDATE_WORK_IDS = new Set([
   'tocqueville-democracy-america',
   'mill-on-liberty',
   'marx-engels-communist-manifesto',
+  'maimonides-mishneh-torah',
+  'rizal-philippines-century',
 ]);
 
 const OFFICIAL_TEXT_WORK_IDS = new Set([
@@ -127,12 +129,14 @@ const OFFICIAL_TEXT_WORK_IDS = new Set([
   'constitution-india',
   'constitution-south-africa',
   'universal-declaration-human-rights',
+  'treaty-waitangi',
 ]);
 
 const COMMUNITY_CONTROLLED_WORK_IDS = new Set([
   'great-law-peace',
   'manden-charter',
   'sunjata-epic',
+  'florentine-codex',
 ]);
 
 function researchWorkRights(work) {

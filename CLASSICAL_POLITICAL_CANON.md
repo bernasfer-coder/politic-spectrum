@@ -12,7 +12,7 @@ The answer is comparative rather than statistical. The inventory identifies recu
 
 ## Coverage added to the app
 
-The Research Atlas now contains 61 works and legal texts. Forty new anchors were added in this pass, each with an original-language field, period and region, source type, translation/transmission note, review confidence, and at least two claim-level readings. Each claim is an approximate range on one of the six educational axes and includes a locator instead of presenting a modern label as a quotation from the source.
+The Research Atlas now contains 65 works and legal texts plus 24 documented people. Forty-four new anchors were added in this pass, each with an original-language field, period and region, source type, translation/transmission note, review confidence, and at least two claim-level readings. Each claim is an approximate range on one of the six educational axes and includes a locator instead of presenting a modern label as a quotation from the source.
 
 | Tradition or historical setting | Works added | Main political-study use |
 | --- | --- | --- |
@@ -23,6 +23,9 @@ The Research Atlas now contains 61 works and legal texts. Forty new anchors were
 | Ancient South Asia and Buddhism | Ashoka’s edicts; *Manusmriti*; *Tirukkural*; *Aggañña Sutta* | Imperial welfare, religious pluralism, social hierarchy, Tamil statecraft, and non-divine accounts of political origin |
 | Medieval Islamic and Persian political thought | Al-Farabi; Al-Mawardi; Nizam al-Mulk; Ibn Khaldun | Virtuous polity, juridical offices, advice to rulers, taxation, group solidarity, and dynastic change |
 | African and Indigenous constitutional memory | Great Law of Peace; Manden Charter; Sunjata epic | Confederation, oral constitutional transmission, customary law, diplomacy, kinship, legitimacy, and political memory |
+| Jewish legal and political thought | Maimonides, *Mishneh Torah: Kings and Wars* | Halakhic public law, kingship, religious obligation, war classification, and the limits of analogy to modern religious states |
+| Southeast Asian anti-colonial thought | José Rizal, *The Philippines a Century Hence* | Colonial administration, civic education, Filipino identity, reform, and self-government |
+| Mesoamerican and Pacific constitutional history | Florentine Codex; *Te Tiriti o Waitangi* / Treaty of Waitangi | Layered Nahua/Mexica knowledge, colonial mediation, Indigenous authority, treaty translation, and contested sovereignty |
 | Early-modern and Enlightenment Europe/Atlantic world | Machiavelli; Grotius; Hobbes; Locke; Rousseau; Montesquieu; Wollstonecraft; Federalist; Tocqueville; Mill; Marx and Engels | Realism, sovereignty, natural law, social contract, constitutional checks, liberty, equality, federalism, and socialist transformation |
 
 ## Recurring political forms
@@ -74,7 +77,12 @@ The app links to the source record and paraphrases rather than bundling copyrigh
 - [Project Gutenberg: Hobbes, Leviathan](https://www.gutenberg.org/files/3207/3207-h/3207-h)
 - [Project Gutenberg: Rousseau, The Social Contract](https://www.gutenberg.org/files/46333/46333-h/46333-h.htm)
 - [Project Gutenberg: Tocqueville, Democracy in America](https://www.gutenberg.org/files/815/815-h/815-h.htm)
+- [Sefaria: Maimonides, Mishneh Torah, Kings and Wars](https://www.sefaria.org/Mishneh_Torah%2C_Kings_and_Wars)
+- [Project Gutenberg: José Rizal, The Philippines a Century Hence](https://www.gutenberg.org/files/35899/35899-h/h.htm)
+- [Getty Research Institute: Digital Florentine Codex](https://florentinecodex.getty.edu/)
+- [NZ History: Treaty of Waitangi, Māori text](https://nzhistory.govt.nz/politics/treaty/read-the-treaty/maori-text)
+- [NZ History: Treaty of Waitangi, English text](https://nzhistory.govt.nz/politics/treaty/read-the-treaty/english-text)
 
 ## Remaining work
 
-This is a defensible classical comparative canon, not a literal list of every political text ever coined or transmitted. The open backlog remains part of the product: add community-reviewed Indigenous material; expand African and Islamic legal-political schools; include more Jewish, Southeast Asian, Mesoamerican, Pacific, and women’s political traditions; add court opinions and administrative records; and verify translations, dating, provenance, and rights before any direct quotation is published.
+This is a defensible classical comparative canon, not a literal list of every political text ever coined or transmitted. This pass adds source-controlled anchors from Jewish, Southeast Asian, Mesoamerican, and Pacific history, but the open backlog remains part of the product: add community-reviewed Indigenous material; expand African and Islamic legal-political schools; include more regional and women’s political traditions; add court opinions and administrative records; and verify translations, dating, provenance, and rights before any direct quotation is published. The Florentine Codex and Treaty of Waitangi are deliberately marked as layered or contested sources: their languages, contributors, custodians, and translation differences must remain visible.
