@@ -63,22 +63,28 @@ function getBand(dimensionId, value) {
   return bands.find((band) => value >= band.min && value <= band.max) || bands[bands.length - 1];
 }
 
-const PROFILE_GRID_COLUMNS = [
-  { id: 'collectivist', label: 'Collectivist / left', note: 'More public or common ownership' },
-  { id: 'mixed', label: 'Mixed / center', note: 'Mixed economy or intermediate' },
-  { id: 'market', label: 'Market / right', note: 'More private or market coordination' },
+const PROFILE_GRID_BUCKETS = [
+  { id: 'high', range: '+34 to +100' },
+  { id: 'middle', range: '−33 to +33' },
+  { id: 'low', range: '−100 to −34' },
 ];
 
-const PROFILE_GRID_ROWS = [
-  { id: 'authority', label: 'Authority-centered', note: 'Centralized or hierarchical power' },
-  { id: 'pluralist', label: 'Pluralist / constitutional', note: 'Institutional checks and contestation' },
-  { id: 'libertarian', label: 'Libertarian / decentralized', note: 'Distributed or voluntary power' },
-];
+function getProfileGridBucket(value) {
+  return value > 33 ? 'high' : value < -33 ? 'low' : 'middle';
+}
 
-function getProfileGridCell(archetype) {
-  const economic = archetype.profile.economic > 33 ? 'collectivist' : archetype.profile.economic < -33 ? 'market' : 'mixed';
-  const authority = archetype.profile.authority > 33 ? 'authority' : archetype.profile.authority < -33 ? 'libertarian' : 'pluralist';
-  return `${authority}-${economic}`;
+function getProfileGridCell(archetype, rowDimensionId, columnDimensionId) {
+  return `${getProfileGridBucket(archetype.profile[rowDimensionId])}-${getProfileGridBucket(archetype.profile[columnDimensionId])}`;
+}
+
+function getProfileGridBucketLabel(dimension, bucketId, position) {
+  if (dimension.id === 'economic' && position === 'columns') {
+    return bucketId === 'high' ? 'Collectivist / left' : bucketId === 'low' ? 'Free-market / right' : 'Mixed / center';
+  }
+  if (dimension.id === 'authority' && position === 'rows') {
+    return bucketId === 'high' ? 'Authority-centered' : bucketId === 'low' ? 'Libertarian / decentralized' : 'Pluralist / constitutional';
+  }
+  return bucketId === 'high' ? dimension.high : bucketId === 'low' ? dimension.low : 'Middle / mixed';
 }
 
 function scoreLabel(value, dimension) {
@@ -500,16 +506,22 @@ function BibliographyRecord({ record }) {
 
 function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
   const [profileQuery, setProfileQuery] = useState('');
+  const [columnDimensionId, setColumnDimensionId] = useState('economic');
+  const [rowDimensionId, setRowDimensionId] = useState('authority');
   const [filters, setFilters] = useState({ query: '', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' });
+  const columnDimension = DIMENSIONS.find(({ id }) => id === columnDimensionId) ?? DIMENSIONS[0];
+  const rowDimension = DIMENSIONS.find(({ id }) => id === rowDimensionId) ?? DIMENSIONS[1];
+  const gridColumns = PROFILE_GRID_BUCKETS.map((bucket) => ({ ...bucket, label: getProfileGridBucketLabel(columnDimension, bucket.id, 'columns') }));
+  const gridRows = PROFILE_GRID_BUCKETS.map((bucket) => ({ ...bucket, label: getProfileGridBucketLabel(rowDimension, bucket.id, 'rows') }));
   const visibleProfiles = useMemo(() => {
     const query = profileQuery.trim().toLowerCase();
     if (!query) return ARCHETYPES;
     return ARCHETYPES.filter((archetype) => [archetype.name, archetype.id, archetype.summary, archetype.warning].filter(Boolean).join(' ').toLowerCase().includes(query));
   }, [profileQuery]);
-  const profileGrid = useMemo(() => Object.fromEntries(PROFILE_GRID_ROWS.flatMap((row) => PROFILE_GRID_COLUMNS.map((column) => {
+  const profileGrid = useMemo(() => Object.fromEntries(PROFILE_GRID_BUCKETS.flatMap((row) => PROFILE_GRID_BUCKETS.map((column) => {
     const key = `${row.id}-${column.id}`;
-    return [key, visibleProfiles.filter((archetype) => getProfileGridCell(archetype) === key)];
-  }))), [visibleProfiles]);
+    return [key, visibleProfiles.filter((archetype) => getProfileGridCell(archetype, rowDimensionId, columnDimensionId) === key)];
+  }))), [visibleProfiles, rowDimensionId, columnDimensionId]);
   const filterOptions = useMemo(() => ({
     family: [...new Set(TAXONOMY_LABELS.map(({ family }) => family))].sort(),
     labelType: [...new Set(TAXONOMY_LABELS.map(({ labelType }) => labelType))].sort(),
@@ -534,6 +546,16 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
     setFilters((previous) => ({ ...previous, [key]: value }));
   }
 
+  function updateGridDimension(position, value) {
+    if (position === 'columns') {
+      setColumnDimensionId(value);
+      if (value === rowDimensionId) setRowDimensionId(columnDimensionId);
+      return;
+    }
+    setRowDimensionId(value);
+    if (value === columnDimensionId) setColumnDimensionId(rowDimensionId);
+  }
+
   return (
     <div className="library-view">
       <div className="section-heading-row">
@@ -552,18 +574,23 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
         <label className="profile-search"><span>SEARCH MAIN PROFILES</span><input value={profileQuery} onChange={(event) => setProfileQuery(event.target.value)} placeholder="Try communism, anarcho-capitalism, monarchism..." aria-label="Search main profiles" /></label>
         <span className="profile-count">{visibleProfiles.length} of {ARCHETYPES.length} profiles</span>
       </div>
-      <p className="profile-grid-explainer">A compact 3×3 map: columns use the economic axis, rows use the Authority axis. “Left / center / right” is shown as an economic shorthand, not as a universal judgment of the whole ideology. Select any profile to open its full six-axis explanation.</p>
+      <p className="profile-grid-explainer">Choose two dimensions to compare. Higher values appear at the left and top, while lower values appear at the right and bottom. Change either selector and the profiles will be regrouped immediately.</p>
+      <div className="profile-grid-controls" aria-label="Choose profile map dimensions">
+        <label className="profile-grid-select"><span>HORIZONTAL DIMENSION</span><select value={columnDimensionId} onChange={(event) => updateGridDimension('columns', event.target.value)} aria-label="Horizontal profile map dimension">{DIMENSIONS.map((dimension) => <option key={dimension.id} value={dimension.id}>{dimension.label}</option>)}</select></label>
+        <label className="profile-grid-select"><span>VERTICAL DIMENSION</span><select value={rowDimensionId} onChange={(event) => updateGridDimension('rows', event.target.value)} aria-label="Vertical profile map dimension">{DIMENSIONS.map((dimension) => <option key={dimension.id} value={dimension.id}>{dimension.label}</option>)}</select></label>
+        <div className="profile-grid-selection"><span>COMPARING</span><strong>{columnDimension.label} × {rowDimension.label}</strong></div>
+      </div>
       <div className="profile-grid-wrap">
-        <div className="profile-grid" role="grid" aria-label="Nine-cell political spectrum profile map">
+        <div className="profile-grid" role="grid" aria-label={`Nine-cell political spectrum profile map: ${columnDimension.label} by ${rowDimension.label}`}>
           <div className="profile-grid-header" role="row">
-            <div className="profile-grid-corner" role="columnheader"><span>MAP KEY</span><strong>Authority × economy</strong></div>
-            {PROFILE_GRID_COLUMNS.map((column) => <div className="profile-grid-axis-header" role="columnheader" key={column.id}><strong>{column.label}</strong><small>{column.note}</small></div>)}
+            <div className="profile-grid-corner" role="columnheader"><span>MAP KEY</span><strong>{rowDimension.questionLabel} × {columnDimension.questionLabel}</strong></div>
+            {gridColumns.map((column) => <div className="profile-grid-axis-header" role="columnheader" key={column.id}><strong>{column.label}</strong><small>{column.range}</small></div>)}
           </div>
           <div className="profile-grid-body">
-            {PROFILE_GRID_ROWS.map((row) => <div className="profile-grid-row" role="row" key={row.id}>
-              <div className="profile-grid-row-label" role="rowheader"><strong>{row.label}</strong><small>{row.note}</small></div>
+            {gridRows.map((row) => <div className="profile-grid-row" role="row" key={row.id}>
+              <div className="profile-grid-row-label" role="rowheader"><strong>{row.label}</strong><small>{row.range}</small></div>
               <div className="profile-grid-row-cells">
-                {PROFILE_GRID_COLUMNS.map((column) => {
+                {gridColumns.map((column) => {
                   const cellProfiles = profileGrid[`${row.id}-${column.id}`];
                   return <div className="profile-grid-cell" role="gridcell" key={column.id}>
                     <div className="profile-grid-cell-heading"><span>{cellProfiles.length} {cellProfiles.length === 1 ? 'profile' : 'profiles'}</span><b>↘</b></div>

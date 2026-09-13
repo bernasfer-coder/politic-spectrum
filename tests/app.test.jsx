@@ -116,6 +116,17 @@ describe('primary user flows', () => {
     const selectedReference = screen.getByText('SELECTED REFERENCE');
     const profileMap = screen.getByRole('grid', { name: /Nine-cell political spectrum profile map/i });
     expect(selectedReference.compareDocumentPosition(profileMap) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    const horizontalDimension = screen.getByRole('combobox', { name: /Horizontal profile map dimension/i });
+    const verticalDimension = screen.getByRole('combobox', { name: /Vertical profile map dimension/i });
+    expect(horizontalDimension).toHaveValue('economic');
+    expect(verticalDimension).toHaveValue('authority');
+    const communistCellBefore = screen.getByRole('button', { name: /Communist \/ Marxist-Leninist/i }).closest('[role="gridcell"]');
+    await user.selectOptions(horizontalDimension, 'social');
+    expect(horizontalDimension).toHaveValue('social');
+    expect(screen.getByRole('grid', { name: /Social values by Authority/i })).toBeInTheDocument();
+    expect(screen.getByRole('columnheader', { name: /Social values/i })).toBeInTheDocument();
+    const communistCellAfter = screen.getByRole('button', { name: /Communist \/ Marxist-Leninist/i }).closest('[role="gridcell"]');
+    expect(communistCellAfter).not.toBe(communistCellBefore);
     expect(screen.getAllByRole('gridcell')).toHaveLength(9);
     expect(screen.getByRole('button', { name: /Communist \/ Marxist-Leninist/i })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Anarcho-capitalist/i })).toBeInTheDocument();
