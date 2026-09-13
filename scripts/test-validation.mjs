@@ -45,8 +45,9 @@ assert.equal(m7Models.length, CANDIDATE_FACETS.length, 'M7 must test every remai
 assert.equal(m8Models.length, (CANDIDATE_FACETS.length * (CANDIDATE_FACETS.length - 1)) / 2, 'M8 must contain every preregistered candidate-facet pair');
 assert.equal(VALIDATION_MODEL_DEFINITIONS.filter(({ family }) => family === 'M6-plus-facets').length, 1, 'core-plus-facets must be represented once');
 assert.equal(new Set(modelIds).size, modelIds.length, 'validation model IDs must be unique');
-assert.equal(VALIDATION_STATUS.coreModel, '6d-v1', 'the public baseline must be 6d-v1');
-assert.equal(VALIDATION_STATUS.previousCoreModel, '5d-v1', 'the previous five-axis baseline must remain available for comparison');
+assert.equal(VALIDATION_STATUS.coreModel, '6d-v2', 'the public baseline must be 6d-v2');
+assert.equal(VALIDATION_STATUS.previousCoreModel, '6d-v1', 'the previous six-axis baseline must remain available for comparison');
+assert.equal(VALIDATION_STATUS.legacyCoreModel, '5d-v1', 'the previous five-axis baseline must remain available for comparison');
 assert.equal(VALIDATION_STATUS.empiricalStatus, 'not-run', 'the repository must not imply that participant validation has occurred');
 assert.match(VALIDATION_STATUS.evidenceBoundary, /cannot establish reliability/i);
 

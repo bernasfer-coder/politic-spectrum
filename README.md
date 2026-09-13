@@ -31,7 +31,7 @@ The same library now contains a Research Atlas. It separates primary works and l
 
 The researched taxonomy divides every axis into ten 20-point bands, from -100 to +100. Each band has its own descriptive tendency and related political families; the six band labels are kept independent so mixed positions remain visible.
 
-The taxonomy draws on the Stanford Encyclopedia of Philosophy, the World Values Survey, V-Dem’s democracy indices, the Chapel Hill Expert Survey, the Manifesto Project, and comparative foreign-policy research. The app links to these references in its in-page “Researched taxonomy” guide. Score direction is intentionally standardized: −100 means free-market, traditionalist, nationalist, and interventionist on the four reoriented axes; +100 means collectivist, progressive, internationalist, and pacifist/restraint. Authority remains libertarian (−100) to authoritarian (+100).
+The taxonomy draws on the Stanford Encyclopedia of Philosophy, the World Values Survey, V-Dem’s democracy indices, the Chapel Hill Expert Survey, the Manifesto Project, and comparative foreign-policy research. The app links to these references in its in-page “Researched taxonomy” guide. Score direction is intentionally standardized: −100 means free-market, traditionalist, nationalist, interventionist, and religiously grounded law on the five reoriented axes; +100 means collectivist, progressive, internationalist, pacifist/restraint, and secular public law. Authority remains libertarian (−100) to authoritarian (+100).
 
 Content is intentionally framed as approximate and educational: a person, country, state, or city cannot be reduced to six numbers, and the historical fascist/Nazi-like pattern is included only for analysis and historical context.
 

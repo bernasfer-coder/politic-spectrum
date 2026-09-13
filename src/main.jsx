@@ -81,9 +81,9 @@ function EvidenceLinks({ citationIds = [], compact = false }) {
   </div>;
 }
 
-const QUESTIONNAIRE_CACHE_KEY = 'politic-spectrum:questionnaire:v3';
-const LEGACY_QUESTIONNAIRE_CACHE_KEYS = ['politic-spectrum:questionnaire:v2', 'politic-spectrum:questionnaire:v1'];
-const QUESTIONNAIRE_CACHE_VERSION = 3;
+const QUESTIONNAIRE_CACHE_KEY = 'politic-spectrum:questionnaire:v4';
+const LEGACY_QUESTIONNAIRE_CACHE_KEYS = ['politic-spectrum:questionnaire:v3', 'politic-spectrum:questionnaire:v2', 'politic-spectrum:questionnaire:v1'];
+const QUESTIONNAIRE_CACHE_VERSION = 4;
 
 function loadQuestionnaireCache() {
   if (typeof window === 'undefined') return null;
@@ -98,7 +98,7 @@ function loadQuestionnaireCache() {
           return null;
         }
       })
-      .find((entry) => entry?.version === QUESTIONNAIRE_CACHE_VERSION || entry?.version === 2 || entry?.version === 1);
+      .find((entry) => entry?.version === QUESTIONNAIRE_CACHE_VERSION || entry?.version === 3 || entry?.version === 2 || entry?.version === 1);
     if (!stored || !stored.answers || typeof stored.answers !== 'object') return null;
     const validQuestionIds = new Set(QUESTIONS.map(({ id }) => id));
     const answers = Object.fromEntries(Object.entries(stored.answers).filter(([id, value]) => validQuestionIds.has(id) && OPTION_VALUES.includes(value)));

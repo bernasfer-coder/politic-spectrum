@@ -27,7 +27,7 @@ The current six dimensions use the following score orientation (the endpoints ar
 3. **Authority:** decentralized/libertarian <-> rule-of-law institutionalism <-> authoritarian/totalizing.
 4. **National identity:** nationalist/ethnonationalist <-> civic patriotism <-> cosmopolitan/pluralist.
 5. **Foreign policy:** interventionist/militarist/expansionist <-> multilateral security <-> restraint/non-intervention.
-6. **Religion in public life:** secular public law/neutrality <-> pluralist accommodation <-> religiously grounded law.
+6. **Religion in public life:** religiously grounded law <-> pluralist accommodation <-> secular public law/neutrality.
 
 The Authority axis is intentionally not reoriented. The sign convention is a product choice that keeps the four requested endpoints consistent across Questionnaire, FreeMode, Spectrum Library, cached results, and documentation; it does not make either endpoint morally superior or imply that a person at one endpoint belongs to a complete ideology.
 

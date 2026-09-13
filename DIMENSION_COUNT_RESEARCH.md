@@ -4,7 +4,7 @@ Research snapshot: 2026-09-12; implementation amendment: 2026-09-13. This is a r
 
 ## Implementation amendment
 
-The earlier 5D product decision is now superseded for the public experience. Religion in public life has been added as `dimension 06`, with five questionnaire items and ten descriptive bands. The app now uses `6d-v1`; `5d-v1` remains in the validation registry as a legacy comparator so the addition can be tested rather than assumed to improve the model.
+The earlier 5D product decision is now superseded for the public experience. Religion in public life has been added as `dimension 06`, with five questionnaire items and ten descriptive bands. The app now uses `6d-v2`, where secular public law is positive; `6d-v1` and `5d-v1` remain in the validation registry as legacy comparators so the sign change and dimension addition can be tested rather than assumed to improve the model.
 
 ## Preliminary conclusion
 

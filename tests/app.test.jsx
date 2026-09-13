@@ -19,7 +19,7 @@ import {
   SPECTRUM_BANDS,
 } from '../src/content/index.js';
 
-const CACHE_KEY = 'politic-spectrum:questionnaire:v3';
+const CACHE_KEY = 'politic-spectrum:questionnaire:v4';
 
 beforeEach(() => {
   window.localStorage.clear();
@@ -70,7 +70,7 @@ describe('questionnaire persistence', () => {
 
   it('saves a partial cache and removes it when answers are reset', () => {
     saveQuestionnaireCache({ [QUESTIONS[0].id]: OPTION_VALUES[3] }, 1);
-    expect(JSON.parse(window.localStorage.getItem(CACHE_KEY))).toMatchObject({ version: 3, questionIndex: 1 });
+    expect(JSON.parse(window.localStorage.getItem(CACHE_KEY))).toMatchObject({ version: 4, questionIndex: 1 });
     saveQuestionnaireCache({}, 0);
     expect(window.localStorage.getItem(CACHE_KEY)).toBeNull();
   });

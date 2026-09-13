@@ -83,7 +83,7 @@ export const RESEARCH_WORKS = [
     claims: [
       claim('analects-moral-rule', 'authority', [25, 70], 'primary-text reading', 'Political legitimacy is tied to cultivated conduct, exemplary leadership, and the ordering of social roles rather than only to coercive power.', 'Analects 2.1–2.3; 12.11–12.19'),
       claim('analects-tradition', 'social', [-70, -10], 'primary-text reading', 'Filial piety, ritual, learning, and inherited roles are central themes, although later interpretations disagree about how flexible or reformist the tradition is.', 'Analects 1.2; 2.3; 12.1–12.2'),
-      claim('analects-ritual-public-order', 'religion', [35, 85], 'primary-text reading', 'Ritual and inherited moral practice inform legitimate public order, but the text does not establish a modern clerical state or one fixed theology.', 'Analects 1.12; 2.3; 3.12; 12.1–12.2'),
+      claim('analects-ritual-public-order', 'religion', [-85, -35], 'primary-text reading', 'Ritual and inherited moral practice inform legitimate public order, but the text does not establish a modern clerical state or one fixed theology.', 'Analects 1.12; 2.3; 3.12; 12.1–12.2'),
     ],
   },
   {
@@ -130,7 +130,7 @@ export const RESEARCH_WORKS = [
     claims: [
       claim('gandhi-hind-swaraj-self-rule', 'authority', [-75, -20], 'primary-text reading', 'Swaraj is presented as ethical self-rule and disciplined collective action, with resistance to domination rather than a simple rejection of all social authority.', 'Chapters VI–XVII'),
       claim('gandhi-hind-swaraj-economy', 'economic', [-35, 20], 'primary-text reading', 'The critique of industrial civilization and preference for self-sufficient, decentralized production place the work away from both laissez-faire capitalism and centralized state socialism.', 'Chapters VI, XIII, XIX'),
-      claim('gandhi-hind-swaraj-religious-ethics', 'religion', [35, 90], 'primary-text reading', 'Ethical and spiritual self-rule are central to the argument, while religious authority is presented through conscience and nonviolence rather than a simple clerical state.', 'Chapters IV–XVII'),
+      claim('gandhi-hind-swaraj-religious-ethics', 'religion', [-90, -35], 'primary-text reading', 'Ethical and spiritual self-rule are central to the argument, while religious authority is presented through conscience and nonviolence rather than a simple clerical state.', 'Chapters IV–XVII'),
     ],
   },
   {
@@ -637,7 +637,7 @@ export const RESEARCH_WORKS = [
     claims: [
       claim('augustine-two-cities', 'identity', [35, 95], 'primary theological reading', 'The distinction between earthly and heavenly cities relativizes political identities while still treating earthly peace and order as significant goods.', 'Books XIV–XIX'),
       claim('augustine-political-order', 'authority', [20, 80], 'primary theological reading', 'Political rule is interpreted through sin, coercion, peace, and moral limits, producing neither simple theocracy nor modern secular separation.', 'Books XIX–XXII'),
-      claim('augustine-religious-political-order', 'religion', [40, 95], 'primary theological reading', 'The work treats Christian theology as a framework for judging earthly political order, while refusing to identify any earthly state completely with the heavenly city.', 'Books XIX–XXII'),
+      claim('augustine-religious-political-order', 'religion', [-95, -40], 'primary theological reading', 'The work treats Christian theology as a framework for judging earthly political order, while refusing to identify any earthly state completely with the heavenly city.', 'Books XIX–XXII'),
     ],
   },
   {
@@ -684,7 +684,7 @@ export const RESEARCH_WORKS = [
     claims: [
       claim('aquinas-common-good', 'authority', [30, 85], 'primary scholastic reading', 'Rule is justified by the common good and can be corrupted into tyranny; the treatise therefore combines hierarchy with normative limits.', 'Books I–II'),
       claim('aquinas-law-order', 'social', [-35, 20], 'primary scholastic reading', 'Political and social order are embedded in a teleological moral hierarchy rather than in modern individual equality or unlimited state command.', 'Books I–II'),
-      claim('aquinas-spiritual-temporal-authority', 'religion', [55, 95], 'primary scholastic reading', 'The political order is interpreted through natural and divine law, with a differentiated but connected relationship between secular rule and spiritual authority.', 'Books I–II; treatise on law and kingship'),
+      claim('aquinas-spiritual-temporal-authority', 'religion', [-95, -55], 'primary scholastic reading', 'The political order is interpreted through natural and divine law, with a differentiated but connected relationship between secular rule and spiritual authority.', 'Books I–II; treatise on law and kingship'),
     ],
   },
   {
@@ -731,7 +731,7 @@ export const RESEARCH_WORKS = [
     claims: [
       claim('medina-pact', 'identity', [20, 85], 'contextual source reading', 'The document organizes multiple groups through a political pact while retaining differentiated communal identities, making it a key case of layered membership.', 'Clauses on the umma, allied groups, blood-wit, and mutual defense'),
       claim('medina-authority', 'authority', [30, 85], 'contextual source reading', 'Arbitration and security are concentrated around the Prophet’s authority, but the pact is not equivalent to a modern centralized state constitution.', 'Clauses on dispute settlement and protection'),
-      claim('medina-religious-community', 'religion', [55, 95], 'contextual source reading', 'Religious community and political pact are closely connected, while the document’s differentiated membership prevents a simple equation with a modern theocracy.', 'Clauses on the umma, Jews, allies, and religious obligations'),
+      claim('medina-religious-community', 'religion', [-95, -55], 'contextual source reading', 'Religious community and political pact are closely connected, while the document’s differentiated membership prevents a simple equation with a modern theocracy.', 'Clauses on the umma, Jews, allies, and religious obligations'),
     ],
   },
   {
@@ -916,7 +916,7 @@ export const RESEARCH_WORKS = [
     claims: [
       claim('ashoka-dhamma', 'social', [20, 70], 'primary inscription reading', 'The edicts promote welfare, restraint, respect across religious communities, and ethical conduct through imperial communication and officials.', 'Major Rock Edicts I–XII; Pillar Edicts'),
       claim('ashoka-conquest', 'foreign', [45, 100], 'primary inscription reading', 'The account of Kalinga and the turn toward dhamma-vijaya provide unusually direct evidence of an imperial ruler publicly privileging moral persuasion over further conquest.', 'Major Rock Edict XIII'),
-      claim('ashoka-religious-pluralism', 'religion', [20, 65], 'primary inscription reading', 'The edicts publicly promote respect among religious communities and state-supported ethical conduct without reducing dhamma to exclusive clerical rule.', 'Major Rock Edicts VII–XII'),
+      claim('ashoka-religious-pluralism', 'religion', [-65, -20], 'primary inscription reading', 'The edicts publicly promote respect among religious communities and state-supported ethical conduct without reducing dhamma to exclusive clerical rule.', 'Major Rock Edicts VII–XII'),
     ],
   },
   {
@@ -940,7 +940,7 @@ export const RESEARCH_WORKS = [
     claims: [
       claim('manu-social-hierarchy', 'social', [-90, -20], 'primary normative reading', 'The text explicitly organizes social and gender relations through ranked duties and inherited status, making hierarchy central to its normative order.', 'Books I, III, VIII, IX'),
       claim('manu-king-law', 'authority', [50, 95], 'primary normative reading', 'Kingship, punishment, and legal adjudication are treated as necessary to uphold dharma, while the king remains embedded in a broader religious-legal hierarchy.', 'Book VII; Book VIII'),
-      claim('manu-dharmic-law', 'religion', [65, 100], 'primary normative reading', 'Public duties, status, kingship, and law are embedded in a religious-legal order described as dharma rather than in a secular public-law framework.', 'Books I, VII, VIII'),
+      claim('manu-dharmic-law', 'religion', [-100, -65], 'primary normative reading', 'Public duties, status, kingship, and law are embedded in a religious-legal order described as dharma rather than in a secular public-law framework.', 'Books I, VII, VIII'),
     ],
   },
   {
@@ -1033,7 +1033,7 @@ export const RESEARCH_WORKS = [
     claims: [
       claim('mawardi-offices', 'authority', [50, 95], 'primary legal reading', 'The treatise orders political offices and legal functions through a strongly juridical hierarchy with delegated but ultimately unified authority.', 'Chapters on the imamate, judges, governors, and public offices'),
       claim('mawardi-community', 'identity', [30, 90], 'primary legal reading', 'Political membership is framed through the religious community and its legal order rather than through modern territorial nationalism.', 'Chapters on imamate, public interest, and communal duties'),
-      claim('mawardi-religious-law', 'religion', [70, 100], 'primary legal reading', 'The imamate and public offices are defined through Islamic legal authority, making religion constitutive of the political order rather than merely a private belief.', 'Chapters on the imamate, judges, and public offices'),
+      claim('mawardi-religious-law', 'religion', [-100, -70], 'primary legal reading', 'The imamate and public offices are defined through Islamic legal authority, making religion constitutive of the political order rather than merely a private belief.', 'Chapters on the imamate, judges, and public offices'),
     ],
   },
   {
@@ -1503,26 +1503,26 @@ const RAW_RESEARCH_PEOPLE = [
 const workTitleById = Object.fromEntries(RESEARCH_WORKS.map((work) => [work.id, work.title]));
 
 const RELIGION_PERSON_PROFILES = {
-  'person-plato': { range: [-10, 35], note: 'Religion and civic education are intertwined in the dialogue’s political imagination, but it is not a modern doctrine of religious government.' },
-  'person-aristotle': { range: [-10, 30], note: 'The tradition is compatible with civic religious practice, but the surviving political work does not establish a single public-law position on religion.' },
-  'person-confucius': { range: [40, 85], note: 'Ritual, ancestral practice, moral cultivation, and legitimate rule are closely linked, although later Confucian traditions differ on religious authority.' },
-  'person-kautilya': { range: [10, 55], note: 'The statecraft tradition incorporates ritual and normative order, but its administrative reasoning is not reducible to clerical rule.' },
-  'person-gandhi': { range: [35, 90], note: 'Religious ethics and spiritual self-rule are central to his political vocabulary, while he also defended interfaith coexistence and criticized coercive conversion.' },
-  'person-dubois': { range: [-10, 35], note: 'Religious institutions and Black social ethics matter in his historical analysis, but equal citizenship and political organization are not grounded in one state religion.' },
-  'person-fanon': { range: [-15, 40], note: 'Religion appears within anti-colonial identity and critique, but liberation is not presented as one uniform confessional state project.' },
-  'person-rawls': { range: [-45, -5], note: 'Public reason and equal citizenship constrain the use of specifically religious authority in coercive law, while personal faith remains protected.' },
+  'person-plato': { range: [-35, 10], note: 'Religion and civic education are intertwined in the dialogue’s political imagination, but it is not a modern doctrine of religious government.' },
+  'person-aristotle': { range: [-30, 10], note: 'The tradition is compatible with civic religious practice, but the surviving political work does not establish a single public-law position on religion.' },
+  'person-confucius': { range: [-85, -40], note: 'Ritual, ancestral practice, moral cultivation, and legitimate rule are closely linked, although later Confucian traditions differ on religious authority.' },
+  'person-kautilya': { range: [-55, -10], note: 'The statecraft tradition incorporates ritual and normative order, but its administrative reasoning is not reducible to clerical rule.' },
+  'person-gandhi': { range: [-90, -35], note: 'Religious ethics and spiritual self-rule are central to his political vocabulary, while he also defended interfaith coexistence and criticized coercive conversion.' },
+  'person-dubois': { range: [-35, 10], note: 'Religious institutions and Black social ethics matter in his historical analysis, but equal citizenship and political organization are not grounded in one state religion.' },
+  'person-fanon': { range: [-40, 15], note: 'Religion appears within anti-colonial identity and critique, but liberation is not presented as one uniform confessional state project.' },
+  'person-rawls': { range: [5, 45], note: 'Public reason and equal citizenship constrain the use of specifically religious authority in coercive law, while personal faith remains protected.' },
   'person-sen': { range: [-25, 25], note: 'Public reasoning and pluralism are central, but the capability approach does not prescribe a complete religion–state settlement.' },
-  'person-ostrom': { range: [-15, 25], note: 'Commons governance is institutionally pluralist and locally adaptable; it does not determine whether a community is religious or secular.' },
-  'person-weber': { range: [-10, 35], note: 'Religion is central to Weber’s analysis of legitimacy and social change, but his sociology is not a straightforward program for religious government.' },
-  'person-ambedkar': { range: [-55, -5], note: 'Constitutional equality and opposition to caste hierarchy support secular public law, despite the importance of religious critique and conversion in his life.' },
-  'person-mandela': { range: [-15, 35], note: 'Religious organizations participated in anti-apartheid politics, while the constitutional settlement emphasized non-racial citizenship rather than confessional rule.' },
-  'person-king': { range: [25, 75], note: 'Christian social ethics directly informed public activism, but the democratic vision sought equal citizenship rather than a Christian state.' },
-  'person-mariategui': { range: [-10, 35], note: 'He analyzed religion as a living social force within Indigenous and class politics without reducing socialism to either secular dismissal or clerical rule.' },
-  'person-cesaire': { range: [-10, 35], note: 'Religious and cultural identity form part of the anti-colonial context, but the political project is not a program for confessional government.' },
-  'person-nabuco': { range: [10, 55], note: 'Abolitionist and constitutional arguments developed within a Christian-monarchical society, but the record does not establish a theocratic program.' },
-  'person-freire': { range: [15, 60], note: 'Christian and liberation-ethical language informs the pedagogy, while dialogical education resists clerical or coercive monopoly over public truth.' },
+  'person-ostrom': { range: [-25, 15], note: 'Commons governance is institutionally pluralist and locally adaptable; it does not determine whether a community is religious or secular.' },
+  'person-weber': { range: [-35, 10], note: 'Religion is central to Weber’s analysis of legitimacy and social change, but his sociology is not a straightforward program for religious government.' },
+  'person-ambedkar': { range: [5, 55], note: 'Constitutional equality and opposition to caste hierarchy support secular public law, despite the importance of religious critique and conversion in his life.' },
+  'person-mandela': { range: [-35, 15], note: 'Religious organizations participated in anti-apartheid politics, while the constitutional settlement emphasized non-racial citizenship rather than confessional rule.' },
+  'person-king': { range: [-75, -25], note: 'Christian social ethics directly informed public activism, but the democratic vision sought equal citizenship rather than a Christian state.' },
+  'person-mariategui': { range: [-35, 10], note: 'He analyzed religion as a living social force within Indigenous and class politics without reducing socialism to either secular dismissal or clerical rule.' },
+  'person-cesaire': { range: [-35, 10], note: 'Religious and cultural identity form part of the anti-colonial context, but the political project is not a program for confessional government.' },
+  'person-nabuco': { range: [-55, -10], note: 'Abolitionist and constitutional arguments developed within a Christian-monarchical society, but the record does not establish a theocratic program.' },
+  'person-freire': { range: [-60, -15], note: 'Christian and liberation-ethical language informs the pedagogy, while dialogical education resists clerical or coercive monopoly over public truth.' },
   'person-luxemburg': { range: [-20, 20], note: 'The political tradition is largely secular and internationalist, though this does not imply hostility to private religious belief.' },
-  'person-beauvoir': { range: [-40, 10], note: 'The philosophical critique of gender hierarchy is secular in method, while religious institutions are treated as one historical source of social norms.' },
+  'person-beauvoir': { range: [-10, 40], note: 'The philosophical critique of gender hierarchy is secular in method, while religious institutions are treated as one historical source of social norms.' },
 };
 
 export const RESEARCH_PEOPLE = RAW_RESEARCH_PEOPLE.map((person) => {

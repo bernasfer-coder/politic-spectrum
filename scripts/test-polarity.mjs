@@ -20,7 +20,7 @@ const expectedEndpoints = {
   authority: ['Libertarian', 'Authoritarian'],
   identity: ['Nationalist', 'Internationalist'],
   foreign: ['Interventionist', 'Pacifist / restraint'],
-  religion: ['Secular public law', 'Religiously grounded law'],
+  religion: ['Religiously grounded law', 'Secular public law'],
 };
 
 for (const [id, [low, high]] of Object.entries(expectedEndpoints)) {
@@ -28,7 +28,7 @@ for (const [id, [low, high]] of Object.entries(expectedEndpoints)) {
   assert(dimensions[id]?.high === high, `${id} must use ${high} at +100`);
 }
 
-assert(JSON.stringify([...FLIPPED_DIMENSION_IDS].sort()) === JSON.stringify(['economic', 'foreign', 'identity', 'social']), 'Only the four requested dimensions may be flipped');
+assert(JSON.stringify([...FLIPPED_DIMENSION_IDS].sort()) === JSON.stringify(['economic', 'foreign', 'identity', 'religion', 'social']), 'Only the five requested dimensions may be flipped');
 
 const expectedPolarities = {
   economic: [1, 1, -1, 1, -1],
@@ -36,7 +36,7 @@ const expectedPolarities = {
   authority: [1, -1, 1, -1, 1],
   identity: [-1, 1, -1, 1, -1],
   foreign: [-1, 1, 1, -1, 1],
-  religion: [1, -1, -1, 1, 1],
+  religion: [-1, 1, 1, -1, -1],
 };
 
 for (const [dimensionId, expected] of Object.entries(expectedPolarities)) {
@@ -49,7 +49,7 @@ for (const [id, expectedLow, expectedHigh] of [
   ['social', 'Hard traditionalist', 'Revolutionary emancipatory'],
   ['identity', 'Exclusionary ethnonationalist tendency', 'Cosmopolitan / post-national'],
   ['foreign', 'Militarist / expansionist tendency', 'Pacifist / non-interventionist'],
-  ['religion', 'Militant secularist', 'Theocratic / clerical-authoritarian'],
+  ['religion', 'Theocratic / clerical-authoritarian', 'Militant secularist'],
 ]) {
   assert(SPECTRUM_BANDS[id].bands[0].label === expectedLow, `${id} low band was not reversed`);
   assert(SPECTRUM_BANDS[id].bands.at(-1).label === expectedHigh, `${id} high band was not reversed`);

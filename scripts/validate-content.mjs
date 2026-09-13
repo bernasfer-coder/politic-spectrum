@@ -104,7 +104,7 @@ for (const questionId of questionSet) {
     assert(Boolean(audit.concern) && Boolean(audit.futureAction), `Question ${questionId} validation audit is incomplete`);
   }
 }
-assert(VALIDATION_STATUS.coreModel === '6d-v1', 'Validation registry must use the 6d-v1 core');
+assert(VALIDATION_STATUS.coreModel === '6d-v2', 'Validation registry must use the 6d-v2 core');
 assert(VALIDATION_STATUS.empiricalStatus === 'not-run', 'Validation registry must not imply that participant validation has occurred');
 assert(VALIDATION_MODEL_DEFINITIONS.length > 0, 'Validation registry must contain model definitions');
 for (const model of VALIDATION_MODEL_DEFINITIONS) {

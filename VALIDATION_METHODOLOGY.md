@@ -2,7 +2,7 @@
 
 ## Amendment: Religion promoted to the current core
 
-On 13 September 2026, Religion in public life was promoted from a candidate facet to the sixth public dimension because religious authority, secular neutrality, and the relationship between religious reasons and coercive law cannot always be recovered precisely from the existing social or authority axes. The former `5d-v1` model remains registered as a legacy comparator; the current product baseline is `6d-v1`. This is a didactic design decision and remains empirically unvalidated.
+On 13 September 2026, Religion in public life was promoted from a candidate facet to the sixth public dimension because religious authority, secular neutrality, and the relationship between religious reasons and coercive law cannot always be recovered precisely from the existing social or authority axes. The former `5d-v1` model remains registered as a legacy comparator. After the sign convention was inverted so secular public law is positive, the current product baseline became `6d-v2`; `6d-v1` remains a legacy six-axis comparator. This is a didactic design decision and remains empirically unvalidated.
 
 ## Decision summary
 

@@ -105,12 +105,21 @@ const M5_MODEL = {
 };
 
 const M6_MODEL = {
-  id: '6d-v1',
+  id: '6d-v2',
   family: 'M6',
   axisIds: [...CORE_DIMENSION_IDS],
   facetIds: [],
-  purpose: 'Current didactic product model: the five original axes plus Religion in public life.',
+  purpose: 'Current didactic product model: the five original axes plus Religion in public life, with secular public law oriented positive.',
   status: 'current product baseline; empirical validation not run',
+};
+
+const M6_LEGACY_MODEL = {
+  id: '6d-v1',
+  family: 'M6-legacy',
+  axisIds: [...CORE_DIMENSION_IDS],
+  facetIds: [],
+  purpose: 'Legacy six-axis comparator using the former Religion sign convention.',
+  status: 'legacy comparator; superseded by 6d-v2',
 };
 
 const M7_MODELS = CANDIDATE_FACETS.map((facet) => ({
@@ -133,6 +142,7 @@ const M8_MODELS = CANDIDATE_FACETS.flatMap((left, leftIndex) => CANDIDATE_FACETS
 
 const VALIDATION_MODEL_DEFINITIONS = [
   M5_MODEL,
+  M6_LEGACY_MODEL,
   M6_MODEL,
   ...M7_MODELS,
   ...M8_MODELS,
@@ -149,7 +159,8 @@ const VALIDATION_MODEL_DEFINITIONS = [
 const VALIDATION_STATUS = {
   planVersion: VALIDATION_PLAN_VERSION,
   coreModel: M6_MODEL.id,
-  previousCoreModel: M5_MODEL.id,
+  previousCoreModel: M6_LEGACY_MODEL.id,
+  legacyCoreModel: M5_MODEL.id,
   empiricalStatus: 'not-run',
   evidenceBoundary: 'Synthetic or randomly generated answers may exercise code paths but cannot establish reliability, validity, comprehension, invariance, or incremental value. The public 6D model remains an educational hypothesis.',
   nextEvidence: 'Compare the legacy 5D and current 6D models using preregistered cognitive interviews and a consented, privacy-safe participant pilot before adding further axes.',

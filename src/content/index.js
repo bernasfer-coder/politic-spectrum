@@ -63,14 +63,14 @@ const DIMENSIONS = [
     id: 'religion',
     index: '06',
     label: 'Religion in public life',
-    low: 'Secular public law',
-    high: 'Religiously grounded law',
+    low: 'Religiously grounded law',
+    high: 'Secular public law',
     questionLabel: 'Religion',
     description: 'How much should religious authorities, revelation, or religious moral traditions shape public law and institutions?',
   },
 ];
 
-const FLIPPED_DIMENSION_IDS = ['economic', 'social', 'identity', 'foreign'];
+const FLIPPED_DIMENSION_IDS = ['economic', 'social', 'identity', 'foreign', 'religion'];
 const FLIPPED_DIMENSION_SET = new Set(FLIPPED_DIMENSION_IDS);
 const DEFAULT_SCORES = Object.fromEntries(DIMENSIONS.map(({ id }) => [id, 0]));
 const OPTION_VALUES = [-100, -50, 0, 50, 100];
@@ -207,11 +207,11 @@ const QUESTIONS = [
   { id: 'foreign-3', dimension: 'foreign', prompt: 'Diplomacy and trade are usually preferable to coercive force.', polarity: 1 },
   { id: 'foreign-4', dimension: 'foreign', prompt: 'Military force can be justified to stop mass atrocities even without a direct national interest.', polarity: -1 },
   { id: 'foreign-5', dimension: 'foreign', prompt: 'Defense policy should prioritize deterrence and territorial protection over attempts to remake other countries.', polarity: 1 },
-  { id: 'religion-1', dimension: 'religion', prompt: 'Religious authorities should have a formal role in shaping public law.', polarity: 1 },
-  { id: 'religion-2', dimension: 'religion', prompt: 'The state should remain neutral among religions and nonbeliefs.', polarity: -1 },
-  { id: 'religion-3', dimension: 'religion', prompt: 'Civil law should take precedence over religious law when the two conflict.', polarity: -1 },
-  { id: 'religion-4', dimension: 'religion', prompt: 'Public institutions should be allowed to reflect a society’s dominant religious tradition.', polarity: 1 },
-  { id: 'religion-5', dimension: 'religion', prompt: 'Religious communities should be free to organize schools and social services around their beliefs, within equal-rights law.', polarity: 1 },
+  { id: 'religion-1', dimension: 'religion', prompt: 'Religious authorities should have a formal role in shaping public law.', polarity: -1 },
+  { id: 'religion-2', dimension: 'religion', prompt: 'The state should remain neutral among religions and nonbeliefs.', polarity: 1 },
+  { id: 'religion-3', dimension: 'religion', prompt: 'Civil law should take precedence over religious law when the two conflict.', polarity: 1 },
+  { id: 'religion-4', dimension: 'religion', prompt: 'Public institutions should be allowed to reflect a society’s dominant religious tradition.', polarity: -1 },
+  { id: 'religion-5', dimension: 'religion', prompt: 'Religious communities should be free to organize schools and social services around their beliefs, within equal-rights law.', polarity: -1 },
 ];
 
 const SOURCES = {
@@ -726,6 +726,8 @@ function orientProfile(profile) {
   }));
 }
 
+// Religion scores stay in the pre-inversion orientation here; orientProfile
+// applies the public convention so secular public law is positive.
 const RELIGION_ARCHETYPE_DATA = {
   'authoritarian-collectivist': { score: -60, note: 'Public law is formally secular and religious institutions are subordinated to the party-state; this does not mean private belief disappears or that every communist regime treated religion identically.' },
   'historical-fascist': { score: 25, note: 'Historical fascist regimes sometimes allied with religious institutions, but they subordinated them to the state and did not share one theological program.' },
