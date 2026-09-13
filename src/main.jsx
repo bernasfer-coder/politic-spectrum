@@ -505,6 +505,7 @@ function BibliographyRecord({ record }) {
 }
 
 function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
+  const [libraryPage, setLibraryPage] = useState('profiles');
   const [profileQuery, setProfileQuery] = useState('');
   const [columnDimensionId, setColumnDimensionId] = useState('economic');
   const [rowDimensionId, setRowDimensionId] = useState('authority');
@@ -558,11 +559,25 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
 
   return (
     <div className="library-view">
+      <nav className="library-subnav" role="tablist" aria-label="Spectrum Library sections">
+        <button className={libraryPage === 'profiles' ? 'library-subtab active' : 'library-subtab'} onClick={() => setLibraryPage('profiles')} role="tab" aria-selected={libraryPage === 'profiles'}>
+          <span className="library-subtab-number">01</span><span><strong>Reference profiles</strong><small>Compare main patterns</small></span>
+        </button>
+        <button className={libraryPage === 'labels' ? 'library-subtab active' : 'library-subtab'} onClick={() => setLibraryPage('labels')} role="tab" aria-selected={libraryPage === 'labels'}>
+          <span className="library-subtab-number">02</span><span><strong>Label catalogue</strong><small>Search historical labels</small></span>
+        </button>
+        <button className={libraryPage === 'research' ? 'library-subtab active' : 'library-subtab'} onClick={() => setLibraryPage('research')} role="tab" aria-selected={libraryPage === 'research'}>
+          <span className="library-subtab-number">03</span><span><strong>Research atlas</strong><small>Trace evidence and context</small></span>
+        </button>
+      </nav>
+
+      {libraryPage === 'profiles' ? (
+        <>
       <div className="section-heading-row">
         <div><p className="eyebrow">REFERENCE PROFILES</p><h2>Select a spectrum. Read the logic.</h2></div>
         <button className="secondary-button" onClick={onLoadInFreeMode}>Load this profile <span>↗</span></button>
       </div>
-      <p className="library-intro">Choose a reference pattern below. The {ARCHETYPES.length} cards explain not only where each profile sits on every axis, but why that position follows from the underlying political ideas. These are cross-axis teaching profiles; the normalized catalogue below contains additional narrower labels and aliases.</p>
+      <p className="library-intro">Choose a reference pattern below. The {ARCHETYPES.length} cards explain not only where each profile sits on every axis, but why that position follows from the underlying political ideas. These are cross-axis teaching profiles; the other library sections contain narrower labels and the evidence behind them.</p>
 
       <div className="library-detail">
         <div className="library-detail-heading"><div><p className="eyebrow">SELECTED REFERENCE</p><h3><span className="accent-dot" style={{ background: selectedType.accent }} />{selectedType.name}</h3><p>{selectedType.summary}</p><EvidenceLinks citationIds={selectedType.summaryCitationIds} /></div><div className="library-score-note"><span>Profile coordinates</span><strong>{DIMENSIONS.length} axes · −100 to +100</strong></div></div>
@@ -603,9 +618,12 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
         </div>
       </div>
       {!visibleProfiles.length && <div className="profile-search-empty"><strong>No main profile matches that search.</strong><p>Try a broader term such as “liberal”, “socialist”, “national”, “religious”, or “anarchist”.</p></div>}
-
+        </>
+      ) : libraryPage === 'labels' ? (
       <TaxonomyCatalogue filters={filters} filterOptions={filterOptions} filteredLabels={filteredLabels} onUpdateFilter={updateFilter} />
-      <ResearchAtlas />
+      ) : (
+        <ResearchAtlas />
+      )}
     </div>
   );
 }

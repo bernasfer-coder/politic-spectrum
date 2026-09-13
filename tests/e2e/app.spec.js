@@ -9,7 +9,11 @@ test('landing page switches through the three analysis modes', async ({ page }) 
   await expect(page.getByRole('heading', { name: /Build a profile by feel/i })).toBeVisible();
 
   await page.getByRole('tab', { name: /Spectrum Library/i }).click();
-  await expect(page.getByText('RESEARCH ATLAS')).toBeVisible();
+  await expect(page.getByRole('tab', { name: /Reference profiles/i })).toHaveAttribute('aria-selected', 'true');
+  await page.getByRole('tab', { name: /Label catalogue/i }).click();
+  await expect(page.getByText('NORMALIZED LABEL CATALOGUE')).toBeVisible();
+  await page.getByRole('tab', { name: /Research atlas/i }).click();
+  await expect(page.getByText('RESEARCH ATLAS', { exact: true })).toBeVisible();
   await page.getByText(/Recurring political forms · 12 patterns/i).click();
   await expect(page.getByText(/Sacral or dynastic kingship/i)).toBeVisible();
 });
