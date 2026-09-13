@@ -78,7 +78,7 @@ function assertBibliographyRecordReview(record, label) {
   assert(Boolean(record.editorialAction), `${label} is missing an editorial action`);
 }
 
-assert(DIMENSIONS.length === 5, `Expected exactly 5 dimensions, found ${DIMENSIONS.length}`);
+assert(DIMENSIONS.length === 6, `Expected exactly 6 dimensions, found ${DIMENSIONS.length}`);
 assertUnique(dimensionIds, 'Dimensions');
 
 assert(BAND_RANGES.length === 10, `Expected 10 score bands, found ${BAND_RANGES.length}`);
@@ -91,7 +91,7 @@ for (let index = 1; index < BAND_RANGES.length; index += 1) {
   );
 }
 
-assert(QUESTIONS.length === 25, `Expected 25 questionnaire items, found ${QUESTIONS.length}`);
+assert(QUESTIONS.length === 30, `Expected 30 questionnaire items, found ${QUESTIONS.length}`);
 assertUnique(QUESTIONS.map(({ id }) => id), 'Question');
 assert(JSON.stringify(CORE_DIMENSION_IDS) === JSON.stringify(dimensionIds), 'Validation construct map must follow the public dimension order');
 assert(Object.keys(CORE_CONSTRUCT_MAP).length === DIMENSIONS.length, 'Every core dimension needs an operational construct map');
@@ -104,7 +104,7 @@ for (const questionId of questionSet) {
     assert(Boolean(audit.concern) && Boolean(audit.futureAction), `Question ${questionId} validation audit is incomplete`);
   }
 }
-assert(VALIDATION_STATUS.coreModel === '5d-v1', 'Validation registry must preserve the 5d-v1 core');
+assert(VALIDATION_STATUS.coreModel === '6d-v1', 'Validation registry must use the 6d-v1 core');
 assert(VALIDATION_STATUS.empiricalStatus === 'not-run', 'Validation registry must not imply that participant validation has occurred');
 assert(VALIDATION_MODEL_DEFINITIONS.length > 0, 'Validation registry must contain model definitions');
 for (const model of VALIDATION_MODEL_DEFINITIONS) {

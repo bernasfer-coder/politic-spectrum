@@ -21,13 +21,13 @@ test('questionnaire resumes after a refresh', async ({ page }) => {
   await page.reload();
 
   await expect(page.getByText(/QUESTION 02/)).toBeVisible();
-  await expect(page.getByText(/1 of 25 answered/)).toBeVisible();
+  await expect(page.getByText(/1 of 30 answered/)).toBeVisible();
 });
 
-test('the five FreeMode controls work on a mobile viewport', async ({ page }) => {
+test('the six FreeMode controls work on a mobile viewport', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('tab', { name: /FreeMode/i }).click();
-  await expect(page.getByRole('slider')).toHaveCount(5);
+  await expect(page.getByRole('slider')).toHaveCount(6);
   await page.getByRole('slider', { name: /Economic model score/i }).fill('100');
   await expect(page.getByRole('slider', { name: /Economic model score/i })).toHaveValue('100');
 });

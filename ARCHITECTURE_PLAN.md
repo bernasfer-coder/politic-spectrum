@@ -8,7 +8,7 @@ Date: 2026-09-12
 Use a hybrid architecture:
 
 1. Git-managed structured content is the canonical source for the political taxonomy, explanations, historical labels, entities, relationships, and citations.
-2. The public explorer ships a generated, versioned content bundle and performs questionnaire scoring, five-axis matching, and filtering in the browser.
+2. The public explorer ships a generated, versioned content bundle and performs questionnaire scoring, six-axis matching, and filtering in the browser.
 3. PostgreSQL is introduced as a published read model when editorial volume, search, localization, or analytics needs justify it. It is not the first destination for every public interaction.
 4. CDN/browser HTTP caching comes before Redis. Redis is an optimization to add only after measurements show that the API or search layer needs it.
 5. Raw questionnaire answers and personal data are not collected by default. Optional analytics, if added, stores consented, coarse aggregates only.
@@ -17,16 +17,16 @@ This keeps the high-volume path static and fast while preserving a serious data 
 
 ## Why we should not cache every questionnaire answer
 
-The current questionnaire has 25 questions and five answer choices per question. The raw answer space is:
+The current questionnaire has 30 questions and five answer choices per question. The raw answer space is:
 
 ```text
-5^25 = 298,023,223,876,953,125 combinations
+5^30 = 931,322,574,615,478,515,625 combinations
 ```
 
-The scoring model reduces those answers to at most 21 possible integer scores on each of five dimensions:
+The scoring model reduces those answers to at most 21 possible integer scores on each of six dimensions:
 
 ```text
-21^5 = 4,084,101 score vectors
+21^6 = 85,766,121 score vectors
 ```
 
 That reduced space is still unnecessary to materialize. Scoring is a small deterministic calculation in the browser; the application should calculate it on demand and cache only the content documents that explain the result.
@@ -175,4 +175,3 @@ Git remains the place where changes are reviewed and reproducible. If PostgreSQL
 - Every public label can eventually point to sources and related labels without flattening important historical differences.
 - A future PostgreSQL migration can add search, filters, and editorial tooling without moving scoring logic to the server.
 - The system remains usable if the API or database is temporarily unavailable.
-

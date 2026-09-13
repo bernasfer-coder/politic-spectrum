@@ -187,6 +187,7 @@ const RIGHTS_RECORDS = {
     sepMedieval: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     ushmmFascism: { ...PERMISSION_SENSITIVE, notes: 'Institutional educational source used for historical context; reproduce no USHMM text, images, or graphics.' },
     panAfricanism: { ...LINK_ONLY, notes: 'Scholarly article used as a linked source; no article text, figures, or tables are reproduced.' },
+    sepReligionPolitics: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },
@@ -251,6 +252,9 @@ const RIGHTS_RECORDS = {
     duboisBlackReconstruction: { ...PERMISSION_SENSITIVE, publicationStatus: 'review-required', notes: 'The 1935 work, later editions, and digital transcriptions may have different rights status by jurisdiction; the project uses a link and independent paraphrase only.' },
     fanonWretchedEarth: { ...PERMISSION_SENSITIVE },
     ostromGoverningCommons: { ...PERMISSION_SENSITIVE },
+    lockeLetterToleration: { ...PERMISSION_SENSITIVE },
+    aquinasMoralPolitical: { ...PERMISSION_SENSITIVE },
+    spinozaPolitical: { ...PERMISSION_SENSITIVE },
   },
 };
 

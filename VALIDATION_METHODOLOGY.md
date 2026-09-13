@@ -1,38 +1,44 @@
-# Validation Methodology for the Didactic 5D Core
+# Validation Methodology for the Didactic 6D Core
+
+## Amendment: Religion promoted to the current core
+
+On 13 September 2026, Religion in public life was promoted from a candidate facet to the sixth public dimension because religious authority, secular neutrality, and the relationship between religious reasons and coercive law cannot always be recovered precisely from the existing social or authority axes. The former `5d-v1` model remains registered as a legacy comparator; the current product baseline is `6d-v1`. This is a didactic design decision and remains empirically unvalidated.
 
 ## Decision summary
 
-Politic Spectrum v1 keeps five public dimensions as a stable, educational model:
+Politic Spectrum v1 now exposes six public dimensions as a stable, educational model:
 
 1. Economic model
 2. Social values
 3. Authority
 4. National identity
 5. Foreign policy
+6. Religion in public life
 
 This is a product decision, not a claim that politics has exactly five natural dimensions. Political concepts are latent, context-sensitive, and measured with error. Established projects use different dimensional structures for different purposes: the World Values Survey measures a broad set of attitudes and values, the Chapel Hill Expert Survey separates general ideology from policy positions, the Manifesto Project codes party statements by policy categories, and V-Dem disaggregates democracy into many concepts and indicators.[^1][^2][^3][^4]
 
-The didactic model should therefore be validated as a useful explanatory map, not marketed as a diagnostic test or a complete representation of a person. The current questionnaire, score schema, and five-dimensional cache remain stable while evidence is collected. Any change to item wording, weights, dimensions, or score semantics must receive a new questionnaire/model version.
+The didactic model should therefore be validated as a useful explanatory map, not marketed as a diagnostic test or a complete representation of a person. The current questionnaire, score schema, and six-dimensional cache are versioned while evidence is collected. Any change to item wording, weights, dimensions, or score semantics must receive a new questionnaire/model version.
 
 The current decision is:
 
-- **Keep the 5D core for v1.** It is small enough to explain and broad enough to expose common mixed positions.
-- **Do not collapse the result into one left/right score.** A five-axis profile is the primary result.
-- **Treat optional concepts as facets or modules first.** Religion/secularism, democracy/institutions, ecology/growth, immigration/integration, decentralization, populism, equality/hierarchy, and technology/expertise should not silently become new axes.
-- **Run 4D, 5D, 6D, 7D, and core-plus-facets as preregistered comparisons.** A model wins only when it adds information without creating unacceptable confusion, instability, bias, or maintenance cost.
+- **Keep the 6D core for the current didactic release.** It is still small enough to explain while making religious-public-law disagreements visible.
+- **Retain `5d-v1` as a legacy comparator.** The Religion addition must be evaluated against the prior public model rather than treated as automatically superior.
+- **Do not collapse the result into one left/right score.** A six-axis profile is the primary result.
+- **Treat remaining optional concepts as facets or modules first.** Democracy/institutions, ecology/growth, immigration/integration, decentralization, populism, equality/hierarchy, and technology/expertise should not silently become new axes.
+- **Run legacy-5D versus current-6D, 7D, 8D, and core-plus-facets comparisons.** A model wins only when it adds information without creating unacceptable confusion, instability, bias, or maintenance cost.
 - **Report uncertainty and limitations.** A score is an estimate from a short questionnaire, not a discovered essence of a person, country, party, city, or historical case.
 
 ## Implementation status (13 September 2026)
 
 The validation plan is now represented in `src/content/validation.js` and checked by `scripts/test-validation.mjs` and the build validator. The registry contains:
 
-- operational construct boundaries for all five core dimensions;
-- a single-construct, polarity, cultural-portability, and cross-loading audit for all 25 current items;
-- eight candidate facets with their provisional treatment;
-- all five M4 leave-one-out variants, the stable `5d-v1` baseline, eight M6 facet additions, all 28 preregistered M7 facet pairs, and the core-plus-facets module model;
+- operational construct boundaries for all six core dimensions;
+- a single-construct, polarity, cultural-portability, and cross-loading audit for all 30 current items;
+- seven remaining candidate facets with their provisional treatment;
+- the legacy `5d-v1` comparator, current `6d-v1` baseline, seven M7 single-facet additions, 21 preregistered M8 facet pairs, and the core-plus-facets module model;
 - an explicit `not-run` evidence status.
 
-This registry is a readiness and version-control safeguard, not empirical evidence. Random or synthetic answers can exercise scoring code and fixtures, but they cannot establish reliability, validity, comprehension, measurement invariance, or incremental value. Participant results must come from the consented, privacy-safe study described below, and the public 5D model must not change before that evidence is reviewed.
+This registry is a readiness and version-control safeguard, not empirical evidence. Random or synthetic answers can exercise scoring code and fixtures, but they cannot establish reliability, validity, comprehension, measurement invariance, or incremental value. Participant results must come from the consented, privacy-safe study described below, and no seventh or later public axis should be added before the 5D-versus-6D evidence is reviewed.
 
 ## What is being validated
 

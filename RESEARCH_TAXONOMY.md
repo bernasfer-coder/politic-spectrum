@@ -1,6 +1,6 @@
 # Political Spectrum Research Taxonomy
 
-This document records the research basis for expanding Politic Spectrum from a five-axis prototype into a historically broad, searchable political-label lexicon.
+This document records the research basis for expanding Politic Spectrum from a six-axis prototype into a historically broad, searchable political-label lexicon. The previous five-axis model remains available as a legacy comparator in the validation registry.
 
 ## Scope and conclusion
 
@@ -20,13 +20,14 @@ Political labels must be separated into different kinds:
 
 ## Core dimensions
 
-The current five dimensions use the following score orientation (the endpoints are descriptive, not normative):
+The current six dimensions use the following score orientation (the endpoints are descriptive, not normative):
 
 1. **Economy:** market-oriented/private ownership <-> mixed economy <-> collectivist/public ownership and redistribution.
 2. **Social values:** traditionalist/reactionary <-> socially mixed <-> emancipatory/progressive.
 3. **Authority:** decentralized/libertarian <-> rule-of-law institutionalism <-> authoritarian/totalizing.
 4. **National identity:** nationalist/ethnonationalist <-> civic patriotism <-> cosmopolitan/pluralist.
 5. **Foreign policy:** interventionist/militarist/expansionist <-> multilateral security <-> restraint/non-intervention.
+6. **Religion in public life:** secular public law/neutrality <-> pluralist accommodation <-> religiously grounded law.
 
 The Authority axis is intentionally not reoriented. The sign convention is a product choice that keeps the four requested endpoints consistent across Questionnaire, FreeMode, Spectrum Library, cached results, and documentation; it does not make either endpoint morally superior or imply that a person at one endpoint belongs to a complete ideology.
 

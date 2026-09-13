@@ -6,13 +6,13 @@ This note records the comparative-canon pass behind the application’s expanded
 
 ## Research question
 
-Which recurring forms of political organization, authority, membership, conflict, and public order appear across human history, and which primary or near-primary sources let a learner study them without collapsing different societies into one five-number profile?
+Which recurring forms of political organization, authority, membership, conflict, and public order appear across human history, and which primary or near-primary sources let a learner study them without collapsing different societies into one six-number profile?
 
 The answer is comparative rather than statistical. The inventory identifies recurring forms that appear across many settings; it does not claim that frequency alone makes a form legitimate, nor that a surviving text represents the full society that produced it.
 
 ## Coverage added to the app
 
-The Research Atlas now contains 61 works and legal texts. Forty new anchors were added in this pass, each with an original-language field, period and region, source type, translation/transmission note, review confidence, and at least two claim-level readings. Each claim is an approximate range on one of the five educational axes and includes a locator instead of presenting a modern label as a quotation from the source.
+The Research Atlas now contains 61 works and legal texts. Forty new anchors were added in this pass, each with an original-language field, period and region, source type, translation/transmission note, review confidence, and at least two claim-level readings. Each claim is an approximate range on one of the six educational axes and includes a locator instead of presenting a modern label as a quotation from the source.
 
 | Tradition or historical setting | Works added | Main political-study use |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ The forms are analytical groupings, not claims that the sources used those label
 - A history or strategy text can describe war without endorsing it.
 - Oral and living traditions are not incomplete versions of written European constitutionalism. Their language communities, custodians, performance contexts, and later transcriptions must remain visible.
 - Ancient authorship, dating, redaction, and translation are often disputed. The app marks the relevant entries `needs-review` and keeps uncertainty in the record instead of manufacturing precision.
-- A five-axis range is an educational comparison. It is not an exact score, a party placement, or a claim that an ancient author would recognize a modern political label.
+- A six-axis range is an educational comparison. It is not an exact score, a party placement, or a claim that an ancient author would recognize a modern political label.
 
 ## Direct access points used in this pass
 

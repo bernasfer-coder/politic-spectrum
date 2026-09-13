@@ -56,7 +56,7 @@ Add a public, accessible About Us page as soon as the project is public, even be
 - the people or organization operating it, with a contact method that does not expose a private home address unless a specific law requires it;
 - country/jurisdiction of the operator, and legal entity/registration details once an entity exists;
 - non-partisanship/editorial-independence statement only if it is accurate;
-- explanation that the five-dimensional results are illustrative analysis, not a diagnosis, vote recommendation, or definitive classification;
+- explanation that the six-dimensional results are illustrative analysis, not a diagnosis, vote recommendation, or definitive classification;
 - methodology, revision date, version, limitations, and link to the research/source policy;
 - corrections/contact process and a source-quality policy;
 - sponsorship and advertising policy, including sponsor review, disclosure, and the rule that sponsors cannot purchase result-based targeting;

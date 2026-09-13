@@ -1,6 +1,6 @@
 # AI-assisted development and public-content disclosure research
 
-Research snapshot: 2026-09-12. This is a product, editorial, and compliance planning document, not legal advice. The current app is assumed to calculate the five-dimensional profile locally with deterministic code; it does not expose a conversational AI or send questionnaire answers to an AI service.
+Research snapshot: 2026-09-12. This is a product, editorial, and compliance planning document, not legal advice. The current app calculates the six-dimensional profile locally with deterministic code; it does not expose a conversational AI or send questionnaire answers to an AI service.
 
 ## Preliminary recommendation
 

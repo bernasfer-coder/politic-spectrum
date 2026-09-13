@@ -81,14 +81,14 @@ function EvidenceLinks({ citationIds = [], compact = false }) {
   </div>;
 }
 
-const QUESTIONNAIRE_CACHE_KEY = 'politic-spectrum:questionnaire:v2';
-const LEGACY_QUESTIONNAIRE_CACHE_KEY = 'politic-spectrum:questionnaire:v1';
-const QUESTIONNAIRE_CACHE_VERSION = 2;
+const QUESTIONNAIRE_CACHE_KEY = 'politic-spectrum:questionnaire:v3';
+const LEGACY_QUESTIONNAIRE_CACHE_KEYS = ['politic-spectrum:questionnaire:v2', 'politic-spectrum:questionnaire:v1'];
+const QUESTIONNAIRE_CACHE_VERSION = 3;
 
 function loadQuestionnaireCache() {
   if (typeof window === 'undefined') return null;
   try {
-    const stored = [QUESTIONNAIRE_CACHE_KEY, LEGACY_QUESTIONNAIRE_CACHE_KEY]
+    const stored = [QUESTIONNAIRE_CACHE_KEY, ...LEGACY_QUESTIONNAIRE_CACHE_KEYS]
       .map((key) => window.localStorage.getItem(key))
       .filter(Boolean)
       .map((value) => {
@@ -98,7 +98,7 @@ function loadQuestionnaireCache() {
           return null;
         }
       })
-      .find((entry) => entry?.version === QUESTIONNAIRE_CACHE_VERSION || entry?.version === 1);
+      .find((entry) => entry?.version === QUESTIONNAIRE_CACHE_VERSION || entry?.version === 2 || entry?.version === 1);
     if (!stored || !stored.answers || typeof stored.answers !== 'object') return null;
     const validQuestionIds = new Set(QUESTIONS.map(({ id }) => id));
     const answers = Object.fromEntries(Object.entries(stored.answers).filter(([id, value]) => validQuestionIds.has(id) && OPTION_VALUES.includes(value)));
@@ -116,7 +116,7 @@ function saveQuestionnaireCache(answers, questionIndex) {
   try {
     if (Object.keys(answers).length === 0) {
       window.localStorage.removeItem(QUESTIONNAIRE_CACHE_KEY);
-      window.localStorage.removeItem(LEGACY_QUESTIONNAIRE_CACHE_KEY);
+      LEGACY_QUESTIONNAIRE_CACHE_KEYS.forEach((key) => window.localStorage.removeItem(key));
       return;
     }
     window.localStorage.setItem(QUESTIONNAIRE_CACHE_KEY, JSON.stringify({ version: QUESTIONNAIRE_CACHE_VERSION, answers, questionIndex }));
@@ -188,7 +188,10 @@ function App() {
     setQuestionIndex(0);
     setScores(DEFAULT_SCORES);
     changeMode('questionnaire');
-    if (typeof window !== 'undefined') window.localStorage.removeItem(LEGACY_QUESTIONNAIRE_CACHE_KEY);
+    if (typeof window !== 'undefined') {
+      window.localStorage.removeItem(QUESTIONNAIRE_CACHE_KEY);
+      LEGACY_QUESTIONNAIRE_CACHE_KEYS.forEach((key) => window.localStorage.removeItem(key));
+    }
   }
 
   function updateScore(dimensionId, value) {
@@ -202,7 +205,7 @@ function App() {
           <div className="brand-mark" aria-hidden="true"><span /><span /><span /></div>
           <div>
             <p className="brand-name">POLITIC SPECTRUM</p>
-            <p className="brand-tagline">A five-axis political fingerprint</p>
+            <p className="brand-tagline">A six-axis political fingerprint</p>
           </div>
         </div>
         <div className="topbar-meta"><span className="palette-readout"><i className="palette-swatch" /> Palette: {palette.label}</span><span className="meta-divider" /> v0.1</div>
@@ -213,12 +216,12 @@ function App() {
           <div className="hero-copy">
             <p className="eyebrow">READ THE FULL MAP</p>
             <h1>Politics is more than<br /><em>left</em> or <em>right.</em></h1>
-            <p className="hero-lede">Explore your political position across five independent dimensions. Build a profile from your answers, or move the axes yourself and see which documented patterns it resembles.</p>
+            <p className="hero-lede">Explore your political position across six independent dimensions. Build a profile from your answers, or move the axes yourself and see which documented patterns it resembles.</p>
           </div>
           <div className="hero-orbit" aria-hidden="true">
             <div className="orbit-ring ring-one" /><div className="orbit-ring ring-two" /><div className="orbit-ring ring-three" />
             <div className="orbit-axis axis-a" /><div className="orbit-axis axis-b" /><div className="orbit-axis axis-c" />
-            <div className="orbit-core">5D</div>
+            <div className="orbit-core">6D</div>
             <span className="orbit-label label-top">SOCIAL</span><span className="orbit-label label-right">MARKET</span><span className="orbit-label label-bottom">AUTHORITY</span><span className="orbit-label label-left">IDENTITY</span>
           </div>
         </section>
@@ -229,7 +232,7 @@ function App() {
               <span className="tab-number">01</span><span><strong>Questionnaire</strong><small>Let the model find your position</small></span>
             </button>
             <button className={mode === 'freemode' ? 'mode-tab active' : 'mode-tab'} onClick={() => changeMode('freemode')} role="tab" aria-selected={mode === 'freemode'}>
-              <span className="tab-number">02</span><span><strong>FreeMode</strong><small>Move the five axes yourself</small></span>
+              <span className="tab-number">02</span><span><strong>FreeMode</strong><small>Move the six axes yourself</small></span>
             </button>
             <button className={mode === 'library' ? 'mode-tab active' : 'mode-tab'} onClick={() => { setSelectedTypeId(topMatch.id); changeMode('library'); }} role="tab" aria-selected={mode === 'library'}>
               <span className="tab-number">03</span><span><strong>Spectrum Library</strong><small>Study each political type</small></span>
@@ -309,7 +312,7 @@ function Questionnaire({ currentQuestion, currentDimension, questionIndex, answe
           </div>
         </div>
       </div>
-      <div className="utility-row"><button className="text-button subdued" onClick={onReset}>Reset questionnaire</button><p>About 5 minutes <span>·</span> 25 questions <span>·</span> 5 dimensions <span>·</span> Saved locally in this browser</p></div>
+      <div className="utility-row"><button className="text-button subdued" onClick={onReset}>Reset questionnaire</button><p>About 6 minutes <span>·</span> {QUESTIONS.length} questions <span>·</span> {DIMENSIONS.length} dimensions <span>·</span> Saved locally in this browser</p></div>
     </div>
   );
 }
@@ -414,7 +417,7 @@ function BibliographyPage() {
         <div><p className="eyebrow">SOURCE REGISTRY</p><h2>Every claim has a trail.</h2></div>
         <div className="bibliography-count"><strong>{BIBLIOGRAPHY_RECORDS.length}</strong><span>records · reviewed {BIBLIOGRAPHY_ACCESS_DATE}</span></div>
       </div>
-      <p className="bibliography-intro">This catalogue records the sources currently used by the questionnaire, five-axis bands, spectrum profiles, and normalized label catalogue. It distinguishes primary texts, scholarly interpretation, methodology, and contextual links so a citation is not mistaken for proof of an exact label or position.</p>
+      <p className="bibliography-intro">This catalogue records the sources currently used by the questionnaire, six-axis bands, spectrum profiles, and normalized label catalogue. It distinguishes primary texts, scholarly interpretation, methodology, and contextual links so a citation is not mistaken for proof of an exact label or position.</p>
       <div className="bibliography-notice"><span>!</span><p><strong>Editorial rule:</strong> “Not recorded” means the project has not verified that field. Rights status describes what this app may publish, not a legal clearance for the linked work. <a href="https://github.com/bernasfer-coder/politic-spectrum/issues/12" target="_blank" rel="noreferrer">Suggest a correction or source update ↗</a></p></div>
 
       <div className="bibliography-filters" aria-label="Filter bibliography records">
@@ -516,7 +519,7 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
       </div>
 
       <div className="library-detail">
-        <div className="library-detail-heading"><div><p className="eyebrow">SELECTED REFERENCE</p><h3><span className="accent-dot" style={{ background: selectedType.accent }} />{selectedType.name}</h3><p>{selectedType.summary}</p><EvidenceLinks citationIds={selectedType.summaryCitationIds} /></div><div className="library-score-note"><span>Profile coordinates</span><strong>5 axes · −100 to +100</strong></div></div>
+        <div className="library-detail-heading"><div><p className="eyebrow">SELECTED REFERENCE</p><h3><span className="accent-dot" style={{ background: selectedType.accent }} />{selectedType.name}</h3><p>{selectedType.summary}</p><EvidenceLinks citationIds={selectedType.summaryCitationIds} /></div><div className="library-score-note"><span>Profile coordinates</span><strong>{DIMENSIONS.length} axes · −100 to +100</strong></div></div>
         {selectedType.warning && <div className="warning-banner"><span>!</span><p><strong>Historical context:</strong> {selectedType.warning}</p></div>}
         <div className="library-axis-list">{DIMENSIONS.map((dimension) => { const value = selectedType.profile[dimension.id]; const band = getBand(dimension.id, value); const fill = `${(value + 100) / 2}%`; return <article className="library-axis-card" key={dimension.id}><div className="library-axis-top"><span className="axis-index">{dimension.index}</span><div><h4>{dimension.label}</h4><p>{dimension.low} <span>↔</span> {dimension.high}</p></div><strong>{formatScore(value)}</strong></div><div className="library-range"><i><b style={{ width: fill, background: selectedType.accent }} /></i><span className="library-zero" /><span className="library-marker" style={{ left: fill, borderColor: selectedType.accent, background: selectedType.accent }} /></div><div className="library-axis-label"><strong>{band.label}</strong><span>Band {BAND_RANGES.findIndex(([min, max]) => value >= min && value <= max) + 1} / 10</span></div><div className="band-description"><p>{band.summary}</p><EvidenceLinks citationIds={band.citationIds} compact /></div><div className="reason-block"><span>Why this profile lands here</span><p>{selectedType.dimensionNotes[dimension.id]}</p><EvidenceLinks citationIds={selectedType.dimensionCitationIds[dimension.id]} compact /></div></article>; })}</div>
       </div>
@@ -693,7 +696,7 @@ function FreeMode({ scores, matches, topMatch, onUpdateScore, onUseQuestionnaire
         <div className="match-stack">{matches.slice(0, 3).map((match, index) => <div className="match-row" key={match.id}><span>{String(index + 1).padStart(2, '0')}</span><strong>{match.name}</strong><i><b style={{ width: `${Math.max(8, 100 - match.distance / 2)}%`, background: match.accent }} /></i><em>{Math.round(match.distance)} distance</em></div>)}</div>
       </div>
 
-      <div className="axis-readout"><div className="axis-readout-heading"><p className="eyebrow">YOUR FIVE-BAND READOUT</p><p>One independent interpretation for every axis.</p></div>{DIMENSIONS.map((dimension) => { const band = getBand(dimension.id, scores[dimension.id]); return <div className="axis-readout-item" key={dimension.id}><span>{dimension.index}</span><div><strong>{dimension.label}</strong><small>{band.label}</small></div><em>{formatScore(scores[dimension.id])}</em></div>; })}</div>
+      <div className="axis-readout"><div className="axis-readout-heading"><p className="eyebrow">YOUR SIX-BAND READOUT</p><p>One independent interpretation for every axis.</p></div>{DIMENSIONS.map((dimension) => { const band = getBand(dimension.id, scores[dimension.id]); return <div className="axis-readout-item" key={dimension.id}><span>{dimension.index}</span><div><strong>{dimension.label}</strong><small>{band.label}</small></div><em>{formatScore(scores[dimension.id])}</em></div>; })}</div>
 
       {topMatch.warning && <div className="warning-banner"><span>!</span><p><strong>Historical context:</strong> {topMatch.warning}</p></div>}
 
@@ -703,7 +706,7 @@ function FreeMode({ scores, matches, topMatch, onUpdateScore, onUseQuestionnaire
         <InsightSection number="03" title="Historical states & cities" subtitle="Places often discussed by historians in connection with this profile." items={topMatch.historical} />
       </div>
 
-      <p className="data-note">The matching engine uses simple geometric distance across five independent axes. People and places are selected as documented reference points, not as proof that every belief or policy matched.</p>
+      <p className="data-note">The matching engine uses simple geometric distance across {DIMENSIONS.length} independent axes. People and places are selected as documented reference points, not as proof that every belief or policy matched.</p>
       <SpectrumGuide scores={scores} />
     </div>
   );
@@ -719,7 +722,7 @@ function InsightSection({ number, title, subtitle, items, emptyMessage }) {
 }
 
 function SpectrumGuide({ scores }) {
-  return <section className="spectrum-guide"><div className="guide-heading"><div><p className="eyebrow">RESEARCHED TAXONOMY</p><h3>Ten 20-point bands on every axis.</h3></div><p>Each band names a policy tendency, not a complete ideology. Your five independent labels should be read together.</p></div><div className="guide-list">{DIMENSIONS.map((dimension, index) => { const taxonomy = SPECTRUM_BANDS[dimension.id]; const activeBand = getBand(dimension.id, scores[dimension.id]); return <details className="guide-dimension" key={dimension.id} open={index === 0}><summary><span className="guide-dimension-index">{dimension.index}</span><span className="guide-dimension-name"><strong>{dimension.label}</strong><small>Current: {activeBand.label}</small></span><span className="guide-count">10 bands <b>＋</b></span></summary><div className="guide-content"><p className="guide-basis">{taxonomy.basis}</p><EvidenceLinks citationIds={taxonomy.basisCitationIds} compact /><div className="band-table">{taxonomy.bands.map((band) => <div className={band.label === activeBand.label ? 'band-row active' : 'band-row'} key={band.label}><span className="band-range">{formatScore(band.min)} to {formatScore(band.max)}</span><div><strong>{band.label}</strong><div className="band-summary"><p>{band.summary}</p><EvidenceLinks citationIds={band.citationIds} compact /></div><small>{band.families.join(' · ')}</small></div></div>)}</div><div className="guide-sources"><span>Research basis</span>{taxonomy.sourceIds.map((sourceId) => { const source = RESEARCH_SOURCES.find((item) => item.id === sourceId); return <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>; })}</div></div></details>; })}</div><div className="research-note"><strong>How the bands were chosen.</strong> The labels synthesize political-theory definitions with comparative measurement practice. They are intentionally descriptive and probabilistic: a score at one band does not prove a person belongs to a named movement, and country or historical comparisons require separate evidence.</div></section>;
+  return <section className="spectrum-guide"><div className="guide-heading"><div><p className="eyebrow">RESEARCHED TAXONOMY</p><h3>Ten 20-point bands on every axis.</h3></div><p>Each band names a policy tendency, not a complete ideology. Your six independent labels should be read together.</p></div><div className="guide-list">{DIMENSIONS.map((dimension, index) => { const taxonomy = SPECTRUM_BANDS[dimension.id]; const activeBand = getBand(dimension.id, scores[dimension.id]); return <details className="guide-dimension" key={dimension.id} open={index === 0}><summary><span className="guide-dimension-index">{dimension.index}</span><span className="guide-dimension-name"><strong>{dimension.label}</strong><small>Current: {activeBand.label}</small></span><span className="guide-count">10 bands <b>＋</b></span></summary><div className="guide-content"><p className="guide-basis">{taxonomy.basis}</p><EvidenceLinks citationIds={taxonomy.basisCitationIds} compact /><div className="band-table">{taxonomy.bands.map((band) => <div className={band.label === activeBand.label ? 'band-row active' : 'band-row'} key={band.label}><span className="band-range">{formatScore(band.min)} to {formatScore(band.max)}</span><div><strong>{band.label}</strong><div className="band-summary"><p>{band.summary}</p><EvidenceLinks citationIds={band.citationIds} compact /></div><small>{band.families.join(' · ')}</small></div></div>)}</div><div className="guide-sources"><span>Research basis</span>{taxonomy.sourceIds.map((sourceId) => { const source = RESEARCH_SOURCES.find((item) => item.id === sourceId); return <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>; })}</div></div></details>; })}</div><div className="research-note"><strong>How the bands were chosen.</strong> The labels synthesize political-theory definitions with comparative measurement practice. They are intentionally descriptive and probabilistic: a score at one band does not prove a person belongs to a named movement, and country or historical comparisons require separate evidence.</div></section>;
 }
 
 export {

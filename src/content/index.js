@@ -59,6 +59,15 @@ const DIMENSIONS = [
     questionLabel: 'Foreign policy',
     description: 'When should a state use diplomacy and restraint versus alliances, sanctions, or military force abroad?',
   },
+  {
+    id: 'religion',
+    index: '06',
+    label: 'Religion in public life',
+    low: 'Secular public law',
+    high: 'Religiously grounded law',
+    questionLabel: 'Religion',
+    description: 'How much should religious authorities, revelation, or religious moral traditions shape public law and institutions?',
+  },
 ];
 
 const FLIPPED_DIMENSION_IDS = ['economic', 'social', 'identity', 'foreign'];
@@ -73,6 +82,7 @@ const RESEARCH_SOURCES = [
   { id: 'sepLiberalism', label: 'Stanford Encyclopedia — Liberalism', url: 'https://plato.stanford.edu/entries/liberalism/', note: 'Liberal approaches to liberty, property, authority, and the state.' },
   { id: 'sepLibertarianism', label: 'Stanford Encyclopedia — Libertarianism', url: 'https://plato.stanford.edu/entries/libertarianism/', note: 'Individual liberty, coercion, property, and market arguments.' },
   { id: 'sepConservatism', label: 'Stanford Encyclopedia — Conservatism', url: 'https://plato.stanford.edu/entries/conservatism/', note: 'Tradition, authority, gradual change, and paternalism.' },
+  { id: 'sepReligionPolitics', label: 'Stanford Encyclopedia — Religion and Political Theory', url: 'https://plato.stanford.edu/entries/religion-politics/', note: 'The relationship between religious reasons, political authority, coercive law, secularism, and religious pluralism.' },
   { id: 'sepNationalism', label: 'Stanford Encyclopedia — Nationalism', url: 'https://plato.stanford.edu/entries/nationalism/', note: 'Distinction between civic, liberal, conservative, and ethnic forms of nationalism.' },
   { id: 'vdem', label: 'V-Dem Democracy Indices Codebook', url: 'https://www.v-dem.net/documents/55/codebook.pdf', note: 'Operationalization of liberal democracy, civil liberties, rule of law, and limits on executive power.' },
   { id: 'wvs', label: 'World Values Survey — Findings & Insights', url: 'https://www.worldvaluessurvey.org/WVSContents.jsp?CMSID=Findings', note: 'Empirical traditional/secular-rational and survival/self-expression value dimensions.' },
@@ -197,6 +207,11 @@ const QUESTIONS = [
   { id: 'foreign-3', dimension: 'foreign', prompt: 'Diplomacy and trade are usually preferable to coercive force.', polarity: 1 },
   { id: 'foreign-4', dimension: 'foreign', prompt: 'Military force can be justified to stop mass atrocities even without a direct national interest.', polarity: -1 },
   { id: 'foreign-5', dimension: 'foreign', prompt: 'Defense policy should prioritize deterrence and territorial protection over attempts to remake other countries.', polarity: 1 },
+  { id: 'religion-1', dimension: 'religion', prompt: 'Religious authorities should have a formal role in shaping public law.', polarity: 1 },
+  { id: 'religion-2', dimension: 'religion', prompt: 'The state should remain neutral among religions and nonbeliefs.', polarity: -1 },
+  { id: 'religion-3', dimension: 'religion', prompt: 'Civil law should take precedence over religious law when the two conflict.', polarity: -1 },
+  { id: 'religion-4', dimension: 'religion', prompt: 'Public institutions should be allowed to reflect a society’s dominant religious tradition.', polarity: 1 },
+  { id: 'religion-5', dimension: 'religion', prompt: 'Religious communities should be free to organize schools and social services around their beliefs, within equal-rights law.', polarity: 1 },
 ];
 
 const SOURCES = {
@@ -322,6 +337,22 @@ const SPECTRUM_BANDS_RAW = {
       ['Interventionist', 'Military force or coercive influence may be used proactively to defend interests, allies, or values beyond the homeland.', ['interventionism', 'hawkish internationalism']],
       ['Assertive interventionist', 'A state should actively shape the international order and accept significant risk or cost to impose outcomes.', ['assertive realism', 'power politics']],
       ['Militarist / expansionist tendency', 'Force, hierarchy, and territorial or political expansion are treated as central instruments of national power.', ['militarism', 'expansionism']],
+    ]),
+  },
+  religion: {
+    basis: 'This axis tracks the desired public role of religion: whether public law should be justified through secular reasons and remain neutral, or be formally shaped by religious authorities, revelation, or a confessional moral order. It does not measure private faith, religious sincerity, or the value of any religion.',
+    sourceIds: ['sepReligionPolitics', 'wvs', 'ches', 'openTextbook'],
+    bands: buildBands([
+      ['Militant secularist', 'Public institutions should actively exclude religious authority from law and may treat organized religion as a political danger.', ['militant secularism', 'anti-clericalism']],
+      ['Secular humanist', 'Public law should be grounded in human reasoning and equal citizenship, with religion treated primarily as a private or civil-society matter.', ['secular humanism', 'laïcité']],
+      ['Secular constitutionalist', 'The state should separate religious authority from coercive law while protecting broad freedom of belief, worship, and nonbelief.', ['secular constitutionalism', 'separationism']],
+      ['Neutral-state pluralist', 'Government should remain institutionally neutral among religions and nonbeliefs, while religious groups participate freely in civil society.', ['religious pluralism', 'state neutrality']],
+      ['Secular-leaning pluralist', 'Secular public reasons lead, but religious arguments and communities remain legitimate participants in democratic debate.', ['liberal secularism', 'pluralist secularism']],
+      ['Civic religious pluralist', 'Religious and nonreligious citizens may shape public values together, with no single tradition receiving exclusive legal authority.', ['civic pluralism', 'religious democracy']],
+      ['Religiously informed pluralist', 'Religious moral traditions may influence public institutions and policy, provided equal citizenship and lawful pluralism remain protected.', ['religious democracy', 'faith-informed pluralism']],
+      ['Confessional constitutionalist', 'The state formally identifies with or privileges a religious tradition, but constitutional law and institutional limits still constrain it.', ['confessional state', 'established religion']],
+      ['Religious-national order', 'Religious identity and authority strongly shape citizenship, public morality, and law, often in partnership with national institutions.', ['religious nationalism', 'integralism']],
+      ['Theocratic / clerical-authoritarian', 'Political legitimacy and coercive law are explicitly subordinated to revelation, clerical authority, or a religious sovereign order.', ['theocracy', 'clerical authoritarianism']],
     ]),
   },
 };
@@ -691,16 +722,35 @@ const SPECTRUM_BANDS = Object.fromEntries(Object.entries(SPECTRUM_BANDS_RAW).map
 function orientProfile(profile) {
   return Object.fromEntries(DIMENSIONS.map(({ id }) => {
     const value = profile?.[id];
-    return [id, FLIPPED_DIMENSION_SET.has(id) && Number.isFinite(value) ? -value : value];
+    return [id, Number.isFinite(value) ? (FLIPPED_DIMENSION_SET.has(id) ? -value : value) : null];
   }));
 }
 
-const ARCHETYPES = ARCHETYPES_RAW.map((archetype) => ({
-  ...archetype,
-  profile: orientProfile(archetype.profile),
-  summaryCitationIds: ARCHETYPE_CITATIONS[archetype.id]?.summary ?? [],
-  dimensionCitationIds: ARCHETYPE_CITATIONS[archetype.id]?.dimensions ?? {},
-}));
+const RELIGION_ARCHETYPE_DATA = {
+  'authoritarian-collectivist': { score: -60, note: 'Public law is formally secular and religious institutions are subordinated to the party-state; this does not mean private belief disappears or that every communist regime treated religion identically.' },
+  'historical-fascist': { score: 25, note: 'Historical fascist regimes sometimes allied with religious institutions, but they subordinated them to the state and did not share one theological program.' },
+  'libertarian-market': { score: -55, note: 'Religious belief and organization are protected as private choices, while the state should not impose religious law or doctrine.' },
+  'progressive-liberal': { score: -65, note: 'Public law is justified through equal citizenship and secular constitutional principles, while religious practice remains protected.' },
+  'national-conservative': { score: 40, note: 'Religious tradition may inform national institutions and public morality, but the profile does not require clerical rule or a single established faith.' },
+  'social-democratic': { score: -35, note: 'The state is generally secular and pluralist, while religious communities can participate in welfare, civil society, and democratic debate.' },
+  'classical-liberal': { score: -50, note: 'Religious toleration is protected through limited government and civil rights; coercive law should not enforce a particular faith.' },
+  'democratic-socialist': { score: -30, note: 'Public law is generally secular and egalitarian, although religious social movements can contribute to democratic and economic transformation.' },
+  'anarchist-communalist': { score: -65, note: 'No centralized religious authority should rule, but voluntary religious association remains compatible with decentralized self-government.' },
+  'green-commons': { score: -15, note: 'Religious and ecological ethics may shape local communities, but no faith should receive exclusive coercive authority over public law.' },
+  'religious-traditionalist': { score: 78, note: 'Public institutions and law are expected to reflect an inherited religious moral order, with the degree of formal establishment varying by movement and country.' },
+  'anti-colonial-liberation': { score: 25, note: 'Religious traditions can be sources of anti-colonial solidarity and ethical self-rule, but liberation movements differ sharply on whether religion should govern the state.' },
+};
+
+const ARCHETYPES = ARCHETYPES_RAW.map((archetype) => {
+  const religion = RELIGION_ARCHETYPE_DATA[archetype.id];
+  return {
+    ...archetype,
+    profile: orientProfile({ ...archetype.profile, religion: religion.score }),
+    dimensionNotes: { ...archetype.dimensionNotes, religion: religion.note },
+    summaryCitationIds: ARCHETYPE_CITATIONS[archetype.id]?.summary ?? [],
+    dimensionCitationIds: ARCHETYPE_CITATIONS[archetype.id]?.dimensions ?? {},
+  };
+});
 
 const TAXONOMY_LABELS = RAW_TAXONOMY_LABELS.map((label) => ({
   ...label,
@@ -736,7 +786,7 @@ function buildBibliographyRecords() {
   const sourceLinkUsage = Object.fromEntries(Object.keys(SOURCES).map((id) => [id, createRelationshipSets()]));
   const researchWorkUsage = Object.fromEntries(RESEARCH_WORKS.map(({ id }) => [id, createRelationshipSets()]));
   const researchPersonUsage = Object.fromEntries(RESEARCH_PEOPLE.map(({ id }) => [id, createRelationshipSets()]));
-  addRelationship(researchUsage.panXu, 'claims', '5D model / multidimensionality');
+  addRelationship(researchUsage.panXu, 'claims', '6D model / multidimensionality');
 
   for (const dimension of DIMENSIONS) {
     const taxonomy = SPECTRUM_BANDS[dimension.id];

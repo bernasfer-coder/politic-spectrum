@@ -2,14 +2,14 @@
 
 ## Goal
 
-Publish a trustworthy, secure, accessible v1 of Politic Spectrum for public use, then grow it carefully. The launch version will keep questionnaire answers local, use deterministic scoring, expose the three current modes, provide cited content, and avoid behavioral advertising or political profiling.
+Publish a trustworthy, secure, accessible v1 of Politic Spectrum for public use, then grow it carefully. The launch version will keep questionnaire answers local, use deterministic scoring, expose the four current modes, provide cited content, and avoid behavioral advertising or political profiling.
 
 This roadmap is sequential where a later step depends on an earlier quality or safety gate. It is intentionally release-focused: new features that are not required for a safe v1 should wait until after launch.
 
 ## Current state
 
-- React/Vite application with Questionnaire, FreeMode, and Spectrum Library modes.
-- Five dimensions and researched 20-point bands are represented in the content model.
+- React/Vite application with Questionnaire, FreeMode, Spectrum Library, and Bibliography modes.
+- Six dimensions and researched 20-point bands are represented in the content model; the former 5D model remains a validation comparator.
 - Questionnaire progress and completed results persist locally in the browser.
 - Content validation runs as part of the production build.
 - The app is currently testable on the CT at `192.168.1.130:4173`; this is not yet the public production perimeter.
@@ -29,7 +29,7 @@ This roadmap is sequential where a later step depends on an earlier quality or s
 ### Milestone 0 — freeze the v1 scope
 
 - [ ] Confirm the v1 feature list and stop unrelated feature expansion.
-- [x] Confirm the canonical five-dimension model and release terminology; document the 4D/5D/many-dimensional decision in `DIMENSION_COUNT_RESEARCH.md`.
+- [x] Confirm the canonical six-dimension model and release terminology; document the 4D/5D/6D/many-dimensional decision in `DIMENSION_COUNT_RESEARCH.md`.
 - [ ] Define the release owner, reviewer, incident contact, and publication domain.
 - [ ] Create a `v1` release checklist and keep all changes in Git.
 

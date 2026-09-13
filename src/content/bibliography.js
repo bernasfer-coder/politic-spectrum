@@ -37,6 +37,13 @@ export const BIBLIOGRAPHY_METADATA = {
     confidence: 'high',
     description: 'Scholarly overview of tradition, authority, gradual change, and paternalism.',
   },
+  sepReligionPolitics: {
+    institution: 'Stanford Encyclopedia of Philosophy',
+    sourceType: 'reference work',
+    discipline: 'political theory and philosophy of religion',
+    confidence: 'high',
+    description: 'Scholarly overview of religious reasons, secularism, political authority, coercive law, and religious pluralism.',
+  },
   sepNationalism: {
     institution: 'Stanford Encyclopedia of Philosophy',
     sourceType: 'reference work',

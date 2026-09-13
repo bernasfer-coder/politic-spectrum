@@ -216,6 +216,30 @@ export const AUTHOR_REFERENCES = {
     context: 'A Nobel Prize lecture used to interpret commons governance, polycentric institutions, and alternatives to a state-versus-market binary.',
     url: 'https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/',
   },
+  lockeLetterToleration: {
+    author: 'John Locke',
+    work: 'A Letter Concerning Toleration',
+    year: '1689',
+    kind: 'scholarly',
+    context: 'Used as a political-theory anchor for religious toleration, the limits of coercion, and the distinction between civil and religious authority.',
+    url: 'https://plato.stanford.edu/entries/locke-political/',
+  },
+  aquinasMoralPolitical: {
+    author: 'Thomas Aquinas',
+    work: 'Moral, Political, and Legal Philosophy',
+    year: '13th century',
+    kind: 'scholarly',
+    context: 'A scholarly account of natural law, kingship, the common good, and the relationship between temporal and spiritual authority.',
+    url: 'https://plato.stanford.edu/entries/aquinas-moral-political/',
+  },
+  spinozaPolitical: {
+    author: 'Baruch Spinoza',
+    work: 'Political Philosophy',
+    year: '1670–1677',
+    kind: 'scholarly',
+    context: 'Used as a political-theory anchor for freedom of thought, religious authority, sovereignty, and the state’s relationship to public religion.',
+    url: 'https://plato.stanford.edu/entries/spinoza-political/',
+  },
 };
 
 // Every band receives an explicit list. These are references for the
@@ -281,6 +305,18 @@ export const BAND_CITATIONS = {
     ['mearsheimerTragedy', 'clausewitzOnWar'],
     ['clausewitzOnWar', 'hitlerMeinKampf', 'mussoliniDoctrine'],
   ],
+  religion: [
+    ['millOnLiberty', 'wollstonecraftRights'],
+    ['millOnLiberty', 'spinozaPolitical'],
+    ['lockeLetterToleration', 'millOnLiberty'],
+    ['lockeLetterToleration', 'kantPerpetualPeace'],
+    ['lockeLetterToleration', 'spinozaPolitical'],
+    ['kantPerpetualPeace', 'burkeReflections'],
+    ['burkeReflections', 'lockeLetterToleration'],
+    ['aquinasMoralPolitical', 'burkeReflections'],
+    ['aquinasMoralPolitical', 'renanNation'],
+    ['aquinasMoralPolitical', 'spinozaPolitical'],
+  ],
 };
 
 export const ARCHETYPE_CITATIONS = {
@@ -292,6 +328,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['leninStateRevolution', 'arendtTotalitarianism'],
       identity: ['marxEngelsManifesto', 'leninStateRevolution'],
       foreign: ['leninStateRevolution', 'morgenthauRealism'],
+      religion: ['spinozaPolitical', 'hobbesLeviathan'],
     },
   },
   'historical-fascist': {
@@ -302,6 +339,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['mussoliniDoctrine', 'arendtTotalitarianism'],
       identity: ['hitlerMeinKampf', 'mussoliniDoctrine'],
       foreign: ['hitlerMeinKampf', 'mussoliniDoctrine'],
+      religion: ['mussoliniDoctrine', 'aquinasMoralPolitical'],
     },
   },
   'libertarian-market': {
@@ -312,6 +350,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['millOnLiberty', 'nozickASU'],
       identity: ['lockeSecondTreatise', 'millOnLiberty'],
       foreign: ['morgenthauRealism', 'millOnLiberty'],
+      religion: ['lockeLetterToleration', 'millOnLiberty'],
     },
   },
   'progressive-liberal': {
@@ -322,6 +361,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['millOnLiberty', 'lockeSecondTreatise'],
       identity: ['kantPerpetualPeace', 'andersonImaginedCommunities'],
       foreign: ['kantPerpetualPeace', 'morgenthauRealism'],
+      religion: ['lockeLetterToleration', 'spinozaPolitical'],
     },
   },
   'national-conservative': {
@@ -332,6 +372,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['burkeReflections', 'hobbesLeviathan'],
       identity: ['renanNation', 'andersonImaginedCommunities'],
       foreign: ['morgenthauRealism', 'mearsheimerTragedy'],
+      religion: ['burkeReflections', 'aquinasMoralPolitical'],
     },
   },
   'social-democratic': {
@@ -342,6 +383,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['lockeSecondTreatise', 'millOnLiberty'],
       identity: ['renanNation', 'andersonImaginedCommunities'],
       foreign: ['kantPerpetualPeace', 'morgenthauRealism'],
+      religion: ['lockeLetterToleration', 'spinozaPolitical'],
     },
   },
   'classical-liberal': {
@@ -352,6 +394,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['lockeSecondTreatise', 'millOnLiberty'],
       identity: ['lockeSecondTreatise', 'kantPerpetualPeace'],
       foreign: ['kantPerpetualPeace', 'millOnLiberty'],
+      religion: ['lockeLetterToleration', 'millOnLiberty'],
     },
   },
   'democratic-socialist': {
@@ -362,6 +405,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['millOnLiberty', 'lockeSecondTreatise'],
       identity: ['andersonImaginedCommunities', 'renanNation'],
       foreign: ['kantPerpetualPeace', 'walzerJustWars'],
+      religion: ['lockeLetterToleration', 'millOnLiberty'],
     },
   },
   'anarchist-communalist': {
@@ -372,6 +416,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['bakuninStatism', 'millOnLiberty'],
       identity: ['bakuninStatism', 'andersonImaginedCommunities'],
       foreign: ['bakuninStatism', 'kantPerpetualPeace'],
+      religion: ['bakuninStatism', 'spinozaPolitical'],
     },
   },
   'green-commons': {
@@ -382,6 +427,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['ostromGoverningCommons', 'lockeSecondTreatise'],
       identity: ['ostromGoverningCommons', 'kantPerpetualPeace'],
       foreign: ['ostromGoverningCommons', 'kantPerpetualPeace'],
+      religion: ['lockeLetterToleration', 'ostromGoverningCommons'],
     },
   },
   'religious-traditionalist': {
@@ -392,6 +438,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['hobbesLeviathan', 'burkeReflections'],
       identity: ['burkeReflections', 'renanNation'],
       foreign: ['morgenthauRealism', 'burkeReflections'],
+      religion: ['aquinasMoralPolitical', 'burkeReflections'],
     },
   },
   'anti-colonial-liberation': {
@@ -402,6 +449,7 @@ export const ARCHETYPE_CITATIONS = {
       authority: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'lockeSecondTreatise'],
       identity: ['fanonWretchedEarth', 'gandhiHindSwaraj', 'duboisBlackReconstruction'],
       foreign: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'kantPerpetualPeace'],
+      religion: ['gandhiHindSwaraj', 'spinozaPolitical'],
     },
   },
 };

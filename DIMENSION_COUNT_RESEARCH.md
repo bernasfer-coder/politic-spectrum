@@ -1,24 +1,28 @@
 # How many political dimensions should the project use?
 
-Research snapshot: 2026-09-12. This is a research and product-design plan, not a claim that the current five-dimensional model is a validated psychological instrument. The decision should optimize explanatory value, interpretability, measurement quality, international usefulness, and user experience together.
+Research snapshot: 2026-09-12; implementation amendment: 2026-09-13. This is a research and product-design plan, not a claim that either the former five-dimensional model or the current six-dimensional model is a validated psychological instrument. The decision should optimize explanatory value, interpretability, measurement quality, international usefulness, and user experience together.
+
+## Implementation amendment
+
+The earlier 5D product decision is now superseded for the public experience. Religion in public life has been added as `dimension 06`, with five questionnaire items and ten descriptive bands. The app now uses `6d-v1`; `5d-v1` remains in the validation registry as a legacy comparator so the addition can be tested rather than assumed to improve the model.
 
 ## Preliminary conclusion
 
 There is no universally correct number of political dimensions. Established projects use different structures for different purposes: the World Values Survey presents two broad cross-cultural value dimensions; comparative party-position projects commonly use several recurring dimensions plus issue-specific positions; Pew’s political typology uses many survey items to classify people into groups in multidimensional political space; and academic research finds that one-dimensional left/right models often fail to describe political attitudes adequately.[^1][^2][^3][^4]
 
-The current five axes are a reasonable educational starting point because they separate economic policy, social values, authority, national identity, and foreign policy. That is a design hypothesis, not proof that five is optimal. The project should keep five for v1 unless research finds a clear defect, while testing possible additions as optional facets or a versioned expanded model rather than silently changing the meaning of existing scores.
+The original five axes were a reasonable educational starting point because they separated economic policy, social values, authority, national identity, and foreign policy. Religion adds a distinct public-law question: how religious authority, revelation, secular neutrality, and religious moral traditions should shape institutions. That distinction is also a design hypothesis, not proof that six is optimal.
 
 ## Final product decision
 
-**Decision: ship a five-dimensional core for v1, keep the 5D branding, and move additional concepts into optional facets, tags, and context-specific profiles.** This resolves the four-dimensional versus five-dimensional branding question and establishes the threshold for any future sixth or later core dimension.
+**Current decision: ship a six-dimensional core for the didactic release, keep the former 5D model as a legacy comparator, and move remaining concepts into optional facets, tags, and context-specific profiles.** This resolves the immediate need for a religion dimension while establishing a higher evidence threshold for any seventh or later core dimension.
 
 ### 4D: rejected for v1
 
 The project will not reduce the core to four dimensions. The current five axes answer different questions: economic organization, social values, domestic authority, national belonging, and the use of power abroad. Removing one would force at least two of those disagreements into a composite score, making mixed profiles harder to interpret and making the “why did my score move?” explanation less honest. This is a product-design judgment based on the current construct map, not a claim that a four-factor model is impossible in every research setting.
 
-### 5D: approved as the public core
+### 5D: retained as a legacy comparator
 
-The public product remains:
+The former public product was:
 
 1. Economic model.
 2. Social values.
@@ -26,13 +30,13 @@ The public product remains:
 4. National identity.
 5. Foreign policy.
 
-The 5D label is therefore accurate. Every questionnaire item, slider, result card, library profile, cache payload, and piece of branding must derive its count from the canonical `DIMENSIONS` list. Five is a useful explanatory compromise for this educational product: it is richer than a single left-right line while still fitting in one understandable result experience.
+The five-axis model remains useful as a direct comparison baseline. Every questionnaire item, slider, result card, library profile, cache payload, and piece of branding now derives its count from the canonical `DIMENSIONS` list, so the live product and its cache use six dimensions.
 
 The evidence does not establish “five” as a universal natural structure. The World Values Survey presents two broad cross-cultural value dimensions derived from factor analysis and explicitly describes its indicators as a small representation of wider underlying values.^9 CHES uses recurring measures such as economic left-right, GAL-TAN, and European integration, then adds issue-specific positions; its structure is designed for party comparison in a defined regional context rather than as a universal human political map.^10 These are reasons to treat five as a scoped product model, not as a law of politics.
 
 ### Many dimensions: not a single public slider wall
 
-The project will not add six, seven, or ten mandatory core sliders at this stage. Additional concepts remain valuable, but they should first enter as optional modules or library filters:
+The project will not add seven, eight, or ten mandatory core sliders at this stage. Additional concepts remain valuable, but they should first enter as optional modules or library filters:
 
 - religion / secularism;
 - democracy and institutionalism;

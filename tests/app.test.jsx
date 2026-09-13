@@ -19,7 +19,7 @@ import {
   SPECTRUM_BANDS,
 } from '../src/content/index.js';
 
-const CACHE_KEY = 'politic-spectrum:questionnaire:v2';
+const CACHE_KEY = 'politic-spectrum:questionnaire:v3';
 
 beforeEach(() => {
   window.localStorage.clear();
@@ -70,7 +70,7 @@ describe('questionnaire persistence', () => {
 
   it('saves a partial cache and removes it when answers are reset', () => {
     saveQuestionnaireCache({ [QUESTIONS[0].id]: OPTION_VALUES[3] }, 1);
-    expect(JSON.parse(window.localStorage.getItem(CACHE_KEY))).toMatchObject({ version: 2, questionIndex: 1 });
+    expect(JSON.parse(window.localStorage.getItem(CACHE_KEY))).toMatchObject({ version: 3, questionIndex: 1 });
     saveQuestionnaireCache({}, 0);
     expect(window.localStorage.getItem(CACHE_KEY)).toBeNull();
   });
@@ -96,16 +96,16 @@ describe('primary user flows', () => {
     expect(JSON.parse(window.localStorage.getItem(CACHE_KEY)).answers[QUESTIONS[0].id]).toBe(100);
   });
 
-  it('changes all five FreeMode sliders and updates the readout', async () => {
+  it('changes all six FreeMode sliders and updates the readout', async () => {
     const user = userEvent.setup();
     render(<App />);
     await user.click(screen.getByRole('tab', { name: /FreeMode/i }));
 
     const sliders = screen.getAllByRole('slider');
-    expect(sliders).toHaveLength(5);
+    expect(sliders).toHaveLength(6);
     for (const slider of sliders) fireEvent.change(slider, { target: { value: '100' } });
     expect(sliders.every((slider) => slider.value === '100')).toBe(true);
-    expect(screen.getByText(/YOUR FIVE-BAND READOUT/i)).toBeInTheDocument();
+    expect(screen.getByText(/YOUR SIX-BAND READOUT/i)).toBeInTheDocument();
   });
 
   it('selects a library profile and exposes the research atlas', async () => {

@@ -31,7 +31,7 @@ for (const work of RESEARCH_WORKS) {
   for (const item of work.claims) {
     assert.ok(dimensionIds.has(item.dimensionId), `${work.id} claim has an unknown dimension`);
     assert.ok(item.locator && item.summary, `${work.id} claim must include a locator and plain-language summary`);
-    assert.ok(item.positionRange[0] >= -100 && item.positionRange[1] <= 100, `${work.id} claim range must fit the five-axis scale`);
+    assert.ok(item.positionRange[0] >= -100 && item.positionRange[1] <= 100, `${work.id} claim range must fit the six-axis scale`);
   }
   assert.equal(bibliographyFor('researchWorkIds', work.id).length, 1, `${work.id} must have one bibliography record`);
   assert.equal(bibliographyRecord.rightsStatus, rights.rightsStatus, `${work.id} bibliography must mirror its rights status`);
