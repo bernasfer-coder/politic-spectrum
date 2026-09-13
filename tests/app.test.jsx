@@ -130,6 +130,11 @@ describe('primary user flows', () => {
     expect(screen.getAllByRole('gridcell')).toHaveLength(9);
     expect(screen.getByRole('button', { name: /Communist \/ Marxist-Leninist/i })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Anarcho-capitalist/i })).toBeInTheDocument();
+    expect(screen.getByText(/63 of 63 labels/i)).toBeInTheDocument();
+    expect(document.querySelectorAll('.taxonomy-card')).toHaveLength(8);
+    await user.click(screen.getByRole('button', { name: /Show all 63 labels/i }));
+    expect(document.querySelectorAll('.taxonomy-card')).toHaveLength(63);
+    expect(screen.getByRole('button', { name: /Show curated set/i })).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: /Historical fascist \/ Nazi-like/i }));
     expect(screen.getByRole('heading', { name: /Historical fascist \/ Nazi-like/i })).toBeInTheDocument();
     expect(screen.getByText(/Palette: Historical warning · rust/i)).toBeInTheDocument();

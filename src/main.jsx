@@ -611,6 +611,21 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
 }
 
 function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFilter }) {
+  const [showAll, setShowAll] = useState(false);
+  const visibleLabels = showAll ? filteredLabels : filteredLabels.slice(0, 8);
+
+  function updateTaxonomyFilter(key, value) {
+    setShowAll(false);
+    onUpdateFilter(key, value);
+  }
+
+  function clearFilters() {
+    setShowAll(false);
+    for (const [key, value] of Object.entries({ query: '', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' })) {
+      onUpdateFilter(key, value);
+    }
+  }
+
   return (
     <section className="taxonomy-catalogue">
       <div className="taxonomy-heading">
@@ -618,25 +633,27 @@ function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFil
         <p>A sourced starter registry of historical and contemporary labels. Aliases are searchable, while differences and uncertainty stay visible.</p>
       </div>
 
+      <div className="taxonomy-filter-heading"><div><p className="eyebrow">EXPLORE THE CATALOGUE</p><h4>Curated first, searchable when you want depth.</h4></div><button className="text-button subdued" onClick={clearFilters}>Clear filters</button></div>
       <div className="taxonomy-filters" aria-label="Filter political labels">
-        <label className="taxonomy-search"><span>Search labels</span><input type="search" value={filters.query} onChange={(event) => onUpdateFilter('query', event.target.value)} placeholder="e.g. nationalism, councils, liberal" /></label>
-        <FilterSelect label="Family" value={filters.family} options={filterOptions.family} onChange={(value) => onUpdateFilter('family', value)} />
-        <FilterSelect label="Label type" value={filters.labelType} options={filterOptions.labelType} onChange={(value) => onUpdateFilter('labelType', value)} />
-        <FilterSelect label="Region" value={filters.region} options={filterOptions.region} onChange={(value) => onUpdateFilter('region', value)} />
-        <FilterSelect label="Status" value={filters.status} options={filterOptions.status} onChange={(value) => onUpdateFilter('status', value)} />
-        <FilterSelect label="Axis coverage" value={filters.axis} options={DIMENSIONS.map(({ id, label }) => ({ value: id, label }))} onChange={(value) => onUpdateFilter('axis', value)} />
+        <label className="taxonomy-search"><span>Search labels</span><input type="search" value={filters.query} onChange={(event) => updateTaxonomyFilter('query', event.target.value)} placeholder="e.g. nationalism, councils, liberal" /></label>
+        <FilterSelect label="Family" value={filters.family} options={filterOptions.family} onChange={(value) => updateTaxonomyFilter('family', value)} />
+        <FilterSelect label="Label type" value={filters.labelType} options={filterOptions.labelType} onChange={(value) => updateTaxonomyFilter('labelType', value)} />
+        <FilterSelect label="Region" value={filters.region} options={filterOptions.region} onChange={(value) => updateTaxonomyFilter('region', value)} />
+        <FilterSelect label="Status" value={filters.status} options={filterOptions.status} onChange={(value) => updateTaxonomyFilter('status', value)} />
+        <FilterSelect label="Axis coverage" value={filters.axis} options={DIMENSIONS.map(({ id, label }) => ({ value: id, label }))} onChange={(value) => updateTaxonomyFilter('axis', value)} />
       </div>
 
       <div className="taxonomy-result-bar"><span>{filteredLabels.length} of {TAXONOMY_LABELS.length} labels</span><span>Search covers canonical names, aliases, periods, regions, and summaries.</span></div>
 
       {filteredLabels.length ? (
         <div className="taxonomy-grid">
-          {filteredLabels.map((label) => <TaxonomyCard key={label.id} label={label} />)}
+          {visibleLabels.map((label) => <TaxonomyCard key={label.id} label={label} />)}
         </div>
       ) : (
         <div className="taxonomy-empty"><strong>No labels match these filters.</strong><p>Try clearing one filter or searching for an alias.</p></div>
       )}
 
+      {filteredLabels.length > 8 && <button className="taxonomy-more" onClick={() => setShowAll((previous) => !previous)}>{showAll ? 'Show curated set' : `Show all ${filteredLabels.length} labels`} <span>{showAll ? '↑' : '↓'}</span></button>}
       <p className="taxonomy-disclaimer">The axis positions are approximate interpretive coordinates, not historical measurements. Broad labels such as populism and monarchism can vary substantially by time, place, faction, and policy.</p>
     </section>
   );

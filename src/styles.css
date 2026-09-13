@@ -77,5 +77,26 @@ main { max-width: 1240px; margin: auto; padding: 0 34px 76px; }
 @media (max-width: 1080px) { .atlas-filters { grid-template-columns: repeat(3, 1fr); }.atlas-search { grid-column: span 3; } }
 @media (max-width: 850px) { .research-atlas-heading { display: block; }.research-atlas-heading > p { margin-top: 13px; }.atlas-stats { grid-template-columns: repeat(2, 1fr); }.atlas-stats > div:nth-child(2) { border-right: 0; }.atlas-stats > div:nth-child(n+3) { border-top: 1px solid var(--line); }.atlas-grid { grid-template-columns: 1fr; }.atlas-section-grid { grid-template-columns: repeat(2, 1fr); }.coverage-row { grid-template-columns: 1fr; gap: 7px; }.coverage-bands { min-width: 0; }.atlas-filters { grid-template-columns: repeat(2, 1fr); }.atlas-search { grid-column: span 2; } }
 @media (max-width: 580px) { .research-atlas { margin-top: 28px; }.research-atlas-heading { padding: 22px 16px 18px; }.research-atlas-heading h3 { font-size: 20px; }.atlas-stats > div { padding: 14px; }.atlas-coverage, .atlas-sections, .atlas-backlog, .atlas-relationships { margin: 12px; }.atlas-coverage summary, .atlas-sections summary, .atlas-backlog summary, .atlas-relationships summary { padding: 12px; }.coverage-grid, .atlas-section-grid, .atlas-backlog-list, .relationship-list { padding-left: 12px; padding-right: 12px; }.coverage-bands { gap: 2px; }.coverage-cell { min-height: 31px; }.coverage-cell b { font-size: 7px; }.coverage-cell small { font-size: 9px; }.atlas-section-grid { grid-template-columns: 1fr 1fr; gap: 5px; }.atlas-filter-heading { display: block; padding: 6px 12px 12px; }.atlas-filter-heading .text-button { margin-top: 10px; }.atlas-filters { grid-template-columns: 1fr 1fr; padding: 12px; }.atlas-search { grid-column: span 2; }.atlas-result-bar { display: block; padding: 12px; line-height: 1.8; }.atlas-result-bar span { display: block; }.atlas-grid { padding: 0 12px 12px; }.research-entry-card { padding: 16px 14px; }.research-entry-card h4 { font-size: 15px; }.research-entry-meta { display: block; line-height: 1.8; }.research-entry-meta span + span::before { margin: 0 6px; }.research-claim > div { display: block; }.research-claim em { display: block; margin-top: 3px; }.research-entry-actions { display: block; line-height: 1.8; }.research-entry-actions a { display: block; }.atlas-more { width: calc(100% - 24px); margin: 0 12px 12px; }.relationship-list > div { grid-template-columns: 1fr; }.relationship-list p { grid-column: 1; }.research-atlas-note { padding: 0 14px 18px; } }
+
+/* Keep the label registry as compact and navigable as the research atlas. */
+.taxonomy-filter-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; padding: 6px 15px 14px; }
+.taxonomy-filter-heading h4 { margin: 0; color: var(--soft); font: 600 16px 'Space Grotesk', sans-serif; }
+.taxonomy-filter-heading .eyebrow { margin-bottom: 7px; }
+.taxonomy-filters { border-top: 1px solid var(--line); }
+.taxonomy-card { padding: 16px; }
+.taxonomy-summary { margin-top: 10px; }
+.taxonomy-meta { margin-top: 10px; }
+.taxonomy-axis-chips { margin-top: 11px; }
+.taxonomy-differences { margin-top: 12px; }
+.taxonomy-aliases { margin-top: 11px; }
+.taxonomy-sources { margin-top: 12px; }
+.taxonomy-more { display: block; width: calc(100% - 30px); margin: 0 15px 15px; padding: 12px; border: 1px solid rgba(85,214,190,.3); background: rgba(85,214,190,.06); color: var(--cyan); font: 9px 'DM Mono', monospace; cursor: pointer; }
+.taxonomy-more span { margin-left: 5px; }
+
+@media (max-width: 580px) {
+  .taxonomy-filter-heading { display: block; padding: 6px 12px 12px; }
+  .taxonomy-filter-heading .text-button { margin-top: 10px; }
+  .taxonomy-more { width: calc(100% - 24px); margin: 0 12px 12px; }
+}
 @media (max-width: 850px) { .profile-grid-controls { grid-template-columns: 1fr 1fr; }.profile-grid-selection { grid-column: 1 / -1; padding: 10px 0 0; border-top: 1px solid var(--line); border-left: 0; } }
 @media (max-width: 580px) { .profile-grid-controls { display: block; }.profile-grid-select + .profile-grid-select { margin-top: 10px; }.profile-grid-selection { margin-top: 12px; padding: 12px 0 0; } }
