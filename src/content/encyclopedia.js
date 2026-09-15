@@ -6671,4 +6671,342 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Expand the postwar European-integration record to include secular and socialist contributors, colonial and migration histories, NATO and anti-communism, and tensions between European universalism and national or confessional identity.',
     ],
   },
+  'religious-socialist': {
+    id: 'religious-socialist',
+    title: 'Religious socialism / liberation theology',
+    canonicalLabel: 'Religious socialism / liberation theology',
+    aliases: ['Christian socialism', 'liberation theology', 'religious left', 'social gospel', 'faith-based socialism'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This is an umbrella analytical entry for movements that connect religious ethics, collective economic justice, and liberation from domination. Christian socialism, Catholic Worker practice, Black theology, Latin American liberation theology, and other religious-socialist traditions are related but not interchangeable. The entry is Christian-centered because its strongest current sources concern Christian cases; other religious traditions remain explicit research gaps.',
+    timeScope: 'Older religious arguments about community and economic obligation are treated as antecedents, not as modern socialism. The principal modern formation runs from nineteenth-century Christian socialism and social-gospel movements through twentieth-century anti-colonial, civil-rights, Catholic Worker, and Latin American liberation movements to contemporary faith-based justice organizing.',
+    geographicScope: 'Transnational, with documented British, European, North American, Latin American, Brazilian, and anti-colonial strands. Jewish, Muslim, Buddhist, Hindu, Indigenous, African, and other religious-socialist traditions require separate language- and region-specific research.',
+    summary: 'A family of religiously grounded movements that criticizes poverty, exploitation, racial or colonial domination, and concentrated economic power while pursuing solidarity, collective organization, and liberation. It may support public ownership, cooperatives, redistribution, worker power, mutual aid, nonviolent resistance, or revolutionary change, but it does not prescribe one economic system or require clerical control of the state.',
+    summaryCitations: citations(
+      ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'marxEngelsManifesto'],
+      ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'vaticanLiberationInstruction', 'celamMedellin'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 62,
+        label: 'Strongly egalitarian and collectivist, institutionally varied',
+        explanation: 'Poverty and concentrated ownership are treated as moral and political problems. Movements may favor public ownership, worker control, cooperatives, redistribution, community sharing, labor rights, or a regulated mixed economy; religious socialism is therefore economically left-leaning without being one uniform ownership programme.',
+        citations: citations(['gutierrezTheologyLiberation', 'marxEngelsManifesto', 'dorothyDayCatholicWorker'], ['oxfordChristianSocialism', 'vaticanRerumNovarum', 'oxfordLiberationTheologies', 'kingPoorPeoplesCampaign']),
+      },
+      social: {
+        score: 35,
+        label: 'Emancipatory, with internal religious variation',
+        explanation: 'Liberation from poverty, racism, colonial status, and exclusion often supports broad equality and participation. Religious communities can nevertheless retain traditional positions on family, gender, sexuality, authority, or membership, so an emancipatory economic message does not determine every social-value position.',
+        citations: citations(['gutierrezTheologyLiberation', 'kingPoorPeoplesCampaign', 'millOnLiberty'], ['oxfordLiberationTheologies', 'celamMedellin', 'vaticanChristianFreedomLiberation', 'sepReligionPolitics']),
+      },
+      authority: {
+        score: 10,
+        label: 'Participatory and movement-based, with authority tensions',
+        explanation: 'Base communities, congregations, unions, mutual-aid groups, and social movements can mobilize ordinary people and challenge both state repression and clerical monopoly. The profile can become hierarchical when clergy, parties, revolutionary vanguards, or charismatic leaders claim to speak for the poor without accountability.',
+        citations: citations(['dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gutierrezTheologyLiberation'], ['oxfordLiberationTheologies', 'catholicWorkerMovement', 'celamMedellin', 'vdem']),
+      },
+      identity: {
+        score: 25,
+        label: 'Transnational solidarity with anti-colonial and local roots',
+        explanation: 'Solidarity often crosses class, racial, national, and colonial boundaries, while movements remain rooted in particular churches, neighborhoods, peoples, and histories. Some liberation movements combine internationalism with national liberation or cultural identity; neither religion nor socialism fixes the identity axis by itself.',
+        citations: citations(['gutierrezTheologyLiberation', 'kingPoorPeoplesCampaign', 'gandhiHindSwaraj'], ['oxfordLiberationTheologies', 'celamMedellin', 'sepColonialism', 'cambridgeReligionOriginsSocialism']),
+      },
+      foreign: {
+        score: 25,
+        label: 'Anti-imperial and generally restraint-oriented',
+        explanation: 'Religious-socialist movements commonly criticize imperial domination, militarism, racial hierarchy, and economic dependence, and many favor nonviolent resistance. Some accept armed struggle or revolutionary force under specific conditions, so anti-imperialism should not be mistaken for universal pacifism.',
+        citations: citations(['dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gandhiHindSwaraj', 'fanonWretchedEarth'], ['oxfordLiberationTheologies', 'catholicWorkerMovement', 'foreignPolicy', 'sepColonialism']),
+      },
+      religion: {
+        score: -75,
+        label: 'Strongly religiously grounded, usually anti-clerical in politics',
+        explanation: 'Religious texts, practices, communities, and theological interpretations are active sources of public justice and collective organization. This does not automatically imply theocracy: many religious-socialist movements defend conscience, pluralism, lay participation, or separation from coercive clerical government, while others debate how far religious law should shape the state.',
+        citations: citations(['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'spinozaPolitical'], ['oxfordLiberationTheologies', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'sepReligionPolitics']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Religious socialism begins from the claim that economic exploitation, poverty, racial domination, colonial rule, and social exclusion are not only technical failures but moral and spiritual questions. Religious language can supply an account of human dignity, solidarity, obligation, sin, hope, community, and liberation; socialist language can supply analysis of ownership, class, labor, political power, and material dependence. Their combination has produced many different movements rather than one ideology.',
+            citations: citations(['gutierrezTheologyLiberation', 'marxEngelsManifesto'], ['cambridgeReligionOriginsSocialism', 'oxfordChristianSocialism', 'oxfordLiberationTheologies']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Liberation theology is one important twentieth-century strand, especially in Latin America, but it should not be used as a synonym for every Christian socialist, religious left, or faith-based justice movement. The same distinction applies to the Catholic Worker and the Poor People’s Campaign: both link Christian ethics to economic justice, yet neither is a blueprint for state socialism. The entry therefore records shared family features and keeps the institutional differences visible.',
+            citations: citations(['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign'], ['oxfordLiberationTheologies', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'celamMedellin']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The economic core is a moral criticism of relations that leave some people without food, land, housing, work, voice, or equal standing while others control productive resources. Religious-socialist responses range from cooperative ownership and mutual aid to public services, labor organization, redistribution, anti-colonial development, and revolutionary transformation. The label should not be assigned simply because a movement helps the poor or uses religious symbols; its economic diagnosis and institutional aims must be examined.',
+            citations: citations(['gutierrezTheologyLiberation', 'marxEngelsManifesto', 'dorothyDayCatholicWorker'], ['oxfordChristianSocialism', 'vaticanRerumNovarum', 'oxfordLiberationTheologies']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The political method is often organized around collective agency from below: congregations, base communities, worker associations, civil-rights campaigns, cooperatives, mutual-aid networks, and popular education. Some movements work through elections and social policy; others emphasize direct action, nonviolent resistance, civil disobedience, or revolutionary struggle. The common element is not one tactic but the conviction that oppressed people should participate in changing the conditions that govern them.',
+            citations: citations(['dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gutierrezTheologyLiberation'], ['catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationTheologies', 'celamMedellin']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The entry uses liberation theology cautiously. Oxford scholarship describes liberation theologies as contextual projects that respond to particular forms of suffering through social analysis and theological reflection. The Vatican’s 1984 and 1986 documents show an internal Catholic dispute: social concern and liberation are affirmed, while certain Marxist reductions, class absolutism, or revolutionary interpretations are criticized. Neither side should be presented as the entire history of liberation theology.',
+            citations: citations(['gutierrezTheologyLiberation'], ['oxfordLiberationTheologies', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'oxfordLiberationLegacy']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Older religious arguments about community and economic obligation',
+            text: 'Religious traditions contain arguments about almsgiving, common use, just price, debt, hospitality, worker dignity, communal life, and obligations to the poor. These are antecedents for moral and institutional questions, not evidence that ancient or medieval communities were modern socialist societies. The modern category requires attention to industrial property, wage labor, mass politics, and organized movements.',
+            citations: citations(['aquinasMoralPolitical', 'gandhiHindSwaraj'], ['cambridgeReligionOriginsSocialism', 'vaticanRerumNovarum', 'sepSocialism']),
+          },
+          {
+            period: 'Nineteenth century: Christian socialism and the social question',
+            text: 'Industrialization, urban poverty, labor conflict, and socialist organization generated Christian responses in Britain and elsewhere. Christian socialists argued that economic relations should reflect fraternity, social responsibility, and the moral equality of persons; some built associations, educational projects, unions, and church movements, while others remained paternalist or resisted secular socialism. The historical field cannot be reduced to either harmony or simple church opposition.',
+            citations: citations(['marxEngelsManifesto', 'aquinasMoralPolitical'], ['oxfordChristianSocialism', 'jstorChristianSocialistRevival', 'cambridgeReligionOriginsSocialism']),
+          },
+          {
+            period: 'Late nineteenth–early twentieth centuries: social gospel, Catholic social thought, and religious labour politics',
+            text: 'Protestant social-gospel currents, Catholic social teaching, Christian labor movements, and religious reformers developed different accounts of poverty, property, industrial citizenship, and state responsibility. Some advocated social reform within capitalism; others moved toward socialism, cooperatives, or stronger labor power. Rerum Novarum influenced Catholic social debate, but Catholic social teaching should not be collapsed into socialism or treated as a single party programme.',
+            citations: citations(['aquinasMoralPolitical', 'dorothyDayCatholicWorker'], ['oxfordChristianSocialism', 'vaticanRerumNovarum', 'cambridgeReligionOriginsSocialism']),
+          },
+          {
+            period: '1930s–1940s: Catholic Worker, personalism, pacifism, and anti-fascist social action',
+            text: 'Dorothy Day and the Catholic Worker movement connected hospitality, voluntary poverty, labor solidarity, community houses, and pacifism. This was a radical practice of Christian social action rather than a proposal for a centralized socialist state. It illustrates how religious socialism can organize material support and political witness through voluntary association, while also raising questions about scale, gender, authority, and dependence on unpaid care.',
+            citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'oxfordChristianSocialism']),
+          },
+          {
+            period: '1940s–1960s: Black theology, civil rights, and economic justice',
+            text: 'Black churches and Christian social movements linked racial equality, democratic citizenship, nonviolence, and economic justice. Martin Luther King Jr.’s Poor People’s Campaign expanded the civil-rights agenda toward jobs, income, housing, and multiracial solidarity. This tradition is related to religious socialism but is not reducible to an imported European class doctrine; race, citizenship, U.S. constitutional history, and movement strategy are central.',
+            citations: citations(['kingPoorPeoplesCampaign', 'duboisBlackReconstruction'], ['kingPoorPeoplesCampaign', 'oxfordLiberationTheologies', 'sepColonialism']),
+          },
+          {
+            period: '1960s–1970s: Vatican II, Medellín, base communities, and Latin American liberation theology',
+            text: 'Latin American Catholic movements interpreted poverty, dependency, landlessness, authoritarianism, and colonial legacies through theological reflection and social analysis. The 1968 Medellín conference became an important institutional setting, while Gustavo Gutiérrez’s work gave a major intellectual expression to liberation theology. Base communities and popular organizations varied by country and did not form one centralized political party or one identical relationship to Marxism.',
+            citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['celamMedellin', 'oxfordLiberationTheologies', 'oxfordLiberationLegacy']),
+          },
+          {
+            period: '1980s: internal Catholic debate over Marxism, freedom, and liberation',
+            text: 'The Vatican’s 1984 instruction criticized forms of liberation theology that adopted Marxist categories without sufficient critical assessment, especially where class conflict became an all-explaining framework or political liberation displaced Christian claims. The 1986 instruction also emphasized Christian freedom, social justice, and liberation. These documents are evidence of an internal doctrinal dispute, not proof that all liberation theology was Marxist or that all criticism rejected social transformation.',
+            citations: citations(['gutierrezTheologyLiberation'], ['vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'oxfordLiberationTheologies']),
+          },
+          {
+            period: 'Late twentieth century–present: plural religious lefts and new liberation claims',
+            text: 'Religious justice movements now address poverty, migration, climate, race, gender, incarceration, Indigenous rights, debt, war, and global inequality. Some remain connected to churches; others are ecumenical, interfaith, post-denominational, or explicitly critical of religious institutions. The category remains useful only when the movement’s theology, social base, economic goals, authority structure, and relationship to state power are separately documented.',
+            citations: citations(['kingPoorPeoplesCampaign', 'dorothyDayCatholicWorker', 'senDevelopmentFreedom'], ['oxfordLiberationLegacy', 'oxfordLiberationTheologies', 'sepReligionPolitics']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'British Christian socialism',
+                distinction: 'Uses Christian fellowship, social ethics, labor organization, and critique of acquisitive individualism to support socialist or cooperative reform.',
+                relation: 'An important nineteenth- and twentieth-century strand, but its institutional and theological positions varied from church reform to Labour politics and voluntary association.',
+                citations: citations(['aquinasMoralPolitical', 'marxEngelsManifesto'], ['oxfordChristianSocialism', 'jstorChristianSocialistRevival', 'cambridgeReligionOriginsSocialism']),
+              },
+              {
+                label: 'Catholic Worker personalism',
+                distinction: 'Combines hospitality, voluntary poverty, worker solidarity, community houses, nonviolence, and resistance to war and state violence.',
+                relation: 'Religious-socialist in its critique of poverty and property, but decentralized and pacifist rather than a programme for nationalization or party-state power.',
+                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'oxfordChristianSocialism']),
+              },
+              {
+                label: 'Latin American liberation theology',
+                distinction: 'Uses contextual theology and social analysis to interpret the suffering of the poor and organize transformative action in particular historical settings.',
+                relation: 'The most prominent case in this entry, but it is not identical to Marxism, socialism, Catholic social teaching, or every Latin American church movement.',
+                citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['oxfordLiberationTheologies', 'celamMedellin', 'vaticanLiberationInstruction']),
+              },
+              {
+                label: 'Black theology and Christian economic justice',
+                distinction: 'Connects Christian liberation to racial equality, anti-racism, democratic citizenship, nonviolence, and economic transformation.',
+                relation: 'Shares liberationist and egalitarian commitments while grounding its analysis in Black religious experience, racial capitalism, U.S. history, and movement strategy.',
+                citations: citations(['kingPoorPeoplesCampaign', 'duboisBlackReconstruction'], ['kingPoorPeoplesCampaign', 'oxfordLiberationTheologies']),
+              },
+              {
+                label: 'Christian social democracy and welfare activism',
+                distinction: 'Pursues redistribution, labor rights, public services, and social protection through pluralist parties, democratic institutions, and regulated markets.',
+                relation: 'Overlaps with Christian democracy and social democracy, but becomes more specifically religious-socialist when egalitarian transformation and liberation from domination are central rather than only social insurance.',
+                citations: citations(['keynesGeneralTheory', 'aquinasMoralPolitical'], ['oxfordChristianSocialism', 'vaticanRerumNovarum', 'sepSocialism']),
+              },
+              {
+                label: 'Anti-colonial and Indigenous religious liberation',
+                distinction: 'Links religious or spiritual authority to self-determination, land, cultural survival, anti-imperial resistance, and the repair of colonial domination.',
+                relation: 'Can overlap with socialism but may prioritize land, peoplehood, spiritual sovereignty, or decolonization rather than class ownership; traditions must not be subsumed into a Christian category.',
+                citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth'], ['sepColonialism', 'oxfordLiberationTheologies']),
+              },
+              {
+                label: 'Religious socialism versus theocracy',
+                distinction: 'Religious socialism grounds social justice in faith while often seeking participation and solidarity; theocracy makes religious law, office, or authorized interpretation constitutive of government.',
+                relation: 'Religious socialism can be anti-clerical, pluralist, or critical of church hierarchy. It becomes theocratic only when religious supremacy structures coercive state authority and equal dissent is denied.',
+                citations: citations(['spinozaPolitical', 'lockeLetterToleration', 'gutierrezTheologyLiberation'], ['sepReligionPolitics', 'vaticanLiberationInstruction', 'oxfordStateReligionFreedom']),
+              },
+              {
+                label: 'Religious socialism versus secular democratic socialism',
+                distinction: 'Both may support equality, worker power, public ownership, and democratic institutions, but religious socialism treats theological or spiritual commitments as active sources of political motivation or legitimacy.',
+                relation: 'The two can cooperate in coalitions and movements; their disagreements concern public reasons, church authority, moral anthropology, and the place of religion in law and organization.',
+                citations: citations(['marxEngelsManifesto', 'millOnLiberty', 'gutierrezTheologyLiberation'], ['sepSocialism', 'oxfordLiberationTheologies', 'sepReligionPolitics']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Gustavo Gutiérrez',
+                role: 'Peruvian theologian whose work helped articulate Latin American liberation theology around poverty, history, social analysis, and Christian liberation.',
+                caveat: 'Gutiérrez represents one Catholic and Latin American theological project; his work should not be used to classify every church movement, socialist party, or Christian view of poverty.',
+                citations: citations(['gutierrezTheologyLiberation'], ['oxfordLiberationTheologies', 'vaticanLiberationInstruction', 'celamMedellin']),
+              },
+              {
+                name: 'Dorothy Day',
+                role: 'Catholic Worker founder associated with voluntary poverty, hospitality, labor solidarity, personalist community, and pacifism.',
+                caveat: 'The Catholic Worker is a decentralized movement and not a state-socialist or clerical governing model; local houses differ in practice and political emphasis.',
+                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'oxfordChristianSocialism']),
+              },
+              {
+                name: 'Martin Luther King Jr.',
+                role: 'Christian movement leader who connected racial justice, nonviolent action, democratic citizenship, jobs, income, and economic justice.',
+                caveat: 'King’s political thought changed across contexts and should not be reduced to a generic Christian-socialist label; the Poor People’s Campaign is a specific movement programme.',
+                citations: citations(['kingPoorPeoplesCampaign'], ['kingPoorPeoplesCampaign', 'oxfordLiberationTheologies']),
+              },
+              {
+                name: 'Gandhi and religiously grounded anti-colonial economics',
+                role: 'A non-Christian comparative reference for ethical self-rule, nonviolence, village economy, and resistance to imperial domination.',
+                caveat: 'Gandhian swaraj is not a synonym for socialism or liberation theology; it is included to prevent the entry from treating Christian cases as the whole field.',
+                citations: citations(['gandhiHindSwaraj'], ['sepColonialism', 'oxfordLiberationTheologies']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'British Christian socialist revival',
+                period: 'Britain, especially 1877–1914',
+                match: 'Religious grounds for socialist belief, social reform, church organization, and labor-oriented political imagination.',
+                caveat: 'The revival contained Anglican, Methodist, academic, worker, paternalist, and socialist currents; it was neither one party nor uniformly anti-capitalist.',
+                citations: citations(['aquinasMoralPolitical', 'marxEngelsManifesto'], ['jstorChristianSocialistRevival', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism']),
+              },
+              {
+                name: 'Catholic Worker houses',
+                period: 'United States, from 1933; decentralized communities internationally',
+                match: 'Hospitality, voluntary poverty, mutual aid, worker solidarity, and pacifist resistance organized through religious community.',
+                caveat: 'Houses vary and operate within wider legal and economic systems; they are not complete examples of a national socialist economy or stateless society.',
+                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement']),
+              },
+              {
+                name: 'Poor People’s Campaign',
+                period: 'United States, 1967–1968',
+                match: 'A multiracial, Christian-inflected campaign for jobs, income, housing, and economic justice using nonviolent protest and federal demands.',
+                caveat: 'The campaign was brief, coalition-based, and shaped by U.S. racial and constitutional history; it should not be relabeled a complete socialist state project.',
+                citations: citations(['kingPoorPeoplesCampaign'], ['kingPoorPeoplesCampaign']),
+              },
+              {
+                name: 'Medellín and Latin American base-community movements',
+                period: 'Latin America, from the 1960s onward',
+                match: 'Church-linked social transformation, popular organization, poverty analysis, and theological reflection after Vatican II and the 1968 Medellín conference.',
+                caveat: 'Countries, dioceses, base communities, clergy, lay groups, and political alliances differed greatly; the case cannot be reduced to one centralized liberation-theology movement.',
+                citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['celamMedellin', 'oxfordLiberationTheologies', 'oxfordLiberationLegacy']),
+              },
+              {
+                name: 'Faith-based anti-colonial and social-justice movements',
+                period: 'Twentieth century to present; country-specific',
+                match: 'Religious organizations and leaders have sometimes supported land reform, anti-racism, labor rights, decolonization, peace, welfare, and democratic transition.',
+                caveat: 'Religion can also support hierarchy, nationalism, authoritarianism, or exclusion. Each movement needs evidence about doctrine, organization, social base, rights, and actual political practice.',
+                citations: citations(['gandhiHindSwaraj', 'kingPoorPeoplesCampaign', 'gutierrezTheologyLiberation'], ['oxfordLiberationTheologies', 'sepColonialism', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'democratic-socialist', relation: 'shares egalitarian economics, worker power, and democratic transformation, while religious socialism grounds motivation or legitimacy partly in faith and religious community' },
+              { id: 'social-democratic', relation: 'shares welfare, labor, and redistribution, but religious socialism may pursue deeper liberation, communal transformation, or theological critique of property and power' },
+              { id: 'christian-democratic', relation: 'shares Christian social ethics and concern for the common good, but usually differs over economic ownership, class analysis, revolutionary change, and the scale of redistribution' },
+              { id: 'anti-colonial-liberation', relation: 'overlaps in resistance to empire, racial hierarchy, and domination, but anti-colonial liberation is not necessarily religious or socialist' },
+              { id: 'anarchist-communalist', relation: 'can share mutual aid, local participation, anti-authoritarianism, and collective ownership, while religious socialism adds theological and community institutions' },
+              { id: 'green-commons', relation: 'may share stewardship, commons, solidarity, and critique of concentrated power, but ecological politics is not necessarily religious or socialist' },
+              { id: 'theocratic', relation: 'religious motivation does not imply clerical government; theocracy requires constitutive religious supremacy over coercive authority and political membership' },
+              { id: 'religious-traditionalist', relation: 'shares religious public ethics but may be its social and economic opposite when liberationist movements challenge inherited hierarchy and property' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'A first criticism is conceptual fusion. “Religious socialism” can hide major differences between ethical socialism, church reform, Catholic social teaching, liberation theology, Black theology, the Catholic Worker, Islamic socialism, Jewish labor movements, and interfaith justice activism. The classification should state which tradition, country, period, institution, and economic programme is being described rather than treating religious concern for the poor as proof of socialism.',
+            citations: citations(['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'marxEngelsManifesto'], ['cambridgeReligionOriginsSocialism', 'oxfordChristianSocialism', 'oxfordLiberationTheologies']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns authority. Grassroots participation can be empowering, but clergy, charismatic leaders, revolutionary parties, armed groups, or educated activists may claim to represent the oppressed. Religious certainty can make disagreement appear immoral, while socialist certainty can make dissent appear class betrayal. Safeguards include internal democracy, equal membership, transparent finances, independent criticism, nonviolence where possible, freedom of conscience, and the ability to leave or organize another movement.',
+            citations: citations(['dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'spinozaPolitical'], ['catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'sepReligionPolitics', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns the use of Marxist analysis. Social analysis can illuminate class, dependency, ownership, and power, but a movement may reduce every moral or religious conflict to class position, justify coercion in the name of historical necessity, or import categories that do not fit local communities. The Vatican’s 1984 instruction is one primary record of this concern; it should be read alongside liberation theology’s own internal diversity rather than treated as a verdict on the whole field.',
+            citations: citations(['gutierrezTheologyLiberation', 'marxEngelsManifesto'], ['vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'oxfordLiberationTheologies']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A fourth criticism concerns romanticizing the poor. “The poor” are not a single political subject, and communities contain gender, racial, ethnic, religious, generational, and class differences. A movement can speak for poor people while excluding women, minorities, dissenters, queer people, migrants, Indigenous communities, or internal critics. Research should identify who participates, who decides, whose labor is unpaid, and who receives material benefits.',
+            citations: citations(['gutierrezTheologyLiberation', 'kingPoorPeoplesCampaign', 'millOnLiberty'], ['oxfordLiberationTheologies', 'celamMedellin', 'vdem', 'sepReligionPolitics']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, religious socialism has no single position on violence, the state, nationalism, secular law, property, or international institutions. Pacifist movements, electoral coalitions, anti-colonial resistance, revolutionary groups, welfare activists, and cooperative communities should not be placed on one exact score without evidence. The profile is a didactic composite, and the entry remains deliberately incomplete outside its best-sourced Christian, Latin American, European, and North American cases.',
+            citations: citations(['dorothyDayCatholicWorker', 'gandhiHindSwaraj', 'fanonWretchedEarth', 'gutierrezTheologyLiberation'], ['foreignPolicy', 'oxfordLiberationTheologies', 'sepColonialism', 'cambridgeReligionOriginsSocialism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto', 'spinozaPolitical', 'millOnLiberty'],
+      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem'],
+      editorialNote: 'The entry is an umbrella synthesis with a Christian-centered evidence base. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, and theocracy. Scores are didactic composites; non-Christian traditions and country-specific claims require separate research.',
+    },
+    researchGaps: [
+      'Add original-language scholarship in Portuguese and Spanish on Brazilian base communities, liberation theology, land and labor movements, Black theology, Indigenous theology, and church–state relations; verify editions and translations.',
+      'Add French, German, Italian, Dutch, and English scholarship on Christian socialism, social gospel, religious labor movements, Catholic Worker networks, personalism, and the relationship with socialist and labor parties.',
+      'Research Jewish socialist and Bund traditions, Islamic socialism and liberation thought, Buddhist and Hindu social movements, African religious socialism, Indigenous spiritual sovereignty, and interfaith justice organizing without forcing them into a Christian template.',
+      'Add primary documents from Medellín, Puebla, base communities, Catholic Worker houses, Black theology, Christian socialist parties, labor unions, and relevant state or church archives with precise dates and institutional provenance.',
+      'Compare grassroots participation, clerical authority, party organization, armed struggle, nonviolence, welfare provision, cooperative ownership, and public ownership across cases rather than assuming that all liberation movements share one structure.',
+      'Add evidence on gender, sexuality, race, caste, Indigenous status, migration, disability, unpaid care, minority religion, dissent, and internal exclusion within religious-socialist movements.',
+      'Test the six-dimensional scores against party programmes, movement documents, institutional practice, and country-specific historical data; do not infer a national ideology from the presence of churches or faith-based charities alone.',
+    ],
+  },
 };

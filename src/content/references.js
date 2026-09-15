@@ -400,6 +400,30 @@ export const AUTHOR_REFERENCES = {
     context: 'A French Catholic philosophical work associated with personalism and the attempt to connect Christian social thought with democratic pluralism without turning the state into a confessional government.',
     url: 'https://books.google.com/books/about/Integral_Humanism.html?hl=en&id=g_EPAQAAIAAJ',
   },
+  gutierrezTheologyLiberation: {
+    author: 'Gustavo Gutiérrez',
+    work: 'A Theology of Liberation: History, Politics, and Salvation',
+    year: '1971',
+    kind: 'primary',
+    context: 'A foundational Latin American liberation-theology text connecting theological reflection, social analysis, historical action, and the liberation of the poor; it is cited as one contextual theological project, not as a universal Christian or socialist doctrine.',
+    url: 'https://www.sigueme.es/libros/teologia-de-la-liberacion.html',
+  },
+  dorothyDayCatholicWorker: {
+    author: 'Dorothy Day',
+    work: 'The Catholic Worker movement and writings',
+    year: '1933–1980',
+    kind: 'primary',
+    context: 'A Catholic Worker tradition of voluntary poverty, hospitality, labor solidarity, personalist community, and pacifism; it is distinct from state socialism and from a clerical programme for government.',
+    url: 'https://catholicworker.org/books/the-long-loneliness/',
+  },
+  kingPoorPeoplesCampaign: {
+    author: 'Martin Luther King Jr.',
+    work: 'Poor People’s Campaign',
+    year: '1967–1968',
+    kind: 'primary',
+    context: 'A movement programme linking Christian moral language, nonviolent direct action, racial justice, jobs, income, and economic rights; it is used as a movement example rather than evidence of one complete socialist system.',
+    url: 'https://kinginstitute.stanford.edu/publications/autobiography-martin-luther-king-jr/chapter-31-poor-peoples-campaign',
+  },
 };
 
 // Every band receives an explicit list. These are references for the
