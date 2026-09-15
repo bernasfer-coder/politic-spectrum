@@ -974,7 +974,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A liberal-democratic profile that combines civil and political rights, personal autonomy, social inclusion, and equal citizenship with public action to reduce deprivation, regulate markets, and expand practical opportunity. It accepts an active state but keeps that state accountable to elections, courts, rights, and pluralist institutions.',
     summaryCitations: citations(
       ['millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory', 'kantPerpetualPeace'],
-      ['sepLiberalism', 'vdem', 'sepReligionPolitics'],
+      ['sepLiberalism', 'oxfordRepublicanismTransatlantic', 'viePubliqueLaiciteStasi', 'vdem', 'sepReligionPolitics'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -999,7 +999,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: 54,
         label: 'Inclusive internationalist',
         explanation: 'Political membership is centered on equal citizenship, pluralism, and cooperation across borders rather than inherited ethnicity or compulsory cultural uniformity. National institutions can remain meaningful, but they are judged by inclusion and rights rather than ethnic homogeneity.',
-        citations: citations(['kantPerpetualPeace', 'andersonImaginedCommunities'], ['sepLiberalism']),
+        citations: citations(['kantPerpetualPeace', 'andersonImaginedCommunities', 'constantLibertyModerns', 'tocquevilleDemocracy'], ['sepLiberalism', 'oxfordRepublicanismTransatlantic', 'cambridgeIndivisibilityFrenchRepublic']),
       },
       foreign: {
         score: -28,
@@ -1011,7 +1011,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: 65,
         label: 'Strongly secular and pluralist',
         explanation: 'Public law is justified through equal citizenship and constitutional principles rather than one religious authority, while religious belief and practice remain protected. Progressive liberalism can include religious citizens and religious social movements without giving a faith coercive control over the state.',
-        citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepLiberalism']),
+        citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepLiberalism', 'viePubliqueLaiciteStasi']),
       },
     },
     sections: [
@@ -1028,6 +1028,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The profile is deliberately between classical libertarianism and democratic socialism. It generally preserves a mixed economy and private enterprise, but argues that markets need democratic rules and social safeguards. It also differs from authoritarian progressivism: rights, dissent, elections, and institutional limits are not optional decorations.',
             citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'French republican and social-liberal traditions show why “progressive liberal” cannot be reduced to an Anglo-American left label. Republican language often makes equality, civic education, solidarity, and a shared public framework central, while laïcité is presented institutionally through freedom of conscience, equal treatment of convictions, and neutrality of public power. The same universalist language can also generate disputes when formal individual citizenship leaves group-based discrimination or minority claims insufficiently visible.',
+            citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
           },
         ],
       },
@@ -1072,6 +1077,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism', 'vdem']),
           },
           {
+            period: 'French republican and social-liberal reform traditions',
+            text: 'French republican thought developed a distinct vocabulary around citizenship, equality, civic education, solidarity, and the public role of laïcité. It could complement liberal individual rights and social reform, but it also produced continuing arguments over centralization, cultural assimilation, group recognition, and whether universal legal status is enough to address unequal social power. These debates are part of progressive liberalism’s genealogy, not a single settled French model.',
+            citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
+          },
+          {
             period: '1930s–1950s: economic stabilization and democratic reconstruction',
             text: 'The Great Depression, mass unemployment, and the experience of war strengthened arguments for social insurance, macroeconomic management, public services, and international institutions. These reforms produced different national models and should not be reduced to one universally agreed progressive programme.',
             citations: citations(['keynesGeneralTheory', 'kantPerpetualPeace'], ['sepLiberalism', 'foreignPolicy']),
@@ -1095,6 +1105,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Combines civil liberties and private enterprise with public services, social insurance, regulation, and equal opportunity.',
                 relation: 'Closest named family to this profile; its economic and social range is still broad.',
                 citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism']),
+              },
+              {
+                label: 'French republican social liberalism',
+                distinction: 'Connects individual rights and public reform to civic equality, solidarity, education, a common political framework, and a particular account of laïcité; it does not automatically endorse one party or one view of group recognition.',
+                relation: 'A historically important national-language variant and contrast case: it can support progressive inclusion while remaining more universalist and institution-centered than identity-based pluralism.',
+                citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
               },
               {
                 label: 'Progressive constitutional liberalism',
@@ -1186,6 +1202,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'European liberal democracies differ on labor power, welfare generosity, markets, migration, religion, and foreign policy; “Europe” is not one ideological unit.',
                 citations: citations(['keynesGeneralTheory', 'kantPerpetualPeace'], ['sepLiberalism', 'vdem', 'foreignPolicy']),
               },
+              {
+                name: 'French Third Republic reform traditions',
+                period: '1870–1940, with later republican continuities and disputes',
+                match: 'partial republican and social-liberal resemblance',
+                caveat: 'The period combined civic education, secular public institutions, and social reform with colonial domination, unequal citizenship, gender exclusion, and conflicts over religion and group difference.',
+                citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'sageFrenchRepublicLiberalFounders', 'cambridgeIndivisibilityFrenchRepublic']),
+              },
             ],
           },
         ],
@@ -1227,6 +1250,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Progressive language can also conceal disagreement over the boundaries of pluralism. Anti-discrimination and equal citizenship may conflict with claims of religious autonomy, speech, association, or local self-government. The entry therefore treats secular public law as a constitutional settlement, not as a conclusion that religious citizens or traditions are politically irrelevant.',
             citations: citations(['lockeLetterToleration', 'spinozaPolitical', 'millOnLiberty'], ['sepReligionPolitics', 'sepLiberalism']),
           },
+          {
+            type: 'paragraph',
+            text: 'The French republican case adds a specific caution: universal citizenship can be emancipatory when it blocks inherited legal hierarchy, yet insufficient when abstract equality obscures patterned exclusion or treats minority organization as a threat to common citizenship. Laïcité likewise has both a rights-protecting interpretation and more contested state-cultural interpretations; the label should not be used as shorthand for either secular neutrality or hostility to religion.',
+            citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
+          },
         ],
       },
     ],
@@ -1242,12 +1270,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'bernsteinEvolutionarySocialism',
         'marxEngelsManifesto',
+        'constantLibertyModerns',
+        'tocquevilleDemocracy',
       ],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy'],
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'vdem', 'foreignPolicy'],
       editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual.',
     },
     researchGaps: [
-      'Add French-language sources on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality.',
+      'Expand French-language primary and specialist scholarship on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality, including colonial and postcolonial critiques.',
       'Add German-language scholarship on new liberalism, the social market, post-war constitutional democracy, and debates over welfare-state authority.',
       'Add country-specific evidence for the Progressive Era, New Deal, post-war Europe, and contemporary liberal democracies rather than relying on broad period labels.',
       'Add specialist research on colonialism, race, migration, disability, LGBTQ+ rights, environmental policy, and the tensions between universalism and pluralism.',
