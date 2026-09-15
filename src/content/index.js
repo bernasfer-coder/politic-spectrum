@@ -2,6 +2,7 @@ import { ARCHETYPE_CITATIONS, AUTHOR_REFERENCES, BAND_CITATIONS } from './refere
 import { RIGHTS_RECORDS } from './rights.js';
 import { TAXONOMY_LABELS as RAW_TAXONOMY_LABELS } from './taxonomy.js';
 import { BIBLIOGRAPHY_ACCESS_DATE, BIBLIOGRAPHY_METADATA } from './bibliography.js';
+import { ENCYCLOPEDIA_ENTRIES } from './encyclopedia.js';
 import {
   RESEARCH_BACKLOG,
   RESEARCH_COVERAGE_MATRIX,
@@ -98,6 +99,7 @@ const RESEARCH_SOURCES = [
   { id: 'sepLegalism', label: 'Stanford Encyclopedia — Legalism', url: 'https://plato.stanford.edu/entries/chinese-legalism/', note: 'Historical scholarship on the fa tradition and classical Chinese statecraft.' },
   { id: 'sepMedieval', label: 'Stanford Encyclopedia — Medieval Political Philosophy', url: 'https://plato.stanford.edu/entries/medieval-political/', note: 'Historical political concepts including kingship, republicanism, law, and authority.' },
   { id: 'ushmmFascism', label: 'United States Holocaust Memorial Museum — Fascism', url: 'https://encyclopedia.ushmm.org/content/en/article/fascism-1', note: 'Historical context for fascism and the Nazi regime; used for warning and contextualization.' },
+  { id: 'ushmmCommunism', label: 'United States Holocaust Memorial Museum — Communism', url: 'https://encyclopedia.ushmm.org/content/en/article/communism-1', note: 'Bounded historical context on the Russian Revolution, the Soviet Union, Stalinist collectivization, industrial quotas, and the distinction between communist theory and later regimes.' },
   { id: 'panAfricanism', label: 'African Affairs — Pan-Africanism', url: 'https://academic.oup.com/afraf/article/125/498/1/8512174', note: 'Scholarly treatment of Pan-African political thought and transnational solidarity.' },
 ];
 
@@ -1341,6 +1343,16 @@ function buildBibliographyRecords() {
     }
   }
 
+  for (const entry of Object.values(ENCYCLOPEDIA_ENTRIES)) {
+    const profileEntry = `encyclopedia:${entry.id}`;
+    for (const citationId of entry.references?.authorReferenceIds ?? []) {
+      addRelationship(authorUsage[citationId], 'profileEntries', profileEntry);
+    }
+    for (const sourceId of entry.references?.researchSourceIds ?? []) {
+      addRelationship(researchUsage[sourceId], 'profileEntries', profileEntry);
+    }
+  }
+
   for (const work of RESEARCH_WORKS) {
     for (const dimensionId of work.dimensionIds ?? []) {
       const dimension = DIMENSIONS.find(({ id }) => id === dimensionId);
@@ -1639,6 +1651,7 @@ export {
   SPECTRUM_BANDS,
   TAXONOMY_LABELS,
   AUTHOR_REFERENCES,
+  ENCYCLOPEDIA_ENTRIES,
   BIBLIOGRAPHY_ACCESS_DATE,
   BIBLIOGRAPHY_BY_ID,
   BIBLIOGRAPHY_RECORDS,

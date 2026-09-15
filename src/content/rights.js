@@ -190,6 +190,7 @@ const RIGHTS_RECORDS = {
     sepLegalism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     sepMedieval: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     ushmmFascism: { ...PERMISSION_SENSITIVE, notes: 'Institutional educational source used for historical context; reproduce no USHMM text, images, or graphics.' },
+    ushmmCommunism: { ...PERMISSION_SENSITIVE, notes: 'Institutional educational source used for bounded historical context; reproduce no USHMM text, images, or graphics.' },
     panAfricanism: { ...LINK_ONLY, notes: 'Scholarly article used as a linked source; no article text, figures, or tables are reproduced.' },
     sepReligionPolitics: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
   },
