@@ -519,7 +519,7 @@ const ARCHETYPES_RAW = [
   },
   {
     id: 'historical-fascist',
-    name: 'Historical fascist / Nazi-like',
+    name: 'Italian and interwar fascism',
     accent: '#ff9f43',
     profile: { economic: -18, social: 92, authority: 98, identity: 96, foreign: 90 },
     summary: 'A historical warning profile: extreme hierarchy, authoritarian rule, aggressive nationalism, and militarized foreign policy.',

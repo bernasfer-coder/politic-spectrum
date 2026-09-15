@@ -139,8 +139,8 @@ describe('primary user flows', () => {
     expect(document.querySelectorAll('.taxonomy-card')).toHaveLength(63);
     expect(screen.getByRole('button', { name: /Show curated set/i })).toBeInTheDocument();
     await user.click(screen.getByRole('tab', { name: /Reference profiles/i }));
-    await user.click(screen.getByRole('button', { name: /Historical fascist \/ Nazi-like/i }));
-    expect(screen.getByRole('heading', { name: /Historical fascist \/ Nazi-like/i })).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: /Italian and interwar fascism/i }));
+    expect(screen.getByRole('heading', { name: /Italian and interwar fascism/i })).toBeInTheDocument();
     expect(screen.getByText(/Palette: Historical warning · rust/i)).toBeInTheDocument();
     await user.click(screen.getByRole('tab', { name: /Encyclopedia/i }));
     expect(screen.getByText(/29 of 29 entries/i)).toBeInTheDocument();
