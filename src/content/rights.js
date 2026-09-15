@@ -170,6 +170,9 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    leoImmortaleDeiFrench: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-15', notes: 'Original paraphrase and link only. The historical date does not clear the French version, transcription, or modern translations for reproduction.' },
+    vaticanReligiousFreedomFrench: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-15', notes: 'No conciliar passage, translated extract, facsimile, or media reproduced; public access is not treated as a reuse licence.' },
+    portierEpiscopateFreedom: { ...LINK_ONLY, reviewedAt: '2026-09-15', license: 'Publisher website states all rights reserved; free PDF access is not a republication licence.', notes: 'Only original synthesis and a publisher link. No article text, translated quotation, page image, or PDF is bundled.' },
     allegrettiSeringueiros: { ...LINK_ONLY, reviewedAt: '2026-09-15', license: 'Publisher states that volumes 1–52 (2000–2019) did not adopt a Creative Commons licence; its later CC BY policy is not assumed to cover this 2008 article.', notes: 'Original English paraphrase and source link only. No Portuguese passages, translated extracts, tables, or media reproduced.' },
     chicoMendesCreationDecree: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-15', notes: 'Historical Portuguese legal text paraphrased independently. The transcription and issuing date are recorded; current legal validity and present reserve conditions were not audited.' },
     agarwalParticipatoryExclusions: { ...LINK_ONLY, reviewedAt: '2026-09-15', license: '© 2001 Published by Elsevier Science Ltd., as printed in the author-hosted paper.', notes: 'Printed pages 1623–1625 checked visually. No table, page image, quotation, or translated passage is republished; the participation distinction is summarized independently.' },

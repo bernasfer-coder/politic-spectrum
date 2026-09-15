@@ -3259,8 +3259,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       authority: {
         score: 70,
         label: 'Order-oriented and authority-affirming',
-        explanation: 'Moral, familial, religious, and political authority receive substantial weight, especially when disorder or moral decline is perceived. Constitutional limits, natural law, customary rights, and institutional checks may still be accepted; the profile becomes theocratic or clerical-authoritarian only when religious authority is made constitutive of coercive rule and dissent is denied.',
-        citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['sepReligionPolitics', 'sepMedieval', 'vdem']),
+        explanation: 'Moral, familial, religious, and political authority receive substantial weight, especially when disorder or moral decline is perceived. Constitutional limits, natural law, customary rights, and institutional checks may still be accepted. This illustrative score does not measure believers: Dignitatis humanae §2 protects conscience against human coercion.',
+        citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['sepReligionPolitics', 'sepMedieval', 'vdem', 'vaticanReligiousFreedomFrench']),
       },
       identity: {
         score: -10,
@@ -3277,8 +3277,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       religion: {
         score: -78,
         label: 'Strongly religiously grounded',
-        explanation: 'Religious revelation, natural law, clerical teaching, sacred tradition, or a confessional moral order is expected to shape public institutions and law to a substantial degree. The range extends from religious inspiration within pluralist constitutionalism to formal establishment; the high-authority endpoint is a theocracy, not the whole category.',
-        citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy']),
+        explanation: 'Religious revelation, natural law, clerical teaching, sacred tradition, or a confessional moral order is expected to shape public institutions and law to a substantial degree. The range extends from religious inspiration within pluralist constitutionalism to formal establishment; the high-authority endpoint is a theocracy, not the whole category. Public religious ethics and governmental power to compel belief must be evaluated separately.',
+        citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'vaticanReligiousFreedomFrench']),
       },
     },
     sections: [
@@ -3295,6 +3295,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The label covers a wide range. A religiously informed constitutionalist may protect freedom of conscience and equal citizenship while drawing policy from religious ethics. A confessional state may privilege one tradition. A religious nationalist may define belonging through faith and ancestry. A theocracy gives clerical or revealed authority a constitutive role in coercive law. These positions overlap, but they must not be collapsed into one spectrum point or one religion.',
             citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Catholic case below tests this category’s boundaries, not the character of every religion or Catholic. Primary doctrine, scholarly interpretation, and this site’s illustrative coordinates are different evidence types. French versions inform original English paraphrases, not verified translations.',
+            citations: citations([], ['leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom']),
           },
         ],
       },
@@ -3316,6 +3321,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Authority is legitimate when it serves a moral common good, preserves peace, or remains within a lawful and customary order. This may produce a layered view in which family, church, community, and state have different jurisdictions, as in some natural-law traditions. It can also create conflicts over which institution interprets truth, who may dissent, and whether civil law must follow religious doctrine.',
             citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepMedieval', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Dignitatis humanae §§1–2 and 6–7 retains a duty to seek religious truth while defending civil immunity from coercion, including for those who do not fulfil that duty. Special recognition of one religious community must preserve others’ religious freedom and citizens’ legal equality; restrictions must not be arbitrary. These are doctrinal requirements, not evidence of enforcement.',
+            citations: citations([], ['vaticanReligiousFreedomFrench']),
           },
         ],
       },
@@ -3344,9 +3354,19 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['burkeReflections', 'aquinasMoralPolitical', 'renanNation'], ['sepConservatism', 'sepReligionPolitics', 'openTextbook']),
           },
           {
+            period: '1 November 1885: Leo XIII’s Immortale Dei',
+            text: 'The encyclical calls for public support of Catholic religion while distinguishing civil and ecclesiastical powers. It accepts different government forms serving the common good. Its permission to tolerate other worship for practical reasons is not equal legal standing for religions; it also rejects forced conversion to Catholicism.',
+            citations: citations([], ['leoImmortaleDeiFrench']),
+          },
+          {
             period: 'Twentieth century: religious parties and constitutional accommodation',
             text: 'Religious political movements increasingly negotiated with mass democracy, universal suffrage, social policy, and constitutional rights. Christian democracy is a major European example: it emerged from confessional politics but developed pluralist, personalist, solidaristic, and constitutional forms that cannot be reduced to clerical rule. Other religious traditions followed different paths, so Christian democracy is a variant, not the global definition.',
             citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'lockeLetterToleration'], ['oxfordChristianDemocracy', 'sepReligionPolitics']),
+          },
+          {
+            period: '7 December 1965: Dignitatis humanae',
+            text: 'Promulgated by Paul VI with the council, the declaration grounds religious freedom in human dignity, not agreement with Catholic doctrine (§2).',
+            citations: citations([], ['vaticanReligiousFreedomFrench']),
           },
           {
             period: 'Late twentieth century to the present: pluralism, nationalism, and religious revival',
@@ -3379,6 +3399,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Formally identifies the state with or privileges a religion while retaining some constitutional limits, civil administration, and legal pluralism.',
                 relation: 'The boundary depends on equal citizenship, the enforceability of religious law, and whether dissenting faiths and nonbelief receive real protection.',
                 citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepMedieval']),
+              },
+              {
+                label: 'Prudential toleration versus a civil right',
+                distinction: 'Compare Immortale Dei’s conditional toleration with Dignitatis humanae’s protection rooted in personhood.',
+                relation: 'Both reject forced conversion; that shared position does not make their accounts of public religious freedom identical.',
+                citations: citations([], ['leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench']),
               },
               {
                 label: 'Religious nationalism',
@@ -3419,6 +3445,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'natural-law theorist of common good, law, kingship, and differentiated spiritual and secular authority',
                 caveat: 'Aquinas wrote within medieval Christian institutions and should not be converted directly into a modern party platform or contemporary theocracy.',
                 citations: citations(['aquinasMoralPolitical'], ['sepMedieval', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Leo XIII',
+                role: 'papal author of the confessional political argument in Immortale Dei',
+                caveat: 'Document-specific reference, not evidence for every policy position or these six numerical coordinates.',
+                citations: citations([], ['leoImmortaleDeiFrench']),
               },
               {
                 name: 'Edmund Burke',
@@ -3463,6 +3495,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'religiously inspired constitutional and welfare-state comparator',
                 caveat: 'Christian-democratic parties often defended pluralist democracy and social welfare; they should not be counted as theocratic or uniformly traditionalist.',
                 citations: citations(['aquinasMoralPolitical', 'burkeReflections'], ['oxfordChristianDemocracy', 'sepReligionPolitics']),
+              },
+              {
+                name: 'French Catholic episcopal discourse after Vatican II',
+                period: 'Historical comparison in Portier’s 2023 study',
+                match: 'institutional discourse, not a country-wide ideology',
+                caveat: 'Portier describes acceptance of constitutional pluralism alongside continuing moral claims. Bishops’ statements are not a survey of Catholics or proof of French state policy.',
+                citations: citations([], ['portierEpiscopateFreedom']),
               },
               {
                 name: 'Contemporary faith-informed parties and movements',
@@ -3513,12 +3552,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, the label can obscure diversity within religions and across history. Religious institutions have supported monarchy, democracy, welfare, anti-colonial liberation, civil rights, authoritarian nationalism, and resistance to the state. The project should identify the actor, doctrine, institution, period, jurisdiction, and affected population instead of assigning a global religious score from a country’s majority faith or a leader’s rhetoric.',
             citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'spinozaPolitical'], ['sepReligionPolitics', 'oxfordChristianDemocracy', 'openTextbook']),
           },
+          {
+            type: 'paragraph',
+            text: 'Portier’s interpretation falls between continuity and rupture: French bishops’ acceptance of civil religious freedom does not erase their claims about objective moral order or the Church’s public authority (pp. 48–51, 57–58). He contrasts readings associated with Émile Poulat and René Rémond. Those authors’ books have not been independently reviewed here; this is an attributed historiographical argument, not a settled verdict on all Catholic political thought.',
+            citations: citations([], ['portierEpiscopateFreedom']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'adamSmithWealth', 'morgenthauRealism', 'millOnLiberty'],
-      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy'],
+      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy', 'leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom'],
       editorialNote: 'The entry separates personal religiosity, religious social ethics, confessional constitutionalism, religious nationalism, Christian democracy, and theocracy. Its scores describe a didactic high-tradition, high-authority profile and do not classify every religious person, party, or state.',
     },
     researchGaps: [
@@ -3527,6 +3571,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add detailed research on Christian democracy, Catholic social teaching, Protestant confessional politics, Islamic constitutional debates, Jewish legal-political traditions, and South Asian religious nationalism.',
       'Add country-specific evidence before listing present governments or parties; religious majorities, constitutions, coalition systems, and enforcement practices change over time.',
       'Add specialist research on gender, family law, education, minority rights, conversion, secularism, clerical institutions, religious violence, migration, colonialism, and the constitutional design of pluralist religious societies.',
+      'Compare the Vatican-hosted French versions with identified Latin editions; review Portier’s complete article and the Poulat/Rémond books directly. Add evidence from dissenters and minorities about implementation, and non-Catholic cases before extending this bounded doctrinal comparison.',
     ],
   },
   'anti-colonial-liberation': {
