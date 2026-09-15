@@ -8074,7 +8074,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     id: 'centrist-pragmatist',
     title: 'Centrist / pragmatic pluralist',
     canonicalLabel: 'Centrist / pragmatic pluralist',
-    aliases: ['centrism', 'pragmatic centrism', 'moderate pluralism', 'consensus politics', 'Third Way'],
+    aliases: ['centrism', 'pragmatic centrism', 'moderate pluralism', 'consensus politics', 'Third Way (centre-left variant)'],
     entryType: 'analytical reference profile',
     status: 'researched-draft',
     confidence: 'medium',
@@ -8090,7 +8090,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       economic: {
         score: 0,
         label: 'Mixed economy and policy pragmatism',
-        explanation: 'Markets, taxation, regulation, social insurance, public services, and public ownership are treated as instruments whose scope depends on evidence and social consequences. Centrist economics may lean market-liberal, social-liberal, social-democratic, or Third Way; the orientation does not specify a single distributional settlement.',
+        explanation: 'Markets, taxation, regulation, social insurance, public services, and public ownership are treated as instruments whose scope depends on evidence and social consequences. Centrist economics may lean market-liberal, social-liberal, social-democratic, or Third Way; the orientation does not specify a single distributional settlement. The displayed zero is an editorial teaching coordinate, not a measured average of these programmes or a score established by the documents below.',
         citations: citations(['keynesGeneralTheory', 'giddensThirdWay', 'millOnLiberty'], ['oxfordPoliticalCentrism', 'oxfordThirdWayConversion', 'sepPragmatism']),
       },
       social: {
@@ -8102,7 +8102,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       authority: {
         score: 8,
         label: 'Lawful, competent, and reviewable administration',
-        explanation: 'Public authority is accepted when it is constitutional, proportionate, administratively capable, transparent, and open to review. Centrist pragmatism can value expertise and institutional continuity, but a democratic version must preserve contestation, participation, independent oversight, and the possibility of changing the policy framework itself.',
+        explanation: 'Public authority is accepted when it is constitutional, proportionate, administratively capable, transparent, and open to review. Centrist pragmatism can value expertise and institutional continuity, but a democratic version must preserve contestation, participation, independent oversight, and the possibility of changing the policy framework itself. Sharing executive office is not itself a measure of civil liberty; neither collegial procedure nor compromise establishes the displayed +8.',
         citations: citations(['lijphartPatternsDemocracy', 'millOnLiberty', 'tocquevilleDemocracy'], ['lijphartConsensusDemocracy', 'sepDemocracy', 'coeDemocraticGovernance', 'sepPragmatism']),
       },
       identity: {
@@ -8138,6 +8138,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Pragmatism adds a method: policies are judged by consequences, revisability, institutional learning, and their ability to solve problems under real conditions. Consensus politics adds an institutional question: how can divided societies share power without making every disagreement a winner-take-all conflict? Neither approach eliminates values or power. Compromise can be democratic accommodation, or it can become elite closure that prevents citizens from challenging the settlement.',
             citations: citations(['lijphartPatternsDemocracy', 'millOnLiberty'], ['lijphartConsensusDemocracy', 'sepPragmatism', 'oxfordPluralismConsensus', 'coeDemocraticGovernance']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The examples below concern different objects: a political declaration, a retrospective interpretation, and an institutional practice. They illustrate parts of this didactic profile, not equivalent ideologies. Primary commitments do not prove outcomes, official self-description is not independent evaluation, and a historical term’s shared spelling does not establish shared doctrine.',
+            citations: citations([], ['blairSchroeder1999Excerpt', 'wiesenthalThirdWay2010', 'swissCollegialConsensus', 'gallusJesseThirdWays2002']),
           },
         ],
       },
@@ -8187,9 +8192,19 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['lijphartPatternsDemocracy', 'keynesGeneralTheory'], ['lijphartConsensusDemocracy', 'oxfordPoliticalCentrism', 'sepDemocracy']),
           },
           {
+            period: '1970: Swiss interparty consultation as a specific practice',
+            text: 'The Federal Council’s historical account dates regular government–party discussions to 1970, during Karl Huber’s chancellorship, following the 1959 power-sharing formula. These consultations illustrate organized bargaining; their existence does not establish the ideological midpoint of the participants.',
+            citations: citations([], ['swissCollegialConsensus']),
+          },
+          {
             period: '1970s–1990s: crisis of the postwar settlement and the Third Way',
             text: 'Stagflation, fiscal pressure, globalization, deindustrialization, and criticism of bureaucracy challenged postwar social democracy and state-led policy. Anthony Giddens’s Third Way presented a centre-left attempt to combine market compatibility, social investment, welfare reform, globalization, and democratic modernization. Critics argued that Third Way governments accepted too much market inequality, weakened party contestation, and converted political choices into managerial adaptation.',
             citations: citations(['giddensThirdWay', 'keynesGeneralTheory'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion', 'oxfordPoliticalCentrism']),
+          },
+          {
+            period: '8 June 1999: Blair–Schröder declaration',
+            text: 'The joint declaration connected Britain’s Third Way and Germany’s Neue Mitte. Its opening retained social-democratic values while asking government to support rather than replace economic activity, and linked reform to European cooperation. This documents the authors’ proposed direction, not successful implementation or the disappearance of ideological choices.',
+            citations: citations([], ['blairSchroeder1999Excerpt']),
           },
           {
             period: '1990s–2010s: technocracy, coalition governance, and democratic distrust',
@@ -8239,6 +8254,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Seeks to combine market economies, social investment, welfare reform, equal opportunity, globalization, and democratic modernization rather than traditional state ownership.',
                 relation: 'A specific late twentieth-century project, not a synonym for all centrism and not politically neutral; critics dispute its distributional consequences and reduced contestation.',
                 citations: citations(['giddensThirdWay', 'keynesGeneralTheory'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion']),
+              },
+              {
+                label: 'Different historical meanings of “third way”',
+                distinction: 'Gallus and Jesse distinguish social-democratic modernization from earlier social-market proposals associated with Röpke and Rüstow.',
+                relation: 'Their conceptual history asks which alternatives each proposal rejects. A shared label does not mean identical ownership, welfare, or constitutional commitments; the search alias here specifies the centre-left variant.',
+                citations: citations([], ['gallusJesseThirdWays2002']),
               },
               {
                 label: 'Market-friendly or centre-right moderation',
@@ -8293,6 +8314,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'The Third Way was a specific historical project with contested outcomes, not a neutral definition of centrism or a settled consensus about welfare and markets.',
                 citations: citations(['giddensThirdWay'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion']),
               },
+              {
+                name: 'Tony Blair and Gerhard Schröder',
+                role: 'Political sponsors of the 1999 joint reform declaration.',
+                caveat: 'A documented programme association, not evidence that every policy or period of either government matches these six coordinates.',
+                citations: citations([], ['blairSchroeder1999Excerpt']),
+              },
+              {
+                name: 'Helmut Wiesenthal',
+                role: 'Political scientist offering a 2010 retrospective on Third Way reform.',
+                caveat: 'Included as an interpreter, not an exact-profile exemplar. His explanation is contestable and does not settle causal or distributional outcomes.',
+                citations: citations([], ['wiesenthalThirdWay2010']),
+              },
             ],
           },
           {
@@ -8325,6 +8358,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'Governments manage disagreement through coalition bargaining, federal compromise, cross-party agreements, or negotiated public administration rather than a single ideological mandate.',
                 caveat: 'Coalition does not prove centrism: governments can bargain while pursuing polarized or exclusionary programmes, and centrist rhetoric can mask unequal bargaining power.',
                 citations: citations(['lijphartPatternsDemocracy', 'millOnLiberty'], ['lijphartConsensusDemocracy', 'coeDemocraticGovernance', 'sepDemocracy']),
+              },
+              {
+                name: 'Swiss Federal Council: collegial decision-making',
+                period: 'Institutional account consulted 16 September 2026; not a whole-country classification',
+                match: 'The official account describes members as peers who seek consensus and publicly uphold collective decisions despite personal or party disagreement.',
+                caveat: 'A procedural example, not proof of unanimity, equal influence, public satisfaction, or ideological centrism.',
+                citations: citations([], ['swissCollegialConsensus']),
               },
               {
                 name: 'Evidence-led public problem-solving',
@@ -8382,6 +8422,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Wiesenthal’s 2010 interpretation complicates a simple success-or-betrayal verdict: he identifies lasting attention to education while arguing that the SPD inadequately prepared members for its reform direction. His account emphasizes party learning and resistance, and remains sympathetic to parts of the project. It should be compared with critics and outcome studies, not substituted for them.',
+            citations: citations([], ['wiesenthalThirdWay2010']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The declaration and Wiesenthal essay were consulted as German excerpts, not complete originals. The conceptual-history reading covers selected sections; the Swiss evidence is a French official account. No new direct quotation or source translation is reproduced, and none of these readings recalibrates the questionnaire.',
+            citations: citations([], ['blairSchroeder1999Excerpt', 'wiesenthalThirdWay2010', 'swissCollegialConsensus', 'gallusJesseThirdWays2002']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, consensus can become elite closure. Coalition bargaining, proportional institutions, and cross-party agreements may include more groups, but they can also make responsibility opaque, weaken opposition, and reduce the public’s ability to choose between genuinely different futures. A democratic centre should preserve contestation, alternation, organized dissent, minority rights, and the possibility that citizens can reject the compromise itself.',
             citations: citations(['lijphartPatternsDemocracy', 'millOnLiberty'], ['lijphartConsensusDemocracy', 'oxfordPluralismConsensus', 'sepDemocracy', 'coeDemocraticGovernance']),
           },
@@ -8389,9 +8439,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       },
     ],
     references: {
-      authorReferenceIds: ['lijphartPatternsDemocracy', 'giddensThirdWay', 'millOnLiberty', 'keynesGeneralTheory', 'tocquevilleDemocracy', 'kantPerpetualPeace', 'lockeLetterToleration'],
-      researchSourceIds: ['oxfordPoliticalCentrism', 'lijphartConsensusDemocracy', 'oxfordThirdWayConversion', 'wileyThirdWayGiddens', 'sepPragmatism', 'sepDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance', 'foreignPolicy', 'sepLiberalism', 'vdem'],
-      editorialNote: 'The entry treats centrism as context-dependent positioning and pragmatic or consensus-oriented practice, not as a universal midpoint or moral superiority. It distinguishes moderation from technocracy, status-quo bias, liberal constitutionalism, social democracy, Christian democracy, populism, and the Third Way.',
+      authorReferenceIds: ['lijphartPatternsDemocracy', 'giddensThirdWay', 'millOnLiberty', 'keynesGeneralTheory', 'tocquevilleDemocracy', 'kantPerpetualPeace', 'lockeLetterToleration', 'morgenthauRealism', 'lockeSecondTreatise'],
+      researchSourceIds: ['oxfordPoliticalCentrism', 'lijphartConsensusDemocracy', 'oxfordThirdWayConversion', 'wileyThirdWayGiddens', 'sepPragmatism', 'sepDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance', 'foreignPolicy', 'sepLiberalism', 'vdem', 'sepReligionPolitics', 'blairSchroeder1999Excerpt', 'wiesenthalThirdWay2010', 'swissCollegialConsensus', 'gallusJesseThirdWays2002'],
+      editorialNote: 'Centrism is context-dependent positioning, not a universal midpoint or moral superiority. The entry distinguishes programme commitments, institutional descriptions, scholarly interpretations, and illustrative matching. The centre-left Third Way alias is qualified because the phrase has other historical uses. All six coordinates remain unchanged and match the existing reference card; they are not research-derived measurements of the examples.',
     },
     researchGaps: [
       'Add original-language research in French, German, Portuguese, Spanish, Italian, Dutch, and English on historical centres, coalition parties, consensus settlements, and the political meaning of moderation in each country.',
@@ -8401,6 +8451,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add primary documents and institutional evidence for Third Way projects, social-market settlements, coalition governments, consociational systems, and technocratic agencies, including their internal critics.',
       'Compare expertise, evidence-based policy, citizen assemblies, participatory budgeting, deliberation, referendums, and representative institutions for transparency, inclusion, accountability, and policy learning.',
       'Test whether the six-dimensional near-midpoint profile obscures meaningful disagreement; allow centrist actors to score strongly on particular dimensions while remaining centrist only in party-system position or coalition practice.',
+      'Obtain the complete Blair–Schröder declaration and parallel-language provenance; compare later laws and distributional studies before attributing welfare or employment outcomes to its promises. Extend the Wiesenthal excerpt review to the original essay and contrasting interpretations.',
+      'Compare Swiss official descriptions with independent institutional research and records of dissent, participation, responsibility, and inclusion. Check linked constitutional provisions separately; do not convert executive power-sharing into a whole-country centrist rating.',
+      'Extend the selected Gallus–Jesse reading to other historical uses and their primary works. Preserve distinct meanings of “third way” rather than merging every use into this centre-left reference profile.',
     ],
   },
   'liberal-constitutionalist': {
