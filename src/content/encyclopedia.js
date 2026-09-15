@@ -1302,7 +1302,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A conservative profile that treats national sovereignty, cultural continuity, inherited institutions, borders, and public order as central political goods. It generally accepts a mixed or market-oriented economy and democratic institutions, but gives more weight to national cohesion, tradition, and a capable state than classical or progressive liberalism does.',
     summaryCitations: citations(
       ['burkeReflections', 'renanNation', 'andersonImaginedCommunities', 'hobbesLeviathan'],
-      ['sepConservatism', 'sepNationalism', 'vdem'],
+      ['sepConservatism', 'sepNationalism', 'cairnLesGaullistes', 'perseeDeGaulleConstitutionalThought', 'vdem'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -1321,13 +1321,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: 46,
         label: 'Order-oriented but potentially constitutional',
         explanation: 'The profile favors law, public order, borders, and a capable executive or administrative state, while its constitutional variant accepts elections, courts, and legal limits. Strong authority becomes authoritarian only when independent institutions and opposition are systematically subordinated.',
-        citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'vdem']),
+        citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'perseeDeGaulleConstitutionalThought', 'fondationDeGaulleOppositionIVe', 'vdem']),
       },
       identity: {
         score: -82,
         label: 'Strongly nationalist / sovereignty-centered',
         explanation: 'Political loyalty centers on the nation, its historical memory, borders, language, and capacity for self-government. The nation may be civic and constitutional or ethnic and exclusionary; the profile records that distinction rather than assuming one definition.',
-        citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepNationalism', 'sepConservatism']),
+        citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepNationalism', 'sepConservatism', 'cairnLesGaullistes', 'cambridgeIndivisibilityFrenchRepublic']),
       },
       foreign: {
         score: -34,
@@ -1339,7 +1339,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -40,
         label: 'Religiously grounded cultural order',
         explanation: 'Religious tradition may inform public morality, national memory, and institutions, but the profile does not require clerical rule or a formal theocracy. Constitutional national conservatives may protect religious pluralism while still defending an inherited religious culture.',
-        citations: citations(['burkeReflections', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'sepConservatism']),
+        citations: citations(['burkeReflections', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'sepConservatism', 'viePubliqueLaiciteStasi']),
       },
     },
     sections: [
@@ -1356,6 +1356,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The profile is not identical to fascism or ethnic nationalism. A national-conservative movement may defend constitutional government, elections, private association, and equal citizenship, even while opposing rapid cultural change or supranational authority. The boundary is crossed when national unity is used to eliminate pluralism, rights, or independent institutions.',
             citations: citations(['burkeReflections', 'andersonImaginedCommunities'], ['sepConservatism', 'sepNationalism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Gaullism is an important French contrast case. It joined national independence, republican legitimacy, and a stronger executive with a political culture that could attract people from different ideological families. Treating Gaullism as simply right-wing cultural nationalism misses its republican and institutional dimensions; treating it as a generic model for all national conservatism misses its particular postwar history, constitutional arrangements, and debates over Europe, empire, and decolonization.',
+            citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'cambridgeIndivisibilityFrenchRepublic']),
           },
         ],
       },
@@ -1405,6 +1410,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['andersonImaginedCommunities', 'morgenthauRealism'], ['sepNationalism', 'foreignPolicy', 'vdem']),
           },
           {
+            period: 'Postwar France: Gaullist republican sovereignty',
+            text: 'Gaullism illustrates a sovereignist tradition that cannot be reduced to ethnic nationalism or ordinary traditionalism. De Gaulle’s constitutional critique of the Fourth Republic favored a stronger executive tied to national legitimacy, while the Gaullist political family included people from resistance, socialist, radical, Christian-democratic, and conservative backgrounds. Its emphasis on independence and state capacity later generated disputes over European integration and the meaning of republican sovereignty.',
+            citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought']),
+          },
+          {
             period: 'Contemporary debates',
             text: 'Current national-conservative politics often emphasizes sovereignty, migration, borders, national culture, family policy, and skepticism toward supranational institutions. Internal variation is substantial: some movements remain constitutional and civic, while others define the nation ethnically or attack pluralist checks on executive power.',
             citations: citations(['renanNation', 'andersonImaginedCommunities', 'burkeReflections'], ['sepNationalism', 'sepConservatism', 'vdem']),
@@ -1423,6 +1433,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Defends national institutions, sovereignty, and cultural continuity while defining membership through citizenship, law, and political participation.',
                 relation: 'The most compatible variant with liberal democracy and equal civic rights.',
                 citations: citations(['renanNation', 'burkeReflections'], ['sepNationalism', 'vdem']),
+              },
+              {
+                label: 'Gaullist republican sovereignty',
+                distinction: 'Centers national independence, republican legitimacy, state capacity, and a strong executive while maintaining a distinct constitutional and postwar political tradition rather than defining membership only through ancestry.',
+                relation: 'A French sovereignist variant and useful boundary case: it overlaps with national conservatism on sovereignty and continuity but cannot be treated as a synonym for ethnic nationalism or authoritarianism.',
+                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'cambridgeIndivisibilityFrenchRepublic']),
               },
               {
                 label: 'Religious or cultural national conservatism',
@@ -1482,6 +1498,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Anderson is an interpreter of nationalism, not a representative of national conservatism.',
                 citations: citations(['andersonImaginedCommunities'], ['sepNationalism']),
               },
+              {
+                name: 'Charles de Gaulle',
+                role: 'French republican and sovereignist statesman associated with the Fifth Republic',
+                caveat: 'De Gaulle’s constitutional thought and political practice are historically specific; he is a boundary case, not a complete definition of contemporary national conservatism.',
+                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought']),
+              },
             ],
           },
           {
@@ -1500,6 +1522,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'partial identity and authority resemblance',
                 caveat: 'Sovereignty and national independence can support constitutional democracy or authoritarian centralization; institutional evidence is required.',
                 citations: citations(['renanNation', 'morgenthauRealism'], ['sepNationalism', 'foreignPolicy', 'vdem']),
+              },
+              {
+                name: 'Gaullist France and the Fifth Republic',
+                period: '1946–1970, with later Gaullist legacies',
+                match: 'partial sovereignist and state-capacity resemblance',
+                caveat: 'The Gaullist tradition combined national independence and executive authority with republican legitimacy and changing positions on Europe, empire, social policy, and decolonization; it is not an exact contemporary national-conservative match.',
+                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi']),
               },
               {
                 name: 'Contemporary national-conservative movements',
@@ -1549,6 +1578,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The strongest safeguard is to distinguish civic attachment from ethnic hierarchy and constitutional conservatism from authoritarian nationalism. Evidence of elections, opposition rights, judicial independence, minority citizenship, religious freedom, and peaceful transfer of power should be recorded before assigning a country or movement to a more coercive neighboring profile.',
             citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'sepNationalism', 'vdem', 'sepReligionPolitics']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Gaullist case also shows why a capable executive and national sovereignty require institutional analysis rather than ideological shorthand. Executive centralization can stabilize a republic or weaken parliamentary accountability; laïcité can be defended as equal freedom of conscience or invoked as a broader cultural boundary. The classification should therefore record constitutional checks, minority citizenship, party competition, and the actual treatment of dissent.',
+            citations: citations([], ['cairnLesGaullistes', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem']),
+          },
         ],
       },
     ],
@@ -1563,11 +1597,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'aquinasMoralPolitical',
       ],
-      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'vdem', 'foreignPolicy'],
+      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy'],
       editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
     },
     researchGaps: [
-      'Add French-language scholarship on Gaullism, republican sovereignty, laïcité, and the tensions between civic universalism and cultural continuity.',
+      'Expand French-language scholarship on Gaullism, republican sovereignty, laïcité, and the tensions between civic universalism and cultural continuity, including decolonization and post-Gaullist transformations.',
       'Add German-language scholarship on post-war Christian democracy, ordoliberalism, national conservatism, and the constitutional lessons of authoritarian nationalism.',
       'Add country-specific sources before listing Hungary, India, Poland, France, Japan, or other states as examples; current governments and party systems change over time.',
       'Add specialist research on colonialism, minority citizenship, migration, religion, gender, welfare nationalism, and the relationship between national-conservative movements and democratic backsliding.',
