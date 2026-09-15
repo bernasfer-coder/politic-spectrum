@@ -279,6 +279,7 @@ const RIGHTS_RECORDS = {
     renanNation: { ...PUBLIC_DOMAIN_CANDIDATE, publicationStatus: 'review-required', notes: 'The historical work may be public domain, but the current English translation/sourcebook page must be verified before commercial quotation.' },
     andersonImaginedCommunities: { ...PERMISSION_SENSITIVE },
     kantPerpetualPeace: { ...PUBLIC_DOMAIN_CANDIDATE },
+    rothbardForNewLiberty: { ...PERMISSION_SENSITIVE, notes: 'The work and specific edition have separate rights questions; the project uses a catalog link and independent paraphrase only.' },
     morgenthauRealism: { ...PERMISSION_SENSITIVE },
     mearsheimerTragedy: { ...PERMISSION_SENSITIVE },
     walzerJustWars: { ...PERMISSION_SENSITIVE },

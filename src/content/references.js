@@ -95,6 +95,14 @@ export const AUTHOR_REFERENCES = {
     kind: 'primary',
     url: 'https://www.hachettebookgroup.com/titles/robert-nozick/anarchy-state-and-utopia/9780465051007/',
   },
+  rothbardForNewLiberty: {
+    author: 'Murray N. Rothbard',
+    work: 'For a New Liberty: The Libertarian Manifesto',
+    year: '1973',
+    kind: 'primary',
+    context: 'A canonical anarcho-capitalist presentation of self-ownership, private property, voluntary exchange, and the rejection of the state; cited as a primary position, not as proof that the proposed institutions work in practice.',
+    url: 'https://openlibrary.org/books/OL5304654M/For_a_new_liberty',
+  },
   millOnLiberty: {
     author: 'John Stuart Mill',
     work: 'On Liberty',

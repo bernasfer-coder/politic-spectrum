@@ -3849,4 +3849,331 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add a dedicated comparison of communist-party constitutional language with observed party competition, executive constraints, judicial independence, civil liberties, and mechanisms for leadership succession.',
     ],
   },
+  'anarcho-capitalist': {
+    id: 'anarcho-capitalist',
+    title: 'Anarcho-capitalist',
+    canonicalLabel: 'Anarcho-capitalist',
+    aliases: [
+      'anarcho-capitalism',
+      'market anarchism',
+      'private-property anarchism',
+      'private-law society',
+      'stateless capitalism',
+    ],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This is a profile of radical right-libertarian arguments that combine abolition of the territorial state with strong private-property, contract, and market commitments. It is not a country classification, not ordinary free-market policy, not minarchism, and not interchangeable with socialist or mutualist anarchism.',
+    timeScope: 'Intellectual antecedents include individualist anti-state and liberal property arguments; the modern label developed mainly in mid-twentieth-century United States libertarian thought and later market-anarchist debates.',
+    geographicScope: 'Primarily a transatlantic and Anglophone intellectual tradition, with Austrian-school influences and later international digital, seasteading, and private-governance networks. Broader anarchist traditions have distinct European, Latin American, and other regional histories that should not be absorbed into this label.',
+    summary: 'A radical market-libertarian position that rejects the state’s territorial monopoly of law, taxation, policing, and defense while defending private property, voluntary exchange, contractual association, and competing private providers. Its central unresolved problems are whether private protection agencies can avoid becoming states, how public goods and externalities are handled, whether initial property holdings are legitimate, and whether formal freedom survives large inequalities of wealth and bargaining power.',
+    summaryCitations: citations(
+      ['rothbardForNewLiberty', 'nozickASU', 'lockeSecondTreatise', 'hayekKnowledge'],
+      ['sepAnarchism', 'sepLibertarianism', 'sepLiberalism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 96,
+        label: 'Extremely strongly market-oriented',
+        explanation: 'Private ownership, contract, competition, and entrepreneurial coordination are treated as the default institutions for production and distribution, including functions usually assigned to the state. The profile is more radical than classical liberalism because it rejects taxation and public economic administration in principle, not only excessive regulation.',
+        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge'], ['sepLibertarianism', 'sepAnarchism', 'sepLiberalism']),
+      },
+      social: {
+        score: -10,
+        label: 'Mixed: voluntary pluralism with property-based limits',
+        explanation: 'The tradition generally favors freedom of association, speech, lifestyle, religion, and exit from unwanted institutions. Critics point out that private ownership can permit exclusion, dependency, employer domination, or unequal access to basic goods; a formal ban on state coercion does not settle every social-power question.',
+        citations: citations(['nozickASU', 'millOnLiberty', 'rothbardForNewLiberty'], ['sepLibertarianism', 'sepAnarchism', 'sepLibertyPositiveNegative']),
+      },
+      authority: {
+        score: -98,
+        label: 'Extremely anti-state / polycentric authority',
+        explanation: 'The defining commitment is opposition to a compulsory territorial monopoly of coercion. Courts, security, arbitration, infrastructure, and rules are expected to arise through contract, competition, insurance, private association, or local covenant; the profile must still explain how coercion by private actors is prevented and how dissenters can exit.',
+        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'lockeSecondTreatise'], ['sepAnarchism', 'sepLibertarianism']),
+      },
+      identity: {
+        score: -30,
+        label: 'Strongly individualist / weakly internationalist',
+        explanation: 'Individual choice, voluntary association, and the right to leave a community take priority over compulsory national unity. Private communities may develop strong cultural or religious identities, and property jurisdictions can still create boundaries; anti-nationalism is therefore a tendency rather than a promise of cosmopolitan equality.',
+        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'kantPerpetualPeace'], ['sepLibertarianism', 'sepAnarchism', 'sepNationalism']),
+      },
+      foreign: {
+        score: -76,
+        label: 'Very strongly non-interventionist',
+        explanation: 'Permanent alliances, imperial projects, conscription, and state militaries are rejected or minimized. Defense is imagined through voluntary insurance, private protection, contractual alliances, or local self-defense; critics stress that territorial defense and collective security are difficult to fund and coordinate without compulsory institutions.',
+        citations: citations(['rothbardForNewLiberty', 'kantPerpetualPeace', 'morgenthauRealism'], ['sepLibertarianism', 'foreignPolicy', 'sepAnarchism']),
+      },
+      religion: {
+        score: -55,
+        label: 'Strongly secular / voluntary religious association',
+        explanation: 'No religious institution should possess a compulsory territorial authority, but churches, mosques, synagogues, temples, and other communities may organize voluntarily under the same general property and contract rules. This is a secular institutional position, not necessarily an anti-religious one.',
+        citations: citations(['rothbardForNewLiberty', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepLibertarianism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Anarcho-capitalism combines two claims that are often treated as opposites: anarchism as rejection of the state and capitalism as reliance on private property and market exchange. Its advocates argue that law, arbitration, security, infrastructure, money, education, and welfare can be supplied by voluntary organizations rather than a tax-funded territorial government. The market is not merely an economic mechanism in this theory; it is proposed as a general method for coordinating social order.',
+            citations: citations(['rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label is narrower than libertarianism and more controversial within anarchist history. Many libertarians accept a minimal state, and many anarchists reject capitalism because they view private property, wage dependence, or concentrated economic power as forms of domination. Robert Nozick is an important interlocutor because he defended a minimal state rather than full anarcho-capitalism; his argument is evidence of the boundary, not evidence that he held the anarcho-capitalist position.',
+            citations: citations(['nozickASU', 'rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The normative foundation is usually individual self-ownership or strong rights against aggression. From that premise, advocates argue that taxation, regulation, compulsory monopoly, and state ownership violate rights unless they can be justified without coercion. Private property is treated as a legitimate extension of labor, acquisition, exchange, inheritance, or prior entitlement, although the legitimacy of historical acquisition and the treatment of common resources remain disputed.',
+            citations: citations(['rothbardForNewLiberty', 'nozickASU', 'lockeSecondTreatise'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The institutional proposal is polycentric private law. People may purchase protection, arbitration, insurance, dispute resolution, utilities, transport, and other services from competing providers; agreements and reputational systems are expected to constrain abuse. This proposal differs from simply privatizing a few state enterprises: it removes the presumption that one public authority has final jurisdiction over a territory.',
+            citations: citations(['rothbardForNewLiberty', 'nozickASU'], ['sepAnarchism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The theory depends on several empirical and institutional assumptions: that competition will prevent provider monopolies, that people can exit abusive arrangements, that private courts can coordinate rules, that defense can be funded voluntarily, and that market prices can handle public goods and externalities. These are not consequences of the non-aggression principle alone. They are open questions that must be separated from the moral claim that state coercion is illegitimate.',
+            citations: citations(['nozickASU', 'hayekKnowledge', 'millOnLiberty'], ['sepAnarchism', 'sepLibertarianism', 'sepLibertyPositiveNegative']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Social freedom is also contested. Voluntary contract can protect exit and experimentation, yet unequal property ownership can make nominally voluntary relationships difficult to refuse. A tenant, employee, debtor, child, migrant, or person without access to land may face private power even when no public official directly commands them. Whether such dependence counts as coercion, exploitation, or an acceptable result of free exchange is one of the tradition’s central disputes.',
+            citations: citations(['nozickASU', 'millOnLiberty', 'rothbardForNewLiberty'], ['sepLibertarianism', 'sepLibertyPositiveNegative', 'sepAnarchism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Seventeenth–nineteenth centuries: property, consent, and anti-state antecedents',
+            text: 'Lockean rights, consent, property, and resistance arguments supplied part of the later vocabulary, but Locke defended political government and did not propose anarcho-capitalism. Nineteenth-century individualist anarchists and market-oriented anti-state writers supplied other antecedents, while mutualists, collectivist anarchists, and socialists disputed the meaning of property and exchange. These traditions should be recorded as genealogical neighbors, not retroactively renamed.',
+            citations: citations(['lockeSecondTreatise', 'rothbardForNewLiberty'], ['sepAnarchism', 'sepLiberalism']),
+          },
+          {
+            period: 'Late nineteenth–early twentieth centuries: Austrian economics and the knowledge problem',
+            text: 'Austrian economic arguments about dispersed knowledge, calculation, entrepreneurial discovery, and the limits of central planning later influenced market-libertarian reasoning. Mises and Hayek were not anarcho-capitalists in the strict sense: their arguments generally retained a role for a limited state. Their inclusion clarifies an economic influence without converting classical or Austrian liberalism into stateless capitalism.',
+            citations: citations(['hayekKnowledge'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            period: '1940s–1960s: modern right-libertarian formation',
+            text: 'Postwar American libertarian debate combined natural-rights language, anti-statism, Austrian economics, and strong property claims. Murray Rothbard developed a systematic private-property anarchist argument and helped establish the modern anarcho-capitalist vocabulary. The movement emerged in opposition both to welfare-state expansion and to socialist or communist state planning.',
+            citations: citations(['rothbardForNewLiberty', 'hayekKnowledge'], ['sepLibertarianism', 'sepAnarchism']),
+          },
+          {
+            period: '1970s: the minimal-state challenge',
+            text: 'Robert Nozick’s Anarchy, State, and Utopia made the anarchist challenge central to academic political philosophy while defending a minimal state that protects against force, theft, fraud, and rights violations. His account is a crucial boundary: it argues that a dominant protective association may emerge from a stateless condition, while stopping short of the anarcho-capitalist conclusion.',
+            citations: citations(['nozickASU'], ['sepLibertarianism', 'sepAnarchism']),
+          },
+          {
+            period: '1980s–2000s: market anarchism, private governance, and digital networks',
+            text: 'Later debates explored private law, free banking, seasteading, charter cities, special jurisdictions, voluntary security, and digital or cryptographic forms of coordination. These projects vary in whether they seek to abolish states, create new jurisdictions, or introduce competition inside existing states. An experiment in one service or enclave is not evidence that a whole society can operate without a public authority.',
+            citations: citations(['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge'], ['sepAnarchism', 'sepLibertarianism', 'openTextbook']),
+          },
+          {
+            period: 'Contemporary debate: private order, inequality, and the state’s return',
+            text: 'Contemporary advocates continue to debate cryptocurrency, online communities, private cities, arbitration, alternative currencies, and exit-based governance. Critics focus on private violence, monopoly, unequal bargaining power, ecological externalities, public goods, and the tendency for a dominant provider to recreate a state. No contemporary country is an exact match because all recognized states retain public law and territorial coercive institutions.',
+            citations: citations(['nozickASU', 'rothbardForNewLiberty', 'millOnLiberty'], ['sepAnarchism', 'sepLibertarianism', 'foreignPolicy']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Rothbardian natural-rights anarcho-capitalism',
+                distinction: 'Begins from self-ownership, a non-aggression principle, and strong private-property rights, then rejects taxation and the state as inherently coercive.',
+                relation: 'The closest fit to the main profile and its extremely anti-state economic-market scores; it remains a normative argument rather than a demonstrated institutional outcome.',
+                citations: citations(['rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                label: 'Consequentialist market anarchism',
+                distinction: 'Defends private and competitive provision because it is expected to produce better security, law, prosperity, or freedom, even if the argument is not based on absolute rights.',
+                relation: 'Shares the institutional proposal but can revise or limit property claims when consequences, public goods, or equal access weigh against them.',
+                citations: citations(['hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepAnarchism']),
+              },
+              {
+                label: 'Minarchism',
+                distinction: 'Retains a very limited state for courts, defense, and protection against force, theft, and fraud while restricting its economic and social functions.',
+                relation: 'The nearest libertarian neighbor but not anarcho-capitalism: a compulsory territorial authority remains legitimate in principle.',
+                citations: citations(['nozickASU', 'lockeSecondTreatise'], ['sepLibertarianism', 'sepLiberalism']),
+              },
+              {
+                label: 'Georgist or land-focused market anarchism',
+                distinction: 'Accepts markets and private exchange while arguing that land or natural-resource value cannot be treated like an ordinary product without addressing common claims or equal access.',
+                relation: 'Challenges absolute property readings from within market-oriented politics and exposes why initial acquisition is central to the profile.',
+                citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['sepLibertarianism', 'sepLiberalism']),
+              },
+              {
+                label: 'Polycentric private-law society',
+                distinction: 'Emphasizes competing arbitration, insurance, security, and legal providers whose rules are coordinated through contracts, reputation, and consumer choice.',
+                relation: 'Focuses on institutional mechanism rather than one moral foundation; it faces the problem of conflict among providers and the emergence of dominant agencies.',
+                citations: citations(['nozickASU', 'rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                label: 'Cyber-libertarian, seasteading, or enclave projects',
+                distinction: 'Uses digital networks, voluntary migration, special jurisdictions, or newly built communities to test exit, private governance, and low-state arrangements.',
+                relation: 'These are contemporary experiments or proposals, not proof that a complex territorial society has become stateless; their legal status normally depends on an existing state.',
+                citations: citations(['hayekKnowledge', 'rothbardForNewLiberty'], ['sepAnarchism', 'openTextbook']),
+              },
+              {
+                label: 'Individualist and mutualist anarchist neighbors',
+                distinction: 'Shares skepticism toward centralized states and may value exchange or voluntary association, while often rejecting capitalist property, wage hierarchy, or private monopolization of land.',
+                relation: 'Historically adjacent but theoretically distinct; “anarchism” does not entail anarcho-capitalism and many anarchists explicitly reject the capitalist half of the label.',
+                citations: citations(['rothbardForNewLiberty', 'millOnLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, experiments, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Murray N. Rothbard',
+                role: 'Major modern theorist of private-property anarchism, self-ownership, non-aggression, and market provision of law and security.',
+                caveat: 'Rothbard provides the clearest primary statement for this profile, but a theorist’s proposal is not evidence that a stateless market society has existed or that its institutions would resolve every conflict.',
+                citations: citations(['rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Robert Nozick',
+                role: 'Minimal-state philosopher whose argument about protective associations directly engages the anarcho-capitalist challenge.',
+                caveat: 'Nozick is a boundary case and critic of the full anarcho-capitalist conclusion. His minimal state should not be presented as an anarchist or stateless model.',
+                citations: citations(['nozickASU'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Friedrich A. Hayek',
+                role: 'Austrian and liberal thinker whose work on dispersed knowledge and spontaneous order influenced market-libertarian arguments.',
+                caveat: 'Hayek defended a limited public framework and should not be labelled anarcho-capitalist; he is included as an economic and institutional influence only.',
+                citations: citations(['hayekKnowledge'], ['sepLibertarianism', 'sepLiberalism']),
+              },
+              {
+                name: 'John Locke',
+                role: 'Earlier theorist of natural rights, consent, property, and resistance to arbitrary rule whose arguments are part of the genealogy.',
+                caveat: 'Locke defended political government and therefore is not an anarcho-capitalist. His inclusion shows that property rights and anti-arbitrary-rule arguments do not automatically imply abolition of the state.',
+                citations: citations(['lockeSecondTreatise'], ['sepLiberalism', 'sepAnarchism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'No sovereign-state match',
+                period: 'Present and historical comparison',
+                match: 'No recognized country can be an exact example because every state retains public law, territorial jurisdiction, taxation or compulsory regulation, and a claim to legitimate coercion.',
+                caveat: 'The absence of a country match is a definitional consequence, not proof that the theory is impossible or that every state is equally coercive.',
+                citations: citations(['rothbardForNewLiberty', 'nozickASU'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Market-oriented jurisdictions',
+                period: 'Contemporary, country- and period-specific',
+                match: 'Low-tax, lightly regulated, or commercially open jurisdictions can approximate particular economic preferences.',
+                caveat: 'They remain states with public courts, police, regulation, taxation, and territorial law; market orientation alone is not anarcho-capitalism.',
+                citations: citations(['hayekKnowledge', 'lockeSecondTreatise'], ['sepLibertarianism', 'sepLiberalism']),
+              },
+              {
+                name: 'Special economic zones and private communities',
+                period: 'Modern experiments within state jurisdictions',
+                match: 'Some zones or communities use private management, contractual services, or unusual regulatory arrangements to test partial exit and competition.',
+                caveat: 'Their charters, land rights, courts, security, and ultimate enforceability depend on a surrounding state. They are partial institutional experiments, not stateless societies.',
+                citations: citations(['rothbardForNewLiberty', 'hayekKnowledge'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Nineteenth-century individualist anarchist and voluntaryist debates',
+                period: 'United States and Europe, nineteenth century',
+                match: 'Anti-state and voluntary-association arguments supplied parts of the later vocabulary of private law and individual sovereignty.',
+                caveat: 'Many individualist anarchists criticized capitalist property or defended mutualist arrangements. They should not be retroactively counted as anarcho-capitalists without author- and text-specific evidence.',
+                citations: citations(['rothbardForNewLiberty', 'millOnLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Digital, cryptocurrency, and seasteading projects',
+                period: 'Late twentieth century–present',
+                match: 'Contemporary projects explore voluntary association, alternative currencies, online governance, migration between jurisdictions, and private rule-making.',
+                caveat: 'They vary widely and normally depend on state-recognized contracts, property law, infrastructure, or jurisdiction. A technical platform or private association is not automatically a market-anarchist polity.',
+                citations: citations(['rothbardForNewLiberty', 'hayekKnowledge'], ['sepAnarchism', 'openTextbook']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'libertarian-market', relation: 'shares strong market and property commitments, but the market-libertarian card can accept a limited state while anarcho-capitalism rejects the state in principle' },
+              { id: 'classical-liberal', relation: 'shares individual rights, property, contract, and limited government, but classical liberalism retains constitutional public authority' },
+              { id: 'liberal-constitutionalist', relation: 'shares civil liberties and limits on arbitrary power, but constitutional liberalism treats public law and accountable government as necessary' },
+              { id: 'anarcho-communist', relation: 'shares anti-state commitments but rejects private capitalist ownership and favors common ownership or free association' },
+              { id: 'anarchist-communalist', relation: 'shares anti-hierarchical aspirations but differs over markets, private property, municipal democracy, and the meaning of economic freedom' },
+              { id: 'democratic-socialist', relation: 'may share criticism of concentrated power but accepts collective provision and democratic state action that anarcho-capitalism rejects' },
+              { id: 'minarchist', relation: 'the closest state-accepting neighbor: a minimal public authority remains legitimate for courts, defense, and rights protection' },
+              { id: 'green-commons', relation: 'can overlap on local autonomy and skepticism of centralization, but commons governance and ecological obligations challenge absolute private-property primacy' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The central institutional criticism is the private-monopoly problem. If one protection or arbitration agency becomes dominant, it may exercise state-like power without public accountability. If several agencies disagree, conflict may be settled by wealth, force, or alliance rather than a common rule. Nozick’s minimal-state argument is important because it claims that protective associations can tend toward a dominant agency; whether that outcome is legitimate or avoidable remains disputed.',
+            citations: citations(['nozickASU', 'rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns public goods and externalities. National defense, epidemic control, climate stability, basic infrastructure, open knowledge, and protection of people who cannot pay are difficult to provide through ordinary consumer contracts alone. Voluntary charity or insurance may help, but the theory must explain free-riding, universal access, coordination across jurisdictions, and harms imposed on people who never agreed to a provider’s rules.',
+            citations: citations(['hayekKnowledge', 'millOnLiberty', 'kantPerpetualPeace'], ['sepLibertarianism', 'sepAnarchism', 'foreignPolicy', 'sepClimateJustice']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns property and bargaining power. If land, water, minerals, housing, or infrastructure are initially enclosed or unequally inherited, later contracts may preserve a distribution that many people cannot realistically refuse. The distinction between voluntary exchange and dependence therefore cannot be resolved by assuming that every party has comparable alternatives. Research must identify acquisition history, labor conditions, access to essentials, and the availability of genuine exit.',
+            citations: citations(['lockeSecondTreatise', 'nozickASU', 'millOnLiberty'], ['sepLibertarianism', 'sepLibertyPositiveNegative', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, the profile does not automatically protect social equality, minority security, or freedom from private domination. Private communities may be tolerant and pluralist, but they may also exclude, discriminate, impose religious or contractual rules, or make exit costly. Safeguards would need to specify non-aggression limits, due process, children’s and dependent persons’ rights, protection from violence and fraud, transparent contracts, remedies for third-party harms, and mechanisms that prevent private jurisdiction from becoming unaccountable sovereignty.',
+            citations: citations(['rothbardForNewLiberty', 'nozickASU', 'lockeLetterToleration', 'spinozaPolitical'], ['sepAnarchism', 'sepLibertarianism', 'sepReligionPolitics', 'sepLibertyPositiveNegative']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge', 'lockeSecondTreatise', 'millOnLiberty', 'kantPerpetualPeace', 'lockeLetterToleration', 'spinozaPolitical', 'morgenthauRealism'],
+      researchSourceIds: ['sepAnarchism', 'sepLibertarianism', 'sepLiberalism', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'foreignPolicy', 'sepClimateJustice', 'openTextbook'],
+      editorialNote: 'The profile describes a radical right-libertarian proposal, not an observed country or a verdict on all anarchism. It distinguishes abolition of the state from deregulation, market orientation from private law, and voluntary association from the empirical ability to exit unequal or coercive arrangements.',
+    },
+    researchGaps: [
+      'Add primary works and scholarly debate on David Friedman, Hans-Hermann Hoppe, Bruce Benson, Linda and Morris Tannehill, Lysander Spooner, Benjamin Tucker, and mutualist critics, recording where each author does or does not fit the label.',
+      'Add German- and Austrian-language scholarship on Mises, Hayek, private law, spontaneous order, calculation, and the limits of state planning, with translation and edition provenance.',
+      'Add comparative legal and economic research on private arbitration, security, insurance, common-pool resources, public goods, externalities, competition policy, and historical cases of stateless or polycentric legal order.',
+      'Add evidence on land acquisition, Indigenous and communal property, slavery, colonial enclosure, company towns, labor dependence, housing, disability, childhood, migration, and whether exit is materially available to affected people.',
+      'Add specialist research on cryptocurrency governance, decentralized autonomous organizations, seasteading, charter cities, special economic zones, private cities, and the relationship between experimental autonomy and surrounding state law.',
+      'Add systematic ethical and empirical comparisons with classical liberalism, minarchism, mutualism, anarcho-communism, communalism, and constitutional pluralism rather than treating all anti-state language as one tradition.',
+    ],
+  },
 };
