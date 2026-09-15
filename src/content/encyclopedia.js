@@ -8552,4 +8552,298 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Maintain a separate, evidence-based method for studying contemporary neo-Nazi and far-right movements so historical analogy does not become casual labeling or erase the specificity of Nazi Germany and the Holocaust.',
     ],
   },
+  'libertarian-socialist': {
+    id: 'libertarian-socialist',
+    title: 'Libertarian socialist',
+    canonicalLabel: 'Libertarian socialism',
+    aliases: ['libertarian socialism', 'socialist anarchism', 'anti-authoritarian socialism', 'libertarian Marxism', 'self-management socialism'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Libertarian socialism is treated as a broad anti-authoritarian socialist family seeking social ownership, worker or community self-management, equality, and freedom from both capitalist domination and centralized state command. It includes internally different anarchist, syndicalist, council communist, communalist, autonomist, and market-socialist currents; it is not one uniform programme or a synonym for every decentralized project.',
+    timeScope: 'Its modern family developed through nineteenth-century socialist and anarchist debates, the First International, labor and syndicalist movements, revolutionary experiments after 1917, the Spanish Revolution, postwar council and autonomy movements, and contemporary cooperative, municipalist, ecological, and anti-authoritarian organizing.',
+    geographicScope: 'Transnational, with major historical references in Europe, Russia and Ukraine, Spain, Latin America, and later global labor, feminist, ecological, anti-colonial, and autonomous movements. The tradition’s internationalism should not obscure local institutions, unequal resources, or the different histories of each experiment.',
+    summary: 'A socialist family that seeks collective or social ownership through decentralized, democratic, and anti-authoritarian institutions. It treats freedom as more than non-interference: people should have meaningful control over workplaces, communities, and political decisions. The family is critical of both private-capital domination and party-state command, but its members disagree about markets, federations, parties, revolutionary violence, councils, municipal government, religion, and how large-scale coordination should work.',
+    summaryCitations: citations(
+      ['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread', 'luxemburgReformRevolution', 'bookchinLibertarianMunicipalism'],
+      ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'socialEcologyMunicipalism', 'cambridgeSpanishAnarchism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 78,
+        label: 'Social ownership and worker self-management',
+        explanation: 'Private control of major productive assets and hierarchical wage dependence are criticized in favor of cooperatives, common ownership, workplace democracy, social provision, or collectively governed resources. Some currents support non-market allocation, while others accept markets among worker-owned enterprises; the common claim is that capital should not give a separate class unilateral control over production.',
+        citations: citations(['kropotkinConquestBread', 'bakuninStatism', 'marxEngelsManifesto'], ['sepSocialism', 'sepAnarchism', 'iloCooperatives', 'iloWorkerCooperatives']),
+      },
+      social: {
+        score: 50,
+        label: 'Emancipatory and egalitarian social change',
+        explanation: 'The family generally links economic liberation to equality, mutual aid, anti-hierarchy, self-development, and opposition to coercive social institutions. Currents differ over culture, family, religion, national traditions, and the pace of change, so the score indicates an emancipatory tendency rather than one fixed social-policy platform.',
+        citations: citations(['kropotkinMutualAid', 'millOnLiberty', 'luxemburgReformRevolution'], ['sepAnarchism', 'sepLuxemburg', 'sepSocialism']),
+      },
+      authority: {
+        score: -75,
+        label: 'Anti-authoritarian federation and direct participation',
+        explanation: 'The state, party hierarchy, capitalist management, and centralized bureaucracy are treated as risks of domination. Positive alternatives include assemblies, councils, unions, communes, federations, recallable delegates, mutual aid, and direct participation. “Anti-authoritarian” does not mean absence of organization: the central problem is how organized power can remain accountable, revocable, and non-dominating.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism', 'cambridgeSpanishAnarchism']),
+      },
+      identity: {
+        score: 60,
+        label: 'Internationalist and plural local belonging',
+        explanation: 'International worker solidarity, cross-border cooperation, and opposition to compulsory national unity are common, while local self-government and community attachment remain important. Anti-nationalism is not uniform: some libertarian socialists support national liberation, Indigenous autonomy, or civic solidarity when these resist domination rather than establish a new hierarchy.',
+        citations: citations(['bakuninStatism', 'luxemburgReformRevolution', 'fanonWretchedEarth'], ['sepAnarchism', 'sepLuxemburg', 'sepColonialism']),
+      },
+      foreign: {
+        score: 50,
+        label: 'Anti-militarist internationalism and situated self-defense',
+        explanation: 'Permanent armies, imperialism, and state militarism are generally rejected, while collective self-defense, armed resistance, or revolutionary war may be accepted in response to domination. The tradition contains serious pacifist and revolutionary disagreements; the score reflects restraint and anti-imperialism, not a claim that every libertarian socialist rejects all force.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'fanonWretchedEarth'], ['sepAnarchism', 'cambridgeSpanishAnarchism', 'sepColonialism']),
+      },
+      religion: {
+        score: 42,
+        label: 'Secular, anti-clerical, and pluralist currents',
+        explanation: 'Many currents criticize churches and religious authority when they support hierarchy, while defending freedom of conscience and allowing religious communities to organize voluntarily. Others draw on religious pacifism, communal ethics, or liberation theology. The common boundary is opposition to an unaccountable clerical or state authority, not compulsory atheism.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'millOnLiberty'], ['sepReligionPolitics', 'sepAnarchism', 'sepSocialism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Libertarian socialism begins from a double criticism: capitalism gives owners and managers disproportionate control over work and resources, while centralized states and parties can reproduce domination in the name of equality. Its positive proposal is not simply a smaller state or more generous welfare. It seeks institutions in which people affected by a decision participate in making it, workers govern production, communities govern shared life, and larger coordination is built through federations rather than imposed by a permanent ruling center.',
+            citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label is broad and historically layered. Anarcho-communists, anarcho-syndicalists, collectivist anarchists, council communists, libertarian Marxists, autonomists, communalists, and some market socialists may all be described as libertarian socialist, yet they disagree about property, money, markets, parties, electoral work, national liberation, technology, ecology, and violence. The card therefore records a family resemblance rather than a single blueprint.',
+            citations: citations(['bakuninStatism', 'kropotkinConquestBread', 'luxemburgReformRevolution', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'sepLuxemburg', 'cambridgeSpanishAnarchism']),
+          },
+          {
+            type: 'evidence-note',
+            text: '“Libertarian” here means freedom from domination and collective self-government, not the U.S. market-libertarian meaning of strong private property and minimal government. “Socialist” here means social or collective control over production and social life, not automatic support for a centralized party-state.',
+            citations: citations(['bakuninStatism', 'kropotkinConquestBread', 'millOnLiberty'], ['sepAnarchism', 'sepSocialism', 'iloWorkerCooperatives']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The economic core is self-management. A workplace may be owned and governed by its workers, a community may manage common resources, or federated associations may coordinate production and distribution. Cooperative practice can embody pieces of this vision without abolishing capitalism or the state, so an actual cooperative is evidence of a form of worker control, not proof that a whole society is libertarian socialist. Membership rules, decision rights, surplus distribution, relations with non-members, and accountability all matter.',
+            citations: citations(['kropotkinConquestBread', 'bookchinLibertarianMunicipalism'], ['iloCooperatives', 'iloWorkerCooperatives', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The political core is anti-domination rather than administrative absence. Assemblies, councils, unions, communes, and federations require rules, delegation, expertise, records, conflict resolution, and mechanisms for coordinating across scale. Libertarian socialists typically prefer recallable or instructed delegates to independent rulers, but debates persist over whether complex societies can avoid durable specialization, informal elites, charismatic leadership, or coercive enforcement.',
+            citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism', 'luxemburgReformRevolution'], ['sepAnarchism', 'socialEcologyMunicipalism', 'sepLuxemburg']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Freedom is understood positively as the capacity to participate in shaping the conditions of life, and negatively as protection from state, capitalist, patriarchal, racial, colonial, and religious domination. Mutual aid is treated as an organizing principle, not proof that conflict or coercion disappears. The tradition therefore needs a theory of minority rights, dissent, defense, ecological limits, inter-community obligations, and fair procedures when consensus fails.',
+            citations: citations(['kropotkinMutualAid', 'millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'sepReligionPolitics', 'sepSocialism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Nineteenth-century socialist and anarchist roots',
+            text: 'Modern libertarian socialism emerged from conflicts within the socialist movement over property, state power, organization, revolution, and the meaning of emancipation. Bakunin and other anti-authoritarian socialists rejected the idea that a revolutionary minority or state bureaucracy could liberate workers by ruling on their behalf. Kropotkin developed arguments about mutual aid, decentralized cooperation, and common access, while anarchist and socialist currents debated collectivist, communist, mutualist, and syndicalist forms.',
+            citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            period: 'First International and the conflict over the state',
+            text: 'The International Workingmen’s Association became a major arena for disagreement between Marxist and anti-authoritarian strategies. The conflict was not simply personal: it involved the role of political parties, state power, revolutionary transition, unions, federal organization, and whether centralized authority could be safely used and later dissolved. These debates shaped the later boundary between state socialism and libertarian socialist traditions.',
+            citations: citations(['bakuninStatism', 'marxEngelsManifesto'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            period: 'Syndicalism and the labor movement — late nineteenth and early twentieth centuries',
+            text: 'Anarcho-syndicalists treated unions as instruments of struggle and possible nuclei of a future society, using direct action, solidarity, strikes, and worker organization rather than relying primarily on electoral parties. Syndicalism varied by country and could combine workplace democracy with local federations, revolutionary general strikes, and debates over whether unions should administer production, negotiate reforms, or prepare for insurrection.',
+            citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['sepAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook']),
+          },
+          {
+            period: 'The Russian Revolution and Makhnovist Ukraine — 1917–1921',
+            text: 'The Russian Revolution became a global reference point and a source of division. Anti-authoritarian socialists welcomed revolutionary transformation but criticized Bolshevik centralization, party dictatorship, and the suppression of autonomous worker and peasant power. The Makhnovist movement in Ukraine remains a contested case of peasant self-organization, revolutionary defense, and anti-state politics under war; it should not be romanticized or treated as a complete model outside its violent context.',
+            citations: citations(['bakuninStatism', 'leninStateRevolution'], ['sepAnarchism', 'makhnoRuralAnarchism', 'cambridgeAnarchismBolshevism']),
+          },
+          {
+            period: 'Spanish Revolution and Civil War — 1936–1939',
+            text: 'The Spanish Revolution offered one of the largest historical experiments in anarcho-syndicalist organization. In parts of Republican Spain, unions and local bodies collectivized workplaces, agriculture, transport, and services while facing war, state pressure, internal conflict, scarcity, and military defeat. The record contains evidence of practical self-management as well as coercion, uneven participation, military constraints, disputes with communists and republicans, and unresolved questions about scale and coordination.',
+            citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['cambridgeSpanishAnarchism', 'sepAnarchism', 'cambridgeAnarchismBolshevism']),
+          },
+          {
+            period: 'Council, autonomy, and anti-bureaucratic socialism — 1945–1970s',
+            text: 'Postwar worker and council movements revisited the relationship among workplace democracy, party organization, bureaucracy, and state power. The Hungarian Revolution, Yugoslav self-management, Western European council currents, autonomist Marxism, and independent socialist groups generated different proposals and practices. They cannot be collapsed into anarchism, but they broadened the libertarian socialist argument that formal nationalization is not equivalent to worker control.',
+            citations: citations(['luxemburgReformRevolution', 'bakuninStatism'], ['sepLuxemburg', 'sepSocialism', 'openTextbook']),
+          },
+          {
+            period: 'Communalism, ecology, feminism, and autonomy — late twentieth century',
+            text: 'Later currents connected anti-authoritarian socialism to ecological limits, feminist critiques of patriarchy, municipal democracy, anti-racist organizing, and opposition to bureaucratic development. Bookchin’s libertarian municipalism proposed democratic municipalities and confederations as a route beyond both state socialism and private capitalism, while other autonomist and community movements emphasized prefigurative institutions, mutual aid, or refusal of centralized representation.',
+            citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['socialEcologyMunicipalism', 'sepAnarchism', 'sepEnvironmentalEthics']),
+          },
+          {
+            period: 'Contemporary cooperative and autonomous practice',
+            text: 'Today, worker cooperatives, solidarity economies, community land projects, mutual-aid networks, municipal experiments, union democracy, and autonomous movements may enact parts of the tradition within states and markets. The existence of such institutions demonstrates possible forms of participation and ownership, not the disappearance of hierarchy, market pressure, unequal expertise, or dependence on public law. Claims about a whole libertarian socialist society require much stronger evidence.',
+            citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['iloCooperatives', 'iloWorkerCooperatives', 'socialEcologyMunicipalism']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Anarcho-communism',
+                distinction: 'Favors abolition of the state and private capital, common ownership, decentralized communes, and distribution according to needs rather than wages or markets.',
+                relation: 'A major libertarian socialist current, but other variants retain wages, exchange, worker ownership, or mixed forms of property.',
+                citations: citations(['kropotkinConquestBread', 'bakuninStatism'], ['sepAnarchism', 'sepSocialism']),
+              },
+              {
+                label: 'Anarcho-syndicalism',
+                distinction: 'Places unions, direct action, worker solidarity, and the general strike at the center of social transformation and possible workplace administration.',
+                relation: 'More organizationally focused than a general anti-state philosophy; syndicalists disagree about elections, revolutionary timing, and relations with other movements.',
+                citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['cambridgeSpanishAnarchism', 'sepAnarchism']),
+              },
+              {
+                label: 'Council communism and libertarian Marxism',
+                distinction: 'Treats workers’ councils and direct control of production as alternatives to both capitalist management and a centralized revolutionary party.',
+                relation: 'Shares anti-bureaucratic socialism but can retain Marxist analysis of class and historical development; it is not identical to anarchism.',
+                citations: citations(['luxemburgReformRevolution', 'marxEngelsManifesto'], ['sepLuxemburg', 'sepSocialism', 'openTextbook']),
+              },
+              {
+                label: 'Mutualism and market socialism',
+                distinction: 'Accepts some exchange or markets while seeking reciprocal credit, worker ownership, cooperative production, and limits on rent, monopoly, or capitalist domination.',
+                relation: 'Shows why anti-capitalist social ownership does not always mean abolishing every market; the boundary is control and class power, not only price mechanisms.',
+                citations: citations(['bakuninStatism', 'millOnLiberty'], ['sepAnarchism', 'sepSocialism', 'iloWorkerCooperatives']),
+              },
+              {
+                label: 'Libertarian municipalism and communalism',
+                distinction: 'Builds direct democracy in municipalities and links them through confederations, with ecology and civic participation as central concerns.',
+                relation: 'A later institutional proposal that differs from classical anarcho-communism while sharing anti-state and anti-capitalist aims.',
+                citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+              },
+              {
+                label: 'Autonomism and prefigurative politics',
+                distinction: 'Emphasizes autonomous organization, refusal of party mediation, worker and social movements, and building desired relations in the present.',
+                relation: 'Can overlap with libertarian Marxism, feminism, anti-racism, and community organizing without requiring one constitutional model or a complete common economy.',
+                citations: citations(['luxemburgReformRevolution', 'kropotkinMutualAid'], ['sepLuxemburg', 'sepAnarchism', 'openTextbook']),
+              },
+              {
+                label: 'Revolutionary anti-authoritarian socialism',
+                distinction: 'Accepts insurrectionary or armed struggle against state and capitalist domination while rejecting a permanent revolutionary government.',
+                relation: 'Creates a persistent tension: emergency defense can centralize command, suspend dissent, and reproduce the state form the movement sought to abolish.',
+                citations: citations(['bakuninStatism', 'fanonWretchedEarth'], ['sepAnarchism', 'cambridgeSpanishAnarchism', 'sepColonialism']),
+              },
+              {
+                label: 'Religious or ethical libertarian socialism',
+                distinction: 'Grounds solidarity, common ownership, nonviolence, or anti-hierarchy in religious ethics, conscience, or communal practice rather than materialist theory alone.',
+                relation: 'Can share social ownership and anti-domination while disagreeing with anti-clerical or atheistic currents about authority, community, and moral law.',
+                citations: citations(['kropotkinMutualAid', 'millOnLiberty'], ['sepReligionPolitics', 'sepSocialism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Illustrative examples and boundaries',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'There is no single sovereign-state match for libertarian socialism. The profile describes a political and economic orientation that has appeared in movements, communes, unions, councils, cooperatives, and revolutionary territories, often under conditions where war, repression, scarcity, or surrounding state systems shaped what was possible. A cooperative or autonomous zone can be a partial example without constituting a complete libertarian socialist society.',
+            citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['sepAnarchism', 'iloCooperatives', 'iloWorkerCooperatives']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Spanish anarchist collectives, the Makhnovist movement in Ukraine, workers’ councils, and cooperative or municipal experiments are useful historical cases because they expose both the promise and the difficulty of self-management. Their institutions differed in membership, coercion, gender relations, military organization, relation to markets, and interaction with other political forces. They should be studied as evidence about practices and trade-offs, not as proof that the entire doctrine succeeded or failed.',
+            citations: citations(['bakuninStatism', 'kropotkinConquestBread', 'bookchinLibertarianMunicipalism'], ['cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Rosa Luxemburg, Mikhail Bakunin, Peter Kropotkin, Murray Bookchin, and worker-control theorists represent different arguments within the family. Luxemburg defended mass democracy while criticizing bureaucratic substitution; Bakunin attacked state socialism; Kropotkin developed mutual-aid and communal arguments; Bookchin proposed municipal confederation and social ecology. They are reference points in a debate, not interchangeable authors of one programme.',
+            citations: citations(['luxemburgReformRevolution', 'bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepLuxemburg', 'sepAnarchism', 'socialEcologyMunicipalism']),
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'anarcho-communist', relation: 'a close and more specific overlap: anarcho-communism emphasizes stateless common ownership and needs-based distribution, while libertarian socialism includes syndicalist, council, municipalist, autonomist, and market-socialist variants' },
+              { id: 'anarchist-communalist', relation: 'shares decentralized anti-state organization and common life, while communalism specifically emphasizes municipal democracy, confederation, and social ecology' },
+              { id: 'democratic-socialist', relation: 'shares social ownership, equality, labor power, and democratic aims, but democratic socialism may use the state, elections, and parliamentary institutions more positively' },
+              { id: 'social-democratic', relation: 'may share welfare, labor rights, and equality, but social democracy generally reforms or regulates capitalism through the state rather than abolishing capitalist control and state hierarchy' },
+              { id: 'anarcho-capitalist', relation: 'both criticize centralized state authority, but libertarian socialism rejects private-capital domination and seeks social ownership while anarcho-capitalism treats private property and markets as central' },
+              { id: 'communist', relation: 'shares anti-capitalist and common-ownership language, but libertarian socialism rejects party-state centralization and prioritizes decentralized self-management' },
+              { id: 'anti-colonial-liberation', relation: 'can share anti-imperialism, popular mobilization, and self-determination, but anti-colonial liberation may build a national state while libertarian socialism remains skeptical of centralized sovereignty' },
+              { id: 'green-commons', relation: 'shares common resources, ecological limits, local participation, and cooperative governance, while green commons can be less anti-state or less committed to abolishing capitalist ownership' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first criticism concerns scale and coordination. Face-to-face assemblies and worker cooperatives can govern local decisions, but complex societies also need transport, medicine, energy, scientific research, disaster response, defense, and long supply chains. Federations and delegated expertise may solve some problems, yet they can also create durable administrative elites. A serious model must explain how information, resources, accountability, and recall work across scale.',
+            citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinConquestBread'], ['sepAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second criticism concerns participation and informal power. Formal equality in an assembly does not guarantee equal voice when education, gender, race, disability, time, charisma, violence, technical knowledge, or control of information are unevenly distributed. Worker ownership can still reproduce exclusion, and consensus can empower persistent minorities or exhaust less-resourced participants. Safeguards require accessibility, rotation, transparency, independent rights protection, anti-discrimination rules, and ways to dissent without being treated as an enemy of the collective.',
+            citations: citations(['luxemburgReformRevolution', 'millOnLiberty', 'kropotkinMutualAid'], ['sepLuxemburg', 'sepAnarchism', 'iloWorkerCooperatives']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third criticism concerns defense and emergency. Revolutionary or autonomous communities may face military attack, blockade, sabotage, or internal violence. Coordinated defense can create command structures, secrecy, rationing, and coercion that undermine anti-authoritarian aims. Historical cases such as Ukraine and Spain show why self-defense cannot be separated from questions of who commands, who decides, how dissent is handled, and whether emergency powers expire.',
+            citations: citations(['bakuninStatism', 'fanonWretchedEarth'], ['makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'sepAnarchism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth criticism concerns economic incentives and common resources. Abolishing private capital does not by itself resolve scarcity, ecological limits, free-riding, skill allocation, investment, maintenance, or conflict between local autonomy and wider equality. Markets, planning, rationing, gift economies, and federated allocation each create different risks. The entry should record the actual allocation mechanism rather than treating “common ownership” as a complete economic explanation.',
+            citations: citations(['kropotkinConquestBread', 'bookchinLibertarianMunicipalism'], ['sepSocialism', 'iloCooperatives', 'iloWorkerCooperatives']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fifth criticism concerns the state question. Rejecting the state can protect against bureaucracy and coercive hierarchy, but it can also leave communities vulnerable to armed neighbors, private violence, border pressures, or unequal informal authority. Conversely, capturing the state to pursue socialism may produce a new ruling layer. The dispute is not solved by declaring one side pure: research must compare institutional checks, social power, minority protection, and the ability to change or leave an organization.',
+            citations: citations(['bakuninStatism', 'luxemburgReformRevolution'], ['sepAnarchism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, the label can become romantic or dismissive. Admirers may treat every autonomous experiment as proof of a complete alternative, while critics may treat every failure under war or repression as proof that self-management is impossible. A careful account gives partial credit for documented institutions, records their exclusions and failures, and distinguishes a normative ideal, a movement strategy, a temporary experiment, a cooperative enterprise, and a durable political order.',
+            citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid', 'bakuninStatism'], ['sepAnarchism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'iloCooperatives']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread', 'luxemburgReformRevolution', 'bookchinLibertarianMunicipalism', 'marxEngelsManifesto', 'millOnLiberty', 'fanonWretchedEarth'],
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook'],
+      editorialNote: 'This entry treats libertarian socialism as a broad family resemblance rather than a single doctrine. It distinguishes anti-authoritarian socialism from market libertarianism, state socialism, social democracy, anarcho-communism, communalism, and cooperative practice, and records both the emancipatory aims and the institutional problems of self-management.',
+    },
+    researchGaps: [
+      'Add original-language research in Spanish, Catalan, French, German, Italian, Russian, Ukrainian, Portuguese, Arabic, and other relevant languages on syndicalism, councils, communalism, autonomy, and worker control.',
+      'Compare anarcho-communism, anarcho-syndicalism, mutualism, council communism, libertarian Marxism, autonomism, communalism, and market socialism without treating one current as the definition of the whole family.',
+      'Expand evidence on women’s labor, feminist self-organization, racialized and colonial power, Indigenous autonomy, disability, migration, sexuality, and informal hierarchy within libertarian socialist movements and experiments.',
+      'Study the actual governance and economic performance of worker cooperatives, communes, councils, municipal confederations, and solidarity economies, including membership exclusions, capital access, productivity, ecological limits, and relations with surrounding markets and states.',
+      'Compare the effects of war, repression, scarcity, and emergency command on anti-authoritarian institutions in Ukraine, Spain, and later autonomous or communal experiments.',
+      'Clarify how libertarian socialists would provide constitutional rights, adjudication, public health, education, infrastructure, scientific research, defense, and interregional redistribution without reproducing unaccountable bureaucracy.',
+      'Test whether the six-dimensional profile should separately score social ownership, workplace democracy, anti-state authority, localism, internationalism, anti-militarism, and secular or religious pluralism rather than combining them into one card.',
+    ],
+  },
 };
