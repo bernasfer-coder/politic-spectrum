@@ -206,6 +206,7 @@ const RIGHTS_RECORDS = {
     bpbNationalSocialism: { ...LINK_ONLY, notes: 'German federal civic-education source used for independent historical synthesis; no bpb text, images, or graphics are reproduced.' },
     panAfricanism: { ...LINK_ONLY, notes: 'Scholarly article used as a linked source; no article text, figures, or tables are reproduced.' },
     sepReligionPolitics: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
+    oxfordChristianDemocracy: { ...LINK_ONLY, notes: 'Oxford Academic chapter used as a linked scholarly source; no chapter text, tables, or figures are reproduced.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },

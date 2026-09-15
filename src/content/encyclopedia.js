@@ -2862,4 +2862,303 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative work on the scale limits of localism, the role of national and international authority, technological governance, geoengineering, and democratic safeguards during ecological emergencies.',
     ],
   },
+  'religious-traditionalist': {
+    id: 'religious-traditionalist',
+    title: 'Religious traditionalist',
+    canonicalLabel: 'Religious traditionalist',
+    aliases: ['religious conservatism', 'faith-informed traditionalism', 'confessional traditionalism', 'sacral political order'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile describes political views that give inherited religious or sacred moral traditions a significant public role in law, education, family policy, authority, and social order. It is a comparative analytical category, not a description of one religion, denomination, country, or level of private belief; religious traditionalists may support constitutional pluralism, confessional privilege, religious nationalism, or clerical rule.',
+    timeScope: 'Ancient and medieval religious-legal traditions; early modern confessional states and toleration debates; nineteenth-century religious conservatism and social movements; twentieth-century Christian democracy and contemporary religious-national or faith-informed politics.',
+    geographicScope: 'Cross-civilizational profile including Christian, Islamic, Jewish, Hindu, Buddhist, and other religious-political traditions; concepts of revelation, law, community, kingship, clergy, and tradition differ substantially across contexts.',
+    summary: 'A traditionalist profile that treats inherited religious morality, family and community institutions, social continuity, and public order as politically important, often giving religious reasoning a formal or informal role in public law. Its economic policy is flexible, ranging from markets and private property to welfare, distributism, or state direction; its decisive questions concern public religious authority, pluralism, minority rights, and the limits of coercive moral legislation.',
+    summaryCitations: citations(['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism']),
+    dimensionInterpretations: {
+      economic: {
+        score: 5,
+        label: 'Economically variable and communitarian',
+        explanation: 'Religious traditionalism does not specify one ownership model. It may defend property and markets, support social insurance and family provision, favor distributist or cooperative ownership, or accept state direction when economic order is judged necessary for the common good. Economic positions should therefore be measured separately from religious authority.',
+        citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'adamSmithWealth'], ['sepReligionPolitics', 'oxfordChristianDemocracy', 'sepConservatism']),
+      },
+      social: {
+        score: -78,
+        label: 'Strongly traditionalist',
+        explanation: 'Inherited family structures, religious practice, authority, sexual morality, gender roles, ritual, and communal obligations are treated as stabilizing or morally authoritative. Different traditions support different reforms and degrees of tolerance, so a traditionalist social orientation does not automatically imply identical policies or hostility to every change.',
+        citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan'], ['sepReligionPolitics', 'sepConservatism', 'openTextbook']),
+      },
+      authority: {
+        score: 70,
+        label: 'Order-oriented and authority-affirming',
+        explanation: 'Moral, familial, religious, and political authority receive substantial weight, especially when disorder or moral decline is perceived. Constitutional limits, natural law, customary rights, and institutional checks may still be accepted; the profile becomes theocratic or clerical-authoritarian only when religious authority is made constitutive of coercive rule and dissent is denied.',
+        citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['sepReligionPolitics', 'sepMedieval', 'vdem']),
+      },
+      identity: {
+        score: -10,
+        label: 'National or civilizational traditionalism',
+        explanation: 'Religious inheritance may be joined to national history, family memory, civilizational identity, or a shared moral community. This can be civic and pluralist or exclusionary and ethnoreligious; religious tradition alone does not determine the boundary, so membership and equal citizenship must be examined separately.',
+        citations: citations(['burkeReflections', 'renanNation', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'sepConservatism', 'openTextbook']),
+      },
+      foreign: {
+        score: -5,
+        label: 'Defensive and morally engaged',
+        explanation: 'Defense of the community, protection of religious populations, civilizational solidarity, and preservation of order can justify an active foreign policy. Other religious traditionalists favor restraint, diplomacy, or just-war limits; the profile is not inherently expansionist and should not be confused with militarism.',
+        citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'morgenthauRealism'], ['sepReligionPolitics', 'foreignPolicy']),
+      },
+      religion: {
+        score: -78,
+        label: 'Strongly religiously grounded',
+        explanation: 'Religious revelation, natural law, clerical teaching, sacred tradition, or a confessional moral order is expected to shape public institutions and law to a substantial degree. The range extends from religious inspiration within pluralist constitutionalism to formal establishment; the high-authority endpoint is a theocracy, not the whole category.',
+        citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Religious traditionalism treats inherited religious and moral practices as sources of political knowledge, social cohesion, and limits on individual or governmental action. It commonly gives special weight to family, community, ritual, moral education, and the authority of religious institutions. The key analytical question is not whether a person is religious, but whether religion or sacred tradition should help define public law and legitimate political authority.',
+            citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepConservatism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label covers a wide range. A religiously informed constitutionalist may protect freedom of conscience and equal citizenship while drawing policy from religious ethics. A confessional state may privilege one tradition. A religious nationalist may define belonging through faith and ancestry. A theocracy gives clerical or revealed authority a constitutive role in coercive law. These positions overlap, but they must not be collapsed into one spectrum point or one religion.',
+            citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The social vision is usually organic and intergenerational. Persons are understood through families, congregations, communities, duties, and inherited practices rather than only as isolated rights-bearers. This can support solidarity, charity, education, care, and limits on market power, but it can also justify hierarchy, gender subordination, exclusion, or coercive conformity when one tradition is treated as the only legitimate public morality.',
+            citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan'], ['sepReligionPolitics', 'sepConservatism', 'openTextbook']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Economically, the profile is deliberately open. Religious traditionalists have defended private property, markets, guilds, welfare, distributism, social insurance, public authority, and forms of economic stewardship. The common concern is usually moral order and the protection of households and communities, not a single answer to who should own every productive resource.',
+            citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'adamSmithWealth'], ['oxfordChristianDemocracy', 'sepConservatism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Authority is legitimate when it serves a moral common good, preserves peace, or remains within a lawful and customary order. This may produce a layered view in which family, church, community, and state have different jurisdictions, as in some natural-law traditions. It can also create conflicts over which institution interprets truth, who may dissent, and whether civil law must follow religious doctrine.',
+            citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepMedieval', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Ancient and medieval religious-legal orders',
+            text: 'Across civilizations, political authority was often explained through sacred law, ritual, divine favor, moral cultivation, or the duties of rulers and communities. These traditions were not all theocratic: many differentiated religious and secular offices, recognized customary limits, or treated rulers as accountable to a moral law above them. Modern labels should not erase these institutional differences.',
+            citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan'], ['sepReligionPolitics', 'sepMedieval', 'openTextbook']),
+          },
+          {
+            period: 'Thirteenth century: natural law and differentiated authority',
+            text: 'Aquinas provides a particularly influential Christian account in which law serves the common good and political authority has a natural domain, while spiritual authority and divine law remain politically relevant. His framework is neither modern secular liberalism nor a simple clerical command state; it illustrates why religious traditionalism can contain jurisdictional limits as well as hierarchy.',
+            citations: citations(['aquinasMoralPolitical'], ['sepMedieval', 'sepReligionPolitics']),
+          },
+          {
+            period: 'Seventeenth century: sovereignty, confession, and toleration',
+            text: 'Religious conflict and civil war forced political thinkers to confront the relationship between sovereign peace, religious uniformity, conscience, and toleration. Hobbes prioritized a common authority capable of preventing civil violence, while Locke argued for limits on the magistrate’s power over religious belief and ecclesiastical association. Their disagreement remains central to modern religious-traditionalist boundaries.',
+            citations: citations(['hobbesLeviathan', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepMedieval']),
+          },
+          {
+            period: 'Eighteenth and nineteenth centuries: tradition, nation, and modernity',
+            text: 'Reaction to revolution, industrialization, secularization, and social dislocation encouraged political appeals to inherited institutions, religion, family, and national continuity. Burke’s defense of historically evolved order represents one conservative strand, while Catholic, Protestant, Jewish, Islamic, Hindu, Buddhist, and other movements developed distinct responses to modern state-building and social change.',
+            citations: citations(['burkeReflections', 'aquinasMoralPolitical', 'renanNation'], ['sepConservatism', 'sepReligionPolitics', 'openTextbook']),
+          },
+          {
+            period: 'Twentieth century: religious parties and constitutional accommodation',
+            text: 'Religious political movements increasingly negotiated with mass democracy, universal suffrage, social policy, and constitutional rights. Christian democracy is a major European example: it emerged from confessional politics but developed pluralist, personalist, solidaristic, and constitutional forms that cannot be reduced to clerical rule. Other religious traditions followed different paths, so Christian democracy is a variant, not the global definition.',
+            citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'lockeLetterToleration'], ['oxfordChristianDemocracy', 'sepReligionPolitics']),
+          },
+          {
+            period: 'Late twentieth century to the present: pluralism, nationalism, and religious revival',
+            text: 'Religious identities remain politically active despite secularization theories. Contemporary movements debate religious freedom, family policy, education, minority rights, migration, national identity, economic justice, and whether public law should be neutral or confessional. The same religious tradition can support democratic pluralism, social welfare, nationalism, authoritarianism, or opposition to the state depending on actors and institutions.',
+            citations: citations(['spinozaPolitical', 'lockeLetterToleration', 'renanNation'], ['sepReligionPolitics', 'oxfordChristianDemocracy', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Religiously informed constitutionalism',
+                distinction: 'Uses religious ethics to guide citizens and policy while preserving constitutional rights, elections, plural associations, and freedom of conscience.',
+                relation: 'The least coercive form in this family; religious inspiration does not by itself establish a confessional state.',
+                citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['sepReligionPolitics', 'oxfordChristianDemocracy']),
+              },
+              {
+                label: 'Christian democracy',
+                distinction: 'Combines Christian social teaching, personalism, solidarity, family and community institutions, welfare, and constitutional democracy.',
+                relation: 'A major twentieth-century variant with a distinct party and European history; it is more pluralist and institutionally democratic than the generic profile’s high-authority center.',
+                citations: citations(['aquinasMoralPolitical', 'burkeReflections'], ['oxfordChristianDemocracy', 'sepReligionPolitics']),
+              },
+              {
+                label: 'Confessional constitutionalism',
+                distinction: 'Formally identifies the state with or privileges a religion while retaining some constitutional limits, civil administration, and legal pluralism.',
+                relation: 'The boundary depends on equal citizenship, the enforceability of religious law, and whether dissenting faiths and nonbelief receive real protection.',
+                citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepMedieval']),
+              },
+              {
+                label: 'Religious nationalism',
+                distinction: 'Fuses religious inheritance with national membership, sovereignty, historical memory, and sometimes ethnic or civilizational boundaries.',
+                relation: 'Adds identity politics to religious traditionalism; it can be civic and pluralist or exclusionary and ethnoreligious.',
+                citations: citations(['renanNation', 'burkeReflections', 'spinozaPolitical'], ['sepReligionPolitics', 'sepConservatism']),
+              },
+              {
+                label: 'Religious socialism or distributism',
+                distinction: 'Uses religious ethics to criticize concentrated capital and support labor rights, social ownership, cooperatives, welfare, or widely distributed property.',
+                relation: 'Shows why religious traditionalism is not economically synonymous with laissez-faire or the political right.',
+                citations: citations(['aquinasMoralPolitical', 'adamSmithWealth'], ['oxfordChristianDemocracy', 'sepReligionPolitics']),
+              },
+              {
+                label: 'Theocracy or clerical authoritarianism',
+                distinction: 'Makes revelation, clerical office, sacred law, or a religious sovereign order constitutive of coercive political legitimacy and public law.',
+                relation: 'A high-religion, high-authority endpoint and a critical boundary, not a synonym for all religiously conservative or faith-informed politics.',
+                citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepMedieval', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No country is an exact or permanent religious-traditionalist match. Comparisons must separate private religiosity, party identity, constitutional establishment, family policy, clerical authority, religious law, minority rights, and actual enforcement. A religious majority does not prove a religious state, and a secular constitution does not prove that religion has no political influence.',
+            citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'vdem', 'openTextbook']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Thomas Aquinas',
+                role: 'natural-law theorist of common good, law, kingship, and differentiated spiritual and secular authority',
+                caveat: 'Aquinas wrote within medieval Christian institutions and should not be converted directly into a modern party platform or contemporary theocracy.',
+                citations: citations(['aquinasMoralPolitical'], ['sepMedieval', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Edmund Burke',
+                role: 'conservative thinker of inherited institutions, continuity, prudence, and social order',
+                caveat: 'Burke is a conservative reference who can support religious-traditionalist reasoning but is not a complete theorist of clerical rule or one confessional constitution.',
+                citations: citations(['burkeReflections'], ['sepConservatism', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Thomas Hobbes',
+                role: 'theorist of sovereignty, civil peace, religious conflict, and public authority',
+                caveat: 'Hobbes’s strong sovereign is not identical to theocracy: his argument subordinates independent ecclesiastical power to civil sovereignty.',
+                citations: citations(['hobbesLeviathan'], ['sepReligionPolitics', 'sepMedieval']),
+              },
+              {
+                name: 'John Locke',
+                role: 'liberal critic of coercive religious uniformity and theorist of toleration',
+                caveat: 'Locke is included as an internal boundary and counterargument, showing that religiously serious politics can also defend limits on the magistrate.',
+                citations: citations(['lockeLetterToleration'], ['sepReligionPolitics']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Medieval Christian polities',
+                period: 'Europe, especially the Latin Christian world, with major regional variation',
+                match: 'historical religious-law and layered-authority reference',
+                caveat: 'Church and ruler jurisdictions, customary law, local privilege, coercion, and religious minorities varied; no single medieval Christian model existed.',
+                citations: citations(['aquinasMoralPolitical', 'burkeReflections'], ['sepMedieval', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Early modern confessional states',
+                period: 'Europe after the Reformation, with changing forms and limits',
+                match: 'historical confessional reference',
+                caveat: 'Confessional establishment ranged from symbolic privilege to coercive uniformity, while toleration and pluralism expanded unevenly.',
+                citations: citations(['hobbesLeviathan', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepMedieval']),
+              },
+              {
+                name: 'Post-war Christian-democratic Europe',
+                period: 'especially from the 1940s onward',
+                match: 'religiously inspired constitutional and welfare-state comparator',
+                caveat: 'Christian-democratic parties often defended pluralist democracy and social welfare; they should not be counted as theocratic or uniformly traditionalist.',
+                citations: citations(['aquinasMoralPolitical', 'burkeReflections'], ['oxfordChristianDemocracy', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Contemporary faith-informed parties and movements',
+                period: 'present; country- and tradition-specific research required',
+                match: 'movement-level comparison only',
+                caveat: 'Party labels, religious institutions, constitutional rules, and policies differ widely across Christian, Muslim, Jewish, Hindu, Buddhist, and other contexts; current-country matching requires separate evidence.',
+                citations: citations(['lockeLetterToleration', 'spinozaPolitical', 'renanNation'], ['sepReligionPolitics', 'openTextbook', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'conservative', relation: 'broader tradition of continuity and order that may be religious or secular' },
+              { id: 'national-conservative', relation: 'adds stronger sovereignty and national identity; religion may be cultural, political, or absent' },
+              { id: 'christian-democratic', relation: 'specific constitutional and social-policy family with Christian inspiration and pluralist variants' },
+              { id: 'theocratic', relation: 'higher-authority form in which religious law or clerical legitimacy is constitutive of the state' },
+              { id: 'monarchist', relation: 'can overlap through dynastic, sacred, or inherited authority but does not require religion' },
+              { id: 'religious-socialist', relation: 'shares religious public ethics but can favor economic equality, labor power, and social ownership' },
+              { id: 'progressive-liberal', relation: 'counterpoint emphasizing secular public justification, personal autonomy, and social change' },
+              { id: 'liberal-constitutionalist', relation: 'shares legal limits and rights when religious traditionalism accepts constitutional pluralism' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that religious traditionalism can convert majority belief into coercive law and make equal citizenship conditional on conformity. Women, religious minorities, converts, nonbelievers, sexual minorities, dissenting clergy, and internal reformers may lose protection when a tradition is treated as the exclusive source of public legitimacy. Religious freedom therefore requires both the freedom to practice and the freedom not to be ruled by another group’s doctrine.',
+            citations: citations(['lockeLetterToleration', 'millOnLiberty', 'spinozaPolitical'], ['sepReligionPolitics', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns institutional ambiguity. If family, church, customary community, and state all claim moral authority, conflicts over jurisdiction can become difficult to resolve. Layered authority may protect local association, but it may also conceal coercion inside families or communities. Constitutional review, equal legal status, accessible exit, and independent courts are safeguards rather than automatic enemies of religious tradition.',
+            citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'hobbesLeviathan'], ['sepReligionPolitics', 'sepMedieval', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, the label can obscure diversity within religions and across history. Religious institutions have supported monarchy, democracy, welfare, anti-colonial liberation, civil rights, authoritarian nationalism, and resistance to the state. The project should identify the actor, doctrine, institution, period, jurisdiction, and affected population instead of assigning a global religious score from a country’s majority faith or a leader’s rhetoric.',
+            citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'spinozaPolitical'], ['sepReligionPolitics', 'oxfordChristianDemocracy', 'openTextbook']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'adamSmithWealth', 'morgenthauRealism', 'millOnLiberty'],
+      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy'],
+      editorialNote: 'The entry separates personal religiosity, religious social ethics, confessional constitutionalism, religious nationalism, Christian democracy, and theocracy. Its scores describe a didactic high-tradition, high-authority profile and do not classify every religious person, party, or state.',
+    },
+    researchGaps: [
+      'Add Arabic-, Persian-, Hebrew-, Sanskrit-, Tamil-, Chinese-, French-, German-, Portuguese-, and Spanish-language scholarship on religious law, political authority, reform, pluralism, and modern state formation.',
+      'Add case studies across Christian, Islamic, Jewish, Hindu, Buddhist, Indigenous, and other traditions, distinguishing theological claims from party organization and state enforcement.',
+      'Add detailed research on Christian democracy, Catholic social teaching, Protestant confessional politics, Islamic constitutional debates, Jewish legal-political traditions, and South Asian religious nationalism.',
+      'Add country-specific evidence before listing present governments or parties; religious majorities, constitutions, coalition systems, and enforcement practices change over time.',
+      'Add specialist research on gender, family law, education, minority rights, conversion, secularism, clerical institutions, religious violence, migration, colonialism, and the constitutional design of pluralist religious societies.',
+    ],
+  },
 };
