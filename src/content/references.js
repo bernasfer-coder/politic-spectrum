@@ -134,6 +134,14 @@ export const AUTHOR_REFERENCES = {
     kind: 'primary',
     url: 'https://www.gutenberg.org/cache/epub/15679/pg15679-images.html',
   },
+  oakeshottRationalismPolitics: {
+    author: 'Michael Oakeshott',
+    work: 'Rationalism in Politics and Other Essays',
+    year: '1962',
+    kind: 'primary',
+    context: 'A modern conservative primary text criticizing abstract political rationalism and emphasizing practical, historical, and conversational forms of political knowledge; cited as one strand of conservatism, not as its universal definition.',
+    url: 'https://openlibrary.org/books/OL2029668M/Rationalism_in_politics_and_other_essays',
+  },
   tocquevilleDemocracy: {
     author: 'Alexis de Tocqueville',
     work: 'Democracy in America',

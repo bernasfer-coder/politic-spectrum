@@ -4508,4 +4508,353 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add research on how revolutionary organizations prevent military, party, administrative, or charismatic authority from becoming permanent, and how nonviolent and self-defense commitments can coexist under external attack.',
     ],
   },
+  conservative: {
+    id: 'conservative',
+    title: 'Conservatism',
+    canonicalLabel: 'Conservatism',
+    aliases: [
+      'conservative thought',
+      'traditional conservatism',
+      'Burkean conservatism',
+      'social conservatism',
+      'liberal conservatism',
+    ],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Conservatism is treated as a family of dispositions, arguments, and political projects concerned with continuity, inherited institutions, practical judgment, and legitimate authority. It is not a fixed policy package, not automatically religious or nationalist, and not synonymous with reaction, authoritarianism, or any one contemporary party.',
+    timeScope: 'The modern political label developed around the age of revolution, especially after 1789, while its arguments draw on older ideas about custom, order, prudence, religion, family, law, and political inheritance. Its variants changed substantially through industrialization, democracy, empire, welfare-state formation, and postwar constitutionalism.',
+    geographicScope: 'A transnational tradition with major British, Irish, French, German, European, North American, Christian-democratic, and postcolonial variants. German institutional history is included, but national meanings of “conservative” differ and require local evidence.',
+    summary: 'A family of political views that values inherited institutions, social continuity, practical knowledge, lawful authority, and gradual rather than abstractly engineered change. Conservatives may support markets, welfare, national development, constitutional liberty, religious tradition, monarchy, democracy, or strong government in different combinations; the common thread is usually a presumption that institutions embody experience and that rapid redesign carries serious risks.',
+    summaryCitations: citations(
+      ['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics', 'hobbesLeviathan'],
+      ['sepConservatism', 'bpbConservatism', 'sepLiberalism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -18,
+        label: 'Mildly market-oriented and institutionally pragmatic',
+        explanation: 'Conservative traditions commonly accept private property, markets, and inherited economic institutions, but they may support tariffs, regulation, paternal administration, social insurance, public works, or strategic industry when these are seen as protecting social order and national resilience. Economic conservatism is therefore not identical to laissez-faire.',
+        citations: citations(['adamSmithWealth', 'burkeReflections', 'hayekKnowledge'], ['sepConservatism', 'sepLiberalism', 'bpbConservatism']),
+      },
+      social: {
+        score: -72,
+        label: 'Strongly traditionalist, with gradual-reform exceptions',
+        explanation: 'Family, religion, custom, law, manners, inherited roles, and local association are often treated as sources of social knowledge and continuity. Some conservatives accept reform when it repairs institutions or preserves their purposes, while reactionary and social-conservative variants may resist wider equality or rapid cultural change.',
+        citations: citations(['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics'], ['sepConservatism', 'sepReligionPolitics']),
+      },
+      authority: {
+        score: 48,
+        label: 'Order-oriented but potentially constitutional',
+        explanation: 'Conservatism gives weight to law, authority, hierarchy, public order, and the administrative capacity needed to preserve institutions. Constitutional conservatives distinguish legitimate, inherited, and accountable authority from arbitrary rule; the profile becomes authoritarian when opposition, courts, equal citizenship, or independent associations are subordinated to a ruler or movement.',
+        citations: citations(['burkeReflections', 'hobbesLeviathan', 'oakeshottRationalismPolitics'], ['sepConservatism', 'vdem']),
+      },
+      identity: {
+        score: -62,
+        label: 'Strongly continuity- and nation-oriented',
+        explanation: 'Historical memory, place, language, religion, family, and national institutions can anchor conservative belonging. This may take civic, constitutional, regional, imperial, religious, or ethnic forms; the conservative disposition does not itself determine whether national identity is inclusive or exclusionary.',
+        citations: citations(['burkeReflections', 'tocquevilleDemocracy', 'renanNation'], ['sepConservatism', 'sepNationalism', 'bpbConservatism']),
+      },
+      foreign: {
+        score: 10,
+        label: 'Pragmatic defense and restrained change',
+        explanation: 'Conservative foreign policy often prioritizes security, inherited alliances, national interest, strategic prudence, and caution about remaking other societies. It can support military power or intervention when order and security are judged to require it, but it does not logically entail imperial expansion or permanent war.',
+        citations: citations(['burkeReflections', 'morgenthauRealism', 'tocquevilleDemocracy'], ['foreignPolicy', 'sepConservatism', 'sepNationalism']),
+      },
+      religion: {
+        score: -40,
+        label: 'Religiously grounded cultural order, usually non-theocratic',
+        explanation: 'Religious traditions may be treated as sources of moral formation, national memory, family norms, and social solidarity, while constitutional variants protect pluralism and freedom of conscience. Conservatism can also be secular, skeptical, or civilizational; religious conservatism is one variant, not the whole category.',
+        citations: citations(['burkeReflections', 'aquinasMoralPolitical', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepConservatism', 'bpbConservatism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Conservatism is less a single doctrine than a way of approaching political change. It asks what a society has inherited, which institutions have made cooperation possible, what knowledge is embedded in custom, and what unintended consequences may follow from a rapid attempt to redesign social life. Its characteristic preference is not always for no change, but for change that is gradual, practical, historically informed, and connected to institutions people can actually sustain.',
+            citations: citations(['burkeReflections', 'oakeshottRationalismPolitics'], ['sepConservatism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label includes constitutional conservatives, traditionalists, paternal conservatives, one-nation or social conservatives, liberal conservatives, Christian democrats, national conservatives, reactionaries, and other currents that disagree about democracy, markets, equality, religion, empire, and the nation. The entry therefore records a family resemblance rather than assigning one universal conservative policy. Burke is an important reference point, but conservatism should not be reduced to Burke or projected unchanged onto every modern movement that uses the word.',
+            citations: citations(['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics'], ['sepConservatism', 'bpbConservatism', 'oxfordChristianDemocracy']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The core conservative claim is epistemic as well as moral: political knowledge is distributed through habits, institutions, practices, professions, families, associations, and historical experience. A constitution or custom may contain reasons that are not visible in a theoretical model. Conservatives consequently distrust the assumption that a society can be rebuilt from abstract principles alone, especially when reformers underestimate incentives, loyalty, authority, culture, and the capacity of institutions to absorb change.',
+            citations: citations(['burkeReflections', 'oakeshottRationalismPolitics', 'tocquevilleDemocracy'], ['sepConservatism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Conservatism also makes a claim about order. Law, authority, family, religion, property, nation, class, and social roles may be seen as imperfect but stabilizing structures that restrain violence and coordinate expectations. This does not settle whether an institution is just. A conservative defense can preserve liberty by resisting arbitrary power, or preserve domination by treating inherited hierarchy as natural; the relevant question is what is being conserved, for whom, and whether peaceful correction remains possible.',
+            citations: citations(['burkeReflections', 'hobbesLeviathan', 'tocquevilleDemocracy'], ['sepConservatism', 'vdem', 'sepReligionPolitics']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Economic conservatism is similarly variable. Some conservatives defend markets and private property as institutions of independence and responsibility. Others support social insurance, industrial policy, tariffs, public services, or paternal regulation to protect families, workers, national capacity, and social cohesion. Bismarckian social insurance, Christian-democratic welfare politics, one-nation conservatism, and market-oriented liberal conservatism demonstrate that the economic axis cannot be inferred from the word conservative alone.',
+            citations: citations(['burkeReflections', 'adamSmithWealth', 'hayekKnowledge'], ['sepConservatism', 'bpbConservatism', 'oxfordChristianDemocracy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The distinction between conservatism and reaction is important. A conservative may accept reform to preserve a constitutional order, while a reactionary seeks to restore or impose an earlier order and may reject modern democratic or egalitarian developments altogether. In practice the boundary is contested and movements can combine both tendencies. The atlas should therefore identify the period, institutional object, proposed change, and affected population instead of treating “right” or “traditional” as sufficient description.',
+            citations: citations(['burkeReflections', 'oakeshottRationalismPolitics'], ['sepConservatism', 'bpbConservatism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Before the modern label: custom, order, and inherited authority',
+            text: 'Arguments later called conservative draw on older reflections about law, custom, religion, family, hierarchy, kingship, civic virtue, and the dangers of faction. These sources should not be retroactively labelled conservative as though they shared a modern ideology. They are antecedents for questions about continuity and authority, not evidence of one transhistorical doctrine.',
+            citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['sepConservatism', 'sepMedieval']),
+          },
+          {
+            period: '1789–1815: revolution, counter-revolution, and the modern conservative response',
+            text: 'The French Revolution made the defense of inherited institutions, gradual reform, religion, property, and social order into a recognizable modern political response. Burke criticized abstract reconstruction and revolutionary rupture while accepting that institutions may need change to survive. Other European reactionary currents sought stronger restoration of throne, altar, and inherited authority; conservatism and reaction developed together but are not identical.',
+            citations: citations(['burkeReflections'], ['sepConservatism', 'bpbConservatism']),
+          },
+          {
+            period: 'Nineteenth century: nation-building, industrialization, and social questions',
+            text: 'Conservatives confronted mass politics, industrial capitalism, labor organization, nationalism, empire, urban poverty, and the expansion of suffrage. Some defended monarchy, aristocracy, church establishment, and hierarchy; others adapted through national integration, parliamentary institutions, social legislation, public education, or paternal reform. The period shows why conservatism can be economically interventionist while socially traditional and politically order-oriented.',
+            citations: citations(['tocquevilleDemocracy', 'burkeReflections', 'adamSmithWealth'], ['sepConservatism', 'bpbConservatism', 'sepNationalism']),
+          },
+          {
+            period: 'German conservative development: from monarchy and statecraft to social insurance',
+            text: 'German conservatism took varied forms around monarchy, state authority, national unity, religion, administrative capacity, and the social question. Bismarck’s social legislation illustrates a conservative attempt to address worker insecurity and contain socialist mobilization through state provision while restricting political opposition. This history should not be treated as a general definition of conservatism or as evidence that all welfare policy is left-wing.',
+            citations: citations(['burkeReflections', 'hobbesLeviathan'], ['bpbConservatism', 'sepConservatism']),
+          },
+          {
+            period: 'Late nineteenth–early twentieth centuries: mass democracy, empire, and conservative nationalism',
+            text: 'As electoral politics expanded, conservatives adapted inherited identities to party organization, national citizenship, empire, military security, and mass communication. Some defended constitutional patriotism and gradual reform; others embraced ethnic hierarchy, imperial domination, anti-parliamentary politics, or authoritarian nationalism. These paths can converge with fascism or ethnic nationalism, but conservatism itself does not entail either.',
+            citations: citations(['tocquevilleDemocracy', 'renanNation', 'burkeReflections'], ['sepConservatism', 'sepNationalism', 'openTextbook']),
+          },
+          {
+            period: '1945–1970s: Christian democracy, constitutional reconstruction, and social conservatism',
+            text: 'Postwar European Christian democracy combined religious social teaching, constitutional democracy, welfare provision, family policy, anti-communism, and European cooperation in different national forms. Other conservatives defended liberal constitutionalism, colonial continuity, national sovereignty, or traditional morality. The postwar period demonstrates that conservative politics can support democratic institutions and social insurance while resisting rapid cultural change.',
+            citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'lockeLetterToleration'], ['oxfordChristianDemocracy', 'sepConservatism', 'sepReligionPolitics']),
+          },
+          {
+            period: '1947–1990: Oakeshott, anti-rationalism, and the critique of political engineering',
+            text: 'Michael Oakeshott’s skepticism toward rationalist politics emphasized practical knowledge, historical experience, conversation, and the danger of treating politics as technical construction. His work is often called conservative, but it also contains strong concern for individuality and civil association. It is a useful reminder that conservatism can be anti-utopian without being a complete social or economic program.',
+            citations: citations(['oakeshottRationalismPolitics'], ['sepConservatism']),
+          },
+          {
+            period: 'Late twentieth century–present: market conservatism, national conservatism, and populist turns',
+            text: 'From the late twentieth century, conservative coalitions often joined market liberalization, tax reduction, religious traditionalism, national sovereignty, immigration restriction, law-and-order politics, or skepticism toward supranational institutions. These combinations are unstable: market globalization can weaken inherited communities, while national protection can require state intervention. Contemporary labels must therefore be coded by issue rather than assumed from party family names.',
+            citations: citations(['hayekKnowledge', 'burkeReflections', 'renanNation'], ['sepConservatism', 'sepNationalism', 'bpbConservatism']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Burkean or classical conservatism',
+                distinction: 'Defends inherited institutions, prudence, gradual reform, historical continuity, local association, and skepticism toward abstract political reconstruction.',
+                relation: 'A central reference for the conservative disposition, but Burke accepted change when it preserved the social order and should not be used as a universal party platform.',
+                citations: citations(['burkeReflections'], ['sepConservatism']),
+              },
+              {
+                label: 'Traditionalist and religious conservatism',
+                distinction: 'Treats family, religion, customary morality, inherited roles, and sacred or civilizational traditions as important sources of public order and social meaning.',
+                relation: 'Overlaps strongly with the social and religion scores, but can accept constitutional pluralism and is not automatically theocratic or authoritarian.',
+                citations: citations(['burkeReflections', 'aquinasMoralPolitical', 'lockeLetterToleration'], ['sepReligionPolitics', 'sepConservatism']),
+              },
+              {
+                label: 'Liberal conservatism',
+                distinction: 'Combines constitutional rights, private property, markets, rule of law, and individual liberty with gradual change, institutional continuity, and skepticism toward egalitarian redesign.',
+                relation: 'A bridge between classical liberalism and conservatism; it may be economically market-oriented while remaining socially and institutionally cautious.',
+                citations: citations(['burkeReflections', 'hayekKnowledge', 'lockeSecondTreatise'], ['sepConservatism', 'sepLiberalism']),
+              },
+              {
+                label: 'One-nation or paternal conservatism',
+                distinction: 'Uses state capacity, social legislation, public services, and elite responsibility to preserve national cohesion and reduce class conflict without abolishing private property.',
+                relation: 'Shows why conservative economics can include welfare and regulation; it differs from both laissez-faire liberalism and socialist ownership.',
+                citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'bpbConservatism']),
+              },
+              {
+                label: 'Christian democracy',
+                distinction: 'Combines Christian social ethics, family and community institutions, constitutional democracy, welfare provision, subsidiarity, and often European cooperation.',
+                relation: 'A specific religiously inspired constitutional family with conservative elements, but its pluralist and social-market variants are not equivalent to theocracy or reaction.',
+                citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'lockeLetterToleration'], ['oxfordChristianDemocracy', 'sepReligionPolitics']),
+              },
+              {
+                label: 'National conservatism',
+                distinction: 'Adds strong emphasis on national sovereignty, borders, historical memory, cultural continuity, and protection of national institutions.',
+                relation: 'A modern compound of conservatism and nationalism; it may be civic and constitutional or ethnic and exclusionary, so the identity axis requires separate evidence.',
+                citations: citations(['burkeReflections', 'renanNation', 'andersonImaginedCommunities'], ['sepConservatism', 'sepNationalism', 'bpbConservatism']),
+              },
+              {
+                label: 'Reactionary conservatism',
+                distinction: 'Seeks to restore or impose a prior religious, monarchical, aristocratic, or hierarchical order and may reject modern egalitarian, liberal, or democratic developments.',
+                relation: 'Shares concern for continuity but differs from reformist conservatism by treating restoration or reversal as a central political objective.',
+                citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'bpbConservatism']),
+              },
+              {
+                label: 'Security and law-and-order conservatism',
+                distinction: 'Prioritizes policing, borders, military capacity, punishment, executive authority, and institutional discipline as conditions of public safety and social continuity.',
+                relation: 'Raises the authority and foreign-policy scores, but becomes authoritarian only when accountability, equal protection, and independent institutions are systematically removed.',
+                citations: citations(['hobbesLeviathan', 'burkeReflections', 'morgenthauRealism'], ['sepConservatism', 'vdem', 'foreignPolicy']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Edmund Burke',
+                role: 'Eighteenth-century political writer associated with inherited institutions, prudence, representation, social continuity, and gradual reform.',
+                caveat: 'Burke’s writings responded to specific British, Irish, imperial, and revolutionary contexts. They do not settle modern questions about democracy, equality, welfare, empire, or every later conservative movement.',
+                citations: citations(['burkeReflections'], ['sepConservatism']),
+              },
+              {
+                name: 'Alexis de Tocqueville',
+                role: 'French political thinker who analyzed democracy, equality, religion, associations, centralization, local institutions, and social habits.',
+                caveat: 'Tocqueville is a comparative analyst and liberal-conservative reference, not a simple representative of every conservative position. His views also contain tensions concerning empire, race, and democracy.',
+                citations: citations(['tocquevilleDemocracy'], ['sepConservatism', 'sepNationalism']),
+              },
+              {
+                name: 'Michael Oakeshott',
+                role: 'Twentieth-century political philosopher associated with skepticism toward rationalist political engineering, practical knowledge, and civil association.',
+                caveat: 'Oakeshott’s relationship to conservatism is debated, and his defense of individuality and civil association is not equivalent to traditionalist or authoritarian politics.',
+                citations: citations(['oakeshottRationalismPolitics'], ['sepConservatism']),
+              },
+              {
+                name: 'Thomas Hobbes',
+                role: 'Earlier theorist of sovereignty, order, fear, law, and the authority needed to prevent civil conflict.',
+                caveat: 'Hobbes is an antecedent for order-centered reasoning, not a modern conservative party thinker; his absolutist argument differs from constitutional conservatism.',
+                citations: citations(['hobbesLeviathan'], ['sepConservatism', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Otto von Bismarck',
+                role: 'German statesman associated with conservative statecraft, national unification, administrative authority, and early social insurance.',
+                caveat: 'Bismarck’s authoritarian and exclusionary practices should remain visible alongside social legislation; his policies are a historical case, not a general model of conservatism.',
+                citations: citations(['hobbesLeviathan', 'burkeReflections'], ['bpbConservatism', 'sepConservatism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Post-Revolutionary British conservatism',
+                period: 'Britain and Ireland, late eighteenth–nineteenth centuries',
+                match: 'Historical setting for arguments about constitutional continuity, parliamentary reform, property, empire, religion, and the management of social change.',
+                caveat: 'British conservatism included different Tory, Anglican, imperial, reformist, and protectionist currents, and its historical relationship to Ireland and empire requires separate treatment.',
+                citations: citations(['burkeReflections'], ['sepConservatism']),
+              },
+              {
+                name: 'German conservative statecraft and social insurance',
+                period: 'German Empire, especially the 1870s–1890s',
+                match: 'A case of monarchical and administrative authority combined with national integration and state social legislation intended to manage industrial conflict.',
+                caveat: 'The German case also involved political repression, militarism, class conflict, and later divergent conservative traditions; social insurance does not erase those limits.',
+                citations: citations(['burkeReflections', 'hobbesLeviathan'], ['bpbConservatism', 'sepConservatism']),
+              },
+              {
+                name: 'Postwar Christian-democratic Europe',
+                period: 'Western Europe, especially from the 1940s onward',
+                match: 'Constitutional democracy, social-market or welfare institutions, family and community language, Christian social ethics, and European cooperation combined in different national forms.',
+                caveat: 'Christian-democratic parties were internally diverse and often supported pluralist rights, social provision, and European integration; they should not be classified as theocratic or uniformly traditionalist.',
+                citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'lockeLetterToleration'], ['oxfordChristianDemocracy', 'sepReligionPolitics', 'sepConservatism']),
+              },
+              {
+                name: 'Conservative constitutional democracies',
+                period: 'Contemporary; country- and party-specific',
+                match: 'Many democracies contain conservative parties that defend institutional continuity, public order, private property, gradual reform, or national traditions within competitive constitutional systems.',
+                caveat: 'A conservative party’s existence does not classify the whole state, and current policy varies by coalition, period, region, and issue. Country comparisons require dated evidence on rights and executive constraints.',
+                citations: citations(['burkeReflections', 'oakeshottRationalismPolitics'], ['sepConservatism', 'vdem', 'bpbConservatism']),
+              },
+              {
+                name: 'National-conservative and reactionary movements',
+                period: 'Europe and other regions, nineteenth century–present',
+                match: 'Movements that combine inherited identity, national sovereignty, social order, religious or civilizational tradition, and resistance to rapid cultural or institutional change.',
+                caveat: 'These movements range from constitutional and pluralist to ethnic, anti-democratic, authoritarian, or fascist. The labels must be separated through evidence about citizenship, minorities, opposition, violence, and legal institutions.',
+                citations: citations(['burkeReflections', 'renanNation', 'tocquevilleDemocracy'], ['sepConservatism', 'sepNationalism', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'national-conservative', relation: 'adds a stronger sovereignty, national identity, and cultural-continuity emphasis to the broader conservative family' },
+              { id: 'religious-traditionalist', relation: 'shares inherited moral and religious authority, but religious traditionalism makes public religion more central and may be more explicitly confessional' },
+              { id: 'christian-democratic', relation: 'a specific Christian-inspired constitutional and social-policy family that may overlap with conservative institutions while remaining pluralist' },
+              { id: 'classical-liberal', relation: 'shares property, law, and institutional liberty in liberal-conservative variants, but conservatism gives more weight to inherited authority and continuity' },
+              { id: 'liberal-constitutionalist', relation: 'shares constitutional limits and rule of law when conservative politics accepts pluralist rights and accountable government' },
+              { id: 'civic-nationalist', relation: 'can share national institutions and citizenship, but civic nationalism makes political membership more central than continuity or tradition' },
+              { id: 'ethnic-nationalist', relation: 'may overlap through inherited identity and exclusion, but conservatism is not inherently ethnic or anti-pluralist' },
+              { id: 'historical-fascist', relation: 'can form tactical alliances or share order and national themes, but fascism’s revolutionary mass politics and authoritarian ultranationalism are not identical to conservatism' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The central criticism is that appeals to tradition can naturalize inherited power. Institutions may contain practical knowledge, but they can also preserve class, racial, gender, colonial, religious, or regional domination. A practice’s age does not by itself establish its legitimacy. Reform must therefore ask who benefited from the institution, who was excluded, whether dissent was possible, and whether the institution can change without violence or arbitrary punishment.',
+            citations: citations(['burkeReflections', 'millOnLiberty', 'wollstonecraftRights'], ['sepConservatism', 'sepLibertyPositiveNegative']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns the knowledge claim. Caution about abstract redesign can prevent destructive overconfidence, but it can also become a reason to reject necessary reform, scientific evidence, equal rights, or democratic accountability. Gradualism is not automatically prudent when an institution is actively harmful, and inherited practice is not automatically wiser than publicly examined alternatives.',
+            citations: citations(['oakeshottRationalismPolitics', 'burkeReflections', 'millOnLiberty'], ['sepConservatism', 'sepLibertyPositiveNegative', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns authority and order. Public safety, family, religion, nation, and law can provide real coordination, but order language may justify surveillance, censorship, punishment without due process, militarization, or the suppression of minorities and opposition. Constitutional review, equal citizenship, independent courts, freedom of association, transparent policing, and peaceful alternation of power are safeguards against the slide from legitimate authority into authoritarian rule.',
+            citations: citations(['hobbesLeviathan', 'lockeLetterToleration', 'tocquevilleDemocracy'], ['sepConservatism', 'vdem', 'sepReligionPolitics']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, conservatism’s economic and national variants can conflict. Market globalization can weaken local institutions and social bonds; protection and state intervention can preserve some communities while creating inefficiency or exclusion; national cohesion can support solidarity or marginalize people defined as outsiders. The project should therefore score economic policy, social change, authority, identity, religion, and foreign policy separately rather than treating a conservative label as a complete political diagnosis.',
+            citations: citations(['burkeReflections', 'hayekKnowledge', 'renanNation'], ['sepConservatism', 'sepNationalism', 'bpbConservatism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics', 'hobbesLeviathan', 'adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise', 'lockeLetterToleration', 'aquinasMoralPolitical', 'renanNation', 'morgenthauRealism', 'millOnLiberty', 'wollstonecraftRights'],
+      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook'],
+      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution.',
+    },
+    researchGaps: [
+      'Add French-language scholarship on de Maistre, Chateaubriand, Tocqueville, liberal conservatism, reaction, republicanism, empire, and the different histories of French right-wing traditions.',
+      'Expand German-language research beyond a general history to include Prussian, Catholic, conservative-revolution, Christian-democratic, postwar, East German, and contemporary constitutional traditions, with careful separation from fascism and National Socialism.',
+      'Add Portuguese-, Spanish-, Italian-, Central European-, African-, Asian-, Latin American-, and postcolonial scholarship on conservatism, social order, religion, empire, nation, race, family, and state formation.',
+      'Add specialist research on women and conservative politics, class, labor, welfare, colonialism, race, migration, Indigenous rights, sexuality, disability, education, policing, punishment, and the relationship between tradition and equal citizenship.',
+      'Add country-specific evidence for present conservative parties and governments before using them as comparators; party names do not establish positions on markets, religion, authority, nationalism, or foreign intervention.',
+      'Add comparative work on gradual reform, constitutional safeguards, emergency powers, conservative populism, market globalization, protectionism, climate policy, technology, and the conditions under which prudence becomes obstruction or authoritarianism.',
+    ],
+  },
 };
