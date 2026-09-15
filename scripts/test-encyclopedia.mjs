@@ -50,10 +50,13 @@ for (const [id, entry] of Object.entries(ENCYCLOPEDIA_ENTRIES)) {
   walkEvidence(entry, id);
 }
 
-const communistProfile = ARCHETYPES.find(({ id }) => id === 'communist').profile;
-for (const { id } of DIMENSIONS) {
-  assert.equal(ENCYCLOPEDIA_ENTRIES.communist.dimensionInterpretations[id].score, communistProfile[id], `communist.${id} must use the same orientation as its reference card`);
+for (const profileId of ['communist', 'anarcho-capitalist']) {
+  const profile = ARCHETYPES.find(({ id }) => id === profileId).profile;
+  for (const { id } of DIMENSIONS) {
+    assert.equal(ENCYCLOPEDIA_ENTRIES[profileId].dimensionInterpretations[id].score, profile[id], `${profileId}.${id} must use the same orientation as its reference card`);
+  }
 }
 assert.equal(ENCYCLOPEDIA_ENTRIES.communist.dimensionInterpretations.religion.score, 55, 'the existing secular communist coordinate must remain positive');
+assert.equal(ENCYCLOPEDIA_ENTRIES['anarcho-capitalist'].dimensionInterpretations.economic.score, -96, 'the existing strongly market-oriented coordinate must remain negative');
 
 console.log(`Encyclopedia tests passed: ${Object.keys(ENCYCLOPEDIA_ENTRIES).length} entry with claim-level citation validation across ${DIMENSIONS.length} dimensions.`);

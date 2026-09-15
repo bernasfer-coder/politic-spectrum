@@ -170,6 +170,9 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    davidFriedmanMachinery2014: { ...LINK_ONLY, reviewedAt: '2026-09-15', license: 'The consulted third-edition copyright page states all rights reserved; free author-hosted access is not a redistribution licence.', notes: 'Original summaries and bibliographic link only. No passage, epigraph, translated extract, page image, or PDF is distributed by this project.' },
+    byockFeuding2003: { ...LINK_ONLY, reviewedAt: '2026-09-15', notes: 'University-hosted scholarly copy consulted for original synthesis. No open republication licence identified; no chapter text, saga quotation, figure, map, or page image reproduced.' },
+    thingvellirLawCouncil: { ...LINK_ONLY, reviewedAt: '2026-09-15', notes: 'Independent historical summary and institutional link only. No exhibition reconstruction, image, diagram, translation, or copied passage reproduced.' },
     ghdiGdrConstitution1974: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-15', notes: 'Independent paraphrase and source link only. No constitutional passage, GHDI introduction, translation, or facsimile is republished; the historical text does not clear the modern edition.' },
     hugiGdrChurchPolicy: { ...LINK_ONLY, reviewedAt: '2026-09-15', license: 'The text displays CC BY-NC-ND 4.0; this does not clear commercial republication or translated adaptations. Images have separate credits.', notes: 'Original factual synthesis and attribution only, with no quoted or translated passage, image, or page copy. No broader commercial-use clearance is asserted.' },
     bundesarchivJugendweihe: { ...LINK_ONLY, reviewedAt: '2026-09-15', notes: 'Original analysis with attribution to the archive; no photographs, file images, historical quotations, or monograph extracts reproduced. Public archival access is not treated as a blanket reuse licence.' },

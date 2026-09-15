@@ -4370,13 +4370,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ),
     dimensionInterpretations: {
       economic: {
-        score: 96,
+        score: -96,
         label: 'Extremely strongly market-oriented',
         explanation: 'Private ownership, contract, competition, and entrepreneurial coordination are treated as the default institutions for production and distribution, including functions usually assigned to the state. The profile is more radical than classical liberalism because it rejects taxation and public economic administration in principle, not only excessive regulation.',
         citations: citations(['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge'], ['sepLibertarianism', 'sepAnarchism', 'sepLiberalism']),
       },
       social: {
-        score: -10,
+        score: 10,
         label: 'Mixed: voluntary pluralism with property-based limits',
         explanation: 'The tradition generally favors freedom of association, speech, lifestyle, religion, and exit from unwanted institutions. Critics point out that private ownership can permit exclusion, dependency, employer domination, or unequal access to basic goods; a formal ban on state coercion does not settle every social-power question.',
         citations: citations(['nozickASU', 'millOnLiberty', 'rothbardForNewLiberty'], ['sepLibertarianism', 'sepAnarchism', 'sepLibertyPositiveNegative']),
@@ -4385,25 +4385,25 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -98,
         label: 'Extremely anti-state / polycentric authority',
         explanation: 'The defining commitment is opposition to a compulsory territorial monopoly of coercion. Courts, security, arbitration, infrastructure, and rules are expected to arise through contract, competition, insurance, private association, or local covenant; the profile must still explain how coercion by private actors is prevented and how dissenters can exit.',
-        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'lockeSecondTreatise'], ['sepAnarchism', 'sepLibertarianism']),
+        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'lockeSecondTreatise'], ['sepAnarchism', 'sepLibertarianism', 'davidFriedmanMachinery2014']),
       },
       identity: {
-        score: -30,
+        score: 30,
         label: 'Strongly individualist / weakly internationalist',
         explanation: 'Individual choice, voluntary association, and the right to leave a community take priority over compulsory national unity. Private communities may develop strong cultural or religious identities, and property jurisdictions can still create boundaries; anti-nationalism is therefore a tendency rather than a promise of cosmopolitan equality.',
         citations: citations(['rothbardForNewLiberty', 'nozickASU', 'kantPerpetualPeace'], ['sepLibertarianism', 'sepAnarchism', 'sepNationalism']),
       },
       foreign: {
-        score: -76,
+        score: 76,
         label: 'Very strongly non-interventionist',
         explanation: 'Permanent alliances, imperial projects, conscription, and state militaries are rejected or minimized. Defense is imagined through voluntary insurance, private protection, contractual alliances, or local self-defense; critics stress that territorial defense and collective security are difficult to fund and coordinate without compulsory institutions.',
         citations: citations(['rothbardForNewLiberty', 'kantPerpetualPeace', 'morgenthauRealism'], ['sepLibertarianism', 'foreignPolicy', 'sepAnarchism']),
       },
       religion: {
-        score: -55,
+        score: 55,
         label: 'Strongly secular / voluntary religious association',
-        explanation: 'No religious institution should possess a compulsory territorial authority, but churches, mosques, synagogues, temples, and other communities may organize voluntarily under the same general property and contract rules. This is a secular institutional position, not necessarily an anti-religious one.',
-        citations: citations(['rothbardForNewLiberty', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepLibertarianism']),
+        explanation: 'No religious institution should possess a compulsory territorial authority, but churches, mosques, synagogues, temples, and other communities may organize voluntarily under the same general property and contract rules. This is a secular institutional position, not necessarily an anti-religious one. This modern coordinate must not be projected onto medieval Iceland: the national park’s account includes bishops in the Law Council.',
+        citations: citations(['rothbardForNewLiberty', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepLibertarianism', 'thingvellirLawCouncil']),
       },
     },
     sections: [
@@ -4420,6 +4420,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The label is narrower than libertarianism and more controversial within anarchist history. Many libertarians accept a minimal state, and many anarchists reject capitalism because they view private property, wage dependence, or concentrated economic power as forms of domination. Robert Nozick is an important interlocutor because he defended a minimal state rather than full anarcho-capitalism; his argument is evidence of the boundary, not evidence that he held the anarcho-capitalist position.',
             citations: citations(['nozickASU', 'rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Proposals for future institutions and interpretations of historical societies need different evidence. Medieval Iceland is examined below as a limited comparison, not as a society whose inhabitants shared this modern label or the website’s six-axis coordinates.',
+            citations: citations([], ['davidFriedmanMachinery2014', 'byockFeuding2003', 'thingvellirLawCouncil']),
           },
         ],
       },
@@ -4439,6 +4444,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Friedman’s chapter 29 proposes advance arbitration agreements between competing enforcement firms, arguing that conflict is costly. This is a proposed incentive mechanism, not an observed guarantee against violence or monopoly.',
+            citations: citations([], ['davidFriedmanMachinery2014']),
+          },
+          {
+            type: 'paragraph',
             text: 'The theory depends on several empirical and institutional assumptions: that competition will prevent provider monopolies, that people can exit abusive arrangements, that private courts can coordinate rules, that defense can be funded voluntarily, and that market prices can handle public goods and externalities. These are not consequences of the non-aggression principle alone. They are open questions that must be separated from the moral claim that state coercion is illegitimate.',
             citations: citations(['nozickASU', 'hayekKnowledge', 'millOnLiberty'], ['sepAnarchism', 'sepLibertarianism', 'sepLibertyPositiveNegative']),
           },
@@ -4446,6 +4456,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Social freedom is also contested. Voluntary contract can protect exit and experimentation, yet unequal property ownership can make nominally voluntary relationships difficult to refuse. A tenant, employee, debtor, child, migrant, or person without access to land may face private power even when no public official directly commands them. Whether such dependence counts as coercion, exploitation, or an acceptable result of free exchange is one of the tradition’s central disputes.',
             citations: citations(['nozickASU', 'millOnLiberty', 'rothbardForNewLiberty'], ['sepLibertarianism', 'sepLibertyPositiveNegative', 'sepAnarchism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'For medieval Iceland, Byock emphasizes economic interdependence, shared institutions, and pressures toward compromise, rather than explaining order through isolated transactions alone. He interprets chieftains as brokers assembling support under social and economic constraints. This historical account helps identify conditions that an analogy must examine; it neither endorses nor experimentally disproves modern market anarchism.',
+            citations: citations([], ['byockFeuding2003']),
           },
         ],
       },
@@ -4474,6 +4489,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['nozickASU'], ['sepLibertarianism', 'sepAnarchism']),
           },
           {
+            period: '1973–2014: Friedman’s evolving institutional proposal',
+            text: 'The Machinery of Freedom first appeared in 1973. This entry consults selected pages of the expanded 2014 third edition; it does not attribute all later material to the first edition.',
+            citations: citations([], ['davidFriedmanMachinery2014']),
+          },
+          {
             period: '1980s–2000s: market anarchism, private governance, and digital networks',
             text: 'Later debates explored private law, free banking, seasteading, charter cities, special jurisdictions, voluntary security, and digital or cryptographic forms of coordination. These projects vary in whether they seek to abolish states, create new jurisdictions, or introduce competition inside existing states. An experiment in one service or enclave is not evidence that a whole society can operate without a public authority.',
             citations: citations(['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge'], ['sepAnarchism', 'sepLibertarianism', 'openTextbook']),
@@ -4500,9 +4520,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
               },
               {
                 label: 'Consequentialist market anarchism',
-                distinction: 'Defends private and competitive provision because it is expected to produce better security, law, prosperity, or freedom, even if the argument is not based on absolute rights.',
-                relation: 'Shares the institutional proposal but can revise or limit property claims when consequences, public goods, or equal access weigh against them.',
-                citations: citations(['hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepAnarchism']),
+                distinction: 'Friedman identifies consequentialist reasoning as central to his case for libertarian institutions.',
+                relation: 'He rejects utilitarianism as a final moral standard while favoring consequence-based defenses of liberty (chapter 42). A strategy of argument must not be confused with a complete moral theory.',
+                citations: citations([], ['davidFriedmanMachinery2014']),
               },
               {
                 label: 'Minarchism',
@@ -4552,6 +4572,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
               },
               {
+                name: 'David D. Friedman',
+                role: 'Author proposing competitive law and enforcement in The Machinery of Freedom.',
+                caveat: 'Included as an advocate, not as independent empirical validation. His institutions and historical analogies must be assessed separately.',
+                citations: citations([], ['davidFriedmanMachinery2014']),
+              },
+              {
                 name: 'Robert Nozick',
                 role: 'Minimal-state philosopher whose argument about protective associations directly engages the anarcho-capitalist challenge.',
                 caveat: 'Nozick is a boundary case and critic of the full anarcho-capitalist conclusion. His minimal state should not be presented as an anarchist or stateless model.',
@@ -4580,6 +4606,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'No recognized country can be an exact example because every state retains public law, territorial jurisdiction, taxation or compulsory regulation, and a claim to legitimate coercion.',
                 caveat: 'The absence of a country match is a definitional consequence, not proof that the theory is impossible or that every state is equally coercive.',
                 citations: citations(['rothbardForNewLiberty', 'nozickASU'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Medieval Iceland — a bounded institutional comparison',
+                period: 'Commonwealth period, approximately 930–1262; institutional arrangements changed over time',
+                match: 'Friedman compares private enforcement in Iceland with his proposal but explicitly distinguishes its shared courts and legislature from competing legal systems.',
+                caveat: 'The national park’s account describes lawmaking by the Lögrétta and privileged participation by chieftains, later joined by bishops. This was not universal political equality or a verified match to modern secular capitalism. No historical six-axis score is assigned.',
+                citations: citations([], ['davidFriedmanMachinery2014', 'thingvellirLawCouncil']),
               },
               {
                 name: 'Market-oriented jurisdictions',
@@ -4656,12 +4689,22 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, the profile does not automatically protect social equality, minority security, or freedom from private domination. Private communities may be tolerant and pluralist, but they may also exclude, discriminate, impose religious or contractual rules, or make exit costly. Safeguards would need to specify non-aggression limits, due process, children’s and dependent persons’ rights, protection from violence and fraud, transparent contracts, remedies for third-party harms, and mechanisms that prevent private jurisdiction from becoming unaccountable sovereignty.',
             citations: citations(['rothbardForNewLiberty', 'nozickASU', 'lockeLetterToleration', 'spinozaPolitical'], ['sepAnarchism', 'sepLibertarianism', 'sepReligionPolitics', 'sepLibertyPositiveNegative']),
           },
+          {
+            type: 'paragraph',
+            text: 'Friedman himself concedes in chapter 31 that market-produced law need not always be libertarian, despite arguing that it tends toward freedom. Institutional competition and protection of liberty are therefore separate claims even within his defense.',
+            citations: citations([], ['davidFriedmanMachinery2014']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Byock warns against letting saga episodes of spectacular violence stand for ordinary social practice. His account stresses conflict containment and negotiated settlement. The encyclopedia consequently treats neither saga incidents nor their absence as a representative violence dataset; comparative rates, causal explanations, and generalization to large modern societies require additional evidence.',
+            citations: citations([], ['byockFeuding2003']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge', 'lockeSecondTreatise', 'millOnLiberty', 'kantPerpetualPeace', 'lockeLetterToleration', 'spinozaPolitical', 'morgenthauRealism'],
-      researchSourceIds: ['sepAnarchism', 'sepLibertarianism', 'sepLiberalism', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'foreignPolicy', 'sepClimateJustice', 'openTextbook'],
+      researchSourceIds: ['sepAnarchism', 'sepLibertarianism', 'sepLiberalism', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'foreignPolicy', 'sepClimateJustice', 'openTextbook', 'davidFriedmanMachinery2014', 'byockFeuding2003', 'thingvellirLawCouncil'],
       editorialNote: 'The profile describes a radical right-libertarian proposal, not an observed country or a verdict on all anarchism. It distinguishes abolition of the state from deregulation, market orientation from private law, and voluntary association from the empirical ability to exit unequal or coercive arrangements.',
     },
     researchGaps: [
@@ -4671,6 +4714,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add evidence on land acquisition, Indigenous and communal property, slavery, colonial enclosure, company towns, labor dependence, housing, disability, childhood, migration, and whether exit is materially available to affected people.',
       'Add specialist research on cryptocurrency governance, decentralized autonomous organizations, seasteading, charter cities, special economic zones, private cities, and the relationship between experimental autonomy and surrounding state law.',
       'Add systematic ethical and empirical comparisons with classical liberalism, minarchism, mutualism, anarcho-communism, communalism, and constitutional pluralism rather than treating all anti-state language as one tradition.',
+      'Extend the selected Friedman and Byock readings to complete chapters and competing interpretations, including William Ian Miller and Friedman’s 1979 legal-history article. The latter’s repository metadata was checked but its full text was not reviewed. Verify Icelandic legal texts, editions, changing institutions, slavery, women’s status, church power, and access to enforcement before assigning broader historical matches.',
+      'Test the transferability of historically specific cooperation and enforcement mechanisms without treating saga narratives as a representative violence sample. Reconcile the Commonwealth’s ending dates across institutional changes rather than assigning a single causal explanation to its collapse.',
     ],
   },
   'anarcho-communist': {
