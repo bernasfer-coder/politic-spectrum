@@ -392,6 +392,14 @@ export const AUTHOR_REFERENCES = {
     context: 'Used as a political-theory anchor for freedom of thought, religious authority, sovereignty, and the state’s relationship to public religion.',
     url: 'https://plato.stanford.edu/entries/spinoza-political/',
   },
+  maritainIntegralHumanism: {
+    author: 'Jacques Maritain',
+    work: 'Integral Humanism',
+    year: '1936',
+    kind: 'primary',
+    context: 'A French Catholic philosophical work associated with personalism and the attempt to connect Christian social thought with democratic pluralism without turning the state into a confessional government.',
+    url: 'https://books.google.com/books/about/Integral_Humanism.html?hl=en&id=g_EPAQAAIAAJ',
+  },
 };
 
 // Every band receives an explicit list. These are references for the

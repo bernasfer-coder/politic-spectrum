@@ -6338,4 +6338,337 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare theocracy with civil religion, religious nationalism, confessional democracy, Christian democracy, Islamic democracy, religious socialism, religious monarchy, and secular authoritarianism through explicit institutional criteria rather than broad cultural labels.',
     ],
   },
+  'christian-democratic': {
+    id: 'christian-democratic',
+    title: 'Christian democracy',
+    canonicalLabel: 'Christian democracy',
+    aliases: ['Christian democratic politics', 'Christian social democracy', 'social market Christian democracy', 'confessional democracy'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Christian democracy is a family of political ideas and party traditions combining Christian social ethics with constitutional democracy, social protection, intermediary institutions, and a mixed or social-market economy. It is not synonymous with theocracy, clerical rule, conservatism, Christian nationalism, or every party that uses Christian language.',
+    timeScope: 'Roots in older natural-law and Christian social thought; modern formation during industrialization and mass politics; major institutional development from the late nineteenth century through postwar European reconstruction; continuing and contested variants in Europe, Latin America, and other regions.',
+    geographicScope: 'Transnational and internally diverse, with important Catholic, Protestant, European, Latin American, Portuguese, German, Swiss, Italian, French, and Dutch cases. Party names, church–state relations, and social policies vary by country and period.',
+    summary: 'A political family that treats the human person, family and community institutions, social responsibility, and the common good as politically relevant while accepting constitutional government, elections, pluralist rights, and a regulated mixed economy. Its characteristic ideas include social-market coordination, solidarity, subsidiarity, intermediary associations, and cooperation across borders; variants disagree over secular citizenship, welfare, migration, family policy, European integration, and Christian public ethics.',
+    summaryCitations: citations(
+      ['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections', 'keynesGeneralTheory'],
+      ['oxfordChristianDemocracy', 'cambridgeChristianDemocracy', 'oxfordChristianDemocracyEurope', 'vaticanSocialDoctrineCompendium', 'comparativeChristianDemocracy'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -5,
+        label: 'Mixed economy / social-market balance',
+        explanation: 'Private property, enterprise, and markets are accepted, but bounded by social duties, labor protections, public services, social insurance, and the common good. Christian-democratic economics is neither state collectivism nor laissez-faire by definition; the balance varies by party and country.',
+        citations: citations(['aquinasMoralPolitical', 'keynesGeneralTheory'], ['vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'comparativeChristianDemocracy', 'oxfordChristianDemocratDecade']),
+      },
+      social: {
+        score: -30,
+        label: 'Moderately traditional, reformist, and pluralist',
+        explanation: 'Family, faith, inherited moral language, and community institutions often receive substantial weight, while democratic participation, social protection, and human dignity can support reform. The category contains both socially conservative and more progressive currents; its name does not establish one position on gender, sexuality, education, migration, or bioethics.',
+        citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections'], ['oxfordSocialCatholicismChristianDemocracy', 'sepReligionPolitics', 'vaticanSocialDoctrineCompendium']),
+      },
+      authority: {
+        score: 20,
+        label: 'Constitutional and intermediary-institutional',
+        explanation: 'Legitimate authority is ordinarily exercised through elections, constitutions, courts, parties, local government, churches, unions, families, and other institutions between the individual and the state. Subsidiarity can limit centralization, but it does not mean that every lower-level institution is democratic or that the state has no duty to guarantee equal rights and social protection.',
+        citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical', 'lockeSecondTreatise'], ['oxfordChristianDemocracy', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'comparativeChristianDemocracy']),
+      },
+      identity: {
+        score: -20,
+        label: 'Christian-cultural, civic, and European-pluralist',
+        explanation: 'Christian historical inheritance may shape public symbols and moral vocabulary, but Christian-democratic movements have also supported inclusive citizenship, minority protection, and European cooperation. Civic, confessional, national, colonial, and transnational variants must be distinguished with evidence.',
+        citations: citations(['maritainIntegralHumanism', 'burkeReflections', 'renanNation'], ['oxfordChristianDemocracyEurope', 'euRobertSchuman', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism']),
+      },
+      foreign: {
+        score: 15,
+        label: 'Cooperative restraint with collective security',
+        explanation: 'Postwar Christian democracy often favored reconciliation, international law, European integration, alliances, and shared institutions, while retaining a role for defense and collective security. It is not automatically pacifist and has historically coexisted with anti-communism, colonial commitments, and military alliances.',
+        citations: citations(['kantPerpetualPeace', 'morgenthauRealism', 'maritainIntegralHumanism'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope', 'oxfordChristianDemocratDecade', 'foreignPolicy']),
+      },
+      religion: {
+        score: -62,
+        label: 'Religiously grounded social ethics within pluralist law',
+        explanation: 'Christian social ethics can inform views of dignity, work, family, solidarity, property, welfare, and the common good. In its constitutional-pluralist form, however, Christian democracy does not require clerical government or one church to monopolize coercive law; religious reasons enter democratic contestation alongside secular reasons and equal citizenship.',
+        citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical', 'lockeLetterToleration'], ['sepReligionPolitics', 'oxfordChristianDemocracy', 'cambridgeChristianDemocracy', 'vaticanRerumNovarum', 'vaticanSocialDoctrineCompendium']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Christian democracy emerged in response to industrialization, mass electoral politics, secularization, and socialist organization. Its central problem was how to defend human dignity, solidarity, family and community life, and religiously informed moral commitments without restoring clerical rule or rejecting democratic citizenship. Different movements answered that problem differently, so Christian democracy is best read as a family resemblance rather than a single doctrine.',
+            citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical'], ['cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocracy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The postwar European form is especially influential in comparative politics: Christian-democratic parties helped shape constitutional reconstruction, social-market institutions, welfare provision, anti-communist coalitions, and European integration. That history should not be universalized. Catholic, Protestant, Latin American, Portuguese, and country-specific movements differed in their relation to churches, authoritarian regimes, labor, colonialism, women’s citizenship, and secular law.',
+            citations: citations(['maritainIntegralHumanism', 'burkeReflections'], ['oxfordChristianDemocratDecade', 'oxfordChristianDemocracyEurope', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Christian-democratic political anthropology usually starts from the person as relational and socially embedded. Individuals have rights and dignity, but live through families, neighborhoods, churches, unions, cooperatives, professional bodies, municipalities, and other associations. This emphasis on intermediate institutions challenges both radical individualism and a state that claims to organize every social function from the center.',
+            citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical'], ['oxfordSocialCatholicismChristianDemocracy', 'vaticanSocialDoctrineCompendium']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Its economic language often combines private ownership with social obligation. Labor is treated as more than a commodity, property as carrying responsibilities, and economic power as something that may require regulation, bargaining institutions, welfare, or public intervention. “Social market” is a useful postwar shorthand, but Christian democracy also includes distributist, corporatist, social-justice, developmental, and market-liberal variants; policy evidence matters more than the label.',
+            citations: citations(['aquinasMoralPolitical', 'keynesGeneralTheory'], ['vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'comparativeChristianDemocracy', 'oxfordChristianDemocratDecade']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'A crucial boundary is constitutional pluralism. A party may be inspired by Christianity while accepting alternation in office, religious freedom, non-confessional citizenship, judicial review, and the right of other parties to govern. When religious authorities receive non-negotiable supremacy over government, dissent, or equal citizenship, the classification moves toward theocracy or confessional authoritarianism instead.',
+            citations: citations(['maritainIntegralHumanism', 'lockeLetterToleration'], ['cambridgeChristianDemocracy', 'oxfordChristianDemocracy', 'sepReligionPolitics', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Older antecedents: natural law, common good, and Christian political thought',
+            text: 'Medieval and early-modern Christian thinkers developed arguments about natural law, the common good, authority, property, association, and the limits of rulers. These are intellectual antecedents, not evidence that a modern Christian-democratic party existed in the medieval period. Later movements selectively reworked them under constitutional government, mass politics, industrial capitalism, and religious pluralism.',
+            citations: citations(['aquinasMoralPolitical'], ['sepMedieval', 'oxfordSocialCatholicismChristianDemocracy', 'vaticanSocialDoctrineCompendium']),
+          },
+          {
+            period: 'Nineteenth century: industrialization and the social question',
+            text: 'Industrial labor, urban poverty, socialist organization, liberal individualism, and anticlerical conflict forced Christian political thinkers to address wages, property, unions, family insecurity, and the state. Rerum Novarum in 1891 became a major Catholic social reference, defending worker association and social duties while rejecting both unrestricted exploitation and revolutionary collectivism. It was an influential source of social Catholicism, not a complete party constitution.',
+            citations: citations(['aquinasMoralPolitical'], ['vaticanRerumNovarum', 'oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy']),
+          },
+          {
+            period: 'Late nineteenth and early twentieth centuries: confessional parties and political Catholicism',
+            text: 'Catholic and Christian social movements formed parties, unions, associations, newspapers, cooperatives, and educational institutions. Some were defensive confessional parties concerned with church autonomy and social order; others opened to parliamentary democracy, labor organization, social reform, and broader membership. The same religious vocabulary could therefore support democratic participation in one setting and authoritarian accommodation in another.',
+            citations: citations(['aquinasMoralPolitical', 'burkeReflections'], ['cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism']),
+          },
+          {
+            period: '1930s–1940s: personalism, anti-totalitarianism, and democratic reorientation',
+            text: 'Personalist thinkers such as Jacques Maritain argued that Christian social thought should defend the dignity and rights of the person while resisting both fascist sacralization of the nation and communist party-state domination. The period helped develop a language of human rights, pluralist constitutionalism, social responsibility, and democratic participation, although movements and institutions remained diverse and sometimes compromised.',
+            citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy', 'oxfordChristianDemocracy']),
+          },
+          {
+            period: '1945–1960s: postwar reconstruction and the Christian-democrat decade',
+            text: 'In West Germany, Italy, France, the Benelux countries, Austria, and elsewhere, Christian-democratic parties participated in rebuilding constitutional states, expanding social security, organizing social-market economies, and forming broad electoral coalitions. Adenauer, de Gasperi, Schuman, and related leaders supported European cooperation in different ways. These parties also carried unresolved legacies of anti-communism, empire, church privilege, gender hierarchy, and the boundary between cultural Christianity and equal secular citizenship.',
+            citations: citations(['maritainIntegralHumanism', 'burkeReflections'], ['oxfordChristianDemocratDecade', 'oxfordChristianDemocracyEurope', 'euRobertSchuman', 'adenauerHouse', 'comparativeChristianDemocracy']),
+          },
+          {
+            period: 'European integration: reconciliation, shared institutions, and contested memory',
+            text: 'Christian-democratic statesmen were important advocates of a European order built around reconciliation, shared institutions, and interdependence. Schuman’s proposal for shared coal and steel administration illustrates the preference for binding former rivals into common institutions. European integration was never exclusively Christian-democratic; secular, liberal, socialist, federalist, and economic actors also shaped it.',
+            citations: citations(['maritainIntegralHumanism', 'kantPerpetualPeace'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope', 'oxfordChristianDemocratDecade']),
+          },
+          {
+            period: 'Late twentieth century–present: secularization, party transformation, and global variants',
+            text: 'Secularization, changing class structures, women’s employment, migration, Europeanization, globalization, new family debates, and the decline of mass-confessional institutions reshaped Christian-democratic parties. Some moved toward centrist or market-liberal platforms; others retained welfare, family, community, or social-justice commitments. Latin American and other regional movements interacted with developmentalism, democracy, authoritarianism, liberation theology, and local religious institutions in ways that cannot be read as a simple export of postwar Europe.',
+            citations: citations(['maritainIntegralHumanism', 'keynesGeneralTheory'], ['oxfordChristianDemocracyEurope', 'oxfordPortugalPoliticalCatholicism', 'sepReligionPolitics', 'comparativeChristianDemocracy']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Catholic social / social-market democracy',
+                distinction: 'Combines private property and competition with social insurance, labor representation, public services, family policy, and institutional mediation.',
+                relation: 'The most recognizable postwar European form, but social-market institutions are not uniquely Christian-democratic and differ across countries.',
+                citations: citations(['aquinasMoralPolitical', 'keynesGeneralTheory'], ['vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'comparativeChristianDemocracy']),
+              },
+              {
+                label: 'Personalist Christian democracy',
+                distinction: 'Places the dignity, rights, freedom, and social embeddedness of the person at the center, often with resistance to totalitarianism and state absolutism.',
+                relation: 'Provides an intellectual bridge between Christian ethics and human-rights constitutionalism; it does not settle every economic or cultural question.',
+                citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy']),
+              },
+              {
+                label: 'Subsidiarity and sphere-based pluralism',
+                distinction: 'Distributes responsibility among individuals, families, associations, municipalities, churches, professional bodies, and the state, with higher levels acting when lower levels cannot secure the common good.',
+                relation: 'Can limit centralization and protect civil society, but can also shield unequal private institutions or understate the state’s duty to guarantee equal rights and universal provision.',
+                citations: citations(['aquinasMoralPolitical', 'maritainIntegralHumanism'], ['vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'comparativeChristianDemocracy']),
+              },
+              {
+                label: 'Confessional people’s party',
+                distinction: 'Organizes voters through a shared religious tradition, often defending church autonomy, family morality, education, and Christian social order in parliamentary competition.',
+                relation: 'Can be democratic and pluralist, but is less compatible with equal secular citizenship when membership or office is restricted by confession.',
+                citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['cambridgeChristianDemocracy', 'bpbChristianDemocraticCVP', 'sepReligionPolitics']),
+              },
+              {
+                label: 'Protestant and neo-Calvinist social pluralism',
+                distinction: 'Uses Christian social responsibility, associational life, and differentiated social spheres in ways not identical to Catholic social teaching or continental Catholic parties.',
+                relation: 'Shows why Christian democracy cannot be reduced to one church, theology, or European institutional path; country-specific evidence is essential.',
+                citations: citations(['maritainIntegralHumanism'], ['oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordChristianDemocracy']),
+              },
+              {
+                label: 'Christian nationalism',
+                distinction: 'Makes Christianity central to an inherited national people, often linking religion, borders, cultural homogeneity, and sovereignty more tightly than pluralist Christian democracy does.',
+                relation: 'May overlap in symbols and social values, but can reject transnational integration or equal pluralism; the two labels are not synonyms.',
+                citations: citations(['burkeReflections', 'renanNation'], ['sepNationalism', 'oxfordChristianDemocracyEurope', 'sepReligionPolitics']),
+              },
+              {
+                label: 'Christian social movements and liberation currents',
+                distinction: 'Emphasizes poverty, labor, anti-colonial justice, grassroots participation, and structural reform, sometimes moving closer to democratic socialism or religious socialism.',
+                relation: 'Shares social ethics and solidarity but may reject established Christian-democratic parties, social-market compromise, or church hierarchy.',
+                citations: citations(['maritainIntegralHumanism', 'keynesGeneralTheory'], ['oxfordSocialCatholicismChristianDemocracy', 'sepReligionPolitics']),
+              },
+              {
+                label: 'Confessional authoritarianism or theocracy',
+                distinction: 'Gives religious office, sacred law, or an authorized religious interpretation constitutive power over the constitution, coercive law, or political membership.',
+                relation: 'A boundary case rather than a normal Christian-democratic variant: constitutional-pluralist Christian democracy permits alternation, dissent, and non-confessional citizenship.',
+                citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['oxfordChristianDemocracy', 'sepReligionPolitics', 'oxfordStateReligionFreedom']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Jacques Maritain',
+                role: 'French Catholic philosopher associated with personalism, human dignity, human rights, and democratic constitutionalism.',
+                caveat: 'Maritain’s philosophy is an intellectual resource for Christian democracy, not a complete party programme and not proof that every Christian-democratic movement followed his pluralist commitments.',
+                citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy']),
+              },
+              {
+                name: 'Konrad Adenauer',
+                role: 'German Christian-democratic leader associated with constitutional reconstruction, social-market politics, and postwar European cooperation.',
+                caveat: 'Adenauer’s record must be studied in the context of postwar Germany, anti-communism, party competition, social policy, and the limits and exclusions of the period.',
+                citations: citations(['maritainIntegralHumanism'], ['adenauerHouse', 'oxfordChristianDemocratDecade', 'comparativeChristianDemocracy']),
+              },
+              {
+                name: 'Robert Schuman',
+                role: 'French statesman associated with postwar reconciliation, Christian-democratic political culture, and European institution-building.',
+                caveat: 'Schuman was one actor in a wider European and international coalition; European integration cannot be attributed to Christian democracy alone.',
+                citations: citations(['maritainIntegralHumanism', 'kantPerpetualPeace'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope']),
+              },
+              {
+                name: 'Pope Leo XIII and Catholic social teaching',
+                role: 'Rerum Novarum made labor, property, worker association, social duties, and the social question central to modern Catholic political thought.',
+                caveat: 'A papal social encyclical is a religious and institutional source, not direct evidence that later parties implemented one uniform economic policy.',
+                citations: citations(['aquinasMoralPolitical'], ['vaticanRerumNovarum', 'oxfordSocialCatholicismChristianDemocracy']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Postwar West Germany and the CDU/CSU tradition',
+                period: 'Federal Republic of Germany, especially from 1949',
+                match: 'A major case of Christian-democratic constitutional reconstruction, social-market policy, federal institutions, and European cooperation.',
+                caveat: 'The party family was internally diverse and changed over time; postwar democracy, welfare, economic recovery, anti-communism, and the legacy of Nazism all shaped the context.',
+                citations: citations(['maritainIntegralHumanism'], ['adenauerHouse', 'oxfordChristianDemocratDecade', 'comparativeChristianDemocracy']),
+              },
+              {
+                name: 'Postwar Italy and Democrazia Cristiana',
+                period: 'Italy, 1943–1994 and later Christian-democratic legacies',
+                match: 'A mass Christian-democratic party linked Catholic social networks, parliamentary coalition government, welfare, anti-communism, and the European project.',
+                caveat: 'The Italian case included clientelism, factionalism, church–party tensions, regional inequality, corruption, and major changes after the First Republic; it is not a simple model.',
+                citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical'], ['oxfordChristianDemocratDecade', 'oxfordChristianDemocracyEurope', 'comparativeChristianDemocracy']),
+              },
+              {
+                name: 'Robert Schuman’s European Coal and Steel proposal',
+                period: 'France and Western Europe, 1950 onward',
+                match: 'A case of reconciliation through shared institutions and pooled management of strategic resources, consistent with Christian-democratic international cooperation.',
+                caveat: 'The proposal was shaped by economic, security, diplomatic, secular, liberal, and socialist actors as well as Christian democrats; the outcome should not be reduced to one ideology.',
+                citations: citations(['maritainIntegralHumanism', 'kantPerpetualPeace'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope']),
+              },
+              {
+                name: 'Swiss Christian-democratic people’s party tradition',
+                period: 'Switzerland, late nineteenth century to present',
+                match: 'A case in which a historically Catholic party opened its programme and membership beyond an exclusively confessional base while retaining Christian social and conservative elements.',
+                caveat: 'Swiss federalism, direct democracy, and religious geography make the case distinctive; it should not stand for all Christian democracy.',
+                citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['bpbChristianDemocraticCVP', 'comparativeChristianDemocracy']),
+              },
+              {
+                name: 'Portuguese Christian-democratic alternatives after 1974',
+                period: 'Portugal, democratic transition after the Carnation Revolution',
+                match: 'A case in which Catholic social thought, democratization, party formation, and external European support interacted after authoritarian rule.',
+                caveat: 'Portugal’s earlier political Catholicism and Salazarist authoritarian context make its trajectory different from postwar West Germany or Italy; Christian democracy must be distinguished from authoritarian corporatism.',
+                citations: citations(['maritainIntegralHumanism'], ['oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'conservative', relation: 'shares continuity, family, community, and institutional authority in many variants, but Christian democracy adds a distinctive social-ethical and constitutional party tradition' },
+              { id: 'social-democratic', relation: 'shares welfare, labor protection, and mixed-economy institutions, but Christian democracy usually gives more weight to subsidiarity, intermediary associations, family, and Christian social anthropology' },
+              { id: 'liberal-constitutionalist', relation: 'shares rights, constitutional government, and pluralist limits, while Christian democracy adds social duties, community institutions, and a religiously informed account of the common good' },
+              { id: 'religious-traditionalist', relation: 'shares religiously informed social ethics, but Christian democracy is a party and institutional family that can accept pluralist citizenship and social reform' },
+              { id: 'christian-nationalist', relation: 'may share Christian symbols and cultural identity, but Christian nationalism generally binds faith more tightly to national sovereignty or inherited peoplehood' },
+              { id: 'theocratic', relation: 'the critical boundary: Christian democracy can be religiously inspired while rejecting clerical supremacy, sacred-law government, and unequal citizenship' },
+              { id: 'religious-socialist', relation: 'overlaps on solidarity, poverty, and social justice, but often differs over property, party institutions, revolutionary change, and church authority' },
+              { id: 'monarchist', relation: 'may coexist historically with monarchy or constitutional tradition, but Christian democracy is compatible with republican government and is not defined by hereditary rule' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'A first criticism concerns the ambiguity of “Christian” in a democratic state. Christian-democratic movements can defend dignity and pluralism, but can also privilege a majority religion, treat secular citizens as culturally deficient, or use family and moral language to restrict women, sexual minorities, converts, or non-believers. The safe classification records actual law and practice rather than inferring them from a party name.',
+            citations: citations(['maritainIntegralHumanism', 'lockeLetterToleration'], ['sepReligionPolitics', 'oxfordChristianDemocracy', 'vaticanSocialDoctrineCompendium', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns subsidiarity and unequal private power. Families, churches, schools, unions, firms, and local associations can protect pluralism and participation, but can also reproduce hierarchy, exclusion, gender inequality, or private domination. If a lower-level institution cannot protect equal rights, subsidiarity cannot be a blanket argument against public remedies, universal services, or independent oversight.',
+            citations: citations(['aquinasMoralPolitical', 'maritainIntegralHumanism'], ['vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'comparativeChristianDemocracy', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns the social-market compromise. Christian-democratic welfare systems can reduce insecurity and class conflict, but may preserve concentrated ownership, depend on gendered family care, segment benefits by occupational status, or weaken labor power when social partnership is unequal. Social-market policy is therefore a variable institutional arrangement, not proof of either justice or exploitation.',
+            citations: citations(['keynesGeneralTheory', 'aquinasMoralPolitical'], ['vaticanRerumNovarum', 'comparativeChristianDemocracy', 'oxfordChristianDemocratDecade']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A fourth criticism concerns historical compromise and authoritarian adjacency. Christian parties and Catholic institutions sometimes accommodated monarchies, colonial regimes, corporatist governments, or authoritarian anti-communism. Other Christian democrats defended resistance, human rights, constitutional democracy, and decolonization. The record must distinguish party rhetoric from institutional behavior and avoid treating religious inspiration as either an automatic safeguard or an automatic cause of authoritarianism.',
+            citations: citations(['maritainIntegralHumanism', 'burkeReflections'], ['cambridgeChristianDemocracy', 'oxfordPortugalPoliticalCatholicism', 'oxfordChristianDemocracyEurope', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, Christian democracy is difficult to classify on one left–right line because its social, economic, authority, identity, foreign-policy, and religion positions can pull in different directions. A party can support welfare and private property, family tradition and constitutional rights, national culture and European integration, religious ethics and secular law. These six scores are didactic composites and should be read alongside variant, country, period, programme, coalition, and record in office.',
+            citations: citations(['maritainIntegralHumanism', 'keynesGeneralTheory', 'lockeLetterToleration'], ['oxfordChristianDemocracyEurope', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'vdem']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections', 'keynesGeneralTheory', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
+      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy'],
+      editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
+    },
+    researchGaps: [
+      'Add original-language Catholic, Protestant, and Orthodox sources plus scholarship in French, German, Italian, Dutch, Portuguese, Spanish, and Latin American political history; record translations and editions separately.',
+      'Add comparative work on Christian-democratic parties outside Western Europe, including Latin America, Central and Eastern Europe, Africa, the Middle East, and Asia, without treating Christian parties as one institutional family.',
+      'Compare Catholic social teaching with Protestant social ethics, neo-Calvinist sphere theories, Christian socialism, liberation theology, distributism, personalism, and secular social democracy through explicit concepts rather than party labels.',
+      'Add country-specific evidence on women’s citizenship, family law, labor rights, welfare access, migration, minority religion, colonial administration, Indigenous rights, and the treatment of non-believers.',
+      'Add primary party programmes and voting records for CDU/CSU, Democrazia Cristiana, MRP, CVP, ÖVP, CDA, Fine Gael, Chilean and Brazilian Christian-democratic parties, Portuguese CDS traditions, and later successors.',
+      'Study church hierarchy, lay movements, unions, cooperatives, business associations, local government, and the state so that intermediary institutions are not treated as automatically democratic.',
+      'Expand the postwar European-integration record to include secular and socialist contributors, colonial and migration histories, NATO and anti-communism, and tensions between European universalism and national or confessional identity.',
+    ],
+  },
 };
