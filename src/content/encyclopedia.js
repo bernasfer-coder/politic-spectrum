@@ -380,14 +380,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A historical warning profile combining exclusionary ultranationalism, an authoritarian leader and movement, mass mobilization, anti-liberal and anti-communist politics, political violence, and a promise of national rebirth. Nazi racial ideology and genocide are central to Nazism, but should not be projected backward onto every Italian or non-Nazi fascist movement.',
     summaryCitations: citations(
       ['griffinNatureFascism', 'mussoliniDoctrine', 'hitlerMeinKampf', 'arendtTotalitarianism'],
-      ['sepFascism', 'ushmmFascism', 'bpbFascism', 'bpbNationalSocialism'],
+      ['sepFascism', 'treccaniFascismo', 'ushmmFascism', 'bpbFascism', 'bpbNationalSocialism'],
     ),
     dimensionInterpretations: {
       economic: {
         score: 18,
         label: 'Mixed economy under national direction',
         explanation: 'Fascist regimes generally preserved private property in important sectors while subordinating labor, production, trade, and investment to national, military, and regime goals. The score is intentionally near the center: fascism is not defined by a single ownership system, and its economic practice varied between corporatist regulation, private enterprise, state ownership, and wartime command.',
-        citations: citations(['mussoliniDoctrine', 'hitlerMeinKampf'], ['sepFascism', 'bpbFascism']),
+        citations: citations(['mussoliniDoctrine', 'hitlerMeinKampf'], ['sepFascism', 'treccaniCorporativismo', 'bpbFascism']),
       },
       social: {
         score: -92,
@@ -417,7 +417,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -25,
         label: 'Instrumental religious traditionalism',
         explanation: 'Fascist regimes were neither uniformly secular nor straightforward theocracies. They could negotiate with churches, invoke sacred national symbols, and mobilize religious tradition while subordinating independent religious authority to the state and party. Nazi racial ideology was not simply a form of ordinary Christian conservatism.',
-        citations: citations(['mussoliniDoctrine', 'arendtTotalitarianism', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'bpbFascism', 'bpbNationalSocialism']),
+        citations: citations(['mussoliniDoctrine', 'arendtTotalitarianism', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'treccaniLateranPacts', 'bpbFascism', 'bpbNationalSocialism']),
       },
     },
     sections: [
@@ -475,7 +475,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             period: '1919–1922: Italian Fascist movement and seizure of office',
             text: 'Mussolini founded the Italian Fascist movement in 1919, converted it into a national party, and used the March on Rome in 1922 to become prime minister. The subsequent destruction of pluralist institutions turned a movement with electoral and paramilitary elements into a dictatorship.',
-            citations: citations(['mussoliniDoctrine'], ['ushmmFascism', 'bpbFascism']),
+            citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'ushmmFascism', 'bpbFascism']),
+          },
+          {
+            period: '1925–1939: dictatorship, corporatism, church settlement, and empire',
+            text: 'The Italian regime consolidated one-party rule while presenting corporatism as an alternative to both liberal capitalism and Marxist class conflict. In practice, corporatist institutions subordinated independent labor organization to state supervision rather than creating equal worker–employer governance. The 1929 Lateran Pacts reconciled the Fascist state with the Catholic Church and strengthened the regime’s legitimacy, while the Ethiopian war and colonial rule pushed Fascism toward a more explicit imperial and racial politics. These developments were connected but not identical: corporatism, church diplomacy, colonial violence, and racial legislation each require their own evidence.',
+            citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'treccaniCorporativismo', 'treccaniLateranPacts', 'cambridgeMussolinisFollies', 'sageColonialDominationItaly']),
           },
           {
             period: '1923–1933: Nazi movement and the end of Weimar democracy',
@@ -505,7 +510,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 label: 'Italian Fascism',
                 distinction: 'The original movement and regime, centered on the nation, the state, the leader, corporatist organization, imperial ambition, and anti-socialist mobilization.',
                 relation: 'The historical origin of the label; its racial and religious policies must not simply be read backward from Nazi Germany.',
-                citations: citations(['mussoliniDoctrine'], ['ushmmFascism', 'bpbFascism']),
+                citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'treccaniCorporativismo', 'treccaniLateranPacts', 'cambridgeMussolinisFollies', 'sageColonialDominationItaly', 'ushmmFascism', 'bpbFascism']),
               },
               {
                 label: 'National Socialism / Nazism',
@@ -546,7 +551,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: '1922–1943; Italian Social Republic 1943–1945',
                 match: 'canonical historical match',
                 caveat: 'The regime changed over time and its racial policy was not identical to Nazi Germany’s; later alliance and war intensified its authoritarian and imperial features.',
-                citations: citations(['mussoliniDoctrine'], ['ushmmFascism', 'bpbFascism']),
+                citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'treccaniCorporativismo', 'treccaniLateranPacts', 'cambridgeMussolinisFollies', 'sageColonialDominationItaly', 'ushmmFascism', 'bpbFascism']),
               },
               {
                 name: 'Nazi Germany',
@@ -616,6 +621,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
       researchSourceIds: [
         'sepFascism',
         'sepReligionPolitics',
+        'treccaniFascismo',
+        'treccaniCorporativismo',
+        'treccaniLateranPacts',
+        'cambridgeMussolinisFollies',
+        'sageColonialDominationItaly',
         'ushmmFascism',
         'bpbFascism',
         'bpbNationalSocialism',
@@ -623,7 +633,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       editorialNote: 'The entry separates primary fascist and Nazi texts from comparative scholarship and institutional historical sources. The profile is a warning and comparison aid, not a diagnosis of contemporary people or countries.',
     },
     researchGaps: [
-      'Add Italian-language scholarship on Fascist Italy, corporatism, the Lateran Pacts, colonial violence, and the regime’s changing racial policy.',
+      'Expand Italian-language scholarship on Fascist Italy, corporatism, the Lateran Pacts, colonial violence, and the regime’s changing racial policy, including archival and regional studies beyond general reference works.',
       'Add French- and German-language scholarship on comparative fascism, Vichy, the German Sonderweg debate, and post-war memory without treating all cases as equivalent.',
       'Add country-specific evidence before creating any contemporary movement or country match; avoid inferring fascism from rhetoric alone.',
       'Add specialist review on gender, religion, political economy, colonialism, and the relationship between fascist movements and traditional conservative elites.',
