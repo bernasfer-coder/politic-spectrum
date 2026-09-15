@@ -100,6 +100,8 @@ const RESEARCH_SOURCES = [
   { id: 'sepMedieval', label: 'Stanford Encyclopedia — Medieval Political Philosophy', url: 'https://plato.stanford.edu/entries/medieval-political/', note: 'Historical political concepts including kingship, republicanism, law, and authority.' },
   { id: 'ushmmFascism', label: 'United States Holocaust Memorial Museum — Fascism', url: 'https://encyclopedia.ushmm.org/content/en/article/fascism-1', note: 'Historical context for fascism and the Nazi regime; used for warning and contextualization.' },
   { id: 'ushmmCommunism', label: 'United States Holocaust Memorial Museum — Communism', url: 'https://encyclopedia.ushmm.org/content/en/article/communism-1', note: 'Bounded historical context on the Russian Revolution, the Soviet Union, Stalinist collectivization, industrial quotas, and the distinction between communist theory and later regimes.' },
+  { id: 'bpbFascism', label: 'Bundeszentrale für politische Bildung — Faschismus', url: 'https://www.bpb.de/themen/rechtsextremismus/dossier-rechtsextremismus/500776/faschismus/', note: 'German-language institutional history distinguishing Italian Fascism, National Socialism, and broader uses of the fascism label.' },
+  { id: 'bpbNationalSocialism', label: 'Bundeszentrale für politische Bildung — National Socialism', url: 'https://www.bpb.de/kurz-knapp/lexika/politiklexikon/17892/nationalsozialismus/', note: 'German-language reference on Nazi ideology, dictatorship, racial hierarchy, antisemitism, war, and the relationship between party and state.' },
   { id: 'panAfricanism', label: 'African Affairs — Pan-Africanism', url: 'https://academic.oup.com/afraf/article/125/498/1/8512174', note: 'Scholarly treatment of Pan-African political thought and transnational solidarity.' },
 ];
 

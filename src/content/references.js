@@ -115,6 +115,14 @@ export const AUTHOR_REFERENCES = {
     kind: 'scholarly',
     url: 'https://www.penguinrandomhouse.com/books/53885/the-origins-of-totalitarianism-by-hannah-arendt/',
   },
+  griffinNatureFascism: {
+    author: 'Roger Griffin',
+    work: 'The Nature of Fascism',
+    year: '1991',
+    kind: 'scholarly',
+    context: 'Comparative scholarship used for the contested generic concept of fascism and its recurring theme of national rebirth; it is not treated as the only valid definition.',
+    url: 'https://academic.oup.com/book/47490?searchresult=1',
+  },
   hitlerMeinKampf: {
     author: 'Adolf Hitler',
     work: 'Mein Kampf',
