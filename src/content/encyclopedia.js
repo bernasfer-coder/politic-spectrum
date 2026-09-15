@@ -647,8 +647,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     geographicScope: 'Transnational intellectual tradition with important British, European, and North American strands; no current country is an exact six-axis match.',
     summary: 'A market-oriented libertarian profile that treats individual liberty, private property, voluntary exchange, freedom of contract, and protection from coercion as central political values. It favors a highly limited state or, in stronger versions, voluntary and market-based alternatives to state functions, while leaving social customs and personal identity largely to individual choice.',
     summaryCitations: citations(
-      ['hayekKnowledge', 'millOnLiberty', 'nozickASU', 'lockeSecondTreatise'],
-      ['sepLibertarianism', 'sepLiberalism'],
+      ['hayekKnowledge', 'millOnLiberty', 'nozickASU', 'lockeSecondTreatise', 'constantLibertyModerns'],
+      ['sepLibertarianism', 'sepLiberalism', 'sageWhatIsFrenchLiberalism'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -741,6 +741,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['adamSmithWealth', 'millOnLiberty'], ['sepLiberalism']),
           },
           {
+            period: 'Nineteenth-century French liberal debates',
+            text: 'French liberalism was not one exportable doctrine. Constant emphasized modern civil liberty, representative institutions, and limits on concentrated power; Tocqueville linked liberty to associations, habits, religion, and democratic conditions; Bastiat defended free exchange and economic liberty. Their differences matter: Bastiat’s political economy cannot simply be equated with Constant’s constitutional thought or with contemporary right-libertarianism.',
+            citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat']),
+          },
+          {
             period: '1859 and the development of individual liberty',
             text: 'Mill’s defense of individuality, free discussion, voluntary association, and a harm-based limit on coercion expanded the social and expressive side of liberal freedom. Mill was not a contemporary right-libertarian on every question; his utilitarianism and openness to some public action matter for accurate classification.',
             citations: citations(['millOnLiberty'], ['sepLiberalism', 'sepLibertarianism']),
@@ -769,6 +774,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Defends rights, constitutional limits, private property, and markets but may accept a broader role for public goods, regulation, education, or social reform than strict libertarianism.',
                 relation: 'Historical and intellectual neighbor; the boundary is gradual rather than a clean dividing line.',
                 citations: citations(['adamSmithWealth', 'millOnLiberty', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertarianism']),
+              },
+              {
+                label: 'Nineteenth-century French liberalism',
+                distinction: 'A heterogeneous family including Constant’s constitutional and civil-liberty arguments, Tocqueville’s analysis of democracy and associations, and Bastiat’s defense of free exchange and economic liberty.',
+                relation: 'Important intellectual ancestor and contrast case; it contains broader and more historically situated arguments than this narrow market-libertarian card.',
+                citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat']),
               },
               {
                 label: 'Minarchism / right-libertarianism',
@@ -833,6 +844,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'rights-based defender of the minimal state',
                 caveat: 'Nozick’s argument is one influential philosophical version, not a consensus definition of libertarianism.',
                 citations: citations(['nozickASU'], ['sepLibertarianism']),
+              },
+              {
+                name: 'Frédéric Bastiat',
+                role: 'French economist, journalist, and liberal political writer',
+                caveat: 'A nineteenth-century liberal precursor whose political economy and historical context should not be collapsed into contemporary libertarianism.',
+                citations: citations([], ['economieBastiat', 'sageWhatIsFrenchLiberalism']),
               },
             ],
           },
@@ -910,16 +927,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'lockeLetterToleration',
         'adamSmithWealth',
         'millOnLiberty',
+        'constantLibertyModerns',
+        'tocquevilleDemocracy',
         'hayekKnowledge',
         'nozickASU',
         'kantPerpetualPeace',
         'morgenthauRealism',
       ],
-      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'vdem'],
+      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem'],
       editorialNote: 'The entry distinguishes primary arguments from comparative philosophical interpretation. Its scores describe one market-libertarian archetype and do not define all classical liberals, libertarians, or market-oriented governments.',
     },
     researchGaps: [
-      'Add French-language sources on Constant, Bastiat, and the liberal tradition, with care around the difference between nineteenth-century liberalism and contemporary libertarianism.',
+      'Expand French-language and specialist scholarship on Constant, Bastiat, Tocqueville, Guizot, and the liberal tradition, with care around the difference between nineteenth-century liberalism and contemporary libertarianism.',
       'Add German-language scholarship on the ordoliberal and Austrian traditions; neither should be treated as interchangeable with minarchism or anarcho-capitalism.',
       'Add specialist research on public goods, externalities, corporate power, environmental limits, and the empirical performance of low-tax or low-regulation regimes.',
       'Add country-specific data before showing contemporary states as examples; current market openness and civil-liberties indicators are not sufficient for an exact six-axis match.',
