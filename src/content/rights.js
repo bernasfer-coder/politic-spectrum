@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    communeDeclarationFrench: { ...PUBLIC_DOMAIN_CANDIDATE, reviewedAt: '2026-09-15', notes: 'Historical French declaration consulted in a modern transcription. No facsimile verification or clearance of the edition, commentary, or translations is claimed. Original paraphrase and link only.' },
+    rougerieInternationalCommune: { ...LINK_ONLY, reviewedAt: '2026-09-15', license: 'Copyright © Internationaal Instituut voor Sociale Geschiedenis 1972, as recorded by Cambridge.', notes: 'Selected publisher-PDF pages consulted. No article passages, translations, tables, or scans reproduced.' },
+    cossartCommuneCommunalism: { ...LINK_ONLY, reviewedAt: '2026-09-15', license: 'Publisher PDF notice: article text CC BY-SA 4.0; other elements reserved unless specified.', commercialUse: 'Only original synthesis and links are published here. Reusing licensed text would require attribution and ShareAlike compliance; no media reuse is cleared.', notes: 'Abstract and opening consulted; later full-text access was unavailable. No quotations, translated extracts, or images reproduced.' },
+    assembleeCommuneHistory: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-15', notes: 'Institutional narrative paraphrased independently. Its historical quotations, photographs, and declaration facsimile are not reproduced.' },
     panXu: { ...LINK_ONLY, notes: 'Scholarly article used as a claim-level reference; the article text is not reproduced.' },
     sepSocialism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     sepLuxemburg: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },

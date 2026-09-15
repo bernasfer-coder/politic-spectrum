@@ -2604,8 +2604,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       economic: {
         score: 82,
         label: 'Strongly communal and anti-capitalist',
-        explanation: 'Productive resources are to be held in common or controlled by workers and communities, with mutual aid and free association replacing private accumulation and wage dependence. Different currents disagree over distribution, exchange, labor vouchers, markets, and the degree of planning; none of those mechanisms alone defines the whole tradition.',
-        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'ostromGoverningCommons'], ['sepAnarchism', 'sepSocialism']),
+        explanation: 'Productive resources are to be held in common or controlled by workers and communities, with mutual aid and free association replacing private accumulation and wage dependence. Different currents disagree over distribution, exchange, labor vouchers, markets, and the degree of planning; none of those mechanisms alone defines the whole tradition. Paris’s 1871 programme left reforms to experimentation; it did not specify a complete common-ownership system.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'ostromGoverningCommons'], ['sepAnarchism', 'sepSocialism', 'communeDeclarationFrench']),
       },
       social: {
         score: 55,
@@ -2616,26 +2616,26 @@ export const ENCYCLOPEDIA_ENTRIES = {
       authority: {
         score: -92,
         label: 'Radically anti-state',
-        explanation: 'A territorial monopoly of coercion is treated as a source of domination rather than the necessary foundation of social order. Federations, councils, assemblies, mandated delegates, restorative practices, and voluntary coordination are preferred, but the difficult boundary between legitimate collective rules and coercive hierarchy remains an open institutional problem.',
-        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism', 'vdem']),
+        explanation: 'A territorial monopoly of coercion is treated as a source of domination rather than the necessary foundation of social order. Federations, councils, assemblies, mandated delegates, restorative practices, and voluntary coordination are preferred, but the difficult boundary between legitimate collective rules and coercive hierarchy remains an open institutional problem. Paris’s disputed emergency executive in 1871 limits the comparison: the Commune itself should not inherit this profile’s score.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism', 'vdem', 'rougerieInternationalCommune']),
       },
       identity: {
         score: 45,
         label: 'Internationalist with local belonging',
-        explanation: 'Solidarity across borders and opposition to nationalism, imperialism, and colonial domination are emphasized, while communes and federations remain rooted in particular places and relationships. Local autonomy is therefore compatible with internationalism, but not with a single universal national identity.',
-        citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism', 'andersonImaginedCommunities'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+        explanation: 'Solidarity across borders and opposition to nationalism, imperialism, and colonial domination are emphasized, while communes and federations remain rooted in particular places and relationships. Local autonomy is therefore compatible with internationalism, but not with a single universal national identity. The Commune also mobilized French republican patriotism; federation did not imply the absence of national attachment.',
+        citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism', 'andersonImaginedCommunities'], ['sepAnarchism', 'socialEcologyMunicipalism', 'assembleeCommuneHistory']),
       },
       foreign: {
         score: 45,
         label: 'Non-interventionist and anti-imperial',
-        explanation: 'Standing armies, imperial expansion, and state diplomacy backed by permanent coercion are rejected in favor of solidarity, non-domination, and local self-defense. Historical anarchist movements have fought in wars and organized armed defense, so the profile is anti-militarist and anti-imperial rather than simply pacifist.',
-        citations: citations(['bakuninStatism', 'kantPerpetualPeace', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'foreignPolicy']),
+        explanation: 'Standing armies, imperial expansion, and state diplomacy backed by permanent coercion are rejected in favor of solidarity, non-domination, and local self-defense. Historical anarchist movements have fought in wars and organized armed defense, so the profile is anti-militarist and anti-imperial rather than simply pacifist. Resistance after France’s defeat helped mobilize the Commune; it cannot simply be coded as pacifist.',
+        citations: citations(['bakuninStatism', 'kantPerpetualPeace', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'foreignPolicy', 'assembleeCommuneHistory']),
       },
       religion: {
         score: 65,
         label: 'Secular and anti-clerical, with voluntary pluralism',
-        explanation: 'No church or religious authority should control public law or impose a sacred hierarchy. Many historical anarchists criticized organized religion, while voluntary faith communities can remain compatible with free association if they do not exercise coercive political authority.',
-        citations: citations(['bakuninStatism', 'millOnLiberty', 'spinozaPolitical'], ['sepAnarchism', 'sepReligionPolitics']),
+        explanation: 'No church or religious authority should control public law or impose a sacred hierarchy. Many historical anarchists criticized organized religion, while voluntary faith communities can remain compatible with free association if they do not exercise coercive political authority. The Commune’s church–state separation is a concrete, limited precedent.',
+        citations: citations(['bakuninStatism', 'millOnLiberty', 'spinozaPolitical'], ['sepAnarchism', 'sepReligionPolitics', 'assembleeCommuneHistory']),
       },
     },
     sections: [
@@ -2653,6 +2653,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The profile is narrower than anarchism as a whole. It highlights currents that combine anti-state authority with communal or communist economics and local self-government. It is not anarcho-capitalism, which keeps private property and markets central; it is not every form of anarcho-communism; and it should not treat Bookchin’s later ecological municipalism as identical to the nineteenth-century movements from which it drew.',
             citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
           },
+          {
+            type: 'paragraph',
+            text: 'Paula Cossart’s stated argument challenges a simple lineage from Paris to Bookchin: he criticized the Commune’s centralism, even though later municipalists continue to invoke it. She also distinguishes the elected council from neighborhood assemblies as sites of participation. This is an attributed scholarly interpretation, drawn here from her abstract and opening, not a claim that every practice of 1871 anticipated later communalism.',
+            citations: citations([], ['cossartCommuneCommunalism']),
+          },
         ],
       },
       {
@@ -2663,6 +2668,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The economic proposal is common access and democratic control rather than private ownership of productive resources or command by a centralized state. Workplaces, land, housing, and essential services may be managed by federated associations, communes, cooperatives, or councils. Kropotkin’s mutual-aid argument supplies one account of cooperation, while Bakunin’s collectivist approach and later communalist proposals show that distribution and coordination remain contested.',
             citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Commune’s declaration of 19 April 1871 proposed extensive local powers, accountable and removable officials, civil liberties, and continued citizen involvement. It also retained a central administration delegated by federated communes, municipal policing, and armed urban defense. Read as a primary programme rather than a record of implementation, it supports accountable federation more directly than a claim that all government or coercion had disappeared.',
+            citations: citations([], ['communeDeclarationFrench']),
           },
           {
             type: 'paragraph',
@@ -2687,8 +2697,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             period: '1871: the Paris Commune as a contested reference',
-            text: 'The Paris Commune became a powerful reference for municipal self-government, recallable delegates, and the possibility of replacing centralized administration with local federation. It was not uniformly anarchist or communist, and its short life under military attack makes it evidence of an experiment rather than proof that a complete stateless society had been established.',
-            citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+            text: 'The uprising began on 18 March; the council was elected on 26 March, and the Commune was defeated in late May. Its republican, patriotic, and social aspirations arose amid siege and conflict with Versailles. Those circumstances matter: municipal emancipation was attempted through contested institutions under military pressure, not through an already settled stateless order.',
+            citations: citations([], ['assembleeCommuneHistory', 'rougerieInternationalCommune']),
           },
           {
             period: '1890s–1910s: Kropotkin and mutual aid',
@@ -2804,8 +2814,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Paris Commune',
                 period: 'Paris, 1871',
                 match: 'municipal self-government reference',
-                caveat: 'The Commune was politically diverse, brief, and defeated; it was not uniformly anarchist or communist.',
-                citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+                caveat: 'A partial institutional comparison, not an exact six-axis match: its federal programme, elected council, and emergency authority must be distinguished. Later anarchist and municipalist readings are interpretations, not proof of a uniform contemporary doctrine.',
+                citations: citations([], ['communeDeclarationFrench', 'rougerieInternationalCommune', 'cossartCommuneCommunalism']),
               },
               {
                 name: 'Free Territory / Makhnovist movement',
@@ -2866,6 +2876,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Rougerie’s analysis of the 1 May Committee of Public Safety vote cautions against dividing the Commune into a uniformly libertarian International and an authoritarian remainder. International members voted on both sides; support for French federation could coexist with support for emergency centralization. The disagreement concerned executive control as well as doctrine. Later divisions among exiles should not be projected mechanically onto these wartime alignments.',
+            citations: citations([], ['rougerieInternationalCommune']),
+          },
+          {
+            type: 'paragraph',
             text: 'Historical experiments also warn against romanticization. War, repression, scarcity, internal conflict, and the need for armed defense shaped Ukraine and Spain, while the Paris Commune’s short duration limits the evidence available. These cases demonstrate political imagination and institutional experimentation, but they cannot by themselves prove that a durable stateless communal order is feasible in every context.',
             citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'makhnoRuralAnarchism']),
           },
@@ -2874,12 +2889,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism', 'ostromGoverningCommons', 'millOnLiberty', 'spinozaPolitical', 'kantPerpetualPeace', 'andersonImaginedCommunities', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepAnarchism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy'],
-      editorialNote: 'The entry distinguishes anti-authoritarian communalism from anarcho-capitalism, democratic socialism, and later libertarian municipalism. Scores describe a didactic reference profile; the historical examples are partial, local, temporary, and contested rather than country-level matches.',
+      researchSourceIds: ['sepAnarchism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'communeDeclarationFrench', 'rougerieInternationalCommune', 'cossartCommuneCommunalism', 'assembleeCommuneHistory'],
+      editorialNote: 'The entry distinguishes anti-authoritarian communalism from anarcho-capitalism, democratic socialism, and later libertarian municipalism. Scores describe a didactic reference profile; the historical examples are partial, local, temporary, and contested rather than country-level matches. The 1871 programme is primary evidence; Rougerie and Cossart supply attributed interpretations. French passages are paraphrased, not quoted or presented as verified translations; consulted sections and access limits are recorded in the bibliography.',
     },
     researchGaps: [
       'Add German-, French-, Spanish-, Ukrainian-, Italian-, and Portuguese-language scholarship on anarchist federations, syndicalism, communes, and the history of translation across movements.',
       'Add specialist histories of the Paris Commune, Makhnovist movement, Revolutionary Catalonia, Mujeres Libres, and the civilian institutions of wartime collectivization.',
+      'Extend the Paris evidence beyond the April programme and Rougerie’s selected pages: examine local participation, women’s political exclusion and agency, implementation of labor reforms, and emergency powers. Review Cossart’s complete article and the Bookchin texts she discusses before expanding the reception claim.',
       'Add comparative institutional research on federation, consensus, delegated authority, commons governance, public goods, health, infrastructure, ecological limits, and defense without a sovereign state.',
       'Add country- and project-specific evidence before listing any contemporary autonomous community, cooperative, municipalist platform, or commons as a living match.',
       'Add research on gender, race, colonialism, disability, migration, informal hierarchy, conflict resolution, and the risk that anti-state structures reproduce coercion through armed or social power.',
