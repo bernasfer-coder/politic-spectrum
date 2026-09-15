@@ -4008,8 +4008,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       authority: {
         score: 78,
         label: 'Strongly authoritarian in the Marxist-Leninist profile',
-        explanation: 'A vanguard party, democratic centralism, centralized administration, and emergency or revolutionary authority are treated as instruments for defeating counter-revolution and directing the transition. This is the profile’s main distinction from anarcho-communism, council communism, and democratic socialism, although communist theory and practice contain sustained arguments about democratic control.',
-        citations: citations(['leninStateRevolution', 'luxemburgReformRevolution', 'arendtTotalitarianism'], ['sepSocialism', 'sepLuxemburg', 'oxfordHistoryCommunism', 'vdem']),
+        explanation: 'A vanguard party, democratic centralism, centralized administration, and emergency or revolutionary authority are treated as instruments for defeating counter-revolution and directing the transition. This is the profile’s main distinction from anarcho-communism, council communism, and democratic socialism, although communist theory and practice contain sustained arguments about democratic control. GDR Article 1 (1974) explicitly institutionalized Marxist-Leninist party leadership; it does not independently establish how power operated.',
+        citations: citations(['leninStateRevolution', 'luxemburgReformRevolution', 'arendtTotalitarianism'], ['sepSocialism', 'sepLuxemburg', 'oxfordHistoryCommunism', 'vdem', 'ghdiGdrConstitution1974']),
       },
       identity: {
         score: 48,
@@ -4024,10 +4024,10 @@ export const ENCYCLOPEDIA_ENTRIES = {
         citations: citations(['marxEngelsManifesto', 'leninStateRevolution', 'morgenthauRealism'], ['foreignPolicy', 'oxfordHistoryCommunism', 'sepMarx']),
       },
       religion: {
-        score: -55,
+        score: 55,
         label: 'Strongly secular public law',
-        explanation: 'Marxist-Leninist legitimacy is generally grounded in materialist theory, class analysis, party leadership, and state law rather than clerical authority. Historical regimes ranged from regulated toleration to surveillance, closure, or repression of religious institutions; secular government should not be confused with freedom of religion.',
-        citations: citations(['marxEngelsManifesto', 'leninStateRevolution', 'spinozaPolitical'], ['sepMarx', 'sepReligionPolitics', 'ushmmCommunism']),
+        explanation: 'Marxist-Leninist legitimacy is generally grounded in materialist theory, class analysis, party leadership, and state law rather than clerical authority. Historical regimes ranged from regulated toleration to surveillance, closure, or repression of religious institutions; secular government should not be confused with freedom of religion. Hugi’s GDR overview contrasts constitutional religious freedom with policies limiting church influence. The positive coordinate denotes secular public authority, not tolerance, popular unbelief, or approval of coercion.',
+        citations: citations(['marxEngelsManifesto', 'leninStateRevolution', 'spinozaPolitical'], ['sepMarx', 'sepReligionPolitics', 'ushmmCommunism', 'hugiGdrChurchPolicy']),
       },
     },
     sections: [
@@ -4044,6 +4044,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The main card uses “Communist / Marxist-Leninist” for a didactic profile in which collective economic direction is joined to disciplined party power. That combination describes a historically important family of revolutionary party-states, but it must not erase democratic communist, council communist, anarcho-communist, Eurocommunist, anti-colonial, Maoist, national-communist, and reformist differences. The same word can refer to a theory, a party, a regime, a social movement, or a geopolitical bloc.',
             citations: citations(['leninStateRevolution', 'luxemburgReformRevolution', 'marxEngelsManifesto'], ['sepSocialism', 'sepLuxemburg', 'oxfordHistoryCommunism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The East German case below separates three kinds of evidence: constitutional self-description, historical accounts of institutions, and this website’s illustrative classification. Neither an official promise nor an isolated example supplies a numerical measurement of an entire ideology.',
+            citations: citations([], ['ghdiGdrConstitution1974', 'hugiGdrChurchPolicy', 'bundesarchivJugendweihe']),
           },
         ],
       },
@@ -4070,6 +4075,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Finally, “communist state” is a contested description. A government may call itself communist while claiming to be in a socialist transition, combining party rule with markets, retaining private firms, or prioritizing national development. The label records a political lineage and ruling ideology; it does not settle whether a society has achieved communism, whether its economy is centrally planned, or whether its institutions are democratic.',
             citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepMarx', 'oxfordHistoryCommunism', 'aeaChinaSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In GHDI’s German excerpt of the 1974 GDR constitution, Article 1 assigns leadership to the working class and its Marxist-Leninist party. Article 8 renounces conquest and military action against another people’s freedom. These are primary statements of institutional design and official commitments, not evidence that citizens controlled the party or that foreign policy fulfilled the stated principles.',
+            citations: citations([], ['ghdiGdrConstitution1974']),
           },
         ],
       },
@@ -4108,9 +4118,19 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['oxfordHistoryCommunism', 'panAfricanism', 'sepSocialism']),
           },
           {
+            period: '1954–1959: East German Jugendweihe and religious institutions',
+            text: 'The Bundesarchiv describes the state-sponsored coming-of-age ceremony as an instrument for reducing church influence. Its account connects the 1954 preparations and 1955 ceremonies to political policing, pressure through schools and workplaces, and intervention in church decision-making. It also reports declining Stasi attention to this particular conflict once the ceremony became established; this is not a claim that broader religious repression ended.',
+            citations: citations([], ['bundesarchivJugendweihe']),
+          },
+          {
             period: '1960s–1980s: reform, dissent, Eurocommunism, and the limits of party monopoly',
             text: 'Reform communists, dissidents, workers, intellectuals, and Eurocommunist parties challenged Soviet orthodoxy, censorship, invasion, and the subordination of social institutions to the ruling party. East German documents show how Marxism-Leninism was taught as a civic ideology while criticism of the party-state remained constrained. These disputes reveal that communist commitments and democratic freedoms were debated inside the tradition, not only from outside it.',
             citations: citations(['luxemburgReformRevolution', 'leninStateRevolution'], ['ghdiMarxLeninism', 'sepLuxemburg', 'oxfordHistoryCommunism']),
+          },
+          {
+            period: '1969–1978: institutional accommodation and renewed conflict in the GDR',
+            text: 'Historian Sonja Hugi describes the 1969 formation of a separate East German Protestant church federation under SED pressure. Dialogue included a March 1978 meeting with Honecker, but compulsory military instruction introduced that September provoked renewed disagreement and church peace education. Negotiation and conflict therefore belong in the same history.',
+            citations: citations([], ['hugiGdrChurchPolicy']),
           },
           {
             period: '1989–present: collapse, survival, and market-socialist hybrids',
@@ -4173,6 +4193,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Retains communist-party leadership or socialist constitutional language while using markets, private firms, foreign investment, and mixed ownership to pursue development and state capacity.',
                 relation: 'The economic axis may move toward the market without the political system becoming liberal or multiparty; China’s trajectory is a major example of why the axes must remain separate.',
                 citations: citations(['leninStateRevolution'], ['aeaChinaSocialism', 'oxfordHistoryCommunism', 'vdem']),
+              },
+              {
+                label: 'Church–state accommodation within a party-state',
+                distinction: 'Hugi’s GDR account includes institutional dialogue alongside efforts to restrict churches.',
+                relation: 'A policy relationship, not a separate communist doctrine or evidence that religious participants endorsed party rule. Accommodation must not be mistaken for either ideological agreement or equal political power.',
+                citations: citations([], ['hugiGdrChurchPolicy']),
               },
             ],
           },
@@ -4238,9 +4264,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'German Democratic Republic',
                 period: 'East Germany, 1949–1990',
-                match: 'A Soviet-aligned party-state in which Marxism-Leninism structured civic education, political institutions, economic organization, and official legitimacy.',
-                caveat: 'GDR institutions included formal representative bodies and social services, but SED dominance, surveillance, restrictions on movement, and limits on independent politics must remain visible.',
-                citations: citations(['leninStateRevolution'], ['ghdiMarxLeninism', 'oxfordHistoryCommunism', 'vdem']),
+                match: 'Party leadership in the 1974 constitution; historical church-policy studies document both coercive interventions and negotiated institutional relations.',
+                caveat: 'The selected sources cover different periods and questions. They do not establish one score for all GDR residents, prove religious consent, or replace separate research on economic outcomes, movement restrictions, and political participation.',
+                citations: citations([], ['ghdiGdrConstitution1974', 'hugiGdrChurchPolicy', 'bundesarchivJugendweihe']),
               },
               {
                 name: 'Vietnam and other postcolonial communist states',
@@ -4296,12 +4322,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, historical casualty estimates, famine explanations, repression records, and comparisons among communist regimes remain politically contested and methodologically uneven. The encyclopedia should cite specific archives, demographic studies, legal records, and historians for each claim, distinguish policy intention from consequence, and avoid both apologetic erasure and undifferentiated moral equivalence. Current country comparisons require dated evidence because institutions and economic policies change.',
             citations: citations(['arendtTotalitarianism', 'leninStateRevolution'], ['ushmmCommunism', 'oxfordHistoryCommunism', 'aeaChinaSocialism']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Jugendweihe example cautions against reading public participation as unconstrained personal conviction when schools, workplaces, and political police influence the available choices. This is an inference from the archive’s account, not a survey finding. Independent testimony and local records are still needed to understand participants’ motives, differences among communities, and the limits of police reporting.',
+            citations: citations([], ['bundesarchivJugendweihe']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['marxEngelsManifesto', 'leninStateRevolution', 'luxemburgReformRevolution', 'bernsteinEvolutionarySocialism', 'arendtTotalitarianism', 'andersonImaginedCommunities', 'morgenthauRealism', 'spinozaPolitical'],
-      researchSourceIds: ['sepMarx', 'sepSocialism', 'sepLuxemburg', 'ushmmCommunism', 'oxfordHistoryCommunism', 'ghdiMarxLeninism', 'aeaChinaSocialism', 'panAfricanism', 'sepColonialism', 'foreignPolicy', 'vdem', 'sepReligionPolitics'],
+      researchSourceIds: ['sepMarx', 'sepSocialism', 'sepLuxemburg', 'ushmmCommunism', 'oxfordHistoryCommunism', 'ghdiMarxLeninism', 'aeaChinaSocialism', 'panAfricanism', 'sepColonialism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'ghdiGdrConstitution1974', 'hugiGdrChurchPolicy', 'bundesarchivJugendweihe'],
       editorialNote: 'The main score is a didactic Marxist-Leninist party-state profile. It should not be used as a verdict on every communist thinker, socialist party, revolutionary movement, or present government. Marxian theory, Leninist organization, Stalinist rule, Maoism, democratic communism, anarcho-communism, and market-socialist systems remain separately identifiable traditions.',
     },
     researchGaps: [
@@ -4311,6 +4342,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative evidence on workers’ control, unions, planning, collectivization, markets, welfare, education, health, famine, migration, coercion, prisons, censorship, religion, ethnicity, gender, and minority rights.',
       'Add archival and demographic research for disputed claims about deaths, repression, economic performance, and responsibility, distinguishing policy, implementation, unintended consequences, wartime conditions, and later political memory.',
       'Add a dedicated comparison of communist-party constitutional language with observed party competition, executive constraints, judicial independence, civil liberties, and mechanisms for leadership succession.',
+      'Extend the bounded GDR case with the full 1949, 1968, and 1974 constitutional texts, verified print editions, scholarship on enforcement, church and minority perspectives, and independently reviewed archival files. The GHDI excerpt does not include the religion article; Hugi’s summary is not a substitute for that primary-text comparison.',
+      'Compare Jugendweihe participation through local and participant-led evidence without inferring belief from attendance. Audit the separate FreeMode person/country source mappings; this encyclopedia-only case does not validate those comparisons.',
     ],
   },
   'anarcho-capitalist': {
