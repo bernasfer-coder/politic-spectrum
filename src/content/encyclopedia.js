@@ -5958,4 +5958,384 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Test claims about monarchies and democratic stability with dated comparative data on civil liberties, executive constraints, party competition, peaceful alternation, corruption, welfare, inequality, public opinion, and the actual exercise of royal power.',
     ],
   },
+  theocratic: {
+    id: 'theocratic',
+    title: 'Theocratic',
+    canonicalLabel: 'Theocracy / clerical rule',
+    aliases: [
+      'theocracy',
+      'clerical rule',
+      'divine government',
+      'religious government',
+      'sacerdotal state',
+      'constitutional theocracy',
+      'religious-law state',
+    ],
+    entryType: 'institutional and ideological reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Theocracy is used here for political orders in which divine authority, sacred law, religious office, or an authoritative religious interpretation is constitutive of political legitimacy and government. It is not a synonym for personal faith, a state religion, religiously informed ethics, a religious political party, or every historical society with religious law. The institutional role of religion, not the religion’s identity, determines the classification.',
+    timeScope: 'The term has ancient textual roots, while comparable institutional forms appear in ancient, medieval, early-modern, colonial, revolutionary, and contemporary settings. Modern constitutional theocracy is especially useful for hybrid systems that combine elections and courts with religious constitutional supremacy or clerical oversight.',
+    geographicScope: 'Comparative profile spanning Jewish, Christian, Islamic, and other religious political traditions in the Middle East, Europe, Africa, Asia, the Americas, and the Pacific. The cases are not interchangeable: Jewish theocracy in Josephus’s political vocabulary, medieval Christian kingship, Calvinist Geneva, Islamic jurisprudence, Iran, and Vatican City involve different authorities, law, institutions, and historical contexts.',
+    summary: 'A political order in which religious authority, sacred law, divine command, or a recognized religious office has a constitutive role in government and political legitimacy. Some theocracies place clerics directly in office; others use religious councils, constitutional review, sacred legal supremacy, a religious monarch, or a religiously defined electorate. The category can coexist with elections, courts, bureaucracy, markets, welfare, and national identity, so the key questions are who interprets religious authority, whether that interpretation can be contested, and whether equal civic rights extend to dissenters and non-believers.',
+    summaryCitations: citations(
+      ['josephusAgainstApion', 'aquinasMoralPolitical', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'spinozaPolitical', 'lockeLetterToleration'],
+      ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'iconStateReligionTheocracy', 'oxfordIranTheocraticCriminalLaw', 'cambridgeMaimonidesTheocracy'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -5,
+        label: 'Economically open-ended',
+        explanation: 'Theocracy does not specify one modern economic system. Religious law and institutions may regulate property, contracts, markets, taxation, charity, land, labor, or welfare while leaving substantial room for private ownership, state planning, guilds, endowments, or mixed economies. The near-midpoint score is intentional: religious authority is a source of legitimacy, not an automatic answer to the ownership question.',
+        citations: citations(['mawardiOrdinances', 'aquinasMoralPolitical', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'openTextbook', 'oxfordIranTheocraticCriminalLaw']),
+      },
+      social: {
+        score: -78,
+        label: 'Strongly norm-enforcing and traditionalist',
+        explanation: 'Theocratic systems commonly make public morality, family law, education, gender roles, sexuality, dress, ritual, or religious membership matters of political concern. The content and severity vary across traditions and periods, but a high negative social score reflects the authority given to an inherited or revealed moral order. It does not mean every religious believer supports coercive social law.',
+        citations: citations(['aquinasMoralPolitical', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'lockeLetterToleration'], ['sepReligionPolitics', 'oxfordIranTheocraticCriminalLaw', 'ohchrMinorityRights']),
+      },
+      authority: {
+        score: 92,
+        label: 'Very strongly authority-centered',
+        explanation: 'The defining feature is that political authority is constrained or legitimized by religious office, divine command, sacred text, or an authorized interpretation that is not treated as an ordinary policy preference. Clerical veto, religious courts, guardianship, priestly office, or sacred constitutional clauses may coexist with elected bodies, but the system is highly authority-centered when ordinary citizens cannot revise the religious foundation through normal democratic procedures.',
+        citations: citations(['josephusAgainstApion', 'aquinasMoralPolitical', 'khomeiniIslamicRepublic', 'spinozaPolitical'], ['torontoConstitutionalTheocracy', 'iconStateReligionTheocracy', 'oxfordIranTheocraticCriminalLaw', 'vdem']),
+      },
+      identity: {
+        score: -45,
+        label: 'Confessional community with national variation',
+        explanation: 'The political community may be imagined as a community of believers, a people under divine law, a religious nation, or a state that protects one faith. This gives identity a moderate nationalist and confessional tendency on the project’s sign convention, but theocracies can be transnational, imperial, universalist, or explicitly opposed to nationalism. Religious membership and national citizenship must be scored separately.',
+        citations: citations(['josephusAgainstApion', 'mawardiOrdinances', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'sepNationalism', 'oxfordStateReligionFreedom', 'cambridgeMaimonidesTheocracy']),
+      },
+      foreign: {
+        score: 5,
+        label: 'Foreign policy varies by doctrine and regime',
+        explanation: 'A theocracy may pursue diplomacy, defensive war, missionary expansion, religious solidarity, territorial revision, isolation, or international law. Sacred obligations can universalize political responsibility beyond the nation, while religious boundaries can also intensify conflict with outsiders. The near-midpoint score avoids treating theology as a reliable predictor of intervention or restraint.',
+        citations: citations(['mawardiOrdinances', 'khomeiniIslamicRepublic', 'hobbesLeviathan'], ['foreignPolicy', 'sepReligionPolitics', 'oxfordIranTheocraticCriminalLaw', 'openTextbook']),
+      },
+      religion: {
+        score: -95,
+        label: 'Very strongly religiously grounded public law',
+        explanation: 'Religious authority, sacred law, revelation, clerical interpretation, or a divinely sanctioned office has a constitutive role in the state. This is the defining axis for the profile. A state may have an official religion without being a theocracy, and a religious movement may seek theocracy without controlling government; the classification turns on the institutional force of religious authority.',
+        citations: citations(['josephusAgainstApion', 'aquinasMoralPolitical', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'spinozaPolitical'], ['sepReligionPolitics', 'iconStateReligionTheocracy', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'A theocracy is a political order in which religious authority is not merely a private source of inspiration or a cultural tradition but part of the constitution of government. Sacred law, divine command, clerical office, a religious sovereign, or an authorized religious interpretation can determine who may rule, what laws are valid, how courts decide, and which forms of dissent are legitimate.',
+            citations: citations(['josephusAgainstApion', 'aquinasMoralPolitical', 'mawardiOrdinances'], ['sepReligionPolitics', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The category must be narrower than “religious society.” A country may have a state religion, religious ceremonies, faith-based parties, religious citizens, or laws influenced by religious ethics without giving religious authorities final constitutional or governmental power. Conversely, a theocracy may contain elections, professional bureaucracies, courts, legislatures, or a written constitution. The decisive questions are institutional: who interprets sacred authority, how that interpretation binds public power, and whether citizens can challenge it through equal and ordinary political procedures.',
+            citations: citations(['spinozaPolitical', 'lockeLetterToleration', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'oxfordStateReligionFreedom', 'torontoConstitutionalTheocracy', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Theocracy is not a judgment on the truth or moral value of a religion. It is a descriptive classification of the relationship between religious authority and coercive public institutions. Different traditions contain arguments for, against, and around theocracy, and believers may support secular government, pluralist democracy, religious law, clerical guardianship, religious monarchy, or community autonomy. The entry therefore keeps the tradition, the institutional form, and the treatment of dissent analytically distinct.',
+            citations: citations(['aquinasMoralPolitical', 'spinozaPolitical', 'lockeLetterToleration', 'mawardiOrdinances'], ['sepReligionPolitics', 'oxfordStateReligionFreedom', 'openTextbook']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first component is a theory of ultimate authority. The state may be said to derive legitimacy from God, revelation, sacred law, a religious covenant, a prophetic foundation, or the duty to realize a divinely ordered common good. The theory can be mediated by priests, jurists, councils, monarchs, elders, courts, or a party claiming religious guardianship. No single clerical structure is required, but ordinary political authority is not fully self-authorizing.',
+            citations: citations(['josephusAgainstApion', 'aquinasMoralPolitical', 'mawardiOrdinances', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'cambridgeMaimonidesTheocracy', 'oxfordIranTheocraticCriminalLaw']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second component is legal priority. Sacred texts, jurisprudence, canon law, halakha, sharia, church discipline, or a recognized moral law may serve as a superior standard against which legislation and executive action are judged. The practical question is who selects the interpretation and whether courts, clerics, monarchs, elected assemblies, or citizens can revise it. The existence of religiously inspired law does not by itself establish theocracy; the religious source must have constitutive institutional force.',
+            citations: citations(['mawardiOrdinances', 'aquinasMoralPolitical', 'spinozaPolitical'], ['iconStateReligionTheocracy', 'oxfordStateReligionFreedom', 'torontoConstitutionalTheocracy', 'oxfordIranTheocraticCriminalLaw']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third component is the organization of office and jurisdiction. Clergy may hold formal governmental offices, control religious courts, screen candidates, veto legislation, appoint judges, supervise education, or claim authority over the head of state. In other systems, the monarch or elected government remains formally in office but must act within religiously defined constitutional limits. A mixed constitution can therefore be theocratic without being a simple priestly dictatorship.',
+            citations: citations(['khomeiniIslamicRepublic', 'mawardiOrdinances', 'aquinasMoralPolitical'], ['torontoConstitutionalTheocracy', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'constituteIran1989']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth component is the boundary of membership. Some theocracies distinguish believers, protected religious minorities, converts, apostates, dissidents, women, enslaved people, or outsiders through different legal statuses; others claim a universal religious community and offer more complex forms of pluralism. Historical categories should not be projected onto all adherents or all periods, but unequal civil and political status is a central indicator when assessing a theocratic system.',
+            citations: citations(['josephusAgainstApion', 'mawardiOrdinances', 'lockeLetterToleration'], ['sepReligionPolitics', 'ohchrMinorityRights', 'oxfordStateReligionFreedom', 'cambridgeMaimonidesTheocracy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Theocracy does not fix economic policy. Religious institutions may defend property, charity, communal ownership, guild regulation, taxation, welfare, markets, or state development. Nor does it fix foreign policy: the same religious language may justify peace, defensive war, missionary expansion, imperial authority, or solidarity with a transnational community. These dimensions must be evaluated separately from religious legal authority.',
+            citations: citations(['mawardiOrdinances', 'aquinasMoralPolitical', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'openTextbook', 'foreignPolicy', 'oxfordIranTheocraticCriminalLaw']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Ancient vocabulary and divine law',
+            text: 'The term theocracy is commonly associated with Flavius Josephus’s description of a political order in which authority is attributed to God rather than to one of the classical forms of human government. His text is a situated defense of Jewish law written for a Greek and Roman audience, not a neutral comparative definition or evidence that every ancient religious polity had the same institutions.',
+            citations: citations(['josephusAgainstApion'], ['perseusJosephusTheocracy', 'cambridgeMaimonidesTheocracy', 'sepReligionPolitics']),
+          },
+          {
+            period: 'Medieval religious authority and kingship',
+            text: 'Medieval political worlds combined religious law, rulers, jurists, clergy, customary law, courts, and communal institutions in different ways. Latin Christian theories of kingship, Islamic jurisprudence, Jewish political reflection, and other traditions debated whether rulers served a divinely ordered common good, were accountable to law, or required religious authorization. These histories cannot be reduced to a single priestly state.',
+            citations: citations(['aquinasMoralPolitical', 'mawardiOrdinances', 'josephusAgainstApion'], ['sepMedieval', 'sepReligionPolitics', 'cambridgeMaimonidesTheocracy', 'waqfeyaMawardiOrdinances']),
+          },
+          {
+            period: 'Sixteenth–seventeenth centuries: confessional government and discipline',
+            text: 'Reformation and post-Reformation conflicts generated experiments in church discipline, confessional state-building, religious toleration, and the separation or subordination of ecclesiastical and civil authority. Geneva and Puritan colonial governments are important historical cases, but they differed in scale, franchise, doctrine, and legal structure and should not be treated as models for every theocracy.',
+            citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
+          },
+          {
+            period: 'Seventeenth–eighteenth centuries: toleration and secular authority',
+            text: 'Arguments for religious toleration, freedom of conscience, civil sovereignty, and public reason challenged the idea that one religious authority should coercively govern all members. Spinoza and Locke are important boundary markers: their critiques distinguish religious truth or worship from the state’s jurisdiction, even though their own theories and historical exclusions require critical reading.',
+            citations: citations(['spinozaPolitical', 'lockeLetterToleration', 'hobbesLeviathan'], ['sepReligionPolitics', 'oxfordStateReligionFreedom', 'openTextbook']),
+          },
+          {
+            period: 'Nineteenth–twentieth centuries: empire, nationalism, and religious reform',
+            text: 'Colonial rule, modern nation-building, missionary institutions, legal codification, reform movements, and anti-imperial politics reshaped the relationship between religion and state. Religious law could be centralized, selectively codified, or used as a source of national identity. The resulting systems were often hybrids rather than simple survivals of premodern theocracy.',
+            citations: citations(['nabucoAbolitionism', 'mawardiOrdinances', 'spinozaPolitical'], ['sepColonialism', 'sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
+          },
+          {
+            period: '1979 and after: revolutionary and constitutional theocracy',
+            text: 'The Iranian Revolution made a modern constitutional-religious hybrid a central subject of comparative constitutional scholarship. Iran’s constitutional structure combines elected offices and popular institutions with Islamic criteria, religious offices, and bodies that review legislation or political eligibility. The model is historically and doctrinally specific; it should not be generalized to Islam, Islamic republics, or every state with a religious constitution.',
+            citations: citations(['khomeiniIslamicRepublic'], ['constituteIran1989', 'oxfordIranTheocraticCriminalLaw', 'torontoConstitutionalTheocracy', 'nsarchiveKhomeini1979']),
+          },
+          {
+            period: 'Late twentieth century–present: hybrid constitutions and religious freedom debates',
+            text: 'Contemporary scholarship increasingly examines hybrid arrangements in which constitutions, elections, courts, official religions, religious tribunals, and clerical or judicial guardianship coexist. The central debate is not simply secular versus religious, but how religious authority is institutionalized, whether it is contestable, and whether rights of conscience and equal citizenship survive when sacred norms receive constitutional priority.',
+            citations: citations(['spinozaPolitical', 'lockeLetterToleration', 'khomeiniIslamicRepublic'], ['torontoConstitutionalTheocracy', 'iconStateReligionTheocracy', 'oxfordStateReligionFreedom', 'ohchrMinorityRights']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and neighboring concepts',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Priestly or clerical theocracy',
+                distinction: 'Religious officials directly hold or control central political offices and claim authority to govern through sacred law or doctrine.',
+                relation: 'The clearest form of clerical rule, but not the only theocratic form. Authority may be exercised through councils, courts, guardians, or religiously authorized monarchs rather than a single priesthood.',
+                citations: citations(['josephusAgainstApion', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'iconStateReligionTheocracy', 'torontoConstitutionalTheocracy']),
+              },
+              {
+                label: 'Scriptural or sacred-law constitutionalism',
+                distinction: 'A constitution gives sacred texts, revealed law, or an authoritative jurisprudence a superior or binding role in legislation and adjudication.',
+                relation: 'It may contain elections and rights catalogues while remaining theocratic when ordinary institutions cannot override the religious constitutional foundation.',
+                citations: citations(['mawardiOrdinances', 'khomeiniIslamicRepublic', 'spinozaPolitical'], ['iconStateReligionTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'constituteIran1989']),
+              },
+              {
+                label: 'Constitutional theocracy',
+                distinction: 'A hybrid order combines modern constitutional forms, courts, elections, and rights language with a formally endorsed religion, sacred legal supremacy, or religious bodies with official jurisdiction or veto power.',
+                relation: 'This is not simply an absolute priesthood or a secular state with a ceremonial religion. Its central question is how constitutional review and religious authority interact.',
+                citations: citations(['khomeiniIslamicRepublic', 'spinozaPolitical'], ['torontoConstitutionalTheocracy', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'constituteIran1989']),
+              },
+              {
+                label: 'Religious monarchy',
+                distinction: 'A monarch’s dynastic or political legitimacy is tied to divine sanction, sacred lineage, religious law, or protection of an established faith.',
+                relation: 'It overlaps with theocracy when religious authority is constitutive of government, but a religiously symbolic monarchy may remain constitutionally secular, and a theocracy may be republican or clerical.',
+                citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan'], ['sepReligionPolitics', 'bpbMonarchy', 'oxfordStateReligionFreedom']),
+              },
+              {
+                label: 'Confessional state or state religion',
+                distinction: 'The state recognizes, funds, or ceremonially privileges a religion without necessarily allowing religious authorities to control legislation, courts, executive power, or political membership.',
+                relation: 'This is a neighboring category, not automatically a theocracy. The classification depends on the actual legal and institutional force of the religious establishment.',
+                citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['oxfordStateReligionFreedom', 'iconStateReligionTheocracy', 'sepReligionPolitics']),
+              },
+              {
+                label: 'Covenant or communal religious polity',
+                distinction: 'A community organizes civil membership and discipline around a religious covenant, church order, or shared sacred commitment, sometimes in a city, colony, or intentional settlement.',
+                relation: 'It can be small-scale and participatory while still excluding dissenters or subordinating civil law to religious discipline. Scale and participation do not by themselves remove the theocratic feature.',
+                citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
+              },
+              {
+                label: 'Religious party democracy',
+                distinction: 'A political party draws on religious doctrine and seeks public office through elections but accepts that legislation and authority are contestable within a plural constitutional order.',
+                relation: 'A religious party is not automatically theocratic. It becomes theocratic when religious authority receives non-negotiable constitutional supremacy or equal citizenship is denied to dissenters.',
+                citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['oxfordStateReligionFreedom', 'oxfordChristianDemocracy', 'vdem']),
+              },
+              {
+                label: 'Civil religion or religious nationalism',
+                distinction: 'The state sacralizes national symbols, founding myths, rituals, or inherited faith without necessarily submitting government to clerical or sacred-law authority.',
+                relation: 'It may overlap with theocracy and can become coercive, but it is analytically distinct from a system where religious office or law directly structures the constitution and government.',
+                citations: citations(['josephusAgainstApion', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'sepNationalism', 'oxfordStateReligionFreedom']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Flavius Josephus',
+                role: 'Ancient Jewish historian whose Against Apion uses the term theocracy while defending Jewish law and political order to a Greek and Roman audience.',
+                caveat: 'Josephus’s rhetorical and historical context matters. His use of the term is a primary-language anchor, not a modern comparative regime classification or a complete account of ancient Jewish institutions.',
+                citations: citations(['josephusAgainstApion'], ['perseusJosephusTheocracy', 'cambridgeMaimonidesTheocracy']),
+              },
+              {
+                name: 'Thomas Aquinas',
+                role: 'Medieval Christian political thinker who analyzed divine and natural law, kingship, tyranny, the common good, and the relation between temporal and spiritual authority.',
+                caveat: 'Aquinas did not provide a simple modern theory of clerical government. His work is useful for the genealogy of religiously grounded legitimacy and limits on rulers, not as evidence that medieval Christian politics was uniformly theocratic.',
+                citations: citations(['aquinasMoralPolitical'], ['sepMedieval', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Al-Mawardi',
+                role: 'Classical Islamic jurist whose Ordinance of Government discusses the imam, public offices, judges, administration, and the organization of political authority under Islamic law.',
+                caveat: 'Al-Mawardi’s jurisprudential context, institutional assumptions, and relationship to historical caliphal power differ from modern clerical-rule categories. A classical public-law text is not a direct description of every current Muslim state.',
+                citations: citations(['mawardiOrdinances'], ['waqfeyaMawardiOrdinances', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Baruch Spinoza',
+                role: 'Early-modern philosopher whose political writings analyzed religious authority, freedom of thought, civil sovereignty, and the risks of clerical control over the state.',
+                caveat: 'Spinoza is included primarily as a critic and boundary marker. His political theory is historically situated and does not settle contemporary constitutional questions.',
+                citations: citations(['spinozaPolitical'], ['sepReligionPolitics', 'iconStateReligionTheocracy']),
+              },
+              {
+                name: 'John Locke',
+                role: 'Liberal political thinker whose writing on toleration distinguished civil jurisdiction from religious worship and argued against coercive state control of conscience.',
+                caveat: 'Locke’s arguments contain historical exclusions and limits, and he is more useful here as a critic of religious coercion than as an uncomplicated secular democrat.',
+                citations: citations(['lockeLetterToleration'], ['sepReligionPolitics', 'oxfordStateReligionFreedom']),
+              },
+              {
+                name: 'Ruhollah Khomeini',
+                role: 'Iranian revolutionary leader whose public doctrine helped articulate a modern Islamic Republic in which religious jurisprudence and clerical authority were built into constitutional government.',
+                caveat: 'Khomeini’s project is a specific Shi’a revolutionary and constitutional tradition. It cannot be generalized to Islam, Shi’ism, Islamic republics, or all religious politics.',
+                citations: citations(['khomeiniIslamicRepublic'], ['nsarchiveKhomeini1979', 'oxfordIranTheocraticCriminalLaw', 'constituteIran1989']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Josephus’s Jewish theocracy as a textual category',
+                period: 'Ancient Jewish political thought; Against Apion, late first century CE',
+                match: 'A primary text explicitly presents Jewish government as grounded in divine authority and law rather than one of the classical human regime forms.',
+                caveat: 'The passage is a rhetorical argument in a particular historical setting. It should not be used to erase the diversity of ancient Jewish institutions or to label every religious legal tradition the same way.',
+                citations: citations(['josephusAgainstApion'], ['perseusJosephusTheocracy', 'cambridgeMaimonidesTheocracy']),
+              },
+              {
+                name: 'Geneva under Calvinist reform',
+                period: 'Geneva, especially the sixteenth century',
+                match: 'Church discipline and civic government were closely connected in a historically important experiment in confessional political order.',
+                caveat: 'Geneva was neither a simple clerical dictatorship nor a model for all Protestant politics. Its institutions, citizenship rules, discipline, and conflicts must be studied in their local and Reformation context.',
+                citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
+              },
+              {
+                name: 'Puritan New England and covenant government',
+                period: 'English North American colonies, seventeenth century',
+                match: 'Some colonial communities linked civil membership, public morality, church affiliation, and covenant theology in ways that placed religious conformity close to political legitimacy.',
+                caveat: 'These colonies contained changing franchises, dissent, plural populations, Indigenous dispossession, and institutional variation. They should not be treated as a uniform theocracy or as a general description of Christianity.',
+                citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'openTextbook', 'sepColonialism']),
+              },
+              {
+                name: 'Papal States and Vatican City',
+                period: 'Papal States, eighth century–1870; Vatican City, 1929–present',
+                match: 'The papacy has exercised territorial sovereignty in distinct historical forms; Vatican City’s official description identifies an absolute monarchy in which the sovereign pontiff holds the highest governmental authority.',
+                caveat: 'Vatican City is a very small and institutionally exceptional religious polity whose purpose and scale differ from a mass national state. The Papal States and Vatican City should not be treated as identical across time or as a universal Christian model.',
+                citations: citations(['aquinasMoralPolitical'], ['vaticanStateBodies', 'sepReligionPolitics', 'openTextbook']),
+              },
+              {
+                name: 'Iran’s constitutional-religious system',
+                period: 'Iran, after the 1979 revolution; constitutional text revised 1989',
+                match: 'The constitutional text combines an Islamic foundation and religious criteria with elected offices, popular institutions, a Supreme Leader, and a Guardian Council with religious and constitutional review functions. Comparative scholars use it as a major case of constitutional theocracy.',
+                caveat: 'The constitutional text is evidence of institutional design, not a complete account of everyday enforcement, political practice, or public opinion. Iran’s Shi’a jurisprudential framework must not be generalized to all Islam or all religious constitutional systems.',
+                citations: citations(['khomeiniIslamicRepublic'], ['constituteIran1989', 'oxfordIranTheocraticCriminalLaw', 'torontoConstitutionalTheocracy', 'nsarchiveKhomeini1979']),
+              },
+              {
+                name: 'Religious constitutions and state-religion hybrids',
+                period: 'Contemporary; country- and institution-specific',
+                match: 'Some constitutional systems combine official religion, religious courts, sacred-law clauses, elected bodies, civil courts, rights catalogues, and varying degrees of clerical or judicial oversight.',
+                caveat: 'The category is a research field rather than a list of exact country matches. A state religion, religious court, or constitutional reference to God does not by itself prove theocracy; the decisive evidence is the hierarchy of law, institutional authority, and equal citizenship.',
+                citations: citations(['spinozaPolitical', 'lockeLetterToleration', 'khomeiniIslamicRepublic'], ['torontoConstitutionalTheocracy', 'iconStateReligionTheocracy', 'oxfordStateReligionFreedom', 'ohchrMinorityRights']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'religious-traditionalist', relation: 'may support religiously grounded public morality and inherited authority, but religious traditionalism does not necessarily seek religious control of the state' },
+              { id: 'christian-democratic', relation: 'can draw on Christian social ethics while defending constitutional democracy, pluralist rights, and non-clerical party competition; it is not automatically theocratic' },
+              { id: 'monarchist', relation: 'can overlap in sacred or religious monarchy, but a monarchy may be secular and a theocracy may be republican or clerical' },
+              { id: 'civic-nationalist', relation: 'may share public institutions and national membership, but civic nationalism grounds legitimacy in citizenship and constitutional principles rather than sacred authority' },
+              { id: 'ethnic-nationalist', relation: 'can overlap when religion defines inherited peoplehood, but ethnic nationalism can be secular and theocracy can claim a universal religious community' },
+              { id: 'conservative', relation: 'may share tradition, authority, and continuity, but conservatism does not require religious law, clerical office, or sacred constitutional supremacy' },
+              { id: 'authoritarian-collectivist', relation: 'can share concentrated authority and restricted dissent in some cases, but theocratic legitimacy is religious rather than party-state or materialist by definition' },
+              { id: 'liberal-constitutionalist', relation: 'can share constitutions, courts, and rights language in hybrid systems, but liberal constitutionalism requires contestable public authority and freedom of conscience that theocracy may limit' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first criticism is interpretive authority. Sacred texts and traditions rarely speak through one uncontested institutional interpreter, yet theocratic systems may give a clerical council, court, monarch, party, or guardian power to define orthodoxy. This can turn theological disagreement into political disqualification and make rulers difficult to remove because opposition is framed as impiety, apostasy, or rebellion against divine order.',
+            citations: citations(['spinozaPolitical', 'lockeLetterToleration', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordIranTheocraticCriminalLaw', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second criticism is equal citizenship. Religious law or office can create different statuses for believers, minority faiths, converts, dissenters, women, sexual minorities, or non-believers. A theocratic constitution may protect some minorities while still limiting political office, family law, testimony, expression, or conversion. The proper test is not whether a system uses the language of tolerance but whether equal civil and political rights, remedies, and participation are available in law and practice.',
+            citations: citations(['mawardiOrdinances', 'lockeLetterToleration', 'spinozaPolitical'], ['ohchrMinorityRights', 'sepReligionPolitics', 'oxfordStateReligionFreedom', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third criticism is the coercion of conscience. Religious belief, worship, conversion, non-belief, and interpretation may be deeply important, but state enforcement can produce hypocrisy, surveillance, punishment, censorship, and violence. Freedom of conscience, private worship, public religious association, scholarly inquiry, and the right to dissent are safeguards against turning a spiritual commitment into an all-encompassing police power.',
+            citations: citations(['lockeLetterToleration', 'spinozaPolitical', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'ohchrMinorityRights', 'iconStateReligionTheocracy', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth criticism is constitutional ambiguity. Hybrid systems can hold elections and rights catalogues while allowing religious bodies to veto candidates, laws, courts, or constitutional interpretation. The result may be a dual legitimacy in which elected institutions are formally present but cannot alter the religious foundation. Clear jurisdiction, transparent review, independent courts, equal suffrage, public reasons, and peaceful alternation are needed if constitutionalism is to constrain religious as well as secular power.',
+            citations: citations(['khomeiniIslamicRepublic', 'spinozaPolitical', 'lockeLetterToleration'], ['torontoConstitutionalTheocracy', 'oxfordIranTheocraticCriminalLaw', 'constituteIran1989', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fifth criticism concerns gender and family regulation. Theocratic systems may treat family, reproduction, sexuality, dress, education, and gender hierarchy as public religious matters, which can limit autonomy and produce unequal legal status. The assessment must remain tradition- and law-specific: religious communities have also generated arguments for social equality, welfare, anti-colonial resistance, and women’s education, and those arguments should not be erased by an overly simple secular-versus-religious binary.',
+            citations: citations(['aquinasMoralPolitical', 'mawardiOrdinances', 'lockeLetterToleration'], ['sepReligionPolitics', 'oxfordStateReligionFreedom', 'ohchrMinorityRights', 'openTextbook']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, theocracy can be romanticized or demonized from outside. Calling every religious society theocratic erases internal debates and reproduces cultural stereotypes; treating sacred legitimacy as beyond political accountability excuses coercion. The safest classification records the religious doctrine, the authorized interpreters, the legal hierarchy, the actual institutions, the rights of dissenters and minorities, and the evidence for everyday enforcement. No score should be inferred from a religion’s name alone.',
+            citations: citations(['josephusAgainstApion', 'mawardiOrdinances', 'spinozaPolitical', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'ohchrMinorityRights', 'cambridgeMaimonidesTheocracy']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['josephusAgainstApion', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'aquinasMoralPolitical', 'spinozaPolitical', 'lockeLetterToleration', 'hobbesLeviathan'],
+      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy'],
+      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, and other traditions historically specific. Scores are didactic composites, not judgments about any religion or every society associated with it.',
+    },
+    researchGaps: [
+      'Add French-language scholarship on Josephus, Gallicanism, Catholic political thought, Calvinist Geneva, the French Wars of Religion, revolutionary theocracy, laïcité, colonial religion, and modern constitutional debates about religious law.',
+      'Expand German-language research on medieval church–state relations, Luther and territorial churches, the Holy Roman Empire, political theology, constitutional patriotism, religious law, and the history of secularization without treating German history as a single path.',
+      'Add Portuguese- and Spanish-language scholarship on Iberian Catholic monarchy, the Papal and colonial worlds, Brazilian Empire and patronage, liberation theology, Latin American constitutions, Indigenous religious authority, and religious movements in decolonization.',
+      'Add Arabic, Persian, Hebrew, Turkish, Urdu, South Asian, African, East Asian, and Southeast Asian scholarship on caliphate and imamate theory, jurists and rulers, Buddhist and Hindu political authority, Jewish law, indigenous sacred governance, and modern religious constitutionalism.',
+      'Add primary constitutional and legal evidence for current or recent cases, distinguishing official religion, religious courts, sacred-law clauses, clerical veto, judicial guardianship, executive authority, and actual enforcement against formal constitutional language.',
+      'Add specialist research on women, family law, conversion, apostasy, non-belief, sectarian minorities, Indigenous peoples, slavery, colonial administration, religious education, censorship, political parties, and the difference between communal autonomy and state coercion.',
+      'Compare theocracy with civil religion, religious nationalism, confessional democracy, Christian democracy, Islamic democracy, religious socialism, religious monarchy, and secular authoritarianism through explicit institutional criteria rather than broad cultural labels.',
+    ],
+  },
 };
