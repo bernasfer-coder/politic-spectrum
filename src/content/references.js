@@ -264,6 +264,14 @@ export const AUTHOR_REFERENCES = {
     context: 'A Nobel Prize lecture used to interpret commons governance, polycentric institutions, and alternatives to a state-versus-market binary.',
     url: 'https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/',
   },
+  senDevelopmentFreedom: {
+    author: 'Amartya Sen',
+    work: 'Development as Freedom',
+    year: '1999',
+    kind: 'primary',
+    context: 'A capability-based account used to connect substantive freedom, public reasoning, health, education, and environmental justice; it is not treated as a complete green ideology.',
+    url: 'https://global.oup.com/academic/product/development-as-freedom-9780192893309?cc=gb&lang=en',
+  },
   lockeLetterToleration: {
     author: 'John Locke',
     work: 'A Letter Concerning Toleration',

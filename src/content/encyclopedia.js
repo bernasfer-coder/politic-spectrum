@@ -2569,4 +2569,297 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add research on gender, race, colonialism, disability, migration, informal hierarchy, conflict resolution, and the risk that anti-state structures reproduce coercion through armed or social power.',
     ],
   },
+  'green-commons': {
+    id: 'green-commons',
+    title: 'Green commons / ecological pluralist',
+    canonicalLabel: 'Green commons / ecological pluralist',
+    aliases: ['green politics', 'ecological pluralism', 'social ecology', 'commons ecology', 'green municipalism'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile combines ecological limits and environmental justice with commons governance, local participation, and plural institutions. It is not a synonym for every green party, conservationism, deep ecology, eco-socialism, sustainable development, or any one policy such as carbon taxation. “Commons” refers to shared resources and the institutions that govern them, not to an absence of rules or automatically communal ownership.',
+    timeScope: 'Roots in conservation, ecological ethics, cooperative and commons traditions; major development through twentieth-century environmental movements, social ecology, and commons research; contemporary climate, biodiversity, and environmental-justice politics.',
+    geographicScope: 'Transnational and place-sensitive tradition with important European, North American, Indigenous, South Asian, African, and Latin American debates; ecological risks and governance arrangements vary by ecosystem, community, and scale.',
+    summary: 'An ecological political profile that treats climate stability, biodiversity, shared resources, human capabilities, and intergenerational justice as public concerns, while favoring cooperative, municipal, and polycentric institutions over a simple market-versus-central-state choice. Its economic position is mixed and context-dependent: markets may remain, but essential resources and ecological systems require collective rules when private incentives or national governments fail to protect them.',
+    summaryCitations: citations(['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'senDevelopmentFreedom', 'millOnLiberty'], ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis', 'socialEcologyMunicipalism']),
+    dimensionInterpretations: {
+      economic: {
+        score: 45,
+        label: 'Mixed economy with commons priorities',
+        explanation: 'Markets can coordinate some activities, but ecological systems, water, land, energy, care, and other essential resources may require public, cooperative, or commons institutions. The profile does not prescribe one ownership form: the relevant question is which arrangement protects ecological function, equitable access, accountability, and long-term resilience in the specific context.',
+        citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom', 'bookchinLibertarianMunicipalism'], ['sepEnvironmentalEthics', 'ipccAr6Synthesis', 'socialEcologyMunicipalism']),
+      },
+      social: {
+        score: 62,
+        label: 'Progressive and environmentally just',
+        explanation: 'Environmental burdens and benefits are treated as questions of justice, including unequal exposure, health, livelihood, gender, race, class, disability, and responsibilities to future generations. Green politics is not one fixed cultural programme, but this profile generally favors inclusion, participation, and protection of vulnerable communities.',
+        citations: citations(['senDevelopmentFreedom', 'millOnLiberty', 'bookchinLibertarianMunicipalism'], ['sepClimateJustice', 'sepEnvironmentalEthics', 'ipccAr6Synthesis']),
+      },
+      authority: {
+        score: -30,
+        label: 'Polycentric and participatory',
+        explanation: 'Communities, municipalities, regions, states, and international institutions may all have legitimate roles, provided affected people can participate, monitor decisions, and revise rules. Ecological urgency can justify capable public action, but the profile is suspicious of a single command center and of technocratic decisions insulated from public accountability.',
+        citations: citations(['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'millOnLiberty'], ['socialEcologyMunicipalism', 'sepEnvironmentalEthics', 'vdem']),
+      },
+      identity: {
+        score: 45,
+        label: 'Global ecological responsibility with local stewardship',
+        explanation: 'Climate, biodiversity, oceans, and atmospheric systems cross borders, giving international and intergenerational responsibility a strong role. At the same time, place-based knowledge, local livelihoods, and community stewardship matter; ecological universalism should not erase Indigenous sovereignty, local difference, or democratic self-government.',
+        citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom', 'kantPerpetualPeace'], ['ipccAr6Synthesis', 'sepClimateJustice', 'sepEnvironmentalEthics']),
+      },
+      foreign: {
+        score: 35,
+        label: 'Cooperative restraint',
+        explanation: 'International cooperation, climate finance, ecological agreements, disaster response, and nonviolent conflict prevention are preferred to militarized competition. Security questions remain real, and collective action or protective force may be debated in humanitarian or defensive situations; ecological politics is not automatically pacifist.',
+        citations: citations(['kantPerpetualPeace', 'morgenthauRealism', 'ostromGoverningCommons'], ['ipccAr6Synthesis', 'sepClimateJustice', 'foreignPolicy']),
+      },
+      religion: {
+        score: 15,
+        label: 'Secular-leaning pluralist',
+        explanation: 'Public ecological policy is generally justified through shared evidence, equal citizenship, and public reasoning rather than one religious authority. Religious, Indigenous, and spiritual ecological ethics may contribute to democratic discussion, but no single worldview should monopolize coercive public law.',
+        citations: citations(['millOnLiberty', 'lockeLetterToleration', 'ostromGoverningCommons'], ['sepEnvironmentalEthics', 'sepReligionPolitics']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Green commons politics starts from two linked observations: ecological systems set material conditions for human life, and those systems are governed through institutions that distribute risks, benefits, access, and responsibility. Climate change, biodiversity loss, pollution, water insecurity, and resource depletion are therefore not only technical problems. They raise questions about property, power, justice, participation, knowledge, and obligations to people who are distant in space or time.',
+            citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The commons element rejects a simple binary in which all resources must be either privately owned or centrally administered. Ostrom’s institutional research shows that communities can develop varied rules for common-pool resources, while Bookchin’s social ecology and municipalism offer a more explicitly political proposal for participatory, confederal, and ecologically conscious self-government. Neither body of work proves that one universal commons model will work everywhere.',
+            citations: citations(['ostromGoverningCommons', 'bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'sepEnvironmentalEthics']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'A green-commons approach asks who uses a resource, who bears the costs of its depletion, who has knowledge of local conditions, who can monitor behavior, and how rules can be changed when conditions change. It may support community forests, cooperative energy, public transit, watershed institutions, municipal ownership, regulated markets, or national and international standards. The choice is institutional and empirical, not determined by the word green alone.',
+            citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['sepEnvironmentalEthics', 'ipccAr6Synthesis']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Environmental justice adds distribution and recognition to ecological policy. A transition can reduce emissions while imposing new costs on workers, low-income households, rural communities, Indigenous peoples, migrants, or regions that contributed little to the problem. Green politics therefore has to address compensation, participation, historical responsibility, access to energy and mobility, and the social effects of adaptation and mitigation.',
+            citations: citations(['senDevelopmentFreedom', 'millOnLiberty'], ['sepClimateJustice', 'ipccAr6Synthesis']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile is pluralist about knowledge and governance. Scientific assessment is indispensable for climate and ecological risk, but local, Indigenous, occupational, and community knowledge can identify impacts and workable institutions that a centralized model misses. Participation is not a substitute for expertise, and expertise is not a substitute for democratic accountability.',
+            citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['ipccAr6Synthesis', 'sepEnvironmentalEthics', 'socialEcologyMunicipalism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Nineteenth and early twentieth centuries: conservation, commons, and social reform',
+            text: 'Industrialization, urban pollution, enclosure conflicts, public-health crises, conservation movements, and cooperative traditions created several foundations for later green politics. These traditions did not share one ideology: some emphasized preservation, some public health, some rural livelihoods, and some social transformation. Their common lesson was that ecological and material conditions could not be treated as purely private concerns.',
+            citations: citations(['adamSmithWealth', 'millOnLiberty', 'senDevelopmentFreedom'], ['sepEnvironmentalEthics']),
+          },
+          {
+            period: '1960s–1970s: environmental movements and limits to growth',
+            text: 'Modern environmental movements made pollution, nuclear risk, industrial agriculture, population, resource depletion, and ecological limits central political issues. The period also produced disagreements between technocratic management, local activism, conservation, anti-capitalist ecology, and movements for environmental justice. A green-commons profile retains the ecological urgency without assuming that every scarcity claim or centralized solution is correct.',
+            citations: citations(['millOnLiberty'], ['sepEnvironmentalEthics', 'openTextbook']),
+          },
+          {
+            period: '1968–2009: the tragedy debate and commons research',
+            text: 'Garrett Hardin’s tragedy-of-the-commons argument became a major warning about unregulated shared-resource use. Ostrom’s comparative institutional research challenged the assumption that privatization or central state control are the only remedies, documenting diverse community, public, and private arrangements with different outcomes. The resulting lesson is not that commons always succeed, but that institutional design and local conditions matter.',
+            citations: citations(['ostromGoverningCommons'], ['sepEnvironmentalEthics']),
+          },
+          {
+            period: '1960s–1990s: social ecology and libertarian municipalism',
+            text: 'Murray Bookchin connected ecological crisis to hierarchy, domination, urban design, and the organization of society. His libertarian municipalism proposed directly democratic municipalities linked through confederations, with ecological citizenship and the transformation of political institutions at the center. This is a distinct normative strategy, not a neutral description of all environmental movements or a synonym for Ostrom’s empirical institutional analysis.',
+            citations: citations(['bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'sepEnvironmentalEthics']),
+          },
+          {
+            period: 'Late twentieth century to the present: climate justice and polycentric action',
+            text: 'Climate politics linked local environmental harm to global atmospheric processes, historical emissions, development inequality, migration, health, and intergenerational justice. International agreements, national laws, cities, firms, communities, and social movements now interact in mitigation and adaptation. The IPCC identifies escalating risks and the need for rapid, integrated, and equitable action, but it does not prescribe one political ideology or ownership system.',
+            citations: citations(['senDevelopmentFreedom', 'ostromGoverningCommons', 'kantPerpetualPeace'], ['ipccAr6Synthesis', 'sepClimateJustice', 'sepEnvironmentalEthics']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Commons institutionalism',
+                distinction: 'Studies how communities and other institutions govern shared resources through monitoring, graduated rules, conflict resolution, and nested arrangements.',
+                relation: 'Closest to Ostrom’s empirical approach; it does not require anti-capitalism, anarchism, or one universal ownership form.',
+                citations: citations(['ostromGoverningCommons'], ['sepEnvironmentalEthics']),
+              },
+              {
+                label: 'Social ecology and communalism',
+                distinction: 'Connects ecological crisis to social hierarchy and proposes participatory municipalities, confederations, and ecological citizenship.',
+                relation: 'More explicitly transformative and anti-hierarchical than commons institutionalism, and more politically prescriptive than a scientific risk assessment.',
+                citations: citations(['bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'sepEnvironmentalEthics']),
+              },
+              {
+                label: 'Green liberalism',
+                distinction: 'Uses rights, markets, regulation, environmental taxation, public goods, and constitutional institutions to protect ecological conditions and individual opportunity.',
+                relation: 'Shares pluralism and public reasoning but may accept more private ownership and centralized regulation than the commons emphasis here.',
+                citations: citations(['millOnLiberty', 'senDevelopmentFreedom'], ['sepEnvironmentalEthics', 'sepClimateJustice']),
+              },
+              {
+                label: 'Eco-socialism',
+                distinction: 'Treats capitalist ownership, accumulation, and class power as central causes of ecological crisis and seeks stronger social or public control of production.',
+                relation: 'Overlaps on ecological justice and economic transformation but is more ownership-transforming than every green-commons position.',
+                citations: citations(['senDevelopmentFreedom'], ['sepEnvironmentalEthics', 'sepSocialism']),
+              },
+              {
+                label: 'Conservationism and preservationism',
+                distinction: 'Prioritizes protection of species, landscapes, wilderness, or ecological function, sometimes with less emphasis on economic equality or local democratic control.',
+                relation: 'Shares ecological concern but can conflict with livelihood, access, Indigenous sovereignty, or environmental-justice claims.',
+                citations: citations(['millOnLiberty'], ['sepEnvironmentalEthics', 'sepClimateJustice']),
+              },
+              {
+                label: 'Deep ecology and ecocentrism',
+                distinction: 'Gives nonhuman nature or ecological wholes intrinsic moral standing beyond human utility.',
+                relation: 'Can enrich green ethics, but the green-commons profile remains institutionally pluralist and does not require one metaphysical account of nature’s value.',
+                citations: citations(['millOnLiberty'], ['sepEnvironmentalEthics']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No country is an exact or permanent green-commons match. Ecological policy is distributed across communities, municipalities, markets, states, international institutions, and social movements. A country with strong climate policy can still have extractive or unequal institutions, while a local commons can be ecologically valuable without constituting a complete political system.',
+            citations: citations(['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'senDevelopmentFreedom'], ['ipccAr6Synthesis', 'sepEnvironmentalEthics', 'sepClimateJustice']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Elinor Ostrom',
+                role: 'institutional scholar of common-pool resources and polycentric governance',
+                caveat: 'Ostrom documented diverse institutional outcomes and did not prescribe a single anarchist, socialist, or green political programme.',
+                citations: citations(['ostromGoverningCommons'], ['sepEnvironmentalEthics']),
+              },
+              {
+                name: 'Murray Bookchin',
+                role: 'social ecologist and theorist of libertarian municipalism',
+                caveat: 'His proposal is a normative communalist strategy and should not be treated as an empirical finding about every municipality or environmental movement.',
+                citations: citations(['bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism']),
+              },
+              {
+                name: 'Amartya Sen',
+                role: 'capability theorist linking substantive freedom, public reasoning, and development',
+                caveat: 'Sen’s capability approach supports an environmental-justice reading but does not define a single green ownership model.',
+                citations: citations(['senDevelopmentFreedom'], ['sepClimateJustice', 'sepEnvironmentalEthics']),
+              },
+              {
+                name: 'John Stuart Mill',
+                role: 'liberal influence on individuality, limits on coercion, and social reform',
+                caveat: 'Mill is an intellectual neighbor rather than a modern environmental theorist; his inclusion does not turn classical liberalism into green politics.',
+                citations: citations(['millOnLiberty'], ['sepEnvironmentalEthics']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Community-managed commons',
+                period: 'historical and contemporary, case-specific',
+                match: 'institutional practice-level resemblance',
+                caveat: 'Commons differ by resource, rule system, social membership, enforcement, and ecological outcome; “common” does not mean open access or absence of exclusion rules.',
+                citations: citations(['ostromGoverningCommons'], ['sepEnvironmentalEthics']),
+              },
+              {
+                name: 'Municipal and cooperative ecological projects',
+                period: 'contemporary, case-specific',
+                match: 'partial green-commons resemblance',
+                caveat: 'Community energy, transit, food, housing, watershed, and land projects may be green-commons practices while remaining dependent on state law, finance, or wider markets.',
+                citations: citations(['ostromGoverningCommons', 'bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'ipccAr6Synthesis']),
+              },
+              {
+                name: 'Climate-justice movements and local adaptation',
+                period: 'late twentieth century to present',
+                match: 'movement-level and policy-level comparison',
+                caveat: 'Movements differ over mitigation, adaptation, development, technology, compensation, and political strategy; ecological concern does not yield one party platform.',
+                citations: citations(['senDevelopmentFreedom'], ['sepClimateJustice', 'ipccAr6Synthesis']),
+              },
+              {
+                name: 'Denmark, the Netherlands, and Sweden',
+                period: 'contemporary partial comparators',
+                match: 'mixed institutional resemblance only',
+                caveat: 'These countries combine environmental policy with markets, welfare institutions, national governments, and international commitments; none is a complete green-commons system.',
+                citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['ipccAr6Synthesis', 'sepClimateJustice', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'anarchist-communalist', relation: 'shares local common ownership and anti-hierarchical participation, but this profile accepts more varied state and market roles' },
+              { id: 'democratic-socialist', relation: 'shares public provision and economic democracy, with a stronger focus here on ecological limits and polycentric governance' },
+              { id: 'progressive-liberal', relation: 'shares social inclusion and public action but is not necessarily commons-oriented or ecologically foundational' },
+              { id: 'social-democratic', relation: 'can share welfare and public services, but ecological transformation is more central to this profile' },
+              { id: 'libertarian-market', relation: 'may share skepticism of centralized power but differs sharply over commons, regulation, externalities, and collective provision' },
+              { id: 'anti-colonial-liberation', relation: 'overlaps on environmental justice, extraction, sovereignty, and unequal historical responsibility' },
+              { id: 'religious-socialist', relation: 'may share stewardship, solidarity, and social justice, while differing over religious grounding of public ethics' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that localism and polycentricity can fragment responsibility. Climate systems, energy grids, supply chains, migration, and biodiversity cross local borders, and communities may lack the resources or authority to act. Supporters answer that multiple levels can coordinate when rules are nested, information is shared, responsibilities are clear, and higher-level institutions support rather than erase local capacity.',
+            citations: citations(['ostromGoverningCommons', 'bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'ipccAr6Synthesis']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns ecological paternalism and expertise. Urgent risk can be used to justify surveillance, exclusion, technocracy, forced displacement, or austerity that falls disproportionately on vulnerable groups. Environmental policy needs evidence and enforceable standards, but it also needs procedural justice, accessible participation, compensation, rights protection, and democratic review.',
+            citations: citations(['senDevelopmentFreedom', 'millOnLiberty'], ['sepClimateJustice', 'sepEnvironmentalEthics', 'ipccAr6Synthesis']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, green politics can hide trade-offs behind moral language. Renewable infrastructure can require land and minerals; conservation can conflict with livelihoods; carbon policies can be regressive; local knowledge can also be exclusionary; and technological solutions can create new dependencies. The profile should therefore distinguish scientific findings, ethical commitments, institutional proposals, and unresolved value conflicts.',
+            citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['ipccAr6Synthesis', 'sepEnvironmentalEthics', 'sepClimateJustice']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'senDevelopmentFreedom', 'millOnLiberty', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
+      researchSourceIds: ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis', 'socialEcologyMunicipalism', 'sepAnarchism', 'sepSocialism', 'openTextbook', 'vdem', 'foreignPolicy'],
+      editorialNote: 'The entry distinguishes commons governance, social ecology, green liberalism, eco-socialism, conservationism, and deep ecology. Scores describe a didactic ecological-pluralist profile, not every green party, environmental movement, country, or community institution.',
+    },
+    researchGaps: [
+      'Add German-, French-, Portuguese-, Spanish-, South Asian-, African-, and Indigenous scholarship on environmental justice, commons, conservation, social ecology, and ecological democracy.',
+      'Add detailed case studies of forests, fisheries, water, energy, food, housing, transit, and digital commons, including failure, exclusion, and ecological outcomes rather than only successful examples.',
+      'Add country-specific climate, biodiversity, energy, and distributional evidence before ranking Denmark, the Netherlands, Sweden, or other states as green-commons comparators.',
+      'Add specialist research on climate finance, colonial extraction, Indigenous sovereignty, migration, disability, gender, labor transitions, critical minerals, agriculture, and urban adaptation.',
+      'Add comparative work on the scale limits of localism, the role of national and international authority, technological governance, geoengineering, and democratic safeguards during ecological emergencies.',
+    ],
+  },
 };
