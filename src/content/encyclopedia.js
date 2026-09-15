@@ -4176,4 +4176,336 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add systematic ethical and empirical comparisons with classical liberalism, minarchism, mutualism, anarcho-communism, communalism, and constitutional pluralism rather than treating all anti-state language as one tradition.',
     ],
   },
+  'anarcho-communist': {
+    id: 'anarcho-communist',
+    title: 'Anarcho-communist',
+    canonicalLabel: 'Anarcho-communist',
+    aliases: [
+      'anarchist communism',
+      'libertarian communism',
+      'communist anarchism',
+      'free communism',
+      'anarcho-communism',
+    ],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile describes anti-state communist traditions centered on common ownership, mutual aid, direct participation, and decentralized self-management. It is not a synonym for Marxist-Leninist party-state communism, anarcho-capitalism, every anarchist current, or every wartime collective.',
+    timeScope: 'Modern forms developed inside nineteenth-century socialist and anarchist debates, especially from the 1870s onward; important experiments appeared during the Russian Revolution and Spanish Civil War, with later communalist, ecological, feminist, and autonomy-oriented reinterpretations.',
+    geographicScope: 'Transnational tradition with major Russian, Ukrainian, Spanish, French, Italian, British, North American, Latin American, and international histories. The surviving literature is uneven and often mediated through translation, movement archives, and partisan memoirs.',
+    summary: 'A communist and anarchist tradition seeking common or social ownership without a centralized state, permanent ruling party, or hierarchical command. It emphasizes mutual aid, free association, direct democracy, federated communes, worker and community self-management, and distribution according to collectively determined needs. Its central dilemmas concern coordination at scale, defense, internal coercion, economic planning, dissent, and how a revolutionary movement avoids reproducing a new authority.',
+    summaryCitations: citations(
+      ['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism', 'bookchinLibertarianMunicipalism'],
+      ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 94,
+        label: 'Very strongly collectivist / commons-oriented',
+        explanation: 'The tradition rejects private accumulation and capitalist control of productive resources in favor of common ownership, free access, cooperative production, or worker and community management. It also rejects simply transferring ownership to a centralized state: the difficult question is how collective control is exercised without a new managerial class.',
+        citations: citations(['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism'], ['sepAnarchism', 'sepSocialism']),
+      },
+      social: {
+        score: 58,
+        label: 'Strongly emancipatory / progressive',
+        explanation: 'Abolition of class hierarchy, mutual aid, voluntary association, gender and social emancipation, and opposition to inherited domination are central tendencies. Historical movements were internally unequal and sometimes reproduced gendered, ethnic, or disciplinary exclusions, so the score describes the normative direction rather than every participant or practice.',
+        citations: citations(['kropotkinMutualAid', 'bakuninStatism', 'millOnLiberty'], ['sepAnarchism', 'sepSocialism', 'openTextbook']),
+      },
+      authority: {
+        score: -100,
+        label: 'Maximally anti-state and anti-hierarchical',
+        explanation: 'The state, permanent political monopoly, and hierarchical command are rejected in favor of federated communes, assemblies, voluntary associations, recallable delegates, and self-management. This does not mean that anarcho-communist communities have no rules, coordination, or sanctions; it means those powers should remain decentralized, accountable, and non-sovereign.',
+        citations: citations(['bakuninStatism', 'kropotkinConquestBread', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+      },
+      identity: {
+        score: 70,
+        label: 'Strongly internationalist and decentralist',
+        explanation: 'Class solidarity, international association, and local self-government are preferred to compulsory national loyalty. Communes and movements can still develop strong cultural, linguistic, regional, or revolutionary identities; internationalism therefore coexists with local belonging and does not erase conflicts over boundaries or membership.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'sepSocialism', 'openTextbook']),
+      },
+      foreign: {
+        score: 68,
+        label: 'Strongly pacifist / non-imperial, with self-defense debates',
+        explanation: 'Imperialism, standing armies, conquest, and state militarism are rejected, while solidarity across borders is encouraged. Revolutionary communities have nevertheless organized armed self-defense under attack; historical participation in war must be distinguished from a general endorsement of militarism or coercive foreign policy.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'foreignPolicy', 'socialEcologyMunicipalism']),
+      },
+      religion: {
+        score: -45,
+        label: 'Secular and pluralist, with religious-anarchist neighbors',
+        explanation: 'No church, clerical hierarchy, or religious law should possess compulsory political authority. Voluntary religious association can coexist with decentralized communism, and religious anarchist currents have contributed to anti-state politics; the profile is institutionally secular rather than necessarily anti-religious.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'millOnLiberty'], ['sepAnarchism', 'sepReligionPolitics']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Anarcho-communism joins the communist critique of private accumulation and class domination to anarchism’s rejection of the state and permanent hierarchy. Its proposed society is organized through common or social ownership, mutual aid, voluntary association, direct participation, federated communes, and collective decisions about production and distribution. The purpose is not simply to make the state own everything, but to prevent both private capital and a state bureaucracy from controlling the conditions of life.',
+            citations: citations(['kropotkinConquestBread', 'bakuninStatism'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label contains several overlapping traditions rather than one final blueprint. Kropotkin’s account of mutual aid and free access, Bakunin’s critique of state socialism, anarcho-syndicalist workplace organization, feminist and pacifist anarchism, and Bookchin’s later libertarian municipalism share anti-domination themes while differing over markets, technology, revolution, ecology, gender, organization, and defense. Historical experiments should be treated as partial and contested evidence, not as completed models.',
+            citations: citations(['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The economic proposal begins from the idea that land, knowledge, tools, infrastructure, and productive capacity are a social inheritance created by many generations. Since no individual created the whole productive environment, anarcho-communists argue that it should not be controlled as a private source of rent or profit. Production is organized cooperatively, and access to necessities is guided by need, reciprocity, social agreements, or the capacity of communities to provide them.',
+            citations: citations(['kropotkinConquestBread', 'kropotkinMutualAid'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The political proposal is federated self-government. Local assemblies, workplace groups, cooperatives, neighborhood councils, and communes make decisions directly or through delegates who can be recalled and whose mandates remain limited. Federation is intended to coordinate transport, health, production, defense, and ecological systems without creating a sovereign center. The tension is practical: coordination can require expertise, regular administration, and binding decisions, all of which can drift toward hierarchy if not accountable.',
+            citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism', 'kropotkinConquestBread'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Mutual aid is both a moral principle and an account of social capacity. Cooperation is not assumed to eliminate disagreement, scarcity, free-riding, prejudice, or conflict; rather, institutions should make solidarity easier and domination harder. A serious description must therefore ask how communities allocate scarce goods, protect dissenters, handle serious harm, coordinate across regions, and prevent informal leaders, armed groups, or charismatic organizers from becoming an unaccountable ruling layer.',
+            citations: citations(['kropotkinMutualAid', 'millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'sepLibertyPositiveNegative']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Anarcho-communism is not identical to a society with no rules or to spontaneous disorder. It proposes rules without a sovereign state, authority without permanent rulers, and collective coordination without a centralized monopoly. Those distinctions are normatively important but empirically demanding: the historical record often comes from wartime experiments, partisan sources, incomplete archives, and institutions forced to compromise under military pressure.',
+            citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['sepAnarchism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: '1860s–1870s: socialist anarchism and the critique of state socialism',
+            text: 'Within the international socialist movement, anarchists argued that emancipation could not be achieved by replacing private capital with a centralized state that claimed to represent workers. Bakunin defended collective revolutionary organization while attacking political hierarchy and the prospect of a new ruling minority. The later communist-anarchist tradition inherited this anti-state and anti-bureaucratic problem.',
+            citations: citations(['bakuninStatism'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            period: '1880s–1890s: Kropotkin, mutual aid, and free access',
+            text: 'Kropotkin developed an anarcho-communist vision grounded in cooperation, decentralized production, common inheritance, and access to the means of life. Mutual Aid supplied an account of cooperation as a social capacity, while The Conquest of Bread offered a normative sketch of post-revolutionary provision. Neither work should be treated as a detailed modern macroeconomic plan or as evidence that scarcity disappears automatically.',
+            citations: citations(['kropotkinMutualAid', 'kropotkinConquestBread'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            period: '1890s–1930s: syndicalism, federations, and revolutionary organization',
+            text: 'Anarcho-syndicalist unions connected workplace action, direct democracy, strikes, and revolutionary social transformation. Movement debates concerned whether unions should be primarily economic organizations, whether an explicitly anarchist federation was necessary, and how to coordinate without reproducing a party. These disagreements shaped later experiments in Spain and elsewhere.',
+            citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'openTextbook']),
+          },
+          {
+            period: '1917–1921: Russian Revolution and the Free Territory of Ukraine',
+            text: 'The Makhnovist movement and associated rural communes developed under revolutionary, civil-war, and foreign-intervention conditions. It is often cited as an anarchist experiment in local self-management and peasant autonomy, but the territory was militarized, short-lived, internally diverse, and contested by multiple armies. Its evidence is therefore valuable but cannot establish a complete peaceful anarcho-communist society.',
+            citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+          },
+          {
+            period: '1936–1939: Spanish Revolution and libertarian collectives',
+            text: 'During the Spanish Civil War, anarchist and anarcho-syndicalist organizations participated in a social revolution that included workplace collectivization, rural collectives, neighborhood organization, and militia structures in parts of Catalonia, Aragon, and other regions. The experiment faced fascist war, Republican state reconstruction, internal conflict, economic scarcity, and coercive pressures. Its achievements and limits remain debated by historians.',
+            citations: citations(['kropotkinConquestBread', 'bakuninStatism'], ['cambridgeSpanishAnarchism', 'sepAnarchism']),
+          },
+          {
+            period: '1940s–1980s: exile, anti-authoritarian socialism, feminism, and ecology',
+            text: 'After the defeat of revolutionary Spain and the consolidation of state-socialist regimes, anarcho-communist ideas continued through exile networks, anti-authoritarian socialism, feminist organizing, pacifism, labor movements, and ecological politics. The focus broadened from seizing factories to challenging domination in family, education, sexuality, race, colonialism, technology, and the environment.',
+            citations: citations(['kropotkinMutualAid', 'millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'sepSocialism', 'openTextbook']),
+          },
+          {
+            period: '1960s–present: communalism, autonomy, and commons',
+            text: 'Later proposals such as Bookchin’s libertarian municipalism connected direct democracy to ecological limits, confederation, and municipal politics. Contemporary autonomous communities, cooperative networks, Indigenous struggles, and digital commons sometimes borrow anarchist practices while remaining inside states. They provide institutional lessons and partial comparisons, not proof that the full anarcho-communist model has been implemented at national scale.',
+            citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Anarcho-communism proper',
+                distinction: 'Favors common ownership, free access to necessities, abolition of wage and capitalist class relations, voluntary association, and federated self-management.',
+                relation: 'The closest fit to the main profile; it differs from state communism by rejecting a permanent centralized political authority.',
+                citations: citations(['kropotkinConquestBread', 'kropotkinMutualAid'], ['sepAnarchism', 'sepSocialism']),
+              },
+              {
+                label: 'Anarchist collectivism',
+                distinction: 'Supports collective ownership and worker control but may retain labor-based accounting or distribution according to contribution during a transition.',
+                relation: 'A major precursor and neighboring current associated with Bakunin; it differs from Kropotkin’s stronger free-access and needs-oriented proposal.',
+                citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['sepAnarchism', 'sepSocialism']),
+              },
+              {
+                label: 'Anarcho-syndicalism',
+                distinction: 'Uses revolutionary unions, strikes, workplace assemblies, and federated labor organization as the route to worker self-management and social transformation.',
+                relation: 'An organizational strategy that can support anarcho-communist goals but is not identical to a complete theory of distribution, community, or everyday life.',
+                citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'cambridgeSpanishAnarchism']),
+              },
+              {
+                label: 'Platformism and organized anarchism',
+                distinction: 'Emphasizes ideological unity, strategic coordination, collective responsibility, and a structured anarchist organization while rejecting a ruling party or state.',
+                relation: 'Addresses the coordination problem more directly than loose federation, but critics worry that discipline can reproduce hierarchy or political substitution.',
+                citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism']),
+              },
+              {
+                label: 'Libertarian municipalism / communalism',
+                distinction: 'Builds direct democracy through municipalities, confederations, ecological planning, and public assemblies rather than through workplace revolution alone.',
+                relation: 'A later institutional and ecological development that overlaps strongly with anarcho-communist anti-hierarchy but accepts a more explicit municipal political framework.',
+                citations: citations(['bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+              },
+              {
+                label: 'Pacifist and religious anarchism',
+                distinction: 'Rejects state violence and militarism through nonviolent, ethical, or religious commitments, often emphasizing conscience, community, and refusal of coercive authority.',
+                relation: 'Shares anti-state and mutual-aid commitments but may reject revolutionary violence or materialist communism; it should not be forced into one economic profile.',
+                citations: citations(['kropotkinMutualAid', 'millOnLiberty'], ['sepAnarchism', 'sepReligionPolitics']),
+              },
+              {
+                label: 'Ecological, feminist, and commons-oriented anarchism',
+                distinction: 'Extends anti-domination analysis to patriarchy, racial hierarchy, colonialism, human–nature relations, technology, care work, and ecological limits.',
+                relation: 'Broadens the social and ecological content of anarcho-communism, while raising questions about expertise, scale, and conflicts among local communities.',
+                citations: citations(['kropotkinMutualAid', 'bookchinLibertarianMunicipalism', 'millOnLiberty'], ['sepAnarchism', 'socialEcologyMunicipalism', 'sepClimateJustice']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Peter Kropotkin',
+                role: 'Anarcho-communist theorist of mutual aid, common inheritance, decentralized production, free access, and federated community life.',
+                caveat: 'Kropotkin’s works are normative and exploratory rather than a complete economic implementation manual; later movements interpreted them differently.',
+                citations: citations(['kropotkinConquestBread', 'kropotkinMutualAid'], ['sepAnarchism', 'sepSocialism']),
+              },
+              {
+                name: 'Mikhail Bakunin',
+                role: 'Revolutionary anarchist critic of the state, centralized party authority, and the prospect of a new ruling minority after revolution.',
+                caveat: 'Bakunin is associated more precisely with collectivist anarchism than with every later anarcho-communist proposal; his revolutionary strategy and writings contain tensions that require historical context.',
+                citations: citations(['bakuninStatism'], ['sepAnarchism', 'sepSocialism']),
+              },
+              {
+                name: 'Emma Goldman',
+                role: 'Anarchist writer and organizer associated with anti-authoritarianism, feminism, sexual freedom, political dissent, and social revolution.',
+                caveat: 'Goldman’s political work cannot be reduced to one economic formula; she is included as a major anti-authoritarian and emancipatory figure within the wider tradition.',
+                citations: citations(['millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'openTextbook']),
+              },
+              {
+                name: 'Murray Bookchin',
+                role: 'Later theorist of social ecology, libertarian municipalism, direct democracy, confederation, and ecological communalism.',
+                caveat: 'Bookchin’s communalism is a later and internally debated development, not a synonym for nineteenth-century anarcho-communism or every ecological movement.',
+                citations: citations(['bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'No sovereign-state match',
+                period: 'Present and historical comparison',
+                match: 'No recognized country is an exact match because the profile rejects a centralized sovereign state and permanent political monopoly.',
+                caveat: 'The absence of a country match follows from the definition; it does not prove that every local or federated practice is unworkable.',
+                citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['sepAnarchism']),
+              },
+              {
+                name: 'Spanish libertarian collectives',
+                period: 'Catalonia, Aragon, and other parts of Republican Spain, 1936–1939',
+                match: 'Partial historical reference for worker and rural collectivization, direct organization, federation, and the attempt to combine revolution with wartime production and defense.',
+                caveat: 'The collectives were diverse, operated under civil war, and involved coercive pressures, inter-organizational conflict, and compromises with Republican institutions. They were not one uniform anarcho-communist society.',
+                citations: citations(['kropotkinConquestBread', 'bakuninStatism'], ['cambridgeSpanishAnarchism', 'sepAnarchism']),
+              },
+              {
+                name: 'Free Territory of Ukraine / Makhnovist movement',
+                period: 'Southern Ukraine, especially 1918–1921',
+                match: 'Partial reference for peasant self-organization, local assemblies, anti-state revolutionary politics, and communes under conditions of military struggle.',
+                caveat: 'The movement was short-lived, militarized, geographically uneven, and contested by multiple armies. Its sources and institutional record do not justify a simple success or failure verdict.',
+                citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+              },
+              {
+                name: 'Paris Commune',
+                period: 'Paris, March–May 1871',
+                match: 'A municipal and revolutionary antecedent for recallable delegates, local sovereignty, social measures, and debates about the relationship between state power and communal self-rule.',
+                caveat: 'The Commune was not uniformly anarcho-communist; it included Blanquists, Jacobins, socialists, and other currents and lasted only a short time.',
+                citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'openTextbook']),
+              },
+              {
+                name: 'Contemporary autonomous and cooperative communities',
+                period: 'Present; local and movement-specific',
+                match: 'Some communities use assemblies, cooperatives, mutual aid, commons, or autonomous administration within a surrounding state.',
+                caveat: 'Autonomy is not equivalent to anarcho-communism. Legal dependence, land ownership, internal rules, funding, relations with state security, and economic exchange must be documented before making a closer comparison.',
+                citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'authoritarian-collectivist', relation: 'shares anti-capitalist collectivism but differs fundamentally over the state, party monopoly, hierarchy, and centralized command' },
+              { id: 'communist', relation: 'shares common ownership and class critique, while Marxist-Leninist communism accepts party-state authority that anarcho-communism rejects' },
+              { id: 'anarchist-communalist', relation: 'broader neighboring profile for anti-hierarchical communalism, with anarcho-communism specifying stronger common ownership and distribution commitments' },
+              { id: 'anarcho-capitalist', relation: 'shares opposition to the state but reverses the economic orientation: common ownership and anti-capitalism versus private property and market coordination' },
+              { id: 'libertarian-socialist', relation: 'shares decentralized self-management and anti-authoritarian socialism, while the economic content may include more market or mixed arrangements' },
+              { id: 'democratic-socialist', relation: 'shares social ownership and emancipation but accepts democratic state institutions and may pursue reform rather than abolition of the state' },
+              { id: 'green-commons', relation: 'shares commons, local self-management, ecological limits, and anti-domination, while green politics makes environmental ethics more central' },
+              { id: 'anti-colonial-liberation', relation: 'can overlap in anti-imperial and self-determination struggles, but anti-colonial movements need not reject the state or capitalism' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The most persistent criticism is coordination at scale. Health systems, energy, transport, food, disaster response, ecological protection, and defense cross local boundaries. Federations can coordinate, but federation requires information, expertise, common standards, and decisions that some members may not voluntarily accept. A serious model therefore needs transparent mandates, recallable delegates, audited administration, nested levels of coordination, and safeguards against an emergency body becoming a permanent state.',
+            citations: citations(['kropotkinConquestBread', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism', 'sepClimateJustice']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns informal coercion. Even without a state, assemblies, charismatic leaders, armed groups, family structures, majorities, or control over food and housing can dominate individuals. “The community” can become a new authority if dissenters cannot leave, minorities lack voice, or social pressure replaces public law. Safeguards include freedom of conscience, minority protections, due process, independent mediation, accessible exit, protection against gendered and domestic violence, and clear limits on collective enforcement.',
+            citations: citations(['bakuninStatism', 'millOnLiberty', 'kropotkinMutualAid'], ['sepAnarchism', 'sepLibertyPositiveNegative', 'sepReligionPolitics']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns scarcity, incentives, and ecological trade-offs. Free access may work well for some goods while other resources remain scarce, technically complex, or environmentally limited. Local production can increase resilience but cannot by itself supply every medicine, component, or infrastructure system. Commons institutions need evidence about resource conditions, contribution, maintenance, conflict resolution, and unequal ecological burdens rather than relying on a moral assumption that cooperation automatically solves allocation.',
+            citations: citations(['kropotkinConquestBread', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism', 'sepClimateJustice']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, historical examples are difficult to evaluate because many occurred during war, revolution, blockade, or state collapse. Wartime coercion, shortages, military hierarchy, and partisan memory can make an experiment look either more libertarian or more authoritarian than its ordinary institutions were. The encyclopedia should distinguish aspirations, rules, actual participation, material outcomes, violence, exclusion, and external constraints, and should avoid presenting a brief experiment as a universal proof.',
+            citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'sepAnarchism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism', 'bookchinLibertarianMunicipalism', 'millOnLiberty', 'marxEngelsManifesto', 'leninStateRevolution', 'ostromGoverningCommons'],
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy'],
+      editorialNote: 'The entry describes an anti-state communist family and uses a didactic composite score. It distinguishes anarcho-communism from anarcho-capitalism, Marxist-Leninist party-state communism, libertarian socialism, communalism, and historical collectives. No country is classified as an exact match.',
+    },
+    researchGaps: [
+      'Add primary texts and specialist scholarship on Errico Malatesta, Emma Goldman, Voline, Nestor Makhno, Buenaventura Durruti, Federica Montseny, Diego Abad de Santillán, and anarchist women’s, labor, and anti-colonial organizing.',
+      'Expand Russian, Ukrainian, Spanish, Catalan, French, Italian, German, Portuguese, and Latin American sources, recording original language, translation, edition, archive, and partisan provenance.',
+      'Add comparative evidence on the Free Territory of Ukraine, Catalan and Aragonese collectives, Paris Commune, Korean anarchist experiments, Zapatista autonomy, Rojava, cooperative federations, and other partial cases without treating them as one model.',
+      'Add empirical research on food, housing, health, education, care, industry, energy, defense, ecological management, conflict resolution, gender, race, migration, disability, and minority rights in decentralized communities.',
+      'Add detailed comparison of anarcho-communist distribution with commons governance, market socialism, cooperative ownership, social democracy, and state socialism, including scarcity, free-riding, technical expertise, and maintenance problems.',
+      'Add research on how revolutionary organizations prevent military, party, administrative, or charismatic authority from becoming permanent, and how nonviolent and self-defense commitments can coexist under external attack.',
+    ],
+  },
 };

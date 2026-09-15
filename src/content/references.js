@@ -49,6 +49,14 @@ export const AUTHOR_REFERENCES = {
     context: 'An anarchist account of cooperation and mutual aid used to explain the positive institutional side of anti-authoritarian politics; it is not treated as a complete empirical theory of all human conduct.',
     url: 'https://www.marxists.org/reference/archive/kropotkin-peter/1902/mutual-aid/index.htm',
   },
+  kropotkinConquestBread: {
+    author: 'Peter Kropotkin',
+    work: 'The Conquest of Bread',
+    year: '1892',
+    kind: 'primary',
+    context: 'A foundational anarcho-communist proposal concerning common inheritance, decentralized production, free access, and the organization of everyday needs; cited as a normative proposal rather than evidence of a complete historical implementation.',
+    url: 'https://theanarchistlibrary.org/library/petr-kropotkin-the-conquest-of-bread',
+  },
   bookchinLibertarianMunicipalism: {
     author: 'Murray Bookchin',
     work: 'The Politics of Social Ecology: Libertarian Municipalism',
