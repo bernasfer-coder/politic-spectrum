@@ -8253,4 +8253,303 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Develop uncertainty ranges and separate scores for military institutional power, external intervention, territorial empire, economic coercion, and social militarization instead of relying on one compound label.',
     ],
   },
+  'national-socialist': {
+    id: 'national-socialist',
+    title: 'National Socialist / Nazi (historical)',
+    canonicalLabel: 'National Socialism / Nazism',
+    aliases: ['Nazism', 'Nazi movement', 'Nazi Germany', 'National Socialist German Workers’ Party', 'Third Reich'],
+    entryType: 'historical warning profile',
+    status: 'researched-draft',
+    confidence: 'high',
+    scopeNote: 'This entry concerns the German National Socialist movement, party, regime, and ideology from its roots in völkisch and antisemitic politics through the Nazi dictatorship and its genocidal war. It is not a synonym for every authoritarian, nationalist, conservative, militarist, populist, or racist movement, and contemporary comparisons require evidence rather than rhetorical resemblance.',
+    timeScope: 'Primarily the late nineteenth-century and Imperial German precursors, the Weimar period, the Nazi seizure and consolidation of power from 1933, the Second World War and Holocaust from 1939–1945, and the postwar legal and historical reckoning. Later neo-Nazi and far-right movements are treated only as related contemporary objects, not as the same state formation.',
+    geographicScope: 'Centered on Germany and the territories under Nazi occupation or domination, especially Eastern Europe. The history is transnational: antisemitism, fascism, war, collaboration, resistance, forced labor, deportation, and genocide involved many societies, institutions, and victims across Europe.',
+    summary: 'A racial-totalitarian and genocidal ideology and regime that fused ultranationalism, antisemitism, racial hierarchy, Führer dictatorship, mass party mobilization, political terror, social conformity, rearmament, territorial expansion, and the planned destruction of Jews and other targeted groups. The word “socialist” in the party name does not make Nazism a socialist or communist movement in the ordinary economic sense; the regime destroyed the workers’ movement, protected private ownership when compatible with state and racial objectives, and subordinated economic life to dictatorship, rearmament, and racial empire.',
+    summaryCitations: citations(
+      ['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism', 'griffinNatureFascism'],
+      ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -5,
+        label: 'Private ownership under racial-state direction',
+        explanation: 'The regime did not abolish private property in the manner of communist state ownership, but it destroyed independent labor organizations, directed production, controlled labor, expropriated Jewish property, rearmed the economy, used forced labor, and subordinated economic decisions to war and racial hierarchy. The near-center score records a mixed and coercively directed economy rather than treating the party name as evidence of socialism.',
+        citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'oxfordNationalSocialism', 'ushmmThirdReich']),
+      },
+      social: {
+        score: -95,
+        label: 'Racial, patriarchal, and violently exclusionary',
+        explanation: 'Nazism imposed a biologized hierarchy of peoples, antisemitism, eugenics, gendered reproductive policy, compulsory conformity, persecution of dissent, and the destruction of plural civic life. Its apparent modern mobilization and technological administration should not be confused with social progress: participation was organized through racial membership, obedience, and exclusion.',
+        citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['ushmmNaziRacism', 'ushmmThirdReich', 'bpbNationalSocialism']),
+      },
+      authority: {
+        score: 100,
+        label: 'Totalizing dictatorship and terror',
+        explanation: 'The Führer principle concentrated authority in Hitler and the Nazi state, eliminated competitive parties and independent unions, coordinated institutions, expanded police and SS power, and used detention, terror, and murder against political, racial, religious, and social enemies. “Totalizing” describes the regime’s aspiration and destructive reach; it does not imply that every office was perfectly coordinated or that ordinary administration disappeared.',
+        citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['ushmmThirdReich', 'oxfordNaziGermany', 'bpbNationalSocialism']),
+      },
+      identity: {
+        score: -100,
+        label: 'Racial ultranationalism and Volksgemeinschaft',
+        explanation: 'Belonging was defined through a racialized German people rather than equal citizenship. Jews were treated as a racial enemy regardless of religious practice; Roma, Slavic peoples, Black people, people with disabilities, political opponents, and other groups were persecuted in different ways and at different stages. The promise of a unified people depended on exclusion, dispossession, and ultimately annihilation.',
+        citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['ushmmNaziRacism', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'sepNationalism']),
+      },
+      foreign: {
+        score: -98,
+        label: 'Racial empire and war of annihilation',
+        explanation: 'Expansion was not merely a strategic option: Nazi foreign policy sought territorial revision, Lebensraum in Eastern Europe, the destruction of the Soviet Union as a racial and ideological enemy, occupation, demographic engineering, forced labor, and genocidal war. The military project and the Holocaust became inseparable in the occupied East.',
+        citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['ushmmNaziRacism', 'ushmmThirdReich', 'oxfordNaziGermany', 'oxfordImperialism']),
+      },
+      religion: {
+        score: -35,
+        label: 'Instrumental, racialized, and state-subordinated religion',
+        explanation: 'Nazism was not a straightforward theocracy or a coherent Christian political programme. It negotiated with, pressured, and sometimes cooperated with churches while subordinating independent religious authority to the racial state; it also promoted pseudo-religious myths of blood, destiny, nature, and national rebirth. Religious affiliation did not protect Jews defined by Nazi racial law, and religious resistance varied by institution and individual.',
+        citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['oxfordNaziGermany', 'bpbNationalSocialism', 'sepReligionPolitics']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'warning',
+            text: 'This entry is for historical, civic, and anti-genocidal education. Nazi Germany was a dictatorship that persecuted and murdered millions, including six million Jews in the Holocaust, and waged a racial war of conquest. It must never be presented as an ordinary policy preference, an aesthetic, or a harmless synonym for political disagreement.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmThirdReich', 'ushmmNaziRacism', 'unGenocideConvention']),
+          },
+          {
+            type: 'paragraph',
+            text: 'National Socialism was the ideology and political movement of the Nazi Party, which became the ruling party of Germany from 1933 until its defeat in 1945. It combined völkisch racial nationalism, antisemitism, anti-Marxism, anti-liberalism, leader dictatorship, mass mobilization, political terror, social conformity, rearmament, territorial expansion, and the construction of a racially defined people’s community. The regime’s policies developed over time, but racial hierarchy and exclusion were not an accidental afterthought: they were central to its political worldview and state practice.',
+            citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'griffinNatureFascism'], ['oxfordNationalSocialism', 'ushmmNaziRacism', 'ushmmNaziPartyPlatform']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The party name creates a persistent category error. Nazi economic policy was interventionist and directed, but the regime did not pursue worker ownership or communist class equality. It dismantled independent trade unions, persecuted socialists and communists, enabled private firms when useful to the regime, expropriated Jews, used forced labor, and made production serve rearmament and racial empire. “National Socialist” must therefore be interpreted through doctrine, institutions, ownership, labor power, and coercive outcomes—not through the label alone.',
+            citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'oxfordNationalSocialism', 'ushmmThirdReich']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The regime sought to transform society through a combination of party organizations, propaganda, policing, law, schooling, youth groups, labor control, racial classification, and ritualized mass politics. The promise of Volksgemeinschaft presented class conflict and individual pluralism as obstacles to national unity, while the regime defined who belonged through ancestry and obedience. Participation could be intense, but it was not equal democratic participation: it was structured around hierarchy, mobilization, surveillance, and exclusion.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmThirdReich']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Racial law converted ideology into administrative status. The Nuremberg Laws of 1935 removed Jewish Germans from Reich citizenship and prohibited marriages or sexual relations defined as “race mixing.” Classification, registration, dismissal, dispossession, forced separation, ghettoization, deportation, mass shootings, starvation, forced labor, and killing centers formed a cumulative process. The legal and bureaucratic stages should be taught together with the violence, agency, resistance, collaboration, and survival of the people targeted.',
+            citations: citations(['hitlerMeinKampf'], ['ushmmNurembergLaws', 'ushmmNaziPartyPlatform', 'ushmmNaziRacism', 'ushmmThirdReich']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Nazi violence targeted groups through overlapping but not identical policies. Jews were the primary target of a continent-wide genocide; Roma and Sinti, people with disabilities, Poles, Soviet prisoners of war, Black people in Germany, Jehovah’s Witnesses, homosexual men, political opponents, and others were persecuted, imprisoned, murdered, or subjected to forced labor according to changing racial, political, military, and social classifications. The entry avoids flattening these histories into one undifferentiated victim category.',
+            citations: citations(['arendtTotalitarianism', 'hitlerMeinKampf'], ['ushmmNaziRacism', 'ushmmThirdReich', 'unGenocideConvention']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'This card uses extreme scores because the historical evidence is unusually clear about dictatorship, racial exclusion, expansionist war, and genocide. It is not a prediction model for contemporary politics and should not be assigned to a living person, party, or state without a separate, documented historical analysis.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'unGenocideConvention']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Imperial Germany and völkisch precursors — before 1918',
+            text: 'Nazi ideology drew on pre-existing currents of antisemitism, racial thinking, völkisch nationalism, imperial ambition, social Darwinism, and authoritarian political culture, while transforming them into a distinctive movement. These precursors were widespread and did not mechanically produce Nazism; the historical question is how Nazi organizers selected, radicalized, and institutionalized them after the First World War.',
+            citations: citations(['hitlerMeinKampf'], ['oxfordNationalSocialism', 'ushmmNaziRacism']),
+          },
+          {
+            period: 'Defeat, revolution, and the early Nazi movement — 1918–1923',
+            text: 'Germany’s defeat, revolution, territorial losses, economic dislocation, political violence, and contested democratic transition created a setting in which radical nationalist groups attacked the Weimar Republic. The Nazi Party emerged from this milieu, attempted the failed Beer Hall Putsch in 1923, and thereafter shifted toward a strategy of electoral expansion, organizational growth, propaganda, and legal capture rather than relying only on an immediate coup.',
+            citations: citations(['hitlerMeinKampf'], ['oxfordNationalSocialism', 'oxfordNaziGermany']),
+          },
+          {
+            period: 'Mass party, crisis, and electoral breakthrough — 1924–1932',
+            text: 'After 1923 the NSDAP built affiliated organizations aimed at different social groups and presented itself as a national movement capable of transcending class conflict. The Great Depression, political instability, fear of communism, conservative miscalculation, and propaganda helped the party become Germany’s most successful electoral force by 1932. Electoral success was important, but it should not be narrated as a simple popular mandate for genocide: the later dictatorship used appointment, coercion, legal manipulation, terror, and institutional destruction to consolidate power.',
+            citations: citations(['hitlerMeinKampf'], ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmThirdReich']),
+          },
+          {
+            period: 'Appointment, Gleichschaltung, and dictatorship — 1933–1934',
+            text: 'Hitler became Chancellor in January 1933 through a constitutional appointment by President Hindenburg, after which the Nazi leadership used emergency decrees, the Reichstag Fire Decree, the Enabling Act, violence, arrests, and coordination to destroy political pluralism. Independent unions were dissolved, opposition parties were eliminated, federal and civic institutions were brought under Nazi control, and the regime fused party, state, police, and leader authority in an escalating dictatorship.',
+            citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['ushmmThirdReich', 'oxfordNaziGermany', 'bpbNationalSocialism']),
+          },
+          {
+            period: 'Racial state and escalating persecution — 1935–1938',
+            text: 'The Nuremberg Laws formalized racial citizenship and marriage restrictions in 1935. Anti-Jewish measures expanded into professional exclusion, expropriation, segregation, forced emigration, and public violence. The November 1938 pogrom known as Kristallnacht marked a further escalation from legal discrimination and dispossession toward open, state-organized violence, mass arrests, destruction of synagogues and businesses, and intensified imprisonment.',
+            citations: citations(['hitlerMeinKampf'], ['ushmmNurembergLaws', 'ushmmNaziPartyPlatform', 'ushmmNaziRacism', 'oxfordNaziGermany']),
+          },
+          {
+            period: 'War of conquest and racial empire — 1939–1941',
+            text: 'The invasion of Poland and subsequent expansion made Nazi racial ideology an imperial project. Occupation regimes imposed mass executions, forced labor, deportation, starvation, demographic engineering, and the destruction of political and cultural elites. The 1941 invasion of the Soviet Union was planned and fought as a war of annihilation, combining military conquest with anti-Jewish murder, anti-communist terror, and the projected reordering of Eastern Europe.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmNaziRacism', 'ushmmThirdReich', 'oxfordNaziGermany']),
+          },
+          {
+            period: 'The Holocaust and mass murder — 1941–1945',
+            text: 'The Nazi regime and its collaborators murdered six million Jews in the Holocaust through shootings, ghettos, deportations, starvation, forced labor, and killing centers. The murder of Jews was connected to a broader system of persecution and mass killing that also targeted Roma and Sinti, people with disabilities, Soviet prisoners of war, Poles, and others. The timing and mechanisms differed by place, but the genocide was enabled by state policy, administrative coordination, war, local collaboration, and the destruction of democratic and legal safeguards.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmNaziRacism', 'ushmmThirdReich', 'unGenocideConvention']),
+          },
+          {
+            period: 'Defeat, Nuremberg, and postwar memory — 1945 onward',
+            text: 'Germany’s defeat ended the Nazi regime, but accountability, denazification, prosecution, displacement, survivor testimony, historical research, and memory politics continued for decades. The Nuremberg process and the 1948 Genocide Convention contributed to the development of international criminal law, while later scholarship challenged silence, national self-exculpation, and the tendency to treat perpetrators as an isolated criminal elite rather than examine institutions, collaborators, bystanders, and ordinary participation.',
+            citations: citations(['arendtTotalitarianism'], ['unGenocideConvention', 'oxfordNaziGermany', 'ushmmThirdReich']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Völkisch and racial nationalism',
+                distinction: 'Defines the nation as an organic, ancestral, and racial community rather than a political association of equal citizens.',
+                relation: 'A major ideological foundation of Nazism, but völkisch nationalism also included currents that did not become Nazi or endorse the full party-state and genocidal programme.',
+                citations: citations(['hitlerMeinKampf'], ['oxfordNationalSocialism', 'ushmmNaziRacism', 'sepNationalism']),
+              },
+              {
+                label: 'Nazi party movement',
+                distinction: 'A mass organization using propaganda, affiliated associations, electoral competition, street violence, and social penetration to build a people’s party.',
+                relation: 'The movement preceded the regime and helps explain mobilization and support; it should not be treated as identical to the later state apparatus or wartime empire.',
+                citations: citations(['hitlerMeinKampf'], ['oxfordNationalSocialism', 'oxfordNaziGermany']),
+              },
+              {
+                label: 'Führer-state and polycratic dictatorship',
+                distinction: 'The leader principle concentrated ultimate authority while overlapping offices, party agencies, ministries, police bodies, and competing institutions often radicalized policy through cumulative power struggles.',
+                relation: 'The “totalitarian” label captures the regime’s ambition and destruction of pluralism, while intentionalist and functionalist debates ask how ideology, leadership, institutions, and local initiative interacted.',
+                citations: citations(['arendtTotalitarianism', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'ushmmThirdReich']),
+              },
+              {
+                label: 'Racial state and eugenic policy',
+                distinction: 'Uses law, medicine, administration, policing, and reproductive control to classify bodies, restrict marriage, sterilize, exclude, and destroy groups defined as biologically inferior.',
+                relation: 'Nazi eugenics was part of a broader international history of racial science, but the Nazi regime radicalized it through dictatorship, war, and genocide.',
+                citations: citations(['hitlerMeinKampf'], ['ushmmNaziRacism', 'ushmmNurembergLaws', 'oxfordNaziGermany']),
+              },
+              {
+                label: 'Volksgemeinschaft and social mobilization',
+                distinction: 'Promises class transcendence and national solidarity for the racially included while excluding, dispossessing, and terrorizing those defined as enemies or outsiders.',
+                relation: 'It helps explain participation and material benefits for some Germans without turning the society into a consensual community or excusing coercion and exclusion.',
+                citations: citations(['hitlerMeinKampf'], ['oxfordNationalSocialism', 'ushmmThirdReich']),
+              },
+              {
+                label: 'Lebensraum and racial empire',
+                distinction: 'Treats Eastern Europe as territory for German settlement, resource extraction, population removal, forced labor, and domination under a racial hierarchy.',
+                relation: 'This is the foreign-policy and colonial dimension of Nazism; it distinguishes the Nazi project from movements that are authoritarian or nationalist without an exterminatory imperial programme.',
+                citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['ushmmNaziRacism', 'ushmmThirdReich', 'oxfordNaziGermany']),
+              },
+              {
+                label: 'Nazi economic direction',
+                distinction: 'Combines private firms, state contracts, labor coercion, autarkic aims, rearmament, expropriation, and administrative direction under party and racial objectives.',
+                relation: 'The term “socialist” in the party name is not an adequate description of ownership or labor power; the regime’s economic form differed from both laissez-faire liberalism and communist worker ownership.',
+                citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'oxfordNationalSocialism', 'ushmmThirdReich']),
+              },
+              {
+                label: 'Postwar neo-Nazism',
+                distinction: 'Contemporary extremist movements borrow Nazi symbols, antisemitic or racial ideology, Holocaust denial, and authoritarian nationalism in different combinations.',
+                relation: 'They are historically related but not identical to the Nazi state; classification requires evidence of organization, doctrine, violence, and actual political capacity, and should not casually label opponents.',
+                citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmNaziRacism', 'sepFascism', 'oxfordNaziGermany']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Documented examples and boundaries',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Nazi Germany from 1933 to 1945 is the central historical case. Within that case, the entry distinguishes the party’s electoral movement, the dictatorship after 1933, racial legislation, the persecution of Jews and other groups, the war of conquest, the Holocaust, and the postwar legal reckoning. The periodization matters because the regime radicalized over time, and because not every early policy was identical to the later exterminatory system.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmThirdReich']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Nuremberg Laws, the Reich Citizenship Law, anti-Jewish professional exclusions, the 1938 pogrom, ghettos, deportations, forced labor, mass shootings, and killing centers provide documentary anchors for the transition from ideological exclusion to state-organized persecution and genocide. These events should be taught with survivor testimony, local histories, perpetrator documents, resistance, rescue, collaboration, and the varied experiences of Jewish and non-Jewish victims.',
+            citations: citations(['hitlerMeinKampf'], ['ushmmNurembergLaws', 'ushmmNaziPartyPlatform', 'ushmmNaziRacism', 'unGenocideConvention']),
+          },
+          {
+            type: 'paragraph',
+            text: 'There is no legitimate contemporary country match for this card. Neo-Nazi organizations and far-right movements can be studied as historical descendants or warning cases, but similar slogans, uniforms, online rhetoric, nationalism, authoritarianism, or immigration policy do not establish identity with Nazi Germany. A responsible comparison must document racial doctrine, institutional power, political violence, treatment of opposition, relation to law, and explicit or operationalized genocidal and expansionist aims.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmThirdReich', 'ushmmNaziRacism', 'sepFascism', 'oxfordNaziGermany']),
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'historical-fascist', relation: 'Nazism is a specific German racial-totalitarian form of fascism; it shares mass mobilization, dictatorship, anti-liberalism, and violence, but Nazi antisemitism, racial empire, and genocide must not be generalized to every fascist movement' },
+              { id: 'ethnic-nationalist', relation: 'Nazism is an extreme racialized form of ethnonationalism, but ordinary ethnic nationalism does not necessarily include dictatorship, total war, or genocide' },
+              { id: 'militarist-imperialist', relation: 'Nazism is a radical case of militarized racial empire, while militarism and imperialism can exist without Nazi party dictatorship or genocidal racial ideology' },
+              { id: 'authoritarian-collectivist', relation: 'Both reject liberal pluralism and concentrate power, but Nazi racial nationalism and private-property-compatible direction differ from communist class universalism and state-socialist projects' },
+              { id: 'populist', relation: 'Nazi propaganda used people-versus-enemy rhetoric and mass mobilization, but populism is a broad and internally diverse label that does not entail Nazi racial dictatorship' },
+              { id: 'national-conservative', relation: 'Some conservative elites collaborated with or enabled Hitler, but national conservatism is not synonymous with National Socialism and must be distinguished by doctrine, organization, violence, and racial goals' },
+              { id: 'communist', relation: 'Nazism was violently anti-communist and destroyed communist organizations; similarities in dictatorship or state direction should not erase their fundamentally different class, racial, and national ideologies' },
+              { id: 'liberal-constitutionalist', relation: 'Nazism is an explicit historical negation of equal citizenship, constitutional pluralism, independent rights, and accountable limits on state power' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first scholarly debate concerns definition and comparison. Fascism has no single uncontested definition, and National Socialism had both shared fascist features and distinctive racial, genocidal, imperial, and German historical content. A useful taxonomy should state which features are being compared and avoid making “fascist” or “Nazi” a free-floating synonym for authoritarian, nationalist, conservative, populist, or state-directed politics.',
+            citations: citations(['mussoliniDoctrine', 'griffinNatureFascism', 'arendtTotalitarianism'], ['sepFascism', 'oxfordNaziGermany', 'oxfordNationalSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second debate concerns intentionalism and functionalism. Historians have examined Hitler’s ideological intentions, the role of institutions and competing agencies, cumulative radicalization, local initiative, popular participation, and the relationship between central orders and decentralized violence. The existence of bureaucratic competition does not reduce responsibility or make genocide accidental; it changes how the process and causal mechanisms are explained.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['oxfordNaziGermany', 'ushmmThirdReich']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third safeguard is against the “both sides” distortion. Comparing Nazi Germany with another movement does not imply moral or historical equivalence. The Holocaust and Nazi crimes have specific perpetrators, victims, institutions, dates, and mechanisms. Comparative analysis can identify warning patterns—dehumanization, conspiracy claims, destruction of opposition, emergency rule, racial law, and aggressive war—without erasing the specificity of the Holocaust or using it as a rhetorical weapon against groups without evidence.',
+            citations: citations(['arendtTotalitarianism', 'hitlerMeinKampf'], ['ushmmNaziRacism', 'ushmmThirdReich', 'unGenocideConvention']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth safeguard concerns victims and agency. Jewish victims must remain central to the definition of the Holocaust, while Roma and Sinti, people with disabilities, Poles, Soviet prisoners of war, Black people, political opponents, Jehovah’s Witnesses, homosexual men, forced laborers, and other persecuted groups must not be collapsed into one category. Survivors, resisters, rescuers, exiles, and communities under occupation also had agency and internal diversity that a regime-centered account can obscure.',
+            citations: citations(['arendtTotalitarianism'], ['ushmmNaziRacism', 'ushmmThirdReich', 'unGenocideConvention']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fifth safeguard concerns economic and religious simplification. Nazism was neither a simple free-market programme nor communist socialism, and neither a conventional Christian theocracy nor a purely secular philosophy. Its economic and religious institutions were subordinated, negotiated, or instrumentalized through the racial state. Research should identify who owned, directed, benefited from, and was dispossessed by each policy, and how religious institutions responded rather than relying on party labels.',
+            citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'oxfordNationalSocialism', 'bpbNationalSocialism', 'sepReligionPolitics']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, the entry is designed to resist contemporary misuse. Assigning this label to a living person, party, or state requires exceptional evidence and a clearly bounded historical comparison. The site should prefer precise descriptions—antisemitic, racial supremacist, authoritarian, expansionist, genocidal, anti-democratic, or neo-Nazi—when those are the claims supported by the evidence, and should always show the source, period, institution, and uncertainty.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['sepFascism', 'oxfordNaziGermany', 'ushmmThirdReich', 'ushmmNaziRacism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism', 'griffinNatureFascism'],
+      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights'],
+      editorialNote: 'This is a historical warning entry. It distinguishes National Socialism from generic fascism, ethnic nationalism, militarism, populism, conservatism, communism, and contemporary extremist labels. Its scores describe the Nazi movement and regime as a historically specific racial-totalitarian and genocidal project, not a current-country classification or ordinary policy option.',
+    },
+    researchGaps: [
+      'Add German-language scholarship and primary documents on völkisch nationalism, Weimar political culture, Gleichschaltung, Nazi law, churches, administration, and postwar memory, with translations clearly marked.',
+      'Expand research on Jewish life, Roma and Sinti history, disability persecution, Black Germans, queer victims, Jehovah’s Witnesses, political prisoners, forced laborers, Soviet prisoners of war, and occupied societies without collapsing their experiences.',
+      'Compare intentionalist, functionalist, structuralist, social-history, gender-history, economic-history, and transnational approaches while keeping perpetrator responsibility and victim-centered evidence visible.',
+      'Add evidence on business, labor, agriculture, welfare, rearmament, expropriation, forced labor, and private firms to explain the Nazi political economy without repeating the party name as an economic classification.',
+      'Expand comparative research on collaboration, resistance, rescue, bystanders, local administration, and the relationship between German central decisions and violence in occupied Europe.',
+      'Document the postwar development of genocide law, Nuremberg principles, denazification, survivor testimony, Holocaust education, memory conflicts, and the politics of denial.',
+      'Maintain a separate, evidence-based method for studying contemporary neo-Nazi and far-right movements so historical analogy does not become casual labeling or erase the specificity of Nazi Germany and the Holocaust.',
+    ],
+  },
 };
