@@ -3161,4 +3161,349 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist research on gender, family law, education, minority rights, conversion, secularism, clerical institutions, religious violence, migration, colonialism, and the constitutional design of pluralist religious societies.',
     ],
   },
+  'anti-colonial-liberation': {
+    id: 'anti-colonial-liberation',
+    title: 'Anti-colonial liberation',
+    canonicalLabel: 'Anti-colonial liberation',
+    aliases: [
+      'anti-imperial liberation',
+      'national liberation',
+      'decolonial emancipation',
+      'liberation nationalism',
+      'self-determination movement',
+    ],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This is a family resemblance profile for movements and arguments opposing colonial or imperial domination. It is not a claim that every nationalist, independence movement, postcolonial government, or critic of empire shares one ideology or one method.',
+    timeScope: 'Earlier resistance to empire provides context, but the modern label is most useful from the nineteenth-century expansion of mass nationalism through post-1945 decolonization and continuing struggles over settler colonialism, sovereignty, and dependency.',
+    geographicScope: 'Global profile with especially important South Asian, African, Caribbean, Latin American, Middle Eastern, Southeast Asian, Indigenous, and diaspora histories. French-, Portuguese-, English-, and other language traditions must remain visible rather than being treated as one canon.',
+    summary: 'A political family that seeks to end colonial or imperial domination and restore collective self-government, dignity, and control over land, labor, culture, and political institutions. Its members disagree sharply over constitutional reform versus revolution, nonviolence versus armed struggle, national sovereignty versus transnational solidarity, and liberal, socialist, communal, religious, or developmental postcolonial futures.',
+    summaryCitations: citations(
+      ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism'],
+      ['sepColonialism', 'sepNationalism', 'panAfricanism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 55,
+        label: 'Moderately collectivist / anti-extractive',
+        explanation: 'Colonial land seizure, forced labor, unequal trade, and resource extraction are commonly treated as political-economic domination. Remedies range from village self-sufficiency and land reform to state-led development, socialism, cooperative ownership, or regulated mixed economies; independence alone does not determine the economic axis.',
+        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
+      },
+      social: {
+        score: 50,
+        label: 'Moderately progressive / emancipatory',
+        explanation: 'Anti-colonial projects usually reject racial hierarchy, imperial subjecthood, and exclusion from equal citizenship. The score is limited because movements have also reproduced patriarchy, class hierarchy, ethnic majorities, religious exclusions, or restrictions on dissent after independence.',
+        citations: citations(['duboisBlackReconstruction', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
+      },
+      authority: {
+        score: 10,
+        label: 'Mixed: organized liberation with anti-domination safeguards',
+        explanation: 'Collective organization, discipline, and sometimes a strong liberation state may be treated as necessary under colonial conditions, while self-rule and popular participation are presented as the goal. The profile therefore does not equate resistance organization with either libertarianism or authoritarianism.',
+        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'lockeSecondTreatise', 'duboisBlackReconstruction'], ['sepColonialism', 'vdem']),
+      },
+      identity: {
+        score: 65,
+        label: 'Strongly self-determination oriented',
+        explanation: 'Shared history, language, territory, race, culture, or Indigenous nationhood can create the solidarity needed to resist imperial rule. Many thinkers also connect self-determination to Pan-African, Asian, internationalist, or universal human commitments, so liberation identity is not automatically ethnic nationalism or permanent national closure.',
+        citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'duboisBlackReconstruction', 'andersonImaginedCommunities'], ['sepColonialism', 'sepNationalism', 'panAfricanism']),
+      },
+      foreign: {
+        score: 30,
+        label: 'Somewhat restraint-oriented / anti-imperial',
+        explanation: 'The central foreign-policy demand is non-domination: withdrawal of imperial control, sovereign equality, and the ability to choose political and economic alliances. Nonviolence, diplomacy, nonalignment, and international solidarity coexist historically with armed resistance; the existence of a liberation struggle is not a universal endorsement of force.',
+        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'kantPerpetualPeace', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
+      },
+      religion: {
+        score: -25,
+        label: 'Slightly secular / pluralist, with religious sources of solidarity',
+        explanation: 'Religious ethics, institutions, and identities have supported anti-colonial mobilization in many settings, but the family does not require clerical rule or religious law. Secular constitutionalism, religious pluralism, and faith-based liberation can all appear within it; the public role of religion must be specified case by case.',
+        citations: citations(['gandhiHindSwaraj', 'spinozaPolitical', 'lockeLetterToleration'], ['sepColonialism', 'sepReligionPolitics', 'panAfricanism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Anti-colonial liberation names political projects that challenge a relation in which an outside power claims authority over a territory and its people, commonly together with racial hierarchy, economic extraction, cultural domination, or restricted political status. The objective is not merely a change of flag. In different traditions it includes self-government, equal citizenship, control of land and labor, recovery or transformation of culture, and the ability to choose a political future without imperial command.',
+            citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label is deliberately broad and historically qualified. Gandhi’s swaraj, Du Bois’s analysis of emancipation and Black democratic labor, Fanon’s revolutionary critique of colonial violence, Césaire’s French-language critique of imperial dehumanization, Pan-Africanism, Indigenous sovereignty, and constitutional independence movements do not form one doctrine. Their differences over violence, class, gender, religion, borders, and the postcolonial state are part of the entry rather than noise to be removed.',
+            citations: citations(['gandhiHindSwaraj', 'duboisBlackReconstruction', 'fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first common element is political status: a colonized population is treated as governed, administered, or exploited without equal control over the institutions that make binding decisions. Liberation movements therefore emphasize popular sovereignty, self-determination, citizenship, or national independence. These terms are not interchangeable. A formal transfer of sovereignty can leave economic dependency, military influence, racialized institutions, unequal borders, or settler-colonial control intact.',
+            citations: citations(['lockeSecondTreatise', 'gandhiHindSwaraj', 'fanonWretchedEarth'], ['sepColonialism', 'sepNationalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second element is material and social emancipation. Anti-colonial arguments frequently connect political domination to land ownership, labor discipline, commodity extraction, unequal education, language hierarchy, and racial classification. Some movements seek land redistribution or social ownership; others seek national control of resources, a mixed economy, cooperative production, or small-scale self-rule. The shared critique of extraction does not predict a single economic policy after independence.',
+            citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism', 'gandhiHindSwaraj'], ['sepColonialism', 'panAfricanism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third element is political identity. A people may mobilize around nation, race, language, religion, class, Indigenous peoplehood, region, or a combination. Such identity can repair imposed inferiority and enable collective action, but it can also produce new majorities and minorities. The strongest versions of the tradition therefore pair self-determination with equal citizenship, minority protection, internal democracy, and the recognition that colonial borders and categories may themselves be inherited problems.',
+            citations: citations(['duboisBlackReconstruction', 'fanonWretchedEarth', 'andersonImaginedCommunities', 'gandhiHindSwaraj'], ['sepColonialism', 'sepNationalism', 'panAfricanism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth element is strategy. Constitutional reform, elections, civil disobedience, strikes, boycotts, international advocacy, guerrilla warfare, and interstate diplomacy have all appeared in anti-colonial histories. A descriptive profile must distinguish the moral or strategic argument for a method from the historical conditions in which it was used, and it must not turn accounts of colonial violence into a general recommendation of violence in ordinary politics.',
+            citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'kantPerpetualPeace'], ['sepColonialism', 'foreignPolicy']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Before modern nationalism: resistance, accommodation, and alternative sovereignties',
+            text: 'Resistance to conquest, tribute, forced labor, missionary authority, and foreign administration predates the modern vocabulary of national liberation. These histories should not be retrospectively assigned one nationalist ideology. They include dynastic restoration, local autonomy, religious resistance, Indigenous governance, peasant revolt, maroon communities, and efforts to negotiate or appropriate imperial institutions.',
+            citations: citations(['gandhiHindSwaraj', 'lockeSecondTreatise'], ['sepColonialism', 'openTextbook']),
+          },
+          {
+            period: 'Nineteenth century: reform, abolition, and national self-government',
+            text: 'The expansion of empire and racialized legal status produced reformist, abolitionist, constitutional, and nationalist movements. Some sought equal rights within an empire before moving toward autonomy or independence; others connected abolition, land, education, and national development. Portuguese-language Brazilian abolitionist thought is a useful reminder that emancipation, liberal constitutionalism, monarchy, and elite limitation could coexist uneasily in one political project.',
+            citations: citations(['nabucoAbolitionism', 'lockeSecondTreatise', 'andersonImaginedCommunities'], ['sepColonialism', 'sepNationalism']),
+          },
+          {
+            period: '1900–1915: swaraj and ethical anti-imperialism',
+            text: 'Gandhi’s Hind Swaraj criticized colonial rule and the uncritical imitation of industrial European civilization while developing swaraj as ethical self-rule and satyagraha as disciplined nonviolent resistance. This strand is neither a simple free-market position nor a blueprint for a centralized socialist state, and Gandhi’s wider record contains tensions that require historical rather than devotional reading.',
+            citations: citations(['gandhiHindSwaraj'], ['sepColonialism']),
+          },
+          {
+            period: '1900s–1930s: Black freedom, Pan-Africanism, and the international question',
+            text: 'Du Bois connected racial domination, labor, democratic citizenship, and the international organization of colonial power. Pan-African projects made the relationship between national independence, diaspora solidarity, and global racial justice explicit. The tradition shows why anti-colonial identity can be transnational even when the immediate political demand is control of a particular state.',
+            citations: citations(['duboisBlackReconstruction', 'andersonImaginedCommunities'], ['panAfricanism', 'sepColonialism']),
+          },
+          {
+            period: '1930s–1950s: Négritude, colonial critique, and cultural dignity',
+            text: 'Césaire’s French-language critique attacked the material and cultural claims of the civilizing mission and connected colonial domination to racial hierarchy and dehumanization. Négritude and related movements treated cultural recovery as politically significant, while also debating the relationship between universal emancipation, national identity, class politics, and French republican institutions.',
+            citations: citations(['cesaireDiscourseColonialism', 'fanonWretchedEarth'], ['sepColonialism', 'openTextbook']),
+          },
+          {
+            period: '1945–1970s: formal decolonization, national liberation, and postcolonial state-building',
+            text: 'After the Second World War, many colonies became independent through negotiations, mass movements, wars, constitutional settlements, or combinations of these. New governments confronted inherited borders, scarce administrative capacity, economic dependency, Cold War pressure, ethnic and regional divisions, and the need to transform colonial institutions. Independence could widen citizenship while also concentrating power in a ruling party, military, or new elite.',
+            citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
+          },
+          {
+            period: 'Contemporary: decolonial, Indigenous, and anti-extractive struggles',
+            text: 'The end of formal colonial rule did not settle every question of land, race, language, knowledge, economic dependency, or settler sovereignty. Contemporary movements use decolonial, Indigenous, environmental-justice, and anti-extractive vocabularies to contest continuing domination. Their goals may concern jurisdiction, treaty rights, reparations, public memory, resource control, or epistemic authority rather than the creation of another centralized nation-state.',
+            citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'cesaireDiscourseColonialism'], ['sepColonialism', 'sepClimateJustice']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Constitutional reform and autonomy',
+                distinction: 'Pursues equal rights, representation, responsible government, autonomy, or negotiated independence through law, elections, education, and public institutions.',
+                relation: 'Closest to anti-colonial liberalism and reform nationalism; it may seek independence gradually and may retain economic or institutional ties to the former imperial power.',
+                citations: citations(['lockeSecondTreatise', 'gandhiHindSwaraj', 'nabucoAbolitionism'], ['sepColonialism', 'sepNationalism']),
+              },
+              {
+                label: 'Nonviolent mass resistance',
+                distinction: 'Uses civil disobedience, boycotts, strikes, constructive programmes, and disciplined refusal of cooperation to make imperial rule difficult or illegitimate.',
+                relation: 'Gandhian satyagraha is the clearest reference, but nonviolent practice also appears in movements with very different economic and religious commitments.',
+                citations: citations(['gandhiHindSwaraj'], ['sepColonialism']),
+              },
+              {
+                label: 'Revolutionary or armed national liberation',
+                distinction: 'Treats colonial coercion as a structural condition that may require organized revolutionary struggle, armed resistance, or a radical transformation of property and state institutions.',
+                relation: 'Fanon is an important but contested reference. His historically situated argument must not be converted into a universal endorsement of force or a claim that every liberation movement follows one revolutionary path.',
+                citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism', 'foreignPolicy']),
+              },
+              {
+                label: 'Pan-African and transnational liberation',
+                distinction: 'Links national independence to diaspora solidarity, continental cooperation, racial justice, and the dismantling of global structures that divide or subordinate peoples.',
+                relation: 'It can be nationalist, federalist, socialist, liberal, or cultural in emphasis; transnational solidarity does not erase disagreements about state sovereignty and political organization.',
+                citations: citations(['duboisBlackReconstruction', 'andersonImaginedCommunities'], ['panAfricanism', 'sepColonialism']),
+              },
+              {
+                label: 'Socialist anti-colonialism',
+                distinction: 'Connects independence to land reform, labor power, public or social ownership, class emancipation, and resistance to capitalist dependency or imperial extraction.',
+                relation: 'Overlaps with democratic and authoritarian socialism, but anti-colonial conditions, racial domination, and national development can alter the meaning of class politics.',
+                citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto'], ['sepColonialism', 'sepSocialism', 'panAfricanism']),
+              },
+              {
+                label: 'Indigenous sovereignty and plurinational self-government',
+                distinction: 'Defends the continuing jurisdiction, land relationships, legal orders, and collective identity of Indigenous peoples within or across states formed through settlement and colonization.',
+                relation: 'It may reject the assumption that liberation must culminate in one homogeneous nation-state and may instead seek treaty implementation, autonomy, confederation, or shared sovereignty.',
+                citations: citations(['lockeSecondTreatise', 'gandhiHindSwaraj'], ['sepColonialism', 'sepNationalism']),
+              },
+              {
+                label: 'Postcolonial developmentalism and nonalignment',
+                distinction: 'Uses an independent state to build infrastructure, education, industry, public health, and diplomatic room for maneuver while resisting renewed economic or military subordination.',
+                relation: 'It can be democratic, military-led, socialist, mixed-economy, or authoritarian; development and sovereignty are not evidence of one institutional regime.',
+                citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'kantPerpetualPeace'], ['sepColonialism', 'foreignPolicy', 'panAfricanism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'M. K. Gandhi',
+                role: 'Theorist and organizer of swaraj, satyagraha, nonviolence, and ethical self-rule.',
+                caveat: 'Gandhi’s views changed across contexts and include positions that are contested today; he is not a complete proxy for every Indian independence current or every nonviolent movement.',
+                citations: citations(['gandhiHindSwaraj'], ['sepColonialism']),
+              },
+              {
+                name: 'W. E. B. Du Bois',
+                role: 'Historian and Pan-African thinker linking emancipation, labor, democratic citizenship, race, and international anti-colonial solidarity.',
+                caveat: 'Du Bois’s commitments evolved across a long life, so his early liberal, Pan-African, socialist, and later positions should be time-indexed rather than averaged into one permanent score.',
+                citations: citations(['duboisBlackReconstruction'], ['panAfricanism', 'sepColonialism']),
+              },
+              {
+                name: 'Frantz Fanon',
+                role: 'Psychiatrist and anti-colonial theorist of colonial violence, psychological dehumanization, national consciousness, and postcolonial reconstruction.',
+                caveat: 'Fanon wrote within the Algerian war and a specific revolutionary context. His analysis is historically important and contested; it is not a general policy recommendation for violence.',
+                citations: citations(['fanonWretchedEarth'], ['sepColonialism']),
+              },
+              {
+                name: 'Aimé Césaire',
+                role: 'French-language poet, politician, and Négritude thinker who criticized colonial racial hierarchy, imperial domination, and the civilizing mission.',
+                caveat: 'Césaire’s literary, political, communist, and departmental experiences do not collapse into one modern party label; his anti-colonial critique should be read in its French and Caribbean contexts.',
+                citations: citations(['cesaireDiscourseColonialism'], ['sepColonialism']),
+              },
+              {
+                name: 'Joaquim Nabuco',
+                role: 'Portuguese-language Brazilian lawyer and abolitionist whose work connects slavery, law, citizenship, national development, and constitutional reform.',
+                caveat: 'Nabuco broadens the Portuguese-language record but was not a twentieth-century national-liberation theorist; abolitionist reform, monarchical constitutionalism, and elite limits remain visible in his profile.',
+                citations: citations(['nabucoAbolitionism'], ['sepColonialism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Indian independence',
+                period: 'South Asia, especially 1905–1947 and the transition to independence',
+                match: 'Mixed anti-colonial case combining mass noncooperation, constitutional negotiation, competing nationalisms, religious pluralism, and debates over economic self-rule.',
+                caveat: 'The independence movement contained many currents beyond Gandhi, including revolutionary, socialist, liberal, religious, labor, Dalit, and regional projects; Partition and postcolonial state formation must not be omitted.',
+                citations: citations(['gandhiHindSwaraj', 'lockeSecondTreatise'], ['sepColonialism', 'sepNationalism']),
+              },
+              {
+                name: 'Algerian War of Independence',
+                period: 'Algeria and France, 1954–1962',
+                match: 'Armed national liberation against a settler-colonial order, central to debates about violence, national consciousness, citizenship, and the postcolonial state.',
+                caveat: 'Fanon’s theoretical account is not a complete historical narrative of the FLN or Algeria. The case included internal conflict, civilian suffering, competing political visions, and post-independence authoritarian pressures.',
+                citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism', 'foreignPolicy']),
+              },
+              {
+                name: 'Ghanaian independence and Pan-African statecraft',
+                period: 'Gold Coast/Ghana and wider African politics, especially the 1950s–1960s',
+                match: 'A case for connecting national independence, African solidarity, economic sovereignty, and the problem of building institutions after colonial rule.',
+                caveat: 'Ghana cannot stand for all African decolonization. Party competition, regional politics, economic constraints, and the later concentration of executive power require separate evidence.',
+                citations: citations(['duboisBlackReconstruction', 'andersonImaginedCommunities'], ['panAfricanism', 'sepColonialism']),
+              },
+              {
+                name: 'Reconstruction and Black freedom in the United States',
+                period: 'United States, 1865–1877 and its longer afterlife',
+                match: 'A bounded comparator for emancipation, labor power, constitutional citizenship, democratic participation, and the restoration of racial hierarchy after formal slavery.',
+                caveat: 'This is not a colonial independence case in the narrow constitutional sense. It is included because Du Bois used Reconstruction to analyze racial domination, labor, democracy, and the international color line.',
+                citations: citations(['duboisBlackReconstruction'], ['panAfricanism', 'sepColonialism']),
+              },
+              {
+                name: 'Portuguese African decolonization',
+                period: 'Angola, Mozambique, Guinea-Bissau, Cape Verde, and São Tomé and Príncipe, especially 1960s–1970s',
+                match: 'A comparative Lusophone case in which armed liberation, socialist and nationalist currents, international alliances, and rapid state transition interacted.',
+                caveat: 'The region contains distinct histories and should not be summarized as one Portuguese model. Add country-specific Portuguese scholarship, oral histories, archival work, and post-independence analysis before assigning more precise scores.',
+                citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
+              },
+              {
+                name: 'Contemporary Indigenous and decolonial movements',
+                period: 'Present; jurisdiction- and people-specific',
+                match: 'Movement-level comparison concerning land, jurisdiction, language, cultural authority, reparations, resource extraction, and the limits of inherited settler-colonial states.',
+                caveat: 'No current movement or country should be labelled from rhetoric alone. The project needs community-reviewed sources and evidence about institutions, consent, internal diversity, and actual legal practice.',
+                citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth'], ['sepColonialism', 'sepClimateJustice']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'civic-nationalist', relation: 'shares self-government and civic membership, but anti-colonial liberation centers the experience of imperial domination and may be more transformative' },
+              { id: 'ethnic-nationalist', relation: 'can overlap where ethnic identity is mobilized against empire, but liberation can instead be civic, Indigenous, class-based, religiously plural, or transnational' },
+              { id: 'democratic-socialist', relation: 'may share economic equality and democratic participation, while anti-colonial politics adds sovereignty, racial hierarchy, and imperial dependency' },
+              { id: 'authoritarian-collectivist', relation: 'can overlap in state-led economic transformation or one-party postcolonial rule, but anti-colonial liberation itself does not imply authoritarian institutions' },
+              { id: 'anarchist-communalist', relation: 'shares anti-domination and local self-rule in some strands, while differing over the role of national sovereignty, parties, and the state' },
+              { id: 'green-commons', relation: 'overlaps where colonial extraction, land, ecological justice, and Indigenous sovereignty are central' },
+              { id: 'religious-traditionalist', relation: 'religious traditions may provide anti-colonial solidarity, but liberation does not require inherited religious authority in public law' },
+              { id: 'national-conservative', relation: 'both may value sovereignty and national identity, but national conservatism generally emphasizes continuity and order rather than emancipation from colonial domination' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'A central criticism is that national liberation can replace foreign rulers with a domestic elite, party, military, or bureaucracy that claims to speak for the people while suppressing workers, women, minorities, regional communities, or political opponents. Independence is therefore not the same as democratic emancipation. Safeguards include equal citizenship, constitutional review, free association, accountable security forces, open elections, independent courts, and meaningful participation by groups that were marginalized inside the liberation coalition.',
+            citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'lockeSecondTreatise'], ['sepColonialism', 'vdem', 'panAfricanism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns identity. A shared experience of colonial subordination can be politically necessary, yet a single national or ethnic identity may erase internal nations, caste and class differences, religious minorities, migrants, gendered violence, or Indigenous claims. The project should ask who is included in the “people,” who can dissent, how borders were formed, and whether self-determination is being claimed by the population as a whole or by one organized faction.',
+            citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'andersonImaginedCommunities', 'duboisBlackReconstruction'], ['sepColonialism', 'sepNationalism', 'panAfricanism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns violence and emergency rule. Anti-colonial writers documented coercion and argued about resistance under conditions that were not ordinary constitutional disagreement. Historical explanation should neither sanitize colonial violence nor treat it as permission for later abuses. Any modern comparison must separate resistance to domination, protection of civilians, insurgent strategy, terrorism, counterinsurgency, and postwar state coercion, with evidence for each rather than one moralized score.',
+            citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'kantPerpetualPeace'], ['sepColonialism', 'foreignPolicy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, formal sovereignty may coexist with economic dependency, unequal trade, foreign military basing, debt pressure, cultural hierarchy, extractive concessions, or inherited administrative categories. “Postcolonial” is therefore a field of continuing argument, not a proof that colonial relations have ended. Country and movement records should identify the period, institution, affected population, and evidence before making claims about neocolonialism or decolonization.',
+            citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism', 'nabucoAbolitionism', 'lockeSecondTreatise', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'spinozaPolitical', 'lockeLetterToleration', 'marxEngelsManifesto'],
+      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice'],
+      editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
+    },
+    researchGaps: [
+      'Add country-specific scholarship for Algeria, Ghana, India, Indonesia, Kenya, Mozambique, Angola, Guinea-Bissau, Brazil, the Caribbean, the Pacific, and Indigenous polities, with local historians and community reviewers where appropriate.',
+      'Expand the multilingual record with French, Portuguese, German, Arabic, Spanish, Hindi, Gujarati, Urdu, Bengali, Swahili, Amharic, and other relevant-language editions, translations, archives, and secondary scholarship.',
+      'Add comparative research on women’s organizing, caste, class, labor, disability, sexuality, religion, minority protection, and Indigenous jurisdiction within liberation movements rather than treating the movement as a single voice.',
+      'Add primary and scholarly sources on Nkrumah, Cabral, Senghor, Ambedkar, Nehru, Ho Chi Minh, Sukarno, José Rizal, Eduardo Mondlane, Amílcar Cabral, and other regional thinkers, preserving disagreements instead of creating one global canon.',
+      'Add evidence on post-independence institutions, military and party power, economic dependency, nonalignment, borders, resource concessions, foreign bases, debt, development, and the difference between formal sovereignty and effective self-determination.',
+      'Review current movement and country comparisons only with dated, jurisdiction-specific sources. Do not infer anti-colonial status from a government’s rhetoric, a majority identity, or a single historical grievance.',
+    ],
+  },
 };

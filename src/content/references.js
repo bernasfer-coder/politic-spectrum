@@ -256,6 +256,22 @@ export const AUTHOR_REFERENCES = {
     context: 'A historically situated anti-colonial text; it is cited critically and does not constitute a universal endorsement of revolutionary violence.',
     url: 'https://archive.org/details/wretchedofearth00fano',
   },
+  cesaireDiscourseColonialism: {
+    author: 'Aimé Césaire',
+    work: 'Discourse on Colonialism',
+    year: '1950',
+    kind: 'primary',
+    context: 'A French-language anti-colonial critique of racial hierarchy, imperial domination, and the material and cultural violence of colonialism; cited critically and paraphrased independently.',
+    url: 'https://catalogue.bnf.fr/ark:/12148/cb39259691z',
+  },
+  nabucoAbolitionism: {
+    author: 'Joaquim Nabuco',
+    work: 'O Abolicionismo',
+    year: '1883',
+    kind: 'primary',
+    context: 'A Portuguese-language Brazilian abolitionist work used to connect slavery, law, citizenship, national development, and constitutional reform; it is not treated as a complete theory of twentieth-century decolonization.',
+    url: 'https://bd.camara.leg.br/bd/items/06a7a704-9df6-4523-a7d3-e1803bded996/full',
+  },
   ostromGoverningCommons: {
     author: 'Elinor Ostrom',
     work: 'Beyond Markets and States: Polycentric Governance of Complex Economic Systems',
