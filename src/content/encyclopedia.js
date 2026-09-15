@@ -2262,8 +2262,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       economic: {
         score: 78,
         label: 'Strongly collectivist and ownership-transforming',
-        explanation: 'The profile gives workers and citizens a direct role in ownership, investment, production, and distribution through public enterprises, cooperatives, workplace democracy, social funds, or other forms of social ownership. It can retain markets for some goods and does not require one centralized state plan, which distinguishes it from a uniform command economy.',
-        citations: citations(['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution'], ['sepSocialism', 'sepLuxemburg']),
+        explanation: 'The profile gives workers and citizens a direct role in ownership, investment, production, and distribution through public enterprises, cooperatives, workplace democracy, social funds, or other forms of social ownership. It can retain markets for some goods and does not require one centralized state plan, which distinguishes it from a uniform command economy. Worker participation alongside employers, as envisaged by Weimar Article 165, does not itself establish social ownership.',
+        citations: citations(['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution'], ['sepSocialism', 'sepLuxemburg', 'ghdiWeimarGerman']),
       },
       social: {
         score: 58,
@@ -2274,8 +2274,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       authority: {
         score: -20,
         label: 'Democratic but institutionally active',
-        explanation: 'Public authority is used to democratize property and provide social rights, but competitive elections, free expression, independent unions, opposition parties, courts, and internal dissent are treated as necessary safeguards. The defining boundary is against a party-state that claims to embody the working class while removing democratic control.',
-        citations: citations(['luxemburgReformRevolution', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism', 'vdem']),
+        explanation: 'Public authority is used to democratize property and provide social rights, but competitive elections, free expression, independent unions, opposition parties, courts, and internal dissent are treated as necessary safeguards. The defining boundary is against a party-state that claims to embody the working class while removing democratic control. Historical council programmes also require scrutiny of who could vote and whose opposition remained protected.',
+        citations: citations(['luxemburgReformRevolution', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism', 'vdem', 'luxemburgSpartacusGerman']),
       },
       identity: {
         score: 40,
@@ -2311,6 +2311,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The label has two common uses. In one, democratic socialism means a long-term project of replacing major capitalist ownership with social, public, cooperative, or worker ownership through democratic means. In another, it names a broad left-democratic family that includes welfare-state reform, public services, labor power, market regulation, and gradual transformation. This entry keeps both meanings visible rather than treating the term as identical to either social democracy or revolutionary communism.',
             citations: citations(['bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'jauresSocialistHistory'], ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg']),
           },
+          {
+            type: 'paragraph',
+            text: 'Councils and parliaments were not always rival camps. Wolfgang Kruse describes most German councils in 1918 as supporting parliamentary democracy while seeking wider changes in public institutions and economic power.',
+            citations: citations([], ['kruseGermanRevolution']),
+          },
         ],
       },
       {
@@ -2331,6 +2336,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The tradition is therefore neither a simple midpoint between capitalism and communism nor a guarantee that public ownership is democratic. Public institutions can be captured by officials, parties, managers, or dominant majorities. A democratic-socialist analysis must ask who owns, who decides, how dissent is protected, how resources are allocated, and whether institutions can be revised without coercive political closure.',
             citations: citations(['luxemburgReformRevolution', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The 1919 Weimar provisions separate several institutional questions: Article 153 protected property, Article 159 protected labor association, and Article 165 envisaged workers and employees participating alongside employers. These provisions help distinguish ownership, collective organization, and participation. Their constitutional recognition alone cannot tell us how much power workers actually exercised.',
+            citations: citations([], ['ghdiWeimarGerman']),
           },
         ],
       },
@@ -2356,7 +2366,22 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             period: '1917–1930s: revolution, civil liberties, and party-state divergence',
             text: 'The Russian Revolution intensified the dispute over whether a revolutionary government could preserve plural democracy under civil war and economic collapse. Luxemburg supported socialist transformation but criticized the suppression of political freedom and independent participation; later one-party regimes made the distinction between democratic socialism and authoritarian collectivism a central historical issue.',
-            citations: citations(['luxemburgReformRevolution', 'leninStateRevolution'], ['sepLuxemburg', 'sepSocialism']),
+            citations: citations(['leninStateRevolution'], ['sepLuxemburg', 'sepSocialism']),
+          },
+          {
+            period: 'November–December 1918: councils and parliamentary transition',
+            text: 'Kruse presents the German workers’ and soldiers’ councils as predominantly social-democratic transitional bodies. The December congress supported an elected National Assembly, while demands for democratizing administration, the military, and economic life extended beyond choosing a parliament.',
+            citations: citations([], ['kruseGermanRevolution']),
+          },
+          {
+            period: 'December 1918: the Spartacus programme’s distinct electorate',
+            text: 'Luxemburg’s programme required the support of a large proletarian majority before taking governmental power. It also proposed replacing parliaments with workers’ and soldiers’ councils, elected through class-defined constituencies with recall rights. The majority condition therefore concerned a different electorate from universal parliamentary citizenship. This is a revolutionary comparator with a significant boundary from the pluralist profile described here.',
+            citations: citations([], ['luxemburgSpartacusGerman']),
+          },
+          {
+            period: '1919: constitutional labor rights and economic participation',
+            text: 'The Weimar Constitution combined property guarantees with labor association and participation provisions. It is evidence of a negotiated constitutional framework; those articles do not demonstrate that Germany acquired democratic-socialist ownership institutions.',
+            citations: citations([], ['ghdiWeimarGerman']),
           },
           {
             period: '1945–1970s: reconstruction, welfare, and programme pluralism',
@@ -2392,8 +2417,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 label: 'Participatory or council socialism',
                 distinction: 'Emphasizes direct participation through workplace councils, assemblies, federations, and democratic planning rather than relying only on representative parties.',
-                relation: 'Shares Luxemburg’s concern with active mass democracy and is vulnerable to questions about scale, expertise, coordination, and minority rights.',
-                citations: citations(['luxemburgReformRevolution', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism']),
+                relation: 'Council projects differ over their electorate and their relationship with parliament; the label alone does not establish equal political rights.',
+                citations: citations(['luxemburgReformRevolution', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism', 'luxemburgSpartacusGerman']),
+              },
+              {
+                label: 'Council participation alongside parliamentary democracy',
+                distinction: 'Uses workplace or local participation to deepen a representative democracy.',
+                relation: 'A possible combination discussed in German revolutionary historiography; its historical feasibility remains contested.',
+                citations: citations([], ['kruseGermanRevolution', 'jesseKoehlerCouncilDebate']),
               },
               {
                 label: 'Revolutionary democratic socialism',
@@ -2432,8 +2463,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'Rosa Luxemburg',
                 role: 'socialist theorist linking economic emancipation to mass democracy and political freedom',
-                caveat: 'Her revolutionary Marxism is not identical to gradualist social democracy, and her proposals remain historically situated.',
-                citations: citations(['luxemburgReformRevolution'], ['sepLuxemburg', 'sepSocialism']),
+                caveat: 'Her 1918 council programme makes her a qualified revolutionary reference, not an exact match for this profile’s parliamentary safeguards.',
+                citations: citations(['luxemburgReformRevolution'], ['sepLuxemburg', 'sepSocialism', 'luxemburgSpartacusGerman']),
               },
               {
                 name: 'Jean Jaurès',
@@ -2464,6 +2495,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'documented programme-level comparator',
                 caveat: 'Godesberg defined democratic socialism through freedom, dignity, pluralism, and social justice while moving toward a mixed economy; it is not evidence of a single timeless meaning of socialism.',
                 citations: citations(['bernsteinEvolutionarySocialism'], ['ghdiGodesberg']),
+              },
+              {
+                name: 'German workers’ and soldiers’ councils',
+                period: '1918–1919',
+                match: 'diverse historical institutions of participation',
+                caveat: 'Their politics and authority varied locally; a shared council name does not establish one programme or a realized democratic-socialist state.',
+                citations: citations([], ['kruseGermanRevolution', 'jesseKoehlerCouncilDebate']),
               },
               {
                 name: 'French socialist and republican traditions associated with Jaurès',
@@ -2502,6 +2540,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
               { id: 'anarchist-communalist', relation: 'shares social ownership and anti-domination goals but rejects centralized state authority more radically' },
               { id: 'progressive-liberal', relation: 'shares equal citizenship and social reform but generally retains liberal property relations and a less ownership-transforming economy' },
               { id: 'libertarian-socialist', relation: 'shares anti-authoritarian and worker-control concerns, with stronger skepticism toward state coordination' },
+              { id: 'council-communism', relation: 'related through worker self-government, but not a synonym for every council institution or parliamentary democratic socialism' },
               { id: 'green-commons', relation: 'overlaps on ecological and common ownership proposals, with a more explicit ecological and polycentric foundation' },
               { id: 'religious-socialist', relation: 'shares economic egalitarianism while grounding some movements in religious ethics and communities' },
             ],
@@ -2524,6 +2563,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Historical possibility is contested. In 1978, Eckhard Jesse and Henning Köhler challenged claims that councils could have secured a more durable democracy, emphasizing their mandate, administrative capacity, and relations with parliament. Kruse’s later synthesis emphasizes their democratic aspirations while acknowledging uncertainty about achievable reforms. These readings warrant examination of local evidence; neither makes an unrealized alternative a demonstrated outcome.',
+            citations: citations([], ['jesseKoehlerCouncilDebate', 'kruseGermanRevolution']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, democracy itself is not a guarantee of equality. Majorities can exclude minorities, national welfare systems can be bounded by citizenship, and socialist movements have historically reproduced gender, racial, colonial, and cultural hierarchies. The profile should therefore be evaluated through both economic ownership and the actual protection of plural political and social freedom.',
             citations: citations(['jauresSocialistHistory', 'wollstonecraftRights', 'millOnLiberty'], ['sepSocialism', 'sepLuxemburg', 'jauresArchive']),
           },
@@ -2532,11 +2576,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'jauresSocialistHistory', 'millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'kantPerpetualPeace', 'morgenthauRealism', 'leninStateRevolution'],
-      researchSourceIds: ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg', 'jauresArchive', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
-      editorialNote: 'The entry keeps democratic socialism distinct from both reformist social democracy and authoritarian state socialism, while acknowledging that historical parties and authors use the labels differently. Scores describe a didactic democratic ownership profile, not a single party programme or country.',
+      researchSourceIds: ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg', 'jauresArchive', 'sepLiberalism', 'sepReligionPolitics', 'luxemburgSpartacusGerman', 'ghdiWeimarGerman', 'kruseGermanRevolution', 'jesseKoehlerCouncilDebate', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
+      editorialNote: 'The entry keeps democratic socialism distinct from both reformist social democracy and authoritarian state socialism, while acknowledging that historical parties and authors use the labels differently. Scores describe a didactic democratic ownership profile, not a single party programme or country. German primary documents are paraphrased independently; GHDI provides selected excerpts. Luxemburg’s programme records proposals, and the Kruse and Jesse–Köhler accounts supply attributed historical interpretations. None measures six-axis coordinates.',
     },
     researchGaps: [
-      'Add German-language scholarship on the SPD, Godesberg, council democracy, East German socialist experience, and the post-war constitutional debate over democratic socialism.',
+      'German primary documents and contrasting interpretations now cover part of the 1918–1919 council debate. Add local council records, implementation studies of Weimar labor participation, and specialist research on the SPD, Godesberg, East German socialist experience, and post-war constitutional debates. Compare Luxemburg’s programme with her other writings before generalizing its institutional commitments.',
       'Add French-language scholarship on Jaurès, the SFIO, syndicalism, republican socialism, colonialism, and the relationship between democratic and revolutionary currents.',
       'Add Portuguese- and Spanish-language scholarship on Iberian socialism, Latin American democratic socialism, Allende, social movements, and the different meanings of state, communal, and worker ownership.',
       'Add country-specific evidence before listing present parties, welfare states, or cooperative systems as democratic-socialist examples; party labels and institutions change over time.',
