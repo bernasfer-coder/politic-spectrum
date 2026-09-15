@@ -424,6 +424,30 @@ export const AUTHOR_REFERENCES = {
     context: 'A movement programme linking Christian moral language, nonviolent direct action, racial justice, jobs, income, and economic rights; it is used as a movement example rather than evidence of one complete socialist system.',
     url: 'https://kinginstitute.stanford.edu/publications/autobiography-martin-luther-king-jr/chapter-31-poor-peoples-campaign',
   },
+  muddeKaltwasserPopulism: {
+    author: 'Cas Mudde & Cristóbal Rovira Kaltwasser',
+    work: 'Populism: A Very Short Introduction',
+    year: '2017',
+    kind: 'scholarly',
+    context: 'Comparative account of populism as a thin-centered ideology that constructs a pure people against a corrupt elite and attaches to host ideologies on the left or right.',
+    url: 'https://books.google.com/books/about/Populism_A_Very_Short_Introduction.html?id=zVjODQAAQBAJ',
+  },
+  mullerWhatIsPopulism: {
+    author: 'Jan-Werner Müller',
+    work: 'What Is Populism?',
+    year: '2016',
+    kind: 'scholarly',
+    context: 'Political-theory critique emphasizing populism’s claim to exclusive moral representation of the real people and the resulting tension with pluralism, opposition, and institutional accountability.',
+    url: 'https://www.pennpress.org/9780812248982/what-is-populism/',
+  },
+  laclauOnPopulistReason: {
+    author: 'Ernesto Laclau',
+    work: 'On Populist Reason',
+    year: '2005',
+    kind: 'scholarly',
+    context: 'Post-Marxist account of populist articulation, political demands, antagonism, and the construction of a popular subject; cited as one theoretical approach and not as a universal description of populist movements.',
+    url: 'https://www.penguinrandomhouse.com/books/233079/on-populist-reason-by-ernesto-laclau/',
+  },
 };
 
 // Every band receives an explicit list. These are references for the
