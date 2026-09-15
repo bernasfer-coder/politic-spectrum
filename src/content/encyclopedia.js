@@ -530,4 +530,300 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist review on gender, religion, political economy, colonialism, and the relationship between fascist movements and traditional conservative elites.',
     ],
   },
+  'libertarian-market': {
+    id: 'libertarian-market',
+    title: 'Libertarian market liberal',
+    canonicalLabel: 'Libertarian market liberal',
+    aliases: [
+      'right-libertarianism',
+      'market libertarianism',
+      'minarchist liberalism',
+      'classical-liberal market order',
+    ],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This is a deliberately narrow profile joining strong market and property preferences to strong limits on coercive government. Libertarianism is a family of views, not one complete programme; left-libertarian, classical-liberal, minarchist, and anarcho-capitalist positions differ in important ways.',
+    timeScope: 'Intellectual roots in early modern natural-rights and toleration arguments; modern formulations developed through classical liberalism, twentieth-century Austrian economics, and contemporary political philosophy.',
+    geographicScope: 'Transnational intellectual tradition with important British, European, and North American strands; no current country is an exact six-axis match.',
+    summary: 'A market-oriented libertarian profile that treats individual liberty, private property, voluntary exchange, freedom of contract, and protection from coercion as central political values. It favors a highly limited state or, in stronger versions, voluntary and market-based alternatives to state functions, while leaving social customs and personal identity largely to individual choice.',
+    summaryCitations: citations(
+      ['hayekKnowledge', 'millOnLiberty', 'nozickASU', 'lockeSecondTreatise'],
+      ['sepLibertarianism', 'sepLiberalism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -86,
+        label: 'Strongly free-market',
+        explanation: 'Private property, contract, competition, and decentralized exchange are preferred to central planning, broad redistribution, and extensive economic regulation. The score describes a normative preference; it does not imply that markets operate without law, public institutions, or historically inherited power.',
+        citations: citations(['adamSmithWealth', 'hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
+      },
+      social: {
+        score: 34,
+        label: 'Moderately progressive / socially permissive',
+        explanation: 'The profile generally resists state enforcement of a single morality and protects voluntary association, speech, conscience, and lifestyle choice. “Libertarian” does not automatically mean culturally progressive: some libertarians combine economic freedom with traditional religious or social commitments.',
+        citations: citations(['millOnLiberty', 'lockeLetterToleration'], ['sepLibertarianism', 'sepLiberalism']),
+      },
+      authority: {
+        score: -88,
+        label: 'Strongly libertarian',
+        explanation: 'Coercive government is restricted to protecting persons and rights, enforcing contracts, resolving disputes, and possibly providing a narrow set of public functions. Minarchists accept a minimal state; anarcho-capitalists reject a territorial state entirely, so this profile spans an important internal boundary.',
+        citations: citations(['nozickASU', 'millOnLiberty', 'lockeSecondTreatise'], ['sepLibertarianism']),
+      },
+      identity: {
+        score: 34,
+        label: 'Moderately internationalist / individualist',
+        explanation: 'The profile prioritizes individual rights and voluntary cooperation over compulsory national unity. It can support free trade, migration, and cosmopolitan exchange, but some libertarians defend national borders or civic attachment on property, security, or self-government grounds.',
+        citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'adamSmithWealth'], ['sepLibertarianism', 'sepLiberalism']),
+      },
+      foreign: {
+        score: 72,
+        label: 'Strongly restraint-oriented',
+        explanation: 'Military intervention, conscription, empire, and nation-building are viewed skeptically because they require coercion and taxation. A limited defensive state, alliances, or force against aggression may still be accepted; restraint is not absolute pacifism.',
+        citations: citations(['millOnLiberty', 'kantPerpetualPeace', 'morgenthauRealism'], ['sepLibertarianism']),
+      },
+      religion: {
+        score: 55,
+        label: 'Secular and pluralist public law',
+        explanation: 'Freedom of conscience and religious association are protected, while the state should not impose a church or a comprehensive religious morality. This is compatible with deeply religious citizens and voluntary communities; it is not a claim that the profile is personally nonreligious.',
+        citations: citations(['lockeLetterToleration', 'millOnLiberty'], ['sepReligionPolitics', 'sepLibertarianism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: '“Libertarian market liberal” is an educational profile for a cluster of views that gives individual freedom and protection from coercion priority, treats private property and voluntary exchange as important conditions of that freedom, and sharply limits the legitimate scope of government. It is closer to right-libertarian and market-liberal positions than to libertarian socialism or every form of classical liberalism.',
+            citations: citations(['hayekKnowledge', 'nozickASU', 'millOnLiberty'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile is not the same as “anything a market-friendly person believes.” It combines economic decentralization with a strong anti-coercion principle. A person or party may support markets while also accepting a large welfare state, military intervention, religious law, or strong cultural regulation; such a position should be scored on those dimensions separately.',
+            citations: citations(['millOnLiberty', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The central moral idea is that people should control their own lives and should not be coerced for their own alleged good or to produce a preferred pattern of social equality. Libertarian arguments differ over whether rights are natural, self-ownership based, contractual, consequentialist, or grounded in the benefits of spontaneous cooperation, but they converge in treating coercion as a serious burden requiring justification.',
+            citations: citations(['nozickASU', 'millOnLiberty'], ['sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The economic argument is both moral and informational. Private property and contract give people authority over resources, while market prices and decentralized decisions can transmit knowledge that no central planner possesses in full. Hayek’s argument is not a proof that every market is efficient or just; it is a critique of assuming that a central authority can reliably collect and use all relevant local knowledge.',
+            citations: citations(['hayekKnowledge', 'adamSmithWealth'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A limited state still requires law, courts, policing, and rules defining property and contract. This creates an internal tension: markets are defended as voluntary orders, but the legal framework that makes ownership and exchange possible is publicly enforced. Libertarian theories disagree over how much collective provision is compatible with that framework and whether some state functions can be supplied privately.',
+            citations: citations(['nozickASU', 'lockeSecondTreatise'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Seventeenth–eighteenth centuries: natural rights and toleration',
+            text: 'Lockean arguments linked political legitimacy to individual rights, consent, limited government, property, and protection of conscience. These are important roots of liberal constitutionalism, but Locke’s own views do not amount to every modern libertarian position.',
+            citations: citations(['lockeSecondTreatise', 'lockeLetterToleration'], ['sepLiberalism', 'sepReligionPolitics']),
+          },
+          {
+            period: 'Eighteenth–nineteenth centuries: classical liberal political economy',
+            text: 'Smith and later classical liberals argued for limits on arbitrary power, commercial society, and the benefits of exchange, while liberal reformers differed over poverty, empire, labor, public education, and the scope of the state. Classical liberalism was a spectrum, not a single near-anarchist doctrine.',
+            citations: citations(['adamSmithWealth', 'millOnLiberty'], ['sepLiberalism']),
+          },
+          {
+            period: '1859 and the development of individual liberty',
+            text: 'Mill’s defense of individuality, free discussion, voluntary association, and a harm-based limit on coercion expanded the social and expressive side of liberal freedom. Mill was not a contemporary right-libertarian on every question; his utilitarianism and openness to some public action matter for accurate classification.',
+            citations: citations(['millOnLiberty'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+          {
+            period: 'Twentieth century: Austrian economics and modern libertarian philosophy',
+            text: 'Hayek emphasized dispersed knowledge and the coordination role of prices, while Nozick developed a rights-based argument for a minimal state and against patterned redistributive justice. Their arguments are influential but distinct: Hayek’s institutional and epistemic case is not identical to Nozick’s deontological theory of rights.',
+            citations: citations(['hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            period: 'Contemporary debates',
+            text: 'Current libertarian philosophy contains right- and left-libertarian positions, minarchism, anarcho-capitalism, market anarchism, and hybrid classical-liberal approaches. The major disputes concern original appropriation, redistribution, public goods, borders, environmental harm, social insurance, corporate power, and the legitimacy of the state itself.',
+            citations: citations(['nozickASU', 'millOnLiberty'], ['sepLibertarianism']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Classical liberalism',
+                distinction: 'Defends rights, constitutional limits, private property, and markets but may accept a broader role for public goods, regulation, education, or social reform than strict libertarianism.',
+                relation: 'Historical and intellectual neighbor; the boundary is gradual rather than a clean dividing line.',
+                citations: citations(['adamSmithWealth', 'millOnLiberty', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertarianism']),
+              },
+              {
+                label: 'Minarchism / right-libertarianism',
+                distinction: 'Treats a minimal state protecting against force, theft, fraud, and rights violations as legitimate, while rejecting extensive redistribution and regulation.',
+                relation: 'Closest fit to this card’s authority and economic coordinates.',
+                citations: citations(['nozickASU'], ['sepLibertarianism']),
+              },
+              {
+                label: 'Anarcho-capitalism',
+                distinction: 'Rejects a territorial state and proposes private, contractual, or competitive provision of law, security, and other services.',
+                relation: 'More radical on authority; it shares the market orientation but should not be collapsed into minimal-state liberalism.',
+                citations: citations(['nozickASU'], ['sepLibertarianism']),
+              },
+              {
+                label: 'Left-libertarianism',
+                distinction: 'Combines strong individual rights with egalitarian or shared claims concerning natural resources, land, or the background conditions of appropriation.',
+                relation: 'Shows why individual liberty does not logically settle one position on distributive justice or economic inequality.',
+                citations: citations(['lockeSecondTreatise'], ['sepLibertarianism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No country is a complete contemporary match for a philosophical ideal. States that protect markets and civil liberties also tax, regulate, provide public goods, restrict migration, maintain militaries, and make compromises that move them away from this profile.',
+            citations: citations(['hayekKnowledge', 'millOnLiberty'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'John Locke',
+                role: 'natural-rights and limited-government precursor',
+                caveat: 'A foundational liberal influence, not a complete modern libertarian.',
+                citations: citations(['lockeSecondTreatise', 'lockeLetterToleration'], ['sepLiberalism']),
+              },
+              {
+                name: 'Adam Smith',
+                role: 'political economist of commercial society and exchange',
+                caveat: 'Smith’s broader moral and institutional thought should not be reduced to laissez-faire absolutism.',
+                citations: citations(['adamSmithWealth'], ['sepLiberalism']),
+              },
+              {
+                name: 'John Stuart Mill',
+                role: 'defender of individuality, discussion, and limits on coercion',
+                caveat: 'Mill supported some public action and is best treated as a liberal neighbor rather than a pure right-libertarian.',
+                citations: citations(['millOnLiberty'], ['sepLiberalism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Friedrich Hayek',
+                role: 'critic of centralized economic planning and theorist of dispersed knowledge',
+                caveat: 'Hayek defended a rule-bound state and should not be equated with anarcho-capitalism.',
+                citations: citations(['hayekKnowledge'], ['sepLibertarianism', 'sepLiberalism']),
+              },
+              {
+                name: 'Robert Nozick',
+                role: 'rights-based defender of the minimal state',
+                caveat: 'Nozick’s argument is one influential philosophical version, not a consensus definition of libertarianism.',
+                citations: citations(['nozickASU'], ['sepLibertarianism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Nineteenth-century British classical liberalism',
+                period: 'especially the free-trade and reform era',
+                match: 'partial historical intellectual and policy resemblance',
+                caveat: 'Britain retained empire, class hierarchy, limited suffrage for much of the period, and state coercion; it is not an exact libertarian society.',
+                citations: citations(['adamSmithWealth', 'millOnLiberty'], ['sepLiberalism']),
+              },
+              {
+                name: 'Classical-liberal constitutional traditions',
+                period: 'eighteenth century to present',
+                match: 'institutional partial resemblance where rights, rule of law, private property, and limited government are strong',
+                caveat: 'Constitutional liberalism can support welfare provision, public services, regulation, and collective defense beyond strict libertarian limits.',
+                citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Contemporary market democracies',
+                period: 'present',
+                match: 'no exact country match; use comparative evidence only',
+                caveat: 'A country’s market openness or civil-liberties score cannot establish the full philosophical profile without examining taxation, regulation, welfare, coercion, borders, and foreign policy together.',
+                citations: citations(['hayekKnowledge', 'millOnLiberty'], ['sepLibertarianism', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'libertarianism', relation: 'broader philosophical family' },
+              { id: 'classical-liberalism', relation: 'historical and theoretical neighbor with a broader range of state roles' },
+              { id: 'anarcho-capitalism', relation: 'more radical rejection of the state' },
+              { id: 'constitutionalism', relation: 'institutional framework for limited and rule-bound government' },
+              { id: 'social-liberalism', relation: 'liberal neighbor that accepts a more active redistributive and regulatory state' },
+              { id: 'libertarian-socialist', relation: 'shares anti-authoritarian concerns but rejects private-capital primacy' },
+              { id: 'anarcho-communism', relation: 'anti-state and anti-capitalist counterpoint' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that libertarian rights and property rules cannot avoid questions of history, unequal bargaining power, inherited wealth, and the distribution of natural resources. They also argue that taxation and regulation can protect the background conditions that make freedom and markets meaningful, rather than simply violating liberty.',
+            citations: citations(['nozickASU', 'millOnLiberty'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns collective-action problems. Pollution, public health, infrastructure, defense, monopoly, financial instability, and basic education may generate harms or coordination needs that voluntary exchange does not solve reliably. Libertarian responses vary: some defend private provision, some accept narrow public goods, and some revise the theory toward classical liberalism.',
+            citations: citations(['hayekKnowledge', 'millOnLiberty'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile must not turn “freedom” into a one-axis synonym for low taxes or weak government. Private employers, landlords, monopolies, families, religious institutions, and criminal organizations can also constrain people. The analysis should record who holds power, which coercive mechanisms exist, and whether individuals have meaningful exit and voice.',
+            citations: citations(['millOnLiberty', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: [
+        'lockeSecondTreatise',
+        'lockeLetterToleration',
+        'adamSmithWealth',
+        'millOnLiberty',
+        'hayekKnowledge',
+        'nozickASU',
+        'kantPerpetualPeace',
+        'morgenthauRealism',
+      ],
+      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'vdem'],
+      editorialNote: 'The entry distinguishes primary arguments from comparative philosophical interpretation. Its scores describe one market-libertarian archetype and do not define all classical liberals, libertarians, or market-oriented governments.',
+    },
+    researchGaps: [
+      'Add French-language sources on Constant, Bastiat, and the liberal tradition, with care around the difference between nineteenth-century liberalism and contemporary libertarianism.',
+      'Add German-language scholarship on the ordoliberal and Austrian traditions; neither should be treated as interchangeable with minarchism or anarcho-capitalism.',
+      'Add specialist research on public goods, externalities, corporate power, environmental limits, and the empirical performance of low-tax or low-regulation regimes.',
+      'Add country-specific data before showing contemporary states as examples; current market openness and civil-liberties indicators are not sufficient for an exact six-axis match.',
+    ],
+  },
 };
