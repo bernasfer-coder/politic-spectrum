@@ -80,6 +80,14 @@ export const AUTHOR_REFERENCES = {
     context: 'A French liberal primary text used to distinguish modern individual and civil liberty from direct political participation in the ancient model; it is not treated as a complete economic programme.',
     url: 'https://oll.libertyfund.org/titles/constant-the-liberty-of-ancients-compared-with-that-of-moderns-1819?html=true',
   },
+  bagehotEnglishConstitution: {
+    author: 'Walter Bagehot',
+    work: 'The English Constitution',
+    year: '1867',
+    kind: 'primary',
+    context: 'Nineteenth-century analysis of the British constitutional system, including the relationship between the symbolic and governing parts of a constitutional monarchy; it is a historical account, not a universal defence of hereditary rule.',
+    url: 'https://www.gutenberg.org/ebooks/4351',
+  },
   hayekKnowledge: {
     author: 'Friedrich A. Hayek',
     work: 'The Use of Knowledge in Society',

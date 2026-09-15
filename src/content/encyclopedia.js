@@ -5573,4 +5573,389 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add dated country and party evidence before using current examples; distinguish cultural preference, minority protection, secession, nativism, ethnocracy, racial hierarchy, fascism, and genocidal intent through explicit institutional criteria.',
     ],
   },
+  monarchist: {
+    id: 'monarchist',
+    title: 'Monarchist',
+    canonicalLabel: 'Monarchism / royalism',
+    aliases: [
+      'monarchism',
+      'royalism',
+      'kingship',
+      'hereditary monarchy',
+      'constitutional monarchy',
+      'parliamentary monarchy',
+      'absolute monarchy',
+    ],
+    entryType: 'institutional and ideological reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Monarchism is a family of arguments and institutions that place a monarch or royal house at the head of the state, usually through hereditary succession but sometimes through election or dynastic selection. The presence of a monarch does not by itself establish absolute rule, conservatism, religion, nationalism, or a particular economic order; the decisive evidence is how authority is acquired, limited, exercised, and removed.',
+    timeScope: 'Kingship and royal government have ancient and medieval antecedents. The modern profile is most useful when distinguishing early-modern sovereignty, constitutional monarchy, parliamentary monarchy, imperial monarchy, and contemporary ceremonial crowns from one another.',
+    geographicScope: 'Global institutional family with varied histories in Europe, the Middle East, Africa, Asia, the Pacific, and the Americas. European constitutional cases are overrepresented in accessible comparative literature, so the entry keeps non-European and colonial histories as explicit research gaps rather than treating the British model as universal.',
+    summary: 'A political orientation that regards a monarch or royal dynasty as a legitimate head of state and often as a source of continuity, unity, authority, or tradition. Monarchism ranges from absolute or sacred kingship to constitutional and parliamentary systems in which elected governments exercise practical power. Because hereditary office can coexist with democracy, welfare states, secular law, or authoritarian rule, the label must be analyzed as an institutional arrangement and a theory of legitimacy rather than placed on a single left–right line.',
+    summaryCitations: citations(
+      ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
+      ['bpbMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'journalDemocraticMonarchies', 'sepMedieval'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -12,
+        label: 'Economically open-ended; historically market-compatible',
+        explanation: 'Monarchy is not an ownership doctrine. Royal governments have organized feudal, mercantilist, colonial, capitalist, welfare, developmental, and state-directed economies. A slight market-side placement reflects the common compatibility of constitutional monarchies with private property and market institutions, not a necessary feature of royalism; absolute or social-monarchical movements may score differently.',
+        citations: citations(['hobbesLeviathan', 'lockeSecondTreatise', 'nabucoAbolitionism'], ['bpbMonarchy', 'openTextbook', 'journalDemocraticMonarchies']),
+      },
+      social: {
+        score: -48,
+        label: 'Tradition- and hierarchy-oriented, variant-dependent',
+        explanation: 'Dynastic succession, inherited rank, ceremony, family continuity, and established custom give monarchism a traditionalist and hierarchical tendency. Constitutional monarchies can coexist with equal citizenship and social pluralism, while absolutist, aristocratic, or religious royalism may defend stronger social hierarchy. The score therefore marks institutional inheritance, not a fixed position on every contemporary social issue.',
+        citations: citations(['burkeReflections', 'aquinasMoralPolitical', 'bagehotEnglishConstitution'], ['bpbMonarchy', 'oxfordMonarchyConstitution', 'journalDemocraticMonarchies']),
+      },
+      authority: {
+        score: 52,
+        label: 'Monarchical authority; highly regime-dependent',
+        explanation: 'A monarchic office gives one person or dynasty a constitutionally distinctive position, so the authority score is above the midpoint. It becomes strongly authoritarian only when the monarch rules without effective legal, representative, judicial, or public constraints. In a parliamentary monarchy, the crown may retain symbolic, appointing, or reserve functions while ministers accountable to parliament exercise governing power.',
+        citations: citations(['hobbesLeviathan', 'aquinasMoralPolitical', 'bagehotEnglishConstitution', 'lockeSecondTreatise'], ['bpbMonarchy', 'ukParliamentCrown', 'oxfordConstitutionalMonarchy', 'vdem']),
+      },
+      identity: {
+        score: -42,
+        label: 'National and dynastic continuity-oriented',
+        explanation: 'Royal houses often symbolize historical continuity, national unity, territory, religion, or a people’s inherited story. This can support civic attachment or a plural constitutional identity, but it can also privilege dynasty, court culture, ethnic tradition, or imperial memory. The negative score on this project’s identity axis indicates a moderate nationalist and continuity-side tendency, not ethnic nationalism in every monarchy.',
+        citations: citations(['burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'], ['bpbMonarchy', 'sepNationalism', 'oxfordMonarchyConstitution']),
+      },
+      foreign: {
+        score: -18,
+        label: 'Historically expansion-capable; policy-open-ended',
+        explanation: 'Dynastic alliances, imperial claims, royal diplomacy, and military command have historically supported both war and peace. Constitutional monarchies may pursue restrained multilateral foreign policy, while imperial or absolutist monarchies may expand territorially. The score records the historical association with dynastic and imperial statecraft, not an inherent requirement of monarchy.',
+        citations: citations(['hobbesLeviathan', 'burkeReflections', 'nabucoAbolitionism'], ['foreignPolicy', 'oxfordMonarchyConstitution', 'openTextbook']),
+      },
+      religion: {
+        score: -52,
+        label: 'Often sacralized; secular variants exist',
+        explanation: 'Many monarchies have grounded legitimacy in divine sanction, sacred ceremony, established churches, religious law, or the idea of the monarch as protector of a faith. Constitutional and parliamentary monarchies may instead be religiously neutral or maintain only ceremonial establishments. The score signals the historical relationship between kingship and sacred legitimacy, not automatic theocracy.',
+        citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeLetterToleration'], ['sepReligionPolitics', 'bpbMonarchy', 'oxfordMonarchyConstitution']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Monarchism treats a monarch or royal house as a legitimate head of state and, in some variants, as a governing authority. Its central question is not simply whether a country has a king or queen, but why the office exists, how succession works, what powers the office holds, and whether those powers are constrained by law, representation, custom, religion, or popular consent.',
+            citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise'], ['bpbMonarchy', 'sepMedieval', 'oxfordConstitutionalMonarchy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The same institutional label covers very different regimes. An absolute monarch may make laws, command administration, control courts, and suppress opposition; a parliamentary monarch may be a non-partisan head of state whose public acts are performed on ministerial advice. A constitutional monarch can still possess meaningful reserve powers or dynastic privilege, so ceremonial appearance is not by itself proof of political insignificance.',
+            citations: citations(['hobbesLeviathan', 'bagehotEnglishConstitution', 'lockeSecondTreatise'], ['bpbMonarchy', 'ukParliamentCrown', 'oxfordConstitutionalMonarchy', 'journalDemocraticMonarchies']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Monarchism also should not be classified automatically as right-wing, religious, nationalist, or anti-democratic. Royalists have defended hierarchy, divine right, empire, and inherited privilege, but constitutional monarchists have also supported representative government, civil liberties, social insurance, and democratic continuity. This entry therefore scores the royal principle separately from the economic, social, identity, religious, and foreign-policy choices made by a particular movement or state.',
+            citations: citations(['burkeReflections', 'nabucoAbolitionism', 'bagehotEnglishConstitution'], ['bpbMonarchy', 'journalDemocraticMonarchies', 'vdem', 'sepReligionPolitics']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Monarchic legitimacy can be dynastic, religious, historical, constitutional, military, popular, or some combination. Hereditary succession promises continuity and can reduce competition over the headship of state, but it also assigns public office by birth. Elective or rotational monarchies retain a royal form while changing the succession mechanism, and some monarchies use councils, aristocratic estates, clerical authorities, or family institutions to select the ruler.',
+            citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['bpbMonarchy', 'sepMedieval', 'openTextbook']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Absolute or executive monarchism concentrates governing authority in the crown or its court. The monarch may appoint ministers, command armed forces, issue decrees, control taxation, and influence courts or representative bodies. Constitutional limitation can be formal or conventional: written constitutional rules, parliamentary confidence, ministerial responsibility, judicial review, legal traditions, and public legitimacy may constrain the crown to very different degrees.',
+            citations: citations(['hobbesLeviathan', 'lockeSecondTreatise', 'aquinasMoralPolitical'], ['bpbMonarchy', 'oxfordMonarchyConstitution', 'oxfordConstitutionalMonarchy', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Parliamentary monarchy separates the symbolic head of state from the elected government without necessarily eliminating political questions about the crown. The monarch can embody continuity, perform ceremonial duties, appoint a government under constitutional rules, and sometimes exercise reserve powers during a crisis. The democratic issue is whether those powers are transparent, legally bounded, non-partisan, and ultimately accountable to citizens rather than protected by personal or dynastic privilege.',
+            citations: citations(['bagehotEnglishConstitution', 'nabucoAbolitionism'], ['ukParliamentCrown', 'oxfordConstitutionalMonarchy', 'journalDemocraticMonarchies', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Royal symbolism can unify a political community, especially where a dynasty is treated as above ordinary party conflict. It can also naturalize class hierarchy, colonial memory, gendered succession, aristocratic privilege, or an established religion. The same ceremony can be experienced as inclusive public history by some citizens and as a reminder of conquest or exclusion by others, so symbolic legitimacy should be studied alongside law, distribution, and lived political participation.',
+            citations: citations(['burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'], ['oxfordMonarchyConstitution', 'bpbMonarchy', 'sepColonialism', 'ohchrMinorityRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Monarchy is therefore a poor proxy for the rest of the political spectrum. A crown can preside over a market economy or welfare state, a secular constitution or established church, a liberal democracy or an authoritarian regime, and a defensive or imperial foreign policy. The profile should be assigned only after the relevant constitutional and historical evidence is identified.',
+            citations: citations(['nabucoAbolitionism', 'bagehotEnglishConstitution', 'lockeSecondTreatise'], ['bpbMonarchy', 'journalDemocraticMonarchies', 'vdem', 'sepReligionPolitics', 'foreignPolicy']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Ancient kingdoms and imperial courts',
+            text: 'Kingship appeared in many ancient political orders alongside councils, assemblies, priesthoods, aristocracies, cities, and empires. These cases establish the long history of royal authority but should not be projected directly onto modern constitutional monarchy, national citizenship, or the contemporary concept of a party-based ideology.',
+            citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan'], ['sepMedieval', 'openTextbook']),
+          },
+          {
+            period: 'Medieval theories of kingship, law, and tyranny',
+            text: 'Medieval political thought debated the common good, the moral duties of rulers, the relationship between temporal and religious authority, customary law, and the danger of tyranny. Kingship was often treated as legitimate only when directed toward a community’s good, although actual institutions varied across Latin Christian, Islamic, African, Asian, and other political worlds.',
+            citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan'], ['sepMedieval', 'sepReligionPolitics', 'openTextbook']),
+          },
+          {
+            period: 'Sixteenth–seventeenth centuries: sovereignty and the administrative crown',
+            text: 'War, taxation, bureaucratic administration, religious conflict, and territorial consolidation strengthened arguments for a unified sovereign power. Some theories defended the crown as the best guarantor of peace; others argued that royal power remained subject to natural law, customary limits, property, or the consent of the governed.',
+            citations: citations(['hobbesLeviathan', 'lockeSecondTreatise'], ['sepMedieval', 'bpbMonarchy', 'openTextbook']),
+          },
+          {
+            period: 'Seventeenth–eighteenth centuries: constitutional limitation and popular sovereignty',
+            text: 'Constitutional struggles in Britain, the Netherlands, France, and elsewhere developed arguments about parliament, representation, rights, taxation, and the limits of the crown. Locke’s critique of arbitrary power and later theories of balanced government helped separate a limited monarchy from a theory of unlimited hereditary sovereignty.',
+            citations: citations(['lockeSecondTreatise', 'burkeReflections'], ['oxfordMonarchyConstitution', 'bpbMonarchy', 'openTextbook']),
+          },
+          {
+            period: '1791–1848: revolution and constitutional monarchy in France',
+            text: 'The French Revolution briefly established a written constitutional monarchy in 1791–1792, and the Restoration and July Monarchy created later experiments in reconciling royal authority, representation, and revolutionary constitutional principles. These experiences show that constitutional monarchy can be a contested transitional form rather than a stable compromise, especially when the crown and representative nation claim competing sources of legitimacy.',
+            citations: citations(['lockeSecondTreatise', 'burkeReflections'], ['perseeFrenchConstitutionalMonarchy', 'bpbMonarchy', 'sepNationalism']),
+          },
+          {
+            period: 'Nineteenth century: national, imperial, and constitutional monarchies',
+            text: 'Monarchies adapted to nationalism, industrialization, mass politics, empire, and expanding but unequal citizenship. Some crowns became symbols above party politics while elected parliaments and cabinets gained practical power; others preserved executive authority, aristocratic privilege, colonial rule, or military command. Walter Bagehot’s analysis of the British constitution is a key historical account of the distinction between ceremonial and governing functions.',
+            citations: citations(['bagehotEnglishConstitution', 'burkeReflections', 'nabucoAbolitionism'], ['oxfordMonarchyConstitution', 'journalDemocraticMonarchies', 'bpbMonarchy', 'sepColonialism']),
+          },
+          {
+            period: 'Twentieth century: abolition, adaptation, and decolonization',
+            text: 'Wars, revolutions, republican movements, anticolonial struggles, and democratic reform abolished many dynasties or transformed them into constitutional offices. Other monarchies survived by renegotiating legitimacy through constitutions, social provision, national identity, religion, or controlled political reform. Postcolonial histories require special care because a crown could represent local continuity, colonial subordination, or both at different times.',
+            citations: citations(['nabucoAbolitionism', 'bagehotEnglishConstitution', 'burkeReflections'], ['oxfordMonarchyConstitution', 'sepColonialism', 'journalDemocraticMonarchies', 'openTextbook']),
+          },
+          {
+            period: 'Contemporary parliamentary and executive monarchies',
+            text: 'Current monarchies range from parliamentary systems with largely ceremonial crowns to regimes where royal institutions retain substantial executive, religious, or economic authority. Comparative democratic research treats the relationship between hereditary and elected legitimacy as an institutional question, not as evidence that all monarchies or all republics share one political profile.',
+            citations: citations(['bagehotEnglishConstitution', 'nabucoAbolitionism'], ['ukParliamentCrown', 'journalDemocraticMonarchies', 'oxfordConstitutionalMonarchy', 'vdem', 'bpbMonarchy']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Absolute or executive monarchy',
+                distinction: 'The monarch or royal court exercises substantial governing authority over ministers, lawmaking, administration, courts, taxation, or security.',
+                relation: 'This is the authority-heavy end of monarchism. The actual degree of constraint must be established through constitutions, institutions, elite bargaining, courts, and political practice rather than through the title alone.',
+                citations: citations(['hobbesLeviathan', 'aquinasMoralPolitical'], ['bpbMonarchy', 'oxfordConstitutionalMonarchy', 'vdem']),
+              },
+              {
+                label: 'Limited constitutional monarchy',
+                distinction: 'The crown retains legally defined powers while being constrained by a constitution, rights, representative institutions, courts, or ministerial responsibility.',
+                relation: 'It occupies a middle space between royal government and parliamentary monarchy; a written constitutional limit can be weak if institutions cannot enforce it.',
+                citations: citations(['lockeSecondTreatise', 'burkeReflections'], ['perseeFrenchConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'oxfordConstitutionalMonarchy']),
+              },
+              {
+                label: 'Parliamentary or ceremonial monarchy',
+                distinction: 'The monarch is head of state while elected ministers and parliament exercise ordinary governing power under constitutional conventions or law.',
+                relation: 'This variant can coexist with liberal democracy, social democracy, welfare institutions, secular law, and pluralist citizenship; hereditary office remains the central democratic criticism.',
+                citations: citations(['bagehotEnglishConstitution', 'nabucoAbolitionism'], ['ukParliamentCrown', 'journalDemocraticMonarchies', 'vdem']),
+              },
+              {
+                label: 'Dualist or conflictual constitutional monarchy',
+                distinction: 'Both the monarch and representative institutions claim meaningful political legitimacy, producing a divided executive or recurring constitutional conflict.',
+                relation: 'It differs from a ceremonial crown because the monarch can shape government formation, legislation, emergency power, or foreign policy; stability depends on clear rules and accepted limits.',
+                citations: citations(['lockeSecondTreatise', 'bagehotEnglishConstitution'], ['oxfordConstitutionalMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordMonarchyConstitution']),
+              },
+              {
+                label: 'Elective or dynastically selected monarchy',
+                distinction: 'A royal office is chosen by a council, family, elite body, religious authority, or another restricted mechanism instead of passing automatically through a single hereditary line.',
+                relation: 'It retains monarchical legitimacy while changing succession. Election by a restricted body is not equivalent to democratic popular election and must be analyzed with the actual franchise and accountability rules.',
+                citations: citations(['hobbesLeviathan', 'aquinasMoralPolitical'], ['bpbMonarchy', 'openTextbook', 'journalDemocraticMonarchies']),
+              },
+              {
+                label: 'Sacred or theocratic monarchy',
+                distinction: 'Royal legitimacy is grounded in divine sanction, sacred lineage, religious law, clerical endorsement, or the monarch’s role as protector or embodiment of a faith.',
+                relation: 'It overlaps with religious traditionalism and theocracy but is not identical to either: some sacred monarchies limit clerical rule, and some theocracies have no monarch.',
+                citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeLetterToleration'], ['sepReligionPolitics', 'bpbMonarchy', 'openTextbook']),
+              },
+              {
+                label: 'Imperial or colonial monarchy',
+                distinction: 'The crown rules or claims authority over multiple peoples and territories, often through unequal legal statuses, military power, extraction, settlement, or indirect rule.',
+                relation: 'Imperial monarchy adds a foreign-policy and colonial dimension that is not present in every royal system. National ceremony at the center can conceal unequal subjecthood at the periphery.',
+                citations: citations(['nabucoAbolitionism', 'burkeReflections'], ['sepColonialism', 'oxfordMonarchyConstitution', 'openTextbook']),
+              },
+              {
+                label: 'Social or constitutional royalism',
+                distinction: 'Defends the crown as a unifying institution within representative government and may combine royal continuity with welfare, social reform, parliamentary politics, or national development.',
+                relation: 'This variant shows why monarchism is not economically fixed or automatically anti-democratic, while leaving open the question of whether inherited office can be reconciled with equal political status.',
+                citations: citations(['nabucoAbolitionism', 'bagehotEnglishConstitution', 'burkeReflections'], ['journalDemocraticMonarchies', 'ukParliamentCrown', 'oxfordConstitutionalMonarchy']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Thomas Aquinas',
+                role: 'Medieval Christian political thinker who analyzed kingship, the common good, law, tyranny, and the moral duties of rulers.',
+                caveat: 'Aquinas is an antecedent in medieval political thought, not a modern constitutional monarchist. His theological and social context differs from contemporary democratic citizenship.',
+                citations: citations(['aquinasMoralPolitical'], ['sepMedieval', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Thomas Hobbes',
+                role: 'Early-modern theorist who defended indivisible sovereignty and treated monarchy as one possible form of a power capable of preventing civil conflict.',
+                caveat: 'Hobbes’s sovereign theory is not identical to modern royalism, and he allowed sovereignty to take forms other than monarchy. His argument is included to illuminate authority, not to endorse unlimited rule.',
+                citations: citations(['hobbesLeviathan'], ['bpbMonarchy', 'openTextbook']),
+              },
+              {
+                name: 'John Locke',
+                role: 'Liberal theorist whose arguments about consent, natural equality, property, and resistance helped establish a major critique of arbitrary or hereditary political power.',
+                caveat: 'Locke is more useful here as a critic and boundary marker than as a monarchist advocate. His historical arguments also contain exclusions that should not be ignored.',
+                citations: citations(['lockeSecondTreatise'], ['oxfordMonarchyConstitution', 'bpbMonarchy']),
+              },
+              {
+                name: 'Edmund Burke',
+                role: 'Conservative political writer associated with inherited institutions, continuity, prudence, representation, and resistance to abstract political reconstruction.',
+                caveat: 'Burke’s defense of continuity does not amount to a simple defense of unlimited royal power. His writings must be read alongside his views on representation, empire, reform, and historical context.',
+                citations: citations(['burkeReflections'], ['bpbMonarchy', 'oxfordMonarchyConstitution']),
+              },
+              {
+                name: 'Walter Bagehot',
+                role: 'Nineteenth-century analyst of the British constitution who distinguished the symbolic or “dignified” functions of the crown from the practical governing institutions of cabinet and parliament.',
+                caveat: 'Bagehot described a specific Victorian constitutional arrangement and its assumptions. His analysis is a historical source for parliamentary monarchy, not proof that every crown is politically ceremonial.',
+                citations: citations(['bagehotEnglishConstitution'], ['ukParliamentCrown', 'oxfordMonarchyConstitution']),
+              },
+              {
+                name: 'Joaquim Nabuco',
+                role: 'Brazilian abolitionist, lawyer, diplomat, and writer whose constitutional and national-development arguments remained connected to a monarchical framework.',
+                caveat: 'Nabuco’s anti-slavery politics and monarchical constitutionalism belong to a nineteenth-century Brazilian context and contain their own limits; they should not be generalized to all royalism or treated as a complete social programme.',
+                citations: citations(['nabucoAbolitionism'], ['sepColonialism', 'openTextbook']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Medieval and early-modern kingship',
+                period: 'Europe, the Middle East, Africa, Asia, and other historical political worlds',
+                match: 'Royal institutions organized law, war, taxation, court administration, religious patronage, and territorial authority in many different political systems.',
+                caveat: '“Monarchy” hides enormous variation across imperial, local, elective, sacred, customary, and bureaucratic settings. Ancient and medieval kingship should not be scored as if it were one modern ideology.',
+                citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan'], ['sepMedieval', 'sepReligionPolitics', 'openTextbook']),
+              },
+              {
+                name: 'French constitutional-monarchical experiments',
+                period: 'France, 1791–1792 and 1815–1848',
+                match: 'The crown was placed in a representative constitutional framework during attempts to reconcile royal continuity, national sovereignty, rights, and legislative government.',
+                caveat: 'The experiments were short-lived and conflictual, and they involved restricted participation, colonial inequality, and competing claims about whether sovereignty belonged to the king, the nation, or the legislature.',
+                citations: citations(['lockeSecondTreatise', 'burkeReflections'], ['perseeFrenchConstitutionalMonarchy', 'bpbMonarchy', 'sepNationalism']),
+              },
+              {
+                name: 'United Kingdom: parliamentary crown',
+                period: 'Especially nineteenth century–present',
+                match: 'The Crown remains part of the constitution while elected parliament and ministers exercise ordinary government; modern official explanations describe the monarch’s role as broadly ceremonial, with defined constitutional functions.',
+                caveat: 'The British model rests on statute, convention, history, party practice, and an imperial legacy rather than one single codified constitution. Its conventions cannot be copied without examining the receiving country’s institutions and political culture.',
+                citations: citations(['bagehotEnglishConstitution', 'burkeReflections'], ['ukParliamentCrown', 'oxfordMonarchyConstitution', 'oxfordConstitutionalMonarchy']),
+              },
+              {
+                name: 'Brazilian Empire and constitutional royalism',
+                period: 'Brazil, 1822–1889',
+                match: 'A constitutional empire combined a hereditary head of state, representative institutions, national development debates, slavery and abolition struggles, and territorial integration across a large polity.',
+                caveat: 'The imperial constitution did not create equal citizenship in practice and remained entangled with slavery, elite power, Indigenous dispossession, and regional conflict. Nabuco’s abolitionism shows that constitutional royalism contained serious internal disagreements.',
+                citations: citations(['nabucoAbolitionism'], ['sepColonialism', 'openTextbook']),
+              },
+              {
+                name: 'Contemporary democratic parliamentary monarchies',
+                period: 'Contemporary; country- and constitution-specific',
+                match: 'Several states retain hereditary heads of state within competitive parliamentary systems, where the democratic question centers on ministerial accountability, constitutional conventions, public finance, succession, and the boundary between symbolism and reserve power.',
+                caveat: 'The existence of a crown does not classify the whole state’s economic, social, religious, or foreign policy. Country comparisons require current constitutional and institutional evidence, and democratic monarchies should not be conflated with executive or sacred monarchies.',
+                citations: citations(['bagehotEnglishConstitution', 'nabucoAbolitionism'], ['journalDemocraticMonarchies', 'ukParliamentCrown', 'oxfordConstitutionalMonarchy', 'vdem']),
+              },
+              {
+                name: 'Executive, sacred, and postcolonial monarchies',
+                period: 'Contemporary and twentieth century; region- and state-specific',
+                match: 'Some monarchies retain meaningful executive, religious, military, economic, or dynastic authority, while others use the crown as a postcolonial or national symbol amid constitutional reform.',
+                caveat: 'This is a comparative category, not a claim that all non-European monarchies share one regime type. The next research stage must add country-specific constitutional, legal, religious, and colonial histories before naming exact contemporary matches.',
+                citations: citations(['aquinasMoralPolitical', 'nabucoAbolitionism', 'hobbesLeviathan'], ['bpbMonarchy', 'sepReligionPolitics', 'sepColonialism', 'journalDemocraticMonarchies']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'conservative', relation: 'often overlaps through continuity, hierarchy, tradition, and institutional preservation, but conservatism does not require a monarch' },
+              { id: 'national-conservative', relation: 'can combine royal continuity with national sovereignty and inherited culture, but monarchism can also be civic, imperial, religious, or non-national' },
+              { id: 'religious-traditionalist', relation: 'may share sacred authority, inherited moral order, and established religion, but monarchy can be secular and religious traditionalism need not be royalist' },
+              { id: 'theocratic', relation: 'can overlap when the monarch’s legitimacy or law is explicitly religious, but a theocracy can be republican or clerical and a monarchy can be religiously neutral' },
+              { id: 'civic-nationalist', relation: 'can share national continuity and common institutions, while civic nationalism makes citizenship rather than dynastic succession the primary basis of membership' },
+              { id: 'liberal-constitutionalist', relation: 'can share rule of law, rights, parliament, and limited government in constitutional variants, while liberal constitutionalism does not grant public office by dynasty' },
+              { id: 'historical-fascist', relation: 'may form alliances or share order and national symbols, but fascism’s mass revolutionary authoritarianism is not identical to royalism' },
+              { id: 'anti-colonial-liberation', relation: 'can conflict where the crown represents empire, but local or postcolonial monarchies may also become vehicles for national self-government; the historical relationship must be specified' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The central criticism is hereditary inequality. Even a ceremonial crown gives public status and succession rights to a family by birth, which can conflict with equal political standing and the idea that public office should be open to citizens. Supporters answer that a non-partisan hereditary head of state can protect continuity and remain outside party competition; critics ask whether those functions require inherited privilege and whether citizens can freely revise the arrangement.',
+            citations: citations(['lockeSecondTreatise', 'bagehotEnglishConstitution'], ['oxfordConstitutionalMonarchy', 'journalDemocraticMonarchies', 'bpbMonarchy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns accountability and reserve power. Constitutional language may leave appointment, dissolution, emergency, military, pardon, or foreign-affairs powers ambiguous. If the crown intervenes politically without transparent rules, democratic responsibility becomes difficult to locate; if ministers hide behind royal prerogative, parliament and courts may be weakened. Clear law, ministerial responsibility, judicial review, parliamentary scrutiny, and public records are safeguards.',
+            citations: citations(['lockeSecondTreatise', 'bagehotEnglishConstitution', 'hobbesLeviathan'], ['ukParliamentCrown', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns social hierarchy, gender, and privilege. Court expenditure, titles, estates, aristocratic access, dynastic marriage, and succession rules can reproduce class and gender inequality even when the monarch does not govern day to day. Equal succession, transparent public finance, anti-discrimination rules, independent oversight, and the removal of legally privileged status can reduce—but do not erase—the structural objection to inherited office.',
+            citations: citations(['burkeReflections', 'lockeSecondTreatise', 'nabucoAbolitionism'], ['bpbMonarchy', 'oxfordConstitutionalMonarchy', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A fourth criticism concerns religion and conscience. Sacred kingship or an established church can supply a common moral language, but it can also marginalize religious minorities, non-believers, converts, or dissenters. The state must distinguish ceremonial heritage from coercive religious authority and protect equal citizenship, freedom of conscience, and independent civil law.',
+            citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'hobbesLeviathan'], ['sepReligionPolitics', 'bpbMonarchy', 'ohchrMinorityRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A fifth criticism concerns empire and colonial memory. Royal houses have sometimes been symbols of conquest, extraction, racial hierarchy, and unequal subjecthood, while later national narratives present the same institution as neutral continuity. A careful account must include the people ruled at the periphery, the legal categories applied to them, the material benefits of empire, and the possibility of restitution or constitutional renegotiation.',
+            citations: citations(['nabucoAbolitionism', 'burkeReflections'], ['sepColonialism', 'oxfordMonarchyConstitution', 'ohchrMinorityRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, the claim that monarchy stabilizes democracy is empirical rather than self-evident. A crown may provide symbolic continuity in an established parliamentary system, but it can also obstruct reform, legitimize emergency power, or become a focal point for authoritarian politics. Any comparison should test electoral competition, peaceful alternation, civil liberties, rule of law, minority rights, public finance, and the actual behavior of the monarch and ministers instead of inferring democratic quality from the presence or absence of a royal family.',
+            citations: citations(['bagehotEnglishConstitution', 'lockeSecondTreatise', 'nabucoAbolitionism'], ['journalDemocraticMonarchies', 'oxfordConstitutionalMonarchy', 'vdem', 'ohchrMinorityRights']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights'],
+      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen.',
+    },
+    researchGaps: [
+      'Add French-language scholarship on divine-right monarchy, the French constitutional monarchies of 1791–1792, the Restoration, the July Monarchy, the Second Empire, royalism, republicanism, colonial monarchy, and the constitutional doctrines of the nineteenth century.',
+      'Expand German-language research on medieval and early-modern kingship, Prussian constitutionalism, the German Empire, monarchy and nationalism, dynastic legitimacy, the Weimar transition, and contemporary comparative debates about constitutional monarchy.',
+      'Add Portuguese- and Spanish-language scholarship on the Brazilian Empire, Iberian constitutional monarchies, Portuguese colonial monarchy, Latin American royalism and republicanism, abolition, Indigenous peoples, slavery, and postcolonial memory.',
+      'Add non-European research on African, Middle Eastern, South Asian, Southeast Asian, Pacific, and Indigenous royal institutions, including elective succession, sacred kingship, customary law, colonial transformation, and contemporary constitutional reform.',
+      'Add comparative legal evidence on succession, regency, abdication, reserve powers, ministerial countersignature, royal immunity, public finance, court privilege, referendums, emergency powers, and judicial review across current monarchies and republics.',
+      'Add specialist research on women and succession, marriage and citizenship, class and aristocracy, religion and minority rights, colonial extraction, Indigenous sovereignty, reparations, and the public meaning of royal ceremony.',
+      'Test claims about monarchies and democratic stability with dated comparative data on civil liberties, executive constraints, party competition, peaceful alternation, corruption, welfare, inequality, public opinion, and the actual exercise of royal power.',
+    ],
+  },
 };
