@@ -8,6 +8,7 @@ import {
   BAND_RANGES,
   DEFAULT_SCORES,
   DIMENSIONS,
+  ENCYCLOPEDIA_ENTRIES,
   OPTION_LABELS,
   OPTION_VALUES,
   PALETTES,
@@ -151,7 +152,16 @@ function saveQuestionnaireCache(answers, questionIndex) {
 
 function getInitialMode() {
   if (typeof window !== 'undefined' && window.location.hash.startsWith('#bibliography')) return 'bibliography';
+  if (typeof window !== 'undefined' && window.location.hash.startsWith('#encyclopedia/')) return 'library';
   return null;
+}
+
+function getInitialEncyclopediaEntryId() {
+  if (typeof window === 'undefined') return null;
+  const match = window.location.hash.match(/^#encyclopedia\/(.+)$/);
+  if (!match) return null;
+  const entryId = decodeURIComponent(match[1]);
+  return ENCYCLOPEDIA_ENTRIES[entryId] ? entryId : null;
 }
 
 function App() {
@@ -161,10 +171,30 @@ function App() {
   const [answers, setAnswers] = useState(cachedQuestionnaire?.answers ?? {});
   const [questionIndex, setQuestionIndex] = useState(cachedQuestionnaire?.questionIndex ?? 0);
   const [selectedTypeId, setSelectedTypeId] = useState('social-democratic');
+  const [encyclopediaEntryId, setEncyclopediaEntryId] = useState(getInitialEncyclopediaEntryId);
 
   useEffect(() => {
     saveQuestionnaireCache(answers, questionIndex);
   }, [answers, questionIndex]);
+
+  useEffect(() => {
+    function syncHash() {
+      const entryId = getInitialEncyclopediaEntryId();
+      if (entryId) {
+        setMode('library');
+        setEncyclopediaEntryId(entryId);
+      } else if (window.location.hash === '#bibliography') {
+        setMode('bibliography');
+        setEncyclopediaEntryId(null);
+      }
+    }
+    window.addEventListener('popstate', syncHash);
+    window.addEventListener('hashchange', syncHash);
+    return () => {
+      window.removeEventListener('popstate', syncHash);
+      window.removeEventListener('hashchange', syncHash);
+    };
+  }, []);
 
   const matches = useMemo(() => getMatches(scores), [scores]);
   const topMatch = matches[0];
@@ -202,9 +232,22 @@ function App() {
 
   function changeMode(nextMode) {
     setMode(nextMode);
+    if (nextMode !== 'library') setEncyclopediaEntryId(null);
     if (typeof window !== 'undefined') {
       window.history.replaceState(null, '', nextMode === 'bibliography' ? '#bibliography' : window.location.pathname);
     }
+  }
+
+  function openEncyclopediaEntry(entryId) {
+    if (!ENCYCLOPEDIA_ENTRIES[entryId]) return;
+    setMode('library');
+    setEncyclopediaEntryId(entryId);
+    if (typeof window !== 'undefined') window.history.pushState(null, '', `#encyclopedia/${encodeURIComponent(entryId)}`);
+  }
+
+  function closeEncyclopediaEntry() {
+    setEncyclopediaEntryId(null);
+    if (typeof window !== 'undefined') window.history.replaceState(null, '', window.location.pathname);
   }
 
   function resetQuestionnaire() {
@@ -258,7 +301,7 @@ function App() {
             <button className={mode === 'freemode' ? 'mode-tab active' : 'mode-tab'} onClick={() => changeMode('freemode')} role="tab" aria-selected={mode === 'freemode'}>
               <span className="tab-number">02</span><span><strong>FreeMode</strong><small>Move the six axes yourself</small></span>
             </button>
-            <button className={mode === 'library' ? 'mode-tab active' : 'mode-tab'} onClick={() => { setSelectedTypeId(topMatch.id); changeMode('library'); }} role="tab" aria-selected={mode === 'library'}>
+            <button className={mode === 'library' ? 'mode-tab active' : 'mode-tab'} onClick={() => { setSelectedTypeId(topMatch.id); setEncyclopediaEntryId(null); changeMode('library'); }} role="tab" aria-selected={mode === 'library'}>
               <span className="tab-number">03</span><span><strong>Spectrum Library</strong><small>Study each political type</small></span>
             </button>
             <button className={mode === 'bibliography' ? 'mode-tab active' : 'mode-tab'} onClick={() => changeMode('bibliography')} role="tab" aria-selected={mode === 'bibliography'}>
@@ -283,7 +326,7 @@ function App() {
           ) : mode === 'freemode' ? (
             <FreeMode scores={scores} matches={matches} topMatch={topMatch} onUpdateScore={updateScore} onUseQuestionnaire={() => changeMode('questionnaire')} />
           ) : mode === 'library' ? (
-            <SpectrumLibrary selectedType={selectedType} onSelectType={setSelectedTypeId} onLoadInFreeMode={() => { setScores({ ...selectedType.profile }); changeMode('freemode'); }} />
+            <SpectrumLibrary selectedType={selectedType} encyclopediaEntryId={encyclopediaEntryId} onSelectType={setSelectedTypeId} onOpenEncyclopediaEntry={openEncyclopediaEntry} onCloseEncyclopediaEntry={closeEncyclopediaEntry} onLoadInFreeMode={() => { setScores({ ...selectedType.profile }); changeMode('freemode'); }} />
           ) : (
             <BibliographyPage />
           )}
@@ -504,9 +547,10 @@ function BibliographyRecord({ record }) {
   );
 }
 
-function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
-  const [libraryPage, setLibraryPage] = useState('profiles');
+function SpectrumLibrary({ selectedType, encyclopediaEntryId, onSelectType, onOpenEncyclopediaEntry, onCloseEncyclopediaEntry, onLoadInFreeMode }) {
+  const [libraryPage, setLibraryPage] = useState(encyclopediaEntryId ? 'encyclopedia' : 'profiles');
   const [profileQuery, setProfileQuery] = useState('');
+  const [encyclopediaQuery, setEncyclopediaQuery] = useState('');
   const [columnDimensionId, setColumnDimensionId] = useState('economic');
   const [rowDimensionId, setRowDimensionId] = useState('authority');
   const [filters, setFilters] = useState({ query: '', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' });
@@ -542,6 +586,16 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
       return queryMatches && familyMatches && typeMatches && regionMatches && statusMatches && axisMatches;
     });
   }, [filters]);
+  const encyclopediaEntries = useMemo(() => Object.values(ENCYCLOPEDIA_ENTRIES).sort((left, right) => left.title.localeCompare(right.title)), []);
+  const visibleEncyclopediaEntries = useMemo(() => {
+    const query = encyclopediaQuery.trim().toLowerCase();
+    if (!query) return encyclopediaEntries;
+    return encyclopediaEntries.filter((entry) => [entry.title, entry.canonicalLabel, ...entry.aliases, entry.summary, entry.entryType].join(' ').toLowerCase().includes(query));
+  }, [encyclopediaEntries, encyclopediaQuery]);
+
+  useEffect(() => {
+    if (encyclopediaEntryId) setLibraryPage('encyclopedia');
+  }, [encyclopediaEntryId]);
 
   function updateFilter(key, value) {
     setFilters((previous) => ({ ...previous, [key]: value }));
@@ -566,8 +620,11 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
         <button className={libraryPage === 'labels' ? 'library-subtab active' : 'library-subtab'} onClick={() => setLibraryPage('labels')} role="tab" aria-selected={libraryPage === 'labels'}>
           <span className="library-subtab-number">02</span><span><strong>Label catalogue</strong><small>Search historical labels</small></span>
         </button>
+        <button className={libraryPage === 'encyclopedia' ? 'library-subtab active' : 'library-subtab'} onClick={() => setLibraryPage('encyclopedia')} role="tab" aria-selected={libraryPage === 'encyclopedia'}>
+          <span className="library-subtab-number">03</span><span><strong>Encyclopedia</strong><small>Read every detailed entry</small></span>
+        </button>
         <button className={libraryPage === 'research' ? 'library-subtab active' : 'library-subtab'} onClick={() => setLibraryPage('research')} role="tab" aria-selected={libraryPage === 'research'}>
-          <span className="library-subtab-number">03</span><span><strong>Research atlas</strong><small>Trace evidence and context</small></span>
+          <span className="library-subtab-number">04</span><span><strong>Research atlas</strong><small>Trace evidence and context</small></span>
         </button>
       </nav>
 
@@ -621,11 +678,73 @@ function SpectrumLibrary({ selectedType, onSelectType, onLoadInFreeMode }) {
         </>
       ) : libraryPage === 'labels' ? (
       <TaxonomyCatalogue filters={filters} filterOptions={filterOptions} filteredLabels={filteredLabels} onUpdateFilter={updateFilter} />
+      ) : libraryPage === 'encyclopedia' ? (
+      <EncyclopediaPage entries={visibleEncyclopediaEntries} totalEntries={encyclopediaEntries.length} query={encyclopediaQuery} selectedEntryId={encyclopediaEntryId} onQueryChange={setEncyclopediaQuery} onOpenEntry={onOpenEncyclopediaEntry} onCloseEntry={onCloseEncyclopediaEntry} />
       ) : (
         <ResearchAtlas />
       )}
     </div>
   );
+}
+
+function EncyclopediaPage({ entries, totalEntries, query, selectedEntryId, onQueryChange, onOpenEntry, onCloseEntry }) {
+  const selectedEntry = selectedEntryId ? ENCYCLOPEDIA_ENTRIES[selectedEntryId] : null;
+  if (selectedEntry) return <EncyclopediaEntry entry={selectedEntry} onClose={onCloseEntry} />;
+
+  return (
+    <section className="encyclopedia-view">
+      <div className="encyclopedia-heading">
+        <div><p className="eyebrow">POLITICAL ENCYCLOPEDIA</p><h3>Read the full entry behind every profile.</h3></div>
+        <p>{totalEntries} researched entries with introductions, six-axis interpretations, historical development, variants, documented examples, criticisms, and references.</p>
+      </div>
+      <div className="encyclopedia-toolbar">
+        <label className="encyclopedia-search"><span>SEARCH ENTRIES</span><input type="search" value={query} onChange={(event) => onQueryChange(event.target.value)} placeholder="Try monarchist, anarchist, Indigenous..." aria-label="Search encyclopedia entries" /></label>
+        <span className="encyclopedia-count">{entries.length} of {totalEntries} entries</span>
+      </div>
+      {entries.length ? <div className="encyclopedia-grid">{entries.map((entry) => <a className="encyclopedia-card" key={entry.id} href={`#encyclopedia/${encodeURIComponent(entry.id)}`} onClick={(event) => { event.preventDefault(); onOpenEntry(entry.id); }}><div className="encyclopedia-card-top"><div><p className="encyclopedia-kicker">{entry.entryType}</p><h4>{entry.title}</h4></div><span className={`encyclopedia-confidence ${entry.confidence}`}>{entry.confidence}</span></div><p>{entry.summary}</p><div className="encyclopedia-card-meta"><span>{entry.status}</span><span>{Object.keys(entry.dimensionInterpretations).length} dimensions</span><span>{entry.researchGaps.length} open gaps</span></div><span className="encyclopedia-card-link">Read full entry ↗</span></a>)}</div> : <div className="encyclopedia-empty"><strong>No entries match that search.</strong><p>Try a broader label or clear the search.</p></div>}
+      <p className="encyclopedia-note">These are editorial research profiles, not diagnoses. Broad labels can contain competing traditions, and low-confidence entries deliberately preserve uncertainty.</p>
+    </section>
+  );
+}
+
+function EncyclopediaEntry({ entry, onClose }) {
+  const dimensions = DIMENSIONS.map((dimension) => ({ ...dimension, ...entry.dimensionInterpretations[dimension.id] }));
+  return (
+    <article className="encyclopedia-detail">
+      <div className="encyclopedia-detail-actions"><a className="text-button" href="#" onClick={(event) => { event.preventDefault(); onClose(); }}>← All encyclopedia entries</a><span className="encyclopedia-permalink">Link: <code>#encyclopedia/{entry.id}</code></span></div>
+      <header className="encyclopedia-detail-header"><div><p className="eyebrow">{entry.entryType.toUpperCase()}</p><h2>{entry.title}</h2><p className="encyclopedia-canonical">Canonical label: {entry.canonicalLabel}</p></div><div className="encyclopedia-detail-status"><span className={`encyclopedia-confidence ${entry.confidence}`}>{entry.confidence} confidence</span><span>{entry.status}</span></div></header>
+      <div className="encyclopedia-boundary"><strong>Scope:</strong> {entry.scopeNote}<div><span>{entry.timeScope}</span><span>{entry.geographicScope}</span></div></div>
+      <p className="encyclopedia-summary">{entry.summary}</p>
+      <EncyclopediaCitations citations={entry.summaryCitations} />
+
+      <section className="encyclopedia-dimensions"><div className="encyclopedia-section-heading"><p className="eyebrow">SIX-AXIS READING</p><h3>Where this entry sits—and why.</h3></div><div className="encyclopedia-dimension-grid">{dimensions.map((dimension) => <article className="encyclopedia-dimension-card" key={dimension.id}><div className="encyclopedia-dimension-top"><span>{dimension.index} · {dimension.label}</span><strong>{formatScore(dimension.score)}</strong></div><div className="encyclopedia-dimension-scale"><i><b style={{ width: `${(dimension.score + 100) / 2}%` }} /></i><small>{dimension.low} <span>↔</span> {dimension.high}</small></div><h4>{dimension.label}</h4><p>{dimension.explanation}</p><EncyclopediaCitations citations={dimension.citations} compact /></article>)}</div></section>
+
+      <div className="encyclopedia-sections">{entry.sections.map((section) => <EncyclopediaSection key={section.id} section={section} />)}</div>
+
+      <section className="encyclopedia-references"><div className="encyclopedia-section-heading"><p className="eyebrow">SOURCE TRAIL</p><h3>References and research gaps</h3></div><div className="encyclopedia-reference-columns"><div><h4>Authors and works</h4><div className="encyclopedia-reference-list">{entry.references.authorReferenceIds.map((id) => { const reference = AUTHOR_REFERENCES[id]; return reference ? <a key={id} href={reference.url} target="_blank" rel="noreferrer">{reference.author} · {reference.work} ↗</a> : null; })}</div></div><div><h4>Research sources</h4><div className="encyclopedia-reference-list">{entry.references.researchSourceIds.map((id) => { const source = RESEARCH_SOURCES.find((item) => item.id === id); return source ? <a key={id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a> : null; })}</div></div></div><p className="encyclopedia-editorial-note">{entry.references.editorialNote}</p><details className="encyclopedia-gaps"><summary>Open research gaps · {entry.researchGaps.length}</summary><ul>{entry.researchGaps.map((gap) => <li key={gap}>{gap}</li>)}</ul></details></section>
+    </article>
+  );
+}
+
+function EncyclopediaSection({ section }) {
+  return <section className="encyclopedia-section"><div className="encyclopedia-section-heading"><p className="eyebrow">{section.id.replace('-', ' ').toUpperCase()}</p><h3>{section.title}</h3></div>{section.timeline && <div className="encyclopedia-timeline">{section.timeline.map((item) => <article key={item.period}><span>{item.period}</span><p>{item.text}</p><EncyclopediaCitations citations={item.citations} compact /></article>)}</div>}{section.blocks?.map((block, index) => <EncyclopediaBlock block={block} key={`${section.id}-${block.type}-${index}`} />)}</section>;
+}
+
+function EncyclopediaBlock({ block }) {
+  if (block.type === 'paragraph') return <div className="encyclopedia-prose"><p>{block.text}</p><EncyclopediaCitations citations={block.citations} compact /></div>;
+  if (block.type === 'evidence-note') return <div className="encyclopedia-evidence-note"><strong>Evidence boundary</strong><p>{block.text}</p><EncyclopediaCitations citations={block.citations} compact /></div>;
+  if (block.type === 'comparison') return <div className="encyclopedia-comparison">{block.rows.map((row) => <article key={row.label}><h4>{row.label}</h4><p><strong>Distinction:</strong> {row.distinction}</p><p><strong>Relation:</strong> {row.relation}</p><EncyclopediaCitations citations={row.citations} compact /></article>)}</div>;
+  if (block.type === 'examples') return <div className="encyclopedia-examples">{block.entries.map((item) => <article key={item.name}><div><h4>{item.name}</h4><span>{item.period}</span></div><strong>{item.match}</strong><p>{item.caveat}</p><EncyclopediaCitations citations={item.citations} compact /></article>)}</div>;
+  if (block.type === 'related-labels') return <div className="encyclopedia-related-labels">{block.labels.map((label) => <div key={label.id}><strong>{label.id.replaceAll('-', ' ')}</strong><p>{label.relation}</p></div>)}</div>;
+  return null;
+}
+
+function EncyclopediaCitations({ citations, compact = false }) {
+  if (!citations) return null;
+  const authors = (citations.authorReferenceIds ?? []).map((id) => ({ id, ...AUTHOR_REFERENCES[id] })).filter(({ author }) => author);
+  const sources = (citations.researchSourceIds ?? []).map((id) => RESEARCH_SOURCES.find((source) => source.id === id)).filter(Boolean);
+  if (!authors.length && !sources.length) return null;
+  return <div className={compact ? 'encyclopedia-citations compact' : 'encyclopedia-citations'}><span>Sources</span><div>{authors.map((reference) => <a key={`author-${reference.id}`} href={reference.url} target="_blank" rel="noreferrer">{reference.author} · {reference.work} ↗</a>)}{sources.map((source) => <a key={`source-${source.id}`} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</div></div>;
 }
 
 function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFilter }) {

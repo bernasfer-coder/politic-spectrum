@@ -142,6 +142,14 @@ describe('primary user flows', () => {
     await user.click(screen.getByRole('button', { name: /Historical fascist \/ Nazi-like/i }));
     expect(screen.getByRole('heading', { name: /Historical fascist \/ Nazi-like/i })).toBeInTheDocument();
     expect(screen.getByText(/Palette: Historical warning · rust/i)).toBeInTheDocument();
+    await user.click(screen.getByRole('tab', { name: /Encyclopedia/i }));
+    expect(screen.getByText(/29 of 29 entries/i)).toBeInTheDocument();
+    await user.click(screen.getByRole('link', { name: /Authoritarian collectivist/i }));
+    expect(screen.getByRole('heading', { name: /Authoritarian collectivist/i })).toBeInTheDocument();
+    expect(screen.getByText('SIX-AXIS READING', { exact: true })).toBeInTheDocument();
+    expect(window.location.hash).toBe('#encyclopedia/authoritarian-collectivist');
+    await user.click(screen.getByRole('link', { name: /All encyclopedia entries/i }));
+    expect(screen.getByText(/POLITICAL ENCYCLOPEDIA/i)).toBeInTheDocument();
     await user.click(screen.getByRole('tab', { name: /Research atlas/i }));
     expect(screen.getByText('RESEARCH ATLAS', { exact: true })).toBeInTheDocument();
     expect(screen.getByText(/Recurring political forms · 12 patterns/i)).toBeInTheDocument();

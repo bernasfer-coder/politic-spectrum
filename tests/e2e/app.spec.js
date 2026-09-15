@@ -12,6 +12,12 @@ test('landing page switches through the three analysis modes', async ({ page }) 
   await expect(page.getByRole('tab', { name: /Reference profiles/i })).toHaveAttribute('aria-selected', 'true');
   await page.getByRole('tab', { name: /Label catalogue/i }).click();
   await expect(page.getByText('NORMALIZED LABEL CATALOGUE')).toBeVisible();
+  await page.getByRole('tab', { name: /Encyclopedia/i }).click();
+  await expect(page.getByText(/29 of 29 entries/i)).toBeVisible();
+  await page.getByRole('link', { name: /Indigenous self-determination \/ relational governance/i }).click();
+  await expect(page.getByRole('heading', { name: /Indigenous self-determination \/ relational governance/i })).toBeVisible();
+  await expect(page).toHaveURL(/#encyclopedia\/indigenous-relational-governance$/);
+  await page.getByRole('link', { name: /All encyclopedia entries/i }).click();
   await page.getByRole('tab', { name: /Research atlas/i }).click();
   await expect(page.getByText('RESEARCH ATLAS', { exact: true })).toBeVisible();
   await page.getByText(/Recurring political forms · 12 patterns/i).click();
