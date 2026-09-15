@@ -1124,4 +1124,294 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist research on colonialism, race, migration, disability, LGBTQ+ rights, environmental policy, and the tensions between universalism and pluralism.',
     ],
   },
+  'national-conservative': {
+    id: 'national-conservative',
+    title: 'National conservative',
+    canonicalLabel: 'National conservative',
+    aliases: [
+      'national conservatism',
+      'sovereigntist conservatism',
+      'one-nation conservatism',
+      'patriotic conservatism',
+    ],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile combines conservative emphasis on inherited institutions with strong national sovereignty and cultural continuity. It can be constitutional and pluralist; it is not automatically ethnic nationalist, authoritarian, populist, or fascist.',
+    timeScope: 'Modern conservative roots after the French Revolution, nineteenth-century nation-building, twentieth-century mass democracy, and contemporary debates over sovereignty and cultural change.',
+    geographicScope: 'A transnational family with British, French, European, South Asian, and other national variants; the meaning of “nation” differs by history and institution.',
+    summary: 'A conservative profile that treats national sovereignty, cultural continuity, inherited institutions, borders, and public order as central political goods. It generally accepts a mixed or market-oriented economy and democratic institutions, but gives more weight to national cohesion, tradition, and a capable state than classical or progressive liberalism does.',
+    summaryCitations: citations(
+      ['burkeReflections', 'renanNation', 'andersonImaginedCommunities', 'hobbesLeviathan'],
+      ['sepConservatism', 'sepNationalism', 'vdem'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -34,
+        label: 'Somewhat market-oriented mixed economy',
+        explanation: 'Private property and markets are usually accepted, but strategic industries, welfare provision, trade, and regulation may be shaped by national resilience or social stability. National conservatism does not require laissez-faire and can support paternalist or interventionist economic policy.',
+        citations: citations(['adamSmithWealth', 'burkeReflections'], ['sepConservatism', 'sepLiberalism']),
+      },
+      social: {
+        score: -68,
+        label: 'Strongly traditionalist',
+        explanation: 'Family, religion, language, customary morality, and inherited institutions are treated as sources of social order and identity. Change may be accepted when gradual or experience-based, but rapid abstract redesign is viewed with suspicion.',
+        citations: citations(['burkeReflections', 'tocquevilleDemocracy'], ['sepConservatism']),
+      },
+      authority: {
+        score: 46,
+        label: 'Order-oriented but potentially constitutional',
+        explanation: 'The profile favors law, public order, borders, and a capable executive or administrative state, while its constitutional variant accepts elections, courts, and legal limits. Strong authority becomes authoritarian only when independent institutions and opposition are systematically subordinated.',
+        citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'vdem']),
+      },
+      identity: {
+        score: -82,
+        label: 'Strongly nationalist / sovereignty-centered',
+        explanation: 'Political loyalty centers on the nation, its historical memory, borders, language, and capacity for self-government. The nation may be civic and constitutional or ethnic and exclusionary; the profile records that distinction rather than assuming one definition.',
+        citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepNationalism', 'sepConservatism']),
+      },
+      foreign: {
+        score: -34,
+        label: 'Active defense and sovereignty',
+        explanation: 'The state is expected to defend national interests, borders, and strategic autonomy, but national conservatism does not automatically entail imperial expansion or permanent war. Some variants favor alliances and restraint; others emphasize military power and sovereignty more strongly.',
+        citations: citations(['morgenthauRealism', 'burkeReflections'], ['foreignPolicy', 'sepNationalism']),
+      },
+      religion: {
+        score: -40,
+        label: 'Religiously grounded cultural order',
+        explanation: 'Religious tradition may inform public morality, national memory, and institutions, but the profile does not require clerical rule or a formal theocracy. Constitutional national conservatives may protect religious pluralism while still defending an inherited religious culture.',
+        citations: citations(['burkeReflections', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'sepConservatism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: '“National conservative” describes a family of positions that joins conservative respect for inherited institutions and gradual change to a strong emphasis on national sovereignty, borders, cultural continuity, and political cohesion. It is a compound label: conservatism answers questions about change and order, while nationalism answers questions about collective membership and self-government.',
+            citations: citations(['burkeReflections', 'renanNation'], ['sepConservatism', 'sepNationalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile is not identical to fascism or ethnic nationalism. A national-conservative movement may defend constitutional government, elections, private association, and equal citizenship, even while opposing rapid cultural change or supranational authority. The boundary is crossed when national unity is used to eliminate pluralism, rights, or independent institutions.',
+            citations: citations(['burkeReflections', 'andersonImaginedCommunities'], ['sepConservatism', 'sepNationalism', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Conservative reasoning distrusts political projects that treat society as a machine that can be rebuilt from abstract principles. Institutions are understood as accumulated practices carrying knowledge, memory, and authority that cannot be fully reconstructed by a single generation. Change is not rejected in principle, but should usually be piecemeal, tested, and responsive to experience.',
+            citations: citations(['burkeReflections'], ['sepConservatism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Nationalism adds the claim that nations are politically significant communities with special obligations and a legitimate interest in self-determination. That community may be understood through shared citizenship and political consent, through language and culture, or through ancestry and ethnicity. These variants have very different consequences for minorities, migration, borders, and democratic inclusion.',
+            citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepNationalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Economically, national conservatism is flexible. It can support markets, private property, welfare for citizens, industrial policy, protection of strategic sectors, or selective regulation when these are said to preserve national independence and social cohesion. The economic score therefore remains closer to the mixed-market center than to either libertarian absolutism or collectivist ownership.',
+            citations: citations(['adamSmithWealth', 'burkeReflections'], ['sepConservatism', 'sepLiberalism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: '1790s: conservative response to revolution',
+            text: 'Burke’s critique of the French Revolution became a major source for conservative arguments about inherited rights, social continuity, unintended consequences, and the limits of rational political reconstruction. His conservatism should not be reduced to opposition to all reform or to a fully formed modern nationalism.',
+            citations: citations(['burkeReflections'], ['sepConservatism']),
+          },
+          {
+            period: 'Nineteenth century: nation-building and popular sovereignty',
+            text: 'The expansion of mass politics, print culture, language movements, and state-building made the nation a central object of political loyalty. National projects could be liberal and civic, conservative and dynastic, or ethnic and exclusionary; the same national vocabulary supported different political systems.',
+            citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepNationalism']),
+          },
+          {
+            period: 'Late nineteenth–early twentieth centuries: mass democracy and social order',
+            text: 'Conservative parties adapted to expanded suffrage, labor movements, industrialization, and national social policy. Many accepted welfare or state intervention when it protected order, social solidarity, or national capacity, while others remained more economically liberal.',
+            citations: citations(['burkeReflections', 'tocquevilleDemocracy'], ['sepConservatism', 'sepLiberalism']),
+          },
+          {
+            period: 'Twentieth century: sovereignty, empire, and constitutional nation-states',
+            text: 'National conservatism developed through different relationships with empire, decolonization, religion, military power, and constitutional democracy. Some national-conservative traditions defended parliamentary or republican institutions; others became exclusionary or authoritarian, which is why country- and period-specific classification is essential.',
+            citations: citations(['andersonImaginedCommunities', 'morgenthauRealism'], ['sepNationalism', 'foreignPolicy', 'vdem']),
+          },
+          {
+            period: 'Contemporary debates',
+            text: 'Current national-conservative politics often emphasizes sovereignty, migration, borders, national culture, family policy, and skepticism toward supranational institutions. Internal variation is substantial: some movements remain constitutional and civic, while others define the nation ethnically or attack pluralist checks on executive power.',
+            citations: citations(['renanNation', 'andersonImaginedCommunities', 'burkeReflections'], ['sepNationalism', 'sepConservatism', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Civic or constitutional national conservatism',
+                distinction: 'Defends national institutions, sovereignty, and cultural continuity while defining membership through citizenship, law, and political participation.',
+                relation: 'The most compatible variant with liberal democracy and equal civic rights.',
+                citations: citations(['renanNation', 'burkeReflections'], ['sepNationalism', 'vdem']),
+              },
+              {
+                label: 'Religious or cultural national conservatism',
+                distinction: 'Treats inherited religious morality, family structures, language, or cultural memory as central to national identity and public legitimacy.',
+                relation: 'Can remain pluralist, but risks privileging a majority tradition over equal citizenship if constitutional safeguards are weak.',
+                citations: citations(['burkeReflections', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'sepConservatism']),
+              },
+              {
+                label: 'Economic or developmental national conservatism',
+                distinction: 'Uses markets selectively while protecting strategic industries, national supply chains, welfare citizenship, or state capacity.',
+                relation: 'Shows why national conservatism is not equivalent to laissez-faire economics.',
+                citations: citations(['adamSmithWealth', 'burkeReflections'], ['sepConservatism', 'sepLiberalism']),
+              },
+              {
+                label: 'Ethnic nationalism',
+                distinction: 'Defines political membership substantially through ancestry, ethnicity, language, or inherited descent rather than equal civic status.',
+                relation: 'May overlap strongly on identity but is not required by national conservatism and can become exclusionary or anti-democratic.',
+                citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepNationalism']),
+              },
+              {
+                label: 'Fascist and authoritarian nationalism',
+                distinction: 'Adds revolutionary mass mobilization, political violence, leader cult, totalizing authority, or the elimination of pluralist institutions.',
+                relation: 'A critical boundary: nationalism and conservatism alone do not establish fascism.',
+                citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'sepNationalism', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No country or politician is an exact six-dimensional match. National-conservative politics changes with constitutional rules, economic conditions, religion, ethnic composition, colonial history, and international position; examples identify partial traditions rather than permanent labels.',
+            citations: citations(['burkeReflections', 'renanNation', 'andersonImaginedCommunities'], ['sepConservatism', 'sepNationalism', 'vdem']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Edmund Burke',
+                role: 'major theorist of tradition, inherited institutions, and cautious reform',
+                caveat: 'Burke was also a critic of imperial abuses and cannot be reduced to every later nationalist or conservative movement.',
+                citations: citations(['burkeReflections'], ['sepConservatism']),
+              },
+              {
+                name: 'Ernest Renan',
+                role: 'liberal theorist of nationhood and political belonging',
+                caveat: 'Renan’s civic account is a contrast to ethnic nationalism; citing him does not make national conservatism automatically liberal or inclusive.',
+                citations: citations(['renanNation'], ['sepNationalism']),
+              },
+              {
+                name: 'Benedict Anderson',
+                role: 'historian and theorist of nations as imagined political communities',
+                caveat: 'Anderson is an interpreter of nationalism, not a representative of national conservatism.',
+                citations: citations(['andersonImaginedCommunities'], ['sepNationalism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Burkean and one-nation conservative traditions',
+                period: 'Britain, late eighteenth century onward',
+                match: 'partial intellectual and institutional resemblance',
+                caveat: 'British conservatism included liberal, imperial, paternalist, democratic, and economically diverse strands; “Burkean” is not a complete country label.',
+                citations: citations(['burkeReflections', 'tocquevilleDemocracy'], ['sepConservatism']),
+              },
+              {
+                name: 'Civic-republican and sovereignist traditions',
+                period: 'Europe and other constitutional states, varying by period',
+                match: 'partial identity and authority resemblance',
+                caveat: 'Sovereignty and national independence can support constitutional democracy or authoritarian centralization; institutional evidence is required.',
+                citations: citations(['renanNation', 'morgenthauRealism'], ['sepNationalism', 'foreignPolicy', 'vdem']),
+              },
+              {
+                name: 'Contemporary national-conservative movements',
+                period: 'present',
+                match: 'movement-level comparison only',
+                caveat: 'Do not assign a country an exact match from border policy, religious rhetoric, or national symbolism alone; compare its economic, social, authority, identity, foreign-policy, and religious institutions separately.',
+                citations: citations(['andersonImaginedCommunities', 'burkeReflections'], ['sepNationalism', 'sepConservatism', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'conservatism', relation: 'broader family centered on tradition, continuity, and gradual reform' },
+              { id: 'civic-nationalism', relation: 'more explicitly constitutional and citizenship-based form of nationalism' },
+              { id: 'ethnic-nationalism', relation: 'more exclusionary identity variant, not an automatic synonym' },
+              { id: 'christian-democracy', relation: 'religious-social and constitutional neighbor with a different party tradition' },
+              { id: 'monarchism', relation: 'can overlap through inherited institutions, but national conservatism does not require monarchy' },
+              { id: 'historical-fascist', relation: 'critical boundary: fascism adds totalizing and revolutionary authoritarian features' },
+              { id: 'progressive-liberal', relation: 'liberal-democratic counterpoint with stronger emphasis on social change and international inclusion' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that appeals to tradition can preserve unjust hierarchy, romanticize the past, or make minorities and dissenters appear less fully national. The claim that institutions embody inherited wisdom can also obscure who was excluded from those institutions and whose history became “national” memory.',
+            citations: citations(['burkeReflections', 'andersonImaginedCommunities'], ['sepConservatism', 'sepNationalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns sovereignty and borders. National self-government can protect democratic accountability, but it can also be used to reject minority rights, international law, migration, or cooperation on problems that cross borders. The entry therefore treats national sovereignty as one political value among others, not an automatic trump card.',
+            citations: citations(['renanNation', 'morgenthauRealism'], ['sepNationalism', 'foreignPolicy', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The strongest safeguard is to distinguish civic attachment from ethnic hierarchy and constitutional conservatism from authoritarian nationalism. Evidence of elections, opposition rights, judicial independence, minority citizenship, religious freedom, and peaceful transfer of power should be recorded before assigning a country or movement to a more coercive neighboring profile.',
+            citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'sepNationalism', 'vdem', 'sepReligionPolitics']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: [
+        'burkeReflections',
+        'renanNation',
+        'andersonImaginedCommunities',
+        'tocquevilleDemocracy',
+        'adamSmithWealth',
+        'hobbesLeviathan',
+        'morgenthauRealism',
+        'aquinasMoralPolitical',
+      ],
+      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'vdem', 'foreignPolicy'],
+      editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
+    },
+    researchGaps: [
+      'Add French-language scholarship on Gaullism, republican sovereignty, laïcité, and the tensions between civic universalism and cultural continuity.',
+      'Add German-language scholarship on post-war Christian democracy, ordoliberalism, national conservatism, and the constitutional lessons of authoritarian nationalism.',
+      'Add country-specific sources before listing Hungary, India, Poland, France, Japan, or other states as examples; current governments and party systems change over time.',
+      'Add specialist research on colonialism, minority citizenship, migration, religion, gender, welfare nationalism, and the relationship between national-conservative movements and democratic backsliding.',
+    ],
+  },
 };
