@@ -5207,4 +5207,370 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Clarify the relationship among civic nationalism, patriotism, constitutional patriotism, cosmopolitanism, multicultural citizenship, and plurinational democracy through dedicated comparative scholarship rather than treating them as interchangeable labels.',
     ],
   },
+  'ethnic-nationalist': {
+    id: 'ethnic-nationalist',
+    title: 'Ethnic nationalist',
+    canonicalLabel: 'Ethnic nationalism',
+    aliases: [
+      'ethnic nationalism',
+      'ethnonationalism',
+      'ethnocultural nationalism',
+      'ancestry-based nationalism',
+      'cultural nationalism',
+      'romantic nationalism',
+    ],
+    entryType: 'historical and analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Ethnic nationalism is a family of arguments that makes a shared ancestry, ethnocultural origin, language, religion, or inherited peoplehood central to national membership and sovereignty. It does not automatically mean racism, fascism, dictatorship, or genocidal politics; those are stronger claims requiring evidence about hierarchy, law, violence, and institutions. Conversely, cultural or minority self-determination should not be treated as equivalent to domination by an ethnic majority.',
+    timeScope: 'Ethnic communities and cultural identities have older histories, but the modern political form developed with romantic nationalism, state-building, mass administration, imperial competition, and the nineteenth- and twentieth-century transformation of subjects into national citizens. Its meanings continue to change through decolonization, migration, minority politics, and citizenship law.',
+    geographicScope: 'Transnational profile appearing in majority-state nationalism, minority and secessionist movements, diasporic politics, post-imperial nation-building, ethnoreligious projects, and racial states. Historical examples include Central and Eastern Europe, colonial and postcolonial settings, and Nazi Germany as an extreme warning case; no region is inherently or permanently ethnic-nationalist.',
+    summary: 'A form of nationalism that defines the nation substantially through a presumed common ancestry, ethnocultural origin, language, religion, inherited memory, or descent from a historic people. It can seek recognition or self-determination for a subordinated group, but it becomes exclusionary when membership is made hereditary, when minorities are treated as guests or threats, or when territory and state power are claimed for one group alone. Economic policy is open-ended; the characteristic signals are identity boundaries and the institutions used to enforce them.',
+    summaryCitations: citations(
+      ['smithEthnicOrigins', 'connorEthnonationalism', 'brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities'],
+      ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy', 'sepColonialism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -18,
+        label: 'Policy-flexible; often national-priority',
+        explanation: 'Ethnic nationalism does not prescribe capitalism, socialism, welfare, or planning. Movements may defend private property, national development, protectionism, welfare for the co-ethnic population, or state direction. A mild market-side score reflects the common compatibility of nationalism with private property in modern nation-states, not a definition; “national preference” in distribution is an independent question about who receives rights and benefits.',
+        citations: citations(['smithEthnicOrigins', 'connorEthnonationalism'], ['sepNationalism', 'bpbNationalism', 'openTextbook']),
+      },
+      social: {
+        score: -72,
+        label: 'Strongly conformity- and inheritance-oriented',
+        explanation: 'The profile treats inherited culture, family continuity, language, religious tradition, or demographic reproduction as important to collective survival. This can mean cultural preservation or minority autonomy, but in a dominant-state project it often pressures people to conform and may subordinate gender, religious, sexual, linguistic, or individual rights to the supposed needs of the nation.',
+        citations: citations(['smithEthnicOrigins', 'brubakerEthnicityWithoutGroups', 'hitlerMeinKampf'], ['sepNationalism', 'bpbNationalism', 'ohchrMinorityRights']),
+      },
+      authority: {
+        score: 65,
+        label: 'Authoritarian-leaning boundary enforcement',
+        explanation: 'Because membership is treated as a collective inheritance, the state or movement may expand authority over citizenship, borders, schooling, language, media, family formation, political loyalty, and historical memory. Ethnic self-determination can be democratic and decentralized, so the high score describes the frequent risk of coercive boundary enforcement rather than an unavoidable institutional form.',
+        citations: citations(['connorEthnonationalism', 'hitlerMeinKampf', 'arendtTotalitarianism'], ['sepNationalism', 'bpbNationalism', 'vdem', 'ohchrMinorityRights']),
+      },
+      identity: {
+        score: -96,
+        label: 'Very strongly ancestry- and culture-centered',
+        explanation: 'The defining claim is that the nation is a people linked by origin, descent, language, religion, historical memory, or cultural inheritance rather than by citizenship alone. The project uses the negative end of the identity axis for nationalism, so this profile sits near the nationalist endpoint. In practice, ethnic and civic criteria are often mixed and must be measured rather than assumed from a label.',
+        citations: citations(['smithEthnicOrigins', 'connorEthnonationalism', 'brubakerEthnicityWithoutGroups'], ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy']),
+      },
+      foreign: {
+        score: -55,
+        label: 'Interventionist or irredentist risk',
+        explanation: 'If the nation is imagined to extend beyond current borders, a movement may support diaspora protection, territorial revision, border intervention, or force against an alleged external sponsor of the group. Other ethnic-national movements favor negotiated autonomy, nonviolence, or defensive self-determination. The score marks a recurring risk, not a claim that every ethnic movement seeks war.',
+        citations: citations(['connorEthnonationalism', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['sepNationalism', 'foreignPolicy', 'bpbNationalism']),
+      },
+      religion: {
+        score: -35,
+        label: 'Often culturally or religiously sacralized',
+        explanation: 'Religion may be treated as an inherited marker of peoplehood, a source of moral law, or a boundary between insiders and outsiders, but ethnic nationalism can also be secular and race- or language-centered. The negative score indicates a common tendency to make inherited community norms politically important; it does not establish clerical rule or a single theology.',
+        citations: citations(['hitlerMeinKampf', 'renanNation', 'brubakerEthnicityWithoutGroups'], ['sepReligionPolitics', 'sepNationalism', 'bpbNationalism', 'ohchrMinorityRights']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Ethnic nationalism makes a people defined through inherited origin, language, religion, culture, historical memory, or ancestry central to national politics. It asks who the nation is before it asks how the state should be governed, and it often treats the state as legitimate when it expresses or protects that people’s collective political existence.',
+            citations: citations(['smithEthnicOrigins', 'connorEthnonationalism'], ['sepNationalism', 'bpbNationalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label covers very different situations. A minority may use ethnonational language to resist imperial rule, demand cultural rights, or seek self-government; a majority state may use the same language to deny equal citizenship to minorities, migrants, or people with mixed ancestry. The relevant evidence is therefore not only the group’s identity claim but also the direction of power: who is protected, who is excluded, who controls territory, and whether dissent and mixed belonging remain possible.',
+            citations: citations(['connorEthnonationalism', 'brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities'], ['sepNationalism', 'sepColonialism', 'ohchrMinorityRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Ethnic nationalism is not synonymous with every attachment to language, ancestry, religion, or local culture. Cultural pride, diaspora identity, Indigenous nationhood, minority autonomy, and anti-colonial self-determination can be compatible with equal rights and political pluralism. Nor is ethnic nationalism automatically fascist or genocidal. Those classifications require additional evidence about racial hierarchy, one-party rule, militarism, systematic persecution, forced removal, or mass killing.',
+            citations: citations(['smithEthnicOrigins', 'brubakerEthnicityWithoutGroups', 'hitlerMeinKampf'], ['sepNationalism', 'sepColonialism', 'ushmmNurembergLaws', 'bpbNationalSocialism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Its central political move is to convert a social or cultural category into a nation with a claim to collective sovereignty. Language, religion, folklore, historical narratives, family descent, monuments, territory, and memories of injury can be used to describe the group as a continuous people. These symbols may express genuine solidarity, but they are also interpreted, selected, taught, counted, and sometimes imposed by institutions and political entrepreneurs.',
+            citations: citations(['smithEthnicOrigins', 'andersonImaginedCommunities', 'brubakerEthnicityWithoutGroups'], ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Ethnic membership can be defined narrowly or broadly. Some movements allow conversion, intermarriage, language adoption, civic participation, or diaspora return; others define membership as hereditary and effectively unchangeable. Legal tests may use ancestry, names, documents, blood categories, place of birth, religion, or language. These mechanisms should be distinguished from rhetoric: a movement that speaks of heritage but grants equal, revisable citizenship is not institutionally identical to one that makes ancestry a permanent legal status.',
+            citations: citations(['connorEthnonationalism', 'brubakerEthnicityWithoutGroups', 'hitlerMeinKampf'], ['sepNationalism', 'bpbNationalism', 'ohchrMinorityRights', 'ushmmNurembergLaws']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Ethnic nationalism often links people and territory. A homeland may be understood as the place where a group has lived, the place remembered in national history, or the territory required for a future state. This can support decolonization or minority self-rule, but it can also produce irredentism, forced homogenization, population transfer, settlement projects, or demands that borders match an imagined ethnic map. Historical residence and present sovereignty rarely align perfectly, so territorial claims require evidence about all affected communities.',
+            citations: citations(['smithEthnicOrigins', 'connorEthnonationalism', 'andersonImaginedCommunities'], ['sepNationalism', 'sepColonialism', 'foreignPolicy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The politics can be majoritarian or emancipatory, democratic or authoritarian, secular or religious, economically liberal or interventionist. A movement’s placement on this site must therefore keep identity separate from the other axes. In particular, a strong ethnic identity score cannot by itself establish a position on economic ownership, social equality, executive constraints, religion, or the use of force abroad.',
+            citations: citations(['connorEthnonationalism', 'brubakerEthnicityWithoutGroups'], ['sepNationalism', 'vdem', 'foreignPolicy', 'sepReligionPolitics']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Categorization itself is politically consequential. Census forms, school curricula, citizenship registries, party membership, identity documents, and media labels can make an ethnic category more visible and more durable. Rogers Brubaker’s critique is especially useful here: analysts should distinguish groups as claimed social entities from categories imposed by institutions and identifications that vary by context, rather than treating every named ethnicity as a fixed bounded object.',
+            citations: citations(['brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities'], ['cambridgeKohnDichotomy', 'bpbNationalism', 'sepNationalism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Premodern ethnic and cultural communities',
+            text: 'Religious communities, language groups, clans, dynasties, cities, and peoples formed identities long before the modern nation-state. They are historical antecedents, not automatic examples of modern ethnic nationalism: premodern membership could be local, imperial, religious, dynastic, class-based, or legally plural rather than organized around a sovereign nation of equal citizens.',
+            citations: citations(['smithEthnicOrigins', 'andersonImaginedCommunities'], ['sepNationalism', 'openTextbook']),
+          },
+          {
+            period: 'Late eighteenth and early nineteenth centuries: romantic and cultural nationalism',
+            text: 'Romantic thinkers and political movements placed language, folklore, memory, and the Volk or people at the center of collective identity. These currents challenged dynastic empires and universalizing political models, sometimes defending cultural diversity and sometimes turning cultural difference into a demand for one people, one territory, and one state.',
+            citations: citations(['smithEthnicOrigins', 'andersonImaginedCommunities'], ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy']),
+          },
+          {
+            period: 'Nineteenth century: mass administration and national standardization',
+            text: 'Schools, conscription, print media, censuses, bureaucratic records, railways, and national markets helped transform cultural categories into administratively legible populations. State-building could create national solidarity and political participation, while also standardizing language, ranking populations, and narrowing acceptable forms of identity.',
+            citations: citations(['andersonImaginedCommunities', 'smithEthnicOrigins', 'brubakerEthnicityWithoutGroups'], ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy']),
+          },
+          {
+            period: 'Empire, colonial rule, and racial classification',
+            text: 'Imperial administrations frequently classified subjects by race, tribe, religion, language, or custom and used those classifications to govern territory and labor. Colonial categories could harden or transform identities rather than simply record timeless ethnic groups. Anti-colonial movements later reused national language for self-determination, often inheriting borders that did not match the social communities governed within them.',
+            citations: citations(['andersonImaginedCommunities', 'nabucoAbolitionism', 'brubakerEthnicityWithoutGroups'], ['sepColonialism', 'sepNationalism', 'bpbNationalism']),
+          },
+          {
+            period: '1918–1945: post-imperial states and radicalized membership',
+            text: 'The collapse of empires made national self-determination a powerful principle but left mixed populations and minority treaties inside new or enlarged states. In the most destructive cases, ethnic and racial nationalism combined with dictatorship, militarization, territorial revision, and state terror. Nazi Germany turned ancestry into a legal hierarchy through citizenship and racial legislation, making it a warning case for how inherited identity can be converted into organized persecution and genocide.',
+            citations: citations(['connorEthnonationalism', 'arendtTotalitarianism', 'hitlerMeinKampf'], ['sepNationalism', 'bpbNationalSocialism', 'ushmmNurembergLaws', 'vdem']),
+          },
+          {
+            period: 'After 1945: human rights, minority protection, and decolonization',
+            text: 'The post-war legal order increasingly rejected racial citizenship, collective punishment, and conquest while recognizing self-determination and minority protections in different forms. Decolonization created new states and national projects, but the tension between territorial citizenship, ethnic plurality, Indigenous sovereignty, and inherited colonial borders remained unresolved.',
+            citations: citations(['nabucoAbolitionism', 'andersonImaginedCommunities'], ['sepColonialism', 'ohchrMinorityRights', 'sepNationalism', 'vdem']),
+          },
+          {
+            period: 'Late twentieth century to the present: migration, secession, and renewed boundary politics',
+            text: 'Migration, diaspora networks, federalism, language revival, secessionist campaigns, citizenship reform, and ethnoreligious mobilization continue to reshape ethnic-national politics. Some movements seek democratic autonomy or cultural recognition; others promote nativism, unequal citizenship, exclusion, or territorial violence. Current-country classification must be dated and based on laws, programmes, institutions, and conduct rather than on a party label or a single speech.',
+            citations: citations(['connorEthnonationalism', 'brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities'], ['sepNationalism', 'ohchrMinorityRights', 'cambridgeKohnDichotomy', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Cultural or romantic nationalism',
+                distinction: 'Treats language, folklore, historical memory, literature, and cultural expression as the core of a people’s distinct identity.',
+                relation: 'A cultural basis can support plural cultural rights, but it becomes ethnic-nationalist when it is converted into exclusive sovereignty or hereditary political membership.',
+                citations: citations(['smithEthnicOrigins', 'andersonImaginedCommunities'], ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy']),
+              },
+              {
+                label: 'Minority or secessionist ethnonationalism',
+                distinction: 'Uses a group’s language, ancestry, territory, or historical memory to demand autonomy, recognition, federal status, or an independent state.',
+                relation: 'Can be a response to domination and compatible with democratic rights; the ethical and institutional questions concern treatment of internal minorities, borders, and coercion after self-rule.',
+                citations: citations(['connorEthnonationalism', 'brubakerEthnicityWithoutGroups'], ['sepNationalism', 'sepColonialism', 'ohchrMinorityRights']),
+              },
+              {
+                label: 'Diaspora and irredentist nationalism',
+                distinction: 'Defines a dispersed people as one nation and may claim that the state has obligations to co-ethnics outside its borders or that “historic” territory should be recovered.',
+                relation: 'Diaspora solidarity can be cultural or humanitarian; irredentism becomes coercive when it denies the political agency and rights of populations currently living in the claimed territory.',
+                citations: citations(['connorEthnonationalism', 'andersonImaginedCommunities'], ['sepNationalism', 'foreignPolicy', 'sepColonialism']),
+              },
+              {
+                label: 'Ethnoreligious nationalism',
+                distinction: 'Treats a religious tradition as an inherited marker of national peoplehood, often linking faith, family, territory, law, and collective memory.',
+                relation: 'It differs from theocracy: religious identity may be cultural rather than clerical, while a theocracy gives religious authority a constitutive governing role. Both can coexist and must be tested separately.',
+                citations: citations(['brubakerEthnicityWithoutGroups', 'hitlerMeinKampf'], ['sepReligionPolitics', 'sepNationalism', 'bpbNationalism', 'ohchrMinorityRights']),
+              },
+              {
+                label: 'Nativist or exclusionary nationalism',
+                distinction: 'Treats the native or historically dominant population as the rightful owner of the state and makes immigrants, minorities, refugees, or allegedly disloyal citizens politically suspect.',
+                relation: 'Often combines ethnic nationalism with populism, welfare chauvinism, border restriction, or cultural assimilation. It should be distinguished from ordinary immigration policy by the legal and political status assigned to outsiders and minorities.',
+                citations: citations(['brubakerEthnicityWithoutGroups', 'connorEthnonationalism'], ['sepNationalism', 'ohchrMinorityRights', 'bpbNationalism']),
+              },
+              {
+                label: 'Racial or biological nationalism',
+                distinction: 'Treats ancestry as a biological hierarchy and makes racial classification, reproduction, segregation, or “purity” central to the political order.',
+                relation: 'This is a particularly coercive and historically dangerous subtype, not a synonym for all ethnic nationalism. Its institutional markers include racial law, unequal citizenship, state violence, and exclusion that cannot be undone by adopting a culture or professing a belief.',
+                citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmNurembergLaws', 'bpbNationalSocialism', 'sepNationalism']),
+              },
+              {
+                label: 'Authoritarian ethnocracy',
+                distinction: 'Concentrates state power around a dominant ethnic group while restricting opposition, equal citizenship, independent institutions, or the political participation of minorities.',
+                relation: 'The authority score rises because ethnic membership is enforced through the state; it overlaps with authoritarianism but is not identical to every authoritarian regime or every ethnic movement.',
+                citations: citations(['arendtTotalitarianism', 'connorEthnonationalism'], ['vdem', 'sepNationalism', 'ohchrMinorityRights']),
+              },
+              {
+                label: 'Genocidal or totalizing racial nationalism',
+                distinction: 'Defines targeted populations as existential contaminants or enemies and uses state or movement power for systematic persecution, removal, enslavement, or extermination.',
+                relation: 'Nazi Germany is a historically documented extreme case. It should be named precisely and never used as a casual synonym for cultural nationalism, ordinary patriotism, or every contemporary right-wing movement.',
+                citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Johann Gottfried Herder',
+                role: 'German philosopher and early cultural-national thinker associated with the relationship among language, culture, historical particularity, and the Volk.',
+                caveat: 'Herder’s relationship to nationalism is debated, and he should not be treated as a straightforward author of racial or imperial nationalism. Later movements selectively appropriated cultural language in ways that exceeded or contradicted his pluralist and anti-imperial concerns.',
+                citations: citations(['smithEthnicOrigins'], ['sepNationalism', 'cambridgeKohnDichotomy']),
+              },
+              {
+                name: 'Anthony D. Smith',
+                role: 'Historical sociologist who studied ethnic communities, myths, memories, symbols, and the transformation of ethnies into modern nations.',
+                caveat: 'Smith provides an influential scholarly interpretation of national origins and ethnic continuity, not a biological theory that nations are immutable or naturally entitled to states.',
+                citations: citations(['smithEthnicOrigins'], ['sepNationalism', 'cambridgeKohnDichotomy']),
+              },
+              {
+                name: 'Walker Connor',
+                role: 'Comparative scholar who analyzed ethnonationalism as identity and loyalty organized around a perceived common ancestry and stressed the political importance of national consciousness.',
+                caveat: 'Connor’s terminology is one influential approach among competing theories of nationalism. It should be combined with institutional and historical evidence rather than used as a universal test for group authenticity.',
+                citations: citations(['connorEthnonationalism'], ['sepNationalism', 'cambridgeKohnDichotomy']),
+              },
+              {
+                name: 'Rogers Brubaker',
+                role: 'Sociologist whose critique of groupism distinguishes ethnic categories, political projects, institutional classifications, and changing identifications.',
+                caveat: 'Brubaker is principally a critic and analyst of ethnic categorization, not an advocate of ethnic nationalism. His work is included to prevent the entry from treating ethnic groups as timeless biological containers.',
+                citations: citations(['brubakerEthnicityWithoutGroups'], ['cambridgeKohnDichotomy', 'sepNationalism']),
+              },
+              {
+                name: 'Adolf Hitler and Nazi racial nationalism',
+                role: 'A historically documented extreme case in which racialized ancestry, dictatorship, territorial expansion, antisemitism, and state violence were fused into a genocidal political order.',
+                caveat: 'This is a warning case, not a representative definition of all ethnic nationalism. The Nazi regime’s racial laws and genocide must be analyzed with precise historical sources rather than used as a rhetorical label for ordinary cultural or national politics.',
+                citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'German romantic and cultural nationalism',
+                period: 'German-speaking Europe, late eighteenth–nineteenth centuries',
+                match: 'Language, folklore, historical memory, and the idea of a cultural people became important resources for challenging dynastic and imperial arrangements.',
+                caveat: 'This history contains pluralist, cultural, liberal, conservative, imperial, and later racial currents. It should not be collapsed into National Socialism, nor should later Nazi appropriation be projected backward onto every romantic thinker.',
+                citations: citations(['smithEthnicOrigins', 'andersonImaginedCommunities'], ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy']),
+              },
+              {
+                name: 'Central and Eastern European post-imperial nation-building',
+                period: 'Especially 1918–1945, with earlier roots and later legacies',
+                match: 'The collapse or weakening of empires created movements seeking states aligned with language, culture, or historical peoples, while new borders left many mixed populations inside each state.',
+                caveat: 'The region cannot be classified as uniformly ethnic. National movements combined civic citizenship, cultural revival, minority protection, exclusion, secession, authoritarianism, and democratic projects in different proportions.',
+                citations: citations(['connorEthnonationalism', 'brubakerEthnicityWithoutGroups'], ['cambridgeKohnDichotomy', 'sepNationalism', 'ohchrMinorityRights']),
+              },
+              {
+                name: 'Anti-imperial and minority self-determination movements',
+                period: 'Nineteenth century–present, across colonial and multinational settings',
+                match: 'Groups have invoked shared language, ancestry, religion, or historical community to resist imperial rule, demand autonomy, protect cultural rights, or establish political self-government.',
+                caveat: 'A subordinated group’s self-determination claim does not automatically justify domination over its own internal minorities. The relevant questions are consent, equal rights, non-discrimination, territorial inclusion, and whether alternative forms of autonomy were available.',
+                citations: citations(['nabucoAbolitionism', 'connorEthnonationalism', 'brubakerEthnicityWithoutGroups'], ['sepColonialism', 'sepNationalism', 'ohchrMinorityRights']),
+              },
+              {
+                name: 'Nazi Germany',
+                period: 'Germany, 1933–1945',
+                match: 'A documented extreme in which racial ancestry defined full political membership, law enforced unequal status, opposition was destroyed, territorial expansion was pursued, and state violence culminated in genocide.',
+                caveat: 'Nazi Germany is an essential warning case for racial nationalism, but it is not a generic synonym for ethnic identity, cultural nationalism, immigration restriction, conservatism, or every nationalist movement. The classification rests on the combination of racial law, dictatorship, persecution, war, and genocide.',
+                citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmNurembergLaws', 'bpbNationalSocialism', 'vdem', 'sepFascism']),
+              },
+              {
+                name: 'Contemporary ethnonationalist movements and membership regimes',
+                period: 'Contemporary; country-, party-, and issue-specific',
+                match: 'Parties and movements may prioritize a dominant ethnic or ethnoreligious population, demand language or ancestry tests, oppose immigration, claim diaspora protection, or seek autonomous or independent territory.',
+                caveat: 'No current country should be labeled an exact match from a party name or one policy. Classification requires dated evidence from citizenship law, party programmes, minority treatment, courts, executive constraints, violence, and the rights of non-citizens.',
+                citations: citations(['connorEthnonationalism', 'brubakerEthnicityWithoutGroups'], ['sepNationalism', 'ohchrMinorityRights', 'vdem', 'cambridgeKohnDichotomy']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'civic-nationalist', relation: 'defines membership primarily through citizenship and political institutions, although real civic and ethnic criteria often overlap' },
+              { id: 'national-conservative', relation: 'may share inherited identity, sovereignty, borders, and tradition, but national conservatism is not necessarily ethnic or exclusionary' },
+              { id: 'historical-fascist', relation: 'can overlap when ethnic or racial nationalism is joined to mass mobilization, dictatorship, militarism, and anti-pluralist revolution' },
+              { id: 'national-socialist', relation: 'a specific Nazi form of racial, totalitarian, antisemitic, and expansionist politics; it is not a synonym for ethnic nationalism' },
+              { id: 'anti-colonial-liberation', relation: 'can share self-determination and collective identity, but anti-colonial liberation centers imperial domination and may be civic, class-based, religious, Indigenous, or plural rather than ethnic' },
+              { id: 'religious-traditionalist', relation: 'may overlap when religion is treated as inherited national membership, but religious traditionalism can be non-national and ethnic nationalism can be secular' },
+              { id: 'populist', relation: 'can use people-versus-elite rhetoric and welfare or border claims, but populism is a thin ideology or political style that can attach to many national identities' },
+              { id: 'monarchist', relation: 'can combine dynastic continuity with ethnic nationhood, but monarchy and ethnic nationalism are independent institutions and doctrines' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first criticism is essentialism: ethnic nationalism can present a historically changing and internally diverse population as one natural, timeless, and homogeneous people. Language, religion, ancestry, and memory are real sources of identification, but their boundaries are contested and institutions help produce them. The safer method is to specify who defines the group, through which evidence, with what legal consequences, and whose mixed or dissenting identities are erased.',
+            citations: citations(['brubakerEthnicityWithoutGroups', 'smithEthnicOrigins', 'andersonImaginedCommunities'], ['cambridgeKohnDichotomy', 'sepNationalism', 'bpbNationalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second criticism is unequal citizenship. When the nation is treated as an inherited possession, minorities, migrants, refugees, people of mixed ancestry, and people who change language or religion may be treated as less authentic or less entitled to political rights. Citizenship law, voting rights, documentation, access to public services, minority-language protections, and remedies against discrimination are therefore more probative than symbolic rhetoric alone.',
+            citations: citations(['connorEthnonationalism', 'brubakerEthnicityWithoutGroups', 'millOnLiberty'], ['ohchrMinorityRights', 'sepNationalism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third criticism is the pressure toward homogenization. A movement may begin by defending cultural survival and then treat internal diversity as betrayal, impose one language in schools and administration, restrict intermarriage, police family formation, censor alternative histories, or demand loyalty to a dominant group. Safeguards include equal civil and political rights, freedom of conscience and association, minority participation, independent courts, educational pluralism, and constitutional limits on identity-based coercion.',
+            citations: citations(['millOnLiberty', 'brubakerEthnicityWithoutGroups', 'hitlerMeinKampf'], ['ohchrMinorityRights', 'sepReligionPolitics', 'ushmmNurembergLaws', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth criticism concerns territory and historical injury. Memories of dispossession, conquest, forced migration, or colonial rule can be morally and politically significant, but a past injustice does not automatically authorize a new injustice against people who now live in a territory. Peaceful autonomy, federalism, power-sharing, bilingual institutions, negotiated borders, minority guarantees, and international monitoring may be safer than attempts to make every border coincide with an imagined ethnic map.',
+            citations: citations(['connorEthnonationalism', 'nabucoAbolitionism', 'andersonImaginedCommunities'], ['sepColonialism', 'foreignPolicy', 'ohchrMinorityRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fifth criticism is escalation. Claims that the nation is endangered can justify emergency powers, paramilitary organization, censorship, surveillance, forced removal, territorial war, or the treatment of political opponents as internal enemies. Nazi racial citizenship and genocide demonstrate the catastrophic end of one historically specific path; they do not prove that every cultural or minority-national project follows it. Warning signs include hereditary legal status, dehumanizing propaganda, organized impunity, elimination of independent institutions, and violence against civilians.',
+            citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism', 'mussoliniDoctrine'], ['ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, ethnic nationalism can conflict with universal rights and with the fact that modern societies are layered, mobile, and interdependent. A person can belong to a language community, a religion, a city, a state, a diaspora, and a supranational legal order at the same time. The project should preserve that plural reality and avoid treating a national label as a biological diagnosis. The most important safeguards are equal citizenship, non-discrimination, minority and Indigenous rights, accountable government, free expression, peaceful dispute resolution, and the right to criticize the nation without becoming stateless or politically suspect.',
+            citations: citations(['brubakerEthnicityWithoutGroups', 'millOnLiberty', 'kantPerpetualPeace'], ['ohchrMinorityRights', 'sepNationalism', 'coeDemocraticCitizenship', 'vdem']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['smithEthnicOrigins', 'connorEthnonationalism', 'brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities', 'renanNation', 'hitlerMeinKampf', 'arendtTotalitarianism', 'mussoliniDoctrine', 'millOnLiberty', 'kantPerpetualPeace', 'nabucoAbolitionism'],
+      researchSourceIds: ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy', 'sepColonialism', 'ohchrMinorityRights', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'coeDemocraticCitizenship', 'openTextbook'],
+      editorialNote: 'The entry treats ethnic nationalism as a broad and internally divided family of identity-and-sovereignty claims. It distinguishes cultural identity, minority self-determination, civic nationalism, nativism, racial nationalism, fascism, and genocide, and refuses to classify an entire current country without dated institutional evidence. Scores are didactic composites, not judgments about every person or movement using the label.',
+    },
+    researchGaps: [
+      'Add French-language research on romantic nationalism, republican and colonial citizenship, language policy, Corsica, Brittany, Alsace, Algeria, laïcité, and the relationship between universalist republicanism and ethnic boundary-making.',
+      'Expand German-language scholarship on Herder, Fichte, romantic nationalism, census and citizenship law, antisemitism, the völkisch movement, National Socialism, post-war constitutional safeguards, reunification, and contemporary migration politics without treating these histories as one continuum.',
+      'Add Portuguese- and Spanish-language scholarship on Iberian, Brazilian, Latin American, Lusophone African, Indigenous, mestizo, Black, and anti-colonial national projects, including how language, race, caste, citizenship, and territorial borders were constructed.',
+      'Add specialist comparative work on Jewish, Roma, Kurdish, Armenian, Basque, Catalan, Welsh, Scottish, Sámi, Indigenous, African, South Asian, Southeast Asian, and Pacific national or cultural movements, preserving differences rather than forcing them into a European civic–ethnic binary.',
+      'Add legal and empirical research on nationality law, denaturalization, statelessness, dual citizenship, diaspora voting, naturalization tests, minority-language rights, hate crime, political violence, population transfer, and the implementation of minority protections.',
+      'Compare ethnic nationalism with Indigenous sovereignty, Black nationalism, religious nationalism, pan-nationalism, plurinational democracy, and anti-colonial liberation through authors from the affected regions and communities rather than relying only on European theory.',
+      'Add dated country and party evidence before using current examples; distinguish cultural preference, minority protection, secession, nativism, ethnocracy, racial hierarchy, fascism, and genocidal intent through explicit institutional criteria.',
+    ],
+  },
 };
