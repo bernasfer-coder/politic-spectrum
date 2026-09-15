@@ -639,6 +639,37 @@ export const BIBLIOGRAPHY_METADATA = {
     confidence: 'high',
     description: 'Institutional framework emphasizing transparency, integrity, accountability, participation, and trust in democratic institutions.',
   },
+  unIndigenousDeclaration: {
+    institution: 'United Nations General Assembly / United Nations Digital Library',
+    sourceType: 'international human-rights instrument',
+    discipline: 'Indigenous rights and international law',
+    publicationDate: '2007',
+    confidence: 'high',
+    description: 'Multilingual official instrument recognizing Indigenous peoples’ collective rights, self-determination, autonomy or self-government, participation, culture, lands, and resources.',
+  },
+  oxfordTribalConstitutions: {
+    creators: ['David E. Wilkins'],
+    sourceType: 'scholarly book chapter',
+    discipline: 'Indigenous political and constitutional law',
+    publisher: 'Oxford University Press',
+    confidence: 'high',
+    description: 'Scholarly legal history of Indigenous governance, tribal constitutions, sovereignty, confederacy, councils, and the effects of colonial and federal policy.',
+  },
+  waitangiTribunalTreaty: {
+    institution: 'Waitangi Tribunal',
+    sourceType: 'official treaty-history resource',
+    discipline: 'Māori constitutional history and Indigenous sovereignty',
+    confidence: 'high',
+    description: 'Official account of the Māori and English treaty texts, kāwanatanga, tino rangatiratanga, land, authority, and continuing interpretive dispute.',
+  },
+  pmcIndigenousDeliberative: {
+    creators: ['comparative political-science authors'],
+    sourceType: 'peer-reviewed journal article',
+    discipline: 'Indigenous political history and deliberative democracy',
+    publisher: 'Frontiers in Political Science / PubMed Central',
+    confidence: 'high',
+    description: 'Comparative study of deliberative practices and historical perspectives on American Indian and Alaska Native political decision-making.',
+  },
 };
 
 export const BIBLIOGRAPHY_ACCESS_DATE = '2026-09-13';

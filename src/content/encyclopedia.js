@@ -8945,4 +8945,285 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Test whether the six-dimensional profile should separately score social ownership, workplace democracy, anti-state authority, localism, internationalism, anti-militarism, and secular or religious pluralism rather than combining them into one card.',
     ],
   },
+  'indigenous-relational-governance': {
+    id: 'indigenous-relational-governance',
+    title: 'Indigenous self-determination / relational governance',
+    canonicalLabel: 'Indigenous self-determination / relational governance',
+    aliases: [
+      'Indigenous governance traditions',
+      'Indigenous constitutionalism',
+      'relational governance',
+      'Indigenous autonomy',
+    ],
+    entryType: 'comparative historical and constitutional profile',
+    status: 'researched-draft',
+    confidence: 'low',
+    scopeNote: 'This is a comparative teaching profile, not a single Indigenous ideology or a claim that Indigenous peoples share one political system. It places distinct nations, communities, laws, languages, and historical periods in relation while keeping their differences and rights of self-description visible.',
+    timeScope: 'Deep historical traditions through contemporary self-determination and constitutional-rights movements; exact institutions and meanings must be dated and located.',
+    geographicScope: 'Global and deliberately plural: the examples include Haudenosaunee territories, Mande regions, Aotearoa New Zealand, and North American tribal governments, but they are not representative of all Indigenous peoples.',
+    summary: 'A cautious comparative profile for governance grounded in collective self-determination, place-based authority, reciprocal obligations, intergenerational responsibility, and negotiated relations among communities. It highlights recurring institutional themes without turning Indigenous peoples into a romantic alternative to the state or market.',
+    summaryCitations: citations(
+      ['ostromGoverningCommons', 'fanonWretchedEarth', 'cesaireDiscourseColonialism'],
+      ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'sepColonialism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 38,
+        label: 'Community and stewardship oriented, but internally diverse',
+        explanation: 'Land, water, food, and other resources may be governed through collective responsibilities, customary tenure, reciprocal exchange, household use, or mixed contemporary institutions. The profile does not assume common ownership, reject markets, or treat “traditional economy” as a single system.',
+        citations: citations(['ostromGoverningCommons', 'fanonWretchedEarth'], ['unIndigenousDeclaration', 'sepEnvironmentalEthics']),
+      },
+      social: {
+        score: 8,
+        label: 'Relational and context-dependent',
+        explanation: 'Social obligations, kinship, gender roles, age, ceremony, and individual autonomy vary widely across nations and periods. The profile resists both romantic claims of universal egalitarianism and colonial descriptions that mistake difference from European institutions for social absence.',
+        citations: citations(['ostromGoverningCommons', 'cesaireDiscourseColonialism'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+      },
+      authority: {
+        score: -38,
+        label: 'Distributed, customary, and deliberative authority',
+        explanation: 'Many documented cases use councils, clan or kin responsibilities, recall or accountability practices, layered jurisdictions, and negotiated decision-making rather than a single bureaucratic sovereign. Distributed authority is not the same as no authority, and contemporary Indigenous governments may also use written constitutions, courts, executives, and legislatures.',
+        citations: citations(['ostromGoverningCommons', 'millOnLiberty'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative', 'sepDemocracy']),
+      },
+      identity: {
+        score: 4,
+        label: 'Collective nationhood without one nation-state model',
+        explanation: 'Indigenous peoples commonly assert collective political identity, territorial relationships, and self-determination, while confederacies, treaties, diplomacy, and international rights connect communities beyond a single state. The score therefore stays near the middle: it should not force Indigenous nationhood into either state nationalism or abstract cosmopolitanism.',
+        citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['unIndigenousDeclaration', 'waitangiTribunalTreaty', 'sepColonialism']),
+      },
+      foreign: {
+        score: 34,
+        label: 'Diplomatic and peace-oriented, with self-defense traditions',
+        explanation: 'Confederation, treaty-making, peace-building, and intercommunity diplomacy are important in several documented cases, but Indigenous political histories also include warfare, defense, territorial competition, and resistance to conquest. The profile is not pacifist by definition and does not equate diplomacy with submission.',
+        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth'], ['pmcIndigenousDeliberative', 'waitangiTribunalTreaty', 'unIndigenousDeclaration']),
+      },
+      religion: {
+        score: -18,
+        label: 'Spiritual and legal orders often interwoven, but not uniform',
+        explanation: 'In many traditions, land, ancestors, ceremony, law, and political responsibility are not separated into modern “religion” and “state” compartments. This does not establish clerical rule: authority may be held through kinship, custodianship, elders, councils, or community law, and contemporary Indigenous governments may operate within secular, pluralist, or hybrid constitutional frameworks.',
+        citations: citations(['ostromGoverningCommons', 'cesaireDiscourseColonialism'], ['unIndigenousDeclaration', 'waitangiTribunalTreaty', 'sepReligionPolitics']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Indigenous self-determination is a right and political claim held by peoples, while relational governance is an analytical shorthand for recurring attention to kinship, place, reciprocal obligation, intergenerational responsibility, and negotiated authority. They should not be treated as synonyms or as one worldwide ideology. The United Nations Declaration on the Rights of Indigenous Peoples recognizes self-determination, autonomy or self-government, participation, cultural integrity, and relationships with lands and resources; it is an international standard, not a complete description of every Indigenous constitution.',
+            citations: citations(['fanonWretchedEarth'], ['unIndigenousDeclaration']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile exists to correct a common classification error. Indigenous political orders were not simply “pre-political” societies waiting for a state, but neither should every Indigenous institution be translated into a modern European category such as liberal democracy, socialism, anarchism, or environmentalism. The evidence must name the people, language, place, institution, period, and source tradition before making a comparison.',
+            citations: citations(['cesaireDiscourseColonialism', 'ostromGoverningCommons'], ['oxfordTribalConstitutions', 'sepColonialism', 'pmcIndigenousDeliberative']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The strongest shared theme is authority as a relationship rather than only a command issued by an office. Councils, clans, households, elders, chiefs, elected representatives, ceremonial authorities, customary law, and contemporary courts can coexist. Some roles are hereditary or status-based; others are selected, accountable, recalled, or constrained by community expectations. “Horizontal” is therefore too simple: many systems combine hierarchy, reciprocity, gendered authority, local autonomy, and intercommunity negotiation.',
+            citations: citations(['ostromGoverningCommons', 'millOnLiberty'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Economic life is also plural. Customary land tenure, collective responsibilities, household production, trade, tribute, redistribution, subsistence, and modern enterprises have appeared in different combinations. A community relationship to land may include material use, jurisdiction, identity, ceremony, and obligations to future generations at once; it cannot be reduced to either private property or an undifferentiated commons. Contemporary self-government may therefore combine Indigenous law with state law, private transactions, public services, and negotiated resource agreements.',
+            citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['unIndigenousDeclaration', 'sepEnvironmentalEthics', 'oxfordTribalConstitutions']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile also treats colonialism as an institutional force, not merely a past event. Conquest, removal, land expropriation, imposed administrative categories, residential or mission schooling, criminalization of ceremony, and state recognition regimes altered Indigenous authority and evidence archives. A written constitution produced under a colonial policy may express Indigenous adaptation, strategic defense, imposed forms, or all three. The researcher should keep Indigenous law, colonial description, and later state recognition separate.',
+            citations: citations(['cesaireDiscourseColonialism', 'fanonWretchedEarth'], ['sepColonialism', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Before and beyond colonial state categories',
+            text: 'Indigenous peoples developed distinct political orders before European colonization, including confederacies, village and kinship institutions, hereditary and selected offices, councils, customary law, diplomatic networks, and stewardship practices. No single global starting date or institutional sequence can be assigned to them.',
+            citations: citations(['ostromGoverningCommons'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+          },
+          {
+            period: 'Haudenosaunee confederated governance',
+            text: 'The Kayanere’kó:wa / Great Law of Peace is a living oral constitutional tradition associated with the Haudenosaunee Confederacy. Later scholarly accounts describe councils, clan relationships, diplomacy, and constraints on political and military authority, but the tradition must not be detached from its language communities, custodians, transmission practices, and ongoing sovereignty.',
+            citations: citations(['ostromGoverningCommons'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+          },
+          {
+            period: 'Mande political memory and customary constitutional traditions',
+            text: 'The Manden Charter and related Mande oral traditions are remembered through norms concerning peace, dignity, social obligations, land, trade, and relations among communities. Their later recording and UNESCO recognition do not turn a transmitted charter into a verbatim medieval constitution; oral performance, regional variation, and community authority remain part of the evidence boundary.',
+            citations: citations(['fanonWretchedEarth'], ['unIndigenousDeclaration', 'sepColonialism']),
+          },
+          {
+            period: 'Colonial treaties and contested constitutional relationships',
+            text: 'Te Tiriti o Waitangi / the Treaty of Waitangi illustrates how Indigenous authority and colonial governance can be joined through a disputed treaty relationship. The Māori and English texts use different political vocabularies and have generated continuing disputes over kāwanatanga, tino rangatiratanga, land, and the scope of Crown authority. It is a specific Māori–Crown history, not a template for all Indigenous peoples.',
+            citations: citations(['cesaireDiscourseColonialism'], ['waitangiTribunalTreaty', 'unIndigenousDeclaration']),
+          },
+          {
+            period: 'Assimilation, recognition, and constitutional adaptation',
+            text: 'Colonial and national governments often attempted to replace Indigenous institutions or confine them within administrative categories. Indigenous nations responded through resistance, diplomacy, written constitutions, litigation, cultural renewal, treaty claims, and new intergovernmental institutions. Modern tribal governments can therefore be simultaneously Indigenous, constitutional, bureaucratic, customary, and shaped by imposed legal frameworks.',
+            citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['oxfordTribalConstitutions', 'sepColonialism', 'unIndigenousDeclaration']),
+          },
+          {
+            period: 'Contemporary self-determination and international rights',
+            text: 'Since the late twentieth century, Indigenous movements have secured greater international recognition of collective rights, self-determination, participation, cultural integrity, land and resource relationships, and free, prior, and informed consent. Implementation remains uneven: a declaration or constitutional clause does not by itself establish effective jurisdiction, material security, equality, or protection from extraction and coercion.',
+            citations: citations(['senDevelopmentFreedom'], ['unIndigenousDeclaration', 'sepColonialism']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Confederated and council governance',
+                distinction: 'Links multiple peoples or communities through councils, diplomacy, layered authority, and negotiated peace.',
+                relation: 'Strongest match for the authority and foreign-policy dimensions, but institutions and decision rules vary by nation and tradition.',
+                citations: citations(['ostromGoverningCommons'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+              },
+              {
+                label: 'Land- and resource-stewardship governance',
+                distinction: 'Treats relations with land, water, animals, and future generations as political and ethical responsibilities as well as economic questions.',
+                relation: 'Moves the profile toward collective stewardship without proving common ownership or a single ecological ideology.',
+                citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['sepEnvironmentalEthics', 'unIndigenousDeclaration']),
+              },
+              {
+                label: 'Treaty-based Indigenous sovereignty',
+                distinction: 'Uses treaties, constitutional agreements, and intergovernmental relationships to protect jurisdiction, identity, resources, and political authority.',
+                relation: 'Can be simultaneously self-determining, diplomatic, and legally plural; it should not be collapsed into secessionist nationalism.',
+                citations: citations(['fanonWretchedEarth'], ['waitangiTribunalTreaty', 'unIndigenousDeclaration']),
+              },
+              {
+                label: 'Contemporary Indigenous constitutional government',
+                distinction: 'Combines Indigenous political authority with written constitutions, elections, courts, public administration, and statutory or treaty relationships with a state.',
+                relation: 'Shows why Indigenous governance is not equivalent to an absence of formal institutions or to a timeless customary order.',
+                citations: citations(['millOnLiberty', 'ostromGoverningCommons'], ['oxfordTribalConstitutions', 'unIndigenousDeclaration']),
+              },
+              {
+                label: 'Anti-colonial and cultural-renewal movements',
+                distinction: 'Prioritizes resistance to imposed sovereignty, restoration of land and language, political recognition, and community control over development.',
+                relation: 'May overlap with socialism, nationalism, environmentalism, or religious revival, but none of those labels defines every Indigenous movement.',
+                citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism', 'unIndigenousDeclaration']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'These examples are evidence anchors, not claims that the named peoples share one ideology or exact six-axis score. Each requires community-aware scholarship, local terminology, periodization, and attention to colonial mediation.',
+            citations: citations(['ostromGoverningCommons', 'cesaireDiscourseColonialism'], ['unIndigenousDeclaration', 'oxfordTribalConstitutions']),
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Haudenosaunee Confederacy / Kayanere’kó:wa',
+                period: 'Deep historical tradition; colonial and contemporary continuities',
+                match: 'confederated governance and diplomacy anchor',
+                caveat: 'The Great Law is an oral and living tradition. English transcriptions and claims about influence on later constitutional systems require source criticism and respect for Haudenosaunee custodianship.',
+                citations: citations(['ostromGoverningCommons'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+              },
+              {
+                name: 'Manden Charter / Kurukan Fuga',
+                period: 'Medieval West African political memory with continuing oral transmission',
+                match: 'customary and confederated constitutional anchor',
+                caveat: 'The charter’s dating, wording, regional versions, and relationship to historical state practice are debated; UNESCO recognition is not proof of one unchanged text.',
+                citations: citations(['fanonWretchedEarth'], ['unIndigenousDeclaration', 'sepColonialism']),
+              },
+              {
+                name: 'Māori rangatiratanga and Te Tiriti o Waitangi',
+                period: '1840–present',
+                match: 'treaty-based sovereignty and contested jurisdiction anchor',
+                caveat: 'The Māori and English treaty texts are not interchangeable, and the meaning and implementation of the relationship remain contested in Aotearoa New Zealand.',
+                citations: citations(['cesaireDiscourseColonialism'], ['waitangiTribunalTreaty', 'unIndigenousDeclaration']),
+              },
+              {
+                name: 'Contemporary Indigenous and tribal governments',
+                period: '19th century–present, varying by nation and jurisdiction',
+                match: 'constitutional adaptation and self-government anchor',
+                caveat: 'Written constitutions, elections, courts, customary institutions, and state recognition regimes should be identified separately for each nation; there is no generic “tribal government” model.',
+                citations: citations(['ostromGoverningCommons', 'millOnLiberty'], ['oxfordTribalConstitutions', 'unIndigenousDeclaration']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'green-commons', relation: 'ecological and commons overlap, but green politics is not a substitute for Indigenous self-determination' },
+              { id: 'anarchist-communalist', relation: 'distributed-authority overlap, but communalism is a modern theory and Indigenous nations are not examples of it by default' },
+              { id: 'anti-colonial-liberation', relation: 'shared opposition to colonial domination, but Indigenous governance includes distinct peoples, laws, and sovereignty claims' },
+              { id: 'libertarian-socialist', relation: 'self-management and anti-centralization may overlap, but Indigenous governance is not reducible to socialism' },
+              { id: 'civic-nationalist', relation: 'collective political membership may overlap, but Indigenous nationhood is not simply a state-national identity' },
+              { id: 'religious-socialist', relation: 'spiritual and social obligations may overlap in some movements, but religious socialism is a different modern family of doctrines' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first danger is homogenization. “Indigenous” is a legal and political category covering thousands of peoples with different languages, institutions, histories, gender systems, economies, and relations with states. A comparative profile should use family resemblance only as an index for further research, never as a shortcut for assigning every Indigenous person, nation, or movement the same coordinates.',
+            citations: citations(['cesaireDiscourseColonialism', 'ostromGoverningCommons'], ['unIndigenousDeclaration', 'sepColonialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second danger is romanticization. Councils, consensus, customary law, and stewardship can support accountability and continuity, but they may also coexist with status hierarchy, gender exclusion, interpersonal coercion, conflict, or unequal access to decision-making. Historical sources must record who could speak, who could decide, who was protected, and who was excluded rather than converting a valued principle into a universal social fact.',
+            citations: citations(['millOnLiberty', 'ostromGoverningCommons'], ['pmcIndigenousDeliberative', 'oxfordTribalConstitutions']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third danger is colonial mediation. Archives were often created by missionaries, officials, ethnographers, courts, or reformers who translated Indigenous law into categories useful to colonial administration. Community-held oral knowledge, living languages, Indigenous scholars, and nation-specific authorities must therefore shape what can be published, how it is named, and whether a source may be commercially repackaged.',
+            citations: citations(['cesaireDiscourseColonialism', 'fanonWretchedEarth'], ['oxfordTribalConstitutions', 'unIndigenousDeclaration', 'waitangiTribunalTreaty']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth danger is treating self-determination as symbolic recognition alone. Effective autonomy depends on jurisdiction, land and resource security, material capacity, participation, language, remedy, and freedom from coercive assimilation. International standards can support evaluation, but they do not settle domestic constitutional disputes or replace the authority of the peoples concerned.',
+            citations: citations(['senDevelopmentFreedom', 'fanonWretchedEarth'], ['unIndigenousDeclaration', 'sepColonialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, the six-axis coordinates are provisional. They describe a comparative teaching pattern, not a measurement of Indigenous identity. A future version should allow nation-specific profiles, community review, multiple source traditions, and a “not enough evidence” state rather than requiring every case to be placed on one global map.',
+            citations: citations(['ostromGoverningCommons'], ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['ostromGoverningCommons', 'fanonWretchedEarth', 'cesaireDiscourseColonialism', 'gandhiHindSwaraj', 'millOnLiberty', 'senDevelopmentFreedom'],
+      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics'],
+      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred.',
+    },
+    researchGaps: [
+      'Add community-reviewed, nation-specific scholarship in Indigenous languages and in Portuguese, French, German, Spanish, and English before expanding the comparative profile.',
+      'Separate Haudenosaunee, Mande, Māori, North American tribal, Arctic, Australian, Pacific, Latin American, and other traditions instead of treating current examples as a representative global sample.',
+      'Add Indigenous legal scholars and community authorities to review terminology, custodianship, consent, cultural-property limits, and whether each source may be used in a commercial educational product.',
+      'Compare customary law, written constitutions, courts, elections, councils, gender and age authority, and state-recognition regimes using nation-specific evidence rather than a generic governance score.',
+      'Document land, resource, language, education, health, extraction, climate, and economic institutions without reducing stewardship to an ecological slogan or assuming collective ownership.',
+      'Create a nation-specific “insufficient evidence” workflow so the six-axis model can decline to score a tradition when the evidence or community permission is inadequate.',
+    ],
+  },
 };
