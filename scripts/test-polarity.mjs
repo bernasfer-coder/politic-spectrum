@@ -84,6 +84,7 @@ const expectedMainProfiles = [
   'centrist-pragmatist',
   'liberal-constitutionalist',
   'militarist-imperialist',
+  'historical-fascist',
   'national-socialist',
   'libertarian-socialist',
 ];
@@ -93,7 +94,14 @@ for (const id of expectedMainProfiles) {
   assert(Boolean(archetype), `Main profile ${id} must be registered`);
   if (archetype) {
     assert(Object.keys(archetype.dimensionNotes).length === DIMENSIONS.length, `${id} must explain every dimension`);
-    assert(archetype.people.length >= 3 && archetype.current.length >= 3 && archetype.historical.length >= 3, `${id} must include people, current, and historical examples`);
+    if (['historical-fascist', 'national-socialist'].includes(id)) {
+      // Historical warning profiles must not invent current-country matches or
+      // pad representative people with critics merely to meet a sample quota.
+      assert(archetype.people.length >= 1 && archetype.historical.length >= 1, `${id} must include documented historical people and places`);
+      assert(Array.isArray(archetype.current) && archetype.current.length === 0, `${id} must not imply a current-country equivalent`);
+    } else {
+      assert(archetype.people.length >= 3 && archetype.current.length >= 3 && archetype.historical.length >= 3, `${id} must include people, current, and historical examples`);
+    }
   }
 }
 

@@ -34,6 +34,37 @@ test('questionnaire resumes after a refresh', async ({ page }) => {
   await expect(page.getByText(/1 of 30 answered/)).toBeVisible();
 });
 
+test('fascism and Nazism have separate cards, examples, and working article links', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('tab', { name: /Spectrum Library/i }).click();
+  const profiles = [
+    { id: 'historical-fascist', name: 'Italian and interwar fascism', person: 'Benito Mussolini', excludedPerson: 'Adolf Hitler' },
+    { id: 'national-socialist', name: 'National Socialist / Nazi (historical)', person: 'Adolf Hitler', excludedPerson: 'Benito Mussolini' },
+  ];
+
+  for (const profile of profiles) {
+    await page.getByRole('tab', { name: /Reference profiles/i }).click();
+    const card = page.getByRole('button', { name: `${profile.name} Historical context`, exact: true });
+    await card.click();
+    await expect(card).toHaveAttribute('aria-pressed', 'true');
+    await page.getByRole('link', { name: `Read full entry: ${profile.name} ↗`, exact: true }).click();
+    await expect(page).toHaveURL(new RegExp(`#encyclopedia/${profile.id}$`));
+    await page.reload();
+    await expect(page.getByRole('heading', { name: profile.name, exact: true })).toBeVisible();
+    await expect(page.getByText('SIX-AXIS READING', { exact: true })).toBeVisible();
+
+    await page.getByRole('tab', { name: /Reference profiles/i }).click();
+    await card.click();
+    await page.getByRole('button', { name: /Load this profile/i }).click();
+    await expect(page.getByRole('heading', { name: profile.name, exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: profile.person, exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: profile.excludedPerson, exact: true })).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'Hannah Arendt', exact: true })).toHaveCount(0);
+    await expect(page.getByText('No current state should be described as a direct equivalent of this historical ideology.', { exact: true })).toBeVisible();
+    await page.getByRole('tab', { name: /Spectrum Library/i }).click();
+  }
+});
+
 test('the six FreeMode controls work on a mobile viewport', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('tab', { name: /FreeMode/i }).click();

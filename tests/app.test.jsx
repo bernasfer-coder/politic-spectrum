@@ -14,6 +14,7 @@ import {
   ARCHETYPES,
   DEFAULT_SCORES,
   DIMENSIONS,
+  ENCYCLOPEDIA_ENTRIES,
   OPTION_VALUES,
   QUESTIONS,
   SPECTRUM_BANDS,
@@ -31,6 +32,25 @@ afterEach(() => {
 });
 
 describe('scoring helpers', () => {
+  it('keeps Italian fascism and Nazism as distinct documented reference profiles', () => {
+    const italian = ARCHETYPES.find(({ id }) => id === 'historical-fascist');
+    const nazi = ARCHETYPES.find(({ id }) => id === 'national-socialist');
+
+    for (const profile of [italian, nazi]) {
+      expect(getMatches(profile.profile)[0].id).toBe(profile.id);
+      expect(ENCYCLOPEDIA_ENTRIES[profile.id].title).toBe(profile.name);
+      expect(profile.current).toEqual([]);
+      expect(profile.warning).toBeTruthy();
+      expect(Object.keys(profile.profile)).toHaveLength(6);
+    }
+    expect(italian.people.map(({ name }) => name)).toEqual(['Benito Mussolini']);
+    expect(nazi.people.map(({ name }) => name)).toEqual(['Adolf Hitler', 'Joseph Goebbels']);
+    expect(italian.historical.every(({ name }) => !/Nazi|Germany|Occupied Europe/i.test(name))).toBe(true);
+    expect(italian.summaryCitationIds).not.toContain('hitlerMeinKampf');
+    expect(Object.values(italian.dimensionCitationIds).flat()).not.toContain('hitlerMeinKampf');
+    expect(ENCYCLOPEDIA_ENTRIES['historical-fascist'].aliases).not.toContain('Nazism');
+  });
+
   it('averages answered items by dimension and respects item polarity', () => {
     const answers = Object.fromEntries(QUESTIONS.map((question) => [question.id, 100]));
     const expected = Object.fromEntries(DIMENSIONS.map((dimension) => {

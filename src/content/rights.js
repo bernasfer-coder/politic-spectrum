@@ -356,6 +356,7 @@ const RIGHTS_RECORDS = {
     nozik: { ...LINK_ONLY },
     hitler: { ...PERMISSION_SENSITIVE, notes: 'US Holocaust Memorial Museum page used as a link; no institutional text or media is copied.' },
     mussolini: { ...LINK_ONLY },
+    fascistItaly: { ...PERMISSION_SENSITIVE, reviewedAt: '2026-09-15', notes: 'USHMM Italy article consulted for the regime’s institutions, imperial warfare, and 1938 antisemitic legislation. Original summaries and a link only; no institutional text, translations, images, or media reproduced.' },
     burke: { ...LINK_ONLY },
     degaulle: { ...LINK_ONLY },
     palme: { ...LINK_ONLY },

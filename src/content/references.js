@@ -580,14 +580,14 @@ export const ARCHETYPE_CITATIONS = {
     },
   },
   'historical-fascist': {
-    summary: ['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'],
+    summary: ['griffinNatureFascism', 'mussoliniDoctrine', 'arendtTotalitarianism'],
     dimensions: {
-      economic: ['mussoliniDoctrine', 'hitlerMeinKampf'],
-      social: ['hitlerMeinKampf', 'mussoliniDoctrine'],
-      authority: ['mussoliniDoctrine', 'arendtTotalitarianism'],
-      identity: ['hitlerMeinKampf', 'mussoliniDoctrine'],
-      foreign: ['hitlerMeinKampf', 'mussoliniDoctrine'],
-      religion: ['mussoliniDoctrine', 'aquinasMoralPolitical'],
+      economic: ['mussoliniDoctrine', 'griffinNatureFascism'],
+      social: ['griffinNatureFascism', 'mussoliniDoctrine'],
+      authority: ['mussoliniDoctrine', 'griffinNatureFascism'],
+      identity: ['griffinNatureFascism', 'mussoliniDoctrine'],
+      foreign: ['griffinNatureFascism', 'mussoliniDoctrine'],
+      religion: ['mussoliniDoctrine', 'griffinNatureFascism'],
     },
   },
   'libertarian-market': {
