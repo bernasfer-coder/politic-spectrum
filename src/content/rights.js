@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    dayAimsPurposes1940: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Primary article used for original paraphrases and a bibliographic link. No newspaper passage, embedded quotation, facsimile, or author photograph reproduced.' },
+    catholicWorkerAims2019: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Movement self-description is not a blanket republication licence. No statement text, embedded Day/Maurin quotations, liturgical wording, or printable PDF copied.' },
+    marquetteMaurinPapers: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Institutional biography and collection description used through independent summary. Finding-aid access does not grant rights to the manuscripts, correspondence, or images listed.' },
+    lowyRadicalizedCatholicism1989: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'Publisher landing page says article reproduction requires author consent and journal credit. Permission noted for the 1989 reprint is not permission granted to this project.', notes: 'Original English synthesis and publisher link only. No Portuguese translation, earlier text, embedded quotation, or PDF page image distributed.' },
     cduAhlen1947: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original summary and archival link only. A publicly accessible party programme is not assumed to have blanket commercial-reuse clearance; no transcription, translation, or facsimile copied.' },
     cduDuesseldorf1949: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'The German short version and its editorial apparatus have separate provenance. No programme text, GHDI translation, introduction, or source image reproduced.' },
     zehenderDuesseldorfHistory: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Modern institutional commentary used through attributed independent synthesis. No source prose, illustrations, or linked photographs republished.' },

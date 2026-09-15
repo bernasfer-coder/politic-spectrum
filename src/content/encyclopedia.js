@@ -7355,9 +7355,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       },
       religion: {
         score: -75,
-        label: 'Strongly religiously grounded, usually anti-clerical in politics',
-        explanation: 'Religious texts, practices, communities, and theological interpretations are active sources of public justice and collective organization. This does not automatically imply theocracy: many religious-socialist movements defend conscience, pluralism, lay participation, or separation from coercive clerical government, while others debate how far religious law should shape the state.',
-        citations: citations(['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'spinozaPolitical'], ['oxfordLiberationTheologies', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'sepReligionPolitics']),
+        label: 'Strongly religiously grounded; church–state relationships vary',
+        explanation: 'Religious texts, practices, communities, and theological interpretations are active sources of public justice and collective organization. This does not automatically imply theocracy: many religious-socialist movements defend conscience, pluralism, lay participation, or separation from coercive clerical government, while others debate how far religious law should shape the state. Day’s 1940 article makes Catholic doctrine and daily Mass central to the work. Religious devotion, criticism of clerical power, and proposals for state authority must be assessed separately.',
+        citations: citations(['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'spinozaPolitical'], ['oxfordLiberationTheologies', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'sepReligionPolitics', 'dayAimsPurposes1940']),
       },
     },
     sections: [
@@ -7375,6 +7375,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Liberation theology is one important twentieth-century strand, especially in Latin America, but it should not be used as a synonym for every Christian socialist, religious left, or faith-based justice movement. The same distinction applies to the Catholic Worker and the Poor People’s Campaign: both link Christian ethics to economic justice, yet neither is a blueprint for state socialism. The entry therefore records shared family features and keeps the institutional differences visible.',
             citations: citations(['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign'], ['oxfordLiberationTheologies', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'celamMedellin']),
           },
+          {
+            type: 'paragraph',
+            text: 'In the Portuguese edition of his 1989 article, sociologist Michel Löwy distinguishes liberation theology from a broader liberation Christianity: a network of communities, lay associations, clergy, and pastoral institutions. For him, theological systematization develops from earlier social practice rather than creating the entire movement by itself.',
+            citations: citations([], ['lowyRadicalizedCatholicism1989']),
+          },
         ],
       },
       {
@@ -7390,6 +7395,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The political method is often organized around collective agency from below: congregations, base communities, worker associations, civil-rights campaigns, cooperatives, mutual-aid networks, and popular education. Some movements work through elections and social policy; others emphasize direct action, nonviolent resistance, civil disobedience, or revolutionary struggle. The common element is not one tactic but the conviction that oppressed people should participate in changing the conditions that govern them.',
             citations: citations(['dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gutierrezTheologyLiberation'], ['catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationTheologies', 'celamMedellin']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Day’s Aims and Purposes (1940) connects material assistance with spiritual formation, cooperatives, unions, hospitality houses, and farming communes. She stresses each participant’s responsibility, not simply organizational size. This is her normative account of the work, not a measured evaluation of its reach or effectiveness.',
+            citations: citations([], ['dayAimsPurposes1940']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Catholic Worker’s May 2019 statement advocates land trusts, worker-managed small enterprises, cooperatives, and distributist community life. Its declared means include nonviolence, hospitality, manual labor, and voluntary poverty. This dated self-description provides a more precise comparison than assuming that opposition to capitalism entails comprehensive state ownership.',
+            citations: citations([], ['catholicWorkerAims2019']),
           },
           {
             type: 'evidence-note',
@@ -7418,6 +7433,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['aquinasMoralPolitical', 'dorothyDayCatholicWorker'], ['oxfordChristianSocialism', 'vaticanRerumNovarum', 'cambridgeReligionOriginsSocialism']),
           },
           {
+            period: 'December 1932: Maurin’s proposed programme for Day',
+            text: 'Marquette’s biographical note describes Peter Maurin presenting a three-part programme: discussion meetings, hospitality houses, and farming communes. Its account also records his dissatisfaction with the newspaper’s early emphasis, cautioning against treating the founders as indistinguishable voices.',
+            citations: citations([], ['marquetteMaurinPapers']),
+          },
+          {
             period: '1930s–1940s: Catholic Worker, personalism, pacifism, and anti-fascist social action',
             text: 'Dorothy Day and the Catholic Worker movement connected hospitality, voluntary poverty, labor solidarity, community houses, and pacifism. This was a radical practice of Christian social action rather than a proposal for a centralized socialist state. It illustrates how religious socialism can organize material support and political witness through voluntary association, while also raising questions about scale, gender, authority, and dependence on unpaid care.',
             citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'oxfordChristianSocialism']),
@@ -7431,6 +7451,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1960s–1970s: Vatican II, Medellín, base communities, and Latin American liberation theology',
             text: 'Latin American Catholic movements interpreted poverty, dependency, landlessness, authoritarianism, and colonial legacies through theological reflection and social analysis. The 1968 Medellín conference became an important institutional setting, while Gustavo Gutiérrez’s work gave a major intellectual expression to liberation theology. Base communities and popular organizations varied by country and did not form one centralized political party or one identical relationship to Marxism.',
             citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['celamMedellin', 'oxfordLiberationTheologies', 'oxfordLiberationLegacy']),
+          },
+          {
+            period: 'Late 1950s–1970s: a sociological interpretation of religious mobilization',
+            text: 'Löwy links religious renewal to changing social conditions and locates important initiatives in groups at the church’s institutional margins. He rejects a solely hierarchical or solely grassroots origin story. This is a historical interpretation of particular Latin American developments, not a universal causal law.',
+            citations: citations([], ['lowyRadicalizedCatholicism1989']),
           },
           {
             period: '1980s: internal Catholic debate over Marxism, freedom, and liberation',
@@ -7459,9 +7484,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
               },
               {
                 label: 'Catholic Worker personalism',
-                distinction: 'Combines hospitality, voluntary poverty, worker solidarity, community houses, nonviolence, and resistance to war and state violence.',
-                relation: 'Religious-socialist in its critique of poverty and property, but decentralized and pacifist rather than a programme for nationalization or party-state power.',
-                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'oxfordChristianSocialism']),
+                distinction: 'The May 2019 statement combines personalism, decentralization, distributist communal practices, and nonviolence.',
+                relation: 'Included here as adjacent religious economic radicalism, not automatically socialist in its preferred ownership arrangements. This page is not treated as a binding constitution or evidence of uniform practice across houses.',
+                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'catholicWorkerAims2019']),
               },
               {
                 label: 'Latin American liberation theology',
@@ -7520,7 +7545,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Dorothy Day',
                 role: 'Catholic Worker founder associated with voluntary poverty, hospitality, labor solidarity, personalist community, and pacifism.',
                 caveat: 'The Catholic Worker is a decentralized movement and not a state-socialist or clerical governing model; local houses differ in practice and political emphasis.',
-                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'oxfordChristianSocialism']),
+                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'oxfordChristianSocialism', 'dayAimsPurposes1940']),
+              },
+              {
+                name: 'Peter Maurin',
+                role: 'French-born Catholic Worker co-founder associated with discussion, hospitality, farming communes, and the Easy Essays.',
+                caveat: 'The archive distinguishes original writings from arrangements of other authors’ ideas; attribution requires checking the particular item.',
+                citations: citations([], ['marquetteMaurinPapers']),
               },
               {
                 name: 'Martin Luther King Jr.',
@@ -7550,8 +7581,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Catholic Worker houses',
                 period: 'United States, from 1933; decentralized communities internationally',
                 match: 'Hospitality, voluntary poverty, mutual aid, worker solidarity, and pacifist resistance organized through religious community.',
-                caveat: 'Houses vary and operate within wider legal and economic systems; they are not complete examples of a national socialist economy or stateless society.',
-                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement']),
+                caveat: 'Houses vary and operate within wider legal and economic systems; they are not complete examples of a national socialist economy or stateless society. A movement statement is evidence of advocated aims, not audited local outcomes.',
+                citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'catholicWorkerAims2019']),
               },
               {
                 name: 'Poor People’s Campaign',
@@ -7608,6 +7639,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Löwy’s account also treats movement strength and relations with church leadership as uneven across countries. It cannot establish the present political identity of a country or the representativeness of a selected community.',
+            citations: citations([], ['lowyRadicalizedCatholicism1989']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Marquette’s finding aid identifies surviving Maurin correspondence and manuscripts, including material adapted from other writers. Collection-level description is not a substitute for reading those documents or independently assessing community practice.',
+            citations: citations([], ['marquetteMaurinPapers']),
+          },
+          {
+            type: 'paragraph',
             text: 'A second criticism concerns authority. Grassroots participation can be empowering, but clergy, charismatic leaders, revolutionary parties, armed groups, or educated activists may claim to represent the oppressed. Religious certainty can make disagreement appear immoral, while socialist certainty can make dissent appear class betrayal. Safeguards include internal democracy, equal membership, transparent finances, independent criticism, nonviolence where possible, freedom of conscience, and the ability to leave or organize another movement.',
             citations: citations(['dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'spinozaPolitical'], ['catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'sepReligionPolitics', 'vdem']),
           },
@@ -7631,7 +7672,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto', 'spinozaPolitical', 'millOnLiberty'],
-      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem'],
+      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989'],
       editorialNote: 'The entry is an umbrella synthesis with a Christian-centered evidence base. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, and theocracy. Scores are didactic composites; non-Christian traditions and country-specific claims require separate research.',
     },
     researchGaps: [
@@ -7642,6 +7683,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare grassroots participation, clerical authority, party organization, armed struggle, nonviolence, welfare provision, cooperative ownership, and public ownership across cases rather than assuming that all liberation movements share one structure.',
       'Add evidence on gender, sexuality, race, caste, Indigenous status, migration, disability, unpaid care, minority religion, dissent, and internal exclusion within religious-socialist movements.',
       'Test the six-dimensional scores against party programmes, movement documents, institutional practice, and country-specific historical data; do not infer a national ideology from the presence of churches or faith-based charities alone.',
+      'Compare Day’s article with its original newspaper scan, trace earlier Aims and Means versions, and consult the Maurin papers themselves. Investigate participation, unpaid care, dissent, and material outcomes across houses rather than deriving them from aspirational statements or finding aids.',
+      'Extend the selected Löwy reading to the complete Portuguese article, its earlier publication, the cited works, and contrasting Latin American scholarship. Verify community-level and episcopal records before generalizing about lay initiative, institutional support, class, race, gender, or contemporary political influence.',
+      'Resolve existing article/card differences in the Economic (62/60), Identity (25/35), and Foreign-policy (25/35) coordinates through explicit editorial review. These are magnitude discrepancies, not sign reversals; no score was recalibrated in this research pass.',
     ],
   },
   populist: {
