@@ -3506,4 +3506,347 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Review current movement and country comparisons only with dated, jurisdiction-specific sources. Do not infer anti-colonial status from a government’s rhetoric, a majority identity, or a single historical grievance.',
     ],
   },
+  communist: {
+    id: 'communist',
+    title: 'Communist / Marxist-Leninist',
+    canonicalLabel: 'Communist / Marxist-Leninist',
+    aliases: [
+      'communism',
+      'Marxism-Leninism',
+      'party-state communism',
+      'revolutionary communism',
+      'state communism',
+    ],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This entry focuses on Marxist-Leninist and party-led communist traditions represented by the main card. It is not a synonym for all socialism, Marx’s entire philosophy, anarcho-communism, democratic socialism, or every government that used communist language.',
+    timeScope: 'Theoretical roots in nineteenth-century European socialism; political consolidation from the Bolshevik Revolution onward; global party-state and anti-colonial variants across the twentieth century; surviving and reformed party-led systems remain historically heterogeneous.',
+    geographicScope: 'Global profile with major Russian/Soviet, Chinese, Vietnamese, Cuban, Korean, Eastern European, African, Asian, and Latin American histories. German-language documentation and non-European revolutionary experiences are included, but the research remains incomplete.',
+    summary: 'A family of communist projects seeking to overcome capitalist class relations through collective or public control of production and a transition toward a classless society. In its Marxist-Leninist form, a disciplined revolutionary party and state are treated as vehicles for transition and defense, creating a decisive tension between emancipatory aims, mass participation, bureaucratic rule, and coercive one-party power.',
+    summaryCitations: citations(
+      ['marxEngelsManifesto', 'leninStateRevolution', 'luxemburgReformRevolution', 'arendtTotalitarianism'],
+      ['sepMarx', 'sepSocialism', 'oxfordHistoryCommunism', 'ushmmCommunism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 94,
+        label: 'Very strongly collectivist',
+        explanation: 'The defining economic aim is to end private control of the means of production as a class relation and to organize production for collective need rather than private accumulation. Historical party-states used state ownership, planning, collectivization, public employment, and later market reforms in different combinations; state ownership is not identical to worker or democratic control.',
+        citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepMarx', 'sepSocialism', 'ushmmCommunism']),
+      },
+      social: {
+        score: 28,
+        label: 'Moderately progressive, historically variable',
+        explanation: 'Communist movements often promise emancipation from class, racial, gender, and inherited hierarchies, and have expanded education or social provision in some settings. Their governments have also imposed censorship, disciplined family and cultural life, restricted independent organization, or reversed reforms; the axis therefore cannot be inferred from economic collectivism.',
+        citations: citations(['marxEngelsManifesto', 'luxemburgReformRevolution', 'arendtTotalitarianism'], ['sepMarx', 'sepSocialism', 'oxfordHistoryCommunism']),
+      },
+      authority: {
+        score: 78,
+        label: 'Strongly authoritarian in the Marxist-Leninist profile',
+        explanation: 'A vanguard party, democratic centralism, centralized administration, and emergency or revolutionary authority are treated as instruments for defeating counter-revolution and directing the transition. This is the profile’s main distinction from anarcho-communism, council communism, and democratic socialism, although communist theory and practice contain sustained arguments about democratic control.',
+        citations: citations(['leninStateRevolution', 'luxemburgReformRevolution', 'arendtTotalitarianism'], ['sepSocialism', 'sepLuxemburg', 'oxfordHistoryCommunism', 'vdem']),
+      },
+      identity: {
+        score: 48,
+        label: 'Internationalist with state-national tension',
+        explanation: 'Class solidarity and international revolution oppose the idea that national borders should permanently divide workers. Communist parties and states have nevertheless developed patriotism, national development projects, border security, civilizational narratives, and official state identities; internationalism and state nationalism can coexist uneasily.',
+        citations: citations(['marxEngelsManifesto', 'leninStateRevolution', 'andersonImaginedCommunities'], ['sepMarx', 'sepNationalism', 'oxfordHistoryCommunism']),
+      },
+      foreign: {
+        score: 20,
+        label: 'Mixed: anti-imperial solidarity and state security',
+        explanation: 'Communist foreign policy can emphasize anti-imperialism, international revolution, solidarity with liberation movements, and formal interstate equality. Party-states have also pursued military alliances, strategic competition, intervention, proxy support, border defense, and coercive influence; ideology does not erase ordinary security and power calculations.',
+        citations: citations(['marxEngelsManifesto', 'leninStateRevolution', 'morgenthauRealism'], ['foreignPolicy', 'oxfordHistoryCommunism', 'sepMarx']),
+      },
+      religion: {
+        score: -55,
+        label: 'Strongly secular public law',
+        explanation: 'Marxist-Leninist legitimacy is generally grounded in materialist theory, class analysis, party leadership, and state law rather than clerical authority. Historical regimes ranged from regulated toleration to surveillance, closure, or repression of religious institutions; secular government should not be confused with freedom of religion.',
+        citations: citations(['marxEngelsManifesto', 'leninStateRevolution', 'spinozaPolitical'], ['sepMarx', 'sepReligionPolitics', 'ushmmCommunism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Communism is best understood as both a long-term social ideal and a collection of movements, parties, states, and theories that have claimed to pursue it. The ideal is commonly associated with overcoming class domination, transforming ownership and production, and making social cooperation serve common rather than private accumulation. Marx did not provide a single administrative constitution for a future communist society, so later Marxist-Leninist institutions must be distinguished from the broader philosophical horizon.',
+            citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepMarx', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The main card uses “Communist / Marxist-Leninist” for a didactic profile in which collective economic direction is joined to disciplined party power. That combination describes a historically important family of revolutionary party-states, but it must not erase democratic communist, council communist, anarcho-communist, Eurocommunist, anti-colonial, Maoist, national-communist, and reformist differences. The same word can refer to a theory, a party, a regime, a social movement, or a geopolitical bloc.',
+            citations: citations(['leninStateRevolution', 'luxemburgReformRevolution', 'marxEngelsManifesto'], ['sepSocialism', 'sepLuxemburg', 'oxfordHistoryCommunism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The economic core is a critique of capitalism as a system of class power, not merely an objection to unequal income. Communist arguments focus on who owns productive assets, who controls the labor process, how surplus is distributed, and whether market dependence makes people subordinate to property and capital. The proposed alternatives range from common ownership and association to state planning, public enterprise, cooperative management, and transitional mixed arrangements.',
+            citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepMarx', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The political problem is transition. If a revolution must reorganize property, defend itself against internal and external opponents, and coordinate a complex economy, a party or state may claim unusual authority. Leninist theory gives the party a central role and treats revolutionary state power as transitional; critics argue that emergency institutions and monopoly leadership can become permanent, producing a bureaucratic class or a state detached from the workers it claims to represent.',
+            citations: citations(['leninStateRevolution', 'luxemburgReformRevolution', 'arendtTotalitarianism'], ['sepLuxemburg', 'sepSocialism', 'oxfordHistoryCommunism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Communist social emancipation is therefore ambivalent in the historical record. Parties have organized literacy, health, employment, women’s participation, anti-colonial mobilization, and mass political education in some contexts. Party monopoly has also limited speech, independent unions, religious autonomy, minority self-organization, and the ability to change rulers peacefully. Social outcomes must be researched by period and institution rather than inferred from a regime label.',
+            citations: citations(['marxEngelsManifesto', 'arendtTotalitarianism'], ['sepSocialism', 'oxfordHistoryCommunism', 'ushmmCommunism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, “communist state” is a contested description. A government may call itself communist while claiming to be in a socialist transition, combining party rule with markets, retaining private firms, or prioritizing national development. The label records a political lineage and ruling ideology; it does not settle whether a society has achieved communism, whether its economy is centrally planned, or whether its institutions are democratic.',
+            citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepMarx', 'oxfordHistoryCommunism', 'aeaChinaSocialism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Nineteenth century: socialism, industrial capitalism, and communist theory',
+            text: 'Industrialization, wage labor, urban poverty, and political exclusion shaped the socialist milieu from which Marx and Engels developed their critique. The Communist Manifesto presented class struggle, the international expansion of capital, and collective transformation as historical and political problems. Its short program should be read as a revolutionary pamphlet, not as a complete institutional plan for later states.',
+            citations: citations(['marxEngelsManifesto'], ['sepMarx', 'sepSocialism']),
+          },
+          {
+            period: '1870s–1905: revolutionary organization and competing socialist strategies',
+            text: 'After the Paris Commune and the growth of socialist parties and unions, debates sharpened over parliamentary reform, insurrection, party organization, mass participation, and the state. Revolutionary and evolutionary socialists shared a critique of capitalism while disagreeing over whether democratic reforms were a path, a compromise, or a substitute for social transformation.',
+            citations: citations(['luxemburgReformRevolution', 'bernsteinEvolutionarySocialism', 'marxEngelsManifesto'], ['sepSocialism', 'sepLuxemburg']),
+          },
+          {
+            period: '1917–1921: Bolshevik revolution, civil war, and the transitional state',
+            text: 'The Bolshevik seizure of power created the first durable regime claiming Marxist revolutionary legitimacy. Civil war, foreign intervention, economic collapse, and the need to consolidate authority shaped institutions as much as pre-existing theory. Lenin’s arguments about the state and revolutionary transition must therefore be read alongside the practical emergency conditions that made party, security, and administrative power central.',
+            citations: citations(['leninStateRevolution', 'luxemburgReformRevolution'], ['sepMarx', 'sepLuxemburg', 'ushmmCommunism']),
+          },
+          {
+            period: '1920s–1953: Stalinism, collectivization, industrialization, and party-state consolidation',
+            text: 'Under Stalin, the Soviet system developed extensive central planning, forced collectivization, industrial targets, bureaucratic administration, political policing, censorship, and a highly concentrated leadership structure. These institutions became a major reference for later critics and imitators, but “Stalinism” should not be projected unchanged onto Lenin’s period, post-Stalin reforms, or every communist movement.',
+            citations: citations(['arendtTotalitarianism', 'leninStateRevolution'], ['ushmmCommunism', 'oxfordHistoryCommunism']),
+          },
+          {
+            period: '1945–1960s: global communist expansion and national variants',
+            text: 'After the Second World War, communist parties governed across Eastern Europe and revolutionary victories established new party-states in China, North Korea, Vietnam, and Cuba. Communist institutions were shaped by war, anti-colonial struggle, agrarian societies, Soviet power, national histories, and state-building needs. The global movement was never administratively uniform, and disagreements over strategy, sovereignty, and development produced major splits.',
+            citations: citations(['leninStateRevolution', 'marxEngelsManifesto'], ['oxfordHistoryCommunism', 'ushmmCommunism', 'panAfricanism']),
+          },
+          {
+            period: '1950s–1970s: Maoism, decolonization, and revolutionary development',
+            text: 'Maoist politics adapted communist revolution to a predominantly rural society, emphasizing peasant mobilization, mass campaigns, continuous struggle, and a distinctive relationship between party, state, and social transformation. Elsewhere, communist and socialist movements connected national liberation to economic sovereignty and anti-imperial development. These projects cannot be reduced either to European industrial Marxism or to one universal model of modernization.',
+            citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['oxfordHistoryCommunism', 'panAfricanism', 'sepSocialism']),
+          },
+          {
+            period: '1960s–1980s: reform, dissent, Eurocommunism, and the limits of party monopoly',
+            text: 'Reform communists, dissidents, workers, intellectuals, and Eurocommunist parties challenged Soviet orthodoxy, censorship, invasion, and the subordination of social institutions to the ruling party. East German documents show how Marxism-Leninism was taught as a civic ideology while criticism of the party-state remained constrained. These disputes reveal that communist commitments and democratic freedoms were debated inside the tradition, not only from outside it.',
+            citations: citations(['luxemburgReformRevolution', 'leninStateRevolution'], ['ghdiMarxLeninism', 'sepLuxemburg', 'oxfordHistoryCommunism']),
+          },
+          {
+            period: '1989–present: collapse, survival, and market-socialist hybrids',
+            text: 'The collapse of most European communist regimes ended the Soviet-led bloc but not the political tradition. China, Vietnam, Cuba, North Korea, Laos, and communist parties elsewhere followed different paths of reform, economic opening, national development, isolation, or continued centralization. Contemporary classification requires separating constitutional party leadership, ownership patterns, market coordination, civil liberties, welfare outcomes, and official ideology rather than using a single communist/noncommunist binary.',
+            citations: citations(['arendtTotalitarianism', 'leninStateRevolution'], ['oxfordHistoryCommunism', 'aeaChinaSocialism', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Marxian communism',
+                distinction: 'Critiques capitalist class relations and imagines a post-capitalist association in which production is no longer organized around private accumulation and class domination.',
+                relation: 'Theoretical source family for later communist movements, but Marx did not specify one inevitable administrative system or authorize every later party-state.',
+                citations: citations(['marxEngelsManifesto'], ['sepMarx', 'sepSocialism']),
+              },
+              {
+                label: 'Leninist vanguard communism',
+                distinction: 'Gives a disciplined revolutionary party a leading role in organizing class consciousness, seizing state power, and defending a transition under hostile conditions.',
+                relation: 'Directly informs the main Marxist-Leninist authority score, while its claims about emergency and transitional power remain contested.',
+                citations: citations(['leninStateRevolution', 'luxemburgReformRevolution'], ['sepMarx', 'sepLuxemburg']),
+              },
+              {
+                label: 'Stalinism and high party-state centralization',
+                distinction: 'Combines extensive state planning and collectivization with bureaucratic hierarchy, political policing, censorship, forced mobilization, and concentrated leadership.',
+                relation: 'A historically important regime form, not a synonym for every communist theory or every period of Soviet history.',
+                citations: citations(['arendtTotalitarianism', 'leninStateRevolution'], ['ushmmCommunism', 'oxfordHistoryCommunism']),
+              },
+              {
+                label: 'Maoism and peasant-based revolutionary communism',
+                distinction: 'Adapts revolutionary Marxism to agrarian conditions through peasant mobilization, mass campaigns, cultural transformation, and a distinctive theory of ongoing struggle.',
+                relation: 'Shares party-led collectivism but differs from Soviet models in social base, revolutionary strategy, and relationship between mass politics and state administration.',
+                citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['oxfordHistoryCommunism', 'sepSocialism']),
+              },
+              {
+                label: 'Council communism and democratic communism',
+                distinction: 'Places workers’ councils, direct participation, plural debate, and self-management above a permanent vanguard-party monopoly.',
+                relation: 'Shares anti-capitalist and collective aims but is closer to the authority profile of libertarian socialism or anarcho-communism than to the main party-state card.',
+                citations: citations(['luxemburgReformRevolution', 'marxEngelsManifesto'], ['sepLuxemburg', 'sepSocialism']),
+              },
+              {
+                label: 'Eurocommunism and parliamentary communism',
+                distinction: 'Attempts to combine communist economic goals or party identities with electoral competition, civil liberties, national democratic institutions, and independence from Soviet direction.',
+                relation: 'Shows why communist identity does not always imply one-party rule, although economic commitments and the meaning of “socialism” varied substantially among parties.',
+                citations: citations(['luxemburgReformRevolution', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oxfordHistoryCommunism']),
+              },
+              {
+                label: 'National and anti-colonial communism',
+                distinction: 'Combines communist organization with national independence, anti-imperial sovereignty, local class structures, and state-led development.',
+                relation: 'Explains why international class rhetoric can coexist with strong national identity and why postcolonial communist states should not be read only through European industrial history.',
+                citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['panAfricanism', 'oxfordHistoryCommunism', 'sepColonialism']),
+              },
+              {
+                label: 'Market-socialist and reform communist systems',
+                distinction: 'Retains communist-party leadership or socialist constitutional language while using markets, private firms, foreign investment, and mixed ownership to pursue development and state capacity.',
+                relation: 'The economic axis may move toward the market without the political system becoming liberal or multiparty; China’s trajectory is a major example of why the axes must remain separate.',
+                citations: citations(['leninStateRevolution'], ['aeaChinaSocialism', 'oxfordHistoryCommunism', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Karl Marx',
+                role: 'Critic of capitalist class relations and major theorist of historical materialism, exploitation, political economy, and communist transformation.',
+                caveat: 'Marx’s writings are not a complete blueprint for the Soviet, Chinese, Cuban, or other later party-states; the future society and transitional institutions remain subjects of interpretation.',
+                citations: citations(['marxEngelsManifesto'], ['sepMarx', 'sepSocialism']),
+              },
+              {
+                name: 'Vladimir Lenin',
+                role: 'Revolutionary theorist of party organization, imperialism, state power, and the transition claimed by Bolshevism.',
+                caveat: 'Lenin wrote across changing revolutionary and civil-war conditions. His theory and the institutions later justified in his name should be distinguished from Stalinist consolidation and from all communist movements.',
+                citations: citations(['leninStateRevolution'], ['sepMarx', 'oxfordHistoryCommunism']),
+              },
+              {
+                name: 'Rosa Luxemburg',
+                role: 'Revolutionary socialist who defended mass democratic action and criticized bureaucratic substitution of party leadership for popular political freedom.',
+                caveat: 'Luxemburg is included as an internal communist and revolutionary-socialist boundary, not as evidence that every Marxist-Leninist regime was democratic or that her positions resolve all institutional questions.',
+                citations: citations(['luxemburgReformRevolution'], ['sepLuxemburg', 'sepSocialism']),
+              },
+              {
+                name: 'Karl Marx and Friedrich Engels',
+                role: 'Authors of the Communist Manifesto, which helped define modern communist vocabulary around class, capital, internationalism, and revolutionary transformation.',
+                caveat: 'The pamphlet is polemical and historically situated; later party programs, state constitutions, and economic systems require separate evidence.',
+                citations: citations(['marxEngelsManifesto'], ['sepMarx']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Soviet Union',
+                period: 'Russia/USSR, 1917–1991',
+                match: 'Foundational party-state case spanning revolutionary rupture, civil war, central planning, collectivization, Stalinist terror, wartime mobilization, post-Stalin reform, and bureaucratic late socialism.',
+                caveat: 'The USSR changed substantially across Lenin, Stalin, Khrushchev, Brezhnev, and Gorbachev. One score cannot represent all periods or all Soviet republics.',
+                citations: citations(['leninStateRevolution', 'arendtTotalitarianism'], ['ushmmCommunism', 'oxfordHistoryCommunism']),
+              },
+              {
+                name: 'People’s Republic of China',
+                period: 'China, 1949–present; distinct phases require separate analysis',
+                match: 'Communist-party state with revolutionary, Maoist, reform, market-socialist, and national-developmental phases.',
+                caveat: 'The party’s communist identity, state ownership, private enterprise, market coordination, nationalism, civil liberties, and economic structure should be coded separately and dated. It is not a simple equivalent of either the early USSR or an unregulated market economy.',
+                citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['aeaChinaSocialism', 'oxfordHistoryCommunism', 'vdem']),
+              },
+              {
+                name: 'Cuba after 1959',
+                period: 'Cuba, 1959–present; revolutionary and reform periods differ',
+                match: 'A revolutionary party-state combining public economic direction, anti-imperial internationalism, social programs, and centralized political authority.',
+                caveat: 'The Cuban case requires separate research on the revolutionary transition, Soviet relationship, economic reforms, civil liberties, religious policy, and present conditions; it should not be generalized to all Latin American socialism.',
+                citations: citations(['leninStateRevolution', 'marxEngelsManifesto'], ['oxfordHistoryCommunism', 'ushmmCommunism', 'foreignPolicy']),
+              },
+              {
+                name: 'German Democratic Republic',
+                period: 'East Germany, 1949–1990',
+                match: 'A Soviet-aligned party-state in which Marxism-Leninism structured civic education, political institutions, economic organization, and official legitimacy.',
+                caveat: 'GDR institutions included formal representative bodies and social services, but SED dominance, surveillance, restrictions on movement, and limits on independent politics must remain visible.',
+                citations: citations(['leninStateRevolution'], ['ghdiMarxLeninism', 'oxfordHistoryCommunism', 'vdem']),
+              },
+              {
+                name: 'Vietnam and other postcolonial communist states',
+                period: 'Especially Vietnam from 1945 onward; comparisons must be country- and period-specific',
+                match: 'Revolutionary and anti-colonial state-building combined with communist-party leadership, national independence, public direction, and later economic reform.',
+                caveat: 'Vietnam, Laos, North Korea, and other cases differ in war history, institutions, markets, social policy, foreign relations, and current political practice; a regional label is not enough evidence for one score.',
+                citations: citations(['leninStateRevolution', 'marxEngelsManifesto'], ['oxfordHistoryCommunism', 'panAfricanism', 'foreignPolicy']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'authoritarian-collectivist', relation: 'closest analytical neighbor: emphasizes the party-state and collective economy, while “communist” also names a broader theory and movement tradition' },
+              { id: 'democratic-socialist', relation: 'shares economic transformation and social ownership goals but places greater weight on pluralist elections, civil liberties, and non-revolutionary transition' },
+              { id: 'anarcho-communist', relation: 'shares common ownership and class abolition but rejects the centralized state and vanguard-party authority emphasized here' },
+              { id: 'libertarian-socialist', relation: 'shares anti-capitalist aims while prioritizing decentralized self-management, worker control, and limits on party or state hierarchy' },
+              { id: 'anti-colonial-liberation', relation: 'can overlap through anti-imperialism, national liberation, and postcolonial development, but anti-colonial politics is not inherently communist' },
+              { id: 'social-democratic', relation: 'shares social provision and labor politics in some histories but accepts regulated capitalism and parliamentary reform rather than abolishing capitalist ownership' },
+              { id: 'national-socialist', relation: 'both may use mass-party and state-directed economic language, but Nazi racial nationalism and exterminatory politics are fundamentally opposed to communist class universalism' },
+              { id: 'green-commons', relation: 'can overlap on public ownership and anti-extraction, but ecological limits and commons governance are not defining communist commitments' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The most important criticism concerns the concentration of power. A party that claims to represent historical necessity can restrict opposition, independent unions, the press, courts, religious organizations, and internal party debate. Emergency rule may begin as a response to war or counter-revolution yet become ordinary government. Safeguards include competitive or genuinely accountable elections, independent courts, freedom of association, transparent administration, civilian control of security forces, and the ability to remove rulers without violence.',
+            citations: citations(['luxemburgReformRevolution', 'arendtTotalitarianism', 'leninStateRevolution'], ['sepLuxemburg', 'oxfordHistoryCommunism', 'vdem', 'ushmmCommunism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns the economic and administrative knowledge problem. Central plans can mobilize resources, provide universal services, or accelerate industrialization, but they can also suppress local information, create rigid targets, reward bureaucratic compliance, and make failure difficult to correct. Markets may improve coordination in some sectors while reproducing inequality and dependence. The relevant question is not simply state versus market, but who controls decisions, how information travels, what rights workers have, and how errors are corrected.',
+            citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepMarx', 'sepSocialism', 'oxfordHistoryCommunism', 'aeaChinaSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns the gap between emancipatory promises and lived pluralism. Class abolition does not automatically resolve gender, racial, ethnic, religious, national, or cultural domination. Universal social provision can coexist with censorship, forced conformity, political imprisonment, or unequal treatment of minorities. The project should therefore measure social rights, material outcomes, political freedom, and protection from state abuse separately rather than allowing one egalitarian claim to cancel another.',
+            citations: citations(['marxEngelsManifesto', 'luxemburgReformRevolution', 'spinozaPolitical'], ['sepSocialism', 'sepReligionPolitics', 'oxfordHistoryCommunism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, historical casualty estimates, famine explanations, repression records, and comparisons among communist regimes remain politically contested and methodologically uneven. The encyclopedia should cite specific archives, demographic studies, legal records, and historians for each claim, distinguish policy intention from consequence, and avoid both apologetic erasure and undifferentiated moral equivalence. Current country comparisons require dated evidence because institutions and economic policies change.',
+            citations: citations(['arendtTotalitarianism', 'leninStateRevolution'], ['ushmmCommunism', 'oxfordHistoryCommunism', 'aeaChinaSocialism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['marxEngelsManifesto', 'leninStateRevolution', 'luxemburgReformRevolution', 'bernsteinEvolutionarySocialism', 'arendtTotalitarianism', 'andersonImaginedCommunities', 'morgenthauRealism', 'spinozaPolitical'],
+      researchSourceIds: ['sepMarx', 'sepSocialism', 'sepLuxemburg', 'ushmmCommunism', 'oxfordHistoryCommunism', 'ghdiMarxLeninism', 'aeaChinaSocialism', 'panAfricanism', 'sepColonialism', 'foreignPolicy', 'vdem', 'sepReligionPolitics'],
+      editorialNote: 'The main score is a didactic Marxist-Leninist party-state profile. It should not be used as a verdict on every communist thinker, socialist party, revolutionary movement, or present government. Marxian theory, Leninist organization, Stalinist rule, Maoism, democratic communism, anarcho-communism, and market-socialist systems remain separately identifiable traditions.',
+    },
+    researchGaps: [
+      'Add primary and scholarly sources on Maoism, Ho Chi Minh, Castro, Kim Il-sung, Gramsci, Bukharin, Kautsky, council communism, Eurocommunism, and democratic communist parties, preserving internal disagreements.',
+      'Expand Russian, German, Chinese, Vietnamese, Korean, Spanish, Portuguese, French, and other language scholarship, with translation and edition provenance recorded for every quotation or close textual claim.',
+      'Add country- and period-specific research for the USSR, China, Vietnam, Cuba, North Korea, Laos, Eastern Europe, African communist movements, and Latin American parties instead of relying on regime-level generalizations.',
+      'Add comparative evidence on workers’ control, unions, planning, collectivization, markets, welfare, education, health, famine, migration, coercion, prisons, censorship, religion, ethnicity, gender, and minority rights.',
+      'Add archival and demographic research for disputed claims about deaths, repression, economic performance, and responsibility, distinguishing policy, implementation, unintended consequences, wartime conditions, and later political memory.',
+      'Add a dedicated comparison of communist-party constitutional language with observed party competition, executive constraints, judicial independence, civil liberties, and mechanisms for leadership succession.',
+    ],
+  },
 };

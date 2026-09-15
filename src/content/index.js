@@ -80,6 +80,7 @@ const OPTION_LABELS = ['Strongly disagree', 'Disagree', 'Unsure / mixed', 'Agree
 const RESEARCH_SOURCES = [
   { id: 'panXu', label: 'Pan & Xu — China’s Ideological Spectrum', url: 'https://www.journals.uchicago.edu/doi/abs/10.1086/694255', note: 'Evidence that political preferences can be multidimensional rather than a single left–right line.' },
   { id: 'sepSocialism', label: 'Stanford Encyclopedia — Socialism', url: 'https://plato.stanford.edu/entries/socialism/', note: 'Definitions and internal diversity of socialist traditions.' },
+  { id: 'sepMarx', label: 'Stanford Encyclopedia — Karl Marx (Spring 2025 archive)', url: 'https://plato.stanford.edu/archives/spr2025/entries/marx/', note: 'Scholarly account of Marx’s theory of history, capitalism, class, the state, ideology, and communist transformation.' },
   { id: 'sepLuxemburg', label: 'Stanford Encyclopedia — Rosa Luxemburg', url: 'https://plato.stanford.edu/entries/luxemburg/', note: 'Luxemburg’s relationship between socialism, democracy, mass participation, and criticism of authoritarian revolutionary models.' },
   { id: 'sepLiberalism', label: 'Stanford Encyclopedia — Liberalism', url: 'https://plato.stanford.edu/entries/liberalism/', note: 'Liberal approaches to liberty, property, authority, and the state.' },
   { id: 'sepLibertarianism', label: 'Stanford Encyclopedia — Libertarianism', url: 'https://plato.stanford.edu/entries/libertarianism/', note: 'Individual liberty, coercion, property, and market arguments.' },
@@ -116,6 +117,9 @@ const RESEARCH_SOURCES = [
   { id: 'bpbFascism', label: 'Bundeszentrale für politische Bildung — Faschismus', url: 'https://www.bpb.de/themen/rechtsextremismus/dossier-rechtsextremismus/500776/faschismus/', note: 'German-language institutional history distinguishing Italian Fascism, National Socialism, and broader uses of the fascism label.' },
   { id: 'bpbNationalSocialism', label: 'Bundeszentrale für politische Bildung — National Socialism', url: 'https://www.bpb.de/kurz-knapp/lexika/politiklexikon/17892/nationalsozialismus/', note: 'German-language reference on Nazi ideology, dictatorship, racial hierarchy, antisemitism, war, and the relationship between party and state.' },
   { id: 'panAfricanism', label: 'African Affairs — Pan-Africanism', url: 'https://academic.oup.com/afraf/article/125/498/1/8512174', note: 'Scholarly treatment of Pan-African political thought and transnational solidarity.' },
+  { id: 'oxfordHistoryCommunism', label: 'Oxford Handbook — History of Communism', url: 'https://academic.oup.com/edited-volume/35402', note: 'Global historical scholarship on communist parties, states, bureaucracy, society, culture, and planned economies.' },
+  { id: 'ghdiMarxLeninism', label: 'German History in Documents and Images — Marxism-Leninism in the GDR', url: 'https://germanhistorydocs.org/en/two-germanies-1961-1989/civics-lesson-in-east-berlin-1988.pdf', note: 'German-language primary documentation of Marxism-Leninism as civic ideology and state education in East Germany.' },
+  { id: 'aeaChinaSocialism', label: 'American Economic Association — Is China Socialist?', url: 'https://www.aeaweb.org/articles?id=10.1257/jep.31.1.3', note: 'Economic analysis of China’s shift from command-economy socialism toward market coordination while retaining communist-party rule.' },
 ];
 
 const PALETTES = {
