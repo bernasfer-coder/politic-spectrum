@@ -25,6 +25,22 @@ export const AUTHOR_REFERENCES = {
     kind: 'primary',
     url: 'https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/',
   },
+  luxemburgReformRevolution: {
+    author: 'Rosa Luxemburg',
+    work: 'Reform or Revolution',
+    year: '1900',
+    kind: 'primary',
+    context: 'A German-Polish Marxist critique of reducing socialism to incremental reform; cited to represent an internal democratic-socialist and revolutionary debate, not as a universal programme.',
+    url: 'https://www.marxists.org/archive/luxemburg/1900/reform-revolution/index.htm',
+  },
+  jauresSocialistHistory: {
+    author: 'Jean Jaurès',
+    work: 'Socialist History of the French Revolution',
+    year: '1901',
+    kind: 'primary',
+    context: 'A French socialist account linking democracy, republican citizenship, and social transformation; the online English text is a translation and is cited through a link rather than reproduced.',
+    url: 'https://www.marxists.org/archive/jaures/1901/history/judge-revolutionaries.htm',
+  },
   adamSmithWealth: {
     author: 'Adam Smith',
     work: 'The Wealth of Nations',

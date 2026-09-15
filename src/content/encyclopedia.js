@@ -1973,4 +1973,302 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist research on labor power, race, gender, colonialism, migration, environmental externalities, corporate concentration, public goods, and the relationship between private and state coercion.',
     ],
   },
+  'democratic-socialist': {
+    id: 'democratic-socialist',
+    title: 'Democratic socialist',
+    canonicalLabel: 'Democratic socialist',
+    aliases: ['democratic socialism', 'democratic social ownership', 'left socialism', 'libertarian democratic socialism'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile describes socialist projects that seek substantial economic equality and social or democratic ownership while preserving competitive elections, civil liberties, plural associations, and the right to organize against the governing movement. The label is contested and is sometimes used as a synonym for reformist social democracy or as a broader family including revolutionary democratic currents.',
+    timeScope: 'Nineteenth-century socialist roots; major debates around revisionism, revolution, and mass democracy from the 1890s onward; post-war democratic-socialist programmes; contemporary debates about market socialism, economic democracy, and public ownership.',
+    geographicScope: 'Transnational tradition with important German, French, British, Nordic, Central European, Latin American, and other national variants; the relationship between socialism and democracy changes with institutions and historical conditions.',
+    summary: 'A political tradition seeking to extend democratic control into the economy through social ownership, worker power, universal provision, redistribution, and cooperative or public institutions while rejecting one-party rule and the suppression of plural political life. Some democratic socialists seek to regulate and gradually transform capitalism; others seek a democratic transition beyond capitalism through public, cooperative, or worker-controlled ownership.',
+    summaryCitations: citations(['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'jauresSocialistHistory'], ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg', 'jauresArchive']),
+    dimensionInterpretations: {
+      economic: {
+        score: 78,
+        label: 'Strongly collectivist and ownership-transforming',
+        explanation: 'The profile gives workers and citizens a direct role in ownership, investment, production, and distribution through public enterprises, cooperatives, workplace democracy, social funds, or other forms of social ownership. It can retain markets for some goods and does not require one centralized state plan, which distinguishes it from a uniform command economy.',
+        citations: citations(['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution'], ['sepSocialism', 'sepLuxemburg']),
+      },
+      social: {
+        score: 58,
+        label: 'Progressive and emancipatory',
+        explanation: 'Equal citizenship, freedom from economic dependence, labor dignity, and the removal of inherited domination are central aspirations. Historical socialist movements have still disagreed over gender, religion, nationalism, minority rights, and the pace of cultural change, so the economic project does not automatically settle every social question.',
+        citations: citations(['jauresSocialistHistory', 'millOnLiberty', 'wollstonecraftRights'], ['sepSocialism', 'sepLuxemburg']),
+      },
+      authority: {
+        score: -20,
+        label: 'Democratic but institutionally active',
+        explanation: 'Public authority is used to democratize property and provide social rights, but competitive elections, free expression, independent unions, opposition parties, courts, and internal dissent are treated as necessary safeguards. The defining boundary is against a party-state that claims to embody the working class while removing democratic control.',
+        citations: citations(['luxemburgReformRevolution', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism', 'vdem']),
+      },
+      identity: {
+        score: 40,
+        label: 'Internationalist with civic organization',
+        explanation: 'International working-class solidarity and universal emancipation are prominent, while democratic socialist parties often operate through national citizenship, public budgets, and national institutions. This creates persistent debates about borders, migration, colonialism, national development, and the political scale of economic democracy.',
+        citations: citations(['marxEngelsManifesto', 'jauresSocialistHistory', 'renanNation'], ['sepSocialism', 'jauresArchive']),
+      },
+      foreign: {
+        score: 15,
+        label: 'Restrained internationalist',
+        explanation: 'International law, solidarity, anti-imperialism, diplomacy, and collective security are preferred to militarized power politics. Democratic socialist movements have nevertheless differed over national defense, revolutionary intervention, alliances, and the use of force against authoritarian or colonial regimes.',
+        citations: citations(['kantPerpetualPeace', 'jauresSocialistHistory', 'morgenthauRealism'], ['sepSocialism', 'foreignPolicy']),
+      },
+      religion: {
+        score: 30,
+        label: 'Secular and pluralist public law',
+        explanation: 'The profile generally grounds public institutions in equal citizenship, social rights, and democratic reasoning rather than clerical authority. Religious socialists, Christian socialists, and faith-based labor movements show that democratic socialism is not necessarily anti-religious, but no single faith is required to rule public law.',
+        citations: citations(['lockeLetterToleration', 'jauresSocialistHistory', 'spinozaPolitical'], ['sepReligionPolitics', 'sepSocialism', 'jauresArchive']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Democratic socialism begins from a problem shared by many socialist traditions: political equality is fragile when people remain dependent on unequal ownership, employment, inherited wealth, or private control of essential resources. Its proposed answer is to extend democratic principles into economic life so that workers and citizens have meaningful power over production, investment, care, and distribution, while preserving the political liberties needed to contest those decisions.',
+            citations: citations(['marxEngelsManifesto', 'jauresSocialistHistory', 'millOnLiberty'], ['sepSocialism', 'jauresArchive']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label has two common uses. In one, democratic socialism means a long-term project of replacing major capitalist ownership with social, public, cooperative, or worker ownership through democratic means. In another, it names a broad left-democratic family that includes welfare-state reform, public services, labor power, market regulation, and gradual transformation. This entry keeps both meanings visible rather than treating the term as identical to either social democracy or revolutionary communism.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'jauresSocialistHistory'], ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The economic idea is not simply that the state should own everything. Democratic socialists propose different combinations of public enterprises, worker cooperatives, social wealth funds, codetermination, municipal ownership, universal services, regulated markets, and participatory investment. The common thread is that ownership and economic power should be answerable to those affected by them rather than determined only by private capital holders or a centralized party bureaucracy.',
+            citations: citations(['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution'], ['sepSocialism', 'sepLuxemburg']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Democracy is both a means and an end. Elections and parliamentary action may win reforms, but democratic socialists also emphasize unions, strikes, workplace organization, councils, cooperative association, public deliberation, and the ability of minorities to organize. Rosa Luxemburg’s democratic critique is especially important here: socialism without political freedom can reproduce domination under a different ownership title.',
+            citations: citations(['luxemburgReformRevolution', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The tradition is therefore neither a simple midpoint between capitalism and communism nor a guarantee that public ownership is democratic. Public institutions can be captured by officials, parties, managers, or dominant majorities. A democratic-socialist analysis must ask who owns, who decides, how dissent is protected, how resources are allocated, and whether institutions can be revised without coercive political closure.',
+            citations: citations(['luxemburgReformRevolution', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Nineteenth century: socialism and democratic emancipation',
+            text: 'Socialist movements developed alongside mass labor organization, republican citizenship, universal suffrage campaigns, and critiques of capitalist property. Marx and other socialists connected political emancipation to class power, while democratic and ethical socialists debated whether economic transformation should be pursued through parliament, mass action, cooperatives, or revolutionary rupture.',
+            citations: citations(['marxEngelsManifesto', 'jauresSocialistHistory'], ['sepSocialism', 'jauresArchive']),
+          },
+          {
+            period: '1890s–1900s: revisionism, reform, and the democratic question',
+            text: 'Bernstein argued that organized democratic reform and parliamentary action could advance socialism without waiting for a predicted capitalist collapse. Luxemburg answered that reforms mattered but could not substitute for transforming the social structure and political power of capital. Their dispute helped define the boundary between reformist social democracy and more transformative democratic socialism.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'luxemburgReformRevolution'], ['sepSocialism', 'sepLuxemburg']),
+          },
+          {
+            period: 'French republican socialism and socialist unity',
+            text: 'Jean Jaurès represented a French current that connected republican democracy, social ownership, political education, and the unity of socialist forces. His work shows that democratic socialism was not only a German or British debate and that socialism could be articulated through republican citizenship rather than a rejection of democratic institutions.',
+            citations: citations(['jauresSocialistHistory'], ['jauresArchive', 'sepSocialism']),
+          },
+          {
+            period: '1917–1930s: revolution, civil liberties, and party-state divergence',
+            text: 'The Russian Revolution intensified the dispute over whether a revolutionary government could preserve plural democracy under civil war and economic collapse. Luxemburg supported socialist transformation but criticized the suppression of political freedom and independent participation; later one-party regimes made the distinction between democratic socialism and authoritarian collectivism a central historical issue.',
+            citations: citations(['luxemburgReformRevolution', 'leninStateRevolution'], ['sepLuxemburg', 'sepSocialism']),
+          },
+          {
+            period: '1945–1970s: reconstruction, welfare, and programme pluralism',
+            text: 'After the Second World War, socialist and social-democratic parties helped build welfare states, public services, labor protections, and mixed economies. The 1959 Godesberg Programme is a documented German example of a democratic-socialist reorientation around freedom, human dignity, pluralism, and social justice while moving away from orthodox Marxist ownership language. This shift narrowed one meaning of socialism but did not end debates over ownership and workplace power.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['ghdiGodesberg', 'sepSocialism']),
+          },
+          {
+            period: 'Late twentieth century to the present: economic democracy and new transitions',
+            text: 'Deindustrialization, globalization, the decline of union density, ecological crisis, and the financialization of the economy challenged older national strategies. Contemporary democratic-socialist arguments revisit cooperatives, public investment, universal basic services, social wealth funds, workplace democracy, municipal ownership, ecological planning, and the democratic control of technology. These proposals vary widely and should not be treated as one contemporary programme.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'sepLuxemburg']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Parliamentary democratic socialism',
+                distinction: 'Uses elections, legislation, unions, public services, and social ownership reforms to democratize economic power within constitutional institutions.',
+                relation: 'Closest to the main profile’s democratic safeguards, but it differs internally over whether capitalism is regulated, gradually transformed, or ultimately replaced.',
+                citations: citations(['bernsteinEvolutionarySocialism', 'jauresSocialistHistory'], ['sepSocialism', 'ghdiGodesberg']),
+              },
+              {
+                label: 'Market socialism',
+                distinction: 'Retains markets for coordination while changing ownership through cooperatives, public firms, social funds, or worker control.',
+                relation: 'Demonstrates that social ownership need not imply a single command plan, although market dependence and unequal firm power remain debated.',
+                citations: citations(['marxEngelsManifesto', 'bernsteinEvolutionarySocialism'], ['sepSocialism']),
+              },
+              {
+                label: 'Participatory or council socialism',
+                distinction: 'Emphasizes direct participation through workplace councils, assemblies, federations, and democratic planning rather than relying only on representative parties.',
+                relation: 'Shares Luxemburg’s concern with active mass democracy and is vulnerable to questions about scale, expertise, coordination, and minority rights.',
+                citations: citations(['luxemburgReformRevolution', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism']),
+              },
+              {
+                label: 'Revolutionary democratic socialism',
+                distinction: 'Seeks a structural break with capitalist ownership but insists that the transition remain accountable to plural democratic participation and civil liberties.',
+                relation: 'It disputes gradualism while rejecting the claim that a single party may permanently replace democratic self-government.',
+                citations: citations(['luxemburgReformRevolution', 'marxEngelsManifesto'], ['sepLuxemburg', 'sepSocialism']),
+              },
+              {
+                label: 'Social democracy',
+                distinction: 'Usually prioritizes welfare, labor rights, redistribution, and regulation within a predominantly private mixed economy, with long-term ownership transformation often left open or abandoned.',
+                relation: 'The closest neighboring label; the practical boundary is historically variable and should be stated rather than assumed.',
+                citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'ghdiGodesberg']),
+              },
+              {
+                label: 'Authoritarian state socialism',
+                distinction: 'Concentrates political and economic authority in a party-state and restricts independent opposition, association, or public accountability.',
+                relation: 'The critical boundary of this entry: public ownership alone does not make a regime democratic socialist.',
+                citations: citations(['luxemburgReformRevolution', 'leninStateRevolution'], ['sepLuxemburg', 'sepSocialism', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No country is an exact or permanent democratic-socialist match. Examples below are partial historical or movement-level comparators; each must be checked for ownership, workplace power, electoral competition, civil liberties, welfare provision, colonial relations, and the treatment of opposition.',
+            citations: citations(['luxemburgReformRevolution', 'jauresSocialistHistory'], ['sepSocialism', 'sepLuxemburg', 'vdem']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Rosa Luxemburg',
+                role: 'socialist theorist linking economic emancipation to mass democracy and political freedom',
+                caveat: 'Her revolutionary Marxism is not identical to gradualist social democracy, and her proposals remain historically situated.',
+                citations: citations(['luxemburgReformRevolution'], ['sepLuxemburg', 'sepSocialism']),
+              },
+              {
+                name: 'Jean Jaurès',
+                role: 'French socialist and republican thinker who connected democracy, social transformation, and socialist unity',
+                caveat: 'Jaurès represents one French democratic-socialist current rather than a complete model for all socialist parties or periods.',
+                citations: citations(['jauresSocialistHistory'], ['jauresArchive', 'sepSocialism']),
+              },
+              {
+                name: 'Eduard Bernstein',
+                role: 'revisionist socialist theorist of parliamentary reform and evolutionary change',
+                caveat: 'Bernstein is a key reference for democratic reform but is also central to debates about whether social democracy still aims beyond capitalism.',
+                citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism']),
+              },
+              {
+                name: 'Karl Marx',
+                role: 'critic of capitalist class relations and theorist of social transformation',
+                caveat: 'Marx did not provide a single institutional blueprint for modern democratic socialism, and later regimes should not be read directly back into his texts.',
+                citations: citations(['marxEngelsManifesto'], ['sepSocialism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'German SPD and the 1959 Godesberg Programme',
+                period: 'post-war West Germany, especially 1959 onward',
+                match: 'documented programme-level comparator',
+                caveat: 'Godesberg defined democratic socialism through freedom, dignity, pluralism, and social justice while moving toward a mixed economy; it is not evidence of a single timeless meaning of socialism.',
+                citations: citations(['bernsteinEvolutionarySocialism'], ['ghdiGodesberg']),
+              },
+              {
+                name: 'French socialist and republican traditions associated with Jaurès',
+                period: 'late nineteenth and early twentieth centuries',
+                match: 'historical intellectual and movement comparator',
+                caveat: 'The French socialist field contained competing revolutionary, parliamentary, republican, syndicalist, and anti-colonial currents.',
+                citations: citations(['jauresSocialistHistory'], ['jauresArchive', 'sepSocialism']),
+              },
+              {
+                name: 'Nordic welfare-state and labor institutions',
+                period: 'especially mid-twentieth century onward',
+                match: 'partial social-democratic comparator',
+                caveat: 'These systems combine universal or broad public provision with private firms and markets; they should not be presented as complete democratic-socialist ownership models.',
+                citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'vdem']),
+              },
+              {
+                name: 'Contemporary democratic-socialist movements',
+                period: 'present; country-specific evidence required',
+                match: 'movement-level comparison only',
+                caveat: 'A party label does not establish a programme: assess ownership, labor power, redistribution, civil liberties, internal democracy, ecology, migration, and foreign policy separately.',
+                citations: citations(['luxemburgReformRevolution', 'millOnLiberty'], ['sepSocialism', 'sepLuxemburg', 'vdem', 'ches']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'social-democratic', relation: 'closest neighboring reform tradition; usually accepts a more durable role for private ownership and markets' },
+              { id: 'authoritarian-collectivist', relation: 'shares collectivist economic language but rejects democratic pluralism and independent opposition' },
+              { id: 'anarchist-communalist', relation: 'shares social ownership and anti-domination goals but rejects centralized state authority more radically' },
+              { id: 'progressive-liberal', relation: 'shares equal citizenship and social reform but generally retains liberal property relations and a less ownership-transforming economy' },
+              { id: 'libertarian-socialist', relation: 'shares anti-authoritarian and worker-control concerns, with stronger skepticism toward state coordination' },
+              { id: 'green-commons', relation: 'overlaps on ecological and common ownership proposals, with a more explicit ecological and polycentric foundation' },
+              { id: 'religious-socialist', relation: 'shares economic egalitarianism while grounding some movements in religious ethics and communities' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that democratic socialism faces a transition problem: reforms may be absorbed by capitalism, while rapid ownership changes can trigger economic disruption, capital flight, administrative overload, or opposition from groups that still possess resources. Supporters answer that ownership and workplace power are precisely the democratic questions that incremental policy can leave untouched, and that mixed transitional institutions can reduce the risk of abrupt rupture.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'keynesGeneralTheory'], ['sepSocialism', 'sepLuxemburg', 'oecdWelfareModels']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns public ownership and bureaucracy. State ownership may protect access and coordinate long-term investment, but it can also empower managers, officials, or party organizations without giving workers and citizens effective control. Democratic-socialist claims therefore require institutional evidence about transparency, contestability, union independence, procurement, participation, and the ability to remove decision-makers.',
+            citations: citations(['luxemburgReformRevolution', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLuxemburg', 'sepSocialism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, democracy itself is not a guarantee of equality. Majorities can exclude minorities, national welfare systems can be bounded by citizenship, and socialist movements have historically reproduced gender, racial, colonial, and cultural hierarchies. The profile should therefore be evaluated through both economic ownership and the actual protection of plural political and social freedom.',
+            citations: citations(['jauresSocialistHistory', 'wollstonecraftRights', 'millOnLiberty'], ['sepSocialism', 'sepLuxemburg', 'jauresArchive']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'jauresSocialistHistory', 'millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'kantPerpetualPeace', 'morgenthauRealism', 'leninStateRevolution'],
+      researchSourceIds: ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg', 'jauresArchive', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
+      editorialNote: 'The entry keeps democratic socialism distinct from both reformist social democracy and authoritarian state socialism, while acknowledging that historical parties and authors use the labels differently. Scores describe a didactic democratic ownership profile, not a single party programme or country.',
+    },
+    researchGaps: [
+      'Add German-language scholarship on the SPD, Godesberg, council democracy, East German socialist experience, and the post-war constitutional debate over democratic socialism.',
+      'Add French-language scholarship on Jaurès, the SFIO, syndicalism, republican socialism, colonialism, and the relationship between democratic and revolutionary currents.',
+      'Add Portuguese- and Spanish-language scholarship on Iberian socialism, Latin American democratic socialism, Allende, social movements, and the different meanings of state, communal, and worker ownership.',
+      'Add country-specific evidence before listing present parties, welfare states, or cooperative systems as democratic-socialist examples; party labels and institutions change over time.',
+      'Add specialist research on gender, race, migration, disability, colonial legacies, ecology, technology, international trade, military alliances, and the governance of large-scale economic planning.',
+    ],
+  },
 };
