@@ -1693,4 +1693,284 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist research on colonial legacies, migration, gender, unpaid care, disability, ecological transition, automation, and the global constraints on national redistribution.',
     ],
   },
+  'classical-liberal': {
+    id: 'classical-liberal',
+    title: 'Classical liberal',
+    canonicalLabel: 'Classical liberal',
+    aliases: ['old liberalism', 'laissez-faire liberalism', 'constitutional liberalism', 'market liberalism'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile describes the broad classical or “old” liberal tradition linking individual liberty, private property, constitutional limits, and a restrained but not necessarily absent state. Classical liberalism is a spectrum and should not be collapsed into libertarianism, laissez-faire absolutism, or every contemporary use of the word liberal.',
+    timeScope: 'Roots in early modern natural-rights and toleration arguments; major development in the eighteenth and nineteenth centuries; later reinterpretations through twentieth-century liberal and libertarian debates.',
+    geographicScope: 'Transnational Atlantic and European tradition with especially important British, Scottish, French, Dutch, German, and North American variants; the label has different historical meanings across countries.',
+    summary: 'A liberal tradition that treats individuals as rights-bearing agents and limits coercive authority through consent, constitutional government, civil liberty, religious toleration, private property, and voluntary exchange. Its members disagree about suffrage, empire, labor, public goods, social provision, and the legitimate scope of regulation, so “classical liberal” is best used as a family resemblance rather than a single policy package.',
+    summaryCitations: citations(['lockeSecondTreatise', 'adamSmithWealth', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertarianism']),
+    dimensionInterpretations: {
+      economic: {
+        score: -70,
+        label: 'Strongly market-oriented',
+        explanation: 'Private property, contract, competition, and decentralized exchange are treated as important safeguards for independence and prosperity. The tradition nevertheless includes arguments for public goods, infrastructure, education, regulation, and a limited social minimum, so it is broader than absolute laissez-faire.',
+        citations: citations(['adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertarianism']),
+      },
+      social: {
+        score: 20,
+        label: 'Moderately progressive through liberty',
+        explanation: 'Freedom of conscience, discussion, association, and personal development often support social pluralism and reform. Historical classical liberals also retained exclusions and inherited assumptions, so the tradition’s liberty language does not automatically imply contemporary egalitarian positions.',
+        citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepMill']),
+      },
+      authority: {
+        score: -58,
+        label: 'Strongly limited-state',
+        explanation: 'Government is legitimate when it protects rights, adjudicates disputes, supplies certain common goods, and acts through accountable law. Arbitrary rule, unchecked executive power, and coercion of peaceful conduct are treated as serious dangers, though the permitted functions of the state remain contested.',
+        citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'vdem']),
+      },
+      identity: {
+        score: 12,
+        label: 'Civic and mildly internationalist',
+        explanation: 'The profile centers universal individual rights and constitutional citizenship rather than ethnic uniformity. Classical liberals have also defended national self-government, borders, and imperial projects at different times, so the tradition cannot be assigned a single cosmopolitan or nationalist position.',
+        citations: citations(['lockeSecondTreatise', 'constantLibertyModerns', 'kantPerpetualPeace'], ['sepLiberalism', 'sepNationalism']),
+      },
+      foreign: {
+        score: 18,
+        label: 'Restrained internationalist',
+        explanation: 'Commerce, diplomacy, legal order, and non-interference are generally preferred to permanent military activism. Defense, treaty obligations, or protection of rights can still be invoked for force, and historical liberal states have often combined liberal institutions with imperial or interventionist policies.',
+        citations: citations(['kantPerpetualPeace', 'millOnLiberty', 'morgenthauRealism'], ['sepLiberalism', 'foreignPolicy']),
+      },
+      religion: {
+        score: 50,
+        label: 'Secular constitutionalist / tolerationist',
+        explanation: 'Freedom of conscience and religious toleration limit the state’s authority to impose doctrine. Classical liberalism can be religiously inspired, but public coercion is normally justified through civil rights and constitutional law rather than by a single clerical authority or established revelation.',
+        citations: citations(['lockeLetterToleration', 'millOnLiberty', 'constantLibertyModerns'], ['sepReligionPolitics', 'sepLiberalism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Classical liberalism is a family of political arguments built around the presumption that people are entitled to substantial freedom and that political authority must be justified. Its central protections include liberty of thought and discussion, religious conscience, personal choice, property, contract, and security against arbitrary power. The tradition is constitutional rather than simply anti-government: it asks what public authority may legitimately do and how that authority can be limited.',
+            citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label is historically layered. Early modern natural-rights and toleration arguments supplied important foundations; eighteenth-century commercial and constitutional thought developed them; nineteenth-century liberals used them for reform, free trade, civil equality, and opposition to inherited privilege. Later libertarian and neoliberal currents selectively inherited this tradition, but classical liberalism should not be treated as a synonym for every market ideology or as proof that the state must perform no social function.',
+            citations: citations(['lockeSecondTreatise', 'adamSmithWealth', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The political core is limited and accountable government. Consent, representation, separation or division of powers, due process, equal legal standing, and public justification are mechanisms for preventing rulers from treating citizens as instruments. Different liberals ground these limits in natural rights, utility, autonomy, constitutional tradition, or the need to disperse power; they are related arguments, not one identical doctrine.',
+            citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Its economic outlook connects independence with secure property and voluntary exchange. Adam Smith’s commercial society is not reducible to a slogan that government should do nothing: public works, justice, defense, education, and the institutional conditions of exchange remain part of the historical debate. Later classical liberals likewise range from minimal-state positions to arguments for modest public goods and a limited social floor.',
+            citations: citations(['adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Classical liberalism also contains a theory of social learning. Free speech and open criticism are valuable not only as private rights but because governments, majorities, and individuals can be mistaken. Mill’s warning about social as well as state coercion and Constant’s distinction between modern civil liberty and ancient direct participation help explain why constitutional protections, private life, and plural association matter alongside elections.',
+            citations: citations(['millOnLiberty', 'constantLibertyModerns'], ['sepMill', 'sepLiberalism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Seventeenth century: rights, consent, and toleration',
+            text: 'Locke’s arguments about natural equality, consent, property, limited government, resistance to arbitrary rule, and religious toleration became important reference points for later liberal traditions. Locke was not a modern egalitarian or libertarian in every respect, so his inclusion requires historical qualification rather than retrospective identity.',
+            citations: citations(['lockeSecondTreatise', 'lockeLetterToleration'], ['sepLiberalism', 'sepReligionPolitics']),
+          },
+          {
+            period: 'Eighteenth century: commerce, constitutionalism, and public reason',
+            text: 'The Scottish Enlightenment and Atlantic constitutional debates linked commercial society, moral judgment, legal institutions, and limits on concentrated power. Smith criticized mercantilist privilege while recognizing justice and public functions; this is why “classical liberal” should not be equated automatically with a state-free economy.',
+            citations: citations(['adamSmithWealth', 'lockeSecondTreatise'], ['sepLiberalism']),
+          },
+          {
+            period: '1789–1819: revolution and modern civil liberty',
+            text: 'Revolutionary upheaval forced liberals to confront the relationship between universal rights, popular sovereignty, inherited institutions, and coercive political mobilization. Benjamin Constant’s French liberal account distinguished the private and representative liberties of modern citizens from the direct collective sovereignty associated with ancient republics, while warning that modern states could still threaten individual independence.',
+            citations: citations(['constantLibertyModerns', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertyPositiveNegative']),
+          },
+          {
+            period: 'Nineteenth century: reform, markets, and exclusion',
+            text: 'Classical liberal arguments supported free trade, parliamentary reform, civil equality, abolitionist and religious-liberty causes, and opposition to aristocratic privilege. At the same time, many historical liberals accepted restricted suffrage, colonial hierarchy, gender inequality, or racial exclusion. The tradition’s universal language and its uneven application must be studied together.',
+            citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepMill']),
+          },
+          {
+            period: 'Twentieth century: old liberalism, welfare liberalism, and libertarian revival',
+            text: 'Industrial crisis, mass democracy, war, and inequality produced competing revisions. New or welfare-state liberalism challenged the idea that private property alone secured effective liberty, while Hayekian and later libertarian currents emphasized dispersed knowledge, markets, and the dangers of centralized planning. These are internal disputes within a wider liberal genealogy, not a settled replacement of one label by another.',
+            citations: citations(['hayekKnowledge', 'keynesGeneralTheory', 'millOnLiberty'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Constitutional rights liberalism',
+                distinction: 'Emphasizes consent, equal legal protection, limited government, civil liberties, and institutional checks on arbitrary power.',
+                relation: 'Closest to the Locke–constitutional strand; it does not by itself settle the desired level of taxation or public provision.',
+                citations: citations(['lockeSecondTreatise', 'lockeLetterToleration'], ['sepLiberalism', 'sepReligionPolitics']),
+              },
+              {
+                label: 'Commercial or market liberalism',
+                distinction: 'Treats private property, free exchange, competition, and opposition to privilege as central to prosperity and independence.',
+                relation: 'Strong economic component of the archetype, but Smith’s public-function arguments prevent a simplistic “government does nothing” reading.',
+                citations: citations(['adamSmithWealth'], ['sepLiberalism']),
+              },
+              {
+                label: 'Millian liberalism',
+                distinction: 'Places individuality, free discussion, experiments in living, and protection against social as well as governmental coercion at the center.',
+                relation: 'More socially reformist than some earlier or property-centered versions, and not identical to modern libertarianism.',
+                citations: citations(['millOnLiberty', 'wollstonecraftRights'], ['sepMill', 'sepLiberalism']),
+              },
+              {
+                label: 'Classical liberal social minimum',
+                distinction: 'Allows limited public education, infrastructure, safety regulation, or a modest minimum when these protect effective liberty or common goods.',
+                relation: 'Shows why the historical category contains more state capacity than a pure laissez-faire caricature.',
+                citations: citations(['adamSmithWealth', 'hayekKnowledge'], ['sepLiberalism', 'sepLibertarianism']),
+              },
+              {
+                label: 'Libertarian and minarchist revision',
+                distinction: 'Tightens the focus on self-ownership, property, voluntary exchange, and a minimal state, with stronger objections to redistribution and regulation.',
+                relation: 'A close contemporary neighbor, but the wider classical tradition contains more public-good and reformist positions.',
+                citations: citations(['hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No state is an exact or permanent classical-liberal match. The label should be tested against constitutional rights, property and labor institutions, taxation, public goods, suffrage, empire, social equality, and actual limits on executive power rather than inferred from a low tax rate or a party name.',
+            citations: citations(['adamSmithWealth', 'millOnLiberty', 'lockeSecondTreatise'], ['sepLiberalism', 'vdem']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'John Locke',
+                role: 'theorist of natural rights, consent, limited government, and toleration',
+                caveat: 'A foundational influence whose historical views also included exclusions and assumptions that do not map neatly onto contemporary liberal equality.',
+                citations: citations(['lockeSecondTreatise', 'lockeLetterToleration'], ['sepLiberalism', 'sepReligionPolitics']),
+              },
+              {
+                name: 'Adam Smith',
+                role: 'political economist of commercial society, competition, and anti-mercantilist critique',
+                caveat: 'Smith recognized justice and public functions; he should not be reduced to a doctrine of unregulated markets.',
+                citations: citations(['adamSmithWealth'], ['sepLiberalism']),
+              },
+              {
+                name: 'John Stuart Mill',
+                role: 'liberal philosopher of individuality, free discussion, and limits on coercion',
+                caveat: 'Mill also supported social reform and did not treat private property or every market arrangement as beyond democratic revision.',
+                citations: citations(['millOnLiberty'], ['sepMill', 'sepLiberalism']),
+              },
+              {
+                name: 'Benjamin Constant',
+                role: 'French liberal theorist of modern civil liberty and representative institutions',
+                caveat: 'His account clarifies one dimension of liberal freedom but is not a complete economic or foreign-policy programme.',
+                citations: citations(['constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Nineteenth-century Britain',
+                period: 'especially the reform and free-trade debates of the nineteenth century',
+                match: 'historical partial resemblance',
+                caveat: 'Parliamentary liberty and market reform coexisted with restricted suffrage, empire, class inequality, and changing state intervention.',
+                citations: citations(['millOnLiberty', 'adamSmithWealth'], ['sepLiberalism', 'vdem']),
+              },
+              {
+                name: 'Early constitutional United States',
+                period: 'late eighteenth to nineteenth century, with major institutional changes over time',
+                match: 'constitutional and rights-language resemblance',
+                caveat: 'Slavery, Indigenous dispossession, restricted suffrage, and unequal citizenship are central contradictions, not footnotes to the comparison.',
+                citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'vdem']),
+              },
+              {
+                name: 'Modern liberal democracies with market institutions',
+                period: 'contemporary, country-specific comparison required',
+                match: 'partial institutional resemblance only',
+                caveat: 'Every current democracy combines liberal rights with welfare, regulation, national policy, and coercive institutions; no country should be presented as pure classical liberalism without case-specific evidence.',
+                citations: citations(['millOnLiberty', 'constantLibertyModerns', 'hayekKnowledge'], ['sepLiberalism', 'vdem', 'ches']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'libertarian-market', relation: 'more strongly market-oriented and anti-coercive archetype in the current catalogue' },
+              { id: 'liberal-constitutionalist', relation: 'emphasizes constitutional rights and institutional restraint, with less economic specificity' },
+              { id: 'progressive-liberal', relation: 'shares rights and pluralism but accepts a more active redistributive and regulatory state' },
+              { id: 'social-democratic', relation: 'shares democratic reform and civil liberties but gives collective provision and labor power more weight' },
+              { id: 'anarcho-capitalist', relation: 'radical anti-state market neighbor that rejects even the limited public authority accepted by most classical liberals' },
+              { id: 'conservative', relation: 'can share property and institutional restraint but differs over tradition, social change, and the basis of authority' },
+              { id: 'democratic-socialist', relation: 'shares democratic emancipation but seeks more extensive social ownership and economic power-sharing' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that classical liberal accounts can treat formally free contracts as sufficient while overlooking unequal bargaining power, inherited wealth, structural discrimination, and the social conditions required to exercise rights. They also argue that property and market power can become forms of domination when public institutions do not prevent coercion by private actors.',
+            citations: citations(['millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns historical selectivity. Liberal language about universal rights has often coexisted with colonial rule, racial hierarchy, gender exclusion, restricted suffrage, and economic dependence. The entry therefore distinguishes the normative claims made by liberal authors from the institutions and populations that actually received protection in each period.',
+            citations: citations(['wollstonecraftRights', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'sepMill']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile also has a measurement limit: a country can protect speech while violating property rights, protect markets while weakening civil liberties, or maintain constitutional forms while allowing executive abuse. Classical liberalism should be assessed across all six dimensions and against documented institutions, not assigned from a single economic or cultural indicator.',
+            citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'hayekKnowledge'], ['sepLiberalism', 'vdem', 'ches']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'adamSmithWealth', 'millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns', 'hayekKnowledge', 'nozickASU', 'keynesGeneralTheory', 'kantPerpetualPeace', 'morgenthauRealism'],
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepMill', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'vdem', 'ches', 'foreignPolicy'],
+      editorialNote: 'The entry distinguishes the broad classical-liberal family from libertarian, social-liberal, and constitutionalist neighbors. Its scores describe a didactic reference profile and do not measure every historical liberal, party, or market economy.',
+    },
+    researchGaps: [
+      'Add German-language scholarship on ordoliberalism, the Freiburg tradition, Kantian liberalism, and the post-war social market economy without treating any of them as identical to classical liberalism.',
+      'Add French-language scholarship on Constant, Tocqueville, republican liberty, empire, and the tension between universal rights and colonial practice.',
+      'Add British, Scottish, Portuguese, and Spanish scholarship on commercial society, free trade, constitutional reform, and liberal empire.',
+      'Add country-specific evidence before listing current states as examples; rights, tax systems, regulation, welfare, and executive constraints change over time.',
+      'Add specialist research on labor power, race, gender, colonialism, migration, environmental externalities, corporate concentration, public goods, and the relationship between private and state coercion.',
+    ],
+  },
 };

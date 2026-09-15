@@ -32,6 +32,14 @@ export const AUTHOR_REFERENCES = {
     kind: 'primary',
     url: 'https://www.econlib.org/library/Smith/smWN.html',
   },
+  constantLibertyModerns: {
+    author: 'Benjamin Constant',
+    work: 'The Liberty of Ancients Compared with that of Moderns',
+    year: '1819',
+    kind: 'primary',
+    context: 'A French liberal primary text used to distinguish modern individual and civil liberty from direct political participation in the ancient model; it is not treated as a complete economic programme.',
+    url: 'https://oll.libertyfund.org/titles/constant-the-liberty-of-ancients-compared-with-that-of-moderns-1819?html=true',
+  },
   hayekKnowledge: {
     author: 'Friedrich A. Hayek',
     work: 'The Use of Knowledge in Society',
