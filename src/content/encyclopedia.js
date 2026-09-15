@@ -1619,13 +1619,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
     timeScope: 'Roots in nineteenth-century socialist and labor movements; reformist theory at the turn of the twentieth century; major welfare-state development after 1945; later revisions under globalization and post-industrial politics.',
     geographicScope: 'Transnational tradition with important German, British, Nordic, continental European, and other democratic variants; welfare institutions differ substantially by country.',
     summary: 'A democratic reform tradition seeking to reduce class inequality and insecurity through elections, trade-union power, social insurance, public services, progressive taxation, and regulated markets. Modern social democracy generally preserves a predominantly private mixed economy while treating social rights and collective bargaining as conditions of democratic citizenship.',
-    summaryCitations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'sepLiberalism', 'oecdWelfareModels']),
+    summaryCitations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'sepLiberalism', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics']),
     dimensionInterpretations: {
       economic: {
         score: 58,
         label: 'Strongly social-democratic / redistributive',
         explanation: 'The profile supports substantial redistribution, universal or broad social provision, labor rights, collective bargaining, and public regulation, while usually retaining private firms and market allocation. It is collectivist in social protection and economic power, not necessarily in formal ownership of every productive asset.',
-        citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels']),
+        citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'bpbSocialMarketEconomy', 'bpbWelfareModels']),
       },
       social: {
         score: 62,
@@ -1637,7 +1637,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -26,
         label: 'Democratic and administratively active',
         explanation: 'The state is expected to provide services, regulate markets, and coordinate social insurance, but elections, civil liberties, independent unions, courts, and organized dissent remain essential. This is a high-capacity democratic state, not a party-state or a rejection of public authority.',
-        citations: citations(['bernsteinEvolutionarySocialism', 'lockeSecondTreatise', 'millOnLiberty'], ['sepSocialism', 'vdem', 'oecdWelfareModels']),
+        citations: citations(['bernsteinEvolutionarySocialism', 'lockeSecondTreatise', 'millOnLiberty'], ['sepSocialism', 'vdem', 'oecdWelfareModels', 'bpbGermanSocialState']),
       },
       identity: {
         score: 34,
@@ -1703,22 +1703,27 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             period: 'Late nineteenth century: labor movements and parliamentary socialism',
             text: 'Trade unions, socialist parties, mass suffrage, and industrial conflict created the organizational base for social democracy. Reformers debated whether capitalism would collapse, whether class conflict could be institutionalized, and whether democratic reforms were a route to or a substitute for socialism.',
-            citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism']),
+            citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism', 'fesHistorySocialDemocracy']),
           },
           {
             period: '1899 onward: Bernstein and evolutionary socialism',
-            text: 'Bernstein challenged revolutionary predictions and argued that democratic organization, unions, and gradual reforms could advance social emancipation. His revisionism became a foundational reference point for reformist social democracy, while revolutionary and democratic socialist critics disputed its conclusions.',
-            citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism']),
+            text: 'Bernstein challenged revolutionary predictions and argued that democratic organization, unions, and gradual reforms could advance social emancipation. His revisionism became a foundational reference point for reformist social democracy, while revolutionary and democratic socialist critics disputed its conclusions. The German case also shows why “social democracy” should not be reduced to one thinker: the SPD contained competing positions on programme, tactics, war, and the relationship between parliamentary work and socialist transformation.',
+            citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism', 'fesHistorySocialDemocracy']),
           },
           {
             period: '1930s–1950s: Keynesian policy and welfare-state construction',
             text: 'The Great Depression, mass unemployment, war mobilization, and post-war reconstruction strengthened arguments for macroeconomic management, social insurance, public services, and full employment. Post-war welfare states differed in institutional design and were shaped by conservative, liberal, Christian-democratic, and labor parties, not by social democracy alone.',
-            citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels']),
+            citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels', 'bpbGermanSocialState', 'bpbWelfareModels']),
+          },
+          {
+            period: '1959: Godesberg and the German programme debate',
+            text: 'The SPD’s Godesberg Programme publicly marked a major post-war reorientation toward democratic pluralism, individual freedom, social justice, and a regulated market economy rather than an orthodox Marxist ownership programme. This did not make the SPD identical to ordoliberal or Christian-democratic traditions: the social market economy also drew on a distinct theory of competitive order, and German welfare institutions retained a historically specific insurance and employment structure. The episode is best read as a boundary-crossing reformulation within a wider post-war settlement.',
+            citations: citations(['bernsteinEvolutionarySocialism'], ['bpbSpdProgrammatics', 'ghdiGodesberg', 'bpbSocialMarketEconomy', 'bpbGermanSocialState', 'bpbWelfareModels']),
           },
           {
             period: '1950s–1970s: post-war social-democratic settlement',
             text: 'Many European systems combined collective bargaining, rising wages, public services, progressive taxation, and economic growth. The settlement expanded social citizenship but remained nationally bounded and could exclude migrants, colonies, women, racial minorities, disabled people, or informal workers from its fullest benefits.',
-            citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'oecdWelfareModels']),
+            citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'oecdWelfareModels', 'bpbWelfareModels']),
           },
           {
             period: '1970s–present: crisis, revision, and pluralization',
@@ -1745,6 +1750,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Combines mixed economies, collective bargaining, universal or broad social services, and macroeconomic management.',
                 relation: 'Closest fit to the modern archetype, though welfare regimes vary widely across countries.',
                 citations: citations(['keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels']),
+              },
+              {
+                label: 'German social-market social democracy',
+                distinction: 'Combines electoral democracy, organized labor, social insurance, public regulation, and a predominantly private market economy; it differs from both laissez-faire and state socialism.',
+                relation: 'A historically important German variant and boundary case: the surrounding social-market order also drew on ordoliberal and Christian-democratic ideas, not the SPD alone.',
+                citations: citations(['bernsteinEvolutionarySocialism'], ['bpbSpdProgrammatics', 'ghdiGodesberg', 'bpbSocialMarketEconomy', 'bpbGermanSocialState', 'bpbWelfareModels']),
               },
               {
                 label: 'Democratic socialism',
@@ -1824,6 +1835,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels']),
               },
               {
+                name: 'Federal Republic of Germany’s post-war social-market welfare order',
+                period: 'especially 1949–1989',
+                match: 'partial historical comparator and boundary case',
+                caveat: 'The Federal Republic’s welfare state and social market were built through cross-party, employer, labor, Christian-democratic, liberal, and ordoliberal influences; they should not be attributed to social democracy alone or treated as a single fixed model.',
+                citations: citations(['bernsteinEvolutionarySocialism'], ['bpbSpdProgrammatics', 'ghdiGodesberg', 'bpbSocialMarketEconomy', 'bpbGermanSocialState', 'bpbWelfareModels']),
+              },
+              {
                 name: 'Contemporary social-democratic parties and coalitions',
                 period: 'present',
                 match: 'movement-level comparison only',
@@ -1868,6 +1886,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Comparative labels can also conceal institutional differences. The German insurance-based tradition, the Nordic universalist tradition, and liberal or targeted welfare states may all be called social-democratic in ordinary discussion, but they distribute risk, organize labor, regulate markets, and define social citizenship differently. A didactic profile should expose these dimensions instead of treating one country as the standard for the whole family.',
+            citations: citations(['bernsteinEvolutionarySocialism'], ['bpbGermanSocialState', 'bpbWelfareModels', 'oecdWelfareModels']),
+          },
+          {
+            type: 'paragraph',
             text: 'Social-democratic success also depends on conditions that are not fully controlled by national policy: economic growth, international trade, migration, demographic change, technological shifts, ecological limits, and the bargaining power of organized labor. The profile should therefore be read as an institutional project with changing constraints, not as a fixed list of benefits.',
             citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels', 'foreignPolicy']),
           },
@@ -1876,11 +1899,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty', 'wollstonecraftRights', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'morgenthauRealism', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
+      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'bpbGermanSocialState', 'bpbWelfareModels', 'bpbSocialMarketEconomy', 'ghdiGodesberg', 'vdem', 'ches', 'foreignPolicy'],
       editorialNote: 'The entry distinguishes reformist socialism, welfare-state social democracy, social liberalism, and democratic socialism. Its scores describe a didactic modern social-democratic archetype, not every party or welfare state carrying the label.',
     },
     researchGaps: [
-      'Add German-language scholarship on Bernstein, the SPD, ordoliberal and social-market debates, and post-war welfare institutions.',
+      'Expand German-language scholarship on Bernstein, the SPD, ordoliberal and social-market debates, and post-war welfare institutions, including internal dissent, East German trajectories, and welfare-state transformation after reunification.',
       'Add Swedish, Norwegian, Danish, French, and Portuguese scholarship on labor movements, universalism, social citizenship, and the Nordic and continental welfare variants.',
       'Add country-specific evidence before listing current states or parties as examples; welfare models and party programmes change over time.',
       'Add specialist research on colonial legacies, migration, gender, unpaid care, disability, ecological transition, automation, and the global constraints on national redistribution.',
