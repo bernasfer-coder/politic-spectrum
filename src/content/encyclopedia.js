@@ -826,4 +826,302 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add country-specific data before showing contemporary states as examples; current market openness and civil-liberties indicators are not sufficient for an exact six-axis match.',
     ],
   },
+  'progressive-liberal': {
+    id: 'progressive-liberal',
+    title: 'Progressive liberal',
+    canonicalLabel: 'Progressive liberal',
+    aliases: [
+      'modern liberalism',
+      'social liberalism',
+      'welfare liberalism',
+      'reform liberalism',
+    ],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This is a broad educational profile combining liberal rights and pluralist institutions with progressive social reform and an active mixed-economy state. It is not a precise synonym for every left-of-center party, U.S. liberal, social democrat, or progressive movement.',
+    timeScope: 'Intellectual roots in eighteenth- and nineteenth-century liberal and feminist thought; modern forms developed through new liberalism, Keynesian policy, civil-rights movements, and post-war democratic institutions.',
+    geographicScope: 'Transnational profile with major British, European, North American, and internationalist strands; country matches are necessarily partial and period-specific.',
+    summary: 'A liberal-democratic profile that combines civil and political rights, personal autonomy, social inclusion, and equal citizenship with public action to reduce deprivation, regulate markets, and expand practical opportunity. It accepts an active state but keeps that state accountable to elections, courts, rights, and pluralist institutions.',
+    summaryCitations: citations(
+      ['millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory', 'kantPerpetualPeace'],
+      ['sepLiberalism', 'vdem', 'sepReligionPolitics'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 32,
+        label: 'Moderately collectivist / social-investment oriented',
+        explanation: 'Markets and private ownership remain important, but taxation, regulation, public services, labor protections, and redistribution are accepted as tools for equal opportunity and economic security. This is not a commitment to state ownership or comprehensive planning.',
+        citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepLiberalism']),
+      },
+      social: {
+        score: 78,
+        label: 'Strongly progressive',
+        explanation: 'The profile treats personal autonomy, equal citizenship, anti-discrimination, gender equality, and revision of inherited social norms as legitimate public concerns. It can still differ internally over paternalism, speech boundaries, family policy, and the pace of cultural change.',
+        citations: citations(['wollstonecraftRights', 'millOnLiberty'], ['sepLiberalism']),
+      },
+      authority: {
+        score: -36,
+        label: 'Liberal and institutionally constrained',
+        explanation: 'Government is active in welfare, regulation, and public goods, but its power is constrained by elections, rights, courts, free expression, and independent associations. The profile distinguishes legitimate public capacity from unchecked executive or bureaucratic domination.',
+        citations: citations(['millOnLiberty', 'lockeSecondTreatise'], ['vdem', 'sepLiberalism']),
+      },
+      identity: {
+        score: 54,
+        label: 'Inclusive internationalist',
+        explanation: 'Political membership is centered on equal citizenship, pluralism, and cooperation across borders rather than inherited ethnicity or compulsory cultural uniformity. National institutions can remain meaningful, but they are judged by inclusion and rights rather than ethnic homogeneity.',
+        citations: citations(['kantPerpetualPeace', 'andersonImaginedCommunities'], ['sepLiberalism']),
+      },
+      foreign: {
+        score: -28,
+        label: 'Diplomatic with limited collective action',
+        explanation: 'Diplomacy, international law, alliances, and cooperation are preferred, while sanctions or limited force may be justified for collective security or the protection of basic rights. This is neither pacifism nor a licence for open-ended humanitarian intervention.',
+        citations: citations(['kantPerpetualPeace', 'morgenthauRealism'], ['foreignPolicy']),
+      },
+      religion: {
+        score: 65,
+        label: 'Strongly secular and pluralist',
+        explanation: 'Public law is justified through equal citizenship and constitutional principles rather than one religious authority, while religious belief and practice remain protected. Progressive liberalism can include religious citizens and religious social movements without giving a faith coercive control over the state.',
+        citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepLiberalism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: '“Progressive liberal” names a family of positions that treats individual rights and constitutional democracy as compatible with substantial public action. It seeks to make freedom more than a formal permission by addressing poverty, discrimination, unequal power, education, health, and access to social and political participation.',
+            citations: citations(['millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile is deliberately between classical libertarianism and democratic socialism. It generally preserves a mixed economy and private enterprise, but argues that markets need democratic rules and social safeguards. It also differs from authoritarian progressivism: rights, dissent, elections, and institutional limits are not optional decorations.',
+            citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The social principle is equal civic standing combined with room for people to choose their own lives. Progressive liberalism supports legal and political reform when inherited institutions exclude people or reproduce unequal status. Wollstonecraft’s argument for women’s rational education and Mill’s defense of individuality illustrate two important intellectual strands, although neither writer should be treated as a complete modern progressive liberal.',
+            citations: citations(['wollstonecraftRights', 'millOnLiberty'], ['sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The economic principle is not the abolition of markets. It is the view that market outcomes and private power can undermine equal freedom, security, or democratic participation, so public institutions may regulate exchange and provide collective goods. Keynesian arguments supplied one influential case for using public policy to stabilize employment and demand; they do not settle every question about welfare or ownership.',
+            citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The authority principle is an active but limited state. Regulation, taxation, welfare, and public services are legitimate only within a framework of accountability, rights, judicial review, transparent administration, and open contestation. The profile therefore evaluates not only what government does, but whether citizens can challenge and replace those who exercise power.',
+            citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['vdem', 'sepLiberalism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: '1790s: liberal rights and feminist reform',
+            text: 'Wollstonecraft connected universal reason, education, civic independence, and women’s rights, exposing how a formal language of liberty could coexist with gender hierarchy. Her work is a major precursor to progressive liberalism’s expansion of equal citizenship.',
+            citations: citations(['wollstonecraftRights'], ['sepLiberalism']),
+          },
+          {
+            period: '1850s–1870s: Mill and social freedom',
+            text: 'Mill defended freedom of thought, discussion, individuality, and voluntary association while also recognizing that social pressure can be coercive. His political economy left room for debates over whether private property is always required by liberty, helping connect classical and newer liberal arguments.',
+            citations: citations(['millOnLiberty'], ['sepLiberalism']),
+          },
+          {
+            period: 'Late nineteenth–early twentieth centuries: new liberalism',
+            text: 'Liberal thinkers increasingly questioned whether formal rights were enough when poverty, industrial dependence, and unequal property gave some people much less practical freedom than others. New or welfare liberalism expanded the legitimate role of democratic government while retaining liberal rights and constitutional limits.',
+            citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism', 'vdem']),
+          },
+          {
+            period: '1930s–1950s: economic stabilization and democratic reconstruction',
+            text: 'The Great Depression, mass unemployment, and the experience of war strengthened arguments for social insurance, macroeconomic management, public services, and international institutions. These reforms produced different national models and should not be reduced to one universally agreed progressive programme.',
+            citations: citations(['keynesGeneralTheory', 'kantPerpetualPeace'], ['sepLiberalism', 'foreignPolicy']),
+          },
+          {
+            period: '1960s–present: rights expansion and pluralist reform',
+            text: 'Civil-rights, feminist, anti-colonial, disability, LGBTQ+, and other equality movements broadened the meaning of liberal citizenship. Contemporary progressive liberalism remains internally divided over economic inequality, identity, speech, policing, migration, environmental regulation, and the limits of international intervention.',
+            citations: citations(['wollstonecraftRights', 'millOnLiberty', 'kantPerpetualPeace'], ['sepLiberalism', 'vdem']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Social liberalism / new liberalism',
+                distinction: 'Combines civil liberties and private enterprise with public services, social insurance, regulation, and equal opportunity.',
+                relation: 'Closest named family to this profile; its economic and social range is still broad.',
+                citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism']),
+              },
+              {
+                label: 'Progressive constitutional liberalism',
+                distinction: 'Emphasizes rights, courts, representative institutions, anti-discrimination, and limits on executive power.',
+                relation: 'Closest institutional expression; it can be economically more market-oriented or more redistributive.',
+                citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['vdem', 'sepLiberalism']),
+              },
+              {
+                label: 'Social democracy',
+                distinction: 'Usually accepts a stronger welfare state, labor organization, and redistribution, with its own socialist or reformist history.',
+                relation: 'Overlaps heavily on social protection but can move further toward collective provision and labor power.',
+                citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepLiberalism', 'sepSocialism']),
+              },
+              {
+                label: 'Democratic socialism',
+                distinction: 'Seeks more substantial social or democratic ownership and may regard capitalism itself as the central structural problem.',
+                relation: 'Shares equality and democratic commitments but differs on the long-term role of private ownership and markets.',
+                citations: citations(['marxEngelsManifesto', 'millOnLiberty'], ['sepLiberalism', 'sepSocialism']),
+              },
+              {
+                label: 'Third-way and market-progressive reform',
+                distinction: 'Retains market institutions while combining targeted redistribution, public investment, social inclusion, and international cooperation.',
+                relation: 'A contemporary policy variant that may be more market-friendly and less redistributive than the ideal profile.',
+                citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepLiberalism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No country or politician is an exact match for this six-dimensional profile. Examples below identify documented traditions or partial institutional expressions; they are not permanent labels for countries, parties, or individuals.',
+            citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism', 'vdem']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Mary Wollstonecraft',
+                role: 'precursor of liberal feminism and equal civic education',
+                caveat: 'Her eighteenth-century arguments should be read in their own context, not projected as a complete modern programme.',
+                citations: citations(['wollstonecraftRights'], ['sepLiberalism']),
+              },
+              {
+                name: 'John Stuart Mill',
+                role: 'defender of individuality, free discussion, and social reform',
+                caveat: 'Mill combined strong liberty arguments with utilitarian reasoning and positions that do not map perfectly onto current progressive politics.',
+                citations: citations(['millOnLiberty'], ['sepLiberalism']),
+              },
+              {
+                name: 'John Maynard Keynes',
+                role: 'theorist of macroeconomic stabilization and active public policy',
+                caveat: 'Keynesian economics does not by itself determine a position on social values, civil rights, religion, or foreign policy.',
+                citations: citations(['keynesGeneralTheory'], ['sepLiberalism']),
+              },
+              {
+                name: 'Immanuel Kant',
+                role: 'influence on universal rights and international peace',
+                caveat: 'Kant’s eighteenth-century philosophy is a source of concepts, not a direct contemporary party profile.',
+                citations: citations(['kantPerpetualPeace'], ['foreignPolicy']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Progressive Era United States',
+                period: 'late nineteenth–early twentieth centuries',
+                match: 'partial reform-liberal resemblance',
+                caveat: 'The era combined regulation and democratic reform with exclusion, imperialism, racial hierarchy, and incomplete citizenship; it is not an uncomplicated progressive model.',
+                citations: citations(['millOnLiberty', 'wollstonecraftRights'], ['sepLiberalism']),
+              },
+              {
+                name: 'New Deal and post-war liberal reform',
+                period: '1930s–1960s',
+                match: 'partial economic and institutional resemblance',
+                caveat: 'Welfare and public investment expanded, but the United States retained significant racial exclusion, unequal rights, private economic power, and interventionist foreign policy.',
+                citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepLiberalism', 'vdem']),
+              },
+              {
+                name: 'Post-war Western European social liberalism',
+                period: '1945–present, varying by country and period',
+                match: 'partial rights-and-welfare resemblance',
+                caveat: 'European liberal democracies differ on labor power, welfare generosity, markets, migration, religion, and foreign policy; “Europe” is not one ideological unit.',
+                citations: citations(['keynesGeneralTheory', 'kantPerpetualPeace'], ['sepLiberalism', 'vdem', 'foreignPolicy']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'social-liberalism', relation: 'closest taxonomy label and primary family' },
+              { id: 'classical-liberalism', relation: 'shares rights and markets but usually accepts less public redistribution' },
+              { id: 'social-democracy', relation: 'overlaps on welfare and equality, with a stronger reform-socialist lineage' },
+              { id: 'democratic-socialism', relation: 'shares democratic egalitarianism but usually seeks stronger social ownership' },
+              { id: 'liberal-constitutionalist', relation: 'shares rights, pluralism, and institutional constraints' },
+              { id: 'libertarian-market', relation: 'shares personal liberty and markets but differs on the scope of public action' },
+              { id: 'feminist', relation: 'overlap on gender equality, but feminism contains many non-liberal traditions' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that progressive liberalism can promise both personal autonomy and extensive public management without resolving when the state’s interventions become paternalistic, bureaucratic, or coercive. Supporters reply that formally equal rights are insufficient when poverty, discrimination, or private domination leave people without meaningful choices.',
+            citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns economic trade-offs. Redistribution and regulation may reduce deprivation and stabilize society, but can also create dependency, administrative overreach, fiscal pressures, or unintended effects on innovation and employment. The profile does not prescribe one tax rate, welfare model, or market regulation package.',
+            citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Progressive language can also conceal disagreement over the boundaries of pluralism. Anti-discrimination and equal citizenship may conflict with claims of religious autonomy, speech, association, or local self-government. The entry therefore treats secular public law as a constitutional settlement, not as a conclusion that religious citizens or traditions are politically irrelevant.',
+            citations: citations(['lockeLetterToleration', 'spinozaPolitical', 'millOnLiberty'], ['sepReligionPolitics', 'sepLiberalism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: [
+        'millOnLiberty',
+        'wollstonecraftRights',
+        'keynesGeneralTheory',
+        'kantPerpetualPeace',
+        'lockeSecondTreatise',
+        'lockeLetterToleration',
+        'spinozaPolitical',
+        'morgenthauRealism',
+        'bernsteinEvolutionarySocialism',
+        'marxEngelsManifesto',
+      ],
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy'],
+      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual.',
+    },
+    researchGaps: [
+      'Add French-language sources on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality.',
+      'Add German-language scholarship on new liberalism, the social market, post-war constitutional democracy, and debates over welfare-state authority.',
+      'Add country-specific evidence for the Progressive Era, New Deal, post-war Europe, and contemporary liberal democracies rather than relying on broad period labels.',
+      'Add specialist research on colonialism, race, migration, disability, LGBTQ+ rights, environmental policy, and the tensions between universalism and pluralism.',
+    ],
+  },
 };
