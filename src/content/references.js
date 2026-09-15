@@ -41,6 +41,22 @@ export const AUTHOR_REFERENCES = {
     context: 'A French socialist account linking democracy, republican citizenship, and social transformation; the online English text is a translation and is cited through a link rather than reproduced.',
     url: 'https://www.marxists.org/archive/jaures/1901/history/judge-revolutionaries.htm',
   },
+  kropotkinMutualAid: {
+    author: 'Peter Kropotkin',
+    work: 'Mutual Aid: A Factor of Evolution',
+    year: '1902',
+    kind: 'primary',
+    context: 'An anarchist account of cooperation and mutual aid used to explain the positive institutional side of anti-authoritarian politics; it is not treated as a complete empirical theory of all human conduct.',
+    url: 'https://www.marxists.org/reference/archive/kropotkin-peter/1902/mutual-aid/index.htm',
+  },
+  bookchinLibertarianMunicipalism: {
+    author: 'Murray Bookchin',
+    work: 'The Politics of Social Ecology: Libertarian Municipalism',
+    year: '1999',
+    kind: 'primary',
+    context: 'A contemporary communalist proposal for directly democratic municipalities and confederations; it is distinguished from nineteenth-century anarcho-communism rather than treated as identical to it.',
+    url: 'https://social-ecology.org/wp/1999/01/the-politics-of-social-ecology-libertarian-municipalism/',
+  },
   adamSmithWealth: {
     author: 'Adam Smith',
     work: 'The Wealth of Nations',

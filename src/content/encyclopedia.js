@@ -2271,4 +2271,302 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist research on gender, race, migration, disability, colonial legacies, ecology, technology, international trade, military alliances, and the governance of large-scale economic planning.',
     ],
   },
+  'anarchist-communalist': {
+    id: 'anarchist-communalist',
+    title: 'Anarchist communalist',
+    canonicalLabel: 'Anarchist communalist',
+    aliases: ['anarchist communism', 'libertarian communism', 'commune of communes', 'libertarian municipalism'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile combines anti-authoritarian anarchist politics with common ownership, mutual aid, federated communes, and direct or participatory self-government. The aliases are historically related but not interchangeable: anarcho-communism, anarcho-syndicalism, mutualism, and Bookchin’s libertarian municipalism make different claims about property, organization, markets, ecology, and political scale.',
+    timeScope: 'Nineteenth-century anarchist and communist debates; practical experiments during the Paris Commune, Russian Civil War, and Spanish Revolution; later communalist and social-ecological revisions from the late twentieth century onward.',
+    geographicScope: 'Transnational tradition with important Russian, Ukrainian, French, Spanish, Italian, German, British, and North American debates; practical experiments have been local, temporary, contested, and shaped by war.',
+    summary: 'An anti-authoritarian communist profile that seeks to replace centralized state power and private domination with common ownership, mutual aid, federated communes, workplace or community self-management, and direct democratic coordination. Its defining challenge is to combine freedom from rulers with reliable cooperation at scale without recreating a state, party hierarchy, or informal elite.',
+    summaryCitations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism', 'ostromGoverningCommons'], ['sepAnarchism', 'socialEcologyMunicipalism', 'sepSocialism']),
+    dimensionInterpretations: {
+      economic: {
+        score: 82,
+        label: 'Strongly communal and anti-capitalist',
+        explanation: 'Productive resources are to be held in common or controlled by workers and communities, with mutual aid and free association replacing private accumulation and wage dependence. Different currents disagree over distribution, exchange, labor vouchers, markets, and the degree of planning; none of those mechanisms alone defines the whole tradition.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'ostromGoverningCommons'], ['sepAnarchism', 'sepSocialism']),
+      },
+      social: {
+        score: 55,
+        label: 'Emancipatory and anti-hierarchical',
+        explanation: 'The profile opposes domination based on class, inherited status, patriarchy, racism, colonialism, and imposed moral authority, and favors voluntary association and mutual aid. Historical movements nevertheless contained exclusions and internal hierarchies, so anti-authoritarian ideals should not be confused with automatically inclusive practice.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'millOnLiberty'], ['sepAnarchism', 'sepSocialism']),
+      },
+      authority: {
+        score: -92,
+        label: 'Radically anti-state',
+        explanation: 'A territorial monopoly of coercion is treated as a source of domination rather than the necessary foundation of social order. Federations, councils, assemblies, mandated delegates, restorative practices, and voluntary coordination are preferred, but the difficult boundary between legitimate collective rules and coercive hierarchy remains an open institutional problem.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism', 'vdem']),
+      },
+      identity: {
+        score: 45,
+        label: 'Internationalist with local belonging',
+        explanation: 'Solidarity across borders and opposition to nationalism, imperialism, and colonial domination are emphasized, while communes and federations remain rooted in particular places and relationships. Local autonomy is therefore compatible with internationalism, but not with a single universal national identity.',
+        citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism', 'andersonImaginedCommunities'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+      },
+      foreign: {
+        score: 45,
+        label: 'Non-interventionist and anti-imperial',
+        explanation: 'Standing armies, imperial expansion, and state diplomacy backed by permanent coercion are rejected in favor of solidarity, non-domination, and local self-defense. Historical anarchist movements have fought in wars and organized armed defense, so the profile is anti-militarist and anti-imperial rather than simply pacifist.',
+        citations: citations(['bakuninStatism', 'kantPerpetualPeace', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'foreignPolicy']),
+      },
+      religion: {
+        score: 65,
+        label: 'Secular and anti-clerical, with voluntary pluralism',
+        explanation: 'No church or religious authority should control public law or impose a sacred hierarchy. Many historical anarchists criticized organized religion, while voluntary faith communities can remain compatible with free association if they do not exercise coercive political authority.',
+        citations: citations(['bakuninStatism', 'millOnLiberty', 'spinozaPolitical'], ['sepAnarchism', 'sepReligionPolitics']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Anarchist communalism is a positive as well as negative political idea. It criticizes the state, capitalism, class rule, patriarchy, imperialism, and other forms of domination, but it also proposes cooperation through mutual aid, common resources, voluntary association, federated communes, and direct participation. “Anarchy” in this context does not mean the absence of all rules; it means that no permanent ruling authority should stand above the people who live under the rules.',
+            citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The profile is narrower than anarchism as a whole. It highlights currents that combine anti-state authority with communal or communist economics and local self-government. It is not anarcho-capitalism, which keeps private property and markets central; it is not every form of anarcho-communism; and it should not treat Bookchin’s later ecological municipalism as identical to the nineteenth-century movements from which it drew.',
+            citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The economic proposal is common access and democratic control rather than private ownership of productive resources or command by a centralized state. Workplaces, land, housing, and essential services may be managed by federated associations, communes, cooperatives, or councils. Kropotkin’s mutual-aid argument supplies one account of cooperation, while Bakunin’s collectivist approach and later communalist proposals show that distribution and coordination remain contested.',
+            citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Authority is reorganized rather than simply wished away. Assemblies may make decisions, delegates may carry revocable mandates, federations may coordinate across communes, and norms may be enforced through social or restorative practices. These arrangements can be more accountable than a distant state, but they still need procedures for disagreement, expertise, minority protection, conflict resolution, and defense against internal or external domination.',
+            citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism', 'ostromGoverningCommons'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Community is not the same as compulsory cultural unity. The profile favors plural association, free experimentation, and solidarity among different communities, but local majorities can also become oppressive. A genuinely anarchist communal arrangement therefore requires safeguards against patriarchy, racism, ableism, exclusion, informal leadership, and the conversion of consensus into pressure to conform.',
+            citations: citations(['kropotkinMutualAid', 'millOnLiberty', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'sepSocialism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Nineteenth century: federalism, collectivism, and anarchist communism',
+            text: 'Bakunin and other anarchists criticized both the existing state and the idea that a centralized revolutionary party could emancipate society by ruling on its behalf. Debates within the wider socialist movement concerned collective ownership, workers’ control, federation, organization, violence, and the relationship between individual freedom and communal solidarity.',
+            citations: citations(['bakuninStatism', 'marxEngelsManifesto'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            period: '1871: the Paris Commune as a contested reference',
+            text: 'The Paris Commune became a powerful reference for municipal self-government, recallable delegates, and the possibility of replacing centralized administration with local federation. It was not uniformly anarchist or communist, and its short life under military attack makes it evidence of an experiment rather than proof that a complete stateless society had been established.',
+            citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+          },
+          {
+            period: '1890s–1910s: Kropotkin and mutual aid',
+            text: 'Kropotkin developed an anarchist communist account in which cooperation and mutual aid could support human flourishing without a centralized sovereign. His argument was a political and ethical intervention as well as a claim about social evolution; it should not be read as eliminating conflict, scarcity, competition, or the need for institutions.',
+            citations: citations(['kropotkinMutualAid'], ['sepAnarchism']),
+          },
+          {
+            period: '1917–1921: the Makhnovist movement in Ukraine',
+            text: 'The Makhnovist movement emerged amid revolution and civil war in Ukraine and is studied as a rural anarchist experiment involving peasant self-organization, military struggle, and attempts at autonomous administration. Its territory, institutions, social composition, and relationship to Ukrainian nationalism and Bolshevik power remain contested; war conditions severely limit what can be inferred about durable civilian governance.',
+            citations: citations(['bakuninStatism'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+          },
+          {
+            period: '1936–1939: revolutionary Catalonia and the Spanish Civil War',
+            text: 'In parts of Republican Spain, anarchist unions and collectives reorganized workplaces, agriculture, services, and neighborhood life while fighting a civil war. The experiment involved genuine self-management and popular mobilization but also emergency coercion, competing political forces, uneven participation, and military pressure. It is therefore a documented partial experiment, not a pure model.',
+            citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism']),
+          },
+          {
+            period: 'Late twentieth century to the present: communalism and social ecology',
+            text: 'Bookchin’s libertarian municipalism reworked anarchist and communalist themes into a proposal for directly democratic municipalities confederated across regions, with ecology and the critique of hierarchy at its center. This later theory broadens the tradition beyond class ownership and offers a strategy for building institutions through local politics, but it remains a proposal rather than evidence that a stateless communal order already exists.',
+            citations: citations(['bookchinLibertarianMunicipalism', 'ostromGoverningCommons'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Anarcho-communism',
+                distinction: 'Seeks common ownership and free association while rejecting a centralized transitional state and permanent political hierarchy.',
+                relation: 'The closest economic and anti-state neighbor, although this entry gives extra attention to communes, federations, and practical governance.',
+                citations: citations(['kropotkinMutualAid', 'bakuninStatism'], ['sepAnarchism', 'sepSocialism']),
+              },
+              {
+                label: 'Bakuninist collectivism',
+                distinction: 'Emphasizes collective ownership, workers’ association, revolutionary federalism, and distribution connected to work or social contribution.',
+                relation: 'A major nineteenth-century foundation, but later anarcho-communists disputed its distribution mechanisms and organizational assumptions.',
+                citations: citations(['bakuninStatism'], ['sepAnarchism']),
+              },
+              {
+                label: 'Anarcho-syndicalism',
+                distinction: 'Uses labor unions, direct action, and workplace organization as the main route to social transformation and worker self-management.',
+                relation: 'Overlaps strongly on anti-state economics but places the revolutionary union at the center rather than the commune alone.',
+                citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'sepSocialism']),
+              },
+              {
+                label: 'Libertarian municipalism / communalism',
+                distinction: 'Builds direct democracy through municipalities and confederations, with social ecology and the abolition of hierarchy as organizing themes.',
+                relation: 'A later revision that develops the commune as a political strategy; it should not be projected backward onto every historical anarchist.',
+                citations: citations(['bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+              },
+              {
+                label: 'Mutualism',
+                distinction: 'Favors reciprocal association and decentralized exchange, often retaining forms of possession, credit, or markets rather than full common ownership.',
+                relation: 'A close anti-authoritarian economic neighbor, but less collectivist than this profile’s main emphasis.',
+                citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism']),
+              },
+              {
+                label: 'Anarcho-capitalism',
+                distinction: 'Rejects the state but makes private property, contractual exchange, and market provision central.',
+                relation: 'Shares anti-state authority but is the opposite economic pole from anarchist communalism.',
+                citations: citations(['bakuninStatism', 'millOnLiberty'], ['sepAnarchism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No sovereign state is an exact anarchist-communalist match. The strongest historical examples were local, temporary, internally diverse, and exposed to war or repression. Contemporary autonomous communities may borrow practices from the tradition while still existing inside states and should not be labeled complete equivalents.',
+            citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism', 'vdem']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Mikhail Bakunin',
+                role: 'anarchist theorist of federalism, collective ownership, and opposition to centralized revolutionary authority',
+                caveat: 'His collectivist and revolutionary arguments are one strand of anarchism and do not settle later debates over communal distribution or organization.',
+                citations: citations(['bakuninStatism'], ['sepAnarchism']),
+              },
+              {
+                name: 'Peter Kropotkin',
+                role: 'anarchist communist theorist of mutual aid, decentralized association, and common access',
+                caveat: 'Mutual aid is a normative and explanatory argument, not evidence that all communities are naturally harmonious or free of conflict.',
+                citations: citations(['kropotkinMutualAid'], ['sepAnarchism']),
+              },
+              {
+                name: 'Murray Bookchin',
+                role: 'social ecologist and theorist of libertarian municipalism',
+                caveat: 'Bookchin’s communalism is a later ecological and municipalist revision, not a synonym for nineteenth-century anarcho-communism.',
+                citations: citations(['bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+              },
+              {
+                name: 'Elinor Ostrom',
+                role: 'institutional scholar of community governance and polycentric commons',
+                caveat: 'Ostrom did not provide a general anarchist programme; her work is included as comparative evidence that common resources can be governed through varied local institutions.',
+                citations: citations(['ostromGoverningCommons'], ['sepAnarchism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Paris Commune',
+                period: 'Paris, 1871',
+                match: 'municipal self-government reference',
+                caveat: 'The Commune was politically diverse, brief, and defeated; it was not uniformly anarchist or communist.',
+                citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+              },
+              {
+                name: 'Free Territory / Makhnovist movement',
+                period: 'Ukraine, 1918–1921',
+                match: 'rural anarchist and peasant self-organization reference',
+                caveat: 'The movement operated under civil-war conditions, its social and political institutions were contested, and it was ultimately defeated by superior state forces.',
+                citations: citations(['bakuninStatism'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+              },
+              {
+                name: 'Revolutionary Catalonia',
+                period: 'Catalonia and parts of Republican Spain, 1936–1939',
+                match: 'workplace and community collectivization reference',
+                caveat: 'Collectives varied by place and sector and operated amid civil war, competing political authorities, and military scarcity; the case is not a pure or stable stateless model.',
+                citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism']),
+              },
+              {
+                name: 'Autonomous communes and municipalist projects',
+                period: 'contemporary, case-specific research required',
+                match: 'practice-level comparison only',
+                caveat: 'Local autonomy, cooperatives, commons, and assemblies may use anarchist practices while remaining legally and materially dependent on states; each project requires its own evidence.',
+                citations: citations(['bookchinLibertarianMunicipalism', 'ostromGoverningCommons'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'anarcho-communist', relation: 'closest named sub-ideology emphasizing stateless common ownership and free association' },
+              { id: 'libertarian-socialist', relation: 'broader anti-authoritarian socialist family that may retain more varied views on markets, unions, and the state' },
+              { id: 'democratic-socialist', relation: 'shares economic equality and worker power but accepts a democratic state as a central instrument' },
+              { id: 'anarcho-capitalist', relation: 'shares anti-state authority but reverses the economic emphasis toward private property and markets' },
+              { id: 'green-commons', relation: 'shares local commons and ecological governance, with less insistence on abolishing the state or capitalism' },
+              { id: 'authoritarian-collectivist', relation: 'shares collectivist economics but is its authority opposite: decentralized, anti-party, and anti-state' },
+              { id: 'anarcho-syndicalism', relation: 'overlaps on direct action and worker organization, with unions rather than communes as the primary institutional vehicle' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that anarchist communalism under-specifies large-scale coordination. Health systems, transport, energy, ecological limits, disaster response, defense, and complex supply chains may require decisions across many communities, and federations can become centralized in practice. Supporters answer that polycentric institutions, delegated coordination, transparent mandates, and recall can provide scale without creating a permanent sovereign authority.',
+            citations: citations(['bookchinLibertarianMunicipalism', 'ostromGoverningCommons', 'bakuninStatism'], ['socialEcologyMunicipalism', 'sepAnarchism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns informal power. Even without formal offices, charismatic leaders, armed groups, technical experts, wealthier associations, gender norms, or majority pressure can dominate others. A serious communalist model therefore needs explicit safeguards for minority rights, exit, dissent, accessibility, gender equality, anti-racism, conflict resolution, and transparent control over force and essential resources.',
+            citations: citations(['millOnLiberty', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Historical experiments also warn against romanticization. War, repression, scarcity, internal conflict, and the need for armed defense shaped Ukraine and Spain, while the Paris Commune’s short duration limits the evidence available. These cases demonstrate political imagination and institutional experimentation, but they cannot by themselves prove that a durable stateless communal order is feasible in every context.',
+            citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'makhnoRuralAnarchism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism', 'ostromGoverningCommons', 'millOnLiberty', 'spinozaPolitical', 'kantPerpetualPeace', 'andersonImaginedCommunities', 'marxEngelsManifesto'],
+      researchSourceIds: ['sepAnarchism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy'],
+      editorialNote: 'The entry distinguishes anti-authoritarian communalism from anarcho-capitalism, democratic socialism, and later libertarian municipalism. Scores describe a didactic reference profile; the historical examples are partial, local, temporary, and contested rather than country-level matches.',
+    },
+    researchGaps: [
+      'Add German-, French-, Spanish-, Ukrainian-, Italian-, and Portuguese-language scholarship on anarchist federations, syndicalism, communes, and the history of translation across movements.',
+      'Add specialist histories of the Paris Commune, Makhnovist movement, Revolutionary Catalonia, Mujeres Libres, and the civilian institutions of wartime collectivization.',
+      'Add comparative institutional research on federation, consensus, delegated authority, commons governance, public goods, health, infrastructure, ecological limits, and defense without a sovereign state.',
+      'Add country- and project-specific evidence before listing any contemporary autonomous community, cooperative, municipalist platform, or commons as a living match.',
+      'Add research on gender, race, colonialism, disability, migration, informal hierarchy, conflict resolution, and the risk that anti-state structures reproduce coercion through armed or social power.',
+    ],
+  },
 };
