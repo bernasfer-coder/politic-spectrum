@@ -214,6 +214,8 @@ const RIGHTS_RECORDS = {
     aeaChinaSocialism: { ...LINK_ONLY, notes: 'Journal article used as a linked economic analysis; no article text, figures, or tables are reproduced.' },
     sepReligionPolitics: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     oxfordChristianDemocracy: { ...LINK_ONLY, notes: 'Oxford Academic chapter used as a linked scholarly source; no chapter text, tables, or figures are reproduced.' },
+    oxfordConstitutionalPatriotism: { ...LINK_ONLY, notes: 'Oxford Academic article used as a linked scholarly source; no article text, tables, or figures are reproduced.' },
+    coeDemocraticCitizenship: { ...OFFICIAL_TEXT, notes: 'Council of Europe charter and educational framework used as an institutional source; no charter text, manuals, or graphics are reproduced.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },

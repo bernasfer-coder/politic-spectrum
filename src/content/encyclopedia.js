@@ -4857,4 +4857,354 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative work on gradual reform, constitutional safeguards, emergency powers, conservative populism, market globalization, protectionism, climate policy, technology, and the conditions under which prudence becomes obstruction or authoritarianism.',
     ],
   },
+  'civic-nationalist': {
+    id: 'civic-nationalist',
+    title: 'Civic nationalist',
+    canonicalLabel: 'Civic nationalism',
+    aliases: [
+      'civic nationalism',
+      'citizenship nationalism',
+      'republican nationalism',
+      'liberal nationalism',
+      'constitutional patriotism',
+      'inclusive nationalism',
+    ],
+    entryType: 'historical and analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Civic nationalism is a family of arguments about political membership, not a complete programme for markets, social morality, religion, or foreign policy. The label is often contrasted with ethnic nationalism, but that contrast is an imperfect analytical ideal type: civic institutions can still exclude, assimilate, racialize, or dominate people.',
+    timeScope: 'Antecedents appear in republican and constitutional traditions; the modern label is most useful from the revolutionary and nation-building era of the late eighteenth and nineteenth centuries through post-war debates about constitutional patriotism, migration, and plural citizenship.',
+    geographicScope: 'Transnational profile with important debates in France, the United States, Switzerland, Germany, post-war Europe, anti-colonial states, and other polities that define membership through citizenship or public law. No country is treated as a pure or permanent example.',
+    summary: 'A form of nationalism that presents the nation primarily as a political community of citizens joined by public institutions, legal membership, political principles, and some shared civic culture rather than by ancestry alone. It can support liberal democracy and equal citizenship, but it can also demand assimilation, conceal unequal citizenship, or turn supposedly universal civic norms into a majority culture. Its economic, social, religious, and foreign-policy positions must therefore be measured separately.',
+    summaryCitations: citations(
+      ['renanNation', 'andersonImaginedCommunities', 'millOnLiberty', 'tocquevilleDemocracy'],
+      ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: -5,
+        label: 'Economically open-ended',
+        explanation: 'Civic nationalism does not determine ownership or distribution. A civic nation can combine market liberalism, welfare provision, developmental planning, protectionism, or social democracy. The most defensible didactic score is therefore near the midpoint, with a slight market-side tilt only because constitutional citizenship is often historically paired with liberal property and contract institutions; that pairing is contingent, not definitional.',
+        citations: citations(['millOnLiberty', 'lockeSecondTreatise', 'andersonImaginedCommunities'], ['sepNationalism', 'sepLiberalism', 'openTextbook']),
+      },
+      social: {
+        score: 0,
+        label: 'Civic inclusion with a conformity risk',
+        explanation: 'Equal citizenship and common legal status can support inclusion across ancestry, religion, and language. Yet a state may define “civic values” narrowly, require cultural assimilation, or treat minority practices as insufficiently national. Civic membership is consequently compatible with both pluralist inclusion and coercive uniformity; the score should not be read as a fixed progressive or traditionalist position.',
+        citations: citations(['millOnLiberty', 'renanNation', 'tocquevilleDemocracy'], ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship']),
+      },
+      authority: {
+        score: 18,
+        label: 'Constitutional and institution-centered authority',
+        explanation: 'The profile normally values a capable state, a common legal order, citizenship administration, and institutions able to secure public membership and self-government. It becomes liberal-democratic only when authority is limited by rights, independent courts, accountable elections, lawful opposition, and equal protection. Civic language by itself does not prevent executive domination or exclusion.',
+        citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'tocquevilleDemocracy'], ['vdem', 'coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism']),
+      },
+      identity: {
+        score: -58,
+        label: 'Strongly civic and inclusive rather than ethnic',
+        explanation: 'National belonging is presented primarily as shared citizenship, public principles, institutions, and participation in a common political life. This is a strong identity commitment, not the absence of nationalism. A civic nation may still police its borders, privilege a majority language, exclude non-citizens, or reinterpret civic membership through inherited culture, so the civic claim must be tested against law and practice.',
+        citations: citations(['renanNation', 'andersonImaginedCommunities', 'tocquevilleDemocracy'], ['sepNationalism', 'oxfordConstitutionalPatriotism', 'sepColonialism']),
+      },
+      foreign: {
+        score: 10,
+        label: 'Cooperative but sovereignty-conscious',
+        explanation: 'Civic nationalism can support treaties, international law, migration agreements, and regional integration when these are understood as compatible with democratic self-government. It can also resist external authority when national consent and constitutional control are viewed as threatened. Nothing in the civic membership principle entails pacifism, interventionism, isolationism, or a particular alliance policy.',
+        citations: citations(['kantPerpetualPeace', 'renanNation', 'millOnLiberty'], ['foreignPolicy', 'sepNationalism', 'oxfordConstitutionalPatriotism']),
+      },
+      religion: {
+        score: -15,
+        label: 'Mostly secular public-law orientation',
+        explanation: 'Civic membership is usually justified through citizenship and public law rather than a shared revelation or clerical authority, which gives the profile a mild secular-side placement. Civic nationalism can nevertheless include religious civil traditions, established churches, or religiously framed republican ideals. The relevant test is whether equal citizenship and freedom of conscience remain available to believers and non-believers alike.',
+        citations: citations(['lockeLetterToleration', 'millOnLiberty', 'renanNation'], ['sepReligionPolitics', 'coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Civic nationalism understands the nation mainly as a political community: people belong through citizenship, participation, public institutions, and a shared commitment to the rules or principles of political membership. In its strongest egalitarian form, it rejects ancestry as a condition of full belonging and makes equal citizenship the basis of national solidarity.',
+            citations: citations(['renanNation', 'millOnLiberty'], ['sepNationalism', 'coeDemocraticCitizenship']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The civic–ethnic contrast is useful but should not be treated as a clean map of the world. Scholars have criticized it as historically selective and politically idealized: states described as civic have often excluded women, racialized minorities, colonized populations, religious minorities, migrants, or people without the preferred language. The project therefore treats civic nationalism as a claim about the preferred basis of membership, then asks whether law and institutions actually honor that claim.',
+            citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepNationalism', 'sepColonialism', 'oxfordConstitutionalPatriotism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Civic nationalism also differs from constitutional patriotism. They overlap when both value political membership and public principles, but constitutional patriotism is commonly presented as a more explicitly post-national or constitution-centered form of allegiance that seeks solidarity without treating national culture as the primary object of loyalty. Treating the two as synonyms would erase an important debate about nationalism, cosmopolitanism, and supranational citizenship.',
+            citations: citations(['renanNation', 'kantPerpetualPeace'], ['oxfordConstitutionalPatriotism', 'sepNationalism']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Its central unit is the citizen rather than the descent group. A civic-national argument typically emphasizes a common legal status, equal rights and duties, public education, representative or republican institutions, a constitution, and the ability of members to participate in self-government. Shared history, language, symbols, or rituals may still matter, but they are ideally open to political membership and are not the sole proof of belonging.',
+            citations: citations(['renanNation', 'millOnLiberty', 'tocquevilleDemocracy'], ['sepNationalism', 'coeDemocraticCitizenship']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Civic solidarity is not merely a legal technicality. States ask citizens to trust institutions, pay taxes, obey public law, defend the polity, and accept decisions made through common procedures. A civic-national project therefore has to balance a shared public framework with disagreement, dissent, minority autonomy, and the fact that residents, refugees, non-citizens, and future generations may be affected by national decisions without possessing equal political voice.',
+            citations: citations(['tocquevilleDemocracy', 'millOnLiberty'], ['coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The inclusion promised by civic nationalism can be undermined by assimilationist tests. A constitution may speak in universal terms while administrative practice makes membership difficult for particular groups, defines one language or memory as the authentic national culture, or treats dissent from majority narratives as disloyalty. Conversely, pluralist civic nationalism can allow multiple languages, religions, and historical memories while maintaining common rights, democratic procedures, and a shared commitment to non-domination.',
+            citations: citations(['millOnLiberty', 'renanNation', 'andersonImaginedCommunities'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Civic nationalism is not automatically democratic, liberal, secular, peaceful, or economically egalitarian. A military dictatorship can use citizenship language; a welfare state can exclude non-citizens; a republic can hold colonies; and a constitutional order can restrict opposition. Those properties must be scored independently on this project’s six dimensions rather than inferred from the label.',
+            citations: citations(['renanNation', 'andersonImaginedCommunities', 'millOnLiberty'], ['sepNationalism', 'sepColonialism', 'vdem', 'foreignPolicy', 'sepReligionPolitics']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Ancient and early republican antecedents',
+            text: 'Classical republican ideas connected political membership to civic participation, law, public office, and a common res publica. These are antecedents rather than modern nationalism: ancient citizenship was usually restricted by status, gender, origin, or enslavement, and the modern nation-state did not yet exist.',
+            citations: citations(['tocquevilleDemocracy', 'millOnLiberty'], ['sepNationalism', 'openTextbook']),
+          },
+          {
+            period: 'Late eighteenth century: revolution and popular sovereignty',
+            text: 'Revolutionary political language recast the people as a source of sovereignty and connected national membership to citizenship, representation, rights, and a common public law. The same period also exposed the gap between universal claims and exclusions based on gender, race, property, colonial status, and political dissent.',
+            citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['sepNationalism', 'sepColonialism', 'openTextbook']),
+          },
+          {
+            period: 'Nineteenth century: mass nation-building and citizenship administration',
+            text: 'States expanded schooling, conscription, censuses, administrative law, public ceremonies, and national markets. These institutions made citizenship more legible and participatory for some people while also standardizing language, centralizing authority, and differentiating citizens from subjects, colonized peoples, migrants, and internal minorities.',
+            citations: citations(['andersonImaginedCommunities', 'tocquevilleDemocracy'], ['sepNationalism', 'sepColonialism', 'vdem']),
+          },
+          {
+            period: '1882: Renan’s voluntarist account',
+            text: 'Ernest Renan’s lecture What Is a Nation? became a major reference point for a nation understood through shared memory and present political will rather than race or language alone. It is influential, but it should be read critically: the account contains selective forgetting and does not itself resolve who is allowed to consent, how colonial subjects are treated, or how minorities participate.',
+            citations: citations(['renanNation'], ['sepNationalism']),
+          },
+          {
+            period: 'Twentieth century: imagined communities and contested citizenship',
+            text: 'Benedict Anderson’s account of nations as imagined communities shifted attention toward print, media, time, institutions, and the social production of collective belonging. It helps explain why civic identity is constructed and reproduced, but “imagined” does not mean unreal: institutions, borders, rights, taxes, and coercive power distribute real opportunities and harms.',
+            citations: citations(['andersonImaginedCommunities'], ['sepNationalism', 'sepColonialism']),
+          },
+          {
+            period: 'After 1945: constitutional patriotism and human-rights constraints',
+            text: 'After fascism, world war, and genocide, some theorists sought political loyalty grounded in democratic and universal constitutional principles rather than an ethnic or mythic national culture. This debate informed West German constitutional patriotism and later discussions of European integration, but it remains contested: constitutional language can become a new orthodoxy, and formal rights do not automatically create equal belonging.',
+            citations: citations(['kantPerpetualPeace', 'renanNation'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem']),
+          },
+          {
+            period: 'Decolonization to the present: plural, postcolonial, and migrant citizenship',
+            text: 'Anti-colonial movements, Indigenous peoples, diasporas, migration, minority-rights struggles, and supranational institutions challenged the assumption that one state, one people, one language, and one history naturally coincide. Contemporary civic-national debates therefore include questions of dual citizenship, federalism, multiculturalism, Indigenous sovereignty, border control, colonial memory, and whether national democracy can coexist with universal human rights.',
+            citations: citations(['andersonImaginedCommunities', 'renanNation', 'nabucoAbolitionism'], ['sepColonialism', 'sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and neighboring concepts',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Republican citizenship nationalism',
+                distinction: 'Treats active citizenship, public service, civic education, common law, and political participation as the core of national membership.',
+                relation: 'A central civic-national variant; it can be emancipatory when participation is equal, but majoritarian when republican virtue is defined by one culture or language.',
+                citations: citations(['tocquevilleDemocracy', 'millOnLiberty'], ['sepNationalism', 'coeDemocraticCitizenship']),
+              },
+              {
+                label: 'Liberal constitutional nationalism',
+                distinction: 'Places rights, representative institutions, constitutional limits, and individual liberty at the center of national allegiance.',
+                relation: 'Overlaps strongly with civic nationalism, while requiring separate evidence about whether liberal rights apply equally to nonconforming citizens and non-citizens.',
+                citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'sepNationalism', 'vdem']),
+              },
+              {
+                label: 'Constitutional patriotism',
+                distinction: 'Grounds political attachment primarily in universalist constitutional principles and democratic practices rather than national culture; it may be designed for plural or supranational polities.',
+                relation: 'A close neighbor and sometimes a proposed successor to civic nationalism, but not a synonym: it deliberately questions whether the nation should remain the main object of loyalty.',
+                citations: citations(['kantPerpetualPeace', 'renanNation'], ['oxfordConstitutionalPatriotism', 'sepNationalism']),
+              },
+              {
+                label: 'Assimilationist civic nationalism',
+                distinction: 'Offers formal citizenship but expects minorities and immigrants to adopt a dominant language, public culture, memory, or conception of secular or religious citizenship.',
+                relation: 'Can be civic in its legal vocabulary while reproducing cultural hierarchy; the test is whether shared institutions permit meaningful pluralism and equal voice.',
+                citations: citations(['millOnLiberty', 'andersonImaginedCommunities'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism']),
+              },
+              {
+                label: 'Pluralist or multicultural civic nationalism',
+                distinction: 'Defines common membership through equal rights and democratic institutions while allowing multiple languages, religions, memories, and forms of cultural life.',
+                relation: 'A more inclusion-oriented civic variant, but it still has to address the power of the state, unequal socioeconomic status, and groups who are not citizens.',
+                citations: citations(['millOnLiberty', 'tocquevilleDemocracy'], ['coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism', 'vdem']),
+              },
+              {
+                label: 'Developmental or state-building nationalism',
+                distinction: 'Uses common citizenship, public education, infrastructure, and state capacity to create a shared political community and accelerate national development.',
+                relation: 'Can be civic in membership terms but may raise authority and economic scores when development is directed from above or dissent is treated as an obstacle.',
+                citations: citations(['andersonImaginedCommunities', 'tocquevilleDemocracy'], ['sepNationalism', 'vdem', 'openTextbook']),
+              },
+              {
+                label: 'Anti-colonial civic nationalism',
+                distinction: 'Uses national self-determination and equal citizenship to oppose imperial rule, racial hierarchy, colonial subjecthood, or externally imposed political membership.',
+                relation: 'Often overlaps with civic nationalism but may combine inclusive citizenship with Indigenous, religious, class, or cultural nationhood; it should not be reduced to a European civic model.',
+                citations: citations(['nabucoAbolitionism', 'andersonImaginedCommunities'], ['sepColonialism', 'sepNationalism', 'panAfricanism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Ernest Renan',
+                role: 'French historian and political thinker whose account of nationhood emphasized shared memory and continuing collective consent rather than race, dynasty, or language alone.',
+                caveat: 'Renan’s account is a classic reference, not a neutral definition. Its treatment of memory, forgetting, empire, and consent requires critical historical reading.',
+                citations: citations(['renanNation'], ['sepNationalism']),
+              },
+              {
+                name: 'Benedict Anderson',
+                role: 'Historian and political theorist who explained nations as imagined communities produced through media, institutions, shared time, and narratives of collective membership.',
+                caveat: 'Anderson is primarily an analyst of nationalism rather than a simple advocate of civic nationalism. His framework helps explain how civic belonging is constructed without proving that any particular construction is just.',
+                citations: citations(['andersonImaginedCommunities'], ['sepNationalism', 'sepColonialism']),
+              },
+              {
+                name: 'John Stuart Mill',
+                role: 'Liberal political philosopher who connected representative government, nationality, political participation, individuality, and freedom of discussion.',
+                caveat: 'Mill’s arguments contain nineteenth-century assumptions and tensions around empire and national development. He is a historical source for one liberal-civic line, not a final authority on inclusion.',
+                citations: citations(['millOnLiberty'], ['sepMill', 'sepNationalism']),
+              },
+              {
+                name: 'Alexis de Tocqueville',
+                role: 'French comparative thinker whose analyses of democracy, local institutions, associations, religion, equality, and civic habits illuminate how political membership can be sustained through participation.',
+                caveat: 'Tocqueville combined democratic analysis with serious limitations concerning colonial domination and equality. His work should be used comparatively and critically.',
+                citations: citations(['tocquevilleDemocracy'], ['sepNationalism', 'vdem']),
+              },
+              {
+                name: 'Jürgen Habermas and constitutional-patriotism theorists',
+                role: 'A post-war German intellectual tradition that sought political solidarity around democratic constitutional principles rather than ethnic descent or a single inherited national culture.',
+                caveat: 'Constitutional patriotism is a neighboring and partly post-national concept, not simply the most advanced version of civic nationalism. Its critics question whether constitutional norms can avoid cultural hierarchy or become a coercive civil religion.',
+                citations: citations(['renanNation', 'kantPerpetualPeace'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'French republican citizenship tradition',
+                period: 'France, especially from the Revolution through the modern republics',
+                match: 'A major reference case for universal legal citizenship, republican sovereignty, public institutions, and a common civic identity that is formally open beyond ancestry.',
+                caveat: 'The same tradition has included property and gender exclusions, colonial subjecthood, assimilationist policy, language hierarchy, and conflicts over religion and minority recognition. It is a partial and internally contested case, not a pure model.',
+                citations: citations(['renanNation', 'millOnLiberty'], ['sepNationalism', 'sepColonialism', 'oxfordConstitutionalPatriotism']),
+              },
+              {
+                name: 'United States constitutional and civic-national tradition',
+                period: 'United States, from the constitutional founding through contemporary citizenship debates',
+                match: 'Constitutional membership, republican representation, civic symbols, and a universalist rights vocabulary have provided a powerful civic-national language.',
+                caveat: 'Founding exclusions of enslaved people, Indigenous peoples, women, non-property holders, and later racialized immigration regimes show why constitutional language must be compared with actual citizenship and rights. The country contains civic, ethnic, racial, religious, and imperial traditions at the same time.',
+                citations: citations(['lockeSecondTreatise', 'tocquevilleDemocracy', 'millOnLiberty'], ['sepNationalism', 'vdem', 'sepColonialism']),
+              },
+              {
+                name: 'Swiss federal and multilingual civic institutions',
+                period: 'Switzerland, nineteenth century–present',
+                match: 'A federal political community can sustain national institutions across multiple language regions and cantonal identities, making it a useful case for studying civic membership beyond one ethnic or linguistic nation.',
+                caveat: 'Federalism and multilingualism do not eliminate exclusions, unequal naturalization, migration disputes, or local majoritarianism. Switzerland is an instructive partial case, not evidence that civic nationalism automatically produces pluralism.',
+                citations: citations(['andersonImaginedCommunities', 'tocquevilleDemocracy'], ['sepNationalism', 'coeDemocraticCitizenship', 'vdem']),
+              },
+              {
+                name: 'Post-war European constitutional and citizenship projects',
+                period: 'Western Europe and European institutions, 1945–present',
+                match: 'Human-rights commitments, democratic constitutionalism, cross-border institutions, and regional citizenship complicate the idea that political solidarity must stop at the nation-state.',
+                caveat: 'European integration is not a single civic nation and has persistent borders, unequal membership, colonial legacies, and democratic-accountability debates. It is better treated as a neighboring experiment in layered or post-national belonging.',
+                citations: citations(['kantPerpetualPeace', 'andersonImaginedCommunities'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepNationalism']),
+              },
+              {
+                name: 'Anti-colonial and postcolonial citizenship projects',
+                period: 'Africa, Asia, the Caribbean, Latin America, and other decolonizing contexts, nineteenth century–present',
+                match: 'Movements have used equal national citizenship and self-determination to challenge imperial subjecthood and racial hierarchy while building states with diverse populations.',
+                caveat: 'Postcolonial nation-building cannot be judged by a narrow European civic/ethnic binary. Indigenous sovereignty, language, religion, class, caste, gender, and colonial borders can create conflicts within an inclusive national project.',
+                citations: citations(['nabucoAbolitionism', 'andersonImaginedCommunities'], ['sepColonialism', 'sepNationalism', 'panAfricanism']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'ethnic-nationalist', relation: 'defines national membership more through ancestry, inherited culture, language, or origin; real movements may combine ethnic and civic criteria' },
+              { id: 'national-conservative', relation: 'may share sovereignty and national institutions, but national conservatism usually gives more weight to inherited culture, continuity, hierarchy, or tradition' },
+              { id: 'classical-liberal', relation: 'can overlap through individual rights, constitutional limits, and free association, but liberalism does not require national solidarity' },
+              { id: 'liberal-constitutionalist', relation: 'shares constitutional rights and accountable institutions; civic nationalism adds national membership as a central source of solidarity' },
+              { id: 'anti-colonial-liberation', relation: 'often shares equal citizenship and self-determination, but anti-colonial liberation centers imperial domination and may combine civic membership with other emancipatory traditions' },
+              { id: 'religious-traditionalist', relation: 'can conflict when religious authority or inherited confession determines membership, although religious citizens can participate in plural civic nationalism' },
+              { id: 'cosmopolitan', relation: 'shares concern for universal human status and may support layered citizenship, but cosmopolitanism gives less priority to national solidarity and sovereignty' },
+              { id: 'populist', relation: 'can borrow the language of the people and citizenship, but populism is a style or thin ideology that may be attached to civic, ethnic, socialist, or authoritarian nationalism' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first criticism is the civic–ethnic binary itself. It can portray some national histories as rational and inclusive while portraying others as permanently ethnic, even though every nation uses institutions, culture, memory, descent narratives, and boundary practices in mixed ways. The safer method is to identify the membership rules a movement advocates and compare them with citizenship law, political participation, minority treatment, and the distribution of power.',
+            citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepNationalism', 'oxfordConstitutionalPatriotism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second criticism is hidden exclusion. Universal citizenship may coexist with colonial subjecthood, racialized policing, gender restrictions, unequal naturalization, statelessness, disenfranchisement, or welfare rights tied to status. A civic vocabulary should therefore be checked against equal protection, access to documentation, voting rights, due process, language access, and the treatment of people who live under the state’s authority without full citizenship.',
+            citations: citations(['nabucoAbolitionism', 'millOnLiberty', 'tocquevilleDemocracy'], ['sepColonialism', 'vdem', 'coeDemocraticCitizenship']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third criticism is assimilation. A common civic culture can support trust and democratic communication, but “integration” can become a demand that minorities abandon language, religion, memory, dress, family practice, or political dissent. Pluralist safeguards include equal civil and political rights, anti-discrimination law, independent courts, meaningful minority participation, multilingual access where needed, freedom of conscience, and a distinction between constitutional duties and majority lifestyle preferences.',
+            citations: citations(['millOnLiberty', 'lockeLetterToleration', 'andersonImaginedCommunities'], ['coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism', 'sepReligionPolitics']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth criticism is that national self-government can conflict with universal rights and obligations beyond the nation. A civic nation may defend democratic accountability against distant institutions, but it may also use sovereignty to evade refugee protection, minority rights, international law, climate duties, or responsibility for imperial and colonial harms. The project should record this tension rather than assume that either national or supranational loyalty is automatically democratic.',
+            citations: citations(['kantPerpetualPeace', 'renanNation'], ['foreignPolicy', 'oxfordConstitutionalPatriotism', 'sepColonialism', 'coeDemocraticCitizenship']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, civic nationalism can become a majoritarian civil religion. Constitutional symbols, historical myths, commemorations, and loyalty tests may help sustain public commitment, but they can also stigmatize dissent and authorize surveillance or emergency powers. Democratic safeguards require contestable national narratives, peaceful alternation of power, an independent press and judiciary, equal citizenship, lawful opposition, transparent security institutions, and the ability to criticize the nation without being treated as an enemy.',
+            citations: citations(['millOnLiberty', 'tocquevilleDemocracy', 'renanNation'], ['vdem', 'sepReligionPolitics', 'oxfordConstitutionalPatriotism']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['renanNation', 'andersonImaginedCommunities', 'millOnLiberty', 'tocquevilleDemocracy', 'lockeSecondTreatise', 'lockeLetterToleration', 'kantPerpetualPeace', 'constantLibertyModerns', 'nabucoAbolitionism'],
+      researchSourceIds: ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism', 'sepLiberalism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'openTextbook', 'panAfricanism'],
+      editorialNote: 'The entry treats civic nationalism as a disputed family resemblance organized around the claimed basis of national membership. It distinguishes civic nationalism from constitutional patriotism, ethnic nationalism, patriotism, liberalism, and cosmopolitanism, and treats country examples as partial, dated, and internally contested. Scores are didactic composites, not empirical measurements of every movement, government, or citizen using the label.',
+    },
+    researchGaps: [
+      'Add French-language scholarship on republican universalism, laïcité, assimilation, colonial citizenship, the Dreyfus era, overseas departments, and the postcolonial critique of civic nationalism.',
+      'Add German-language scholarship on constitutional patriotism, federalism, citizenship reform, Vergangenheitsbewältigung, reunification, migration, and the relationship between civic belonging and the memory of National Socialism.',
+      'Add Portuguese- and Spanish-language scholarship on Brazilian, Iberian, Latin American, and Lusophone forms of citizenship, republicanism, abolition, empire, plurinationalism, and postcolonial nation-building; Nabuco is only a starting point here.',
+      'Add specialist research on Indigenous sovereignty, caste, race, gender, disability, religion, language, diaspora, statelessness, refugee status, and the difference between formal citizenship and substantive political membership.',
+      'Add comparative legal evidence on nationality law, naturalization, dual citizenship, voting rights, colonial subjecthood, border administration, minority-language rights, and the treatment of non-citizen residents before classifying present countries.',
+      'Test civic nationalism against party programmes, constitutions, court decisions, administrative practice, public-opinion data, and political behavior; labels such as republican, liberal, secular, or constitutional do not establish inclusion on their own.',
+      'Clarify the relationship among civic nationalism, patriotism, constitutional patriotism, cosmopolitanism, multicultural citizenship, and plurinational democracy through dedicated comparative scholarship rather than treating them as interchangeable labels.',
+    ],
+  },
 };
