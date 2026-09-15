@@ -1414,4 +1414,283 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist research on colonialism, minority citizenship, migration, religion, gender, welfare nationalism, and the relationship between national-conservative movements and democratic backsliding.',
     ],
   },
+  'social-democratic': {
+    id: 'social-democratic',
+    title: 'Social democratic',
+    canonicalLabel: 'Social democratic',
+    aliases: ['social democracy', 'democratic reform socialism', 'welfare-state social democracy', 'Nordic social democracy'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile describes reformist and welfare-state social democracy, especially its modern mixed-economy form. Social democracy has changed over time and is not identical to democratic socialism, socialism in general, or every center-left party.',
+    timeScope: 'Roots in nineteenth-century socialist and labor movements; reformist theory at the turn of the twentieth century; major welfare-state development after 1945; later revisions under globalization and post-industrial politics.',
+    geographicScope: 'Transnational tradition with important German, British, Nordic, continental European, and other democratic variants; welfare institutions differ substantially by country.',
+    summary: 'A democratic reform tradition seeking to reduce class inequality and insecurity through elections, trade-union power, social insurance, public services, progressive taxation, and regulated markets. Modern social democracy generally preserves a predominantly private mixed economy while treating social rights and collective bargaining as conditions of democratic citizenship.',
+    summaryCitations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'sepLiberalism', 'oecdWelfareModels']),
+    dimensionInterpretations: {
+      economic: {
+        score: 58,
+        label: 'Strongly social-democratic / redistributive',
+        explanation: 'The profile supports substantial redistribution, universal or broad social provision, labor rights, collective bargaining, and public regulation, while usually retaining private firms and market allocation. It is collectivist in social protection and economic power, not necessarily in formal ownership of every productive asset.',
+        citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels']),
+      },
+      social: {
+        score: 62,
+        label: 'Progressive and egalitarian',
+        explanation: 'Equal citizenship, labor dignity, anti-discrimination, and social inclusion are treated as democratic commitments. Historical parties have differed on gender, migration, religion, and cultural change, so social democracy is not one fixed cultural programme.',
+        citations: citations(['millOnLiberty', 'wollstonecraftRights'], ['sepLiberalism', 'sepSocialism']),
+      },
+      authority: {
+        score: -26,
+        label: 'Democratic and administratively active',
+        explanation: 'The state is expected to provide services, regulate markets, and coordinate social insurance, but elections, civil liberties, independent unions, courts, and organized dissent remain essential. This is a high-capacity democratic state, not a party-state or a rejection of public authority.',
+        citations: citations(['bernsteinEvolutionarySocialism', 'lockeSecondTreatise', 'millOnLiberty'], ['sepSocialism', 'vdem', 'oecdWelfareModels']),
+      },
+      identity: {
+        score: 34,
+        label: 'Internationalist with civic citizenship',
+        explanation: 'Class solidarity, international cooperation, and equal civic membership generally matter more than ethnic nationalism. In practice, social-democratic welfare systems can still be nationally bounded, and parties have disagreed over migration, borders, colonialism, and international institutions.',
+        citations: citations(['renanNation', 'andersonImaginedCommunities'], ['sepSocialism', 'sepNationalism']),
+      },
+      foreign: {
+        score: 14,
+        label: 'Moderate restraint and multilateralism',
+        explanation: 'Diplomacy, international law, alliances, development, and collective security are preferred to unilateral militarism. Social-democratic parties have nevertheless supported wars or military alliances in particular historical contexts, so the profile is restrained rather than pacifist.',
+        citations: citations(['kantPerpetualPeace', 'morgenthauRealism'], ['foreignPolicy', 'sepSocialism']),
+      },
+      religion: {
+        score: 35,
+        label: 'Secular and pluralist public law',
+        explanation: 'Public institutions are generally justified through democratic citizenship and social rights rather than clerical authority. Religious parties, churches, and faith-based labor or welfare movements can participate, but no single religion is required to define the state.',
+        citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepSocialism']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Social democracy is a democratic route to greater equality and security. Its central political question is how citizens can exercise meaningful freedom when market dependence, illness, unemployment, unequal bargaining power, or inherited class position restrict their choices. Social-democratic answers usually combine elections, organized labor, progressive taxation, welfare services, and regulated markets.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'millOnLiberty', 'keynesGeneralTheory'], ['sepSocialism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The tradition has two overlapping meanings. Historically, it emerged from socialist and labor movements that debated revolution versus parliamentary reform. In contemporary policy language, it often refers to a welfare-state mixed economy that leaves most firms privately owned while redistributing income and decommodifying essential services. These meanings should not be treated as identical.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Social democracy treats social rights as part of democratic citizenship. Healthcare, education, pensions, unemployment insurance, housing support, labor protections, and public care can expand the practical freedom to participate in society rather than merely the formal freedom to sign a contract. Different systems vary between universal, contributory, targeted, public, and regulated private provision.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The economic model is reformist and mixed. Social democrats may seek stronger unions, co-determination, public enterprises, cooperative ownership, or progressive taxation, but modern social democracy generally accepts markets and private investment. The key distinction from libertarian market liberalism is the role assigned to collective provision and bargaining power; the key distinction from democratic socialism is often the long-term status of private ownership and capitalism.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Democratic safeguards are substantive, not incidental. Social-democratic institutions depend on competitive elections, free association, independent unions, civil liberties, legal accountability, and the ability of citizens to contest how benefits and burdens are allocated. Social provision administered without democratic control can become paternalist or bureaucratic rather than emancipatory.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'millOnLiberty', 'lockeSecondTreatise'], ['sepSocialism', 'vdem', 'oecdWelfareModels']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Late nineteenth century: labor movements and parliamentary socialism',
+            text: 'Trade unions, socialist parties, mass suffrage, and industrial conflict created the organizational base for social democracy. Reformers debated whether capitalism would collapse, whether class conflict could be institutionalized, and whether democratic reforms were a route to or a substitute for socialism.',
+            citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism']),
+          },
+          {
+            period: '1899 onward: Bernstein and evolutionary socialism',
+            text: 'Bernstein challenged revolutionary predictions and argued that democratic organization, unions, and gradual reforms could advance social emancipation. His revisionism became a foundational reference point for reformist social democracy, while revolutionary and democratic socialist critics disputed its conclusions.',
+            citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism']),
+          },
+          {
+            period: '1930s–1950s: Keynesian policy and welfare-state construction',
+            text: 'The Great Depression, mass unemployment, war mobilization, and post-war reconstruction strengthened arguments for macroeconomic management, social insurance, public services, and full employment. Post-war welfare states differed in institutional design and were shaped by conservative, liberal, Christian-democratic, and labor parties, not by social democracy alone.',
+            citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels']),
+          },
+          {
+            period: '1950s–1970s: post-war social-democratic settlement',
+            text: 'Many European systems combined collective bargaining, rising wages, public services, progressive taxation, and economic growth. The settlement expanded social citizenship but remained nationally bounded and could exclude migrants, colonies, women, racial minorities, disabled people, or informal workers from its fullest benefits.',
+            citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'oecdWelfareModels']),
+          },
+          {
+            period: '1970s–present: crisis, revision, and pluralization',
+            text: 'Stagflation, unemployment, deindustrialization, globalization, demographic change, and fiscal pressure challenged older social-democratic tools. Parties responded differently through market reforms, social investment, universal services, labor-market activation, ecological transition, or renewed industrial policy. “Third way” reforms and democratic-socialist revivals represent competing responses rather than one settled endpoint.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'sepLiberalism']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Classical reformist social democracy',
+                distinction: 'Uses parliamentary democracy, unions, social insurance, and regulation to humanize or gradually transform capitalism.',
+                relation: 'Closest historical link to Bernstein and the early labor movement.',
+                citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism']),
+              },
+              {
+                label: 'Post-war welfare-state social democracy',
+                distinction: 'Combines mixed economies, collective bargaining, universal or broad social services, and macroeconomic management.',
+                relation: 'Closest fit to the modern archetype, though welfare regimes vary widely across countries.',
+                citations: citations(['keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels']),
+              },
+              {
+                label: 'Democratic socialism',
+                distinction: 'Seeks stronger social or democratic ownership and may regard capitalism as a structure to replace rather than primarily regulate.',
+                relation: 'Overlaps on democracy and equality but differs on the long-term role of markets and private ownership.',
+                citations: citations(['bernsteinEvolutionarySocialism', 'marxEngelsManifesto'], ['sepSocialism']),
+              },
+              {
+                label: 'Social liberalism',
+                distinction: 'Accepts an active welfare and regulatory state but generally grounds reform more in liberal opportunity and individual rights than in labor or socialist organization.',
+                relation: 'Close neighbor; the boundary is historically and nationally variable.',
+                citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism', 'sepSocialism']),
+              },
+              {
+                label: 'Third-way social democracy',
+                distinction: 'Retains social investment and inclusion while accepting more market competition, privatization, labor flexibility, or fiscal restraint.',
+                relation: 'A later revision whose critics argue it weakened labor power and economic redistribution.',
+                citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Historical and contemporary examples',
+        blocks: [
+          {
+            type: 'evidence-note',
+            text: 'No country is a permanent or exact match. Welfare regimes combine social-democratic, liberal, conservative, Christian-democratic, nationalist, and technocratic institutions, and governments change direction over time.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'vdem']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Eduard Bernstein',
+                role: 'theorist of evolutionary and parliamentary socialism',
+                caveat: 'A foundational reformist voice, not the sole origin or definition of modern social democracy.',
+                citations: citations(['bernsteinEvolutionarySocialism'], ['sepSocialism']),
+              },
+              {
+                name: 'John Maynard Keynes',
+                role: 'economist whose work supported arguments for macroeconomic stabilization and public employment policy',
+                caveat: 'Keynes was not a social-democratic party theorist, and Keynesian economics does not determine every social or cultural position.',
+                citations: citations(['keynesGeneralTheory'], ['sepSocialism', 'sepLiberalism']),
+              },
+              {
+                name: 'John Stuart Mill',
+                role: 'liberal influence on individuality, social reform, and limits on coercion',
+                caveat: 'Mill’s liberalism is an intellectual precursor and neighbor, not a complete twentieth-century welfare-state doctrine.',
+                citations: citations(['millOnLiberty'], ['sepLiberalism', 'sepSocialism']),
+              },
+              {
+                name: 'Mary Wollstonecraft',
+                role: 'precursor of equal education and expanded civic membership',
+                caveat: 'Her feminist liberal arguments contribute to the social-equality dimension but do not define social-democratic economics.',
+                citations: citations(['wollstonecraftRights'], ['sepLiberalism']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Post-war Nordic welfare states',
+                period: 'especially from the mid-twentieth century onward',
+                match: 'strong institutional resemblance, with national variation',
+                caveat: 'Nordic countries combine universal services and labor institutions with competitive markets; they are not identical or permanently fixed social-democratic systems.',
+                citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'vdem']),
+              },
+              {
+                name: 'Attlee-era Britain and post-war British welfare reform',
+                period: '1945–1951 emphasis',
+                match: 'historical welfare-state and labor-policy resemblance',
+                caveat: 'Britain’s welfare settlement was shaped by cross-party institutions, empire, class conflict, and later retrenchment; it was not a pure social-democratic model.',
+                citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels']),
+              },
+              {
+                name: 'Contemporary social-democratic parties and coalitions',
+                period: 'present',
+                match: 'movement-level comparison only',
+                caveat: 'Party names do not establish policy: examine taxation, labor power, welfare coverage, privatization, migration, climate policy, and democratic accountability separately.',
+                citations: citations(['bernsteinEvolutionarySocialism', 'millOnLiberty'], ['sepSocialism', 'ches', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'social-democracy', relation: 'taxonomy label for the broader reformist tradition' },
+              { id: 'progressive-liberal', relation: 'shares social reform and rights but usually has a less labor-socialist lineage' },
+              { id: 'democratic-socialism', relation: 'shares democracy and equality but seeks stronger social ownership' },
+              { id: 'authoritarian-collectivist', relation: 'shares collectivist economic language but rejects pluralist democratic safeguards' },
+              { id: 'libertarian-market', relation: 'counterpoint on redistribution, public services, and the scope of the state' },
+              { id: 'christian-democracy', relation: 'welfare-state and social-solidarity neighbor with different religious and party roots' },
+              { id: 'green-commons', relation: 'overlaps on public provision and ecological transition, with a stronger ecological foundation' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Critics argue that social democracy can stabilize rather than transform capitalism, leaving ownership, workplace power, and structural inequality largely intact. Supporters respond that durable democratic control over taxation, labor rights, social services, and economic regulation can materially expand freedom and reduce domination even without abolishing private ownership.',
+            citations: citations(['bernsteinEvolutionarySocialism', 'marxEngelsManifesto', 'millOnLiberty'], ['sepSocialism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns the welfare state’s administrative power and fiscal sustainability. Universal benefits can build solidarity and reduce stigma, but they may be expensive, bureaucratic, or politically bounded by citizenship. Targeted benefits can conserve resources but risk stigma, gaps, and weaker public support; no single design resolves these trade-offs.',
+            citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['oecdWelfareModels', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Social-democratic success also depends on conditions that are not fully controlled by national policy: economic growth, international trade, migration, demographic change, technological shifts, ecological limits, and the bargaining power of organized labor. The profile should therefore be read as an institutional project with changing constraints, not as a fixed list of benefits.',
+            citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels', 'foreignPolicy']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty', 'wollstonecraftRights', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'morgenthauRealism', 'marxEngelsManifesto'],
+      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
+      editorialNote: 'The entry distinguishes reformist socialism, welfare-state social democracy, social liberalism, and democratic socialism. Its scores describe a didactic modern social-democratic archetype, not every party or welfare state carrying the label.',
+    },
+    researchGaps: [
+      'Add German-language scholarship on Bernstein, the SPD, ordoliberal and social-market debates, and post-war welfare institutions.',
+      'Add Swedish, Norwegian, Danish, French, and Portuguese scholarship on labor movements, universalism, social citizenship, and the Nordic and continental welfare variants.',
+      'Add country-specific evidence before listing current states or parties as examples; welfare models and party programmes change over time.',
+      'Add specialist research on colonial legacies, migration, gender, unpaid care, disability, ecological transition, automation, and the global constraints on national redistribution.',
+    ],
+  },
 };

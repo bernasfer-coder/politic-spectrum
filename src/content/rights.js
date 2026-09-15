@@ -181,6 +181,7 @@ const RIGHTS_RECORDS = {
     ches: { ...PERMISSION_SENSITIVE, notes: 'The public site provides datasets and codebooks, but this project does not rely on a cleared right to redistribute CHES files.' },
     manifesto: { ...RESTRICTED_DATA, notes: 'Manifesto Project terms prohibit redistribution except when authorized in writing and require provenance and citation.' },
     foreignPolicy: { ...LINK_ONLY, notes: 'Journal article used as a linked scholarly source; no article text, figures, or tables are reproduced.' },
+    oecdWelfareModels: { ...LINK_ONLY, notes: 'OECD comparative policy source used for independent synthesis of welfare-regime distinctions; no OECD text, tables, or graphics are reproduced.' },
     openTextbook: { ...RESTRICTED_DATA, license: 'CC BY-NC 4.0 (as listed by Open Textbook Library).', commercialUse: 'Non-commercial reuse only under the licence; commercial reproduction or adaptation is not cleared.', notes: 'Use the textbook for research and link-level citation. Do not copy its chapters, tables, or wording into an ad-supported product without permission.' },
     sepAnarchism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     sepFascism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
