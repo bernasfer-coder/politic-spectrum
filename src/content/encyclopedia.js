@@ -7342,4 +7342,337 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Test the six-dimensional profile against expert-coded party data and historical programmes while keeping the host ideology visible; no single left/right score should stand in for populism’s variable economic and social content.',
     ],
   },
+  'centrist-pragmatist': {
+    id: 'centrist-pragmatist',
+    title: 'Centrist / pragmatic pluralist',
+    canonicalLabel: 'Centrist / pragmatic pluralist',
+    aliases: ['centrism', 'pragmatic centrism', 'moderate pluralism', 'consensus politics', 'Third Way'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Centrism is treated as a family of positions and governing practices that seek moderation, compromise, evidence-led problem-solving, and pluralist institutions. It is not automatically the numerical midpoint, a coherent ideology, political neutrality, technocracy, or the Third Way; centrist actors can differ substantially by issue, country, class coalition, and institutional context.',
+    timeScope: 'Modern meanings developed with liberal constitutionalism, mass parties, industrial democracy, welfare states, consensus institutions, and twentieth-century coalition politics. The late twentieth-century Third Way is one recent centre-left variant, not the definition of centrism.',
+    geographicScope: 'Comparative and transnational, with important British, European, North American, and consensus-democratic cases. “Centre” is positional: the same programme may be centrist in one party system and left or right in another.',
+    summary: 'A mixed political orientation favoring incremental reform, negotiated compromise, evidence-led administration, pluralist citizenship, and policy trade-offs over ideological purity. Centrist pragmatism can combine markets with public provision, social reform with institutional caution, national and international commitments, and diplomacy with bounded security policy; its main risks are status-quo bias, managerial insulation, weak contestation, and presenting political choices as merely technical.',
+    summaryCitations: citations(
+      ['lijphartPatternsDemocracy', 'giddensThirdWay', 'millOnLiberty', 'keynesGeneralTheory'],
+      ['oxfordPoliticalCentrism', 'lijphartConsensusDemocracy', 'sepPragmatism', 'sepDemocracy', 'oxfordThirdWayConversion'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 0,
+        label: 'Mixed economy and policy pragmatism',
+        explanation: 'Markets, taxation, regulation, social insurance, public services, and public ownership are treated as instruments whose scope depends on evidence and social consequences. Centrist economics may lean market-liberal, social-liberal, social-democratic, or Third Way; the orientation does not specify a single distributional settlement.',
+        citations: citations(['keynesGeneralTheory', 'giddensThirdWay', 'millOnLiberty'], ['oxfordPoliticalCentrism', 'oxfordThirdWayConversion', 'sepPragmatism']),
+      },
+      social: {
+        score: 0,
+        label: 'Gradual reform and tolerance of disagreement',
+        explanation: 'Centrists often prefer incremental change, negotiated rights expansion, and accommodation among social groups rather than rapid cultural reversal or total transformation. This can support liberal equality and social reform, but it can also delay justice or treat existing arrangements as the neutral baseline.',
+        citations: citations(['millOnLiberty', 'tocquevilleDemocracy'], ['oxfordPoliticalCentrism', 'sepPragmatism', 'sepDemocracy', 'oxfordPluralismConsensus']),
+      },
+      authority: {
+        score: 8,
+        label: 'Lawful, competent, and reviewable administration',
+        explanation: 'Public authority is accepted when it is constitutional, proportionate, administratively capable, transparent, and open to review. Centrist pragmatism can value expertise and institutional continuity, but a democratic version must preserve contestation, participation, independent oversight, and the possibility of changing the policy framework itself.',
+        citations: citations(['lijphartPatternsDemocracy', 'millOnLiberty', 'tocquevilleDemocracy'], ['lijphartConsensusDemocracy', 'sepDemocracy', 'coeDemocraticGovernance', 'sepPragmatism']),
+      },
+      identity: {
+        score: 0,
+        label: 'Plural civic belonging with practical cooperation',
+        explanation: 'National attachment, constitutional citizenship, migration, regional cooperation, and international institutions are balanced pragmatically. The centrist profile favors inclusive membership and civic compromise, but the actual identity settlement can be assimilationist, cosmopolitan, patriotic, or quietly majoritarian depending on the host party system.',
+        citations: citations(['millOnLiberty', 'tocquevilleDemocracy', 'kantPerpetualPeace'], ['oxfordPoliticalCentrism', 'sepDemocracy', 'coeDemocraticGovernance']),
+      },
+      foreign: {
+        score: 15,
+        label: 'Diplomatic cooperation with bounded security',
+        explanation: 'Diplomacy, alliances, international law, trade, and negotiated institutions are preferred, while force is treated as a limited instrument requiring clear objectives, legal authority, and proportionality. Centrist foreign policy can still support intervention or defense; moderation does not mean pacifism or non-alignment.',
+        citations: citations(['kantPerpetualPeace', 'morgenthauRealism', 'millOnLiberty'], ['foreignPolicy', 'sepPragmatism', 'oxfordPoliticalCentrism']),
+      },
+      religion: {
+        score: 10,
+        label: 'Secular-pluralist and accommodationist',
+        explanation: 'Religious and nonreligious citizens are treated as participants in a plural public sphere, with public law justified through shared civic reasons rather than one confessional authority. Centrist accommodation can protect religious practice while avoiding religious government, although compromise may leave unequal institutional privileges unexamined.',
+        citations: citations(['lockeLetterToleration', 'millOnLiberty', 'tocquevilleDemocracy'], ['sepReligionPolitics', 'sepDemocracy', 'oxfordPluralismConsensus']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The political centre is not simply the average of left and right. It can mean a location in a party system, a set of values such as moderation and pluralism, a coalition strategy, a governing style, or a theory that practical arrangements are preferable to ideological purity. These meanings overlap but should not be collapsed. A centrist party may be economically market-oriented, socially liberal, culturally conservative, internationalist, nationalist, technocratic, or welfare-oriented depending on its context.',
+            citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['oxfordPoliticalCentrism', 'sepPragmatism', 'sepDemocracy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Pragmatism adds a method: policies are judged by consequences, revisability, institutional learning, and their ability to solve problems under real conditions. Consensus politics adds an institutional question: how can divided societies share power without making every disagreement a winner-take-all conflict? Neither approach eliminates values or power. Compromise can be democratic accommodation, or it can become elite closure that prevents citizens from challenging the settlement.',
+            citations: citations(['lijphartPatternsDemocracy', 'millOnLiberty'], ['lijphartConsensusDemocracy', 'sepPragmatism', 'oxfordPluralismConsensus', 'coeDemocraticGovernance']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Centrists often frame politics as the management of competing goods: growth and redistribution, liberty and security, national capacity and international cooperation, social reform and institutional continuity, expertise and democratic control. This can produce practical policy combinations that do not fit a single ideological camp. It can also obscure distributional choices when “balance” treats unequal interests as equally situated or makes the existing settlement appear naturally reasonable.',
+            citations: citations(['keynesGeneralTheory', 'millOnLiberty', 'tocquevilleDemocracy'], ['oxfordPoliticalCentrism', 'sepPragmatism', 'oxfordPluralismConsensus']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The institutional form may be majoritarian moderation, coalition government, consociational power-sharing, social partnership, independent agencies, negotiated federalism, or a centre-left Third Way. Consensus democracy and centrism are related but not identical: a political system can share power among parties that are far apart, while a centrist party can pursue majoritarian government. The relevant evidence is the actual distribution of power, representation, vetoes, accountability, and policy outcomes.',
+            citations: citations(['lijphartPatternsDemocracy'], ['lijphartConsensusDemocracy', 'oxfordPoliticalCentrism', 'sepDemocracy']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'This profile is deliberately didactic and near the midpoint on several dimensions. It does not claim that moderation is always good, that extremes are always bad, or that evidence eliminates political judgment. A democratic pragmatic orientation still needs substantive commitments to equal citizenship, rights, accountability, social repair, and the ability of citizens to reject the policy consensus.',
+            citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepPragmatism', 'sepDemocracy', 'coeDemocraticGovernance', 'oxfordPoliticalCentrism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Older antecedents: mixed government, prudence, and practical judgment',
+            text: 'Arguments for mixed constitutions, moderation, prudence, civic compromise, and attention to circumstances precede the modern label. These sources are antecedents for centrist reasoning, not evidence that earlier thinkers belonged to a modern centre. The contemporary category depends on parties, mass electorates, bureaucratic states, and the changing location of ideological competition.',
+            citations: citations(['tocquevilleDemocracy', 'millOnLiberty'], ['sepDemocracy', 'sepPragmatism']),
+          },
+          {
+            period: 'Nineteenth century: liberal centres and the management of mass politics',
+            text: 'Industrialization, suffrage expansion, labor organization, nationalism, and constitutional reform created pressures between laissez-faire liberalism, socialism, conservatism, and democratic inclusion. Moderate liberal and reformist coalitions attempted to preserve constitutional order while adapting institutions to new social demands. What counted as the centre depended on which groups were enfranchised and which inequalities remained outside the settlement.',
+            citations: citations(['millOnLiberty', 'tocquevilleDemocracy', 'keynesGeneralTheory'], ['oxfordPoliticalCentrism', 'sepDemocracy', 'sepPragmatism']),
+          },
+          {
+            period: 'Early twentieth century: social reform, expertise, and coalition institutions',
+            text: 'Economic crisis, labor conflict, mass parties, and administrative expansion encouraged combinations of social insurance, regulation, public expertise, and constitutional government. Moderation could mean reforming capitalism to preserve democratic stability, or managing conflict through elite bargaining. The distinction matters because social protection can broaden citizenship while technocratic administration can narrow public control.',
+            citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['oxfordPoliticalCentrism', 'sepPragmatism', 'sepDemocracy']),
+          },
+          {
+            period: '1945–1970s: postwar consensus, social-market settlements, and power-sharing',
+            text: 'Postwar democracies developed welfare states, mixed economies, coalition practices, social partnerships, and constitutional settlements intended to prevent a return to depression, fascism, and civil conflict. Consensus and consociational institutions gave multiple groups access to government, while Christian-democratic, social-democratic, liberal, and conservative parties often negotiated durable compromises. These settlements were inclusive in some dimensions and exclusionary in others, especially around empire, gender, migration, and class power.',
+            citations: citations(['lijphartPatternsDemocracy', 'keynesGeneralTheory'], ['lijphartConsensusDemocracy', 'oxfordPoliticalCentrism', 'sepDemocracy']),
+          },
+          {
+            period: '1970s–1990s: crisis of the postwar settlement and the Third Way',
+            text: 'Stagflation, fiscal pressure, globalization, deindustrialization, and criticism of bureaucracy challenged postwar social democracy and state-led policy. Anthony Giddens’s Third Way presented a centre-left attempt to combine market compatibility, social investment, welfare reform, globalization, and democratic modernization. Critics argued that Third Way governments accepted too much market inequality, weakened party contestation, and converted political choices into managerial adaptation.',
+            citations: citations(['giddensThirdWay', 'keynesGeneralTheory'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion', 'oxfordPoliticalCentrism']),
+          },
+          {
+            period: '1990s–2010s: technocracy, coalition governance, and democratic distrust',
+            text: 'Centrist parties and institutions increasingly relied on experts, independent regulators, coalition bargaining, evidence-based administration, and global economic coordination. These tools could stabilize policy and reduce winner-take-all conflict, but they also created distance from citizens, weakened mass-party organization, and narrowed the range of alternatives considered governable. The financial crisis and austerity debates intensified questions about who bears the costs of pragmatic compromise.',
+            citations: citations(['giddensThirdWay', 'lijphartPatternsDemocracy'], ['oxfordThirdWayConversion', 'lijphartConsensusDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance']),
+          },
+          {
+            period: 'Present: polarization, new coalitions, and the contested centre',
+            text: 'Contemporary centrism operates amid polarization, populist challenge, identity conflict, climate risk, migration, technological change, and distrust of established parties. Some centrist projects defend liberal-democratic institutions and seek cross-party problem-solving; others appear as status-quo coalitions that offer moderation without redistribution or meaningful participation. The current centre should therefore be evaluated by its programme, constituency, institutional openness, and record rather than by its self-description.',
+            citations: citations(['millOnLiberty', 'giddensThirdWay'], ['oxfordPoliticalCentrism', 'oxfordPluralismConsensus', 'sepDemocracy', 'coeDemocraticGovernance']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Moderate liberal centre',
+                distinction: 'Combines constitutional rights, market institutions, gradual social reform, civil liberties, and negotiated public policy.',
+                relation: 'A common centrist form, but it can move toward classical liberalism or social liberalism depending on welfare, regulation, and equality commitments.',
+                citations: citations(['millOnLiberty', 'lockeSecondTreatise'], ['oxfordPoliticalCentrism', 'sepDemocracy', 'sepPragmatism']),
+              },
+              {
+                label: 'Consensus and coalition centrism',
+                distinction: 'Seeks accommodation among parties, regions, linguistic or religious groups, and social interests through coalition, federalism, power-sharing, or negotiated policy.',
+                relation: 'Related to but distinct from ideological centrism: consensus institutions can include parties that are left, right, nationalist, or confessional.',
+                citations: citations(['lijphartPatternsDemocracy'], ['lijphartConsensusDemocracy', 'sepDemocracy', 'coeDemocraticGovernance']),
+              },
+              {
+                label: 'Pragmatic pluralism',
+                distinction: 'Treats policy as revisable inquiry and values experimentation, learning, public reasoning, and workable accommodation among people who disagree.',
+                relation: 'A method and democratic ethos rather than a fixed position on taxation, ownership, family, borders, or foreign policy.',
+                citations: citations(['millOnLiberty', 'tocquevilleDemocracy'], ['sepPragmatism', 'oxfordPluralismConsensus', 'sepDemocracy']),
+              },
+              {
+                label: 'Technocratic or managerial centre',
+                distinction: 'Emphasizes expertise, administration, independent agencies, measurable outcomes, fiscal credibility, and insulation from short-term partisan pressure.',
+                relation: 'Can improve competence and continuity but risks treating contestable distributional choices as technical facts and weakening democratic oversight.',
+                citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['oxfordPoliticalCentrism', 'coeDemocraticGovernance', 'sepDemocracy']),
+              },
+              {
+                label: 'Centre-left Third Way',
+                distinction: 'Seeks to combine market economies, social investment, welfare reform, equal opportunity, globalization, and democratic modernization rather than traditional state ownership.',
+                relation: 'A specific late twentieth-century project, not a synonym for all centrism and not politically neutral; critics dispute its distributional consequences and reduced contestation.',
+                citations: citations(['giddensThirdWay', 'keynesGeneralTheory'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion']),
+              },
+              {
+                label: 'Market-friendly or centre-right moderation',
+                distinction: 'Combines private enterprise, fiscal restraint, institutional continuity, gradual reform, and selective social provision or public investment.',
+                relation: 'May overlap with liberal conservatism or Christian democracy; the centre label does not resolve social, national, or welfare questions.',
+                citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['oxfordPoliticalCentrism', 'sepPragmatism']),
+              },
+              {
+                label: 'Status-quo centrism',
+                distinction: 'Defines moderation as preserving existing institutions and avoiding disruptive change, even when existing inequalities or exclusions remain substantial.',
+                relation: 'The main critical boundary: pragmatism can support reform, while status-quo centrism may use neutrality language to protect established power.',
+                citations: citations(['millOnLiberty', 'tocquevilleDemocracy'], ['oxfordPoliticalCentrism', 'oxfordPluralismConsensus', 'sepDemocracy']),
+              },
+              {
+                label: 'Centrism versus radical pluralism',
+                distinction: 'Centrism seeks negotiated middle ground; radical pluralism accepts deep conflict and tries to make disagreement politically productive without demanding total consensus.',
+                relation: 'Consensus can stabilize democracy but suppress conflict; pluralism can expose power but make compromise difficult. Neither is automatically more democratic.',
+                citations: citations(['millOnLiberty', 'lijphartPatternsDemocracy'], ['oxfordPluralismConsensus', 'lijphartConsensusDemocracy', 'sepDemocracy']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'People, movements, and historical examples',
+        blocks: [
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'John Stuart Mill',
+                role: 'Liberal reference for open disagreement, individual liberty, practical reasoning, and the danger of suppressing minority views.',
+                caveat: 'Mill is not simply a centrist and held positions that do not map onto contemporary moderation; he is used as a pluralist reference point.',
+                citations: citations(['millOnLiberty'], ['sepPragmatism', 'sepDemocracy']),
+              },
+              {
+                name: 'Alexis de Tocqueville',
+                role: 'Comparative analyst of democratic habits, associations, equality, centralization, and institutional trade-offs.',
+                caveat: 'Tocqueville’s historical analyses include exclusions and tensions around empire, race, and democracy; they do not provide a complete centrist programme.',
+                citations: citations(['tocquevilleDemocracy'], ['sepDemocracy', 'oxfordPoliticalCentrism']),
+              },
+              {
+                name: 'Arend Lijphart',
+                role: 'Comparative scholar of majoritarian and consensus democracy, accommodation, coalition, federalism, and power-sharing.',
+                caveat: 'Institutional consensus is not the same as ideological centrism, and power-sharing can stabilize democracy while also producing elite bargains or rigid veto structures.',
+                citations: citations(['lijphartPatternsDemocracy'], ['lijphartConsensusDemocracy', 'sepDemocracy']),
+              },
+              {
+                name: 'Anthony Giddens',
+                role: 'Sociologist and theorist of the centre-left Third Way and the modernization of social democracy.',
+                caveat: 'The Third Way was a specific historical project with contested outcomes, not a neutral definition of centrism or a settled consensus about welfare and markets.',
+                citations: citations(['giddensThirdWay'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Consensus-democratic settlements',
+                period: 'Western Europe and other divided democracies, especially postwar twentieth century',
+                match: 'Coalition, accommodation, proportional representation, federalism, or social partnership used to include multiple groups and reduce winner-take-all conflict.',
+                caveat: 'Consensus institutions vary widely and can exclude outsiders, empower party elites, or make responsibility difficult to trace; no country is an exact centrist match by institutional form alone.',
+                citations: citations(['lijphartPatternsDemocracy'], ['lijphartConsensusDemocracy', 'sepDemocracy', 'coeDemocraticGovernance']),
+              },
+              {
+                name: 'Postwar mixed-economy compromise',
+                period: 'Europe and North America, especially 1945–1970s',
+                match: 'Markets, private enterprise, welfare provision, public investment, collective bargaining, and constitutional democracy combined in different national settlements.',
+                caveat: 'The settlement was contested and uneven, with exclusions based on class, gender, race, colonial status, and migration; it should not be romanticized as pure moderation.',
+                citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['oxfordPoliticalCentrism', 'sepDemocracy', 'sepPragmatism']),
+              },
+              {
+                name: 'Centre-left Third Way projects',
+                period: 'Britain, Europe, and related party systems, especially 1990s–2000s',
+                match: 'A specific attempt to combine social investment, market compatibility, welfare reform, globalization, and liberal social policy after the crisis of traditional social democracy.',
+                caveat: 'The projects differed by country and are contested over privatization, deregulation, inequality, labor power, public services, and reduced ideological contestation.',
+                citations: citations(['giddensThirdWay'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion', 'oxfordPoliticalCentrism']),
+              },
+              {
+                name: 'Federal and coalition pragmatism',
+                period: 'Country- and party-system-specific',
+                match: 'Governments manage disagreement through coalition bargaining, federal compromise, cross-party agreements, or negotiated public administration rather than a single ideological mandate.',
+                caveat: 'Coalition does not prove centrism: governments can bargain while pursuing polarized or exclusionary programmes, and centrist rhetoric can mask unequal bargaining power.',
+                citations: citations(['lijphartPatternsDemocracy', 'millOnLiberty'], ['lijphartConsensusDemocracy', 'coeDemocraticGovernance', 'sepDemocracy']),
+              },
+              {
+                name: 'Evidence-led public problem-solving',
+                period: 'Contemporary and historically recurring; policy-specific',
+                match: 'Public bodies test, revise, and evaluate policies through data, expertise, consultation, and institutional learning while remaining open to democratic review.',
+                caveat: 'Evidence does not determine values or distribution by itself. Expertise must be transparent, contestable, accessible, and accountable to affected communities.',
+                citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepPragmatism', 'sepDemocracy', 'coeDemocraticGovernance']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'liberal-constitutionalist', relation: 'shares rights, pluralism, institutional limits, and constitutional citizenship, while centrism may be less committed to one liberal economic or rights programme' },
+              { id: 'social-democratic', relation: 'can overlap through welfare, labor protection, and mixed economies, while centrist pragmatism is less economically defined and may accept market-oriented or Third Way reforms' },
+              { id: 'christian-democratic', relation: 'may share coalition-building, social-market compromise, and intermediary institutions, but Christian democracy has a specific religious social tradition' },
+              { id: 'conservative', relation: 'may share institutional caution and gradual change, but centrism can support progressive reform and does not require inherited authority or national continuity' },
+              { id: 'populist', relation: 'both may claim practical responsiveness to citizens, but populism constructs a morally unified people against an elite while centrism emphasizes compromise and plural institutions' },
+              { id: 'democratic-socialist', relation: 'can cooperate on democratic reform and public provision, but democratic socialism has stronger commitments to economic equality, worker power, and social ownership' },
+              { id: 'authoritarian-collectivist', relation: 'is its authority and pluralist opposite: pragmatic centrism requires reviewable institutions and does not subordinate opposition to a party-state' },
+              { id: 'militarist-imperialist', relation: 'may share administrative capacity or alliances in some foreign policies, but centrism treats force as bounded and does not make expansion or militarization constitutive' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'A first criticism is that the centre can be empty or relational. Calling a position moderate does not explain its values, beneficiaries, or consequences; a policy may be centrist only because the entire party system has shifted. The entry therefore treats centrism as a context-dependent classification and requires the underlying programme to be recorded on each dimension.',
+            citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['oxfordPoliticalCentrism', 'sepPragmatism', 'sepDemocracy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A second criticism concerns status-quo bias. Compromise can protect minorities and reduce violence, but it can also preserve unequal property, racial hierarchy, gendered care, colonial borders, or exclusionary citizenship. If one side begins with greater power, splitting the difference may reproduce injustice rather than create fair accommodation. Pragmatic reform needs explicit equality and repair criteria, not only feasibility.',
+            citations: citations(['millOnLiberty', 'tocquevilleDemocracy'], ['oxfordPluralismConsensus', 'sepDemocracy', 'oxfordPoliticalCentrism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A third criticism concerns technocracy. Expertise, independent administration, and evidence can improve public decisions, yet technical language can conceal value choices about risk, distribution, labor, environment, and whose knowledge counts. Democratic safeguards include transparent methods, accessible reasons, conflict-of-interest rules, independent review, public participation, and the ability to reject the expert recommendation.',
+            citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepPragmatism', 'sepDemocracy', 'coeDemocraticGovernance']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A fourth criticism concerns Third Way and market-centre projects. Reconciliation between markets and social protection can be constructive, but market-compatible modernization may weaken labor bargaining, privatize public goods, or turn equality into opportunity rhetoric without redistribution. The historical record must distinguish social investment from austerity, public regulation from deregulation, and broad citizenship from consumer-oriented policy.',
+            citations: citations(['giddensThirdWay', 'keynesGeneralTheory'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion', 'oxfordPoliticalCentrism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, consensus can become elite closure. Coalition bargaining, proportional institutions, and cross-party agreements may include more groups, but they can also make responsibility opaque, weaken opposition, and reduce the public’s ability to choose between genuinely different futures. A democratic centre should preserve contestation, alternation, organized dissent, minority rights, and the possibility that citizens can reject the compromise itself.',
+            citations: citations(['lijphartPatternsDemocracy', 'millOnLiberty'], ['lijphartConsensusDemocracy', 'oxfordPluralismConsensus', 'sepDemocracy', 'coeDemocraticGovernance']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['lijphartPatternsDemocracy', 'giddensThirdWay', 'millOnLiberty', 'keynesGeneralTheory', 'tocquevilleDemocracy', 'kantPerpetualPeace', 'lockeLetterToleration'],
+      researchSourceIds: ['oxfordPoliticalCentrism', 'lijphartConsensusDemocracy', 'oxfordThirdWayConversion', 'wileyThirdWayGiddens', 'sepPragmatism', 'sepDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance', 'foreignPolicy', 'sepLiberalism', 'vdem'],
+      editorialNote: 'The entry treats centrism as context-dependent positioning and pragmatic or consensus-oriented practice, not as a universal midpoint or moral superiority. It distinguishes moderation from technocracy, status-quo bias, liberal constitutionalism, social democracy, Christian democracy, populism, and the Third Way.',
+    },
+    researchGaps: [
+      'Add original-language research in French, German, Portuguese, Spanish, Italian, Dutch, and English on historical centres, coalition parties, consensus settlements, and the political meaning of moderation in each country.',
+      'Compare centrist voter positions, party manifestos, coalition agreements, and governing records using multidimensional data rather than one left–right self-placement.',
+      'Expand research on non-European and postcolonial forms of pragmatic pluralism, consensus, federal compromise, social partnership, and developmental moderation without treating Western Europe as the default.',
+      'Study who gains and who loses from compromise in taxation, property, labor, welfare, migration, family policy, environmental risk, colonial legacies, and public services.',
+      'Add primary documents and institutional evidence for Third Way projects, social-market settlements, coalition governments, consociational systems, and technocratic agencies, including their internal critics.',
+      'Compare expertise, evidence-based policy, citizen assemblies, participatory budgeting, deliberation, referendums, and representative institutions for transparency, inclusion, accountability, and policy learning.',
+      'Test whether the six-dimensional near-midpoint profile obscures meaningful disagreement; allow centrist actors to score strongly on particular dimensions while remaining centrist only in party-system position or coalition practice.',
+    ],
+  },
 };

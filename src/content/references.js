@@ -448,6 +448,22 @@ export const AUTHOR_REFERENCES = {
     context: 'Post-Marxist account of populist articulation, political demands, antagonism, and the construction of a popular subject; cited as one theoretical approach and not as a universal description of populist movements.',
     url: 'https://www.penguinrandomhouse.com/books/233079/on-populist-reason-by-ernesto-laclau/',
   },
+  lijphartPatternsDemocracy: {
+    author: 'Arend Lijphart',
+    work: 'Patterns of Democracy: Government Forms and Performance in Thirty-Six Countries',
+    year: '1999 / 2012',
+    kind: 'scholarly',
+    context: 'Comparative account of majoritarian and consensus democracy, used to distinguish institutional compromise from ideological centrism and to avoid treating “the centre” as one national policy position.',
+    url: 'https://www.jstor.org/stable/j.ctt1ww3w2t',
+  },
+  giddensThirdWay: {
+    author: 'Anthony Giddens',
+    work: 'The Third Way: The Renewal of Social Democracy',
+    year: '1998',
+    kind: 'primary',
+    context: 'A primary theoretical statement of a centre-left project seeking to renew social democracy through market compatibility, social investment, welfare reform, globalization, and democratic modernization.',
+    url: 'https://openlibrary.org/books/OL9616094M/Third_Way',
+  },
 };
 
 // Every band receives an explicit list. These are references for the

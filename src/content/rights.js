@@ -260,6 +260,14 @@ const RIGHTS_RECORDS = {
     oxfordLatinAmericaPopulism: { ...LINK_ONLY, notes: 'Oxford Academic chapter used as a linked comparative source; no chapter text, tables, or figures are reproduced.' },
     americanYawpOmahaPlatform: { ...LINK_ONLY, notes: 'Educational primary-source reader used as a link to the Omaha Platform; no reader text, scans, or reproduced platform wording is published.' },
     coePopulismDemocracy: { ...OFFICIAL_TEXT, notes: 'Council of Europe institutional report used for independent synthesis of pluralism, rule of law, rights, media, and democratic resilience; no report text or graphics are reproduced.' },
+    oxfordPoliticalCentrism: { ...LINK_ONLY, notes: 'Oxford Research Archive thesis record used as a linked scholarly source; no thesis text, tables, or figures are reproduced.' },
+    lijphartConsensusDemocracy: { ...LINK_ONLY, notes: 'Wiley scholarly article used as a linked comparative source; no article text, tables, or figures are reproduced.' },
+    oxfordThirdWayConversion: { ...LINK_ONLY, notes: 'Oxford Academic chapter used as a linked critical historical source; no chapter text, tables, or figures are reproduced.' },
+    wileyThirdWayGiddens: { ...LINK_ONLY, notes: 'Publisher record used as a link to Giddens’s work; no copyrighted book text or figures are reproduced.' },
+    sepPragmatism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared; only independent summaries and links are used.' },
+    sepDemocracy: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared; only independent summaries and links are used.' },
+    oxfordPluralismConsensus: { ...LINK_ONLY, notes: 'Oxford Academic book record used as a linked political-theory source; no book text, tables, or figures are reproduced.' },
+    coeDemocraticGovernance: { ...OFFICIAL_TEXT, notes: 'Council of Europe institutional framework used for independent synthesis of transparency, accountability, participation, and democratic trust; no institutional text or graphics are reproduced.' },
     euRobertSchuman: { ...OFFICIAL_TEXT, notes: 'European Union historical page used for independent summary of Robert Schuman’s public work; no EU text, images, or graphics are reproduced.' },
     adenauerHouse: { ...LINK_ONLY, notes: 'Institutional foundation and biography page used as a linked source for Konrad Adenauer’s political work; no page text, images, or exhibition material is reproduced.' },
     bpbChristianDemocraticCVP: { ...LINK_ONLY, notes: 'German federal civic-education source used for independent historical synthesis; no bpb text, images, or graphics are reproduced.' },
@@ -365,6 +373,8 @@ const RIGHTS_RECORDS = {
     muddeKaltwasserPopulism: { ...PERMISSION_SENSITIVE, notes: 'Publisher/catalog record used as a link to a scholarly book; no copyrighted book text or figures are reproduced.' },
     mullerWhatIsPopulism: { ...PERMISSION_SENSITIVE, notes: 'Publisher record used as a link to a scholarly book; no copyrighted book text or figures are reproduced.' },
     laclauOnPopulistReason: { ...PERMISSION_SENSITIVE, notes: 'Publisher record used as a link to a scholarly book; no copyrighted book text or figures are reproduced.' },
+    lijphartPatternsDemocracy: { ...PERMISSION_SENSITIVE, notes: 'Scholarly book record used as a link to comparative research; no copyrighted book text, tables, or figures are reproduced.' },
+    giddensThirdWay: { ...PERMISSION_SENSITIVE, notes: 'Publisher record used as a link to Giddens’s work; no copyrighted book text or figures are reproduced.' },
   },
 };
 
