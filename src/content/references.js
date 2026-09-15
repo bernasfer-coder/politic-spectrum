@@ -173,6 +173,14 @@ export const AUTHOR_REFERENCES = {
     quote: 'Men being, as has been said, by nature, all free, equal, and independent.',
     url: 'https://www.gutenberg.org/files/7370/7370-h/7370-h.htm',
   },
+  federalistPapers: {
+    author: 'Alexander Hamilton, James Madison & John Jay',
+    work: 'The Federalist',
+    year: '1787–1788',
+    kind: 'primary',
+    context: 'A collection of constitutional essays used to interpret federalism, separated powers, representation, checks and balances, and the problem of faction. It is evidence for one constitutional argument in a particular founding context, not a complete or universally inclusive account of liberalism.',
+    url: 'https://www.loc.gov/item/09021562/',
+  },
   bakuninStatism: {
     author: 'Mikhail Bakunin',
     work: 'Statism and Anarchy',

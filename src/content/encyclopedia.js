@@ -7675,4 +7675,283 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Test whether the six-dimensional near-midpoint profile obscures meaningful disagreement; allow centrist actors to score strongly on particular dimensions while remaining centrist only in party-system position or coalition practice.',
     ],
   },
+  'liberal-constitutionalist': {
+    id: 'liberal-constitutionalist',
+    title: 'Liberal constitutionalist',
+    canonicalLabel: 'Liberal constitutionalism',
+    aliases: ['constitutional liberalism', 'liberal constitutionalist', 'rights-based constitutionalism', 'limited government liberalism'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'Liberal constitutionalism is treated as a family of arguments and institutions that place public power under a higher law, protect individual and civic rights, require accountable government, and make coercion subject to public rules. It is not identical to laissez-faire economics, parliamentary government, judicial supremacy, secularism, or universal suffrage; each of those questions has its own history and internal disputes.',
+    timeScope: 'Its modern vocabulary developed through early-modern natural-rights and consent theories, seventeenth- and eighteenth-century constitutional struggles, Atlantic and European constitutional experiments, nineteenth-century liberal reform, and twentieth-century rights-based democracy. Earlier law, mixed-government, and religious traditions are treated as antecedents rather than retroactively classified as liberal.',
+    geographicScope: 'Comparative and transnational. The profile draws on British, North American, European, Latin American, African, Asian, and international constitutional experiences, while recording that liberal constitutional language was used both for emancipation and for property, racial, gendered, imperial, and colonial exclusion.',
+    summary: 'A political tradition that seeks to make government limited, lawful, rights-protecting, representative, and reviewable. Its core question is not whether the state is large or small, but whether public power is authorized, divided, constrained, contestable, and compatible with equal civic standing. Liberal constitutionalism can support markets or social provision, parliamentary or presidential institutions, strong or weak judicial review, and national or international rights regimes; the score here is therefore a didactic profile rather than a universal party label.',
+    summaryCitations: citations(
+      ['lockeSecondTreatise', 'millOnLiberty', 'federalistPapers', 'constantLibertyModerns'],
+      ['oxfordLiberalismResearch', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'unRuleLawHumanRights'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 30,
+        label: 'Market-oriented, with lawful public goods',
+        explanation: 'The tradition commonly protects private property, contract, and voluntary exchange, but constitutionalism does not logically require a minimal state or unregulated markets. Taxation, infrastructure, education, social insurance, labor law, and economic regulation can be compatible with liberal constitutionalism when enacted under general law and justified through equal civic status rather than arbitrary privilege.',
+        citations: citations(['adamSmithWealth', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'oxfordLiberalismResearch', 'sepConstitutionalism']),
+      },
+      social: {
+        score: -25,
+        label: 'Individual liberty, historically uneven inclusion',
+        explanation: 'Freedom of expression, association, conscience, privacy, and personal development are central, but the historical tradition often combined universal language with restricted citizenship, gender hierarchy, property qualifications, slavery, or colonial rule. The profile therefore protects personal liberty without treating every historical liberal as socially progressive or every rights claim as equally applied.',
+        citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative', 'colonialLiberalismExclusion']),
+      },
+      authority: {
+        score: -65,
+        label: 'Strong limits, divided power, and legal accountability',
+        explanation: 'Government must act through publicly knowable law, consent or representation, due process, institutional checks, and remedies against arbitrary power. Liberal constitutionalists differ over whether courts, legislatures, executives, federal units, or citizens should have the final word, but concentrated and unreviewable authority is the clearest boundary of the family.',
+        citations: citations(['lockeSecondTreatise', 'federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'unRuleLawHumanRights', 'vdem']),
+      },
+      identity: {
+        score: -25,
+        label: 'Civic constitutional membership',
+        explanation: 'The preferred basis of membership is citizenship under common law and constitutional rights rather than ethnic sameness. Liberal constitutionalism can still be patriotic and territorially bounded, and its historical practice often excluded colonized peoples, migrants, women, racialized groups, or religious minorities. Constitutional universalism is therefore an aspiration and institutional test, not proof that a polity has already achieved equal membership.',
+        citations: citations(['lockeSecondTreatise', 'kantPerpetualPeace', 'tocquevilleDemocracy'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'sepColonialism', 'colonialLiberalismExclusion']),
+      },
+      foreign: {
+        score: -35,
+        label: 'Lawful diplomacy and bounded defense',
+        explanation: 'The orientation favors treaties, commerce, diplomacy, defensive security, and international rules over arbitrary conquest. It is not automatically pacifist: constitutional states may claim a right of self-defense or support intervention under law. The decisive question is whether force is publicly authorized, limited, reviewable, and consistent with the equal status of people affected by it.',
+        citations: citations(['kantPerpetualPeace', 'millOnLiberty'], ['foreignPolicy', 'echrConvention', 'sepConstitutionalism']),
+      },
+      religion: {
+        score: -55,
+        label: 'Freedom of conscience and non-confessional public law',
+        explanation: 'The profile protects religion and nonbelief while resisting the use of one church or theology as an unreviewable source of coercive law. Liberal constitutional settlements range from strict separation to accommodation or an established church; the common requirement is that conscience, minority rights, and public accountability cannot depend entirely on religious conformity.',
+        citations: citations(['lockeLetterToleration', 'millOnLiberty', 'kantPerpetualPeace'], ['sepReligionPolitics', 'sepLiberalism', 'unRuleLawHumanRights', 'echrConvention']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Liberal constitutionalism asks how a community can exercise collective power without turning government into the unbounded will of a ruler, majority, party, military, church, or bureaucracy. Its characteristic answer is a constitutional order: public offices are created and limited by higher rules; rights and procedures constrain coercion; officials must give reasons and remain answerable; and citizens have lawful ways to contest, replace, or review power. The tradition is best understood as a cluster of commitments, not as one economic programme or one institutional blueprint.',
+            citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'federalistPapers'], ['oxfordLiberalismResearch', 'sepConstitutionalism', 'unRuleLawHumanRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The label also contains a central tension. Constitutional limits can protect minorities and individual freedom against majoritarian abuse, but entrenched rules and courts can frustrate democratic change or preserve an old social settlement. Liberal constitutionalism therefore requires two tests at once: whether power is constrained, and whether the constitution itself remains open to equal citizenship, amendment, participation, and correction. A constitution that limits government while excluding most people from membership is formally constitutional but substantively incomplete.',
+            citations: citations(['federalistPapers', 'millOnLiberty', 'wollstonecraftRights'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordLiberalismResearch', 'colonialLiberalismExclusion']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The core institutional vocabulary includes constitutional supremacy or fundamental law, legality, due process, equal protection, freedom of conscience and expression, representative government, separated or divided powers, independent adjudication, regular elections, and peaceful alteration of office. Federalism, bicameralism, proportional representation, parliamentary responsibility, presidential separation, and constitutional courts are possible designs rather than mandatory ingredients. The evidence must describe how each institution actually distributes power, not infer liberalism from a document’s title alone.',
+            citations: citations(['federalistPapers', 'lockeSecondTreatise', 'millOnLiberty'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Rights do not operate only as abstract declarations. Rule-of-law institutions require accessible procedures, independent decision-makers, reasoned judgments, equal application, remedies, and accountability for officials. Modern human-rights instruments add international supervision and explicit commitments to equality, dignity, and freedom; these developments broadened older constitutional language but also created new conflicts over emergency powers, national security, economic rights, migration, privacy, and the authority of international courts.',
+            citations: citations(['millOnLiberty', 'kantPerpetualPeace'], ['unRuleLawHumanRights', 'echrConvention', 'oxfordConstitutionalJustice', 'vdem']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The public score is deliberately didactic. It places this label near market-oriented, socially liberty-protecting, strongly anti-arbitrary-power, civic, legally restrained, and non-confessional positions. It does not claim that all liberal constitutionalists favor small government, progressive cultural change, international intervention, judicial supremacy, or one model of secularism.',
+            citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['oxfordLiberalismResearch', 'sepConstitutionalism', 'sepLiberalism', 'foreignPolicy']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Ancient and medieval antecedents — law, mixed government, and corporate limits',
+            text: 'Ideas of lawful rule, mixed government, civic membership, customary liberty, religious jurisdiction, and limits on rulers predate modern liberalism. They supplied concepts later reused by liberal constitutionalists, but neither classical republicanism nor medieval constitutional practice should be collapsed into modern rights-based liberalism; their ideas of status, citizenship, hierarchy, and community were different.',
+            citations: citations(['tocquevilleDemocracy'], ['sepConstitutionalism', 'oxfordBritishConstitutionalism']),
+          },
+          {
+            period: 'Seventeenth century — consent, resistance, property, and toleration',
+            text: 'Civil conflict, religious division, and struggles over royal prerogative encouraged arguments that legitimate government depends on consent and must protect life, liberty, property, and conscience. Locke’s account became a major reference point, but its historical setting and exclusions matter: the language of natural equality did not automatically produce equal political membership for women, the poor, enslaved people, or colonized populations.',
+            citations: citations(['lockeSecondTreatise', 'lockeLetterToleration'], ['sepLiberalism', 'sepReligionPolitics', 'colonialLiberalismExclusion']),
+          },
+          {
+            period: 'Eighteenth century — constitutional revolutions and federal design',
+            text: 'Atlantic constitutional movements translated rights, representation, republican government, and anti-arbitrary-power arguments into written constitutions, declarations, and institutional designs. The Federalist essays defended an extended republic, representation, federalism, separated powers, and checks against faction. These arrangements created durable tools for divided power while coexisting with slavery, colonial domination, property qualifications, and restricted suffrage.',
+            citations: citations(['federalistPapers', 'lockeSecondTreatise'], ['locFederalistPapers', 'sepConstitutionalism', 'colonialLiberalismExclusion']),
+          },
+          {
+            period: 'Nineteenth century — civil liberty, representative reform, and the limits of liberal citizenship',
+            text: 'Liberal constitutionalism developed alongside parliamentary reform, free speech campaigns, commercial society, expanding education, abolitionist and feminist arguments, and new theories of representative government. Mill defended individuality and open discussion, while Wollstonecraft exposed the contradiction between universal rights language and women’s subordination. At the same time, liberal constitutionalism was repeatedly entangled with empire, racial hierarchy, property power, and claims that some peoples were not ready for self-government.',
+            citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepMill', 'sepLiberalism', 'colonialLiberalismExclusion', 'sepColonialism']),
+          },
+          {
+            period: 'Early twentieth century — mass democracy, social rights, and constitutional crisis',
+            text: 'Universal or expanded suffrage, labor movements, women’s political mobilization, economic crisis, and mass parties pressured liberal constitutions to address social and material power rather than only formal legal freedom. Some systems responded with social rights and welfare institutions; others used emergency powers, executive rule, or anti-pluralist movements. The period shows that constitutional form alone does not prevent authoritarian capture when courts, parties, civil society, or public administration fail to resist it.',
+            citations: citations(['millOnLiberty', 'wollstonecraftRights'], ['sepConstitutionalism', 'vdem', 'unRuleLawHumanRights']),
+          },
+          {
+            period: '1945–1989 — international human rights and constitutional courts',
+            text: 'After fascism and world war, constitutional reconstruction strengthened judicial review, rights catalogues, federal safeguards, international human-rights law, and limits on emergency government. The Universal Declaration and the European Convention made rights protection more explicitly international, while postwar constitutions treated human dignity, equality, and democratic order as safeguards against a repeat of totalitarian destruction. These institutions still depend on domestic political practice and can be unevenly enforced.',
+            citations: citations(['kantPerpetualPeace', 'millOnLiberty'], ['unRuleLawHumanRights', 'echrConvention', 'oxfordConstitutionalJustice', 'vdem']),
+          },
+          {
+            period: '1989–present — constitutional pluralism, backsliding, and new rights conflicts',
+            text: 'Contemporary constitutionalism faces democratic backsliding, executive aggrandizement, polarization, migration, digital surveillance, platform power, climate emergency, transnational courts, economic inequality, and disputes between originalist, living, popular, and common-good interpretations. The liberal constitutional question remains practical: can institutions preserve equal rights and accountable contestation while adapting to problems that earlier constitutional settlements did not anticipate?',
+            citations: citations(['federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'vdem', 'oxfordConstitutionalJustice', 'echrConvention', 'oxfordLiberalismResearch']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Classical rights-limited liberalism',
+                distinction: 'Emphasizes property, contract, civil liberty, limited government, and protection against arbitrary interference.',
+                relation: 'A major strand of liberal constitutionalism, but not the whole family: social rights and public provision may also be constitutionalized.',
+                citations: citations(['lockeSecondTreatise', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative']),
+              },
+              {
+                label: 'Social or welfare constitutionalism',
+                distinction: 'Adds labor protections, social insurance, public services, equality duties, and sometimes enforceable social rights to civil and political rights.',
+                relation: 'Retains constitutional limits while rejecting the idea that formal non-interference is sufficient for equal freedom.',
+                citations: citations(['millOnLiberty', 'wollstonecraftRights'], ['oxfordLiberalismResearch', 'unRuleLawHumanRights', 'sepConstitutionalism']),
+              },
+              {
+                label: 'Parliamentary liberal constitutionalism',
+                distinction: 'Relies on responsible government, legislative accountability, conventions, party competition, and political remedies, often with flexible or partially codified rules.',
+                relation: 'Can protect rights through institutions other than a single entrenched constitutional court; parliamentary sovereignty and rights review remain contested.',
+                citations: citations(['constantLibertyModerns', 'millOnLiberty'], ['oxfordBritishConstitutionalism', 'sepConstitutionalism']),
+              },
+              {
+                label: 'Strong-form judicial review',
+                distinction: 'Gives courts significant authority to invalidate legislation or executive action that violates constitutional rights or structure.',
+                relation: 'Can protect minorities and legality, but raises the counter-majoritarian question of unelected judges overruling elected institutions.',
+                citations: citations(['federalistPapers', 'millOnLiberty'], ['oxfordConstitutionalJustice', 'sepConstitutionalism', 'unRuleLawHumanRights']),
+              },
+              {
+                label: 'Weak-form or dialogic review',
+                distinction: 'Allows courts to identify rights conflicts or issue declarations while leaving greater room for legislatures to respond and revise the law.',
+                relation: 'A different institutional allocation of constitutional responsibility, not an absence of rights protection.',
+                citations: citations(['federalistPapers'], ['sepConstitutionalism', 'oxfordConstitutionalJustice']),
+              },
+              {
+                label: 'Federal and consociational liberalism',
+                distinction: 'Uses divided territorial power, bicameralism, coalition, minority vetoes, or negotiated power-sharing to prevent domination by one group or region.',
+                relation: 'Extends the anti-concentration principle beyond the central executive, but can make accountability and equal participation harder to trace.',
+                citations: citations(['federalistPapers', 'tocquevilleDemocracy'], ['locFederalistPapers', 'sepConstitutionalism', 'vdem']),
+              },
+              {
+                label: 'Constitutional patriotism',
+                distinction: 'Grounds political belonging in democratic rights, constitutional procedures, and equal citizenship rather than ancestry or ethnic homogeneity.',
+                relation: 'Overlaps with civic nationalism but asks more explicitly whether public identity is tied to constitutional norms and post-national rights.',
+                citations: citations(['kantPerpetualPeace', 'tocquevilleDemocracy'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'coeDemocraticCitizenship']),
+              },
+              {
+                label: 'Constitutional emergency liberalism',
+                distinction: 'Permits temporary exceptional powers to address war, terrorism, disaster, or institutional crisis under necessity, legality, time limits, and review.',
+                relation: 'The danger boundary: emergency clauses can preserve constitutional order, or normalize executive exception and suspend the very rights they claim to defend.',
+                citations: citations(['federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'unRuleLawHumanRights', 'vdem']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Illustrative examples and boundaries',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The United States Constitution and Bill of Rights, the British constitutional tradition, postwar German constitutionalism, the European Convention system, and many postcolonial constitutions are useful comparative cases, not identical embodiments. Each combines rights, institutions, social settlements, colonial legacies, party systems, and enforcement practices differently. The category should therefore be assigned to a constitutional pattern or argument with evidence, not to a country merely because it holds elections or calls itself liberal.',
+            citations: citations(['federalistPapers', 'millOnLiberty'], ['locFederalistPapers', 'oxfordBritishConstitutionalism', 'echrConvention', 'vdem', 'oxfordLiberalismResearch']),
+          },
+          {
+            type: 'paragraph',
+            text: 'John Locke, Benjamin Constant, James Madison, Alexander Hamilton, John Stuart Mill, Mary Wollstonecraft, Immanuel Kant, and later constitutional theorists are reference points in different arguments within the family. They should not be presented as a single school: they disagree over property, participation, empire, social reform, representation, religion, war, and the institutional location of constitutional authority.',
+            citations: citations(['lockeSecondTreatise', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace'], ['oxfordLiberalismResearch', 'sepConstitutionalism', 'sepLiberalism']),
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'classical-liberal', relation: 'shares property, civil liberty, and limited government, but classical liberalism is more economically specified and need not include a developed constitutional theory' },
+              { id: 'progressive-liberal', relation: 'shares rights, equality, and plural citizenship, while progressive liberalism generally gives more weight to social transformation and positive public provision' },
+              { id: 'centrist-pragmatist', relation: 'can overlap through pluralism and institutional compromise, but centrism is positional and pragmatic rather than defined by a rights-limiting constitutional doctrine' },
+              { id: 'social-democratic', relation: 'can share welfare, labor rights, and democratic institutions, while social democracy is more economically egalitarian and organized around social protection' },
+              { id: 'civic-nationalist', relation: 'can share citizenship-based membership, but civic nationalism is primarily an identity doctrine while liberal constitutionalism is a theory of lawful, rights-constrained power' },
+              { id: 'conservative', relation: 'can share institutional restraint and gradual change, but conservatism gives greater weight to inherited authority, continuity, and social order' },
+              { id: 'authoritarian-collectivist', relation: 'is a direct authority opposite: liberal constitutionalism disperses and reviews power while authoritarian collectivism subordinates plural institutions to concentrated collective authority' },
+              { id: 'theocratic', relation: 'may share constitutional structure, but theocracy makes religious authority constitutive of public law whereas liberal constitutionalism requires freedom of conscience and non-confessional accountability' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first criticism is the counter-majoritarian difficulty. A constitution and court can prevent a temporary majority from violating rights, but judges and entrenched institutions may also block reforms supported by a democratic majority or preserve the preferences of an earlier elite. A defensible system needs transparent appointment, reasoned decisions, legislative response, amendment routes, access to justice, and ongoing public contestation rather than treating judicial power as automatically neutral.',
+            citations: citations(['federalistPapers', 'millOnLiberty'], ['oxfordConstitutionalJustice', 'sepConstitutionalism', 'unRuleLawHumanRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second criticism is formal equality. Liberal constitutions have often proclaimed universal rights while leaving property, race, gender, colonial status, caste, religion, disability, or immigration status to determine who could exercise them in practice. Rights language can be emancipatory, but researchers must identify the actual rights-holder, remedy, enforcement institution, and excluded population in each period.',
+            citations: citations(['wollstonecraftRights', 'lockeSecondTreatise', 'millOnLiberty'], ['colonialLiberalismExclusion', 'sepColonialism', 'unRuleLawHumanRights', 'oxfordLiberalismResearch']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third criticism concerns property and economic power. Private property and contract can protect independence and pluralism, yet unequal ownership can translate into unequal political influence, dependence, or inability to exercise formal freedoms. Liberal constitutionalism must therefore be distinguished from any one market policy and evaluated by its treatment of labor, public goods, social minimums, corporate power, taxation, and the material conditions of participation.',
+            citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'oxfordLiberalismResearch', 'unRuleLawHumanRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth criticism is imperial and colonial contradiction. Liberal powers sometimes defended constitutional liberty at home while denying self-government or equal legal standing abroad. That history does not prove that constitutional rights are meaningless; it shows why universal claims require anti-domination tests, equal membership, accountability for external force, and attention to voices that older constitutional archives marginalized.',
+            citations: citations(['millOnLiberty', 'kantPerpetualPeace', 'tocquevilleDemocracy'], ['colonialLiberalismExclusion', 'sepColonialism', 'oxfordLiberalismResearch']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fifth criticism concerns emergency and security power. War, terrorism, pandemic, disaster, and technological threats can require rapid action, but indefinite emergency, secrecy, surveillance, preventive detention, or executive decree can hollow out constitutional accountability. Safeguards include necessity, proportionality, legality, sunset clauses, legislative renewal, independent review, public reasons, protected remedies, and equal treatment of politically unpopular groups.',
+            citations: citations(['federalistPapers', 'millOnLiberty'], ['unRuleLawHumanRights', 'echrConvention', 'vdem', 'sepConstitutionalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, the label itself can be used strategically. Governments may retain constitutional text while weakening courts, media, opposition, elections, civil society, or minority rights. Conversely, a state may lack a single codified constitution yet maintain strong constitutional practices. The classification should therefore record both text and practice, distinguish design from implementation, and show uncertainty where evidence is incomplete or contested.',
+            citations: citations(['federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'vdem', 'oxfordConstitutionalJustice', 'coeDemocraticCitizenship']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy'],
+      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy'],
+      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of rights-constraining constitutional arguments from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state.',
+    },
+    researchGaps: [
+      'Add original-language research in Portuguese, French, German, Spanish, Arabic, Hindi, Chinese, and African constitutional traditions, including constitutional arguments that do not begin from the Anglo-American canon.',
+      'Compare written constitutional text with lived practice using court decisions, legislative records, administrative enforcement, party competition, civil-society evidence, and rights outcomes rather than relying on formal design alone.',
+      'Expand the history of liberal constitutionalism’s relationship with slavery, abolition, empire, settler colonialism, indigenous sovereignty, caste, migration, gender, disability, and racialized citizenship.',
+      'Map disagreements over parliamentary sovereignty, constitutional courts, originalism, living constitutionalism, popular constitutionalism, common-good constitutionalism, and dialogic or weak-form review.',
+      'Study economic constitutionalism: property, labor, taxation, social rights, public services, corporate power, ecological limits, and the material conditions required for equal civic participation.',
+      'Add comparative case studies of emergency powers, democratic backsliding, digital surveillance, platform governance, climate emergencies, and international human-rights supervision, including successful safeguards and documented failures.',
+      'Test whether the six-dimensional score should separate constitutional structure from the substantive social settlement and whether uncertainty ranges are preferable to a single point score for historically changing traditions.',
+    ],
+  },
 };
