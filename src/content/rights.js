@@ -170,6 +170,9 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    cabralCulturePortuguese: { ...LINK_ONLY, reviewedAt: '2026-09-15', notes: 'No blanket clearance of Cabral’s work, collected edition, transcription, or translations is assumed. Original English paraphrase and source link only; no speech passages reproduced.' },
+    gomesWomenLiberation: { ...OPEN_LICENSE, reviewedAt: '2026-09-15', action: 'Link to the publisher and use original analysis. Any republication or adaptation of licensed text must satisfy attribution and ShareAlike; independently check third-party material.', notes: 'The publisher displays CC BY-SA 4.0 for the article. No participant quotation, photograph, PDF page, or translated extract is reproduced in this project.' },
+    degrassiCabralSocionatures: { ...LINK_ONLY, reviewedAt: '2026-09-15', notes: 'Only an original paraphrase of the stated research focus and a repository link are used. Abstract availability does not clear reproduction of the abstract or full article.' },
     leoImmortaleDeiFrench: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-15', notes: 'Original paraphrase and link only. The historical date does not clear the French version, transcription, or modern translations for reproduction.' },
     vaticanReligiousFreedomFrench: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-15', notes: 'No conciliar passage, translated extract, facsimile, or media reproduced; public access is not treated as a reuse licence.' },
     portierEpiscopateFreedom: { ...LINK_ONLY, reviewedAt: '2026-09-15', license: 'Publisher website states all rights reserved; free PDF access is not a republication licence.', notes: 'Only original synthesis and a publisher link. No article text, translated quotation, page image, or PDF is bundled.' },

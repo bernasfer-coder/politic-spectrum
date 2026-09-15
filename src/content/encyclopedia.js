@@ -3600,14 +3600,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
       economic: {
         score: 55,
         label: 'Moderately collectivist / anti-extractive',
-        explanation: 'Colonial land seizure, forced labor, unequal trade, and resource extraction are commonly treated as political-economic domination. Remedies range from village self-sufficiency and land reform to state-led development, socialism, cooperative ownership, or regulated mixed economies; independence alone does not determine the economic axis.',
-        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
+        explanation: 'Colonial land seizure, forced labor, unequal trade, and resource extraction are commonly treated as political-economic domination. Remedies range from village self-sufficiency and land reform to state-led development, socialism, cooperative ownership, or regulated mixed economies; independence alone does not determine the economic axis. Aharon deGrassi’s abstract connects Cabral’s agronomy, colonial land relations, and organizing; this adds an agrarian perspective, not a measured coordinate.',
+        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism', 'degrassiCabralSocionatures']),
       },
       social: {
         score: 50,
         label: 'Moderately progressive / emancipatory',
-        explanation: 'Anti-colonial projects usually reject racial hierarchy, imperial subjecthood, and exclusion from equal citizenship. The score is limited because movements have also reproduced patriarchy, class hierarchy, ethnic majorities, religious exclusions, or restrictions on dissent after independence.',
-        citations: citations(['duboisBlackReconstruction', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
+        explanation: 'Anti-colonial projects usually reject racial hierarchy, imperial subjecthood, and exclusion from equal citizenship. The score is limited because movements have also reproduced patriarchy, class hierarchy, ethnic majorities, religious exclusions, or restrictions on dissent after independence. Gomes’s oral-history research cautions against reading women’s wartime participation as automatic emancipation.',
+        citations: citations(['duboisBlackReconstruction', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism', 'gomesWomenLiberation']),
       },
       authority: {
         score: 10,
@@ -3618,8 +3618,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       identity: {
         score: 65,
         label: 'Strongly self-determination oriented',
-        explanation: 'Shared history, language, territory, race, culture, or Indigenous nationhood can create the solidarity needed to resist imperial rule. Many thinkers also connect self-determination to Pan-African, Asian, internationalist, or universal human commitments, so liberation identity is not automatically ethnic nationalism or permanent national closure.',
-        citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'duboisBlackReconstruction', 'andersonImaginedCommunities'], ['sepColonialism', 'sepNationalism', 'panAfricanism']),
+        explanation: 'Shared history, language, territory, race, culture, or Indigenous nationhood can create the solidarity needed to resist imperial rule. Many thinkers also connect self-determination to Pan-African, Asian, internationalist, or universal human commitments, so liberation identity is not automatically ethnic nationalism or permanent national closure. Cabral’s cultural argument rejects treating Africa or a race as culturally uniform.',
+        citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'duboisBlackReconstruction', 'andersonImaginedCommunities'], ['sepColonialism', 'sepNationalism', 'panAfricanism', 'cabralCulturePortuguese']),
       },
       foreign: {
         score: 30,
@@ -3629,7 +3629,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       },
       religion: {
         score: -25,
-        label: 'Slightly secular / pluralist, with religious sources of solidarity',
+        label: 'Religiously informed solidarity, with pluralist and secular variants',
         explanation: 'Religious ethics, institutions, and identities have supported anti-colonial mobilization in many settings, but the family does not require clerical rule or religious law. Secular constitutionalism, religious pluralism, and faith-based liberation can all appear within it; the public role of religion must be specified case by case.',
         citations: citations(['gandhiHindSwaraj', 'spinozaPolitical', 'lockeLetterToleration'], ['sepColonialism', 'sepReligionPolitics', 'panAfricanism']),
       },
@@ -3648,6 +3648,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The label is deliberately broad and historically qualified. Gandhi’s swaraj, Du Bois’s analysis of emancipation and Black democratic labor, Fanon’s revolutionary critique of colonial violence, Césaire’s French-language critique of imperial dehumanization, Pan-Africanism, Indigenous sovereignty, and constitutional independence movements do not form one doctrine. Their differences over violence, class, gender, religion, borders, and the postcolonial state are part of the entry rather than noise to be removed.',
             citations: citations(['gandhiHindSwaraj', 'duboisBlackReconstruction', 'fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Cabral and Guinea-Bissau material below is a bounded case, not a model for every Portuguese-speaking country. A leader’s argument, participants’ remembered experiences, scholarly interpretation, and this site’s illustrative scores must remain distinguishable. Portuguese texts are paraphrased in English without claiming a verified translation.',
+            citations: citations([], ['cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures']),
           },
         ],
       },
@@ -3674,6 +3679,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The fourth element is strategy. Constitutional reform, elections, civil disobedience, strikes, boycotts, international advocacy, guerrilla warfare, and interstate diplomacy have all appeared in anti-colonial histories. A descriptive profile must distinguish the moral or strategic argument for a method from the historical conditions in which it was used, and it must not turn accounts of colonial violence into a general recommendation of violence in ordinary politics.',
             citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'kantPerpetualPeace'], ['sepColonialism', 'foreignPolicy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Cabral’s 1970 address links cultural freedom to control over production and treats culture as internally differentiated by class. He calls for critical engagement with inherited values, rather than their automatic preservation. This is a revolutionary actor’s theory, not proof that every African society or liberation movement followed it.',
+            citations: citations([], ['cabralCulturePortuguese']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A different scholarly lens concerns land and ecology. In his abstract, deGrassi interprets Cabral’s work on soil erosion, agricultural surveys, and colonial production as informing his political analysis. That interpretation requires fuller engagement with the article and agronomic sources before extending it to environmental outcomes or other movements.',
+            citations: citations([], ['degrassiCabralSocionatures']),
           },
         ],
       },
@@ -3710,6 +3725,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1945–1970s: formal decolonization, national liberation, and postcolonial state-building',
             text: 'After the Second World War, many colonies became independent through negotiations, mass movements, wars, constitutional settlements, or combinations of these. New governments confronted inherited borders, scarce administrative capacity, economic dependency, Cold War pressure, ethnic and regional divisions, and the need to transform colonial institutions. Independence could widen citizenship while also concentrating power in a ruling party, military, or new elite.',
             citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
+          },
+          {
+            period: '20 February 1970: Cabral’s culture address',
+            text: 'At Syracuse University’s memorial for Eduardo Mondlane, Cabral connected national liberation with cultural transformation and solidarity beyond one territory.',
+            citations: citations([], ['cabralCulturePortuguese']),
           },
           {
             period: 'Contemporary: decolonial, Indigenous, and anti-extractive struggles',
@@ -3754,6 +3774,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Connects independence to land reform, labor power, public or social ownership, class emancipation, and resistance to capitalist dependency or imperial extraction.',
                 relation: 'Overlaps with democratic and authoritarian socialism, but anti-colonial conditions, racial domination, and national development can alter the meaning of class politics.',
                 citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto'], ['sepColonialism', 'sepSocialism', 'panAfricanism']),
+              },
+              {
+                label: 'Cultural recovery versus uncritical restoration',
+                distinction: 'Cabral opposes colonial assimilation without treating every inherited practice as emancipatory.',
+                relation: 'His cultural argument joins material change to critical selection of traditions; it is not simply a return to an unchanged past.',
+                citations: citations([], ['cabralCulturePortuguese']),
               },
               {
                 label: 'Indigenous sovereignty and plurinational self-government',
@@ -3808,6 +3834,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Nabuco broadens the Portuguese-language record but was not a twentieth-century national-liberation theorist; abolitionist reform, monarchical constitutionalism, and elite limits remain visible in his profile.',
                 citations: citations(['nabucoAbolitionism'], ['sepColonialism']),
               },
+              {
+                name: 'Amílcar Cabral',
+                role: 'Agronomist and liberation theorist linking culture, production, and anticolonial organizing.',
+                caveat: 'His writings and strategy do not establish a single post-independence outcome or six-axis score.',
+                citations: citations([], ['cabralCulturePortuguese', 'degrassiCabralSocionatures']),
+              },
+              {
+                name: 'Teodora Inácia Gomes',
+                role: 'Former combatant whose testimony informs Patrícia Godinho Gomes’s research.',
+                caveat: 'Participant perspective mediated through an oral-history study, not a proxy for all women or every policy position.',
+                citations: citations([], ['gomesWomenLiberation']),
+              },
             ],
           },
           {
@@ -3847,6 +3885,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'A comparative Lusophone case in which armed liberation, socialist and nationalist currents, international alliances, and rapid state transition interacted.',
                 caveat: 'The region contains distinct histories and should not be summarized as one Portuguese model. Add country-specific Portuguese scholarship, oral histories, archival work, and post-independence analysis before assigning more precise scores.',
                 citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
+              },
+              {
+                name: 'Guinea-Bissau: women’s organization and liberation memory',
+                period: 'Early-1960s UDEMU, examined in Gomes’s 2021 study',
+                match: 'A case of participation and organizational limits inside an independence movement.',
+                caveat: 'The study foregrounds women’s accounts rather than inferring emancipation from the PAIGC’s programme; it is not a current-country classification.',
+                citations: citations([], ['gomesWomenLiberation']),
               },
               {
                 name: 'Contemporary Indigenous and decolonial movements',
@@ -3902,12 +3947,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, formal sovereignty may coexist with economic dependency, unequal trade, foreign military basing, debt pressure, cultural hierarchy, extractive concessions, or inherited administrative categories. “Postcolonial” is therefore a field of continuing argument, not a proof that colonial relations have ended. Country and movement records should identify the period, institution, affected population, and evidence before making claims about neocolonialism or decolonization.',
             citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
           },
+          {
+            type: 'paragraph',
+            text: 'Gomes reports divergent explanations of UDEMU’s early difficulties: Teodora Inácia Gomes stresses exclusion of women active on the war fronts; Carmen Pereira emphasizes shortages of experienced organizers (pp. 82–83). Her study challenges male-centered liberation narratives. Its qualitative method uses 16 of 26 interviews conducted in 2017–2018 (p. 85), not a representative survey; recollections and historical interpretation are not interchangeable with contemporaneous institutional records.',
+            citations: citations([], ['gomesWomenLiberation']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism', 'nabucoAbolitionism', 'lockeSecondTreatise', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'spinozaPolitical', 'lockeLetterToleration', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice'],
+      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures'],
       editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
     },
     researchGaps: [
@@ -3917,6 +3967,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add primary and scholarly sources on Nkrumah, Cabral, Senghor, Ambedkar, Nehru, Ho Chi Minh, Sukarno, José Rizal, Eduardo Mondlane, Amílcar Cabral, and other regional thinkers, preserving disagreements instead of creating one global canon.',
       'Add evidence on post-independence institutions, military and party power, economic dependency, nonalignment, borders, resource concessions, foreign bases, debt, development, and the difference between formal sovereignty and effective self-determination.',
       'Review current movement and country comparisons only with dated, jurisdiction-specific sources. Do not infer anti-colonial status from a government’s rhetoric, a majority identity, or a single historical grievance.',
+      'Verify the edition and transcription chain of Cabral’s 1970 address; read the complete Gomes and deGrassi articles and relevant agronomic records. Compare women’s retrospective testimony with contemporaneous UDEMU/PAIGC records, dissenting accounts, and post-independence outcomes before generalizing this Guinea-Bissau case.',
     ],
   },
   communist: {
