@@ -2918,20 +2918,20 @@ export const ENCYCLOPEDIA_ENTRIES = {
       economic: {
         score: 45,
         label: 'Mixed economy with commons priorities',
-        explanation: 'Markets can coordinate some activities, but ecological systems, water, land, energy, care, and other essential resources may require public, cooperative, or commons institutions. The profile does not prescribe one ownership form: the relevant question is which arrangement protects ecological function, equitable access, accountability, and long-term resilience in the specific context.',
-        citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom', 'bookchinLibertarianMunicipalism'], ['sepEnvironmentalEthics', 'ipccAr6Synthesis', 'socialEcologyMunicipalism']),
+        explanation: 'Markets can coordinate some activities, but ecological systems, water, land, energy, care, and other essential resources may require public, cooperative, or commons institutions. The profile does not prescribe one ownership form: the relevant question is which arrangement protects ecological function, equitable access, accountability, and long-term resilience in the specific context. The Chico Mendes reserve’s founding decree illustrates why use rights and land ownership must be distinguished.',
+        citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom', 'bookchinLibertarianMunicipalism'], ['sepEnvironmentalEthics', 'ipccAr6Synthesis', 'socialEcologyMunicipalism', 'chicoMendesCreationDecree']),
       },
       social: {
         score: 62,
         label: 'Progressive and environmentally just',
-        explanation: 'Environmental burdens and benefits are treated as questions of justice, including unequal exposure, health, livelihood, gender, race, class, disability, and responsibilities to future generations. Green politics is not one fixed cultural programme, but this profile generally favors inclusion, participation, and protection of vulnerable communities.',
-        citations: citations(['senDevelopmentFreedom', 'millOnLiberty', 'bookchinLibertarianMunicipalism'], ['sepClimateJustice', 'sepEnvironmentalEthics', 'ipccAr6Synthesis']),
+        explanation: 'Environmental burdens and benefits are treated as questions of justice, including unequal exposure, health, livelihood, gender, race, class, disability, and responsibilities to future generations. Green politics is not one fixed cultural programme, but this profile generally favors inclusion, participation, and protection of vulnerable communities. Agarwal’s forestry research warns that formally participatory groups can still exclude women from influence.',
+        citations: citations(['senDevelopmentFreedom', 'millOnLiberty', 'bookchinLibertarianMunicipalism'], ['sepClimateJustice', 'sepEnvironmentalEthics', 'ipccAr6Synthesis', 'agarwalParticipatoryExclusions']),
       },
       authority: {
         score: -30,
         label: 'Polycentric and participatory',
-        explanation: 'Communities, municipalities, regions, states, and international institutions may all have legitimate roles, provided affected people can participate, monitor decisions, and revise rules. Ecological urgency can justify capable public action, but the profile is suspicious of a single command center and of technocratic decisions insulated from public accountability.',
-        citations: citations(['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'millOnLiberty'], ['socialEcologyMunicipalism', 'sepEnvironmentalEthics', 'vdem']),
+        explanation: 'Communities, municipalities, regions, states, and international institutions may all have legitimate roles, provided affected people can participate, monitor decisions, and revise rules. Ecological urgency can justify capable public action, but the profile is suspicious of a single command center and of technocratic decisions insulated from public accountability. The 1990 reserve decree retained executive responsibilities alongside resident use rights; community stewardship is not automatically stateless governance.',
+        citations: citations(['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'millOnLiberty'], ['socialEcologyMunicipalism', 'sepEnvironmentalEthics', 'vdem', 'chicoMendesCreationDecree']),
       },
       identity: {
         score: 45,
@@ -2980,6 +2980,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Brazil’s 1990 decree creating the Chico Mendes Extractive Reserve placed it within IBAMA and provided for land acquisition and concessions of use rights to the resident extractive population. It assigned continuing responsibilities to the executive and declared ecological and social purposes. This is primary evidence of an institutional design, not proof that its aims were achieved or a description of the reserve’s current condition.',
+            citations: citations([], ['chicoMendesCreationDecree']),
+          },
+          {
+            type: 'paragraph',
             text: 'Environmental justice adds distribution and recognition to ecological policy. A transition can reduce emissions while imposing new costs on workers, low-income households, rural communities, Indigenous peoples, migrants, or regions that contributed little to the problem. Green politics therefore has to address compensation, participation, historical responsibility, access to energy and mobility, and the social effects of adaptation and mitigation.',
             citations: citations(['senDevelopmentFreedom', 'millOnLiberty'], ['sepClimateJustice', 'ipccAr6Synthesis']),
           },
@@ -3013,6 +3018,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1960s–1990s: social ecology and libertarian municipalism',
             text: 'Murray Bookchin connected ecological crisis to hierarchy, domination, urban design, and the organization of society. His libertarian municipalism proposed directly democratic municipalities linked through confederations, with ecological citizenship and the transformation of political institutions at the center. This is a distinct normative strategy, not a neutral description of all environmental movements or a synonym for Ostrom’s empirical institutional analysis.',
             citations: citations(['bookchinLibertarianMunicipalism'], ['socialEcologyMunicipalism', 'sepEnvironmentalEthics']),
+          },
+          {
+            period: '1985–1990: Brazilian rubber tappers and extractive reserves',
+            text: 'Mary Allegretti traces the reserve proposal to rubber tappers’ struggles over land and forest livelihoods, including the 1985 national meeting and Chico Mendes’s leadership. Her account links agrarian demands to conservation policy rather than portraying residents as obstacles to nature protection. The decree of 12 March 1990 established the reserve bearing his name in Acre.',
+            citations: citations([], ['allegrettiSeringueiros', 'chicoMendesCreationDecree']),
           },
           {
             period: 'Late twentieth century to the present: climate justice and polycentric action',
@@ -3087,6 +3097,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['ostromGoverningCommons'], ['sepEnvironmentalEthics']),
               },
               {
+                name: 'Chico Mendes',
+                role: 'rubber-tapper and union leader whose movement connected forest livelihoods, land rights, and environmental protection',
+                caveat: 'A documented historical reference for this intersection, not evidence that his views matched all six coordinates or that he used this website’s composite label.',
+                citations: citations([], ['allegrettiSeringueiros']),
+              },
+              {
                 name: 'Murray Bookchin',
                 role: 'social ecologist and theorist of libertarian municipalism',
                 caveat: 'His proposal is a normative communalist strategy and should not be treated as an empirical finding about every municipality or environmental movement.',
@@ -3132,10 +3148,24 @@ export const ENCYCLOPEDIA_ENTRIES = {
               },
               {
                 name: 'Denmark, the Netherlands, and Sweden',
-                period: 'contemporary partial comparators',
-                match: 'mixed institutional resemblance only',
-                caveat: 'These countries combine environmental policy with markets, welfare institutions, national governments, and international commitments; none is a complete green-commons system.',
+                period: 'undated research candidates',
+                match: 'not yet validated as country-level comparators',
+                caveat: 'Retained only as research leads. The general climate and political-theory sources below do not establish a dated national green-commons match; specific ecological, distributional, and governance evidence is still required.',
                 citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['ipccAr6Synthesis', 'sepClimateJustice', 'vdem']),
+              },
+              {
+                name: 'Chico Mendes Extractive Reserve — Acre, Brazil',
+                period: 'founding design, 1990; historical analysis published in 2008',
+                match: 'bounded example of community use rights within public environmental institutions',
+                caveat: 'Neither a national ideology nor proof of ecological success. Assessment today requires dated evidence on resident participation, livelihoods, enforcement, and forest outcomes.',
+                citations: citations([], ['chicoMendesCreationDecree', 'allegrettiSeringueiros']),
+              },
+              {
+                name: 'Community forestry groups studied in India and Nepal',
+                period: '1998–1999 fieldwork; study published in 2001',
+                match: 'comparative evidence about participation and exclusion',
+                caveat: 'Agarwal’s 87-site study is not a national ideological classification. Its institutional comparisons should not be transferred mechanically to Brazil or to all present-day forest communities.',
+                citations: citations([], ['agarwalParticipatoryExclusions']),
               },
             ],
           },
@@ -3175,6 +3205,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Agarwal distinguishes being enrolled, attending meetings, or being consulted from actually shaping collective decisions. Her South Asian forestry analysis treats exclusion as a problem of rules, social norms, and unequal bargaining power, not merely low attendance. For this profile, the practical question is therefore who can influence decisions and contest burdens. Even stronger participation does not by itself remove pre-existing inequalities or guarantee ecological success.',
+            citations: citations([], ['agarwalParticipatoryExclusions']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, green politics can hide trade-offs behind moral language. Renewable infrastructure can require land and minerals; conservation can conflict with livelihoods; carbon policies can be regressive; local knowledge can also be exclusionary; and technological solutions can create new dependencies. The profile should therefore distinguish scientific findings, ethical commitments, institutional proposals, and unresolved value conflicts.',
             citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['ipccAr6Synthesis', 'sepEnvironmentalEthics', 'sepClimateJustice']),
           },
@@ -3183,13 +3218,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'senDevelopmentFreedom', 'millOnLiberty', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis', 'socialEcologyMunicipalism', 'sepAnarchism', 'sepSocialism', 'openTextbook', 'vdem', 'foreignPolicy'],
-      editorialNote: 'The entry distinguishes commons governance, social ecology, green liberalism, eco-socialism, conservationism, and deep ecology. Scores describe a didactic ecological-pluralist profile, not every green party, environmental movement, country, or community institution.',
+      researchSourceIds: ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis', 'socialEcologyMunicipalism', 'sepAnarchism', 'sepSocialism', 'openTextbook', 'vdem', 'foreignPolicy', 'allegrettiSeringueiros', 'chicoMendesCreationDecree', 'agarwalParticipatoryExclusions'],
+      editorialNote: 'The entry distinguishes commons governance, social ecology, green liberalism, eco-socialism, conservationism, and deep ecology. Scores describe a didactic ecological-pluralist profile, not every green party, environmental movement, country, or community institution. The Brazilian decree documents historical design; Allegretti supplies historical interpretation, and Agarwal supplies comparative participation research. Neither establishes current reserve conditions or a country-level match. Portuguese material is independently paraphrased, not offered as a verified translation; reviewed pages and rights limits are recorded in the bibliography.',
     },
     researchGaps: [
       'Add German-, French-, Portuguese-, Spanish-, South Asian-, African-, and Indigenous scholarship on environmental justice, commons, conservation, social ecology, and ecological democracy.',
       'Add detailed case studies of forests, fisheries, water, energy, food, housing, transit, and digital commons, including failure, exclusion, and ecological outcomes rather than only successful examples.',
       'Add country-specific climate, biodiversity, energy, and distributional evidence before ranking Denmark, the Netherlands, Sweden, or other states as green-commons comparators.',
+      'Update the Chico Mendes case with resident-led and independent evidence on tenure implementation, livelihoods, gender, land-use pressures, and ecological outcomes. Extend the selected-page Agarwal review before generalizing the participation framework; historical design is not a current success rating.',
       'Add specialist research on climate finance, colonial extraction, Indigenous sovereignty, migration, disability, gender, labor transitions, critical minerals, agriculture, and urban adaptation.',
       'Add comparative work on the scale limits of localism, the role of national and international authority, technological governance, geoengineering, and democratic safeguards during ecological emergencies.',
     ],
