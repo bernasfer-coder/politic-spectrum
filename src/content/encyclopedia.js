@@ -4767,12 +4767,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
       },
       foreign: {
         score: 68,
-        label: 'Strongly pacifist / non-imperial, with self-defense debates',
-        explanation: 'Imperialism, standing armies, conquest, and state militarism are rejected, while solidarity across borders is encouraged. Revolutionary communities have nevertheless organized armed self-defense under attack; historical participation in war must be distinguished from a general endorsement of militarism or coercive foreign policy.',
-        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'foreignPolicy', 'socialEcologyMunicipalism']),
+        label: 'Anti-militarist / non-imperial, with disagreements about force',
+        explanation: 'Imperialism, standing armies, conquest, and state militarism are rejected, while solidarity across borders is encouraged. Revolutionary communities have nevertheless organized armed self-defense under attack. Malatesta’s 1926 essay distinguishes nonresistance, revolutionary force, and self-defense: anti-state politics does not necessarily entail absolute nonviolence. This composite coordinate is not a measurement of those different strategies.',
+        citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'foreignPolicy', 'socialEcologyMunicipalism', 'malatestaCommunismIndividualism1926']),
       },
       religion: {
-        score: -45,
+        score: 45,
         label: 'Secular and pluralist, with religious-anarchist neighbors',
         explanation: 'No church, clerical hierarchy, or religious law should possess compulsory political authority. Voluntary religious association can coexist with decentralized communism, and religious anarchist currents have contributed to anti-state politics; the profile is institutionally secular rather than necessarily anti-religious.',
         citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'millOnLiberty'], ['sepAnarchism', 'sepReligionPolitics']),
@@ -4792,6 +4792,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The label contains several overlapping traditions rather than one final blueprint. Kropotkin’s account of mutual aid and free access, Bakunin’s critique of state socialism, anarcho-syndicalist workplace organization, feminist and pacifist anarchism, and Bookchin’s later libertarian municipalism share anti-domination themes while differing over markets, technology, revolution, ecology, gender, organization, and defense. Historical experiments should be treated as partial and contested evidence, not as completed models.',
             citations: citations(['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism', 'bookchinLibertarianMunicipalism'], ['sepAnarchism', 'socialEcologyMunicipalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Malatesta’s Communism and Individualism (April 1926) defends communism without making it compulsory: people could choose other economic arrangements consistent with equal freedom and non-exploitation. His preference for cooperation is an argument open to experience, not evidence that one uniform lifestyle suits everyone.',
+            citations: citations([], ['malatestaCommunismIndividualism1926']),
           },
         ],
       },
@@ -4819,6 +4824,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Anarcho-communism is not identical to a society with no rules or to spontaneous disorder. It proposes rules without a sovereign state, authority without permanent rulers, and collective coordination without a centralized monopoly. Those distinctions are normatively important but empirically demanding: the historical record often comes from wartime experiments, partisan sources, incomplete archives, and institutions forced to compromise under military pressure.',
             citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['sepAnarchism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism']),
           },
+          {
+            type: 'paragraph',
+            text: 'In A Project of Anarchist Organisation (October 1927), Malatesta supports organization while rejecting executive control over members. He proposes voluntary federations, congresses offering recommendations, and administrative committees facilitating correspondence rather than governing. These are organizational proposals, not demonstrated safeguards against informal domination.',
+            citations: citations([], ['malatestaOrganization1927']),
+          },
         ],
       },
       {
@@ -4836,6 +4846,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['kropotkinMutualAid', 'kropotkinConquestBread'], ['sepAnarchism', 'sepSocialism']),
           },
           {
+            period: '1885–1915: transnational Italian anarchist networks',
+            text: 'Historian Davide Turcato argues that exile and cross-border networks sustained organization that national histories can overlook. His study follows Malatesta and the anarchist press across Atlantic and Mediterranean connections. This concerns a wider movement, not exclusively communist anarchists or an implemented economic system.',
+            citations: citations([], ['turcatoTransnationalAnarchism']),
+          },
+          {
             period: '1890s–1930s: syndicalism, federations, and revolutionary organization',
             text: 'Anarcho-syndicalist unions connected workplace action, direct democracy, strikes, and revolutionary social transformation. Movement debates concerned whether unions should be primarily economic organizations, whether an explicitly anarchist federation was necessary, and how to coordinate without reproducing a party. These disagreements shaped later experiments in Spain and elsewhere.',
             citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'openTextbook']),
@@ -4844,6 +4859,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1917–1921: Russian Revolution and the Free Territory of Ukraine',
             text: 'The Makhnovist movement and associated rural communes developed under revolutionary, civil-war, and foreign-intervention conditions. It is often cited as an anarchist experiment in local self-management and peasant autonomy, but the territory was militarized, short-lived, internally diverse, and contested by multiple armies. Its evidence is therefore valuable but cannot establish a complete peaceful anarcho-communist society.',
             citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+          },
+          {
+            period: '1927–1930: organization and the Platform debate',
+            text: 'Malatesta’s 1927 criticism prompted Makhno to defend collective responsibility in a letter dated 1928, published in 1930. Malatesta replied in December 1929. Both sought effective organization; they disputed whether shared direction protected collective action or required powers incompatible with member autonomy.',
+            citations: citations([], ['malatestaOrganization1927', 'makhnoMalatestaOrganizationExchange']),
           },
           {
             period: '1936–1939: Spanish Revolution and libertarian collectives',
@@ -4888,10 +4908,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'cambridgeSpanishAnarchism']),
               },
               {
-                label: 'Platformism and organized anarchism',
-                distinction: 'Emphasizes ideological unity, strategic coordination, collective responsibility, and a structured anarchist organization while rejecting a ruling party or state.',
-                relation: 'Addresses the coordination problem more directly than loose federation, but critics worry that discipline can reproduce hierarchy or political substitution.',
-                citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism']),
+                label: 'Platformist coordination: Makhno’s defense',
+                distinction: 'Makhno presents collective responsibility and shared ideological and tactical direction as necessary for effective revolutionary intervention.',
+                relation: 'An internal argument for coordination, not a synonym for all organized anarchism or evidence that opponents rejected organization.',
+                citations: citations([], ['makhnoMalatestaOrganizationExchange']),
+              },
+              {
+                label: 'Malatesta’s voluntary organizational alternative',
+                distinction: 'Malatesta favors freely agreed cooperation but objects that responsibility for every member’s acts would require executive supervision.',
+                relation: 'His 1927 critique distinguishes organization from command; voluntary accommodation is not compulsory majority rule.',
+                citations: citations([], ['malatestaOrganization1927']),
               },
               {
                 label: 'Libertarian municipalism / communalism',
@@ -4929,6 +4955,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['kropotkinConquestBread', 'kropotkinMutualAid'], ['sepAnarchism', 'sepSocialism']),
               },
               {
+                name: 'Errico Malatesta',
+                role: 'Self-identified communist anarchist defending freely chosen cooperation and individual development in his 1926 essay.',
+                caveat: 'This text documents his argument, not the effectiveness of a society or an independently measured six-axis match.',
+                citations: citations([], ['malatestaCommunismIndividualism1926']),
+              },
+              {
                 name: 'Mikhail Bakunin',
                 role: 'Revolutionary anarchist critic of the state, centralized party authority, and the prospect of a new ruling minority after revolution.',
                 caveat: 'Bakunin is associated more precisely with collectivist anarchism than with every later anarcho-communist proposal; his revolutionary strategy and writings contain tensions that require historical context.',
@@ -4957,6 +4989,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'No recognized country is an exact match because the profile rejects a centralized sovereign state and permanent political monopoly.',
                 caveat: 'The absence of a country match follows from the definition; it does not prove that every local or federated practice is unworkable.',
                 citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['sepAnarchism']),
+              },
+              {
+                name: 'Italian anarchist press networks',
+                period: '1885–1915; transnational movement context',
+                match: 'Turcato describes newspapers, including those associated with Malatesta in Ancona, as vehicles for correspondence and practical coordination.',
+                caveat: 'Movement infrastructure is not a territorial communist economy; the networks included conflicting organizational tendencies.',
+                citations: citations([], ['turcatoTransnationalAnarchism']),
               },
               {
                 name: 'Spanish libertarian collectives',
@@ -5033,12 +5072,22 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, historical examples are difficult to evaluate because many occurred during war, revolution, blockade, or state collapse. Wartime coercion, shortages, military hierarchy, and partisan memory can make an experiment look either more libertarian or more authoritarian than its ordinary institutions were. The encyclopedia should distinguish aspirations, rules, actual participation, material outcomes, violence, exclusion, and external constraints, and should avoid presenting a brief experiment as a universal proof.',
             citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'sepAnarchism']),
           },
+          {
+            type: 'paragraph',
+            text: 'Malatesta’s 1929 reply recognizes duties to honor agreements, alongside withdrawal when cooperation becomes impossible. He distinguishes influence through example from coercive leadership. The correspondence records a dispute, not a demonstrated resolution of accountability versus dissent.',
+            citations: citations([], ['makhnoMalatestaOrganizationExchange']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Turcato’s transnational approach cautions against equating disappearance from national records with organizational collapse. Its press-centered perspective does not establish representative outcomes for decentralized economies.',
+            citations: citations([], ['turcatoTransnationalAnarchism']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism', 'bookchinLibertarianMunicipalism', 'millOnLiberty', 'marxEngelsManifesto', 'leninStateRevolution', 'ostromGoverningCommons'],
-      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy'],
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy', 'malatestaCommunismIndividualism1926', 'malatestaOrganization1927', 'makhnoMalatestaOrganizationExchange', 'turcatoTransnationalAnarchism'],
       editorialNote: 'The entry describes an anti-state communist family and uses a didactic composite score. It distinguishes anarcho-communism from anarcho-capitalism, Marxist-Leninist party-state communism, libertarian socialism, communalism, and historical collectives. No country is classified as an exact match.',
     },
     researchGaps: [
@@ -5048,6 +5097,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add empirical research on food, housing, health, education, care, industry, energy, defense, ecological management, conflict resolution, gender, race, migration, disability, and minority rights in decentralized communities.',
       'Add detailed comparison of anarcho-communist distribution with commons governance, market socialism, cooperative ownership, social democracy, and state socialism, including scarcity, free-riding, technical expertise, and maintenance problems.',
       'Add research on how revolutionary organizations prevent military, party, administrative, or charismatic authority from becoming permanent, and how nonviolent and self-defense commitments can coexist under external attack.',
+      'The Malatesta and Makhno additions address only part of the author and organization gaps above. Verify original periodical issues, translation provenance, the complete Platform and further responses; do not infer an agreed settlement from this exchange or its inconsistent page-level date metadata.',
+      'Extend the selected Turcato reading to the full article and its archival sources, with competing historiography and women’s, workers’, and migrants’ perspectives. Press-network continuity does not establish equal participation, economic outcomes, or successful protection of dissenters.',
     ],
   },
   conservative: {
