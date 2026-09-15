@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    appOmahaPlatform1892: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Historical primary document linked through a modern university edition. No platform text, facsimile, or editorial apparatus reproduced; the age of the document does not clear every edition for reuse.' },
+    priesterPopulismus2012: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent attributed English synthesis only. No German passage, translation, embedded political quotation, illustration, or linked source reproduced.' },
+    weylandPoliticalStrategy2021: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Abstract-only consultation; publisher marks the article restricted and provides a permissions route. No abstract wording or inaccessible text reproduced.' },
+    moffittTormeyPoliticalStyle2014: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent short account of the stated methodological proposal and a bibliographic link. No abstract, article text, tables, or figures republished; no full-text access or reuse permission inferred.' },
     dayAimsPurposes1940: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Primary article used for original paraphrases and a bibliographic link. No newspaper passage, embedded quotation, facsimile, or author photograph reproduced.' },
     catholicWorkerAims2019: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Movement self-description is not a blanket republication licence. No statement text, embedded Day/Maurin quotations, liturgical wording, or printable PDF copied.' },
     marquetteMaurinPapers: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Institutional biography and collection description used through independent summary. Finding-aid access does not grant rights to the manuscripts, correspondence, or images listed.' },

@@ -7699,10 +7699,10 @@ export const ENCYCLOPEDIA_ENTRIES = {
     scopeNote: 'Populism is treated as a thin or host-dependent political logic that claims to represent a morally unified people against a corrupt elite. It is not a complete economic programme, not automatically left or right, and not a synonym for popular participation, demagoguery, nationalism, authoritarianism, or opposition to every establishment.',
     timeScope: 'The modern label has nineteenth-century American and Russian-European histories, with major twentieth-century development in Latin America and later European, North American, and global forms. Older appeals to “the people” are political antecedents, not automatically populism under the modern concept.',
     geographicScope: 'Comparative and transnational. The entry gives particular attention to the United States, Latin America, Europe, and contemporary democratic theory, while treating party and country classifications as period-specific and evidence-dependent.',
-    summary: 'A political style or thin ideology that divides society into a virtuous or authentic people and a corrupt or detached elite, then presents politics as the expression of the people’s general will. Populism can mobilize excluded groups and expose genuine failures of representation, but its claim to speak for one real people can conflict with pluralism, minority rights, independent institutions, media freedom, and peaceful opposition.',
+    summary: 'In the ideational approach used here as a working definition, populism divides society into a virtuous or authentic people and a corrupt or detached elite, then presents politics as the expression of the people’s general will. Other scholars define it through leadership strategy, discourse, or political performance. Mobilizing neglected demands and claiming exclusive representation are different questions; neither institutional outcomes nor a complete policy programme follows from the label alone.',
     summaryCitations: citations(
       ['muddeKaltwasserPopulism', 'mullerWhatIsPopulism', 'laclauOnPopulistReason'],
-      ['oxfordPopulismShortIntroduction', 'oxfordModernPopulism', 'annualReviewPoliticalTheoryPopulism', 'oxfordMullerPopulism'],
+      ['oxfordPopulismShortIntroduction', 'oxfordModernPopulism', 'annualReviewPoliticalTheoryPopulism', 'oxfordMullerPopulism', 'weylandPoliticalStrategy2021', 'moffittTormeyPoliticalStyle2014'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -7720,13 +7720,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
       authority: {
         score: 45,
         label: 'Majoritarian and leader-mediated, with participatory variants',
-        explanation: 'Populism elevates popular sovereignty and often presents leaders as direct interpreters of the people against parties, courts, experts, media, or bureaucracies. It can widen participation and force neglected demands into public debate, but its exclusive claim to represent the real people creates pressure against independent institutions, opposition, and internal party pluralism.',
+        explanation: 'Populism elevates popular sovereignty and often presents leaders as direct interpreters of the people against parties, courts, experts, media, or bureaucracies. It can widen participation and force neglected demands into public debate. When a movement claims exclusive representation of the real people, it can put independent institutions, opposition, and internal pluralism under pressure. The existing score is an illustrative composite, not a finding that every populism has this degree of authority.',
         citations: citations(['mullerWhatIsPopulism', 'muddeKaltwasserPopulism', 'laclauOnPopulistReason'], ['oxfordPopulismShortIntroduction', 'oxfordMullerPopulism', 'coePopulismDemocracy', 'vdem']),
       },
       identity: {
         score: -55,
         label: 'Bounded people; nation, class, or movement identity',
-        explanation: 'Populism constructs a collective “people,” but the boundary can be national, class-based, regional, ethnic, religious, Indigenous, or anti-colonial. Right populism often couples the people to nation and border; left populism may define the people against oligarchy or neoliberal power. The category’s identity score is therefore elevated here because political belonging is central, not because every populism is ethnonationalist.',
+        explanation: 'Populism constructs a collective “people,” but the boundary can be national, class-based, regional, ethnic, religious, Indigenous, or anti-colonial. Right populism often couples the people to nation and border; left populism may define the people against oligarchy or neoliberal power. Editorial limit: this axis measures nationalism versus internationalism, not the intensity of collective belonging. The existing −55 is an illustrative placement requiring review, not a consequence of using people–elite language.',
         citations: citations(['muddeKaltwasserPopulism', 'laclauOnPopulistReason', 'renanNation'], ['cambridgeAnatomyPopulistIdeology', 'sepNationalism', 'scieloLatinAmericanPopulism']),
       },
       foreign: {
@@ -7754,8 +7754,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
-            text: 'Populism is therefore best treated as a thin or host-dependent ideology, political style, or logic rather than a full programme. It can attach to socialism, nationalism, conservatism, anti-colonialism, agrarian protest, religious traditionalism, or market protection. Classifying a movement requires separating its people–elite rhetoric from its economic policies, institutional practice, treatment of minorities, foreign policy, and relationship to constitutional checks.',
-            citations: citations(['muddeKaltwasserPopulism', 'laclauOnPopulistReason', 'mullerWhatIsPopulism'], ['oxfordModernPopulism', 'cambridgeAnatomyPopulistIdeology', 'scieloLatinAmericanPopulism']),
+            text: 'The competing definitions are not interchangeable names for one test. Karin Priester’s relational account emphasizes how populism takes shape against particular opponents and combines with different host ideologies. Weyland instead prioritizes personalistic leadership strategy; Moffitt and Tormey foreground mediated performance. The comparisons below identify these as scholarly approaches, not separate party programmes or six-axis scores.',
+            citations: citations([], ['priesterPopulismus2012', 'weylandPoliticalStrategy2021', 'moffittTormeyPoliticalStyle2014']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Reading boundary: the platform transcription and Priester’s German article were read in full as hosted. The Weyland and Moffitt–Tormey additions rely only on publisher abstracts and metadata. Their detailed arguments, case selection, and measurement procedures remain unreviewed; the project does not claim that these sources validate its questionnaire.',
+            citations: citations([], ['appOmahaPlatform1892', 'priesterPopulismus2012', 'weylandPoliticalStrategy2021', 'moffittTormeyPoliticalStyle2014']),
           },
         ],
       },
@@ -7765,7 +7770,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         blocks: [
           {
             type: 'paragraph',
-            text: 'The central claim is not merely that elites are bad or that citizens should participate. Many non-populist democrats criticize elites and defend popular sovereignty. Populism becomes analytically distinctive when it presents the people as a morally unified body and treats opponents, independent institutions, minority interests, or rival parties as illegitimate obstacles to the people’s authentic will. This exclusive representation can exist in opposition, government, or social movements, and its intensity varies.',
+            text: 'The central claim is not merely that elites are bad or that citizens should participate. Many non-populist democrats criticize elites and defend popular sovereignty. In Müller’s anti-pluralist account, a crucial distinction is the claim that only one movement legitimately represents the authentic people, excluding competing representatives. This is a specific theoretical criterion, not an agreed definition shared by every scholar or every historical movement called populist.',
             citations: citations(['muddeKaltwasserPopulism', 'mullerWhatIsPopulism'], ['oxfordPopulismShortIntroduction', 'oxfordMullerPopulism', 'annualReviewPoliticalTheoryPopulism']),
           },
           {
@@ -7793,6 +7798,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Late nineteenth century: agrarian protest and the People’s Party in the United States',
             text: 'The United States People’s Party organized farmers and reformers against railroads, financiers, monopolies, and political corruption. The 1892 Omaha Platform combined popular anti-monopoly language with economic and institutional proposals. This case demonstrates that populism can carry an extensive reform programme, but it should not be projected unchanged onto later right- or left-wing movements.',
             citations: citations(['muddeKaltwasserPopulism'], ['americanYawpOmahaPlatform', 'oxfordPopulismShortIntroduction']),
+          },
+          {
+            period: '4 July 1892: what the Omaha programme actually proposed',
+            text: 'The platform called for a graduated income tax, postal savings banks, expanded currency, and public operation of railways, telegraphs, and telephones. Alongside railway ownership, it proposed civil-service restrictions to prevent expanded government employment from increasing executive patronage. These are documented commitments, not evidence that the party implemented them.',
+            citations: citations([], ['appOmahaPlatform1892']),
           },
           {
             period: 'Late nineteenth–early twentieth centuries: Russian and European popular movements',
@@ -7843,7 +7853,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 label: 'Right or exclusionary populism',
                 distinction: 'Defines the authentic people through national, cultural, ethnic, religious, or “native” membership and targets elites, migrants, minorities, or cosmopolitan institutions.',
-                relation: 'Often raises the identity and authority scores, but nationalism, ethnic exclusion, and authoritarianism must be evidenced separately rather than assumed from populism alone.',
+                relation: 'Nationalism points toward this app’s negative Identity pole, while authoritarianism points toward positive Authority. Each requires separate evidence; neither follows from the populist label alone.',
                 citations: citations(['muddeKaltwasserPopulism', 'mullerWhatIsPopulism', 'renanNation'], ['sepNationalism', 'cambridgeAnatomyPopulistIdeology', 'coePopulismDemocracy']),
               },
               {
@@ -7875,6 +7885,24 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Demagoguery describes manipulative or inflammatory appeals; populism is a more specific claim that a morally unified people is opposed to a corrupt elite and should directly govern.',
                 relation: 'A populist can use demagoguery, but the terms should not be collapsed: criticism of an elite or emotional rhetoric alone is insufficient for a populist classification.',
                 citations: citations(['muddeKaltwasserPopulism', 'mullerWhatIsPopulism'], ['oxfordModernPopulism', 'annualReviewPoliticalTheoryPopulism']),
+              },
+              {
+                label: 'Defining the object: ideational and relational approaches',
+                distinction: 'The ideational reading examines a moral people–elite opposition; Priester emphasizes relationships and host ideologies.',
+                relation: 'Her account rejects both a self-contained doctrine and a merely opportunistic technique.',
+                citations: citations(['muddeKaltwasserPopulism'], ['priesterPopulismus2012']),
+              },
+              {
+                label: 'Defining the object: political-strategic approach',
+                distinction: 'Weyland’s response to Rueda centers personalistic leaders and opportunism rather than consistent policy commitments.',
+                relation: 'Leadership is a classification criterion in this approach, not a requirement shared by all definitions.',
+                citations: citations([], ['weylandPoliticalStrategy2021']),
+              },
+              {
+                label: 'Defining the object: political-style approach',
+                distinction: 'Moffitt and Tormey foreground performed political style in a media-shaped environment, challenging rival definitions.',
+                relation: 'How politics is enacted matters alongside its ideological content. The full analytical model remains unreviewed here.',
+                citations: citations([], ['moffittTormeyPoliticalStyle2014']),
               },
             ],
           },
@@ -7911,6 +7939,24 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'The coalition and programme were historically specific; later American and global movements should not be treated as direct continuations without evidence.',
                 citations: citations(['muddeKaltwasserPopulism'], ['americanYawpOmahaPlatform', 'oxfordPopulismShortIntroduction']),
               },
+              {
+                name: 'Karin Priester',
+                role: 'Sociologist offering a relational interpretation of populism.',
+                caveat: 'An analyst, not a populist exemplar or a current-country classifier.',
+                citations: citations([], ['priesterPopulismus2012']),
+              },
+              {
+                name: 'Kurt Weyland',
+                role: 'Comparative political scientist defending a political-strategic definition.',
+                caveat: 'Included as an analyst, not an ideological exemplar; this addition is limited to his 2021 abstract.',
+                citations: citations([], ['weylandPoliticalStrategy2021']),
+              },
+              {
+                name: 'Benjamin Moffitt and Simon Tormey',
+                role: 'Scholars proposing political style as an analytical category.',
+                caveat: 'Analysts, not ideological exemplars; abstract-only review.',
+                citations: citations([], ['moffittTormeyPoliticalStyle2014']),
+              },
             ],
           },
           {
@@ -7920,8 +7966,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'People’s Party and the Omaha Platform',
                 period: 'United States, especially 1892',
                 match: 'Agrarian and anti-monopoly movement that framed ordinary producers against concentrated economic and political power while proposing institutional and economic reforms.',
-                caveat: 'The platform included its own exclusions and historical limits; it is an example of a period-specific populist coalition, not a universal democratic or economic model.',
-                citations: citations(['muddeKaltwasserPopulism'], ['americanYawpOmahaPlatform', 'oxfordPopulismShortIntroduction']),
+                caveat: 'Its land clause opposed foreign ownership and reserved reclaimed land for settlers. Its opening invoked God; that wording alone establishes neither theocracy nor a uniform religious position. Reform demands do not erase exclusion or establish actual outcomes.',
+                citations: citations(['muddeKaltwasserPopulism'], ['americanYawpOmahaPlatform', 'oxfordPopulismShortIntroduction', 'appOmahaPlatform1892']),
               },
               {
                 name: 'Classical Latin American populism',
@@ -7980,8 +8026,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
         blocks: [
           {
             type: 'paragraph',
-            text: 'A first criticism concerns conceptual vagueness. Populism is used for agrarian reformers, left parties, right nationalist movements, personalist presidents, social movements, anti-corruption campaigns, and media styles. If the term is stretched to cover every appeal to ordinary people or every criticism of elites, it loses explanatory value. The minimum evidence should include a morally unified people, a corrupt or illegitimate elite, and a claim to express the people’s authentic will.',
-            citations: citations(['muddeKaltwasserPopulism', 'mullerWhatIsPopulism', 'laclauOnPopulistReason'], ['oxfordModernPopulism', 'annualReviewPoliticalTheoryPopulism', 'cambridgeAnatomyPopulistIdeology']),
+            text: 'A first criticism concerns conceptual vagueness. Populism is used for agrarian reformers, left parties, right nationalist movements, personalist presidents, social movements, anti-corruption campaigns, and media styles. If the term covers every appeal to ordinary people, it loses explanatory value. Under this entry’s working ideational definition, classification requires the people–elite opposition and a claimed popular will; leadership-centered and performance-centered approaches ask different questions. Researchers should identify the definition before comparing classifications.',
+            citations: citations(['muddeKaltwasserPopulism', 'mullerWhatIsPopulism', 'laclauOnPopulistReason'], ['oxfordModernPopulism', 'annualReviewPoliticalTheoryPopulism', 'cambridgeAnatomyPopulistIdeology', 'weylandPoliticalStrategy2021', 'moffittTormeyPoliticalStyle2014']),
           },
           {
             type: 'paragraph',
@@ -8008,8 +8054,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['muddeKaltwasserPopulism', 'mullerWhatIsPopulism', 'laclauOnPopulistReason', 'renanNation', 'keynesGeneralTheory', 'morgenthauRealism', 'spinozaPolitical', 'marxEngelsManifesto'],
-      researchSourceIds: ['oxfordPopulismShortIntroduction', 'oxfordModernPopulism', 'annualReviewPoliticalTheoryPopulism', 'oxfordMullerPopulism', 'cambridgeAnatomyPopulistIdeology', 'scieloLatinAmericanPopulism', 'oxfordLatinAmericaPopulism', 'americanYawpOmahaPlatform', 'coePopulismDemocracy', 'sepNationalism', 'sepReligionPolitics', 'sepSocialism', 'foreignPolicy', 'vdem'],
-      editorialNote: 'The entry treats populism as a thin or host-dependent political logic and distinguishes it from popular participation, demagoguery, nationalism, conservatism, socialism, and authoritarianism. It records both democratic-corrective and anti-pluralist possibilities and avoids current country verdicts without dated institutional evidence.',
+      researchSourceIds: ['oxfordPopulismShortIntroduction', 'oxfordModernPopulism', 'annualReviewPoliticalTheoryPopulism', 'oxfordMullerPopulism', 'cambridgeAnatomyPopulistIdeology', 'scieloLatinAmericanPopulism', 'oxfordLatinAmericaPopulism', 'americanYawpOmahaPlatform', 'coePopulismDemocracy', 'sepNationalism', 'sepReligionPolitics', 'sepSocialism', 'foreignPolicy', 'vdem', 'appOmahaPlatform1892', 'priesterPopulismus2012', 'weylandPoliticalStrategy2021', 'moffittTormeyPoliticalStyle2014'],
+      editorialNote: 'The working ideational definition is distinguished from relational, strategic, performative, and anti-pluralist approaches. Original programmes, scholarly interpretation, and illustrative matching have different evidential roles. No contemporary country verdict or questionnaire validation follows from this research. All six coordinates remain unchanged pending explicit editorial review.',
     },
     researchGaps: [
       'Add original-language research in Spanish, Portuguese, French, German, Italian, Russian, and other relevant languages on populist vocabularies, party programmes, media, and movement organization.',
@@ -8019,6 +8065,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Research populism’s relationship to religion, Christian nationalism, Islamic politics, secularism, Indigenous sovereignty, race, caste, migration, gender, and digital disinformation without assuming one direction of causality.',
       'Compare populist participation and direct-democratic reforms with deliberative, representative, liberal-constitutional, and consociational alternatives, including their own failures of inclusion and accountability.',
       'Test the six-dimensional profile against expert-coded party data and historical programmes while keeping the host ideology visible; no single left/right score should stand in for populism’s variable economic and social content.',
+      'Compare the Omaha transcription with original convention records and supplementary resolutions; investigate implementation, Black participation, Indigenous dispossession, immigration, and gender through additional primary and historical scholarship. The platform alone cannot resolve these questions.',
+      'Read the complete Weyland–Rueda exchange and Moffitt–Tormey article, then compare their operational definitions with original ideational and discourse-theoretical works. The new abstract-based records are conceptual leads, not completed reviews of those debates.',
+      'Resolve the existing Authority discrepancy between article (+45) and reference card (+35), and review whether the generic Identity placement (−55) confuses nationalism with collective identification. No new numerical estimate was introduced here.',
     ],
   },
   'centrist-pragmatist': {
