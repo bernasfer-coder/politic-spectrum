@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    cduAhlen1947: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original summary and archival link only. A publicly accessible party programme is not assumed to have blanket commercial-reuse clearance; no transcription, translation, or facsimile copied.' },
+    cduDuesseldorf1949: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'The German short version and its editorial apparatus have separate provenance. No programme text, GHDI translation, introduction, or source image reproduced.' },
+    zehenderDuesseldorfHistory: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Modern institutional commentary used through attributed independent synthesis. No source prose, illustrations, or linked photographs republished.' },
+    seidelChristianSocialCDU1979: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent paraphrases and bibliography link only. No article passage, embedded historical quotation, page scan, or translated extract reproduced; full-text republication permission not established.' },
     malatestaCommunismIndividualism1926: { ...LINK_ONLY, reviewedAt: '2026-09-15', notes: 'The historical essay’s age does not establish rights in the consulted modern English translation or collection. Original paraphrases and link only; no translated passage or facsimile reproduced.' },
     malatestaOrganization1927: { ...LINK_ONLY, reviewedAt: '2026-09-15', notes: 'Translator and translation rights remain unresolved. HTML markup credit is not translation provenance or a reuse licence; no source text reproduced.' },
     makhnoMalatestaOrganizationExchange: { ...LINK_ONLY, reviewedAt: '2026-09-15', notes: 'Translation credit and original-publication attributions are retained without assuming public-domain status for modern translations. No letter extract, page image, or archival scan reproduced.' },

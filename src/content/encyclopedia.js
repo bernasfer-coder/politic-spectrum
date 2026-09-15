@@ -6963,8 +6963,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       authority: {
         score: 20,
         label: 'Constitutional and intermediary-institutional',
-        explanation: 'Legitimate authority is ordinarily exercised through elections, constitutions, courts, parties, local government, churches, unions, families, and other institutions between the individual and the state. Subsidiarity can limit centralization, but it does not mean that every lower-level institution is democratic or that the state has no duty to guarantee equal rights and social protection.',
-        citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical', 'lockeSecondTreatise'], ['oxfordChristianDemocracy', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'comparativeChristianDemocracy']),
+        explanation: 'Legitimate authority is ordinarily exercised through elections, constitutions, courts, parties, local government, churches, unions, families, and other institutions between the individual and the state. Subsidiarity can limit centralization, but it does not mean that every lower-level institution is democratic or that the state has no duty to guarantee equal rights and social protection. Ahlen’s 1947 programme subjected economic self-administration to parliamentary control; this limited institutional commitment does not establish equal citizenship in every domain.',
+        citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical', 'lockeSecondTreatise'], ['oxfordChristianDemocracy', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'comparativeChristianDemocracy', 'cduAhlen1947']),
       },
       identity: {
         score: -20,
@@ -7017,6 +7017,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['aquinasMoralPolitical', 'keynesGeneralTheory'], ['vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'comparativeChristianDemocracy', 'oxfordChristianDemocratDecade']),
           },
           {
+            type: 'paragraph',
+            text: 'The 1949 Düsseldorf short version makes the institutional mixture concrete: competition and market prices alongside independent monopoly oversight, collective wage bargaining, and monetary, tax, social, and public-investment policies. It also allows common ownership under stated conditions. These are programme commitments, not evidence that recovery or social justice resulted from them alone.',
+            citations: citations([], ['cduDuesseldorf1949']),
+          },
+          {
             type: 'evidence-note',
             text: 'A crucial boundary is constitutional pluralism. A party may be inspired by Christianity while accepting alternation in office, religious freedom, non-confessional citizenship, judicial review, and the right of other parties to govern. When religious authorities receive non-negotiable supremacy over government, dissent, or equal citizenship, the classification moves toward theocracy or confessional authoritarianism instead.',
             citations: citations(['maritainIntegralHumanism', 'lockeLetterToleration'], ['cambridgeChristianDemocracy', 'oxfordChristianDemocracy', 'sepReligionPolitics', 'vdem']),
@@ -7053,6 +7058,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['maritainIntegralHumanism', 'burkeReflections'], ['oxfordChristianDemocratDecade', 'oxfordChristianDemocracyEurope', 'euRobertSchuman', 'adenauerHouse', 'comparativeChristianDemocracy']),
           },
           {
+            period: '3 February 1947: the British-zone CDU’s Ahlen programme',
+            text: 'Ahlen proposed socializing coal mining and large iron-producing industry, dispersing economic power, and strengthening worker participation. It also defended smaller enterprises and private initiative while rejecting replacement of private domination by state capitalism. The document’s diagnoses of the recent past are party arguments, not neutral historical classifications.',
+            citations: citations([], ['cduAhlen1947']),
+          },
+          {
+            period: '15 July 1949: Düsseldorf and the social-market programme',
+            text: 'The Düsseldorf guidelines rejected administrative direction of production, labor, and sales while retaining economic-policy instruments. They expressly acknowledged Ahlen’s property and social principles but recast their economic framework around competition. Reading the short version does not establish how the complete platform or subsequent legislation resolved every tension.',
+            citations: citations([], ['cduDuesseldorf1949']),
+          },
+          {
             period: 'European integration: reconciliation, shared institutions, and contested memory',
             text: 'Christian-democratic statesmen were important advocates of a European order built around reconciliation, shared institutions, and interdependence. Schuman’s proposal for shared coal and steel administration illustrates the preference for binding former rivals into common institutions. European integration was never exclusively Christian-democratic; secular, liberal, socialist, federalist, and economic actors also shaped it.',
             citations: citations(['maritainIntegralHumanism', 'kantPerpetualPeace'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope', 'oxfordChristianDemocratDecade']),
@@ -7076,6 +7091,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Combines private property and competition with social insurance, labor representation, public services, family policy, and institutional mediation.',
                 relation: 'The most recognizable postwar European form, but social-market institutions are not uniquely Christian-democratic and differ across countries.',
                 citations: citations(['aquinasMoralPolitical', 'keynesGeneralTheory'], ['vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'comparativeChristianDemocracy']),
+              },
+              {
+                label: 'Ahlen’s socialization-oriented proposal',
+                distinction: 'Its 1947 design combines selected common ownership with participation by public bodies, workers, and cooperatives.',
+                relation: 'A dated internal position, not a demand to transfer all enterprise to a centralized state.',
+                citations: citations([], ['cduAhlen1947']),
               },
               {
                 label: 'Personalist Christian democracy',
@@ -7143,6 +7164,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['maritainIntegralHumanism'], ['adenauerHouse', 'oxfordChristianDemocratDecade', 'comparativeChristianDemocracy']),
               },
               {
+                name: 'Franz Etzel',
+                role: 'CDU politician and lawyer who chaired the commission preparing the 1949 economic guidelines, as documented by Seidel and Zehender.',
+                caveat: 'Commission leadership does not make him the sole author or establish a measured match to this six-axis profile.',
+                citations: citations([], ['seidelChristianSocialCDU1979', 'zehenderDuesseldorfHistory']),
+              },
+              {
                 name: 'Robert Schuman',
                 role: 'French statesman associated with postwar reconciliation, Christian-democratic political culture, and European institution-building.',
                 caveat: 'Schuman was one actor in a wider European and international coalition; European integration cannot be attributed to Christian democracy alone.',
@@ -7165,6 +7192,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'A major case of Christian-democratic constitutional reconstruction, social-market policy, federal institutions, and European cooperation.',
                 caveat: 'The party family was internally diverse and changed over time; postwar democracy, welfare, economic recovery, anti-communism, and the legacy of Nazism all shaped the context.',
                 citations: citations(['maritainIntegralHumanism'], ['adenauerHouse', 'oxfordChristianDemocratDecade', 'comparativeChristianDemocracy']),
+              },
+              {
+                name: 'Ahlen and Düsseldorf as programme evidence',
+                period: 'German Christian-democratic politics, 1947–1949',
+                match: 'Two dated documents permit comparison of ownership, participation, and economic coordination within one evolving party tradition.',
+                caveat: 'A party platform is neither an enacted constitution nor a complete country profile.',
+                citations: citations([], ['cduAhlen1947', 'cduDuesseldorf1949']),
               },
               {
                 name: 'Postwar Italy and Democrazia Cristiana',
@@ -7238,6 +7272,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Interpretations of the German transition differ. Käthe Seidel’s 1979 comparison emphasizes the displacement of Christian-social priorities by market liberalism and the weakening of the labor wing. Kathrin Zehender’s commentary instead stresses a compromise between ordoliberal and Christian-social currents, retaining social commitments. Their emphases should remain attributed rather than merged into an uncontested account.',
+            citations: citations([], ['seidelChristianSocialCDU1979', 'zehenderDuesseldorfHistory']),
+          },
+          {
+            type: 'paragraph',
             text: 'A fourth criticism concerns historical compromise and authoritarian adjacency. Christian parties and Catholic institutions sometimes accommodated monarchies, colonial regimes, corporatist governments, or authoritarian anti-communism. Other Christian democrats defended resistance, human rights, constitutional democracy, and decolonization. The record must distinguish party rhetoric from institutional behavior and avoid treating religious inspiration as either an automatic safeguard or an automatic cause of authoritarianism.',
             citations: citations(['maritainIntegralHumanism', 'burkeReflections'], ['cambridgeChristianDemocracy', 'oxfordPortugalPoliticalCatholicism', 'oxfordChristianDemocracyEurope', 'vdem']),
           },
@@ -7251,7 +7290,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections', 'keynesGeneralTheory', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy'],
+      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979'],
       editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
     },
     researchGaps: [
@@ -7262,6 +7301,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add primary party programmes and voting records for CDU/CSU, Democrazia Cristiana, MRP, CVP, ÖVP, CDA, Fine Gael, Chilean and Brazilian Christian-democratic parties, Portuguese CDS traditions, and later successors.',
       'Study church hierarchy, lay movements, unions, cooperatives, business associations, local government, and the state so that intermediary institutions are not treated as automatically democratic.',
       'Expand the postwar European-integration record to include secular and socialist contributors, colonial and migration histories, NATO and anti-communism, and tensions between European universalism and national or confessional identity.',
+      'Extend the Ahlen and Düsseldorf comparison to original printings, the unabridged 1949 programme, commission records, voting behavior, and implementation. Check Seidel’s digitized text and footnote alignment against the original issue; treat her cited sources as leads until independently reviewed.',
+      'Test the competing continuity and rupture interpretations with newer scholarship, labor and business records, and evidence of welfare distribution and exclusion. The two German programmes do not establish a universal Christian-democratic trajectory or current-country classification.',
+      'Reconcile the entry’s identity coordinate of -20 with the main card’s -40 through an explicit editorial decision. This discrepancy is not a polarity reversal; neither magnitude is newly validated by the programme research, and both were left unchanged in this pass.',
     ],
   },
   'religious-socialist': {
