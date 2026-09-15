@@ -7954,4 +7954,303 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Test whether the six-dimensional score should separate constitutional structure from the substantive social settlement and whether uncertainty ranges are preferable to a single point score for historically changing traditions.',
     ],
   },
+  'militarist-imperialist': {
+    id: 'militarist-imperialist',
+    title: 'Militarist / imperialist',
+    canonicalLabel: 'Militarist / imperialist',
+    aliases: ['militarism', 'imperialism', 'imperial militarism', 'military expansionism', 'imperial nationalism'],
+    entryType: 'analytical reference profile',
+    status: 'researched-draft',
+    confidence: 'medium',
+    scopeNote: 'This profile describes a family of orientations that make military capacity, martial hierarchy, strategic competition, territorial control, or unequal external dominion central to political power. Militarism and imperialism overlap but are not synonyms: a state can be militarized without seeking an empire, and an empire can rely on commercial, administrative, settler, or legal mechanisms as well as armed force.',
+    timeScope: 'Imperial rule is ancient and recurrent, while modern militarism and the word imperialism took distinctive forms through industrialization, mass politics, national state-building, overseas empire, total war, decolonization, and contemporary security competition. Modern cases should not be projected unchanged onto ancient empires or present-day states.',
+    geographicScope: 'Global and comparative. The entry includes European, American, Asian, African, Middle Eastern, and anti-colonial experiences, while avoiding the assumption that imperial history is only European or that military power has one social meaning in every region.',
+    summary: 'A power-politics orientation that treats armed capacity, security institutions, martial values, strategic rivalry, and—at its imperial pole—unequal control over other peoples or territories as central instruments of state power. It can be justified through security, prestige, civilization, economic access, national greatness, racial hierarchy, or geopolitical necessity. The profile is analytical and critical: military strength alone does not prove militarism, and intervention alone does not prove imperialism.',
+    summaryCitations: citations(
+      ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'mearsheimerTragedy'],
+      ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'cambridgeMilitarismImperialism'],
+    ),
+    dimensionInterpretations: {
+      economic: {
+        score: 12,
+        label: 'Strategic mixed economy and extraction',
+        explanation: 'There is no single ownership system. Militarist and imperial projects can preserve private property, direct industry, mobilize state procurement, extract colonial resources, protect commercial routes, or nationalize strategic sectors. The common feature is that economic capacity is evaluated through military readiness, strategic autonomy, imperial revenue, or geopolitical leverage rather than only welfare or consumer prosperity.',
+        citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism', 'mussoliniDoctrine'], ['oxfordPoliticalEconomyMilitarism', 'oxfordImperialism', 'oxfordColonialismEmpireSociology']),
+      },
+      social: {
+        score: -45,
+        label: 'Hierarchical and martial social order',
+        explanation: 'Discipline, obedience, sacrifice, heroism, gendered martial roles, national service, and deference to security institutions tend to receive higher status than pluralist dissent or anti-militarist norms. This does not mean every soldier or veteran supports militarism, nor that every military institution has the same social ideology; the score concerns the political elevation of martial hierarchy.',
+        citations: citations(['clausewitzOnWar', 'mussoliniDoctrine', 'hobsonImperialism'], ['oxfordMilitarism', 'cambridgeMilitarismImperialism', 'oxfordColonialismEmpireSociology']),
+      },
+      authority: {
+        score: 75,
+        label: 'Security-centered and executive authority',
+        explanation: 'The orientation gives armed forces, intelligence services, strategic executives, or emergency institutions broad discretion, often presenting opposition or procedural delay as security risks. Military capacity can exist under civilian constitutional control; the authoritarian score rises when security institutions dominate civilian government, suppress dissent, or make permanent emergency a source of legitimacy.',
+        citations: citations(['clausewitzOnWar', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['oxfordMilitarism', 'oxfordConstitutionalJustice', 'vdem']),
+      },
+      identity: {
+        score: -88,
+        label: 'National greatness and imperial hierarchy',
+        explanation: 'Collective identity is commonly organized around national strength, civilizational mission, sacrifice, frontier, empire, or a hierarchy between rulers and subject peoples. Nationalism is not automatically militarist, and anti-colonial movements can use national defense against empire; the profile concerns the elevation of power, hierarchy, and external domination as defining national purposes.',
+        citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism', 'mussoliniDoctrine'], ['oxfordImperialism', 'sepNationalism', 'oxfordColonialismEmpireSociology']),
+      },
+      foreign: {
+        score: -92,
+        label: 'Expansionist and coercive foreign policy',
+        explanation: 'Force, bases, coercive diplomacy, conquest, occupation, protectorates, naval or air reach, arms races, and territorial or political expansion are treated as normal instruments of national power. Defensive capability, alliance membership, peacekeeping, and humanitarian action are not enough by themselves; evidence of doctrine, intent, repeated practice, or unequal control is needed to classify a state or movement here.',
+        citations: citations(['clausewitzOnWar', 'mahanInfluenceSeaPower', 'mearsheimerTragedy', 'hobsonImperialism'], ['oxfordImperialism', 'oxfordMilitarism', 'unCharterForce', 'foreignPolicy']),
+      },
+      religion: {
+        score: -18,
+        label: 'Instrumental civilizational or national religion',
+        explanation: 'Militarist and imperial projects may use religious symbols, sacred history, missionary claims, or civilizational language to legitimize war and hierarchy, but militarism has also been secular, racial, monarchic, revolutionary, or technocratic. The dimension is therefore near the middle: religion can authorize, resist, or remain independent of military power depending on the case.',
+        citations: citations(['mussoliniDoctrine', 'hobsonImperialism', 'burkeReflections'], ['sepReligionPolitics', 'oxfordImperialism', 'oxfordColonialismEmpireSociology']),
+      },
+    },
+    sections: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blocks: [
+          {
+            type: 'warning',
+            text: 'This is a historical-analytical profile of coercive statecraft, not a recommendation. Imperial and militarist systems have produced different experiences for rulers, soldiers, settlers, subjects, civilians, and resistance movements; the label must never erase those asymmetries or turn military violence into an aesthetic.',
+            citations: citations(['hobsonImperialism', 'mussoliniDoctrine'], ['oxfordImperialism', 'oxfordMilitarism', 'oxfordColonialismEmpireSociology']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Militarism is more than having an army or spending on defense. It is a political and social orientation in which military institutions, military reasoning, martial symbols, or the expectation of organized violence become unusually authoritative in public life. Imperialism is more than possessing a large territory: it involves unequal domination over other peoples or political communities through conquest, coercion, economic dependence, legal subordination, settlement, or a combination of mechanisms. A careful analysis records which of these elements is actually evidenced.',
+            citations: citations(['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism'], ['oxfordMilitarism', 'oxfordImperialism', 'oxfordColonialismEmpireSociology']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The combined label is useful for a didactic spectrum card because military organization and imperial hierarchy often reinforce one another, especially under industrial competition and total war. It is still a compound profile, not a claim that every empire was equally militarist or that every militarist project sought overseas colonies. Defensive nationalism, great-power realism, colonial administration, fascist total war, naval expansion, and revolutionary or anti-colonial self-defense require separate evidence and should not be merged automatically.',
+            citations: citations(['clausewitzOnWar', 'mearsheimerTragedy', 'fanonWretchedEarth'], ['oxfordImperialism', 'cambridgeMilitarismImperialism', 'unCharterForce']),
+          },
+        ],
+      },
+      {
+        id: 'description',
+        title: 'Description',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'A militarist polity typically links security to national vitality and treats military preparedness as a permanent civic obligation. Indicators may include military predominance in foreign-policy decision-making, prestige attached to command and sacrifice, routine use of emergency language, high strategic spending, civilian institutions organized around war, and public narratives that define compromise as weakness. These are indicators rather than a mechanical checklist: high spending can reflect threat exposure, and military professionalism can coexist with democratic civilian control.',
+            citations: citations(['clausewitzOnWar', 'mussoliniDoctrine'], ['oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'An imperial project extends unequal power beyond the ruling polity. Its tools can include annexation, occupation, protectorates, unequal treaties, settler colonization, forced labor, monopolized trade, debt or financial control, racialized law, indirect rule, cultural assimilation, and the construction of dependent security forces. Formal annexation is not required, and a legal claim of civilization or modernization does not remove the underlying question of who can decide, who benefits, who bears coercion, and whether the subject population has equal political standing.',
+            citations: citations(['hobsonImperialism', 'mahanInfluenceSeaPower'], ['oxfordImperialism', 'oxfordColonialismEmpireSociology', 'sepColonialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The relationship between military power and political economy is contested. Strategic industry, arms procurement, shipping, bases, resource extraction, and labor mobilization can create material interests in expansion, while imperial competition can also impose high fiscal, human, and administrative costs. Hobson’s liberal critique emphasized finance and domestic political incentives; Marxist and dependency approaches emphasize accumulation and unequal world systems; realist approaches emphasize security competition and the absence of a superior enforcer. These are competing explanatory lenses, not interchangeable definitions.',
+            citations: citations(['hobsonImperialism', 'mearsheimerTragedy', 'mahanInfluenceSeaPower'], ['oxfordPoliticalEconomyMilitarism', 'oxfordImperialism', 'cambridgeMilitarismImperialism']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The six-axis score is deliberately schematic. It marks strong interventionism, national hierarchy, and security-centered authority while leaving the economic and religious dimensions near the middle because militarist and imperial systems have used different combinations of private enterprise, state direction, confessional legitimacy, secular ideology, and colonial political economy.',
+            citations: citations(['clausewitzOnWar', 'hobsonImperialism', 'mussoliniDoctrine'], ['oxfordMilitarism', 'oxfordImperialism', 'oxfordPoliticalEconomyMilitarism']),
+          },
+        ],
+      },
+      {
+        id: 'history',
+        title: 'Historical development',
+        timeline: [
+          {
+            period: 'Ancient and premodern empires — conquest, tribute, and layered sovereignty',
+            text: 'Imperial domination is as old as recorded state expansion. Ancient and premodern empires used conquest, tribute, dynastic rule, military colonies, religious legitimation, administrative incorporation, and negotiated local autonomy in varying combinations. These cases establish the broad historical meaning of empire, but they should not be assigned the modern ideology of militarism without evidence of a society-wide military doctrine or military predominance.',
+            citations: citations(['clausewitzOnWar'], ['oxfordImperialism', 'sepColonialism']),
+          },
+          {
+            period: 'Early modern expansion — commerce, naval power, settlement, and colonial rule',
+            text: 'European overseas empires combined merchant networks, chartered companies, naval force, missionary activity, settlement, plantation economies, slavery, and state rivalry. Maritime power and commercial access became mutually reinforcing in some cases, while colonial rule depended on local alliances, administrative knowledge, law, and violence rather than battles alone. The history must include African, Asian, American, and Indigenous agency, resistance, diplomacy, and adaptation rather than treating imperial subjects as passive objects.',
+            citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism'], ['oxfordImperialism', 'usStateMahan', 'oxfordColonialismEmpireSociology']),
+          },
+          {
+            period: 'Nineteenth century — industrial militarism and the national-imperial state',
+            text: 'Industrial production, railways, steam navigation, conscription, mass newspapers, bureaucratic administration, and national schooling changed the scale and speed of military mobilization. Great powers increasingly linked national prestige, strategic routes, markets, raw materials, and civilizational claims to overseas expansion. Militarism developed differently across Britain, France, Germany, Russia, Japan, and the United States; the comparison should not reduce all of them to one model.',
+            citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism'], ['oxfordMilitarism', 'cambridgeMilitarismImperialism', 'oxfordImperialism']),
+          },
+          {
+            period: '1890–1914 — naval rivalry, imperial competition, and anti-imperial critique',
+            text: 'Mahan’s sea-power analysis became influential in debates over fleets, commerce, strategic bases, and national greatness, while imperial competition and alliance politics intensified. Hobson criticized imperialism as a system that could serve concentrated financial interests, militarism, and domestic political diversion. The period’s scholarship and political arguments show that “imperialism” was contested at the time, not merely a label applied retrospectively by later critics.',
+            citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism', 'clausewitzOnWar'], ['usStateMahan', 'oxfordPoliticalEconomyMilitarism', 'oxfordImperialism', 'cambridgeMilitarismImperialism']),
+          },
+          {
+            period: '1914–1945 — total war, mass mobilization, and fascist empire',
+            text: 'The First World War demonstrated how alliances, mobilization, nationalism, and imperial rivalry could generate industrialized mass death. Interwar fascist movements then fused militarized politics with national rebirth, territorial revision, racial hierarchy, and totalizing state power; Nazi Germany made racial empire and genocidal war central to its project. Militarism is not identical to fascism, but fascist regimes represent an especially radical conjunction of militarization, dictatorship, and expansion.',
+            citations: citations(['clausewitzOnWar', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['oxfordMilitarism', 'sepFascism', 'oxfordImperialism']),
+          },
+          {
+            period: '1945–1970s — Charter order, decolonization, and anti-colonial war',
+            text: 'The United Nations Charter articulated sovereign equality, peaceful settlement, territorial integrity, and limits on the use of force, while decolonization movements challenged imperial rule through diplomacy, mass mobilization, civil disobedience, armed struggle, and international law. The end of formal empire did not end unequal economic or military relationships, and anti-colonial force cannot simply be classified as imperialism because its political aim may be self-determination rather than domination of another people.',
+            citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'hobsonImperialism'], ['unCharterForce', 'sepColonialism', 'oxfordColonialismEmpireSociology']),
+          },
+          {
+            period: 'Cold War — proxy conflict, military blocs, and security states',
+            text: 'The Cold War globalized military alliances, nuclear deterrence, arms races, coups, proxy wars, foreign bases, developmental competition, and ideological security doctrines. Formal empire declined, but superpower influence often operated through client governments, economic dependence, covert action, and unequal intervention. A state’s ideological alignment alone does not prove imperialism; the evidence must examine coercive reach, institutional dependence, material extraction, and political control.',
+            citations: citations(['mearsheimerTragedy', 'morgenthauRealism', 'fanonWretchedEarth'], ['oxfordMilitarism', 'oxfordImperialism', 'unCharterForce', 'foreignPolicy']),
+          },
+          {
+            period: 'Present — expeditionary power, economic coercion, and contested imperial analogies',
+            text: 'Contemporary states project power through expeditionary forces, military bases, arms transfers, sanctions, intelligence networks, private security, infrastructure finance, cyber capabilities, and control of strategic supply chains. Some analysts use “empire” for these patterns, while others reserve the term for direct political domination or colonial sovereignty. The classification must therefore show the mechanism, legal status, affected population, duration, and degree of consent rather than using imperialism as a synonym for any powerful state.',
+            citations: citations(['mearsheimerTragedy', 'hobsonImperialism'], ['oxfordImperialism', 'oxfordPoliticalEconomyMilitarism', 'unCharterForce', 'foreignPolicy']),
+          },
+        ],
+      },
+      {
+        id: 'variants',
+        title: 'Variants and internal debates',
+        blocks: [
+          {
+            type: 'comparison',
+            rows: [
+              {
+                label: 'Defensive militarism',
+                distinction: 'Treats permanent preparedness, conscription, alliances, or strategic depth as necessary to deter external threats.',
+                relation: 'It can coexist with constitutional civilian control and does not by itself establish imperial expansion; the key question is whether defense becomes an open-ended political value or external domination.',
+                citations: citations(['clausewitzOnWar', 'mearsheimerTragedy'], ['oxfordMilitarism', 'unCharterForce']),
+              },
+              {
+                label: 'Naval and commercial imperialism',
+                distinction: 'Connects maritime power, trade routes, ports, shipping, commercial access, and overseas bases to national prosperity and strategic influence.',
+                relation: 'Mahan is a major historical reference, but sea power is an instrument whose political use can range from defense to coercive empire.',
+                citations: citations(['mahanInfluenceSeaPower'], ['usStateMahan', 'oxfordImperialism']),
+              },
+              {
+                label: 'Settler and colonial imperialism',
+                distinction: 'Seeks territorial control, settlement, resource access, labor, or demographic transformation, often through racialized law and unequal sovereignty.',
+                relation: 'Directly overlaps with colonialism, but colonialism also includes non-military administrative and economic domination and must be analyzed from the perspective of the colonized.',
+                citations: citations(['hobsonImperialism', 'fanonWretchedEarth'], ['oxfordColonialismEmpireSociology', 'sepColonialism', 'oxfordImperialism']),
+              },
+              {
+                label: 'Informal or economic imperialism',
+                distinction: 'Uses finance, debt, trade dependence, investment, unequal treaties, sanctions, infrastructure, or market access to constrain political autonomy without formal annexation.',
+                relation: 'The concept is contested: economic inequality is not automatically imperial control, so the entry requires evidence of durable asymmetrical compulsion and political dependence.',
+                citations: citations(['hobsonImperialism', 'mearsheimerTragedy'], ['oxfordPoliticalEconomyMilitarism', 'oxfordImperialism', 'oxfordColonialismEmpireSociology']),
+              },
+              {
+                label: 'Revolutionary or fascist imperialism',
+                distinction: 'Presents expansion, war, racial or civilizational hierarchy, and mass mobilization as a transformative national mission rather than merely a strategic instrument.',
+                relation: 'Fascist imperialism is a radical subset with party dictatorship and a project of national rebirth; not every militarist or imperial state is fascist.',
+                citations: citations(['mussoliniDoctrine', 'arendtTotalitarianism'], ['sepFascism', 'oxfordMilitarism', 'oxfordImperialism']),
+              },
+              {
+                label: 'Great-power realism',
+                distinction: 'Explains military competition, alliances, balancing, and expansion through insecurity and the international distribution of power rather than moral or racial mission.',
+                relation: 'Realism can analyze imperial behavior without endorsing it; a realist description is not automatically a militarist ideology or imperial programme.',
+                citations: citations(['mearsheimerTragedy', 'morgenthauRealism'], ['oxfordMilitarism', 'foreignPolicy', 'unCharterForce']),
+              },
+              {
+                label: 'Humanitarian or liberal interventionism',
+                distinction: 'Justifies external force through protection of civilians, human rights, collective security, or international order rather than conquest or permanent rule.',
+                relation: 'The distinction from imperialism depends on authorization, purpose, duration, consent, accountability, post-conflict control, and whether affected people gain equal political agency; benevolent language is not sufficient evidence.',
+                citations: citations(['kantPerpetualPeace', 'walzerJustWars'], ['unCharterForce', 'foreignPolicy', 'oxfordImperialism']),
+              },
+              {
+                label: 'Anti-colonial national defense',
+                distinction: 'Uses organized force, popular mobilization, or international solidarity to end foreign domination and establish self-determination.',
+                relation: 'It may reproduce coercion or become expansionist after victory, but its initial relation to empire is structurally different from a project of ruling another people.',
+                citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj'], ['sepColonialism', 'unCharterForce', 'oxfordColonialismEmpireSociology']),
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'examples',
+        title: 'Illustrative examples and boundaries',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The British, French, Russian, Ottoman, Japanese, German, Spanish, Portuguese, Belgian, and United States empires are historically important comparative cases, but they differed in chronology, legal form, settler presence, economic organization, racial ideology, local alliances, and military administration. “The empire” is therefore not one regime type. A country can be imperial in one period and anti-imperial in another, or combine internal constitutional institutions with external colonial domination.',
+            citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism'], ['oxfordImperialism', 'oxfordColonialismEmpireSociology', 'sepColonialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The First World War, Imperial Japan’s expansion, fascist Italy’s colonial wars, Nazi Germany’s racial empire, Cold War proxy conflicts, and postcolonial struggles are useful historical cases for different parts of the profile. They should not be treated as equivalent. A documented comparison should identify the institution or movement, the period, the declared doctrine, the actual practice, the people subject to coercion, and the relevant legal and historical dispute.',
+            citations: citations(['clausewitzOnWar', 'mussoliniDoctrine', 'fanonWretchedEarth'], ['oxfordMilitarism', 'cambridgeMilitarismImperialism', 'oxfordImperialism', 'unCharterForce']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Carl von Clausewitz, Alfred Thayer Mahan, John A. Hobson, Hans Morgenthau, John Mearsheimer, Benito Mussolini, Frantz Fanon, and anti-colonial writers represent different positions and analytical uses of military power. Clausewitz and Mahan are strategic or historical authorities, Hobson is a critical political economist, realists explain competition, fascist texts justify authoritarian expansion, and Fanon analyzes colonial violence and liberation. Listing them together is a map of debate, not a claim that they support one ideology.',
+            citations: citations(['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth'], ['oxfordImperialism', 'oxfordMilitarism', 'oxfordColonialismEmpireSociology']),
+          },
+        ],
+      },
+      {
+        id: 'related-labels',
+        title: 'Related labels',
+        blocks: [
+          {
+            type: 'related-labels',
+            labels: [
+              { id: 'historical-fascist', relation: 'shares militarization, authoritarianism, ultranationalism, and expansion in historical cases, but fascism adds a specific mass-movement and national-rebirth project and is not synonymous with all imperialism' },
+              { id: 'national-conservative', relation: 'may share national defense, hierarchy, and sovereignty, but national conservatism does not require permanent militarization, conquest, or imperial rule' },
+              { id: 'ethnic-nationalist', relation: 'may share exclusionary identity and territorial claims, but ethnic nationalism can be non-militarist and militarist imperialism can be civic, dynastic, racial, or civilizational' },
+              { id: 'authoritarian-collectivist', relation: 'can overlap where security institutions and party-state authority direct society, but collectivist economics and militarism are analytically separate dimensions' },
+              { id: 'anti-colonial-liberation', relation: 'may involve armed struggle, but liberation seeks to end foreign domination while imperialism seeks unequal control; the post-victory record must still be examined' },
+              { id: 'civic-nationalist', relation: 'may share state capacity and national membership, but civic nationalism can be constitutional and peaceful while militarist imperialism makes force and hierarchy central' },
+              { id: 'monarchist', relation: 'historical empires often used dynastic legitimacy, but monarchy does not determine militarism and modern imperialism can be republican' },
+              { id: 'liberal-constitutionalist', relation: 'constitutional states can maintain defense forces and even interventionist policies, but liberal constitutionalism limits arbitrary power and rejects imperial inequality as a constitutive principle' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'criticisms',
+        title: 'Criticism, uncertainty, and safeguards',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'The first classification risk is equating military capability with militarism. A state may maintain a large defense budget because of geography, deterrence, alliance commitments, or an active war while retaining strong civilian oversight and public skepticism toward military authority. Conversely, a smaller state can be militarist if military values dominate identity, policy, and dissent. The evidence must separate capacity, threat environment, doctrine, institutional power, and social prestige.',
+            citations: citations(['clausewitzOnWar', 'mearsheimerTragedy'], ['oxfordMilitarism', 'vdem', 'foreignPolicy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The second risk is using imperialism as a moral synonym for any foreign involvement. Trade, diplomacy, peacekeeping, sanctions, humanitarian protection, alliance support, and development finance can be beneficial, harmful, or mixed depending on power and accountability. The classification should disclose whether there is coercion, unequal consent, territorial control, extraction, political tutelage, racial or legal hierarchy, and a durable inability of the affected population to alter the relationship.',
+            citations: citations(['hobsonImperialism', 'walzerJustWars'], ['oxfordImperialism', 'unCharterForce', 'foreignPolicy', 'oxfordPoliticalEconomyMilitarism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The third criticism concerns the security dilemma. Leaders can interpret the defensive preparations of another state as offensive, generating arms races and preemptive reasoning. Realist theories explain why this can occur without assuming a moral mission, while critical theories ask who defines the threat and who pays its human and economic costs. A careful profile records rival interpretations instead of presenting one side’s security narrative as fact.',
+            citations: citations(['mearsheimerTragedy', 'morgenthauRealism', 'clausewitzOnWar'], ['cambridgeMilitarismImperialism', 'oxfordMilitarism', 'unCharterForce']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fourth criticism is colonial erasure. Imperial histories have often centered the archive, strategy, and self-description of the imperial power while reducing subject peoples to objects of administration or military study. Research should include local political thought, resistance, collaboration, gendered and economic effects, Indigenous and colonized sovereignty, and the long-term institutional consequences of borders, extraction, and racial law.',
+            citations: citations(['fanonWretchedEarth', 'hobsonImperialism'], ['oxfordColonialismEmpireSociology', 'sepColonialism', 'oxfordImperialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The fifth criticism concerns civil-military and economic accountability. Procurement, private contractors, intelligence secrecy, bases, arms transfers, and strategic industries can create interests that are difficult for citizens to inspect or reverse. Safeguards include legislative authorization, transparent budgets, independent audit, judicial remedies, civilian leadership, free journalism, whistleblower protection, sunset clauses for emergency measures, and meaningful participation by communities exposed to military operations.',
+            citations: citations(['hobsonImperialism', 'mussoliniDoctrine'], ['oxfordPoliticalEconomyMilitarism', 'oxfordMilitarism', 'unCharterForce', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Finally, historical analogies are easy to abuse. Calling a contemporary government “imperialist” or “militarist” should identify the specific policy, institution, period, and evidence rather than functioning as a general insult. The card should retain uncertainty when intentions are disputed, avoid country-level shortcuts, and make clear that military force can be used by democratic, authoritarian, revolutionary, anti-colonial, or humanitarian actors for different ends and with different consequences.',
+            citations: citations(['clausewitzOnWar', 'hobsonImperialism', 'fanonWretchedEarth'], ['oxfordImperialism', 'oxfordMilitarism', 'foreignPolicy', 'unCharterForce']),
+          },
+        ],
+      },
+    ],
+    references: {
+      authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars'],
+      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem'],
+      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context.',
+    },
+    researchGaps: [
+      'Add original-language research in Portuguese, French, German, Spanish, Arabic, Turkish, Hindi, Chinese, Japanese, Korean, and African languages on empire, militarism, military labor, and anti-colonial political thought.',
+      'Compare ancient, early-modern, colonial, settler, informal, Cold War, and contemporary forms of empire without treating the modern European nation-state as the universal baseline.',
+      'Expand research on African, Asian, Indigenous, Middle Eastern, Latin American, and Pacific experiences, including local diplomacy, collaboration, resistance, gender, labor, and postcolonial state formation.',
+      'Map the boundary between defense, deterrence, humanitarian intervention, peacekeeping, counterinsurgency, occupation, coercive diplomacy, economic dependence, and imperial control using case-specific evidence.',
+      'Study how military procurement, finance, labor, technology, private contractors, ports, bases, supply chains, and resource extraction shape political incentives without assuming that economic interest is the only cause of war.',
+      'Compare civil-military relations, emergency law, intelligence oversight, media systems, veterans’ politics, conscription, and democratic accountability across constitutional and authoritarian regimes.',
+      'Develop uncertainty ranges and separate scores for military institutional power, external intervention, territorial empire, economic coercion, and social militarization instead of relying on one compound label.',
+    ],
+  },
 };

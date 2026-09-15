@@ -296,6 +296,22 @@ export const AUTHOR_REFERENCES = {
     kind: 'primary',
     url: 'https://www.gutenberg.org/ebooks/1946',
   },
+  mahanInfluenceSeaPower: {
+    author: 'Alfred Thayer Mahan',
+    work: 'The Influence of Sea Power upon History, 1660–1783',
+    year: '1890',
+    kind: 'primary',
+    context: 'A naval-history and strategy text used to document one influential argument connecting maritime power, commerce, state capacity, and imperial competition. It is a historical strategic perspective, not a neutral measure of all militarism or a recommendation for expansion.',
+    url: 'https://www.gutenberg.org/ebooks/13529',
+  },
+  hobsonImperialism: {
+    author: 'John A. Hobson',
+    work: 'Imperialism: A Study',
+    year: '1902',
+    kind: 'primary',
+    context: 'A liberal anti-imperialist critique linking imperial expansion to finance, domestic politics, militarism, and unequal colonial rule; cited as one historical theory of imperialism rather than a complete explanation of every empire.',
+    url: 'https://www.marxists.org/archive/hobson/1902/imperialism/',
+  },
   gandhiHindSwaraj: {
     author: 'M. K. Gandhi',
     work: 'Hind Swaraj / Indian Home Rule',
