@@ -1926,8 +1926,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       economic: {
         score: -70,
         label: 'Strongly market-oriented',
-        explanation: 'Private property, contract, competition, and decentralized exchange are treated as important safeguards for independence and prosperity. The tradition nevertheless includes arguments for public goods, infrastructure, education, regulation, and a limited social minimum, so it is broader than absolute laissez-faire.',
-        citations: citations(['adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertarianism']),
+        explanation: 'Private property, contract, competition, and decentralized exchange are treated as important safeguards for independence and prosperity. The tradition nevertheless includes arguments for public goods, infrastructure, education, regulation, and a limited social minimum, so it is broader than absolute laissez-faire. The later Freiburg approach makes competition depend on enforceable rules against concentrated private power.',
+        citations: citations(['adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertarianism', 'euckenFreiburgHistory']),
       },
       social: {
         score: 20,
@@ -1938,8 +1938,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       authority: {
         score: -58,
         label: 'Strongly limited-state',
-        explanation: 'Government is legitimate when it protects rights, adjudicates disputes, supplies certain common goods, and acts through accountable law. Arbitrary rule, unchecked executive power, and coercion of peaceful conduct are treated as serious dangers, though the permitted functions of the state remain contested.',
-        citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'vdem']),
+        explanation: 'Government is legitimate when it protects rights, adjudicates disputes, supplies certain common goods, and acts through accountable law. Arbitrary rule, unchecked executive power, and coercion of peaceful conduct are treated as serious dangers, though the permitted functions of the state remain contested. In comparing ordoliberalism, distinguish a state capable of enforcing competition rules from one exercising arbitrary authority; administrative strength alone does not settle this score.',
+        citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'vdem', 'freiburgOrdoliberalDebates']),
       },
       identity: {
         score: 12,
@@ -1975,6 +1975,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The label is historically layered. Early modern natural-rights and toleration arguments supplied important foundations; eighteenth-century commercial and constitutional thought developed them; nineteenth-century liberals used them for reform, free trade, civil equality, and opposition to inherited privilege. Later libertarian and neoliberal currents selectively inherited this tradition, but classical liberalism should not be treated as a synonym for every market ideology or as proof that the state must perform no social function.',
             citations: citations(['lockeSecondTreatise', 'adamSmithWealth', 'millOnLiberty', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertarianism']),
           },
+          {
+            type: 'paragraph',
+            text: 'Shared aims can support different institutions. Andrew Valls’s comparison presents personal development as central to both Humboldt and Mill, while emphasizing their disagreement about how actively government should support it. This helps explain the breadth of the classical-liberal family.',
+            citations: citations([], ['vallsHumboldtMill']),
+          },
         ],
       },
       {
@@ -1995,6 +2000,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Classical liberalism also contains a theory of social learning. Free speech and open criticism are valuable not only as private rights but because governments, majorities, and individuals can be mistaken. Mill’s warning about social as well as state coercion and Constant’s distinction between modern civil liberty and ancient direct participation help explain why constitutional protections, private life, and plural association matter alongside elections.',
             citations: citations(['millOnLiberty', 'constantLibertyModerns'], ['sepMill', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In chapters II–III of his German treatise, Humboldt connects Bildung, or the cultivation of a person’s capacities, with freedom, varied experience, and relationships with others. His objection to state direction concerns the conditions of individual development as well as material welfare. Here Bildung is an explanatory gloss, not an exact equivalent of schooling.',
+            citations: citations([], ['humboldtLimitsGerman']),
           },
         ],
       },
@@ -2018,6 +2028,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['constantLibertyModerns', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertyPositiveNegative']),
           },
           {
+            period: '1792 / 1851: Humboldt’s limits on state action',
+            text: 'Humboldt composed the treatise in 1792; portions appeared before its first complete publication in 1851. The digital edition’s historical notes distinguish these stages. Dating the finished book solely to its publication year obscures its earlier intellectual setting.',
+            citations: citations([], ['humboldtLimitsGerman']),
+          },
+          {
             period: 'Nineteenth century: reform, markets, and exclusion',
             text: 'Classical liberal arguments supported free trade, parliamentary reform, civil equality, abolitionist and religious-liberty causes, and opposition to aristocratic privilege. At the same time, many historical liberals accepted restricted suffrage, colonial hierarchy, gender inequality, or racial exclusion. The tradition’s universal language and its uneven application must be studied together.',
             citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepMill']),
@@ -2026,6 +2041,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Twentieth century: old liberalism, welfare liberalism, and libertarian revival',
             text: 'Industrial crisis, mass democracy, war, and inequality produced competing revisions. New or welfare-state liberalism challenged the idea that private property alone secured effective liberty, while Hayekian and later libertarian currents emphasized dispersed knowledge, markets, and the dangers of centralized planning. These are internal disputes within a wider liberal genealogy, not a settled replacement of one label by another.',
             citations: citations(['hayekKnowledge', 'keynesGeneralTheory', 'millOnLiberty'], ['sepLiberalism', 'sepLibertarianism']),
+          },
+          {
+            period: '1930s onward: the Freiburg revision',
+            text: 'Economist Walter Eucken and jurists Franz Böhm and Hans Großmann-Doerth developed a programme joining legal and economic analysis. Their Freiburg School treated the rules organizing markets as a political responsibility. It belongs among later liberal revisions, with a particular emphasis on controlling private economic power.',
+            citations: citations([], ['euckenFreiburgHistory']),
+          },
+          {
+            period: 'Post-1945: social-market institutions',
+            text: 'Heinz Lampert’s 1988 account distinguishes ordoliberal theory from the broader social-market programme associated with Alfred Müller-Armack. The latter gave social security and social justice more explicit weight. The resulting West German settlement therefore requires its own institutional history when used as a liberal comparator.',
+            citations: citations([], ['bpbSocialMarketEconomy']),
           },
         ],
       },
@@ -2059,6 +2084,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Allows limited public education, infrastructure, safety regulation, or a modest minimum when these protect effective liberty or common goods.',
                 relation: 'Shows why the historical category contains more state capacity than a pure laissez-faire caricature.',
                 citations: citations(['adamSmithWealth', 'hayekKnowledge'], ['sepLiberalism', 'sepLibertarianism']),
+              },
+              {
+                label: 'Humboldt and Mill on personal development',
+                distinction: 'Valls interprets Humboldt as restricting government to security, while Mill permits public support for the conditions of personal development.',
+                relation: 'A disagreement within liberal thought; shared concern for individuality does not determine one welfare policy.',
+                citations: citations([], ['vallsHumboldtMill']),
+              },
+              {
+                label: 'Ordoliberalism / Freiburg School',
+                distinction: 'Public authority establishes rules for competition and addresses concentrations of economic power.',
+                relation: 'A later liberal revision with a more explicit role for constructing market institutions; compare it separately with minimal-state positions.',
+                citations: citations([], ['euckenFreiburgHistory']),
               },
               {
                 label: 'Libertarian and minarchist revision',
@@ -2106,6 +2143,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'His account clarifies one dimension of liberal freedom but is not a complete economic or foreign-policy programme.',
                 citations: citations(['constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative']),
               },
+              {
+                name: 'Wilhelm von Humboldt',
+                role: 'author of the treatise on limits to state action',
+                caveat: 'The youthful treatise is evidence of an argument about freedom; it does not establish a six-axis classification of his whole career or of Prussia.',
+                citations: citations([], ['humboldtLimitsGerman']),
+              },
             ],
           },
           {
@@ -2132,6 +2175,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Every current democracy combines liberal rights with welfare, regulation, national policy, and coercive institutions; no country should be presented as pure classical liberalism without case-specific evidence.',
                 citations: citations(['millOnLiberty', 'constantLibertyModerns', 'hayekKnowledge'], ['sepLiberalism', 'vdem', 'ches']),
               },
+              {
+                name: 'West German social-market settlement',
+                period: 'post-1945 developments discussed in Lampert’s 1988 account',
+                match: 'historical comparison with a later liberal revision',
+                caveat: 'Market coordination and social protection developed together. This comparison does not classify present-day Germany or imply that all welfare institutions originated in classical liberalism.',
+                citations: citations([], ['bpbSocialMarketEconomy']),
+              },
             ],
           },
         ],
@@ -2145,6 +2195,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
             labels: [
               { id: 'libertarian-market', relation: 'more strongly market-oriented and anti-coercive archetype in the current catalogue' },
               { id: 'liberal-constitutionalist', relation: 'emphasizes constitutional rights and institutional restraint, with less economic specificity' },
+              { id: 'ordoliberalism', relation: 'later liberal revision emphasizing the legal rules of competition and limits on private economic power' },
               { id: 'progressive-liberal', relation: 'shares rights and pluralism but accepts a more active redistributive and regulatory state' },
               { id: 'social-democratic', relation: 'shares democratic reform and civil liberties but gives collective provision and labor power more weight' },
               { id: 'anarcho-capitalist', relation: 'radical anti-state market neighbor that rejects even the limited public authority accepted by most classical liberals' },
@@ -2173,16 +2224,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The profile also has a measurement limit: a country can protect speech while violating property rights, protect markets while weakening civil liberties, or maintain constitutional forms while allowing executive abuse. Classical liberalism should be assessed across all six dimensions and against documented institutions, not assigned from a single economic or cultural indicator.',
             citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'hayekKnowledge'], ['sepLiberalism', 'vdem', 'ches']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Freiburg comparison raises a practical question: can authorities enforce competition rules while resisting powerful interest groups? A 2023 university report presents Tim Krieger’s proposals for renewing ordoliberal thought through climate and education debates. These are attributed arguments for further study; they do not establish that a market instrument will work in every setting.',
+            citations: citations([], ['freiburgOrdoliberalDebates']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'adamSmithWealth', 'millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns', 'hayekKnowledge', 'nozickASU', 'keynesGeneralTheory', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepMill', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'vdem', 'ches', 'foreignPolicy'],
-      editorialNote: 'The entry distinguishes the broad classical-liberal family from libertarian, social-liberal, and constitutionalist neighbors. Its scores describe a didactic reference profile and do not measure every historical liberal, party, or market economy.',
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepMill', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'humboldtLimitsGerman', 'vallsHumboldtMill', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates', 'bpbSocialMarketEconomy', 'vdem', 'ches', 'foreignPolicy'],
+      editorialNote: 'The entry distinguishes the broad classical-liberal family from libertarian, social-liberal, and constitutionalist neighbors. Its scores describe a didactic reference profile and do not measure every historical liberal, party, or market economy. The German material is independently paraphrased. Humboldt’s primary text, Valls’s accessible abstract, the Eucken institute’s account, and Krieger’s reported interpretation have different evidence roles; none supplies measured coordinates.',
     },
     researchGaps: [
-      'Add German-language scholarship on ordoliberalism, the Freiburg tradition, Kantian liberalism, and the post-war social market economy without treating any of them as identical to classical liberalism.',
+      'German primary and institutional sources now introduce Humboldt and the Freiburg/social-market distinction. Add Kantian liberalism, independent German-language scholarship on ordoliberalism, and primary works by Eucken and Böhm; review Valls’s full article and competing interpretations of Humboldt’s later educational practice. These traditions must not be treated as identical to classical liberalism.',
       'Add French-language scholarship on Constant, Tocqueville, republican liberty, empire, and the tension between universal rights and colonial practice.',
       'Add British, Scottish, Portuguese, and Spanish scholarship on commercial society, free trade, constitutional reform, and liberal empire.',
       'Add country-specific evidence before listing current states as examples; rights, tax systems, regulation, welfare, and executive constraints change over time.',
