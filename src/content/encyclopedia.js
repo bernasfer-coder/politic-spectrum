@@ -9720,6 +9720,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016']),
           },
           {
+            type: 'paragraph',
+            text: 'South Africa’s post-apartheid constitutional order supplies a different case of rights-constrained government. Chapter 2 binds all organs of state, protects equality, conscience, political participation, labour and socioeconomic rights, permits justified limitations, and directs courts to consider international law and the values of an open democratic society. These provisions show a constitutional design that joins liberal restraints with transformative and social-rights commitments; they do not by themselves prove equal access or effective implementation.',
+            citations: citations([], ['southAfricaConstitution1996Rights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Khosla and Tushnet use South African socioeconomic-rights litigation to question a simple opposition between courts that limit state power and governments that need capacity to act. Their account highlights dialogic or weak-form review and the state capacity needed for reasonable programmes. This broadens constitutionalism’s problem: rights protection requires both restraints on coercion and public institutions capable of delivering lawful remedies and services.',
+            citations: citations([], ['khoslaTushnetStateCapacity2022']),
+          },
+          {
             type: 'evidence-note',
             text: 'The public score is deliberately didactic. It places this label near market-oriented, socially liberty-protecting, strongly anti-arbitrary-power, civic, legally restrained, and non-confessional positions. It does not claim that all liberal constitutionalists favor small government, progressive cultural change, international intervention, judicial supremacy, or one model of secularism.',
             citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['oxfordLiberalismResearch', 'sepConstitutionalism', 'sepLiberalism', 'foreignPolicy']),
@@ -9754,6 +9764,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century — civil liberty, representative reform, and the limits of liberal citizenship',
             text: 'Liberal constitutionalism developed alongside parliamentary reform, free speech campaigns, commercial society, expanding education, abolitionist and feminist arguments, and new theories of representative government. Mill defended individuality and open discussion, while Wollstonecraft exposed the contradiction between universal rights language and women’s subordination. At the same time, liberal constitutionalism was repeatedly entangled with empire, racial hierarchy, property power, and claims that some peoples were not ready for self-government.',
             citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepMill', 'sepLiberalism', 'colonialLiberalismExclusion', 'sepColonialism']),
+          },
+          {
+            period: '1995–1996: South African constitutional transition and rights review',
+            text: 'The South African Constitutional Court’s official history identifies S v Makwanyane as its first hearing and reports that, on 6 June 1995, the Court unanimously found the death penalty unconstitutional under the interim Constitution’s protections for life, dignity, and freedom from cruel punishment. The case illustrates transitional rights adjudication and judicial review; the full judgment and later enforcement are not claimed here.',
+            citations: citations([], ['southAfricaMakwanyaneCourt1995', 'southAfricaConstitution1996Rights']),
           },
           {
             period: '1824 — Brazilian rights guarantees and monarchical authority',
@@ -9871,6 +9886,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Brazil’s 1824 text distinguishes status from participation: article 6 includes Brazilian-born freed people as citizens, while article 94 excludes freed people from second-stage electors; articles 92, 94, and 95 impose graduated income qualifications. Article 5 retains Catholic establishment and limits other worship to private settings; article 95 excludes non-Catholics from the Chamber of Deputies. Constitutional membership did not mean equal political or religious rights.',
             citations: citations([], ['brazilConstitution1824']),
           },
+          {
+            type: 'paragraph',
+            text: 'South Africa’s 1996 Bill of Rights is a documented example of post-authoritarian constitutional transformation: rights apply to all law and bind the legislature, executive, judiciary and state organs; equality allows measures to advance people disadvantaged by unfair discrimination; and section 36 requires justified limitations. The official text is evidence of design, not a whole-country rating or a substitute for implementation research.',
+            citations: citations([], ['southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995']),
+          },
         ],
       },
       {
@@ -9914,6 +9934,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The South African case also qualifies the assumption that constitutionalism is only a negative restraint on government. Khosla and Tushnet’s comparative account emphasizes that courts may shape state capacity through engagement, incentives, and dialogic remedies, while the Constitution’s socioeconomic-rights language leaves implementation dependent on reasonable measures and available resources. Constitutional rights can therefore generate both judicial limits and institutional obligations without guaranteeing delivery.',
+            citations: citations([], ['khoslaTushnetStateCapacity2022', 'southAfricaConstitution1996Rights']),
+          },
+          {
+            type: 'paragraph',
             text: 'Marcelo Cheche Galves and Yuri Costa (2022), in their discussion of the 1824 charter, connect property-based political qualifications and the treatment of enslaved people as property to the reproduction of slaveholding hierarchies. They also emphasize the tension between liberal guarantees and strengthened royal power. Their social-history emphasis complements, without resolving, Lynch’s distinct question about the legal reception of Constant; neither reading substitutes for evidence of enforcement.',
             citations: citations([], ['galvesCostaProperty2022', 'lynchModeratingPower2005']),
           },
@@ -9947,7 +9972,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy', 'adamSmithWealth'],
-      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016'],
+      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016', 'southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995', 'khoslaTushnetStateCapacity2022'],
       editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state.',
     },
     researchGaps: [
@@ -9963,6 +9988,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'The article’s five reversed signs have been aligned with the existing reference card, without changing magnitudes or Authority. Separate historical case ranges and calibrated scores still require evidence beyond these documents.',
       'Collate the Weimar provisions and 1933 decree with Reichsgesetzblatt facsimiles, including the omitted article 25 and final paragraphs of article 48. The linked decree scan was inaccessible, and the Raithel page gives a discrepant document page number; GHDI’s p. 83 locator is used without claiming facsimile verification.',
       'Read the Raithel–Strenge 2000 study, cabinet records, parliamentary cancellation votes, court decisions and local detention files directly. The German additions begin the emergency-powers comparison but do not establish all mechanisms, local effects, alternatives or present-day analogies; earlier multilingual and empirical gaps remain open.',
+      'Read the full S v Makwanyane judgment, the interim and final constitutional texts, subsequent Constitutional Court cases, and multilingual South African scholarship. The official court-history summary establishes the bounded outcome but not the judgment’s complete reasoning, reception, or implementation.',
+      'Compare South Africa’s socioeconomic-rights remedies and state capacity with Brazil, India, and other African constitutional orders using judgments, budgets, administrative records, litigants’ evidence, and independent outcome studies. The selected Khosla–Tushnet argument is not a complete implementation audit or a present-day country classification.',
     ],
   },
   'militarist-imperialist': {

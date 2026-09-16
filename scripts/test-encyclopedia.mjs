@@ -64,6 +64,47 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const liberalConstitutionalismEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
+for (const [sourceId, role, date] of [
+  ['southAfricaConstitution1996Rights', 'primary', '1996'],
+  ['southAfricaMakwanyaneCourt1995', 'primary', '1995-06-06'],
+  ['khoslaTushnetStateCapacity2022', 'secondary', '2022-05-21'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const southAfricaScholar = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-khoslaTushnetStateCapacity2022');
+assert.equal(southAfricaScholar.identifiers.doi, '10.1093/ajcl/avac009');
+assert.match(southAfricaScholar.description, /First online publication date.*March 2022/);
+assert.match(southAfricaScholar.note, /selected South Africa discussion/);
+assert.match(southAfricaScholar.license, /CC BY 4\.0/);
+const makwanyaneRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-southAfricaMakwanyaneCourt1995');
+assert.match(makwanyaneRecord.description, /retrospective institutional summary/);
+assert.match(makwanyaneRecord.note, /full judgment.*not independently read/);
+const southAfricaDescription = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(southAfricaDescription.some(({ text }) => text?.includes('post-apartheid constitutional order') && text.includes('do not by themselves prove equal access')));
+assert.ok(southAfricaDescription.some(({ text }) => text?.includes('state capacity') && text.includes('dialogic or weak-form review')));
+const liberalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+const saIndex = liberalHistory.findIndex(({ period }) => period.startsWith('1995–1996: South African'));
+assert.ok(saIndex >= 0);
+const southAfricaExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.includes('South Africa’s 1996 Bill of Rights'));
+assert.ok(southAfricaExample);
+const liberalCriticisms = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(liberalCriticisms.some(({ text }) => text?.includes('constitutionalism is only a negative restraint')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the full S v Makwanyane judgment')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Compare South Africa’s socioeconomic-rights remedies')));
+assert.deepEqual(Object.fromEntries(Object.entries(liberalConstitutionalismEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -30, social: 25, authority: -65, identity: 25, foreign: 35, religion: 55 });
+
 const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
 for (const [sourceId, role, date] of [
   ['irishAssemblyTerms2016', 'primary', '2016-07'],
