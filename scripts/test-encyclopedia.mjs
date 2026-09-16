@@ -1521,6 +1521,37 @@ for (const [sourceId, evidenceRole] of [
 const cabinetEvidence = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.includes('Table 7'));
 assert.ok(cabinetEvidence, 'the cabinet study needs an explicit evidence-boundary note');
 assert.match(cabinetEvidence.text, /proxy for 1858 and no index for 1859/, 'the selected budget evidence must preserve its missing-data and proxy qualifications');
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['portugalConstitution1822', 'primary', '1822-09-23'],
+  ['portugalCharter1826', 'primary', '1826-04-29'],
+  ['portugalConstitutionalMonarchyJustice', 'secondary', null],
+  ['monicaElectoralReforms1996', 'secondary', '1996-12-31'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Portuguese monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish constitutional text from historical interpretation`);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, ['Portuguese']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const portugueseHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline;
+const portugueseTimeline = portugueseHistory.find(({ period }) => period.startsWith('1820–1910:'));
+assert.ok(portugueseTimeline, 'the Portuguese constitutional-monarchy timeline case must remain visible');
+assert.ok(portugueseTimeline.citations.researchSourceIds.includes('portugalConstitution1822'));
+assert.ok(portugueseTimeline.citations.researchSourceIds.includes('monicaElectoralReforms1996'));
+const portugueseVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Portuguese liberal constitutional monarchy'));
+assert.ok(portugueseVariant, 'the Portuguese case must be separated as a dated constitutional variant');
+const portugueseExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Portugal’s liberal constitutional monarchy'));
+assert.ok(portugueseExample, 'Portugal must appear as a bounded historical example');
+assert.match(portugueseExample.caveat, /not a classification of present-day Portugal/);
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Portuguese 1822 Constitution')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Research Portuguese electoral law')));
 
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [

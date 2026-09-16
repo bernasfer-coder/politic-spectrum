@@ -7220,6 +7220,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Morocco’s 2011 text and its scholarly reception provide a bounded non-European comparison. A constitution’s parliamentary self-description is not by itself evidence that the crown has become ceremonial. This case concerns institutional design and interpretation, not a current-country match or an assessment of all African or Muslim monarchies.',
             citations: citations([], ['moroccoConstitutionFrench2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Portugal supplies a bounded Iberian case: the 1822 Constitution combined national representation, separation of powers, and a catalogue of rights with exclusions that included enslaved people from Portuguese citizenship; the 1826 Charter then represented a different constitutional settlement with a stronger royal role. The official history describes these as part of a contested constitutional monarchy, not a single stable or fully inclusive model.',
+            citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice']),
+          },
         ],
       },
       {
@@ -7278,6 +7283,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Portugal’s liberal constitutional experience shows why “constitutional monarchy” needs a dated institutional reading. The 1822 Constitution organized representative, legislative, executive, judicial, and administrative functions and stated rights to liberty, security, property, expression, equality, and petition, while the official record also preserves exclusions from citizenship. The 1826 Charter was described by the Ministry of Justice as a compromise between the 1822 principle of national sovereignty and royal prerogative, with a royal moderating function and distinct periods of operation through 1910.',
+            citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Portuguese case also cannot be reduced to a frozen constitutional text. Mónica’s study identifies successive electoral reforms in 1852, 1859, 1878, 1884, 1895–96, and 1901 and treats parliamentary controversy as an active part of the period. The publisher abstract and metadata were consulted, not the complete article or its underlying electoral evidence, so the milestones are recorded as a research lead rather than a complete measure of participation.',
+            citations: citations([], ['monicaElectoralReforms1996']),
+          },
+          {
+            type: 'paragraph',
             text: 'Article 47 links appointment of the head of government to the party finishing first in lower-house elections; article 88 requires confidence from an absolute majority of that chamber’s members. Articles 48–49 nevertheless retain a royal-chaired Council of Ministers for strategic matters. It is distinct from the head-of-government-chaired Council of Government in article 92; delegation of chairing a specified ministerial meeting is possible. Neither “the king appoints” nor “parliament gives confidence” alone describes the arrangement.',
             citations: citations([], ['constituteMorocco2011']),
           },
@@ -7326,6 +7341,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century: national, imperial, and constitutional monarchies',
             text: 'Monarchies adapted to nationalism, industrialization, mass politics, empire, and expanding but unequal citizenship. Some crowns became symbols above party politics while elected parliaments and cabinets gained practical power; others preserved executive authority, aristocratic privilege, colonial rule, or military command. Walter Bagehot’s analysis of the British constitution is a key historical account of the distinction between ceremonial and governing functions.',
             citations: citations(['bagehotEnglishConstitution', 'burkeReflections', 'nabucoAbolitionism'], ['oxfordMonarchyConstitution', 'journalDemocraticMonarchies', 'bpbMonarchy', 'sepColonialism']),
+          },
+          {
+            period: '1820–1910: Portuguese liberal constitutional monarchy',
+            text: 'The 1820 Porto revolution opened a constitutional cycle in which the 1822 Constitution articulated national representation, separated powers, and rights, while the 1826 Charter restored a stronger royal settlement. The Liberal Civil War of 1832–1834 separated liberal constitutionalism from Miguelist absolutism, and the Charter operated in distinct periods before 1910. Later electoral reforms show continuing disputes over representation rather than a completed transition to universal democracy.',
+            citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
           },
           {
             period: '1847: Brazil creates a president of the Council of Ministers',
@@ -7379,6 +7399,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Both the monarch and representative institutions claim meaningful political legitimacy, producing a divided executive or recurring constitutional conflict.',
                 relation: 'It differs from a ceremonial crown because the monarch can shape government formation, legislation, emergency power, or foreign policy; stability depends on clear rules and accepted limits.',
                 citations: citations(['lockeSecondTreatise', 'bagehotEnglishConstitution'], ['oxfordConstitutionalMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordMonarchyConstitution']),
+              },
+              {
+                label: 'Portuguese liberal constitutional monarchy, 1820–1910',
+                distinction: 'A historical case in which liberal constitutional rights and representative institutions coexisted with a royal constitutional settlement, civil conflict, restricted citizenship, and changing electoral rules.',
+                relation: 'It demonstrates that “constitutional monarchy” is not one fixed position: the 1822 Constitution, 1826 Charter, Liberal Civil War, and later reforms belong to different institutional moments and should not be collapsed into a single score or treated as a fully democratic model.',
+                citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
               },
               {
                 label: 'Brazilian reception of moderating-power doctrine, 1822–1824',
@@ -7503,6 +7529,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['nabucoAbolitionism'], ['sepColonialism', 'openTextbook', 'brazilConstitution1824', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017']),
               },
               {
+                name: 'Portugal’s liberal constitutional monarchy',
+                period: 'Portugal, 1820–1910',
+                match: 'A royal constitutional order shaped by the 1820 revolution, the liberal 1822 Constitution, the 1826 Charter, the 1832–1834 Liberal Civil War, and later electoral reform debates.',
+                caveat: 'The case combines liberal rights language with exclusions, royal prerogative, conflict over sovereignty, and restricted participation. It is a dated historical example, not a classification of present-day Portugal or a universal model of constitutional monarchy.',
+                citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
+              },
+              {
                 name: 'Contemporary democratic parliamentary monarchies',
                 period: 'Contemporary; country- and constitution-specific',
                 match: 'Several states retain hereditary heads of state within competitive parliamentary systems, where the democratic question centers on ministerial accountability, constitutional conventions, public finance, succession, and the boundary between symbolism and reserve power.',
@@ -7554,6 +7587,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The central criticism is hereditary inequality. Even a ceremonial crown gives public status and succession rights to a family by birth, which can conflict with equal political standing and the idea that public office should be open to citizens. Supporters answer that a non-partisan hereditary head of state can protect continuity and remain outside party competition; critics ask whether those functions require inherited privilege and whether citizens can freely revise the arrangement.',
             citations: citations(['lockeSecondTreatise', 'bagehotEnglishConstitution'], ['oxfordConstitutionalMonarchy', 'journalDemocraticMonarchies', 'bpbMonarchy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Portugal’s nineteenth-century experience makes the same caution concrete: formal rights and representative institutions coexisted with a royal constitutional settlement, exclusions from citizenship, civil conflict over sovereignty, and electoral rules that were repeatedly revised. This does not make the period simply “undemocratic” or “liberal”; it shows why constitutional text, franchise, social inclusion, and political practice must be assessed separately.',
+            citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
           },
           {
             type: 'paragraph',
@@ -7615,8 +7653,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
-      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract'],
-      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; no PDF visual review or full-monograph reading is claimed for that addition.',
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract', 'portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996'],
+      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. The Portuguese addition is a bounded Iberian case: official Portuguese sources, a primary-text link, and a Portuguese scholarly abstract/metadata are used with their limits visible; it does not establish a national score or a complete account of participation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; no PDF visual review or full-monograph reading is claimed for that addition.',
     },
     researchGaps: [
       'Add French-language scholarship on divine-right monarchy, the French constitutional monarchies of 1791–1792, the Restoration, the July Monarchy, the Second Empire, royalism, republicanism, colonial monarchy, and the constitutional doctrines of the nineteenth century.',
@@ -7633,6 +7671,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Test Morocco’s formal allocation of powers against dated appointment records, cabinet and parliamentary proceedings, organic laws, judgments and independent accounts from opposition, women and religious minorities. Extend to emergency powers and amendment practice without assuming that institutional promises establish outcomes or a current-country score.',
       'Collate the 1791 French constitution and Barnave’s July speech with original editions and parliamentary records. The speech page’s modern headnote places June dates in a July sequence; do not reuse that chronology without checking it. Study actual veto episodes, ministerial prosecutions, popular petitions, women’s claims and colonial exclusions before inferring implementation from these selected provisions.',
       'Read Caiani’s complete introduction and monograph, and compare French-language specialist interpretations of 1791–1792. Only the Kent abstract was accessible in this pass; the publisher PDF and attempted OpenEdition articles were unavailable. No full-text, archival or PDF visual review is claimed, and the older French-scholarship gap remains open.',
+      'Read and collate the complete Portuguese 1822 Constitution and 1826 Charter, including the original Portuguese and official Gazette or facsimile versions. Test the summary-level claims here against the full articles, amendments, constitutional practice, and competing Portuguese historiography before expanding the case.',
+      'Research Portuguese electoral law, parliamentary debates, press, suffrage exclusions, slavery and colonial subjecthood, and the 1832–1834 Liberal Civil War through local scholarship and primary records. Mónica’s article was represented through its abstract and metadata in this pass; the full article and underlying electoral evidence remain open.',
+      'Add Portuguese and Spanish scholarship on Estado–Igreja relations, republicanism, Miguelism, regional and colonial monarchy, women’s political claims, and the transition to the 1910 Republic. Keep formal constitutional rights, lived access, and later republican memory as separate evidence layers.',
     ],
   },
   theocratic: {

@@ -523,6 +523,10 @@ const RIGHTS_RECORDS = {
     comparativeChristianDemocracy: { ...LINK_ONLY, notes: 'Stanford-hosted scholarly working paper used as a linked comparative source; no paper text, tables, or figures are reproduced.' },
     oxfordConstitutionalPatriotism: { ...LINK_ONLY, notes: 'Oxford Academic article used as a linked scholarly source; no article text, tables, or figures are reproduced.' },
     coeDemocraticCitizenship: { ...OFFICIAL_TEXT, notes: 'Council of Europe charter and educational framework used as an institutional source; no charter text, manuals, or graphics are reproduced.' },
+    portugalConstitution1822: { ...LINK_ONLY, reviewedAt: '2026-09-17', notes: 'Original institutional summary and official link only. No constitutional transcription, translation, scan, or facsimile is republished.' },
+    portugalCharter1826: { ...LINK_ONLY, reviewedAt: '2026-09-17', notes: 'Primary-text link and original summary only. No PDF page, constitutional wording, translation, or facsimile is republished; detailed article-level review remains open.' },
+    portugalConstitutionalMonarchyJustice: { ...LINK_ONLY, reviewedAt: '2026-09-17', notes: 'Original attributed summary and official institutional link only. No page text, image, timeline asset, or translated excerpt is republished.' },
+    monicaElectoralReforms1996: { ...LINK_ONLY, reviewedAt: '2026-09-17', license: 'Publisher metadata and abstract consulted; no reuse licence for the full article is asserted here.', notes: 'Original attributed synthesis and article link only. No article passage, PDF, table, figure, or electoral dataset is republished.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },
