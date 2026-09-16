@@ -9264,6 +9264,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['millOnLiberty', 'kantPerpetualPeace'], ['unRuleLawHumanRights', 'echrConvention', 'oxfordConstitutionalJustice', 'vdem']),
           },
           {
+            type: 'paragraph',
+            text: 'The Weimar Constitution illustrates the difference between an emergency power and an unchecked power on paper. Article 48 permitted temporary suspension of specified rights but required prompt notification to the Reichstag and cancellation at its request. Article 50 required ministerial countersignature of presidential orders, while article 54 required resignation after an explicit parliamentary withdrawal of confidence. These textual checks do not demonstrate effective restraint in practice.',
+            citations: citations([], ['ghdiWeimarGerman']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Weimar and 1933 documents below form a boundary case about constitutional breakdown, not a classification of Nazi dictatorship as liberal constitutionalism. German texts, named historians’ interpretations and this project’s educational comparison remain distinct; no historical or present-day country score is inferred.',
+            citations: citations([], ['ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016']),
+          },
+          {
             type: 'evidence-note',
             text: 'The public score is deliberately didactic. It places this label near market-oriented, socially liberty-protecting, strongly anti-arbitrary-power, civic, legally restrained, and non-confessional positions. It does not claim that all liberal constitutionalists favor small government, progressive cultural change, international intervention, judicial supremacy, or one model of secularism.',
             citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['oxfordLiberalismResearch', 'sepConstitutionalism', 'sepLiberalism', 'foreignPolicy']),
@@ -9308,6 +9318,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Early twentieth century — mass democracy, social rights, and constitutional crisis',
             text: 'Universal or expanded suffrage, labor movements, women’s political mobilization, economic crisis, and mass parties pressured liberal constitutions to address social and material power rather than only formal legal freedom. Some systems responded with social rights and welfare institutions; others used emergency powers, executive rule, or anti-pluralist movements. The period shows that constitutional form alone does not prevent authoritarian capture when courts, parties, civil society, or public administration fail to resist it.',
             citations: citations(['millOnLiberty', 'wollstonecraftRights'], ['sepConstitutionalism', 'vdem', 'unRuleLawHumanRights']),
+          },
+          {
+            period: '1930–1933 — presidential government and parliamentary erosion',
+            text: 'Elke Seefried describes how presidential cabinets followed the collapse of the governing coalition in 1930. Without parliamentary majorities, they depended on presidential confidence and the threat of dissolution. Her account places this shift alongside economic crisis, party fragmentation, political violence and anti-democratic actors rather than treating the constitution as a sufficient cause.',
+            citations: citations([], ['seefriedWeimarCrisis2016']),
+          },
+          {
+            period: '28 February 1933 — emergency decree against constitutional freedoms',
+            text: 'The Reichstag fire decree invoked article 48(2). Section 1 suspended specified protections for liberty, expression, assembly, association, communications and property without a fixed end date; section 2 allowed the Reich government to assume powers of a Land’s highest authority under its stated conditions. This records the decree’s provisions, not validation of its claimed defensive justification.',
+            citations: citations([], ['ghdiReichstagFireDecreeGerman']),
           },
           {
             period: '1945–1989 — international human rights and constitutional courts',
@@ -9463,6 +9483,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Thomas Raithel distinguishes borrowing earlier emergency instruments from their use to establish dictatorship. He connects the 1933 decree to mass detention, suppression of opposition publications and meetings, and displacement of state governments; the suspension of rights outlasted the supposed emergency. His analysis concerns institutional use, not proof of who set the Reichstag fire. An asserted legal basis must not be confused with rights-protecting government.',
+            citations: citations([], ['raithelFireDecree2010']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Seefried’s 2016 synthesis cautions against a single-cause account of Weimar’s collapse and emphasizes alternatives available to contemporaries. The editorial lesson is to examine political choices, coercion and enforcement alongside constitutional design, not to infer that every emergency clause inevitably produces dictatorship or that historical analogy determines a present-day classification.',
+            citations: citations([], ['seefriedWeimarCrisis2016']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, the label itself can be used strategically. Governments may retain constitutional text while weakening courts, media, opposition, elections, civil society, or minority rights. Conversely, a state may lack a single codified constitution yet maintain strong constitutional practices. The classification should therefore record both text and practice, distinguish design from implementation, and show uncertainty where evidence is incomplete or contested.',
             citations: citations(['federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'vdem', 'oxfordConstitutionalJustice', 'coeDemocraticCitizenship']),
           },
@@ -9471,7 +9501,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy', 'adamSmithWealth'],
-      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022'],
+      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016'],
       editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state.',
     },
     researchGaps: [
@@ -9485,6 +9515,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'The Portuguese-language Brazilian case begins, but does not complete, the multilingual research agenda. Compare constitutional promises with electoral administration, religious-minority petitions, slavery and abolition records, and court practice; avoid generalizing from the 1824 text to the whole imperial period.',
       'Read Constant’s relevant original French constitutional writings alongside the 1823 constituent debates and competing Brazilian interpretations of the Moderating Power. The existing Liberty of the Moderns reference is not a substitute for those works.',
       'The article’s five reversed signs have been aligned with the existing reference card, without changing magnitudes or Authority. Separate historical case ranges and calibrated scores still require evidence beyond these documents.',
+      'Collate the Weimar provisions and 1933 decree with Reichsgesetzblatt facsimiles, including the omitted article 25 and final paragraphs of article 48. The linked decree scan was inaccessible, and the Raithel page gives a discrepant document page number; GHDI’s p. 83 locator is used without claiming facsimile verification.',
+      'Read the Raithel–Strenge 2000 study, cabinet records, parliamentary cancellation votes, court decisions and local detention files directly. The German additions begin the emergency-powers comparison but do not establish all mechanisms, local effects, alternatives or present-day analogies; earlier multilingual and empirical gaps remain open.',
     ],
   },
   'militarist-imperialist': {

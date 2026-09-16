@@ -64,6 +64,43 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const weimarEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['ghdiWeimarGerman', 'primary', '1919-08-11'],
+  ['ghdiReichstagFireDecreeGerman', 'primary', '1933-02-28'],
+  ['raithelFireDecree2010', 'secondary', '2010'],
+  ['seefriedWeimarCrisis2016', 'secondary', '2016-09-30'],
+]) {
+  assert.ok(weimarEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a constitutionalist reference trail`);
+  assert.ok(JSON.stringify(weimarEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once, including reused sources`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['German']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'));
+  if (sourceId !== 'ghdiWeimarGerman') assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const weimarText = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ghdiWeimarGerman');
+const fireDecree = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ghdiReichstagFireDecreeGerman');
+const raithelDecree = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-raithelFireDecree2010');
+const seefriedCrisis = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-seefriedWeimarCrisis2016');
+assert.match(weimarText.note, /Articles 153, 159, and 165/, 'earlier consultation locators must be retained');
+assert.match(weimarText.note, /excerpt omits Article 25/, 'excerpt boundaries must not disappear');
+assert.ok(weimarText.relationships.profileEntries.includes('encyclopedia:democratic-socialist'), 'reusing the constitution must retain the earlier entry backlink');
+assert.match(fireDecree.note, /facsimile returned 403/);
+assert.match(raithelDecree.description, /different author and date/, 'the commentator must not become the primary decree author');
+assert.match(seefriedCrisis.license, /CC BY-NC-ND 3\.0 DE/);
+const weimarBoundary = weimarEntry.sections.find(({ id }) => id === 'description').blocks.find(({ text }) => text?.startsWith('The Weimar and 1933 documents'));
+assert.match(weimarBoundary.text, /not a classification of Nazi dictatorship as liberal constitutionalism/);
+const decreeTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('28 February 1933'));
+assert.match(decreeTimeline.text, /not validation of its claimed defensive justification/);
+assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Collate the Weimar provisions')), 'the primary-source verification gap must remain visible');
+
 const breadEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate, language] of [
   ['kropotkinBread1892French', 'primary', '1892', 'French'],
