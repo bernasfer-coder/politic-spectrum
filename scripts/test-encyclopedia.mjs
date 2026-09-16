@@ -64,6 +64,52 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const conservativeEntry = ENCYCLOPEDIA_ENTRIES.conservative;
+const conservativeProfile = ARCHETYPES.find(({ id }) => id === 'conservative').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(conservativeEntry.dimensionInterpretations[id].score, conservativeProfile[id], `conservative.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole] of [
+  ['guizotDemocracyFrance1849', 'primary'],
+  ['rosanvallonDoctrinaires1993', 'secondary'],
+  ['englertGuizotCapacity2024', 'secondary'],
+  ['assembleeFebruary1848', 'secondary'],
+]) {
+  assert.ok(conservativeEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a conservatism reference trail`);
+  assert.ok(JSON.stringify(conservativeEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish historical argument from interpretation`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its rights boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:conservative'), `${sourceId} needs an encyclopedia backlink`);
+}
+const guizotPrimary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-guizotDemocracyFrance1849');
+const rosanvallonTranscript = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-rosanvallonDoctrinaires1993');
+const englertAbstract = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-englertGuizotCapacity2024');
+const februaryHistory = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-assembleeFebruary1848');
+assert.equal(guizotPrimary.publicationDate, '1849', 'the original edition and ebook release dates must remain distinct');
+assert.deepEqual(guizotPrimary.languages, ['English']);
+assert.match(guizotPrimary.description, /translator is not identified/, 'unknown translation attribution must stay explicit');
+assert.equal(rosanvallonTranscript.publicationDate, null, 'the conference date must not silently become the uncertain print date');
+assert.deepEqual(rosanvallonTranscript.languages, ['French']);
+assert.match(rosanvallonTranscript.description, /Uncorrected intervention/, 'a conference transcript must not become a revised journal article');
+assert.equal(englertAbstract.publicationDate, '2024-03-21');
+assert.match(englertAbstract.sourceType, /abstract only/, 'abstract access must not imply full-chapter review');
+assert.equal(februaryHistory.publicationDate, null, 'the historical event date must not become the webpage date');
+const conservativeDescription = conservativeEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(conservativeDescription, /not by itself a commitment to equal participation/, 'constitutional checks must not imply an equal franchise');
+assert.match(conservativeDescription, /based only on the abstract/, 'the limited consultation must remain visible in the prose');
+assert.match(conservativeDescription, /does not accept his condemnation/, 'primary polemic must not become the project’s neutral classification');
+const conservativeCriticism = conservativeEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(conservativeCriticism, /not a consensus verdict/, 'a disputed scholarly interpretation must stay attributed');
+const februaryCrisis = conservativeEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1848:'));
+assert.deepEqual(februaryCrisis.citations.researchSourceIds, ['assembleeFebruary1848'], 'historical sequence must cite institutional history, not only Guizot’s retrospective polemic');
+assert.ok(conservativeEntry.researchGaps.some((gap) => gap.includes('Collate the 1849 English Guizot edition')), 'French-original and translation review must remain open');
+assert.ok(conservativeEntry.researchGaps.some((gap) => gap.includes('Review the full Englert chapter')), 'abstract-only scholarship needs an explicit follow-up gap');
+
 const theocraticEntry = ENCYCLOPEDIA_ENTRIES.theocratic;
 const theocraticProfile = ARCHETYPES.find(({ id }) => id === 'theocratic').profile;
 for (const { id } of DIMENSIONS) {

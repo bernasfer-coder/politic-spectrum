@@ -5340,6 +5340,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The distinction between conservatism and reaction is important. A conservative may accept reform to preserve a constitutional order, while a reactionary seeks to restore or impose an earlier order and may reject modern democratic or egalitarian developments altogether. In practice the boundary is contested and movements can combine both tendencies. The atlas should therefore identify the period, institutional object, proposed change, and affected population instead of treating “right” or “traditional” as sufficient description.',
             citations: citations(['burkeReflections', 'oakeshottRationalismPolitics'], ['sepConservatism', 'bpbConservatism']),
           },
+          {
+            type: 'paragraph',
+            text: 'François Guizot offers a more specific French case. In chapter VI of Democracy in France (1849), pp. 56–65 of the consulted English edition, he argues against concentrating the nation’s authority in either a king or a single assembly. He wants strong, differentiated powers able to check one another and sustain distinct social interests, not a government made harmless merely by making every institution weak. This is a constitutional argument, but not by itself a commitment to equal participation. His own defense of earlier ministries is partisan testimony, not proof that they consistently protected liberty.',
+            citations: citations([], ['guizotDemocracyFrance1849']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Political capacity must also be distinguished from an equal right to vote. In the publisher abstract of her 2024 Guizot chapter, Gianna Englert interprets his democracy as a social condition rather than popular sovereignty, and his franchise as conditional on capacity rather than universal entitlement. This is an attributed scholarly framing based only on the abstract; the chapter’s detailed evidence has not yet been reviewed here.',
+            citations: citations([], ['englertGuizotCapacity2024']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Religion and hierarchy have a specific role in Guizot’s polemic. Chapter VII, pp. 70–72, pairs duties of assistance by the wealthy with obedience, work, and thrift among poorer people, presenting Christianity as an answer to socialist and communist demands. The entry reports his argument; it does not accept his condemnation of those movements as a neutral definition of them. Nor does this passage establish that Christianity necessarily requires class inequality or that every religious conservative favors clerical government. Moral authority, social hierarchy, constitutional design, and the franchise remain separate questions.',
+            citations: citations([], ['guizotDemocracyFrance1849']),
+          },
         ],
       },
       {
@@ -5355,6 +5370,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1789–1815: revolution, counter-revolution, and the modern conservative response',
             text: 'The French Revolution made the defense of inherited institutions, gradual reform, religion, property, and social order into a recognizable modern political response. Burke criticized abstract reconstruction and revolutionary rupture while accepting that institutions may need change to survive. Other European reactionary currents sought stronger restoration of throne, altar, and inherited authority; conservatism and reaction developed together but are not identical.',
             citations: citations(['burkeReflections'], ['sepConservatism', 'bpbConservatism']),
+          },
+          {
+            period: '1848: electoral exclusion and the fall of the July Monarchy',
+            text: 'The Assemblée nationale’s historical account situates the February crisis in economic distress and demands to widen the restricted electorate. Opposition banquets brought together different reform currents but their cost also excluded the poorest. The government’s prohibition of a Paris banquet helped precipitate protest; the dismissal of Guizot on 23 February did not prevent the monarchy’s collapse. This institutional narrative documents conflict over participation, not a simple contest between a uniformly liberal government and an undifferentiated democratic opposition.',
+            citations: citations([], ['assembleeFebruary1848']),
+          },
+          {
+            period: '1849: Guizot’s post-revolutionary defense of order',
+            text: 'Democracy in France was written after the regime’s defeat, not as a detached description of conservatism. Its preface attacks the elevation of democracy into an overriding political standard; chapters II–III distinguish strong government from unrestricted majority power, while chapter VI proposes institutional checks. Reading these arguments together explains how concern for liberty could coexist with distrust of democratic mobilization. It does not make Guizot interchangeable with Burke, Tocqueville, absolutist restoration, or later democratic conservatism.',
+            citations: citations([], ['guizotDemocracyFrance1849']),
           },
           {
             period: 'Nineteenth century: nation-building, industrialization, and social questions',
@@ -5414,6 +5439,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['burkeReflections', 'hayekKnowledge', 'lockeSecondTreatise'], ['sepConservatism', 'sepLiberalism']),
               },
               {
+                label: 'Guizot’s constitutional conservatism: a specific French case',
+                distinction: 'Defends social continuity and differentiated constitutional powers while opposing the concentration of all authority in a ruler or numerical majority.',
+                relation: 'A historical point of overlap, not an alias for all liberal conservatism. The 1849 argument does not establish democratic inclusion or a complete common doctrine for the Doctrinaires.',
+                citations: citations([], ['guizotDemocracyFrance1849']),
+              },
+              {
                 label: 'One-nation or paternal conservatism',
                 distinction: 'Uses state capacity, social legislation, public services, and elite responsibility to preserve national cohesion and reduce class conflict without abolishing private property.',
                 relation: 'Shows why conservative economics can include welfare and regulation; it differs from both laissez-faire liberalism and socialist ownership.',
@@ -5459,6 +5490,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'Eighteenth-century political writer associated with inherited institutions, prudence, representation, social continuity, and gradual reform.',
                 caveat: 'Burke’s writings responded to specific British, Irish, imperial, and revolutionary contexts. They do not settle modern questions about democracy, equality, welfare, empire, or every later conservative movement.',
                 citations: citations(['burkeReflections'], ['sepConservatism']),
+              },
+              {
+                name: 'François Guizot',
+                role: 'French minister and author whose 1849 polemic connects constitutional checks, social order, religion, and resistance to democratic claims.',
+                caveat: 'Included as a bounded historical case, not a permanent six-coordinate identity. His retrospective praise of constitutional monarchy requires comparison with institutional practice; his hostile descriptions of opponents are not the project’s classifications.',
+                citations: citations([], ['guizotDemocracyFrance1849', 'assembleeFebruary1848']),
               },
               {
                 name: 'Alexis de Tocqueville',
@@ -5571,13 +5608,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, conservatism’s economic and national variants can conflict. Market globalization can weaken local institutions and social bonds; protection and state intervention can preserve some communities while creating inefficiency or exclusion; national cohesion can support solidarity or marginalize people defined as outsiders. The project should therefore score economic policy, social change, authority, identity, religion, and foreign policy separately rather than treating a conservative label as a complete political diagnosis.',
             citations: citations(['burkeReflections', 'hayekKnowledge', 'renanNation'], ['sepConservatism', 'sepNationalism', 'bpbConservatism']),
           },
+          {
+            type: 'paragraph',
+            text: 'The liberal classification is itself disputed. In his 1993 intervention, pp. 133–139, Pierre Rosanvallon challenges the Doctrinaires’ fit with classical liberalism, emphasizing their distrust of social conflict, focus on executive power, and unresolved constitutional reasoning. He also insists on the circumstances of particular texts. This is an attributed interpretation from an uncorrected conference transcript, not a consensus verdict. Editorially, Guizot’s case therefore tests the boundary between liberalism and conservatism; it does not settle that boundary for every period or thinker.',
+            citations: citations([], ['rosanvallonDoctrinaires1993']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics', 'hobbesLeviathan', 'adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise', 'lockeLetterToleration', 'aquinasMoralPolitical', 'renanNation', 'morgenthauRealism', 'millOnLiberty', 'wollstonecraftRights'],
-      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook'],
-      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution.',
+      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook', 'guizotDemocracyFrance1849', 'rosanvallonDoctrinaires1993', 'englertGuizotCapacity2024', 'assembleeFebruary1848'],
+      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution. The Guizot case separates primary polemic, scholarly interpretation, and institutional history; it does not revise the six scores. The English translation remains uncollated, and the 2024 chapter is represented only by its explicitly identified publisher abstract.',
     },
     researchGaps: [
       'Add French-language scholarship on de Maistre, Chateaubriand, Tocqueville, liberal conservatism, reaction, republicanism, empire, and the different histories of French right-wing traditions.',
@@ -5586,6 +5628,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist research on women and conservative politics, class, labor, welfare, colonialism, race, migration, Indigenous rights, sexuality, disability, education, policing, punishment, and the relationship between tradition and equal citizenship.',
       'Add country-specific evidence for present conservative parties and governments before using them as comparators; party names do not establish positions on markets, religion, authority, nationalism, or foreign intervention.',
       'Add comparative work on gradual reform, constitutional safeguards, emergency powers, conservative populism, market globalization, protectionism, climate policy, technology, and the conditions under which prudence becomes obstruction or authoritarianism.',
+      'Collate the 1849 English Guizot edition with the French original and identify its translator; examine earlier representative-government writings and the electoral laws and parliamentary debates separately from the post-1848 polemic.',
+      'Review the full Englert chapter and competing scholarship before extending the capacity argument. The Guizot case and Rosanvallon intervention only partly address the existing French-language gap; they do not complete coverage of reaction, empire, citizenship exclusions, or all French conservative traditions.',
     ],
   },
   'civic-nationalist': {
