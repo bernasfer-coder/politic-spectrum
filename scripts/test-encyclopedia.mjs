@@ -64,6 +64,52 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const anarchistCommunalistEntry = ENCYCLOPEDIA_ENTRIES['anarchist-communalist'];
+const anarchistCommunalistProfile = ARCHETYPES.find(({ id }) => id === 'anarchist-communalist').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(anarchistCommunalistEntry.dimensionInterpretations[id].score, anarchistCommunalistProfile[id], `anarchist-communalist.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole, publicationDate, language] of [
+  ['communeWomenAddress1871', 'primary', '1871-04-14', 'French'],
+  ['rougerieWomenCommune1997', 'secondary', '1997', 'French'],
+  ['carnavaletParisiennes2022', 'secondary', '2022', 'French'],
+  ['muldoonCommuneFeminism2023', 'secondary', '2023', 'English'],
+]) {
+  assert.ok(anarchistCommunalistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anarchist-communalist reference trail`);
+  assert.ok(JSON.stringify(anarchistCommunalistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary statements from interpretation`);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anarchist-communalist'], `${sourceId} must stay within this entry’s research pass`);
+}
+const communeAddress = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-communeWomenAddress1871');
+const rougerieWomen = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-rougerieWomenCommune1997');
+const carnavaletWomen = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-carnavaletParisiennes2022');
+const communeFeminism = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-muldoonCommuneFeminism2023');
+assert.match(communeAddress.description, /dated 13 April 1871/, 'address and publication dates must remain distinct');
+assert.deepEqual(communeAddress.creators, ['Comité central des citoyennes de Paris'], 'the modern editor must not become the historical author');
+assert.match(rougerieWomen.sourceType, /selected French reprint sections/, 'selected passages must not become a full-chapter review');
+assert.match(carnavaletWomen.sourceType, /press dossier/, 'the press dossier must not become the exhibition catalogue');
+assert.match(carnavaletWomen.description, /not individual authors of page 10/, 'curatorial credits must not be misattributed');
+assert.match(communeFeminism.sourceType, /abstract and metadata only/, 'full-text access limits must remain visible');
+assert.equal(communeFeminism.review.confidence, 'medium');
+assert.match(communeFeminism.description, /31 January 2022/, 'online and issue dates must remain distinct');
+const communeHistory = anarchistCommunalistEntry.sections.find(({ id }) => id === 'history').timeline.map(({ text }) => text).join(' ');
+assert.match(communeHistory, /neither vote nor stand/, 'club participation must not imply electoral inclusion');
+assert.match(communeHistory, /small amount implemented/, 'cooperative proposals must not become accomplished citywide reform');
+const communeDescription = anarchistCommunalistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(communeDescription, /not proof that equal citizenship was secured/, 'demands must not become certified outcomes');
+const communeCriticisms = anarchistCommunalistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(communeCriticisms, /not a transparent record/, 'manipulated images must retain their evidence boundary');
+assert.ok(anarchistCommunalistEntry.researchGaps.some((gap) => gap.includes('actual participation, remuneration')), 'implementation research must remain open');
+assert.ok(anarchistCommunalistEntry.researchGaps.some((gap) => gap.includes('full Muldoon–Müller–Leipold article')), 'the full scholarly article must remain a research gap');
+
 const democraticSocialistEntry = ENCYCLOPEDIA_ENTRIES['democratic-socialist'];
 const democraticSocialistProfile = ARCHETYPES.find(({ id }) => id === 'democratic-socialist').profile;
 for (const { id } of DIMENSIONS) {

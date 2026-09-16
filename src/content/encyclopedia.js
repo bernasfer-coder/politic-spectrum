@@ -2973,6 +2973,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'In an address dated 13 April and published on 14 April 1871, the Comité central des citoyennes argued that the Commune’s egalitarian commitments must include women. It requested committee premises, public meeting space, and publicly funded printing. This is evidence of women asserting collective political agency and seeking support from the Commune’s government, not proof that equal citizenship was secured or that governmental authority had been abolished.',
+            citations: citations([], ['communeWomenAddress1871']),
+          },
+          {
+            type: 'paragraph',
             text: 'Authority is reorganized rather than simply wished away. Assemblies may make decisions, delegates may carry revocable mandates, federations may coordinate across communes, and norms may be enforced through social or restorative practices. These arrangements can be more accountable than a distant state, but they still need procedures for disagreement, expertise, minority protection, conflict resolution, and defense against internal or external domination.',
             citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism', 'ostromGoverningCommons'], ['sepAnarchism', 'socialEcologyMunicipalism']),
           },
@@ -2996,6 +3001,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1871: the Paris Commune as a contested reference',
             text: 'The uprising began on 18 March; the council was elected on 26 March, and the Commune was defeated in late May. Its republican, patriotic, and social aspirations arose amid siege and conflict with Versailles. Those circumstances matter: municipal emancipation was attempted through contested institutions under military pressure, not through an already settled stateless order.',
             citations: citations([], ['assembleeCommuneHistory', 'rougerieInternationalCommune']),
+          },
+          {
+            period: 'March–April 1871: participation without equal electoral rights',
+            text: 'Women could neither vote nor stand in the 26 March council election. Yet they organized, spoke and voted on motions in clubs, and wrote in the press. Nathalie Lemel and Élisabeth Dmitrieff helped establish the Union des femmes on 11 April. Its relief and work-organizing activities illustrate political participation beyond the ballot, without making electoral exclusion unimportant.',
+            citations: citations([], ['carnavaletParisiennes2022']),
+          },
+          {
+            period: 'May 1871: cooperative plans and limited implementation',
+            text: 'Rougerie describes the Union’s plans for worker-run associations with elected management, local autonomy and wider coordination. He distinguishes those proposals from the small amount implemented before military defeat, including workshop orders for barricade sandbags. Neither a proposed federation nor emergency production establishes a functioning citywide system of common ownership.',
+            citations: citations([], ['rougerieWomenCommune1997']),
           },
           {
             period: '1890s–1910s: Kropotkin and mutual aid',
@@ -3062,6 +3077,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'Shares anti-state authority but is the opposite economic pole from anarchist communalism.',
                 citations: citations(['bakuninStatism', 'millOnLiberty'], ['sepAnarchism']),
               },
+              {
+                label: 'Socialist feminism within the Commune',
+                distinction: 'Muldoon, Müller and Leipold interpret the Union des femmes as connecting class exploitation with specifically gendered oppression, requiring a shared but differentiated struggle.',
+                relation: 'An overlapping emancipatory project, not a synonym for anarchism. This comparison uses their abstract only; it does not establish every participant’s doctrine or the success of proposed cooperatives.',
+                citations: citations([], ['muldoonCommuneFeminism2023']),
+              },
             ],
           },
         ],
@@ -3113,6 +3134,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'municipal self-government reference',
                 caveat: 'A partial institutional comparison, not an exact six-axis match: its federal programme, elected council, and emergency authority must be distinguished. Later anarchist and municipalist readings are interpretations, not proof of a uniform contemporary doctrine.',
                 citations: citations([], ['communeDeclarationFrench', 'rougerieInternationalCommune', 'cossartCommuneCommunalism']),
+              },
+              {
+                name: 'Comité central des citoyennes / Union des femmes organizing',
+                period: 'Paris, April–May 1871',
+                match: 'collective demands and associational participation, not an exact ideological match',
+                caveat: 'Read the women’s demands in their own terms. Requesting public support is not a declaration of statelessness; a collective address cannot assign every signatory the same six-axis identity.',
+                citations: citations([], ['communeWomenAddress1871', 'muldoonCommuneFeminism2023']),
               },
               {
                 name: 'Free Territory / Makhnovist movement',
@@ -3178,6 +3206,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Participation could itself require a struggle within revolutionary institutions. Rougerie reports women contesting restrictions on deliberation in clubs; admission was not automatically equal voice. His account also distinguishes the Union from other women’s networks. The editorial lesson is to examine access, decision-making and implementation separately, rather than infer emancipation from a movement’s anti-hierarchical language.',
+            citations: citations([], ['rougerieWomenCommune1997']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Hostile representations need their own source criticism. Carnavalet identifies an Appert photomontage as manipulated to discredit Commune women. Such an image is evidence of representation and stigma, not a transparent record of a collective event. This warning does not decide individual allegations or substitute for examining judicial records.',
+            citations: citations([], ['carnavaletParisiennes2022']),
+          },
+          {
+            type: 'paragraph',
             text: 'Historical experiments also warn against romanticization. War, repression, scarcity, internal conflict, and the need for armed defense shaped Ukraine and Spain, while the Paris Commune’s short duration limits the evidence available. These cases demonstrate political imagination and institutional experimentation, but they cannot by themselves prove that a durable stateless communal order is feasible in every context.',
             citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'makhnoRuralAnarchism']),
           },
@@ -3186,8 +3224,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism', 'ostromGoverningCommons', 'millOnLiberty', 'spinozaPolitical', 'kantPerpetualPeace', 'andersonImaginedCommunities', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepAnarchism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'communeDeclarationFrench', 'rougerieInternationalCommune', 'cossartCommuneCommunalism', 'assembleeCommuneHistory'],
-      editorialNote: 'The entry distinguishes anti-authoritarian communalism from anarcho-capitalism, democratic socialism, and later libertarian municipalism. Scores describe a didactic reference profile; the historical examples are partial, local, temporary, and contested rather than country-level matches. The 1871 programme is primary evidence; Rougerie and Cossart supply attributed interpretations. French passages are paraphrased, not quoted or presented as verified translations; consulted sections and access limits are recorded in the bibliography.',
+      researchSourceIds: ['sepAnarchism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'communeDeclarationFrench', 'rougerieInternationalCommune', 'cossartCommuneCommunalism', 'assembleeCommuneHistory', 'communeWomenAddress1871', 'rougerieWomenCommune1997', 'carnavaletParisiennes2022', 'muldoonCommuneFeminism2023'],
+      editorialNote: 'The entry distinguishes anti-authoritarian communalism from anarcho-capitalism, democratic socialism, and later libertarian municipalism. Scores describe a didactic reference profile; the historical examples are partial, local, temporary, and contested rather than country-level matches. The 1871 programme and women’s address are primary evidence; scholarship and museum interpretation are identified separately. French passages are paraphrased, not quoted or presented as verified translations. Selected-section and abstract-only consultation limits remain visible in the bibliography; participation, formal rights, proposals and demonstrated outcomes are not interchangeable.',
     },
     researchGaps: [
       'Add German-, French-, Spanish-, Ukrainian-, Italian-, and Portuguese-language scholarship on anarchist federations, syndicalism, communes, and the history of translation across movements.',
@@ -3196,6 +3234,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative institutional research on federation, consensus, delegated authority, commons governance, public goods, health, infrastructure, ecological limits, and defense without a sovereign state.',
       'Add country- and project-specific evidence before listing any contemporary autonomous community, cooperative, municipalist platform, or commons as a living match.',
       'Add research on gender, race, colonialism, disability, migration, informal hierarchy, conflict resolution, and the risk that anti-state structures reproduce coercion through armed or social power.',
+      'Collate the women’s April address and May workshop proposals against original issues and administrative records; trace actual participation, remuneration and local implementation without treating wartime plans as completed reform.',
+      'Read the full Muldoon–Müller–Leipold article and further feminist labor histories alongside Rougerie; examine disagreement about women’s agency, club exclusions and organizational diversity. Verify Appert object metadata and judicial evidence before adding image dates or conclusions about individual prosecutions.',
     ],
   },
   'green-commons': {

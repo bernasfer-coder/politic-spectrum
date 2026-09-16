@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    communeWomenAddress1871: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original English paraphrase and source link only. No historical passage, translated quotation, modern editorial text, or image reproduced; transcription hosting does not clear every edition or asset.' },
+    rougerieWomenCommune1997: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent attributed summary and link only. No chapter passage, embedded quotation, or translated extract reproduced; author-hosted access is not republication permission.' },
+    carnavaletParisiennes2022: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Selected pages inspected for research only. No PDF, source image, photomontage, or caption republished. Press-image permissions are not treated as a general commercial licence.' },
+    muldoonCommuneFeminism2023: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original summary of the abstract and DOI link only. No abstract wording or article text reproduced; open-access labeling is not blanket clearance for translations or media.' },
     allendeCongress1971Spanish: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase and archival link only; no Spanish speech passage, translated quotation, or embedded quotation reproduced.' },
     chileCopperLaw17450: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Historical statutory summary and official link only. No page assets or translated statutory passages republished; no blanket reuse clearance inferred from official hosting.' },
     memoriaCopperNationalization: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The host identifies its research text as CC BY-SA 3.0 Unported, excluding digital objects. This project retains original-summary/link-only treatment.', notes: 'No source prose, linked document, photograph, or audio reproduced; the host’s research licence is not blanket clearance for its collection.' },
