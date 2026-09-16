@@ -8783,7 +8783,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ),
     dimensionInterpretations: {
       economic: {
-        score: 12,
+        score: -12,
         label: 'Strategic mixed economy and extraction',
         explanation: 'There is no single ownership system. Militarist and imperial projects can preserve private property, direct industry, mobilize state procurement, extract colonial resources, protect commercial routes, or nationalize strategic sectors. The common feature is that economic capacity is evaluated through military readiness, strategic autonomy, imperial revenue, or geopolitical leverage rather than only welfare or consumer prosperity.',
         citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism', 'mussoliniDoctrine'], ['oxfordPoliticalEconomyMilitarism', 'oxfordImperialism', 'oxfordColonialismEmpireSociology']),
@@ -8865,6 +8865,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The six-axis score is deliberately schematic. It marks strong interventionism, national hierarchy, and security-centered authority while leaving the economic and religious dimensions near the middle because militarist and imperial systems have used different combinations of private enterprise, state direction, confessional legitimacy, secular ideology, and colonial political economy.',
             citations: citations(['clausewitzOnWar', 'hobsonImperialism', 'mussoliniDoctrine'], ['oxfordMilitarism', 'oxfordImperialism', 'oxfordPoliticalEconomyMilitarism']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The French debate below documents competing political arguments; it does not establish that colonial rule delivered the benefits its advocates promised. Original-language excerpts, later institutional commentary, and scholarly synthesis serve different evidentiary roles. These additions do not assign six-axis scores to Ferry, Clemenceau, France, or the populations subjected to colonial rule.',
+            citations: citations([], ['ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012']),
+          },
         ],
       },
       {
@@ -8885,6 +8890,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century — industrial militarism and the national-imperial state',
             text: 'Industrial production, railways, steam navigation, conscription, mass newspapers, bureaucratic administration, and national schooling changed the scale and speed of military mobilization. Great powers increasingly linked national prestige, strategic routes, markets, raw materials, and civilizational claims to overseas expansion. Militarism developed differently across Britain, France, Germany, Russia, Japan, and the United States; the comparison should not reduce all of them to one model.',
             citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism'], ['oxfordMilitarism', 'cambridgeMilitarismImperialism', 'oxfordImperialism']),
+          },
+          {
+            period: 'July 1885 — colonial expansion disputed in the French Chamber',
+            text: 'On 28 July, Jules Ferry defended expansion through industrial export markets, a racialized claim to civilize other peoples, and national power and prestige. The preserved interruptions dispute his reasoning. His appeal to republican greatness illustrates an imperial argument made within parliamentary politics, not a doctrine confined to military dictatorships.',
+            citations: citations([], ['ferryColonialSpeech1885']),
           },
           {
             period: '1890–1914 — naval rivalry, imperial competition, and anti-imperial critique',
@@ -8963,6 +8973,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['kantPerpetualPeace', 'walzerJustWars'], ['unCharterForce', 'foreignPolicy', 'oxfordImperialism']),
               },
               {
+                label: 'Metropolitan criticism of colonial racial hierarchy',
+                distinction: 'In his July 1885 reply, Georges Clemenceau disputed the alleged inferiority of colonized peoples and opposed treating superior force as a source of right.',
+                relation: 'A contemporary challenge to colonial justification, not evidence that every critic embraced pacifism, the same programme of decolonization, or identical policies throughout their career.',
+                citations: citations([], ['clemenceauColonialReply1885']),
+              },
+              {
                 label: 'Anti-colonial national defense',
                 distinction: 'Uses organized force, popular mobilization, or international solidarity to end foreign domination and establish self-determination.',
                 relation: 'It may reproduce coercion or become expansionist after victory, but its initial relation to empire is structurally different from a project of ruling another people.',
@@ -8990,6 +9006,28 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Carl von Clausewitz, Alfred Thayer Mahan, John A. Hobson, Hans Morgenthau, John Mearsheimer, Benito Mussolini, Frantz Fanon, and anti-colonial writers represent different positions and analytical uses of military power. Clausewitz and Mahan are strategic or historical authorities, Hobson is a critical political economist, realists explain competition, fascist texts justify authoritarian expansion, and Fanon analyzes colonial violence and liberation. Listing them together is a map of debate, not a claim that they support one ideology.',
             citations: citations(['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth'], ['oxfordImperialism', 'oxfordMilitarism', 'oxfordColonialismEmpireSociology']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Jules Ferry — advocate in the 1885 debate',
+                role: 'Documented defense of French colonial expansion.',
+                caveat: 'His claims about colonial benefits and racial hierarchy are objects of critical study, not accepted findings or a complete personal profile.',
+                citations: citations([], ['ferryColonialSpeech1885']),
+              },
+              {
+                name: 'Georges Clemenceau — critic in the 1885 debate',
+                role: 'Documented objection to colonial racial justification.',
+                caveat: 'Included as an opposing voice, not as a supporter of this compound profile; this excerpt cannot establish his entire foreign-policy record.',
+                citations: citations([], ['clemenceauColonialReply1885']),
+              },
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'Jürgen Osterhammel’s account of Africa distinguishes conquest from subsequent administration through local intermediaries under colonial military and police supremacy. His discussion of China emphasizes railway and mining concessions and creditor control over state finances alongside territorial competition. These examples help distinguish military force, administrative hierarchy, and financial dependence; they do not make every loan or commercial relationship imperial.',
+            citations: citations([], ['osterhammelImperialism2012']),
           },
         ],
       },
@@ -9038,6 +9076,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'A further causal caution: Osterhammel’s African discussion emphasizes prestige, racialized entitlement, and competitive acquisition alongside economic interests, including territory of little immediate commercial value. This challenges an automatic inference from an advocate’s market-access argument to the actual causes or profitability of each conquest. Regional evidence remains necessary.',
+            citations: citations([], ['osterhammelImperialism2012']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Date and edition check: the legacy Clemenceau page labels the reply 31 July 1885. The Assembly’s 2021 report, note 77, instead distinguishes a 30 July sitting from the Journal officiel printed on 31 July, pages 1681–1682. This entry uses the month-level label and preserves the discrepancy; the original issue has not yet been independently checked. The available speech selections contain omissions.',
+            citations: citations([], ['clemenceauColonialReply1885', 'assemblyRacismReport2021']),
+          },
+          {
+            type: 'paragraph',
             text: 'The fifth criticism concerns civil-military and economic accountability. Procurement, private contractors, intelligence secrecy, bases, arms transfers, and strategic industries can create interests that are difficult for citizens to inspect or reverse. Safeguards include legislative authorization, transparent budgets, independent audit, judicial remedies, civilian leadership, free journalism, whistleblower protection, sunset clauses for emergency measures, and meaningful participation by communities exposed to military operations.',
             citations: citations(['hobsonImperialism', 'mussoliniDoctrine'], ['oxfordPoliticalEconomyMilitarism', 'oxfordMilitarism', 'unCharterForce', 'vdem']),
           },
@@ -9050,8 +9098,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       },
     ],
     references: {
-      authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars'],
-      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem'],
+      authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars', 'arendtTotalitarianism', 'burkeReflections', 'kantPerpetualPeace'],
+      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012'],
       editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context.',
     },
     researchGaps: [
@@ -9062,6 +9110,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Study how military procurement, finance, labor, technology, private contractors, ports, bases, supply chains, and resource extraction shape political incentives without assuming that economic interest is the only cause of war.',
       'Compare civil-military relations, emergency law, intelligence oversight, media systems, veterans’ politics, conscription, and democratic accountability across constitutional and authoritarian regimes.',
       'Develop uncertainty ranges and separate scores for military institutional power, external intervention, territorial empire, economic coercion, and social militarization instead of relying on one compound label.',
+      'Check the original July 1885 parliamentary issues and full speeches against the Assembly’s excerpts and later report, including the Clemenceau sitting/publication-date distinction. Read the cited hearings and Manceron’s study rather than treating their second-hand appearance as direct consultation.',
+      'The French and German additions remain metropolitan and synthetic perspectives. Add Malagasy and other colonized-language testimony, local political arguments, and case-specific administrative and financial records before inferring actual effects from speeches or regional overviews.',
+      'The economic sign is aligned with the existing card at −12, without changing its magnitude or any other coordinate. This consistency repair does not calibrate the combined militarism/imperialism label or score its historical examples.',
     ],
   },
   'national-socialist': {
