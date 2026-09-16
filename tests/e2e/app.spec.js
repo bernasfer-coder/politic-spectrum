@@ -3,6 +3,9 @@ import AxeBuilder from '@axe-core/playwright';
 
 test('landing page switches through the three analysis modes', async ({ page }) => {
   await page.goto('/');
+  await expect(page.locator('.hero-orbit .orbit-label')).toHaveCount(6);
+  await expect(page.locator('.hero-orbit')).toContainText('FOREIGN');
+  await expect(page.locator('.hero-orbit')).toContainText('RELIGION');
   await expect(page.getByRole('heading', { name: /Answer honestly, not strategically/i })).toBeVisible();
 
   await page.getByRole('tab', { name: /FreeMode/i }).click();
@@ -71,6 +74,28 @@ test('the six FreeMode controls work on a mobile viewport', async ({ page }) => 
   await expect(page.getByRole('slider')).toHaveCount(6);
   await page.getByRole('slider', { name: /Economic model score/i }).fill('100');
   await expect(page.getByRole('slider', { name: /Economic model score/i })).toHaveValue('100');
+});
+
+test('browser debug console records repeated parameter changes without losing the app', async ({ page }) => {
+  const pageErrors = [];
+  page.on('pageerror', (error) => pageErrors.push(error.message));
+  await page.goto('/?debug=1');
+
+  await page.getByRole('tab', { name: /FreeMode/i }).click();
+  const sliders = page.getByRole('slider');
+  await expect(sliders).toHaveCount(6);
+  for (let index = 0; index < 6; index += 1) {
+    await sliders.nth(index).fill(String((index + 1) * 20 - 60));
+  }
+  await page.getByRole('tab', { name: /Spectrum Library/i }).click();
+  await page.getByRole('tab', { name: /Bibliography/i }).click();
+  await expect(page.getByRole('heading', { name: /Every claim has a trail/i })).toBeVisible();
+
+  const debugConsole = page.getByRole('complementary', { name: 'Browser debug console' });
+  await expect(debugConsole).toBeVisible();
+  await expect(debugConsole).toContainText('mode-change');
+  await expect(debugConsole).toContainText('score-change');
+  expect(pageErrors).toEqual([]);
 });
 
 test('centres the zero label on each FreeMode scale', async ({ page }) => {

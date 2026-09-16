@@ -1,5 +1,8 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
+import AppErrorBoundary from './AppErrorBoundary.jsx';
+import DebugPanel from './DebugPanel.jsx';
+import { debugLog, installDebugListeners, summarizeHash } from './debug.js';
 import {
   ARCHETYPES,
   AUTHOR_REFERENCES,
@@ -187,6 +190,7 @@ function App() {
   }, [answers, questionIndex]);
 
   useEffect(() => {
+    debugLog('app-mounted', { route: summarizeHash(window.location.hash), mode });
     function syncHash() {
       const entryId = getInitialEncyclopediaEntryId();
       if (entryId) {
@@ -196,6 +200,7 @@ function App() {
         setMode(getInitialMode() || (cachedQuestionnaire?.complete ? 'freemode' : 'questionnaire'));
         setEncyclopediaEntryId(null);
       }
+      debugLog('hash-sync', { route: summarizeHash(window.location.hash) });
     }
     window.addEventListener('popstate', syncHash);
     window.addEventListener('hashchange', syncHash);
@@ -241,6 +246,7 @@ function App() {
   }
 
   function changeMode(nextMode) {
+    debugLog('mode-change', { from: mode, to: nextMode });
     setMode(nextMode);
     if (nextMode !== 'library') setEncyclopediaEntryId(null);
     if (typeof window !== 'undefined') {
@@ -250,6 +256,7 @@ function App() {
 
   function openEncyclopediaEntry(entryId) {
     if (!ENCYCLOPEDIA_ENTRIES[entryId]) return;
+    debugLog('encyclopedia-open', { entryId });
     setMode('library');
     setEncyclopediaEntryId(entryId);
     if (typeof window !== 'undefined') window.history.pushState(null, '', `#encyclopedia/${encodeURIComponent(entryId)}`);
@@ -272,6 +279,7 @@ function App() {
   }
 
   function updateScore(dimensionId, value) {
+    debugLog('score-change', { dimensionId, value: Number(value) });
     setScores((previous) => ({ ...previous, [dimensionId]: Number(value) }));
   }
 
@@ -299,7 +307,7 @@ function App() {
             <div className="orbit-ring ring-one" /><div className="orbit-ring ring-two" /><div className="orbit-ring ring-three" />
             <div className="orbit-axis axis-a" /><div className="orbit-axis axis-b" /><div className="orbit-axis axis-c" />
             <div className="orbit-core">6D</div>
-            <span className="orbit-label label-top">SOCIAL</span><span className="orbit-label label-right">MARKET</span><span className="orbit-label label-bottom">AUTHORITY</span><span className="orbit-label label-left">IDENTITY</span>
+            <span className="orbit-label label-top">SOCIAL</span><span className="orbit-label label-upper-right">FOREIGN</span><span className="orbit-label label-right">MARKET</span><span className="orbit-label label-bottom">AUTHORITY</span><span className="orbit-label label-lower-left">RELIGION</span><span className="orbit-label label-left">IDENTITY</span>
           </div>
         </section>
 
@@ -1074,6 +1082,7 @@ export {
 };
 
 if (typeof document !== 'undefined') {
+  installDebugListeners();
   const rootElement = document.getElementById('root');
-  if (rootElement) createRoot(rootElement).render(<App />);
+  if (rootElement) createRoot(rootElement).render(<><AppErrorBoundary><App /></AppErrorBoundary><DebugPanel /></>);
 }
