@@ -3370,6 +3370,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Nepal’s Forest Act of 1993, in the English copy incorporating the 1999 amendment, provides another institutional example. Sections 25–27 combine user-group management and forest-product sales under work plans with public oversight. Officials could stop environmentally damaging plan amendments or withdraw management for specified breaches, with an opportunity to respond and a complaint route. Sections 41–42 provide for group formation and registration. Our interpretation is shared governance within public authority, not unrestricted access or disappearance of the state; the historical text is not current-law advice.',
+            citations: citations([], ['nepalForestAct1993']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Oldekop and colleagues’ 2019 study reports lower average deforestation and poverty under community forestry, comparing otherwise similar Nepalese subdistricts with and without those arrangements over 2000–2012. Its abstract also reports weaker estimated forest benefits where initial poverty was higher, and stronger benefits for larger, longer-established community forests. This is attributed empirical evidence, not proof that all communities benefit equally or that this website’s political profile is validated.',
+            citations: citations([], ['oldekopNepalForests2019']),
+          },
+          {
+            type: 'paragraph',
             text: 'Environmental justice adds distribution and recognition to ecological policy. A transition can reduce emissions while imposing new costs on workers, low-income households, rural communities, Indigenous peoples, migrants, or regions that contributed little to the problem. Green politics therefore has to address compensation, participation, historical responsibility, access to energy and mobility, and the social effects of adaptation and mitigation.',
             citations: citations(['senDevelopmentFreedom', 'millOnLiberty'], ['sepClimateJustice', 'ipccAr6Synthesis']),
           },
@@ -3415,6 +3425,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['coxCommonsDesign2010']),
           },
           {
+            period: '2019–2026: Nepal outcome studies distinguish averages from distribution',
+            text: 'A national-scale forest-and-poverty study was followed by research on differences between social groups. Their findings address different outcomes: an improvement in an average does not establish equal gains within communities. Neither publication is a measurement of present-day Nepal’s ideology.',
+            citations: citations([], ['oldekopNepalForests2019', 'cookNepalInequality2026']),
+          },
+          {
             period: 'Late twentieth century to the present: climate justice and polycentric action',
             text: 'Climate politics linked local environmental harm to global atmospheric processes, historical emissions, development inequality, migration, health, and intergenerational justice. International agreements, national laws, cities, firms, communities, and social movements now interact in mitigation and adaptation. The IPCC identifies escalating risks and the need for rapid, integrated, and equitable action, but it does not prescribe one political ideology or ownership system.',
             citations: citations(['senDevelopmentFreedom', 'ostromGoverningCommons', 'kantPerpetualPeace'], ['ipccAr6Synthesis', 'sepClimateJustice', 'sepEnvironmentalEthics']),
@@ -3433,6 +3448,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Studies how communities and other institutions govern shared resources through monitoring, graduated rules, conflict resolution, and nested arrangements.',
                 relation: 'Closest to Ostrom’s empirical approach; it does not require anti-capitalism, anarchism, or one universal ownership form.',
                 citations: citations(['ostromGoverningCommons'], ['sepEnvironmentalEthics', 'ostromPolycentricAER2010', 'coxCommonsDesign2010']),
+              },
+              {
+                label: 'Collective management versus distributive equality',
+                distinction: 'Who holds management powers and who gains materially are separate questions.',
+                relation: 'An analytical distinction, not a new ideology or score. The Nepal studies motivate checking group-level outcomes before calling an institution equitable.',
+                citations: citations([], ['nepalForestAct1993', 'oldekopNepalForests2019', 'cookNepalInequality2026']),
               },
               {
                 label: 'Social ecology and communalism',
@@ -3557,6 +3578,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Agarwal’s 87-site study is not a national ideological classification. Its institutional comparisons should not be transferred mechanically to Brazil or to all present-day forest communities.',
                 citations: citations([], ['agarwalParticipatoryExclusions']),
               },
+              {
+                name: 'Nepal community forestry — institutional and outcome comparison',
+                period: 'historical legal framework; observations from 2000–2012 and 2001–2011',
+                match: 'bounded resource-governance example, not a country-level ideological match',
+                caveat: 'Keep statutory powers, average outcomes and distributional differences separate. These studies do not establish today’s conditions or a six-axis identity for users, researchers or Nepal.',
+                citations: citations([], ['nepalForestAct1993', 'oldekopNepalForests2019', 'cookNepalInequality2026', 'cookNepalCorrection2026']),
+              },
             ],
           },
         ],
@@ -3610,6 +3638,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Cook and colleagues’ 2026 study combines 2001 and 2011 census samples with programme records in a two-way fixed-effects analysis. It estimates larger poverty reductions for Brahmin/Chhetri/Newar households than for non-Newar Janajati households, and no statistically convincing poverty effect for Dalit or other minority households. Absence of statistical evidence is not proof of zero effect. The reported widening of local group gaps reflects unequal gains, not demonstrated worsening of minority poverty.',
+            citations: citations([], ['cookNepalInequality2026']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The 17 June 2026 author correction clarifies the Newar grouping and corrects a reference. It explains the grouping through comparative socioeconomic outcomes while acknowledging Indigenous recognition. These are analytical categories, not a denial of identity or a claim that every member of a category has the same circumstances.',
+            citations: citations([], ['cookNepalCorrection2026']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Nepal results are observational estimates, not randomized experiments. This pass reviewed the 2019 abstract and selected publisher-indexed 2026 passages, not complete methods, supplementary analyses or underlying data. We therefore retain the authors’ findings with explicit consultation limits, without claiming an independent causal verification or universal success formula.',
+            citations: citations([], ['oldekopNepalForests2019', 'cookNepalInequality2026']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, green politics can hide trade-offs behind moral language. Renewable infrastructure can require land and minerals; conservation can conflict with livelihoods; carbon policies can be regressive; local knowledge can also be exclusionary; and technological solutions can create new dependencies. The profile should therefore distinguish scientific findings, ethical commitments, institutional proposals, and unresolved value conflicts.',
             citations: citations(['ostromGoverningCommons', 'senDevelopmentFreedom'], ['ipccAr6Synthesis', 'sepEnvironmentalEthics', 'sepClimateJustice']),
           },
@@ -3618,8 +3661,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'senDevelopmentFreedom', 'millOnLiberty', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis', 'socialEcologyMunicipalism', 'sepAnarchism', 'sepSocialism', 'openTextbook', 'vdem', 'foreignPolicy', 'allegrettiSeringueiros', 'chicoMendesCreationDecree', 'agarwalParticipatoryExclusions', 'ostromPolycentricAER2010', 'coxCommonsDesign2010'],
-      editorialNote: 'The entry distinguishes commons governance, social ecology, green liberalism, eco-socialism, conservationism, and deep ecology. Scores describe a didactic ecological-pluralist profile, not every green party, environmental movement, country, or community institution. The Brazilian decree documents historical design; Allegretti supplies historical interpretation, and Agarwal supplies comparative participation research. Neither establishes current reserve conditions or a country-level match. Portuguese material is independently paraphrased, not offered as a verified translation; reviewed pages and rights limits are recorded in the bibliography.',
+      researchSourceIds: ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis', 'socialEcologyMunicipalism', 'sepAnarchism', 'sepSocialism', 'openTextbook', 'vdem', 'foreignPolicy', 'allegrettiSeringueiros', 'chicoMendesCreationDecree', 'agarwalParticipatoryExclusions', 'ostromPolycentricAER2010', 'coxCommonsDesign2010', 'nepalForestAct1993', 'oldekopNepalForests2019', 'cookNepalInequality2026', 'cookNepalCorrection2026'],
+      editorialNote: 'The entry distinguishes commons governance, social ecology, green liberalism, eco-socialism, conservationism, and deep ecology. Scores describe a didactic ecological-pluralist profile, not every green party, environmental movement, country, or community institution. The Brazilian decree documents historical design; Allegretti supplies historical interpretation, and Agarwal supplies comparative participation research. Neither establishes current reserve conditions or a country-level match. Portuguese material is independently paraphrased, not offered as a verified translation; reviewed pages and rights limits are recorded in the bibliography. Nepal’s historical English law, empirical studies and author correction are separate evidence types. Partial access, translation uncertainty and observational designs limit the claims; no country rating or new coordinate follows from these sources.',
     },
     researchGaps: [
       'Add German-, French-, Portuguese-, Spanish-, South Asian-, African-, and Indigenous scholarship on environmental justice, commons, conservation, social ecology, and ecological democracy.',
@@ -3630,6 +3673,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative work on the scale limits of localism, the role of national and international authority, technological governance, geoengineering, and democratic safeguards during ecological emergencies.',
       'Extend the selected-page Ostrom and Cox reviews to the complete publications, original field studies, and coding appendix. Keep the 2009 lecture, 2010 published revision, and earlier Cox report distinct; independently verify sampling and analysis before making stronger outcome claims.',
       'Add later comparative research on which institutional combinations work for whom, including excluded users, unsuccessful cases, and cross-scale climate governance. Do not derive ideological coordinates or current-country matches from design-principle counts.',
+      'Retrieve and review the complete Oldekop study and corrected Cook article, supplements, identification assumptions, sensitivity checks and permitted replication materials. The present abstract/indexed-passage review is not a full causal audit; examine local benefit distribution and community accounts alongside aggregate estimates.',
+      'Collate the FAOLEX English Forest Act against the Nepali Gazette, amendment history and later legislation before making translation, commencement-date or current-law claims. Extend the case with dated evidence on implementation, gender, caste, Indigenous rights, exclusion and forest outcomes without treating research categories as fixed identities.',
     ],
   },
   'religious-traditionalist': {

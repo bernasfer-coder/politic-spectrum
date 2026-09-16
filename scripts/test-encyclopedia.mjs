@@ -753,6 +753,47 @@ assert.match(commonsCriticisms, /not 77 independent communities/, 'the case unit
 assert.match(commonsCriticisms, /Missing or ambiguous evidence was not coded as absence/, 'missing observations must not become negative evidence');
 assert.match(commonsCriticisms, /probabilistically, not as a checklist guaranteeing success/, 'the methodological safeguard must remain explicit');
 
+for (const [sourceId, publicationDate] of [
+  ['nepalForestAct1993', '1993'],
+  ['oldekopNepalForests2019', '2019-05-06'],
+  ['cookNepalInequality2026', '2026-01-05'],
+  ['cookNepalCorrection2026', '2026-06-17'],
+]) {
+  assert.ok(greenCommonsEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an entry reference trail`);
+  assert.ok(JSON.stringify(greenCommonsEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, 'primary', 'legal evidence, original empirical research and an author correction must retain their source types');
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.review.confidence, 'medium', 'partial consultation and translation limits must remain visible');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:green-commons']);
+}
+const nepalLaw = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-nepalForestAct1993');
+const nepalAverageStudy = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-oldekopNepalForests2019');
+const nepalDistributionStudy = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-cookNepalInequality2026');
+const nepalCorrection = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-cookNepalCorrection2026');
+assert.match(nepalLaw.note, /pp\. 1, 13–14 and 20, visually inspected/);
+assert.match(nepalLaw.description, /1999 First Amendment.*separate commencement footnote/);
+assert.match(nepalAverageStudy.note, /abstract and bibliographic metadata only/);
+assert.match(nepalDistributionStudy.note, /search-indexed.*full Methods, supplements and data were not inspected/);
+assert.match(nepalCorrection.license, /CC BY-NC-ND 4\.0/);
+assert.match(commonsDescription, /historical text is not current-law advice/);
+assert.match(commonsDescription, /weaker estimated forest benefits where initial poverty was higher/);
+assert.match(commonsCriticisms, /Absence of statistical evidence is not proof of zero effect/);
+assert.match(commonsCriticisms, /unequal gains, not demonstrated worsening of minority poverty/);
+assert.match(commonsCriticisms, /17 June 2026 author correction.*Newar grouping/);
+assert.match(commonsCriticisms, /observational estimates, not randomized experiments/);
+const nepalExample = greenCommonsEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Nepal community forestry'));
+assert.match(nepalExample.match, /not a country-level ideological match/);
+assert.ok(nepalExample.citations.researchSourceIds.includes('cookNepalCorrection2026'));
+assert.ok(greenCommonsEntry.researchGaps.some((gap) => gap.startsWith('Retrieve and review the complete Oldekop study')));
+assert.ok(greenCommonsEntry.researchGaps.some((gap) => gap.startsWith('Collate the FAOLEX English Forest Act')));
+
 const socialDemocraticEntry = ENCYCLOPEDIA_ENTRIES['social-democratic'];
 const socialDemocraticProfile = ARCHETYPES.find(({ id }) => id === 'social-democratic').profile;
 for (const { id } of DIMENSIONS) {
