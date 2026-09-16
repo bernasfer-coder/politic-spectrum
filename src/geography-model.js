@@ -1,4 +1,5 @@
-import { GEOGRAPHY_CASES, GEOGRAPHY_CONTINENTS, GEOGRAPHY_COUNTRIES, GEOGRAPHY_LABELS, GEOGRAPHY_PLACES, GEOGRAPHY_RELATIONSHIPS } from './content/geography.js';
+import { GEOGRAPHY_CASES, GEOGRAPHY_CONTINENTS, GEOGRAPHY_LABELS, GEOGRAPHY_PLACES, GEOGRAPHY_RELATIONSHIPS } from './content/geography.js';
+import { COUNTRY_OPTIONS } from './geography-map-model.js';
 
 export const GEOGRAPHY_PERIODS = [
   { id: 'before-1500', label: 'Before 1500', start: -10000, end: 1499 },
@@ -13,7 +14,7 @@ export const LABELS_BY_ID = Object.fromEntries(GEOGRAPHY_LABELS.map((label) => [
 const allowed = {
   continent: GEOGRAPHY_CONTINENTS,
   region: [...new Set(GEOGRAPHY_PLACES.flatMap(({ regions }) => regions))],
-  country: GEOGRAPHY_COUNTRIES.map(({ id }) => id), place: GEOGRAPHY_PLACES.map(({ id }) => id),
+  country: COUNTRY_OPTIONS.map(({ id }) => id), place: GEOGRAPHY_PLACES.map(({ id }) => id),
   label: GEOGRAPHY_LABELS.map(({ id }) => id), relationship: GEOGRAPHY_RELATIONSHIPS.map(({ id }) => id),
   period: GEOGRAPHY_PERIODS.map(({ id }) => id), view: ['cards', 'timeline'], case: GEOGRAPHY_CASES.map(({ id }) => id),
 };

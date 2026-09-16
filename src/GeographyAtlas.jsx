@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { GEOGRAPHY_CASES, GEOGRAPHY_CONTINENTS, GEOGRAPHY_COUNTRIES, GEOGRAPHY_LABELS, GEOGRAPHY_PLACES, GEOGRAPHY_RELATIONSHIPS, GEOGRAPHY_REVIEW_DATE } from './content/geography.js';
+import { GEOGRAPHY_CASES, GEOGRAPHY_CONTINENTS, GEOGRAPHY_LABELS, GEOGRAPHY_PLACES, GEOGRAPHY_RELATIONSHIPS, GEOGRAPHY_REVIEW_DATE } from './content/geography.js';
 import { filterGeographyCases, GEOGRAPHY_DEFAULTS, GEOGRAPHY_PERIODS, geographyHash, LABELS_BY_ID, PLACES_BY_ID, readGeographyState } from './geography-model.js';
 import './geography.css';
+import GeographyMap from './GeographyMap.jsx';
+import { COUNTRY_OPTIONS } from './geography-map-model.js';
 
 const RELATIONSHIPS_BY_ID = Object.fromEntries(GEOGRAPHY_RELATIONSHIPS.map((item) => [item.id, item]));
 
@@ -72,6 +74,8 @@ export default function GeographyAtlas({ bibliography, entryTitles }) {
 
     <div className="geo-boundary"><strong>Cases, not labels for countries.</strong> This Middle Eastern pilot is incomplete. Country tags are modern locators, not claims about populations, historical sovereignty or today’s governments. Contemporary cases are dated snapshots, not live status reports.</div>
 
+    <GeographyMap state={state} onSelect={update} resultCount={results.length} />
+
     <div className="geo-continents" role="group" aria-label="Browse continents">
       {['all', ...GEOGRAPHY_CONTINENTS].map((continent) => {
         const count = GEOGRAPHY_CASES.filter((item) => continent === 'all' || PLACES_BY_ID[item.placeId].continents.includes(continent)).length;
@@ -85,7 +89,7 @@ export default function GeographyAtlas({ bibliography, entryTitles }) {
       <Select label="Connection" value={state.relationship} options={GEOGRAPHY_RELATIONSHIPS} onChange={(relationship) => update({ relationship })} />
       <Select label="Period" value={state.period} options={GEOGRAPHY_PERIODS} onChange={(period) => update({ period })} />
       <Select label="Region" value={state.region} options={[...new Set(GEOGRAPHY_PLACES.flatMap(({ regions }) => regions))].sort()} onChange={(region) => update({ region })} />
-      <Select label="Country · modern locator" value={state.country} options={GEOGRAPHY_COUNTRIES} onChange={(country) => update({ country })} />
+      <Select label="Country / territory · modern locator" value={state.country} options={COUNTRY_OPTIONS} onChange={(country) => update({ country })} />
       <Select label="Place / historical setting" value={state.place} options={GEOGRAPHY_PLACES} onChange={(place) => update({ place })} />
     </div>
 
@@ -112,7 +116,7 @@ export default function GeographyAtlas({ bibliography, entryTitles }) {
       </article></li>;
     })}</ol> : <div className="geo-empty"><h3>No documented cases match these filters.</h3><p>This means a research gap or an empty filter combination—not that no political traditions existed here.</p><button className="secondary-button" onClick={() => update({ ...GEOGRAPHY_DEFAULTS })}>Show the starter collection</button></div>}
 
-    <details className="geo-method"><summary>How to read this atlas</summary><dl>{GEOGRAPHY_RELATIONSHIPS.map(({ id, label, description }) => <div key={id}><dt>{label}</dt><dd>{description}</dd></div>)}</dl><p>A place can have several traditions and each tradition can have several places. Dates can mark an intellectual period, institutional text or observation—not the beginning and end of the ideology. Country, regional and continent tags overlap. Jerusalem and transnational cases have dedicated place filters instead of forced country assignments.</p><p>“Implemented” does not mean successful, universal or complete. No spectrum scores are inferred from nationality, religion or location. This catalogue and chronological view come first; a boundary-sensitive interactive map is a later phase. Zero cases indicates missing research.</p></details>
+    <details className="geo-method"><summary>How to read this atlas</summary><dl>{GEOGRAPHY_RELATIONSHIPS.map(({ id, label, description }) => <div key={id}><dt>{label}</dt><dd>{description}</dd></div>)}</dl><p>A place can have several traditions and each tradition can have several places. Dates can mark an intellectual period, institutional text or observation—not the beginning and end of the ideology. Country, regional and continent tags overlap. Jerusalem and transnational cases have dedicated place filters instead of forced country assignments.</p><p>“Implemented” does not mean successful, universal or complete. No spectrum scores are inferred from nationality, religion or location. The map navigates the same dated records as the cards and timeline; its boundaries do not represent historical or current ideological control. Zero cases indicates missing research.</p></details>
     <div className="geo-share"><label className="geo-field"><span>Share this atlas view</span><input ref={shareInput} readOnly value={shareUrl} onFocus={(event) => event.target.select()} /></label><button className="secondary-button" onClick={copyLink}>Copy link</button><p role="status">{shareMessage}</p></div>
   </section>;
 }

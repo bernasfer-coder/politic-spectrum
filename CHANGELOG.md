@@ -4,6 +4,9 @@
 
 ### Political Geography Atlas
 
+- Added a self-hosted interactive world map: selectable countries/territories, city/region markers, regional and cross-border controls, local counts and filtering, zoom/pan controls, keyboard navigation and reduced-motion support.
+- Added explicit Natural Earth dataset/version/boundary notices, distributed software licences, geometry validation and desktop/mobile regressions. Unresearched map areas remain visible gaps; existing geographic links and research content are preserved.
+
 - Added a fifth mode with geographic/temporal filters, chronological and card views, label context, stable case links and shareable filter URLs.
 - Registered 10 dated Middle Eastern starter cases across eight unscored research labels, six new sources, and three reused sources with bibliography backlinks and rights/reading limits.
 - Kept historical places, contemporary snapshots, stated ideology and institutional practice distinct; empty regions are explicit research gaps.

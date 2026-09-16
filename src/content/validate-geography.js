@@ -1,4 +1,5 @@
 import { GEOGRAPHY_CASES, GEOGRAPHY_CONTINENTS, GEOGRAPHY_COUNTRIES, GEOGRAPHY_LABELS, GEOGRAPHY_PLACES, GEOGRAPHY_RELATIONSHIPS } from './geography.js';
+import { MAP_COUNTRIES, MAP_PLACE_MARKERS } from '../geography-map-model.js';
 
 export function validateGeography({ sourceIds, entryIds, workIds, bibliography, cases = GEOGRAPHY_CASES, labels = GEOGRAPHY_LABELS, places = GEOGRAPHY_PLACES }) {
   const errors = [];
@@ -10,6 +11,18 @@ export function validateGeography({ sourceIds, entryIds, workIds, bibliography, 
   const labelSet = new Set(labels.map(({ id }) => id));
   const placeSet = new Set(places.map(({ id }) => id));
   const countrySet = new Set(GEOGRAPHY_COUNTRIES.map(({ id }) => id));
+  const mapCountrySet = new Set(MAP_COUNTRIES.map(({ id }) => id));
+  check(mapCountrySet.size === MAP_COUNTRIES.length, 'map country IDs must be unique');
+  for (const id of countrySet) check(mapCountrySet.has(id), `catalogued country ${id} needs a map locator`);
+  for (const country of MAP_COUNTRIES) {
+    check(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(country.id), 'invalid map country ID');
+    check(Boolean(country.name && country.path) && !/NaN|Infinity/.test(country.path), `${country.id} needs valid map geometry`);
+    check(country.bounds.flat().every(Number.isFinite), `${country.id} has invalid projected bounds`);
+  }
+  for (const marker of MAP_PLACE_MARKERS) {
+    check(GEOGRAPHY_PLACES.some(({ id }) => id === marker.id), `${marker.id} has no documented place`);
+    check(marker.point.every(Number.isFinite) && Math.abs(marker.coordinates[0]) <= 180 && Math.abs(marker.coordinates[1]) <= 90, `${marker.id} has invalid navigation coordinates`);
+  }
   const relationshipSet = new Set(GEOGRAPHY_RELATIONSHIPS.map(({ id }) => id));
   function checkSources(item) {
     check(item.sourceIds?.length > 0, `${item.id} needs claim-level sources`);
