@@ -64,6 +64,55 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const rojavaLibertarianEntry = ENCYCLOPEDIA_ENTRIES['libertarian-socialist'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['rojavaCharter2014Institute', 'primary', '2014'],
+  ['hrwKurdishRule2014', 'secondary', '2014-06-19'],
+  ['hammyMileyRojava2022', 'secondary', '2022-01-10'],
+]) {
+  assert.ok(rojavaLibertarianEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an entry reference trail`);
+  assert.ok(JSON.stringify(rojavaLibertarianEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:libertarian-socialist']);
+}
+const rojavaCharterRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-rojavaCharter2014Institute');
+assert.match(rojavaCharterRecord.note, /Translator unidentified/);
+assert.match(rojavaCharterRecord.note, /not silently corrected/);
+assert.match(rojavaCharterRecord.description, /undated host page/);
+const rojavaInvestigation = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hrwKurdishRule2014');
+assert.match(rojavaInvestigation.note, /PYD-provided primary text/);
+assert.match(rojavaInvestigation.description, /November 2013.*February 2014/);
+const rojavaScholarship = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hammyMileyRojava2022');
+assert.equal(rojavaScholarship.identifiers.doi, '10.3389/fpos.2021.815338');
+assert.match(rojavaScholarship.description, /2018 and 2021; not a population survey/);
+assert.match(rojavaScholarship.license, /CC BY/);
+assert.match(rojavaScholarship.commercialUse, /third-party extracts are not separately cleared/);
+const rojavaDescription = JSON.stringify(rojavaLibertarianEntry.sections.find(({ id }) => id === 'description'));
+assert.match(rojavaDescription, /public wealth while protecting private property/);
+assert.match(rojavaDescription, /minimum 40%.*not 50–50 parity/);
+assert.match(rojavaDescription, /formal commitments, not verified outcomes/);
+const rojavaExample = JSON.stringify(rojavaLibertarianEntry.sections.find(({ id }) => id === 'examples'));
+assert.match(rojavaExample, /not six measured answers/);
+assert.match(rojavaExample, /No new coordinates are assigned/);
+assert.match(rojavaExample, /No Kurdish\/Arabic collation, later-charter comparison or claim of current applicability/);
+const rojavaCriticism = JSON.stringify(rojavaLibertarianEntry.sections.find(({ id }) => id === 'criticisms'));
+assert.match(rojavaCriticism, /official denials and cooperation/);
+assert.match(rojavaCriticism, /excluded alleged restrictions on speech\/association and abuses against non-Kurdish communities/);
+assert.match(rojavaCriticism, /critically supportive interpretation/);
+assert.deepEqual(Object.fromEntries(Object.entries(rojavaLibertarianEntry.dimensionInterpretations).map(([id, value]) => [id, value.score])), { economic: 78, social: 50, authority: -75, identity: 60, foreign: 50, religion: 42 });
+assert.ok(rojavaLibertarianEntry.researchGaps.some((gap) => gap.includes('religion discrepancy of +42') && gap.includes('Luxemburg')));
+assert.ok(rojavaLibertarianEntry.researchGaps.some((gap) => gap.includes('Collate the 2014 Social Contract')));
+assert.ok(rojavaLibertarianEntry.researchGaps.some((gap) => gap.includes('minority and opposition accounts')));
+
 const moroccoMonarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
 for (const [sourceId, evidenceRole, publicationDate, languages] of [
   ['moroccoConstitutionFrench2011', 'primary', '2011-07-30', ['French']],

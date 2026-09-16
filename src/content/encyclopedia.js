@@ -10565,6 +10565,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The French vocabulary has its own history. MSHE Ledoux’s notice for the scholarly volume Libertaire! identifies Déjacque’s 1857 letter to Proudhon as the setting in which he coined libertaire. This does not establish the first use of the English word or collapse its later meanings into one doctrine.',
             citations: citations([], ['msheDejacqueVolume2019']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Rojava is a bounded comparison here, not a synonym for libertarian socialism or a current-country match. Read the 2014 charter, the contemporary rights investigation and the 2022 scholarly assessment as different kinds of evidence—not as proof that all residents share an ideology.',
+            citations: citations([], ['rojavaCharter2014Institute', 'hrwKurdishRule2014', 'hammyMileyRojava2022']),
+          },
         ],
       },
       {
@@ -10590,6 +10595,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Freedom is understood positively as the capacity to participate in shaping the conditions of life, and negatively as protection from state, capitalist, patriarchal, racial, colonial, and religious domination. Mutual aid is treated as an organizing principle, not proof that conflict or coercion disappears. The tradition therefore needs a theory of minority rights, dissent, defense, ecological limits, inter-community obligations, and fair procedures when consensus fails.',
             citations: citations(['kropotkinMutualAid', 'millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'sepReligionPolitics', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Rojava’s 2014 charter treats natural resources as public wealth while protecting private property (articles 39–42). Legislative, executive, judicial and local councils coexist with military command (4, 13, 15). These provisions cannot establish that markets or coercive institutions were abolished.',
+            citations: citations([], ['rojavaCharter2014Institute']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Articles 27–28 address women’s rights and self-organization; article 87 sets a minimum 40% representation for each of its two gender categories, not 50–50 parity. Article 92 separates religion and state while qualifying worship by public order. These are formal commitments, not verified outcomes.',
+            citations: citations([], ['rojavaCharter2014Institute']),
           },
         ],
       },
@@ -10643,6 +10658,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['socialEcologyMunicipalism', 'sepAnarchism', 'sepEnvironmentalEthics']),
           },
           {
+            period: 'January 2014 — Rojava’s provisional constitutional framework',
+            text: 'Human Rights Watch dates the introduction of the Social Contract in Afrin, Kobani and Jazira to January 2014. This is a historical institutional snapshot, not a map of present-day control.',
+            citations: citations([], ['hrwKurdishRule2014']),
+          },
+          {
             period: 'Contemporary cooperative and autonomous practice',
             text: 'Today, worker cooperatives, solidarity economies, community land projects, mutual-aid networks, municipal experiments, union democracy, and autonomous movements may enact parts of the tradition within states and markets. The existence of such institutions demonstrates possible forms of participation and ownership, not the disappearance of hierarchy, market pressure, unequal expertise, or dependence on public law. Claims about a whole libertarian socialist society require much stronger evidence.',
             citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['iloCooperatives', 'iloWorkerCooperatives', 'socialEcologyMunicipalism']),
@@ -10693,6 +10713,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['socialEcologyMunicipalism', 'sepAnarchism']),
               },
               {
+                label: 'Democratic confederalism — related project, not an alias',
+                distinction: 'Hammy and Miley compare Öcalan’s project with Bookchin’s municipalism but reject reducing one thinker to the other.',
+                relation: 'Intellectual connections do not make every Kurdish movement, or every self-administration, libertarian socialist.',
+                citations: citations([], ['hammyMileyRojava2022']),
+              },
+              {
                 label: 'Autonomism and prefigurative politics',
                 distinction: 'Emphasizes autonomous organization, refusal of party mediation, worker and social movements, and building desired relations in the present.',
                 relation: 'Can overlap with libertarian Marxism, feminism, anti-racism, and community organizing without requiring one constitutional model or a complete common economy.',
@@ -10737,6 +10763,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'evidence-note',
             text: 'A research lead, not a completed review: the 2019 volume edited by Thomas Bouchet and Patrick Samzun brings together studies of Déjacque’s transatlantic life, writing, and anti-authoritarian thought. The institutional notice is consulted here; its chapters must be read individually before their conclusions can support further claims.',
             citations: citations([], ['msheDejacqueVolume2019']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Teaching comparison — Rojava, 2014 framework with scholarship published in 2022: ask separately who controls production (economic), whose participation is protected (social), who commands and can be challenged (authority), who belongs (identity), how defense is organized (foreign policy), and how conscience is protected (religion). These are editorial questions for examining the evidence, not six measured answers. No new coordinates are assigned.',
+            citations: citations([], ['rojavaCharter2014Institute', 'hrwKurdishRule2014', 'hammyMileyRojava2022']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Version caution: the English charter has no identified translator. Selected clauses were compared with HRW’s PYD-supplied copy; this does not authenticate the translation. Ambiguous preamble wording about centralization remains unresolved. No Kurdish/Arabic collation, later-charter comparison or claim of current applicability is made.',
+            citations: citations([], ['rojavaCharter2014Institute', 'hrwKurdishRule2014']),
           },
         ],
       },
@@ -10790,6 +10826,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Human Rights Watch’s 2014 investigation documented arbitrary detention, mistreatment and due-process failures, while recording official denials and cooperation with investigators. It could not establish the full extent of detention abuse and excluded alleged restrictions on speech/association and abuses against non-Kurdish communities from its scope. Its findings therefore neither validate all charter promises nor settle every allegation.',
+            citations: citations([], ['hrwKurdishRule2014']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Writing in 2022, Cihad Hammy and Thomas Jeffrey Miley acknowledge women’s participation and local administrative functions but argue that partisan and military power constrain decision-making from below. They also question economic democratization under wartime scarcity and oil dependence. Their critically supportive interpretation draws on scholarship and movement-associated interviews; it is not a population-wide verdict or a current institutional audit.',
+            citations: citations([], ['hammyMileyRojava2022']),
+          },
+          {
+            type: 'paragraph',
             text: 'The fourth criticism concerns economic incentives and common resources. Abolishing private capital does not by itself resolve scarcity, ecological limits, free-riding, skill allocation, investment, maintenance, or conflict between local autonomy and wider equality. Markets, planning, rationing, gift economies, and federated allocation each create different risks. The entry should record the actual allocation mechanism rather than treating “common ownership” as a complete economic explanation.',
             citations: citations(['kropotkinConquestBread', 'bookchinLibertarianMunicipalism'], ['sepSocialism', 'iloCooperatives', 'iloWorkerCooperatives']),
           },
@@ -10808,7 +10854,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread', 'luxemburgReformRevolution', 'bookchinLibertarianMunicipalism', 'marxEngelsManifesto', 'millOnLiberty', 'fanonWretchedEarth', 'leninStateRevolution'],
-      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook', 'proudhonFederative1863French', 'dejacqueLetter1857French', 'cagiaoProudhonFederalism2011', 'msheDejacqueVolume2019'],
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook', 'proudhonFederative1863French', 'dejacqueLetter1857French', 'cagiaoProudhonFederalism2011', 'msheDejacqueVolume2019', 'rojavaCharter2014Institute', 'hrwKurdishRule2014', 'hammyMileyRojava2022'],
       editorialNote: 'This entry treats libertarian socialism as a broad family resemblance rather than a single doctrine. It distinguishes anti-authoritarian socialism from market libertarianism, state socialism, social democracy, anarcho-communism, communalism, and cooperative practice, and records both the emancipatory aims and the institutional problems of self-management. The French additions distinguish primary proposals, a polemical intervention, attributed scholarship, and an institutional book notice. English summaries are original paraphrases, not authoritative translations or endorsements of every position held by the authors.',
     },
     researchGaps: [
@@ -10822,6 +10868,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read Jenny d’Héricourt’s own interventions and compare them with Déjacque’s and Proudhon’s representations; women’s political agency should not be reduced to a dispute between men. Collate the 1857 letter against an early edition before quoting it.',
       'Compare Cagiao y Conde’s regionalist interpretation with the works by Ansart, Chambost, and other scholars that he discusses. The Bouchet–Samzun volume and Pascal Lebrun’s property comparison remain full-text research leads; access limitations prevented a complete review in this pass.',
       'Resolve the existing religion discrepancy of +42 in this article versus +45 in the card through explicit editorial review; all six coordinates are unchanged. Audit the card’s person/example links, including the Luxemburg link currently pointing to a Bernstein biography, before treating them as adequate individual-level evidence.',
+      'Collate the 2014 Social Contract with dated Kurdish and Arabic originals, identify translators, and examine later charter versions separately. Do not carry the 2014 institutional snapshot forward as a present-day assessment without fresh evidence.',
+      'Deepen the Rojava comparison with women’s own institutional records, minority and opposition accounts, cooperative membership and budget evidence, and independent council studies. Read contrasting scholarship in full and examine interview selection and translation before generalizing about participation or economic outcomes.',
     ],
   },
   'indigenous-relational-governance': {
