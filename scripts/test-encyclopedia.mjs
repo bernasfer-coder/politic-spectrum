@@ -64,6 +64,51 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const burkeConservativeEntry = ENCYCLOPEDIA_ENTRIES.conservative;
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['burkeFoxIndia1783', 'primary', '1783-12-01'],
+  ['collinsMercantile2019', 'secondary', '2019-07-24'],
+  ['maresGlobalBurke2025', 'secondary', '2025-03-26'],
+]) {
+  assert.ok(burkeConservativeEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(burkeConservativeEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:conservative']);
+}
+const burkeSpeechRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-burkeFoxIndia1783');
+assert.match(burkeSpeechRecord.note, /Not collated with facsimiles/);
+assert.match(burkeSpeechRecord.description, /speech occasion, not publication/);
+assert.match(burkeSpeechRecord.description, /1887/);
+const burkeCollinsRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-collinsMercantile2019');
+assert.match(burkeCollinsRecord.sourceType, /abstract only/);
+assert.equal(burkeCollinsRecord.identifiers.doi, '10.1017/S1053837218000354');
+const burkeMaresRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-maresGlobalBurke2025');
+assert.equal(burkeMaresRecord.identifiers.doi, '10.1017/S1479244325000046');
+assert.match(burkeMaresRecord.license, /CC BY 4\.0/);
+assert.match(burkeMaresRecord.description, /not an exhaustive literature survey/);
+const burkeDescription = JSON.stringify(burkeConservativeEntry.sections.find(({ id }) => id === 'description'));
+assert.match(burkeDescription, /habitual pattern/);
+assert.match(burkeDescription, /abstract-level interpretation/);
+const burkeCriticism = JSON.stringify(burkeConservativeEntry.sections.find(({ id }) => id === 'criticisms'));
+assert.match(burkeCriticism, /not the encyclopedia’s descriptions/);
+assert.match(burkeCriticism, /not from independent readings/);
+assert.match(burkeCriticism, /Richard Bourke/);
+assert.match(JSON.stringify(burkeConservativeEntry.sections.find(({ id }) => id === 'history')), /not evidence that its promised protections were implemented/);
+assert.deepEqual(Object.fromEntries(Object.entries(burkeConservativeEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -18, social: -72, authority: 48, identity: -62, foreign: 10, religion: -40 });
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Add French-language scholarship')));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Review the full Englert chapter')));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1783 speech')));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Read Collins in full')));
+
 const nozickMarketEntry = ENCYCLOPEDIA_ENTRIES['libertarian-market'];
 for (const [sourceId, evidenceRole, publicationDate, languages] of [
   ['nozickRectification1974UT', 'primary', '1974', ['English']],

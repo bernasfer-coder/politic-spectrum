@@ -5938,6 +5938,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Religion and hierarchy have a specific role in Guizot’s polemic. Chapter VII, pp. 70–72, pairs duties of assistance by the wealthy with obedience, work, and thrift among poorer people, presenting Christianity as an answer to socialist and communist demands. The entry reports his argument; it does not accept his condemnation of those movements as a neutral definition of them. Nor does this passage establish that Christianity necessarily requires class inequality or that every religious conservative favors clerical government. Moral authority, social hierarchy, constitutional design, and the franchise remain separate questions.',
             citations: citations([], ['guizotDemocracyFrance1849']),
           },
+          {
+            type: 'paragraph',
+            text: 'Burke’s speech on Fox’s East India Bill separates inherited powers from an unconditional right to exercise them. In its opening charter-and-trust argument, he treats governing authority and commercial privileges as responsibilities owed to those affected, not simply assets belonging to their holders. Parliament must answer for powers it delegated. Yet his threshold for displacing the Company’s administration is demanding: an important object, grave abuse, a habitual pattern, and inability to remedy it within the existing organization. This is an argument for justified institutional correction, not automatic preservation or abolition.',
+            citations: citations([], ['burkeFoxIndia1783']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Shared criticism of a monopoly need not imply a shared remedy. In his 2019 abstract, Gregory M. Collins contrasts Smith’s proposed termination of the Company’s charter with Burke’s effort to preserve it. He attributes the difference to Smith’s critique of the mercantile system and Burke’s constitutional and historical reasoning. This is an abstract-level interpretation, not a completed review of the article. It cautions against inferring a single economic program from agreement about misconduct.',
+            citations: citations([], ['collinsMercantile2019']),
+          },
         ],
       },
       {
@@ -5948,6 +5958,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Before the modern label: custom, order, and inherited authority',
             text: 'Arguments later called conservative draw on older reflections about law, custom, religion, family, hierarchy, kingship, civic virtue, and the dangers of faction. These sources should not be retroactively labelled conservative as though they shared a modern ideology. They are antecedents for questions about continuity and authority, not evidence of one transhistorical doctrine.',
             citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['sepConservatism', 'sepMedieval']),
+          },
+          {
+            period: '1 December 1783: Burke argues for reform of Company government',
+            text: 'The speech on Fox’s bill links the welfare of people governed in India to Britain’s responsibility for delegated imperial power. This is a proposal and an advocate’s case, not evidence that its promised protections were implemented. Read alongside the later conservative reception of Burke, it shows why institutional continuity and correction cannot be reduced to opposite labels.',
+            citations: citations([], ['burkeFoxIndia1783']),
           },
           {
             period: '1789–1815: revolution, counter-revolution, and the modern conservative response',
@@ -6196,13 +6211,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The liberal classification is itself disputed. In his 1993 intervention, pp. 133–139, Pierre Rosanvallon challenges the Doctrinaires’ fit with classical liberalism, emphasizing their distrust of social conflict, focus on executive power, and unresolved constitutional reasoning. He also insists on the circumstances of particular texts. This is an attributed interpretation from an uncorrected conference transcript, not a consensus verdict. Editorially, Guizot’s case therefore tests the boundary between liberalism and conservatism; it does not settle that boundary for every period or thinker.',
             citations: citations([], ['rosanvallonDoctrinaires1993']),
           },
+          {
+            type: 'paragraph',
+            text: 'Burke’s defense of Indian institutions does not establish equal respect for every people. In the same speech’s comparison with Europe, he invokes Indian religion, aristocracy, learning and commerce while disparaging Guaraní and Chiquito peoples. These are his hierarchical categories, not the encyclopedia’s descriptions. Sympathy for one colonized society therefore cannot stand as proof of a universal rejection of domination.',
+            citations: citations([], ['burkeFoxIndia1783']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Gabriel Pacal Mares’s 2025 discussion distinguishes competing uses of Burke. In his account, Pitts takes the criticism of imperial abuses seriously without treating it as opposition to every imperial relationship; O’Neill emphasizes hierarchy and Burke’s contrasting treatment of peoples beyond India. Mares warns against resolving the dispute into either heroic resistance or nothing but imperial apologetics. These positions are reported through his article, not from independent readings of those monographs. His selective survey also explicitly omits Richard Bourke. The editorial lesson is limited: opposition to abuse, acceptance of foreign rule, and support for intervention must be examined separately, not compressed into a single personal score.',
+            citations: citations([], ['maresGlobalBurke2025']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics', 'hobbesLeviathan', 'adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise', 'lockeLetterToleration', 'aquinasMoralPolitical', 'renanNation', 'morgenthauRealism', 'millOnLiberty', 'wollstonecraftRights'],
-      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook', 'guizotDemocracyFrance1849', 'rosanvallonDoctrinaires1993', 'englertGuizotCapacity2024', 'assembleeFebruary1848'],
-      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution. The Guizot case separates primary polemic, scholarly interpretation, and institutional history; it does not revise the six scores. The English translation remains uncollated, and the 2024 chapter is represented only by its explicitly identified publisher abstract.',
+      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook', 'guizotDemocracyFrance1849', 'rosanvallonDoctrinaires1993', 'englertGuizotCapacity2024', 'assembleeFebruary1848', 'burkeFoxIndia1783', 'collinsMercantile2019', 'maresGlobalBurke2025'],
+      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution. The Guizot case separates primary polemic, scholarly interpretation, and institutional history; it does not revise the six scores. The English translation remains uncollated, and the 2024 chapter is represented only by its explicitly identified publisher abstract. The Burke addition distinguishes a selected primary transcription, Collins’s abstract, and Mares’s historiographical analysis. It supplies no new person/country match, changes no dimension interpretation, and republishes no source wording.',
     },
     researchGaps: [
       'Add French-language scholarship on de Maistre, Chateaubriand, Tocqueville, liberal conservatism, reaction, republicanism, empire, and the different histories of French right-wing traditions.',
@@ -6213,6 +6238,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative work on gradual reform, constitutional safeguards, emergency powers, conservative populism, market globalization, protectionism, climate policy, technology, and the conditions under which prudence becomes obstruction or authoritarianism.',
       'Collate the 1849 English Guizot edition with the French original and identify its translator; examine earlier representative-government writings and the electoral laws and parliamentary debates separately from the post-1848 polemic.',
       'Review the full Englert chapter and competing scholarship before extending the capacity argument. The Guizot case and Rosanvallon intervention only partly address the existing French-language gap; they do not complete coverage of reaction, empire, citizenship exclusions, or all French conservative traditions.',
+      'Collate the 1783 speech with a scholarly edition and contemporary parliamentary records; examine the bill, its fate, and the Hastings proceedings separately. An argument about trusteeship is not evidence of successful reform or consent by those governed.',
+      'Read Collins in full and compare Mares’s account directly with Pitts, O’Neill, Agnani, Hampsher-Monk and Richard Bourke. Add South Asian scholarship and affected communities’ histories before extending the imperial case; this pass does not complete the colonialism, race or multilingual research gaps.',
     ],
   },
   'civic-nationalist': {
