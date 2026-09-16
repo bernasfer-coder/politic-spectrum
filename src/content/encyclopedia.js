@@ -6118,7 +6118,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
   },
   'civic-nationalist': {
     id: 'civic-nationalist',
-    title: 'Civic nationalist',
+    title: 'Civic nationalism',
     canonicalLabel: 'Civic nationalism',
     aliases: [
       'civic nationalism',
@@ -6503,7 +6503,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
   },
   'ethnic-nationalist': {
     id: 'ethnic-nationalist',
-    title: 'Ethnic nationalist',
+    title: 'Ethnic nationalism',
     canonicalLabel: 'Ethnic nationalism',
     aliases: [
       'ethnic nationalism',
@@ -6904,7 +6904,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
   },
   monarchist: {
     id: 'monarchist',
-    title: 'Monarchist',
+    title: 'Monarchism / royalism',
     canonicalLabel: 'Monarchism / royalism',
     aliases: [
       'monarchism',
@@ -7323,7 +7323,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
   },
   theocratic: {
     id: 'theocratic',
-    title: 'Theocratic',
+    title: 'Theocratic / clerical rule',
     canonicalLabel: 'Theocracy / clerical rule',
     aliases: [
       'theocracy',

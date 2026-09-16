@@ -57,6 +57,14 @@ for (const profileId of ['communist', 'anarcho-capitalist', 'anarcho-communist',
     assert.equal(ENCYCLOPEDIA_ENTRIES[profileId].dimensionInterpretations[id].score, profile[id], `${profileId}.${id} must use the same orientation as its reference card`);
   }
 }
+for (const archetype of ARCHETYPES) {
+  const entry = ENCYCLOPEDIA_ENTRIES[archetype.id];
+  assert.ok(entry, `${archetype.id} needs a matching encyclopedia entry`);
+  assert.equal(entry.title, archetype.name, `${archetype.id} card and encyclopedia title must stay aligned`);
+  for (const dimension of DIMENSIONS) {
+    assert.equal(entry.dimensionInterpretations[dimension.id].score, archetype.profile[dimension.id], `${archetype.id}.${dimension.id} must stay aligned between card and encyclopedia`);
+  }
+}
 assert.equal(ENCYCLOPEDIA_ENTRIES.communist.dimensionInterpretations.religion.score, 55, 'the existing secular communist coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['anarcho-capitalist'].dimensionInterpretations.economic.score, -96, 'the existing strongly market-oriented coordinate must remain negative');
 assert.equal(ENCYCLOPEDIA_ENTRIES['anarcho-communist'].dimensionInterpretations.religion.score, 45, 'the existing secular anarcho-communist coordinate must remain positive');

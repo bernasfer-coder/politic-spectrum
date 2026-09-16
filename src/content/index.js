@@ -1114,7 +1114,7 @@ const ARCHETYPES_RAW = [
     name: 'Civic nationalism',
     accent: '#5ca9ff',
     palette: 'classical-liberal',
-    profile: { economic: 5, social: 5, authority: 18, identity: 58, foreign: -10 },
+    profile: { economic: 5, social: 0, authority: 18, identity: 58, foreign: -10 },
     summary: 'A form of national belonging based primarily on shared citizenship, political principles, and institutions rather than ancestry alone.',
     dimensionNotes: {
       economic: 'Economic policy is not fixed by civic nationalism; the common national project can support market, welfare, or developmental arrangements.',
@@ -1175,7 +1175,7 @@ const ARCHETYPES_RAW = [
     name: 'Monarchism / royalism',
     accent: '#d6ae63',
     palette: 'national-conservative',
-    profile: { economic: 12, social: 45, authority: 62, identity: 62, foreign: 18 },
+    profile: { economic: 12, social: 48, authority: 52, identity: 42, foreign: 18 },
     summary: 'Political arrangements that place a monarch at the head of the state, with authority ranging from absolute rule to a largely ceremonial constitutional office.',
     dimensionNotes: {
       economic: 'Monarchies have historically supported feudal, mercantilist, capitalist, welfare, and state-led economies; the institution itself does not determine ownership.',
@@ -1236,7 +1236,7 @@ const ARCHETYPES_RAW = [
     name: 'Christian democracy',
     accent: '#7aa7d9',
     palette: 'social-democratic',
-    profile: { economic: 5, social: 30, authority: 20, identity: 40, foreign: -15 },
+    profile: { economic: 5, social: 30, authority: 20, identity: 20, foreign: -15 },
     summary: 'A political family combining Christian social ethics, constitutional democracy, family and community institutions, social protection, and a mixed economy.',
     dimensionNotes: {
       economic: 'Private property and markets are accepted but balanced by social duties, labor protections, welfare, and the principle of subsidiarity.',
@@ -1266,7 +1266,7 @@ const ARCHETYPES_RAW = [
     name: 'Religious socialism / liberation theology',
     accent: '#ef8e68',
     palette: 'social-democratic',
-    profile: { economic: -60, social: -35, authority: 10, identity: -35, foreign: -35 },
+    profile: { economic: -62, social: -35, authority: 10, identity: -25, foreign: -25 },
     summary: 'A family connecting religious ethics, solidarity with the poor, collective economic justice, and liberation from domination.',
     dimensionNotes: {
       economic: 'Capitalist exploitation and concentrated ownership are criticized in favor of social ownership, redistribution, cooperatives, or preferential concern for the poor.',
@@ -1296,7 +1296,7 @@ const ARCHETYPES_RAW = [
     name: 'Populism',
     accent: '#f28c52',
     palette: 'national-conservative',
-    profile: { economic: -10, social: 15, authority: 35, identity: 55, foreign: 15 },
+    profile: { economic: -10, social: 15, authority: 45, identity: 55, foreign: 15 },
     summary: 'A flexible political style or thin ideology framing politics as a struggle between a morally unified people and a corrupt elite.',
     dimensionNotes: {
       economic: 'Populism has no fixed economic program: it can attack oligarchic wealth from the left, defend national producers, or combine redistribution with market policy.',
@@ -1488,7 +1488,9 @@ const SPECTRUM_BANDS = Object.fromEntries(Object.entries(SPECTRUM_BANDS_RAW).map
 function orientProfile(profile) {
   return Object.fromEntries(DIMENSIONS.map(({ id }) => {
     const value = profile?.[id];
-    return [id, Number.isFinite(value) ? (FLIPPED_DIMENSION_SET.has(id) ? -value : value) : null];
+    if (!Number.isFinite(value)) return [id, null];
+    const oriented = FLIPPED_DIMENSION_SET.has(id) ? -value : value;
+    return [id, Object.is(oriented, -0) ? 0 : oriented];
   }));
 }
 
@@ -1521,8 +1523,8 @@ const RELIGION_ARCHETYPE_DATA = {
   'centrist-pragmatist': { score: -10, note: 'Religious and nonreligious citizens are treated pragmatically as participants in pluralist public life, without a fixed confessional settlement.' },
   'liberal-constitutionalist': { score: -55, note: 'Freedom of conscience and religious toleration are protected, while coercive public law is not grounded in one faith.' },
   'militarist-imperialist': { score: 18, note: 'Religion may be used as a source of civilizational legitimacy or national mobilization, but militarism does not itself determine theology.' },
-  'national-socialist': { score: 30, note: 'The Nazi regime manipulated and subordinated religious institutions to racial-state authority rather than accepting an independent confessional law.' },
-  'libertarian-socialist': { score: -45, note: 'The tradition is generally secular and anti-clerical in its politics, while voluntary religious association remains compatible with decentralized self-government.' },
+  'national-socialist': { score: 35, note: 'The Nazi regime manipulated and subordinated religious institutions to racial-state authority rather than accepting an independent confessional law.' },
+  'libertarian-socialist': { score: -42, note: 'The tradition is generally secular and anti-clerical in its politics, while voluntary religious association remains compatible with decentralized self-government.' },
 };
 
 const ARCHETYPES = ARCHETYPES_RAW.map((archetype) => {
