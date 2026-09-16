@@ -6568,6 +6568,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Categorization itself is politically consequential. Census forms, school curricula, citizenship registries, party membership, identity documents, and media labels can make an ethnic category more visible and more durable. Rogers Brubaker’s critique is especially useful here: analysts should distinguish groups as claimed social entities from categories imposed by institutions and identifications that vary by context, rather than treating every named ethnicity as a fixed bounded object.',
             citations: citations(['brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities'], ['cambridgeKohnDichotomy', 'bpbNationalism', 'sepNationalism']),
           },
+          {
+            type: 'paragraph',
+            text: 'The 1913 German nationality statute illustrates why legal parentage, ethnic identity and racial classification need separate examination. Section 1 defined German status through state or direct Reich nationality. Section 4 transmitted nationality from a citizen father to a child born within marriage, or from a citizen mother to a child born outside marriage; section 6 gave a woman her German husband’s nationality. Section 8 allowed discretionary naturalization subject to capacity, conduct, housing and livelihood conditions. These provisions encoded gender and marital-status inequalities, but descent from a citizen was not itself an explicit test of biological race. The existence of naturalization provisions does not establish equal access in practice.',
+            citations: citations([], ['reichNationality1913']),
+          },
         ],
       },
       {
@@ -6593,6 +6598,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Empire, colonial rule, and racial classification',
             text: 'Imperial administrations frequently classified subjects by race, tribe, religion, language, or custom and used those classifications to govern territory and labor. Colonial categories could harden or transform identities rather than simply record timeless ethnic groups. Anti-colonial movements later reused national language for self-determination, often inheriting borders that did not match the social communities governed within them.',
             citations: citations(['andersonImaginedCommunities', 'nabucoAbolitionism', 'brubakerEthnicityWithoutGroups'], ['sepColonialism', 'sepNationalism', 'bpbNationalism']),
+          },
+          {
+            period: '1913–1914: German nationality law and differentiated routes to membership',
+            text: 'The statute dated 22 July 1913 took effect on 1 January 1914 under section 41. Its acquisition rules included birth, legitimation, marriage and naturalization. This is a dated legal framework, not evidence that all residents shared an ethnic-nationalist ideology or that the same rules describe present-day Germany.',
+            citations: citations([], ['reichNationality1913']),
           },
           {
             period: '1918–1945: post-imperial states and radicalized membership',
@@ -6661,6 +6671,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['arendtTotalitarianism', 'connorEthnonationalism'], ['vdem', 'sepNationalism', 'ohchrMinorityRights']),
               },
               {
+                label: 'Nationality by descent versus racial political membership',
+                distinction: 'A rule transmitting a parent’s legal nationality is not identical to classifying people by an allegedly biological racial category.',
+                relation: 'An analytical distinction, not another ideology card: investigate admission, naturalization discretion, loss of status and unequal rights before inferring how exclusion operates.',
+                citations: citations([], ['reichNationality1913', 'gosewinkelCitizenship2008', 'alexopoulouRacism2018']),
+              },
+              {
                 label: 'Genocidal or totalizing racial nationalism',
                 distinction: 'Defines targeted populations as existential contaminants or enemies and uses state or movement power for systematic persecution, removal, enslavement, or extermination.',
                 relation: 'Nazi Germany is a historically documented extreme case. It should be named precisely and never used as a casual synonym for cultural nationalism, ordinary patriotism, or every contemporary right-wing movement.',
@@ -6718,6 +6734,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'Language, folklore, historical memory, and the idea of a cultural people became important resources for challenging dynastic and imperial arrangements.',
                 caveat: 'This history contains pluralist, cultural, liberal, conservative, imperial, and later racial currents. It should not be collapsed into National Socialism, nor should later Nazi appropriation be projected backward onto every romantic thinker.',
                 citations: citations(['smithEthnicOrigins', 'andersonImaginedCommunities'], ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy']),
+              },
+              {
+                name: 'German nationality and racialized political status',
+                period: '1913 statute and the Nazi transformation of 1933–1935',
+                match: 'Gosewinkel distinguishes restrictions on admission from attacks on existing membership. His account traces the 1933 denaturalization measures and the 1935 division between nationality and privileged Reich citizenship, with full political rights tied to the regime’s racial and loyalty criteria.',
+                caveat: 'A case for comparing legal mechanisms, not an equation of the 1913 statute with Nazi racial law. Earlier discrimination is not denied; no person, population or current state receives new coordinates.',
+                citations: citations([], ['reichNationality1913', 'gosewinkelCitizenship2008']),
               },
               {
                 name: 'Central and Eastern European post-imperial nation-building',
@@ -6804,12 +6827,22 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, ethnic nationalism can conflict with universal rights and with the fact that modern societies are layered, mobile, and interdependent. A person can belong to a language community, a religion, a city, a state, a diaspora, and a supranational legal order at the same time. The project should preserve that plural reality and avoid treating a national label as a biological diagnosis. The most important safeguards are equal citizenship, non-discrimination, minority and Indigenous rights, accountable government, free expression, peaceful dispute resolution, and the right to criticize the nation without becoming stateless or politically suspect.',
             citations: citations(['brubakerEthnicityWithoutGroups', 'millOnLiberty', 'kantPerpetualPeace'], ['ohchrMinorityRights', 'sepNationalism', 'coeDemocraticCitizenship', 'vdem']),
           },
+          {
+            type: 'paragraph',
+            text: 'Different historical emphases matter. Gosewinkel stresses the Nazi destruction of protected legal status and the racial stratification of political rights. Maria Alexopoulou emphasizes longer-lived racialized exclusion in naturalization, including administrative discretion after 1945. Her discussion of Mannheim records shows why formally available procedures cannot be assumed to provide equal opportunities. Neither emphasis licenses a simple equation of all periods or an assumption that the earlier system was free of discrimination.',
+            citations: citations([], ['gosewinkelCitizenship2008', 'alexopoulouRacism2018']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Reading boundary: Alexopoulou’s explicit criticism cites Gosewinkel’s 2001 and 2016 books, not the 2008 paper used here; this is not presented as a direct exchange between the two selected texts. The statute was read in German transcription, and selected pages of the 2008 paper were visually checked. The books, original administrative files and complete legislative history remain unreviewed. English wording is original synthesis, not an authoritative translation or current citizenship advice. All six scores remain unchanged.',
+            citations: citations([], ['reichNationality1913', 'gosewinkelCitizenship2008', 'alexopoulouRacism2018']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['smithEthnicOrigins', 'connorEthnonationalism', 'brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities', 'renanNation', 'hitlerMeinKampf', 'arendtTotalitarianism', 'mussoliniDoctrine', 'millOnLiberty', 'kantPerpetualPeace', 'nabucoAbolitionism'],
-      researchSourceIds: ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy', 'sepColonialism', 'ohchrMinorityRights', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'coeDemocraticCitizenship', 'openTextbook'],
+      researchSourceIds: ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy', 'sepColonialism', 'ohchrMinorityRights', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'coeDemocraticCitizenship', 'openTextbook', 'reichNationality1913', 'gosewinkelCitizenship2008', 'alexopoulouRacism2018'],
       editorialNote: 'The entry treats ethnic nationalism as a broad and internally divided family of identity-and-sovereignty claims. It distinguishes cultural identity, minority self-determination, civic nationalism, nativism, racial nationalism, fascism, and genocide, and refuses to classify an entire current country without dated institutional evidence. Scores are didactic composites, not judgments about every person or movement using the label.',
     },
     researchGaps: [
@@ -6820,6 +6853,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add legal and empirical research on nationality law, denaturalization, statelessness, dual citizenship, diaspora voting, naturalization tests, minority-language rights, hate crime, political violence, population transfer, and the implementation of minority protections.',
       'Compare ethnic nationalism with Indigenous sovereignty, Black nationalism, religious nationalism, pan-nationalism, plurinational democracy, and anti-colonial liberation through authors from the affected regions and communities rather than relying only on European theory.',
       'Add dated country and party evidence before using current examples; distinguish cultural preference, minority protection, secession, nativism, ethnocracy, racial hierarchy, fascism, and genocidal intent through explicit institutional criteria.',
+      'Collate the 1913 transcription with the Reichsgesetzblatt facsimile and earlier 1870 provisions, parliamentary debates and implementing regulations. Study gender, marital status, colonial subjects and regional naturalization practices separately; the selected clauses do not establish equal access or a complete account of exclusion.',
+      'Read the full Gosewinkel 2008 paper, his 2001 and 2016 books discussed by Alexopoulou, and further competing scholarship. Verify the cited Mannheim and federal records and add migrants’ own testimony before generalizing across periods or localities. This focused German case does not close the wider multilingual and comparative gaps.',
     ],
   },
   monarchist: {

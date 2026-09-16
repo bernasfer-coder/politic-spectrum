@@ -64,6 +64,44 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const nationalityEntry = ENCYCLOPEDIA_ENTRIES['ethnic-nationalist'];
+for (const [sourceId, evidenceRole, publicationDate, confidence] of [
+  ['reichNationality1913', 'primary', '1913-07-22', 'medium'],
+  ['gosewinkelCitizenship2008', 'secondary', '2008', 'high'],
+  ['alexopoulouRacism2018', 'secondary', '2018-09-14', 'high'],
+]) {
+  assert.ok(nationalityEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an ethnic-nationalism reference trail`);
+  assert.ok(JSON.stringify(nationalityEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.review.confidence, confidence);
+  assert.deepEqual(record.languages, ['German']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:ethnic-nationalist']);
+}
+const nationalityStatute = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-reichNationality1913');
+const citizenshipPaper = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-gosewinkelCitizenship2008');
+const alexopoulouEssay = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-alexopoulouRacism2018');
+assert.match(nationalityStatute.description, /31 July publication.*1 January 1914 commencement/, 'statute, publication and commencement dates must remain distinct');
+assert.match(nationalityStatute.note, /facsimile text was not visually collated/);
+assert.match(citizenshipPaper.note, /Printed pp\. 4 and 6–7 \(PDF pages 8 and 10–11\)/);
+assert.match(alexopoulouEssay.description, /2001 and 2016 books, not the 2008 discussion paper/);
+assert.match(alexopoulouEssay.license, /CC BY-NC-ND 3\.0 DE/);
+const nationalityDescription = nationalityEntry.sections.find(({ id }) => id === 'description').blocks.find(({ text }) => text?.startsWith('The 1913 German nationality statute'));
+assert.match(nationalityDescription.text, /gender and marital-status inequalities/);
+assert.match(nationalityDescription.text, /does not establish equal access in practice/);
+const nationalityBoundary = nationalityEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Reading boundary: Alexopoulou'));
+assert.match(nationalityBoundary.text, /not presented as a direct exchange/);
+assert.match(nationalityBoundary.text, /All six scores remain unchanged/);
+for (const { id } of DIMENSIONS) assert.equal(nationalityEntry.dimensionInterpretations[id].score, ARCHETYPES.find(({ id: profileId }) => profileId === 'ethnic-nationalist').profile[id]);
+assert.ok(nationalityEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1913 transcription')));
+assert.ok(nationalityEntry.researchGaps.some((gap) => gap.startsWith('Read the full Gosewinkel 2008 paper')));
+
 const ethiopiaEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
 for (const [sourceId, evidenceRole, publicationDate, language, confidence] of [
   ['selassieLeagueAppeal1936', 'primary', '1936-06-30', 'English translation; Amharic original not collated', 'medium'],
