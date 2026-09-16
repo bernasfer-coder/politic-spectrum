@@ -1766,6 +1766,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Democratic safeguards are substantive, not incidental. Social-democratic institutions depend on competitive elections, free association, independent unions, civil liberties, legal accountability, and the ability of citizens to contest how benefits and burdens are allocated. Social provision administered without democratic control can become paternalist or bureaucratic rather than emancipatory.',
             citations: citations(['bernsteinEvolutionarySocialism', 'millOnLiberty', 'lockeSecondTreatise'], ['sepSocialism', 'vdem', 'oecdWelfareModels']),
           },
+          {
+            type: 'paragraph',
+            text: 'The 1959 SPD programme makes market acceptance conditional. In its economic and ownership sections, it protects private enterprise subject to social justice, supports public enterprises and public ownership against concentrated power, and warns that state ownership can also concentrate power. Decentralization and participation therefore remain important. Its union section calls for wider worker co-determination. This is a party’s stated institutional programme, not evidence that these arrangements were fully implemented.',
+            citations: citations([], ['ghdiGodesbergGerman', 'ghdiGodesberg']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The same text combines freedom of conscience with cooperation with churches, and equality in women’s education, work, and pay with gender-specific assumptions about motherhood and domestic work. These commitments should be read historically, not treated as proof of a contemporary progressive consensus or hostility to religion. The programme does not calibrate this website’s social or religion scores.',
+            citations: citations([], ['ghdiGodesberg', 'ghdiGodesbergGerman']),
+          },
         ],
       },
       {
@@ -1791,6 +1801,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1959: Godesberg and the German programme debate',
             text: 'The SPD’s Godesberg Programme publicly marked a major post-war reorientation toward democratic pluralism, individual freedom, social justice, and a regulated market economy rather than an orthodox Marxist ownership programme. This did not make the SPD identical to ordoliberal or Christian-democratic traditions: the social market economy also drew on a distinct theory of competitive order, and German welfare institutions retained a historically specific insurance and employment structure. The episode is best read as a boundary-crossing reformulation within a wider post-war settlement.',
             citations: citations(['bernsteinEvolutionarySocialism'], ['bpbSpdProgrammatics', 'ghdiGodesberg', 'bpbSocialMarketEconomy', 'bpbGermanSocialState', 'bpbWelfareModels']),
+          },
+          {
+            period: '1960: a distinct foreign-policy clarification',
+            text: 'Frank Decker’s historical account distinguishes Godesberg from Herbert Wehner’s 1960 parliamentary acceptance of West integration and NATO membership. The 1959 text already affirmed national defense alongside disarmament; it should not be treated as a complete account of the subsequent foreign-policy shift. This chronology rests on Decker’s secondary account, not a fresh examination of Wehner’s speech.',
+            citations: citations([], ['bpbSpdProgrammatics', 'ghdiGodesbergGerman']),
           },
           {
             period: '1950s–1970s: post-war social-democratic settlement',
@@ -1832,8 +1847,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 label: 'Democratic socialism',
                 distinction: 'Seeks stronger social or democratic ownership and may regard capitalism as a structure to replace rather than primarily regulate.',
-                relation: 'Overlaps on democracy and equality but differs on the long-term role of markets and private ownership.',
-                citations: citations(['bernsteinEvolutionarySocialism', 'marxEngelsManifesto'], ['sepSocialism']),
+                relation: 'Overlaps on democracy and equality but differs on the long-term role of markets and private ownership. Godesberg itself uses democratic-socialist language, so this analytical distinction is not a rigid historical naming rule.',
+                citations: citations(['bernsteinEvolutionarySocialism', 'marxEngelsManifesto'], ['sepSocialism', 'ghdiGodesbergGerman']),
               },
               {
                 label: 'Social liberalism',
@@ -1914,6 +1929,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['bernsteinEvolutionarySocialism'], ['bpbSpdProgrammatics', 'ghdiGodesberg', 'bpbSocialMarketEconomy', 'bpbGermanSocialState', 'bpbWelfareModels']),
               },
               {
+                name: 'SPD programme formation around Godesberg',
+                period: 'Post-war debate culminating in 1959',
+                match: 'A dated programme case, not a whole-country or present-party score.',
+                caveat: 'Lompe gives Willi Eichler and Gerhard Weisser important intellectual roles while describing disagreement within the party. His account does not justify reducing the programme to one author or a straight line from Bernstein.',
+                citations: citations([], ['lompeGodesberg1979']),
+              },
+              {
                 name: 'Contemporary social-democratic parties and coalitions',
                 period: 'present',
                 match: 'movement-level comparison only',
@@ -1966,12 +1988,22 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Social-democratic success also depends on conditions that are not fully controlled by national policy: economic growth, international trade, migration, demographic change, technological shifts, ecological limits, and the bargaining power of organized labor. The profile should therefore be read as an institutional project with changing constraints, not as a fixed list of benefits.',
             citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels', 'foreignPolicy']),
           },
+          {
+            type: 'paragraph',
+            text: 'Was Godesberg a break or a culmination? In sections II–III of his 1979 study, Klaus Lompe argues for a long intellectual and organizational renewal, while acknowledging electoral pressures and reporting critics who saw accommodation to existing power. He presents the control of economic concentration, rather than total socialization, as central to that renewal. This is an attributed interpretation, not proof that the controversy was settled; the critics’ original works have not been independently reviewed in this pass.',
+            citations: citations([], ['lompeGodesberg1979']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The linked GHDI pages contain programme excerpts with omissions, modern introductions, and different German and English publication chains. Source text and editorial interpretation must remain distinct. The English explanation here is original paraphrase, not a quotation or certified translation. Reading a programme establishes declared aims, not policy outcomes, universal agreement among members, or the views of every voter.',
+            citations: citations([], ['ghdiGodesbergGerman', 'ghdiGodesberg', 'lompeGodesberg1979']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty', 'wollstonecraftRights', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'morgenthauRealism', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'bpbGermanSocialState', 'bpbWelfareModels', 'bpbSocialMarketEconomy', 'ghdiGodesberg', 'vdem', 'ches', 'foreignPolicy'],
+      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'bpbGermanSocialState', 'bpbWelfareModels', 'bpbSocialMarketEconomy', 'ghdiGodesberg', 'vdem', 'ches', 'foreignPolicy', 'ghdiGodesbergGerman', 'lompeGodesberg1979'],
       editorialNote: 'The entry distinguishes reformist socialism, welfare-state social democracy, social liberalism, and democratic socialism. Its scores describe a didactic modern social-democratic archetype, not every party or welfare state carrying the label.',
     },
     researchGaps: [
@@ -1979,6 +2011,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add Swedish, Norwegian, Danish, French, and Portuguese scholarship on labor movements, universalism, social citizenship, and the Nordic and continental welfare variants.',
       'Add country-specific evidence before listing current states or parties as examples; welfare models and party programmes change over time.',
       'Add specialist research on colonial legacies, migration, gender, unpaid care, disability, ecological transition, automation, and the global constraints on national redistribution.',
+      'Extend the selected Godesberg excerpts to the complete programme and identified print editions; verify translation provenance and Wehner’s original 1960 speech before quoting them. Read Lompe’s complete article and the dissenting works he cites alongside newer scholarship.',
+      'Compare the programme with party-congress records, union debates, women’s perspectives, church responses, legislation, and implementation. The Godesberg case only partly addresses the earlier German-language gap and does not establish Nordic, global, or current-party equivalence; all six existing coordinates remain didactic and unchanged.',
     ],
   },
   'classical-liberal': {

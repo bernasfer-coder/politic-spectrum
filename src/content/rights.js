@@ -170,6 +170,8 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    ghdiGodesbergGerman: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'GHDI credits the German source edition to Hoffmann und Campe, copyright 1973; no republication clearance inferred.', notes: 'Independent English paraphrase and link only; no German passage, translation, scan, or modern introduction reproduced.' },
+    lompeGodesberg1979: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original attributed summary of selected sections only. No article passage, embedded historical quotation, footnote extract, or translated quotation republished.' },
     algeriaSenatusConsulte1865: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent summary and link only; no historical provision, modern transcription, facsimile, or translation reproduced. Document age does not clear every modern edition component.' },
     algeriaCremieuxDecrees1870: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase of selected decrees and source link only. No legal passage, editorial introduction, or document image republished.' },
     immigrationMuseumColonialStatus: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent synthesis and link only. No museum prose, artwork, photograph, caption, or exhibition asset reproduced.' },
@@ -294,9 +296,9 @@ const RIGHTS_RECORDS = {
     manifesto: { ...RESTRICTED_DATA, notes: 'Manifesto Project terms prohibit redistribution except when authorized in writing and require provenance and citation.' },
     foreignPolicy: { ...LINK_ONLY, notes: 'Journal article used as a linked scholarly source; no article text, figures, or tables are reproduced.' },
     oecdWelfareModels: { ...LINK_ONLY, notes: 'OECD comparative policy source used for independent synthesis of welfare-regime distinctions; no OECD text, tables, or graphics are reproduced.' },
-    ghdiGodesberg: { ...LINK_ONLY, notes: 'Historical document repository used for independent synthesis of the 1959 SPD programme; no GHDI text, scans, or translation are reproduced.' },
+    ghdiGodesberg: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'English historical programme excerpt used for independent synthesis. No English translation, source-edition passage, GHDI introduction, or scan reproduced; primary evidence status is not a rights clearance.' },
     fesHistorySocialDemocracy: { ...LINK_ONLY, notes: 'Friedrich-Ebert-Stiftung German-language institutional history used as a linked source; no PDF text, images, or graphics are reproduced.' },
-    bpbSpdProgrammatics: { ...LINK_ONLY, notes: 'German federal civic-education reference used for independent synthesis of SPD programme history; no bpb text, images, or graphics are reproduced.' },
+    bpbSpdProgrammatics: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The page credits Frank Decker and states CC BY-NC-ND 4.0; commercial republication or adapted-text clearance is not inferred.', notes: 'Independent summary and link only; no article text, translated passage, images, or graphics reproduced.' },
     bpbGermanSocialState: { ...LINK_ONLY, notes: 'German federal civic-education reference used for independent synthesis of social-state history; no bpb text, images, or graphics are reproduced.' },
     bpbWelfareModels: { ...LINK_ONLY, notes: 'German federal civic-education reference used for independent comparative synthesis; no bpb text, tables, or graphics are reproduced.' },
     bpbSocialMarketEconomy: { ...LINK_ONLY, notes: 'German federal civic-education history used for independent synthesis of the social-market economy; no bpb text, tables, or graphics are reproduced.' },

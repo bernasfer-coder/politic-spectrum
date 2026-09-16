@@ -64,6 +64,37 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const socialDemocraticEntry = ENCYCLOPEDIA_ENTRIES['social-democratic'];
+const socialDemocraticProfile = ARCHETYPES.find(({ id }) => id === 'social-democratic').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(socialDemocraticEntry.dimensionInterpretations[id].score, socialDemocraticProfile[id], `social-democratic.${id} must retain its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole] of [
+  ['ghdiGodesberg', 'primary'],
+  ['ghdiGodesbergGerman', 'primary'],
+  ['lompeGodesberg1979', 'secondary'],
+  ['bpbSpdProgrammatics', 'secondary'],
+]) {
+  assert.ok(socialDemocraticEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a social-democratic reference trail`);
+  assert.ok(JSON.stringify(socialDemocraticEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish the programme from interpretation`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its publication boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an unreviewed quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:social-democratic'), `${sourceId} needs an encyclopedia backlink`);
+}
+const godesbergEnglish = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ghdiGodesberg');
+const godesbergGerman = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ghdiGodesbergGerman');
+assert.deepEqual(godesbergEnglish.languages, ['English'], 'the existing English excerpt must not be labelled German');
+assert.deepEqual(godesbergGerman.languages, ['German'], 'the German edition needs separate provenance');
+assert.ok(godesbergEnglish.relationships.profileEntries.includes('encyclopedia:democratic-socialist'), 'metadata repair must preserve the existing neighboring-entry backlink');
+const socialDemocraticHistory = socialDemocraticEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(socialDemocraticHistory.find(({ period }) => period.startsWith('1960:'))?.citations.researchSourceIds.includes('bpbSpdProgrammatics'), 'the later foreign-policy clarification must disclose its secondary source');
+assert.ok(socialDemocraticEntry.researchGaps.some((gap) => gap.includes('complete programme')), 'excerpt limits must remain visible');
+
 const civicEntry = ENCYCLOPEDIA_ENTRIES['civic-nationalist'];
 const civicProfile = ARCHETYPES.find(({ id }) => id === 'civic-nationalist').profile;
 assert.equal(civicEntry.dimensionInterpretations.religion.score, civicProfile.religion, 'the civic article must match the existing secular-positive card');
