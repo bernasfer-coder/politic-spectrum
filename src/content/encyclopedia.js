@@ -3483,6 +3483,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Catholic case below tests this category’s boundaries, not the character of every religion or Catholic. Primary doctrine, scholarly interpretation, and this site’s illustrative coordinates are different evidence types. French versions inform original English paraphrases, not verified translations.',
             citations: citations([], ['leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The German Protestant case also tests a boundary: theological conviction is not a measure of support for authoritarian government. Barmen is examined as a declaration, not as proof of every signatory’s conduct. The German sources inform original English paraphrases, not verified translations; the card’s coordinates remain illustrative.',
+            citations: citations([], ['barmenDeclaration1934German', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009']),
+          },
         ],
       },
       {
@@ -3508,6 +3513,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Dignitatis humanae §§1–2 and 6–7 retains a duty to seek religious truth while defending civil immunity from coercion, including for those who do not fulfil that duty. Special recognition of one religious community must preserve others’ religious freedom and citizens’ legal equality; restrictions must not be arbitrary. These are doctrinal requirements, not evidence of enforcement.',
             citations: citations([], ['vaticanReligiousFreedomFrench']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Barmen Declaration supplies a Protestant boundary case. Theses I–II ground allegiance in Christ, not another political source of revelation. Thesis V assigns the state responsibility for justice and peace, including coercive means, but rejects its claim to govern all life; it also rejects a church taking on state functions. These are theological limits on institutions, not a secular constitutional blueprint or a mandate for clerical government.',
+            citations: citations([], ['barmenDeclaration1934German']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Historian Manfred Gailus distinguishes Nazi-aligned German Christians, church opposition, and accommodating churches rather than one Protestant response. He characterizes the Confessing Church primarily as a theological defense against Nazi-aligned church leadership, not a movement to restore democracy and general political freedoms. Institutional independence, religious conviction, and equal citizenship must therefore be examined separately; that last distinction is this site’s analytical safeguard, not a numerical finding in his article.',
+            citations: citations([], ['gailusChurchStateNazism2018']),
           },
         ],
       },
@@ -3544,6 +3559,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Twentieth century: religious parties and constitutional accommodation',
             text: 'Religious political movements increasingly negotiated with mass democracy, universal suffrage, social policy, and constitutional rights. Christian democracy is a major European example: it emerged from confessional politics but developed pluralist, personalist, solidaristic, and constitutional forms that cannot be reduced to clerical rule. Other religious traditions followed different paths, so Christian democracy is a variant, not the global definition.',
             citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'lockeLetterToleration'], ['oxfordChristianDemocracy', 'sepReligionPolitics']),
+          },
+          {
+            period: '31 May 1934: the Barmen Declaration',
+            text: 'Representatives of Lutheran, Reformed, and United churches affirm a common confession against the German Christians’ church leadership and teaching. This church declaration is not a state constitution or a complete political programme.',
+            citations: citations([], ['barmenDeclaration1934German']),
           },
           {
             period: '7 December 1965: Dignitatis humanae',
@@ -3587,6 +3607,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Compare Immortale Dei’s conditional toleration with Dignitatis humanae’s protection rooted in personhood.',
                 relation: 'Both reject forced conversion; that shared position does not make their accounts of public religious freedom identical.',
                 citations: citations([], ['leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench']),
+              },
+              {
+                label: 'Confessional resistance versus equal political rights',
+                distinction: 'Barmen limits both state and church through a Christian account of their tasks.',
+                relation: 'Opposition to church subordination does not by itself establish a commitment to democracy or equal rights for outsiders.',
+                citations: citations([], ['barmenDeclaration1934German', 'gailusChurchStateNazism2018']),
               },
               {
                 label: 'Religious nationalism',
@@ -3633,6 +3659,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'papal author of the confessional political argument in Immortale Dei',
                 caveat: 'Document-specific reference, not evidence for every policy position or these six numerical coordinates.',
                 citations: citations([], ['leoImmortaleDeiFrench']),
+              },
+              {
+                name: 'Lothar Kreyssig',
+                role: 'Protestant judge and Confessing Church member who opposed the Nazi killing of disabled people in 1940',
+                caveat: 'Silomon describes his legal and Christian objections and refusal to treat Hitler’s will as sufficient law. This is a documented individual boundary case, not a six-axis classification or a representative account of every church member.',
+                citations: citations([], ['silomonProtestantResistance2009']),
               },
               {
                 name: 'Edmund Burke',
@@ -3684,6 +3716,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'institutional discourse, not a country-wide ideology',
                 caveat: 'Portier describes acceptance of constitutional pluralism alongside continuing moral claims. Bishops’ statements are not a survey of Catholics or proof of French state policy.',
                 citations: citations([], ['portierEpiscopateFreedom']),
+              },
+              {
+                name: 'Barmen Confessing Synod',
+                period: 'Germany, May 1934',
+                match: 'theological boundary case, not a country-wide ideology',
+                caveat: 'The declaration is not evidence that Nazi Germany or all German Protestants occupied this profile. Organizational opposition and individual conduct require separate historical investigation.',
+                citations: citations([], ['barmenDeclaration1934German', 'ushmmGermanChurches']),
               },
               {
                 name: 'Contemporary faith-informed parties and movements',
@@ -3739,12 +3778,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Portier’s interpretation falls between continuity and rupture: French bishops’ acceptance of civil religious freedom does not erase their claims about objective moral order or the Church’s public authority (pp. 48–51, 57–58). He contrasts readings associated with Émile Poulat and René Rémond. Those authors’ books have not been independently reviewed here; this is an attributed historiographical argument, not a settled verdict on all Catholic political thought.',
             citations: citations([], ['portierEpiscopateFreedom']),
           },
+          {
+            type: 'paragraph',
+            text: 'The US Holocaust Memorial Museum emphasizes widespread Christian antisemitism and the limited public opposition of church leaders to persecution of Jews, while documenting individual resistance and rescue. Defending church autonomy must not erase complicity or be equated with defending all persecuted people. Conversely, individual resistance should not disappear inside a general account of institutional failure; these different levels of evidence must remain visible.',
+            citations: citations([], ['ushmmGermanChurches']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'adamSmithWealth', 'morgenthauRealism', 'millOnLiberty'],
-      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy', 'leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom'],
+      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy', 'leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom', 'barmenDeclaration1934German', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'ushmmGermanChurches'],
       editorialNote: 'The entry separates personal religiosity, religious social ethics, confessional constitutionalism, religious nationalism, Christian democracy, and theocracy. Its scores describe a didactic high-tradition, high-authority profile and do not classify every religious person, party, or state.',
     },
     researchGaps: [
@@ -3754,6 +3798,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add country-specific evidence before listing present governments or parties; religious majorities, constitutions, coalition systems, and enforcement practices change over time.',
       'Add specialist research on gender, family law, education, minority rights, conversion, secularism, clerical institutions, religious violence, migration, colonialism, and the constitutional design of pluralist religious societies.',
       'Compare the Vatican-hosted French versions with identified Latin editions; review Portier’s complete article and the Poulat/Rémond books directly. Add evidence from dissenters and minorities about implementation, and non-Catholic cases before extending this bounded doctrinal comparison.',
+      'Collate the EKD Barmen transcription with a dated 1934 edition and an identified published translation. Investigate local reception, dissent, and the experiences of persecuted Jews and Christians of Jewish ancestry; this German Protestant case does not resolve the wider cross-religious gaps.',
+      'Read the Kreyssig correspondence and biographies cited by Silomon directly, and the Barnett, Bergen, and Ericksen studies listed by USHMM. They remain further-reading leads, not independently reviewed books; investigate each actor’s changing politics before assigning a label or coordinates.',
     ],
   },
   'anti-colonial-liberation': {

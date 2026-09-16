@@ -64,6 +64,57 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const religiousTraditionalistEntry = ENCYCLOPEDIA_ENTRIES['religious-traditionalist'];
+const religiousTraditionalistProfile = ARCHETYPES.find(({ id }) => id === 'religious-traditionalist').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(religiousTraditionalistEntry.dimensionInterpretations[id].score, religiousTraditionalistProfile[id], `religious-traditionalist.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole] of [
+  ['barmenDeclaration1934German', 'primary'],
+  ['gailusChurchStateNazism2018', 'secondary'],
+  ['silomonProtestantResistance2009', 'secondary'],
+  ['ushmmGermanChurches', 'secondary'],
+]) {
+  assert.ok(religiousTraditionalistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a religious-traditionalist reference trail`);
+  assert.ok(JSON.stringify(religiousTraditionalistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once, including reused sources`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish declaration and historical interpretation`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its rights boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:religious-traditionalist'), `${sourceId} needs an encyclopedia backlink`);
+  if (['barmenDeclaration1934German', 'ushmmGermanChurches'].includes(sourceId)) {
+    assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-socialist'), `${sourceId} must preserve the existing cross-entry relationship`);
+  }
+}
+const gailusChurchState = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-gailusChurchStateNazism2018');
+const silomonResistance = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-silomonProtestantResistance2009');
+assert.equal(gailusChurchState.publicationDate, '2018-11-01');
+assert.deepEqual(gailusChurchState.creators, ['Manfred Gailus']);
+assert.deepEqual(gailusChurchState.languages, ['German']);
+assert.equal(silomonResistance.publicationDate, '2009-03-21');
+assert.deepEqual(silomonResistance.creators, ['Anke Silomon']);
+assert.match(silomonResistance.sourceType, /selected German article sections/, 'a bounded reading must not become a review of the entire article or its source books');
+const religiousTraditionalistIntroduction = religiousTraditionalistEntry.sections.find(({ id }) => id === 'introduction').blocks.map(({ text }) => text).join(' ');
+assert.match(religiousTraditionalistIntroduction, /not verified translations/, 'translation limits must stay visible');
+const religiousTraditionalistDescription = religiousTraditionalistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(religiousTraditionalistDescription, /rejects a church taking on state functions/, 'Barmen must limit both institutions');
+assert.match(religiousTraditionalistDescription, /not a secular constitutional blueprint/, 'theological limits must not become secularism');
+assert.match(religiousTraditionalistDescription, /not a movement to restore democracy/, 'church opposition must not become comprehensive political resistance');
+assert.match(religiousTraditionalistDescription, /this site’s analytical safeguard/, 'editorial inference must remain distinct from source findings');
+const religiousTraditionalistExamples = religiousTraditionalistEntry.sections.find(({ id }) => id === 'examples').blocks;
+const kreyssigCase = religiousTraditionalistExamples.find(({ type }) => type === 'people').entries.find(({ name }) => name === 'Lothar Kreyssig');
+assert.ok(kreyssigCase.citations.researchSourceIds.includes('silomonProtestantResistance2009'));
+assert.match(kreyssigCase.caveat, /not a six-axis classification/, 'an individual example must not imply a complete profile match');
+const barmenCase = religiousTraditionalistExamples.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'Barmen Confessing Synod');
+assert.match(barmenCase.match, /not a country-wide ideology/, 'the synod must not become a country match');
+const religiousTraditionalistCriticism = religiousTraditionalistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(religiousTraditionalistCriticism, /must not erase complicity/, 'church autonomy must not erase persecution or institutional failure');
+assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.includes('Collate the EKD Barmen transcription')), 'primary-edition follow-up must remain open');
+assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.includes('further-reading leads, not independently reviewed books')), 'unread scholarship must not be promoted to reviewed evidence');
+
 const progressiveEntry = ENCYCLOPEDIA_ENTRIES['progressive-liberal'];
 const progressiveProfile = ARCHETYPES.find(({ id }) => id === 'progressive-liberal').profile;
 for (const { id } of DIMENSIONS) {

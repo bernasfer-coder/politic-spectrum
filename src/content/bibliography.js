@@ -1,6 +1,32 @@
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  gailusChurchStateNazism2018: {
+    accessDate: '2026-09-16',
+    creators: ['Manfred Gailus'],
+    institution: 'Bundeszentrale für politische Bildung',
+    sourceType: 'signed historical synthesis / German educational article',
+    evidenceRole: 'secondary',
+    discipline: 'church history and National Socialism',
+    publicationDate: '2018-11-01',
+    publisher: 'Bundeszentrale für politische Bildung',
+    confidence: 'high',
+    languages: ['German'],
+    description: 'Original English synthesis of an attributed historian’s argument, not a published translation, a consensus survey, or a classification of all Protestants.',
+  },
+  silomonProtestantResistance2009: {
+    accessDate: '2026-09-16',
+    creators: ['Anke Silomon'],
+    institution: 'Bundeszentrale für politische Bildung',
+    sourceType: 'signed historical synthesis / selected German article sections',
+    evidenceRole: 'secondary',
+    discipline: 'Protestant history and resistance to dictatorship',
+    publicationDate: '2009-03-21',
+    publisher: 'Aus Politik und Zeitgeschichte / Bundeszentrale für politische Bildung',
+    confidence: 'high',
+    languages: ['German'],
+    description: 'Original English paraphrase, not a verified translation. Individual resistance is documented through this secondary account; its archival sources and cited biographies remain follow-up work.',
+  },
   ssaOldAgeAssistance1935: {
     accessDate: '2026-09-16',
     creators: ['United States Congress'],
