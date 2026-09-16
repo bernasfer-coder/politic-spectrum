@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { GEOGRAPHY_CASES, GEOGRAPHY_CONTINENTS, GEOGRAPHY_LABELS, GEOGRAPHY_PLACES, GEOGRAPHY_RELATIONSHIPS, GEOGRAPHY_REVIEW_DATE } from './content/geography.js';
+import { ARCHETYPES, ENCYCLOPEDIA_ENTRIES, TAXONOMY_LABELS } from './content/index.js';
 import { filterGeographyCases, GEOGRAPHY_DEFAULTS, GEOGRAPHY_PERIODS, geographyHash, LABELS_BY_ID, PLACES_BY_ID, readGeographyState } from './geography-model.js';
 import './geography.css';
 import GeographyMap from './GeographyMap.jsx';
 import { COUNTRY_OPTIONS } from './geography-map-model.js';
 
 const RELATIONSHIPS_BY_ID = Object.fromEntries(GEOGRAPHY_RELATIONSHIPS.map((item) => [item.id, item]));
+const LIBRARY_COUNTS = Object.freeze({ labels: TAXONOMY_LABELS.length, profiles: ARCHETYPES.length, entries: Object.keys(ENCYCLOPEDIA_ENTRIES).length });
 
 function Select({ label, value, options, onChange }) {
   return <label className="geo-field"><span>{label}</span><select value={value} onChange={(event) => onChange(event.target.value)}><option value="all">All</option>{options.map((option) => <option key={option.id ?? option} value={option.id ?? option}>{option.name ?? option.label ?? option}</option>)}</select></label>;
@@ -70,9 +72,11 @@ export default function GeographyAtlas({ bibliography, entryTitles }) {
   }
 
   return <section className="geo-atlas" aria-labelledby="geo-heading">
-    <div className="geo-heading"><div><p className="eyebrow">POLITICAL GEOGRAPHY · STARTER COLLECTION</p><h2 id="geo-heading">Ideas have histories.<br /><em>Explore their places.</em></h2><p>Follow political ideas through the places where they were developed, advocated or put into practice.</p></div><div className="geo-stat"><strong>{GEOGRAPHY_CASES.length}</strong><span>documented cases</span><small>{GEOGRAPHY_LABELS.length} traditions · reviewed {GEOGRAPHY_REVIEW_DATE}</small></div></div>
+    <div className="geo-heading"><div><p className="eyebrow">POLITICAL GEOGRAPHY · LIBRARY CROSS-REFERENCE</p><h2 id="geo-heading">Ideas have histories.<br /><em>Explore their places.</em></h2><p>Follow political ideas through the places where they were developed, advocated or put into practice.</p></div><div className="geo-stat"><strong>{GEOGRAPHY_CASES.length}</strong><span>documented cases</span><small>{GEOGRAPHY_LABELS.length} mapped traditions · reviewed {GEOGRAPHY_REVIEW_DATE}</small></div></div>
 
-    <div className="geo-boundary"><strong>Cases, not labels for countries.</strong> This Middle Eastern pilot is incomplete. Country tags are modern locators, not claims about populations, historical sovereignty or today’s governments. Contemporary cases are dated snapshots, not live status reports.</div>
+    <div className="geo-boundary"><strong>Cases, not labels for countries.</strong> The atlas is linked to the current research library and bibliography. A library label enters this map only when a place-specific claim has its own source and limitation; unmapped labels remain research gaps rather than guessed country matches. Country tags are modern locators, not claims about populations, historical sovereignty or today’s governments. Contemporary cases are dated snapshots, not live status reports.</div>
+
+    <div className="geo-library-bridge" aria-label="Atlas coverage of the research library"><div><p className="eyebrow">ATLAS ↔ LIBRARY</p><h3>One vocabulary, two ways to learn.</h3><p>Use the library for the full label catalogue, six-axis profiles and encyclopedia entries. Use the atlas for dated, sourced place connections. These are complementary views, not interchangeable classifications.</p></div><div className="geo-library-bridge-stats"><a href="#library"><strong>{LIBRARY_COUNTS.labels}</strong><span>normalized labels</span></a><a href="#library"><strong>{LIBRARY_COUNTS.profiles}</strong><span>profile cards</span></a><a href="#library"><strong>{LIBRARY_COUNTS.entries}</strong><span>encyclopedia entries</span></a><div><strong>{GEOGRAPHY_LABELS.length}</strong><span>mapped traditions</span></div></div></div>
 
     <GeographyMap state={state} onSelect={update} resultCount={results.length} />
 
@@ -116,7 +120,7 @@ export default function GeographyAtlas({ bibliography, entryTitles }) {
       </article></li>;
     })}</ol> : <div className="geo-empty"><h3>No documented cases match these filters.</h3><p>This means a research gap or an empty filter combination—not that no political traditions existed here.</p><button className="secondary-button" onClick={() => update({ ...GEOGRAPHY_DEFAULTS })}>Show the starter collection</button></div>}
 
-    <details className="geo-method"><summary>How to read this atlas</summary><dl>{GEOGRAPHY_RELATIONSHIPS.map(({ id, label, description }) => <div key={id}><dt>{label}</dt><dd>{description}</dd></div>)}</dl><p>A place can have several traditions and each tradition can have several places. Dates can mark an intellectual period, institutional text or observation—not the beginning and end of the ideology. Country, regional and continent tags overlap. Jerusalem and transnational cases have dedicated place filters instead of forced country assignments.</p><p>“Implemented” does not mean successful, universal or complete. No spectrum scores are inferred from nationality, religion or location. The map navigates the same dated records as the cards and timeline; its boundaries do not represent historical or current ideological control. Zero cases indicates missing research.</p></details>
+    <details className="geo-method"><summary>How to read this atlas</summary><dl>{GEOGRAPHY_RELATIONSHIPS.map(({ id, label, description }) => <div key={id}><dt>{label}</dt><dd>{description}</dd></div>)}</dl><p>A place can have several traditions and each tradition can have several places. Dates can mark an intellectual period, institutional text or observation—not the beginning and end of the ideology. Country, regional and continent tags overlap. Jerusalem, transnational networks and treaty areas have dedicated place filters instead of forced country assignments.</p><p>The current library contains {LIBRARY_COUNTS.labels} normalized labels, {LIBRARY_COUNTS.profiles} profile cards and {LIBRARY_COUNTS.entries} encyclopedia entries; this atlas maps the subset with documented place-specific evidence. “Implemented” does not mean successful, universal or complete. No spectrum scores are inferred from nationality, religion or location. The map navigates the same dated records as the cards and timeline; its boundaries do not represent historical or current ideological control. Zero cases indicates missing research.</p></details>
     <div className="geo-share"><label className="geo-field"><span>Share this atlas view</span><input ref={shareInput} readOnly value={shareUrl} onFocus={(event) => event.target.select()} /></label><button className="secondary-button" onClick={copyLink}>Copy link</button><p role="status">{shareMessage}</p></div>
   </section>;
 }

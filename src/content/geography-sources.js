@@ -63,12 +63,32 @@ const sources = [
     identifiers: { doi: '10.1111/nana.12609' },
     description: 'Subtitle: Democratic confederalism, nationalism, and the crisis of capitalist modernity. Distinguishes rival projects in Kurdish politics and acknowledges tensions between an emancipatory programme and the exercise of power.',
   },
+  {
+    id: 'antarcticTreaty1959',
+    label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
+    url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
+    note: 'Official Treaty Secretariat overview and searchable treaty text consulted for Articles I–IV, VII and IX. The treaty area is treated here as a governance context, not as a country or as evidence of a stateless or anarchist society.',
+    creators: ['Antarctic Treaty Consultative Parties'], institution: 'Secretariat of the Antarctic Treaty',
+    publicationDate: '1959-12-01', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international treaty / official institutional text',
+    description: 'The Treaty reserves Antarctica for peaceful purposes, continues freedom of scientific investigation, preserves existing sovereignty positions and prevents new claims or enlargements while it is in force. It entered into force in 1961; the atlas records the foundational 1959 instrument rather than assigning sovereignty.',
+  },
+  {
+    id: 'antarcticEnvironmentalProtocol1991',
+    label: 'Antarctic Treaty Secretariat — Protocol on Environmental Protection',
+    url: 'https://www.ats.aq/e/protocol.html',
+    note: 'Official Treaty Secretariat overview consulted for Articles 2, 3 and 7, the protocol’s entry into force, and the 2048 review-conference clarification. The summary records the legal framework without reproducing treaty text.',
+    creators: ['Antarctic Treaty Consultative Parties'], institution: 'Secretariat of the Antarctic Treaty',
+    publicationDate: '1991-10-04', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international environmental protocol / official institutional text',
+    description: 'The Protocol designates Antarctica a natural reserve devoted to peace and science and prohibits mineral-resource activities except scientific research. It does not expire in 2048; that date concerns a possible review-conference procedure.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: '2026-09-16', creators: source.creators, institution: source.institution,
-  sourceType: source.sourceType, evidenceRole: source.evidenceRole, discipline: 'Middle Eastern political history and geography',
+  sourceType: source.sourceType, evidenceRole: source.evidenceRole, discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography' : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
 }]));

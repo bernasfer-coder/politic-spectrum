@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(10);
+    expect(cards()).toHaveLength(11);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(1);
     expect(cards()[0]).toHaveTextContent('1989');
@@ -71,6 +71,10 @@ describe('geographic atlas', () => {
     await user.click(screen.getByRole('button', { name: /Oceania/ }));
     expect(screen.queryAllByRole('article')).toHaveLength(0);
     expect(screen.getByRole('button', { name: /Oceania/ })).toHaveAttribute('aria-pressed', 'true');
+    await user.click(within(screen.getByRole('group', { name: 'Browse continents' })).getByRole('button', { name: /Antarctica/ }));
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('Antarctic Treaty governance');
+    expect(within(screen.getByRole('group', { name: 'Browse continents' })).getByRole('button', { name: /Antarctica/ })).toHaveAttribute('aria-pressed', 'true');
   });
 
   it('offers a manual share-link fallback on the HTTP LAN site', async () => {

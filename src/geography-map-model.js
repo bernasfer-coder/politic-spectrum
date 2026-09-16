@@ -10,13 +10,14 @@ export const WORLD_VIEW = Object.freeze({ x: 0, y: 0, k: 1 });
 const projection = geoEqualEarth().fitExtent([[16, 16], [944, 484]], { type: 'Sphere' });
 const path = geoPath(projection);
 const atlasIds = { '250': 'france', '818': 'egypt', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
+const atlasPlaceIds = { '010': ['antarctica'] };
 const atlasNames = Object.fromEntries(GEOGRAPHY_COUNTRIES.map(({ id, name }) => [id, name]));
 
 // Dataset IDs are geographic locators, not recognition of sovereignty or ideology.
 // Named fallback IDs keep the three non-ISO areas independently selectable.
 export const MAP_COUNTRIES = feature(world, world.objects.countries).features.map((item) => {
   const id = atlasIds[item.id] ?? (item.id ? `map-${item.id}` : `map-${item.properties.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '')}`);
-  return { id, name: atlasNames[id] ?? item.properties.name, path: path(item), bounds: path.bounds(item) };
+  return { id, name: atlasNames[id] ?? item.properties.name, path: path(item), bounds: path.bounds(item), placeIds: atlasPlaceIds[item.id] ?? [] };
 }).sort((a, b) => a.name.localeCompare(b.name, 'en'));
 export const MAP_COUNTRIES_BY_ID = Object.fromEntries(MAP_COUNTRIES.map((country) => [country.id, country]));
 export const MAP_OUTLINE = path({ type: 'Sphere' });
@@ -29,6 +30,7 @@ export const MAP_PLACE_MARKERS = [
   { id: 'damascus', coordinates: [36.3, 33.5], shortName: 'Damascus' },
   { id: 'jerusalem', coordinates: [35.2, 31.8], shortName: 'Jerusalem', dx: -15, dy: 18 },
   { id: 'northern-syria', coordinates: [40, 36.6], shortName: 'Northern Syria', dx: 15, dy: -14 },
+  { id: 'antarctica', coordinates: [0, -80], shortName: 'Antarctica', dx: 15, dy: -14 },
 ].map((marker) => ({ ...marker, point: projection(marker.coordinates), name: GEOGRAPHY_PLACES.find(({ id }) => id === marker.id).name }));
 
 export function constrainMapView({ x, y, k }) {

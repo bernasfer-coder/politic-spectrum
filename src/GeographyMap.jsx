@@ -5,6 +5,7 @@ import { constrainMapView, geographicSelection, MAP_COUNTRIES, MAP_COUNTRIES_BY_
 
 const countCases = (cases, predicate) => cases.filter((item) => predicate(PLACES_BY_ID[item.placeId], item)).length;
 const countLabel = (count) => `${count} matching ${count === 1 ? 'case' : 'cases'}`;
+const countCountryCases = (cases, country) => countCases(cases, (place) => place.countryIds.includes(country.id) || country.placeIds.includes(place.id));
 
 export default function GeographyMap({ state, onSelect, resultCount }) {
   const [view, setView] = useState(() => selectionMapView(state, GEOGRAPHY_CASES));
@@ -18,8 +19,8 @@ export default function GeographyMap({ state, onSelect, resultCount }) {
   const countryRefs = useRef({});
   const eligibleCases = useMemo(() => filterGeographyCases({ ...state, ...geographicSelection({}) }), [state]);
   const countries = useMemo(() => MAP_COUNTRIES.map((country) => ({ ...country,
-    count: countCases(eligibleCases, (place) => place.countryIds.includes(country.id)),
-    total: countCases(GEOGRAPHY_CASES, (place) => place.countryIds.includes(country.id)),
+    count: countCountryCases(eligibleCases, country),
+    total: countCountryCases(GEOGRAPHY_CASES, country),
   })), [eligibleCases]);
   const selectedPlace = PLACES_BY_ID[state.place] ?? PLACES_BY_ID[GEOGRAPHY_CASES.find(({ id }) => id === state.case)?.placeId];
   const selectedName = selectedPlace?.name ?? MAP_COUNTRIES_BY_ID[state.country]?.name ?? (state.region !== 'all' ? state.region : state.continent !== 'all' ? state.continent : 'All places');
@@ -28,7 +29,7 @@ export default function GeographyMap({ state, onSelect, resultCount }) {
     setView(selectionMapView(state, GEOGRAPHY_CASES));
     setHover(null);
     if (MAP_COUNTRIES_BY_ID[state.country]) setFocusedCountry(state.country);
-    if (state.place !== 'all' || state.case) setPlacesVisible(true);
+    if (state.place !== 'all' || state.case || state.continent === 'Antarctica' || state.region === 'Antarctica') setPlacesVisible(true);
   }, [state.country, state.place, state.region, state.continent, state.case]);
 
   function choose(patch) {
@@ -38,7 +39,7 @@ export default function GeographyMap({ state, onSelect, resultCount }) {
   function countryKey(event, index) {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
-      choose({ country: countries[index].id });
+      choose(countries[index].placeIds.length ? { place: countries[index].placeIds[0] } : { country: countries[index].id });
     } else if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) {
       event.preventDefault();
       const next = event.key === 'Home' ? 0 : event.key === 'End' ? countries.length - 1 : (index + (['ArrowLeft', 'ArrowUp'].includes(event.key) ? -1 : 1) + countries.length) % countries.length;
@@ -87,7 +88,7 @@ export default function GeographyMap({ state, onSelect, resultCount }) {
         <div className="geo-map-presets" role="group" aria-label="Map camera and layers">
           <button onClick={() => setView(WORLD_VIEW)}>World view</button>
           <button onClick={() => setView(regionMapView('Middle East'))}>Zoom to Middle East</button>
-          <button aria-pressed={placesVisible} onClick={() => { setPlacesVisible((value) => !value); if (!placesVisible) setView(regionMapView('Middle East')); }}>City & region markers</button>
+          <button aria-pressed={placesVisible} onClick={() => { setPlacesVisible((value) => !value); if (!placesVisible) setView(selectionMapView(state, GEOGRAPHY_CASES)); }}>City & region markers</button>
         </div>
         <div className={`geo-map-viewport${dragging ? ' is-dragging' : ''}`}>
           <svg ref={svgRef} viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} role="group" aria-label="Interactive world map" aria-describedby="geo-map-help" onPointerDown={startDrag} onPointerMove={moveDrag} onPointerUp={endDrag} onPointerCancel={endDrag} onPointerLeave={() => { if (!dragRef.current?.moved) { dragRef.current = null; setHover(null); } }} onClickCapture={(event) => { if (suppressClick.current) { suppressClick.current = false; event.stopPropagation(); event.preventDefault(); } }}>
@@ -95,7 +96,7 @@ export default function GeographyMap({ state, onSelect, resultCount }) {
               <path d={MAP_OUTLINE} className="geo-map-ocean" aria-hidden="true" />
               <path d={MAP_GRATICULE} className="geo-map-grid" aria-hidden="true" />
               {countries.map((country, index) => <path key={country.id} ref={(node) => { countryRefs.current[country.id] = node; }} d={country.path} className={`geo-map-country${country.count ? ' has-cases' : ''}${country.total ? ' is-catalogued' : ''}`} data-country={country.id} role="button" tabIndex={focusedCountry === country.id ? 0 : -1} aria-label={`${country.name}: ${countLabel(country.count)}`} aria-pressed={state.country === country.id}
-                onClick={() => choose({ country: country.id })} onKeyDown={(event) => countryKey(event, index)} onFocus={() => { setFocusedCountry(country.id); setHover(country); }} onBlur={() => setHover(null)} onPointerEnter={() => { if (!dragRef.current) setHover(country); }}>
+                onClick={() => choose(country.placeIds.length ? { place: country.placeIds[0] } : { country: country.id })} onKeyDown={(event) => countryKey(event, index)} onFocus={() => { setFocusedCountry(country.id); setHover(country); }} onBlur={() => setHover(null)} onPointerEnter={() => { if (!dragRef.current) setHover(country); }}>
                 <title>{country.name} · {countLabel(country.count)} · {country.total} documented in this collection</title>
               </path>)}
             </g>
@@ -131,7 +132,7 @@ export default function GeographyMap({ state, onSelect, resultCount }) {
         <p>{resultCount ? 'Read the case cards below for the people, period, sources and limits of each connection.' : 'An empty selection is a research gap or a filter mismatch—not evidence that no political ideas existed here.'}</p>
         <button className="text-button" onClick={() => { choose({}); setView(WORLD_VIEW); }}>Clear geographic selection</button>
         <div className="geo-map-regions" role="group" aria-label="Regional and cross-border connections"><span>BEYOND COUNTRY BORDERS</span>
-          {['Middle East', 'North Africa', 'Europe'].map((region) => <button key={region} aria-pressed={state.region === region} onClick={() => choose({ region })}>{region}<small>{countCases(eligibleCases, (place) => place.regions.includes(region))}</small></button>)}
+          {['Middle East', 'North Africa', 'Europe', 'Antarctica'].map((region) => <button key={region} aria-pressed={state.region === region} onClick={() => choose({ region })}>{region}<small>{countCases(eligibleCases, (place) => place.regions.includes(region))}</small></button>)}
           {['ottoman-network', 'arab-world'].map((id) => <button key={id} aria-pressed={state.place === id} onClick={() => choose({ place: id })}>{id === 'ottoman-network' ? 'Ottoman networks' : 'Arab-world reception'}<small>{countCases(eligibleCases, (_, item) => item.placeId === id)}</small></button>)}
         </div>
         {placesVisible && <div className="geo-map-regions" role="group" aria-label="City and regional place shortcuts"><span>CITY & REGION MARKERS</span>{MAP_PLACE_MARKERS.map((marker) => <button key={marker.id} aria-pressed={state.place === marker.id} onClick={() => choose({ place: marker.id })}>{marker.shortName}<small>{countCases(eligibleCases, (_, item) => item.placeId === marker.id)}</small></button>)}</div>}
