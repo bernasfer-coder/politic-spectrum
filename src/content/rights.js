@@ -1,4 +1,5 @@
 import { RESEARCH_WORKS } from './research.js';
+import { GEOGRAPHY_RESEARCH_SOURCES } from './geography-sources.js';
 
 const REVIEWED_AT = '2026-09-12';
 const RESEARCH_WORKS_REVIEWED_AT = '2026-09-13';
@@ -170,6 +171,11 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    ...Object.fromEntries(GEOGRAPHY_RESEARCH_SOURCES.map(({ id }) => [id, {
+      ...LINK_ONLY,
+      reviewedAt: '2026-09-16',
+      notes: 'Original, bounded paraphrases and source links only. No quotations, translations of passages, images, maps, tables or source files reproduced. Selected reading or abstract-only access is recorded separately; online access is not republication permission.',
+    }])),
     buberPathsEnglish: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase and bibliographic link only. Hosting and retrieval provenance do not establish permission to redistribute the book, Hull translation or Fischoff introduction. No passage, translated quotation, scan or ebook is bundled; edition and translation rights remain unverified.' },
     sepBuber2026: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The entry credits copyright © 2026 Michael Zank and Zachary Braiterman. No republication licence is asserted here.', notes: 'Independent attributed synthesis and SEP link only. No entry wording, embedded Buber quotation, translation or image reproduced.' },
     leschBuberTheopolitics2019: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'Publisher states copyright © American Political Science Association 2018.', notes: 'Original abstract-level paraphrase and publisher link only. No abstract wording, article passage or biblical commentary extract republished.' },

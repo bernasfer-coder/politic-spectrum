@@ -83,7 +83,9 @@ for (const [sourceId, evidenceRole, publicationDate, confidence] of [
   assert.deepEqual(record.languages, ['English']);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:religious-socialist']);
+  assert.deepEqual(record.relationships.profileEntries, sourceId === 'sepBuber2026'
+    ? ['encyclopedia:religious-socialist', 'geography:buber-jerusalem']
+    : ['encyclopedia:religious-socialist']);
 }
 const buberPrimary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-buberPathsEnglish');
 const buberScholarship = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sepBuber2026');

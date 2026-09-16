@@ -3,6 +3,8 @@ import { RIGHTS_RECORDS } from './rights.js';
 import { TAXONOMY_LABELS as RAW_TAXONOMY_LABELS } from './taxonomy.js';
 import { BIBLIOGRAPHY_ACCESS_DATE, BIBLIOGRAPHY_METADATA } from './bibliography.js';
 import { ENCYCLOPEDIA_ENTRIES } from './encyclopedia.js';
+import { GEOGRAPHY_CASES, GEOGRAPHY_LABELS, GEOGRAPHY_PLACES } from './geography.js';
+import { GEOGRAPHY_RESEARCH_SOURCES } from './geography-sources.js';
 import {
   RESEARCH_BACKLOG,
   RESEARCH_COVERAGE_MATRIX,
@@ -78,6 +80,7 @@ const OPTION_VALUES = [-100, -50, 0, 50, 100];
 const OPTION_LABELS = ['Strongly disagree', 'Disagree', 'Unsure / mixed', 'Agree', 'Strongly agree'];
 
 const RESEARCH_SOURCES = [
+  ...GEOGRAPHY_RESEARCH_SOURCES,
   { id: 'buberPathsEnglish', label: 'Martin Buber — Paths in Utopia, English transcription attributed to R. F. C. Hull', url: 'https://theanarchistlibrary.org/library/martin-buber-paths-in-utopia-en', note: 'Selected HTML reading: Foreword; chapter X, the discussion of common management, autonomy, faith and work, and representation; opening Epilogue on federation and village communes. The host labels the text 1949 but includes Ephraim Fischoff’s 1958 introduction. The transcription has visible errors and was not collated with a printed edition or Hebrew/German text; repository provenance does not establish authorized republication.' },
   { id: 'sepBuber2026', label: 'Michael Zank and Zachary Braiterman — Martin Buber, Stanford Encyclopedia of Philosophy', url: 'https://plato.stanford.edu/entries/buber/', note: 'Selected political passages in sections 4 and 5, plus revision, author and bibliography metadata consulted. Scholarly interpretation is not independent verification of Buber’s reconstruction of ancient Israel or of communal outcomes. The 2026 revision is distinguished from the entry’s 2004 first publication.' },
   { id: 'leschBuberTheopolitics2019', label: 'Charles H. T. Lesch — Theopolitics Contra Political Theology: Martin Buber’s Biblical Critique of Carl Schmitt', url: 'https://www.cambridge.org/core/journals/american-political-science-review/article/abs/theopolitics-contra-political-theology-martin-bubers-biblical-critique-of-carl-schmitt/0AA96D00E5D71D3447E94372EEBAB565', note: 'Publisher abstract, author, online/issue dates, DOI and copyright notice only. Full article and the biblical commentaries underlying its argument were not reviewed. The interpretation is attributed to Lesch rather than presented as a settled historical finding.' },
@@ -1622,6 +1625,20 @@ function buildBibliographyRecords() {
     }
     for (const sourceId of entry.references?.researchSourceIds ?? []) {
       addRelationship(researchUsage[sourceId], 'profileEntries', profileEntry);
+    }
+  }
+
+  for (const item of GEOGRAPHY_CASES) {
+    const label = GEOGRAPHY_LABELS.find(({ id }) => id === item.labelId);
+    const place = GEOGRAPHY_PLACES.find(({ id }) => id === item.placeId);
+    for (const sourceId of new Set([...item.sourceIds, ...label.sourceIds])) {
+      const usage = researchUsage[sourceId];
+      addRelationship(usage, 'profileEntries', `geography:${item.id}`);
+      addRelationship(usage, 'claims', `${item.id} · ${item.relationship}`);
+      addRelationship(usage, 'entities', place.name);
+      addRelationship(usage, 'periods', item.periodLabel);
+      addRelationship(usage, 'traditions', label.name);
+      for (const region of place.regions) addRelationship(usage, 'regions', region);
     }
   }
 

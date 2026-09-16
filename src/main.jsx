@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   ARCHETYPES,
@@ -27,7 +27,10 @@ import {
   TAXONOMY_LABELS,
 } from './content/index.js';
 import './styles.css';
+import { GEOGRAPHY_LABELS } from './content/geography.js';
 
+const GeographyAtlas = lazy(() => import('./GeographyAtlas.jsx'));
+const ENCYCLOPEDIA_TITLES = Object.fromEntries(Object.values(ENCYCLOPEDIA_ENTRIES).map(({ id, title }) => [id, title]));
 
 function calculateScores(answers) {
   return Object.fromEntries(DIMENSIONS.map(({ id }) => {
@@ -151,8 +154,10 @@ function saveQuestionnaireCache(answers, questionIndex) {
 }
 
 function getInitialMode() {
+  if (typeof window !== 'undefined' && /^#geography(?:\?|$)/.test(window.location.hash)) return 'geography';
   if (typeof window !== 'undefined' && window.location.hash.startsWith('#bibliography')) return 'bibliography';
   if (typeof window !== 'undefined' && window.location.hash.startsWith('#encyclopedia/')) return 'library';
+  if (typeof window !== 'undefined' && ['#questionnaire', '#freemode', '#library'].includes(window.location.hash)) return window.location.hash.slice(1);
   return null;
 }
 
@@ -160,8 +165,12 @@ function getInitialEncyclopediaEntryId() {
   if (typeof window === 'undefined') return null;
   const match = window.location.hash.match(/^#encyclopedia\/(.+)$/);
   if (!match) return null;
-  const entryId = decodeURIComponent(match[1]);
-  return ENCYCLOPEDIA_ENTRIES[entryId] ? entryId : null;
+  try {
+    const entryId = decodeURIComponent(match[1]);
+    return ENCYCLOPEDIA_ENTRIES[entryId] ? entryId : null;
+  } catch {
+    return null;
+  }
 }
 
 function App() {
@@ -183,8 +192,8 @@ function App() {
       if (entryId) {
         setMode('library');
         setEncyclopediaEntryId(entryId);
-      } else if (window.location.hash === '#bibliography') {
-        setMode('bibliography');
+      } else {
+        setMode(getInitialMode() || (cachedQuestionnaire?.complete ? 'freemode' : 'questionnaire'));
         setEncyclopediaEntryId(null);
       }
     }
@@ -194,13 +203,14 @@ function App() {
       window.removeEventListener('popstate', syncHash);
       window.removeEventListener('hashchange', syncHash);
     };
-  }, []);
+  }, [cachedQuestionnaire]);
 
   const matches = useMemo(() => getMatches(scores), [scores]);
   const topMatch = matches[0];
   const selectedType = ARCHETYPES.find((archetype) => archetype.id === selectedTypeId) || ARCHETYPES[0];
   const themeScores = mode === 'questionnaire' ? calculateScores(answers) : mode === 'library' ? selectedType.profile : scores;
   const themeMatch = useMemo(() => {
+    if (mode === 'geography') return { id: 'neutral' };
     const hasSignal = Object.values(themeScores).some((value) => value !== 0);
     return mode === 'library' ? selectedType : hasSignal ? getMatches(themeScores)[0] : { id: 'neutral' };
   }, [mode, selectedType, themeScores]);
@@ -234,7 +244,7 @@ function App() {
     setMode(nextMode);
     if (nextMode !== 'library') setEncyclopediaEntryId(null);
     if (typeof window !== 'undefined') {
-      window.history.replaceState(null, '', nextMode === 'bibliography' ? '#bibliography' : window.location.pathname);
+      window.history.pushState(null, '', `#${nextMode}`);
     }
   }
 
@@ -307,6 +317,9 @@ function App() {
             <button className={mode === 'bibliography' ? 'mode-tab active' : 'mode-tab'} onClick={() => changeMode('bibliography')} role="tab" aria-selected={mode === 'bibliography'}>
               <span className="tab-number">04</span><span><strong>Bibliography</strong><small>Trace every source and claim</small></span>
             </button>
+            <button className={mode === 'geography' ? 'mode-tab active' : 'mode-tab'} onClick={() => changeMode('geography')} role="tab" aria-selected={mode === 'geography'}>
+              <span className="tab-number">05</span><span><strong>Geographic Atlas</strong><small>Follow ideas through places</small></span>
+            </button>
           </div>
 
           {mode === 'questionnaire' ? (
@@ -327,6 +340,8 @@ function App() {
             <FreeMode scores={scores} matches={matches} topMatch={topMatch} onUpdateScore={updateScore} onUseQuestionnaire={() => changeMode('questionnaire')} />
           ) : mode === 'library' ? (
             <SpectrumLibrary selectedType={selectedType} encyclopediaEntryId={encyclopediaEntryId} onSelectType={setSelectedTypeId} onOpenEncyclopediaEntry={openEncyclopediaEntry} onCloseEncyclopediaEntry={closeEncyclopediaEntry} onLoadInFreeMode={() => { setScores({ ...selectedType.profile }); changeMode('freemode'); }} />
+          ) : mode === 'geography' ? (
+            <Suspense fallback={<p className="geography-loading" role="status">Loading the Geographic Atlas…</p>}><GeographyAtlas bibliography={BIBLIOGRAPHY_RECORDS} entryTitles={ENCYCLOPEDIA_TITLES} /></Suspense>
           ) : (
             <BibliographyPage />
           )}
@@ -465,9 +480,17 @@ function BibliographyPage() {
   }, [filters, sort]);
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !window.location.hash.startsWith('#bibliography/')) return;
-    const recordId = window.location.hash.slice('#bibliography/'.length);
-    window.requestAnimationFrame(() => document.getElementById(`source-${recordId}`)?.scrollIntoView({ block: 'start' }));
+    let frame;
+    function scrollToSource() {
+      if (!window.location.hash.startsWith('#bibliography/')) return;
+      const recordId = window.location.hash.slice('#bibliography/'.length);
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => document.getElementById(`source-${recordId}`)?.scrollIntoView({ block: 'start' }));
+    }
+    scrollToSource();
+    window.addEventListener('hashchange', scrollToSource);
+    window.addEventListener('popstate', scrollToSource);
+    return () => { window.cancelAnimationFrame(frame); window.removeEventListener('hashchange', scrollToSource); window.removeEventListener('popstate', scrollToSource); };
   }, []);
 
   function updateFilter(key, value) {
@@ -542,7 +565,7 @@ function BibliographyRecord({ record }) {
       <div className="bibliography-badges"><span>{record.accessStatus}</span><span>{record.publicationStatus}</span><span>{record.rightsStatus}</span>{record.quoteLocator && <span>locator: {record.quoteLocator}</span>}</div>
       <p className="bibliography-rights"><strong>Rights note:</strong> {record.license} {publicationNote}</p>
       <div className="bibliography-card-actions"><a href={record.canonicalUrl} target="_blank" rel="noreferrer">Open canonical source ↗</a><span>accessed {record.accessDate}</span></div>
-      <details className="bibliography-usage"><summary>Where this record is used</summary><div className="bibliography-usage-grid">{relationships.length ? relationships.map(([label, values]) => <div key={label}><span>{label}</span><p>{values.join(' · ')}</p></div>) : <p>No downstream usage mapping is recorded.</p>}</div></details>
+      <details className="bibliography-usage"><summary>Where this record is used</summary><div className="bibliography-usage-grid">{relationships.length ? relationships.map(([label, values]) => <div key={label}><span>{label}</span><p>{values.map((value, index) => <span className="bibliography-usage-value" key={value}>{index > 0 ? ' · ' : ''}{value.startsWith('geography:') ? <a href={`#geography?case=${encodeURIComponent(value.slice('geography:'.length))}`}>{value}</a> : value}</span>)}</p></div>) : <p>No downstream usage mapping is recorded.</p>}</div></details>
     </article>
   );
 }
@@ -710,6 +733,7 @@ function EncyclopediaPage({ entries, totalEntries, query, selectedEntryId, onQue
 
 function EncyclopediaEntry({ entry, onClose }) {
   const dimensions = DIMENSIONS.map((dimension) => ({ ...dimension, ...entry.dimensionInterpretations[dimension.id] }));
+  const geographicLabels = GEOGRAPHY_LABELS.filter((label) => label.relatedEntries.some(({ id }) => id === entry.id));
   return (
     <article className="encyclopedia-detail">
       <div className="encyclopedia-detail-actions"><a className="text-button" href="#" onClick={(event) => { event.preventDefault(); onClose(); }}>← All encyclopedia entries</a><span className="encyclopedia-permalink">Link: <code>#encyclopedia/{entry.id}</code></span></div>
@@ -717,6 +741,7 @@ function EncyclopediaEntry({ entry, onClose }) {
       <div className="encyclopedia-boundary"><strong>Scope:</strong> {entry.scopeNote}<div><span>{entry.timeScope}</span><span>{entry.geographicScope}</span></div></div>
       <p className="encyclopedia-summary">{entry.summary}</p>
       <EncyclopediaCitations citations={entry.summaryCitations} />
+      {geographicLabels.length > 0 && <aside className="encyclopedia-geography"><strong>Explore related geographic cases</strong><p>These are contextual comparisons, not identical six-axis profiles.</p><div>{geographicLabels.map((label) => <a key={label.id} href={`#geography?label=${label.id}`}>{label.name} →</a>)}</div></aside>}
 
       <section className="encyclopedia-dimensions"><div className="encyclopedia-section-heading"><p className="eyebrow">SIX-AXIS READING</p><h3>Where this entry sits—and why.</h3></div><div className="encyclopedia-dimension-grid">{dimensions.map((dimension) => <article className="encyclopedia-dimension-card" key={dimension.id}><div className="encyclopedia-dimension-top"><span>{dimension.index} · {dimension.label}</span><strong>{formatScore(dimension.score)}</strong></div><div className="encyclopedia-dimension-scale"><i><b style={{ width: `${(dimension.score + 100) / 2}%` }} /></i><small>{dimension.low} <span>↔</span> {dimension.high}</small></div><h4>{dimension.label}</h4><p>{dimension.explanation}</p><EncyclopediaCitations citations={dimension.citations} compact /></article>)}</div></section>
 

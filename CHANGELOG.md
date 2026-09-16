@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Political Geography Atlas
+
+- Added a fifth mode with geographic/temporal filters, chronological and card views, label context, stable case links and shareable filter URLs.
+- Registered 10 dated Middle Eastern starter cases across eight unscored research labels, six new sources, and three reused sources with bibliography backlinks and rights/reading limits.
+- Kept historical places, contemporary snapshots, stated ideology and institutional practice distinct; empty regions are explicit research gaps.
+- Added lazy atlas UI/CSS, build validation, seven interaction tests and four browser scenarios across desktop/mobile including accessibility. Existing encyclopedia texts, scores and questionnaire answers are unchanged.
+
 ### Political model orientation
 
 - Reoriented the economic, social-values, national-identity, and foreign-policy axes to the requested endpoint order.

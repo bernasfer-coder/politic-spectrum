@@ -21,6 +21,12 @@
 }
 
 * { box-sizing: border-box; }
+.geography-loading { padding: 40px; color: var(--soft); }
+.bibliography-usage-grid .bibliography-usage-value { display: inline; color: inherit; font: inherit; text-transform: none; letter-spacing: normal; }
+.encyclopedia-geography { margin: 22px 0; padding: 16px; border: 1px solid var(--line); font-size: 12px; line-height: 1.7; }
+.encyclopedia-geography p { color: var(--soft); margin: 5px 0; }
+.encyclopedia-geography div { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.encyclopedia-geography a { color: var(--cyan); text-underline-offset: 3px; }
 body { margin: 0; min-width: 320px; background: var(--bg); }
 button, input { font: inherit; }
 button { color: inherit; }

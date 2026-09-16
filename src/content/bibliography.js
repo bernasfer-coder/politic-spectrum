@@ -1,6 +1,9 @@
+import { GEOGRAPHY_SOURCE_METADATA } from './geography-sources.js';
+
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  ...GEOGRAPHY_SOURCE_METADATA,
   buberPathsEnglish: {
     accessDate: '2026-09-16',
     creators: ['Martin Buber'],

@@ -23,7 +23,9 @@ npm run build
 npm run preview -- --host 0.0.0.0
 ```
 
-The app has four modes: Questionnaire contains five questions per axis; FreeMode exposes six sliders and updates the closest documented reference patterns live; Spectrum Library lets users select a reference profile and read the reasoning behind its position on every axis; Bibliography exposes the complete source registry. The selected library profile can also be loaded directly into FreeMode.
+The app has five modes: Questionnaire contains five questions per axis; FreeMode exposes six sliders and updates the closest documented reference patterns live; Spectrum Library lets users select a reference profile and read the reasoning behind its position on every axis; Bibliography exposes the complete source registry; Geographic Atlas explores dated connections between political traditions and places. The selected library profile can also be loaded directly into FreeMode.
+
+The Geographic Atlas (`#geography`) starts with 10 sourced cases across eight Middle Eastern traditions, with North African and European connections. Browse continents, regions, country locators, historical places, periods and relationship types in card or timeline view. URLs preserve filters and individual cases. Modern country tags do not classify populations or resolve historical territorial disputes; dated contemporary snapshots are not live claims about governments. The atlas UI loads on demand, filtering is local, and all sources link to the shared bibliography. See [`GEOGRAPHIC_ATLAS.md`](GEOGRAPHIC_ATLAS.md) for the evidence model, scope boundaries and next phases.
 
 The Spectrum Library also includes a normalized starter catalogue of historical and contemporary political labels. It preserves aliases, label types, families, regions, periods, statuses, differences between nearby concepts, approximate axis coverage, and source links. The catalogue can be searched and filtered without treating broad labels such as populism or monarchism as fixed six-axis ideologies; labels with insufficient religion evidence remain visibly incomplete rather than receiving a fabricated score.
 

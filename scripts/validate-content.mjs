@@ -25,6 +25,8 @@ import {
   VALIDATION_MODEL_DEFINITIONS,
   VALIDATION_STATUS,
 } from '../src/content/validation.js';
+import { ENCYCLOPEDIA_ENTRIES } from '../src/content/encyclopedia.js';
+import { validateGeography } from '../src/content/validate-geography.js';
 
 const errors = [];
 const warnings = [];
@@ -39,6 +41,7 @@ const researchWorkSet = new Set(RESEARCH_WORKS.map(({ id }) => id));
 const researchPersonSet = new Set(RESEARCH_PEOPLE.map(({ id }) => id));
 const questionSet = new Set(QUESTIONS.map(({ id }) => id));
 const candidateFacetSet = new Set(CANDIDATE_FACETS.map(({ id }) => id));
+errors.push(...validateGeography({ sourceIds: researchSourceSet, entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: researchWorkSet, bibliography: BIBLIOGRAPHY_RECORDS }));
 
 function assert(condition, message) {
   if (!condition) errors.push(message);
