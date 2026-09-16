@@ -4147,6 +4147,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Cabral and Guinea-Bissau material below is a bounded case, not a model for every Portuguese-speaking country. A leader’s argument, participants’ remembered experiences, scholarly interpretation, and this site’s illustrative scores must remain distinguishable. Portuguese texts are paraphrased in English without claiming a verified translation.',
             citations: citations([], ['cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The Egyptian Suez case distinguishes an act of nationalization, diplomatic reporting, a leader’s public argument and later scholarship. It addresses economic sovereignty without equating national independence with internal democracy or making Nasserism representative of all Middle Eastern liberation politics.',
+            citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020']),
+          },
         ],
       },
       {
@@ -4193,6 +4198,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Gustavo Hessmann Dalaqua reads Cabral’s democratic thought as joining representation, popular participation and learning through criticism. His philosophical reconstruction connects freedom to the development of people’s capacities and resistance to imposed inferiority. This is an interpretation of political thought, not an independent finding that the PAIGC consistently realized those principles.',
             citations: citations([], ['dalaquaDemocraticFreedom2020']),
           },
+          {
+            type: 'paragraph',
+            text: 'In the English Suez decree, articles I–II transfer the company’s assets and obligations to the Egyptian state, provide for shareholder compensation, and place management in a legally distinct body attached to the commerce ministry. Presidential powers over its composition and budget coexist with separate accounts and audit. This is national public administration, not a text establishing worker ownership.',
+            citations: citations([], ['suezNationalizationDecree1956']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The U.S. embassy’s 26 July 1956 telegram reports Nasser connecting canal income with the High Dam. This records a reported development-finance justification, not independently verified revenue, a completed funding arrangement or proof of the project’s eventual benefits.',
+            citations: citations([], ['frusNasserAnnouncement1956']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In the separate 15 September speech excerpt, Nasser defended sovereignty and asserted a commitment to navigation while threatening armed resistance to attack. His argument therefore does not make anti-imperialism synonymous with pacifism. Promises, legal claims and assertions of unanimous support remain rhetoric requiring independent examination.',
+            citations: citations([], ['nasserCanalUsers1956']),
+          },
         ],
       },
       {
@@ -4228,6 +4248,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1945–1970s: formal decolonization, national liberation, and postcolonial state-building',
             text: 'After the Second World War, many colonies became independent through negotiations, mass movements, wars, constitutional settlements, or combinations of these. New governments confronted inherited borders, scarce administrative capacity, economic dependency, Cold War pressure, ethnic and regional divisions, and the need to transform colonial institutions. Independence could widen citizenship while also concentrating power in a ruling party, military, or new elite.',
             citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
+          },
+          {
+            period: '26 July and 15 September 1956: nationalization and subsequent public argument',
+            text: 'The July decree and embassy report concern nationalization; the September speech opposes the proposed Canal Users’ Association. These are distinct documents, not interchangeable versions of one speech.',
+            citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956']),
           },
           {
             period: 'November 1965 / September 1969: directive and party edition',
@@ -4307,6 +4332,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'It can be democratic, military-led, socialist, mixed-economy, or authoritarian; development and sovereignty are not evidence of one institutional regime.',
                 citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'kantPerpetualPeace'], ['sepColonialism', 'foreignPolicy', 'panAfricanism']),
               },
+              {
+                label: 'Nationalization versus popular control: the Suez case',
+                distinction: 'State ownership and administrative autonomy do not themselves establish workers’ control or political pluralism.',
+                relation: 'Salem’s interpretation keeps anti-colonial aspirations in tension with an elite-led project centered on military, state and capitalist power; it is not a timeless classification of Egypt.',
+                citations: citations([], ['suezNationalizationDecree1956', 'salemNasserHegemony2020']),
+              },
             ],
           },
         ],
@@ -4359,6 +4390,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'Former combatant whose testimony informs Patrícia Godinho Gomes’s research.',
                 caveat: 'Participant perspective mediated through an oral-history study, not a proxy for all women or every policy position.',
                 citations: citations([], ['gomesWomenLiberation']),
+              },
+              {
+                name: 'Gamal Abdel Nasser',
+                role: 'Egyptian president advancing a sovereignty claim in the September 1956 speech excerpt.',
+                caveat: 'A dated public argument, not a personal six-axis score or proof that every Egyptian endorsed his position.',
+                citations: citations([], ['nasserCanalUsers1956']),
               },
             ],
           },
@@ -4413,6 +4450,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'A document-level comparison for the Authority dimension, not a whole-polity rating.',
                 caveat: 'Party principles, members’ experiences and later government institutions need separate evidence. The six reference coordinates remain unchanged.',
                 citations: citations([], ['cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020']),
+              },
+              {
+                name: 'Suez Canal Company nationalization',
+                period: 'Egypt, July–September 1956 documents',
+                match: 'A bounded comparison of external sovereignty, public management and internal authority.',
+                caveat: 'The documents do not establish compensation payments, enforcement outcomes or a current-country match. Sectoral nationalization is not proof of an entirely collectivist economy.',
+                citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'salemNasserHegemony2020']),
               },
               {
                 name: 'Contemporary Indigenous and decolonial movements',
@@ -4478,12 +4522,27 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The organizational case raises questions rather than settling them: could members safely dissent, did consultation change decisions, and what protected people outside the party? A directive and a philosophical interpretation cannot answer those empirical questions by themselves. Neither supports a current-country classification or new numerical coordinates. Portuguese passages are independently paraphrased in English, not presented as quotations or authoritative translations.',
             citations: citations([], ['cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020']),
           },
+          {
+            type: 'paragraph',
+            text: 'Articles IV–V of the Suez decree retain employees while requiring permission to leave their work and prescribing imprisonment and loss of employment-related entitlements for breach. This exposes a distinction between national control and individual labor freedom. It is evidence of a coercive legal provision, not proof of how often it was enforced.',
+            citations: citations([], ['suezNationalizationDecree1956']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Sara Salem’s chapter summary reads Nasserism through the tension between mobilization against imperial domination and an elite-led postcolonial order. Her account offers a critical interpretation of consent and power, not a binary verdict that anti-colonial achievements either erase or are erased by domestic domination. The full chapter and alternative interpretations remain follow-up reading.',
+            citations: citations([], ['salemNasserHegemony2020']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'These English texts have different evidentiary limits. The decree’s original Arabic and gazette publication were not collated; the telegram is a U.S. diplomatic report; the speech is an edited excerpt with an unidentified translator; Salem was consulted at publisher-summary level. No promise about navigation, compensation, popular support or development is treated as an observed result. No present-day Egyptian position or new coordinate is inferred.',
+            citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism', 'nabucoAbolitionism', 'lockeSecondTreatise', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'spinozaPolitical', 'lockeLetterToleration', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020'],
+      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020', 'suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020'],
       editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
     },
     researchGaps: [
@@ -4496,6 +4555,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Verify the edition and transcription chain of Cabral’s 1970 address; read the complete Gomes and deGrassi articles and relevant agronomic records. Compare women’s retrospective testimony with contemporaneous UDEMU/PAIGC records, dissenting accounts, and post-independence outcomes before generalizing this Guinea-Bissau case.',
       'Extend the selected 1969 edition reading beyond section VIII; collate it with the earlier directive and later collected editions. Read the rest of Dalaqua’s article and contrasting interpretations before making claims about intellectual influence or a settled democratic theory.',
       'Compare local committee records, candidate selection, disciplinary practice, women’s participation, minority protections and independent organizing with participants’ accounts. Investigate wartime and post-independence institutions separately; neither a leader’s programme nor its philosophical interpretation establishes implementation.',
+      'Collate the 1956 Suez decree with its Arabic gazette edition and establish its publication/commencement date; compare the July announcement and September Canal Users’ Association speech with recordings and identified translations. Verify compensation, revenues, navigation and labor enforcement through independent records rather than official promises.',
+      'Read Salem’s full chapter and contrasting Egyptian and Arabic-language scholarship on Nasserism, workers, civil society and political exclusion. Compare nationalization with later economic policies without treating a single sector or leader as the whole anti-colonial family.',
     ],
   },
   communist: {

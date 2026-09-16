@@ -64,6 +64,54 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const suezLiberationEntry = ENCYCLOPEDIA_ENTRIES['anti-colonial-liberation'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['suezNationalizationDecree1956', 'primary', '1956-07-26'],
+  ['frusNasserAnnouncement1956', 'primary', '1956-07-26'],
+  ['nasserCanalUsers1956', 'primary', '1956-09-15'],
+  ['salemNasserHegemony2020', 'secondary', '2020-04-10'],
+]) {
+  assert.ok(suezLiberationEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anti-colonial reference trail`);
+  assert.ok(JSON.stringify(suezLiberationEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anti-colonial-liberation']);
+}
+const suezDecree = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-suezNationalizationDecree1956');
+const suezTelegram = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-frusNasserAnnouncement1956');
+const suezSpeech = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-nasserCanalUsers1956');
+const salemSummary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-salemNasserHegemony2020');
+assert.match(suezDecree.description, /signature date, not a verified web publication or gazette date/);
+assert.match(suezDecree.note, /articles I–VI.*Translator.*unidentified.*no Arabic original/);
+assert.match(suezTelegram.note, /not a verbatim speech transcript or independent audit/);
+assert.match(suezTelegram.description, /receipt on 27 July.*not publication of the edited volume/);
+assert.match(suezSpeech.note, /pp\. 345–351.*translator is unidentified/);
+assert.match(suezSpeech.description, /15 September speech is separate from the 26 July/);
+assert.match(JSON.stringify(suezSpeech), /no commercial-use permission/);
+assert.equal(salemSummary.identifiers.doi, '10.1017/9781108868969.003');
+assert.match(salemSummary.note, /summary and metadata only.*were not reviewed/);
+const suezDescription = suezLiberationEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text ?? '').join(' ');
+const suezCriticisms = suezLiberationEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(suezDescription, /not a text establishing worker ownership/);
+assert.match(suezDescription, /does not make anti-imperialism synonymous with pacifism/);
+assert.match(suezCriticisms, /coercive legal provision, not proof of how often it was enforced/);
+assert.match(suezCriticisms, /No present-day Egyptian position or new coordinate is inferred/);
+const suezTimeline = suezLiberationEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(suezTimeline.findIndex(({ period }) => period.startsWith('26 July and 15 September 1956')) < suezTimeline.findIndex(({ period }) => period.startsWith('November 1965')));
+const suezExampleItems = suezLiberationEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries);
+assert.match(suezExampleItems.find(({ name }) => name === 'Gamal Abdel Nasser').caveat, /not a personal six-axis score/);
+assert.match(suezExampleItems.find(({ name }) => name === 'Suez Canal Company nationalization').caveat, /not proof of an entirely collectivist economy/);
+assert.ok(suezLiberationEntry.researchGaps.some((gap) => /Arabic gazette.*independent records/.test(gap)));
+assert.ok(suezLiberationEntry.researchGaps.some((gap) => /Salem’s full chapter.*Arabic-language scholarship/.test(gap)));
+
 const religiousSocialistEntry = ENCYCLOPEDIA_ENTRIES['religious-socialist'];
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
   ['buberPathsEnglish', 'primary', '1949', 'medium'],
