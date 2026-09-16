@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {
   ARCHETYPES,
   AUTHOR_REFERENCES,
+  BIBLIOGRAPHY_RECORDS,
   DIMENSIONS,
   ENCYCLOPEDIA_ENTRIES,
   RESEARCH_SOURCES,
@@ -62,5 +63,25 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['anarcho-communist'].dimensionInterpretations.
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.economic.score, -30, 'the existing market-oriented liberal constitutional coordinate must remain negative');
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
+
+const naziEntry = ENCYCLOPEDIA_ENTRIES['national-socialist'];
+const naziProfile = ARCHETYPES.find(({ id }) => id === 'national-socialist').profile;
+assert.equal(naziEntry.dimensionInterpretations.economic.score, naziProfile.economic, 'the Nazi article must preserve the canonical economic sign and magnitude');
+assert.equal(naziEntry.dimensionInterpretations.economic.score, 5, 'economic orientation repair is not a new Nazi profile calibration');
+for (const [sourceId, evidenceRole] of [
+  ['reichConcordat1933German', 'primary'],
+  ['barmenDeclaration1934German', 'primary'],
+  ['piusXiMitBrennender1937', 'primary'],
+  ['ushmmGermanChurches', 'secondary'],
+]) {
+  assert.ok(naziEntry.references.researchSourceIds.includes(sourceId), `${sourceId} must remain in the Nazi entry reference trail`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary documents from historical synthesis`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} is not cleared for republication`);
+  assert.equal(record.directQuote, null, `${sourceId} must not silently become a quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-socialist'), `${sourceId} needs an encyclopedia backlink`);
+}
 
 console.log(`Encyclopedia tests passed: ${Object.keys(ENCYCLOPEDIA_ENTRIES).length} entry with claim-level citation validation across ${DIMENSIONS.length} dimensions.`);

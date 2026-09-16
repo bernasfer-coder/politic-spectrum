@@ -9133,7 +9133,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ),
     dimensionInterpretations: {
       economic: {
-        score: -5,
+        score: 5,
         label: 'Private ownership under racial-state direction',
         explanation: 'The regime did not abolish private property in the manner of communist state ownership, but it destroyed independent labor organizations, directed production, controlled labor, expropriated Jewish property, rearmed the economy, used forced labor, and subordinated economic decisions to war and racial hierarchy. The near-center score records a mixed and coercively directed economy rather than treating the party name as evidence of socialism.',
         citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'oxfordNationalSocialism', 'ushmmThirdReich']),
@@ -9215,6 +9215,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'This card uses extreme scores because the historical evidence is unusually clear about dictatorship, racial exclusion, expansionist war, and genocide. It is not a prediction model for contemporary politics and should not be assigned to a living person, party, or state without a separate, documented historical analysis.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'unGenocideConvention']),
           },
+          {
+            type: 'evidence-note',
+            text: 'For this project, religion in public life concerns institutional authority, not a population’s private faith. Barmen’s fifth thesis grounds limits on both church and state in Christian theology. This illustrates why opposition to state domination cannot automatically be scored as secularism. The documents do not validate an exact coordinate.',
+            citations: citations([], ['barmenDeclaration1934German', 'sepReligionPolitics']),
+          },
         ],
       },
       {
@@ -9242,9 +9247,24 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['ushmmThirdReich', 'oxfordNaziGermany', 'bpbNationalSocialism']),
           },
           {
+            period: '20 July 1933 — Concordat signed',
+            text: 'The Reichskonkordat promised Catholic worship and institutional protections (articles 1, 21–23, 31). Article 32 committed the Holy See to exclude clergy and members of religious orders from party membership and activity; its final protocol preserved doctrinal and moral teaching. These are negotiated provisions, not proof of compliance or of Catholic endorsement of every Nazi policy. Article 34 distinguishes signature from entry into force through exchange of ratifications.',
+            citations: citations([], ['reichConcordat1933German']),
+          },
+          {
+            period: '31 May 1934 — Barmen Declaration',
+            text: 'The Confessing Synod’s declaration rejected reshaping the church around prevailing political ideologies (thesis III). Thesis V assigned the state a limited responsibility for justice and peace while rejecting its claim to organize all human life and the church’s transformation into a state organ. These are theological boundaries, not an empirical record of what every adherent did.',
+            citations: citations([], ['barmenDeclaration1934German']),
+          },
+          {
             period: 'Racial state and escalating persecution — 1935–1938',
             text: 'The Nuremberg Laws formalized racial citizenship and marriage restrictions in 1935. Anti-Jewish measures expanded into professional exclusion, expropriation, segregation, forced emigration, and public violence. The November 1938 pogrom known as Kristallnacht marked a further escalation from legal discrimination and dispossession toward open, state-organized violence, mass arrests, destruction of synagogues and businesses, and intensified imprisonment.',
             citations: citations(['hitlerMeinKampf'], ['ushmmNurembergLaws', 'ushmmNaziPartyPlatform', 'ushmmNaziRacism', 'oxfordNaziGermany']),
+          },
+          {
+            period: '14 March 1937 — Mit brennender Sorge',
+            text: 'Pius XI complained of evasion and violation of the Concordat (paragraphs 6–7). He condemned elevating race, nation, state, or rulers into supreme religious standards and confining God to one race (12–15). This is a papal doctrinal protest; its account of Vatican motives and conduct must be read as institutional self-presentation, not an independent historical verdict.',
+            citations: citations([], ['piusXiMitBrennender1937']),
           },
           {
             period: 'War of conquest and racial empire — 1939–1941',
@@ -9313,6 +9333,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'oxfordNationalSocialism', 'ushmmThirdReich']),
               },
               {
+                label: 'German Christians and Confessing Church: contrasting responses',
+                distinction: 'USHMM distinguishes the German Christians’ pursuit of a Nazi-aligned church from Confessing Church opposition to that project.',
+                relation: 'These were conflicting currents within German Protestantism, not equivalent Nazi variants; other leaders sought to avoid both schism and conflict with the regime.',
+                citations: citations([], ['ushmmGermanChurches']),
+              },
+              {
                 label: 'Postwar neo-Nazism',
                 distinction: 'Contemporary extremist movements borrow Nazi symbols, antisemitic or racial ideology, Holocaust denial, and authoritarian nationalism in different combinations.',
                 relation: 'They are historically related but not identical to the Nazi state; classification requires evidence of organization, doctrine, violence, and actual political capacity, and should not casually label opponents.',
@@ -9340,6 +9366,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'There is no legitimate contemporary country match for this card. Neo-Nazi organizations and far-right movements can be studied as historical descendants or warning cases, but similar slogans, uniforms, online rhetoric, nationalism, authoritarianism, or immigration policy do not establish identity with Nazi Germany. A responsible comparison must document racial doctrine, institutional power, political violence, treatment of opposition, relation to law, and explicit or operationalized genocidal and expansionist aims.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmThirdReich', 'ushmmNaziRacism', 'sepFascism', 'oxfordNaziGermany']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A contrasting document, not a Nazi exemplar: paragraph 19 of Mit brennender Sorge defends the Old Testament while retaining language associating Christ’s people with his crucifixion. Its defense of scripture must not be mistaken for an unqualified rejection of inherited anti-Jewish theology.',
+            citations: citations([], ['piusXiMitBrennender1937']),
           },
         ],
       },
@@ -9393,6 +9424,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'USHMM emphasizes that institutional caution and compromise coexisted with individual resistance and rescue. Defending Christians classified as Jewish by Nazi law did not amount to defending all Jews. Church self-protection, theological protest, collaboration, and protection of persecuted people therefore require separate evidence; neither universal church resistance nor universal individual complicity follows from religious affiliation.',
+            citations: citations([], ['ushmmGermanChurches']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, the entry is designed to resist contemporary misuse. Assigning this label to a living person, party, or state requires exceptional evidence and a clearly bounded historical comparison. The site should prefer precise descriptions—antisemitic, racial supremacist, authoritarian, expansionist, genocidal, anti-democratic, or neo-Nazi—when those are the claims supported by the evidence, and should always show the source, period, institution, and uncertainty.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['sepFascism', 'oxfordNaziGermany', 'ushmmThirdReich', 'ushmmNaziRacism']),
           },
@@ -9401,8 +9437,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism', 'griffinNatureFascism'],
-      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights'],
-      editorialNote: 'This is a historical warning entry. It distinguishes National Socialism from generic fascism, ethnic nationalism, militarism, populism, conservatism, communism, and contemporary extremist labels. Its scores describe the Nazi movement and regime as a historically specific racial-totalitarian and genocidal project, not a current-country classification or ordinary policy option.',
+      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights', 'oxfordImperialism', 'reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'ushmmGermanChurches'],
+      editorialNote: 'This is a historical warning entry. It distinguishes National Socialism from generic fascism, ethnic nationalism, militarism, populism, conservatism, communism, and contemporary extremist labels. Its scores describe the Nazi movement and regime as a historically specific racial-totalitarian and genocidal project, not a current-country classification or ordinary policy option. The church research uses German primary texts and an English institutional synthesis; English paraphrases are original, not quotations or authoritative translations. Promises, doctrinal objections, and historical conduct remain distinct evidence types.',
     },
     researchGaps: [
       'Add German-language scholarship and primary documents on völkisch nationalism, Weimar political culture, Gleichschaltung, Nazi law, churches, administration, and postwar memory, with translations clearly marked.',
@@ -9412,6 +9448,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Expand comparative research on collaboration, resistance, rescue, bystanders, local administration, and the relationship between German central decisions and violence in occupied Europe.',
       'Document the postwar development of genocide law, Nuremberg principles, denazification, survivor testimony, Holocaust education, memory conflicts, and the politics of denial.',
       'Maintain a separate, evidence-based method for studying contemporary neo-Nazi and far-right movements so historical analogy does not become casual labeling or erase the specificity of Nazi Germany and the Holocaust.',
+      'Read the church-history studies by Victoria Barnett, Doris Bergen, Robert P. Ericksen, Michael Phayer, and Kevin P. Spicer listed by USHMM before attributing detailed conclusions to them; they are further-reading leads, not books reviewed in this pass.',
+      'Add parish, diocesan, regional, and Jewish survivor evidence to compare institutional self-defense, antisemitism, resistance, rescue, and persecution. The selected German documents and museum synthesis do not complete the earlier churches research gap.',
+      'Resolve the pre-existing religion-coordinate discrepancy: this article uses −35 and the reference card −30. Neither figure is empirically validated, and this pass leaves their magnitudes unchanged. The economic sign alone was aligned with the existing +5 card coordinate; this is orientation maintenance, not new calibration.',
     ],
   },
   'libertarian-socialist': {

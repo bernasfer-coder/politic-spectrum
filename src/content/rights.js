@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    reichConcordat1933German: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original summary and link only. No treaty passage, facsimile, or translated extract reproduced; the historical legal text does not establish reuse rights for every modern edition or asset.' },
+    barmenDeclaration1934German: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase and link only. No declaration wording, biblical epigraph, translation, modern editorial passage, or photograph reproduced.' },
+    piusXiMitBrennender1937: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Selected arguments are critically paraphrased with paragraph locators. No encyclical passage, scriptural quotation, translation, PDF, or image reproduced.' },
+    ushmmGermanChurches: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Attributed independent synthesis and link only. No article passage, embedded historical quotation, photograph, or cited book extract reproduced; museum access is not blanket reuse permission.' },
     ferryColonialSpeech1885: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Historical rhetoric is critically paraphrased, not endorsed. No speech passage, modern introduction, translated quotation, portrait, or facsimile reproduced; public access does not clear every edition and asset.' },
     clemenceauColonialReply1885: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase and official-page link only. No excerpt text, translation, editorial biography, or illustration republished; the underlying speech and modern presentation have distinct provenance.' },
     assemblyRacismReport2021: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Selected bibliographic and contextual information summarized independently. No report passage, hearing extract, embedded quotation, or PDF image reproduced.' },
