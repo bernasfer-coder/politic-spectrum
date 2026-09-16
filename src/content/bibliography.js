@@ -1,6 +1,32 @@
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  friedmanEducation1955: {
+    accessDate: '2026-09-16',
+    creators: ['Milton Friedman'],
+    institution: 'University of Texas at Austin (reprint host)',
+    sourceType: 'primary policy essay / selected reprint pages',
+    evidenceRole: 'primary',
+    discipline: 'market liberalism and education finance',
+    publicationDate: '1955',
+    publisher: 'Rutgers University Press, in Robert A. Solo (ed.), Economics and the Public Interest',
+    confidence: 'high',
+    languages: ['English'],
+    description: 'Original publication year; the digital reprint is undated and lacks original pagination. Arguments and predictions are not measured programme outcomes.',
+  },
+  cowenPublicGoods: {
+    accessDate: '2026-09-16',
+    creators: ['Tyler Cowen'],
+    institution: 'Econlib / Liberty Fund',
+    sourceType: 'signed economics encyclopedia essay',
+    evidenceRole: 'secondary',
+    discipline: 'public goods and comparative institutional analysis',
+    publicationDate: null,
+    publisher: 'Econlib, Concise Encyclopedia of Economics',
+    confidence: 'medium',
+    languages: ['English'],
+    description: 'No article date identified; dates on adjacent recommendations are not publication dates. Conceptual synthesis from a market-oriented institution, not a neutral verdict on every policy application.',
+  },
   whakaputangaTexts1835: {
     accessDate: '2026-09-16',
     creators: ['Signatory rangatira of He Whakaputanga', 'James Busby (English version)', 'Mānuka Hēnare (modern translation)'],

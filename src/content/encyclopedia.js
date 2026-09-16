@@ -735,6 +735,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'A limited state still requires law, courts, policing, and rules defining property and contract. This creates an internal tension: markets are defended as voluntary orders, but the legal framework that makes ownership and exchange possible is publicly enforced. Libertarian theories disagree over how much collective provision is compatible with that framework and whether some state functions can be supplied privately.',
             citations: citations(['nozickASU', 'lockeSecondTreatise'], ['sepLibertarianism', 'sepLiberalism']),
           },
+          {
+            type: 'paragraph',
+            text: 'A public good is not simply anything supplied by government. Tyler Cowen’s account distinguishes the difficulty of excluding nonpayers from consumption that leaves the benefit available to others. It examines both tax funding and arrangements such as bundling or repeated cooperation. This distinction matters here: identifying a collective benefit does not automatically select its provider, financing mechanism, or legal rules.',
+            citations: citations([], ['cowenPublicGoods']),
+          },
         ],
       },
       {
@@ -767,6 +772,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
           },
           {
+            period: '1955 — market choice with public education finance',
+            text: 'Friedman’s education essay accepted spillover benefits as grounds for public funding and minimum schooling requirements, while proposing vouchers usable at approved providers. He also allowed some public operation where competition was impractical. Our classification implication is that funding, provision, and regulation require separate analysis: a market mechanism is not necessarily a rejection of public expenditure.',
+            citations: citations([], ['friedmanEducation1955']),
+          },
+          {
             period: 'Contemporary debates',
             text: 'Current libertarian philosophy contains right- and left-libertarian positions, minarchism, anarcho-capitalism, market anarchism, and hybrid classical-liberal approaches. The major disputes concern original appropriation, redistribution, public goods, borders, environmental harm, social insurance, corporate power, and the legitimacy of the state itself.',
             citations: citations(['nozickASU', 'millOnLiberty'], ['sepLibertarianism']),
@@ -797,6 +807,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Treats a minimal state protecting against force, theft, fraud, and rights violations as legitimate, while rejecting extensive redistribution and regulation.',
                 relation: 'Closest fit to this card’s authority and economic coordinates.',
                 citations: citations(['nozickASU'], ['sepLibertarianism']),
+              },
+              {
+                label: 'Ordoliberalism: a neighboring market tradition',
+                distinction: 'The Walter Eucken Institut’s history and Goldschmidt–Wohlgemuth propositions emphasize general competition rules and constraints on private economic power, rather than unrestricted laissez-faire.',
+                relation: 'A state capable of enforcing the competitive order is part of this account. Market orientation therefore does not make ordoliberalism synonymous with minarchism or anarcho-capitalism, nor establish its position on the other axes.',
+                citations: citations([], ['euckenFreiburgHistory']),
               },
               {
                 label: 'Anarcho-capitalism',
@@ -857,6 +873,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['nozickASU'], ['sepLibertarianism']),
               },
               {
+                name: 'Milton Friedman',
+                role: 'market-oriented education-policy author',
+                caveat: 'The 1955 essay is an intellectual example, not evidence of voucher outcomes or an exact six-axis match.',
+                citations: citations([], ['friedmanEducation1955']),
+              },
+              {
                 name: 'Frédéric Bastiat',
                 role: 'French economist, journalist, and liberal political writer',
                 caveat: 'A nineteenth-century liberal precursor whose political economy and historical context should not be collapsed into contemporary libertarianism.',
@@ -901,6 +923,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
             labels: [
               { id: 'libertarianism', relation: 'broader philosophical family' },
               { id: 'classical-liberalism', relation: 'historical and theoretical neighbor with a broader range of state roles' },
+              { id: 'ordoliberalism', relation: 'market-oriented neighbor emphasizing enforceable competition rules and limits on private power, not a minimal-state synonym' },
               { id: 'anarcho-capitalism', relation: 'more radical rejection of the state' },
               { id: 'constitutionalism', relation: 'institutional framework for limited and rule-bound government' },
               { id: 'social-liberalism', relation: 'liberal neighbor that accepts a more active redistributive and regulatory state' },
@@ -929,6 +952,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The profile must not turn “freedom” into a one-axis synonym for low taxes or weak government. Private employers, landlords, monopolies, families, religious institutions, and criminal organizations can also constrain people. The analysis should record who holds power, which coercive mechanisms exist, and whether individuals have meaningful exit and voice.',
             citations: citations(['millOnLiberty', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
           },
+          {
+            type: 'paragraph',
+            text: 'Comparative institutional criticism must examine both sides. Cowen discusses bargaining costs and failures of voluntary coordination alongside bureaucratic incentives and politically motivated spending. Those mechanisms are questions to investigate, not proof that either public or private provision is always superior. Programme design, enforcement, access, and measured outcomes need evidence beyond a philosophical preference.',
+            citations: citations([], ['cowenPublicGoods']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Friedman’s footnote 2 also requires critical context: he rejected compulsory segregation yet defended privately segregated schools and opposed compulsory integration, while preferring integration if public schools forced that choice. This argument is not evidence of equal access. It exposes a conflict between his account of choice and remedies against exclusion.',
+            citations: citations([], ['friedmanEducation1955']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Contemporary ordoliberalism is itself contested. Freiburg’s 2023 report presents Tim Krieger’s proposal to renew its methods and reconnect competition policy with social participation and climate goals. It is an attributed reform programme, not a consensus verdict or an assessment of all German governments; a capable rule-enforcing state should not automatically be coded as authoritarian.',
+            citations: citations([], ['freiburgOrdoliberalDebates']),
+          },
         ],
       },
     ],
@@ -945,14 +983,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'kantPerpetualPeace',
         'morgenthauRealism',
       ],
-      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem'],
-      editorialNote: 'The entry distinguishes primary arguments from comparative philosophical interpretation. Its scores describe one market-libertarian archetype and do not define all classical liberals, libertarians, or market-oriented governments.',
+      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates'],
+      editorialNote: 'The entry distinguishes primary arguments from comparative philosophical interpretation. Its scores describe one market-libertarian archetype and do not define all classical liberals, libertarians, or market-oriented governments. The education essay is primary policy argument; Cowen and the German institutional sources provide attributed interpretation, not causal programme evaluation. German pages were reconsulted on 16 September 2026; English summaries are original paraphrases, not source translations. All six coordinates remain unchanged.',
     },
     researchGaps: [
       'Expand French-language and specialist scholarship on Constant, Bastiat, Tocqueville, Guizot, and the liberal tradition, with care around the difference between nineteenth-century liberalism and contemporary libertarianism.',
       'Add German-language scholarship on the ordoliberal and Austrian traditions; neither should be treated as interchangeable with minarchism or anarcho-capitalism.',
       'Add specialist research on public goods, externalities, corporate power, environmental limits, and the empirical performance of low-tax or low-regulation regimes.',
       'Add country-specific data before showing contemporary states as examples; current market openness and civil-liberties indicators are not sufficient for an exact six-axis match.',
+      'Review empirical education-finance research and civil-rights history, including admission rules, affordability, disability access, and segregation; the 1955 proposal and its predictions are not outcome evidence.',
+      'Compare original Eucken and Böhm editions with independent critical histories before generalizing from the institute’s retrospective account; Austrian, Chicago, and Freiburg approaches still need separate treatment.',
+      'Extend the selected Friedman reading to the remaining vocational-finance discussion and later revisions, and compare Nozick’s original entitlement and rectification arguments without assuming agreement among market-oriented thinkers.',
     ],
   },
   'progressive-liberal': {

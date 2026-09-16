@@ -51,7 +51,7 @@ for (const [id, entry] of Object.entries(ENCYCLOPEDIA_ENTRIES)) {
   walkEvidence(entry, id);
 }
 
-for (const profileId of ['communist', 'anarcho-capitalist', 'anarcho-communist', 'liberal-constitutionalist', 'militarist-imperialist']) {
+for (const profileId of ['communist', 'anarcho-capitalist', 'anarcho-communist', 'liberal-constitutionalist', 'militarist-imperialist', 'libertarian-market']) {
   const profile = ARCHETYPES.find(({ id }) => id === profileId).profile;
   for (const { id } of DIMENSIONS) {
     assert.equal(ENCYCLOPEDIA_ENTRIES[profileId].dimensionInterpretations[id].score, profile[id], `${profileId}.${id} must use the same orientation as its reference card`);
@@ -125,5 +125,23 @@ const teRakiFinding = indigenousEntry.sections.find(({ id }) => id === 'history'
 assert.ok(teRakiFinding, 'the Tribunal finding needs a dated historical record');
 assert.match(teRakiFinding.text, /Bay of Islands and Hokianga in February 1840/, 'the historical finding must retain its geographic and temporal boundary');
 assert.match(teRakiFinding.text, /left aside how and when the Crown later acquired sovereignty/, 'the 2014 release must not become an unrestricted current-sovereignty determination');
+
+const marketLibertarianEntry = ENCYCLOPEDIA_ENTRIES['libertarian-market'];
+for (const [sourceId, evidenceRole] of [
+  ['friedmanEducation1955', 'primary'],
+  ['cowenPublicGoods', 'secondary'],
+  ['euckenFreiburgHistory', 'secondary'],
+  ['freiburgOrdoliberalDebates', 'secondary'],
+]) {
+  assert.ok(marketLibertarianEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a market-libertarian reference trail`);
+  assert.ok(JSON.stringify(marketLibertarianEntry.sections).includes(sourceId), `${sourceId} needs a claim-level citation`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must reuse one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish policy argument from later synthesis`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain the summary-and-link boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not introduce a quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:libertarian-market'), `${sourceId} needs an encyclopedia backlink`);
+}
 
 console.log(`Encyclopedia tests passed: ${Object.keys(ENCYCLOPEDIA_ENTRIES).length} entry with claim-level citation validation across ${DIMENSIONS.length} dimensions.`);
