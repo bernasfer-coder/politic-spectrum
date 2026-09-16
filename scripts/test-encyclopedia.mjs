@@ -64,6 +64,48 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const authoritarianGdrEntry = ENCYCLOPEDIA_ENTRIES['authoritarian-collectivist'];
+for (const [sourceId, role, date, language] of [
+  ['ghdiGdrConstitution1968', 'primary', '1968-04-06', 'German'],
+  ['klessmannGdrState1950s2002', 'secondary', '2002-12-24', 'German'],
+  ['rossGdrGrassroots1998', 'secondary', '1998', 'English'],
+]) {
+  assert.ok(authoritarianGdrEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(authoritarianGdrEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:authoritarian-collectivist']);
+}
+const gdrConstitutionRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ghdiGdrConstitution1968');
+assert.match(gdrConstitutionRecord.note, /two-page English translation.*full German constitution/);
+assert.match(gdrConstitutionRecord.description, /official constitutional self-description/);
+const klessmannRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-klessmannGdrState1950s2002');
+assert.match(klessmannRecord.description, /24 December 2002/);
+assert.match(klessmannRecord.note, /Complete available German institutional article/);
+const rossRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-rossGdrGrassroots1998');
+assert.match(rossRecord.sourceType, /doctoral thesis/);
+assert.match(rossRecord.description, /not the full 10 MB thesis/);
+const authoritarianGdrDescription = authoritarianGdrEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(authoritarianGdrDescription.some(({ text }) => text?.includes('constitutional self-description') && text.includes('party-state')));
+const authoritarianGdrHistory = authoritarianGdrEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(authoritarianGdrHistory.some(({ period, text }) => period.startsWith('1949–1968: East German') && text.includes('local adaptation')));
+const authoritarianGdrVariant = authoritarianGdrEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('East German socialist state'));
+assert.ok(authoritarianGdrVariant);
+const gdrExample = authoritarianGdrEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'German Democratic Republic: socialist state-building');
+assert.match(gdrExample.caveat, /not an exact six-axis country score/);
+const authoritarianGdrCriticisms = authoritarianGdrEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(authoritarianGdrCriticisms.some(({ text }) => text?.includes('formal party-state model as socially uniform') && text.includes('Local adaptation does not cancel coercion')));
+assert.ok(authoritarianGdrEntry.researchGaps.some((gap) => gap.startsWith('Read the full German text of the 1968 Constitution')));
+assert.ok(authoritarianGdrEntry.researchGaps.some((gap) => gap.startsWith('Read Ross’s complete thesis')));
+assert.deepEqual(Object.fromEntries(Object.entries(authoritarianGdrEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: 88, social: 18, authority: 86, identity: 38, foreign: -24, religion: 60 });
+
 const liberalConstitutionalismEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, role, date] of [
   ['southAfricaConstitution1996Rights', 'primary', '1996'],

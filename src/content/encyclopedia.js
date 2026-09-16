@@ -122,6 +122,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'East Germany’s June 1953 dispute makes the ownership/control distinction concrete. In its 16 June declaration, the SED Politburo upheld productivity growth but rejected imposing a ten-percent work-norm increase administratively, instead advocating persuasion and voluntary agreement. It proposed reviewing the government decision with the unions. These are the leadership’s stated positions, not independent proof that workers could freely refuse targets or choose alternative representatives.',
             citations: citations([], ['sedNormsDeclaration1953']),
           },
+          {
+            type: 'paragraph',
+            text: 'The East German case also separates constitutional self-description from social transformation. The 1968 Constitution presented the GDR as a socialist state whose working population realized socialism under the leadership of the working class and its Marxist-Leninist party, while its peace and international-law language framed the state’s external identity. Kleßmann’s German history of the 1950s and Ross’s grassroots study show why those declarations require institutional and local evidence: party-state hierarchy, economic planning, coercion, social provision, adaptation, and unplanned action did not operate at one uniform level.',
+            citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
+          },
         ],
       },
       {
@@ -147,6 +152,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'After 1945: party-states and national variants',
             text: 'The post-war socialist world contained different combinations of central planning, public ownership, nationalism, security institutions, social provision, and political repression. The common party-state family should therefore be compared across cases rather than represented as a single unchanging regime type.',
             citations: citations(['arendtTotalitarianism'], ['sepSocialism', 'ushmmCommunism']),
+          },
+          {
+            period: '1949–1968: East German state-building and constitutional self-description',
+            text: 'The GDR’s 1968 Constitution described a socialist state whose working population realized socialism under the leadership of the working class and its Marxist-Leninist party, while also committing the state to peace, international law, and eventual German unity on socialist and democratic terms. Kleßmann’s account of the 1950s and Ross’s East Berlin–Brandenburg study complicate the official picture: central direction and coercive intervention coexisted with local adaptation, social provision, negotiation, flight, and uneven implementation. These are country-specific historical layers, not a score for every socialist system.',
+            citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
           },
           {
             period: 'Mao-era China and revolutionary state-building — 1949–1976',
@@ -246,6 +256,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'Responsiveness under pressure is not the same as democratic accountability. The comparison concerns institutions, not whether every concession was merely fictitious or every worker supported the same alternative.',
                 citations: citations([], ['lemkeJuneUprising2003']),
               },
+              {
+                label: 'East German socialist state: official leadership claim versus grassroots implementation',
+                distinction: 'The 1968 constitutional text formally places socialist realization under the leadership of the Marxist-Leninist party, while East German social history examines how planning, coercion, social policy, local officials, workers, farmers, and families experienced and reshaped that project.',
+                relation: 'This is a country-specific variant within the profile, not proof that constitutional language created effective worker control or that every local experience had the same character.',
+                citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
+              },
             ],
           },
         ],
@@ -282,6 +298,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'conflict between party-state authority and workplace demands',
                 caveat: 'A dated institutional comparison, not a classification of protesters, the whole GDR period or other Soviet-aligned states.',
                 citations: citations([], ['friedrichshainWorkers1953', 'sedNormsDeclaration1953']),
+              },
+              {
+                name: 'German Democratic Republic: socialist state-building',
+                period: '1949–1968 emphasis; East Berlin and Brandenburg evidence for 1945–1965',
+                match: 'documented match on party leadership, state-directed transformation, and a formal socialist constitutional identity',
+                caveat: 'The Constitution is official self-description, Kleßmann is a German historical synthesis, and Ross’s evidence is geographically bounded. These sources do not establish a uniform GDR society or full-period implementation; this remains a historical comparison, not an exact six-axis country score.',
+                citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
               },
               {
                 name: 'China after market reform',
@@ -346,6 +369,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The GDR adds a second warning against treating the formal party-state model as socially uniform. The 1968 Constitution’s leadership clause is direct evidence of official authority, but Kleßmann’s account and Ross’s grassroots research indicate that policy was received, implemented, negotiated, resisted, and refashioned through local institutions and ordinary people. Local adaptation does not cancel coercion or party monopoly; it shows that state capacity and social control were uneven achievements rather than automatic consequences of nationalization.',
+            citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
+          },
+          {
+            type: 'paragraph',
             text: 'Official explanations also require criticism. Lemke traces how admissions of policy failure coexisted with, and were increasingly overshadowed by, allegations of an externally directed fascist plot. Those allegations are evidence of official legitimation, not this entry’s explanation of the uprising. His analysis of subsequent security measures and concessions also cautions against equating repression with an absence of all worker influence.',
             citations: citations([], ['lemkeJuneUprising2003']),
           },
@@ -378,7 +406,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'bakuninStatism',
       ],
-      researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem', 'friedrichshainWorkers1953', 'sedNormsDeclaration1953', 'cieslaHertleWahlBerlin1953', 'lemkeJuneUprising2003'],
+      researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem', 'friedrichshainWorkers1953', 'sedNormsDeclaration1953', 'cieslaHertleWahlBerlin1953', 'lemkeJuneUprising2003', 'ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998'],
       editorialNote: 'References support different layers of the entry: primary texts for stated theories and demands, scholarly works for interpretation, and institutional sources for bounded historical context. The comparative sources separate Soviet, East European, Chinese, Vietnamese, Cuban, North Korean, and postcolonial trajectories. The June 1953 case distinguishes workers’ demands, party declarations, historical reconstruction and editorial comparison; no source proves an exact six-axis score. German passages are independently paraphrased, not quoted or presented as verified translations. Edition and date qualifications remain in the bibliography.',
     },
     researchGaps: [
@@ -391,6 +419,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Study how foreign aid, sanctions, war, decolonization, and international alliances affected state-building and ideological adaptation rather than treating domestic institutions as self-contained.',
       'Collate the Friedrichshain resolution with SAPMO-BArch NY 4090/437, Bl. 8 and the SED declaration with the original newspaper issue. Resolve the later caption’s date discrepancy and compare implementation, pay records, union practices and workers’ testimony beyond these selected documents.',
       'Extend the June 1953 case beyond Berlin with local strike programmes, women’s experiences, rural participants, Soviet records and competing scholarship. Separate demands, concessions, repression and later memory; the four sources do not establish one programme for all protesters or complete the wider GDR research agenda.',
+      'Read the full German text of the 1968 Constitution, the 1949 and 1974 constitutional versions, SED statutes, election law, court records, and archival materials on the party’s leadership claim. The selected GHDI extract is a translated two-page witness to official self-description, not a full constitutional or institutional history.',
+      'Read Ross’s complete thesis and compare its East Berlin–Brandenburg findings with rural, industrial, religious, gendered, and regional studies of the GDR. Kleßmann’s institutional article and the thesis abstract establish useful boundaries but do not settle the full-period social history or the balance between coercion, consent, adaptation, and welfare.',
     ],
   },
   'historical-fascist': {
