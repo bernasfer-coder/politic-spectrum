@@ -1,6 +1,33 @@
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  cabralPartyPrinciples1965: {
+    accessDate: '2026-09-16',
+    creators: ['Amílcar Cabral'],
+    institution: 'PAIGC; digitized copy hosted by Marxists Internet Archive',
+    sourceType: 'primary party directive / Portuguese digitized edition',
+    evidenceRole: 'primary',
+    discipline: 'anticolonial political organization',
+    publicationDate: '1969-09',
+    publisher: 'PAIGC, Comissão de Organização, Formação Política e Ideológica',
+    confidence: 'high',
+    languages: ['Portuguese'],
+    description: 'Edition dated September 1969; document dated November 1965. The selected section records prescribed principles, not independently observed institutional practice.',
+  },
+  dalaquaDemocraticFreedom2020: {
+    accessDate: '2026-09-16',
+    creators: ['Gustavo Hessmann Dalaqua'],
+    institution: 'Universidade Estadual Paulista / SciELO',
+    sourceType: 'political philosophy article / selected Portuguese sections',
+    evidenceRole: 'secondary',
+    discipline: 'democratic theory and epistemic injustice',
+    publicationDate: '2020',
+    publisher: 'Trans/Form/Ação 43(3), pp. 213–234',
+    identifiers: { doi: '10.1590/0101-3173.2020.v43n3.14.p213' },
+    confidence: 'high',
+    languages: ['Portuguese'],
+    description: 'July–September 2020 journal issue; SciELO collection publication dated 14 May 2021. Philosophical reconstruction, not a comparative institutional outcome study; its interpretation is attributed to Dalaqua.',
+  },
   friedrichshainWorkers1953: {
     accessDate: '2026-09-16',
     creators: ['Belegschaft der Baustelle Bettenhaus-Friedrichshain, VEB Industriebau'],

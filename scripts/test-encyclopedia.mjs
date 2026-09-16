@@ -64,6 +64,42 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const antiColonialEntry = ENCYCLOPEDIA_ENTRIES['anti-colonial-liberation'];
+const antiColonialProfile = ARCHETYPES.find(({ id }) => id === 'anti-colonial-liberation').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(antiColonialEntry.dimensionInterpretations[id].score, antiColonialProfile[id], `anti-colonial-liberation.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['cabralPartyPrinciples1965', 'primary', '1969-09'],
+  ['dalaquaDemocraticFreedom2020', 'secondary', '2020'],
+]) {
+  assert.ok(antiColonialEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anti-colonial reference trail`);
+  assert.ok(JSON.stringify(antiColonialEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['Portuguese']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anti-colonial-liberation'], `${sourceId} must stay within this entry`);
+}
+const cabralPartyPrinciples = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-cabralPartyPrinciples1965');
+const dalaquaDemocraticFreedom = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-dalaquaDemocraticFreedom2020');
+assert.match(cabralPartyPrinciples.note, /printed pp\. 29–35 \(PDF pages 43–49\)/, 'printed and PDF page numbers must remain distinguishable');
+assert.match(cabralPartyPrinciples.description, /Edition dated September 1969; document dated November 1965/, 'document and edition dates must not be conflated');
+assert.match(dalaquaDemocraticFreedom.description, /2020 journal issue; SciELO collection publication dated 14 May 2021/, 'journal issue and collection publication need separate dates');
+assert.match(dalaquaDemocraticFreedom.note, /Not a complete review/, 'selected-section consultation must not imply a complete article or primary-edition review');
+assert.match(dalaquaDemocraticFreedom.license, /creativecommons\.org\/licenses\/by\/4\.0/, 'the identified licence must not be replaced with an unknown-licence claim');
+const antiColonialDescription = antiColonialEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(antiColonialDescription, /implemented without reopening debate/, 'the centralized decision rule must remain visible alongside participatory ideals');
+assert.match(antiColonialDescription, /not an independent finding/, 'philosophical interpretation must not certify institutional outcomes');
+const antiColonialEvidenceNotes = antiColonialEntry.sections.find(({ id }) => id === 'criticisms').blocks.filter(({ type }) => type === 'evidence-note').map(({ text }) => text).join(' ');
+assert.match(antiColonialEvidenceNotes, /Neither supports a current-country classification or new numerical coordinates/, 'a bounded historical reading must not silently recalibrate countries or the model');
+assert.ok(antiColonialEntry.researchGaps.some((gap) => gap.includes('candidate selection, disciplinary practice')), 'independent institutional evidence must remain an explicit gap');
+
 const authoritarianCollectivistEntry = ENCYCLOPEDIA_ENTRIES['authoritarian-collectivist'];
 const authoritarianCollectivistProfile = ARCHETYPES.find(({ id }) => id === 'authoritarian-collectivist').profile;
 for (const { id } of DIMENSIONS) {

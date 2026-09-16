@@ -4138,6 +4138,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'A different scholarly lens concerns land and ecology. In his abstract, deGrassi interprets Cabral’s work on soil erosion, agricultural surveys, and colonial production as informing his political analysis. That interpretation requires fuller engagement with the article and agronomic sources before extending it to environmental outcomes or other movements.',
             citations: citations([], ['degrassiCabralSocionatures']),
           },
+          {
+            type: 'paragraph',
+            text: 'Cabral’s party-principles section asks members to criticize errors and share leadership, including women. Broad discussion should precede central decisions, which must then be implemented without reopening debate (pp. 29–34). This combines participation with hierarchy: a party directive is not a constitution establishing competitive elections or proof of implementation.',
+            citations: citations([], ['cabralPartyPrinciples1965']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Gustavo Hessmann Dalaqua reads Cabral’s democratic thought as joining representation, popular participation and learning through criticism. His philosophical reconstruction connects freedom to the development of people’s capacities and resistance to imposed inferiority. This is an interpretation of political thought, not an independent finding that the PAIGC consistently realized those principles.',
+            citations: citations([], ['dalaquaDemocraticFreedom2020']),
+          },
         ],
       },
       {
@@ -4173,6 +4183,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1945–1970s: formal decolonization, national liberation, and postcolonial state-building',
             text: 'After the Second World War, many colonies became independent through negotiations, mass movements, wars, constitutional settlements, or combinations of these. New governments confronted inherited borders, scarce administrative capacity, economic dependency, Cold War pressure, ethnic and regional divisions, and the need to transform colonial institutions. Independence could widen citizenship while also concentrating power in a ruling party, military, or new elite.',
             citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
+          },
+          {
+            period: 'November 1965 / September 1969: directive and party edition',
+            text: 'The cover dates Cabral’s Palavras de ordem gerais to November 1965 and the party edition to September 1969. These are distinct documentary dates, not evidence of when every principle took effect.',
+            citations: citations([], ['cabralPartyPrinciples1965']),
           },
           {
             period: '20 February 1970: Cabral’s culture address',
@@ -4228,6 +4243,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Cabral opposes colonial assimilation without treating every inherited practice as emancipatory.',
                 relation: 'His cultural argument joins material change to critical selection of traditions; it is not simply a return to an unchanged past.',
                 citations: citations([], ['cabralCulturePortuguese']),
+              },
+              {
+                label: 'Participatory ideals versus institutional guarantees',
+                distinction: 'Dalaqua emphasizes the representative and participatory dimensions of Cabral’s political thought.',
+                relation: 'This entry distinguishes that normative reading from evidence about who could contest decisions, remove leaders or organize independently.',
+                citations: citations([], ['dalaquaDemocraticFreedom2020']),
               },
               {
                 label: 'Indigenous sovereignty and plurinational self-government',
@@ -4342,6 +4363,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['gomesWomenLiberation']),
               },
               {
+                name: 'PAIGC: political-organization programme',
+                period: '1965 directive, consulted in its 1969 edition',
+                match: 'A document-level comparison for the Authority dimension, not a whole-polity rating.',
+                caveat: 'Party principles, members’ experiences and later government institutions need separate evidence. The six reference coordinates remain unchanged.',
+                citations: citations([], ['cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020']),
+              },
+              {
                 name: 'Contemporary Indigenous and decolonial movements',
                 period: 'Present; jurisdiction- and people-specific',
                 match: 'Movement-level comparison concerning land, jurisdiction, language, cultural authority, reparations, resource extraction, and the limits of inherited settler-colonial states.',
@@ -4400,12 +4428,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Gomes reports divergent explanations of UDEMU’s early difficulties: Teodora Inácia Gomes stresses exclusion of women active on the war fronts; Carmen Pereira emphasizes shortages of experienced organizers (pp. 82–83). Her study challenges male-centered liberation narratives. Its qualitative method uses 16 of 26 interviews conducted in 2017–2018 (p. 85), not a representative survey; recollections and historical interpretation are not interchangeable with contemporaneous institutional records.',
             citations: citations([], ['gomesWomenLiberation']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The organizational case raises questions rather than settling them: could members safely dissent, did consultation change decisions, and what protected people outside the party? A directive and a philosophical interpretation cannot answer those empirical questions by themselves. Neither supports a current-country classification or new numerical coordinates. Portuguese passages are independently paraphrased in English, not presented as quotations or authoritative translations.',
+            citations: citations([], ['cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism', 'nabucoAbolitionism', 'lockeSecondTreatise', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'spinozaPolitical', 'lockeLetterToleration', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures'],
+      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020'],
       editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
     },
     researchGaps: [
@@ -4416,6 +4449,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add evidence on post-independence institutions, military and party power, economic dependency, nonalignment, borders, resource concessions, foreign bases, debt, development, and the difference between formal sovereignty and effective self-determination.',
       'Review current movement and country comparisons only with dated, jurisdiction-specific sources. Do not infer anti-colonial status from a government’s rhetoric, a majority identity, or a single historical grievance.',
       'Verify the edition and transcription chain of Cabral’s 1970 address; read the complete Gomes and deGrassi articles and relevant agronomic records. Compare women’s retrospective testimony with contemporaneous UDEMU/PAIGC records, dissenting accounts, and post-independence outcomes before generalizing this Guinea-Bissau case.',
+      'Extend the selected 1969 edition reading beyond section VIII; collate it with the earlier directive and later collected editions. Read the rest of Dalaqua’s article and contrasting interpretations before making claims about intellectual influence or a settled democratic theory.',
+      'Compare local committee records, candidate selection, disciplinary practice, women’s participation, minority protections and independent organizing with participants’ accounts. Investigate wartime and post-independence institutions separately; neither a leader’s programme nor its philosophical interpretation establishes implementation.',
     ],
   },
   communist: {
