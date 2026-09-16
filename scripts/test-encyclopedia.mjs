@@ -64,6 +64,46 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const classicalLiberalEntry = ENCYCLOPEDIA_ENTRIES['classical-liberal'];
+const classicalLiberalProfile = ARCHETYPES.find(({ id }) => id === 'classical-liberal').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(classicalLiberalEntry.dimensionInterpretations[id].score, classicalLiberalProfile[id], `classical-liberal.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['tocquevilleAlgeria1841French', 'primary', '1841'],
+  ['tocquevilleAfricaReport1847French', 'primary', '1847-05-28'],
+  ['duongTocquevilleAlgeria2018', 'secondary', '2018-01-31'],
+  ['pittsAlgerianMirror2009', 'secondary', '2009-08-01'],
+]) {
+  assert.ok(classicalLiberalEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a classical-liberal reference trail`);
+  assert.ok(JSON.stringify(classicalLiberalEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary evidence from interpretation`);
+  assert.equal(record.publicationDate, publicationDate, `${sourceId} must preserve the documented date and its qualification`);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its rights boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:classical-liberal'), `${sourceId} needs an encyclopedia backlink`);
+  if (evidenceRole === 'secondary') {
+    assert.match(record.sourceType, /abstract only/, `${sourceId} must not imply a full-article review`);
+    assert.equal(record.review.confidence, 'medium', `${sourceId} must retain its limited review confidence`);
+  }
+}
+const tocquevilleEssay = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-tocquevilleAlgeria1841French');
+assert.match(tocquevilleEssay.description, /not a verified first-publication date/);
+assert.match(tocquevilleEssay.description, /12 March 2002/, 'digital edition and text dates must stay distinct');
+assert.match(tocquevilleEssay.publisher, /Jean-Marie Tremblay/, 'digital edition credit must survive bibliography generation');
+const classicalLiberalDescription = classicalLiberalEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(classicalLiberalDescription, /not a demand for equal citizenship or withdrawal/, 'criticism of abuses must not imply anti-imperial equality');
+assert.match(classicalLiberalDescription, /not an independent audit/, 'reported conditions must retain their evidence boundary');
+const classicalLiberalCriticisms = classicalLiberalEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(classicalLiberalCriticisms, /Duong’s stated interpretation/);
+assert.match(classicalLiberalCriticisms, /neither her complete article nor Khodja’s book has been reviewed here/, 'Khodja’s primary work must not acquire a false review status');
+assert.ok(classicalLiberalEntry.researchGaps.some((gap) => gap.includes('landing-page description conflicts')), 'edition provenance remains an open task');
+assert.ok(classicalLiberalEntry.researchGaps.some((gap) => gap.includes('French- and Arabic-language scholarship')), 'full-text and regional perspectives remain an open task');
+
 const nationalConservativeEntry = ENCYCLOPEDIA_ENTRIES['national-conservative'];
 const nationalConservativeProfile = ARCHETYPES.find(({ id }) => id === 'national-conservative').profile;
 for (const { id } of DIMENSIONS) {

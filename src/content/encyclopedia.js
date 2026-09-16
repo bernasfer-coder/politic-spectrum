@@ -2223,6 +2223,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'In chapters II–III of his German treatise, Humboldt connects Bildung, or the cultivation of a person’s capacities, with freedom, varied experience, and relationships with others. His objection to state direction concerns the conditions of individual development as well as material welfare. Here Bildung is an explanatory gloss, not an exact equivalent of schooling.',
             citations: citations([], ['humboldtLimitsGerman']),
           },
+          {
+            type: 'paragraph',
+            text: 'The territorial reach of rights also matters. Tocqueville’s report of 28 May 1847, speaking for a parliamentary commission, criticizes land dispossession and damage to Muslim educational institutions in Algeria. Yet it preserves French domination and rejects treating Muslim subjects in every circumstance as equal fellow citizens. Its proposed protection against abuses is therefore not a demand for equal citizenship or withdrawal. These are the report’s claims and prescriptions, not an independent audit of colonial conditions.',
+            citations: citations([], ['tocquevilleAfricaReport1847French']),
+          },
         ],
       },
       {
@@ -2253,6 +2258,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century: reform, markets, and exclusion',
             text: 'Classical liberal arguments supported free trade, parliamentary reform, civil equality, abolitionist and religious-liberty causes, and opposition to aristocratic privilege. At the same time, many historical liberals accepted restricted suffrage, colonial hierarchy, gender inequality, or racial exclusion. The tradition’s universal language and its uneven application must be studied together.',
             citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepMill']),
+          },
+          {
+            period: '1841: Tocqueville’s arguments about colonial warfare',
+            text: 'In Travail sur l’Algérie, Tocqueville condemns indiscriminate killing while defending crop destruction, seizure of unarmed people, including women and children, and restrictions on commerce as instruments against resistance. His stated limits on violence do not erase these coercive proposals. The warfare discussion on digital-edition pages 15–16 documents his argument, not every liberal’s position or a measurement of the whole tradition.',
+            citations: citations([], ['tocquevilleAlgeria1841French']),
           },
           {
             period: 'Twentieth century: old liberalism, welfare liberalism, and libertarian revival',
@@ -2307,6 +2317,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Valls interprets Humboldt as restricting government to security, while Mill permits public support for the conditions of personal development.',
                 relation: 'A disagreement within liberal thought; shared concern for individuality does not determine one welfare policy.',
                 citations: citations([], ['vallsHumboldtMill']),
+              },
+              {
+                label: 'Rights within empire versus opposition to empire',
+                distinction: 'Criticizing colonial abuses can coexist with preserving unequal rule; a demand for independence challenges that rule itself.',
+                relation: 'An analytical contrast, not interchangeable labels or an extra scored axis. Compare the commission report with Pitts’s interpretation of Khodja.',
+                citations: citations([], ['tocquevilleAfricaReport1847French', 'pittsAlgerianMirror2009']),
               },
               {
                 label: 'Ordoliberalism / Freiburg School',
@@ -2365,6 +2381,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'author of the treatise on limits to state action',
                 caveat: 'The youthful treatise is evidence of an argument about freedom; it does not establish a six-axis classification of his whole career or of Prussia.',
                 citations: citations([], ['humboldtLimitsGerman']),
+              },
+              {
+                name: 'Alexis de Tocqueville',
+                role: 'author and parliamentary rapporteur on French colonial rule',
+                caveat: 'His Algeria writings illustrate a colonial contradiction, not an exact six-axis match or a representative position shared by all liberals.',
+                citations: citations([], ['tocquevilleAlgeria1841French', 'tocquevilleAfricaReport1847French']),
               },
             ],
           },
@@ -2446,13 +2468,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Freiburg comparison raises a practical question: can authorities enforce competition rules while resisting powerful interest groups? A 2023 university report presents Tim Krieger’s proposals for renewing ordoliberal thought through climate and education debates. These are attributed arguments for further study; they do not establish that a market instrument will work in every setting.',
             citations: citations([], ['freiburgOrdoliberalDebates']),
           },
+          {
+            type: 'paragraph',
+            text: 'Kevin Duong’s 2018 article abstract connects Tocqueville’s support for colonial warfare with an ideal of national glory shaped by contemporary intellectual debates. This is Duong’s stated interpretation, not Tocqueville’s own explanation or an established scholarly consensus. Only the publisher abstract was accessible; assessing the full argument and competing explanations remains necessary.',
+            citations: citations([], ['duongTocquevilleAlgeria2018']),
+          },
+          {
+            type: 'paragraph',
+            text: 'An Algerian counterpoint prevents a one-way account of liberalism and empire. Jennifer Pitts’s 2009 abstract interprets Hamdan ben Othman Khodja’s Le Miroir (1833) as a liberal, cosmopolitan argument for French withdrawal and an independent Algeria engaging other states as an equal. This is an attributed summary of Pitts’s abstract: neither her complete article nor Khodja’s book has been reviewed here. It does not assign Khodja this card’s economic or other coordinates.',
+            citations: citations([], ['pittsAlgerianMirror2009']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'adamSmithWealth', 'millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns', 'hayekKnowledge', 'nozickASU', 'keynesGeneralTheory', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepMill', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'humboldtLimitsGerman', 'vallsHumboldtMill', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates', 'bpbSocialMarketEconomy', 'vdem', 'ches', 'foreignPolicy'],
-      editorialNote: 'The entry distinguishes the broad classical-liberal family from libertarian, social-liberal, and constitutionalist neighbors. Its scores describe a didactic reference profile and do not measure every historical liberal, party, or market economy. The German material is independently paraphrased. Humboldt’s primary text, Valls’s accessible abstract, the Eucken institute’s account, and Krieger’s reported interpretation have different evidence roles; none supplies measured coordinates.',
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepMill', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'humboldtLimitsGerman', 'vallsHumboldtMill', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates', 'bpbSocialMarketEconomy', 'tocquevilleAlgeria1841French', 'tocquevilleAfricaReport1847French', 'duongTocquevilleAlgeria2018', 'pittsAlgerianMirror2009', 'vdem', 'ches', 'foreignPolicy'],
+      editorialNote: 'The entry distinguishes the broad classical-liberal family from libertarian, social-liberal, and constitutionalist neighbors. Its scores describe a didactic reference profile and do not measure every historical liberal, party, or market economy. The German material is independently paraphrased. Humboldt’s primary text, Valls’s accessible abstract, the Eucken institute’s account, and Krieger’s reported interpretation have different evidence roles; none supplies measured coordinates. The French additions are original English paraphrases of selected primary passages, not direct or verified translated quotations. Duong and Pitts are abstract-only research leads, visibly attributed. No new country classification or score follows from these cases.',
     },
     researchGaps: [
       'German primary and institutional sources now introduce Humboldt and the Freiburg/social-market distinction. Add Kantian liberalism, independent German-language scholarship on ordoliberalism, and primary works by Eucken and Böhm; review Valls’s full article and competing interpretations of Humboldt’s later educational practice. These traditions must not be treated as identical to classical liberalism.',
@@ -2460,6 +2492,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add British, Scottish, Portuguese, and Spanish scholarship on commercial society, free trade, constitutional reform, and liberal empire.',
       'Add country-specific evidence before listing current states as examples; rights, tax systems, regulation, welfare, and executive constraints change over time.',
       'Add specialist research on labor power, race, gender, colonialism, migration, environmental externalities, corporate concentration, public goods, and the relationship between private and state coercion.',
+      'Collate the 1841 essay with a scholarly print edition and establish its publication history: the Classiques landing-page description conflicts with the PDF title. Check the 1847 transcription against facsimiles and distinguish commission authorship, individual arguments, and implementation.',
+      'Read the full Duong and Pitts articles and competing French- and Arabic-language scholarship before expanding their abstract-level interpretations. Examine Khodja’s Le Miroir, its editions and translation history, and Algerian perspectives directly; no completed primary reading of that book is claimed.',
     ],
   },
   'democratic-socialist': {

@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    tocquevilleAlgeria1841French: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent paraphrase and link only. Historical authorship does not clear the modern PDF, transcription, or editorial assets for republication.' },
+    tocquevilleAfricaReport1847French: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original summary and link only; no French passage, translated quotation, transcription, or facsimile republished.' },
+    duongTocquevilleAlgeria2018: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Brief attributed abstract summary and link only. No article text, abstract quotation, or publisher asset reproduced.' },
+    pittsAlgerianMirror2009: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Brief attributed abstract summary and link only. No article passage or quotation attributed directly to Khodja.' },
     wilhelmSocialProclamation1881: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase and source link only. Historical document age does not clear modern transcriptions, the Erwin Fink translation, the introduction, or facsimile assets for republication.' },
     ghdiAntiSocialistLaw1878: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'GHDI identifies the Lidtke English text as reprinted with Princeton University Press permission. That permission is not a reuse grant to this project.', notes: 'Original legal summary and link only; no translated statutory passage, editorial note, book excerpt, or page image reproduced.' },
     ritterSocialInsurance1983: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Attributed independent synthesis and link only. No German passage, translated quotation, embedded historical quotation, table, or source-book extract reproduced.' },
