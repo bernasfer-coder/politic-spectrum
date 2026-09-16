@@ -1466,6 +1466,36 @@ assert.match(theocraticDescription, /Formal removal powers do not prove effectiv
 const theocraticCriticisms = theocraticEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
 assert.match(theocraticCriticisms, /article 110\(9\) expressly requires confirmation of presidential candidates/, 'specific candidate-qualification text must not be attributed to article 99 alone');
 assert.match(theocraticCriticisms, /not be mistaken for the wording of article 99 itself/, 'dated scholarly interpretation must stay distinct from primary wording');
+for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
+  ['frenchBuddhismLawTibet2014', 'secondary', '2014', 'high', ['English']],
+  ['deleplanqueTibetanTheocracy2025', 'secondary', '2025-12-08', 'medium', ['English']],
+  ['lyulinaGandenPhodrang2020', 'secondary', '2020', 'medium', ['English', 'Russian']],
+  ['tsangLegalCode1631', 'primary', '1631', 'medium', ['Tibetan', 'English']],
+  ['gandenPodrangCode13', 'primary', '1617-1682', 'medium', ['Tibetan']],
+]) {
+  assert.ok(theocraticEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Tibetan theocracy reference trail`);
+  assert.ok(JSON.stringify(theocraticEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:theocratic'));
+}
+const TibetanHistory = theocraticEntry.sections.find(({ id }) => id === 'history').timeline.map(({ text }) => text ?? '').join(' ');
+const TibetanExamples = theocraticEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries);
+assert.match(TibetanHistory, /Tsang legal code to 1631/);
+assert.match(TibetanHistory, /Ganden Phodrang government’s formation in 1642/);
+assert.ok(TibetanExamples.some(({ name }) => name === 'Ganden Phodrang government of Tibet'));
+assert.match(theocraticDescription, /A Buddhist state can therefore be religiously legitimized without every rule or office being directly administered by monks/);
+assert.match(theocraticCriticisms, /working translation based on ten manuscripts/);
+assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Collate the Ganden Podrang Code')));
+assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Read the full Tibetan-law scholarship')));
 
 const greenCommonsEntry = ENCYCLOPEDIA_ENTRIES['green-commons'];
 const greenCommonsProfile = ARCHETYPES.find(({ id }) => id === 'green-commons').profile;

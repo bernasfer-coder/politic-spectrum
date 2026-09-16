@@ -7692,9 +7692,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
     entryType: 'institutional and ideological reference profile',
     status: 'researched-draft',
     confidence: 'medium',
-    scopeNote: 'Theocracy is used here for political orders in which divine authority, sacred law, religious office, or an authoritative religious interpretation is constitutive of political legitimacy and government. It is not a synonym for personal faith, a state religion, religiously informed ethics, a religious political party, or every historical society with religious law. The institutional role of religion, not the religion’s identity, determines the classification.',
+    scopeNote: 'Theocracy is used here for political orders in which divine authority, sacred law, religious office, or an authoritative religious interpretation is constitutive of political legitimacy and government. It is not a synonym for personal faith, a state religion, religiously informed ethics, a religious political party, or every historical society with religious law. The institutional role of religion, not the religion’s identity, determines the classification. The Ganden Phodrang is included as a bounded Tibetan Buddhist historical case, not as a template for Buddhist societies.',
     timeScope: 'The term has ancient textual roots, while comparable institutional forms appear in ancient, medieval, early-modern, colonial, revolutionary, and contemporary settings. Modern constitutional theocracy is especially useful for hybrid systems that combine elections and courts with religious constitutional supremacy or clerical oversight.',
-    geographicScope: 'Comparative profile spanning Jewish, Christian, Islamic, and other religious political traditions in the Middle East, Europe, Africa, Asia, the Americas, and the Pacific. The cases are not interchangeable: Jewish theocracy in Josephus’s political vocabulary, medieval Christian kingship, Calvinist Geneva, Islamic jurisprudence, Iran, and Vatican City involve different authorities, law, institutions, and historical contexts.',
+    geographicScope: 'Comparative profile spanning Jewish, Christian, Islamic, Tibetan Buddhist, and other religious political traditions in the Middle East, Europe, Africa, Asia, the Americas, and the Pacific. The cases are not interchangeable: Jewish theocracy in Josephus’s political vocabulary, medieval Christian kingship, Calvinist Geneva, Islamic jurisprudence, Iran, the Ganden Phodrang, and Vatican City involve different authorities, law, institutions, and historical contexts.',
     summary: 'A political order in which religious authority, sacred law, divine command, or a recognized religious office has a constitutive role in government and political legitimacy. Some theocracies place clerics directly in office; others use religious councils, constitutional review, sacred legal supremacy, a religious monarch, or a religiously defined electorate. The category can coexist with elections, courts, bureaucracy, markets, welfare, and national identity, so the key questions are who interprets religious authority, whether that interpretation can be contested, and whether equal civic rights extend to dissenters and non-believers.',
     summaryCitations: citations(
       ['josephusAgainstApion', 'aquinasMoralPolitical', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'spinozaPolitical', 'lockeLetterToleration'],
@@ -7758,6 +7758,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Theocracy is not a judgment on the truth or moral value of a religion. It is a descriptive classification of the relationship between religious authority and coercive public institutions. Different traditions contain arguments for, against, and around theocracy, and believers may support secular government, pluralist democracy, religious law, clerical guardianship, religious monarchy, or community autonomy. The entry therefore keeps the tradition, the institutional form, and the treatment of dissent analytically distinct.',
             citations: citations(['aquinasMoralPolitical', 'spinozaPolitical', 'lockeLetterToleration', 'mawardiOrdinances'], ['sepReligionPolitics', 'oxfordStateReligionFreedom', 'openTextbook']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The Ganden Phodrang, the Dalai Lamas’ government in Tibet from the seventeenth century into the twentieth, is a useful Buddhist comparison because religious and temporal authority were institutionally intertwined. It must still be described through Tibetan categories, legal texts, monastic and secular offices, and changing relations with Mongol and Qing powers, rather than being treated as a simple Buddhist equivalent of Iran, Geneva, or the Papal States.',
+            citations: citations([], ['frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020']),
+          },
         ],
       },
       {
@@ -7804,6 +7809,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Assembly of Experts is a different institution: articles 107 and 111 assign it selection and conditional removal of the Leader. Article 177 protects both religious foundations and electoral features against amendment. For this profile, entrenchment alone does not establish theocracy; the protected religious authority and its institutional interpreters matter. Formal removal powers do not prove effective accountability.',
             citations: citations([], ['constituteIran1989']),
           },
+          {
+            type: 'paragraph',
+            text: 'Tibetan legal history adds a different institutional pattern. Rebecca Redwood French describes periods in which Buddhist principles, customary law, political institutions, and practical administration were interwoven, while the Oxford Tibetan Law project warns that legal texts and actual dispute resolution cannot simply be assumed to coincide. A Buddhist state can therefore be religiously legitimized without every rule or office being directly administered by monks.',
+            citations: citations([], ['frenchBuddhismLawTibet2014', 'tsangLegalCode1631', 'gandenPodrangCode13']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Tibetan case should not be scored as a template for Buddhism. Deleplanque’s review emphasizes the indigenous concepts chö and si and the seventeenth-century theory of chösi zungdrel, while Lyulina describes a changing religious–secular diarchy shaped by regents and Qing interaction. These sources support a historically bounded theocratic comparison, not a claim about all Buddhist communities or a timeless Tibetan political identity.',
+            citations: citations([], ['deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020']),
+          },
         ],
       },
       {
@@ -7824,6 +7839,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Sixteenth–seventeenth centuries: confessional government and discipline',
             text: 'Reformation and post-Reformation conflicts generated experiments in church discipline, confessional state-building, religious toleration, and the separation or subordination of ecclesiastical and civil authority. Geneva and Puritan colonial governments are important historical cases, but they differed in scale, franchise, doctrine, and legal structure and should not be treated as models for every theocracy.',
             citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
+          },
+          {
+            period: 'Seventeenth century: Buddhist law and Ganden Phodrang formation in Tibet',
+            text: 'Tibetan legal sources show an interaction between Buddhist theories of kingship, customary law, and administrative rules. The Oxford Tibetan Law project dates a Tsang legal code to 1631 and reports that the Fifth Dalai Lama later adopted much of the rival regime’s legal text after the Tsang defeat; scholarship places the Ganden Phodrang government’s formation in 1642. Deleplanque treats the seventeenth-century union of religious and temporal spheres as a historically specific development, not an unchanging essence of Buddhism.',
+            citations: citations([], ['tsangLegalCode1631', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020']),
+          },
+          {
+            period: 'Seventeenth–eighteenth centuries: religious–temporal diarchy and Qing interaction',
+            text: 'The Ganden Phodrang combined the Dalai Lama’s religious and political role with regents, monastic institutions, secular administrators, and changing Qing involvement. Lyulina’s account presents the eighteenth-century system as a diarchy whose formal relations with Qing institutions changed over time; this makes sovereignty and theocracy separate analytical questions. Neither a Tibetan legal text nor a later imperial description alone settles the extent of effective control in every locality.',
+            citations: citations([], ['lyulinaGandenPhodrang2020', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025']),
           },
           {
             period: 'Seventeenth–eighteenth centuries: toleration and secular authority',
@@ -7882,6 +7907,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'A monarch’s dynastic or political legitimacy is tied to divine sanction, sacred lineage, religious law, or protection of an established faith.',
                 relation: 'It overlaps with theocracy when religious authority is constitutive of government, but a religiously symbolic monarchy may remain constitutionally secular, and a theocracy may be republican or clerical.',
                 citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan'], ['sepReligionPolitics', 'bpbMonarchy', 'oxfordStateReligionFreedom']),
+              },
+              {
+                label: 'Tibetan Buddhist religious–temporal government',
+                distinction: 'The Ganden Phodrang joined the Dalai Lama’s religious authority to political administration through a changing combination of monastic institutions, regents, secular officials, law, and external relationships.',
+                relation: 'It is a bounded Tibetan Buddhist case, not evidence that Buddhism uniformly requires theocracy or that religious and secular authority were identical in every locality and period. “Theocracy” remains an analytical comparison alongside Tibetan categories and sources.',
+                citations: citations([], ['frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13']),
               },
               {
                 label: 'Confessional state or state religion',
@@ -7954,6 +7985,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Khomeini’s project is a specific Shi’a revolutionary and constitutional tradition. It cannot be generalized to Islam, Shi’ism, Islamic republics, or all religious politics.',
                 citations: citations(['khomeiniIslamicRepublic'], ['nsarchiveKhomeini1979', 'oxfordIranTheocraticCriminalLaw', 'constituteIran1989']),
               },
+              {
+                name: 'The Fifth Dalai Lama, Ngawang Lobsang Gyatso',
+                role: 'Tibetan Buddhist ruler whose seventeenth-century government is associated with the formation of the Ganden Phodrang and the intertwining of religious and temporal authority.',
+                caveat: 'This is a historically bounded institutional comparison, not a score for every Dalai Lama, Tibetan community, or Buddhist tradition. Mongol, Qing, monastic, regent, local, and secular relationships require separate evidence.',
+                citations: citations([], ['frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'gandenPodrangCode13']),
+              },
             ],
           },
           {
@@ -7993,6 +8030,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'The constitutional text combines an Islamic foundation and religious criteria with elected offices, popular institutions, a Supreme Leader, and a Guardian Council with religious and constitutional review functions. Comparative scholars use it as a major case of constitutional theocracy.',
                 caveat: 'The constitutional text is evidence of institutional design, not a complete account of everyday enforcement, political practice, or public opinion. Iran’s Shi’a jurisprudential framework must not be generalized to all Islam or all religious constitutional systems.',
                 citations: citations(['khomeiniIslamicRepublic'], ['constituteIran1989', 'oxfordIranTheocraticCriminalLaw', 'torontoConstitutionalTheocracy', 'nsarchiveKhomeini1979', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020']),
+              },
+              {
+                name: 'Ganden Phodrang government of Tibet',
+                period: 'Tibet, formed in 1642; legal and governmental history traced into the mid-twentieth century',
+                match: 'A historically documented Buddhist religious–temporal government in which the Dalai Lama, monastic institutions, regents, secular officials, legal codes, and changing external powers shared or contested authority.',
+                caveat: 'The label is an analytical comparison, not a claim that Tibet was a uniform monk-run state or that every Buddhist institution was theocratic. Tibetan legal categories, locality, period, Qing relations, and actual practice must remain visible.',
+                citations: citations([], ['frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13']),
               },
               {
                 name: 'Religious constitutions and state-religion hybrids',
@@ -8035,6 +8079,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Tibetan case also warns against importing a single external meaning of “theocracy.” Deleplanque’s review describes scholarship moving toward Tibetan categories in which religious and temporal domains were mutually constitutive, while French and Lyulina distinguish legal ideology, monastic and secular offices, regents, and changing political circumstances. The comparison is strongest when the local vocabulary and institutions are retained, not when a Western label replaces them.',
+            citations: citations([], ['deleplanqueTibetanTheocracy2025', 'frenchBuddhismLawTibet2014', 'lyulinaGandenPhodrang2020']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Legal-design boundary: the Tsang translation is explicitly a working translation based on ten manuscripts, and the Oxford project reports that copies of later legal texts do not automatically prove how disputes were resolved in practice. The Ganden Podrang manuscript record is therefore used as a primary legal anchor, not as proof of uniform enforcement, social equality, or complete state control across Tibet.',
+            citations: citations([], ['tsangLegalCode1631', 'gandenPodrangCode13']),
+          },
+          {
+            type: 'paragraph',
             text: 'The second criticism is equal citizenship. Religious law or office can create different statuses for believers, minority faiths, converts, dissenters, women, sexual minorities, or non-believers. A theocratic constitution may protect some minorities while still limiting political office, family law, testimony, expression, or conversion. The proper test is not whether a system uses the language of tolerance but whether equal civil and political rights, remedies, and participation are available in law and practice.',
             citations: citations(['mawardiOrdinances', 'lockeLetterToleration', 'spinozaPolitical'], ['ohchrMinorityRights', 'sepReligionPolitics', 'oxfordStateReligionFreedom', 'vdem']),
           },
@@ -8073,8 +8127,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['josephusAgainstApion', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'aquinasMoralPolitical', 'spinozaPolitical', 'lockeLetterToleration', 'hobbesLeviathan'],
-      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020'],
-      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, and other traditions historically specific. Scores are didactic composites, not judgments about any religion or every society associated with it.',
+      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13'],
+      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, Tibetan Buddhist, and other traditions historically specific. The Ganden Phodrang is a bounded Tibetan Buddhist comparison, not a template for Buddhism or a claim that religious and secular authority were identical everywhere. Scores are didactic composites, not judgments about any religion or every society associated with it.',
     },
     researchGaps: [
       'Add French-language scholarship on Josephus, Gallicanism, Catholic political thought, Calvinist Geneva, the French Wars of Religion, revolutionary theocracy, laïcité, colonial religion, and modern constitutional debates about religious law.',
@@ -8086,6 +8140,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare theocracy with civil religion, religious nationalism, confessional democracy, Christian democracy, Islamic democracy, religious socialism, religious monarchy, and secular authoritarianism through explicit institutional criteria rather than broad cultural labels.',
       'Collate the Iranian constitutional passages with identified Persian editions and amendment records. Resolve the article 110(7) discrepancy between the consulted English translations; do not silently harmonize it or confuse the Council page’s 2021 posting date with the constitutional revision year.',
       'Review electoral legislation, Guardian Council interpretations, Experts proceedings, and specialist Persian-language scholarship, including dissenting Shi’a jurists and minority perspectives. Test formal safeguards against dated implementation evidence; the 1989 text and Buchta’s 2020 analysis do not establish current officeholders, enforcement, or public opinion.',
+      'Collate the Ganden Podrang Code of Thirteen Sections and the Tsang legal code with Tibetan originals, manuscript images, transliterations, identified editions, and qualified Tibetan-language review. The current English working translation and Buffalo metadata establish source locators and provenance boundaries, not a complete legal-text edition.',
+      'Read the full Tibetan-law scholarship on chösi zungdrel, monastic and secular offices, regents, local courts, and Qing–Tibet relations. Compare elite legal ideals with dispute records, administrative documents, monastery practice, women’s and non-elite experiences, and regional variation before making claims about uniform theocratic enforcement.',
+      'Separate the Ganden Phodrang’s historical government from later Chinese state narratives, the Central Tibetan Administration, and present-day debates over sovereignty and religious succession. Use period-specific multilingual evidence rather than turning a contested historical case into a current-country classification.',
     ],
   },
   'christian-democratic': {
