@@ -8503,9 +8503,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
     entryType: 'analytical reference profile',
     status: 'researched-draft',
     confidence: 'medium',
-    scopeNote: 'This is an umbrella analytical entry for movements that connect religious ethics, collective economic justice, and liberation from domination. Christian socialism, Catholic Worker practice, Black theology, Latin American liberation theology, and other religious-socialist traditions are related but not interchangeable. The evidence remains predominantly Christian-centered; Martin Buber supplies a bounded Jewish comparison, not coverage of all Jewish socialist or other religious traditions.',
+    scopeNote: 'This is an umbrella analytical entry for movements that connect religious ethics, collective economic justice, and liberation from domination. Christian socialism, Catholic Worker practice, Black theology, Latin American liberation theology, Iranian Islamic-left thought, and other religious-socialist traditions are related but not interchangeable. The evidence remains predominantly Christian-centered; Martin Buber and Ali Shariati supply bounded Jewish and Shi’a Iranian comparisons, not coverage of all Jewish, Muslim, or other religious traditions.',
     timeScope: 'Older religious arguments about community and economic obligation are treated as antecedents, not as modern socialism. The principal modern formation runs from nineteenth-century Christian socialism and social-gospel movements through twentieth-century anti-colonial, civil-rights, Catholic Worker, and Latin American liberation movements to contemporary faith-based justice organizing.',
-    geographicScope: 'Transnational, with documented British, European, North American, Latin American, Brazilian, and anti-colonial strands. Buber adds a Central European Jewish and Palestine/Israel intellectual case; broader Jewish, Muslim, Buddhist, Hindu, Indigenous, African, and other religious-socialist traditions still require language- and region-specific research.',
+    geographicScope: 'Transnational, with documented British, European, North American, Latin American, Brazilian, anti-colonial, and Iranian strands. Buber adds a Central European Jewish and Palestine/Israel intellectual case; the Iranian material is bounded to pre-1979 Islamic-left thought and its contested revolutionary reception. Broader Jewish, Muslim, Buddhist, Hindu, Indigenous, African, and other religious-socialist traditions still require language- and region-specific research.',
     summary: 'A family of religiously grounded movements that criticizes poverty, exploitation, racial or colonial domination, and concentrated economic power while pursuing solidarity, collective organization, and liberation. It may support public ownership, cooperatives, redistribution, worker power, mutual aid, nonviolent resistance, or revolutionary change, but it does not prescribe one economic system or require clerical control of the state.',
     summaryCitations: citations(
       ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'marxEngelsManifesto'],
@@ -8574,6 +8574,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Martin Buber provides a distinct Jewish case: his communal social thought belongs alongside, not inside, the Christian history of liberation theology. The Stanford account connects his politics with dialogue and religious interpretation, while recording his advocacy of Jewish–Arab cooperation and binationalism. This is one thinker’s position, not an ideology inferred from Jewish identity or a classification of every Jewish labour movement.',
             citations: citations([], ['sepBuber2026']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Iranian Islamic socialism provides a bounded non-Christian comparison. In the 1960s–1970s, Ali Shariati and related Islamic-left currents reworked Marxist and anti-imperial vocabularies through Shi’a concepts of justice, commitment, and revolutionary agency. This was not one party platform, not a synonym for Islamism, and not proof that the 1979 Islamic Republic implemented Shariati’s vision; Iranica and later scholarship distinguish religious intellectuals, clerical institutions, militant groups, and post-revolutionary factions.',
+            citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026']),
+          },
         ],
       },
       {
@@ -8609,6 +8614,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Charles H. T. Lesch interprets Buber’s divine kingship as a challenge to human rulers claiming absolute authority: authority attributed to God cannot simply be inherited by a sovereign. Lesch’s abstract describes a modern ethic of non-domination rather than a literal restoration of an ancient polity. This is a scholarly reading, not proof that ancient Israel practised egalitarian socialism.',
             citations: citations([], ['leschBuberTheopolitics2019']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Iranian case shows why “religious socialism” cannot be read as either secular Marxism with religious decoration or a clerical state. Kanaaneh interprets Shariati as combining Marxist analytical tools with a Tawhid-centered worldview and opposition to static clerical religion; Iranica describes a classless Islamic aspiration, anti-imperial solidarity, and competing post-1979 economic factions. These are attributed scholarly readings and movement or intellectual claims, not audited outcomes.',
+            citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'cambridgeShariatiGlobalMarxism2026']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The later Islamic Republic should remain a boundary case. Its constitutional text combines elections and consultative institutions with Islamic criteria, religious oversight, and a mixed state, cooperative, and private economy. That institutional order is not interchangeable with Shariati’s pre-1979 anti-clerical revolutionary intellectual project or with religious socialism in general.',
+            citations: citations([], ['iranicaIslamicPoliticalMovements', 'constituteIran1989']),
           },
           {
             type: 'evidence-note',
@@ -8662,6 +8677,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['celamMedellin', 'oxfordLiberationTheologies', 'oxfordLiberationLegacy']),
           },
           {
+            period: '1960s–1970s: Iranian Islamic-left currents and Ali Shariati',
+            text: 'In pre-revolutionary Iran, Islamic-left currents gained prominence alongside secular socialist and nationalist opposition. Iranica places Shariati among religious intellectuals who linked an Islamic reading of classlessness and social justice to anti-imperial and revolutionary politics, while Kanaaneh describes his effort to combine Marxist and existential tools with a Shi’a metaphysical worldview. The primary collection’s English translations are used only as a locator for his texts; Persian editions and translation history remain open.',
+            citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026']),
+          },
+          {
+            period: '1979–1980s: revolutionary coalition and post-revolutionary divergence in Iran',
+            text: 'The 1979 revolution brought competing religious, liberal, nationalist, and left currents into a new state. Iranica records disputes over land, foreign-trade nationalization, property, labor law, and the place of clerical authority; its account also distinguishes Shariati’s platform from later factions that favored private property or a more clerical political order. This is a case of ideological coalition and divergence, not evidence that one doctrine governed the whole revolution or its aftermath.',
+            citations: citations([], ['iranicaIslamicPoliticalMovements', 'constituteIran1989', 'cambridgeShariatiGlobalMarxism2026']),
+          },
+          {
             period: 'Late 1950s–1970s: a sociological interpretation of religious mobilization',
             text: 'Löwy links religious renewal to changing social conditions and locates important initiatives in groups at the church’s institutional margins. He rejects a solely hierarchical or solely grassroots origin story. This is a historical interpretation of particular Latin American developments, not a universal causal law.',
             citations: citations([], ['lowyRadicalizedCatholicism1989']),
@@ -8696,6 +8721,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Connects religious interpretation, cooperative community and resistance to domination without making clerical government its goal.',
                 relation: 'A particular intellectual strand, not a synonym for Judaism, all Jewish socialism, all Zionism or Latin American liberation theology. Religious grounding and centralized political power remain separate questions.',
                 citations: citations([], ['buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019']),
+              },
+              {
+                label: 'Iranian Islamic revolutionary socialism / Shariati',
+                distinction: 'Reinterprets Shi’a moral and historical concepts through anti-imperial, egalitarian, and revolutionary political language; often uses Marxist or existential analytical tools while rejecting materialism or static clerical authority.',
+                relation: 'A bounded Iranian intellectual and movement variant, not a definition of Islam, Shi’ism, the Muslim Brotherhood, Arab socialism, or the post-1979 Islamic Republic. Its influence, reception, and institutional consequences must be separated.',
+                citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026']),
               },
               {
                 label: 'Catholic Worker personalism',
@@ -8820,6 +8851,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['celamMedellin', 'oxfordLiberationTheologies', 'oxfordLiberationLegacy']),
               },
               {
+                name: 'Ali Shariati and Iranian Islamic-left currents',
+                period: 'Iran, especially the 1960s–1970s; influence contested after 1979',
+                match: 'A documented intellectual and movement example joining Shi’a concepts of justice and revolutionary agency with Marxist or existential analytical tools and anti-imperial politics.',
+                caveat: 'Shariati was one influential intellectual, not the author of a single party platform or a reliable proxy for all Iranian Islamism. His pre-1979 project, the revolutionary coalition, and the later Islamic Republic must not be collapsed into one label.',
+                citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026']),
+              },
+              {
                 name: 'Faith-based anti-colonial and social-justice movements',
                 period: 'Twentieth century to present; country-specific',
                 match: 'Religious organizations and leaders have sometimes supported land reform, anti-racism, labor rights, decolonization, peace, welfare, and democratic transition.',
@@ -8857,6 +8895,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'A first criticism is conceptual fusion. “Religious socialism” can hide major differences between ethical socialism, church reform, Catholic social teaching, liberation theology, Black theology, the Catholic Worker, Islamic socialism, Jewish labor movements, and interfaith justice activism. The classification should state which tradition, country, period, institution, and economic programme is being described rather than treating religious concern for the poor as proof of socialism.',
             citations: citations(['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'marxEngelsManifesto'], ['cambridgeReligionOriginsSocialism', 'oxfordChristianSocialism', 'oxfordLiberationTheologies']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Iranian case warns against equating revolutionary religious socialism with clerical rule. Shariati’s anti-static-clergy orientation, later revolutionary coalitions, and the Islamic Republic’s constitutional religious oversight are distinct layers. Iran’s later legal design can be studied as a theocratic or hybrid case, but it should not retroactively define Shariati’s socialism or turn a contested intellectual influence into a simple causal explanation of 1979.',
+            citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'constituteIran1989']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Primary-text limit: the online Shariati collection lists English translations and transcriptions, but this pass did not collate Persian editions, dates, translators, or complete lecture contexts. Its entries locate themes such as Abu-Dhar, revolutionary politics, Marxism, colonialism, and religion; no quotation or precise claim about a specific wording is published.',
+            citations: citations([], ['shariatiWorksEnglish']),
           },
           {
             type: 'paragraph',
@@ -8908,8 +8956,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto', 'spinozaPolitical', 'millOnLiberty'],
-      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989', 'buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019', 'syracuseBuberPaths1996'],
-      editorialNote: 'The entry remains an umbrella synthesis with a predominantly Christian-centered evidence base, now including a bounded Buber comparison. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, and theocracy. Buber’s selected English primary text, scholarly interpretation and publisher metadata have different roles; his appraisal is not empirical validation. Scores remain didactic composites, with existing article/card discrepancies still recorded. Broader non-Christian traditions and country-specific claims require separate research.',
+      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989', 'buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019', 'syracuseBuberPaths1996', 'iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026', 'constituteIran1989'],
+      editorialNote: 'The entry remains an umbrella synthesis with a predominantly Christian-centered evidence base, now including bounded Buber and pre-1979 Iranian Islamic-left comparisons. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, Islamic revolutionary socialism, and theocracy. Buber’s and Shariati’s selected English materials, scholarly interpretations, and publisher metadata have different roles; neither appraisal is empirical validation, and the later Islamic Republic is not treated as Shariati’s programme. Scores remain didactic composites, with existing article/card discrepancies still recorded. Broader non-Christian traditions and country-specific claims require separate research.',
     },
     researchGaps: [
       'Add original-language scholarship in Portuguese and Spanish on Brazilian base communities, liberation theology, land and labor movements, Black theology, Indigenous theology, and church–state relations; verify editions and translations.',
@@ -8924,6 +8972,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Resolve existing article/card differences in the Economic (62/60), Identity (25/35), and Foreign-policy (25/35) coordinates through explicit editorial review. These are magnitude discrepancies, not sign reversals; no score was recalibrated in this research pass.',
       'Collate the Buber transcription with an identified print edition and the relevant Hebrew/German versions; resolve publication chronology and distinguish Buber’s text, Hull’s translation and Fischoff’s later introduction. Read Lesch’s full article and the primary biblical commentaries before extending the theopolitics argument.',
       'Compare Buber with other Jewish religious and secular socialist traditions using their own texts; one thinker cannot stand for Judaism, Zionism or the Bund. Investigate community governance, gender, land, labour and Palestinian perspectives through independent historical evidence before making outcome claims about the communes he praised.',
+      'Collate Shariati’s Persian originals, identified editions, lecture dates, translators, and complete contexts, including Abu-Dhar, Islamology, Red Shiism, and Humanity and Islam. The online English collection is only a locator and does not settle wording, chronology, audience, or reception.',
+      'Compare Iranian Islamic-left groups, National Resistance and front traditions, the Mojahedin, clerical reformers, secular Marxists, and women’s, Kurdish, Baha’i, Sunni, labor, and minority perspectives through archives and Persian-language scholarship. Do not infer one social base from Shariati’s student audience or later revolutionary influence.',
+      'Separate Shariati’s pre-1979 intellectual project from the 1979 constitutional order and later economic factions by reading the Persian Constitution, amendments, laws, party documents, and implementation evidence; test claims about land, labor, nationalization, and clerical authority against independent outcomes.',
     ],
   },
   populist: {

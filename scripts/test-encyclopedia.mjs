@@ -735,7 +735,37 @@ assert.match(buberDescription, /not proof that ancient Israel practised egalitar
 assert.match(buberCriticisms, /advocacy, not an independent outcome study/);
 assert.match(buberCriticisms, /not interchangeable with this website’s institutional label/);
 assert.match(buberCriticisms, /not a collated print text or the complete 1996 book/);
-assert.match(religiousSocialistEntry.scopeNote, /bounded Jewish comparison, not coverage of all Jewish socialist/);
+assert.match(religiousSocialistEntry.scopeNote, /bounded Jewish and Shi’a Iranian comparisons, not coverage of all Jewish, Muslim/);
+for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
+  ['iranicaIslamicPoliticalMovements', 'secondary', '2007-12-15', 'high', ['English']],
+  ['kanaanehShariatiIslamizingSocialism2021', 'secondary', '2021', 'medium', ['English']],
+  ['shariatiWorksEnglish', 'primary', null, 'low', ['English']],
+  ['cambridgeShariatiGlobalMarxism2026', 'secondary', '2026-01-10', 'medium', ['English']],
+]) {
+  assert.ok(religiousSocialistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a religious-socialist reference trail`);
+  assert.ok(JSON.stringify(religiousSocialistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:religious-socialist']);
+}
+const religiousDescription = religiousSocialistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text ?? '').join(' ');
+const religiousHistory = religiousSocialistEntry.sections.find(({ id }) => id === 'history').timeline.map(({ text }) => text ?? '').join(' ');
+const religiousVariants = religiousSocialistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows);
+assert.match(religiousDescription, /not interchangeable with Shariati’s pre-1979 anti-clerical revolutionary intellectual project/);
+assert.match(religiousHistory, /pre-revolutionary Iran, Islamic-left currents/);
+assert.ok(religiousVariants.some(({ label }) => /Iranian Islamic revolutionary socialism/.test(label)));
+assert.match(JSON.stringify(religiousSocialistEntry), /Primary-text limit: the online Shariati collection/);
+for (const [dimensionId, score] of Object.entries({ economic: 62, social: 35, authority: 10, identity: 25, foreign: 25, religion: -75 })) {
+  assert.equal(religiousSocialistEntry.dimensionInterpretations[dimensionId].score, score, `${dimensionId} score changed during the bounded Iranian research pass`);
+}
 const buberPerson = religiousSocialistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Martin Buber');
 assert.ok(buberPerson?.citations.researchSourceIds.includes('buberPathsEnglish'));
 assert.match(buberPerson.caveat, /not a six-axis score assigned to him/);
