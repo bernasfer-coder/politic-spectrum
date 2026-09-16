@@ -64,6 +64,53 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const nationalConservativeEntry = ENCYCLOPEDIA_ENTRIES['national-conservative'];
+const nationalConservativeProfile = ARCHETYPES.find(({ id }) => id === 'national-conservative').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(nationalConservativeEntry.dimensionInterpretations[id].score, nationalConservativeProfile[id], `national-conservative.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['wilhelmSocialProclamation1881', 'primary', '1881-11-17'],
+  ['ghdiAntiSocialistLaw1878', 'primary', '1878-10-21'],
+  ['ritterSocialInsurance1983', 'secondary', '1983-08-27'],
+  ['ziemannIndustrialSociety2016', 'secondary', '2016-04-13'],
+]) {
+  assert.ok(nationalConservativeEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a national-conservative reference trail`);
+  assert.ok(JSON.stringify(nationalConservativeEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary evidence from interpretation`);
+  assert.equal(record.publicationDate, publicationDate, `${sourceId} must distinguish document and edition dates`);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its rights boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-conservative'), `${sourceId} needs an encyclopedia backlink`);
+}
+const wilhelmProclamation = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-wilhelmSocialProclamation1881');
+const antiSocialistLaw = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ghdiAntiSocialistLaw1878');
+const ritterInsurance = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ritterSocialInsurance1983');
+const ziemannInsurance = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ziemannIndustrialSociety2016');
+assert.match(wilhelmProclamation.description, /Erwin Fink/, 'translation credit must survive bibliography generation');
+assert.match(wilhelmProclamation.sourceType, /excerpt/, 'the proclamation excerpt must not become a complete proceedings review');
+assert.match(antiSocialistLaw.description, /Vernon L. Lidtke/, 'the law translation needs source-edition credit');
+assert.match(antiSocialistLaw.license, /not a reuse grant/, 'GHDI permission must not become permission for this project');
+assert.match(ritterInsurance.sourceType, /selected German article sections/);
+assert.match(ziemannInsurance.sourceType, /selected German sidebar/);
+assert.deepEqual(ritterInsurance.creators, ['Gerhard A. Ritter']);
+assert.deepEqual(ziemannInsurance.creators, ['Benjamin Ziemann']);
+const nationalConservativeDescription = nationalConservativeEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(nationalConservativeDescription, /not proof of workers’ loyalty/, 'announced intentions must not become measured outcomes');
+assert.match(nationalConservativeDescription, /GHDI’s editorial introduction/, 'modern commentary must not become a statutory provision');
+assert.match(nationalConservativeDescription, /surviving elections did not make these restrictions compatible with equal political liberty/, 'electoral channels must not erase repression');
+const nationalConservativeCriticisms = nationalConservativeEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(nationalConservativeCriticisms, /contrary to Bismarck’s aims/, 'institutional effects must remain distinct from government intentions');
+assert.match(nationalConservativeCriticisms, /nor convert it into evidence of universal inclusion/, 'benefit provision must not imply universal coverage');
+const bismarckExample = nationalConservativeEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name === 'Otto von Bismarck');
+assert.match(bismarckExample.caveat, /not an exact six-axis match/);
+assert.ok(nationalConservativeEntry.researchGaps.some((gap) => gap.includes('each insurance branch')), 'statutory and implementation follow-up must stay open');
+assert.ok(nationalConservativeEntry.researchGaps.some((gap) => gap.includes('Poland example points to a Hungary report')), 'unrepaired card evidence must remain flagged');
+
 const religiousTraditionalistEntry = ENCYCLOPEDIA_ENTRIES['religious-traditionalist'];
 const religiousTraditionalistProfile = ARCHETYPES.find(({ id }) => id === 'religious-traditionalist').profile;
 for (const { id } of DIMENSIONS) {

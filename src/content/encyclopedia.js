@@ -1478,6 +1478,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Gaullism is an important French contrast case. It joined national independence, republican legitimacy, and a stronger executive with a political culture that could attract people from different ideological families. Treating Gaullism as simply right-wing cultural nationalism misses its republican and institutional dimensions; treating it as a generic model for all national conservatism misses its particular postwar history, constitutional arrangements, and debates over Europe, empire, and decolonization.',
             citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'cambridgeIndivisibilityFrenchRepublic']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The Bismarck-era comparison below examines social provision alongside political exclusion. It is a historical boundary case, not a claim that every national conservative shares imperial Germany’s institutions. Public justifications, legal provisions, historians’ interpretations, and these illustrative coordinates are distinct evidence types.',
+            citations: citations([], ['wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983']),
+          },
         ],
       },
       {
@@ -1499,6 +1504,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Economically, national conservatism is flexible. It can support markets, private property, welfare for citizens, industrial policy, protection of strategic sectors, or selective regulation when these are said to preserve national independence and social cohesion. The economic score therefore remains closer to the mixed-market center than to either libertarian absolutism or collectivist ownership.',
             citations: citations(['adamSmithWealth', 'burkeReflections'], ['sepConservatism', 'sepLiberalism']),
           },
+          {
+            type: 'paragraph',
+            text: 'Wilhelm I’s 1881 proclamation explicitly pairs workers’ welfare with repression of Social Democracy and domestic peace. It invokes Christian moral obligations and proposes state-supported corporate cooperation as well as provision for sickness, accidents, age, and disability. This is evidence of the government’s public justification, not proof of workers’ loyalty or successful implementation. The German excerpt and Erwin Fink’s English translation inform this original paraphrase.',
+            citations: citations([], ['wilhelmSocialProclamation1881']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Anti-Socialist Law prohibited specified associations, meetings, and publications (§§1, 9–11), backed by penalties (§17). Yet §28(1) exempted meetings for announced parliamentary elections from its special police-permission requirement; GHDI’s editorial introduction also notes the survival of socialist parliamentary representation. Repression did not mean the disappearance of every electoral channel, and surviving elections did not make these restrictions compatible with equal political liberty.',
+            citations: citations([], ['ghdiAntiSocialistLaw1878']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Benjamin Ziemann’s account distinguishes contribution-based insurance entitlements from discretionary poor relief and emphasizes older insurance institutions and parliamentary compromise. The resulting system was not simply one ruler’s design. This supports separating benefit rights, political rights, and control over administration rather than treating welfare spending as an ideological verdict.',
+            citations: citations([], ['ziemannIndustrialSociety2016']),
+          },
         ],
       },
       {
@@ -1519,6 +1539,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Late nineteenth–early twentieth centuries: mass democracy and social order',
             text: 'Conservative parties adapted to expanded suffrage, labor movements, industrialization, and national social policy. Many accepted welfare or state intervention when it protected order, social solidarity, or national capacity, while others remained more economically liberal.',
             citations: citations(['burkeReflections', 'tocquevilleDemocracy'], ['sepConservatism', 'sepLiberalism']),
+          },
+          {
+            period: '1878: Anti-Socialist Law',
+            text: 'The law creates targeted restrictions on socialist organization and expression; its original expiry and subsequent renewals must be distinguished.',
+            citations: citations([], ['ghdiAntiSocialistLaw1878']),
+          },
+          {
+            period: '17 November 1881: imperial social-policy proclamation',
+            text: 'Bismarck reads Wilhelm I’s message to the Reichstag. Announcing a programme is not the same as enacting its proposals.',
+            citations: citations([], ['wilhelmSocialProclamation1881']),
+          },
+          {
+            period: '1883–1889: separate insurance legislation',
+            text: 'Health insurance legislation follows in 1883, accident insurance in 1884, and invalidity and old-age insurance in 1889. These were distinct schemes, not universal protection against every risk.',
+            citations: citations([], ['ziemannIndustrialSociety2016', 'ritterSocialInsurance1983']),
           },
           {
             period: 'Twentieth century: sovereignty, empire, and constitutional nation-states',
@@ -1567,6 +1602,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Uses markets selectively while protecting strategic industries, national supply chains, welfare citizenship, or state capacity.',
                 relation: 'Shows why national conservatism is not equivalent to laissez-faire economics.',
                 citations: citations(['adamSmithWealth', 'burkeReflections'], ['sepConservatism', 'sepLiberalism']),
+              },
+              {
+                label: 'Paternalist social provision versus democratic inclusion',
+                distinction: 'Insurance entitlements and political repression can coexist.',
+                relation: 'Compare who receives benefits, who administers them, and who can organize opposition; no single policy answers all three questions.',
+                citations: citations([], ['ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983']),
               },
               {
                 label: 'Ethnic nationalism',
@@ -1620,6 +1661,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'De Gaulle’s constitutional thought and political practice are historically specific; he is a boundary case, not a complete definition of contemporary national conservatism.',
                 citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought']),
               },
+              {
+                name: 'Otto von Bismarck',
+                role: 'chancellor associated with the imperial social-policy programme',
+                caveat: 'A document-specific comparator, not an exact six-axis match or a claim that he alone designed social insurance. His broader politics require separate evidence.',
+                citations: citations([], ['wilhelmSocialProclamation1881', 'ritterSocialInsurance1983']),
+              },
             ],
           },
           {
@@ -1645,6 +1692,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'partial sovereignist and state-capacity resemblance',
                 caveat: 'The Gaullist tradition combined national independence and executive authority with republican legitimacy and changing positions on Europe, empire, social policy, and decolonization; it is not an exact contemporary national-conservative match.',
                 citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi']),
+              },
+              {
+                name: 'Imperial German social insurance',
+                period: '1880s legislation, with later institutional development',
+                match: 'bounded comparison of provision and political order',
+                caveat: 'Neither a whole-country classification nor a direct ancestor of every present national-conservative movement. The three insurance branches require separate analysis.',
+                citations: citations([], ['ritterSocialInsurance1983', 'ziemannIndustrialSociety2016']),
               },
               {
                 name: 'Contemporary national-conservative movements',
@@ -1699,6 +1753,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Gaullist case also shows why a capable executive and national sovereignty require institutional analysis rather than ideological shorthand. Executive centralization can stabilize a republic or weaken parliamentary accountability; laïcité can be defended as equal freedom of conscience or invoked as a broader cultural boundary. The classification should therefore record constitutional checks, minority citizenship, party competition, and the actual treatment of dissent.',
             citations: citations([], ['cairnLesGaullistes', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem']),
           },
+          {
+            type: 'paragraph',
+            text: 'Gerhard A. Ritter gives political stabilization a central role but also identifies social and economic pressures and parliamentary bargaining. He argues that insurance institutions subsequently strengthened worker organizations and opportunities for self-administration, contrary to Bismarck’s aims. Government intentions cannot substitute for an assessment of institutional effects.',
+            citations: citations([], ['ritterSocialInsurance1983']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Ziemann stresses that early coverage and benefits were limited, while insurance still offered meaningful protection. The comparison should neither dismiss provision as merely propaganda nor convert it into evidence of universal inclusion. Contemporary welfare-nationalist membership rules require separate, dated research.',
+            citations: citations([], ['ziemannIndustrialSociety2016']),
+          },
         ],
       },
     ],
@@ -1713,7 +1777,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'aquinasMoralPolitical',
       ],
-      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy'],
+      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy', 'wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983', 'ziemannIndustrialSociety2016'],
       editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
     },
     researchGaps: [
@@ -1721,6 +1785,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add German-language scholarship on post-war Christian democracy, ordoliberalism, national conservatism, and the constitutional lessons of authoritarian nationalism.',
       'Add country-specific sources before listing Hungary, India, Poland, France, Japan, or other states as examples; current governments and party systems change over time.',
       'Add specialist research on colonialism, minority citizenship, migration, religion, gender, welfare nationalism, and the relationship between national-conservative movements and democratic backsliding.',
+      'Collate the proclamation and Anti-Socialist Law with original German parliamentary and gazette editions. Read the full Lidtke and Ritter studies and worker testimony; the consulted translations, editorial notes, and selected article sections do not constitute a complete archival review.',
+      'Check each insurance branch’s eligibility, contributions, benefits, and administrative powers against original statutes and later amendments. Do not transfer generalizations across health, accident, and pension schemes; investigate women, agricultural and domestic workers, migrants, and colonial populations separately.',
+      'Audit the unchanged reference card’s evidence links: its Poland example points to a Hungary report, and its Meiji Japan example to a de Gaulle biography. This historical article pass does not validate those examples or establish current-country matches.',
     ],
   },
   'social-democratic': {
