@@ -9527,6 +9527,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: '“Libertarian” here means freedom from domination and collective self-government, not the U.S. market-libertarian meaning of strong private property and minimal government. “Socialist” here means social or collective control over production and social life, not automatic support for a centralized party-state.',
             citations: citations(['bakuninStatism', 'kropotkinConquestBread', 'millOnLiberty'], ['sepAnarchism', 'sepSocialism', 'iloWorkerCooperatives']),
           },
+          {
+            type: 'paragraph',
+            text: 'The French vocabulary has its own history. MSHE Ledoux’s notice for the scholarly volume Libertaire! identifies Déjacque’s 1857 letter to Proudhon as the setting in which he coined libertaire. This does not establish the first use of the English word or collapse its later meanings into one doctrine.',
+            citations: citations([], ['msheDejacqueVolume2019']),
+          },
         ],
       },
       {
@@ -9545,6 +9550,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Jorge Cagiao y Conde argues that Proudhon’s mature federalism retains a place for law and political institutions, rather than rejecting every state form. He distinguishes a pact among autonomous parties from decentralization granted by an already sovereign center. His preference for a regionalist reading, against individualist and communalist interpretations, is one position in the debate—not a settled definition of all libertarian socialism.',
+            citations: citations([], ['cagiaoProudhonFederalism2011']),
+          },
+          {
+            type: 'paragraph',
             text: 'Freedom is understood positively as the capacity to participate in shaping the conditions of life, and negatively as protection from state, capitalist, patriarchal, racial, colonial, and religious domination. Mutual aid is treated as an organizing principle, not proof that conflict or coercion disappears. The tradition therefore needs a theory of minority rights, dissent, defense, ecological limits, inter-community obligations, and fair procedures when consensus fails.',
             citations: citations(['kropotkinMutualAid', 'millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'sepReligionPolitics', 'sepSocialism']),
           },
@@ -9558,6 +9568,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth-century socialist and anarchist roots',
             text: 'Modern libertarian socialism emerged from conflicts within the socialist movement over property, state power, organization, revolution, and the meaning of emancipation. Bakunin and other anti-authoritarian socialists rejected the idea that a revolutionary minority or state bureaucracy could liberate workers by ruling on their behalf. Kropotkin developed arguments about mutual aid, decentralized cooperation, and common access, while anarchist and socialist currents debated collectivist, communist, mutualist, and syndicalist forms.',
             citations: citations(['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread'], ['sepAnarchism', 'sepSocialism']),
+          },
+          {
+            period: 'May 1857 — Déjacque challenges Proudhon',
+            text: 'Writing from New Orleans, Déjacque demanded emancipation across sexes and attacked male privilege in his letter to Proudhon. Its later discussion also rejects contractual restrictions on production and consumption. The text is an intervention within anti-authoritarian debate, not evidence that every contemporary anarchist supported the same freedoms.',
+            citations: citations([], ['dejacqueLetter1857French']),
+          },
+          {
+            period: '1863 — Proudhon’s political and economic federation',
+            text: 'In Part I, chapter VII of Du Principe fédératif, Proudhon limits delegated federal tasks while reserving greater powers to the participants. Chapter XI adds mutual credit, insurance, and coordinated services against capitalist dependence. These are proposed guarantees, not a demonstrated account of an economy operating without hierarchy.',
+            citations: citations([], ['proudhonFederative1863French']),
           },
           {
             period: 'First International and the conflict over the state',
@@ -9628,6 +9648,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['bakuninStatism', 'millOnLiberty'], ['sepAnarchism', 'sepSocialism', 'iloWorkerCooperatives']),
               },
               {
+                label: 'Contractual federation and anarchic community',
+                distinction: 'Proudhon’s 1863 proposal relies on reciprocal, bounded obligations; Déjacque’s 1857 letter questions contracts that constrain changing needs and desires.',
+                relation: 'Their shared opposition to domination does not erase this difference in how cooperation should be organized.',
+                citations: citations([], ['proudhonFederative1863French', 'dejacqueLetter1857French']),
+              },
+              {
                 label: 'Libertarian municipalism and communalism',
                 distinction: 'Builds direct democracy in municipalities and links them through confederations, with ecology and civic participation as central concerns.',
                 relation: 'A later institutional proposal that differs from classical anarcho-communism while sharing anti-state and anti-capitalist aims.',
@@ -9674,6 +9700,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Rosa Luxemburg, Mikhail Bakunin, Peter Kropotkin, Murray Bookchin, and worker-control theorists represent different arguments within the family. Luxemburg defended mass democracy while criticizing bureaucratic substitution; Bakunin attacked state socialism; Kropotkin developed mutual-aid and communal arguments; Bookchin proposed municipal confederation and social ecology. They are reference points in a debate, not interchangeable authors of one programme.',
             citations: citations(['luxemburgReformRevolution', 'bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism'], ['sepLuxemburg', 'sepAnarchism', 'socialEcologyMunicipalism']),
           },
+          {
+            type: 'evidence-note',
+            text: 'A research lead, not a completed review: the 2019 volume edited by Thomas Bouchet and Patrick Samzun brings together studies of Déjacque’s transatlantic life, writing, and anti-authoritarian thought. The institutional notice is consulted here; its chapters must be read individually before their conclusions can support further claims.',
+            citations: citations([], ['msheDejacqueVolume2019']),
+          },
         ],
       },
       {
@@ -9711,6 +9742,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Anti-centralism did not automatically abolish household hierarchy: Proudhon retains family authority at the end of Part I, chapter XI. Déjacque’s letter contests male domination but itself uses sexualized insults. Neither text should become an unqualified model of contemporary equality.',
+            citations: citations([], ['proudhonFederative1863French', 'dejacqueLetter1857French']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'For the six-axis profile, anti-centralism, social ownership, and social equality must be assessed separately. These texts clarify differences inside the family; they neither supply numerical scores nor establish a country or individual as a complete match.',
+            citations: citations([], ['cagiaoProudhonFederalism2011']),
+          },
+          {
+            type: 'paragraph',
             text: 'The third criticism concerns defense and emergency. Revolutionary or autonomous communities may face military attack, blockade, sabotage, or internal violence. Coordinated defense can create command structures, secrecy, rationing, and coercion that undermine anti-authoritarian aims. Historical cases such as Ukraine and Spain show why self-defense cannot be separated from questions of who commands, who decides, how dissent is handled, and whether emergency powers expire.',
             citations: citations(['bakuninStatism', 'fanonWretchedEarth'], ['makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'sepAnarchism']),
           },
@@ -9733,9 +9774,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       },
     ],
     references: {
-      authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread', 'luxemburgReformRevolution', 'bookchinLibertarianMunicipalism', 'marxEngelsManifesto', 'millOnLiberty', 'fanonWretchedEarth'],
-      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook'],
-      editorialNote: 'This entry treats libertarian socialism as a broad family resemblance rather than a single doctrine. It distinguishes anti-authoritarian socialism from market libertarianism, state socialism, social democracy, anarcho-communism, communalism, and cooperative practice, and records both the emancipatory aims and the institutional problems of self-management.',
+      authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread', 'luxemburgReformRevolution', 'bookchinLibertarianMunicipalism', 'marxEngelsManifesto', 'millOnLiberty', 'fanonWretchedEarth', 'leninStateRevolution'],
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook', 'proudhonFederative1863French', 'dejacqueLetter1857French', 'cagiaoProudhonFederalism2011', 'msheDejacqueVolume2019'],
+      editorialNote: 'This entry treats libertarian socialism as a broad family resemblance rather than a single doctrine. It distinguishes anti-authoritarian socialism from market libertarianism, state socialism, social democracy, anarcho-communism, communalism, and cooperative practice, and records both the emancipatory aims and the institutional problems of self-management. The French additions distinguish primary proposals, a polemical intervention, attributed scholarship, and an institutional book notice. English summaries are original paraphrases, not authoritative translations or endorsements of every position held by the authors.',
     },
     researchGaps: [
       'Add original-language research in Spanish, Catalan, French, German, Italian, Russian, Ukrainian, Portuguese, Arabic, and other relevant languages on syndicalism, councils, communalism, autonomy, and worker control.',
@@ -9745,6 +9786,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare the effects of war, repression, scarcity, and emergency command on anti-authoritarian institutions in Ukraine, Spain, and later autonomous or communal experiments.',
       'Clarify how libertarian socialists would provide constitutional rights, adjudication, public health, education, infrastructure, scientific research, defense, and interregional redistribution without reproducing unaccountable bureaucracy.',
       'Test whether the six-dimensional profile should separately score social ownership, workplace democracy, anti-state authority, localism, internationalism, anti-militarism, and secular or religious pluralism rather than combining them into one card.',
+      'Read Jenny d’Héricourt’s own interventions and compare them with Déjacque’s and Proudhon’s representations; women’s political agency should not be reduced to a dispute between men. Collate the 1857 letter against an early edition before quoting it.',
+      'Compare Cagiao y Conde’s regionalist interpretation with the works by Ansart, Chambost, and other scholars that he discusses. The Bouchet–Samzun volume and Pascal Lebrun’s property comparison remain full-text research leads; access limitations prevented a complete review in this pass.',
+      'Resolve the existing religion discrepancy of +42 in this article versus +45 in the card through explicit editorial review; all six coordinates are unchanged. Audit the card’s person/example links, including the Luxemburg link currently pointing to a Bernstein biography, before treating them as adequate individual-level evidence.',
     ],
   },
   'indigenous-relational-governance': {

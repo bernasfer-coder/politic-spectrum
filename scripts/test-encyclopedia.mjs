@@ -84,4 +84,22 @@ for (const [sourceId, evidenceRole] of [
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-socialist'), `${sourceId} needs an encyclopedia backlink`);
 }
 
+const libertarianSocialistEntry = ENCYCLOPEDIA_ENTRIES['libertarian-socialist'];
+for (const [sourceId, evidenceRole] of [
+  ['proudhonFederative1863French', 'primary'],
+  ['dejacqueLetter1857French', 'primary'],
+  ['cagiaoProudhonFederalism2011', 'secondary'],
+  ['msheDejacqueVolume2019', 'contextual'],
+]) {
+  assert.ok(libertarianSocialistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a libertarian-socialist reference trail`);
+  assert.ok(JSON.stringify(libertarianSocialistEntry.sections).includes(sourceId), `${sourceId} needs an in-entry claim citation`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary argument, scholarship, and book metadata`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} remains summary-and-link only`);
+  assert.equal(record.directQuote, null, `${sourceId} must not introduce an unreviewed quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:libertarian-socialist'), `${sourceId} needs an encyclopedia backlink`);
+}
+
 console.log(`Encyclopedia tests passed: ${Object.keys(ENCYCLOPEDIA_ENTRIES).length} entry with claim-level citation validation across ${DIMENSIONS.length} dimensions.`);
