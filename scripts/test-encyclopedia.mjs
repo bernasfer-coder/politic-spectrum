@@ -64,6 +64,48 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const democraticSocialistEntry = ENCYCLOPEDIA_ENTRIES['democratic-socialist'];
+const democraticSocialistProfile = ARCHETYPES.find(({ id }) => id === 'democratic-socialist').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(democraticSocialistEntry.dimensionInterpretations[id].score, democraticSocialistProfile[id], `democratic-socialist.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['allendeCongress1971Spanish', 'primary', '1971-05-21'],
+  ['chileCopperLaw17450', 'primary', '1971-07-16'],
+  ['memoriaCopperNationalization', 'secondary', null],
+  ['memoriaUnidadPopular', 'secondary', null],
+  ['vergaraCopperModernization2004', 'secondary', '2004'],
+]) {
+  assert.ok(democraticSocialistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a democratic-socialist reference trail`);
+  assert.ok(JSON.stringify(democraticSocialistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary evidence from interpretation`);
+  assert.equal(record.publicationDate, publicationDate, `${sourceId} must preserve known dates without inventing missing ones`);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['Spanish']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:democratic-socialist'), `${sourceId} needs an encyclopedia backlink`);
+  if (sourceId.startsWith('memoria')) assert.match(record.license, /excluding digital objects/, 'a research-text licence must not cover every collection item');
+}
+const allendeSpeech = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-allendeCongress1971Spanish');
+const copperLaw = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-chileCopperLaw17450');
+const vergaraCopper = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-vergaraCopperModernization2004');
+assert.match(allendeSpeech.description, /2001 edition/, 'speech and archive-edition dates must remain distinct');
+assert.match(copperLaw.description, /15 July 1971/, 'sanction and publication dates must remain distinct');
+assert.deepEqual(vergaraCopper.creators, ['Ángela Vergara Marshall']);
+assert.match(vergaraCopper.sourceType, /selected Spanish sections/, 'selected sections must not become a complete-article review');
+const democraticSocialistDescription = democraticSocialistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(democraticSocialistDescription, /under existing conditions/, 'labor rights must retain their statutory qualification');
+assert.match(democraticSocialistDescription, /not evidence that workers controlled/, 'participation provisions must not become demonstrated control');
+const democraticSocialistHistory = democraticSocialistEntry.sections.find(({ id }) => id === 'history').timeline.map(({ text }) => text).join(' ');
+assert.match(democraticSocialistHistory, /not a finding that every action/, 'political commitments must not become certified outcomes');
+assert.match(democraticSocialistHistory, /broader than support for his entire socialist programme/, 'one legislative vote must not classify every supporter');
+assert.ok(democraticSocialistEntry.researchGaps.some((gap) => gap.includes('compensation decisions')), 'implementation research must remain open');
+assert.ok(democraticSocialistEntry.researchGaps.some((gap) => gap.includes('domestic and foreign intervention')), 'the wider breakdown must remain an explicit research task');
+
 const classicalLiberalEntry = ENCYCLOPEDIA_ENTRIES['classical-liberal'];
 const classicalLiberalProfile = ARCHETYPES.find(({ id }) => id === 'classical-liberal').profile;
 for (const { id } of DIMENSIONS) {

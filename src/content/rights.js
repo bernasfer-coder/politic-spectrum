@@ -170,6 +170,11 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    allendeCongress1971Spanish: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase and archival link only; no Spanish speech passage, translated quotation, or embedded quotation reproduced.' },
+    chileCopperLaw17450: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Historical statutory summary and official link only. No page assets or translated statutory passages republished; no blanket reuse clearance inferred from official hosting.' },
+    memoriaCopperNationalization: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The host identifies its research text as CC BY-SA 3.0 Unported, excluding digital objects. This project retains original-summary/link-only treatment.', notes: 'No source prose, linked document, photograph, or audio reproduced; the host’s research licence is not blanket clearance for its collection.' },
+    memoriaUnidadPopular: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The host identifies its research text as CC BY-SA 3.0 Unported, excluding digital objects. This project retains original-summary/link-only treatment.', notes: 'Independent summary and link only; no song lyric, source quotation, photograph, or collection object reproduced.' },
+    vergaraCopperModernization2004: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Attributed original synthesis and link only. No Spanish passage, table, source quotation, or archival extract reproduced; open access is not assumed to be blanket reuse permission.' },
     tocquevilleAlgeria1841French: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent paraphrase and link only. Historical authorship does not clear the modern PDF, transcription, or editorial assets for republication.' },
     tocquevilleAfricaReport1847French: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original summary and link only; no French passage, translated quotation, transcription, or facsimile republished.' },
     duongTocquevilleAlgeria2018: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Brief attributed abstract summary and link only. No article text, abstract quotation, or publisher asset reproduced.' },

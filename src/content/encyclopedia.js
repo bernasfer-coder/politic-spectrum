@@ -2593,6 +2593,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The 1919 Weimar provisions separate several institutional questions: Article 153 protected property, Article 159 protected labor association, and Article 165 envisaged workers and employees participating alongside employers. These provisions help distinguish ownership, collective organization, and participation. Their constitutional recognition alone cannot tell us how much power workers actually exercised.',
             citations: citations([], ['ghdiWeimarGerman']),
           },
+          {
+            type: 'paragraph',
+            text: 'Chile’s 1971 copper reform offers another distinction between ownership and participation. Law 17.450 transferred the specified large copper enterprises to national ownership. Its seventeenth transitional provision, letter k, maintained workers’ contracts and union and strike rights under existing conditions, and required a future statute to provide for participation in management. A legal instruction to provide participation is not evidence that workers controlled investment or daily operations.',
+            citations: citations([], ['chileCopperLaw17450']),
+          },
         ],
       },
       {
@@ -2640,6 +2645,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['ghdiGodesberg', 'sepSocialism']),
           },
           {
+            period: '1964–1971: Chile’s copper transformation crossed party boundaries',
+            text: 'Memoria Chilena traces nationalization through Eduardo Frei Montalva’s earlier policy of Chilean participation in foreign-owned mining enterprises and subsequent negotiations. It records unanimous congressional approval of the nationalization amendment on 11 July 1971 under Allende. Support for this measure was therefore broader than support for his entire socialist programme; national ownership alone cannot identify a single ideology.',
+            citations: citations([], ['memoriaCopperNationalization']),
+          },
+          {
+            period: '21 May 1971: Allende’s stated constitutional route',
+            text: 'Addressing Congress, Allende proposed a socialist transition through legal and constitutional channels, including eventual constitutional change. He pledged political freedoms for the opposition and freedom of conscience and belief. These are documented commitments in a political speech, not a finding that every action of his government or its supporters fulfilled them.',
+            citations: citations([], ['allendeCongress1971Spanish']),
+          },
+          {
+            period: '1970–1973: contested strategy and military overthrow',
+            text: 'The National Library’s account distinguishes agreement on copper from conflict over wider ownership changes, and describes divisions between accelerating and consolidating the transition. The armed-forces coup of 11 September 1973 ended the government. This bounded chronology does not establish a single cause of the breakdown or prove that every democratic-socialist strategy must share its outcome.',
+            citations: citations([], ['memoriaUnidadPopular']),
+          },
+          {
             period: 'Late twentieth century to the present: economic democracy and new transitions',
             text: 'Deindustrialization, globalization, the decline of union density, ecological crisis, and the financialization of the economy challenged older national strategies. Contemporary democratic-socialist arguments revisit cooperatives, public investment, universal basic services, social wealth funds, workplace democracy, municipal ownership, ecological planning, and the democratic control of technology. These proposals vary widely and should not be treated as one contemporary programme.',
             citations: citations(['bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'sepLuxemburg']),
@@ -2676,6 +2696,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Uses workplace or local participation to deepen a representative democracy.',
                 relation: 'A possible combination discussed in German revolutionary historiography; its historical feasibility remains contested.',
                 citations: citations([], ['kruseGermanRevolution', 'jesseKoehlerCouncilDebate']),
+              },
+              {
+                label: 'Chilean constitutional transition',
+                distinction: 'Allende presented structural ownership change as compatible with political pluralism and legality.',
+                relation: 'A stated strategy, not proof of implemented safeguards or agreement among all left-wing movements.',
+                citations: citations([], ['allendeCongress1971Spanish', 'memoriaUnidadPopular']),
               },
               {
                 label: 'Revolutionary democratic socialism',
@@ -2735,6 +2761,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Marx did not provide a single institutional blueprint for modern democratic socialism, and later regimes should not be read directly back into his texts.',
                 citations: citations(['marxEngelsManifesto'], ['sepSocialism']),
               },
+              {
+                name: 'Salvador Allende',
+                role: 'Chilean president advocating a constitutional socialist transition',
+                caveat: 'The 1971 address establishes his stated approach, not an exact six-axis match or a complete assessment of his presidency.',
+                citations: citations([], ['allendeCongress1971Spanish']),
+              },
             ],
           },
           {
@@ -2753,6 +2785,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'diverse historical institutions of participation',
                 caveat: 'Their politics and authority varied locally; a shared council name does not establish one programme or a realized democratic-socialist state.',
                 citations: citations([], ['kruseGermanRevolution', 'jesseKoehlerCouncilDebate']),
+              },
+              {
+                name: 'Chile’s Unidad Popular government',
+                period: '1970–1973',
+                match: 'historical transition project, not a completed model',
+                caveat: 'The coalition, society, and institutions were contested. This example does not classify present-day Chile or certify the entire period as matching this profile.',
+                citations: citations([], ['memoriaUnidadPopular']),
               },
               {
                 name: 'French socialist and republican traditions associated with Jaurès',
@@ -2819,6 +2858,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Ángela Vergara Marshall’s historical study complicates a purely presidential account of copper nationalization. She argues that pre-nationalization modernization raised efficiency while intensifying conflicts over employment and working conditions, strengthening support for nationalization. Her emphasis on Andes Copper and the period ending in July 1971 limits the inference: the study does not establish how successfully nationalized enterprises later operated or how democratically they were managed.',
+            citations: citations([], ['vergaraCopperModernization2004']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, democracy itself is not a guarantee of equality. Majorities can exclude minorities, national welfare systems can be bounded by citizenship, and socialist movements have historically reproduced gender, racial, colonial, and cultural hierarchies. The profile should therefore be evaluated through both economic ownership and the actual protection of plural political and social freedom.',
             citations: citations(['jauresSocialistHistory', 'wollstonecraftRights', 'millOnLiberty'], ['sepSocialism', 'sepLuxemburg', 'jauresArchive']),
           },
@@ -2827,8 +2871,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'jauresSocialistHistory', 'millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'kantPerpetualPeace', 'morgenthauRealism', 'leninStateRevolution'],
-      researchSourceIds: ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg', 'jauresArchive', 'sepLiberalism', 'sepReligionPolitics', 'luxemburgSpartacusGerman', 'ghdiWeimarGerman', 'kruseGermanRevolution', 'jesseKoehlerCouncilDebate', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
-      editorialNote: 'The entry keeps democratic socialism distinct from both reformist social democracy and authoritarian state socialism, while acknowledging that historical parties and authors use the labels differently. Scores describe a didactic democratic ownership profile, not a single party programme or country. German primary documents are paraphrased independently; GHDI provides selected excerpts. Luxemburg’s programme records proposals, and the Kruse and Jesse–Köhler accounts supply attributed historical interpretations. None measures six-axis coordinates.',
+      researchSourceIds: ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg', 'jauresArchive', 'sepLiberalism', 'sepReligionPolitics', 'luxemburgSpartacusGerman', 'ghdiWeimarGerman', 'kruseGermanRevolution', 'jesseKoehlerCouncilDebate', 'allendeCongress1971Spanish', 'chileCopperLaw17450', 'memoriaCopperNationalization', 'memoriaUnidadPopular', 'vergaraCopperModernization2004', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
+      editorialNote: 'The entry keeps democratic socialism distinct from both reformist social democracy and authoritarian state socialism, while acknowledging that historical parties and authors use the labels differently. Scores describe a didactic democratic ownership profile, not a single party programme or country. German primary documents are paraphrased independently; GHDI provides selected excerpts. Luxemburg’s programme records proposals, and the Kruse and Jesse–Köhler accounts supply attributed historical interpretations. None measures six-axis coordinates. The Chilean case distinguishes a presidential speech, statutory provisions, institutional synthesis, and a selected-section scholarly reading. Spanish material is independently paraphrased in English, not quoted or presented as a verified translation. No current-country claim or coordinate changes result.',
     },
     researchGaps: [
       'German primary documents and contrasting interpretations now cover part of the 1918–1919 council debate. Add local council records, implementation studies of Weimar labor participation, and specialist research on the SPD, Godesberg, East German socialist experience, and post-war constitutional debates. Compare Luxemburg’s programme with her other writings before generalizing its institutional commitments.',
@@ -2836,6 +2880,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add Portuguese- and Spanish-language scholarship on Iberian socialism, Latin American democratic socialism, Allende, social movements, and the different meanings of state, communal, and worker ownership.',
       'Add country-specific evidence before listing present parties, welfare states, or cooperative systems as democratic-socialist examples; party labels and institutions change over time.',
       'Add specialist research on gender, race, migration, disability, colonial legacies, ecology, technology, international trade, military alliances, and the governance of large-scale economic planning.',
+      'Collate Allende’s 21 May 1971 transcription with the complete parliamentary message. Read the full Unidad Popular programme, legislative debates, implementing statutes, compensation decisions, and workplace records before inferring democratic control or economic outcomes from the copper amendment.',
+      'Extend the Chilean case with independent studies of unions, cordones industriales, women, Indigenous communities, opposition, constitutional conflict, domestic and foreign intervention, and the 1973 coup. Read the full Vergara study and competing interpretations; the selected introduction and final reflections concern mainly the pre-nationalization period, not the whole presidency.',
     ],
   },
   'anarchist-communalist': {
