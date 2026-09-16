@@ -170,6 +170,8 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    brazilCouncilDecree1847: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase and official link only. No decree passage, facsimile, or translation reproduced; historical-text age is not blanket clearance for modern assets.' },
+    ferrazImperialCabinets2017: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The publisher landing page states CC BY 4.0 for journal content. This pass remains independent-summary-and-link only.', notes: 'No article passage, embedded historical quotation, figure, table, or PDF republished. Selected arguments are attributed and English wording is original synthesis.' },
     cdecAntisemiticDecrees1938: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent summary and link only; no legal passage, editorial text, translation, or document image reproduced. Historical legislation does not clear every modern collection component.' },
     anselmiPropertyReport2001: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original attributed paraphrase and link only; no report passage, archival quotation, table, or facsimile republished.' },
     ushmmItalyPersecution: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original synthesis and link only; no museum text, testimony, photograph, or map reproduced.' },

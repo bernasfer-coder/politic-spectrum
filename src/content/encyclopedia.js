@@ -6351,6 +6351,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Monarchy is therefore a poor proxy for the rest of the political spectrum. A crown can preside over a market economy or welfare state, a secular constitution or established church, a liberal democracy or an authoritarian regime, and a defensive or imperial foreign policy. The profile should be assigned only after the relevant constitutional and historical evidence is identified.',
             citations: citations(['nabucoAbolitionism', 'bagehotEnglishConstitution', 'lockeSecondTreatise'], ['bpbMonarchy', 'journalDemocraticMonarchies', 'vdem', 'sepReligionPolitics', 'foreignPolicy']),
           },
+          {
+            type: 'paragraph',
+            text: 'Brazil’s 1824 charter assigned the emperor both moderating power and executive leadership through ministers (articles 98–102). He could appoint and dismiss ministers and dissolve the Chamber under the stated condition of state necessity, immediately calling a replacement. This was constitutional authority beyond ceremony; the provisions alone do not establish how freely each power was exercised.',
+            citations: citations([], ['brazilConstitution1824']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The same charter established Catholicism while permitting other religions’ private worship without an outward temple form (article 5). Non-Catholics were ineligible as deputies (95.III), and freed people were excluded from the higher electoral tier (94.II), not categorically from all parish voting. These distinguish religious establishment, political eligibility, and citizenship: none is captured adequately by the word “monarchy” alone.',
+            citations: citations([], ['brazilConstitution1824']),
+          },
         ],
       },
       {
@@ -6386,6 +6396,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century: national, imperial, and constitutional monarchies',
             text: 'Monarchies adapted to nationalism, industrialization, mass politics, empire, and expanding but unequal citizenship. Some crowns became symbols above party politics while elected parliaments and cabinets gained practical power; others preserved executive authority, aristocratic privilege, colonial rule, or military command. Walter Bagehot’s analysis of the British constitution is a key historical account of the distinction between ceremonial and governing functions.',
             citations: citations(['bagehotEnglishConstitution', 'burkeReflections', 'nabucoAbolitionism'], ['oxfordMonarchyConstitution', 'journalDemocraticMonarchies', 'bpbMonarchy', 'sepColonialism']),
+          },
+          {
+            period: '1847: Brazil creates a president of the Council of Ministers',
+            text: 'Decree no. 523 of 20 July created the office and instructed the Council to prepare regulations for imperial approval. Its short text does not itself prescribe a complete system of parliamentary confidence. The creation of an office, the crown’s constitutional powers, and subsequent cabinet practice must therefore be studied separately.',
+            citations: citations([], ['brazilCouncilDecree1847']),
           },
           {
             period: 'Twentieth century: abolition, adaptation, and decolonization',
@@ -6429,6 +6444,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Both the monarch and representative institutions claim meaningful political legitimacy, producing a divided executive or recurring constitutional conflict.',
                 relation: 'It differs from a ceremonial crown because the monarch can shape government formation, legislation, emergency power, or foreign policy; stability depends on clear rules and accepted limits.',
                 citations: citations(['lockeSecondTreatise', 'bagehotEnglishConstitution'], ['oxfordConstitutionalMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordMonarchyConstitution']),
+              },
+              {
+                label: 'Brazilian reception of moderating-power doctrine, 1822–1824',
+                distinction: 'Christian Edward Cyril Lynch argues that Crown advisers adapted Benjamin Constant’s vocabulary of a neutral arbiter to defend substantial royal prerogatives against the constituent assembly.',
+                relation: 'This is an attributed interpretation of constitutional borrowing, not proof that the Brazilian arrangement reproduced Constant unchanged or that constitutional limits were meaningless. Original French texts and competing readings still need direct comparison.',
+                citations: citations([], ['lynchModeratingPower2005']),
               },
               {
                 label: 'Elective or dynastically selected monarchy',
@@ -6532,7 +6553,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: 'Brazil, 1822–1889',
                 match: 'A constitutional empire combined a hereditary head of state, representative institutions, national development debates, slavery and abolition struggles, and territorial integration across a large polity.',
                 caveat: 'The imperial constitution did not create equal citizenship in practice and remained entangled with slavery, elite power, Indigenous dispossession, and regional conflict. Nabuco’s abolitionism shows that constitutional royalism contained serious internal disagreements.',
-                citations: citations(['nabucoAbolitionism'], ['sepColonialism', 'openTextbook']),
+                citations: citations(['nabucoAbolitionism'], ['sepColonialism', 'openTextbook', 'brazilConstitution1824', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017']),
               },
               {
                 name: 'Contemporary democratic parliamentary monarchies',
@@ -6605,13 +6626,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, the claim that monarchy stabilizes democracy is empirical rather than self-evident. A crown may provide symbolic continuity in an established parliamentary system, but it can also obstruct reform, legitimize emergency power, or become a focal point for authoritarian politics. Any comparison should test electoral competition, peaceful alternation, civil liberties, rule of law, minority rights, public finance, and the actual behavior of the monarch and ministers instead of inferring democratic quality from the presence or absence of a royal family.',
             citations: citations(['bagehotEnglishConstitution', 'lockeSecondTreatise', 'nabucoAbolitionism'], ['journalDemocraticMonarchies', 'oxfordConstitutionalMonarchy', 'vdem', 'ohchrMinorityRights']),
           },
+          {
+            type: 'paragraph',
+            text: 'Sérgio Eduardo Ferraz’s 2017 study of 37 cabinets in Brazil’s Second Reign (1840–1889) challenges Crown-centered explanations of ministerial turnover. His classification distinguishes intervention by the Crown, the Chamber, both, or neither, and emphasizes the importance of losing legislative support. This contests a purely emperor-driven account without denying royal power; it is a scholarly interpretation, not proof of universal representation or democratic equality (pp. 63–64 and 68–69).',
+            citations: citations([], ['ferrazImperialCabinets2017']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Ferraz also investigates electoral rules and cabinet control of budget amendments in 1853–1860. His Table 7 and note 38 disclose a proxy for 1858 and no index for 1859 because no plenary budget decision occurred. Those limits matter: the study is not a complete annual measurement or a basis for recalibrating this site’s six axes (pp. 87–89).',
+            citations: citations([], ['ferrazImperialCabinets2017']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
-      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights'],
-      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen.',
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017'],
+      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked, not every cited archival record or book.',
     },
     researchGaps: [
       'Add French-language scholarship on divine-right monarchy, the French constitutional monarchies of 1791–1792, the Restoration, the July Monarchy, the Second Empire, royalism, republicanism, colonial monarchy, and the constitutional doctrines of the nineteenth century.',
@@ -6621,6 +6652,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative legal evidence on succession, regency, abdication, reserve powers, ministerial countersignature, royal immunity, public finance, court privilege, referendums, emergency powers, and judicial review across current monarchies and republics.',
       'Add specialist research on women and succession, marriage and citizenship, class and aristocracy, religion and minority rights, colonial extraction, Indigenous sovereignty, reparations, and the public meaning of royal ceremony.',
       'Test claims about monarchies and democratic stability with dated comparative data on civil liberties, executive constraints, party competition, peaceful alternation, corruption, welfare, inequality, public opinion, and the actual exercise of royal power.',
+      'Extend the Brazilian case through original parliamentary debates, the 1834 and 1840 constitutional changes, successive electoral laws, slavery and abolition, and local religious and citizenship practice. The 1824 charter and 1847 decree do not establish uniform implementation throughout 1822–1889.',
+      'Review Ferraz’s full cabinet-by-cabinet analysis and independently examine the coding, budget evidence, and competing historiography. The current review covers printed pages 63–64, 68–69, and 87–89; French editions of Constant and the original sources quoted by Lynch remain further work.',
+      'Reconcile the existing article/card differences through an explicit canonical-profile review: social −48 versus −45, authority +52 versus +62, and identity −42 versus −62. This historical pass preserves both records and does not invent replacement scores.',
     ],
   },
   theocratic: {

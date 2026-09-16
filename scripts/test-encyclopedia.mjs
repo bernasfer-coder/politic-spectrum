@@ -64,6 +64,27 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const monarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
+for (const [sourceId, evidenceRole] of [
+  ['brazilConstitution1824', 'primary'],
+  ['lynchModeratingPower2005', 'secondary'],
+  ['brazilCouncilDecree1847', 'primary'],
+  ['ferrazImperialCabinets2017', 'secondary'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs a claim-level citation`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve to one reused or new record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish formal rules from historical interpretation`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain the summary-and-link boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not introduce a quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const cabinetEvidence = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.includes('Table 7'));
+assert.ok(cabinetEvidence, 'the cabinet study needs an explicit evidence-boundary note');
+assert.match(cabinetEvidence.text, /proxy for 1858 and no index for 1859/, 'the selected budget evidence must preserve its missing-data and proxy qualifications');
+
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
   ['cdecAntisemiticDecrees1938', 'primary'],

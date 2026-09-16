@@ -1,6 +1,33 @@
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  brazilCouncilDecree1847: {
+    accessDate: '2026-09-16',
+    creators: ['Empire of Brazil / Pedro II', 'Francisco de Paula Sousa e Mello (ministerial signatory)'],
+    institution: 'Senado Federal (transcription host)',
+    sourceType: 'historical executive decree / Portuguese transcription',
+    evidenceRole: 'primary',
+    discipline: 'Brazilian constitutional and ministerial history',
+    publicationDate: '1847-07-20',
+    publisher: 'Empire of Brazil; digital host: Senado Federal',
+    confidence: 'high',
+    languages: ['Portuguese'],
+    description: 'Historical decree date, not the webpage date. The host warns that the transcription does not replace the original publication; no facsimile collation claimed.',
+  },
+  ferrazImperialCabinets2017: {
+    accessDate: '2026-09-16',
+    creators: ['Sérgio Eduardo Ferraz'],
+    institution: 'Revista de Sociologia e Política / Universidade Federal do Paraná (publisher host)',
+    sourceType: 'scholarly historical-institutional study / selected PDF pages',
+    evidenceRole: 'secondary',
+    discipline: 'cabinet survival and executive–legislative relations',
+    publicationDate: '2017-07-07',
+    publisher: 'Revista de Sociologia e Política, 25(62), pp. 63–91',
+    identifiers: { doi: '10.1590/1678-987317256203', publisherDoi: '10.5380/rsocp.v25i62.53760' },
+    confidence: 'high',
+    languages: ['Portuguese'],
+    description: 'Publisher posting date; issue and PDF say June 2017. The PDF and landing page display different DOIs, recorded separately. An attributed interpretation, not an uncontested account of the entire Empire.',
+  },
   cdecAntisemiticDecrees1938: {
     accessDate: '2026-09-16',
     creators: ['Kingdom of Italy / Fascist government', 'Michele Sarfatti and Irene De Francesco (collection editors)'],
