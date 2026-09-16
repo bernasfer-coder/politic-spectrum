@@ -64,6 +64,57 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const moroccoMonarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['moroccoConstitutionFrench2011', 'primary', '2011-07-30', ['French']],
+  ['constituteMorocco2011', 'primary', '2011', ['English']],
+  ['ruizMoroccoParliamentary2014', 'secondary', '2014', ['Spanish', 'English']],
+  ['elMessaoudiGovernment2015', 'secondary', '2015-07-13', ['Spanish']],
+]) {
+  assert.ok(moroccoMonarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a monarchist reference trail`);
+  assert.ok(JSON.stringify(moroccoMonarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+const moroccoFrench = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-moroccoConstitutionFrench2011');
+const moroccoEnglish = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-constituteMorocco2011');
+const ruizMorocco = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ruizMoroccoParliamentary2014');
+const elMessaoudiMorocco = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-elMessaoudiGovernment2015');
+assert.match(moroccoFrench.description, /29 July.*1 July 2011.*not interchangeable/);
+assert.match(moroccoFrench.note, /age twenty.*eighteen.*unresolved/);
+assert.match(moroccoEnglish.description, /not publication of this translation.*2012/);
+assert.match(moroccoEnglish.publisher, /Jefri J\. Ruchti/);
+assert.match(moroccoEnglish.license, /all rights reserved/);
+assert.match(ruizMorocco.note, /Full article.*were not reviewed/);
+assert.match(elMessaoudiMorocco.note, /Full displayed Spanish HTML.*sections 1–5 and notes/);
+assert.equal(elMessaoudiMorocco.identifiers.doi, '10.18543/ed-63(1)-2015pp389-401');
+assert.match(elMessaoudiMorocco.license, /CC BY-NC 4\.0.*commercial republication is not cleared/);
+const moroccoDescription = moroccoMonarchistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text ?? '').join(' ');
+const moroccoCriticisms = moroccoMonarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(moroccoDescription, /party finishing first.*absolute majority/);
+assert.match(moroccoDescription, /Council of Ministers.*distinct.*Council of Government/);
+assert.match(moroccoDescription, /does not establish secular separation/);
+assert.match(moroccoCriticisms, /article 19.*article 43.*Article 175/);
+assert.match(moroccoCriticisms, /age twenty.*eighteen.*not collated/);
+const moroccoVariant = moroccoMonarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Morocco 2011:'));
+assert.ok(moroccoVariant.citations.researchSourceIds.includes('ruizMoroccoParliamentary2014'));
+assert.ok(moroccoVariant.citations.researchSourceIds.includes('elMessaoudiGovernment2015'));
+assert.match(moroccoVariant.relation, /Only Ruiz Ruiz’s abstract was reviewed/);
+const moroccoExample = moroccoMonarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Morocco’s constitutional'));
+assert.equal(moroccoExample.period, '2011 text; interpretations published in 2014–2015');
+assert.match(moroccoExample.caveat, /does not classify present-day Morocco or its citizens/);
+assert.ok(moroccoMonarchistEntry.researchGaps.some((gap) => /article 44’s conflicting.*full Ruiz Ruiz/.test(gap)));
+assert.ok(moroccoMonarchistEntry.researchGaps.some((gap) => /article\/card differences/.test(gap)), 'the prior coordinate discrepancy must remain visible');
+
 const suezLiberationEntry = ENCYCLOPEDIA_ENTRIES['anti-colonial-liberation'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['suezNationalizationDecree1956', 'primary', '1956-07-26'],

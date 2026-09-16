@@ -7045,6 +7045,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Monarchism also should not be classified automatically as right-wing, religious, nationalist, or anti-democratic. Royalists have defended hierarchy, divine right, empire, and inherited privilege, but constitutional monarchists have also supported representative government, civil liberties, social insurance, and democratic continuity. This entry therefore scores the royal principle separately from the economic, social, identity, religious, and foreign-policy choices made by a particular movement or state.',
             citations: citations(['burkeReflections', 'nabucoAbolitionism', 'bagehotEnglishConstitution'], ['bpbMonarchy', 'journalDemocraticMonarchies', 'vdem', 'sepReligionPolitics']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Morocco’s 2011 text and its scholarly reception provide a bounded non-European comparison. A constitution’s parliamentary self-description is not by itself evidence that the crown has become ceremonial. This case concerns institutional design and interpretation, not a current-country match or an assessment of all African or Muslim monarchies.',
+            citations: citations([], ['moroccoConstitutionFrench2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']),
+          },
         ],
       },
       {
@@ -7085,6 +7090,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'evidence-note',
             text: 'The same charter established Catholicism while permitting other religions’ private worship without an outward temple form (article 5). Non-Catholics were ineligible as deputies (95.III), and freed people were excluded from the higher electoral tier (94.II), not categorically from all parish voting. These distinguish religious establishment, political eligibility, and citizenship: none is captured adequately by the word “monarchy” alone.',
             citations: citations([], ['brazilConstitution1824']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Morocco’s articles 41–42 distinguish the king’s religious and head-of-state functions without placing them in separate officeholders. Article 41 assigns royal leadership of the Ulema council and exclusive religious prerogatives while guaranteeing worship. Separately enumerating these functions does not establish secular separation or actual freedom of conscience.',
+            citations: citations([], ['moroccoConstitutionFrench2011']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Article 47 links appointment of the head of government to the party finishing first in lower-house elections; article 88 requires confidence from an absolute majority of that chamber’s members. Articles 48–49 nevertheless retain a royal-chaired Council of Ministers for strategic matters. It is distinct from the head-of-government-chaired Council of Government in article 92; delegation of chairing a specified ministerial meeting is possible. Neither “the king appoints” nor “parliament gives confidence” alone describes the arrangement.',
+            citations: citations([], ['constituteMorocco2011']),
+          },
+          {
+            type: 'paragraph',
+            text: 'El Messaoudi’s sections 2–4 emphasize strengthened governmental standing through investiture, shared appointment procedures and institutional regulation. Her conclusion also makes political actors’ use of the framework important. This is a legal interpretation of reform, not evidence that every constitutional possibility became effective accountability.',
+            citations: citations([], ['elMessaoudiGovernment2015']),
           },
         ],
       },
@@ -7133,6 +7153,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['nabucoAbolitionism', 'bagehotEnglishConstitution', 'burkeReflections'], ['oxfordMonarchyConstitution', 'sepColonialism', 'journalDemocraticMonarchies', 'openTextbook']),
           },
           {
+            period: 'July 2011: Morocco’s referendum, promulgation and publication',
+            text: 'The promulgating document records the referendum on 1 July; the dahir is dated 29 July and the official database lists Gazette publication on 30 July. These identify different stages, not evidence of voter motivation, electoral fairness or completed institutional implementation.',
+            citations: citations([], ['moroccoConstitutionFrench2011']),
+          },
+          {
             period: 'Contemporary parliamentary and executive monarchies',
             text: 'Current monarchies range from parliamentary systems with largely ceremonial crowns to regimes where royal institutions retain substantial executive, religious, or economic authority. Comparative democratic research treats the relationship between hereditary and elected legitimacy as an institutional question, not as evidence that all monarchies or all republics share one political profile.',
             citations: citations(['bagehotEnglishConstitution', 'nabucoAbolitionism'], ['ukParliamentCrown', 'journalDemocraticMonarchies', 'oxfordConstitutionalMonarchy', 'vdem', 'bpbMonarchy']),
@@ -7175,6 +7200,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Christian Edward Cyril Lynch argues that Crown advisers adapted Benjamin Constant’s vocabulary of a neutral arbiter to defend substantial royal prerogatives against the constituent assembly.',
                 relation: 'This is an attributed interpretation of constitutional borrowing, not proof that the Brazilian arrangement reproduced Constant unchanged or that constitutional limits were meaningless. Original French texts and competing readings still need direct comparison.',
                 citations: citations([], ['lynchModeratingPower2005']),
+              },
+              {
+                label: 'Morocco 2011: parliamentary government versus parliamentary monarchy',
+                distinction: 'Ruiz Ruiz’s abstract distinguishes a more parliamentary government from a monarch reduced to non-governing office, emphasizing remaining royal powers. El Messaoudi instead foregrounds gains in the government’s constitutional position.',
+                relation: 'These different emphases invite examination of both reform and retained power; they are not proof that either the constitution changed nothing or royal authority disappeared. Only Ruiz Ruiz’s abstract was reviewed.',
+                citations: citations([], ['ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']),
               },
               {
                 label: 'Elective or dynastically selected monarchy',
@@ -7288,6 +7319,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['bagehotEnglishConstitution', 'nabucoAbolitionism'], ['journalDemocraticMonarchies', 'ukParliamentCrown', 'oxfordConstitutionalMonarchy', 'vdem']),
               },
               {
+                name: 'Morocco’s constitutional architecture and early scholarly debate',
+                period: '2011 text; interpretations published in 2014–2015',
+                match: 'A comparison of dynastic office, religious authority and parliamentary government, not a numerical ideological match.',
+                caveat: 'Constitutional powers, scholarly assessments and later practice require separate evidence. This case does not classify present-day Morocco or its citizens.',
+                citations: citations([], ['moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']),
+              },
+              {
                 name: 'Executive, sacred, and postcolonial monarchies',
                 period: 'Contemporary and twentieth century; region- and state-specific',
                 match: 'Some monarchies retain meaningful executive, religious, military, economic, or dynastic authority, while others use the crown as a postcolonial or national symbol amid constitutional reform.',
@@ -7361,12 +7399,22 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Ferraz also investigates electoral rules and cabinet control of budget amendments in 1853–1860. His Table 7 and note 38 disclose a proxy for 1858 and no index for 1859 because no plenary budget decision occurred. Those limits matter: the study is not a complete annual measurement or a basis for recalibrating this site’s six axes (pp. 87–89).',
             citations: citations([], ['ferrazImperialCabinets2017']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Moroccan text juxtaposes equal-rights language in article 19 with male-line dynastic succession in article 43. Article 175 protects the monarchical form and Muslim religion from revision, alongside democratic choice and established fundamental rights. These are distinct constitutional commitments; their interaction needs interpretation and implementation evidence, not an inference that all public offices are equally accessible.',
+            citations: citations([], ['moroccoConstitutionFrench2011', 'constituteMorocco2011']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Source versions also need scrutiny: article 44’s advisory council continues until age twenty in the official French transcription but eighteen in the consulted English translation. The Arabic and Gazette versions were not collated, so the discrepancy is flagged rather than resolved. English prose here is original synthesis, not a certified translation. No six-axis coordinate or present-day enforcement finding follows from these texts.',
+            citations: citations([], ['moroccoConstitutionFrench2011', 'constituteMorocco2011']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
-      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017'],
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015'],
       editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked, not every cited archival record or book.',
     },
     researchGaps: [
@@ -7380,6 +7428,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the Brazilian case through original parliamentary debates, the 1834 and 1840 constitutional changes, successive electoral laws, slavery and abolition, and local religious and citizenship practice. The 1824 charter and 1847 decree do not establish uniform implementation throughout 1822–1889.',
       'Review Ferraz’s full cabinet-by-cabinet analysis and independently examine the coding, budget evidence, and competing historiography. The current review covers printed pages 63–64, 68–69, and 87–89; French editions of Constant and the original sources quoted by Lynch remain further work.',
       'Reconcile the existing article/card differences through an explicit canonical-profile review: social −48 versus −45, authority +52 versus +62, and identity −42 versus −62. This historical pass preserves both records and does not invent replacement scores.',
+      'Collate the Moroccan French and English constitutional texts with the Arabic and original Gazette editions, especially article 44’s conflicting advisory-council endpoint. Review the full Ruiz Ruiz article and additional French- and Arabic-language scholarship; the present comparison does not settle the reform’s competing interpretations.',
+      'Test Morocco’s formal allocation of powers against dated appointment records, cabinet and parliamentary proceedings, organic laws, judgments and independent accounts from opposition, women and religious minorities. Extend to emergency powers and amendment practice without assuming that institutional promises establish outcomes or a current-country score.',
     ],
   },
   theocratic: {
