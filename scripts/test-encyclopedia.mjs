@@ -106,6 +106,50 @@ assert.ok(authoritarianGdrEntry.researchGaps.some((gap) => gap.startsWith('Read 
 assert.ok(authoritarianGdrEntry.researchGaps.some((gap) => gap.startsWith('Read Ross’s complete thesis')));
 assert.deepEqual(Object.fromEntries(Object.entries(authoritarianGdrEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: 88, social: 18, authority: 86, identity: 38, foreign: -24, religion: 60 });
 
+const historicalFascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
+for (const [sourceId, role, date] of [
+  ['pasettiColonialismCorporative2016', 'secondary', '2017-04-23'],
+  ['treccaniRacismImperialism2022', 'secondary', null],
+  ['laricciaLateranPacts2016', 'secondary', '2016'],
+]) {
+  assert.ok(historicalFascistEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(historicalFascistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, ['Italian']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:historical-fascist']);
+}
+const pasettiRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-pasettiColonialismCorporative2016');
+assert.equal(pasettiRecord.identifiers.doi, '10.12977/stor655');
+assert.match(pasettiRecord.description, /23 April 2017/);
+assert.match(pasettiRecord.note, /selected sections read/);
+const fascistRacismRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-treccaniRacismImperialism2022');
+assert.match(fascistRacismRecord.description, /No publication date is displayed/);
+assert.match(fascistRacismRecord.note, /No publication date is displayed/);
+const laricciaRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-laricciaLateranPacts2016');
+assert.match(laricciaRecord.description, /Sergio Lariccia.*2016/);
+assert.match(laricciaRecord.note, /Full treaty facsimiles/);
+const fascistDescription = historicalFascistEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(fascistDescription.some(({ text }) => text?.includes('corporatist aspiration') && text.includes('colonial practice')));
+assert.ok(fascistDescription.some(({ text }) => text?.includes('colonial racial policy') && text.includes('1938')));
+const historicalFascistHistory = historicalFascistEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(historicalFascistHistory.some(({ period, text }) => period.startsWith('1930s: corporatist empire') && text.includes('fragmented')));
+const fascistVariant = historicalFascistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Corporatist imperialism'));
+assert.ok(fascistVariant);
+const imperialExample = historicalFascistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Italian East Africa and Libya'));
+assert.match(imperialExample.caveat, /uneven and limited/);
+const fascistCriticisms = historicalFascistEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(fascistCriticisms.some(({ text }) => text?.includes('category error') && text.includes('discipline labor')));
+assert.ok(fascistCriticisms.some(({ text }) => text?.includes('Lateran settlement') && text.includes('not be read as proof')));
+assert.ok(historicalFascistEntry.researchGaps.some((gap) => gap.startsWith('Read Pasetti’s full article')));
+assert.ok(historicalFascistEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1929 Lateran Treaty')));
+
 const liberalConstitutionalismEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, role, date] of [
   ['southAfricaConstitution1996Rights', 'primary', '1996'],

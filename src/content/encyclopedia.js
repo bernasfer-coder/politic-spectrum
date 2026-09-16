@@ -526,6 +526,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['mussoliniDoctrine', 'hitlerMeinKampf'], ['sepFascism', 'bpbFascism']),
           },
           {
+            type: 'paragraph',
+            text: 'Italian-language scholarship adds a necessary distinction between corporatist aspiration and colonial practice. Pasetti reconstructs colonial corporatism as a Fascist project that linked imperial rule to a supposed third way between liberalism and socialism, but finds its colonial institutions fragmented, overlapping, and subordinated to the one-party state. The project’s language of cooperation and labor did not erase racial hierarchy or turn colonized people into equal participants; its limited implementation often served administrative discipline and imperial legitimation.',
+            citations: citations([], ['pasettiColonialismCorporative2016']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Treccani’s Italian historical essay places colonial racial policy in the development of Fascist racism rather than treating the 1938 anti-Jewish laws as an isolated German import. It describes racial separation, restrictions on intimate relations in the colonies, colonial violence, and later metropolitan racial legislation as connected layers of a hierarchical imperial order. This is an attributed institutional synthesis, not a substitute for colonial archives, victim testimony, or a complete legal history.',
+            citations: citations([], ['treccaniRacismImperialism2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Lariccia’s Italian legal analysis of the Lateran Pacts shows why Fascist church policy cannot be reduced to either secular hostility or clerical control. The 1929 Treaty and Concordat resolved the Roman Question, created Vatican City, regulated Church–state relations, and made Catholicism the state religion in the settlement’s historical context. The arrangement expanded Catholic legal privilege while leaving the Fascist state’s political discretion and broader repression as separate questions.',
+            citations: citations([], ['laricciaLateranPacts2016']),
+          },
+          {
             type: 'evidence-note',
             text: 'RD-L 1728/1938, article 8, classified people through ancestry and, in some cases, religious affiliation; personal belief alone did not determine persecution. These were imposed racist categories, not biological facts. Editorially, this crosses the identity, authority, and religion axes: it cannot be reduced to a preference for religious government or used to calculate new coordinates.',
             citations: citations([], ['cdecAntisemiticDecrees1938']),
@@ -550,6 +565,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1925–1939: dictatorship, corporatism, church settlement, and empire',
             text: 'The Italian regime consolidated one-party rule while presenting corporatism as an alternative to both liberal capitalism and Marxist class conflict. In practice, corporatist institutions subordinated independent labor organization to state supervision rather than creating equal worker–employer governance. The 1929 Lateran Pacts reconciled the Fascist state with the Catholic Church and strengthened the regime’s legitimacy, while the Ethiopian war and colonial rule pushed Fascism toward a more explicit imperial and racial politics. These developments were connected but not identical: corporatism, church diplomacy, colonial violence, and racial legislation each require their own evidence.',
             citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'treccaniCorporativismo', 'treccaniLateranPacts', 'cambridgeMussolinisFollies', 'sageColonialDominationItaly']),
+          },
+          {
+            period: '1930s: corporatist empire, colonial violence, and racial law',
+            text: 'Pasetti’s Italian study traces a Fascist project to extend corporative organization into the colonies, especially in relation to Libya and Italian East Africa. It finds a gap between the rhetoric of a cooperative imperial labor order and an administrative reality marked by fragmented, overlapping bodies, party control, racial subordination, and limited implementation. Treccani’s Italian synthesis further connects colonial racial regulation from 1935 with the racial legislation imposed in Italy in 1938. These sources show ideological and institutional links without collapsing every colonial policy or racial law into one mechanism.',
+            citations: citations([], ['pasettiColonialismCorporative2016', 'treccaniRacismImperialism2022']),
           },
           {
             period: '1938: Italian state legislation against Jews',
@@ -609,6 +629,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['griffinNatureFascism'], ['ushmmFascism', 'bpbFascism']),
               },
               {
+                label: 'Corporatist imperialism versus implemented colonial rule',
+                distinction: 'Pasetti distinguishes the regime’s project of corporatist administration and imperial third-way legitimation from fragmented colonial institutions, party subordination, racial hierarchy, and modest implementation.',
+                relation: 'This is a historically specific Fascist variant, not evidence that corporatism was either wholly fictitious or an emancipatory system for colonized workers.',
+                citations: citations([], ['pasettiColonialismCorporative2016']),
+              },
+              {
                 label: 'Authoritarian conservatism and military dictatorship',
                 distinction: 'May share hierarchy, nationalism, anti-communism, censorship, or military rule without a revolutionary mass movement, palingenetic myth, or fascist party-state project.',
                 relation: 'Important boundary case; authoritarianism alone is not enough to establish fascism.',
@@ -651,6 +677,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'The degree to which Spain and other regimes should be classified as fascist is debated; movement influence, coalition politics, and later authoritarian institutions should be separated.',
                 citations: citations(['griffinNatureFascism'], ['ushmmFascism', 'bpbFascism']),
               },
+              {
+                name: 'Italian East Africa and Libya: Fascist colonial empire',
+                period: '1931–1941 emphasis',
+                match: 'strong match on imperial expansion, racial hierarchy, party-state administration, and colonial corporatist experimentation',
+                caveat: 'The colonial institutions were uneven and limited; this example concerns Fascist rule and its subjects, not a claim about all Italian colonial history or a single uniform experience across Libya, Eritrea, Ethiopia, and Somalia.',
+                citations: citations([], ['pasettiColonialismCorporative2016', 'treccaniRacismImperialism2022']),
+              },
             ],
           },
         ],
@@ -688,6 +721,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Colonial corporatism also exposes a category error: institutions called cooperative or corporative can be designed to discipline labor and organize unequal imperial membership. Pasetti’s evidence suggests that Fascist colonial corporatism remained fragmented and discriminatory in practice, while Treccani’s account links racial law and colonial violence without making colonial policy a complete explanation of Italian Fascism. The entry must keep project, law, administration, violence, and social experience distinct.',
+            citations: citations([], ['pasettiColonialismCorporative2016', 'treccaniRacismImperialism2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Lateran settlement is another boundary case. Lariccia’s legal analysis shows a treaty-based church–state arrangement that gave Catholicism a privileged legal position, but it should not be read as proof that Fascism was simply clerical or that the Church and regime had identical aims. Religious privilege, institutional bargaining, political subordination, and later revision of the settlement need separate evidence.',
+            citations: citations([], ['laricciaLateranPacts2016']),
+          },
+          {
+            type: 'paragraph',
             text: 'Nazi crimes must never be diluted by treating them as a generic “strong government” outcome. Racial persecution, the Holocaust, aggressive war, forced labor, and mass murder are historically documented practices of the Nazi state and must remain explicit in any educational presentation of this card.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmFascism', 'bpbNationalSocialism']),
           },
@@ -721,6 +764,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'cdecAntisemiticDecrees1938',
         'anselmiPropertyReport2001',
         'ushmmItalyPersecution',
+        'pasettiColonialismCorporative2016',
+        'treccaniRacismImperialism2022',
+        'laricciaLateranPacts2016',
       ],
       editorialNote: 'The entry separates primary fascist and Nazi texts from comparative scholarship and institutional historical sources. The profile is a warning and comparison aid, not a diagnosis of contemporary people or countries. Selected 1938 decrees are primary evidence of prescribed rules; the 2001 commission report and USHMM article provide later historical interpretation. English legal summaries are paraphrases, not quotations or certified translations. None establishes a measured six-axis score.',
     },
@@ -732,6 +778,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Collate the selected CDEC legal transcriptions against original Gazette facsimiles; extend research to the 1939 implementing provisions, ministerial circulars, and provincial enforcement records before claiming a complete legislative history.',
       'Add victim testimony and specialist local studies of Italian and German cooperation, refusal, arrest, dispossession, and restitution. Keep mainland Italy, occupation zones, and colonial territories distinct; no casualty totals are inferred from this focused pass.',
       'Review the full Anselmi report and further Italian-language scholarship; the current evidence covers selected reprinted sections, not every archival case or a complete account of institutional responsibility.',
+      'Read Pasetti’s full article and the cited colonial-law, labor, and Africanist literature in the original editions, then compare Libya and Italian East Africa with archival evidence from colonized people, workers, administrators, and local institutions. The selected study establishes the project–implementation distinction but not a complete colonial history.',
+      'Collate the 1929 Lateran Treaty and Concordat, the 1935–1937 colonial racial provisions, the 1938 Italian racial laws, and the 1943–1944 repeal/revision record in Italian originals and official gazettes. Lariccia and Treccani provide legal/historical orientation, not a complete primary-law or implementation audit.',
     ],
   },
   'libertarian-market': {
