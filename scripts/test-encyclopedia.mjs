@@ -64,6 +64,60 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
+for (const [sourceId, role, date] of [
+  ['irishAssemblyTerms2016', 'primary', '2016-07'],
+  ['irishAssemblySelection2016', 'primary', null],
+  ['irishAssemblyRecruitment2018', 'primary', '2018-02-21'],
+  ['suiterEpistemicDeliberation2021', 'secondary', '2021-07-23'],
+  ['carolanGlennonConsensus2024', 'secondary', '2024-03-08'],
+  ['doyleWalshRejoinder2024', 'secondary', '2024-03-08'],
+]) {
+  assert.ok(deliberativeCentreEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(deliberativeCentreEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:centrist-pragmatist']);
+}
+const deliberationStudyRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-suiterEpistemicDeliberation2021');
+assert.deepEqual(deliberationStudyRecord.creators, ['Jane Suiter', 'David M. Farrell', 'Clodagh Harris', 'Philip Murphy']);
+assert.equal(deliberationStudyRecord.identifiers.doi, '10.1177/14789299211020909');
+assert.match(deliberationStudyRecord.description, /first online publication.*2022/);
+assert.match(deliberationStudyRecord.note, /No transcript recoding, statistical replication/);
+assert.match(deliberationStudyRecord.license, /CC BY 4\.0/);
+const consensusReplyRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-carolanGlennonConsensus2024');
+assert.equal(consensusReplyRecord.identifiers.doi, '10.1093/icon/moae012');
+assert.match(consensusReplyRecord.note, /sections 1–2/);
+const consensusRejoinderRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-doyleWalshRejoinder2024');
+assert.equal(consensusRejoinderRecord.identifiers.doi, '10.1093/icon/moae015');
+assert.match(consensusRejoinderRecord.note, /Expert Advisory Group but write personally/);
+assert.match(consensusRejoinderRecord.license, /CC BY 4\.0/);
+const recruitmentStatementRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-irishAssemblyRecruitment2018');
+assert.match(recruitmentStatementRecord.description, /7 February 2023 update/);
+assert.match(recruitmentStatementRecord.note, /audit was not independently reviewed/);
+const centreDescription = deliberativeCentreEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(centreDescription.some(({ text }) => text?.includes('majority voting, not unanimity') && text.includes('not automatic implementation')));
+assert.ok(centreDescription.some(({ text }) => text?.includes('did not establish that participants mirrored every public attitude')));
+const centreHistory = deliberativeCentreEntry.sections.find(({ id }) => id === 'history').timeline;
+const irishExperimentIndex = centreHistory.findIndex(({ period }) => period.startsWith('2016–2018: Irish'));
+assert.ok(irishExperimentIndex >= 0 && irishExperimentIndex < centreHistory.findIndex(({ period }) => period.startsWith('Present:')));
+const irishProceduralExample = deliberativeCentreEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Ireland’s Citizens’ Assembly');
+assert.match(irishProceduralExample.caveat, /Neither the members nor their recommendations inherit/);
+const centreCriticisms = deliberativeCentreEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(centreCriticisms.some(({ text }) => text?.includes('excludes private roundtables') && text.includes('causal effect on voters')));
+assert.ok(centreCriticisms.some(({ text }) => text?.includes('January 2018 referendum-procedure meeting, not the earlier abortion meetings')));
+assert.ok(centreCriticisms.some(({ text }) => text?.includes('Carolan and Glennon interpret') && text.includes('Doyle and Walsh reply')));
+assert.ok(deliberativeCentreEntry.researchGaps.some((gap) => gap.startsWith('Audit the Irish recruitment methodology')));
+assert.ok(deliberativeCentreEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Carolan–Glennon argument')));
+assert.deepEqual(Object.fromEntries(Object.entries(deliberativeCentreEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: 0, social: 0, authority: 8, identity: 0, foreign: 15, religion: 10 });
+
 const christianDemocracyEntry = ENCYCLOPEDIA_ENTRIES['christian-democratic'];
 for (const [sourceId, role, date, language] of [
   ['sweetMaritainPolitical2019', 'secondary', '2019-05-01', 'English'],

@@ -9280,6 +9280,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['lijphartPatternsDemocracy'], ['lijphartConsensusDemocracy', 'oxfordPoliticalCentrism', 'sepDemocracy']),
           },
           {
+            type: 'paragraph',
+            text: 'Under Ireland’s July 2016 mandate, 99 referendum-eligible citizens and a government-appointed chair were to consider specified questions, assisted by experts. Recommendations went to parliament; on abortion, a joint committee was to consider them. Decisions used majority voting, not unanimity, and the government owed a response—not automatic implementation.',
+            citations: citations([], ['irishAssemblyTerms2016']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Assembly’s selection account describes geographic sampling and demographic quotas, voluntary participation, replacements and exclusion of issue-advocacy representatives from membership. Broad demographic balance was the stated aim; it did not establish that participants mirrored every public attitude. Recruitment rules and who actually participates therefore require separate scrutiny.',
+            citations: citations([], ['irishAssemblySelection2016', 'carolanGlennonConsensus2024', 'doyleWalshRejoinder2024']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Suiter, Farrell, Harris and Murphy compared public speech on abortion in the Assembly and a parliamentary committee using word-frequency measures of cognitive complexity. They report more integrative discussion in the Assembly. This supports a bounded argument about deliberative conditions, not citizen infallibility or ideological moderation.',
+            citations: citations([], ['suiterEpistemicDeliberation2021']),
+          },
+          {
             type: 'evidence-note',
             text: 'This profile is deliberately didactic and near the midpoint on several dimensions. It does not claim that moderation is always good, that extremes are always bad, or that evidence eliminates political judgment. A democratic pragmatic orientation still needs substantive commitments to equal citizenship, rights, accountability, social repair, and the ability of citizens to reject the policy consensus.',
             citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepPragmatism', 'sepDemocracy', 'coeDemocraticGovernance', 'oxfordPoliticalCentrism']),
@@ -9329,6 +9344,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1990s–2010s: technocracy, coalition governance, and democratic distrust',
             text: 'Centrist parties and institutions increasingly relied on experts, independent regulators, coalition bargaining, evidence-based administration, and global economic coordination. These tools could stabilize policy and reduce winner-take-all conflict, but they also created distance from citizens, weakened mass-party organization, and narrowed the range of alternatives considered governable. The financial crisis and austerity debates intensified questions about who bears the costs of pragmatic compromise.',
             citations: citations(['giddensThirdWay', 'lijphartPatternsDemocracy'], ['oxfordThirdWayConversion', 'lijphartConsensusDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance']),
+          },
+          {
+            period: '2016–2018: Irish deliberative experiment',
+            text: 'The July 2016 mandate established a recommendation-making body on specified constitutional and policy questions. Its place here illustrates participatory institutional design, not Ireland’s classification as a centrist country.',
+            citations: citations([], ['irishAssemblyTerms2016']),
           },
           {
             period: 'Present: polarization, new coalitions, and the contested centre',
@@ -9492,6 +9512,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Evidence does not determine values or distribution by itself. Expertise must be transparent, contestable, accessible, and accountable to affected communities.',
                 citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepPragmatism', 'sepDemocracy', 'coeDemocraticGovernance']),
               },
+              {
+                name: 'Ireland’s Citizens’ Assembly',
+                period: '2016–2018; procedural comparison only',
+                match: 'Citizens’ recommendations, expert advice and parliamentary consideration had distinct roles.',
+                caveat: 'Neither the members nor their recommendations inherit this entry’s near-midpoint scores. Deliberation can support substantial change, retain disagreement, or produce recommendations that public authorities reject.',
+                citations: citations([], ['irishAssemblyTerms2016', 'carolanGlennonConsensus2024', 'doyleWalshRejoinder2024']),
+              },
             ],
           },
         ],
@@ -9536,6 +9563,26 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The speech study excludes private roundtables and includes only people speaking in plenary; facilitators sometimes spoke for participants (note 5). Its language-based proxies do not establish equal participation, correct conclusions or a causal effect on voters. The authors also call for testing measurement reliability across contexts.',
+            citations: citations([], ['suiterEpistemicDeliberation2021']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In its 21 February 2018 statement, the Assembly reported that seven replacements had been recruited outside the agreed door-to-door method through a recruiter’s contacts. They attended only the January 2018 referendum-procedure meeting, not the earlier abortion meetings. Their removal left the majority position indeterminate for four questions. This documents a safeguard failure and institutional response; the contractor’s claim that it was isolated is not independently verified here.',
+            citations: citations([], ['irishAssemblyRecruitment2018']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Carolan and Glennon interpret the abortion case as clarifying an existing desire for constitutional change into specific legislative proposals, rather than creating that desire (sections 1–2). Doyle and Walsh reply that agreement on a specific proposal across legislators and voters is itself part of building the required constitutional consensus (section 2). These are competing accounts of influence, not evidence that deliberation necessarily moves politics toward a numerical centre.',
+            citations: citations([], ['carolanGlennonConsensus2024', 'doyleWalshRejoinder2024']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The English institutional pages establish reported rules and events; the articles offer measurements or interpretations with different limits. Doyle and Walsh disclose that they advised the Assembly and write personally, not on its behalf. No recruitment audit, transcript dataset, polling series or Irish-language version was independently checked. No direct quotations, new country scores or questionnaire recalibration follow.',
+            citations: citations([], ['irishAssemblySelection2016', 'irishAssemblyRecruitment2018', 'suiterEpistemicDeliberation2021', 'carolanGlennonConsensus2024', 'doyleWalshRejoinder2024']),
+          },
+          {
+            type: 'paragraph',
             text: 'A fourth criticism concerns Third Way and market-centre projects. Reconciliation between markets and social protection can be constructive, but market-compatible modernization may weaken labor bargaining, privatize public goods, or turn equality into opportunity rhetoric without redistribution. The historical record must distinguish social investment from austerity, public regulation from deregulation, and broad citizenship from consumer-oriented policy.',
             citations: citations(['giddensThirdWay', 'keynesGeneralTheory'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion', 'oxfordPoliticalCentrism']),
           },
@@ -9559,7 +9606,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['lijphartPatternsDemocracy', 'giddensThirdWay', 'millOnLiberty', 'keynesGeneralTheory', 'tocquevilleDemocracy', 'kantPerpetualPeace', 'lockeLetterToleration', 'morgenthauRealism', 'lockeSecondTreatise'],
-      researchSourceIds: ['oxfordPoliticalCentrism', 'lijphartConsensusDemocracy', 'oxfordThirdWayConversion', 'wileyThirdWayGiddens', 'sepPragmatism', 'sepDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance', 'foreignPolicy', 'sepLiberalism', 'vdem', 'sepReligionPolitics', 'blairSchroeder1999Excerpt', 'wiesenthalThirdWay2010', 'swissCollegialConsensus', 'gallusJesseThirdWays2002'],
+      researchSourceIds: ['oxfordPoliticalCentrism', 'lijphartConsensusDemocracy', 'oxfordThirdWayConversion', 'wileyThirdWayGiddens', 'sepPragmatism', 'sepDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance', 'foreignPolicy', 'sepLiberalism', 'vdem', 'sepReligionPolitics', 'blairSchroeder1999Excerpt', 'wiesenthalThirdWay2010', 'swissCollegialConsensus', 'gallusJesseThirdWays2002', 'irishAssemblyTerms2016', 'irishAssemblySelection2016', 'irishAssemblyRecruitment2018', 'suiterEpistemicDeliberation2021', 'carolanGlennonConsensus2024', 'doyleWalshRejoinder2024'],
       editorialNote: 'Centrism is context-dependent positioning, not a universal midpoint or moral superiority. The entry distinguishes programme commitments, institutional descriptions, scholarly interpretations, and illustrative matching. The centre-left Third Way alias is qualified because the phrase has other historical uses. All six coordinates remain unchanged and match the existing reference card; they are not research-derived measurements of the examples.',
     },
     researchGaps: [
@@ -9573,6 +9620,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Obtain the complete Blair–Schröder declaration and parallel-language provenance; compare later laws and distributional studies before attributing welfare or employment outcomes to its promises. Extend the Wiesenthal excerpt review to the original essay and contrasting interpretations.',
       'Compare Swiss official descriptions with independent institutional research and records of dissent, participation, responsibility, and inclusion. Check linked constitutional provisions separately; do not convert executive power-sharing into a whole-country centrist rating.',
       'Extend the selected Gallus–Jesse reading to other historical uses and their primary works. Preserve distinct meanings of “third way” rather than merging every use into this centre-left reference profile.',
+      'Audit the Irish recruitment methodology, contractor report, attrition, participation supports and issue-advocacy exclusions against original records and independent research. Distinguish demographic balance, initial attitudes, speaking opportunities and the wider public; do not project January 2018’s irregularity onto earlier topics.',
+      'Read the complete Carolan–Glennon argument and the earlier Doyle–Walsh studies alongside competing scholarship and primary parliamentary records. Reproduce the speech study where permitted, test its word-frequency proxies and compare polling questions before attributing public opinion or policy change to deliberation; the broader multilingual and non-European research gaps remain open.',
     ],
   },
   'liberal-constitutionalist': {
