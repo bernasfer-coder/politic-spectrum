@@ -1127,6 +1127,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The authority principle is an active but limited state. Regulation, taxation, welfare, and public services are legitimate only within a framework of accountability, rights, judicial review, transparent administration, and open contestation. The profile therefore evaluates not only what government does, but whether citizens can challenge and replace those who exercise power.',
             citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['vdem', 'sepLiberalism']),
           },
+          {
+            type: 'paragraph',
+            text: 'The original 1935 United States Social Security Act makes the institutional differences within public provision concrete. Title I, sections 1–4, authorized federal grants for state plans assisting needy older people. It required state financial participation, an administering or supervising state agency, and a hearing for a denied applicant; it also provided for withholding federal payments when specified requirements were breached. These were legal safeguards and funding conditions, not proof that every applicant received equal treatment in practice.',
+            citations: citations([], ['ssaOldAgeAssistance1935']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Title II was a different federal old-age-benefits programme. Sections 202 and 210 connected entitlement to age and wages from defined employment. Section 210(b) excluded agricultural labor, domestic service in a private home, and several other employment categories. Those exclusions concerned covered work, not a statutory rule declaring every Black person ineligible for every programme in the act. Conversely, the absence of an explicit racial category in this definition does not establish equal effects or settle why the exclusions were chosen. These are the original provisions, not current eligibility rules.',
+            citations: citations([], ['ssaOldAgeBenefits1935']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The didactic lesson is to inspect programme boundaries rather than infer a complete ideology from the existence of a welfare law. Need-based assistance and employment-linked benefits allocate responsibilities and eligibility differently. Their statutory design can illustrate active public provision without establishing universal inclusion, uniform administration, or the success of a reform. This case informs how the profile is read; it does not supply a new numerical score for the United States or for any individual.',
+            citations: citations([], ['ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935']),
+          },
         ],
       },
       {
@@ -1159,6 +1174,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['keynesGeneralTheory', 'kantPerpetualPeace'], ['sepLiberalism', 'foreignPolicy']),
           },
           {
+            period: '14 August 1935: social security as an unfinished reform',
+            text: 'In the signing-statement excerpt preserved by the Social Security Administration, Franklin D. Roosevelt presented the law as an incomplete step toward meeting human needs and stabilizing the economy. This documents a public justification for reform, not proof that the stated goals were achieved. Reading the statement alongside Titles I and II separates the protective promise from the law’s particular administrative arrangements and coverage limits.',
+            citations: citations([], ['fdrSocialSecuritySigning1935', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935']),
+          },
+          {
             period: '1960s–present: rights expansion and pluralist reform',
             text: 'Civil-rights, feminist, anti-colonial, disability, LGBTQ+, and other equality movements broadened the meaning of liberal citizenship. Contemporary progressive liberalism remains internally divided over economic inequality, identity, speech, policing, migration, environmental regulation, and the limits of international intervention.',
             citations: citations(['wollstonecraftRights', 'millOnLiberty', 'kantPerpetualPeace'], ['sepLiberalism', 'vdem']),
@@ -1177,6 +1197,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Combines civil liberties and private enterprise with public services, social insurance, regulation, and equal opportunity.',
                 relation: 'Closest named family to this profile; its economic and social range is still broad.',
                 citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism']),
+              },
+              {
+                label: 'New Deal social-security reform: a bounded United States case',
+                distinction: 'The 1935 act combined different forms of old-age provision, with distinct federal-state responsibilities and eligibility rules.',
+                relation: 'An institutional comparison, not a synonym for progressive liberalism or a claim that social protection automatically secured equal citizenship.',
+                citations: citations([], ['ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935']),
               },
               {
                 label: 'French republican social liberalism',
@@ -1243,6 +1269,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['keynesGeneralTheory'], ['sepLiberalism']),
               },
               {
+                name: 'Franklin D. Roosevelt',
+                role: 'president who publicly defended the 1935 Social Security Act as social protection and economic stabilization',
+                caveat: 'The cited statement supports this specific public argument, not an exact six-axis match, a comprehensive assessment of his presidency, or a claim of universal coverage.',
+                citations: citations([], ['fdrSocialSecuritySigning1935', 'ssaOldAgeBenefits1935']),
+              },
+              {
                 name: 'Immanuel Kant',
                 role: 'influence on universal rights and international peace',
                 caveat: 'Kant’s eighteenth-century philosophy is a source of concepts, not a direct contemporary party profile.',
@@ -1261,11 +1293,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['millOnLiberty', 'wollstonecraftRights'], ['sepLiberalism']),
               },
               {
-                name: 'New Deal and post-war liberal reform',
-                period: '1930s–1960s',
-                match: 'partial economic and institutional resemblance',
-                caveat: 'Welfare and public investment expanded, but the United States retained significant racial exclusion, unequal rights, private economic power, and interventionist foreign policy.',
-                citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepLiberalism', 'vdem']),
+                name: 'United States Social Security Act of 1935',
+                period: '1935 original legislation; later amendments require separate review',
+                match: 'partial social-protection resemblance, documented through the law and presidential justification',
+                caveat: 'Title I assistance and Title II benefits were not one uniform entitlement. Occupational exclusions limit this example; neither the United States nor the entire New Deal is treated as a complete match for the profile.',
+                citations: citations([], ['ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935']),
               },
               {
                 name: 'Post-war Western European social liberalism',
@@ -1327,6 +1359,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The French republican case adds a specific caution: universal citizenship can be emancipatory when it blocks inherited legal hierarchy, yet insufficient when abstract equality obscures patterned exclusion or treats minority organization as a threat to common citizenship. Laïcité likewise has both a rights-protecting interpretation and more contested state-cultural interpretations; the label should not be used as shorthand for either secular neutrality or hostility to religion.',
             citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
           },
+          {
+            type: 'paragraph',
+            text: 'The causes of the 1935 coverage limits require historical argument beyond the statute. Larry DeWitt’s 2010 article attributes the Title II exclusions chiefly to Treasury concerns about tax collection and administration, challenging accounts centered on Southern legislators. He distinguishes these decisions from the politics of state-administered assistance. This is his interpretation, not an automatic statement of the agency’s position. His table uses 1930 occupational data, not observed benefit payments. It indicates disproportionate exposure to the exclusions, a different question from the motive for adopting them.',
+            citations: citations([], ['dewittCoverageExclusions2010']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The UNC Press description of Mary Poole’s 2006 study presents a broader account of racialized policy formation involving liberal as well as conservative actors. Only that publisher description, not the full book, has been reviewed here. It identifies a substantive alternative to a simple reformers-versus-obstructionists story, not an independently verified resolution of the debate. Editorially, this entry keeps legal coverage, unequal effects, stated administrative reasons, and historical explanations distinct; neither race-neutral wording nor a disparity alone settles every question about motive and institutional discrimination.',
+            citations: citations([], ['pooleSegregatedOrigins2006', 'ssaOldAgeBenefits1935']),
+          },
         ],
       },
     ],
@@ -1345,14 +1387,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'constantLibertyModerns',
         'tocquevilleDemocracy',
       ],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'vdem', 'foreignPolicy'],
-      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual.',
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
+      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual. The 1935 case uses historical law and a statement excerpt, separately from later interpretation. Poole’s book is represented only by its publisher description; no full-book review, present-day eligibility assessment, or complete New Deal history is claimed.',
     },
     researchGaps: [
       'Expand French-language primary and specialist scholarship on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality, including colonial and postcolonial critiques.',
       'Add German-language scholarship on new liberalism, the social market, post-war constitutional democracy, and debates over welfare-state authority.',
       'Add country-specific evidence for the Progressive Era, New Deal, post-war Europe, and contemporary liberal democracies rather than relying on broad period labels.',
       'Add specialist research on colonialism, race, migration, disability, LGBTQ+ rights, environmental policy, and the tensions between universalism and pluralism.',
+      'Read Poole’s full study and competing scholarship alongside the original hearings, Treasury records, and Black reform organizations’ evidence; test distinct claims about intent, administrative feasibility, structural discrimination, and implementation rather than declaring the historiography settled.',
+      'Extend the bounded 1935 case through later amendments, state administration, gender and occupational inequalities, and post-war reforms. Audit the separate reference card’s broad Roosevelt and New Deal source links against specific historical evidence; this one-entry pass does not change those cards.',
     ],
   },
   'national-conservative': {

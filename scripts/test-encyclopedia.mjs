@@ -64,6 +64,55 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const progressiveEntry = ENCYCLOPEDIA_ENTRIES['progressive-liberal'];
+const progressiveProfile = ARCHETYPES.find(({ id }) => id === 'progressive-liberal').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(progressiveEntry.dimensionInterpretations[id].score, progressiveProfile[id], `progressive-liberal.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole] of [
+  ['ssaOldAgeAssistance1935', 'primary'],
+  ['ssaOldAgeBenefits1935', 'primary'],
+  ['fdrSocialSecuritySigning1935', 'primary'],
+  ['dewittCoverageExclusions2010', 'secondary'],
+  ['pooleSegregatedOrigins2006', 'secondary'],
+]) {
+  assert.ok(progressiveEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a progressive-liberal reference trail`);
+  assert.ok(JSON.stringify(progressiveEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary evidence and interpretation`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its publication boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
+}
+const assistance1935 = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ssaOldAgeAssistance1935');
+const benefits1935 = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ssaOldAgeBenefits1935');
+const rooseveltStatement = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-fdrSocialSecuritySigning1935');
+const dewittCoverage = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-dewittCoverageExclusions2010');
+const pooleDescription = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-pooleSegregatedOrigins2006');
+assert.equal(assistance1935.publicationDate, '1935-08-14');
+assert.equal(benefits1935.publicationDate, '1935-08-14');
+assert.notEqual(assistance1935.canonicalUrl, benefits1935.canonicalUrl, 'the two distinct statutory titles need specific source links');
+assert.match(rooseveltStatement.sourceType, /selected excerpt/, 'a displayed excerpt must not become a complete-speech review');
+assert.equal(dewittCoverage.publicationDate, '2010-11', 'article and original legislation dates must remain distinct');
+assert.match(dewittCoverage.description, /not a consensus finding/, 'the administrative explanation must remain attributed');
+assert.match(pooleDescription.sourceType, /publisher-description-only/, 'a publisher description must not become full-book review');
+assert.equal(pooleDescription.publicationDate, '2006-05-29');
+const progressiveDescription = progressiveEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(progressiveDescription, /Title II was a different federal/, 'assistance and federal benefits must not become one uniform programme');
+assert.match(progressiveDescription, /not a statutory rule declaring every Black person ineligible/, 'occupational exclusions must not become an explicit universal racial bar');
+assert.match(progressiveDescription, /does not establish equal effects/, 'race-neutral statutory wording must not establish equal outcomes');
+assert.match(progressiveDescription, /original provisions, not current eligibility rules/, 'the historical statute must not become current benefits guidance');
+const progressiveCriticism = progressiveEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(progressiveCriticism, /1930 occupational data, not observed benefit payments/, 'occupational exposure must not be reported as observed outcomes');
+assert.match(progressiveCriticism, /Only that publisher description, not the full book/, 'limited access must remain visible in the prose');
+const originalActExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'United States Social Security Act of 1935');
+assert.ok(originalActExample.citations.researchSourceIds.includes('ssaOldAgeBenefits1935'), 'the narrowed historical example needs the specific law');
+assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Read Poole’s full study')), 'historiographical follow-up must remain open');
+assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Audit the separate reference card')), 'the unchanged card’s broad source links need an explicit follow-up');
+
 const conservativeEntry = ENCYCLOPEDIA_ENTRIES.conservative;
 const conservativeProfile = ARCHETYPES.find(({ id }) => id === 'conservative').profile;
 for (const { id } of DIMENSIONS) {
