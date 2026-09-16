@@ -64,6 +64,50 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const nozickMarketEntry = ENCYCLOPEDIA_ENTRIES['libertarian-market'];
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['nozickRectification1974UT', 'primary', '1974', ['English']],
+  ['sepNozickPolitical2022', 'secondary', '2022-04-21', ['English']],
+  ['coutoEntitlement2017', 'secondary', '2017-11', ['Portuguese', 'English']],
+]) {
+  assert.ok(nozickMarketEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a market-libertarian reference trail`);
+  assert.ok(JSON.stringify(nozickMarketEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:libertarian-market']);
+}
+const nozickExcerpt = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-nozickRectification1974UT');
+assert.match(nozickExcerpt.note, /not collated with a print edition/);
+assert.match(nozickExcerpt.description, /Separate from the existing whole-work bibliography record/);
+const nozickMack = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sepNozickPolitical2022');
+assert.match(nozickMack.description, /not a new 2025 revision/);
+assert.match(nozickMack.canonicalUrl, /archives\/spr2025/);
+const nozickCouto = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-coutoEntitlement2017');
+assert.equal(nozickCouto.identifiers.doi, '10.5007/1677-2954.2017v16n2p289');
+assert.match(nozickCouto.note, /pp\. 296–300, notes and references visually checked/);
+assert.match(nozickCouto.description, /Vitor Guerreiro/);
+assert.match(nozickCouto.description, /edition was not separately inspected/);
+const nozickDescription = JSON.stringify(nozickMarketEntry.sections.find(({ id }) => id === 'description'));
+assert.match(nozickDescription, /temporarily broader state action/);
+assert.match(nozickDescription, /not an unconditional endorsement of Rawls/);
+assert.match(nozickDescription, /incompletely specified/);
+const nozickCriticism = JSON.stringify(nozickMarketEntry.sections.find(({ id }) => id === 'criticisms'));
+assert.match(nozickCriticism, /Aluízio Couto/);
+assert.match(nozickCriticism, /philosophical objection, not an empirical prediction/);
+assert.match(nozickCriticism, /distinct from Nozick’s own conditional passage/);
+assert.deepEqual(Object.fromEntries(Object.entries(nozickMarketEntry.dimensionInterpretations).map(([id, value]) => [id, value.score])), { economic: -86, social: 34, authority: -88, identity: 34, foreign: 72, religion: 55 });
+assert.ok(nozickMarketEntry.researchGaps.some((gap) => gap.includes('Extend the selected Friedman reading')));
+assert.ok(nozickMarketEntry.researchGaps.some((gap) => gap.includes('Collate the university-hosted Nozick excerpt')));
+assert.ok(nozickMarketEntry.researchGaps.some((gap) => gap.includes('Litan, Schmidtz, Epstein and Cohen')));
+
 const rojavaLibertarianEntry = ENCYCLOPEDIA_ENTRIES['libertarian-socialist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['rojavaCharter2014Institute', 'primary', '2014'],

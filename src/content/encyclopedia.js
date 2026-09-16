@@ -778,6 +778,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The profile is not the same as “anything a market-friendly person believes.” It combines economic decentralization with a strong anti-coercion principle. A person or party may support markets while also accepting a large welfare state, military intervention, religious law, or strong cultural regulation; such a position should be scored on those dimensions separately.',
             citations: citations(['millOnLiberty', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Defending property is not automatically defending whoever currently possesses it. Nozick’s chapter 7 closing passage makes past injustice relevant to whether holdings should be protected or corrected; a market label cannot answer that historical question by itself.',
+            citations: citations([], ['nozickRectification1974UT']),
+          },
         ],
       },
       {
@@ -803,6 +808,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'A public good is not simply anything supplied by government. Tyler Cowen’s account distinguishes the difficulty of excluding nonpayers from consumption that leaves the benefit available to others. It examines both tax funding and arrangements such as bundling or repeated cooperation. This distinction matters here: identifying a collective benefit does not automatically select its provider, financing mechanism, or legal rules.',
             citations: citations([], ['cowenPublicGoods']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In Eric Mack’s reading, entitlement depends on just acquisition, transfer and, where necessary, rectification—not merely the present distribution’s shape. He also stresses that Nozick leaves the specific entitlement-generating procedures incompletely specified (section 4.1). Historical reasoning is a framework to develop, not a ready-made verdict on every existing title.',
+            citations: citations([], ['sepNozickPolitical2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'At the end of chapter 7, Nozick allows that repairing past wrongs could justify transfer payments and temporarily broader state action. His tentative rule favoring the least advantaged depends on assumptions about victims and beneficiaries, and he questions its plausibility. This is not an unconditional endorsement of Rawls’s difference principle or of every redistributive policy.',
+            citations: citations([], ['nozickRectification1974UT']),
           },
         ],
       },
@@ -841,6 +856,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['friedmanEducation1955']),
           },
           {
+            period: '1974 — entitlement and the unfinished rectification problem',
+            text: 'Anarchy, State, and Utopia defends a minimal state while reserving a significant role for repairing injustice. Its closing chapter 7 discussion leaves the detailed rectification theory for further work; the qualification belongs to the original argument, not an inferred later conversion.',
+            citations: citations(['nozickASU'], ['nozickRectification1974UT']),
+          },
+          {
             period: 'Contemporary debates',
             text: 'Current libertarian philosophy contains right- and left-libertarian positions, minarchism, anarcho-capitalism, market anarchism, and hybrid classical-liberal approaches. The major disputes concern original appropriation, redistribution, public goods, borders, environmental harm, social insurance, corporate power, and the legitimacy of the state itself.',
             citations: citations(['nozickASU', 'millOnLiberty'], ['sepLibertarianism']),
@@ -877,6 +897,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'The Walter Eucken Institut’s history and Goldschmidt–Wohlgemuth propositions emphasize general competition rules and constraints on private economic power, rather than unrestricted laissez-faire.',
                 relation: 'A state capable of enforcing the competitive order is part of this account. Market orientation therefore does not make ordoliberalism synonymous with minarchism or anarcho-capitalism, nor establish its position on the other axes.',
                 citations: citations([], ['euckenFreiburgHistory']),
+              },
+              {
+                label: 'Rectification versus maintaining a distributive pattern',
+                distinction: 'Correcting a rights violation differs from repeatedly adjusting holdings to preserve a preferred distribution.',
+                relation: 'A transfer’s justification matters; its outward appearance alone does not settle whether it conflicts with an entitlement theory.',
+                citations: citations([], ['nozickRectification1974UT', 'sepNozickPolitical2022']),
               },
               {
                 label: 'Anarcho-capitalism',
@@ -933,8 +959,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'Robert Nozick',
                 role: 'rights-based defender of the minimal state',
-                caveat: 'Nozick’s argument is one influential philosophical version, not a consensus definition of libertarianism.',
-                citations: citations(['nozickASU'], ['sepLibertarianism']),
+                caveat: 'Nozick’s argument is one influential philosophical version, not a consensus definition of libertarianism. The chapter 7 qualification on rectification matters when using him as an illustrative reference.',
+                citations: citations(['nozickASU'], ['sepLibertarianism', 'nozickRectification1974UT']),
               },
               {
                 name: 'Milton Friedman',
@@ -1023,6 +1049,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Aluízio Couto’s Portuguese-language critique asks what would happen with perfect historical information. He argues that rigorously restoring ancient entitlements could destabilize present ownership, while allowing time and settled expectations to limit claims would alter a purely historical theory (2017, pp. 296–300). This is a philosophical objection, not an empirical prediction; he explicitly distinguishes it from defending the status quo.',
+            citations: citations([], ['coutoEntitlement2017']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Reading safeguard: Couto’s reconstruction and Mack’s interpretation are distinct from Nozick’s own conditional passage. Neither a thought experiment nor this short excerpt establishes the remedy for any actual land claim or the effects of a real transfer programme. The six-axis profile remains a didactic approximation, not a computed result of these arguments.',
+            citations: citations([], ['coutoEntitlement2017', 'sepNozickPolitical2022', 'nozickRectification1974UT']),
+          },
+          {
+            type: 'paragraph',
             text: 'Friedman’s footnote 2 also requires critical context: he rejected compulsory segregation yet defended privately segregated schools and opposed compulsory integration, while preferring integration if public schools forced that choice. This argument is not evidence of equal access. It exposes a conflict between his account of choice and remedies against exclusion.',
             citations: citations([], ['friedmanEducation1955']),
           },
@@ -1047,7 +1083,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'kantPerpetualPeace',
         'morgenthauRealism',
       ],
-      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates'],
+      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates', 'nozickRectification1974UT', 'sepNozickPolitical2022', 'coutoEntitlement2017'],
       editorialNote: 'The entry distinguishes primary arguments from comparative philosophical interpretation. Its scores describe one market-libertarian archetype and do not define all classical liberals, libertarians, or market-oriented governments. The education essay is primary policy argument; Cowen and the German institutional sources provide attributed interpretation, not causal programme evaluation. German pages were reconsulted on 16 September 2026; English summaries are original paraphrases, not source translations. All six coordinates remain unchanged.',
     },
     researchGaps: [
@@ -1058,6 +1094,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Review empirical education-finance research and civil-rights history, including admission rules, affordability, disability access, and segregation; the 1955 proposal and its predictions are not outcome evidence.',
       'Compare original Eucken and Böhm editions with independent critical histories before generalizing from the institute’s retrospective account; Austrian, Chicago, and Freiburg approaches still need separate treatment.',
       'Extend the selected Friedman reading to the remaining vocational-finance discussion and later revisions, and compare Nozick’s original entitlement and rectification arguments without assuming agreement among market-oriented thinkers.',
+      'Collate the university-hosted Nozick excerpt with an identified 1974 print edition and read chapter 7 in full, including acquisition, proviso and transfer arguments. Compare the Vitor Guerreiro Portuguese edition directly; Couto’s altered holdings terminology and translation pagination must not be silently imported as Nozick’s English wording.',
+      'Examine contrasting accounts of rectification, including the Litan, Schmidtz, Epstein and Cohen works discussed in the secondary sources. Separate moral entitlement, legal title, proof, beneficiaries, time limits and remedies; philosophical examples do not establish which policy works or resolve any current claim.',
     ],
   },
   'progressive-liberal': {
