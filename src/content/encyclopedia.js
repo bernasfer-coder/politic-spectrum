@@ -4564,6 +4564,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'In GHDI’s German excerpt of the 1974 GDR constitution, Article 1 assigns leadership to the working class and its Marxist-Leninist party. Article 8 renounces conquest and military action against another people’s freedom. These are primary statements of institutional design and official commitments, not evidence that citizens controlled the party or that foreign policy fulfilled the stated principles.',
             citations: citations([], ['ghdiGdrConstitution1974']),
           },
+          {
+            type: 'paragraph',
+            text: 'The New Economic Policy (NEP) provides an earlier distinction between economic coordination and political authority. In The Tax in Kind, Lenin defended replacing surplus requisitions with a tax and allowing exchange after payment. He acknowledged renewed capitalist activity while presenting it as a controlled transition, not an abandonment of Soviet power.',
+            citations: citations([], ['leninTaxInKind1921']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Bukharin’s July 1921 lecture made the political purpose explicit: economic concessions were intended to preserve the dictatorship rather than introduce coalition government. This records a leader’s justification, not proof of popular consent or successful implementation.',
+            citations: citations([], ['bukharinNewEconomicPolicy1921']),
+          },
         ],
       },
       {
@@ -4584,6 +4594,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1917–1921: Bolshevik revolution, civil war, and the transitional state',
             text: 'The Bolshevik seizure of power created the first durable regime claiming Marxist revolutionary legitimacy. Civil war, foreign intervention, economic collapse, and the need to consolidate authority shaped institutions as much as pre-existing theory. Lenin’s arguments about the state and revolutionary transition must therefore be read alongside the practical emergency conditions that made party, security, and administrative power central.',
             citations: citations(['leninStateRevolution', 'luxemburgReformRevolution'], ['sepMarx', 'sepLuxemburg', 'ushmmCommunism']),
+          },
+          {
+            period: '1921: economic concessions and the ban on party factions',
+            text: 'Lenin’s preliminary Party Unity draft proposed dissolving organized factions, with expulsion for noncompliance, while channeling criticism through party procedures. It is not the final resolution. The bpb synthesis separately documents the 1921 faction ban and its later use against Stalin’s rivals, alongside the reopening of private economic activity under NEP.',
+            citations: citations([], ['leninPartyUnityDraft1921', 'schattenbergBolshevikVictory2014']),
           },
           {
             period: '1920s–1953: Stalinism, collectivization, industrialization, and party-state consolidation',
@@ -4678,6 +4693,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['leninStateRevolution'], ['aeaChinaSocialism', 'oxfordHistoryCommunism', 'vdem']),
               },
               {
+                label: 'NEP as a transitional strategy',
+                distinction: 'Lenin’s argument accommodated trade under continuing state direction rather than treating every market transaction as incompatible with socialist transition.',
+                relation: 'A dated policy strategy, not a separate timeless ideology or an anarcho-capitalist program.',
+                citations: citations([], ['leninTaxInKind1921']),
+              },
+              {
                 label: 'Church–state accommodation within a party-state',
                 distinction: 'Hugi’s GDR account includes institutional dialogue alongside efforts to restrict churches.',
                 relation: 'A policy relationship, not a separate communist doctrine or evidence that religious participants endorsed party rule. Accommodation must not be mistaken for either ideological agreement or equal political power.',
@@ -4707,6 +4728,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['leninStateRevolution'], ['sepMarx', 'oxfordHistoryCommunism']),
               },
               {
+                name: 'Nikolai Bukharin — 1921 NEP argument',
+                role: 'Defended incentives for peasant production while maintaining control of major industries.',
+                caveat: 'This lecture does not establish his complete political trajectory or independently verify its economic claims.',
+                citations: citations([], ['bukharinNewEconomicPolicy1921']),
+              },
+              {
                 name: 'Rosa Luxemburg',
                 role: 'Revolutionary socialist who defended mass democratic action and criticized bureaucratic substitution of party leadership for popular political freedom.',
                 caveat: 'Luxemburg is included as an internal communist and revolutionary-socialist boundary, not as evidence that every Marxist-Leninist regime was democratic or that her positions resolve all institutional questions.',
@@ -4729,6 +4756,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'Foundational party-state case spanning revolutionary rupture, civil war, central planning, collectivization, Stalinist terror, wartime mobilization, post-Stalin reform, and bureaucratic late socialism.',
                 caveat: 'The USSR changed substantially across Lenin, Stalin, Khrushchev, Brezhnev, and Gorbachev. One score cannot represent all periods or all Soviet republics.',
                 citations: citations(['leninStateRevolution', 'arendtTotalitarianism'], ['ushmmCommunism', 'oxfordHistoryCommunism']),
+              },
+              {
+                name: 'Soviet Russia’s NEP turn',
+                period: '1921; subsequent development requires period-specific evidence',
+                match: 'A historical case for comparing economic opening with restrictions on organized political disagreement.',
+                caveat: 'The bpb account describes renewed private trade and contested social changes. Neither uniform prosperity nor political pluralism follows from the policy label.',
+                citations: citations([], ['schattenbergBolshevikVictory2014', 'bukharinNewEconomicPolicy1921']),
               },
               {
                 name: 'People’s Republic of China',
@@ -4810,12 +4844,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Jugendweihe example cautions against reading public participation as unconstrained personal conviction when schools, workplaces, and political police influence the available choices. This is an inference from the archive’s account, not a survey finding. Independent testimony and local records are still needed to understand participants’ motives, differences among communities, and the limits of police reporting.',
             citations: citations([], ['bundesarchivJugendweihe']),
           },
+          {
+            type: 'evidence-note',
+            title: 'Policy arguments are not outcome measurements',
+            text: 'The 1921 primary texts defend the ruling party’s choices. Their accusations against opponents are not adopted here as neutral explanations. English translations and a German historical synthesis support this bounded comparison; Russian originals and local enforcement remain unverified. No current-country classification or numerical coordinates are changed.',
+            citations: citations([], ['leninPartyUnityDraft1921', 'bukharinNewEconomicPolicy1921', 'schattenbergBolshevikVictory2014']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['marxEngelsManifesto', 'leninStateRevolution', 'luxemburgReformRevolution', 'bernsteinEvolutionarySocialism', 'arendtTotalitarianism', 'andersonImaginedCommunities', 'morgenthauRealism', 'spinozaPolitical'],
-      researchSourceIds: ['sepMarx', 'sepSocialism', 'sepLuxemburg', 'ushmmCommunism', 'oxfordHistoryCommunism', 'ghdiMarxLeninism', 'aeaChinaSocialism', 'panAfricanism', 'sepColonialism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'ghdiGdrConstitution1974', 'hugiGdrChurchPolicy', 'bundesarchivJugendweihe'],
+      researchSourceIds: ['sepMarx', 'sepSocialism', 'sepLuxemburg', 'ushmmCommunism', 'oxfordHistoryCommunism', 'ghdiMarxLeninism', 'aeaChinaSocialism', 'panAfricanism', 'sepColonialism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'ghdiGdrConstitution1974', 'hugiGdrChurchPolicy', 'bundesarchivJugendweihe', 'leninTaxInKind1921', 'leninPartyUnityDraft1921', 'bukharinNewEconomicPolicy1921', 'schattenbergBolshevikVictory2014'],
       editorialNote: 'The main score is a didactic Marxist-Leninist party-state profile. It should not be used as a verdict on every communist thinker, socialist party, revolutionary movement, or present government. Marxian theory, Leninist organization, Stalinist rule, Maoism, democratic communism, anarcho-communism, and market-socialist systems remain separately identifiable traditions.',
     },
     researchGaps: [
@@ -4827,6 +4867,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add a dedicated comparison of communist-party constitutional language with observed party competition, executive constraints, judicial independence, civil liberties, and mechanisms for leadership succession.',
       'Extend the bounded GDR case with the full 1949, 1968, and 1974 constitutional texts, verified print editions, scholarship on enforcement, church and minority perspectives, and independently reviewed archival files. The GHDI excerpt does not include the religion article; Hugi’s summary is not a substitute for that primary-text comparison.',
       'Compare Jugendweihe participation through local and participant-led evidence without inferring belief from attendance. Audit the separate FreeMode person/country source mappings; this encyclopedia-only case does not validate those comparisons.',
+      'Collate the 1921 NEP texts with Russian originals, verified print editions and the adopted Party Unity resolution; identify the Bukharin translator and trace differences between draft, final wording and later editorial annotations.',
+      'Add independent regional evidence on NEP outcomes and enforcement, including peasant and worker perspectives, party opposition, economic inequality and the policy’s ending. This bounded 1921 reading does not complete the broader Bukharin or Soviet institutional research gaps.',
     ],
   },
   'anarcho-capitalist': {

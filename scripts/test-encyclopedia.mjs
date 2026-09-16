@@ -64,6 +64,43 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const communistNepEntry = ENCYCLOPEDIA_ENTRIES.communist;
+for (const [sourceId, evidenceRole, publicationDate, language] of [
+  ['leninTaxInKind1921', 'primary', '1921-05', 'English'],
+  ['leninPartyUnityDraft1921', 'primary', '1921', 'English'],
+  ['bukharinNewEconomicPolicy1921', 'primary', '1921', 'English'],
+  ['schattenbergBolshevikVictory2014', 'secondary', '2014-08-05', 'German'],
+]) {
+  assert.ok(communistNepEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a communist-entry reference trail`);
+  assert.ok(JSON.stringify(communistNepEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:communist'], `${sourceId} must stay within this entry`);
+}
+const nepTaxRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-leninTaxInKind1921');
+const nepDraftRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-leninPartyUnityDraft1921');
+const nepBukharinRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-bukharinNewEconomicPolicy1921');
+assert.match(nepTaxRecord.description, /Completed 21 April 1921; first published May 1921/, 'composition and publication dates must stay distinct');
+assert.match(nepTaxRecord.note, /Yuri Sdobnikov/, 'translation attribution must remain visible');
+assert.match(nepDraftRecord.note, /draft, not a transcription of the adopted resolution/, 'draft status must remain explicit');
+assert.match(nepBukharinRecord.note, /translator unidentified/, 'unknown translation provenance must not be invented');
+assert.match(nepBukharinRecord.license, /host’s statement/, 'a host rights assertion must not become blanket clearance');
+const nepTimeline = communistNepEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1921:'));
+assert.ok(nepTimeline.citations.researchSourceIds.includes('leninPartyUnityDraft1921'));
+assert.ok(nepTimeline.citations.researchSourceIds.includes('schattenbergBolshevikVictory2014'));
+assert.match(nepTimeline.text, /not the final resolution/, 'draft and enacted institutional history need separate treatment');
+const nepEvidence = communistNepEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ title }) => title === 'Policy arguments are not outcome measurements');
+assert.match(nepEvidence.text, /not adopted here as neutral explanations/, 'polemical allegations must not become unqualified historical findings');
+assert.match(nepEvidence.text, /No current-country classification or numerical coordinates are changed/);
+assert.ok(communistNepEntry.researchGaps.some((gap) => gap.includes('independent regional evidence on NEP outcomes')), 'implementation research must remain open');
+
 const antiColonialEntry = ENCYCLOPEDIA_ENTRIES['anti-colonial-liberation'];
 const antiColonialProfile = ARCHETYPES.find(({ id }) => id === 'anti-colonial-liberation').profile;
 for (const { id } of DIMENSIONS) {
