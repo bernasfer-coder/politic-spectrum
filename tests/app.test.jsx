@@ -16,6 +16,7 @@ import {
   DIMENSIONS,
   ENCYCLOPEDIA_ENTRIES,
   OPTION_VALUES,
+  PALETTES,
   QUESTIONS,
   SPECTRUM_BANDS,
 } from '../src/content/index.js';
@@ -32,6 +33,21 @@ afterEach(() => {
 });
 
 describe('scoring helpers', () => {
+  it('gives every reference profile an explicit, readable palette', () => {
+    for (const profile of ARCHETYPES) {
+      const palette = PALETTES[profile.id] || PALETTES[profile.palette];
+      expect(palette, `${profile.id} needs a registered palette`).toBeDefined();
+      expect(palette.primary).toMatch(/^#[0-9a-f]{6}$/i);
+      expect(palette.background).toMatch(/^#[0-9a-f]{6}$/i);
+      expect(profile.accent).toBe(palette.primary);
+    }
+
+    expect(ARCHETYPES.find(({ id }) => id === 'national-socialist').palette).toBe('national-socialist');
+    expect(PALETTES['national-socialist'].label).toMatch(/black \/ red/i);
+    expect(PALETTES['national-socialist'].background).toBe('#030405');
+    expect(PALETTES['national-socialist'].primary).toBe('#ff3038');
+  });
+
   it('keeps Italian fascism and Nazism as distinct documented reference profiles', () => {
     const italian = ARCHETYPES.find(({ id }) => id === 'historical-fascist');
     const nazi = ARCHETYPES.find(({ id }) => id === 'national-socialist');
