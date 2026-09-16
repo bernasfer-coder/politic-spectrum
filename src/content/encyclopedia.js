@@ -117,6 +117,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Economic collectivization also changed across time. Central plans, state enterprises, collective farms, rationing, workplace incentives, family plots, private firms, export markets, and state-owned finance have appeared in different combinations. China and Vietnam’s later market reforms, for example, do not erase one-party authority, while Cuba and North Korea should not be assumed to have identical economic or legal systems. “Collectivist” records the direction of ownership and public control, not a fixed production technology.',
             citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['aeaChinaSocialism', 'oxfordAuthoritarianConsolidation', 'oxfordWorkersCommunism', 'cambridgeCommunistIdeologyAdaptation']),
           },
+          {
+            type: 'paragraph',
+            text: 'East Germany’s June 1953 dispute makes the ownership/control distinction concrete. In its 16 June declaration, the SED Politburo upheld productivity growth but rejected imposing a ten-percent work-norm increase administratively, instead advocating persuasion and voluntary agreement. It proposed reviewing the government decision with the unions. These are the leadership’s stated positions, not independent proof that workers could freely refuse targets or choose alternative representatives.',
+            citations: citations([], ['sedNormsDeclaration1953']),
+          },
         ],
       },
       {
@@ -152,6 +157,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Eastern European party-states and state–labour relations — 1945–1989',
             text: 'East Germany and other Soviet-aligned regimes combined party monopolies with planned or state-directed economies, social provision, workplace organizations, and varying degrees of surveillance and repression. Workers were not simply passive: scholarship documents support, negotiation, manipulation, and resistance within institutions that still denied independent political organization.',
             citations: citations(['arendtTotalitarianism', 'bernsteinEvolutionarySocialism'], ['ghdiMarxLeninism', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'ushmmCommunism']),
+          },
+          {
+            period: '15 June 1953: a documented workplace demand',
+            text: 'Workers at the Friedrichshain hospital construction site asked Prime Minister Otto Grotewohl to withdraw the increased work norm at their site and answer by the following midday. Their resolution contrasted concessions to returning private proprietors with workers’ burdens. Signed for the workplace union leadership, it records collective pressure through an existing organization, not a programme shared by every East German worker.',
+            citations: citations([], ['friedrichshainWorkers1953']),
+          },
+          {
+            period: '16–17 June 1953: from work norms to political challenge',
+            text: 'Ciesla, Hertle and Wahl describe Berlin protests extending to demands for free elections and government resignation. The withdrawal announcement did not end the movement. Soviet forces intervened, shots killed and injured people, and emergency rule suppressed the challenge. This Berlin-focused account should not replace investigation of other localities or turn an uprising into evidence of one uniform political programme.',
+            citations: citations([], ['cieslaHertleWahlBerlin1953']),
           },
           {
             period: 'Decolonization and non-European communist regimes — 1945–1980s',
@@ -225,6 +240,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'National development and anti-imperialism can coexist with class universalism, official patriotism, and restricted pluralism; each dimension needs separate evidence.',
                 citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['oxfordAuthoritarianConsolidation', 'oxfordHistoryCommunism', 'sepColonialism']),
               },
+              {
+                label: 'Material concessions versus independent political control',
+                distinction: 'Lemke interprets the aftermath of June 1953 as combining social and economic concessions with stronger safeguards for party rule.',
+                relation: 'Responsiveness under pressure is not the same as democratic accountability. The comparison concerns institutions, not whether every concession was merely fictitious or every worker supported the same alternative.',
+                citations: citations([], ['lemkeJuneUprising2003']),
+              },
             ],
           },
         ],
@@ -256,11 +277,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['marxEngelsManifesto', 'arendtTotalitarianism'], ['ushmmCommunism', 'sepSocialism']),
               },
               {
-                name: 'East Germany and other Soviet-aligned party-states',
-                period: 'post-war twentieth century',
-                match: 'institutional family resemblance, with important national differences',
-                caveat: 'The label describes a comparative pattern, not identical levels of repression, ownership, prosperity, legitimacy, or public participation across states.',
-                citations: citations(['arendtTotalitarianism'], ['sepSocialism']),
+                name: 'German Democratic Republic: the June 1953 crisis',
+                period: 'June 1953; Berlin-focused evidence',
+                match: 'conflict between party-state authority and workplace demands',
+                caveat: 'A dated institutional comparison, not a classification of protesters, the whole GDR period or other Soviet-aligned states.',
+                citations: citations([], ['friedrichshainWorkers1953', 'sedNormsDeclaration1953']),
               },
               {
                 name: 'China after market reform',
@@ -325,6 +346,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Official explanations also require criticism. Lemke traces how admissions of policy failure coexisted with, and were increasingly overshadowed by, allegations of an externally directed fascist plot. Those allegations are evidence of official legitimation, not this entry’s explanation of the uprising. His analysis of subsequent security measures and concessions also cautions against equating repression with an absence of all worker influence.',
+            citations: citations([], ['lemkeJuneUprising2003']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'For this model, Soviet military intervention and the GDR’s own foreign-policy preferences must remain separate questions. Likewise, a work-norm dispute cannot determine each participant’s religion or social outlook. These documents deepen the economic and authority comparison; they do not calibrate six numerical coordinates for the state or its opponents.',
+            citations: citations([], ['cieslaHertleWahlBerlin1953']),
+          },
+          {
+            type: 'paragraph',
             text: 'Another criticism is temporal and comparative. China and Vietnam retained one-party authority while moving toward market coordination, whereas North Korea and Cuba followed more rigid or distinct paths; the Soviet Union and Eastern European regimes also changed across leadership and period. Comparative classification should record reform, succession, crisis, foreign aid, national development, and institutional adaptation rather than assume that every communist state follows one linear trajectory.',
             citations: citations(['leninStateRevolution', 'arendtTotalitarianism'], ['oxfordAuthoritarianConsolidation', 'cambridgeCommunistIdeologyAdaptation', 'oxfordContemporarySocialistLaw', 'aeaChinaSocialism']),
           },
@@ -347,8 +378,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'bakuninStatism',
       ],
-      researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem'],
-      editorialNote: 'References support different layers of the entry: primary texts for stated theories, scholarly works for interpretation, and institutional/encyclopedic sources for bounded historical context. The expanded comparative sources are used to separate Soviet, East European, Chinese, Vietnamese, Cuban, North Korean, and postcolonial trajectories; no source is treated as proving an exact six-axis score.',
+      researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem', 'friedrichshainWorkers1953', 'sedNormsDeclaration1953', 'cieslaHertleWahlBerlin1953', 'lemkeJuneUprising2003'],
+      editorialNote: 'References support different layers of the entry: primary texts for stated theories and demands, scholarly works for interpretation, and institutional sources for bounded historical context. The comparative sources separate Soviet, East European, Chinese, Vietnamese, Cuban, North Korean, and postcolonial trajectories. The June 1953 case distinguishes workers’ demands, party declarations, historical reconstruction and editorial comparison; no source proves an exact six-axis score. German passages are independently paraphrased, not quoted or presented as verified translations. Edition and date qualifications remain in the bibliography.',
     },
     researchGaps: [
       'Add country-specific scholarly sources for East Germany, Mao-era China, Vietnam, North Korea, and Cuba rather than relying on a shared comparative frame.',
@@ -358,6 +389,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare party monopoly, state ownership, workplace control, legal institutions, social provision, and repression as separate variables across the USSR, Eastern Europe, China, Vietnam, Cuba, North Korea, and other cases.',
       'Add archival and oral-history evidence on how citizens, workers, religious communities, ethnic minorities, and local officials negotiated, supported, resisted, or were harmed by party-state institutions.',
       'Study how foreign aid, sanctions, war, decolonization, and international alliances affected state-building and ideological adaptation rather than treating domestic institutions as self-contained.',
+      'Collate the Friedrichshain resolution with SAPMO-BArch NY 4090/437, Bl. 8 and the SED declaration with the original newspaper issue. Resolve the later caption’s date discrepancy and compare implementation, pay records, union practices and workers’ testimony beyond these selected documents.',
+      'Extend the June 1953 case beyond Berlin with local strike programmes, women’s experiences, rural participants, Soviet records and competing scholarship. Separate demands, concessions, repression and later memory; the four sources do not establish one programme for all protesters or complete the wider GDR research agenda.',
     ],
   },
   'historical-fascist': {

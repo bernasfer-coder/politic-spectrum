@@ -64,6 +64,48 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const authoritarianCollectivistEntry = ENCYCLOPEDIA_ENTRIES['authoritarian-collectivist'];
+const authoritarianCollectivistProfile = ARCHETYPES.find(({ id }) => id === 'authoritarian-collectivist').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(authoritarianCollectivistEntry.dimensionInterpretations[id].score, authoritarianCollectivistProfile[id], `authoritarian-collectivist.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['friedrichshainWorkers1953', 'primary', '1953-06-15'],
+  ['sedNormsDeclaration1953', 'primary', '1953-06-17'],
+  ['cieslaHertleWahlBerlin1953', 'secondary', '2013-05-17'],
+  ['lemkeJuneUprising2003', 'secondary', '2003-06-02'],
+]) {
+  assert.ok(authoritarianCollectivistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an authoritarian-collectivist reference trail`);
+  assert.ok(JSON.stringify(authoritarianCollectivistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['German']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:authoritarian-collectivist'], `${sourceId} must stay within the selected entry`);
+}
+const friedrichshainResolution = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-friedrichshainWorkers1953');
+const sedNormsDeclaration = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sedNormsDeclaration1953');
+const berlinUprisingHistory = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-cieslaHertleWahlBerlin1953');
+assert.match(friedrichshainResolution.description, /Document date, not a verified first-publication date/, 'a primary dateline must not become a verified publication date');
+assert.match(friedrichshainResolution.note, /NY 4090\/437, Bl\. 8/, 'the project transcription must preserve its archival locator');
+assert.match(sedNormsDeclaration.description, /statement dated 16 June 1953/, 'statement and newspaper publication dates must remain distinct');
+assert.deepEqual(sedNormsDeclaration.creators, ['Politbüro des Zentralkomitees der SED']);
+assert.match(berlinUprisingHistory.description, /image caption gives 16 June/, 'the conflicting later caption must remain visible');
+const authoritarianDescription = authoritarianCollectivistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(authoritarianDescription, /not independent proof/, 'a party declaration must not certify free workplace consent');
+const authoritarianHistory = authoritarianCollectivistEntry.sections.find(({ id }) => id === 'history').timeline.map(({ text }) => text).join(' ');
+assert.match(authoritarianHistory, /not a programme shared by every East German worker/, 'one resolution must not represent every worker');
+const authoritarianCriticisms = authoritarianCollectivistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(authoritarianCriticisms, /not this entry’s explanation/, 'official conspiracy allegations must not become editorial findings');
+assert.match(authoritarianCriticisms, /foreign-policy preferences must remain separate/, 'an ally’s intervention must not determine the subject’s foreign-policy score');
+assert.ok(authoritarianCollectivistEntry.researchGaps.some((gap) => gap.includes('pay records, union practices')), 'workplace implementation research must remain open');
+assert.ok(authoritarianCollectivistEntry.researchGaps.some((gap) => gap.includes('beyond Berlin')), 'regional diversity must remain an explicit gap');
+
 const anarchistCommunalistEntry = ENCYCLOPEDIA_ENTRIES['anarchist-communalist'];
 const anarchistCommunalistProfile = ARCHETYPES.find(({ id }) => id === 'anarchist-communalist').profile;
 for (const { id } of DIMENSIONS) {

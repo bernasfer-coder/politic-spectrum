@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    friedrichshainWorkers1953: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original English paraphrase and document link only. No transcription, translated quotation, PDF or archival image republished; institutional hosting is not blanket edition or reproduction clearance.' },
+    sedNormsDeclaration1953: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'GHDI credits permission from Neues Deutschland Druckerei und Verlag GmbH Berlin. That permission is not transferred to this project; independent summary and link only, with no quotation or translated extract.' },
+    cieslaHertleWahlBerlin1953: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original synthesis and link only. No article text, photographs, audio, witness quotation or police-document reproduction published; separate media credits are not a general licence.' },
+    lemkeJuneUprising2003: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Attributed independent analysis and link only. No article passage, embedded archival quotation or translated extract reproduced; underlying source editions retain separate rights and provenance requirements.' },
     communeWomenAddress1871: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original English paraphrase and source link only. No historical passage, translated quotation, modern editorial text, or image reproduced; transcription hosting does not clear every edition or asset.' },
     rougerieWomenCommune1997: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent attributed summary and link only. No chapter passage, embedded quotation, or translated extract reproduced; author-hosted access is not republication permission.' },
     carnavaletParisiennes2022: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Selected pages inspected for research only. No PDF, source image, photomontage, or caption republished. Press-image permissions are not treated as a general commercial licence.' },
