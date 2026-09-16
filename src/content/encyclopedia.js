@@ -5577,7 +5577,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         citations: citations(['kantPerpetualPeace', 'renanNation', 'millOnLiberty'], ['foreignPolicy', 'sepNationalism', 'oxfordConstitutionalPatriotism']),
       },
       religion: {
-        score: -15,
+        score: 15,
         label: 'Mostly secular public-law orientation',
         explanation: 'Civic membership is usually justified through citizenship and public law rather than a shared revelation or clerical authority, which gives the profile a mild secular-side placement. Civic nationalism can nevertheless include religious civil traditions, established churches, or religiously framed republican ideals. The relevant test is whether equal citizenship and freedom of conscience remain available to believers and non-believers alike.',
         citations: citations(['lockeLetterToleration', 'millOnLiberty', 'renanNation'], ['sepReligionPolitics', 'coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism']),
@@ -5629,6 +5629,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Civic nationalism is not automatically democratic, liberal, secular, peaceful, or economically egalitarian. A military dictatorship can use citizenship language; a welfare state can exclude non-citizens; a republic can hold colonies; and a constitutional order can restrict opposition. Those properties must be scored independently on this project’s six dimensions rather than inferred from the label.',
             citations: citations(['renanNation', 'andersonImaginedCommunities', 'millOnLiberty'], ['sepNationalism', 'sepColonialism', 'vdem', 'foreignPolicy', 'sepReligionPolitics']),
           },
+          {
+            type: 'paragraph',
+            text: 'French Algeria supplies a concrete warning against equating nationality with citizenship. The 1865 act designated colonized Muslim and Jewish inhabitants as French while retaining differentiated personal-status rules and a separate route to citizen rights. Personal status concerned the applicable civil-law regime; it should not be confused with a questionnaire response about religious belief. The project uses this distinction to examine exclusions, not to classify colonial rule as an inclusive civic ideal.',
+            citations: citations([], ['algeriaSenatusConsulte1865', 'direcheStoraExhibition2022']),
+          },
         ],
       },
       {
@@ -5649,6 +5654,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century: mass nation-building and citizenship administration',
             text: 'States expanded schooling, conscription, censuses, administrative law, public ceremonies, and national markets. These institutions made citizenship more legible and participatory for some people while also standardizing language, centralizing authority, and differentiating citizens from subjects, colonized peoples, migrants, and internal minorities.',
             citations: citations(['andersonImaginedCommunities', 'tocquevilleDemocracy'], ['sepNationalism', 'sepColonialism', 'vdem']),
+          },
+          {
+            period: '1865: French nationality without equal citizenship in Algeria',
+            text: 'Articles 1–2 of the sénatus-consulte of 14 July retained separate personal-status regimes for the colonial Muslim and Jewish categories. Admission to citizen rights required a request and submission to French civil law; article 4 required age twenty-one and an imperial decree in the Conseil d’État. These are formal admission rules, not evidence that access was equal or that applicants obtained approval.',
+            citations: citations([], ['algeriaSenatusConsulte1865']),
+          },
+          {
+            period: '1870: collective citizenship and a different individual route',
+            text: 'The first decree of 24 October collectively made the indigenous Jews of the Algerian departments French citizens and placed their personal and property status under French law, preserving acquired rights. The companion decree retained an individual application route for Muslim inhabitants and resident foreigners. Article 2 required Muslim applicants to declare acceptance of French civil and political law; article 3 assigned naturalization decisions to the civil governor-general after advisory consultation. The two routes must not be collapsed into universal equal admission.',
+            citations: citations([], ['algeriaCremieuxDecrees1870']),
           },
           {
             period: '1882: Renan’s voluntarist account',
@@ -5775,6 +5790,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['renanNation', 'millOnLiberty'], ['sepNationalism', 'sepColonialism', 'oxfordConstitutionalPatriotism']),
               },
               {
+                name: 'French Algeria: a colonial citizenship counterexample',
+                period: '1865–1870; later changes require separate treatment',
+                match: 'Counterexample, not an ideological match: formal French membership did not establish equal access to citizen rights.',
+                caveat: 'The immigration museum emphasizes the unequal effect of the 1870 settlement and hostility toward Jewish inclusion. Collective citizenship was not a guarantee against antisemitism or a claim that all civil and political inequalities disappeared.',
+                citations: citations([], ['algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus']),
+              },
+              {
                 name: 'United States constitutional and civic-national tradition',
                 period: 'United States, from the constitutional founding through contemporary citizenship debates',
                 match: 'Constitutional membership, republican representation, civic symbols, and a universalist rights vocabulary have provided a powerful civic-national language.',
@@ -5854,12 +5876,22 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, civic nationalism can become a majoritarian civil religion. Constitutional symbols, historical myths, commemorations, and loyalty tests may help sustain public commitment, but they can also stigmatize dissent and authorize surveillance or emergency powers. Democratic safeguards require contestable national narratives, peaceful alternation of power, an independent press and judiciary, equal citizenship, lawful opposition, transparent security institutions, and the ability to criticize the nation without being treated as an enemy.',
             citations: citations(['millOnLiberty', 'tocquevilleDemocracy', 'renanNation'], ['vdem', 'sepReligionPolitics', 'oxfordConstitutionalPatriotism']),
           },
+          {
+            type: 'paragraph',
+            text: 'In their 2022 exhibition interview, historians Karima Dirèche and Benjamin Stora interpret colonial law as an active producer of unequal group categories, not a neutral reflection of two religions. That interpretation supports a safeguard here: the colonial category Muslim must not be read as a measurement of an individual’s faith or support for religious government. It does not justify assigning either population a present-day ideology or a six-axis score.',
+            citations: citations([], ['direcheStoraExhibition2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'This Algerian case is deliberately limited. French-language legal transcriptions establish rules, while the museum supplies a later historical synthesis; neither substitutes for files on applicants, court practice, local enforcement, or the experiences of women and other excluded groups. The English prose is original paraphrase, not quotation. No claim about current nationality law or a person’s eligibility follows from these nineteenth-century documents.',
+            citations: citations([], ['algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['renanNation', 'andersonImaginedCommunities', 'millOnLiberty', 'tocquevilleDemocracy', 'lockeSecondTreatise', 'lockeLetterToleration', 'kantPerpetualPeace', 'constantLibertyModerns', 'nabucoAbolitionism'],
-      researchSourceIds: ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism', 'sepLiberalism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'openTextbook', 'panAfricanism'],
+      researchSourceIds: ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism', 'sepLiberalism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'openTextbook', 'panAfricanism', 'algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus', 'direcheStoraExhibition2022'],
       editorialNote: 'The entry treats civic nationalism as a disputed family resemblance organized around the claimed basis of national membership. It distinguishes civic nationalism from constitutional patriotism, ethnic nationalism, patriotism, liberalism, and cosmopolitanism, and treats country examples as partial, dated, and internally contested. Scores are didactic composites, not empirical measurements of every movement, government, or citizen using the label.',
     },
     researchGaps: [
@@ -5870,6 +5902,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative legal evidence on nationality law, naturalization, dual citizenship, voting rights, colonial subjecthood, border administration, minority-language rights, and the treatment of non-citizen residents before classifying present countries.',
       'Test civic nationalism against party programmes, constitutions, court decisions, administrative practice, public-opinion data, and political behavior; labels such as republican, liberal, secular, or constitutional do not establish inclusion on their own.',
       'Clarify the relationship among civic nationalism, patriotism, constitutional patriotism, cosmopolitanism, multicultural citizenship, and plurinational democracy through dedicated comparative scholarship rather than treating them as interchangeable labels.',
+      'The 1865–1870 Algerian case only partly addresses the French-language gap: add Algerian scholarship, administrative files, court decisions, gender-specific consequences, and evidence on applications and refusals; collate the transcriptions with original publications before using exact quotations.',
+      'Research the 1871 electoral-documentation restrictions and subsequent changes, including the 1881 indigénat regime and reforms of 1919, 1944, and 1946, without projecting later territorial coverage or citizenship rules backward onto 1870.',
+      'Resolve the existing social-axis magnitude mismatch between this article (0) and its reference card (−5) through a separate calibration review. The religion sign was aligned to the existing secular-positive card (+15); no historical population was scored in this pass.',
     ],
   },
   'ethnic-nationalist': {

@@ -64,6 +64,34 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const civicEntry = ENCYCLOPEDIA_ENTRIES['civic-nationalist'];
+const civicProfile = ARCHETYPES.find(({ id }) => id === 'civic-nationalist').profile;
+assert.equal(civicEntry.dimensionInterpretations.religion.score, civicProfile.religion, 'the civic article must match the existing secular-positive card');
+assert.equal(civicEntry.dimensionInterpretations.religion.score, 15, 'the religion repair must preserve the canonical magnitude');
+for (const [sourceId, evidenceRole] of [
+  ['algeriaSenatusConsulte1865', 'primary'],
+  ['algeriaCremieuxDecrees1870', 'primary'],
+  ['immigrationMuseumColonialStatus', 'secondary'],
+  ['direcheStoraExhibition2022', 'secondary'],
+]) {
+  assert.ok(civicEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a civic-nationalist reference trail`);
+  assert.ok(JSON.stringify(civicEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish legal texts from historical interpretation`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must remain summary-and-link only`);
+  assert.equal(record.directQuote, null, `${sourceId} must not introduce an unreviewed quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:civic-nationalist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const civicTimeline = civicEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(civicTimeline.find(({ period }) => period.startsWith('1865:'))?.citations.researchSourceIds.includes('algeriaSenatusConsulte1865'), 'the 1865 rules need contemporaneous legal evidence');
+assert.ok(civicTimeline.find(({ period }) => period.startsWith('1870:'))?.citations.researchSourceIds.includes('algeriaCremieuxDecrees1870'), 'the 1870 routes need distinct legal evidence');
+const colonialCounterexample = civicEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('French Algeria:'));
+assert.match(colonialCounterexample.match, /Counterexample, not an ideological match/, 'colonial exclusion must not become a scored civic ideal');
+assert.ok(civicEntry.researchGaps.some((gap) => gap.includes('social-axis magnitude mismatch')), 'the unresolved magnitude mismatch must stay visible');
+
 const monarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
 for (const [sourceId, evidenceRole] of [
   ['brazilConstitution1824', 'primary'],

@@ -170,6 +170,10 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    algeriaSenatusConsulte1865: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent summary and link only; no historical provision, modern transcription, facsimile, or translation reproduced. Document age does not clear every modern edition component.' },
+    algeriaCremieuxDecrees1870: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase of selected decrees and source link only. No legal passage, editorial introduction, or document image republished.' },
+    immigrationMuseumColonialStatus: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent synthesis and link only. No museum prose, artwork, photograph, caption, or exhibition asset reproduced.' },
+    direcheStoraExhibition2022: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Attributed original paraphrase and link only. No interview passage, translated quotation, catalogue page, or photograph reproduced; hosting does not grant republication permission.' },
     brazilCouncilDecree1847: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original paraphrase and official link only. No decree passage, facsimile, or translation reproduced; historical-text age is not blanket clearance for modern assets.' },
     ferrazImperialCabinets2017: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The publisher landing page states CC BY 4.0 for journal content. This pass remains independent-summary-and-link only.', notes: 'No article passage, embedded historical quotation, figure, table, or PDF republished. Selected arguments are attributed and English wording is original synthesis.' },
     cdecAntisemiticDecrees1938: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent summary and link only; no legal passage, editorial text, translation, or document image reproduced. Historical legislation does not clear every modern collection component.' },
