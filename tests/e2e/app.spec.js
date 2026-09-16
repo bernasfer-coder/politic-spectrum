@@ -73,6 +73,19 @@ test('the six FreeMode controls work on a mobile viewport', async ({ page }) => 
   await expect(page.getByRole('slider', { name: /Economic model score/i })).toHaveValue('100');
 });
 
+test('centres the zero label on each FreeMode scale', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('tab', { name: /FreeMode/i }).click();
+  const offset = await page.locator('.range-wrap').first().evaluate((scale) => {
+    const input = scale.querySelector('input');
+    const zero = scale.querySelector('.range-labels span:nth-child(2)');
+    const inputBox = input.getBoundingClientRect();
+    const zeroBox = zero.getBoundingClientRect();
+    return Math.abs((inputBox.left + inputBox.width / 2) - (zeroBox.left + zeroBox.width / 2));
+  });
+  expect(offset).toBeLessThan(1);
+});
+
 test('primary screens have no serious accessibility violations', async ({ page }) => {
   await page.goto('/');
   const landingResults = await new AxeBuilder({ page }).analyze();

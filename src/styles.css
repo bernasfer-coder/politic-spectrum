@@ -151,3 +151,10 @@ main { max-width: 1240px; margin: auto; padding: 0 34px 76px; }
 .library-marker { top: 1px; width: 14px; height: 14px; border: 3px solid #07121e; background: #fff; }
 .encyclopedia-dimension-scale i { height: 6px; overflow: visible; background: linear-gradient(90deg, rgba(214, 92, 92, .8), rgba(165, 188, 214, .45), rgba(85, 214, 190, .85)); }
 .encyclopedia-dimension-scale b { position: absolute; top: 50%; width: 14px; height: 14px; transform: translate(-50%, -50%); border: 3px solid #07121e; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px var(--cyan), 0 2px 7px rgba(0, 0, 0, .35); }
+
+/* Keep the zero label on the exact midpoint of every FreeMode scale. */
+.range-labels { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+.range-labels span:first-child { text-align: left; }
+.range-labels span:nth-child(2) { margin-left: 0; color: #71859c; text-align: center; }
+.range-labels span:last-child { text-align: right; }
+.range-wrap input[type=range] { margin: 0; }
