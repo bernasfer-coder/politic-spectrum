@@ -64,6 +64,55 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const onondagaEntry = ENCYCLOPEDIA_ENTRIES['indigenous-relational-governance'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['onondagaClanMothers', 'primary', null],
+  ['onondagaChiefs', 'primary', null],
+  ['onondagaSovereignty', 'primary', null],
+  ['hollandLulewiczKeystone2022', 'secondary', '2022-03-11'],
+]) {
+  assert.ok(onondagaEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(onondagaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:indigenous-relational-governance']);
+  if (evidenceRole === 'primary') {
+    assert.deepEqual(record.creators, ['Onondaga Nation']);
+    assert.match(record.rightsStatus, /community-controlled/);
+  }
+}
+const onondagaMothersRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-onondagaClanMothers');
+assert.match(onondagaMothersRecord.description, /footer year is not a publication date/);
+assert.match(onondagaMothersRecord.description, /does not establish community approval/);
+const keystoneRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hollandLulewiczKeystone2022');
+assert.equal(keystoneRecord.identifiers.doi, '10.3389/fpos.2022.840049');
+assert.equal(keystoneRecord.creators.length, 4);
+assert.match(keystoneRecord.license, /CC BY/);
+assert.match(keystoneRecord.note, /extends beyond the Haudenosaunee/);
+assert.match(keystoneRecord.description, /Conceptual Analysis/);
+const onondagaDescription = JSON.stringify(onondagaEntry.sections.find(({ id }) => id === 'description'));
+assert.match(onondagaDescription, /fourteen-chief council from the Confederacy’s fifty titles/);
+assert.match(onondagaDescription, /lifetime tenure alongside removal/);
+assert.match(onondagaDescription, /not the same as a direct vote of every resident/);
+assert.match(onondagaDescription, /not a finding that every external government accepts/);
+const onondagaCriticisms = JSON.stringify(onondagaEntry.sections.find(({ id }) => id === 'criticisms'));
+assert.match(onondagaCriticisms, /not a present-day audit/);
+assert.match(onondagaCriticisms, /makes no claim about influence on the United States Constitution/);
+assert.match(onondagaCriticisms, /reading date must not be used as a founding date/);
+assert.deepEqual(Object.fromEntries(Object.entries(onondagaEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: 38, social: 8, authority: -38, identity: 4, foreign: 34, religion: -18 });
+assert.ok(onondagaEntry.researchGaps.some((gap) => gap.startsWith('Collate original treaty sheets')));
+assert.ok(onondagaEntry.researchGaps.some((gap) => gap.startsWith('Review the full Te Paparahi')));
+assert.ok(onondagaEntry.researchGaps.some((gap) => gap.startsWith('Seek Onondaga')));
+assert.ok(onondagaEntry.researchGaps.some((gap) => gap.startsWith('Read the historical works')));
+
 const burkeConservativeEntry = ENCYCLOPEDIA_ENTRIES.conservative;
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['burkeFoxIndia1783', 'primary', '1783-12-01'],

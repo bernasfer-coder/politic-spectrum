@@ -11037,6 +11037,26 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'For the Māori case, the treaty’s English sovereignty clause must be distinguished from kāwanatanga in the Māori first article and tino rangatiratanga in the second. The Tribunal’s general guide distinguishes the latter’s emphasis on authority from the English property guarantee. Our six-axis inference is limited: evidence about jurisdiction does not by itself establish collectivism, social progressivism, pacifism, or a religious settlement.',
             citations: citations([], ['dpmcTreatyTextsKawharu', 'waitangiTribunalTreaty']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Onondaga Nation’s public account gives clan mothers a substantive political role: selecting the clan’s Hoyane, working with that representative, and removing a leader after warnings when representation fails. It also connects their authority with education, family guidance and ceremonial responsibilities. This is not merely an honorary position. The account does not, however, establish that every woman has identical power or that these responsibilities can be translated directly into the project’s progressive/traditionalist or secular/religious scales.',
+            citations: citations([], ['onondagaClanMothers']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Nation’s Chiefs page distinguishes its fourteen-chief council from the Confederacy’s fifty titles. In the local council, agreement is reached within each of three benches before a decision passes onward; a completed decision requires all three. The page describes lifetime tenure alongside removal for failure to fulfill responsibilities. A long tenure therefore does not itself mean unaccountable office, while consensus among representatives is not the same as a direct vote of every resident. These are publicly stated procedures, not observed minutes of a particular decision.',
+            citations: citations([], ['onondagaChiefs']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In its Sovereignty Defined section, the Nation presents member nations as retaining internal governing responsibilities, with the Confederacy addressing relations among them and matters such as treaties and territorial disputes. This is the Nation’s own account of jurisdiction, not a finding that every external government accepts its position. Analytically, it helps separate authority within a nation from coordination among nations; neither dimension should be inferred from a modern country label alone.',
+            citations: citations([], ['onondagaSovereignty']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In their 2022 Northern Iroquoian case, Holland-Lulewicz and colleagues describe clans as connecting households and multiple council levels rather than governing alone. They distinguish inherited offices from selection of their holders. Their historical regional category includes societies beyond the Haudenosaunee; it cannot be silently substituted for an Onondaga account.',
+            citations: citations([], ['hollandLulewiczKeystone2022']),
+          },
         ],
       },
       {
@@ -11149,7 +11169,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: 'Deep historical tradition; colonial and contemporary continuities',
                 match: 'confederated governance and diplomacy anchor',
                 caveat: 'The Great Law is an oral and living tradition. English transcriptions and claims about influence on later constitutional systems require source criticism and respect for Haudenosaunee custodianship.',
-                citations: citations(['ostromGoverningCommons'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+                citations: citations(['ostromGoverningCommons'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative', 'onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty']),
               },
               {
                 name: 'Manden Charter / Kurukan Fuga',
@@ -11227,13 +11247,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Declared institutions also need an implementation check. Basil Keane’s account says the congress envisaged in He Whakaputanga did not meet, and distinguishes interpretations emphasizing Busby’s initiative from those emphasizing chiefly strategies for recognition. He also traces later Kotahitanga appeals to both declaration and treaty. A constitutional proposal, its practical operation, and its subsequent political significance are therefore different questions—not a choice between treating the document as a complete state constitution or dismissing it as meaningless.',
             citations: citations([], ['keaneWhakaputanga2017', 'whakaputangaTexts1835']),
           },
+          {
+            type: 'paragraph',
+            text: 'The 2022 study distinguishes distributed authority from equal access to participation and acknowledges unequal participation across its four cases. It is a historical comparison, not a present-day audit of Onondaga government. Our use is narrower still: an institutional comparison that supplies no new ideological score and makes no claim about influence on the United States Constitution.',
+            citations: citations([], ['hollandLulewiczKeystone2022']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The three Onondaga pages are undated public institutional explanations consulted on 16 September 2026. They are not a newly verified constitutional edition, an account from every Haudenosaunee community, or evidence that this project has community approval. The reading date must not be used as a founding date or as proof of unchanged practice over centuries. No ceremony, sacred narrative or source image is republished here.',
+            citations: citations([], ['onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['ostromGoverningCommons', 'fanonWretchedEarth', 'cesaireDiscourseColonialism', 'gandhiHindSwaraj', 'millOnLiberty', 'senDevelopmentFreedom'],
-      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'keaneWhakaputanga2017'],
-      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, and Keane’s historical synthesis. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged.',
+      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'keaneWhakaputanga2017', 'onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty', 'hollandLulewiczKeystone2022'],
+      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, and Keane’s historical synthesis. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged. The Onondaga addition distinguishes the Nation’s public institutional self-description from a broader Northern Iroquoian scholarly comparison; neither validates the existing numerical profile.',
     },
     researchGaps: [
       'Add community-reviewed, nation-specific scholarship in Indigenous languages and in Portuguese, French, German, Spanish, and English before expanding the comparative profile.',
@@ -11245,6 +11275,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Seek hapū-specific and Māori-language review of this northern case, including the limits of Hēnare’s and Kawharu’s translations; consultation of published work is not community approval.',
       'Collate original treaty sheets and translation editions before quotation. DPMC identifies Waitangi Revisited as 2005, while the Tribunal text page attaches 1989 to that title; the book and translation’s first publication have not been independently checked.',
       'Review the full Te Paparahi o Te Raki reports, including later stages, and relevant Māori scholarship before making present-day constitutional or remedy claims. This pass consulted the 2014 release, not the complete evidentiary record.',
+      'Seek Onondaga and other Haudenosaunee language-community review of terminology, authority and publication boundaries. Examine nation-specific accounts of participation, disagreement and removal in practice; public institutional descriptions alone do not establish outcomes, universal gender equality or consent to classification.',
+      'Read the historical works and Indigenous scholarship underlying the Northern Iroquoian comparison directly, separating Haudenosaunee, Huron-Wendat and other settings. Investigate the relationship between traditional and elected institutions by nation and period before making wider claims; founding chronology and U.S. constitutional influence remain unverified here.',
     ],
   },
 };
