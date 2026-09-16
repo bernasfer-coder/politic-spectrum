@@ -64,6 +64,51 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const goldmanEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['goldmanFurtherRussia1924', 'primary', '1924'],
+  ['hemmingsGoldman2018', 'secondary', '2018-01'],
+  ['hemmingsGoldmanInterview2018', 'secondary', '2018-04-15'],
+]) {
+  assert.ok(goldmanEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(goldmanEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anarcho-communist']);
+}
+const goldmanPrimary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-goldmanFurtherRussia1924');
+const hemmingsBook = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hemmingsGoldman2018');
+const hemmingsInterview = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hemmingsGoldmanInterview2018');
+assert.deepEqual(goldmanPrimary.creators, ['Emma Goldman']);
+assert.match(goldmanPrimary.description, /not the transcription release date/);
+assert.match(goldmanPrimary.note, /no full-volume or facsimile collation/);
+assert.equal(hemmingsBook.identifiers.doi, '10.1215/9780822372257');
+assert.match(hemmingsBook.note, /pp\. 4, 7–8, 35–36 and note 11 visually checked/);
+assert.match(hemmingsBook.description, /speculative letters are not newly recovered primary documents/);
+assert.deepEqual(hemmingsInterview.creators, ['Clare Hemmings', 'Rosemary Deller']);
+assert.match(hemmingsInterview.description, /USAPP republication/);
+assert.match(hemmingsInterview.note, /not two independent corroborations/);
+const goldmanDescription = goldmanEntry.sections.find(({ id }) => id === 'description').blocks.find(({ text }) => text?.startsWith('Goldman’s 1924 Afterword'));
+assert.match(goldmanDescription.text, /acknowledges anarchists’ organizational weaknesses/);
+assert.match(goldmanDescription.text, /not a conclusive test/);
+assert.match(goldmanDescription.text, /not .*a declaration of absolute nonviolence/);
+const goldmanHistory = goldmanEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(goldmanHistory.findIndex(({ period }) => period.startsWith('1923–1924')) < goldmanHistory.findIndex(({ period }) => period.startsWith('1927–1930')));
+const goldmanCriticisms = goldmanEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(goldmanCriticisms.some(({ text }) => text?.includes('speculative correspondence is not recovered primary testimony')));
+assert.ok(goldmanCriticisms.some(({ text }) => text?.includes('unresolved or racist elements')));
+assert.ok(goldmanEntry.researchGaps.some((gap) => gap.startsWith('Collate Goldman’s selected 1924 Afterword')));
+assert.ok(goldmanEntry.researchGaps.some((gap) => gap.startsWith('Read Goldman’s primary writings on women')));
+assert.deepEqual(Object.fromEntries(Object.entries(goldmanEntry.dimensionInterpretations).map(([id, value]) => [id, value.score])), { economic: 94, social: 58, authority: -100, identity: 70, foreign: 68, religion: 45 });
+
 const onondagaEntry = ENCYCLOPEDIA_ENTRIES['indigenous-relational-governance'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['onondagaClanMothers', 'primary', null],

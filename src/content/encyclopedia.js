@@ -5538,6 +5538,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'In A Project of Anarchist Organisation (October 1927), Malatesta supports organization while rejecting executive control over members. He proposes voluntary federations, congresses offering recommendations, and administrative committees facilitating correspondence rather than governing. These are organizational proposals, not demonstrated safeguards against informal domination.',
             citations: citations([], ['malatestaOrganization1927']),
           },
+          {
+            type: 'paragraph',
+            text: 'Goldman’s 1924 Afterword, sections III–IV, distinguishes revolutionary emancipation from preserving party power. She argues that coercive methods shape the society they produce, so liberty cannot simply be postponed until after victory. She also acknowledges anarchists’ organizational weaknesses. These are her retrospective arguments, not a conclusive test of every socialist institution or a declaration of absolute nonviolence.',
+            citations: citations([], ['goldmanFurtherRussia1924']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In her 2018 LSE interview, Clare Hemmings interprets Goldman’s sexual politics as integral to revolution: dependence within marriage and unpaid domestic work help reproduce the wider order. On this reading, women’s emancipation cannot be deferred until economic transformation is complete. This is attributed scholarship, not proof that anarchist organizations achieved gender equality.',
+            citations: citations([], ['hemmingsGoldmanInterview2018']),
+          },
         ],
       },
       {
@@ -5568,6 +5578,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1917–1921: Russian Revolution and the Free Territory of Ukraine',
             text: 'The Makhnovist movement and associated rural communes developed under revolutionary, civil-war, and foreign-intervention conditions. It is often cited as an anarchist experiment in local self-management and peasant autonomy, but the territory was militarized, short-lived, internally diverse, and contested by multiple armies. Its evidence is therefore valuable but cannot establish a complete peaceful anarcho-communist society.',
             citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+          },
+          {
+            period: '1923–1924: Goldman’s critique and a divided publication',
+            text: 'The publishers’ note in My Further Disillusionment in Russia explains that twelve chapters were missing from the 1923 volume and appeared separately in 1924. The Afterword belongs to this continuation; citing the earlier title alone can conceal the edition being used.',
+            citations: citations([], ['goldmanFurtherRussia1924']),
           },
           {
             period: '1927–1930: organization and the Platform debate',
@@ -5678,8 +5693,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'Emma Goldman',
                 role: 'Anarchist writer and organizer associated with anti-authoritarianism, feminism, sexual freedom, political dissent, and social revolution.',
-                caveat: 'Goldman’s political work cannot be reduced to one economic formula; she is included as a major anti-authoritarian and emancipatory figure within the wider tradition.',
-                citations: citations(['millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'openTextbook']),
+                caveat: 'Goldman’s political work cannot be reduced to one economic formula; she is included as a major anti-authoritarian and emancipatory figure within the wider tradition. Feminist reception is not evidence of feminist self-identification or a measured six-axis match.',
+                citations: citations([], ['goldmanFurtherRussia1924', 'hemmingsGoldman2018', 'hemmingsGoldmanInterview2018']),
               },
               {
                 name: 'Murray Bookchin',
@@ -5801,13 +5816,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Turcato’s transnational approach cautions against equating disappearance from national records with organizational collapse. Its press-centered perspective does not establish representative outcomes for decentralized economies.',
             citations: citations([], ['turcatoTransnationalAnarchism']),
           },
+          {
+            type: 'paragraph',
+            text: 'Hemmings’s introduction (pp. 4, 7–8) examines how affection for Goldman can shape interpretation and even diminish her standing as a political thinker. Her project is not a definitive biography. In the interview, she also warns that celebrating Goldman’s internationalism can obscure unresolved or racist elements in her writing. These tensions require examination, not a uniformly progressive personal score.',
+            citations: citations([], ['hemmingsGoldman2018', 'hemmingsGoldmanInterview2018']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A further evidence boundary concerns Hemmings’s imaginative method. Her introduction (pp. 35–36) explicitly describes composing possible replies to Almeda Sperry where Goldman’s letters are absent from the archive she consulted. Such speculative correspondence is not recovered primary testimony. This entry uses her methodological explanation, not those imagined replies as factual evidence.',
+            citations: citations([], ['hemmingsGoldman2018']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism', 'bookchinLibertarianMunicipalism', 'millOnLiberty', 'marxEngelsManifesto', 'leninStateRevolution', 'ostromGoverningCommons'],
-      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy', 'malatestaCommunismIndividualism1926', 'malatestaOrganization1927', 'makhnoMalatestaOrganizationExchange', 'turcatoTransnationalAnarchism', 'kropotkinBread1892French', 'kinnaMutualAid1995'],
-      editorialNote: 'The entry describes an anti-state communist family and uses a didactic composite score. It distinguishes anarcho-communism from anarcho-capitalism, Marxist-Leninist party-state communism, libertarian socialism, communalism, and historical collectives. No country is classified as an exact match.',
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy', 'malatestaCommunismIndividualism1926', 'malatestaOrganization1927', 'makhnoMalatestaOrganizationExchange', 'turcatoTransnationalAnarchism', 'kropotkinBread1892French', 'kinnaMutualAid1995', 'goldmanFurtherRussia1924', 'hemmingsGoldman2018', 'hemmingsGoldmanInterview2018'],
+      editorialNote: 'The entry describes an anti-state communist family and uses a didactic composite score. It distinguishes anarcho-communism from anarcho-capitalism, Marxist-Leninist party-state communism, libertarian socialism, communalism, and historical collectives. No country is classified as an exact match. The Goldman addition separates primary argument, scholarly interpretation and speculative reconstruction. Hemmings’s book and interview express one scholar’s approach, not independent corroboration; no scores are inferred from either.',
     },
     researchGaps: [
       'Add primary texts and specialist scholarship on Errico Malatesta, Emma Goldman, Voline, Nestor Makhno, Buenaventura Durruti, Federica Montseny, Diego Abad de Santillán, and anarchist women’s, labor, and anti-colonial organizing.',
@@ -5820,6 +5845,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the selected Turcato reading to the full article and its archival sources, with competing historiography and women’s, workers’, and migrants’ perspectives. Press-network continuity does not establish equal participation, economic outcomes, or successful protection of dissenters.',
       'Collate the selected 1892 French transcription with its facsimile and English editions; examine the whole book and Kropotkin’s later revisions before generalizing about access conditions. The scarcity and participation passages do not resolve empirical questions about disability, care work, dissent or effective exit.',
       'Extend the selected Kinna 1995 reading to the full article, its archival correspondence and later scholarship, including her 2016 study. Compare historical allocation and exclusion practices independently; neither a proposal nor its intellectual history establishes institutional performance.',
+      'Collate Goldman’s selected 1924 Afterword with print witnesses and the complete memoir of Russia, then compare her causal claims with independent histories and other participants’ accounts. This pass does not resolve the relative effects of war, party institutions, economic collapse or anarchist organization.',
+      'Read Goldman’s primary writings on women, suffrage and race alongside the full Hemmings study, competing interpretations and archival correspondence. Selected introductory pages and an interview do not establish representative movement practice; speculative letters must remain separate from surviving documents.',
     ],
   },
   conservative: {
