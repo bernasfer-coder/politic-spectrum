@@ -820,6 +820,44 @@ assert.match(ethiopiaBoundary.text, /no present-day country match/);
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Collate the full 1936 appeal')));
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Read Baer’s full 1973 article')));
 
+const imperialJapanEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['japanMeijiConstitution1889', 'primary', '1889-02-11', ['English', 'Japanese'], 'high'],
+  ['jacarTaiwanGovernorGeneral1895', 'primary', '1895', ['Japanese'], 'high'],
+  ['jacarKoreaAnnexation1910', 'primary', '1910-08-22', ['English', 'Japanese'], 'medium'],
+  ['pidaReeseImperialJapan2026', 'secondary', '2026-06-02', ['English'], 'medium'],
+  ['shiraneImperialGateway2022', 'secondary', '2022', ['English'], 'medium'],
+]) {
+  assert.ok(imperialJapanEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Imperial Japan reference trail`);
+  assert.ok(JSON.stringify(imperialJapanEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve to one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const japanTimeline = imperialJapanEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(japanTimeline.find(({ period }) => period.startsWith('1889–1910 — Imperial Japan')));
+assert.ok(japanTimeline.find(({ period }) => period.startsWith('1895–1945 — Colonial Taiwan')));
+const japanVariant = imperialJapanEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Imperial Japanese constitutional militarism'));
+assert.ok(japanVariant, 'Imperial Japan must be separated as a dated constitutional-military variant');
+const japanExample = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Imperial Japan is a bounded example'));
+assert.ok(japanExample, 'Imperial Japan must appear as a bounded historical example');
+assert.match(japanExample.text, /not an exact six-axis match/);
+const japanSafeguard = imperialJapanEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Imperial Japanese case adds a safeguard question'));
+assert.ok(japanSafeguard, 'Imperial Japan must add a civil–military accountability caution');
+assert.match(japanSafeguard.text, /not a monocausal explanation/);
+assert.deepEqual(Object.fromEntries(Object.entries(imperialJapanEntry.dimensionInterpretations).map(([id, value]) => [id, value.score])), { economic: -12, social: -45, authority: 75, identity: -88, foreign: -92, religion: -18 });
+assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate the Japanese original')));
+assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Korea annexation treaty')));
+assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Extend the Taiwan case')));
+
 const weimarEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['ghdiWeimarGerman', 'primary', '1919-08-11'],

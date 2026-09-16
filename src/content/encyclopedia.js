@@ -10224,6 +10224,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The combined label is useful for a didactic spectrum card because military organization and imperial hierarchy often reinforce one another, especially under industrial competition and total war. It is still a compound profile, not a claim that every empire was equally militarist or that every militarist project sought overseas colonies. Defensive nationalism, great-power realism, colonial administration, fascist total war, naval expansion, and revolutionary or anti-colonial self-defense require separate evidence and should not be merged automatically.',
             citations: citations(['clausewitzOnWar', 'mearsheimerTragedy', 'fanonWretchedEarth'], ['oxfordImperialism', 'cambridgeMilitarismImperialism', 'unCharterForce']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Imperial Japan supplies a bounded Asian case for separating constitutional form, military autonomy, and colonial administration. The 1889 constitutional text placed the emperor at the head of the empire and assigned supreme command of the Army and Navy; later archival and scholarly accounts show that parliamentary and party politics could coexist with military institutions that were insufficiently controlled by civilian government. Taiwan and Korea also demonstrate that imperial rule took different legal and administrative forms across subject territories. This case is not a score for present-day Japan or for every institution and person in the pre-1945 empire.',
+            citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022']),
+          },
         ],
       },
       {
@@ -10260,6 +10265,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Collective security and colonial hierarchy could coexist within one institution. In the League Covenant, article 10 protected members’ territory and political independence against external aggression; article 16 provided for economic measures and Council recommendations on military contributions following specified breaches. Article 22 nevertheless organized mandates around paternalistic judgments of peoples’ capacity for self-government. The text therefore does not describe either absolute non-intervention or universal equal independence. These are historical provisions, not a statement of current law or proof of consistent enforcement.',
             citations: citations([], ['leagueCovenant1919']),
           },
+          {
+            type: 'paragraph',
+            text: 'Imperial Japan illustrates how a state could combine a constitutional legislature and formally protected rights with a military command structure insulated from ordinary cabinet control. The National Diet Library’s presentation of the 1889 Constitution identifies the emperor as head of the empire and supreme commander of the Army and Navy; Pida-Reese interprets this separation as a central weakness in civilian control that later enabled democratic reversal. JACAR’s Taiwan record adds a territorial dimension: civil administration was introduced after the initial military phase, but a military governor and command powers remained until 1919. These sources document institutional arrangements, not a complete account of coercion or social outcomes.',
+            citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'pidaReeseImperialJapan2026']),
+          },
         ],
       },
       {
@@ -10280,6 +10290,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century — industrial militarism and the national-imperial state',
             text: 'Industrial production, railways, steam navigation, conscription, mass newspapers, bureaucratic administration, and national schooling changed the scale and speed of military mobilization. Great powers increasingly linked national prestige, strategic routes, markets, raw materials, and civilizational claims to overseas expansion. Militarism developed differently across Britain, France, Germany, Russia, Japan, and the United States; the comparison should not reduce all of them to one model.',
             citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism'], ['oxfordMilitarism', 'cambridgeMilitarismImperialism', 'oxfordImperialism']),
+          },
+          {
+            period: '1889–1910 — Imperial Japan’s constitutional military autonomy and overseas expansion',
+            text: 'The 1889 Constitution of the Empire of Japan created an elected Imperial Diet and a formally constitutional monarchy while assigning the emperor supreme command of the Army and Navy. The 1895 acquisition of Taiwan and the 1910 annexation treaty for Korea show how constitutional state-building and overseas imperial rule developed together, though the legal language of the imperial center did not settle the consent, status, or lived experience of subject populations. The case is a historical sequence, not a single timeless regime label.',
+            citations: citations([], ['japanMeijiConstitution1889', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026']),
+          },
+          {
+            period: '1895–1945 — Colonial Taiwan as a military-administrative gateway',
+            text: 'Japan’s Taiwan Government-General began with military administration after the 1895 cession and later moved toward civil administration while retaining a military governor and military command. Shirane’s multilingual history presents Taiwan not as a passive peripheral possession but as a contested regional gateway through which Japanese officials, Taiwanese subjects, police, merchants, and soldiers participated in expansion toward South China and Southeast Asia. This preserves both imperial coercion and subject agency without treating opportunity or infrastructure as evidence that colonial rule was benign.',
+            citations: citations([], ['jacarTaiwanGovernorGeneral1895', 'shiraneImperialGateway2022']),
           },
           {
             period: 'July 1885 — colonial expansion disputed in the French Chamber',
@@ -10362,6 +10382,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['mearsheimerTragedy', 'morgenthauRealism'], ['oxfordMilitarism', 'foreignPolicy', 'unCharterForce']),
               },
               {
+                label: 'Imperial Japanese constitutional militarism',
+                distinction: 'Combines a constitutional legislature and imperial monarchy with a military command structure whose institutional autonomy helped enable overseas expansion and, according to one recent study, later civilian-control failure.',
+                relation: 'It is a dated and internally changing case, not proof that constitutional government always produces militarism or that all Japanese society shared one programme. Taiwan’s administration and Korea’s annexation must be studied as distinct subject-territory histories.',
+                citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022']),
+              },
+              {
                 label: 'Humanitarian or liberal interventionism',
                 distinction: 'Justifies external force through protection of civilians, human rights, collective security, or international order rather than conquest or permanent rule.',
                 relation: 'The distinction from imperialism depends on authorization, purpose, duration, consent, accountability, post-conflict control, and whether affected people gain equal political agency; benevolent language is not sufficient evidence.',
@@ -10402,6 +10428,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The First World War, Imperial Japan’s expansion, fascist Italy’s colonial wars, Nazi Germany’s racial empire, Cold War proxy conflicts, and postcolonial struggles are useful historical cases for different parts of the profile. They should not be treated as equivalent. A documented comparison should identify the institution or movement, the period, the declared doctrine, the actual practice, the people subject to coercion, and the relevant legal and historical dispute.',
             citations: citations(['clausewitzOnWar', 'mussoliniDoctrine', 'fanonWretchedEarth'], ['oxfordMilitarism', 'cambridgeMilitarismImperialism', 'oxfordImperialism', 'unCharterForce']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Imperial Japan is a bounded example of the compound profile, especially from the late nineteenth century through 1945. Its Meiji constitutional order preserved a legislature and formal rights while assigning the emperor supreme command; the empire then established and maintained unequal rule in Taiwan and annexed Korea. Pida-Reese’s account connects the later collapse of party government to weak civilian control, while Shirane shows that Taiwan’s colonial administration involved strategic expansion and the actions of Taiwanese subjects as well as Japanese officials. This is not an exact six-axis match for every Japanese institution, colony, or resident.',
+            citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022']),
           },
           {
             type: 'paragraph',
@@ -10513,6 +10544,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Imperial Japanese case adds a safeguard question: constitutional text and elections did not by themselves guarantee civilian command of the armed forces. Pida-Reese’s interpretation emphasizes the long-term consequences of institutional separation, while JACAR’s Taiwan record shows how military authority could persist inside colonial administration even after a formal shift toward civil government. These sources support a question for comparison, not a monocausal explanation of Japan’s wars or a complete account of the people subjected to its empire.',
+            citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'pidaReeseImperialJapan2026']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, historical analogies are easy to abuse. Calling a contemporary government “imperialist” or “militarist” should identify the specific policy, institution, period, and evidence rather than functioning as a general insult. The card should retain uncertainty when intentions are disputed, avoid country-level shortcuts, and make clear that military force can be used by democratic, authoritarian, revolutionary, anti-colonial, or humanitarian actors for different ends and with different consequences.',
             citations: citations(['clausewitzOnWar', 'hobsonImperialism', 'fanonWretchedEarth'], ['oxfordImperialism', 'oxfordMilitarism', 'foreignPolicy', 'unCharterForce']),
           },
@@ -10521,8 +10557,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars', 'arendtTotalitarianism', 'burkeReflections', 'kantPerpetualPeace'],
-      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork'],
-      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context.',
+      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022'],
+      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context. The Imperial Japan addition is a bounded pre-1945 Asian case using an official constitutional presentation, Japanese archival records, and two academic interpretations; it does not establish a whole-country score, a single causal account, or equal experience across Japan’s subject territories.',
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Turkish, Hindi, Chinese, Japanese, Korean, and African languages on empire, militarism, military labor, and anti-colonial political thought.',
@@ -10537,6 +10573,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'The economic sign is aligned with the existing card at −12, without changing its magnitude or any other coordinate. This consistency repair does not calibrate the combined militarism/imperialism label or score its historical examples.',
       'Collate the full 1936 appeal and League proceedings against the Amharic–French archival witness with qualified language review; identify the English translator and edition. The archival pages were inaccessible on 16 September 2026. The edited excerpts do not close the original-language evidence gap.',
       'Read Baer’s full 1973 article, subsequent scholarship and the underlying Ethiopian, Italian, British and French diplomatic records. Add Ethiopian civilian and resistance testimony, and scholarship on the monarchy’s own internal hierarchies, before generalizing from the emperor’s diplomatic appeal or evaluating sanctions counterfactuals.',
+      'Collate the Japanese original and authoritative translation history of the 1889 Constitution, the Imperial Diet debates, military ordinances, and civil–military scholarship in Japanese. Article 11 and the official English presentation establish a legal anchor, not the full institutional meaning or practice of supreme command.',
+      'Read the complete Korea annexation treaty record in Japanese and Korean, including diplomatic pressure, Korean constitutional and public responses, and later historiography. The official archival translation documents the treaty’s legal form but does not resolve consent, coercion, legitimacy, or lived consequences.',
+      'Extend the Taiwan case through Taiwanese-language and Japanese-language testimony, colonial budgets, police and military records, education and labor evidence, Indigenous histories, and competing scholarship. Shirane’s selected open sections illuminate a regional gateway and subject agency but do not establish comprehensive outcomes or erase coercion.',
     ],
   },
   'national-socialist': {
