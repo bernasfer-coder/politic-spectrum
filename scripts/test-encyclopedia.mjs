@@ -102,4 +102,28 @@ for (const [sourceId, evidenceRole] of [
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:libertarian-socialist'), `${sourceId} needs an encyclopedia backlink`);
 }
 
+const indigenousEntry = ENCYCLOPEDIA_ENTRIES['indigenous-relational-governance'];
+assert.equal(indigenousEntry.confidence, 'low', 'one local case must not establish confidence in a global Indigenous profile');
+for (const [sourceId, evidenceRole] of [
+  ['whakaputangaTexts1835', 'primary'],
+  ['dpmcTreatyTextsKawharu', 'primary'],
+  ['teRakiStageOne2014Release', 'primary'],
+  ['keaneWhakaputanga2017', 'secondary'],
+]) {
+  assert.ok(indigenousEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Indigenous-governance reference trail`);
+  assert.ok(JSON.stringify(indigenousEntry.sections).includes(sourceId), `${sourceId} needs a claim-level citation`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish historical documents, institutional statements, and synthesis`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its actual consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} is not cleared for source republication`);
+  assert.equal(record.directQuote, null, `${sourceId} must not introduce a quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:indigenous-relational-governance'), `${sourceId} needs an encyclopedia backlink`);
+}
+const teRakiFinding = indigenousEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('2014'));
+assert.ok(teRakiFinding, 'the Tribunal finding needs a dated historical record');
+assert.match(teRakiFinding.text, /Bay of Islands and Hokianga in February 1840/, 'the historical finding must retain its geographic and temporal boundary');
+assert.match(teRakiFinding.text, /left aside how and when the Crown later acquired sovereignty/, 'the 2014 release must not become an unrestricted current-sovereignty determination');
+
 console.log(`Encyclopedia tests passed: ${Object.keys(ENCYCLOPEDIA_ENTRIES).length} entry with claim-level citation validation across ${DIMENSIONS.length} dimensions.`);

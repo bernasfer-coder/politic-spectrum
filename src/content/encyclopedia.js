@@ -9886,6 +9886,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The profile also treats colonialism as an institutional force, not merely a past event. Conquest, removal, land expropriation, imposed administrative categories, residential or mission schooling, criminalization of ceremony, and state recognition regimes altered Indigenous authority and evidence archives. A written constitution produced under a colonial policy may express Indigenous adaptation, strategic defense, imposed forms, or all three. The researcher should keep Indigenous law, colonial description, and later state recognition separate.',
             citations: citations(['cesaireDiscourseColonialism', 'fanonWretchedEarth'], ['sepColonialism', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty']),
           },
+          {
+            type: 'paragraph',
+            text: 'For the Māori case, the treaty’s English sovereignty clause must be distinguished from kāwanatanga in the Māori first article and tino rangatiratanga in the second. The Tribunal’s general guide distinguishes the latter’s emphasis on authority from the English property guarantee. Our six-axis inference is limited: evidence about jurisdiction does not by itself establish collectivism, social progressivism, pacifism, or a religious settlement.',
+            citations: citations([], ['dpmcTreatyTextsKawharu', 'waitangiTribunalTreaty']),
+          },
         ],
       },
       {
@@ -9908,6 +9913,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['fanonWretchedEarth'], ['unIndigenousDeclaration', 'sepColonialism']),
           },
           {
+            period: '1835 — He Whakaputanga and northern chiefly authority',
+            text: 'First signed by 34 northern rangatira at Waitangi on 28 October 1835, He Whakaputanga asserted their authority, proposed recurring collective lawmaking, and sought British protection. The NZHistory edition distinguishes the Māori document, Mānuka Hēnare’s later translation, and James Busby’s English version. These are related evidence layers, not interchangeable wording or proof that every Māori community belonged to one functioning national government.',
+            citations: citations([], ['whakaputangaTexts1835']),
+          },
+          {
             period: 'Colonial treaties and contested constitutional relationships',
             text: 'Te Tiriti o Waitangi / the Treaty of Waitangi illustrates how Indigenous authority and colonial governance can be joined through a disputed treaty relationship. The Māori and English texts use different political vocabularies and have generated continuing disputes over kāwanatanga, tino rangatiratanga, land, and the scope of Crown authority. It is a specific Māori–Crown history, not a template for all Indigenous peoples.',
             citations: citations(['cesaireDiscourseColonialism'], ['waitangiTribunalTreaty', 'unIndigenousDeclaration']),
@@ -9921,6 +9931,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Contemporary self-determination and international rights',
             text: 'Since the late twentieth century, Indigenous movements have secured greater international recognition of collective rights, self-determination, participation, cultural integrity, land and resource relationships, and free, prior, and informed consent. Implementation remains uneven: a declaration or constitutional clause does not by itself establish effective jurisdiction, material security, equality, or protection from extraction and coercion.',
             citations: citations(['senDevelopmentFreedom'], ['unIndigenousDeclaration', 'sepColonialism']),
+          },
+          {
+            period: '2014 — a geographically and historically bounded finding',
+            text: 'The Waitangi Tribunal’s Stage 1 release for Te Paparahi o Te Raki concluded that the rangatira signing in the Bay of Islands and Hokianga in February 1840 retained lawmaking authority over their people and territories. It described agreement to British authority over British subjects, with overlapping jurisdiction still to be negotiated. This is an attributed historical finding: the release expressly left aside how and when the Crown later acquired sovereignty and what the treaty means today. The full report and later inquiry stages require separate review.',
+            citations: citations([], ['teRakiStageOne2014Release']),
           },
         ],
       },
@@ -9948,6 +9963,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Uses treaties, constitutional agreements, and intergovernmental relationships to protect jurisdiction, identity, resources, and political authority.',
                 relation: 'Can be simultaneously self-determining, diplomatic, and legally plural; it should not be collapsed into secessionist nationalism.',
                 citations: citations(['fanonWretchedEarth'], ['waitangiTribunalTreaty', 'unIndigenousDeclaration']),
+              },
+              {
+                label: 'Treaty text versus later interpretive translation',
+                distinction: 'Kawharu’s English back translation interprets the Māori text; it is not the English treaty signed in 1840.',
+                relation: 'The DPMC edition’s note 7 flags disagreement with his categorical sovereignty gloss. Read attribution and commentary alongside wording rather than presenting a translation as an uncontested account of every signatory’s understanding.',
+                citations: citations([], ['dpmcTreatyTextsKawharu']),
               },
               {
                 label: 'Contemporary Indigenous constitutional government',
@@ -9995,8 +10016,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Māori rangatiratanga and Te Tiriti o Waitangi',
                 period: '1840–present',
                 match: 'treaty-based sovereignty and contested jurisdiction anchor',
-                caveat: 'The Māori and English treaty texts are not interchangeable, and the meaning and implementation of the relationship remain contested in Aotearoa New Zealand.',
-                citations: citations(['cesaireDiscourseColonialism'], ['waitangiTribunalTreaty', 'unIndigenousDeclaration']),
+                caveat: 'The Māori and English treaty texts are not interchangeable, and the meaning and implementation of the relationship remain contested in Aotearoa New Zealand. The dated northern case discussed here is not a profile of all Māori, a current-country rating, or a finding about every later signing.',
+                citations: citations(['cesaireDiscourseColonialism'], ['waitangiTribunalTreaty', 'unIndigenousDeclaration', 'teRakiStageOne2014Release']),
               },
               {
                 name: 'Contemporary Indigenous and tribal governments',
@@ -10055,13 +10076,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Finally, the six-axis coordinates are provisional. They describe a comparative teaching pattern, not a measurement of Indigenous identity. A future version should allow nation-specific profiles, community review, multiple source traditions, and a “not enough evidence” state rather than requiring every case to be placed on one global map.',
             citations: citations(['ostromGoverningCommons'], ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
           },
+          {
+            type: 'paragraph',
+            text: 'Declared institutions also need an implementation check. Basil Keane’s account says the congress envisaged in He Whakaputanga did not meet, and distinguishes interpretations emphasizing Busby’s initiative from those emphasizing chiefly strategies for recognition. He also traces later Kotahitanga appeals to both declaration and treaty. A constitutional proposal, its practical operation, and its subsequent political significance are therefore different questions—not a choice between treating the document as a complete state constitution or dismissing it as meaningless.',
+            citations: citations([], ['keaneWhakaputanga2017', 'whakaputangaTexts1835']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['ostromGoverningCommons', 'fanonWretchedEarth', 'cesaireDiscourseColonialism', 'gandhiHindSwaraj', 'millOnLiberty', 'senDevelopmentFreedom'],
-      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics'],
-      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred.',
+      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'keaneWhakaputanga2017'],
+      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, and Keane’s historical synthesis. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged.',
     },
     researchGaps: [
       'Add community-reviewed, nation-specific scholarship in Indigenous languages and in Portuguese, French, German, Spanish, and English before expanding the comparative profile.',
@@ -10070,6 +10096,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare customary law, written constitutions, courts, elections, councils, gender and age authority, and state-recognition regimes using nation-specific evidence rather than a generic governance score.',
       'Document land, resource, language, education, health, extraction, climate, and economic institutions without reducing stewardship to an ecological slogan or assuming collective ownership.',
       'Create a nation-specific “insufficient evidence” workflow so the six-axis model can decline to score a tradition when the evidence or community permission is inadequate.',
+      'Seek hapū-specific and Māori-language review of this northern case, including the limits of Hēnare’s and Kawharu’s translations; consultation of published work is not community approval.',
+      'Collate original treaty sheets and translation editions before quotation. DPMC identifies Waitangi Revisited as 2005, while the Tribunal text page attaches 1989 to that title; the book and translation’s first publication have not been independently checked.',
+      'Review the full Te Paparahi o Te Raki reports, including later stages, and relevant Māori scholarship before making present-day constitutional or remedy claims. This pass consulted the 2014 release, not the complete evidentiary record.',
     ],
   },
 };
