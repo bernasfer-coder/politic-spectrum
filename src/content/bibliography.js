@@ -1,6 +1,33 @@
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  kropotkinBread1892French: {
+    accessDate: '2026-09-16',
+    creators: ['Pierre Kropotkine'],
+    institution: 'Wikisource',
+    sourceType: 'primary political book / French transcription',
+    evidenceRole: 'primary',
+    discipline: 'anarcho-communist distribution and voluntary association',
+    publicationDate: '1892',
+    publisher: 'Tresse & Stock, Paris, second edition; Wikisource transcription',
+    confidence: 'medium',
+    languages: ['French'],
+    description: 'Edition identified by the transcribed title page, not independently collated with the scan. Kropotkin’s text is distinct from Élisée Reclus’s preface. Original English paraphrase, not an authoritative translation or independent evidence of implementation.',
+  },
+  kinnaMutualAid1995: {
+    accessDate: '2026-09-16',
+    creators: ['Ruth Kinna'],
+    institution: 'Cambridge University Press',
+    sourceType: 'scholarly research article / selected pages',
+    evidenceRole: 'secondary',
+    discipline: 'anarchist intellectual history and the politics of science',
+    publicationDate: '1995-08',
+    publisher: 'International Review of Social History 40(2), pp. 259–283',
+    identifiers: { doi: '10.1017/S0020859000113227' },
+    confidence: 'high',
+    languages: ['English'],
+    description: 'Print issue August 1995; online publication 20 February 2009. Attributed historical interpretation, not a test of economic performance or a contemporary biological consensus. Cited archival letters and later scholarship require separate review.',
+  },
   molinariSecurity1849French: {
     accessDate: '2026-09-16',
     creators: ['Gustave de Molinari'],

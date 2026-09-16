@@ -170,6 +170,8 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    kropotkinBread1892French: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original English paraphrase and edition link only. No French passage, translated quotation, prefatory text or facsimile reproduced. Historical authorship does not establish blanket clearance for every edition or repository asset.' },
+    kinnaMutualAid1995: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent attributed summary and publisher link only. No article passage, archival quotation, photograph or PDF page republished; public access is not treated as a commercial reuse licence.' },
     molinariSecurity1849French: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original English paraphrase and publisher link only. No French passage, translated quotation, modern introduction, typography or PDF image republished; historical authorship does not clear all edition assets.' },
     hartParisSchool2019: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The consulted copy carries Cambridge University Press copyright, 2019; author hosting is not a republication licence.', notes: 'Attributed independent synthesis and DOI link only. No chapter passage, table, image or embedded quotation reproduced.' },
     longMolinariLegacy2013: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'Liberty Fund claims copyright and describes educational/academic fair use; this is not a blanket commercial reuse licence.', notes: 'Original attributed summary and link only. No essay wording, embedded primary quotation or translation reproduced.' },

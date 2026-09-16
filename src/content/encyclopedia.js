@@ -5371,6 +5371,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'In Les denrées, section IV, Kropotkin distinguishes freely available plentiful goods from scarce goods requiring rationing. He prioritizes vulnerable people’s needs rather than identical portions and argues for food access without exclusions during the initial disruption of work. These are proposed rules, not measured outcomes of a functioning commune.',
+            citations: citations([], ['kropotkinBread1892French']),
+          },
+          {
+            type: 'paragraph',
             text: 'The political proposal is federated self-government. Local assemblies, workplace groups, cooperatives, neighborhood councils, and communes make decisions directly or through delegates who can be recalled and whose mandates remain limited. Federation is intended to coordinate transport, health, production, defense, and ecological systems without creating a sovereign center. The tension is practical: coordination can require expertise, regular administration, and binding decisions, all of which can drift toward hierarchy if not accountable.',
             citations: citations(['bakuninStatism', 'bookchinLibertarianMunicipalism', 'kropotkinConquestBread'], ['sepAnarchism', 'socialEcologyMunicipalism']),
           },
@@ -5629,6 +5634,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Objections, sections III–IV, complicates unconditional-access readings. Kropotkin imagines work groups parting with unreliable participants and a federation linking benefits to necessary work; support outside that arrangement depends partly on available resources. He also affirms a right to live and urges investigating illness, unsuitable work and education before punishment. The editorial question is whether exit and dissent remain meaningful when an association controls necessities; this hypothetical discussion does not establish a safeguard against exclusion.',
+            citations: citations([], ['kropotkinBread1892French']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Ruth Kinna’s 1995 interpretation links Kropotkin’s confidence in decentralized provision to his belief that reorganized production could overcome scarcity (p. 274). Her conclusion rejects reading mutual aid as automatic progress, while identifying tension between scientific explanation and political persuasion (pp. 282–283). This intellectual history neither proves economic feasibility nor licenses dismissing the proposal as mere faith in universal benevolence.',
+            citations: citations([], ['kinnaMutualAid1995']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, historical examples are difficult to evaluate because many occurred during war, revolution, blockade, or state collapse. Wartime coercion, shortages, military hierarchy, and partisan memory can make an experiment look either more libertarian or more authoritarian than its ordinary institutions were. The encyclopedia should distinguish aspirations, rules, actual participation, material outcomes, violence, exclusion, and external constraints, and should avoid presenting a brief experiment as a universal proof.',
             citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'sepAnarchism']),
           },
@@ -5647,7 +5662,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism', 'bookchinLibertarianMunicipalism', 'millOnLiberty', 'marxEngelsManifesto', 'leninStateRevolution', 'ostromGoverningCommons'],
-      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy', 'malatestaCommunismIndividualism1926', 'malatestaOrganization1927', 'makhnoMalatestaOrganizationExchange', 'turcatoTransnationalAnarchism'],
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy', 'malatestaCommunismIndividualism1926', 'malatestaOrganization1927', 'makhnoMalatestaOrganizationExchange', 'turcatoTransnationalAnarchism', 'kropotkinBread1892French', 'kinnaMutualAid1995'],
       editorialNote: 'The entry describes an anti-state communist family and uses a didactic composite score. It distinguishes anarcho-communism from anarcho-capitalism, Marxist-Leninist party-state communism, libertarian socialism, communalism, and historical collectives. No country is classified as an exact match.',
     },
     researchGaps: [
@@ -5659,6 +5674,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add research on how revolutionary organizations prevent military, party, administrative, or charismatic authority from becoming permanent, and how nonviolent and self-defense commitments can coexist under external attack.',
       'The Malatesta and Makhno additions address only part of the author and organization gaps above. Verify original periodical issues, translation provenance, the complete Platform and further responses; do not infer an agreed settlement from this exchange or its inconsistent page-level date metadata.',
       'Extend the selected Turcato reading to the full article and its archival sources, with competing historiography and women’s, workers’, and migrants’ perspectives. Press-network continuity does not establish equal participation, economic outcomes, or successful protection of dissenters.',
+      'Collate the selected 1892 French transcription with its facsimile and English editions; examine the whole book and Kropotkin’s later revisions before generalizing about access conditions. The scarcity and participation passages do not resolve empirical questions about disability, care work, dissent or effective exit.',
+      'Extend the selected Kinna 1995 reading to the full article, its archival correspondence and later scholarship, including her 2016 study. Compare historical allocation and exclusion practices independently; neither a proposal nor its intellectual history establishes institutional performance.',
     ],
   },
   conservative: {

@@ -64,6 +64,39 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const breadEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
+for (const [sourceId, evidenceRole, publicationDate, language] of [
+  ['kropotkinBread1892French', 'primary', '1892', 'French'],
+  ['kinnaMutualAid1995', 'secondary', '1995-08', 'English'],
+]) {
+  assert.ok(breadEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anarcho-communist reference trail`);
+  assert.ok(JSON.stringify(breadEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anarcho-communist'], `${sourceId} must stay within this entry`);
+}
+const breadFrench = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-kropotkinBread1892French');
+const kinnaMutualAid = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-kinnaMutualAid1995');
+assert.match(breadFrench.description, /not independently collated with the scan/);
+assert.match(breadFrench.note, /Separate edition witness from the existing English author reference/);
+assert.equal(breadFrench.review.confidence, 'medium');
+assert.match(kinnaMutualAid.description, /Print issue August 1995; online publication 20 February 2009/);
+assert.match(kinnaMutualAid.note, /Printed pp\. 274 and 282–283 \(PDF pages 16 and 24–25\)/);
+assert.equal(kinnaMutualAid.identifiers.doi, '10.1017/S0020859000113227');
+const breadDescription = breadEntry.sections.find(({ id }) => id === 'description').blocks.find(({ text }) => text?.startsWith('In Les denrées'));
+assert.match(breadDescription.text, /proposed rules, not measured outcomes/);
+const breadCriticism = breadEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Objections, sections'));
+assert.match(breadCriticism.text, /affirms a right to live/, 'access conditions must not erase the countervailing commitment');
+assert.match(breadCriticism.text, /editorial question/, 'the assessment must be distinguished from primary-source wording');
+assert.ok(breadEntry.researchGaps.some((gap) => gap.startsWith('Collate the selected 1892 French transcription')), 'edition and implementation gaps must remain visible');
+
 const molinariEntry = ENCYCLOPEDIA_ENTRIES['anarcho-capitalist'];
 for (const [sourceId, evidenceRole, publicationDate, language] of [
   ['molinariSecurity1849French', 'primary', '1849-02', 'French'],
