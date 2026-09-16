@@ -8474,13 +8474,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ),
     dimensionInterpretations: {
       economic: {
-        score: 30,
+        score: -30,
         label: 'Market-oriented, with lawful public goods',
         explanation: 'The tradition commonly protects private property, contract, and voluntary exchange, but constitutionalism does not logically require a minimal state or unregulated markets. Taxation, infrastructure, education, social insurance, labor law, and economic regulation can be compatible with liberal constitutionalism when enacted under general law and justified through equal civic status rather than arbitrary privilege.',
         citations: citations(['adamSmithWealth', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'oxfordLiberalismResearch', 'sepConstitutionalism']),
       },
       social: {
-        score: -25,
+        score: 25,
         label: 'Individual liberty, historically uneven inclusion',
         explanation: 'Freedom of expression, association, conscience, privacy, and personal development are central, but the historical tradition often combined universal language with restricted citizenship, gender hierarchy, property qualifications, slavery, or colonial rule. The profile therefore protects personal liberty without treating every historical liberal as socially progressive or every rights claim as equally applied.',
         citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative', 'colonialLiberalismExclusion']),
@@ -8492,19 +8492,19 @@ export const ENCYCLOPEDIA_ENTRIES = {
         citations: citations(['lockeSecondTreatise', 'federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'unRuleLawHumanRights', 'vdem']),
       },
       identity: {
-        score: -25,
+        score: 25,
         label: 'Civic constitutional membership',
         explanation: 'The preferred basis of membership is citizenship under common law and constitutional rights rather than ethnic sameness. Liberal constitutionalism can still be patriotic and territorially bounded, and its historical practice often excluded colonized peoples, migrants, women, racialized groups, or religious minorities. Constitutional universalism is therefore an aspiration and institutional test, not proof that a polity has already achieved equal membership.',
         citations: citations(['lockeSecondTreatise', 'kantPerpetualPeace', 'tocquevilleDemocracy'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'sepColonialism', 'colonialLiberalismExclusion']),
       },
       foreign: {
-        score: -35,
+        score: 35,
         label: 'Lawful diplomacy and bounded defense',
         explanation: 'The orientation favors treaties, commerce, diplomacy, defensive security, and international rules over arbitrary conquest. It is not automatically pacifist: constitutional states may claim a right of self-defense or support intervention under law. The decisive question is whether force is publicly authorized, limited, reviewable, and consistent with the equal status of people affected by it.',
         citations: citations(['kantPerpetualPeace', 'millOnLiberty'], ['foreignPolicy', 'echrConvention', 'sepConstitutionalism']),
       },
       religion: {
-        score: -55,
+        score: 55,
         label: 'Freedom of conscience and non-confessional public law',
         explanation: 'The profile protects religion and nonbelief while resisting the use of one church or theology as an unreviewable source of coercive law. Liberal constitutional settlements range from strict separation to accommodation or an established church; the common requirement is that conscience, minority rights, and public accountability cannot depend entirely on religious conformity.',
         citations: citations(['lockeLetterToleration', 'millOnLiberty', 'kantPerpetualPeace'], ['sepReligionPolitics', 'sepLiberalism', 'unRuleLawHumanRights', 'echrConvention']),
@@ -8546,6 +8546,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The public score is deliberately didactic. It places this label near market-oriented, socially liberty-protecting, strongly anti-arbitrary-power, civic, legally restrained, and non-confessional positions. It does not claim that all liberal constitutionalists favor small government, progressive cultural change, international intervention, judicial supremacy, or one model of secularism.',
             citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['oxfordLiberalismResearch', 'sepConstitutionalism', 'sepLiberalism', 'foreignPolicy']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Reading the Brazilian case below: distinguish the constitution’s provisions (primary evidence), historians’ interpretations (secondary evidence), and this project’s educational comparison. The case is not an exact match for this card, and no score for historical or present-day Brazil is inferred. Portuguese sources are summarized independently in English; quoted works inside those sources have not thereby been independently consulted.',
+            citations: citations([], ['brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022']),
+          },
         ],
       },
       {
@@ -8571,6 +8576,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century — civil liberty, representative reform, and the limits of liberal citizenship',
             text: 'Liberal constitutionalism developed alongside parliamentary reform, free speech campaigns, commercial society, expanding education, abolitionist and feminist arguments, and new theories of representative government. Mill defended individuality and open discussion, while Wollstonecraft exposed the contradiction between universal rights language and women’s subordination. At the same time, liberal constitutionalism was repeatedly entangled with empire, racial hierarchy, property power, and claims that some peoples were not ready for self-government.',
             citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepMill', 'sepLiberalism', 'colonialLiberalismExclusion', 'sepColonialism']),
+          },
+          {
+            period: '1824 — Brazilian rights guarantees and monarchical authority',
+            text: 'The charter granted by Pedro I combined hereditary constitutional monarchy (article 3), civil-rights guarantees (179), and an emperor-exclusive Moderating Power (98), including powers to dissolve the Chamber and appoint ministers (101). These are provisions of a historical document, not proof of their democratic operation.',
+            citations: citations([], ['brazilConstitution1824']),
           },
           {
             period: 'Early twentieth century — mass democracy, social rights, and constitutional crisis',
@@ -8613,6 +8623,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Relies on responsible government, legislative accountability, conventions, party competition, and political remedies, often with flexible or partially codified rules.',
                 relation: 'Can protect rights through institutions other than a single entrenched constitutional court; parliamentary sovereignty and rights review remain contested.',
                 citations: citations(['constantLibertyModerns', 'millOnLiberty'], ['oxfordBritishConstitutionalism', 'sepConstitutionalism']),
+              },
+              {
+                label: 'Royal arbitration or active government? The Brazilian debate',
+                distinction: 'Christian Edward Cyril Lynch (2005) distinguishes the legal borrowing of Benjamin Constant’s royal-power model from the Crown’s political aims: the same framework could support an arbitrating monarch or active royal government.',
+                relation: 'His concluding analysis challenges the assumption that combining royal titles alone proves a distortion of Constant. This is an attributed historiographical argument, not a verdict that imperial rule secured equal freedom or followed modern parliamentary conventions.',
+                citations: citations([], ['lynchModeratingPower2005']),
               },
               {
                 label: 'Strong-form judicial review',
@@ -8662,6 +8678,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'John Locke, Benjamin Constant, James Madison, Alexander Hamilton, John Stuart Mill, Mary Wollstonecraft, Immanuel Kant, and later constitutional theorists are reference points in different arguments within the family. They should not be presented as a single school: they disagree over property, participation, empire, social reform, representation, religion, war, and the institutional location of constitutional authority.',
             citations: citations(['lockeSecondTreatise', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace'], ['oxfordLiberalismResearch', 'sepConstitutionalism', 'sepLiberalism']),
           },
+          {
+            type: 'paragraph',
+            text: 'Brazil’s 1824 text distinguishes status from participation: article 6 includes Brazilian-born freed people as citizens, while article 94 excludes freed people from second-stage electors; articles 92, 94, and 95 impose graduated income qualifications. Article 5 retains Catholic establishment and limits other worship to private settings; article 95 excludes non-Catholics from the Chamber of Deputies. Constitutional membership did not mean equal political or religious rights.',
+            citations: citations([], ['brazilConstitution1824']),
+          },
         ],
       },
       {
@@ -8673,9 +8694,10 @@ export const ENCYCLOPEDIA_ENTRIES = {
             labels: [
               { id: 'classical-liberal', relation: 'shares property, civil liberty, and limited government, but classical liberalism is more economically specified and need not include a developed constitutional theory' },
               { id: 'progressive-liberal', relation: 'shares rights, equality, and plural citizenship, while progressive liberalism generally gives more weight to social transformation and positive public provision' },
-              { id: 'centrist-pragmatist', relation: 'can overlap through pluralism and institutional compromise, but centrism is positional and pragmatic rather than defined by a rights-limiting constitutional doctrine' },
+              { id: 'centrist-pragmatist', relation: 'can overlap through pluralism and institutional compromise, but centrism is positional and pragmatic rather than defined by a rights-protecting constitutional doctrine' },
               { id: 'social-democratic', relation: 'can share welfare, labor rights, and democratic institutions, while social democracy is more economically egalitarian and organized around social protection' },
               { id: 'civic-nationalist', relation: 'can share citizenship-based membership, but civic nationalism is primarily an identity doctrine while liberal constitutionalism is a theory of lawful, rights-constrained power' },
+              { id: 'monarchist', relation: 'overlaps where royal office is constitutionally constrained; hereditary succession alone does not establish liberal accountability', citations: citations([], ['lynchModeratingPower2005']) },
               { id: 'conservative', relation: 'can share institutional restraint and gradual change, but conservatism gives greater weight to inherited authority, continuity, and social order' },
               { id: 'authoritarian-collectivist', relation: 'is a direct authority opposite: liberal constitutionalism disperses and reviews power while authoritarian collectivism subordinates plural institutions to concentrated collective authority' },
               { id: 'theocratic', relation: 'may share constitutional structure, but theocracy makes religious authority constitutive of public law whereas liberal constitutionalism requires freedom of conscience and non-confessional accountability' },
@@ -8704,6 +8726,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Marcelo Cheche Galves and Yuri Costa (2022), in their discussion of the 1824 charter, connect property-based political qualifications and the treatment of enslaved people as property to the reproduction of slaveholding hierarchies. They also emphasize the tension between liberal guarantees and strengthened royal power. Their social-history emphasis complements, without resolving, Lynch’s distinct question about the legal reception of Constant; neither reading substitutes for evidence of enforcement.',
+            citations: citations([], ['galvesCostaProperty2022', 'lynchModeratingPower2005']),
+          },
+          {
+            type: 'paragraph',
             text: 'The fourth criticism is imperial and colonial contradiction. Liberal powers sometimes defended constitutional liberty at home while denying self-government or equal legal standing abroad. That history does not prove that constitutional rights are meaningless; it shows why universal claims require anti-domination tests, equal membership, accountability for external force, and attention to voices that older constitutional archives marginalized.',
             citations: citations(['millOnLiberty', 'kantPerpetualPeace', 'tocquevilleDemocracy'], ['colonialLiberalismExclusion', 'sepColonialism', 'oxfordLiberalismResearch']),
           },
@@ -8721,9 +8748,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       },
     ],
     references: {
-      authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy'],
-      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy'],
-      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of rights-constraining constitutional arguments from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state.',
+      authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy', 'adamSmithWealth'],
+      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022'],
+      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state.',
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Hindi, Chinese, and African constitutional traditions, including constitutional arguments that do not begin from the Anglo-American canon.',
@@ -8733,6 +8760,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Study economic constitutionalism: property, labor, taxation, social rights, public services, corporate power, ecological limits, and the material conditions required for equal civic participation.',
       'Add comparative case studies of emergency powers, democratic backsliding, digital surveillance, platform governance, climate emergencies, and international human-rights supervision, including successful safeguards and documented failures.',
       'Test whether the six-dimensional score should separate constitutional structure from the substantive social settlement and whether uncertainty ranges are preferable to a single point score for historically changing traditions.',
+      'The Portuguese-language Brazilian case begins, but does not complete, the multilingual research agenda. Compare constitutional promises with electoral administration, religious-minority petitions, slavery and abolition records, and court practice; avoid generalizing from the 1824 text to the whole imperial period.',
+      'Read Constant’s relevant original French constitutional writings alongside the 1823 constituent debates and competing Brazilian interpretations of the Moderating Power. The existing Liberty of the Moderns reference is not a substitute for those works.',
+      'The article’s five reversed signs have been aligned with the existing reference card, without changing magnitudes or Authority. Separate historical case ranges and calibrated scores still require evidence beyond these documents.',
     ],
   },
   'militarist-imperialist': {

@@ -170,6 +170,9 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    brazilConstitution1824: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original summary and official link only. No historical passage, transcription, facsimile, or modern translation republished; legal-text age does not clear every edition or page asset.' },
+    lynchModeratingPower2005: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'Article notice identifies CC BY-NC 4.0; a separate site link points to CC BY 4.0. No commercial republication clearance is inferred from the broader site link.', notes: 'Attributed independent synthesis and link only. No Portuguese passage, embedded Constant quotation, archival extract, translation, or page image reproduced.' },
+    galvesCostaProperty2022: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The article links to Creative Commons Attribution 4.0 International (CC BY 4.0). This project retains its summary-and-link publication boundary.', notes: 'No article passage, embedded third-party quotation, translated extract, table, or image reproduced. The article licence is not treated as clearance for every work it cites.' },
     blairSchroeder1999Excerpt: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original summary and link only. No German declaration, translated passage, editorial introduction, or print facsimile reproduced; accessible excerpt is not full-publication permission.' },
     wiesenthalThirdWay2010: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Attributed independent synthesis of a selected reprint. No essay passage, translation, embedded quotation, or GHDI editorial text reproduced.' },
     swissCollegialConsensus: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original prose and official-page link only. Government authorship does not clear every page asset; no text, photograph, video, or legal extract republished.' },
