@@ -64,6 +64,44 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const theocraticEntry = ENCYCLOPEDIA_ENTRIES.theocratic;
+const theocraticProfile = ARCHETYPES.find(({ id }) => id === 'theocratic').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(theocraticEntry.dimensionInterpretations[id].score, theocraticProfile[id], `theocratic.${id} must preserve its canonical coordinate`);
+}
+for (const [sourceId, evidenceRole] of [
+  ['iranCouncilConstitution1989', 'primary'],
+  ['constituteIran1989', 'primary'],
+  ['buchtaIranInstitutions2020', 'secondary'],
+]) {
+  assert.ok(theocraticEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a theocracy reference trail`);
+  assert.ok(JSON.stringify(theocraticEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish constitutional evidence from interpretation`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must preserve its publication boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:theocratic'), `${sourceId} needs an encyclopedia backlink`);
+}
+const iranCouncilText = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-iranCouncilConstitution1989');
+const iranRepositoryText = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-constituteIran1989');
+const buchtaIran = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-buchtaIranInstitutions2020');
+assert.equal(iranCouncilText.publicationDate, '1989', 'constitutional revision and webpage publication dates must remain distinct');
+assert.match(iranCouncilText.description, /Javad Arabshirazi and Hossein Beheshti Shakib/, 'the named translation needs attribution');
+assert.match(iranRepositoryText.description, /article 110\(7\) differs/, 'the unresolved translation discrepancy must remain visible');
+assert.equal(iranRepositoryText.canonicalUrl, 'https://www.constituteproject.org/constitution/Iran_1989', 'metadata correction must preserve the established source URL');
+assert.equal(buchtaIran.publicationDate, '2020-05-15', 'the institutional assessment must be dated');
+assert.deepEqual(buchtaIran.languages, ['German']);
+const theocraticDescription = theocraticEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(theocraticDescription, /six religious jurists selected by the Leader and six Muslim legal jurists chosen by parliament/, 'Council composition must not become twelve directly appointed clerics');
+assert.match(theocraticDescription, /Assembly of Experts is a different institution/, 'the two councils must not be merged');
+assert.match(theocraticDescription, /Formal removal powers do not prove effective accountability/, 'constitutional design must stay separate from effectiveness');
+const theocraticCriticisms = theocraticEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(theocraticCriticisms, /article 110\(9\) expressly requires confirmation of presidential candidates/, 'specific candidate-qualification text must not be attributed to article 99 alone');
+assert.match(theocraticCriticisms, /not be mistaken for the wording of article 99 itself/, 'dated scholarly interpretation must stay distinct from primary wording');
+
 const greenCommonsEntry = ENCYCLOPEDIA_ENTRIES['green-commons'];
 const greenCommonsProfile = ARCHETYPES.find(({ id }) => id === 'green-commons').profile;
 for (const { id } of DIMENSIONS) {

@@ -6871,6 +6871,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Theocracy does not fix economic policy. Religious institutions may defend property, charity, communal ownership, guild regulation, taxation, welfare, markets, or state development. Nor does it fix foreign policy: the same religious language may justify peace, defensive war, missionary expansion, imperial authority, or solidarity with a transnational community. These dimensions must be evaluated separately from religious legal authority.',
             citations: citations(['mawardiOrdinances', 'aquinasMoralPolitical', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'openTextbook', 'foreignPolicy', 'oxfordIranTheocraticCriminalLaw']),
           },
+          {
+            type: 'paragraph',
+            text: 'Iran’s 1989 constitutional text illustrates this institutional distinction. Article 4 makes Islamic criteria binding on legislation and assigns assessment to the Guardian Council’s religious jurists; article 6 also provides for elections and specified referendums. Religious supremacy and electoral institutions are thus combined in the written design, rather than being mutually exclusive categories.',
+            citations: citations([], ['iranCouncilConstitution1989']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Guardian Council is not an undifferentiated clerical body. Article 91 specifies six religious jurists selected by the Leader and six Muslim legal jurists chosen by parliament from the judiciary chief’s nominees. Article 96 requires a majority of the religious jurists for Islamic compatibility and a majority of the full council for constitutional compatibility.',
+            citations: citations([], ['iranCouncilConstitution1989']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Assembly of Experts is a different institution: articles 107 and 111 assign it selection and conditional removal of the Leader. Article 177 protects both religious foundations and electoral features against amendment. For this profile, entrenchment alone does not establish theocracy; the protected religious authority and its institutional interpreters matter. Formal removal powers do not prove effective accountability.',
+            citations: citations([], ['constituteIran1989']),
+          },
         ],
       },
       {
@@ -6908,6 +6923,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['khomeiniIslamicRepublic'], ['constituteIran1989', 'oxfordIranTheocraticCriminalLaw', 'torontoConstitutionalTheocracy', 'nsarchiveKhomeini1979']),
           },
           {
+            period: '2020: a dated interpretation of Iran’s institutional hybrid',
+            text: 'Wilfried Buchta describes a leadership-centered system with constrained electoral competition, but also consequential parliamentary disputes and rival power centers. His analysis rejects both an uncomplicated democratic reading and a picture of entirely scripted institutions. This is an attributed interpretation published in May 2020, not evidence that every relationship remained unchanged afterward or that all Shi’a political thought endorses this model.',
+            citations: citations([], ['buchtaIranInstitutions2020']),
+          },
+          {
             period: 'Late twentieth century–present: hybrid constitutions and religious freedom debates',
             text: 'Contemporary scholarship increasingly examines hybrid arrangements in which constitutions, elections, courts, official religions, religious tribunals, and clerical or judicial guardianship coexist. The central debate is not simply secular versus religious, but how religious authority is institutionalized, whether it is contestable, and whether rights of conscience and equal citizenship survive when sacred norms receive constitutional priority.',
             citations: citations(['spinozaPolitical', 'lockeLetterToleration', 'khomeiniIslamicRepublic'], ['torontoConstitutionalTheocracy', 'iconStateReligionTheocracy', 'oxfordStateReligionFreedom', 'ohchrMinorityRights']),
@@ -6937,7 +6957,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 label: 'Constitutional theocracy',
                 distinction: 'A hybrid order combines modern constitutional forms, courts, elections, and rights language with a formally endorsed religion, sacred legal supremacy, or religious bodies with official jurisdiction or veto power.',
                 relation: 'This is not simply an absolute priesthood or a secular state with a ceremonial religion. Its central question is how constitutional review and religious authority interact.',
-                citations: citations(['khomeiniIslamicRepublic', 'spinozaPolitical'], ['torontoConstitutionalTheocracy', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'constituteIran1989']),
+                citations: citations(['khomeiniIslamicRepublic', 'spinozaPolitical'], ['torontoConstitutionalTheocracy', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'constituteIran1989', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020']),
               },
               {
                 label: 'Religious monarchy',
@@ -7051,10 +7071,10 @@ export const ENCYCLOPEDIA_ENTRIES = {
               },
               {
                 name: 'Iran’s constitutional-religious system',
-                period: 'Iran, after the 1979 revolution; constitutional text revised 1989',
+                period: '1979 constitution revised 1989; selected institutional interpretation dated 2020',
                 match: 'The constitutional text combines an Islamic foundation and religious criteria with elected offices, popular institutions, a Supreme Leader, and a Guardian Council with religious and constitutional review functions. Comparative scholars use it as a major case of constitutional theocracy.',
                 caveat: 'The constitutional text is evidence of institutional design, not a complete account of everyday enforcement, political practice, or public opinion. Iran’s Shi’a jurisprudential framework must not be generalized to all Islam or all religious constitutional systems.',
-                citations: citations(['khomeiniIslamicRepublic'], ['constituteIran1989', 'oxfordIranTheocraticCriminalLaw', 'torontoConstitutionalTheocracy', 'nsarchiveKhomeini1979']),
+                citations: citations(['khomeiniIslamicRepublic'], ['constituteIran1989', 'oxfordIranTheocraticCriminalLaw', 'torontoConstitutionalTheocracy', 'nsarchiveKhomeini1979', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020']),
               },
               {
                 name: 'Religious constitutions and state-religion hybrids',
@@ -7102,6 +7122,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'In the Iranian text, article 13 limits recognized religious minorities to Zoroastrians, Jews, and Christians, article 20 qualifies rights by Islamic criteria, and article 23 protects against persecution merely for belief. Article 115 nevertheless attaches religious qualifications to the presidency. Recognition, conscience protections, and eligibility for office are different questions; these clauses alone establish neither equal participation nor actual enforcement.',
+            citations: citations([], ['iranCouncilConstitution1989']),
+          },
+          {
+            type: 'paragraph',
             text: 'The third criticism is the coercion of conscience. Religious belief, worship, conversion, non-belief, and interpretation may be deeply important, but state enforcement can produce hypocrisy, surveillance, punishment, censorship, and violence. Freedom of conscience, private worship, public religious association, scholarly inquiry, and the right to dissent are safeguards against turning a spiritual commitment into an all-encompassing police power.',
             citations: citations(['lockeLetterToleration', 'spinozaPolitical', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'ohchrMinorityRights', 'iconStateReligionTheocracy', 'vdem']),
           },
@@ -7109,6 +7134,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The fourth criticism is constitutional ambiguity. Hybrid systems can hold elections and rights catalogues while allowing religious bodies to veto candidates, laws, courts, or constitutional interpretation. The result may be a dual legitimacy in which elected institutions are formally present but cannot alter the religious foundation. Clear jurisdiction, transparent review, independent courts, equal suffrage, public reasons, and peaceful alternation are needed if constitutionalism is to constrain religious as well as secular power.',
             citations: citations(['khomeiniIslamicRepublic', 'spinozaPolitical', 'lockeLetterToleration'], ['torontoConstitutionalTheocracy', 'oxfordIranTheocraticCriminalLaw', 'constituteIran1989', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Evidence about candidate selection also has layers. Article 99 assigns electoral supervision, while article 110(9) expressly requires confirmation of presidential candidates’ qualifications. Buchta’s 2020 account describes broader screening and argues that it weakens the Experts’ independence. His assessment of practice should not be mistaken for the wording of article 99 itself or for a fresh evaluation of current elections.',
+            citations: citations([], ['constituteIran1989', 'buchtaIranInstitutions2020']),
           },
           {
             type: 'paragraph',
@@ -7125,7 +7155,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['josephusAgainstApion', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'aquinasMoralPolitical', 'spinozaPolitical', 'lockeLetterToleration', 'hobbesLeviathan'],
-      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy'],
+      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020'],
       editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, and other traditions historically specific. Scores are didactic composites, not judgments about any religion or every society associated with it.',
     },
     researchGaps: [
@@ -7136,6 +7166,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add primary constitutional and legal evidence for current or recent cases, distinguishing official religion, religious courts, sacred-law clauses, clerical veto, judicial guardianship, executive authority, and actual enforcement against formal constitutional language.',
       'Add specialist research on women, family law, conversion, apostasy, non-belief, sectarian minorities, Indigenous peoples, slavery, colonial administration, religious education, censorship, political parties, and the difference between communal autonomy and state coercion.',
       'Compare theocracy with civil religion, religious nationalism, confessional democracy, Christian democracy, Islamic democracy, religious socialism, religious monarchy, and secular authoritarianism through explicit institutional criteria rather than broad cultural labels.',
+      'Collate the Iranian constitutional passages with identified Persian editions and amendment records. Resolve the article 110(7) discrepancy between the consulted English translations; do not silently harmonize it or confuse the Council page’s 2021 posting date with the constitutional revision year.',
+      'Review electoral legislation, Guardian Council interpretations, Experts proceedings, and specialist Persian-language scholarship, including dissenting Shi’a jurists and minority perspectives. Test formal safeguards against dated implementation evidence; the 1989 text and Buchta’s 2020 analysis do not establish current officeholders, enforcement, or public opinion.',
     ],
   },
   'christian-democratic': {

@@ -1,6 +1,32 @@
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  iranCouncilConstitution1989: {
+    accessDate: '2026-09-16',
+    creators: ['Islamic Republic of Iran'],
+    institution: 'Guardian / Constitutional Council of the Islamic Republic of Iran',
+    sourceType: 'primary constitutional text / named English translation',
+    evidenceRole: 'primary',
+    discipline: 'constitutional institutions and religious authority',
+    publicationDate: '1989',
+    publisher: 'Constitutional Council English website; page posted 2021-06-02',
+    confidence: 'high',
+    languages: ['English'],
+    description: 'Revised constitutional text, not a constitution adopted in 2021. Translation credited to Javad Arabshirazi and Hossein Beheshti Shakib; edited by Sam Torabi under Abbas-Ali Kadkhodaei’s supervision. Institutional preamble and explanatory notes are not neutral historical findings. Selected articles reviewed; original Persian edition and implementation not verified.',
+  },
+  buchtaIranInstitutions2020: {
+    accessDate: '2026-09-16',
+    creators: ['Wilfried Buchta'],
+    institution: 'Bundeszentrale für politische Bildung',
+    sourceType: 'scholarly institutional analysis / selected sections',
+    evidenceRole: 'secondary',
+    discipline: 'Iranian political institutions and constitutional theocracy',
+    publicationDate: '2020-05-15',
+    publisher: 'Aus Politik und Zeitgeschichte / bpb',
+    confidence: 'high',
+    languages: ['German'],
+    description: 'Attributed analysis by an Islamic-studies scholar, not the constitutional text or a present-day institutional audit. The author’s 2000 book and other cited works were not independently reviewed; this entry does not adopt the article’s forecasts.',
+  },
   ostromPolycentricAER2010: {
     accessDate: '2026-09-16',
     creators: ['Elinor Ostrom'],
@@ -1257,11 +1283,17 @@ export const BIBLIOGRAPHY_METADATA = {
     description: 'Archival record for Khomeini’s public claims about the Islamic Republic and religiously grounded political legitimacy.',
   },
   constituteIran1989: {
+    accessDate: '2026-09-16',
+    creators: ['Islamic Republic of Iran'],
     institution: 'Constitute Project',
-    sourceType: 'constitutional text repository',
+    sourceType: 'primary constitutional text / English repository edition',
+    evidenceRole: 'primary',
     discipline: 'comparative constitutional law',
+    publicationDate: '1989',
+    publisher: 'Constitute Project',
     confidence: 'high',
-    description: 'Constitutional text showing the interaction of Islamic criteria, religious offices, elected institutions, popular sovereignty, and the Guardian Council.',
+    languages: ['English'],
+    description: 'Corrects the earlier secondary-source classification. Revised-text year, not repository publication date. Translator not identified on the consulted HTML; topic tags are repository annotations, not constitutional clauses. The rendering of article 110(7) differs from the separately catalogued Council translation; no Persian collation claimed.',
   },
   vaticanStateBodies: {
     institution: 'Vatican City State',
