@@ -12,7 +12,8 @@ import {
 const unique = (values) => new Set(values).size === values.length;
 const recordsFor = (field, id) => BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds[field]?.includes(id));
 
-assert.ok(BIBLIOGRAPHY_RECORDS.length >= RESEARCH_SOURCES.length + Object.keys(AUTHOR_REFERENCES).length + Object.keys(SOURCES).length);
+const sourceUrls = [...RESEARCH_SOURCES, ...Object.values(AUTHOR_REFERENCES), ...Object.values(SOURCES)].map(({ url }) => url);
+assert.ok(BIBLIOGRAPHY_RECORDS.length >= new Set(sourceUrls).size);
 assert.ok(unique(BIBLIOGRAPHY_RECORDS.map((record) => record.id)), 'bibliography IDs must be unique');
 assert.ok(unique(BIBLIOGRAPHY_RECORDS.map((record) => record.canonicalUrl)), 'bibliography canonical URLs must be unique');
 
@@ -24,7 +25,17 @@ for (const record of BIBLIOGRAPHY_RECORDS) {
   assert.ok(Object.values(record.relationships).some((values) => values.length), `${record.id} must map to downstream content`);
 }
 
-for (const source of RESEARCH_SOURCES) assert.equal(recordsFor('researchSourceIds', source.id).length, 1, source.id);
+const sharedSourceLinkIds = RESEARCH_SOURCES.map(({ sourceLinkId }) => sourceLinkId).filter(Boolean);
+assert.ok(unique(sharedSourceLinkIds), 'a source link may be shared with only one research record');
+for (const source of RESEARCH_SOURCES) {
+  assert.equal(recordsFor('researchSourceIds', source.id).length, 1, source.id);
+  if (source.sourceLinkId) {
+    assert.equal(SOURCES[source.sourceLinkId]?.url, source.url, 'shared citations must identify the exact same source');
+    const [record] = recordsFor('researchSourceIds', source.id);
+    assert.equal(record.id, `link-${source.sourceLinkId}`, 'sharing a source must preserve its existing public anchor');
+    assert.ok(record.citationIds.sourceLinkIds.includes(source.sourceLinkId), 'shared records must resolve both citation types');
+  }
+}
 for (const id of Object.keys(AUTHOR_REFERENCES)) assert.equal(recordsFor('authorReferenceIds', id).length, 1, id);
 for (const id of Object.keys(SOURCES)) assert.equal(recordsFor('sourceLinkIds', id).length, 1, id);
 

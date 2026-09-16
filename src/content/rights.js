@@ -170,6 +170,9 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    cdecAntisemiticDecrees1938: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent summary and link only; no legal passage, editorial text, translation, or document image reproduced. Historical legislation does not clear every modern collection component.' },
+    anselmiPropertyReport2001: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original attributed paraphrase and link only; no report passage, archival quotation, table, or facsimile republished.' },
+    ushmmItalyPersecution: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original synthesis and link only; no museum text, testimony, photograph, or map reproduced.' },
     friedmanEducation1955: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'The reprint credits copyright to the Trustees of Rutgers College (1955) and states Rutgers University Press granted reprint permission. That is not permission granted to this project.', notes: 'Original critical paraphrase and source link only. No essay passage, footnote quotation, page image, or PDF redistributed.' },
     cowenPublicGoods: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'Econlib displays an all-rights-reserved notice.', notes: 'Original attributed summary and link only. No article passage, examples table, embedded quotation, or further-reading extract reproduced.' },
     whakaputangaTexts1835: { ...LINK_ONLY, reviewedAt: '2026-09-16', license: 'NZHistory displays CC BY-NC 3.0 New Zealand for text, with separate conditions for non-text material. No commercial republication clearance inferred for the modern translation.', notes: 'Original synthesis and link only. No Māori transcription, Hēnare translation, Busby text, archival image, or facsimile reproduced; public access does not establish community endorsement.' },
@@ -416,7 +419,7 @@ const RIGHTS_RECORDS = {
     nozik: { ...LINK_ONLY },
     hitler: { ...PERMISSION_SENSITIVE, notes: 'US Holocaust Memorial Museum page used as a link; no institutional text or media is copied.' },
     mussolini: { ...LINK_ONLY },
-    fascistItaly: { ...PERMISSION_SENSITIVE, reviewedAt: '2026-09-15', notes: 'USHMM Italy article consulted for the regime’s institutions, imperial warfare, and 1938 antisemitic legislation. Original summaries and a link only; no institutional text, translations, images, or media reproduced.' },
+    fascistItaly: { ...PERMISSION_SENSITIVE, reviewedAt: '2026-09-16', notes: 'USHMM Italy article consulted for institutions, imperial warfare, 1938 legislation, and the 1943 occupation. Shared card and encyclopedia reference: independent summaries and a link only; no institutional text, translations, images, or media reproduced.' },
     burke: { ...LINK_ONLY },
     degaulle: { ...LINK_ONLY },
     palme: { ...LINK_ONLY },

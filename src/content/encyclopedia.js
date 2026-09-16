@@ -462,6 +462,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Economically, fascism is better described as national subordination of economic life than as a fixed position on the free-market/collectivist axis. Corporatist institutions, private firms, labor controls, autarky, rearmament, and state direction could coexist. Fascist regimes opposed Marxist class politics and independent labor organization while claiming to overcome class conflict inside the national community.',
             citations: citations(['mussoliniDoctrine', 'hitlerMeinKampf'], ['sepFascism', 'bpbFascism']),
           },
+          {
+            type: 'evidence-note',
+            text: 'RD-L 1728/1938, article 8, classified people through ancestry and, in some cases, religious affiliation; personal belief alone did not determine persecution. These were imposed racist categories, not biological facts. Editorially, this crosses the identity, authority, and religion axes: it cannot be reduced to a preference for religious government or used to calculate new coordinates.',
+            citations: citations([], ['cdecAntisemiticDecrees1938']),
+          },
         ],
       },
       {
@@ -484,6 +489,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'treccaniCorporativismo', 'treccaniLateranPacts', 'cambridgeMussolinisFollies', 'sageColonialDominationItaly']),
           },
           {
+            period: '1938: Italian state legislation against Jews',
+            text: 'Royal decree-law 1390 of 5 September excluded Jewish teachers and pupils from recognized schools, with a transitional exception for existing university students. Decree-law 1728 of 17 November added marriage, employment, and property restrictions (articles 1, 10, and 13). Both bear Victor Emmanuel III’s and Mussolini’s signatures: Italian state responsibility preceded German occupation.',
+            citations: citations([], ['cdecAntisemiticDecrees1938']),
+          },
+          {
             period: '1923–1933: Nazi movement and the end of Weimar democracy',
             text: 'Hitler’s failed 1923 putsch was followed by a strategic shift toward electoral and legal routes to power. After Hitler became chancellor in January 1933, the Enabling Act, party bans, Gleichschaltung, and the destruction of independent institutions established the Nazi dictatorship.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmFascism', 'bpbNationalSocialism']),
@@ -492,6 +502,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1933–1945: radicalization, war, and genocide',
             text: 'Nazi rule fused racial citizenship, political terror, rearmament, territorial expansion, occupation, forced labor, and genocide. The Holocaust and the wider crimes of the Nazi state are not incidental “excesses”; they are central evidence of what racial-totalitarian fascism meant in practice.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmFascism', 'bpbNationalSocialism']),
+          },
+          {
+            period: '1943: collapse, occupation, and the Italian Social Republic',
+            text: 'Mussolini was removed in July. After the September armistice announcement, Germany occupied northern and central Italy and installed him at the head of the Italian Social Republic (RSI). USHMM documents German roundups and deportations to Auschwitz. This occupation phase must be distinguished from the preceding monarchy-based dictatorship without erasing continuing Italian Fascist agency.',
+            citations: citations([], ['ushmmItalyPersecution']),
+          },
+          {
+            period: '1943–1944: RSI arrest orders and dispossession',
+            text: 'The Anselmi Commission documents the RSI Interior Ministry’s police order no. 5 of 30 November 1943: arrest and internment of Jews, with seizure of their assets pending confiscation. Decree no. 2 of 4 January 1944 established general confiscation, administered through provincial authorities and the property-management agency EGELI. These were distinct administrative stages, not simply another name for German deportation policy (report sections 2.a.2.1 and 2.a.3.1).',
+            citations: citations([], ['anselmiPropertyReport2001']),
           },
           {
             period: 'Post-1945: defeat, memory, and contested extension',
@@ -551,8 +571,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Fascist Italy',
                 period: '1922–1943; Italian Social Republic 1943–1945',
                 match: 'canonical historical match',
-                caveat: 'The regime changed over time and its racial policy was not identical to Nazi Germany’s; later alliance and war intensified its authoritarian and imperial features.',
-                citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'treccaniCorporativismo', 'treccaniLateranPacts', 'cambridgeMussolinisFollies', 'sageColonialDominationItaly', 'ushmmFascism', 'bpbFascism']),
+                caveat: 'The regime changed over time and its racial policy was not identical to Nazi Germany’s; later alliance and war intensified its authoritarian and imperial features. That distinction does not absolve Italian institutions of their own persecution policies.',
+                citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'treccaniCorporativismo', 'treccaniLateranPacts', 'cambridgeMussolinisFollies', 'sageColonialDominationItaly', 'ushmmFascism', 'bpbFascism', 'cdecAntisemiticDecrees1938', 'anselmiPropertyReport2001']),
               },
               {
                 name: 'Nazi Germany',
@@ -608,6 +628,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Nazi crimes must never be diluted by treating them as a generic “strong government” outcome. Racial persecution, the Holocaust, aggressive war, forced labor, and mass murder are historically documented practices of the Nazi state and must remain explicit in any educational presentation of this card.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmFascism', 'bpbNationalSocialism']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Law, enforcement, and rescue require different evidence. USHMM describes Italian refusals of German deportation demands in some occupation zones before September 1943; these do not cancel domestic persecution. The Anselmi report distinguishes political declarations, police orders, confiscation decrees, and uneven provincial implementation. Neither national innocence nor identical conduct by every Italian official follows from this record.',
+            citations: citations([], ['ushmmItalyPersecution', 'anselmiPropertyReport2001']),
+          },
         ],
       },
     ],
@@ -630,14 +655,20 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'ushmmFascism',
         'bpbFascism',
         'bpbNationalSocialism',
+        'cdecAntisemiticDecrees1938',
+        'anselmiPropertyReport2001',
+        'ushmmItalyPersecution',
       ],
-      editorialNote: 'The entry separates primary fascist and Nazi texts from comparative scholarship and institutional historical sources. The profile is a warning and comparison aid, not a diagnosis of contemporary people or countries.',
+      editorialNote: 'The entry separates primary fascist and Nazi texts from comparative scholarship and institutional historical sources. The profile is a warning and comparison aid, not a diagnosis of contemporary people or countries. Selected 1938 decrees are primary evidence of prescribed rules; the 2001 commission report and USHMM article provide later historical interpretation. English legal summaries are paraphrases, not quotations or certified translations. None establishes a measured six-axis score.',
     },
     researchGaps: [
       'Expand Italian-language scholarship on Fascist Italy, corporatism, the Lateran Pacts, colonial violence, and the regime’s changing racial policy, including archival and regional studies beyond general reference works.',
       'Add French- and German-language scholarship on comparative fascism, Vichy, the German Sonderweg debate, and post-war memory without treating all cases as equivalent.',
       'Add country-specific evidence before creating any contemporary movement or country match; avoid inferring fascism from rhetoric alone.',
       'Add specialist review on gender, religion, political economy, colonialism, and the relationship between fascist movements and traditional conservative elites.',
+      'Collate the selected CDEC legal transcriptions against original Gazette facsimiles; extend research to the 1939 implementing provisions, ministerial circulars, and provincial enforcement records before claiming a complete legislative history.',
+      'Add victim testimony and specialist local studies of Italian and German cooperation, refusal, arrest, dispossession, and restitution. Keep mainland Italy, occupation zones, and colonial territories distinct; no casualty totals are inferred from this focused pass.',
+      'Review the full Anselmi report and further Italian-language scholarship; the current evidence covers selected reprinted sections, not every archival case or a complete account of institutional responsibility.',
     ],
   },
   'libertarian-market': {

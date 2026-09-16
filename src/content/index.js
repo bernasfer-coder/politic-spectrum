@@ -78,6 +78,9 @@ const OPTION_VALUES = [-100, -50, 0, 50, 100];
 const OPTION_LABELS = ['Strongly disagree', 'Disagree', 'Unsure / mixed', 'Agree', 'Strongly agree'];
 
 const RESEARCH_SOURCES = [
+  { id: 'cdecAntisemiticDecrees1938', label: 'CDEC — Le leggi antiebraiche dell’Italia fascista: selected 1938 decrees', url: 'https://www.cdec.it/formazione/percorsi/per-la-storia-della-shoah/le-leggi-antiebraiche-dellitalia-fascista/', note: 'Italian transcriptions of RD-L 1390/1938 and 1728/1938 consulted with editorial introduction. Selected documents, not the entire collection; no original Gazette facsimile collation.' },
+  { id: 'anselmiPropertyReport2001', label: 'Commissione Anselmi — La normativa antiebraica italiana sui beni e sul lavoro (2001 report)', url: 'https://www.cdec.it/formazione/percorsi/per-la-storia-della-shoah/la-normativa-antiebraica-italiana-sui-beni-e-sul-lavoro-1938-1945/', note: 'CDEC reprint: introduction and selected sections 2.a.1.3–2.a.3.1 consulted. Historical commission research, not a full-report review or independent inspection of its quoted archival documents.' },
+  { id: 'ushmmItalyPersecution', sourceLinkId: 'fascistItaly', label: 'United States Holocaust Memorial Museum — Italy', url: 'https://encyclopedia.ushmm.org/content/en/article/italy', note: 'English sections on legislation, occupation zones, the 1943 regime change, and German occupation consulted. Historical synthesis; media, translations, and further-reading books were not independently reviewed.' },
   { id: 'friedmanEducation1955', label: 'Milton Friedman — The Role of Government in Education (1955)', url: 'https://la.utexas.edu/users/hcleaver/330T/350kPEEFriedmanRoleOfGovttable.pdf', note: 'University-hosted reprint linked by Hoover’s Collected Works catalogue, item 58044. PDF pages 1–8 visually checked, including publishing credit and footnote 2; later vocational-finance analysis was not reviewed.' },
   { id: 'cowenPublicGoods', label: 'Tyler Cowen — Public Goods, Concise Encyclopedia of Economics', url: 'https://www.econlib.org/library/Enc/PublicGoods.html', note: 'Complete article consulted for concepts and attributed institutional comparisons. A signed reference essay, not a systematic empirical review; its further-reading works were not independently consulted.' },
   { id: 'whakaputangaTexts1835', label: 'He Whakaputanga (1835) — Māori text, Mānuka Hēnare translation, and Busby English version', url: 'https://nzhistory.govt.nz/media/interactive/he-whakaputanga-declaration-independence-1835', note: 'NZHistory transcription, four articles and codicil, Hēnare translation, Busby version, and editorial credits consulted. The modern translation is not the English document sent by Busby; no manuscript or facsimile collation claimed.' },
@@ -438,7 +441,7 @@ const SOURCES = {
   nozik: { label: 'Internet Encyclopedia of Philosophy', url: 'https://iep.utm.edu/nozick/' },
   hitler: { label: 'United States Holocaust Memorial Museum', url: 'https://encyclopedia.ushmm.org/content/en/article/adolf-hitler' },
   mussolini: { label: 'Encyclopaedia Britannica', url: 'https://www.britannica.com/biography/Benito-Mussolini' },
-  fascistItaly: { label: 'United States Holocaust Memorial Museum — Italy', url: 'https://encyclopedia.ushmm.org/content/en/article/italy', accessDate: '2026-09-15' },
+  fascistItaly: { label: 'United States Holocaust Memorial Museum — Italy', url: 'https://encyclopedia.ushmm.org/content/en/article/italy', accessDate: '2026-09-16' },
   burke: { label: 'Encyclopaedia Britannica', url: 'https://www.britannica.com/biography/Edmund-Burke' },
   degaulle: { label: 'Encyclopaedia Britannica', url: 'https://www.britannica.com/biography/Charles-de-Gaulle' },
   palme: { label: 'Encyclopaedia Britannica', url: 'https://www.britannica.com/biography/Olof-Palme' },
@@ -1595,10 +1598,17 @@ function buildBibliographyRecords() {
 
   const researchRecords = RESEARCH_SOURCES.map((source) => {
     const metadata = BIBLIOGRAPHY_METADATA[source.id] ?? {};
-    const rights = rightsFor('researchSources', source.id);
+    // An explicitly shared source retains its older public anchor and rights boundary.
+    const rights = source.sourceLinkId ? rightsFor('sourceLinks', source.sourceLinkId) : rightsFor('researchSources', source.id);
+    const relationships = toArrays(researchUsage[source.id]);
+    if (source.sourceLinkId) {
+      for (const [key, values] of Object.entries(sourceLinkUsage[source.sourceLinkId])) {
+        relationships[key] = [...new Set([...relationships[key], ...values])];
+      }
+    }
     return {
-      id: `research-${source.id}`,
-      citationKey: source.id,
+      id: source.sourceLinkId ? `link-${source.sourceLinkId}` : `research-${source.id}`,
+      citationKey: source.sourceLinkId ?? source.id,
       recordType: 'research-source',
       evidenceRole: metadata.evidenceRole ?? (metadata.sourceType?.includes('codebook') || metadata.sourceType?.includes('documentation') || metadata.sourceType?.includes('survey') ? 'methodology' : 'secondary'),
       title: metadata.title ?? source.label,
@@ -1625,8 +1635,8 @@ function buildBibliographyRecords() {
       review: reviewFor(rights, metadata.confidence),
       description: metadata.description ?? source.note,
       note: source.note,
-      relationships: toArrays(researchUsage[source.id]),
-      citationIds: { researchSourceIds: [source.id], authorReferenceIds: [], sourceLinkIds: [], researchWorkIds: [], researchPersonIds: [] },
+      relationships,
+      citationIds: { researchSourceIds: [source.id], authorReferenceIds: [], sourceLinkIds: source.sourceLinkId ? [source.sourceLinkId] : [], researchWorkIds: [], researchPersonIds: [] },
     };
   });
 
@@ -1667,7 +1677,8 @@ function buildBibliographyRecords() {
     };
   });
 
-  const sourceLinkRecords = Object.entries(SOURCES).map(([id, source]) => {
+  const sharedSourceLinkIds = new Set(RESEARCH_SOURCES.map(({ sourceLinkId }) => sourceLinkId).filter(Boolean));
+  const sourceLinkRecords = Object.entries(SOURCES).filter(([id]) => !sharedSourceLinkIds.has(id)).map(([id, source]) => {
     const rights = rightsFor('sourceLinks', id);
     return {
       id: `link-${id}`,

@@ -51,7 +51,7 @@ for (const [id, entry] of Object.entries(ENCYCLOPEDIA_ENTRIES)) {
   walkEvidence(entry, id);
 }
 
-for (const profileId of ['communist', 'anarcho-capitalist', 'anarcho-communist', 'liberal-constitutionalist', 'militarist-imperialist', 'libertarian-market']) {
+for (const profileId of ['communist', 'anarcho-capitalist', 'anarcho-communist', 'liberal-constitutionalist', 'militarist-imperialist', 'libertarian-market', 'historical-fascist']) {
   const profile = ARCHETYPES.find(({ id }) => id === profileId).profile;
   for (const { id } of DIMENSIONS) {
     assert.equal(ENCYCLOPEDIA_ENTRIES[profileId].dimensionInterpretations[id].score, profile[id], `${profileId}.${id} must use the same orientation as its reference card`);
@@ -63,6 +63,33 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['anarcho-communist'].dimensionInterpretations.
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.economic.score, -30, 'the existing market-oriented liberal constitutional coordinate must remain negative');
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
+
+const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
+for (const [sourceId, evidenceRole] of [
+  ['cdecAntisemiticDecrees1938', 'primary'],
+  ['anselmiPropertyReport2001', 'secondary'],
+  ['ushmmItalyPersecution', 'secondary'],
+]) {
+  assert.ok(fascistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Italian Fascism reference trail`);
+  assert.ok(JSON.stringify(fascistEntry.sections).includes(sourceId), `${sourceId} needs a claim-level citation`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish contemporary legislation from later historical research`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain the summary-and-link boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not introduce an unreviewed quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:historical-fascist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const fascistHistory = fascistEntry.sections.find(({ id }) => id === 'history').timeline;
+const italyRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'link-fascistItaly');
+assert.ok(italyRecord.relationships.archetypeIds.includes('historical-fascist'), 'the shared museum source must retain its historical-card backlink');
+assert.equal(italyRecord.rightsStatus, 'permission-sensitive', 'source sharing must not weaken the existing rights boundary');
+const italianLaws = fascistHistory.find(({ period }) => period.startsWith('1938:'));
+const rsiDispossession = fascistHistory.find(({ period }) => period.startsWith('1943–1944:'));
+assert.ok(italianLaws && rsiDispossession, 'Italian persecution must retain distinct pre-occupation and RSI phases');
+assert.ok(italianLaws.citations.researchSourceIds.includes('cdecAntisemiticDecrees1938'), 'the 1938 legal claims need primary-document evidence');
+assert.ok(rsiDispossession.citations.researchSourceIds.includes('anselmiPropertyReport2001'), 'the RSI account must disclose its later commission-report source');
 
 const naziEntry = ENCYCLOPEDIA_ENTRIES['national-socialist'];
 const naziProfile = ARCHETYPES.find(({ id }) => id === 'national-socialist').profile;
