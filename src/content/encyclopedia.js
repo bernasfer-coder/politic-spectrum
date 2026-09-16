@@ -3086,6 +3086,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Ostrom separates resource attributes from ownership arrangements. A common-pool resource is difficult to exclude users from, while one user’s extraction reduces what remains for others. That does not determine whether its rules are public, private, communal, or absent. A governed commons is therefore not unrestricted access, and identifying a resource problem does not by itself select a political regime.',
+            citations: citations([], ['ostromPolycentricAER2010']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Property is also more than a yes-or-no ownership category: permission to enter or harvest need not include authority to change use rules, exclude others, or transfer rights. Ostrom’s account helps distinguish these powers instead of assuming that users without a sale right have no rights at all.',
+            citations: citations([], ['ostromPolycentricAER2010']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Her institutional principles include monitoring both conduct and resource conditions, accessible dispute resolution, and proportionate responses to rule-breaking. Recognition by higher authorities and coordination across levels can matter alongside local rule-making. Community governance therefore does not imply the disappearance of government; these are institutional questions, not a universal constitution for green politics.',
+            citations: citations([], ['ostromPolycentricAER2010']),
+          },
+          {
+            type: 'paragraph',
             text: 'Brazil’s 1990 decree creating the Chico Mendes Extractive Reserve placed it within IBAMA and provided for land acquisition and concessions of use rights to the resident extractive population. It assigned continuing responsibilities to the executive and declared ecological and social purposes. This is primary evidence of an institutional design, not proof that its aims were achieved or a description of the reserve’s current condition.',
             citations: citations([], ['chicoMendesCreationDecree']),
           },
@@ -3131,6 +3146,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['allegrettiSeringueiros', 'chicoMendesCreationDecree']),
           },
           {
+            period: '2010: comparative reassessment of commons institutions',
+            text: 'Michael Cox, Gwen Arnold, and Sergio Villamayor Tomás reviewed 91 studies and coded 77 cases. They found substantial support for Ostrom’s principles while refining their formulation. This was research on resource governance, not a survey validating this website’s six-axis ideology profile.',
+            citations: citations([], ['coxCommonsDesign2010']),
+          },
+          {
             period: 'Late twentieth century to the present: climate justice and polycentric action',
             text: 'Climate politics linked local environmental harm to global atmospheric processes, historical emissions, development inequality, migration, health, and intergenerational justice. International agreements, national laws, cities, firms, communities, and social movements now interact in mitigation and adaptation. The IPCC identifies escalating risks and the need for rapid, integrated, and equitable action, but it does not prescribe one political ideology or ownership system.',
             citations: citations(['senDevelopmentFreedom', 'ostromGoverningCommons', 'kantPerpetualPeace'], ['ipccAr6Synthesis', 'sepClimateJustice', 'sepEnvironmentalEthics']),
@@ -3148,7 +3168,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 label: 'Commons institutionalism',
                 distinction: 'Studies how communities and other institutions govern shared resources through monitoring, graduated rules, conflict resolution, and nested arrangements.',
                 relation: 'Closest to Ostrom’s empirical approach; it does not require anti-capitalism, anarchism, or one universal ownership form.',
-                citations: citations(['ostromGoverningCommons'], ['sepEnvironmentalEthics']),
+                citations: citations(['ostromGoverningCommons'], ['sepEnvironmentalEthics', 'ostromPolycentricAER2010', 'coxCommonsDesign2010']),
               },
               {
                 label: 'Social ecology and communalism',
@@ -3306,6 +3326,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Cox review’s cases are not 77 independent communities: a case may encompass several communities, and different periods of one setting can count separately. Missing or ambiguous evidence was not coded as absence; analyses used different subsets for different principles. These limits prevent treating the results as a controlled test or a guarantee of causation.',
+            citations: citations([], ['coxCommonsDesign2010']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The authors interpret the principles probabilistically, not as a checklist guaranteeing success. Social differences, wider political institutions, ecological conditions, and uncertain transfer across scales remain important. Our green-commons profile consequently uses this literature to frame questions about institutions, not to declare any present-day country a proven match.',
+            citations: citations([], ['coxCommonsDesign2010']),
+          },
+          {
+            type: 'paragraph',
             text: 'A second criticism concerns ecological paternalism and expertise. Urgent risk can be used to justify surveillance, exclusion, technocracy, forced displacement, or austerity that falls disproportionately on vulnerable groups. Environmental policy needs evidence and enforceable standards, but it also needs procedural justice, accessible participation, compensation, rights protection, and democratic review.',
             citations: citations(['senDevelopmentFreedom', 'millOnLiberty'], ['sepClimateJustice', 'sepEnvironmentalEthics', 'ipccAr6Synthesis']),
           },
@@ -3324,7 +3354,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['ostromGoverningCommons', 'bookchinLibertarianMunicipalism', 'senDevelopmentFreedom', 'millOnLiberty', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis', 'socialEcologyMunicipalism', 'sepAnarchism', 'sepSocialism', 'openTextbook', 'vdem', 'foreignPolicy', 'allegrettiSeringueiros', 'chicoMendesCreationDecree', 'agarwalParticipatoryExclusions'],
+      researchSourceIds: ['sepEnvironmentalEthics', 'sepClimateJustice', 'ipccAr6Synthesis', 'socialEcologyMunicipalism', 'sepAnarchism', 'sepSocialism', 'openTextbook', 'vdem', 'foreignPolicy', 'allegrettiSeringueiros', 'chicoMendesCreationDecree', 'agarwalParticipatoryExclusions', 'ostromPolycentricAER2010', 'coxCommonsDesign2010'],
       editorialNote: 'The entry distinguishes commons governance, social ecology, green liberalism, eco-socialism, conservationism, and deep ecology. Scores describe a didactic ecological-pluralist profile, not every green party, environmental movement, country, or community institution. The Brazilian decree documents historical design; Allegretti supplies historical interpretation, and Agarwal supplies comparative participation research. Neither establishes current reserve conditions or a country-level match. Portuguese material is independently paraphrased, not offered as a verified translation; reviewed pages and rights limits are recorded in the bibliography.',
     },
     researchGaps: [
@@ -3334,6 +3364,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Update the Chico Mendes case with resident-led and independent evidence on tenure implementation, livelihoods, gender, land-use pressures, and ecological outcomes. Extend the selected-page Agarwal review before generalizing the participation framework; historical design is not a current success rating.',
       'Add specialist research on climate finance, colonial extraction, Indigenous sovereignty, migration, disability, gender, labor transitions, critical minerals, agriculture, and urban adaptation.',
       'Add comparative work on the scale limits of localism, the role of national and international authority, technological governance, geoengineering, and democratic safeguards during ecological emergencies.',
+      'Extend the selected-page Ostrom and Cox reviews to the complete publications, original field studies, and coding appendix. Keep the 2009 lecture, 2010 published revision, and earlier Cox report distinct; independently verify sampling and analysis before making stronger outcome claims.',
+      'Add later comparative research on which institutional combinations work for whom, including excluded users, unsuccessful cases, and cross-scale climate governance. Do not derive ideological coordinates or current-country matches from design-principle counts.',
     ],
   },
   'religious-traditionalist': {

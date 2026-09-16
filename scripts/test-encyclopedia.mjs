@@ -64,6 +64,39 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const greenCommonsEntry = ENCYCLOPEDIA_ENTRIES['green-commons'];
+const greenCommonsProfile = ARCHETYPES.find(({ id }) => id === 'green-commons').profile;
+for (const { id } of DIMENSIONS) {
+  assert.equal(greenCommonsEntry.dimensionInterpretations[id].score, greenCommonsProfile[id], `green-commons.${id} must preserve the canonical coordinate`);
+}
+for (const [sourceId, evidenceRole] of [
+  ['ostromPolycentricAER2010', 'primary'],
+  ['coxCommonsDesign2010', 'secondary'],
+]) {
+  assert.ok(greenCommonsEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a green-commons reference trail`);
+  assert.ok(JSON.stringify(greenCommonsEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish the author's framework from its later review`);
+  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its actual consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must remain summary/link-only`);
+  assert.equal(record.directQuote, null, `${sourceId} must not introduce a quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:green-commons'), `${sourceId} needs an encyclopedia backlink`);
+}
+const ostromPublished = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ostromPolycentricAER2010');
+assert.equal(ostromPublished.publicationDate, '2010-06', 'the published revision must not inherit the 2009 lecture date');
+const commonsDescription = greenCommonsEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(commonsDescription, /resource attributes from ownership arrangements/, 'resource type must not imply a single property regime');
+assert.match(commonsDescription, /not unrestricted access/, 'governed commons must remain distinct from open access');
+const commonsReview = greenCommonsEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('2010:'));
+assert.match(commonsReview.text, /91 studies and coded 77 cases/, 'published study and case counts must remain distinct');
+assert.deepEqual(commonsReview.citations.researchSourceIds, ['coxCommonsDesign2010'], 'the published review, not an earlier report, supports these counts');
+const commonsCriticisms = greenCommonsEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(commonsCriticisms, /not 77 independent communities/, 'the case unit must not be converted into a community count');
+assert.match(commonsCriticisms, /Missing or ambiguous evidence was not coded as absence/, 'missing observations must not become negative evidence');
+assert.match(commonsCriticisms, /probabilistically, not as a checklist guaranteeing success/, 'the methodological safeguard must remain explicit');
+
 const socialDemocraticEntry = ENCYCLOPEDIA_ENTRIES['social-democratic'];
 const socialDemocraticProfile = ARCHETYPES.find(({ id }) => id === 'social-democratic').profile;
 for (const { id } of DIMENSIONS) {

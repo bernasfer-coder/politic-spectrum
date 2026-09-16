@@ -1,6 +1,32 @@
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  ostromPolycentricAER2010: {
+    accessDate: '2026-09-16',
+    creators: ['Elinor Ostrom'],
+    institution: 'Portland State University (public-copy host); American Economic Association (publisher metadata)',
+    sourceType: 'primary research synthesis / revised lecture',
+    evidenceRole: 'primary',
+    discipline: 'institutional economics and common-pool resource governance',
+    publicationDate: '2010-06',
+    publisher: 'American Economic Review 100(3), pp. 641–672; DOI 10.1257/aer.100.3.641',
+    confidence: 'high',
+    languages: ['English'],
+    description: 'Published revision of the 8 December 2009 Nobel lecture, separately catalogued from the existing 2009 Research Atlas record. Publisher metadata verified; selected pages of the public university copy reviewed, not the complete article or the earlier lecture PDF, which was inaccessible this pass.',
+  },
+  coxCommonsDesign2010: {
+    accessDate: '2026-09-16',
+    creators: ['Michael Cox', 'Gwen Arnold', 'Sergio Villamayor Tomás'],
+    institution: 'Indiana University Libraries / Digital Library of the Commons',
+    sourceType: 'comparative scholarly review / study and case coding',
+    evidenceRole: 'secondary',
+    discipline: 'commons institutions and environmental governance',
+    publicationDate: '2010',
+    publisher: 'Ecology and Society 15(4):38 / Resilience Alliance',
+    confidence: 'high',
+    languages: ['English'],
+    description: 'Published review distinguished from the earlier report acknowledged by its authors. Selected methods and conclusions reviewed; underlying study texts, coding appendix, and statistical replication not independently checked. Publication year comes from the repository, not PDF creation metadata.',
+  },
   ghdiGodesbergGerman: {
     accessDate: '2026-09-16',
     creators: ['Sozialdemokratische Partei Deutschlands'],
