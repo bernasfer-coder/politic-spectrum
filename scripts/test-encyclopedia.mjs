@@ -64,6 +64,54 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const christianDemocracyEntry = ENCYCLOPEDIA_ENTRIES['christian-democratic'];
+for (const [sourceId, role, date, language] of [
+  ['sweetMaritainPolitical2019', 'secondary', '2019-05-01', 'English'],
+  ['vaticanGaudiumSpesFrench1965', 'primary', '1965-12-07', 'French'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const sweetMaritainRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sweetMaritainPolitical2019');
+assert.deepEqual(sweetMaritainRecord.creators, ['William Sweet']);
+assert.match(sweetMaritainRecord.description, /substantive revision; first publication was 5 December 1997/);
+assert.match(sweetMaritainRecord.note, /selected section 3\.5/);
+assert.match(sweetMaritainRecord.note, /not independently reviewed/);
+const gaudiumRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-vaticanGaudiumSpesFrench1965');
+assert.match(gaudiumRecord.description, /not .*certified English translation/);
+assert.match(gaudiumRecord.note, /no full-document or Latin-edition collation/);
+const reusedFreedomRecords = BIBLIOGRAPHY_RECORDS.filter(({ id }) => id === 'research-vaticanReligiousFreedomFrench');
+assert.equal(reusedFreedomRecords.length, 1);
+assert.equal(reusedFreedomRecords[0].accessDate, '2026-09-15', 'reusing a source must not replace its original metadata');
+assert.deepEqual([...reusedFreedomRecords[0].relationships.profileEntries].sort(), ['encyclopedia:christian-democratic', 'encyclopedia:religious-traditionalist']);
+assert.ok(christianDemocracyEntry.references.researchSourceIds.includes('vaticanReligiousFreedomFrench'));
+const christianDescription = christianDemocracyEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(christianDescription.some(({ text }) => text?.includes('agreement on basic rights from agreement about their ultimate foundation')));
+assert.ok(christianDescription.some(({ text }) => text?.includes('not evidence that any particular party maintained independence')));
+assert.ok(christianDescription.some(({ text }) => text?.includes('does not mandate one church–state arrangement')));
+const christianHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const councilIndex = christianHistory.findIndex(({ period }) => period.startsWith('7 December 1965'));
+const laterIndex = christianHistory.findIndex(({ period }) => period.startsWith('Late twentieth century–present'));
+assert.ok(councilIndex >= 0 && laterIndex > councilIndex);
+assert.equal(new Set(christianHistory.map(({ period }) => period)).size, christianHistory.length);
+const christianCriticisms = christianDemocracyEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(christianCriticisms.some(({ text }) => text?.includes('limited institutional detail')));
+assert.ok(christianCriticisms.some(({ text }) => text?.includes('do not establish a causal line from Maritain')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.includes('identity coordinate of -20 with the main card’s -40')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Independently read and compare')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Collate the selected French conciliar provisions')));
+assert.deepEqual(Object.fromEntries(Object.entries(christianDemocracyEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -5, social: -30, authority: 20, identity: -20, foreign: 15, religion: -62 });
+
 const frenchMonarchyEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
 for (const [sourceId, role, date, language] of [
   ['franceConstitution1791', 'primary', '1791-09-03', 'French'],

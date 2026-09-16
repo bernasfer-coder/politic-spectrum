@@ -170,6 +170,8 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    sweetMaritainPolitical2019: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Article credits copyright to William Sweet (2019). Original attributed synthesis and link only; no SEP passage, embedded quotation, photograph or translated extract republished.' },
+    vaticanGaudiumSpesFrench1965: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-16', notes: 'Original summary and institutional link only. No conciliar passage, translated extract, signature list or media reproduced; public access is not blanket reuse permission.' },
     franceConstitution1791: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-16', notes: 'Original explanatory prose and institutional link only. No historical transcription, site editorial text, image or translated passage republished; access does not establish blanket rights in the hosted edition.' },
     barnaveRoyalInviolability1791: { ...PUBLIC_DOMAIN_CANDIDATE, reviewedAt: '2026-09-16', publicationStatus: 'link-only', notes: 'Historical speech, institutional transcription and modern headnote remain distinct. No quotation, translated extract, illustration or complete speech redistributed; no worldwide edition-rights clearance claimed.' },
     caianiLouisXVI2012Abstract: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent attributed summary and repository link only. No abstract wording, book text, image or PDF redistributed; public metadata access is not a commercial-reuse licence for the monograph.' },

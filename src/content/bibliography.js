@@ -1,6 +1,32 @@
 // Metadata that is safe to publish for the sources currently used by the app.
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
+  sweetMaritainPolitical2019: {
+    accessDate: '2026-09-16',
+    creators: ['William Sweet'],
+    institution: 'Stanford Encyclopedia of Philosophy',
+    sourceType: 'scholarly reference article / selected political-philosophy discussion',
+    evidenceRole: 'secondary',
+    discipline: 'personalism and political philosophy',
+    publicationDate: '2019-05-01',
+    publisher: 'Metaphysics Research Lab, Stanford University',
+    confidence: 'medium',
+    languages: ['English'],
+    description: 'Date is the substantive revision; first publication was 5 December 1997. The consulted version is the Fall 2022 archive. English scholarly synthesis, not an independently checked translation of Maritain.',
+  },
+  vaticanGaudiumSpesFrench1965: {
+    accessDate: '2026-09-16',
+    creators: ['Second Vatican Council; promulgated by Paul VI'],
+    institution: 'Holy See',
+    sourceType: 'primary pastoral constitution / selected French version',
+    evidenceRole: 'primary',
+    discipline: 'Catholic social teaching and political pluralism',
+    publicationDate: '1965-12-07',
+    publisher: 'Holy See',
+    confidence: 'medium',
+    languages: ['French'],
+    description: 'Promulgation date, not the undated French web edition’s publication date. English explanations are original paraphrases; the French wording was not collated against Latin or treated as a certified English translation.',
+  },
   franceConstitution1791: {
     accessDate: '2026-09-16',
     creators: ['Assemblée nationale constituante'],

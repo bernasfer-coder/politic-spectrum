@@ -8064,6 +8064,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'A crucial boundary is constitutional pluralism. A party may be inspired by Christianity while accepting alternation in office, religious freedom, non-confessional citizenship, judicial review, and the right of other parties to govern. When religious authorities receive non-negotiable supremacy over government, dissent, or equal citizenship, the classification moves toward theocracy or confessional authoritarianism instead.',
             citations: citations(['maritainIntegralHumanism', 'lockeLetterToleration'], ['cambridgeChristianDemocracy', 'oxfordChristianDemocracy', 'sepReligionPolitics', 'vdem']),
           },
+          {
+            type: 'paragraph',
+            text: 'William Sweet’s account of Maritain distinguishes agreement on basic rights from agreement about their ultimate foundation. Maritain retained a natural-law justification while defending popular political authority and freedom of conscience. Christian inspiration therefore did not, in this argument, require every citizen to share one philosophical explanation of rights (section 3.5).',
+            citations: citations([], ['sweetMaritainPolitical2019']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Gaudium et spes distinguishes citizens acting from Christian conviction from actions taken in the Church’s name. Section 76 affirms institutional autonomy alongside cooperation and continued religious moral criticism of politics; section 75 recognizes legitimate political disagreement. These are Catholic doctrinal commitments, not evidence that any particular party maintained independence from church authorities.',
+            citations: citations([], ['vaticanGaudiumSpesFrench1965']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Dignitatis humanae grounds protection against religious coercion in personal dignity, including for those who do not fulfil its stated duty to seek religious truth (section 2). Section 6 requires religious freedom and civic equality even where one community receives special recognition. This distinguishes protection of persons from declaring all religious beliefs equally true; it does not mandate one church–state arrangement.',
+            citations: citations([], ['vaticanReligiousFreedomFrench']),
+          },
         ],
       },
       {
@@ -8109,6 +8124,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'European integration: reconciliation, shared institutions, and contested memory',
             text: 'Christian-democratic statesmen were important advocates of a European order built around reconciliation, shared institutions, and interdependence. Schuman’s proposal for shared coal and steel administration illustrates the preference for binding former rivals into common institutions. European integration was never exclusively Christian-democratic; secular, liberal, socialist, federalist, and economic actors also shaped it.',
             citations: citations(['maritainIntegralHumanism', 'kantPerpetualPeace'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope', 'oxfordChristianDemocratDecade']),
+          },
+          {
+            period: '7 December 1965: Vatican II and political-religious pluralism',
+            text: 'Gaudium et spes and Dignitatis humanae were promulgated on this date. They are later doctrinal comparison points, not the origin of already-existing postwar Christian-democratic parties or proof of their implementation.',
+            citations: citations([], ['vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench']),
           },
           {
             period: 'Late twentieth century–present: secularization, party transformation, and global variants',
@@ -8193,7 +8213,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Jacques Maritain',
                 role: 'French Catholic philosopher associated with personalism, human dignity, human rights, and democratic constitutionalism.',
                 caveat: 'Maritain’s philosophy is an intellectual resource for Christian democracy, not a complete party programme and not proof that every Christian-democratic movement followed his pluralist commitments.',
-                citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy']),
+                citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy', 'sweetMaritainPolitical2019']),
               },
               {
                 name: 'Konrad Adenauer',
@@ -8300,6 +8320,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Sweet also identifies a difficulty: Maritain offered limited institutional detail for realizing his pluralist polity, and its capacity to combine religious diversity with unity remains debated. Philosophical compatibility is therefore not a demonstrated model of equal participation (section 3.5).',
+            citations: citations([], ['sweetMaritainPolitical2019']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'These sources illuminate different levels: a philosopher’s argument, church teaching and possible standards for judging political conduct. They do not establish a causal line from Maritain to every conciliar provision or from conciliar language to party behavior. French doctrinal texts and English scholarship are summarized, not reproduced or presented as verified translations; no six-axis coordinate changes follow.',
+            citations: citations([], ['sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench']),
+          },
+          {
+            type: 'paragraph',
             text: 'A second criticism concerns subsidiarity and unequal private power. Families, churches, schools, unions, firms, and local associations can protect pluralism and participation, but can also reproduce hierarchy, exclusion, gender inequality, or private domination. If a lower-level institution cannot protect equal rights, subsidiarity cannot be a blanket argument against public remedies, universal services, or independent oversight.',
             citations: citations(['aquinasMoralPolitical', 'maritainIntegralHumanism'], ['vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'comparativeChristianDemocracy', 'vdem']),
           },
@@ -8328,7 +8358,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections', 'keynesGeneralTheory', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979'],
+      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979', 'sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench'],
       editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
     },
     researchGaps: [
@@ -8342,6 +8372,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the Ahlen and Düsseldorf comparison to original printings, the unabridged 1949 programme, commission records, voting behavior, and implementation. Check Seidel’s digitized text and footnote alignment against the original issue; treat her cited sources as leads until independently reviewed.',
       'Test the competing continuity and rupture interpretations with newer scholarship, labor and business records, and evidence of welfare distribution and exclusion. The two German programmes do not establish a universal Christian-democratic trajectory or current-country classification.',
       'Reconcile the entry’s identity coordinate of -20 with the main card’s -40 through an explicit editorial decision. This discrepancy is not a polarity reversal; neither magnitude is newly validated by the programme research, and both were left unchanged in this pass.',
+      'Independently read and compare the relevant passages of Maritain’s Humanisme intégral and Man and the State in identified French and English editions, alongside critics of his pluralism and common good. Sweet’s selected synthesis does not substitute for primary-text or critic-by-critic verification.',
+      'Collate the selected French conciliar provisions with the authoritative Latin and study their drafting history and dated party and legal practice, particularly minority and non-believer protections. Neither shared language nor chronology alone establishes Maritain’s influence or implementation; Protestant and Orthodox comparisons remain necessary.',
     ],
   },
   'religious-socialist': {
