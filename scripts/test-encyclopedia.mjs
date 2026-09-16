@@ -64,6 +64,45 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const ethiopiaEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
+for (const [sourceId, evidenceRole, publicationDate, language, confidence] of [
+  ['selassieLeagueAppeal1936', 'primary', '1936-06-30', 'English translation; Amharic original not collated', 'medium'],
+  ['leagueCovenant1919', 'primary', '1919-06-28', 'English', 'high'],
+  ['baerSanctionsSecurity1973', 'secondary', '1973', 'English', 'medium'],
+  ['unLeagueAtWork', 'secondary', null, 'English', 'high'],
+]) {
+  assert.ok(ethiopiaEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an imperialism reference trail`);
+  assert.ok(JSON.stringify(ethiopiaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve to one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const selassieAppeal = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-selassieLeagueAppeal1936');
+const baerSanctions = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-baerSanctionsSecurity1973');
+assert.match(selassieAppeal.note, /Document 7 only/);
+assert.match(selassieAppeal.description, /Translator and English edition are unidentified/);
+assert.match(baerSanctions.note, /Full article and cited diplomatic files not consulted/);
+assert.match(baerSanctions.description, /22 May 2009/, 'online release must not replace the print publication date');
+assert.match(baerSanctions.license, /IO Foundation 1973/);
+const ethiopiaDescription = ethiopiaEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(ethiopiaDescription.some(({ text, citations }) => /Article 22/.test(text) && citations.researchSourceIds.includes('leagueCovenant1919')), 'collective security must not erase the mandate hierarchy');
+const selassiePerson = ethiopiaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('Haile Selassie'));
+assert.match(selassiePerson.role, /not an advocate/);
+assert.match(selassiePerson.caveat, /does not represent every Ethiopian community/);
+const ethiopiaBoundary = ethiopiaEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Consultation limits: the appeal'));
+assert.match(ethiopiaBoundary.text, /scores remain unchanged/);
+assert.match(ethiopiaBoundary.text, /no present-day country match/);
+assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Collate the full 1936 appeal')));
+assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Read Baer’s full 1973 article')));
+
 const weimarEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['ghdiWeimarGerman', 'primary', '1919-08-11'],

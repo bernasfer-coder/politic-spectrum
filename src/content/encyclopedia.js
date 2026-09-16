@@ -9624,6 +9624,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The French debate below documents competing political arguments; it does not establish that colonial rule delivered the benefits its advocates promised. Original-language excerpts, later institutional commentary, and scholarly synthesis serve different evidentiary roles. These additions do not assign six-axis scores to Ferry, Clemenceau, France, or the populations subjected to colonial rule.',
             citations: citations([], ['ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012']),
           },
+          {
+            type: 'paragraph',
+            text: 'Collective security and colonial hierarchy could coexist within one institution. In the League Covenant, article 10 protected members’ territory and political independence against external aggression; article 16 provided for economic measures and Council recommendations on military contributions following specified breaches. Article 22 nevertheless organized mandates around paternalistic judgments of peoples’ capacity for self-government. The text therefore does not describe either absolute non-intervention or universal equal independence. These are historical provisions, not a statement of current law or proof of consistent enforcement.',
+            citations: citations([], ['leagueCovenant1919']),
+          },
         ],
       },
       {
@@ -9659,6 +9664,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1914–1945 — total war, mass mobilization, and fascist empire',
             text: 'The First World War demonstrated how alliances, mobilization, nationalism, and imperial rivalry could generate industrialized mass death. Interwar fascist movements then fused militarized politics with national rebirth, territorial revision, racial hierarchy, and totalizing state power; Nazi Germany made racial empire and genocidal war central to its project. Militarism is not identical to fascism, but fascist regimes represent an especially radical conjunction of militarization, dictatorship, and expansion.',
             citations: citations(['clausewitzOnWar', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['oxfordMilitarism', 'sepFascism', 'oxfordImperialism']),
+          },
+          {
+            period: '1935–1936 — Italian invasion and an Ethiopian appeal to collective security',
+            text: 'Italy invaded Ethiopia in 1935. On 30 June 1936, Haile Selassie addressed the League in defense of Ethiopian independence. UN Geneva’s retrospective treats the failure to protect Ethiopia as a major blow to the collective-security system, while noting that the League did settle other disputes.',
+            citations: citations([], ['selassieLeagueAppeal1936', 'unLeagueAtWork']),
           },
           {
             period: '1945–1970s — Charter order, decolonization, and anti-colonial war',
@@ -9738,6 +9748,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'It may reproduce coercion or become expansionist after victory, but its initial relation to empire is structurally different from a project of ruling another people.',
                 citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj'], ['sepColonialism', 'unCharterForce', 'oxfordColonialismEmpireSociology']),
               },
+              {
+                label: 'Collective security against conquest',
+                distinction: 'The Ethiopian appeal demanded international protection while recalling armed national resistance.',
+                relation: 'Editorial classification boundary: opposition to conquest does not establish absolute pacifism, and a request for outside assistance is not by itself an imperial programme.',
+                citations: citations([], ['selassieLeagueAppeal1936', 'leagueCovenant1919']),
+              },
             ],
           },
         ],
@@ -9776,12 +9792,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Included as an opposing voice, not as a supporter of this compound profile; this excerpt cannot establish his entire foreign-policy record.',
                 citations: citations([], ['clemenceauColonialReply1885']),
               },
+              {
+                name: 'Haile Selassie — Ethiopian appeal, 30 June 1936',
+                role: 'A ruler’s diplomatic challenge to Italian conquest, not an advocate of this compound profile.',
+                caveat: 'This speech does not represent every Ethiopian community or establish his domestic politics, complete career, or six-axis position.',
+                citations: citations([], ['selassieLeagueAppeal1936']),
+              },
             ],
           },
           {
             type: 'paragraph',
             text: 'Jürgen Osterhammel’s account of Africa distinguishes conquest from subsequent administration through local intermediaries under colonial military and police supremacy. His discussion of China emphasizes railway and mining concessions and creditor control over state finances alongside territorial competition. These examples help distinguish military force, administrative hierarchy, and financial dependence; they do not make every loan or commercial relationship imperial.',
             citations: citations([], ['osterhammelImperialism2012']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In the selected appeal, Selassie accused Italy of chemical attacks on civilians, criticized the lack of effective assistance, and made Ethiopia’s defense a test of treaty promises to smaller states. This is evidence of his public argument; the speech alone is not independent verification of every battlefield claim or casualty estimate. No numerical casualty claim is adopted here.',
+            citations: citations([], ['selassieLeagueAppeal1936']),
           },
         ],
       },
@@ -9834,6 +9861,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['osterhammelImperialism2012']),
           },
           {
+            type: 'paragraph',
+            text: 'George W. Baer’s published extract distinguishes two purposes of sanctions against Italy: defending the collective-security framework and pressuring Italy toward a negotiated settlement. He describes expectations that economic and financial measures would suffice, and a timetable disrupted by political events and Ethiopian military collapse. This named interpretation helps separate formal commitments from policy choices; it is not a finding that sanctions always fail or that the result was inevitable.',
+            citations: citations([], ['baerSanctionsSecurity1973']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Consultation limits: the appeal was read in edited English excerpts, with omissions and an unidentified translator. The Amharic–French archival scan was inaccessible; no translation comparison is claimed. Baer’s accessible extract, not the full article or underlying diplomatic files, was consulted. These additions do not establish Selassie’s domestic governance or exhaust Ethiopian experiences of conquest. The scores remain unchanged, and no present-day country match is inferred.',
+            citations: citations([], ['selassieLeagueAppeal1936', 'baerSanctionsSecurity1973']),
+          },
+          {
             type: 'evidence-note',
             text: 'Date and edition check: the legacy Clemenceau page labels the reply 31 July 1885. The Assembly’s 2021 report, note 77, instead distinguishes a 30 July sitting from the Journal officiel printed on 31 July, pages 1681–1682. This entry uses the month-level label and preserves the discrepancy; the original issue has not yet been independently checked. The available speech selections contain omissions.',
             citations: citations([], ['clemenceauColonialReply1885', 'assemblyRacismReport2021']),
@@ -9853,7 +9890,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars', 'arendtTotalitarianism', 'burkeReflections', 'kantPerpetualPeace'],
-      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012'],
+      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork'],
       editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context.',
     },
     researchGaps: [
@@ -9867,6 +9904,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Check the original July 1885 parliamentary issues and full speeches against the Assembly’s excerpts and later report, including the Clemenceau sitting/publication-date distinction. Read the cited hearings and Manceron’s study rather than treating their second-hand appearance as direct consultation.',
       'The French and German additions remain metropolitan and synthetic perspectives. Add Malagasy and other colonized-language testimony, local political arguments, and case-specific administrative and financial records before inferring actual effects from speeches or regional overviews.',
       'The economic sign is aligned with the existing card at −12, without changing its magnitude or any other coordinate. This consistency repair does not calibrate the combined militarism/imperialism label or score its historical examples.',
+      'Collate the full 1936 appeal and League proceedings against the Amharic–French archival witness with qualified language review; identify the English translator and edition. The archival pages were inaccessible on 16 September 2026. The edited excerpts do not close the original-language evidence gap.',
+      'Read Baer’s full 1973 article, subsequent scholarship and the underlying Ethiopian, Italian, British and French diplomatic records. Add Ethiopian civilian and resistance testimony, and scholarship on the monarchy’s own internal hierarchies, before generalizing from the emperor’s diplomatic appeal or evaluating sanctions counterfactuals.',
     ],
   },
   'national-socialist': {
