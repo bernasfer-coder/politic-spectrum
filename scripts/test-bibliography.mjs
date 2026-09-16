@@ -23,6 +23,7 @@ for (const record of BIBLIOGRAPHY_RECORDS) {
   assert.ok(record.review?.reviewer && record.review?.reviewedAt, `${record.id} must have review provenance`);
   assert.ok(record.rightsStatus && record.license && record.commercialUse && record.publicationStatus && record.editorialAction, `${record.id} must have rights metadata`);
   assert.ok(Object.values(record.relationships).some((values) => values.length), `${record.id} must map to downstream content`);
+  assert.ok(record.relationships.regions.every((region) => !region.includes('/')), `${record.id} must expose atomic region/context tags`);
 }
 
 const sharedSourceLinkIds = RESEARCH_SOURCES.map(({ sourceLinkId }) => sourceLinkId).filter(Boolean);

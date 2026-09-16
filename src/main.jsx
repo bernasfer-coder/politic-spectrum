@@ -409,17 +409,54 @@ function bibliographyRecordTypeLabel(recordType) {
   return recordType === 'author-reference' ? 'Author / work' : recordType === 'research-source' ? 'Research source' : recordType === 'research-work' ? 'Research work' : recordType === 'research-person' ? 'Person profile' : 'Context source';
 }
 
+const BIBLIOGRAPHY_PAGE_SIZE = 12;
+
+function parseBibliographyYearRange(value) {
+  const text = String(value ?? '').trim();
+  if (!text) return null;
+  const isBce = /\b(?:BCE|BC)\b/i.test(text);
+  const centuryMatches = [...text.matchAll(/(\d{1,2})(?:st|nd|rd|th)[\s-]*(?:(\d{1,2})(?:st|nd|rd|th)[\s-]*)?centur(?:y|ies)/gi)];
+  if (centuryMatches.length) {
+    const centuryYears = centuryMatches.flatMap(([, first, second]) => [first, second].filter(Boolean).map(Number).flatMap((century) => {
+      const start = (century - 1) * 100 + 1;
+      const end = century * 100;
+      return isBce ? [-end, -start] : [start, end];
+    }));
+    return { start: Math.min(...centuryYears), end: Math.max(...centuryYears) };
+  }
+  const numbers = [...text.matchAll(/(?<![A-Za-z])\d{1,4}(?![A-Za-z])/g)].map(([match]) => Number(match)).filter((number) => isBce || number >= 100);
+  if (!numbers.length) return null;
+  const years = numbers.map((number) => isBce ? -number : number);
+  return { start: Math.min(...years), end: Math.max(...years) };
+}
+
+function formatBibliographyYear(year) {
+  if (year === null || year === undefined) return 'Unknown';
+  return year < 0 ? `${Math.abs(year)} BCE` : `${year} CE`;
+}
+
+const BIBLIOGRAPHY_YEAR_RANGES = Object.fromEntries(BIBLIOGRAPHY_RECORDS.map((record) => [record.id, parseBibliographyYearRange(record.publicationDate)]));
+const BIBLIOGRAPHY_KNOWN_YEARS = Object.values(BIBLIOGRAPHY_YEAR_RANGES).filter(Boolean).flatMap(({ start, end }) => [start, end]);
+const BIBLIOGRAPHY_YEAR_BOUNDS = {
+  min: Math.min(...BIBLIOGRAPHY_KNOWN_YEARS),
+  max: Math.max(...BIBLIOGRAPHY_KNOWN_YEARS),
+};
+
+function createBibliographyFilters() {
+  return { query: '', recordType: 'all', sourceType: 'all', discipline: 'all', dimension: 'all', regions: [], tradition: 'all', periodStart: BIBLIOGRAPHY_YEAR_BOUNDS.min, periodEnd: BIBLIOGRAPHY_YEAR_BOUNDS.max, entity: 'all', evidenceRole: 'all', reviewStatus: 'all', confidence: 'all', accessStatus: 'all', quote: 'all' };
+}
+
 function BibliographyPage() {
-  const [filters, setFilters] = useState({ query: '', recordType: 'all', sourceType: 'all', discipline: 'all', dimension: 'all', region: 'all', tradition: 'all', period: 'all', entity: 'all', evidenceRole: 'all', reviewStatus: 'all', confidence: 'all', accessStatus: 'all', quote: 'all' });
+  const [filters, setFilters] = useState(createBibliographyFilters);
   const [sort, setSort] = useState('title');
+  const [page, setPage] = useState(1);
   const filterOptions = useMemo(() => ({
     recordType: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.recordType))].map(bibliographyRecordTypeLabel),
     sourceType: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.sourceType))].sort(),
     discipline: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.discipline))].sort(),
     dimension: DIMENSIONS.map(({ id, label }) => ({ value: id, label })),
-    region: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.regions))].sort(),
+    regions: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.regions))].sort(),
     tradition: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.traditions))].sort(),
-    period: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.periods))].sort(),
     entity: [...new Set(BIBLIOGRAPHY_RECORDS.flatMap((record) => record.relationships.entities))].sort(),
     evidenceRole: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.evidenceRole))].sort(),
     reviewStatus: [...new Set(BIBLIOGRAPHY_RECORDS.map((record) => record.review.status))].sort(),
@@ -455,9 +492,11 @@ function BibliographyPage() {
       const sourceTypeMatches = filters.sourceType === 'all' || record.sourceType === filters.sourceType;
       const disciplineMatches = filters.discipline === 'all' || record.discipline === filters.discipline;
       const dimensionMatches = filters.dimension === 'all' || record.relationships.dimensionIds.includes(filters.dimension);
-      const regionMatches = filters.region === 'all' || record.relationships.regions.includes(filters.region);
+      const regionMatches = !filters.regions.length || filters.regions.some((region) => record.relationships.regions.includes(region));
       const traditionMatches = filters.tradition === 'all' || record.relationships.traditions.includes(filters.tradition);
-      const periodMatches = filters.period === 'all' || record.relationships.periods.includes(filters.period);
+      const yearRange = BIBLIOGRAPHY_YEAR_RANGES[record.id];
+      const fullYearRangeSelected = filters.periodStart === BIBLIOGRAPHY_YEAR_BOUNDS.min && filters.periodEnd === BIBLIOGRAPHY_YEAR_BOUNDS.max;
+      const periodMatches = fullYearRangeSelected || (yearRange && yearRange.start <= filters.periodEnd && yearRange.end >= filters.periodStart);
       const entityMatches = filters.entity === 'all' || record.relationships.entities.includes(filters.entity);
       const roleMatches = filters.evidenceRole === 'all' || record.evidenceRole === filters.evidenceRole;
       const reviewMatches = filters.reviewStatus === 'all' || record.review.status === filters.reviewStatus;
@@ -470,8 +509,8 @@ function BibliographyPage() {
     return records.sort((left, right) => {
       if (sort === 'author') return displayBibliographyValue(left.creators[0] || left.institution).localeCompare(displayBibliographyValue(right.creators[0] || right.institution));
       if (sort === 'oldest' || sort === 'newest') {
-        const leftYear = Number.parseInt(String(left.publicationDate ?? '').slice(0, 4), 10) || (sort === 'oldest' ? Number.MAX_SAFE_INTEGER : 0);
-        const rightYear = Number.parseInt(String(right.publicationDate ?? '').slice(0, 4), 10) || (sort === 'oldest' ? Number.MAX_SAFE_INTEGER : 0);
+        const leftYear = BIBLIOGRAPHY_YEAR_RANGES[left.id]?.start ?? (sort === 'oldest' ? Number.MAX_SAFE_INTEGER : 0);
+        const rightYear = BIBLIOGRAPHY_YEAR_RANGES[right.id]?.start ?? (sort === 'oldest' ? Number.MAX_SAFE_INTEGER : 0);
         return sort === 'oldest' ? leftYear - rightYear : rightYear - leftYear;
       }
       if (sort === 'review') return left.review.status.localeCompare(right.review.status) || left.review.confidence.localeCompare(right.review.confidence);
@@ -479,11 +518,27 @@ function BibliographyPage() {
     });
   }, [filters, sort]);
 
+  const pageCount = Math.max(1, Math.ceil(filteredRecords.length / BIBLIOGRAPHY_PAGE_SIZE));
+  const activePage = Math.min(page, pageCount);
+  const pageRecords = filteredRecords.slice((activePage - 1) * BIBLIOGRAPHY_PAGE_SIZE, activePage * BIBLIOGRAPHY_PAGE_SIZE);
+
+  useEffect(() => {
+    setPage(1);
+  }, [filters, sort]);
+
   useEffect(() => {
     let frame;
     function scrollToSource() {
       if (!window.location.hash.startsWith('#bibliography/')) return;
       const recordId = window.location.hash.slice('#bibliography/'.length);
+      const targetIndex = filteredRecords.findIndex((record) => record.id === recordId);
+      if (targetIndex >= 0) {
+        const targetPage = Math.floor(targetIndex / BIBLIOGRAPHY_PAGE_SIZE) + 1;
+        if (targetPage !== activePage) {
+          setPage(targetPage);
+          return;
+        }
+      }
       window.cancelAnimationFrame(frame);
       frame = window.requestAnimationFrame(() => document.getElementById(`source-${recordId}`)?.scrollIntoView({ block: 'start' }));
     }
@@ -491,14 +546,18 @@ function BibliographyPage() {
     window.addEventListener('hashchange', scrollToSource);
     window.addEventListener('popstate', scrollToSource);
     return () => { window.cancelAnimationFrame(frame); window.removeEventListener('hashchange', scrollToSource); window.removeEventListener('popstate', scrollToSource); };
-  }, []);
+  }, [activePage, filteredRecords]);
 
   function updateFilter(key, value) {
     setFilters((previous) => ({ ...previous, [key]: value }));
   }
 
   function clearFilters() {
-    setFilters({ query: '', recordType: 'all', sourceType: 'all', discipline: 'all', dimension: 'all', region: 'all', tradition: 'all', period: 'all', entity: 'all', evidenceRole: 'all', reviewStatus: 'all', confidence: 'all', accessStatus: 'all', quote: 'all' });
+    setFilters(createBibliographyFilters());
+  }
+
+  function updateRegion(region) {
+    setFilters((previous) => ({ ...previous, regions: previous.regions.includes(region) ? previous.regions.filter((selected) => selected !== region) : [...previous.regions, region] }));
   }
 
   return (
@@ -514,11 +573,11 @@ function BibliographyPage() {
         <label className="bibliography-search"><span>Search title, author, ID, claim, or place</span><input type="search" value={filters.query} onChange={(event) => updateFilter('query', event.target.value)} placeholder="e.g. nationalism, Hayek, foreign policy" /></label>
         <FilterSelect label="Record" value={filters.recordType} options={filterOptions.recordType.map((label) => ({ value: label, label }))} onChange={(value) => updateFilter('recordType', value)} />
         <FilterSelect label="Source type" value={filters.sourceType} options={filterOptions.sourceType} onChange={(value) => updateFilter('sourceType', value)} />
-        <FilterSelect label="Discipline" value={filters.discipline} options={filterOptions.discipline} onChange={(value) => updateFilter('discipline', value)} />
+        <FilterSelect label="Discipline / field of study" value={filters.discipline} options={filterOptions.discipline} onChange={(value) => updateFilter('discipline', value)} />
         <FilterSelect label="Dimension" value={filters.dimension} options={filterOptions.dimension} onChange={(value) => updateFilter('dimension', value)} />
-        <FilterSelect label="Region" value={filters.region} options={filterOptions.region} onChange={(value) => updateFilter('region', value)} />
+        <BibliographyRegionFilter options={filterOptions.regions} selected={filters.regions} onToggle={updateRegion} onClear={() => updateFilter('regions', [])} />
         <FilterSelect label="Tradition / family" value={filters.tradition} options={filterOptions.tradition} onChange={(value) => updateFilter('tradition', value)} />
-        <FilterSelect label="Period" value={filters.period} options={filterOptions.period} onChange={(value) => updateFilter('period', value)} />
+        <BibliographyYearFilter start={filters.periodStart} end={filters.periodEnd} bounds={BIBLIOGRAPHY_YEAR_BOUNDS} onStartChange={(value) => updateFilter('periodStart', Math.min(value, filters.periodEnd))} onEndChange={(value) => updateFilter('periodEnd', Math.max(value, filters.periodStart))} onReset={() => setFilters((previous) => ({ ...previous, periodStart: BIBLIOGRAPHY_YEAR_BOUNDS.min, periodEnd: BIBLIOGRAPHY_YEAR_BOUNDS.max }))} />
         <FilterSelect label="Entity / place" value={filters.entity} options={filterOptions.entity} onChange={(value) => updateFilter('entity', value)} />
         <FilterSelect label="Evidence role" value={filters.evidenceRole} options={filterOptions.evidenceRole} onChange={(value) => updateFilter('evidenceRole', value)} />
         <FilterSelect label="Review" value={filters.reviewStatus} options={filterOptions.reviewStatus} onChange={(value) => updateFilter('reviewStatus', value)} />
@@ -527,12 +586,30 @@ function BibliographyPage() {
         <FilterSelect label="Direct quote" value={filters.quote} options={[{ value: 'quote', label: 'Has locator' }, { value: 'no-quote', label: 'No locator' }]} onChange={(value) => updateFilter('quote', value)} />
       </div>
 
-      <div className="bibliography-result-bar"><span>{filteredRecords.length} of {BIBLIOGRAPHY_RECORDS.length} records</span><label>Sort <select value={sort} onChange={(event) => setSort(event.target.value)}><option value="title">Title A–Z</option><option value="author">Author / institution</option><option value="oldest">Publication oldest</option><option value="newest">Publication newest</option><option value="review">Review status</option></select></label><button className="text-button subdued" onClick={clearFilters}>Clear filters</button></div>
+      <p className="bibliography-filter-note"><strong>Discipline / field of study</strong> describes the source’s academic or professional lens—such as political philosophy, history, law, economics, or sociology—not the ideology of the author. The year scale uses publication, composition, or another recorded date when available; historical-period labels remain searchable in each record.</p>
 
-      {filteredRecords.length ? <div className="bibliography-grid">{filteredRecords.map((record) => <BibliographyRecord key={record.id} record={record} />)}</div> : <div className="bibliography-empty"><strong>No bibliography records match these filters.</strong><p>Clear one filter or search for an author, source ID, dimension, or label.</p></div>}
-      <p className="bibliography-footnote">Stable anchors use each record’s ID. The catalogue is generated from structured content in the repository; build validation checks citation resolution, duplicate IDs and URLs, rights metadata, and relationship integrity.</p>
+      <div className="bibliography-result-bar"><span>{filteredRecords.length ? `${(activePage - 1) * BIBLIOGRAPHY_PAGE_SIZE + 1}–${Math.min(activePage * BIBLIOGRAPHY_PAGE_SIZE, filteredRecords.length)} of ${filteredRecords.length} matching · ${BIBLIOGRAPHY_RECORDS.length} total` : `0 of ${BIBLIOGRAPHY_RECORDS.length} records`}</span><label>Sort <select value={sort} onChange={(event) => setSort(event.target.value)}><option value="title">Title A–Z</option><option value="author">Author / institution</option><option value="oldest">Publication oldest</option><option value="newest">Publication newest</option><option value="review">Review status</option></select></label><button className="text-button subdued" onClick={clearFilters}>Clear filters</button></div>
+
+      {filteredRecords.length ? <div className="bibliography-grid">{pageRecords.map((record) => <BibliographyRecord key={record.id} record={record} />)}</div> : <div className="bibliography-empty"><strong>No bibliography records match these filters.</strong><p>Clear one filter or search for an author, source ID, dimension, or label.</p></div>}
+      <BibliographyPagination page={activePage} pageCount={pageCount} onChange={setPage} />
+      <p className="bibliography-footnote">Stable anchors use each record’s ID. The catalogue is generated from structured content in the repository; build validation checks citation resolution, duplicate IDs and URLs, rights metadata, and relationship integrity. Pagination keeps the rendered page compact; the catalogue remains a static, local data set rather than a server query.</p>
     </div>
   );
+}
+
+function BibliographyRegionFilter({ options, selected, onToggle, onClear }) {
+  return <fieldset className="bibliography-region-filter"><legend><span>Region / context</span><small>{selected.length ? `${selected.length} selected` : 'Any region'}</small></legend><div className="bibliography-region-options">{options.map((region) => <label key={region}><input type="checkbox" checked={selected.includes(region)} onChange={() => onToggle(region)} /><span>{region}</span></label>)}</div><div className="bibliography-region-footer"><small>Choose multiple regions; a record matches any selected tag.</small>{selected.length > 0 && <button type="button" className="text-button subdued" onClick={onClear}>Clear regions</button>}</div></fieldset>;
+}
+
+function BibliographyYearFilter({ start, end, bounds, onStartChange, onEndChange, onReset }) {
+  const allYears = start === bounds.min && end === bounds.max;
+  const rangeLabel = allYears ? 'All years' : start === end ? formatBibliographyYear(start) : `${formatBibliographyYear(start)} — ${formatBibliographyYear(end)}`;
+  return <fieldset className="bibliography-year-filter"><legend><span>Publication / composition year</span><strong>{rangeLabel}</strong></legend><div className="bibliography-year-track" aria-label="Publication year range"><input type="range" min={bounds.min} max={bounds.max} value={start} aria-label="Publication or composition year beginning" onChange={(event) => onStartChange(Number(event.target.value))} /><input type="range" min={bounds.min} max={bounds.max} value={end} aria-label="Publication or composition year ending" onChange={(event) => onEndChange(Number(event.target.value))} /></div><div className="bibliography-year-markers"><span>{formatBibliographyYear(bounds.min)}</span><span>{formatBibliographyYear(bounds.max)}</span></div><div className="bibliography-year-inputs"><label><span>Begin</span><input type="number" min={bounds.min} max={end} value={start} aria-label="Begin publication year" onChange={(event) => onStartChange(Number(event.target.value))} /></label><label><span>End</span><input type="number" min={start} max={bounds.max} value={end} aria-label="End publication year" onChange={(event) => onEndChange(Number(event.target.value))} /></label><button type="button" className="text-button subdued" onClick={onReset} disabled={allYears}>All years</button></div><small className="bibliography-year-help">Approximate or undated records appear when the full range is selected; narrowing the scale shows records whose recorded date overlaps it.</small></fieldset>;
+}
+
+function BibliographyPagination({ page, pageCount, onChange }) {
+  if (pageCount <= 1) return null;
+  return <nav className="bibliography-pagination" aria-label="Bibliography pages"><button type="button" className="text-button subdued" onClick={() => onChange(Math.max(1, page - 1))} disabled={page === 1}>← Previous</button><span aria-live="polite">Page {page} of {pageCount}</span><button type="button" className="text-button subdued" onClick={() => onChange(Math.min(pageCount, page + 1))} disabled={page === pageCount}>Next →</button></nav>;
 }
 
 function BibliographyRecord({ record }) {
@@ -557,7 +634,7 @@ function BibliographyRecord({ record }) {
       <div className="bibliography-card-top"><div><p className="bibliography-card-kicker">{bibliographyRecordTypeLabel(record.recordType)} · {record.evidenceRole}</p><h3>{record.title}</h3><p className="bibliography-creators">{displayBibliographyValue(record.creators.length ? record.creators : record.institution)}</p></div><a className="bibliography-anchor" href={`#bibliography/${record.id}`} aria-label={`Stable link to ${record.title}`}>#{record.citationKey}</a></div>
       <p className="bibliography-description">{record.description}</p>
       <div className="bibliography-meta-grid">
-        <div><span>Type / discipline</span><strong>{record.sourceType}</strong><small>{record.discipline}</small></div>
+        <div><span>Source type / field</span><strong>{record.sourceType}</strong><small>{record.discipline}</small></div>
         <div><span>Publication / publisher</span><strong>{displayBibliographyValue(record.publicationDate)}</strong><small>{displayBibliographyValue(record.publisher)}</small></div>
         <div><span>Language / identifier</span><strong>{displayBibliographyValue(record.languages)}</strong><small>{Object.keys(record.identifiers).length ? Object.entries(record.identifiers).map(([key, value]) => `${key}: ${value}`).join(' · ') : 'Not recorded'}</small></div>
         <div><span>Review / confidence</span><strong>{record.review.status}</strong><small>{record.review.confidence} · {record.review.reviewedAt}</small></div>

@@ -1926,6 +1926,7 @@ function buildBibliographyRecords() {
   }
 
   const toArrays = (relationships) => Object.fromEntries(Object.entries(relationships).map(([key, values]) => [key, [...values]]));
+  const toAtomicRegions = (values) => [...new Set((Array.isArray(values) ? values : [values]).filter(Boolean).flatMap((value) => String(value).split(/\s*\/\s*/).map((region) => region.trim()).filter(Boolean)))];
   const rightsFor = (group, id) => RIGHTS_RECORDS[group]?.[id] ?? {};
   const reviewFor = (rights, confidence = 'medium') => ({
     status: rights.publicationStatus === 'review-required' ? 'needs-review' : 'reviewed',
@@ -2167,7 +2168,7 @@ function buildBibliographyRecords() {
       archetypeIds: record.relationships.archetypeIds ?? [],
       profileEntries: record.relationships.profileEntries ?? [],
       claims: record.relationships.claims ?? [],
-      regions: record.relationships.regions ?? [],
+      regions: toAtomicRegions(record.relationships.regions ?? []),
       traditions: record.relationships.traditions ?? [],
       periods: record.relationships.periods ?? [],
       entities: record.relationships.entities ?? [],

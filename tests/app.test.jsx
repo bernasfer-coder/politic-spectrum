@@ -191,6 +191,29 @@ describe('primary user flows', () => {
     expect(screen.getByText(/Recurring political forms · 12 patterns/i)).toBeInTheDocument();
   });
 
+  it('filters the compact bibliography by atomic regions and a bounded year range', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('tab', { name: /Bibliography/i }));
+
+    expect(screen.getAllByRole('slider')).toHaveLength(2);
+    expect(document.querySelectorAll('.bibliography-card')).toHaveLength(12);
+    expect(screen.getByText(/1–12 of 497 matching · 497 total/i)).toBeInTheDocument();
+
+    await user.click(screen.getByRole('checkbox', { name: 'Europe', exact: true }));
+    expect(screen.getByText(/1–12 of 33 matching · 497 total/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Next →/i })).toBeEnabled();
+    await user.click(screen.getByRole('button', { name: /Next →/i }));
+    expect(screen.getByText(/Page 2 of 3/i)).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: /Clear filters/i }));
+    await screen.findByText(/1–12 of 497 matching · 497 total/i);
+    fireEvent.change(screen.getByRole('spinbutton', { name: 'Begin publication year', exact: true }), { target: { value: '1900' } });
+    fireEvent.change(screen.getByRole('spinbutton', { name: 'End publication year', exact: true }), { target: { value: '1950' } });
+    expect(screen.getByText(/1–12 of 63 matching · 497 total/i)).toBeInTheDocument();
+    expect(screen.getByText(/1900 CE — 1950 CE/i)).toBeInTheDocument();
+  });
+
   it('restores a complete questionnaire as the calculated result view', async () => {
     const user = userEvent.setup();
     render(<App />);

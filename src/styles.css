@@ -158,3 +158,58 @@ main { max-width: 1240px; margin: auto; padding: 0 34px 76px; }
 .range-labels span:nth-child(2) { margin-left: 0; color: #71859c; text-align: center; }
 .range-labels span:last-child { text-align: right; }
 .range-wrap input[type=range] { margin: 0; }
+
+/* Keep the bibliography filter surface compact while making date and region facets precise. */
+.bibliography-region-filter, .bibliography-year-filter { min-width: 0; margin: 0; padding: 0; border: 0; }
+.bibliography-region-filter { grid-column: span 2; }
+.bibliography-region-filter legend, .bibliography-year-filter legend { display: flex; justify-content: space-between; align-items: baseline; width: 100%; padding: 0; color: var(--muted); font: 9px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .07em; }
+.bibliography-region-filter legend small, .bibliography-year-filter legend strong { color: var(--cyan); font: 8px 'DM Mono', monospace; font-weight: 400; text-transform: none; letter-spacing: 0; }
+.bibliography-region-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 8px; max-height: 112px; overflow: auto; margin-top: 6px; padding: 7px 8px; border: 1px solid var(--line); background: rgba(5, 11, 20, .65); }
+.bibliography-region-options label { display: flex; align-items: start; gap: 6px; min-width: 0; color: var(--soft); font: 9px 'DM Mono', monospace; line-height: 1.35; cursor: pointer; }
+.bibliography-region-options input { flex: 0 0 auto; width: 13px; height: 13px; margin: 0; accent-color: var(--cyan); }
+.bibliography-region-options label:has(input:checked) { color: var(--cyan); }
+.bibliography-region-footer { display: flex; justify-content: space-between; align-items: start; gap: 8px; margin-top: 6px; color: #71859c; font: 8px 'DM Mono', monospace; line-height: 1.4; }
+.bibliography-region-footer .text-button { flex: 0 0 auto; padding: 0; font-size: 8px; }
+.bibliography-year-filter { grid-column: 1 / -1; margin-top: 4px; padding-top: 10px; border-top: 1px solid rgba(165, 188, 214, .1); }
+.bibliography-year-track { position: relative; height: 28px; margin: 7px 6px 0; }
+.bibliography-year-track::before { content: ''; position: absolute; top: 12px; right: 0; left: 0; height: 5px; border-radius: 5px; background: linear-gradient(90deg, rgba(214, 92, 92, .75), rgba(165, 188, 214, .3) 50%, rgba(85, 214, 190, .8)); }
+.bibliography-year-track input[type=range] { position: absolute; top: 3px; left: 0; z-index: 2; width: 100%; height: 23px; margin: 0; appearance: none; pointer-events: none; background: transparent; }
+.bibliography-year-track input[type=range]:last-child { z-index: 3; }
+.bibliography-year-track input[type=range]::-webkit-slider-runnable-track { height: 5px; background: transparent; }
+.bibliography-year-track input[type=range]::-moz-range-track { height: 5px; background: transparent; }
+.bibliography-year-track input[type=range]::-webkit-slider-thumb { width: 15px; height: 15px; margin-top: -5px; border: 3px solid #07121e; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px var(--cyan), 0 2px 7px rgba(0, 0, 0, .35); pointer-events: auto; cursor: grab; appearance: none; }
+.bibliography-year-track input[type=range]::-moz-range-thumb { width: 11px; height: 11px; border: 3px solid #07121e; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px var(--cyan), 0 2px 7px rgba(0, 0, 0, .35); pointer-events: auto; cursor: grab; }
+.bibliography-year-track input[type=range]:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
+.bibliography-year-markers { display: flex; justify-content: space-between; color: #71859c; font: 8px 'DM Mono', monospace; }
+.bibliography-year-inputs { display: grid; grid-template-columns: minmax(110px, 1fr) minmax(110px, 1fr) auto; align-items: end; gap: 8px; margin-top: 8px; }
+.bibliography-year-inputs label { display: grid; gap: 5px; }
+.bibliography-year-inputs label span { color: var(--muted); font: 8px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .07em; }
+.bibliography-year-inputs input { width: 100%; min-height: 29px; padding: 0 8px; border: 1px solid var(--line); border-radius: 2px; background: rgba(5, 11, 20, .65); color: var(--soft); font: 9px 'DM Mono', monospace; outline: none; }
+.bibliography-year-inputs input:focus { border-color: var(--cyan); box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyan) 16%, transparent); }
+.bibliography-year-inputs button { min-height: 29px; padding: 0 2px; font-size: 8px; }
+.bibliography-year-help { display: block; margin-top: 7px; color: #71859c; font: 8px 'DM Mono', monospace; line-height: 1.45; }
+.bibliography-filter-note { margin: 11px 15px 0; color: #71859c; font: 9px 'DM Mono', monospace; line-height: 1.55; }
+.bibliography-filter-note strong { color: var(--soft); font-weight: 500; }
+.bibliography-pagination { display: flex; justify-content: center; align-items: center; gap: 18px; margin-top: 12px; padding: 10px 12px; border: 1px solid rgba(165, 188, 214, .1); background: rgba(13, 24, 40, .22); color: var(--muted); font: 9px 'DM Mono', monospace; }
+.bibliography-pagination .text-button { padding: 0; font-size: 9px; }
+.bibliography-pagination .text-button:disabled { opacity: .4; cursor: not-allowed; }
+.bibliography-grid { align-items: start; }
+.bibliography-card { padding: 16px; }
+.bibliography-description { margin-top: 11px; }
+.bibliography-meta-grid { gap: 6px; margin-top: 13px; }
+.bibliography-meta-grid > div { min-height: 48px; padding: 8px; }
+.bibliography-meta-grid strong { margin-top: 5px; }
+.bibliography-badges { margin-top: 10px; }
+
+@media (max-width: 850px) {
+  .bibliography-region-filter { grid-column: span 2; }
+  .bibliography-year-filter { grid-column: 1 / -1; }
+}
+
+@media (max-width: 580px) {
+  .bibliography-region-options { grid-template-columns: 1fr; }
+  .bibliography-year-inputs { grid-template-columns: 1fr 1fr; }
+  .bibliography-year-inputs button { grid-column: 1 / -1; justify-self: start; }
+  .bibliography-filter-note { margin-right: 12px; margin-left: 12px; }
+  .bibliography-pagination { justify-content: space-between; gap: 8px; }
+}
