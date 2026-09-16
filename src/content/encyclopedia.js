@@ -7175,6 +7175,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'France’s 1791 constitution located sovereignty in the nation and treated both king and legislature as representatives (Title III, articles 1–4). The king could not dissolve the legislature (chapter I, article 5), but appointed and dismissed ministers; royal orders required countersignature, and ministers remained responsible despite royal commands (chapter II, section IV, articles 1, 4–6). These are legal provisions, not evidence of effective accountability.',
+            citations: citations([], ['franceConstitution1791']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Royal refusal of legislative consent was suspensive: the same decree had to return unchanged from each of the next two legislatures before consent was presumed. It could not be resubmitted by the original legislature. Specified acts, including ministerial-responsibility proceedings, did not require sanction (Title III, chapter III, section III, articles 1–8). This was neither a permanent veto nor a merely ceremonial signature.',
+            citations: citations([], ['franceConstitution1791']),
+          },
+          {
+            type: 'paragraph',
             text: 'Brazil’s 1824 charter assigned the emperor both moderating power and executive leadership through ministers (articles 98–102). He could appoint and dismiss ministers and dissolve the Chamber under the stated condition of state necessity, immediately calling a replacement. This was constitutional authority beyond ceremony; the provisions alone do not establish how freely each power was exercised.',
             citations: citations([], ['brazilConstitution1824']),
           },
@@ -7228,6 +7238,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1791–1848: revolution and constitutional monarchy in France',
             text: 'The French Revolution briefly established a written constitutional monarchy in 1791–1792, and the Restoration and July Monarchy created later experiments in reconciling royal authority, representation, and revolutionary constitutional principles. These experiences show that constitutional monarchy can be a contested transitional form rather than a stable compromise, especially when the crown and representative nation claim competing sources of legitimacy.',
             citations: citations(['lockeSecondTreatise', 'burkeReflections'], ['perseeFrenchConstitutionalMonarchy', 'bpbMonarchy', 'sepNationalism']),
+          },
+          {
+            period: '15 July 1791: Barnave defends royal inviolability',
+            text: 'Barnave presented the king’s personal immunity as a safeguard of liberty and stability. He paired royal resistance to legislation with accountability of executive agents and constitutionally specified grounds for losing the crown. This is a participant’s defense of constitutional monarchy before the final September text, not an impartial account of how the arrangement worked or an endorsement of every action by Louis XVI.',
+            citations: citations([], ['barnaveRoyalInviolability1791']),
           },
           {
             period: 'Nineteenth century: national, imperial, and constitutional monarchies',
@@ -7292,6 +7307,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Christian Edward Cyril Lynch argues that Crown advisers adapted Benjamin Constant’s vocabulary of a neutral arbiter to defend substantial royal prerogatives against the constituent assembly.',
                 relation: 'This is an attributed interpretation of constitutional borrowing, not proof that the Brazilian arrangement reproduced Constant unchanged or that constitutional limits were meaningless. Original French texts and competing readings still need direct comparison.',
                 citations: citations([], ['lynchModeratingPower2005']),
+              },
+              {
+                label: 'Royal inviolability versus executive accountability',
+                distinction: 'Barnave argued that independent royal sanction and responsibility for executive acts belonged to different constitutional functions.',
+                relation: 'His defense illustrates a constitutional-monarchist rationale for a protected crown, not proof that ministerial responsibility produced parliamentary government. The July speech and final September provisions must be read separately.',
+                citations: citations([], ['barnaveRoyalInviolability1791', 'franceConstitution1791']),
               },
               {
                 label: 'Morocco 2011: parliamentary government versus parliamentary monarchy',
@@ -7493,6 +7514,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Constitutional representation did not imply universal participation: the 1791 active-citizen rules included tax and non-domestic-service conditions, while succession excluded women and their descendants (Title III, chapter I, section II, article 2; chapter II, section I, article 1). Institutional limits on kingship and equal access to political power are separate questions.',
+            citations: citations([], ['franceConstitution1791']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Caiani’s monograph, as summarized in its University of Kent abstract, argues that royal symbolism, domestic routines and household organization contributed to alienation from the constitutional monarchy. This directs attention beyond written rules and foreign plots. Only the abstract was reviewed: it does not establish the relative weight of those causes or demonstrate that collapse was inevitable.',
+            citations: citations([], ['caianiLouisXVI2012Abstract']),
+          },
+          {
+            type: 'paragraph',
             text: 'The Moroccan text juxtaposes equal-rights language in article 19 with male-line dynastic succession in article 43. Article 175 protects the monarchical form and Muslim religion from revision, alongside democratic choice and established fundamental rights. These are distinct constitutional commitments; their interaction needs interpretation and implementation evidence, not an inference that all public offices are equally accessible.',
             citations: citations([], ['moroccoConstitutionFrench2011', 'constituteMorocco2011']),
           },
@@ -7506,8 +7537,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
-      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015'],
-      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked, not every cited archival record or book.',
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract'],
+      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; no PDF visual review or full-monograph reading is claimed for that addition.',
     },
     researchGaps: [
       'Add French-language scholarship on divine-right monarchy, the French constitutional monarchies of 1791–1792, the Restoration, the July Monarchy, the Second Empire, royalism, republicanism, colonial monarchy, and the constitutional doctrines of the nineteenth century.',
@@ -7522,6 +7553,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Reconcile the existing article/card differences through an explicit canonical-profile review: social −48 versus −45, authority +52 versus +62, and identity −42 versus −62. This historical pass preserves both records and does not invent replacement scores.',
       'Collate the Moroccan French and English constitutional texts with the Arabic and original Gazette editions, especially article 44’s conflicting advisory-council endpoint. Review the full Ruiz Ruiz article and additional French- and Arabic-language scholarship; the present comparison does not settle the reform’s competing interpretations.',
       'Test Morocco’s formal allocation of powers against dated appointment records, cabinet and parliamentary proceedings, organic laws, judgments and independent accounts from opposition, women and religious minorities. Extend to emergency powers and amendment practice without assuming that institutional promises establish outcomes or a current-country score.',
+      'Collate the 1791 French constitution and Barnave’s July speech with original editions and parliamentary records. The speech page’s modern headnote places June dates in a July sequence; do not reuse that chronology without checking it. Study actual veto episodes, ministerial prosecutions, popular petitions, women’s claims and colonial exclusions before inferring implementation from these selected provisions.',
+      'Read Caiani’s complete introduction and monograph, and compare French-language specialist interpretations of 1791–1792. Only the Kent abstract was accessible in this pass; the publisher PDF and attempted OpenEdition articles were unavailable. No full-text, archival or PDF visual review is claimed, and the older French-scholarship gap remains open.',
     ],
   },
   theocratic: {

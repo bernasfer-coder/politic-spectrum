@@ -170,6 +170,9 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 const RIGHTS_RECORDS = {
   researchWorks: RESEARCH_WORK_RIGHTS,
   researchSources: {
+    franceConstitution1791: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-16', notes: 'Original explanatory prose and institutional link only. No historical transcription, site editorial text, image or translated passage republished; access does not establish blanket rights in the hosted edition.' },
+    barnaveRoyalInviolability1791: { ...PUBLIC_DOMAIN_CANDIDATE, reviewedAt: '2026-09-16', publicationStatus: 'link-only', notes: 'Historical speech, institutional transcription and modern headnote remain distinct. No quotation, translated extract, illustration or complete speech redistributed; no worldwide edition-rights clearance claimed.' },
+    caianiLouisXVI2012Abstract: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Independent attributed summary and repository link only. No abstract wording, book text, image or PDF redistributed; public metadata access is not a commercial-reuse licence for the monograph.' },
     goldmanFurtherRussia1924: { ...PUBLIC_DOMAIN_CANDIDATE, reviewedAt: '2026-09-16', publicationStatus: 'link-only', notes: 'Original paraphrase and link only. Historical English edition and hosted transcription remain distinct; no quotation, page image, translation or ebook redistributed, and no worldwide public-domain determination claimed.' },
     hemmingsGoldman2018: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Sample copyright page states all rights reserved. Public sample access is not a reuse licence. No book text, embedded quotations, fictional correspondence, images or PDF pages published.' },
     hemmingsGoldmanInterview2018: { ...LINK_ONLY, reviewedAt: '2026-09-16', notes: 'Original attributed summary and institutional link only. No interview wording, photographs or translated extract republished; image-specific licences do not license the interview text.' },
