@@ -4987,6 +4987,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'For medieval Iceland, Byock emphasizes economic interdependence, shared institutions, and pressures toward compromise, rather than explaining order through isolated transactions alone. He interprets chieftains as brokers assembling support under social and economic constraints. This historical account helps identify conditions that an analogy must examine; it neither endorses nor experimentally disproves modern market anarchism.',
             citations: citations([], ['byockFeuding2003']),
           },
+          {
+            type: 'paragraph',
+            text: 'Molinari’s 1849 essay proposes competition in security itself, not merely private contractors serving an exclusive government. Customers would compare protection, reliability and price, accept contractual penalties and investigative conditions, and pay premiums. His expectation that customer choice would restrain abusive providers is an argument to assess, not an observed result (sections II and X).',
+            citations: citations([], ['molinariSecurity1849French']),
+          },
         ],
       },
       {
@@ -4997,6 +5002,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Seventeenth–nineteenth centuries: property, consent, and anti-state antecedents',
             text: 'Lockean rights, consent, property, and resistance arguments supplied part of the later vocabulary, but Locke defended political government and did not propose anarcho-capitalism. Nineteenth-century individualist anarchists and market-oriented anti-state writers supplied other antecedents, while mutualists, collectivist anarchists, and socialists disputed the meaning of property and exchange. These traditions should be recorded as genealogical neighbors, not retroactively renamed.',
             citations: citations(['lockeSecondTreatise', 'rothbardForNewLiberty'], ['sepAnarchism', 'sepLiberalism']),
+          },
+          {
+            period: '1849: Molinari and disagreement within French liberalism',
+            text: 'In his Cambridge history chapter, David M. Hart places Molinari outside the prevailing Paris School positions on government. Many colleagues retained public policing and defense; Molinari extended market provision to them. This situates the proposal within an internally divided liberal tradition, not a unified nineteenth-century anarcho-capitalist movement.',
+            citations: citations([], ['hartParisSchool2019']),
           },
           {
             period: 'Late nineteenth–early twentieth centuries: Austrian economics and the knowledge problem',
@@ -5050,6 +5060,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['davidFriedmanMachinery2014']),
               },
               {
+                label: 'Competition among providers versus competition for contracts',
+                distinction: 'Long interprets Molinari’s later writings as accepting government contracting for collectively consumed services.',
+                relation: 'That differs from customers choosing independent security providers. This is Long’s historical interpretation; the later primary works still require direct review.',
+                citations: citations([], ['longMolinariLegacy2013']),
+              },
+              {
                 label: 'Minarchism',
                 distinction: 'Retains a very limited state for courts, defense, and protection against force, theft, and fraud while restricting its economic and social functions.',
                 relation: 'The nearest libertarian neighbor but not anarcho-capitalism: a compulsory territorial authority remains legitimate in principle.',
@@ -5095,6 +5111,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'Major modern theorist of private-property anarchism, self-ownership, non-aggression, and market provision of law and security.',
                 caveat: 'Rothbard provides the clearest primary statement for this profile, but a theorist’s proposal is not evidence that a stateless market society has existed or that its institutions would resolve every conflict.',
                 citations: citations(['rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Gustave de Molinari — the 1849 security proposal',
+                role: 'A nineteenth-century precursor to competitive-security arguments.',
+                caveat: 'Not a match across all six axes. Section I also invokes racial hierarchy, which this entry rejects; intellectual influence does not imply endorsement of the author’s entire outlook.',
+                citations: citations([], ['molinariSecurity1849French', 'hartParisSchool2019']),
               },
               {
                 name: 'David D. Friedman',
@@ -5224,12 +5246,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Byock warns against letting saga episodes of spectacular violence stand for ordinary social practice. His account stresses conflict containment and negotiated settlement. The encyclopedia consequently treats neither saga incidents nor their absence as a representative violence dataset; comparative rates, causal explanations, and generalization to large modern societies require additional evidence.',
             citations: citations([], ['byockFeuding2003']),
           },
+          {
+            type: 'paragraph',
+            text: 'Long identifies a gap between specifying security firms and explaining how legal norms themselves would be supplied. He also treats Molinari’s chronological priority as clearer than his direct influence on later writers. Similar proposals therefore do not establish an uninterrupted intellectual lineage or a solved institutional design.',
+            citations: citations([], ['longMolinariLegacy2013']),
+          },
+          {
+            type: 'evidence-note',
+            title: 'A proposal and its reception, not a country match',
+            text: 'The French essay supplies primary evidence of an argument; Hart and Long supply attributed historical interpretation. Selected edition pages and the lead essay do not establish implementation, universal access or protection from monopoly. No current-country classification or six-axis coordinates are inferred from this comparison.',
+            citations: citations([], ['molinariSecurity1849French', 'hartParisSchool2019', 'longMolinariLegacy2013']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge', 'lockeSecondTreatise', 'millOnLiberty', 'kantPerpetualPeace', 'lockeLetterToleration', 'spinozaPolitical', 'morgenthauRealism'],
-      researchSourceIds: ['sepAnarchism', 'sepLibertarianism', 'sepLiberalism', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'foreignPolicy', 'sepClimateJustice', 'openTextbook', 'davidFriedmanMachinery2014', 'byockFeuding2003', 'thingvellirLawCouncil'],
+      researchSourceIds: ['sepAnarchism', 'sepLibertarianism', 'sepLiberalism', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'foreignPolicy', 'sepClimateJustice', 'openTextbook', 'davidFriedmanMachinery2014', 'byockFeuding2003', 'thingvellirLawCouncil', 'molinariSecurity1849French', 'hartParisSchool2019', 'longMolinariLegacy2013'],
       editorialNote: 'The profile describes a radical right-libertarian proposal, not an observed country or a verdict on all anarchism. It distinguishes abolition of the state from deregulation, market orientation from private law, and voluntary association from the empirical ability to exit unequal or coercive arrangements.',
     },
     researchGaps: [
@@ -5241,6 +5274,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add systematic ethical and empirical comparisons with classical liberalism, minarchism, mutualism, anarcho-communism, communalism, and constitutional pluralism rather than treating all anti-state language as one tradition.',
       'Extend the selected Friedman and Byock readings to complete chapters and competing interpretations, including William Ian Miller and Friedman’s 1979 legal-history article. The latter’s repository metadata was checked but its full text was not reviewed. Verify Icelandic legal texts, editions, changing institutions, slavery, women’s status, church power, and access to enforcement before assigning broader historical matches.',
       'Test the transferability of historically specific cooperation and enforcement mechanisms without treating saga narratives as a representative violence sample. Reconcile the Commonwealth’s ending dates across institutional changes rather than assigning a single causal explanation to its collapse.',
+      'Collate Molinari’s 1849 journal printing, Les Soirées and later writings before resolving changes in his position or direct influence on subsequent authors. Extend the selected Hart and Long readings, including competing interpretations of collective consumption and government contracting.',
+      'Research how Molinari’s racial, gender and class hierarchies interacted with his account of liberty, using dated primary texts and specialist criticism. His security proposal alone does not establish equal rights, affordable access, effective exit or safeguards against provider collusion.',
     ],
   },
   'anarcho-communist': {

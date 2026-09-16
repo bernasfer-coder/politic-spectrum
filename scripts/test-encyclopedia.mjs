@@ -64,6 +64,41 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const molinariEntry = ENCYCLOPEDIA_ENTRIES['anarcho-capitalist'];
+for (const [sourceId, evidenceRole, publicationDate, language] of [
+  ['molinariSecurity1849French', 'primary', '1849-02', 'French'],
+  ['hartParisSchool2019', 'secondary', '2019-04-25', 'English'],
+  ['longMolinariLegacy2013', 'secondary', '2013-05-01', 'English'],
+]) {
+  assert.ok(molinariEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anarcho-capitalist reference trail`);
+  assert.ok(JSON.stringify(molinariEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anarcho-capitalist'], `${sourceId} must stay within this entry`);
+}
+const molinariPrimary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-molinariSecurity1849French');
+const hartParisSchool = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hartParisSchool2019');
+const longMolinari = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-longMolinariLegacy2013');
+assert.match(molinariPrimary.description, /Historical essay date differs from the consulted 2025 edition/);
+assert.match(molinariPrimary.note, /Selected passages, not the whole edition/);
+assert.match(hartParisSchool.note, /Printed p\. 309 \(PDF page 16\)/, 'print and PDF locators must remain distinct');
+assert.match(longMolinari.description, /Other contributors retain separate authorship/, 'forum authors must not be conflated');
+assert.equal(longMolinari.review.confidence, 'medium');
+assert.match(longMolinari.license, /not a blanket commercial reuse licence/);
+const molinariPerson = molinariEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('Gustave de Molinari'));
+assert.match(molinariPerson.caveat, /Not a match across all six axes/);
+assert.match(molinariPerson.caveat, /racial hierarchy/, 'historical exclusion must not be erased from an influence claim');
+const molinariVariant = molinariEntry.sections.find(({ id }) => id === 'variants').blocks[0].rows.find(({ label }) => label === 'Competition among providers versus competition for contracts');
+assert.match(molinariVariant.relation, /later primary works still require direct review/);
+assert.ok(molinariEntry.researchGaps.some((gap) => gap.includes('Collate Molinari’s 1849 journal printing')), 'edition and intellectual-lineage research must remain open');
+
 const communistNepEntry = ENCYCLOPEDIA_ENTRIES.communist;
 for (const [sourceId, evidenceRole, publicationDate, language] of [
   ['leninTaxInKind1921', 'primary', '1921-05', 'English'],
