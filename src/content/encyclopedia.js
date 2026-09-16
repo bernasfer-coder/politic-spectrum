@@ -8116,9 +8116,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
     entryType: 'analytical reference profile',
     status: 'researched-draft',
     confidence: 'medium',
-    scopeNote: 'This is an umbrella analytical entry for movements that connect religious ethics, collective economic justice, and liberation from domination. Christian socialism, Catholic Worker practice, Black theology, Latin American liberation theology, and other religious-socialist traditions are related but not interchangeable. The entry is Christian-centered because its strongest current sources concern Christian cases; other religious traditions remain explicit research gaps.',
+    scopeNote: 'This is an umbrella analytical entry for movements that connect religious ethics, collective economic justice, and liberation from domination. Christian socialism, Catholic Worker practice, Black theology, Latin American liberation theology, and other religious-socialist traditions are related but not interchangeable. The evidence remains predominantly Christian-centered; Martin Buber supplies a bounded Jewish comparison, not coverage of all Jewish socialist or other religious traditions.',
     timeScope: 'Older religious arguments about community and economic obligation are treated as antecedents, not as modern socialism. The principal modern formation runs from nineteenth-century Christian socialism and social-gospel movements through twentieth-century anti-colonial, civil-rights, Catholic Worker, and Latin American liberation movements to contemporary faith-based justice organizing.',
-    geographicScope: 'Transnational, with documented British, European, North American, Latin American, Brazilian, and anti-colonial strands. Jewish, Muslim, Buddhist, Hindu, Indigenous, African, and other religious-socialist traditions require separate language- and region-specific research.',
+    geographicScope: 'Transnational, with documented British, European, North American, Latin American, Brazilian, and anti-colonial strands. Buber adds a Central European Jewish and Palestine/Israel intellectual case; broader Jewish, Muslim, Buddhist, Hindu, Indigenous, African, and other religious-socialist traditions still require language- and region-specific research.',
     summary: 'A family of religiously grounded movements that criticizes poverty, exploitation, racial or colonial domination, and concentrated economic power while pursuing solidarity, collective organization, and liberation. It may support public ownership, cooperatives, redistribution, worker power, mutual aid, nonviolent resistance, or revolutionary change, but it does not prescribe one economic system or require clerical control of the state.',
     summaryCitations: citations(
       ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'marxEngelsManifesto'],
@@ -8182,6 +8182,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'In the Portuguese edition of his 1989 article, sociologist Michel Löwy distinguishes liberation theology from a broader liberation Christianity: a network of communities, lay associations, clergy, and pastoral institutions. For him, theological systematization develops from earlier social practice rather than creating the entire movement by itself.',
             citations: citations([], ['lowyRadicalizedCatholicism1989']),
           },
+          {
+            type: 'paragraph',
+            text: 'Martin Buber provides a distinct Jewish case: his communal social thought belongs alongside, not inside, the Christian history of liberation theology. The Stanford account connects his politics with dialogue and religious interpretation, while recording his advocacy of Jewish–Arab cooperation and binationalism. This is one thinker’s position, not an ideology inferred from Jewish identity or a classification of every Jewish labour movement.',
+            citations: citations([], ['sepBuber2026']),
+          },
         ],
       },
       {
@@ -8207,6 +8212,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The Catholic Worker’s May 2019 statement advocates land trusts, worker-managed small enterprises, cooperatives, and distributist community life. Its declared means include nonviolence, hospitality, manual labor, and voluntary poverty. This dated self-description provides a more precise comparison than assuming that opposition to capitalism entails comprehensive state ownership.',
             citations: citations([], ['catholicWorkerAims2019']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In chapter X of Paths in Utopia, Buber asks whether collective economic control enables active participation by the groups doing the work. Transferring control to an institution called the state does not, for him, settle that question. He connects religious community with practical shared work and treats the balance of central coordination and local autonomy as something to reconsider under changing conditions, not a rule abolishing every coordinating institution.',
+            citations: citations([], ['buberPathsEnglish']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Charles H. T. Lesch interprets Buber’s divine kingship as a challenge to human rulers claiming absolute authority: authority attributed to God cannot simply be inherited by a sovereign. Lesch’s abstract describes a modern ethic of non-domination rather than a literal restoration of an ancient polity. This is a scholarly reading, not proof that ancient Israel practised egalitarian socialism.',
+            citations: citations([], ['leschBuberTheopolitics2019']),
           },
           {
             type: 'evidence-note',
@@ -8243,6 +8258,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1930s–1940s: Catholic Worker, personalism, pacifism, and anti-fascist social action',
             text: 'Dorothy Day and the Catholic Worker movement connected hospitality, voluntary poverty, labor solidarity, community houses, and pacifism. This was a radical practice of Christian social action rather than a proposal for a centralized socialist state. It illustrates how religious socialism can organize material support and political witness through voluntary association, while also raising questions about scale, gender, authority, and dependence on unpaid care.',
             citations: citations(['dorothyDayCatholicWorker'], ['catholicWorkerMovement', 'oxfordChristianSocialism']),
+          },
+          {
+            period: '1949 foreword: Buber’s account of communal renewal',
+            text: 'Buber presents his book as an inquiry into rebuilding society through its constituent communities, not an exhaustive survey of socialism. The dated foreword and later editorial material must be distinguished; this timeline does not establish the first Hebrew or German edition date.',
+            citations: citations([], ['buberPathsEnglish']),
           },
           {
             period: '1940s–1960s: Black theology, civil rights, and economic justice',
@@ -8283,6 +8303,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Uses Christian fellowship, social ethics, labor organization, and critique of acquisitive individualism to support socialist or cooperative reform.',
                 relation: 'An important nineteenth- and twentieth-century strand, but its institutional and theological positions varied from church reform to Labour politics and voluntary association.',
                 citations: citations(['aquinasMoralPolitical', 'marxEngelsManifesto'], ['oxfordChristianSocialism', 'jstorChristianSocialistRevival', 'cambridgeReligionOriginsSocialism']),
+              },
+              {
+                label: 'Buber’s Jewish communal socialism',
+                distinction: 'Connects religious interpretation, cooperative community and resistance to domination without making clerical government its goal.',
+                relation: 'A particular intellectual strand, not a synonym for Judaism, all Jewish socialism, all Zionism or Latin American liberation theology. Religious grounding and centralized political power remain separate questions.',
+                citations: citations([], ['buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019']),
               },
               {
                 label: 'Catholic Worker personalism',
@@ -8354,6 +8380,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'French-born Catholic Worker co-founder associated with discussion, hospitality, farming communes, and the Easy Essays.',
                 caveat: 'The archive distinguishes original writings from arrangements of other authors’ ideas; attribution requires checking the particular item.',
                 citations: citations([], ['marquetteMaurinPapers']),
+              },
+              {
+                name: 'Martin Buber',
+                role: 'Jewish philosopher whose dialogue, communal socialism and political theology connect religious meaning with social relations.',
+                caveat: 'An intellectual comparison, not a six-axis score assigned to him. His position does not represent every Jewish religious, socialist or national movement.',
+                citations: citations([], ['sepBuber2026', 'buberPathsEnglish']),
               },
               {
                 name: 'Martin Luther King Jr.',
@@ -8451,6 +8483,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Buber’s favourable evaluation of village communes is advocacy, not an independent outcome study. He values links between communities and wider society, not mere survival in isolation. Our editorial safeguard is to investigate membership, gendered work, land relations and Palestinian experiences separately before treating a communal ideal as demonstrated equality or success. No present-day state or community is classified from his appraisal.',
+            citations: citations([], ['buberPathsEnglish', 'sepBuber2026']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Stanford account explains that Buber’s use of theocracy can oppose human domination rather than authorize clerical government. That historical vocabulary is not interchangeable with this website’s institutional label. Religious source language cannot by itself determine either the Religion or Authority coordinate; all existing coordinates remain unchanged.',
+            citations: citations([], ['sepBuber2026', 'leschBuberTheopolitics2019']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Edition boundary: the English transcription attributes its translation to R. F. C. Hull, labels the work 1949 and includes a separately authored 1958 introduction. Syracuse lists a November 1996 edition. These are not silently treated as the same object: selected transcription passages and catalogue metadata were read, not a collated print text or the complete 1996 book. Lesch was consulted at abstract level only.',
+            citations: citations([], ['buberPathsEnglish', 'syracuseBuberPaths1996', 'leschBuberTheopolitics2019']),
+          },
+          {
+            type: 'paragraph',
             text: 'A second criticism concerns authority. Grassroots participation can be empowering, but clergy, charismatic leaders, revolutionary parties, armed groups, or educated activists may claim to represent the oppressed. Religious certainty can make disagreement appear immoral, while socialist certainty can make dissent appear class betrayal. Safeguards include internal democracy, equal membership, transparent finances, independent criticism, nonviolence where possible, freedom of conscience, and the ability to leave or organize another movement.',
             citations: citations(['dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'spinozaPolitical'], ['catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'sepReligionPolitics', 'vdem']),
           },
@@ -8474,8 +8521,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto', 'spinozaPolitical', 'millOnLiberty'],
-      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989'],
-      editorialNote: 'The entry is an umbrella synthesis with a Christian-centered evidence base. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, and theocracy. Scores are didactic composites; non-Christian traditions and country-specific claims require separate research.',
+      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989', 'buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019', 'syracuseBuberPaths1996'],
+      editorialNote: 'The entry remains an umbrella synthesis with a predominantly Christian-centered evidence base, now including a bounded Buber comparison. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, and theocracy. Buber’s selected English primary text, scholarly interpretation and publisher metadata have different roles; his appraisal is not empirical validation. Scores remain didactic composites, with existing article/card discrepancies still recorded. Broader non-Christian traditions and country-specific claims require separate research.',
     },
     researchGaps: [
       'Add original-language scholarship in Portuguese and Spanish on Brazilian base communities, liberation theology, land and labor movements, Black theology, Indigenous theology, and church–state relations; verify editions and translations.',
@@ -8488,6 +8535,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare Day’s article with its original newspaper scan, trace earlier Aims and Means versions, and consult the Maurin papers themselves. Investigate participation, unpaid care, dissent, and material outcomes across houses rather than deriving them from aspirational statements or finding aids.',
       'Extend the selected Löwy reading to the complete Portuguese article, its earlier publication, the cited works, and contrasting Latin American scholarship. Verify community-level and episcopal records before generalizing about lay initiative, institutional support, class, race, gender, or contemporary political influence.',
       'Resolve existing article/card differences in the Economic (62/60), Identity (25/35), and Foreign-policy (25/35) coordinates through explicit editorial review. These are magnitude discrepancies, not sign reversals; no score was recalibrated in this research pass.',
+      'Collate the Buber transcription with an identified print edition and the relevant Hebrew/German versions; resolve publication chronology and distinguish Buber’s text, Hull’s translation and Fischoff’s later introduction. Read Lesch’s full article and the primary biblical commentaries before extending the theopolitics argument.',
+      'Compare Buber with other Jewish religious and secular socialist traditions using their own texts; one thinker cannot stand for Judaism, Zionism or the Bund. Investigate community governance, gender, land, labour and Palestinian perspectives through independent historical evidence before making outcome claims about the communes he praised.',
     ],
   },
   populist: {

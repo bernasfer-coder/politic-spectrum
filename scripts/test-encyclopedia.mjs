@@ -64,6 +64,50 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const religiousSocialistEntry = ENCYCLOPEDIA_ENTRIES['religious-socialist'];
+for (const [sourceId, evidenceRole, publicationDate, confidence] of [
+  ['buberPathsEnglish', 'primary', '1949', 'medium'],
+  ['sepBuber2026', 'secondary', '2026-05-12', 'high'],
+  ['leschBuberTheopolitics2019', 'secondary', '2018-12-11', 'medium'],
+  ['syracuseBuberPaths1996', 'contextual', '1996-11', 'high'],
+]) {
+  assert.ok(religiousSocialistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a religious-socialist reference trail`);
+  assert.ok(JSON.stringify(religiousSocialistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:religious-socialist']);
+}
+const buberPrimary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-buberPathsEnglish');
+const buberScholarship = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sepBuber2026');
+const leschAbstract = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-leschBuberTheopolitics2019');
+assert.match(buberPrimary.description, /R\. F\. C\. Hull.*separately authored 1958 introduction/);
+assert.match(buberPrimary.note, /visible errors.*not collated/);
+assert.match(buberScholarship.description, /substantive revision.*first published 20 April 2004/);
+assert.match(leschAbstract.description, /2018 online date precedes the February 2019 issue/);
+assert.match(leschAbstract.note, /Full article.*were not reviewed/);
+const buberDescription = religiousSocialistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text ?? '').join(' ');
+const buberCriticisms = religiousSocialistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(buberDescription, /not a rule abolishing every coordinating institution/);
+assert.match(buberDescription, /not proof that ancient Israel practised egalitarian socialism/);
+assert.match(buberCriticisms, /advocacy, not an independent outcome study/);
+assert.match(buberCriticisms, /not interchangeable with this website’s institutional label/);
+assert.match(buberCriticisms, /not a collated print text or the complete 1996 book/);
+assert.match(religiousSocialistEntry.scopeNote, /bounded Jewish comparison, not coverage of all Jewish socialist/);
+const buberPerson = religiousSocialistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Martin Buber');
+assert.ok(buberPerson?.citations.researchSourceIds.includes('buberPathsEnglish'));
+assert.match(buberPerson.caveat, /not a six-axis score assigned to him/);
+assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Resolve existing article/card differences')));
+assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Buber transcription')));
+assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Compare Buber with other Jewish religious and secular socialist traditions')));
+
 const nationalityEntry = ENCYCLOPEDIA_ENTRIES['ethnic-nationalist'];
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
   ['reichNationality1913', 'primary', '1913-07-22', 'medium'],
