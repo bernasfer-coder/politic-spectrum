@@ -72,6 +72,600 @@ assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpre
 assert.equal(ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'].dimensionInterpretations.religion.score, 55, 'the existing secular liberal constitutional coordinate must remain positive');
 assert.equal(ENCYCLOPEDIA_ENTRIES['militarist-imperialist'].dimensionInterpretations.economic.score, -12, 'the compound imperial profile must preserve its existing canonical economic coordinate');
 
+const authoritarianGdrEntry = ENCYCLOPEDIA_ENTRIES['authoritarian-collectivist'];
+for (const [sourceId, role, date, language] of [
+  ['ghdiGdrConstitution1968', 'primary', '1968-04-06', 'German'],
+  ['klessmannGdrState1950s2002', 'secondary', '2002-12-24', 'German'],
+  ['rossGdrGrassroots1998', 'secondary', '1998', 'English'],
+]) {
+  assert.ok(authoritarianGdrEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(authoritarianGdrEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:authoritarian-collectivist']);
+}
+const gdrConstitutionRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ghdiGdrConstitution1968');
+assert.match(gdrConstitutionRecord.note, /two-page English translation.*full German constitution/);
+assert.match(gdrConstitutionRecord.description, /official constitutional self-description/);
+const klessmannRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-klessmannGdrState1950s2002');
+assert.match(klessmannRecord.description, /24 December 2002/);
+assert.match(klessmannRecord.note, /Complete available German institutional article/);
+const rossRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-rossGdrGrassroots1998');
+assert.match(rossRecord.sourceType, /doctoral thesis/);
+assert.match(rossRecord.description, /not the full 10 MB thesis/);
+const authoritarianGdrDescription = authoritarianGdrEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(authoritarianGdrDescription.some(({ text }) => text?.includes('constitutional self-description') && text.includes('party-state')));
+const authoritarianGdrHistory = authoritarianGdrEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(authoritarianGdrHistory.some(({ period, text }) => period.startsWith('1949–1968: East German') && text.includes('local adaptation')));
+const authoritarianGdrVariant = authoritarianGdrEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('East German socialist state'));
+assert.ok(authoritarianGdrVariant);
+const gdrExample = authoritarianGdrEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'German Democratic Republic: socialist state-building');
+assert.match(gdrExample.caveat, /not an exact six-axis country score/);
+const authoritarianGdrCriticisms = authoritarianGdrEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(authoritarianGdrCriticisms.some(({ text }) => text?.includes('formal party-state model as socially uniform') && text.includes('Local adaptation does not cancel coercion')));
+assert.ok(authoritarianGdrEntry.researchGaps.some((gap) => gap.startsWith('Read the full German text of the 1968 Constitution')));
+assert.ok(authoritarianGdrEntry.researchGaps.some((gap) => gap.startsWith('Read Ross’s complete thesis')));
+assert.deepEqual(Object.fromEntries(Object.entries(authoritarianGdrEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: 88, social: 18, authority: 86, identity: 38, foreign: -24, religion: 60 });
+
+const historicalFascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
+for (const [sourceId, role, date] of [
+  ['pasettiColonialismCorporative2016', 'secondary', '2017-04-23'],
+  ['treccaniRacismImperialism2022', 'secondary', null],
+  ['laricciaLateranPacts2016', 'secondary', '2016'],
+]) {
+  assert.ok(historicalFascistEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(historicalFascistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, ['Italian']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:historical-fascist']);
+}
+const pasettiRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-pasettiColonialismCorporative2016');
+assert.equal(pasettiRecord.identifiers.doi, '10.12977/stor655');
+assert.match(pasettiRecord.description, /23 April 2017/);
+assert.match(pasettiRecord.note, /selected sections read/);
+const fascistRacismRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-treccaniRacismImperialism2022');
+assert.match(fascistRacismRecord.description, /No publication date is displayed/);
+assert.match(fascistRacismRecord.note, /No publication date is displayed/);
+const laricciaRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-laricciaLateranPacts2016');
+assert.match(laricciaRecord.description, /Sergio Lariccia.*2016/);
+assert.match(laricciaRecord.note, /Full treaty facsimiles/);
+const fascistDescription = historicalFascistEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(fascistDescription.some(({ text }) => text?.includes('corporatist aspiration') && text.includes('colonial practice')));
+assert.ok(fascistDescription.some(({ text }) => text?.includes('colonial racial policy') && text.includes('1938')));
+const historicalFascistHistory = historicalFascistEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(historicalFascistHistory.some(({ period, text }) => period.startsWith('1930s: corporatist empire') && text.includes('fragmented')));
+const fascistVariant = historicalFascistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Corporatist imperialism'));
+assert.ok(fascistVariant);
+const imperialExample = historicalFascistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Italian East Africa and Libya'));
+assert.match(imperialExample.caveat, /uneven and limited/);
+const fascistCriticisms = historicalFascistEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(fascistCriticisms.some(({ text }) => text?.includes('category error') && text.includes('discipline labor')));
+assert.ok(fascistCriticisms.some(({ text }) => text?.includes('Lateran settlement') && text.includes('not be read as proof')));
+assert.ok(historicalFascistEntry.researchGaps.some((gap) => gap.startsWith('Read Pasetti’s full article')));
+assert.ok(historicalFascistEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1929 Lateran Treaty')));
+
+const liberalConstitutionalismEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
+for (const [sourceId, role, date] of [
+  ['southAfricaConstitution1996Rights', 'primary', '1996'],
+  ['southAfricaMakwanyaneCourt1995', 'primary', '1995-06-06'],
+  ['khoslaTushnetStateCapacity2022', 'secondary', '2022-05-21'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const southAfricaScholar = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-khoslaTushnetStateCapacity2022');
+assert.equal(southAfricaScholar.identifiers.doi, '10.1093/ajcl/avac009');
+assert.match(southAfricaScholar.description, /First online publication date.*March 2022/);
+assert.match(southAfricaScholar.note, /selected South Africa discussion/);
+assert.match(southAfricaScholar.license, /CC BY 4\.0/);
+const makwanyaneRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-southAfricaMakwanyaneCourt1995');
+assert.match(makwanyaneRecord.description, /retrospective institutional summary/);
+assert.match(makwanyaneRecord.note, /full judgment.*not independently read/);
+const southAfricaDescription = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(southAfricaDescription.some(({ text }) => text?.includes('post-apartheid constitutional order') && text.includes('do not by themselves prove equal access')));
+assert.ok(southAfricaDescription.some(({ text }) => text?.includes('state capacity') && text.includes('dialogic or weak-form review')));
+const liberalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+const saIndex = liberalHistory.findIndex(({ period }) => period.startsWith('1995–1996: South African'));
+assert.ok(saIndex >= 0);
+const southAfricaExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.includes('South Africa’s 1996 Bill of Rights'));
+assert.ok(southAfricaExample);
+const liberalCriticisms = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(liberalCriticisms.some(({ text }) => text?.includes('constitutionalism is only a negative restraint')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the full S v Makwanyane judgment')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Compare South Africa’s socioeconomic-rights remedies')));
+assert.deepEqual(Object.fromEntries(Object.entries(liberalConstitutionalismEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -30, social: 25, authority: -65, identity: 25, foreign: 35, religion: 55 });
+
+const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
+for (const [sourceId, role, date] of [
+  ['irishAssemblyTerms2016', 'primary', '2016-07'],
+  ['irishAssemblySelection2016', 'primary', null],
+  ['irishAssemblyRecruitment2018', 'primary', '2018-02-21'],
+  ['suiterEpistemicDeliberation2021', 'secondary', '2021-07-23'],
+  ['carolanGlennonConsensus2024', 'secondary', '2024-03-08'],
+  ['doyleWalshRejoinder2024', 'secondary', '2024-03-08'],
+]) {
+  assert.ok(deliberativeCentreEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(deliberativeCentreEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:centrist-pragmatist']);
+}
+const deliberationStudyRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-suiterEpistemicDeliberation2021');
+assert.deepEqual(deliberationStudyRecord.creators, ['Jane Suiter', 'David M. Farrell', 'Clodagh Harris', 'Philip Murphy']);
+assert.equal(deliberationStudyRecord.identifiers.doi, '10.1177/14789299211020909');
+assert.match(deliberationStudyRecord.description, /first online publication.*2022/);
+assert.match(deliberationStudyRecord.note, /No transcript recoding, statistical replication/);
+assert.match(deliberationStudyRecord.license, /CC BY 4\.0/);
+const consensusReplyRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-carolanGlennonConsensus2024');
+assert.equal(consensusReplyRecord.identifiers.doi, '10.1093/icon/moae012');
+assert.match(consensusReplyRecord.note, /sections 1–2/);
+const consensusRejoinderRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-doyleWalshRejoinder2024');
+assert.equal(consensusRejoinderRecord.identifiers.doi, '10.1093/icon/moae015');
+assert.match(consensusRejoinderRecord.note, /Expert Advisory Group but write personally/);
+assert.match(consensusRejoinderRecord.license, /CC BY 4\.0/);
+const recruitmentStatementRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-irishAssemblyRecruitment2018');
+assert.match(recruitmentStatementRecord.description, /7 February 2023 update/);
+assert.match(recruitmentStatementRecord.note, /audit was not independently reviewed/);
+const centreDescription = deliberativeCentreEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(centreDescription.some(({ text }) => text?.includes('majority voting, not unanimity') && text.includes('not automatic implementation')));
+assert.ok(centreDescription.some(({ text }) => text?.includes('did not establish that participants mirrored every public attitude')));
+const centreHistory = deliberativeCentreEntry.sections.find(({ id }) => id === 'history').timeline;
+const irishExperimentIndex = centreHistory.findIndex(({ period }) => period.startsWith('2016–2018: Irish'));
+assert.ok(irishExperimentIndex >= 0 && irishExperimentIndex < centreHistory.findIndex(({ period }) => period.startsWith('Present:')));
+const irishProceduralExample = deliberativeCentreEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Ireland’s Citizens’ Assembly');
+assert.match(irishProceduralExample.caveat, /Neither the members nor their recommendations inherit/);
+const centreCriticisms = deliberativeCentreEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(centreCriticisms.some(({ text }) => text?.includes('excludes private roundtables') && text.includes('causal effect on voters')));
+assert.ok(centreCriticisms.some(({ text }) => text?.includes('January 2018 referendum-procedure meeting, not the earlier abortion meetings')));
+assert.ok(centreCriticisms.some(({ text }) => text?.includes('Carolan and Glennon interpret') && text.includes('Doyle and Walsh reply')));
+assert.ok(deliberativeCentreEntry.researchGaps.some((gap) => gap.startsWith('Audit the Irish recruitment methodology')));
+assert.ok(deliberativeCentreEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Carolan–Glennon argument')));
+assert.deepEqual(Object.fromEntries(Object.entries(deliberativeCentreEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: 0, social: 0, authority: 8, identity: 0, foreign: 15, religion: 10 });
+
+const christianDemocracyEntry = ENCYCLOPEDIA_ENTRIES['christian-democratic'];
+for (const [sourceId, role, date, language] of [
+  ['sweetMaritainPolitical2019', 'secondary', '2019-05-01', 'English'],
+  ['vaticanGaudiumSpesFrench1965', 'primary', '1965-12-07', 'French'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const sweetMaritainRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sweetMaritainPolitical2019');
+assert.deepEqual(sweetMaritainRecord.creators, ['William Sweet']);
+assert.match(sweetMaritainRecord.description, /substantive revision; first publication was 5 December 1997/);
+assert.match(sweetMaritainRecord.note, /selected section 3\.5/);
+assert.match(sweetMaritainRecord.note, /not independently reviewed/);
+const gaudiumRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-vaticanGaudiumSpesFrench1965');
+assert.match(gaudiumRecord.description, /not .*certified English translation/);
+assert.match(gaudiumRecord.note, /no full-document or Latin-edition collation/);
+const reusedFreedomRecords = BIBLIOGRAPHY_RECORDS.filter(({ id }) => id === 'research-vaticanReligiousFreedomFrench');
+assert.equal(reusedFreedomRecords.length, 1);
+assert.equal(reusedFreedomRecords[0].accessDate, '2026-09-15', 'reusing a source must not replace its original metadata');
+assert.deepEqual([...reusedFreedomRecords[0].relationships.profileEntries].sort(), ['encyclopedia:christian-democratic', 'encyclopedia:religious-traditionalist']);
+assert.ok(christianDemocracyEntry.references.researchSourceIds.includes('vaticanReligiousFreedomFrench'));
+const christianDescription = christianDemocracyEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(christianDescription.some(({ text }) => text?.includes('agreement on basic rights from agreement about their ultimate foundation')));
+assert.ok(christianDescription.some(({ text }) => text?.includes('not evidence that any particular party maintained independence')));
+assert.ok(christianDescription.some(({ text }) => text?.includes('does not mandate one church–state arrangement')));
+const christianHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const councilIndex = christianHistory.findIndex(({ period }) => period.startsWith('7 December 1965'));
+const laterIndex = christianHistory.findIndex(({ period }) => period.startsWith('Late twentieth century–present'));
+assert.ok(councilIndex >= 0 && laterIndex > councilIndex);
+assert.equal(new Set(christianHistory.map(({ period }) => period)).size, christianHistory.length);
+const christianCriticisms = christianDemocracyEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(christianCriticisms.some(({ text }) => text?.includes('limited institutional detail')));
+assert.ok(christianCriticisms.some(({ text }) => text?.includes('do not establish a causal line from Maritain')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.includes('identity coordinate of -20 with the main card’s -40')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Independently read and compare')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Collate the selected French conciliar provisions')));
+assert.deepEqual(Object.fromEntries(Object.entries(christianDemocracyEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -5, social: -30, authority: 20, identity: -20, foreign: 15, religion: -62 });
+
+const frenchMonarchyEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
+for (const [sourceId, role, date, language] of [
+  ['franceConstitution1791', 'primary', '1791-09-03', 'French'],
+  ['barnaveRoyalInviolability1791', 'primary', '1791-07-15', 'French'],
+  ['caianiLouisXVI2012Abstract', 'secondary', '2012', 'English'],
+]) {
+  assert.ok(frenchMonarchyEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(frenchMonarchyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+const caianiRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-caianiLouisXVI2012Abstract');
+assert.equal(caianiRecord.identifiers.doi, '10.1017/CBO9781139207317');
+assert.match(caianiRecord.sourceType, /abstract and metadata only/);
+assert.match(caianiRecord.note, /no PDF pages/);
+assert.match(caianiRecord.description, /2014 deposit and 2026 modification dates are not publication dates/);
+const frenchDescription = frenchMonarchyEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(frenchDescription.some(({ text }) => text?.includes('next two legislatures') && text.includes('original legislature')));
+assert.ok(frenchDescription.some(({ text }) => text?.includes('could not dissolve') && text.includes('not evidence of effective accountability')));
+const frenchHistory = frenchMonarchyEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(frenchHistory.findIndex(({ period }) => period.startsWith('15 July 1791')) < frenchHistory.findIndex(({ period }) => period.startsWith('1847')));
+assert.ok(frenchMonarchyEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.includes('Only the abstract was reviewed')));
+assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.includes('modern headnote places June dates in a July sequence')));
+assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.includes('existing article/card differences')));
+assert.deepEqual(Object.values(frenchMonarchyEntry.dimensionInterpretations).map(({ score }) => score), [-12, -48, 52, -42, -18, -52]);
+
+const goldmanEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['goldmanFurtherRussia1924', 'primary', '1924'],
+  ['hemmingsGoldman2018', 'secondary', '2018-01'],
+  ['hemmingsGoldmanInterview2018', 'secondary', '2018-04-15'],
+]) {
+  assert.ok(goldmanEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(goldmanEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anarcho-communist']);
+}
+const goldmanPrimary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-goldmanFurtherRussia1924');
+const hemmingsBook = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hemmingsGoldman2018');
+const hemmingsInterview = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hemmingsGoldmanInterview2018');
+assert.deepEqual(goldmanPrimary.creators, ['Emma Goldman']);
+assert.match(goldmanPrimary.description, /not the transcription release date/);
+assert.match(goldmanPrimary.note, /no full-volume or facsimile collation/);
+assert.equal(hemmingsBook.identifiers.doi, '10.1215/9780822372257');
+assert.match(hemmingsBook.note, /pp\. 4, 7–8, 35–36 and note 11 visually checked/);
+assert.match(hemmingsBook.description, /speculative letters are not newly recovered primary documents/);
+assert.deepEqual(hemmingsInterview.creators, ['Clare Hemmings', 'Rosemary Deller']);
+assert.match(hemmingsInterview.description, /USAPP republication/);
+assert.match(hemmingsInterview.note, /not two independent corroborations/);
+const goldmanDescription = goldmanEntry.sections.find(({ id }) => id === 'description').blocks.find(({ text }) => text?.startsWith('Goldman’s 1924 Afterword'));
+assert.match(goldmanDescription.text, /acknowledges anarchists’ organizational weaknesses/);
+assert.match(goldmanDescription.text, /not a conclusive test/);
+assert.match(goldmanDescription.text, /not .*a declaration of absolute nonviolence/);
+const goldmanHistory = goldmanEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(goldmanHistory.findIndex(({ period }) => period.startsWith('1923–1924')) < goldmanHistory.findIndex(({ period }) => period.startsWith('1927–1930')));
+const goldmanCriticisms = goldmanEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(goldmanCriticisms.some(({ text }) => text?.includes('speculative correspondence is not recovered primary testimony')));
+assert.ok(goldmanCriticisms.some(({ text }) => text?.includes('unresolved or racist elements')));
+assert.ok(goldmanEntry.researchGaps.some((gap) => gap.startsWith('Collate Goldman’s selected 1924 Afterword')));
+assert.ok(goldmanEntry.researchGaps.some((gap) => gap.startsWith('Read Goldman’s primary writings on women')));
+assert.deepEqual(Object.fromEntries(Object.entries(goldmanEntry.dimensionInterpretations).map(([id, value]) => [id, value.score])), { economic: 94, social: 58, authority: -100, identity: 70, foreign: 68, religion: 45 });
+
+const onondagaEntry = ENCYCLOPEDIA_ENTRIES['indigenous-relational-governance'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['onondagaClanMothers', 'primary', null],
+  ['onondagaChiefs', 'primary', null],
+  ['onondagaSovereignty', 'primary', null],
+  ['hollandLulewiczKeystone2022', 'secondary', '2022-03-11'],
+]) {
+  assert.ok(onondagaEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(onondagaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:indigenous-relational-governance']);
+  if (evidenceRole === 'primary') {
+    assert.deepEqual(record.creators, ['Onondaga Nation']);
+    assert.match(record.rightsStatus, /community-controlled/);
+  }
+}
+const onondagaMothersRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-onondagaClanMothers');
+assert.match(onondagaMothersRecord.description, /footer year is not a publication date/);
+assert.match(onondagaMothersRecord.description, /does not establish community approval/);
+const keystoneRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hollandLulewiczKeystone2022');
+assert.equal(keystoneRecord.identifiers.doi, '10.3389/fpos.2022.840049');
+assert.equal(keystoneRecord.creators.length, 4);
+assert.match(keystoneRecord.license, /CC BY/);
+assert.match(keystoneRecord.note, /extends beyond the Haudenosaunee/);
+assert.match(keystoneRecord.description, /Conceptual Analysis/);
+const onondagaDescription = JSON.stringify(onondagaEntry.sections.find(({ id }) => id === 'description'));
+assert.match(onondagaDescription, /fourteen-chief council from the Confederacy’s fifty titles/);
+assert.match(onondagaDescription, /lifetime tenure alongside removal/);
+assert.match(onondagaDescription, /not the same as a direct vote of every resident/);
+assert.match(onondagaDescription, /not a finding that every external government accepts/);
+const onondagaCriticisms = JSON.stringify(onondagaEntry.sections.find(({ id }) => id === 'criticisms'));
+assert.match(onondagaCriticisms, /not a present-day audit/);
+assert.match(onondagaCriticisms, /makes no claim about influence on the United States Constitution/);
+assert.match(onondagaCriticisms, /reading date must not be used as a founding date/);
+assert.deepEqual(Object.fromEntries(Object.entries(onondagaEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: 38, social: 8, authority: -38, identity: 4, foreign: 34, religion: -18 });
+assert.ok(onondagaEntry.researchGaps.some((gap) => gap.startsWith('Collate original treaty sheets')));
+assert.ok(onondagaEntry.researchGaps.some((gap) => gap.startsWith('Review the full Te Paparahi')));
+assert.ok(onondagaEntry.researchGaps.some((gap) => gap.startsWith('Seek Onondaga')));
+assert.ok(onondagaEntry.researchGaps.some((gap) => gap.startsWith('Read the historical works')));
+
+const burkeConservativeEntry = ENCYCLOPEDIA_ENTRIES.conservative;
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['burkeFoxIndia1783', 'primary', '1783-12-01'],
+  ['collinsMercantile2019', 'secondary', '2019-07-24'],
+  ['maresGlobalBurke2025', 'secondary', '2025-03-26'],
+]) {
+  assert.ok(burkeConservativeEntry.references.researchSourceIds.includes(sourceId));
+  assert.ok(JSON.stringify(burkeConservativeEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:conservative']);
+}
+const burkeSpeechRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-burkeFoxIndia1783');
+assert.match(burkeSpeechRecord.note, /Not collated with facsimiles/);
+assert.match(burkeSpeechRecord.description, /speech occasion, not publication/);
+assert.match(burkeSpeechRecord.description, /1887/);
+const burkeCollinsRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-collinsMercantile2019');
+assert.match(burkeCollinsRecord.sourceType, /abstract only/);
+assert.equal(burkeCollinsRecord.identifiers.doi, '10.1017/S1053837218000354');
+const burkeMaresRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-maresGlobalBurke2025');
+assert.equal(burkeMaresRecord.identifiers.doi, '10.1017/S1479244325000046');
+assert.match(burkeMaresRecord.license, /CC BY 4\.0/);
+assert.match(burkeMaresRecord.description, /not an exhaustive literature survey/);
+const burkeDescription = JSON.stringify(burkeConservativeEntry.sections.find(({ id }) => id === 'description'));
+assert.match(burkeDescription, /habitual pattern/);
+assert.match(burkeDescription, /abstract-level interpretation/);
+const burkeCriticism = JSON.stringify(burkeConservativeEntry.sections.find(({ id }) => id === 'criticisms'));
+assert.match(burkeCriticism, /not the encyclopedia’s descriptions/);
+assert.match(burkeCriticism, /not from independent readings/);
+assert.match(burkeCriticism, /Richard Bourke/);
+assert.match(JSON.stringify(burkeConservativeEntry.sections.find(({ id }) => id === 'history')), /not evidence that its promised protections were implemented/);
+assert.deepEqual(Object.fromEntries(Object.entries(burkeConservativeEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -18, social: -72, authority: 48, identity: -62, foreign: 10, religion: -40 });
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Add French-language scholarship')));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Review the full Englert chapter')));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1783 speech')));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Read Collins in full')));
+
+const nozickMarketEntry = ENCYCLOPEDIA_ENTRIES['libertarian-market'];
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['nozickRectification1974UT', 'primary', '1974', ['English']],
+  ['sepNozickPolitical2022', 'secondary', '2022-04-21', ['English']],
+  ['coutoEntitlement2017', 'secondary', '2017-11', ['Portuguese', 'English']],
+]) {
+  assert.ok(nozickMarketEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a market-libertarian reference trail`);
+  assert.ok(JSON.stringify(nozickMarketEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:libertarian-market']);
+}
+const nozickExcerpt = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-nozickRectification1974UT');
+assert.match(nozickExcerpt.note, /not collated with a print edition/);
+assert.match(nozickExcerpt.description, /Separate from the existing whole-work bibliography record/);
+const nozickMack = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sepNozickPolitical2022');
+assert.match(nozickMack.description, /not a new 2025 revision/);
+assert.match(nozickMack.canonicalUrl, /archives\/spr2025/);
+const nozickCouto = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-coutoEntitlement2017');
+assert.equal(nozickCouto.identifiers.doi, '10.5007/1677-2954.2017v16n2p289');
+assert.match(nozickCouto.note, /pp\. 296–300, notes and references visually checked/);
+assert.match(nozickCouto.description, /Vitor Guerreiro/);
+assert.match(nozickCouto.description, /edition was not separately inspected/);
+const nozickDescription = JSON.stringify(nozickMarketEntry.sections.find(({ id }) => id === 'description'));
+assert.match(nozickDescription, /temporarily broader state action/);
+assert.match(nozickDescription, /not an unconditional endorsement of Rawls/);
+assert.match(nozickDescription, /incompletely specified/);
+const nozickCriticism = JSON.stringify(nozickMarketEntry.sections.find(({ id }) => id === 'criticisms'));
+assert.match(nozickCriticism, /Aluízio Couto/);
+assert.match(nozickCriticism, /philosophical objection, not an empirical prediction/);
+assert.match(nozickCriticism, /distinct from Nozick’s own conditional passage/);
+assert.deepEqual(Object.fromEntries(Object.entries(nozickMarketEntry.dimensionInterpretations).map(([id, value]) => [id, value.score])), { economic: -86, social: 34, authority: -88, identity: 34, foreign: 72, religion: 55 });
+assert.ok(nozickMarketEntry.researchGaps.some((gap) => gap.includes('Extend the selected Friedman reading')));
+assert.ok(nozickMarketEntry.researchGaps.some((gap) => gap.includes('Collate the university-hosted Nozick excerpt')));
+assert.ok(nozickMarketEntry.researchGaps.some((gap) => gap.includes('Litan, Schmidtz, Epstein and Cohen')));
+
+const rojavaLibertarianEntry = ENCYCLOPEDIA_ENTRIES['libertarian-socialist'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['rojavaCharter2014Institute', 'primary', '2014'],
+  ['hrwKurdishRule2014', 'secondary', '2014-06-19'],
+  ['hammyMileyRojava2022', 'secondary', '2022-01-10'],
+]) {
+  assert.ok(rojavaLibertarianEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an entry reference trail`);
+  assert.ok(JSON.stringify(rojavaLibertarianEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:libertarian-socialist']);
+}
+const rojavaCharterRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-rojavaCharter2014Institute');
+assert.match(rojavaCharterRecord.note, /Translator unidentified/);
+assert.match(rojavaCharterRecord.note, /not silently corrected/);
+assert.match(rojavaCharterRecord.description, /undated host page/);
+const rojavaInvestigation = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hrwKurdishRule2014');
+assert.match(rojavaInvestigation.note, /PYD-provided primary text/);
+assert.match(rojavaInvestigation.description, /November 2013.*February 2014/);
+const rojavaScholarship = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hammyMileyRojava2022');
+assert.equal(rojavaScholarship.identifiers.doi, '10.3389/fpos.2021.815338');
+assert.match(rojavaScholarship.description, /2018 and 2021; not a population survey/);
+assert.match(rojavaScholarship.license, /CC BY/);
+assert.match(rojavaScholarship.commercialUse, /third-party extracts are not separately cleared/);
+const rojavaDescription = JSON.stringify(rojavaLibertarianEntry.sections.find(({ id }) => id === 'description'));
+assert.match(rojavaDescription, /public wealth while protecting private property/);
+assert.match(rojavaDescription, /minimum 40%.*not 50–50 parity/);
+assert.match(rojavaDescription, /formal commitments, not verified outcomes/);
+const rojavaExample = JSON.stringify(rojavaLibertarianEntry.sections.find(({ id }) => id === 'examples'));
+assert.match(rojavaExample, /not six measured answers/);
+assert.match(rojavaExample, /No new coordinates are assigned/);
+assert.match(rojavaExample, /No Kurdish\/Arabic collation, later-charter comparison or claim of current applicability/);
+const rojavaCriticism = JSON.stringify(rojavaLibertarianEntry.sections.find(({ id }) => id === 'criticisms'));
+assert.match(rojavaCriticism, /official denials and cooperation/);
+assert.match(rojavaCriticism, /excluded alleged restrictions on speech\/association and abuses against non-Kurdish communities/);
+assert.match(rojavaCriticism, /critically supportive interpretation/);
+assert.deepEqual(Object.fromEntries(Object.entries(rojavaLibertarianEntry.dimensionInterpretations).map(([id, value]) => [id, value.score])), { economic: 78, social: 50, authority: -75, identity: 60, foreign: 50, religion: 42 });
+assert.ok(rojavaLibertarianEntry.researchGaps.some((gap) => gap.includes('religion discrepancy of +42') && gap.includes('Luxemburg')));
+assert.ok(rojavaLibertarianEntry.researchGaps.some((gap) => gap.includes('Collate the 2014 Social Contract')));
+assert.ok(rojavaLibertarianEntry.researchGaps.some((gap) => gap.includes('minority and opposition accounts')));
+
+const moroccoMonarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['moroccoConstitutionFrench2011', 'primary', '2011-07-30', ['French']],
+  ['constituteMorocco2011', 'primary', '2011', ['English']],
+  ['ruizMoroccoParliamentary2014', 'secondary', '2014', ['Spanish', 'English']],
+  ['elMessaoudiGovernment2015', 'secondary', '2015-07-13', ['Spanish']],
+]) {
+  assert.ok(moroccoMonarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a monarchist reference trail`);
+  assert.ok(JSON.stringify(moroccoMonarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+const moroccoFrench = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-moroccoConstitutionFrench2011');
+const moroccoEnglish = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-constituteMorocco2011');
+const ruizMorocco = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ruizMoroccoParliamentary2014');
+const elMessaoudiMorocco = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-elMessaoudiGovernment2015');
+assert.match(moroccoFrench.description, /29 July.*1 July 2011.*not interchangeable/);
+assert.match(moroccoFrench.note, /age twenty.*eighteen.*unresolved/);
+assert.match(moroccoEnglish.description, /not publication of this translation.*2012/);
+assert.match(moroccoEnglish.publisher, /Jefri J\. Ruchti/);
+assert.match(moroccoEnglish.license, /all rights reserved/);
+assert.match(ruizMorocco.note, /Full article.*were not reviewed/);
+assert.match(elMessaoudiMorocco.note, /Full displayed Spanish HTML.*sections 1–5 and notes/);
+assert.equal(elMessaoudiMorocco.identifiers.doi, '10.18543/ed-63(1)-2015pp389-401');
+assert.match(elMessaoudiMorocco.license, /CC BY-NC 4\.0.*commercial republication is not cleared/);
+const moroccoDescription = moroccoMonarchistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text ?? '').join(' ');
+const moroccoCriticisms = moroccoMonarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(moroccoDescription, /party finishing first.*absolute majority/);
+assert.match(moroccoDescription, /Council of Ministers.*distinct.*Council of Government/);
+assert.match(moroccoDescription, /does not establish secular separation/);
+assert.match(moroccoCriticisms, /article 19.*article 43.*Article 175/);
+assert.match(moroccoCriticisms, /age twenty.*eighteen.*not collated/);
+const moroccoVariant = moroccoMonarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Morocco 2011:'));
+assert.ok(moroccoVariant.citations.researchSourceIds.includes('ruizMoroccoParliamentary2014'));
+assert.ok(moroccoVariant.citations.researchSourceIds.includes('elMessaoudiGovernment2015'));
+assert.match(moroccoVariant.relation, /Only Ruiz Ruiz’s abstract was reviewed/);
+const moroccoExample = moroccoMonarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Morocco’s constitutional'));
+assert.equal(moroccoExample.period, '2011 text; interpretations published in 2014–2015');
+assert.match(moroccoExample.caveat, /does not classify present-day Morocco or its citizens/);
+assert.ok(moroccoMonarchistEntry.researchGaps.some((gap) => /article 44’s conflicting.*full Ruiz Ruiz/.test(gap)));
+assert.ok(moroccoMonarchistEntry.researchGaps.some((gap) => /article\/card differences/.test(gap)), 'the prior coordinate discrepancy must remain visible');
+
+const suezLiberationEntry = ENCYCLOPEDIA_ENTRIES['anti-colonial-liberation'];
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['suezNationalizationDecree1956', 'primary', '1956-07-26'],
+  ['frusNasserAnnouncement1956', 'primary', '1956-07-26'],
+  ['nasserCanalUsers1956', 'primary', '1956-09-15'],
+  ['salemNasserHegemony2020', 'secondary', '2020-04-10'],
+]) {
+  assert.ok(suezLiberationEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anti-colonial reference trail`);
+  assert.ok(JSON.stringify(suezLiberationEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anti-colonial-liberation']);
+}
+const suezDecree = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-suezNationalizationDecree1956');
+const suezTelegram = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-frusNasserAnnouncement1956');
+const suezSpeech = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-nasserCanalUsers1956');
+const salemSummary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-salemNasserHegemony2020');
+assert.match(suezDecree.description, /signature date, not a verified web publication or gazette date/);
+assert.match(suezDecree.note, /articles I–VI.*Translator.*unidentified.*no Arabic original/);
+assert.match(suezTelegram.note, /not a verbatim speech transcript or independent audit/);
+assert.match(suezTelegram.description, /receipt on 27 July.*not publication of the edited volume/);
+assert.match(suezSpeech.note, /pp\. 345–351.*translator is unidentified/);
+assert.match(suezSpeech.description, /15 September speech is separate from the 26 July/);
+assert.match(JSON.stringify(suezSpeech), /no commercial-use permission/);
+assert.equal(salemSummary.identifiers.doi, '10.1017/9781108868969.003');
+assert.match(salemSummary.note, /summary and metadata only.*were not reviewed/);
+const suezDescription = suezLiberationEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text ?? '').join(' ');
+const suezCriticisms = suezLiberationEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(suezDescription, /not a text establishing worker ownership/);
+assert.match(suezDescription, /does not make anti-imperialism synonymous with pacifism/);
+assert.match(suezCriticisms, /coercive legal provision, not proof of how often it was enforced/);
+assert.match(suezCriticisms, /No present-day Egyptian position or new coordinate is inferred/);
+const suezTimeline = suezLiberationEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(suezTimeline.findIndex(({ period }) => period.startsWith('26 July and 15 September 1956')) < suezTimeline.findIndex(({ period }) => period.startsWith('November 1965')));
+const suezExampleItems = suezLiberationEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries);
+assert.match(suezExampleItems.find(({ name }) => name === 'Gamal Abdel Nasser').caveat, /not a personal six-axis score/);
+assert.match(suezExampleItems.find(({ name }) => name === 'Suez Canal Company nationalization').caveat, /not proof of an entirely collectivist economy/);
+assert.ok(suezLiberationEntry.researchGaps.some((gap) => /Arabic gazette.*independent records/.test(gap)));
+assert.ok(suezLiberationEntry.researchGaps.some((gap) => /Salem’s full chapter.*Arabic-language scholarship/.test(gap)));
+
 const religiousSocialistEntry = ENCYCLOPEDIA_ENTRIES['religious-socialist'];
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
   ['buberPathsEnglish', 'primary', '1949', 'medium'],

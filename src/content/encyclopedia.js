@@ -122,6 +122,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'East Germany’s June 1953 dispute makes the ownership/control distinction concrete. In its 16 June declaration, the SED Politburo upheld productivity growth but rejected imposing a ten-percent work-norm increase administratively, instead advocating persuasion and voluntary agreement. It proposed reviewing the government decision with the unions. These are the leadership’s stated positions, not independent proof that workers could freely refuse targets or choose alternative representatives.',
             citations: citations([], ['sedNormsDeclaration1953']),
           },
+          {
+            type: 'paragraph',
+            text: 'The East German case also separates constitutional self-description from social transformation. The 1968 Constitution presented the GDR as a socialist state whose working population realized socialism under the leadership of the working class and its Marxist-Leninist party, while its peace and international-law language framed the state’s external identity. Kleßmann’s German history of the 1950s and Ross’s grassroots study show why those declarations require institutional and local evidence: party-state hierarchy, economic planning, coercion, social provision, adaptation, and unplanned action did not operate at one uniform level.',
+            citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
+          },
         ],
       },
       {
@@ -147,6 +152,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'After 1945: party-states and national variants',
             text: 'The post-war socialist world contained different combinations of central planning, public ownership, nationalism, security institutions, social provision, and political repression. The common party-state family should therefore be compared across cases rather than represented as a single unchanging regime type.',
             citations: citations(['arendtTotalitarianism'], ['sepSocialism', 'ushmmCommunism']),
+          },
+          {
+            period: '1949–1968: East German state-building and constitutional self-description',
+            text: 'The GDR’s 1968 Constitution described a socialist state whose working population realized socialism under the leadership of the working class and its Marxist-Leninist party, while also committing the state to peace, international law, and eventual German unity on socialist and democratic terms. Kleßmann’s account of the 1950s and Ross’s East Berlin–Brandenburg study complicate the official picture: central direction and coercive intervention coexisted with local adaptation, social provision, negotiation, flight, and uneven implementation. These are country-specific historical layers, not a score for every socialist system.',
+            citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
           },
           {
             period: 'Mao-era China and revolutionary state-building — 1949–1976',
@@ -246,6 +256,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'Responsiveness under pressure is not the same as democratic accountability. The comparison concerns institutions, not whether every concession was merely fictitious or every worker supported the same alternative.',
                 citations: citations([], ['lemkeJuneUprising2003']),
               },
+              {
+                label: 'East German socialist state: official leadership claim versus grassroots implementation',
+                distinction: 'The 1968 constitutional text formally places socialist realization under the leadership of the Marxist-Leninist party, while East German social history examines how planning, coercion, social policy, local officials, workers, farmers, and families experienced and reshaped that project.',
+                relation: 'This is a country-specific variant within the profile, not proof that constitutional language created effective worker control or that every local experience had the same character.',
+                citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
+              },
             ],
           },
         ],
@@ -282,6 +298,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'conflict between party-state authority and workplace demands',
                 caveat: 'A dated institutional comparison, not a classification of protesters, the whole GDR period or other Soviet-aligned states.',
                 citations: citations([], ['friedrichshainWorkers1953', 'sedNormsDeclaration1953']),
+              },
+              {
+                name: 'German Democratic Republic: socialist state-building',
+                period: '1949–1968 emphasis; East Berlin and Brandenburg evidence for 1945–1965',
+                match: 'documented match on party leadership, state-directed transformation, and a formal socialist constitutional identity',
+                caveat: 'The Constitution is official self-description, Kleßmann is a German historical synthesis, and Ross’s evidence is geographically bounded. These sources do not establish a uniform GDR society or full-period implementation; this remains a historical comparison, not an exact six-axis country score.',
+                citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
               },
               {
                 name: 'China after market reform',
@@ -346,6 +369,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The GDR adds a second warning against treating the formal party-state model as socially uniform. The 1968 Constitution’s leadership clause is direct evidence of official authority, but Kleßmann’s account and Ross’s grassroots research indicate that policy was received, implemented, negotiated, resisted, and refashioned through local institutions and ordinary people. Local adaptation does not cancel coercion or party monopoly; it shows that state capacity and social control were uneven achievements rather than automatic consequences of nationalization.',
+            citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
+          },
+          {
+            type: 'paragraph',
             text: 'Official explanations also require criticism. Lemke traces how admissions of policy failure coexisted with, and were increasingly overshadowed by, allegations of an externally directed fascist plot. Those allegations are evidence of official legitimation, not this entry’s explanation of the uprising. His analysis of subsequent security measures and concessions also cautions against equating repression with an absence of all worker influence.',
             citations: citations([], ['lemkeJuneUprising2003']),
           },
@@ -378,7 +406,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'bakuninStatism',
       ],
-      researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem', 'friedrichshainWorkers1953', 'sedNormsDeclaration1953', 'cieslaHertleWahlBerlin1953', 'lemkeJuneUprising2003'],
+      researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem', 'friedrichshainWorkers1953', 'sedNormsDeclaration1953', 'cieslaHertleWahlBerlin1953', 'lemkeJuneUprising2003', 'ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998'],
       editorialNote: 'References support different layers of the entry: primary texts for stated theories and demands, scholarly works for interpretation, and institutional sources for bounded historical context. The comparative sources separate Soviet, East European, Chinese, Vietnamese, Cuban, North Korean, and postcolonial trajectories. The June 1953 case distinguishes workers’ demands, party declarations, historical reconstruction and editorial comparison; no source proves an exact six-axis score. German passages are independently paraphrased, not quoted or presented as verified translations. Edition and date qualifications remain in the bibliography.',
     },
     researchGaps: [
@@ -391,6 +419,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Study how foreign aid, sanctions, war, decolonization, and international alliances affected state-building and ideological adaptation rather than treating domestic institutions as self-contained.',
       'Collate the Friedrichshain resolution with SAPMO-BArch NY 4090/437, Bl. 8 and the SED declaration with the original newspaper issue. Resolve the later caption’s date discrepancy and compare implementation, pay records, union practices and workers’ testimony beyond these selected documents.',
       'Extend the June 1953 case beyond Berlin with local strike programmes, women’s experiences, rural participants, Soviet records and competing scholarship. Separate demands, concessions, repression and later memory; the four sources do not establish one programme for all protesters or complete the wider GDR research agenda.',
+      'Read the full German text of the 1968 Constitution, the 1949 and 1974 constitutional versions, SED statutes, election law, court records, and archival materials on the party’s leadership claim. The selected GHDI extract is a translated two-page witness to official self-description, not a full constitutional or institutional history.',
+      'Read Ross’s complete thesis and compare its East Berlin–Brandenburg findings with rural, industrial, religious, gendered, and regional studies of the GDR. Kleßmann’s institutional article and the thesis abstract establish useful boundaries but do not settle the full-period social history or the balance between coercion, consent, adaptation, and welfare.',
     ],
   },
   'historical-fascist': {
@@ -496,6 +526,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['mussoliniDoctrine', 'hitlerMeinKampf'], ['sepFascism', 'bpbFascism']),
           },
           {
+            type: 'paragraph',
+            text: 'Italian-language scholarship adds a necessary distinction between corporatist aspiration and colonial practice. Pasetti reconstructs colonial corporatism as a Fascist project that linked imperial rule to a supposed third way between liberalism and socialism, but finds its colonial institutions fragmented, overlapping, and subordinated to the one-party state. The project’s language of cooperation and labor did not erase racial hierarchy or turn colonized people into equal participants; its limited implementation often served administrative discipline and imperial legitimation.',
+            citations: citations([], ['pasettiColonialismCorporative2016']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Treccani’s Italian historical essay places colonial racial policy in the development of Fascist racism rather than treating the 1938 anti-Jewish laws as an isolated German import. It describes racial separation, restrictions on intimate relations in the colonies, colonial violence, and later metropolitan racial legislation as connected layers of a hierarchical imperial order. This is an attributed institutional synthesis, not a substitute for colonial archives, victim testimony, or a complete legal history.',
+            citations: citations([], ['treccaniRacismImperialism2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Lariccia’s Italian legal analysis of the Lateran Pacts shows why Fascist church policy cannot be reduced to either secular hostility or clerical control. The 1929 Treaty and Concordat resolved the Roman Question, created Vatican City, regulated Church–state relations, and made Catholicism the state religion in the settlement’s historical context. The arrangement expanded Catholic legal privilege while leaving the Fascist state’s political discretion and broader repression as separate questions.',
+            citations: citations([], ['laricciaLateranPacts2016']),
+          },
+          {
             type: 'evidence-note',
             text: 'RD-L 1728/1938, article 8, classified people through ancestry and, in some cases, religious affiliation; personal belief alone did not determine persecution. These were imposed racist categories, not biological facts. Editorially, this crosses the identity, authority, and religion axes: it cannot be reduced to a preference for religious government or used to calculate new coordinates.',
             citations: citations([], ['cdecAntisemiticDecrees1938']),
@@ -520,6 +565,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1925–1939: dictatorship, corporatism, church settlement, and empire',
             text: 'The Italian regime consolidated one-party rule while presenting corporatism as an alternative to both liberal capitalism and Marxist class conflict. In practice, corporatist institutions subordinated independent labor organization to state supervision rather than creating equal worker–employer governance. The 1929 Lateran Pacts reconciled the Fascist state with the Catholic Church and strengthened the regime’s legitimacy, while the Ethiopian war and colonial rule pushed Fascism toward a more explicit imperial and racial politics. These developments were connected but not identical: corporatism, church diplomacy, colonial violence, and racial legislation each require their own evidence.',
             citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'treccaniCorporativismo', 'treccaniLateranPacts', 'cambridgeMussolinisFollies', 'sageColonialDominationItaly']),
+          },
+          {
+            period: '1930s: corporatist empire, colonial violence, and racial law',
+            text: 'Pasetti’s Italian study traces a Fascist project to extend corporative organization into the colonies, especially in relation to Libya and Italian East Africa. It finds a gap between the rhetoric of a cooperative imperial labor order and an administrative reality marked by fragmented, overlapping bodies, party control, racial subordination, and limited implementation. Treccani’s Italian synthesis further connects colonial racial regulation from 1935 with the racial legislation imposed in Italy in 1938. These sources show ideological and institutional links without collapsing every colonial policy or racial law into one mechanism.',
+            citations: citations([], ['pasettiColonialismCorporative2016', 'treccaniRacismImperialism2022']),
           },
           {
             period: '1938: Italian state legislation against Jews',
@@ -579,6 +629,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['griffinNatureFascism'], ['ushmmFascism', 'bpbFascism']),
               },
               {
+                label: 'Corporatist imperialism versus implemented colonial rule',
+                distinction: 'Pasetti distinguishes the regime’s project of corporatist administration and imperial third-way legitimation from fragmented colonial institutions, party subordination, racial hierarchy, and modest implementation.',
+                relation: 'This is a historically specific Fascist variant, not evidence that corporatism was either wholly fictitious or an emancipatory system for colonized workers.',
+                citations: citations([], ['pasettiColonialismCorporative2016']),
+              },
+              {
                 label: 'Authoritarian conservatism and military dictatorship',
                 distinction: 'May share hierarchy, nationalism, anti-communism, censorship, or military rule without a revolutionary mass movement, palingenetic myth, or fascist party-state project.',
                 relation: 'Important boundary case; authoritarianism alone is not enough to establish fascism.',
@@ -621,6 +677,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'The degree to which Spain and other regimes should be classified as fascist is debated; movement influence, coalition politics, and later authoritarian institutions should be separated.',
                 citations: citations(['griffinNatureFascism'], ['ushmmFascism', 'bpbFascism']),
               },
+              {
+                name: 'Italian East Africa and Libya: Fascist colonial empire',
+                period: '1931–1941 emphasis',
+                match: 'strong match on imperial expansion, racial hierarchy, party-state administration, and colonial corporatist experimentation',
+                caveat: 'The colonial institutions were uneven and limited; this example concerns Fascist rule and its subjects, not a claim about all Italian colonial history or a single uniform experience across Libya, Eritrea, Ethiopia, and Somalia.',
+                citations: citations([], ['pasettiColonialismCorporative2016', 'treccaniRacismImperialism2022']),
+              },
             ],
           },
         ],
@@ -658,6 +721,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Colonial corporatism also exposes a category error: institutions called cooperative or corporative can be designed to discipline labor and organize unequal imperial membership. Pasetti’s evidence suggests that Fascist colonial corporatism remained fragmented and discriminatory in practice, while Treccani’s account links racial law and colonial violence without making colonial policy a complete explanation of Italian Fascism. The entry must keep project, law, administration, violence, and social experience distinct.',
+            citations: citations([], ['pasettiColonialismCorporative2016', 'treccaniRacismImperialism2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Lateran settlement is another boundary case. Lariccia’s legal analysis shows a treaty-based church–state arrangement that gave Catholicism a privileged legal position, but it should not be read as proof that Fascism was simply clerical or that the Church and regime had identical aims. Religious privilege, institutional bargaining, political subordination, and later revision of the settlement need separate evidence.',
+            citations: citations([], ['laricciaLateranPacts2016']),
+          },
+          {
+            type: 'paragraph',
             text: 'Nazi crimes must never be diluted by treating them as a generic “strong government” outcome. Racial persecution, the Holocaust, aggressive war, forced labor, and mass murder are historically documented practices of the Nazi state and must remain explicit in any educational presentation of this card.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmFascism', 'bpbNationalSocialism']),
           },
@@ -691,6 +764,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'cdecAntisemiticDecrees1938',
         'anselmiPropertyReport2001',
         'ushmmItalyPersecution',
+        'pasettiColonialismCorporative2016',
+        'treccaniRacismImperialism2022',
+        'laricciaLateranPacts2016',
       ],
       editorialNote: 'The entry separates primary fascist and Nazi texts from comparative scholarship and institutional historical sources. The profile is a warning and comparison aid, not a diagnosis of contemporary people or countries. Selected 1938 decrees are primary evidence of prescribed rules; the 2001 commission report and USHMM article provide later historical interpretation. English legal summaries are paraphrases, not quotations or certified translations. None establishes a measured six-axis score.',
     },
@@ -702,6 +778,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Collate the selected CDEC legal transcriptions against original Gazette facsimiles; extend research to the 1939 implementing provisions, ministerial circulars, and provincial enforcement records before claiming a complete legislative history.',
       'Add victim testimony and specialist local studies of Italian and German cooperation, refusal, arrest, dispossession, and restitution. Keep mainland Italy, occupation zones, and colonial territories distinct; no casualty totals are inferred from this focused pass.',
       'Review the full Anselmi report and further Italian-language scholarship; the current evidence covers selected reprinted sections, not every archival case or a complete account of institutional responsibility.',
+      'Read Pasetti’s full article and the cited colonial-law, labor, and Africanist literature in the original editions, then compare Libya and Italian East Africa with archival evidence from colonized people, workers, administrators, and local institutions. The selected study establishes the project–implementation distinction but not a complete colonial history.',
+      'Collate the 1929 Lateran Treaty and Concordat, the 1935–1937 colonial racial provisions, the 1938 Italian racial laws, and the 1943–1944 repeal/revision record in Italian originals and official gazettes. Lariccia and Treccani provide legal/historical orientation, not a complete primary-law or implementation audit.',
     ],
   },
   'libertarian-market': {
@@ -778,6 +856,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The profile is not the same as “anything a market-friendly person believes.” It combines economic decentralization with a strong anti-coercion principle. A person or party may support markets while also accepting a large welfare state, military intervention, religious law, or strong cultural regulation; such a position should be scored on those dimensions separately.',
             citations: citations(['millOnLiberty', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Defending property is not automatically defending whoever currently possesses it. Nozick’s chapter 7 closing passage makes past injustice relevant to whether holdings should be protected or corrected; a market label cannot answer that historical question by itself.',
+            citations: citations([], ['nozickRectification1974UT']),
+          },
         ],
       },
       {
@@ -803,6 +886,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'A public good is not simply anything supplied by government. Tyler Cowen’s account distinguishes the difficulty of excluding nonpayers from consumption that leaves the benefit available to others. It examines both tax funding and arrangements such as bundling or repeated cooperation. This distinction matters here: identifying a collective benefit does not automatically select its provider, financing mechanism, or legal rules.',
             citations: citations([], ['cowenPublicGoods']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In Eric Mack’s reading, entitlement depends on just acquisition, transfer and, where necessary, rectification—not merely the present distribution’s shape. He also stresses that Nozick leaves the specific entitlement-generating procedures incompletely specified (section 4.1). Historical reasoning is a framework to develop, not a ready-made verdict on every existing title.',
+            citations: citations([], ['sepNozickPolitical2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'At the end of chapter 7, Nozick allows that repairing past wrongs could justify transfer payments and temporarily broader state action. His tentative rule favoring the least advantaged depends on assumptions about victims and beneficiaries, and he questions its plausibility. This is not an unconditional endorsement of Rawls’s difference principle or of every redistributive policy.',
+            citations: citations([], ['nozickRectification1974UT']),
           },
         ],
       },
@@ -841,6 +934,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['friedmanEducation1955']),
           },
           {
+            period: '1974 — entitlement and the unfinished rectification problem',
+            text: 'Anarchy, State, and Utopia defends a minimal state while reserving a significant role for repairing injustice. Its closing chapter 7 discussion leaves the detailed rectification theory for further work; the qualification belongs to the original argument, not an inferred later conversion.',
+            citations: citations(['nozickASU'], ['nozickRectification1974UT']),
+          },
+          {
             period: 'Contemporary debates',
             text: 'Current libertarian philosophy contains right- and left-libertarian positions, minarchism, anarcho-capitalism, market anarchism, and hybrid classical-liberal approaches. The major disputes concern original appropriation, redistribution, public goods, borders, environmental harm, social insurance, corporate power, and the legitimacy of the state itself.',
             citations: citations(['nozickASU', 'millOnLiberty'], ['sepLibertarianism']),
@@ -877,6 +975,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'The Walter Eucken Institut’s history and Goldschmidt–Wohlgemuth propositions emphasize general competition rules and constraints on private economic power, rather than unrestricted laissez-faire.',
                 relation: 'A state capable of enforcing the competitive order is part of this account. Market orientation therefore does not make ordoliberalism synonymous with minarchism or anarcho-capitalism, nor establish its position on the other axes.',
                 citations: citations([], ['euckenFreiburgHistory']),
+              },
+              {
+                label: 'Rectification versus maintaining a distributive pattern',
+                distinction: 'Correcting a rights violation differs from repeatedly adjusting holdings to preserve a preferred distribution.',
+                relation: 'A transfer’s justification matters; its outward appearance alone does not settle whether it conflicts with an entitlement theory.',
+                citations: citations([], ['nozickRectification1974UT', 'sepNozickPolitical2022']),
               },
               {
                 label: 'Anarcho-capitalism',
@@ -933,8 +1037,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'Robert Nozick',
                 role: 'rights-based defender of the minimal state',
-                caveat: 'Nozick’s argument is one influential philosophical version, not a consensus definition of libertarianism.',
-                citations: citations(['nozickASU'], ['sepLibertarianism']),
+                caveat: 'Nozick’s argument is one influential philosophical version, not a consensus definition of libertarianism. The chapter 7 qualification on rectification matters when using him as an illustrative reference.',
+                citations: citations(['nozickASU'], ['sepLibertarianism', 'nozickRectification1974UT']),
               },
               {
                 name: 'Milton Friedman',
@@ -1023,6 +1127,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Aluízio Couto’s Portuguese-language critique asks what would happen with perfect historical information. He argues that rigorously restoring ancient entitlements could destabilize present ownership, while allowing time and settled expectations to limit claims would alter a purely historical theory (2017, pp. 296–300). This is a philosophical objection, not an empirical prediction; he explicitly distinguishes it from defending the status quo.',
+            citations: citations([], ['coutoEntitlement2017']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Reading safeguard: Couto’s reconstruction and Mack’s interpretation are distinct from Nozick’s own conditional passage. Neither a thought experiment nor this short excerpt establishes the remedy for any actual land claim or the effects of a real transfer programme. The six-axis profile remains a didactic approximation, not a computed result of these arguments.',
+            citations: citations([], ['coutoEntitlement2017', 'sepNozickPolitical2022', 'nozickRectification1974UT']),
+          },
+          {
+            type: 'paragraph',
             text: 'Friedman’s footnote 2 also requires critical context: he rejected compulsory segregation yet defended privately segregated schools and opposed compulsory integration, while preferring integration if public schools forced that choice. This argument is not evidence of equal access. It exposes a conflict between his account of choice and remedies against exclusion.',
             citations: citations([], ['friedmanEducation1955']),
           },
@@ -1047,7 +1161,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'kantPerpetualPeace',
         'morgenthauRealism',
       ],
-      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates'],
+      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates', 'nozickRectification1974UT', 'sepNozickPolitical2022', 'coutoEntitlement2017'],
       editorialNote: 'The entry distinguishes primary arguments from comparative philosophical interpretation. Its scores describe one market-libertarian archetype and do not define all classical liberals, libertarians, or market-oriented governments. The education essay is primary policy argument; Cowen and the German institutional sources provide attributed interpretation, not causal programme evaluation. German pages were reconsulted on 16 September 2026; English summaries are original paraphrases, not source translations. All six coordinates remain unchanged.',
     },
     researchGaps: [
@@ -1058,6 +1172,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Review empirical education-finance research and civil-rights history, including admission rules, affordability, disability access, and segregation; the 1955 proposal and its predictions are not outcome evidence.',
       'Compare original Eucken and Böhm editions with independent critical histories before generalizing from the institute’s retrospective account; Austrian, Chicago, and Freiburg approaches still need separate treatment.',
       'Extend the selected Friedman reading to the remaining vocational-finance discussion and later revisions, and compare Nozick’s original entitlement and rectification arguments without assuming agreement among market-oriented thinkers.',
+      'Collate the university-hosted Nozick excerpt with an identified 1974 print edition and read chapter 7 in full, including acquisition, proviso and transfer arguments. Compare the Vitor Guerreiro Portuguese edition directly; Couto’s altered holdings terminology and translation pagination must not be silently imported as Nozick’s English wording.',
+      'Examine contrasting accounts of rectification, including the Litan, Schmidtz, Epstein and Cohen works discussed in the secondary sources. Separate moral entitlement, legal title, proof, beneficiaries, time limits and remedies; philosophical examples do not establish which policy works or resolve any current claim.',
     ],
   },
   'progressive-liberal': {
@@ -4147,6 +4263,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Cabral and Guinea-Bissau material below is a bounded case, not a model for every Portuguese-speaking country. A leader’s argument, participants’ remembered experiences, scholarly interpretation, and this site’s illustrative scores must remain distinguishable. Portuguese texts are paraphrased in English without claiming a verified translation.',
             citations: citations([], ['cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The Egyptian Suez case distinguishes an act of nationalization, diplomatic reporting, a leader’s public argument and later scholarship. It addresses economic sovereignty without equating national independence with internal democracy or making Nasserism representative of all Middle Eastern liberation politics.',
+            citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020']),
+          },
         ],
       },
       {
@@ -4193,6 +4314,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Gustavo Hessmann Dalaqua reads Cabral’s democratic thought as joining representation, popular participation and learning through criticism. His philosophical reconstruction connects freedom to the development of people’s capacities and resistance to imposed inferiority. This is an interpretation of political thought, not an independent finding that the PAIGC consistently realized those principles.',
             citations: citations([], ['dalaquaDemocraticFreedom2020']),
           },
+          {
+            type: 'paragraph',
+            text: 'In the English Suez decree, articles I–II transfer the company’s assets and obligations to the Egyptian state, provide for shareholder compensation, and place management in a legally distinct body attached to the commerce ministry. Presidential powers over its composition and budget coexist with separate accounts and audit. This is national public administration, not a text establishing worker ownership.',
+            citations: citations([], ['suezNationalizationDecree1956']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The U.S. embassy’s 26 July 1956 telegram reports Nasser connecting canal income with the High Dam. This records a reported development-finance justification, not independently verified revenue, a completed funding arrangement or proof of the project’s eventual benefits.',
+            citations: citations([], ['frusNasserAnnouncement1956']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In the separate 15 September speech excerpt, Nasser defended sovereignty and asserted a commitment to navigation while threatening armed resistance to attack. His argument therefore does not make anti-imperialism synonymous with pacifism. Promises, legal claims and assertions of unanimous support remain rhetoric requiring independent examination.',
+            citations: citations([], ['nasserCanalUsers1956']),
+          },
         ],
       },
       {
@@ -4228,6 +4364,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1945–1970s: formal decolonization, national liberation, and postcolonial state-building',
             text: 'After the Second World War, many colonies became independent through negotiations, mass movements, wars, constitutional settlements, or combinations of these. New governments confronted inherited borders, scarce administrative capacity, economic dependency, Cold War pressure, ethnic and regional divisions, and the need to transform colonial institutions. Independence could widen citizenship while also concentrating power in a ruling party, military, or new elite.',
             citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
+          },
+          {
+            period: '26 July and 15 September 1956: nationalization and subsequent public argument',
+            text: 'The July decree and embassy report concern nationalization; the September speech opposes the proposed Canal Users’ Association. These are distinct documents, not interchangeable versions of one speech.',
+            citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956']),
           },
           {
             period: 'November 1965 / September 1969: directive and party edition',
@@ -4307,6 +4448,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'It can be democratic, military-led, socialist, mixed-economy, or authoritarian; development and sovereignty are not evidence of one institutional regime.',
                 citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'kantPerpetualPeace'], ['sepColonialism', 'foreignPolicy', 'panAfricanism']),
               },
+              {
+                label: 'Nationalization versus popular control: the Suez case',
+                distinction: 'State ownership and administrative autonomy do not themselves establish workers’ control or political pluralism.',
+                relation: 'Salem’s interpretation keeps anti-colonial aspirations in tension with an elite-led project centered on military, state and capitalist power; it is not a timeless classification of Egypt.',
+                citations: citations([], ['suezNationalizationDecree1956', 'salemNasserHegemony2020']),
+              },
             ],
           },
         ],
@@ -4359,6 +4506,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'Former combatant whose testimony informs Patrícia Godinho Gomes’s research.',
                 caveat: 'Participant perspective mediated through an oral-history study, not a proxy for all women or every policy position.',
                 citations: citations([], ['gomesWomenLiberation']),
+              },
+              {
+                name: 'Gamal Abdel Nasser',
+                role: 'Egyptian president advancing a sovereignty claim in the September 1956 speech excerpt.',
+                caveat: 'A dated public argument, not a personal six-axis score or proof that every Egyptian endorsed his position.',
+                citations: citations([], ['nasserCanalUsers1956']),
               },
             ],
           },
@@ -4413,6 +4566,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'A document-level comparison for the Authority dimension, not a whole-polity rating.',
                 caveat: 'Party principles, members’ experiences and later government institutions need separate evidence. The six reference coordinates remain unchanged.',
                 citations: citations([], ['cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020']),
+              },
+              {
+                name: 'Suez Canal Company nationalization',
+                period: 'Egypt, July–September 1956 documents',
+                match: 'A bounded comparison of external sovereignty, public management and internal authority.',
+                caveat: 'The documents do not establish compensation payments, enforcement outcomes or a current-country match. Sectoral nationalization is not proof of an entirely collectivist economy.',
+                citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'salemNasserHegemony2020']),
               },
               {
                 name: 'Contemporary Indigenous and decolonial movements',
@@ -4478,12 +4638,27 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The organizational case raises questions rather than settling them: could members safely dissent, did consultation change decisions, and what protected people outside the party? A directive and a philosophical interpretation cannot answer those empirical questions by themselves. Neither supports a current-country classification or new numerical coordinates. Portuguese passages are independently paraphrased in English, not presented as quotations or authoritative translations.',
             citations: citations([], ['cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020']),
           },
+          {
+            type: 'paragraph',
+            text: 'Articles IV–V of the Suez decree retain employees while requiring permission to leave their work and prescribing imprisonment and loss of employment-related entitlements for breach. This exposes a distinction between national control and individual labor freedom. It is evidence of a coercive legal provision, not proof of how often it was enforced.',
+            citations: citations([], ['suezNationalizationDecree1956']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Sara Salem’s chapter summary reads Nasserism through the tension between mobilization against imperial domination and an elite-led postcolonial order. Her account offers a critical interpretation of consent and power, not a binary verdict that anti-colonial achievements either erase or are erased by domestic domination. The full chapter and alternative interpretations remain follow-up reading.',
+            citations: citations([], ['salemNasserHegemony2020']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'These English texts have different evidentiary limits. The decree’s original Arabic and gazette publication were not collated; the telegram is a U.S. diplomatic report; the speech is an edited excerpt with an unidentified translator; Salem was consulted at publisher-summary level. No promise about navigation, compensation, popular support or development is treated as an observed result. No present-day Egyptian position or new coordinate is inferred.',
+            citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism', 'nabucoAbolitionism', 'lockeSecondTreatise', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'spinozaPolitical', 'lockeLetterToleration', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020'],
+      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020', 'suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020'],
       editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
     },
     researchGaps: [
@@ -4496,6 +4671,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Verify the edition and transcription chain of Cabral’s 1970 address; read the complete Gomes and deGrassi articles and relevant agronomic records. Compare women’s retrospective testimony with contemporaneous UDEMU/PAIGC records, dissenting accounts, and post-independence outcomes before generalizing this Guinea-Bissau case.',
       'Extend the selected 1969 edition reading beyond section VIII; collate it with the earlier directive and later collected editions. Read the rest of Dalaqua’s article and contrasting interpretations before making claims about intellectual influence or a settled democratic theory.',
       'Compare local committee records, candidate selection, disciplinary practice, women’s participation, minority protections and independent organizing with participants’ accounts. Investigate wartime and post-independence institutions separately; neither a leader’s programme nor its philosophical interpretation establishes implementation.',
+      'Collate the 1956 Suez decree with its Arabic gazette edition and establish its publication/commencement date; compare the July announcement and September Canal Users’ Association speech with recordings and identified translations. Verify compensation, revenues, navigation and labor enforcement through independent records rather than official promises.',
+      'Read Salem’s full chapter and contrasting Egyptian and Arabic-language scholarship on Nasserism, workers, civil society and political exclusion. Compare nationalization with later economic policies without treating a single sector or leader as the whole anti-colonial family.',
     ],
   },
   communist: {
@@ -5439,6 +5616,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'In A Project of Anarchist Organisation (October 1927), Malatesta supports organization while rejecting executive control over members. He proposes voluntary federations, congresses offering recommendations, and administrative committees facilitating correspondence rather than governing. These are organizational proposals, not demonstrated safeguards against informal domination.',
             citations: citations([], ['malatestaOrganization1927']),
           },
+          {
+            type: 'paragraph',
+            text: 'Goldman’s 1924 Afterword, sections III–IV, distinguishes revolutionary emancipation from preserving party power. She argues that coercive methods shape the society they produce, so liberty cannot simply be postponed until after victory. She also acknowledges anarchists’ organizational weaknesses. These are her retrospective arguments, not a conclusive test of every socialist institution or a declaration of absolute nonviolence.',
+            citations: citations([], ['goldmanFurtherRussia1924']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In her 2018 LSE interview, Clare Hemmings interprets Goldman’s sexual politics as integral to revolution: dependence within marriage and unpaid domestic work help reproduce the wider order. On this reading, women’s emancipation cannot be deferred until economic transformation is complete. This is attributed scholarship, not proof that anarchist organizations achieved gender equality.',
+            citations: citations([], ['hemmingsGoldmanInterview2018']),
+          },
         ],
       },
       {
@@ -5469,6 +5656,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1917–1921: Russian Revolution and the Free Territory of Ukraine',
             text: 'The Makhnovist movement and associated rural communes developed under revolutionary, civil-war, and foreign-intervention conditions. It is often cited as an anarchist experiment in local self-management and peasant autonomy, but the territory was militarized, short-lived, internally diverse, and contested by multiple armies. Its evidence is therefore valuable but cannot establish a complete peaceful anarcho-communist society.',
             citations: citations(['bakuninStatism', 'kropotkinConquestBread'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+          },
+          {
+            period: '1923–1924: Goldman’s critique and a divided publication',
+            text: 'The publishers’ note in My Further Disillusionment in Russia explains that twelve chapters were missing from the 1923 volume and appeared separately in 1924. The Afterword belongs to this continuation; citing the earlier title alone can conceal the edition being used.',
+            citations: citations([], ['goldmanFurtherRussia1924']),
           },
           {
             period: '1927–1930: organization and the Platform debate',
@@ -5579,8 +5771,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'Emma Goldman',
                 role: 'Anarchist writer and organizer associated with anti-authoritarianism, feminism, sexual freedom, political dissent, and social revolution.',
-                caveat: 'Goldman’s political work cannot be reduced to one economic formula; she is included as a major anti-authoritarian and emancipatory figure within the wider tradition.',
-                citations: citations(['millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'openTextbook']),
+                caveat: 'Goldman’s political work cannot be reduced to one economic formula; she is included as a major anti-authoritarian and emancipatory figure within the wider tradition. Feminist reception is not evidence of feminist self-identification or a measured six-axis match.',
+                citations: citations([], ['goldmanFurtherRussia1924', 'hemmingsGoldman2018', 'hemmingsGoldmanInterview2018']),
               },
               {
                 name: 'Murray Bookchin',
@@ -5702,13 +5894,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Turcato’s transnational approach cautions against equating disappearance from national records with organizational collapse. Its press-centered perspective does not establish representative outcomes for decentralized economies.',
             citations: citations([], ['turcatoTransnationalAnarchism']),
           },
+          {
+            type: 'paragraph',
+            text: 'Hemmings’s introduction (pp. 4, 7–8) examines how affection for Goldman can shape interpretation and even diminish her standing as a political thinker. Her project is not a definitive biography. In the interview, she also warns that celebrating Goldman’s internationalism can obscure unresolved or racist elements in her writing. These tensions require examination, not a uniformly progressive personal score.',
+            citations: citations([], ['hemmingsGoldman2018', 'hemmingsGoldmanInterview2018']),
+          },
+          {
+            type: 'paragraph',
+            text: 'A further evidence boundary concerns Hemmings’s imaginative method. Her introduction (pp. 35–36) explicitly describes composing possible replies to Almeda Sperry where Goldman’s letters are absent from the archive she consulted. Such speculative correspondence is not recovered primary testimony. This entry uses her methodological explanation, not those imagined replies as factual evidence.',
+            citations: citations([], ['hemmingsGoldman2018']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['kropotkinConquestBread', 'kropotkinMutualAid', 'bakuninStatism', 'bookchinLibertarianMunicipalism', 'millOnLiberty', 'marxEngelsManifesto', 'leninStateRevolution', 'ostromGoverningCommons'],
-      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy', 'malatestaCommunismIndividualism1926', 'malatestaOrganization1927', 'makhnoMalatestaOrganizationExchange', 'turcatoTransnationalAnarchism', 'kropotkinBread1892French', 'kinnaMutualAid1995'],
-      editorialNote: 'The entry describes an anti-state communist family and uses a didactic composite score. It distinguishes anarcho-communism from anarcho-capitalism, Marxist-Leninist party-state communism, libertarian socialism, communalism, and historical collectives. No country is classified as an exact match.',
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cambridgeSpanishAnarchism', 'openTextbook', 'sepClimateJustice', 'sepReligionPolitics', 'foreignPolicy', 'malatestaCommunismIndividualism1926', 'malatestaOrganization1927', 'makhnoMalatestaOrganizationExchange', 'turcatoTransnationalAnarchism', 'kropotkinBread1892French', 'kinnaMutualAid1995', 'goldmanFurtherRussia1924', 'hemmingsGoldman2018', 'hemmingsGoldmanInterview2018'],
+      editorialNote: 'The entry describes an anti-state communist family and uses a didactic composite score. It distinguishes anarcho-communism from anarcho-capitalism, Marxist-Leninist party-state communism, libertarian socialism, communalism, and historical collectives. No country is classified as an exact match. The Goldman addition separates primary argument, scholarly interpretation and speculative reconstruction. Hemmings’s book and interview express one scholar’s approach, not independent corroboration; no scores are inferred from either.',
     },
     researchGaps: [
       'Add primary texts and specialist scholarship on Errico Malatesta, Emma Goldman, Voline, Nestor Makhno, Buenaventura Durruti, Federica Montseny, Diego Abad de Santillán, and anarchist women’s, labor, and anti-colonial organizing.',
@@ -5721,6 +5923,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the selected Turcato reading to the full article and its archival sources, with competing historiography and women’s, workers’, and migrants’ perspectives. Press-network continuity does not establish equal participation, economic outcomes, or successful protection of dissenters.',
       'Collate the selected 1892 French transcription with its facsimile and English editions; examine the whole book and Kropotkin’s later revisions before generalizing about access conditions. The scarcity and participation passages do not resolve empirical questions about disability, care work, dissent or effective exit.',
       'Extend the selected Kinna 1995 reading to the full article, its archival correspondence and later scholarship, including her 2016 study. Compare historical allocation and exclusion practices independently; neither a proposal nor its intellectual history establishes institutional performance.',
+      'Collate Goldman’s selected 1924 Afterword with print witnesses and the complete memoir of Russia, then compare her causal claims with independent histories and other participants’ accounts. This pass does not resolve the relative effects of war, party institutions, economic collapse or anarchist organization.',
+      'Read Goldman’s primary writings on women, suffrage and race alongside the full Hemmings study, competing interpretations and archival correspondence. Selected introductory pages and an interview do not establish representative movement practice; speculative letters must remain separate from surviving documents.',
     ],
   },
   conservative: {
@@ -5839,6 +6043,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Religion and hierarchy have a specific role in Guizot’s polemic. Chapter VII, pp. 70–72, pairs duties of assistance by the wealthy with obedience, work, and thrift among poorer people, presenting Christianity as an answer to socialist and communist demands. The entry reports his argument; it does not accept his condemnation of those movements as a neutral definition of them. Nor does this passage establish that Christianity necessarily requires class inequality or that every religious conservative favors clerical government. Moral authority, social hierarchy, constitutional design, and the franchise remain separate questions.',
             citations: citations([], ['guizotDemocracyFrance1849']),
           },
+          {
+            type: 'paragraph',
+            text: 'Burke’s speech on Fox’s East India Bill separates inherited powers from an unconditional right to exercise them. In its opening charter-and-trust argument, he treats governing authority and commercial privileges as responsibilities owed to those affected, not simply assets belonging to their holders. Parliament must answer for powers it delegated. Yet his threshold for displacing the Company’s administration is demanding: an important object, grave abuse, a habitual pattern, and inability to remedy it within the existing organization. This is an argument for justified institutional correction, not automatic preservation or abolition.',
+            citations: citations([], ['burkeFoxIndia1783']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Shared criticism of a monopoly need not imply a shared remedy. In his 2019 abstract, Gregory M. Collins contrasts Smith’s proposed termination of the Company’s charter with Burke’s effort to preserve it. He attributes the difference to Smith’s critique of the mercantile system and Burke’s constitutional and historical reasoning. This is an abstract-level interpretation, not a completed review of the article. It cautions against inferring a single economic program from agreement about misconduct.',
+            citations: citations([], ['collinsMercantile2019']),
+          },
         ],
       },
       {
@@ -5849,6 +6063,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Before the modern label: custom, order, and inherited authority',
             text: 'Arguments later called conservative draw on older reflections about law, custom, religion, family, hierarchy, kingship, civic virtue, and the dangers of faction. These sources should not be retroactively labelled conservative as though they shared a modern ideology. They are antecedents for questions about continuity and authority, not evidence of one transhistorical doctrine.',
             citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['sepConservatism', 'sepMedieval']),
+          },
+          {
+            period: '1 December 1783: Burke argues for reform of Company government',
+            text: 'The speech on Fox’s bill links the welfare of people governed in India to Britain’s responsibility for delegated imperial power. This is a proposal and an advocate’s case, not evidence that its promised protections were implemented. Read alongside the later conservative reception of Burke, it shows why institutional continuity and correction cannot be reduced to opposite labels.',
+            citations: citations([], ['burkeFoxIndia1783']),
           },
           {
             period: '1789–1815: revolution, counter-revolution, and the modern conservative response',
@@ -6097,13 +6316,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The liberal classification is itself disputed. In his 1993 intervention, pp. 133–139, Pierre Rosanvallon challenges the Doctrinaires’ fit with classical liberalism, emphasizing their distrust of social conflict, focus on executive power, and unresolved constitutional reasoning. He also insists on the circumstances of particular texts. This is an attributed interpretation from an uncorrected conference transcript, not a consensus verdict. Editorially, Guizot’s case therefore tests the boundary between liberalism and conservatism; it does not settle that boundary for every period or thinker.',
             citations: citations([], ['rosanvallonDoctrinaires1993']),
           },
+          {
+            type: 'paragraph',
+            text: 'Burke’s defense of Indian institutions does not establish equal respect for every people. In the same speech’s comparison with Europe, he invokes Indian religion, aristocracy, learning and commerce while disparaging Guaraní and Chiquito peoples. These are his hierarchical categories, not the encyclopedia’s descriptions. Sympathy for one colonized society therefore cannot stand as proof of a universal rejection of domination.',
+            citations: citations([], ['burkeFoxIndia1783']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Gabriel Pacal Mares’s 2025 discussion distinguishes competing uses of Burke. In his account, Pitts takes the criticism of imperial abuses seriously without treating it as opposition to every imperial relationship; O’Neill emphasizes hierarchy and Burke’s contrasting treatment of peoples beyond India. Mares warns against resolving the dispute into either heroic resistance or nothing but imperial apologetics. These positions are reported through his article, not from independent readings of those monographs. His selective survey also explicitly omits Richard Bourke. The editorial lesson is limited: opposition to abuse, acceptance of foreign rule, and support for intervention must be examined separately, not compressed into a single personal score.',
+            citations: citations([], ['maresGlobalBurke2025']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics', 'hobbesLeviathan', 'adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise', 'lockeLetterToleration', 'aquinasMoralPolitical', 'renanNation', 'morgenthauRealism', 'millOnLiberty', 'wollstonecraftRights'],
-      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook', 'guizotDemocracyFrance1849', 'rosanvallonDoctrinaires1993', 'englertGuizotCapacity2024', 'assembleeFebruary1848'],
-      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution. The Guizot case separates primary polemic, scholarly interpretation, and institutional history; it does not revise the six scores. The English translation remains uncollated, and the 2024 chapter is represented only by its explicitly identified publisher abstract.',
+      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook', 'guizotDemocracyFrance1849', 'rosanvallonDoctrinaires1993', 'englertGuizotCapacity2024', 'assembleeFebruary1848', 'burkeFoxIndia1783', 'collinsMercantile2019', 'maresGlobalBurke2025'],
+      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution. The Guizot case separates primary polemic, scholarly interpretation, and institutional history; it does not revise the six scores. The English translation remains uncollated, and the 2024 chapter is represented only by its explicitly identified publisher abstract. The Burke addition distinguishes a selected primary transcription, Collins’s abstract, and Mares’s historiographical analysis. It supplies no new person/country match, changes no dimension interpretation, and republishes no source wording.',
     },
     researchGaps: [
       'Add French-language scholarship on de Maistre, Chateaubriand, Tocqueville, liberal conservatism, reaction, republicanism, empire, and the different histories of French right-wing traditions.',
@@ -6114,6 +6343,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add comparative work on gradual reform, constitutional safeguards, emergency powers, conservative populism, market globalization, protectionism, climate policy, technology, and the conditions under which prudence becomes obstruction or authoritarianism.',
       'Collate the 1849 English Guizot edition with the French original and identify its translator; examine earlier representative-government writings and the electoral laws and parliamentary debates separately from the post-1848 polemic.',
       'Review the full Englert chapter and competing scholarship before extending the capacity argument. The Guizot case and Rosanvallon intervention only partly address the existing French-language gap; they do not complete coverage of reaction, empire, citizenship exclusions, or all French conservative traditions.',
+      'Collate the 1783 speech with a scholarly edition and contemporary parliamentary records; examine the bill, its fate, and the Hastings proceedings separately. An argument about trusteeship is not evidence of successful reform or consent by those governed.',
+      'Read Collins in full and compare Mares’s account directly with Pitts, O’Neill, Agnani, Hampsher-Monk and Richard Bourke. Add South Asian scholarship and affected communities’ histories before extending the imperial case; this pass does not complete the colonialism, race or multilingual research gaps.',
     ],
   },
   'civic-nationalist': {
@@ -6984,6 +7215,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Monarchism also should not be classified automatically as right-wing, religious, nationalist, or anti-democratic. Royalists have defended hierarchy, divine right, empire, and inherited privilege, but constitutional monarchists have also supported representative government, civil liberties, social insurance, and democratic continuity. This entry therefore scores the royal principle separately from the economic, social, identity, religious, and foreign-policy choices made by a particular movement or state.',
             citations: citations(['burkeReflections', 'nabucoAbolitionism', 'bagehotEnglishConstitution'], ['bpbMonarchy', 'journalDemocraticMonarchies', 'vdem', 'sepReligionPolitics']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Morocco’s 2011 text and its scholarly reception provide a bounded non-European comparison. A constitution’s parliamentary self-description is not by itself evidence that the crown has become ceremonial. This case concerns institutional design and interpretation, not a current-country match or an assessment of all African or Muslim monarchies.',
+            citations: citations([], ['moroccoConstitutionFrench2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']),
+          },
         ],
       },
       {
@@ -7017,6 +7253,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'France’s 1791 constitution located sovereignty in the nation and treated both king and legislature as representatives (Title III, articles 1–4). The king could not dissolve the legislature (chapter I, article 5), but appointed and dismissed ministers; royal orders required countersignature, and ministers remained responsible despite royal commands (chapter II, section IV, articles 1, 4–6). These are legal provisions, not evidence of effective accountability.',
+            citations: citations([], ['franceConstitution1791']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Royal refusal of legislative consent was suspensive: the same decree had to return unchanged from each of the next two legislatures before consent was presumed. It could not be resubmitted by the original legislature. Specified acts, including ministerial-responsibility proceedings, did not require sanction (Title III, chapter III, section III, articles 1–8). This was neither a permanent veto nor a merely ceremonial signature.',
+            citations: citations([], ['franceConstitution1791']),
+          },
+          {
+            type: 'paragraph',
             text: 'Brazil’s 1824 charter assigned the emperor both moderating power and executive leadership through ministers (articles 98–102). He could appoint and dismiss ministers and dissolve the Chamber under the stated condition of state necessity, immediately calling a replacement. This was constitutional authority beyond ceremony; the provisions alone do not establish how freely each power was exercised.',
             citations: citations([], ['brazilConstitution1824']),
           },
@@ -7024,6 +7270,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'evidence-note',
             text: 'The same charter established Catholicism while permitting other religions’ private worship without an outward temple form (article 5). Non-Catholics were ineligible as deputies (95.III), and freed people were excluded from the higher electoral tier (94.II), not categorically from all parish voting. These distinguish religious establishment, political eligibility, and citizenship: none is captured adequately by the word “monarchy” alone.',
             citations: citations([], ['brazilConstitution1824']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Morocco’s articles 41–42 distinguish the king’s religious and head-of-state functions without placing them in separate officeholders. Article 41 assigns royal leadership of the Ulema council and exclusive religious prerogatives while guaranteeing worship. Separately enumerating these functions does not establish secular separation or actual freedom of conscience.',
+            citations: citations([], ['moroccoConstitutionFrench2011']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Article 47 links appointment of the head of government to the party finishing first in lower-house elections; article 88 requires confidence from an absolute majority of that chamber’s members. Articles 48–49 nevertheless retain a royal-chaired Council of Ministers for strategic matters. It is distinct from the head-of-government-chaired Council of Government in article 92; delegation of chairing a specified ministerial meeting is possible. Neither “the king appoints” nor “parliament gives confidence” alone describes the arrangement.',
+            citations: citations([], ['constituteMorocco2011']),
+          },
+          {
+            type: 'paragraph',
+            text: 'El Messaoudi’s sections 2–4 emphasize strengthened governmental standing through investiture, shared appointment procedures and institutional regulation. Her conclusion also makes political actors’ use of the framework important. This is a legal interpretation of reform, not evidence that every constitutional possibility became effective accountability.',
+            citations: citations([], ['elMessaoudiGovernment2015']),
           },
         ],
       },
@@ -7057,6 +7318,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['lockeSecondTreatise', 'burkeReflections'], ['perseeFrenchConstitutionalMonarchy', 'bpbMonarchy', 'sepNationalism']),
           },
           {
+            period: '15 July 1791: Barnave defends royal inviolability',
+            text: 'Barnave presented the king’s personal immunity as a safeguard of liberty and stability. He paired royal resistance to legislation with accountability of executive agents and constitutionally specified grounds for losing the crown. This is a participant’s defense of constitutional monarchy before the final September text, not an impartial account of how the arrangement worked or an endorsement of every action by Louis XVI.',
+            citations: citations([], ['barnaveRoyalInviolability1791']),
+          },
+          {
             period: 'Nineteenth century: national, imperial, and constitutional monarchies',
             text: 'Monarchies adapted to nationalism, industrialization, mass politics, empire, and expanding but unequal citizenship. Some crowns became symbols above party politics while elected parliaments and cabinets gained practical power; others preserved executive authority, aristocratic privilege, colonial rule, or military command. Walter Bagehot’s analysis of the British constitution is a key historical account of the distinction between ceremonial and governing functions.',
             citations: citations(['bagehotEnglishConstitution', 'burkeReflections', 'nabucoAbolitionism'], ['oxfordMonarchyConstitution', 'journalDemocraticMonarchies', 'bpbMonarchy', 'sepColonialism']),
@@ -7070,6 +7336,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Twentieth century: abolition, adaptation, and decolonization',
             text: 'Wars, revolutions, republican movements, anticolonial struggles, and democratic reform abolished many dynasties or transformed them into constitutional offices. Other monarchies survived by renegotiating legitimacy through constitutions, social provision, national identity, religion, or controlled political reform. Postcolonial histories require special care because a crown could represent local continuity, colonial subordination, or both at different times.',
             citations: citations(['nabucoAbolitionism', 'bagehotEnglishConstitution', 'burkeReflections'], ['oxfordMonarchyConstitution', 'sepColonialism', 'journalDemocraticMonarchies', 'openTextbook']),
+          },
+          {
+            period: 'July 2011: Morocco’s referendum, promulgation and publication',
+            text: 'The promulgating document records the referendum on 1 July; the dahir is dated 29 July and the official database lists Gazette publication on 30 July. These identify different stages, not evidence of voter motivation, electoral fairness or completed institutional implementation.',
+            citations: citations([], ['moroccoConstitutionFrench2011']),
           },
           {
             period: 'Contemporary parliamentary and executive monarchies',
@@ -7114,6 +7385,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Christian Edward Cyril Lynch argues that Crown advisers adapted Benjamin Constant’s vocabulary of a neutral arbiter to defend substantial royal prerogatives against the constituent assembly.',
                 relation: 'This is an attributed interpretation of constitutional borrowing, not proof that the Brazilian arrangement reproduced Constant unchanged or that constitutional limits were meaningless. Original French texts and competing readings still need direct comparison.',
                 citations: citations([], ['lynchModeratingPower2005']),
+              },
+              {
+                label: 'Royal inviolability versus executive accountability',
+                distinction: 'Barnave argued that independent royal sanction and responsibility for executive acts belonged to different constitutional functions.',
+                relation: 'His defense illustrates a constitutional-monarchist rationale for a protected crown, not proof that ministerial responsibility produced parliamentary government. The July speech and final September provisions must be read separately.',
+                citations: citations([], ['barnaveRoyalInviolability1791', 'franceConstitution1791']),
+              },
+              {
+                label: 'Morocco 2011: parliamentary government versus parliamentary monarchy',
+                distinction: 'Ruiz Ruiz’s abstract distinguishes a more parliamentary government from a monarch reduced to non-governing office, emphasizing remaining royal powers. El Messaoudi instead foregrounds gains in the government’s constitutional position.',
+                relation: 'These different emphases invite examination of both reform and retained power; they are not proof that either the constitution changed nothing or royal authority disappeared. Only Ruiz Ruiz’s abstract was reviewed.',
+                citations: citations([], ['ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']),
               },
               {
                 label: 'Elective or dynastically selected monarchy',
@@ -7227,6 +7510,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['bagehotEnglishConstitution', 'nabucoAbolitionism'], ['journalDemocraticMonarchies', 'ukParliamentCrown', 'oxfordConstitutionalMonarchy', 'vdem']),
               },
               {
+                name: 'Morocco’s constitutional architecture and early scholarly debate',
+                period: '2011 text; interpretations published in 2014–2015',
+                match: 'A comparison of dynastic office, religious authority and parliamentary government, not a numerical ideological match.',
+                caveat: 'Constitutional powers, scholarly assessments and later practice require separate evidence. This case does not classify present-day Morocco or its citizens.',
+                citations: citations([], ['moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']),
+              },
+              {
                 name: 'Executive, sacred, and postcolonial monarchies',
                 period: 'Contemporary and twentieth century; region- and state-specific',
                 match: 'Some monarchies retain meaningful executive, religious, military, economic, or dynastic authority, while others use the crown as a postcolonial or national symbol amid constitutional reform.',
@@ -7300,13 +7590,33 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Ferraz also investigates electoral rules and cabinet control of budget amendments in 1853–1860. His Table 7 and note 38 disclose a proxy for 1858 and no index for 1859 because no plenary budget decision occurred. Those limits matter: the study is not a complete annual measurement or a basis for recalibrating this site’s six axes (pp. 87–89).',
             citations: citations([], ['ferrazImperialCabinets2017']),
           },
+          {
+            type: 'paragraph',
+            text: 'Constitutional representation did not imply universal participation: the 1791 active-citizen rules included tax and non-domestic-service conditions, while succession excluded women and their descendants (Title III, chapter I, section II, article 2; chapter II, section I, article 1). Institutional limits on kingship and equal access to political power are separate questions.',
+            citations: citations([], ['franceConstitution1791']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Caiani’s monograph, as summarized in its University of Kent abstract, argues that royal symbolism, domestic routines and household organization contributed to alienation from the constitutional monarchy. This directs attention beyond written rules and foreign plots. Only the abstract was reviewed: it does not establish the relative weight of those causes or demonstrate that collapse was inevitable.',
+            citations: citations([], ['caianiLouisXVI2012Abstract']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Moroccan text juxtaposes equal-rights language in article 19 with male-line dynastic succession in article 43. Article 175 protects the monarchical form and Muslim religion from revision, alongside democratic choice and established fundamental rights. These are distinct constitutional commitments; their interaction needs interpretation and implementation evidence, not an inference that all public offices are equally accessible.',
+            citations: citations([], ['moroccoConstitutionFrench2011', 'constituteMorocco2011']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Source versions also need scrutiny: article 44’s advisory council continues until age twenty in the official French transcription but eighteen in the consulted English translation. The Arabic and Gazette versions were not collated, so the discrepancy is flagged rather than resolved. English prose here is original synthesis, not a certified translation. No six-axis coordinate or present-day enforcement finding follows from these texts.',
+            citations: citations([], ['moroccoConstitutionFrench2011', 'constituteMorocco2011']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
-      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017'],
-      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked, not every cited archival record or book.',
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract'],
+      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; no PDF visual review or full-monograph reading is claimed for that addition.',
     },
     researchGaps: [
       'Add French-language scholarship on divine-right monarchy, the French constitutional monarchies of 1791–1792, the Restoration, the July Monarchy, the Second Empire, royalism, republicanism, colonial monarchy, and the constitutional doctrines of the nineteenth century.',
@@ -7319,6 +7629,10 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the Brazilian case through original parliamentary debates, the 1834 and 1840 constitutional changes, successive electoral laws, slavery and abolition, and local religious and citizenship practice. The 1824 charter and 1847 decree do not establish uniform implementation throughout 1822–1889.',
       'Review Ferraz’s full cabinet-by-cabinet analysis and independently examine the coding, budget evidence, and competing historiography. The current review covers printed pages 63–64, 68–69, and 87–89; French editions of Constant and the original sources quoted by Lynch remain further work.',
       'Reconcile the existing article/card differences through an explicit canonical-profile review: social −48 versus −45, authority +52 versus +62, and identity −42 versus −62. This historical pass preserves both records and does not invent replacement scores.',
+      'Collate the Moroccan French and English constitutional texts with the Arabic and original Gazette editions, especially article 44’s conflicting advisory-council endpoint. Review the full Ruiz Ruiz article and additional French- and Arabic-language scholarship; the present comparison does not settle the reform’s competing interpretations.',
+      'Test Morocco’s formal allocation of powers against dated appointment records, cabinet and parliamentary proceedings, organic laws, judgments and independent accounts from opposition, women and religious minorities. Extend to emergency powers and amendment practice without assuming that institutional promises establish outcomes or a current-country score.',
+      'Collate the 1791 French constitution and Barnave’s July speech with original editions and parliamentary records. The speech page’s modern headnote places June dates in a July sequence; do not reuse that chronology without checking it. Study actual veto episodes, ministerial prosecutions, popular petitions, women’s claims and colonial exclusions before inferring implementation from these selected provisions.',
+      'Read Caiani’s complete introduction and monograph, and compare French-language specialist interpretations of 1791–1792. Only the Kent abstract was accessible in this pass; the publisher PDF and attempted OpenEdition articles were unavailable. No full-text, archival or PDF visual review is claimed, and the older French-scholarship gap remains open.',
     ],
   },
   theocratic: {
@@ -7828,6 +8142,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'A crucial boundary is constitutional pluralism. A party may be inspired by Christianity while accepting alternation in office, religious freedom, non-confessional citizenship, judicial review, and the right of other parties to govern. When religious authorities receive non-negotiable supremacy over government, dissent, or equal citizenship, the classification moves toward theocracy or confessional authoritarianism instead.',
             citations: citations(['maritainIntegralHumanism', 'lockeLetterToleration'], ['cambridgeChristianDemocracy', 'oxfordChristianDemocracy', 'sepReligionPolitics', 'vdem']),
           },
+          {
+            type: 'paragraph',
+            text: 'William Sweet’s account of Maritain distinguishes agreement on basic rights from agreement about their ultimate foundation. Maritain retained a natural-law justification while defending popular political authority and freedom of conscience. Christian inspiration therefore did not, in this argument, require every citizen to share one philosophical explanation of rights (section 3.5).',
+            citations: citations([], ['sweetMaritainPolitical2019']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Gaudium et spes distinguishes citizens acting from Christian conviction from actions taken in the Church’s name. Section 76 affirms institutional autonomy alongside cooperation and continued religious moral criticism of politics; section 75 recognizes legitimate political disagreement. These are Catholic doctrinal commitments, not evidence that any particular party maintained independence from church authorities.',
+            citations: citations([], ['vaticanGaudiumSpesFrench1965']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Dignitatis humanae grounds protection against religious coercion in personal dignity, including for those who do not fulfil its stated duty to seek religious truth (section 2). Section 6 requires religious freedom and civic equality even where one community receives special recognition. This distinguishes protection of persons from declaring all religious beliefs equally true; it does not mandate one church–state arrangement.',
+            citations: citations([], ['vaticanReligiousFreedomFrench']),
+          },
         ],
       },
       {
@@ -7873,6 +8202,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'European integration: reconciliation, shared institutions, and contested memory',
             text: 'Christian-democratic statesmen were important advocates of a European order built around reconciliation, shared institutions, and interdependence. Schuman’s proposal for shared coal and steel administration illustrates the preference for binding former rivals into common institutions. European integration was never exclusively Christian-democratic; secular, liberal, socialist, federalist, and economic actors also shaped it.',
             citations: citations(['maritainIntegralHumanism', 'kantPerpetualPeace'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope', 'oxfordChristianDemocratDecade']),
+          },
+          {
+            period: '7 December 1965: Vatican II and political-religious pluralism',
+            text: 'Gaudium et spes and Dignitatis humanae were promulgated on this date. They are later doctrinal comparison points, not the origin of already-existing postwar Christian-democratic parties or proof of their implementation.',
+            citations: citations([], ['vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench']),
           },
           {
             period: 'Late twentieth century–present: secularization, party transformation, and global variants',
@@ -7957,7 +8291,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Jacques Maritain',
                 role: 'French Catholic philosopher associated with personalism, human dignity, human rights, and democratic constitutionalism.',
                 caveat: 'Maritain’s philosophy is an intellectual resource for Christian democracy, not a complete party programme and not proof that every Christian-democratic movement followed his pluralist commitments.',
-                citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy']),
+                citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy', 'sweetMaritainPolitical2019']),
               },
               {
                 name: 'Konrad Adenauer',
@@ -8064,6 +8398,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Sweet also identifies a difficulty: Maritain offered limited institutional detail for realizing his pluralist polity, and its capacity to combine religious diversity with unity remains debated. Philosophical compatibility is therefore not a demonstrated model of equal participation (section 3.5).',
+            citations: citations([], ['sweetMaritainPolitical2019']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'These sources illuminate different levels: a philosopher’s argument, church teaching and possible standards for judging political conduct. They do not establish a causal line from Maritain to every conciliar provision or from conciliar language to party behavior. French doctrinal texts and English scholarship are summarized, not reproduced or presented as verified translations; no six-axis coordinate changes follow.',
+            citations: citations([], ['sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench']),
+          },
+          {
+            type: 'paragraph',
             text: 'A second criticism concerns subsidiarity and unequal private power. Families, churches, schools, unions, firms, and local associations can protect pluralism and participation, but can also reproduce hierarchy, exclusion, gender inequality, or private domination. If a lower-level institution cannot protect equal rights, subsidiarity cannot be a blanket argument against public remedies, universal services, or independent oversight.',
             citations: citations(['aquinasMoralPolitical', 'maritainIntegralHumanism'], ['vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'comparativeChristianDemocracy', 'vdem']),
           },
@@ -8092,7 +8436,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections', 'keynesGeneralTheory', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979'],
+      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979', 'sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench'],
       editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
     },
     researchGaps: [
@@ -8106,6 +8450,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the Ahlen and Düsseldorf comparison to original printings, the unabridged 1949 programme, commission records, voting behavior, and implementation. Check Seidel’s digitized text and footnote alignment against the original issue; treat her cited sources as leads until independently reviewed.',
       'Test the competing continuity and rupture interpretations with newer scholarship, labor and business records, and evidence of welfare distribution and exclusion. The two German programmes do not establish a universal Christian-democratic trajectory or current-country classification.',
       'Reconcile the entry’s identity coordinate of -20 with the main card’s -40 through an explicit editorial decision. This discrepancy is not a polarity reversal; neither magnitude is newly validated by the programme research, and both were left unchanged in this pass.',
+      'Independently read and compare the relevant passages of Maritain’s Humanisme intégral and Man and the State in identified French and English editions, alongside critics of his pluralism and common good. Sweet’s selected synthesis does not substitute for primary-text or critic-by-critic verification.',
+      'Collate the selected French conciliar provisions with the authoritative Latin and study their drafting history and dated party and legal practice, particularly minority and non-believer protections. Neither shared language nor chronology alone establishes Maritain’s influence or implementation; Protestant and Orthodox comparisons remain necessary.',
     ],
   },
   'religious-socialist': {
@@ -9012,6 +9358,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['lijphartPatternsDemocracy'], ['lijphartConsensusDemocracy', 'oxfordPoliticalCentrism', 'sepDemocracy']),
           },
           {
+            type: 'paragraph',
+            text: 'Under Ireland’s July 2016 mandate, 99 referendum-eligible citizens and a government-appointed chair were to consider specified questions, assisted by experts. Recommendations went to parliament; on abortion, a joint committee was to consider them. Decisions used majority voting, not unanimity, and the government owed a response—not automatic implementation.',
+            citations: citations([], ['irishAssemblyTerms2016']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Assembly’s selection account describes geographic sampling and demographic quotas, voluntary participation, replacements and exclusion of issue-advocacy representatives from membership. Broad demographic balance was the stated aim; it did not establish that participants mirrored every public attitude. Recruitment rules and who actually participates therefore require separate scrutiny.',
+            citations: citations([], ['irishAssemblySelection2016', 'carolanGlennonConsensus2024', 'doyleWalshRejoinder2024']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Suiter, Farrell, Harris and Murphy compared public speech on abortion in the Assembly and a parliamentary committee using word-frequency measures of cognitive complexity. They report more integrative discussion in the Assembly. This supports a bounded argument about deliberative conditions, not citizen infallibility or ideological moderation.',
+            citations: citations([], ['suiterEpistemicDeliberation2021']),
+          },
+          {
             type: 'evidence-note',
             text: 'This profile is deliberately didactic and near the midpoint on several dimensions. It does not claim that moderation is always good, that extremes are always bad, or that evidence eliminates political judgment. A democratic pragmatic orientation still needs substantive commitments to equal citizenship, rights, accountability, social repair, and the ability of citizens to reject the policy consensus.',
             citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepPragmatism', 'sepDemocracy', 'coeDemocraticGovernance', 'oxfordPoliticalCentrism']),
@@ -9061,6 +9422,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1990s–2010s: technocracy, coalition governance, and democratic distrust',
             text: 'Centrist parties and institutions increasingly relied on experts, independent regulators, coalition bargaining, evidence-based administration, and global economic coordination. These tools could stabilize policy and reduce winner-take-all conflict, but they also created distance from citizens, weakened mass-party organization, and narrowed the range of alternatives considered governable. The financial crisis and austerity debates intensified questions about who bears the costs of pragmatic compromise.',
             citations: citations(['giddensThirdWay', 'lijphartPatternsDemocracy'], ['oxfordThirdWayConversion', 'lijphartConsensusDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance']),
+          },
+          {
+            period: '2016–2018: Irish deliberative experiment',
+            text: 'The July 2016 mandate established a recommendation-making body on specified constitutional and policy questions. Its place here illustrates participatory institutional design, not Ireland’s classification as a centrist country.',
+            citations: citations([], ['irishAssemblyTerms2016']),
           },
           {
             period: 'Present: polarization, new coalitions, and the contested centre',
@@ -9224,6 +9590,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Evidence does not determine values or distribution by itself. Expertise must be transparent, contestable, accessible, and accountable to affected communities.',
                 citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepPragmatism', 'sepDemocracy', 'coeDemocraticGovernance']),
               },
+              {
+                name: 'Ireland’s Citizens’ Assembly',
+                period: '2016–2018; procedural comparison only',
+                match: 'Citizens’ recommendations, expert advice and parliamentary consideration had distinct roles.',
+                caveat: 'Neither the members nor their recommendations inherit this entry’s near-midpoint scores. Deliberation can support substantial change, retain disagreement, or produce recommendations that public authorities reject.',
+                citations: citations([], ['irishAssemblyTerms2016', 'carolanGlennonConsensus2024', 'doyleWalshRejoinder2024']),
+              },
             ],
           },
         ],
@@ -9268,6 +9641,26 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The speech study excludes private roundtables and includes only people speaking in plenary; facilitators sometimes spoke for participants (note 5). Its language-based proxies do not establish equal participation, correct conclusions or a causal effect on voters. The authors also call for testing measurement reliability across contexts.',
+            citations: citations([], ['suiterEpistemicDeliberation2021']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In its 21 February 2018 statement, the Assembly reported that seven replacements had been recruited outside the agreed door-to-door method through a recruiter’s contacts. They attended only the January 2018 referendum-procedure meeting, not the earlier abortion meetings. Their removal left the majority position indeterminate for four questions. This documents a safeguard failure and institutional response; the contractor’s claim that it was isolated is not independently verified here.',
+            citations: citations([], ['irishAssemblyRecruitment2018']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Carolan and Glennon interpret the abortion case as clarifying an existing desire for constitutional change into specific legislative proposals, rather than creating that desire (sections 1–2). Doyle and Walsh reply that agreement on a specific proposal across legislators and voters is itself part of building the required constitutional consensus (section 2). These are competing accounts of influence, not evidence that deliberation necessarily moves politics toward a numerical centre.',
+            citations: citations([], ['carolanGlennonConsensus2024', 'doyleWalshRejoinder2024']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The English institutional pages establish reported rules and events; the articles offer measurements or interpretations with different limits. Doyle and Walsh disclose that they advised the Assembly and write personally, not on its behalf. No recruitment audit, transcript dataset, polling series or Irish-language version was independently checked. No direct quotations, new country scores or questionnaire recalibration follow.',
+            citations: citations([], ['irishAssemblySelection2016', 'irishAssemblyRecruitment2018', 'suiterEpistemicDeliberation2021', 'carolanGlennonConsensus2024', 'doyleWalshRejoinder2024']),
+          },
+          {
+            type: 'paragraph',
             text: 'A fourth criticism concerns Third Way and market-centre projects. Reconciliation between markets and social protection can be constructive, but market-compatible modernization may weaken labor bargaining, privatize public goods, or turn equality into opportunity rhetoric without redistribution. The historical record must distinguish social investment from austerity, public regulation from deregulation, and broad citizenship from consumer-oriented policy.',
             citations: citations(['giddensThirdWay', 'keynesGeneralTheory'], ['wileyThirdWayGiddens', 'oxfordThirdWayConversion', 'oxfordPoliticalCentrism']),
           },
@@ -9291,7 +9684,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['lijphartPatternsDemocracy', 'giddensThirdWay', 'millOnLiberty', 'keynesGeneralTheory', 'tocquevilleDemocracy', 'kantPerpetualPeace', 'lockeLetterToleration', 'morgenthauRealism', 'lockeSecondTreatise'],
-      researchSourceIds: ['oxfordPoliticalCentrism', 'lijphartConsensusDemocracy', 'oxfordThirdWayConversion', 'wileyThirdWayGiddens', 'sepPragmatism', 'sepDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance', 'foreignPolicy', 'sepLiberalism', 'vdem', 'sepReligionPolitics', 'blairSchroeder1999Excerpt', 'wiesenthalThirdWay2010', 'swissCollegialConsensus', 'gallusJesseThirdWays2002'],
+      researchSourceIds: ['oxfordPoliticalCentrism', 'lijphartConsensusDemocracy', 'oxfordThirdWayConversion', 'wileyThirdWayGiddens', 'sepPragmatism', 'sepDemocracy', 'oxfordPluralismConsensus', 'coeDemocraticGovernance', 'foreignPolicy', 'sepLiberalism', 'vdem', 'sepReligionPolitics', 'blairSchroeder1999Excerpt', 'wiesenthalThirdWay2010', 'swissCollegialConsensus', 'gallusJesseThirdWays2002', 'irishAssemblyTerms2016', 'irishAssemblySelection2016', 'irishAssemblyRecruitment2018', 'suiterEpistemicDeliberation2021', 'carolanGlennonConsensus2024', 'doyleWalshRejoinder2024'],
       editorialNote: 'Centrism is context-dependent positioning, not a universal midpoint or moral superiority. The entry distinguishes programme commitments, institutional descriptions, scholarly interpretations, and illustrative matching. The centre-left Third Way alias is qualified because the phrase has other historical uses. All six coordinates remain unchanged and match the existing reference card; they are not research-derived measurements of the examples.',
     },
     researchGaps: [
@@ -9305,6 +9698,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Obtain the complete Blair–Schröder declaration and parallel-language provenance; compare later laws and distributional studies before attributing welfare or employment outcomes to its promises. Extend the Wiesenthal excerpt review to the original essay and contrasting interpretations.',
       'Compare Swiss official descriptions with independent institutional research and records of dissent, participation, responsibility, and inclusion. Check linked constitutional provisions separately; do not convert executive power-sharing into a whole-country centrist rating.',
       'Extend the selected Gallus–Jesse reading to other historical uses and their primary works. Preserve distinct meanings of “third way” rather than merging every use into this centre-left reference profile.',
+      'Audit the Irish recruitment methodology, contractor report, attrition, participation supports and issue-advocacy exclusions against original records and independent research. Distinguish demographic balance, initial attitudes, speaking opportunities and the wider public; do not project January 2018’s irregularity onto earlier topics.',
+      'Read the complete Carolan–Glennon argument and the earlier Doyle–Walsh studies alongside competing scholarship and primary parliamentary records. Reproduce the speech study where permitted, test its word-frequency proxies and compare polling questions before attributing public opinion or policy change to deliberation; the broader multilingual and non-European research gaps remain open.',
     ],
   },
   'liberal-constitutionalist': {
@@ -9403,6 +9798,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016']),
           },
           {
+            type: 'paragraph',
+            text: 'South Africa’s post-apartheid constitutional order supplies a different case of rights-constrained government. Chapter 2 binds all organs of state, protects equality, conscience, political participation, labour and socioeconomic rights, permits justified limitations, and directs courts to consider international law and the values of an open democratic society. These provisions show a constitutional design that joins liberal restraints with transformative and social-rights commitments; they do not by themselves prove equal access or effective implementation.',
+            citations: citations([], ['southAfricaConstitution1996Rights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Khosla and Tushnet use South African socioeconomic-rights litigation to question a simple opposition between courts that limit state power and governments that need capacity to act. Their account highlights dialogic or weak-form review and the state capacity needed for reasonable programmes. This broadens constitutionalism’s problem: rights protection requires both restraints on coercion and public institutions capable of delivering lawful remedies and services.',
+            citations: citations([], ['khoslaTushnetStateCapacity2022']),
+          },
+          {
             type: 'evidence-note',
             text: 'The public score is deliberately didactic. It places this label near market-oriented, socially liberty-protecting, strongly anti-arbitrary-power, civic, legally restrained, and non-confessional positions. It does not claim that all liberal constitutionalists favor small government, progressive cultural change, international intervention, judicial supremacy, or one model of secularism.',
             citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'constantLibertyModerns'], ['oxfordLiberalismResearch', 'sepConstitutionalism', 'sepLiberalism', 'foreignPolicy']),
@@ -9437,6 +9842,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century — civil liberty, representative reform, and the limits of liberal citizenship',
             text: 'Liberal constitutionalism developed alongside parliamentary reform, free speech campaigns, commercial society, expanding education, abolitionist and feminist arguments, and new theories of representative government. Mill defended individuality and open discussion, while Wollstonecraft exposed the contradiction between universal rights language and women’s subordination. At the same time, liberal constitutionalism was repeatedly entangled with empire, racial hierarchy, property power, and claims that some peoples were not ready for self-government.',
             citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepMill', 'sepLiberalism', 'colonialLiberalismExclusion', 'sepColonialism']),
+          },
+          {
+            period: '1995–1996: South African constitutional transition and rights review',
+            text: 'The South African Constitutional Court’s official history identifies S v Makwanyane as its first hearing and reports that, on 6 June 1995, the Court unanimously found the death penalty unconstitutional under the interim Constitution’s protections for life, dignity, and freedom from cruel punishment. The case illustrates transitional rights adjudication and judicial review; the full judgment and later enforcement are not claimed here.',
+            citations: citations([], ['southAfricaMakwanyaneCourt1995', 'southAfricaConstitution1996Rights']),
           },
           {
             period: '1824 — Brazilian rights guarantees and monarchical authority',
@@ -9554,6 +9964,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Brazil’s 1824 text distinguishes status from participation: article 6 includes Brazilian-born freed people as citizens, while article 94 excludes freed people from second-stage electors; articles 92, 94, and 95 impose graduated income qualifications. Article 5 retains Catholic establishment and limits other worship to private settings; article 95 excludes non-Catholics from the Chamber of Deputies. Constitutional membership did not mean equal political or religious rights.',
             citations: citations([], ['brazilConstitution1824']),
           },
+          {
+            type: 'paragraph',
+            text: 'South Africa’s 1996 Bill of Rights is a documented example of post-authoritarian constitutional transformation: rights apply to all law and bind the legislature, executive, judiciary and state organs; equality allows measures to advance people disadvantaged by unfair discrimination; and section 36 requires justified limitations. The official text is evidence of design, not a whole-country rating or a substitute for implementation research.',
+            citations: citations([], ['southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995']),
+          },
         ],
       },
       {
@@ -9597,6 +10012,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The South African case also qualifies the assumption that constitutionalism is only a negative restraint on government. Khosla and Tushnet’s comparative account emphasizes that courts may shape state capacity through engagement, incentives, and dialogic remedies, while the Constitution’s socioeconomic-rights language leaves implementation dependent on reasonable measures and available resources. Constitutional rights can therefore generate both judicial limits and institutional obligations without guaranteeing delivery.',
+            citations: citations([], ['khoslaTushnetStateCapacity2022', 'southAfricaConstitution1996Rights']),
+          },
+          {
+            type: 'paragraph',
             text: 'Marcelo Cheche Galves and Yuri Costa (2022), in their discussion of the 1824 charter, connect property-based political qualifications and the treatment of enslaved people as property to the reproduction of slaveholding hierarchies. They also emphasize the tension between liberal guarantees and strengthened royal power. Their social-history emphasis complements, without resolving, Lynch’s distinct question about the legal reception of Constant; neither reading substitutes for evidence of enforcement.',
             citations: citations([], ['galvesCostaProperty2022', 'lynchModeratingPower2005']),
           },
@@ -9630,7 +10050,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy', 'adamSmithWealth'],
-      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016'],
+      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016', 'southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995', 'khoslaTushnetStateCapacity2022'],
       editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state.',
     },
     researchGaps: [
@@ -9646,6 +10066,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'The article’s five reversed signs have been aligned with the existing reference card, without changing magnitudes or Authority. Separate historical case ranges and calibrated scores still require evidence beyond these documents.',
       'Collate the Weimar provisions and 1933 decree with Reichsgesetzblatt facsimiles, including the omitted article 25 and final paragraphs of article 48. The linked decree scan was inaccessible, and the Raithel page gives a discrepant document page number; GHDI’s p. 83 locator is used without claiming facsimile verification.',
       'Read the Raithel–Strenge 2000 study, cabinet records, parliamentary cancellation votes, court decisions and local detention files directly. The German additions begin the emergency-powers comparison but do not establish all mechanisms, local effects, alternatives or present-day analogies; earlier multilingual and empirical gaps remain open.',
+      'Read the full S v Makwanyane judgment, the interim and final constitutional texts, subsequent Constitutional Court cases, and multilingual South African scholarship. The official court-history summary establishes the bounded outcome but not the judgment’s complete reasoning, reception, or implementation.',
+      'Compare South Africa’s socioeconomic-rights remedies and state capacity with Brazil, India, and other African constitutional orders using judgments, budgets, administrative records, litigants’ evidence, and independent outcome studies. The selected Khosla–Tushnet argument is not a complete implementation audit or a present-day country classification.',
     ],
   },
   'militarist-imperialist': {
@@ -10454,6 +10876,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The French vocabulary has its own history. MSHE Ledoux’s notice for the scholarly volume Libertaire! identifies Déjacque’s 1857 letter to Proudhon as the setting in which he coined libertaire. This does not establish the first use of the English word or collapse its later meanings into one doctrine.',
             citations: citations([], ['msheDejacqueVolume2019']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Rojava is a bounded comparison here, not a synonym for libertarian socialism or a current-country match. Read the 2014 charter, the contemporary rights investigation and the 2022 scholarly assessment as different kinds of evidence—not as proof that all residents share an ideology.',
+            citations: citations([], ['rojavaCharter2014Institute', 'hrwKurdishRule2014', 'hammyMileyRojava2022']),
+          },
         ],
       },
       {
@@ -10479,6 +10906,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Freedom is understood positively as the capacity to participate in shaping the conditions of life, and negatively as protection from state, capitalist, patriarchal, racial, colonial, and religious domination. Mutual aid is treated as an organizing principle, not proof that conflict or coercion disappears. The tradition therefore needs a theory of minority rights, dissent, defense, ecological limits, inter-community obligations, and fair procedures when consensus fails.',
             citations: citations(['kropotkinMutualAid', 'millOnLiberty', 'bakuninStatism'], ['sepAnarchism', 'sepReligionPolitics', 'sepSocialism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Rojava’s 2014 charter treats natural resources as public wealth while protecting private property (articles 39–42). Legislative, executive, judicial and local councils coexist with military command (4, 13, 15). These provisions cannot establish that markets or coercive institutions were abolished.',
+            citations: citations([], ['rojavaCharter2014Institute']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Articles 27–28 address women’s rights and self-organization; article 87 sets a minimum 40% representation for each of its two gender categories, not 50–50 parity. Article 92 separates religion and state while qualifying worship by public order. These are formal commitments, not verified outcomes.',
+            citations: citations([], ['rojavaCharter2014Institute']),
           },
         ],
       },
@@ -10532,6 +10969,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['socialEcologyMunicipalism', 'sepAnarchism', 'sepEnvironmentalEthics']),
           },
           {
+            period: 'January 2014 — Rojava’s provisional constitutional framework',
+            text: 'Human Rights Watch dates the introduction of the Social Contract in Afrin, Kobani and Jazira to January 2014. This is a historical institutional snapshot, not a map of present-day control.',
+            citations: citations([], ['hrwKurdishRule2014']),
+          },
+          {
             period: 'Contemporary cooperative and autonomous practice',
             text: 'Today, worker cooperatives, solidarity economies, community land projects, mutual-aid networks, municipal experiments, union democracy, and autonomous movements may enact parts of the tradition within states and markets. The existence of such institutions demonstrates possible forms of participation and ownership, not the disappearance of hierarchy, market pressure, unequal expertise, or dependence on public law. Claims about a whole libertarian socialist society require much stronger evidence.',
             citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['iloCooperatives', 'iloWorkerCooperatives', 'socialEcologyMunicipalism']),
@@ -10582,6 +11024,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['bookchinLibertarianMunicipalism', 'kropotkinMutualAid'], ['socialEcologyMunicipalism', 'sepAnarchism']),
               },
               {
+                label: 'Democratic confederalism — related project, not an alias',
+                distinction: 'Hammy and Miley compare Öcalan’s project with Bookchin’s municipalism but reject reducing one thinker to the other.',
+                relation: 'Intellectual connections do not make every Kurdish movement, or every self-administration, libertarian socialist.',
+                citations: citations([], ['hammyMileyRojava2022']),
+              },
+              {
                 label: 'Autonomism and prefigurative politics',
                 distinction: 'Emphasizes autonomous organization, refusal of party mediation, worker and social movements, and building desired relations in the present.',
                 relation: 'Can overlap with libertarian Marxism, feminism, anti-racism, and community organizing without requiring one constitutional model or a complete common economy.',
@@ -10626,6 +11074,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'evidence-note',
             text: 'A research lead, not a completed review: the 2019 volume edited by Thomas Bouchet and Patrick Samzun brings together studies of Déjacque’s transatlantic life, writing, and anti-authoritarian thought. The institutional notice is consulted here; its chapters must be read individually before their conclusions can support further claims.',
             citations: citations([], ['msheDejacqueVolume2019']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Teaching comparison — Rojava, 2014 framework with scholarship published in 2022: ask separately who controls production (economic), whose participation is protected (social), who commands and can be challenged (authority), who belongs (identity), how defense is organized (foreign policy), and how conscience is protected (religion). These are editorial questions for examining the evidence, not six measured answers. No new coordinates are assigned.',
+            citations: citations([], ['rojavaCharter2014Institute', 'hrwKurdishRule2014', 'hammyMileyRojava2022']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Version caution: the English charter has no identified translator. Selected clauses were compared with HRW’s PYD-supplied copy; this does not authenticate the translation. Ambiguous preamble wording about centralization remains unresolved. No Kurdish/Arabic collation, later-charter comparison or claim of current applicability is made.',
+            citations: citations([], ['rojavaCharter2014Institute', 'hrwKurdishRule2014']),
           },
         ],
       },
@@ -10679,6 +11137,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Human Rights Watch’s 2014 investigation documented arbitrary detention, mistreatment and due-process failures, while recording official denials and cooperation with investigators. It could not establish the full extent of detention abuse and excluded alleged restrictions on speech/association and abuses against non-Kurdish communities from its scope. Its findings therefore neither validate all charter promises nor settle every allegation.',
+            citations: citations([], ['hrwKurdishRule2014']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Writing in 2022, Cihad Hammy and Thomas Jeffrey Miley acknowledge women’s participation and local administrative functions but argue that partisan and military power constrain decision-making from below. They also question economic democratization under wartime scarcity and oil dependence. Their critically supportive interpretation draws on scholarship and movement-associated interviews; it is not a population-wide verdict or a current institutional audit.',
+            citations: citations([], ['hammyMileyRojava2022']),
+          },
+          {
+            type: 'paragraph',
             text: 'The fourth criticism concerns economic incentives and common resources. Abolishing private capital does not by itself resolve scarcity, ecological limits, free-riding, skill allocation, investment, maintenance, or conflict between local autonomy and wider equality. Markets, planning, rationing, gift economies, and federated allocation each create different risks. The entry should record the actual allocation mechanism rather than treating “common ownership” as a complete economic explanation.',
             citations: citations(['kropotkinConquestBread', 'bookchinLibertarianMunicipalism'], ['sepSocialism', 'iloCooperatives', 'iloWorkerCooperatives']),
           },
@@ -10697,7 +11165,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread', 'luxemburgReformRevolution', 'bookchinLibertarianMunicipalism', 'marxEngelsManifesto', 'millOnLiberty', 'fanonWretchedEarth', 'leninStateRevolution'],
-      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook', 'proudhonFederative1863French', 'dejacqueLetter1857French', 'cagiaoProudhonFederalism2011', 'msheDejacqueVolume2019'],
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook', 'proudhonFederative1863French', 'dejacqueLetter1857French', 'cagiaoProudhonFederalism2011', 'msheDejacqueVolume2019', 'rojavaCharter2014Institute', 'hrwKurdishRule2014', 'hammyMileyRojava2022'],
       editorialNote: 'This entry treats libertarian socialism as a broad family resemblance rather than a single doctrine. It distinguishes anti-authoritarian socialism from market libertarianism, state socialism, social democracy, anarcho-communism, communalism, and cooperative practice, and records both the emancipatory aims and the institutional problems of self-management. The French additions distinguish primary proposals, a polemical intervention, attributed scholarship, and an institutional book notice. English summaries are original paraphrases, not authoritative translations or endorsements of every position held by the authors.',
     },
     researchGaps: [
@@ -10711,6 +11179,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read Jenny d’Héricourt’s own interventions and compare them with Déjacque’s and Proudhon’s representations; women’s political agency should not be reduced to a dispute between men. Collate the 1857 letter against an early edition before quoting it.',
       'Compare Cagiao y Conde’s regionalist interpretation with the works by Ansart, Chambost, and other scholars that he discusses. The Bouchet–Samzun volume and Pascal Lebrun’s property comparison remain full-text research leads; access limitations prevented a complete review in this pass.',
       'Resolve the existing religion discrepancy of +42 in this article versus +45 in the card through explicit editorial review; all six coordinates are unchanged. Audit the card’s person/example links, including the Luxemburg link currently pointing to a Bernstein biography, before treating them as adequate individual-level evidence.',
+      'Collate the 2014 Social Contract with dated Kurdish and Arabic originals, identify translators, and examine later charter versions separately. Do not carry the 2014 institutional snapshot forward as a present-day assessment without fresh evidence.',
+      'Deepen the Rojava comparison with women’s own institutional records, minority and opposition accounts, cooperative membership and budget evidence, and independent council studies. Read contrasting scholarship in full and examine interview selection and translation before generalizing about participation or economic outcomes.',
     ],
   },
   'indigenous-relational-governance': {
@@ -10812,6 +11282,26 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'For the Māori case, the treaty’s English sovereignty clause must be distinguished from kāwanatanga in the Māori first article and tino rangatiratanga in the second. The Tribunal’s general guide distinguishes the latter’s emphasis on authority from the English property guarantee. Our six-axis inference is limited: evidence about jurisdiction does not by itself establish collectivism, social progressivism, pacifism, or a religious settlement.',
             citations: citations([], ['dpmcTreatyTextsKawharu', 'waitangiTribunalTreaty']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Onondaga Nation’s public account gives clan mothers a substantive political role: selecting the clan’s Hoyane, working with that representative, and removing a leader after warnings when representation fails. It also connects their authority with education, family guidance and ceremonial responsibilities. This is not merely an honorary position. The account does not, however, establish that every woman has identical power or that these responsibilities can be translated directly into the project’s progressive/traditionalist or secular/religious scales.',
+            citations: citations([], ['onondagaClanMothers']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Nation’s Chiefs page distinguishes its fourteen-chief council from the Confederacy’s fifty titles. In the local council, agreement is reached within each of three benches before a decision passes onward; a completed decision requires all three. The page describes lifetime tenure alongside removal for failure to fulfill responsibilities. A long tenure therefore does not itself mean unaccountable office, while consensus among representatives is not the same as a direct vote of every resident. These are publicly stated procedures, not observed minutes of a particular decision.',
+            citations: citations([], ['onondagaChiefs']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In its Sovereignty Defined section, the Nation presents member nations as retaining internal governing responsibilities, with the Confederacy addressing relations among them and matters such as treaties and territorial disputes. This is the Nation’s own account of jurisdiction, not a finding that every external government accepts its position. Analytically, it helps separate authority within a nation from coordination among nations; neither dimension should be inferred from a modern country label alone.',
+            citations: citations([], ['onondagaSovereignty']),
+          },
+          {
+            type: 'paragraph',
+            text: 'In their 2022 Northern Iroquoian case, Holland-Lulewicz and colleagues describe clans as connecting households and multiple council levels rather than governing alone. They distinguish inherited offices from selection of their holders. Their historical regional category includes societies beyond the Haudenosaunee; it cannot be silently substituted for an Onondaga account.',
+            citations: citations([], ['hollandLulewiczKeystone2022']),
           },
         ],
       },
@@ -10925,7 +11415,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: 'Deep historical tradition; colonial and contemporary continuities',
                 match: 'confederated governance and diplomacy anchor',
                 caveat: 'The Great Law is an oral and living tradition. English transcriptions and claims about influence on later constitutional systems require source criticism and respect for Haudenosaunee custodianship.',
-                citations: citations(['ostromGoverningCommons'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
+                citations: citations(['ostromGoverningCommons'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative', 'onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty']),
               },
               {
                 name: 'Manden Charter / Kurukan Fuga',
@@ -11003,13 +11493,23 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Declared institutions also need an implementation check. Basil Keane’s account says the congress envisaged in He Whakaputanga did not meet, and distinguishes interpretations emphasizing Busby’s initiative from those emphasizing chiefly strategies for recognition. He also traces later Kotahitanga appeals to both declaration and treaty. A constitutional proposal, its practical operation, and its subsequent political significance are therefore different questions—not a choice between treating the document as a complete state constitution or dismissing it as meaningless.',
             citations: citations([], ['keaneWhakaputanga2017', 'whakaputangaTexts1835']),
           },
+          {
+            type: 'paragraph',
+            text: 'The 2022 study distinguishes distributed authority from equal access to participation and acknowledges unequal participation across its four cases. It is a historical comparison, not a present-day audit of Onondaga government. Our use is narrower still: an institutional comparison that supplies no new ideological score and makes no claim about influence on the United States Constitution.',
+            citations: citations([], ['hollandLulewiczKeystone2022']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The three Onondaga pages are undated public institutional explanations consulted on 16 September 2026. They are not a newly verified constitutional edition, an account from every Haudenosaunee community, or evidence that this project has community approval. The reading date must not be used as a founding date or as proof of unchanged practice over centuries. No ceremony, sacred narrative or source image is republished here.',
+            citations: citations([], ['onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['ostromGoverningCommons', 'fanonWretchedEarth', 'cesaireDiscourseColonialism', 'gandhiHindSwaraj', 'millOnLiberty', 'senDevelopmentFreedom'],
-      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'keaneWhakaputanga2017'],
-      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, and Keane’s historical synthesis. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged.',
+      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'keaneWhakaputanga2017', 'onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty', 'hollandLulewiczKeystone2022'],
+      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, and Keane’s historical synthesis. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged. The Onondaga addition distinguishes the Nation’s public institutional self-description from a broader Northern Iroquoian scholarly comparison; neither validates the existing numerical profile.',
     },
     researchGaps: [
       'Add community-reviewed, nation-specific scholarship in Indigenous languages and in Portuguese, French, German, Spanish, and English before expanding the comparative profile.',
@@ -11021,6 +11521,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Seek hapū-specific and Māori-language review of this northern case, including the limits of Hēnare’s and Kawharu’s translations; consultation of published work is not community approval.',
       'Collate original treaty sheets and translation editions before quotation. DPMC identifies Waitangi Revisited as 2005, while the Tribunal text page attaches 1989 to that title; the book and translation’s first publication have not been independently checked.',
       'Review the full Te Paparahi o Te Raki reports, including later stages, and relevant Māori scholarship before making present-day constitutional or remedy claims. This pass consulted the 2014 release, not the complete evidentiary record.',
+      'Seek Onondaga and other Haudenosaunee language-community review of terminology, authority and publication boundaries. Examine nation-specific accounts of participation, disagreement and removal in practice; public institutional descriptions alone do not establish outcomes, universal gender equality or consent to classification.',
+      'Read the historical works and Indigenous scholarship underlying the Northern Iroquoian comparison directly, separating Haudenosaunee, Huron-Wendat and other settings. Investigate the relationship between traditional and elected institutions by nation and period before making wider claims; founding chronology and U.S. constitutional influence remain unverified here.',
     ],
   },
 };

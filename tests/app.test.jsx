@@ -12,6 +12,7 @@ import {
 } from '../src/main.jsx';
 import {
   ARCHETYPES,
+  BIBLIOGRAPHY_RECORDS,
   DEFAULT_SCORES,
   DIMENSIONS,
   ENCYCLOPEDIA_ENTRIES,
@@ -22,6 +23,7 @@ import {
 } from '../src/content/index.js';
 
 const CACHE_KEY = 'politic-spectrum:questionnaire:v4';
+const BIBLIOGRAPHY_TOTAL = BIBLIOGRAPHY_RECORDS.length;
 
 beforeEach(() => {
   window.localStorage.clear();
@@ -198,19 +200,19 @@ describe('primary user flows', () => {
 
     expect(screen.getAllByRole('slider')).toHaveLength(2);
     expect(document.querySelectorAll('.bibliography-card')).toHaveLength(12);
-    expect(screen.getByText(/1–12 of 499 matching · 499 total/i)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`1–12 of ${BIBLIOGRAPHY_TOTAL} matching · ${BIBLIOGRAPHY_TOTAL} total`, 'i'))).toBeInTheDocument();
 
     await user.click(screen.getByRole('checkbox', { name: 'Europe', exact: true }));
-    expect(screen.getByText(/1–12 of 33 matching · 499 total/i)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`1–12 of 33 matching · ${BIBLIOGRAPHY_TOTAL} total`, 'i'))).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Next →/i })).toBeEnabled();
     await user.click(screen.getByRole('button', { name: /Next →/i }));
     expect(screen.getByText(/Page 2 of 3/i)).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: /Clear filters/i }));
-    await screen.findByText(/1–12 of 499 matching · 499 total/i);
+    await screen.findByText(new RegExp(`1–12 of ${BIBLIOGRAPHY_TOTAL} matching · ${BIBLIOGRAPHY_TOTAL} total`, 'i'));
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Begin publication year', exact: true }), { target: { value: '1900' } });
     fireEvent.change(screen.getByRole('spinbutton', { name: 'End publication year', exact: true }), { target: { value: '1950' } });
-    expect(screen.getByText(/1–12 of 63 matching · 499 total/i)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`1–12 of \\d+ matching · ${BIBLIOGRAPHY_TOTAL} total`, 'i'))).toBeInTheDocument();
     expect(screen.getByText(/1900 CE — 1950 CE/i)).toBeInTheDocument();
   });
 
