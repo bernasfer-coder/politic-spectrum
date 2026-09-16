@@ -9812,6 +9812,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The label also contains a central tension. Constitutional limits can protect minorities and individual freedom against majoritarian abuse, but entrenched rules and courts can frustrate democratic change or preserve an old social settlement. Liberal constitutionalism therefore requires two tests at once: whether power is constrained, and whether the constitution itself remains open to equal citizenship, amendment, participation, and correction. A constitution that limits government while excluding most people from membership is formally constitutional but substantively incomplete.',
             citations: citations(['federalistPapers', 'millOnLiberty', 'wollstonecraftRights'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordLiberalismResearch', 'colonialLiberalismExclusion']),
           },
+          {
+            type: 'evidence-note',
+            text: 'India provides a bounded postcolonial case in which constitutionalism was asked to pursue several goals at once: rights protection, democratic representation, social transformation, federal and parliamentary government, and the management of a deeply unequal society. The case is not treated as a pure liberal model or as proof that constitutional design guarantees equal outcomes; the Constitution, judicial interpretation, historical scholarship, and everyday access to law are kept as separate evidence layers.',
+            citations: citations([], ['indiaConstitution1950', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007']),
+          },
         ],
       },
       {
@@ -9858,6 +9863,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Reading the Brazilian case below: distinguish the constitution’s provisions (primary evidence), historians’ interpretations (secondary evidence), and this project’s educational comparison. The case is not an exact match for this card, and no score for historical or present-day Brazil is inferred. Portuguese sources are summarized independently in English; quoted works inside those sources have not thereby been independently consulted.',
             citations: citations([], ['brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022']),
           },
+          {
+            type: 'paragraph',
+            text: 'India’s constitutional experience broadens the profile beyond a simple negative-liberty model. Chakrabarty describes the 1950 Constitution’s liberal constitutional genealogy and its accommodation of Gandhian village-swaraj concerns; Fischer emphasizes constitutional commitments to social transformation while economic policy shifted toward liberalization; and De shows how constitutional remedies were shaped by ordinary claimants as well as judges, while access to litigation remained socially unequal. These are interpretations of a historical case, not evidence for changing the six-axis score.',
+            citations: citations([], ['chakrabartyIndianConstitution2018', 'fischerIndiaConstitutionalReform2007', 'deIndianConstitutionEveryday2020']),
+          },
         ],
       },
       {
@@ -9888,6 +9898,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1995–1996: South African constitutional transition and rights review',
             text: 'The South African Constitutional Court’s official history identifies S v Makwanyane as its first hearing and reports that, on 6 June 1995, the Court unanimously found the death penalty unconstitutional under the interim Constitution’s protections for life, dignity, and freedom from cruel punishment. The case illustrates transitional rights adjudication and judicial review; the full judgment and later enforcement are not claimed here.',
             citations: citations([], ['southAfricaMakwanyaneCourt1995', 'southAfricaConstitution1996Rights']),
+          },
+          {
+            period: '1946–1950: India’s Constituent Assembly and postcolonial constitutional founding',
+            text: 'India’s Constitution emerged from Constituent Assembly debates between 1946 and 1949 and came into force on 26 January 1950. The constitutional project joined liberal rights and representative government to social-revolutionary aims, federal and parliamentary institutions, and the challenge of transforming a society marked by caste, colonial rule, and unequal access. Scholarly accounts disagree about how far this was a liberal inheritance, a transformative project, or a centralized state-building strategy; those interpretations should not be collapsed.',
+            citations: citations([], ['indiaConstitution1950', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020']),
+          },
+          {
+            period: '24 April 1973: Kesavananda Bharati and the basic-structure limit',
+            text: 'The Supreme Court of India’s official record identifies the Kesavananda Bharati decision as a 24 April 1973 case about Parliament’s power to amend the Constitution. The Court’s educational account presents the 7–6 majority as holding that the Constitution has a basic structure, including principles such as rule of law, separation of powers, and judicial independence, that cannot be altered through amendment. This is a judicial doctrine and institutional safeguard, not proof that all constitutional rights are effective in practice.',
+            citations: citations([], ['indiaKesavananda1973']),
           },
           {
             period: '1824 — Brazilian rights guarantees and monarchical authority',
@@ -9965,6 +9985,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['federalistPapers'], ['sepConstitutionalism', 'oxfordConstitutionalJustice']),
               },
               {
+                label: 'Transformative constitutionalism in India',
+                distinction: 'Uses constitutional rights, directive commitments, representation, and judicial review to pursue social equality and reshape inherited relations of caste, property, community, and state power.',
+                relation: 'It expands liberal constitutionalism beyond restraining government: the state may be required to act, but centralized administration, emergency powers, unequal access to courts, and judicial dominance remain democratic risks. India’s model is a historically specific postcolonial variant, not a universal template.',
+                citations: citations([], ['indiaConstitution1950', 'indiaKesavananda1973', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007']),
+              },
+              {
                 label: 'Federal and consociational liberalism',
                 distinction: 'Uses divided territorial power, bicameralism, coalition, minority vetoes, or negotiated power-sharing to prevent domination by one group or region.',
                 relation: 'Extends the anti-concentration principle beyond the central executive, but can make accountability and equal participation harder to trace.',
@@ -10009,6 +10035,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'South Africa’s 1996 Bill of Rights is a documented example of post-authoritarian constitutional transformation: rights apply to all law and bind the legislature, executive, judiciary and state organs; equality allows measures to advance people disadvantaged by unfair discrimination; and section 36 requires justified limitations. The official text is evidence of design, not a whole-country rating or a substitute for implementation research.',
             citations: citations([], ['southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995']),
+          },
+          {
+            type: 'paragraph',
+            text: 'India’s postcolonial constitutional order, inaugurated in 1950, is a useful historical example of liberal constitutionalism with transformative ambitions. Its study brings together constitutional rights, universal franchise, judicial remedies, social and economic objectives, federal and parliamentary design, and the continuing negotiation of individual and community claims. The basic-structure doctrine later placed a judicially enforced limit on constitutional amendment, while scholarship also records unequal access to litigation and the disciplining effects of centralized state power. India is therefore a dated, internally contested case—not an exact six-axis match for every Indian institution, government, or citizen.',
+            citations: citations([], ['indiaConstitution1950', 'indiaKesavananda1973', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007']),
           },
         ],
       },
@@ -10058,6 +10089,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'India’s case raises a related caution about access and centralization. Rohit De’s account emphasizes that ordinary people used constitutional remedies and public claims to give the text meaning, but also records that litigation access was uneven and that emergency and preventive-detention tools could be used to discipline political activity. The existence of a durable constitutional order therefore does not settle who can invoke rights, which communities are heard, or how exceptional power is controlled.',
+            citations: citations([], ['deIndianConstitutionEveryday2020', 'indiaConstitution1950']),
+          },
+          {
+            type: 'paragraph',
             text: 'Marcelo Cheche Galves and Yuri Costa (2022), in their discussion of the 1824 charter, connect property-based political qualifications and the treatment of enslaved people as property to the reproduction of slaveholding hierarchies. They also emphasize the tension between liberal guarantees and strengthened royal power. Their social-history emphasis complements, without resolving, Lynch’s distinct question about the legal reception of Constant; neither reading substitutes for evidence of enforcement.',
             citations: citations([], ['galvesCostaProperty2022', 'lynchModeratingPower2005']),
           },
@@ -10091,8 +10127,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy', 'adamSmithWealth'],
-      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016', 'southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995', 'khoslaTushnetStateCapacity2022'],
-      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state.',
+      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016', 'southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995', 'khoslaTushnetStateCapacity2022', 'indiaConstitution1950', 'indiaKesavananda1973', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007'],
+      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state. The India addition is a bounded postcolonial case using an official constitutional link, an official Supreme Court summary, and selected academic readings; it does not establish a whole-country score, complete constitutional history, or equal rights in practice.',
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Hindi, Chinese, and African constitutional traditions, including constitutional arguments that do not begin from the Anglo-American canon.',
@@ -10109,6 +10145,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read the Raithel–Strenge 2000 study, cabinet records, parliamentary cancellation votes, court decisions and local detention files directly. The German additions begin the emergency-powers comparison but do not establish all mechanisms, local effects, alternatives or present-day analogies; earlier multilingual and empirical gaps remain open.',
       'Read the full S v Makwanyane judgment, the interim and final constitutional texts, subsequent Constitutional Court cases, and multilingual South African scholarship. The official court-history summary establishes the bounded outcome but not the judgment’s complete reasoning, reception, or implementation.',
       'Compare South Africa’s socioeconomic-rights remedies and state capacity with Brazil, India, and other African constitutional orders using judgments, budgets, administrative records, litigants’ evidence, and independent outcome studies. The selected Khosla–Tushnet argument is not a complete implementation audit or a present-day country classification.',
+      'Read and collate the complete Constitution of India in its authoritative English and regional-language versions, the Constituent Assembly debates, amendment history, and founding scholarship. The official PDF link and selected secondary readings used here do not establish every article, translation, or constitutional practice.',
+      'Extend the Indian case through the full Kesavananda Bharati, Golak Nath, Minerva Mills, emergency, preventive-detention, and Article 21 jurisprudence, including separate opinions and later constitutional amendments. Preserve the disagreement between parliamentary authority, judicial review, social transformation, and democratic accountability.',
+      'Add Dalit, Adivasi, Muslim, women’s, linguistic, regional, labor, and federal scholarship on India’s constitutional order, alongside administrative and electoral evidence. Test De’s account of unequal litigation access and Fischer’s political-economy interpretation against local archives, rights outcomes, and competing Indian-language research.',
     ],
   },
   'militarist-imperialist': {

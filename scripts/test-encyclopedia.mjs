@@ -197,6 +197,37 @@ const liberalCriticisms = liberalConstitutionalismEntry.sections.find(({ id }) =
 assert.ok(liberalCriticisms.some(({ text }) => text?.includes('constitutionalism is only a negative restraint')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the full S v Makwanyane judgment')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Compare South Africa’s socioeconomic-rights remedies')));
+for (const [sourceId, role, date] of [
+  ['indiaConstitution1950', 'primary', '1950-01-26'],
+  ['indiaKesavananda1973', 'primary', '1973-04-24'],
+  ['chakrabartyIndianConstitution2018', 'secondary', '2018-12'],
+  ['deIndianConstitutionEveryday2020', 'secondary', '2020-10'],
+  ['fischerIndiaConstitutionalReform2007', 'secondary', '2007'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Indian constitutionalism reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const indiaTimeline = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(indiaTimeline.find(({ period }) => period.startsWith('1946–1950: India’s Constituent Assembly')));
+assert.ok(indiaTimeline.find(({ period }) => period.startsWith('24 April 1973: Kesavananda Bharati')));
+const indiaVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Transformative constitutionalism in India'));
+assert.ok(indiaVariant, 'India must be separated as a dated postcolonial variant');
+const indiaExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('India’s postcolonial constitutional order'));
+assert.ok(indiaExample, 'India must appear as a bounded historical example');
+assert.match(indiaExample.text, /not an exact six-axis match/);
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Constitution of India')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Extend the Indian case through the full Kesavananda Bharati')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Add Dalit, Adivasi, Muslim')));
 assert.deepEqual(Object.fromEntries(Object.entries(liberalConstitutionalismEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -30, social: 25, authority: -65, identity: 25, foreign: 35, religion: 55 });
 
 const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
