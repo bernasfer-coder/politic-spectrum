@@ -2375,6 +2375,25 @@ assert.match(ottomanExample.caveat, /imperial, multilingual/);
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Ottoman Kanûn-i Esâsî')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Compare the late Ottoman parliament')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Distinguish Ottoman constitutional monarchy')));
+const frenchMonarchySource = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-bodineauVerpeauxFranceConstitutionalHistory2024');
+assert.ok(monarchistEntry.references.researchSourceIds.includes('bodineauVerpeauxFranceConstitutionalHistory2024'));
+assert.ok(JSON.stringify(monarchistEntry.sections).includes('bodineauVerpeauxFranceConstitutionalHistory2024'));
+assert.equal(frenchMonarchySource.evidenceRole, 'secondary');
+assert.equal(frenchMonarchySource.publicationDate, '2024');
+assert.equal(frenchMonarchySource.accessDate, '2026-09-17');
+assert.deepEqual(frenchMonarchySource.languages, ['French']);
+assert.equal(frenchMonarchySource.review.confidence, 'medium');
+assert.equal(frenchMonarchySource.publicationStatus, 'link-only');
+assert.equal(frenchMonarchySource.directQuote, null);
+assert.ok(frenchMonarchySource.relationships.profileEntries.includes('encyclopedia:monarchist'));
+const frenchMonarchyHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1791–1848: revolution and constitutional monarchy'));
+assert.ok(frenchMonarchyHistory.citations.researchSourceIds.includes('bodineauVerpeauxFranceConstitutionalHistory2024'));
+const frenchMonarchyVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('French Restoration and July Monarchy'));
+assert.ok(frenchMonarchyVariant.citations.researchSourceIds.includes('bodineauVerpeauxFranceConstitutionalHistory2024'));
+const frenchMonarchyExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'French Restoration and July Monarchy');
+assert.ok(frenchMonarchyExample.citations.researchSourceIds.includes('bodineauVerpeauxFranceConstitutionalHistory2024'));
+assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The French scholarly preview adds a practice safeguard')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Read Bodineau and Verpeaux’s complete French chapter')));
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['siamConstitution1932French', 'primary', '1932-12-10', ['French'], 'medium'],
   ['sugiyamaSiamRevolution1997', 'secondary', '1997-06-01', ['English'], 'medium'],
