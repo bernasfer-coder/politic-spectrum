@@ -635,6 +635,36 @@ assert.ok(portugalExample, 'Portugal must appear as a bounded Christian-democrat
 assert.match(portugalExample.caveat, /wider constituent settlement/);
 assert.ok(christianCriticisms.some(({ text }) => text?.startsWith('Portugal adds a transition and attribution safeguard')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read the full Portuguese CDS and PDC programmes')));
+for (const [sourceId, role, date, language, confidence] of [
+  ['ovpFoundation1945German', 'contextual', null, 'German', 'high'],
+  ['ovpProgramme1945German', 'primary', '1945', 'German', 'medium'],
+  ['corduwenerChristianDemocratDecade2023', 'secondary', '2023-08-10', 'English', 'medium'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Austrian Christian-democratic reference trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const austrianHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const austrianTimeline = austrianHistory.find(({ period }) => period.startsWith('April 1945: Austrian'));
+assert.ok(austrianTimeline, 'the Austrian ÖVP formation case must remain visible');
+assert.ok(austrianTimeline.citations.researchSourceIds.includes('ovpProgramme1945German'));
+const austrianVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Austrian postwar people’s-party'));
+assert.ok(austrianVariant, 'the Austrian case must be separated as a dated Christian-democratic variant');
+const austrianExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Austria: postwar ÖVP'));
+assert.ok(austrianExample, 'Austria must appear as a bounded Christian-democratic historical example');
+assert.match(austrianExample.caveat, /not be used as a present-day country classification/);
+assert.ok(christianCriticisms.some(({ text }) => text?.startsWith('The Austrian case adds a postwar rupture-and-continuity safeguard')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read the complete German text and publication history of the ÖVP')));
 assert.deepEqual(Object.fromEntries(Object.entries(christianDemocracyEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -5, social: -30, authority: 20, identity: -20, foreign: 15, religion: -62 });
 
 const frenchMonarchyEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
