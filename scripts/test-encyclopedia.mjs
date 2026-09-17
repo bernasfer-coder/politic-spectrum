@@ -1169,6 +1169,39 @@ const estadoNovoSafeguard = imperialJapanEntry.sections.find(({ id }) => id === 
 assert.ok(estadoNovoSafeguard, 'Portuguese case must add an imperial self-description safeguard');
 assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate the Portuguese, Angolan, Guinean, and Mozambican')));
 
+const liberalEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['assembleeThirdRepublicLaws1875', 'primary', '1875', ['French'], 'high'],
+  ['assembleeThirdRepublicCrisis1877', 'secondary', '1877-05-16', ['French'], 'high'],
+  ['rousseillierLiberalismInstitutions2002', 'secondary', '2002', ['French'], 'high'],
+  ['dobuzinskisFrenchThirdRepublic2008', 'secondary', '2008-07-01', ['English'], 'high'],
+  ['bochkarevFrenchThirdRepublicRights2015', 'secondary', '2015-06-30', ['English'], 'medium'],
+]) {
+  assert.ok(liberalEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a French Third Republic reference trail`);
+  assert.ok(JSON.stringify(liberalEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const thirdRepublicTimeline = liberalEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(thirdRepublicTimeline.some(({ period }) => period.startsWith('1875–1940 — French Third Republic')));
+const thirdRepublicVariant = liberalEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('French Third Republic parliamentary liberalism'));
+assert.ok(thirdRepublicVariant, 'French Third Republic parliamentary liberalism must be a separate bounded variant');
+const thirdRepublicExample = liberalEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The French Third Republic is a bounded'));
+assert.ok(thirdRepublicExample, 'French Third Republic must appear as a bounded example');
+assert.match(thirdRepublicExample.text, /not an exact six-axis match/);
+const thirdRepublicSafeguard = liberalEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The French Third Republic makes that contradiction'));
+assert.ok(thirdRepublicSafeguard, 'French Third Republic must add an equal-citizenship safeguard');
+assert.ok(liberalEntry.researchGaps.some((gap) => gap.startsWith('Read the full French constitutional laws of 1875')));
+
 const weimarEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['ghdiWeimarGerman', 'primary', '1919-08-11'],
