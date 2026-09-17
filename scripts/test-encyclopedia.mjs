@@ -2079,6 +2079,24 @@ for (const [sourceId, evidenceRole] of [
   assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['frenchSeparationChurches1905', 'primary', '1905-12-09', ['French']],
+  ['scotLaicite1905', 'secondary', '2007', ['French']],
+  ['conseilEtatLaicite2004', 'secondary', '2004', ['French']],
+]) {
+  assert.ok(progressiveEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a progressive-liberal reference trail`);
+  assert.ok(JSON.stringify(progressiveEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary evidence and interpretation`);
+  assert.equal(record.publicationDate, publicationDate, `${sourceId} needs its historical publication date`);
+  assert.equal(record.accessDate, '2026-09-17', `${sourceId} needs its consultation date`);
+  assert.deepEqual(record.languages, languages, `${sourceId} needs its source language`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its publication boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
+}
 const assistance1935 = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ssaOldAgeAssistance1935');
 const benefits1935 = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ssaOldAgeBenefits1935');
 const rooseveltStatement = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-fdrSocialSecuritySigning1935');
@@ -2102,6 +2120,18 @@ assert.match(progressiveCriticism, /1930 occupational data, not observed benefit
 assert.match(progressiveCriticism, /Only that publisher description, not the full book/, 'limited access must remain visible in the prose');
 const originalActExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'United States Social Security Act of 1935');
 assert.ok(originalActExample.citations.researchSourceIds.includes('ssaOldAgeBenefits1935'), 'the narrowed historical example needs the specific law');
+const frenchLaiciteTimeline = progressiveEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1905–1924:'));
+assert.ok(frenchLaiciteTimeline?.citations.researchSourceIds.includes('frenchSeparationChurches1905'), 'French laïcité timeline needs the primary law');
+assert.match(frenchLaiciteTimeline.text, /freedom of conscience and worship/, 'French primary law must remain tied to conscience and worship');
+const frenchLaiciteVariant = progressiveEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Liberal-separationist laïcité'));
+assert.ok(frenchLaiciteVariant, 'the 1905 settlement must be a distinct bounded variant');
+const frenchLaiciteExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'French law of separation of Churches and State');
+assert.ok(frenchLaiciteExample?.citations.researchSourceIds.includes('scotLaicite1905'), 'French law example needs the specialist historical interpretation');
+assert.match(progressiveDescription, /not as a synonym for atheism/, 'secular public law must not be equated with hostility to religion');
+const frenchLaiciteSafeguard = progressiveEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ type, text }) => type === 'evidence-note' && /1905 case requires/.test(text ?? ''));
+assert.ok(frenchLaiciteSafeguard, 'the bounded 1905 case needs an evidence safeguard');
+assert.match(frenchLaiciteSafeguard.text, /not equal treatment in every locality/, 'formal legal principle must not become an outcome claim');
+assert.ok(progressiveEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the French 1905 separation law')), 'the French research lead must preserve its follow-up gap');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Read Poole’s full study')), 'historiographical follow-up must remain open');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Audit the separate reference card')), 'the unchanged card’s broad source links need an explicit follow-up');
 

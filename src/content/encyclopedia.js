@@ -1207,20 +1207,20 @@ export const ENCYCLOPEDIA_ENTRIES = {
       social: {
         score: 78,
         label: 'Strongly progressive',
-        explanation: 'The profile treats personal autonomy, equal citizenship, anti-discrimination, gender equality, and revision of inherited social norms as legitimate public concerns. It can still differ internally over paternalism, speech boundaries, family policy, and the pace of cultural change.',
-        citations: citations(['wollstonecraftRights', 'millOnLiberty'], ['sepLiberalism']),
+        explanation: 'The profile treats personal autonomy, equal citizenship, anti-discrimination, gender equality, and revision of inherited social norms as legitimate public concerns. It can still differ internally over paternalism, speech boundaries, family policy, and the pace of cultural change. The French 1905 settlement shows that universal civic equality can be paired with public protection for worship, while disputes remain over whether formal equality sufficiently addresses group-based disadvantage.',
+        citations: citations(['wollstonecraftRights', 'millOnLiberty'], ['sepLiberalism', 'frenchSeparationChurches1905', 'scotLaicite1905']),
       },
       authority: {
         score: -36,
         label: 'Liberal and institutionally constrained',
-        explanation: 'Government is active in welfare, regulation, and public goods, but its power is constrained by elections, rights, courts, free expression, and independent associations. The profile distinguishes legitimate public capacity from unchecked executive or bureaucratic domination.',
-        citations: citations(['millOnLiberty', 'lockeSecondTreatise'], ['vdem', 'sepLiberalism']),
+        explanation: 'Government is active in welfare, regulation, and public goods, but its power is constrained by elections, rights, courts, free expression, and independent associations. The profile distinguishes legitimate public capacity from unchecked executive or bureaucratic domination. In the French 1905 framework, separation limits official religious establishment while permitting chaplaincy arrangements to protect worship in some public institutions; the Conseil d’État presents the later judicial role as part of the balance between liberty, order, and pluralism.',
+        citations: citations(['millOnLiberty', 'lockeSecondTreatise'], ['vdem', 'sepLiberalism', 'frenchSeparationChurches1905', 'conseilEtatLaicite2004']),
       },
       identity: {
         score: 54,
         label: 'Inclusive internationalist',
-        explanation: 'Political membership is centered on equal citizenship, pluralism, and cooperation across borders rather than inherited ethnicity or compulsory cultural uniformity. National institutions can remain meaningful, but they are judged by inclusion and rights rather than ethnic homogeneity.',
-        citations: citations(['kantPerpetualPeace', 'andersonImaginedCommunities', 'constantLibertyModerns', 'tocquevilleDemocracy'], ['sepLiberalism', 'oxfordRepublicanismTransatlantic', 'cambridgeIndivisibilityFrenchRepublic']),
+        explanation: 'Political membership is centered on equal citizenship, pluralism, and cooperation across borders rather than inherited ethnicity or compulsory cultural uniformity. National institutions can remain meaningful, but they are judged by inclusion and rights rather than ethnic homogeneity. French republican universalism adds a stronger common civic framework: it can oppose inherited legal status while raising a continuing question about whether a formally indivisible citizen body leaves minority histories and organized differences insufficiently visible.',
+        citations: citations(['kantPerpetualPeace', 'andersonImaginedCommunities', 'constantLibertyModerns', 'tocquevilleDemocracy'], ['sepLiberalism', 'oxfordRepublicanismTransatlantic', 'cambridgeIndivisibilityFrenchRepublic', 'scotLaicite1905']),
       },
       foreign: {
         score: -28,
@@ -1231,8 +1231,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       religion: {
         score: 65,
         label: 'Strongly secular and pluralist',
-        explanation: 'Public law is justified through equal citizenship and constitutional principles rather than one religious authority, while religious belief and practice remain protected. Progressive liberalism can include religious citizens and religious social movements without giving a faith coercive control over the state.',
-        citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepLiberalism', 'viePubliqueLaiciteStasi']),
+        explanation: 'Public law is justified through equal citizenship and constitutional principles rather than one religious authority, while religious belief and practice remain protected. Progressive liberalism can include religious citizens and religious social movements without giving a faith coercive control over the state. The French 1905 law links conscience and free worship to non-establishment; Scot describes this as a liberty-and-equality achievement, while the Conseil d’État emphasizes pluralism, neutrality, public-order limits, and local exceptions. These interpretations show a constitutional settlement, not a universal rule that religion belongs only in private life.',
+        citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepLiberalism', 'viePubliqueLaiciteStasi', 'frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
       },
     },
     sections: [
@@ -1255,6 +1255,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'French republican and social-liberal traditions show why “progressive liberal” cannot be reduced to an Anglo-American left label. Republican language often makes equality, civic education, solidarity, and a shared public framework central, while laïcité is presented institutionally through freedom of conscience, equal treatment of convictions, and neutrality of public power. The same universalist language can also generate disputes when formal individual citizenship leaves group-based discrimination or minority claims insufficiently visible.',
             citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The French law of 9 December 1905 is a bounded primary case for the religion and authority dimensions. Articles 1–2 combine freedom of conscience and free exercise of worship with separation and non-establishment, while preserving a limited chaplaincy exception in public institutions. Jean-Paul Scot interprets the settlement as joining liberty, equality and republican consolidation; the Conseil d’État’s official study emphasizes the later balance among neutrality, pluralism, public order and local exceptions. None of these sources proves that the settlement was uniformly applied or that every later use of laïcité preserved its most liberal interpretation.',
+            citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
+          },
         ],
       },
       {
@@ -1275,6 +1280,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The authority principle is an active but limited state. Regulation, taxation, welfare, and public services are legitimate only within a framework of accountability, rights, judicial review, transparent administration, and open contestation. The profile therefore evaluates not only what government does, but whether citizens can challenge and replace those who exercise power.',
             citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['vdem', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Laïcité is best read here as a family of institutional questions, not as a synonym for atheism or hostility to religion. The 1905 law’s primary text separates public financing and official recognition from protection of conscience and worship; the Conseil d’État further describes pluralism, public-order limits, chaplaincies, judicial interpretation and territorial exceptions. A state can therefore be secular and still regulate or accommodate religious practice. The exact balance, and whether later measures extend neutrality from public agents to private citizens, requires a dated legal and social record.',
+            citations: citations([], ['frenchSeparationChurches1905', 'conseilEtatLaicite2004', 'viePubliqueLaiciteStasi']),
           },
           {
             type: 'paragraph',
@@ -1318,6 +1328,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
           },
           {
+            period: '1905–1924: French separation, liberty, and territorial variation',
+            text: 'The law of 9 December 1905 established a legal settlement in which the Republic guaranteed freedom of conscience and worship while ending official recognition, salaries, and subsidies for cults, with a chaplaincy exception for free exercise in certain public institutions. Scot presents the law as a difficult republican achievement of liberty, equality and fraternity; the Conseil d’État’s later institutional study describes a movement from conflict toward a more liberal and pluralist interpretation, while recording local arrangements such as Alsace-Moselle. The case is therefore both a secular constitutional design and an example of non-uniform implementation, not a proof that all French public policy became anti-religious or identical across territories.',
+            citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
+          },
+          {
             period: '1930s–1950s: economic stabilization and democratic reconstruction',
             text: 'The Great Depression, mass unemployment, and the experience of war strengthened arguments for social insurance, macroeconomic management, public services, and international institutions. These reforms produced different national models and should not be reduced to one universally agreed progressive programme.',
             citations: citations(['keynesGeneralTheory', 'kantPerpetualPeace'], ['sepLiberalism', 'foreignPolicy']),
@@ -1358,6 +1373,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Connects individual rights and public reform to civic equality, solidarity, education, a common political framework, and a particular account of laïcité; it does not automatically endorse one party or one view of group recognition.',
                 relation: 'A historically important national-language variant and contrast case: it can support progressive inclusion while remaining more universalist and institution-centered than identity-based pluralism.',
                 citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
+              },
+              {
+                label: 'Liberal-separationist laïcité: the 1905 settlement',
+                distinction: 'Pairs state non-establishment and neutrality with freedom of conscience, free worship, equality of convictions, and limited accommodation such as chaplaincies.',
+                relation: 'A bounded French institutional variant rather than a complete ideology: it can support progressive liberal commitments while leaving open disputes over public order, group recognition, territorial exceptions, and later extensions of neutrality.',
+                citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
               },
               {
                 label: 'Progressive constitutional liberalism',
@@ -1462,6 +1483,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'The period combined civic education, secular public institutions, and social reform with colonial domination, unequal citizenship, gender exclusion, and conflicts over religion and group difference.',
                 citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'sageFrenchRepublicLiberalFounders', 'cambridgeIndivisibilityFrenchRepublic']),
               },
+              {
+                name: 'French law of separation of Churches and State',
+                period: 'France, 9 December 1905; later interpretation and territorial exceptions require separate dates',
+                match: 'partial secular and civic-equality resemblance: a primary legal settlement pairing non-establishment with protected conscience and worship',
+                caveat: 'The law is not a complete account of French republicanism, later laïcité policy, colonial religious administration, or lived equality. The 1905 text, Scot’s historical interpretation, and the Conseil d’État’s institutional account are different evidence layers; Alsace-Moselle and overseas arrangements prevent a simple uniform-territory claim.',
+                citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
+              },
             ],
           },
         ],
@@ -1509,6 +1537,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
           },
           {
+            type: 'evidence-note',
+            text: 'The 1905 case requires a second safeguard against turning legal principle into social outcome. The primary law protects conscience and worship while ending official recognition and ordinary public funding of cults; Scot reads this as a republican achievement, and the Conseil d’État emphasizes later judicial accommodation, pluralism and territorial variation. These sources establish a constitutional design and competing institutional interpretations, not equal treatment in every locality, a complete history of colonial religious administration, or proof that later restrictions always preserved the law’s liberal balance.',
+            citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
+          },
+          {
             type: 'paragraph',
             text: 'The causes of the 1935 coverage limits require historical argument beyond the statute. Larry DeWitt’s 2010 article attributes the Title II exclusions chiefly to Treasury concerns about tax collection and administration, challenging accounts centered on Southern legislators. He distinguishes these decisions from the politics of state-administered assistance. This is his interpretation, not an automatic statement of the agency’s position. His table uses 1930 occupational data, not observed benefit payments. It indicates disproportionate exposure to the exclusions, a different question from the motive for adopting them.',
             citations: citations([], ['dewittCoverageExclusions2010']),
@@ -1536,11 +1569,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'constantLibertyModerns',
         'tocquevilleDemocracy',
       ],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
-      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual. The 1935 case uses historical law and a statement excerpt, separately from later interpretation. Poole’s book is represented only by its publisher description; no full-book review, present-day eligibility assessment, or complete New Deal history is claimed.',
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
+      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual. The 1935 case uses historical law and a statement excerpt, separately from later interpretation. This pass adds a bounded French 1905 separation case, keeping its primary legal design distinct from Scot’s historical interpretation and the Conseil d’État’s institutional account of later judicial and territorial variation. Poole’s book is represented only by its publisher description; no full-book review, present-day eligibility assessment, or complete New Deal history is claimed.',
     },
     researchGaps: [
-      'Expand French-language primary and specialist scholarship on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality, including colonial and postcolonial critiques.',
+      'This pass adds the French 1905 separation law, Jean-Paul Scot’s French historical interpretation, and the Conseil d’État’s 2004 institutional study. Still expand French-language primary and specialist scholarship on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality, including colonial and postcolonial critiques; collate parliamentary debates, the full law and later applications, critical scholarship, colonial and overseas arrangements, Alsace-Moselle, and minority perspectives before treating the French case as representative or settled.',
       'Add German-language scholarship on new liberalism, the social market, post-war constitutional democracy, and debates over welfare-state authority.',
       'Add country-specific evidence for the Progressive Era, New Deal, post-war Europe, and contemporary liberal democracies rather than relying on broad period labels.',
       'Add specialist research on colonialism, race, migration, disability, LGBTQ+ rights, environmental policy, and the tensions between universalism and pluralism.',
