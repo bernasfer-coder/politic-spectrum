@@ -322,6 +322,38 @@ const rousseauExample = liberalConstitutionalismEntry.sections.find(({ id }) => 
 assert.ok(rousseauExample, 'Rousseau must appear as a bounded illustrative example');
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Research the Swiss Reformers')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Add original Ottoman Turkish')));
+for (const [sourceId, publicationDate] of [
+  ['sasakiNamikKemalConstitutionalPlan2006', '2006-02-20'],
+  ['sonmezOttomanConstitutionalism2016', '2016-01-05'],
+  ['sivilogluOttomanLiberalism2024', '2024-12-26'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Ottoman constitutionalism reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, 'secondary');
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const ottomanLiberalIntroduction = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'introduction').blocks;
+assert.ok(ottomanLiberalIntroduction.some(({ text }) => text?.startsWith('The late Ottoman constitutional debate supplies a bounded non-Western case')));
+const ottomanLiberalDescription = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(ottomanLiberalDescription.some(({ text }) => text?.startsWith('Ottoman constitutional liberalism should not be treated')));
+const ottomanLiberalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(ottomanLiberalHistory.some(({ period }) => period.startsWith('1860s–1909 — Ottoman constitutional thought')));
+const ottomanLiberalVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Ottoman constitutional liberalism'));
+assert.ok(ottomanLiberalVariant, 'Ottoman constitutional liberalism must be separated from the monarchist case');
+const ottomanLiberalExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Young Ottoman constitutionalism'));
+assert.ok(ottomanLiberalExample, 'Young Ottoman constitutionalism must appear as a bounded example');
+const ottomanLiberalCriticisms = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks;
+assert.ok(ottomanLiberalCriticisms.some(({ text }) => text?.startsWith('The late Ottoman case adds a translation')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Collate the original Ottoman Turkish, Arabic and French texts')));
 
 const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
 for (const [sourceId, role, date] of [
