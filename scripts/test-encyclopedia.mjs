@@ -1263,6 +1263,36 @@ assert.match(religiousCriticisms, /A second Brazilian safeguard concerns institu
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Read the complete 1985 and 1986 Kairos editions')));
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('This pass expands the bounded Brazilian CEB evidence cluster')));
 
+for (const [sourceId, evidenceRole, publicationDate, confidence] of [
+  ['katzReligiousKibbutzCredo1995', 'secondary', '1995-04', 'high'],
+  ['kayeReligiousSocialistsIsrael2022', 'secondary', '2022-05', 'medium'],
+  ['religiousKibbutzMovementValues', 'primary', null, 'medium'],
+]) {
+  assert.ok(religiousSocialistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a religious-socialist reference trail`);
+  assert.ok(JSON.stringify(religiousSocialistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:religious-socialist']);
+}
+const religiousKibbutzHistory = religiousSocialistEntry.sections.find(({ id }) => id === 'history').timeline;
+const religiousKibbutzTimeline = religiousKibbutzHistory.find(({ period }) => period.startsWith('1935–1948: Religious Kibbutz'));
+assert.ok(religiousKibbutzTimeline, 'the religious-kibbutz timeline case must remain visible');
+assert.ok(religiousKibbutzTimeline.citations.researchSourceIds.includes('katzReligiousKibbutzCredo1995'));
+assert.ok(religiousVariants.some(({ label }) => label.startsWith('Religious kibbutz socialism')));
+const religiousKibbutzExample = religiousSocialistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Religious Kibbutz Movement'));
+assert.ok(religiousKibbutzExample, 'the religious-kibbutz case must appear as a bounded example');
+assert.match(religiousKibbutzExample.caveat, /does not establish equal practice/);
+assert.ok(religiousCriticisms.includes('The religious-kibbutz case adds a safeguard'));
+assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Read Katz and Kaye in full')));
+
 const nationalityEntry = ENCYCLOPEDIA_ENTRIES['ethnic-nationalist'];
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
   ['reichNationality1913', 'primary', '1913-07-22', 'medium'],
