@@ -665,6 +665,36 @@ assert.ok(austrianExample, 'Austria must appear as a bounded Christian-democrati
 assert.match(austrianExample.caveat, /not be used as a present-day country classification/);
 assert.ok(christianCriticisms.some(({ text }) => text?.startsWith('The Austrian case adds a postwar rupture-and-continuity safeguard')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read the complete German text and publication history of the ÖVP')));
+for (const [sourceId, role, date, languages, confidence] of [
+  ['cduBerlinFoundingAppeal1945', 'primary', '1945-06-26', ['German', 'English translation'], 'high'],
+  ['cduColognePrinciples1945', 'primary', '1945-07-01', ['German'], 'medium'],
+  ['kasCduFoundingWestZones', 'secondary', null, ['German'], 'high'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a German Christian-democratic founding trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const germanFoundingHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const germanFoundingTimeline = germanFoundingHistory.find(({ period }) => period.startsWith('1945–1950: German'));
+assert.ok(germanFoundingTimeline, 'the German Christian-democratic founding timeline case must remain visible');
+assert.ok(germanFoundingTimeline.citations.researchSourceIds.includes('cduColognePrinciples1945'));
+const germanFoundingVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('German post-Nazi supraconfessional'));
+assert.ok(germanFoundingVariant, 'the German founding case must be separated as a bounded Christian-democratic variant');
+const germanFoundingExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('German CDU founding appeal'));
+assert.ok(germanFoundingExample, 'the German founding documents must appear as a bounded historical example');
+assert.match(germanFoundingExample.caveat, /do not establish complete denazification/);
+assert.ok(christianCriticisms.some(({ text }) => text?.startsWith('The German founding case adds a rhetoric-and-consolidation safeguard')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Collate the complete German Kölner Leitsätze')));
 assert.deepEqual(Object.fromEntries(Object.entries(christianDemocracyEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -5, social: -30, authority: 20, identity: -20, foreign: 15, religion: -62 });
 
 const frenchMonarchyEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
