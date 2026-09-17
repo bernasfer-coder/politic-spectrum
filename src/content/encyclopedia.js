@@ -7283,6 +7283,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The late Ottoman constitutional experiment shows why a monarchy can be formally constitutional while remaining strongly crown-centered. The Kanûn-i Esâsî was promulgated on 23 December 1876 and was followed by a bicameral parliament, but the Sultan retained decisive executive, appointment, legislative-initiation, veto, and dissolution powers in the initial arrangement. The constitution was suspended in 1878, restored in 1908, and amended in 1909 after the Young Turk revolution; those changes strengthened parliamentary and ministerial accountability without turning the Ottoman monarchy into a simple ceremonial crown.',
+            citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013']),
+          },
+          {
+            type: 'paragraph',
             text: 'Portugal’s liberal constitutional experience shows why “constitutional monarchy” needs a dated institutional reading. The 1822 Constitution organized representative, legislative, executive, judicial, and administrative functions and stated rights to liberty, security, property, expression, equality, and petition, while the official record also preserves exclusions from citizenship. The 1826 Charter was described by the Ministry of Justice as a compromise between the 1822 principle of national sovereignty and royal prerogative, with a royal moderating function and distinct periods of operation through 1910.',
             citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice']),
           },
@@ -7343,6 +7348,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['bagehotEnglishConstitution', 'burkeReflections', 'nabucoAbolitionism'], ['oxfordMonarchyConstitution', 'journalDemocraticMonarchies', 'bpbMonarchy', 'sepColonialism']),
           },
           {
+            period: '1876–1909: late Ottoman constitutional monarchy and Meşrutiyet',
+            text: 'The Ottoman Empire’s Kanûn-i Esâsî, promulgated on 23 December 1876, created a bicameral parliament but left the Sultan with extensive executive and legislative prerogatives. The First Constitutional Period was brief: parliament was dissolved and the constitution suspended in 1878. The constitution was restored on 23 July 1908 after the Young Turk revolution; the 1908 elections, the removal of Abdülhamid II in 1909, and the August 1909 amendments shifted the balance toward parliamentary and ministerial accountability, while political coercion and imperial crisis continued. This is a Middle Eastern constitutional-monarchical case, not evidence that the Ottoman system became liberal-democratic or that later republican Turkey should be classified as monarchist.',
+            citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013']),
+          },
+          {
             period: '1820–1910: Portuguese liberal constitutional monarchy',
             text: 'The 1820 Porto revolution opened a constitutional cycle in which the 1822 Constitution articulated national representation, separated powers, and rights, while the 1826 Charter restored a stronger royal settlement. The Liberal Civil War of 1832–1834 separated liberal constitutionalism from Miguelist absolutism, and the Charter operated in distinct periods before 1910. Later electoral reforms show continuing disputes over representation rather than a completed transition to universal democracy.',
             citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
@@ -7399,6 +7409,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Both the monarch and representative institutions claim meaningful political legitimacy, producing a divided executive or recurring constitutional conflict.',
                 relation: 'It differs from a ceremonial crown because the monarch can shape government formation, legislation, emergency power, or foreign policy; stability depends on clear rules and accepted limits.',
                 citations: citations(['lockeSecondTreatise', 'bagehotEnglishConstitution'], ['oxfordConstitutionalMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordMonarchyConstitution']),
+              },
+              {
+                label: 'Ottoman constitutional monarchy / Meşrutiyet, 1876–1909',
+                distinction: 'The Kanûn-i Esâsî combined a hereditary Sultanate with a bicameral parliament, but the initial constitution preserved extensive royal control; restoration in 1908 and amendments in 1909 increased parliamentary and ministerial accountability.',
+                relation: 'This is a dated imperial and Middle Eastern variant of limited or conflictual constitutional monarchy. It should not be equated with a ceremonial parliamentary crown, a liberal democracy, or the later Turkish republic; formal constitutional change and political practice must be kept separate.',
+                citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013']),
               },
               {
                 label: 'Portuguese liberal constitutional monarchy, 1820–1910',
@@ -7536,6 +7552,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
               },
               {
+                name: 'Late Ottoman constitutional monarchy and Meşrutiyet',
+                period: 'Ottoman Empire, 1876–1909; constitutional institutions continued through 1918',
+                match: 'The Sultanate was joined to a written constitution and bicameral parliament in 1876, suspended after the First Constitutional Period, then restored in 1908 with elections and amended in 1909 to strengthen ministerial and parliamentary accountability.',
+                caveat: 'This was an imperial, multilingual, and politically coercive constitutional order, not a single liberal-democratic model. The available official overview and scholarly abstracts establish the constitutional sequence, but a full comparison of provincial representation, minority communities, censorship, wartime rule, and implementation remains open.',
+                citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013']),
+              },
+              {
                 name: 'Contemporary democratic parliamentary monarchies',
                 period: 'Contemporary; country- and constitution-specific',
                 match: 'Several states retain hereditary heads of state within competitive parliamentary systems, where the democratic question centers on ministerial accountability, constitutional conventions, public finance, succession, and the boundary between symbolism and reserve power.',
@@ -7600,6 +7623,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The late Ottoman case makes the formal-practice distinction especially important. A written constitution and elected chambers coexisted first with strong Sultanate powers, then with suspension, restoration, parliamentary pressure, and amendments that redistributed authority. Calling the arrangement simply “constitutional” or “authoritarian” loses this sequence; the evidence supports a dated constitutional monarchy with contested accountability, not a single score for all Ottoman rule or a direct classification of later Turkey.',
+            citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013']),
+          },
+          {
+            type: 'paragraph',
             text: 'A third criticism concerns social hierarchy, gender, and privilege. Court expenditure, titles, estates, aristocratic access, dynastic marriage, and succession rules can reproduce class and gender inequality even when the monarch does not govern day to day. Equal succession, transparent public finance, anti-discrimination rules, independent oversight, and the removal of legally privileged status can reduce—but do not erase—the structural objection to inherited office.',
             citations: citations(['burkeReflections', 'lockeSecondTreatise', 'nabucoAbolitionism'], ['bpbMonarchy', 'oxfordConstitutionalMonarchy', 'vdem']),
           },
@@ -7653,14 +7681,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
-      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract', 'portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996'],
-      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. The Portuguese addition is a bounded Iberian case: official Portuguese sources, a primary-text link, and a Portuguese scholarly abstract/metadata are used with their limits visible; it does not establish a national score or a complete account of participation. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; no PDF visual review or full-monograph reading is claimed for that addition.',
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract', 'portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996', 'ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013'],
+      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. The Portuguese addition is a bounded Iberian case: official Portuguese sources, a primary-text link, and a Portuguese scholarly abstract/metadata are used with their limits visible; it does not establish a national score or a complete account of participation. The Ottoman addition is a bounded Middle Eastern and imperial case: a contemporary diplomatic record, official Turkish parliamentary history, and two scholarly studies establish the constitutional sequence from 1876 through 1909 without claiming a complete Ottoman-language collation or a full account of provincial, communal, wartime, or colonial practice. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; no PDF visual review or full-monograph reading is claimed for that addition.',
     },
     researchGaps: [
       'Add French-language scholarship on divine-right monarchy, the French constitutional monarchies of 1791–1792, the Restoration, the July Monarchy, the Second Empire, royalism, republicanism, colonial monarchy, and the constitutional doctrines of the nineteenth century.',
       'Expand German-language research on medieval and early-modern kingship, Prussian constitutionalism, the German Empire, monarchy and nationalism, dynastic legitimacy, the Weimar transition, and contemporary comparative debates about constitutional monarchy.',
       'Add Portuguese- and Spanish-language scholarship on the Brazilian Empire, Iberian constitutional monarchies, Portuguese colonial monarchy, Latin American royalism and republicanism, abolition, Indigenous peoples, slavery, and postcolonial memory.',
       'Add non-European research on African, Middle Eastern, South Asian, Southeast Asian, Pacific, and Indigenous royal institutions, including elective succession, sacred kingship, customary law, colonial transformation, and contemporary constitutional reform.',
+      'Collate the Ottoman Kanûn-i Esâsî in Ottoman Turkish with the contemporary English, French, Arabic, Greek, Armenian, and later Turkish editions, including the 1909 amendments. The present case uses a contemporary diplomatic record and official institutional history, not a multilingual primary-text edition.',
+      'Compare the late Ottoman parliament, elections, provincial representation, non-Muslim communities, censorship, ministerial responsibility, military intervention, and wartime governance through the full constitutional and electoral scholarship before making claims about implementation or participation.',
+      'Distinguish Ottoman constitutional monarchy from the later Turkish republican and constitutional trajectories. Isiksel’s concept of authoritarian constitutionalism is a useful analytical lens, not a complete classification of the Ottoman Empire or evidence for a present-day country score.',
       'Add comparative legal evidence on succession, regency, abdication, reserve powers, ministerial countersignature, royal immunity, public finance, court privilege, referendums, emergency powers, and judicial review across current monarchies and republics.',
       'Add specialist research on women and succession, marriage and citizenship, class and aristocracy, religion and minority rights, colonial extraction, Indigenous sovereignty, reparations, and the public meaning of royal ceremony.',
       'Test claims about monarchies and democratic stability with dated comparative data on civil liberties, executive constraints, party competition, peaceful alternation, corruption, welfare, inequality, public opinion, and the actual exercise of royal power.',

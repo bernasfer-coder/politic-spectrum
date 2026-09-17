@@ -1681,6 +1681,43 @@ assert.ok(portugueseExample, 'Portugal must appear as a bounded historical examp
 assert.match(portugueseExample.caveat, /not a classification of present-day Portugal/);
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Portuguese 1822 Constitution')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Research Portuguese electoral law')));
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['ottomanConstitution1876', 'primary', '1876-12-26'],
+  ['tbmmOttomanConstitutionHistory', 'secondary', null],
+  ['kayaliOttomanElections1919', 'secondary', '1995-08-01'],
+  ['isikselAuthoritarianConstitutionalism2013', 'secondary', '2013-07-01'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Ottoman monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish the documentary record from historical interpretation`);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs an encyclopedia backlink`);
+}
+assert.deepEqual(
+  Object.fromEntries(Object.entries(monarchistEntry.dimensionInterpretations).map(([id, dimension]) => [id, dimension.score])),
+  { economic: -12, social: -48, authority: 52, identity: -42, foreign: -18, religion: -52 },
+  'the Ottoman case must not silently recalibrate the didactic monarchist six-axis profile',
+);
+const ottomanHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline;
+const ottomanTimeline = ottomanHistory.find(({ period }) => period.startsWith('1876–1909:'));
+assert.ok(ottomanTimeline, 'the late Ottoman constitutional-monarchy timeline case must remain visible');
+assert.ok(ottomanTimeline.citations.researchSourceIds.includes('tbmmOttomanConstitutionHistory'));
+assert.ok(ottomanTimeline.citations.researchSourceIds.includes('kayaliOttomanElections1919'));
+const ottomanVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Ottoman constitutional monarchy'));
+assert.ok(ottomanVariant, 'the Ottoman case must be separated as a dated constitutional variant');
+const ottomanExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Late Ottoman constitutional monarchy'));
+assert.ok(ottomanExample, 'the late Ottoman case must appear as a bounded historical example');
+assert.match(ottomanExample.caveat, /imperial, multilingual/);
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Ottoman Kanûn-i Esâsî')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Compare the late Ottoman parliament')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Distinguish Ottoman constitutional monarchy')));
 
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
