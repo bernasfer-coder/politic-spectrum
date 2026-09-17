@@ -10578,6 +10578,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Ethiopia supplies a bounded African and anti-colonial case. Italy invaded Ethiopia in 1935, while Haile Selassie’s League appeal defended Ethiopian independence and collective-security obligations. The Library of Congress record anchors the speech’s date and provenance; Braukämper, Abebe and Seyoum broaden the view toward southern communities, North Shewa peasants, resistance phases, collaboration and coercion. These sources do not produce a score for every Ethiopian community, imperial-era institution or present-day Ethiopia.',
             citations: citations([], ['locSelassieSpeech1936', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The Philippines supplies a bounded Pacific and U.S. imperial case. The 1898 Treaty of Paris records an inter-state cession, while the U.S. State Department’s historical overview describes Filipino independence claims, the 1899–1902 war, military and civil pacification, and a later path to independence. Charbonneau’s regional study shows how U.S. military governance in Mindanao and the Sulu Archipelago joined labor discipline, racialized administration, private enterprise and coercion; Lafferty connects colonial conquest to post-1946 base arrangements. These sources are not a score for present-day Philippines or a complete account of Filipino, Moro, Lumad or U.S. experiences.',
+            citations: citations([], ['treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023']),
+          },
         ],
       },
       {
@@ -10624,6 +10629,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Ethiopian case prevents a simple equation of conquest with uniform local consent or uniform resistance. Braukämper’s southern Ethiopian evidence emphasizes that some collaboration and resistance were shaped by prior exploitation by Ethiopian imperial elites and by Italian divide-and-rule; Abebe’s North Shewa study describes peasant guerrilla resistance alongside punishment, displacement, malnutrition and disease; Seyoum distinguishes an initial transitional phase from a later popular phase. These are regional and temporal findings, not evidence that Ethiopia was one political actor or that every local response had the same meaning.',
             citations: citations([], ['braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Philippine case shows how imperial control can move from conquest to military administration, civil reform and unequal postcolonial security relationships. The treaty’s legal transfer did not settle the conflict: the U.S. State Department records that Filipino nationalists sought independence, while U.S. forces imposed colonial control and later combined war with a policy of attraction. Charbonneau’s Mindanao and Sulu research adds a regional layer in which army officers served as civil administrators and labor, schooling, roads, markets and coercion were connected. Lafferty’s analysis extends the question beyond 1946 by examining the asymmetry of base agreements; it is a legal argument, not proof that every later relationship was simply colonial rule.',
+            citations: citations([], ['treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023']),
+          },
         ],
       },
       {
@@ -10654,6 +10664,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1895–1945 — Colonial Taiwan as a military-administrative gateway',
             text: 'Japan’s Taiwan Government-General began with military administration after the 1895 cession and later moved toward civil administration while retaining a military governor and military command. Shirane’s multilingual history presents Taiwan not as a passive peripheral possession but as a contested regional gateway through which Japanese officials, Taiwanese subjects, police, merchants, and soldiers participated in expansion toward South China and Southeast Asia. This preserves both imperial coercion and subject agency without treating opportunity or infrastructure as evidence that colonial rule was benign.',
             citations: citations([], ['jacarTaiwanGovernorGeneral1895', 'shiraneImperialGateway2022']),
+          },
+          {
+            period: '1898–1914 — U.S. conquest, colonial war and military governance in the Philippines',
+            text: 'The Treaty of Paris transferred Spain’s Philippine sovereignty claim to the United States for $20 million, but the legal transfer did not settle the islands’ political future. The U.S. State Department records that Filipino nationalists sought independence and that fighting began in February 1899, followed by military and civil pacification and a gradual path toward autonomy. Charbonneau’s study of Mindanao and the Sulu Archipelago shows a longer military-governance period in which army officers administered territory and connected labor discipline, racialized classification, markets, schooling and coercion. The case is not reducible to either a treaty or a single “benevolent” or “violent” narrative.',
+            citations: citations([], ['treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021']),
           },
           {
             period: 'July 1885 — colonial expansion disputed in the French Chamber',
@@ -10747,6 +10762,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022']),
               },
               {
+                label: 'U.S. Philippine colonial militarism and postcolonial basing, 1898–present',
+                distinction: 'Combines conquest and military occupation with civilizing and developmental administration, racialized labor governance, later formal independence, and continuing disputes over unequal military access and consent.',
+                relation: 'A bounded Pacific case showing that imperial control can shift from direct colonial rule to security agreements. It is not a single uninterrupted regime or proof that every U.S.–Philippine relationship after 1946 remained colonial.',
+                citations: citations([], ['treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023']),
+              },
+              {
                 label: 'Humanitarian or liberal interventionism',
                 distinction: 'Justifies external force through protection of civilians, human rights, collective security, or international order rather than conquest or permanent rule.',
                 relation: 'The distinction from imperialism depends on authorization, purpose, duration, consent, accountability, post-conflict control, and whether affected people gain equal political agency; benevolent language is not sufficient evidence.',
@@ -10798,6 +10819,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Imperial Japan is a bounded example of the compound profile, especially from the late nineteenth century through 1945. Its Meiji constitutional order preserved a legislature and formal rights while assigning the emperor supreme command; the empire then established and maintained unequal rule in Taiwan and annexed Korea. Pida-Reese’s account connects the later collapse of party government to weak civilian control, while Shirane shows that Taiwan’s colonial administration involved strategic expansion and the actions of Taiwanese subjects as well as Japanese officials. This is not an exact six-axis match for every Japanese institution, colony, or resident.',
             citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The U.S. Philippines case is a bounded example of military-imperial transition. The 1898 treaty records the inter-state cession; the 1899–1902 war records that Filipino nationalists sought independence rather than a change of colonial ruler; and the later colonial order combined military power with civil administration, schooling, labor programmes and economic development. Charbonneau’s Mindanao and Sulu study shows that these projects were uneven and contested, while Lafferty argues that post-1946 base arrangements require a separate consent and asymmetry analysis. This is not an exact six-axis match for the United States, the Philippines, or every community in the archipelago.',
+            citations: citations([], ['treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023']),
           },
           {
             type: 'paragraph',
@@ -10874,6 +10900,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Philippine case adds a safeguard against describing colonial “development” separately from military power. Education, roads, labor regulation and civil government can coexist with occupation, racialized hierarchy, forced discipline, and unequal political membership. Charbonneau’s study makes these connections visible in Mindanao and the Sulu Archipelago, while Lafferty’s later legal argument asks whether formal independence and base consent should be treated as a new relationship or as an afterlife of conquest. Both are bounded interpretations, not a general verdict on all U.S. policy or every Philippine institution.',
+            citations: citations([], ['charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023']),
+          },
+          {
+            type: 'paragraph',
             text: 'The second risk is using imperialism as a moral synonym for any foreign involvement. Trade, diplomacy, peacekeeping, sanctions, humanitarian protection, alliance support, and development finance can be beneficial, harmful, or mixed depending on power and accountability. The classification should disclose whether there is coercion, unequal consent, territorial control, extraction, political tutelage, racial or legal hierarchy, and a durable inability of the affected population to alter the relationship.',
             citations: citations(['hobsonImperialism', 'walzerJustWars'], ['oxfordImperialism', 'unCharterForce', 'foreignPolicy', 'oxfordPoliticalEconomyMilitarism']),
           },
@@ -10927,8 +10958,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars', 'arendtTotalitarianism', 'burkeReflections', 'kantPerpetualPeace'],
-      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022'],
-      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context. The Imperial Japan addition is a bounded pre-1945 Asian case using an official constitutional presentation, Japanese archival records, and two academic interpretations; it does not establish a whole-country score, a single causal account, or equal experience across Japan’s subject territories. The Ethiopia addition is a bounded 1935–1941 African and anti-colonial case using a Library of Congress provenance record and three attributed scholarly leads; it does not establish a national score, uniform local response, or complete Ethiopian, Italian or League history.',
+      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022', 'treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023'],
+      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context. The Imperial Japan addition is a bounded pre-1945 Asian case using an official constitutional presentation, Japanese archival records, and two academic interpretations; it does not establish a whole-country score, a single causal account, or equal experience across Japan’s subject territories. The Ethiopia addition is a bounded 1935–1941 African and anti-colonial case using a Library of Congress provenance record and three attributed scholarly leads; it does not establish a national score, uniform local response, or complete Ethiopian, Italian or League history. The Philippines addition is a bounded 1898–1914 conquest and military-governance case with a separate post-1946 basing question; it does not establish a whole-country score, a single uninterrupted imperial relationship, or the experience of every Filipino, Moro, Lumad, Spanish or U.S. actor.',
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Turkish, Hindi, Chinese, Japanese, Korean, and African languages on empire, militarism, military labor, and anti-colonial political thought.',
@@ -10949,6 +10980,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Collate the Japanese original and authoritative translation history of the 1889 Constitution, the Imperial Diet debates, military ordinances, and civil–military scholarship in Japanese. Article 11 and the official English presentation establish a legal anchor, not the full institutional meaning or practice of supreme command.',
       'Read the complete Korea annexation treaty record in Japanese and Korean, including diplomatic pressure, Korean constitutional and public responses, and later historiography. The official archival translation documents the treaty’s legal form but does not resolve consent, coercion, legitimacy, or lived consequences.',
       'Extend the Taiwan case through Taiwanese-language and Japanese-language testimony, colonial budgets, police and military records, education and labor evidence, Indigenous histories, and competing scholarship. Shirane’s selected open sections illuminate a regional gateway and subject agency but do not establish comprehensive outcomes or erase coercion.',
+      'Collate Philippine, Spanish, and U.S. primary records on the Treaty of Paris, Filipino Republic, Philippine-American War, Moro Province, military government, labor and land policy, and post-1946 base agreements. Add Filipino-language, Tagalog, Cebuano, Tausūg, Maranao, and Lumad scholarship; test Charbonneau’s regional findings and Lafferty’s legal argument against local archives and treaty practice before extending the case or assigning historical score ranges.',
     ],
   },
   'national-socialist': {

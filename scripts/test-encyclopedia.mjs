@@ -1062,6 +1062,35 @@ assert.deepEqual(Object.fromEntries(Object.entries(imperialJapanEntry.dimensionI
 assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate the Japanese original')));
 assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Korea annexation treaty')));
 assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Extend the Taiwan case')));
+for (const [sourceId, evidenceRole, publicationDate, language, confidence] of [
+  ['treatyParisPhilippines1898', 'primary', '1898-12-10', 'English', 'high'],
+  ['usStatePhilippineWar1899', 'secondary', '2013-02-26', 'English', 'medium'],
+  ['charbonneauColonizingWorkers2021', 'secondary', '2021-03-29', 'English', 'high'],
+  ['laffertyPhilippineBases2023', 'secondary', '2023', 'English', 'medium'],
+]) {
+  assert.ok(imperialJapanEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Philippines reference trail`);
+  assert.ok(JSON.stringify(imperialJapanEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const philippinesTimeline = imperialJapanEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(philippinesTimeline.some(({ period }) => period.startsWith('1898–1914 — U.S. conquest')));
+const philippinesVariant = imperialJapanEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('U.S. Philippine colonial militarism'));
+assert.ok(philippinesVariant, 'Philippine colonial militarism must be a separate bounded variant');
+const philippinesExample = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The U.S. Philippines case'));
+assert.ok(philippinesExample, 'Philippine case must appear as a bounded example');
+assert.match(philippinesExample.text, /not an exact six-axis match/);
+assert.ok(imperialJapanEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Philippine case adds a safeguard')));
+assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate Philippine, Spanish, and U.S. primary records')));
 
 const weimarEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
