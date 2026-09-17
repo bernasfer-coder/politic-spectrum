@@ -4209,38 +4209,38 @@ export const ENCYCLOPEDIA_ENTRIES = {
       economic: {
         score: 55,
         label: 'Moderately collectivist / anti-extractive',
-        explanation: 'Colonial land seizure, forced labor, unequal trade, and resource extraction are commonly treated as political-economic domination. Remedies range from village self-sufficiency and land reform to state-led development, socialism, cooperative ownership, or regulated mixed economies; independence alone does not determine the economic axis. Aharon deGrassi’s abstract connects Cabral’s agronomy, colonial land relations, and organizing; this adds an agrarian perspective, not a measured coordinate.',
-        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism', 'degrassiCabralSocionatures']),
+        explanation: 'Colonial land seizure, forced labor, unequal trade, and resource extraction are commonly treated as political-economic domination. Remedies range from village self-sufficiency and land reform to state-led development, socialism, cooperative ownership, or regulated mixed economies; independence alone does not determine the economic axis. Aharon deGrassi’s abstract connects Cabral’s agronomy, colonial land relations, and organizing; this adds an agrarian perspective, not a measured coordinate. In Mozambique, Bavo and Coelho connect education in liberated zones and after independence to state-building, while Vines documents socialist transformation, extensive state control, communal-village policy, and tensions with peasant agriculture; this is a dated case illustration, not a score recalibration.',
+        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism', 'degrassiCabralSocionatures', 'bavoCoelhoMozambiqueEducation2022', 'vinesFrelimoDemocracy2023']),
       },
       social: {
         score: 50,
         label: 'Moderately progressive / emancipatory',
-        explanation: 'Anti-colonial projects usually reject racial hierarchy, imperial subjecthood, and exclusion from equal citizenship. The score is limited because movements have also reproduced patriarchy, class hierarchy, ethnic majorities, religious exclusions, or restrictions on dissent after independence. Gomes’s oral-history research cautions against reading women’s wartime participation as automatic emancipation.',
-        citations: citations(['duboisBlackReconstruction', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism', 'gomesWomenLiberation']),
+        explanation: 'Anti-colonial projects usually reject racial hierarchy, imperial subjecthood, and exclusion from equal citizenship. The score is limited because movements have also reproduced patriarchy, class hierarchy, ethnic majorities, religious exclusions, or restrictions on dissent after independence. Gomes’s oral-history research cautions against reading women’s wartime participation as automatic emancipation. Bavo and Coelho show how Mozambican educational reconstruction was framed through dignity, political formation, and national inclusion while retaining language hierarchies and unfinished inclusion; that bounded history is not evidence of uniform social outcomes.',
+        citations: citations(['duboisBlackReconstruction', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism', 'gomesWomenLiberation', 'bavoCoelhoMozambiqueEducation2022']),
       },
       authority: {
         score: 10,
         label: 'Mixed: organized liberation with anti-domination safeguards',
-        explanation: 'Collective organization, discipline, and sometimes a strong liberation state may be treated as necessary under colonial conditions, while self-rule and popular participation are presented as the goal. The profile therefore does not equate resistance organization with either libertarianism or authoritarianism.',
-        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'lockeSecondTreatise', 'duboisBlackReconstruction'], ['sepColonialism', 'vdem']),
+        explanation: 'Collective organization, discipline, and sometimes a strong liberation state may be treated as necessary under colonial conditions, while self-rule and popular participation are presented as the goal. The profile therefore does not equate resistance organization with either libertarianism or authoritarianism. Brandão analyzes FRELIMO’s movement-to-state transition through violence, internal change, class contradiction, and geopolitics; Vines separately documents the later 1977 Marxist–Leninist vanguard-party structure and party-nominated, indirect assemblies. The Mozambique case shows why insurgent organization and post-independence institutions must be time-indexed rather than collapsed into one authority score.',
+        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'lockeSecondTreatise', 'duboisBlackReconstruction'], ['sepColonialism', 'vdem', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023']),
       },
       identity: {
         score: 65,
         label: 'Strongly self-determination oriented',
-        explanation: 'Shared history, language, territory, race, culture, or Indigenous nationhood can create the solidarity needed to resist imperial rule. Many thinkers also connect self-determination to Pan-African, Asian, internationalist, or universal human commitments, so liberation identity is not automatically ethnic nationalism or permanent national closure. Cabral’s cultural argument rejects treating Africa or a race as culturally uniform.',
-        citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'duboisBlackReconstruction', 'andersonImaginedCommunities'], ['sepColonialism', 'sepNationalism', 'panAfricanism', 'cabralCulturePortuguese']),
+        explanation: 'Shared history, language, territory, race, culture, or Indigenous nationhood can create the solidarity needed to resist imperial rule. Many thinkers also connect self-determination to Pan-African, Asian, internationalist, or universal human commitments, so liberation identity is not automatically ethnic nationalism or permanent national closure. Cabral’s cultural argument rejects treating Africa or a race as culturally uniform. The UN-preserved FRELIMO statement frames independence and sovereignty as the objective of resistance to Portuguese colonialism, while Bavo and Coelho show that post-independence language policy sought a common national medium but could also retain hierarchy; national unity is therefore a contested political project, not simple cultural erasure.',
+        citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'duboisBlackReconstruction', 'andersonImaginedCommunities'], ['sepColonialism', 'sepNationalism', 'panAfricanism', 'cabralCulturePortuguese', 'unDecolonizationNo1Frelimo1974', 'bavoCoelhoMozambiqueEducation2022']),
       },
       foreign: {
         score: 30,
         label: 'Somewhat restraint-oriented / anti-imperial',
-        explanation: 'The central foreign-policy demand is non-domination: withdrawal of imperial control, sovereign equality, and the ability to choose political and economic alliances. Nonviolence, diplomacy, nonalignment, and international solidarity coexist historically with armed resistance; the existence of a liberation struggle is not a universal endorsement of force.',
-        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'kantPerpetualPeace', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
+        explanation: 'The central foreign-policy demand is non-domination: withdrawal of imperial control, sovereign equality, and the ability to choose political and economic alliances. Nonviolence, diplomacy, nonalignment, and international solidarity coexist historically with armed resistance; the existence of a liberation struggle is not a universal endorsement of force. The FRELIMO statement preserved in the UN decolonization series and the FRUS record of the Lusaka agreement illustrate two different evidentiary layers: a movement’s sovereignty claim and a diplomatic account of cease-fire, transition, and independence. Neither makes all later foreign policy pacifist or proves a single model of alliance.',
+        citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'kantPerpetualPeace', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy', 'unDecolonizationNo1Frelimo1974', 'frusMozambiqueLusaka1974']),
       },
       religion: {
         score: -25,
         label: 'Religiously informed solidarity, with pluralist and secular variants',
-        explanation: 'Religious ethics, institutions, and identities have supported anti-colonial mobilization in many settings, but the family does not require clerical rule or religious law. Secular constitutionalism, religious pluralism, and faith-based liberation can all appear within it; the public role of religion must be specified case by case.',
-        citations: citations(['gandhiHindSwaraj', 'spinozaPolitical', 'lockeLetterToleration'], ['sepColonialism', 'sepReligionPolitics', 'panAfricanism']),
+        explanation: 'Religious ethics, institutions, and identities have supported anti-colonial mobilization in many settings, but the family does not require clerical rule or religious law. Secular constitutionalism, religious pluralism, and faith-based liberation can all appear within it; the public role of religion must be specified case by case. Vines’s historical account of post-1975 FRELIMO records nationalization of Catholic institutions and pressure on Indigenous religions and traditional authorities. This illustrates how anti-colonial socialist state-building could conflict with religious and customary autonomy; it does not establish that anti-colonial liberation is inherently anti-religious.',
+        citations: citations(['gandhiHindSwaraj', 'spinozaPolitical', 'lockeLetterToleration'], ['sepColonialism', 'sepReligionPolitics', 'panAfricanism', 'vinesFrelimoDemocracy2023']),
       },
     },
     sections: [
@@ -4268,6 +4268,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Egyptian Suez case distinguishes an act of nationalization, diplomatic reporting, a leader’s public argument and later scholarship. It addresses economic sovereignty without equating national independence with internal democracy or making Nasserism representative of all Middle Eastern liberation politics.',
             citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The Mozambique case supplies a bounded movement-to-state comparison. A June 1974 United Nations decolonization publication preserves a contemporaneous FRELIMO statement framing independence and sovereignty as the objective of the struggle against Portuguese colonialism. The record is a movement statement in an English UN witness, not an independent measure of representation or implementation; the anti-colonial demand must be kept distinct from FRELIMO’s later post-independence institutional design.',
+            citations: citations([], ['unDecolonizationNo1Frelimo1974']),
+          },
         ],
       },
       {
@@ -4293,6 +4298,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The fourth element is strategy. Constitutional reform, elections, civil disobedience, strikes, boycotts, international advocacy, guerrilla warfare, and interstate diplomacy have all appeared in anti-colonial histories. A descriptive profile must distinguish the moral or strategic argument for a method from the historical conditions in which it was used, and it must not turn accounts of colonial violence into a general recommendation of violence in ordinary politics.',
             citations: citations(['gandhiHindSwaraj', 'fanonWretchedEarth', 'kantPerpetualPeace'], ['sepColonialism', 'foreignPolicy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Mozambique shows why anti-colonial liberation and postcolonial ideology need separate rows. Bavo and Coelho’s Portuguese study describes FRELIMO education in liberated zones and after 1975 as linked to dignity, political formation, a common national identity, and state-building, while noting colonial language hierarchy and unfinished educational inclusion. Brandão’s Portuguese study treats violence in the 1962–1989 transition from insurgency to constituted power. Vines then documents the 1975–1990 socialist and vanguard-party turn, including both social programmes and coercive or centralizing practices. These sources support a dated case comparison, not one timeless FRELIMO label.',
+            citations: citations([], ['bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023']),
           },
           {
             type: 'paragraph',
@@ -4366,6 +4376,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction'], ['sepColonialism', 'panAfricanism', 'foreignPolicy']),
           },
           {
+            period: '1962–1975: FRELIMO’s anti-colonial movement and negotiated independence',
+            text: 'The UN’s June 1974 decolonization publication preserves a contemporaneous FRELIMO statement presenting independence and sovereignty as the objective of the struggle against Portuguese colonialism. The FRUS record reports that Portugal and FRELIMO reached an agreement at Lusaka on 6 September and signed it on 7 September 1974, with a cease-fire, a transitional government, and independence on 25 June 1975. The first source is a movement statement and the second a diplomatic record of transition; together they document a bounded case, not every Mozambican experience or a complete movement history.',
+            citations: citations([], ['unDecolonizationNo1Frelimo1974', 'frusMozambiqueLusaka1974']),
+          },
+          {
+            period: '1975–1990: FRELIMO’s socialist state-building and institutional turn',
+            text: 'Bavo and Coelho describe education in liberated zones and after independence as part of political formation, national dignity, culture and state-building, while retaining a caution about language hierarchy and incomplete inclusion. Brandão analyzes the relationship between violence and politics as FRELIMO moved from insurgency toward constituted power between 1962 and 1989. Vines documents the post-1975 radical socialist transformation, the 1977 Marxist–Leninist vanguard-party turn, party-nominated indirect assemblies, communal-village policy, and the later abandonment of Marxism–Leninism and introduction of a multiparty constitutional order in 1990. Social programmes and centralizing or coercive practices therefore belong in the same dated history rather than being averaged into one timeless label.',
+            citations: citations([], ['bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023']),
+          },
+          {
             period: '26 July and 15 September 1956: nationalization and subsequent public argument',
             text: 'The July decree and embassy report concern nationalization; the September speech opposes the proposed Canal Users’ Association. These are distinct documents, not interchangeable versions of one speech.',
             citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956']),
@@ -4423,6 +4443,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Connects independence to land reform, labor power, public or social ownership, class emancipation, and resistance to capitalist dependency or imperial extraction.',
                 relation: 'Overlaps with democratic and authoritarian socialism, but anti-colonial conditions, racial domination, and national development can alter the meaning of class politics.',
                 citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto'], ['sepColonialism', 'sepSocialism', 'panAfricanism']),
+              },
+              {
+                label: 'Mozambican liberation and postcolonial state-building',
+                distinction: 'FRELIMO joined a struggle for national independence with education, national identity, and later socialist state-building in a bounded 1962–1990 historical sequence.',
+                relation: 'A Lusophone African case, not a template for all national liberation: the movement statement, negotiated independence record, educational history, violence analysis, and post-1975 party-state evidence describe different layers and must not be averaged into one profile.',
+                citations: citations([], ['unDecolonizationNo1Frelimo1974', 'frusMozambiqueLusaka1974', 'bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023']),
               },
               {
                 label: 'Cultural recovery versus uncritical restoration',
@@ -4554,6 +4580,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['sepColonialism', 'panAfricanism']),
               },
               {
+                name: 'FRELIMO: Mozambique from liberation movement to party-state',
+                period: 'Mozambique, 1962–1990; anti-colonial struggle and first fifteen years of independence',
+                match: 'A documented case connecting self-determination, education and nation-building, socialist transformation, and the difficult conversion of an insurgent movement into state power.',
+                caveat: 'UN and FRUS records evidence the independence claim and transition; Bavo and Coelho, Brandão, and Vines show distinct educational, violence, and institutional layers. This is not a current-country classification, not proof of uniform support, and not evidence that anti-colonial movements generally become Marxist–Leninist or party-dominant.',
+                citations: citations([], ['unDecolonizationNo1Frelimo1974', 'frusMozambiqueLusaka1974', 'bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023']),
+              },
+              {
                 name: 'Guinea-Bissau: women’s organization and liberation memory',
                 period: 'Early-1960s UDEMU, examined in Gomes’s 2021 study',
                 match: 'A case of participation and organizational limits inside an independence movement.',
@@ -4650,6 +4683,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'evidence-note',
+            text: 'A Mozambique-specific safeguard is the movement-to-state break. The UN FRELIMO statement and Lusaka record support a claim about sovereignty and negotiated independence, while later scholarship documents socialist educational and state-building aims, violence in the insurgent-to-state transformation, and institutional centralization. Treating all layers as one “liberation” score would conceal both the emancipatory claim and the coercive or centralizing practices; the site therefore time-indexes the case and does not infer present ideology.',
+            citations: citations([], ['unDecolonizationNo1Frelimo1974', 'frusMozambiqueLusaka1974', 'bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023']),
+          },
+          {
+            type: 'evidence-note',
             text: 'These English texts have different evidentiary limits. The decree’s original Arabic and gazette publication were not collated; the telegram is a U.S. diplomatic report; the speech is an edited excerpt with an unidentified translator; Salem was consulted at publisher-summary level. No promise about navigation, compensation, popular support or development is treated as an observed result. No present-day Egyptian position or new coordinate is inferred.',
             citations: citations([], ['suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020']),
           },
@@ -4658,11 +4696,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism', 'nabucoAbolitionism', 'lockeSecondTreatise', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'spinozaPolitical', 'lockeLetterToleration', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020', 'suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020'],
-      editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
+      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020', 'suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020', 'unDecolonizationNo1Frelimo1974', 'frusMozambiqueLusaka1974', 'bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023'],
+      editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. This pass adds a bounded Mozambique/FRELIMO case for 1962–1990, separating movement and diplomatic evidence of independence from post-independence educational, socialist, party-state, and violence analyses. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
     },
     researchGaps: [
-      'Add country-specific scholarship for Algeria, Ghana, India, Indonesia, Kenya, Mozambique, Angola, Guinea-Bissau, Brazil, the Caribbean, the Pacific, and Indigenous polities, with local historians and community reviewers where appropriate.',
+      'This pass adds a bounded Mozambique/FRELIMO case for 1962–1990 through a UN movement-statement witness, a FRUS diplomatic record, Portuguese educational history, Portuguese scholarship on violence, and Vines’s institutional chapter. Still add country-specific scholarship for Algeria, Ghana, India, Indonesia, Kenya, Angola, Guinea-Bissau, Brazil, the Caribbean, the Pacific, and Indigenous polities, with local historians and community reviewers where appropriate; compare the Mozambique sources with fuller movement, language, regional, gender, religious, customary-authority, and post-independence records.',
       'Expand the multilingual record with French, Portuguese, German, Arabic, Spanish, Hindi, Gujarati, Urdu, Bengali, Swahili, Amharic, and other relevant-language editions, translations, archives, and secondary scholarship.',
       'Add comparative research on women’s organizing, caste, class, labor, disability, sexuality, religion, minority protection, and Indigenous jurisdiction within liberation movements rather than treating the movement as a single voice.',
       'Add primary and scholarly sources on Nkrumah, Cabral, Senghor, Ambedkar, Nehru, Ho Chi Minh, Sukarno, José Rizal, Eduardo Mondlane, Amílcar Cabral, and other regional thinkers, preserving disagreements instead of creating one global canon.',

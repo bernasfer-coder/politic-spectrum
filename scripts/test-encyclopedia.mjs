@@ -1743,6 +1743,26 @@ for (const [sourceId, evidenceRole, publicationDate] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anti-colonial-liberation'], `${sourceId} must stay within this entry`);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['unDecolonizationNo1Frelimo1974', 'primary', '1974-06', ['English translation']],
+  ['frusMozambiqueLusaka1974', 'primary', null, ['English']],
+  ['bavoCoelhoMozambiqueEducation2022', 'secondary', '2022', ['Portuguese', 'English abstract', 'Spanish abstract']],
+  ['brandaoFrelimoViolence2023', 'secondary', '2023-04-04', ['Portuguese']],
+  ['vinesFrelimoDemocracy2023', 'secondary', '2023', ['English']],
+]) {
+  assert.ok(antiColonialEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anti-colonial reference trail`);
+  assert.ok(JSON.stringify(antiColonialEntry).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anti-colonial-liberation'], `${sourceId} must stay within this entry`);
+}
 const cabralPartyPrinciples = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-cabralPartyPrinciples1965');
 const dalaquaDemocraticFreedom = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-dalaquaDemocraticFreedom2020');
 assert.match(cabralPartyPrinciples.note, /printed pp\. 29–35 \(PDF pages 43–49\)/, 'printed and PDF page numbers must remain distinguishable');
@@ -1755,6 +1775,17 @@ assert.match(antiColonialDescription, /implemented without reopening debate/, 't
 assert.match(antiColonialDescription, /not an independent finding/, 'philosophical interpretation must not certify institutional outcomes');
 const antiColonialEvidenceNotes = antiColonialEntry.sections.find(({ id }) => id === 'criticisms').blocks.filter(({ type }) => type === 'evidence-note').map(({ text }) => text).join(' ');
 assert.match(antiColonialEvidenceNotes, /Neither supports a current-country classification or new numerical coordinates/, 'a bounded historical reading must not silently recalibrate countries or the model');
+const antiColonialHistory = antiColonialEntry.sections.find(({ id }) => id === 'history').timeline;
+const mozambiqueMovementTimeline = antiColonialHistory.find(({ period }) => period.startsWith('1962–1975:'));
+const mozambiqueStateTimeline = antiColonialHistory.find(({ period }) => period.startsWith('1975–1990:'));
+assert.ok(mozambiqueMovementTimeline?.citations.researchSourceIds.includes('frusMozambiqueLusaka1974'), 'Mozambique independence transition needs diplomatic evidence');
+assert.match(mozambiqueMovementTimeline.text, /movement statement.*diplomatic record of transition/, 'Mozambique movement and diplomatic evidence must stay distinct');
+assert.ok(mozambiqueStateTimeline?.citations.researchSourceIds.includes('vinesFrelimoDemocracy2023'), 'Mozambique state-building timeline needs institutional evidence');
+assert.match(mozambiqueStateTimeline.text, /1977 Marxist–Leninist vanguard-party turn/, 'Mozambique institutional history must preserve the dated party-state turn');
+const mozambiqueExample = antiColonialEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name.startsWith('FRELIMO: Mozambique'));
+assert.ok(mozambiqueExample?.citations.researchSourceIds.includes('bavoCoelhoMozambiqueEducation2022'), 'Mozambique example needs Portuguese educational history');
+assert.match(mozambiqueExample.caveat, /not a current-country classification/, 'Mozambique example must not become a current-country claim');
+assert.match(antiColonialEntry.references.editorialNote, /bounded Mozambique\/FRELIMO case/, 'research boundary must remain visible in editorial metadata');
 assert.ok(antiColonialEntry.researchGaps.some((gap) => gap.includes('candidate selection, disciplinary practice')), 'independent institutional evidence must remain an explicit gap');
 
 const authoritarianCollectivistEntry = ENCYCLOPEDIA_ENTRIES['authoritarian-collectivist'];
