@@ -1201,6 +1201,44 @@ const estadoNovoSafeguard = imperialJapanEntry.sections.find(({ id }) => id === 
 assert.ok(estadoNovoSafeguard, 'Portuguese case must add an imperial self-description safeguard');
 assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate the Portuguese, Angolan, Guinean, and Mozambican')));
 
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['tocquevilleAlgeria1841French', 'primary', '1841', ['French'], 'medium'],
+  ['tocquevilleAfricaReport1847French', 'primary', '1847-05-28', ['French'], 'medium'],
+  ['algeriaSenatusConsulte1865', 'primary', '1865-07-14', ['French'], 'high'],
+  ['algeriaCremieuxDecrees1870', 'primary', '1870-10-24', ['French'], 'high'],
+  ['immigrationMuseumColonialStatus', 'secondary', null, ['French'], 'high'],
+  ['duongTocquevilleAlgeria2018', 'secondary', '2018-01-31', ['English'], 'medium'],
+  ['pittsAlgerianMirror2009', 'secondary', '2009-08-01', ['English'], 'medium'],
+]) {
+  assert.ok(imperialJapanEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a French Algeria reference trail`);
+  assert.ok(JSON.stringify(imperialJapanEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:militarist-imperialist'));
+}
+const algeriaTimeline = imperialJapanEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(algeriaTimeline.some(({ period, citations }) => period.startsWith('1830–1870 — French conquest') && citations.researchSourceIds.includes('tocquevilleAlgeria1841French')));
+const algeriaVariant = imperialJapanEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('French settler-colonial imperialism'));
+assert.ok(algeriaVariant, 'French Algeria must be separated as a bounded colonial variant');
+const algeriaExample = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('French Algeria is a bounded example'));
+assert.ok(algeriaExample, 'French Algeria must appear as a bounded historical example');
+assert.match(algeriaExample.text, /not an exact six-axis match/);
+const tocquevillePerson = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('Alexis de Tocqueville'));
+assert.ok(tocquevillePerson, 'Tocqueville must appear with a bounded colonial evidence caveat');
+assert.match(tocquevillePerson.caveat, /not Tocqueville’s complete political thought/);
+const algeriaSafeguard = imperialJapanEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('French Algeria adds a safeguard'));
+assert.ok(algeriaSafeguard, 'French Algeria must add a liberal-universalism safeguard');
+assert.match(algeriaSafeguard.text, /rather than a single equal civic order/);
+assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Read the full French and Arabic legal')));
+
 const liberalEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['assembleeThirdRepublicLaws1875', 'primary', '1875', ['French'], 'high'],
