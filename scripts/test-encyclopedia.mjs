@@ -824,9 +824,32 @@ const religiousDescription = religiousSocialistEntry.sections.find(({ id }) => i
 const religiousHistory = religiousSocialistEntry.sections.find(({ id }) => id === 'history').timeline.map(({ text }) => text ?? '').join(' ');
 const religiousVariants = religiousSocialistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows);
 assert.match(religiousDescription, /not interchangeable with Shariati’s pre-1979 anti-clerical revolutionary intellectual project/);
+assert.match(religiousDescription, /bounded Brazilian case/);
 assert.match(religiousHistory, /pre-revolutionary Iran, Islamic-left currents/);
+assert.match(religiousHistory, /Brazilian Comunidades Eclesiais de Base became/);
 assert.ok(religiousVariants.some(({ label }) => /Iranian Islamic revolutionary socialism/.test(label)));
+assert.ok(religiousVariants.some(({ label }) => /Brazilian base-community and agrarian practice/.test(label)));
 assert.match(JSON.stringify(religiousSocialistEntry), /Primary-text limit: the online Shariati collection/);
+for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
+  ['celamMedellinFinalCommissions1968', 'primary', '1968', 'high', ['Spanish']],
+  ['krischkeBrazilCEBDemocracy1991', 'secondary', '1991-07', 'medium', ['English']],
+  ['mauesCebsAmazon2010', 'secondary', '2010', 'high', ['Portuguese']],
+  ['menezesNetoMstLiberation2007', 'secondary', '2007-08', 'high', ['Portuguese', 'English abstract', 'French abstract']],
+]) {
+  assert.ok(religiousSocialistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a religious-socialist reference trail`);
+  assert.ok(JSON.stringify(religiousSocialistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:religious-socialist']);
+}
 for (const [dimensionId, score] of Object.entries({ economic: 62, social: 35, authority: 10, identity: 25, foreign: 25, religion: -75 })) {
   assert.equal(religiousSocialistEntry.dimensionInterpretations[dimensionId].score, score, `${dimensionId} score changed during the bounded Iranian research pass`);
 }

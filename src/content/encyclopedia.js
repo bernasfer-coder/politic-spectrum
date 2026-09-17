@@ -8761,6 +8761,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gutierrezTheologyLiberation'], ['catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationTheologies', 'celamMedellin']),
           },
           {
+            type: 'evidence-note',
+            text: 'A bounded Brazilian case makes this grassroots claim more precise. Krischke’s comparative study treats Comunidades Eclesiais de Base (CEBs) as shaping political culture and motivation rather than directly producing democratization. Maués’s Portuguese study of two rural Pará communities finds that pastoral work interacted with peasant and quilombola identities and generated new political-religious practices, while also emphasizing ambiguity and internal tensions. Menezes Neto’s study of the Catholic Church and the Movimento dos Trabalhadores Rurais Sem Terra links liberation theology to agrarian mobilization but follows a specific church–movement relationship, not every CEB or every socialist movement.',
+            citations: citations([], ['krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007']),
+          },
+          {
             type: 'paragraph',
             text: 'Day’s Aims and Purposes (1940) connects material assistance with spiritual formation, cooperatives, unions, hospitality houses, and farming communes. She stresses each participant’s responsibility, not simply organizational size. This is her normative account of the work, not a measured evaluation of its reach or effectiveness.',
             citations: citations([], ['dayAimsPurposes1940']),
@@ -8842,6 +8847,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['celamMedellin', 'oxfordLiberationTheologies', 'oxfordLiberationLegacy']),
           },
           {
+            period: '1960s–2000s: Brazilian CEBs, popular education, and agrarian movements',
+            text: 'Brazilian Comunidades Eclesiais de Base became a distinct setting where religious practice, local organization, popular education, and political participation could meet. The evidence is heterogeneous: a comparative study emphasizes mediated changes in political culture; a Portuguese anthropological study follows two Pará communities, including peasant and quilombola identity-making; and a study of the Catholic Church and the MST traces a specific relationship between liberation theology and rural mobilization. These cases support a documented family resemblance, not a claim that CEBs directly caused democratization or that all Brazilian agrarian politics was religious-socialist.',
+            citations: citations([], ['celamMedellinFinalCommissions1968', 'krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007']),
+          },
+          {
             period: '1960s–1970s: Iranian Islamic-left currents and Ali Shariati',
             text: 'In pre-revolutionary Iran, Islamic-left currents gained prominence alongside secular socialist and nationalist opposition. Iranica places Shariati among religious intellectuals who linked an Islamic reading of classlessness and social justice to anti-imperial and revolutionary politics, while Kanaaneh describes his effort to combine Marxist and existential tools with a Shi’a metaphysical worldview. The primary collection’s English translations are used only as a locator for his texts; Persian editions and translation history remain open.',
             citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026']),
@@ -8904,6 +8914,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Uses contextual theology and social analysis to interpret the suffering of the poor and organize transformative action in particular historical settings.',
                 relation: 'The most prominent case in this entry, but it is not identical to Marxism, socialism, Catholic social teaching, or every Latin American church movement.',
                 citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['oxfordLiberationTheologies', 'celamMedellin', 'vaticanLiberationInstruction']),
+              },
+              {
+                label: 'Brazilian base-community and agrarian practice',
+                distinction: 'Connects CEB participation, popular education, peasant or quilombola identity, and selected agrarian or democratic struggles through local church networks.',
+                relation: 'A country- and case-bounded practice rather than a national ideology. The evidence includes mediated political-culture effects, local identity formation, and a specific church–MST relationship; it does not establish one uniform CEB programme or outcome.',
+                citations: citations([], ['krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007']),
               },
               {
                 label: 'Black theology and Christian economic justice',
@@ -9016,6 +9032,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['celamMedellin', 'oxfordLiberationTheologies', 'oxfordLiberationLegacy']),
               },
               {
+                name: 'Brazilian CEBs in Pará and agrarian mobilization',
+                period: 'Brazil, late twentieth century; bounded cases in Pará and the church–MST relationship',
+                match: 'Faith-linked local organization could support political learning, new peasant or quilombola identities, and selected struggles around land, rights, and democratic participation.',
+                caveat: 'The studies are not interchangeable: Krischke analyzes mediated democratic effects, Maués follows two Pará communities, and Menezes Neto studies the Catholic Church–MST relationship. None proves a single national CEB ideology, uniform church support, or a direct causal effect on democratization.',
+                citations: citations([], ['celamMedellinFinalCommissions1968', 'krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007']),
+              },
+              {
                 name: 'Ali Shariati and Iranian Islamic-left currents',
                 period: 'Iran, especially the 1960s–1970s; influence contested after 1979',
                 match: 'A documented intellectual and movement example joining Shi’a concepts of justice and revolutionary agency with Marxist or existential analytical tools and anti-imperial politics.',
@@ -9060,6 +9083,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'A first criticism is conceptual fusion. “Religious socialism” can hide major differences between ethical socialism, church reform, Catholic social teaching, liberation theology, Black theology, the Catholic Worker, Islamic socialism, Jewish labor movements, and interfaith justice activism. The classification should state which tradition, country, period, institution, and economic programme is being described rather than treating religious concern for the poor as proof of socialism.',
             citations: citations(['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'marxEngelsManifesto'], ['cambridgeReligionOriginsSocialism', 'oxfordChristianSocialism', 'oxfordLiberationTheologies']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Brazilian CEB evidence adds a methodological safeguard: participation, religious motivation, and political learning should not be confused with direct institutional causation. Krischke explicitly treats democratization as dependent on wider historical conditions; Maués records ambiguity and contradiction inside the communities he studies; and the MST article follows a particular church–movement relationship through political change. A responsible comparison therefore names the locality, actors, period, and outcome being evidenced before assigning a broader religious-socialist label.',
+            citations: citations([], ['krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007']),
           },
           {
             type: 'paragraph',
@@ -9121,8 +9149,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto', 'spinozaPolitical', 'millOnLiberty'],
-      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989', 'buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019', 'syracuseBuberPaths1996', 'iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026', 'constituteIran1989'],
-      editorialNote: 'The entry remains an umbrella synthesis with a predominantly Christian-centered evidence base, now including bounded Buber and pre-1979 Iranian Islamic-left comparisons. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, Islamic revolutionary socialism, and theocracy. Buber’s and Shariati’s selected English materials, scholarly interpretations, and publisher metadata have different roles; neither appraisal is empirical validation, and the later Islamic Republic is not treated as Shariati’s programme. Scores remain didactic composites, with existing article/card discrepancies still recorded. Broader non-Christian traditions and country-specific claims require separate research.',
+      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'celamMedellinFinalCommissions1968', 'krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989', 'buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019', 'syracuseBuberPaths1996', 'iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026', 'constituteIran1989'],
+      editorialNote: 'The entry remains an umbrella synthesis with a predominantly Christian-centered evidence base, now including a bounded Brazilian CEB and agrarian-mobilization case alongside the Buber and pre-1979 Iranian Islamic-left comparisons. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, Islamic revolutionary socialism, and theocracy. The Brazilian sources are not interchangeable: CELAM supplies restricted primary metadata, Krischke supplies a comparative abstract, and Maués and Menezes Neto supply Portuguese case studies. Buber’s and Shariati’s selected English materials, scholarly interpretations, and publisher metadata also have different roles; none is empirical validation, and the later Islamic Republic is not treated as Shariati’s programme. Scores remain didactic composites, with existing article/card discrepancies still recorded. Broader non-Christian traditions, fuller Brazilian archives, and country-specific claims require separate research.',
     },
     researchGaps: [
       'Add original-language scholarship in Portuguese and Spanish on Brazilian base communities, liberation theology, land and labor movements, Black theology, Indigenous theology, and church–state relations; verify editions and translations.',
@@ -9140,6 +9168,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Collate Shariati’s Persian originals, identified editions, lecture dates, translators, and complete contexts, including Abu-Dhar, Islamology, Red Shiism, and Humanity and Islam. The online English collection is only a locator and does not settle wording, chronology, audience, or reception.',
       'Compare Iranian Islamic-left groups, National Resistance and front traditions, the Mojahedin, clerical reformers, secular Marxists, and women’s, Kurdish, Baha’i, Sunni, labor, and minority perspectives through archives and Persian-language scholarship. Do not infer one social base from Shariati’s student audience or later revolutionary influence.',
       'Separate Shariati’s pre-1979 intellectual project from the 1979 constitutional order and later economic factions by reading the Persian Constitution, amendments, laws, party documents, and implementation evidence; test claims about land, labor, nationalization, and clerical authority against independent outcomes.',
+      'This pass establishes only a bounded Brazilian CEB evidence cluster; compare additional dioceses, lay and clergy voices, women’s and Black/Indigenous perspectives, military-period archives, church–state records, and movement outcomes before generalizing from Pará or the MST relationship.',
     ],
   },
   populist: {
