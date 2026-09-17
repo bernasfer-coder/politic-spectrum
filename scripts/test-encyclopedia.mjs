@@ -1952,6 +1952,41 @@ assert.match(ottomanExample.caveat, /imperial, multilingual/);
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Ottoman Kanûn-i Esâsî')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Compare the late Ottoman parliament')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Distinguish Ottoman constitutional monarchy')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['hawaiiConstitution1840', 'primary', '1840-10-08', ['English', 'Hawaiian'], 'high'],
+  ['hawaiiLegislatureArchive1887', 'primary', '2019', ['English'], 'high'],
+  ['hawaiiArchivesLiliuokalani1893', 'primary', '1893', ['English', 'Hawaiian'], 'medium'],
+  ['clevelandHawaii1893', 'primary', '1893-12-18', ['English'], 'high'],
+  ['osorioDismemberingLahui2002', 'secondary', '2002-06', ['English'], 'medium'],
+  ['newburyPatronageHawaii2001', 'secondary', '2001', ['English'], 'medium'],
+  ['lacroixGrandyHawaii1997', 'secondary', '1997-03', ['English'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Hawaiian monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const hawaiiHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline;
+const hawaiiTimeline = hawaiiHistory.find(({ period }) => period.startsWith('1840–1893: Hawaiian constitutional monarchy'));
+assert.ok(hawaiiTimeline, 'the Hawaiian constitutional-monarchy timeline case must remain visible');
+assert.ok(hawaiiTimeline.citations.researchSourceIds.includes('hawaiiConstitution1840'));
+assert.ok(hawaiiTimeline.citations.researchSourceIds.includes('clevelandHawaii1893'));
+const hawaiiVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Hawaiian constitutional monarchy'));
+assert.ok(hawaiiVariant, 'the Hawaiian case must be separated as a dated constitutional variant');
+const hawaiiExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Hawaiian Kingdom'));
+assert.ok(hawaiiExample, 'the Hawaiian Kingdom must appear as a bounded historical example');
+assert.match(hawaiiExample.caveat, /must not be used as a simple present-day country match/);
+assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Hawaiian case adds a colonial')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Hawaiian-language and English editions')));
 
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
