@@ -2263,6 +2263,41 @@ const ethiopianMonarchySafeguard = monarchistEntry.sections.find(({ id }) => id 
 assert.ok(ethiopianMonarchySafeguard, 'the Ethiopian case needs a constitutional-form and implementation safeguard');
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Amharic, French, and English editions')));
 
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['iranConstitutionalLaw1906English', 'primary', '1906–1907', ['English'], 'medium'],
+  ['iranicaConstitutionalRevolutionIntellectual1992', 'secondary', '1992-12-15', ['English'], 'high'],
+  ['iranicaConstitutionalRevolutionConstitution1992', 'secondary', '1992-12-15', ['English'], 'high'],
+  ['afaryIranianConstitutionalRevolution1996', 'secondary', '1996', ['English'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Qajar monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const qajarHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(qajarHistory.some(({ period, citations }) => period.startsWith('1905–1911: Qajar Constitutional Revolution') && citations.researchSourceIds.includes('iranConstitutionalLaw1906English')));
+const qajarVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Qajar constitutional monarchy'));
+assert.ok(qajarVariant, 'Qajar Iran must be separated as a dated constitutional variant');
+const qajarExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Qajar Iran’s Constitutional Revolution'));
+assert.ok(qajarExample, 'Qajar Iran must appear as a bounded historical example');
+assert.match(qajarExample.caveat, /rather than a completed liberal democracy/);
+const qajarPerson = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('Moẓaffar-al-Dīn Shah'));
+assert.ok(qajarPerson, 'the Qajar constitutional coalition must be identified with a bounded caveat');
+assert.match(qajarPerson.caveat, /complete Persian-language account/);
+const qajarSafeguard = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Qajar case adds a safeguard'));
+assert.ok(qajarSafeguard, 'Qajar Iran must add a formalism and implementation safeguard');
+assert.match(qajarSafeguard.text, /formal rights and practical power/);
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Persian originals and early printings')));
+
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
   ['cdecAntisemiticDecrees1938', 'primary'],
