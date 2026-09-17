@@ -8039,6 +8039,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Geneva under Calvin supplies a bounded sixteenth-century European case. The 1541 Ecclesiastical Ordinances were approved by the Genevan councils and organized ministers, teachers, elders, deacons, education, charity, and the Consistory, linking church discipline to civic institutions. Rangel’s Portuguese-language study emphasizes confessionalization, discipline, tensions, and negotiation, while Höpfl distinguishes Calvin’s scheme, its reception as law, and the harder question of lived reality. The case is neither a simple clerical dictatorship nor a template for all Protestant politics.',
             citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The archival trail extends beyond the 1541 ordinance. The Archives d’État de Genève catalog identifies Consistory proceedings beginning on 16 February 1542 and lists edited registers across the Calvin-era series through 1564, while RCnum presents original images and multiple transcription layers for Council registers from 1545–1550. These records make institutional practice more visible than the ordinance alone, but the archive catalog, digital transformations and selected abstract do not amount to a complete case-by-case social history.',
+            citations: citations([], ['genevaConsistoryRegisters1542French', 'genevaCouncilRegistersRCnum1545French', 'wattWomenConsistoryGeneva1993']),
+          },
         ],
       },
       {
@@ -8100,6 +8105,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Geneva’s Reformed order demonstrates how religious and civil authority can be intertwined without collapsing into a single clerical office. The 1541 Ordinances assigned distinct ecclesiastical offices and created a Consistory for discipline, while the city councils accepted the scheme and retained responsibility for coercive penalties. Rangel describes the process as confessionalization and disciplining; Höpfl warns that formal reception as law and actual lived reality are different historical questions. The case therefore belongs beside, not inside, the same institutional category as Iran or the Ganden Phodrang.',
             citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The surviving disciplinary record also complicates any simple account of social transformation. Watt’s abstract reports that the early Consistory focused heavily on common religious practice; it identifies limited protection for wives of abusive husbands and no evidence that the Reformation as represented in these records enhanced women’s status, while also reporting a mixed pattern in cases of illicit sexuality and concern for unwed mothers. This is a bounded interpretation of selected Consistory evidence, not a complete gender history of Geneva or a claim about all Reformed communities.',
+            citations: citations([], ['wattWomenConsistoryGeneva1993', 'genevaConsistoryRegisters1542French']),
+          },
         ],
       },
       {
@@ -8125,6 +8135,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1541–1564: Calvinist Geneva and the Consistory',
             text: 'After John Calvin’s return in 1541, the Genevan councils approved Ecclesiastical Ordinances that organized four church offices, religious instruction, charity, and a weekly Consistory of ministers and elders. The Consistory could address ecclesiastical discipline and excommunication, while cases requiring corporal or financial punishment were referred to the civil council. The state archive’s French transcription provides formal evidence; Rangel emphasizes the negotiated confessionalizing process, and Höpfl separates the enacted scheme from its practical realization. Geneva is therefore a bounded confessional polity with intertwined church and civic authority, not a simple priestly dictatorship.',
             citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
+          },
+          {
+            period: '1542–1564: Consistory and Council records in practice',
+            text: 'The Geneva archive identifies the first surviving Consistory proceedings from 16 February 1542 and lists edited registers through the Calvin-era series to 1564. RCnum adds Council registers for 1545–1550 with manuscript images and transcription layers. Watt’s study of women and the Consistory reports a mixed record of religious discipline, family conflict, sexuality and concern for unwed mothers, while finding no evidence in this material that the Reformation enhanced women’s status. The sources open the practical history of confessional government but do not establish uniform enforcement, complete social outcomes or the views of all residents.',
+            citations: citations([], ['genevaConsistoryRegisters1542French', 'genevaCouncilRegistersRCnum1545French', 'wattWomenConsistoryGeneva1993']),
           },
           {
             period: 'Seventeenth century: Buddhist law and Ganden Phodrang formation in Tibet',
@@ -8205,6 +8220,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'The Genevan councils adopted Ecclesiastical Ordinances that organized Reformed church offices, education, charity, and a Consistory of ministers and elders whose discipline operated in coordination with civil government.',
                 relation: 'This is a bounded Reformation-era confessional polity, not a universal model of Protestantism or a synonym for direct clerical rule. The Ordinances, civic councils, disciplinary records, and later scholarship must be kept distinct; the formal scheme did not automatically determine lived practice or equal citizenship.',
                 citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
+              },
+              {
+                label: 'Genevan Consistory and Council discipline in practice, 1542–1564',
+                distinction: 'Uses the surviving Consistory proceedings, Council registers and social-history scholarship to examine how confessional rules were negotiated and applied in cases involving religious practice, family conflict, sexuality and gender.',
+                relation: 'Practice evidence can qualify the formal ordinance but cannot be treated as a complete sample of Geneva or as proof of a uniform theocratic regime. Archive catalogs, manuscript images, transcriptions and later interpretations have different evidentiary status.',
+                citations: citations([], ['genevaConsistoryRegisters1542French', 'genevaCouncilRegistersRCnum1545French', 'wattWomenConsistoryGeneva1993']),
               },
               {
                 label: 'Confessional state or state religion',
@@ -8289,6 +8310,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Calvin was not the sole ruler of Geneva, and the Ordinances were a negotiated civic act rather than proof of personal dictatorship. The formal text, council decisions, disciplinary practice, and the experiences of dissenters must be distinguished; this entry does not generalize Geneva’s order to all Calvinists or Protestants.',
                 citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
               },
+              {
+                name: 'Jeffrey R. Watt — historian of women and the Geneva Consistory',
+                role: 'Scholar whose article uses Consistory evidence to examine religious practice, family conflict, sexuality and the position of women in Calvin’s Geneva.',
+                caveat: 'Only the journal abstract was accessible in this pass. Watt’s conclusions are an attributed interpretation of a bounded evidentiary record, not a complete account of Genevan women, all Consistory cases, or the Reformation’s effects across Europe.',
+                citations: citations([], ['wattWomenConsistoryGeneva1993']),
+              },
             ],
           },
           {
@@ -8314,6 +8341,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'The 1541 Ordinances organized ministers, teachers, elders, deacons, education, charity, and a Consistory whose ecclesiastical discipline operated alongside the authority of the city councils.',
                 caveat: 'The archival transcription establishes formal arrangements, not complete enforcement or social consensus. Rangel’s Portuguese-language analysis and Höpfl’s chapter summary emphasize negotiation and the difference between enacted law and lived reality; the case is not an exact six-axis match for Geneva or for all Reformed communities.',
                 citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
+              },
+              {
+                name: 'Genevan Consistory and Council registers, 1542–1564',
+                period: 'Geneva, 1542–1564',
+                match: 'The surviving proceedings and Council records provide a route from institutional design to selected cases of confessional discipline and civic jurisdiction; Watt’s study adds a gendered analysis of the early Consistory.',
+                caveat: 'The archive catalog and RCnum platform establish provenance and access layers, while Watt’s abstract gives a bounded scholarly interpretation. The records are not a complete census of conduct, equal-rights audit, or proof that every resident accepted the confessional order.',
+                citations: citations([], ['genevaConsistoryRegisters1542French', 'genevaCouncilRegistersRCnum1545French', 'wattWomenConsistoryGeneva1993']),
               },
               {
                 name: 'Puritan New England and covenant government',
@@ -8399,6 +8433,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The gendered Consistory record adds a second safeguard. Watt reports a mixed pattern: early attention to popular religious practice, limited protection for wives of abusive husbands, no evidence in the selected record that the Reformation enhanced women’s status, and differentiated treatment of illicit sexuality and unwed motherhood. These findings caution against calling Geneva either an emancipatory religious democracy or a uniformly punitive clerical state; the full French registers, Council records and local voices are needed to test how rules operated across gender, class, citizenship and time.',
+            citations: citations([], ['wattWomenConsistoryGeneva1993', 'genevaConsistoryRegisters1542French', 'genevaCouncilRegistersRCnum1545French']),
+          },
+          {
+            type: 'paragraph',
             text: 'The second criticism is equal citizenship. Religious law or office can create different statuses for believers, minority faiths, converts, dissenters, women, sexual minorities, or non-believers. A theocratic constitution may protect some minorities while still limiting political office, family law, testimony, expression, or conversion. The proper test is not whether a system uses the language of tolerance but whether equal civil and political rights, remedies, and participation are available in law and practice.',
             citations: citations(['mawardiOrdinances', 'lockeLetterToleration', 'spinozaPolitical'], ['ohchrMinorityRights', 'sepReligionPolitics', 'oxfordStateReligionFreedom', 'vdem']),
           },
@@ -8437,8 +8476,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['josephusAgainstApion', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'aquinasMoralPolitical', 'spinozaPolitical', 'lockeLetterToleration', 'hobbesLeviathan'],
-      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13', 'genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009'],
-      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, Tibetan Buddhist, and other traditions historically specific. The Ganden Phodrang is a bounded Tibetan Buddhist comparison, not a template for Buddhism or a claim that religious and secular authority were identical everywhere. The Geneva addition is a bounded 1541–1564 Reformation case using a French state-archive transcription, a Portuguese-language scholarly article, and an English Cambridge chapter summary; it distinguishes civic approval, church discipline, Consistory jurisdiction, negotiation, and lived practice without claiming a simple clerical dictatorship or a universal Protestant model. Scores are didactic composites, not judgments about any religion or every society associated with it.',
+      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13', 'genevaEcclesiasticalOrdinances1541French', 'genevaConsistoryRegisters1542French', 'genevaCouncilRegistersRCnum1545French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009', 'wattWomenConsistoryGeneva1993'],
+      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, Tibetan Buddhist, and other traditions historically specific. The Ganden Phodrang is a bounded Tibetan Buddhist comparison, not a template for Buddhism or a claim that religious and secular authority were identical everywhere. The Geneva addition is a bounded 1541–1564 Reformation case using French archival and Council-register evidence, Portuguese-language scholarship, an English Cambridge chapter summary, and Watt’s gender-history article abstract. It distinguishes civic approval, church discipline, Consistory jurisdiction, negotiation, selected gendered practice and lived reality without claiming a simple clerical dictatorship, a universal Protestant model, or a complete social history. Scores are didactic composites, not judgments about any religion or every society associated with it.',
     },
     researchGaps: [
       'Add French-language scholarship on Josephus, Gallicanism, Catholic political thought, Calvinist Geneva, the French Wars of Religion, revolutionary theocracy, laïcité, colonial religion, and modern constitutional debates about religious law.',
@@ -8454,6 +8493,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read the full Tibetan-law scholarship on chösi zungdrel, monastic and secular offices, regents, local courts, and Qing–Tibet relations. Compare elite legal ideals with dispute records, administrative documents, monastery practice, women’s and non-elite experiences, and regional variation before making claims about uniform theocratic enforcement.',
       'Separate the Ganden Phodrang’s historical government from later Chinese state narratives, the Central Tibetan Administration, and present-day debates over sovereignty and religious succession. Use period-specific multilingual evidence rather than turning a contested historical case into a current-country classification.',
       'Read the complete French Ecclesiastical Ordinances and Genevan council and Consistory records from 1541–1564, including later revisions, discipline, citizenship, gender, poverty, dissent, refugees, and relations with Bern. Extend the Portuguese and French scholarship beyond abstracts and selected institutional pages; the present sources establish a bounded confessional civic order, not uniform enforcement, equal participation, or a complete history of Calvinist Geneva.',
+      'Read the French edited Consistory volumes and RCnum Council-register manuscript images case by case, verifying transcription and translation layers against originals. Extend Watt’s 1993 gender analysis through the full article and the register evidence, then add citizenship, class, refugee, minority, family-law and local-community scholarship before inferring social outcomes or revising the Geneva comparison.',
     ],
   },
   'christian-democratic': {
