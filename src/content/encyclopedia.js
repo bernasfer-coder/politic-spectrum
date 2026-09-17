@@ -1665,6 +1665,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Bismarck-era comparison below examines social provision alongside political exclusion. It is a historical boundary case, not a claim that every national conservative shares imperial Germany’s institutions. Public justifications, legal provisions, historians’ interpretations, and these illustrative coordinates are distinct evidence types.',
             citations: citations([], ['wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The Action française is included as a historical boundary case rather than as the definition of national conservatism. Its Maurrassian “integral nationalism” combined royalism, cultural traditionalism, anti-parliamentarianism, and an instrumental appeal to Catholic order; the movement’s antisemitism, xenophobia, and later collaborationist history place it near the authoritarian and ethnic-nationalist edge of this family. The French evidence is attributed and period-specific, not a claim about all conservatives or monarchists.',
+            citations: citations([], ['academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916']),
+          },
         ],
       },
       {
@@ -1683,8 +1688,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Maurrassian integral nationalism sharpens the exclusionary boundary. Action française presented hereditary monarchy and an organic, historically defined France as remedies for parliamentary republicanism; French institutional and scholarly accounts also document its antisemitic, xenophobic, and anti-republican politics. Its Catholic language was primarily a claim about social and national order, not evidence that Maurras personally held orthodox faith, and the Church’s condemnation of Action française in 1926 shows that Catholicism and Maurrassian politics were not identical.',
+            citations: citations([], ['academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916']),
+          },
+          {
+            type: 'paragraph',
             text: 'Economically, national conservatism is flexible. It can support markets, private property, welfare for citizens, industrial policy, protection of strategic sectors, or selective regulation when these are said to preserve national independence and social cohesion. The economic score therefore remains closer to the mixed-market center than to either libertarian absolutism or collectivist ownership.',
             citations: citations(['adamSmithWealth', 'burkeReflections'], ['sepConservatism', 'sepLiberalism']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Illustrative six-axis reading of the Maurrassian case: strongly traditionalist on social change, strongly nationalist on identity, strongly authority-centered because it rejected democratic principles and parliamentary government, and strongly religiously grounded at the level of public Catholic order despite Maurras’s agnosticism. Its economic programme and foreign-policy posture require separate period-specific evidence; these characteristics do not authorize a new numerical score for the national-conservative card.',
+            citations: citations([], ['academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973']),
           },
           {
             type: 'paragraph',
@@ -1723,6 +1738,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['burkeReflections', 'tocquevilleDemocracy'], ['sepConservatism', 'sepLiberalism']),
           },
           {
+            period: '1899–1926: Action française and Maurrassian integral nationalism',
+            text: 'Action française was founded in 1899 by Henri Vaugeois, Maurice Pujo, and Charles Maurras and declared itself royalist in 1901. Maurras’s doctrine linked hereditary monarchy, national continuity, classical culture, and Catholicism as a social principle while rejecting democratic and republican foundations. The movement became an important force on the French extreme right; the Catholic Church condemned it in 1926, underscoring the difference between a political use of Catholic order and Catholic ecclesiastical authority. BnF’s record for Enquête sur la monarchie locates a primary work, but its arguments and editions require full-text review.',
+            citations: citations([], ['academieFrancaiseMaurras', 'perseeActionFrancaiseNationalism1973', 'sorbonneMaurrasNationalismeIntegral', 'bnfMaurrasEnqueteMonarchie1916']),
+          },
+          {
             period: '1878: Anti-Socialist Law',
             text: 'The law creates targeted restrictions on socialist organization and expression; its original expiry and subsequent renewals must be distinguished.',
             citations: citations([], ['ghdiAntiSocialistLaw1878']),
@@ -1741,6 +1761,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Twentieth century: sovereignty, empire, and constitutional nation-states',
             text: 'National conservatism developed through different relationships with empire, decolonization, religion, military power, and constitutional democracy. Some national-conservative traditions defended parliamentary or republican institutions; others became exclusionary or authoritarian, which is why country- and period-specific classification is essential.',
             citations: citations(['andersonImaginedCommunities', 'morgenthauRealism'], ['sepNationalism', 'foreignPolicy', 'vdem']),
+          },
+          {
+            period: '1940–1945: Maurras, Vichy, and the collaboration boundary',
+            text: 'Maurras welcomed Pétain’s accession in 1940 and became an advocate of the Vichy government and collaboration, according to the Académie française’s institutional biography; Dard’s account likewise places his antisemitism and anti-republican politics within the history of the nationalist right. This later trajectory is not a claim that every national conservative supported Vichy, but it is a necessary warning that appeals to order, nation, and tradition can move from constitutional conservatism toward authoritarian collaboration.',
+            citations: citations([], ['academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral']),
           },
           {
             period: 'Postwar France: Gaullist republican sovereignty',
@@ -1772,6 +1797,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Centers national independence, republican legitimacy, state capacity, and a strong executive while maintaining a distinct constitutional and postwar political tradition rather than defining membership only through ancestry.',
                 relation: 'A French sovereignist variant and useful boundary case: it overlaps with national conservatism on sovereignty and continuity but cannot be treated as a synonym for ethnic nationalism or authoritarianism.',
                 citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'cambridgeIndivisibilityFrenchRepublic']),
+              },
+              {
+                label: 'Maurrassian integral nationalism / Action française',
+                distinction: 'A French royalist and anti-republican doctrine that made national continuity, hereditary monarchy, cultural traditionalism, and an instrumental Catholic social order central to political reconstruction.',
+                relation: 'A historical authoritarian and exclusionary boundary case, not a synonym for national conservatism. Its anti-democratic, antisemitic, and xenophobic elements require explicit evidence and separate it from civic or constitutional national conservatism.',
+                citations: citations([], ['academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916']),
               },
               {
                 label: 'Religious or cultural national conservatism',
@@ -1844,6 +1875,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought']),
               },
               {
+                name: 'Charles Maurras',
+                role: 'French theorist and organizer of Maurrassian integral nationalism and Action française',
+                caveat: 'Maurras is included as a historical boundary case. His anti-democratic, hereditary-monarchist, antisemitic, and collaborationist commitments distinguish him from national conservatism understood as a constitutional and pluralist family; the Church’s 1926 condemnation of Action française also separates his political Catholicism from Catholic doctrine as such.',
+                citations: citations([], ['academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916']),
+              },
+              {
                 name: 'Otto von Bismarck',
                 role: 'chancellor associated with the imperial social-policy programme',
                 caveat: 'A document-specific comparator, not an exact six-axis match or a claim that he alone designed social insurance. His broader politics require separate evidence.',
@@ -1874,6 +1911,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'partial sovereignist and state-capacity resemblance',
                 caveat: 'The Gaullist tradition combined national independence and executive authority with republican legitimacy and changing positions on Europe, empire, social policy, and decolonization; it is not an exact contemporary national-conservative match.',
                 citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi']),
+              },
+              {
+                name: 'Action française and Maurrassian integral nationalism',
+                period: 'France, 1899–1945, with later intellectual legacies',
+                match: 'partial historical match for the authoritarian, monarchist, culturally traditionalist, and exclusionary edge of national conservatism',
+                caveat: 'Action française is not a generic conservative movement or an exact profile for France. Its anti-republicanism, antisemitism, xenophobia, royalism, Catholic instrumentalism, 1926 ecclesiastical condemnation, and Vichy collaboration must be named explicitly; the primary-work record for Enquête sur la monarchie does not replace full-text and movement-history research.',
+                citations: citations([], ['academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916']),
               },
               {
                 name: 'Imperial German social insurance',
@@ -1922,6 +1966,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Maurrassian case makes the boundary concrete. A movement can present hierarchy, monarchy, Catholic order, and national continuity as protections against disorder while rejecting democratic equality and directing hostility toward alleged internal and foreign enemies. The Académie française and Sorbonne account document Maurras’s anti-republican, antisemitic, and collaborationist trajectory, while Wilson’s study interprets Action française’s nationalism as deeply xenophobic; these claims should remain tied to the movement and period rather than projected onto all cultural conservatives.',
+            citations: citations([], ['academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973']),
+          },
+          {
+            type: 'paragraph',
             text: 'A second criticism concerns sovereignty and borders. National self-government can protect democratic accountability, but it can also be used to reject minority rights, international law, migration, or cooperation on problems that cross borders. The entry therefore treats national sovereignty as one political value among others, not an automatic trump card.',
             citations: citations(['renanNation', 'morgenthauRealism'], ['sepNationalism', 'foreignPolicy', 'vdem']),
           },
@@ -1959,14 +2008,15 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'aquinasMoralPolitical',
       ],
-      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy', 'wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983', 'ziemannIndustrialSociety2016'],
-      editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
+      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy', 'wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983', 'ziemannIndustrialSociety2016'],
+      editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. This pass adds Action française and Maurrassian integral nationalism as a bounded French boundary case, using French institutional, university, scholarly, and primary-work catalog evidence. The case is not a synonym for national conservatism, monarchism, Catholicism, or contemporary France. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
     },
     researchGaps: [
       'Expand French-language scholarship on Gaullism, republican sovereignty, laïcité, and the tensions between civic universalism and cultural continuity, including decolonization and post-Gaullist transformations.',
       'Add German-language scholarship on post-war Christian democracy, ordoliberalism, national conservatism, and the constitutional lessons of authoritarian nationalism.',
       'Add country-specific sources before listing Hungary, India, Poland, France, Japan, or other states as examples; current governments and party systems change over time.',
       'Add specialist research on colonialism, minority citizenship, migration, religion, gender, welfare nationalism, and the relationship between national-conservative movements and democratic backsliding.',
+      'Read the full French-language scholarship on Action française, Maurras, Catholic politics, antisemitism, colonialism, and Vichy, together with the complete Enquête sur la monarchie and movement archives. The present pass uses institutional summaries, one Persée article, and a BnF primary-work record; it does not establish a complete intellectual, social, or reception history.',
       'Collate the proclamation and Anti-Socialist Law with original German parliamentary and gazette editions. Read the full Lidtke and Ritter studies and worker testimony; the consulted translations, editorial notes, and selected article sections do not constitute a complete archival review.',
       'Check each insurance branch’s eligibility, contributions, benefits, and administrative powers against original statutes and later amendments. Do not transfer generalizations across health, accident, and pension schemes; investigate women, agricultural and domestic workers, migrants, and colonial populations separately.',
       'Audit the unchanged reference card’s evidence links: its Poland example points to a Hungary report, and its Meiji Japan example to a de Gaulle biography. This historical article pass does not validate those examples or establish current-country matches.',
