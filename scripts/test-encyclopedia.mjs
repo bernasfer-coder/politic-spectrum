@@ -1158,6 +1158,37 @@ assert.match(cadizExample.text, /treated as synonymous with socially progressive
 assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Spanish Cádiz Constitution')));
 assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read Varela Suanzes-Carpegna')));
 assert.deepEqual(Object.fromEntries(Object.entries(weimarEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -30, social: 25, authority: -65, identity: 25, foreign: 35, religion: 55 });
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['brazilConstitution1988', 'primary', '1988-10-05', ['Portuguese'], 'high'],
+  ['dallariBrazilFundamentalRights1993', 'secondary', '1993', ['Portuguese', 'English'], 'medium'],
+  ['delgadoBrazilSocialRights2000', 'secondary', '2000', ['Portuguese'], 'medium'],
+  ['ramosBrazilJudicialReview2007', 'secondary', '2007', ['Portuguese', 'English'], 'medium'],
+  ['brittoBrazilCapabilities2021', 'secondary', '2021', ['Portuguese', 'English'], 'medium'],
+]) {
+  assert.ok(weimarEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Brazilian constitutionalist reference trail`);
+  assert.ok(JSON.stringify(weimarEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const brazilTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1980s–1988:'));
+assert.ok(brazilTimeline, 'the Brazilian constitutional timeline case must remain visible');
+assert.ok(brazilTimeline.citations.researchSourceIds.includes('brazilConstitution1988'));
+const brazilVariant = weimarEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Brazilian post-authoritarian'));
+assert.ok(brazilVariant, 'the Brazilian case must be separated as a constitutional variant');
+const brazilExample = weimarEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Brazil’s 1988 Constitution is a bounded'));
+assert.ok(brazilExample, 'Brazil must appear as a bounded historical example');
+assert.match(brazilExample.text, /not an exact six-axis match/);
+assert.ok(weimarEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('Brazil’s 1988 settlement makes the implementation problem')));
+assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Portuguese 1988 Constitution')));
 
 const breadEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate, language] of [
