@@ -347,6 +347,34 @@ assert.match(swissReformationExample.text, /not liberal democracies/);
 assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Swiss Reformation adds a religious-coercion safeguard')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Research the Swiss Reformers')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the complete German, French and Latin primary corpus')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['swissConstitution1848Parliament', 'primary', '1848-09-12', ['German', 'French', 'Italian'], 'high'],
+  ['swissFederalArchivesAfter1848', 'contextual', null, ['English'], 'high'],
+  ['dardanelliMuellerSwissFederalism2017', 'secondary', '2017-09-27', ['English'], 'high'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Swiss federal constitutional reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const swissFederalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(swissFederalHistory.some(({ period }) => period.startsWith('1847–1848 — Swiss federal founding')));
+const swissFederalVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Swiss federal-radical constitutionalism'));
+assert.ok(swissFederalVariant, 'Swiss federal constitutionalism must be separated from the Reformation antecedent');
+const swissFederalExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Switzerland’s first federal constitution'));
+assert.ok(swissFederalExample, 'the Swiss federal founding must appear as a bounded example');
+assert.match(swissFederalExample.text, /founding electorate was inclusive/);
+assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The 1848 Swiss case adds a federalism-and-inclusion safeguard')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the complete 1848 Swiss Federal Constitution')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Add original Ottoman Turkish')));
 for (const [sourceId, publicationDate] of [
   ['sasakiNamikKemalConstitutionalPlan2006', '2006-02-20'],
