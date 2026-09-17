@@ -400,6 +400,35 @@ assert.ok(frenchMonarchyEntry.sections.find(({ id }) => id === 'criticisms').blo
 assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.includes('modern headnote places June dates in a July sequence')));
 assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.includes('existing article/card differences')));
 assert.deepEqual(Object.values(frenchMonarchyEntry.dimensionInterpretations).map(({ score }) => score), [-12, -48, 52, -42, -18, -52]);
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['assembleeCharterJuly1830', 'primary', '1830-08-14', ['French'], 'high'],
+  ['senatRestorationChamber1814', 'secondary', null, ['French'], 'high'],
+  ['laubaRestorationLegal2010', 'secondary', '2010–2011', ['French', 'English'], 'medium'],
+]) {
+  assert.ok(frenchMonarchyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a French Restoration reference trail`);
+  assert.ok(JSON.stringify(frenchMonarchyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+const frenchRestorationTimeline = frenchMonarchyEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(frenchRestorationTimeline.find(({ period }) => period.startsWith('1814–1830: Restoration Charter'))?.citations.researchSourceIds.includes('senatRestorationChamber1814'));
+assert.ok(frenchRestorationTimeline.find(({ period }) => period.startsWith('14 August 1830–1848: revised Charter'))?.citations.researchSourceIds.includes('assembleeCharterJuly1830'));
+const frenchRestorationVariant = frenchMonarchyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('French Restoration and July Monarchy'));
+assert.ok(frenchRestorationVariant, 'the Restoration and July Monarchy must be separated as a dated constitutional variant');
+const frenchRestorationExample = frenchMonarchyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('French Restoration and July Monarchy'));
+assert.ok(frenchRestorationExample, 'the Restoration and July Monarchy must appear as a bounded historical example');
+assert.match(frenchRestorationExample.caveat, /not equal citizenship/);
+assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete 1814 and 1830 Charters')));
+assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('Read Lauba’s complete legal-history study')));
 
 const goldmanEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate] of [

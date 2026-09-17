@@ -7268,6 +7268,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The French Restoration and July Monarchy show that “constitutional monarchy” covered different settlements of royal and national legitimacy. The 1814 Restoration used a king-granted Charter, a royal Chamber of Peers and a representative Chamber of Deputies; the 1830 revision removed the legitimist preamble, recognized the chambers’ constituent role, widened legislative initiative and reduced some royal claims while retaining restricted suffrage and important crown powers. Lauba’s legal-history synthesis treats the Restoration as an adaptive combination of revolutionary, Napoleonic and monarchical institutions rather than a simple return to the ancien régime.',
+            citations: citations([], ['senatRestorationChamber1814', 'assembleeCharterJuly1830', 'laubaRestorationLegal2010']),
+          },
+          {
+            type: 'paragraph',
             text: 'Brazil’s 1824 charter assigned the emperor both moderating power and executive leadership through ministers (articles 98–102). He could appoint and dismiss ministers and dissolve the Chamber under the stated condition of state necessity, immediately calling a replacement. This was constitutional authority beyond ceremony; the provisions alone do not establish how freely each power was exercised.',
             citations: citations([], ['brazilConstitution1824']),
           },
@@ -7341,6 +7346,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '15 July 1791: Barnave defends royal inviolability',
             text: 'Barnave presented the king’s personal immunity as a safeguard of liberty and stability. He paired royal resistance to legislation with accountability of executive agents and constitutionally specified grounds for losing the crown. This is a participant’s defense of constitutional monarchy before the final September text, not an impartial account of how the arrangement worked or an endorsement of every action by Louis XVI.',
             citations: citations([], ['barnaveRoyalInviolability1791']),
+          },
+          {
+            period: '1814–1830: Restoration Charter and the emergence of French parliamentarism',
+            text: 'The Bourbon Restoration did not simply recreate the pre-1789 order. The Charter of 1814 joined a king-appointed Chamber of Peers to an elected Chamber of Deputies and preserved selected revolutionary and Napoleonic institutional legacies. The Sénat’s retrospective account records royal control over peerage appointments alongside growing parliamentary opposition; Lauba’s legal-history synthesis describes the period as an adaptive constitutional compromise. This was limited and censitary representation, not equal democratic citizenship.',
+            citations: citations([], ['senatRestorationChamber1814', 'laubaRestorationLegal2010']),
+          },
+          {
+            period: '14 August 1830–1848: revised Charter and July Monarchy',
+            text: 'After the July Revolution, the chambers revised rather than abolished the 1814 Charter. The revised text removed the legitimist preamble, presented Louis-Philippe as “King of the French,” expanded legislative initiative and public parliamentary accountability, and limited several royal claims; the electoral body nevertheless remained restricted and the regime fell in 1848. The institutional account documents formal change, not the whole social experience or the causes of collapse.',
+            citations: citations([], ['assembleeCharterJuly1830', 'perseeFrenchConstitutionalMonarchy']),
           },
           {
             period: 'Nineteenth century: national, imperial, and constitutional monarchies',
@@ -7433,6 +7448,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Barnave argued that independent royal sanction and responsibility for executive acts belonged to different constitutional functions.',
                 relation: 'His defense illustrates a constitutional-monarchist rationale for a protected crown, not proof that ministerial responsibility produced parliamentary government. The July speech and final September provisions must be read separately.',
                 citations: citations([], ['barnaveRoyalInviolability1791', 'franceConstitution1791']),
+              },
+              {
+                label: 'French Restoration and July Monarchy, 1814–1848',
+                distinction: 'The Restoration Charter combined royal authority, appointed peers and elected deputies; the 1830 revision shifted the settlement toward national sovereignty and parliamentary government while retaining a hereditary crown and restricted suffrage.',
+                relation: 'This is a dated sequence of limited and conflictual constitutional monarchies, not proof that a written Charter automatically made the crown ceremonial or that later republicanism was the only possible outcome.',
+                citations: citations([], ['senatRestorationChamber1814', 'assembleeCharterJuly1830', 'laubaRestorationLegal2010']),
               },
               {
                 label: 'Morocco 2011: parliamentary government versus parliamentary monarchy',
@@ -7528,7 +7549,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: 'France, 1791–1792 and 1815–1848',
                 match: 'The crown was placed in a representative constitutional framework during attempts to reconcile royal continuity, national sovereignty, rights, and legislative government.',
                 caveat: 'The experiments were short-lived and conflictual, and they involved restricted participation, colonial inequality, and competing claims about whether sovereignty belonged to the king, the nation, or the legislature.',
-                citations: citations(['lockeSecondTreatise', 'burkeReflections'], ['perseeFrenchConstitutionalMonarchy', 'bpbMonarchy', 'sepNationalism']),
+                citations: citations(['lockeSecondTreatise', 'burkeReflections'], ['perseeFrenchConstitutionalMonarchy', 'bpbMonarchy', 'sepNationalism', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'assembleeCharterJuly1830', 'senatRestorationChamber1814', 'laubaRestorationLegal2010']),
+              },
+              {
+                name: 'French Restoration and July Monarchy',
+                period: 'France, 1814–1848',
+                match: 'The Bourbon Restoration and the July Monarchy preserved a crown while renegotiating the relationship among royal prerogative, appointed and elected chambers, national sovereignty, public religion, press freedom and restricted electoral participation.',
+                caveat: 'The two regimes were not interchangeable: the 1814 Charter’s legitimist presentation and royal initiative differed from the 1830 revision’s chamber-recognized constituent role. The institutional sources establish formal arrangements and selected historical interpretation, not equal citizenship, complete social history or a present-day French classification.',
+                citations: citations([], ['senatRestorationChamber1814', 'assembleeCharterJuly1830', 'laubaRestorationLegal2010']),
               },
               {
                 name: 'United Kingdom: parliamentary crown',
@@ -7668,6 +7696,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Restoration and July Monarchy caution against treating constitutional monarchy as one stable category. The 1814 Charter kept significant royal initiative and a king-appointed peerage within a limited representative order; the 1830 revision altered the source of constitutional authority and expanded chamber participation while preserving hereditary office and censitary politics. These formal differences matter, but neither institutional summary establishes how all social groups experienced the regimes or why the July Monarchy fell in 1848.',
+            citations: citations([], ['senatRestorationChamber1814', 'assembleeCharterJuly1830', 'laubaRestorationLegal2010']),
+          },
+          {
+            type: 'paragraph',
             text: 'The Moroccan text juxtaposes equal-rights language in article 19 with male-line dynastic succession in article 43. Article 175 protects the monarchical form and Muslim religion from revision, alongside democratic choice and established fundamental rights. These are distinct constitutional commitments; their interaction needs interpretation and implementation evidence, not an inference that all public offices are equally accessible.',
             citations: citations([], ['moroccoConstitutionFrench2011', 'constituteMorocco2011']),
           },
@@ -7681,8 +7714,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
-      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract', 'portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996', 'ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013'],
-      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. The Portuguese addition is a bounded Iberian case: official Portuguese sources, a primary-text link, and a Portuguese scholarly abstract/metadata are used with their limits visible; it does not establish a national score or a complete account of participation. The Ottoman addition is a bounded Middle Eastern and imperial case: a contemporary diplomatic record, official Turkish parliamentary history, and two scholarly studies establish the constitutional sequence from 1876 through 1909 without claiming a complete Ottoman-language collation or a full account of provincial, communal, wartime, or colonial practice. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; no PDF visual review or full-monograph reading is claimed for that addition.',
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract', 'assembleeCharterJuly1830', 'senatRestorationChamber1814', 'laubaRestorationLegal2010', 'portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996', 'ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013'],
+      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. The Portuguese addition is a bounded Iberian case: official Portuguese sources, a primary-text link, and a Portuguese scholarly abstract/metadata are used with their limits visible; it does not establish a national score or a complete account of participation. The Ottoman addition is a bounded Middle Eastern and imperial case: a contemporary diplomatic record, official Turkish parliamentary history, and two scholarly studies establish the constitutional sequence from 1876 through 1909 without claiming a complete Ottoman-language collation or a full account of provincial, communal, wartime, or colonial practice. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; the Restoration and July Monarchy addition uses French institutional histories and Lauba’s abstract-level legal-history lead, not a full Charter edition, parliamentary series or monograph review.',
     },
     researchGaps: [
       'Add French-language scholarship on divine-right monarchy, the French constitutional monarchies of 1791–1792, the Restoration, the July Monarchy, the Second Empire, royalism, republicanism, colonial monarchy, and the constitutional doctrines of the nineteenth century.',
@@ -7702,6 +7735,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Test Morocco’s formal allocation of powers against dated appointment records, cabinet and parliamentary proceedings, organic laws, judgments and independent accounts from opposition, women and religious minorities. Extend to emergency powers and amendment practice without assuming that institutional promises establish outcomes or a current-country score.',
       'Collate the 1791 French constitution and Barnave’s July speech with original editions and parliamentary records. The speech page’s modern headnote places June dates in a July sequence; do not reuse that chronology without checking it. Study actual veto episodes, ministerial prosecutions, popular petitions, women’s claims and colonial exclusions before inferring implementation from these selected provisions.',
       'Read Caiani’s complete introduction and monograph, and compare French-language specialist interpretations of 1791–1792. Only the Kent abstract was accessible in this pass; the publisher PDF and attempted OpenEdition articles were unavailable. No full-text, archival or PDF visual review is claimed, and the older French-scholarship gap remains open.',
+      'Read and collate the complete 1814 and 1830 Charters, royal ordinances, chamber debates and electoral laws in French, distinguishing the king-granted Restoration text from the chamber-revised July Monarchy settlement. The Assemblée and Sénat pages provide institutional summaries, not a complete primary record.',
+      'Read Lauba’s complete legal-history study and compare it with specialist work on royalism, republicanism, press freedom, religion, colonial subjecthood and the 1848 collapse. The current entry uses the University of Poitiers abstract and selected institutional histories without inferring equal citizenship or a national six-axis score.',
       'Read and collate the complete Portuguese 1822 Constitution and 1826 Charter, including the original Portuguese and official Gazette or facsimile versions. Test the summary-level claims here against the full articles, amendments, constitutional practice, and competing Portuguese historiography before expanding the case.',
       'Research Portuguese electoral law, parliamentary debates, press, suffrage exclusions, slavery and colonial subjecthood, and the 1832–1834 Liberal Civil War through local scholarship and primary records. Mónica’s article was represented through its abstract and metadata in this pass; the full article and underlying electoral evidence remain open.',
       'Add Portuguese and Spanish scholarship on Estado–Igreja relations, republicanism, Miguelism, regional and colonial monarchy, women’s political claims, and the transition to the 1910 Republic. Keep formal constitutional rights, lived access, and later republican memory as separate evidence layers.',
