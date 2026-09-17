@@ -2208,6 +2208,24 @@ for (const [sourceId, evidenceRole, publicationDate, languages] of [
   assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
 }
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['spdGodesbergProgram1959', 'primary', '1959-11-15'],
+  ['bpbSocialLiberalCoalition2002', 'secondary', '2002-04-05'],
+  ['bundestagSocialLiberalEra1982', 'secondary', '2017-07-31'],
+]) {
+  assert.ok(progressiveEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a progressive-liberal reference trail`);
+  assert.ok(JSON.stringify(progressiveEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must preserve primary/secondary evidence role`);
+  assert.equal(record.publicationDate, publicationDate, `${sourceId} needs its historical publication date`);
+  assert.equal(record.accessDate, '2026-09-17', `${sourceId} needs its consultation date`);
+  assert.deepEqual(record.languages, ['German'], `${sourceId} needs its source language`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its publication boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
+}
 const assistance1935 = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ssaOldAgeAssistance1935');
 const benefits1935 = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ssaOldAgeBenefits1935');
 const rooseveltStatement = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-fdrSocialSecuritySigning1935');
@@ -2242,6 +2260,10 @@ assert.match(progressiveDescription, /not as a synonym for atheism/, 'secular pu
 const frenchLaiciteSafeguard = progressiveEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ type, text }) => type === 'evidence-note' && /1905 case requires/.test(text ?? ''));
 assert.ok(frenchLaiciteSafeguard, 'the bounded 1905 case needs an evidence safeguard');
 assert.match(frenchLaiciteSafeguard.text, /not equal treatment in every locality/, 'formal legal principle must not become an outcome claim');
+const GermanSocialLiberalExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'West German social-liberal coalition');
+assert.ok(GermanSocialLiberalExample, 'the progressive-liberal entry must retain the bounded German social-liberal case');
+assert.match(GermanSocialLiberalExample.caveat, /not a complete outcome evaluation/);
+assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('complete German-language Godesberg Programme')), 'German social-liberal follow-up must remain open');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the French 1905 separation law')), 'the French research lead must preserve its follow-up gap');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Read Poole’s full study')), 'historiographical follow-up must remain open');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Audit the separate reference card')), 'the unchanged card’s broad source links need an explicit follow-up');

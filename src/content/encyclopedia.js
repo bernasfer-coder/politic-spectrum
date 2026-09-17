@@ -1301,6 +1301,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The didactic lesson is to inspect programme boundaries rather than infer a complete ideology from the existence of a welfare law. Need-based assistance and employment-linked benefits allocate responsibilities and eligibility differently. Their statutory design can illustrate active public provision without establishing universal inclusion, uniform administration, or the success of a reform. This case informs how the profile is read; it does not supply a new numerical score for the United States or for any individual.',
             citations: citations([], ['ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935']),
           },
+          {
+            type: 'paragraph',
+            text: 'West German social liberalism provides a second bounded comparison. The SPD’s 1959 Godesberg programme is a party self-description within the wider social-democratic family, while the 1969–1982 SPD–FDP coalition joined an active reform state with parliamentary competition and civil liberties. Borowsky describes reforms involving education, family law, criminal law, social security, monopoly control, and workplace co-determination, but also records conflict over implementation and the constraints imposed by the economic crisis. This is a partial institutional resemblance, not a claim that the coalition embodied every progressive-liberal commitment.',
+            citations: citations([], ['spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
+          },
         ],
       },
       {
@@ -1343,6 +1348,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['fdrSocialSecuritySigning1935', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935']),
           },
           {
+            period: '15 November 1959: Godesberg and social-democratic reform',
+            text: 'The SPD adopted the Godesberg Programme at its extraordinary party congress in November 1959. Its programme structure addressed human dignity, democratic state order, defense, economic and social order, and the relationship between property and power. As a primary party document it shows programmatic argument, not the later coalition’s full policy record or a complete definition of progressive liberalism.',
+            citations: citations([], ['spdGodesbergProgram1959', 'ghdiGodesbergGerman', 'lompeGodesberg1979']),
+          },
+          {
+            period: '1969–1982: West German social-liberal coalition',
+            text: 'The SPD–FDP coalition formed in 1969 and continued under Willy Brandt and Helmut Schmidt until its breakdown in 1982. The bpb account describes a reform agenda that sought more democracy, educational opportunity, gender equality, criminal-law reform, social security, and workplace participation, while documenting compromises, economic pressures, and disputes between coalition partners. The Bundestag’s institutional account records the final economic and financial conflict; the end of a coalition is not proof that its reform goals were either wholly achieved or wholly abandoned.',
+            citations: citations([], ['bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
+          },
+          {
             period: '1960s–present: rights expansion and pluralist reform',
             text: 'Civil-rights, feminist, anti-colonial, disability, LGBTQ+, and other equality movements broadened the meaning of liberal citizenship. Contemporary progressive liberalism remains internally divided over economic inequality, identity, speech, policing, migration, environmental regulation, and the limits of international intervention.',
             citations: citations(['wollstonecraftRights', 'millOnLiberty', 'kantPerpetualPeace'], ['sepLiberalism', 'vdem']),
@@ -1361,6 +1376,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Combines civil liberties and private enterprise with public services, social insurance, regulation, and equal opportunity.',
                 relation: 'Closest named family to this profile; its economic and social range is still broad.',
                 citations: citations(['millOnLiberty', 'keynesGeneralTheory'], ['sepLiberalism']),
+              },
+              {
+                label: 'West German social liberalism',
+                distinction: 'A post-war German variant joining social-democratic reform, liberal rights, parliamentary coalition, education and workplace participation with a mixed economy.',
+                relation: 'A useful period-specific comparison for active but institutionally constrained public action; it overlaps social democracy and should not be treated as the whole progressive-liberal family.',
+                citations: citations([], ['spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
               },
               {
                 label: 'New Deal social-security reform: a bounded United States case',
@@ -1445,6 +1466,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['fdrSocialSecuritySigning1935', 'ssaOldAgeBenefits1935']),
               },
               {
+                name: 'Willy Brandt',
+                role: 'West German chancellor associated with the opening phase of the 1969 social-liberal reform coalition',
+                caveat: 'The coalition and its programme are the evidence here; Brandt’s inclusion does not classify his entire career or imply that every reform proposal was implemented as intended.',
+                citations: citations([], ['bpbSocialLiberalCoalition2002']),
+              },
+              {
                 name: 'Immanuel Kant',
                 role: 'influence on universal rights and international peace',
                 caveat: 'Kant’s eighteenth-century philosophy is a source of concepts, not a direct contemporary party profile.',
@@ -1489,6 +1516,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'partial secular and civic-equality resemblance: a primary legal settlement pairing non-establishment with protected conscience and worship',
                 caveat: 'The law is not a complete account of French republicanism, later laïcité policy, colonial religious administration, or lived equality. The 1905 text, Scot’s historical interpretation, and the Conseil d’État’s institutional account are different evidence layers; Alsace-Moselle and overseas arrangements prevent a simple uniform-territory claim.',
                 citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
+              },
+              {
+                name: 'West German social-liberal coalition',
+                period: 'Federal Republic of Germany, 1969–1982; reform record varies by government and policy',
+                match: 'partial rights-and-reform resemblance: parliamentary coalition combining liberal constitutionalism with social and institutional reform',
+                caveat: 'The period included coalition compromise, economic constraints, contested reforms, and a different historical relationship to social democracy than this analytical profile. The party programme, bpb synthesis, and Bundestag account are distinct evidence layers; the example is not a complete outcome evaluation.',
+                citations: citations([], ['spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
               },
             ],
           },
@@ -1543,6 +1577,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The West German case demonstrates why a reform agenda should not be confused with a finished result. Borowsky records substantial proposals and reforms but also coalition disputes, compromises in workplace participation, inflation, recession, and the eventual breakdown of the SPD–FDP partnership. The Bundestag account confirms the final economic and financial disagreement. These records support a dated institutional comparison and expose implementation limits; they do not justify a country-wide ideological score or a claim that reform was uniformly progressive.',
+            citations: citations([], ['bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
+          },
+          {
+            type: 'paragraph',
             text: 'The causes of the 1935 coverage limits require historical argument beyond the statute. Larry DeWitt’s 2010 article attributes the Title II exclusions chiefly to Treasury concerns about tax collection and administration, challenging accounts centered on Southern legislators. He distinguishes these decisions from the politics of state-administered assistance. This is his interpretation, not an automatic statement of the agency’s position. His table uses 1930 occupational data, not observed benefit payments. It indicates disproportionate exposure to the exclusions, a different question from the motive for adopting them.',
             citations: citations([], ['dewittCoverageExclusions2010']),
           },
@@ -1569,13 +1608,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'constantLibertyModerns',
         'tocquevilleDemocracy',
       ],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'ghdiGodesbergGerman', 'spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
       editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual. The 1935 case uses historical law and a statement excerpt, separately from later interpretation. This pass adds a bounded French 1905 separation case, keeping its primary legal design distinct from Scot’s historical interpretation and the Conseil d’État’s institutional account of later judicial and territorial variation. Poole’s book is represented only by its publisher description; no full-book review, present-day eligibility assessment, or complete New Deal history is claimed.',
     },
     researchGaps: [
       'This pass adds the French 1905 separation law, Jean-Paul Scot’s French historical interpretation, and the Conseil d’État’s 2004 institutional study. Still expand French-language primary and specialist scholarship on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality, including colonial and postcolonial critiques; collate parliamentary debates, the full law and later applications, critical scholarship, colonial and overseas arrangements, Alsace-Moselle, and minority perspectives before treating the French case as representative or settled.',
       'Add German-language scholarship on new liberalism, the social market, post-war constitutional democracy, and debates over welfare-state authority.',
       'Add country-specific evidence for the Progressive Era, New Deal, post-war Europe, and contemporary liberal democracies rather than relying on broad period labels.',
+      'Read the complete German-language Godesberg Programme, FDP Freiburg Theses, coalition agreements, parliamentary debates, reform statutes and implementation studies; compare East/West German, union, feminist, migrant and minority perspectives before generalizing from the 1969–1982 social-liberal coalition.',
       'Add specialist research on colonialism, race, migration, disability, LGBTQ+ rights, environmental policy, and the tensions between universalism and pluralism.',
       'Read Poole’s full study and competing scholarship alongside the original hearings, Treasury records, and Black reform organizations’ evidence; test distinct claims about intent, administrative feasibility, structural discrimination, and implementation rather than declaring the historiography settled.',
       'Extend the bounded 1935 case through later amendments, state administration, gender and occupational inequalities, and post-war reforms. Audit the separate reference card’s broad Roosevelt and New Deal source links against specific historical evidence; this one-entry pass does not change those cards.',
