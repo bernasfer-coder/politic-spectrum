@@ -8738,7 +8738,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     confidence: 'medium',
     scopeNote: 'This is an umbrella analytical entry for movements that connect religious ethics, collective economic justice, and liberation from domination. Christian socialism, Catholic Worker practice, Black theology, Latin American liberation theology, Iranian Islamic-left thought, and other religious-socialist traditions are related but not interchangeable. The evidence remains predominantly Christian-centered; Martin Buber and Ali Shariati supply bounded Jewish and Shi’a Iranian comparisons, not coverage of all Jewish, Muslim, or other religious traditions.',
     timeScope: 'Older religious arguments about community and economic obligation are treated as antecedents, not as modern socialism. The principal modern formation runs from nineteenth-century Christian socialism and social-gospel movements through twentieth-century anti-colonial, civil-rights, Catholic Worker, and Latin American liberation movements to contemporary faith-based justice organizing.',
-    geographicScope: 'Transnational, with documented British, European, North American, Latin American, Brazilian, anti-colonial, and Iranian strands. Buber adds a Central European Jewish and Palestine/Israel intellectual case; the Iranian material is bounded to pre-1979 Islamic-left thought and its contested revolutionary reception. Broader Jewish, Muslim, Buddhist, Hindu, Indigenous, African, and other religious-socialist traditions still require language- and region-specific research.',
+    geographicScope: 'Transnational, with documented British, European, North American, Latin American, Brazilian, South African, anti-colonial, and Iranian strands. Buber adds a Central European Jewish and Palestine/Israel intellectual case; the Iranian material is bounded to pre-1979 Islamic-left thought and its contested revolutionary reception, while the South African material is bounded to the 1985 Kairos Document and its scholarly reception. Broader Jewish, Muslim, Buddhist, Hindu, Indigenous, African, and other religious-socialist traditions still require language- and region-specific research.',
     summary: 'A family of religiously grounded movements that criticizes poverty, exploitation, racial or colonial domination, and concentrated economic power while pursuing solidarity, collective organization, and liberation. It may support public ownership, cooperatives, redistribution, worker power, mutual aid, nonviolent resistance, or revolutionary change, but it does not prescribe one economic system or require clerical control of the state.',
     summaryCitations: citations(
       ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'marxEngelsManifesto'],
@@ -8809,6 +8809,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'evidence-note',
+            text: 'The South African Kairos Document supplies a bounded African liberation-theology case. Issued during the 1985 apartheid crisis, it was a Christian theological intervention that criticized “State Theology” and “Church Theology” and called for a prophetic response rooted in justice and resistance. Its document-centered categories illuminate religious critique of racialized political and economic domination, but the text is not a complete socialist programme and its signatories do not represent every South African church or Christian movement.',
+            citations: citations([], ['kairosDocument1985', 'gobaKairosLiberation1987', 'mahlanguKairosPropheticWitness2025']),
+          },
+          {
+            type: 'evidence-note',
             text: 'Iranian Islamic socialism provides a bounded non-Christian comparison. In the 1960s–1970s, Ali Shariati and related Islamic-left currents reworked Marxist and anti-imperial vocabularies through Shi’a concepts of justice, commitment, and revolutionary agency. This was not one party platform, not a synonym for Islamism, and not proof that the 1979 Islamic Republic implemented Shariati’s vision; Iranica and later scholarship distinguish religious intellectuals, clerical institutions, militant groups, and post-revolutionary factions.',
             citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026']),
           },
@@ -8832,6 +8837,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'evidence-note',
             text: 'A bounded Brazilian case makes this grassroots claim more precise. Krischke’s comparative study treats Comunidades Eclesiais de Base (CEBs) as shaping political culture and motivation rather than directly producing democratization. Maués’s Portuguese study of two rural Pará communities finds that pastoral work interacted with peasant and quilombola identities and generated new political-religious practices, while also emphasizing ambiguity and internal tensions. Menezes Neto’s study of the Catholic Church and the Movimento dos Trabalhadores Rurais Sem Terra links liberation theology to agrarian mobilization but follows a specific church–movement relationship, not every CEB or every socialist movement.',
             citations: citations([], ['krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The 1985 Kairos Document makes the African case more specific. Its authors analyzed apartheid as a crisis involving racial domination, political coercion, economic inequality, and theological legitimation; they distinguished a state-supporting theology from a cautious church response and a prophetic theology that demanded concrete resistance. Goba’s interpretation and Mahlangu’s later study support reading this as contextual liberation theology and public religious intervention, not as proof that the document prescribed nationalization, a socialist party, or a single post-apartheid economic order.',
+            citations: citations([], ['kairosDocument1985', 'gobaKairosLiberation1987', 'mahlanguKairosPropheticWitness2025']),
           },
           {
             type: 'paragraph',
@@ -8920,6 +8930,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['celamMedellinFinalCommissions1968', 'krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007']),
           },
           {
+            period: '1985: South African Kairos Document and contextual liberation theology',
+            text: 'During the apartheid State of Emergency, South African theologians and concerned Christians produced the Kairos Document as a theological-political intervention. The primary document criticized a state theology that sanctified the status quo, a church theology that lacked adequate social analysis, and called for prophetic action. Goba’s contemporary interpretation and Mahlangu’s later study place it within the Black and contextual liberation-theology struggle, while leaving the document’s authorship, reception, and economic programme distinct from a generic “religious socialism” label.',
+            citations: citations([], ['kairosDocument1985', 'gobaKairosLiberation1987', 'mahlanguKairosPropheticWitness2025']),
+          },
+          {
             period: '1960s–1970s: Iranian Islamic-left currents and Ali Shariati',
             text: 'In pre-revolutionary Iran, Islamic-left currents gained prominence alongside secular socialist and nationalist opposition. Iranica places Shariati among religious intellectuals who linked an Islamic reading of classlessness and social justice to anti-imperial and revolutionary politics, while Kanaaneh describes his effort to combine Marxist and existential tools with a Shi’a metaphysical worldview. The primary collection’s English translations are used only as a locator for his texts; Persian editions and translation history remain open.',
             citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026']),
@@ -8982,6 +8997,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Uses contextual theology and social analysis to interpret the suffering of the poor and organize transformative action in particular historical settings.',
                 relation: 'The most prominent case in this entry, but it is not identical to Marxism, socialism, Catholic social teaching, or every Latin American church movement.',
                 citations: citations(['gutierrezTheologyLiberation', 'fanonWretchedEarth'], ['oxfordLiberationTheologies', 'celamMedellin', 'vaticanLiberationInstruction']),
+              },
+              {
+                label: 'South African Kairos / Black contextual theology',
+                distinction: 'Uses a 1985 theological reading of apartheid to challenge state legitimation, church passivity, and reconciliation without justice, calling Christians toward prophetic resistance and solidarity with the oppressed.',
+                relation: 'A bounded African liberation-theology intervention rather than a complete socialist programme, a denomination-wide confession, or a classification of every South African church. Its racialized colonial context and internal reception must remain visible.',
+                citations: citations([], ['kairosDocument1985', 'gobaKairosLiberation1987', 'mahlanguKairosPropheticWitness2025']),
               },
               {
                 label: 'Brazilian base-community and agrarian practice',
@@ -9061,6 +9082,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['kingPoorPeoplesCampaign'], ['kingPoorPeoplesCampaign', 'oxfordLiberationTheologies']),
               },
               {
+                name: 'Bonganjalo Goba and the Kairos theologians',
+                role: 'South African liberation-theology voices associated with the 1985 Kairos intervention against apartheid’s political and theological legitimation.',
+                caveat: 'The document was produced by a group of concerned Christians and signatories, while Goba’s article is one contemporaneous interpretation. Neither should be treated as a complete representation of South African Christianity, Black theology, or a unified socialist programme.',
+                citations: citations([], ['kairosDocument1985', 'gobaKairosLiberation1987', 'mahlanguKairosPropheticWitness2025']),
+              },
+              {
                 name: 'Gandhi and religiously grounded anti-colonial economics',
                 role: 'A non-Christian comparative reference for ethical self-rule, nonviolence, village economy, and resistance to imperial domination.',
                 caveat: 'Gandhian swaraj is not a synonym for socialism or liberation theology; it is included to prevent the entry from treating Christian cases as the whole field.',
@@ -9105,6 +9132,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'Faith-linked local organization could support political learning, new peasant or quilombola identities, and selected struggles around land, rights, and democratic participation.',
                 caveat: 'The studies are not interchangeable: Krischke analyzes mediated democratic effects, Maués follows two Pará communities, and Menezes Neto studies the Catholic Church–MST relationship. None proves a single national CEB ideology, uniform church support, or a direct causal effect on democratization.',
                 citations: citations([], ['celamMedellinFinalCommissions1968', 'krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007']),
+              },
+              {
+                name: 'South African Kairos Document',
+                period: 'South Africa, 1985; apartheid State of Emergency and later theological reception',
+                match: 'A Christian, contextual and liberationist intervention that challenged religious legitimation of apartheid and called churches toward prophetic justice, solidarity, and resistance.',
+                caveat: 'The document is a bounded group intervention, not a party manifesto, national church position, or complete socialist economic programme. Its later reception and the unfinished question of post-apartheid inequality must not be read back into the 1985 text.',
+                citations: citations([], ['kairosDocument1985', 'gobaKairosLiberation1987', 'mahlanguKairosPropheticWitness2025']),
               },
               {
                 name: 'Ali Shariati and Iranian Islamic-left currents',
@@ -9159,6 +9193,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The South African Kairos case adds a different safeguard: religious opposition to an unjust state is not identical to a socialist economic programme. The document’s critique of apartheid joined theological interpretation to social and political analysis, but its authorship, church reception, and concrete economic proposals require separate study. Goba’s contemporary interpretation and Mahlangu’s later account help establish its liberationist and contextual significance; they do not prove uniform influence, complete representation, or a measurable post-apartheid outcome.',
+            citations: citations([], ['kairosDocument1985', 'gobaKairosLiberation1987', 'mahlanguKairosPropheticWitness2025']),
+          },
+          {
+            type: 'paragraph',
             text: 'The Iranian case warns against equating revolutionary religious socialism with clerical rule. Shariati’s anti-static-clergy orientation, later revolutionary coalitions, and the Islamic Republic’s constitutional religious oversight are distinct layers. Iran’s later legal design can be studied as a theocratic or hybrid case, but it should not retroactively define Shariati’s socialism or turn a contested intellectual influence into a simple causal explanation of 1979.',
             citations: citations([], ['iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'constituteIran1989']),
           },
@@ -9209,7 +9248,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
-            text: 'Finally, religious socialism has no single position on violence, the state, nationalism, secular law, property, or international institutions. Pacifist movements, electoral coalitions, anti-colonial resistance, revolutionary groups, welfare activists, and cooperative communities should not be placed on one exact score without evidence. The profile is a didactic composite, and the entry remains deliberately incomplete outside its best-sourced Christian, Latin American, European, and North American cases.',
+            text: 'Finally, religious socialism has no single position on violence, the state, nationalism, secular law, property, or international institutions. Pacifist movements, electoral coalitions, anti-colonial resistance, revolutionary groups, welfare activists, and cooperative communities should not be placed on one exact score without evidence. The profile is a didactic composite, and the entry remains deliberately incomplete outside its best-sourced Christian, Latin American, South African, European, and North American cases.',
             citations: citations(['dorothyDayCatholicWorker', 'gandhiHindSwaraj', 'fanonWretchedEarth', 'gutierrezTheologyLiberation'], ['foreignPolicy', 'oxfordLiberationTheologies', 'sepColonialism', 'cambridgeReligionOriginsSocialism']),
           },
         ],
@@ -9217,8 +9256,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['gutierrezTheologyLiberation', 'dorothyDayCatholicWorker', 'kingPoorPeoplesCampaign', 'gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto', 'spinozaPolitical', 'millOnLiberty'],
-      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'celamMedellinFinalCommissions1968', 'krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989', 'buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019', 'syracuseBuberPaths1996', 'iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026', 'constituteIran1989'],
-      editorialNote: 'The entry remains an umbrella synthesis with a predominantly Christian-centered evidence base, now including a bounded Brazilian CEB and agrarian-mobilization case alongside the Buber and pre-1979 Iranian Islamic-left comparisons. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black theology, Christian democracy, secular democratic socialism, anti-colonial liberation, Islamic revolutionary socialism, and theocracy. The Brazilian sources are not interchangeable: CELAM supplies restricted primary metadata, Krischke supplies a comparative abstract, and Maués and Menezes Neto supply Portuguese case studies. Buber’s and Shariati’s selected English materials, scholarly interpretations, and publisher metadata also have different roles; none is empirical validation, and the later Islamic Republic is not treated as Shariati’s programme. Scores remain didactic composites, with existing article/card discrepancies still recorded. Broader non-Christian traditions, fuller Brazilian archives, and country-specific claims require separate research.',
+      researchSourceIds: ['oxfordLiberationTheologies', 'oxfordChristianSocialism', 'cambridgeReligionOriginsSocialism', 'jstorChristianSocialistRevival', 'vaticanLiberationInstruction', 'vaticanChristianFreedomLiberation', 'celamMedellin', 'celamMedellinFinalCommissions1968', 'krischkeBrazilCEBDemocracy1991', 'mauesCebsAmazon2010', 'menezesNetoMstLiberation2007', 'kairosDocument1985', 'gobaKairosLiberation1987', 'mahlanguKairosPropheticWitness2025', 'catholicWorkerMovement', 'kingPoorPeoplesCampaign', 'oxfordLiberationLegacy', 'sepSocialism', 'sepReligionPolitics', 'sepColonialism', 'vaticanRerumNovarum', 'foreignPolicy', 'vdem', 'dayAimsPurposes1940', 'catholicWorkerAims2019', 'marquetteMaurinPapers', 'lowyRadicalizedCatholicism1989', 'buberPathsEnglish', 'sepBuber2026', 'leschBuberTheopolitics2019', 'syracuseBuberPaths1996', 'iranicaIslamicPoliticalMovements', 'kanaanehShariatiIslamizingSocialism2021', 'shariatiWorksEnglish', 'cambridgeShariatiGlobalMarxism2026', 'constituteIran1989'],
+      editorialNote: 'The entry remains an umbrella synthesis with a predominantly Christian-centered evidence base, now including bounded Brazilian CEB, South African Kairos, Buber, and pre-1979 Iranian Islamic-left comparisons. It distinguishes religious socialism, Christian socialism, liberation theology, Catholic Worker practice, Black and contextual theology, Christian democracy, secular democratic socialism, anti-colonial liberation, Islamic revolutionary socialism, and theocracy. The Brazilian sources are not interchangeable: CELAM supplies restricted primary metadata, Krischke supplies a comparative abstract, and Maués and Menezes Neto supply Portuguese case studies. The Kairos cluster separates an archived primary document, Goba’s contemporaneous scholarly interpretation, and Mahlangu’s open-access later study; it does not make the document a complete socialist programme or classify present-day South Africa. Buber’s and Shariati’s selected English materials, scholarly interpretations, and publisher metadata also have different roles; none is empirical validation, and the later Islamic Republic is not treated as Shariati’s programme. Scores remain didactic composites, with existing article/card discrepancies still recorded. Broader non-Christian traditions, fuller Brazilian and South African archives, and country-specific claims require separate research.',
     },
     researchGaps: [
       'Add original-language scholarship in Portuguese and Spanish on Brazilian base communities, liberation theology, land and labor movements, Black theology, Indigenous theology, and church–state relations; verify editions and translations.',
@@ -9237,6 +9276,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare Iranian Islamic-left groups, National Resistance and front traditions, the Mojahedin, clerical reformers, secular Marxists, and women’s, Kurdish, Baha’i, Sunni, labor, and minority perspectives through archives and Persian-language scholarship. Do not infer one social base from Shariati’s student audience or later revolutionary influence.',
       'Separate Shariati’s pre-1979 intellectual project from the 1979 constitutional order and later economic factions by reading the Persian Constitution, amendments, laws, party documents, and implementation evidence; test claims about land, labor, nationalization, and clerical authority against independent outcomes.',
       'This pass establishes only a bounded Brazilian CEB evidence cluster; compare additional dioceses, lay and clergy voices, women’s and Black/Indigenous perspectives, military-period archives, church–state records, and movement outcomes before generalizing from Pará or the MST relationship.',
+      'Read the complete 1985 and 1986 Kairos editions, drafting history, signatories, Institute for Contextual Theology records, church responses, Black Theology scholarship, and South African-language research. Compare the document’s structural critique with its concrete economic proposals and reception; do not infer a unified church, socialist programme, or post-apartheid outcome from the archived text.',
     ],
   },
   populist: {

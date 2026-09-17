@@ -894,6 +894,9 @@ for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   ['krischkeBrazilCEBDemocracy1991', 'secondary', '1991-07', 'medium', ['English']],
   ['mauesCebsAmazon2010', 'secondary', '2010', 'high', ['Portuguese']],
   ['menezesNetoMstLiberation2007', 'secondary', '2007-08', 'high', ['Portuguese', 'English abstract', 'French abstract']],
+  ['kairosDocument1985', 'primary', '1985', 'high', ['English']],
+  ['gobaKairosLiberation1987', 'secondary', '1987', 'medium', ['English']],
+  ['mahlanguKairosPropheticWitness2025', 'secondary', '2025', 'high', ['English']],
 ]) {
   assert.ok(religiousSocialistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a religious-socialist reference trail`);
   assert.ok(JSON.stringify(religiousSocialistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
@@ -918,6 +921,16 @@ assert.match(buberPerson.caveat, /not a six-axis score assigned to him/);
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Resolve existing article/card differences')));
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Buber transcription')));
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Compare Buber with other Jewish religious and secular socialist traditions')));
+const kairosTimeline = religiousSocialistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1985: South African Kairos Document'));
+assert.ok(kairosTimeline);
+assert.match(kairosTimeline.text, /contextual liberation-theology struggle/);
+assert.ok(religiousVariants.some(({ label }) => /South African Kairos/.test(label)));
+const kairosExample = religiousSocialistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'South African Kairos Document');
+assert.ok(kairosExample);
+assert.match(kairosExample.caveat, /not a party manifesto/);
+const religiousCriticisms = religiousSocialistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(religiousCriticisms, /The South African Kairos case adds a different safeguard/);
+assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Read the complete 1985 and 1986 Kairos editions')));
 
 const nationalityEntry = ENCYCLOPEDIA_ENTRIES['ethnic-nationalist'];
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
