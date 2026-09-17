@@ -8513,6 +8513,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Post-fascist Italy supplies a second bounded case. The 1943 Reconstructive Ideas programme presented political liberty and personal rights as conditions for rebuilding the state, combined Christian inspiration with respect for conscience and religious freedom, and proposed public control or associated management for unavoidable monopolies while rejecting collectivism. The 1948 Constitution was a wider constituent compromise: Forlenza and Thomassen describe Catholic-inspired participation alongside socialist and communist collaboration, while the Senate’s official record supplies the constitutional date and institutional text. This is evidence of Christian-democratic participation in democratic reconstruction, not proof that the party alone authored or implemented the Constitution.',
             citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Switzerland supplies a longer, federal bounded case. Catholic-conservative associations organized after the 1848 defeat of the Sonderbund and gradually entered national government; the 1912 party, later renamed the Conservative-Christian-Social People’s Party and then the CVP/PDC in 1970, combined confessional roots with Christian-social and broad people’s-party organization. The Historical Dictionary of Switzerland and the Swiss Parliament describe programmatic opening, coalition government, social wings, and a distinctive cantonal geography. The national party’s 2020 merger with the BDP and January 2021 re-formation as The Centre marks organizational transformation, not the disappearance of the older Christian-democratic tradition.',
+            citations: citations([], ['swissHlsChristianDemocrats2018', 'swissParliamentChristianDemocrats', 'bochslerSwitzerlandPoliticalDataYearbook2020']),
+          },
         ],
       },
       {
@@ -8543,6 +8548,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'evidence-note',
             text: 'The Italian case shows why Christian democracy should not be reduced to either clerical rule or market liberalism. The 1943 programme combines freedom of conscience, personal rights, anti-monopoly policy, and a rejection of collectivism; Forlenza and Thomassen then trace Catholic-inspired arguments into a Constitution written through cooperation with socialist and communist representatives. The Senate’s constitutional record establishes the legal framework, but party influence, coalition compromise, and later policy outcomes remain distinct historical questions.',
             citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Swiss case makes the “people’s party” claim concrete while preserving its limits. HLS records internal economic wings for farmers, artisans, workers, and employees, a Christian-social labor movement, long federal-government participation, and cooperation with socialists on some social policy and radicals on economic and financial policy. The Federal Chancellery’s 2008 profile presents the party’s own liberal-social language of responsibility and solidarity, family policy, social insurance, and economic development; that self-description must not be confused with an independent assessment of outcomes or equal inclusion.',
+            citations: citations([], ['swissHlsChristianDemocrats2018', 'swissParliamentChristianDemocrats', 'swissFederalChancelleryDemocracy2008']),
           },
           {
             type: 'evidence-note',
@@ -8594,6 +8604,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1943–1948: Italian Christian democracy and constitutional reconstruction',
             text: 'The wartime Reconstructive Ideas programme articulated a Christian-democratic response to the collapse of Fascism: political liberty and personal rights were treated as conditions of reconstruction, while economic policy rejected both unchecked monopoly and collectivist ownership. The 1948 Constitution emerged through a broader constituent compromise in which Catholic-inspired politicians worked with socialist and communist representatives. The Italian case therefore documents a Christian-democratic contribution to constitutional democracy without making the party the sole author of the constitutional order.',
             citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
+          },
+          {
+            period: '1848–2021: Swiss Catholic-conservative organization, CVP/PDC, and The Centre',
+            text: 'After the Sonderbund conflict, Catholic-conservative political organization developed from a marginalized and regionally concentrated position into a national party tradition. The Swiss Parliament and HLS trace the 1891 entry into the Federal Council, the 1912 party formation, the 1957 Christian-social name, the 1970 CVP/PDC name, and the party’s long role in coalition government. Its social wings represented farmers, artisans, workers, and employees, while its post-1960s opening and later electoral erosion show that a broad people’s party can be socially rooted yet confessionally and geographically uneven. In 2020 the national CVP/PDC approved a merger with the BDP, with The Centre beginning in January 2021; cantonal implementation had its own timetable.',
+            citations: citations([], ['swissHlsChristianDemocrats2018', 'swissParliamentChristianDemocrats', 'bochslerSwitzerlandPoliticalDataYearbook2020']),
           },
           {
             period: '1945–1960s: postwar reconstruction and the Christian-democrat decade',
@@ -8662,6 +8677,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Combines wartime reconstruction, political liberty, personal rights, Christian social inspiration, anti-monopoly measures, and participation in a constituent republic built through cooperation with socialist and communist forces.',
                 relation: 'A bounded national transition rather than a universal party model. The primary programme records aspirations, the Constitution records a wider settlement, and later government practice requires separate evidence.',
                 citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
+              },
+              {
+                label: 'Swiss federalist confessional-to-centrist adaptation',
+                distinction: 'Develops from Catholic-conservative associations after 1848 into a 1912 national party, Christian-social and occupational wings, long coalition participation, a post-1960s programmatic opening, and the 2021 national successor The Centre.',
+                relation: 'Shows how Christian democracy can combine religious roots, federalism, direct-democratic competition, social bargaining, and centrist coalition practice. Its confessional geography and uneven cantonal reach prevent it from serving as a universal model.',
+                citations: citations([], ['swissHlsChristianDemocrats2018', 'swissParliamentChristianDemocrats', 'bochslerSwitzerlandPoliticalDataYearbook2020']),
               },
               {
                 label: 'Subsidiarity and sphere-based pluralism',
@@ -8799,11 +8820,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['maritainIntegralHumanism', 'kantPerpetualPeace'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope']),
               },
               {
-                name: 'Swiss Christian-democratic people’s party tradition',
-                period: 'Switzerland, late nineteenth century to present',
-                match: 'A case in which a historically Catholic party opened its programme and membership beyond an exclusively confessional base while retaining Christian social and conservative elements.',
-                caveat: 'Swiss federalism, direct democracy, and religious geography make the case distinctive; it should not stand for all Christian democracy.',
-                citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['bpbChristianDemocraticCVP', 'comparativeChristianDemocracy']),
+                name: 'Swiss CVP/PDC and the 2021 Centre transition',
+                period: 'Switzerland, 1848–2021; successor politics after 2021',
+                match: 'A bounded federal case in which Catholic-conservative organization became a long-serving coalition party with Christian-social wings, broad occupational representation, post-1960s programmatic opening, and a national merger into The Centre in 2021.',
+                caveat: 'The tradition remained confessionally and geographically uneven, and the 2020–2021 merger changed the national party’s name without erasing cantonal variation or proving one stable six-axis position. Official self-description, institutional history, and independent scholarship must be kept separate.',
+                citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['swissHlsChristianDemocrats2018', 'swissParliamentChristianDemocrats', 'swissFederalChancelleryDemocracy2008', 'bochslerSwitzerlandPoliticalDataYearbook2020', 'comparativeChristianDemocracy']),
               },
               {
                 name: 'Chile: Eduardo Frei Montalva’s Revolución en Libertad',
@@ -8863,6 +8884,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Swiss case adds a safeguard against treating a long-running centre party as socially uniform. Its Catholic-conservative origins, Christian-social labor wing, federal coalition role, and cooperation with different parties across policy areas produced a cross-class but internally negotiated organization. HLS also records persistent differences between Catholic strongholds, Kulturkampf cantons, and historically Protestant cantons; the 2020–2021 merger into The Centre was a national organizational change rather than proof of a single present-day ideology. Classify a Swiss case by date, canton, programme, institution, and policy record, not by the Christian label alone.',
+            citations: citations([], ['swissHlsChristianDemocrats2018', 'swissParliamentChristianDemocrats', 'bochslerSwitzerlandPoliticalDataYearbook2020']),
+          },
+          {
+            type: 'paragraph',
             text: 'Sweet also identifies a difficulty: Maritain offered limited institutional detail for realizing his pluralist polity, and its capacity to combine religious diversity with unity remains debated. Philosophical compatibility is therefore not a demonstrated model of equal participation (section 3.5).',
             citations: citations([], ['sweetMaritainPolitical2019']),
           },
@@ -8901,8 +8927,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections', 'keynesGeneralTheory', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979', 'sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench'],
-      editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. The Chile addition is a bounded Latin American case: a protected 1965 party publication, an official Spanish-language library overview, and Spanish-, English-, and Portuguese-language scholarship are used to describe the 1964–1970 Revolución en Libertad programme and its agrarian, educational, participatory, and electoral tensions. The Italian addition is a bounded 1943–1948 transition: an Italian primary programme, the Senate’s official constitutional record, and Forlenza and Thomassen’s scholarly interpretation are kept distinct, and the 1948 settlement is not attributed to Christian Democracy alone. Neither case establishes a complete implementation record, a present-day country classification, or a universal model. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
+      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'swissHlsChristianDemocrats2018', 'swissParliamentChristianDemocrats', 'swissFederalChancelleryDemocracy2008', 'bochslerSwitzerlandPoliticalDataYearbook2020', 'oxfordPortugalPoliticalCatholicism', 'pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979', 'sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench'],
+      editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. The Chile addition is a bounded Latin American case: a protected 1965 party publication, an official Spanish-language library overview, and Spanish-, English-, and Portuguese-language scholarship are used to describe the 1964–1970 Revolución en Libertad programme and its agrarian, educational, participatory, and electoral tensions. The Italian addition is a bounded 1943–1948 transition: an Italian primary programme, the Senate’s official constitutional record, and Forlenza and Thomassen’s scholarly interpretation are kept distinct, and the 1948 settlement is not attributed to Christian Democracy alone. This pass adds a bounded Swiss case from the post-Sonderbund Catholic-conservative tradition through the CVP/PDC and its national 2020–2021 transition into The Centre, using German HLS scholarship, French parliamentary history, a dated federal party profile, and an open-access political-data report. The Swiss sources distinguish national and cantonal timing, institutional history, party self-description, and independent interpretation. None of these cases establishes a complete implementation record, a present-day country classification, or a universal model. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
     },
     researchGaps: [
       'Add original-language Catholic, Protestant, and Orthodox sources plus scholarship in French, German, Italian, Dutch, Portuguese, Spanish, and Latin American political history; record translations and editions separately.',
@@ -8921,6 +8947,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the Chilean agrarian and educational case through land-distribution records, campesino and rural-union testimony, Mapuche and other Indigenous scholarship, women’s unpaid and paid labor, regional variation, and measurable social outcomes. The selected abstracts establish a research direction, not universal inclusion or reform success.',
       'Compare Chile’s Revolución en Libertad with the Christian Democratic Party of Uruguay and later Chilean party factions, including their responses to polarization, anti-communism, foreign influence, church institutions, the 1973 rupture, and democratic restoration. Do not infer one Latin American Christian-democratic trajectory from Frei’s administration.',
       'Read and collate the complete Italian 1943 programme, the Camaldoli Code, Constituent Assembly debates, party congress records, and early postwar legislation in Italian. Separate Catholic-inspired arguments from cross-party constitutional compromise, and test claims about social policy, regional inequality, church–state relations, anti-communism, women’s citizenship, and implementation before generalizing from the 1943–1948 transition.',
+      'Extend the Swiss case through the German, French, Italian, and Romansh party programmes, cantonal archives, Federal Council and Federal Assembly records, Christian-social unions, women’s participation, family law, migration, minority religion, and social-policy implementation. The HLS and Parliament overviews establish a documented trajectory, but not equal inclusion or a complete policy outcome history across cantons.',
+      'Separate the national CVP/PDC–BDP merger decision from the later cantonal adoption of The Centre, successor-party programmes, voter coalitions, and policy continuity after 2021. The 2020 political-data report documents the national decision and its timing; it does not establish that every cantonal party, voter, or successor held the same ideological profile.',
     ],
   },
   'religious-socialist': {

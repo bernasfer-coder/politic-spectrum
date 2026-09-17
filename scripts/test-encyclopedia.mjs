@@ -458,6 +458,38 @@ assert.ok(italianExample, 'Italy must appear as a bounded Christian-democratic h
 assert.match(italianExample.caveat, /wider settlement/);
 assert.ok(christianCriticisms.some(({ text }) => text?.includes('Italian case adds a coalition and attribution safeguard')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Italian 1943 programme')));
+for (const [sourceId, role, date, languages, confidence] of [
+  ['swissHlsChristianDemocrats2018', 'secondary', '2018-03-13', ['German'], 'high'],
+  ['swissParliamentChristianDemocrats', 'contextual', '2016-05-23', ['French'], 'high'],
+  ['swissFederalChancelleryDemocracy2008', 'contextual', '2008', ['French'], 'medium'],
+  ['bochslerSwitzerlandPoliticalDataYearbook2020', 'secondary', '2021', ['English'], 'high'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Swiss Christian-democratic reference trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const swissHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const swissTimeline = swissHistory.find(({ period }) => period.startsWith('1848–2021: Swiss Catholic-conservative'));
+assert.ok(swissTimeline, 'the Swiss Christian-democratic timeline case must remain visible');
+assert.ok(swissTimeline.citations.researchSourceIds.includes('swissHlsChristianDemocrats2018'));
+const swissVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Swiss federalist confessional-to-centrist'));
+assert.ok(swissVariant, 'the Swiss case must be separated as a dated Christian-democratic variant');
+const swissExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Swiss CVP/PDC'));
+assert.ok(swissExample, 'Switzerland must appear as a bounded Christian-democratic historical example');
+assert.match(swissExample.caveat, /cantonal variation/);
+assert.ok(christianCriticisms.some(({ text }) => text?.includes('Swiss case adds a safeguard')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Extend the Swiss case through')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Separate the national CVP/PDC')));
 assert.deepEqual(Object.fromEntries(Object.entries(christianDemocracyEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -5, social: -30, authority: 20, identity: -20, foreign: 15, religion: -62 });
 
 const frenchMonarchyEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
