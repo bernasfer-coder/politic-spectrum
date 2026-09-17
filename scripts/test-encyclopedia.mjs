@@ -1014,6 +1014,36 @@ assert.match(weimarBoundary.text, /not a classification of Nazi dictatorship as 
 const decreeTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('28 February 1933'));
 assert.match(decreeTimeline.text, /not validation of its claimed defensive justification/);
 assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Collate the Weimar provisions')), 'the primary-source verification gap must remain visible');
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['congresoCadizConstitution1812', 'primary', '1812-03-19', ['Spanish'], 'high'],
+  ['varelaCadizLiberalism1987', 'secondary', '1987-04-01', ['Spanish'], 'medium'],
+  ['perezLunoCadizRights2015', 'secondary', '2015-01-08', ['Spanish'], 'medium'],
+]) {
+  assert.ok(weimarEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Cádiz constitutionalist reference trail`);
+  assert.ok(JSON.stringify(weimarEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const cadizTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1812–1823'));
+assert.ok(cadizTimeline, 'the Cádiz constitutional timeline case must remain visible');
+assert.ok(cadizTimeline.citations.researchSourceIds.includes('congresoCadizConstitution1812'));
+const cadizVariant = weimarEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Cádiz-style transatlantic'));
+assert.ok(cadizVariant, 'the Cádiz case must be separated as a dated constitutional variant');
+const cadizExample = weimarEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The Cádiz Constitution is a bounded'));
+assert.ok(cadizExample, 'Cádiz must appear as a bounded historical example');
+assert.match(cadizExample.text, /treated as synonymous with socially progressive/);
+assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Spanish Cádiz Constitution')));
+assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read Varela Suanzes-Carpegna')));
+assert.deepEqual(Object.fromEntries(Object.entries(weimarEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -30, social: 25, authority: -65, identity: 25, foreign: 35, religion: 55 });
 
 const breadEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate, language] of [

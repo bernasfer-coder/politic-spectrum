@@ -10033,6 +10033,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'India provides a bounded postcolonial case in which constitutionalism was asked to pursue several goals at once: rights protection, democratic representation, social transformation, federal and parliamentary government, and the management of a deeply unequal society. The case is not treated as a pure liberal model or as proof that constitutional design guarantees equal outcomes; the Constitution, judicial interpretation, historical scholarship, and everyday access to law are kept as separate evidence layers.',
             citations: citations([], ['indiaConstitution1950', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The Cádiz Constitution supplies a bounded Spanish and transatlantic case. Its 1812 text located sovereignty in the nation, defined the Spanish nation across both hemispheres, protected civil liberty and property in formal terms, created a hereditary “moderate” monarchy with legislative power shared by the Cortes and king, and established Catholicism as the sole legally protected religion. The document therefore combines liberal constitutional techniques with monarchical and confessional limits; it is evidence of design, not equal citizenship or successful implementation across the empire.',
+            citations: citations([], ['congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015']),
+          },
         ],
       },
       {
@@ -10053,6 +10058,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The Weimar Constitution illustrates the difference between an emergency power and an unchecked power on paper. Article 48 permitted temporary suspension of specified rights but required prompt notification to the Reichstag and cancellation at its request. Article 50 required ministerial countersignature of presidential orders, while article 54 required resignation after an explicit parliamentary withdrawal of confidence. These textual checks do not demonstrate effective restraint in practice.',
             citations: citations([], ['ghdiWeimarGerman']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Cádiz text shows why a liberal constitutional profile must examine the whole settlement rather than extract only its sovereignty or rights language. Articles 1–4 describe a national, independent polity whose sovereignty is not the property of a family; articles 14–17 divide legislative, executive and judicial functions while retaining hereditary monarchy; article 12 makes Roman Catholicism the nation’s only lawful religion; and the citizenship provisions distinguish formal membership from racialized and status-based routes to full civic standing. Varela and Pérez Luño place these provisions within a contested Spanish liberal tradition and identify both constitutional contributions and limitations.',
+            citations: citations([], ['congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015']),
           },
           {
             type: 'evidence-note',
@@ -10104,6 +10114,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Eighteenth century — constitutional revolutions and federal design',
             text: 'Atlantic constitutional movements translated rights, representation, republican government, and anti-arbitrary-power arguments into written constitutions, declarations, and institutional designs. The Federalist essays defended an extended republic, representation, federalism, separated powers, and checks against faction. These arrangements created durable tools for divided power while coexisting with slavery, colonial domination, property qualifications, and restricted suffrage.',
             citations: citations(['federalistPapers', 'lockeSecondTreatise'], ['locFederalistPapers', 'sepConstitutionalism', 'colonialLiberalismExclusion']),
+          },
+          {
+            period: '1812–1823: Cádiz constitutionalism and the Spanish liberal tradition',
+            text: 'During the Peninsular War, the Cortes promulgated the Cádiz Constitution on 19 March 1812. It framed the Spanish nation across both hemispheres, placed essential sovereignty in the nation, divided legislative, executive and judicial functions, and retained a hereditary moderate monarchy. The same text established Catholicism as the only lawful religion and attached unequal conditions to citizenship, so its liberal constitutional significance cannot be separated from confessional, imperial and status boundaries. Varela’s account follows its later abandonment, the 1820–1823 Constitutional Triennium, and the 1837 and 1845 settlements; these are historical developments, not one continuous regime.',
+            citations: citations([], ['congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015']),
           },
           {
             period: 'Nineteenth century — civil liberty, representative reform, and the limits of liberal citizenship',
@@ -10183,6 +10198,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['constantLibertyModerns', 'millOnLiberty'], ['oxfordBritishConstitutionalism', 'sepConstitutionalism']),
               },
               {
+                label: 'Cádiz-style transatlantic constitutional liberalism',
+                distinction: 'Combines national sovereignty, a written rights-bearing constitutional order, a hereditary moderate monarchy, representative Cortes and formal separation of functions across a transatlantic polity.',
+                relation: 'It demonstrates that liberal constitutionalism can coexist with a monarchy, an imperial conception of national membership and confessional exclusivity. Its formal rights and nation-language must not be mistaken for equal citizenship or religious pluralism.',
+                citations: citations([], ['congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015']),
+              },
+              {
                 label: 'Royal arbitration or active government? The Brazilian debate',
                 distinction: 'Christian Edward Cyril Lynch (2005) distinguishes the legal borrowing of Benjamin Constant’s royal-power model from the Crown’s political aims: the same framework could support an arbitrating monarch or active royal government.',
                 relation: 'His concluding analysis challenges the assumption that combining royal titles alone proves a distortion of Constant. This is an attributed historiographical argument, not a verdict that imperial rule secured equal freedom or followed modern parliamentary conventions.',
@@ -10257,6 +10278,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'India’s postcolonial constitutional order, inaugurated in 1950, is a useful historical example of liberal constitutionalism with transformative ambitions. Its study brings together constitutional rights, universal franchise, judicial remedies, social and economic objectives, federal and parliamentary design, and the continuing negotiation of individual and community claims. The basic-structure doctrine later placed a judicially enforced limit on constitutional amendment, while scholarship also records unequal access to litigation and the disciplining effects of centralized state power. India is therefore a dated, internally contested case—not an exact six-axis match for every Indian institution, government, or citizen.',
             citations: citations([], ['indiaConstitution1950', 'indiaKesavananda1973', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Cádiz Constitution is a bounded historical example of liberal constitutionalism under wartime and imperial pressure. Its national-sovereignty language and formal distribution of powers influenced later Spanish and Hispanic constitutional debates, while its confessional monopoly, monarchic structure and unequal citizenship provisions show why “liberal” cannot be treated as synonymous with socially progressive, secular or fully democratic. The Spanish scholarship used here interprets its rights and liberal legacy; it does not establish a six-axis score for Spain or for every territory of the Hispanic Monarchy.',
+            citations: citations([], ['congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015']),
+          },
         ],
       },
       {
@@ -10292,6 +10318,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The second criticism is formal equality. Liberal constitutions have often proclaimed universal rights while leaving property, race, gender, colonial status, caste, religion, disability, or immigration status to determine who could exercise them in practice. Rights language can be emancipatory, but researchers must identify the actual rights-holder, remedy, enforcement institution, and excluded population in each period.',
             citations: citations(['wollstonecraftRights', 'lockeSecondTreatise', 'millOnLiberty'], ['colonialLiberalismExclusion', 'sepColonialism', 'unRuleLawHumanRights', 'oxfordLiberalismResearch']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Cádiz case makes the same warning visible in a single constitutional text. A nation can be declared sovereign and a constitution can promise civil liberty while religion, imperial administration, racial status and access to citizenship remain unequal. Pérez Luño’s rights analysis and Varela’s intellectual-history outline are useful attributed interpretations, but the official text does not establish how rights were enforced across Spain, the Americas, the Philippines or other territories. The case therefore expands the evidence base without changing the profile’s scores.',
+            citations: citations([], ['congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015']),
           },
           {
             type: 'paragraph',
@@ -10343,8 +10374,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy', 'adamSmithWealth'],
-      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016', 'southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995', 'khoslaTushnetStateCapacity2022', 'indiaConstitution1950', 'indiaKesavananda1973', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007'],
-      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state. The India addition is a bounded postcolonial case using an official constitutional link, an official Supreme Court summary, and selected academic readings; it does not establish a whole-country score, complete constitutional history, or equal rights in practice.',
+      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016', 'southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995', 'khoslaTushnetStateCapacity2022', 'indiaConstitution1950', 'indiaKesavananda1973', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007'],
+      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state. The India addition is a bounded postcolonial case using an official constitutional link, an official Supreme Court summary, and selected academic readings; it does not establish a whole-country score, complete constitutional history, or equal rights in practice. The Cádiz addition is a bounded Spanish and transatlantic case using the official 1812 text plus Spanish scholarship represented through metadata/abstracts; it does not establish implementation, colonial reception, religious pluralism, or a score for Spain or its former territories.',
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Hindi, Chinese, and African constitutional traditions, including constitutional arguments that do not begin from the Anglo-American canon.',
@@ -10364,6 +10395,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read and collate the complete Constitution of India in its authoritative English and regional-language versions, the Constituent Assembly debates, amendment history, and founding scholarship. The official PDF link and selected secondary readings used here do not establish every article, translation, or constitutional practice.',
       'Extend the Indian case through the full Kesavananda Bharati, Golak Nath, Minerva Mills, emergency, preventive-detention, and Article 21 jurisprudence, including separate opinions and later constitutional amendments. Preserve the disagreement between parliamentary authority, judicial review, social transformation, and democratic accountability.',
       'Add Dalit, Adivasi, Muslim, women’s, linguistic, regional, labor, and federal scholarship on India’s constitutional order, alongside administrative and electoral evidence. Test De’s account of unequal litigation access and Fischer’s political-economy interpretation against local archives, rights outcomes, and competing Indian-language research.',
+      'Read and collate the complete Spanish Cádiz Constitution, Cortes debates, 1814 repeal, 1820–1823 Triennium records and 1837/1845 constitutional texts in Spanish; distinguish the transatlantic nation’s formal membership from colonial implementation and local reception.',
+      'Read Varela Suanzes-Carpegna and Pérez Luño in full alongside Spanish and Latin American scholarship on Cádiz liberalism, Catholic establishment, race, slavery, Indigenous citizenship, women, representation and the constitutional legacy across the Hispanic Atlantic. The current pass uses article metadata/abstracts, not full-text review.',
     ],
   },
   'militarist-imperialist': {
