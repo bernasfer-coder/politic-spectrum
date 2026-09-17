@@ -260,6 +260,38 @@ assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWit
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Extend the Indian case through the full Kesavananda Bharati')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Add Dalit, Adivasi, Muslim')));
 assert.deepEqual(Object.fromEntries(Object.entries(liberalConstitutionalismEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -30, social: 25, authority: -65, identity: 25, foreign: 35, religion: 55 });
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['mexicoConstitution1917OfficialSpanish', 'primary', '1917-02-05', ['Spanish'], 'high'],
+  ['locMexicoConstitution1917', 'contextual', null, ['English', 'Spanish'], 'high'],
+  ['niemeyerQueretaro1974', 'secondary', '1974', ['English'], 'medium'],
+  ['velazquezAgrarianConstitution2017Spanish', 'secondary', '2017-09', ['Spanish'], 'high'],
+  ['carboMagonArticle1232017', 'secondary', '2017-11-16', ['Spanish'], 'medium'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Mexican constitutionalism reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish legal evidence, context, and scholarship`);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'), `${sourceId} needs a liberal-constitutionalism backlink`);
+}
+const mexicanConstitutionTimeline = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1916–1917: Mexican revolutionary social constitutionalism'));
+assert.ok(mexicanConstitutionTimeline, 'the Mexican social-constitutional timeline case must remain visible');
+assert.ok(mexicanConstitutionTimeline.citations.researchSourceIds.includes('mexicoConstitution1917OfficialSpanish'));
+const mexicanConstitutionVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Mexican revolutionary social constitutionalism'));
+assert.ok(mexicanConstitutionVariant, 'the Mexican case must be separated as a social-constitutional variant');
+const mexicanConstitutionExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Mexico’s 1917 Constitution'));
+assert.ok(mexicanConstitutionExample, 'Mexico must appear as a bounded historical example');
+assert.match(mexicanConstitutionExample.text, /not a complete record of enforcement/);
+const mexicanConstitutionSafeguard = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Mexican case adds a safeguard'));
+assert.ok(mexicanConstitutionSafeguard, 'the Mexican case needs a design-versus-implementation safeguard');
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the original Spanish 1917 Constitution')));
 
 const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
 for (const [sourceId, role, date] of [
