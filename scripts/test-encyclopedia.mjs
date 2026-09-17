@@ -2120,6 +2120,27 @@ for (const [sourceId, evidenceRole] of [
     assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-socialist'), `${sourceId} must preserve the existing cross-entry relationship`);
   }
 }
+for (const [sourceId, evidenceRole] of [
+  ['cazettaIntegralismoLusitano2012', 'secondary'],
+  ['goncalvesIntegralismoEducacao2017', 'secondary'],
+  ['politicaIntegralismo1931', 'primary'],
+]) {
+  assert.ok(religiousTraditionalistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Portuguese religious-traditionalist reference trail`);
+  assert.ok(JSON.stringify(religiousTraditionalistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must preserve primary/secondary evidence role`);
+  assert.equal(record.accessDate, '2026-09-17', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its rights boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:religious-traditionalist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const lusitanianExample = religiousTraditionalistEntry.sections.find(({ id }) => id === 'examples').blocks
+  .flatMap(({ entries = [] }) => entries)
+  .find(({ name }) => name.startsWith('Integralismo Lusitano'));
+assert.ok(lusitanianExample, 'religious-traditionalist must retain the bounded Portuguese Integralismo Lusitano case');
+assert.match(lusitanianExample.caveat, /not a country-wide religious regime/);
 const gailusChurchState = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-gailusChurchStateNazism2018');
 const silomonResistance = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-silomonProtestantResistance2009');
 assert.equal(gailusChurchState.publicationDate, '2018-11-01');

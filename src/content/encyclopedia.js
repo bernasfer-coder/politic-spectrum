@@ -4038,6 +4038,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Historian Manfred Gailus distinguishes Nazi-aligned German Christians, church opposition, and accommodating churches rather than one Protestant response. He characterizes the Confessing Church primarily as a theological defense against Nazi-aligned church leadership, not a movement to restore democracy and general political freedoms. Institutional independence, religious conviction, and equal citizenship must therefore be examined separately; that last distinction is this site’s analytical safeguard, not a numerical finding in his article.',
             citations: citations([], ['gailusChurchStateNazism2018']),
           },
+          {
+            type: 'paragraph',
+            text: 'Integralismo Lusitano shows how Catholic education, organic monarchy, anti-parliamentarianism, and national restoration could be joined in one Portuguese movement without making it identical to clerical government. Cazetta traces its formation and internal differences, while Gonçalves documents the narrower educational network around Lisbon’s Vasco da Gama College. These studies support a movement-level case and a religious-traditionalist boundary, not a claim about all Portuguese Catholics or the later Estado Novo.',
+            citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
+          },
         ],
       },
       {
@@ -4068,6 +4073,26 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1 November 1885: Leo XIII’s Immortale Dei',
             text: 'The encyclical calls for public support of Catholic religion while distinguishing civil and ecclesiastical powers. It accepts different government forms serving the common good. Its permission to tolerate other worship for practical reasons is not equal legal standing for religions; it also rejects forced conversion to Catholicism.',
             citations: citations([], ['leoImmortaleDeiFrench']),
+          },
+          {
+            period: '1913–1914: Portuguese integralist formation',
+            text: 'The expression Integralismo Lusitano appeared around the Portuguese monarchist and Catholic journal Alma Portuguesa in 1913, followed by Nação Portuguesa in Coimbra in April 1914. Cazetta’s study traces the movement from intellectual and literary formation toward a political project of organic monarchy, while noting that later actors did not converge completely on one programme.',
+            citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
+          },
+          {
+            period: '1916–1917: Junta Central and organic monarchy',
+            text: 'The movement organized a Junta Central and circulated a manifesto and statute defending a traditional, organic, anti-parliamentary monarchy. These are movement claims discussed by the historical study used here, not independent evidence of public support or implementation; Cazetta also preserves the distinction between the movement’s organizational formation and later individual trajectories.',
+            citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
+          },
+          {
+            period: '1915–late 1920s: Catholic education as a political network',
+            text: 'Gonçalves’s bounded case of the Vasco da Gama College in Lisbon shows an educational project combining Catholic doctrine, integralist principles, physical and arts education, and strict internal discipline. Its periodicals and regulations illuminate political socialization and elite formation, but do not demonstrate that the school represented all Portuguese education or that the movement controlled the state.',
+            citations: citations([], ['goncalvesIntegralismoEducacao2017']),
+          },
+          {
+            period: '31 March 1931 and 1932: movement self-description and divergence',
+            text: 'A 1931 issue of the Integralist school journal Política defined integralism as a political, social, and economic doctrine aimed at restoring the Portuguese nation, with historical freedoms and public good as stated reference points. Cazetta then distinguishes the closing of the Junta Central from Rolão Preto’s National Syndicalism, which emerged in 1932; the two should not be collapsed into one label or treated as evidence of a single fascist programme.',
+            citations: citations([], ['politicaIntegralismo1931', 'cazettaIntegralismoLusitano2012']),
           },
           {
             period: 'Twentieth century: religious parties and constitutional accommodation',
@@ -4129,6 +4154,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['barmenDeclaration1934German', 'gailusChurchStateNazism2018']),
               },
               {
+                label: 'Portuguese Catholic monarchism: Integralismo Lusitano',
+                distinction: 'A movement-level case combining Catholic public culture, inherited national tradition, organic monarchy, anti-parliamentarianism, and corporative or community language.',
+                relation: 'A useful religious-traditionalist boundary case that also overlaps with monarchism and national conservatism; its internal divisions and later National Syndicalist divergence prevent treating it as a synonym for fascism or the Estado Novo.',
+                citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
+              },
+              {
                 label: 'Religious nationalism',
                 distinction: 'Fuses religious inheritance with national membership, sovereignty, historical memory, and sometimes ethnic or civilizational boundaries.',
                 relation: 'Adds identity politics to religious traditionalism; it can be civic and pluralist or exclusionary and ethnoreligious.',
@@ -4173,6 +4204,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'papal author of the confessional political argument in Immortale Dei',
                 caveat: 'Document-specific reference, not evidence for every policy position or these six numerical coordinates.',
                 citations: citations([], ['leoImmortaleDeiFrench']),
+              },
+              {
+                name: 'António Sardinha and Hipólito Raposo',
+                role: 'Portuguese integralist intellectuals associated with the movement’s organic-monarchical and Catholic-national programme',
+                caveat: 'The pair illustrates a movement network, not a claim that every member shared one programme or that either person can stand for Portuguese Catholicism as a whole.',
+                citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
+              },
+              {
+                name: 'Alberto Monsaraz',
+                role: 'early Integralismo Lusitano organizer and author associated with its monarchical educational pamphlets',
+                caveat: 'The source records his role in movement publications and manuals; the card does not infer the effectiveness of the propaganda or assign his personal six-axis coordinates.',
+                citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
               },
               {
                 name: 'Lothar Kreyssig',
@@ -4230,6 +4273,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'institutional discourse, not a country-wide ideology',
                 caveat: 'Portier describes acceptance of constitutional pluralism alongside continuing moral claims. Bishops’ statements are not a survey of Catholics or proof of French state policy.',
                 citations: citations([], ['portierEpiscopateFreedom']),
+              },
+              {
+                name: 'Integralismo Lusitano and the Vasco da Gama College',
+                period: 'Portugal, 1913–1932; college case especially 1915–late 1920s',
+                match: 'Catholic, monarchist and anti-parliamentary movement-level boundary case',
+                caveat: 'The movement’s periodicals and the college’s educational project document organized ideas and networks, not a country-wide religious regime. Its relationship to National Syndicalism, Salazarism, fascism, and Portuguese Catholic institutions requires separate actor- and period-specific analysis.',
+                citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
               },
               {
                 name: 'Barmen Confessing Synod',
@@ -4294,6 +4344,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Integralismo Lusitano must be kept as a boundary case rather than a shortcut. Its Catholic and traditionalist language supports inclusion in this profile, while its anti-parliamentary monarchy, national restoration, and later contacts with authoritarian currents create overlaps with monarchism, national conservatism, and historical fascism. The evidence reviewed here is strongest for intellectual production and educational networks; it does not establish mass adherence, state control, or a uniform relationship with Salazarism.',
+            citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
+          },
+          {
+            type: 'paragraph',
             text: 'The US Holocaust Memorial Museum emphasizes widespread Christian antisemitism and the limited public opposition of church leaders to persecution of Jews, while documenting individual resistance and rescue. Defending church autonomy must not erase complicity or be equated with defending all persecuted people. Conversely, individual resistance should not disappear inside a general account of institutional failure; these different levels of evidence must remain visible.',
             citations: citations([], ['ushmmGermanChurches']),
           },
@@ -4302,7 +4357,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'adamSmithWealth', 'morgenthauRealism', 'millOnLiberty'],
-      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy', 'leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom', 'barmenDeclaration1934German', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'ushmmGermanChurches'],
+      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy', 'leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom', 'cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931', 'barmenDeclaration1934German', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'ushmmGermanChurches'],
       editorialNote: 'The entry separates personal religiosity, religious social ethics, confessional constitutionalism, religious nationalism, Christian democracy, and theocracy. Its scores describe a didactic high-tradition, high-authority profile and do not classify every religious person, party, or state.',
     },
     researchGaps: [
@@ -4314,6 +4369,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Compare the Vatican-hosted French versions with identified Latin editions; review Portier’s complete article and the Poulat/Rémond books directly. Add evidence from dissenters and minorities about implementation, and non-Catholic cases before extending this bounded doctrinal comparison.',
       'Collate the EKD Barmen transcription with a dated 1934 edition and an identified published translation. Investigate local reception, dissent, and the experiences of persecuted Jews and Christians of Jewish ancestry; this German Protestant case does not resolve the wider cross-religious gaps.',
       'Read the Kreyssig correspondence and biographies cited by Silomon directly, and the Barnett, Bergen, and Ericksen studies listed by USHMM. They remain further-reading leads, not independently reviewed books; investigate each actor’s changing politics before assigning a label or coordinates.',
+      'Collate the Integralismo Lusitano statute, Nação Portuguesa and Alma Portuguesa issues with archival records; investigate membership, reception, gender, antisemitism, colonial politics, ties to the Church, relations with Salazarism and National Syndicalism, and the Vasco da Gama College’s implementation before extending this Portuguese boundary case.',
     ],
   },
   'anti-colonial-liberation': {
