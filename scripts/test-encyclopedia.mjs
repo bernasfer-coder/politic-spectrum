@@ -640,6 +640,27 @@ assert.ok(meijiVariant, 'Meiji imperial constitutional monarchy must be a separa
 const meijiExample = frenchMonarchyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Meiji Japan'));
 assert.ok(meijiExample, 'Meiji Japan must appear as a bounded historical example');
 assert.match(meijiExample.caveat, /not a present-day country match/);
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['japanHouseElectionLaw1889', 'primary', '1889-02-11', ['Japanese', 'English catalogue'], 'high'],
+  ['youngJapanDemocracyBreakdown2024', 'secondary', '2024-03-21', ['English'], 'high'],
+]) {
+  assert.ok(frenchMonarchyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Meiji monarchism reference trail`);
+  assert.ok(JSON.stringify(frenchMonarchyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+assert.ok(meijiHistory.find(({ period }) => period.startsWith('1881–1890:'))?.citations.researchSourceIds.includes('japanHouseElectionLaw1889'));
+assert.ok(meijiVariant.citations.researchSourceIds.includes('youngJapanDemocracyBreakdown2024'));
+assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('Inspect the JACAR scan and Japanese text')));
 assert.deepEqual(Object.values(frenchMonarchyEntry.dimensionInterpretations).map(({ score }) => score), [-12, -48, 52, -42, -18, -52]);
 
 const goldmanEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
