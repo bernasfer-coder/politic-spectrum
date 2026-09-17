@@ -131,7 +131,9 @@ for (const [sourceId, role, date] of [
   assert.equal(record.accessDate, '2026-09-16');
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:historical-fascist']);
+  assert.deepEqual(record.relationships.profileEntries, sourceId === 'laricciaLateranPacts2016'
+    ? ['encyclopedia:historical-fascist', 'encyclopedia:theocratic']
+    : ['encyclopedia:historical-fascist']);
 }
 const pasettiRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-pasettiColonialismCorporative2016');
 assert.equal(pasettiRecord.identifiers.doi, '10.12977/stor655');
@@ -2270,6 +2272,22 @@ assert.match(iranRepositoryText.description, /article 110\(7\) differs/, 'the un
 assert.equal(iranRepositoryText.canonicalUrl, 'https://www.constituteproject.org/constitution/Iran_1989', 'metadata correction must preserve the established source URL');
 assert.equal(buchtaIran.publicationDate, '2020-05-15', 'the institutional assessment must be dated');
 assert.deepEqual(buchtaIran.languages, ['German']);
+const papalStateSource = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-partnerLandsStPeter1972');
+assert.ok(theocraticEntry.references.researchSourceIds.includes('partnerLandsStPeter1972'), 'the Papal State needs a theocracy reference trail');
+assert.ok(JSON.stringify(theocraticEntry.sections).includes('partnerLandsStPeter1972'), 'the Papal State source needs claim-level use');
+assert.equal(papalStateSource.evidenceRole, 'secondary');
+assert.equal(papalStateSource.publicationDate, '1972');
+assert.deepEqual(papalStateSource.languages, ['English']);
+assert.equal(papalStateSource.accessDate, '2026-09-17');
+assert.equal(papalStateSource.publicationStatus, 'link-only');
+assert.equal(papalStateSource.directQuote, null);
+assert.ok(papalStateSource.relationships.profileEntries.includes('encyclopedia:theocratic'));
+const papalTimeline = theocraticEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(papalTimeline.some(({ period, text }) => period.startsWith('Eighth century–1870: the Papal States') && text.includes('diverse Italian regions')));
+const papalVariant = theocraticEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label === 'Territorial papal state');
+assert.ok(papalVariant, 'territorial papal government must be separated as a bounded variant');
+const papalExample = theocraticEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Papal States and Vatican City');
+assert.match(papalExample.caveat, /distinct formations/);
 const theocraticDescription = theocraticEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
 assert.match(theocraticDescription, /six religious jurists selected by the Leader and six Muslim legal jurists chosen by parliament/, 'Council composition must not become twelve directly appointed clerics');
 assert.match(theocraticDescription, /Assembly of Experts is a different institution/, 'the two councils must not be merged');

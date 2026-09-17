@@ -8231,6 +8231,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['mawardiOrdinances', 'aquinasMoralPolitical', 'khomeiniIslamicRepublic'], ['sepReligionPolitics', 'openTextbook', 'foreignPolicy', 'oxfordIranTheocraticCriminalLaw']),
           },
           {
+            type: 'evidence-note',
+            text: 'The Papal States demonstrate why territorial religious government must be analyzed at more than one level. The pope’s religious office and temporal sovereignty were joined, but Partner’s historical synthesis emphasizes diverse regions, local politics, legal arrangements, and the practical work of administration. “Papal rule” therefore identifies the constitutional source of authority; it does not by itself describe identical institutions, coercion, or social experience throughout the territories and centuries involved.',
+            citations: citations(['aquinasMoralPolitical'], ['partnerLandsStPeter1972', 'sepReligionPolitics']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Vatican City is a separate modern case. The Lateran settlement created a sovereign state to secure the Holy See’s independence, and the Vatican’s official description assigns the Supreme Pontiff the highest legislative, executive, and judicial powers. Italian legal scholarship records debate over whether Vatican City continued or replaced the Papal State and how the two sovereignties relate. Its tiny scale and institutional purpose make it a poor proxy for a mass national theocracy.',
+            citations: citations([], ['vaticanStateBodies', 'laricciaLateranPacts2016', 'treccaniLateranPacts']),
+          },
+          {
             type: 'paragraph',
             text: 'Iran’s 1989 constitutional text illustrates this institutional distinction. Article 4 makes Islamic criteria binding on legislation and assigns assessment to the Guardian Council’s religious jurists; article 6 also provides for elections and specified referendums. Religious supremacy and electoral institutions are thus combined in the written design, rather than being mutually exclusive categories.',
             citations: citations([], ['iranCouncilConstitution1989']),
@@ -8282,6 +8292,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['aquinasMoralPolitical', 'mawardiOrdinances', 'josephusAgainstApion'], ['sepMedieval', 'sepReligionPolitics', 'cambridgeMaimonidesTheocracy', 'waqfeyaMawardiOrdinances']),
           },
           {
+            period: 'Eighth century–1870: the Papal States as territorial church government',
+            text: 'The Papal States were a long-lived territorial dominion ruled by the bishop of Rome, but their history was not simply the direct administration of every locality by clergy. Partner’s study treats the Papal State as both a religious institution and a collection of diverse Italian regions, where papal authority interacted with local politics, law, administration, and social conditions. The case is a strong example of religious office and territorial sovereignty being joined, while its regional variation cautions against equating a theocratic claim with uniform bureaucratic or pastoral control.',
+            citations: citations(['aquinasMoralPolitical'], ['partnerLandsStPeter1972', 'sepReligionPolitics']),
+          },
+          {
             period: 'Sixteenth–seventeenth centuries: confessional government and discipline',
             text: 'Reformation and post-Reformation conflicts generated experiments in church discipline, confessional state-building, religious toleration, and the separation or subordination of ecclesiastical and civil authority. Geneva and Puritan colonial governments are important historical cases, but they differed in scale, franchise, doctrine, and legal structure and should not be treated as models for every theocracy.',
             citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
@@ -8315,6 +8330,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth–twentieth centuries: empire, nationalism, and religious reform',
             text: 'Colonial rule, modern nation-building, missionary institutions, legal codification, reform movements, and anti-imperial politics reshaped the relationship between religion and state. Religious law could be centralized, selectively codified, or used as a source of national identity. The resulting systems were often hybrids rather than simple survivals of premodern theocracy.',
             citations: citations(['nabucoAbolitionism', 'mawardiOrdinances', 'spinozaPolitical'], ['sepColonialism', 'sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
+          },
+          {
+            period: '1929–present: Vatican City and the distinction between Holy See and state',
+            text: 'Vatican City was created by the Lateran Treaty of 11 February 1929 as a sovereign territorial instrument for the independence of the Holy See. The Vatican’s official description identifies the Supreme Pontiff as head of state with legislative, executive, and judicial power, while Italian legal scholarship distinguishes the international sovereignty of the Holy See from the separate statehood and constitutional questions of Vatican City. This is a highly concentrated and exceptional religious polity, not evidence that every Catholic state or state religion is a theocracy.',
+            citations: citations([], ['vaticanStateBodies', 'laricciaLateranPacts2016', 'treccaniLateranPacts']),
           },
           {
             period: '1979 and after: revolutionary and constitutional theocracy',
@@ -8363,6 +8383,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'A monarch’s dynastic or political legitimacy is tied to divine sanction, sacred lineage, religious law, or protection of an established faith.',
                 relation: 'It overlaps with theocracy when religious authority is constitutive of government, but a religiously symbolic monarchy may remain constitutionally secular, and a theocracy may be republican or clerical.',
                 citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan'], ['sepReligionPolitics', 'bpbMonarchy', 'oxfordStateReligionFreedom']),
+              },
+              {
+                label: 'Territorial papal state',
+                distinction: 'A bishop or religious office-holder exercises territorial sovereignty while also claiming authority within a wider religious institution; the Papal States joined the pope’s spiritual office to temporal government in changing regional forms.',
+                relation: 'This is a direct historical example of religious office constituting territorial rule, but it should not be generalized to Catholic states, state religion, or every period of papal administration. Local institutions, law, elite participation, and enforcement remain part of the case.',
+                citations: citations(['aquinasMoralPolitical'], ['partnerLandsStPeter1972', 'sepReligionPolitics']),
               },
               {
                 label: 'Tibetan Buddhist religious–temporal government',
@@ -8514,9 +8540,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'Papal States and Vatican City',
                 period: 'Papal States, eighth century–1870; Vatican City, 1929–present',
-                match: 'The papacy has exercised territorial sovereignty in distinct historical forms; Vatican City’s official description identifies an absolute monarchy in which the sovereign pontiff holds the highest governmental authority.',
-                caveat: 'Vatican City is a very small and institutionally exceptional religious polity whose purpose and scale differ from a mass national state. The Papal States and Vatican City should not be treated as identical across time or as a universal Christian model.',
-                citations: citations(['aquinasMoralPolitical'], ['vaticanStateBodies', 'sepReligionPolitics', 'openTextbook']),
+                match: 'The Papal States joined the pope’s religious office to territorial sovereignty across diverse Italian regions, while Vatican City later provided a much smaller sovereign instrument for the independence of the Holy See. The Vatican’s official account describes the Supreme Pontiff as head of state with legislative, executive, and judicial power.',
+                caveat: 'These are distinct formations, not one continuous institutional template. Partner emphasizes local and regional variation in the Papal State; Italian legal scholarship records debate about Holy See sovereignty and Vatican statehood; Vatican City’s size and purpose differ radically from a mass national state. Neither case supplies a uniform score for Catholicism or Catholic-majority countries.',
+                citations: citations(['aquinasMoralPolitical'], ['partnerLandsStPeter1972', 'vaticanStateBodies', 'laricciaLateranPacts2016', 'treccaniLateranPacts', 'sepReligionPolitics', 'openTextbook']),
               },
               {
                 name: 'Iran’s constitutional-religious system',
@@ -8631,8 +8657,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['josephusAgainstApion', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'aquinasMoralPolitical', 'spinozaPolitical', 'lockeLetterToleration', 'hobbesLeviathan'],
-      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13', 'genevaEcclesiasticalOrdinances1541French', 'genevaConsistoryRegisters1542French', 'genevaCouncilRegistersRCnum1545French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009', 'wattWomenConsistoryGeneva1993'],
-      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, Tibetan Buddhist, and other traditions historically specific. The Ganden Phodrang is a bounded Tibetan Buddhist comparison, not a template for Buddhism or a claim that religious and secular authority were identical everywhere. The Geneva addition is a bounded 1541–1564 Reformation case using French archival and Council-register evidence, Portuguese-language scholarship, an English Cambridge chapter summary, and Watt’s gender-history article abstract. It distinguishes civic approval, church discipline, Consistory jurisdiction, negotiation, selected gendered practice and lived reality without claiming a simple clerical dictatorship, a universal Protestant model, or a complete social history. Scores are didactic composites, not judgments about any religion or every society associated with it.',
+      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'partnerLandsStPeter1972', 'laricciaLateranPacts2016', 'treccaniLateranPacts', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13', 'genevaEcclesiasticalOrdinances1541French', 'genevaConsistoryRegisters1542French', 'genevaCouncilRegistersRCnum1545French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009', 'wattWomenConsistoryGeneva1993'],
+      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, Tibetan Buddhist, and other traditions historically specific. The Ganden Phodrang is a bounded Tibetan Buddhist comparison, not a template for Buddhism or a claim that religious and secular authority were identical everywhere. The Geneva addition is a bounded 1541–1564 Reformation case using French archival and Council-register evidence, Portuguese-language scholarship, an English Cambridge chapter summary, and Watt’s gender-history article abstract. The Papal States/Vatican addition separates a long territorial church-state from the small sovereign state established in 1929, using English historical scholarship, Vatican institutional material, and Italian legal-history sources; it does not claim institutional continuity, uniform enforcement, or a Catholic-majority country score. It distinguishes civic approval, church discipline, Consistory jurisdiction, negotiation, selected gendered practice and lived reality without claiming a simple clerical dictatorship, a universal Protestant model, or a complete social history. Scores are didactic composites, not judgments about any religion or every society associated with it.',
     },
     researchGaps: [
       'Add French-language scholarship on Josephus, Gallicanism, Catholic political thought, Calvinist Geneva, the French Wars of Religion, revolutionary theocracy, laïcité, colonial religion, and modern constitutional debates about religious law.',
