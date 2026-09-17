@@ -10987,6 +10987,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'evidence-note',
+            text: 'The late Ottoman constitutional experiment supplies a bounded Middle Eastern case in which military reform, imperial survival, constitutional advocacy and parliamentary government were entangled. The 1876 Kanûn-i Esâsî followed a reform crisis and was promulgated at Constantinople under Sultan Abdülhamid II, while Midhat Pasha had urged publication before the international conference; the first parliament remained subject to strong sultanic appointment, veto, ministerial and dissolution powers. The constitution was suspended in 1878, restored in 1908 after an officer-led Young Turk revolt, and amended in 1909 to strengthen parliamentary and ministerial accountability. This sequence shows that constitutional form, military intervention and imperial hierarchy can coexist without making the Ottoman Empire a uniform liberal, militarist or democratic model.',
+            citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013', 'endelmanOttoman2018']),
+          },
+          {
+            type: 'evidence-note',
             text: 'Ethiopia supplies a bounded African and anti-colonial case. Italy invaded Ethiopia in 1935, while Haile Selassie’s League appeal defended Ethiopian independence and collective-security obligations. The Library of Congress record anchors the speech’s date and provenance; Braukämper, Abebe and Seyoum broaden the view toward southern communities, North Shewa peasants, resistance phases, collaboration and coercion. These sources do not produce a score for every Ethiopian community, imperial-era institution or present-day Ethiopia.',
             citations: citations([], ['locSelassieSpeech1936', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020']),
           },
@@ -11038,6 +11043,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Ottoman case makes the formal-practice distinction visible in a different imperial setting. The official parliamentary history records that the 1876 constitution created two chambers while requiring prior sultanic permission for bills, giving the Sultan veto and appointment powers, and leaving Parliament unable to dismiss ministers; the same account records the 1878 suspension, the 1908 restoration after officers and troops demanded constitutional rule, and 1909 amendments that increased parliamentary accountability. Endelman situates these reforms within military and bureaucratic standardization, circulation between Istanbul and provincial or exile networks, and a wider imperial struggle over foreign intervention and territorial survival. The evidence supports a dated constitutional-imperial sequence, not a country-wide score or a claim that all Young Ottomans, Young Turks, subjects, or provinces shared one ideology.',
+            citations: citations([], ['tbmmOttomanConstitutionHistory', 'ottomanConstitution1876', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013', 'endelmanOttoman2018']),
+          },
+          {
+            type: 'paragraph',
             text: 'The Ethiopian case prevents a simple equation of conquest with uniform local consent or uniform resistance. Braukämper’s southern Ethiopian evidence emphasizes that some collaboration and resistance were shaped by prior exploitation by Ethiopian imperial elites and by Italian divide-and-rule; Abebe’s North Shewa study describes peasant guerrilla resistance alongside punishment, displacement, malnutrition and disease; Seyoum distinguishes an initial transitional phase from a later popular phase. These are regional and temporal findings, not evidence that Ethiopia was one political actor or that every local response had the same meaning.',
             citations: citations([], ['braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020']),
           },
@@ -11066,6 +11076,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Nineteenth century — industrial militarism and the national-imperial state',
             text: 'Industrial production, railways, steam navigation, conscription, mass newspapers, bureaucratic administration, and national schooling changed the scale and speed of military mobilization. Great powers increasingly linked national prestige, strategic routes, markets, raw materials, and civilizational claims to overseas expansion. Militarism developed differently across Britain, France, Germany, Russia, Japan, and the United States; the comparison should not reduce all of them to one model.',
             citations: citations(['mahanInfluenceSeaPower', 'hobsonImperialism'], ['oxfordMilitarism', 'cambridgeMilitarismImperialism', 'oxfordImperialism']),
+          },
+          {
+            period: '1826–1909 — Ottoman military reform, constitutional experiment, and imperial survival',
+            text: 'Ottoman reform linked military and bureaucratic standardization to the problem of preserving an empire under European pressure. Endelman’s comparative account connects the roots of later Turkish parliamentary institutions to Tanzimat reformers, Young Ottomans and Young Turks, while also emphasizing foreign intervention, financial dependence and the circulation of people and institutional models between Istanbul, Egypt and exile networks. The 1876 constitution and its 1908–1909 restoration show a contested sequence in which officers, palace officials, ministers and parliament all shaped the distribution of power. It should be studied as a dated imperial and constitutional trajectory, not as a linear democratization or a uniform expression of “the Ottoman” population.',
+            citations: citations([], ['endelmanOttoman2018', 'ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013']),
           },
           {
             period: '1830–1870 — French conquest, settler colonization, and differentiated citizenship in Algeria',
@@ -11190,6 +11205,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022']),
               },
               {
+                label: 'Late Ottoman constitutional-imperial militarism, 1826–1909',
+                distinction: 'Joins army and bureaucratic reform, imperial defense, constitutional advocacy, sultanic authority, parliamentary institutions, and foreign-pressure management in the late Ottoman capital and connected provincial or exile networks.',
+                relation: 'A bounded Middle Eastern case showing that military modernization and constitutional reform can be mutually entangled without producing liberal accountability or a uniform imperial ideology. The 1876–1909 sequence must be separated from later Turkish republican politics, from Young Ottoman intellectual advocacy, and from the diverse experiences of Ottoman communities.',
+                citations: citations([], ['endelmanOttoman2018', 'ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013']),
+              },
+              {
                 label: 'U.S. Philippine colonial militarism and postcolonial basing, 1898–present',
                 distinction: 'Combines conquest and military occupation with civilizing and developmental administration, racialized labor governance, later formal independence, and continuing disputes over unequal military access and consent.',
                 relation: 'A bounded Pacific case showing that imperial control can shift from direct colonial rule to security agreements. It is not a single uninterrupted regime or proof that every U.S.–Philippine relationship after 1946 remained colonial.',
@@ -11256,6 +11277,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The late Ottoman Empire is a bounded example of constitutional-imperial militarism centered on Constantinople and connected provincial and exile networks. The 1876 constitution created a bicameral parliament but preserved extensive sultanic powers; its suspension in 1878, restoration in 1908 after officer-led pressure, and 1909 amendments reveal changing relations among palace, army, bureaucracy and representative institutions. Endelman’s study adds that military and bureaucratic standardization, financial dependence, foreign intervention and Young Ottoman circulation shaped the wider context. This is not an exact six-axis match for the Ottoman Empire, present-day Turkey, or every reformer and community within it.',
+            citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013', 'endelmanOttoman2018']),
+          },
+          {
+            type: 'paragraph',
             text: 'The U.S. Philippines case is a bounded example of military-imperial transition. The 1898 treaty records the inter-state cession; the 1899–1902 war records that Filipino nationalists sought independence rather than a change of colonial ruler; and the later colonial order combined military power with civil administration, schooling, labor programmes and economic development. Charbonneau’s Mindanao and Sulu study shows that these projects were uneven and contested, while Lafferty argues that post-1946 base arrangements require a separate consent and asymmetry analysis. This is not an exact six-axis match for the United States, the Philippines, or every community in the archipelago.',
             citations: citations([], ['treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023']),
           },
@@ -11288,6 +11314,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'Documented objection to colonial racial justification.',
                 caveat: 'Included as an opposing voice, not as a supporter of this compound profile; this excerpt cannot establish his entire foreign-policy record.',
                 citations: citations([], ['clemenceauColonialReply1885']),
+              },
+              {
+                name: 'Midhat Pasha — Ottoman constitutional reformer',
+                role: 'Grand vizier and leading figure in the 1876 constitutional initiative, associated with the effort to promulgate a constitution and parliament during an imperial and diplomatic crisis.',
+                caveat: 'The contemporary U.S. dispatch and later institutional histories establish a bounded political role, not Midhat Pasha’s complete ideas, military policy, personal responsibility, or the views of all Ottoman reformers and subjects.',
+                citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'endelmanOttoman2018']),
+              },
+              {
+                name: 'Young Ottoman reformers — constitutional advocacy in and beyond Constantinople',
+                role: 'A network of bureaucrats, religious scholars, military actors and intellectuals that linked constitutional and representative claims to Ottoman and Islamic political reasoning.',
+                caveat: 'This is a network label, not one party or uniform ideology. Circulation through Istanbul, Egypt and exile did not equal parliamentary power, mass participation, or agreement on empire, religion, nation and military authority.',
+                citations: citations([], ['endelmanOttoman2018', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013']),
               },
               {
                 name: 'Alexis de Tocqueville — analyst and advocate of French colonial rule in Algeria',
@@ -11353,6 +11391,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The first classification risk is equating military capability with militarism. A state may maintain a large defense budget because of geography, deterrence, alliance commitments, or an active war while retaining strong civilian oversight and public skepticism toward military authority. Conversely, a smaller state can be militarist if military values dominate identity, policy, and dissent. The evidence must separate capacity, threat environment, doctrine, institutional power, and social prestige.',
             citations: citations(['clausewitzOnWar', 'mearsheimerTragedy'], ['oxfordMilitarism', 'vdem', 'foreignPolicy']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The late Ottoman case adds a safeguard against reading constitutional reform as either automatic democratization or automatic militarism. A parliament, written constitution and elected representatives coexisted first with extensive sultanic powers, then with suspension, officer-led restoration and amendments that redistributed authority. Young Ottoman constitutional advocacy, military intervention, palace rule, bureaucratic modernization and imperial defense were related but not identical forces; the Istanbul-centered record must be tested against provincial, communal, Arabic, Armenian, Kurdish, Balkan and other local evidence before broader claims are made.',
+            citations: citations([], ['ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013', 'endelmanOttoman2018']),
           },
           {
             type: 'paragraph',
@@ -11424,7 +11467,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars', 'arendtTotalitarianism', 'burkeReflections', 'kantPerpetualPeace'],
-      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022', 'treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023', 'algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus', 'tocquevilleAlgeria1841French', 'tocquevilleAfricaReport1847French', 'duongTocquevilleAlgeria2018', 'pittsAlgerianMirror2009', 'actoColonial1930Portugal', 'portugalConstitution1933', 'casteloLusoTropicalistMessage2017', 'fonsecaMarcosPortugueseWar2008', 'marquesEstadoNovoONU2011'],
+      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022', 'treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023', 'algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus', 'tocquevilleAlgeria1841French', 'tocquevilleAfricaReport1847French', 'duongTocquevilleAlgeria2018', 'pittsAlgerianMirror2009', 'actoColonial1930Portugal', 'portugalConstitution1933', 'casteloLusoTropicalistMessage2017', 'fonsecaMarcosPortugueseWar2008', 'marquesEstadoNovoONU2011', 'ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013', 'endelmanOttoman2018'],
       editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context. The Imperial Japan addition is a bounded pre-1945 Asian case using an official constitutional presentation, Japanese archival records, and two academic interpretations; it does not establish a whole-country score, a single causal account, or equal experience across Japan’s subject territories. The Ethiopia addition is a bounded 1935–1941 African and anti-colonial case using a Library of Congress provenance record and three attributed scholarly leads; it does not establish a national score, uniform local response, or complete Ethiopian, Italian or League history. The Philippines addition is a bounded 1898–1914 conquest and military-governance case with a separate post-1946 basing question; it does not establish a whole-country score, a single uninterrupted imperial relationship, or the experience of every Filipino, Moro, Lumad, Spanish or U.S. actor. The Portuguese addition is a bounded 1930–1974 European–African case using Portuguese official-gazette records, English and Portuguese scholarship, and a peer-reviewed study of external military support; it does not establish a national score, uniform colonial experience, or that Luso-Tropicalist rhetoric matched political practice. The French Algeria addition is a bounded 1830–1870 and later colonial-legal case using French primary texts, institutional history, and English and French-language scholarship; it distinguishes conquest, settlement, legal status and political critique without claiming a complete 1830–1962 history or a single French or Algerian experience.',
     },
     researchGaps: [
@@ -11449,6 +11492,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Collate Philippine, Spanish, and U.S. primary records on the Treaty of Paris, Filipino Republic, Philippine-American War, Moro Province, military government, labor and land policy, and post-1946 base agreements. Add Filipino-language, Tagalog, Cebuano, Tausūg, Maranao, and Lumad scholarship; test Charbonneau’s regional findings and Lafferty’s legal argument against local archives and treaty practice before extending the case or assigning historical score ranges.',
       'Collate the Portuguese, Angolan, Guinean, and Mozambican primary records behind the Acto Colonial, constitutional revisions, UN arguments, military procurement, and the 1961–1974 wars. Add African-language testimony and scholarship from the liberation movements and affected communities; Castelo, Fonseca–Marcos, and Marques provide bounded entry points but do not resolve regional variation, coercion, or the relationship between Luso-Tropicalist rhetoric and practice.',
       'Read the full French and Arabic legal, military, administrative, settler, labor, religious, women’s, Amazigh, and anti-colonial record of Algeria from the 1830 conquest through 1962. Collate Tocqueville’s French texts, the 1865 Sénatus-consulte, the 1870 Crémieux decrees, land and citizenship rules, Algerian political writings, and competing scholarship; distinguish metropolitan liberal critique, colonial administration, settler power, Muslim and Jewish status, resistance, and later memory rather than treating “French Algeria” as one uniform case.',
+      'Collate the Ottoman Turkish, Arabic, Armenian, Greek, Kurdish, Balkan and French records behind the 1826 military reorganization, Tanzimat reforms, 1876 Kanûn-i Esâsî, 1877–1878 parliaments, 1908 restoration and 1909 amendments. Read Midhat Pasha, Namık Kemal, Young Ottoman and Young Turk texts with provincial, communal, labor, religious and military evidence; the current English and selected scholarly sources establish a bounded Constantinople-centered sequence, not a complete imperial history or a present-day Turkish score.',
     ],
   },
   'national-socialist': {

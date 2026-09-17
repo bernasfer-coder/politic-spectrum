@@ -1159,6 +1159,41 @@ assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Collate the L
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Extend Ethiopian evidence')));
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Read Baer’s full article and Italian')));
 
+const ottomanMilitarismEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
+for (const [sourceId, evidenceRole, publicationDate, confidence, accessDate] of [
+  ['ottomanConstitution1876', 'primary', '1876-12-26', 'high', '2026-09-17'],
+  ['tbmmOttomanConstitutionHistory', 'secondary', null, 'high', '2026-09-17'],
+  ['kayaliOttomanElections1919', 'secondary', '1995-08-01', 'high', '2026-09-17'],
+  ['isikselAuthoritarianConstitutionalism2013', 'secondary', '2013-07-01', 'high', '2026-09-17'],
+  ['endelmanOttoman2018', 'secondary', '2018-03-28', 'medium', '2026-09-16'],
+]) {
+  assert.ok(ottomanMilitarismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Ottoman militarism reference trail`);
+  assert.ok(JSON.stringify(ottomanMilitarismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve to one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, accessDate);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:militarist-imperialist'), `${sourceId} needs a militarist-imperialist backlink`);
+}
+const ottomanMilitarismHistory = ottomanMilitarismEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(ottomanMilitarismHistory.some(({ period }) => period.startsWith('1826–1909 — Ottoman military reform')));
+const ottomanMilitarismVariant = ottomanMilitarismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Late Ottoman constitutional-imperial militarism'));
+assert.ok(ottomanMilitarismVariant, 'the Ottoman case must be separated as a constitutional-imperial variant');
+const ottomanMilitarismExample = ottomanMilitarismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The late Ottoman Empire is a bounded example'));
+assert.ok(ottomanMilitarismExample, 'the late Ottoman case must appear as a bounded historical example');
+const ottomanPeople = ottomanMilitarismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries;
+assert.ok(ottomanPeople.some(({ name }) => name.startsWith('Midhat Pasha')));
+assert.ok(ottomanPeople.some(({ name }) => name.startsWith('Young Ottoman reformers')));
+const ottomanMilitarismSafeguard = ottomanMilitarismEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The late Ottoman case adds a safeguard'));
+assert.ok(ottomanMilitarismSafeguard, 'the Ottoman case must add a constitutionalism-versus-militarism safeguard');
+assert.ok(ottomanMilitarismEntry.researchGaps.some((gap) => gap.startsWith('Collate the Ottoman Turkish')));
+
 const imperialJapanEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['japanMeijiConstitution1889', 'primary', '1889-02-11', ['English', 'Japanese'], 'high'],
