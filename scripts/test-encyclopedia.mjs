@@ -2856,6 +2856,27 @@ assert.ok(portugueseExample, 'Portugal must appear as a bounded historical examp
 assert.match(portugueseExample.caveat, /not a classification of present-day Portugal/);
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Portuguese 1822 Constitution')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Research Portuguese electoral law')));
+for (const [sourceId, publicationDate, languages] of [
+  ['hespanhaPortugueseMonarchicalConstitutionalism2012', '2012', ['Portuguese', 'English abstract']],
+  ['cardosoLealPortugueseElections2020', '2020-01-12', ['Portuguese', 'English abstract', 'French abstract', 'Spanish abstract']],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Portuguese scholarly monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, 'secondary');
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const portugueseAgendaTimeline = portugueseHistory.find(({ period }) => period.startsWith('1826–1910:'));
+assert.ok(portugueseAgendaTimeline?.citations.researchSourceIds.includes('hespanhaPortugueseMonarchicalConstitutionalism2012'));
+const portugueseElectionTimeline = portugueseHistory.find(({ period }) => period.startsWith('1852–1910:'));
+assert.ok(portugueseElectionTimeline?.citations.researchSourceIds.includes('cardosoLealPortugueseElections2020'));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('This Portuguese update adds Hespanha')));
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['ottomanConstitution1876', 'primary', '1876-12-26'],
   ['tbmmOttomanConstitutionHistory', 'secondary', null],
