@@ -2907,6 +2907,37 @@ assert.ok(qajarSafeguard, 'Qajar Iran must add a formalism and implementation sa
 assert.match(qajarSafeguard.text, /formal rights and practical power/);
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Persian originals and early printings')));
 
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['bhutanConstitution2008', 'primary', '2008-07-18', ['English', 'Dzongkha'], 'high'],
+  ['dorjiProgressiveMonarchy2023', 'secondary', '2023-01-30', ['English'], 'medium'],
+  ['whitecrossBhutanBuddhism2013', 'secondary', '2013-02-01', ['English'], 'medium'],
+  ['iyerBhutanConstitution2019', 'secondary', '2019-11-14', ['English'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Bhutanese monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const bhutanHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1907–2008: Bhutanese monarchy'));
+assert.ok(bhutanHistory, 'the Bhutanese constitutional-transition timeline case must remain visible');
+assert.ok(bhutanHistory.citations.researchSourceIds.includes('bhutanConstitution2008'));
+const bhutanVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Bhutanese Buddhist constitutional monarchy'));
+assert.ok(bhutanVariant, 'the Bhutanese case must be separated as a religious constitutional variant');
+const bhutanExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Bhutan’s democratic constitutional monarchy');
+assert.ok(bhutanExample, 'Bhutan must appear as a bounded historical example');
+assert.match(bhutanExample.caveat, /Dzongkha record/);
+assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Bhutanese case adds a safeguard')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Dzongkha and English versions')));
+
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
   ['cdecAntisemiticDecrees1938', 'primary'],
