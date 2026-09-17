@@ -8012,6 +8012,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Ganden Phodrang, the Dalai Lamas’ government in Tibet from the seventeenth century into the twentieth, is a useful Buddhist comparison because religious and temporal authority were institutionally intertwined. It must still be described through Tibetan categories, legal texts, monastic and secular offices, and changing relations with Mongol and Qing powers, rather than being treated as a simple Buddhist equivalent of Iran, Geneva, or the Papal States.',
             citations: citations([], ['frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Geneva under Calvin supplies a bounded sixteenth-century European case. The 1541 Ecclesiastical Ordinances were approved by the Genevan councils and organized ministers, teachers, elders, deacons, education, charity, and the Consistory, linking church discipline to civic institutions. Rangel’s Portuguese-language study emphasizes confessionalization, discipline, tensions, and negotiation, while Höpfl distinguishes Calvin’s scheme, its reception as law, and the harder question of lived reality. The case is neither a simple clerical dictatorship nor a template for all Protestant politics.',
+            citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
+          },
         ],
       },
       {
@@ -8068,6 +8073,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Tibetan case should not be scored as a template for Buddhism. Deleplanque’s review emphasizes the indigenous concepts chö and si and the seventeenth-century theory of chösi zungdrel, while Lyulina describes a changing religious–secular diarchy shaped by regents and Qing interaction. These sources support a historically bounded theocratic comparison, not a claim about all Buddhist communities or a timeless Tibetan political identity.',
             citations: citations([], ['deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020']),
           },
+          {
+            type: 'paragraph',
+            text: 'Geneva’s Reformed order demonstrates how religious and civil authority can be intertwined without collapsing into a single clerical office. The 1541 Ordinances assigned distinct ecclesiastical offices and created a Consistory for discipline, while the city councils accepted the scheme and retained responsibility for coercive penalties. Rangel describes the process as confessionalization and disciplining; Höpfl warns that formal reception as law and actual lived reality are different historical questions. The case therefore belongs beside, not inside, the same institutional category as Iran or the Ganden Phodrang.',
+            citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
+          },
         ],
       },
       {
@@ -8088,6 +8098,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Sixteenth–seventeenth centuries: confessional government and discipline',
             text: 'Reformation and post-Reformation conflicts generated experiments in church discipline, confessional state-building, religious toleration, and the separation or subordination of ecclesiastical and civil authority. Geneva and Puritan colonial governments are important historical cases, but they differed in scale, franchise, doctrine, and legal structure and should not be treated as models for every theocracy.',
             citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
+          },
+          {
+            period: '1541–1564: Calvinist Geneva and the Consistory',
+            text: 'After John Calvin’s return in 1541, the Genevan councils approved Ecclesiastical Ordinances that organized four church offices, religious instruction, charity, and a weekly Consistory of ministers and elders. The Consistory could address ecclesiastical discipline and excommunication, while cases requiring corporal or financial punishment were referred to the civil council. The state archive’s French transcription provides formal evidence; Rangel emphasizes the negotiated confessionalizing process, and Höpfl separates the enacted scheme from its practical realization. Geneva is therefore a bounded confessional polity with intertwined church and civic authority, not a simple priestly dictatorship.',
+            citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
           },
           {
             period: 'Seventeenth century: Buddhist law and Ganden Phodrang formation in Tibet',
@@ -8162,6 +8177,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'The Ganden Phodrang joined the Dalai Lama’s religious authority to political administration through a changing combination of monastic institutions, regents, secular officials, law, and external relationships.',
                 relation: 'It is a bounded Tibetan Buddhist case, not evidence that Buddhism uniformly requires theocracy or that religious and secular authority were identical in every locality and period. “Theocracy” remains an analytical comparison alongside Tibetan categories and sources.',
                 citations: citations([], ['frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13']),
+              },
+              {
+                label: 'Calvinist Geneva: confessional civic discipline, 1541–1564',
+                distinction: 'The Genevan councils adopted Ecclesiastical Ordinances that organized Reformed church offices, education, charity, and a Consistory of ministers and elders whose discipline operated in coordination with civil government.',
+                relation: 'This is a bounded Reformation-era confessional polity, not a universal model of Protestantism or a synonym for direct clerical rule. The Ordinances, civic councils, disciplinary records, and later scholarship must be kept distinct; the formal scheme did not automatically determine lived practice or equal citizenship.',
+                citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
               },
               {
                 label: 'Confessional state or state religion',
@@ -8240,6 +8261,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'This is a historically bounded institutional comparison, not a score for every Dalai Lama, Tibetan community, or Buddhist tradition. Mongol, Qing, monastic, regent, local, and secular relationships require separate evidence.',
                 citations: citations([], ['frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'gandenPodrangCode13']),
               },
+              {
+                name: 'John Calvin and Geneva’s 1541 civic–ecclesiastical settlement',
+                role: 'Reformed pastor and political theologian whose proposed church order was accepted by Geneva’s councils and helped organize the city’s ecclesiastical offices and disciplinary Consistory.',
+                caveat: 'Calvin was not the sole ruler of Geneva, and the Ordinances were a negotiated civic act rather than proof of personal dictatorship. The formal text, council decisions, disciplinary practice, and the experiences of dissenters must be distinguished; this entry does not generalize Geneva’s order to all Calvinists or Protestants.',
+                citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
+              },
             ],
           },
           {
@@ -8258,6 +8285,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'Church discipline and civic government were closely connected in a historically important experiment in confessional political order.',
                 caveat: 'Geneva was neither a simple clerical dictatorship nor a model for all Protestant politics. Its institutions, citizenship rules, discipline, and conflicts must be studied in their local and Reformation context.',
                 citations: citations(['lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'openTextbook', 'oxfordStateReligionFreedom']),
+              },
+              {
+                name: 'Geneva’s Ecclesiastical Ordinances and Consistory',
+                period: 'Geneva, 1541–1564',
+                match: 'The 1541 Ordinances organized ministers, teachers, elders, deacons, education, charity, and a Consistory whose ecclesiastical discipline operated alongside the authority of the city councils.',
+                caveat: 'The archival transcription establishes formal arrangements, not complete enforcement or social consensus. Rangel’s Portuguese-language analysis and Höpfl’s chapter summary emphasize negotiation and the difference between enacted law and lived reality; the case is not an exact six-axis match for Geneva or for all Reformed communities.',
+                citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
               },
               {
                 name: 'Puritan New England and covenant government',
@@ -8338,6 +8372,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Geneva adds a safeguard against equating confessional discipline with direct clerical sovereignty. The 1541 Ordinances were approved by civic councils, assigned distinct church offices, and gave the Consistory authority over ecclesiastical discipline while referring corporal and financial penalties to the civil council. Rangel’s Portuguese-language study emphasizes tensions and negotiation, and Höpfl distinguishes Calvin’s scheme, its legal reception, and lived reality. The sources therefore support a bounded civic–ecclesiastical arrangement, not a claim that Calvin personally ruled Geneva or that all residents experienced one uniform religious order.',
+            citations: citations([], ['genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009']),
+          },
+          {
+            type: 'paragraph',
             text: 'The second criticism is equal citizenship. Religious law or office can create different statuses for believers, minority faiths, converts, dissenters, women, sexual minorities, or non-believers. A theocratic constitution may protect some minorities while still limiting political office, family law, testimony, expression, or conversion. The proper test is not whether a system uses the language of tolerance but whether equal civil and political rights, remedies, and participation are available in law and practice.',
             citations: citations(['mawardiOrdinances', 'lockeLetterToleration', 'spinozaPolitical'], ['ohchrMinorityRights', 'sepReligionPolitics', 'oxfordStateReligionFreedom', 'vdem']),
           },
@@ -8376,8 +8415,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['josephusAgainstApion', 'mawardiOrdinances', 'khomeiniIslamicRepublic', 'aquinasMoralPolitical', 'spinozaPolitical', 'lockeLetterToleration', 'hobbesLeviathan'],
-      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13'],
-      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, Tibetan Buddhist, and other traditions historically specific. The Ganden Phodrang is a bounded Tibetan Buddhist comparison, not a template for Buddhism or a claim that religious and secular authority were identical everywhere. Scores are didactic composites, not judgments about any religion or every society associated with it.',
+      researchSourceIds: ['sepReligionPolitics', 'torontoConstitutionalTheocracy', 'oxfordStateReligionFreedom', 'oxfordIranTheocraticCriminalLaw', 'iconStateReligionTheocracy', 'cambridgeMaimonidesTheocracy', 'perseusJosephusTheocracy', 'waqfeyaMawardiOrdinances', 'nsarchiveKhomeini1979', 'constituteIran1989', 'vaticanStateBodies', 'sepMedieval', 'sepColonialism', 'ohchrMinorityRights', 'vdem', 'openTextbook', 'foreignPolicy', 'oxfordChristianDemocracy', 'iranCouncilConstitution1989', 'buchtaIranInstitutions2020', 'frenchBuddhismLawTibet2014', 'deleplanqueTibetanTheocracy2025', 'lyulinaGandenPhodrang2020', 'tsangLegalCode1631', 'gandenPodrangCode13', 'genevaEcclesiasticalOrdinances1541French', 'rangelGenevaConfessionalization2024', 'hopflChristianPolityGeneva2009'],
+      editorialNote: 'The entry treats theocracy as an institutional relationship in which religious authority, sacred law, or authorized religious interpretation is constitutive of government. It distinguishes theocracy from state religion, religious parties, religious monarchy, civil religion, and personal belief, and keeps Jewish, Christian, Islamic, Tibetan Buddhist, and other traditions historically specific. The Ganden Phodrang is a bounded Tibetan Buddhist comparison, not a template for Buddhism or a claim that religious and secular authority were identical everywhere. The Geneva addition is a bounded 1541–1564 Reformation case using a French state-archive transcription, a Portuguese-language scholarly article, and an English Cambridge chapter summary; it distinguishes civic approval, church discipline, Consistory jurisdiction, negotiation, and lived practice without claiming a simple clerical dictatorship or a universal Protestant model. Scores are didactic composites, not judgments about any religion or every society associated with it.',
     },
     researchGaps: [
       'Add French-language scholarship on Josephus, Gallicanism, Catholic political thought, Calvinist Geneva, the French Wars of Religion, revolutionary theocracy, laïcité, colonial religion, and modern constitutional debates about religious law.',
@@ -8392,6 +8431,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Collate the Ganden Podrang Code of Thirteen Sections and the Tsang legal code with Tibetan originals, manuscript images, transliterations, identified editions, and qualified Tibetan-language review. The current English working translation and Buffalo metadata establish source locators and provenance boundaries, not a complete legal-text edition.',
       'Read the full Tibetan-law scholarship on chösi zungdrel, monastic and secular offices, regents, local courts, and Qing–Tibet relations. Compare elite legal ideals with dispute records, administrative documents, monastery practice, women’s and non-elite experiences, and regional variation before making claims about uniform theocratic enforcement.',
       'Separate the Ganden Phodrang’s historical government from later Chinese state narratives, the Central Tibetan Administration, and present-day debates over sovereignty and religious succession. Use period-specific multilingual evidence rather than turning a contested historical case into a current-country classification.',
+      'Read the complete French Ecclesiastical Ordinances and Genevan council and Consistory records from 1541–1564, including later revisions, discipline, citizenship, gender, poverty, dissent, refugees, and relations with Bern. Extend the Portuguese and French scholarship beyond abstracts and selected institutional pages; the present sources establish a bounded confessional civic order, not uniform enforcement, equal participation, or a complete history of Calvinist Geneva.',
     ],
   },
   'christian-democratic': {

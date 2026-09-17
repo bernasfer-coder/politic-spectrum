@@ -1941,6 +1941,39 @@ assert.match(theocraticDescription, /A Buddhist state can therefore be religious
 assert.match(theocraticCriticisms, /working translation based on ten manuscripts/);
 assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Collate the Ganden Podrang Code')));
 assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Read the full Tibetan-law scholarship')));
+for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
+  ['genevaEcclesiasticalOrdinances1541French', 'primary', '1541-11-20', 'high', ['French']],
+  ['rangelGenevaConfessionalization2024', 'secondary', '2024-02-19', 'medium', ['Portuguese']],
+  ['hopflChristianPolityGeneva2009', 'secondary', '2009-10-24', 'medium', ['English']],
+]) {
+  assert.ok(theocraticEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Genevan theocracy reference trail`);
+  assert.ok(JSON.stringify(theocraticEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:theocratic'));
+}
+const genevaHistory = theocraticEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(genevaHistory.some(({ period, citations }) => period.startsWith('1541–1564: Calvinist Geneva') && citations.researchSourceIds.includes('genevaEcclesiasticalOrdinances1541French')));
+const genevaVariant = theocraticEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Calvinist Geneva'));
+assert.ok(genevaVariant, 'Calvinist Geneva must be separated as a bounded confessional variant');
+const genevaExample = theocraticEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Geneva’s Ecclesiastical Ordinances'));
+assert.ok(genevaExample, 'Geneva must appear as a bounded historical example');
+assert.match(genevaExample.caveat, /not an exact six-axis match/);
+const calvinPerson = theocraticEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('John Calvin'));
+assert.ok(calvinPerson, 'Calvin must be identified with a bounded civic and ecclesiastical caveat');
+assert.match(calvinPerson.caveat, /not generalize Geneva’s order/);
+const genevaSafeguard = theocraticEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Geneva adds a safeguard'));
+assert.ok(genevaSafeguard, 'Geneva must add a church–civil jurisdiction safeguard');
+assert.match(genevaSafeguard.text, /not a claim that Calvin personally ruled Geneva/);
+assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Read the complete French Ecclesiastical Ordinances')));
 
 const greenCommonsEntry = ENCYCLOPEDIA_ENTRIES['green-commons'];
 const greenCommonsProfile = ARCHETYPES.find(({ id }) => id === 'green-commons').profile;
