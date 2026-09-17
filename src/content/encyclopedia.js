@@ -7308,7 +7308,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'evidence-note',
-            text: 'Bodineau and Verpeaux’s French constitutional history describes the period after 1815 as an emergence of parliamentarism within a deliberately limited monarchy, while presenting the July Monarchy as more than a dynastic change: it attempted to make a “more democratic” monarchy. This is a scholarly interpretation of institutional development, not evidence that suffrage, colonial membership, press freedom, or social equality became universal.',
+            text: 'Bodineau and Verpeaux’s French constitutional history describes the period after 1815 as an emergence of parliamentarism within a deliberately limited monarchy, while presenting the July Monarchy as more than a dynastic change: it attempted to develop a more democratic monarchy. This is a scholarly interpretation of institutional development, not evidence that suffrage, colonial membership, press freedom, or social equality became universal.',
             citations: citations([], ['bodineauVerpeauxFranceConstitutionalHistory2024', 'senatRestorationChamber1814', 'assembleeCharterJuly1830']),
           },
           {
