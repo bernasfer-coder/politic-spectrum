@@ -2572,6 +2572,36 @@ assert.ok(frenchMonarchyExample.citations.researchSourceIds.includes('bodineauVe
 assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The French scholarly preview adds a practice safeguard')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Read Bodineau and Verpeaux’s complete French chapter')));
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['elyseeConstitution1852', 'primary', '1852-01-14', ['French'], 'high'],
+  ['assembleeSecondEmpire1852', 'secondary', '2026', ['French'], 'high'],
+  ['prelotSecondEmpire1953', 'secondary', '1953-01-01', ['French'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Second Empire monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs Second Empire claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const secondEmpireHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1852–1870: Bonapartist Second Empire'));
+assert.ok(secondEmpireHistory, 'the Second Empire timeline case must remain visible');
+assert.ok(secondEmpireHistory.citations.researchSourceIds.includes('elyseeConstitution1852'));
+const secondEmpireVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Bonapartist imperial constitutionalism'));
+assert.ok(secondEmpireVariant, 'the Second Empire must be separated as an imperial constitutional variant');
+assert.ok(secondEmpireVariant.citations.researchSourceIds.includes('prelotSecondEmpire1953'));
+const secondEmpireExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('France’s Second Empire'));
+assert.ok(secondEmpireExample, 'the Second Empire must appear as a bounded historical example');
+assert.match(secondEmpireExample.caveat, /initially belonged to a Republic/);
+assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Second Empire adds a formal-versus-practice safeguard')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Read Prélot’s complete article')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['siamConstitution1932French', 'primary', '1932-12-10', ['French'], 'medium'],
   ['sugiyamaSiamRevolution1997', 'secondary', '1997-06-01', ['English'], 'medium'],
   ['fuwongcharoenConstitutionWorship2018', 'secondary', '2018-01-15', ['English'], 'medium'],
