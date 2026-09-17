@@ -1471,6 +1471,41 @@ const estadoNovoSafeguard = imperialJapanEntry.sections.find(({ id }) => id === 
 assert.ok(estadoNovoSafeguard, 'Portuguese case must add an imperial self-description safeguard');
 assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate the Portuguese, Angolan, Guinean, and Mozambican')));
 
+const germanSouthWestAfricaEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['ghdiVonTrothaExterminationOrder1904', 'primary', '1904-10-02', ['German'], 'high'],
+  ['dhmHereroWar1904', 'secondary', '2016', ['German'], 'high'],
+  ['zimmererColonialGenocide2008', 'secondary', '2008', ['English'], 'medium'],
+]) {
+  assert.ok(germanSouthWestAfricaEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a German colonial reference trail`);
+  assert.ok(JSON.stringify(germanSouthWestAfricaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const germanSouthWestAfricaHistory = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(germanSouthWestAfricaHistory.some(({ period, citations }) => period.startsWith('1884–1915 — German South West Africa') && citations.researchSourceIds.includes('ghdiVonTrothaExterminationOrder1904')));
+const germanSouthWestAfricaVariant = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('German settler-colonial militarism'));
+assert.ok(germanSouthWestAfricaVariant, 'German South West Africa must be a separate bounded colonial variant');
+const germanSouthWestAfricaExample = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('German South West Africa shows why'));
+assert.ok(germanSouthWestAfricaExample, 'German South West Africa must appear as a bounded historical example');
+assert.match(germanSouthWestAfricaExample.text, /not an exact six-axis match/);
+const vonTrothaPerson = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('Lothar von Trotha'));
+assert.ok(vonTrothaPerson, 'von Trotha must appear with a bounded commander-order caveat');
+assert.match(vonTrothaPerson.caveat, /not every implementation decision/);
+const germanSouthWestAfricaSafeguard = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The German South West Africa case adds a safeguard'));
+assert.ok(germanSouthWestAfricaSafeguard, 'German South West Africa must add an archival-order safeguard');
+assert.match(germanSouthWestAfricaSafeguard.text, /No causal continuity with Nazism/);
+assert.ok(germanSouthWestAfricaEntry.researchGaps.some((gap) => gap.startsWith('Extend the German South West Africa case')));
+
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['tocquevilleAlgeria1841French', 'primary', '1841', ['French'], 'medium'],
   ['tocquevilleAfricaReport1847French', 'primary', '1847-05-28', ['French'], 'medium'],
