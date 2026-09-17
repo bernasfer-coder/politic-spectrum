@@ -2904,8 +2904,10 @@ assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the
 
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['iranConstitutionalLaw1906English', 'primary', '1906–1907', ['English'], 'medium'],
+  ['iranDataPortalConstitutions1906', 'contextual', null, ['Persian', 'English'], 'high'],
   ['iranicaConstitutionalRevolutionIntellectual1992', 'secondary', '1992-12-15', ['English'], 'high'],
   ['iranicaConstitutionalRevolutionConstitution1992', 'secondary', '1992-12-15', ['English'], 'high'],
+  ['iranicaElections1998', 'secondary', '1998-12-15', ['English'], 'high'],
   ['afaryIranianConstitutionalRevolution1996', 'secondary', '1996', ['English'], 'medium'],
 ]) {
   assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Qajar monarchist reference trail`);
@@ -2923,7 +2925,9 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
 }
 const qajarHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline;
-assert.ok(qajarHistory.some(({ period, citations }) => period.startsWith('1905–1911: Qajar Constitutional Revolution') && citations.researchSourceIds.includes('iranConstitutionalLaw1906English')));
+assert.ok(qajarHistory.some(({ period, citations }) => period.startsWith('1905–1911: Qajar Constitutional Revolution') && citations.researchSourceIds.includes('iranicaElections1998')));
+const qajarDescription = monarchistEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(qajarDescription.some(({ text }) => text?.startsWith('The electoral record makes the Qajar constitutional settlement more precise')));
 const qajarVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Qajar constitutional monarchy'));
 assert.ok(qajarVariant, 'Qajar Iran must be separated as a dated constitutional variant');
 const qajarExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Qajar Iran’s Constitutional Revolution'));
@@ -2936,6 +2940,7 @@ const qajarSafeguard = monarchistEntry.sections.find(({ id }) => id === 'critici
 assert.ok(qajarSafeguard, 'Qajar Iran must add a formalism and implementation safeguard');
 assert.match(qajarSafeguard.text, /formal rights and practical power/);
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Persian originals and early printings')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Open and compare the Persian and English constitutional links')));
 
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['bhutanConstitution2008', 'primary', '2008-07-18', ['English', 'Dzongkha'], 'high'],
