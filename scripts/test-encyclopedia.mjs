@@ -2474,6 +2474,32 @@ for (const [sourceId, evidenceRole] of [
   assert.equal(record.directQuote, null, `${sourceId} must not silently become a quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-socialist'), `${sourceId} needs an encyclopedia backlink`);
 }
+for (const [sourceId, publicationDate] of [
+  ['gailusChurchStateNazism2018', '2018-11-01'],
+  ['silomonProtestantResistance2009', '2009-03-21'],
+]) {
+  assert.ok(naziEntry.references.researchSourceIds.includes(sourceId), `${sourceId} must remain in the Nazi church research trail`);
+  assert.ok(JSON.stringify(naziEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the Nazi entry`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, 'secondary');
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, ['German']);
+  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-socialist'), `${sourceId} needs a Nazi encyclopedia backlink`);
+}
+assert.ok(naziEntry.dimensionInterpretations.religion.citations.researchSourceIds.includes('gailusChurchStateNazism2018'), 'the Nazi religion coordinate needs church-state scholarship');
+assert.ok(naziEntry.sections.find(({ id }) => id === 'history').timeline.some(({ period }) => period.startsWith('July–September 1933 — German Christian')), 'the Nazi entry needs a dated church-coordination phase');
+const naziPeople = naziEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries;
+assert.ok(naziPeople.some(({ name }) => name === 'Ludwig Müller'), 'the German Christian leadership example must be named');
+assert.ok(naziPeople.some(({ name }) => name.startsWith('Karl Barth')), 'the Barmen theological opposition must be named');
+const naziChurchExamples = naziEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries;
+assert.ok(naziChurchExamples.some(({ name }) => name.startsWith('German Christians and the Reich Church')), 'the Reich Church case must be bounded');
+assert.ok(naziChurchExamples.some(({ name }) => name.startsWith('German Catholic institutions')), 'the Catholic institutional case must be bounded');
+assert.ok(naziEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The religious history adds a further warning')), 'the Nazi entry needs a religious-scoring safeguard');
 
 const libertarianSocialistEntry = ENCYCLOPEDIA_ENTRIES['libertarian-socialist'];
 for (const [sourceId, evidenceRole] of [

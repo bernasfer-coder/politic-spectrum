@@ -11546,7 +11546,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -35,
         label: 'Instrumental, racialized, and state-subordinated religion',
         explanation: 'Nazism was not a straightforward theocracy or a coherent Christian political programme. It negotiated with, pressured, and sometimes cooperated with churches while subordinating independent religious authority to the racial state; it also promoted pseudo-religious myths of blood, destiny, nature, and national rebirth. Religious affiliation did not protect Jews defined by Nazi racial law, and religious resistance varied by institution and individual.',
-        citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['oxfordNaziGermany', 'bpbNationalSocialism', 'sepReligionPolitics']),
+        citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['oxfordNaziGermany', 'bpbNationalSocialism', 'sepReligionPolitics', 'gailusChurchStateNazism2018', 'ushmmGermanChurches']),
       },
     },
     sections: [
@@ -11600,6 +11600,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'For this project, religion in public life concerns institutional authority, not a population’s private faith. Barmen’s fifth thesis grounds limits on both church and state in Christian theology. This illustrates why opposition to state domination cannot automatically be scored as secularism. The documents do not validate an exact coordinate.',
             citations: citations([], ['barmenDeclaration1934German', 'sepReligionPolitics']),
           },
+          {
+            type: 'paragraph',
+            text: 'The church struggle makes the religion coordinate more precise. The German Christians sought to align Protestant institutions with Nazi ideology, racial thinking, and the Führer principle; the Confessing Church resisted that ecclesiastical coordination, but its opposition was often directed at church autonomy and doctrine rather than a comprehensive democratic or anti-racist programme. The Catholic Church followed a different path of institutional negotiation, Concordat-based claims, and later doctrinal protest. Across both traditions, individual resistance and rescue existed alongside caution, compromise, inherited antisemitism, and limited public opposition to the persecution of Jews. “Religious” and “secular” are therefore insufficient descriptions without naming the institution, doctrine, actor, date, and conduct.',
+            citations: citations([], ['reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'ushmmGermanChurches']),
+          },
         ],
       },
       {
@@ -11625,6 +11630,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Appointment, Gleichschaltung, and dictatorship — 1933–1934',
             text: 'Hitler became Chancellor in January 1933 through a constitutional appointment by President Hindenburg, after which the Nazi leadership used emergency decrees, the Reichstag Fire Decree, the Enabling Act, violence, arrests, and coordination to destroy political pluralism. Independent unions were dissolved, opposition parties were eliminated, federal and civic institutions were brought under Nazi control, and the regime fused party, state, police, and leader authority in an escalating dictatorship.',
             citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['ushmmThirdReich', 'oxfordNaziGermany', 'bpbNationalSocialism']),
+          },
+          {
+            period: 'July–September 1933 — German Christian church coordination',
+            text: 'With Hitler’s support, the German Christian movement helped create a centralized German Evangelical Church and won the July 1933 church elections with NSDAP organizational and propaganda assistance. Ludwig Müller, a German Christian leader and Hitler’s plenipotentiary for Protestant church affairs, was appointed Reich Bishop on 27 September 1933 and pursued institutional and doctrinal coordination from within. The project did not achieve complete ecclesiastical unity or total state control; it produced the Kirchenkampf and intensified conflict with the Confessing Church. This is evidence about a movement and institutions, not about every German Protestant or Christian.',
+            citations: citations([], ['gailusChurchStateNazism2018', 'ushmmGermanChurches', 'barmenDeclaration1934German']),
           },
           {
             period: '20 July 1933 — Concordat signed',
@@ -11714,9 +11724,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
               },
               {
                 label: 'German Christians and Confessing Church: contrasting responses',
-                distinction: 'USHMM distinguishes the German Christians’ pursuit of a Nazi-aligned church from Confessing Church opposition to that project.',
-                relation: 'These were conflicting currents within German Protestantism, not equivalent Nazi variants; other leaders sought to avoid both schism and conflict with the regime.',
-                citations: citations([], ['ushmmGermanChurches']),
+                distinction: 'The German Christians sought a Nazi-aligned Reich Church, while the Confessing Church opposed the subordination of Protestant doctrine and offices to the Führer-state. The July 1933 church elections and Müller’s appointment show how party support and ecclesiastical structures became entangled.',
+                relation: 'These were conflicting currents within German Protestantism, not equivalent Nazi variants. Confessing Church opposition often defended church autonomy and theological authority without amounting to comprehensive resistance to antisemitism or dictatorship; “neutral” leaders and ordinary congregations require separate evidence.',
+                citations: citations([], ['gailusChurchStateNazism2018', 'barmenDeclaration1934German', 'silomonProtestantResistance2009', 'ushmmGermanChurches']),
               },
               {
                 label: 'Postwar neo-Nazism',
@@ -11741,6 +11751,49 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The Nuremberg Laws, the Reich Citizenship Law, anti-Jewish professional exclusions, the 1938 pogrom, ghettos, deportations, forced labor, mass shootings, and killing centers provide documentary anchors for the transition from ideological exclusion to state-organized persecution and genocide. These events should be taught with survivor testimony, local histories, perpetrator documents, resistance, rescue, collaboration, and the varied experiences of Jewish and non-Jewish victims.',
             citations: citations(['hitlerMeinKampf'], ['ushmmNurembergLaws', 'ushmmNaziPartyPlatform', 'ushmmNaziRacism', 'unGenocideConvention']),
+          },
+          {
+            type: 'people',
+            entries: [
+              {
+                name: 'Ludwig Müller',
+                role: 'Reich Bishop and leading German Christian organizer',
+                caveat: 'GHDI documents his NSDAP membership, leadership in the German Christian movement, appointment as Reich Bishop, and attempt to coordinate Protestant institutions with Nazi ideology. He was not representative of all Protestants, and this bounded record does not establish his complete theology or every later policy decision.',
+                citations: citations([], ['gailusChurchStateNazism2018', 'ushmmGermanChurches']),
+              },
+              {
+                name: 'Karl Barth and the Barmen Confessing Synod',
+                role: 'theological opposition to the Nazi-aligned coordination of Protestant church life',
+                caveat: 'Barmen is evidence of a dated theological boundary and a coalition of Lutheran, Reformed, and United representatives, not proof of universal Confessing Church resistance, equal protection for Jews, or a complete democratic alternative.',
+                citations: citations([], ['barmenDeclaration1934German', 'silomonProtestantResistance2009', 'ushmmGermanChurches']),
+              },
+            ],
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'German Christians and the Reich Church project',
+                period: 'Germany, 1932–1935',
+                match: 'bounded example of Nazi-aligned religious mobilization and institutional coordination',
+                caveat: 'The movement did not represent all German Protestants, failed to secure complete control, and its institutional success depended on party support. It must be separated from the Confessing Church and from later claims about collective Christian resistance.',
+                citations: citations([], ['gailusChurchStateNazism2018', 'ushmmGermanChurches', 'barmenDeclaration1934German']),
+              },
+              {
+                name: 'Confessing Church and the Barmen Declaration',
+                period: 'Germany, 1934–1945',
+                match: 'theological and institutional opposition to Nazi control of Protestant church doctrine and governance',
+                caveat: 'The declaration did not itself provide a comprehensive anti-racist or democratic programme; many participants prioritized church freedom, and institutional conduct toward Jews varied. It is a boundary case within Nazi Germany, not a country-wide ideological match.',
+                citations: citations([], ['barmenDeclaration1934German', 'silomonProtestantResistance2009', 'ushmmGermanChurches']),
+              },
+              {
+                name: 'German Catholic institutions and the 1933 Concordat / 1937 encyclical',
+                period: 'Germany, 1933–1937',
+                match: 'institutional negotiation followed by bounded doctrinal protest',
+                caveat: 'Treaty protections and papal criticism do not establish collective Catholic rejection of Nazi antisemitism, racial law, or state violence. Public opposition, institutional self-protection, and individual resistance must be researched separately.',
+                citations: citations([], ['reichConcordat1933German', 'piusXiMitBrennender1937', 'ushmmGermanChurches']),
+              },
+            ],
           },
           {
             type: 'paragraph',
@@ -11809,6 +11862,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The religious history adds a further warning against binary scoring. German Christian alignment, Confessing Church resistance, “neutral” institutional caution, Catholic treaty negotiation, papal protest, and individual rescue were not interchangeable responses. Barmen’s theological boundary did not explicitly address the persecution of Jews, while later German Protestant reflection acknowledged forms of Christian complicity and antisemitism. A careful entry must keep opposition to state control distinct from opposition to racial persecution, and both distinct from the varied conduct of churches, clergy, congregations, and lay people.',
+            citations: citations([], ['barmenDeclaration1934German', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'piusXiMitBrennender1937', 'ushmmGermanChurches']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, the entry is designed to resist contemporary misuse. Assigning this label to a living person, party, or state requires exceptional evidence and a clearly bounded historical comparison. The site should prefer precise descriptions—antisemitic, racial supremacist, authoritarian, expansionist, genocidal, anti-democratic, or neo-Nazi—when those are the claims supported by the evidence, and should always show the source, period, institution, and uncertainty.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['sepFascism', 'oxfordNaziGermany', 'ushmmThirdReich', 'ushmmNaziRacism']),
           },
@@ -11817,7 +11875,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism', 'griffinNatureFascism'],
-      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights', 'oxfordImperialism', 'reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'ushmmGermanChurches'],
+      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights', 'oxfordImperialism', 'reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'ushmmGermanChurches', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009'],
       editorialNote: 'This is a historical warning entry. It distinguishes National Socialism from generic fascism, ethnic nationalism, militarism, populism, conservatism, communism, and contemporary extremist labels. Its scores describe the Nazi movement and regime as a historically specific racial-totalitarian and genocidal project, not a current-country classification or ordinary policy option. The church research uses German primary texts and an English institutional synthesis; English paraphrases are original, not quotations or authoritative translations. Promises, doctrinal objections, and historical conduct remain distinct evidence types.',
     },
     researchGaps: [
@@ -11830,6 +11888,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Maintain a separate, evidence-based method for studying contemporary neo-Nazi and far-right movements so historical analogy does not become casual labeling or erase the specificity of Nazi Germany and the Holocaust.',
       'Read the church-history studies by Victoria Barnett, Doris Bergen, Robert P. Ericksen, Michael Phayer, and Kevin P. Spicer listed by USHMM before attributing detailed conclusions to them; they are further-reading leads, not books reviewed in this pass.',
       'Add parish, diocesan, regional, and Jewish survivor evidence to compare institutional self-defense, antisemitism, resistance, rescue, and persecution. The selected German documents and museum synthesis do not complete the earlier churches research gap.',
+      'Collate the full German church-election records, regional church laws, Ministry of Church Affairs files, Catholic episcopal correspondence, and local Jewish and Christian testimony from 1933–1937. The present synthesis improves the Reich Church / Confessing Church distinction but does not establish uniform regional conduct or a complete account of Protestant and Catholic institutions.',
       'Resolve the pre-existing religion-coordinate discrepancy: this article uses −35 and the reference card −30. Neither figure is empirically validated, and this pass leaves their magnitudes unchanged. The economic sign alone was aligned with the existing +5 card coordinate; this is orientation maintenance, not new calibration.',
     ],
   },
