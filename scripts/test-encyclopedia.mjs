@@ -315,12 +315,36 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence, publ
 }
 const swissReformationTimeline = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(swissReformationTimeline.some(({ period }) => period.startsWith('Sixteenth century antecedent — Swiss Reformation')));
+for (const sourceId of [
+  'genevaEcclesiasticalOrdinances1541French',
+  'genevaConsistoryRegisters1542French',
+  'genevaCouncilRegistersRCnum1545French',
+  'rangelGenevaConfessionalization2024',
+  'hopflChristianPolityGeneva2009',
+  'wattWomenConsistoryGeneva1993',
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Swiss Reformation reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the liberal entry`);
+  const [record] = BIBLIOGRAPHY_RECORDS.filter((item) => item.citationIds.researchSourceIds?.includes(sourceId));
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'), `${sourceId} needs a liberal-constitutionalism backlink`);
+}
+const genevaLiberalTimeline = swissReformationTimeline.find(({ period }) => period.startsWith('1541–1564 — Geneva’s negotiated ecclesiastical constitution'));
+assert.ok(genevaLiberalTimeline, 'the Genevan constitutional antecedent must remain visible');
+assert.ok(genevaLiberalTimeline.citations.researchSourceIds.includes('genevaEcclesiasticalOrdinances1541French'));
 assert.ok(swissReformationTimeline.some(({ period }) => period.startsWith('1762 — Rousseau’s Genevan')));
 const rousseauVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Rousseauian popular sovereignty'));
 assert.ok(rousseauVariant, 'Rousseauian popular sovereignty must be separated as a boundary variant');
+const swissReformationVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Swiss Reformation civic-confessional constitutionalism'));
+assert.ok(swissReformationVariant, 'the Swiss Reformation must be separated as an antecedent variant');
+assert.ok(swissReformationVariant.citations.researchSourceIds.includes('rangelGenevaConfessionalization2024'));
 const rousseauExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Jean-Jacques Rousseau belongs'));
 assert.ok(rousseauExample, 'Rousseau must appear as a bounded illustrative example');
+const swissReformationExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Zurich and Geneva under the Swiss Reformers'));
+assert.ok(swissReformationExample, 'the Swiss Reformers must appear as a bounded illustrative example');
+assert.match(swissReformationExample.text, /not liberal democracies/);
+assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Swiss Reformation adds a religious-coercion safeguard')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Research the Swiss Reformers')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the complete German, French and Latin primary corpus')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Add original Ottoman Turkish')));
 for (const [sourceId, publicationDate] of [
   ['sasakiNamikKemalConstitutionalPlan2006', '2006-02-20'],
