@@ -10101,6 +10101,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Cádiz Constitution supplies a bounded Spanish and transatlantic case. Its 1812 text located sovereignty in the nation, defined the Spanish nation across both hemispheres, protected civil liberty and property in formal terms, created a hereditary “moderate” monarchy with legislative power shared by the Cortes and king, and established Catholicism as the sole legally protected religion. The document therefore combines liberal constitutional techniques with monarchical and confessional limits; it is evidence of design, not equal citizenship or successful implementation across the empire.',
             citations: citations([], ['congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Postwar West Germany supplies a bounded constitutional-liberal comparison. The Basic Law combines human dignity, directly binding basic rights, popular and federal democracy, the social-state principle, party participation, constitutional adjudication, European cooperation, and an amendment barrier for core principles. This is an institutional case, not proof that one constitutional text automatically produced equal participation or a single economic ideology; court practice, party competition, and social-market policy require separate evidence.',
+            citations: citations([], ['germanBasicLaw1949', 'kommersBasicLawFiftyYear2000', 'meinelWestGermanConstitutionalism2016', 'bpbSocialMarketEconomy']),
+          },
         ],
       },
       {
@@ -10131,6 +10136,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'evidence-note',
             text: 'The Weimar and 1933 documents below form a boundary case about constitutional breakdown, not a classification of Nazi dictatorship as liberal constitutionalism. German texts, named historians’ interpretations and this project’s educational comparison remain distinct; no historical or present-day country score is inferred.',
             citations: citations([], ['ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Basic Law of the Federal Republic of Germany illustrates a postwar version of rights-constrained government. Its legal order makes human dignity and basic rights binding on public authority, defines Germany as a democratic and social federal state, recognizes parties as participants in forming political will, and protects core constitutional principles against amendment. Kommers describes a shift from Weimar-style parliamentary supremacy toward constitutional democracy; Meinel cautions that the Federal Constitutional Court’s later authority and liberalizing role were historically constructed and contested rather than mechanically dictated by the text. These are German constitutional features, not a universal institutional recipe.',
+            citations: citations([], ['germanBasicLaw1949', 'kommersBasicLawFiftyYear2000', 'meinelWestGermanConstitutionalism2016']),
           },
           {
             type: 'paragraph',
@@ -10229,6 +10239,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['kantPerpetualPeace', 'millOnLiberty'], ['unRuleLawHumanRights', 'echrConvention', 'oxfordConstitutionalJustice', 'vdem']),
           },
           {
+            period: '1949 onward — West German constitutional and social-market reconstruction',
+            text: 'The Basic Law was adopted in the western occupation zones after National Socialism and war. It placed human dignity and enforceable rights at the beginning of the constitutional order, combined representative democracy with federalism, rule of law and a social-state principle, and limited the ability of a temporary majority to abolish the free democratic order. Postwar economic policy also developed a social-market programme: the Bundeszentrale für politische Bildung distinguishes ordoliberal competition rules from the broader, more pragmatic social-market settlement. Kommers and Meinel show why legal text, economic policy, court practice, and democratic reconstruction must be studied as related but non-identical layers.',
+            citations: citations([], ['germanBasicLaw1949', 'kommersBasicLawFiftyYear2000', 'meinelWestGermanConstitutionalism2016', 'bpbSocialMarketEconomy']),
+          },
+          {
             period: '1989–present — constitutional pluralism, backsliding, and new rights conflicts',
             text: 'Contemporary constitutionalism faces democratic backsliding, executive aggrandizement, polarization, migration, digital surveillance, platform power, climate emergency, transnational courts, economic inequality, and disputes between originalist, living, popular, and common-good interpretations. The liberal constitutional question remains practical: can institutions preserve equal rights and accountable contestation while adapting to problems that earlier constitutional settlements did not anticipate?',
             citations: citations(['federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'vdem', 'oxfordConstitutionalJustice', 'echrConvention', 'oxfordLiberalismResearch']),
@@ -10253,6 +10268,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Adds labor protections, social insurance, public services, equality duties, and sometimes enforceable social rights to civil and political rights.',
                 relation: 'Retains constitutional limits while rejecting the idea that formal non-interference is sufficient for equal freedom.',
                 citations: citations(['millOnLiberty', 'wollstonecraftRights'], ['oxfordLiberalismResearch', 'unRuleLawHumanRights', 'sepConstitutionalism']),
+              },
+              {
+                label: 'Postwar West German constitutional and social-market liberalism',
+                distinction: 'Joins enforceable rights, human dignity, federal and representative democracy, social-state commitments, constitutional review, and a regulated competitive economy.',
+                relation: 'A bounded institutional variant: its economic order drew on ordoliberal and broader social-market traditions, while its guarded-democracy and strong-court features complicate a simple equation of liberalism with majoritarian rule.',
+                citations: citations([], ['germanBasicLaw1949', 'kommersBasicLawFiftyYear2000', 'meinelWestGermanConstitutionalism2016', 'bpbSocialMarketEconomy']),
               },
               {
                 label: 'Parliamentary liberal constitutionalism',
@@ -10346,6 +10367,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Cádiz Constitution is a bounded historical example of liberal constitutionalism under wartime and imperial pressure. Its national-sovereignty language and formal distribution of powers influenced later Spanish and Hispanic constitutional debates, while its confessional monopoly, monarchic structure and unequal citizenship provisions show why “liberal” cannot be treated as synonymous with socially progressive, secular or fully democratic. The Spanish scholarship used here interprets its rights and liberal legacy; it does not establish a six-axis score for Spain or for every territory of the Hispanic Monarchy.',
             citations: citations([], ['congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Federal Republic of Germany’s Basic Law is a bounded example of post-authoritarian constitutional reconstruction. It combines a rights catalogue and human-dignity principle with federal democracy, social-state commitments, party regulation, constitutional review, and an amendment barrier for core principles. Its court practice and social-market economy developed through later political and legal struggles, so the example does not classify present-day Germany or every German party as an exact six-axis match.',
+            citations: citations([], ['germanBasicLaw1949', 'kommersBasicLawFiftyYear2000', 'meinelWestGermanConstitutionalism2016', 'bpbSocialMarketEconomy']),
+          },
         ],
       },
       {
@@ -10376,6 +10402,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The first criticism is the counter-majoritarian difficulty. A constitution and court can prevent a temporary majority from violating rights, but judges and entrenched institutions may also block reforms supported by a democratic majority or preserve the preferences of an earlier elite. A defensible system needs transparent appointment, reasoned decisions, legislative response, amendment routes, access to justice, and ongoing public contestation rather than treating judicial power as automatically neutral.',
             citations: citations(['federalistPapers', 'millOnLiberty'], ['oxfordConstitutionalJustice', 'sepConstitutionalism', 'unRuleLawHumanRights']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The West German case makes the counter-majoritarian question concrete. The Basic Law’s eternity clause, party restrictions, and powerful Federal Constitutional Court were designed against democratic self-destruction, while critics can ask how much room remains for popular revision and whether judicial guardianship can become self-justifying. Kommers documents the guarded-democracy design; Meinel emphasizes that its institutional success and interpretation were historically constructed and remain contestable.',
+            citations: citations([], ['germanBasicLaw1949', 'kommersBasicLawFiftyYear2000', 'meinelWestGermanConstitutionalism2016']),
           },
           {
             type: 'paragraph',
@@ -10437,8 +10468,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'constantLibertyModerns', 'federalistPapers', 'millOnLiberty', 'wollstonecraftRights', 'kantPerpetualPeace', 'tocquevilleDemocracy', 'adamSmithWealth'],
-      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016', 'southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995', 'khoslaTushnetStateCapacity2022', 'indiaConstitution1950', 'indiaKesavananda1973', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007'],
-      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state. The India addition is a bounded postcolonial case using an official constitutional link, an official Supreme Court summary, and selected academic readings; it does not establish a whole-country score, complete constitutional history, or equal rights in practice. The Cádiz addition is a bounded Spanish and transatlantic case using the official 1812 text plus Spanish scholarship represented through metadata/abstracts; it does not establish implementation, colonial reception, religious pluralism, or a score for Spain or its former territories.',
+      researchSourceIds: ['oxfordLiberalismResearch', 'sepLiberalism', 'sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'locFederalistPapers', 'unRuleLawHumanRights', 'echrConvention', 'colonialLiberalismExclusion', 'sepReligionPolitics', 'sepColonialism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'foreignPolicy', 'sepLibertyPositiveNegative', 'sepNationalism', 'sepMill', 'brazilConstitution1824', 'congresoCadizConstitution1812', 'varelaCadizLiberalism1987', 'perezLunoCadizRights2015', 'germanBasicLaw1949', 'kommersBasicLawFiftyYear2000', 'meinelWestGermanConstitutionalism2016', 'bpbSocialMarketEconomy', 'lynchModeratingPower2005', 'galvesCostaProperty2022', 'ghdiWeimarGerman', 'ghdiReichstagFireDecreeGerman', 'raithelFireDecree2010', 'seefriedWeimarCrisis2016', 'southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995', 'khoslaTushnetStateCapacity2022', 'indiaConstitution1950', 'indiaKesavananda1973', 'chakrabartyIndianConstitution2018', 'deIndianConstitutionEveryday2020', 'fischerIndiaConstitutionalReform2007'],
+      editorialNote: 'This entry distinguishes liberal constitutionalism as a family of arguments for rights-constrained public power from classical liberal economics, progressive liberalism, civic nationalism, judicial supremacy, secularism, and formal constitutionalism without equal inclusion. Historical examples are comparative and partial; scores are didactic and should not be read as empirical measurements of every liberal constitutional party or state. The India addition is a bounded postcolonial case using an official constitutional link, an official Supreme Court summary, and selected academic readings; it does not establish a whole-country score, complete constitutional history, or equal rights in practice. The Cádiz addition is a bounded Spanish and transatlantic case using the official 1812 text plus Spanish scholarship represented through metadata/abstracts; it does not establish implementation, colonial reception, religious pluralism, or a score for Spain or its former territories. The West German addition is a bounded post-authoritarian constitutional case: the Basic Law, court practice, guarded democracy, party competition, and social-market policy are related but non-identical evidence layers, and the current English consolidation is not a complete German-language constitutional history.',
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Hindi, Chinese, and African constitutional traditions, including constitutional arguments that do not begin from the Anglo-American canon.',
@@ -10460,6 +10491,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add Dalit, Adivasi, Muslim, women’s, linguistic, regional, labor, and federal scholarship on India’s constitutional order, alongside administrative and electoral evidence. Test De’s account of unequal litigation access and Fischer’s political-economy interpretation against local archives, rights outcomes, and competing Indian-language research.',
       'Read and collate the complete Spanish Cádiz Constitution, Cortes debates, 1814 repeal, 1820–1823 Triennium records and 1837/1845 constitutional texts in Spanish; distinguish the transatlantic nation’s formal membership from colonial implementation and local reception.',
       'Read Varela Suanzes-Carpegna and Pérez Luño in full alongside Spanish and Latin American scholarship on Cádiz liberalism, Catholic establishment, race, slavery, Indigenous citizenship, women, representation and the constitutional legacy across the Hispanic Atlantic. The current pass uses article metadata/abstracts, not full-text review.',
+      'Read the original German Basic Law and Parliamentary Council materials alongside German-language scholarship on constitutional patriotism, militant democracy, Federal Constitutional Court practice, social-market policy, and East/West German comparison. The official English consolidation, Kommers’s assessment, Meinel’s review essay, and the bpb social-market history establish a bounded lead but not a complete implementation or historiography.',
     ],
   },
   'militarist-imperialist': {

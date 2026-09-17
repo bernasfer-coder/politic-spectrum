@@ -197,6 +197,37 @@ const liberalCriticisms = liberalConstitutionalismEntry.sections.find(({ id }) =
 assert.ok(liberalCriticisms.some(({ text }) => text?.includes('constitutionalism is only a negative restraint')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the full S v Makwanyane judgment')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Compare South Africa’s socioeconomic-rights remedies')));
+for (const [sourceId, role, date, languages] of [
+  ['germanBasicLaw1949', 'primary', '1949-05-23', ['English', 'German']],
+  ['kommersBasicLawFiftyYear2000', 'secondary', '2019-06-24', ['English']],
+  ['meinelWestGermanConstitutionalism2016', 'secondary', '2016-04-11', ['English']],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a German constitutionalism reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, 'high');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const germanSocialMarketRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-bpbSocialMarketEconomy');
+assert.ok(germanSocialMarketRecord.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'));
+const germanLiberalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(germanLiberalHistory.some(({ period }) => period.startsWith('1949 onward — West German')));
+const germanLiberalVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Postwar West German constitutional'));
+assert.ok(germanLiberalVariant, 'West German constitutional liberalism must be separated as a dated variant');
+const germanLiberalExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The Federal Republic of Germany’s Basic Law'));
+assert.ok(germanLiberalExample, 'West German constitutional reconstruction must appear as a bounded example');
+assert.match(germanLiberalExample.text, /does not classify present-day Germany/);
+assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The West German case makes the counter-majoritarian question')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the original German Basic Law')));
+assert.deepEqual(Object.fromEntries(Object.entries(liberalConstitutionalismEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -30, social: 25, authority: -65, identity: 25, foreign: 35, religion: 55 });
 for (const [sourceId, role, date] of [
   ['indiaConstitution1950', 'primary', '1950-01-26'],
   ['indiaKesavananda1973', 'primary', '1973-04-24'],
