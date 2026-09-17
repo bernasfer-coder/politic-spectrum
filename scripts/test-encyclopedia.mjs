@@ -292,6 +292,36 @@ assert.match(mexicanConstitutionExample.text, /not a complete record of enforcem
 const mexicanConstitutionSafeguard = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Mexican case adds a safeguard'));
 assert.ok(mexicanConstitutionSafeguard, 'the Mexican case needs a design-versus-implementation safeguard');
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the original Spanish 1917 Constitution')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence, publicationStatus] of [
+  ['rousseauDuContratSocial1762French', 'primary', '1762', ['French'], 'high', 'review-required'],
+  ['unigeRousseauInstitutions2013', 'secondary', '2013', ['French'], 'high', 'link-only'],
+  ['rosenblattRousseauGeneva1991', 'secondary', '1991', ['French'], 'high', 'link-only'],
+  ['cambridgeRousseauGeneva1997', 'secondary', '1997', ['English'], 'high', 'link-only'],
+  ['switzerlandReformationOfficial', 'contextual', null, ['English'], 'medium', 'link-only'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Rousseau/Swiss reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, publicationStatus);
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const swissReformationTimeline = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(swissReformationTimeline.some(({ period }) => period.startsWith('Sixteenth century antecedent — Swiss Reformation')));
+assert.ok(swissReformationTimeline.some(({ period }) => period.startsWith('1762 — Rousseau’s Genevan')));
+const rousseauVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Rousseauian popular sovereignty'));
+assert.ok(rousseauVariant, 'Rousseauian popular sovereignty must be separated as a boundary variant');
+const rousseauExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Jean-Jacques Rousseau belongs'));
+assert.ok(rousseauExample, 'Rousseau must appear as a bounded illustrative example');
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Research the Swiss Reformers')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Add original Ottoman Turkish')));
 
 const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
 for (const [sourceId, role, date] of [
