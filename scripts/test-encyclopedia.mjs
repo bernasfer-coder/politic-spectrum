@@ -520,6 +520,35 @@ assert.match(swissExample.caveat, /cantonal variation/);
 assert.ok(christianCriticisms.some(({ text }) => text?.includes('Swiss case adds a safeguard')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Extend the Swiss case through')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Separate the national CVP/PDC')));
+for (const [sourceId, role, date, languages] of [
+  ['cdsDeclarationPrinciples1974', 'primary', '1974-07-19', ['Portuguese']],
+  ['portugalConstitution1976Official', 'primary', '1976-04-02', ['Portuguese']],
+  ['leitaoPortugalChristianDemocracy2013', 'secondary', '2013', ['Portuguese']],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Portuguese Christian-democratic reference trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const portugalHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const portugalTimeline = portugalHistory.find(({ period }) => period.startsWith('1974–1982 — Portuguese'));
+assert.ok(portugalTimeline, 'the Portuguese Christian-democratic transition case must remain visible');
+assert.ok(portugalTimeline.citations.researchSourceIds.includes('portugalConstitution1976Official'));
+const portugalVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Portuguese transition-era Christian democracy'));
+assert.ok(portugalVariant, 'the Portuguese case must be separated as a dated Christian-democratic variant');
+const portugalExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Portuguese Christian-democratic'));
+assert.ok(portugalExample, 'Portugal must appear as a bounded Christian-democratic historical example');
+assert.match(portugalExample.caveat, /wider constituent settlement/);
+assert.ok(christianCriticisms.some(({ text }) => text?.startsWith('Portugal adds a transition and attribution safeguard')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read the full Portuguese CDS and PDC programmes')));
 assert.deepEqual(Object.fromEntries(Object.entries(christianDemocracyEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -5, social: -30, authority: 20, identity: -20, foreign: 15, religion: -62 });
 
 const frenchMonarchyEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
