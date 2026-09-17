@@ -8245,6 +8245,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The postwar European form is especially influential in comparative politics: Christian-democratic parties helped shape constitutional reconstruction, social-market institutions, welfare provision, anti-communist coalitions, and European integration. That history should not be universalized. Catholic, Protestant, Latin American, Portuguese, and country-specific movements differed in their relation to churches, authoritarian regimes, labor, colonialism, women’s citizenship, and secular law.',
             citations: citations(['maritainIntegralHumanism', 'burkeReflections'], ['oxfordChristianDemocratDecade', 'oxfordChristianDemocracyEurope', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Chile supplies a bounded Latin American case. Eduardo Frei Montalva’s Christian Democratic administration (1964–1970) presented its project as a “Revolución en Libertad,” combining economic development, education and technical training, solidarity and social justice, political participation, and popular sovereignty. The programme is used here as a dated party–government project, not as a universal definition of Christian democracy or a score for present-day Chile.',
+            citations: citations([], ['pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'ferreiraChristianDemocracyChileUruguay2023']),
+          },
         ],
       },
       {
@@ -8265,6 +8270,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The 1949 Düsseldorf short version makes the institutional mixture concrete: competition and market prices alongside independent monopoly oversight, collective wage bargaining, and monetary, tax, social, and public-investment policies. It also allows common ownership under stated conditions. These are programme commitments, not evidence that recovery or social justice resulted from them alone.',
             citations: citations([], ['cduDuesseldorf1949']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Chilean case shifts the emphasis from postwar European social-market reconstruction toward developmental reform and mass incorporation. Frei’s programme linked economic development, education, social justice, participation, and popular sovereignty; the government also pursued agrarian reform, rural unionisation, and literacy campaigns. The historical record treats these measures as both an expansion of peasant political incorporation and a state project that could shape the political consciousness it sought to mobilize. This is a country- and period-specific tension, not evidence that Christian democracy everywhere is either emancipatory or paternalist.',
+            citations: citations([], ['memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004']),
           },
           {
             type: 'evidence-note',
@@ -8338,6 +8348,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench']),
           },
           {
+            period: '1964–1970: Chilean Christian democracy and Revolución en Libertad',
+            text: 'Eduardo Frei Montalva won the Chilean presidency in 1964 as the Christian Democratic candidate. His administration presented a developmental and reformist programme linking economic development, education, social justice, political participation, and popular sovereignty. Agrarian reform, rural unionisation, and literacy training sought to incorporate rural people into political life, while scholarship also identifies internal party conflict, increasing polarization, and a tension between fostering critical participation and fostering Christian Democratic political identification. The case illuminates a Latin American variant without establishing a complete account of outcomes or treating Chile as a current ideological match.',
+            citations: citations([], ['pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023']),
+          },
+          {
             period: 'Late twentieth century–present: secularization, party transformation, and global variants',
             text: 'Secularization, changing class structures, women’s employment, migration, Europeanization, globalization, new family debates, and the decline of mass-confessional institutions reshaped Christian-democratic parties. Some moved toward centrist or market-liberal platforms; others retained welfare, family, community, or social-justice commitments. Latin American and other regional movements interacted with developmentalism, democracy, authoritarianism, liberation theology, and local religious institutions in ways that cannot be read as a simple export of postwar Europe.',
             citations: citations(['maritainIntegralHumanism', 'keynesGeneralTheory'], ['oxfordChristianDemocracyEurope', 'oxfordPortugalPoliticalCatholicism', 'sepReligionPolitics', 'comparativeChristianDemocracy']),
@@ -8400,6 +8415,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['maritainIntegralHumanism', 'keynesGeneralTheory'], ['oxfordSocialCatholicismChristianDemocracy', 'sepReligionPolitics']),
               },
               {
+                label: 'Latin American developmental Christian democracy: Chile, 1964–1970',
+                distinction: 'A country- and period-specific reformist variant that joined Christian Democratic electoral government to economic development, popular education, agrarian reform, rural unionisation, and an expansion of peasant political participation.',
+                relation: 'It differs from the postwar European social-market shorthand through its developmental and rural-incorporation agenda. The record also preserves internal party conflict and the tension between empowering popular agency and shaping a Christian Democratic political identity.',
+                citations: citations([], ['pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023']),
+              },
+              {
                 label: 'Confessional authoritarianism or theocracy',
                 distinction: 'Gives religious office, sacred law, or an authorized religious interpretation constitutive power over the constitution, coercive law, or political membership.',
                 relation: 'A boundary case rather than a normal Christian-democratic variant: constitutional-pluralist Christian democracy permits alternation, dissent, and non-confessional citizenship.',
@@ -8439,6 +8460,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'French statesman associated with postwar reconciliation, Christian-democratic political culture, and European institution-building.',
                 caveat: 'Schuman was one actor in a wider European and international coalition; European integration cannot be attributed to Christian democracy alone.',
                 citations: citations(['maritainIntegralHumanism', 'kantPerpetualPeace'], ['euRobertSchuman', 'oxfordChristianDemocracyEurope']),
+              },
+              {
+                name: 'Eduardo Frei Montalva',
+                role: 'Chilean Christian Democratic president whose 1964–1970 administration pursued the developmental and reformist project known as Revolución en Libertad.',
+                caveat: 'Frei’s government is a dated country case, not a complete definition of Christian democracy. Its agrarian, educational, electoral, church, labor, and foreign-policy record requires separate evidence and should not be detached from Chile’s polarization and later crisis.',
+                citations: citations([], ['pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023']),
               },
               {
                 name: 'Pope Leo XIII and Catholic social teaching',
@@ -8487,6 +8514,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration'], ['bpbChristianDemocraticCVP', 'comparativeChristianDemocracy']),
               },
               {
+                name: 'Chile: Eduardo Frei Montalva’s Revolución en Libertad',
+                period: 'Chile, 1964–1970',
+                match: 'A Latin American Christian Democratic government that linked electoral rule to developmental reform, economic modernization, education, social justice, agrarian reform, rural unionisation, and popular participation.',
+                caveat: 'The programme and selected scholarship show an ambitious reform project, not uniform success or equal inclusion. Internal party factions, polarization, the political use of literacy and participation, rural inequalities, and the later Chilean crisis must be studied separately; this is not a present-day country classification.',
+                citations: citations([], ['pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023']),
+              },
+              {
                 name: 'Portuguese Christian-democratic alternatives after 1974',
                 period: 'Portugal, democratic transition after the Carnation Revolution',
                 match: 'A case in which Catholic social thought, democratization, party formation, and external European support interacted after authoritarian rule.',
@@ -8524,6 +8558,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'A first criticism concerns the ambiguity of “Christian” in a democratic state. Christian-democratic movements can defend dignity and pluralism, but can also privilege a majority religion, treat secular citizens as culturally deficient, or use family and moral language to restrict women, sexual minorities, converts, or non-believers. The safe classification records actual law and practice rather than inferring them from a party name.',
             citations: citations(['maritainIntegralHumanism', 'lockeLetterToleration'], ['sepReligionPolitics', 'oxfordChristianDemocracy', 'vaticanSocialDoctrineCompendium', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Chilean case adds a criticism of reformist incorporation. Agrarian reform, rural unionisation, and literacy can widen political voice and challenge concentrated property, but a governing party can also use education and participation to cultivate loyalty to its own project. Scholarship on Frei’s administration therefore keeps empowerment and political formation in view at the same time. The evidence does not justify reducing Chilean Christian democracy to either neutral development or manipulation, and it does not establish equal outcomes for every rural, Indigenous, gendered, or regional group.',
+            citations: citations([], ['sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023']),
           },
           {
             type: 'paragraph',
@@ -8565,8 +8604,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections', 'keynesGeneralTheory', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979', 'sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench'],
-      editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
+      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979', 'sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench'],
+      editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. The Chile addition is a bounded Latin American case: a protected 1965 party publication, an official Spanish-language library overview, and Spanish-, English-, and Portuguese-language scholarship are used to describe the 1964–1970 Revolución en Libertad programme and its agrarian, educational, participatory, and electoral tensions. It does not establish a complete implementation record, a present-day Chile classification, or a universal Latin American model. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
     },
     researchGaps: [
       'Add original-language Catholic, Protestant, and Orthodox sources plus scholarship in French, German, Italian, Dutch, Portuguese, Spanish, and Latin American political history; record translations and editions separately.',
@@ -8581,6 +8620,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Reconcile the entry’s identity coordinate of -20 with the main card’s -40 through an explicit editorial decision. This discrepancy is not a polarity reversal; neither magnitude is newly validated by the programme research, and both were left unchanged in this pass.',
       'Independently read and compare the relevant passages of Maritain’s Humanisme intégral and Man and the State in identified French and English editions, alongside critics of his pluralism and common good. Sweet’s selected synthesis does not substitute for primary-text or critic-by-critic verification.',
       'Collate the selected French conciliar provisions with the authoritative Latin and study their drafting history and dated party and legal practice, particularly minority and non-believer protections. Neither shared language nor chronology alone establishes Maritain’s influence or implementation; Protestant and Orthodox comparisons remain necessary.',
+      'Read and collate the complete Spanish text of the Chilean Christian Democratic programme and related 1964–1970 government documents, including party congresses, legislation, presidential speeches, church relations, budget priorities, and electoral records. The protected 1965 publication is represented by catalogue metadata and a link only in this pass.',
+      'Extend the Chilean agrarian and educational case through land-distribution records, campesino and rural-union testimony, Mapuche and other Indigenous scholarship, women’s unpaid and paid labor, regional variation, and measurable social outcomes. The selected abstracts establish a research direction, not universal inclusion or reform success.',
+      'Compare Chile’s Revolución en Libertad with the Christian Democratic Party of Uruguay and later Chilean party factions, including their responses to polarization, anti-communism, foreign influence, church institutions, the 1973 rupture, and democratic restoration. Do not infer one Latin American Christian-democratic trajectory from Frei’s administration.',
     ],
   },
   'religious-socialist': {

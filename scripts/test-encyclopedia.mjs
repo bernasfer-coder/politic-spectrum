@@ -330,6 +330,41 @@ assert.ok(christianCriticisms.some(({ text }) => text?.includes('do not establis
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.includes('identity coordinate of -20 with the main card’s -40')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Independently read and compare')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Collate the selected French conciliar provisions')));
+for (const [sourceId, role, date, language] of [
+  ['pdcChileRevolucionLibertad1965', 'primary', '1965', 'Spanish'],
+  ['memoriaChilenaRevolucionLibertad', 'secondary', null, 'Spanish'],
+  ['sanchezBarriaAgrarianReform2021', 'secondary', '2021', 'Spanish'],
+  ['kirkendallFreireFrei2004', 'secondary', '2004-11-17', 'English'],
+  ['ferreiraChristianDemocracyChileUruguay2023', 'secondary', '2023-12-22', 'Portuguese'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Chilean Christian-democratic reference trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const chileHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const chileTimeline = chileHistory.find(({ period }) => period.startsWith('1964–1970:'));
+assert.ok(chileTimeline, 'the Chilean Christian-democratic timeline case must remain visible');
+assert.ok(chileTimeline.citations.researchSourceIds.includes('memoriaChilenaRevolucionLibertad'));
+assert.ok(chileTimeline.citations.researchSourceIds.includes('kirkendallFreireFrei2004'));
+const chileVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Latin American developmental Christian democracy'));
+assert.ok(chileVariant, 'the Chilean case must be separated as a dated Christian-democratic variant');
+const chileExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Chile: Eduardo Frei Montalva'));
+assert.ok(chileExample, 'Chile must appear as a bounded Christian-democratic historical example');
+assert.match(chileExample.caveat, /not a present-day country classification/);
+const chileCriticism = christianDemocracyEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.includes('reformist incorporation'));
+assert.ok(chileCriticism, 'the Chilean case needs a criticism and evidence boundary');
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Spanish text of the Chilean')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Extend the Chilean agrarian and educational case')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Compare Chile’s Revolución en Libertad')));
 assert.deepEqual(Object.fromEntries(Object.entries(christianDemocracyEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -5, social: -30, authority: 20, identity: -20, foreign: 15, religion: -62 });
 
 const frenchMonarchyEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
