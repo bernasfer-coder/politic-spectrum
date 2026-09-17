@@ -809,6 +809,38 @@ assert.ok(meijiVariant.citations.researchSourceIds.includes('youngJapanDemocracy
 assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('Inspect the JACAR scan and Japanese text')));
 assert.deepEqual(Object.values(frenchMonarchyEntry.dimensionInterpretations).map(({ score }) => score), [-12, -48, 52, -42, -18, -52]);
 
+for (const [sourceId, role, date, languages, confidence] of [
+  ['ghdiGermanEmpireConstitution1871', 'primary', '1871-04-16', ['German', 'English translation'], 'high'],
+  ['bundestagKaiserreichGerman', 'secondary', null, ['German'], 'high'],
+  ['sterkenburghWilhelmIMonarchicalFederalism2021', 'secondary', '2021-11-10', ['English'], 'high'],
+]) {
+  assert.ok(frenchMonarchyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a German monarchism reference trail`);
+  assert.ok(JSON.stringify(frenchMonarchyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+const germanMonarchistHistory = frenchMonarchyEntry.sections.find(({ id }) => id === 'history').timeline;
+const germanMonarchistTimeline = germanMonarchistHistory.find(({ period }) => period.startsWith('1871–1918: German Empire'));
+assert.ok(germanMonarchistTimeline, 'the German Empire timeline case must remain visible');
+assert.ok(germanMonarchistTimeline.citations.researchSourceIds.includes('ghdiGermanEmpireConstitution1871'));
+const germanMonarchistVariants = frenchMonarchyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows);
+assert.ok(germanMonarchistVariants.some(({ label }) => label.startsWith('German imperial constitutional monarchy')));
+const germanMonarchistExample = frenchMonarchyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('German Empire and the Hohenzollern'));
+assert.ok(germanMonarchistExample, 'the German Empire must appear as a bounded historical example');
+assert.match(germanMonarchistExample.caveat, /do not establish equal citizenship/);
+const germanMonarchistCriticisms = frenchMonarchyEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(germanMonarchistCriticisms, /The German Empire adds a safeguard/);
+assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('Read the complete German and English editions')));
+
 const goldmanEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['goldmanFurtherRussia1924', 'primary', '1924'],
