@@ -8353,6 +8353,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Chile supplies a bounded Latin American case. Eduardo Frei Montalva’s Christian Democratic administration (1964–1970) presented its project as a “Revolución en Libertad,” combining economic development, education and technical training, solidarity and social justice, political participation, and popular sovereignty. The programme is used here as a dated party–government project, not as a universal definition of Christian democracy or a score for present-day Chile.',
             citations: citations([], ['pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'ferreiraChristianDemocracyChileUruguay2023']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Post-fascist Italy supplies a second bounded case. The 1943 Reconstructive Ideas programme presented political liberty and personal rights as conditions for rebuilding the state, combined Christian inspiration with respect for conscience and religious freedom, and proposed public control or associated management for unavoidable monopolies while rejecting collectivism. The 1948 Constitution was a wider constituent compromise: Forlenza and Thomassen describe Catholic-inspired participation alongside socialist and communist collaboration, while the Senate’s official record supplies the constitutional date and institutional text. This is evidence of Christian-democratic participation in democratic reconstruction, not proof that the party alone authored or implemented the Constitution.',
+            citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
+          },
         ],
       },
       {
@@ -8378,6 +8383,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The Chilean case shifts the emphasis from postwar European social-market reconstruction toward developmental reform and mass incorporation. Frei’s programme linked economic development, education, social justice, participation, and popular sovereignty; the government also pursued agrarian reform, rural unionisation, and literacy campaigns. The historical record treats these measures as both an expansion of peasant political incorporation and a state project that could shape the political consciousness it sought to mobilize. This is a country- and period-specific tension, not evidence that Christian democracy everywhere is either emancipatory or paternalist.',
             citations: citations([], ['memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Italian case shows why Christian democracy should not be reduced to either clerical rule or market liberalism. The 1943 programme combines freedom of conscience, personal rights, anti-monopoly policy, and a rejection of collectivism; Forlenza and Thomassen then trace Catholic-inspired arguments into a Constitution written through cooperation with socialist and communist representatives. The Senate’s constitutional record establishes the legal framework, but party influence, coalition compromise, and later policy outcomes remain distinct historical questions.',
+            citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
           },
           {
             type: 'evidence-note',
@@ -8424,6 +8434,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1930s–1940s: personalism, anti-totalitarianism, and democratic reorientation',
             text: 'Personalist thinkers such as Jacques Maritain argued that Christian social thought should defend the dignity and rights of the person while resisting both fascist sacralization of the nation and communist party-state domination. The period helped develop a language of human rights, pluralist constitutionalism, social responsibility, and democratic participation, although movements and institutions remained diverse and sometimes compromised.',
             citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy', 'oxfordChristianDemocracy']),
+          },
+          {
+            period: '1943–1948: Italian Christian democracy and constitutional reconstruction',
+            text: 'The wartime Reconstructive Ideas programme articulated a Christian-democratic response to the collapse of Fascism: political liberty and personal rights were treated as conditions of reconstruction, while economic policy rejected both unchecked monopoly and collectivist ownership. The 1948 Constitution emerged through a broader constituent compromise in which Catholic-inspired politicians worked with socialist and communist representatives. The Italian case therefore documents a Christian-democratic contribution to constitutional democracy without making the party the sole author of the constitutional order.',
+            citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
           },
           {
             period: '1945–1960s: postwar reconstruction and the Christian-democrat decade',
@@ -8486,6 +8501,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Places the dignity, rights, freedom, and social embeddedness of the person at the center, often with resistance to totalitarianism and state absolutism.',
                 relation: 'Provides an intellectual bridge between Christian ethics and human-rights constitutionalism; it does not settle every economic or cultural question.',
                 citations: citations(['maritainIntegralHumanism'], ['oxfordSocialCatholicismChristianDemocracy', 'cambridgeChristianDemocracy']),
+              },
+              {
+                label: 'Italian post-fascist constitutional Christian democracy, 1943–1948',
+                distinction: 'Combines wartime reconstruction, political liberty, personal rights, Christian social inspiration, anti-monopoly measures, and participation in a constituent republic built through cooperation with socialist and communist forces.',
+                relation: 'A bounded national transition rather than a universal party model. The primary programme records aspirations, the Constitution records a wider settlement, and later government practice requires separate evidence.',
+                citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
               },
               {
                 label: 'Subsidiarity and sphere-based pluralism',
@@ -8571,6 +8592,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023']),
               },
               {
+                name: 'Alcide De Gasperi and the Italian Constituent generation',
+                role: 'Italian Christian-democratic actors who helped move Catholic political thought toward post-fascist democracy and participated in the reconstruction of the republic and Constitution.',
+                caveat: 'The 1943 programme and later scholarship record a political project and one party’s participation, not sole authorship of the Constitution or proof of uniform Catholic political practice. Socialist, communist, liberal, republican, and other actors were also part of the constituent settlement.',
+                citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
+              },
+              {
                 name: 'Pope Leo XIII and Catholic social teaching',
                 role: 'Rerum Novarum made labor, property, worker association, social duties, and the social question central to modern Catholic political thought.',
                 caveat: 'A papal social encyclical is a religious and institutional source, not direct evidence that later parties implemented one uniform economic policy.',
@@ -8601,6 +8628,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'A mass Christian-democratic party linked Catholic social networks, parliamentary coalition government, welfare, anti-communism, and the European project.',
                 caveat: 'The Italian case included clientelism, factionalism, church–party tensions, regional inequality, corruption, and major changes after the First Republic; it is not a simple model.',
                 citations: citations(['maritainIntegralHumanism', 'aquinasMoralPolitical'], ['oxfordChristianDemocratDecade', 'oxfordChristianDemocracyEurope', 'comparativeChristianDemocracy']),
+              },
+              {
+                name: 'Italian Reconstructive Ideas and the 1948 Constitution',
+                period: 'Italy, 1943–1948; wartime programme and post-fascist constituent settlement',
+                match: 'A bounded transition in which Christian-democratic actors joined personal rights, political liberty, religious freedom, anti-monopoly proposals, and social responsibility to a republican Constitution written through cross-party compromise.',
+                caveat: 'The programme is an aspiration and the Constitution is a wider settlement. Neither source by itself establishes later implementation, equal treatment in practice, or a six-axis score for every Italian Christian Democrat or for present-day Italy.',
+                citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
               },
               {
                 name: 'Robert Schuman’s European Coal and Steel proposal',
@@ -8669,6 +8703,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Italian case adds a coalition and attribution safeguard. The 1943 programme expresses one Christian-democratic reconstruction project, while the 1948 Constitution was approved through a constituent assembly in which Catholic-inspired, socialist, communist, liberal, and other traditions negotiated a common republican framework. A constitutional text can therefore display overlap with Christian-democratic principles without being reducible to the party, and party participation cannot by itself prove that rights or social obligations were realized equally in practice.',
+            citations: citations([], ['dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024']),
+          },
+          {
+            type: 'paragraph',
             text: 'Sweet also identifies a difficulty: Maritain offered limited institutional detail for realizing his pluralist polity, and its capacity to combine religious diversity with unity remains debated. Philosophical compatibility is therefore not a demonstrated model of equal participation (section 3.5).',
             citations: citations([], ['sweetMaritainPolitical2019']),
           },
@@ -8707,8 +8746,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['maritainIntegralHumanism', 'aquinasMoralPolitical', 'burkeReflections', 'keynesGeneralTheory', 'lockeLetterToleration', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979', 'sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench'],
-      editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. The Chile addition is a bounded Latin American case: a protected 1965 party publication, an official Spanish-language library overview, and Spanish-, English-, and Portuguese-language scholarship are used to describe the 1964–1970 Revolución en Libertad programme and its agrarian, educational, participatory, and electoral tensions. It does not establish a complete implementation record, a present-day Chile classification, or a universal Latin American model. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
+      researchSourceIds: ['oxfordChristianDemocracy', 'oxfordChristianDemocracyEurope', 'cambridgeChristianDemocracy', 'oxfordSocialCatholicismChristianDemocracy', 'oxfordChristianDemocratDecade', 'dcItalyIdeasReconstructive1943', 'italyConstitution1948', 'forlenzaThomassenChristianDemocracy2024', 'vaticanRerumNovarum', 'vaticanQuadragesimoAnno', 'vaticanSocialDoctrineCompendium', 'euRobertSchuman', 'adenauerHouse', 'bpbChristianDemocraticCVP', 'oxfordPortugalPoliticalCatholicism', 'pdcChileRevolucionLibertad1965', 'memoriaChilenaRevolucionLibertad', 'sanchezBarriaAgrarianReform2021', 'kirkendallFreireFrei2004', 'ferreiraChristianDemocracyChileUruguay2023', 'comparativeChristianDemocracy', 'sepReligionPolitics', 'sepMedieval', 'sepNationalism', 'sepConservatism', 'vdem', 'foreignPolicy', 'cduAhlen1947', 'cduDuesseldorf1949', 'zehenderDuesseldorfHistory', 'seidelChristianSocialCDU1979', 'sweetMaritainPolitical2019', 'vaticanGaudiumSpesFrench1965', 'vaticanReligiousFreedomFrench'],
+      editorialNote: 'The entry treats Christian democracy as a plural and historically changing family. It distinguishes personalist and social-market arguments from clerical rule, theocracy, Christian nationalism, generic conservatism, social democracy, and religious socialism. The Chile addition is a bounded Latin American case: a protected 1965 party publication, an official Spanish-language library overview, and Spanish-, English-, and Portuguese-language scholarship are used to describe the 1964–1970 Revolución en Libertad programme and its agrarian, educational, participatory, and electoral tensions. The Italian addition is a bounded 1943–1948 transition: an Italian primary programme, the Senate’s official constitutional record, and Forlenza and Thomassen’s scholarly interpretation are kept distinct, and the 1948 settlement is not attributed to Christian Democracy alone. Neither case establishes a complete implementation record, a present-day country classification, or a universal model. Scores are didactic composites and should not classify a party or country without dated programme and institutional evidence.',
     },
     researchGaps: [
       'Add original-language Catholic, Protestant, and Orthodox sources plus scholarship in French, German, Italian, Dutch, Portuguese, Spanish, and Latin American political history; record translations and editions separately.',
@@ -8726,6 +8765,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read and collate the complete Spanish text of the Chilean Christian Democratic programme and related 1964–1970 government documents, including party congresses, legislation, presidential speeches, church relations, budget priorities, and electoral records. The protected 1965 publication is represented by catalogue metadata and a link only in this pass.',
       'Extend the Chilean agrarian and educational case through land-distribution records, campesino and rural-union testimony, Mapuche and other Indigenous scholarship, women’s unpaid and paid labor, regional variation, and measurable social outcomes. The selected abstracts establish a research direction, not universal inclusion or reform success.',
       'Compare Chile’s Revolución en Libertad with the Christian Democratic Party of Uruguay and later Chilean party factions, including their responses to polarization, anti-communism, foreign influence, church institutions, the 1973 rupture, and democratic restoration. Do not infer one Latin American Christian-democratic trajectory from Frei’s administration.',
+      'Read and collate the complete Italian 1943 programme, the Camaldoli Code, Constituent Assembly debates, party congress records, and early postwar legislation in Italian. Separate Catholic-inspired arguments from cross-party constitutional compromise, and test claims about social policy, regional inequality, church–state relations, anti-communism, women’s citizenship, and implementation before generalizing from the 1943–1948 transition.',
     ],
   },
   'religious-socialist': {

@@ -396,6 +396,36 @@ assert.ok(chileCriticism, 'the Chilean case needs a criticism and evidence bound
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Spanish text of the Chilean')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Extend the Chilean agrarian and educational case')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Compare Chile’s Revolución en Libertad')));
+for (const [sourceId, role, date, languages] of [
+  ['dcItalyIdeasReconstructive1943', 'primary', '1943', ['Italian']],
+  ['italyConstitution1948', 'primary', '1948-01-01', ['Italian', 'English translation']],
+  ['forlenzaThomassenChristianDemocracy2024', 'secondary', '2024-04-02', ['English']],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Italian Christian-democratic reference trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.review.confidence, 'high');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const italianHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const italianTimeline = italianHistory.find(({ period }) => period.startsWith('1943–1948: Italian Christian democracy'));
+assert.ok(italianTimeline, 'the Italian constitutional reconstruction timeline case must remain visible');
+assert.ok(italianTimeline.citations.researchSourceIds.includes('italyConstitution1948'));
+const italianVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Italian post-fascist constitutional'));
+assert.ok(italianVariant, 'the Italian case must be separated as a dated Christian-democratic variant');
+const italianExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Italian Reconstructive Ideas and the 1948 Constitution');
+assert.ok(italianExample, 'Italy must appear as a bounded Christian-democratic historical example');
+assert.match(italianExample.caveat, /wider settlement/);
+assert.ok(christianCriticisms.some(({ text }) => text?.includes('Italian case adds a coalition and attribution safeguard')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Italian 1943 programme')));
 assert.deepEqual(Object.fromEntries(Object.entries(christianDemocracyEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -5, social: -30, authority: 20, identity: -20, foreign: 15, religion: -62 });
 
 const frenchMonarchyEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
