@@ -2027,6 +2027,37 @@ assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Compare the late Ottoman parliament')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Distinguish Ottoman constitutional monarchy')));
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['siamConstitution1932French', 'primary', '1932-12-10', ['French'], 'medium'],
+  ['sugiyamaSiamRevolution1997', 'secondary', '1997-06-01', ['English'], 'medium'],
+  ['fuwongcharoenConstitutionWorship2018', 'secondary', '2018-01-15', ['English'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Siamese monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const siamHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline;
+const siamTimeline = siamHistory.find(({ period }) => period.startsWith('24 June–10 December 1932'));
+assert.ok(siamTimeline, 'the Siamese constitutional-revolution timeline case must remain visible');
+assert.ok(siamTimeline.citations.researchSourceIds.includes('siamConstitution1932French'));
+const siamVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Siamese limited monarchy'));
+assert.ok(siamVariant, 'the Siamese case must be separated as a dated constitutional variant');
+const siamExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Siam’s 1932 constitutional monarchy');
+assert.ok(siamExample, 'Siam must appear as a bounded historical example');
+assert.match(siamExample.caveat, /not an exact six-axis match/);
+const siamCriticism = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Siam’s 1932 transition adds a second non-European safeguard'));
+assert.ok(siamCriticism, 'the Siamese case needs a criticism and evidence boundary');
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1932 Siamese constitutions')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['hawaiiConstitution1840', 'primary', '1840-10-08', ['English', 'Hawaiian'], 'high'],
   ['hawaiiLegislatureArchive1887', 'primary', '2019', ['English'], 'high'],
   ['hawaiiArchivesLiliuokalani1893', 'primary', '1893', ['English', 'Hawaiian'], 'medium'],
