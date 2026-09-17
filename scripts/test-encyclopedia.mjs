@@ -1135,6 +1135,40 @@ assert.match(philippinesExample.text, /not an exact six-axis match/);
 assert.ok(imperialJapanEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Philippine case adds a safeguard')));
 assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate Philippine, Spanish, and U.S. primary records')));
 
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['actoColonial1930Portugal', 'primary', '1930-07-08', ['Portuguese'], 'high'],
+  ['portugalConstitution1933', 'primary', '1933-02-22', ['Portuguese'], 'high'],
+  ['casteloLusoTropicalistMessage2017', 'secondary', '2017', ['English'], 'high'],
+  ['fonsecaMarcosPortugueseWar2008', 'secondary', '2008', ['English'], 'high'],
+  ['marquesEstadoNovoONU2011', 'secondary', '2011', ['Portuguese'], 'medium'],
+]) {
+  assert.ok(imperialJapanEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Portuguese-case reference trail`);
+  assert.ok(JSON.stringify(imperialJapanEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const estadoNovoTimeline = imperialJapanEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(estadoNovoTimeline.some(({ period }) => period.startsWith('1930–1974 — Portuguese Estado Novo')));
+const estadoNovoVariant = imperialJapanEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Portuguese Estado Novo colonial militarism'));
+assert.ok(estadoNovoVariant, 'Portuguese Estado Novo colonial militarism must be a separate bounded variant');
+const estadoNovoExample = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The Portuguese Estado Novo is a bounded'));
+assert.ok(estadoNovoExample, 'Portuguese Estado Novo must appear as a bounded example');
+assert.match(estadoNovoExample.text, /not an exact six-axis match/);
+const estadoNovoPerson = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('António de Oliveira Salazar'));
+assert.ok(estadoNovoPerson, 'Salazar must appear with a bounded evidence caveat');
+const estadoNovoSafeguard = imperialJapanEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Portuguese case adds a safeguard'));
+assert.ok(estadoNovoSafeguard, 'Portuguese case must add an imperial self-description safeguard');
+assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate the Portuguese, Angolan, Guinean, and Mozambican')));
+
 const weimarEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['ghdiWeimarGerman', 'primary', '1919-08-11'],

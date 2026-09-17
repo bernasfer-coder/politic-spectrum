@@ -10882,6 +10882,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'locSelassieSpeech1936']),
           },
           {
+            period: '1930–1974 — Portuguese Estado Novo, imperial constitutionalism, and colonial war',
+            text: 'The Estado Novo made empire part of the regime’s constitutional and national language. The 1930 Acto Colonial described Portugal’s overseas domains as the Portuguese Colonial Empire, while the 1933 constitutional project incorporated the overseas territories into the definition of the Portuguese nation. After the Second World War, the regime increasingly defended this imperial unity through legal and Luso-Tropicalist arguments at the United Nations, while fighting nationalist movements in Angola, Guinea, and Mozambique from 1961 to 1974. The case combines authoritarian rule, imperial hierarchy, military endurance, and ideological legitimation; it does not make “Portuguese exceptionalism” an accepted description of colonial practice.',
+            citations: citations([], ['actoColonial1930Portugal', 'portugalConstitution1933', 'casteloLusoTropicalistMessage2017', 'fonsecaMarcosPortugueseWar2008', 'marquesEstadoNovoONU2011']),
+          },
+          {
             period: '1945–1970s — Charter order, decolonization, and anti-colonial war',
             text: 'The United Nations Charter articulated sovereign equality, peaceful settlement, territorial integrity, and limits on the use of force, while decolonization movements challenged imperial rule through diplomacy, mass mobilization, civil disobedience, armed struggle, and international law. The end of formal empire did not end unequal economic or military relationships, and anti-colonial force cannot simply be classified as imperialism because its political aim may be self-determination rather than domination of another people.',
             citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'hobsonImperialism'], ['unCharterForce', 'sepColonialism', 'oxfordColonialismEmpireSociology']),
@@ -10954,6 +10959,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023']),
               },
               {
+                label: 'Portuguese Estado Novo colonial militarism and Luso-Tropicalist legitimation, 1930–1974',
+                distinction: 'Uses constitutional claims of imperial unity, authoritarian administration, overseas military force, and a changing Luso-Tropicalist narrative to defend Portuguese rule in Africa and elsewhere.',
+                relation: 'A bounded Lusophone case in which imperial ideology and military endurance reinforced one another, but neither the official language nor later scholarship makes colonial rule consensual, racially equal, or uniform across Angola, Guinea, Mozambique, and other territories.',
+                citations: citations([], ['actoColonial1930Portugal', 'portugalConstitution1933', 'casteloLusoTropicalistMessage2017', 'fonsecaMarcosPortugueseWar2008', 'marquesEstadoNovoONU2011']),
+              },
+              {
                 label: 'Humanitarian or liberal interventionism',
                 distinction: 'Justifies external force through protection of civilians, human rights, collective security, or international order rather than conquest or permanent rule.',
                 relation: 'The distinction from imperialism depends on authorization, purpose, duration, consent, accountability, post-conflict control, and whether affected people gain equal political agency; benevolent language is not sufficient evidence.',
@@ -11013,6 +11024,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Portuguese Estado Novo is a bounded European–African example of imperial militarism under authoritarian rule. The 1930 Acto Colonial and 1933 constitutional project made overseas possession part of the regime’s official definition of nation and empire. Castelo’s study shows how Luso-Tropicalism was later used in media and state narratives to present Portuguese colonialism as exceptional, while Fonseca and Marcos document the French and West German support that helped sustain the thirteen-year colonial wars. Marques’s Portuguese-language research adds the diplomatic and legal arguments used at the United Nations before the regime’s 1974 collapse. This is not an exact six-axis match for Portugal, a score for the Portuguese-speaking world, or evidence that official plural-continent language described equal political standing.',
+            citations: citations([], ['actoColonial1930Portugal', 'portugalConstitution1933', 'casteloLusoTropicalistMessage2017', 'fonsecaMarcosPortugueseWar2008', 'marquesEstadoNovoONU2011']),
+          },
+          {
+            type: 'paragraph',
             text: 'Carl von Clausewitz, Alfred Thayer Mahan, John A. Hobson, Hans Morgenthau, John Mearsheimer, Benito Mussolini, Frantz Fanon, and anti-colonial writers represent different positions and analytical uses of military power. Clausewitz and Mahan are strategic or historical authorities, Hobson is a critical political economist, realists explain competition, fascist texts justify authoritarian expansion, and Fanon analyzes colonial violence and liberation. Listing them together is a map of debate, not a claim that they support one ideology.',
             citations: citations(['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth'], ['oxfordImperialism', 'oxfordMilitarism', 'oxfordColonialismEmpireSociology']),
           },
@@ -11036,6 +11052,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'A ruler’s diplomatic challenge to Italian conquest, not an advocate of this compound profile.',
                 caveat: 'This speech does not represent every Ethiopian community or establish his domestic politics, complete career, or six-axis position.',
                 citations: citations([], ['selassieLeagueAppeal1936']),
+              },
+              {
+                name: 'António de Oliveira Salazar — Estado Novo regime leader',
+                role: 'Portuguese head of government whose regime made imperial unity and the defense of overseas rule central to its constitutional and foreign-policy claims.',
+                caveat: 'The official constitutional record anchors regime language, not Salazar’s complete thought, popular support, or the diverse experiences of people under Portuguese rule; this entry does not treat him as representative of all Portuguese society.',
+                citations: citations([], ['portugalConstitution1933', 'marquesEstadoNovoONU2011']),
               },
             ],
           },
@@ -11136,6 +11158,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Portuguese case adds a safeguard against confusing imperial self-description with equal citizenship or peaceful administration. The Acto Colonial and 1933 constitutional project are evidence of official legal claims; Castelo analyzes the later media production of Luso-Tropicalist exceptionalism; and Fonseca, Marcos, and Marques document the regime’s effort to preserve colonial rule through diplomacy, external military support, and war. These sources support a bounded interpretation of authoritarian imperial endurance, not a claim that one ideology explains every Portuguese colony, that all Portuguese citizens agreed, or that official “multiracial” language resolved coercive hierarchy.',
+            citations: citations([], ['actoColonial1930Portugal', 'portugalConstitution1933', 'casteloLusoTropicalistMessage2017', 'fonsecaMarcosPortugueseWar2008', 'marquesEstadoNovoONU2011']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, historical analogies are easy to abuse. Calling a contemporary government “imperialist” or “militarist” should identify the specific policy, institution, period, and evidence rather than functioning as a general insult. The card should retain uncertainty when intentions are disputed, avoid country-level shortcuts, and make clear that military force can be used by democratic, authoritarian, revolutionary, anti-colonial, or humanitarian actors for different ends and with different consequences.',
             citations: citations(['clausewitzOnWar', 'hobsonImperialism', 'fanonWretchedEarth'], ['oxfordImperialism', 'oxfordMilitarism', 'foreignPolicy', 'unCharterForce']),
           },
@@ -11144,8 +11171,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars', 'arendtTotalitarianism', 'burkeReflections', 'kantPerpetualPeace'],
-      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022', 'treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023'],
-      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context. The Imperial Japan addition is a bounded pre-1945 Asian case using an official constitutional presentation, Japanese archival records, and two academic interpretations; it does not establish a whole-country score, a single causal account, or equal experience across Japan’s subject territories. The Ethiopia addition is a bounded 1935–1941 African and anti-colonial case using a Library of Congress provenance record and three attributed scholarly leads; it does not establish a national score, uniform local response, or complete Ethiopian, Italian or League history. The Philippines addition is a bounded 1898–1914 conquest and military-governance case with a separate post-1946 basing question; it does not establish a whole-country score, a single uninterrupted imperial relationship, or the experience of every Filipino, Moro, Lumad, Spanish or U.S. actor.',
+      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022', 'treatyParisPhilippines1898', 'usStatePhilippineWar1899', 'charbonneauColonizingWorkers2021', 'laffertyPhilippineBases2023', 'actoColonial1930Portugal', 'portugalConstitution1933', 'casteloLusoTropicalistMessage2017', 'fonsecaMarcosPortugueseWar2008', 'marquesEstadoNovoONU2011'],
+      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context. The Imperial Japan addition is a bounded pre-1945 Asian case using an official constitutional presentation, Japanese archival records, and two academic interpretations; it does not establish a whole-country score, a single causal account, or equal experience across Japan’s subject territories. The Ethiopia addition is a bounded 1935–1941 African and anti-colonial case using a Library of Congress provenance record and three attributed scholarly leads; it does not establish a national score, uniform local response, or complete Ethiopian, Italian or League history. The Philippines addition is a bounded 1898–1914 conquest and military-governance case with a separate post-1946 basing question; it does not establish a whole-country score, a single uninterrupted imperial relationship, or the experience of every Filipino, Moro, Lumad, Spanish or U.S. actor. The Portuguese addition is a bounded 1930–1974 European–African case using Portuguese official-gazette records, English and Portuguese scholarship, and a peer-reviewed study of external military support; it does not establish a national score, uniform colonial experience, or that Luso-Tropicalist rhetoric matched political practice.',
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Turkish, Hindi, Chinese, Japanese, Korean, and African languages on empire, militarism, military labor, and anti-colonial political thought.',
@@ -11167,6 +11194,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read the complete Korea annexation treaty record in Japanese and Korean, including diplomatic pressure, Korean constitutional and public responses, and later historiography. The official archival translation documents the treaty’s legal form but does not resolve consent, coercion, legitimacy, or lived consequences.',
       'Extend the Taiwan case through Taiwanese-language and Japanese-language testimony, colonial budgets, police and military records, education and labor evidence, Indigenous histories, and competing scholarship. Shirane’s selected open sections illuminate a regional gateway and subject agency but do not establish comprehensive outcomes or erase coercion.',
       'Collate Philippine, Spanish, and U.S. primary records on the Treaty of Paris, Filipino Republic, Philippine-American War, Moro Province, military government, labor and land policy, and post-1946 base agreements. Add Filipino-language, Tagalog, Cebuano, Tausūg, Maranao, and Lumad scholarship; test Charbonneau’s regional findings and Lafferty’s legal argument against local archives and treaty practice before extending the case or assigning historical score ranges.',
+      'Collate the Portuguese, Angolan, Guinean, and Mozambican primary records behind the Acto Colonial, constitutional revisions, UN arguments, military procurement, and the 1961–1974 wars. Add African-language testimony and scholarship from the liberation movements and affected communities; Castelo, Fonseca–Marcos, and Marques provide bounded entry points but do not resolve regional variation, coercion, or the relationship between Luso-Tropicalist rhetoric and practice.',
     ],
   },
   'national-socialist': {
