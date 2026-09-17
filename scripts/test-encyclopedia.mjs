@@ -2413,6 +2413,27 @@ assert.deepEqual(godesbergGerman.languages, ['German'], 'the German edition need
 assert.ok(godesbergEnglish.relationships.profileEntries.includes('encyclopedia:democratic-socialist'), 'metadata repair must preserve the existing neighboring-entry backlink');
 const socialDemocraticHistory = socialDemocraticEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(socialDemocraticHistory.find(({ period }) => period.startsWith('1960:'))?.citations.researchSourceIds.includes('bpbSpdProgrammatics'), 'the later foreign-policy clarification must disclose its secondary source');
+for (const [sourceId, evidenceRole] of [
+  ['fesSdpDdrFounding1989', 'primary'],
+  ['fischerSpdGermanUnity1989', 'secondary'],
+  ['starkeGermanWelfareState2022', 'secondary'],
+]) {
+  assert.ok(socialDemocraticEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a social-democratic reference trail`);
+  assert.ok(JSON.stringify(socialDemocraticEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish documents from interpretation`);
+  assert.equal(record.accessDate, '2026-09-17', `${sourceId} needs its consultation date`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its publication boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an unreviewed quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:social-democratic'), `${sourceId} needs an encyclopedia backlink`);
+}
+assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1989–1990:')), 'the East German SDP trajectory needs a dated history row');
+assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1990–present:')), 'the post-reunification welfare transformation needs a dated history row');
+const socialDemocraticExamples = socialDemocraticEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries);
+assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('Social Democratic Party in the GDR')), 'the East German SDP needs a bounded documented example');
+assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('German welfare-state transformation')), 'post-reunification welfare transformation needs a bounded example');
 assert.ok(socialDemocraticEntry.researchGaps.some((gap) => gap.includes('complete programme')), 'excerpt limits must remain visible');
 
 const civicEntry = ENCYCLOPEDIA_ENTRIES['civic-nationalist'];
