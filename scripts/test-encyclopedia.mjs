@@ -429,6 +429,34 @@ assert.ok(frenchRestorationExample, 'the Restoration and July Monarchy must appe
 assert.match(frenchRestorationExample.caveat, /not equal citizenship/);
 assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete 1814 and 1830 Charters')));
 assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('Read Lauba’s complete legal-history study')));
+assert.ok(frenchMonarchyEntry.references.researchSourceIds.includes('japanMeijiConstitution1889'));
+assert.ok(JSON.stringify(frenchMonarchyEntry.sections).includes('japanMeijiConstitution1889'));
+for (const [sourceId, publicationDate] of [
+  ['takiiMeijiConstitutionalRevolution2023', '2023-03-25'],
+  ['kokazeMeijiPoliticalSpace2011', '2011-08-30'],
+]) {
+  assert.ok(frenchMonarchyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Meiji monarchism reference trail`);
+  assert.ok(JSON.stringify(frenchMonarchyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, 'secondary');
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.review.confidence, 'high');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+const meijiHistory = frenchMonarchyEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(meijiHistory.some(({ period }) => period.startsWith('1881–1890: Meiji Japan')));
+const meijiVariant = frenchMonarchyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Meiji imperial constitutional monarchy'));
+assert.ok(meijiVariant, 'Meiji imperial constitutional monarchy must be a separate variant');
+const meijiExample = frenchMonarchyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Meiji Japan'));
+assert.ok(meijiExample, 'Meiji Japan must appear as a bounded historical example');
+assert.match(meijiExample.caveat, /not a present-day country match/);
+assert.deepEqual(Object.values(frenchMonarchyEntry.dimensionInterpretations).map(({ score }) => score), [-12, -48, 52, -42, -18, -52]);
 
 const goldmanEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
@@ -983,7 +1011,10 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+  const expectedProfileEntries = ['japanMeijiConstitution1889', 'pidaReeseImperialJapan2026'].includes(sourceId)
+    ? ['encyclopedia:monarchist', 'encyclopedia:militarist-imperialist']
+    : ['encyclopedia:militarist-imperialist'];
+  assert.deepEqual(record.relationships.profileEntries, expectedProfileEntries);
 }
 const japanTimeline = imperialJapanEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(japanTimeline.find(({ period }) => period.startsWith('1889–1910 — Imperial Japan')));

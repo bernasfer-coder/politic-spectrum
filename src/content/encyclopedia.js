@@ -7225,6 +7225,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Portugal supplies a bounded Iberian case: the 1822 Constitution combined national representation, separation of powers, and a catalogue of rights with exclusions that included enslaved people from Portuguese citizenship; the 1826 Charter then represented a different constitutional settlement with a stronger royal role. The official history describes these as part of a contested constitutional monarchy, not a single stable or fully inclusive model.',
             citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Meiji Japan supplies a bounded East Asian comparison. The National Diet Library’s official presentation describes a hereditary imperial sovereignty framed by a written constitution, ministers responsible for carrying it out, an Imperial Diet, and a restricted amendment initiative. Takii’s history situates that settlement after the 1881 crisis and the pledge to create a national assembly, while Kokaze emphasizes the ritual and institutional remaking of political space in 1889. This was constitutional monarchy with imperial sovereignty, not a simple ceremonial crown or a direct copy of the British model.',
+            citations: citations([], ['japanMeijiConstitution1889', 'takiiMeijiConstitutionalRevolution2023', 'kokazeMeijiPoliticalSpace2011']),
+          },
         ],
       },
       {
@@ -7303,6 +7308,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Meiji settlement also demonstrates why a written constitution does not make a crown ceremonial. The official text combined hereditary imperial sovereignty with a Diet, ministerial responsibility, rights and property language limited by constitutional law, and a restricted amendment procedure. Takii’s account connects the constitution to the 1881 political crisis and to a Prussian-style design, while Kokaze highlights the ceremonies and institutional practices through which the new political space was made visible. The result belongs in the family of constitutional monarchies, but its imperial sovereignty and later military-autonomy problems require a separate historical analysis rather than a British-parliamentary shorthand.',
+            citations: citations([], ['japanMeijiConstitution1889', 'takiiMeijiConstitutionalRevolution2023', 'kokazeMeijiPoliticalSpace2011', 'pidaReeseImperialJapan2026']),
+          },
+          {
+            type: 'paragraph',
             text: 'Article 47 links appointment of the head of government to the party finishing first in lower-house elections; article 88 requires confidence from an absolute majority of that chamber’s members. Articles 48–49 nevertheless retain a royal-chaired Council of Ministers for strategic matters. It is distinct from the head-of-government-chaired Council of Government in article 92; delegation of chairing a specified ministerial meeting is possible. Neither “the king appoints” nor “parliament gives confidence” alone describes the arrangement.',
             citations: citations([], ['constituteMorocco2011']),
           },
@@ -7373,6 +7383,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
           },
           {
+            period: '1881–1890: Meiji Japan’s constitutional-monarchical formation',
+            text: 'The 1881 political crisis and the Freedom and People’s Rights pressure led the Meiji government to promise a national assembly. Takii describes the resulting design as a Prussian-style constitutional monarchy, accompanied by the Imperial Household Law, Parliamentary Law, election and accounting laws, and the House of Peers Ordinance. The Constitution was promulgated on 11 February 1889 and the Imperial Diet was scheduled to open in 1890; Kokaze emphasizes that promulgation also created a new ritual and symbolic political space. The case demonstrates institutional constitutionalization without reducing imperial sovereignty to parliamentary ceremonialism.',
+            citations: citations([], ['japanMeijiConstitution1889', 'takiiMeijiConstitutionalRevolution2023', 'kokazeMeijiPoliticalSpace2011']),
+          },
+          {
             period: '1847: Brazil creates a president of the Council of Ministers',
             text: 'Decree no. 523 of 20 July created the office and instructed the Council to prepare regulations for imperial approval. Its short text does not itself prescribe a complete system of parliamentary confidence. The creation of an office, the crown’s constitutional powers, and subsequent cabinet practice must therefore be studied separately.',
             citations: citations([], ['brazilCouncilDecree1847']),
@@ -7436,6 +7451,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'A historical case in which liberal constitutional rights and representative institutions coexisted with a royal constitutional settlement, civil conflict, restricted citizenship, and changing electoral rules.',
                 relation: 'It demonstrates that “constitutional monarchy” is not one fixed position: the 1822 Constitution, 1826 Charter, Liberal Civil War, and later reforms belong to different institutional moments and should not be collapsed into a single score or treated as a fully democratic model.',
                 citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
+              },
+              {
+                label: 'Meiji imperial constitutional monarchy, 1889–1945',
+                distinction: 'A hereditary imperial system joined a written constitution, a Diet, ministerial responsibility, and formal rights to a doctrine of imperial sovereignty and a distinctive household law.',
+                relation: 'It is a non-European constitutional-monarchical variant whose legal form cannot be reduced to either absolute monarchy or British ceremonial parliamentarism. The 1889 design, later interpretation, military autonomy, and colonial rule must be analyzed as separate evidence layers.',
+                citations: citations([], ['japanMeijiConstitution1889', 'takiiMeijiConstitutionalRevolution2023', 'kokazeMeijiPoliticalSpace2011', 'pidaReeseImperialJapan2026']),
               },
               {
                 label: 'Brazilian reception of moderating-power doctrine, 1822–1824',
@@ -7580,6 +7601,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
               },
               {
+                name: 'Meiji Japan’s imperial constitutional monarchy',
+                period: 'Japan, 1889–1945; formation in 1881–1890',
+                match: 'The Meiji Constitution joined hereditary imperial sovereignty to a written constitutional order, an Imperial Diet, responsible ministers, formal rights language, and a distinct Imperial Household Law.',
+                caveat: 'The case is not a present-day country match or a simple synonym for militarism. The legal design, the evolving relationship among emperor, cabinet, Diet and military, and Japan’s colonial rule require separate primary and scholarly evidence; the sources here establish a bounded constitutional-formation case.',
+                citations: citations([], ['japanMeijiConstitution1889', 'takiiMeijiConstitutionalRevolution2023', 'kokazeMeijiPoliticalSpace2011', 'pidaReeseImperialJapan2026']),
+              },
+              {
                 name: 'Late Ottoman constitutional monarchy and Meşrutiyet',
                 period: 'Ottoman Empire, 1876–1909; constitutional institutions continued through 1918',
                 match: 'The Sultanate was joined to a written constitution and bicameral parliament in 1876, suspended after the First Constitutional Period, then restored in 1908 with elections and amended in 1909 to strengthen ministerial and parliamentary accountability.',
@@ -7643,6 +7671,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Portugal’s nineteenth-century experience makes the same caution concrete: formal rights and representative institutions coexisted with a royal constitutional settlement, exclusions from citizenship, civil conflict over sovereignty, and electoral rules that were repeatedly revised. This does not make the period simply “undemocratic” or “liberal”; it shows why constitutional text, franchise, social inclusion, and political practice must be assessed separately.',
             citations: citations([], ['portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Meiji Japan adds a non-European warning against treating constitutional monarchy as one settled institutional meaning. The emperor’s hereditary sovereignty, ministerial responsibility, Diet, household law, and formal rights language were arranged in a system whose later interpretation and military relationships were contested. The constitutional text is evidence of institutional design; it is not by itself evidence of equal citizenship, civilian control, parliamentary supremacy, or benign imperial practice. Those outcomes require separate records and period-specific scholarship.',
+            citations: citations([], ['japanMeijiConstitution1889', 'takiiMeijiConstitutionalRevolution2023', 'kokazeMeijiPoliticalSpace2011', 'pidaReeseImperialJapan2026']),
           },
           {
             type: 'paragraph',
@@ -7714,8 +7747,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'hobbesLeviathan', 'lockeSecondTreatise', 'lockeLetterToleration', 'burkeReflections', 'bagehotEnglishConstitution', 'nabucoAbolitionism'],
-      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract', 'assembleeCharterJuly1830', 'senatRestorationChamber1814', 'laubaRestorationLegal2010', 'portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996', 'ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013'],
-      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. The Portuguese addition is a bounded Iberian case: official Portuguese sources, a primary-text link, and a Portuguese scholarly abstract/metadata are used with their limits visible; it does not establish a national score or a complete account of participation. The Ottoman addition is a bounded Middle Eastern and imperial case: a contemporary diplomatic record, official Turkish parliamentary history, and two scholarly studies establish the constitutional sequence from 1876 through 1909 without claiming a complete Ottoman-language collation or a full account of provincial, communal, wartime, or colonial practice. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; the Restoration and July Monarchy addition uses French institutional histories and Lauba’s abstract-level legal-history lead, not a full Charter edition, parliamentary series or monograph review.',
+      researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'oxfordConstitutionalMonarchy', 'oxfordMonarchyConstitution', 'ukParliamentCrown', 'journalDemocraticMonarchies', 'sepMedieval', 'sepReligionPolitics', 'sepColonialism', 'foreignPolicy', 'vdem', 'openTextbook', 'ohchrMinorityRights', 'brazilConstitution1824', 'lynchModeratingPower2005', 'brazilCouncilDecree1847', 'ferrazImperialCabinets2017', 'moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015', 'franceConstitution1791', 'barnaveRoyalInviolability1791', 'caianiLouisXVI2012Abstract', 'assembleeCharterJuly1830', 'senatRestorationChamber1814', 'laubaRestorationLegal2010', 'portugalConstitution1822', 'portugalCharter1826', 'portugalConstitutionalMonarchyJustice', 'monicaElectoralReforms1996', 'japanMeijiConstitution1889', 'takiiMeijiConstitutionalRevolution2023', 'kokazeMeijiPoliticalSpace2011', 'pidaReeseImperialJapan2026', 'ottomanConstitution1876', 'tbmmOttomanConstitutionHistory', 'kayaliOttomanElections1919', 'isikselAuthoritarianConstitutionalism2013'],
+      editorialNote: 'The entry treats monarchism as an institutional and ideological family rather than a single left–right position. It distinguishes absolute, limited, parliamentary, elective, sacred, imperial, and social-constitutional variants, and it separates the presence of a crown from the actual distribution of political power. Scores are didactic composites, not measurements of every monarchy, royalist movement, or citizen. The Brazilian texts establish formal provisions; Lynch and Ferraz offer distinct later interpretations of their reception and operation. The Portuguese addition is a bounded Iberian case: official Portuguese sources, a primary-text link, and a Portuguese scholarly abstract/metadata are used with their limits visible; it does not establish a national score or a complete account of participation. The Ottoman addition is a bounded Middle Eastern and imperial case: a contemporary diplomatic record, official Turkish parliamentary history, and two scholarly studies establish the constitutional sequence from 1876 through 1909 without claiming a complete Ottoman-language collation or a full account of provincial, communal, wartime, or colonial practice. The Meiji addition is a bounded East Asian constitutional-formation case: the National Diet Library primary presentation, Takii’s scholarly account of the 1881–1889 formation, Kokaze’s study of political space, and a later civilian-control article are not interchangeable evidence of legal design, ritual legitimacy, institutional practice, or imperial rule. English prose is original paraphrase, not a certified translation. Selected PDF pages were checked for the Brazilian research, not every cited archival record or book. The French 1791 addition uses selected institutional transcriptions and Caiani’s repository abstract only; the Restoration and July Monarchy addition uses French institutional histories and Lauba’s abstract-level legal-history lead, not a full Charter edition, parliamentary series or monograph review.',
     },
     researchGaps: [
       'Add French-language scholarship on divine-right monarchy, the French constitutional monarchies of 1791–1792, the Restoration, the July Monarchy, the Second Empire, royalism, republicanism, colonial monarchy, and the constitutional doctrines of the nineteenth century.',
@@ -7740,6 +7773,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read and collate the complete Portuguese 1822 Constitution and 1826 Charter, including the original Portuguese and official Gazette or facsimile versions. Test the summary-level claims here against the full articles, amendments, constitutional practice, and competing Portuguese historiography before expanding the case.',
       'Research Portuguese electoral law, parliamentary debates, press, suffrage exclusions, slavery and colonial subjecthood, and the 1832–1834 Liberal Civil War through local scholarship and primary records. Mónica’s article was represented through its abstract and metadata in this pass; the full article and underlying electoral evidence remain open.',
       'Add Portuguese and Spanish scholarship on Estado–Igreja relations, republicanism, Miguelism, regional and colonial monarchy, women’s political claims, and the transition to the 1910 Republic. Keep formal constitutional rights, lived access, and later republican memory as separate evidence layers.',
+      'Collate the Japanese original of the Meiji Constitution, Imperial Household Law, Diet and electoral laws, ministerial and military provisions, and later constitutional interpretations in Japanese. Compare the 1889 design with implementation, colonial subjecthood, gender and citizenship, and the post-1905 and post-1931 military record before extending this bounded formation case or assigning a separate historical score.',
     ],
   },
   theocratic: {
