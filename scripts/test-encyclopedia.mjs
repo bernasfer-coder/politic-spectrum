@@ -2159,6 +2159,39 @@ assert.ok(hawaiiExample, 'the Hawaiian Kingdom must appear as a bounded historic
 assert.match(hawaiiExample.caveat, /must not be used as a simple present-day country match/);
 assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Hawaiian case adds a colonial')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Hawaiian-language and English editions')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['mjpEthiopiaConstitution1931French', 'primary', '1931-07-16', ['French'], 'high'],
+  ['zemelakEthiopiaConstitutionalism2020', 'secondary', '2021', ['English'], 'high'],
+  ['haileEthiopianConstitutions2005', 'secondary', '2005', ['English'], 'medium'],
+  ['ethiopiaMonarchyImperialDomination2024', 'secondary', '2024', ['English'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Ethiopian monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish constitutional witness from interpretation`);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const ethiopianMonarchyTimeline = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1931–1974: Ethiopian imperial monarchy'));
+assert.ok(ethiopianMonarchyTimeline, 'the Ethiopian imperial constitutional-monarchy timeline case must remain visible');
+assert.ok(ethiopianMonarchyTimeline.citations.researchSourceIds.includes('mjpEthiopiaConstitution1931French'));
+const ethiopianMonarchyVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Ethiopian imperial constitutional monarchy'));
+assert.ok(ethiopianMonarchyVariant, 'the Ethiopian case must be separated as a dated constitutional variant');
+const ethiopianMonarchyExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Ethiopian imperial monarchy'));
+assert.ok(ethiopianMonarchyExample, 'Ethiopia must appear as a bounded historical example');
+assert.match(ethiopianMonarchyExample.caveat, /bounded African historical example/);
+const ethiopianMonarchyPerson = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name === 'Haile Selassie I');
+assert.ok(ethiopianMonarchyPerson, 'Haile Selassie must be identified as a person associated with the case');
+const ethiopianMonarchySafeguard = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Ethiopian case warns against'));
+assert.ok(ethiopianMonarchySafeguard, 'the Ethiopian case needs a constitutional-form and implementation safeguard');
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Amharic, French, and English editions')));
 
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
