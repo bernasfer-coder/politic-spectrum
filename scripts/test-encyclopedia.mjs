@@ -1442,6 +1442,8 @@ assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Extend t
 for (const [sourceId, evidenceRole, publicationDate, language, confidence] of [
   ['treatyParisPhilippines1898', 'primary', '1898-12-10', 'English', 'high'],
   ['usStatePhilippineWar1899', 'secondary', '2013-02-26', 'English', 'medium'],
+  ['malolosConstitution1899', 'primary', '1899-01-20', 'English', 'medium'],
+  ['dioknoPeacePhilippineWar1997', 'secondary', '1997-03', 'English', 'medium'],
   ['charbonneauColonizingWorkers2021', 'secondary', '2021-03-29', 'English', 'high'],
   ['laffertyPhilippineBases2023', 'secondary', '2023', 'English', 'medium'],
 ]) {
@@ -1461,13 +1463,19 @@ for (const [sourceId, evidenceRole, publicationDate, language, confidence] of [
 }
 const philippinesTimeline = imperialJapanEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(philippinesTimeline.some(({ period }) => period.startsWith('1898–1914 — U.S. conquest')));
+assert.ok(philippinesTimeline.some(({ period }) => period.startsWith('1898–1902 — Malolos constitutionalism')));
 const philippinesVariant = imperialJapanEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('U.S. Philippine colonial militarism'));
 assert.ok(philippinesVariant, 'Philippine colonial militarism must be a separate bounded variant');
+const malolosVariant = imperialJapanEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Filipino anti-colonial constitutional defense'));
+assert.ok(malolosVariant, 'the Malolos constitutional project must remain a distinct counter-position');
 const philippinesExample = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The U.S. Philippines case'));
 assert.ok(philippinesExample, 'Philippine case must appear as a bounded example');
 assert.match(philippinesExample.text, /not an exact six-axis match/);
+const malolosExample = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The Malolos constitutional project is a bounded'));
+assert.ok(malolosExample, 'the Malolos constitutional project must appear as a bounded example');
 assert.ok(imperialJapanEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Philippine case adds a safeguard')));
 assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Collate Philippine, Spanish, and U.S. primary records')));
+assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Read the Malolos Constitution in its original Spanish')));
 
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['actoColonial1930Portugal', 'primary', '1930-07-08', ['Portuguese'], 'high'],
