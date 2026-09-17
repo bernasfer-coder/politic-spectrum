@@ -2962,6 +2962,43 @@ assert.match(qajarSafeguard.text, /formal rights and practical power/);
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Persian originals and early printings')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Open and compare the Persian and English constitutional links')));
 
+for (const [sourceId, evidenceRole, publicationDate, confidence] of [
+  ['nepalConstitution1990', 'primary', '1990-11-09', 'medium'],
+  ['manandharNepalMonarchy2014', 'secondary', '2014-12-16', 'medium'],
+  ['malagodiNepalMonarchy2011', 'secondary', '2011-10-13', 'medium'],
+  ['parajuleeNepalHybrid2010', 'secondary', '2010-01-21', 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Nepal monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs Nepal claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+const nepalHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline;
+const nepalTimeline = nepalHistory.find(({ period }) => period.startsWith('1990–2008: Nepal’s constitutional monarchy'));
+assert.ok(nepalTimeline, 'the Nepal constitutional-monarchy transition must remain visible');
+assert.ok(nepalTimeline.citations.researchSourceIds.includes('nepalConstitution1990'));
+assert.ok(nepalTimeline.citations.researchSourceIds.includes('parajuleeNepalHybrid2010'));
+const nepalVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Nepali constitutional monarchy'));
+assert.ok(nepalVariant, 'the Nepal case must be separated as a dated constitutional variant');
+const nepalMonarchistExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Nepal’s constitutional-monarchy transition'));
+assert.ok(nepalMonarchistExample, 'Nepal must appear as a bounded historical example');
+assert.match(nepalMonarchistExample.caveat, /not a single causal account/);
+const nepalPerson = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('King Birendra'));
+assert.ok(nepalPerson, 'the Nepal transition must identify its monarchs with a bounded caveat');
+const nepalSafeguard = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Nepal’s sequence adds a safeguard'));
+assert.ok(nepalSafeguard, 'Nepal must add a constitutional-form and implementation safeguard');
+assert.match(nepalSafeguard.text, /monarchy alone caused Nepal’s crisis/);
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Nepali original and official English witness')));
+
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['bhutanConstitution2008', 'primary', '2008-07-18', ['English', 'Dzongkha'], 'high'],
   ['dorjiProgressiveMonarchy2023', 'secondary', '2023-01-30', ['English'], 'medium'],
