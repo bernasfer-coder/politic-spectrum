@@ -2006,6 +2006,28 @@ for (const [sourceId, evidenceRole, publicationDate] of [
     assert.equal(record.review.confidence, 'medium', `${sourceId} must retain its limited review confidence`);
   }
 }
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['portugalConstitutionalBases1822', 'primary', '1821-03'],
+  ['lealPortugueseLiberalism1820', 'secondary', '2020-12'],
+  ['sousaPortugueseLiberalCourts2022', 'secondary', '2022-12'],
+]) {
+  assert.ok(classicalLiberalEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a classical-liberal reference trail`);
+  assert.ok(JSON.stringify(classicalLiberalEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must preserve evidence role`);
+  assert.equal(record.publicationDate, publicationDate, `${sourceId} needs its historical date`);
+  assert.equal(record.accessDate, '2026-09-17', `${sourceId} needs its consultation date`);
+  assert.deepEqual(record.languages, ['Portuguese'], `${sourceId} needs its source language`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its rights boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:classical-liberal'), `${sourceId} needs an encyclopedia backlink`);
+}
+const portugueseLiberalExample = classicalLiberalEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'Portuguese Liberal Revolution and Vintismo');
+assert.ok(portugueseLiberalExample, 'classical-liberal must retain the bounded Portuguese Vintist case');
+assert.match(portugueseLiberalExample.caveat, /does not establish equal citizenship/);
+assert.ok(classicalLiberalEntry.researchGaps.some((gap) => gap.includes('complete Portuguese constitutional texts')), 'Portuguese constitutional follow-up must remain open');
 const tocquevilleEssay = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-tocquevilleAlgeria1841French');
 assert.match(tocquevilleEssay.description, /not a verified first-publication date/);
 assert.match(tocquevilleEssay.description, /12 March 2002/, 'digital edition and text dates must stay distinct');

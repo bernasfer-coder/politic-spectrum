@@ -2550,6 +2550,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The territorial reach of rights also matters. Tocqueville’s report of 28 May 1847, speaking for a parliamentary commission, criticizes land dispossession and damage to Muslim educational institutions in Algeria. Yet it preserves French domination and rejects treating Muslim subjects in every circumstance as equal fellow citizens. Its proposed protection against abuses is therefore not a demand for equal citizenship or withdrawal. These are the report’s claims and prescriptions, not an independent audit of colonial conditions.',
             citations: citations([], ['tocquevilleAfricaReport1847French']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Portuguese Liberal Revolution of 1820 is a useful constitutional boundary case. The Cortes and the 1821 constitutional bases articulated national sovereignty, a hereditary constitutional monarchy, representative lawmaking, and a continuing Catholic establishment; Leal interprets the later 1826 and 1852 settlements as pragmatic and consensual adaptations after the short-lived 1822 experiment. Sousa shows that the same liberal transformation sought to reorganize the relationship between civil authority and the secular clergy. This is evidence of a dated constitutional project, not proof that Portuguese liberalism achieved equal citizenship or stable implementation across the former Portuguese monarchy.',
+            citations: citations([], ['portugalConstitutionalBases1822', 'lealPortugueseLiberalism1820', 'sousaPortugueseLiberalCourts2022']),
+          },
         ],
       },
       {
@@ -2570,6 +2575,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1789–1819: revolution and modern civil liberty',
             text: 'Revolutionary upheaval forced liberals to confront the relationship between universal rights, popular sovereignty, inherited institutions, and coercive political mobilization. Benjamin Constant’s French liberal account distinguished the private and representative liberties of modern citizens from the direct collective sovereignty associated with ancient republics, while warning that modern states could still threaten individual independence.',
             citations: citations(['constantLibertyModerns', 'lockeSecondTreatise'], ['sepLiberalism', 'sepLibertyPositiveNegative']),
+          },
+          {
+            period: '1820–1823: Portuguese Liberal Revolution and Vintismo',
+            text: 'The Revolution of 24 August 1820 opened a short constitutional experiment. Portuguese liberals convened elected Cortes, articulated national sovereignty, and produced the 1822 Constitution; Leal emphasizes that parliamentary supremacy was later revised after counter-revolution and political conflict. The constitutional bases and later scholarship show an attempt to limit royal authority, but the brief duration and reversal of the experiment remain part of the case.',
+            citations: citations([], ['portugalConstitutionalBases1822', 'lealPortugueseLiberalism1820']),
+          },
+          {
+            period: '1821–1822: liberal Cortes and the religious question',
+            text: 'The Portuguese Cortes treated reform of the clergy and the Church–state relationship as part of dismantling the Ancien Régime. Sousa describes efforts to place the secular clergy under stronger civil regulation while the Cortes worked on the liberal constitution. This shows that classical liberal constitutionalism could combine religious establishment in the constitutional text with an assertive state policy toward ecclesiastical institutions; it should not be reduced either to theocracy or to a fully secular separation.',
+            citations: citations([], ['portugalConstitutionalBases1822', 'sousaPortugueseLiberalCourts2022']),
+          },
+          {
+            period: '1826–1852: constitutional adaptation and compromise',
+            text: 'Leal distinguishes the 1826 Constitutional Charter’s stronger royal role from the 1822 parliamentary model and treats the 1852 Additional Act as a later compromise after internal conflict. The sequence is an instructive case of liberal constitutional learning, not a straight line from revolution to contemporary democracy and not evidence that one Portuguese settlement represented every liberal.',
+            citations: citations([], ['lealPortugueseLiberalism1820']),
           },
           {
             period: '1792 / 1851: Humboldt’s limits on state action',
@@ -2645,6 +2665,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Criticizing colonial abuses can coexist with preserving unequal rule; a demand for independence challenges that rule itself.',
                 relation: 'An analytical contrast, not interchangeable labels or an extra scored axis. Compare the commission report with Pitts’s interpretation of Khodja.',
                 citations: citations([], ['tocquevilleAfricaReport1847French', 'pittsAlgerianMirror2009']),
+              },
+              {
+                label: 'Portuguese Vintismo and constitutional liberalism',
+                distinction: 'The 1820–1823 movement combined national sovereignty, elected Cortes, a power-limiting constitution, hereditary constitutional monarchy, and a Catholic establishment retained in the constitutional bases.',
+                relation: 'A useful Portuguese-language boundary case: more parliament-centered and institutionally radical than the 1826 Charter, but not identical to secular republicanism, later liberal monarchism, or modern equal citizenship.',
+                citations: citations([], ['portugalConstitutionalBases1822', 'lealPortugueseLiberalism1820', 'sousaPortugueseLiberalCourts2022']),
               },
               {
                 label: 'Ordoliberalism / Freiburg School',
@@ -2737,6 +2763,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['millOnLiberty', 'constantLibertyModerns', 'hayekKnowledge'], ['sepLiberalism', 'vdem', 'ches']),
               },
               {
+                name: 'Portuguese Liberal Revolution and Vintismo',
+                period: 'Portugal and the Portuguese constitutional monarchy, 24 August 1820–1823; later constitutional adaptations in 1826 and 1852',
+                match: 'bounded constitutional-liberal and national-sovereignty case',
+                caveat: 'The 1822 experiment was short-lived and the later settlements changed the balance between parliament and the Crown. The constitutional bases, Leal’s interpretation and Sousa’s clergy study are distinct evidence layers; the case does not establish equal citizenship, stable implementation or a complete liberal transformation across the Portuguese imperial world.',
+                citations: citations([], ['portugalConstitutionalBases1822', 'lealPortugueseLiberalism1820', 'sousaPortugueseLiberalCourts2022']),
+              },
+              {
                 name: 'West German social-market settlement',
                 period: 'post-1945 developments discussed in Lampert’s 1988 account',
                 match: 'historical comparison with a later liberal revision',
@@ -2800,12 +2833,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'An Algerian counterpoint prevents a one-way account of liberalism and empire. Jennifer Pitts’s 2009 abstract interprets Hamdan ben Othman Khodja’s Le Miroir (1833) as a liberal, cosmopolitan argument for French withdrawal and an independent Algeria engaging other states as an equal. This is an attributed summary of Pitts’s abstract: neither her complete article nor Khodja’s book has been reviewed here. It does not assign Khodja this card’s economic or other coordinates.',
             citations: citations([], ['pittsAlgerianMirror2009']),
           },
+          {
+            type: 'paragraph',
+            text: 'The Portuguese case adds a further caution about constitutional liberalism and religion. The 1821 bases retained Catholic establishment while asserting national sovereignty and constitutional monarchy, and the Cortes sought stronger civil authority over the clergy. A low religion score or a “secular liberal” label would therefore misdescribe the institutional arrangement; the case also cannot be treated as a stable rights regime because the 1822 experiment was reversed and later redesigned. Constitutional design, state–church conflict, and equal social outcomes must remain separate.',
+            citations: citations([], ['portugalConstitutionalBases1822', 'lealPortugueseLiberalism1820', 'sousaPortugueseLiberalCourts2022']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['lockeSecondTreatise', 'lockeLetterToleration', 'adamSmithWealth', 'millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns', 'hayekKnowledge', 'nozickASU', 'keynesGeneralTheory', 'kantPerpetualPeace', 'morgenthauRealism'],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepMill', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'humboldtLimitsGerman', 'vallsHumboldtMill', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates', 'bpbSocialMarketEconomy', 'tocquevilleAlgeria1841French', 'tocquevilleAfricaReport1847French', 'duongTocquevilleAlgeria2018', 'pittsAlgerianMirror2009', 'vdem', 'ches', 'foreignPolicy'],
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepMill', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'humboldtLimitsGerman', 'vallsHumboldtMill', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates', 'bpbSocialMarketEconomy', 'tocquevilleAlgeria1841French', 'tocquevilleAfricaReport1847French', 'duongTocquevilleAlgeria2018', 'pittsAlgerianMirror2009', 'portugalConstitutionalBases1822', 'lealPortugueseLiberalism1820', 'sousaPortugueseLiberalCourts2022', 'vdem', 'ches', 'foreignPolicy'],
       editorialNote: 'The entry distinguishes the broad classical-liberal family from libertarian, social-liberal, and constitutionalist neighbors. Its scores describe a didactic reference profile and do not measure every historical liberal, party, or market economy. The German material is independently paraphrased. Humboldt’s primary text, Valls’s accessible abstract, the Eucken institute’s account, and Krieger’s reported interpretation have different evidence roles; none supplies measured coordinates. The French additions are original English paraphrases of selected primary passages, not direct or verified translated quotations. Duong and Pitts are abstract-only research leads, visibly attributed. No new country classification or score follows from these cases.',
     },
     researchGaps: [
@@ -2816,6 +2854,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Add specialist research on labor power, race, gender, colonialism, migration, environmental externalities, corporate concentration, public goods, and the relationship between private and state coercion.',
       'Collate the 1841 essay with a scholarly print edition and establish its publication history: the Classiques landing-page description conflicts with the PDF title. Check the 1847 transcription against facsimiles and distinguish commission authorship, individual arguments, and implementation.',
       'Read the full Duong and Pitts articles and competing French- and Arabic-language scholarship before expanding their abstract-level interpretations. Examine Khodja’s Le Miroir, its editions and translation history, and Algerian perspectives directly; no completed primary reading of that book is claimed.',
+      'Read the complete Portuguese constitutional texts, Cortes debates, election rules, clergy petitions, colonial/Brazilian records and specialist Portuguese historiography; compare the 1822 Bases, 1822 Constitution, 1826 Charter and 1852 Additional Act before extending this bounded Vintist case to country-wide liberalism or current Portugal.',
     ],
   },
   'democratic-socialist': {
