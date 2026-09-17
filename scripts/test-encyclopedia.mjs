@@ -341,19 +341,47 @@ for (const [sourceId, publicationDate] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence, publicationStatus] of [
+  ['moreauOttomanStateConstitutionalReforms2013', 'secondary', '2013', ['French'], 'high', 'link-only'],
+  ['hillKhayrDinArabicConstitutionalism2025', 'secondary', '2025-07-21', ['English'], 'medium', 'link-only'],
+  ['khayrDinAqwamAlMasalik1867Arabic', 'primary', '1867', ['Arabic'], 'medium', 'review-required'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Arabic-Ottoman constitutionalism reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, publicationStatus);
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
 const ottomanLiberalIntroduction = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'introduction').blocks;
 assert.ok(ottomanLiberalIntroduction.some(({ text }) => text?.startsWith('The late Ottoman constitutional debate supplies a bounded non-Western case')));
+assert.ok(ottomanLiberalIntroduction.some(({ text }) => text?.startsWith('An Arabic-Ottoman reform strand broadens this case')));
 const ottomanLiberalDescription = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'description').blocks;
 assert.ok(ottomanLiberalDescription.some(({ text }) => text?.startsWith('Ottoman constitutional liberalism should not be treated')));
+assert.ok(ottomanLiberalDescription.some(({ text }) => text?.startsWith('The Khayr al-Din case shows')));
 const ottomanLiberalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(ottomanLiberalHistory.some(({ period }) => period.startsWith('1860s–1909 — Ottoman constitutional thought')));
+assert.ok(ottomanLiberalHistory.some(({ period }) => period.startsWith('1867–1878 — Khayr al-Din al-Tunisi')));
 const ottomanLiberalVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Ottoman constitutional liberalism'));
 assert.ok(ottomanLiberalVariant, 'Ottoman constitutional liberalism must be separated from the monarchist case');
+const arabicOttomanVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Arabic–Ottoman reform constitutionalism'));
+assert.ok(arabicOttomanVariant, 'Arabic–Ottoman reform constitutionalism must be separated from Young Ottoman constitutionalism');
 const ottomanLiberalExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Young Ottoman constitutionalism'));
 assert.ok(ottomanLiberalExample, 'Young Ottoman constitutionalism must appear as a bounded example');
+const khayrDinExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Khayr al-Din al-Tunisi’s 1867 Arabic treatise'));
+assert.ok(khayrDinExample, 'Khayr al-Din must appear as a bounded example');
 const ottomanLiberalCriticisms = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks;
 assert.ok(ottomanLiberalCriticisms.some(({ text }) => text?.startsWith('The late Ottoman case adds a translation')));
+assert.ok(ottomanLiberalCriticisms.some(({ text }) => text?.startsWith('The Arabic-Ottoman reform case adds a state-capacity')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Collate the original Ottoman Turkish, Arabic and French texts')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Arabic Aqwam al-Masalik')));
 
 const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
 for (const [sourceId, role, date] of [
