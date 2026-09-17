@@ -1118,8 +1118,10 @@ const religiousHistory = religiousSocialistEntry.sections.find(({ id }) => id ==
 const religiousVariants = religiousSocialistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows);
 assert.match(religiousDescription, /not interchangeable with Shariati’s pre-1979 anti-clerical revolutionary intellectual project/);
 assert.match(religiousDescription, /bounded Brazilian case/);
+assert.match(religiousDescription, /Baixada Fluminense/);
 assert.match(religiousHistory, /pre-revolutionary Iran, Islamic-left currents/);
 assert.match(religiousHistory, /Brazilian Comunidades Eclesiais de Base became/);
+assert.match(religiousHistory, /CNBB’s institutional message and retrospective/);
 assert.ok(religiousVariants.some(({ label }) => /Iranian Islamic revolutionary socialism/.test(label)));
 assert.ok(religiousVariants.some(({ label }) => /Brazilian base-community and agrarian practice/.test(label)));
 assert.match(JSON.stringify(religiousSocialistEntry), /Primary-text limit: the online Shariati collection/);
@@ -1128,6 +1130,9 @@ for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   ['krischkeBrazilCEBDemocracy1991', 'secondary', '1991-07', 'medium', ['English']],
   ['mauesCebsAmazon2010', 'secondary', '2010', 'high', ['Portuguese']],
   ['menezesNetoMstLiberation2007', 'secondary', '2007-08', 'high', ['Portuguese', 'English abstract', 'French abstract']],
+  ['meirellesCebsBaixadaFluminense2024', 'secondary', '2024-06-21', 'high', ['Portuguese', 'English abstract']],
+  ['cnbbCEBsMessage2010', 'primary', '2010-05-15', 'high', ['Portuguese']],
+  ['cnbbCEBsIntereclesialMemory2018', 'primary', '2018-01-24', 'medium', ['Portuguese']],
   ['kairosDocument1985', 'primary', '1985', 'high', ['English']],
   ['gobaKairosLiberation1987', 'secondary', '1987', 'medium', ['English']],
   ['mahlanguKairosPropheticWitness2025', 'secondary', '2025', 'high', ['English']],
@@ -1162,9 +1167,15 @@ assert.ok(religiousVariants.some(({ label }) => /South African Kairos/.test(labe
 const kairosExample = religiousSocialistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'South African Kairos Document');
 assert.ok(kairosExample);
 assert.match(kairosExample.caveat, /not a party manifesto/);
+const religiousBrazilExample = religiousSocialistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'CEBs in Baixada Fluminense during the Brazilian dictatorship');
+assert.ok(religiousBrazilExample);
+assert.ok(religiousBrazilExample.citations.researchSourceIds.includes('meirellesCebsBaixadaFluminense2024'));
+assert.match(religiousBrazilExample.caveat, /bounded historical analysis/);
 const religiousCriticisms = religiousSocialistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
 assert.match(religiousCriticisms, /The South African Kairos case adds a different safeguard/);
+assert.match(religiousCriticisms, /A second Brazilian safeguard concerns institutional memory/);
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Read the complete 1985 and 1986 Kairos editions')));
+assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('This pass expands the bounded Brazilian CEB evidence cluster')));
 
 const nationalityEntry = ENCYCLOPEDIA_ENTRIES['ethnic-nationalist'];
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
