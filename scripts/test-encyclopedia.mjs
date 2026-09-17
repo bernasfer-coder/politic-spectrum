@@ -1794,9 +1794,33 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
 }
+for (const [sourceId, publicationDate, languages, confidence] of [
+  ['chustFrasquetSovereignty1812', '2003-01-01', ['Spanish'], 'high'],
+  ['aguilarRiveraCadizAtlantic2014', '2014', ['Spanish', 'English abstract'], 'medium'],
+]) {
+  assert.ok(weimarEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Cádiz constitutionalist reference trail`);
+  assert.ok(JSON.stringify(weimarEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, 'secondary');
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
 const cadizTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1812–1823'));
 assert.ok(cadizTimeline, 'the Cádiz constitutional timeline case must remain visible');
 assert.ok(cadizTimeline.citations.researchSourceIds.includes('congresoCadizConstitution1812'));
+const cadizSovereigntyTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1810–1812: Cádiz'));
+assert.ok(cadizSovereigntyTimeline, 'the Cádiz sovereignty timeline case must remain visible');
+assert.ok(cadizSovereigntyTimeline.citations.researchSourceIds.includes('chustFrasquetSovereignty1812'));
+const cadizAtlanticTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1812: Cádiz within'));
+assert.ok(cadizAtlanticTimeline, 'the Cádiz Atlantic-cycle timeline case must remain visible');
+assert.ok(cadizAtlanticTimeline.citations.researchSourceIds.includes('aguilarRiveraCadizAtlantic2014'));
 const cadizImplementationTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1812–1814: local promulgation'));
 assert.ok(cadizImplementationTimeline, 'the local Cádiz implementation timeline case must remain visible');
 assert.ok(cadizImplementationTimeline.citations.researchSourceIds.includes('ucaCadizOaths2024'));
