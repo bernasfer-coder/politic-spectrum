@@ -867,6 +867,26 @@ for (const [sourceId, evidenceRole, publicationDate, language, confidence] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
 }
+for (const [sourceId, evidenceRole, publicationDate, confidence] of [
+  ['locSelassieSpeech1936', 'primary', '1936-06-30', 'high'],
+  ['braukamperIndigenousViews2011', 'secondary', '2011', 'high'],
+  ['abebeNorthShewaResistance2016', 'secondary', '2016', 'medium'],
+  ['seyoumEthiopianResistance2020', 'secondary', '2020', 'medium'],
+]) {
+  assert.ok(ethiopiaEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Ethiopian research trail`);
+  assert.ok(JSON.stringify(ethiopiaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve to one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-17');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
 const selassieAppeal = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-selassieLeagueAppeal1936');
 const baerSanctions = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-baerSanctionsSecurity1973');
 assert.match(selassieAppeal.note, /Document 7 only/);
@@ -884,6 +904,12 @@ assert.match(ethiopiaBoundary.text, /scores remain unchanged/);
 assert.match(ethiopiaBoundary.text, /no present-day country match/);
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Collate the full 1936 appeal')));
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Read Baer’s full 1973 article')));
+assert.ok(ethiopiaEntry.sections.find(({ id }) => id === 'history').timeline.some(({ period, citations }) => period.startsWith('1936–1941 — Ethiopian resistance') && citations.researchSourceIds.includes('seyoumEthiopianResistance2020')));
+assert.ok(ethiopiaEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).some(({ label, citations }) => label.startsWith('Ethiopian resistance and locally differentiated') && citations.researchSourceIds.includes('braukamperIndigenousViews2011')));
+assert.ok(ethiopiaEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text, citations }) => text?.startsWith('Consultation limits: the appeal') && citations.researchSourceIds.includes('locSelassieSpeech1936')));
+assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Collate the Library of Congress item')));
+assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Extend Ethiopian evidence')));
+assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Read Baer’s full article and Italian')));
 
 const imperialJapanEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [

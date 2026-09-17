@@ -10410,6 +10410,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Imperial Japan supplies a bounded Asian case for separating constitutional form, military autonomy, and colonial administration. The 1889 constitutional text placed the emperor at the head of the empire and assigned supreme command of the Army and Navy; later archival and scholarly accounts show that parliamentary and party politics could coexist with military institutions that were insufficiently controlled by civilian government. Taiwan and Korea also demonstrate that imperial rule took different legal and administrative forms across subject territories. This case is not a score for present-day Japan or for every institution and person in the pre-1945 empire.',
             citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Ethiopia supplies a bounded African and anti-colonial case. Italy invaded Ethiopia in 1935, while Haile Selassie’s League appeal defended Ethiopian independence and collective-security obligations. The Library of Congress record anchors the speech’s date and provenance; Braukämper, Abebe and Seyoum broaden the view toward southern communities, North Shewa peasants, resistance phases, collaboration and coercion. These sources do not produce a score for every Ethiopian community, imperial-era institution or present-day Ethiopia.',
+            citations: citations([], ['locSelassieSpeech1936', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020']),
+          },
         ],
       },
       {
@@ -10450,6 +10455,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Imperial Japan illustrates how a state could combine a constitutional legislature and formally protected rights with a military command structure insulated from ordinary cabinet control. The National Diet Library’s presentation of the 1889 Constitution identifies the emperor as head of the empire and supreme commander of the Army and Navy; Pida-Reese interprets this separation as a central weakness in civilian control that later enabled democratic reversal. JACAR’s Taiwan record adds a territorial dimension: civil administration was introduced after the initial military phase, but a military governor and command powers remained until 1919. These sources document institutional arrangements, not a complete account of coercion or social outcomes.',
             citations: citations([], ['japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'pidaReeseImperialJapan2026']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Ethiopian case prevents a simple equation of conquest with uniform local consent or uniform resistance. Braukämper’s southern Ethiopian evidence emphasizes that some collaboration and resistance were shaped by prior exploitation by Ethiopian imperial elites and by Italian divide-and-rule; Abebe’s North Shewa study describes peasant guerrilla resistance alongside punishment, displacement, malnutrition and disease; Seyoum distinguishes an initial transitional phase from a later popular phase. These are regional and temporal findings, not evidence that Ethiopia was one political actor or that every local response had the same meaning.',
+            citations: citations([], ['braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020']),
           },
         ],
       },
@@ -10500,7 +10510,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             period: '1935–1936 — Italian invasion and an Ethiopian appeal to collective security',
             text: 'Italy invaded Ethiopia in 1935. On 30 June 1936, Haile Selassie addressed the League in defense of Ethiopian independence. UN Geneva’s retrospective treats the failure to protect Ethiopia as a major blow to the collective-security system, while noting that the League did settle other disputes.',
-            citations: citations([], ['selassieLeagueAppeal1936', 'unLeagueAtWork']),
+            citations: citations([], ['selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'unLeagueAtWork']),
+          },
+          {
+            period: '1936–1941 — Ethiopian resistance, occupation, and uneven local experience',
+            text: 'The Italian occupation did not create one settled Ethiopian political response. Seyoum distinguishes transitional resistance in 1936–1937 from a later popular phase; Abebe’s North Shewa study describes peasant guerrilla resistance and destructive punishment, displacement, malnutrition and disease; Braukämper’s southern evidence shows that collaboration and resistance also reflected earlier imperial inequalities and Italian divide-and-rule. The case therefore documents anti-colonial defense and occupation through multiple regional experiences rather than a single national programme.',
+            citations: citations([], ['braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'locSelassieSpeech1936']),
           },
           {
             period: '1945–1970s — Charter order, decolonization, and anti-colonial war',
@@ -10592,6 +10607,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'Editorial classification boundary: opposition to conquest does not establish absolute pacifism, and a request for outside assistance is not by itself an imperial programme.',
                 citations: citations([], ['selassieLeagueAppeal1936', 'leagueCovenant1919']),
               },
+              {
+                label: 'Ethiopian resistance and locally differentiated anti-colonial defense, 1936–1941',
+                distinction: 'Armed and popular resistance after the Italian conquest included regional and peasant actors, with collaboration and resistance shaped by local histories, coercion and imperial divide-and-rule.',
+                relation: 'This differs structurally from imperial militarism because the documented resistance sought to end foreign domination; it is not a centralized programme, a uniform national consent claim, or evidence that all local actors shared one ideology.',
+                citations: citations([], ['braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020']),
+              },
             ],
           },
         ],
@@ -10653,6 +10674,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'In the selected appeal, Selassie accused Italy of chemical attacks on civilians, criticized the lack of effective assistance, and made Ethiopia’s defense a test of treaty promises to smaller states. This is evidence of his public argument; the speech alone is not independent verification of every battlefield claim or casualty estimate. No numerical casualty claim is adopted here.',
             citations: citations([], ['selassieLeagueAppeal1936']),
           },
+          {
+            type: 'paragraph',
+            text: 'Ethiopian resistance and local experience further complicate the compound label. The regional scholarship used here identifies peasant resistance, coercive occupation, collaboration and resistance shaped by prior political inequalities, and a change from transitional to popular resistance. These findings support a differentiated anti-colonial case, not a single six-axis classification of Ethiopia or a claim that every actor endorsed the same political project.',
+            citations: citations([], ['braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020']),
+          },
         ],
       },
       {
@@ -10710,8 +10736,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'evidence-note',
-            text: 'Consultation limits: the appeal was read in edited English excerpts, with omissions and an unidentified translator. The Amharic–French archival scan was inaccessible; no translation comparison is claimed. Baer’s accessible extract, not the full article or underlying diplomatic files, was consulted. These additions do not establish Selassie’s domestic governance or exhaust Ethiopian experiences of conquest. The scores remain unchanged, and no present-day country match is inferred.',
-            citations: citations([], ['selassieLeagueAppeal1936', 'baerSanctionsSecurity1973']),
+            text: 'Consultation limits: the appeal was read in edited English excerpts, with omissions and an unidentified translator; the Library of Congress record confirms the speech’s provenance but does not replace collation of the Amharic and French witnesses. The Braukämper, Abebe and Seyoum additions use abstracts and metadata in this pass, not full article readings or all cited local archives. Baer’s accessible extract, not the full article or underlying diplomatic files, was consulted. These additions do not establish Selassie’s domestic governance or exhaust Ethiopian experiences of conquest. The scores remain unchanged, and no present-day country match is inferred.',
+            citations: citations([], ['selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'baerSanctionsSecurity1973']),
           },
           {
             type: 'evidence-note',
@@ -10738,8 +10764,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['clausewitzOnWar', 'mahanInfluenceSeaPower', 'hobsonImperialism', 'morgenthauRealism', 'mearsheimerTragedy', 'mussoliniDoctrine', 'fanonWretchedEarth', 'gandhiHindSwaraj', 'walzerJustWars', 'arendtTotalitarianism', 'burkeReflections', 'kantPerpetualPeace'],
-      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022'],
-      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context. The Imperial Japan addition is a bounded pre-1945 Asian case using an official constitutional presentation, Japanese archival records, and two academic interpretations; it does not establish a whole-country score, a single causal account, or equal experience across Japan’s subject territories.',
+      researchSourceIds: ['oxfordImperialism', 'oxfordMilitarism', 'oxfordPoliticalEconomyMilitarism', 'oxfordColonialismEmpireSociology', 'cambridgeMilitarismImperialism', 'usStateMahan', 'unCharterForce', 'foreignPolicy', 'sepColonialism', 'sepNationalism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'oxfordConstitutionalJustice', 'ferryColonialSpeech1885', 'clemenceauColonialReply1885', 'assemblyRacismReport2021', 'osterhammelImperialism2012', 'selassieLeagueAppeal1936', 'locSelassieSpeech1936', 'leagueCovenant1919', 'baerSanctionsSecurity1973', 'unLeagueAtWork', 'braukamperIndigenousViews2011', 'abebeNorthShewaResistance2016', 'seyoumEthiopianResistance2020', 'japanMeijiConstitution1889', 'jacarTaiwanGovernorGeneral1895', 'jacarKoreaAnnexation1910', 'pidaReeseImperialJapan2026', 'shiraneImperialGateway2022'],
+      editorialNote: 'This entry separates militarism, imperialism, colonialism, realism, fascism, defense, intervention, and anti-colonial liberation. Its score is a didactic compound profile, not an empirical rating of every military state or empire. Comparative examples require evidence about doctrine, institutions, practice, affected populations, and legal context. The Imperial Japan addition is a bounded pre-1945 Asian case using an official constitutional presentation, Japanese archival records, and two academic interpretations; it does not establish a whole-country score, a single causal account, or equal experience across Japan’s subject territories. The Ethiopia addition is a bounded 1935–1941 African and anti-colonial case using a Library of Congress provenance record and three attributed scholarly leads; it does not establish a national score, uniform local response, or complete Ethiopian, Italian or League history.',
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Turkish, Hindi, Chinese, Japanese, Korean, and African languages on empire, militarism, military labor, and anti-colonial political thought.',
@@ -10754,6 +10780,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'The economic sign is aligned with the existing card at −12, without changing its magnitude or any other coordinate. This consistency repair does not calibrate the combined militarism/imperialism label or score its historical examples.',
       'Collate the full 1936 appeal and League proceedings against the Amharic–French archival witness with qualified language review; identify the English translator and edition. The archival pages were inaccessible on 16 September 2026. The edited excerpts do not close the original-language evidence gap.',
       'Read Baer’s full 1973 article, subsequent scholarship and the underlying Ethiopian, Italian, British and French diplomatic records. Add Ethiopian civilian and resistance testimony, and scholarship on the monarchy’s own internal hierarchies, before generalizing from the emperor’s diplomatic appeal or evaluating sanctions counterfactuals.',
+      'Collate the Library of Congress item, the Amharic and French archival witnesses, the OER excerpts and the League archive to establish edition, language, translator, omissions and speech context before quoting or treating the diplomatic appeal as complete.',
+      'Extend Ethiopian evidence through the full Braukämper, Abebe and Seyoum articles and regional Ethiopian and Italian oral, church, civilian, women’s, Oromo, Amhara, southern and resistance archives; keep collaboration, coercion and prior imperial inequalities separate.',
+      'Read Baer’s full article and Italian, British and French diplomatic files, then compare sanctions, chemical-war, Addis Ababa/Yekatit 12 and occupation evidence without adopting unverified casualty totals or present-day analogies.',
       'Collate the Japanese original and authoritative translation history of the 1889 Constitution, the Imperial Diet debates, military ordinances, and civil–military scholarship in Japanese. Article 11 and the official English presentation establish a legal anchor, not the full institutional meaning or practice of supreme command.',
       'Read the complete Korea annexation treaty record in Japanese and Korean, including diplomatic pressure, Korean constitutional and public responses, and later historiography. The official archival translation documents the treaty’s legal form but does not resolve consent, coercion, legitimacy, or lived consequences.',
       'Extend the Taiwan case through Taiwanese-language and Japanese-language testimony, colonial budgets, police and military records, education and labor evidence, Indigenous histories, and competing scholarship. Shirane’s selected open sections illuminate a regional gateway and subject agency but do not establish comprehensive outcomes or erase coercion.',
