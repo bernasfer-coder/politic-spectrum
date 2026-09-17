@@ -1647,6 +1647,8 @@ assert.match(decreeTimeline.text, /not validation of its claimed defensive justi
 assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Collate the Weimar provisions')), 'the primary-source verification gap must remain visible');
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['congresoCadizConstitution1812', 'primary', '1812-03-19', ['Spanish'], 'high'],
+  ['ucaCadizOaths2024', 'contextual', '2024-12-19', ['Spanish'], 'medium'],
+  ['amoresCadizCuba2014', 'secondary', '2014', ['Spanish'], 'medium'],
   ['varelaCadizLiberalism1987', 'secondary', '1987-04-01', ['Spanish'], 'medium'],
   ['perezLunoCadizRights2015', 'secondary', '2015-01-08', ['Spanish'], 'medium'],
 ]) {
@@ -1667,13 +1669,23 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
 const cadizTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1812–1823'));
 assert.ok(cadizTimeline, 'the Cádiz constitutional timeline case must remain visible');
 assert.ok(cadizTimeline.citations.researchSourceIds.includes('congresoCadizConstitution1812'));
+const cadizImplementationTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1812–1814: local promulgation'));
+assert.ok(cadizImplementationTimeline, 'the local Cádiz implementation timeline case must remain visible');
+assert.ok(cadizImplementationTimeline.citations.researchSourceIds.includes('ucaCadizOaths2024'));
+assert.ok(cadizImplementationTimeline.citations.researchSourceIds.includes('amoresCadizCuba2014'));
 const cadizVariant = weimarEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Cádiz-style transatlantic'));
 assert.ok(cadizVariant, 'the Cádiz case must be separated as a dated constitutional variant');
+const cadizImplementationVariant = weimarEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Cádiz local and transatlantic implementation'));
+assert.ok(cadizImplementationVariant, 'the local Cádiz implementation must be separated as a bounded variant');
 const cadizExample = weimarEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The Cádiz Constitution is a bounded'));
 assert.ok(cadizExample, 'Cádiz must appear as a bounded historical example');
 assert.match(cadizExample.text, /treated as synonymous with socially progressive/);
+const cadizLocalExample = weimarEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The local and Cuban record supplies'));
+assert.ok(cadizLocalExample, 'the local Cádiz implementation must appear as a bounded example');
+assert.match(cadizLocalExample.text, /not an exact six-axis match/);
 assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Spanish Cádiz Constitution')));
 assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read Varela Suanzes-Carpegna')));
+assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read the Márquez Fernández thesis')));
 assert.deepEqual(Object.fromEntries(Object.entries(weimarEntry.dimensionInterpretations).map(([id, { score }]) => [id, score])), { economic: -30, social: 25, authority: -65, identity: 25, foreign: 35, religion: 55 });
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['brazilConstitution1988', 'primary', '1988-10-05', ['Portuguese'], 'high'],
