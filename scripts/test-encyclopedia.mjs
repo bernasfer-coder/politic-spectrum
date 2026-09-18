@@ -3007,6 +3007,38 @@ assert.match(colonialCounterexample.match, /Counterexample, not an ideological m
 assert.ok(civicEntry.researchGaps.some((gap) => gap.includes('social-axis magnitude mismatch')), 'the unresolved magnitude mismatch must stay visible');
 
 const monarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['cambodiaConstitution1993Official', 'primary', '1993-09-21', ['Khmer', 'English', 'French'], 'high'],
+  ['cambodiaParisAgreement1991UN', 'primary', '1991-10-23', ['Khmer', 'English', 'French', 'Chinese', 'Russian'], 'high'],
+  ['cambodiaParisAgreementFrench1991', 'primary', '1991-12-18', ['French'], 'high'],
+  ['lawrenceCambodiaConstitutionalSangha2022', 'secondary', '2022-11-18', ['English'], 'high'],
+  ['lawrenceCambodiaSaffronSuffrage2022', 'secondary', '2022-06-10', ['English'], 'high'],
+  ['lawrenceCambodiaRoyalAbsence2022', 'secondary', '2022', ['English'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Cambodian monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const cambodianHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1991–1993: Cambodia'));
+assert.ok(cambodianHistory, 'the Cambodian post-conflict constitutional-monarchy timeline case must remain visible');
+assert.match(cambodianHistory.text, /non-governing and inviolable head of state/);
+assert.ok(cambodianHistory.citations.researchSourceIds.includes('lawrenceCambodiaRoyalAbsence2022'));
+const cambodianVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Cambodian elected constitutional monarchy'));
+assert.ok(cambodianVariant, 'the Cambodian case must be separated as a dated constitutional variant');
+const cambodianExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Cambodia’s post-conflict'));
+assert.ok(cambodianExample, 'Cambodia must appear as a bounded historical example');
+assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('Cambodia’s post-conflict restoration')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('The Cambodia addition remains bounded')));
 for (const [sourceId, evidenceRole] of [
   ['brazilConstitution1824', 'primary'],
   ['lynchModeratingPower2005', 'secondary'],
