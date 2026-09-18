@@ -3287,6 +3287,8 @@ assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Research Po
 for (const [sourceId, publicationDate, languages] of [
   ['hespanhaPortugueseMonarchicalConstitutionalism2012', '2012', ['Portuguese', 'English abstract']],
   ['cardosoLealPortugueseElections2020', '2020-01-12', ['Portuguese', 'English abstract', 'French abstract', 'Spanish abstract']],
+  ['sardicaPortugueseCharter1826', '2012', ['Portuguese']],
+  ['fernandesTavaresParliament1826', '2023', ['Portuguese']],
 ]) {
   assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Portuguese scholarly monarchist reference trail`);
   assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
@@ -3302,6 +3304,10 @@ for (const [sourceId, publicationDate, languages] of [
 }
 const portugueseAgendaTimeline = portugueseHistory.find(({ period }) => period.startsWith('1826–1910:'));
 assert.ok(portugueseAgendaTimeline?.citations.researchSourceIds.includes('hespanhaPortugueseMonarchicalConstitutionalism2012'));
+const portugueseReceptionTimeline = portugueseHistory.find(({ period }) => period.startsWith('1826–1852:'));
+assert.ok(portugueseReceptionTimeline, 'the Portuguese Charter reception timeline must remain visible');
+assert.ok(portugueseReceptionTimeline.citations.researchSourceIds.includes('sardicaPortugueseCharter1826'));
+assert.ok(portugueseReceptionTimeline.citations.researchSourceIds.includes('fernandesTavaresParliament1826'));
 const portugueseElectionTimeline = portugueseHistory.find(({ period }) => period.startsWith('1852–1910:'));
 assert.ok(portugueseElectionTimeline?.citations.researchSourceIds.includes('cardosoLealPortugueseElections2020'));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('This Portuguese update adds Hespanha')));
