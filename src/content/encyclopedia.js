@@ -13089,6 +13089,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             text: 'The church struggle makes the religion coordinate more precise. The German Christians sought to align Protestant institutions with Nazi ideology, racial thinking, and the Führer principle; the Confessing Church resisted that ecclesiastical coordination, but its opposition was often directed at church autonomy and doctrine rather than a comprehensive democratic or anti-racist programme. The Catholic Church followed a different path of institutional negotiation, Concordat-based claims, and later doctrinal protest. Across both traditions, individual resistance and rescue existed alongside caution, compromise, inherited antisemitism, and limited public opposition to the persecution of Jews. “Religious” and “secular” are therefore insufficient descriptions without naming the institution, doctrine, actor, date, and conduct.',
             citations: citations([], ['reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'ushmmGermanChurches']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The 1933–1934 church struggle supplies a bounded religion case. The German Christians’ two-thirds victory in the 23 July 1933 church elections and Ludwig Müller’s appointment show an attempt to align Protestant institutions with the Nazi state; the September 1933 church-office Aryan paragraph and the November Sportpalast conflict show the racial and ideological content of that project. The Pfarrernotbund, the Confessing Church, and the Barmen Declaration opposed the subordination of church doctrine and governance, but this opposition was internally varied and did not amount to a complete anti-racist or democratic programme. A contemporary U.S. diplomatic report is an external period witness, while German institutional and archival sources document distinct layers of evidence. This does not establish uniform conduct by German Protestants, Catholics, clergy, congregations, or believers.',
+            citations: citations([], ['dhmGermanChristians2015', 'ghdiBerlinChurchElection1933', 'ghdiGermanChristiansSportpalast1933', 'frusGermanEvangelicalChurch1933', 'gailusChurchStateNazism2018', 'barmenDeclaration1934German']),
+          },
         ],
       },
       {
@@ -13119,6 +13124,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             period: 'July–September 1933 — German Christian church coordination',
             text: 'With Hitler’s support, the German Christian movement helped create a centralized German Evangelical Church and won the July 1933 church elections with NSDAP organizational and propaganda assistance. Ludwig Müller, a German Christian leader and Hitler’s plenipotentiary for Protestant church affairs, was appointed Reich Bishop on 27 September 1933 and pursued institutional and doctrinal coordination from within. The project did not achieve complete ecclesiastical unity or total state control; it produced the Kirchenkampf and intensified conflict with the Confessing Church. This is evidence about a movement and institutions, not about every German Protestant or Christian.',
             citations: citations([], ['gailusChurchStateNazism2018', 'ushmmGermanChurches', 'barmenDeclaration1934German']),
+          },
+          {
+            period: '23 July–November 1933 — German Christians, church coordination, and internal Protestant conflict',
+            text: 'The German Christians won roughly two thirds of the 23 July 1933 Protestant church elections, with Berlin-Dahlem and Barmen notable exceptions in the archival record. The September 1933 introduction of an Aryan paragraph for church offices made racial exclusion an institutional issue, while Ludwig Müller’s appointment as Reich Bishop and the 13 November Sportpalast assembly exposed the movement’s attempt to fuse Nazi leadership, völkisch theology, and Protestant governance. A contemporary diplomatic dispatch reported both radical German Christian demands and organized pastoral opposition, including the Pfarrernotbund; later German institutional accounts likewise conclude that complete ecclesiastical Gleichschaltung was not achieved. The sequence demonstrates influence and conflict, not uniform Protestant conduct.',
+            citations: citations([], ['dhmGermanChristians2015', 'ghdiBerlinChurchElection1933', 'ghdiGermanChristiansSportpalast1933', 'frusGermanEvangelicalChurch1933', 'gailusChurchStateNazism2018']),
           },
           {
             period: '20 July 1933 — Concordat signed',
@@ -13213,6 +13223,12 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 citations: citations([], ['gailusChurchStateNazism2018', 'barmenDeclaration1934German', 'silomonProtestantResistance2009', 'ushmmGermanChurches']),
               },
               {
+                label: 'German Christians / völkisch Protestantism, 1932–1934',
+                distinction: 'A Nazi-aligned Protestant current that sought centralized Reich Church authority, Führer-principle leadership, racial exclusion from church office and membership, and a völkisch reinterpretation of Christianity. Its electoral success, public assemblies, and church-office measures show an institutional project rather than only private sympathy.',
+                relation: 'This was a religious current within the Nazi movement, not a complete synonym for National Socialism or for all German Protestants. Its 1933 electoral success and later fragmentation demonstrate substantial institutional influence without total control; the Confessing Church, Catholic institutions, and regional churches followed different trajectories.',
+                citations: citations([], ['dhmGermanChristians2015', 'ghdiBerlinChurchElection1933', 'ghdiGermanChristiansSportpalast1933', 'frusGermanEvangelicalChurch1933', 'gailusChurchStateNazism2018']),
+              },
+              {
                 label: 'Postwar neo-Nazism',
                 distinction: 'Contemporary extremist movements borrow Nazi symbols, antisemitic or racial ideology, Holocaust denial, and authoritarian nationalism in different combinations.',
                 relation: 'They are historically related but not identical to the Nazi state; classification requires evidence of organization, doctrine, violence, and actual political capacity, and should not casually label opponents.',
@@ -13276,6 +13292,13 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 match: 'institutional negotiation followed by bounded doctrinal protest',
                 caveat: 'Treaty protections and papal criticism do not establish collective Catholic rejection of Nazi antisemitism, racial law, or state violence. Public opposition, institutional self-protection, and individual resistance must be researched separately.',
                 citations: citations([], ['reichConcordat1933German', 'piusXiMitBrennender1937', 'ushmmGermanChurches']),
+              },
+              {
+                name: 'German church elections, the Sportpalast assembly, and the early Kirchenkampf',
+                period: 'Germany, July–November 1933',
+                match: 'bounded evidence of Nazi-aligned religious mobilization, racialized church policy, and organized Protestant opposition',
+                caveat: 'The two-thirds election result, Aryan-paragraph controversy, Reich Bishop project, Sportpalast demands, and pastoral resistance document a contested sequence. They do not establish that all Protestant regions, Catholics, clergy, congregations, or believers held one position, nor do they by themselves settle the later conduct of the churches during persecution and genocide.',
+                citations: citations([], ['dhmGermanChristians2015', 'ghdiBerlinChurchElection1933', 'ghdiGermanChristiansSportpalast1933', 'frusGermanEvangelicalChurch1933', 'gailusChurchStateNazism2018', 'barmenDeclaration1934German']),
               },
             ],
           },
@@ -13351,6 +13374,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           },
           {
             type: 'paragraph',
+            text: 'The new German-language evidence strengthens, but does not close, the religion analysis. The election record, institutional history, archival event record, and contemporary diplomatic dispatch illuminate different evidentiary layers: electoral organization, church administration, public ideological claims, and an outside period observation. They should not be merged into a single measure of belief or resistance. The material supports a bounded account of German Christian influence and early Protestant conflict; it does not justify a uniform claim about German Christianity, a final religion coordinate, or the complete regional history of the Kirchenkampf.',
+            citations: citations([], ['dhmGermanChristians2015', 'ghdiBerlinChurchElection1933', 'ghdiGermanChristiansSportpalast1933', 'frusGermanEvangelicalChurch1933', 'gailusChurchStateNazism2018']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, the entry is designed to resist contemporary misuse. Assigning this label to a living person, party, or state requires exceptional evidence and a clearly bounded historical comparison. The site should prefer precise descriptions—antisemitic, racial supremacist, authoritarian, expansionist, genocidal, anti-democratic, or neo-Nazi—when those are the claims supported by the evidence, and should always show the source, period, institution, and uncertainty.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['sepFascism', 'oxfordNaziGermany', 'ushmmThirdReich', 'ushmmNaziRacism']),
           },
@@ -13359,7 +13387,7 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
     ],
     references: {
       authorReferenceIds: ['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism', 'griffinNatureFascism'],
-      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights', 'oxfordImperialism', 'reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'ushmmGermanChurches', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009'],
+      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights', 'oxfordImperialism', 'reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'ushmmGermanChurches', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'dhmGermanChristians2015', 'ghdiGermanChristiansSportpalast1933', 'ghdiBerlinChurchElection1933', 'frusGermanEvangelicalChurch1933'],
       editorialNote: 'This is a historical warning entry. It distinguishes National Socialism from generic fascism, ethnic nationalism, militarism, populism, conservatism, communism, and contemporary extremist labels. Its scores describe the Nazi movement and regime as a historically specific racial-totalitarian and genocidal project, not a current-country classification or ordinary policy option. The church research uses German primary texts and an English institutional synthesis; English paraphrases are original, not quotations or authoritative translations. Promises, doctrinal objections, and historical conduct remain distinct evidence types.',
     },
     researchGaps: [
@@ -13373,6 +13401,7 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
       'Read the church-history studies by Victoria Barnett, Doris Bergen, Robert P. Ericksen, Michael Phayer, and Kevin P. Spicer listed by USHMM before attributing detailed conclusions to them; they are further-reading leads, not books reviewed in this pass.',
       'Add parish, diocesan, regional, and Jewish survivor evidence to compare institutional self-defense, antisemitism, resistance, rescue, and persecution. The selected German documents and museum synthesis do not complete the earlier churches research gap.',
       'Collate the full German church-election records, regional church laws, Ministry of Church Affairs files, Catholic episcopal correspondence, and local Jewish and Christian testimony from 1933–1937. The present synthesis improves the Reich Church / Confessing Church distinction but does not establish uniform regional conduct or a complete account of Protestant and Catholic institutions.',
+      'Collate the full German church-election returns, regional church laws, local Jewish testimony, Catholic diocesan files, and the 1933–1936 German-language archives behind the new DHM, GHDI, and FRUS leads. The current addition establishes a bounded institutional sequence and external witness, not uniform church conduct, complete regional coverage, or a final religion coordinate.',
       'Resolve the pre-existing religion-coordinate discrepancy: this article uses −35 and the reference card −30. Neither figure is empirically validated, and this pass leaves their magnitudes unchanged. The economic sign alone was aligned with the existing +5 card coordinate; this is orientation maintenance, not new calibration.',
     ],
   },
