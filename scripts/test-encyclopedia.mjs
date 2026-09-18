@@ -1741,6 +1741,42 @@ assert.ok(indianColonialSafeguard, 'British India must add a colonial-transfer s
 assert.match(indianColonialSafeguard.text, /as decolonization/);
 
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['usHistorianLibyaSovereignty1912', 'primary', '1912-12-05', ['English'], 'high'],
+  ['benmaizaOuchyLibya2025Arabic', 'secondary', '2025', ['Arabic', 'English abstract'], 'medium'],
+  ['ryanLibyaPrestige2015', 'secondary', '2015-05', ['English'], 'medium'],
+  ['ahmidaLibyanGenocide2020', 'secondary', '2020', ['English'], 'medium'],
+  ['treccaniGrazianiLibya2001', 'secondary', '2001', ['Italian'], 'high'],
+]) {
+  assert.ok(germanSouthWestAfricaEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Italian Libya reference trail`);
+  assert.ok(JSON.stringify(germanSouthWestAfricaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const libyaHistory = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(libyaHistory.some(({ period, citations }) => period.startsWith('1911–1934 — Italian conquest') && citations.researchSourceIds.includes('usHistorianLibyaSovereignty1912')));
+const libyaVariant = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Italian Fascist settler-colonial militarism'));
+assert.ok(libyaVariant, 'Italian Libya must be a separate bounded colonial variant');
+const libyaExample = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Italian Libya is a bounded'));
+assert.ok(libyaExample, 'Italian Libya must appear as a bounded historical example');
+assert.match(libyaExample.text, /not an exact six-axis match/);
+const libyaPeople = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries;
+assert.ok(libyaPeople.some(({ name }) => name.startsWith('ʿUmar al-Mukhtār')));
+assert.ok(libyaPeople.some(({ name }) => name.startsWith('Rodolfo Graziani')));
+const libyaSafeguard = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Italian Libya case adds a periodization'));
+assert.ok(libyaSafeguard, 'Italian Libya must add a source-balance safeguard');
+assert.match(libyaSafeguard.text, /single casualty count/);
+assert.ok(germanSouthWestAfricaEntry.researchGaps.some((gap) => gap.startsWith('The Italian Libya case remains bounded')));
+
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['tocquevilleAlgeria1841French', 'primary', '1841', ['French'], 'medium'],
   ['tocquevilleAfricaReport1847French', 'primary', '1847-05-28', ['French'], 'medium'],
   ['algeriaSenatusConsulte1865', 'primary', '1865-07-14', ['French'], 'high'],
