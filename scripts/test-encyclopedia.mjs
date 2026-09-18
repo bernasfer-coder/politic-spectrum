@@ -191,6 +191,38 @@ const tunisianExample = liberalConstitutionalismEntry.sections.find(({ id }) => 
 assert.ok(tunisianExample, 'Tunisia must appear as a bounded historical example');
 assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Tunisian case adds a formalism')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Collate the Arabic and French witnesses of the Tunisian Constitution')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['frusChinaProvincialAssemblies1908', 'primary', '1908', ['English translation'], 'high'],
+  ['frusChinaProvisionalConstitution1912', 'primary', '1914', ['English translation'], 'high'],
+  ['changLateQingConstitutionalism1989', 'secondary', '1989', ['English translation'], 'high'],
+  ['zarrowAfterEmpire2012', 'secondary', '2012', ['English'], 'high'],
+  ['zhangConstitutionalReformsChina2024', 'secondary', '2024-12-19', ['English'], 'medium'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Chinese constitutionalism reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'), `${sourceId} needs a liberal-constitutionalist backlink`);
+}
+const chineseDescription = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(chineseDescription.some(({ text }) => text?.startsWith('Late-Qing and early republican China adds an East Asian constitutional case')));
+const chineseHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1908–1914 — Late-Qing reform'));
+assert.ok(chineseHistory, 'the late-Qing and early republican constitutional sequence must remain visible');
+assert.match(chineseHistory.text, /dissolved representative bodies/);
+const chineseVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Late-Qing constitutional reform'));
+assert.ok(chineseVariant, 'the Chinese constitutional variant must be separated as a dated case');
+const chineseExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Late-Qing and early republican China is a bounded example'));
+assert.ok(chineseExample, 'China must appear as a bounded historical example');
+assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Chinese sequence adds a safeguard')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Study the late-Qing constitutional movement')));
 for (const [sourceId, role, date] of [
   ['southAfricaConstitution1996Rights', 'primary', '1996'],
   ['southAfricaMakwanyaneCourt1995', 'primary', '1995-06-06'],
