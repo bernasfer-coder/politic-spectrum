@@ -3928,8 +3928,10 @@ for (const [sourceId, evidenceRole] of [
 
 const omanMonarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['omanBasicStatute1996Wipo', 'primary', '1996-11-06', ['Arabic', 'English unofficial translation'], 'high'],
   ['omanRoyalDecreeBasicStatute2021', 'primary', '2021-01-11', ['English witness; Arabic original and Gazette not collated'], 'high'],
   ['omanBasicStatuteArabic2021', 'primary', '2021-01-11', ['Arabic', 'English witness'], 'high'],
+  ['omanMajlisLaw2021Arabic', 'primary', '2021-01-11', ['Arabic'], 'high'],
   ['omanForeignMinistryBasicStatute2026', 'contextual', '2026-01-16', ['English'], 'medium'],
   ['alTaleiOmanCouncilPowers2021', 'secondary', '2021-04-12', ['English'], 'medium'],
   ['alKiyumiOmanConstitution2012', 'secondary', '2012-06-12', ['English'], 'medium'],
@@ -3952,6 +3954,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
 const omanHistory = omanMonarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1996–2021: Oman'));
 assert.ok(omanHistory, 'the Oman constitutional-monarchical timeline case must remain visible');
 assert.match(omanHistory.text, /post-2011/);
+assert.match(omanHistory.text, /Council law/);
 const omanExample = omanMonarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Oman’s hereditary'));
 assert.ok(omanExample, 'Oman must appear as a bounded historical example');
 assert.match(omanExample.caveat, /does not establish current political practice/);
