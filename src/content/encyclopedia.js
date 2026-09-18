@@ -13525,6 +13525,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             text: 'Articles 27–28 address women’s rights and self-organization; article 87 sets a minimum 40% representation for each of its two gender categories, not 50–50 parity. Article 92 separates religion and state while qualifying worship by public order. These are formal commitments, not verified outcomes.',
             citations: citations([], ['rojavaCharter2014Institute']),
           },
+          {
+            type: 'paragraph',
+            text: 'Yugoslav workers’ self-management is a useful adjacent case because it placed elected and recallable workers’ councils inside publicly owned enterprises, but it did not abolish the state or party monopoly. The 1950 law kept enterprises within a state economic plan and made management answerable both to workers’ councils and competent state organs. Later constitutional and historical studies describe a changing mixture of workplace participation, state planning, market reform, bureaucracy, and political control. It is therefore evidence of a state-socialist self-management model, not a complete libertarian-socialist society or a sovereign-state match for this card.',
+            citations: citations([], ['yugoslaviaSelfManagementLaw1950', 'antonijevicYugoslavSelfManagement2026', 'anticYugoslavSelfManagement2016', 'kevenhorsterYugoslavSelfManagement1971German']),
+          },
         ],
       },
       {
@@ -13570,6 +13575,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             period: 'Council, autonomy, and anti-bureaucratic socialism — 1945–1970s',
             text: 'Postwar worker and council movements revisited the relationship among workplace democracy, party organization, bureaucracy, and state power. The Hungarian Revolution, Yugoslav self-management, Western European council currents, autonomist Marxism, and independent socialist groups generated different proposals and practices. They cannot be collapsed into anarchism, but they broadened the libertarian socialist argument that formal nationalization is not equivalent to worker control.',
             citations: citations(['luxemburgReformRevolution', 'bakuninStatism'], ['sepLuxemburg', 'sepSocialism', 'openTextbook']),
+          },
+          {
+            period: '1949–1950 — Yugoslav workers’ self-management begins',
+            text: 'After the Tito–Stalin split, Yugoslav leaders developed a self-management model that presented workers’ councils and social ownership as an alternative to Soviet centralism. The 26 June 1950 Basic Law allowed workers’ collectives to elect and recall councils and management boards, while retaining state plans, state directives, and state-linked appointment of directors. Later scholarship identifies both a real decentralizing and participatory experiment and a continuing one-party, bureaucratic framework; the case is best classified as a qualified adjacent model rather than anarchist or stateless socialism.',
+            citations: citations([], ['yugoslaviaSelfManagementLaw1950', 'anticYugoslavSelfManagement2016', 'antonijevicYugoslavSelfManagement2026', 'kevenhorsterYugoslavSelfManagement1971German']),
           },
           {
             period: 'Communalism, ecology, feminism, and autonomy — late twentieth century',
@@ -13638,6 +13648,12 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 citations: citations([], ['hammyMileyRojava2022']),
               },
               {
+                label: 'Yugoslav self-management and market socialism',
+                distinction: 'A state-socialist model using social ownership, workers’ councils, delegated management, constitutional self-management and, later, market mechanisms within a one-party federation.',
+                relation: 'It overlaps with libertarian socialism on worker participation and opposition to Soviet-style central planning, but differs through party-state authority, state planning, director power and the absence of a fully anti-state institutional design. Its historical record is a comparison case, not an alias or complete ideological match.',
+                citations: citations([], ['yugoslaviaSelfManagementLaw1950', 'anticYugoslavSelfManagement2016', 'antonijevicYugoslavSelfManagement2026', 'zaccariaYugoslavSelfManagement2025', 'kevenhorsterYugoslavSelfManagement1971German']),
+              },
+              {
                 label: 'Autonomism and prefigurative politics',
                 distinction: 'Emphasizes autonomous organization, refusal of party mediation, worker and social movements, and building desired relations in the present.',
                 relation: 'Can overlap with libertarian Marxism, feminism, anti-racism, and community organizing without requiring one constitutional model or a complete common economy.',
@@ -13672,6 +13688,18 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             type: 'paragraph',
             text: 'The Spanish anarchist collectives, the Makhnovist movement in Ukraine, workers’ councils, and cooperative or municipal experiments are useful historical cases because they expose both the promise and the difficulty of self-management. Their institutions differed in membership, coercion, gender relations, military organization, relation to markets, and interaction with other political forces. They should be studied as evidence about practices and trade-offs, not as proof that the entire doctrine succeeded or failed.',
             citations: citations(['bakuninStatism', 'kropotkinConquestBread', 'bookchinLibertarianMunicipalism'], ['cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives']),
+          },
+          {
+            type: 'examples',
+            entries: [
+              {
+                name: 'Yugoslav workers’ self-management',
+                period: 'Socialist Yugoslavia, 1950–1990',
+                match: 'bounded example of social ownership, elected workplace councils and partial decentralization within a socialist state',
+                caveat: 'The 1950 law formally provided election and recall, but enterprises remained within state plans and under state-linked management. Later scholarship and a contemporaneous German analysis record party, director and bureaucratic power, while the model changed across constitutional and economic phases. It should not be labeled anarchist, fully libertarian, or a uniform country-wide outcome without period-specific evidence.',
+                citations: citations([], ['yugoslaviaSelfManagementLaw1950', 'anticYugoslavSelfManagement2016', 'antonijevicYugoslavSelfManagement2026', 'kevenhorsterYugoslavSelfManagement1971German']),
+              },
+            ],
           },
           {
             type: 'paragraph',
@@ -13750,6 +13778,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           },
           {
             type: 'paragraph',
+            text: 'Yugoslav self-management demonstrates why worker councils cannot be treated as a sufficient measure of anti-authoritarianism. The 1950 legal design combined elected and recallable councils with state plans, directives and state-linked director appointments. Antonijević finds that state control of investment and a large share of surplus persisted in the early phase; Kevenhörster’s German analysis argues that directors, management committees, party organizations and unions retained decisive influence; Antić connects the language of self-management to both later liberalization and the coercive Goli Otok re-education system. The case therefore records a real institutional experiment alongside limits that matter for the authority score.',
+            citations: citations([], ['yugoslaviaSelfManagementLaw1950', 'antonijevicYugoslavSelfManagement2026', 'kevenhorsterYugoslavSelfManagement1971German', 'anticYugoslavSelfManagement2016']),
+          },
+          {
+            type: 'paragraph',
             text: 'Writing in 2022, Cihad Hammy and Thomas Jeffrey Miley acknowledge women’s participation and local administrative functions but argue that partisan and military power constrain decision-making from below. They also question economic democratization under wartime scarcity and oil dependence. Their critically supportive interpretation draws on scholarship and movement-associated interviews; it is not a population-wide verdict or a current institutional audit.',
             citations: citations([], ['hammyMileyRojava2022']),
           },
@@ -13773,8 +13806,8 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
     ],
     references: {
       authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'kropotkinConquestBread', 'luxemburgReformRevolution', 'bookchinLibertarianMunicipalism', 'marxEngelsManifesto', 'millOnLiberty', 'fanonWretchedEarth', 'leninStateRevolution'],
-      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook', 'proudhonFederative1863French', 'dejacqueLetter1857French', 'cagiaoProudhonFederalism2011', 'msheDejacqueVolume2019', 'rojavaCharter2014Institute', 'hrwKurdishRule2014', 'hammyMileyRojava2022'],
-      editorialNote: 'This entry treats libertarian socialism as a broad family resemblance rather than a single doctrine. It distinguishes anti-authoritarian socialism from market libertarianism, state socialism, social democracy, anarcho-communism, communalism, and cooperative practice, and records both the emancipatory aims and the institutional problems of self-management. The French additions distinguish primary proposals, a polemical intervention, attributed scholarship, and an institutional book notice. English summaries are original paraphrases, not authoritative translations or endorsements of every position held by the authors.',
+      researchSourceIds: ['sepAnarchism', 'sepSocialism', 'sepLuxemburg', 'cambridgeAnarchismBolshevism', 'cambridgeSpanishAnarchism', 'makhnoRuralAnarchism', 'socialEcologyMunicipalism', 'iloCooperatives', 'iloWorkerCooperatives', 'sepReligionPolitics', 'sepColonialism', 'sepEnvironmentalEthics', 'openTextbook', 'proudhonFederative1863French', 'dejacqueLetter1857French', 'cagiaoProudhonFederalism2011', 'msheDejacqueVolume2019', 'rojavaCharter2014Institute', 'hrwKurdishRule2014', 'hammyMileyRojava2022', 'yugoslaviaSelfManagementLaw1950', 'anticYugoslavSelfManagement2016', 'antonijevicYugoslavSelfManagement2026', 'zaccariaYugoslavSelfManagement2025', 'kevenhorsterYugoslavSelfManagement1971German'],
+      editorialNote: 'This entry treats libertarian socialism as a broad family resemblance rather than a single doctrine. It distinguishes anti-authoritarian socialism from market libertarianism, state socialism, social democracy, anarcho-communism, communalism, and cooperative practice, and records both the emancipatory aims and the institutional problems of self-management. The French additions distinguish primary proposals, a polemical intervention, attributed scholarship, and an institutional book notice. The Yugoslav addition distinguishes a state-socialist workers’ council model from anti-state socialism and keeps formal law, scholarly interpretation, and implementation criticism separate. English summaries are original paraphrases, not authoritative translations or endorsements of every position held by the authors.',
     },
     researchGaps: [
       'Add original-language research in Spanish, Catalan, French, German, Italian, Russian, Ukrainian, Portuguese, Arabic, and other relevant languages on syndicalism, councils, communalism, autonomy, and worker control.',
@@ -13789,6 +13822,7 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
       'Resolve the existing religion discrepancy of +42 in this article versus +45 in the card through explicit editorial review; all six coordinates are unchanged. Audit the card’s person/example links, including the Luxemburg link currently pointing to a Bernstein biography, before treating them as adequate individual-level evidence.',
       'Collate the 2014 Social Contract with dated Kurdish and Arabic originals, identify translators, and examine later charter versions separately. Do not carry the 2014 institutional snapshot forward as a present-day assessment without fresh evidence.',
       'Deepen the Rojava comparison with women’s own institutional records, minority and opposition accounts, cooperative membership and budget evidence, and independent council studies. Read contrasting scholarship in full and examine interview selection and translation before generalizing about participation or economic outcomes.',
+      'Compare Yugoslav self-management across the 1950 law, 1953, 1963 and 1974 constitutional phases and the 1965 market reform using Serbo-Croatian, Slovene and Macedonian primary texts, worker testimony, enterprise records, strike data and republic-specific scholarship. The present addition establishes a bounded comparison case, not a complete social history or a final authority coordinate.',
     ],
   },
   'indigenous-relational-governance': {
