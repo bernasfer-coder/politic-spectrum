@@ -806,17 +806,41 @@ for (const [sourceId, role, date, languages] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
 }
+for (const [sourceId, role, date, languages, confidence] of [
+  ['parliamentCdsConstitutionProject1975', 'primary', '1975', ['Portuguese'], 'high'],
+  ['portugalConstitutionalRevisionsOfficial', 'contextual', null, ['English'], 'high'],
+  ['cdsHistoryOfficial', 'contextual', null, ['Portuguese'], 'medium'],
+  ['duartePortugueseRight2016', 'secondary', '2016-06', ['Portuguese'], 'medium'],
+  ['monizBrissosReligiousPopulismPortugal2022', 'secondary', '2022', ['Portuguese', 'English'], 'medium'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an extended Portuguese Christian-democratic reference trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
 const portugalHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
-const portugalTimeline = portugalHistory.find(({ period }) => period.startsWith('1974–1982 — Portuguese'));
+const portugalTimeline = portugalHistory.find(({ period }) => period.startsWith('1974–1989 — Portuguese'));
 assert.ok(portugalTimeline, 'the Portuguese Christian-democratic transition case must remain visible');
 assert.ok(portugalTimeline.citations.researchSourceIds.includes('portugalConstitution1976Official'));
+assert.ok(portugalTimeline.citations.researchSourceIds.includes('parliamentCdsConstitutionProject1975'));
+assert.ok(portugalTimeline.citations.researchSourceIds.includes('portugalConstitutionalRevisionsOfficial'));
 const portugalVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Portuguese transition-era Christian democracy'));
 assert.ok(portugalVariant, 'the Portuguese case must be separated as a dated Christian-democratic variant');
 const portugalExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Portuguese Christian-democratic'));
 assert.ok(portugalExample, 'Portugal must appear as a bounded Christian-democratic historical example');
 assert.match(portugalExample.caveat, /wider constituent settlement/);
+assert.match(portugalExample.caveat, /religious-populist/);
 assert.ok(christianCriticisms.some(({ text }) => text?.startsWith('Portugal adds a transition and attribution safeguard')));
-assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read the full Portuguese CDS and PDC programmes')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read the full Portuguese CDS and PDC programmes, including the CDS July 1975 constitutional project')));
 for (const [sourceId, role, date, language, confidence] of [
   ['ovpFoundation1945German', 'contextual', null, 'German', 'high'],
   ['ovpProgramme1945German', 'primary', '1945', 'German', 'medium'],
