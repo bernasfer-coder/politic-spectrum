@@ -1808,6 +1808,42 @@ assert.match(libyaSafeguard.text, /single casualty count/);
 assert.ok(germanSouthWestAfricaEntry.researchGaps.some((gap) => gap.startsWith('The Italian Libya case remains bounded')));
 
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['haitiAmericanConvention1915', 'primary', '1915-09-16', ['English', 'French'], 'high'],
+  ['haitiOccupationStateHistorian1915', 'secondary', null, ['English'], 'high'],
+  ['rendaTakingHaiti2001', 'secondary', '2001', ['English'], 'medium'],
+  ['reichardtHaitiPublicHealth2019', 'secondary', '2019-12-19', ['English'], 'high'],
+  ['castorHaitiOccupation1974', 'secondary', '1974', ['English translation', 'French publication context'], 'medium'],
+  ['blancpainHaitiOccupation1999', 'secondary', '1999', ['French'], 'medium'],
+]) {
+  assert.ok(germanSouthWestAfricaEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Haiti occupation reference trail`);
+  assert.ok(JSON.stringify(germanSouthWestAfricaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const haitiHistory = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(haitiHistory.some(({ period, citations }) => period.startsWith('1915–1934 — U.S. occupation of Haiti') && citations.researchSourceIds.includes('haitiAmericanConvention1915')));
+const haitiVariant = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('U.S. occupation of Haiti'));
+assert.ok(haitiVariant, 'Haiti must be a separate bounded colonial variant');
+const haitiExample = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The U.S. occupation of Haiti'));
+assert.ok(haitiExample, 'Haiti must appear as a bounded historical example');
+assert.match(haitiExample.text, /not an exact six-axis match/);
+const haitiPeople = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries;
+assert.ok(haitiPeople.some(({ name }) => name.startsWith('Charlemagne Péralte')));
+const haitiSafeguard = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Haitian occupation adds a safeguard'));
+assert.ok(haitiSafeguard, 'Haiti must add a treaty-and-development safeguard');
+assert.match(haitiSafeguard.text, /equal partnership/);
+assert.ok(germanSouthWestAfricaEntry.researchGaps.some((gap) => gap.startsWith('The Haiti case remains bounded')));
+
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['tocquevilleAlgeria1841French', 'primary', '1841', ['French'], 'medium'],
   ['tocquevilleAfricaReport1847French', 'primary', '1847-05-28', ['French'], 'medium'],
   ['algeriaSenatusConsulte1865', 'primary', '1865-07-14', ['French'], 'high'],
