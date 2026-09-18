@@ -674,6 +674,37 @@ assert.match(swissExample.caveat, /cantonal variation/);
 assert.ok(christianCriticisms.some(({ text }) => text?.includes('Swiss case adds a safeguard')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Extend the Swiss case through')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Separate the national CVP/PDC')));
+for (const [sourceId, role, date, languages, confidence] of [
+  ['kadocBekeCvp1945', 'secondary', '2005', ['Dutch'], 'high'],
+  ['cdvHistoryCvp1945', 'primary', null, ['Dutch'], 'medium'],
+  ['conwayBelgiumPoliticalCatholicism1996', 'secondary', '1996-04-11', ['English'], 'medium'],
+  ['jadoullePscCvpProgramme1995French', 'secondary', '1995', ['French'], 'medium'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Belgian Christian-democratic reference trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const belgianHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+const belgianTimeline = belgianHistory.find(({ period }) => period.startsWith('1945–1968: Belgian'));
+assert.ok(belgianTimeline, 'the Belgian CVP/PSC timeline case must remain visible');
+assert.ok(belgianTimeline.citations.researchSourceIds.includes('kadocBekeCvp1945'));
+const belgianVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Belgian postwar people’s-party'));
+assert.ok(belgianVariant, 'the Belgian case must be separated as a dated Christian-democratic variant');
+const belgianExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Belgium: CVP/PSC'));
+assert.ok(belgianExample, 'Belgium must appear as a bounded Christian-democratic historical example');
+assert.match(belgianExample.caveat, /present-day Belgian classification/);
+assert.ok(christianCriticisms.some(({ text }) => text?.startsWith('The Belgian case adds a pillarization-and-internal-conflict safeguard')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('The Belgian addition remains bounded')));
 for (const [sourceId, role, date, languages] of [
   ['cdsDeclarationPrinciples1974', 'primary', '1974-07-19', ['Portuguese']],
   ['portugalConstitution1976Official', 'primary', '1976-04-02', ['Portuguese']],
