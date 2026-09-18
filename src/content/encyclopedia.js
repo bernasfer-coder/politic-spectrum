@@ -3085,6 +3085,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Councils and parliaments were not always rival camps. Wolfgang Kruse describes most German councils in 1918 as supporting parliamentary democracy while seeking wider changes in public institutions and economic power.',
             citations: citations([], ['kruseGermanRevolution']),
           },
+          {
+            type: 'paragraph',
+            text: 'The French republican-socialist tradition adds a distinct route into this debate. In a parliamentary speech delivered on 21 November 1893, Jean Jaurès connected republican democracy with socialist transformation; Kermoal’s historical account interprets that connection as an effort to make political and economic democracy continuous rather than mutually exclusive. This is evidence of a French intellectual and political current, not proof that every SFIO member, republican socialist, or later social-democratic party shared one programme.',
+            citations: citations([], ['jauresRepubliqueSocialisme1893', 'kermoalJauresRepublic2014', 'jauresArchive']),
+          },
         ],
       },
       {
@@ -3133,9 +3138,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['bernsteinEvolutionarySocialism', 'luxemburgReformRevolution'], ['sepSocialism', 'sepLuxemburg']),
           },
           {
-            period: 'French republican socialism and socialist unity',
-            text: 'Jean Jaurès represented a French current that connected republican democracy, social ownership, political education, and the unity of socialist forces. His work shows that democratic socialism was not only a German or British debate and that socialism could be articulated through republican citizenship rather than a rejection of democratic institutions.',
-            citations: citations(['jauresSocialistHistory'], ['jauresArchive', 'sepSocialism']),
+            period: '1893–1914: French republican socialism and socialist unity',
+            text: 'Jean Jaurès’s 1893 parliamentary speech is a primary witness to a French attempt to connect republican democracy and socialist transformation. Kermoal describes Jaurès’s effort to anchor socialist unity in the Republic while negotiating with revolutionary currents; Viard places republican socialism in a longer French genealogy, and Billard shows that an independent republican-socialist party later existed outside the unified SFIO. The episode demonstrates a real democratic-socialist family resemblance without settling the differences among Jaurésian, Guesdist, syndicalist, parliamentary, and republican currents.',
+            citations: citations(['jauresSocialistHistory'], ['jauresRepubliqueSocialisme1893', 'kermoalJauresRepublic2014', 'viardRepublicanSocialismOrigins1986', 'billardRepublicanSocialistParty1996', 'jauresArchive', 'sepSocialism']),
           },
           {
             period: '1917–1930s: revolution, civil liberties, and party-state divergence',
@@ -3196,6 +3201,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Uses elections, legislation, unions, public services, and social ownership reforms to democratize economic power within constitutional institutions.',
                 relation: 'Closest to the main profile’s democratic safeguards, but it differs internally over whether capitalism is regulated, gradually transformed, or ultimately replaced.',
                 citations: citations(['bernsteinEvolutionarySocialism', 'jauresSocialistHistory'], ['sepSocialism', 'ghdiGodesberg']),
+              },
+              {
+                label: 'Jaurésian republican socialism',
+                distinction: 'Links socialist transformation to republican citizenship, parliamentary democracy, civic education, and social ownership rather than treating the Republic as merely a bourgeois obstacle.',
+                relation: 'A specifically French democratic-socialist variant; it differs from revolutionary anti-parliamentarism and from republicanism that leaves ownership and class power largely unchanged.',
+                citations: citations([], ['jauresRepubliqueSocialisme1893', 'kermoalJauresRepublic2014', 'viardRepublicanSocialismOrigins1986', 'billardRepublicanSocialistParty1996']),
               },
               {
                 label: 'Market socialism',
@@ -3264,8 +3275,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'Jean Jaurès',
                 role: 'French socialist and republican thinker who connected democracy, social transformation, and socialist unity',
-                caveat: 'Jaurès represents one French democratic-socialist current rather than a complete model for all socialist parties or periods.',
-                citations: citations(['jauresSocialistHistory'], ['jauresArchive', 'sepSocialism']),
+                caveat: 'Jaurès represents one French republican-socialist current rather than a complete model for all socialist parties or periods; his stated commitments do not by themselves establish implementation, colonial policy, or the position of every later SFIO current.',
+                citations: citations(['jauresSocialistHistory'], ['jauresRepubliqueSocialisme1893', 'kermoalJauresRepublic2014', 'jauresArchive', 'sepSocialism']),
               },
               {
                 name: 'Eduard Bernstein',
@@ -3316,7 +3327,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: 'late nineteenth and early twentieth centuries',
                 match: 'historical intellectual and movement comparator',
                 caveat: 'The French socialist field contained competing revolutionary, parliamentary, republican, syndicalist, and anti-colonial currents.',
-                citations: citations(['jauresSocialistHistory'], ['jauresArchive', 'sepSocialism']),
+                citations: citations(['jauresSocialistHistory'], ['jauresRepubliqueSocialisme1893', 'kermoalJauresRepublic2014', 'viardRepublicanSocialismOrigins1986', 'billardRepublicanSocialistParty1996', 'jauresArchive', 'sepSocialism']),
               },
               {
                 name: 'Nordic welfare-state and labor institutions',
@@ -3371,6 +3382,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The French case adds a label and coalition warning. Kermoal presents Jaurès’s republican socialism as a negotiated attempt to join parliamentary democracy with social transformation, while Billard documents an independent republican-socialist party outside the unified SFIO and Viard situates republican socialism in a broader genealogy. These sources support a differentiated French variant, not a single settled doctrine; questions about syndicalism, colonialism, gender, religion, and concrete economic implementation remain open.',
+            citations: citations([], ['jauresRepubliqueSocialisme1893', 'kermoalJauresRepublic2014', 'viardRepublicanSocialismOrigins1986', 'billardRepublicanSocialistParty1996']),
+          },
+          {
+            type: 'paragraph',
             text: 'Historical possibility is contested. In 1978, Eckhard Jesse and Henning Köhler challenged claims that councils could have secured a more durable democracy, emphasizing their mandate, administrative capacity, and relations with parliament. Kruse’s later synthesis emphasizes their democratic aspirations while acknowledging uncertainty about achievable reforms. These readings warrant examination of local evidence; neither makes an unrealized alternative a demonstrated outcome.',
             citations: citations([], ['jesseKoehlerCouncilDebate', 'kruseGermanRevolution']),
           },
@@ -3389,12 +3405,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['marxEngelsManifesto', 'bernsteinEvolutionarySocialism', 'luxemburgReformRevolution', 'jauresSocialistHistory', 'millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'kantPerpetualPeace', 'morgenthauRealism', 'leninStateRevolution'],
-      researchSourceIds: ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg', 'jauresArchive', 'sepLiberalism', 'sepReligionPolitics', 'luxemburgSpartacusGerman', 'ghdiWeimarGerman', 'kruseGermanRevolution', 'jesseKoehlerCouncilDebate', 'allendeCongress1971Spanish', 'chileCopperLaw17450', 'memoriaCopperNationalization', 'memoriaUnidadPopular', 'vergaraCopperModernization2004', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
-      editorialNote: 'The entry keeps democratic socialism distinct from both reformist social democracy and authoritarian state socialism, while acknowledging that historical parties and authors use the labels differently. Scores describe a didactic democratic ownership profile, not a single party programme or country. German primary documents are paraphrased independently; GHDI provides selected excerpts. Luxemburg’s programme records proposals, and the Kruse and Jesse–Köhler accounts supply attributed historical interpretations. None measures six-axis coordinates. The Chilean case distinguishes a presidential speech, statutory provisions, institutional synthesis, and a selected-section scholarly reading. Spanish material is independently paraphrased in English, not quoted or presented as a verified translation. No current-country claim or coordinate changes result.',
+      researchSourceIds: ['sepSocialism', 'sepLuxemburg', 'ghdiGodesberg', 'jauresArchive', 'jauresRepubliqueSocialisme1893', 'kermoalJauresRepublic2014', 'billardRepublicanSocialistParty1996', 'viardRepublicanSocialismOrigins1986', 'sepLiberalism', 'sepReligionPolitics', 'luxemburgSpartacusGerman', 'ghdiWeimarGerman', 'kruseGermanRevolution', 'jesseKoehlerCouncilDebate', 'allendeCongress1971Spanish', 'chileCopperLaw17450', 'memoriaCopperNationalization', 'memoriaUnidadPopular', 'vergaraCopperModernization2004', 'oecdWelfareModels', 'vdem', 'ches', 'foreignPolicy'],
+      editorialNote: 'The entry keeps democratic socialism distinct from both reformist social democracy and authoritarian state socialism, while acknowledging that historical parties and authors use the labels differently. Scores describe a didactic democratic ownership profile, not a single party programme or country. This pass adds a bounded French evidence layer: Jaurès’s 1893 primary speech, Kermoal’s institutional interpretation, and Viard and Billard on republican-socialist origins and party organization. Those sources are paraphrased independently and do not settle the full French socialist, colonial or implementation history. German primary documents are paraphrased independently; GHDI provides selected excerpts. Luxemburg’s programme records proposals, and the Kruse and Jesse–Köhler accounts supply attributed historical interpretations. None measures six-axis coordinates. The Chilean case distinguishes a presidential speech, statutory provisions, institutional synthesis, and a selected-section scholarly reading. Spanish material is independently paraphrased in English, not quoted or presented as a verified translation. No current-country claim or coordinate changes result.',
     },
     researchGaps: [
       'German primary documents and contrasting interpretations now cover part of the 1918–1919 council debate. Add local council records, implementation studies of Weimar labor participation, and specialist research on the SPD, Godesberg, East German socialist experience, and post-war constitutional debates. Compare Luxemburg’s programme with her other writings before generalizing its institutional commitments.',
-      'Add French-language scholarship on Jaurès, the SFIO, syndicalism, republican socialism, colonialism, and the relationship between democratic and revolutionary currents.',
+      'This pass adds French primary and secondary sources on Jaurès and republican socialism: the 1893 speech, Kermoal’s institutional interpretation, and Viard and Billard on origins and party organization. Still add specialist French scholarship on the SFIO, syndicalism, colonialism, religion, gender, and the relationship between democratic and revolutionary currents; collate the complete speeches, party records, and implementation history before treating the French variant as representative.',
       'Add Portuguese- and Spanish-language scholarship on Iberian socialism, Latin American democratic socialism, Allende, social movements, and the different meanings of state, communal, and worker ownership.',
       'Add country-specific evidence before listing present parties, welfare states, or cooperative systems as democratic-socialist examples; party labels and institutions change over time.',
       'Add specialist research on gender, race, migration, disability, colonial legacies, ecology, technology, international trade, military alliances, and the governance of large-scale economic planning.',

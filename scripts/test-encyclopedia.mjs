@@ -2429,6 +2429,26 @@ for (const [sourceId, evidenceRole, publicationDate] of [
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:democratic-socialist'), `${sourceId} needs an encyclopedia backlink`);
   if (sourceId.startsWith('memoria')) assert.match(record.license, /excluding digital objects/, 'a research-text licence must not cover every collection item');
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['jauresRepubliqueSocialisme1893', 'primary', '1893-11-21', ['French'], 'high'],
+  ['kermoalJauresRepublic2014', 'secondary', '2014-03-31', ['French'], 'high'],
+  ['billardRepublicanSocialistParty1996', 'secondary', '1996', ['French'], 'high'],
+  ['viardRepublicanSocialismOrigins1986', 'secondary', '1986', ['French'], 'medium'],
+]) {
+  assert.ok(democraticSocialistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a democratic-socialist reference trail`);
+  assert.ok(JSON.stringify(democraticSocialistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:democratic-socialist'), `${sourceId} needs an encyclopedia backlink`);
+}
 const allendeSpeech = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-allendeCongress1971Spanish');
 const copperLaw = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-chileCopperLaw17450');
 const vergaraCopper = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-vergaraCopperModernization2004');
@@ -2442,6 +2462,12 @@ assert.match(democraticSocialistDescription, /not evidence that workers controll
 const democraticSocialistHistory = democraticSocialistEntry.sections.find(({ id }) => id === 'history').timeline.map(({ text }) => text).join(' ');
 assert.match(democraticSocialistHistory, /not a finding that every action/, 'political commitments must not become certified outcomes');
 assert.match(democraticSocialistHistory, /broader than support for his entire socialist programme/, 'one legislative vote must not classify every supporter');
+assert.match(democraticSocialistHistory, /republican-socialist/, 'French republican-socialist history must remain visible');
+const democraticSocialistVariants = democraticSocialistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).map(({ label }) => label);
+assert.ok(democraticSocialistVariants.includes('Jaurésian republican socialism'), 'the French variant must be separately named');
+const democraticSocialistCriticisms = democraticSocialistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
+assert.match(democraticSocialistCriticisms, /French case adds a label and coalition warning/, 'French sources must retain their coalition and label boundary');
+assert.ok(democraticSocialistEntry.researchGaps.some((gap) => gap.startsWith('This pass adds French primary and secondary sources')), 'the French follow-up boundary must remain visible');
 assert.ok(democraticSocialistEntry.researchGaps.some((gap) => gap.includes('compensation decisions')), 'implementation research must remain open');
 assert.ok(democraticSocialistEntry.researchGaps.some((gap) => gap.includes('domestic and foreign intervention')), 'the wider breakdown must remain an explicit research task');
 
