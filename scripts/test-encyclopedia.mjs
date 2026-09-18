@@ -2315,6 +2315,26 @@ for (const [sourceId, evidenceRole, publicationDate] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:authoritarian-collectivist'], `${sourceId} must stay within the selected entry`);
 }
+for (const [sourceId, evidenceRole, publicationDate, language] of [
+  ['vietnamConstitution1980', 'primary', '1980-12-18', 'Vietnamese'],
+  ['vietnamConstitution2013', 'primary', '2013-11-28', 'English'],
+  ['cambridgeVietnamPartyLeadership2016', 'secondary', '2016', 'English'],
+  ['cambridgeVietnamMarxMarket2016', 'secondary', '2016', 'English'],
+  ['vnuVietnamDoiMoi1986', 'contextual', '2016', 'English'],
+]) {
+  assert.ok(authoritarianCollectivistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an authoritarian-collectivist reference trail`);
+  assert.ok(JSON.stringify(authoritarianCollectivistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:authoritarian-collectivist'], `${sourceId} must stay within the selected entry`);
+}
 const friedrichshainResolution = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-friedrichshainWorkers1953');
 const sedNormsDeclaration = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sedNormsDeclaration1953');
 const berlinUprisingHistory = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-cieslaHertleWahlBerlin1953');
@@ -2327,11 +2347,15 @@ const authoritarianDescription = authoritarianCollectivistEntry.sections.find(({
 assert.match(authoritarianDescription, /not independent proof/, 'a party declaration must not certify free workplace consent');
 const authoritarianHistory = authoritarianCollectivistEntry.sections.find(({ id }) => id === 'history').timeline.map(({ text }) => text).join(' ');
 assert.match(authoritarianHistory, /not a programme shared by every East German worker/, 'one resolution must not represent every worker');
+assert.match(authoritarianHistory, /Vietnam’s official constitutional record/, 'the Vietnam constitutional case needs a dated historical row');
+assert.match(authoritarianHistory, /The Sixth National Congress formally redirected Vietnam’s economic policy/, 'the Vietnam reform case needs a dated historical row');
 const authoritarianCriticisms = authoritarianCollectivistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
 assert.match(authoritarianCriticisms, /not this entry’s explanation/, 'official conspiracy allegations must not become editorial findings');
 assert.match(authoritarianCriticisms, /foreign-policy preferences must remain separate/, 'an ally’s intervention must not determine the subject’s foreign-policy score');
+assert.match(authoritarianCriticisms, /economic liberalization as political pluralism/, 'Vietnam economic reform must not be equated with pluralism');
 assert.ok(authoritarianCollectivistEntry.researchGaps.some((gap) => gap.includes('pay records, union practices')), 'workplace implementation research must remain open');
 assert.ok(authoritarianCollectivistEntry.researchGaps.some((gap) => gap.includes('beyond Berlin')), 'regional diversity must remain an explicit gap');
+assert.ok(authoritarianCollectivistEntry.researchGaps.some((gap) => gap.includes('For Vietnam, read the complete Vietnamese')), 'Vietnam implementation and lived-experience gaps must remain explicit');
 
 const anarchistCommunalistEntry = ENCYCLOPEDIA_ENTRIES['anarchist-communalist'];
 const anarchistCommunalistProfile = ARCHETYPES.find(({ id }) => id === 'anarchist-communalist').profile;
