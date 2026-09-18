@@ -127,6 +127,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The East German case also separates constitutional self-description from social transformation. The 1968 Constitution presented the GDR as a socialist state whose working population realized socialism under the leadership of the working class and its Marxist-Leninist party, while its peace and international-law language framed the state’s external identity. Kleßmann’s German history of the 1950s and Ross’s grassroots study show why those declarations require institutional and local evidence: party-state hierarchy, economic planning, coercion, social provision, adaptation, and unplanned action did not operate at one uniform level.',
             citations: citations([], ['ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Cuba’s 2019 Constitution supplies a bounded Spanish- and Caribbean-language case. It defines the republic as socialist, places the Communist Party in a constitutionally superior leadership position, describes a planned socialist economy that regulates the market, recognizes several forms of property including private property, and establishes elected organs of People’s Power. The text therefore combines party-state authority and public direction with legal adaptation to market activity; it is evidence of institutional design, not proof that every provision was implemented or that all citizens shared the same political outlook.',
+            citations: citations([], ['cubaConstitution2019', 'buiCubaConstitution2020', 'iachrCuba2020']),
+          },
         ],
       },
       {
@@ -182,6 +187,21 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Decolonization and non-European communist regimes — 1945–1980s',
             text: 'China, Vietnam, Cuba, North Korea, Laos, and other revolutionary regimes developed through anti-colonial struggle, civil war, international aid, state-building, and security competition. Their political institutions and economic pathways differed, so the profile should not equate party-state authority with one European model or treat national liberation as mere imitation of the Soviet Union.',
             citations: citations(['leninStateRevolution', 'marxEngelsManifesto'], ['oxfordAuthoritarianConsolidation', 'oxfordHistoryCommunism', 'sepColonialism']),
+          },
+          {
+            period: '1959–1976: revolutionary institutionalization in Cuba',
+            text: 'After the 1959 Revolution, the revolutionary government replaced the 1940 constitutional order with a Fundamental Law in 1959 and later adopted the 1976 Constitution, which the Inter-American Commission describes as Cuba’s first constitution based on Marxist-Leninist principles. This sequence marks a process of institutionalization rather than a single founding moment; the official constitutional record and the Commission’s assessment are distinct evidence layers.',
+            citations: citations([], ['iachrCuba2020']),
+          },
+          {
+            period: '2018–2019: Cuban constitutional reform and referendum',
+            text: 'The 2019 Constitution followed a commission process, public consultation and a referendum. Ngoc Son Bui interprets the process as a Cuban “reservation model” of socialist constitutional change, emphasizing consultation, mass participation and referendum within Cuban Caribbean Marxism. Portuguese-language scholarship by Bello and Barbosa similarly treats the text as an attempt to adapt socialist institutions toward greater participation and new economic forms. These are scholarly interpretations of a documented process, not evidence that consultation created competitive party pluralism or independent power centers.',
+            citations: citations([], ['cubaConstitution2019', 'buiCubaConstitution2020', 'belloBarbosaCuba2019', 'backerSapioKormanCuba2020']),
+          },
+          {
+            period: '2019–present: socialist-market constitutional adaptation',
+            text: 'The 2019 text retains socialist constitutional commitments while recognizing market regulation and multiple property forms. This illustrates how party-state authority and economic collectivism can diverge: a system may preserve public direction and one-party leadership while permitting more private or market activity. The constitutional provisions do not by themselves measure the scale of private production, the effectiveness of rights, or later policy implementation.',
+            citations: citations([], ['cubaConstitution2019', 'iachrCuba2020', 'oxfordContemporarySocialistLaw']),
           },
           {
             period: 'Reform, adaptation, and the socialist market — late 1970s–present',
@@ -243,6 +263,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Retains one-party political authority and significant state control while permitting private firms, market allocation, foreign investment, and unequal accumulation.',
                 relation: 'Shows why economic collectivism and authoritarian party rule can move in different directions; China and Vietnam are not identical cases.',
                 citations: citations(['leninStateRevolution'], ['aeaChinaSocialism', 'cambridgeCommunistIdeologyAdaptation', 'oxfordContemporarySocialistLaw']),
+              },
+              {
+                label: 'Cuban socialist constitutionalism',
+                distinction: 'Combines a constitutionally protected socialist order and Communist Party leadership with public consultation, elected organs of People’s Power, market regulation, and recognized private-property forms in the 2019 text.',
+                relation: 'A Caribbean variant of party-state collectivism that complicates a simple command-economy model; constitutional participation and legal rights must be distinguished from competitive pluralism and implementation.',
+                citations: citations([], ['cubaConstitution2019', 'buiCubaConstitution2020', 'belloBarbosaCuba2019', 'iachrCuba2020']),
               },
               {
                 label: 'National-developmental party socialism',
@@ -320,6 +346,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'The profile is partial: Vietnam’s reform path, economic structure, national history, and institutions differ from China, Cuba, North Korea, the USSR, and historical command economies.',
                 citations: citations(['leninStateRevolution'], ['oxfordAuthoritarianConsolidation', 'cambridgeCommunistIdeologyAdaptation', 'oxfordContemporarySocialistLaw']),
               },
+              {
+                name: 'Cuba: 2019 constitutional reform',
+                period: '1959–present; 2019 Constitution focus',
+                match: 'bounded match on socialist constitutional identity, Communist Party leadership and public direction, with market and property-law adaptations',
+                caveat: 'The constitutional text is official design; Bui, Backer–Sapio–Korman, Bello–Barbosa and the IACHR offer different scholarly or institutional readings of consultation, participation and limits. This does not establish a permanent six-axis score, uniform implementation, or one political outlook among Cubans.',
+                citations: citations([], ['cubaConstitution2019', 'buiCubaConstitution2020', 'backerSapioKormanCuba2020', 'belloBarbosaCuba2019', 'iachrCuba2020']),
+              },
             ],
           },
         ],
@@ -389,6 +422,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'Cuba shows why participation should not be treated as synonymous with pluralist accountability. The constitutional process included consultation and a referendum, and scholars disagree about how to interpret its participatory mechanisms; at the same time, the constitutional text preserves the Communist Party’s superior leadership role, while the IACHR identifies continuing concerns about concentrated powers and institutional safeguards. The cautious conclusion is not that participation was meaningless or that it made the system liberal, but that consultation, electoral choice, party competition, rights protection and independent oversight are separate variables.',
+            citations: citations([], ['buiCubaConstitution2020', 'backerSapioKormanCuba2020', 'belloBarbosaCuba2019', 'iachrCuba2020', 'cubaConstitution2019']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, the secular score requires care. Marxist materialism and party-state secularism may reduce clerical authority, yet regimes have varied from accommodation to surveillance, repression, or strategic partnership with religious institutions. A secular public law can protect belief, restrict it, or coexist with official ritual. Religion must be researched through laws, institutions, lived practice, and historical change rather than inferred from an ideological label.',
             citations: citations(['spinozaPolitical', 'hobbesLeviathan'], ['sepReligionPolitics', 'oxfordContemporarySocialistLaw', 'oxfordHistoryCommunism']),
           },
@@ -406,8 +444,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'bakuninStatism',
       ],
-      researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem', 'friedrichshainWorkers1953', 'sedNormsDeclaration1953', 'cieslaHertleWahlBerlin1953', 'lemkeJuneUprising2003', 'ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998'],
-      editorialNote: 'References support different layers of the entry: primary texts for stated theories and demands, scholarly works for interpretation, and institutional sources for bounded historical context. The comparative sources separate Soviet, East European, Chinese, Vietnamese, Cuban, North Korean, and postcolonial trajectories. The June 1953 case distinguishes workers’ demands, party declarations, historical reconstruction and editorial comparison; no source proves an exact six-axis score. German passages are independently paraphrased, not quoted or presented as verified translations. Edition and date qualifications remain in the bibliography.',
+      researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem', 'friedrichshainWorkers1953', 'sedNormsDeclaration1953', 'cieslaHertleWahlBerlin1953', 'lemkeJuneUprising2003', 'ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998', 'cubaConstitution2019', 'buiCubaConstitution2020', 'backerSapioKormanCuba2020', 'belloBarbosaCuba2019', 'iachrCuba2020'],
+      editorialNote: 'References support different layers of the entry: primary texts for stated theories and demands, scholarly works for interpretation, and institutional sources for bounded historical context. The comparative sources separate Soviet, East European, Chinese, Vietnamese, Cuban, North Korean, and postcolonial trajectories. The June 1953 case distinguishes workers’ demands, party declarations, historical reconstruction and editorial comparison; the Cuba addition distinguishes constitutional design, scholarly readings of consultation, Portuguese-language constitutional analysis and an inter-American human-rights assessment. No source proves an exact six-axis score. German and Spanish passages are independently paraphrased, not quoted or presented as verified translations. Edition and date qualifications remain in the bibliography.',
     },
     researchGaps: [
       'Add country-specific scholarly sources for East Germany, Mao-era China, Vietnam, North Korea, and Cuba rather than relying on a shared comparative frame.',
@@ -421,6 +459,9 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the June 1953 case beyond Berlin with local strike programmes, women’s experiences, rural participants, Soviet records and competing scholarship. Separate demands, concessions, repression and later memory; the four sources do not establish one programme for all protesters or complete the wider GDR research agenda.',
       'Read the full German text of the 1968 Constitution, the 1949 and 1974 constitutional versions, SED statutes, election law, court records, and archival materials on the party’s leadership claim. The selected GHDI extract is a translated two-page witness to official self-description, not a full constitutional or institutional history.',
       'Read Ross’s complete thesis and compare its East Berlin–Brandenburg findings with rural, industrial, religious, gendered, and regional studies of the GDR. Kleßmann’s institutional article and the thesis abstract establish useful boundaries but do not settle the full-period social history or the balance between coercion, consent, adaptation, and welfare.',
+      'Read the complete Spanish texts of Cuba’s 1959 Fundamental Law, 1976 and 1992 constitutional versions, and the 2019 Constitution alongside National Assembly records and later legislation. The Gaceta text establishes constitutional design, not the full history of party-state institutionalization, economic reform, rights enforcement or local government.',
+      'Read Bui’s complete Oxford chapter and the full Backer–Sapio–Korman, Bello–Barbosa and Burgos Matamoros studies, then compare their methods and normative assumptions with Cuban constitutional scholarship in Spanish. The current pass uses abstracts, metadata and selected institutional material; it does not settle the debate over socialist democracy or constitutional participation.',
+      'Compare the Cuban government’s consultation and referendum record with independent reporting, civil-society testimony, electoral law, judicial practice, economic data and rights documentation. The IACHR report adds an institutional critique, but no single source here establishes the lived reach of rights, the scale of private activity, or a current country-wide six-axis classification.',
     ],
   },
   'historical-fascist': {
