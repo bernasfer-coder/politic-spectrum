@@ -833,6 +833,10 @@ const RIGHTS_RECORDS = {
     rmcaYekeCongoFreeState2018: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original synthesis and institutional link only. No article wording, image, quotation or underlying Dutch chapter is republished; the regional case is not generalized to all Congo history.' },
     rmcaCongoArchives2022French: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original French-attributed synthesis and institutional link only. No French page wording, book chapter, quotation, image or PDF is republished; the source is used to preserve archive and uncertainty boundaries.' },
     deBrouxPiretBelgianColonialCharter2019: { ...LINK_ONLY, reviewedAt: '2026-09-18', license: 'Cairn identifies the article as CC BY-NC 4.0; those terms remain controlling.', notes: 'Original French-attributed synthesis and DOI link only. No article text, translation, quotation, table, figure or PDF is republished.' },
+    pakistanConstitution1973: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and National Assembly link only. No constitutional wording, translation, scan or PDF is republished; the consolidated English witness does not clear the Urdu original, amendment gazettes or derivative publication.' },
+    lombardiIslamicConstitutions2013: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and DOI link only. No article wording, quotation, table, figure or PDF is republished; the comparative argument is not treated as a complete Pakistan history.' },
+    khanArifPakistanShariat2018: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and publisher link only. No article wording, quotation, translation or PDF is republished; only the abstract-level account was consulted.' },
+    rizviPakistanDemocracy2013: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Oxford publisher link only. No chapter wording, quotation, table, figure or PDF is republished; the abstract does not clear reuse of the complete chapter.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },
