@@ -803,6 +803,11 @@ const RIGHTS_RECORDS = {
     callotMrpChristianDemocracy1981French: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Persée link only; no French review wording, scanned page, translation or PDF reproduced.' },
     codaccioniMrpNorth1944French: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original synthesis and Persée link only; no article wording, newspaper quotation, scan or image reproduced.' },
     thomasMrpColonialPolicy2003: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Abstract-level synthesis and DOI link only; no article wording, colonial archive, table, translation or PDF reproduced.' },
+    saudiBasicLawGovernance1992: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and WIPO Lex legal-record link only. No Arabic provision, English translation, scan or PDF is republished; the legal witness does not establish blanket rights for every hosted edition.' },
+    saudiShuraCouncil1992: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and official Shura Council link only. No FAQ wording, institutional image, member list or translated passage is republished; the page is retained as institutional self-description.' },
+    mallatSaudiConstitutionalLaw2022: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Abstract-level attributed synthesis and DOI link only. No chapter wording, table, quotation, case file or PDF is republished; the full chapter remains a research gap.' },
+    dailamiSaudiDesacraliseKingship2017: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Abstract-level attributed synthesis and DOI link only. No chapter wording, quotation, table or PDF is republished; the complete chapter and Arabic scholarship remain open.' },
+    alnemariSaudiMonarchyConstitutionalism2023: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Repository abstract-level synthesis and handle link only. No dissertation wording, Arabic legal text, table, quotation or PDF is republished; the complete dissertation remains open.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },
