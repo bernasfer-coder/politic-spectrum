@@ -738,6 +738,10 @@ const RIGHTS_RECORDS = {
     downsBengalMartialLaw2022: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Cambridge DOI/page link only. No article prose, quotation, table, figure or underlying statute reproduced; abstract access is not a licence to redistribute the article.' },
     welschCompanySword2022: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and publisher link only. No chapter wording, quotation, table, figure or archival material republished; the publisher abstract does not clear the complete copyrighted chapter.' },
     buckleyNativeTroops2010: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and publisher link only. No extract wording, article passage, quotation or vernacular source reproduced; the accessible extract does not establish permission for broader republication.' },
+    copeiHistoryOfficial: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed summary and official Spanish-language party-history link only. No page prose, image, video, party archive or quotation republished; self-description is kept distinct from independent historical evidence.' },
+    copeiMessage2025: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed summary and official party-statement link only. No statement wording, image or page assets republished; contemporary party claims are not treated as verified outcomes or neutral country evidence.' },
+    invernizziChristianDemocracyAmericas2019: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Cambridge link only. No chapter prose, quotation, figure or PDF republished; publisher summary does not clear the complete copyrighted chapter.' },
+    lupuCopeiBreakdown2016: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Cambridge link only. No chapter prose, quotation, table, figure or underlying data republished; publisher summary does not clear the complete copyrighted chapter.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },

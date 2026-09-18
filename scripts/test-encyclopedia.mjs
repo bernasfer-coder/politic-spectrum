@@ -509,6 +509,36 @@ for (const [sourceId, role, date, language] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
 }
+for (const [sourceId, role, date, language, confidence] of [
+  ['copeiHistoryOfficial', 'primary', null, 'Spanish', 'medium'],
+  ['copeiMessage2025', 'primary', '2025-01-14', 'Spanish', 'medium'],
+  ['invernizziChristianDemocracyAmericas2019', 'secondary', '2019', 'English', 'high'],
+  ['lupuCopeiBreakdown2016', 'secondary', '2016', 'English', 'high'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), sourceId + ' needs a Venezuelan Christian-democratic reference trail');
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), sourceId + ' needs claim-level use');
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, sourceId + ' must resolve once');
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
+const copeiHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(copeiHistory.some(({ period, citations }) => period.startsWith('1946–1998: Venezuelan COPEI') && citations.researchSourceIds.includes('copeiHistoryOfficial')));
+const copeiVariant = christianDemocracyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Venezuelan social-Christian party democracy'));
+assert.ok(copeiVariant, 'Venezuelan COPEI must be a separate bounded variant');
+const copeiExample = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ entries = [] }) => entries.some(({ name }) => name.startsWith('Venezuela: COPEI')));
+assert.ok(copeiExample, 'Venezuelan COPEI must appear as a bounded historical example');
+const copeiPerson = christianDemocracyEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('Rafael Caldera'));
+assert.ok(copeiPerson, 'Rafael Caldera must appear with a bounded political-role caveat');
+assert.ok(christianDemocracyEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Venezuelan case adds a safeguard')));
+assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Extend the Venezuelan COPEI case')));
 const sweetMaritainRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-sweetMaritainPolitical2019');
 assert.deepEqual(sweetMaritainRecord.creators, ['William Sweet']);
 assert.match(sweetMaritainRecord.description, /substantive revision; first publication was 5 December 1997/);
