@@ -1856,7 +1856,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist', 'encyclopedia:liberal-constitutionalist']);
 }
 for (const [sourceId, publicationDate, languages, confidence] of [
   ['chustFrasquetSovereignty1812', '2003-01-01', ['Spanish'], 'high'],
@@ -1874,7 +1874,7 @@ for (const [sourceId, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist', 'encyclopedia:liberal-constitutionalist']);
 }
 const cadizTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1812–1823'));
 assert.ok(cadizTimeline, 'the Cádiz constitutional timeline case must remain visible');
@@ -2965,6 +2965,35 @@ assert.ok(portugueseAgendaTimeline?.citations.researchSourceIds.includes('hespan
 const portugueseElectionTimeline = portugueseHistory.find(({ period }) => period.startsWith('1852–1910:'));
 assert.ok(portugueseElectionTimeline?.citations.researchSourceIds.includes('cardosoLealPortugueseElections2020'));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('This Portuguese update adds Hespanha')));
+for (const sourceId of [
+  'congresoCadizConstitution1812',
+  'ucaCadizOaths2024',
+  'amoresCadizCuba2014',
+  'chustFrasquetSovereignty1812',
+  'aguilarRiveraCadizAtlantic2014',
+  'varelaCadizLiberalism1987',
+  'perezLunoCadizRights2015',
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Spanish monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs Spanish claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const spanishMonarchistHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1812–1874: Spanish'));
+assert.ok(spanishMonarchistHistory, 'the Spanish liberal constitutional-monarchy cycle must remain visible');
+assert.ok(spanishMonarchistHistory.citations.researchSourceIds.includes('congresoCadizConstitution1812'));
+assert.ok(spanishMonarchistHistory.citations.researchSourceIds.includes('varelaCadizLiberalism1987'));
+const spanishMonarchistVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Spanish liberal constitutional monarchy'));
+assert.ok(spanishMonarchistVariant, 'the Spanish case must be separated as a dated constitutional variant');
+const spanishMonarchistExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Spain’s Cádiz-to-Restoration'));
+assert.ok(spanishMonarchistExample, 'Spain must appear as a bounded historical example');
+assert.match(spanishMonarchistExample.caveat, /not a current classification of Spain/);
+assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Spanish Cádiz cycle adds a Spanish-language safeguard')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('This Spanish update adds the official Cádiz text')));
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['ottomanConstitution1876', 'primary', '1876-12-26'],
   ['tbmmOttomanConstitutionHistory', 'secondary', null],
