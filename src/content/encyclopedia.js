@@ -1374,6 +1374,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'West German social liberalism provides a second bounded comparison. The SPD’s 1959 Godesberg programme is a party self-description within the wider social-democratic family, while the 1969–1982 SPD–FDP coalition joined an active reform state with parliamentary competition and civil liberties. Borowsky describes reforms involving education, family law, criminal law, social security, monopoly control, and workplace co-determination, but also records conflict over implementation and the constraints imposed by the economic crisis. This is a partial institutional resemblance, not a claim that the coalition embodied every progressive-liberal commitment.',
             citations: citations([], ['spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The FDP’s 1971 Freiburg Theses provide a second German primary witness. They describe liberal social policy through human dignity and self-determination while proposing reform of capitalism, attention to property and wealth, workplace co-determination, and environmental policy alongside private initiative. This is party self-description, not proof of implementation. The 1982 Lambsdorff “Divorce Papers” then show a later coalition rupture around market-oriented anti-crisis policy; the contrast within one coalition period is evidence of internal variation, not a single settled progressive-liberal programme.',
+            citations: citations([], ['fdpFreiburgTheses1971', 'ghdiLambsdorffPaper1982', 'bmweLambsdorff1982', 'kieseritzkyFreiburgTheses2021']),
+          },
         ],
       },
       {
@@ -1426,6 +1431,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
           },
           {
+            period: '1971–1982: social-liberal reform and market-oriented rupture in West Germany',
+            text: 'The FDP’s 1971 Freiburg Theses paired liberal social policy with proposals to reform capitalism, address property and wealth, extend co-determination, and protect the environment while retaining private initiative. A 2021 institutional history supplies context for the programme’s late-1960s reform language and later status. In September 1982, Otto Graf Lambsdorff’s policy paper foregrounded market-oriented anti-crisis proposals and became a catalyst for the coalition break; the Federal Ministry’s retrospective places that turn in the context of stagnation and unemployment. These are distinct programme, interpretive, and institutional evidence layers, not a complete outcome evaluation.',
+            citations: citations([], ['fdpFreiburgTheses1971', 'kieseritzkyFreiburgTheses2021', 'ghdiLambsdorffPaper1982', 'bmweLambsdorff1982']),
+          },
+          {
             period: '1960s–present: rights expansion and pluralist reform',
             text: 'Civil-rights, feminist, anti-colonial, disability, LGBTQ+, and other equality movements broadened the meaning of liberal citizenship. Contemporary progressive liberalism remains internally divided over economic inequality, identity, speech, policing, migration, environmental regulation, and the limits of international intervention.',
             citations: citations(['wollstonecraftRights', 'millOnLiberty', 'kantPerpetualPeace'], ['sepLiberalism', 'vdem']),
@@ -1450,6 +1460,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'A post-war German variant joining social-democratic reform, liberal rights, parliamentary coalition, education and workplace participation with a mixed economy.',
                 relation: 'A useful period-specific comparison for active but institutionally constrained public action; it overlaps social democracy and should not be treated as the whole progressive-liberal family.',
                 citations: citations([], ['spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
+              },
+              {
+                label: 'Freiburg social liberalism and the 1982 market turn',
+                distinction: 'A German variant that paired liberal rights and participation with proposals to reform capitalism, address property and wealth, extend workplace co-determination, and protect the environment, later contested by market-oriented crisis policy.',
+                relation: 'Shows internal movement between active social reform and market liberalism; it should not be collapsed into the current FDP, the SPD, all German social liberalism, or one stable economic position.',
+                citations: citations([], ['fdpFreiburgTheses1971', 'kieseritzkyFreiburgTheses2021', 'ghdiLambsdorffPaper1982', 'bmweLambsdorff1982']),
               },
               {
                 label: 'New Deal social-security reform: a bounded United States case',
@@ -1587,10 +1603,10 @@ export const ENCYCLOPEDIA_ENTRIES = {
               },
               {
                 name: 'West German social-liberal coalition',
-                period: 'Federal Republic of Germany, 1969–1982; reform record varies by government and policy',
+                period: 'Federal Republic of Germany, 1969–1982; 1971 Freiburg Theses and 1982 Lambsdorff paper mark an internal policy shift',
                 match: 'partial rights-and-reform resemblance: parliamentary coalition combining liberal constitutionalism with social and institutional reform',
-                caveat: 'The period included coalition compromise, economic constraints, contested reforms, and a different historical relationship to social democracy than this analytical profile. The party programme, bpb synthesis, and Bundestag account are distinct evidence layers; the example is not a complete outcome evaluation.',
-                citations: citations([], ['spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982']),
+                caveat: 'The period included coalition compromise, economic constraints, contested reforms, and a different historical relationship to social democracy than this analytical profile. The Freiburg Theses and Lambsdorff paper show programmatic change within the period; the party documents, institutional histories, and bpb synthesis are distinct evidence layers, not a complete outcome evaluation.',
+                citations: citations([], ['spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982', 'fdpFreiburgTheses1971', 'kieseritzkyFreiburgTheses2021', 'ghdiLambsdorffPaper1982', 'bmweLambsdorff1982']),
               },
             ],
           },
@@ -1650,6 +1666,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The same German case also cautions against treating “social liberal” as one economic position. The 1971 FDP programme advocated liberal social policy and reform of capitalism, while the 1982 Lambsdorff paper placed market-oriented crisis policy at the center of a coalition rupture. The contrast is evidence of intra-tradition change and conflict, not proof that one document represents the whole FDP, SPD, coalition, or German public.',
+            citations: citations([], ['fdpFreiburgTheses1971', 'kieseritzkyFreiburgTheses2021', 'ghdiLambsdorffPaper1982', 'bmweLambsdorff1982']),
+          },
+          {
+            type: 'paragraph',
             text: 'The causes of the 1935 coverage limits require historical argument beyond the statute. Larry DeWitt’s 2010 article attributes the Title II exclusions chiefly to Treasury concerns about tax collection and administration, challenging accounts centered on Southern legislators. He distinguishes these decisions from the politics of state-administered assistance. This is his interpretation, not an automatic statement of the agency’s position. His table uses 1930 occupational data, not observed benefit payments. It indicates disproportionate exposure to the exclusions, a different question from the motive for adopting them.',
             citations: citations([], ['dewittCoverageExclusions2010']),
           },
@@ -1676,14 +1697,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'constantLibertyModerns',
         'tocquevilleDemocracy',
       ],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'ghdiGodesbergGerman', 'spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
-      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual. The 1935 case uses historical law and a statement excerpt, separately from later interpretation. This pass adds a bounded French 1905 separation case, keeping its primary legal design distinct from Scot’s historical interpretation and the Conseil d’État’s institutional account of later judicial and territorial variation. Poole’s book is represented only by its publisher description; no full-book review, present-day eligibility assessment, or complete New Deal history is claimed.',
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'ghdiGodesbergGerman', 'spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982', 'fdpFreiburgTheses1971', 'kieseritzkyFreiburgTheses2021', 'ghdiLambsdorffPaper1982', 'bmweLambsdorff1982', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
+      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual. The 1935 case uses historical law and a statement excerpt, separately from later interpretation. This pass adds a bounded French 1905 separation case, keeping its primary legal design distinct from Scot’s historical interpretation and the Conseil d’État’s institutional account of later judicial and territorial variation, and a German 1971–1982 case that keeps FDP programme self-description, institutional history, and the 1982 market-oriented rupture separate. German documents are paraphrased without reproducing their wording or translations. Poole’s book is represented only by its publisher description; no full-book review, present-day eligibility assessment, or complete New Deal history is claimed.',
     },
     researchGaps: [
       'This pass adds the French 1905 separation law, Jean-Paul Scot’s French historical interpretation, and the Conseil d’État’s 2004 institutional study. Still expand French-language primary and specialist scholarship on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality, including colonial and postcolonial critiques; collate parliamentary debates, the full law and later applications, critical scholarship, colonial and overseas arrangements, Alsace-Moselle, and minority perspectives before treating the French case as representative or settled.',
-      'Add German-language scholarship on new liberalism, the social market, post-war constitutional democracy, and debates over welfare-state authority.',
+      'This pass adds the German 1971 Freiburg Theses, Kieseritzky’s institutional history, the 1982 GHDI policy document and the Federal Ministry retrospective. Still expand German-language scholarship on new liberalism, the social market, post-war constitutional democracy, welfare-state authority, and independent evaluations of implementation and outcomes.',
       'Add country-specific evidence for the Progressive Era, New Deal, post-war Europe, and contemporary liberal democracies rather than relying on broad period labels.',
-      'Read the complete German-language Godesberg Programme, FDP Freiburg Theses, coalition agreements, parliamentary debates, reform statutes and implementation studies; compare East/West German, union, feminist, migrant and minority perspectives before generalizing from the 1969–1982 social-liberal coalition.',
+      'This pass adds selected German primary witnesses from the 1959 Godesberg Programme, 1971 Freiburg Theses and 1982 Lambsdorff paper, plus institutional historical syntheses. Still read the complete Godesberg and Freiburg texts, coalition agreements, parliamentary debates, reform statutes and implementation studies; compare East/West German, union, feminist, migrant and minority perspectives before generalizing from the 1969–1982 social-liberal coalition.',
       'Add specialist research on colonialism, race, migration, disability, LGBTQ+ rights, environmental policy, and the tensions between universalism and pluralism.',
       'Read Poole’s full study and competing scholarship alongside the original hearings, Treasury records, and Black reform organizations’ evidence; test distinct claims about intent, administrative feasibility, structural discrimination, and implementation rather than declaring the historiography settled.',
       'Extend the bounded 1935 case through later amendments, state administration, gender and occupational inequalities, and post-war reforms. Audit the separate reference card’s broad Roosevelt and New Deal source links against specific historical evidence; this one-entry pass does not change those cards.',

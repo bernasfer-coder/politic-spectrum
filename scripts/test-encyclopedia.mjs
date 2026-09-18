@@ -2714,6 +2714,25 @@ for (const [sourceId, evidenceRole, publicationDate] of [
   assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
 }
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['fdpFreiburgTheses1971', 'primary', '1971-10-27'],
+  ['kieseritzkyFreiburgTheses2021', 'secondary', '2021-07-06'],
+  ['ghdiLambsdorffPaper1982', 'primary', '1982-09-09'],
+  ['bmweLambsdorff1982', 'contextual', null],
+]) {
+  assert.ok(progressiveEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a progressive-liberal reference trail`);
+  assert.ok(JSON.stringify(progressiveEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must preserve its evidence role`);
+  assert.equal(record.publicationDate, publicationDate, `${sourceId} needs its historical publication date or explicit undated status`);
+  assert.equal(record.accessDate, '2026-09-18', `${sourceId} needs its consultation date`);
+  assert.deepEqual(record.languages, ['German'], `${sourceId} needs its source language`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its publication boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
+}
 const assistance1935 = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ssaOldAgeAssistance1935');
 const benefits1935 = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-ssaOldAgeBenefits1935');
 const rooseveltStatement = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-fdrSocialSecuritySigning1935');
@@ -2732,9 +2751,11 @@ assert.match(progressiveDescription, /Title II was a different federal/, 'assist
 assert.match(progressiveDescription, /not a statutory rule declaring every Black person ineligible/, 'occupational exclusions must not become an explicit universal racial bar');
 assert.match(progressiveDescription, /does not establish equal effects/, 'race-neutral statutory wording must not establish equal outcomes');
 assert.match(progressiveDescription, /original provisions, not current eligibility rules/, 'the historical statute must not become current benefits guidance');
+assert.match(progressiveDescription, /1971 Freiburg Theses/, 'German Freiburg evidence must remain visible in the progressive-liberal description');
 const progressiveCriticism = progressiveEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
 assert.match(progressiveCriticism, /1930 occupational data, not observed benefit payments/, 'occupational exposure must not be reported as observed outcomes');
 assert.match(progressiveCriticism, /Only that publisher description, not the full book/, 'limited access must remain visible in the prose');
+assert.match(progressiveCriticism, /one economic position/, 'German intra-tradition economic variation must remain visible');
 const originalActExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'United States Social Security Act of 1935');
 assert.ok(originalActExample.citations.researchSourceIds.includes('ssaOldAgeBenefits1935'), 'the narrowed historical example needs the specific law');
 const frenchLaiciteTimeline = progressiveEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1905–1924:'));
@@ -2751,7 +2772,9 @@ assert.match(frenchLaiciteSafeguard.text, /not equal treatment in every locality
 const GermanSocialLiberalExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'West German social-liberal coalition');
 assert.ok(GermanSocialLiberalExample, 'the progressive-liberal entry must retain the bounded German social-liberal case');
 assert.match(GermanSocialLiberalExample.caveat, /not a complete outcome evaluation/);
-assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('complete German-language Godesberg Programme')), 'German social-liberal follow-up must remain open');
+assert.ok(GermanSocialLiberalExample.citations.researchSourceIds.includes('fdpFreiburgTheses1971'), 'the German coalition example needs the Freiburg primary programme');
+assert.ok(GermanSocialLiberalExample.citations.researchSourceIds.includes('ghdiLambsdorffPaper1982'), 'the German coalition example needs the 1982 primary policy paper');
+assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('complete Godesberg') && gap.includes('Freiburg texts')), 'German social-liberal follow-up must remain open');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the French 1905 separation law')), 'the French research lead must preserve its follow-up gap');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Read Poole’s full study')), 'historiographical follow-up must remain open');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Audit the separate reference card')), 'the unchanged card’s broad source links need an explicit follow-up');
