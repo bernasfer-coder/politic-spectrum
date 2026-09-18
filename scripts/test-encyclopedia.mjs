@@ -3194,6 +3194,33 @@ assert.ok(bhutanExample, 'Bhutan must appear as a bounded historical example');
 assert.match(bhutanExample.caveat, /Dzongkha record/);
 assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Bhutanese case adds a safeguard')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Collate the Dzongkha and English versions')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['botheBhutanGift2012', 'secondary', '2012', ['English'], 'high'],
+  ['botheBhutanPopularControl2015', 'secondary', '2015', ['English'], 'high'],
+  ['whitecrossZhabdrungLegacy2022', 'secondary', '2022-11-18', ['English'], 'high'],
+  ['bhutanElectionCommissionRoyalDecrees2008', 'primary', '2008', ['English', 'Dzongkha'], 'high'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Bhutanese monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const bhutanProcessHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('2001–2008: monarch-led'));
+assert.ok(bhutanProcessHistory, 'the Bhutanese constitution-making process must remain visible');
+assert.ok(bhutanProcessHistory.citations.researchSourceIds.includes('botheBhutanGift2012'));
+assert.ok(bhutanProcessHistory.citations.researchSourceIds.includes('botheBhutanPopularControl2015'));
+const bhutanCriticalNote = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Bhutanese case adds a safeguard'));
+assert.ok(bhutanCriticalNote.citations.researchSourceIds.includes('whitecrossZhabdrungLegacy2022'));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('This Bhutan update adds Bothe')));
 
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
