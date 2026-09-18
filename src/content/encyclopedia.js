@@ -14335,18 +14335,18 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
     confidence: 'low',
     scopeNote: 'This is a comparative teaching profile, not a single Indigenous ideology or a claim that Indigenous peoples share one political system. It places distinct nations, communities, laws, languages, and historical periods in relation while keeping their differences and rights of self-description visible.',
     timeScope: 'Deep historical traditions through contemporary self-determination and constitutional-rights movements; exact institutions and meanings must be dated and located.',
-    geographicScope: 'Global and deliberately plural: the examples include Haudenosaunee territories, Mande regions, Aotearoa New Zealand, and North American tribal governments, but they are not representative of all Indigenous peoples.',
+    geographicScope: 'Global and deliberately plural: the examples include Haudenosaunee territories, Mande regions, Australia, Aotearoa New Zealand, and North American tribal governments, but they are not representative of all Indigenous peoples.',
     summary: 'A cautious comparative profile for governance grounded in collective self-determination, place-based authority, reciprocal obligations, intergenerational responsibility, and negotiated relations among communities. It highlights recurring institutional themes without turning Indigenous peoples into a romantic alternative to the state or market.',
     summaryCitations: citations(
       ['ostromGoverningCommons', 'fanonWretchedEarth', 'cesaireDiscourseColonialism'],
-      ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'sepColonialism'],
+      ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'sepColonialism', 'uluruStatement2017', 'dziedzicMcMillanIndigenousConstitutions2016'],
     ),
     dimensionInterpretations: {
       economic: {
         score: 38,
         label: 'Community and stewardship oriented, but internally diverse',
         explanation: 'Land, water, food, and other resources may be governed through collective responsibilities, customary tenure, reciprocal exchange, household use, or mixed contemporary institutions. The profile does not assume common ownership, reject markets, or treat “traditional economy” as a single system.',
-        citations: citations(['ostromGoverningCommons', 'fanonWretchedEarth'], ['unIndigenousDeclaration', 'sepEnvironmentalEthics']),
+        citations: citations(['ostromGoverningCommons', 'fanonWretchedEarth'], ['unIndigenousDeclaration', 'sepEnvironmentalEthics', 'nativeTitleAct1993']),
       },
       social: {
         score: 8,
@@ -14358,13 +14358,13 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
         score: -38,
         label: 'Distributed, customary, and deliberative authority',
         explanation: 'Many documented cases use councils, clan or kin responsibilities, recall or accountability practices, layered jurisdictions, and negotiated decision-making rather than a single bureaucratic sovereign. Distributed authority is not the same as no authority, and contemporary Indigenous governments may also use written constitutions, courts, executives, and legislatures.',
-        citations: citations(['ostromGoverningCommons', 'millOnLiberty'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative', 'sepDemocracy']),
+        citations: citations(['ostromGoverningCommons', 'millOnLiberty'], ['oxfordTribalConstitutions', 'pmcIndigenousDeliberative', 'sepDemocracy', 'dziedzicMcMillanIndigenousConstitutions2016']),
       },
       identity: {
         score: 4,
         label: 'Collective nationhood without one nation-state model',
         explanation: 'Indigenous peoples commonly assert collective political identity, territorial relationships, and self-determination, while confederacies, treaties, diplomacy, and international rights connect communities beyond a single state. The score therefore stays near the middle: it should not force Indigenous nationhood into either state nationalism or abstract cosmopolitanism.',
-        citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['unIndigenousDeclaration', 'waitangiTribunalTreaty', 'sepColonialism']),
+        citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['unIndigenousDeclaration', 'waitangiTribunalTreaty', 'sepColonialism', 'uluruStatement2017']),
       },
       foreign: {
         score: 34,
@@ -14417,6 +14417,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           },
           {
             type: 'paragraph',
+            text: 'Australian scholarship supplies a bounded constitutional case rather than a global template. Dziedzic and McMillan distinguish Indigenous constitutions founded on continuing national authority, features derived from Indigenous law, and institutions that also have standing in Australian law; Gover and Cubillo show how settler law has often classified Indigenous polities as racial groups rather than political communities. Reilly’s account likewise treats Indigenous governance as operating at several levels, while the Native Title Act records a narrower statutory recognition of rights grounded in traditional laws and customs. These sources support legal-pluralist analysis, not the claim that every Australian nation has the same constitution or that statutory recognition equals effective self-government.',
+            citations: citations([], ['dziedzicMcMillanIndigenousConstitutions2016', 'goverCubilloIndigenousPolities2022', 'reillyIndigenousGovernance2006', 'nativeTitleAct1993']),
+          },
+          {
+            type: 'paragraph',
             text: 'For the Māori case, the treaty’s English sovereignty clause must be distinguished from kāwanatanga in the Māori first article and tino rangatiratanga in the second. The Tribunal’s general guide distinguishes the latter’s emphasis on authority from the English property guarantee. Our six-axis inference is limited: evidence about jurisdiction does not by itself establish collectivism, social progressivism, pacifism, or a religious settlement.',
             citations: citations([], ['dpmcTreatyTextsKawharu', 'waitangiTribunalTreaty']),
           },
@@ -14444,6 +14449,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             type: 'paragraph',
             text: 'Matike Mai Aotearoa adds a contemporary Māori-led constitutional proposal to the historical treaty evidence. Its working group reports 252 hui between 2012 and 2015, youth wānanga, submissions and interviews, and proposes six indicative models built around a rangatiratanga sphere for Māori decision-making, a kāwanatanga sphere for Crown government, and a relational sphere for joint decisions. This is a documented movement and consultation process, not an enacted constitution, a government position, or proof that all Māori communities endorse one model.',
             citations: citations([], ['matikeMaiReport2016', 'cameHonourableKawanatanga2026']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Australian Uluru case shows a different route: an Indigenous-led constitutional proposal addressed to an existing settler parliament. The statement presents First Nations sovereignty as continuing and relational, links power over destiny to children and community wellbeing, and asks for a constitutionally enshrined Voice plus agreement-making and truth-telling. AIATSIS records the regional dialogue process that preceded it, but the statement remains a political proposal and source of self-description, not an enacted constitution or a single institutional design for all Aboriginal and Torres Strait Islander peoples.',
+            citations: citations([], ['uluruStatement2017', 'aiatsisConstitutionalConsultations2017']),
           },
         ],
       },
@@ -14480,6 +14490,16 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             period: 'Assimilation, recognition, and constitutional adaptation',
             text: 'Colonial and national governments often attempted to replace Indigenous institutions or confine them within administrative categories. Indigenous nations responded through resistance, diplomacy, written constitutions, litigation, cultural renewal, treaty claims, and new intergovernmental institutions. Modern tribal governments can therefore be simultaneously Indigenous, constitutional, bureaucratic, customary, and shaped by imposed legal frameworks.',
             citations: citations(['fanonWretchedEarth', 'cesaireDiscourseColonialism'], ['oxfordTribalConstitutions', 'sepColonialism', 'unIndigenousDeclaration']),
+          },
+          {
+            period: '1992–present — Australian recognition of continuing Indigenous law',
+            text: 'The Mabo decision and later Australian legal developments challenged the idea that the continent had been a legal vacuum, while the Native Title Act 1993 created a statutory framework for recognizing interests connected to traditional laws and customs. Anderssen’s legal-theoretical account and later constitutional scholarship warn that recognition remains mediated by Anglo-Australian categories; a court or statute acknowledging law is not the same as restoring jurisdiction or securing equal political power.',
+            citations: citations([], ['nativeTitleAct1993', 'anderssenIndigenousLaw2021', 'dziedzicMcMillanIndigenousConstitutions2016', 'goverCubilloIndigenousPolities2022']),
+          },
+          {
+            period: '2016–2023 — Australian First Nations constitutional renewal',
+            text: 'AIATSIS records regional dialogues and a 2017 National Constitutional Convention involving 1,200 First Nations delegates; the resulting Uluru Statement called for a constitutionally enshrined Voice and a Makarrata process for agreement-making and truth-telling. The proposal was put to a national referendum on 14 October 2023 and was not carried: the Australian Electoral Commission records 39.94% Yes and 60.06% No nationally. The result records the constitutional process, not the diversity of Indigenous views or the validity of the underlying self-determination claim.',
+            citations: citations([], ['aiatsisConstitutionalConsultations2017', 'uluruStatement2017', 'aecVoiceReferendum2023']),
           },
           {
             period: 'Contemporary self-determination and international rights',
@@ -14547,6 +14567,12 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 citations: citations(['millOnLiberty', 'ostromGoverningCommons'], ['oxfordTribalConstitutions', 'unIndigenousDeclaration']),
               },
               {
+                label: 'Australian Indigenous constitutional renewal',
+                distinction: 'Combines continuing Indigenous nation authority, Indigenous law, and institutions that may also be recognized or constrained by Australian law; the Uluru Statement adds a movement proposal for Voice, agreement-making and truth-telling.',
+                relation: 'Demonstrates legal pluralism and constitutional adaptation within a settler state, but does not establish one Australian First Nations constitution, a completed Voice, or a global Indigenous score.',
+                citations: citations([], ['dziedzicMcMillanIndigenousConstitutions2016', 'goverCubilloIndigenousPolities2022', 'uluruStatement2017', 'nativeTitleAct1993']),
+              },
+              {
                 label: 'Anti-colonial and cultural-renewal movements',
                 distinction: 'Prioritizes resistance to imposed sovereignty, restoration of land and language, political recognition, and community control over development.',
                 relation: 'May overlap with socialism, nationalism, environmentalism, or religious revival, but none of those labels defines every Indigenous movement.',
@@ -14595,6 +14621,13 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 match: 'Māori-led constitutional transformation proposal grounded in tikanga, He Whakaputanga and Te Tiriti',
                 caveat: 'The report documents an extensive consultation process and indicative models, not an enacted constitution, a government decision, or unanimous Māori consent. Its six-axis relevance is interpretive and limited to the named proposal.',
                 citations: citations([], ['matikeMaiReport2016', 'cameHonourableKawanatanga2026', 'scobieRangatiratanga2023']),
+              },
+              {
+                name: 'Australian First Nations constitutional renewal and Uluru Statement',
+                period: 'Australia, 2016–2023 constitutional consultation and referendum',
+                match: 'Indigenous-led constitutional recognition, representation and agreement-making anchor',
+                caveat: 'The statement and dialogue record document a major proposal and consultation process, not a single Indigenous ideology or enacted self-government. The 2023 referendum result must not be read as a referendum on Indigenous identity, sovereignty, or one uniform view among Aboriginal and Torres Strait Islander peoples.',
+                citations: citations([], ['uluruStatement2017', 'aiatsisConstitutionalConsultations2017', 'aecVoiceReferendum2023', 'dziedzicMcMillanIndigenousConstitutions2016']),
               },
               {
                 name: 'Contemporary Indigenous and tribal governments',
@@ -14650,6 +14683,16 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           },
           {
             type: 'paragraph',
+            text: 'The Australian case adds a design-versus-outcome safeguard. The Uluru Statement is evidence of an Indigenous-led constitutional proposal, and the AIATSIS record is evidence of a large consultation process; neither proves that every First Nation endorsed the same institutional route. The 2023 referendum’s national No result records a constitutional outcome, but cannot be used to infer that Indigenous self-determination was rejected, that the proposal lacked Indigenous support, or that the legal-pluralist scholarship describes current practice everywhere.',
+            citations: citations([], ['uluruStatement2017', 'aiatsisConstitutionalConsultations2017', 'aecVoiceReferendum2023', 'goverCubilloIndigenousPolities2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Australian constitutional recognition also exposes a category problem. A statute may acknowledge rights derived from traditional laws and customs while placing them inside a state-defined test, and a constitution written by or with a nation may combine Indigenous law with institutions recognized by Australian law. The project must therefore distinguish inherent authority, community constitutional practice, judicial recognition, statutory recognition and effective control rather than treating any one legal form as the whole political order.',
+            citations: citations([], ['nativeTitleAct1993', 'dziedzicMcMillanIndigenousConstitutions2016', 'reillyIndigenousGovernance2006', 'anderssenIndigenousLaw2021']),
+          },
+          {
+            type: 'paragraph',
             text: 'Finally, the six-axis coordinates are provisional. They describe a comparative teaching pattern, not a measurement of Indigenous identity. A future version should allow nation-specific profiles, community review, multiple source traditions, and a “not enough evidence” state rather than requiring every case to be placed on one global map.',
             citations: citations(['ostromGoverningCommons'], ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'pmcIndigenousDeliberative']),
           },
@@ -14678,8 +14721,8 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
     ],
     references: {
       authorReferenceIds: ['ostromGoverningCommons', 'fanonWretchedEarth', 'cesaireDiscourseColonialism', 'gandhiHindSwaraj', 'millOnLiberty', 'senDevelopmentFreedom'],
-      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'matikeMaiReport2016', 'scobieRangatiratanga2023', 'cameHonourableKawanatanga2026', 'teRakiStage2Reports2025', 'keaneWhakaputanga2017', 'onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty', 'hollandLulewiczKeystone2022'],
-      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, the Waitangi Tribunal’s staged inquiry, and Matike Mai’s Māori-led constitutional proposal. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged. The Onondaga addition distinguishes the Nation’s public institutional self-description from a broader Northern Iroquoian scholarly comparison; neither validates the existing numerical profile.',
+      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'matikeMaiReport2016', 'scobieRangatiratanga2023', 'cameHonourableKawanatanga2026', 'teRakiStage2Reports2025', 'keaneWhakaputanga2017', 'onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty', 'hollandLulewiczKeystone2022', 'uluruStatement2017', 'aiatsisConstitutionalConsultations2017', 'dziedzicMcMillanIndigenousConstitutions2016', 'goverCubilloIndigenousPolities2022', 'reillyIndigenousGovernance2006', 'anderssenIndigenousLaw2021', 'nativeTitleAct1993', 'aecVoiceReferendum2023'],
+      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, the Waitangi Tribunal’s staged inquiry, and Matike Mai’s Māori-led constitutional proposal. The Australian case separates Indigenous-led self-description, AIATSIS consultation reporting, legal scholarship, statutory recognition and the 2023 referendum outcome; none is treated as an enacted pan-Indigenous constitution or evidence of a uniform view. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged. The Onondaga addition distinguishes the Nation’s public institutional self-description from a broader Northern Iroquoian scholarly comparison; neither validates the existing numerical profile.',
     },
     researchGaps: [
       'Add community-reviewed, nation-specific scholarship in Indigenous languages and in Portuguese, French, German, Spanish, and English before expanding the comparative profile.',
@@ -14694,6 +14737,9 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
       'Seek Onondaga and other Haudenosaunee language-community review of terminology, authority and publication boundaries. Examine nation-specific accounts of participation, disagreement and removal in practice; public institutional descriptions alone do not establish outcomes, universal gender equality or consent to classification.',
       'Read the historical works and Indigenous scholarship underlying the Northern Iroquoian comparison directly, separating Haudenosaunee, Huron-Wendat and other settings. Investigate the relationship between traditional and elected institutions by nation and period before making wider claims; founding chronology and U.S. constitutional influence remain unverified here.',
       'Read the complete Matike Mai report, its Māori-language and community circulation contexts, the full Te Paparahi o Te Raki Stage 2 volumes, and contrasting Māori constitutional scholarship. The present addition establishes a bounded Māori-led proposal and later research boundary, not implementation, unanimity, current law, or a final Indigenous authority coordinate.',
+      'Expand the Australian case through nation-specific and Indigenous-led sources on Gunditjmara, Ngarrindjeri, Yolŋu, Torres Strait Islander and other constitutional traditions; distinguish community constitutions, native-title determinations, statutory bodies and the Uluru proposal before assigning any nation-specific coordinates.',
+      'Review the complete Uluru Dialogues and Referendum Council record, the 2023 referendum materials and Indigenous critiques of Voice, treaty and truth pathways. The AEC result is a bounded electoral fact, not a proxy for Indigenous consensus or a resolution of the constitutional debate.',
+      'Seek community and language-holder review of Australian terminology, publication boundaries and the use of Indigenous constitutional knowledge. Legal scholarship and public movement sites do not themselves establish permission, representativeness or current implementation.',
     ],
   },
 };

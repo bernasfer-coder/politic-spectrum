@@ -3605,6 +3605,40 @@ const teRakiFinding = indigenousEntry.sections.find(({ id }) => id === 'history'
 assert.ok(teRakiFinding, 'the Tribunal finding needs a dated historical record');
 assert.match(teRakiFinding.text, /Bay of Islands and Hokianga in February 1840/, 'the historical finding must retain its geographic and temporal boundary');
 assert.match(teRakiFinding.text, /left aside how and when the Crown later acquired sovereignty/, 'the 2014 release must not become an unrestricted current-sovereignty determination');
+for (const [sourceId, evidenceRole, publicationDate, confidence] of [
+  ['uluruStatement2017', 'primary', '2017-05-26', 'high'],
+  ['aiatsisConstitutionalConsultations2017', 'contextual', '2017', 'high'],
+  ['dziedzicMcMillanIndigenousConstitutions2016', 'secondary', '2016-09-01', 'high'],
+  ['goverCubilloIndigenousPolities2022', 'secondary', '2022-08-04', 'high'],
+  ['reillyIndigenousGovernance2006', 'secondary', '2006', 'high'],
+  ['anderssenIndigenousLaw2021', 'secondary', '2021', 'medium'],
+  ['nativeTitleAct1993', 'primary', '1993-12-24', 'high'],
+  ['aecVoiceReferendum2023', 'primary', '2023-11-06', 'high'],
+]) {
+  assert.ok(indigenousEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Australian Indigenous-governance reference trail`);
+  assert.ok(JSON.stringify(indigenousEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the Indigenous entry`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.equal(record.review.confidence, confidence);
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:indigenous-relational-governance'), `${sourceId} needs an Indigenous encyclopedia backlink`);
+}
+const australianIndigenousHistory = indigenousEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(australianIndigenousHistory.some(({ period }) => period.startsWith('1992–present — Australian recognition')));
+assert.ok(australianIndigenousHistory.some(({ period }) => period.startsWith('2016–2023 — Australian First Nations')));
+const australianIndigenousVariant = indigenousEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Australian Indigenous constitutional renewal'));
+assert.ok(australianIndigenousVariant, 'the Australian case must be separated as a constitutional-renewal variant');
+const australianIndigenousExample = indigenousEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Australian First Nations constitutional renewal'));
+assert.ok(australianIndigenousExample, 'the Australian case must appear as a bounded historical example');
+assert.match(australianIndigenousExample.caveat, /not a single Indigenous ideology/);
+assert.ok(indigenousEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Australian case adds a design-versus-outcome safeguard')));
+assert.ok(indigenousEntry.researchGaps.some((gap) => gap.startsWith('Expand the Australian case through nation-specific')));
 
 const marketLibertarianEntry = ENCYCLOPEDIA_ENTRIES['libertarian-market'];
 for (const [sourceId, evidenceRole] of [
