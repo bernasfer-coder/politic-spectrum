@@ -2111,11 +2111,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
     entryType: 'analytical reference profile',
     status: 'researched-draft',
     confidence: 'medium',
-    scopeNote: 'This profile describes reformist and welfare-state social democracy, especially its modern mixed-economy form. Social democracy has changed over time and is not identical to democratic socialism, socialism in general, or every center-left party. The German cases below include the 1959 Godesberg reorientation and the distinct East German SDP/SPD trajectory of 1989–1990.',
-    timeScope: 'Roots in nineteenth-century socialist and labor movements; reformist theory at the turn of the twentieth century; major welfare-state development after 1945; the 1989–1990 democratic transition in East Germany; and later welfare-state revisions under reunification, globalization, and post-industrial politics.',
-    geographicScope: 'Transnational tradition with important German, East German, British, Nordic, continental European, and other democratic variants; welfare institutions and party trajectories differ substantially by country and period.',
+    scopeNote: 'This profile describes reformist and welfare-state social democracy, especially its modern mixed-economy form. Social democracy has changed over time and is not identical to democratic socialism, socialism in general, or every center-left party. The German cases below include the 1959 Godesberg reorientation and the distinct East German SDP/SPD trajectory of 1989–1990; the Portuguese case is a bounded revolutionary-to-constitutional transition, not a timeless country label.',
+    timeScope: 'Roots in nineteenth-century socialist and labor movements; reformist theory at the turn of the twentieth century; major welfare-state development after 1945; the 1973–1976 Portuguese democratic and constitutional transition; the 1989–1990 democratic transition in East Germany; and later welfare-state revisions under reunification, globalization, and post-industrial politics.',
+    geographicScope: 'Transnational tradition with important German, East German, Portuguese, British, Nordic, continental European, and other democratic variants; welfare institutions and party trajectories differ substantially by country and period.',
     summary: 'A democratic reform tradition seeking to reduce class inequality and insecurity through elections, trade-union power, social insurance, public services, progressive taxation, and regulated markets. Modern social democracy generally preserves a predominantly private mixed economy while treating social rights and collective bargaining as conditions of democratic citizenship.',
-    summaryCitations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'sepLiberalism', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989', 'starkeGermanWelfareState2022']),
+    summaryCitations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'sepLiberalism', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989', 'starkeGermanWelfareState2022', 'psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018']),
     dimensionInterpretations: {
       economic: {
         score: 58,
@@ -2174,6 +2174,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The German record shows why a single label needs a dated specification. The 1959 West German Godesberg programme and the 1989 East German SDP founding materials both used democratic and social-market language, but they arose from different political situations. The latter was a new opposition party confronting one-party rule, and its declared programme is evidence of an intended democratic-social order, not proof of subsequent policy or a representative sample of all East German citizens.',
             citations: citations([], ['ghdiGodesbergGerman', 'fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989']),
           },
+          {
+            type: 'paragraph',
+            text: 'Portugal supplies a different boundary case. The Socialist Party’s December 1974 programme spoke of a transition to socialism, anti-monopoly reform and full employment, while the 1976 Constitution combined pluralist democratic institutions and social rights with transition-to-socialism and collective-ownership language. Castaño’s Portuguese study follows Mário Soares through a contested transition in which a Western-style democratic route was only one of several possibilities; Granadino shows how European socialist networks helped produce a gap between radical rhetoric and more moderate political practice. This is a dated constitutional and party trajectory, not proof that the later welfare-state model or every Portuguese Socialist Party government had one fixed ideology.',
+            citations: citations([], ['psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018']),
+          },
         ],
       },
       {
@@ -2209,6 +2214,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Post-reunification Germany supplies a further warning against treating welfare institutions as a static expression of ideology. Peter Starke’s scholarly overview describes a sequence of responses to reunification, unemployment, demographic change, increased female labor-force participation, and later shocks. In his interpretation, the visible social-insurance structure remained while status security was partly displaced by minimum protection and social investment. This is a bounded interpretation of welfare-state change, not a verdict that social democracy disappeared or that every reform had the same effect.',
             citations: citations([], ['starkeGermanWelfareState2022']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Portuguese case also shows why party programmes, constitutional text and governing practice must be separated. The PS’s 1974 programme used explicitly socialist and anti-monopoly language; the 1976 constitutional settlement retained a revolutionary vocabulary while creating a pluralist institutional order and protecting social and labor rights; and the transition’s political actors disputed whether the country should follow a revolutionary or European-democratic route. These layers support a Portuguese variant within the history of social democracy, but they do not make the party programme, the Constitution, and later policy interchangeable.',
+            citations: citations([], ['psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018']),
           },
         ],
       },
@@ -2252,6 +2262,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'sepLiberalism']),
           },
           {
+            period: '1973–1976: Portuguese Socialist Party and constitutional transition',
+            text: 'The PS was founded in 1973 and became an open political force after the April 1974 revolution. Its December 1974 programme called for a transition to socialism, anti-monopoly reform and full employment, but the transition also contained a struggle between a revolutionary route and a European-democratic model. The Portuguese Parliament records the PS victory in the 1975 Constituent Assembly election, the 25 November 1975 defeat of the revolutionary MFA wing, the 1976 Constitution, and Mário Soares’s first constitutional government. The Constitution combined pluralism, fundamental and labor rights, and separated institutions with socialist-transition and collective-ownership provisions. Castaño and Granadino therefore support a bounded case of party moderation, international social-democratic influence and constitutional ambiguity, not a simple modern welfare-state classification.',
+            citations: citations([], ['psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018']),
+          },
+          {
             period: '1989–1990: East German SDP and competing routes to unity',
             text: 'The SDP founded in the GDR in October 1989 presented itself as a new party rather than a continuation of the West German SPD. Its founding materials called for parliamentary democracy, separation and democratization of power, free unions, and an ecologically oriented social market economy; they initially recognized the two-state situation while leaving open a European peace-order route to change. After the fall of the Berlin Wall, the party moved toward German unity through internal debate. Fischer’s account emphasizes that these positions cannot be reduced to one left–right faction or one generational line.',
             citations: citations([], ['fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989']),
@@ -2293,6 +2308,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'A dissident and transition-era variant that joined anti-one-party democratization, parliamentary institutions, ecological responsibility, free unions, and a socially regulated market economy.',
                 relation: 'It shares the democratic and welfare aims of social democracy but cannot be treated as the same trajectory as the West German SPD or as evidence of what the post-reunification state later implemented.',
                 citations: citations([], ['fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989']),
+              },
+              {
+                label: 'Portuguese constitutional social democracy / PS, 1973–1976',
+                distinction: 'A revolutionary-to-constitutional variant in which the Portuguese Socialist Party combined democratic pluralism, anti-dictatorial organization, social rights and international socialist connections with an explicitly socialist and anti-monopoly programme.',
+                relation: 'It is not identical to later welfare-state social democracy or to democratic socialism as a settled ownership doctrine. The 1974 programme, 1976 Constitution and Soares-era transition record contain different evidence layers, and Granadino’s account of radical rhetoric versus moderate practice warns against reading one layer as the whole trajectory.',
+                citations: citations([], ['psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018']),
               },
               {
                 label: 'Democratic socialism',
@@ -2352,6 +2373,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'Her feminist liberal arguments contribute to the social-equality dimension but do not define social-democratic economics.',
                 citations: citations(['wollstonecraftRights'], ['sepLiberalism']),
               },
+              {
+                name: 'Mário Soares',
+                role: 'Portuguese Socialist Party leader during the 1974–1976 democratic and constitutional transition',
+                caveat: 'A central actor in a contested transition, not a synonym for Portuguese social democracy or proof that the party’s declared programme and later practice were identical.',
+                citations: citations([], ['castanoSoaresTransition2012Portuguese', 'portugalDemocracyConstruction1974', 'granadinoPortuguesePSInternationalNetworks2018']),
+              },
             ],
           },
           {
@@ -2398,6 +2425,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'partial institutional comparator for changing social-democratic policy tools',
                 caveat: 'Starke’s chapter summary is a scholarly interpretation of reform episodes, not a complete causal study or a current ideological score for Germany. It should be read alongside distributional, regional, gender, labor-market, and East–West evidence.',
                 citations: citations([], ['starkeGermanWelfareState2022']),
+              },
+              {
+                name: 'Portuguese Socialist Party and constitutional transition',
+                period: '1973–1976, with the first constitutional government beginning in July 1976',
+                match: 'bounded historical party and constitutional comparator',
+                caveat: 'The PS programme, parliamentary history, constitutional text, Castaño’s Portuguese account and Granadino’s international-network study describe different layers. The case should not be used as a present-day country classification or as proof that the later Portuguese welfare state followed one uncontested ideology.',
+                citations: citations([], ['psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018']),
               },
               {
                 name: 'Contemporary social-democratic parties and coalitions',
@@ -2464,6 +2498,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Portuguese case adds a safeguard against collapsing socialist language, social democracy and democratic consolidation into one category. The 1974 PS programme was more explicitly anti-monopoly and transition-oriented than the later welfare-state archetype; the 1976 Constitution preserved socialist-transition and collective-ownership language alongside pluralism and rights; and the parliamentary record describes a conflict between revolutionary and European-democratic projects. Castaño and Granadino help identify Soares-era agency and international influence, but neither settles the balance between party rhetoric, external support, military power, social movements, constitutional revision and later policy outcomes.',
+            citations: citations([], ['psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018']),
+          },
+          {
+            type: 'paragraph',
             text: 'Starke’s post-reunification overview also complicates a success-or-failure story. Its interpretation of a retained but less protective social-insurance structure points to tensions among status preservation, minimum protection, social investment, fiscal constraints, demographic change, and labor-market inequality. Because this pass reviewed the chapter summary rather than the complete chapter and data, the claim is retained as an attributed research finding and not converted into a definitive evaluation of German welfare policy.',
             citations: citations([], ['starkeGermanWelfareState2022']),
           },
@@ -2477,16 +2516,17 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty', 'wollstonecraftRights', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'morgenthauRealism', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'bpbGermanSocialState', 'bpbWelfareModels', 'bpbSocialMarketEconomy', 'ghdiGodesberg', 'vdem', 'ches', 'foreignPolicy', 'ghdiGodesbergGerman', 'lompeGodesberg1979', 'fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989', 'starkeGermanWelfareState2022'],
-      editorialNote: 'The entry distinguishes reformist socialism, welfare-state social democracy, social liberalism, democratic socialism, the West German Godesberg reorientation, and the distinct East German SDP trajectory. Its scores describe a didactic modern social-democratic archetype, not every party, programme, or welfare state carrying the label.',
+      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'bpbGermanSocialState', 'bpbWelfareModels', 'bpbSocialMarketEconomy', 'ghdiGodesberg', 'vdem', 'ches', 'foreignPolicy', 'ghdiGodesbergGerman', 'lompeGodesberg1979', 'fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989', 'starkeGermanWelfareState2022', 'psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018'],
+      editorialNote: 'The entry distinguishes reformist socialism, welfare-state social democracy, social liberalism, democratic socialism, the West German Godesberg reorientation, the distinct East German SDP trajectory, and the Portuguese revolutionary-to-constitutional case. Its scores describe a didactic modern social-democratic archetype, not every party, programme, or welfare state carrying the label. The Portuguese sources are kept as separate party, constitutional, institutional, Portuguese-language scholarly, and international-network evidence layers; they do not recalibrate the score or establish a current country classification.',
     },
     researchGaps: [
       'Expand German-language scholarship on Bernstein, the SPD, ordoliberal and social-market debates, and post-war welfare institutions, including internal dissent, East German trajectories, and welfare-state transformation after reunification. This pass adds the FES document collection on the East German SDP and Fischer’s German-language account of the 1989–1990 party and unity debates, but it does not replace specialist archival work.',
-      'Add Swedish, Norwegian, Danish, French, and Portuguese scholarship on labor movements, universalism, social citizenship, and the Nordic and continental welfare variants.',
+      'Add Swedish, Norwegian, Danish, French, and Portuguese scholarship on labor movements, universalism, social citizenship, and the Nordic and continental welfare variants. This pass adds a bounded Portuguese 1973–1976 case through the PS programme, the 1976 Constitution, parliamentary history, Castaño’s Portuguese study and Granadino’s international-network analysis, but it does not replace specialist Portuguese-language research on welfare institutions, unions, colonial legacies, or later PS governments.',
       'Add country-specific evidence before listing current states or parties as examples; welfare models and party programmes change over time.',
       'Add specialist research on colonial legacies, migration, gender, unpaid care, disability, ecological transition, automation, and the global constraints on national redistribution.',
       'Extend the selected Godesberg excerpts to the complete programme and identified print editions; verify translation provenance and Wehner’s original 1960 speech before quoting them. Read Lompe’s complete article and the dissenting works he cites alongside newer scholarship.',
       'Compare the Godesberg and East German programmes with party-congress records, union debates, women’s perspectives, church responses, legislation, welfare outcomes, and implementation. The new German cases only partly address the earlier language and transfer gaps; Starke’s post-reunification overview remains a bounded scholarly summary and does not establish Nordic, global, or current-party equivalence. All six existing coordinates remain didactic and unchanged.',
+      'Read the complete Portuguese Socialist Party programme and statutes, MFA/party pacts, Constituent Assembly debates, constitutional revisions, electoral records, union and social-movement archives, colonial and retornado records, and later Portuguese social-policy scholarship. The present case distinguishes declared socialism, constitutional pluralism, Soares-era moderation, international support and later welfare-state practice, but it does not settle the party’s internal factions, the role of military power, or the relationship between 1976 constitutional language and implementation.',
     ],
   },
   'classical-liberal': {

@@ -3042,12 +3042,39 @@ for (const [sourceId, evidenceRole] of [
   assert.equal(record.directQuote, null, `${sourceId} must not add an unreviewed quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:social-democratic'), `${sourceId} needs an encyclopedia backlink`);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['psDeclarationPrinciples1974Portuguese', 'primary', '1974-12', ['Portuguese'], 'high'],
+  ['portugalConstitution1976Portuguese', 'primary', '1976-04-02', ['Portuguese'], 'high'],
+  ['portugalDemocracyConstruction1974', 'contextual', null, ['Portuguese'], 'high'],
+  ['castanoSoaresTransition2012Portuguese', 'secondary', '2012', ['Portuguese'], 'high'],
+  ['granadinoPortuguesePSInternationalNetworks2018', 'secondary', '2018-04-01', ['English'], 'high'],
+]) {
+  assert.ok(socialDemocraticEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Portuguese social-democratic reference trail`);
+  assert.ok(JSON.stringify(socialDemocraticEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:social-democratic'), `${sourceId} needs an encyclopedia backlink`);
+}
 assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1989–1990:')), 'the East German SDP trajectory needs a dated history row');
+assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1973–1976: Portuguese')), 'the Portuguese transition needs a dated history row');
 assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1990–present:')), 'the post-reunification welfare transformation needs a dated history row');
 const socialDemocraticExamples = socialDemocraticEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries);
 assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('Social Democratic Party in the GDR')), 'the East German SDP needs a bounded documented example');
+assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('Portuguese Socialist Party')), 'the Portuguese transition needs a bounded documented example');
 assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('German welfare-state transformation')), 'post-reunification welfare transformation needs a bounded example');
+assert.ok(socialDemocraticEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).some(({ label }) => label.startsWith('Portuguese constitutional social democracy')), 'the Portuguese variant must stay distinct from later welfare-state social democracy');
+assert.ok(socialDemocraticEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).some(({ name }) => name === 'Mário Soares'), 'Mário Soares must be a bounded person example');
+assert.ok(socialDemocraticEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Portuguese case adds a safeguard')), 'the Portuguese case needs a criticism safeguard');
 assert.ok(socialDemocraticEntry.researchGaps.some((gap) => gap.includes('complete programme')), 'excerpt limits must remain visible');
+assert.ok(socialDemocraticEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Portuguese Socialist Party programme')), 'the Portuguese primary-source gap must remain open');
 
 const civicEntry = ENCYCLOPEDIA_ENTRIES['civic-nationalist'];
 const civicProfile = ARCHETYPES.find(({ id }) => id === 'civic-nationalist').profile;
