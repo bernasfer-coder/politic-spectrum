@@ -3392,6 +3392,38 @@ const malaysiaSafeguard = monarchistEntry.sections.find(({ id }) => id === 'crit
 assert.ok(malaysiaSafeguard, 'Malaysia must add a royal-discretion safeguard');
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('This Malaysia update adds the official Federal Constitution')));
 
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['austriaDecemberConstitution1867German', 'primary', '1867-12-21', ['German', 'English translation'], 'high'],
+  ['austriaParliamentAusgleich1867German', 'secondary', null, ['German'], 'high'],
+  ['boyerAustria1867Constitution2022', 'secondary', '2022-10-13', ['English'], 'medium'],
+  ['gyaniAustroHungaryCompromise2021', 'secondary', '2021', ['English; Hungarian perspectives'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Austro-Hungarian monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const habsburgHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1867–1918: Austro-Hungarian'));
+assert.ok(habsburgHistory, 'the Austro-Hungarian constitutional-dual timeline case must remain visible');
+assert.ok(habsburgHistory.citations.researchSourceIds.includes('austriaDecemberConstitution1867German'));
+const habsburgVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Austro-Hungarian constitutional dual'));
+assert.ok(habsburgVariant, 'the Austro-Hungarian case must be separated as a dual constitutional variant');
+const habsburgExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Austria-Hungary’s constitutional dual'));
+assert.ok(habsburgExample, 'Austria-Hungary must appear as a bounded historical example');
+assert.match(habsburgExample.caveat, /not an exact six-axis match/);
+const habsburgSafeguard = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Austro-Hungarian case adds a dual-state'));
+assert.ok(habsburgSafeguard, 'Austria-Hungary must add a dual-state rights-boundary safeguard');
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('The Austro-Hungarian addition remains bounded')));
+
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
   ['cdecAntisemiticDecrees1938', 'primary'],
