@@ -13945,6 +13945,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             text: 'In their 2022 Northern Iroquoian case, Holland-Lulewicz and colleagues describe clans as connecting households and multiple council levels rather than governing alone. They distinguish inherited offices from selection of their holders. Their historical regional category includes societies beyond the Haudenosaunee; it cannot be silently substituted for an Onondaga account.',
             citations: citations([], ['hollandLulewiczKeystone2022']),
           },
+          {
+            type: 'paragraph',
+            text: 'Matike Mai Aotearoa adds a contemporary Māori-led constitutional proposal to the historical treaty evidence. Its working group reports 252 hui between 2012 and 2015, youth wānanga, submissions and interviews, and proposes six indicative models built around a rangatiratanga sphere for Māori decision-making, a kāwanatanga sphere for Crown government, and a relational sphere for joint decisions. This is a documented movement and consultation process, not an enacted constitution, a government position, or proof that all Māori communities endorse one model.',
+            citations: citations([], ['matikeMaiReport2016', 'cameHonourableKawanatanga2026']),
+          },
         ],
       },
       {
@@ -13991,6 +13996,16 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             text: 'The Waitangi Tribunal’s Stage 1 release for Te Paparahi o Te Raki concluded that the rangatira signing in the Bay of Islands and Hokianga in February 1840 retained lawmaking authority over their people and territories. It described agreement to British authority over British subjects, with overlapping jurisdiction still to be negotiated. This is an attributed historical finding: the release expressly left aside how and when the Crown later acquired sovereignty and what the treaty means today. The full report and later inquiry stages require separate review.',
             citations: citations([], ['teRakiStageOne2014Release']),
           },
+          {
+            period: '2012–2016 — Matike Mai Aotearoa and constitutional transformation',
+            text: 'The Māori-led Matike Mai working group was promoted through the Iwi Chairs’ Forum and facilitated 252 hui between 2012 and 2015, alongside youth wānanga and other forms of engagement. Its 2016 report sought a constitutional order grounded in tikanga and kawa, He Whakaputanga, Te Tiriti, and Indigenous human-rights instruments. It described rangatiratanga, kāwanatanga, and a relational sphere as distinct but interdependent sites of authority and presented six indicative models rather than one final institutional blueprint. Later scholarship uses these spheres to discuss honourable kāwanatanga and constitutional transformation; neither the report nor that scholarship establishes implementation or unanimity.',
+            citations: citations([], ['matikeMaiReport2016', 'cameHonourableKawanatanga2026']),
+          },
+          {
+            period: '2022–2025 — later Te Paparahi o Te Raki inquiry record',
+            text: 'The Waitangi Tribunal’s inquiry page records that Stage 2 hearings concluded in 2017, that volumes 1–3 were handed over in 2023, and that volume 4 was released in pre-publication format in December 2025. This updates the research boundary: the 2014 Stage 1 release cannot be treated as the complete Te Raki record, and the existence of later volumes does not allow their substantive findings to be summarized without reading them directly.',
+            citations: citations([], ['teRakiStage2Reports2025']),
+          },
         ],
       },
       {
@@ -14023,6 +14038,12 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 distinction: 'Kawharu’s English back translation interprets the Māori text; it is not the English treaty signed in 1840.',
                 relation: 'The DPMC edition’s note 7 flags disagreement with his categorical sovereignty gloss. Read attribution and commentary alongside wording rather than presenting a translation as an uncontested account of every signatory’s understanding.',
                 citations: citations([], ['dpmcTreatyTextsKawharu']),
+              },
+              {
+                label: 'Matike Mai three-sphere constitutional transformation',
+                distinction: 'A Māori-led contemporary proposal that separates a rangatiratanga sphere, a kāwanatanga sphere and a relational sphere, while offering six indicative models for how authority and joint decision-making might be organized.',
+                relation: 'It develops treaty-based constitutional transformation rather than describing a completed Indigenous government. The proposal is relevant to authority, identity and relational diplomacy, but it supplies no direct evidence for a global Indigenous economic, social, foreign-policy or religion score.',
+                citations: citations([], ['matikeMaiReport2016', 'cameHonourableKawanatanga2026', 'scobieRangatiratanga2023']),
               },
               {
                 label: 'Contemporary Indigenous constitutional government',
@@ -14072,6 +14093,13 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 match: 'treaty-based sovereignty and contested jurisdiction anchor',
                 caveat: 'The Māori and English treaty texts are not interchangeable, and the meaning and implementation of the relationship remain contested in Aotearoa New Zealand. The dated northern case discussed here is not a profile of all Māori, a current-country rating, or a finding about every later signing.',
                 citations: citations(['cesaireDiscourseColonialism'], ['waitangiTribunalTreaty', 'unIndigenousDeclaration', 'teRakiStageOne2014Release']),
+              },
+              {
+                name: 'Matike Mai Aotearoa Independent Working Group',
+                period: 'Aotearoa New Zealand, 2012–2016 report and continuing constitutional debate',
+                match: 'Māori-led constitutional transformation proposal grounded in tikanga, He Whakaputanga and Te Tiriti',
+                caveat: 'The report documents an extensive consultation process and indicative models, not an enacted constitution, a government decision, or unanimous Māori consent. Its six-axis relevance is interpretive and limited to the named proposal.',
+                citations: citations([], ['matikeMaiReport2016', 'cameHonourableKawanatanga2026', 'scobieRangatiratanga2023']),
               },
               {
                 name: 'Contemporary Indigenous and tribal governments',
@@ -14145,13 +14173,18 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             text: 'The three Onondaga pages are undated public institutional explanations consulted on 16 September 2026. They are not a newly verified constitutional edition, an account from every Haudenosaunee community, or evidence that this project has community approval. The reading date must not be used as a founding date or as proof of unchanged practice over centuries. No ceremony, sacred narrative or source image is republished here.',
             citations: citations([], ['onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty']),
           },
+          {
+            type: 'paragraph',
+            text: 'Matike Mai also requires an implementation and representation safeguard. Its 252 hui demonstrate a substantial engagement process, but a working-group report remains a proposal with six possible models, not a referendum or an enacted constitutional settlement. Scobie’s fiscal article is explicitly desk-based and exploratory, while Came and colleagues offer a literature-based argument for honourable kāwanatanga. The report, its later interpreters, and the Tribunal’s separate inquiry record must therefore remain distinct evidence types; none warrants a current-country score or a claim about every Māori iwi, hapū, urban Māori authority, or resident.',
+            citations: citations([], ['matikeMaiReport2016', 'scobieRangatiratanga2023', 'cameHonourableKawanatanga2026', 'teRakiStage2Reports2025']),
+          },
         ],
       },
     ],
     references: {
       authorReferenceIds: ['ostromGoverningCommons', 'fanonWretchedEarth', 'cesaireDiscourseColonialism', 'gandhiHindSwaraj', 'millOnLiberty', 'senDevelopmentFreedom'],
-      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'keaneWhakaputanga2017', 'onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty', 'hollandLulewiczKeystone2022'],
-      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, and Keane’s historical synthesis. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged. The Onondaga addition distinguishes the Nation’s public institutional self-description from a broader Northern Iroquoian scholarly comparison; neither validates the existing numerical profile.',
+      researchSourceIds: ['unIndigenousDeclaration', 'oxfordTribalConstitutions', 'waitangiTribunalTreaty', 'pmcIndigenousDeliberative', 'sepColonialism', 'sepEnvironmentalEthics', 'sepDemocracy', 'sepReligionPolitics', 'whakaputangaTexts1835', 'dpmcTreatyTextsKawharu', 'teRakiStageOne2014Release', 'matikeMaiReport2016', 'scobieRangatiratanga2023', 'cameHonourableKawanatanga2026', 'teRakiStage2Reports2025', 'keaneWhakaputanga2017', 'onondagaClanMothers', 'onondagaChiefs', 'onondagaSovereignty', 'hollandLulewiczKeystone2022'],
+      editorialNote: 'This entry is intentionally comparative and low-confidence. It uses international Indigenous-rights standards, Indigenous/constitutional legal history, peer-reviewed deliberative-democracy research, and political theory as different evidence layers. The examples remain bounded to named peoples and sources; no global Indigenous “essence” or exact country match is inferred. The Māori case separates historical transcriptions, named translators’ interpretations, institutional findings, the Waitangi Tribunal’s staged inquiry, and Matike Mai’s Māori-led constitutional proposal. English prose is original paraphrase, not a new translation or community-endorsed account; all six coordinates remain provisional and unchanged. The Onondaga addition distinguishes the Nation’s public institutional self-description from a broader Northern Iroquoian scholarly comparison; neither validates the existing numerical profile.',
     },
     researchGaps: [
       'Add community-reviewed, nation-specific scholarship in Indigenous languages and in Portuguese, French, German, Spanish, and English before expanding the comparative profile.',
@@ -14165,6 +14198,7 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
       'Review the full Te Paparahi o Te Raki reports, including later stages, and relevant Māori scholarship before making present-day constitutional or remedy claims. This pass consulted the 2014 release, not the complete evidentiary record.',
       'Seek Onondaga and other Haudenosaunee language-community review of terminology, authority and publication boundaries. Examine nation-specific accounts of participation, disagreement and removal in practice; public institutional descriptions alone do not establish outcomes, universal gender equality or consent to classification.',
       'Read the historical works and Indigenous scholarship underlying the Northern Iroquoian comparison directly, separating Haudenosaunee, Huron-Wendat and other settings. Investigate the relationship between traditional and elected institutions by nation and period before making wider claims; founding chronology and U.S. constitutional influence remain unverified here.',
+      'Read the complete Matike Mai report, its Māori-language and community circulation contexts, the full Te Paparahi o Te Raki Stage 2 volumes, and contrasting Māori constitutional scholarship. The present addition establishes a bounded Māori-led proposal and later research boundary, not implementation, unanimity, current law, or a final Indigenous authority coordinate.',
     ],
   },
 };
