@@ -855,6 +855,11 @@ const RIGHTS_RECORDS = {
     omanRoyalDecreeBasicStatute2021: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and legal link only. No decree wording, translation, scan or Gazette facsimile is republished; the English witness does not clear the Arabic original, Official Gazette or derivative publication.' },
     omanForeignMinistryBasicStatute2026: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and official institutional link only. No page wording or institutional media is republished; the ministry account remains a self-description distinct from independent evidence.' },
     siegfriedOmanBasicLaw1998: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Cornell record link only. No abstract wording, dissertation text, quotation, scan or PDF is republished; the complete study remains a research gap.' },
+    jordanConstitution1952Official: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and official Constitutional Court link only. No constitutional wording, scan, translation or full amendment history is republished; the official page remains a primary witness.' },
+    jordanConstitution1952Wipo: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original synthesis and WIPO Lex link only. No English wording, translation, scan or PDF is republished; Arabic collation, amendments and implementation remain open.' },
+    jordanConstitution2011English: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'The linked translation is identified as unofficial and says Arabic controls. This project publishes original synthesis and a link only; no translated wording, scan or PDF is republished.' },
+    shalabyJordanParliamentaryPowers2024: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and DOI/full-HTML link only. No article prose, quotation, table, figure or adapted material is republished; the study is not treated as a complete Jordanian constitutional history.' },
+    yomJordanPolitics2025: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Oxford metadata/abstract link only. No book text, quotation, table or adapted material is republished; Arabic, archival and full-book research remain open.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },
