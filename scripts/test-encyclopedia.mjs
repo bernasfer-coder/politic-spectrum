@@ -1856,6 +1856,8 @@ assert.match(indianColonialSafeguard.text, /as decolonization/);
 
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['usHistorianLibyaSovereignty1912', 'primary', '1912-12-05', ['English'], 'high'],
+  ['frusLibyaPeaceTreaty1912', 'primary', '1912-10-18', ['English', 'Italian document translated or summarized'], 'high'],
+  ['locTreatyLausanneLibya1912', 'primary', '1912-10-18', ['English translation'], 'high'],
   ['benmaizaOuchyLibya2025Arabic', 'secondary', '2025', ['Arabic', 'English abstract'], 'medium'],
   ['ryanLibyaPrestige2015', 'secondary', '2015-05', ['English'], 'medium'],
   ['ahmidaLibyanGenocide2020', 'secondary', '2020', ['English'], 'medium'],
@@ -1877,6 +1879,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
 }
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence, publicationStatus] of [
   ['diPasqualeLibyansItaly2018', 'secondary', '2018-06-11', ['English', 'Italian sources discussed'], 'high', 'link-only'],
+  ['vandewalleLibyaFourthShore2012', 'secondary', '2012', ['English'], 'medium', 'link-only'],
   ['tarchiMabruchismo2021', 'secondary', '2021-06-04', ['English', 'Italian sources discussed'], 'high', 'allowed-with-attribution'],
   ['raineroOmarMukhtar1988French', 'secondary', '1988', ['French'], 'medium', 'link-only'],
   ['ghuaitaKufraOccupation1931Arabic', 'secondary', '2017', ['Arabic'], 'medium', 'link-only'],
