@@ -3110,13 +3110,37 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.directQuote, null);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:social-democratic'), `${sourceId} needs an encyclopedia backlink`);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['sndSwedishSapManifesto1944', 'primary', '1944-09-17', ['Swedish'], 'high'],
+  ['arbarkSapPrograms1897to1990', 'secondary', '2001', ['Swedish'], 'high'],
+  ['berghUniversalWelfareSweden2004', 'secondary', '2004', ['English'], 'high'],
+  ['blomqvistPalmeUniversalism2020', 'secondary', '2020-03-18', ['English'], 'high'],
+  ['oecdSwedenPublicGovernance2023', 'contextual', '2023', ['English'], 'high'],
+]) {
+  assert.ok(socialDemocraticEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Swedish social-democratic reference trail`);
+  assert.ok(JSON.stringify(socialDemocraticEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:social-democratic'), `${sourceId} needs an encyclopedia backlink`);
+}
 assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1989–1990:')), 'the East German SDP trajectory needs a dated history row');
 assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1973–1976: Portuguese')), 'the Portuguese transition needs a dated history row');
+assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1944–1990s: Swedish')), 'the Swedish welfare trajectory needs a dated history row');
 assert.ok(socialDemocraticHistory.some(({ period }) => period.startsWith('1990–present:')), 'the post-reunification welfare transformation needs a dated history row');
 const socialDemocraticExamples = socialDemocraticEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries);
 assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('Social Democratic Party in the GDR')), 'the East German SDP needs a bounded documented example');
 assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('Portuguese Socialist Party')), 'the Portuguese transition needs a bounded documented example');
+assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('Swedish Social Democratic welfare project')), 'the Swedish welfare project needs a bounded documented example');
 assert.ok(socialDemocraticExamples.find(({ name }) => name.startsWith('German welfare-state transformation')), 'post-reunification welfare transformation needs a bounded example');
+assert.ok(socialDemocraticEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).some(({ label }) => label.startsWith('Nordic universalist')), 'the Nordic universalist variant must stay distinct');
 assert.ok(socialDemocraticEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).some(({ label }) => label.startsWith('Portuguese constitutional social democracy')), 'the Portuguese variant must stay distinct from later welfare-state social democracy');
 assert.ok(socialDemocraticEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).some(({ name }) => name === 'Mário Soares'), 'Mário Soares must be a bounded person example');
 assert.ok(socialDemocraticEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Portuguese case adds a safeguard')), 'the Portuguese case needs a criticism safeguard');

@@ -2268,6 +2268,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The Portuguese case also shows why party programmes, constitutional text and governing practice must be separated. The PS’s 1974 programme used explicitly socialist and anti-monopoly language; the 1976 constitutional settlement retained a revolutionary vocabulary while creating a pluralist institutional order and protecting social and labor rights; and the transition’s political actors disputed whether the country should follow a revolutionary or European-democratic route. These layers support a Portuguese variant within the history of social democracy, but they do not make the party programme, the Constitution, and later policy interchangeable.',
             citations: citations([], ['psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018']),
           },
+          {
+            type: 'paragraph',
+            text: 'Sweden supplies a bounded Nordic case, but not a timeless country label. The Swedish Social Democratic Party’s 1944 election manifesto connected full employment, productive investment, social insurance, education, rural security, peace and international cooperation in a post-war programme. The Arbetarrörelsens arkiv collection explains that the 1944 programme revised the movement’s language while retaining a socialist tradition and responding to the party’s governing responsibilities. Later scholarship treats Swedish universalism as a multidimensional institutional question: Bergh distinguishes coverage from benefit size, while Blomqvist and Palme find continuity in some welfare dimensions and retrenchment or selectivity in others after 1990. This separates declared aims, programme history, and welfare outcomes rather than treating “the Swedish model” as one ideology.',
+            citations: citations([], ['sndSwedishSapManifesto1944', 'arbarkSapPrograms1897to1990', 'berghUniversalWelfareSweden2004', 'blomqvistPalmeUniversalism2020', 'oecdSwedenPublicGovernance2023']),
+          },
         ],
       },
       {
@@ -2303,6 +2308,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1950s–1970s: post-war social-democratic settlement',
             text: 'Many European systems combined collective bargaining, rising wages, public services, progressive taxation, and economic growth. The settlement expanded social citizenship but remained nationally bounded and could exclude migrants, colonies, women, racial minorities, disabled people, or informal workers from its fullest benefits.',
             citations: citations(['keynesGeneralTheory', 'millOnLiberty'], ['sepSocialism', 'oecdWelfareModels', 'bpbWelfareModels']),
+          },
+          {
+            period: '1944–1990s: Swedish social democracy and the universalist welfare project',
+            text: 'The Swedish Social Democratic election manifesto of 1944 presented full employment, social insurance, education, productive capacity, rural security, peace and international cooperation as linked post-war aims. The Swedish programme collection describes the 1944 revision as a modernization of language undertaken while the party held governing responsibility, not as a simple abandonment of socialism. Later research on Sweden’s welfare state tests the universalist reputation against separate dimensions of coverage, financing, provision and benefit adequacy; the evidence supports a strong but changing institutional family resemblance, not one permanent outcome or a single-party explanation.',
+            citations: citations([], ['sndSwedishSapManifesto1944', 'arbarkSapPrograms1897to1990', 'berghUniversalWelfareSweden2004', 'blomqvistPalmeUniversalism2020']),
           },
           {
             period: '1970s–1980s: crisis, revision, and pluralization',
@@ -2344,6 +2354,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Combines mixed economies, collective bargaining, universal or broad social services, and macroeconomic management.',
                 relation: 'Closest fit to the modern archetype, though welfare regimes vary widely across countries.',
                 citations: citations(['keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels']),
+              },
+              {
+                label: 'Nordic universalist social democracy',
+                distinction: 'Uses broad social citizenship, public services, coordinated labor relations and a predominantly private mixed economy, with Sweden as a historically important but internally changing case.',
+                relation: 'A major modern variant, not a synonym for every Nordic country or every Swedish government. Universalism must be assessed separately by coverage, financing, provision and benefit adequacy.',
+                citations: citations(['bernsteinEvolutionarySocialism'], ['sndSwedishSapManifesto1944', 'arbarkSapPrograms1897to1990', 'berghUniversalWelfareSweden2004', 'blomqvistPalmeUniversalism2020', 'oecdSwedenPublicGovernance2023']),
               },
               {
                 label: 'German social-market social democracy',
@@ -2440,6 +2456,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['bernsteinEvolutionarySocialism', 'keynesGeneralTheory'], ['sepSocialism', 'oecdWelfareModels', 'vdem']),
               },
               {
+                name: 'Swedish Social Democratic welfare project',
+                period: '1944 manifesto; post-war expansion; reforms and universalism debates after 1990',
+                match: 'bounded Nordic programme and institutional comparator',
+                caveat: 'The 1944 manifesto documents declared aims, the Swedish archival collection explains programme change, and later scholarship evaluates welfare universalism; none alone proves equal implementation, a single party cause, or a current Swedish ideological score. OECD evidence also records decentralization and regional delivery disparities.',
+                citations: citations([], ['sndSwedishSapManifesto1944', 'arbarkSapPrograms1897to1990', 'berghUniversalWelfareSweden2004', 'blomqvistPalmeUniversalism2020', 'oecdSwedenPublicGovernance2023']),
+              },
+              {
                 name: 'Attlee-era Britain and post-war British welfare reform',
                 period: '1945–1951 emphasis',
                 match: 'historical welfare-state and labor-policy resemblance',
@@ -2531,6 +2554,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Swedish case adds a specific safeguard to the universalist comparison. A party manifesto can connect employment, welfare, education and peace in a coherent political project, but welfare universalism is not a binary property. Bergh distinguishes who is covered from how large a benefit is, while Blomqvist and Palme find different trajectories across pensions, social insurance, health care and family policy after 1990. OECD reporting also notes that Swedish public services are substantially decentralized and that access and quality vary across regions. These findings caution against using Sweden as proof that social democracy has one administrative design or uniformly equal outcomes.',
+            citations: citations([], ['sndSwedishSapManifesto1944', 'berghUniversalWelfareSweden2004', 'blomqvistPalmeUniversalism2020', 'oecdSwedenPublicGovernance2023']),
+          },
+          {
+            type: 'paragraph',
             text: 'Social-democratic success also depends on conditions that are not fully controlled by national policy: economic growth, international trade, migration, demographic change, technological shifts, ecological limits, and the bargaining power of organized labor. The profile should therefore be read as an institutional project with changing constraints, not as a fixed list of benefits.',
             citations: citations(['keynesGeneralTheory', 'bernsteinEvolutionarySocialism'], ['sepSocialism', 'oecdWelfareModels', 'foreignPolicy']),
           },
@@ -2564,12 +2592,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['bernsteinEvolutionarySocialism', 'keynesGeneralTheory', 'millOnLiberty', 'wollstonecraftRights', 'lockeSecondTreatise', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'morgenthauRealism', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'bpbGermanSocialState', 'bpbWelfareModels', 'bpbSocialMarketEconomy', 'ghdiGodesberg', 'vdem', 'ches', 'foreignPolicy', 'ghdiGodesbergGerman', 'lompeGodesberg1979', 'fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989', 'starkeGermanWelfareState2022', 'psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018'],
-      editorialNote: 'The entry distinguishes reformist socialism, welfare-state social democracy, social liberalism, democratic socialism, the West German Godesberg reorientation, the distinct East German SDP trajectory, and the Portuguese revolutionary-to-constitutional case. Its scores describe a didactic modern social-democratic archetype, not every party, programme, or welfare state carrying the label. The Portuguese sources are kept as separate party, constitutional, institutional, Portuguese-language scholarly, and international-network evidence layers; they do not recalibrate the score or establish a current country classification.',
+      researchSourceIds: ['sepSocialism', 'sepLiberalism', 'sepReligionPolitics', 'oecdWelfareModels', 'fesHistorySocialDemocracy', 'bpbSpdProgrammatics', 'bpbGermanSocialState', 'bpbWelfareModels', 'bpbSocialMarketEconomy', 'ghdiGodesberg', 'vdem', 'ches', 'foreignPolicy', 'ghdiGodesbergGerman', 'lompeGodesberg1979', 'fesSdpDdrFounding1989', 'fischerSpdGermanUnity1989', 'starkeGermanWelfareState2022', 'sndSwedishSapManifesto1944', 'arbarkSapPrograms1897to1990', 'berghUniversalWelfareSweden2004', 'blomqvistPalmeUniversalism2020', 'oecdSwedenPublicGovernance2023', 'psDeclarationPrinciples1974Portuguese', 'portugalConstitution1976Portuguese', 'portugalDemocracyConstruction1974', 'castanoSoaresTransition2012Portuguese', 'granadinoPortuguesePSInternationalNetworks2018'],
+      editorialNote: 'The entry distinguishes reformist socialism, welfare-state social democracy, social liberalism, democratic socialism, the West German Godesberg reorientation, the distinct East German SDP trajectory, the Portuguese revolutionary-to-constitutional case, and the Nordic universalist variant. Its scores describe a didactic modern social-democratic archetype, not every party, programme, or welfare state carrying the label. The Portuguese sources are kept as separate party, constitutional, institutional, Portuguese-language scholarly, and international-network evidence layers; the Swedish sources likewise separate the 1944 party manifesto, archival programme history, welfare-state scholarship, and OECD institutional context. These cases do not recalibrate the score or establish a current country classification.',
     },
     researchGaps: [
       'Expand German-language scholarship on Bernstein, the SPD, ordoliberal and social-market debates, and post-war welfare institutions, including internal dissent, East German trajectories, and welfare-state transformation after reunification. This pass adds the FES document collection on the East German SDP and Fischer’s German-language account of the 1989–1990 party and unity debates, but it does not replace specialist archival work.',
-      'Add Swedish, Norwegian, Danish, French, and Portuguese scholarship on labor movements, universalism, social citizenship, and the Nordic and continental welfare variants. This pass adds a bounded Portuguese 1973–1976 case through the PS programme, the 1976 Constitution, parliamentary history, Castaño’s Portuguese study and Granadino’s international-network analysis, but it does not replace specialist Portuguese-language research on welfare institutions, unions, colonial legacies, or later PS governments.',
+      'This pass adds a bounded Swedish case through the 1944 Social Democratic manifesto, the Arbetarrörelsens arkiv programme collection, Bergh’s universalism framework, Blomqvist and Palme’s post-1990 analysis, and OECD governance context. Still add Swedish, Norwegian, Danish, French and Portuguese scholarship on labor movements, universalism, social citizenship, welfare implementation, unions, colonial legacies, and later party governments; the Swedish material does not substitute for comparative Nordic or language-specific archival work. The Portuguese case remains separately bounded by its PS programme, the 1976 Constitution, parliamentary history, Castaño’s study and Granadino’s international-network analysis.',
       'Add country-specific evidence before listing current states or parties as examples; welfare models and party programmes change over time.',
       'Add specialist research on colonial legacies, migration, gender, unpaid care, disability, ecological transition, automation, and the global constraints on national redistribution.',
       'Extend the selected Godesberg excerpts to the complete programme and identified print editions; verify translation provenance and Wehner’s original 1960 speech before quoting them. Read Lompe’s complete article and the dissenting works he cites alongside newer scholarship.',
