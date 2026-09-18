@@ -3221,6 +3221,37 @@ assert.ok(bhutanProcessHistory.citations.researchSourceIds.includes('botheBhutan
 const bhutanCriticalNote = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Bhutanese case adds a safeguard'));
 assert.ok(bhutanCriticalNote.citations.researchSourceIds.includes('whitecrossZhabdrungLegacy2022'));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('This Bhutan update adds Bothe')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['malaysiaFederalConstitution1957', 'primary', '1957', ['English', 'Malay'], 'high'],
+  ['tewMalaysiaMonarchyDemocracy2024', 'secondary', '2024-12-16', ['English'], 'high'],
+  ['wanHussainMalayRulers2017', 'secondary', '2017', ['Malay', 'English'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Malaysian monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const malaysiaHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1957–present constitutional framework'));
+assert.ok(malaysiaHistory, 'the Malaysian rotating monarchy timeline case must remain visible');
+assert.ok(malaysiaHistory.citations.researchSourceIds.includes('malaysiaFederalConstitution1957'));
+assert.ok(malaysiaHistory.citations.researchSourceIds.includes('tewMalaysiaMonarchyDemocracy2024'));
+const malaysiaVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Malaysian rotating elective'));
+assert.ok(malaysiaVariant, 'the Malaysian case must be separated as an elective constitutional variant');
+const malaysiaExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Malaysia’s rotating elective'));
+assert.ok(malaysiaExample, 'Malaysia must appear as a bounded historical example');
+assert.match(malaysiaExample.caveat, /not a present-day ideological classification/);
+const malaysiaSafeguard = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Malaysia adds a safeguard'));
+assert.ok(malaysiaSafeguard, 'Malaysia must add a royal-discretion safeguard');
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('This Malaysia update adds the official Federal Constitution')));
 
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
