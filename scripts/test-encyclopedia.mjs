@@ -454,14 +454,35 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence, publ
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['ottomanConstitutionTurkishCourt1876', 'primary', '1876-12-23', ['Ottoman Turkish'], 'high'],
+  ['toprakOttomanElections2013', 'secondary', '2013-07-26', ['Turkish', 'English abstract'], 'medium'],
+  ['ahmedOttomanUlemaIslamicConstitution2026', 'secondary', '2026', ['English'], 'medium'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a late Ottoman reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
 const ottomanLiberalIntroduction = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'introduction').blocks;
 assert.ok(ottomanLiberalIntroduction.some(({ text }) => text?.startsWith('The late Ottoman constitutional debate supplies a bounded non-Western case')));
+assert.ok(ottomanLiberalIntroduction.some(({ text }) => text?.startsWith('The Constantinople-centered case becomes more precise')));
 assert.ok(ottomanLiberalIntroduction.some(({ text }) => text?.startsWith('An Arabic-Ottoman reform strand broadens this case')));
 const ottomanLiberalDescription = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'description').blocks;
 assert.ok(ottomanLiberalDescription.some(({ text }) => text?.startsWith('Ottoman constitutional liberalism should not be treated')));
 assert.ok(ottomanLiberalDescription.some(({ text }) => text?.startsWith('The Khayr al-Din case shows')));
 const ottomanLiberalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(ottomanLiberalHistory.some(({ period }) => period.startsWith('1860s–1909 — Ottoman constitutional thought')));
+assert.ok(ottomanLiberalHistory.some(({ period }) => period.startsWith('1876–1909 — Ottoman legal text')));
 assert.ok(ottomanLiberalHistory.some(({ period }) => period.startsWith('1867–1878 — Khayr al-Din al-Tunisi')));
 const ottomanLiberalVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Ottoman constitutional liberalism'));
 assert.ok(ottomanLiberalVariant, 'Ottoman constitutional liberalism must be separated from the monarchist case');
