@@ -837,6 +837,9 @@ const RIGHTS_RECORDS = {
     lombardiIslamicConstitutions2013: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and DOI link only. No article wording, quotation, table, figure or PDF is republished; the comparative argument is not treated as a complete Pakistan history.' },
     khanArifPakistanShariat2018: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and publisher link only. No article wording, quotation, translation or PDF is republished; only the abstract-level account was consulted.' },
     rizviPakistanDemocracy2013: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Oxford publisher link only. No chapter wording, quotation, table, figure or PDF is republished; the abstract does not clear reuse of the complete chapter.' },
+    omanRoyalDecreeBasicStatute2021: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and legal link only. No decree wording, translation, scan or Gazette facsimile is republished; the English witness does not clear the Arabic original, Official Gazette or derivative publication.' },
+    omanForeignMinistryBasicStatute2026: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and official institutional link only. No page wording or institutional media is republished; the ministry account remains a self-description distinct from independent evidence.' },
+    siegfriedOmanBasicLaw1998: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and Cornell record link only. No abstract wording, dissertation text, quotation, scan or PDF is republished; the complete study remains a research gap.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },
