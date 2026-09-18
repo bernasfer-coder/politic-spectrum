@@ -1667,6 +1667,40 @@ assert.match(germanSouthWestAfricaSafeguard.text, /No causal continuity with Naz
 assert.ok(germanSouthWestAfricaEntry.researchGaps.some((gap) => gap.startsWith('Extend the German South West Africa case')));
 
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['indiaGovernmentAct1858', 'primary', '1858-08-02', ['English'], 'high'],
+  ['bender1857Uprising2016', 'secondary', '2016', ['English'], 'high'],
+  ['downsBengalMartialLaw2022', 'secondary', '2022', ['English'], 'high'],
+  ['welschCompanySword2022', 'secondary', '2022', ['English'], 'high'],
+  ['buckleyNativeTroops2010', 'secondary', '2010', ['English'], 'medium'],
+]) {
+  assert.ok(germanSouthWestAfricaEntry.references.researchSourceIds.includes(sourceId), sourceId + ' needs an Indian colonial reference trail');
+  assert.ok(JSON.stringify(germanSouthWestAfricaEntry.sections).includes(sourceId), sourceId + ' needs claim-level use');
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, sourceId + ' must resolve once');
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const indianColonialHistory = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(indianColonialHistory.some(({ period, citations }) => period.startsWith('1857–1858 — Indian uprising') && citations.researchSourceIds.includes('indiaGovernmentAct1858')));
+const indianColonialVariant = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('British Indian Company–Crown militarism'));
+assert.ok(indianColonialVariant, 'British Indian Company–Crown militarism must be a separate bounded variant');
+const indianColonialExample = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('British India from the 1857 uprising'));
+assert.ok(indianColonialExample, 'British India must appear as a bounded historical example');
+assert.match(indianColonialExample.text, /one uniform ideology or score/);
+const indianColonialPerson = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('Indian sepoys'));
+assert.ok(indianColonialPerson, 'Indian sepoys must appear with a bounded agency caveat');
+const indianColonialSafeguard = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The British India case adds a safeguard'));
+assert.ok(indianColonialSafeguard, 'British India must add a colonial-transfer safeguard');
+assert.match(indianColonialSafeguard.text, /as decolonization/);
+
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['tocquevilleAlgeria1841French', 'primary', '1841', ['French'], 'medium'],
   ['tocquevilleAfricaReport1847French', 'primary', '1847-05-28', ['French'], 'medium'],
   ['algeriaSenatusConsulte1865', 'primary', '1865-07-14', ['French'], 'high'],
