@@ -1446,8 +1446,10 @@ assert.match(religiousDescription, /Baixada Fluminense/);
 assert.match(religiousHistory, /pre-revolutionary Iran, Islamic-left currents/);
 assert.match(religiousHistory, /Brazilian Comunidades Eclesiais de Base became/);
 assert.match(religiousHistory, /CNBB’s institutional message and retrospective/);
+assert.match(religiousHistory, /Emaús, CESEEP, and the National Faith and Politics Movement/);
 assert.ok(religiousVariants.some(({ label }) => /Iranian Islamic revolutionary socialism/.test(label)));
 assert.ok(religiousVariants.some(({ label }) => /Brazilian base-community and agrarian practice/.test(label)));
+assert.ok(religiousVariants.some(({ label }) => /Brazilian liberation-theology civic network/.test(label)));
 assert.match(JSON.stringify(religiousSocialistEntry), /Primary-text limit: the online Shariati collection/);
 for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   ['celamMedellinFinalCommissions1968', 'primary', '1968', 'high', ['Spanish']],
@@ -1457,6 +1459,7 @@ for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   ['meirellesCebsBaixadaFluminense2024', 'secondary', '2024-06-21', 'high', ['Portuguese', 'English abstract']],
   ['cnbbCEBsMessage2010', 'primary', '2010-05-15', 'high', ['Portuguese']],
   ['cnbbCEBsIntereclesialMemory2018', 'primary', '2018-01-24', 'medium', ['Portuguese']],
+  ['freireBrazilLiberationNetwork2022', 'secondary', '2022-07-20', 'high', ['Portuguese', 'English abstract']],
   ['kairosDocument1985', 'primary', '1985', 'high', ['English']],
   ['gobaKairosLiberation1987', 'secondary', '1987', 'medium', ['English']],
   ['mahlanguKairosPropheticWitness2025', 'secondary', '2025', 'high', ['English']],
@@ -1469,7 +1472,7 @@ for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   assert.equal(record.evidenceRole, evidenceRole);
   assert.equal(record.publicationDate, publicationDate);
   assert.equal(record.review.confidence, confidence);
-  assert.equal(record.accessDate, '2026-09-17');
+  assert.equal(record.accessDate, sourceId === 'freireBrazilLiberationNetwork2022' ? '2026-09-18' : '2026-09-17');
   assert.deepEqual(record.languages, languages);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
@@ -1500,6 +1503,7 @@ assert.match(religiousCriticisms, /The South African Kairos case adds a differen
 assert.match(religiousCriticisms, /A second Brazilian safeguard concerns institutional memory/);
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Read the complete 1985 and 1986 Kairos editions')));
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('This pass expands the bounded Brazilian CEB evidence cluster')));
+assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Américo Freire’s Portuguese network history')));
 
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
   ['katzReligiousKibbutzCredo1995', 'secondary', '1995-04', 'high'],
