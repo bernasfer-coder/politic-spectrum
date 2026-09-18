@@ -3740,4 +3740,36 @@ for (const [sourceId, evidenceRole] of [
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:libertarian-market'), `${sourceId} needs an encyclopedia backlink`);
 }
 
+const omanMonarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['omanRoyalDecreeBasicStatute2021', 'primary', '2021-01-11', ['English witness; Arabic original and Gazette not collated'], 'high'],
+  ['omanBasicStatuteArabic2021', 'primary', '2021-01-11', ['Arabic', 'English witness'], 'high'],
+  ['omanForeignMinistryBasicStatute2026', 'contextual', '2026-01-16', ['English'], 'medium'],
+  ['alTaleiOmanCouncilPowers2021', 'secondary', '2021-04-12', ['English'], 'medium'],
+  ['alKiyumiOmanConstitution2012', 'secondary', '2012-06-12', ['English'], 'medium'],
+  ['siegfriedOmanBasicLaw1998', 'secondary', '1998', ['English abstract; original work details not independently reviewed'], 'medium'],
+]) {
+  assert.ok(omanMonarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Oman monarchist reference trail`);
+  assert.ok(JSON.stringify(omanMonarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const omanHistory = omanMonarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1996–2021: Oman'));
+assert.ok(omanHistory, 'the Oman constitutional-monarchical timeline case must remain visible');
+assert.match(omanHistory.text, /post-2011/);
+const omanExample = omanMonarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Oman’s hereditary'));
+assert.ok(omanExample, 'Oman must appear as a bounded historical example');
+assert.match(omanExample.caveat, /does not establish current political practice/);
+assert.ok(omanMonarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Omani case adds a consultation-versus-accountability safeguard')));
+assert.ok(omanMonarchistEntry.researchGaps.some((gap) => gap.startsWith('Read the Arabic 1996 and 2021 Basic Statutes')));
+
 console.log(`Encyclopedia tests passed: ${Object.keys(ENCYCLOPEDIA_ENTRIES).length} entry with claim-level citation validation across ${DIMENSIONS.length} dimensions.`);
