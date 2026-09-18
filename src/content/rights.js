@@ -808,6 +808,10 @@ const RIGHTS_RECORDS = {
     mallatSaudiConstitutionalLaw2022: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Abstract-level attributed synthesis and DOI link only. No chapter wording, table, quotation, case file or PDF is republished; the full chapter remains a research gap.' },
     dailamiSaudiDesacraliseKingship2017: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Abstract-level attributed synthesis and DOI link only. No chapter wording, quotation, table or PDF is republished; the complete chapter and Arabic scholarship remain open.' },
     alnemariSaudiMonarchyConstitutionalism2023: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Repository abstract-level synthesis and handle link only. No dissertation wording, Arabic legal text, table, quotation or PDF is republished; the complete dissertation remains open.' },
+    philippineConstitution1987: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and LawPhil constitutional-text link only. No constitutional article, translation, scan or PDF is republished; the commission debates, later jurisprudence and implementation record remain open.' },
+    philippineRatification1987: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-18', notes: 'Original synthesis and Proclamation No. 58 link only. No proclamation wording, canvass annex, scan or vote certificate is republished; the record is used as a dated legal witness to ratification.' },
+    chopraPhilippinesTransformativeConstitutionalism2021: { ...LINK_ONLY, reviewedAt: '2026-09-18', license: 'Cambridge identifies the article as available under its published access terms; those terms remain controlling.', notes: 'Original attributed synthesis and DOI link only. No article wording, quotation, table, figure or PDF is republished.' },
+    bonoanDresselPhilippineOligarchicPolitics2026: { ...LINK_ONLY, reviewedAt: '2026-09-18', notes: 'Original attributed synthesis and DOI link only. No article wording, quotation, table, figure or PDF is republished; the article’s interpretation remains distinct from primary constitutional evidence.' },
   },
   sourceLinks: {
     smith: { ...LINK_ONLY },
