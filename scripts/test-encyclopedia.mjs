@@ -1822,6 +1822,26 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence, publicationStatus] of [
+  ['diPasqualeLibyansItaly2018', 'secondary', '2018-06-11', ['English', 'Italian sources discussed'], 'high', 'link-only'],
+  ['tarchiMabruchismo2021', 'secondary', '2021-06-04', ['English', 'Italian sources discussed'], 'high', 'allowed-with-attribution'],
+  ['raineroOmarMukhtar1988French', 'secondary', '1988', ['French'], 'medium', 'link-only'],
+  ['ghuaitaKufraOccupation1931Arabic', 'secondary', '2017', ['Arabic'], 'medium', 'link-only'],
+]) {
+  assert.ok(germanSouthWestAfricaEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a multilingual Italian Libya reference trail`);
+  assert.ok(JSON.stringify(germanSouthWestAfricaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, publicationStatus);
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
 const libyaHistory = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(libyaHistory.some(({ period, citations }) => period.startsWith('1911–1934 — Italian conquest') && citations.researchSourceIds.includes('usHistorianLibyaSovereignty1912')));
 const libyaVariant = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Italian Fascist settler-colonial militarism'));
@@ -1835,7 +1855,7 @@ assert.ok(libyaPeople.some(({ name }) => name.startsWith('Rodolfo Graziani')));
 const libyaSafeguard = germanSouthWestAfricaEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Italian Libya case adds a periodization'));
 assert.ok(libyaSafeguard, 'Italian Libya must add a source-balance safeguard');
 assert.match(libyaSafeguard.text, /single casualty count/);
-assert.ok(germanSouthWestAfricaEntry.researchGaps.some((gap) => gap.startsWith('The Italian Libya case remains bounded')));
+assert.ok(germanSouthWestAfricaEntry.researchGaps.some((gap) => gap.startsWith('The Italian Libya case now includes')));
 
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['haitiAmericanConvention1915', 'primary', '1915-09-16', ['English', 'French'], 'high'],
