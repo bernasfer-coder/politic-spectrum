@@ -215,3 +215,8 @@ main { max-width: 1240px; margin: auto; padding: 0 34px 76px; }
   .bibliography-filter-note { margin-right: 12px; margin-left: 12px; }
   .bibliography-pagination { justify-content: space-between; gap: 8px; }
 }
+
+.taxonomy-card { border-top: 2px solid var(--label-accent, var(--line)); }
+.taxonomy-card-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.taxonomy-action { padding: 7px 9px; border: 1px solid color-mix(in srgb, var(--label-accent, var(--cyan)) 44%, transparent); background: color-mix(in srgb, var(--label-accent, var(--cyan)) 10%, transparent); color: var(--soft); font: 9px 'DM Mono', monospace; cursor: pointer; }
+.taxonomy-action:hover, .taxonomy-action:focus-visible { border-color: var(--label-accent, var(--cyan)); color: var(--label-accent, var(--cyan)); }

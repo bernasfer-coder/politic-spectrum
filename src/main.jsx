@@ -27,7 +27,7 @@ import {
   RIGHTS_RECORDS,
   SOURCES,
   SPECTRUM_BANDS,
-  TAXONOMY_LABELS,
+  LABEL_CATALOGUE,
 } from './content/index.js';
 import './styles.css';
 import { GEOGRAPHY_LABELS } from './content/geography.js';
@@ -661,7 +661,7 @@ function SpectrumLibrary({ selectedType, encyclopediaEntryId, onSelectType, onOp
   const [encyclopediaQuery, setEncyclopediaQuery] = useState('');
   const [columnDimensionId, setColumnDimensionId] = useState('economic');
   const [rowDimensionId, setRowDimensionId] = useState('authority');
-  const [filters, setFilters] = useState({ query: '', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' });
+  const [filters, setFilters] = useState({ query: '', catalogueKind: 'all', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' });
   const columnDimension = DIMENSIONS.find(({ id }) => id === columnDimensionId) ?? DIMENSIONS[0];
   const rowDimension = DIMENSIONS.find(({ id }) => id === rowDimensionId) ?? DIMENSIONS[1];
   const gridColumns = PROFILE_GRID_BUCKETS.map((bucket) => ({ ...bucket, label: getProfileGridBucketLabel(columnDimension, bucket.id, 'columns') }));
@@ -676,22 +676,24 @@ function SpectrumLibrary({ selectedType, encyclopediaEntryId, onSelectType, onOp
     return [key, visibleProfiles.filter((archetype) => getProfileGridCell(archetype, rowDimensionId, columnDimensionId) === key)];
   }))), [visibleProfiles, rowDimensionId, columnDimensionId]);
   const filterOptions = useMemo(() => ({
-    family: [...new Set(TAXONOMY_LABELS.map(({ family }) => family))].sort(),
-    labelType: [...new Set(TAXONOMY_LABELS.map(({ labelType }) => labelType))].sort(),
-    region: [...new Set(TAXONOMY_LABELS.map(({ region }) => region))].sort(),
-    status: [...new Set(TAXONOMY_LABELS.map(({ status }) => status))].sort(),
+    catalogueKind: [...new Set(LABEL_CATALOGUE.map(({ catalogueKind, catalogueKindLabel }) => JSON.stringify({ value: catalogueKind, label: catalogueKindLabel })))].map((option) => JSON.parse(option)).sort((left, right) => left.label.localeCompare(right.label)),
+    family: [...new Set(LABEL_CATALOGUE.map(({ family }) => family))].sort(),
+    labelType: [...new Set(LABEL_CATALOGUE.map(({ labelType }) => labelType))].sort(),
+    region: [...new Set(LABEL_CATALOGUE.map(({ region }) => region))].sort(),
+    status: [...new Set(LABEL_CATALOGUE.map(({ status }) => status))].sort(),
   }), []);
   const filteredLabels = useMemo(() => {
     const query = filters.query.trim().toLowerCase();
-    return TAXONOMY_LABELS.filter((label) => {
-      const searchable = [label.canonicalName, ...label.aliases, label.family, label.region, label.period, label.summary].join(' ').toLowerCase();
+    return LABEL_CATALOGUE.filter((label) => {
+      const searchable = [label.canonicalName, ...label.aliases, label.catalogueKindLabel, label.family, label.region, label.period, label.summary].join(' ').toLowerCase();
       const queryMatches = !query || searchable.includes(query);
+      const sourceMatches = filters.catalogueKind === 'all' || label.catalogueKind === filters.catalogueKind;
       const familyMatches = filters.family === 'all' || label.family === filters.family;
       const typeMatches = filters.labelType === 'all' || label.labelType === filters.labelType;
       const regionMatches = filters.region === 'all' || label.region === filters.region;
       const statusMatches = filters.status === 'all' || label.status === filters.status;
       const axisMatches = filters.axis === 'all' || Number.isFinite(label.axisPositions?.[filters.axis]);
-      return queryMatches && familyMatches && typeMatches && regionMatches && statusMatches && axisMatches;
+      return queryMatches && sourceMatches && familyMatches && typeMatches && regionMatches && statusMatches && axisMatches;
     });
   }, [filters]);
   const encyclopediaEntries = useMemo(() => Object.values(ENCYCLOPEDIA_ENTRIES).sort((left, right) => left.title.localeCompare(right.title)), []);
@@ -786,7 +788,7 @@ function SpectrumLibrary({ selectedType, encyclopediaEntryId, onSelectType, onOp
       {!visibleProfiles.length && <div className="profile-search-empty"><strong>No main profile matches that search.</strong><p>Try a broader term such as “liberal”, “socialist”, “national”, “religious”, or “anarchist”.</p></div>}
         </>
       ) : libraryPage === 'labels' ? (
-      <TaxonomyCatalogue filters={filters} filterOptions={filterOptions} filteredLabels={filteredLabels} onUpdateFilter={updateFilter} />
+      <TaxonomyCatalogue filters={filters} filterOptions={filterOptions} filteredLabels={filteredLabels} onUpdateFilter={updateFilter} onOpenProfile={(profileId) => { setLibraryPage('profiles'); onSelectType(profileId); }} onOpenEntry={(entryId) => { setLibraryPage('encyclopedia'); onOpenEncyclopediaEntry(entryId); }} />
       ) : libraryPage === 'encyclopedia' ? (
       <EncyclopediaPage entries={visibleEncyclopediaEntries} totalEntries={encyclopediaEntries.length} query={encyclopediaQuery} selectedEntryId={encyclopediaEntryId} onQueryChange={setEncyclopediaQuery} onOpenEntry={onOpenEncyclopediaEntry} onCloseEntry={onCloseEncyclopediaEntry} />
       ) : (
@@ -858,7 +860,7 @@ function EncyclopediaCitations({ citations, compact = false }) {
   return <div className={compact ? 'encyclopedia-citations compact' : 'encyclopedia-citations'}><span>Sources</span><div>{authors.map((reference) => <a key={`author-${reference.id}`} href={reference.url} target="_blank" rel="noreferrer">{reference.author} · {reference.work} ↗</a>)}{sources.map((source) => <a key={`source-${source.id}`} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</div></div>;
 }
 
-function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFilter }) {
+function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFilter, onOpenProfile, onOpenEntry }) {
   const [showAll, setShowAll] = useState(false);
   const visibleLabels = showAll ? filteredLabels : filteredLabels.slice(0, 8);
 
@@ -869,7 +871,7 @@ function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFil
 
   function clearFilters() {
     setShowAll(false);
-    for (const [key, value] of Object.entries({ query: '', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' })) {
+    for (const [key, value] of Object.entries({ query: '', catalogueKind: 'all', family: 'all', labelType: 'all', region: 'all', status: 'all', axis: 'all' })) {
       onUpdateFilter(key, value);
     }
   }
@@ -877,13 +879,14 @@ function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFil
   return (
     <section className="taxonomy-catalogue">
       <div className="taxonomy-heading">
-        <div><p className="eyebrow">NORMALIZED LABEL CATALOGUE</p><h3>Search political traditions without flattening them.</h3></div>
-        <p>A sourced starter registry of historical and contemporary labels. Aliases are searchable, while differences and uncertainty stay visible.</p>
+        <div><p className="eyebrow">UNIFIED LABEL CATALOGUE</p><h3>Search traditions, profiles, and entries without flattening them.</h3></div>
+        <p>The selector brings together normalized labels, six-axis reference profiles, and encyclopedia-only entries. Each keeps its own evidence role, links, colors, differences, and uncertainty visible.</p>
       </div>
 
       <div className="taxonomy-filter-heading"><div><p className="eyebrow">EXPLORE THE CATALOGUE</p><h4>Curated first, searchable when you want depth.</h4></div><button className="text-button subdued" onClick={clearFilters}>Clear filters</button></div>
       <div className="taxonomy-filters" aria-label="Filter political labels">
         <label className="taxonomy-search"><span>Search labels</span><input type="search" value={filters.query} onChange={(event) => updateTaxonomyFilter('query', event.target.value)} placeholder="e.g. nationalism, councils, liberal" /></label>
+        <FilterSelect label="Catalogue source" value={filters.catalogueKind} options={filterOptions.catalogueKind} onChange={(value) => updateTaxonomyFilter('catalogueKind', value)} />
         <FilterSelect label="Family" value={filters.family} options={filterOptions.family} onChange={(value) => updateTaxonomyFilter('family', value)} />
         <FilterSelect label="Label type" value={filters.labelType} options={filterOptions.labelType} onChange={(value) => updateTaxonomyFilter('labelType', value)} />
         <FilterSelect label="Region" value={filters.region} options={filterOptions.region} onChange={(value) => updateTaxonomyFilter('region', value)} />
@@ -891,18 +894,18 @@ function TaxonomyCatalogue({ filters, filterOptions, filteredLabels, onUpdateFil
         <FilterSelect label="Axis coverage" value={filters.axis} options={DIMENSIONS.map(({ id, label }) => ({ value: id, label }))} onChange={(value) => updateTaxonomyFilter('axis', value)} />
       </div>
 
-      <div className="taxonomy-result-bar"><span>{filteredLabels.length} of {TAXONOMY_LABELS.length} labels</span><span>Search covers canonical names, aliases, periods, regions, and summaries.</span></div>
+      <div className="taxonomy-result-bar"><span>{filteredLabels.length} of {LABEL_CATALOGUE.length} labels</span><span>Search covers canonical names, aliases, profiles, periods, regions, and summaries.</span></div>
 
       {filteredLabels.length ? (
         <div className="taxonomy-grid">
-          {visibleLabels.map((label) => <TaxonomyCard key={label.id} label={label} />)}
+          {visibleLabels.map((label) => <TaxonomyCard key={`${label.catalogueKind}-${label.id}`} label={label} onOpenProfile={onOpenProfile} onOpenEntry={onOpenEntry} />)}
         </div>
       ) : (
         <div className="taxonomy-empty"><strong>No labels match these filters.</strong><p>Try clearing one filter or searching for an alias.</p></div>
       )}
 
       {filteredLabels.length > 8 && <button className="taxonomy-more" onClick={() => setShowAll((previous) => !previous)}>{showAll ? 'Show curated set' : `Show all ${filteredLabels.length} labels`} <span>{showAll ? '↑' : '↓'}</span></button>}
-      <p className="taxonomy-disclaimer">The axis positions are approximate interpretive coordinates, not historical measurements. Broad labels such as populism and monarchism can vary substantially by time, place, faction, and policy.</p>
+      <p className="taxonomy-disclaimer">The catalogue combines three related but distinct evidence layers. Axis positions are approximate interpretive coordinates, not historical measurements; broad labels such as populism and monarchism can vary substantially by time, place, faction, and policy.</p>
     </section>
   );
 }
@@ -912,18 +915,19 @@ function FilterSelect({ label, value, options, onChange }) {
   return <label className="taxonomy-select"><span>{label}</span><select value={value} onChange={(event) => onChange(event.target.value)}><option value="all">All</option>{normalizedOptions.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}</select></label>;
 }
 
-function TaxonomyCard({ label }) {
+function TaxonomyCard({ label, onOpenProfile, onOpenEntry }) {
   const coveredAxes = DIMENSIONS.filter((dimension) => Number.isFinite(label.axisPositions?.[dimension.id]));
   return (
-    <article className="taxonomy-card">
-      <div className="taxonomy-card-top"><div><p className="taxonomy-card-kicker">{label.labelType} · {label.status}</p><h4>{label.canonicalName}</h4></div>{label.warning && <span className="taxonomy-warning">Context-sensitive</span>}</div>
+    <article className="taxonomy-card" style={label.accent ? { '--label-accent': label.accent } : undefined}>
+      <div className="taxonomy-card-top"><div><p className="taxonomy-card-kicker">{label.catalogueKindLabel} · {label.labelType} · {label.status}</p><h4>{label.canonicalName}</h4></div>{label.warning && <span className="taxonomy-warning">Context-sensitive</span>}</div>
       <p className="taxonomy-summary">{label.summary}</p>
       <div className="taxonomy-meta"><span>{label.family}</span><span>{label.region}</span><span>{label.period}</span></div>
       <div className="taxonomy-axis-chips">{coveredAxes.length ? coveredAxes.map((dimension) => { const value = label.axisPositions[dimension.id]; return <span key={dimension.id}><b>{dimension.questionLabel}</b> {getBand(dimension.id, value).label}</span>; }) : <span><b>Axis profile</b> varies by context</span>}</div>
       <details className="taxonomy-differences"><summary>How this differs from nearby labels</summary><p>{label.differences}</p></details>
-      <div className="taxonomy-aliases"><span>Aliases</span><p>{label.aliases.join(' · ')}</p></div>
+      {label.aliases.length ? <div className="taxonomy-aliases"><span>Aliases</span><p>{label.aliases.join(' · ')}</p></div> : null}
       {label.warning && <p className="taxonomy-warning-note">{label.warning}</p>}
-      <div className="taxonomy-sources"><span>Sources</span>{label.sourceIds.map((sourceId) => { const source = RESEARCH_SOURCES.find((item) => item.id === sourceId); return source ? <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a> : null; })}</div>
+      {(label.profileId || label.entryId) && <div className="taxonomy-card-actions">{label.profileId && <button className="taxonomy-action" onClick={() => onOpenProfile(label.profileId)}>Open reference profile ↗</button>}{label.entryId && <button className="taxonomy-action" onClick={() => onOpenEntry(label.entryId)}>Read encyclopedia entry ↗</button>}</div>}
+      <div className="taxonomy-sources"><span>Sources</span>{label.sourceIds.map((sourceId) => { const source = RESEARCH_SOURCES.find((item) => item.id === sourceId); return source ? <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a> : null; })}{label.authorCitationIds.map((citationId) => { const reference = AUTHOR_REFERENCES[citationId]; return reference ? <a key={citationId} href={reference.url} target="_blank" rel="noreferrer">{reference.author} · {reference.work} ↗</a> : null; })}</div>
     </article>
   );
 }

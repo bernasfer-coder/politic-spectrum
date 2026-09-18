@@ -2171,6 +2171,91 @@ const TAXONOMY_LABELS = RAW_TAXONOMY_LABELS.map((label) => ({
   axisPositions: orientProfile(label.axisPositions),
 }));
 
+// The catalogue intentionally keeps taxonomy labels, reference profiles, and
+// encyclopedia-only entries as different records. Similar names can be
+// related without pretending that they are interchangeable concepts.
+const TAXONOMY_ENTRY_LINKS = Object.freeze({
+  'anarcho-capitalism': 'anarcho-capitalist',
+  'anarcho-communism': 'anarcho-communist',
+  'christian-democracy': 'christian-democratic',
+  conservatism: 'conservative',
+  'civic-nationalism': 'civic-nationalist',
+  'classical-liberalism': 'classical-liberal',
+  'democratic-socialism': 'democratic-socialist',
+  'ethnic-nationalism': 'ethnic-nationalist',
+  fascism: 'historical-fascist',
+  monarchism: 'monarchist',
+  'national-conservatism': 'national-conservative',
+  'national-socialism': 'national-socialist',
+  populism: 'populist',
+  'social-democracy': 'social-democratic',
+  'social-liberalism': 'progressive-liberal',
+  theocracy: 'theocratic',
+});
+
+const TAXONOMY_CATALOGUE_LABELS = TAXONOMY_LABELS.map((label) => ({
+  ...label,
+  catalogueKind: 'normalized-label',
+  catalogueKindLabel: 'Normalized label',
+  profileId: null,
+  entryId: TAXONOMY_ENTRY_LINKS[label.id] ?? null,
+  authorCitationIds: [],
+  accent: null,
+}));
+
+const PROFILE_CATALOGUE_LABELS = ARCHETYPES.map((archetype) => ({
+  id: archetype.id,
+  canonicalName: archetype.name,
+  aliases: [],
+  labelType: 'reference profile',
+  family: 'Six-axis reference profiles',
+  region: 'Comparative',
+  period: 'Cross-period teaching model',
+  status: 'reference',
+  summary: archetype.summary,
+  differences: 'A didactic six-axis profile, not a canonical historical label. Use the linked encyclopedia entry for documented history and the normalized catalogue for narrower related traditions.',
+  axisPositions: archetype.profile,
+  sourceIds: [],
+  authorCitationIds: archetype.summaryCitationIds,
+  catalogueKind: 'reference-profile',
+  catalogueKindLabel: 'Reference profile',
+  profileId: archetype.id,
+  entryId: ENCYCLOPEDIA_ENTRIES[archetype.id] ? archetype.id : null,
+  accent: archetype.accent,
+  warning: archetype.warning ?? null,
+}));
+
+const PROFILE_IDS = new Set(ARCHETYPES.map(({ id }) => id));
+const ENCYCLOPEDIA_CATALOGUE_LABELS = Object.values(ENCYCLOPEDIA_ENTRIES)
+  .filter((entry) => !PROFILE_IDS.has(entry.id))
+  .map((entry) => ({
+    id: entry.id,
+    canonicalName: entry.canonicalLabel ?? entry.title,
+    aliases: entry.aliases,
+    labelType: 'encyclopedia entry',
+    family: 'Encyclopedia research',
+    region: 'Cross-regional',
+    period: 'Historical and contemporary',
+    status: entry.status,
+    summary: entry.summary,
+    differences: entry.scopeNote,
+    axisPositions: orientProfile(Object.fromEntries(Object.entries(entry.dimensionInterpretations).map(([dimensionId, value]) => [dimensionId, value.score]))),
+    sourceIds: entry.references.researchSourceIds,
+    authorCitationIds: entry.references.authorReferenceIds,
+    catalogueKind: 'encyclopedia-entry',
+    catalogueKindLabel: 'Encyclopedia entry',
+    profileId: null,
+    entryId: entry.id,
+    accent: null,
+    warning: null,
+  }));
+
+const LABEL_CATALOGUE = Object.freeze([
+  ...TAXONOMY_CATALOGUE_LABELS,
+  ...PROFILE_CATALOGUE_LABELS,
+  ...ENCYCLOPEDIA_CATALOGUE_LABELS,
+]);
+
 const BIBLIOGRAPHY_REVIEWER = 'Politic Spectrum editorial review';
 
 function createRelationshipSets() {
@@ -2578,6 +2663,7 @@ export {
   SOURCES,
   SPECTRUM_BANDS,
   TAXONOMY_LABELS,
+  LABEL_CATALOGUE,
   AUTHOR_REFERENCES,
   ENCYCLOPEDIA_ENTRIES,
   BIBLIOGRAPHY_ACCESS_DATE,

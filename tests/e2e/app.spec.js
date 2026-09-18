@@ -14,7 +14,7 @@ test('landing page switches through the three analysis modes', async ({ page }) 
   await page.getByRole('tab', { name: /Spectrum Library/i }).click();
   await expect(page.getByRole('tab', { name: /Reference profiles/i })).toHaveAttribute('aria-selected', 'true');
   await page.getByRole('tab', { name: /Label catalogue/i }).click();
-  await expect(page.getByText('NORMALIZED LABEL CATALOGUE')).toBeVisible();
+  await expect(page.getByText('UNIFIED LABEL CATALOGUE')).toBeVisible();
   await page.getByRole('tab', { name: /Encyclopedia/i }).click();
   await expect(page.getByText(/29 of 29 entries/i)).toBeVisible();
   await page.getByRole('link', { name: /Indigenous self-determination \/ relational governance/i }).click();
