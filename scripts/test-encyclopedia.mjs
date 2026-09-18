@@ -161,6 +161,36 @@ assert.ok(historicalFascistEntry.researchGaps.some((gap) => gap.startsWith('Read
 assert.ok(historicalFascistEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1929 Lateran Treaty')));
 
 const liberalConstitutionalismEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['tunisiaConstitution1861ArabicOfficial', 'primary', '1861-04-26', ['Arabic'], 'high'],
+  ['tunisiaConstitution1861FrenchOfficial', 'primary', '1861-04-26', ['French'], 'high'],
+  ['marchIslamicConstitutionalismTunisia1861', 'secondary', '2020-05-16', ['English'], 'medium'],
+  ['khadharTunisianConstitution1861French1989', 'secondary', '1989', ['French'], 'high'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Tunisian constitutionalism reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-18');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'), `${sourceId} needs a liberal-constitutionalist backlink`);
+}
+const tunisianHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1857–1864 — Tunisian constitutional reform'));
+assert.ok(tunisianHistory, 'the Tunisian 1861 constitutional episode must remain visible');
+assert.match(tunisianHistory.text, /60-member Supreme Council/);
+assert.ok(tunisianHistory.citations.researchSourceIds.includes('marchIslamicConstitutionalismTunisia1861'));
+const tunisianVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Tunisian constitutional reform'));
+assert.ok(tunisianVariant, 'the Tunisian case must be separated as a dated constitutional variant');
+const tunisianExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Tunisia’s 1857–1864 reform sequence'));
+assert.ok(tunisianExample, 'Tunisia must appear as a bounded historical example');
+assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Tunisian case adds a formalism')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Collate the Arabic and French witnesses of the Tunisian Constitution')));
 for (const [sourceId, role, date] of [
   ['southAfricaConstitution1996Rights', 'primary', '1996'],
   ['southAfricaMakwanyaneCourt1995', 'primary', '1995-06-06'],
