@@ -1685,6 +1685,7 @@ const religiousVariants = religiousSocialistEntry.sections.find(({ id }) => id =
 assert.match(religiousDescription, /not interchangeable with Shariati’s pre-1979 anti-clerical revolutionary intellectual project/);
 assert.match(religiousDescription, /bounded Brazilian case/);
 assert.match(religiousDescription, /Baixada Fluminense/);
+assert.match(religiousDescription, /participant-level caution/);
 assert.match(religiousHistory, /pre-revolutionary Iran, Islamic-left currents/);
 assert.match(religiousHistory, /Brazilian Comunidades Eclesiais de Base became/);
 assert.match(religiousHistory, /CNBB’s institutional message and retrospective/);
@@ -1702,6 +1703,7 @@ for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   ['cnbbCEBsMessage2010', 'primary', '2010-05-15', 'high', ['Portuguese']],
   ['cnbbCEBsIntereclesialMemory2018', 'primary', '2018-01-24', 'medium', ['Portuguese']],
   ['freireBrazilLiberationNetwork2022', 'secondary', '2022-07-20', 'high', ['Portuguese', 'English abstract']],
+  ['costaZangelmiSchiavoCebs2011Portuguese', 'secondary', '2011-06-29', 'medium', ['Portuguese']],
   ['kairosDocument1985', 'primary', '1985', 'high', ['English']],
   ['gobaKairosLiberation1987', 'secondary', '1987', 'medium', ['English']],
   ['mahlanguKairosPropheticWitness2025', 'secondary', '2025', 'high', ['English']],
@@ -1714,7 +1716,7 @@ for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   assert.equal(record.evidenceRole, evidenceRole);
   assert.equal(record.publicationDate, publicationDate);
   assert.equal(record.review.confidence, confidence);
-  assert.equal(record.accessDate, sourceId === 'freireBrazilLiberationNetwork2022' ? '2026-09-18' : '2026-09-17');
+  assert.equal(record.accessDate, sourceId === 'freireBrazilLiberationNetwork2022' ? '2026-09-18' : sourceId === 'costaZangelmiSchiavoCebs2011Portuguese' ? '2026-09-19' : '2026-09-17');
   assert.deepEqual(record.languages, languages);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
@@ -1746,6 +1748,7 @@ assert.match(religiousCriticisms, /A second Brazilian safeguard concerns institu
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('Read the complete 1985 and 1986 Kairos editions')));
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('This pass expands the bounded Brazilian CEB evidence cluster')));
 assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Américo Freire’s Portuguese network history')));
+assert.ok(religiousSocialistEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Costa, Zangelmi and Schiavo')));
 
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
   ['katzReligiousKibbutzCredo1995', 'secondary', '1995-04', 'high'],
