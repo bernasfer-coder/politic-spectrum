@@ -580,6 +580,37 @@ assert.ok(ottomanLiberalCriticisms.some(({ text }) => text?.startsWith('The late
 assert.ok(ottomanLiberalCriticisms.some(({ text }) => text?.startsWith('The Arabic-Ottoman reform case adds a state-capacity')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Collate the original Ottoman Turkish, Arabic and French texts')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Arabic Aqwam al-Masalik')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence, accessDate] of [
+  ['assembleeRestorationCharter1814French', 'primary', '1814', ['French'], 'high', '2026-09-18'],
+  ['assembleeCharterJuly1830', 'primary', '1830-08-14', ['French'], 'high', '2026-09-17'],
+  ['senatRestorationChamber1814', 'secondary', null, ['French'], 'high', '2026-09-17'],
+  ['laubaRestorationLegal2010', 'secondary', '2010–2011', ['French', 'English'], 'medium', '2026-09-17'],
+  ['bodineauVerpeauxFranceConstitutionalHistory2024', 'secondary', '2024', ['French'], 'medium', '2026-09-17'],
+]) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a French Restoration reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, accessDate);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'));
+}
+const frenchRestorationLiberalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(frenchRestorationLiberalHistory.some(({ period }) => period.startsWith('1814–1830 — French Restoration')));
+assert.ok(frenchRestorationLiberalHistory.some(({ period }) => period.startsWith('14 August 1830–1848 — revised Charter')));
+const frenchRestorationLiberalVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('French Restoration and July Monarchy constitutional liberalism'));
+assert.ok(frenchRestorationLiberalVariant, 'French Restoration constitutional liberalism must be separated as a dated variant');
+const frenchRestorationLiberalExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The French Restoration and July Monarchy supply'));
+assert.ok(frenchRestorationLiberalExample, 'French Restoration constitutionalism must appear as a bounded example');
+assert.match(frenchRestorationLiberalExample.text, /still excluding most adults/);
+assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Restoration case adds a safeguard')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the complete French Restoration and July Monarchy constitutional record')));
 
 const deliberativeCentreEntry = ENCYCLOPEDIA_ENTRIES['centrist-pragmatist'];
 for (const [sourceId, role, date] of [
@@ -1040,7 +1071,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist', 'encyclopedia:liberal-constitutionalist']);
 }
 const frenchRestorationTimeline = frenchMonarchyEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(frenchRestorationTimeline.find(({ period }) => period.startsWith('1814–1830: Restoration Charter'))?.citations.researchSourceIds.includes('senatRestorationChamber1814'));
