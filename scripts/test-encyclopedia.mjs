@@ -4463,6 +4463,46 @@ for (const dimension of DIMENSIONS) {
   );
 }
 
+const congoLaborEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
+const congoLaborSourceIds = new Set(['seibertBelgianCongoForcedLabor2024', 'vaessenBelgianCongoLabor2001French']);
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['seibertBelgianCongoForcedLabor2024', 'secondary', '2024-08-21', ['English'], 'high'],
+  ['vaessenBelgianCongoLabor2001French', 'secondary', '2001', ['French'], 'high'],
+]) {
+  assert.ok(congoLaborEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Belgian Congo labor reference trail`);
+  assert.ok(JSON.stringify(congoLaborEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the Belgian Congo labor case`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
+}
+const congoIntroduction = congoLaborEntry.sections.find(({ id }) => id === 'introduction').blocks;
+assert.ok(congoIntroduction.some(({ text }) => text?.startsWith('The Belgian takeover did not make coercive labor disappear')), 'the Belgian Congo labor introduction must preserve its evidence note');
+const congoSixAxisEvidence = congoLaborEntry.sections.flatMap(({ blocks = [] }) => blocks).find(({ text }) => text?.startsWith('The labor scholarship qualifies the economic reading'));
+assert.ok(congoSixAxisEvidence, 'the Belgian Congo labor evidence must inform the six-axis boundary');
+assert.match(congoSixAxisEvidence.text, /Seibert’s 2024 synthesis connects/);
+for (const dimensionId of ['economic', 'social', 'authority']) {
+  assert.ok(
+    congoLaborEntry.dimensionInterpretations[dimensionId].citations.researchSourceIds.some((sourceId) => congoLaborSourceIds.has(sourceId)),
+    `${dimensionId} needs a Belgian Congo labor citation trail`,
+  );
+}
+const congoLaborVariant = congoLaborEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Belgian Congo labor coercion'));
+assert.ok(congoLaborVariant, 'Belgian Congo labor coercion must remain a separate bounded variant');
+assert.ok(congoLaborVariant.citations.researchSourceIds.includes('vaessenBelgianCongoLabor2001French'));
+const congoLaborExample = congoLaborEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period?.startsWith('1908–1930 — Belgian colonial labor mobilization'));
+assert.ok(congoLaborExample, 'Belgian Congo labor must appear as a bounded historical example');
+assert.match(congoLaborExample.text, /bounded labor-political-economy interpretation/);
+assert.ok(congoLaborEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('Seibert’s 2009 article record and 2024 Oxford synthesis')));
+assert.ok(congoLaborEntry.researchGaps.some((gap) => gap.startsWith('The Congo labor update adds Seibert’s 2024 Oxford synthesis')));
+
 for (const sourceId of ['moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']) {
   assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Moroccan monarchist reference trail`);
   assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the Moroccan case`);
