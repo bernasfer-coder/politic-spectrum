@@ -207,6 +207,42 @@ const sources = [
     description: 'A broad book-length history of Japan’s modern transformation from the early modern period onward. Its wide chronology supplies a second national perspective for the Meiji constitutional case without collapsing later empire, militarism or postwar democracy into the 1868–1890 founding window.',
   },
   {
+    id: 'wyattThailandShortHistory2004',
+    label: 'David K. Wyatt — Thailand: A Short History',
+    url: 'https://yalebooks.co.uk/book/9780300084757/thailand/',
+    note: 'Official Yale University Press book record consulted for Wyatt’s revised book-length history of Thailand, including the evolution of government and the 1932 period. The complete monograph, Thai-language scholarship and cited archives were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['David K. Wyatt'], institution: 'Yale University Press',
+    publicationDate: '2004', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Thai national and political history',
+    identifiers: { isbn: '9780300084757' },
+    description: 'A revised book-length history of Thailand that supplies a broad national context for the 1932 constitutional revolution. Its scope is wider than the bounded case and is not used to flatten regional, class, royal, military or party differences.',
+  },
+  {
+    id: 'bakerPhongpaichitHistoryThailand2022',
+    label: 'Chris Baker and Pasuk Phongpaichit — A History of Thailand',
+    url: 'https://www.cambridge.org/core/books/a-history-of-thailand/E1F24670B23A167D93376E39EB2D1206',
+    note: 'Official Cambridge University Press book record and contents consulted for the fourth-edition history of Thailand, including the 1870s–1930s social and political setting and the 1930s nationalisms chapter. The complete monograph and cited Thai-language sources were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Chris Baker', 'Pasuk Phongpaichit'], institution: 'Cambridge University Press',
+    publicationDate: '2022', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Thai national, social and political history',
+    identifiers: { isbn: '9781009014830', eisbn: '9781009029797', doi: '10.1017/9781009029797' },
+    description: 'A fourth-edition book-length history that places the 1932 revolution within state formation, social change, competing nationalisms and twentieth-century political conflict. It is used as an independent perspective alongside Wyatt and Batson, not as proof of a single Thai political trajectory.',
+  },
+  {
+    id: 'batsonEndAbsoluteMonarchy1984',
+    label: 'Benjamin A. Batson — The End of the Absolute Monarchy in Siam',
+    url: 'https://ndlsearch.ndl.go.jp/books/R100000002-I000003128916',
+    note: 'National Diet Library bibliographic record consulted for Batson’s focused book-length study of the end of absolute monarchy in Siam. The complete monograph, archival papers and Thai-language sources were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Benjamin A. Batson'], institution: 'Oxford University Press / Asian Studies Association of Australia',
+    publicationDate: '1984', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'focused book-length Thai constitutional and political history',
+    identifiers: { isbn: '9780195826128' },
+    description: 'A focused book-length study of the political end of absolute monarchy in Siam, centered on the late absolute-monarchy crisis and the 1932 transition. Its focused scope complements broader national histories while not settling every later constitutional or social interpretation.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -345,6 +381,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') ? 'German postwar democratic and constitutional history'
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
         : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') ? 'Japanese Meiji constitutional and political history'
+        : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',
