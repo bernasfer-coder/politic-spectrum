@@ -612,6 +612,7 @@ const RIGHTS_RECORDS = {
     ipccAr6Synthesis: { ...LINK_ONLY, notes: 'IPCC assessment used for independently authored summaries of climate risk and policy context; no IPCC text, figures, or graphics are reproduced.' },
     socialEcologyMunicipalism: { ...LINK_ONLY, notes: 'Institute for Social Ecology page used for independent synthesis of Bookchin’s proposal; no page text, graphics, or chapters are reproduced.' },
     makhnoRuralAnarchism: { ...LINK_ONLY, notes: 'Scholarly book record used as a linked historical source; no book text, scans, or tables are reproduced.' },
+    cipkoPalijMakhno1993IEU: { ...LINK_ONLY, reviewedAt: '2026-09-19', notes: 'Original attributed synthesis and Internet Encyclopedia of Ukraine link only. No article wording, translation, image, bibliography entry or page asset is republished; the institutional summary does not clear the Ukrainian/Russian sources it cites.' },
     cambridgeSpanishAnarchism: { ...LINK_ONLY, notes: 'Cambridge scholarly chapter used as a linked historical source; no chapter text, tables, or figures are reproduced.' },
     sepFascism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     oxfordRepublicanismTransatlantic: { ...LINK_ONLY, notes: 'Oxford Handbook chapter used as a linked comparative source; no chapter text, tables, or figures are reproduced.' },

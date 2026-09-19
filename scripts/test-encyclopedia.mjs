@@ -2786,6 +2786,7 @@ for (const [sourceId, evidenceRole, publicationDate, language] of [
   ['rougerieWomenCommune1997', 'secondary', '1997', 'French'],
   ['carnavaletParisiennes2022', 'secondary', '2022', 'French'],
   ['muldoonCommuneFeminism2023', 'secondary', '2023', 'English'],
+  ['cipkoPalijMakhno1993IEU', 'secondary', '1993', 'English'],
 ]) {
   assert.ok(anarchistCommunalistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anarchist-communalist reference trail`);
   assert.ok(JSON.stringify(anarchistCommunalistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
@@ -2794,7 +2795,7 @@ for (const [sourceId, evidenceRole, publicationDate, language] of [
   const [record] = records;
   assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary statements from interpretation`);
   assert.equal(record.publicationDate, publicationDate);
-  assert.equal(record.accessDate, '2026-09-16');
+  assert.equal(record.accessDate, sourceId === 'cipkoPalijMakhno1993IEU' ? '2026-09-19' : '2026-09-16');
   assert.deepEqual(record.languages, [language]);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
@@ -2816,11 +2817,14 @@ const communeHistory = anarchistCommunalistEntry.sections.find(({ id }) => id ==
 assert.match(communeHistory, /neither vote nor stand/, 'club participation must not imply electoral inclusion');
 assert.match(communeHistory, /small amount implemented/, 'cooperative proposals must not become accomplished citywide reform');
 const communeDescription = anarchistCommunalistEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(communeHistory, /local peasants, workers and artisans/, 'Makhno’s local organization must remain bounded by the institutional source');
+assert.match(communeHistory, /not a settled stateless system/, 'the Makhno evidence must not become proof of durable stateless governance');
 assert.match(communeDescription, /not proof that equal citizenship was secured/, 'demands must not become certified outcomes');
 const communeCriticisms = anarchistCommunalistEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
 assert.match(communeCriticisms, /not a transparent record/, 'manipulated images must retain their evidence boundary');
 assert.ok(anarchistCommunalistEntry.researchGaps.some((gap) => gap.includes('actual participation, remuneration')), 'implementation research must remain open');
 assert.ok(anarchistCommunalistEntry.researchGaps.some((gap) => gap.includes('full Muldoon–Müller–Leipold article')), 'the full scholarly article must remain a research gap');
+assert.ok(anarchistCommunalistEntry.researchGaps.some((gap) => gap.includes('Internet Encyclopedia of Ukraine')), 'the Makhno institutional source must preserve its follow-up gap');
 
 const democraticSocialistEntry = ENCYCLOPEDIA_ENTRIES['democratic-socialist'];
 const democraticSocialistProfile = ARCHETYPES.find(({ id }) => id === 'democratic-socialist').profile;

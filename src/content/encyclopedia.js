@@ -3726,8 +3726,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             period: '1917–1921: the Makhnovist movement in Ukraine',
-            text: 'The Makhnovist movement emerged amid revolution and civil war in Ukraine and is studied as a rural anarchist experiment involving peasant self-organization, military struggle, and attempts at autonomous administration. Its territory, institutions, social composition, and relationship to Ukrainian nationalism and Bolshevik power remain contested; war conditions severely limit what can be inferred about durable civilian governance.',
-            citations: citations(['bakuninStatism'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+            text: 'The Makhnovist movement emerged amid revolution and civil war in Ukraine and is studied as a rural anarchist experiment involving peasant self-organization, military struggle, and attempts at autonomous administration. A bounded institutional history records Makhno organizing local peasants, workers and artisans around Huliai-Pole, the arrival of Nabat anarchist organizers, the existence of anarchist communes, and the later Bolshevik attack that dissolved them. These details establish a local movement and a conflict over autonomous organization, not a settled stateless system. Its territory, institutions, social composition, and relationship to Ukrainian nationalism and Bolshevik power remain contested; war conditions severely limit what can be inferred about durable civilian governance.',
+            citations: citations(['bakuninStatism'], ['makhnoRuralAnarchism', 'cipkoPalijMakhno1993IEU', 'sepAnarchism']),
           },
           {
             period: '1936–1939: revolutionary Catalonia and the Spanish Civil War',
@@ -3765,6 +3765,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Uses labor unions, direct action, and workplace organization as the main route to social transformation and worker self-management.',
                 relation: 'Overlaps strongly on anti-state economics but places the revolutionary union at the center rather than the commune alone.',
                 citations: citations(['bakuninStatism', 'kropotkinMutualAid'], ['sepAnarchism', 'sepSocialism']),
+              },
+              {
+                label: 'Makhnovist movement',
+                distinction: 'A Ukrainian anarchist movement organized around peasant, worker and artisan mobilization, local soviets, anarchist communes and armed resistance during the civil-war period.',
+                relation: 'A historically bounded movement case that illustrates communal organization under war, not a complete normative model or a synonym for every anarcho-communist current.',
+                citations: citations([], ['cipkoPalijMakhno1993IEU', 'makhnoRuralAnarchism']),
               },
               {
                 label: 'Libertarian municipalism / communalism',
@@ -3853,8 +3859,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Free Territory / Makhnovist movement',
                 period: 'Ukraine, 1918–1921',
                 match: 'rural anarchist and peasant self-organization reference',
-                caveat: 'The movement operated under civil-war conditions, its social and political institutions were contested, and it was ultimately defeated by superior state forces.',
-                citations: citations(['bakuninStatism'], ['makhnoRuralAnarchism', 'sepAnarchism']),
+                caveat: 'The Internet Encyclopedia of Ukraine records local organization, anarchist communes, shifting military alliances and Bolshevik suppression; the movement operated under civil-war conditions, its social and political institutions were contested, and it was ultimately defeated by superior state forces. This is not evidence of a durable civilian stateless order.',
+                citations: citations(['bakuninStatism'], ['makhnoRuralAnarchism', 'cipkoPalijMakhno1993IEU', 'sepAnarchism']),
               },
               {
                 name: 'Revolutionary Catalonia',
@@ -3931,12 +3937,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['bakuninStatism', 'kropotkinMutualAid', 'bookchinLibertarianMunicipalism', 'ostromGoverningCommons', 'millOnLiberty', 'spinozaPolitical', 'kantPerpetualPeace', 'andersonImaginedCommunities', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepAnarchism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'communeDeclarationFrench', 'rougerieInternationalCommune', 'cossartCommuneCommunalism', 'assembleeCommuneHistory', 'communeWomenAddress1871', 'rougerieWomenCommune1997', 'carnavaletParisiennes2022', 'muldoonCommuneFeminism2023'],
-      editorialNote: 'The entry distinguishes anti-authoritarian communalism from anarcho-capitalism, democratic socialism, and later libertarian municipalism. Scores describe a didactic reference profile; the historical examples are partial, local, temporary, and contested rather than country-level matches. The 1871 programme and women’s address are primary evidence; scholarship and museum interpretation are identified separately. French passages are paraphrased, not quoted or presented as verified translations. Selected-section and abstract-only consultation limits remain visible in the bibliography; participation, formal rights, proposals and demonstrated outcomes are not interchangeable.',
+      researchSourceIds: ['sepAnarchism', 'socialEcologyMunicipalism', 'makhnoRuralAnarchism', 'cipkoPalijMakhno1993IEU', 'sepSocialism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'communeDeclarationFrench', 'rougerieInternationalCommune', 'cossartCommuneCommunalism', 'assembleeCommuneHistory', 'communeWomenAddress1871', 'rougerieWomenCommune1997', 'carnavaletParisiennes2022', 'muldoonCommuneFeminism2023'],
+      editorialNote: 'The entry distinguishes anti-authoritarian communalism from anarcho-capitalism, democratic socialism, and later libertarian municipalism. Scores describe a didactic reference profile; the historical examples are partial, local, temporary, and contested rather than country-level matches. The 1871 programme and women’s address are primary evidence; scholarship, museum interpretation and the Internet Encyclopedia of Ukraine’s bounded Makhno summary are identified separately. French passages are paraphrased, not quoted or presented as verified translations. Selected-section and abstract-only consultation limits remain visible in the bibliography; participation, formal rights, proposals and demonstrated outcomes are not interchangeable.',
     },
     researchGaps: [
       'Add German-, French-, Spanish-, Ukrainian-, Italian-, and Portuguese-language scholarship on anarchist federations, syndicalism, communes, and the history of translation across movements.',
       'Add specialist histories of the Paris Commune, Makhnovist movement, Revolutionary Catalonia, Mujeres Libres, and the civilian institutions of wartime collectivization.',
+      'This pass adds the English-language Internet Encyclopedia of Ukraine entry by Serge Cipko and Michael Palij as a bounded institutional synthesis of Makhno’s local organization, anarchist communes and Bolshevik suppression. Read its cited Ukrainian/Russian sources and specialist histories before treating the Free Territory as evidence of civilian governance, social inclusion or a durable communal order.',
       'Extend the Paris evidence beyond the April programme and Rougerie’s selected pages: examine local participation, women’s political exclusion and agency, implementation of labor reforms, and emergency powers. Review Cossart’s complete article and the Bookchin texts she discusses before expanding the reception claim.',
       'Add comparative institutional research on federation, consensus, delegated authority, commons governance, public goods, health, infrastructure, ecological limits, and defense without a sovereign state.',
       'Add country- and project-specific evidence before listing any contemporary autonomous community, cooperative, municipalist platform, or commons as a living match.',
