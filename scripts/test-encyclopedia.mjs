@@ -4063,6 +4063,21 @@ const naziChurchExamples = naziEntry.sections.find(({ id }) => id === 'examples'
 assert.ok(naziChurchExamples.some(({ name }) => name.startsWith('German Christians and the Reich Church')), 'the Reich Church case must be bounded');
 assert.ok(naziChurchExamples.some(({ name }) => name.startsWith('German Catholic institutions')), 'the Catholic institutional case must be bounded');
 assert.ok(naziEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The religious history adds a further warning')), 'the Nazi entry needs a religious-scoring safeguard');
+assert.ok(naziEntry.references.researchSourceIds.includes('ghdiEnablingAct1933German'), 'the Nazi entry needs the German Enabling Act source');
+assert.ok(JSON.stringify(naziEntry.sections).includes('ghdiEnablingAct1933German'), 'the Enabling Act needs claim-level use in the Nazi entry');
+const enablingRecord = BIBLIOGRAPHY_RECORDS.filter(({ id }) => id === 'research-ghdiEnablingAct1933German');
+assert.equal(enablingRecord.length, 1, 'the Enabling Act needs one bibliography record');
+assert.equal(enablingRecord[0].evidenceRole, 'primary');
+assert.equal(enablingRecord[0].publicationDate, '1933-03-24');
+assert.deepEqual(enablingRecord[0].languages, ['German', 'English']);
+assert.equal(enablingRecord[0].accessDate, '2026-09-19');
+assert.equal(enablingRecord[0].publicationStatus, 'link-only');
+assert.equal(enablingRecord[0].directQuote, null);
+assert.ok(enablingRecord[0].relationships.profileEntries.includes('encyclopedia:national-socialist'));
+const naziHistory = naziEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(naziHistory.some(({ period }) => period.startsWith('23–24 March 1933 — Enabling Act')), 'the Nazi history needs a dated Enabling Act phase');
+const naziExamples = naziEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries;
+assert.ok(naziExamples.some(({ name }) => name.startsWith('Enabling Act and the Kroll Opera')), 'the Enabling Act example must be bounded');
 
 const libertarianSocialistEntry = ENCYCLOPEDIA_ENTRIES['libertarian-socialist'];
 for (const [sourceId, evidenceRole] of [

@@ -14122,7 +14122,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A racial-totalitarian and genocidal ideology and regime that fused ultranationalism, antisemitism, racial hierarchy, Führer dictatorship, mass party mobilization, political terror, social conformity, rearmament, territorial expansion, and the planned destruction of Jews and other targeted groups. The word “socialist” in the party name does not make Nazism a socialist or communist movement in the ordinary economic sense; the regime destroyed the workers’ movement, protected private ownership when compatible with state and racial objectives, and subordinated economic life to dictatorship, rearmament, and racial empire.',
     summaryCitations: citations(
       ['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism', 'griffinNatureFascism'],
-      ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform'],
+      ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ghdiEnablingAct1933German'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -14181,6 +14181,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'The party name creates a persistent category error. Nazi economic policy was interventionist and directed, but the regime did not pursue worker ownership or communist class equality. It dismantled independent trade unions, persecuted socialists and communists, enabled private firms when useful to the regime, expropriated Jews, used forced labor, and made production serve rearmament and racial empire. “National Socialist” must therefore be interpreted through doctrine, institutions, ownership, labor power, and coercive outcomes—not through the label alone.',
             citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'oxfordNationalSocialism', 'ushmmThirdReich']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Enabling Act of 24 March 1933 shows how Nazi dictatorship used a formal legal instrument to hollow out parliamentary government. The German text and GHDI translation provide primary evidence that Reich laws could be enacted by the Reich government outside the ordinary constitutional procedure and could depart from constitutional provisions. This legal design must be read with the Reichstag fire decree, intimidation, exclusion of opponents, party coordination, and later administrative practice; formal enactment alone does not explain the whole dictatorship.',
+            citations: citations([], ['ghdiEnablingAct1933German', 'ushmmThirdReich']),
           },
         ],
       },
@@ -14248,6 +14253,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Appointment, Gleichschaltung, and dictatorship — 1933–1934',
             text: 'Hitler became Chancellor in January 1933 through a constitutional appointment by President Hindenburg, after which the Nazi leadership used emergency decrees, the Reichstag Fire Decree, the Enabling Act, violence, arrests, and coordination to destroy political pluralism. Independent unions were dissolved, opposition parties were eliminated, federal and civic institutions were brought under Nazi control, and the regime fused party, state, police, and leader authority in an escalating dictatorship.',
             citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism'], ['ushmmThirdReich', 'oxfordNaziGermany', 'bpbNationalSocialism']),
+          },
+          {
+            period: '23–24 March 1933 — Enabling Act and legal transfer of legislative power',
+            text: 'The Enabling Act was passed by the Reichstag on 23 March and promulgated on 24 March 1933. Its formal articles authorized the Reich government to enact national laws outside the ordinary constitutional procedure, including laws that could depart from the Weimar Constitution. The document therefore records a decisive legal mechanism in the destruction of parliamentary checks, but it must not be detached from the emergency decree, political intimidation, excluded or arrested opposition, and subsequent Gleichschaltung that made the legal authority effective in practice.',
+            citations: citations([], ['ghdiEnablingAct1933German', 'ushmmThirdReich']),
           },
           {
             period: 'July–September 1933 — German Christian church coordination',
@@ -14346,6 +14356,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['hitlerMeinKampf', 'mussoliniDoctrine'], ['oxfordNaziGermany', 'oxfordNationalSocialism', 'ushmmThirdReich']),
               },
               {
+                label: 'Legal dictatorship and Gleichschaltung',
+                distinction: 'Uses emergency measures, enabling statutes, administrative coordination, party control, and institutional restructuring to preserve a legal vocabulary while eliminating effective pluralist limits.',
+                relation: 'A core mechanism of the 1933 seizure and consolidation of power, but formal legality must be distinguished from coercive conditions, bureaucratic practice, and the later racial and imperial radicalization.',
+                citations: citations([], ['ghdiEnablingAct1933German', 'oxfordNaziGermany']),
+              },
+              {
                 label: 'German Christians and Confessing Church: contrasting responses',
                 distinction: 'The German Christians sought a Nazi-aligned Reich Church, while the Confessing Church opposed the subordination of Protestant doctrine and offices to the Führer-state. The July 1933 church elections and Müller’s appointment show how party support and ecclesiastical structures became entangled.',
                 relation: 'These were conflicting currents within German Protestantism, not equivalent Nazi variants. Confessing Church opposition often defended church autonomy and theological authority without amounting to comprehensive resistance to antisemitism or dictatorship; “neutral” leaders and ordinary congregations require separate evidence.',
@@ -14401,6 +14417,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             type: 'examples',
             entries: [
+              {
+                name: 'Enabling Act and the Kroll Opera Reichstag session',
+                period: 'Germany, 23–24 March 1933',
+                match: 'documented legal mechanism in the Nazi consolidation of dictatorship',
+                caveat: 'The statute’s formal text establishes delegated legislative authority and constitutional derogation; a full account also requires the session record, voting conditions, intimidation, the Reichstag fire decree, and subsequent implementation.',
+                citations: citations([], ['ghdiEnablingAct1933German', 'ushmmThirdReich']),
+              },
               {
                 name: 'German Christians and the Reich Church project',
                 period: 'Germany, 1932–1935',
@@ -14493,6 +14516,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Enabling Act also cautions against equating formal legality with constitutional democracy. A statute may be promulgated through an existing legal procedure while the political conditions for free deliberation, opposition, and effective review have already been destroyed or constrained. The entry therefore treats the Act as primary evidence of legal design and the Reichstag fire decree as evidence of emergency authority, while leaving the full sequence of coercion, votes, administration, and local implementation open for further German-language research.',
+            citations: citations([], ['ghdiEnablingAct1933German', 'ushmmThirdReich']),
+          },
+          {
+            type: 'paragraph',
             text: 'USHMM emphasizes that institutional caution and compromise coexisted with individual resistance and rescue. Defending Christians classified as Jewish by Nazi law did not amount to defending all Jews. Church self-protection, theological protest, collaboration, and protection of persecuted people therefore require separate evidence; neither universal church resistance nor universal individual complicity follows from religious affiliation.',
             citations: citations([], ['ushmmGermanChurches']),
           },
@@ -14516,10 +14544,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['hitlerMeinKampf', 'mussoliniDoctrine', 'arendtTotalitarianism', 'griffinNatureFascism'],
-      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights', 'oxfordImperialism', 'reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'ushmmGermanChurches', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'dhmGermanChristians2015', 'ghdiGermanChristiansSportpalast1933', 'ghdiBerlinChurchElection1933', 'frusGermanEvangelicalChurch1933'],
+      researchSourceIds: ['oxfordNationalSocialism', 'oxfordNaziGermany', 'ushmmNaziRacism', 'ushmmThirdReich', 'ushmmNaziPartyPlatform', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepNationalism', 'sepReligionPolitics', 'unGenocideConvention', 'ohchrMinorityRights', 'oxfordImperialism', 'ghdiEnablingAct1933German', 'reichConcordat1933German', 'barmenDeclaration1934German', 'piusXiMitBrennender1937', 'ushmmGermanChurches', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'dhmGermanChristians2015', 'ghdiGermanChristiansSportpalast1933', 'ghdiBerlinChurchElection1933', 'frusGermanEvangelicalChurch1933'],
       editorialNote: 'This is a historical warning entry. It distinguishes National Socialism from generic fascism, ethnic nationalism, militarism, populism, conservatism, communism, and contemporary extremist labels. Its scores describe the Nazi movement and regime as a historically specific racial-totalitarian and genocidal project, not a current-country classification or ordinary policy option. The church research uses German primary texts and an English institutional synthesis; English paraphrases are original, not quotations or authoritative translations. Promises, doctrinal objections, and historical conduct remain distinct evidence types.',
     },
     researchGaps: [
+      'Read the complete German Reichstag debate and roll call for 23 March 1933, the German original and later extensions of the Enabling Act, and Reich, Länder, party, police, and court records to distinguish formal legal transfer from coercive conditions and local implementation; the present GHDI document is a bounded primary-law witness, not a complete legal or institutional history.',
       'Add German-language scholarship and primary documents on völkisch nationalism, Weimar political culture, Gleichschaltung, Nazi law, churches, administration, and postwar memory, with translations clearly marked.',
       'Expand research on Jewish life, Roma and Sinti history, disability persecution, Black Germans, queer victims, Jehovah’s Witnesses, political prisoners, forced laborers, Soviet prisoners of war, and occupied societies without collapsing their experiences.',
       'Compare intentionalist, functionalist, structuralist, social-history, gender-history, economic-history, and transnational approaches while keeping perpetrator responsibility and victim-centered evidence visible.',
