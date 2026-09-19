@@ -1167,6 +1167,31 @@ const ottomanMonarchistCriticisms = frenchMonarchyEntry.sections.find(({ id }) =
 assert.match(ottomanMonarchistCriticisms, /Moreau’s French synthesis/);
 assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the official Ottoman Turkish witness')));
 
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['hilalEgypt1923ConstitutionCentenary2023Arabic', 'secondary', '2023-04-23', ['Arabic']],
+]) {
+  assert.ok(frenchMonarchyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Egyptian monarchism reference trail`);
+  assert.ok(JSON.stringify(frenchMonarchyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+const egyptMonarchistHistory = frenchMonarchyEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(egyptMonarchistHistory.find(({ period }) => period.startsWith('1919–1952: Egyptian constitutional monarchy'))?.citations.researchSourceIds.includes('hilalEgypt1923ConstitutionCentenary2023Arabic'));
+const egyptMonarchistIntroduction = frenchMonarchyEntry.sections.find(({ id }) => id === 'introduction').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(egyptMonarchistIntroduction, /drafting committee/);
+const egyptMonarchistCriticisms = frenchMonarchyEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(egyptMonarchistCriticisms, /drafting-legitimacy safeguard/);
+assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Hilal’s Arabic Al-Ahram retrospective')));
+
 const goldmanEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['goldmanFurtherRussia1924', 'primary', '1924'],
