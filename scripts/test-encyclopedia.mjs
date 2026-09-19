@@ -465,7 +465,7 @@ for (const [sourceId, publicationDate] of [
   assert.equal(record.review.confidence, 'medium');
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'));
 }
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence, publicationStatus] of [
   ['moreauOttomanStateConstitutionalReforms2013', 'secondary', '2013', ['French'], 'high', 'link-only'],
@@ -484,7 +484,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence, publ
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, publicationStatus);
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'));
 }
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['ottomanConstitutionTurkishCourt1876', 'primary', '1876-12-23', ['Ottoman Turkish'], 'high'],
@@ -503,7 +503,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'));
 }
 const ottomanLiberalIntroduction = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'introduction').blocks;
 assert.ok(ottomanLiberalIntroduction.some(({ text }) => text?.startsWith('The late Ottoman constitutional debate supplies a bounded non-Western case')));
@@ -1046,6 +1046,39 @@ assert.match(germanMonarchistExample.caveat, /do not establish equal citizenship
 const germanMonarchistCriticisms = frenchMonarchyEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
 assert.match(germanMonarchistCriticisms, /The German Empire adds a safeguard/);
 assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('Read the complete German and English editions')));
+
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence, accessDate] of [
+  ['ottomanConstitutionTurkishCourt1876', 'primary', '1876-12-23', ['Ottoman Turkish'], 'high', '2026-09-18'],
+  ['toprakOttomanElections2013', 'secondary', '2013-07-26', ['Turkish', 'English abstract'], 'medium', '2026-09-18'],
+  ['ahmedOttomanUlemaIslamicConstitution2026', 'secondary', '2026', ['English'], 'medium', '2026-09-18'],
+  ['moreauOttomanStateConstitutionalReforms2013', 'secondary', '2013', ['French'], 'high', '2026-09-17'],
+]) {
+  assert.ok(frenchMonarchyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a late Ottoman monarchism reference trail`);
+  assert.ok(JSON.stringify(frenchMonarchyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.accessDate, accessDate);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'));
+}
+const ottomanMonarchistDescription = frenchMonarchyEntry.sections.find(({ id }) => id === 'description').blocks;
+assert.ok(ottomanMonarchistDescription.some(({ text }) => text?.startsWith('The late Ottoman constitutional experiment')));
+assert.ok(ottomanMonarchistDescription.some(({ text }) => text?.startsWith('The source roles in this Ottoman case are deliberately bounded')));
+const ottomanMonarchistHistory = frenchMonarchyEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(ottomanMonarchistHistory.find(({ period }) => period.startsWith('1876–1909: late Ottoman constitutional monarchy'))?.citations.researchSourceIds.includes('moreauOttomanStateConstitutionalReforms2013'));
+const ottomanMonarchistVariant = frenchMonarchyEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Ottoman constitutional monarchy'));
+assert.ok(ottomanMonarchistVariant?.citations.researchSourceIds.includes('ottomanConstitutionTurkishCourt1876'));
+const ottomanMonarchistExample = frenchMonarchyEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Late Ottoman constitutional monarchy'));
+assert.ok(ottomanMonarchistExample?.citations.researchSourceIds.includes('toprakOttomanElections2013'));
+const ottomanMonarchistCriticisms = frenchMonarchyEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text ?? '').join(' ');
+assert.match(ottomanMonarchistCriticisms, /Moreau’s French synthesis/);
+assert.ok(frenchMonarchyEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the official Ottoman Turkish witness')));
 
 const goldmanEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate] of [
