@@ -293,7 +293,10 @@ for (const [sourceId, role, date, languages] of [
   assert.equal(record.review.confidence, 'high');
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+  const expectedProfiles = sourceId === 'brazilConstitution1988'
+    ? ['encyclopedia:indigenous-relational-governance', 'encyclopedia:liberal-constitutionalist']
+    : ['encyclopedia:liberal-constitutionalist'];
+  assert.deepEqual([...record.relationships.profileEntries].sort(), expectedProfiles.sort());
 }
 const germanSocialMarketRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-bpbSocialMarketEconomy');
 assert.ok(germanSocialMarketRecord.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'));
@@ -451,7 +454,10 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+  const expectedBrazilianProfiles = sourceId === 'brazilConstitution1988'
+    ? ['encyclopedia:indigenous-relational-governance', 'encyclopedia:liberal-constitutionalist']
+    : ['encyclopedia:liberal-constitutionalist'];
+  assert.deepEqual([...record.relationships.profileEntries].sort(), expectedBrazilianProfiles.sort());
 }
 const swissFederalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(swissFederalHistory.some(({ period }) => period.startsWith('1847–1848 — Swiss federal founding')));
@@ -652,6 +658,25 @@ for (const [sourceId, role, date, language] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
 }
+const indigenousGovernanceEntry = ENCYCLOPEDIA_ENTRIES['indigenous-relational-governance'];
+assert.ok(indigenousGovernanceEntry.references.researchSourceIds.includes('brazilConstitution1988'), 'Brazilian Indigenous case needs the official Constitution witness');
+assert.ok(JSON.stringify(indigenousGovernanceEntry.sections).includes('brazilConstitution1988'), 'Brazilian Indigenous case needs claim-level use of the official Constitution witness');
+for (const [sourceId, role, date, language] of [
+  ['barataAmazonLegalPluralism2018Portuguese', 'secondary', '2018', 'Portuguese'],
+]) {
+  assert.ok(indigenousGovernanceEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Brazilian Indigenous reference trail`);
+  assert.ok(JSON.stringify(indigenousGovernanceEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:indigenous-relational-governance']);
+}
+assert.ok(indigenousGovernanceEntry.researchGaps.some((gap) => gap.startsWith('Extend the Brazilian case through Indigenous-authored')));
 for (const [sourceId, role, date, language, confidence] of [
   ['copeiHistoryOfficial', 'primary', null, 'Spanish', 'medium'],
   ['copeiMessage2025', 'primary', '2025-01-14', 'Spanish', 'medium'],
@@ -2305,7 +2330,10 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+  const expectedBrazilianProfiles = sourceId === 'brazilConstitution1988'
+    ? ['encyclopedia:indigenous-relational-governance', 'encyclopedia:liberal-constitutionalist']
+    : ['encyclopedia:liberal-constitutionalist'];
+  assert.deepEqual([...record.relationships.profileEntries].sort(), expectedBrazilianProfiles.sort());
 }
 const brazilTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1980s–1988:'));
 assert.ok(brazilTimeline, 'the Brazilian constitutional timeline case must remain visible');

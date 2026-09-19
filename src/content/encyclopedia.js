@@ -15580,3 +15580,52 @@ christianDemocraticResearchEntry.sections.find(({ id }) => id === 'criticisms').
 
 christianDemocraticResearchEntry.references.researchSourceIds.push('mrpColinManifesto1944French', 'callotMrpHistory1980French');
 christianDemocraticResearchEntry.references.editorialNote += ' This pass deepens the French MRP case with the 1944 Lignes d’action pour la Libération lead and a separate 1980 French scholarly review of Callot’s history. The manifesto account is party-affiliated retrospective self-description, while the review is secondary and bounded; neither substitutes for the original pamphlet, complete programmes, parliamentary and colonial records, or minority perspectives.';
+
+const indigenousResearchEntry = ENCYCLOPEDIA_ENTRIES['indigenous-relational-governance'];
+const indigenousIntroduction = indigenousResearchEntry.sections.find(({ id }) => id === 'introduction');
+indigenousIntroduction.blocks.push({
+  type: 'evidence-note',
+  text: 'Brazil provides a bounded Portuguese-language constitutional case, not a generic model of Indigenous governance. The 1988 Federal Constitution recognizes Indigenous social organization, customs, languages, beliefs, traditions and original rights over traditionally occupied lands, and gives Indigenous communities and organizations legal standing to defend their rights. Joaquina Barata’s Portuguese study interprets the constitutional settlement as an opening for legal pluralism between official Brazilian law and Indigenous normative orders in selected Amazonian contexts, while stressing that formal recognition did not resolve demarcation and protection problems. The constitutional text, the scholarly interpretation and Indigenous peoples’ own distinct political authorities must remain separate evidence layers.',
+  citations: citations([], ['brazilConstitution1988', 'barataAmazonLegalPluralism2018Portuguese']),
+});
+
+const indigenousHistory = indigenousResearchEntry.sections.find(({ id }) => id === 'history');
+indigenousHistory.timeline.push({
+  period: '1988–present: Brazilian constitutional recognition and contested legal pluralism',
+  text: 'Brazil’s 1988 Constitution recognizes Indigenous social organization, customs, languages, beliefs, traditions and original rights over traditionally occupied lands, assigns the Union duties to demarcate and protect them, and grants communities and organizations legal standing. In a Portuguese-language study of selected Amazonian contexts, Joaquina Barata describes the settlement as an opening for legal pluralism while reporting that constitutional advances did not by themselves secure demarcation or protection. This is evidence of a constitutional design and a bounded scholarly critique, not proof of effective self-government, one Brazilian Indigenous legal order or uniform experience across peoples.',
+  citations: citations([], ['brazilConstitution1988', 'barataAmazonLegalPluralism2018Portuguese']),
+});
+
+const indigenousVariants = indigenousResearchEntry.sections.find(({ id }) => id === 'variants').blocks.find(({ type }) => type === 'comparison');
+indigenousVariants.rows.push({
+  label: 'Brazilian constitutional pluralism and Indigenous rights, 1988–present',
+  distinction: 'A state constitutional framework that recognizes Indigenous organization, customs, languages, beliefs, traditions, original territorial rights and legal standing for communities and organizations.',
+  relation: 'It offers a legal-pluralist recognition pathway rather than an enacted generic Indigenous constitution. The text’s promises, court and administrative practice, demarcation, and each people’s own authority must be researched separately.',
+  citations: citations([], ['brazilConstitution1988', 'barataAmazonLegalPluralism2018Portuguese']),
+});
+
+const indigenousExamples = indigenousResearchEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples');
+indigenousExamples.entries.push({
+  name: 'Brazil: 1988 Constitution and selected Amazonian legal-pluralism debates',
+  period: 'Brazil, 5 October 1988–present; selected Amazonian contexts in the Portuguese scholarship',
+  match: 'A bounded constitutional and legal-pluralist case in which Indigenous collective rights, social organization, cultural practices, territory and community standing were recognized within a state constitutional order.',
+  caveat: 'The official Constitution is a legal-design witness, while Barata’s study is a bounded Portuguese scholarly interpretation with field and documentary references from selected Amazonian contexts. Neither establishes implementation, equal protection, current demarcation outcomes, community-wide consent, or one political profile for Brazil’s many peoples.',
+  citations: citations([], ['brazilConstitution1988', 'barataAmazonLegalPluralism2018Portuguese']),
+});
+
+for (const dimensionId of ['economic', 'social', 'authority', 'identity', 'religion']) {
+  indigenousResearchEntry.dimensionInterpretations[dimensionId].citations.researchSourceIds.push('brazilConstitution1988');
+}
+for (const dimensionId of ['economic', 'social', 'authority', 'identity']) {
+  indigenousResearchEntry.dimensionInterpretations[dimensionId].citations.researchSourceIds.push('barataAmazonLegalPluralism2018Portuguese');
+}
+
+indigenousResearchEntry.sections.find(({ id }) => id === 'criticisms').blocks.push({
+  type: 'paragraph',
+  text: 'The Brazilian case adds a recognition-versus-realization safeguard. Constitutional recognition of Indigenous organization, culture, territory and legal standing can create a legal basis for pluralism, but it does not itself demarcate land, prevent extraction, secure effective jurisdiction, or describe the many political orders of Brazil’s peoples. Barata’s account is valuable for keeping formal law and lived conflict together, yet its selected Amazonian evidence must not be expanded into a community-wide or present-day audit. Any classification should identify the people, territory, institution, date, language and implementation record, and should remain open to “insufficient evidence.”',
+  citations: citations([], ['brazilConstitution1988', 'barataAmazonLegalPluralism2018Portuguese']),
+});
+
+indigenousResearchEntry.references.researchSourceIds.push('brazilConstitution1988', 'barataAmazonLegalPluralism2018Portuguese');
+indigenousResearchEntry.references.editorialNote += ' This pass adds a bounded Portuguese-language Brazilian case: the official 1988 Constitution is kept separate from Joaquina Barata’s scholarly account of legal pluralism and unresolved protection problems in selected Amazonian contexts. The addition does not represent every Brazilian people, validate current implementation, or establish community approval; language- and nation-specific research remains required.';
+indigenousResearchEntry.researchGaps.push('Extend the Brazilian case through Indigenous-authored and community-reviewed Portuguese, Indigenous-language and regional scholarship, constituent debates, Supreme Federal Court records, demarcation files, consent and consultation practice, and nation-specific histories. The 1988 Constitution and Barata’s bounded study establish a research lead, not effective self-government, uniform legal pluralism or a current six-axis score.');
