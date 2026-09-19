@@ -1468,6 +1468,30 @@ assert.match(moroccoExample.caveat, /does not classify present-day Morocco or it
 assert.ok(moroccoMonarchistEntry.researchGaps.some((gap) => /article 44’s conflicting.*full Ruiz Ruiz/.test(gap)));
 assert.ok(moroccoMonarchistEntry.researchGaps.some((gap) => /article\/card differences/.test(gap)), 'the prior coordinate discrepancy must remain visible');
 
+const saudiMonarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['nasibSaudiStatePowers2013Arabic', 'secondary', '2013', ['Arabic']],
+  ['alHarbiSaudiShuraReform2014', 'secondary', '2014-11', ['English']],
+]) {
+  assert.ok(saudiMonarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a monarchist reference trail`);
+  assert.ok(JSON.stringify(saudiMonarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve exactly once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+}
+assert.ok(saudiMonarchistEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Nasib’s Arabic constitutional-law analysis')));
+const saudiAuthority = saudiMonarchistEntry.dimensionInterpretations.authority.citations.researchSourceIds;
+assert.ok(saudiAuthority.includes('nasibSaudiStatePowers2013Arabic'));
+assert.ok(saudiAuthority.includes('alHarbiSaudiShuraReform2014'));
+
 const suezLiberationEntry = ENCYCLOPEDIA_ENTRIES['anti-colonial-liberation'];
 for (const [sourceId, evidenceRole, publicationDate] of [
   ['suezNationalizationDecree1956', 'primary', '1956-07-26'],
