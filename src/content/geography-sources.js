@@ -183,6 +183,30 @@ const sources = [
     description: 'A broad history of Italy since 1796 that supplies a second national perspective on the political development surrounding the post-fascist transition. Its scope is wider than the atlas window and is not used to flatten regional, partisan or institutional differences.',
   },
   {
+    id: 'gluckModernMyths1985',
+    label: 'Carol Gluck — Japan’s Modern Myths: Ideology in the Late Meiji Period',
+    url: 'https://www.jstor.org/stable/j.ctv1k13b6q',
+    note: 'Princeton University Press/JSTOR book record and description consulted for Gluck’s book-length study of late-Meiji ideological formation and diversity of political discourse. The full monograph and cited Japanese-language sources were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Carol Gluck'], institution: 'Princeton University Press',
+    publicationDate: '1985', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Japanese intellectual and political history',
+    identifiers: { isbn: '9780691008127', doi: '10.2307/j.ctv1k13b6q' },
+    description: 'A book-length analysis of the ideological formation of late-Meiji Japan. It is used to keep national ideology and political discourse plural and historically produced rather than treating the imperial constitutional order as an unchanged consensus.',
+  },
+  {
+    id: 'jansenMakingModernJapan2000',
+    label: 'Marius B. Jansen — The Making of Modern Japan',
+    url: 'https://www.jstor.org/stable/j.ctvjf9vr7',
+    note: 'Belknap Press of Harvard University Press/JSTOR book record and contents consulted for Jansen’s independent book-length history of modern Japan. The complete monograph and cited archives were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Marius B. Jansen'], institution: 'Belknap Press of Harvard University Press',
+    publicationDate: '2000', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Japanese national and political history',
+    identifiers: { isbn: '9780674003347', eisbn: '9780674039100', doi: '10.2307/j.ctvjf9vr7' },
+    description: 'A broad book-length history of Japan’s modern transformation from the early modern period onward. Its wide chronology supplies a second national perspective for the Meiji constitutional case without collapsing later empire, militarism or postwar democracy into the 1868–1890 founding window.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -320,6 +344,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('knightMexican') ? 'Mexican Revolution and constitutional history'
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') ? 'German postwar democratic and constitutional history'
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
+        : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') ? 'Japanese Meiji constitutional and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',

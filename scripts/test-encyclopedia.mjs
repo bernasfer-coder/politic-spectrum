@@ -1121,7 +1121,7 @@ for (const [sourceId, publicationDate] of [
   assert.equal(record.review.confidence, 'high');
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist', 'geography:japanese-meiji-constitutional-founding']);
 }
 const meijiHistory = frenchMonarchyEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(meijiHistory.some(({ period }) => period.startsWith('1881–1890: Meiji Japan')));
@@ -1146,7 +1146,9 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+  assert.deepEqual(record.relationships.profileEntries, sourceId === 'japanHouseElectionLaw1889'
+    ? ['encyclopedia:monarchist', 'geography:japanese-meiji-constitutional-founding']
+    : ['encyclopedia:monarchist']);
 }
 assert.ok(meijiHistory.find(({ period }) => period.startsWith('1881–1890:'))?.citations.researchSourceIds.includes('japanHouseElectionLaw1889'));
 assert.ok(meijiVariant.citations.researchSourceIds.includes('youngJapanDemocracyBreakdown2024'));
@@ -1980,7 +1982,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
   const expectedProfileEntries = ['japanMeijiConstitution1889', 'pidaReeseImperialJapan2026'].includes(sourceId)
-    ? ['encyclopedia:monarchist', 'encyclopedia:militarist-imperialist']
+    ? ['encyclopedia:monarchist', 'encyclopedia:militarist-imperialist', ...(sourceId === 'japanMeijiConstitution1889' ? ['geography:japanese-meiji-constitutional-founding'] : [])]
     : ['encyclopedia:militarist-imperialist'];
   assert.deepEqual(record.relationships.profileEntries, expectedProfileEntries);
 }
