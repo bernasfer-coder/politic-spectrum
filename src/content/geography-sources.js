@@ -111,6 +111,42 @@ const sources = [
     description: 'An official documentary and archival publication about the Brazilian Constituent Assembly. It is used as a primary institutional locator, not as a complete record of every speech, amendment, social movement or implementation outcome.',
   },
   {
+    id: 'jarauschAfterHitler2006',
+    label: 'Konrad H. Jarausch — After Hitler: Recivilizing Germans, 1945–1995',
+    url: 'https://academic.oup.com/book/6114',
+    note: 'Official Oxford Academic book record and contents consulted for postwar demilitarization, denazification, Westernization, inner democratization, civil society and the relation between the two German states. The monograph’s complete chapters and archival citations were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Konrad H. Jarausch'], institution: 'Oxford University Press',
+    publicationDate: '2006-09-21', evidenceRole: 'secondary', confidence: 'medium', languages: ['English', 'German'],
+    sourceType: 'book-length German postwar political and social history',
+    identifiers: { doi: '10.1093/acprof:oso/9780195127799.001.0001', isbn: '9780195127799' },
+    description: 'A book-length study of the transformation of Germany after the Second World War and Holocaust. The English edition is translated from Jarausch’s German *Die Umkehr*; the atlas uses it to connect West German constitutional reconstruction with broader German political and social change without treating the two German states as identical.',
+  },
+  {
+    id: 'nichollsBonnRepublic1997',
+    label: 'A. J. Nicholls — The Bonn Republic: West German Democracy, 1945–1990',
+    url: 'https://search.worldcat.org/title/The-Bonn-Republic-%3A-West-German-democracy-1945-1990/oclc/35627568',
+    note: 'WorldCat bibliographic record and scholarly review metadata consulted for the West German state’s political history from postwar foundation through reunification. The monograph’s complete chapters and archival citations were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['A. J. Nicholls'], institution: 'Longman',
+    publicationDate: '1997', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length West German political history',
+    identifiers: { isbn: '9780582492301', oclc: '35627568' },
+    description: 'A book-length historical account of West German democracy from its postwar foundation through reunification. It provides a second perspective distinct from Jarausch’s social and political transformation narrative.',
+  },
+  {
+    id: 'germanBasicLaw1949Official',
+    label: 'Deutscher Bundestag — Grundgesetz für die Bundesrepublik Deutschland',
+    url: 'https://www.bundestag.de/parlament/aufgaben/rechtsgrundlagen/grundgesetz',
+    note: 'Official Bundestag German legal text consulted for the Basic Law’s 23 May 1949 promulgation, fundamental rights, federal democratic and social-state principles, popular authority, rule of law, party provisions and the post-unification applicability clause. No constitutional passage, translation, scan or PDF is republished.',
+    accessDate: '2026-09-19',
+    creators: ['Deutscher Bundestag'], institution: 'Deutscher Bundestag',
+    publicationDate: '1949-05-23', evidenceRole: 'primary', confidence: 'high', languages: ['German'],
+    sourceType: 'official German constitutional text',
+    identifiers: {},
+    description: 'Primary legal evidence for the Federal Republic’s constitutional order in the original German. The current consolidated text records the 1949 foundation and later amendments; it does not by itself prove social acceptance, implementation or the absence of authoritarian continuities.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -245,6 +281,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
   discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
     : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') ? 'South African constitutional law and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
+        : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') ? 'German postwar democratic and constitutional history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',
