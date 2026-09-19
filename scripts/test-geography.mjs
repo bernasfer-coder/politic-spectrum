@@ -6,8 +6,8 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 28);
-assert.equal(GEOGRAPHY_LABELS.length, 26);
+assert.equal(GEOGRAPHY_CASES.length, 29);
+assert.equal(GEOGRAPHY_LABELS.length, 27);
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
@@ -28,13 +28,14 @@ assert.equal(filterGeographyCases({ country: 'ethiopia' })[0].id, 'ethiopian-imp
 assert.equal(filterGeographyCases({ country: 'tonga' })[0].id, 'tongan-constitutional-reform-1875-2010');
 assert.equal(filterGeographyCases({ country: 'saudi-arabia' })[0].id, 'saudi-basic-law-shura-order');
 assert.equal(filterGeographyCases({ country: 'oman' })[0].id, 'oman-sultani-constitutional-order');
+assert.equal(filterGeographyCases({ country: 'kuwait' })[0].id, 'kuwait-constitutional-parliamentary-order');
 assert.equal(filterGeographyCases({ label: 'nasserism' }).length, 2);
 assert.equal(filterGeographyCases({ continent: 'Oceania' }).length, 1);
 assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'tongan-constitutional-reform-1875-2010');
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
-assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 6, 'the atlas should expose all dated post-2000 implemented cases');
-assert.deepEqual(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id).sort(), ['antarctic-treaty-system', 'bhutanese-democratic-constitutional-transition', 'ghanaian-fourth-republic-constitutional-transition', 'oman-sultani-constitutional-order', 'saudi-basic-law-shura-order', 'tongan-constitutional-reform-1875-2010']);
+assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 7, 'the atlas should expose all dated post-2000 implemented cases');
+assert.deepEqual(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id).sort(), ['antarctic-treaty-system', 'bhutanese-democratic-constitutional-transition', 'ghanaian-fourth-republic-constitutional-transition', 'kuwait-constitutional-parliamentary-order', 'oman-sultani-constitutional-order', 'saudi-basic-law-shura-order', 'tongan-constitutional-reform-1875-2010']);
 assert.ok(!filterGeographyCases({ country: 'egypt' }).some(({ id }) => id === 'nasser-regional-legacy'), 'regional influence is not automatically a country claim');
 const all = filterGeographyCases({});
 assert.deepEqual(all.map(({ startYear }) => startYear), all.map(({ startYear }) => startYear).sort((a, b) => a - b));
@@ -44,4 +45,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 28 dated cases, 26 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 29 dated cases, 27 unscored labels, citations, boundaries, filters and share URLs.');
