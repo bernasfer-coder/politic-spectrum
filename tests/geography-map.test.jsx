@@ -16,8 +16,8 @@ afterEach(cleanup);
 
 describe('map geometry and filter contracts', () => {
   it('keeps all map IDs unique, finite and compatible with share URLs', () => {
-    expect(MAP_COUNTRIES).toHaveLength(177);
-    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(177);
+    expect(MAP_COUNTRIES).toHaveLength(178);
+    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(178);
     for (const item of MAP_COUNTRIES) {
       expect(item.path).toMatch(/^M/);
       expect(item.path).not.toMatch(/NaN|Infinity/);
@@ -36,6 +36,7 @@ describe('map geometry and filter contracts', () => {
     expect(MAP_COUNTRIES_BY_ID.bhutan.name).toBe('Bhutan');
     expect(MAP_COUNTRIES_BY_ID.ghana.name).toBe('Ghana');
     expect(MAP_COUNTRIES_BY_ID.ethiopia.name).toBe('Ethiopia');
+    expect(MAP_COUNTRIES_BY_ID.tonga.name).toBe('Tonga');
     expect(MAP_COUNTRIES_BY_ID.mexico.name).toBe('Mexico');
     expect(readGeographyState('#geography?country=map-000').country).toBe('all');
   });
@@ -77,7 +78,7 @@ describe('interactive atlas map', () => {
     expect(screen.getByRole('complementary', { name: 'Map selection' })).toHaveTextContent('Brazil');
   });
 
-  it('supports roving keyboard focus, Enter and Space without 177 tab stops', async () => {
+  it('supports roving keyboard focus, Enter and Space without 178 tab stops', async () => {
     const user = userEvent.setup();
     renderAtlas();
     const egypt = map().getByRole('button', { name: /Egypt:/ });
@@ -130,7 +131,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(25);
+    expect(cards()).toHaveLength(26);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });

@@ -351,6 +351,30 @@ const sources = [
     description: 'A book-length national history offering an independent narrative of Ethiopia’s imperial formation and twentieth-century political development. Its chapter structure helps bound the Haile Selassie period, while its broad scope does not settle regional, social or constitutional implementation questions.',
   },
   {
+    id: 'campbellIslandKingdomTonga2015',
+    label: 'Ian C. Campbell — Island Kingdom: Tonga Ancient and Modern',
+    url: 'https://www.canterbury.ac.nz/about-uc/what-we-do/canterbury-university-press/canterbury-university-press-catalogue/island-kingdom-tonga-ancient-and-modern-third-edition',
+    note: 'Official Canterbury University Press record consulted for the revised third edition of Campbell’s comprehensive history of Tonga, including the nineteenth-century constitutional state and political reform through 2014. The complete monograph, Tongan-language sources and archival citations were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Ian C. Campbell'], institution: 'Canterbury University Press',
+    publicationDate: '2015', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Tongan national, constitutional and political history',
+    identifiers: { isbn: '9781927145692' },
+    description: 'A comprehensive book-length history of Tonga, revised to include the political reform and democratization trajectory through 2014. It supplies the broadest chronology here while not proving uniform popular consent, implementation or a single political culture.',
+  },
+  {
+    id: 'woodEllemQueenSalote1999',
+    label: 'Elizabeth Wood-Ellem — Queen Salote of Tonga: The Story of an Era, 1900–1965',
+    url: 'https://search.worldcat.org/title/Queen-Salote-of-Tonga-%3A-the-story-of-an-era-1900-1965/oclc/1121470633',
+    note: 'WorldCat and Auckland University Press bibliographic record consulted for Wood-Ellem’s book-length political and social history of Tonga through Queen Sālote’s reign. The complete biography, Tongan-language sources and archival citations were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Elizabeth Wood-Ellem'], institution: 'Auckland University Press',
+    publicationDate: '1999', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Tongan royal, political and social history',
+    identifiers: { isbn: '9781869402051', oclc: '41445265' },
+    description: 'A focused book-length political and social history of Tonga through Queen Sālote’s reign, with attention to rank, status, leading families and the monarchy’s relationship with society. It offers a distinct royal and social perspective alongside Campbell’s broader national history.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -494,6 +518,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') ? 'Ghanaian constitutional transition and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') ? 'Ethiopian imperial constitutional and political history'
+        : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',

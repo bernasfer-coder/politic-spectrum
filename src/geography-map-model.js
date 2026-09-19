@@ -9,16 +9,24 @@ export const MAP_MAX_ZOOM = 10;
 export const WORLD_VIEW = Object.freeze({ x: 0, y: 0, k: 1 });
 const projection = geoEqualEarth().fitExtent([[16, 16], [944, 484]], { type: 'Sphere' });
 const path = geoPath(projection);
-const atlasIds = { '076': 'brazil', '250': 'france', '276': 'germany', '288': 'ghana', '356': 'india', '380': 'italy', '392': 'japan', '764': 'thailand', '458': 'malaysia', '064': 'bhutan', '231': 'ethiopia', '484': 'mexico', '620': 'portugal', '710': 'south-africa', '724': 'spain', '818': 'egypt', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
+const atlasIds = { '076': 'brazil', '250': 'france', '276': 'germany', '288': 'ghana', '356': 'india', '380': 'italy', '392': 'japan', '764': 'thailand', '458': 'malaysia', '064': 'bhutan', '231': 'ethiopia', '484': 'mexico', '620': 'portugal', '710': 'south-africa', '724': 'spain', '776': 'tonga', '818': 'egypt', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
 const atlasPlaceIds = { '010': ['antarctica'] };
 const atlasNames = Object.fromEntries(GEOGRAPHY_COUNTRIES.map(({ id, name }) => [id, name]));
 
 // Dataset IDs are geographic locators, not recognition of sovereignty or ideology.
-// Named fallback IDs keep the three non-ISO areas independently selectable.
-export const MAP_COUNTRIES = feature(world, world.objects.countries).features.map((item) => {
+// Named fallback IDs keep the non-ISO areas independently selectable. Tiny
+// catalogued countries omitted by the 1:110m geometry receive an explicit
+// point locator rather than being silently dropped from the map.
+const mappedWorldCountries = feature(world, world.objects.countries).features.map((item) => {
   const id = atlasIds[item.id] ?? (item.id ? `map-${item.id}` : `map-${item.properties.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '')}`);
   return { id, name: atlasNames[id] ?? item.properties.name, path: path(item), bounds: path.bounds(item), placeIds: atlasPlaceIds[item.id] ?? [] };
-}).sort((a, b) => a.name.localeCompare(b.name, 'en'));
+});
+const MAP_FALLBACK_COORDINATES = { tonga: [-175.2, -21.1] };
+const fallbackCountries = GEOGRAPHY_COUNTRIES.filter(({ id }) => !mappedWorldCountries.some((country) => country.id === id) && MAP_FALLBACK_COORDINATES[id]).map(({ id, name }) => {
+  const geometry = { type: 'Point', coordinates: MAP_FALLBACK_COORDINATES[id] };
+  return { id, name, path: path(geometry), bounds: path.bounds(geometry), placeIds: [], isLocator: true };
+});
+export const MAP_COUNTRIES = [...mappedWorldCountries, ...fallbackCountries].sort((a, b) => a.name.localeCompare(b.name, 'en'));
 export const MAP_COUNTRIES_BY_ID = Object.fromEntries(MAP_COUNTRIES.map((country) => [country.id, country]));
 export const MAP_OUTLINE = path({ type: 'Sphere' });
 export const MAP_GRATICULE = path(geoGraticule10());

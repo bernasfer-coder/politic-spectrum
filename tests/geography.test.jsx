@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(25);
+    expect(cards()).toHaveLength(26);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(1);
     expect(cards()[0]).toHaveTextContent('1989');
@@ -63,13 +63,14 @@ describe('geographic atlas', () => {
     expect(screen.getByRole('combobox', { name: /Country/ })).toHaveValue('iran');
   });
 
-  it('preserves contested-place access and displays deliberate continent gaps', async () => {
+  it('preserves contested-place access and tracks newly catalogued Oceania', async () => {
     const user = userEvent.setup();
     renderAtlas();
     await user.selectOptions(screen.getByRole('combobox', { name: /Place \/ historical/ }), 'jerusalem');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: /Oceania/ }));
-    expect(screen.queryAllByRole('article')).toHaveLength(0);
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('Tongan constitutional monarchy and democratic reform');
     expect(screen.getByRole('button', { name: /Oceania/ })).toHaveAttribute('aria-pressed', 'true');
     await user.click(within(screen.getByRole('group', { name: 'Browse continents' })).getByRole('button', { name: /Antarctica/ }));
     expect(cards()).toHaveLength(1);
