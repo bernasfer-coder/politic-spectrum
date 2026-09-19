@@ -2096,20 +2096,43 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.directQuote, null);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:militarist-imperialist'));
 }
+{
+  const sourceId = 'surkisPropertyPolygamyAlgeria2010French';
+  assert.ok(imperialJapanEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a French Algeria reference trail`);
+  assert.ok(JSON.stringify(imperialJapanEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, 'secondary');
+  assert.equal(record.publicationDate, '2010-12-15');
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, ['French']);
+  assert.equal(record.review.confidence, 'medium');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:militarist-imperialist'));
+}
 const algeriaTimeline = imperialJapanEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(algeriaTimeline.some(({ period, citations }) => period.startsWith('1830–1870 — French conquest') && citations.researchSourceIds.includes('tocquevilleAlgeria1841French')));
+assert.ok(algeriaTimeline.some(({ period, citations }) => period.startsWith('1830–1873 — personal status') && citations.researchSourceIds.includes('surkisPropertyPolygamyAlgeria2010French')));
 const algeriaVariant = imperialJapanEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('French settler-colonial imperialism'));
 assert.ok(algeriaVariant, 'French Algeria must be separated as a bounded colonial variant');
+const algeriaStatusVariant = imperialJapanEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Algerian colonial personal-status law'));
+assert.ok(algeriaStatusVariant?.citations.researchSourceIds.includes('surkisPropertyPolygamyAlgeria2010French'), 'Algerian personal-status variant needs Surkis');
 const algeriaExample = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('French Algeria is a bounded example'));
 assert.ok(algeriaExample, 'French Algeria must appear as a bounded historical example');
 assert.match(algeriaExample.text, /not an exact six-axis match/);
+const algeriaStatusExample = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The Algerian personal-status subcase'));
+assert.ok(algeriaStatusExample?.citations.researchSourceIds.includes('surkisPropertyPolygamyAlgeria2010French'), 'Algerian personal-status example needs Surkis');
 const tocquevillePerson = imperialJapanEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name.startsWith('Alexis de Tocqueville'));
 assert.ok(tocquevillePerson, 'Tocqueville must appear with a bounded colonial evidence caveat');
 assert.match(tocquevillePerson.caveat, /not Tocqueville’s complete political thought/);
 const algeriaSafeguard = imperialJapanEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('French Algeria adds a safeguard'));
 assert.ok(algeriaSafeguard, 'French Algeria must add a liberal-universalism safeguard');
 assert.match(algeriaSafeguard.text, /rather than a single equal civic order/);
-assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('Read the full French and Arabic legal')));
+const algeriaStatusSafeguard = imperialJapanEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Surkis adds a gendered legal safeguard'));
+assert.ok(algeriaStatusSafeguard?.citations.researchSourceIds.includes('surkisPropertyPolygamyAlgeria2010French'), 'Algerian status safeguard needs Surkis');
+assert.ok(imperialJapanEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Judith Surkis')));
 
 const liberalEntry = ENCYCLOPEDIA_ENTRIES['liberal-constitutionalist'];
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
