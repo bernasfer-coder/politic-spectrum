@@ -3016,6 +3016,17 @@ for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   assert.equal(record.directQuote, null);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:theocratic'));
 }
+const genevaTheocracyDebateRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-genevaArchiveTheocracyDebateFrench');
+assert.ok(theocraticEntry.references.researchSourceIds.includes('genevaArchiveTheocracyDebateFrench'));
+assert.ok(JSON.stringify(theocraticEntry.sections).includes('genevaArchiveTheocracyDebateFrench'));
+assert.equal(genevaTheocracyDebateRecord.evidenceRole, 'contextual');
+assert.equal(genevaTheocracyDebateRecord.publicationDate, null);
+assert.equal(genevaTheocracyDebateRecord.accessDate, '2026-09-19');
+assert.equal(genevaTheocracyDebateRecord.review.confidence, 'high');
+assert.deepEqual(genevaTheocracyDebateRecord.languages, ['French']);
+assert.equal(genevaTheocracyDebateRecord.publicationStatus, 'link-only');
+assert.equal(genevaTheocracyDebateRecord.directQuote, null);
+assert.deepEqual(genevaTheocracyDebateRecord.relationships.profileEntries, ['encyclopedia:theocratic']);
 for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   ['genevaConsistoryRegisters1542French', 'primary', '1542-02-16', 'high', ['French']],
   ['genevaCouncilRegistersRCnum1545French', 'primary', '1545', 'high', ['French']],
@@ -3037,6 +3048,7 @@ for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
 }
 const genevaHistory = theocraticEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(genevaHistory.some(({ period, citations }) => period.startsWith('1541–1564: Calvinist Geneva') && citations.researchSourceIds.includes('genevaEcclesiasticalOrdinances1541French')));
+assert.ok(genevaHistory.some(({ period, citations }) => period.startsWith('1541–1564: Calvinist Geneva') && citations.researchSourceIds.includes('genevaArchiveTheocracyDebateFrench')));
 assert.ok(genevaHistory.some(({ period, citations }) => period.startsWith('1542–1564: Consistory and Council records') && citations.researchSourceIds.includes('genevaConsistoryRegisters1542French')));
 const genevaVariant = theocraticEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Calvinist Geneva'));
 assert.ok(genevaVariant, 'Calvinist Geneva must be separated as a bounded confessional variant');
@@ -3055,9 +3067,11 @@ assert.ok(wattPerson, 'Watt must be identified as a bounded interpreter of the G
 const genevaSafeguard = theocraticEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('Geneva adds a safeguard'));
 assert.ok(genevaSafeguard, 'Geneva must add a church–civil jurisdiction safeguard');
 assert.match(genevaSafeguard.text, /not a claim that Calvin personally ruled Geneva/);
+assert.match(genevaSafeguard.text, /established church from a strict theocracy/);
 assert.ok(theocraticEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The gendered Consistory record adds a second safeguard')));
 assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Read the complete French Ecclesiastical Ordinances')));
 assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Read the French edited Consistory volumes')));
+assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the Geneva State Archives’ French historiographical synthesis')));
 
 const greenCommonsEntry = ENCYCLOPEDIA_ENTRIES['green-commons'];
 const greenCommonsProfile = ARCHETYPES.find(({ id }) => id === 'green-commons').profile;
