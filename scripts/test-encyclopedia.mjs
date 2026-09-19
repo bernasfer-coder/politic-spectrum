@@ -3093,6 +3093,7 @@ for (const [sourceId, evidenceRole] of [
   ['gailusChurchStateNazism2018', 'secondary'],
   ['silomonProtestantResistance2009', 'secondary'],
   ['ushmmGermanChurches', 'secondary'],
+  ['barrocheCatholicState2016French', 'secondary'],
 ]) {
   assert.ok(religiousTraditionalistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a religious-traditionalist reference trail`);
   assert.ok(JSON.stringify(religiousTraditionalistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
@@ -3100,7 +3101,7 @@ for (const [sourceId, evidenceRole] of [
   assert.equal(records.length, 1, `${sourceId} must resolve once, including reused sources`);
   const [record] = records;
   assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish declaration and historical interpretation`);
-  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.equal(record.accessDate, sourceId === 'barrocheCatholicState2016French' ? '2026-09-19' : '2026-09-16', `${sourceId} needs its consultation date`);
   assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its rights boundary`);
   assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:religious-traditionalist'), `${sourceId} needs an encyclopedia backlink`);
@@ -3160,6 +3161,7 @@ assert.match(religiousTraditionalistCriticism, /must not erase complicity/, 'chu
 assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.includes('Collate the EKD Barmen transcription')), 'primary-edition follow-up must remain open');
 assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.includes('further-reading leads, not independently reviewed books')), 'unread scholarship must not be promoted to reviewed evidence');
 assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.startsWith('Collate the original Portuguese issues of Alma Portugueza')), 'the Portuguese primary-text follow-up must remain open');
+assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Julien Barroche’s French study')));
 
 const progressiveEntry = ENCYCLOPEDIA_ENTRIES['progressive-liberal'];
 const progressiveProfile = ARCHETYPES.find(({ id }) => id === 'progressive-liberal').profile;
