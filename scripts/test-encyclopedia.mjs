@@ -212,6 +212,18 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.directQuote, null);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'), `${sourceId} needs a liberal-constitutionalist backlink`);
 }
+const pengChineseRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-pengQingConstitutionMaking2021Chinese');
+assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes('pengQingConstitutionMaking2021Chinese'));
+assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes('pengQingConstitutionMaking2021Chinese'));
+assert.equal(pengChineseRecord.evidenceRole, 'secondary');
+assert.equal(pengChineseRecord.publicationDate, '2021');
+assert.equal(pengChineseRecord.accessDate, '2026-09-19');
+assert.deepEqual(pengChineseRecord.languages, ['Chinese']);
+assert.equal(pengChineseRecord.review.confidence, 'medium');
+assert.equal(pengChineseRecord.publicationStatus, 'link-only');
+assert.equal(pengChineseRecord.directQuote, null);
+assert.ok(pengChineseRecord.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Peng Jian’s Chinese-language catalogue record')));
 const chineseDescription = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'description').blocks;
 assert.ok(chineseDescription.some(({ text }) => text?.startsWith('Late-Qing and early republican China adds an East Asian constitutional case')));
 const chineseIntroduction = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'introduction').blocks;
