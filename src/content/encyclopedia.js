@@ -10177,7 +10177,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             period: '1944–1958: French MRP and the Fourth Republic',
-            text: 'The MRP was founded during Liberation politics and became a central French Christian-democratic party of the Fourth Republic. A party-affiliated history records its 1944 congress, Resistance and Catholic-Action networks, social and European priorities, and participation in tripartism and the Third Force; Callot’s French review places those elements within the movement’s doctrine, organization, electoral context, coalition crises and later disappearance after 1958. Codaccioni adds bounded Nord evidence from the party’s regional press and associational networks. Thomas’s abstract-level study highlights a sharp tension between reformist social Catholicism and MRP support for French imperial structures and colonial repression. This is a French party trajectory, not a score for France or a complete account of postwar Catholicism.',
+            text: 'The MRP was founded during Liberation politics and became a central French Christian-democratic party of the Fourth Republic. A party-affiliated history records its 1944 congress, Resistance and Catholic-Action networks, social and European priorities, and participation in tripartism and the Third Force. Its account of the 1944 Lignes d’action pour la Libération manifesto presents a Christian-personalist extension of the Resistance programme: political freedom was linked to economic conditions, social security, nationalization proposals and worker participation. Callot’s French reviews place these claims within the movement’s doctrine, organization, electoral context, coalition crises, foreign-policy role and later disappearance after 1958. Codaccioni adds bounded Nord evidence from the party’s regional press and associational networks. Thomas’s abstract-level study highlights a sharp tension between reformist social Catholicism and MRP support for French imperial structures and colonial repression. This is a French party trajectory, not a score for France or a complete account of postwar Catholicism.',
             citations: citations([], ['mrpFoundingHistory1944French', 'callotMrpChristianDemocracy1981French', 'codaccioniMrpNorth1944French', 'thomasMrpColonialPolicy2003']),
           },
           {
@@ -15550,3 +15550,33 @@ ENCYCLOPEDIA_ENTRIES['christian-democratic'].references.researchSourceIds.push(
   'duartePortugueseRight2016',
   'monizBrissosReligiousPopulismPortugal2022',
 );
+
+const christianDemocraticResearchEntry = ENCYCLOPEDIA_ENTRIES['christian-democratic'];
+const christianDemocraticMrpHistory = christianDemocraticResearchEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1944–1958: French MRP'));
+christianDemocraticMrpHistory.citations.researchSourceIds.push('mrpColinManifesto1944French', 'callotMrpHistory1980French');
+
+const christianDemocraticMrpVariant = christianDemocraticResearchEntry.sections.find(({ id }) => id === 'variants').blocks.find(({ type }) => type === 'comparison');
+christianDemocraticMrpVariant.rows.find(({ label }) => label.startsWith('French MRP:')).citations.researchSourceIds.push('mrpColinManifesto1944French', 'callotMrpHistory1980French');
+
+const christianDemocraticMrpExample = christianDemocraticResearchEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name.startsWith('France: Mouvement Républicain Populaire'));
+christianDemocraticMrpExample.citations.researchSourceIds.push('mrpColinManifesto1944French', 'callotMrpHistory1980French');
+
+for (const dimensionId of ['economic', 'social', 'authority']) {
+  christianDemocraticResearchEntry.dimensionInterpretations[dimensionId].citations.researchSourceIds.push('mrpColinManifesto1944French');
+}
+christianDemocraticResearchEntry.dimensionInterpretations.foreign.citations.researchSourceIds.push('callotMrpHistory1980French');
+
+christianDemocraticResearchEntry.sections.find(({ id }) => id === 'introduction').blocks.push({
+  type: 'evidence-note',
+  text: 'The 1944 MRP precursor manifesto is useful because it shows a specifically French Resistance-era synthesis rather than a generic postwar party label. The retrospective account describes Lignes d’action pour la Libération as extending the CNR programme through a spiritualist conception of the person and society, linking political freedom to social security, public control of credit and energy, and a gradual transformation of enterprise and capital–labor relations. Callot’s 1980 review adds that the MRP’s historical significance cannot be reduced to doctrine: its Fourth Republic role also involved tripartism, the Third Force, coalition government, foreign policy, electoral organization, press, congresses and parliamentary records. These are distinct evidence layers; the manifesto’s aims do not establish implementation, and a review of a monograph does not replace its archives or full text.',
+  citations: citations([], ['mrpColinManifesto1944French', 'callotMrpHistory1980French']),
+});
+
+christianDemocraticResearchEntry.sections.find(({ id }) => id === 'criticisms').blocks.push({
+  type: 'paragraph',
+  text: 'The MRP’s 1944 manifesto also illustrates the danger of treating a social programme as a settled institutional identity. Its person-centred language and proposals for social security, public control and worker participation can support a Christian-democratic interpretation, but they were drafted during Resistance and Liberation politics and were later filtered through coalition bargaining, parliamentary government, anti-communism, European strategy and colonial rule. The French case should therefore compare the complete manifesto and party programmes with voting records, administration and affected groups rather than infer a stable six-axis position from retrospective self-description.',
+  citations: citations([], ['mrpColinManifesto1944French', 'callotMrpHistory1980French', 'thomasMrpColonialPolicy2003']),
+});
+
+christianDemocraticResearchEntry.references.researchSourceIds.push('mrpColinManifesto1944French', 'callotMrpHistory1980French');
+christianDemocraticResearchEntry.references.editorialNote += ' This pass deepens the French MRP case with the 1944 Lignes d’action pour la Libération lead and a separate 1980 French scholarly review of Callot’s history. The manifesto account is party-affiliated retrospective self-description, while the review is secondary and bounded; neither substitutes for the original pamphlet, complete programmes, parliamentary and colonial records, or minority perspectives.';

@@ -635,6 +635,23 @@ for (const [sourceId, role, date, language] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
 }
+for (const [sourceId, role, date, language] of [
+  ['mrpColinManifesto1944French', 'contextual', '1944', 'French'],
+  ['callotMrpHistory1980French', 'secondary', '1980', 'French'],
+]) {
+  assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a French MRP reference trail`);
+  assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, role);
+  assert.equal(record.publicationDate, date);
+  assert.deepEqual(record.languages, [language]);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+}
 for (const [sourceId, role, date, language, confidence] of [
   ['copeiHistoryOfficial', 'primary', null, 'Spanish', 'medium'],
   ['copeiMessage2025', 'primary', '2025-01-14', 'Spanish', 'medium'],
