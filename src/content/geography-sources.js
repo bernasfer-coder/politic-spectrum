@@ -243,6 +243,30 @@ const sources = [
     description: 'A focused book-length study of the political end of absolute monarchy in Siam, centered on the late absolute-monarchy crisis and the 1932 transition. Its focused scope complements broader national histories while not settling every later constitutional or social interpretation.',
   },
   {
+    id: 'fernandoMalayanConstitution2002',
+    label: 'Joseph M. Fernando — The Making of the Malayan Constitution',
+    url: 'https://mbras.org.my/product/m31-the-making-of-the-malayan-constitution/',
+    note: 'Malaysian Branch of the Royal Asiatic Society book record consulted for Fernando’s focused book-length study of the Alliance, Reid Commission and negotiations leading to the 1957 Malayan Constitution. The complete monograph, commission papers and Malay-language sources were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Joseph M. Fernando'], institution: 'Malaysian Branch of the Royal Asiatic Society',
+    publicationDate: '2002', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'focused book-length Malayan constitutional and political history',
+    identifiers: { isbn: '9789679948226' },
+    description: 'A focused book-length reconstruction of the constitutional negotiations that produced the Federation of Malaya’s 1957 settlement. It is used to preserve the Alliance coalition, Reid Commission process and intercommunal bargaining rather than treating the Constitution as an isolated legal text.',
+  },
+  {
+    id: 'crouchGovernmentMalaysia1996',
+    label: 'Harold Crouch — Government and Society in Malaysia',
+    url: 'https://www.jstor.org/stable/10.7591/j.ctvv414dc',
+    note: 'Cornell University Press/JSTOR book record and description consulted for Crouch’s book-length analysis of Malaysia’s political system and the interaction of responsive and repressive institutions. The monograph’s complete chapters and cited Malaysian-language sources were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Harold Crouch'], institution: 'Cornell University Press',
+    publicationDate: '1996', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Malaysian political and institutional history',
+    identifiers: { doi: '10.7591/j.ctvv414dc' },
+    description: 'A book-length study of Malaysian government and society that supplies an independent political-sociological perspective on the democratic and authoritarian features of the post-1957 system. Its later chronology is used to contextualize the constitutional design, not to project one unchanged ideological character onto the 1957 founding.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -382,6 +406,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
         : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') ? 'Japanese Meiji constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
+        : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',
