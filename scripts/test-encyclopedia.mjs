@@ -4051,4 +4051,47 @@ assert.match(omanExample.caveat, /does not establish current political practice/
 assert.ok(omanMonarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Omani case adds a consultation-versus-accountability safeguard')));
 assert.ok(omanMonarchistEntry.researchGaps.some((gap) => gap.startsWith('Read the Arabic 1996 and 2021 Basic Statutes')));
 
+const russianCentralAsiaEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
+for (const sourceId of [
+  'russianTurkestanZarafshan1874',
+  'iranicaCentralAsiaRussianConquest2000',
+  'morrisonRussianConquestCentralAsia2020',
+  'pierceRussianCentralAsiaColonialRule1960',
+  'morrisonRussianRuleSamarkand2008',
+]) {
+  assert.ok(russianCentralAsiaEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Russian Central Asia reference trail`);
+  assert.ok(JSON.stringify(russianCentralAsiaEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the Russian Central Asia case`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
+  assert.ok(records[0].relationships.profileEntries.includes('encyclopedia:militarist-imperialist'), `${sourceId} needs a militarist-imperialist backlink`);
+}
+const russianCentralAsiaIntroduction = russianCentralAsiaEntry.sections.find(({ id }) => id === 'introduction').blocks.find(({ text }) => text?.startsWith('A closer reading of the 1874 Zarafshan witness'));
+assert.ok(russianCentralAsiaIntroduction, 'the Russian Central Asia entry must preserve mixed evidence from the 1874 witness');
+const russianCentralAsiaDescription = russianCentralAsiaEntry.sections.find(({ id }) => id === 'description').blocks.find(({ text }) => text?.startsWith('The Central Asian evidence also cautions'));
+assert.ok(russianCentralAsiaDescription, 'the Russian Central Asia evidence must inform the six-axis boundary');
+const russianCentralAsiaHistory = russianCentralAsiaEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1865–1874 — Turkestan governorate'));
+assert.ok(russianCentralAsiaHistory, 'the Samarkand/Zarafshan sequence must have its own historical period');
+assert.ok(russianCentralAsiaHistory.citations.researchSourceIds.includes('russianTurkestanZarafshan1874'));
+const russianCentralAsiaVariant = russianCentralAsiaEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Russian conquest and Turkestan'));
+assert.match(russianCentralAsiaVariant.relation, /mixed observations/);
+const russianCentralAsiaExample = russianCentralAsiaEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The Samarkand/Zarafshan subcase'));
+assert.ok(russianCentralAsiaExample, 'the Samarkand/Zarafshan case must appear as a bounded example');
+assert.match(russianCentralAsiaExample.text, /not an exact six-axis match/);
+const russianCentralAsiaSafeguard = russianCentralAsiaEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Russian case also requires a source-balance warning'));
+assert.ok(russianCentralAsiaSafeguard, 'the Russian case must distinguish mixed official observation from local evidence');
+assert.ok(russianCentralAsiaEntry.researchGaps.some((gap) => gap.startsWith('The Russian Central Asia addition now separates')));
+const russianCentralAsiaSourceIds = new Set([
+  'russianTurkestanZarafshan1874',
+  'iranicaCentralAsiaRussianConquest2000',
+  'morrisonRussianConquestCentralAsia2020',
+  'pierceRussianCentralAsiaColonialRule1960',
+  'morrisonRussianRuleSamarkand2008',
+]);
+for (const dimension of DIMENSIONS) {
+  assert.ok(
+    russianCentralAsiaEntry.dimensionInterpretations[dimension.id].citations.researchSourceIds.some((sourceId) => russianCentralAsiaSourceIds.has(sourceId)),
+    `${dimension.id} needs a Russian Central Asia citation trail`,
+  );
+}
+
 console.log(`Encyclopedia tests passed: ${Object.keys(ENCYCLOPEDIA_ENTRIES).length} entry with claim-level citation validation across ${DIMENSIONS.length} dimensions.`);
