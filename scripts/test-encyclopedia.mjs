@@ -288,6 +288,8 @@ assert.equal(southAfricaScholar.identifiers.doi, '10.1093/ajcl/avac009');
 assert.match(southAfricaScholar.description, /First online publication date.*March 2022/);
 assert.match(southAfricaScholar.note, /selected South Africa discussion/);
 assert.match(southAfricaScholar.license, /CC BY 4\.0/);
+const brazilConstitutionRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-brazilConstitution1988');
+assert.ok(brazilConstitutionRecord.relationships.profileEntries.includes('geography:brazil-democratic-constitutional-founding'));
 const makwanyaneRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-southAfricaMakwanyaneCourt1995');
 assert.match(makwanyaneRecord.description, /retrospective institutional summary/);
 assert.match(makwanyaneRecord.note, /full judgment.*not independently read/);
@@ -481,10 +483,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  const expectedBrazilianProfiles = sourceId === 'brazilConstitution1988'
-    ? ['encyclopedia:indigenous-relational-governance', 'encyclopedia:liberal-constitutionalist']
-    : ['encyclopedia:liberal-constitutionalist'];
-  assert.deepEqual([...record.relationships.profileEntries].sort(), expectedBrazilianProfiles.sort());
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
 }
 const swissFederalHistory = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(swissFederalHistory.some(({ period }) => period.startsWith('1847–1848 — Swiss federal founding')));
@@ -2474,8 +2473,10 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
   const expectedBrazilianProfiles = sourceId === 'brazilConstitution1988'
-    ? ['encyclopedia:indigenous-relational-governance', 'encyclopedia:liberal-constitutionalist']
-    : ['encyclopedia:liberal-constitutionalist'];
+    ? ['encyclopedia:indigenous-relational-governance', 'encyclopedia:liberal-constitutionalist', 'geography:brazil-democratic-constitutional-founding']
+    : ['dallariBrazilFundamentalRights1993', 'ramosBrazilJudicialReview2007'].includes(sourceId)
+      ? ['encyclopedia:liberal-constitutionalist', 'geography:brazil-democratic-constitutional-founding']
+      : ['encyclopedia:liberal-constitutionalist'];
   assert.deepEqual([...record.relationships.profileEntries].sort(), expectedBrazilianProfiles.sort());
 }
 const brazilTimeline = weimarEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1980s–1988:'));

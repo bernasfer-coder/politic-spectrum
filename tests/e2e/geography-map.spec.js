@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-test('country paths filter, persist and handle geographic research gaps', async ({ page }) => {
+test('country paths filter, persist and handle newly researched countries', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
   await page.goto('/#geography');
@@ -13,10 +13,11 @@ test('country paths filter, persist and handle geographic research gaps', async 
   await page.reload();
   await expect(map.getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'World view', exact: true }).click();
-  await map.getByRole('button', { name: 'Brazil: 0 matching cases', exact: true }).click();
-  await expect(page.getByRole('heading', { name: /No documented cases/ })).toBeVisible();
+  await map.getByRole('button', { name: 'Brazil: 1 matching case', exact: true }).click();
+  await expect(page.locator('.geo-card')).toHaveCount(1);
+  await expect(page.locator('.geo-card')).toContainText(/Brazilian democratic constitutionalism|1985–1988/);
   await page.reload();
-  await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('map-076');
+  await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('brazil');
   await page.goBack();
   await expect(map.getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
   expect(errors).toEqual([]);

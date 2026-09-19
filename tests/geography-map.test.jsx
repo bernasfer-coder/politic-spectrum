@@ -53,16 +53,17 @@ describe('interactive atlas map', () => {
     expect(screen.getByRole('complementary', { name: 'Map selection' })).toHaveTextContent('Egypt');
   });
 
-  it('shows an honest gap for unresearched countries and restores it after refresh', async () => {
+  it('opens the researched Brazil case and restores it after refresh', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    await user.click(map().getByRole('button', { name: 'Brazil: 0 matching cases' }));
-    expect(cards()).toHaveLength(0);
-    expect(window.location.hash).toContain('country=map-076');
-    expect(screen.getByRole('combobox', { name: /Country/ })).toHaveValue('map-076');
+    await user.click(map().getByRole('button', { name: 'Brazil: 1 matching case' }));
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent(/Brazilian democratic constitutionalism|1985–1988/);
+    expect(window.location.hash).toContain('country=brazil');
+    expect(screen.getByRole('combobox', { name: /Country/ })).toHaveValue('brazil');
     cleanup(); renderAtlas();
     expect(map().getByRole('button', { name: /Brazil:/ })).toHaveAttribute('aria-pressed', 'true');
-    expect(screen.getByRole('complementary', { name: 'Map selection' })).toHaveTextContent('research gap');
+    expect(screen.getByRole('complementary', { name: 'Map selection' })).toHaveTextContent('Brazil');
   });
 
   it('supports roving keyboard focus, Enter and Space without 177 tab stops', async () => {
@@ -118,7 +119,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(13);
+    expect(cards()).toHaveLength(14);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });
