@@ -1371,7 +1371,7 @@ assert.match(moroccoCriticisms, /age twenty.*eighteen.*not collated/);
 const moroccoVariant = moroccoMonarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Morocco 2011:'));
 assert.ok(moroccoVariant.citations.researchSourceIds.includes('ruizMoroccoParliamentary2014'));
 assert.ok(moroccoVariant.citations.researchSourceIds.includes('elMessaoudiGovernment2015'));
-assert.match(moroccoVariant.relation, /Only Ruiz Ruiz’s abstract was reviewed/);
+assert.match(moroccoVariant.relation, /Arabic\/Gazette record/);
 const moroccoExample = moroccoMonarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Morocco’s constitutional'));
 assert.equal(moroccoExample.period, '2011 text; interpretations published in 2014–2015');
 assert.match(moroccoExample.caveat, /does not classify present-day Morocco or its citizens/);
@@ -4091,6 +4091,35 @@ for (const dimension of DIMENSIONS) {
   assert.ok(
     russianCentralAsiaEntry.dimensionInterpretations[dimension.id].citations.researchSourceIds.some((sourceId) => russianCentralAsiaSourceIds.has(sourceId)),
     `${dimension.id} needs a Russian Central Asia citation trail`,
+  );
+}
+
+for (const sourceId of ['moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Moroccan monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the Moroccan case`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
+  assert.ok(records[0].relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const moroccoResearchIntroduction = monarchistEntry.sections.find(({ id }) => id === 'introduction').blocks.find(({ text }) => text?.startsWith('A closer reading of the 2011 Moroccan design'));
+assert.ok(moroccoResearchIntroduction, 'the Moroccan entry must preserve the executive-boundary evidence note');
+const moroccoResearchDescription = monarchistEntry.sections.find(({ id }) => id === 'description').blocks.find(({ text }) => text?.startsWith('The 2011 text separates'));
+assert.ok(moroccoResearchDescription, 'the Moroccan description must distinguish royal and governmental functions');
+const moroccoResearchHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('2011–2016 — Morocco’s parliamentary-monarchy experiment'));
+assert.ok(moroccoResearchHistory, 'the Moroccan constitutional experiment must have its own historical period');
+const moroccoResearchVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Morocco 2011'));
+assert.match(moroccoResearchVariant.relation, /Arabic\/Gazette record/);
+const moroccoResearchExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Morocco’s 2011 constitutional settlement'));
+assert.ok(moroccoResearchExample, 'Morocco must appear as a bounded historical example');
+assert.match(moroccoResearchExample.text, /not an exact six-axis match/);
+const moroccoResearchSafeguard = monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Morocco case also requires'));
+assert.ok(moroccoResearchSafeguard, 'the Moroccan case must retain a translation-and-implementation safeguard');
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('The Morocco comparison now separates')));
+const moroccoSourceIds = new Set(['moroccoConstitutionFrench2011', 'constituteMorocco2011', 'ruizMoroccoParliamentary2014', 'elMessaoudiGovernment2015']);
+for (const dimension of DIMENSIONS) {
+  assert.ok(
+    monarchistEntry.dimensionInterpretations[dimension.id].citations.researchSourceIds.some((sourceId) => moroccoSourceIds.has(sourceId)),
+    `${dimension.id} needs a Moroccan citation trail`,
   );
 }
 
