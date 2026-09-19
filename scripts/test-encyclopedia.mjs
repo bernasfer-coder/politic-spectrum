@@ -2862,6 +2862,35 @@ assert.match(ziemannInsurance.sourceType, /selected German sidebar/);
 assert.deepEqual(ritterInsurance.creators, ['Gerhard A. Ritter']);
 assert.deepEqual(ziemannInsurance.creators, ['Benjamin Ziemann']);
 for (const [sourceId, evidenceRole, publicationDate, languages] of [
+  ['bismarckCompensationSpeech1884', 'primary', '1884-03-15', ['English translation; German original not collated']],
+  ['bpbSocialPolicyHistoryGerman', 'secondary', null, ['German']],
+  ['dhmBismarckSocialLegislationGerman', 'secondary', null, ['German']],
+]) {
+  assert.ok(nationalConservativeEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Bismarck social-policy reference trail`);
+  assert.ok(JSON.stringify(nationalConservativeEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, 'high');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-conservative'));
+}
+const bismarckSocialDescription = nationalConservativeEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+assert.match(bismarckSocialDescription, /initially covered workers and low-paid employees/);
+assert.match(bismarckSocialDescription, /not proof of workers’ loyalty/);
+const bismarckSocialHistory = nationalConservativeEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1883–1889: separate insurance legislation'));
+assert.ok(bismarckSocialHistory, 'the Bismarck insurance sequence must remain a separate historical period');
+assert.match(bismarckSocialHistory.text, /15 June 1883/);
+const bismarckSocialVariant = nationalConservativeEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Paternalist social provision'));
+assert.ok(bismarckSocialVariant.citations.researchSourceIds.includes('dhmBismarckSocialLegislationGerman'));
+assert.ok(bismarckSocialVariant.citations.researchSourceIds.includes('bismarckCompensationSpeech1884'));
+assert.ok(nationalConservativeEntry.researchGaps.some((gap) => gap.startsWith('This Bismarck welfare update adds')));
+for (const [sourceId, evidenceRole, publicationDate, languages] of [
   ['academieFrancaiseMaurras', 'secondary', null, ['French']],
   ['sorbonneMaurrasNationalismeIntegral', 'secondary', '2023-04-22', ['French']],
   ['perseeActionFrancaiseNationalism1973', 'secondary', '1973', ['French']],

@@ -1893,19 +1893,19 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -34,
         label: 'Somewhat market-oriented mixed economy',
         explanation: 'Private property and markets are usually accepted, but strategic industries, welfare provision, trade, and regulation may be shaped by national resilience or social stability. National conservatism does not require laissez-faire and can support paternalist or interventionist economic policy.',
-        citations: citations(['adamSmithWealth', 'burkeReflections'], ['sepConservatism', 'sepLiberalism']),
+        citations: citations(['adamSmithWealth', 'burkeReflections'], ['sepConservatism', 'sepLiberalism', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman']),
       },
       social: {
         score: -68,
         label: 'Strongly traditionalist',
         explanation: 'Family, religion, language, customary morality, and inherited institutions are treated as sources of social order and identity. Change may be accepted when gradual or experience-based, but rapid abstract redesign is viewed with suspicion.',
-        citations: citations(['burkeReflections', 'tocquevilleDemocracy'], ['sepConservatism']),
+        citations: citations(['burkeReflections', 'tocquevilleDemocracy'], ['sepConservatism', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman']),
       },
       authority: {
         score: 46,
         label: 'Order-oriented but potentially constitutional',
         explanation: 'The profile favors law, public order, borders, and a capable executive or administrative state, while its constitutional variant accepts elections, courts, and legal limits. Strong authority becomes authoritarian only when independent institutions and opposition are systematically subordinated.',
-        citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'perseeDeGaulleConstitutionalThought', 'fondationDeGaulleOppositionIVe', 'vdem']),
+        citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'perseeDeGaulleConstitutionalThought', 'fondationDeGaulleOppositionIVe', 'vdem', 'bismarckCompensationSpeech1884']),
       },
       identity: {
         score: -82,
@@ -1953,8 +1953,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'evidence-note',
-            text: 'The Bismarck-era comparison below examines social provision alongside political exclusion. It is a historical boundary case, not a claim that every national conservative shares imperial Germany’s institutions. Public justifications, legal provisions, historians’ interpretations, and these illustrative coordinates are distinct evidence types.',
-            citations: citations([], ['wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983']),
+            text: 'The Bismarck-era comparison below examines social provision alongside political exclusion. It is a historical boundary case, not a claim that every national conservative shares imperial Germany’s institutions. Public justifications, legal provisions, historians’ interpretations, and these illustrative coordinates are distinct evidence types. German institutional histories add an important limit to the familiar “carrot and stick” shorthand: the 1881–1889 programme emerged from broader reform debates, was pursued by a conservative Obrigkeitsstaat partly concerned with social-democratic agitation, and initially covered workers and low-paid employees rather than the whole population. The 1884 Reichstag speech provides a primary witness to state responsibility and qualified parliamentary cooperation; it does not prove worker loyalty or successful implementation.',
+            citations: citations([], ['wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'bismarckCompensationSpeech1884', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman', 'ritterSocialInsurance1983']),
           },
           {
             type: 'evidence-note',
@@ -1994,8 +1994,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
-            text: 'Wilhelm I’s 1881 proclamation explicitly pairs workers’ welfare with repression of Social Democracy and domestic peace. It invokes Christian moral obligations and proposes state-supported corporate cooperation as well as provision for sickness, accidents, age, and disability. This is evidence of the government’s public justification, not proof of workers’ loyalty or successful implementation. The German excerpt and Erwin Fink’s English translation inform this original paraphrase.',
-            citations: citations([], ['wilhelmSocialProclamation1881']),
+            text: 'Wilhelm I’s 1881 proclamation explicitly pairs workers’ welfare with repression of Social Democracy and domestic peace. It invokes Christian moral obligations and proposes state-supported corporate cooperation as well as provision for sickness, accidents, age, and disability. The later German institutional record shows that the laws initially covered workers and low-paid employees through separate insurance branches rather than creating universal protection. These are evidence layers about public justification and legal design, not proof of workers’ loyalty or successful implementation. The German excerpt and Erwin Fink’s English translation inform this original paraphrase.',
+            citations: citations([], ['wilhelmSocialProclamation1881', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman']),
           },
           {
             type: 'paragraph',
@@ -2004,8 +2004,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
-            text: 'Benjamin Ziemann’s account distinguishes contribution-based insurance entitlements from discretionary poor relief and emphasizes older insurance institutions and parliamentary compromise. The resulting system was not simply one ruler’s design. This supports separating benefit rights, political rights, and control over administration rather than treating welfare spending as an ideological verdict.',
-            citations: citations([], ['ziemannIndustrialSociety2016']),
+            text: 'Benjamin Ziemann’s account distinguishes contribution-based insurance entitlements from discretionary poor relief and emphasizes older insurance institutions and parliamentary compromise. The Deutsches Historisches Museum likewise records branch-specific contribution rules, eligibility thresholds and limited benefit levels, while the bpb synthesis places the laws within a wider reform debate and conservative anti-socialist strategy. The resulting system was not simply one ruler’s design. This supports separating benefit rights, political rights, and control over administration rather than treating welfare spending as an ideological verdict.',
+            citations: citations([], ['ziemannIndustrialSociety2016', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman']),
           },
         ],
       },
@@ -2045,8 +2045,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             period: '1883–1889: separate insurance legislation',
-            text: 'Health insurance legislation follows in 1883, accident insurance in 1884, and invalidity and old-age insurance in 1889. These were distinct schemes, not universal protection against every risk.',
-            citations: citations([], ['ziemannIndustrialSociety2016', 'ritterSocialInsurance1983']),
+            text: 'The Reichstag enacted sickness insurance on 15 June 1883, accident insurance on 6 July 1884, and invalidity and old-age insurance on 22 June 1889. The German institutional record distinguishes their contribution rules, eligibility thresholds and benefit limits: the schemes created legal entitlements for defined groups, not universal protection against every risk. Their sequence should therefore be read as state-building and bounded social provision alongside continued political exclusion.',
+            citations: citations([], ['ziemannIndustrialSociety2016', 'ritterSocialInsurance1983', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman', 'bismarckCompensationSpeech1884']),
           },
           {
             period: 'Twentieth century: sovereignty, empire, and constitutional nation-states',
@@ -2116,7 +2116,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 label: 'Paternalist social provision versus democratic inclusion',
                 distinction: 'Insurance entitlements and political repression can coexist.',
                 relation: 'Compare who receives benefits, who administers them, and who can organize opposition; no single policy answers all three questions.',
-                citations: citations([], ['ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983']),
+                citations: citations([], ['ghdiAntiSocialistLaw1878', 'bismarckCompensationSpeech1884', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman', 'ritterSocialInsurance1983']),
               },
               {
                 label: 'Ethnic nationalism',
@@ -2180,7 +2180,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Otto von Bismarck',
                 role: 'chancellor associated with the imperial social-policy programme',
                 caveat: 'A document-specific comparator, not an exact six-axis match or a claim that he alone designed social insurance. His broader politics require separate evidence.',
-                citations: citations([], ['wilhelmSocialProclamation1881', 'ritterSocialInsurance1983']),
+                citations: citations([], ['wilhelmSocialProclamation1881', 'bismarckCompensationSpeech1884', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman', 'ritterSocialInsurance1983']),
               },
             ],
           },
@@ -2220,7 +2220,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: '1880s legislation, with later institutional development',
                 match: 'bounded comparison of provision and political order',
                 caveat: 'Neither a whole-country classification nor a direct ancestor of every present national-conservative movement. The three insurance branches require separate analysis.',
-                citations: citations([], ['ritterSocialInsurance1983', 'ziemannIndustrialSociety2016']),
+                citations: citations([], ['ritterSocialInsurance1983', 'ziemannIndustrialSociety2016', 'bismarckCompensationSpeech1884', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman']),
               },
               {
                 name: 'Contemporary national-conservative movements',
@@ -2287,13 +2287,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
-            text: 'Gerhard A. Ritter gives political stabilization a central role but also identifies social and economic pressures and parliamentary bargaining. He argues that insurance institutions subsequently strengthened worker organizations and opportunities for self-administration, contrary to Bismarck’s aims. Government intentions cannot substitute for an assessment of institutional effects.',
-            citations: citations([], ['ritterSocialInsurance1983']),
+            text: 'Gerhard A. Ritter gives political stabilization a central role but also identifies social and economic pressures and parliamentary bargaining. He argues that insurance institutions subsequently strengthened worker organizations and opportunities for self-administration, contrary to Bismarck’s aims. The German institutional accounts add that the initial schemes were legally significant but materially limited by thresholds, branch design and low benefit levels. Government intentions cannot substitute for an assessment of institutional effects.',
+            citations: citations([], ['ritterSocialInsurance1983', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman']),
           },
           {
             type: 'paragraph',
-            text: 'Ziemann stresses that early coverage and benefits were limited, while insurance still offered meaningful protection. The comparison should neither dismiss provision as merely propaganda nor convert it into evidence of universal inclusion. Contemporary welfare-nationalist membership rules require separate, dated research.',
-            citations: citations([], ['ziemannIndustrialSociety2016']),
+            text: 'Ziemann stresses that early coverage and benefits were limited, while insurance still offered meaningful protection. The DHM account likewise records that the 1889 old-age threshold was set at 70 and that the early pension level was not comparable to modern provision. The comparison should neither dismiss provision as merely propaganda nor convert it into evidence of universal inclusion. Contemporary welfare-nationalist membership rules require separate, dated research.',
+            citations: citations([], ['ziemannIndustrialSociety2016', 'dhmBismarckSocialLegislationGerman']),
           },
         ],
       },
@@ -2309,8 +2309,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'aquinasMoralPolitical',
       ],
-      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'perseeDreyfusGaullisme1982French', 'pervilleDeGaulleAlgerie1958French', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy', 'wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983', 'ziemannIndustrialSociety2016'],
-      editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. This pass adds a bounded Gaullist primary source, French review-level scholarship, and a decolonization study alongside the existing institutional and constitutional sources. The Bayeux and Algerian cases are period-specific and not synonyms for national conservatism, monarchism, Catholicism, or contemporary France. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
+      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'perseeDreyfusGaullisme1982French', 'pervilleDeGaulleAlgerie1958French', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy', 'wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'bismarckCompensationSpeech1884', 'bpbSocialPolicyHistoryGerman', 'dhmBismarckSocialLegislationGerman', 'ritterSocialInsurance1983', 'ziemannIndustrialSociety2016'],
+      editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. This pass adds a bounded Bismarck-era primary speech and German institutional histories to the existing social-insurance sources. It distinguishes public justification, legal design, eligibility, benefit limits, political repression, parliamentary bargaining and later institutional effects; the 1880s case is not a universal welfare model or a claim that every national conservative shares imperial Germany’s institutions. The earlier Gaullist and Algerian cases remain period-specific and are not synonyms for national conservatism, monarchism, Catholicism, or contemporary France. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
     },
     researchGaps: [
       'This pass adds the 1946 Bayeux speech, a bounded French review of Dreyfus on Gaullism, and Pervillé’s study of de Gaulle and Algeria in 1958. Still expand French-language scholarship on Gaullism, republican sovereignty, laïcité, and the tensions between civic universalism and cultural continuity, including full constitutional debates, colonial and postcolonial perspectives, and post-Gaullist transformations.',
@@ -2320,6 +2320,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Read the full French-language scholarship on Action française, Maurras, Catholic politics, antisemitism, colonialism, and Vichy, together with the complete Enquête sur la monarchie and movement archives. The present pass uses institutional summaries, one Persée article, and a BnF primary-work record; it does not establish a complete intellectual, social, or reception history.',
       'Collate the proclamation and Anti-Socialist Law with original German parliamentary and gazette editions. Read the full Lidtke and Ritter studies and worker testimony; the consulted translations, editorial notes, and selected article sections do not constitute a complete archival review.',
       'Check each insurance branch’s eligibility, contributions, benefits, and administrative powers against original statutes and later amendments. Do not transfer generalizations across health, accident, and pension schemes; investigate women, agricultural and domestic workers, migrants, and colonial populations separately.',
+      'This Bismarck welfare update adds a translated 1884 Reichstag speech and German institutional histories from the bpb and Deutsches Historisches Museum, but it still requires the original German statutes, complete parliamentary debates, Reichsversicherungsordnung, administrative and fund records, worker and women’s testimony, regional coverage data, and comparison with Catholic, liberal, socialist and employer proposals. The new sources clarify public justification, eligibility and benefit limits without proving a universal welfare settlement, worker loyalty or a single conservative motive.',
       'Audit the unchanged reference card’s evidence links: its Poland example points to a Hungary report, and its Meiji Japan example to a de Gaulle biography. This historical article pass does not validate those examples or establish current-country matches.',
     ],
   },
