@@ -33,37 +33,37 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: 88,
         label: 'Strongly collectivist',
         explanation: 'Major productive resources are expected to be socially or publicly directed, with accumulation and distribution subordinated to a collective political project. “Public ownership” does not by itself establish democratic control; state ownership can also become bureaucratic or coercive.',
-        citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepSocialism', 'oxfordHistoryCommunism', 'oxfordWorkersCommunism']),
+        citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepSocialism', 'oxfordHistoryCommunism', 'oxfordWorkersCommunism', 'vietnamConstitution2013', 'cambridgeVietnamMarxMarket2016', 'vnuVietnamDoiMoi1986']),
       },
       social: {
         score: 18,
         label: 'Slightly progressive / project-dependent',
         explanation: 'The profile is not defined by one fixed position on family, gender, religion, or private morality. Revolutionary movements may promise emancipation while later party-states impose conservative, disciplinary, or rapidly changing social policies.',
-        citations: citations(['marxEngelsManifesto', 'arendtTotalitarianism'], ['sepSocialism', 'oxfordWorkersCommunism', 'oxfordCommunismEasternEurope']),
+        citations: citations(['marxEngelsManifesto', 'arendtTotalitarianism'], ['sepSocialism', 'oxfordWorkersCommunism', 'oxfordCommunismEasternEurope', 'vietnamConstitution2013']),
       },
       authority: {
         score: 86,
         label: 'Strongly authoritarian',
         explanation: 'A centralized party and state claim a leading role in organizing the transition, coordinating production, and defending the revolution. This is the defining contrast with libertarian socialism, council communism, and democratic socialism.',
-        citations: citations(['leninStateRevolution', 'arendtTotalitarianism'], ['sepSocialism', 'oxfordCommunismEasternEurope', 'oxfordContemporarySocialistLaw']),
+        citations: citations(['leninStateRevolution', 'arendtTotalitarianism'], ['sepSocialism', 'oxfordCommunismEasternEurope', 'oxfordContemporarySocialistLaw', 'vietnamConstitution1980', 'vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016']),
       },
       identity: {
         score: 38,
         label: 'Internationalist with state-patriotic tension',
         explanation: 'Class solidarity and international revolution temper nationalism in the theory, but actual party-states have also cultivated official patriotism, borders, and state loyalty. Internationalism and state nationalism can therefore coexist uneasily.',
-        citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepSocialism', 'oxfordAuthoritarianConsolidation', 'cambridgeCommunistIdeologyAdaptation']),
+        citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['sepSocialism', 'oxfordAuthoritarianConsolidation', 'cambridgeCommunistIdeologyAdaptation', 'vietnamConstitution1980', 'vietnamConstitution2013', 'vnuVietnamDoiMoi1986']),
       },
       foreign: {
         score: -24,
         label: 'Somewhat interventionist / defensive-force oriented',
         explanation: 'The profile does not require permanent expansionism. It can justify force as revolutionary defense, anti-imperial struggle, alliance politics, or protection of a socialist state; actual foreign policy varies substantially by period and regime.',
-        citations: citations(['leninStateRevolution', 'morgenthauRealism'], ['oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope']),
+        citations: citations(['leninStateRevolution', 'morgenthauRealism'], ['oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'vietnamConstitution1980', 'vietnamConstitution2013']),
       },
       religion: {
         score: 60,
         label: 'Strongly secular public law',
         explanation: 'Public legitimacy is generally grounded in materialist, revolutionary, or party-state reasoning rather than clerical authority. Secular law is not the same as freedom of religion: historical regimes varied from toleration to surveillance, restriction, or active repression.',
-        citations: citations(['spinozaPolitical', 'hobbesLeviathan'], ['sepReligionPolitics', 'oxfordContemporarySocialistLaw']),
+        citations: citations(['spinozaPolitical', 'hobbesLeviathan'], ['sepReligionPolitics', 'oxfordContemporarySocialistLaw', 'vietnamConstitution2013']),
       },
     },
     sections: [
@@ -116,6 +116,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Economic collectivization also changed across time. Central plans, state enterprises, collective farms, rationing, workplace incentives, family plots, private firms, export markets, and state-owned finance have appeared in different combinations. China and Vietnam’s later market reforms, for example, do not erase one-party authority, while Cuba and North Korea should not be assumed to have identical economic or legal systems. “Collectivist” records the direction of ownership and public control, not a fixed production technology.',
             citations: citations(['marxEngelsManifesto', 'leninStateRevolution'], ['aeaChinaSocialism', 'oxfordAuthoritarianConsolidation', 'oxfordWorkersCommunism', 'cambridgeCommunistIdeologyAdaptation']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Vietnam’s constitutional sequence makes the profile’s internal tension unusually visible. The Vietnamese 1980 text presents collective mastery and Communist Party leadership in a post-reunification socialist framework; the 2013 witness retains party leadership while describing a law-based state, popular sovereignty and a socialist-oriented market economy. Bui records serious debate over the constitutional norm of party supremacy, while Pham reconstructs competing options over markets, private property, land and state-owned enterprises. The evidence supports a bounded case of political continuity with economic and legal adaptation, not a claim that constitutional language alone measured implementation or pluralism.',
+            citations: citations([], ['vietnamConstitution1980', 'vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016', 'cambridgeVietnamMarxMarket2016']),
           },
           {
             type: 'paragraph',
@@ -224,6 +229,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['vnuVietnamDoiMoi1986', 'cambridgeVietnamMarxMarket2016', 'vietnamConstitution2013']),
           },
           {
+            period: '2010–2013: Vietnam’s constitutional reform debate',
+            text: 'The 2010–2013 revision process opened questions about the relationship between the Communist Party, the state, the National Assembly, the courts, the market and public ownership. Bui describes contestation over the party-leadership norm, while Pham identifies draft alternatives on the economic order whose final settlement retained both market recognition and public-sector primacy. The resulting text records a controlled constitutional dialogue and ideological compromise; it does not establish that the party monopoly became legally contestable or that private property and land rights received liberal-constitutional protection in practice.',
+            citations: citations([], ['vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016', 'cambridgeVietnamMarxMarket2016']),
+          },
+          {
             period: 'Collapse, resilience, and institutional legacies — 1989–present',
             text: 'The collapse of most European communist regimes and the Soviet Union exposed limits in economic performance, legitimacy, reform, and succession, while several non-European party-states survived by adapting institutions, ideology, international relations, or economic policy. Comparative authoritarianism therefore studies both breakdown and resilience, including how former party-state institutions shape post-communist political and economic life.',
             citations: citations(['arendtTotalitarianism', 'leninStateRevolution'], ['oxfordCommunismEasternEurope', 'oxfordAuthoritarianConsolidation', 'cambridgeCommunistIdeologyAdaptation', 'oxfordHistoryCommunism']),
@@ -289,6 +299,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 label: 'Vietnamese socialist-market party-state',
                 distinction: 'Combines constitutionalized Communist Party leadership with a historically changing socialist economic project, including the post-1986 move from centralized planning toward a socialist-oriented market economy.',
                 relation: 'Shares the profile’s party-state and public-direction core while showing why economic collectivism must be periodized: constitutional continuity, private enterprise, market coordination, and internal reform debate can coexist.',
+                citations: citations([], ['vietnamConstitution1980', 'vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016', 'cambridgeVietnamMarxMarket2016', 'vnuVietnamDoiMoi1986']),
+              },
+              {
+                label: 'Vietnamese constitutional reform: party supremacy and socialist-market compromise',
+                distinction: 'The 2013 constitutional process preserved the Communist Party’s leading role while revising the language of the political system and economic order, including debates over market allocation, private enterprise, state-owned enterprises and land.',
+                relation: 'This is a reform trajectory inside the authoritarian-collectivist family, not a conversion to liberal constitutionalism. Bui’s account of party-leadership contestation and Pham’s account of economic compromise should be read as distinct scholarly interpretations of a constitutional process.',
                 citations: citations([], ['vietnamConstitution1980', 'vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016', 'cambridgeVietnamMarxMarket2016', 'vnuVietnamDoiMoi1986']),
               },
               {
@@ -363,8 +379,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 name: 'Vietnam after Đổi Mới',
                 period: '1986–2013 emphasis; later developments require separate review',
-                match: 'bounded historical match on constitutionalized party leadership and public-direction language alongside a negotiated socialist-market reform path',
-                caveat: 'The 1980 and 2013 constitutional witnesses establish institutional language, while Bui and Pham analyze leadership and economic debates. This does not establish uniform implementation, current-country scores, or the views of Vietnamese citizens; Vietnam’s war, reunification, regional, religious, ethnic, and market histories require separate research.',
+                match: 'bounded historical match on constitutionalized party leadership and public-direction language alongside a contested socialist-market reform path',
+                caveat: 'The 1980 and 2013 constitutional witnesses establish institutional language, while Bui and Pham analyze leadership and economic debates. This does not establish uniform implementation, current-country scores, or the views of Vietnamese citizens; Vietnam’s war, reunification, regional, religious, ethnic, land, labor and market histories require separate research.',
                 citations: citations(['leninStateRevolution'], ['vietnamConstitution1980', 'vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016', 'cambridgeVietnamMarxMarket2016', 'vnuVietnamDoiMoi1986']),
               },
               {
@@ -447,6 +463,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016', 'cambridgeVietnamMarxMarket2016']),
           },
           {
+            type: 'evidence-note',
+            text: 'The Vietnam case also requires a translation-and-implementation boundary. The 1980 source is a Vietnamese primary witness, while the 2013 source is an institutional English translation; Bui and Pham are peer-reviewed English interpretations of constitutional debate, and the VNU page records the official Đổi Mới line. These sources can support a careful account of formal continuity, reform discourse and competing economic principles, but they do not establish how party authority, courts, land access, religious freedom, labor organization or local administration operated across Vietnam’s regions and periods.',
+            citations: citations([], ['vietnamConstitution1980', 'vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016', 'cambridgeVietnamMarxMarket2016', 'vnuVietnamDoiMoi1986']),
+          },
+          {
             type: 'paragraph',
             text: 'Cuba shows why participation should not be treated as synonymous with pluralist accountability. The constitutional process included consultation and a referendum, and scholars disagree about how to interpret its participatory mechanisms; at the same time, the constitutional text preserves the Communist Party’s superior leadership role, while the IACHR identifies continuing concerns about concentrated powers and institutional safeguards. The cautious conclusion is not that participation was meaningless or that it made the system liberal, but that consultation, electoral choice, party competition, rights protection and independent oversight are separate variables.',
             citations: citations([], ['buiCubaConstitution2020', 'backerSapioKormanCuba2020', 'belloBarbosaCuba2019', 'iachrCuba2020', 'cubaConstitution2019']),
@@ -471,13 +492,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'bakuninStatism',
       ],
       researchSourceIds: ['sepSocialism', 'sepAnarchism', 'sepReligionPolitics', 'ushmmCommunism', 'oxfordHistoryCommunism', 'oxfordAuthoritarianConsolidation', 'oxfordCommunismEasternEurope', 'oxfordWorkersCommunism', 'oxfordContemporarySocialistLaw', 'cambridgeCommunistIdeologyAdaptation', 'aeaChinaSocialism', 'ghdiMarxLeninism', 'sepColonialism', 'vdem', 'friedrichshainWorkers1953', 'sedNormsDeclaration1953', 'cieslaHertleWahlBerlin1953', 'lemkeJuneUprising2003', 'ghdiGdrConstitution1968', 'klessmannGdrState1950s2002', 'rossGdrGrassroots1998', 'cubaConstitution2019', 'buiCubaConstitution2020', 'backerSapioKormanCuba2020', 'belloBarbosaCuba2019', 'iachrCuba2020', 'vietnamConstitution1980', 'vietnamConstitution2013', 'cambridgeVietnamPartyLeadership2016', 'cambridgeVietnamMarxMarket2016', 'vnuVietnamDoiMoi1986'],
-      editorialNote: 'References support different layers of the entry: primary texts for stated theories and demands, scholarly works for interpretation, and institutional sources for bounded historical context. The comparative sources separate Soviet, East European, Chinese, Vietnamese, Cuban, North Korean, and postcolonial trajectories. The June 1953 case distinguishes workers’ demands, party declarations, historical reconstruction and editorial comparison; the Cuba addition distinguishes constitutional design, scholarly readings of consultation, Portuguese-language constitutional analysis and an inter-American human-rights assessment; the Vietnam addition distinguishes Vietnamese constitutional self-description, an official English translation, Cambridge constitutional scholarship, and a Vietnam National University account of the reform line. No source proves an exact six-axis score. German, Spanish and Vietnamese passages are independently paraphrased, not quoted or presented as verified translations. Edition and date qualifications remain in the bibliography.',
+      editorialNote: 'References support different layers of the entry: primary texts for stated theories and demands, scholarly works for interpretation, and institutional sources for bounded historical context. The comparative sources separate Soviet, East European, Chinese, Vietnamese, Cuban, North Korean, and postcolonial trajectories. The June 1953 case distinguishes workers’ demands, party declarations, historical reconstruction and editorial comparison; the Cuba addition distinguishes constitutional design, scholarly readings of consultation, Portuguese-language constitutional analysis and an inter-American human-rights assessment; the Vietnam addition now distinguishes the Vietnamese 1980 primary witness, an institutional English translation of the 2013 Constitution, Cambridge constitutional scholarship on party supremacy and economic compromise, and a Vietnam National University account of the Đổi Mới line. No source proves an exact six-axis score. German, Spanish and Vietnamese passages are independently paraphrased, not quoted or presented as verified translations. Edition and date qualifications remain in the bibliography.',
     },
     researchGaps: [
-      'Deepen country-specific scholarship for East Germany, Mao-era China, Vietnam, North Korea, and Cuba rather than relying on a shared comparative frame. This pass adds a bounded Vietnamese constitutional and reform case; it does not complete Vietnam’s political, social, economic, or regional history.',
+      'Deepen country-specific scholarship for East Germany, Mao-era China, Vietnam, North Korea, and Cuba rather than relying on a shared comparative frame. This pass adds a more specific Vietnamese 2010–2013 constitutional-reform subcase; it does not complete Vietnam’s political, social, economic, or regional history.',
       'Document internal debates about religion, gender, nationalism, and economic reform separately for each historical case.',
-      'Add non-English primary and scholarly literature, especially Russian, Chinese, Vietnamese, German, and Portuguese sources, with translation notes. The Vietnam addition includes an official Vietnamese constitutional witness, but not a Vietnamese-language scholarly literature review or an independently checked translation.',
-      'For Vietnam, read the complete Vietnamese 1980 and 2013 constitutional texts, Sixth National Congress and Central Committee documents, land and enterprise laws, National Assembly debates, local studies, and independent scholarship on religion, gender, ethnicity, labor, dissent, and postwar reconciliation. The selected constitutional witnesses and reform accounts establish a bounded framework, not implementation or lived experience.',
+      'Add non-English primary and scholarly literature, especially Russian, Chinese, Vietnamese, German, and Portuguese sources, with translation notes. The Vietnam subcase now separates the Vietnamese 1980 primary text from the institutional English witness to 2013 and English-language scholarly interpretation, but still lacks a Vietnamese-language scholarship review and independent translation collation.',
+      'For Vietnam, read the complete Vietnamese 1980 and 2013 constitutional texts, Sixth National Congress and Central Committee documents, land and enterprise laws, National Assembly debates, local studies, and independent scholarship on religion, gender, ethnicity, labor, dissent, and postwar reconciliation. The selected constitutional witnesses and reform accounts establish a bounded framework for formal continuity and reform discourse, not implementation or lived experience.',
       'Invite review from historians of socialism and comparative authoritarianism before marking the entry as editorially final.',
       'Compare party monopoly, state ownership, workplace control, legal institutions, social provision, and repression as separate variables across the USSR, Eastern Europe, China, Vietnam, Cuba, North Korea, and other cases.',
       'Add archival and oral-history evidence on how citizens, workers, religious communities, ethnic minorities, and local officials negotiated, supported, resisted, or were harmed by party-state institutions.',

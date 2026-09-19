@@ -4123,4 +4123,38 @@ for (const dimension of DIMENSIONS) {
   );
 }
 
+const vietnamAuthoritarianEntry = ENCYCLOPEDIA_ENTRIES['authoritarian-collectivist'];
+const vietnamSourceIds = new Set([
+  'vietnamConstitution1980',
+  'vietnamConstitution2013',
+  'cambridgeVietnamPartyLeadership2016',
+  'cambridgeVietnamMarxMarket2016',
+  'vnuVietnamDoiMoi1986',
+]);
+for (const sourceId of vietnamSourceIds) {
+  assert.ok(vietnamAuthoritarianEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Vietnamese authoritarian-collectivist reference trail`);
+  assert.ok(JSON.stringify(vietnamAuthoritarianEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the Vietnamese case`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
+  assert.ok(records[0].relationships.profileEntries.includes('encyclopedia:authoritarian-collectivist'), `${sourceId} needs an authoritarian-collectivist backlink`);
+}
+const vietnamDescription = vietnamAuthoritarianEntry.sections.find(({ id }) => id === 'description').blocks.find(({ text }) => text?.startsWith('Vietnam’s constitutional sequence makes the profile’s internal tension'));
+assert.ok(vietnamDescription, 'the Vietnam constitutional sequence must be explicit in the entry');
+const vietnamHistory = vietnamAuthoritarianEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('2010–2013: Vietnam’s constitutional reform debate'));
+assert.ok(vietnamHistory, 'the Vietnamese constitutional reform debate must have its own historical period');
+const vietnamVariant = vietnamAuthoritarianEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Vietnamese constitutional reform'));
+assert.ok(vietnamVariant, 'the Vietnamese reform debate must be a distinct variant');
+const vietnamExample = vietnamAuthoritarianEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Vietnam after Đổi Mới');
+assert.match(vietnamExample.match, /contested socialist-market reform path/);
+assert.match(vietnamExample.caveat, /land, labor and market histories/);
+const vietnamSafeguard = vietnamAuthoritarianEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Vietnam case also requires a translation-and-implementation boundary'));
+assert.ok(vietnamSafeguard, 'the Vietnam case must retain a translation-and-implementation safeguard');
+assert.ok(vietnamAuthoritarianEntry.researchGaps.some((gap) => gap.startsWith('Deepen country-specific scholarship') && gap.includes('2010–2013 constitutional-reform subcase')));
+for (const dimension of DIMENSIONS) {
+  assert.ok(
+    vietnamAuthoritarianEntry.dimensionInterpretations[dimension.id].citations.researchSourceIds.some((sourceId) => vietnamSourceIds.has(sourceId)),
+    `${dimension.id} needs a Vietnamese citation trail`,
+  );
+}
+
 console.log(`Encyclopedia tests passed: ${Object.keys(ENCYCLOPEDIA_ENTRIES).length} entry with claim-level citation validation across ${DIMENSIONS.length} dimensions.`);
