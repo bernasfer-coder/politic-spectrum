@@ -533,7 +533,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A historical warning profile combining exclusionary ultranationalism, an authoritarian leader and movement, mass mobilization, anti-liberal and anti-communist politics, political violence, and a promise of national rebirth. Nazi racial ideology and genocide are central to Nazism, but should not be projected backward onto every Italian or non-Nazi fascist movement.',
     summaryCitations: citations(
       ['griffinNatureFascism', 'mussoliniDoctrine', 'hitlerMeinKampf', 'arendtTotalitarianism'],
-      ['sepFascism', 'treccaniFascismo', 'ushmmFascism', 'bpbFascism', 'bpbNationalSocialism'],
+      ['sepFascism', 'treccaniFascismo', 'ushmmFascism', 'bpbFascism', 'bpbNationalSocialism', 'cameraSpeech3Jan1925', 'legge2263Fascistissime'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -616,6 +616,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The Italian primary record also shows how movement politics became a formal dictatorship. The Chamber’s stenographic record of Mussolini’s 3 January 1925 intervention is evidence of a public parliamentary assertion of political responsibility during the Matteotti crisis; Law no. 2263 of 24 December 1925 then provides a separate legal witness to the formal powers and title of the Head of Government. These sources document public justification and institutional design, not every coercive measure, the whole 1925–1926 legal sequence, or uniform practice across Italy.',
+            citations: citations([], ['cameraSpeech3Jan1925', 'legge2263Fascistissime']),
+          },
+          {
+            type: 'paragraph',
             text: 'Italian-language scholarship adds a necessary distinction between corporatist aspiration and colonial practice. Pasetti reconstructs colonial corporatism as a Fascist project that linked imperial rule to a supposed third way between liberalism and socialism, but finds its colonial institutions fragmented, overlapping, and subordinated to the one-party state. The project’s language of cooperation and labor did not erase racial hierarchy or turn colonized people into equal participants; its limited implementation often served administrative discipline and imperial legitimation.',
             citations: citations([], ['pasettiColonialismCorporative2016']),
           },
@@ -649,6 +654,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1919–1922: Italian Fascist movement and seizure of office',
             text: 'Mussolini founded the Italian Fascist movement in 1919, converted it into a national party, and used the March on Rome in 1922 to become prime minister. The subsequent destruction of pluralist institutions turned a movement with electoral and paramilitary elements into a dictatorship.',
             citations: citations(['mussoliniDoctrine'], ['treccaniFascismo', 'ushmmFascism', 'bpbFascism']),
+          },
+          {
+            period: '3 January 1925–1926: public and legal consolidation of dictatorship',
+            text: 'The official Chamber record of 3 January 1925 preserves Mussolini’s parliamentary intervention at the end of the Matteotti crisis. Law no. 2263 of 24 December 1925 provides a formal legal witness to the powers of the Head of Government, while other 1925–1926 measures addressed associations, the executive’s lawmaking powers, political opposition, and public freedoms. The speech is evidence of public justification and the statute is evidence of legal design; neither alone proves complete implementation or explains every Fascist institution.',
+            citations: citations([], ['cameraSpeech3Jan1925', 'legge2263Fascistissime', 'treccaniFascismo']),
           },
           {
             period: '1925–1939: dictatorship, corporatism, church settlement, and empire',
@@ -729,6 +739,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 relation: 'Important boundary case; authoritarianism alone is not enough to establish fascism.',
                 citations: citations(['arendtTotalitarianism', 'griffinNatureFascism'], ['sepFascism']),
               },
+              {
+                label: 'Fascist legal consolidation',
+                distinction: 'The use of parliamentary declarations and statutes to centralize executive authority and dismantle pluralist safeguards while preserving a formal legal shell.',
+                relation: 'A documented mechanism in Fascist Italy, but legal centralization must be distinguished from movement mobilization, police practice, and the later racial and imperial record.',
+                citations: citations([], ['cameraSpeech3Jan1925', 'legge2263Fascistissime']),
+              },
             ],
           },
         ],
@@ -772,6 +788,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'strong match on imperial expansion, racial hierarchy, party-state administration, and colonial corporatist experimentation',
                 caveat: 'The colonial institutions were uneven and limited; this example concerns Fascist rule and its subjects, not a claim about all Italian colonial history or a single uniform experience across Libya, Eritrea, Ethiopia, and Somalia.',
                 citations: citations([], ['pasettiColonialismCorporative2016', 'treccaniRacismImperialism2022']),
+              },
+              {
+                name: 'Italy’s 1925–1926 legal consolidation',
+                period: '3 January 1925–1926',
+                match: 'documented institutional mechanism within the Fascist Italian case',
+                caveat: 'The parliamentary speech and Law no. 2263 establish public and formal legal evidence, not a complete account of coercion, local implementation, or the whole Fascist-law sequence.',
+                citations: citations([], ['cameraSpeech3Jan1925', 'legge2263Fascistissime']),
               },
             ],
           },
@@ -820,6 +843,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The 1925–1926 legal sequence should likewise not be mistaken for a complete explanation of Fascist power. A statute can show how authority was formally allocated, while parliamentary records, police files, party organization, provincial administration, courts, and lived experience are needed to establish how that authority operated. The Italian primary sources added here narrow the evidence gap; they do not justify a claim that every institution or official behaved identically.',
+            citations: citations([], ['cameraSpeech3Jan1925', 'legge2263Fascistissime']),
+          },
+          {
+            type: 'paragraph',
             text: 'Nazi crimes must never be diluted by treating them as a generic “strong government” outcome. Racial persecution, the Holocaust, aggressive war, forced labor, and mass murder are historically documented practices of the Nazi state and must remain explicit in any educational presentation of this card.',
             citations: citations(['hitlerMeinKampf', 'arendtTotalitarianism'], ['ushmmFascism', 'bpbNationalSocialism']),
           },
@@ -856,10 +884,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'pasettiColonialismCorporative2016',
         'treccaniRacismImperialism2022',
         'laricciaLateranPacts2016',
+        'cameraSpeech3Jan1925',
+        'legge2263Fascistissime',
       ],
       editorialNote: 'The entry separates primary fascist and Nazi texts from comparative scholarship and institutional historical sources. The profile is a warning and comparison aid, not a diagnosis of contemporary people or countries. Selected 1938 decrees are primary evidence of prescribed rules; the 2001 commission report and USHMM article provide later historical interpretation. English legal summaries are paraphrases, not quotations or certified translations. None establishes a measured six-axis score.',
     },
     researchGaps: [
+      'Read the complete Italian parliamentary record around 3 January 1925 and collate Laws 2029/1925, 2263/1925, 100/1926, 2008/1926, and related press and police provisions against original Gazzetta and provincial records; the new speech and statute establish public/legal evidence but not the full consolidation sequence or its implementation.',
       'Expand Italian-language scholarship on Fascist Italy, corporatism, the Lateran Pacts, colonial violence, and the regime’s changing racial policy, including archival and regional studies beyond general reference works.',
       'Add French- and German-language scholarship on comparative fascism, Vichy, the German Sonderweg debate, and post-war memory without treating all cases as equivalent.',
       'Add country-specific evidence before creating any contemporary movement or country match; avoid inferring fascism from rhetoric alone.',

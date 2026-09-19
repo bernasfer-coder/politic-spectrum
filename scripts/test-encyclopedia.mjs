@@ -3989,6 +3989,8 @@ assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('The Austro-
 const fascistEntry = ENCYCLOPEDIA_ENTRIES['historical-fascist'];
 for (const [sourceId, evidenceRole] of [
   ['cdecAntisemiticDecrees1938', 'primary'],
+  ['cameraSpeech3Jan1925', 'primary'],
+  ['legge2263Fascistissime', 'primary'],
   ['anselmiPropertyReport2001', 'secondary'],
   ['ushmmItalyPersecution', 'secondary'],
 ]) {
@@ -3998,7 +4000,7 @@ for (const [sourceId, evidenceRole] of [
   assert.equal(records.length, 1, `${sourceId} needs exactly one bibliography record`);
   const [record] = records;
   assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish contemporary legislation from later historical research`);
-  assert.equal(record.accessDate, '2026-09-16', `${sourceId} needs its consultation date`);
+  assert.ok(['2026-09-16', '2026-09-19'].includes(record.accessDate), `${sourceId} needs its consultation date`);
   assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain the summary-and-link boundary`);
   assert.equal(record.directQuote, null, `${sourceId} must not introduce an unreviewed quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:historical-fascist'), `${sourceId} needs an encyclopedia backlink`);
@@ -4008,8 +4010,11 @@ const italyRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'link-fascistIt
 assert.ok(italyRecord.relationships.archetypeIds.includes('historical-fascist'), 'the shared museum source must retain its historical-card backlink');
 assert.equal(italyRecord.rightsStatus, 'permission-sensitive', 'source sharing must not weaken the existing rights boundary');
 const italianLaws = fascistHistory.find(({ period }) => period.startsWith('1938:'));
+const legalConsolidation = fascistHistory.find(({ period }) => period.startsWith('3 January 1925–1926:'));
 const rsiDispossession = fascistHistory.find(({ period }) => period.startsWith('1943–1944:'));
-assert.ok(italianLaws && rsiDispossession, 'Italian persecution must retain distinct pre-occupation and RSI phases');
+assert.ok(italianLaws && legalConsolidation && rsiDispossession, 'Italian persecution and legal consolidation must retain distinct phases');
+assert.ok(legalConsolidation.citations.researchSourceIds.includes('cameraSpeech3Jan1925'), 'the dictatorship transition needs the official parliamentary record');
+assert.ok(legalConsolidation.citations.researchSourceIds.includes('legge2263Fascistissime'), 'the dictatorship transition needs the official statute');
 assert.ok(italianLaws.citations.researchSourceIds.includes('cdecAntisemiticDecrees1938'), 'the 1938 legal claims need primary-document evidence');
 assert.ok(rsiDispossession.citations.researchSourceIds.includes('anselmiPropertyReport2001'), 'the RSI account must disclose its later commission-report source');
 
