@@ -1375,6 +1375,7 @@ assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Coll
 assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Read Collins in full')));
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['maistreConsiderationsFrance1796', 'primary', '1796', ['French'], 'high'],
+  ['nicolasMaistreConversion1971French', 'secondary', '1971', ['French'], 'medium'],
   ['chateaubriandMonarchieCharte1816', 'primary', '1816', ['French'], 'high'],
   ['clementConservateur1996', 'secondary', '1996-12', ['French'], 'medium'],
 ]) {
@@ -1402,6 +1403,7 @@ const conservativePeople = burkeConservativeEntry.sections.find(({ id }) => id =
 assert.ok(conservativePeople.find(({ name }) => name === 'Joseph de Maistre'));
 assert.ok(conservativePeople.find(({ name }) => name === 'François-René de Chateaubriand'));
 assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Read de Maistre’s complete French text')));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Jean Nicolas’s French study')));
 assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Collate Chateaubriand’s 1816 work')));
 
 const nozickMarketEntry = ENCYCLOPEDIA_ENTRIES['libertarian-market'];
