@@ -4929,6 +4929,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'India makes the family’s internal plurality especially visible. The anti-colonial struggle included mass mobilization, constitutional negotiation, social reform, religious and regional projects, labor and socialist currents, revolutionary organizations, and arguments over caste and minority protection. Ambedkar’s 1936 address placed caste hierarchy and social democracy at the center of emancipation, while the Constitution supplied a legal settlement whose design and later operation must be studied separately. Chandra, Sarkar, Brown, and Austin provide complementary but non-identical historical frames; none makes “Indian independence” a complete description of every community, party, or later government.',
+            citations: citations(['gandhiHindSwaraj'], ['ambedkarAnnihilationCaste1936', 'indiaConstitution1950', 'bipanChandraIndiaStruggle1988', 'sarkarModernIndia1885-1947', 'brownModernIndia1994', 'austinIndianConstitution1966']),
+          },
+          {
+            type: 'paragraph',
             text: 'Mozambique shows why anti-colonial liberation and postcolonial ideology need separate rows. Bavo and Coelho’s Portuguese study describes FRELIMO education in liberated zones and after 1975 as linked to dignity, political formation, a common national identity, and state-building, while noting colonial language hierarchy and unfinished educational inclusion. Brandão’s Portuguese study treats violence in the 1962–1989 transition from insurgency to constituted power. Vines then documents the 1975–1990 socialist and vanguard-party turn, including both social programmes and coercive or centralizing practices. These sources support a dated case comparison, not one timeless FRELIMO label.',
             citations: citations([], ['bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023']),
           },
@@ -4992,6 +4997,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1900s–1930s: Black freedom, Pan-Africanism, and the international question',
             text: 'Du Bois connected racial domination, labor, democratic citizenship, and the international organization of colonial power. Pan-African projects made the relationship between national independence, diaspora solidarity, and global racial justice explicit. The tradition shows why anti-colonial identity can be transnational even when the immediate political demand is control of a particular state.',
             citations: citations(['duboisBlackReconstruction', 'andersonImaginedCommunities'], ['panAfricanism', 'sepColonialism']),
+          },
+          {
+            period: '1905–1950: Indian mass politics, anti-caste critique, and constitutional founding',
+            text: 'The India case joins mass anti-colonial mobilization, competing projects of swaraj, social reform, Partition, and the constitutional founding of the Republic. Chandra and Sarkar provide different book-length histories of the anti-imperial struggle; Brown situates the emergence of Indian democracy within the interaction of indigenous institutions and external influences; Gandhi’s Hind Swaraj and Ambedkar’s Annihilation of Caste expose competing arguments about civilization, self-rule, social hierarchy, and emancipation; the Constitution and Austin’s constitutional history document a further institutional layer. These sources support a bounded political history, not one Indian voice or a country-wide ideological score.',
+            citations: citations(['gandhiHindSwaraj'], ['ambedkarAnnihilationCaste1936', 'indiaConstitution1950', 'bipanChandraIndiaStruggle1988', 'sarkarModernIndia1885-1947', 'brownModernIndia1994', 'austinIndianConstitution1966']),
           },
           {
             period: '1930s–1950s: Négritude, colonial critique, and cultural dignity',
@@ -5073,6 +5083,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['fanonWretchedEarth', 'duboisBlackReconstruction', 'marxEngelsManifesto'], ['sepColonialism', 'sepSocialism', 'panAfricanism']),
               },
               {
+                label: 'Indian mass nationalism, anti-caste constitutionalism, and competing swaraj projects',
+                distinction: 'The Indian case joins anti-imperial mobilization to disagreements over ethical self-rule, constitutional representation, caste abolition, religious pluralism, economic development, and the shape of the postcolonial state.',
+                relation: 'Gandhi, Ambedkar, the Constituent Assembly, and the major historical studies should be read together but not fused into a single doctrine. Independence and constitutional founding are related evidence layers; neither resolves later implementation, internal inequality, or every regional and minority claim.',
+                citations: citations(['gandhiHindSwaraj'], ['ambedkarAnnihilationCaste1936', 'indiaConstitution1950', 'bipanChandraIndiaStruggle1988', 'sarkarModernIndia1885-1947', 'brownModernIndia1994', 'austinIndianConstitution1966']),
+              },
+              {
                 label: 'Mozambican liberation and postcolonial state-building',
                 distinction: 'FRELIMO joined a struggle for national independence with education, national identity, and later socialist state-building in a bounded 1962–1990 historical sequence.',
                 relation: 'A Lusophone African case, not a template for all national liberation: the movement statement, negotiated independence record, educational history, violence analysis, and post-1975 party-state evidence describe different layers and must not be averaged into one profile.',
@@ -5126,6 +5142,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['gandhiHindSwaraj'], ['sepColonialism']),
               },
               {
+                name: 'B. R. Ambedkar',
+                role: 'Lawyer, anti-caste thinker, and constitutional actor whose critique of caste made social equality and political democracy central to emancipation.',
+                caveat: 'Annihilation of Caste is a primary polemical text from 1936, not a complete account of Ambedkar’s later constitutional work, every Dalit movement, or the experience of caste communities across India.',
+                citations: citations([], ['ambedkarAnnihilationCaste1936', 'indiaConstitution1950', 'austinIndianConstitution1966']),
+              },
+              {
                 name: 'W. E. B. Du Bois',
                 role: 'Historian and Pan-African thinker linking emancipation, labor, democratic citizenship, race, and international anti-colonial solidarity.',
                 caveat: 'Du Bois’s commitments evolved across a long life, so his early liberal, Pan-African, socialist, and later positions should be time-indexed rather than averaged into one permanent score.',
@@ -5174,10 +5196,10 @@ export const ENCYCLOPEDIA_ENTRIES = {
             entries: [
               {
                 name: 'Indian independence',
-                period: 'South Asia, especially 1905–1947 and the transition to independence',
-                match: 'Mixed anti-colonial case combining mass noncooperation, constitutional negotiation, competing nationalisms, religious pluralism, and debates over economic self-rule.',
-                caveat: 'The independence movement contained many currents beyond Gandhi, including revolutionary, socialist, liberal, religious, labor, Dalit, and regional projects; Partition and postcolonial state formation must not be omitted.',
-                citations: citations(['gandhiHindSwaraj', 'lockeSecondTreatise'], ['sepColonialism', 'sepNationalism']),
+                period: 'India, 1905–1950; anti-colonial mobilization, independence, Partition, and constitutional founding',
+                match: 'A bounded South Asian case combining mass politics, constitutional negotiation, competing projects of swaraj, anti-caste critique, religious pluralism, and the founding of a republican constitutional order.',
+                caveat: 'Chandra and Sarkar offer different book-length histories, while Brown and Austin address democratic emergence and constitutional working. Gandhi and Ambedkar document competing primary arguments. Partition, regional and religious politics, labor, women, Dalit and Adivasi histories, and post-1950 implementation remain distinct evidence layers; this is not a current-country classification or a score for all Indians.',
+                citations: citations(['gandhiHindSwaraj'], ['ambedkarAnnihilationCaste1936', 'indiaConstitution1950', 'bipanChandraIndiaStruggle1988', 'sarkarModernIndia1885-1947', 'brownModernIndia1994', 'austinIndianConstitution1966', 'sepColonialism', 'sepNationalism']),
               },
               {
                 name: 'Algerian War of Independence',
@@ -5281,6 +5303,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'India also shows why formal sovereignty and social emancipation cannot be treated as synonyms. Ambedkar’s 1936 address made the destruction of caste hierarchy a condition of meaningful social democracy, while the Constitution created a legal framework whose institutions, rights, and later operation require separate historical study. Brown and Austin help connect constitutional design to democratic practice without proving equal outcomes; the country case therefore keeps anti-colonial independence, caste emancipation, Partition, and implementation analytically distinct.',
+            citations: citations([], ['ambedkarAnnihilationCaste1936', 'indiaConstitution1950', 'brownModernIndia1994', 'austinIndianConstitution1966']),
+          },
+          {
+            type: 'paragraph',
             text: 'A third criticism concerns violence and emergency rule. Anti-colonial writers documented coercion and argued about resistance under conditions that were not ordinary constitutional disagreement. Historical explanation should neither sanitize colonial violence nor treat it as permission for later abuses. Any modern comparison must separate resistance to domination, protection of civilians, insurgent strategy, terrorism, counterinsurgency, and postwar state coercion, with evidence for each rather than one moralized score.',
             citations: citations(['fanonWretchedEarth', 'gandhiHindSwaraj', 'kantPerpetualPeace'], ['sepColonialism', 'foreignPolicy']),
           },
@@ -5324,11 +5351,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['gandhiHindSwaraj', 'fanonWretchedEarth', 'duboisBlackReconstruction', 'cesaireDiscourseColonialism', 'nabucoAbolitionism', 'lockeSecondTreatise', 'andersonImaginedCommunities', 'kantPerpetualPeace', 'spinozaPolitical', 'lockeLetterToleration', 'marxEngelsManifesto'],
-      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020', 'suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020', 'unDecolonizationNo1Frelimo1974', 'frusMozambiqueLusaka1974', 'bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023'],
-      editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. This pass adds a bounded Mozambique/FRELIMO case for 1962–1990, separating movement and diplomatic evidence of independence from post-independence educational, socialist, party-state, and violence analyses. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
+      researchSourceIds: ['sepColonialism', 'sepNationalism', 'panAfricanism', 'foreignPolicy', 'vdem', 'sepReligionPolitics', 'sepSocialism', 'openTextbook', 'sepClimateJustice', 'cabralCulturePortuguese', 'gomesWomenLiberation', 'degrassiCabralSocionatures', 'cabralPartyPrinciples1965', 'dalaquaDemocraticFreedom2020', 'suezNationalizationDecree1956', 'frusNasserAnnouncement1956', 'nasserCanalUsers1956', 'salemNasserHegemony2020', 'unDecolonizationNo1Frelimo1974', 'frusMozambiqueLusaka1974', 'bavoCoelhoMozambiqueEducation2022', 'brandaoFrelimoViolence2023', 'vinesFrelimoDemocracy2023', 'bipanChandraIndiaStruggle1988', 'sarkarModernIndia1885-1947', 'brownModernIndia1994', 'austinIndianConstitution1966', 'ambedkarAnnihilationCaste1936'],
+      editorialNote: 'The entry treats anti-colonial liberation as a historically diverse family, not as a synonym for nationalism, socialism, armed struggle, or decolonial theory. This pass adds a bounded Mozambique/FRELIMO case for 1962–1990 and a bounded India case for 1905–1950, separating movement and diplomatic evidence of independence from anti-caste, constitutional, educational, socialist, party-state, and violence analyses. The six scores are didactic estimates of a composite profile and should not be assigned to a country or movement without time-, actor-, and institution-specific evidence.',
     },
     researchGaps: [
       'This pass adds a bounded Mozambique/FRELIMO case for 1962–1990 through a UN movement-statement witness, a FRUS diplomatic record, Portuguese educational history, Portuguese scholarship on violence, and Vines’s institutional chapter. Still add country-specific scholarship for Algeria, Ghana, India, Indonesia, Kenya, Angola, Guinea-Bissau, Brazil, the Caribbean, the Pacific, and Indigenous polities, with local historians and community reviewers where appropriate; compare the Mozambique sources with fuller movement, language, regional, gender, religious, customary-authority, and post-independence records.',
+      'This pass adds a bounded India case for 1905–1950 using two independent modern histories, Brown’s democracy study, Austin’s constitutional history, Gandhi and Ambedkar as primary intellectual witnesses, and the constitutional text. The full books, Constituent Assembly debates, Partition and regional records, Dalit/Adivasi, women’s, labor, religious, linguistic, princely-state, and post-1950 implementation scholarship remain open; the existing country-specific India gap is therefore not closed by this starter case.',
       'Expand the multilingual record with French, Portuguese, German, Arabic, Spanish, Hindi, Gujarati, Urdu, Bengali, Swahili, Amharic, and other relevant-language editions, translations, archives, and secondary scholarship.',
       'Add comparative research on women’s organizing, caste, class, labor, disability, sexuality, religion, minority protection, and Indigenous jurisdiction within liberation movements rather than treating the movement as a single voice.',
       'Add primary and scholarly sources on Nkrumah, Cabral, Senghor, Ambedkar, Nehru, Ho Chi Minh, Sukarno, José Rizal, Eduardo Mondlane, Amílcar Cabral, and other regional thinkers, preserving disagreements instead of creating one global canon.',

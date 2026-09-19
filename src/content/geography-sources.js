@@ -64,6 +64,18 @@ const sources = [
     description: 'Subtitle: Democratic confederalism, nationalism, and the crisis of capitalist modernity. Distinguishes rival projects in Kurdish politics and acknowledges tensions between an emancipatory programme and the exercise of power.',
   },
   {
+    id: 'gandhiHindSwarajAtlas',
+    label: 'M. K. Gandhi — Hind Swaraj / Indian Home Rule',
+    url: 'https://www.gandhiheritageportal.org/mahatma-gandhi-books/hind-swaraj-indian-opinion-hindi?source=atlas',
+    note: 'Primary-text link used as an intellectual witness for swaraj and anti-imperial self-rule. This geographic case uses original synthesis and keeps the edition, translation, and implementation limits visible; no passage or translation is republished.',
+  },
+  {
+    id: 'indiaConstitution1950Atlas',
+    label: 'India Code — Constitution of India',
+    url: 'https://legislative.gov.in/constitution-of-india/',
+    note: 'Official Government of India primary-text link for the constitutional framework, rights, directive principles, institutions, and amendment procedure; no complete article-by-article collation is claimed in this pass.',
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',

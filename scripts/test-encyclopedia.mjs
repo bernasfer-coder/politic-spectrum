@@ -2723,6 +2723,32 @@ assert.ok(mozambiqueExample?.citations.researchSourceIds.includes('bavoCoelhoMoz
 assert.match(mozambiqueExample.caveat, /not a current-country classification/, 'Mozambique example must not become a current-country claim');
 assert.match(antiColonialEntry.references.editorialNote, /bounded Mozambique\/FRELIMO case/, 'research boundary must remain visible in editorial metadata');
 assert.ok(antiColonialEntry.researchGaps.some((gap) => gap.includes('candidate selection, disciplinary practice')), 'independent institutional evidence must remain an explicit gap');
+const indiaHistoryTimeline = antiColonialEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1905–1950: Indian mass politics'));
+assert.ok(indiaHistoryTimeline, 'Indian political history must be dated as a bounded case');
+assert.ok(indiaHistoryTimeline.citations.researchSourceIds.includes('ambedkarAnnihilationCaste1936'), 'Indian timeline needs the anti-caste primary text');
+const indiaAntiColonialExample = antiColonialEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'Indian independence');
+assert.match(indiaAntiColonialExample.caveat, /not a current-country classification/, 'India example must not become a current-country claim');
+for (const [sourceId, evidenceRole, publicationDate] of [
+  ['bipanChandraIndiaStruggle1988', 'secondary', '1988'],
+  ['sarkarModernIndia1885-1947', 'secondary', '1983'],
+  ['brownModernIndia1994', 'secondary', '1994'],
+  ['austinIndianConstitution1966', 'secondary', '1966'],
+  ['ambedkarAnnihilationCaste1936', 'primary', '1936'],
+]) {
+  assert.ok(antiColonialEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an India case reference trail`);
+  assert.ok(JSON.stringify(antiColonialEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the India case`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, ['English']);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:anti-colonial-liberation'), `${sourceId} needs an encyclopedia backlink`);
+}
+assert.ok(antiColonialEntry.researchGaps.some((gap) => gap.startsWith('This pass adds a bounded India case')), 'India’s remaining archive and implementation gaps must remain explicit');
 
 const authoritarianCollectivistEntry = ENCYCLOPEDIA_ENTRIES['authoritarian-collectivist'];
 const authoritarianCollectivistProfile = ARCHETYPES.find(({ id }) => id === 'authoritarian-collectivist').profile;
