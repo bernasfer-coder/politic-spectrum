@@ -936,7 +936,10 @@ for (const [sourceId, role, date, languages] of [
   assert.equal(record.accessDate, '2026-09-17');
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+  const expectedPortugueseProfiles = sourceId === 'portugalConstitution1976Official'
+    ? ['encyclopedia:christian-democratic', 'geography:portugal-democratic-transition-constitutional-founding']
+    : ['encyclopedia:christian-democratic'];
+  assert.deepEqual(record.relationships.profileEntries, expectedPortugueseProfiles);
 }
 for (const [sourceId, role, date, languages, confidence] of [
   ['parliamentCdsConstitutionProject1975', 'primary', '1975', ['Portuguese'], 'high'],
@@ -957,7 +960,10 @@ for (const [sourceId, role, date, languages, confidence] of [
   assert.equal(record.review.confidence, confidence);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+  const expectedPortugueseRevisionProfiles = sourceId === 'portugalConstitutionalRevisionsOfficial'
+    ? ['encyclopedia:christian-democratic', 'geography:portugal-democratic-transition-constitutional-founding']
+    : ['encyclopedia:christian-democratic'];
+  assert.deepEqual(record.relationships.profileEntries, expectedPortugueseRevisionProfiles);
 }
 const portugalHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
 const portugalTimeline = portugalHistory.find(({ period }) => period.startsWith('1974–1989 — Portuguese'));

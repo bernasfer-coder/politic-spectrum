@@ -111,6 +111,30 @@ const sources = [
     description: 'An official documentary and archival publication about the Brazilian Constituent Assembly. It is used as a primary institutional locator, not as a complete record of every speech, amendment, social movement or implementation outcome.',
   },
   {
+    id: 'maxwellPortugueseDemocracy1995',
+    label: 'Kenneth Maxwell — The Making of Portuguese Democracy',
+    url: 'https://www.cambridge.org/core/books/the-making-of-portuguese-democracy/0C867CB2AC5BE5A81B1C1ED6DFCDD6DC',
+    note: 'Official Cambridge book record and introduction consulted for the dictatorship’s legacy, the 1974–1976 revolution, competing actors, decolonization, state crisis and the emergence and consolidation of democracy. The monograph’s complete chapters and archival citations were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Kenneth Maxwell'], institution: 'Cambridge University Press',
+    publicationDate: '1995', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length political history of democratic transition',
+    identifiers: { isbn: '9780521460774' },
+    description: 'A book-length English-language history of the making of Portuguese democracy. The publisher’s introduction presents the 1974–1976 revolution as central to the later democratic and constitutional settlement while warning against selective memory and retrospective simplification.',
+  },
+  {
+    id: 'rezolaPortugueseRevolution2024',
+    label: 'Maria Inácia Rezola — The Portuguese Revolution of 1974–1975: An Unexpected Path to Democracy',
+    url: 'https://academic.oup.com/liverpool-scholarship-online/book/61056',
+    note: 'Official Oxford Academic/Liverpool University Press book record and abstract consulted for the Armed Forces, political parties, mass social organizations, state authority, political justice, media, decolonization and the unexpected path from coup to democracy. The full monograph and its archival base were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Maria Inácia Rezola'], institution: 'Liverpool University Press / Oxford Academic',
+    publicationDate: '2024-01-19', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length history of the Portuguese Revolution',
+    identifiers: { doi: '10.3828/liverpool/9781789761832.001.0001', isbn: '9781789761832' },
+    description: 'A recent book-length study that links military, party and popular actors through archival, oral, written and government sources. Its abstract supports a bounded transition history rather than a claim that the revolution followed a single intentional route to liberal democracy.',
+  },
+  {
     id: 'klugConstitutingDemocracy2000',
     label: 'Heinz Klug — Constituting Democracy: Law, Globalism and South Africa’s Political Reconstruction',
     url: 'https://www.cambridge.org/core/books/constituting-democracy/E30A8E0CBB457AF6EBB0CB3F3884BCA7',
@@ -185,6 +209,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
   discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
     : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') ? 'South African constitutional law and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
+        : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},

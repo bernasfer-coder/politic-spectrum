@@ -24,6 +24,8 @@ import {
 
 const CACHE_KEY = 'politic-spectrum:questionnaire:v4';
 const BIBLIOGRAPHY_TOTAL = BIBLIOGRAPHY_RECORDS.length;
+const EUROPE_BIBLIOGRAPHY_COUNT = BIBLIOGRAPHY_RECORDS.filter(({ relationships }) => relationships.regions.includes('Europe')).length;
+const EUROPE_BIBLIOGRAPHY_PAGES = Math.ceil(EUROPE_BIBLIOGRAPHY_COUNT / 12);
 
 beforeEach(() => {
   window.localStorage.clear();
@@ -209,10 +211,10 @@ describe('primary user flows', () => {
     expect(screen.getByText(new RegExp(`1–12 of ${BIBLIOGRAPHY_TOTAL} matching · ${BIBLIOGRAPHY_TOTAL} total`, 'i'))).toBeInTheDocument();
 
     await user.click(screen.getByRole('checkbox', { name: 'Europe', exact: true }));
-    expect(screen.getByText(new RegExp(`1–12 of 33 matching · ${BIBLIOGRAPHY_TOTAL} total`, 'i'))).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`1–12 of ${EUROPE_BIBLIOGRAPHY_COUNT} matching · ${BIBLIOGRAPHY_TOTAL} total`, 'i'))).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Next →/i })).toBeEnabled();
     await user.click(screen.getByRole('button', { name: /Next →/i }));
-    expect(screen.getByText(/Page 2 of 3/i)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`Page 2 of ${EUROPE_BIBLIOGRAPHY_PAGES}`, 'i'))).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: /Clear filters/i }));
     await screen.findByText(new RegExp(`1–12 of ${BIBLIOGRAPHY_TOTAL} matching · ${BIBLIOGRAPHY_TOTAL} total`, 'i'));
