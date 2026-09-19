@@ -6920,19 +6920,19 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: 0,
         label: 'Civic inclusion with a conformity risk',
         explanation: 'Equal citizenship and common legal status can support inclusion across ancestry, religion, and language. Yet a state may define “civic values” narrowly, require cultural assimilation, or treat minority practices as insufficiently national. Civic membership is consequently compatible with both pluralist inclusion and coercive uniformity; the score should not be read as a fixed progressive or traditionalist position.',
-        citations: citations(['millOnLiberty', 'renanNation', 'tocquevilleDemocracy'], ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship']),
+        citations: citations(['millOnLiberty', 'renanNation', 'tocquevilleDemocracy'], ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'basicLawGermany1949', 'kronenbergConstitutionalPatriotism2009']),
       },
       authority: {
         score: 18,
         label: 'Constitutional and institution-centered authority',
         explanation: 'The profile normally values a capable state, a common legal order, citizenship administration, and institutions able to secure public membership and self-government. It becomes liberal-democratic only when authority is limited by rights, independent courts, accountable elections, lawful opposition, and equal protection. Civic language by itself does not prevent executive domination or exclusion.',
-        citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'tocquevilleDemocracy'], ['vdem', 'coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism']),
+        citations: citations(['lockeSecondTreatise', 'millOnLiberty', 'tocquevilleDemocracy'], ['vdem', 'coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism', 'basicLawGermany1949', 'mullerScheppeleConstitutionalPatriotism2008']),
       },
       identity: {
         score: -58,
         label: 'Strongly civic and inclusive rather than ethnic',
         explanation: 'National belonging is presented primarily as shared citizenship, public principles, institutions, and participation in a common political life. This is a strong identity commitment, not the absence of nationalism. A civic nation may still police its borders, privilege a majority language, exclude non-citizens, or reinterpret civic membership through inherited culture, so the civic claim must be tested against law and practice.',
-        citations: citations(['renanNation', 'andersonImaginedCommunities', 'tocquevilleDemocracy'], ['sepNationalism', 'oxfordConstitutionalPatriotism', 'sepColonialism']),
+        citations: citations(['renanNation', 'andersonImaginedCommunities', 'tocquevilleDemocracy'], ['sepNationalism', 'oxfordConstitutionalPatriotism', 'sepColonialism', 'basicLawGermany1949', 'kronenbergConstitutionalPatriotism2009', 'mullerScheppeleConstitutionalPatriotism2008']),
       },
       foreign: {
         score: 10,
@@ -6944,7 +6944,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: 15,
         label: 'Mostly secular public-law orientation',
         explanation: 'Civic membership is usually justified through citizenship and public law rather than a shared revelation or clerical authority, which gives the profile a mild secular-side placement. Civic nationalism can nevertheless include religious civil traditions, established churches, or religiously framed republican ideals. The relevant test is whether equal citizenship and freedom of conscience remain available to believers and non-believers alike.',
-        citations: citations(['lockeLetterToleration', 'millOnLiberty', 'renanNation'], ['sepReligionPolitics', 'coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism']),
+        citations: citations(['lockeLetterToleration', 'millOnLiberty', 'renanNation'], ['sepReligionPolitics', 'coeDemocraticCitizenship', 'oxfordConstitutionalPatriotism', 'basicLawGermany1949', 'kronenbergConstitutionalPatriotism2009']),
       },
     },
     sections: [
@@ -6966,6 +6966,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Civic nationalism also differs from constitutional patriotism. They overlap when both value political membership and public principles, but constitutional patriotism is commonly presented as a more explicitly post-national or constitution-centered form of allegiance that seeks solidarity without treating national culture as the primary object of loyalty. Treating the two as synonyms would erase an important debate about nationalism, cosmopolitanism, and supranational citizenship.',
             citations: citations(['renanNation', 'kantPerpetualPeace'], ['oxfordConstitutionalPatriotism', 'sepNationalism']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'Postwar German constitutional patriotism supplies a bounded case for the distinction. Müller and Scheppele describe a form of political attachment centered on liberal-democratic constitutional norms and procedures, while Kronenberg’s German account follows the concept from Sternberger and Habermas through reunification, European integration, migration and Leitkultur debates. The Federal Republic’s Basic Law provides primary evidence of rights, democracy, federalism and popular sovereignty, but its text does not by itself prove equal citizenship, successful inclusion or a single national identity.',
+            citations: citations([], ['mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009', 'basicLawGermany1949']),
           },
         ],
       },
@@ -6992,6 +6997,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Civic nationalism is not automatically democratic, liberal, secular, peaceful, or economically egalitarian. A military dictatorship can use citizenship language; a welfare state can exclude non-citizens; a republic can hold colonies; and a constitutional order can restrict opposition. Those properties must be scored independently on this project’s six dimensions rather than inferred from the label.',
             citations: citations(['renanNation', 'andersonImaginedCommunities', 'millOnLiberty'], ['sepNationalism', 'sepColonialism', 'vdem', 'foreignPolicy', 'sepReligionPolitics']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The German constitutional case shows why a constitutional text and a civic-national interpretation must remain separate. The Basic Law combines human dignity, equality, freedom of faith, democratic and social federalism, popular sovereignty, party regulation, European integration and equal access to public office; these are formal commitments whose historical application requires separate evidence on citizenship law, migration, minorities, political parties, courts and administrative practice.',
+            citations: citations([], ['basicLawGermany1949']),
           },
           {
             type: 'paragraph',
@@ -7041,8 +7051,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             period: 'After 1945: constitutional patriotism and human-rights constraints',
-            text: 'After fascism, world war, and genocide, some theorists sought political loyalty grounded in democratic and universal constitutional principles rather than an ethnic or mythic national culture. This debate informed West German constitutional patriotism and later discussions of European integration, but it remains contested: constitutional language can become a new orthodoxy, and formal rights do not automatically create equal belonging.',
-            citations: citations(['kantPerpetualPeace', 'renanNation'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem']),
+            text: 'After fascism, world war, and genocide, some theorists sought political loyalty grounded in democratic and universal constitutional principles rather than an ethnic or mythic national culture. Müller and Scheppele locate constitutional patriotism most clearly in postwar West Germany and distinguish it from liberal nationalism, traditional republican patriotism and cosmopolitanism. Kronenberg’s German account follows the later debate through reunification, European integration, migration and Leitkultur controversies. The Basic Law supplies formal rights and democratic-federal principles, but the constitutional text and the intellectual ideal do not by themselves demonstrate equal belonging or successful implementation.',
+            citations: citations(['kantPerpetualPeace', 'renanNation'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'vdem', 'mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009', 'basicLawGermany1949']),
           },
           {
             period: 'Decolonization to the present: plural, postcolonial, and migrant citizenship',
@@ -7073,8 +7083,14 @@ export const ENCYCLOPEDIA_ENTRIES = {
               {
                 label: 'Constitutional patriotism',
                 distinction: 'Grounds political attachment primarily in universalist constitutional principles and democratic practices rather than national culture; it may be designed for plural or supranational polities.',
-                relation: 'A close neighbor and sometimes a proposed successor to civic nationalism, but not a synonym: it deliberately questions whether the nation should remain the main object of loyalty.',
-                citations: citations(['kantPerpetualPeace', 'renanNation'], ['oxfordConstitutionalPatriotism', 'sepNationalism']),
+                relation: 'A close neighbor and sometimes a proposed successor to civic nationalism, but not a synonym: its postwar German formation deliberately questions whether national culture should remain the main object of loyalty. The concept remains disputed over abstraction, democratic commitment, multicultural inclusion and the risk of turning constitutional loyalty into a new conformity test.',
+                citations: citations(['kantPerpetualPeace', 'renanNation'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009', 'basicLawGermany1949']),
+              },
+              {
+                label: 'Postwar German constitutional patriotism',
+                distinction: 'A historically situated form of civic attachment organized around the Federal Republic’s democratic constitutional order, rights, federal institutions and critical memory of National Socialism, rather than an unqualified ethnic or romantic national identity.',
+                relation: 'A major historical case of constitutional patriotism and a close civic-national neighbor, but not a timeless country label. Müller and Scheppele present the concept as potentially transferable beyond Germany, while Kronenberg records its post-reunification movement toward a more nationally and culturally situated constitutional patriotism.',
+                citations: citations([], ['mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009', 'basicLawGermany1949']),
               },
               {
                 label: 'Assimilationist civic nationalism',
@@ -7139,7 +7155,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Jürgen Habermas and constitutional-patriotism theorists',
                 role: 'A post-war German intellectual tradition that sought political solidarity around democratic constitutional principles rather than ethnic descent or a single inherited national culture.',
                 caveat: 'Constitutional patriotism is a neighboring and partly post-national concept, not simply the most advanced version of civic nationalism. Its critics question whether constitutional norms can avoid cultural hierarchy or become a coercive civil religion.',
-                citations: citations(['renanNation', 'kantPerpetualPeace'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship']),
+                citations: citations(['renanNation', 'kantPerpetualPeace'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009']),
+              },
+              {
+                name: 'Dolf Sternberger',
+                role: 'German political thinker associated with coining the term constitutional patriotism in the late 1970s and grounding patriotic attachment in a democratic constitutional order.',
+                caveat: 'Sternberger’s concept is not identical to Habermas’s later, more post-national interpretation. The German debate also includes national, historical and cultural sources of solidarity, and the term does not establish that the Federal Republic’s institutions treated all residents equally.',
+                citations: citations([], ['mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009']),
               },
             ],
           },
@@ -7182,6 +7204,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['kantPerpetualPeace', 'andersonImaginedCommunities'], ['oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepNationalism']),
               },
               {
+                name: 'Federal Republic of Germany: Basic Law and postwar constitutional identity',
+                period: 'Germany, 1949–present; interpretation and implementation vary by period',
+                match: 'A documented constitutional design centered on human dignity, equal rights, democratic and social federalism, popular sovereignty, party regulation, federal institutions and European integration. It is a primary-text case for studying constitutional membership and postwar civic attachment.',
+                caveat: 'The Basic Law is not itself proof of a civic-national consensus or equal citizenship in practice. Migration, naturalization, minority treatment, reunification, party restrictions, memory politics and the tension between universal rights and national membership require separate historical and empirical evidence.',
+                citations: citations([], ['basicLawGermany1949', 'mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009']),
+              },
+              {
                 name: 'Anti-colonial and postcolonial citizenship projects',
                 period: 'Africa, Asia, the Caribbean, Latin America, and other decolonizing contexts, nineteenth century–present',
                 match: 'Movements have used equal national citizenship and self-determination to challenge imperial subjecthood and racial hierarchy while building states with diverse populations.',
@@ -7222,6 +7251,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The German constitutional-patriotism case adds a postwar safeguard. Constitutional attachment can reject ethnic mythology and protect human dignity, equality, religious freedom and democratic procedures, but the concept has also been criticized as too abstract, too specifically German, or vulnerable to being used as a loyalty test against minorities and dissenters. The Basic Law’s formal commitments, Müller and Scheppele’s conceptual account, and Kronenberg’s history of reunification and Leitkultur debates should therefore be read together; none supplies a complete measure of lived inclusion or a universal country classification.',
+            citations: citations([], ['basicLawGermany1949', 'mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009']),
+          },
+          {
+            type: 'paragraph',
             text: 'The second criticism is hidden exclusion. Universal citizenship may coexist with colonial subjecthood, racialized policing, gender restrictions, unequal naturalization, statelessness, disenfranchisement, or welfare rights tied to status. A civic vocabulary should therefore be checked against equal protection, access to documentation, voting rights, due process, language access, and the treatment of people who live under the state’s authority without full citizenship.',
             citations: citations(['nabucoAbolitionism', 'millOnLiberty', 'tocquevilleDemocracy'], ['sepColonialism', 'vdem', 'coeDemocraticCitizenship']),
           },
@@ -7255,8 +7289,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['renanNation', 'andersonImaginedCommunities', 'millOnLiberty', 'tocquevilleDemocracy', 'lockeSecondTreatise', 'lockeLetterToleration', 'kantPerpetualPeace', 'constantLibertyModerns', 'nabucoAbolitionism'],
-      researchSourceIds: ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism', 'sepLiberalism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'openTextbook', 'panAfricanism', 'algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus', 'direcheStoraExhibition2022'],
-      editorialNote: 'The entry treats civic nationalism as a disputed family resemblance organized around the claimed basis of national membership. It distinguishes civic nationalism from constitutional patriotism, ethnic nationalism, patriotism, liberalism, and cosmopolitanism, and treats country examples as partial, dated, and internally contested. Scores are didactic composites, not empirical measurements of every movement, government, or citizen using the label.',
+      researchSourceIds: ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism', 'sepLiberalism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'openTextbook', 'panAfricanism', 'algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus', 'direcheStoraExhibition2022', 'basicLawGermany1949', 'kronenbergConstitutionalPatriotism2009', 'mullerScheppeleConstitutionalPatriotism2008'],
+      editorialNote: 'The entry treats civic nationalism as a disputed family resemblance organized around the claimed basis of national membership. It distinguishes civic nationalism from constitutional patriotism, ethnic nationalism, patriotism, liberalism, and cosmopolitanism, and treats country examples as partial, dated, and internally contested. The German postwar layer uses the Basic Law as primary constitutional design evidence and Müller, Scheppele and Kronenberg as bounded conceptual and public-intellectual interpretations; it does not infer uniform German implementation or revise any six-axis coordinate. Scores are didactic composites, not empirical measurements of every movement, government, or citizen using the label.',
     },
     researchGaps: [
       'Add French-language scholarship on republican universalism, laïcité, assimilation, colonial citizenship, the Dreyfus era, overseas departments, and the postcolonial critique of civic nationalism.',
@@ -7269,6 +7303,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'The 1865–1870 Algerian case only partly addresses the French-language gap: add Algerian scholarship, administrative files, court decisions, gender-specific consequences, and evidence on applications and refusals; collate the transcriptions with original publications before using exact quotations.',
       'Research the 1871 electoral-documentation restrictions and subsequent changes, including the 1881 indigénat regime and reforms of 1919, 1944, and 1946, without projecting later territorial coverage or citizenship rules backward onto 1870.',
       'Resolve the existing social-axis magnitude mismatch between this article (0) and its reference card (−5) through a separate calibration review. The religion sign was aligned to the existing secular-positive card (+15); no historical population was scored in this pass.',
+      'Read the complete German Basic Law in German alongside constitutional-court decisions, citizenship statutes, party-ban jurisprudence, migration policy and lived-experience research. The present article uses selected formal provisions as design evidence and does not establish equal implementation, a settled national identity, or a contemporary country score.',
+      'Collate the original Sternberger and Habermas texts and the full German-language debate around Verfassungspatriotismus, reunification, memory politics, migration and Leitkultur. Müller and Scheppele and Kronenberg establish a bounded conceptual and public-intellectual map, but do not settle whether constitutional patriotism is post-national, nationally grounded, transferable, or vulnerable to exclusionary loyalty tests.',
     ],
   },
   'ethnic-nationalist': {

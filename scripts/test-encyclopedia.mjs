@@ -3365,6 +3365,33 @@ for (const [sourceId, evidenceRole] of [
   assert.equal(record.directQuote, null, `${sourceId} must not introduce an unreviewed quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:civic-nationalist'), `${sourceId} needs an encyclopedia backlink`);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['basicLawGermany1949', 'primary', '1949-05-23', ['German', 'English translation'], 'high'],
+  ['kronenbergConstitutionalPatriotism2009', 'secondary', '2009-06-29', ['German'], 'high'],
+  ['mullerScheppeleConstitutionalPatriotism2008', 'secondary', '2008-01-01', ['English'], 'high'],
+]) {
+  assert.ok(civicEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a civic-nationalist reference trail`);
+  assert.ok(JSON.stringify(civicEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:civic-nationalist'), `${sourceId} needs an encyclopedia backlink`);
+}
+const germanConstitutionHistory = civicEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(germanConstitutionHistory.find(({ period }) => period.startsWith('After 1945:'))?.citations.researchSourceIds.includes('basicLawGermany1949'), 'the postwar German timeline needs primary constitutional evidence');
+const germanVariant = civicEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Postwar German constitutional patriotism'));
+assert.ok(germanVariant, 'the postwar German constitutional-patriotism variant must remain distinct');
+const germanExample = civicEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Federal Republic of Germany:'));
+assert.match(germanExample.caveat, /not itself proof of a civic-national consensus/);
+assert.ok(civicEntry.researchGaps.some((gap) => gap.startsWith('Read the complete German Basic Law')));
+assert.ok(civicEntry.researchGaps.some((gap) => gap.startsWith('Collate the original Sternberger')));
 const civicTimeline = civicEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(civicTimeline.find(({ period }) => period.startsWith('1865:'))?.citations.researchSourceIds.includes('algeriaSenatusConsulte1865'), 'the 1865 rules need contemporaneous legal evidence');
 assert.ok(civicTimeline.find(({ period }) => period.startsWith('1870:'))?.citations.researchSourceIds.includes('algeriaCremieuxDecrees1870'), 'the 1870 routes need distinct legal evidence');
