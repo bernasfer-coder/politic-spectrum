@@ -5620,25 +5620,25 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -96,
         label: 'Extremely strongly market-oriented',
         explanation: 'Private ownership, contract, competition, and entrepreneurial coordination are treated as the default institutions for production and distribution, including functions usually assigned to the state. The profile is more radical than classical liberalism because it rejects taxation and public economic administration in principle, not only excessive regulation.',
-        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge'], ['sepLibertarianism', 'sepAnarchism', 'sepLiberalism']),
+        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge'], ['sepLibertarianism', 'sepAnarchism', 'sepLiberalism', 'jensenRepurposingMises2022', 'laymanSpoonerLibertarianJanus2020']),
       },
       social: {
         score: 10,
         label: 'Mixed: voluntary pluralism with property-based limits',
         explanation: 'The tradition generally favors freedom of association, speech, lifestyle, religion, and exit from unwanted institutions. Critics point out that private ownership can permit exclusion, dependency, employer domination, or unequal access to basic goods; a formal ban on state coercion does not settle every social-power question.',
-        citations: citations(['nozickASU', 'millOnLiberty', 'rothbardForNewLiberty'], ['sepLibertarianism', 'sepAnarchism', 'sepLibertyPositiveNegative']),
+        citations: citations(['nozickASU', 'millOnLiberty', 'rothbardForNewLiberty'], ['sepLibertarianism', 'sepAnarchism', 'sepLibertyPositiveNegative', 'laymanSpoonerLibertarianJanus2020', 'goglozaSpoonerConstitution2016']),
       },
       authority: {
         score: -98,
         label: 'Extremely anti-state / polycentric authority',
         explanation: 'The defining commitment is opposition to a compulsory territorial monopoly of coercion. Courts, security, arbitration, infrastructure, and rules are expected to arise through contract, competition, insurance, private association, or local covenant; the profile must still explain how coercion by private actors is prevented and how dissenters can exit.',
-        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'lockeSecondTreatise'], ['sepAnarchism', 'sepLibertarianism', 'davidFriedmanMachinery2014']),
+        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'lockeSecondTreatise'], ['sepAnarchism', 'sepLibertarianism', 'davidFriedmanMachinery2014', 'jensenRepurposingMises2022', 'laymanSpoonerLibertarianJanus2020', 'goglozaSpoonerConstitution2016']),
       },
       identity: {
         score: 30,
         label: 'Strongly individualist / weakly internationalist',
         explanation: 'Individual choice, voluntary association, and the right to leave a community take priority over compulsory national unity. Private communities may develop strong cultural or religious identities, and property jurisdictions can still create boundaries; anti-nationalism is therefore a tendency rather than a promise of cosmopolitan equality.',
-        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'kantPerpetualPeace'], ['sepLibertarianism', 'sepAnarchism', 'sepNationalism']),
+        citations: citations(['rothbardForNewLiberty', 'nozickASU', 'kantPerpetualPeace'], ['sepLibertarianism', 'sepAnarchism', 'sepNationalism', 'goglozaSpoonerConstitution2016']),
       },
       foreign: {
         score: 76,
@@ -5672,6 +5672,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Proposals for future institutions and interpretations of historical societies need different evidence. Medieval Iceland is examined below as a limited comparison, not as a society whose inhabitants shared this modern label or the website’s six-axis coordinates.',
             citations: citations([], ['davidFriedmanMachinery2014', 'byockFeuding2003', 'thingvellirLawCouncil']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The modern label also has a specific intellectual history. Jensen argues that Rothbard repurposed Mises’s economics into anarchocapitalism in response to different political conditions, including militarism and the egalitarian counterculture, rather than simply continuing Mises’s limited-state position. This is a scholarly interpretation of formation and context, not evidence that every Austrian economist, libertarian or anti-state writer held the label.',
+            citations: citations([], ['jensenRepurposingMises2022']),
           },
         ],
       },
@@ -5714,6 +5719,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Molinari’s 1849 essay proposes competition in security itself, not merely private contractors serving an exclusive government. Customers would compare protection, reliability and price, accept contractual penalties and investigative conditions, and pay premiums. His expectation that customer choice would restrain abusive providers is an argument to assess, not an observed result (sections II and X).',
             citations: citations([], ['molinariSecurity1849French']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Lysander Spooner is a significant precursor but not a straightforward synonym. Layman describes an early Spooner who defended a form of liberal republicanism and a later Spooner who developed a nearly anarcho-capitalist natural-rights position; Gogłoza instead emphasizes the movement from antislavery constitutionalism to abolition of the Constitution and the social compact. The trajectory supports a dated intellectual genealogy, not retroactive reclassification of Spooner’s entire career or erasure of his abolitionist context.',
+            citations: citations([], ['laymanSpoonerLibertarianJanus2020', 'goglozaSpoonerConstitution2016']),
+          },
         ],
       },
       {
@@ -5731,6 +5741,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations([], ['hartParisSchool2019']),
           },
           {
+            period: '1850s–1887: Spooner’s abolitionist and natural-rights trajectory',
+            text: 'Spooner’s intellectual path connects antislavery constitutionalism, private enterprise, natural-law reasoning and later hostility to the legitimacy of political constitutions. Layman distinguishes his early liberal-republican position from the mature right-libertarian argument, while Gogłoza emphasizes the transition from arguing that slavery was unconstitutional to demanding abolition of the Constitution itself. Spooner is therefore best treated as a contested precursor whose career changed over time, not as an uncomplicated nineteenth-century anarcho-capitalist.',
+            citations: citations([], ['laymanSpoonerLibertarianJanus2020', 'goglozaSpoonerConstitution2016']),
+          },
+          {
             period: 'Late nineteenth–early twentieth centuries: Austrian economics and the knowledge problem',
             text: 'Austrian economic arguments about dispersed knowledge, calculation, entrepreneurial discovery, and the limits of central planning later influenced market-libertarian reasoning. Mises and Hayek were not anarcho-capitalists in the strict sense: their arguments generally retained a role for a limited state. Their inclusion clarifies an economic influence without converting classical or Austrian liberalism into stateless capitalism.',
             citations: citations(['hayekKnowledge'], ['sepLibertarianism', 'sepLiberalism']),
@@ -5739,6 +5754,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1940s–1960s: modern right-libertarian formation',
             text: 'Postwar American libertarian debate combined natural-rights language, anti-statism, Austrian economics, and strong property claims. Murray Rothbard developed a systematic private-property anarchist argument and helped establish the modern anarcho-capitalist vocabulary. The movement emerged in opposition both to welfare-state expansion and to socialist or communist state planning.',
             citations: citations(['rothbardForNewLiberty', 'hayekKnowledge'], ['sepLibertarianism', 'sepAnarchism']),
+          },
+          {
+            period: '1950s–1970s: Rothbard’s distinct appropriation of Austrian economics',
+            text: 'Jensen’s history distinguishes Mises’s response to interwar socialism and his continued role for a limited state from Rothbard’s later use of Misesian economics to construct a more radical private-property anarchism. The account also places Rothbard’s anti-democratic market argument in the political conflicts of the postwar United States rather than treating anarchocapitalism as an inevitable conclusion of Austrian economics. This is an attributed historical interpretation, not a settled explanation of every faction or author.',
+            citations: citations([], ['jensenRepurposingMises2022']),
           },
           {
             period: '1970s: the minimal-state challenge',
@@ -5788,6 +5808,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations([], ['longMolinariLegacy2013']),
               },
               {
+                label: 'Spoonerian abolitionist-individualist precursor',
+                distinction: 'A nineteenth-century rights-and-property tradition that moved from antislavery constitutional argument toward rejection of political constitutions and broad state authority, while retaining a distinct historical vocabulary and trajectory.',
+                relation: 'Spooner helps explain the genealogy of private-property anarchism but should not be folded wholesale into modern anarcho-capitalism. Layman’s “nearly anarcho-capitalist” interpretation and Gogłoza’s abolitionist-to-anarchist account are secondary readings of a changing career, not proof of one timeless doctrine.',
+                citations: citations([], ['laymanSpoonerLibertarianJanus2020', 'goglozaSpoonerConstitution2016']),
+              },
+              {
                 label: 'Minarchism',
                 distinction: 'Retains a very limited state for courts, defense, and protection against force, theft, and fraud while restricting its economic and social functions.',
                 relation: 'The nearest libertarian neighbor but not anarcho-capitalism: a compulsory territorial authority remains legitimate in principle.',
@@ -5833,6 +5859,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'Major modern theorist of private-property anarchism, self-ownership, non-aggression, and market provision of law and security.',
                 caveat: 'Rothbard provides the clearest primary statement for this profile, but a theorist’s proposal is not evidence that a stateless market society has existed or that its institutions would resolve every conflict.',
                 citations: citations(['rothbardForNewLiberty'], ['sepAnarchism', 'sepLibertarianism']),
+              },
+              {
+                name: 'Lysander Spooner',
+                role: 'Nineteenth-century American lawyer, abolitionist and individualist whose later natural-rights arguments became an important precursor in histories of private-property anarchism.',
+                caveat: 'Spooner’s career changed from antislavery constitutionalism and liberal republicanism toward anarchist constitutional criticism. Layman and Gogłoza provide attributed interpretations; Spooner did not simply use the modern anarcho-capitalist label, and his historical context cannot be reduced to later right-libertarian doctrine.',
+                citations: citations([], ['laymanSpoonerLibertarianJanus2020', 'goglozaSpoonerConstitution2016']),
               },
               {
                 name: 'Gustave de Molinari — the 1849 security proposal',
@@ -5945,6 +5977,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The intellectual genealogy also requires a historical safeguard. Spooner’s antislavery constitutional arguments and later anarchist critique cannot be used selectively to create a clean ancestor of modern anarcho-capitalism. Layman’s account emphasizes a change from liberal republicanism to a nearly anarcho-capitalist position, while Gogłoza keeps abolitionism, slavery, constitutional legitimacy and the social compact in view. Jensen’s history likewise distinguishes Rothbard’s later reconstruction from Mises’s own limited-state commitments. The label should therefore identify arguments and periods, not erase internal change or imply that every predecessor endorsed the modern programme.',
+            citations: citations([], ['laymanSpoonerLibertarianJanus2020', 'goglozaSpoonerConstitution2016', 'jensenRepurposingMises2022']),
+          },
+          {
+            type: 'paragraph',
             text: 'A second criticism concerns public goods and externalities. National defense, epidemic control, climate stability, basic infrastructure, open knowledge, and protection of people who cannot pay are difficult to provide through ordinary consumer contracts alone. Voluntary charity or insurance may help, but the theory must explain free-riding, universal access, coordination across jurisdictions, and harms imposed on people who never agreed to a provider’s rules.',
             citations: citations(['hayekKnowledge', 'millOnLiberty', 'kantPerpetualPeace'], ['sepLibertarianism', 'sepAnarchism', 'foreignPolicy', 'sepClimateJustice']),
           },
@@ -5984,8 +6021,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['rothbardForNewLiberty', 'nozickASU', 'hayekKnowledge', 'lockeSecondTreatise', 'millOnLiberty', 'kantPerpetualPeace', 'lockeLetterToleration', 'spinozaPolitical', 'morgenthauRealism'],
-      researchSourceIds: ['sepAnarchism', 'sepLibertarianism', 'sepLiberalism', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'foreignPolicy', 'sepClimateJustice', 'openTextbook', 'davidFriedmanMachinery2014', 'byockFeuding2003', 'thingvellirLawCouncil', 'molinariSecurity1849French', 'hartParisSchool2019', 'longMolinariLegacy2013'],
-      editorialNote: 'The profile describes a radical right-libertarian proposal, not an observed country or a verdict on all anarchism. It distinguishes abolition of the state from deregulation, market orientation from private law, and voluntary association from the empirical ability to exit unequal or coercive arrangements.',
+      researchSourceIds: ['sepAnarchism', 'sepLibertarianism', 'sepLiberalism', 'sepLibertyPositiveNegative', 'sepReligionPolitics', 'foreignPolicy', 'sepClimateJustice', 'openTextbook', 'davidFriedmanMachinery2014', 'jensenRepurposingMises2022', 'laymanSpoonerLibertarianJanus2020', 'goglozaSpoonerConstitution2016', 'byockFeuding2003', 'thingvellirLawCouncil', 'molinariSecurity1849French', 'hartParisSchool2019', 'longMolinariLegacy2013'],
+      editorialNote: 'The profile describes a radical right-libertarian proposal, not an observed country or a verdict on all anarchism. It distinguishes abolition of the state from deregulation, market orientation from private law, and voluntary association from the empirical ability to exit unequal or coercive arrangements. The Spooner and Rothbard additions are bounded intellectual-history layers: Layman and Gogłoza distinguish Spooner’s changing abolitionist and natural-rights arguments, while Jensen distinguishes Rothbard’s later reconstruction of Mises from Mises’s limited-state position. These sources do not establish a country match, implementation, or new six-axis coordinates.',
     },
     researchGaps: [
       'Add primary works and scholarly debate on David Friedman, Hans-Hermann Hoppe, Bruce Benson, Linda and Morris Tannehill, Lysander Spooner, Benjamin Tucker, and mutualist critics, recording where each author does or does not fit the label.',
@@ -5998,6 +6035,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Test the transferability of historically specific cooperation and enforcement mechanisms without treating saga narratives as a representative violence sample. Reconcile the Commonwealth’s ending dates across institutional changes rather than assigning a single causal explanation to its collapse.',
       'Collate Molinari’s 1849 journal printing, Les Soirées and later writings before resolving changes in his position or direct influence on subsequent authors. Extend the selected Hart and Long readings, including competing interpretations of collective consumption and government contracting.',
       'Research how Molinari’s racial, gender and class hierarchies interacted with his account of liberty, using dated primary texts and specialist criticism. His security proposal alone does not establish equal rights, affordable access, effective exit or safeguards against provider collusion.',
+      'Read Spooner’s original abolitionist, constitutional and natural-rights works in reliable editions, then compare them with Layman and Gogłoza in their complete forms. The present sources establish a bounded, changing precursor genealogy, not a complete account of Spooner’s property theory, racial politics, labor views, legal proposals, reception, or relationship to modern anarcho-capitalism.',
+      'Read Jensen’s complete article alongside Mises, Rothbard and later Austrian and libertarian scholarship in the original editions. The current abstract and metadata sharpen the distinction between Mises’s limited-state theory and Rothbard’s anarchocapitalist reconstruction, but do not settle Rothbard’s chronology, anti-democratic claims, movement networks, or the relation between economic theory and political strategy.',
     ],
   },
   'anarcho-communist': {

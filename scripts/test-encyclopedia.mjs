@@ -2300,6 +2300,34 @@ for (const [sourceId, evidenceRole, publicationDate, language] of [
   assert.equal(record.directQuote, null);
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anarcho-capitalist'], `${sourceId} must stay within this entry`);
 }
+for (const [sourceId, publicationDate, languages, confidence] of [
+  ['jensenRepurposingMises2022', '2022', ['English'], 'high'],
+  ['laymanSpoonerLibertarianJanus2020', '2020-07-23', ['English'], 'high'],
+  ['goglozaSpoonerConstitution2016', '2016-10-13', ['English abstract; full article language not independently reviewed'], 'medium'],
+]) {
+  assert.ok(molinariEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an anarcho-capitalist reference trail`);
+  assert.ok(JSON.stringify(molinariEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, 'secondary');
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anarcho-capitalist'], `${sourceId} must stay within this entry’s research pass`);
+}
+const spoonerHistory = molinariEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(spoonerHistory.find(({ period }) => period.startsWith('1850s–1887: Spooner'))?.citations.researchSourceIds.includes('laymanSpoonerLibertarianJanus2020'), 'Spooner’s dated precursor history must remain visible');
+const spoonerVariant = molinariEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Spoonerian abolitionist-individualist'));
+assert.ok(spoonerVariant, 'Spooner must remain distinct from the modern anarcho-capitalist label');
+const spoonerPerson = molinariEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name === 'Lysander Spooner');
+assert.match(spoonerPerson.caveat, /did not simply use the modern anarcho-capitalist label/);
+assert.ok(molinariEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The intellectual genealogy also requires a historical safeguard')));
+assert.ok(molinariEntry.researchGaps.some((gap) => gap.startsWith('Read Spooner’s original abolitionist')));
+assert.ok(molinariEntry.researchGaps.some((gap) => gap.startsWith('Read Jensen’s complete article')));
 const molinariPrimary = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-molinariSecurity1849French');
 const hartParisSchool = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-hartParisSchool2019');
 const longMolinari = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-longMolinariLegacy2013');
