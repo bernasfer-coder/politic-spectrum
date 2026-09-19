@@ -1805,6 +1805,19 @@ for (const [sourceId, evidenceRole, publicationDate, confidence] of [
 const nationalityStatute = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-reichNationality1913');
 const citizenshipPaper = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-gosewinkelCitizenship2008');
 const alexopoulouEssay = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-alexopoulouRacism2018');
+const creponEthnicQuestion = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-creponGRECEEthnicQuestion2010French');
+assert.ok(nationalityEntry.references.researchSourceIds.includes('creponGRECEEthnicQuestion2010French'));
+assert.ok(JSON.stringify(nationalityEntry.sections).includes('creponGRECEEthnicQuestion2010French'));
+assert.equal(creponEthnicQuestion.evidenceRole, 'secondary');
+assert.equal(creponEthnicQuestion.publicationDate, '2010');
+assert.equal(creponEthnicQuestion.accessDate, '2026-09-19');
+assert.equal(creponEthnicQuestion.review.confidence, 'medium');
+assert.deepEqual(creponEthnicQuestion.languages, ['French']);
+assert.equal(creponEthnicQuestion.publicationStatus, 'link-only');
+assert.equal(creponEthnicQuestion.directQuote, null);
+assert.deepEqual(creponEthnicQuestion.relationships.profileEntries, ['encyclopedia:ethnic-nationalist']);
+const creponVariant = nationalityEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Maurrassian and GRECE'));
+assert.ok(creponVariant, 'the bounded French ethnocultural variant must remain visible');
 assert.match(nationalityStatute.description, /31 July publication.*1 January 1914 commencement/, 'statute, publication and commencement dates must remain distinct');
 assert.match(nationalityStatute.note, /facsimile text was not visually collated/);
 assert.match(citizenshipPaper.note, /Printed pp\. 4 and 6–7 \(PDF pages 8 and 10–11\)/);
@@ -1819,6 +1832,7 @@ assert.match(nationalityBoundary.text, /All six scores remain unchanged/);
 for (const { id } of DIMENSIONS) assert.equal(nationalityEntry.dimensionInterpretations[id].score, ARCHETYPES.find(({ id: profileId }) => profileId === 'ethnic-nationalist').profile[id]);
 assert.ok(nationalityEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1913 transcription')));
 assert.ok(nationalityEntry.researchGaps.some((gap) => gap.startsWith('Read the full Gosewinkel 2008 paper')));
+assert.ok(nationalityEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Sylvain Crépon')));
 
 const ethiopiaEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
 for (const [sourceId, evidenceRole, publicationDate, language, confidence] of [

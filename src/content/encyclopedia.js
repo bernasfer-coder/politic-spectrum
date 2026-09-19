@@ -7675,6 +7675,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'A French case study by Sylvain Crépon on GRECE and the ethnic question distinguishes, in schematic ideal-typical terms, an inherited and organic conception of nationality associated with the Maurrassian tradition from a republican conception centered on citizenship, rights, and duties. This helps separate ancestry-based boundary-making from civic membership, but it is a France-specific interpretation: movements can combine, resist, or depart from both models, and the article does not define ethnic nationalism in every context.',
+            citations: citations([], ['creponGRECEEthnicQuestion2010French']),
+          },
+          {
+            type: 'paragraph',
             text: 'Categorization itself is politically consequential. Census forms, school curricula, citizenship registries, party membership, identity documents, and media labels can make an ethnic category more visible and more durable. Rogers Brubaker’s critique is especially useful here: analysts should distinguish groups as claimed social entities from categories imposed by institutions and identifications that vary by context, rather than treating every named ethnicity as a fixed bounded object.',
             citations: citations(['brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities'], ['cambridgeKohnDichotomy', 'bpbNationalism', 'sepNationalism']),
           },
@@ -7743,6 +7748,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Treats language, folklore, historical memory, literature, and cultural expression as the core of a people’s distinct identity.',
                 relation: 'A cultural basis can support plural cultural rights, but it becomes ethnic-nationalist when it is converted into exclusive sovereignty or hereditary political membership.',
                 citations: citations(['smithEthnicOrigins', 'andersonImaginedCommunities'], ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy']),
+              },
+              {
+                label: 'Maurrassian and GRECE-influenced ethnocultural nationalism',
+                distinction: 'A France-specific current that frames nationality as an inherited or organic cultural community and treats the preservation of collective identity as a political task.',
+                relation: 'Crépon contrasts this family of arguments with republican citizenship, but the distinction is schematic and does not make every French conservative, regionalist, or cultural movement ethnically nationalist.',
+                citations: citations([], ['creponGRECEEthnicQuestion2010French']),
               },
               {
                 label: 'Minority or secessionist ethnonationalism',
@@ -7952,11 +7963,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['smithEthnicOrigins', 'connorEthnonationalism', 'brubakerEthnicityWithoutGroups', 'andersonImaginedCommunities', 'renanNation', 'hitlerMeinKampf', 'arendtTotalitarianism', 'mussoliniDoctrine', 'millOnLiberty', 'kantPerpetualPeace', 'nabucoAbolitionism'],
-      researchSourceIds: ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy', 'sepColonialism', 'ohchrMinorityRights', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'coeDemocraticCitizenship', 'openTextbook', 'reichNationality1913', 'gosewinkelCitizenship2008', 'alexopoulouRacism2018'],
-      editorialNote: 'The entry treats ethnic nationalism as a broad and internally divided family of identity-and-sovereignty claims. It distinguishes cultural identity, minority self-determination, civic nationalism, nativism, racial nationalism, fascism, and genocide, and refuses to classify an entire current country without dated institutional evidence. Scores are didactic composites, not judgments about every person or movement using the label.',
+      researchSourceIds: ['sepNationalism', 'bpbNationalism', 'cambridgeKohnDichotomy', 'creponGRECEEthnicQuestion2010French', 'sepColonialism', 'ohchrMinorityRights', 'ushmmNurembergLaws', 'bpbNationalSocialism', 'sepFascism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'coeDemocraticCitizenship', 'openTextbook', 'reichNationality1913', 'gosewinkelCitizenship2008', 'alexopoulouRacism2018'],
+      editorialNote: 'The entry treats ethnic nationalism as a broad and internally divided family of identity-and-sovereignty claims. It distinguishes cultural identity, minority self-determination, civic nationalism, nativism, racial nationalism, fascism, and genocide, and refuses to classify an entire current country without dated institutional evidence. The French Crépon source is used as a bounded interpretation of Maurrassian and GRECE-related boundary-making, not as a universal binary between ethnic and civic nationalism. Scores are didactic composites, not judgments about every person or movement using the label.',
     },
     researchGaps: [
       'Add French-language research on romantic nationalism, republican and colonial citizenship, language policy, Corsica, Brittany, Alsace, Algeria, laïcité, and the relationship between universalist republicanism and ethnic boundary-making.',
+      'This pass adds Sylvain Crépon’s French study of GRECE and the ethnic question as a bounded interpretation of inherited Maurrassian nationality versus republican citizenship. Complete research on romantic nationalism, regional languages, Corsica, Brittany, Alsace, Algeria, colonial citizenship and competing French historiographies remains open.',
       'Expand German-language scholarship on Herder, Fichte, romantic nationalism, census and citizenship law, antisemitism, the völkisch movement, National Socialism, post-war constitutional safeguards, reunification, and contemporary migration politics without treating these histories as one continuum.',
       'Add Portuguese- and Spanish-language scholarship on Iberian, Brazilian, Latin American, Lusophone African, Indigenous, mestizo, Black, and anti-colonial national projects, including how language, race, caste, citizenship, and territorial borders were constructed.',
       'Add specialist comparative work on Jewish, Roma, Kurdish, Armenian, Basque, Catalan, Welsh, Scottish, Sámi, Indigenous, African, South Asian, Southeast Asian, and Pacific national or cultural movements, preserving differences rather than forcing them into a European civic–ethnic binary.',

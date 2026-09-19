@@ -567,6 +567,7 @@ const RIGHTS_RECORDS = {
     sepNationalism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     bpbNationalism: { ...LINK_ONLY, notes: 'German federal civic-education source used for independent historical and conceptual synthesis; no bpb text, images, or graphics are reproduced.' },
     cambridgeKohnDichotomy: { ...LINK_ONLY, notes: 'Cambridge scholarly article used as a linked source; no article text, tables, or figures are reproduced.' },
+    creponGRECEEthnicQuestion2010French: { ...LINK_ONLY, reviewedAt: '2026-09-19', notes: 'Original attributed synthesis and Persée link only. No French wording, translation, scan, image or article layout is republished; the opening-level consultation and France-specific ideal types are not presented as a universal taxonomy.' },
     sepColonialism: { ...LINK_ONLY, notes: 'SEP grants limited user rights and states that commercial distribution is not generally cleared.' },
     unIndigenousDeclaration: { ...OFFICIAL_TEXT, notes: 'United Nations digital-library record used for independent synthesis of Indigenous collective rights and self-determination; no UN text, translation, or facsimile is reproduced.' },
     oxfordTribalConstitutions: { ...LINK_ONLY, notes: 'Oxford Handbook chapter used as a linked scholarly legal-history source; no chapter text, tables, or figures are reproduced.' },
