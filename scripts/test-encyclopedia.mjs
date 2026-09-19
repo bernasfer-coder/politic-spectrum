@@ -3377,6 +3377,40 @@ const cambodianExample = monarchistEntry.sections.find(({ id }) => id === 'examp
 assert.ok(cambodianExample, 'Cambodia must appear as a bounded historical example');
 assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('Cambodia’s post-conflict restoration')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('The Cambodia addition remains bounded')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['kuwaitGovernmentConstitution1962', 'contextual', null, ['English'], 'medium'],
+  ['kuwaitConstitution1962Ilo', 'primary', '1962', ['English witness; Arabic original not collated'], 'high'],
+  ['allarakiaKuwaitParalysis2025', 'secondary', '2025', ['English'], 'high'],
+  ['carnegieKuwaitParliament2025', 'secondary', '2025-03', ['English'], 'medium'],
+  ['chicagoGulfHereditaryMonarchies', 'secondary', null, ['English'], 'medium'],
+]) {
+  assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Kuwait monarchist reference trail`);
+  assert.ok(JSON.stringify(monarchistEntry.sections).includes(sourceId), `${sourceId} needs a Kuwait claim-level citation`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} needs one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:monarchist'), `${sourceId} needs a monarchist backlink`);
+}
+const kuwaitHistory = monarchistEntry.sections.find(({ id }) => id === 'history').timeline;
+const kuwaitSettlement = kuwaitHistory.find(({ period }) => period.startsWith('1961–1962: Kuwaiti'));
+assert.ok(kuwaitSettlement, 'the Kuwait constitutional-emirate timeline case must remain visible');
+assert.ok(kuwaitSettlement.citations.researchSourceIds.includes('kuwaitConstitution1962Ilo'));
+const kuwaitVariant = monarchistEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Kuwaiti participatory emirate'));
+assert.ok(kuwaitVariant, 'the Kuwait case must be separated as a dated constitutional variant');
+const kuwaitExample = monarchistEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('Kuwait’s constitutional emirate'));
+assert.ok(kuwaitExample, 'Kuwait must appear as a bounded historical example');
+assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Kuwait case adds a Gulf safeguard')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Arabic Constitution of Kuwait')));
+for (const dimensionId of ['economic', 'social', 'authority', 'identity', 'foreign', 'religion']) {
+  assert.ok(monarchistEntry.dimensionInterpretations[dimensionId], `${dimensionId} must retain the monarchist six-axis interpretation`);
+}
 for (const [sourceId, evidenceRole] of [
   ['brazilConstitution1824', 'primary'],
   ['lynchModeratingPower2005', 'secondary'],
