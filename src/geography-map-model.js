@@ -9,7 +9,7 @@ export const MAP_MAX_ZOOM = 10;
 export const WORLD_VIEW = Object.freeze({ x: 0, y: 0, k: 1 });
 const projection = geoEqualEarth().fitExtent([[16, 16], [944, 484]], { type: 'Sphere' });
 const path = geoPath(projection);
-const atlasIds = { '250': 'france', '356': 'india', '818': 'egypt', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
+const atlasIds = { '250': 'france', '356': 'india', '710': 'south-africa', '818': 'egypt', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
 const atlasPlaceIds = { '010': ['antarctica'] };
 const atlasNames = Object.fromEntries(GEOGRAPHY_COUNTRIES.map(({ id, name }) => [id, name]));
 

@@ -76,6 +76,52 @@ const sources = [
     note: 'Official Government of India primary-text link for the constitutional framework, rights, directive principles, institutions, and amendment procedure; no complete article-by-article collation is claimed in this pass.',
   },
   {
+    id: 'klugConstitutingDemocracy2000',
+    label: 'Heinz Klug — Constituting Democracy: Law, Globalism and South Africa’s Political Reconstruction',
+    url: 'https://www.cambridge.org/core/books/constituting-democracy/E30A8E0CBB457AF6EBB0CB3F3884BCA7',
+    note: 'Official Cambridge University Press book record and summary consulted for the transition from apartheid-era parliamentary sovereignty to constitutional supremacy, a Constitutional Court and democratic constitutionalism. The monograph’s full chapters and archival record were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Heinz Klug'], institution: 'Cambridge University Press',
+    publicationDate: '2000', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length constitutional and political history',
+    identifiers: { doi: '10.1017/CBO9780511560156', isbn: '9780521781138' },
+    description: 'A book-length study of South Africa’s constitutional reconstruction. The atlas uses Cambridge’s bibliographic record and summary as a source lead and keeps full-text verification and implementation history open.',
+  },
+  {
+    id: 'rouxPoliticsOfPrinciple2013',
+    label: 'Theunis Roux — The Politics of Principle: The First South African Constitutional Court, 1995–2005',
+    url: 'https://www.cambridge.org/core/books/politics-of-principle/C6625CF7F3EBE07DD6294A18E427429E',
+    note: 'Official Cambridge University Press book record and summary consulted for the first Constitutional Court’s jurisprudential and institutional role in political context. The monograph’s full case studies and underlying records were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Theunis Roux'], institution: 'Cambridge University Press',
+    publicationDate: '2013', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length constitutional-court history',
+    identifiers: { doi: '10.1017/CBO9781139005081', isbn: '9781107013643' },
+    description: 'A book-length history of the first South African Constitutional Court, used here to separate principled adjudication from institutional strategy and political context. Full-text and later-court verification remain research gaps.',
+  },
+  {
+    id: 'southAfricaInterimConstitution1993',
+    label: 'Parliament of South Africa — Constitution of the Republic of South Africa Act 200 of 1993',
+    url: 'https://www.parliament.gov.za/storage/app/media/Acts/1993/Act_200_of_1993_Constitution_of_the_Republic_of_South_Africa_Act_Interim_Constitution.pdf',
+    note: 'Official Parliament PDF link consulted as the primary interim constitutional text, including rights, institutions and the route toward a final Constitution. The PDF is linked rather than republished; a complete multilingual and archival collation was not undertaken.',
+    accessDate: '2026-09-19',
+    creators: ['Parliament of South Africa'], institution: 'Parliament of South Africa',
+    publicationDate: '1993', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official PDF',
+    description: 'The 1993 interim constitutional framework is primary evidence of transitional institutional design. It does not, by itself, establish implementation, public consent, or equal lived outcomes.',
+  },
+  {
+    id: 'southAfricaConstitutionMakingMemo1996',
+    label: 'South African Government — Constitution of the Republic of South Africa, 1996: Explanatory Memorandum',
+    url: 'https://www.gov.za/documents/constitution-republic-south-africa-1996-explanatory-memorandum',
+    note: 'Official explanatory memorandum consulted for the drafting, public-participation and adoption sequence of the 1996 Constitution. It is an institutional account rather than an independent measure of consent or implementation; no memorandum passage is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['South African Government'], institution: 'South African Government',
+    publicationDate: '1996', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official explanatory memorandum / constitutional history',
+    description: 'An official account of the negotiated drafting and adoption sequence, including the interim constitutional framework and Constitutional Court review. Its institutional perspective and limits remain explicit.',
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -99,8 +145,11 @@ const sources = [
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
-  accessDate: '2026-09-16', creators: source.creators, institution: source.institution,
-  sourceType: source.sourceType, evidenceRole: source.evidenceRole, discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography' : 'Middle Eastern political history and geography',
+  accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
+  sourceType: source.sourceType, evidenceRole: source.evidenceRole,
+  discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
+    : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') ? 'South African constitutional law and political history'
+      : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
 }]));
