@@ -1382,7 +1382,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A liberal-democratic profile that combines civil and political rights, personal autonomy, social inclusion, and equal citizenship with public action to reduce deprivation, regulate markets, and expand practical opportunity. It accepts an active state but keeps that state accountable to elections, courts, rights, and pluralist institutions.',
     summaryCitations: citations(
       ['millOnLiberty', 'wollstonecraftRights', 'keynesGeneralTheory', 'kantPerpetualPeace'],
-      ['sepLiberalism', 'oxfordRepublicanismTransatlantic', 'viePubliqueLaiciteStasi', 'vdem', 'sepReligionPolitics'],
+      ['sepLiberalism', 'oxfordRepublicanismTransatlantic', 'conseilConstitutionnelPreamble1946French', 'cottiasOldColoniesRepublicanism2003French', 'urbanColonialCitizenship1798French', 'viePubliqueLaiciteStasi', 'vdem', 'sepReligionPolitics'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -1447,6 +1447,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The French law of 9 December 1905 is a bounded primary case for the religion and authority dimensions. Articles 1–2 combine freedom of conscience and free exercise of worship with separation and non-establishment, while preserving a limited chaplaincy exception in public institutions. Jean-Paul Scot interprets the settlement as joining liberty, equality and republican consolidation; the Conseil d’État’s official study emphasizes the later balance among neutrality, pluralism, public order and local exceptions. None of these sources proves that the settlement was uniformly applied or that every later use of laïcité preserved its most liberal interpretation.',
             citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
           },
+          {
+            type: 'evidence-note',
+            text: 'The 1946 constitutional preamble makes the universalist promise more explicit: it combines equal human rights, women’s equality, social rights, secular education, and an asserted equality of rights and duties within the Union française. Cottias and Urban provide distinct historical cautions: republican doctrines were shaped in colonial settings, and colonial citizenship was fragmented through differentiated status, suffrage, and representation. The constitutional text is therefore evidence of a normative commitment, not proof that colonial administration or lived citizenship already matched it.',
+            citations: citations([], ['conseilConstitutionnelPreamble1946French', 'cottiasOldColoniesRepublicanism2003French', 'urbanColonialCitizenship1798French']),
+          },
         ],
       },
       {
@@ -1472,6 +1477,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Laïcité is best read here as a family of institutional questions, not as a synonym for atheism or hostility to religion. The 1905 law’s primary text separates public financing and official recognition from protection of conscience and worship; the Conseil d’État further describes pluralism, public-order limits, chaplaincies, judicial interpretation and territorial exceptions. A state can therefore be secular and still regulate or accommodate religious practice. The exact balance, and whether later measures extend neutrality from public agents to private citizens, requires a dated legal and social record.',
             citations: citations([], ['frenchSeparationChurches1905', 'conseilEtatLaicite2004', 'viePubliqueLaiciteStasi']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Universal citizenship must be tested against the institutions that applied it. The 1946 preamble’s language of equality and overseas union can support an inclusive progressive-liberal reading, but Cottias’s study of the old colonies and Urban’s account of fragmented colonial citizenship show why constitutional language cannot be treated as a complete social description. Distinguish rights claimed in the metropolitan constitutional order, legal status in colonial administrations, political representation, and the experiences of people classified through those systems.',
+            citations: citations([], ['conseilConstitutionnelPreamble1946French', 'cottiasOldColoniesRepublicanism2003French', 'urbanColonialCitizenship1798French']),
           },
           {
             type: 'paragraph',
@@ -1525,9 +1535,19 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
           },
           {
+            period: '1848–1905: republican universalism and the old colonies',
+            text: 'Cottias’s study treats the old colonies as places where republican doctrines were defined alongside colonial administration after the abolition of slavery. This supports a historical caution: universal rights language and colonial governance developed together, and a progressive-liberal genealogy must distinguish formal citizenship claims, legal status, political representation, and administrative practice.',
+            citations: citations([], ['cottiasOldColoniesRepublicanism2003French']),
+          },
+          {
             period: '1905–1924: French separation, liberty, and territorial variation',
             text: 'The law of 9 December 1905 established a legal settlement in which the Republic guaranteed freedom of conscience and worship while ending official recognition, salaries, and subsidies for cults, with a chaplaincy exception for free exercise in certain public institutions. Scot presents the law as a difficult republican achievement of liberty, equality and fraternity; the Conseil d’État’s later institutional study describes a movement from conflict toward a more liberal and pluralist interpretation, while recording local arrangements such as Alsace-Moselle. The case is therefore both a secular constitutional design and an example of non-uniform implementation, not a proof that all French public policy became anti-religious or identical across territories.',
             citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
+          },
+          {
+            period: '1946: postwar constitutional universalism and the overseas Union',
+            text: 'The French constitutional preamble of 27 October 1946 combined universal rights, women’s equality, social rights, secular education, and an asserted equality of rights and duties within the Union française. Urban’s account of fragmented colonial citizenship means the text should be read as a normative commitment and legal reorientation, not an implementation report or proof that colonial status, suffrage, representation, and self-government had already become uniform.',
+            citations: citations([], ['conseilConstitutionnelPreamble1946French', 'urbanColonialCitizenship1798French']),
           },
           {
             period: '1930s–1950s: economic stabilization and democratic reconstruction',
@@ -1597,6 +1617,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Connects individual rights and public reform to civic equality, solidarity, education, a common political framework, and a particular account of laïcité; it does not automatically endorse one party or one view of group recognition.',
                 relation: 'A historically important national-language variant and contrast case: it can support progressive inclusion while remaining more universalist and institution-centered than identity-based pluralism.',
                 citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
+              },
+              {
+                label: 'Postwar constitutional universalism and colonial citizenship',
+                distinction: 'Uses universal rights, social citizenship, and overseas equality language in the 1946 constitutional preamble while operating amid inherited and changing colonial status systems.',
+                relation: 'A French constitutional variant and critical boundary: progressive rights language can be emancipatory while its application must be tested against differentiated colonial status, representation, and self-government.',
+                citations: citations([], ['conseilConstitutionnelPreamble1946French', 'cottiasOldColoniesRepublicanism2003French', 'urbanColonialCitizenship1798French']),
               },
               {
                 label: 'Liberal-separationist laïcité: the 1905 settlement',
@@ -1714,6 +1740,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'sageFrenchRepublicLiberalFounders', 'cambridgeIndivisibilityFrenchRepublic']),
               },
               {
+                name: 'French postwar constitutional universalism and colonial Union',
+                period: 'France and overseas Union, 1946 constitutional preamble',
+                match: 'bounded primary constitutional example of social rights, equal citizenship language, and overseas equality claims',
+                caveat: 'The preamble is normative text; Cottias and Urban show why it cannot be treated as proof of uniform citizenship or decolonized practice. Colonial status, suffrage, representation, and self-government require separate records.',
+                citations: citations([], ['conseilConstitutionnelPreamble1946French', 'cottiasOldColoniesRepublicanism2003French', 'urbanColonialCitizenship1798French']),
+              },
+              {
                 name: 'French law of separation of Churches and State',
                 period: 'France, 9 December 1905; later interpretation and territorial exceptions require separate dates',
                 match: 'partial secular and civic-equality resemblance: a primary legal settlement pairing non-establishment with protected conscience and worship',
@@ -1774,6 +1807,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders']),
           },
           {
+            type: 'paragraph',
+            text: 'The colonial record sharpens that caution. Cottias examines how republican doctrines were defined in relation to the old colonies, while Urban traces differentiated colonial citizenship, suffrage, representation, and status across the longer imperial period. Together they show why universalist language can promise equal citizenship while institutions classify people through unequal legal and political arrangements; they do not by themselves settle every colony, date, or postcolonial interpretation.',
+            citations: citations([], ['cottiasOldColoniesRepublicanism2003French', 'urbanColonialCitizenship1798French']),
+          },
+          {
             type: 'evidence-note',
             text: 'The 1905 case requires a second safeguard against turning legal principle into social outcome. The primary law protects conscience and worship while ending official recognition and ordinary public funding of cults; Scot reads this as a republican achievement, and the Conseil d’État emphasizes later judicial accommodation, pluralism and territorial variation. These sources establish a constitutional design and competing institutional interpretations, not equal treatment in every locality, a complete history of colonial religious administration, or proof that later restrictions always preserved the law’s liberal balance.',
             citations: citations([], ['frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004']),
@@ -1816,11 +1854,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'constantLibertyModerns',
         'tocquevilleDemocracy',
       ],
-      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'ghdiGodesbergGerman', 'spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982', 'fdpFreiburgTheses1971', 'kieseritzkyFreiburgTheses2021', 'ghdiLambsdorffPaper1982', 'bmweLambsdorff1982', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
-      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual. The 1935 case uses historical law and a statement excerpt, separately from later interpretation. This pass adds a bounded French 1905 separation case, keeping its primary legal design distinct from Scot’s historical interpretation and the Conseil d’État’s institutional account of later judicial and territorial variation, and a German 1971–1982 case that keeps FDP programme self-description, institutional history, and the 1982 market-oriented rupture separate. German documents are paraphrased without reproducing their wording or translations. Poole’s book is represented only by its publisher description; no full-book review, present-day eligibility assessment, or complete New Deal history is claimed.',
+      researchSourceIds: ['sepLiberalism', 'sepLibertarianism', 'sepSocialism', 'sepReligionPolitics', 'oxfordRepublicanismTransatlantic', 'perseeRepublicanismLiberalism', 'viePubliqueLaiciteStasi', 'frenchSeparationChurches1905', 'scotLaicite1905', 'conseilEtatLaicite2004', 'conseilConstitutionnelPreamble1946French', 'cottiasOldColoniesRepublicanism2003French', 'urbanColonialCitizenship1798French', 'cambridgeIndivisibilityFrenchRepublic', 'sageFrenchRepublicLiberalFounders', 'ghdiGodesbergGerman', 'spdGodesbergProgram1959', 'bpbSocialLiberalCoalition2002', 'bundestagSocialLiberalEra1982', 'fdpFreiburgTheses1971', 'kieseritzkyFreiburgTheses2021', 'ghdiLambsdorffPaper1982', 'bmweLambsdorff1982', 'vdem', 'foreignPolicy', 'ssaOldAgeAssistance1935', 'ssaOldAgeBenefits1935', 'fdrSocialSecuritySigning1935', 'dewittCoverageExclusions2010', 'pooleSegregatedOrigins2006'],
+      editorialNote: 'This profile distinguishes liberal rights, progressive social reform, and active economic policy rather than treating them as one automatic package. The scores describe a didactic archetype, not a party platform or a measurement of any individual. The 1935 case uses historical law and a statement excerpt, separately from later interpretation. This pass adds a bounded French 1905 separation case and the 1946 constitutional preamble, keeping primary legal designs distinct from Scot’s and Cottias’s historical interpretations, the Conseil d’État’s institutional account of later judicial and territorial variation, and Urban’s account of differentiated colonial citizenship. It also adds a German 1971–1982 case that keeps FDP programme self-description, institutional history, and the 1982 market-oriented rupture separate. German and French documents are paraphrased without reproducing their wording or translations. Poole’s book is represented only by its publisher description; no full-book review, present-day eligibility assessment, or complete New Deal history is claimed.',
     },
     researchGaps: [
-      'This pass adds the French 1905 separation law, Jean-Paul Scot’s French historical interpretation, and the Conseil d’État’s 2004 institutional study. Still expand French-language primary and specialist scholarship on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality, including colonial and postcolonial critiques; collate parliamentary debates, the full law and later applications, critical scholarship, colonial and overseas arrangements, Alsace-Moselle, and minority perspectives before treating the French case as representative or settled.',
+      'This pass adds the 1946 French constitutional preamble and French historical scholarship by Myriam Cottias and Yerri Urban on republican universalism, colonial administration, and fragmented citizenship. Still expand French-language primary and specialist scholarship on republicanism, social liberalism, laïcité, and the relationship between universal citizenship and group-based equality, including colonial and postcolonial critiques; collate parliamentary debates, the full law and later applications, critical scholarship, colonial and overseas arrangements, Alsace-Moselle, and minority perspectives before treating the French case as representative or settled.',
       'This pass adds the German 1971 Freiburg Theses, Kieseritzky’s institutional history, the 1982 GHDI policy document and the Federal Ministry retrospective. Still expand German-language scholarship on new liberalism, the social market, post-war constitutional democracy, welfare-state authority, and independent evaluations of implementation and outcomes.',
       'Add country-specific evidence for the Progressive Era, New Deal, post-war Europe, and contemporary liberal democracies rather than relying on broad period labels.',
       'This pass adds selected German primary witnesses from the 1959 Godesberg Programme, 1971 Freiburg Theses and 1982 Lambsdorff paper, plus institutional historical syntheses. Still read the complete Godesberg and Freiburg texts, coalition agreements, parliamentary debates, reform statutes and implementation studies; compare East/West German, union, feminist, migrant and minority perspectives before generalizing from the 1969–1982 social-liberal coalition.',

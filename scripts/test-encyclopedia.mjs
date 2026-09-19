@@ -2936,6 +2936,24 @@ for (const [sourceId, evidenceRole, publicationDate, languages] of [
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
 }
 for (const [sourceId, evidenceRole, publicationDate] of [
+  ['conseilConstitutionnelPreamble1946French', 'primary', '1946-10-27'],
+  ['cottiasOldColoniesRepublicanism2003French', 'secondary', '2003'],
+  ['urbanColonialCitizenship1798French', 'secondary', '2012'],
+]) {
+  assert.ok(progressiveEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a progressive-liberal reference trail`);
+  assert.ok(JSON.stringify(progressiveEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must distinguish primary evidence and interpretation`);
+  assert.equal(record.publicationDate, publicationDate, `${sourceId} needs its historical publication date`);
+  assert.equal(record.accessDate, '2026-09-19', `${sourceId} needs its consultation date`);
+  assert.deepEqual(record.languages, ['French'], `${sourceId} needs its source language`);
+  assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its publication boundary`);
+  assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:progressive-liberal'), `${sourceId} needs an encyclopedia backlink`);
+}
+for (const [sourceId, evidenceRole, publicationDate] of [
   ['spdGodesbergProgram1959', 'primary', '1959-11-15'],
   ['bpbSocialLiberalCoalition2002', 'secondary', '2002-04-05'],
   ['bundestagSocialLiberalEra1982', 'secondary', '2017-07-31'],
@@ -3000,21 +3018,33 @@ assert.ok(originalActExample.citations.researchSourceIds.includes('ssaOldAgeBene
 const frenchLaiciteTimeline = progressiveEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1905–1924:'));
 assert.ok(frenchLaiciteTimeline?.citations.researchSourceIds.includes('frenchSeparationChurches1905'), 'French laïcité timeline needs the primary law');
 assert.match(frenchLaiciteTimeline.text, /freedom of conscience and worship/, 'French primary law must remain tied to conscience and worship');
+const frenchColonialTimeline = progressiveEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1848–1905:'));
+assert.ok(frenchColonialTimeline?.citations.researchSourceIds.includes('cottiasOldColoniesRepublicanism2003French'), 'French colonial genealogy timeline needs Cottias');
+const frenchPostwarTimeline = progressiveEntry.sections.find(({ id }) => id === 'history').timeline.find(({ period }) => period.startsWith('1946:'));
+assert.ok(frenchPostwarTimeline?.citations.researchSourceIds.includes('conseilConstitutionnelPreamble1946French'), '1946 French constitutional timeline needs the primary preamble');
+assert.ok(frenchPostwarTimeline?.citations.researchSourceIds.includes('urbanColonialCitizenship1798French'), '1946 French constitutional timeline needs the colonial citizenship caution');
 const frenchLaiciteVariant = progressiveEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Liberal-separationist laïcité'));
 assert.ok(frenchLaiciteVariant, 'the 1905 settlement must be a distinct bounded variant');
+const frenchPostwarVariant = progressiveEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Postwar constitutional universalism'));
+assert.ok(frenchPostwarVariant?.citations.researchSourceIds.includes('cottiasOldColoniesRepublicanism2003French'), 'postwar French variant needs the colonial genealogy caution');
 const frenchLaiciteExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'French law of separation of Churches and State');
 assert.ok(frenchLaiciteExample?.citations.researchSourceIds.includes('scotLaicite1905'), 'French law example needs the specialist historical interpretation');
+const frenchPostwarExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'French postwar constitutional universalism and colonial Union');
+assert.ok(frenchPostwarExample?.citations.researchSourceIds.includes('conseilConstitutionnelPreamble1946French'), '1946 French example needs the primary preamble');
+assert.match(frenchPostwarExample.caveat, /not be treated as proof of uniform citizenship/, '1946 French example needs an implementation boundary');
 assert.match(progressiveDescription, /not as a synonym for atheism/, 'secular public law must not be equated with hostility to religion');
 const frenchLaiciteSafeguard = progressiveEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ type, text }) => type === 'evidence-note' && /1905 case requires/.test(text ?? ''));
 assert.ok(frenchLaiciteSafeguard, 'the bounded 1905 case needs an evidence safeguard');
 assert.match(frenchLaiciteSafeguard.text, /not equal treatment in every locality/, 'formal legal principle must not become an outcome claim');
+const frenchColonialCriticism = progressiveEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ type, text }) => type === 'paragraph' && /colonial record sharpens/.test(text ?? ''));
+assert.ok(frenchColonialCriticism?.citations.researchSourceIds.includes('urbanColonialCitizenship1798French'), 'colonial universalism criticism needs Urban');
 const GermanSocialLiberalExample = progressiveEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries.find(({ name }) => name === 'West German social-liberal coalition');
 assert.ok(GermanSocialLiberalExample, 'the progressive-liberal entry must retain the bounded German social-liberal case');
 assert.match(GermanSocialLiberalExample.caveat, /not a complete outcome evaluation/);
 assert.ok(GermanSocialLiberalExample.citations.researchSourceIds.includes('fdpFreiburgTheses1971'), 'the German coalition example needs the Freiburg primary programme');
 assert.ok(GermanSocialLiberalExample.citations.researchSourceIds.includes('ghdiLambsdorffPaper1982'), 'the German coalition example needs the 1982 primary policy paper');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('complete Godesberg') && gap.includes('Freiburg texts')), 'German social-liberal follow-up must remain open');
-assert.ok(progressiveEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the French 1905 separation law')), 'the French research lead must preserve its follow-up gap');
+assert.ok(progressiveEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the 1946 French constitutional preamble')), 'the French research lead must preserve its follow-up gap');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Read Poole’s full study')), 'historiographical follow-up must remain open');
 assert.ok(progressiveEntry.researchGaps.some((gap) => gap.includes('Audit the separate reference card')), 'the unchanged card’s broad source links need an explicit follow-up');
 
