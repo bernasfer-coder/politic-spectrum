@@ -111,6 +111,18 @@ const sources = [
     description: 'An official documentary and archival publication about the Brazilian Constituent Assembly. It is used as a primary institutional locator, not as a complete record of every speech, amendment, social movement or implementation outcome.',
   },
   {
+    id: 'knightMexicanRevolution1986',
+    label: 'Alan Knight — The Mexican Revolution',
+    url: 'https://search.worldcat.org/title/The-Mexican-Revolution/oclc/12135091',
+    note: 'WorldCat and Library of Congress Hispanic American Periodicals Index records consulted for Knight’s two-volume national history of the Mexican Revolution, including its regional and agrarian framing. The complete monographs and cited archives were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Alan Knight'], institution: 'Cambridge University Press',
+    publicationDate: '1986', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'two-volume book-length Mexican revolutionary history',
+    identifiers: { isbn: '9780521244756', oclc: '12135091' },
+    description: 'A two-volume book-length history of the Mexican Revolution, covering the Porfirian background, revolutionary military phase, counter-revolution and reconstruction to 1920. Its national narrative and regional variation are used alongside Niemeyer’s focused constitutional-convention study, not as a claim that the Revolution had one unified ideology.',
+  },
+  {
     id: 'jarauschAfterHitler2006',
     label: 'Konrad H. Jarausch — After Hitler: Recivilizing Germans, 1945–1995',
     url: 'https://academic.oup.com/book/6114',
@@ -279,8 +291,9 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
   discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
-    : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') ? 'South African constitutional law and political history'
+      : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') ? 'South African constitutional law and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
+        : source.id.startsWith('knightMexican') ? 'Mexican Revolution and constitutional history'
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') ? 'German postwar democratic and constitutional history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'

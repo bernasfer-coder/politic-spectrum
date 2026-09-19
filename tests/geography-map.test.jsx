@@ -29,6 +29,7 @@ describe('map geometry and filter contracts', () => {
     expect(MAP_COUNTRIES_BY_ID.portugal.name).toBe('Portugal');
     expect(MAP_COUNTRIES_BY_ID.spain.name).toBe('Spain');
     expect(MAP_COUNTRIES_BY_ID.germany.name).toBe('Germany');
+    expect(MAP_COUNTRIES_BY_ID.mexico.name).toBe('Mexico');
     expect(readGeographyState('#geography?country=map-000').country).toBe('all');
   });
 
@@ -122,7 +123,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(17);
+    expect(cards()).toHaveLength(18);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });
