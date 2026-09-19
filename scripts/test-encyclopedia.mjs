@@ -3472,6 +3472,17 @@ assert.deepEqual(genevaTheocracyDebateRecord.languages, ['French']);
 assert.equal(genevaTheocracyDebateRecord.publicationStatus, 'link-only');
 assert.equal(genevaTheocracyDebateRecord.directQuote, null);
 assert.deepEqual(genevaTheocracyDebateRecord.relationships.profileEntries, ['encyclopedia:theocratic']);
+const weberGenevaRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-weberGenevaChurchState1964French');
+assert.ok(theocraticEntry.references.researchSourceIds.includes('weberGenevaChurchState1964French'));
+assert.ok(JSON.stringify(theocraticEntry.sections).includes('weberGenevaChurchState1964French'));
+assert.equal(weberGenevaRecord.evidenceRole, 'secondary');
+assert.equal(weberGenevaRecord.publicationDate, '1964');
+assert.equal(weberGenevaRecord.accessDate, '2026-09-19');
+assert.equal(weberGenevaRecord.review.confidence, 'medium');
+assert.deepEqual(weberGenevaRecord.languages, ['French']);
+assert.equal(weberGenevaRecord.publicationStatus, 'link-only');
+assert.equal(weberGenevaRecord.directQuote, null);
+assert.deepEqual(weberGenevaRecord.relationships.profileEntries, ['encyclopedia:theocratic']);
 for (const [sourceId, evidenceRole, publicationDate, confidence, languages] of [
   ['genevaConsistoryRegisters1542French', 'primary', '1542-02-16', 'high', ['French']],
   ['genevaCouncilRegistersRCnum1545French', 'primary', '1545', 'high', ['French']],
@@ -3517,6 +3528,7 @@ assert.ok(theocraticEntry.sections.find(({ id }) => id === 'criticisms').blocks.
 assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Read the complete French Ecclesiastical Ordinances')));
 assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('Read the French edited Consistory volumes')));
 assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the Geneva State Archives’ French historiographical synthesis')));
+assert.ok(theocraticEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Otto Weber’s 1964 French-language article')));
 
 const greenCommonsEntry = ENCYCLOPEDIA_ENTRIES['green-commons'];
 const greenCommonsProfile = ARCHETYPES.find(({ id }) => id === 'green-commons').profile;
