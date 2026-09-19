@@ -327,6 +327,30 @@ const sources = [
     description: 'A book-length analysis of economic and political reform under the PNDC, originally published in 1993 and represented by the publisher’s Voices Revived record. Its political-economy perspective supplies context for the constitutional transition but does not replace constitutional, electoral or local-governance evidence.',
   },
   {
+    id: 'bahruModernEthiopia2001',
+    label: 'Bahru Zewde — A History of Modern Ethiopia, 1855–1991',
+    url: 'https://boydellandbrewer.com/book/a-history-of-modern-ethiopia-1855-1991-9780852557860/?v=7885444af42e',
+    note: 'Official James Currey/Boydell & Brewer book record consulted for the revised second edition’s modern Ethiopian history, including the 1935–1941 occupation and the 1941–1974 imperial period. The complete monograph, Amharic sources and archival citations were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Bahru Zewde'], institution: 'James Currey / Ohio University Press / Addis Ababa University Press',
+    publicationDate: '2001', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Ethiopian modern, constitutional and political history',
+    identifiers: { isbn: '9780852557860', doi: '10.2307/j.ctv136c203' },
+    description: 'A leading book-length modern history of Ethiopia from 1855 to 1991. Its national chronology supplies context for imperial centralization, constitutional change, occupation and revolution; the atlas uses it as one perspective rather than as proof of a uniform Ethiopian political experience.',
+  },
+  {
+    id: 'marcusHistoryEthiopia1994',
+    label: 'Harold G. Marcus — A History of Ethiopia',
+    url: 'https://www.ucpress.edu/books/a-history-of-ethiopia/epub-pdf',
+    note: 'Official University of California Press book record consulted for Marcus’s independent history of Ethiopia, including separate chapters on Ras Tafari, Haile Sellassie through 1936, Haile Sellassie through 1955 and Haile Sellassie through 1973. The complete monograph and cited Ethiopian-language sources were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Harold G. Marcus'], institution: 'University of California Press',
+    publicationDate: '1994', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Ethiopian national, imperial and political history',
+    identifiers: { isbn: '9780520925427' },
+    description: 'A book-length national history offering an independent narrative of Ethiopia’s imperial formation and twentieth-century political development. Its chapter structure helps bound the Haile Selassie period, while its broad scope does not settle regional, social or constitutional implementation questions.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -468,7 +492,8 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
-        : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') ? 'Ghanaian constitutional transition and political history'
+      : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') ? 'Ghanaian constitutional transition and political history'
+        : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') ? 'Ethiopian imperial constitutional and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',
