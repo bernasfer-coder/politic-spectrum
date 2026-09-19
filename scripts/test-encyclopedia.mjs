@@ -2774,16 +2774,41 @@ for (const [sourceId, evidenceRole, publicationDate, languages] of [
   assert.equal(record.directQuote, null);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-conservative'));
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['fondationDeGaulleBayeux1946French', 'primary', '1946-06-16', ['French'], 'high'],
+  ['perseeDreyfusGaullisme1982French', 'secondary', '1982', ['French'], 'medium'],
+  ['pervilleDeGaulleAlgerie1958French', 'secondary', '2008', ['French'], 'high'],
+]) {
+  assert.ok(nationalConservativeEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Gaullist reference trail`);
+  assert.ok(JSON.stringify(nationalConservativeEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:national-conservative'));
+}
 const nationalConservativeDescription = nationalConservativeEntry.sections.find(({ id }) => id === 'description').blocks.map(({ text }) => text).join(' ');
+const nationalConservativeIntroduction = nationalConservativeEntry.sections.find(({ id }) => id === 'introduction').blocks.map(({ text }) => text).join(' ');
 assert.match(nationalConservativeDescription, /not proof of workers’ loyalty/, 'announced intentions must not become measured outcomes');
 assert.match(nationalConservativeDescription, /GHDI’s editorial introduction/, 'modern commentary must not become a statutory provision');
 assert.match(nationalConservativeDescription, /surviving elections did not make these restrictions compatible with equal political liberty/, 'electoral channels must not erase repression');
 assert.match(nationalConservativeDescription, /Maurrassian integral nationalism sharpens the exclusionary boundary/);
 assert.match(nationalConservativeDescription, /Illustrative six-axis reading of the Maurrassian case/);
+assert.match(nationalConservativeIntroduction, /Bayeux speech is a useful primary boundary witness/);
 const nationalConservativeCriticisms = nationalConservativeEntry.sections.find(({ id }) => id === 'criticisms').blocks.map(({ text }) => text).join(' ');
 assert.match(nationalConservativeCriticisms, /contrary to Bismarck’s aims/, 'institutional effects must remain distinct from government intentions');
 assert.match(nationalConservativeCriticisms, /nor convert it into evidence of universal inclusion/, 'benefit provision must not imply universal coverage');
 assert.match(nationalConservativeCriticisms, /The Maurrassian case makes the boundary concrete/);
+assert.match(nationalConservativeCriticisms, /Decolonization adds a second safeguard/);
+assert.ok(nationalConservativeEntry.sections.find(({ id }) => id === 'history').timeline.some(({ period }) => period.startsWith('1946–1962:')));
+const gaullistVariant = nationalConservativeEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Gaullist republican sovereignty'));
+assert.ok(gaullistVariant?.citations.researchSourceIds.includes('fondationDeGaulleBayeux1946French'));
 const bismarckExample = nationalConservativeEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name === 'Otto von Bismarck');
 assert.match(bismarckExample.caveat, /not an exact six-axis match/);
 const maurrasExample = nationalConservativeEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name === 'Action française and Maurrassian integral nationalism');
@@ -2793,6 +2818,7 @@ const maurrasVariant = nationalConservativeEntry.sections.find(({ id }) => id ==
 assert.ok(maurrasVariant, 'Maurrassian integral nationalism must be separated as a boundary variant');
 const maurrasPerson = nationalConservativeEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries.find(({ name }) => name === 'Charles Maurras');
 assert.match(maurrasPerson.caveat, /anti-democratic/);
+assert.ok(nationalConservativeEntry.researchGaps.some((gap) => gap.startsWith('This pass adds the 1946 Bayeux speech')));
 assert.ok(nationalConservativeEntry.researchGaps.some((gap) => gap.includes('each insurance branch')), 'statutory and implementation follow-up must stay open');
 assert.ok(nationalConservativeEntry.researchGaps.some((gap) => gap.includes('Poland example points to a Hungary report')), 'unrepaired card evidence must remain flagged');
 

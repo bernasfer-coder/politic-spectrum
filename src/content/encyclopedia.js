@@ -1848,7 +1848,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A conservative profile that treats national sovereignty, cultural continuity, inherited institutions, borders, and public order as central political goods. It generally accepts a mixed or market-oriented economy and democratic institutions, but gives more weight to national cohesion, tradition, and a capable state than classical or progressive liberalism does.',
     summaryCitations: citations(
       ['burkeReflections', 'renanNation', 'andersonImaginedCommunities', 'hobbesLeviathan'],
-      ['sepConservatism', 'sepNationalism', 'cairnLesGaullistes', 'perseeDeGaulleConstitutionalThought', 'vdem'],
+      ['sepConservatism', 'sepNationalism', 'cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'perseeDreyfusGaullisme1982French', 'pervilleDeGaulleAlgerie1958French', 'perseeDeGaulleConstitutionalThought', 'vdem'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -1906,7 +1906,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             type: 'paragraph',
             text: 'Gaullism is an important French contrast case. It joined national independence, republican legitimacy, and a stronger executive with a political culture that could attract people from different ideological families. Treating Gaullism as simply right-wing cultural nationalism misses its republican and institutional dimensions; treating it as a generic model for all national conservatism misses its particular postwar history, constitutional arrangements, and debates over Europe, empire, and decolonization.',
-            citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'cambridgeIndivisibilityFrenchRepublic']),
+            citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'fondationDeGaulleOppositionIVe', 'perseeDreyfusGaullisme1982French', 'perseeDeGaulleConstitutionalThought', 'cambridgeIndivisibilityFrenchRepublic']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Bayeux speech is a useful primary boundary witness: de Gaulle connected national sovereignty, unity, executive authority, institutional balance, direct suffrage, and the Union française. The text therefore supports a sovereignist and state-capacity reading, but its language about the Union and overseas territories must not be recoded as proof of equal citizenship or completed decolonization.',
+            citations: citations([], ['fondationDeGaulleBayeux1946French']),
           },
           {
             type: 'evidence-note',
@@ -2018,7 +2023,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             period: 'Postwar France: Gaullist republican sovereignty',
             text: 'Gaullism illustrates a sovereignist tradition that cannot be reduced to ethnic nationalism or ordinary traditionalism. De Gaulle’s constitutional critique of the Fourth Republic favored a stronger executive tied to national legitimacy, while the Gaullist political family included people from resistance, socialist, radical, Christian-democratic, and conservative backgrounds. Its emphasis on independence and state capacity later generated disputes over European integration and the meaning of republican sovereignty.',
-            citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought']),
+            citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'fondationDeGaulleOppositionIVe', 'perseeDreyfusGaullisme1982French', 'perseeDeGaulleConstitutionalThought']),
+          },
+          {
+            period: '1946–1962: sovereignty and decolonization in the Gaullist case',
+            text: 'The French Gaullist case also exposes a tension between national sovereignty and imperial membership. The 1946 Bayeux text imagined the Union française as part of the constitutional order; Pervillé’s historical analysis traces de Gaulle’s later movement from public language of French sovereignty and integration in Algeria toward autonomy, Algerian self-determination, and negotiation. This is a period-specific trajectory, not evidence that all sovereignist movements resolve colonial membership in the same way.',
+            citations: citations([], ['fondationDeGaulleBayeux1946French', 'pervilleDeGaulleAlgerie1958French']),
           },
           {
             period: 'Contemporary debates',
@@ -2044,7 +2054,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 label: 'Gaullist republican sovereignty',
                 distinction: 'Centers national independence, republican legitimacy, state capacity, and a strong executive while maintaining a distinct constitutional and postwar political tradition rather than defining membership only through ancestry.',
                 relation: 'A French sovereignist variant and useful boundary case: it overlaps with national conservatism on sovereignty and continuity but cannot be treated as a synonym for ethnic nationalism or authoritarianism.',
-                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'cambridgeIndivisibilityFrenchRepublic']),
+                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'fondationDeGaulleOppositionIVe', 'perseeDreyfusGaullisme1982French', 'perseeDeGaulleConstitutionalThought', 'cambridgeIndivisibilityFrenchRepublic']),
               },
               {
                 label: 'Maurrassian integral nationalism / Action française',
@@ -2120,7 +2130,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 name: 'Charles de Gaulle',
                 role: 'French republican and sovereignist statesman associated with the Fifth Republic',
                 caveat: 'De Gaulle’s constitutional thought and political practice are historically specific; he is a boundary case, not a complete definition of contemporary national conservatism.',
-                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought']),
+                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'fondationDeGaulleOppositionIVe', 'perseeDreyfusGaullisme1982French', 'perseeDeGaulleConstitutionalThought']),
               },
               {
                 name: 'Charles Maurras',
@@ -2158,7 +2168,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: '1946–1970, with later Gaullist legacies',
                 match: 'partial sovereignist and state-capacity resemblance',
                 caveat: 'The Gaullist tradition combined national independence and executive authority with republican legitimacy and changing positions on Europe, empire, social policy, and decolonization; it is not an exact contemporary national-conservative match.',
-                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi']),
+                citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'fondationDeGaulleOppositionIVe', 'perseeDreyfusGaullisme1982French', 'perseeDeGaulleConstitutionalThought', 'pervilleDeGaulleAlgerie1958French', 'viePubliqueLaiciteStasi']),
               },
               {
                 name: 'Action française and Maurrassian integral nationalism',
@@ -2230,7 +2240,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             type: 'paragraph',
             text: 'The Gaullist case also shows why a capable executive and national sovereignty require institutional analysis rather than ideological shorthand. Executive centralization can stabilize a republic or weaken parliamentary accountability; laïcité can be defended as equal freedom of conscience or invoked as a broader cultural boundary. The classification should therefore record constitutional checks, minority citizenship, party competition, and the actual treatment of dissent.',
-            citations: citations([], ['cairnLesGaullistes', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem']),
+            citations: citations([], ['cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'perseeDreyfusGaullisme1982French', 'perseeDeGaulleConstitutionalThought', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem']),
+          },
+          {
+            type: 'paragraph',
+            text: 'Decolonization adds a second safeguard. A national-conservative description that celebrates sovereignty must identify who was included in the political nation and how overseas subjects were governed. The Gaullist record contains a documented movement from French sovereignty and integration language toward Algerian self-determination; that change should be studied as a contested historical trajectory, not hidden behind a timeless label of national unity.',
+            citations: citations([], ['fondationDeGaulleBayeux1946French', 'pervilleDeGaulleAlgerie1958French']),
           },
           {
             type: 'paragraph',
@@ -2256,11 +2271,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'morgenthauRealism',
         'aquinasMoralPolitical',
       ],
-      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy', 'wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983', 'ziemannIndustrialSociety2016'],
-      editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. This pass adds Action française and Maurrassian integral nationalism as a bounded French boundary case, using French institutional, university, scholarly, and primary-work catalog evidence. The case is not a synonym for national conservatism, monarchism, Catholicism, or contemporary France. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
+      researchSourceIds: ['sepConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'cairnLesGaullistes', 'fondationDeGaulleBayeux1946French', 'perseeDreyfusGaullisme1982French', 'pervilleDeGaulleAlgerie1958French', 'fondationDeGaulleOppositionIVe', 'perseeDeGaulleConstitutionalThought', 'academieFrancaiseMaurras', 'sorbonneMaurrasNationalismeIntegral', 'perseeActionFrancaiseNationalism1973', 'bnfMaurrasEnqueteMonarchie1916', 'viePubliqueLaiciteStasi', 'cambridgeIndivisibilityFrenchRepublic', 'vdem', 'foreignPolicy', 'wilhelmSocialProclamation1881', 'ghdiAntiSocialistLaw1878', 'ritterSocialInsurance1983', 'ziemannIndustrialSociety2016'],
+      editorialNote: 'The entry separates tradition, national self-determination, civic membership, ethnic exclusion, and authoritarian power. This pass adds a bounded Gaullist primary source, French review-level scholarship, and a decolonization study alongside the existing institutional and constitutional sources. The Bayeux and Algerian cases are period-specific and not synonyms for national conservatism, monarchism, Catholicism, or contemporary France. Its scores describe a didactic national-conservative archetype rather than every conservative or nationalist movement.',
     },
     researchGaps: [
-      'Expand French-language scholarship on Gaullism, republican sovereignty, laïcité, and the tensions between civic universalism and cultural continuity, including decolonization and post-Gaullist transformations.',
+      'This pass adds the 1946 Bayeux speech, a bounded French review of Dreyfus on Gaullism, and Pervillé’s study of de Gaulle and Algeria in 1958. Still expand French-language scholarship on Gaullism, republican sovereignty, laïcité, and the tensions between civic universalism and cultural continuity, including full constitutional debates, colonial and postcolonial perspectives, and post-Gaullist transformations.',
       'Add German-language scholarship on post-war Christian democracy, ordoliberalism, national conservatism, and the constitutional lessons of authoritarian nationalism.',
       'Add country-specific sources before listing Hungary, India, Poland, France, Japan, or other states as examples; current governments and party systems change over time.',
       'Add specialist research on colonialism, minority citizenship, migration, religion, gender, welfare nationalism, and the relationship between national-conservative movements and democratic backsliding.',
