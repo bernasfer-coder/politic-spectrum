@@ -111,6 +111,42 @@ const sources = [
     description: 'An official documentary and archival publication about the Brazilian Constituent Assembly. It is used as a primary institutional locator, not as a complete record of every speech, amendment, social movement or implementation outcome.',
   },
   {
+    id: 'maravallSpanishTransition1982',
+    label: 'José María Maravall — The Transition to Democracy in Spain',
+    url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
+    note: 'Official Routledge book record consulted for the post-Franco shift, political reforms, social cleavages and the Socialist Party’s rise. The monograph’s complete chapters, datasets and archival citations were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['José María Maravall'], institution: 'Routledge',
+    publicationDate: '1982', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length political history of democratic transition',
+    identifiers: { isbn: '9780312814595' },
+    description: 'A book-length political analysis of Spain’s democratic transition, first published in 1982. Its early vantage point is retained as a perspective on the transition, not as a complete account of later consolidation or current Spain.',
+  },
+  {
+    id: 'tusellSpanishTransition2007',
+    label: 'Javier Tusell — La transición a la democracia: España, 1975–1982',
+    url: 'https://www.mcu.es/ccbae/es/consulta/registro.cmd?id=166337',
+    note: 'Spanish state-library catalogue record consulted for the Spanish-language book’s bibliographic metadata and bounded 1975–1982 scope. The monograph’s complete chapters and archival citations were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Javier Tusell'], institution: 'Espasa Calpe / Spanish State Archives Library Network',
+    publicationDate: '2007', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'book-length Spanish political history of democratic transition',
+    identifiers: { isbn: '9788467025583' },
+    description: 'A Spanish-language book-length history of the 1975–1982 transition, catalogued by the Spanish state-archives library network. It provides a second national historiographical perspective alongside Maravall’s political analysis.',
+  },
+  {
+    id: 'spainConstitution1978Official',
+    label: 'Congreso de los Diputados — Constitución Española de 1978',
+    url: 'https://www.congreso.es/es/cem/const1978',
+    note: 'Official Congress portal consulted in Spanish and through its English constitution portal for the Political Reform Law, 1977 elections, constituent process, 6 December 1978 referendum, constitutional text and later amendment record. No constitutional passage, translation, scan or PDF is republished.',
+    accessDate: '2026-09-19',
+    creators: ['Congreso de los Diputados'], institution: 'Congreso de los Diputados',
+    publicationDate: '1978-12-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish', 'English'],
+    sourceType: 'official constitutional text and institutional process record',
+    identifiers: {},
+    description: 'Primary institutional evidence for Spain’s 1978 constitutional founding and the Congress’s account of the legal and parliamentary path from the late Franco regime to a social and democratic state under the rule of law. It does not establish implementation or unanimity.',
+  },
+  {
     id: 'maxwellPortugueseDemocracy1995',
     label: 'Kenneth Maxwell — The Making of Portuguese Democracy',
     url: 'https://www.cambridge.org/core/books/the-making-of-portuguese-democracy/0C867CB2AC5BE5A81B1C1ED6DFCDD6DC',
@@ -209,6 +245,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
   discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
     : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') ? 'South African constitutional law and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
+        : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
