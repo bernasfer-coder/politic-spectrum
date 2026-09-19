@@ -4532,6 +4532,19 @@ assert.ok(omanExample, 'Oman must appear as a bounded historical example');
 assert.match(omanExample.caveat, /does not establish current political practice/);
 assert.ok(omanMonarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Omani case adds a consultation-versus-accountability safeguard')));
 assert.ok(omanMonarchistEntry.researchGaps.some((gap) => gap.startsWith('Read the Arabic 1996 and 2021 Basic Statutes')));
+const saidOmanRecord = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-saidOmanConstitutionalismUnrealized2022');
+assert.ok(omanMonarchistEntry.references.researchSourceIds.includes('saidOmanConstitutionalismUnrealized2022'));
+assert.ok(JSON.stringify(omanMonarchistEntry.sections).includes('saidOmanConstitutionalismUnrealized2022'));
+assert.equal(saidOmanRecord.evidenceRole, 'secondary');
+assert.equal(saidOmanRecord.publicationDate, '2022-08-30');
+assert.equal(saidOmanRecord.accessDate, '2026-09-19');
+assert.deepEqual(saidOmanRecord.languages, ['English']);
+assert.equal(saidOmanRecord.review.confidence, 'medium');
+assert.equal(saidOmanRecord.publicationStatus, 'link-only');
+assert.equal(saidOmanRecord.directQuote, null);
+assert.ok(saidOmanRecord.relationships.profileEntries.includes('encyclopedia:monarchist'));
+assert.match(omanHistory.text, /Said’s abstract-level periodization/);
+assert.ok(omanMonarchistEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Said’s Al-Abhath study')));
 
 const russianCentralAsiaEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
 for (const sourceId of [
