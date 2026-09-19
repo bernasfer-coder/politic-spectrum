@@ -2346,6 +2346,44 @@ assert.match(brazilExample.text, /not an exact six-axis match/);
 assert.ok(weimarEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('Brazil’s 1988 settlement makes the implementation problem')));
 assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Portuguese 1988 Constitution')));
 
+for (const [sourceId, evidenceRole, publicationDate, confidence] of [
+  ['belgiumFirstConstitutionOfficialDutch', 'secondary', null, 'high'],
+  ['belgianChamberConstitution1831Dutch', 'contextual', '1831', 'high'],
+  ['kuleuvenBelgianSovereigntyProject2020Dutch', 'secondary', '2020-09-18', 'high'],
+]) {
+  assert.ok(weimarEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Belgian constitutionalist reference trail`);
+  assert.ok(JSON.stringify(weimarEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.deepEqual(record.languages, ['Dutch']);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:liberal-constitutionalist']);
+}
+const liberalBelgianHistory = weimarEntry.sections.find(({ id }) => id === 'history').timeline;
+const liberalBelgianTimeline = liberalBelgianHistory.find(({ period }) => period.startsWith('1830–1831 — Belgian revolutionary'));
+assert.ok(liberalBelgianTimeline, 'the Belgian constitutional timeline case must remain visible');
+assert.ok(liberalBelgianTimeline.citations.researchSourceIds.includes('belgianChamberConstitution1831Dutch'));
+assert.ok(liberalBelgianHistory.some(({ period }) => period.startsWith('1830–1831 — Belgian constitutional text')));
+const liberalBelgianVariant = weimarEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Belgian constitutional monarchy'));
+assert.ok(liberalBelgianVariant, 'the Belgian constitutional monarchy must remain a separate variant');
+assert.ok(liberalBelgianVariant.citations.researchSourceIds.includes('kuleuvenBelgianSovereigntyProject2020Dutch'));
+const liberalBelgianExample = weimarEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('Belgium’s 1830–1831 founding'));
+assert.ok(liberalBelgianExample, 'Belgium must appear as a bounded historical example');
+assert.match(liberalBelgianExample.text, /Dutch administrative translation/);
+const liberalBelgianSafeguard = weimarEntry.sections.find(({ id }) => id === 'criticisms').blocks.find(({ text }) => text?.startsWith('The Belgian case adds a franchise'));
+assert.ok(liberalBelgianSafeguard, 'Belgium must add a franchise and language safeguard');
+assert.ok(liberalBelgianSafeguard.citations.researchSourceIds.includes('kuleuvenBelgianSovereigntyProject2020Dutch'));
+for (const dimensionId of ['economic', 'social', 'authority', 'identity', 'religion']) {
+  assert.ok(weimarEntry.dimensionInterpretations[dimensionId].citations.researchSourceIds.some((sourceId) => sourceId.includes('Belgian') || sourceId.startsWith('belgium') || sourceId.startsWith('kuleuven')), `${dimensionId} needs a Belgian claim trail where the case is relevant`);
+}
+assert.ok(weimarEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Belgian Constitution of 1831')));
+
 const breadEntry = ENCYCLOPEDIA_ENTRIES['anarcho-communist'];
 for (const [sourceId, evidenceRole, publicationDate, language] of [
   ['kropotkinBread1892French', 'primary', '1892', 'French'],
