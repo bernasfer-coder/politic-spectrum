@@ -3414,6 +3414,17 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.directQuote, null);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:civic-nationalist'), `${sourceId} needs an encyclopedia backlink`);
 }
+assert.ok(civicEntry.references.researchSourceIds.includes('assembleeDeclarationRights1789French'), 'the civic entry needs the French Declaration source');
+assert.ok(JSON.stringify(civicEntry.sections).includes('assembleeDeclarationRights1789French'), 'the French Declaration needs claim-level use');
+const declarationRecord = BIBLIOGRAPHY_RECORDS.filter(({ id }) => id === 'research-assembleeDeclarationRights1789French');
+assert.equal(declarationRecord.length, 1, 'the French Declaration needs one bibliography record');
+assert.equal(declarationRecord[0].evidenceRole, 'primary');
+assert.equal(declarationRecord[0].publicationDate, '1789-08-26');
+assert.deepEqual(declarationRecord[0].languages, ['French']);
+assert.equal(declarationRecord[0].accessDate, '2026-09-19');
+assert.equal(declarationRecord[0].publicationStatus, 'link-only');
+assert.equal(declarationRecord[0].directQuote, null);
+assert.ok(declarationRecord[0].relationships.profileEntries.includes('encyclopedia:civic-nationalist'));
 const germanConstitutionHistory = civicEntry.sections.find(({ id }) => id === 'history').timeline;
 assert.ok(germanConstitutionHistory.find(({ period }) => period.startsWith('After 1945:'))?.citations.researchSourceIds.includes('basicLawGermany1949'), 'the postwar German timeline needs primary constitutional evidence');
 const germanVariant = civicEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Postwar German constitutional patriotism'));
@@ -3423,10 +3434,13 @@ assert.match(germanExample.caveat, /not itself proof of a civic-national consens
 assert.ok(civicEntry.researchGaps.some((gap) => gap.startsWith('Read the complete German Basic Law')));
 assert.ok(civicEntry.researchGaps.some((gap) => gap.startsWith('Collate the original Sternberger')));
 const civicTimeline = civicEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(civicTimeline.some(({ period }) => period.startsWith('26 August 1789: French declaration')), 'the civic history needs a dated French declaration phase');
 assert.ok(civicTimeline.find(({ period }) => period.startsWith('1865:'))?.citations.researchSourceIds.includes('algeriaSenatusConsulte1865'), 'the 1865 rules need contemporaneous legal evidence');
 assert.ok(civicTimeline.find(({ period }) => period.startsWith('1870:'))?.citations.researchSourceIds.includes('algeriaCremieuxDecrees1870'), 'the 1870 routes need distinct legal evidence');
 const colonialCounterexample = civicEntry.sections.find(({ id }) => id === 'examples').blocks.flatMap(({ entries = [] }) => entries).find(({ name }) => name.startsWith('French Algeria:'));
 assert.match(colonialCounterexample.match, /Counterexample, not an ideological match/, 'colonial exclusion must not become a scored civic ideal');
+const civicExamples = civicEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'examples').entries;
+assert.ok(civicExamples.some(({ name }) => name.startsWith('French Declaration of the Rights')), 'the French declaration example must be bounded');
 assert.ok(civicEntry.researchGaps.some((gap) => gap.includes('social-axis magnitude mismatch')), 'the unresolved magnitude mismatch must stay visible');
 
 const monarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;

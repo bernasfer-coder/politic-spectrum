@@ -7133,6 +7133,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['renanNation', 'andersonImaginedCommunities', 'millOnLiberty'], ['sepNationalism', 'sepColonialism', 'vdem', 'foreignPolicy', 'sepReligionPolitics']),
           },
           {
+            type: 'paragraph',
+            text: 'The French Declaration of the Rights of Man and of the Citizen provides a primary witness to one influential civic-universalist vocabulary: natural and inalienable rights, citizens, law, public power, and national sovereignty. It supports the historical claim that revolutionary French politics articulated membership through public principles rather than ancestry alone, but the declaration is a normative text. Its universal language cannot by itself prove equal participation or erase exclusions involving property, gender, colonial status, race, religion, or political dissent.',
+            citations: citations([], ['assembleeDeclarationRights1789French']),
+          },
+          {
             type: 'evidence-note',
             text: 'The German constitutional case shows why a constitutional text and a civic-national interpretation must remain separate. The Basic Law combines human dignity, equality, freedom of faith, democratic and social federalism, popular sovereignty, party regulation, European integration and equal access to public office; these are formal commitments whose historical application requires separate evidence on citizenship law, migration, minorities, political parties, courts and administrative practice.',
             citations: citations([], ['basicLawGermany1949']),
@@ -7157,6 +7162,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: 'Late eighteenth century: revolution and popular sovereignty',
             text: 'Revolutionary political language recast the people as a source of sovereignty and connected national membership to citizenship, representation, rights, and a common public law. The same period also exposed the gap between universal claims and exclusions based on gender, race, property, colonial status, and political dissent.',
             citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['sepNationalism', 'sepColonialism', 'openTextbook']),
+          },
+          {
+            period: '26 August 1789: French declaration of rights and civic-universalist language',
+            text: 'The French National Constituent Assembly adopted the Declaration of the Rights of Man and of the Citizen in August 1789. Its French text connects rights, citizens, law, public authority and national sovereignty, making it an important primary witness for a civic-republican vocabulary. The declaration records a claim about political order, not proof that all people under French authority received equal political membership or that the later republics implemented its principles consistently.',
+            citations: citations([], ['assembleeDeclarationRights1789French']),
           },
           {
             period: 'Nineteenth century: mass nation-building and citizenship administration',
@@ -7213,6 +7223,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 distinction: 'Places rights, representative institutions, constitutional limits, and individual liberty at the center of national allegiance.',
                 relation: 'Overlaps strongly with civic nationalism, while requiring separate evidence about whether liberal rights apply equally to nonconforming citizens and non-citizens.',
                 citations: citations(['lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'sepNationalism', 'vdem']),
+              },
+              {
+                label: 'Revolutionary republican universalism',
+                distinction: 'Grounds political membership in universal rights, citizenship, law and national sovereignty, as expressed in the French revolutionary declaration tradition.',
+                relation: 'A formative civic-national vocabulary, but its universal claims must be tested against the boundaries of citizenship, property, gender, colonial status, race, religion and dissent in actual institutions.',
+                citations: citations([], ['assembleeDeclarationRights1789French', 'sepNationalism', 'sepColonialism']),
               },
               {
                 label: 'Constitutional patriotism',
@@ -7303,6 +7319,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'examples',
             entries: [
               {
+                name: 'French Declaration of the Rights of Man and of the Citizen',
+                period: 'France, 26 August 1789',
+                match: 'primary-text example of revolutionary civic-universalist language about rights, citizens, public law and national sovereignty',
+                caveat: 'A declaration of principles is not a complete citizenship regime or implementation record. Its universal vocabulary coexisted with contested boundaries of political participation and later colonial, gendered, racial and property exclusions.',
+                citations: citations([], ['assembleeDeclarationRights1789French']),
+              },
+              {
                 name: 'French republican citizenship tradition',
                 period: 'France, especially from the Revolution through the modern republics',
                 match: 'A major reference case for universal legal citizenship, republican sovereignty, public institutions, and a common civic identity that is formally open beyond ancestry.',
@@ -7385,6 +7408,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The French declaration makes the promise–practice distinction especially visible. Its rights language can support an inclusive civic reading, but a normative declaration does not identify every person treated as a citizen, voter, subject, or outsider. Researchers should compare the text with constitutional provisions, electoral rules, colonial administration, judicial practice, racial and religious categories, and the experiences of people excluded from the political nation before calling a historical order civic and inclusive.',
+            citations: citations([], ['assembleeDeclarationRights1789French', 'algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870']),
+          },
+          {
+            type: 'paragraph',
             text: 'The German constitutional-patriotism case adds a postwar safeguard. Constitutional attachment can reject ethnic mythology and protect human dignity, equality, religious freedom and democratic procedures, but the concept has also been criticized as too abstract, too specifically German, or vulnerable to being used as a loyalty test against minorities and dissenters. The Basic Law’s formal commitments, Müller and Scheppele’s conceptual account, and Kronenberg’s history of reunification and Leitkultur debates should therefore be read together; none supplies a complete measure of lived inclusion or a universal country classification.',
             citations: citations([], ['basicLawGermany1949', 'mullerScheppeleConstitutionalPatriotism2008', 'kronenbergConstitutionalPatriotism2009']),
           },
@@ -7423,10 +7451,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['renanNation', 'andersonImaginedCommunities', 'millOnLiberty', 'tocquevilleDemocracy', 'lockeSecondTreatise', 'lockeLetterToleration', 'kantPerpetualPeace', 'constantLibertyModerns', 'nabucoAbolitionism'],
-      researchSourceIds: ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism', 'sepLiberalism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'openTextbook', 'panAfricanism', 'algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus', 'direcheStoraExhibition2022', 'basicLawGermany1949', 'kronenbergConstitutionalPatriotism2009', 'mullerScheppeleConstitutionalPatriotism2008'],
+      researchSourceIds: ['sepNationalism', 'oxfordConstitutionalPatriotism', 'coeDemocraticCitizenship', 'sepColonialism', 'sepLiberalism', 'sepReligionPolitics', 'vdem', 'foreignPolicy', 'openTextbook', 'panAfricanism', 'assembleeDeclarationRights1789French', 'algeriaSenatusConsulte1865', 'algeriaCremieuxDecrees1870', 'immigrationMuseumColonialStatus', 'direcheStoraExhibition2022', 'basicLawGermany1949', 'kronenbergConstitutionalPatriotism2009', 'mullerScheppeleConstitutionalPatriotism2008'],
       editorialNote: 'The entry treats civic nationalism as a disputed family resemblance organized around the claimed basis of national membership. It distinguishes civic nationalism from constitutional patriotism, ethnic nationalism, patriotism, liberalism, and cosmopolitanism, and treats country examples as partial, dated, and internally contested. The German postwar layer uses the Basic Law as primary constitutional design evidence and Müller, Scheppele and Kronenberg as bounded conceptual and public-intellectual interpretations; it does not infer uniform German implementation or revise any six-axis coordinate. Scores are didactic composites, not empirical measurements of every movement, government, or citizen using the label.',
     },
     researchGaps: [
+      'Read the full French revolutionary debates and later constitutional, electoral, colonial and judicial records alongside the 1789 Declaration; the present primary text establishes a civic-universalist vocabulary but not equal implementation or a complete history of who counted as a citizen.',
       'Add French-language scholarship on republican universalism, laïcité, assimilation, colonial citizenship, the Dreyfus era, overseas departments, and the postcolonial critique of civic nationalism.',
       'Add German-language scholarship on constitutional patriotism, federalism, citizenship reform, Vergangenheitsbewältigung, reunification, migration, and the relationship between civic belonging and the memory of National Socialism.',
       'Add Portuguese- and Spanish-language scholarship on Brazilian, Iberian, Latin American, and Lusophone forms of citizenship, republicanism, abolition, empire, plurinationalism, and postcolonial nation-building; Nabuco is only a starting point here.',
