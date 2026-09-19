@@ -11822,25 +11822,25 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
         score: -30,
         label: 'Market-oriented, with lawful public goods',
         explanation: 'The tradition commonly protects private property, contract, and voluntary exchange, but constitutionalism does not logically require a minimal state or unregulated markets. Taxation, infrastructure, education, social insurance, labor law, and economic regulation can be compatible with liberal constitutionalism when enacted under general law and justified through equal civic status rather than arbitrary privilege.',
-        citations: citations(['adamSmithWealth', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'oxfordLiberalismResearch', 'sepConstitutionalism', 'ghanaConstitution1992Official']),
+        citations: citations(['adamSmithWealth', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'oxfordLiberalismResearch', 'sepConstitutionalism', 'ghanaConstitution1992Official', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
       },
       social: {
         score: 25,
         label: 'Individual liberty, historically uneven inclusion',
         explanation: 'Freedom of expression, association, conscience, privacy, and personal development are central, but the historical tradition often combined universal language with restricted citizenship, gender hierarchy, property qualifications, slavery, or colonial rule. The profile therefore protects personal liberty without treating every historical liberal as socially progressive or every rights claim as equally applied.',
-        citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative', 'colonialLiberalismExclusion', 'ghanaConstitutionRights1992Official']),
+        citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative', 'colonialLiberalismExclusion', 'ghanaConstitutionRights1992Official', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
       },
       authority: {
         score: -65,
         label: 'Strong limits, divided power, and legal accountability',
         explanation: 'Government must act through publicly knowable law, consent or representation, due process, institutional checks, and remedies against arbitrary power. Liberal constitutionalists differ over whether courts, legislatures, executives, federal units, or citizens should have the final word, but concentrated and unreviewable authority is the clearest boundary of the family.',
-        citations: citations(['lockeSecondTreatise', 'federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'unRuleLawHumanRights', 'vdem', 'ghanaConstitution1992Official', 'quashigahGhanaConstitution1992', 'gyampoGrahamGhanaHybridity2014', 'belgiumConstitution1831French', 'vanDenBergBelgianConstitution2018', 'deseureBelgianSovereignty2016']),
+        citations: citations(['lockeSecondTreatise', 'federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'unRuleLawHumanRights', 'vdem', 'ghanaConstitution1992Official', 'quashigahGhanaConstitution1992', 'gyampoGrahamGhanaHybridity2014', 'belgiumConstitution1831French', 'vanDenBergBelgianConstitution2018', 'deseureBelgianSovereignty2016', 'frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zhangConstitutionalReformsChina2024']),
       },
       identity: {
         score: 25,
         label: 'Civic constitutional membership',
         explanation: 'The preferred basis of membership is citizenship under common law and constitutional rights rather than ethnic sameness. Liberal constitutionalism can still be patriotic and territorially bounded, and its historical practice often excluded colonized peoples, migrants, women, racialized groups, or religious minorities. Constitutional universalism is therefore an aspiration and institutional test, not proof that a polity has already achieved equal membership.',
-        citations: citations(['lockeSecondTreatise', 'kantPerpetualPeace', 'tocquevilleDemocracy'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'sepColonialism', 'colonialLiberalismExclusion', 'ghanaConstitution1992Official', 'jacquemotGhanaChieftaincy2007French', 'belgiumConstitution1831French', 'deseureBelgianSovereignty2016']),
+        citations: citations(['lockeSecondTreatise', 'kantPerpetualPeace', 'tocquevilleDemocracy'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'sepColonialism', 'colonialLiberalismExclusion', 'ghanaConstitution1992Official', 'jacquemotGhanaChieftaincy2007French', 'belgiumConstitution1831French', 'deseureBelgianSovereignty2016', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
       },
       foreign: {
         score: 35,
@@ -11952,6 +11952,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           },
           {
             type: 'evidence-note',
+            text: 'The late-Qing sequence is best read as a contested constitutional transition rather than a delayed copy of one Western model. The 1908 regulations created provincial assemblies to voice public opinion and prepare a future parliament, but the assemblies could debate and advise without displacing the Throne, and the electoral rules restricted participation to a narrow class of adult men. In 1911 the Nineteen Articles responded to revolutionary crisis by moving the imperial project toward a more limited monarchy; in 1912 the republican Provisional Constitution relocated sovereignty to the people and distributed legislative, executive and judicial functions while recognizing civil freedoms and formal equality. Chang, Zarrow and Zhang support different levels of intellectual-history interpretation, so these documents establish a sequence of rival institutional claims—not a completed liberal settlement or a single Chinese constitutional ideology.',
+            citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
+          },
+          {
+            type: 'evidence-note',
             text: 'The Philippines’ 1987 Constitution supplies a bounded post-authoritarian case of liberal and transformative constitutional design. The primary text combines democratic republicanism and popular sovereignty with a bill of rights, social-justice duties, church–state separation, independent branches, judicial review, local autonomy, and limits on presidential emergency power; Proclamation No. 58 records its February 1987 ratification and the canvassed vote totals. Chopra reads the settlement as a transformative constitutional text whose anti-authoritarian and social-rights ambitions create difficult questions for courts and institutions, while Bonoan and Dressel later characterize the political settlement as competitive-oligarchic and repeatedly contested. These sources describe different evidence layers; they do not justify a present-day country score or a claim that formal rights were equally realized.',
             citations: citations([], ['philippineConstitution1987', 'philippineRatification1987', 'chopraPhilippinesTransformativeConstitutionalism2021', 'bonoanDresselPhilippineOligarchicPolitics2026']),
           },
@@ -12024,6 +12029,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           {
             type: 'evidence-note',
             text: 'Late-Qing and early republican China adds an East Asian constitutional case without reducing constitutionalism to a European template. The 1908 preparatory regulations created provincial deliberative assemblies whose stated purpose was to ascertain public opinion, but kept executive authority with the Throne and restricted voting to a narrow male electorate. The 1912 Provisional Constitution then declared popular sovereignty, equality without racial, class or religious distinctions, civil freedoms, legislative powers, judicial independence and an elected-representative pathway. Chang and Zarrow distinguish constitutional reform, revolutionary rupture, changing ideas of the state and citizenship, while Zhang’s recent Cambridge chapter treats the 1908 Outline, the 1911 Nineteen Articles and the Xinhai Revolution as connected constitutional landmarks. This is a bounded history of competing reform and republican projects: translated witnesses and publisher summaries do not establish Chinese-language reception, equal implementation, or a stable liberal regime.',
+            citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'A closer institutional reading distinguishes four layers often collapsed into “Chinese constitutionalism”: provincial deliberation under imperial supervision; the emergency Nineteen Articles’ attempt to preserve monarchy by limiting the emperor; the 1912 Provisional Constitution’s rights-and-branch design; and the later struggle over whether the executive, cabinet, legislature or military would control the republic. The 1908 rules allowed provincial assemblies to discuss budgets, taxes and local administration but kept supervision and possible dissolution with the viceroy or governor. The 1912 text gave the Advisory Council lawmaking and budget powers, allowed it to interpellate ministers and impeach officials, and stated that judges were independent. These are precise textual and institutional claims; they do not prove that the rules were implemented equally across provinces or that the republican design survived the subsequent power struggle.',
             citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
           },
           {
@@ -12195,6 +12205,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           {
             period: '1908–1914 — Late-Qing reform and early republican constitutional rupture',
             text: 'The late-Qing constitutional programme used provincial assemblies and a planned parliament to channel public opinion while preserving imperial supremacy and a restricted male franchise. The 1911 Nineteen Articles briefly moved toward a constitutional monarchy, but the Xinhai Revolution ended that path; the 1912 Provisional Constitution instead vested sovereignty in the people and articulated civil freedoms, legislative oversight, judicial independence and an amendment procedure. The 1914 documentary record shows the fragility of that settlement: after conflict with the National Assembly, Yuan Shikai dissolved representative bodies and replaced the earlier arrangement with a more centralized provisional constitution. Chang, Zarrow and Zhang provide distinct intellectual and constitutional histories, not proof of one Chinese liberal programme or uniform implementation.',
+            citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
+          },
+          {
+            period: '1908–1912 — Provincial assemblies, the Nineteen Articles, and rival constitutional futures',
+            text: 'The 1908 rules made provincial assemblies consultative bodies under the supervision of governors and viceroys: they could deliberate on provincial policy, taxation and budgets, elect delegates, and bring complaints, but their decisions required official approval and the executive could adjourn or seek dissolution. The same framework used educational, occupational, property and reputation qualifications for a restricted male franchise. During the 1911 crisis, the Nineteen Articles altered the balance between throne and legislature in an attempt to save a constitutional monarchy. The 1912 Provisional Constitution adopted a republican vocabulary of popular sovereignty, equal civic status, civil freedom, an elected Advisory Council, cabinet countersignature and independent judges. This sequence shows competing ways to constrain power, while the short interval and later suspension of representative institutions prevent treating any one text as settled practice.',
             citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
           },
           {
@@ -12453,18 +12468,18 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 relation: 'An adjacent reformist and constitutional precursor rather than a complete liberal-democratic regime. Khayr al-Din’s Tunisian and Ottoman settings connect Arabic political thought to the wider reform field, but dynastic authority, state-building from above, translation across languages and uneven participation remain separate questions from later rights-centred constitutionalism.',
                 citations: citations([], ['khayrDinAqwamAlMasalik1867Arabic', 'hillKhayrDinArabicConstitutionalism2025', 'moreauOttomanStateConstitutionalReforms2013']),
               },
-          {
-            label: 'Tunisian constitutional reform / 1857–1864',
-            distinction: 'A Muslim and dynastic constitutional experiment that limited the Bey through a Supreme Council, ministerial responsibility, courts, public-finance rules and formal rights while retaining religious and hereditary authority.',
-            relation: 'A precursor and neighboring reform tradition rather than a settled liberal-democratic regime. The 1861 Constitution’s short operation, elite drafting, foreign pressure and suspension after the 1864 revolt distinguish constitutional form from durable popular accountability.',
-            citations: citations([], ['tunisiaConstitution1861ArabicOfficial', 'tunisiaConstitution1861FrenchOfficial', 'marchIslamicConstitutionalismTunisia1861', 'khadharTunisianConstitution1861French1989']),
-          },
-          {
-            label: 'Late-Qing constitutional reform and early republican constitutionalism, 1908–1914',
-            distinction: 'Combines a late-Qing constitutional-monarchical programme, restricted provincial deliberation, the 1911 Nineteen Articles and the 1912 republican Provisional Constitution’s rights-bearing and representative design.',
-            relation: 'A bounded East Asian constitutional variant in which reformers, revolutionaries and state-builders disputed whether lawful representation should renovate the monarchy or establish a republic. The official witnesses show formal rights and institutional checks alongside imperial or presidential concentration, restricted participation, translation limits and rapid constitutional breakdown; it should not be treated as a completed liberal regime or a present-day country score.',
-            citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
-          },
+              {
+                label: 'Tunisian constitutional reform / 1857–1864',
+                distinction: 'A Muslim and dynastic constitutional experiment that limited the Bey through a Supreme Council, ministerial responsibility, courts, public-finance rules and formal rights while retaining religious and hereditary authority.',
+                relation: 'A precursor and neighboring reform tradition rather than a settled liberal-democratic regime. The 1861 Constitution’s short operation, elite drafting, foreign pressure and suspension after the 1864 revolt distinguish constitutional form from durable popular accountability.',
+                citations: citations([], ['tunisiaConstitution1861ArabicOfficial', 'tunisiaConstitution1861FrenchOfficial', 'marchIslamicConstitutionalismTunisia1861', 'khadharTunisianConstitution1861French1989']),
+              },
+              {
+                label: 'Late-Qing constitutional reform and early republican constitutionalism, 1908–1914',
+                distinction: 'Combines a late-Qing constitutional-monarchical programme, restricted provincial deliberation, the 1911 Nineteen Articles, and the 1912 republican Provisional Constitution’s rights-bearing and representative design. The sequence includes consultative institutions, not an uninterrupted parliamentary system.',
+                relation: 'A bounded East Asian constitutional variant in which reformers, revolutionaries and state-builders disputed whether lawful representation should renovate the monarchy or establish a republic. The official witnesses show formal rights and institutional checks alongside imperial or presidential concentration, restricted participation, translation limits and rapid constitutional breakdown; the texts are evidence of competing projects, not a completed liberal regime or a present-day country score.',
+                citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
+              },
             ],
           },
         ],
@@ -12597,6 +12612,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             type: 'paragraph',
             text: 'Late-Qing and early republican China is a bounded example of constitutional reform moving through two competing institutional paths. The 1908 regulations created provincial deliberative assemblies but preserved imperial supremacy and a restricted male franchise; the 1912 Provisional Constitution articulated popular sovereignty, equal civic status, civil freedoms, legislative powers, judicial independence and elected representation. The official diplomatic record also documents the rapid breakdown of the arrangement: after conflict with the National Assembly, Yuan Shikai dissolved representative bodies and moved toward a centralized provisional constitution. Chang, Zarrow and Zhang provide distinct interpretations of reform, revolution, citizenship and constitutional continuity. This case shows why formal rights, constitutional aspiration and actual political power must be separated; it is not a present-day country score or a claim of uniform Chinese experience.',
             citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The Chinese case also demonstrates why the word “representation” needs institutional detail. In the 1908 scheme, provincial assemblies could express opinion and deliberate on local finance and administration, but governors and viceroys retained approval, supervision and dissolution powers, while eligibility rules filtered participation through sex, age, education, occupation, property and reputation. The 1912 design was more explicitly rights-bearing: its translated witness assigns legislative and budget functions to an elected Advisory Council, gives citizens petition and legal-remedy routes, and makes judges formally independent, while also permitting rights limits by law for public welfare, order or extraordinary exigency. The comparison is useful for the atlas because it distinguishes formal safeguards from the breadth of the franchise and from actual enforcement.',
+            citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989']),
           },
         ],
       },
@@ -12756,6 +12776,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           },
           {
             type: 'paragraph',
+            text: 'The deeper safeguard is to avoid treating either constitutional text as a proxy for social inclusion. The 1908 franchise excluded women and many men through education, occupation, property, literacy and reputation requirements, while the translated 1912 rights catalogue states equality and religious freedom without supplying evidence here about provincial implementation, women’s political participation, minority governance, courts, or rural experience. The 1912 document also permits statutory limitation of rights for public welfare, public order or extraordinary exigency, so its liberal language must be read with its institutional and emergency clauses. These limits are research questions, not grounds for inventing a generalized “Chinese” score.',
+            citations: citations([], ['frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012', 'zhangConstitutionalReformsChina2024']),
+          },
+          {
+            type: 'paragraph',
             text: 'The fifth criticism concerns emergency and security power. War, terrorism, pandemic, disaster, and technological threats can require rapid action, but indefinite emergency, secrecy, surveillance, preventive detention, or executive decree can hollow out constitutional accountability. Safeguards include necessity, proportionality, legality, sunset clauses, legislative renewal, independent review, public reasons, protected remedies, and equal treatment of politically unpopular groups.',
             citations: citations(['federalistPapers', 'millOnLiberty'], ['unRuleLawHumanRights', 'echrConvention', 'vdem', 'sepConstitutionalism']),
           },
@@ -12784,7 +12809,7 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
     },
     researchGaps: [
       'Add original-language research in Portuguese, French, German, Spanish, Arabic, Hindi, Chinese, and African constitutional traditions, including constitutional arguments that do not begin from the Anglo-American canon.',
-      'Study the late-Qing constitutional movement and early Republic through Chinese-language primary texts, local and provincial assembly records, the 1908 Outline and 1911 Nineteen Articles, the 1912 and 1914 provisional constitutions, electoral practice, women’s and minority perspectives, and competing Chinese, Japanese and English scholarship. This pass adds translated official witnesses and bounded intellectual-history interpretations, but not a complete Chinese-language collation, implementation history or present-day comparison.',
+      'Study the late-Qing constitutional movement and early Republic through Chinese-language primary texts, local and provincial assembly records, the 1908 Outline and 1911 Nineteen Articles, the 1912 and 1914 provisional constitutions, electoral practice, women’s and minority perspectives, and competing Chinese, Japanese and English scholarship. This pass adds a more granular translated account of provincial deliberation, restricted franchise, the Nineteen Articles and the 1912 rights-and-branch design, plus bounded intellectual-history interpretations; it still lacks a complete Chinese-language collation, implementation history, later court practice and present-day comparison.',
       'Read Ghana’s constitutional drafting materials, Consultative Assembly proceedings, Supreme Court judgments, parliamentary appointment records, electoral administration, district-assembly evidence and local-language scholarship before making stronger claims about the Fourth Republic’s balance of power or rights enforcement.',
       'Compare Ghanaian chieftaincy and elected local government across regions, genders, land systems and customary jurisdictions. The French-language decentralization study opens the question but does not establish equal participation, accountability or outcomes in every locality.',
       'Compare written constitutional text with lived practice using court decisions, legislative records, administrative enforcement, party competition, civil-society evidence, and rights outcomes rather than relying on formal design alone.',
