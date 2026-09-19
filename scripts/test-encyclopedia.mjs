@@ -4189,6 +4189,8 @@ for (const [sourceId, evidenceRole] of [
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['fritzGoldschmidtStoerringOrdoliberalism2021', 'secondary', '2021-02-06', ['English'], 'high'],
   ['goldsmithEntitlementTheory1979', 'secondary', '1979-12-01', ['English'], 'medium'],
+  ['bnfConstantLibertyModerns1819French', 'primary', '1819', ['French'], 'high'],
+  ['viffryKeslassyTocqueville2001French', 'secondary', '2001', ['French'], 'medium'],
 ]) {
   assert.ok(marketLibertarianEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a market-libertarian reference trail`);
   assert.ok(JSON.stringify(marketLibertarianEntry.sections).includes(sourceId), `${sourceId} needs a claim-level citation`);
@@ -4208,8 +4210,11 @@ assert.ok(marketLibertarianEntry.sections.find(({ id }) => id === 'history').tim
 assert.ok(marketLibertarianEntry.sections.find(({ id }) => id === 'history').timeline.some(({ period }) => period.startsWith('1979:')));
 const marketVariants = marketLibertarianEntry.sections.find(({ id }) => id === 'variants').blocks[0].rows;
 assert.ok(marketVariants.find(({ label }) => label.startsWith('Ordoliberalism'))?.citations.researchSourceIds.includes('fritzGoldschmidtStoerringOrdoliberalism2021'));
+assert.ok(marketVariants.find(({ label }) => label.startsWith('Constantian modern liberty'))?.citations.researchSourceIds.includes('bnfConstantLibertyModerns1819French'));
+assert.ok(marketLibertarianEntry.sections.find(({ id }) => id === 'history').timeline.some(({ period }) => period.startsWith('1819–2001:')));
 const marketPeople = marketLibertarianEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries;
 assert.ok(marketPeople.find(({ name }) => name.startsWith('Walter Eucken')));
+assert.ok(marketPeople.find(({ name }) => name.startsWith('Benjamin Constant')));
 assert.ok(marketLibertarianEntry.researchGaps.some((gap) => gap.startsWith('Read Goldsmith’s complete 1979 article')));
 assert.ok(marketLibertarianEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Fritz')));
 

@@ -921,7 +921,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A market-oriented libertarian profile that treats individual liberty, private property, voluntary exchange, freedom of contract, and protection from coercion as central political values. It favors a highly limited state or, in stronger versions, voluntary and market-based alternatives to state functions, while leaving social customs and personal identity largely to individual choice.',
     summaryCitations: citations(
       ['hayekKnowledge', 'millOnLiberty', 'nozickASU', 'lockeSecondTreatise', 'constantLibertyModerns'],
-      ['sepLibertarianism', 'sepLiberalism', 'sageWhatIsFrenchLiberalism'],
+      ['sepLibertarianism', 'sepLiberalism', 'sageWhatIsFrenchLiberalism', 'bnfConstantLibertyModerns1819French', 'viffryKeslassyTocqueville2001French'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -1051,7 +1051,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
           {
             period: 'Nineteenth-century French liberal debates',
             text: 'French liberalism was not one exportable doctrine. Constant emphasized modern civil liberty, representative institutions, and limits on concentrated power; Tocqueville linked liberty to associations, habits, religion, and democratic conditions; Bastiat defended free exchange and economic liberty. Their differences matter: Bastiat’s political economy cannot simply be equated with Constant’s constitutional thought or with contemporary right-libertarianism.',
-            citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat']),
+            citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'bnfConstantLibertyModerns1819French']),
+          },
+          {
+            period: '1819–2001: French distinctions inside liberalism',
+            text: 'The BnF record identifies Constant’s 1819 French speech as a primary discussion of ancient and modern liberty, but the speech should not be treated as a direct blueprint for contemporary market libertarianism. A French review of Éric Keslassy’s work presents Tocqueville as politically liberal while distinguishing him from the more market-centered French economists and emphasizes pauperism as a test of liberal social analysis. These sources support a boundary lesson: civil liberty, constitutional limits, market exchange, and social-policy judgments must be scored separately.',
+            citations: citations([], ['bnfConstantLibertyModerns1819French', 'viffryKeslassyTocqueville2001French']),
           },
           {
             period: '1859 and the development of individual liberty',
@@ -1107,7 +1112,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 label: 'Nineteenth-century French liberalism',
                 distinction: 'A heterogeneous family including Constant’s constitutional and civil-liberty arguments, Tocqueville’s analysis of democracy and associations, and Bastiat’s defense of free exchange and economic liberty.',
                 relation: 'Important intellectual ancestor and contrast case; it contains broader and more historically situated arguments than this narrow market-libertarian card.',
-                citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat']),
+                citations: citations(['constantLibertyModerns', 'tocquevilleDemocracy'], ['sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'bnfConstantLibertyModerns1819French', 'viffryKeslassyTocqueville2001French']),
+              },
+              {
+                label: 'Constantian modern liberty',
+                distinction: 'Centers civil independence, representative institutions, and protection against arbitrary power; it is a constitutional-liberal strand rather than a complete argument for minimal government or unrestricted markets.',
+                relation: 'An important French liberal precursor and contrast case. Its civil-liberty vocabulary can overlap with this profile while leaving economic redistribution, social protection, empire, and public provision open to separate analysis.',
+                citations: citations(['constantLibertyModerns'], ['bnfConstantLibertyModerns1819French', 'cambridgeConstitutionalLiberalismFrance']),
               },
               {
                 label: 'Minarchism / right-libertarianism',
@@ -1203,6 +1214,12 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'A nineteenth-century liberal precursor whose political economy and historical context should not be collapsed into contemporary libertarianism.',
                 citations: citations([], ['economieBastiat', 'sageWhatIsFrenchLiberalism']),
               },
+              {
+                name: 'Benjamin Constant',
+                role: 'French-speaking constitutional and civil-liberty thinker',
+                caveat: 'His 1819 distinction between ancient and modern liberty is a primary intellectual reference, not a complete market-libertarian programme or evidence that all modern libertarians share his constitutional commitments.',
+                citations: citations(['constantLibertyModerns'], ['bnfConstantLibertyModerns1819French', 'cambridgeConstitutionalLiberalismFrance']),
+              },
             ],
           },
           {
@@ -1270,6 +1287,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The French liberal record supplies a further safeguard against flattening the label. Constant’s civil-liberty argument and Tocqueville’s concern with democratic association do not by themselves settle the economic axis; the French review literature also presents Tocqueville’s analysis of pauperism as a challenge to treating market exchange as the sole regulator of social order. These are attributed interpretations and historical arguments, not proof that social provision is always required or that market institutions cannot coexist with liberal rights.',
+            citations: citations([], ['bnfConstantLibertyModerns1819French', 'viffryKeslassyTocqueville2001French', 'sageWhatIsFrenchLiberalism']),
+          },
+          {
+            type: 'paragraph',
             text: 'The entitlement and ordoliberal debates sharpen two different objections. Goldsmith’s critique questions whether a historical entitlement theory can specify and repair past wrongs with enough information across generations, while ordoliberal scholarship argues that competition requires public rules capable of checking private economic power. These are distinct criticisms: one concerns the justification and feasibility of rectification, the other the institutional conditions of a functioning market order.',
             citations: citations([], ['goldsmithEntitlementTheory1979', 'fritzGoldschmidtStoerringOrdoliberalism2021']),
           },
@@ -1324,11 +1346,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'kantPerpetualPeace',
         'morgenthauRealism',
       ],
-      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'fritzGoldschmidtStoerringOrdoliberalism2021', 'freiburgOrdoliberalDebates', 'nozickRectification1974UT', 'sepNozickPolitical2022', 'goldsmithEntitlementTheory1979', 'coutoEntitlement2017'],
+      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'bnfConstantLibertyModerns1819French', 'viffryKeslassyTocqueville2001French', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'fritzGoldschmidtStoerringOrdoliberalism2021', 'freiburgOrdoliberalDebates', 'nozickRectification1974UT', 'sepNozickPolitical2022', 'goldsmithEntitlementTheory1979', 'coutoEntitlement2017'],
       editorialNote: 'The entry distinguishes primary arguments from comparative philosophical interpretation. Its scores describe one market-libertarian archetype and do not define all classical liberals, libertarians, or market-oriented governments. The education essay is primary policy argument; Cowen and the German institutional sources provide attributed interpretation, not causal programme evaluation. German pages were reconsulted on 16 September 2026; English summaries are original paraphrases, not source translations. All six coordinates remain unchanged.',
     },
     researchGaps: [
-      'Expand French-language and specialist scholarship on Constant, Bastiat, Tocqueville, Guizot, and the liberal tradition, with care around the difference between nineteenth-century liberalism and contemporary libertarianism.',
+      'This pass adds a BnF primary record for Constant’s 1819 French speech and a bounded French review of Keslassy on Tocqueville and pauperism. Still expand French-language and specialist scholarship on Constant, Bastiat, Tocqueville, Guizot, and the liberal tradition, including full primary texts and the difference between nineteenth-century liberalism and contemporary libertarianism.',
       'Add German-language scholarship on the ordoliberal and Austrian traditions; neither should be treated as interchangeable with minarchism or anarcho-capitalism.',
       'Add specialist research on public goods, externalities, corporate power, environmental limits, and the empirical performance of low-tax or low-regulation regimes.',
       'Add country-specific data before showing contemporary states as examples; current market openness and civil-liberties indicators are not sufficient for an exact six-axis match.',
