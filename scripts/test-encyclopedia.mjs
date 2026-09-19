@@ -1251,6 +1251,36 @@ assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Add 
 assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Review the full Englert chapter')));
 assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Collate the 1783 speech')));
 assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Read Collins in full')));
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['maistreConsiderationsFrance1796', 'primary', '1796', ['French'], 'high'],
+  ['chateaubriandMonarchieCharte1816', 'primary', '1816', ['French'], 'high'],
+  ['clementConservateur1996', 'secondary', '1996-12', ['French'], 'medium'],
+]) {
+  assert.ok(burkeConservativeEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a conservative reference trail`);
+  assert.ok(JSON.stringify(burkeConservativeEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must resolve once`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:conservative']);
+}
+const conservativeHistory = burkeConservativeEntry.sections.find(({ id }) => id === 'history').timeline;
+assert.ok(conservativeHistory.some(({ period }) => period.startsWith('1796–1797:')));
+assert.ok(conservativeHistory.some(({ period }) => period.startsWith('1816–1820:')));
+const conservativeVariants = burkeConservativeEntry.sections.find(({ id }) => id === 'variants').blocks[0].rows;
+assert.ok(conservativeVariants.find(({ label }) => label.startsWith('Counter-revolutionary'))?.citations.researchSourceIds.includes('maistreConsiderationsFrance1796'));
+assert.ok(conservativeVariants.find(({ label }) => label.startsWith('Restoration charter'))?.citations.researchSourceIds.includes('chateaubriandMonarchieCharte1816'));
+const conservativePeople = burkeConservativeEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries;
+assert.ok(conservativePeople.find(({ name }) => name === 'Joseph de Maistre'));
+assert.ok(conservativePeople.find(({ name }) => name === 'François-René de Chateaubriand'));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Read de Maistre’s complete French text')));
+assert.ok(burkeConservativeEntry.researchGaps.some((gap) => gap.startsWith('Collate Chateaubriand’s 1816 work')));
 
 const nozickMarketEntry = ENCYCLOPEDIA_ENTRIES['libertarian-market'];
 for (const [sourceId, evidenceRole, publicationDate, languages] of [

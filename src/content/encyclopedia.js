@@ -6531,7 +6531,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
     summary: 'A family of political views that values inherited institutions, social continuity, practical knowledge, lawful authority, and gradual rather than abstractly engineered change. Conservatives may support markets, welfare, national development, constitutional liberty, religious tradition, monarchy, democracy, or strong government in different combinations; the common thread is usually a presumption that institutions embody experience and that rapid redesign carries serious risks.',
     summaryCitations: citations(
       ['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics', 'hobbesLeviathan'],
-      ['sepConservatism', 'bpbConservatism', 'sepLiberalism'],
+      ['sepConservatism', 'bpbConservatism', 'sepLiberalism', 'maistreConsiderationsFrance1796', 'chateaubriandMonarchieCharte1816', 'clementConservateur1996'],
     ),
     dimensionInterpretations: {
       economic: {
@@ -6586,6 +6586,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'The label includes constitutional conservatives, traditionalists, paternal conservatives, one-nation or social conservatives, liberal conservatives, Christian democrats, national conservatives, reactionaries, and other currents that disagree about democracy, markets, equality, religion, empire, and the nation. The entry therefore records a family resemblance rather than assigning one universal conservative policy. Burke is an important reference point, but conservatism should not be reduced to Burke or projected unchanged onto every modern movement that uses the word.',
             citations: citations(['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics'], ['sepConservatism', 'bpbConservatism', 'oxfordChristianDemocracy']),
           },
+          {
+            type: 'evidence-note',
+            text: 'French political history makes the family resemblance especially visible. De Maistre represents a counter-revolutionary, providential and royalist edge, while Chateaubriand’s Restoration writing argues for monarchy through the Charter and the political institutions of the post-Napoleonic settlement. Clément’s study of Le Conservateur shows how the ultras’ reactionary politics operated as an organized opinion after losing their earlier parliamentary majority. These are distinct historical variants, not a single French conservative doctrine.',
+            citations: citations([], ['maistreConsiderationsFrance1796', 'chateaubriandMonarchieCharte1816', 'clementConservateur1996']),
+          },
         ],
       },
       {
@@ -6624,6 +6629,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The French counter-revolutionary tradition also shows why “conservative” cannot be used as a synonym for cautious constitutional reform. De Maistre treats the Revolution through providence, monarchy, religion, and the restoration of political authority, while Chateaubriand defends a royalist order through the Charter and debates over ministerial responsibility and press liberty. Their proximity in time conceals a difference between rejection of revolutionary principles and an attempt to stabilize monarchy through constitutional institutions.',
+            citations: citations([], ['maistreConsiderationsFrance1796', 'chateaubriandMonarchieCharte1816']),
+          },
+          {
+            type: 'paragraph',
             text: 'Religion and hierarchy have a specific role in Guizot’s polemic. Chapter VII, pp. 70–72, pairs duties of assistance by the wealthy with obedience, work, and thrift among poorer people, presenting Christianity as an answer to socialist and communist demands. The entry reports his argument; it does not accept his condemnation of those movements as a neutral definition of them. Nor does this passage establish that Christianity necessarily requires class inequality or that every religious conservative favors clerical government. Moral authority, social hierarchy, constitutional design, and the franchise remain separate questions.',
             citations: citations([], ['guizotDemocracyFrance1849']),
           },
@@ -6657,6 +6667,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1789–1815: revolution, counter-revolution, and the modern conservative response',
             text: 'The French Revolution made the defense of inherited institutions, gradual reform, religion, property, and social order into a recognizable modern political response. Burke criticized abstract reconstruction and revolutionary rupture while accepting that institutions may need change to survive. Other European reactionary currents sought stronger restoration of throne, altar, and inherited authority; conservatism and reaction developed together but are not identical.',
             citations: citations(['burkeReflections'], ['sepConservatism', 'bpbConservatism']),
+          },
+          {
+            period: '1796–1797: de Maistre and the counter-revolutionary boundary',
+            text: 'Joseph de Maistre’s Considérations sur la France presents a strongly providential and royalist response to the Revolution, linking political order, religious meaning, national integrity, and the restoration of legitimate authority. It is a primary witness to reactionary conservatism, not a general description of all conservatives or a proof that later constitutional conservatives shared its theology and political conclusions.',
+            citations: citations([], ['maistreConsiderationsFrance1796']),
+          },
+          {
+            period: '1816–1820: Chateaubriand, the Charter, and Le Conservateur',
+            text: 'Chateaubriand’s De la monarchie selon la Charte defended a Restoration monarchy while arguing within the Charter’s constitutional framework and addressing ministerial responsibility and the freedom of the press. Jean-Paul Clément’s history of Le Conservateur places this politics after the ultras lost their earlier parliamentary majority: they remained a reactionary organized opinion rather than a restored ancien régime. The episode distinguishes royalist constitutional advocacy from both liberal democracy and pure restorationism.',
+            citations: citations([], ['chateaubriandMonarchieCharte1816', 'clementConservateur1996']),
           },
           {
             period: '1848: electoral exclusion and the fall of the July Monarchy',
@@ -6756,6 +6776,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['burkeReflections', 'hobbesLeviathan'], ['sepConservatism', 'bpbConservatism']),
               },
               {
+                label: 'Counter-revolutionary providential traditionalism',
+                distinction: 'Treats revolutionary rupture as a religious and political catastrophe requiring the restoration of legitimate authority, monarchy, and inherited order.',
+                relation: 'De Maistre is a historical boundary case: more openly reactionary and providential than constitutional or gradualist conservatism, and not a synonym for every religious traditionalist.',
+                citations: citations([], ['maistreConsiderationsFrance1796']),
+              },
+              {
+                label: 'Restoration charter conservatism',
+                distinction: 'Defends monarchy and inherited continuity while working through a constitutional charter, representative institutions, ministerial responsibility, and public political debate.',
+                relation: 'Chateaubriand and the ultra-royalist press illustrate a royalist variant that cannot be collapsed into de Maistre’s counter-revolutionary theology or into modern constitutional conservatism.',
+                citations: citations([], ['chateaubriandMonarchieCharte1816', 'clementConservateur1996']),
+              },
+              {
                 label: 'Security and law-and-order conservatism',
                 distinction: 'Prioritizes policing, borders, military capacity, punishment, executive authority, and institutional discipline as conditions of public safety and social continuity.',
                 relation: 'Raises the authority and foreign-policy scores, but becomes authoritarian only when accountability, equal protection, and independent institutions are systematically removed.',
@@ -6783,6 +6815,18 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 role: 'French minister and author whose 1849 polemic connects constitutional checks, social order, religion, and resistance to democratic claims.',
                 caveat: 'Included as a bounded historical case, not a permanent six-coordinate identity. His retrospective praise of constitutional monarchy requires comparison with institutional practice; his hostile descriptions of opponents are not the project’s classifications.',
                 citations: citations([], ['guizotDemocracyFrance1849', 'assembleeFebruary1848']),
+              },
+              {
+                name: 'Joseph de Maistre',
+                role: 'Savoyard counter-revolutionary writer of providential, royalist, and religious political arguments',
+                caveat: 'A reactionary boundary case rather than a complete definition of conservatism; his theology, monarchy, and interpretation of revolutionary violence should not be projected onto constitutional or liberal conservatives.',
+                citations: citations([], ['maistreConsiderationsFrance1796']),
+              },
+              {
+                name: 'François-René de Chateaubriand',
+                role: 'French Restoration royalist and advocate of monarchy according to the Charter',
+                caveat: 'His political writing is period-specific advocacy. The Charter framework and royalist press activity distinguish him from both de Maistre’s counter-revolutionary theology and later democratic conservatism.',
+                citations: citations([], ['chateaubriandMonarchieCharte1816', 'clementConservateur1996']),
               },
               {
                 name: 'Alexis de Tocqueville',
@@ -6819,6 +6863,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 match: 'Historical setting for arguments about constitutional continuity, parliamentary reform, property, empire, religion, and the management of social change.',
                 caveat: 'British conservatism included different Tory, Anglican, imperial, reformist, and protectionist currents, and its historical relationship to Ireland and empire requires separate treatment.',
                 citations: citations(['burkeReflections'], ['sepConservatism']),
+              },
+              {
+                name: 'French Restoration royalist and ultra-royalist politics',
+                period: 'France, 1816–1820 emphasis',
+                match: 'bounded historical comparator for royalist, religious, and reactionary conservatism organized through public political opinion',
+                caveat: 'The ultras’ post-1816 minority position, Chateaubriand’s Charter argument, and Le Conservateur’s political work do not establish a single French conservative programme or a permanent classification of Restoration France.',
+                citations: citations([], ['chateaubriandMonarchieCharte1816', 'clementConservateur1996']),
               },
               {
                 name: 'German conservative statecraft and social insurance',
@@ -6887,6 +6938,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
+            text: 'The French counter-revolutionary and Restoration cases add a separate safeguard. Appeals to providence, monarchy, religious authority, or national restoration can identify real fears about violence and institutional collapse, but they can also deny the legitimacy of equal political participation and turn dissent into treason. The project must therefore distinguish an argument for continuity, an argument for constitutional monarchy, and an argument for suppressing revolutionary or democratic claims; historical proximity is not conceptual identity.',
+            citations: citations([], ['maistreConsiderationsFrance1796', 'chateaubriandMonarchieCharte1816', 'clementConservateur1996']),
+          },
+          {
+            type: 'paragraph',
             text: 'A third criticism concerns authority and order. Public safety, family, religion, nation, and law can provide real coordination, but order language may justify surveillance, censorship, punishment without due process, militarization, or the suppression of minorities and opposition. Constitutional review, equal citizenship, independent courts, freedom of association, transparent policing, and peaceful alternation of power are safeguards against the slide from legitimate authority into authoritarian rule.',
             citations: citations(['hobbesLeviathan', 'lockeLetterToleration', 'tocquevilleDemocracy'], ['sepConservatism', 'vdem', 'sepReligionPolitics']),
           },
@@ -6915,8 +6971,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['burkeReflections', 'tocquevilleDemocracy', 'oakeshottRationalismPolitics', 'hobbesLeviathan', 'adamSmithWealth', 'hayekKnowledge', 'lockeSecondTreatise', 'lockeLetterToleration', 'aquinasMoralPolitical', 'renanNation', 'morgenthauRealism', 'millOnLiberty', 'wollstonecraftRights'],
-      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook', 'guizotDemocracyFrance1849', 'rosanvallonDoctrinaires1993', 'englertGuizotCapacity2024', 'assembleeFebruary1848', 'burkeFoxIndia1783', 'collinsMercantile2019', 'maresGlobalBurke2025'],
-      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution. The Guizot case separates primary polemic, scholarly interpretation, and institutional history; it does not revise the six scores. The English translation remains uncollated, and the 2024 chapter is represented only by its explicitly identified publisher abstract. The Burke addition distinguishes a selected primary transcription, Collins’s abstract, and Mares’s historiographical analysis. It supplies no new person/country match, changes no dimension interpretation, and republishes no source wording.',
+      researchSourceIds: ['sepConservatism', 'bpbConservatism', 'sepNationalism', 'sepReligionPolitics', 'sepLiberalism', 'foreignPolicy', 'vdem', 'oxfordChristianDemocracy', 'openTextbook', 'guizotDemocracyFrance1849', 'maistreConsiderationsFrance1796', 'chateaubriandMonarchieCharte1816', 'clementConservateur1996', 'rosanvallonDoctrinaires1993', 'englertGuizotCapacity2024', 'assembleeFebruary1848', 'burkeFoxIndia1783', 'collinsMercantile2019', 'maresGlobalBurke2025'],
+      editorialNote: 'The entry treats conservatism as a family resemblance and distinguishes reformist, constitutional, religious, social, national, reactionary, and security-oriented variants. The score is a didactic composite, not a verdict on every conservative thinker, party, country, or institution. The Guizot case separates primary polemic, scholarly interpretation, and institutional history; it does not revise the six scores. The French counter-revolution and Restoration additions distinguish de Maistre and Chateaubriand’s primary political arguments from Clément’s secondary account of Le Conservateur and the ultras. The English translation remains uncollated, and the 2024 chapter is represented only by its explicitly identified publisher abstract. The Burke addition distinguishes a selected primary transcription, Collins’s abstract, and Mares’s historiographical analysis. It supplies no new person/country match, changes no dimension interpretation, and republishes no source wording.',
     },
     researchGaps: [
       'Add French-language scholarship on de Maistre, Chateaubriand, Tocqueville, liberal conservatism, reaction, republicanism, empire, and the different histories of French right-wing traditions.',
@@ -6929,6 +6985,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Review the full Englert chapter and competing scholarship before extending the capacity argument. The Guizot case and Rosanvallon intervention only partly address the existing French-language gap; they do not complete coverage of reaction, empire, citizenship exclusions, or all French conservative traditions.',
       'Collate the 1783 speech with a scholarly edition and contemporary parliamentary records; examine the bill, its fate, and the Hastings proceedings separately. An argument about trusteeship is not evidence of successful reform or consent by those governed.',
       'Read Collins in full and compare Mares’s account directly with Pitts, O’Neill, Agnani, Hampsher-Monk and Richard Bourke. Add South Asian scholarship and affected communities’ histories before extending the imperial case; this pass does not complete the colonialism, race or multilingual research gaps.',
+      'Read de Maistre’s complete French text against a critical scholarly edition and compare it with Bonald, Burke, and later counter-revolutionary scholarship; the current source establishes a primary boundary case but does not complete the history of French reaction.',
+      'Collate Chateaubriand’s 1816 work with its first edition and the complete Le Conservateur run, then compare the Charter argument with Restoration statutes, parliamentary debates, censorship practice, and later liberal-conservative scholarship.',
     ],
   },
   'civic-nationalist': {
