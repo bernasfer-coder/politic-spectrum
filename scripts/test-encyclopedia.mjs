@@ -1577,7 +1577,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages] of [
   assert.deepEqual(record.languages, languages);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:monarchist']);
+  assert.deepEqual(record.relationships.profileEntries.sort(), ['encyclopedia:monarchist', 'geography:saudi-basic-law-shura-order']);
 }
 assert.ok(saudiMonarchistEntry.researchGaps.some((gap) => gap.startsWith('This pass adds Nasib’s Arabic constitutional-law analysis')));
 const saudiAuthority = saudiMonarchistEntry.dimensionInterpretations.authority.citations.researchSourceIds;

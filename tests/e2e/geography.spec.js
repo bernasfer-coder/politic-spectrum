@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(26);
+  await expect(page.locator('.geo-card')).toHaveCount(27);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(3);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -28,7 +28,7 @@ test('shared cases link to the encyclopedia and bibliography, and return to the 
   await card.getByRole('link', { name: /Related encyclopedia/ }).click();
   await expect(page).toHaveURL(/#encyclopedia\/theocratic$/);
   await expect(page.getByText('SIX-AXIS READING', { exact: true })).toBeVisible();
-  await expect(page.locator('.encyclopedia-geography a')).toHaveAttribute('href', '#geography?label=jurist-guardianship');
+  await expect(page.locator('.encyclopedia-geography a[href="#geography?label=jurist-guardianship"]')).toHaveAttribute('href', '#geography?label=jurist-guardianship');
   await page.goBack();
   await expect(card).toHaveCount(1);
   await card.locator('.geo-evidence summary').click();
@@ -57,7 +57,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(26);
+  await expect(page.locator('.geo-card')).toHaveCount(27);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
