@@ -3643,6 +3643,9 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   ['kuwaitConstitution1962Ilo', 'primary', '1962', ['English witness; Arabic original not collated'], 'high'],
   ['allarakiaKuwaitParalysis2025', 'secondary', '2025', ['English'], 'high'],
   ['carnegieKuwaitParliament2025', 'secondary', '2025-03', ['English'], 'medium'],
+  ['kuwaitConstitutionalCourtRuling2023Arabic', 'primary', '2023-03-19', ['Arabic'], 'high'],
+  ['alHuwailahKuwaitCourt2024', 'secondary', '2024-09', ['English abstract; Arabic judgment and full legal record not independently collated'], 'medium'],
+  ['kfasInterpellationKuwait2001', 'secondary', '2001-01', ['Arabic; English abstract'], 'medium'],
   ['chicagoGulfHereditaryMonarchies', 'secondary', null, ['English'], 'medium'],
 ]) {
   assert.ok(monarchistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Kuwait monarchist reference trail`);
@@ -3669,6 +3672,8 @@ const kuwaitExample = monarchistEntry.sections.find(({ id }) => id === 'examples
 assert.ok(kuwaitExample, 'Kuwait must appear as a bounded historical example');
 assert.ok(monarchistEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The Kuwait case adds a Gulf safeguard')));
 assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Arabic Constitution of Kuwait')));
+assert.ok(monarchistEntry.researchGaps.some((gap) => gap.startsWith('The Kuwait constitutional-court update remains bounded')));
+assert.ok(monarchistEntry.sections.find(({ id }) => id === 'history').timeline.some(({ period }) => period.startsWith('2022–2023: constitutional adjudication')));
 for (const dimensionId of ['economic', 'social', 'authority', 'identity', 'foreign', 'religion']) {
   assert.ok(monarchistEntry.dimensionInterpretations[dimensionId], `${dimensionId} must retain the monarchist six-axis interpretation`);
 }
