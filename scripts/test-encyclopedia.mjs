@@ -4122,6 +4122,32 @@ for (const [sourceId, evidenceRole] of [
   assert.equal(record.directQuote, null, `${sourceId} must not introduce a quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:libertarian-market'), `${sourceId} needs an encyclopedia backlink`);
 }
+for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
+  ['fritzGoldschmidtStoerringOrdoliberalism2021', 'secondary', '2021-02-06', ['English'], 'high'],
+  ['goldsmithEntitlementTheory1979', 'secondary', '1979-12-01', ['English'], 'medium'],
+]) {
+  assert.ok(marketLibertarianEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a market-libertarian reference trail`);
+  assert.ok(JSON.stringify(marketLibertarianEntry.sections).includes(sourceId), `${sourceId} needs a claim-level citation`);
+  const records = BIBLIOGRAPHY_RECORDS.filter((record) => record.citationIds.researchSourceIds?.includes(sourceId));
+  assert.equal(records.length, 1, `${sourceId} must reuse one bibliography record`);
+  const [record] = records;
+  assert.equal(record.evidenceRole, evidenceRole);
+  assert.equal(record.publicationDate, publicationDate);
+  assert.deepEqual(record.languages, languages);
+  assert.equal(record.review.confidence, confidence);
+  assert.equal(record.accessDate, '2026-09-19');
+  assert.equal(record.publicationStatus, 'link-only');
+  assert.equal(record.directQuote, null);
+  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:libertarian-market']);
+}
+assert.ok(marketLibertarianEntry.sections.find(({ id }) => id === 'history').timeline.some(({ period }) => period.startsWith('1930s–postwar:')));
+assert.ok(marketLibertarianEntry.sections.find(({ id }) => id === 'history').timeline.some(({ period }) => period.startsWith('1979:')));
+const marketVariants = marketLibertarianEntry.sections.find(({ id }) => id === 'variants').blocks[0].rows;
+assert.ok(marketVariants.find(({ label }) => label.startsWith('Ordoliberalism'))?.citations.researchSourceIds.includes('fritzGoldschmidtStoerringOrdoliberalism2021'));
+const marketPeople = marketLibertarianEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ type }) => type === 'people').entries;
+assert.ok(marketPeople.find(({ name }) => name.startsWith('Walter Eucken')));
+assert.ok(marketLibertarianEntry.researchGaps.some((gap) => gap.startsWith('Read Goldsmith’s complete 1979 article')));
+assert.ok(marketLibertarianEntry.researchGaps.some((gap) => gap.startsWith('Read the complete Fritz')));
 
 const omanMonarchistEntry = ENCYCLOPEDIA_ENTRIES.monarchist;
 for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [

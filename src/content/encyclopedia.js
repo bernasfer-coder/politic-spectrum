@@ -897,7 +897,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -86,
         label: 'Strongly free-market',
         explanation: 'Private property, contract, competition, and decentralized exchange are preferred to central planning, broad redistribution, and extensive economic regulation. The score describes a normative preference; it does not imply that markets operate without law, public institutions, or historically inherited power.',
-        citations: citations(['adamSmithWealth', 'hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
+        citations: citations(['adamSmithWealth', 'hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism', 'fritzGoldschmidtStoerringOrdoliberalism2021', 'goldsmithEntitlementTheory1979']),
       },
       social: {
         score: 34,
@@ -950,6 +950,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'Defending property is not automatically defending whoever currently possesses it. Nozick’s chapter 7 closing passage makes past injustice relevant to whether holdings should be protected or corrected; a market label cannot answer that historical question by itself.',
             citations: citations([], ['nozickRectification1974UT']),
           },
+          {
+            type: 'evidence-note',
+            text: 'Ordoliberalism is a neighboring market tradition, not a synonym for this profile. Fritz, Goldschmidt, and Störring describe its contextual liberalism as requiring a legal and social order that markets do not create by themselves; that distinction keeps a rule-constructing competitive state separate from libertarian laissez-faire.',
+            citations: citations([], ['fritzGoldschmidtStoerringOrdoliberalism2021']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The entitlement framework also has a documented critical literature. Goldsmith identifies difficulties in acquisition, transfer, and rectification, especially the information and intergenerational uncertainty involved in repairing historical injustice; the abstract consulted here does not settle those debates or supply a policy remedy.',
+            citations: citations([], ['goldsmithEntitlementTheory1979', 'sepNozickPolitical2022']),
+          },
         ],
       },
       {
@@ -986,6 +996,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             text: 'At the end of chapter 7, Nozick allows that repairing past wrongs could justify transfer payments and temporarily broader state action. His tentative rule favoring the least advantaged depends on assumptions about victims and beneficiaries, and he questions its plausibility. This is not an unconditional endorsement of Rawls’s difference principle or of every redistributive policy.',
             citations: citations([], ['nozickRectification1974UT']),
           },
+          {
+            type: 'paragraph',
+            text: 'Ordoliberal arguments sit beside, but not inside, the narrowest market-libertarian ideal. They treat competition as dependent on a deliberately constructed legal order, including rules against concentrations of private power and social conditions that markets cannot guarantee. This is a useful boundary case: support for markets alone does not determine whether a thinker favors a minimal state, a constitutional competition state, or a broader social market order.',
+            citations: citations([], ['fritzGoldschmidtStoerringOrdoliberalism2021', 'euckenFreiburgHistory']),
+          },
         ],
       },
       {
@@ -1018,6 +1033,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             citations: citations(['hayekKnowledge', 'nozickASU'], ['sepLibertarianism', 'sepLiberalism']),
           },
           {
+            period: '1930s–postwar: Freiburg ordoliberalism as a boundary case',
+            text: 'The Freiburg School associated with Walter Eucken and Franz Böhm argued that a competitive economy requires a legal framework deliberately established and defended by public authority. Its reconstruction context and concern with private concentrations make it a neighboring German liberal tradition, not an interchangeable form of laissez-faire, minarchism, or anarcho-capitalism.',
+            citations: citations([], ['euckenFreiburgHistory', 'fritzGoldschmidtStoerringOrdoliberalism2021']),
+          },
+          {
             period: '1955 — market choice with public education finance',
             text: 'Friedman’s education essay accepted spillover benefits as grounds for public funding and minimum schooling requirements, while proposing vouchers usable at approved providers. He also allowed some public operation where competition was impractical. Our classification implication is that funding, provision, and regulation require separate analysis: a market mechanism is not necessarily a rejection of public expenditure.',
             citations: citations([], ['friedmanEducation1955']),
@@ -1026,6 +1046,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             period: '1974 — entitlement and the unfinished rectification problem',
             text: 'Anarchy, State, and Utopia defends a minimal state while reserving a significant role for repairing injustice. Its closing chapter 7 discussion leaves the detailed rectification theory for further work; the qualification belongs to the original argument, not an inferred later conversion.',
             citations: citations(['nozickASU'], ['nozickRectification1974UT']),
+          },
+          {
+            period: '1979: early criticism of entitlement and rectification',
+            text: 'Goldsmith’s peer-reviewed critique argues that Nozick’s acquisition, transfer, and rectification principles face difficulties, with rectification especially affected by incomplete information and intergenerational uncertainty. The article is evidence of an important criticism, not a reason to treat all libertarians as sharing one response or to infer the empirical effects of any remedy.',
+            citations: citations([], ['goldsmithEntitlementTheory1979', 'sepNozickPolitical2022']),
           },
           {
             period: 'Contemporary debates',
@@ -1061,15 +1086,15 @@ export const ENCYCLOPEDIA_ENTRIES = {
               },
               {
                 label: 'Ordoliberalism: a neighboring market tradition',
-                distinction: 'The Walter Eucken Institut’s history and Goldschmidt–Wohlgemuth propositions emphasize general competition rules and constraints on private economic power, rather than unrestricted laissez-faire.',
+                distinction: 'Freiburg histories and later scholarship emphasize general competition rules, a deliberately constructed legal order, and constraints on private economic power, rather than unrestricted laissez-faire.',
                 relation: 'A state capable of enforcing the competitive order is part of this account. Market orientation therefore does not make ordoliberalism synonymous with minarchism or anarcho-capitalism, nor establish its position on the other axes.',
-                citations: citations([], ['euckenFreiburgHistory']),
+                citations: citations([], ['euckenFreiburgHistory', 'fritzGoldschmidtStoerringOrdoliberalism2021']),
               },
               {
                 label: 'Rectification versus maintaining a distributive pattern',
                 distinction: 'Correcting a rights violation differs from repeatedly adjusting holdings to preserve a preferred distribution.',
-                relation: 'A transfer’s justification matters; its outward appearance alone does not settle whether it conflicts with an entitlement theory.',
-                citations: citations([], ['nozickRectification1974UT', 'sepNozickPolitical2022']),
+                relation: 'A transfer’s justification matters; its outward appearance alone does not settle whether it conflicts with an entitlement theory. Critics also question whether historical information and intergenerational uncertainty make rectification determinate.',
+                citations: citations([], ['nozickRectification1974UT', 'sepNozickPolitical2022', 'goldsmithEntitlementTheory1979']),
               },
               {
                 label: 'Anarcho-capitalism',
@@ -1124,10 +1149,16 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 citations: citations(['hayekKnowledge'], ['sepLibertarianism', 'sepLiberalism']),
               },
               {
+                name: 'Walter Eucken and Franz Böhm',
+                role: 'Freiburg School theorists of competition and legal economic order',
+                caveat: 'Important German market-liberal neighbors, but their deliberate state construction of competitive rules distinguishes ordoliberalism from the narrow market-libertarian profile.',
+                citations: citations([], ['euckenFreiburgHistory', 'fritzGoldschmidtStoerringOrdoliberalism2021']),
+              },
+              {
                 name: 'Robert Nozick',
                 role: 'rights-based defender of the minimal state',
                 caveat: 'Nozick’s argument is one influential philosophical version, not a consensus definition of libertarianism. The chapter 7 qualification on rectification matters when using him as an illustrative reference.',
-                citations: citations(['nozickASU'], ['sepLibertarianism', 'nozickRectification1974UT']),
+                citations: citations(['nozickASU'], ['sepLibertarianism', 'nozickRectification1974UT', 'goldsmithEntitlementTheory1979']),
               },
               {
                 name: 'Milton Friedman',
@@ -1167,6 +1198,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 caveat: 'A country’s market openness or civil-liberties score cannot establish the full philosophical profile without examining taxation, regulation, welfare, coercion, borders, and foreign policy together.',
                 citations: citations(['hayekKnowledge', 'millOnLiberty'], ['sepLibertarianism', 'vdem']),
               },
+              {
+                name: 'German ordoliberal / social-market tradition',
+                period: '1930s–postwar reconstruction and later debates',
+                match: 'neighboring market tradition with a stronger public role in constructing competition rules',
+                caveat: 'This is a boundary case, not an exact country or regime match for the profile: ordoliberal arguments affirm markets while assigning public authority responsibility for the legal and social conditions of competition.',
+                citations: citations([], ['euckenFreiburgHistory', 'fritzGoldschmidtStoerringOrdoliberalism2021']),
+              },
             ],
           },
         ],
@@ -1198,6 +1236,11 @@ export const ENCYCLOPEDIA_ENTRIES = {
             type: 'paragraph',
             text: 'Critics argue that libertarian rights and property rules cannot avoid questions of history, unequal bargaining power, inherited wealth, and the distribution of natural resources. They also argue that taxation and regulation can protect the background conditions that make freedom and markets meaningful, rather than simply violating liberty.',
             citations: citations(['nozickASU', 'millOnLiberty'], ['sepLibertarianism', 'sepLiberalism']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The entitlement and ordoliberal debates sharpen two different objections. Goldsmith’s critique questions whether a historical entitlement theory can specify and repair past wrongs with enough information across generations, while ordoliberal scholarship argues that competition requires public rules capable of checking private economic power. These are distinct criticisms: one concerns the justification and feasibility of rectification, the other the institutional conditions of a functioning market order.',
+            citations: citations([], ['goldsmithEntitlementTheory1979', 'fritzGoldschmidtStoerringOrdoliberalism2021']),
           },
           {
             type: 'paragraph',
@@ -1250,7 +1293,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         'kantPerpetualPeace',
         'morgenthauRealism',
       ],
-      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'freiburgOrdoliberalDebates', 'nozickRectification1974UT', 'sepNozickPolitical2022', 'coutoEntitlement2017'],
+      researchSourceIds: ['sepLibertarianism', 'sepLiberalism', 'sepReligionPolitics', 'sageWhatIsFrenchLiberalism', 'cambridgeConstitutionalLiberalismFrance', 'economieBastiat', 'vdem', 'friedmanEducation1955', 'cowenPublicGoods', 'euckenFreiburgHistory', 'fritzGoldschmidtStoerringOrdoliberalism2021', 'freiburgOrdoliberalDebates', 'nozickRectification1974UT', 'sepNozickPolitical2022', 'goldsmithEntitlementTheory1979', 'coutoEntitlement2017'],
       editorialNote: 'The entry distinguishes primary arguments from comparative philosophical interpretation. Its scores describe one market-libertarian archetype and do not define all classical liberals, libertarians, or market-oriented governments. The education essay is primary policy argument; Cowen and the German institutional sources provide attributed interpretation, not causal programme evaluation. German pages were reconsulted on 16 September 2026; English summaries are original paraphrases, not source translations. All six coordinates remain unchanged.',
     },
     researchGaps: [
@@ -1263,6 +1306,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Extend the selected Friedman reading to the remaining vocational-finance discussion and later revisions, and compare Nozick’s original entitlement and rectification arguments without assuming agreement among market-oriented thinkers.',
       'Collate the university-hosted Nozick excerpt with an identified 1974 print edition and read chapter 7 in full, including acquisition, proviso and transfer arguments. Compare the Vitor Guerreiro Portuguese edition directly; Couto’s altered holdings terminology and translation pagination must not be silently imported as Nozick’s English wording.',
       'Examine contrasting accounts of rectification, including the Litan, Schmidtz, Epstein and Cohen works discussed in the secondary sources. Separate moral entitlement, legal title, proof, beneficiaries, time limits and remedies; philosophical examples do not establish which policy works or resolve any current claim.',
+      'Read Goldsmith’s complete 1979 article rather than relying on its abstract, and compare its argument about information, uncertainty and intergenerational rectification with later entitlement scholarship before drawing stronger conclusions.',
+      'Read the complete Fritz, Goldschmidt and Störring article alongside original Eucken and Böhm texts and independent German-language histories; the current ordoliberal boundary is a cautious secondary synthesis, not a complete account of the Freiburg or social-market traditions.',
     ],
   },
   'progressive-liberal': {
