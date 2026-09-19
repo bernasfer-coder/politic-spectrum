@@ -1769,7 +1769,6 @@ for (const [sourceId, evidenceRole, publicationDate, language, confidence] of [
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
 }
 for (const [sourceId, evidenceRole, publicationDate, confidence] of [
-  ['locSelassieSpeech1936', 'primary', '1936-06-30', 'high'],
   ['braukamperIndigenousViews2011', 'secondary', '2011', 'high'],
   ['abebeNorthShewaResistance2016', 'secondary', '2016', 'medium'],
   ['seyoumEthiopianResistance2020', 'secondary', '2020', 'medium'],
@@ -1789,9 +1788,13 @@ for (const [sourceId, evidenceRole, publicationDate, confidence] of [
   assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
 }
 const selassieAppeal = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-selassieLeagueAppeal1936');
+const locSelassie = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-locSelassieSpeech1936');
 const baerSanctions = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-baerSanctionsSecurity1973');
 assert.match(selassieAppeal.note, /Document 7 only/);
 assert.match(selassieAppeal.description, /Translator and English edition are unidentified/);
+assert.equal(locSelassie.accessDate, '2026-09-19');
+assert.deepEqual(locSelassie.languages, ['Amharic', 'French']);
+assert.match(locSelassie.description, /language anchor/);
 assert.match(baerSanctions.note, /Full article and cited diplomatic files not consulted/);
 assert.match(baerSanctions.description, /22 May 2009/, 'online release must not replace the print publication date');
 assert.match(baerSanctions.license, /IO Foundation 1973/);
@@ -1810,6 +1813,20 @@ assert.ok(ethiopiaEntry.sections.find(({ id }) => id === 'variants').blocks.flat
 assert.ok(ethiopiaEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text, citations }) => text?.startsWith('Consultation limits: the appeal') && citations.researchSourceIds.includes('locSelassieSpeech1936')));
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Collate the Library of Congress item')));
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Extend Ethiopian evidence')));
+assert.ok(ethiopiaEntry.sections.some(({ blocks = [] }) => JSON.stringify(blocks).includes('petroneEthiopianHagiography2024')), 'the Ethiopian entry must preserve Petrone’s local Arabic-source evidence trail');
+const petroneSource = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-petroneEthiopianHagiography2024');
+assert.match(petroneSource.description, /unpublished Arabic/);
+assert.match(petroneSource.description, /cannot represent all Oromo/);
+assert.ok(ethiopiaEntry.references.researchSourceIds.includes('petroneEthiopianHagiography2024'));
+assert.ok(JSON.stringify(ethiopiaEntry.sections).includes('petroneEthiopianHagiography2024'));
+assert.equal(petroneSource.evidenceRole, 'secondary');
+assert.equal(petroneSource.publicationDate, '2024');
+assert.equal(petroneSource.accessDate, '2026-09-19');
+assert.deepEqual(petroneSource.languages, ['English', 'Arabic', 'Italian']);
+assert.equal(petroneSource.review.confidence, 'high');
+assert.equal(petroneSource.publicationStatus, 'link-only');
+assert.equal(petroneSource.directQuote, null);
+assert.deepEqual(petroneSource.relationships.profileEntries, ['encyclopedia:militarist-imperialist']);
 assert.ok(ethiopiaEntry.researchGaps.some((gap) => gap.startsWith('Read Baer’s full article and Italian')));
 
 const ottomanMilitarismEntry = ENCYCLOPEDIA_ENTRIES['militarist-imperialist'];
