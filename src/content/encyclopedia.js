@@ -4375,19 +4375,19 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -78,
         label: 'Strongly traditionalist',
         explanation: 'Inherited family structures, religious practice, authority, sexual morality, gender roles, ritual, and communal obligations are treated as stabilizing or morally authoritative. Different traditions support different reforms and degrees of tolerance, so a traditionalist social orientation does not automatically imply identical policies or hostility to every change.',
-        citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan'], ['sepReligionPolitics', 'sepConservatism', 'openTextbook']),
+        citations: citations(['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan'], ['sepReligionPolitics', 'sepConservatism', 'openTextbook', 'xavierAlmaPortugueza2022Portuguese']),
       },
       authority: {
         score: 70,
         label: 'Order-oriented and authority-affirming',
         explanation: 'Moral, familial, religious, and political authority receive substantial weight, especially when disorder or moral decline is perceived. Constitutional limits, natural law, customary rights, and institutional checks may still be accepted. This illustrative score does not measure believers: Dignitatis humanae §2 protects conscience against human coercion.',
-        citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['sepReligionPolitics', 'sepMedieval', 'vdem', 'vaticanReligiousFreedomFrench']),
+        citations: citations(['aquinasMoralPolitical', 'hobbesLeviathan', 'burkeReflections'], ['sepReligionPolitics', 'sepMedieval', 'vdem', 'vaticanReligiousFreedomFrench', 'integralismoLusitanoManifesto1916Portuguese']),
       },
       identity: {
         score: -10,
         label: 'National or civilizational traditionalism',
         explanation: 'Religious inheritance may be joined to national history, family memory, civilizational identity, or a shared moral community. This can be civic and pluralist or exclusionary and ethnoreligious; religious tradition alone does not determine the boundary, so membership and equal citizenship must be examined separately.',
-        citations: citations(['burkeReflections', 'renanNation', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'sepConservatism', 'openTextbook']),
+        citations: citations(['burkeReflections', 'renanNation', 'aquinasMoralPolitical'], ['sepReligionPolitics', 'sepConservatism', 'openTextbook', 'xavierAlmaPortugueza2022Portuguese', 'mesquitaAquiDelReiHistory2014Portuguese']),
       },
       foreign: {
         score: -5,
@@ -4399,7 +4399,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
         score: -78,
         label: 'Strongly religiously grounded',
         explanation: 'Religious revelation, natural law, clerical teaching, sacred tradition, or a confessional moral order is expected to shape public institutions and law to a substantial degree. The range extends from religious inspiration within pluralist constitutionalism to formal establishment; the high-authority endpoint is a theocracy, not the whole category. Public religious ethics and governmental power to compel belief must be evaluated separately.',
-        citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'vaticanReligiousFreedomFrench']),
+        citations: citations(['aquinasMoralPolitical', 'lockeLetterToleration', 'spinozaPolitical'], ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'vaticanReligiousFreedomFrench', 'xavierAlmaPortugueza2022Portuguese']),
       },
     },
     sections: [
@@ -4465,8 +4465,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
-            text: 'Integralismo Lusitano shows how Catholic education, organic monarchy, anti-parliamentarianism, and national restoration could be joined in one Portuguese movement without making it identical to clerical government. Cazetta traces its formation and internal differences, while Gonçalves documents the narrower educational network around Lisbon’s Vasco da Gama College. These studies support a movement-level case and a religious-traditionalist boundary, not a claim about all Portuguese Catholics or the later Estado Novo.',
-            citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
+            text: 'Integralismo Lusitano shows how Catholic public culture, organic monarchy, anti-parliamentarianism, and national restoration could be joined in one Portuguese movement without making it identical to clerical government. Xavier identifies Alma Portugueza (1913) as a two-issue periodical officially associated by its collaborators with the movement; Mesquita situates Aqui d’El-Rei and Nação Portuguesa in the early press network. Cazetta traces the intellectual formation and internal differences, while Gonçalves documents the narrower educational network around Lisbon’s Vasco da Gama College. These sources support a movement-level case and a religious-traditionalist boundary, not a claim about all Portuguese Catholics, the whole monarchist field, or the later Estado Novo.',
+            citations: citations([], ['xavierAlmaPortugueza2022Portuguese', 'mesquitaAquiDelReiHistory2014Portuguese', 'cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
           },
         ],
       },
@@ -4501,13 +4501,13 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             period: '1913–1914: Portuguese integralist formation',
-            text: 'The expression Integralismo Lusitano appeared around the Portuguese monarchist and Catholic journal Alma Portuguesa in 1913, followed by Nação Portuguesa in Coimbra in April 1914. Cazetta’s study traces the movement from intellectual and literary formation toward a political project of organic monarchy, while noting that later actors did not converge completely on one programme.',
-            citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
+            text: 'The expression Integralismo Lusitano appeared around Alma Portugueza in 1913. Xavier describes that periodical as a two-issue publication officially associated by its collaborators with Integralismo Lusitano and as an early support for disseminating its monarchist and Catholic ideas. Mesquita’s Hemeroteca fiche places the five-issue Aqui d’El-Rei in Lisbon between February and April 1914 and the launch of Nação Portuguesa on 8 April 1914, while Cazetta traces the movement from intellectual and literary formation toward a political project of organic monarchy. These are publication and movement-formation claims; the underlying issues and reception still require direct collation, and later actors did not converge completely on one programme.',
+            citations: citations([], ['xavierAlmaPortugueza2022Portuguese', 'mesquitaAquiDelReiHistory2014Portuguese', 'cazettaIntegralismoLusitano2012']),
           },
           {
             period: '1916–1917: Junta Central and organic monarchy',
-            text: 'The movement organized a Junta Central and circulated a manifesto and statute defending a traditional, organic, anti-parliamentary monarchy. These are movement claims discussed by the historical study used here, not independent evidence of public support or implementation; Cazetta also preserves the distinction between the movement’s organizational formation and later individual trajectories.',
-            citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017']),
+            text: 'The movement organized a Junta Central and circulated a manifesto and statute defending a traditional, organic, anti-parliamentary monarchy. The online Portuguese transcription of the First Manifesto, originally published in A Nação Portuguesa in April 1916, presents hierarchy, the royal function, national tradition and political discipline as movement self-description; Mesquita’s institutional bibliography and Cazetta’s study help locate this within the wider press and organizational sequence. The transcription is not an independently collated archival edition, and these are not evidence of public support or implementation. Cazetta also preserves the distinction between the movement’s organizational formation and later individual trajectories.',
+            citations: citations([], ['integralismoLusitanoManifesto1916Portuguese', 'mesquitaAquiDelReiHistory2014Portuguese', 'cazettaIntegralismoLusitano2012']),
           },
           {
             period: '1915–late 1920s: Catholic education as a political network',
@@ -4582,7 +4582,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 label: 'Portuguese Catholic monarchism: Integralismo Lusitano',
                 distinction: 'A movement-level case combining Catholic public culture, inherited national tradition, organic monarchy, anti-parliamentarianism, and corporative or community language.',
                 relation: 'A useful religious-traditionalist boundary case that also overlaps with monarchism and national conservatism; its internal divisions and later National Syndicalist divergence prevent treating it as a synonym for fascism or the Estado Novo.',
-                citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
+                citations: citations([], ['xavierAlmaPortugueza2022Portuguese', 'integralismoLusitanoManifesto1916Portuguese', 'mesquitaAquiDelReiHistory2014Portuguese', 'cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
               },
               {
                 label: 'Religious nationalism',
@@ -4704,7 +4704,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
                 period: 'Portugal, 1913–1932; college case especially 1915–late 1920s',
                 match: 'Catholic, monarchist and anti-parliamentary movement-level boundary case',
                 caveat: 'The movement’s periodicals and the college’s educational project document organized ideas and networks, not a country-wide religious regime. Its relationship to National Syndicalism, Salazarism, fascism, and Portuguese Catholic institutions requires separate actor- and period-specific analysis.',
-                citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
+                citations: citations([], ['xavierAlmaPortugueza2022Portuguese', 'integralismoLusitanoManifesto1916Portuguese', 'mesquitaAquiDelReiHistory2014Portuguese', 'cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
               },
               {
                 name: 'Barmen Confessing Synod',
@@ -4769,8 +4769,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
           },
           {
             type: 'paragraph',
-            text: 'Integralismo Lusitano must be kept as a boundary case rather than a shortcut. Its Catholic and traditionalist language supports inclusion in this profile, while its anti-parliamentary monarchy, national restoration, and later contacts with authoritarian currents create overlaps with monarchism, national conservatism, and historical fascism. The evidence reviewed here is strongest for intellectual production and educational networks; it does not establish mass adherence, state control, or a uniform relationship with Salazarism.',
-            citations: citations([], ['cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
+            text: 'Integralismo Lusitano must be kept as a boundary case rather than a shortcut. The manifesto is evidence of how the Junta Central described hierarchy, royal function, tradition and discipline; Xavier and Mesquita help document the early periodical network; and Cazetta and Gonçalves provide different secondary views of formation, internal divergence and educational organization. Its Catholic and traditionalist language supports inclusion in this profile, while its anti-parliamentary monarchy, national restoration, and later contacts with authoritarian currents create overlaps with monarchism, national conservatism, and historical fascism. The evidence reviewed here is strongest for self-description, intellectual production, press networks and one educational case; it does not establish mass adherence, state control, or a uniform relationship with Salazarism.',
+            citations: citations([], ['integralismoLusitanoManifesto1916Portuguese', 'xavierAlmaPortugueza2022Portuguese', 'mesquitaAquiDelReiHistory2014Portuguese', 'cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931']),
           },
           {
             type: 'paragraph',
@@ -4782,8 +4782,8 @@ export const ENCYCLOPEDIA_ENTRIES = {
     ],
     references: {
       authorReferenceIds: ['aquinasMoralPolitical', 'burkeReflections', 'hobbesLeviathan', 'lockeLetterToleration', 'spinozaPolitical', 'renanNation', 'adamSmithWealth', 'morgenthauRealism', 'millOnLiberty'],
-      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy', 'leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom', 'cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931', 'barmenDeclaration1934German', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'ushmmGermanChurches'],
-      editorialNote: 'The entry separates personal religiosity, religious social ethics, confessional constitutionalism, religious nationalism, Christian democracy, and theocracy. Its scores describe a didactic high-tradition, high-authority profile and do not classify every religious person, party, or state.',
+      researchSourceIds: ['sepReligionPolitics', 'sepMedieval', 'oxfordChristianDemocracy', 'sepConservatism', 'openTextbook', 'vdem', 'foreignPolicy', 'leoImmortaleDeiFrench', 'vaticanReligiousFreedomFrench', 'portierEpiscopateFreedom', 'cazettaIntegralismoLusitano2012', 'goncalvesIntegralismoEducacao2017', 'politicaIntegralismo1931', 'xavierAlmaPortugueza2022Portuguese', 'integralismoLusitanoManifesto1916Portuguese', 'mesquitaAquiDelReiHistory2014Portuguese', 'barmenDeclaration1934German', 'gailusChurchStateNazism2018', 'silomonProtestantResistance2009', 'ushmmGermanChurches'],
+      editorialNote: 'The entry separates personal religiosity, religious social ethics, confessional constitutionalism, religious nationalism, Christian democracy, and theocracy. Its scores describe a didactic high-tradition, high-authority profile and do not classify every religious person, party, or state. The Portuguese Integralismo Lusitano update is a bounded multilingual pass: Xavier’s Portuguese article, Mesquita’s Hemeroteca fiche, a Portuguese transcription of the 1916 Junta Central manifesto, Cazetta, Gonçalves and the 1931 Política issue are kept distinct as secondary context, primary self-description, periodical bibliography and educational or movement studies. They sharpen the publication and self-description layers without closing the archival, social, ecclesiastical, colonial, gender, antisemitism, reception or implementation gaps.',
     },
     researchGaps: [
       'Add Arabic-, Persian-, Hebrew-, Sanskrit-, Tamil-, Chinese-, French-, German-, Portuguese-, and Spanish-language scholarship on religious law, political authority, reform, pluralism, and modern state formation.',
@@ -4795,6 +4795,7 @@ export const ENCYCLOPEDIA_ENTRIES = {
       'Collate the EKD Barmen transcription with a dated 1934 edition and an identified published translation. Investigate local reception, dissent, and the experiences of persecuted Jews and Christians of Jewish ancestry; this German Protestant case does not resolve the wider cross-religious gaps.',
       'Read the Kreyssig correspondence and biographies cited by Silomon directly, and the Barnett, Bergen, and Ericksen studies listed by USHMM. They remain further-reading leads, not independently reviewed books; investigate each actor’s changing politics before assigning a label or coordinates.',
       'Collate the Integralismo Lusitano statute, Nação Portuguesa and Alma Portuguesa issues with archival records; investigate membership, reception, gender, antisemitism, colonial politics, ties to the Church, relations with Salazarism and National Syndicalism, and the Vasco da Gama College’s implementation before extending this Portuguese boundary case.',
+      'Collate the original Portuguese issues of Alma Portugueza, Aqui d’El-Rei, Nação Portuguesa and A Monarquia, the 1916 statute and Junta Central manifesto against archival or facsimile witnesses. Xavier and Mesquita establish a cautious publication chronology, while the online manifesto transcription establishes only a movement self-description; they do not settle authorship, circulation, readership, reception, organizational membership, or the relationship between Catholic networks and integralist institutions.',
     ],
   },
   'anti-colonial-liberation': {

@@ -2986,6 +2986,9 @@ for (const [sourceId, evidenceRole] of [
   ['cazettaIntegralismoLusitano2012', 'secondary'],
   ['goncalvesIntegralismoEducacao2017', 'secondary'],
   ['politicaIntegralismo1931', 'primary'],
+  ['xavierAlmaPortugueza2022Portuguese', 'secondary'],
+  ['integralismoLusitanoManifesto1916Portuguese', 'primary'],
+  ['mesquitaAquiDelReiHistory2014Portuguese', 'secondary'],
 ]) {
   assert.ok(religiousTraditionalistEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a Portuguese religious-traditionalist reference trail`);
   assert.ok(JSON.stringify(religiousTraditionalistEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
@@ -2993,7 +2996,7 @@ for (const [sourceId, evidenceRole] of [
   assert.equal(records.length, 1, `${sourceId} must resolve once`);
   const [record] = records;
   assert.equal(record.evidenceRole, evidenceRole, `${sourceId} must preserve primary/secondary evidence role`);
-  assert.equal(record.accessDate, '2026-09-17', `${sourceId} needs its consultation date`);
+  assert.equal(record.accessDate, sourceId === 'politicaIntegralismo1931' || sourceId === 'cazettaIntegralismoLusitano2012' || sourceId === 'goncalvesIntegralismoEducacao2017' ? '2026-09-17' : '2026-09-19', `${sourceId} needs its consultation date`);
   assert.equal(record.publicationStatus, 'link-only', `${sourceId} must retain its rights boundary`);
   assert.equal(record.directQuote, null, `${sourceId} must not add an uncleared quotation`);
   assert.ok(record.relationships.profileEntries.includes('encyclopedia:religious-traditionalist'), `${sourceId} needs an encyclopedia backlink`);
@@ -3018,6 +3021,8 @@ assert.match(religiousTraditionalistDescription, /rejects a church taking on sta
 assert.match(religiousTraditionalistDescription, /not a secular constitutional blueprint/, 'theological limits must not become secularism');
 assert.match(religiousTraditionalistDescription, /not a movement to restore democracy/, 'church opposition must not become comprehensive political resistance');
 assert.match(religiousTraditionalistDescription, /this site’s analytical safeguard/, 'editorial inference must remain distinct from source findings');
+assert.match(religiousTraditionalistDescription, /two-issue periodical/, 'the Alma Portugueza evidence must remain bounded');
+assert.match(religiousTraditionalistDescription, /movement-level case/, 'the Portuguese material must not become a country-wide religious claim');
 const religiousTraditionalistExamples = religiousTraditionalistEntry.sections.find(({ id }) => id === 'examples').blocks;
 const kreyssigCase = religiousTraditionalistExamples.find(({ type }) => type === 'people').entries.find(({ name }) => name === 'Lothar Kreyssig');
 assert.ok(kreyssigCase.citations.researchSourceIds.includes('silomonProtestantResistance2009'));
@@ -3028,6 +3033,7 @@ const religiousTraditionalistCriticism = religiousTraditionalistEntry.sections.f
 assert.match(religiousTraditionalistCriticism, /must not erase complicity/, 'church autonomy must not erase persecution or institutional failure');
 assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.includes('Collate the EKD Barmen transcription')), 'primary-edition follow-up must remain open');
 assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.includes('further-reading leads, not independently reviewed books')), 'unread scholarship must not be promoted to reviewed evidence');
+assert.ok(religiousTraditionalistEntry.researchGaps.some((gap) => gap.startsWith('Collate the original Portuguese issues of Alma Portugueza')), 'the Portuguese primary-text follow-up must remain open');
 
 const progressiveEntry = ENCYCLOPEDIA_ENTRIES['progressive-liberal'];
 const progressiveProfile = ARCHETYPES.find(({ id }) => id === 'progressive-liberal').profile;
