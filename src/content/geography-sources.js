@@ -159,6 +159,30 @@ const sources = [
     description: 'Primary legal evidence for the Federal Republic’s constitutional order in the original German. The current consolidated text records the 1949 foundation and later amendments; it does not by itself prove social acceptance, implementation or the absence of authoritarian continuities.',
   },
   {
+    id: 'ginsborgContemporaryItaly1989',
+    label: 'Paul Ginsborg — A History of Contemporary Italy: Society and Politics, 1943–1988',
+    url: 'https://us.macmillan.com/books/9781403961532/ahistoryofcontemporaryitaly/',
+    note: 'Official Macmillan book record and bibliographic metadata consulted for Ginsborg’s book-length social and political history of Italy from the wartime transition through 1988. The full monograph and cited archives were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Paul Ginsborg'], institution: 'Palgrave Macmillan',
+    publicationDate: '2003', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Italian postwar political and social history',
+    identifiers: { isbn: '9781403961532' },
+    description: 'A book-length study of Italian society and politics from 1943 to 1988. It provides the focused postwar perspective for the atlas case, while the record’s description is not treated as a substitute for complete-text or archival review.',
+  },
+  {
+    id: 'dugganForceDestiny2007',
+    label: 'Christopher Duggan — The Force of Destiny: A History of Italy Since 1796',
+    url: 'https://www.penguin.co.uk/books/54677/the-force-of-destiny-by-christopher-duggan/9780141013909',
+    note: 'Official Penguin book record and bibliographic metadata consulted for Duggan’s independent book-length history of modern Italy, including the national, fascist and postwar trajectories. The full monograph and cited archives were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Christopher Duggan'], institution: 'Penguin / Allen Lane',
+    publicationDate: '2008', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Italian national and political history',
+    identifiers: { isbn: '9780141013909' },
+    description: 'A broad history of Italy since 1796 that supplies a second national perspective on the political development surrounding the post-fascist transition. Its scope is wider than the atlas window and is not used to flatten regional, partisan or institutional differences.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -295,6 +319,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
         : source.id.startsWith('knightMexican') ? 'Mexican Revolution and constitutional history'
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') ? 'German postwar democratic and constitutional history'
+        : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',

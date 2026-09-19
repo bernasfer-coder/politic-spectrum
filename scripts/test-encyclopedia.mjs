@@ -827,10 +827,10 @@ assert.ok(chileCriticism, 'the Chilean case needs a criticism and evidence bound
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Read and collate the complete Spanish text of the Chilean')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Extend the Chilean agrarian and educational case')));
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Compare Chile’s Revolución en Libertad')));
-for (const [sourceId, role, date, languages] of [
-  ['dcItalyIdeasReconstructive1943', 'primary', '1943', ['Italian']],
-  ['italyConstitution1948', 'primary', '1948-01-01', ['Italian', 'English translation']],
-  ['forlenzaThomassenChristianDemocracy2024', 'secondary', '2024-04-02', ['English']],
+for (const [sourceId, role, date, languages, profileEntries] of [
+  ['dcItalyIdeasReconstructive1943', 'primary', '1943', ['Italian'], ['encyclopedia:christian-democratic', 'geography:italian-republican-constitutional-founding']],
+  ['italyConstitution1948', 'primary', '1948-01-01', ['Italian', 'English translation'], ['encyclopedia:christian-democratic', 'geography:italian-republican-constitutional-founding']],
+  ['forlenzaThomassenChristianDemocracy2024', 'secondary', '2024-04-02', ['English'], ['encyclopedia:christian-democratic']],
 ]) {
   assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Italian Christian-democratic reference trail`);
   assert.ok(JSON.stringify(christianDemocracyEntry.sections).includes(sourceId), `${sourceId} needs claim-level use`);
@@ -844,7 +844,7 @@ for (const [sourceId, role, date, languages] of [
   assert.equal(record.review.confidence, 'high');
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:christian-democratic']);
+  assert.deepEqual(record.relationships.profileEntries, profileEntries);
 }
 const italianHistory = christianDemocracyEntry.sections.find(({ id }) => id === 'history').timeline;
 const italianTimeline = italianHistory.find(({ period }) => period.startsWith('1943–1948: Italian Christian democracy'));
