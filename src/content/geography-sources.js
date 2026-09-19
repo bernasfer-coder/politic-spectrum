@@ -291,6 +291,42 @@ const sources = [
     description: 'A focused book-length study of the monarchy-led transformation to parliamentary democracy, with attention to the 2007–2008 elections, institutions, moral language and local political experience. It supplies a distinct political-ethnographic perspective alongside Phuntsho’s broader history and does not by itself establish nationwide consensus or implementation.',
   },
   {
+    id: 'ninsinDrahGhanaTransition1991',
+    label: 'Kwame A. Ninsin and Francis K. Drah (eds.) — Ghana’s Transition to Constitutional Rule',
+    url: 'https://opendocs.ids.ac.uk/articles/monograph/Ghana_s_transition_to_constitutional_rule/26466613',
+    note: 'University of Ghana/IDS monograph record consulted for the constitutional transition debates immediately before the Fourth Republic. The edited volume, Ghanaian political sources and drafting record were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Kwame A. Ninsin', 'Francis K. Drah'], institution: 'University of Ghana, Department of Political Science / Ghana Universities Press',
+    publicationDate: '1991', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Ghanaian constitutional-transition study',
+    identifiers: { isbn: '9964301995' },
+    description: 'A Ghanaian edited volume published during the transition from PNDC rule toward constitutional government. It is used as a local scholarly witness to the transition debate, not as proof of consensus, equal participation or the later performance of the Fourth Republic.',
+  },
+  {
+    id: 'ninsinDrahPoliticalPartiesGhana1993',
+    label: 'Kwame A. Ninsin and Francis K. Drah (eds.) — Political Parties and Democracy in Ghana’s Fourth Republic',
+    url: 'https://opendocs.ids.ac.uk/articles/monograph/Political_parties_and_democracy_in_Ghana_s_fourth_republic/26466496',
+    note: 'University of Ghana/IDS monograph record and bibliographic metadata consulted for the 1993 edited proceedings volume on parties and the Fourth Republic. The essays, seminar record and election materials were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Kwame A. Ninsin', 'Francis K. Drah'], institution: 'University of Ghana, Department of Political Science / Woeli Publishing Services',
+    publicationDate: '1993', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Ghanaian party and constitutional-democracy study',
+    identifiers: { isbn: '9964978146' },
+    description: 'A 258-page contemporary edited volume on party politics and democracy in Ghana’s Fourth Republic. It preserves early local debate about parties and democratic practice without being treated as a complete institutional or social history.',
+  },
+  {
+    id: 'herbstPoliticsReformGhana1993',
+    label: 'Jeffrey Herbst — The Politics of Reform in Ghana, 1982–1991',
+    url: 'https://www.ucpress.edu/books/the-politics-of-reform-in-ghana-1982-1991/hardcover',
+    note: 'University of California Press record consulted for Herbst’s book-length study of Ghana’s PNDC-era political economy, state form, adjustment and reform through 1991. The original monograph and field/archive base were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Jeffrey Herbst'], institution: 'University of California Press',
+    publicationDate: '1993', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Ghanaian political-economy and reform history',
+    identifiers: { isbn: '9780520356504' },
+    description: 'A book-length analysis of economic and political reform under the PNDC, originally published in 1993 and represented by the publisher’s Voices Revived record. Its political-economy perspective supplies context for the constitutional transition but does not replace constitutional, electoral or local-governance evidence.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -432,6 +468,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
+        : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') ? 'Ghanaian constitutional transition and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',
