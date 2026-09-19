@@ -267,6 +267,30 @@ const sources = [
     description: 'A book-length study of Malaysian government and society that supplies an independent political-sociological perspective on the democratic and authoritarian features of the post-1957 system. Its later chronology is used to contextualize the constitutional design, not to project one unchanged ideological character onto the 1957 founding.',
   },
   {
+    id: 'phuntshoHistoryBhutan2013',
+    label: 'Karma Phuntsho — The History of Bhutan',
+    url: 'https://press.uchicago.edu/ucp/books/book/distributed/H/bo19425099.html',
+    note: 'University of Chicago Press distributed record for Phuntsho’s book-length history of Bhutan, including the modern transition and 2008 constitutional context. The complete monograph, Dzongkha sources and cited archives were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Karma Phuntsho'], institution: 'Haus Publishing / University of Chicago Press distribution',
+    publicationDate: '2013', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Bhutanese national, social and political history',
+    identifiers: { isbn: '9781908323583' },
+    description: 'A comprehensive English-language history of Bhutan that places the 2008 constitutional transition within the country’s religious, dynastic, social and modern political development. Its national scope is wider than the bounded transition and is not used to flatten regional, linguistic or political differences.',
+  },
+  {
+    id: 'kingaDemocraticTransitionBhutan2020',
+    label: 'Sonam Kinga — Democratic Transition in Bhutan: Political Contests as Moral Battles',
+    url: 'https://www.routledge.com/Democratic-Transition-in-Bhutan-Political-Contests-as-Moral-Battles-1st/Kinga/p/book/9780429328268',
+    note: 'Official Routledge book record consulted for Kinga’s book-length political ethnography of Bhutan’s 2007–2008 elections, constitutional transition and early democratic contests. The complete monograph, field materials and Dzongkha sources were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Sonam Kinga'], institution: 'Routledge India / Taylor & Francis',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Bhutanese political ethnography and constitutional-transition history',
+    identifiers: { isbn: '9780367348342', doi: '10.4324/9780429328268' },
+    description: 'A focused book-length study of the monarchy-led transformation to parliamentary democracy, with attention to the 2007–2008 elections, institutions, moral language and local political experience. It supplies a distinct political-ethnographic perspective alongside Phuntsho’s broader history and does not by itself establish nationwide consensus or implementation.',
+  },
+  {
     id: 'maravallSpanishTransition1982',
     label: 'José María Maravall — The Transition to Democracy in Spain',
     url: 'https://www.routledge.com/The-Transition-to-Democracy-in-Spain/Maravall/p/book/9781041338505',
@@ -407,6 +431,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') ? 'Japanese Meiji constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
+        : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') ? 'Spanish democratic transition and constitutional history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
       : 'Middle Eastern political history and geography',
