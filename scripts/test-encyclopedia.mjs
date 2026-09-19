@@ -463,6 +463,24 @@ assert.match(swissFederalExample.text, /founding electorate was inclusive/);
 assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The 1848 Swiss case adds a federalism-and-inclusion safeguard')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the complete 1848 Swiss Federal Constitution')));
 assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Add original Ottoman Turkish')));
+for (const sourceId of ['echrConvention', 'coeDemocraticCitizenship', 'unRuleLawHumanRights', 'oxfordConstitutionalJustice']) {
+  assert.ok(liberalConstitutionalismEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs a regional human-rights constitutionalism reference trail`);
+  assert.ok(JSON.stringify(liberalConstitutionalismEntry.sections).includes(sourceId), `${sourceId} needs claim-level use in the liberal entry`);
+  const [record] = BIBLIOGRAPHY_RECORDS.filter((item) => item.citationIds.researchSourceIds?.includes(sourceId));
+  assert.ok(record, `${sourceId} needs a bibliography record`);
+  assert.ok(record.relationships.profileEntries.includes('encyclopedia:liberal-constitutionalist'), `${sourceId} needs a liberal-constitutionalism backlink`);
+}
+const humanRightsTimeline = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'history').timeline;
+const echrTimeline = humanRightsTimeline.find(({ period }) => period.startsWith('4 November 1950–3 September 1953'));
+assert.ok(echrTimeline, 'the European Convention timeline case must remain visible');
+assert.ok(echrTimeline.citations.researchSourceIds.includes('echrConvention'));
+const echrVariant = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'variants').blocks.flatMap(({ rows = [] }) => rows).find(({ label }) => label.startsWith('Regional human-rights constitutionalism'));
+assert.ok(echrVariant, 'the European Convention system must be separated as a regional human-rights variant');
+const echrExample = liberalConstitutionalismEntry.sections.find(({ id }) => id === 'examples').blocks.find(({ text }) => text?.startsWith('The European Convention system is a bounded example'));
+assert.ok(echrExample, 'the European Convention system must appear as a bounded example');
+assert.match(echrExample.text, /no country-wide ideological score/);
+assert.ok(liberalConstitutionalismEntry.sections.find(({ id }) => id === 'criticisms').blocks.some(({ text }) => text?.startsWith('The European Convention case adds a transnational accountability safeguard')));
+assert.ok(liberalConstitutionalismEntry.researchGaps.some((gap) => gap.startsWith('Read the complete European Convention')));
 for (const [sourceId, publicationDate] of [
   ['sasakiNamikKemalConstitutionalPlan2006', '2006-02-20'],
   ['sonmezOttomanConstitutionalism2016', '2016-01-05'],

@@ -11868,37 +11868,37 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
         score: -30,
         label: 'Market-oriented, with lawful public goods',
         explanation: 'The tradition commonly protects private property, contract, and voluntary exchange, but constitutionalism does not logically require a minimal state or unregulated markets. Taxation, infrastructure, education, social insurance, labor law, and economic regulation can be compatible with liberal constitutionalism when enacted under general law and justified through equal civic status rather than arbitrary privilege.',
-        citations: citations(['adamSmithWealth', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'oxfordLiberalismResearch', 'sepConstitutionalism', 'ghanaConstitution1992Official', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
+        citations: citations(['adamSmithWealth', 'lockeSecondTreatise', 'millOnLiberty'], ['sepLiberalism', 'oxfordLiberalismResearch', 'sepConstitutionalism', 'unRuleLawHumanRights', 'coeDemocraticCitizenship', 'ghanaConstitution1992Official', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
       },
       social: {
         score: 25,
         label: 'Individual liberty, historically uneven inclusion',
         explanation: 'Freedom of expression, association, conscience, privacy, and personal development are central, but the historical tradition often combined universal language with restricted citizenship, gender hierarchy, property qualifications, slavery, or colonial rule. The profile therefore protects personal liberty without treating every historical liberal as socially progressive or every rights claim as equally applied.',
-        citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative', 'colonialLiberalismExclusion', 'ghanaConstitutionRights1992Official', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
+        citations: citations(['millOnLiberty', 'wollstonecraftRights', 'constantLibertyModerns'], ['sepLiberalism', 'sepLibertyPositiveNegative', 'colonialLiberalismExclusion', 'echrConvention', 'coeDemocraticCitizenship', 'ghanaConstitutionRights1992Official', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
       },
       authority: {
         score: -65,
         label: 'Strong limits, divided power, and legal accountability',
         explanation: 'Government must act through publicly knowable law, consent or representation, due process, institutional checks, and remedies against arbitrary power. Liberal constitutionalists differ over whether courts, legislatures, executives, federal units, or citizens should have the final word, but concentrated and unreviewable authority is the clearest boundary of the family.',
-        citations: citations(['lockeSecondTreatise', 'federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'unRuleLawHumanRights', 'vdem', 'ghanaConstitution1992Official', 'quashigahGhanaConstitution1992', 'gyampoGrahamGhanaHybridity2014', 'belgiumConstitution1831French', 'vanDenBergBelgianConstitution2018', 'deseureBelgianSovereignty2016', 'frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zhangConstitutionalReformsChina2024']),
+        citations: citations(['lockeSecondTreatise', 'federalistPapers', 'millOnLiberty'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordBritishConstitutionalism', 'unRuleLawHumanRights', 'echrConvention', 'coeDemocraticCitizenship', 'vdem', 'ghanaConstitution1992Official', 'quashigahGhanaConstitution1992', 'gyampoGrahamGhanaHybridity2014', 'belgiumConstitution1831French', 'vanDenBergBelgianConstitution2018', 'deseureBelgianSovereignty2016', 'frusChinaProvincialAssemblies1908', 'frusChinaProvisionalConstitution1912', 'changLateQingConstitutionalism1989', 'zhangConstitutionalReformsChina2024']),
       },
       identity: {
         score: 25,
         label: 'Civic constitutional membership',
         explanation: 'The preferred basis of membership is citizenship under common law and constitutional rights rather than ethnic sameness. Liberal constitutionalism can still be patriotic and territorially bounded, and its historical practice often excluded colonized peoples, migrants, women, racialized groups, or religious minorities. Constitutional universalism is therefore an aspiration and institutional test, not proof that a polity has already achieved equal membership.',
-        citations: citations(['lockeSecondTreatise', 'kantPerpetualPeace', 'tocquevilleDemocracy'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'sepColonialism', 'colonialLiberalismExclusion', 'ghanaConstitution1992Official', 'jacquemotGhanaChieftaincy2007French', 'belgiumConstitution1831French', 'deseureBelgianSovereignty2016', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
+        citations: citations(['lockeSecondTreatise', 'kantPerpetualPeace', 'tocquevilleDemocracy'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'sepColonialism', 'colonialLiberalismExclusion', 'echrConvention', 'coeDemocraticCitizenship', 'ghanaConstitution1992Official', 'jacquemotGhanaChieftaincy2007French', 'belgiumConstitution1831French', 'deseureBelgianSovereignty2016', 'frusChinaProvisionalConstitution1912', 'zarrowAfterEmpire2012']),
       },
       foreign: {
         score: 35,
         label: 'Lawful diplomacy and bounded defense',
         explanation: 'The orientation favors treaties, commerce, diplomacy, defensive security, and international rules over arbitrary conquest. It is not automatically pacifist: constitutional states may claim a right of self-defense or support intervention under law. The decisive question is whether force is publicly authorized, limited, reviewable, and consistent with the equal status of people affected by it.',
-        citations: citations(['kantPerpetualPeace', 'millOnLiberty'], ['foreignPolicy', 'echrConvention', 'sepConstitutionalism']),
+        citations: citations(['kantPerpetualPeace', 'millOnLiberty'], ['foreignPolicy', 'echrConvention', 'coeDemocraticCitizenship', 'sepConstitutionalism']),
       },
       religion: {
         score: 55,
         label: 'Freedom of conscience and non-confessional public law',
         explanation: 'The profile protects religion and nonbelief while resisting the use of one church or theology as an unreviewable source of coercive law. Liberal constitutional settlements range from strict separation to accommodation or an established church; the common requirement is that conscience, minority rights, and public accountability cannot depend entirely on religious conformity.',
-        citations: citations(['lockeLetterToleration', 'millOnLiberty', 'kantPerpetualPeace'], ['sepReligionPolitics', 'sepLiberalism', 'unRuleLawHumanRights', 'echrConvention', 'ghanaConstitutionRights1992Official', 'belgiumConstitution1831French', 'vanDenBergBelgianConstitution2018']),
+        citations: citations(['lockeLetterToleration', 'millOnLiberty', 'kantPerpetualPeace'], ['sepReligionPolitics', 'sepLiberalism', 'unRuleLawHumanRights', 'echrConvention', 'coeDemocraticCitizenship', 'ghanaConstitutionRights1992Official', 'belgiumConstitution1831French', 'vanDenBergBelgianConstitution2018']),
       },
     },
     sections: [
@@ -11915,6 +11915,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             type: 'paragraph',
             text: 'The label also contains a central tension. Constitutional limits can protect minorities and individual freedom against majoritarian abuse, but entrenched rules and courts can frustrate democratic change or preserve an old social settlement. Liberal constitutionalism therefore requires two tests at once: whether power is constrained, and whether the constitution itself remains open to equal citizenship, amendment, participation, and correction. A constitution that limits government while excluding most people from membership is formally constitutional but substantively incomplete.',
             citations: citations(['federalistPapers', 'millOnLiberty', 'wollstonecraftRights'], ['sepConstitutionalism', 'oxfordConstitutionalJustice', 'oxfordLiberalismResearch', 'colonialLiberalismExclusion']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The postwar European Convention system supplies a distinct international layer of liberal constitutionalism. The European Court of Human Rights records that the Convention was opened for signature in Rome on 4 November 1950 and entered into force on 3 September 1953; it made selected rights binding through an institutional system involving individual and state applications, adjudication and political supervision. The treaty and its later protocols are evidence of regional rights protection, not proof that every participating state uniformly respected the rights in practice or that international review replaces domestic democratic accountability.',
+            citations: citations([], ['echrConvention', 'unRuleLawHumanRights', 'oxfordConstitutionalJustice']),
           },
           {
             type: 'evidence-note',
@@ -12021,6 +12026,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             type: 'paragraph',
             text: 'Rights do not operate only as abstract declarations. Rule-of-law institutions require accessible procedures, independent decision-makers, reasoned judgments, equal application, remedies, and accountability for officials. Modern human-rights instruments add international supervision and explicit commitments to equality, dignity, and freedom; these developments broadened older constitutional language but also created new conflicts over emergency powers, national security, economic rights, migration, privacy, and the authority of international courts.',
             citations: citations(['millOnLiberty', 'kantPerpetualPeace'], ['unRuleLawHumanRights', 'echrConvention', 'oxfordConstitutionalJustice', 'vdem']),
+          },
+          {
+            type: 'evidence-note',
+            text: 'The Council of Europe’s democratic-citizenship charter adds a civic-formation dimension to this legal architecture. It defines democratic-citizenship education through rights and responsibilities, active participation, diversity, democracy and the rule of law, while treating human-rights education as a broader culture of fundamental freedoms. This institutional norm supports the profile’s civic and social dimensions, but it is a policy framework rather than evidence that all residents have equal political influence or that education alone secures constitutional government.',
+            citations: citations([], ['coeDemocraticCitizenship', 'echrConvention', 'unRuleLawHumanRights']),
           },
           {
             type: 'paragraph',
@@ -12314,6 +12324,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             citations: citations(['kantPerpetualPeace', 'millOnLiberty'], ['unRuleLawHumanRights', 'echrConvention', 'oxfordConstitutionalJustice', 'vdem']),
           },
           {
+            period: '4 November 1950–3 September 1953 — European Convention’s regional rights layer',
+            text: 'The European Convention on Human Rights was opened for signature in Rome on 4 November 1950 and entered into force on 3 September 1953. The official Court history describes a regional system in which rights stated in the treaty became binding and complaints could move through admissibility, adjudication and political supervision; later protocols expanded the rights catalogue and altered the institutional design. This was an important internationalization of constitutional rights, but its formal treaty architecture does not by itself prove uniform domestic implementation or resolve the democratic legitimacy of international adjudication.',
+            citations: citations([], ['echrConvention', 'unRuleLawHumanRights', 'oxfordConstitutionalJustice']),
+          },
+          {
             period: '1949 onward — West German constitutional and social-market reconstruction',
             text: 'The Basic Law was adopted in the western occupation zones after National Socialism and war. It placed human dignity and enforceable rights at the beginning of the constitutional order, combined representative democracy with federalism, rule of law and a social-state principle, and limited the ability of a temporary majority to abolish the free democratic order. Postwar economic policy also developed a social-market programme: the Bundeszentrale für politische Bildung distinguishes ordoliberal competition rules from the broader, more pragmatic social-market settlement. Kommers and Meinel show why legal text, economic policy, court practice, and democratic reconstruction must be studied as related but non-identical layers.',
             citations: citations([], ['germanBasicLaw1949', 'kommersBasicLawFiftyYear2000', 'meinelWestGermanConstitutionalism2016', 'bpbSocialMarketEconomy']),
@@ -12479,6 +12494,12 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
                 citations: citations(['kantPerpetualPeace', 'tocquevilleDemocracy'], ['oxfordConstitutionalPatriotism', 'sepNationalism', 'coeDemocraticCitizenship']),
               },
               {
+                label: 'Regional human-rights constitutionalism / European Convention system, 1950 onward',
+                distinction: 'Places a treaty-based catalogue of rights, individual and inter-state applications, regional adjudication, and political execution alongside domestic constitutional orders. The Convention was opened in 1950, entered into force in 1953, and expanded through later protocols.',
+                relation: 'A transnational layer rather than a replacement for national constitutional democracy: it can constrain public power and widen remedies, while its jurisdiction, reservations, enforcement and relationship to elected institutions remain contested. It should not be treated as a single European political ideology or as proof of uniform rights practice.',
+                citations: citations([], ['echrConvention', 'unRuleLawHumanRights', 'oxfordConstitutionalJustice', 'coeDemocraticCitizenship']),
+              },
+              {
                 label: 'Constitutional emergency liberalism',
                 distinction: 'Permits temporary exceptional powers to address war, terrorism, disaster, or institutional crisis under necessity, legality, time limits, and review.',
                 relation: 'The danger boundary: emergency clauses can preserve constitutional order, or normalize executive exception and suspend the very rights they claim to defend.',
@@ -12538,6 +12559,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
             type: 'paragraph',
             text: 'The United States Constitution and Bill of Rights, the British constitutional tradition, postwar German constitutionalism, the European Convention system, and many postcolonial constitutions are useful comparative cases, not identical embodiments. Each combines rights, institutions, social settlements, colonial legacies, party systems, and enforcement practices differently. The category should therefore be assigned to a constitutional pattern or argument with evidence, not to a country merely because it holds elections or calls itself liberal.',
             citations: citations(['federalistPapers', 'millOnLiberty'], ['locFederalistPapers', 'oxfordBritishConstitutionalism', 'echrConvention', 'vdem', 'oxfordLiberalismResearch']),
+          },
+          {
+            type: 'paragraph',
+            text: 'The European Convention system is a bounded example of regional human-rights constitutionalism. The official Court account dates the Convention’s signature and entry into force, identifies its original Commission, Court and Committee of Ministers, and records the later expansion of rights through protocols. The arrangement adds international remedies and supervision to domestic constitutional orders, but it should not be read as a substitute for national legislatures, courts, elections, or civil society. Treaty obligations, admissibility, judgments, execution and actual domestic compliance are separate evidence layers; no country-wide ideological score follows from membership.',
+            citations: citations([], ['echrConvention', 'unRuleLawHumanRights', 'oxfordConstitutionalJustice', 'coeDemocraticCitizenship']),
           },
           {
             type: 'paragraph',
@@ -12727,6 +12753,11 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
           },
           {
             type: 'paragraph',
+            text: 'The European Convention case adds a transnational accountability safeguard and a legitimacy problem. Regional adjudication can give individuals a remedy beyond domestic institutions and can make rights obligations more durable, yet compliance depends on national authorities and the system’s democratic authorization remains debated. The Convention’s official history establishes treaty design and institutional development; it does not establish that every judgment is implemented equally, that international courts should decide every rights conflict, or that treaty membership proves a state is liberal in all six dimensions.',
+            citations: citations([], ['echrConvention', 'unRuleLawHumanRights', 'oxfordConstitutionalJustice', 'coeDemocraticCitizenship']),
+          },
+          {
+            type: 'paragraph',
             text: 'The second criticism is formal equality. Liberal constitutions have often proclaimed universal rights while leaving property, race, gender, colonial status, caste, religion, disability, or immigration status to determine who could exercise them in practice. Rights language can be emancipatory, but researchers must identify the actual rights-holder, remedy, enforcement institution, and excluded population in each period.',
             citations: citations(['wollstonecraftRights', 'lockeSecondTreatise', 'millOnLiberty'], ['colonialLiberalismExclusion', 'sepColonialism', 'unRuleLawHumanRights', 'oxfordLiberalismResearch']),
           },
@@ -12863,6 +12894,7 @@ researchSourceIds: ['bpbMonarchy', 'perseeFrenchConstitutionalMonarchy', 'elysee
       'Map disagreements over parliamentary sovereignty, constitutional courts, originalism, living constitutionalism, popular constitutionalism, common-good constitutionalism, and dialogic or weak-form review.',
       'Study economic constitutionalism: property, labor, taxation, social rights, public services, corporate power, ecological limits, and the material conditions required for equal civic participation.',
       'Add comparative case studies of emergency powers, democratic backsliding, digital surveillance, platform governance, climate emergencies, and international human-rights supervision, including successful safeguards and documented failures.',
+      'Read the complete European Convention and relevant protocols in their official English and French versions alongside Grand Chamber case law, Committee of Ministers execution records, reservations, domestic implementation studies, and scholarship in the participating states’ languages. The present addition establishes a bounded treaty-and-institution lead, not a complete history of regional compliance, democratic legitimacy, or rights practice across Europe.',
       'Test whether the six-dimensional score should separate constitutional structure from the substantive social settlement and whether uncertainty ranges are preferable to a single point score for historically changing traditions.',
       'The Portuguese-language Brazilian case begins, but does not complete, the multilingual research agenda. Compare constitutional promises with electoral administration, religious-minority petitions, slavery and abolition records, and court practice; avoid generalizing from the 1824 text to the whole imperial period.',
       'Read Constant’s relevant original French constitutional writings alongside the 1823 constituent debates and competing Brazilian interpretations of the Moderating Power. The existing Liberty of the Moderns reference is not a substitute for those works.',
