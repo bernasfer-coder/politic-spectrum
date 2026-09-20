@@ -120,7 +120,7 @@ describe('interactive atlas map', () => {
     const egypt = map().getByRole('button', { name: /Egypt:/ });
     act(() => egypt.focus());
     await user.keyboard('{Enter}');
-    expect(cards()).toHaveLength(2); // Nasser and an Egyptian node of the Ottoman network.
+    expect(cards()).toHaveLength(3); // Nasser, the post-Nasser case and an Egyptian node of the Ottoman network.
     await user.keyboard('{ArrowRight}');
     expect(document.activeElement).toHaveAttribute('data-country', 'map-222');
     await user.keyboard(' ');
@@ -167,7 +167,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(66);
+    expect(cards()).toHaveLength(67);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });
