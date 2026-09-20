@@ -6,8 +6,8 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 36);
-assert.equal(GEOGRAPHY_LABELS.length, 34);
+assert.equal(GEOGRAPHY_CASES.length, 37);
+assert.equal(GEOGRAPHY_LABELS.length, 35);
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
@@ -36,13 +36,14 @@ assert.equal(filterGeographyCases({ country: 'nigeria' })[0].id, 'nigerian-fourt
 assert.equal(filterGeographyCases({ country: 'pakistan' })[0].id, 'pakistani-constitutional-civilian-transition');
 assert.equal(filterGeographyCases({ country: 'bangladesh' })[0].id, 'bangladeshi-constitutional-parliamentary-order');
 assert.equal(filterGeographyCases({ country: 'sri-lanka' })[0].id, 'sri-lankan-constitutional-presidential-order');
+assert.equal(filterGeographyCases({ country: 'nepal' })[0].id, 'nepali-constitutional-republican-transition');
 assert.equal(filterGeographyCases({ label: 'nasserism' }).length, 2);
 assert.equal(filterGeographyCases({ continent: 'Oceania' }).length, 1);
 assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'tongan-constitutional-reform-1875-2010');
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
-assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 14, 'the atlas should expose all dated post-2000 implemented cases');
-assert.deepEqual(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id).sort(), ['antarctic-treaty-system', 'bangladeshi-constitutional-parliamentary-order', 'bhutanese-democratic-constitutional-transition', 'ghanaian-fourth-republic-constitutional-transition', 'indonesian-reformasi-constitutionalism', 'jordanian-constitutional-monarchy', 'kuwait-constitutional-parliamentary-order', 'nigerian-fourth-republic', 'oman-sultani-constitutional-order', 'pakistani-constitutional-civilian-transition', 'philippine-postauthoritarian-constitutionalism', 'saudi-basic-law-shura-order', 'sri-lankan-constitutional-presidential-order', 'tongan-constitutional-reform-1875-2010']);
+assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 15, 'the atlas should expose all dated post-2000 implemented cases');
+assert.deepEqual(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id).sort(), ['antarctic-treaty-system', 'bangladeshi-constitutional-parliamentary-order', 'bhutanese-democratic-constitutional-transition', 'ghanaian-fourth-republic-constitutional-transition', 'indonesian-reformasi-constitutionalism', 'jordanian-constitutional-monarchy', 'kuwait-constitutional-parliamentary-order', 'nepali-constitutional-republican-transition', 'nigerian-fourth-republic', 'oman-sultani-constitutional-order', 'pakistani-constitutional-civilian-transition', 'philippine-postauthoritarian-constitutionalism', 'saudi-basic-law-shura-order', 'sri-lankan-constitutional-presidential-order', 'tongan-constitutional-reform-1875-2010']);
 assert.ok(!filterGeographyCases({ country: 'egypt' }).some(({ id }) => id === 'nasser-regional-legacy'), 'regional influence is not automatically a country claim');
 const all = filterGeographyCases({});
 assert.deepEqual(all.map(({ startYear }) => startYear), all.map(({ startYear }) => startYear).sort((a, b) => a - b));
@@ -52,4 +53,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 36 dated cases, 34 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 37 dated cases, 35 unscored labels, citations, boundaries, filters and share URLs.');
