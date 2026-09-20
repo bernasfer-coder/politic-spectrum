@@ -1887,6 +1887,66 @@ const sources = [
     description: 'Long-run history of Rwanda’s colonial and postcolonial crisis through the 1994 genocide, emphasizing ideological, political and economic processes rather than primordial explanations. It is indispensable context but ends before the post-genocide constitutional order studied here.'
   },
   {
+    id: 'senegalConstitution2001Council',
+    label: 'Conseil constitutionnel du Sénégal — Constitution du Sénégal (adopted 2001, as amended)',
+    url: 'https://conseilconstitutionnel.sn/la-constitution/',
+    note: 'Official French constitutional portal consulted for the Constitution adopted by referendum on 7 January 2001, promulgated and published in Official Journal no. 5963 on 22 January 2001, with later constitutional changes listed by the Council. No constitutional wording, translation, scan or page is republished; formal design, amendments and implementation remain distinct questions.',
+    accessDate: '2026-09-20', creators: ['Conseil constitutionnel du Sénégal'], institution: 'Conseil constitutionnel du Sénégal',
+    publicationDate: '2001-01-07', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official constitutional text and institutional archive', identifiers: { referendumDate: '2001-01-07', promulgationDate: '2001-01-22', officialJournal: '5963' },
+    description: 'Primary legal witness to Senegal’s post-2000 constitutional order: republican sovereignty, formal rights, secular public authority, executive and parliamentary institutions, and constitutional review. The displayed referendum and promulgation dates identify the founding instrument; they do not prove uniform implementation or current law.'
+  },
+  {
+    id: 'senegalDgePresidentialElection2012',
+    label: 'Direction générale des Élections du Sénégal — Résultats de l’élection présidentielle de 2012',
+    url: 'https://www.vie-publique.sn/documents/8188/resultats-election-presidentielle-2012-senegal-premier-second-tour-direction-generale-des-elections',
+    note: 'Official French results record for the first and second rounds of the 2012 presidential election, dated 25 March 2012. The record is used as a primary electoral witness and link only; no results table, wording, scan or PDF is republished, and courts, observers, parties, local voters and implementation remain open evidence questions.',
+    accessDate: '2026-09-20', creators: ['Direction générale des Élections du Sénégal'], institution: 'Direction générale des Élections du Sénégal',
+    publicationDate: '2012-03-25', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official presidential election results / institutional record', identifiers: { electionDate: '2012-03-25' },
+    description: 'Primary institutional record of Senegal’s 2012 first- and second-round presidential results. It documents the official contest and outcome used to bound the case’s electoral horizon; it is not by itself proof of fairness, equal competition, participation quality, judicial independence or nationwide consent.'
+  },
+  {
+    id: 'constructionEtatSenegal2002',
+    label: 'Donal Cruise O’Brien, Momar Coumba Diop and Mamadou Diouf — La construction de l’État au Sénégal (2002)',
+    url: 'https://www.karthala.com/accueil/1115-la-construction-de-letat-au-senegal-9782845862296.html',
+    note: 'Karthala book record consulted for the French-language 2002 volume, ISBN 9782845862296 and 231-page extent. No book wording, quotation, table, chapter or scan is republished; the publisher record and the authors’ attributed interpretation remain distinct from a complete reading of every archival source.',
+    accessDate: '2026-09-20', creators: ['Donal Cruise O’Brien', 'Momar Coumba Diop', 'Mamadou Diouf'], institution: 'Karthala',
+    publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length study of state formation and political society', identifiers: { isbn: '9782845862296', pages: '231' },
+    description: 'Book-length French-language study connecting religious authorities, political actors and the social contract to Senegalese state formation, including the erosion of the Senghor–Diouf order and the March 2000 defeat of Abdou Diouf by the FAL led by Abdoulaye Wade. It is a major interpretive perspective, not a complete account of every region or social group.'
+  },
+  {
+    id: 'villalonIslamicSocietySenegal1995',
+    label: 'Leonardo A. Villalón — Islamic Society and State Power in Senegal: Disciples and Citizens in Fatick (1995)',
+    url: 'https://assets.cambridge.org/97805210/32322/frontmatter/9780521032322_frontmatter.pdf',
+    note: 'Cambridge University Press frontmatter and book record consulted for the 1995 monograph, ISBN 9780521460071 and 338-page extent. No book wording, quotation, table, chapter or scan is republished; its Fatick-centered field and institutional analysis is not generalized to every Senegalese locality or religious community.',
+    accessDate: '2026-09-20', creators: ['Leonardo A. Villalón'], institution: 'Cambridge University Press',
+    publicationDate: '1995', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Islam, citizenship and state power', identifiers: { isbn: '9780521460071', pages: '338' },
+    description: 'Book-length study of Sufi orders, discipleship, citizenship and local state power in Fatick. It treats religious networks as major social institutions within Senegal’s political stability while preserving the difference between a bounded regional study and a claim about all Senegalese political practice.'
+  },
+  {
+    id: 'ndaoDemocraticConquestsSenegal2016',
+    label: 'El Hadj Ibrahima Ndao — Sénégal, histoire des conquêtes démocratiques (2016)',
+    url: 'https://neas.sn/catalogue/S%C3%89N%C3%89GAL%2CHISTOIRE%20DES%20CONQU%C3%8ATES%20D%C3%89MOCRATIQUES',
+    note: 'Nouvelles Éditions Africaines du Sénégal record consulted for the French-language 2016 volume, ISBN 2-7236-1524-3 and 537-page extent. No book wording, quotation, chapter or scan is republished; its national narrative is cited as an attributed interpretation and should be compared with other histories and primary records.',
+    accessDate: '2026-09-20', creators: ['El Hadj Ibrahima Ndao'], institution: 'Nouvelles Éditions Africaines du Sénégal',
+    publicationDate: '2016', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language political history', identifiers: { isbn: '2-7236-1524-3', pages: '537' },
+    description: 'French-language national political history of Senegal’s democratic struggles, actors and events. It supplies a long narrative of democratic contestation, but the project preserves its national framing as one scholarly perspective rather than treating it as proof of a single consensual democratic tradition.'
+  },
+  {
+    id: 'niangPropagandaCensorshipSenegal2025',
+    label: 'Bocar Niang — L’histoire de la propagande et de la censure au Sénégal: Sous la colonisation et la présidence de Senghor (2025)',
+    url: 'https://www.editions-hermann.fr/livre/l-histoire-de-la-propagande-et-de-la-censure-au-senegal-bocar-niang',
+    note: 'Éditions Hermann book record consulted for the French-language 2025 study, ISBN 9791037042026 and 244-page extent. No book wording, quotation, chapter or scan is republished; the publication’s historical account of media, propaganda and censorship is kept distinct from official constitutional records and later politics.',
+    accessDate: '2026-09-20', creators: ['Bocar Niang'], institution: 'Éditions Hermann',
+    publicationDate: '2025-07-23', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length study of propaganda, censorship and political communication', identifiers: { isbn: '9791037042026', pages: '244' },
+    description: 'French-language study of colonial command, the Senghor era, radio, state and nation-building, propaganda and censorship. It adds media and communicative power to the political history, but does not by itself establish the experience of every journalist, language community, period or later government.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -1929,6 +1989,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
       : source.id.startsWith('uganda') || source.id.startsWith('kanyeihambaConstitutionalPoliticalHistoryUganda') || source.id.startsWith('mutibwaUganda') || source.id.startsWith('reidHistoryModernUganda') || source.id.startsWith('mamdaniPoliticsClassUganda') || source.id.startsWith('mamdaniSlowPoisonUganda') ? 'Ugandan decolonization, constitutional, military and movement-state history'
       : source.id.startsWith('rwanda') || source.id.startsWith('reyntjensPoliticalGovernanceRwanda') || source.id.startsWith('thomsonRwandaPrecariousPeace') || source.id.startsWith('strausWaldorfRemakingRwanda') || source.id.startsWith('guichaouaFromWarToGenocide') || source.id.startsWith('prunierRwandaCrisis') ? 'Rwandan post-conflict, constitutional, developmental and political history'
+      : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') ? 'Senegalese constitutional, democratic and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
