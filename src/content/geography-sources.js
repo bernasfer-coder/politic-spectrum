@@ -3037,6 +3037,76 @@ const sources = [
     description: 'Early book-length study of the occupation and its political legacy, useful for the provisional-administration phase and fragmentation of authority. It is read as one dated perspective within a larger bibliography.'
   },
   {
+    id: 'franceConstitution1958Conseil',
+    label: 'France — Constitution of 4 October 1958, Constitutional Council QPC360 record',
+    url: 'https://qpc360.conseil-constitutionnel.fr/constitution-4-octobre-1958',
+    note: 'Official Constitutional Council text consulted in French for the 1958 Constitution, including the version current after the 8 March 2024 revision. No constitutional wording, translation, scan or page is republished; formal republican, secular, democratic and social design is distinguished from implementation, colonial history and contemporary party competition.',
+    accessDate: '2026-09-20', creators: ['French Republic'], institution: 'Conseil constitutionnel',
+    publicationDate: '1958-10-04', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'constitution / official legal record', identifiers: { adoptionDate: '1958-10-04', lastRevision: '2024-03-08' },
+    description: 'Primary constitutional witness to the Fifth Republic’s dual executive, parliamentary, judicial-review, sovereignty, rights, secular and territorial architecture. It records formal design rather than the balance of power in every period or the lived experience of every community.'
+  },
+  {
+    id: 'franceLegislativeElection2024Interieur',
+    label: 'France — 2024 legislative elections, Ministry of the Interior definitive results',
+    url: 'https://www.interieur.gouv.fr/actualites/actualites-du-ministere/elections-legislatives-2024-resultats-definitifs',
+    note: 'Official Ministry of the Interior result record consulted for the 30 June and 7 July 2024 legislative elections. No result table, candidate material or page is reproduced; the record does not by itself establish representativeness, participation quality, public consent or governing stability.',
+    accessDate: '2026-09-20', creators: ['Ministère de l’Intérieur'], institution: 'Ministry of the Interior of France',
+    publicationDate: '2024-07-12', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official legislative election results record', identifiers: { firstRound: '2024-06-30', secondRound: '2024-07-07' },
+    description: 'Primary electoral record marking the selected contemporary horizon: dissolution, two-round legislative elections and the announced composition of the National Assembly. It documents an official process, not a complete sociological or ideological account of France.'
+  },
+  {
+    id: 'franceEuropeanElection2024Interieur',
+    label: 'France — 2024 European Parliament election, Ministry of the Interior results archive',
+    url: 'https://www.archives-resultats-elections.interieur.gouv.fr/resultats/europeennes2024/ensemble_geographique/nouvelle_assemblee/index.php',
+    note: 'Official Ministry of the Interior archive consulted for the 9 June 2024 European election and the national list of elected representatives. No result table or candidate material is reproduced; European electoral results are not treated as a direct measure of all French political identities or preferences.',
+    accessDate: '2026-09-20', creators: ['Ministère de l’Intérieur'], institution: 'Ministry of the Interior of France',
+    publicationDate: '2024-06-09', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official European election results record', identifiers: { electionDate: '2024-06-09', seats: '81' },
+    description: 'Primary electoral archive documenting the national-list European election immediately preceding the 2024 dissolution. It is used to mark electoral and European-integration context, not to collapse parliamentary, European and social politics into one result.'
+  },
+  {
+    id: 'atkinFifthFrenchRepublic2005',
+    label: 'Nicholas Atkin, The Fifth French Republic (Palgrave Macmillan, 2005)',
+    url: 'https://www.bloomsbury.com/uk/fifth-french-republic-9780333650578/',
+    note: 'Bloomsbury/Red Globe Press record consulted for the 2005 monograph. No book wording, quotation, table, chapter or scan is republished; its chronological political narrative is kept distinct from the constitutional text and newer institutional studies.',
+    accessDate: '2026-09-20', creators: ['Nicholas Atkin'], institution: 'Palgrave Macmillan / Red Globe Press',
+    publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of the Fifth Republic', identifiers: { isbn: '9780333650578' },
+    description: 'Chronological book-length history of the Fifth Republic from the Algerian crisis through the early 2000s, connecting regime endurance to social, economic and international developments while identifying tensions within liberal democracy. It supplies historical interpretation, not a current-country score.'
+  },
+  {
+    id: 'elgiePoliticalInstitutionsFrance2003',
+    label: 'Robert Elgie, Political Institutions in Contemporary France (Oxford University Press, 2003)',
+    url: 'https://obnb.uk/p12606553-political-institutions-in-contemporary-france',
+    note: 'British National Bibliography and Oxford University Press bibliographic record consulted for the 2003 monograph. No book wording, quotation, table, chapter or scan is republished; its institutional analysis is attributed and dated before the 2008 revision, 2017 realignment and 2024 elections.',
+    accessDate: '2026-09-20', creators: ['Robert Elgie'], institution: 'Oxford University Press / British National Bibliography',
+    publicationDate: '2003', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of contemporary French political institutions', identifiers: { isbn: '0198782667', pages: '274' },
+    description: 'Book-length institutional analysis of France since 1958, used for the presidency, government, Parliament, parties, administration and territorial politics. It offers a distinct political-science perspective rather than a complete social or colonial history.'
+  },
+  {
+    id: 'knappWrightGovernmentFrance2006',
+    label: 'Andrew Knapp and Vincent Wright, The Government and Politics of France, 5th ed. (Routledge, 2006)',
+    url: 'https://www.routledge.com/The-Government-and-Politics-of-France/Knapp-Knapp-Wright-Wright/p/book/9780415357333',
+    note: 'Routledge book record consulted for the fifth edition and metadata. No book wording, quotation, table, chapter or scan is republished; its comprehensive textbook perspective is kept distinct from Atkin, Elgie, French-language scholarship and primary records.',
+    accessDate: '2026-09-20', creators: ['Andrew Knapp', 'Vincent Wright'], institution: 'Routledge',
+    publicationDate: '2006', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of French government and politics', identifiers: { isbn: '9780415357333', pages: '560', edition: '5th' },
+    description: 'Comprehensive book-length treatment of the Fifth Republic’s executive, Parliament, parties, administration, local government, judiciary and European dimension. It is useful for institutional comparison while remaining a dated scholarly synthesis rather than a complete account of every locality or political actor.'
+  },
+  {
+    id: 'duhamelFoucaultFullaLazarRepublic2019',
+    label: 'Olivier Duhamel, Martial Foucault, Mathieu Fulla and Marc Lazar, La Ve République démystifiée (Presses de Sciences Po, 2019)',
+    url: 'https://www.pressesdesciencespo.fr/en/book/?GCOI=27246100761880',
+    note: 'Presses de Sciences Po monograph record consulted for the French-language edited study, contributors, 20 June 2019 publication date and 238-page print extent. No chapter wording, quotation, table or scan is republished; the contributors’ arguments are attributed and not treated as a single consensus or a current-status source.',
+    accessDate: '2026-09-20', creators: ['Olivier Duhamel', 'Martial Foucault', 'Mathieu Fulla', 'Marc Lazar'], institution: 'Presses de Sciences Po',
+    publicationDate: '2019-06-20', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language edited study of Fifth Republic institutions and political society', identifiers: { isbn: '9782724624557', ebookIsbn: '9782724624571', pages: '238' },
+    description: 'French-language edited study of the Fifth Republic’s presidency, Parliament, state, social protection, parties, political support and possible futures. It adds a contemporary French scholarly perspective on institutional transformation and protest while preserving disagreement among contributors.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -3086,6 +3156,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('chad') || source.id.startsWith('azevedoNationFutureChad') || source.id.startsWith('nolutshunguLimitsAnarchyChad') || source.id.startsWith('azevedoRootsViolenceChad') || source.id.startsWith('powellFrancesWarsChad') || source.id.startsWith('dingammadjiGovernmentsChad') || source.id.startsWith('buijtenhuijsTransitionChad') || source.id.startsWith('haggarTombalbayeChad') || source.id.startsWith('brodyCatchDictatorChad') ? 'Chadian constitutional, civil-war, intervention and transition history'
       : source.id.startsWith('cameroon') || source.id.startsWith('ngohHistoryCameroon') || source.id.startsWith('josephRadicalNationalismCameroon') || source.id.startsWith('ngohSouthernCameroons') || source.id.startsWith('terrettaNationOutlawsCameroon') || source.id.startsWith('takougangKriegerPoliticalCrossroadsCameroon') || source.id.startsWith('bouopdaPoliticalHistoryCameroon') || source.id.startsWith('bouopdaAnglophoneCrisisCameroon') ? 'Cameroonian constitutional, decolonization, bilingual and Anglophone-crisis history'
       : source.id.startsWith('iraq') || source.id.startsWith('trippHistoryIraq') || source.id.startsWith('marrModernHistoryIraq') || source.id.startsWith('dawishaPoliticalHistoryIraq') || source.id.startsWith('dodgeIraq') || source.id.startsWith('haddadSectarianismIraq') || source.id.startsWith('alAliStruggleIraq') || source.id.startsWith('franzenPridePowerIraq') || source.id.startsWith('herringRangwalaIraq') ? 'Iraqi constitutional, occupation, sectarianization and political history'
+      : source.id.startsWith('france') || source.id.startsWith('atkinFifthFrench') || source.id.startsWith('elgiePoliticalInstitutionsFrance') || source.id.startsWith('knappWrightGovernmentFrance') || source.id.startsWith('duhamelFoucaultFullaLazarRepublic') ? 'French constitutional, Fifth Republic and political history'
       : source.id.startsWith('burkina') || source.id.startsWith('harschBurkina') || source.id.startsWith('englebertBurkina') || source.id.startsWith('kaborePoliticalHistoryBurkina') || source.id.startsWith('englebertCotRevolutionBurkina') || source.id.startsWith('sankaraSpeeches') ? 'Burkinabè constitutional, revolutionary and political-transition history'
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
       : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
