@@ -1,6 +1,106 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'sierraLeoneConstitution1991Parliament',
+    label: 'Parliament of Sierra Leone — Constitution of Sierra Leone, 1991',
+    url: 'https://parliament.gov.sl/constitution-of-sierra-leone.html',
+    note: 'Official parliamentary constitutional page consulted for the 1991 Constitution. No constitutional wording, translation, scan or PDF page is republished; amendments, drafting, implementation and lived experience remain distinct questions.',
+    accessDate: '2026-09-20', creators: ['Parliament of Sierra Leone'], institution: 'Parliament of Sierra Leone',
+    publicationDate: '1991', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official parliamentary archive', identifiers: { constitutionYear: '1991' },
+    description: 'Primary legal witness to Sierra Leone’s formal sovereignty, rights, Parliament, presidency, judiciary, local and traditional authority and security institutions. It records constitutional design, not uniform implementation or public consent.'
+  },
+  {
+    id: 'sierraLeoneLomePeaceAgreement1999Un',
+    label: 'United Nations Peacemaker — Lomé Peace Agreement between the Government of Sierra Leone and the RUF',
+    url: 'https://peacemaker.un.org/sites/default/files/document/files/2024/05/sl990707lomepeaceagreement.pdf',
+    note: 'Official UN Peacemaker record consulted for the 7 July 1999 agreement. No agreement wording, translation, scan or PDF page is republished; the settlement’s intended design is not treated as proof of complete implementation or public consent.',
+    accessDate: '2026-09-20', creators: ['Government of Sierra Leone', 'Revolutionary United Front', 'United Nations'], institution: 'United Nations Peacemaker',
+    publicationDate: '1999-07-07', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'peace agreement / official international primary record', identifiers: { agreementDate: '1999-07-07' },
+    description: 'Primary diplomatic and political record of a ceasefire, power-sharing, disarmament and demobilization, RUF political transformation and national reconciliation framework during the civil war.'
+  },
+  {
+    id: 'sierraLeoneTrcFinalReport2004',
+    label: 'Sierra Leone Truth and Reconciliation Commission — Witness to Truth: Final Report',
+    url: 'https://sierra-leone.org/TRCDocuments.html',
+    note: 'Official TRC archive consulted for the final-report series. No report wording, testimony, table, scan or PDF page is republished; the Commission’s findings are not treated as an uncontested whole-national narrative or as proof that every allegation was judicially established.',
+    accessDate: '2026-09-20', creators: ['Truth and Reconciliation Commission of Sierra Leone'], institution: 'Truth and Reconciliation Commission of Sierra Leone',
+    publicationDate: '2004', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official truth-commission report archive / transitional-justice record', identifiers: { reportYear: '2004' },
+    description: 'Primary transitional-justice record containing institutional findings and collected testimony about the civil war, its antecedents, abuses, victims, perpetrators, reconciliation and reparative questions.'
+  },
+  {
+    id: 'sierraLeoneEcsl2018Results',
+    label: 'Electoral Commission for Sierra Leone — 2018 Presidential Election Results',
+    url: 'https://results.ec.gov.sl/',
+    note: 'Official Electoral Commission results dashboard consulted for the 2018 presidential contest. No results table, wording, scan or dashboard extract is republished; the record does not by itself establish electoral freedom, equal competition, participation quality, coercion or nationwide consent.',
+    accessDate: '2026-09-20', creators: ['Electoral Commission for Sierra Leone'], institution: 'Electoral Commission for Sierra Leone',
+    publicationDate: '2018', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral results / institutional record', identifiers: { electionYear: '2018' },
+    description: 'Primary institutional witness to the announced 2018 presidential election results and the electoral horizon used for this case.'
+  },
+  {
+    id: 'sierraLeoneEcsl2023ElectionReport',
+    label: 'Electoral Commission for Sierra Leone — 2023 Annual and Multi-tier Elections Report',
+    url: 'https://ec.gov.sl/ecsl-annual-reports/',
+    note: 'Official Electoral Commission annual-reports page consulted for the 2023 multi-tier elections report. No report wording, table, scan or PDF page is republished; institutional reporting is kept distinct from courts, observers, parties, local voters and later implementation evidence.',
+    accessDate: '2026-09-20', creators: ['Electoral Commission for Sierra Leone'], institution: 'Electoral Commission for Sierra Leone',
+    publicationDate: '2023', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election report / institutional record', identifiers: { electionYear: '2023' },
+    description: 'Primary institutional witness extending the electoral horizon to Sierra Leone’s 2023 presidential, parliamentary and local-government contests without turning an election report into a claim about the whole political community.'
+  },
+  {
+    id: 'harrisSierraLeonePoliticalHistory2020',
+    label: 'David Harris — Sierra Leone: A Political History (new edition, 2020)',
+    url: 'https://www.hurstpublishers.com/book/sierra-leone-2/',
+    note: 'Hurst record consulted for the 2020 new edition (ISBN 9781787384125, 256 pages). No book wording, quotation, table, chapter or scan is republished; the broad account through the postwar and Ebola period is not treated as a complete local or current history.',
+    accessDate: '2026-09-20', creators: ['David Harris'], institution: 'Hurst Publishers',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history', identifiers: { isbn: '9781787384125', originalIsbn: '9781849043236', pages: '256' },
+    description: 'Broad political history from the founding of Freetown and colonial rule through independence, party competition, civil war, liberal peacebuilding, postwar politics and Ebola. It supplies a long-run state–society frame while retaining the difference between national overview and local experience.'
+  },
+  {
+    id: 'gberieDirtyWarSierraLeone2005',
+    label: 'Lansana Gberie — A Dirty War in West Africa: The RUF and the Destruction of Sierra Leone (2005)',
+    url: 'https://iupress.org/9780253218551/a-dirty-war-in-west-africa/',
+    note: 'Indiana University Press record consulted for the 2005 monograph (ISBN 9780253218551, 224 pages). No book wording, quotation, table, chapter or scan is republished; this war-centered account is not silently expanded into a complete national history.',
+    accessDate: '2026-09-20', creators: ['Lansana Gberie'], institution: 'Indiana University Press',
+    publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length civil-war history', identifiers: { isbn: '9780253218551', pages: '224' },
+    description: 'War-centered history of the Revolutionary United Front, state collapse, diamonds, regional and international involvement and atrocities. It is a distinct account of the civil-war political economy and its consequences.'
+  },
+  {
+    id: 'keenConflictCollusionSierraLeone2005',
+    label: 'David Keen — Conflict and Collusion in Sierra Leone (2005)',
+    url: 'https://boydellandbrewer.com/book/conflict-and-collusion-in-sierra-leone-pb/?v=7885444af42e',
+    note: 'James Currey / Boydell & Brewer record consulted for the 2005 monograph (ISBN 9780852558836, 352 pages). No book wording, quotation, table, chapter or scan is republished; its political-economy interpretation remains distinct from the official record and other histories.',
+    accessDate: '2026-09-20', creators: ['David Keen'], institution: 'James Currey / Boydell & Brewer',
+    publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political economy of civil war', identifiers: { isbn: '9780852558836', clothIsbn: '9780852558829', pages: '352' },
+    description: 'Political-economy study of fractured armed groups, collusion, war incentives, local survival strategies and the obstacles to peace. It complicates narratives that reduce the war to irrational violence or a single rebel ideology.'
+  },
+  {
+    id: 'mittonRebelsRottenStateSierraLeone2015',
+    label: 'Kieran Mitton — Rebels in a Rotten State: Understanding Atrocity in the Sierra Leone Civil War (2015)',
+    url: 'https://academic.oup.com/book/4733',
+    note: 'Oxford University Press record consulted for the 2015 monograph (print ISBN 9780190241582; online ISBN 9780190492199; DOI 10.1093/acprof:oso/9780190241582.001.0001). No book wording, quotation, table, chapter or scan is republished; fieldwork and interview scope remain bounded.',
+    accessDate: '2026-09-20', creators: ['Kieran Mitton'], institution: 'Oxford University Press',
+    publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of atrocity, violence and reintegration', identifiers: { isbn: '9780190241582', onlineIsbn: '9780190492199', doi: '10.1093/acprof:oso/9780190241582.001.0001' },
+    description: 'Fieldwork-based study of perpetrators, violence, human agency, atrocity and postwar reintegration. It provides a distinct micro-level and social explanation that should not be generalized to every Sierra Leonean experience.'
+  },
+  {
+    id: 'lahaiHumanRightsSierraLeone2018',
+    label: 'John Idriss Lahai — Human Rights in Sierra Leone, 1787–2016: The Long Struggle from the Transatlantic Slave Trade to the Present (2018)',
+    url: 'https://www.routledge.com/Human-Rights-in-Sierra-Leone-1787-2016-The-Long-Struggle-from-the-Transatlantic-Slave-Trade-to-the-Present/Lahai/p/book/9780367664978',
+    note: 'Routledge record consulted for the 2018 book (ISBN 9781138604766; ebook ISBN 9780429468407). No book wording, quotation, table, chapter or scan is republished; its human-rights and transitional-justice lens remains distinct from constitutional and electoral records.',
+    accessDate: '2026-09-20', creators: ['John Idriss Lahai'], institution: 'Routledge',
+    publicationDate: '2018', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length interdisciplinary human-rights and political history', identifiers: { isbn: '9781138604766', ebookIsbn: '9780429468407' },
+    description: 'Long human-rights history from Freetown’s founding through colonialism, independence, war, constitutional change, gendered violence and transitional justice to 2016. It adds a rights-centered lens without treating formal rights as proof of uniform realization.'
+  },
+  {
     id: 'gambiaConstitution1997Moj',
     label: 'Attorney General’s Chambers and Ministry of Justice of The Gambia — Constitution of The Gambia, 1997 (2002 revision)',
     url: 'https://www.moj.gm/downloads',
@@ -2071,6 +2171,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('uganda') || source.id.startsWith('kanyeihambaConstitutionalPoliticalHistoryUganda') || source.id.startsWith('mutibwaUganda') || source.id.startsWith('reidHistoryModernUganda') || source.id.startsWith('mamdaniPoliticsClassUganda') || source.id.startsWith('mamdaniSlowPoisonUganda') ? 'Ugandan decolonization, constitutional, military and movement-state history'
       : source.id.startsWith('rwanda') || source.id.startsWith('reyntjensPoliticalGovernanceRwanda') || source.id.startsWith('thomsonRwandaPrecariousPeace') || source.id.startsWith('strausWaldorfRemakingRwanda') || source.id.startsWith('guichaouaFromWarToGenocide') || source.id.startsWith('prunierRwandaCrisis') ? 'Rwandan post-conflict, constitutional, developmental and political history'
       : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') ? 'Senegalese constitutional, democratic and political history'
+      : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
