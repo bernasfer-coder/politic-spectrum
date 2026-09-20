@@ -3864,6 +3864,76 @@ const sources = [
     description: 'French-language edited study of the Fifth Republic’s presidency, Parliament, state, social protection, parties, political support and possible futures. It adds a contemporary French scholarly perspective on institutional transformation and protest while preserving disagreement among contributors.'
   },
   {
+    id: 'turkeyConstitution1982Current',
+    label: 'Constitutional Court of the Republic of Türkiye — Constitution of the Republic of Turkey, current English witness',
+    url: 'https://www.anayasa.gov.tr/media/7258/anayasa_eng.pdf',
+    note: 'Official Constitutional Court PDF consulted for the constitutional state, secularism, social-state language, rights, Parliament, presidency and post-2017 amendments. No constitutional wording, translation, scan or PDF page is republished; formal design is distinguished from implementation, emergency practice and political consent.',
+    accessDate: '2026-09-20', creators: ['Republic of Türkiye'], institution: 'Constitutional Court of the Republic of Türkiye',
+    publicationDate: '1982 / amended through 2017', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitution / official English legal record', identifiers: { constitutionYear: '1982', amendmentHorizon: '2017' },
+    description: 'Official English witness to the 1982 Constitution as amended through the presidential-system changes, used for the formal republic, rights, secularism, social-state principles, legislative structure and executive powers. It is not evidence that every provision was implemented equally or that the translation replaces the Turkish original.'
+  },
+  {
+    id: 'turkeyYskReferendum2017',
+    label: 'Supreme Election Council of Türkiye — Decision 663, 16 April 2017 constitutional referendum results',
+    url: 'https://www.ysk.gov.tr/doc/karar/dosya/5064/2017-663.pdf',
+    note: 'Official YSK decision consulted for the final 16 April 2017 referendum record and the Council’s treatment of result aggregation and objections. No Turkish wording, translation, scan or PDF page is republished; the official result is distinguished from independent observation, legal criticism, public consent and implementation of the amendments.',
+    accessDate: '2026-09-20', creators: ['Yüksek Seçim Kurulu'], institution: 'Supreme Election Council of the Republic of Türkiye',
+    publicationDate: '2017-04-27', evidenceRole: 'primary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'primary referendum result / official electoral decision', identifiers: { decisionNumber: '2017/663', referendumDate: '2017-04-16' },
+    description: 'Primary electoral decision declaring the final constitutional-referendum results that preceded the presidential-system transition. It documents an official result and legal procedure, not the quality of deliberation, the fairness of every campaign condition or the later operation of the amended Constitution.'
+  },
+  {
+    id: 'turkeyYskElections2023',
+    label: 'Supreme Election Council of Türkiye — 14 May 2023 presidential and parliamentary election statistics',
+    url: 'https://www.ysk.gov.tr/doc/dosyalar/docs/14Mayis2023CBSecimIstatistik.pdf',
+    note: 'Official YSK statistics consulted for the 14 May 2023 presidential and 28th-term parliamentary election results, participation and party distribution. No Turkish table, translation, scan or PDF page is republished; the authority’s record does not by itself establish equal competition, media access, independent oversight or public consent.',
+    accessDate: '2026-09-20', creators: ['Yüksek Seçim Kurulu'], institution: 'Supreme Election Council of the Republic of Türkiye',
+    publicationDate: '2023-05-19', evidenceRole: 'primary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'primary election results / official statistical record', identifiers: { electionDate: '2023-05-14', presidentialDecision: '2023/1091', parliamentaryDecision: '2023/1255' },
+    description: 'Official statistical witness to the 2023 presidential and parliamentary election horizon, including participation and announced results. It marks the selected contemporary endpoint without being treated as a complete political or social history.'
+  },
+  {
+    id: 'zurcherTurkeyModernHistory2017',
+    label: 'Erik Jan Zürcher — Turkey: A Modern History, 4th ed. (I.B. Tauris, 2017)',
+    url: 'https://www.bloomsbury.com/us/turkey-9781784531874/',
+    note: 'Bloomsbury/I.B. Tauris book record consulted for the fourth edition, 2017 publication, 488-page paperback and ISBN 9781784531874. No book wording, quotation, map, table, scan or chapter is republished; Zürcher’s long-run interpretation is attributed and paired with focused AKP studies.',
+    accessDate: '2026-09-20', creators: ['Erik Jan Zürcher'], institution: 'I.B. Tauris / Bloomsbury Publishing',
+    publicationDate: '2017-08-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern national and political history', identifiers: { isbn: '9781784531874', hardbackIsbn: '9781784531867', pages: '488', edition: '4th' },
+    description: 'Long-run modern history connecting Ottoman reform, state and society, mass politics, military coups, the Kurdish question, European relations, Middle Eastern politics and Islam to modern Turkey. It supplies a broad historical frame, not a complete account of local, Kurdish, gender, labor or post-2023 political experience.'
+  },
+  {
+    id: 'yavuzSecularismMuslimDemocracyTurkey2009',
+    label: 'M. Hakan Yavuz — Secularism and Muslim Democracy in Turkey (Cambridge University Press, 2009)',
+    url: 'https://www.cambridge.org/core/books/secularism-and-muslim-democracy-in-turkey/CC6CDCE70BAD9524CC96465BC6DCA32C',
+    note: 'Cambridge University Press book record and front matter consulted for the 2009 monograph, xiv + 301 pages, ISBN 9780521888783 and paperback ISBN 9780521717328. No book wording, quotation, table, scan or chapter is republished; Yavuz’s interpretation is attributed and bounded mainly to the AKP’s rise and early governments.',
+    accessDate: '2026-09-20', creators: ['M. Hakan Yavuz'], institution: 'Cambridge University Press',
+    publicationDate: '2009-02-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Turkish secularism, political Islam and the AKP', identifiers: { isbn: '9780521888783', paperbackIsbn: '9780521717328', pages: '301', doi: '10.1017/CBO9780511815089' },
+    description: 'Book-length study of the AKP’s emergence, secularism, political participation, economics, internal security, the Kurdish question, foreign policy and the question of whether a party with Islamic roots could liberalize within competitive politics. It is an influential interpretation of an early period, not a complete account of later presidentialization.'
+  },
+  {
+    id: 'whiteMuslimNationalismNewTurks2013',
+    label: 'Jenny White — Muslim Nationalism and the New Turks (Princeton University Press, 2013)',
+    url: 'https://www.jstor.org/stable/j.ctt1r2f65',
+    note: 'Princeton University Press/JSTOR book record consulted for the 2013 monograph, 240 pages, and ISBN 9780691155173. No book wording, quotation, image, table or scan is republished; White’s analysis of identity, Islam, secularism, Muslim elites and Ottoman memory is attributed and not generalized to all Turkish citizens.',
+    accessDate: '2026-09-20', creators: ['Jenny White'], institution: 'Princeton University Press / JSTOR',
+    publicationDate: '2013', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Turkish nationalism, Islam and secularism', identifiers: { isbn: '9780691155173', paperbackIsbn: '9780691155180', pages: '240' },
+    description: 'Book-length analysis of changing Turkish national identity, Muslim political and economic elites, secularism and the AKP-era challenge to the republican-secularist definition of the nation. It asks whether the Turkish model was a success story or cautionary tale; this remains an attributed interpretive frame rather than a universal verdict.'
+  },
+  {
+    id: 'cizreSecularIslamicPoliticsTurkey2008',
+    label: 'Ümit Cizre (ed.) — Secular and Islamic Politics in Turkey: The Making of the Justice and Development Party (Routledge, 2008)',
+    url: 'https://www.routledge.com/Secular-and-Islamic-Politics-in-Turkey-The-Making-of-the-Justice-and-Development-Party/Cizre/p/book/9780415599405',
+    note: 'Routledge book record consulted for the 2008 edited volume, 238-page edition and ISBN 9780415599405. No chapter wording, quotation, table, scan or contributor text is republished; the contributors’ distinct analyses are preserved rather than treated as a single consensus.',
+    accessDate: '2026-09-20', creators: ['Ümit Cizre'], institution: 'Routledge',
+    publicationDate: '2008-03-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Turkish political Islam and the AKP', identifiers: { isbn: '9780415599405', alternativeIsbn: '9781134155231', pages: '238' },
+    description: 'Edited book examining the AKP’s identity, early reformist discourse, reversal toward conservative nationalism, relationship with the secular establishment and military, European Union dimension and social bases. It foregrounds internal debate and interactive political processes rather than a fixed Islamist or secular label.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -3889,7 +3959,8 @@ export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note })
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
+  discipline: source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
+      : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
       : source.id.startsWith('gambia') || source.id.startsWith('hughesPerfectPoliticalHistoryGambia') || source.id.startsWith('saineParadoxThirdWaveGambia') || source.id.startsWith('saineCeesaySallStateSocietyGambia') || source.id.startsWith('nabanehAbebeSoweGambiaTransition') ? 'Gambian constitutional, democratization and political history'
       : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') || source.id.startsWith('southall') || source.id.startsWith('booysen') || source.id.startsWith('glaser') || source.id.startsWith('buthelezi') ? 'South African constitutional law and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
