@@ -1369,6 +1369,54 @@ const sources = [
     description: 'A book-length analysis of economic and political reform under the PNDC, originally published in 1993 and represented by the publisher’s Voices Revived record. Its political-economy perspective supplies context for the constitutional transition but does not replace constitutional, electoral or local-governance evidence.',
   },
   {
+    id: 'ayeeAmoahAliduGhanaPolitics2024',
+    label: 'Joseph R.A. Ayee, Lloyd G.A. Amoah and Seidu M. Alidu (eds.) — Political Institutions, Party Politics and Communication in Ghana: Three Decades of the Fourth Republic',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-54744-7',
+    note: 'Official Springer/Palgrave Macmillan book record consulted for the 2024 edited volume (hardcover ISBN 978-3-031-54743-0; eBook ISBN 978-3-031-54744-7; 286 pages). No chapter wording, quotation, table, figure or scan is republished; the volume’s multi-author arguments remain attributed and its coverage is not treated as a complete account of Ghanaian society or political practice.',
+    accessDate: '2026-09-20',
+    creators: ['Joseph R.A. Ayee (editor)', 'Lloyd G.A. Amoah (editor)', 'Seidu M. Alidu (editor)'], institution: 'Palgrave Macmillan / Springer Nature Switzerland AG',
+    publicationDate: '2024-05-10', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Ghanaian Fourth Republic institutions, parties and public policy',
+    identifiers: { isbn: '9783031547430', ebookIsbn: '9783031547447', doi: '10.1007/978-3-031-54744-7', pages: '286' },
+    description: 'A book-length edited study of the Fourth Republic’s institutional, party, electoral, media, public-policy and gender-political record. Its Ghanaian scholarly contributors document both democratic achievements and failures, while the volume’s thematic coverage does not establish uniform implementation, popular consent or a single national political experience.',
+  },
+  {
+    id: 'pallerDemocracyGhana2019',
+    label: 'Jeffrey W. Paller — Democracy in Ghana: Everyday Politics in Urban Africa',
+    url: 'https://www.cambridge.org/core/books/abs/democracy-in-ghana/democracy-in-ghana/33D0F02049F3CF9D3D8AAEFD6B860BCD',
+    note: 'Official Cambridge University Press book record consulted for Paller’s 2019 monograph (DOI 10.1017/9781108578721). No book wording, interview material, table, figure or scan is republished; its urban and everyday-politics scope is kept bounded and is not generalized to rural Ghana or all citizens.',
+    accessDate: '2026-09-20',
+    creators: ['Jeffrey W. Paller'], institution: 'Cambridge University Press',
+    publicationDate: '2019-02-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of everyday democratic politics in urban Ghana',
+    identifiers: { doi: '10.1017/9781108578721' },
+    description: 'A book-length urban political ethnography connecting democracy, development and daily political life in Ghana. It adds a bottom-up perspective on clientelism, local brokerage and political practice, but its selected urban settings cannot stand for every region, class, gender, language community or rural experience.',
+  },
+  {
+    id: 'ghanaEcPresidentialElection2020',
+    label: 'Electoral Commission of Ghana — 2020 presidential election results',
+    url: 'https://ec.gov.gh/2020-presidential-election-results/',
+    note: 'Official Electoral Commission results page consulted as a primary institutional record of the 2020 presidential election. No result table, declaration wording, scan or PDF is republished; the Commission’s record is distinguished from independent observation, litigation, participation evidence and assessments of fairness or consent.',
+    accessDate: '2026-09-20',
+    creators: ['Electoral Commission of Ghana'], institution: 'Electoral Commission of Ghana',
+    publicationDate: '2020-12-07', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official presidential election result record',
+    identifiers: { electionDate: '2020-12-07' },
+    description: 'Primary institutional record for the Commission’s 2020 presidential-election results. It anchors the dated electoral sequence but does not by itself establish equal access, uncoerced participation, accurate counting, judicial independence or broad public agreement.',
+  },
+  {
+    id: 'ghanaEcPresidentialElection2024',
+    label: 'Electoral Commission of Ghana — 2024 presidential election results',
+    url: 'https://ec.gov.gh/2024-presidential-election-results/',
+    note: 'Official Electoral Commission results page consulted as a primary institutional record of the 2024 presidential election; the page is dated 10 January 2025 and the election date is 7 December 2024. No result table, declaration wording, scan or PDF is republished; the Commission’s record is not treated as independent proof of fairness, legitimacy, implementation or post-election political performance.',
+    accessDate: '2026-09-20',
+    creators: ['Electoral Commission of Ghana'], institution: 'Electoral Commission of Ghana',
+    publicationDate: '2025-01-10', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official presidential election result record',
+    identifiers: { electionDate: '2024-12-07' },
+    description: 'Primary institutional record for the Commission’s 2024 presidential-election results, used as the endpoint for this dated case. It documents the official result record without settling electoral fairness, participation, opposition acceptance, policy consequences or developments after the 2024 election.',
+  },
+  {
     id: 'bahruModernEthiopia2001',
     label: 'Bahru Zewde — A History of Modern Ethiopia, 1855–1991',
     url: 'https://boydellandbrewer.com/book/a-history-of-modern-ethiopia-1855-1991-9780852557860/?v=7885444af42e',
@@ -3418,7 +3466,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('sriLanka') || source.id.startsWith('deSilvaHistorySriLanka') || source.id.startsWith('wickramasingheSriLanka') || source.id.startsWith('spencerSriLanka') || source.id.startsWith('amarasingamBassSriLanka') ? 'Sri Lankan constitutional, postwar and political history'
       : source.id.startsWith('bangladesh') || source.id.startsWith('vanSchendelHistoryBangladesh') || source.id.startsWith('riazBangladesh') || source.id.startsWith('choudhuryConstitutionalDevelopmentBangladesh') || source.id.startsWith('obaidullahParliamentBangladesh') ? 'Bangladeshi constitutional, parliamentary and political history'
       : source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('pakistanEcp') ? 'Pakistani constitutional, civil–military and electoral history'
-      : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') ? 'Ghanaian constitutional transition and political history'
+      : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') || source.id.startsWith('ayeeAmoahAliduGhana') || source.id.startsWith('pallerDemocracyGhana') ? 'Ghanaian constitutional transition and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') ? 'Ethiopian imperial constitutional and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
