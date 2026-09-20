@@ -4442,6 +4442,76 @@ const sources = [
     description: 'Primary institutional record for the 2025 midterm national, local and BARMM election results used to extend the case’s documented endpoint. It establishes an electoral record but not the quality, equality, motives or social meaning of every contest.',
   },
   {
+    id: 'alonMakingJordan2007',
+    label: 'Yoav Alon — The Making of Jordan: Tribes, Colonialism and the Modern State (2007)',
+    url: 'https://www.bloomsbury.com/au/making-of-jordan-9781848850132/',
+    note: 'Bloomsbury/I.B. Tauris publisher record consulted for the 2007 monograph (232 pages; ISBN 9781848850132). No book wording, quotation, scan or adapted material is republished; Alon’s account of state formation and tribal–colonial relations is attributed and is not extended beyond its documented scope.',
+    accessDate: '2026-09-20',
+    creators: ['Yoav Alon'], institution: 'I.B. Tauris', publicationDate: '2007', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of Jordanian state formation, tribes and colonialism', identifiers: { isbn: '9781848850132', pages: '232' },
+    description: 'A book-length study of the Hashemite state’s formation in the Emirate and mandate period, emphasizing the interaction of tribal networks, British colonial administration and centralizing state-building. It supplies a formative perspective rather than a complete history of later parliamentary practice or contemporary Jordan.',
+  },
+  {
+    id: 'andersonNationalistVoicesJordan2005',
+    label: 'Betty S. Anderson — Nationalist Voices in Jordan: The Street and the State (2005)',
+    url: 'https://utpdistribution.com/9780292706255/nationalist-voices-in-jordan/',
+    note: 'University of Texas Press distribution record consulted for the 2005 monograph (304 pages; paperback ISBN 9780292706255). No book wording, quotation, memoir, interview, poem, newspaper passage or scan is republished; Anderson’s account of nationalist mobilization is attributed and does not stand for every Jordanian or Palestinian experience.',
+    accessDate: '2026-09-20',
+    creators: ['Betty S. Anderson'], institution: 'University of Texas Press', publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of Jordanian nationalist movements and state–society relations', identifiers: { isbn: '9780292706255', pages: '304' },
+    description: 'A book-length study of Jordanian nationalist voices, street politics and state relations from the mandate and early independence period through the 1950s. Its use of memoirs, interviews, newspapers, archives and cultural sources keeps ordinary actors and Palestinian and leftist political currents visible alongside official state narratives.',
+  },
+  {
+    id: 'ryanJordanTransition2002',
+    label: 'Curtis R. Ryan — Jordan in Transition: From Hussein to Abdullah (2002)',
+    url: 'https://www.rienner.com/title/Jordan_in_Transition_From_Hussein_to_Abdullah',
+    note: 'Lynne Rienner Publishers record consulted for the monograph listed in library metadata as 2002 (ISBN 9781588261038). Publisher and library records differ on displayed year and pagination across editions; the edition discrepancy is retained rather than silently harmonized. No book wording, quotation, table or scan is republished.',
+    accessDate: '2026-09-20',
+    creators: ['Curtis R. Ryan'], institution: 'Lynne Rienner Publishers', publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Jordanian political transition, liberalization and foreign relations', identifiers: { isbn: '9781588261038' },
+    description: 'A book-length account of the transition from King Hussein to Abdullah II, including political liberalization, economic restructuring, foreign relations and the 1994 peace-treaty horizon. It is used as a period-specific interpretation, not as evidence for later electoral quality or current institutional practice.',
+  },
+  {
+    id: 'wilsonKingAbdullahJordan1987',
+    label: 'Mary C. Wilson — King Abdullah, Britain and the Making of Jordan (1987)',
+    url: 'https://assets.cambridge.org/97805213/99876/frontmatter/9780521399876_frontmatter.pdf',
+    note: 'Cambridge University Press front matter and bibliographic record consulted for the 1987 monograph (289 pages; ISBN 9780521399876). No front-matter wording, quotation or scan is republished; Wilson’s archival interpretation of Abdullah and British state-making is attributed and bounded to its historical period.',
+    accessDate: '2026-09-20',
+    creators: ['Mary C. Wilson'], institution: 'Cambridge University Press', publicationDate: '1987', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of King Abdullah, Britain and Jordanian state formation', identifiers: { isbn: '9780521399876', pages: '289' },
+    description: 'A book-length political biography and history of King Abdullah, British policy and the making of Jordan. It provides an archival and international-relations perspective on the early Hashemite state, complementing social and institutional histories without establishing a single account of Jordanian legitimacy or political practice.',
+  },
+  {
+    id: 'ashtonKingHusseinJordan2008',
+    label: 'Nigel J. Ashton — King Hussein of Jordan: A Political Life (2008)',
+    url: 'https://www.degruyterbrill.com/document/doi/10.12987/9780300142518/html',
+    note: 'Yale University Press/De Gruyter Brill record consulted for the 2008 monograph (431 pages; print ISBN 9780300091670; electronic DOI 10.12987/9780300142518). No book wording, quotation, archival document, table or scan is republished; Ashton’s political biography is attributed and not treated as a complete social history.',
+    accessDate: '2026-09-20',
+    creators: ['Nigel J. Ashton'], institution: 'Yale University Press', publicationDate: '2008', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political biography of King Hussein and Jordanian foreign and domestic politics', identifiers: { isbn: '9780300091670', doi: '10.12987/9780300142518', pages: '431' },
+    description: 'A book-length political biography of King Hussein’s reign, linking domestic institutions and succession to Palestine, Israel, Arab politics, Britain and the United States. It offers a distinct leadership and foreign-policy perspective rather than a complete account of social groups, parliament or later constitutional implementation.',
+  },
+  {
+    id: 'ryanJordanArabUprisings2018',
+    label: 'Curtis R. Ryan — Jordan and the Arab Uprisings: Regime Survival and Politics Beyond the State (2018)',
+    url: 'https://cup.columbia.edu/book/jordan-and-the-arab-uprisings/9780231186278/',
+    note: 'Columbia University Press record consulted for the 2018 monograph (296 pages; paperback ISBN 9780231186278). No book wording, quotation, table or scan is republished; Ryan’s interpretation of protest, regional politics and regime survival is attributed and its publication horizon is not extended into the present.',
+    accessDate: '2026-09-20',
+    creators: ['Curtis R. Ryan'], institution: 'Columbia University Press', publicationDate: '2018', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Jordan, the Arab uprisings and regional political relations', identifiers: { isbn: '9780231186278', pages: '296' },
+    description: 'A book-length study of Jordanian protest, regime survival and politics beyond the state during and after the 2011 Arab uprisings. It connects domestic political mobilization to refugees, regional instability and external relations while preserving the distinction between a scholarly periodization and a current-country claim.',
+  },
+  {
+    id: 'jordanIecParliamentaryElection2024',
+    label: 'Jordan Independent Election Commission — Parliamentary Elections 2024',
+    url: 'https://iec.jo/en/antkhabat-nyabyt/2024',
+    note: 'Jordan Independent Election Commission portal consulted for the 10 September 2024 parliamentary election record, including official results, reports, timetable, voter tables, districting and candidacy materials. No result table, interface text, scan or data export is republished; the official record anchors a dated electoral event without proving fairness, equality, participation quality or later institutional performance.',
+    accessDate: '2026-09-20',
+    creators: ['Independent Election Commission of Jordan'], institution: 'Independent Election Commission of Jordan', publicationDate: '2024-09-10', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Arabic'],
+    sourceType: 'official parliamentary election results and documentation portal', identifiers: { electionDate: '2024-09-10' },
+    description: 'Primary institutional record for Jordan’s 2024 parliamentary election and associated official documentation. It is used as a dated witness to the formal electoral sequence, not as an independent judgment on competitiveness, representation, public consent or implementation.',
+  },
+  {
     id: 'abrahamianHistoryModernIran2018',
     label: 'Ervand Abrahamian — A History of Modern Iran (2nd ed., 2018)',
     url: 'https://www.cambridge.org/highereducation/books/a-history-of-modern-iran/7805DCB5602F75BFC893A796E7155DD9',
@@ -4527,7 +4597,8 @@ export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note })
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
+  discipline: source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
+    : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
       : source.id.startsWith('gambia') || source.id.startsWith('hughesPerfectPoliticalHistoryGambia') || source.id.startsWith('saineParadoxThirdWaveGambia') || source.id.startsWith('saineCeesaySallStateSocietyGambia') || source.id.startsWith('nabanehAbebeSoweGambiaTransition') ? 'Gambian constitutional, democratization and political history'
