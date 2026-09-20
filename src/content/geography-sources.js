@@ -1,6 +1,126 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'chadConstitution1996Faolex',
+    label: 'Republic of Chad — Constitution of 31 March 1996, FAOLEX legal record',
+    url: 'https://faolex.fao.org/docs/pdf/cha117286E.pdf',
+    note: 'FAOLEX legal record consulted for the English witness to Chad’s 1996 Constitution. No constitutional wording, translation, scan or PDF page is republished; the English presentation is not treated as the authentic French text, and formal design remains distinct from implementation, consent and later amendments.',
+    accessDate: '2026-09-20', creators: ['Republic of Chad'], institution: 'FAOLEX / Food and Agriculture Organization of the United Nations',
+    publicationDate: '1996-04-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / international legal database', identifiers: { constitutionYear: '1996', adoptionDate: '1996-03-31', promulgationDate: '1996-04-14' },
+    description: 'Primary legal witness to the post-1990 constitutional order: a unitary, secular republic with rights, elected institutions, executive and legislative branches, judicial authority and formal territorial administration. It establishes constitutional design, not uniform implementation or democratic consent.'
+  },
+  {
+    id: 'chadTransitionCharter2022Natlex',
+    label: 'Présidence de la République du Tchad — Charte de transition (8 October 2022), NATLEX record',
+    url: 'https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=116229',
+    note: 'NATLEX record and linked Chadian Presidency PDF consulted for the French 2022 Transitional Charter. No charter wording, translation, scan or PDF page is republished; the charter records transitional design, not implementation, public consent or a completed civilian transition.',
+    accessDate: '2026-09-20', creators: ['Présidence de la République du Tchad'], institution: 'International Labour Organization NATLEX / Présidence de la République du Tchad',
+    publicationDate: '2022-10-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary transitional charter / official legal record', identifiers: { adoptionDate: '2022-10-08', natlexId: 'TCD-116229' },
+    description: 'Primary institutional witness to the revised military-transition framework after the 2021 succession: the Transitional Military Council, a National Transitional Council, a revised timetable after the national dialogue and stated routes toward a constitutional order. It documents formal arrangements rather than their representativeness or outcomes.'
+  },
+  {
+    id: 'chadConstitution2023Presidence',
+    label: 'Présidence de la République du Tchad — Constitution du 17 décembre 2023',
+    url: 'https://presidencetchad.org/tchad/constitution/',
+    note: 'Official Chadian Presidency page and linked PDF consulted for the 2023 Constitution. No constitutional wording, translation, scan or PDF page is republished; the official self-description is distinguished from referendum politics, implementation and later political practice.',
+    accessDate: '2026-09-20', creators: ['Republic of Chad'], institution: 'Présidence de la République du Tchad',
+    publicationDate: '2023-12-17', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional text / official presidency archive', identifiers: { constitutionYear: '2023', referendumDate: '2023-12-17', republic: 'Fourth Republic' },
+    description: 'Official constitutional witness to the Fourth Republic’s formal order: a unitary, secular and social republic, popular sovereignty, separation of powers, fundamental rights, a presidential executive, a Parliament, courts and elected decentralized territorial collectivities. It is a legal design record, not proof of equal participation or implementation.'
+  },
+  {
+    id: 'chadPresidentialElection2024Presidence',
+    label: 'Présidence de la République du Tchad — Mahamat Idriss Déby Itno élu président avec 61% des voix (6 May 2024)',
+    url: 'https://presidencetchad.org/actualites/mahamat-deby-elu-president-61-pourcent/',
+    note: 'Official Presidency announcement consulted for the 6 May 2024 presidential result and the Constitutional Council’s 16 May validation. It is a state result announcement, not an independent election observation, participation study or proof that all political actors accepted the result.',
+    accessDate: '2026-09-20', creators: ['Présidence de la République du Tchad'], institution: 'Présidence de la République du Tchad',
+    publicationDate: '2024-05-06', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral result / official institutional record', identifiers: { electionDate: '2024-05-06', validationDate: '2024-05-16', reportedShare: '61%' },
+    description: 'Official electoral witness for the presidential election that followed the 2023 constitutional referendum and ended the selected transition horizon. It records the announced result and validation, while contestation, observation, participation and implementation require separate evidence.'
+  },
+  {
+    id: 'azevedoNationFutureChad1998',
+    label: 'Mario J. Azevedo — Chad: A Nation in Search of Its Future (1998)',
+    url: 'https://www.routledge.com/Chad-A-Nation-In-Search-Of-Its-Future/Azevedo/p/book/9780367011147',
+    note: 'Routledge record consulted for the 1998 monograph (ISBN 9780367011147; 188 pages). No book wording, quotation, table, chapter or scan is republished; its national overview ends before the oil-era and later constitutional transitions, which remain separate evidence tasks.',
+    accessDate: '2026-09-20', creators: ['Mario J. Azevedo'], institution: 'Routledge',
+    publicationDate: '1998', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history of political evolution, war, economy and society', identifiers: { isbn: '9780367011147', pages: '188' },
+    description: 'Broad English-language history organized around Chad’s geography, history, political evolution and civil war, economy, society and culture, international relations and future prospects. It supplies national context without being treated as a complete account of every community or later transition.'
+  },
+  {
+    id: 'nolutshunguLimitsAnarchyChad1996',
+    label: 'Sam C. Nolutshungu — Limits of Anarchy: Intervention and State Formation in Chad (1996)',
+    url: 'https://www.upress.virginia.edu/title/2016/',
+    note: 'University of Virginia Press record consulted for the 1996 monograph (ISBN 9780813916286; 348 pages). No book wording, quotation, table, chapter or scan is republished; its state-formation and intervention framework is a distinct interpretation, not a complete social history or current assessment.',
+    accessDate: '2026-09-20', creators: ['Sam C. Nolutshungu'], institution: 'University of Virginia Press',
+    publicationDate: '1996', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of intervention, civil war and state formation', identifiers: { isbn: '9780813916286', pages: '348' },
+    description: 'Book-length study of roughly three decades of Chadian civil strife, foreign intervention, mediation, regionalism, peacekeeping and state reconstruction. It foregrounds how intervention could reshape rather than simply stabilize state formation and keeps external and domestic agency connected.'
+  },
+  {
+    id: 'azevedoRootsViolenceChad1998',
+    label: 'Mario J. Azevedo — The Roots of Violence: A History of War in Chad (1998)',
+    url: 'https://catalogue.bnf.fr/ark:/12148/cb388994976',
+    note: 'Bibliothèque nationale de France record consulted for the 1998 War and Society monograph (ISBN 9056995839; XII–202 pages). No book wording, quotation, table, chapter or scan is republished; its violence-centered history is kept distinct from constitutional, electoral and community-specific evidence.',
+    accessDate: '2026-09-20', creators: ['Mario J. Azevedo'], institution: 'Gordon and Breach / Bibliothèque nationale de France',
+    publicationDate: '1998', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of organized violence, civil war and foreign intervention', identifiers: { isbn: '9056995839', pages: '202', series: 'War and Society; 4' },
+    description: 'History of war and organized violence in Chad from precolonial and colonial settings through postcolonial conflict, including armies, regional societies, foreign interference and the civil-war period. It is used to resist a single north–south or ethnic explanation and not as a complete peace or rights history.'
+  },
+  {
+    id: 'powellFrancesWarsChad2020',
+    label: 'Nathaniel K. Powell — France’s Wars in Chad: Military Intervention and Decolonization in Africa (2020)',
+    url: 'https://www.cambridge.org/core/books/frances-wars-in-chad/6B7D8F9C8A81E0A83028C24EA0CF8D28',
+    note: 'Cambridge University Press record consulted for the 2020 monograph (ISBN 9781108771610 / 9781108488679; 384 pages). No book wording, quotation, table, chapter or scan is republished; its archival account of French intervention through Hissène Habré’s rise is not a complete Chadian political or post-1982 history.',
+    accessDate: '2026-09-20', creators: ['Nathaniel K. Powell'], institution: 'Cambridge University Press',
+    publicationDate: '2020-12-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length archival history of French intervention and Chadian decolonization', identifiers: { isbn: '9781108771610', paperbackIsbn: '9781108488679', pages: '384', doi: '10.1017/9781108771610' },
+    description: 'Archival history of French military intervention in Chad from independence through the 1960s–1980s, linking counterinsurgency, Libyan intervention, state weakness and Hissène Habré’s rise. It supplies an external-relations perspective and is not generalized into a permanent French or Chadian political essence.'
+  },
+  {
+    id: 'dingammadjiGovernmentsChad2011',
+    label: 'Arnaud Dingammadji — Les gouvernements du Tchad: De Gabriel Lisette à Idriss Déby Itno (1957–2010) (2011)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/les-gouvernements-du-tchad/40616',
+    note: 'L’Harmattan record consulted for the French-language monograph (ISBN 9782296553828; 312 pages). No book wording, quotation, table, chapter or scan is republished; its government-by-government political overview is attributed and does not replace local, regional or opposition histories.',
+    accessDate: '2026-09-20', creators: ['Arnaud Dingammadji'], institution: 'L’Harmattan',
+    publicationDate: '2011-06-01', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language political history and government chronology', identifiers: { isbn: '9782296553828', pages: '312' },
+    description: 'French-language overview of Chadian governments from 1957 through 2010, using successive regimes, officeholders and political events to examine control and sharing of power. It provides a useful political chronology but is not treated as a complete account of society or implementation.'
+  },
+  {
+    id: 'buijtenhuijsTransitionChad1998',
+    label: 'Robert Buijtenhuijs — Transition et élections au Tchad, 1993–1997: restauration autoritaire et recomposition politique (1998)',
+    url: 'https://catalogue.bnf.fr/ark:/12148/cb37005409r',
+    note: 'Bibliothèque nationale de France and Karthala records consulted for the French-language monograph (ISBN 2865378683; 366 pages). No book wording, quotation, table, chapter or scan is republished; its national-conference and election study is bounded to the 1993–1997 transition and does not prove later democratic practice.',
+    accessDate: '2026-09-20', creators: ['Robert Buijtenhuijs'], institution: 'Afrika-Studiecentrum / Karthala / Bibliothèque nationale de France',
+    publicationDate: '1998', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language study of national conference, transition and elections', identifiers: { isbn: '2865378683', ean: '9782865378685', pages: '366' },
+    description: 'Focused study of the 1993–1997 sovereign national conference, constitutional transition, referendum, presidential and legislative elections, and the author’s interpretation of authoritarian restoration and political recomposition. It is paired with legal records and other histories rather than treated as a consensus account.'
+  },
+  {
+    id: 'haggarTombalbayeChad2007',
+    label: 'Bichara Idriss Haggar — Histoire politique du Tchad sous le régime du président François Tombalbaye, 1960–1975 (2007)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/francois-tombalbaye-1960-1975/49860',
+    note: 'L’Harmattan record consulted for the French-language monograph (ISBN 9782296043374; 422–425-page catalogue records). No book wording, quotation, table, chapter or scan is republished; its opposition/exile-informed interpretation of the first presidency is attributed and not treated as a complete national consensus.',
+    accessDate: '2026-09-20', creators: ['Bichara Idriss Haggar'], institution: 'L’Harmattan',
+    publicationDate: '2007-12-01', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language political history of the Tombalbaye presidency', identifiers: { isbn: '9782296043374', pages: '425' },
+    description: 'French-language history of the 1960–1975 Tombalbaye presidency that connects one-party authoritarianism, repression, elite responsibility, armed movements and external interference while rejecting a simple north–south or religious binary. Its interpretation remains situated and attributed.'
+  },
+  {
+    id: 'brodyCatchDictatorChad2022',
+    label: 'Reed Brody — To Catch a Dictator: The Pursuit and Trial of Hissène Habré (2022)',
+    url: 'https://www.jstor.org/stable/10.7312/brod20258',
+    note: 'Columbia University Press/JSTOR book record consulted for the 2022 monograph (ISBN 9780231202589; 296 pages). No book wording, quotation, testimony, table or scan is republished; the account is an insider legal-advocacy perspective on accountability, not a complete history of Habré-era Chad or every victim experience.',
+    accessDate: '2026-09-20', creators: ['Reed Brody'], institution: 'Columbia University Press / JSTOR',
+    publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length legal and human-rights account of Hissène Habré’s pursuit and trial', identifiers: { isbn: '9780231202589', pages: '296', doi: '10.7312/brod20258' },
+    description: 'Account of victims, lawyers and international legal efforts that pursued Hissène Habré after his 1982–1990 rule and culminated in the Dakar trial. It adds transitional-justice and victim-centered evidence, while its advocacy position and selective scope are kept visible.'
+  },
+  {
     id: 'nigerConstitution2010Justice',
     label: 'Ministère de la Justice du Niger — Constitution de la VIIe République (2010), official legal collection',
     url: 'https://justice.gouv.ne/images/lois/pdfs/Recueil_thematique_des_lois_et_reglements_Edition%202020.pdf',
@@ -2583,6 +2703,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') ? 'Senegalese constitutional, democratic and political history'
       : source.id.startsWith('liberia') || source.id.startsWith('liebenow') || source.id.startsWith('sawyer') || source.id.startsWith('ellisMaskAnarchyLiberia') || source.id.startsWith('adebajoLiberia') ? 'Liberian constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
+      : source.id.startsWith('chad') || source.id.startsWith('azevedoNationFutureChad') || source.id.startsWith('nolutshunguLimitsAnarchyChad') || source.id.startsWith('azevedoRootsViolenceChad') || source.id.startsWith('powellFrancesWarsChad') || source.id.startsWith('dingammadjiGovernmentsChad') || source.id.startsWith('buijtenhuijsTransitionChad') || source.id.startsWith('haggarTombalbayeChad') || source.id.startsWith('brodyCatchDictatorChad') ? 'Chadian constitutional, civil-war, intervention and transition history'
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
       : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
