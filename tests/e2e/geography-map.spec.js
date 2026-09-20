@@ -7,8 +7,8 @@ test('country paths filter, persist and handle newly researched countries', asyn
   await page.goto('/#geography');
   const map = page.getByRole('group', { name: 'Interactive world map' });
   await page.getByRole('button', { name: 'Zoom to Middle East', exact: true }).click();
-  await map.getByRole('button', { name: 'Iran: 1 matching case', exact: true }).click();
-  await expect(page.locator('.geo-card')).toHaveCount(1);
+  await map.getByRole('button', { name: 'Iran: 2 matching cases', exact: true }).click();
+  await expect(page.locator('.geo-card')).toHaveCount(2);
   await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('iran');
   await page.reload();
   await expect(map.getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');

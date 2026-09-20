@@ -16,13 +16,14 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(85);
+    expect(cards()).toHaveLength(86);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
-    expect(cards()).toHaveLength(1);
-    expect(cards()[0]).toHaveTextContent('1989');
+    expect(cards()).toHaveLength(2);
+    expect(cards()[0]).toHaveTextContent('1979–2024');
+    expect(cards()[1]).toHaveTextContent('1989');
     await user.selectOptions(screen.getByRole('combobox', { name: 'Period' }), '2000-onward');
-    expect(screen.queryAllByRole('article')).toHaveLength(0);
-    expect(screen.getByText(/research gap or an empty filter combination/)).toBeInTheDocument();
+    expect(screen.queryAllByRole('article')).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('1979–2024');
     await user.click(screen.getByRole('button', { name: 'Reset atlas filters' }));
     await user.selectOptions(screen.getByRole('combobox', { name: 'Connection' }), 'experimented');
     expect(cards()[0]).toHaveTextContent('Democratic confederalism');

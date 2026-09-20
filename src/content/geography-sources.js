@@ -4441,13 +4441,94 @@ const sources = [
     identifiers: { electionDate: '2025-05-12' },
     description: 'Primary institutional record for the 2025 midterm national, local and BARMM election results used to extend the case’s documented endpoint. It establishes an electoral record but not the quality, equality, motives or social meaning of every contest.',
   },
+  {
+    id: 'abrahamianHistoryModernIran2018',
+    label: 'Ervand Abrahamian — A History of Modern Iran (2nd ed., 2018)',
+    url: 'https://www.cambridge.org/highereducation/books/a-history-of-modern-iran/7805DCB5602F75BFC893A796E7155DD9',
+    note: 'Cambridge University Press record and front matter consulted for the second edition (2018; 272 pages; paperback ISBN 9781316648148; hardback ISBN 9781107198340). No book wording, quotation, table, map, scan or chapter is republished; Abrahamian’s interpretation of modern Iranian political and social history is attributed and its endpoint is kept visible.',
+    accessDate: '2026-09-20',
+    creators: ['Ervand Abrahamian'], institution: 'Cambridge University Press', publicationDate: '2018-08-23', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern Iranian political and social history', identifiers: { hardbackIsbn: '9781107198340', paperbackIsbn: '9781316648148', ebookIsbn: '9781108182348', pages: '272' },
+    description: 'A revised book-length history of modern Iran covering the Pahlavi period, the 1979 Revolution, the Islamic Republic, the Iran–Iraq War, the 2009 Green uprisings, the Rouhani period and the nuclear-deal horizon. It supplies a broad social and political interpretation rather than a complete account of every province, community or post-2016 development.',
+  },
+  {
+    id: 'keddieModernIran2006',
+    label: 'Nikki R. Keddie — Modern Iran: Roots and Results of Revolution (updated ed., 2006)',
+    url: 'https://yalebooks.yale.edu/book/9780300121056/modern-iran/',
+    note: 'Yale University Press record consulted for the updated edition (2006; 448 pages; ISBN 9780300121056). No book wording, quotation, illustration or scan is republished; Keddie’s historical account is attributed, and its coverage through 2003 is not silently extended to the 2024 endpoint.',
+    accessDate: '2026-09-20',
+    creators: ['Nikki R. Keddie'], institution: 'Yale University Press', publicationDate: '2006-08-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern Iranian history of revolution and its consequences', identifiers: { isbn: '9780300121056', pages: '448' },
+    description: 'An expanded history of Iran’s modern political, cultural and social transformation, including the roots and results of the 1979 Revolution, the Iran–Iraq War and developments through the early twenty-first century. It keeps gender, education, health, arts, minorities and US–Iran relations visible while remaining one historical perspective among several.',
+  },
+  {
+    id: 'arjomandTurbanCrown1988',
+    label: 'Said Amir Arjomand — The Turban for the Crown: The Islamic Revolution in Iran (1988)',
+    url: 'https://books.google.com/books?id=IQci1YIffjYC',
+    note: 'Oxford University Press bibliographic record consulted for the 1988 monograph (283 pages; ISBN 9780195042580). No book wording, quotation, preview passage, scan or adapted material is republished; Arjomand’s interpretation of the Revolution is attributed and not treated as a complete social history of Iran.',
+    accessDate: '2026-09-20',
+    creators: ['Said Amir Arjomand'], institution: 'Oxford University Press', publicationDate: '1988', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of the Iranian Revolution and religious-political transformation', identifiers: { isbn: '9780195042580', pages: '283' },
+    description: 'A book-length sociological and historical interpretation of the Islamic Revolution, its coalition, ideological transformation and institutional consequences. It is used here to distinguish revolutionary mobilization and religious-political change from later state practice and from every Iranian political current.',
+  },
+  {
+    id: 'gheissariNasrDemocracyIran2006',
+    label: 'Ali Gheissari and Vali Nasr — Democracy in Iran: History and the Quest for Liberty (2006)',
+    url: 'https://academic.oup.com/book/3994',
+    note: 'Oxford Academic record consulted for the 2006 monograph (print ISBN 9780195189674; online ISBN 9780199784134). No chapter wording, quotation, table or scan is republished; its state-building and democratization argument is attributed and its 2005 endpoint remains distinct from the later election horizon.',
+    accessDate: '2026-09-20',
+    creators: ['Ali Gheissari', 'Vali Nasr'], institution: 'Oxford University Press', publicationDate: '2006-05-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of Iranian state-building and democratic thought', identifiers: { printIsbn: '9780195189674', onlineIsbn: '9780199784134', doi: '10.1093/0195189671.001.0001' },
+    description: 'A book-length account organized around the relationship between state-building and democratic aspiration from the constitutional era through the Islamic Republic. Its concepts help keep liberal, republican and religious-constitutional arguments analytically distinct without assuming that formal aspiration equals implementation.',
+  },
+  {
+    id: 'arjomandAfterKhomeini2009',
+    label: 'Said Amir Arjomand — After Khomeini: Iran Under His Successors (2009)',
+    url: 'https://academic.oup.com/book/47412',
+    note: 'Oxford Academic record consulted for the 2009 monograph (print ISBN 9780195391794; online ISBN 9780197711088; DOI 10.1093/oso/9780195391794.001.0001). No book wording, quotation, chapter, table or scan is republished; the account of post-Khomeini institutional and ideological change is attributed and ends before the selected 2024 horizon.',
+    accessDate: '2026-09-20',
+    creators: ['Said Amir Arjomand'], institution: 'Oxford University Press', publicationDate: '2009-11-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of post-Khomeini Iranian institutions and political change', identifiers: { printIsbn: '9780195391794', onlineIsbn: '9780197711088', doi: '10.1093/oso/9780195391794.001.0001' },
+    description: 'A book-length analysis of Iran under Khomeini’s successors, including the Rafsanjani, Khatami and later hard-line periods as understood at the time of publication. It supplies a distinct institutional and ideological perspective, not a current-country assessment.',
+  },
+  {
+    id: 'kamravaHowIslamRulesIran2024',
+    label: 'Mehran Kamrava — How Islam Rules in Iran: Theology and Theocracy in the Islamic Republic (2024)',
+    url: 'https://www.cambridge.org/core/books/how-islam-rules-in-iran/57972D1EEEF8405D67C6F8BF24EAB8C4',
+    note: 'Cambridge University Press record and front matter consulted for the 2024 monograph (366 pages; hardback ISBN 9781009460835; paperback ISBN 9781009460842; DOI 10.1017/9781009460880). No book wording, quotation, Persian passage, table or scan is republished; its use of Persian-language material and jurisprudential analysis is attributed and its publication horizon is not treated as a complete account of later events.',
+    accessDate: '2026-09-20',
+    creators: ['Mehran Kamrava'], institution: 'Cambridge University Press', publicationDate: '2024-05-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Persian'],
+    sourceType: 'book-length study of theology, jurisprudence and political authority in the Islamic Republic', identifiers: { hardbackIsbn: '9781009460835', paperbackIsbn: '9781009460842', ebookIsbn: '9781009460880', doi: '10.1017/9781009460880', pages: '366' },
+    description: 'A recent book-length study of Islam as a ruling framework in post-revolutionary Iran. Kamrava examines clerical establishment, jurisprudential debate, social protection, popular and divine legitimacy, Islamic democracy and the changing political salience of guardianship, with Persian-language sources explicitly in view.',
+  },
+  {
+    id: 'iranDataPortalIslamicRepublicElections',
+    label: 'Iran Data Portal — Elections in the Islamic Republic (1979–2024)',
+    url: 'https://irandataportal.syr.edu/elections',
+    note: 'Syracuse University Iran Data Portal election catalogue consulted for the Ministry of Interior’s presidential, parliamentary and Assembly of Experts results and translated election-law materials. No portal tables, downloadable data, election-law wording or interface text are republished; the portal identifies the Ministry of Interior as the official results source and does not itself establish electoral fairness or equal participation.',
+    accessDate: '2026-09-20',
+    creators: ['Iran Data Portal'], institution: 'Syracuse University', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Persian'],
+    sourceType: 'institutional catalogue of official Iranian election records and legal materials', identifiers: { coverage: '1979–2024' },
+    description: 'An institutional research portal preserving election data published by Iran’s Ministry of Interior, together with translations of electoral laws and parliamentary handbooks. It anchors the case’s electoral chronology while keeping official records distinct from independent observation, voter motives and implementation claims.',
+  },
+  {
+    id: 'iranDataPortal2024PresidentialElection',
+    label: 'Iran Data Portal — 2024 Presidential Election',
+    url: 'https://irandataportal.syr.edu/2024-presidential-election/',
+    note: 'Syracuse University Iran Data Portal record consulted for the 14th presidential election’s first- and second-round archive and provincial breakdowns, identified as sourced to Iran’s Interior Ministry. No result table, image, linked social-media post, translation or data export is republished; the record anchors the dated endpoint without proving electoral quality or public consent.',
+    accessDate: '2026-09-20',
+    creators: ['Iran Data Portal'], institution: 'Syracuse University', publicationDate: '2024', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Persian'],
+    sourceType: 'institutional archive of official Iranian presidential-election results', identifiers: { election: '14th Presidential Elections', year: '2024' },
+    description: 'An institutional archive of Iran’s 2024 presidential election, including first- and second-round records and provincial breakdowns attributed to the Interior Ministry. It is used as a dated electoral witness, not as an independent judgment of competition, participation or legitimacy.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
+  discipline: source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
+       : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
       : source.id.startsWith('gambia') || source.id.startsWith('hughesPerfectPoliticalHistoryGambia') || source.id.startsWith('saineParadoxThirdWaveGambia') || source.id.startsWith('saineCeesaySallStateSocietyGambia') || source.id.startsWith('nabanehAbebeSoweGambiaTransition') ? 'Gambian constitutional, democratization and political history'
       : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') || source.id.startsWith('southall') || source.id.startsWith('booysen') || source.id.startsWith('glaser') || source.id.startsWith('buthelezi') ? 'South African constitutional law and political history'
