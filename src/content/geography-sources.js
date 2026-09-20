@@ -2810,6 +2810,16 @@ const sources = [
     description: 'Primary electoral witness for the selected contemporary horizon. It documents official administration and results, not equal participation, uncoerced choice, opposition experience, Union-wide consensus or the subsequent political trajectory.'
   },
   {
+    id: 'tanzaniaInecGeneralElectionResults2020',
+    label: 'National Bureau of Statistics / National Electoral Commission of Tanzania — 2020 general-election results summary',
+    url: 'https://www.nbs.go.tz/nbs/takwimu/references/2020_Tanzania_in_Figure_English.pdf',
+    note: 'Official National Bureau of Statistics summary, reproducing the National Electoral Commission record, consulted for the 28 October 2020 presidential, parliamentary and councillor election results. No result table, report wording, scan or PDF is republished; local variation, litigation, observation, opposition accounts and implementation remain open.',
+    accessDate: '2026-09-20', creators: ['National Bureau of Statistics of Tanzania', 'National Electoral Commission of Tanzania'], institution: 'National Bureau of Statistics of Tanzania / National Electoral Commission of Tanzania',
+    publicationDate: '2020-10-28', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional witness; Swahili and original electoral records not collated'],
+    sourceType: 'primary election record / official institutional report', identifiers: { electionYear: '2020', electionDate: '2020-10-28' },
+    description: 'Primary electoral witness for the Magufuli-era endpoint. It anchors the official result and administration record, but does not by itself establish equal participation, uncoerced choice, opposition experience, Union-wide consensus or the political trajectory after the election.'
+  },
+  {
     id: 'nyerereUjamaaEssays1968',
     label: 'Julius K. Nyerere — Ujamaa: Essays on Socialism (1968)',
     url: 'https://books.google.com/books/about/Ujamaa_Essays_on_Socialism.html?id=NrILAAAAIAAJ',
@@ -2858,6 +2868,16 @@ const sources = [
     publicationDate: '1997', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
     sourceType: 'book-length study of liberalization and urban informal politics in Tanzania', identifiers: { isbn: '0520202791' },
     description: 'Book-length study of Dar es Salaam and the politics of liberalization, showing how informal actors negotiated or resisted state regulation as socialist controls changed. It adds a social and urban lens to national histories without representing all Tanzanian communities or the entire multiparty period.'
+  },
+  {
+    id: 'kilamboMitiTanzaniaMagufuli2021',
+    label: 'Sixta Raphael Kilambo and Katabaro Novatus Miti — Tanzania’s Magufuli: Implementing the Promise to the Nation (2021)',
+    url: 'https://upmonographs.up.ac.za/index.php/ESI/catalog/book/15',
+    note: 'ESI Press / University of Pretoria monograph record consulted for the 2021 book (DOI 10.35293/esi.15; ISBN 9780620974875). No book wording, quotation, table, chapter or scan is republished; the Swahili and Tanzanian source base, reception and post-2021 politics remain open.',
+    accessDate: '2026-09-20', creators: ['Sixta Raphael Kilambo', 'Katabaro Novatus Miti'], institution: 'ESI Press / University of Pretoria',
+    publicationDate: '2021-01-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Magufuli-era political economy and democratic practice', identifiers: { isbn: '9780620974875', doi: '10.35293/esi.15' },
+    description: 'Book-length study focused on the Magufuli presidency, with chapters on political and economic context, anti-corruption, industrialization, revenue and mining, debt and international pressure, and democratic practice. It is a focused interpretation of one presidency, not a complete national history or proof of uniform Tanzanian experience.'
   },
   {
     id: 'kenyaConstitution2010Library',
@@ -3494,7 +3514,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
       : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
-      : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
+      : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') || source.id.startsWith('kilamboMitiTanzaniaMagufuli') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
       : source.id.startsWith('vietnam') || source.id.startsWith('sidelConstitutionVietnam') || source.id.startsWith('sternRenovatingVietnameseParty') || source.id.startsWith('vasavakulVietnam') || source.id.startsWith('buiConstitutionalChangeSocialistWorld') || source.id.startsWith('guillemotHistoireVietnamContemporain') ? 'Vietnamese constitutional, socialist and political history'
       : source.id.startsWith('morocco') || source.id.startsWith('millerHistoryModernMorocco') || source.id.startsWith('waterburyCommanderFaithful') || source.id.startsWith('tozyMonarchieIslamPolitique') || source.id.startsWith('zeghalIslamismMorocco') || source.id.startsWith('boukharsPoliticsMorocco') || source.id.startsWith('madaniConstitutionnalismeProtestataire') ? 'Moroccan constitutional, monarchical and political history'
