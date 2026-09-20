@@ -9978,6 +9978,48 @@ export const BIBLIOGRAPHY_METADATA = {
     publicationDate: '2019', publisher: 'Routledge', identifiers: { isbn: '9781138652613' }, confidence: 'high', languages: ['English'],
     description: 'Scholarly edited volume on constitution-making, human rights, religion, minorities and legitimacy in Sudan and South Sudan. It supplies legal and constitutional perspectives, not proof that formal rights or settlements were uniformly implemented.',
   },
+  algeriaFoundationalConstitutions: {
+    accessDate: '2026-09-20', creators: ['Government of Algeria'], institution: 'Services du Premier Ministre algérien',
+    sourceType: 'primary institutional legal index / constitutional texts', evidenceRole: 'primary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: null, publisher: 'Services du Premier Ministre algérien', identifiers: {}, confidence: 'high', languages: ['French'],
+    description: 'Official institutional provenance witness for Algeria’s constitutional sequence, used to bound the 1989 opening and 1996 order. It establishes a legal-text trail, not uniform political practice or a current country classification.',
+  },
+  algeriaConstitution2020Wipo: {
+    accessDate: '2026-09-20', creators: ['President of the Republic of Algeria', 'Algerian legislature and electorate'], institution: 'WIPO Lex / Journal officiel de la République algérienne démocratique et populaire',
+    sourceType: 'primary constitutional text / official journal legal record', evidenceRole: 'primary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: '2020-12-30', publisher: 'WIPO Lex / Journal officiel de la République algérienne démocratique et populaire', identifiers: {}, confidence: 'high', languages: ['Arabic', 'French'],
+    description: 'Primary legal witness for the 2020 constitutional revision, including formal references to Islam, Arabity, Amazighity, rights and democratic institutions alongside presidential powers. It establishes formal design, not implementation or current political conditions.',
+  },
+  ruedyModernAlgeria2005: {
+    accessDate: '2026-09-20', creators: ['John Ruedy'], institution: 'Indiana University Press',
+    sourceType: 'book-length Algerian national and political history', evidenceRole: 'secondary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: '2005', publisher: 'Indiana University Press', identifiers: { isbn: '0253217822' }, confidence: 'high', languages: ['English'],
+    description: 'Book-length national history updated through the 2004 elections and covering the 1990s civil conflict, political culture, ethnic and regional distinctions, gender, language, and relations with France. It is historical context, not a current country score.',
+  },
+  mcdougallHistoryAlgeria2017: {
+    accessDate: '2026-09-20', creators: ['James McDougall'], institution: 'Cambridge University Press',
+    sourceType: 'book-length Algerian social and political history', evidenceRole: 'secondary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: '2017-06-30', publisher: 'Cambridge University Press', identifiers: { isbn: '9781139029230', hardbackIsbn: '9780521851640', paperbackIsbn: '9780521617307', doi: '10.1017/9781139029230' }, confidence: 'high', languages: ['English'],
+    description: 'Long modern history placing Algerian society, state formation, colonial and postcolonial crises, the unfinished revolution and post-Arab-uprising politics in one narrative. It supplies a distinct historical perspective, not uniform implementation evidence or a current assessment.',
+  },
+  willisAlgeriaHirak2023: {
+    accessDate: '2026-09-20', creators: ['Michael J. Willis'], institution: 'Oxford University Press',
+    sourceType: 'book-length Algerian civil-war, regime and Hirak history', evidenceRole: 'secondary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: '2023-01-15', publisher: 'Oxford University Press', identifiers: { isbn: '9780197657577', onlineIsbn: '9780197683439', doi: '10.1093/oso/9780197657577.001.0001' }, confidence: 'high', languages: ['English'],
+    description: 'Book-length account of the 1990s “dark decade,” the 1999–2019 Bouteflika order and the Hirak’s challenge to opaque and corrupt political leadership. It supplies a focused contemporary history, not proof of uniform popular consent or a current classification.',
+  },
+  serresSuspendedDisaster2023: {
+    accessDate: '2026-09-20', creators: ['Thomas Serres'], institution: 'Columbia University Press',
+    sourceType: 'book-length fieldwork-based Algerian political study', evidenceRole: 'secondary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: '2023', publisher: 'Columbia University Press', identifiers: { isbn: '9780231212038', hardbackIsbn: '9780231212021', onlineIsbn: '9780231559171' }, confidence: 'high', languages: ['English'],
+    description: 'Fieldwork-based study of Bouteflika-era crisis governance, state institutions, elite networks, managed freedoms, political mistrust and the grassroots conditions of the 2019 uprising. It is an attributed interpretation, not a complete national or post-2020 history.',
+  },
+  allalBaamaraDakhliFabbianoHirak2021: {
+    accessDate: '2026-09-20', creators: ['Amin Allal', 'Layla Baamara', 'Leyla Dakhli', 'Giulia Fabbiano'], institution: 'CNRS Éditions',
+    sourceType: 'French-language scholarly edited volume on the Hirak', evidenceRole: 'secondary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: '2021-10-14', publisher: 'CNRS Éditions', identifiers: { ean: '9782271138866' }, confidence: 'high', languages: ['French'],
+    description: 'French-language multidisciplinary volume on one year of Algerian mobilization from February 2019 through the pandemic interruption, interpreting social transformation and the stakes of an unfinished revolution. It adds a relevant-language perspective without closing local-language or implementation gaps.',
+  },
   omanRoyalDecreeBasicStatute2021: {
     accessDate: '2026-09-18',
     creators: ['Sultan Haitham bin Tarik', 'Sultanate of Oman'],
