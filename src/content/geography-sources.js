@@ -1309,6 +1309,64 @@ const sources = [
     description: 'A book-length study of Malaysian government and society that supplies an independent political-sociological perspective on the democratic and authoritarian features of the post-1957 system. Its later chronology is used to contextualize the constitutional design, not to project one unchanged ideological character onto the 1957 founding.',
   },
   {
+    id: 'weissProtestPossibilitiesMalaysia2006',
+    label: 'Meredith L. Weiss — Protest and Possibilities: Civil Society and Coalitions for Political Change in Malaysia',
+    url: 'https://researchportalplus.anu.edu.au/en/publications/protest-and-possibilities-civil-society-and-coalitions-for-politi/',
+    note: 'Australian National University book record consulted for Weiss’s peer-reviewed book-length study of Malaysian civil society, opposition coalitions and the Reformasi movement. The complete monograph, Malaysian-language sources and field materials were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['Meredith L. Weiss'], institution: 'Stanford University Press / Australian National University research record',
+    publicationDate: '2006', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Malaysian civil-society and opposition history',
+    identifiers: { isbn: '080475294X', pages: '324' },
+    description: 'Book-length analysis of civil and political society, opposition coalitions, political participation and the 1999 Reformasi horizon. It supplies a society-centred perspective that complements Crouch’s institutional account without treating civil society or reform as a uniform national ideology.',
+  },
+  {
+    id: 'weissHazisTowardsNewMalaysia2020',
+    label: 'Meredith L. Weiss and Faisal S. Hazis (eds.) — Towards a New Malaysia? The 2018 Election and Its Aftermath',
+    url: 'https://press.uchicago.edu/ucp/books/book/distributed/T/bo51720641.html',
+    note: 'University of Chicago Press distribution record for the National University of Singapore Press edited volume on Malaysia’s 2018 general election and aftermath. The publisher presents the volume as a multi-author analysis of voting, campaigns, mobilization, political identities and the limits of assuming full liberalization; no chapter text is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['Meredith L. Weiss', 'Faisal S. Hazis'], institution: 'National University of Singapore Press / University of Chicago Press distribution',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Malaysia’s 2018 election and coalition transition',
+    identifiers: { isbn: '9789813251137', pages: '283' },
+    description: 'Edited book-length analysis of the 2018 election’s fall of the long-dominant Barisan Nasional coalition, voting patterns, campaign strategy, mobilization, political identities and the unstable aftermath. Its contributors preserve disagreement and do not treat GE14 as automatic full democratization.',
+  },
+  {
+    id: 'gomezOsmanMalaysiaGE142020',
+    label: 'Edmund Terence Gomez and Mohamed Nawab Mohamed Osman (eds.) — Malaysia’s 14th General Election and UMNO’s Fall',
+    url: 'https://www.routledge.com/Malaysia-14th-General-Election-and-UMNOs-Fall-Intra-Elite-Feuding/Gomez-Osman/p/book/9780367331979',
+    note: 'Official Routledge book record consulted for an independent edited volume on the 2018 election, intra-elite feuding, electoral boundaries, patronage, state-level contestation and UMNO’s loss of federal power. The complete volume and underlying Malaysian-language evidence were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['Edmund Terence Gomez', 'Mohamed Nawab Mohamed Osman'], institution: 'Routledge / Taylor & Francis',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Malaysia’s 2018 electoral realignment',
+    identifiers: { isbn: '9780367331979', pages: '322' },
+    description: 'Edited book-length study of the 2018 federal alternation, emphasizing intra-elite conflict, coalition strategy, patronage and electoral geography. It supplies a distinct elite- and institution-centred interpretation alongside Weiss and Hazis’s broader election-and-aftermath volume.',
+  },
+  {
+    id: 'malaysiaGeneralElection2018Official',
+    label: 'Suruhanjaya Pilihan Raya Malaysia — Keputusan Pilihan Raya Umum Ke-14, 2018',
+    url: 'https://keputusan.spr.gov.my/',
+    note: 'Official Election Commission of Malaysia results portal linked by a state Election Commission page for the 14th General Election. It is used for the election date and official results record; the portal’s interactive data, district-level documentation and electoral-administration history were not exhaustively collated.',
+    accessDate: '2026-09-20',
+    creators: ['Suruhanjaya Pilihan Raya Malaysia'], institution: 'Election Commission of Malaysia',
+    publicationDate: '2018', evidenceRole: 'primary', confidence: 'high', languages: ['Malay'],
+    sourceType: 'official Malaysian election-results portal',
+    description: 'Primary election-results witness for Malaysia’s 2018 general election. It documents the official electoral record, not the fairness of the contest, the full social meaning of the vote, coalition motives or the later durability of the government formed after the election.',
+  },
+  {
+    id: 'malaysiaGeneralElection2022Official',
+    label: 'Suruhanjaya Pilihan Raya Malaysia — Keputusan Pilihan Raya Umum Ke-15, 2022',
+    url: 'https://www.spr.gov.my/sites/default/files/KM%20BIL%2053%202022%20%20KEPUTUSAN%20%20PRU%20KE%2015%20BAHAGIAN%20PILIHAN%20RAYA%20PARLIMEN%20P017%20PADANG%20SERAI%20DAN%20N42%20TIOMAN%20PAHANG.pdf',
+    note: 'Official Election Commission media statement recording the completed 2022 federal results after the Padang Serai and Tioman contests, including the distribution of all 222 parliamentary seats. It is an official results witness, not evidence that every contest was equally competitive or that seat totals alone establish a settled governing coalition.',
+    accessDate: '2026-09-20',
+    creators: ['Suruhanjaya Pilihan Raya Malaysia'], institution: 'Election Commission of Malaysia',
+    publicationDate: '2022-12-07', evidenceRole: 'primary', confidence: 'high', languages: ['Malay'],
+    sourceType: 'official Malaysian election-results statement',
+    description: 'Primary official result record for the 15th General Election’s completed parliamentary distribution. The statement documents a fragmented 222-seat result and gives a bounded endpoint for the post-2018 coalition-transition case without claiming current representativeness or later political stability.',
+  },
+  {
     id: 'phuntshoHistoryBhutan2013',
     label: 'Karma Phuntsho — The History of Bhutan',
     url: 'https://press.uchicago.edu/ucp/books/book/distributed/H/bo19425099.html',
@@ -3969,7 +4027,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
         : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') ? 'Japanese Meiji constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
-        : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
+        : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('weissProtest') || source.id.startsWith('weissHazis') || source.id.startsWith('gomezOsman') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
       : source.id.startsWith('afghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') ? 'Afghan constitutional, conflict and political history'
       : source.id.startsWith('nepal') || source.id.startsWith('whelptonHistoryNepal') || source.id.startsWith('huttHimalayanPeoplesWar') || source.id.startsWith('malagodiConstitutionalNationalismNepal') || source.id.startsWith('huttOntaPublicCultureNepal') || source.id.startsWith('ghaiCottrellNepal') ? 'Nepalese constitutional, conflict and political history'
