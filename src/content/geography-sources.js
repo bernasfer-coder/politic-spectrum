@@ -1,6 +1,106 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'coteDivPresidenceConstitution2016',
+    label: 'Présidence de la République de Côte d’Ivoire — Constitution de la troisième République (2016)',
+    url: 'https://www.presidence.ci/en/ivory-coast/the-constitution/',
+    note: 'Official presidential constitutional page and linked French constitutional text consulted for the 2016 founding instrument. No constitutional wording, translation, scan or PDF page is republished; formal design, referendum politics, amendments, implementation and lived experience remain distinct questions.',
+    accessDate: '2026-09-20', creators: ['Présidence de la République de Côte d’Ivoire'], institution: 'Présidence de la République de Côte d’Ivoire',
+    publicationDate: '2016-11-08', evidenceRole: 'primary', confidence: 'high', languages: ['French', 'English'],
+    sourceType: 'primary constitutional text / official presidential archive', identifiers: { constitutionYear: '2016', promulgationDate: '2016-11-08' },
+    description: 'Primary legal witness to the Third Republic’s formal design: republican sovereignty, rights, presidential and parliamentary institutions, constitutional review, decentralization, secular public authority and the relationship between national identity and citizenship. It establishes institutional form, not uniform implementation or public consent.'
+  },
+  {
+    id: 'coteDivConstitutionalCouncil2020',
+    label: 'Conseil constitutionnel de Côte d’Ivoire — Décision n° 2020-EP-010 du 9 novembre 2020',
+    url: 'https://www.conseil-constitutionnel.ci/sites/default/files/decision_ndeg_2020-ep-010_du_09.11.2020_expedition.pdf',
+    note: 'Official French Constitutional Council decision consulted as a primary record of the 2020 presidential-election result and constitutional adjudication. No decision wording, translation, scan or PDF page is republished; the ruling documents an institutional act, not by itself electoral fairness, equal competition, participation quality or public consent.',
+    accessDate: '2026-09-20', creators: ['Conseil constitutionnel de Côte d’Ivoire'], institution: 'Conseil constitutionnel de Côte d’Ivoire',
+    publicationDate: '2020-11-09', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary judicial decision / electoral constitutional adjudication', identifiers: { decision: '2020-EP-010', electionYear: '2020' },
+    description: 'Primary judicial witness to the constitutional certification of the 2020 presidential election, including the Council’s role in validating the official result and resolving the institutional endpoint of the selected electoral horizon.'
+  },
+  {
+    id: 'coteDivCei2020Results',
+    label: 'Commission électorale indépendante de Côte d’Ivoire — Résultats récents, présidentielle 2020',
+    url: 'https://cei.ci/resultats-recents/',
+    note: 'Official CEI results portal consulted for the 2020 presidential-election record. No results table, wording, scan or portal extract is republished; the institutional record is kept distinct from observer, court, party, local-voter and implementation evidence.',
+    accessDate: '2026-09-20', creators: ['Commission électorale indépendante de Côte d’Ivoire'], institution: 'Commission électorale indépendante de Côte d’Ivoire',
+    publicationDate: '2020', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral results / institutional record', identifiers: { electionYear: '2020' },
+    description: 'Primary electoral record used to anchor the 2020 presidential contest within the post-conflict constitutional sequence. It records the official institutional results but does not alone establish a free, fair, inclusive or representative election.'
+  },
+  {
+    id: 'coteDivCdvrFinalReport2014',
+    label: 'Commission Dialogue, Vérité et Réconciliation — Rapport final (Côte d’Ivoire)',
+    url: 'https://www.gouv.ci/_actualite-article.php?recordID=7048',
+    note: 'Official government page announcing the public release of the French CDVR final report and linking the report record. No report wording, testimony, table, scan or PDF page is republished; Commission findings, witness disagreement, government response and implementation remain open evidence questions.',
+    accessDate: '2026-09-20', creators: ['Commission Dialogue, Vérité et Réconciliation'], institution: 'Gouvernement de la République de Côte d’Ivoire',
+    publicationDate: '2014', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official truth-and-reconciliation report / transitional-justice record', identifiers: { reportYear: '2014', publicReleaseYear: '2016' },
+    description: 'Primary transitional-justice record concerning the causes and consequences of political violence, victims, reconciliation and institutional recommendations after the 2010–2011 crisis. It is a Commission record, not an uncontested national narrative or proof of completed implementation.'
+  },
+  {
+    id: 'coteDivMarcoussisUn2003',
+    label: 'United Nations Peacemaker — Linas-Marcoussis Agreement (Côte d’Ivoire, 2003)',
+    url: 'https://peacemaker.un.org/en/node/9595',
+    note: 'Official UN Peacemaker record consulted for the 24 January 2003 agreement and its English, French and other language versions. No agreement wording, translation, scan or PDF page is republished; the settlement’s intended design is not treated as proof of complete implementation or public consent.',
+    accessDate: '2026-09-20', creators: ['Ivorian political forces', 'United Nations Peacemaker'], institution: 'United Nations',
+    publicationDate: '2003-01-24', evidenceRole: 'primary', confidence: 'high', languages: ['French', 'English'],
+    sourceType: 'peace agreement / official international primary record', identifiers: { agreementDate: '2003-01-24' },
+    description: 'Primary diplomatic record of the national-reconciliation government, electoral timetable, security-sector reconstruction, disarmament, citizenship, land tenure and regional peace questions during the first civil-war settlement.'
+  },
+  {
+    id: 'mcgovernMakingWarCoteIvoire2011',
+    label: 'Mike McGovern — Making War in Côte d’Ivoire (2011)',
+    url: 'https://press.uchicago.edu/ucp/books/book/chicago/M/bo8849110.html',
+    note: 'University of Chicago Press and library catalogue records consulted for the 2011 book (ISBN 9780226514598 / 9780226514604; Hurst ISBN 9781850658160). No book wording, quotation, table, chapter or scan is republished; the local and conflict-centered study is not treated as a complete national or current history.',
+    accessDate: '2026-09-20', creators: ['Mike McGovern'], institution: 'University of Chicago Press / Hurst',
+    publicationDate: '2011', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political ethnography and conflict history', identifiers: { isbn: '9780226514598', paperbackIsbn: '9780226514604', hurstIsbn: '9781850658160', pages: '238' },
+    description: 'Ethnographic and political history of the 2002 conflict and its aftermath, relating land, citizenship, youth, identity, cocoa, crime, local politics and international involvement. It supplies a grounded interpretation of war-making and state–society relations, not a score for Ivorian communities.'
+  },
+  {
+    id: 'bouquetGeopolitiqueCoteIvoire2008',
+    label: 'Christian Bouquet — Géopolitique de la Côte d’Ivoire: Le désespoir de Kourouma (2nd ed., 2008)',
+    url: 'https://www.dunod.com/geopolitique-cote-ivoire-desespoir-kourouma',
+    note: 'Armand Colin/Dunod publisher record consulted for the 2008 second edition (ISBN 9782200351137; 280 pages). No book wording, quotation, table, chapter or scan is republished; its geopolitical synthesis and edition-specific horizon remain attributed and bounded.',
+    accessDate: '2026-09-20', creators: ['Christian Bouquet'], institution: 'Armand Colin',
+    publicationDate: '2008', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length geopolitical and political history', identifiers: { isbn: '9782200351137', pages: '280' },
+    description: 'French-language geopolitical study of the post-1993 crisis, identity retreat, elections, migration, economic rent, international tutelage and state fragmentation. It offers a broad spatial and political interpretation to triangulate with McGovern’s local ethnography and primary records.'
+  },
+  {
+    id: 'koffiHouphouetMutations2010',
+    label: 'Paul Koffi Koffi — Houphouët et les mutations politiques en Côte d’Ivoire, 1980–1993 (2010)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/houphouet-et-les-mutations-politiques-en-cote-divoire/43432',
+    note: 'Éditions L’Harmattan and an Ivorian university catalogue consulted for the French-language 2010 book (ISBN 9782296118683; 176 pages). No book wording, quotation, table, chapter or scan is republished; its 1980–1993 scope is not silently extended into the civil-war or post-2020 periods.',
+    accessDate: '2026-09-20', creators: ['Paul Koffi Koffi'], institution: 'L’Harmattan',
+    publicationDate: '2010', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length study of one-party opening and pluralization', identifiers: { isbn: '9782296118683', pages: '176' },
+    description: 'Focused French-language account of the 1980 plural legislative candidacies, the 1990 restoration of multipartism and the final years of Houphouët-Boigny through 1993. It supplies an internal political-history perspective on controlled opening and succession.'
+  },
+  {
+    id: 'baillyMultipartismeCoteIvoire1995',
+    label: 'Diégou Bailly — La réinstauration du multipartisme en Côte d’Ivoire ou la double mort d’Houphouët-Boigny (1995)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/la-reinstauration-du-multipartisme-en-cote-divoire-ou-la-double-mort-dhouphouet-boigny/70561',
+    note: 'Éditions L’Harmattan record consulted for the French-language 1995 book (ISBN 9782738423498; 282 pages). No book wording, quotation, table, chapter or scan is republished; the author’s account of the 1990 opening and succession crisis is kept distinct from other scholarship and official records.',
+    accessDate: '2026-09-20', creators: ['Diégou Bailly'], institution: 'L’Harmattan',
+    publicationDate: '1995', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length political history of pluralization and succession', identifiers: { isbn: '9782738423498', pages: '282' },
+    description: 'French-language political history of the 1990 multipartism restoration, opposition mobilization, media and succession struggle around Houphouët-Boigny and after his death. It adds a period-specific account of political opening and its fracture.'
+  },
+  {
+    id: 'amondjiHouphouetCoteIvoire1984',
+    label: 'Marcel Amondji — Félix Houphouët et la Côte-d’Ivoire: l’envers d’une légende (1984)',
+    url: 'https://www.karthala.com/accueil/17-felix-houphouet-et-la-cote-divoire-9782865371044.html',
+    note: 'Karthala record consulted for the French-language 1984 book (ISBN 9782865371044; 322 pages). No book wording, quotation, table, chapter or scan is republished; this critical political history is attributed and not treated as a neutral or complete national consensus.',
+    accessDate: '2026-09-20', creators: ['Marcel Amondji'], institution: 'Karthala',
+    publicationDate: '1984', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length anti-colonial and postcolonial political history', identifiers: { isbn: '9782865371044', pages: '322' },
+    description: 'Critical French-language account of the anti-colonial movement, the population’s political history and the processes that elevated Houphouët-Boigny, offering a counterpoint to official or leader-centered narratives of the postcolonial order.'
+  },
+  {
     id: 'liberiaConstitution1986Judiciary',
     label: 'Judiciary of Liberia — Constitution of the Republic of Liberia, 1986',
     url: 'https://judiciary.gov.lr/constitution-of-liberia-2/',
