@@ -2917,6 +2917,126 @@ const sources = [
     description: 'French-language study of colonial command, the Senghor era, radio, state and nation-building, propaganda and censorship. It adds media and communicative power to the political history, but does not by itself establish the experience of every journalist, language community, period or later government.'
   },
   {
+    id: 'iraqTransitionalAdministrativeLaw2004Sjc',
+    label: 'Iraq — Transitional Administrative Law (2004), Supreme Judicial Council record',
+    url: 'https://www.sjc.iq/view.78/',
+    note: 'Official Iraqi Supreme Judicial Council record consulted for the Transitional Administrative Law’s date and institutional status. No legal wording, translation, scan or page is republished; the transition framework is not treated as proof of implementation, public consent or later constitutional practice.',
+    accessDate: '2026-09-20', creators: ['Coalition Provisional Authority / Iraqi Governing Council'], institution: 'Supreme Judicial Council of Iraq',
+    publicationDate: '2004-03-08', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'transitional constitutional instrument / official legal record', identifiers: { adoptionDate: '2004-03-08' },
+    description: 'Primary legal witness to the provisional constitutional framework established during the post-invasion transition. It records institutional design and rights language for a bounded phase rather than a completed democratic settlement.'
+  },
+  {
+    id: 'iraqConstitution2005Parliament',
+    label: 'Iraq — Constitution of 2005, Council of Representatives official record',
+    url: 'https://iq.parliament.iq/en/the-constitution/',
+    note: 'Official Iraqi Parliament English constitutional page consulted for an independent summary and link only, with the Arabic record used as the original-language witness where relevant. No constitutional wording, translation, scan or page is republished; formal federal, parliamentary and rights provisions are distinguished from implementation and lived experience.',
+    accessDate: '2026-09-20', creators: ['Republic of Iraq'], institution: 'Council of Representatives of Iraq',
+    publicationDate: '2005-10-15', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic', 'English'],
+    sourceType: 'constitution / official legal record', identifiers: { referendumDate: '2005-10-15' },
+    description: 'Primary constitutional witness to Iraq’s federal parliamentary republic, official-religion and rights provisions, protection of religious and linguistic diversity, separation of powers, elected representation and the Kurdistan federal region. It records formal design, not uniform practice or equal political power.'
+  },
+  {
+    id: 'iraqIhecParliamentElection2021',
+    label: 'Iraq — 2021 Council of Representatives election, Independent High Electoral Commission final results',
+    url: 'https://ihec.iq/the-results-of-the-parliament-elections-2021/',
+    note: 'Official Independent High Electoral Commission result record consulted for the dated electoral horizon and link only. No result table, voter data or copyrighted page is reproduced; the record does not by itself establish representativeness, participation quality, equal access or public consent.',
+    accessDate: '2026-09-20', creators: ['Independent High Electoral Commission of Iraq'], institution: 'Independent High Electoral Commission of Iraq',
+    publicationDate: '2021-10-10', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official election results record', identifiers: { electionDate: '2021-10-10' },
+    description: 'Primary electoral record marking the selected post-2003 parliamentary sequence. It documents an official result announcement, not a complete account of electoral competition, turnout, representation or subsequent government formation.'
+  },
+  {
+    id: 'iraqIhecProvincialElection2023',
+    label: 'Iraq — 2023 provincial council election, Independent High Electoral Commission final results',
+    url: 'https://ihec.iq/29239-2/',
+    note: 'Official Independent High Electoral Commission record consulted for the 18 December 2023 provincial-election horizon and link only. No result table or page is reproduced; provincial results are not generalized to every governorate, community or current political institution.',
+    accessDate: '2026-09-20', creators: ['Independent High Electoral Commission of Iraq'], institution: 'Independent High Electoral Commission of Iraq',
+    publicationDate: '2023-12-18', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official provincial election results record', identifiers: { electionDate: '2023-12-18' },
+    description: 'Primary election record marking the return of provincial council elections within the selected horizon. It documents an official electoral process, not the quality or representativeness of local governance in every province.'
+  },
+  {
+    id: 'trippHistoryIraq2007',
+    label: 'Charles Tripp, A History of Iraq, 3rd ed. (Cambridge University Press, 2007)',
+    url: 'https://www.cambridge.org/core/books/a-history-of-iraq/2EC18785A6BBE4B5278C0133E9A0BB15',
+    note: 'Cambridge University Press book record consulted for the third edition. No book wording, quotation, table, chapter or scan is republished; its long historical interpretation is kept distinct from primary legal and electoral records and from other scholarship.',
+    accessDate: '2026-09-20', creators: ['Charles Tripp'], institution: 'Cambridge University Press',
+    publicationDate: '2007', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern political history', identifiers: { isbn: '9780521702478' },
+    description: 'Independent long-run political history connecting late Ottoman and mandate legacies with the modern Iraqi state and the post-2003 order. It supplies historical interpretation, not a direct measurement of contemporary implementation.'
+  },
+  {
+    id: 'marrModernHistoryIraq2012',
+    label: 'Phebe Marr, The Modern History of Iraq, 3rd ed. (Westview Press, 2012)',
+    url: 'https://search.worldcat.org/title/The-modern-history-of-Iraq/oclc/753480400',
+    note: 'Library and publisher-linked bibliographic records consulted for the third edition and metadata. No book wording, quotation, table, chapter or scan is republished; this national-history perspective is not treated as every Iraqi regional, social or political experience.',
+    accessDate: '2026-09-20', creators: ['Phebe Marr'], institution: 'Westview Press',
+    publicationDate: '2012', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern national and political history', identifiers: { isbn: '9780813344430', ebookIsbn: '9780813345215', pages: '483' },
+    description: 'Independent modern history updated through the post-2003 period, useful for state formation, regime change, communal politics and the reconstruction sequence. It is interpreted alongside other books rather than as a single national consensus.'
+  },
+  {
+    id: 'dawishaPoliticalHistoryIraq2013',
+    label: 'Adeel Dawisha, Iraq: A Political History (Princeton University Press, 2013)',
+    url: 'https://academic.oup.com/princeton-scholarship-online/book/13452',
+    note: 'Princeton/Oxford Academic book record consulted for the 2013 monograph and edition metadata. No book wording, quotation, table, chapter or scan is republished; its institutional and elite-political interpretation remains distinct from Tripp, Marr and post-2003 studies.',
+    accessDate: '2026-09-20', creators: ['Adeel Dawisha'], institution: 'Princeton University Press',
+    publicationDate: '2013', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history', identifiers: { isbn: '9780691157931', onlineIsbn: '9781400846238' },
+    description: 'Book-length political history from the 1921 state formation through the post-2003 order, emphasizing institutions, political actors and state legitimacy. It supplies an independent interpretation, not a score or complete social history.'
+  },
+  {
+    id: 'dodgeIraqNewAuthoritarianism2012',
+    label: 'Toby Dodge, Iraq: From War to a New Authoritarianism (Routledge/IISS, 2012)',
+    url: 'https://obnb.uk/p16267532-p0-iraq-from-war-to-a-new-authoritarianism',
+    note: 'British National Bibliography and publisher-linked records consulted for the post-2003 monograph. No book wording, quotation, table, chapter or scan is republished; the occupation and state-reconstruction analysis is kept distinct from official self-description and from other historical perspectives.',
+    accessDate: '2026-09-20', creators: ['Toby Dodge'], institution: 'Routledge / International Institute for Strategic Studies',
+    publicationDate: '2012', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-2003 political study', identifiers: { isbn: '9780415834858' },
+    description: 'Focused book-length analysis of the occupation, state reconstruction and emergence of a new authoritarian political order. It is used to interpret post-2003 institutions and elite bargaining, not to establish every Iraqi experience.'
+  },
+  {
+    id: 'haddadSectarianismIraq2020',
+    label: 'Fanar Haddad, Understanding “Sectarianism”: Sunni–Shiʿa Relations in the Modern Arab World (Oxford University Press, 2020)',
+    url: 'https://academic.oup.com/book/36790',
+    note: 'Oxford University Press book record consulted for the 2020 monograph and chapter scope. No book wording, quotation, table, chapter or scan is republished; its conceptual account warns against treating sectarian identity as fixed or exhaustive and is not generalized to every Iraqi community.',
+    accessDate: '2026-09-20', creators: ['Fanar Haddad'], institution: 'Oxford University Press',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of sectarian identity and political history', identifiers: { isbn: '9780197510629', pages: '368' },
+    description: 'Book-length conceptual and historical study with sustained Iraq analysis, used to distinguish sectarianization as a political process from fixed communal essence. It supplements rather than replaces constitutional, electoral and national-history sources.'
+  },
+  {
+    id: 'alAliStruggleIraqFuture2014',
+    label: 'Zaid Al-Ali, The Struggle for Iraq’s Future (Yale University Press, 2014)',
+    url: 'https://yalebooks.co.uk/book/9780300187267/the-struggle-for-iraqs-future/',
+    note: 'Yale University Press book record consulted for the 2014 monograph and metadata. No book wording, quotation, table, chapter or scan is republished; the legal and governance critique is presented as an attributed interpretation, not as a complete national account.',
+    accessDate: '2026-09-20', creators: ['Zaid Al-Ali'], institution: 'Yale University Press',
+    publicationDate: '2014', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length constitutional and governance critique', identifiers: { isbn: '9780300187267', ebookIsbn: '9780300198539' },
+    description: 'Book-length analysis of constitutional design, corruption, administrative weakness, sectarian bargaining and democratic prospects after 2003. It provides a critical legal-institutional perspective alongside broader political histories.'
+  },
+  {
+    id: 'franzenPridePowerIraq2021',
+    label: 'Johan Franzén, Pride and Power: A Modern History of Iraq (Hurst, 2021)',
+    url: 'https://www.hurstpublishers.com/book/pride-and-power/',
+    note: 'Hurst publisher record consulted for the 2021 modern history and metadata. No book wording, quotation, table, chapter or scan is republished; its account is triangulated with other long-run histories and primary records.',
+    accessDate: '2026-09-20', creators: ['Johan Franzén'], institution: 'Hurst',
+    publicationDate: '2021', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern political history', identifiers: { isbn: '9781787383951', pages: '660' },
+    description: 'Recent book-length modern history using Iraqi and Western primary materials to interpret mandate, monarchy, republican and post-2003 transformations. It extends the scholarly triangulation without being treated as a definitive voice for all Iraqis.'
+  },
+  {
+    id: 'herringRangwalaIraqFragments2005',
+    label: 'Eric Herring and Glen Rangwala, Iraq in Fragments: The Occupation and Its Legacy (Hurst, 2005)',
+    url: 'https://www.hurstpublishers.com/book/iraq-in-fragments/',
+    note: 'Hurst publisher record consulted for the 2005 post-invasion study and metadata. No book wording, quotation, table, chapter or scan is republished; its early occupation analysis is dated and not used as a current-status claim.',
+    accessDate: '2026-09-20', creators: ['Eric Herring', 'Glen Rangwala'], institution: 'Hurst',
+    publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length occupation and political-fragmentation study', identifiers: { isbn: '9781850657774', pages: '366' },
+    description: 'Early book-length study of the occupation and its political legacy, useful for the provisional-administration phase and fragmentation of authority. It is read as one dated perspective within a larger bibliography.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -2965,6 +3085,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('chad') || source.id.startsWith('azevedoNationFutureChad') || source.id.startsWith('nolutshunguLimitsAnarchyChad') || source.id.startsWith('azevedoRootsViolenceChad') || source.id.startsWith('powellFrancesWarsChad') || source.id.startsWith('dingammadjiGovernmentsChad') || source.id.startsWith('buijtenhuijsTransitionChad') || source.id.startsWith('haggarTombalbayeChad') || source.id.startsWith('brodyCatchDictatorChad') ? 'Chadian constitutional, civil-war, intervention and transition history'
       : source.id.startsWith('cameroon') || source.id.startsWith('ngohHistoryCameroon') || source.id.startsWith('josephRadicalNationalismCameroon') || source.id.startsWith('ngohSouthernCameroons') || source.id.startsWith('terrettaNationOutlawsCameroon') || source.id.startsWith('takougangKriegerPoliticalCrossroadsCameroon') || source.id.startsWith('bouopdaPoliticalHistoryCameroon') || source.id.startsWith('bouopdaAnglophoneCrisisCameroon') ? 'Cameroonian constitutional, decolonization, bilingual and Anglophone-crisis history'
+      : source.id.startsWith('iraq') || source.id.startsWith('trippHistoryIraq') || source.id.startsWith('marrModernHistoryIraq') || source.id.startsWith('dawishaPoliticalHistoryIraq') || source.id.startsWith('dodgeIraq') || source.id.startsWith('haddadSectarianismIraq') || source.id.startsWith('alAliStruggleIraq') || source.id.startsWith('franzenPridePowerIraq') || source.id.startsWith('herringRangwalaIraq') ? 'Iraqi constitutional, occupation, sectarianization and political history'
       : source.id.startsWith('burkina') || source.id.startsWith('harschBurkina') || source.id.startsWith('englebertBurkina') || source.id.startsWith('kaborePoliticalHistoryBurkina') || source.id.startsWith('englebertCotRevolutionBurkina') || source.id.startsWith('sankaraSpeeches') ? 'Burkinabè constitutional, revolutionary and political-transition history'
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
       : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
