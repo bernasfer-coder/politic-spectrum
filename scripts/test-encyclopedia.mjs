@@ -278,9 +278,11 @@ for (const [sourceId, role, date] of [
   assert.equal(record.accessDate, '2026-09-16');
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  const southAfricaProfiles = ['southAfricaConstitution1996Rights', 'southAfricaMakwanyaneCourt1995'].includes(sourceId)
-    ? ['encyclopedia:liberal-constitutionalist', 'geography:south-africa-constitutional-transition']
-    : ['encyclopedia:liberal-constitutionalist'];
+  const southAfricaProfiles = sourceId === 'southAfricaConstitution1996Rights'
+    ? ['encyclopedia:liberal-constitutionalist', 'geography:south-africa-constitutional-transition', 'geography:south-african-postapartheid-democratic-dominance-and-coalition-transition']
+    : sourceId === 'southAfricaMakwanyaneCourt1995'
+      ? ['encyclopedia:liberal-constitutionalist', 'geography:south-africa-constitutional-transition']
+      : ['encyclopedia:liberal-constitutionalist'];
   assert.deepEqual(record.relationships.profileEntries, southAfricaProfiles);
 }
 const southAfricaScholar = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-khoslaTushnetStateCapacity2022');
