@@ -1477,6 +1477,86 @@ const sources = [
     description: 'A book-length national history offering an independent narrative of Ethiopia’s imperial formation and twentieth-century political development. Its chapter structure helps bound the Haile Selassie period, while its broad scope does not settle regional, social or constitutional implementation questions.',
   },
   {
+    id: 'ethiopiaConstitution1995Moe',
+    label: 'Federal Democratic Republic of Ethiopia — Constitution (Proclamation No. 1/1995)',
+    url: 'https://moe.gov.et/storage/Books/Constitution%20of%20FDRE%20-1-%201995.pdf',
+    note: 'Official Ethiopian government PDF hosted by the Ministry of Education, consulted as a primary witness to the federal constitutional order adopted in 1994 and proclaimed in 1995. No constitutional wording, translation, scan or PDF page is republished; the Amharic original, drafting record, amendments and implementation remain open.',
+    accessDate: '2026-09-20', creators: ['Federal Democratic Republic of Ethiopia'], institution: 'Ministry of Education, Ethiopia',
+    publicationDate: '1995-08-21', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional witness; Amharic original not collated'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { proclamation: '1/1995' },
+    description: 'Primary legal witness for the post-Derg federal republic, popular sovereignty, self-determination language, representative institutions, rights and the formal separation of religion and state. It documents constitutional design, not uniform implementation, consent or later political practice.'
+  },
+  {
+    id: 'ethiopiaNebeGeneralElection2021',
+    label: 'National Election Board of Ethiopia — Sixth General Elections final report (2021)',
+    url: 'https://nebe.org.et/sites/default/files/Final%20Report%20English.pdf',
+    note: 'Official National Election Board of Ethiopia final report consulted as a primary witness to the June and September 2021 sixth general-election process. No report wording, result table, scan or PDF page is republished; security conditions, constituency variation, complaints, observation and competing political accounts remain open.',
+    accessDate: '2026-09-20', creators: ['National Election Board of Ethiopia'], institution: 'National Election Board of Ethiopia',
+    publicationDate: '2021-06-21', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional witness; Amharic and other Ethiopian-language records not collated'],
+    sourceType: 'primary election record / official institutional report', identifiers: { electionYear: '2021', electionDate: '2021-06-21' },
+    description: 'Primary electoral witness for the selected endpoint, including the official administration and result-announcement record for a delayed and regionally incomplete electoral process. It does not by itself establish equal participation, free competition, accurate counting, public consent or a uniform Ethiopian experience.'
+  },
+  {
+    id: 'andargachewEthiopianRevolution1987',
+    label: 'Andargachew Tiruneh — The Ethiopian Revolution 1974–1987: A Transformation from an Aristocratic to a Totalitarian Autocracy (1993)',
+    url: 'https://www.cambridge.org/core/books/ethiopian-revolution-19741987/4B713A80A40A14B7A6F68DD3717FD24D',
+    note: 'Cambridge University Press monograph record consulted for the 1993 book (456 pages; ISBN 9780521430821; DOI 10.1017/CBO9780511563102). No book wording, quotation, table, chapter or scan is republished; Amharic sources, archival access and the book’s contested classifications remain open.',
+    accessDate: '2026-09-20', creators: ['Andargachew Tiruneh'], institution: 'Cambridge University Press',
+    publicationDate: '1993-04-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of the Ethiopian Revolution and Derg order', identifiers: { isbn: '9780521430821', doi: '10.1017/CBO9780511563102' },
+    description: 'Comprehensive book-length account of the revolution’s roots, the military council’s scientific-socialist programme, internal power struggles, civil conflict and the 1987 constitutional transition. It is a major interpretation of the Derg period, not an impartial measure of all Ethiopian social or regional experience.'
+  },
+  {
+    id: 'tarekeEthiopianRevolution2009',
+    label: 'Gebru Tareke — The Ethiopian Revolution: War in the Horn of Africa (2009)',
+    url: 'https://academic.oup.com/yale-scholarship-online/book/16340',
+    note: 'Yale University Press / Oxford Academic monograph record consulted for the 2009 book (437 pages; ISBN 9780300141634). No book wording, quotation, table, chapter or scan is republished; Ethiopian, Eritrean and archival source review remains open.',
+    accessDate: '2026-09-20', creators: ['Gebru Tareke'], institution: 'Yale University Press / Oxford Academic',
+    publicationDate: '2009-06-23', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length military and political history of revolutionary Ethiopia and Eritrea', identifiers: { isbn: '9780300141634' },
+    description: 'Book-length military and political history of revolution, insurgency and interstate war in Ethiopia and Eritrea, grounded in archival and military materials. It supplies an independent conflict-centred perspective that should not be generalized to all civilian, regional or political experience.'
+  },
+  {
+    id: 'lyonsPuzzleEthiopianPolitics2019',
+    label: 'Terrence Lyons — The Puzzle of Ethiopian Politics (2019)',
+    url: 'https://www.rienner.com/title/The_Puzzle_of_Ethiopian_Politics',
+    note: 'Lynne Rienner Publishers book record consulted for the 2019 monograph (245 pages; ISBN 9781626377981). No book wording, quotation, table, chapter or scan is republished; Amharic and regional sources, opposition archives and post-2019 evidence remain open.',
+    accessDate: '2026-09-20', creators: ['Terrence Lyons'], institution: 'Lynne Rienner Publishers',
+    publicationDate: '2019', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of EPRDF, electoral politics and state transformation', identifiers: { isbn: '9781626377981' },
+    description: 'Book-length study of nearly three decades of EPRDF politics, war-to-peace transition, party organization, elections, closing political space and the reform challenge visible by 2018. It identifies authoritarian and developmental continuities without treating them as the only Ethiopian political history.'
+  },
+  {
+    id: 'berheLayingPastToRestEthiopia2020',
+    label: 'Mulugeta Gebrehiwot Berhe — Laying the Past to Rest: The EPRDF and the Challenges of Ethiopian State-Building (2020)',
+    url: 'https://hurstpublishers.com/book/laying-the-past-to-rest/',
+    note: 'Hurst Publishers monograph record consulted for the 2020 book (376 pages; ISBN 9781787382916). No book wording, quotation, table, chapter or scan is republished; its insider perspective, internal documentation and post-2018 reception require independent triangulation.',
+    accessDate: '2026-09-20', creators: ['Mulugeta Gebrehiwot Berhe'], institution: 'Hurst Publishers',
+    publicationDate: '2020-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length insider history and critique of EPRDF state-building', identifiers: { isbn: '9781787382916' },
+    description: 'Insider book-length account of the TPLF/EPRDF’s revolutionary war, transition into government, federalism, revolutionary democracy and developmental-state project. Its privileged access is analytically valuable but situated, so it is paired with independent histories and official records.'
+  },
+  {
+    id: 'destaWakePoliticalReformsEthiopia2020',
+    label: 'Melaku Geboye Desta, Dereje Feyissa Dori and Mamo Esmelealem Mihretu (eds.) — Ethiopia in the Wake of Political Reforms (2020)',
+    url: 'https://www.store.tsehaipublishers.com/product_info.php/current-affairs-politics/ethiopia-in-the-wake-of-political-reforms-p-227',
+    note: 'Tsehai Publishers book record consulted for the 2020 edited volume (616 pages; ISBN 9781599072517). No chapter wording, quotation, table, figure or scan is republished; the volume’s divergent viewpoints and the rapidly changing post-2018 context require continued source review.',
+    accessDate: '2026-09-20', creators: ['Melaku Geboye Desta', 'Dereje Feyissa Dori', 'Mamo Esmelealem Mihretu'], institution: 'Tsehai Publishers',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on Ethiopia’s post-2018 political reforms', identifiers: { isbn: '9781599072517' },
+    description: 'Large edited volume presenting divergent political, social, economic and legal perspectives on the post-2018 reform moment. It is useful for internal debate and regional variation, but its pre-pandemic and pre-war horizon does not settle the later conflict or current political trajectory.'
+  },
+  {
+    id: 'tarikuGebresenbetInsecurityEthiopia2026',
+    label: 'Yonas Tariku and Fana Gebresenbet (eds.) — Ethiopia’s Insecurity Complex: Protest, Transition, and War (2026)',
+    url: 'https://www.routledge.com/Ethiopias-Insecurity-Complex-Protest-Transition-and-War/Tariku-Gebresenbet/p/book/9781032954455',
+    note: 'Routledge book record consulted for the 2026 edited volume (242 pages; ISBN 9781032954455). No chapter wording, quotation, table, figure or scan is republished; the volume’s 2015–2024 scope, regional evidence and later reception remain open for continued review.',
+    accessDate: '2026-09-20', creators: ['Yonas Tariku', 'Fana Gebresenbet'], institution: 'Routledge',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on Ethiopian protest, transition and war', identifiers: { isbn: '9781032954455' },
+    description: 'Recent book-length edited study of the escalation from 2015–2018 protests through the 2018–2021 transition, the 2020–2022 northern war and violence through 2024. It extends the contemporary evidence base while retaining regional, scholarly and temporal limits.'
+  },
+  {
     id: 'campbellIslandKingdomTonga2015',
     label: 'Ian C. Campbell — Island Kingdom: Tonga Ancient and Modern',
     url: 'https://www.canterbury.ac.nz/about-uc/what-we-do/canterbury-university-press/canterbury-university-press-catalogue/island-kingdom-tonga-ancient-and-modern-third-edition',
@@ -3524,7 +3604,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('pakistanEcp') ? 'Pakistani constitutional, civil–military and electoral history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') || source.id.startsWith('ayeeAmoahAliduGhana') || source.id.startsWith('pallerDemocracyGhana') ? 'Ghanaian constitutional transition and political history'
       : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeriaInec') ? 'Nigerian constitutional, electoral and political history'
-        : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') ? 'Ethiopian imperial constitutional and political history'
+        : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') ? 'Ethiopian revolutionary, federal and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') ? 'Portuguese democratic transition and constitutional history'
