@@ -1201,6 +1201,66 @@ const sources = [
     description: 'Primary legal evidence for the Federal Republic’s constitutional order in the original German. The current consolidated text records the 1949 foundation and later amendments; it does not by itself prove social acceptance, implementation or the absence of authoritarian continuities.',
   },
   {
+    id: 'fulbrookHistoryGermany2021',
+    label: 'Mary Fulbrook — A History of Germany 1918–2020: The Divided Nation',
+    url: 'https://www.wiley-vch.de/en/areas-interest/humanities-social-sciences/a-history-of-germany-1918-2020-978-1-119-57417-0',
+    note: 'Wiley book record consulted for the fifth edition (2021; 416 pages; ISBN 9781119574170). No book wording, quotation, table or scan is republished; the synthesis is attributed and is not treated as a substitute for local, minority or German-language histories.',
+    accessDate: '2026-09-20',
+    creators: ['Mary Fulbrook'], institution: 'Wiley-Blackwell',
+    publicationDate: '2021', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length German national, social and political history',
+    identifiers: { isbn: '9781119574170', pages: '416' },
+    description: 'A fifth-edition book-length history covering the Weimar Republic, Nazism, postwar division, reunification and the Berlin Republic through the era of Angela Merkel. It supplies a broad historical perspective on the post-1990 order while preserving the distinction between formal unification, social transformation and contested historical memory.',
+  },
+  {
+    id: 'zelikowRiceGermanUnification1995',
+    label: 'Philip Zelikow and Condoleezza Rice — Germany Unified and Europe Transformed: A Study in Statecraft',
+    url: 'https://books.google.com/books/about/Germany_Unified_and_Europe_Transformed.html?id=f5nV146UtRsC',
+    note: 'Harvard University Press bibliographic record consulted for the 1995 book-length study of German unification and the end of the Cold War (493 pages). No book wording, quotation, table or scan is republished; the authors’ statecraft interpretation is attributed and balanced against social and institutional histories.',
+    accessDate: '2026-09-20',
+    creators: ['Philip Zelikow', 'Condoleezza Rice'], institution: 'Harvard University Press',
+    publicationDate: '1995', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length diplomatic and political history of German unification',
+    identifiers: { isbn: '9780674353255', pages: '493' },
+    description: 'A documentary and analytical book-length account of the negotiations and statecraft that produced German unification and reshaped Europe. It is used for the international and constitutional settlement around 1989–1990, not as a complete account of East German society, post-unification inequality or later domestic politics.',
+  },
+  {
+    id: 'greenHoughMiskimmonNewGermany2011',
+    label: 'Simon Green, Dan Hough and Alister Miskimmon — The Politics of the New Germany',
+    url: 'https://doi.org/10.4324/9780203626627',
+    note: 'Routledge bibliographic record and institutional catalogue metadata consulted for the second edition (2011; ISBN 9780415604383). No book wording, quotation, chapter, table or scan is republished; the overview is attributed and its pre-2021 endpoint is kept visible.',
+    accessDate: '2026-09-20',
+    creators: ['Simon Green', 'Dan Hough', 'Alister Miskimmon'], institution: 'Routledge',
+    publicationDate: '2011', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-unification German political study',
+    identifiers: { isbn: '9780415604383', ebookIsbn: '9780203626627', doi: '10.4324/9780203626627' },
+    description: 'A book-length overview of post-unification German politics organized around reconciliation, consensus and transformation. It supplies an independent institutional and policy perspective on the federal system, parties, coalition politics, Europeanization and the social and political challenges of the new Germany.',
+  },
+  {
+    id: 'vonBeymeBuschGermanSystem2023',
+    label: 'Klaus von Beyme and Andreas Busch — Das politische System der Bundesrepublik Deutschland: Eine Einführung',
+    url: 'https://link.springer.com/book/10.1007/978-3-658-41506-8',
+    note: 'Springer VS record consulted for the 13th German-language edition (2023; ISBN 9783658415068). The record states that the edition incorporates the 2021 Bundestag election; no German book wording, quotation, table or scan is republished. Its institutional framing is used as an attributed perspective, not as a complete social history.',
+    accessDate: '2026-09-20',
+    creators: ['Klaus von Beyme', 'Andreas Busch'], institution: 'Springer VS Wiesbaden',
+    publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['German'],
+    sourceType: 'German-language book-length study of the Federal Republic political system',
+    identifiers: { isbn: '9783658415068', doi: '10.1007/978-3-658-41506-8' },
+    description: 'A German-language book-length introduction to the Federal Republic’s institutions and political processes, explicitly linking German unity in 1990 to parties, Bundestag, government, administration, constitutional adjudication, federalism and the 2021 election. It materially improves language coverage while remaining an institutional introduction rather than a full account of every social group or policy field.',
+  },
+  {
+    id: 'germanyBundestagElection2021Official',
+    label: 'Federal Returning Officer — Bundestag election 2021 results',
+    url: 'https://bundeswahlleiterin.de/en/bundestagswahlen/2021/archiv/ergebnisse/bund-99.html',
+    note: 'Official Federal Returning Officer result page consulted for the final national distribution of seats, turnout and party vote records in the 26 September 2021 election. Results are linked rather than reproduced; they establish an electoral record, not voter motives, equal competition, party ideology or present-day representativeness.',
+    accessDate: '2026-09-20',
+    creators: ['Federal Returning Officer of Germany'], institution: 'Der Bundeswahlleiter',
+    publicationDate: '2021-09-26', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'German'],
+    sourceType: 'official federal election results',
+    identifiers: { election: '20th German Bundestag', electionDate: '2021-09-26' },
+    description: 'The official final results for the 20th German Bundestag election, including national seat distribution, votes and turnout. It fixes the case’s contemporary boundary at a documented electoral event without treating election returns as a complete measure of democracy, ideology or public consent.',
+  },
+  {
     id: 'ginsborgContemporaryItaly1989',
     label: 'Paul Ginsborg — A History of Contemporary Italy: Society and Politics, 1943–1988',
     url: 'https://us.macmillan.com/books/9781403961532/ahistoryofcontemporaryitaly/',
@@ -4129,7 +4189,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') || source.id.startsWith('southall') || source.id.startsWith('booysen') || source.id.startsWith('glaser') || source.id.startsWith('buthelezi') ? 'South African constitutional law and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
         : source.id.startsWith('knightMexican') ? 'Mexican Revolution and constitutional history'
-        : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') ? 'German postwar democratic and constitutional history'
+        : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') || source.id.startsWith('fulbrookHistoryGermany') || source.id.startsWith('zelikowRice') || source.id.startsWith('greenHoughMiskimmon') || source.id.startsWith('vonBeymeBusch') || source.id.startsWith('germanyBundestag') ? 'German postwar and reunified constitutional and political history'
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
          : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
