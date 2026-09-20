@@ -1249,6 +1249,66 @@ const sources = [
     description: 'A broad book-length history of Japan’s modern transformation from the early modern period onward. Its wide chronology supplies a second national perspective for the Meiji constitutional case without collapsing later empire, militarism or postwar democracy into the 1868–1890 founding window.',
   },
   {
+    id: 'dowerEmbracingDefeat1999',
+    label: 'John W. Dower — Embracing Defeat: Japan in the Wake of World War II',
+    url: 'https://wwnorton.co.uk/books/9780393046861-embracing-defeat',
+    note: 'W. W. Norton book record consulted for Dower’s 1999 occupation history (676 pages; ISBN 9780393046861). No book wording, quotation, table, image or scan is republished; the account is attributed and bounded to the defeat and occupation period rather than projected onto every later postwar institution or social group.',
+    accessDate: '2026-09-20',
+    creators: ['John W. Dower'], institution: 'W. W. Norton & Company',
+    publicationDate: '1999', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of occupied and immediately postwar Japan',
+    identifiers: { isbn: '9780393046861', pages: '676' },
+    description: 'A major book-length history of Japan from surrender through the more than six years of the US-led occupation. It supplies social, political and institutional evidence for defeat, demilitarization, democratization, reconstruction and the contested consequences of occupation policy; it does not by itself establish the later 1955 System or contemporary Japanese politics.',
+  },
+  {
+    id: 'gordonModernJapan2002',
+    label: 'Andrew Gordon — A Modern History of Japan: From Tokugawa Times to the Present',
+    url: 'https://academic.oup.com/book/51043',
+    note: 'Oxford University Press book record consulted for Gordon’s broad national history (2002 edition; ISBN 9780195110609). No book wording, quotation, chapter, table or scan is republished; the wide synthesis is used as an independent perspective and not as a substitute for Japanese-language or specialized local histories.',
+    accessDate: '2026-09-20',
+    creators: ['Andrew Gordon'], institution: 'Oxford University Press',
+    publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Japanese national, social and political history',
+    identifiers: { isbn: '9780195110609', onlineIsbn: '9780197714683' },
+    description: 'A broad book-length history that includes occupied Japan, postwar political struggles and settlements, economic and social transformation, and the transition beyond the postwar era. It provides an independent national perspective for the long arc of the case while leaving specialized questions of party organization, minorities, security and local history open.',
+  },
+  {
+    id: 'curtisLogicJapanesePolitics1999',
+    label: 'Gerald L. Curtis — The Logic of Japanese Politics: Leaders, Institutions, and the Limits of Change',
+    url: 'https://cup.columbia.edu/book/the-logic-of-japanese-politics/9780231108423/',
+    note: 'Columbia University Press book record consulted for Curtis’s 1999 institutional study (336 pages; ISBN 9780231108423). No book wording, quotation, chapter or scan is republished; its interpretation of leaders, parties, electoral reform and the 1990s is attributed and is not treated as a complete social history or current political audit.',
+    accessDate: '2026-09-20',
+    creators: ['Gerald L. Curtis'], institution: 'Columbia University Press',
+    publicationDate: '1999', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length institutional study of postwar Japanese politics',
+    identifiers: { isbn: '9780231108423', paperbackIsbn: '9780231108430', pages: '336' },
+    description: 'A book-length political-institutional study of Japanese leaders, parties, electoral reform, the end of one-party dominance in 1993 and the coalition and institutional conflicts of the 1990s. It supplies a focused perspective on authority and party politics alongside Dower’s occupation history and Gordon’s broader national synthesis.',
+  },
+  {
+    id: 'japanPostwarConstitution1946',
+    label: 'Constitution of Japan (1946/1947)',
+    url: 'https://www.shugiin.go.jp/internet/itdb_kenpou.nsf/html/kenpou/en/constitution.htm',
+    note: 'Official House of Representatives constitutional text consulted as a primary legal witness. The text is linked rather than reproduced; the atlas uses it for formal institutional, rights, sovereignty, local-autonomy, emperor-status and Article 9 claims, not as proof of implementation, social consensus or equal lived citizenship.',
+    accessDate: '2026-09-20',
+    creators: ['National Diet of Japan, House of Representatives'], institution: 'Commission on the Constitution, House of Representatives of Japan',
+    publicationDate: '1946-11-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text',
+    identifiers: { promulgated: '1946-11-03', effective: '1947-05-03' },
+    description: 'The official English presentation of the Constitution promulgated on 3 November 1946 and effective from 3 May 1947. It records popular sovereignty, fundamental rights, the Diet, Cabinet, courts, local autonomy, the symbolic status of the Emperor and Article 9’s renunciation of war as formal constitutional commitments.',
+  },
+  {
+    id: 'japanHouseElectionResults2021',
+    label: 'Japan Ministry of Internal Affairs and Communications — Survey on Results of House-of-Representatives General Election and Supreme Court Review',
+    url: 'https://www.e-stat.go.jp/en/statistics/00200235',
+    note: 'Official e-Stat/MIC statistical series consulted for the House-of-Representatives election results and Supreme Court review, including the 2021 election endpoint. The record is linked rather than reproduced; the statistics establish official electoral data, not voter motives, campaign fairness, party ideology or contemporary representativeness.',
+    accessDate: '2026-09-20',
+    creators: ['Ministry of Internal Affairs and Communications, Japan'], institution: 'Government of Japan, e-Stat',
+    publicationDate: '2021', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Japanese'],
+    sourceType: 'official election statistics',
+    identifiers: { statisticsCode: '00200235', electionYear: '2021' },
+    description: 'The Japanese government’s official statistical series for House-of-Representatives general-election results and the public review of Supreme Court justices. It provides a citable electoral record for the case’s 2021 endpoint while leaving interpretation of participation, competition and political meaning to the book-length scholarship and further primary research.',
+  },
+  {
     id: 'wyattThailandShortHistory2004',
     label: 'David K. Wyatt — Thailand: A Short History',
     url: 'https://yalebooks.co.uk/book/9780300084757/thailand/',
@@ -4071,7 +4131,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('knightMexican') ? 'Mexican Revolution and constitutional history'
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') ? 'German postwar democratic and constitutional history'
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
-        : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') ? 'Japanese Meiji constitutional and political history'
+         : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('weissProtest') || source.id.startsWith('weissHazis') || source.id.startsWith('gomezOsman') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
