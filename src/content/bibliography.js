@@ -10020,6 +10020,48 @@ export const BIBLIOGRAPHY_METADATA = {
     publicationDate: '2021-10-14', publisher: 'CNRS Éditions', identifiers: { ean: '9782271138866' }, confidence: 'high', languages: ['French'],
     description: 'French-language multidisciplinary volume on one year of Algerian mobilization from February 2019 through the pandemic interruption, interpreting social transformation and the stakes of an unfinished revolution. It adds a relevant-language perspective without closing local-language or implementation gaps.',
   },
+  tunisiaConstitution2014: {
+    accessDate: '2026-09-20', creators: ['National Constituent Assembly of Tunisia', 'United Nations Development Programme', 'International IDEA'], institution: 'Constitute Project / UNDP / International IDEA',
+    sourceType: 'primary constitutional text / translated legal witness', evidenceRole: 'primary', discipline: 'Tunisian constitutional and political history',
+    publicationDate: '2014-01-26', publisher: 'Constitute Project / UNDP / International IDEA', identifiers: {}, confidence: 'high', languages: ['English witness; Arabic original not collated'],
+    description: 'Primary constitutional witness for Tunisia’s 2014 settlement, including republican sovereignty, pluralist elections, separation and balance of powers, rights, equality, freedom of belief, decentralization and the civil character of the state. It establishes formal design, not uniform implementation or a country-wide ideological score.',
+  },
+  tunisiaConstitution2022: {
+    accessDate: '2026-09-20', creators: ['President of the Republic of Tunisia', 'Tunisian electorate and constitutional institutions'], institution: 'DCAF Tunisia Legal Database / Journal officiel de la République tunisienne',
+    sourceType: 'primary constitutional text / official journal legal record', evidenceRole: 'primary', discipline: 'Tunisian constitutional and political history',
+    publicationDate: '2022-08-17', publisher: 'DCAF Tunisia Legal Database / Journal officiel de la République tunisienne', identifiers: {}, confidence: 'high', languages: ['French; Arabic original'],
+    description: 'Primary legal witness for the 2022 Constitution, which formally narrates the 2010–2011 revolution and 25 July 2021 “correction,” replaces the 2014 institutional settlement and concentrates important executive powers in the presidency while retaining rights and elected assemblies. It establishes formal design, not public consent or implementation.',
+  },
+  perkinsHistoryModernTunisia2014: {
+    accessDate: '2026-09-20', creators: ['Kenneth J. Perkins'], institution: 'Cambridge University Press',
+    sourceType: 'book-length Tunisian national and political history', evidenceRole: 'secondary', discipline: 'Tunisian constitutional and political history',
+    publicationDate: '2014-01-20', publisher: 'Cambridge University Press', identifiers: { isbn: '9781107654129' }, confidence: 'high', languages: ['English'],
+    description: 'Long modern history from the pre-protectorate period through the 2011 revolution, placing colonialism, nationalism, Bourguiba, Ben Ali, political institutions, social forces and the revolution in one narrative. It supplies historical context, not a score for Tunisia or proof of uniform reformist culture.',
+  },
+  masriTunisiaArabAnomaly2017: {
+    accessDate: '2026-09-20', creators: ['Safwan M. Masri'], institution: 'Columbia University Press',
+    sourceType: 'book-length Tunisian political and social history', evidenceRole: 'secondary', discipline: 'Tunisian constitutional and political history',
+    publicationDate: '2017-06-30', publisher: 'Columbia University Press', identifiers: { isbn: '9780231179508', paperbackIsbn: '9780231179515', onlineIsbn: '9780231545020' }, confidence: 'high', languages: ['English'],
+    description: 'Interpretive history linking Tunisia’s reformist education, social policy, women’s rights, civil society, Islam–society relations and post-2011 political trajectory. It is useful as an attributed explanation and must not be converted into a claim that all Tunisians share “moderation” or that Tunisia is a transferable model.',
+  },
+  gobeChouikhaTunisia2015: {
+    accessDate: '2026-09-20', creators: ['Éric Gobe', 'Larbi Chouikha'], institution: 'Éditions La Découverte',
+    sourceType: 'French-language book-length Tunisian political history', evidenceRole: 'secondary', discipline: 'Tunisian constitutional and political history',
+    publicationDate: '2015-08-27', publisher: 'Éditions La Découverte', identifiers: { isbn: '9782707178169', ebookIsbn: '9782707188281' }, confidence: 'high', languages: ['French'],
+    description: 'French-language history of Tunisia from independence through Bourguiba, Ben Ali, the 2011 rupture and the early post-revolution transition, including the Constituent Assembly, Ennahda’s electoral position and negotiated institutional change. It adds a distinct national-history perspective without closing local-language evidence gaps.',
+  },
+  laroussiDenieuilTunisia2011to2014: {
+    accessDate: '2026-09-20', creators: ['Houda Laroussi', 'Pierre-Noël Denieuil'], institution: 'Éditions L’Harmattan',
+    sourceType: 'French-language book-length study of Tunisia’s revolutionary transition', evidenceRole: 'secondary', discipline: 'Tunisian constitutional and political history',
+    publicationDate: '2017-03-15', publisher: 'Éditions L’Harmattan', identifiers: { isbn: '9782343117331', ebookIsbn: '9782336784939', pdfIsbn: '9782140032578' }, confidence: 'high', languages: ['French'],
+    description: 'Book-length account of the four years after Ben Ali’s fall, using chronology, press review, framed testimony and sociological/anthropological research to follow institutional experimentation, social transactions and political debate. It is a focused transition study, not proof of uniform revolutionary participation or implementation.',
+  },
+  zayaniFledglingDemocracyTunisia2023: {
+    accessDate: '2026-09-20', creators: ['Mohamed Zayani (editor)'], institution: 'Oxford University Press / Hurst Publishers',
+    sourceType: 'scholarly edited volume on Tunisia’s post-revolutionary transition', evidenceRole: 'secondary', discipline: 'Tunisian constitutional and political history',
+    publicationDate: '2023-01-15', publisher: 'Oxford University Press / Hurst Publishers', identifiers: { isbn: '9780197661635', onlineIsbn: '9780197683552', doi: '10.1093/oso/9780197661635.001.0001' }, confidence: 'high', languages: ['English'],
+    description: 'Edited volume on pluralism, civilian rule, civil society, party politics, Ennahda’s evolution, mobilization, youth precarity and security after 2011. Its contributors present a fragile and contested transition rather than a simple success story; the volume helps bridge the 2014 settlement and the pre-2022 crisis without proving uniform public consent.',
+  },
   omanRoyalDecreeBasicStatute2021: {
     accessDate: '2026-09-18',
     creators: ['Sultan Haitham bin Tarik', 'Sultanate of Oman'],

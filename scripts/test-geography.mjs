@@ -6,8 +6,8 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 40);
-assert.equal(GEOGRAPHY_LABELS.length, 38);
+assert.equal(GEOGRAPHY_CASES.length, 41);
+assert.equal(GEOGRAPHY_LABELS.length, 39);
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
@@ -40,13 +40,14 @@ assert.equal(filterGeographyCases({ country: 'nepal' })[0].id, 'nepali-constitut
 assert.equal(filterGeographyCases({ country: 'afghanistan' })[0].id, 'afghan-posttaliban-republican-order');
 assert.equal(filterGeographyCases({ country: 'sudan' })[0].id, 'sudanese-islamist-military-and-revolutionary-transition');
 assert.equal(filterGeographyCases({ country: 'algeria' })[0].id, 'algerian-postwar-constitutional-hirak-transition');
+assert.equal(filterGeographyCases({ country: 'tunisia' })[0].id, 'tunisian-revolutionary-constitutional-transition');
 assert.equal(filterGeographyCases({ label: 'nasserism' }).length, 2);
 assert.equal(filterGeographyCases({ continent: 'Oceania' }).length, 1);
 assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'tongan-constitutional-reform-1875-2010');
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
-assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 18, 'the atlas should expose all dated post-2000 implemented cases');
-assert.deepEqual(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id).sort(), ['afghan-posttaliban-republican-order', 'algerian-postwar-constitutional-hirak-transition', 'antarctic-treaty-system', 'bangladeshi-constitutional-parliamentary-order', 'bhutanese-democratic-constitutional-transition', 'ghanaian-fourth-republic-constitutional-transition', 'indonesian-reformasi-constitutionalism', 'jordanian-constitutional-monarchy', 'kuwait-constitutional-parliamentary-order', 'nepali-constitutional-republican-transition', 'nigerian-fourth-republic', 'oman-sultani-constitutional-order', 'pakistani-constitutional-civilian-transition', 'philippine-postauthoritarian-constitutionalism', 'saudi-basic-law-shura-order', 'sri-lankan-constitutional-presidential-order', 'sudanese-islamist-military-and-revolutionary-transition', 'tongan-constitutional-reform-1875-2010']);
+assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 19, 'the atlas should expose all dated post-2000 implemented cases');
+assert.deepEqual(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id).sort(), ['afghan-posttaliban-republican-order', 'algerian-postwar-constitutional-hirak-transition', 'antarctic-treaty-system', 'bangladeshi-constitutional-parliamentary-order', 'bhutanese-democratic-constitutional-transition', 'ghanaian-fourth-republic-constitutional-transition', 'indonesian-reformasi-constitutionalism', 'jordanian-constitutional-monarchy', 'kuwait-constitutional-parliamentary-order', 'nepali-constitutional-republican-transition', 'nigerian-fourth-republic', 'oman-sultani-constitutional-order', 'pakistani-constitutional-civilian-transition', 'philippine-postauthoritarian-constitutionalism', 'saudi-basic-law-shura-order', 'sri-lankan-constitutional-presidential-order', 'sudanese-islamist-military-and-revolutionary-transition', 'tongan-constitutional-reform-1875-2010', 'tunisian-revolutionary-constitutional-transition']);
 assert.ok(!filterGeographyCases({ country: 'egypt' }).some(({ id }) => id === 'nasser-regional-legacy'), 'regional influence is not automatically a country claim');
 const all = filterGeographyCases({});
 assert.deepEqual(all.map(({ startYear }) => startYear), all.map(({ startYear }) => startYear).sort((a, b) => a - b));
@@ -56,4 +57,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 40 dated cases, 38 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 41 dated cases, 39 unscored labels, citations, boundaries, filters and share URLs.');
