@@ -481,6 +481,54 @@ const sources = [
     description: 'An official account of the negotiated drafting and adoption sequence, including the interim constitutional framework and Constitutional Court review. Its institutional perspective and limits remain explicit.',
   },
   {
+    id: 'khanConstitutionalHistoryPakistan2023',
+    label: 'Hamid Khan — Constitutional and Political History of Pakistan (4th ed., 2023)',
+    url: 'https://oup.com.pk/constitutional-and-political-history-of-pakistan-forth-edition.html',
+    note: 'Oxford University Press Pakistan book record consulted for constitutional development from independence through the fourth edition’s September 2018 horizon, including parliamentary, presidential, hybrid and military periods. The 784-page monograph, Urdu materials, constitutional documents and implementation record were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Hamid Khan'], institution: 'Oxford University Press Pakistan',
+    publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Pakistani constitutional and political history',
+    identifiers: { isbn: '9780199060986' },
+    description: 'A book-length constitutional and political history that treats constitution-making alongside the social and political events and actors shaping implementation. The record says the fourth edition updates developments through September 2018; the atlas case is bounded earlier at the 2013 civilian electoral transition.'
+  },
+  {
+    id: 'talbotPakistanNewHistory2012',
+    label: 'Ian Talbot — Pakistan: A New History (2012)',
+    url: 'https://oup.com.pk/pakistan-a-new-history.html',
+    note: 'Oxford University Press Pakistan book record consulted for a distinct national history focused on governance, political and economic development, the Muslim-state project and institutional challenges. The complete monograph and cited Pakistani-language and archival materials were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-19',
+    creators: ['Ian Talbot'], institution: 'Oxford University Press Pakistan',
+    publicationDate: '2012', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Pakistani national and political history',
+    identifiers: { isbn: '9780199400416' },
+    description: 'A book-length history of Pakistan’s major political turning points and institutional challenges. It supplies a national perspective distinct from Khan’s constitutional and legal chronology, not a complete account of every province, class, language or contemporary administration.'
+  },
+  {
+    id: 'shahArmyDemocracyPakistan2014',
+    label: 'Aqil Shah — The Army and Democracy: Military Politics in Pakistan (2014)',
+    url: 'https://www.degruyterbrill.com/document/doi/10.4159/harvard.9780674419766/html',
+    note: 'Harvard University Press book record and scholarly description consulted for the Pakistan Army’s political role, civil–military relations and resistance to democratic control. The 399-page monograph and cited military and political records were not independently collated; its causal interpretation remains attributed and does not stand for every actor or period.',
+    accessDate: '2026-09-19',
+    creators: ['Aqil Shah'], institution: 'Harvard University Press',
+    publicationDate: '2014', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Pakistani civil–military political history',
+    identifiers: { doi: '10.4159/harvard.9780674419766' },
+    description: 'A book-length study of military politics, civil–military relations and democratic control in Pakistan. It provides a focused institutional perspective alongside broader national and constitutional histories, not an exhaustive account of provincial, religious or civilian politics.'
+  },
+  {
+    id: 'pakistanEcpGeneralElection2013',
+    label: 'Election Commission of Pakistan — Report on the General Elections 2013',
+    url: 'https://ecp.gov.pk/storage/files/1/ger-1.pdf',
+    note: 'Official Election Commission report consulted as a primary witness for the May 2013 general election, the constitutional electoral framework and the transition from one elected civilian government to another. It is not treated as proof of equal participation, clean administration, provincial uniformity or the absence of disputes; no report wording, table or PDF is republished.',
+    accessDate: '2026-09-19',
+    creators: ['Election Commission of Pakistan'], institution: 'Election Commission of Pakistan',
+    publicationDate: '2013', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral report / primary institutional record',
+    identifiers: {},
+    description: 'Official report on Pakistan’s 2013 general election. It documents the election administration and results as an institutional record; litigation, party accounts, local variation and independent observation require separate review.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -516,6 +564,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
+      : source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('pakistanEcp') ? 'Pakistani constitutional, civil–military and electoral history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') ? 'Ghanaian constitutional transition and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') ? 'Ethiopian imperial constitutional and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') ? 'Tongan constitutional, monarchical and political history'
