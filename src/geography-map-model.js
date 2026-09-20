@@ -11,6 +11,7 @@ const projection = geoEqualEarth().fitExtent([[16, 16], [944, 484]], { type: 'Sp
 const path = geoPath(projection);
 const atlasIds = { '004': 'afghanistan', '076': 'brazil', '050': 'bangladesh', '144': 'sri-lanka', '524': 'nepal', '148': 'chad', '250': 'france', '276': 'germany', '288': 'ghana', '356': 'india', '360': 'indonesia', '380': 'italy', '392': 'japan', '404': 'kenya', '466': 'mali', '562': 'niger', '566': 'nigeria', '586': 'pakistan', '608': 'philippines', '764': 'thailand', '458': 'malaysia', '064': 'bhutan', '231': 'ethiopia', '484': 'mexico', '620': 'portugal', '400': 'jordan', '414': 'kuwait', '512': 'oman', '682': 'saudi-arabia', '704': 'vietnam', '508': 'mozambique', '710': 'south-africa', '724': 'spain', '776': 'tonga', '646': 'rwanda', '686': 'senegal', '270': 'gambia', '694': 'sierra-leone', '430': 'liberia', '384': 'cote-divoire', '818': 'egypt', '012': 'algeria', '788': 'tunisia', '434': 'libya', '504': 'morocco', '729': 'sudan', '834': 'tanzania', '800': 'uganda', '716': 'zimbabwe', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
 atlasIds['120'] = 'cameroon';
+atlasIds['854'] = 'burkina-faso';
 const atlasPlaceIds = { '010': ['antarctica'] };
 const atlasNames = Object.fromEntries(GEOGRAPHY_COUNTRIES.map(({ id, name }) => [id, name]));
 

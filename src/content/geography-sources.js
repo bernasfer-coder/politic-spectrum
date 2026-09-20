@@ -1,6 +1,136 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'burkinaConstitution1991Presidence',
+    label: 'Burkina Faso — Constitution of 11 June 1991, Presidency fundamental-texts record',
+    url: 'https://www.presidencedufaso.bf/textes-fondamentaux/',
+    note: 'Official Presidency constitutional record consulted for an independent summary and link only. No constitutional wording, translation, scan or PDF page is republished; formal design is distinguished from implementation, electoral competition, consent and later suspension or transition.',
+    accessDate: '2026-09-20', creators: ['Republic of Burkina Faso'], institution: 'Presidency of Burkina Faso',
+    publicationDate: '1991-06-11', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1991', adoptionDate: '1991-06-11' },
+    description: 'Primary constitutional witness to the Fourth Republic’s formal order after the revolutionary and military sequence: republican sovereignty, rights, elected institutions, separation of powers and the legal basis for public authority. It records constitutional design rather than uniform practice or public approval.'
+  },
+  {
+    id: 'burkinaTransitionCharter2014Conseil',
+    label: 'Burkina Faso — Charte de la transition, Constitutional Council official record (16 November 2014)',
+    url: 'https://www.conseil-constitutionnel.gov.bf/fileadmin/user_upload/storages/fichiers/charte_de_la_transition-vf_bon_doc.pdf',
+    note: 'Official Constitutional Council PDF consulted for an independent summary and link only. No charter wording, translation, scan or PDF page is republished; the transitional framework is not treated as proof of equal participation, civilian control or a completed democratic settlement.',
+    accessDate: '2026-09-20', creators: ['Conseil constitutionnel du Burkina Faso'], institution: 'Constitutional Council of Burkina Faso',
+    publicationDate: '2014-11-16', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary transitional charter / official constitutional record', identifiers: { adoptionDate: '2014-11-16' },
+    description: 'Primary transitional text after the October 2014 uprising and Blaise Compaoré’s departure. It records the formal institutions, limits and mission of the transition, while leaving open questions of representation, implementation and the balance between civilian and military authority.'
+  },
+  {
+    id: 'burkinaSankaraDeclaration1983',
+    label: 'Thomas Sankara — Declaration of 4 August 1983, official transcription',
+    url: 'https://www.thomassankara.net/la-declaration-du-4-aout-1983/',
+    note: 'Thomas Sankara Website transcription of the 4 August 1983 radio address consulted as a primary political record and link only. No speech wording, translation, audio or transcript is republished; the revolutionary government’s stated programme is distinguished from implementation, coercion, opposition and later memory.',
+    accessDate: '2026-09-20', creators: ['Thomas Sankara'], institution: 'Thomas Sankara Website',
+    publicationDate: '1983-08-04', evidenceRole: 'primary', confidence: 'medium', languages: ['French'],
+    sourceType: 'primary political address / official transcription', identifiers: { addressDate: '1983-08-04' },
+    description: 'Primary political address associated with the National Revolutionary Council’s seizure of power and its stated goals of independence, dignity and a break with neo-colonial domination. The text is evidence of revolutionary self-description, not a complete account of social support, policy effects or political repression.'
+  },
+  {
+    id: 'burkinaCeniElection2015',
+    label: 'Commission électorale nationale indépendante — Burkina Faso 2015 presidential-election results',
+    url: 'https://ceni.bf/uploads/topics/17499966847572.pdf',
+    note: 'Official CENI results compendium consulted for an independent summary and link only. No table, result wording, scan or PDF page is republished; an election authority’s record is distinguished from independent observation, opposition claims, voter experience and a general finding of democratic legitimacy.',
+    accessDate: '2026-09-20', creators: ['Commission électorale nationale indépendante du Burkina Faso'], institution: 'CENI Burkina Faso',
+    publicationDate: '2015-11-29', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral results / official institutional record', identifiers: { electionDate: '2015-11-29' },
+    description: 'Institutional witness to the presidential election held after the 2014 transition, including the official results and candidate field. It bounds the electoral record without proving equal access, complete participation, absence of coercion or later democratic continuity.'
+  },
+  {
+    id: 'burkinaTransitionCharter2022Presidence',
+    label: 'Présidence du Faso — Charte de la Transition and transition record (2022)',
+    url: 'https://www.presidencedufaso.bf/la-transition/',
+    note: 'Official Presidency transition record consulted for an independent summary and link only. No charter wording, translation, scan or PDF page is republished; the record is dated to the post-coup transition and does not establish representation, civilian oversight, implementation or public consent.',
+    accessDate: '2026-09-20', creators: ['Presidency of Burkina Faso'], institution: 'Presidency of Burkina Faso',
+    publicationDate: '2022-10-14', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary transitional charter / official institutional record', identifiers: { transitionDate: '2022-10-14' },
+    description: 'Official record of the transition established after the 2022 changes of power, including the stated mission of restoring security, sovereignty and constitutional order. It documents formal transition claims, not their uniform execution or the views of all political and social actors.'
+  },
+  {
+    id: 'burkinaTransitionCharter2024Presidence',
+    label: 'Présidence du Faso — revised Transition Charter and national-assises record (25 May 2024)',
+    url: 'https://www.presidencedufaso.bf/assises-nationales-sur-la-suite-de-la-transition-les-forces-vives-consacrent-le-statut-de-president-du-faso/',
+    note: 'Official Presidency record consulted for an independent summary and link only. No charter wording, translation, scan or PDF page is republished; the revised transition horizon is not treated as evidence of a completed constitutional settlement or uniform consent.',
+    accessDate: '2026-09-20', creators: ['Presidency of Burkina Faso'], institution: 'Presidency of Burkina Faso',
+    publicationDate: '2024-05-25', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary transitional charter / official political record', identifiers: { adoptionDate: '2024-05-25' },
+    description: 'Official record of the 2024 extension and revision of the transition after national assises. It documents the executive and institutional framing of a longer refoundation horizon, while the representativeness, implementation and later trajectory remain research questions.'
+  },
+  {
+    id: 'burkinaConstitutionRevision2024Conseil',
+    label: 'Burkina Faso Constitutional Council — decision on Law No. 033-2024 revising the Constitution',
+    url: 'https://www.conseil-constitutionnel.gov.bf/fileadmin/user_upload/decision_n__2024-23_-cc_sur_la_conformite_a_la_constitution_de_la_loi_organique_n___033-2024_portant_revision_de_la_constitution.pdf',
+    note: 'Official Constitutional Council decision consulted for an independent summary and link only. No decision wording, translation, scan or PDF page is republished; constitutional conformity review is distinguished from implementation, legality debates, political consent and subsequent practice.',
+    accessDate: '2026-09-20', creators: ['Conseil constitutionnel du Burkina Faso'], institution: 'Constitutional Council of Burkina Faso',
+    publicationDate: '2024-10-29', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional review decision / official legal record', identifiers: { decisionNumber: '2024-23-CC', lawNumber: '033-2024' },
+    description: 'Primary legal record of constitutional review during the extended transition. It dates a formal revision process and its institutional treatment without being used to infer a settled constitutional order or general public agreement.'
+  },
+  {
+    id: 'harschBurkinaHistory2017',
+    label: 'Ernest Harsch — Burkina Faso: A History of Power, Protest, and Revolution (2017)',
+    url: 'https://www.bloomsbury.com/uk/burkina-faso-9781786991379/',
+    note: 'Bloomsbury/Zed Books bibliographic record consulted for the 2017 monograph (305 pages; ISBN 9781786991379). No book wording, quotation, table, map, image or scan is republished; Harsch’s account is attributed and paired with French-language and statehood-focused books.',
+    accessDate: '2026-09-20', creators: ['Ernest Harsch'], institution: 'Zed Books / Bloomsbury Publishing',
+    publicationDate: '2017-10-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national political history', identifiers: { isbn: '9781786991379', pages: '305', publisher: 'Zed Books' },
+    description: 'Book-length political history from colonial rule through independence, Sankara’s revolution, Compaoré’s regime and the 2014 uprising. Its emphasis on power, protest and state formation provides a broad English-language narrative but is not treated as the sole account of regional, gendered, religious or contemporary experience.'
+  },
+  {
+    id: 'englebertBurkinaStatehood1996',
+    label: 'Pierre Englebert — Burkina Faso: Unsteady Statehood in West Africa (1996)',
+    url: 'https://www.routledge.com/Burkina-Faso-Unsteady-Statehood-In-West-Africa/Englebert/p/book/9780813336800',
+    note: 'Routledge bibliographic record consulted for the 1996 monograph (224 pages; ISBN 9780813336800). No book wording, quotation, table or scan is republished; its statehood and political-economy interpretation is kept distinct from Harsch’s narrative and later transitions.',
+    accessDate: '2026-09-20', creators: ['Pierre Englebert'], institution: 'Westview Press / Routledge',
+    publicationDate: '1996', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of statehood and political economy', identifiers: { isbn: '9780813336800', pages: '224' },
+    description: 'Analytical study of Burkina Faso’s fragile statehood, political economy and institutional development in the postcolonial period. It supplies a distinct state-capacity and political-economy lens, not a complete history of the revolutionary period, local authorities or later democratic and military transitions.'
+  },
+  {
+    id: 'harschSankara2014',
+    label: 'Ernest Harsch — Thomas Sankara: An African Revolutionary (2014)',
+    url: 'https://www.bibliovault.org/BV.book.epl?ISBN=9780821421260',
+    note: 'Ohio University Press/BiblioVault record consulted for the 2014 monograph (ISBN 9780821421260). No book wording, quotation, table, image or scan is republished; the biographical and revolutionary focus is attributed and not generalized to all Burkinabè politics.',
+    accessDate: '2026-09-20', creators: ['Ernest Harsch'], institution: 'Ohio University Press / BiblioVault',
+    publicationDate: '2014', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political biography and revolutionary history', identifiers: { isbn: '9780821421260' },
+    description: 'Political biography of Sankara and the 1983–1987 revolutionary government, based on archival and reported research including interviews. It clarifies revolutionary aims, actors and policy claims while leaving open the limits, coercion, internal conflicts and uneven reception of the period.'
+  },
+  {
+    id: 'kaborePoliticalHistoryBurkina2002',
+    label: 'Roger Bila Kaboré — Histoire politique du Burkina Faso 1919–2000 (2002)',
+    url: 'https://www.thomassankara.net/histoire-politique-du-burkina-faso-1919-1920-un-livre-de-roger-bila-kabore/',
+    note: 'Bibliographic record and publisher information consulted for the French-language monograph (L’Harmattan, February 2002; 668 pages). No book wording, quotation, appendix or scan is republished; its national chronology and appended constitutional texts are attributed and paired with other perspectives.',
+    accessDate: '2026-09-20', creators: ['Roger Bila Kaboré'], institution: 'L’Harmattan / Thomas Sankara Website',
+    publicationDate: '2002-02', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language political history', identifiers: { pages: '668', publisher: 'L’Harmattan' },
+    description: 'Large French-language political history from the creation of Upper Volta through 2000, including colonial reconstruction, military regimes, the CNR, popular revolutionary institutions, the 1991 opening and Compaoré-era politics. It offers a national chronology and constitutional appendix but is not a neutral or exhaustive account of every locality or social group.'
+  },
+  {
+    id: 'englebertCotRevolutionBurkina1986',
+    label: 'Pierre Englebert and Jean-Pierre Cot — La Révolution Burkinabè (1986)',
+    url: 'https://mediatheques-ifbf.org/index.php?id=13670&lvl=notice_display',
+    note: 'Institut français du Burkina Faso library record consulted for the French-language edited volume (L’Harmattan, Paris, 1986; 271 pages; ISBN 9782858027569). No chapter wording, quotation, illustration or scan is republished; the early-revolution perspective is attributed and bounded to 1983–1987.',
+    accessDate: '2026-09-20', creators: ['Pierre Englebert', 'Jean-Pierre Cot'], institution: 'L’Harmattan / Médiathèque de l’Institut français du Burkina Faso',
+    publicationDate: '1986', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language edited study of the revolution', identifiers: { isbn: '9782858027569', pages: '271', publisher: 'L’Harmattan' },
+    description: 'Contemporary edited study of the Burkinabè Revolution and the 1983–1987 political order. It captures an early interpretive frame close to the revolutionary period, useful for internal debates and stated projects but not sufficient to establish later outcomes or a single consensus.'
+  },
+  {
+    id: 'sankaraSpeeches2007',
+    label: 'Thomas Sankara — Thomas Sankara parle: La révolution au Burkina Faso, 1983–1987 (2007)',
+    url: 'https://www.thomassankara.net/thomas-sankara-parle-recueil-de-discours/',
+    note: 'Publisher and archive record consulted for the book-length primary collection (Pathfinder, 2007; 480 pages; ISBN 9780873489874). No speech wording, translation, audio, table or scan is republished; the collection is treated as primary self-description and not as independent evidence of implementation or consent.',
+    accessDate: '2026-09-20', creators: ['Thomas Sankara'], institution: 'Pathfinder / Thomas Sankara Website',
+    publicationDate: '2007', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length primary collection of speeches and interviews', identifiers: { isbn: '9780873489874', pages: '480', publisher: 'Pathfinder' },
+    description: 'Book-length collection of speeches and interviews from the 1983–1987 revolution. It is used for the regime’s own claims about popular mobilization, anti-imperialism, social transformation, women’s emancipation and African solidarity, with those claims kept distinct from scholarly assessment and evidence of practice.'
+  },
+  {
     id: 'cameroonConstitution1996Presidence',
     label: 'Republic of Cameroon — Law No. 96/06 of 18 January 1996 amending the Constitution of 2 June 1972, Presidency legal record',
     url: 'https://www.prc.cm/en/cameroon/constitution',
@@ -2835,6 +2965,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('chad') || source.id.startsWith('azevedoNationFutureChad') || source.id.startsWith('nolutshunguLimitsAnarchyChad') || source.id.startsWith('azevedoRootsViolenceChad') || source.id.startsWith('powellFrancesWarsChad') || source.id.startsWith('dingammadjiGovernmentsChad') || source.id.startsWith('buijtenhuijsTransitionChad') || source.id.startsWith('haggarTombalbayeChad') || source.id.startsWith('brodyCatchDictatorChad') ? 'Chadian constitutional, civil-war, intervention and transition history'
       : source.id.startsWith('cameroon') || source.id.startsWith('ngohHistoryCameroon') || source.id.startsWith('josephRadicalNationalismCameroon') || source.id.startsWith('ngohSouthernCameroons') || source.id.startsWith('terrettaNationOutlawsCameroon') || source.id.startsWith('takougangKriegerPoliticalCrossroadsCameroon') || source.id.startsWith('bouopdaPoliticalHistoryCameroon') || source.id.startsWith('bouopdaAnglophoneCrisisCameroon') ? 'Cameroonian constitutional, decolonization, bilingual and Anglophone-crisis history'
+      : source.id.startsWith('burkina') || source.id.startsWith('harschBurkina') || source.id.startsWith('englebertBurkina') || source.id.startsWith('kaborePoliticalHistoryBurkina') || source.id.startsWith('englebertCotRevolutionBurkina') || source.id.startsWith('sankaraSpeeches') ? 'Burkinabè constitutional, revolutionary and political-transition history'
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
       : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
