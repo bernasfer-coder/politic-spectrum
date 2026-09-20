@@ -4591,6 +4591,76 @@ const sources = [
     sourceType: 'institutional archive of official Iranian presidential-election results', identifiers: { election: '14th Presidential Elections', year: '2024' },
     description: 'An institutional archive of Iran’s 2024 presidential election, including first- and second-round records and provincial breakdowns attributed to the Interior Ministry. It is used as a dated electoral witness, not as an independent judgment of competition, participation or legitimacy.',
   },
+  {
+    id: 'gellarDemocracySenegal2005',
+    label: 'Sheldon Gellar — Democracy in Senegal: Tocquevillian Analytics in Africa (2005)',
+    url: 'https://books.google.com/books/about/Democracy_in_Senegal.html?id=wWPHAAAAQBAJ',
+    note: 'Palgrave Macmillan bibliographic record consulted through the publisher’s Google Books record for the 2005 monograph (222 pages; ISBN 9781403982162). No book wording, quotation, table, map or scan is republished; Gellar’s comparative interpretation is attributed and its pre-2012 horizon is not silently extended.',
+    accessDate: '2026-09-20',
+    creators: ['Sheldon Gellar'], institution: 'Palgrave Macmillan', publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Senegalese democracy, local liberties and political association', identifiers: { isbn: '9781403982162', pages: '222' },
+    description: 'A book-length comparative study tracing Senegalese political development from precolonial and colonial orders through modern democratic institutions. Gellar foregrounds local liberties, associations, religion, language, equality and the tension between centralized state power and popular participation; it is used as historical and analytical context, not as a current democracy rating.',
+  },
+  {
+    id: 'galvanStateMasterFireSenegal2004',
+    label: 'Dennis C. Galvan — The State Must Be Our Master of Fire: How Peasants Craft Culturally Sustainable Development in Senegal (2004)',
+    url: 'https://www.ucpress.edu/books/the-state-must-be-our-master-of-fire',
+    note: 'University of California Press record consulted for the 2004 monograph (331 pages; ISBN 9780520235915). No book wording, quotation, table, map or scan is republished; Galvan’s Serer Siin case study is attributed and is not generalized to every rural or urban Senegalese community.',
+    accessDate: '2026-09-20',
+    creators: ['Dennis C. Galvan'], institution: 'University of California Press', publicationDate: '2004', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy and rural state–society study in Senegal', identifiers: { isbn: '9780520235915', pages: '331' },
+    description: 'A book-length study of Serer land tenure, rural institutions and the interaction of colonial and postcolonial development policies in the Siin region. It adds social and economic evidence to the political case while remaining a bounded regional study rather than a country-wide verdict.',
+  },
+  {
+    id: 'cisseMaturationDemocratiqueSenegal2023',
+    label: 'Issa Cissé — Sénégal : la lente maturation démocratique (2023)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/senegal-la-lente-maturation-democratique/267',
+    note: 'Éditions L’Harmattan publisher record consulted for the 2023 French-language book (132 pages; ISBN 9782336409542). No book wording, quotation, excerpt or scan is republished; Cissé’s critical argument about democratic maturation and opposition is attributed and treated as one perspective among others.',
+    accessDate: '2026-09-20',
+    creators: ['Issa Cissé'], institution: 'Éditions L’Harmattan', publicationDate: '2023-11-02', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language book-length political interpretation of Senegalese democratic development', identifiers: { isbn: '9782336409542', pages: '132' },
+    description: 'A recent French-language political interpretation that questions celebratory accounts of Senegalese democratic stability and follows struggles from the independence period through the Macky Sall and Ousmane Sonko horizon. Its critical framing is useful for internal debate but is not treated as neutral consensus or as a complete social history.',
+  },
+  {
+    id: 'kanteFayeGeopolitiqueSenegal2024',
+    label: 'Seydou Kanté and El Hadji Ibrahima Faye — Géopolitique du Sénégal sous Macky Sall (2024)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/geopolitique-du-senegal-sous-macky-sall/16454',
+    note: 'Éditions L’Harmattan publisher record consulted for the 2024 French-language monograph (182 pages; ISBN 9782336426518). No book wording, quotation, chronology, table or scan is republished; the authors’ periodization of the 2012–2024 presidency is attributed and does not establish current policy or public agreement.',
+    accessDate: '2026-09-20',
+    creators: ['Seydou Kanté', 'El Hadji Ibrahima Faye'], institution: 'Éditions L’Harmattan', publicationDate: '2024-01-25', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language book-length geopolitical study of Senegal under Macky Sall', identifiers: { isbn: '9782336426518', pages: '182' },
+    description: 'A French-language book-length study of the Macky Sall presidency from 2012 to 2024, covering diplomacy, security, territorial planning, infrastructure, economic policy and emerging energy resources. It supplies a period-specific Senegalese-authored perspective rather than a complete account of political opposition, local society or institutional implementation.',
+  },
+  {
+    id: 'pigeaudSyllaDemocratieFrancafrique2024',
+    label: 'Fanny Pigeaud and Ndongo Samba Sylla — De la démocratie en Françafrique: Une histoire de l’impérialisme électoral (2024)',
+    url: 'https://www.editionsladecouverte.fr/de_la_democratie_en_francafrique-9782348077258',
+    note: 'Éditions La Découverte publisher record consulted for the 2024 French-language book (384 pages; ISBN 9782348077258). No book wording, quotation, chapter, table or scan is republished; the authors’ explicitly critical, pan-Francophone argument is attributed and is not treated as a Senegal-specific consensus.',
+    accessDate: '2026-09-20',
+    creators: ['Fanny Pigeaud', 'Ndongo Samba Sylla'], institution: 'Éditions La Découverte', publicationDate: '2024-01-18', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language book-length critical study of elections, postcolonial influence and democracy in Francophone Africa', identifiers: { isbn: '9782348077258', ebookIsbn: '9782348077265', pages: '384' },
+    description: 'A book-length critical history of elections, postcolonial influence and representative democracy across Francophone Africa, with a dedicated discussion of Senegal’s 2019–2023 electoral context. It is used to represent a clearly situated anti-imperial and political-economy critique, not to replace country-specific scholarship or official records.',
+  },
+  {
+    id: 'senegalConstitutionalCouncilPresidential2024',
+    label: 'Conseil constitutionnel du Sénégal — Decision 7/E/2024 proclaiming the final presidential-election results',
+    url: 'https://www.archives.sn/docs/elections/decision-7e2024-resultats-definitifs-election-presidentielle-senegal-2024-conseil-constitutionnel',
+    note: 'Public official archive consulted for Decision 7/E/2024 dated 29 March 2024, which records the Constitutional Council’s final proclamation for the 24 March presidential election. No decision wording, result table or PDF is republished; the legal proclamation is distinguished from independent observation, voter motives, social meaning and later government performance.',
+    accessDate: '2026-09-20',
+    creators: ['Conseil constitutionnel du Sénégal'], institution: 'Archives publiques de la République du Sénégal', publicationDate: '2024-03-29', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official constitutional and presidential-election proclamation', identifiers: { decision: '7/E/2024', electionDate: '2024-03-24' },
+    description: 'Primary legal record of the Constitutional Council’s final proclamation of the 24 March 2024 presidential election. It anchors the formal electoral endpoint for this bounded case without independently proving competitiveness, equal participation, public consent or subsequent policy implementation.',
+  },
+  {
+    id: 'senegalCENAReportPresidential2024',
+    label: 'Commission électorale nationale autonome du Sénégal — Final report on the 24 March 2024 presidential election',
+    url: 'https://www.archives.sn/docs/elections/rapport-election-presidentielle-senegal-24-mars-2024-cena',
+    note: 'Public official archive consulted for the CENA final report on the 24 March 2024 presidential election. No report wording, table, scan or 190 MB PDF is republished; the institutional report records preparation, voting and counting oversight and recommendations but is not treated as independent external observation or as proof that every political claim was resolved.',
+    accessDate: '2026-09-20',
+    creators: ['Commission électorale nationale autonome du Sénégal'], institution: 'Archives publiques de la République du Sénégal', publicationDate: '2024-03-24', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official election-administration and oversight report', identifiers: { electionDate: '2024-03-24' },
+    description: 'Primary institutional report on the preparation, administration and counting oversight of Senegal’s 24 March 2024 presidential election. It is used alongside the Constitutional Council proclamation as a dated procedural witness, not as an independent quality assessment.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -4619,7 +4689,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
       : source.id.startsWith('uganda') || source.id.startsWith('kanyeihambaConstitutionalPoliticalHistoryUganda') || source.id.startsWith('mutibwaUganda') || source.id.startsWith('reidHistoryModernUganda') || source.id.startsWith('mamdaniPoliticsClassUganda') || source.id.startsWith('mamdaniSlowPoisonUganda') ? 'Ugandan decolonization, constitutional, military and movement-state history'
       : source.id.startsWith('rwanda') || source.id.startsWith('reyntjensPoliticalGovernanceRwanda') || source.id.startsWith('thomsonRwandaPrecariousPeace') || source.id.startsWith('strausWaldorfRemakingRwanda') || source.id.startsWith('guichaouaFromWarToGenocide') || source.id.startsWith('prunierRwandaCrisis') ? 'Rwandan post-conflict, constitutional, developmental and political history'
-      : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') ? 'Senegalese constitutional, democratic and political history'
+      : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') || source.id.startsWith('gellarDemocracySenegal') || source.id.startsWith('galvanStateMasterFireSenegal') || source.id.startsWith('cisseMaturationDemocratiqueSenegal') || source.id.startsWith('kanteFayeGeopolitiqueSenegal') || source.id.startsWith('pigeaudSyllaDemocratieFrancafrique') ? 'Senegalese constitutional, democratic and political history'
       : source.id.startsWith('liberia') || source.id.startsWith('liebenow') || source.id.startsWith('sawyer') || source.id.startsWith('ellisMaskAnarchyLiberia') || source.id.startsWith('adebajoLiberia') ? 'Liberian constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('chad') || source.id.startsWith('azevedoNationFutureChad') || source.id.startsWith('nolutshunguLimitsAnarchyChad') || source.id.startsWith('azevedoRootsViolenceChad') || source.id.startsWith('powellFrancesWarsChad') || source.id.startsWith('dingammadjiGovernmentsChad') || source.id.startsWith('buijtenhuijsTransitionChad') || source.id.startsWith('haggarTombalbayeChad') || source.id.startsWith('brodyCatchDictatorChad') ? 'Chadian constitutional, civil-war, intervention and transition history'
