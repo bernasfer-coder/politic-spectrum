@@ -1,6 +1,96 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'nigerConstitution2010Justice',
+    label: 'Ministère de la Justice du Niger — Constitution de la VIIe République (2010), official legal collection',
+    url: 'https://justice.gouv.ne/images/lois/pdfs/Recueil_thematique_des_lois_et_reglements_Edition%202020.pdf',
+    note: 'Official Nigerien Justice Ministry legal collection consulted for the French 2010 Constitution. No constitutional wording, translation, scan or page asset is republished; formal design, referendum politics, suspension, implementation and lived experience remain distinct questions.',
+    accessDate: '2026-09-20', creators: ['Ministère de la Justice du Niger'], institution: 'Ministère de la Justice du Niger',
+    publicationDate: '2010-11-25', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional text / official justice-ministry legal collection', identifiers: { constitutionYear: '2010', referendumDate: '2010-10-31', promulgationDate: '2010-11-25' },
+    description: 'Primary legal witness to the VIIe République’s formal order: a unitary, democratic and social republic, popular sovereignty, separation of religion and state, rights, elected institutions, territorial collectivities, natural-resource sovereignty and constitutional review. It records constitutional design, not uniform implementation or democratic consent.'
+  },
+  {
+    id: 'nigerRefoundationCharter2025Presidence',
+    label: 'Présidence de la République du Niger — Charte de la Refondation nationale (2025)',
+    url: 'https://presidence.ne/pages/refondation',
+    note: 'Official Nigerien presidency page and linked document consulted for the Charte de la Refondation adopted on 26 March 2025 after the February national assises. No charter wording, translation, scan or PDF page is republished; the legal design is distinguished from implementation, public consent and post-2025 developments.',
+    accessDate: '2026-09-20', creators: ['Présidence de la République du Niger'], institution: 'Présidence de la République du Niger',
+    publicationDate: '2025-03-26', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary refoundation charter / official presidency archive', identifiers: { adoptionDate: '2025-03-26', nationalAssises: '2025-02-15–2025-02-18', transitionDuration: '60 months, modulable' },
+    description: 'Primary institutional witness to the post-coup refoundation framework: national assises, a new charter, transitional/refoundation organs and stated values and priorities. It establishes a formal transition design rather than proving its representativeness, rights practice or future endpoint.'
+  },
+  {
+    id: 'nigerStateDemocracyKimba2001',
+    label: 'Kimba Idrissa (ed.) — Le Niger: État et démocratie (2001)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/le-niger-etat-et-democratie/63713',
+    note: 'L’Harmattan and AfricaBib records consulted for the French-language 2001 edited volume (ISBN 9782747503037; 391 pages). No chapter wording, quotation, table or scan is republished; the contributors’ distinct analyses and the pre-2023 endpoint remain bounded.',
+    accessDate: '2026-09-20', creators: ['Kimba Idrissa'], institution: 'L’Harmattan',
+    publicationDate: '2001', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language edited studies of state formation and democracy', identifiers: { isbn: '9782747503037', pages: '391' },
+    description: 'French-language multidisciplinary volume on post-independence state formation, administration, political and ethnic dynamics, international cooperation, social institutions, women and the democratic transition. It preserves disagreement among contributors rather than supplying a single national political essence.'
+  },
+  {
+    id: 'milesHausalandDividedNiger1994',
+    label: 'William F. S. Miles — Hausaland Divided: Colonialism and Independence in Nigeria and Niger (1994)',
+    url: 'https://utpdistribution.com/9780801428555/hausaland-divided/',
+    note: 'Cornell University Press and library records consulted for the 1994 comparative monograph (ISBN 9780801428555; xvii + 368 pages). No book wording, quotation, table, chapter or scan is republished; the Hausa-speaking borderland perspective is not generalized to all Nigerien regions or communities.',
+    accessDate: '2026-09-20', creators: ['William F. S. Miles'], institution: 'Cornell University Press',
+    publicationDate: '1994', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative history of colonialism, identity and independence', identifiers: { isbn: '9780801428555', pages: '368' },
+    description: 'Comparative history of Hausa-speaking societies divided by the British–French colonial boundary, examining colonial institutions, identity, religion, chiefs, assimilation and postcolonial national politics in Niger and Nigeria. It supplies a transborder perspective that resists treating the colonial state as a natural social boundary.'
+  },
+  {
+    id: 'idrissaDecaloHistoricalDictionaryNiger2012',
+    label: 'Abdourahmane Idrissa and Samuel Decalo — Historical Dictionary of Niger, 4th ed. (2012)',
+    url: 'https://campusstore.miamioh.edu/historical-dictionary-niger-4th-idrissa/bk/9780810860940',
+    note: 'Scarecrow Press bibliographic record and African Studies Quarterly review consulted for the fourth edition (ISBN 9780810860940; 541 pages). No dictionary entry, chronology, quotation or scan is republished; the reference volume is used for attributed orientation and cross-checking, not as proof of uniform experience or current status.',
+    accessDate: '2026-09-20', creators: ['Abdourahmane Idrissa', 'Samuel Decalo'], institution: 'Scarecrow Press',
+    publicationDate: '2012', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length historical dictionary and political reference work', identifiers: { isbn: '9780810860940', pages: '541', edition: '4th' },
+    description: 'Reference history combining chronology, country overview, political entries, social and religious history, economics and bibliography from precolonial contexts through the early twenty-first century. It is a cross-check and map of debates, not a substitute for local archives or specialized studies.'
+  },
+  {
+    id: 'charlickPersonalRuleNiger1991',
+    label: 'Robert B. Charlick — Niger: Personal Rule and Survival in the Sahel (1991)',
+    url: 'https://www.routledge.com/Niger-Personal-Rule-And-Survival-In-The-Sahel/Charlick/p/book/9780367172312',
+    note: 'Westview/Routledge and library records consulted for the 1991 monograph (ISBN 9780891589686 / 9781855212226; xv + 189 pages). No book wording, quotation, table, chapter or scan is republished; its early post-independence and personal-rule interpretation is kept distinct from later constitutional and transition evidence.',
+    accessDate: '2026-09-20', creators: ['Robert B. Charlick'], institution: 'Westview Press / Routledge',
+    publicationDate: '1991', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political and political-economy history', identifiers: { isbn: '9780891589686', ukIsbn: '9781855212226', pages: '189' },
+    description: 'Political history of Niger’s post-independence government, personal rule, political elites, environmental and economic pressures, agricultural exports, uranium and external relations. It offers an early institutional and political-economy perspective, not a complete account of the later democratic and military transitions.'
+  },
+  {
+    id: 'salifouQuestionTouaregNiger1993',
+    label: 'André Salifou — La question touarègue au Niger (1993)',
+    url: 'https://books.google.com/books/about/La_question_touar%C3%A8gue_au_Niger.html?hl=fr&id=ZOOxfW21jR8C&output=html_text',
+    note: 'Karthala and library records consulted for the French-language 1993 monograph (ISBN 9782865374342; 207 pages). No book wording, quotation, table, chapter or scan is republished; the author’s state-centered and political perspective is attributed and kept distinct from Tuareg-centered and other regional accounts.',
+    accessDate: '2026-09-20', creators: ['André Salifou'], institution: 'Karthala',
+    publicationDate: '1993', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language history of Tuareg politics and negotiations', identifiers: { isbn: '9782865374342', pages: '207' },
+    description: 'Detailed account of the Tuareg question in Niger, including the Aïr and Agadez region, state policy, rebellion, negotiations, neighboring states and France. It is one situated political history and is not treated as a complete account of every Tuareg, nomadic, sedentary or Nigerien experience.'
+  },
+  {
+    id: 'koreTouaregRebellionNiger2010',
+    label: 'Lawel Chekou Koré — La rébellion touareg au Niger (2010)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/la-rebellion-touareg-au-niger/42122',
+    note: 'L’Harmattan record consulted for the French-language 2010 monograph (ISBN 9782296138339; 154 pages). No book wording, quotation, table, chapter or scan is republished; its rebellion-centered analysis is not generalized to all northern communities or the whole country.',
+    accessDate: '2026-09-20', creators: ['Lawel Chekou Koré'], institution: 'L’Harmattan',
+    publicationDate: '2010-12-01', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language study of Tuareg rebellion and peace negotiations', identifiers: { isbn: '9782296138339', pages: '154' },
+    description: 'Study of internal and external causes of Tuareg rebellion in Niger and attempts at resolution by Nigerien actors, neighboring countries and international institutions. It adds a conflict-specific perspective to the national state and democracy histories.'
+  },
+  {
+    id: 'gregoireTouaregsNiger1999',
+    label: 'Emmanuel Grégoire — Touaregs du Niger: le destin d’un mythe (1999)',
+    url: 'https://www.karthala.com/accueil/2205-4007-touaregs-du-niger-le-destin-dun-mythe-nouvelle-edition-9782811103521.html',
+    note: 'Karthala and library records consulted for the French-language monograph (original ISBN 9782865379668; 339 pages). No book wording, quotation, table, chapter or scan is republished; its Agadez-centered political-economic history is not projected onto all Nigerien regions, ethnicities or political actors.',
+    accessDate: '2026-09-20', creators: ['Emmanuel Grégoire'], institution: 'Karthala',
+    publicationDate: '1999', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language political-economic history of Tuareg Niger', identifiers: { isbn: '9782865379668', pages: '339' },
+    description: 'Political-economic history centered on Agadez and Tuareg societies, caravan trade, pastoralism, colonial and postcolonial economic structures, marginalization and the insertion of the region into the modern Nigerien state and economy. Its regional focus is a necessary limit as well as an evidentiary contribution.'
+  },
+  {
     id: 'maliConstitution1992Assemblee',
     label: 'Assemblée nationale du Mali — Constitution du Mali (1992)',
     url: 'https://assemblee-nationale.ml/constitution-du-mali',
@@ -2493,6 +2583,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') ? 'Senegalese constitutional, democratic and political history'
       : source.id.startsWith('liberia') || source.id.startsWith('liebenow') || source.id.startsWith('sawyer') || source.id.startsWith('ellisMaskAnarchyLiberia') || source.id.startsWith('adebajoLiberia') ? 'Liberian constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
+      : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
       : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
