@@ -1617,6 +1617,66 @@ const sources = [
     description: 'A focused book-length study of the monarchy-led transformation to parliamentary democracy, with attention to the 2007–2008 elections, institutions, moral language and local political experience. It supplies a distinct political-ethnographic perspective alongside Phuntsho’s broader history and does not by itself establish nationwide consensus or implementation.',
   },
   {
+    id: 'longTantricStateBhutan2019',
+    label: 'William J. Long — Tantric State: A Buddhist Approach to Democracy and Development in Bhutan (2019)',
+    url: 'https://academic.oup.com/book/11155',
+    note: 'Oxford University Press book record consulted for Long’s book-length interpretation of Bhutanese democracy, markets, development and Gross National Happiness through Buddhist political theory. The complete monograph and its empirical materials were not independently collated; no book text is reproduced and its model-building argument is kept distinct from official constitutional or electoral evidence.',
+    accessDate: '2026-09-20',
+    creators: ['William J. Long'], institution: 'Oxford University Press',
+    publicationDate: '2019-01-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative political theory and Bhutanese democracy study',
+    identifiers: { isbn: '9780190843397', ebookIsbn: '9780190843427', doi: '10.1093/oso/9780190843397.001.0001' },
+    description: 'A book-length study of Bhutan’s democratic institutions, market economy and Gross National Happiness as an ordering principle, contrasting Buddhist and liberal conceptualizations of democracy and development. It provides a distinct normative and comparative perspective rather than proof of uniform implementation or national consensus.',
+  },
+  {
+    id: 'rizalRoyalSemiauthoritarianBhutan2015',
+    label: 'Dhurba Rizal — The Royal Semi-Authoritarian Democracy of Bhutan (2015)',
+    url: 'https://www.bloomsbury.com/us/royal-semiauthoritarian-democracy-of-bhutan-9781498507479/',
+    note: 'Lexington Books/Bloomsbury record consulted for Rizal’s book-length critical account of Bhutan’s transition and the tension between democratic institutions and royal or elite control. The publisher’s strongly critical interpretation is attributed rather than treated as consensus; the complete monograph, field materials and Bhutanese-language sources were not independently collated and no book text is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['Dhurba Rizal'], institution: 'Lexington Books / Bloomsbury Publishing',
+    publicationDate: '2015-07-22', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length critical study of Bhutanese democratization and royal authority',
+    identifiers: { isbn: '9781498507479', pages: '436' },
+    description: 'A critical book-length study that characterizes Bhutan’s transition as a tightly managed royal and elite project and questions whether elections alone established representative democracy. It is a counterweight to celebratory or purely institutional accounts, not a complete social history or settled classification of Bhutan.',
+  },
+  {
+    id: 'bhutanElectionCommissionNationalAssembly2024',
+    label: 'Election Commission of Bhutan — National Assembly election portal and 2023–2024 declaration of results',
+    url: 'https://www.ecb.bt/declaration-of-results-of-the-4th-national-assembly-elections-2023-2024-general-election/',
+    note: 'Official Election Commission portal and results declaration consulted for the National Assembly election sequence and the 9 January 2024 poll. The Commission records the 2023–2024 result, 30 seats for the People’s Democratic Party, 17 for Bhutan Tendrel Party and 65.6% turnout; no result table, translation, scan or page is republished, and the record does not establish fairness, equal access, public consent or later implementation.',
+    accessDate: '2026-09-20',
+    creators: ['Election Commission of Bhutan'], institution: 'Election Commission of Bhutan',
+    publicationDate: '2024-01-10', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Dzongkha'],
+    sourceType: 'official parliamentary election results and electoral-history record',
+    identifiers: { electionDate: '2024-01-09' },
+    description: 'Primary institutional evidence for Bhutan’s fourth National Assembly election, with the Commission’s election portal preserving links for the 2013, 2018 and 2023–2024 National Assembly cycles. The 10 January 2024 declaration records the completed result and turnout as an endpoint for this bounded case, not a complete assessment of competition or democratic quality.',
+  },
+  {
+    id: 'bhutanElectionCommissionNationalAssembly2013',
+    label: 'Election Commission of Bhutan — Second National Assembly election declaration (2013)',
+    url: 'https://www.ecb.bt/declaration-of-the-results-of-the-second-parliamentary-elections-2013-national-assembly-general-elections/',
+    note: 'Official Election Commission declaration consulted for the 13 July 2013 National Assembly poll. It records the People’s Democratic Party with 32 seats, Druk Phuensum Tshogpa with 15 and 66.1% turnout; no declaration wording, table, translation, scan or PDF is republished, and the Commission’s account is not treated as independent proof of fairness, equal access or public consent.',
+    accessDate: '2026-09-20',
+    creators: ['Election Commission of Bhutan'], institution: 'Election Commission of Bhutan',
+    publicationDate: '2013-07-14', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Dzongkha'],
+    sourceType: 'official parliamentary election results / primary institutional record',
+    identifiers: { electionDate: '2013-07-13' },
+    description: 'Primary institutional record of the second National Assembly election under the 2008 constitutional order. It anchors the 2013 ruling-party and opposition result and official turnout while leaving campaign experience, local variation, participation barriers and implementation open to independent research.',
+  },
+  {
+    id: 'bhutanElectionCommissionNationalAssembly2018',
+    label: 'Election Commission of Bhutan — Third National Assembly election declaration (2018)',
+    url: 'https://www.ecb.bt/declaration-of-the-results-of-the-general-elections-to-the-third-national-assembly-2018/',
+    note: 'Official Election Commission declaration consulted for the 18 October 2018 National Assembly poll. It records Druk Nyamrup Tshogpa with 30 seats and Druk Phuensum Tshogpa with 17; no declaration wording, table, translation, scan or PDF is republished, and the result does not by itself establish electoral fairness, equal access, public consent or the meaning of the party turnover.',
+    accessDate: '2026-09-20',
+    creators: ['Election Commission of Bhutan'], institution: 'Election Commission of Bhutan',
+    publicationDate: '2018-10-19', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Dzongkha'],
+    sourceType: 'official parliamentary election results / primary institutional record',
+    identifiers: { electionDate: '2018-10-18' },
+    description: 'Primary institutional record of the third National Assembly election under the 2008 constitutional order. It anchors the 2018 ruling-party and opposition result, showing a change from the 2013 result, while leaving campaign conditions, local variation, participation barriers and post-election implementation open.',
+  },
+  {
     id: 'ninsinDrahGhanaTransition1991',
     label: 'Kwame A. Ninsin and Francis K. Drah (eds.) — Ghana’s Transition to Constitutional Rule',
     url: 'https://opendocs.ids.ac.uk/articles/monograph/Ghana_s_transition_to_constitutional_rule/26466613',
@@ -4254,7 +4314,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
          : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('weissProtest') || source.id.startsWith('weissHazis') || source.id.startsWith('gomezOsman') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
-        : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
+         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('longTantricStateBhutan') || source.id.startsWith('rizalRoyalSemiauthoritarianBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
       : source.id.startsWith('afghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') ? 'Afghan constitutional, conflict and political history'
       : source.id.startsWith('nepal') || source.id.startsWith('whelptonHistoryNepal') || source.id.startsWith('huttHimalayanPeoplesWar') || source.id.startsWith('malagodiConstitutionalNationalismNepal') || source.id.startsWith('huttOntaPublicCultureNepal') || source.id.startsWith('ghaiCottrellNepal') ? 'Nepalese constitutional, conflict and political history'
       : source.id.startsWith('sudan') || source.id.startsWith('woodwardSudan') || source.id.startsWith('berridgeCivilUprisingsSudan') || source.id.startsWith('berridgeUnfinishedDemocracy') || source.id.startsWith('deWaalRealPoliticsHorn') || source.id.startsWith('oetteBabikerConstitutionMaking') ? 'Sudanese constitutional, conflict and political history'
