@@ -10281,6 +10281,18 @@ export const BIBLIOGRAPHY_METADATA = {
     publicationDate: '2020-12-30', publisher: 'WIPO Lex / Journal officiel de la République algérienne démocratique et populaire', identifiers: {}, confidence: 'high', languages: ['Arabic', 'French'],
     description: 'Primary legal witness for the 2020 constitutional revision, including formal references to Islam, Arabity, Amazighity, rights and democratic institutions alongside presidential powers. It establishes formal design, not implementation or current political conditions.',
   },
+  algeriaParliamentaryElection2021: {
+    accessDate: '2026-09-20', creators: ['Constitutional Council of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire',
+    sourceType: 'primary electoral proclamation / official journal record', evidenceRole: 'primary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: '2021-06-29', publisher: 'Journal officiel de la République algérienne démocratique et populaire', identifiers: { proclamation: '01/P.C.C/21', officialJournal: '51' }, confidence: 'high', languages: ['French'],
+    description: 'Primary legal record for the definitive proclamation of the 12 June 2021 legislative election. It documents formal electoral continuity after the 2019–2020 transition, not representative consent, fair competition or a current country classification.',
+  },
+  algeriaPresidentialElection2024: {
+    accessDate: '2026-09-20', creators: ['Constitutional Court of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire',
+    sourceType: 'primary presidential-election proclamation / official journal record', evidenceRole: 'primary', discipline: 'Algerian constitutional, conflict and political history',
+    publicationDate: '2024-09-15', publisher: 'Journal officiel de la République algérienne démocratique et populaire', identifiers: { proclamation: '09/P.C.C/24', officialJournal: '63' }, confidence: 'high', languages: ['French'],
+    description: 'Primary legal record for the definitive proclamation of the 7 September 2024 presidential election. It documents the official result and formal succession, not the representativeness of all Algerians, campaign conditions or a current political assessment.',
+  },
   ruedyModernAlgeria2005: {
     accessDate: '2026-09-20', creators: ['John Ruedy'], institution: 'Indiana University Press',
     sourceType: 'book-length Algerian national and political history', evidenceRole: 'secondary', discipline: 'Algerian constitutional, conflict and political history',
