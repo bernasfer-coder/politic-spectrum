@@ -1285,6 +1285,66 @@ const sources = [
     description: 'A broad history of Italy since 1796 that supplies a second national perspective on the political development surrounding the post-fascist transition. Its scope is wider than the atlas window and is not used to flatten regional, partisan or institutional differences.',
   },
   {
+    id: 'ginsborgItalyDiscontents2003',
+    label: 'Paul Ginsborg — Italy and Its Discontents: Family, Civil Society, State 1980–2001',
+    url: 'https://books.google.com/books/about/Italy_and_Its_Discontents.html?id=yFeFBGS2kygC',
+    note: 'Palgrave Macmillan book record and bibliographic metadata consulted for Ginsborg’s 2003 monograph (520 pages; ISBN 9781403961525). No book wording, quotation, table or scan is republished; its social and political interpretation is attributed and bounded to 1980–2001.',
+    accessDate: '2026-09-20', creators: ['Paul Ginsborg'], institution: 'Palgrave Macmillan',
+    publicationDate: '2003', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Italian contemporary social and political history', identifiers: { isbn: '9781403961525', pages: '520' },
+    description: 'Book-length history of Italy’s social, civic and political transformation from 1980 through 2001, including the collapse of established party alignments, civil society, family and social change, corruption, the Mafia, Catholicism and national identity. It complements institutional party-system studies without standing for every regional or social experience.',
+  },
+  {
+    id: 'gundleParkerNewItalianRepublic1996',
+    label: 'Stephen Gundle and Simon Parker (eds.) — The New Italian Republic: From the Fall of the Berlin Wall to Berlusconi',
+    url: 'https://www.routledge.com/The-New-Italian-Republic-From-the-Fall-of-the-Berlin-Wall-to-Berlusconi/Gundle-Parker/p/book/9780415121620',
+    note: 'Routledge book record consulted for the 1996 edited volume (352 pages; paperback ISBN 9780415121620). No chapter wording, quotation, table or scan is republished; the contributors’ differing accounts of party collapse, electoral reform, Berlusconi, media, corruption, local government and the Mezzogiorno remain distinct.',
+    accessDate: '2026-09-20', creators: ['Stephen Gundle', 'Simon Parker'], institution: 'Routledge',
+    publicationDate: '1996', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Italy’s 1990s party-system transformation', identifiers: { isbn: '9780415121620', hardbackIsbn: '9780415121613', pages: '352' },
+    description: 'Edited book-length study of the breakdown of the old party system and the political climate surrounding electoral reform, Tangentopoli, new parties and Berlusconi. Its specialist chapters show why the 1990s transition cannot be reduced to one party or a clean constitutional rupture.',
+  },
+  {
+    id: 'newellPoliticsItaly2010',
+    label: 'James L. Newell — The Politics of Italy: Governance in a Normal Country',
+    url: 'https://www.cambridge.org/core/books/abs/politics-of-italy/introduction/38A0ECC286E89D8225B3604D3842E4B1',
+    note: 'Cambridge University Press book record and front matter consulted for Newell’s 2010 study (ISBN 9780521840705; eBook ISBN 9781139785891). No book wording, quotation, table or scan is republished; Newell’s argument about governance, institutions, parties, pressure groups and international context is attributed rather than treated as a settled verdict.',
+    accessDate: '2026-09-20', creators: ['James L. Newell'], institution: 'Cambridge University Press',
+    publicationDate: '2010', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length institutional and comparative study of Italian politics', identifiers: { isbn: '9780521840705', ebookIsbn: '9781139785891' },
+    description: 'Institutional and comparative book-length analysis of Italy’s constitutional framework, government, parties, interest mediation, public policy, Mafia and international position, with a chronology centered on the post-1994 system. It usefully challenges crisis-only accounts while leaving later developments and local variation open.',
+  },
+  {
+    id: 'cottaVerzichelliPoliticalInstitutionsItaly2007',
+    label: 'Maurizio Cotta and Luca Verzichelli — Political Institutions in Italy',
+    url: 'https://hdl.handle.net/11365/15986',
+    note: 'Oxford University Press metadata and the University of Siena institutional record consulted for the 2007 book (277 pages; ISBN 9780199284702). No book wording, quotation, table or scan is republished; the institutionalist account is kept distinct from social histories and election returns.',
+    accessDate: '2026-09-20', creators: ['Maurizio Cotta', 'Luca Verzichelli'], institution: 'Oxford University Press / University of Siena institutional repository',
+    publicationDate: '2007', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length institutional study of post-1990 Italian politics', identifiers: { isbn: '9780199284702', pages: '277' },
+    description: 'Systematic book-length study of Italy’s political institutions as they developed through the 1990s and early 2000s, emphasizing continuity and discontinuity with the First Republic. It adds an institutional lens without treating formal structures as proof of equal implementation or social consensus.',
+  },
+  {
+    id: 'ignaziRissoWellhoferItalianParties2022',
+    label: 'Piero Ignazi, Enzo Risso and Spencer Wellhofer — Elezioni e partiti nell’Italia repubblicana',
+    url: 'https://www.mulino.it/isbn/9788815299390',
+    note: 'Il Mulino publisher record consulted for the 2022 Italian-language book (392 pages; ISBN 9788815299390; digital DOI 10.978.8815/371973). No chapter wording, quotation, table or scan is republished; its party and electoral history is attributed and translation limits remain visible.',
+    accessDate: '2026-09-20', creators: ['Piero Ignazi', 'Enzo Risso', 'Spencer Wellhofer'], institution: 'il Mulino',
+    publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['Italian'],
+    sourceType: 'Italian-language book-length study of republican elections and parties', identifiers: { isbn: '9788815299390', pages: '392', doi: '10.978.8815/371973' },
+    description: 'Italian-language book-length history and electoral analysis of parties from the return to democracy through the 2022 tripolar realignment. Its chapters on the 1992–2008 transformation and 2008–2022 party competition materially improve original-language coverage while preserving translation limits and internal disagreement.',
+  },
+  {
+    id: 'italyPoliticalElection2022Official',
+    label: 'Italian Ministry of the Interior — 2022 Italian general election record',
+    url: 'https://www.interno.gov.it/it/speciali/elezioni-politiche-2022',
+    note: 'Official Ministry of the Interior election dossier consulted for the 25 September 2022 Chamber of Deputies and Senate election. Results are linked rather than reproduced; the record fixes the case’s electoral endpoint but does not establish voter motives, equal competition, party ideology or present-day representativeness.',
+    accessDate: '2026-09-20', creators: ['Italian Ministry of the Interior'], institution: 'Italian Republic, Ministry of the Interior',
+    publicationDate: '2022-09-25', evidenceRole: 'primary', confidence: 'high', languages: ['Italian', 'English'],
+    sourceType: 'official parliamentary election record', identifiers: { electionDate: '2022-09-25', offices: 'Chamber of Deputies and Senate of the Republic' },
+    description: 'Primary election-administration record for the 2022 renewal of Italy’s two parliamentary chambers. It anchors a dated endpoint for the party-system case without turning election returns into a complete measure of democracy, ideology or public consent.',
+  },
+  {
     id: 'gluckModernMyths1985',
     label: 'Carol Gluck — Japan’s Modern Myths: Ideology in the Late Meiji Period',
     url: 'https://www.jstor.org/stable/j.ctv1k13b6q',
@@ -4190,7 +4250,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
         : source.id.startsWith('knightMexican') ? 'Mexican Revolution and constitutional history'
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') || source.id.startsWith('fulbrookHistoryGermany') || source.id.startsWith('zelikowRice') || source.id.startsWith('greenHoughMiskimmon') || source.id.startsWith('vonBeymeBusch') || source.id.startsWith('germanyBundestag') ? 'German postwar and reunified constitutional and political history'
-        : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
+        : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') || source.id.startsWith('gundleParkerNewItalianRepublic') || source.id.startsWith('newellPoliticsItaly') || source.id.startsWith('cottaVerzichelliPoliticalInstitutionsItaly') || source.id.startsWith('ignaziRissoWellhoferItalianParties') || source.id.startsWith('italyPoliticalElection') ? 'Italian constitutional, party-system and political history'
          : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('weissProtest') || source.id.startsWith('weissHazis') || source.id.startsWith('gomezOsman') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
