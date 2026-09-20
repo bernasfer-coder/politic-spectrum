@@ -1657,6 +1657,86 @@ const sources = [
     description: 'Study of the Mau Mau war, loyalism, counterinsurgency and local political legacies. It helps prevent a simple national-liberation narrative, while its Central Highlands focus does not represent every Kenyan region, community or anti-colonial current.'
   },
   {
+    id: 'ugandaConstitution1995Gov',
+    label: 'Government of Uganda — Constitution of the Republic of Uganda (1995)',
+    url: 'https://gou.go.ug/sites/default/files/Publications/Constitution_of_Uganda_1995.pdf',
+    note: 'Official Ugandan constitutional PDF consulted as a primary witness to the 1995 constitutional refounding. No constitutional wording, translation, scan or PDF page is republished; the drafting record, amendments, implementation and regional experience remain open.',
+    accessDate: '2026-09-20', creators: ['Government of Uganda'], institution: 'Government of Uganda',
+    publicationDate: '1995-09-22', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional witness; Ugandan-language materials not collated'],
+    sourceType: 'primary constitutional text / official government publication', identifiers: { constitutionDate: '1995-09-22' },
+    description: 'Primary legal witness for Uganda’s post-conflict constitutional settlement: popular sovereignty, presidential and parliamentary institutions, courts, rights, cultural recognition, secular government and constitutional supremacy. It documents formal design, not uniform implementation, public agreement or equal experience across Uganda.'
+  },
+  {
+    id: 'ugandaConstitutionalAmendment2005Parliament',
+    label: 'Parliament of Uganda — Constitutional (Amendment) Act and referendum legislation (2005)',
+    url: 'https://www.parliament.go.ug/acts/acts-2005',
+    note: 'Official Parliament of Uganda Acts index consulted for the Constitutional (Amendment) Act, 2005 and Referendum and other Provisions Act, 2005. No statutory wording, scan or PDF page is republished; the referendum record, parliamentary debate, implementation and competing political accounts remain open.',
+    accessDate: '2026-09-20', creators: ['Parliament of Uganda'], institution: 'Parliament of Uganda',
+    publicationDate: '2005', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary constitutional amendment and referendum legislation / official parliamentary record', identifiers: { actYear: '2005' },
+    description: 'Primary legislative witness for the 2005 constitutional change and referendum framework associated with the transition from the movement political system to multiparty politics. It documents legal change, not the quality of participation, public consensus or later implementation.'
+  },
+  {
+    id: 'ugandaElectoralCommission2021',
+    label: 'Electoral Commission of Uganda — Report on the 2020/2021 General Elections',
+    url: 'https://ec.or.ug/sites/default/files/docs/EC%20REPORT%202020_2021.pdf',
+    note: 'Official Electoral Commission report consulted as a primary institutional witness for Uganda’s 2020–2021 general-election cycle. No report wording, results table, scan or PDF page is republished; court records, observer accounts, party evidence, local variation and voter experience remain open.',
+    accessDate: '2026-09-20', creators: ['Electoral Commission of Uganda'], institution: 'Electoral Commission of Uganda',
+    publicationDate: '2021', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary election record / official institutional report', identifiers: { electionCycle: '2020-2021' },
+    description: 'Primary institutional account of electoral administration and results for the 2020–2021 general elections. It documents the Commission’s own record and cannot alone establish equal participation, electoral fairness, uncoerced choice, public consensus or the experience of every locality.'
+  },
+  {
+    id: 'kanyeihambaConstitutionalPoliticalHistoryUganda2010',
+    label: 'George W. Kanyeihamba — Constitutional and Political History of Uganda from 1894 to the Present (2nd ed., 2010)',
+    url: 'https://books.google.co.ug/books?id=hTqEcgAACAAJ',
+    note: 'LawAfrica and library records consulted for the 2010 second edition, 329-page extent and ISBN 9789966744807. No book wording, quotation, table, chapter or scan is republished; the complete monograph, archival corpus and regional-language scholarship remain open.',
+    accessDate: '2026-09-20', creators: ['George W. Kanyeihamba'], institution: 'LawAfrica Publishing',
+    publicationDate: '2010', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length constitutional and political history', identifiers: { isbn: '9789966744807', isbn10: '9966744800', pages: '329' },
+    description: 'Constitutional and political history from the Uganda Protectorate through independence, constitutional crises, Obote’s regimes, Amin and the late twentieth-century political order. It supplies an insider legal and political perspective, not a complete social history or a neutral account of every contested episode.'
+  },
+  {
+    id: 'mutibwaUgandaSinceIndependence1992',
+    label: 'Phares Mukasa Mutibwa — Uganda Since Independence: A Story of Unfulfilled Hopes (1992)',
+    url: 'https://books.google.com/books/about/Uganda_Since_Independence.html?id=yURMdAfadS4C&output=html_text',
+    note: 'Hurst and National Library of Uganda records consulted for the 1992, 209-page edition and ISBN 9781850651208. No book wording, quotation, table, chapter or scan is republished; the full monograph, Ugandan-language materials and later political history remain open.',
+    accessDate: '2026-09-20', creators: ['Phares Mukasa Mutibwa'], institution: 'Hurst & Co.',
+    publicationDate: '1992', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-independence political history', identifiers: { isbn: '9781850651208', isbn10: '1850651205', pages: '209' },
+    description: 'Post-independence political history emphasizing the crises under Milton Obote and Idi Amin and the later Museveni period. It is a critical national narrative with a particular authorial perspective, not a substitute for regional, social, opposition or later scholarship.'
+  },
+  {
+    id: 'reidHistoryModernUganda2017',
+    label: 'Richard J. Reid — A History of Modern Uganda (2017)',
+    url: 'https://www.cambridge.org/core/books/history-of-modern-uganda/8ECADBAEF71C4FE86F7703D29AD4183A',
+    note: 'Cambridge University Press record consulted for the 2017 publication, 328-page extent, ISBN 9781107067202 and DOI 10.1017/9781107589742. No book wording, quotation, table, chapter or scan is republished; the full monograph, archives and Ugandan-language source base remain open.',
+    accessDate: '2026-09-20', creators: ['Richard J. Reid'], institution: 'Cambridge University Press',
+    publicationDate: '2017', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern national history', identifiers: { isbn: '9781107067202', paperbackIsbn: '9781107671126', onlineIsbn: '9781107589742', doi: '10.1017/9781107589742', pages: '328' },
+    description: 'Wide-ranging modern history connecting political, economic and social change, regional difference and the uneven construction of a Ugandan national history from precolonial roots through the postcolonial period. It offers long-run context while not representing every region, community or contemporary development.'
+  },
+  {
+    id: 'mamdaniPoliticsClassUganda1976',
+    label: 'Mahmood Mamdani — Politics and Class Formation in Uganda (1976)',
+    url: 'https://books.google.com/books/about/Politics_and_Class_Formation_in_Uganda.html?id=jw8zAQAAIAAJ',
+    note: 'Monthly Review Press, Heinemann and library records consulted for the 1976, 339-page edition and ISBN 9780853453789. No book wording, quotation, table, chapter or scan is republished; its class analysis is kept distinct from constitutional and electoral evidence.',
+    accessDate: '2026-09-20', creators: ['Mahmood Mamdani'], institution: 'Monthly Review Press / Heinemann Educational',
+    publicationDate: '1976', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy and class-formation study', identifiers: { isbn: '9780853453789', isbn10: '0853453780', pages: '339' },
+    description: 'Political-economy study of precolonial and colonial transformations, peasant economy, commercial capital, landlords, tenants, the colonial state, class formation and the road from independence to the 1971 coup. It provides a structural class lens rather than a complete constitutional, regional or post-1976 history.'
+  },
+  {
+    id: 'mamdaniSlowPoisonUganda2025',
+    label: 'Mahmood Mamdani — Slow Poison: Idi Amin, Yoweri Museveni, and the Making of the Ugandan State (2025)',
+    url: 'https://www.hup.harvard.edu/books/9780674299870',
+    note: 'Harvard University Press and review records consulted for the 2025 edition, ISBN 9780674299870 and 352-page publisher extent. No book wording, quotation, table, chapter or scan is republished; the author’s personal and critical perspective is distinguished from official records and other histories.',
+    accessDate: '2026-09-20', creators: ['Mahmood Mamdani'], institution: 'Belknap Press of Harvard University Press',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length critical history and political memoir', identifiers: { isbn: '9780674299870', pages: '352' },
+    description: 'Recent critical account juxtaposing Idi Amin, Yoweri Museveni and the making of the Ugandan state, informed by the author’s personal experience and political analysis. It adds a contemporary state-formation perspective, but its memoir and interpretation do not establish universal public experience or settle contested historical claims.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -1697,6 +1777,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('sudan') || source.id.startsWith('woodwardSudan') || source.id.startsWith('berridgeCivilUprisingsSudan') || source.id.startsWith('berridgeUnfinishedDemocracy') || source.id.startsWith('deWaalRealPoliticsHorn') || source.id.startsWith('oetteBabikerConstitutionMaking') ? 'Sudanese constitutional, conflict and political history'
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
       : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
+      : source.id.startsWith('uganda') || source.id.startsWith('kanyeihambaConstitutionalPoliticalHistoryUganda') || source.id.startsWith('mutibwaUganda') || source.id.startsWith('reidHistoryModernUganda') || source.id.startsWith('mamdaniPoliticsClassUganda') || source.id.startsWith('mamdaniSlowPoisonUganda') ? 'Ugandan decolonization, constitutional, military and movement-state history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
       : source.id.startsWith('vietnam') || source.id.startsWith('sidelConstitutionVietnam') || source.id.startsWith('sternRenovatingVietnameseParty') || source.id.startsWith('vasavakulVietnam') || source.id.startsWith('buiConstitutionalChangeSocialistWorld') || source.id.startsWith('guillemotHistoireVietnamContemporain') ? 'Vietnamese constitutional, socialist and political history'
