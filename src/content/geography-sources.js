@@ -529,6 +529,78 @@ const sources = [
     description: 'Official report on Pakistan’s 2013 general election. It documents the election administration and results as an institutional record; litigation, party accounts, local variation and independent observation require separate review.'
   },
   {
+    id: 'bangladeshConstitution1972',
+    label: 'Constituent Assembly of Bangladesh — Constitution of the People’s Republic of Bangladesh',
+    url: 'https://bdlaws.minlaw.gov.bd/act-print-367.html',
+    note: 'Bangladesh Laws / Ministry of Law, Justice and Parliamentary Affairs legal database consulted for the constitutional founding, unitary republic, fundamental principles, parliamentary institutions, rights and later consolidated provisions. Bengali original and amendment gazettes were not independently collated; the legal text is evidence of formal design, not uniform implementation or public consent.',
+    accessDate: '2026-09-20',
+    creators: ['Constituent Assembly of Bangladesh'], institution: 'Bangladesh Laws / Ministry of Law, Justice and Parliamentary Affairs',
+    publicationDate: '1972-12-16', evidenceRole: 'primary', confidence: 'high', languages: ['English; Bengali original and authorized translation'],
+    sourceType: 'primary constitutional text / official legal database',
+    identifiers: {},
+    description: 'Official constitutional witness for Bangladesh’s unitary sovereign republic, foundational principles, parliamentary executive, Jatiya Sangsad, fundamental rights, local government and electoral provisions. The current consolidated text does not by itself establish the chronology or effects of later amendments and cannot stand for implementation across communities or periods.',
+  },
+  {
+    id: 'bangladeshElection2014',
+    label: 'Bangladesh Election Commission — Parliament Election Result, 10th National Parliament (2014)',
+    url: 'https://ecs.gov.bd/en/page/parliament-election-result',
+    note: 'Official Election Commission results page consulted for the 10th National Parliament election. It is an institutional electoral record, not independent evidence of equal participation, electoral fairness, opposition consent, local variation or the absence of violence and litigation; no table or page text is republished.',
+    accessDate: '2026-09-20',
+    creators: ['Bangladesh Election Commission'], institution: 'Bangladesh Election Commission',
+    publicationDate: '2014', evidenceRole: 'primary', confidence: 'high', languages: ['English; Bengali official materials'],
+    sourceType: 'official electoral result / primary institutional record',
+    identifiers: {},
+    description: 'Official election-result record for Bangladesh’s 2014 tenth parliamentary election, used to bound the case’s electoral horizon. It documents the institutional result record only and does not settle the broader political controversy or implementation history.',
+  },
+  {
+    id: 'vanSchendelHistoryBangladesh2009',
+    label: 'Willem van Schendel — A History of Bangladesh (2009)',
+    url: 'https://pure.knaw.nl/portal/en/publications/a-history-of-bangladesh/',
+    note: 'Royal Netherlands Academy / Cambridge University Press book record consulted for the 2009 first-edition metadata and broad history of Bangladesh from earlier periods through independence and state formation. The 347-page monograph, Bengali sources, archival record and later revised edition were not independently collated; no book wording is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['Willem van Schendel'], institution: 'Cambridge University Press / Royal Netherlands Academy of Arts and Sciences',
+    publicationDate: '2009', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Bangladeshi national and political history',
+    identifiers: { isbn: '9780521861748' },
+    description: 'A broad book-length history of Bangladesh that supplies long-term context for colonialism, partition, independence, state formation and political change. It is used as a national-history perspective, not as a complete account of every region, community, institution or contemporary administration.',
+  },
+  {
+    id: 'riazBangladeshPoliticalHistory2016',
+    label: 'Ali Riaz — Bangladesh: A Political History since Independence (2016)',
+    url: 'https://www.bloomsbury.com/uk/bangladesh-9781786730756/',
+    note: 'Bloomsbury / I.B. Tauris publisher record consulted for the 2016 first-edition metadata and the book’s post-1971 political scope. The 336-page monograph and its cited primary, Bengali-language and regional sources were not independently collated; its interpretations remain attributed and no book wording is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['Ali Riaz'], institution: 'I.B. Tauris / Bloomsbury Publishing',
+    publicationDate: '2016', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Bangladeshi political history',
+    identifiers: { isbn: '9781786730756' },
+    description: 'A book-length political history since independence that addresses state formation, democratization, institutional weakness and competing religious, social and political forces. It provides an independent political-history perspective alongside van Schendel’s broader national history, not a complete country-wide or current-status assessment.',
+  },
+  {
+    id: 'choudhuryConstitutionalDevelopmentBangladesh1995',
+    label: 'Dilara Choudhury — Constitutional Development in Bangladesh: Stresses and Strains (1995)',
+    url: 'https://www.saf-7.org/saf/safdic/bookdetail.asp?ac=2986&bid=1235',
+    note: 'University Press Limited book record consulted for the 1995 metadata and constitutional-development scope, including party system, military intervention, bureaucracy and institutional strain. The complete monograph, Bengali materials and constitutional records were not independently collated; no book wording is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['Dilara Choudhury'], institution: 'University Press Limited',
+    publicationDate: '1995', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Bangladeshi constitutional and political history',
+    identifiers: { isbn: '984-05-1291-9' },
+    description: 'A book-length constitutional study of Bangladesh’s institutional stresses, party system, military intervention, bureaucracy and political development. Its 1995 horizon means it cannot by itself establish the later caretaker-election or 2014 record, but it adds a distinct constitutional perspective.',
+  },
+  {
+    id: 'obaidullahParliamentBangladesh2019',
+    label: 'A.T.M. Obaidullah — Institutionalization of the Parliament in Bangladesh (2019)',
+    url: 'https://link.springer.com/book/10.1007/978-981-10-5317-7',
+    note: 'Springer book record consulted for the 2019 metadata and institutional study of parliament, donor intervention, oversight, rule of law, civil liberty and democratic consolidation. The monograph, parliamentary proceedings and cited Bangla-language records were not independently collated; no book wording is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['A.T.M. Obaidullah'], institution: 'Springer',
+    publicationDate: '2019', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Bangladeshi parliamentary institutional study',
+    identifiers: { isbn: '9789811053177', doi: '10.1007/978-981-10-5317-7' },
+    description: 'A book-length institutional study of Bangladesh’s parliament and its post-1991 development, including oversight, rule of law, liberty and democratic-consolidation constraints. It is a focused parliamentary perspective and does not replace national, regional, electoral or community-specific histories.',
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -564,6 +636,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
+      : source.id.startsWith('bangladesh') || source.id.startsWith('vanSchendelHistoryBangladesh') || source.id.startsWith('riazBangladesh') || source.id.startsWith('choudhuryConstitutionalDevelopmentBangladesh') || source.id.startsWith('obaidullahParliamentBangladesh') ? 'Bangladeshi constitutional, parliamentary and political history'
       : source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('pakistanEcp') ? 'Pakistani constitutional, civil–military and electoral history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') ? 'Ghanaian constitutional transition and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') ? 'Ethiopian imperial constitutional and political history'
