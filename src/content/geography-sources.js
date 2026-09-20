@@ -1,6 +1,116 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'liberiaConstitution1986Judiciary',
+    label: 'Judiciary of Liberia — Constitution of the Republic of Liberia, 1986',
+    url: 'https://judiciary.gov.lr/constitution-of-liberia-2/',
+    note: 'Official Liberian judiciary page and linked PDF consulted for the 1986 Constitution. No constitutional wording, translation, scan or PDF page is republished; amendments, drafting, implementation and lived experience remain distinct questions.',
+    accessDate: '2026-09-20', creators: ['Judiciary of Liberia'], institution: 'Judiciary of Liberia',
+    publicationDate: '1986-01-06', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official judicial archive', identifiers: { constitutionDate: '1986-01-06' },
+    description: 'Primary legal witness to the post-coup constitutional refounding of Liberia, including popular sovereignty, the presidential and legislative order, rights, counties, economic principles and separation of powers. It records formal design, not uniform implementation or public consent.'
+  },
+  {
+    id: 'liberiaNec2005Results',
+    label: 'National Elections Commission of Liberia — 2005 General and Presidential Runoff Election Results',
+    url: 'https://results.necliberia.org/results2005/',
+    note: 'Official NEC archive consulted for the 10 October 2005 and 8 November 2005 elections. No results table, wording, scan or page asset is republished; the record does not by itself establish electoral freedom, equal competition, participation quality, coercion or nationwide consent.',
+    accessDate: '2026-09-20', creators: ['National Elections Commission of Liberia'], institution: 'National Elections Commission of Liberia',
+    publicationDate: '2005', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral results / institutional record', identifiers: { electionYear: '2005' },
+    description: 'Primary institutional witness to the first postwar national elections and the presidential runoff that inaugurated the selected reconstruction horizon.'
+  },
+  {
+    id: 'liberiaNec2017Results',
+    label: 'National Elections Commission of Liberia — 2017 Presidential and Representative Elections Final Results',
+    url: 'https://www.necliberia.org/pg_img/2017%20Final%20Results_10_19_2017_15_03.pdf',
+    note: 'Official NEC final-results PDF consulted for the 10 October 2017 presidential and representative elections. No results table, wording, scan or PDF page is republished; courts, observers, parties, local voters and implementation remain open evidence layers.',
+    accessDate: '2026-09-20', creators: ['National Elections Commission of Liberia'], institution: 'National Elections Commission of Liberia',
+    publicationDate: '2017-10-19', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral results / institutional record', identifiers: { electionDate: '2017-10-10', certificationDate: '2017-10-19' },
+    description: 'Primary electoral record that bounds the postwar transfer from the Johnson-Sirleaf administration to the 2017 presidential contest and representative elections.'
+  },
+  {
+    id: 'liberiaNec2023Results',
+    label: 'National Elections Commission of Liberia — 2023 Presidential Elections Results Portal',
+    url: 'https://results.necliberia.org/',
+    note: 'Official NEC results portal consulted for the 2023 presidential elections. No results table, wording, scan or portal extract is republished; the institutional record does not by itself establish electoral fairness, equal competition, participation quality or public consent.',
+    accessDate: '2026-09-20', creators: ['National Elections Commission of Liberia'], institution: 'National Elections Commission of Liberia',
+    publicationDate: '2023', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral results / institutional record', identifiers: { electionYear: '2023' },
+    description: 'Primary institutional witness extending the electoral and contemporary research horizon to Liberia’s 2023 presidential contest.'
+  },
+  {
+    id: 'liberiaTrcFinalReport2009',
+    label: 'Truth and Reconciliation Commission of Liberia — Final Report, 2009',
+    url: 'https://trcofliberia.org/',
+    note: 'Official TRC archive and final-report record consulted. No report wording, testimony, table, scan or PDF page is republished; the Commission’s findings are not treated as an uncontested national narrative or as proof that every allegation was judicially established.',
+    accessDate: '2026-09-20', creators: ['Truth and Reconciliation Commission of Liberia'], institution: 'Truth and Reconciliation Commission of Liberia',
+    publicationDate: '2009', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official truth-commission report archive / transitional-justice record', identifiers: { reportYear: '2009' },
+    description: 'Primary transitional-justice record concerning the roots of Liberia’s conflicts, violations, responsibility, the impact on women and children, reconciliation and recommendations to the legislature and government.'
+  },
+  {
+    id: 'liebenowEvolutionPrivilegeLiberia1969',
+    label: 'J. Gus Liebenow — Liberia: The Evolution of Privilege (1969)',
+    url: 'https://books.google.com/books?id=BQ2SAAAAIAAJ',
+    note: 'Cornell University Press and library records consulted for the 1969 book (ISBN 9780801405068, 247 pages). No book wording, quotation, table, chapter or scan is republished; the study’s period and political-science framing are not treated as a complete current history.',
+    accessDate: '2026-09-20', creators: ['J. Gus Liebenow'], institution: 'Cornell University Press',
+    publicationDate: '1969', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history and political-sociological study', identifiers: { isbn: '9780801405068', pages: '247' },
+    description: 'Foundational study of Liberia’s politico-social structure, parties, leadership, economy, foreign relations, settler privilege, Indigenous political relations and traditional institutions before the 1980 coup.'
+  },
+  {
+    id: 'liebenowQuestDemocracyLiberia1987',
+    label: 'J. Gus Liebenow — Liberia: The Quest for Democracy (1987)',
+    url: 'https://www.africabib.org/rec.php?RID=042839386',
+    note: 'AfricaBib and library records consulted for the 1987 book (Indiana University Press; ISBN 9780253334367/9780253204240; 336 pages). No book wording, quotation, table, chapter or scan is republished; the book’s pre-civil-war endpoint is not silently extended into later conflict or reconstruction.',
+    accessDate: '2026-09-20', creators: ['J. Gus Liebenow'], institution: 'Indiana University Press',
+    publicationDate: '1987', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of democratization and military rule', identifiers: { hardcoverIsbn: '9780253334367', paperbackIsbn: '9780253204240', pages: '336' },
+    description: 'Connects the First Republic’s evolution of privilege to the 1980 coup and a second attempt at democratic development. It supplies an independent account of constitutional and political change before the civil wars.'
+  },
+  {
+    id: 'sawyerEmergenceAutocracyLiberia1992',
+    label: 'Amos Sawyer — The Emergence of Autocracy in Liberia: Tragedy and Challenge (1992)',
+    url: 'https://books.google.com/books/about/The_Emergence_of_Autocracy_in_Liberia.html?id=nD9zAAAAMAAJ',
+    note: 'Institute for Contemporary Studies record consulted for the 1992 book (ISBN 9781558151642, 418 pages). No book wording, quotation, table, chapter or scan is republished; Sawyer’s interpretation and political experience remain distinct from other histories and official records.',
+    accessDate: '2026-09-20', creators: ['Amos Sawyer'], institution: 'Institute for Contemporary Studies / Center for Self-Governance',
+    publicationDate: '1992', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of state formation, autocracy and political history', identifiers: { isbn: '9781558151642', pages: '418' },
+    description: 'Analyzes the long process through which authority became personalized in Liberia and relates that process to centralized postcolonial institutions, while considering constitutional choice and prospects for self-government.'
+  },
+  {
+    id: 'sawyerBeyondPlunderLiberia2005',
+    label: 'Amos Sawyer — Beyond Plunder: Toward Democratic Governance in Liberia (2005)',
+    url: 'https://www.rienner.com/title/Beyond_Plunder_Toward_Democratic_Governance_in_Liberia',
+    note: 'Lynne Rienner record consulted for the 2005 book (ISBN 9781588263841; 243 pages). No book wording, quotation, table, chapter or scan is republished; the author’s former-head-of-state perspective is attributed and kept distinct from the TRC, electoral records and other scholarship.',
+    accessDate: '2026-09-20', creators: ['Amos Sawyer'], institution: 'Lynne Rienner Publishers',
+    publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of post-conflict governance and constitutional reconstruction', identifiers: { isbn: '9781588263841', ebookIsbn: '9781626370999', pages: '243' },
+    description: 'A post-conflict institutional and constitutional argument about rebuilding democratic governance after state collapse and violence, including citizenship, peace and accountable self-government.'
+  },
+  {
+    id: 'ellisMaskAnarchyLiberia2007',
+    label: 'Stephen Ellis — The Mask of Anarchy: The Destruction of Liberia and the Religious Dimension of an African Civil War (2007 edition)',
+    url: 'https://www.hurstpublishers.com/book/the-mask-of-anarchy/',
+    note: 'Hurst record consulted for the 2007 edition (ISBN 9781850654179). No book wording, quotation, table, chapter or scan is republished; the religious and cultural interpretation is attributed and not generalized to every Liberian or religious community.',
+    accessDate: '2026-09-20', creators: ['Stephen Ellis'], institution: 'Hurst Publishers',
+    publicationDate: '2007', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length civil-war history and political-cultural interpretation', identifiers: { isbn: '9781850654179' },
+    description: 'Analyzes the roots and dynamics of the Liberian civil war, including political, ethnic, cultural and religious dimensions and the 1997–2003 Charles Taylor period. It is a focused interpretation of conflict, not a whole-country ideological description.'
+  },
+  {
+    id: 'adebajoLiberiaCivilWar2002',
+    label: 'Adekeye Adebajo — Liberia’s Civil War: Nigeria, ECOMOG, and Regional Security in West Africa (2002)',
+    url: 'https://www.rienner.com/title/Liberia_s_Civil_War_Nigeria_ECOMOG_and_Regional_Security_in_West_Africa',
+    note: 'Lynne Rienner / International Peace Academy record consulted for the 2002 book (ISBN 9781588260529, 285 pages). No book wording, quotation, table, chapter or scan is republished; the regional-security analysis remains distinct from Liberian local and national perspectives.',
+    accessDate: '2026-09-20', creators: ['Adekeye Adebajo'], institution: 'Lynne Rienner Publishers / International Peace Academy',
+    publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of civil war, regional intervention and security', identifiers: { isbn: '9781588260529', ebookIsbn: '9781626371125', pages: '285' },
+    description: 'Examines Nigeria, ECOMOG and ECOWAS intervention in Liberia through regional and international security, using reports and interviews to explain the prolonged conflict and the conditions of its ending.'
+  },
+  {
     id: 'sierraLeoneConstitution1991Parliament',
     label: 'Parliament of Sierra Leone — Constitution of Sierra Leone, 1991',
     url: 'https://parliament.gov.sl/constitution-of-sierra-leone.html',
@@ -2171,6 +2281,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('uganda') || source.id.startsWith('kanyeihambaConstitutionalPoliticalHistoryUganda') || source.id.startsWith('mutibwaUganda') || source.id.startsWith('reidHistoryModernUganda') || source.id.startsWith('mamdaniPoliticsClassUganda') || source.id.startsWith('mamdaniSlowPoisonUganda') ? 'Ugandan decolonization, constitutional, military and movement-state history'
       : source.id.startsWith('rwanda') || source.id.startsWith('reyntjensPoliticalGovernanceRwanda') || source.id.startsWith('thomsonRwandaPrecariousPeace') || source.id.startsWith('strausWaldorfRemakingRwanda') || source.id.startsWith('guichaouaFromWarToGenocide') || source.id.startsWith('prunierRwandaCrisis') ? 'Rwandan post-conflict, constitutional, developmental and political history'
       : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') ? 'Senegalese constitutional, democratic and political history'
+      : source.id.startsWith('liberia') || source.id.startsWith('liebenow') || source.id.startsWith('sawyer') || source.id.startsWith('ellisMaskAnarchyLiberia') || source.id.startsWith('adebajoLiberia') ? 'Liberian constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
