@@ -1737,6 +1737,76 @@ const sources = [
     description: 'Recent critical account juxtaposing Idi Amin, Yoweri Museveni and the making of the Ugandan state, informed by the author’s personal experience and political analysis. It adds a contemporary state-formation perspective, but its memoir and interpretation do not establish universal public experience or settle contested historical claims.'
   },
   {
+    id: 'zimbabweConstitution2013Parliament',
+    label: 'Parliament of Zimbabwe — Constitution of Zimbabwe Amendment (No. 20) (2013)',
+    url: 'https://www.parlzim.gov.zw/constitution-of-zimbabwe/',
+    note: 'Official Parliament of Zimbabwe constitutional archive consulted as a primary witness to the 2013 constitutional settlement. No constitutional wording, translation, scan or PDF page is republished; the drafting record, amendments, implementation and community experience remain open.',
+    accessDate: '2026-09-20', creators: ['Parliament of Zimbabwe'], institution: 'Parliament of Zimbabwe',
+    publicationDate: '2013-05-22', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional witness; Shona, Ndebele and other language materials not collated'],
+    sourceType: 'primary constitutional text / official parliamentary archive', identifiers: { constitutionalAmendment: 'No. 20', constitutionYear: '2013' },
+    description: 'Primary legal witness for Zimbabwe’s post-crisis constitutional redesign: popular sovereignty, rights, executive and parliamentary institutions, courts, devolution, language and public bodies. It documents formal design, not uniform implementation, public agreement or equal experience across regions and communities.'
+  },
+  {
+    id: 'zimbabweZec2018HarmonisedElection',
+    label: 'Zimbabwe Electoral Commission — 2018 Harmonised Election Report',
+    url: 'https://veritaszim.net/node/3592',
+    note: 'Zimbabwe Electoral Commission report hosted by Veritas Zimbabwe consulted as a primary institutional witness for the 30 July 2018 harmonised elections. No report wording, results table, scan or PDF page is republished; observer, court, party, local and voter evidence remain open.',
+    accessDate: '2026-09-20', creators: ['Zimbabwe Electoral Commission'], institution: 'Zimbabwe Electoral Commission / Veritas Zimbabwe',
+    publicationDate: '2018-07-30', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary election record / official institutional report', identifiers: { electionDate: '2018-07-30' },
+    description: 'Primary institutional report on preparation, administration and conduct of the 2018 harmonised elections. It records the Commission’s account and cannot alone establish equal participation, electoral fairness, uncoerced choice, public consensus or the experience of every locality.'
+  },
+  {
+    id: 'zimbabweHumanRightsCommission2018',
+    label: 'Zimbabwe Human Rights Commission — 2018 Harmonised Election Observation and Monitoring Report',
+    url: 'https://zhrc.org.zw/wp-content/uploads/2017/03/Annex-O-ZHRC-2018-Harmonised-Election-Report.pdf',
+    note: 'Official Zimbabwe Human Rights Commission report consulted as an institutional rights-monitoring witness for the 2018 election environment. No report wording, table, scan or PDF page is republished; the Commission’s remit and perspective remain distinct from the Electoral Commission, observers, courts, parties and local communities.',
+    accessDate: '2026-09-20', creators: ['Zimbabwe Human Rights Commission'], institution: 'Zimbabwe Human Rights Commission',
+    publicationDate: '2018', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional report'],
+    sourceType: 'official human-rights and election-monitoring report', identifiers: { electionYear: '2018' },
+    description: 'Institutional report assessing rights enjoyment and the electoral environment during the 2018 harmonised elections. It supplies a distinct monitoring perspective and does not by itself establish the full social or political experience of Zimbabwe.'
+  },
+  {
+    id: 'mlamboHistoryZimbabwe2014',
+    label: 'Alois S. Mlambo — A History of Zimbabwe (2014)',
+    url: 'https://www.cambridge.org/core/books/history-of-zimbabwe/09220ECF68826C88B7922F55C5D24568',
+    note: 'Cambridge University Press record consulted for the 2014 publication, 306-page hardback extent, ISBN 9781107021709 and DOI 10.1017/CBO9781139128919. No book wording, quotation, table, chapter or scan is republished; the full monograph, local-language sources and post-2014 evidence remain open.',
+    accessDate: '2026-09-20', creators: ['Alois S. Mlambo'], institution: 'Cambridge University Press',
+    publicationDate: '2014', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national political and social history', identifiers: { isbn: '9781107021709', onlineIsbn: '9781139128919', paperbackIsbn: '9781107684799', doi: '10.1017/CBO9781139128919', pages: '306' },
+    description: 'Single-volume history from precolonial, colonial and settler-rule transformations through independence and the postcolonial period, linking political, economic and social history to later developments. It supplies national context without representing every region, language, community or later political event.'
+  },
+  {
+    id: 'raftopoulosMlamboBecomingZimbabwe2009',
+    label: 'Brian Raftopoulos and Alois S. Mlambo (eds.) — Becoming Zimbabwe: A History from the Pre-colonial Period to 2008 (2009)',
+    url: 'https://www.jstor.org/stable/j.ctvk3gmpr',
+    note: 'JSTOR and Weaver Press book records consulted for the 2009 edited volume and ISBN 9781779220837. No chapter wording, quotation, table, scan or adapted material is republished; chapter-level perspectives, local-language records and post-2008 developments remain open.',
+    accessDate: '2026-09-20', creators: ['Brian Raftopoulos', 'Alois S. Mlambo'], institution: 'Weaver Press / Institute for Justice and Reconciliation',
+    publicationDate: '2009', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited national history', identifiers: { isbn: '9781779220837', pages: '296' },
+    description: 'Edited national history spanning precolonial developments through the 2008 crisis, with attention to citizenship, national belonging, state rule, political economy and regional/international dimensions. Its multiple chapters complicate heroic or single-party narratives but do not close regional or post-2008 gaps.'
+  },
+  {
+    id: 'alexanderUnsettledLandZimbabwe2006',
+    label: 'Jocelyn Alexander — The Unsettled Land: State-making and the Politics of Land in Zimbabwe, 1893–2003 (2006)',
+    url: 'https://library.cut.ac.zw/cgi-bin/koha/opac-search.pl?count=20&limit=su-to%3ALand+tenure&q=ccl%3Dpl%3A%22Ohio+%3A%22+and+su-geo%3AZimbabwe&sort_by=relevance_dsc',
+    note: 'James Currey, Weaver Press and Ohio University Press catalogue records consulted for the 2006, 230-page study and ISBN 9780852558935. No book wording, quotation, table, chapter or scan is republished; its local studies and land lens are not treated as a complete national history.',
+    accessDate: '2026-09-20', creators: ['Jocelyn Alexander'], institution: 'James Currey / Weaver Press / Ohio University Press',
+    publicationDate: '2006', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of land, state-making and political history', identifiers: { isbn: '9780852558935', paperbackIsbn: '9780852558928', pages: '230' },
+    description: 'Study of colonial and postcolonial statecraft and the land question through 2003, using local histories to analyze resource governance, nation-building and competing interpretations of political struggle. It adds a land-centered lens rather than representing every Zimbabwean region or social group.'
+  },
+  {
+    id: 'krigerZimbabweGuerrillaWar1992',
+    label: 'Norma J. Kriger — Zimbabwe’s Guerrilla War: Peasant Voices (1992)',
+    url: 'https://www.cambridge.org/core/books/abs/zimbabwes-guerrilla-war/frontmatter/3455F0C400ADEF44F6188321053D456C',
+    note: 'Cambridge University Press and library records consulted for the 1992, 303-page study and ISBN 9780521392549. No book wording, quotation, table, chapter or scan is republished; the Mutoko fieldwork, other regions and local-language/archive corpus remain open.',
+    accessDate: '2026-09-20', creators: ['Norma J. Kriger'], institution: 'Cambridge University Press',
+    publicationDate: '1992', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of guerrilla war, peasants and political legitimacy', identifiers: { isbn: '9780521392549', paperbackIsbn: '9780521070676', doi: '10.1017/CBO9780511895869', pages: '303' },
+    description: 'Field-based study of peasant grievances, guerrilla–civilian relations, popular support, coercion and war legacies in Zimbabwe’s liberation struggle. It prevents a simple heroic account but is a bounded regional and social study, not a complete national history or proof of uniform popular support.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -1778,6 +1848,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
       : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
       : source.id.startsWith('uganda') || source.id.startsWith('kanyeihambaConstitutionalPoliticalHistoryUganda') || source.id.startsWith('mutibwaUganda') || source.id.startsWith('reidHistoryModernUganda') || source.id.startsWith('mamdaniPoliticsClassUganda') || source.id.startsWith('mamdaniSlowPoisonUganda') ? 'Ugandan decolonization, constitutional, military and movement-state history'
+      : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
       : source.id.startsWith('vietnam') || source.id.startsWith('sidelConstitutionVietnam') || source.id.startsWith('sternRenovatingVietnameseParty') || source.id.startsWith('vasavakulVietnam') || source.id.startsWith('buiConstitutionalChangeSocialistWorld') || source.id.startsWith('guillemotHistoireVietnamContemporain') ? 'Vietnamese constitutional, socialist and political history'
