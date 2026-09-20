@@ -1417,6 +1417,42 @@ const sources = [
     description: 'Primary institutional record for the Commission’s 2024 presidential-election results, used as the endpoint for this dated case. It documents the official result record without settling electoral fairness, participation, opposition acceptance, policy consequences or developments after the 2024 election.',
   },
   {
+    id: 'adebanwiDemocracyNigeriaFourthRepublic2023',
+    label: 'Wale Adebanwi (ed.) — Democracy and Nigeria’s Fourth Republic: Governance, Political Economy, and Party Politics 1999–2023',
+    url: 'https://boydellandbrewer.com/book/democracy-and-nigerias-fourth-republic-9781847013798/?v=7885444af42e',
+    note: 'Official James Currey/Boydell & Brewer book record consulted for the 2023 edited volume (hardcover ISBN 9781847013514; eBook ISBN 9781800109933; 464 pages). No chapter wording, quotation, table, figure or scan is republished; the contributors’ distinct arguments remain attributed and the volume is not treated as a complete account of every Nigerian region or community.',
+    accessDate: '2026-09-20',
+    creators: ['Wale Adebanwi (editor)'], institution: 'James Currey / Boydell & Brewer',
+    publicationDate: '2023-09-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Nigeria’s Fourth Republic, political economy and party politics',
+    identifiers: { isbn: '9781847013514', ebookIsbn: '9781800109933', doi: '10.1515/9781800109933', pages: '464' },
+    description: 'A large edited scholarly study of Nigeria’s Fourth Republic through 2023, organized around democratic governance, the state, parties, the presidency, international relations, oil and economic reforms, electoral governance, civil-political society and conflict. Its multiple Nigerian and international contributors provide competing perspectives rather than one settled diagnosis.',
+  },
+  {
+    id: 'nwankpaNigeriaFourthRepublic2023',
+    label: 'Michael Nwankpa — Nigeria’s Fourth Republic, 1999–2021: A Militarised Democracy',
+    url: 'https://www.routledge.com/Nigerias-Fourth-Republic-1999-2021-A-Militarised-Democracy/Nwankpa/p/book/9781032228952',
+    note: 'Official Routledge book record consulted for Nwankpa’s 2023 monograph (ISBN 9781032228952; 196 pages; five black-and-white illustrations). No book wording, quotation, table, figure or scan is republished; the argument about militarization is attributed and kept distinct from the constitutional text, election records and other scholarly perspectives.',
+    accessDate: '2026-09-20',
+    creators: ['Michael Nwankpa'], institution: 'Routledge / Taylor & Francis',
+    publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Nigerian militarization, democracy and security',
+    identifiers: { isbn: '9781032228952', doi: '10.4324/9781003274667', pages: '196' },
+    description: 'A focused book-length interpretation of the Fourth Republic as a militarized democracy, linking security institutions, armed groups, violence, gendered security and foreign policy to democratic practice through 2021. It supplies a critical security lens, not a complete social history or proof that all Nigerian politics is militarized in the same way.',
+  },
+  {
+    id: 'nigeriaInecElectionResults2023',
+    label: 'Independent National Electoral Commission of Nigeria — 2023 election results portal',
+    url: 'https://www.inecnigeria.org/election-results/',
+    note: 'Official INEC election-results portal consulted for the 2023 presidential and general-election record. No result table, declaration wording, scan or PDF is republished; the Commission’s institutional record is distinguished from independent observation, litigation, participation evidence and assessments of electoral fairness or public consent.',
+    accessDate: '2026-09-20',
+    creators: ['Independent National Electoral Commission of Nigeria'], institution: 'Independent National Electoral Commission',
+    publicationDate: '2023-02-25', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official general-election results portal',
+    identifiers: { electionDate: '2023-02-25' },
+    description: 'Primary institutional results portal for Nigeria’s 2023 presidential and general elections. It anchors the endpoint’s official election record without, by itself, establishing equal access, accurate counting, uncoerced participation, judicial independence, opposition acceptance or the broader political meaning of the result.',
+  },
+  {
     id: 'bahruModernEthiopia2001',
     label: 'Bahru Zewde — A History of Modern Ethiopia, 1855–1991',
     url: 'https://boydellandbrewer.com/book/a-history-of-modern-ethiopia-1855-1991-9780852557860/?v=7885444af42e',
@@ -3467,6 +3503,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('bangladesh') || source.id.startsWith('vanSchendelHistoryBangladesh') || source.id.startsWith('riazBangladesh') || source.id.startsWith('choudhuryConstitutionalDevelopmentBangladesh') || source.id.startsWith('obaidullahParliamentBangladesh') ? 'Bangladeshi constitutional, parliamentary and political history'
       : source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('pakistanEcp') ? 'Pakistani constitutional, civil–military and electoral history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') || source.id.startsWith('ayeeAmoahAliduGhana') || source.id.startsWith('pallerDemocracyGhana') ? 'Ghanaian constitutional transition and political history'
+      : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeriaInec') ? 'Nigerian constitutional, electoral and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') ? 'Ethiopian imperial constitutional and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
