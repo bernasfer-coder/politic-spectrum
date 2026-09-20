@@ -1557,6 +1557,106 @@ const sources = [
     description: 'Book-length study of Dar es Salaam and the politics of liberalization, showing how informal actors negotiated or resisted state regulation as socialist controls changed. It adds a social and urban lens to national histories without representing all Tanzanian communities or the entire multiparty period.'
   },
   {
+    id: 'kenyaConstitution2010Library',
+    label: 'Government of Kenya / Presidential Library — Constitution of Kenya (2010)',
+    url: 'https://www.presidentiallibrary.go.ke/documents/constitution-kenya-2010',
+    note: 'Official Kenyan archival record consulted for the Constitution promulgated on 27 August 2010. No constitutional wording, translation, scan or PDF page is republished; the drafting record, amendments, implementation and community-level experience remain open.',
+    accessDate: '2026-09-20', creators: ['Government of Kenya', 'Committee of Experts on Constitutional Review'], institution: 'Online Presidential Library and Archiving / Government of Kenya',
+    publicationDate: '2010-08-27', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional witness; Kiswahili and other Kenyan-language materials not collated'],
+    sourceType: 'primary constitutional text / official archival record', identifiers: { constitutionDate: '2010-08-27' },
+    description: 'Primary legal witness for Kenya’s post-2007 constitutional settlement: popular sovereignty, rights, devolution, independent commissions, executive and legislative institutions, judicial authority and security principles. It documents formal design, not uniform implementation or public agreement.'
+  },
+  {
+    id: 'kenyaIebc2013GeneralElection',
+    label: 'Independent Electoral and Boundaries Commission — 2013 General Election report',
+    url: 'https://www.iebc.or.ke/uploads/resources/EIqEo3LuiB.pdf',
+    note: 'Official IEBC report and results material consulted for the 4 March 2013 general election, the first under the 2010 Constitution. No result table, report wording, scan or PDF page is republished; local variation, observation, litigation and community accounts remain open.',
+    accessDate: '2026-09-20', creators: ['Independent Electoral and Boundaries Commission of Kenya'], institution: 'IEBC Kenya',
+    publicationDate: '2013-03-04', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary election record / official institutional report', identifiers: { electionYear: '2013' },
+    description: 'Primary electoral witness for the first general-election cycle under the 2010 constitutional and devolved design. It documents official administration and results, not equal participation, uncoerced choice, fairness in every locality or complete post-election evaluation.'
+  },
+  {
+    id: 'kenyaIebc2022PostElection',
+    label: 'Independent Electoral and Boundaries Commission — Post Election Evaluation of the 2022 General Election',
+    url: 'https://www.iebc.or.ke/uploads/resources/pabjKTV6Xa.pdf',
+    note: 'Official IEBC post-election evaluation used as a primary institutional witness for the 9 August 2022 general election. No report wording, table, scan or PDF page is republished; the Commission’s institutional perspective is kept distinct from court records, observers, parties and local accounts.',
+    accessDate: '2026-09-20', creators: ['Independent Electoral and Boundaries Commission of Kenya'], institution: 'IEBC Kenya',
+    publicationDate: '2022-08-09', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary election evaluation / official institutional report', identifiers: { electionYear: '2022' },
+    description: 'Primary institutional account of electoral preparation, administration and lessons from the 2022 cycle. It documents the Commission’s own evaluation and cannot alone establish electoral credibility, voter experience, party equality or public consensus.'
+  },
+  {
+    id: 'kenyaSupremeCourt2022Election',
+    label: 'Supreme Court of Kenya — 2022 presidential election petition judgment',
+    url: 'https://www.kenyalaw.org/kl/act/fileadmin/index.php?id=11656',
+    note: 'Official Kenya Law record consulted for the 5 September 2022 Supreme Court judgment in the consolidated presidential election petitions. No judgment wording, quotation, scan or PDF page is republished; party submissions, dissenting views and broader electoral records remain open.',
+    accessDate: '2026-09-20', creators: ['Supreme Court of Kenya'], institution: 'Kenya Law / Judiciary of Kenya',
+    publicationDate: '2022-09-05', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary judicial decision / electoral constitutional adjudication', identifiers: { case: '[2022] KESC 54 (KLR)' },
+    description: 'Primary judicial witness for constitutional and electoral adjudication after the 2022 presidential election. It records the Court’s legal reasoning and disposition, not a complete social history, unchallenged public consensus or every dimension of electoral practice.'
+  },
+  {
+    id: 'maxonKenyaIndependenceConstitution2011',
+    label: 'Robert M. Maxon — Kenya’s Independence Constitution: Constitution-Making and End of Empire (2011)',
+    url: 'https://www.bloomsbury.com/ca/kenyas-independence-constitution-9781611470529/',
+    note: 'Fairleigh Dickinson University Press / Bloomsbury record consulted for the 2011, 350-page edition and ISBN 9781611470529. No book wording, quotation, table, chapter or scan is republished; Kenyan-language, archival and local political perspectives remain open.',
+    accessDate: '2026-09-20', creators: ['Robert M. Maxon'], institution: 'Fairleigh Dickinson University Press / Bloomsbury',
+    publicationDate: '2011-06-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of Kenyan independence constitution-making', identifiers: { isbn: '9781611470529' },
+    description: 'Archival history of the Lancaster House negotiations and the independence Constitution, including the contest over majimbo and the rapid alteration of the initial settlement. It supplies a constitutional-decolonization lens, not a complete account of post-independence society or later reform.'
+  },
+  {
+    id: 'branchKenyaHopeDespair2011',
+    label: 'Daniel Branch — Kenya: Between Hope and Despair, 1963–2011 (2011)',
+    url: 'https://yalebooks.co.uk/book/9780300180640/kenya/',
+    note: 'Yale University Press record consulted for the 2011, 352-page edition and ISBN 9780300180640. No book wording, quotation, table, chapter or scan is republished; Kenyan-language sources and post-2011 developments remain open.',
+    accessDate: '2026-09-20', creators: ['Daniel Branch'], institution: 'Yale University Press',
+    publicationDate: '2011-10-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-independence history of Kenya', identifiers: { isbn: '9780300180640' },
+    description: 'National history of Kenya’s first five decades after independence, addressing state formation, ethnicity, land, violence, corruption, economic development and the 2007–2008 crisis. It is a synthetic history rather than a substitute for regional, community or post-2011 scholarship.'
+  },
+  {
+    id: 'cheesemanOxfordHandbookKenya2020',
+    label: 'Nic Cheeseman, Karuti Kanyinga and Gabrielle Lynch (eds.) — The Oxford Handbook of Kenyan Politics (2020)',
+    url: 'https://books.google.co.ke/books?id=TZ3SDwAAQBAJ',
+    note: 'Oxford University Press record consulted for the 2020, 784-page edited volume. No chapter wording, quotation, table, chapter scan or adapted material is republished; the volume’s chapter-level perspectives and later election research remain open.',
+    accessDate: '2026-09-20', creators: ['Nic Cheeseman', 'Karuti Kanyinga', 'Gabrielle Lynch'], institution: 'Oxford University Press',
+    publicationDate: '2020-02-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited political history and country study', identifiers: { isbn: '9780198815693' },
+    description: 'Edited country study covering historical political development, elections, ethnicity, constitutionalism, devolution and regional politics. It triangulates national narratives through multiple specialist chapters rather than claiming one exhaustive interpretation of Kenya.'
+  },
+  {
+    id: 'hornsbyKenyaHistoryIndependence2024',
+    label: 'Charles Hornsby — Kenya: A History Since Independence (2024)',
+    url: 'https://www.bloomsbury.com/ca/kenya-9781350362246/',
+    note: 'I.B. Tauris / Bloomsbury record consulted for the 2024 edition and ISBN 9781350362246. No book wording, quotation, table, chapter or scan is republished; local-language, archival and post-2024 research remain open.',
+    accessDate: '2026-09-20', creators: ['Charles Hornsby'], institution: 'I.B. Tauris / Bloomsbury',
+    publicationDate: '2024-03-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-independence national history', identifiers: { isbn: '9781350362246' },
+    description: 'Long post-independence history organized around land, money, power, economic policy, autonomy and the distribution of resources between classes and communities. It adds a recent synthetic account, but does not close regional, linguistic, gendered or post-2022 evidence gaps.'
+  },
+  {
+    id: 'murungaStruggleNewConstitution2014',
+    label: 'Godwin R. Murunga, Duncan Okello and Anders Sjögren (eds.) — Kenya: The Struggle for a New Constitutional Order (2014)',
+    url: 'https://www.bloomsbury.com/ca/kenya-9781780323657/',
+    note: 'Zed Books / Bloomsbury record consulted for the 2014 edited volume on Kenya’s constitutional struggle. No chapter wording, quotation, table, chapter scan or adapted material is republished; the constitutional process and implementation remain open.',
+    accessDate: '2026-09-20', creators: ['Godwin R. Murunga', 'Duncan Okello', 'Anders Sjögren'], institution: 'Zed Books / Bloomsbury',
+    publicationDate: '2014', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Kenyan constitutional reform', identifiers: { isbn: '9781780323657' },
+    description: 'Edited study of Kenya’s long constitutional struggle, post-election crisis and the 2010 settlement, including debates over legitimacy, devolution and constitutionalism. It provides competing reform perspectives and does not establish completed transformation.'
+  },
+  {
+    id: 'branchDefeatingMauMau2009',
+    label: 'Daniel Branch — Defeating Mau Mau, Creating Kenya: Counterinsurgency, Civil War, and Decolonization (2009)',
+    url: 'https://openlibrary.org/books/OL23192833M/Defeating_Mau_Mau_creating_Kenya',
+    note: 'Cambridge University Press catalogue record consulted for the 2009 edition and ISBN 9780521113823. No book wording, quotation, table, chapter or scan is republished; Kenyan-language, community and memory sources remain open.',
+    accessDate: '2026-09-20', creators: ['Daniel Branch'], institution: 'Cambridge University Press',
+    publicationDate: '2009', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Mau Mau, counterinsurgency and decolonization', identifiers: { isbn: '9780521113823' },
+    description: 'Study of the Mau Mau war, loyalism, counterinsurgency and local political legacies. It helps prevent a simple national-liberation narrative, while its Central Highlands focus does not represent every Kenyan region, community or anti-colonial current.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -1596,6 +1696,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('nepal') || source.id.startsWith('whelptonHistoryNepal') || source.id.startsWith('huttHimalayanPeoplesWar') || source.id.startsWith('malagodiConstitutionalNationalismNepal') || source.id.startsWith('huttOntaPublicCultureNepal') || source.id.startsWith('ghaiCottrellNepal') ? 'Nepalese constitutional, conflict and political history'
       : source.id.startsWith('sudan') || source.id.startsWith('woodwardSudan') || source.id.startsWith('berridgeCivilUprisingsSudan') || source.id.startsWith('berridgeUnfinishedDemocracy') || source.id.startsWith('deWaalRealPoliticsHorn') || source.id.startsWith('oetteBabikerConstitutionMaking') ? 'Sudanese constitutional, conflict and political history'
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
+      : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
       : source.id.startsWith('vietnam') || source.id.startsWith('sidelConstitutionVietnam') || source.id.startsWith('sternRenovatingVietnameseParty') || source.id.startsWith('vasavakulVietnam') || source.id.startsWith('buiConstitutionalChangeSocialistWorld') || source.id.startsWith('guillemotHistoireVietnamContemporain') ? 'Vietnamese constitutional, socialist and political history'
