@@ -1,6 +1,86 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'gambiaConstitution1997Moj',
+    label: 'Attorney General’s Chambers and Ministry of Justice of The Gambia — Constitution of The Gambia, 1997 (2002 revision)',
+    url: 'https://www.moj.gm/downloads',
+    note: 'Official Ministry of Justice downloads page consulted for the 1997 Constitution as listed with its 2002 revision. No constitutional wording, translation, scan or PDF page is republished; formal design, amendments, implementation and lived experience remain distinct questions.',
+    accessDate: '2026-09-20', creators: ['Attorney General’s Chambers and Ministry of Justice of The Gambia'], institution: 'Government of The Gambia, Ministry of Justice',
+    publicationDate: '1997', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official government archive', identifiers: { constitutionYear: '1997', revisionYear: '2002' },
+    description: 'Primary legal witness to the Second Republic’s formal sovereignty, presidential and legislative institutions, rights, religion, citizenship and constitutional review. It records constitutional design, not uniform implementation or public consent.'
+  },
+  {
+    id: 'gambiaIecPresidentialElection2016',
+    label: 'Independent Electoral Commission of The Gambia — Presidential Election Results, 1 December 2016',
+    url: 'https://iec.gm/ova_doc/presidential-election-results-1st-december-2016/',
+    note: 'Official IEC page and attached results document consulted for the 1 December 2016 presidential election. No results table, wording, scan or PDF is republished; observer, court, party, media, local-voter and implementation evidence remain open.',
+    accessDate: '2026-09-20', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    publicationDate: '2016-12-01', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official presidential election results / electoral institution record', identifiers: { electionDate: '2016-12-01' },
+    description: 'Primary institutional witness to the official 2016 presidential result that preceded the constitutional crisis and transfer of power. It documents the announced contest and outcome, not by itself electoral freedom, equal competition, coercion, participation quality or nationwide consent.'
+  },
+  {
+    id: 'gambiaUnscResolution2337',
+    label: 'United Nations Security Council — Resolution 2337 on the situation in The Gambia',
+    url: 'https://digitallibrary.un.org/record/856865?ln=en&v=pdf',
+    note: 'UN Digital Library record consulted for Resolution 2337, adopted unanimously on 19 January 2017, endorsing recognition of Adama Barrow as president-elect and requesting a constitutional transfer of power. No resolution wording, translation, scan or PDF page is republished.',
+    accessDate: '2026-09-20', creators: ['United Nations Security Council'], institution: 'United Nations',
+    publicationDate: '2017-01-19', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French', 'Arabic'],
+    sourceType: 'United Nations Security Council resolution / official diplomatic record', identifiers: { resolution: '2337', adoptionDate: '2017-01-19' },
+    description: 'Primary diplomatic record of the regional and international response to the post-election crisis. It documents a legal-diplomatic position on the electoral outcome and transfer of power, not a complete account of Gambian public opinion or the later implementation of transition reforms.'
+  },
+  {
+    id: 'gambiaTrrcFinalReport2021Moj',
+    label: 'Government of The Gambia — Truth, Reconciliation and Reparations Commission Final Report, 2021',
+    url: 'https://www.moj.gm/wp-content/uploads/2024/12/Volume-1-and-2-GENERAL-INTRODUCTION-AND-EX-PRESIDENT-JAMMEH-S-FINANCIAL-DEALINGS-CORRUPTION-BANK-ACC.pdf',
+    note: 'Official Ministry of Justice archive consulted for the 2021 TRRC final-report series, including institutional hearings on the AFPRC/APRC period, media, political opponents and security institutions. No report wording, testimony, table, scan or PDF page is republished; witness disagreement, government response and implementation remain open.',
+    accessDate: '2026-09-20', creators: ['Truth, Reconciliation and Reparations Commission of The Gambia'], institution: 'Government of The Gambia, Ministry of Justice',
+    publicationDate: '2021-11-25', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official truth-commission report archive / transitional-justice record', identifiers: { reportDate: '2021-11-25' },
+    description: 'Primary transitional-justice record for testimony and institutional hearings about the 1994–2017 authoritarian period. It documents an official inquiry and collected witness evidence, not an uncontested national narrative or proof that every allegation was judicially established.'
+  },
+  {
+    id: 'hughesPerfectPoliticalHistoryGambia2006',
+    label: 'Arnold Hughes and David Perfect — A Political History of The Gambia, 1816–1994 (2006)',
+    url: 'https://boydellandbrewer.com/book/a-political-history-of-the-gambia-1816-1994-9781580461269/',
+    note: 'University of Rochester Press / Boydell & Brewer record consulted for the 2006, 530-page book (paperback 2008) and its documentary and interview base. No book wording, quotation, table, chapter or scan is republished; the pre-1994 scope is not extended silently into the Jammeh or Barrow periods.',
+    accessDate: '2026-09-20', creators: ['Arnold Hughes', 'David Perfect'], institution: 'University of Rochester Press / Boydell & Brewer',
+    publicationDate: '2006', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history', identifiers: { isbn: '9781580462303', paperbackIsbn: '9781580461269', pages: '530' },
+    description: 'Comprehensive political history from British rule and Bathurst through independence, PPP dominance, electoral politics, the 1981 coup attempt and the 1994 military coup. It supplies the long-run colonial and First Republic baseline but ends before the Second Republic.'
+  },
+  {
+    id: 'saineParadoxThirdWaveGambia2009',
+    label: 'Abdoulaye Saine — The Paradox of Third-Wave Democratization in Africa: The Gambia under AFPRC–APRC Rule, 1994–2008 (2009)',
+    url: 'https://www.bloomsbury.com/ca/paradox-of-thirdwave-democratization-in-africa-9780739129210/',
+    note: 'Lexington Books / Bloomsbury record consulted for the 2009 monograph and its 1994–2008 scope. No book wording, quotation, table, chapter or scan is republished; Saine’s political-economy interpretation remains distinct from official records, other Gambian scholars and post-2008 evidence.',
+    accessDate: '2026-09-20', creators: ['Abdoulaye Saine'], institution: 'Lexington Books / Bloomsbury',
+    publicationDate: '2009', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of democratization, authoritarianism and political economy', identifiers: { isbn: '9780739129210' },
+    description: 'Book-length study of the military and quasi-military regimes after the 1994 coup, Jammeh’s electoral authoritarianism, governance, socioeconomic crisis and human-rights violations. Its interpretation is bounded to 1994–2008 and should not be treated as the whole of Gambian society or later transition politics.'
+  },
+  {
+    id: 'saineCeesaySallStateSocietyGambia2013',
+    label: 'Abdoulaye Saine, Ebrima Ceesay and Ebrima Sall (eds.) — State and Society in the Gambia since Independence: 1965–2012 (2013)',
+    url: 'https://africaworldpressbooks.com/state-and-society-in-the-gambia-since-independence-edited-by-abdoulaye-saine-ebrima-ceesay-and-ebrima-sall/',
+    note: 'Africa World Press and library records consulted for the 2013, 585-page multidisciplinary volume, including chapters on electoral politics, constitutional law-making, authoritarianism, trade unions, regional integration, gender and social change. No chapter wording, quotation, table or scan is republished; the edited perspectives are not treated as a single consensus.',
+    accessDate: '2026-09-20', creators: ['Abdoulaye Saine', 'Ebrima Ceesay', 'Ebrima Sall'], institution: 'Africa World Press',
+    publicationDate: '2013', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length multidisciplinary edited volume', identifiers: { isbn: '9781592219049', paperbackIsbn: '9781592219032', pages: '585' },
+    description: 'Multidisciplinary postcolonial volume connecting the First and Second Republics to constitutional law, elections, political economy, gender, civil society and social change. Its chapter diversity helps avoid reducing Gambian politics to the presidency, but individual chapters remain bounded studies.'
+  },
+  {
+    id: 'nabanehAbebeSoweGambiaTransition2022',
+    label: 'Satang Nabaneh, Adem Abebe and Gaye Sowe (eds.) — The Gambia in Transition: Towards a New Constitutional Order (2022)',
+    url: 'https://www.pulp.up.ac.za/edited-collections/the-gambia-in-transition-towards-a-new-constitutional-order',
+    note: 'Pretoria University Law Press record consulted for the peer-reviewed 2022, 333-page edited volume and its constitutional, human-rights and governance contributions. The electronic edition is marked CC BY 4.0 by the publisher; this atlas still uses original paraphrase and links only, not reproduced text.',
+    accessDate: '2026-09-20', creators: ['Satang Nabaneh', 'Adem Abebe', 'Gaye Sowe'], institution: 'Pretoria University Law Press, University of Pretoria',
+    publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed book-length edited volume on constitutional transition', identifiers: { isbn: '9781776411658', pages: '333', license: 'CC BY 4.0' },
+    description: 'Post-2017 constitutional and governance scholarship on rights, rule of law, gender, accountability and the proposed new constitutional order. It extends the case beyond the election crisis while preserving the difference between reform proposals, institutional practice and current politics.'
+  },
+  {
     id: 'sepFarabiAtlas',
     label: 'Thérèse-Anne Druart — al-Farabi (Stanford Encyclopedia of Philosophy)',
     url: 'https://plato.stanford.edu/entries/al-farabi/',
@@ -1973,6 +2053,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
   discipline: source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
+      : source.id.startsWith('gambia') || source.id.startsWith('hughesPerfectPoliticalHistoryGambia') || source.id.startsWith('saineParadoxThirdWaveGambia') || source.id.startsWith('saineCeesaySallStateSocietyGambia') || source.id.startsWith('nabanehAbebeSoweGambiaTransition') ? 'Gambian constitutional, democratization and political history'
       : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') ? 'South African constitutional law and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
         : source.id.startsWith('knightMexican') ? 'Mexican Revolution and constitutional history'
