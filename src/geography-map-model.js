@@ -9,7 +9,7 @@ export const MAP_MAX_ZOOM = 10;
 export const WORLD_VIEW = Object.freeze({ x: 0, y: 0, k: 1 });
 const projection = geoEqualEarth().fitExtent([[16, 16], [944, 484]], { type: 'Sphere' });
 const path = geoPath(projection);
-const atlasIds = { '004': 'afghanistan', '076': 'brazil', '050': 'bangladesh', '144': 'sri-lanka', '524': 'nepal', '250': 'france', '276': 'germany', '288': 'ghana', '356': 'india', '360': 'indonesia', '380': 'italy', '392': 'japan', '566': 'nigeria', '586': 'pakistan', '608': 'philippines', '764': 'thailand', '458': 'malaysia', '064': 'bhutan', '231': 'ethiopia', '484': 'mexico', '620': 'portugal', '400': 'jordan', '414': 'kuwait', '512': 'oman', '682': 'saudi-arabia', '710': 'south-africa', '724': 'spain', '776': 'tonga', '818': 'egypt', '012': 'algeria', '788': 'tunisia', '434': 'libya', '729': 'sudan', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
+const atlasIds = { '004': 'afghanistan', '076': 'brazil', '050': 'bangladesh', '144': 'sri-lanka', '524': 'nepal', '250': 'france', '276': 'germany', '288': 'ghana', '356': 'india', '360': 'indonesia', '380': 'italy', '392': 'japan', '566': 'nigeria', '586': 'pakistan', '608': 'philippines', '764': 'thailand', '458': 'malaysia', '064': 'bhutan', '231': 'ethiopia', '484': 'mexico', '620': 'portugal', '400': 'jordan', '414': 'kuwait', '512': 'oman', '682': 'saudi-arabia', '710': 'south-africa', '724': 'spain', '776': 'tonga', '818': 'egypt', '012': 'algeria', '788': 'tunisia', '434': 'libya', '504': 'morocco', '729': 'sudan', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
 const atlasPlaceIds = { '010': ['antarctica'] };
 const atlasNames = Object.fromEntries(GEOGRAPHY_COUNTRIES.map(({ id, name }) => [id, name]));
 
