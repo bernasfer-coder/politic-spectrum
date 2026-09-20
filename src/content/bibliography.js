@@ -9854,6 +9854,48 @@ export const BIBLIOGRAPHY_METADATA = {
     languages: ['English'],
     description: 'Official report on the 2013 general election, used as a primary witness for the electoral framework, administration and transition from one elected civilian government to another. It does not prove equal participation, provincial uniformity or the absence of disputes.',
   },
+  pakistanEcpGeneralElection2018: {
+    accessDate: '2026-09-20', creators: ['Election Commission of Pakistan'], institution: 'Election Commission of Pakistan',
+    sourceType: 'official electoral report / primary institutional record', evidenceRole: 'primary', discipline: 'Pakistani constitutional, civil–military and electoral history',
+    publicationDate: '2018', publisher: 'Election Commission of Pakistan', identifiers: {}, confidence: 'high', languages: ['English'],
+    description: 'Official report on Pakistan’s 2018 general election and related electoral activity. It documents the Election Commission’s administrative and post-election record, not representative consent, fair competition or a complete political history.',
+  },
+  pakistanNationalAssemblyNoConfidence2022: {
+    accessDate: '2026-09-20', creators: ['National Assembly of Pakistan'], institution: 'National Assembly of Pakistan',
+    sourceType: 'primary parliamentary proceeding / official record', evidenceRole: 'primary', discipline: 'Pakistani constitutional, civil–military and electoral history',
+    publicationDate: '2022-04-10', publisher: 'National Assembly of Pakistan', identifiers: {}, confidence: 'high', languages: ['English'],
+    description: 'Official parliamentary record for the April 2022 no-confidence episode that ended Imran Khan’s premiership. It establishes a formal institutional event, not the whole civil–military conflict or a settled interpretation of constitutional legitimacy.',
+  },
+  pakistanEcpAnnualReport2024: {
+    accessDate: '2026-09-20', creators: ['Election Commission of Pakistan'], institution: 'Election Commission of Pakistan',
+    sourceType: 'official electoral report / primary institutional record', evidenceRole: 'primary', discipline: 'Pakistani constitutional, civil–military and electoral history',
+    publicationDate: '2024', publisher: 'Election Commission of Pakistan', identifiers: {}, confidence: 'high', languages: ['English'],
+    description: 'Official report on Pakistan’s 2024 general election, used to bound the contemporary case at the election record. It provides administrative evidence while leaving contested mandates, court decisions, party restrictions and post-election implementation open.',
+  },
+  jaffrelotPakistanCrossroads2016: {
+    accessDate: '2026-09-20', creators: ['Christophe Jaffrelot'], institution: 'Columbia University Press',
+    sourceType: 'scholarly edited volume on Pakistani politics and external relations', evidenceRole: 'secondary', discipline: 'Pakistani constitutional, civil–military and electoral history',
+    publicationDate: '2016-04', publisher: 'Columbia University Press', identifiers: { isbn: '9780231173063', ebookIsbn: '9780231540254' }, confidence: 'high', languages: ['English'],
+    description: 'Peer-reviewed edited volume on Pakistan’s domestic and external political dynamics, including civil–military relations, parties, judicial activism, internal security, economy and regional diplomacy. It is independent background and not a complete post-2018 history.',
+  },
+  rizviPoliticalConstitutionalEngineering2024: {
+    accessDate: '2026-09-20', creators: ['Hasan Askari Rizvi'], institution: 'Sang-e-Meel Publications / State Bank of Pakistan Library',
+    sourceType: 'book-length Pakistani political and constitutional history', evidenceRole: 'secondary', discipline: 'Pakistani constitutional, civil–military and electoral history',
+    publicationDate: '2024', publisher: 'Sang-e-Meel Publications', identifiers: { isbn: '9789693536140', pages: '895' }, confidence: 'high', languages: ['English'],
+    description: 'Long book-length account of Pakistan’s political and constitutional engineering, state-building, elections, protest and civil–military relations. It supplies a Pakistani political-science perspective and is not exhaustive evidence for every province, party or post-2024 development.',
+  },
+  kamranChequeredPastPakistan2024: {
+    accessDate: '2026-09-20', creators: ['Tahir Kamran'], institution: 'Reaktion Books',
+    sourceType: 'book-length Pakistani national and political history', evidenceRole: 'secondary', discipline: 'Pakistani constitutional, civil–military and electoral history',
+    publicationDate: '2024-07-01', publisher: 'Reaktion Books', identifiers: { isbn: '9781789149135', ebookIsbn: '9781789149654', pages: '568' }, confidence: 'high', languages: ['English'],
+    description: 'Recent national history linking Pakistan’s plural society, post-1947 political change, military and bureaucratic dominance, religious conservatism and contemporary crisis. It is a distinct historical frame, not a uniform account of every community or current administration.',
+  },
+  gilaniRitualElectionsPakistan2024: {
+    accessDate: '2026-09-20', creators: ['Ijaz Shafi Gilani'], institution: 'Lightstone Publishers',
+    sourceType: 'book-length Pakistani electoral history and political study', evidenceRole: 'secondary', discipline: 'Pakistani constitutional, civil–military and electoral history',
+    publicationDate: '2024', publisher: 'Lightstone Publishers', identifiers: { isbn: '9789697162819', pages: '255' }, confidence: 'high', languages: ['English'],
+    description: 'Book-length study of Pakistan’s elections from 1970 through 2018 using electoral history and survey-based analysis of voters, parties and political change. It supplies a focused electoral perspective and does not cover the 2024 election or establish one national preference.',
+  },
   bangladeshConstitution1972: {
     accessDate: '2026-09-20',
     creators: ['Constituent Assembly of Bangladesh'],

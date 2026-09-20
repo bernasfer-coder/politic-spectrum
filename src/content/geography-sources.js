@@ -1912,6 +1912,90 @@ const sources = [
     description: 'Official report on Pakistan’s 2013 general election. It documents the election administration and results as an institutional record; litigation, party accounts, local variation and independent observation require separate review.'
   },
   {
+    id: 'pakistanEcpGeneralElection2018',
+    label: 'Election Commission of Pakistan — Annual Report on General Elections 2018',
+    url: 'https://www.ecp.gov.pk/storage/files/3/03-ECP%20Annual%20Report%202018.pdf',
+    note: 'Official Election Commission annual report and post-election review consulted as a primary witness for the 25 July 2018 general election, the electoral framework and the third successive civilian transition claimed by the institution. It is not treated as independent proof of equal participation, clean administration, provincial uniformity or the absence of disputes; no report wording, table or PDF is republished.',
+    accessDate: '2026-09-20',
+    creators: ['Election Commission of Pakistan'], institution: 'Election Commission of Pakistan',
+    publicationDate: '2018', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral report / primary institutional record',
+    identifiers: {},
+    description: 'Official report on Pakistan’s 2018 general election and related presidential, Senate and by-election activity. It documents the electoral administration’s own record and post-election review, not representative consent, fair competition or a complete political history.'
+  },
+  {
+    id: 'pakistanNationalAssemblyNoConfidence2022',
+    label: 'National Assembly of Pakistan — Proceedings on the no-confidence resolution against the Prime Minister (10 April 2022)',
+    url: 'https://na.gov.pk/uploads/documents/625d409dd2d91_338.pdf',
+    note: 'Official National Assembly proceedings consulted as a primary parliamentary witness for the April 2022 no-confidence vote and the constitutional crisis around the executive and legislature. No proceeding wording, scan or PDF is republished; Supreme Court orders, party records, provincial politics and competing interpretations require separate review.',
+    accessDate: '2026-09-20',
+    creators: ['National Assembly of Pakistan'], institution: 'National Assembly of Pakistan',
+    publicationDate: '2022-04-10', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary parliamentary proceeding / official record',
+    identifiers: {},
+    description: 'Official parliamentary record for the constitutional no-confidence episode that ended Imran Khan’s premiership in April 2022. It establishes a formal institutional event, not the whole civil–military conflict or a settled interpretation of constitutional legitimacy.'
+  },
+  {
+    id: 'pakistanEcpAnnualReport2024',
+    label: 'Election Commission of Pakistan — Annual Report on General Elections 2024',
+    url: 'https://www.ecp.gov.pk/storage/files/2/annual%20report/Annual%20Report-2024-web.pdf',
+    note: 'Official Election Commission annual report consulted as a primary witness for the 8 February 2024 general election, its administration and post-election institutional record. It is not treated as independent proof of electoral fairness, equal participation, party access, provincial uniformity or the absence of litigation; no report wording, table or PDF is republished.',
+    accessDate: '2026-09-20',
+    creators: ['Election Commission of Pakistan'], institution: 'Election Commission of Pakistan',
+    publicationDate: '2024', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral report / primary institutional record',
+    identifiers: {},
+    description: 'Official institutional report on Pakistan’s 2024 general election. It bounds the contemporary case at the election record and provides primary administrative evidence while leaving contested mandates, court decisions, party restrictions and post-election implementation open.'
+  },
+  {
+    id: 'jaffrelotPakistanCrossroads2016',
+    label: 'Christophe Jaffrelot (ed.) — Pakistan at the Crossroads: Domestic Dynamics and External Pressures (2016)',
+    url: 'https://cup.columbia.edu/book/pakistan-at-the-crossroads/9780231540254/',
+    note: 'Columbia University Press record consulted for the 2016 edited volume’s metadata, 360-page extent, ISBN 9780231173063 and its multi-author treatment of civil–military relations, parties, judiciary, internal security, economy and foreign relations. The full volume and its Urdu/Pakistani source base were not independently collated; no chapter wording is reproduced and contributors are not treated as a single consensus.',
+    accessDate: '2026-09-20',
+    creators: ['Christophe Jaffrelot'], institution: 'Columbia University Press',
+    publicationDate: '2016-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on Pakistani politics and external relations',
+    identifiers: { isbn: '9780231173063', ebookIsbn: '9780231540254' },
+    description: 'Peer-reviewed book-length edited volume on Pakistan’s domestic and external political dynamics, including civil–military relations, parties, judicial activism, internal security, the economy and regional diplomacy. It adds independent perspectives for the transition’s background rather than a complete post-2018 history.'
+  },
+  {
+    id: 'rizviPoliticalConstitutionalEngineering2024',
+    label: 'Hasan Askari Rizvi — Pakistan Political and Constitutional Engineering (2024)',
+    url: 'https://sbplibrary.sbp.org.pk/book/detail/106247/1',
+    note: 'State Bank of Pakistan library and publisher metadata consulted for the 2024 Sang-e-Meel volume, ISBN 9789693536140 and 895-page extent. The complete monograph, Urdu/Pakistani source base and its treatment of later political events were not independently collated; no book wording is reproduced and its interpretations remain attributed.',
+    accessDate: '2026-09-20',
+    creators: ['Hasan Askari Rizvi'], institution: 'Sang-e-Meel Publications / State Bank of Pakistan Library',
+    publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Pakistani political and constitutional history',
+    identifiers: { isbn: '9789693536140', pages: '895' },
+    description: 'Long book-length account of Pakistan’s political and constitutional engineering, state-building, civilian and military-bureaucratic governments, elections, protest and civil–military relations. It supplies a Pakistani political-science perspective and is not treated as exhaustive evidence for every province, party or post-2024 development.'
+  },
+  {
+    id: 'kamranChequeredPastPakistan2024',
+    label: 'Tahir Kamran — Chequered Past, Uncertain Future: The History of Pakistan (2024)',
+    url: 'https://reaktionbooks.co.uk/work/chequered-past-uncertain-future',
+    note: 'Reaktion Books record consulted for the 2024 publication, 568-page extent, ISBN 9781789149135 and contemporary national-history scope. The complete monograph, Urdu and regional source base were not independently collated; no book wording is reproduced and its national narrative is not generalized to all Pakistanis or regions.',
+    accessDate: '2026-09-20',
+    creators: ['Tahir Kamran'], institution: 'Reaktion Books',
+    publicationDate: '2024-07-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Pakistani national and political history',
+    identifiers: { isbn: '9781789149135', ebookIsbn: '9781789149654', pages: '568' },
+    description: 'A recent national history linking Pakistan’s plural society, post-1947 political change, military and bureaucratic dominance, religious conservatism and contemporary crisis. It supplies a distinct historical frame alongside constitutional and institutional studies, not a uniform account of every community or current administration.'
+  },
+  {
+    id: 'gilaniRitualElectionsPakistan2024',
+    label: 'Ijaz Shafi Gilani — The Ritual of Elections in Pakistan 1970–2018: A Process without a Product (2024)',
+    url: 'https://www.libertybooks.com/the-ritual-of-election-in-pakistan-1970-2018-9789697162819',
+    note: 'Lightstone Publishers metadata and an academic review record consulted for the 2024, 255-page electoral-history volume, ISBN 9789697162819. The survey data, full book and underlying election records were not independently collated; no wording, table or dataset is reproduced and its framework remains attributed.',
+    accessDate: '2026-09-20',
+    creators: ['Ijaz Shafi Gilani'], institution: 'Lightstone Publishers',
+    publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Pakistani electoral history and political study',
+    identifiers: { isbn: '9789697162819', pages: '255' },
+    description: 'Book-length study of Pakistan’s elections from 1970 through 2018 using electoral history and survey-based analysis of voters, parties and political change. It provides a focused electoral perspective and does not by itself cover the 2024 election or establish a single national political preference.'
+  },
+  {
     id: 'bangladeshConstitution1972',
     label: 'Constituent Assembly of Bangladesh — Constitution of the People’s Republic of Bangladesh',
     url: 'https://bdlaws.minlaw.gov.bd/act-print-367.html',
@@ -3625,7 +3709,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('libya') || source.id.startsWith('vandewalleHistoryModernLibya') || source.id.startsWith('stJohnLibyaColonyRevolution') || source.id.startsWith('pargeterRiseFallQaddafi') || source.id.startsWith('lacherLibyasFragmentation') || source.id.startsWith('pargeterTribesStateLibya') || source.id.startsWith('haimzadehCoeurLibya') ? 'Libyan constitutional, conflict and political history'
       : source.id.startsWith('sriLanka') || source.id.startsWith('deSilvaHistorySriLanka') || source.id.startsWith('wickramasingheSriLanka') || source.id.startsWith('spencerSriLanka') || source.id.startsWith('amarasingamBassSriLanka') ? 'Sri Lankan constitutional, postwar and political history'
       : source.id.startsWith('bangladesh') || source.id.startsWith('vanSchendelHistoryBangladesh') || source.id.startsWith('riazBangladesh') || source.id.startsWith('choudhuryConstitutionalDevelopmentBangladesh') || source.id.startsWith('obaidullahParliamentBangladesh') ? 'Bangladeshi constitutional, parliamentary and political history'
-      : source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('pakistanEcp') ? 'Pakistani constitutional, civil–military and electoral history'
+      : source.id.startsWith('pakistan') || source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('jaffrelotPakistanCrossroads') || source.id.startsWith('rizviPoliticalConstitutionalEngineering') || source.id.startsWith('kamranChequeredPastPakistan') || source.id.startsWith('gilaniRitualElectionsPakistan') ? 'Pakistani constitutional, civil–military and electoral history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') || source.id.startsWith('ayeeAmoahAliduGhana') || source.id.startsWith('pallerDemocracyGhana') ? 'Ghanaian constitutional transition and political history'
       : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeriaInec') ? 'Nigerian constitutional, electoral and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') ? 'Ethiopian revolutionary, federal and political history'
