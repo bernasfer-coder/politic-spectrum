@@ -4381,6 +4381,66 @@ const sources = [
     sourceType: 'international environmental protocol / official institutional text',
     description: 'The Protocol designates Antarctica a natural reserve devoted to peace and science and prohibits mineral-resource activities except scientific research. It does not expire in 2048; that date concerns a possible review-conference procedure.',
   },
+  {
+    id: 'thompsonPhilippinesDemocraticBacksliding2023',
+    label: 'Mark R. Thompson — The Philippines: From ‘People Power’ to Democratic Backsliding (2023)',
+    url: 'https://doi.org/10.1017/9781009398466',
+    note: 'City University of Hong Kong and Cambridge University Press records consulted for the peer-reviewed Politics and Society in Southeast Asia Element (2023; ISBN 9781009398480; DOI 10.1017/9781009398466). No book wording, quotation or scan is republished; Thompson’s structural and agency-centered interpretation is attributed and not treated as a complete national audit.',
+    accessDate: '2026-09-20',
+    creators: ['Mark R. Thompson'], institution: 'Cambridge University Press',
+    publicationDate: '2023-05-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Cambridge Element on Philippine democratic backsliding and political history',
+    identifiers: { isbn: '9781009398480', doi: '10.1017/9781009398466' },
+    description: 'A peer-reviewed book-length study of the post-1986 democratic narrative, Duterte-era strongman politics and Ferdinand Marcos Jr.’s 2022 victory. It interprets oligarchic instability, executive aggrandizement, political violence, mass poverty and elite pushback while retaining agency and institutional contestation.',
+  },
+  {
+    id: 'arugayEncinasGamesChangesFears2024',
+    label: 'Aries A. Arugay and Jean Encinas-Franco (eds.) — Games, Changes, and Fears: The Philippines from Duterte to Marcos Jr. (2024)',
+    url: 'https://uhpress.hawaii.edu/title/games-changes-and-fears-the-philippines-from-duterte-to-marcos-jr/',
+    note: 'University of Hawai‘i Press and ISEAS Publishing record consulted for the 13-chapter edited volume (2024; 361 pages; ISBN 9789815203172). No chapter wording, quotation, table or scan is republished; Filipino scholars’ distinct assessments of policy continuity, change and democratic strain remain attributed.',
+    accessDate: '2026-09-20',
+    creators: ['Aries A. Arugay (editor)', 'Jean Encinas-Franco (editor)'], institution: 'ISEAS – Yusof Ishak Institute',
+    publicationDate: '2024-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of the Duterte–Marcos Jr. succession and Philippine politics',
+    identifiers: { isbn: '9789815203172', pages: '361', chapters: '13' },
+    description: 'A book-length edited volume by Filipino academics and practitioners on the Duterte legacy and the early Marcos Jr. administration, including domestic politics, economy, foreign policy, society, dynastic cartels, civil liberties, securitization, information politics and polarization. It supplies multiple locally grounded perspectives rather than one verdict on the country.',
+  },
+  {
+    id: 'calimbahinDresselBeyondGeopoliticsPhilippines2026',
+    label: 'Cleo Calimbahin and Björn Dressel (eds.) — Beyond Geopolitics: The Philippines in the New Marcos Era (2026)',
+    url: 'https://bookshop.iseas.edu.sg/publication/8007',
+    note: 'ISEAS Publishing record consulted for the 18-chapter edited volume at the midpoint of the Marcos Jr. presidency (2026; 506 pages; ISBN 9789815361032). No chapter wording, quotation, table or scan is republished; its 2022–2025 assessment is treated as a dated scholarly horizon, not a current-status claim.',
+    accessDate: '2026-09-20',
+    creators: ['Cleo Calimbahin (editor)', 'Björn Dressel (editor)'], institution: 'ISEAS – Yusof Ishak Institute',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited assessment of the Marcos Jr. administration and Philippine governance',
+    identifiers: { isbn: '9789815361032', wholePublicationIsbn: '9789815361049', pages: '506', chapters: '18' },
+    description: 'A book-length edited assessment of the Marcos Jr. administration through its 2022–2025 midpoint, covering dynastic competition, contested historical narratives, oligarchic continuity, economic and agricultural policy, devolution, Bangsamoro governance, media, climate and foreign and security policy. Its contributors describe a contradictory governance landscape without treating the administration as a settled national outcome.',
+  },
+  {
+    id: 'philippinesSenate2022ElectionProclamation',
+    label: 'Congress of the Philippines — Resolution of Both Houses No. 1, 2022 presidential and vice-presidential canvass',
+    url: 'https://legacy.senate.gov.ph/lisdata/3761634065%21.pdf',
+    note: 'Official Senate legislative record consulted for the joint congressional canvass and proclamation adopted 25 May 2022. No resolution wording, result table or scan is republished; the formal proclamation is distinguished from independent observation, voter motivation and broader assessments of electoral quality.',
+    accessDate: '2026-09-20',
+    creators: ['Senate and House of Representatives of the Philippines'], institution: 'Congress of the Philippines',
+    publicationDate: '2022-05-25', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official congressional election canvass and proclamation',
+    identifiers: { electionDate: '2022-05-09', resolution: 'Resolution of Both Houses No. 1' },
+    description: 'Primary legal and electoral record of Congress’s 2022 joint canvass and proclamation of Ferdinand Marcos Jr. and Sara Duterte as president and vice-president. It anchors the formal result without proving equal participation, voter motives or the later performance of the administration.',
+  },
+  {
+    id: 'philippinesComelec2025NationalLocalElectionResults',
+    label: 'Commission on Elections of the Philippines — 2025 National and Local Elections results portal',
+    url: 'https://www.comelec.gov.ph/?r=2025NLE/ElectionResults/',
+    note: 'Official COMELEC results portal consulted for the 12 May 2025 national, local and BARMM election record. No result table, interface text, image or data export is republished; the commission’s record is distinguished from independent observation, voter experience, party claims and broader political interpretation.',
+    accessDate: '2026-09-20',
+    creators: ['Commission on Elections of the Philippines'], institution: 'Commission on Elections of the Philippines',
+    publicationDate: '2025-05-12', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official national, local and BARMM election results portal',
+    identifiers: { electionDate: '2025-05-12' },
+    description: 'Primary institutional record for the 2025 midterm national, local and BARMM election results used to extend the case’s documented endpoint. It establishes an electoral record but not the quality, equality, motives or social meaning of every contest.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -4392,6 +4452,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('gambia') || source.id.startsWith('hughesPerfectPoliticalHistoryGambia') || source.id.startsWith('saineParadoxThirdWaveGambia') || source.id.startsWith('saineCeesaySallStateSocietyGambia') || source.id.startsWith('nabanehAbebeSoweGambiaTransition') ? 'Gambian constitutional, democratization and political history'
       : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') || source.id.startsWith('southall') || source.id.startsWith('booysen') || source.id.startsWith('glaser') || source.id.startsWith('buthelezi') ? 'South African constitutional law and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
+          : source.id.startsWith('philippine') || source.id.startsWith('thompsonAntiMarcos') || source.id.startsWith('timbermanChangelessLand') || source.id.startsWith('abinalesAmoroso') || source.id.startsWith('chopraPhilippines') || source.id.startsWith('bonoanDresselPhilippine') || source.id.startsWith('thompsonPhilippines') || source.id.startsWith('arugayEncinasGamesChanges') || source.id.startsWith('calimbahinDresselBeyondGeopolitics') ? 'Philippine constitutional, oligarchic and democratic political history'
           : source.id.startsWith('knightMexican') || source.id.startsWith('eisenstadtCourtingDemocracyMexico') || source.id.startsWith('shirkMexicoNewPolitics') || source.id.startsWith('oxfordHandbookMexicanPolitics') || source.id.startsWith('olneyLocalMexico') || source.id.startsWith('middlebrookDilemmasPoliticalChangeMexico') || source.id.startsWith('mexicoIne') ? 'Mexican constitutional, democratic-transition and political history'
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') || source.id.startsWith('fulbrookHistoryGermany') || source.id.startsWith('zelikowRice') || source.id.startsWith('greenHoughMiskimmon') || source.id.startsWith('vonBeymeBusch') || source.id.startsWith('germanyBundestag') ? 'German postwar and reunified constitutional and political history'
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') || source.id.startsWith('gundleParkerNewItalianRepublic') || source.id.startsWith('newellPoliticsItaly') || source.id.startsWith('cottaVerzichelliPoliticalInstitutionsItaly') || source.id.startsWith('ignaziRissoWellhoferItalianParties') || source.id.startsWith('italyPoliticalElection') ? 'Italian constitutional, party-system and political history'
