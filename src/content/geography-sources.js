@@ -1807,6 +1807,86 @@ const sources = [
     description: 'Field-based study of peasant grievances, guerrilla–civilian relations, popular support, coercion and war legacies in Zimbabwe’s liberation struggle. It prevents a simple heroic account but is a bounded regional and social study, not a complete national history or proof of uniform popular support.'
   },
   {
+    id: 'rwandaArushaPeaceAgreement1993Un',
+    label: 'United Nations — The United Nations and Rwanda, 1993–1996 (Arusha Peace Agreement annex)',
+    url: 'https://documents.un.org/doc/undoc/gen/nl9/600/08/pdf/nl960008.pdf',
+    note: 'United Nations official document consulted for the 4 August 1993 Arusha Peace Agreement and its protocols on rule of law, power-sharing, refugee return, armed-force integration and national unity. The original agreement is in French with an English translation; no agreement wording, translation, scan or PDF page is republished, and implementation and competing Rwandan accounts remain open.',
+    accessDate: '2026-09-20', creators: ['United Nations'], institution: 'United Nations',
+    publicationDate: '1993-08-04', evidenceRole: 'primary', confidence: 'high', languages: ['French', 'English'],
+    sourceType: 'peace agreement and protocols / official United Nations document', identifiers: { agreementDate: '1993-08-04' },
+    description: 'Primary legal-diplomatic witness to the negotiated framework for ending the civil war and establishing rule of law, broad-based power-sharing, refugee return, armed-force integration and national unity. It documents an intended settlement, not its full implementation or later political order.'
+  },
+  {
+    id: 'rwandaConstitution2003Revised2015Minijust',
+    label: 'Ministry of Justice of Rwanda — Constitution of the Republic of Rwanda of 2003 revised in 2015',
+    url: 'https://www.migeprof.gov.rw/fileadmin/user_upload/Migeprof/Laws/The_Constitution_of_the_Republic_of_Rwanda_of_2003_Revised_in_2015.pdf',
+    note: 'Official Gazette constitutional PDF consulted as a primary witness to Rwanda’s 2003 constitutional settlement as revised on 24 December 2015. No constitutional wording, translation, scan or PDF page is republished; the Kinyarwanda, French and English versions, drafting history, amendments, implementation and lived experience remain distinct research questions.',
+    accessDate: '2026-09-20', creators: ['Ministry of Justice of Rwanda'], institution: 'Republic of Rwanda, Official Gazette',
+    publicationDate: '2015-12-24', evidenceRole: 'primary', confidence: 'high', languages: ['Kinyarwanda', 'French', 'English'],
+    sourceType: 'primary constitutional text / official gazette publication', identifiers: { constitutionYear: '2003', revisionDate: '2015-12-24' },
+    description: 'Primary legal witness for the post-genocide Republic’s formal sovereignty, national-unity principles, rights, state institutions, presidential arrangements and electoral framework. It documents constitutional design rather than equal implementation, public consensus or the experience of every community.'
+  },
+  {
+    id: 'rwandaNecTwentyYears2017',
+    label: 'National Electoral Commission of Rwanda — Twenty Years Promoting Electoral Democracy in Rwanda, 2017 election section',
+    url: 'https://nec.gov.rw/wp-content/uploads/2025/04/NEC-20-Yrs-1-95-1.pdf',
+    note: 'Official National Electoral Commission institutional history consulted for its account of the 2017 presidential election, registered voters, candidates and final result. No report wording, results table, scan or PDF page is republished; observer, court, party, media, local and voter evidence remain open.',
+    accessDate: '2026-09-20', creators: ['National Electoral Commission of Rwanda'], institution: 'National Electoral Commission of Rwanda',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'official electoral history and institutional report', identifiers: { electionYear: '2017' },
+    description: 'Primary institutional witness to the Commission’s retrospective record of the 2017 presidential election. It documents an official result and electoral administration, not by itself electoral freedom, equal competition, uncoerced choice, public consensus or every locality’s experience.'
+  },
+  {
+    id: 'reyntjensPoliticalGovernanceRwanda2013',
+    label: 'Filip Reyntjens — Political Governance in Post-Genocide Rwanda (2013)',
+    url: 'https://www.cambridge.org/core/books/political-governance-in-postgenocide-rwanda/FBE61BE6969F5A67BB66F37801B55FCB',
+    note: 'Cambridge University Press record consulted for the 2013 book, ISBN 9781107043558, online DOI 10.1017/CBO9781107338647 and publisher extent of 315 pages. No book wording, quotation, table, chapter or scan is republished; this critical interpretation is kept distinct from official self-description and other scholarship.',
+    accessDate: '2026-09-20', creators: ['Filip Reyntjens'], institution: 'Cambridge University Press',
+    publicationDate: '2013', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of post-genocide political governance', identifiers: { isbn: '9781107043558', onlineIsbn: '9781107338647', doi: '10.1017/CBO9781107338647', pages: '315' },
+    description: 'Critical political study of RPF hegemony, elections, management of political space, human rights, regional relations, social engineering, information and justice. It is a major scholarly interpretation, not a complete social history or proof that every claim is uncontested.'
+  },
+  {
+    id: 'thomsonRwandaPrecariousPeace2018',
+    label: 'Susan Thomson — Rwanda: From Genocide to Precarious Peace (2018)',
+    url: 'https://yalebooks.co.uk/book/9780300197396/rwanda/',
+    note: 'Yale University Press record consulted for the 2018 edition, ISBN 9780300197396, eBook ISBN 9780300235913 and publisher extent of 344 pages. No book wording, quotation, table, chapter or scan is republished; its bottom-up and critical perspective remains distinct from official accounts and other histories.',
+    accessDate: '2026-09-20', creators: ['Susan Thomson'], institution: 'Yale University Press',
+    publicationDate: '2018-03-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern political and social history', identifiers: { isbn: '9780300197396', ebookIsbn: '9780300235913', pages: '344' },
+    description: 'Modern history of Rwanda before, during and after the genocide, centered on the RPF’s reconstruction project, ordinary citizens, reconciliation, security, development and the precariousness of peace. It challenges celebratory narratives without representing every Rwandan experience.'
+  },
+  {
+    id: 'strausWaldorfRemakingRwanda2011',
+    label: 'Scott Straus and Lars Waldorf (eds.) — Remaking Rwanda: State Building and Human Rights after Mass Violence (2011)',
+    url: 'https://uwpress.wisc.edu/Books/R/Remaking-Rwanda',
+    note: 'University of Wisconsin Press and library records consulted for the 2011 edited volume, print ISBN 9780299282646, eBook ISBN 9780299282639 and 382-page print extent. No chapter wording, quotation, table, scan or adapted material is republished; the volume’s multiple perspectives remain distinct and selected.',
+    accessDate: '2026-09-20', creators: ['Scott Straus', 'Lars Waldorf'], institution: 'University of Wisconsin Press',
+    publicationDate: '2011-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited volume on state-building, rights and post-conflict politics', identifiers: { isbn: '9780299282646', ebookIsbn: '9780299282639', pages: '382' },
+    description: 'Edited scholarly volume examining political reform, genocide ideology, accountability, civil society, aid, land, memory, economic reconstruction and regional war. It provides multiple critical perspectives rather than a single consensus or a complete national archive.'
+  },
+  {
+    id: 'guichaouaFromWarToGenocide2015',
+    label: 'André Guichaoua — From War to Genocide: Criminal Politics in Rwanda, 1990–1994 (English ed., 2015)',
+    url: 'https://uwpress.wisc.edu/Books/F/From-War-to-Genocide2',
+    note: 'University of Wisconsin Press record consulted for the English translation, ISBN 9780299298203, paperback ISBN 9780299298241, eBook ISBN 9780299298234 and 478-page print extent. The book is translated from French; no book wording, quotation, table, chapter or scan is republished, and its 1990–1994 scope is not treated as evidence of post-1994 consensus.',
+    accessDate: '2026-09-20', creators: ['André Guichaoua', 'Don E. Webster', 'Don Webster'], institution: 'University of Wisconsin Press',
+    publicationDate: '2015-12', evidenceRole: 'secondary', confidence: 'high', languages: ['French original', 'English translation'],
+    sourceType: 'book-length study of civil war, genocide and political crisis', identifiers: { isbn: '9780299298203', paperbackIsbn: '9780299298241', ebookIsbn: '9780299298234', pages: '478' },
+    description: 'Detailed study of the political, social and economic context of the 1990–1994 crisis, the Arusha process, genocide and competing actors. It supplies essential pre-1994 context and historiographical caution, not a complete history of the post-genocide state.'
+  },
+  {
+    id: 'prunierRwandaCrisis1998',
+    label: 'Gérard Prunier — The Rwanda Crisis, 1959–1994: History of a Genocide (1998 edition)',
+    url: 'https://hurstpublishers.com/book/the-rwanda-crisis-1959-1994/',
+    note: 'Hurst Publishers record consulted for the 1998 edition, ISBN 9781850653721 and 424-page paperback extent. No book wording, quotation, table, chapter or scan is republished; its long-run and critical history is used as context, not as a substitute for post-1994 local, legal or social evidence.',
+    accessDate: '2026-09-20', creators: ['Gérard Prunier'], institution: 'Hurst Publishers',
+    publicationDate: '1998-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of Rwanda’s crisis and genocide', identifiers: { isbn: '9781850653721', pages: '424' },
+    description: 'Long-run history of Rwanda’s colonial and postcolonial crisis through the 1994 genocide, emphasizing ideological, political and economic processes rather than primordial explanations. It is indispensable context but ends before the post-genocide constitutional order studied here.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -1848,6 +1928,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
       : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
       : source.id.startsWith('uganda') || source.id.startsWith('kanyeihambaConstitutionalPoliticalHistoryUganda') || source.id.startsWith('mutibwaUganda') || source.id.startsWith('reidHistoryModernUganda') || source.id.startsWith('mamdaniPoliticsClassUganda') || source.id.startsWith('mamdaniSlowPoisonUganda') ? 'Ugandan decolonization, constitutional, military and movement-state history'
+      : source.id.startsWith('rwanda') || source.id.startsWith('reyntjensPoliticalGovernanceRwanda') || source.id.startsWith('thomsonRwandaPrecariousPeace') || source.id.startsWith('strausWaldorfRemakingRwanda') || source.id.startsWith('guichaouaFromWarToGenocide') || source.id.startsWith('prunierRwandaCrisis') ? 'Rwandan post-conflict, constitutional, developmental and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'

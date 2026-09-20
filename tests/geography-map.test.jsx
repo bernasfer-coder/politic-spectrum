@@ -58,6 +58,7 @@ describe('map geometry and filter contracts', () => {
     expect(MAP_COUNTRIES_BY_ID.kenya.name).toBe('Kenya');
     expect(MAP_COUNTRIES_BY_ID.uganda.name).toBe('Uganda');
     expect(MAP_COUNTRIES_BY_ID.zimbabwe.name).toBe('Zimbabwe');
+    expect(MAP_COUNTRIES_BY_ID.rwanda.name).toBe('Rwanda');
     expect(MAP_COUNTRIES_BY_ID.vietnam.name).toBe('Vietnam');
     expect(MAP_COUNTRIES_BY_ID.sudan.name).toBe('Sudan');
     expect(MAP_COUNTRIES_BY_ID.mexico.name).toBe('Mexico');
@@ -154,7 +155,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(49);
+    expect(cards()).toHaveLength(50);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });
