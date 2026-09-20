@@ -1,6 +1,116 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'maliConstitution1992Assemblee',
+    label: 'Assemblée nationale du Mali — Constitution du Mali (1992)',
+    url: 'https://assemblee-nationale.ml/constitution-du-mali',
+    note: 'Official Malian parliamentary constitutional page consulted for the 1992 text, including its referendum and promulgation record. No French constitutional wording, translation, scan or page asset is republished; formal design, amendments, suspension, implementation and lived experience remain distinct questions.',
+    accessDate: '2026-09-20', creators: ['Assemblée nationale du Mali'], institution: 'Assemblée nationale du Mali',
+    publicationDate: '1992-02-25', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional text / official parliamentary archive', identifiers: { constitutionYear: '1992', referendumDate: '1992-01-12', promulgationDate: '1992-02-25' },
+    description: 'Primary legal witness to the Third Republic’s formal order: popular sovereignty, pluralist democracy, secular state, rights, constitutional review, executive and legislative institutions, cultural and linguistic diversity and decentralization. It records constitutional design, not uniform implementation or democratic consent.'
+  },
+  {
+    id: 'maliAlgiersPeaceAgreement2015Un',
+    label: 'United Nations — Agreement on Peace and Reconciliation in Mali resulting from the Algiers process (2015)',
+    url: 'https://documents.un.org/doc/undoc/gen/n15/150/26/pdf/n1515026.pdf',
+    note: 'Official UN document record consulted for the 2015 Agreement and its annexes. No agreement wording, translation, scan or PDF page is republished; the settlement’s intended institutional, decentralization, security and reconciliation design is not treated as proof of complete implementation or public consent.',
+    accessDate: '2026-09-20', creators: ['Government of Mali', 'Coordination of Azawad Movements', 'Platform', 'United Nations'], institution: 'United Nations',
+    publicationDate: '2015-05-20', evidenceRole: 'primary', confidence: 'high', languages: ['French', 'English'],
+    sourceType: 'peace agreement / official international primary record', identifiers: { agreementDate: '2015-05-20' },
+    description: 'Primary peace-process witness to proposed political, institutional, security, development and reconciliation arrangements between the Malian state and signatory northern movements after the 2012 crisis.'
+  },
+  {
+    id: 'maliTransitionCharter2020Gazette',
+    label: 'République du Mali — Charte de la transition, décret n° 2020-0072/PT-RM (2020)',
+    url: 'https://constitutionnet.org/sites/default/files/2020-10/mali-jo-2020-17-sp-EN_05Oct2020.pdf',
+    note: 'Government Gazette copy consulted for the French and English transition-charter record enacted on 1 October 2020. No charter wording, translation, scan or PDF page is republished; the legal text records the transitional design, not its full implementation or public consent.',
+    accessDate: '2026-09-20', creators: ['République du Mali'], institution: 'Journal officiel de la République du Mali',
+    publicationDate: '2020-10-01', evidenceRole: 'primary', confidence: 'high', languages: ['French', 'English'],
+    sourceType: 'primary transition charter / official gazette record', identifiers: { decree: '2020-0072/PT-RM', adoptionDate: '2020-09-12', promulgationDate: '2020-10-01' },
+    description: 'Primary legal witness to the post-coup transition’s institutions, national consultation claims, National Transitional Council, executive arrangement, elections horizon and relationship to the 1992 Constitution.'
+  },
+  {
+    id: 'maliConstitution2023Wipo',
+    label: 'République du Mali — Constitution de la République du Mali (promulgated 22 July 2023)',
+    url: 'https://www.wipo.int/wipolex/ar/text/597994',
+    note: 'WIPO Lex legal-database record consulted for the French 2023 constitutional text and promulgation decree. No constitutional wording, translation, scan or PDF page is republished; the official legal witness is distinguished from referendum politics, implementation and later constitutional practice.',
+    accessDate: '2026-09-20', creators: ['République du Mali'], institution: 'WIPO Lex / Journal officiel de la République du Mali',
+    publicationDate: '2023-07-22', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional text / official legal database', identifiers: { decree: '2023-0401/PT-RM', referendumDate: '2023-06-18', promulgationDate: '2023-07-22' },
+    description: 'Primary legal witness to the post-2020 constitutional refounding, including sovereignty, national history, cultural and linguistic diversity, rights, state principles and institutional arrangements. It establishes formal design, not a settled assessment of transition or current governance.'
+  },
+  {
+    id: 'mannEmpiresNgosSahel2015',
+    label: 'Gregory Mann — From Empires to NGOs in the West African Sahel: The Road to Nongovernmentality (2015)',
+    url: 'https://www.cambridge.org/core/books/from-empires-to-ngos-in-the-west-african-sahel/A091DE71429912E256C6A1E093CD7274',
+    note: 'Cambridge University Press record consulted for the 2015 monograph (ISBN 9781107016545 / 9781139061209; 304 pages). No book wording, quotation, table, chapter or scan is republished; its Sahel-wide and archival interpretation is not treated as a complete national history of Mali.',
+    accessDate: '2026-09-20', creators: ['Gregory Mann'], institution: 'Cambridge University Press',
+    publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Sahelian history of sovereignty, decolonization and NGOs', identifiers: { isbn: '9781107016545', hardcoverIsbn: '9781107602526', ebookIsbn: '9781139061209', pages: '304' },
+    description: 'Archival and historical study of sovereignty, decolonization, migration, aid, NGOs and political rationalities in the Sahel, with Mali/Soudan at its center. It challenges a simple state-weakness narrative and supplies a transnational perspective on postcolonial governance.'
+  },
+  {
+    id: 'lecocqDisputedDesertMali2010',
+    label: 'Baz Lecocq — Disputed Desert: Decolonisation, Competing Nationalisms and Tuareg Rebellions in Northern Mali (2010)',
+    url: 'https://brill.com/display/title/11408?language=en',
+    note: 'Brill and library catalogue records consulted for the 2010 monograph (ISBN 9789004139831; 433 pages). No book wording, quotation, table, chapter or scan is republished; the northern Mali and Tuareg-centered history is not generalized to all Malians or all regions.',
+    accessDate: '2026-09-20', creators: ['Baz Lecocq'], institution: 'Brill',
+    publicationDate: '2010', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of decolonization, nationalism and Tuareg rebellions', identifiers: { isbn: '9789004139831', paperbackIsbn: '9789004190283', pages: '433' },
+    description: 'Detailed political and social history of the relation between the Malian state and Tuareg communities, including the 1963–1964, 1990–1996 and 2006–2009 uprisings, colonial legacies, race and social hierarchy, competing nationalisms and the making of Mali.'
+  },
+  {
+    id: 'wingConstructingDemocracyMali2008',
+    label: 'Susanna D. Wing — Constructing Democracy in Transitioning Societies of Africa: Constitutionalism and Deliberation in Mali (2008)',
+    url: 'https://link.springer.com/book/10.1057/9780230612075',
+    note: 'Palgrave Macmillan/Springer and AfricaBib records consulted for the 2008 monograph (ISBN 9780230604636; XV + 245 pages). No book wording, quotation, table, chapter or scan is republished; the constitutional-transition fieldwork and 1991–1999 focus remain bounded.',
+    accessDate: '2026-09-20', creators: ['Susanna D. Wing'], institution: 'Palgrave Macmillan',
+    publicationDate: '2008', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of constitutionalism, deliberation and democratization', identifiers: { isbn: '9780230604636', hardcoverIsbn: '9780230604636', ebookIsbn: '9780230612075', pages: '245' },
+    description: 'Fieldwork-based study of the 1991–1999 transition, national conference, constitutional dialogue, decentralization, elections, inclusion, women’s rights and legitimacy. It provides a distinct process-oriented interpretation of Mali’s Third Republic rather than assuming that elections alone completed democratization.'
+  },
+  {
+    id: 'schulzPoliticalLegitimacyMali2021',
+    label: 'Dorothea E. Schulz — Political Legitimacy in Postcolonial Mali (2021)',
+    url: 'https://www.jstor.org/stable/j.ctv1grbbbg',
+    note: 'Boydell & Brewer/James Currey and library records consulted for the 2021 monograph (ISBN 9781847012685; XI + 239 pages). No book wording, quotation, table, chapter or scan is republished; the south-west Mali field study is not generalized to all localities, communities or the post-2020 transition.',
+    accessDate: '2026-09-20', creators: ['Dorothea E. Schulz'], institution: 'James Currey / Boydell & Brewer',
+    publicationDate: '2021', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length anthropological study of postcolonial legitimacy', identifiers: { isbn: '9781847012685', ebookIsbn: '9781800101654', pages: '239' },
+    description: 'Anthropological study of how people in a rural south-western Malian area attribute or withhold legitimacy from state institutions and representatives amid the 2012 crisis, peace treaty, armed violence and Islamic political mobilization. It adds grounded social evidence without standing for every region or political actor.'
+  },
+  {
+    id: 'wingGovernanceInterventionMali2024',
+    label: 'Susanna D. Wing — Governance and Intervention in Mali: Elusive Security (2024)',
+    url: 'https://www.routledge.com/Governance-and-Intervention-in-Mali-Elusive-Security/Wing/p/book/9781032444413',
+    note: 'Routledge publisher record consulted for the 2024 book (ISBN 9781032444413; 184 pages). No book wording, quotation, table, chapter or scan is republished; its security and intervention synthesis is kept distinct from official records, local histories and post-2024 developments.',
+    accessDate: '2026-09-20', creators: ['Susanna D. Wing'], institution: 'Routledge',
+    publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of governance, security intervention and democratic disillusion', identifiers: { isbn: '9781032444413', pages: '184' },
+    description: 'Recent historical and political analysis of Mali’s security crisis, democratic disillusion, governance failures, corruption and external military engagement, including the 1991, 2012, 2020 and intra-2020 coups. It extends the case’s political-history interpretation to the 2023 constitutional horizon without making a current classification.'
+  },
+  {
+    id: 'fombaConstitutionMali1992',
+    label: 'Brahima Fomba — La constitution malienne de 1992: de la rigidité à l’impossible révision (2020)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/la-constitution-malienne-de-1992/10526',
+    note: 'Éditions L’Harmattan record consulted for the French-language 2020 book (ISBN 9782343216522; 364 pages). No book wording, quotation, table, chapter or scan is republished; the constitutional-law analysis is attributed and kept distinct from the primary text, political actors and later transition.',
+    accessDate: '2026-09-20', creators: ['Brahima Fomba'], institution: 'L’Harmattan',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language constitutional and political study', identifiers: { isbn: '9782343216522', pages: '364' },
+    description: 'French-language constitutional-law study of the 1992 Constitution and attempted revisions associated with the Konaré, Amadou Toumani Touré and Ibrahim Boubacar Keïta presidencies, including the role of the Constitutional Court. It supplies a Malian legal perspective on institutional continuity and revision limits.'
+  },
+  {
+    id: 'konarePoliticalPartiesMali2016',
+    label: 'Alpha Oumar Konaré — Histoire des partis politiques au Mali: du pluralisme au parti unique (1946–1968) (2016)',
+    url: 'https://www.caurislivres.com/index.php/catalogue/en-francais/culture-societe-et-politique/92-histoire-des-partis-politiques-au-mali-du-pluralisme-au-parti-unique-1946-1968.html',
+    note: 'Cauris Livres record consulted for the French-language 2016 volume (ISBN 9789995260309; 614 pages). No book wording, quotation, table, chapter or scan is republished; the author’s former-presidential and archival perspective is attributed and not treated as a neutral national consensus.',
+    accessDate: '2026-09-20', creators: ['Alpha Oumar Konaré'], institution: 'Cauris Livres',
+    publicationDate: '2016', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language political-party history', identifiers: { isbn: '9789995260309', pages: '614' },
+    description: 'Archival French-language history of political parties and associations from 1946 through the early post-independence period and the 1968 coup. It adds locally rooted party-history evidence to the later constitutional, Tuareg, legitimacy and intervention studies.'
+  },
+  {
     id: 'coteDivPresidenceConstitution2016',
     label: 'Présidence de la République de Côte d’Ivoire — Constitution de la troisième République (2016)',
     url: 'https://www.presidence.ci/en/ivory-coast/the-constitution/',
@@ -2383,6 +2493,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') ? 'Senegalese constitutional, democratic and political history'
       : source.id.startsWith('liberia') || source.id.startsWith('liebenow') || source.id.startsWith('sawyer') || source.id.startsWith('ellisMaskAnarchyLiberia') || source.id.startsWith('adebajoLiberia') ? 'Liberian constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
+      : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
