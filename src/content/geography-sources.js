@@ -1457,6 +1457,106 @@ const sources = [
     description: 'Book-length study of the 1992–2000 peace and democratization process, including RENAMO’s transformation into a political party, FRELIMO’s shift from party-state to multiparty politics and elite bargaining around democratic legitimacy. It addresses the settlement’s durability and limits rather than treating formal institutions as sufficient proof of inclusion.',
   },
   {
+    id: 'tanzaniaArticlesOfUnion1964Vpo',
+    label: 'Vice President’s Office, United Republic of Tanzania — Articles of Union (1964)',
+    url: 'https://www.vpo.go.tz/uploads/publications/en-1592553829-articles_of_union.pdf',
+    note: 'Official Union record consulted as a primary witness to the 26 April 1964 Union of Tanganyika and Zanzibar. No article wording, translation, scan or PDF page is republished; the originals, negotiations and later constitutional interpretation remain open.',
+    accessDate: '2026-09-20', creators: ['Government of Tanganyika', 'Government of Zanzibar'], institution: 'Vice President’s Office, United Republic of Tanzania',
+    publicationDate: '1964-04-26', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional witness; Swahili originals and negotiation records not collated'],
+    sourceType: 'primary constitutional instrument / official Union record', identifiers: { unionDate: '1964-04-26' },
+    description: 'Primary legal witness for the Union’s establishment and allocation of Union and non-Union matters. It anchors institutional design and does not by itself establish equal consent, later practice, or the full political history of Tanganyika, Zanzibar or the Union.'
+  },
+  {
+    id: 'tanzaniaArushaDeclaration1967',
+    label: 'Julius Nyerere / Tanganyika African National Union — Arusha Declaration (1967)',
+    url: 'https://www.files.ethz.ch/isn/125524/8004_Arusha_Declaration.pdf',
+    note: 'Archival institutional copy of the 5 February 1967 Arusha Declaration used as a primary witness to TANU’s socialist and self-reliance programme. No declaration wording, translation, scan or PDF page is republished; the Swahili record, party debates and implementation remain open.',
+    accessDate: '2026-09-20', creators: ['Julius K. Nyerere', 'Tanganyika African National Union'], institution: 'ETH Zurich / International Relations and Security Network archive',
+    publicationDate: '1967-02-05', evidenceRole: 'primary', confidence: 'high', languages: ['English archival witness; Swahili original not collated'],
+    sourceType: 'primary party declaration / African-socialist programme', identifiers: { declarationDate: '1967-02-05' },
+    description: 'Primary ideological witness for Ujamaa, self-reliance, public leadership rules, social ownership and African unity. It records a party programme and political justification, not uniform social agreement or completed implementation.'
+  },
+  {
+    id: 'tanzaniaConstitution1977Nao',
+    label: 'United Republic of Tanzania — Constitution of the United Republic of Tanzania (1977)',
+    url: 'https://www.nao.go.tz/uploads/Constitution_of_the_United_Republic_of_Tanzania_en.pdf',
+    note: 'Official English constitutional PDF hosted by the National Audit Office of Tanzania, consulted as a primary witness to the 1977 Union constitutional order. No constitutional wording, translation, scan or PDF page is republished; the Swahili version, amendments and implementation remain open.',
+    accessDate: '2026-09-20', creators: ['United Republic of Tanzania'], institution: 'National Audit Office of Tanzania',
+    publicationDate: '1977-04-26', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional witness; Swahili text not collated'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionDate: '1977-04-26' },
+    description: 'Primary legal witness for the Union’s constitutional institutions, citizenship, rights language, party-state setting and distribution of Union authority. It documents formal design, not actual equality, accountability, electoral competition or public consent.'
+  },
+  {
+    id: 'tanzaniaConstitution1992Bunge',
+    label: 'Parliament of Tanzania — Eighth Constitutional Amendment and return to multiparty politics (1992)',
+    url: 'https://polis.parliament.go.tz/bills_and_acts',
+    note: 'Official parliamentary bills-and-acts index consulted for the 29 May 1992 Eighth Constitutional Amendment and related constitutional changes. No bill wording, scan or PDF page is republished; the full parliamentary debate, commission record and implementation remain open.',
+    accessDate: '2026-09-20', creators: ['Parliament of the United Republic of Tanzania'], institution: 'Bunge Polis / Parliament of Tanzania',
+    publicationDate: '1992-05-29', evidenceRole: 'primary', confidence: 'high', languages: ['English and Swahili institutional records'],
+    sourceType: 'primary constitutional amendment / official parliamentary record', identifiers: { amendment: 'Eighth Constitutional Amendment, 1992' },
+    description: 'Primary institutional witness for the legal return to multiparty politics. It anchors constitutional change, but does not by itself show the breadth of opposition access, electoral fairness, social pluralism or the 1995 election’s lived effects.'
+  },
+  {
+    id: 'tanzaniaInec2015',
+    label: 'National Electoral Commission of Tanzania — 2015 general-election report and results',
+    url: 'https://www.inec.go.tz/publications/general-election-results',
+    note: 'Official National Electoral Commission publication index consulted for the 2015 presidential, parliamentary and councillor election report. No result table, report wording, scan or PDF is republished; local variation, litigation, observation and party accounts remain open.',
+    accessDate: '2026-09-20', creators: ['National Electoral Commission of Tanzania'], institution: 'National Electoral Commission of Tanzania',
+    publicationDate: '2016-02-17', evidenceRole: 'primary', confidence: 'high', languages: ['Swahili institutional record'],
+    sourceType: 'primary election record / official institutional report', identifiers: { electionYear: '2015' },
+    description: 'Primary electoral witness for the selected contemporary horizon. It documents official administration and results, not equal participation, uncoerced choice, opposition experience, Union-wide consensus or the subsequent political trajectory.'
+  },
+  {
+    id: 'nyerereUjamaaEssays1968',
+    label: 'Julius K. Nyerere — Ujamaa: Essays on Socialism (1968)',
+    url: 'https://books.google.com/books/about/Ujamaa_Essays_on_Socialism.html?id=NrILAAAAIAAJ',
+    note: 'Google Books and library-catalogue record consulted for the 1968 Oxford University Press, Dar es Salaam edition (186 pages; ISBN 019501474X). No book wording, quotation, table, chapter or scan is republished; Swahili/English edition history and reception remain open.',
+    accessDate: '2026-09-20', creators: ['Julius K. Nyerere'], institution: 'Oxford University Press',
+    publicationDate: '1968', evidenceRole: 'primary', confidence: 'high', languages: ['English; Swahili source tradition'],
+    sourceType: 'primary political writings / African-socialist programme', identifiers: { isbn: '019501474X' },
+    description: 'Primary collection of Nyerere’s speeches and essays, including the Arusha Declaration and arguments for African socialism, education for self-reliance and Ujamaa. It is a leader’s normative and justificatory voice, not independent evidence of outcomes or unanimous Tanzanian belief.'
+  },
+  {
+    id: 'iliffeModernHistoryTanganyika1979',
+    label: 'John Iliffe — A Modern History of Tanganyika (1979)',
+    url: 'https://unilibrary.zetech.ac.ke/bib/4711',
+    note: 'University library catalogue record consulted for the 1979 Cambridge University Press edition (616 pages; ISBN 0521220246). No book wording, quotation, table, chapter or scan is republished; Swahili, archival and post-independence source review remains open.',
+    accessDate: '2026-09-20', creators: ['John Iliffe'], institution: 'Cambridge University Press',
+    publicationDate: '1979', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history of Tanganyika', identifiers: { isbn: '0521220246' },
+    description: 'Comprehensive modern history of Tanganyika from precolonial and colonial transformations through independence. It supplies long-run social and political context for state formation and nationalism, but is not a complete history of Zanzibar, the Union or post-1979 Tanzania.'
+  },
+  {
+    id: 'prattCriticalPhaseTanzania1976',
+    label: 'Cranford Pratt — The Critical Phase in Tanzania, 1945–1968 (1976)',
+    url: 'https://openlibrary.org/books/OL5199692M/The_critical_phase_in_Tanzania_1945-1968',
+    note: 'Library catalogue record consulted for the 1976 Cambridge University Press monograph (309 pages; ISBN 0521208246). No book wording, quotation, table, chapter or scan is republished; Tanzanian-language party sources and later historiography remain open.',
+    accessDate: '2026-09-20', creators: ['Cranford Pratt'], institution: 'Cambridge University Press',
+    publicationDate: '1976', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Nyerere and the emergence of socialist strategy', identifiers: { isbn: '0521208246' },
+    description: 'Focused political history of the late-colonial and early postcolonial critical phase, emphasizing Nyerere, TANU and the emergence of a socialist strategy. It helps distinguish ideological formation from later implementation, but does not cover the full Union or contemporary multiparty period.'
+  },
+  {
+    id: 'coulsonPoliticalEconomyTanzania2013',
+    label: 'Andrew Coulson — Tanzania: A Political Economy (2nd ed., 2013)',
+    url: 'https://academic.oup.com/book/33093',
+    note: 'Oxford University Press record consulted for the 2013 second edition (originally 1982; ISBN 9780199679966; DOI 10.1093/acprof:oso/9780199679966.001.0001). No book wording, quotation, table, chapter or scan is republished; Tanzanian and Swahili sources remain open.',
+    accessDate: '2026-09-20', creators: ['Andrew Coulson'], institution: 'Oxford University Press',
+    publicationDate: '2013-07-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy history of Tanzania', identifiers: { isbn: '9780199679966', onlineIsbn: '9780191765964', doi: '10.1093/acprof:oso/9780199679966.001.0001' },
+    description: 'Long political-economy study revised with a contemporary introduction, linking colonial inheritance, Ujamaa, state institutions, economic crisis and later market and resource-sector reform. It provides a national political-economic interpretation rather than a uniform account of social experience or current policy.'
+  },
+  {
+    id: 'trippChangingRulesTanzania1997',
+    label: 'Aili Mari Tripp — Changing the Rules: The Politics of Liberalization and the Urban Informal Economy in Tanzania (1997)',
+    url: 'https://publishing.cdlib.org/ucpressebooks/public/book/changing-the-rules-the-politics-of-liberalization-and-the-urban-informal-economy-in-tanzania.html',
+    note: 'University of California Press electronic book record consulted for the 1997 edition (260 pages; ISBN 0520202791). No book wording, quotation, table, chapter or scan is republished; urban, gendered, Swahili and post-1997 evidence remains open.',
+    accessDate: '2026-09-20', creators: ['Aili Mari Tripp'], institution: 'University of California Press',
+    publicationDate: '1997', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of liberalization and urban informal politics in Tanzania', identifiers: { isbn: '0520202791' },
+    description: 'Book-length study of Dar es Salaam and the politics of liberalization, showing how informal actors negotiated or resisted state regulation as socialist controls changed. It adds a social and urban lens to national histories without representing all Tanzanian communities or the entire multiparty period.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
@@ -1496,6 +1596,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('nepal') || source.id.startsWith('whelptonHistoryNepal') || source.id.startsWith('huttHimalayanPeoplesWar') || source.id.startsWith('malagodiConstitutionalNationalismNepal') || source.id.startsWith('huttOntaPublicCultureNepal') || source.id.startsWith('ghaiCottrellNepal') ? 'Nepalese constitutional, conflict and political history'
       : source.id.startsWith('sudan') || source.id.startsWith('woodwardSudan') || source.id.startsWith('berridgeCivilUprisingsSudan') || source.id.startsWith('berridgeUnfinishedDemocracy') || source.id.startsWith('deWaalRealPoliticsHorn') || source.id.startsWith('oetteBabikerConstitutionMaking') ? 'Sudanese constitutional, conflict and political history'
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
+      : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
       : source.id.startsWith('vietnam') || source.id.startsWith('sidelConstitutionVietnam') || source.id.startsWith('sternRenovatingVietnameseParty') || source.id.startsWith('vasavakulVietnam') || source.id.startsWith('buiConstitutionalChangeSocialistWorld') || source.id.startsWith('guillemotHistoireVietnamContemporain') ? 'Vietnamese constitutional, socialist and political history'
       : source.id.startsWith('morocco') || source.id.startsWith('millerHistoryModernMorocco') || source.id.startsWith('waterburyCommanderFaithful') || source.id.startsWith('tozyMonarchieIslamPolitique') || source.id.startsWith('zeghalIslamismMorocco') || source.id.startsWith('boukharsPoliticsMorocco') || source.id.startsWith('madaniConstitutionnalismeProtestataire') ? 'Moroccan constitutional, monarchical and political history'
