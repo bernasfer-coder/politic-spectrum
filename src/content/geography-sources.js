@@ -1,6 +1,136 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'cameroonConstitution1996Presidence',
+    label: 'Republic of Cameroon — Law No. 96/06 of 18 January 1996 amending the Constitution of 2 June 1972, Presidency legal record',
+    url: 'https://www.prc.cm/en/cameroon/constitution',
+    note: 'Official Presidency page and linked certified English witness consulted for an independent summary and link only. No constitutional wording, translation, scan or PDF page is republished; formal bilingual, decentralized and democratic design is not treated as proof of uniform implementation or consent.',
+    accessDate: '2026-09-20', creators: ['Republic of Cameroon'], institution: 'Presidency of the Republic of Cameroon',
+    publicationDate: '1996-01-18', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { lawNumber: '96/06', constitutionalBase: '1972', adoptionDate: '1996-01-18' },
+    description: 'Primary constitutional witness to Cameroon’s post-1990 institutional design: a unitary decentralized, secular, democratic and social state; popular sovereignty; equal-status English and French; rights language; executive, legislative and judicial institutions; and territorial collectivities. It records formal design rather than equal power, implementation or democratic quality.'
+  },
+  {
+    id: 'cameroonConstitution2008Presidence',
+    label: 'Republic of Cameroon — Law No. 2008/001 of 14 April 2008 amending and supplementing the 1996 Constitution, Presidency legal record',
+    url: 'https://www.prc.cm/files/b1/bb/2f/713a4f4be2f2d035457bc8e80de3788b.pdf',
+    note: 'Official Presidency PDF consulted for an independent summary and link only. No amendment wording, translation, scan or PDF page is republished; the constitutional change is distinguished from later political practice and from the absence of a term-limit constraint.',
+    accessDate: '2026-09-20', creators: ['Republic of Cameroon'], institution: 'Presidency of the Republic of Cameroon',
+    publicationDate: '2008-04-14', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary constitutional amendment / official legal record', identifiers: { lawNumber: '2008/001', constitutionalBase: '1996' },
+    description: 'Primary amendment witness to the 2008 revision of the constitutional order, which changed the presidential succession and tenure framework. It is used to date formal institutional change, not to infer electoral freedom, public approval or the character of every subsequent government.'
+  },
+  {
+    id: 'cameroonElecamPresidentialElection2018',
+    label: 'Elections Cameroon (ELECAM) — General report on the 7 October 2018 presidential election, revised and corrected edition',
+    url: 'https://portail.elecam.cm/wp-content/uploads/2025/07/RAPPORT-ELECAM-PRESIDENTIELLE-2018-FR-Revu-et-corrige.pdf',
+    note: 'ELECAM’s institutional report consulted for an independent summary and link only. No report wording, table, scan, result page or PDF image is republished; an election-management record is distinguished from independent observation, opposition claims and a general finding of electoral legitimacy.',
+    accessDate: '2026-09-20', creators: ['Elections Cameroon (ELECAM)'], institution: 'Elections Cameroon / Direction Générale des Elections',
+    publicationDate: '2018-10-07', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral report / official institutional record', identifiers: { electionDate: '2018-10-07', candidates: '9' },
+    description: 'Institutional witness to the 2018 presidential election process, including its legal framework, administration and announced results. It bounds the electoral evidence but cannot establish that all parties, voters or observers accepted the process or that formal participation was substantively equal.'
+  },
+  {
+    id: 'cameroonNationalDialogue2019Presidence',
+    label: 'President of Cameroon — Message to the nation convening the Major National Dialogue, 10 September 2019',
+    url: 'https://www.prc.cm/en/news/speeches-of-the-president/3777-the-head-of-state-s-message-to-the-nation-10-sept-2019',
+    note: 'Official presidential address consulted for an independent summary and link only. No speech wording or translation is republished; the government’s stated agenda is distinguished from participation, negotiation, implementation and the perspectives of conflict-affected communities.',
+    accessDate: '2026-09-20', creators: ['Paul Biya'], institution: 'Presidency of the Republic of Cameroon',
+    publicationDate: '2019-09-10', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary presidential address / official political record', identifiers: { dialogueDates: '2019-09-30 to 2019-10-04' },
+    description: 'Primary political statement announcing a dialogue on the Northwest and Southwest crisis, bilingualism, cultural diversity, reconstruction, displaced people, education, the judicial system, decentralization, demobilization and the diaspora. It records the executive’s agenda, not the completeness or representativeness of the dialogue.'
+  },
+  {
+    id: 'cameroonDialogueMonitoring2020Presidence',
+    label: 'Republic of Cameroon — Decree No. 2020/136 of 23 March 2020 monitoring implementation of Major National Dialogue recommendations',
+    url: 'https://www.prc.cm/en/news/the-acts/decrees/4177-decree-no-2020-136-of-23-march-2020-to-lay-down-the-establishment-organization-and-functioning-of-the-committee-to-follow-up-the-implementation-of-the-recommendations-of-the-major-national-dialogue',
+    note: 'Official decree record consulted for an independent summary and link only. No decree wording, translation, scan or PDF page is republished; creation of a monitoring body is not treated as proof that recommendations were implemented or that conflict ended.',
+    accessDate: '2026-09-20', creators: ['Republic of Cameroon'], institution: 'Presidency of the Republic of Cameroon',
+    publicationDate: '2020-03-23', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary decree / official institutional record', identifiers: { decreeNumber: '2020/136', monitoringScope: 'Major National Dialogue recommendations' },
+    description: 'Primary institutional witness to the state’s post-dialogue implementation architecture. It documents the monitoring committee and its remit, while its existence cannot establish representativeness, accountability, implementation quality or a settlement of the armed conflict.'
+  },
+  {
+    id: 'cameroonElecamPresidentialElection2025Process',
+    label: 'Elections Cameroon (ELECAM) — 2025 presidential election documentation portal',
+    url: 'https://portail.elecam.cm/en/documentation-2/',
+    note: 'ELECAM documentation portal consulted for the 2025 election call, candidate and electoral-register records as a bounded contemporary horizon. No press release, list, scan, result or PDF is republished; the portal is not treated as a complete account of the election, its contestation or later political practice.',
+    accessDate: '2026-09-20', creators: ['Elections Cameroon (ELECAM)'], institution: 'Elections Cameroon / Direction Générale des Elections',
+    publicationDate: '2025-07-11', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary electoral documentation portal / official institutional record', identifiers: { electionDate: '2025-10-12', portalYear: '2025' },
+    description: 'Contemporary institutional record of the 2025 presidential-election process, including the convening of the electorate, candidate documentation and electoral-register materials. It marks a dated research horizon rather than a complete result, participation or legitimacy assessment.'
+  },
+  {
+    id: 'ngohHistoryCameroon1800',
+    label: 'Victor Julius Ngoh — History of Cameroon Since 1800 (1996)',
+    url: 'https://books.google.com/books/about/History_of_Cameroon_Since_1800.html?id=h5UPAQAAMAAJ',
+    note: 'Google Books and WorldCat bibliographic records consulted for the 1996 monograph (Presbook, Limbe; 367 pages). No book wording, quotation, table, chapter, image or scan is republished; the national overview is paired with specialized and competing perspectives.',
+    accessDate: '2026-09-20', creators: ['Victor Julius Ngoh'], institution: 'Presbook / Google Books / WorldCat',
+    publicationDate: '1996', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history of Cameroon and political development', identifiers: { pages: '367', publisher: 'Presbook' },
+    description: 'Broad English-language national history covering precolonial and colonial formations, German rule, the British and French mandates, reunification, independence, Ahidjo and the early Biya period. It supplies a long chronology but is not treated as a complete account of every region, party or later conflict.'
+  },
+  {
+    id: 'josephRadicalNationalismCameroon',
+    label: 'Richard A. Joseph — Radical Nationalism in Cameroun: Social Origins of the U.P.C. Rebellion (1977)',
+    url: 'https://books.google.com/books/about/Radical_Nationalism_in_Cameroun.html?id=D6U4xgEACAAJ',
+    note: 'Google Books, WorldCat and library records consulted for the Clarendon Press monograph (Oxford, 1977; x, 383 pages; ISBN 019822706X). No book wording, quotation, table or scan is republished; the UPC-centered account is attributed and bounded to nationalist origins and rebellion.',
+    accessDate: '2026-09-20', creators: ['Richard A. Joseph'], institution: 'Clarendon Press / Oxford Studies in African Affairs / WorldCat',
+    publicationDate: '1977', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of UPC nationalism and rebellion', identifiers: { isbn: '019822706X', pages: '383' },
+    description: 'Foundational study of the social origins, organization and political claims of the Union des Populations du Cameroun. It centers anti-colonial nationalism, repression and the conflict over independence, while not being generalized into a full account of post-1960 Cameroon or a single ideology of every UPC actor.'
+  },
+  {
+    id: 'ngohSouthernCameroonsConstitutionalHistory',
+    label: 'Victor Julius Ngoh — Southern Cameroons, 1922–1961: A Constitutional History (2001)',
+    url: 'https://catalogue.bnf.fr/ark:/12148/cb38919833k',
+    note: 'Bibliothèque nationale de France, British National Bibliography and Google Books records consulted for the Ashgate monograph (2001; 201 pages; ISBN 0754614018). No book wording, quotation, table, chapter or scan is republished; its constitutional history is used to clarify the Anglophone question, not to settle all contemporary claims.',
+    accessDate: '2026-09-20', creators: ['Victor Julius Ngoh'], institution: 'Ashgate / Bibliothèque nationale de France / British National Bibliography',
+    publicationDate: '2001', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length constitutional history of British Southern Cameroons', identifiers: { isbn: '0754614018', pages: '201' },
+    description: 'Archival constitutional history of British Southern Cameroons under mandate and trusteeship through the 1961 plebiscite and reunification settlement. It supplies a specialized institutional perspective on the roots of the Anglophone question and is not projected onto all Anglophone or Francophone communities.'
+  },
+  {
+    id: 'terrettaNationOutlawsCameroon',
+    label: 'Meredith Terretta — Nation of Outlaws, State of Violence: Nationalism, Grassfields Tradition, and State Building in Cameroon (2014)',
+    url: 'https://catalogue.bnf.fr/ark:/12148/cb43849930p',
+    note: 'Bibliothèque nationale de France and Ohio University Press records consulted for the 2014 monograph (367 pages; ISBN 9780821420690). No book wording, quotation, map, table, image or scan is republished; the Grassfields and Bamileke/Mungo focus is kept regional and historically bounded.',
+    accessDate: '2026-09-20', creators: ['Meredith Terretta'], institution: 'Ohio University Press / Bibliothèque nationale de France',
+    publicationDate: '2014', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of nationalism, Grassfields politics and state building', identifiers: { isbn: '9780821420690', pages: '367' },
+    description: 'Regional and national history of Grassfields governance, Bamileke politics, UPC nationalism, emergency law, warfare and state-building. It complicates centralized national narratives by connecting local authority, international politics and coercion without treating one region as Cameroon in its entirety.'
+  },
+  {
+    id: 'takougangKriegerPoliticalCrossroadsCameroon',
+    label: 'Joseph Takougang and Milton Krieger — African State and Society in the 1990s: Cameroon’s Political Crossroads (1998)',
+    url: 'https://www.routledge.com/African-State-And-Society-In-The-1990s-Cameroons-Political-Crossroads/Takougang-Krieger/p/book/9780813338958',
+    note: 'Routledge bibliographic record consulted for the edited book (1998; ISBN 9780813338958). No chapter wording, quotation, table or scan is republished; the 1990s political-crossroads perspective is distinguished from later conflicts and from a single authorial consensus.',
+    accessDate: '2026-09-20', creators: ['Joseph Takougang', 'Milton Krieger'], institution: 'Westview Press / Routledge',
+    publicationDate: '1998', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on state, society and political crisis', identifiers: { isbn: '9780813338958' },
+    description: 'Edited collection on the Ahidjo–Biya succession, one-party rule, economic decline, the 1990s opening, ghost towns, parties, regional and Anglophone politics, and constitutional and electoral debates. Its contributors are treated as distinct perspectives on a political crossroads rather than a seamless national account.'
+  },
+  {
+    id: 'bouopdaPoliticalHistoryCameroon20C',
+    label: 'Pierre Kamé Bouopda — Histoire politique du Cameroun au XXe siècle (2016)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/histoire-politique-du-cameroun-au-xxe-siecle/22963',
+    note: 'L’Harmattan bibliographic record consulted for the French-language monograph. No book wording, quotation, table or scan is republished; its rights-and-governance narrative is attributed and paired with English-language, regional and conflict-centered histories.',
+    accessDate: '2026-09-20', creators: ['Pierre Kamé Bouopda'], institution: 'L’Harmattan',
+    publicationDate: '2016', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language political history of twentieth-century Cameroon', identifiers: { language: 'French' },
+    description: 'French-language political history organized around the long struggle for political, economic and social rights, the Ahidjo presidency and the Biya presidency. It adds a francophone national account but is not treated as a neutral or exhaustive account of every region, community or conflict perspective.'
+  },
+  {
+    id: 'bouopdaAnglophoneCrisisCameroon',
+    label: 'Pierre Kamé Bouopda — La crise anglophone au Cameroun / The Anglophone Crisis in Cameroon (2018)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/the-anglophone-crisis-in-cameroon/17980',
+    note: 'L’Harmattan and Bibliothèque nationale de France records consulted for the 2018 monograph and English translation (French edition ISBN 9782343140780; English edition ISBN 9782343151557). No book wording, quotation, appendix or scan is republished; its institutional-crisis interpretation is attributed and not treated as a complete conflict history.',
+    accessDate: '2026-09-20', creators: ['Pierre Kamé Bouopda'], institution: 'L’Harmattan / Bibliothèque nationale de France',
+    publicationDate: '2018', evidenceRole: 'secondary', confidence: 'high', languages: ['French', 'English'],
+    sourceType: 'book-length French-language study and authorized English translation of the Anglophone crisis', identifiers: { frenchIsbn: '9782343140780', englishIsbn: '9782343151557', pages: '189' },
+    description: 'Study of the institutionalization of French and British colonial legacies and the political crisis in Anglophone Cameroon, including the conflict that escalated after 2017. It helps distinguish legal-institutional grievances from wider historical and armed-actor claims, while its scope and perspective remain explicit.'
+  },
+  {
     id: 'chadConstitution1996Faolex',
     label: 'Republic of Chad — Constitution of 31 March 1996, FAOLEX legal record',
     url: 'https://faolex.fao.org/docs/pdf/cha117286E.pdf',
@@ -2704,6 +2834,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('liberia') || source.id.startsWith('liebenow') || source.id.startsWith('sawyer') || source.id.startsWith('ellisMaskAnarchyLiberia') || source.id.startsWith('adebajoLiberia') ? 'Liberian constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('chad') || source.id.startsWith('azevedoNationFutureChad') || source.id.startsWith('nolutshunguLimitsAnarchyChad') || source.id.startsWith('azevedoRootsViolenceChad') || source.id.startsWith('powellFrancesWarsChad') || source.id.startsWith('dingammadjiGovernmentsChad') || source.id.startsWith('buijtenhuijsTransitionChad') || source.id.startsWith('haggarTombalbayeChad') || source.id.startsWith('brodyCatchDictatorChad') ? 'Chadian constitutional, civil-war, intervention and transition history'
+      : source.id.startsWith('cameroon') || source.id.startsWith('ngohHistoryCameroon') || source.id.startsWith('josephRadicalNationalismCameroon') || source.id.startsWith('ngohSouthernCameroons') || source.id.startsWith('terrettaNationOutlawsCameroon') || source.id.startsWith('takougangKriegerPoliticalCrossroadsCameroon') || source.id.startsWith('bouopdaPoliticalHistoryCameroon') || source.id.startsWith('bouopdaAnglophoneCrisisCameroon') ? 'Cameroonian constitutional, decolonization, bilingual and Anglophone-crisis history'
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
       : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
