@@ -1285,6 +1285,52 @@ const sources = [
     description: 'A focused book-length study of the political end of absolute monarchy in Siam, centered on the late absolute-monarchy crisis and the 1932 transition. Its focused scope complements broader national histories while not settling every later constitutional or social interpretation.',
   },
   {
+    id: 'ferraraPoliticalDevelopmentThailand2015',
+    label: 'Federico Ferrara — The Political Development of Modern Thailand',
+    url: 'https://www.cambridge.org/core/books/political-development-of-modern-thailand/F343020DD33B32163205265B0BA51E42',
+    note: 'Official Cambridge University Press book record consulted for Ferrara’s book-length empirical history of Thai political development from the late nineteenth century through the post-2006 crisis. The complete monograph, Thai-language sources and cited archives were not independently collated; no book text is reproduced.',
+    accessDate: '2026-09-20',
+    creators: ['Federico Ferrara'], institution: 'Cambridge University Press',
+    publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Thai political-development history',
+    identifiers: { isbn: '9781107449367' },
+    description: 'Book-length analysis of Thailand’s modern political development, including royal, military, bureaucratic, party and electoral institutions. Its longer chronology supplies a distinct institutional perspective for the post-2014 case without treating coups or constitutional change as an unbroken national essence.',
+  },
+  {
+    id: 'chachavalpongpunCoupKingCrisis2020',
+    label: 'Pavin Chachavalpongpun (ed.) — Coup, King, Crisis: A Critical Interregnum in Thailand',
+    url: 'https://macmillan.yale.edu/southeast-asia/coup-king-crisis',
+    note: 'Yale Southeast Asia Studies Monograph 68 record consulted for the edited book-length analysis of the 2014 coup, royal transition, 2017 Constitution and 2019 election. The publisher identifies multiple scholarly contributors and a critical interregnum frame; no chapter text is reproduced and the complete volume and Thai-language evidence were not independently collated.',
+    accessDate: '2026-09-20',
+    creators: ['Pavin Chachavalpongpun (editor)'], institution: 'Yale Southeast Asia Studies / Yale University',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited Thai coup, monarchy and constitutional-transition study',
+    identifiers: { isbn: '9781732610200', hardcoverIsbn: '9781732610217', pages: '379' },
+    description: 'Multi-author book-length study of Thailand’s 2014 coup, the royal transition, 2017 Constitution, 2019 election, judiciary, Sangha, foreign policy, economy, human rights and self-censorship. Its contributors disagree in emphasis; it is used as an attributed scholarly frame, not a complete account of all Thai actors or regions.',
+  },
+  {
+    id: 'thailandConstitution2017Ect',
+    label: 'Election Commission of Thailand — Constitution of the Kingdom of Thailand B.E. 2560 (2017)',
+    url: 'https://www.ect.go.th/en/ect_en/db_211_ect_en_download_40',
+    note: 'Official Election Commission of Thailand constitutional-download page listing the Thai Constitution B.E. 2560 and an unofficial English translation. The page is used as a primary legal witness for institutional design; the translation is not treated as a substitute for the Thai text and implementation remains a separate research question.',
+    accessDate: '2026-09-20',
+    creators: ['Kingdom of Thailand'], institution: 'Election Commission of Thailand',
+    publicationDate: '2017', evidenceRole: 'primary', confidence: 'high', languages: ['Thai', 'English translation'],
+    sourceType: 'primary constitutional text / official Thai legal archive',
+    description: 'Official constitutional record for Thailand’s post-coup 2017 institutional settlement, including the monarchy, Parliament, courts, independent bodies, rights and transitional provisions. It documents formal design and does not by itself prove democratic consent, enforcement or political neutrality.',
+  },
+  {
+    id: 'thailandEctGeneralElection2023',
+    label: 'Election Commission of Thailand — ECT Report for the 2023 general election',
+    url: 'https://www.ect.go.th/ect_th/th/db_119_ect_th_cms_419/5276',
+    note: 'Official Thai Election Commission notice describing the ECT Report for the 14 May 2023 House election and publication of unofficial counting results across 400 constituencies. The Thai-language notice is used to anchor the election-process record; it is not treated as proof of fairness, complete official certification or a full account of the 2019–2023 electoral field.',
+    accessDate: '2026-09-20',
+    creators: ['Election Commission of Thailand'], institution: 'Election Commission of Thailand',
+    publicationDate: '2023-05-10', evidenceRole: 'primary', confidence: 'high', languages: ['Thai'],
+    sourceType: 'official Thai election-administration record',
+    description: 'Primary election-administration witness for the May 2023 general election and the ECT’s public reporting system. It anchors the contemporary endpoint while preserving uncertainty around certification, electoral quality, party dissolution and subsequent coalition formation.',
+  },
+  {
     id: 'fernandoMalayanConstitution2002',
     label: 'Joseph M. Fernando — The Making of the Malayan Constitution',
     url: 'https://mbras.org.my/product/m31-the-making-of-the-malayan-constitution/',
@@ -4026,7 +4072,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') ? 'German postwar democratic and constitutional history'
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') ? 'Italian post-fascist transition and constitutional history'
         : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') ? 'Japanese Meiji constitutional and political history'
-        : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
+        : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('weissProtest') || source.id.startsWith('weissHazis') || source.id.startsWith('gomezOsman') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
         : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
       : source.id.startsWith('afghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') ? 'Afghan constitutional, conflict and political history'
