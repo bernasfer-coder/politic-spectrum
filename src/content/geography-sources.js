@@ -5219,6 +5219,96 @@ const sources = [
     sourceType: 'comparative book-length customary and constitutional-law study', identifiers: { isbn: '097576148X', pages: '248' },
     description: 'Comparative book-length legal study of the interaction between introduced law, constitutional provisions and customary law in Vanuatu and Solomon Islands, including family law, custody and succession. It adds a legal-institutional perspective to political history while preserving the limits of comparative scope.',
   },
+  {
+    id: 'solomonConstitution1978Parliament',
+    label: 'National Parliament of Solomon Islands — Constitution of Solomon Islands / Independence Order 1978',
+    url: 'https://parliament.gov.sb/files/business%26procedures/constitution.htm',
+    note: 'Official parliamentary edition consulted for the Independence Order, constitutional chapters, rights, citizenship, executive, Parliament, judiciary, universal suffrage, communal solidarity and decentralization. It is used as a primary constitutional record; no text is republished and formal design is not treated as proof of implementation or consent.',
+    accessDate: '2026-09-21', creators: ['Solomon Islands Parliament', 'United Kingdom Privy Council'], institution: 'National Parliament of Solomon Islands', publicationDate: '1978-07-07', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional text and independence order', identifiers: { independenceDate: '1978-07-07' },
+    description: 'Primary constitutional record for Solomon Islands’ independence settlement and parliamentary order. It anchors sovereignty, rights, elected assemblies, executive authority, courts, citizenship, natural resources, cultural traditions and decentralization as formal constitutional commitments rather than a complete account of political practice.',
+  },
+  {
+    id: 'solomonSiec2024JointElection',
+    label: 'Solomon Islands Electoral Commission — 2024 Joint Election portal',
+    url: 'https://siec.gov.sb/',
+    note: 'Official Electoral Commission portal consulted for the 2024 joint national, provincial and Honiara City Council elections, voter information and institutional descriptions. It is treated as a primary administrative record and not as independent evidence of fairness, representation, vote choice or later government performance.',
+    accessDate: '2026-09-21', creators: ['Solomon Islands Electoral Commission'], institution: 'Solomon Islands Electoral Commission', publicationDate: '2024-04-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official joint-election portal and electoral administration record', identifiers: { electionDate: '2024-04-17' },
+    description: 'Primary record of Solomon Islands’ 2024 joint elections, in which parliamentary, provincial and Honiara City Council representatives were elected on the same voting trip. It documents an institutional endpoint without asserting public legitimacy, equal participation or the meaning of the results for every island or community.',
+  },
+  {
+    id: 'solomonSiec2024GazettedResults',
+    label: 'Solomon Islands Electoral Commission — Gazetted national general-election results 2024',
+    url: 'https://siec.gov.sb/siec-publishes-gazetted-results-on-website/',
+    note: 'Official Electoral Commission notice consulted for the 2024 national, provincial and Honiara City Council results gazettes published on 30 April 2024. It is used as a primary results record and not as an audit of campaign conditions, vote buying, gender equality, social inclusion or coalition formation.',
+    accessDate: '2026-09-21', creators: ['Solomon Islands Electoral Commission'], institution: 'Solomon Islands Electoral Commission', publicationDate: '2024-05-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official gazetted election-results record', identifiers: { resultsGazetteDate: '2024-04-30' },
+    description: 'Primary institutional notice identifying the official gazettes for the 17 April 2024 elections and the successful candidates. It anchors the dated electoral outcome while leaving political interpretation, participation and post-election government formation to independent scholarship and further records.',
+  },
+  {
+    id: 'solomonGovernmentGazettes',
+    label: 'Solomon Islands Government — Gazettes and legislation portal',
+    url: 'https://solomons.gov.sb/ministry-of-justice-and-legal-affairs/attorney-generals-chambers/gazettes-legislation/',
+    note: 'Official government legal portal consulted for the 1978 Independence Order, electoral legislation, constitutional amendments and the 2023 Constituent Assembly amendment record. It establishes a public legal source trail but does not replace the full legislative history, court record or independent analysis of implementation.',
+    accessDate: '2026-09-21', creators: ['Government of Solomon Islands, Attorney-General’s Chambers'], institution: 'Government of Solomon Islands', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official gazette and legislation portal', identifiers: {},
+    description: 'Primary legal archive index used to locate constitutional, electoral and legislative instruments relevant to Solomon Islands’ institutional development and later constitutional-review horizon. The portal is evidence of formal publication and availability, not proof of political agreement or implementation.',
+  },
+  {
+    id: 'larmourTaruaSolomonPolitics1983',
+    label: 'Peter Larmour and Sue Tarua (eds.) — Solomon Islands Politics (1983)',
+    url: 'https://www.solomonencyclopaedia.net/bib/browse_k_bib.htm',
+    note: 'Library and institutional bibliographic records consulted for the 303-page Institute of Pacific Studies volume on Solomon Islands political development, constitutional change, parties, elections, government and provincial questions. The volume’s contributors are kept distinct; no chapter prose is republished and its early post-independence scope is not extended into the 2024 election.',
+    accessDate: '2026-09-21', creators: ['Peter Larmour', 'Sue Tarua'], institution: 'Institute of Pacific Studies, University of the South Pacific', publicationDate: '1983', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on Solomon Islands politics', identifiers: { pages: '303' },
+    description: 'Book-length early political study bringing together constitutional development, parties, elections, governmental change and local or provincial questions after independence. It provides a foundational analytical perspective that must be read alongside Solomon Islander political voices and later crisis/state-building research.',
+  },
+  {
+    id: 'crocombeTuzaSolomonIndependence1992',
+    label: 'Ron Crocombe and Esau Tuza (eds.) — Independence, Dependence, Interdependence: The First Ten Years of Solomon Islands Independence (1992)',
+    url: 'https://www.awm.gov.au/collection/LIB100048538',
+    note: 'Australian War Memorial and CiNii library records consulted for the 168-page edited volume published jointly by the Institute of Pacific Studies, USP Honiara Centre and Solomon Islands College of Higher Education. It is used for attributed first-decade social, economic and political perspectives, not as a unified national consensus or a complete later history.',
+    accessDate: '2026-09-21', creators: ['Ron Crocombe', 'Esau Tuza'], institution: 'Institute of Pacific Studies / USP Honiara Centre / Solomon Islands College of Higher Education', publicationDate: '1992', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on the first decade of independence', identifiers: { isbn: '9820201942', pages: '168' },
+    description: 'Edited volume produced through Pacific institutions and focused on the first ten years of Solomon Islands independence, with social, economic and political dimensions of independence, dependence and regional interdependence. It broadens the record beyond constitutional design while remaining period- and chapter-specific.',
+  },
+  {
+    id: 'mooreHappyIslesCrisis2004',
+    label: 'Clive Moore — Happy Isles in Crisis: The Historical Causes for a Failing State in Solomon Islands, 1998–2004 (2004)',
+    url: 'https://books.google.com/books/about/Happy_Isles_in_Crisis.html?id=02e_zMZVYH8C',
+    note: 'Google Books and library records consulted for Moore’s 265-page book-length account of the 1998–2004 crisis, land and resource conflict, governance, economic performance and the regional intervention. The book is used for attributed historical analysis; its “failing state” framing is not adopted as a timeless national label and no copyrighted prose is republished.',
+    accessDate: '2026-09-21', creators: ['Clive Moore'], institution: 'Asia Pacific Press', publicationDate: '2004', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length crisis and political history', identifiers: { isbn: '9780731537099', pages: '265' },
+    description: 'Book-length history of the crisis years 1998–2004, connecting conflict, land, resources, customary and modern social institutions, governance, economic performance and RAMSI. It supplies a critical national perspective while remaining bounded to the crisis horizon and not a complete account of every island or later government.',
+  },
+  {
+    id: 'dinnenFirthPoliticsStateBuildingSolomon2008',
+    label: 'Sinclair Dinnen and Stewart Firth (eds.) — Politics and State Building in Solomon Islands (2008)',
+    url: 'https://press.anu.edu.au/publications/politics-and-state-building-solomon-islands',
+    note: 'ANU Press open-access book record consulted for the 294-page edited study of the 2006 unrest, elections, Asian business and politics, RAMSI and cooperative intervention. Contributors’ arguments are preserved as distinct and the book is not treated as a complete national history or independent proof of state-building success.',
+    accessDate: '2026-09-21', creators: ['Sinclair Dinnen', 'Stewart Firth'], institution: 'ANU Press / Asia Pacific Press', publicationDate: '2008', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access scholarly edited book on state building', identifiers: { isbn: '9780731538188', ebookIsbn: '9781921313660', doi: '10.22459/PSBS.05.2008', pages: '294' },
+    description: 'Open scholarly edited volume examining the 2006 post-election unrest, political process, state-building intervention, RAMSI and provincial perspectives. It offers a second independent analytical lens on crisis and institutional reconstruction, while its international intervention frame does not exhaust Solomon Islander political experience.',
+  },
+  {
+    id: 'keniloreaTellItAsItIsSolomon2008',
+    label: 'Peter Kenilorea, edited by Clive Moore — Tell It As It Is: Autobiography of Solomon Islands’ First Prime Minister (2008)',
+    url: 'https://books.google.com/books/about/Tell_it_as_it_is.html?id=7O4MAQAAMAAJ',
+    note: 'Bibliographic record consulted for Kenilorea’s 516-page autobiography, edited by Clive Moore. It is treated as a situated primary political life-writing source from a founding prime minister, not as an uncontested national narrative; no autobiographical prose is republished.',
+    accessDate: '2026-09-21', creators: ['Peter Kenilorea', 'Clive Moore'], institution: 'Center for Asia-Pacific Area Studies, Academia Sinica', publicationDate: '2008', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary political autobiography', identifiers: { isbn: '9789860144970', pages: '516' },
+    description: 'Book-length first-person account by Solomon Islands’ first prime minister, covering his life, the independence generation and the early constitutional state. It provides an important Solomon Islander political voice and must be triangulated with constitutional records, other actors and independent scholarship.',
+  },
+  {
+    id: 'akinColonialismMaasinaRuleSolomon2013',
+    label: 'David W. Akin — Colonialism, Maasina Rule, and the Origins of Malaitan Kastom (2013)',
+    url: 'https://uhpress.hawaii.edu/title/colonialism-maasina-rule-and-the-origins-of-malaitan-kastom/',
+    note: 'University of Hawai‘i Press book record consulted for Akin’s 572-page political history of Malaita from 1927 to 1953 and the origins of Maasina Rule and Malaitan kastom. The island- and period-specific study is used to deepen the customary and anti-colonial background without generalizing Malaita’s history to all Solomon Islanders.',
+    accessDate: '2026-09-21', creators: ['David W. Akin'], institution: 'University of Hawai‘i Press', publicationDate: '2013-10', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Malaitan political and colonial history', identifiers: { isbn: '9780824838140', pages: '572' },
+    description: 'Archival and fieldwork-based book-length history of Maasina Rule, Malaitan political organization, colonial interaction and the emergence of kastom as a governing and identity language. It provides a deep local political history before independence while explicitly remaining a bounded Malaita case.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -5275,6 +5365,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('fiji') || source.id.startsWith('lalBrokenWavesFiji') || source.id.startsWith('lawsonFailureDemocraticPoliticsFiji') || source.id.startsWith('lalAnotherWayFiji') || source.id.startsWith('fraenkelFirthLalMilitaryTakeoverFiji') ? 'Fijian constitutional, coup and political history'
       : source.id.startsWith('samoa') || source.id.startsWith('meleiseaMakingModernSamoa') || source.id.startsWith('lawsonTraditionDemocracySamoa') || source.id.startsWith('meleiseaSamoasJourney') || source.id.startsWith('swainFonoSamoa') || source.id.startsWith('metiSamoa') ? 'Samoan constitutional, customary and political history'
       : source.id.startsWith('vanuatu') || source.id.startsWith('vanTrease') || source.id.startsWith('premdasSteeves') || source.id.startsWith('woodwardNewHebrides') || source.id.startsWith('brownCustomaryLawMelanesia') ? 'Vanuatuan constitutional, customary and decolonization history'
+      : source.id.startsWith('solomon') || source.id.startsWith('larmourTaruaSolomon') || source.id.startsWith('crocombeTuzaSolomon') || source.id.startsWith('mooreHappyIsles') || source.id.startsWith('dinnenFirthPoliticsStateBuildingSolomon') || source.id.startsWith('keniloreaTellItAsItIsSolomon') || source.id.startsWith('akinColonialismMaasinaRuleSolomon') ? 'Solomon Islands constitutional, customary and postcolonial political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : 'Middle Eastern political history and geography',
