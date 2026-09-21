@@ -4062,6 +4062,51 @@ const sources = [
     description: 'Institutional report assessing rights enjoyment and the electoral environment during the 2018 harmonised elections. It supplies a distinct monitoring perspective and does not by itself establish the full social or political experience of Zimbabwe.'
   },
   {
+    id: 'zimbabweZecAnnualReport2023',
+    label: 'Zimbabwe Electoral Commission — 2023 Annual Report',
+    url: 'https://openparly.com/wp-content/uploads/2024/05/ZEC-Annual-Report-2023-Final-4.pdf',
+    note: 'Zimbabwe Electoral Commission annual report mirrored by Open Parly consulted as a primary institutional witness to delimitation and the 2023 harmonised elections. No report wording, result table, scan or PDF page is republished; the Commission’s self-report is distinguished from observer, court, party, local and voter evidence.',
+    accessDate: '2026-09-21', creators: ['Zimbabwe Electoral Commission'], institution: 'Zimbabwe Electoral Commission / Open Parly Zimbabwe mirror', publicationDate: '2023', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional report'],
+    sourceType: 'primary election administration annual report', identifiers: { reportYear: '2023', electionYear: '2023' },
+    description: 'Official annual report covering Zimbabwe’s 2023 delimitation exercise and harmonised elections, as well as the Commission’s statutory activities. It records the election administrator’s own account and does not by itself establish equal participation, electoral fairness, public confidence or the experience of every locality.'
+  },
+  {
+    id: 'zimbabweEuElectionObservation2023',
+    label: 'European Union Election Observation Mission — Zimbabwe General Elections Final Report (2023)',
+    url: 'https://www.europarl.europa.eu/cmsdata/279784/Zimbabwe-General-elections-Final-report.pdf',
+    note: 'European Union Election Observation Mission final report consulted as an independent international institutional assessment of the 23 August 2023 harmonised elections. No report wording, table, map or PDF page is republished; its observation mandate and findings are distinguished from ZEC’s administrative account, domestic observers and later adjudication.',
+    accessDate: '2026-09-21', creators: ['European Union Election Observation Mission'], institution: 'European Union', publicationDate: '2023-08-23', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional report'],
+    sourceType: 'international election-observation final report', identifiers: { electionDate: '2023-08-23' },
+    description: 'International observation report on Zimbabwe’s 2023 general-election process, including the legal, administrative, campaign, media, voting and post-election environment. It provides an attributed observer assessment, not a complete social history or a score for Zimbabweans or any political community.'
+  },
+  {
+    id: 'zimbabweZesnElectionReport2023',
+    label: 'Zimbabwe Election Support Network — 2023 Harmonised Elections Report',
+    url: 'https://www.zesn.org.zw/wp-content/uploads/2015/10/ZESN-2023-Harmonised-Election-Report.pdf',
+    note: 'Zimbabwe Election Support Network report consulted as a domestic civil-society observation record. No report wording, result table, map or PDF page is republished; the network’s 6,500-observer perspective is kept distinct from ZEC, international observers, parties, courts and local communities.',
+    accessDate: '2026-09-21', creators: ['Zimbabwe Election Support Network'], institution: 'Zimbabwe Election Support Network', publicationDate: '2023-08-23', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional report'],
+    sourceType: 'domestic election-observation report', identifiers: { electionDate: '2023-08-23', observers: '6500' },
+    description: 'Domestic civil-society observation report on the 2023 harmonised elections, including voter registration, campaign, polling, turnout and post-election assessment. It supplies a distinct monitoring perspective and cannot by itself establish every locality’s experience, causal explanations or the uniform meaning of the election.'
+  },
+  {
+    id: 'zimbabweMoyoHellikerSecondRepublic2023',
+    label: 'Gorden Moyo and Kirk Helliker (eds.) — Making Politics in Zimbabwe’s Second Republic: The Formative Project by Emmerson Mnangagwa (2023)',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-30129-2',
+    note: 'Springer Nature book record consulted for the 2023 edited volume (1st ed.; eBook ISBN 978-3-031-30129-2, hardcover ISBN 978-3-031-30128-5, XIV + 270 pages, DOI 10.1007/978-3-031-30129-2). No chapter wording, quotation, table, image or scan is republished; the volume’s critical interpretation of the Mnangagwa government is attributed and distinguished from a complete post-2023 history or every Zimbabwean experience.',
+    accessDate: '2026-09-21', creators: ['Gorden Moyo', 'Kirk Helliker'], institution: 'Springer Cham', publicationDate: '2023-05-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Zimbabwe’s Second Republic', identifiers: { doi: '10.1007/978-3-031-30129-2', isbn: '978-3-031-30128-5', ebookIsbn: '978-3-031-30129-2', pages: '270', edition: '1st' },
+    description: 'Edited scholarly volume examining the Mnangagwa government’s formative project after the 2017 removal of Mugabe, with chapters on political liberties, transitional justice, reconciliation, corruption, media, traditional leadership, devolution, development, debt and social sectors. It supplies a critical institutional and policy lens, not a complete national history or a settled verdict on reform.'
+  },
+  {
+    id: 'zimbabweMavenganoChirongomaElectoralPolitics2023',
+    label: 'Esther Mavengano and Sophia Chirongoma (eds.) — Electoral Politics in Zimbabwe, Vol. II: The 2023 Election and Beyond (2023)',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-33796-3',
+    note: 'Springer Nature book record consulted for the 2023 edited volume (1st ed.; eBook ISBN 978-3-031-33796-3, hardcover ISBN 978-3-031-33795-6, XXV + 433 pages, DOI 10.1007/978-3-031-33796-3). No chapter wording, quotation, table, image or scan is republished; its interdisciplinary electoral focus, including gender, religion, media and language, is distinguished from a complete national history or uniform voter account.',
+    accessDate: '2026-09-21', creators: ['Esther Mavengano', 'Sophia Chirongoma'], institution: 'Palgrave Macmillan Cham', publicationDate: '2023-08-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Zimbabwean electoral politics', identifiers: { doi: '10.1007/978-3-031-33796-3', isbn: '978-3-031-33795-6', ebookIsbn: '978-3-031-33796-3', pages: '433', edition: '1st' },
+    description: 'Interdisciplinary edited volume focused on Zimbabwe’s 2023 election and beyond, with electoral, gender, disability, media, traditional-leader, religious and language perspectives. It supplies contemporary electoral scholarship while chapter-level conclusions remain bounded and post-2023 developments remain open.'
+  },
+  {
     id: 'mlamboHistoryZimbabwe2014',
     label: 'Alois S. Mlambo — A History of Zimbabwe (2014)',
     url: 'https://www.cambridge.org/core/books/history-of-zimbabwe/09220ECF68826C88B7922F55C5D24568',
