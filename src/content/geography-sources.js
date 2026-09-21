@@ -6011,6 +6011,105 @@ const sources = [
     sourceType: 'book-length scholarly edited volume with selected primary protest materials', identifiers: { isbn: '9780755644421', paperbackIsbn: '9780755644438', pdfIsbn: '9780755644445', pages: '360' },
     description: 'Edited volume situating the October 2019 uprising in Lebanon’s political economy, social, legal, regional and global contexts, with contributions on labor, disability, students, women, refugees and non-Lebanese participants. It preserves plural perspectives and selected primary materials without claiming uniform protest participation.',
   },
+  {
+    id: 'colombiaConstitution1991Presidency',
+    label: 'Presidency of the Republic of Colombia — Political Constitution of Colombia (1991, official text)',
+    url: 'https://dapre.presidencia.gov.co/normativa/constitucion-politica',
+    note: 'Colombian Presidency official constitutional portal consulted for the 1991 Constitution and PDF link only. No constitutional wording is republished; the rights, participatory, territorial, judicial and institutional provisions are distinguished from equal implementation, public consent and the experience of every Colombian community.',
+    accessDate: '2026-09-21', creators: ['Presidency of the Republic of Colombia'], institution: 'Presidency of the Republic of Colombia', publicationDate: '1991-07-04', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitution: 'Political Constitution of Colombia', promulgationDate: '1991-07-04' },
+    description: 'Primary legal witness to the 1991 constitutional order, including popular sovereignty, rights, participation, decentralization, constitutional review, pluralism and the formal institutions of the Colombian republic. It establishes legal design, not uniform political practice or national ideological character.',
+  },
+  {
+    id: 'colombiaPeaceAgreement2016UN',
+    label: 'Government of Colombia and FARC-EP — Final Agreement for Ending the Conflict and Building a Stable and Lasting Peace (2016, UN Peacemaker record)',
+    url: 'https://peacemaker.un.org/sites/default/files/document/files/2024/05/final20agreement20for20ending20the20conflict20and20building20a20stable20and20lasting20peace.pdf',
+    note: 'UN Peacemaker / Security Council record consulted for the English text and link only. No agreement wording, annex, table or image is republished; the six-point settlement, rural reform, participation, disarmament, victims, illicit crops and implementation provisions are distinguished from complete implementation or uniform public support.',
+    accessDate: '2026-09-21', creators: ['Government of Colombia', 'Revolutionary Armed Forces of Colombia–People’s Army'], institution: 'United Nations Peacemaker / United Nations Security Council', publicationDate: '2016-11-24', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'primary peace agreement / transitional constitutional record', identifiers: { agreement: 'Final Agreement for Ending the Conflict and Building a Stable and Lasting Peace', signatureDate: '2016-11-24' },
+    description: 'Primary peace-settlement text recording the Colombian government–FARC-EP agreement’s rural, political-participation, end-of-conflict, illicit-drug, victim and implementation pillars. It anchors the peace-order horizon without proving that the settlement was uniformly implemented or accepted.',
+  },
+  {
+    id: 'colombiaRegistraduria2022PresidentialElection',
+    label: 'Registraduría Nacional del Estado Civil — 2022 Colombian presidential election results',
+    url: 'https://wapp.registraduria.gov.co/electoral/Elecciones-presidente-2022/resultados/',
+    note: 'Colombian National Civil Registry official election portal consulted for the 2022 presidential results and link only. No result table or vote record is republished; the official count is distinguished from voter motivation, electoral quality, public consent and the political experience of every region or candidate.',
+    accessDate: '2026-09-21', creators: ['Registraduría Nacional del Estado Civil'], institution: 'Registraduría Nacional del Estado Civil', publicationDate: '2022-06-19', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential election results record', identifiers: { election: 'Colombian presidential election 2022', runoffDate: '2022-06-19' },
+    description: 'Official electoral record anchoring the 2022 presidential runoff and the case’s dated electoral endpoint. It is evidence of the formal result, not by itself a measure of representation, fairness, legitimacy or later government performance.',
+  },
+  {
+    id: 'colombiaRegistraduriaHistoricalResults',
+    label: 'Registraduría Nacional del Estado Civil — Historical Colombian election results portal',
+    url: 'https://www.registraduria.gov.co/-Historico-de-resultados-electorales',
+    note: 'Registraduría historical-results portal consulted for the official election-series locator. No tables or result values are republished; the source provides an institutional trail for electoral chronology and is not treated as sufficient evidence of social meaning or electoral equality.',
+    accessDate: '2026-09-21', creators: ['Registraduría Nacional del Estado Civil'], institution: 'Registraduría Nacional del Estado Civil', publicationDate: '2022', evidenceRole: 'contextual', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official historical electoral-results portal', identifiers: { archive: 'Historical electoral results' },
+    description: 'Institutional portal for Colombia’s presidential, congressional and local election results, used to locate and cross-check the electoral sequence around the constitutional and peace-process period without reproducing data tables.',
+  },
+  {
+    id: 'colombiaPalaciosLegitimacyViolence2006',
+    label: 'Marco Palacios — Between Legitimacy and Violence: A History of Colombia, 1875–2002 (2006)',
+    url: 'https://www.dukeupress.edu/between-legitimacy-and-violence',
+    note: 'Duke University Press record consulted for the English translation (320 pages; published June 2006). No book wording, quotation, table or scan is republished; Palacios’s broad political, economic, social and cultural interpretation is attributed and period-bounded before the 2016 peace agreement.',
+    accessDate: '2026-09-21', creators: ['Marco Palacios'], institution: 'Duke University Press', publicationDate: '2006-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'book-length modern national political history', identifiers: { pages: '320' },
+    description: 'Authoritative broad history of Colombia’s long twentieth century, connecting parties, laws, ideologies, institutions, corruption, economic and social change and recurrent political violence. It supplies long-run context for the 1991 constitutional and post-2002 horizons rather than a current-country assessment.',
+  },
+  {
+    id: 'colombiaBushnellModern1993',
+    label: 'David Bushnell — The Making of Modern Colombia: A Nation in Spite of Itself (1993)',
+    url: 'https://www.ucpress.edu/book/9780520082892/the-making-of-modern-colombia',
+    note: 'University of California Press record consulted for the monograph (360 pages; ISBN 9780520082892). No book wording, quotation, table or scan is republished; Bushnell’s English-language national synthesis is paired with Colombian and conflict-specific scholarship and is not treated as a complete account of later constitutional or peace politics.',
+    accessDate: '2026-09-21', creators: ['David Bushnell'], institution: 'University of California Press', publicationDate: '1993-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern national history', identifiers: { isbn: '9780520082892', pages: '360' },
+    description: 'Broad English-language history of Colombia from precolonial and colonial antecedents through modern political, economic and social development, including the country’s long avoidance of military dictatorship alongside persistent conflict and an enduring two-party order. It supplies national context, not a contemporary score or implementation audit.',
+  },
+  {
+    id: 'colombiaRichaniSystemsViolence2013',
+    label: 'Nazih Richani — Systems of Violence: The Political Economy of War and Peace in Colombia (2nd ed., 2013)',
+    url: 'https://obnb.uk/p16316866-systems-of-violence-the-political-economy-of-war-and-peace-in-colombia',
+    note: 'State University of New York Press and British National Bibliography records consulted for the second edition (348–349 pages; ISBN 9781438446943, ebook ISBN 9781438446950). No book wording, quotation, table or scan is republished; Richani’s political-economy account of protracted conflict and negotiated peace is attributed and not generalized to every region or actor.',
+    accessDate: '2026-09-21', creators: ['Nazih Richani'], institution: 'State University of New York Press', publicationDate: '2013', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy study of war and peace', identifiers: { isbn: '9781438446943', ebookIsbn: '9781438446950', pages: '349' },
+    description: 'Expanded book-length study of the political economy of Colombia’s protracted violence, armed actors, state formation, economic integration and attempts at negotiated peace. It adds a conflict-mechanism perspective rather than a complete constitutional or social history.',
+  },
+  {
+    id: 'colombiaRichaniSistemasViolencia2021Spanish',
+    label: 'Nazih Richani — Sistemas de violencia: La economía política de la guerra y de la paz en Colombia (2021 Spanish edition)',
+    url: 'https://portaldelibros.unal.edu.co/gpd-sistemas-de-violencia-la-economyua-polyutica-de-la-guerra-y-de-la-paz-en-colombia-9789587946314.html',
+    note: 'Universidad Nacional de Colombia publisher record consulted for the Spanish-language edition (379 pages; ISBN 9789587946314). No Spanish wording, quotation, table or scan is republished; this edition improves language provenance and is identified as the same author’s political-economy lens, not an independent second argument.',
+    accessDate: '2026-09-21', creators: ['Nazih Richani'], institution: 'Editorial Universidad Nacional de Colombia', publicationDate: '2021', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'Spanish-language book-length political-economy study of war and peace', identifiers: { isbn: '9789587946314', pages: '379' },
+    description: 'Spanish-language Colombian edition of Richani’s political-economy study, retained for language and local-publishing provenance. It is used alongside, not counted as independent from, the English second-edition perspective.',
+  },
+  {
+    id: 'colombiaHyltonEvilHour2006',
+    label: 'Forrest Hylton — Evil Hour in Colombia (2006)',
+    url: 'https://www.penguinrandomhouse.com/books/232741/evil-hour-in-colombia-by-forrest-hylton/9781844675517/',
+    note: 'Verso / Penguin Random House record consulted for the book (208 pages; ISBN 9781844675517). No book wording, quotation, table or scan is republished; Hylton’s critical account of land, paramilitarism, guerrilla conflict, state power and US intervention is attributed and contrasted with institutional and peace-agreement sources.',
+    accessDate: '2026-09-21', creators: ['Forrest Hylton'], institution: 'Verso', publicationDate: '2006-10-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length critical political history of conflict and paramilitarism', identifiers: { isbn: '9781844675517', pages: '208' },
+    description: 'Critical book-length history linking Colombia’s long political conflict to land, class, paramilitarism, guerrilla movements, drug economies and US intervention. It supplies a conflictual interpretation and is not treated as a complete national consensus or current assessment.',
+  },
+  {
+    id: 'colombiaGutierrezClientelisticWarfare2019',
+    label: 'Francisco Gutiérrez-Sanín — Clientelistic Warfare: Paramilitaries and the State in Colombia (1982–2007) (2019)',
+    url: 'https://www.peterlang.com/document/1055242',
+    note: 'Peter Lang record consulted for the monograph (XII, 480 pages; ISBN 9781787073654 hardcover, 9781787076068 PDF, DOI 10.3726/b11179). No book wording, quotation, figure or table is republished; Gutiérrez-Sanín’s empirical study of localistic paramilitary–state relations is attributed and bounded to 1982–2007.',
+    accessDate: '2026-09-21', creators: ['Francisco Gutiérrez-Sanín'], institution: 'Peter Lang', publicationDate: '2019-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of paramilitaries, clientelism and the state', identifiers: { isbn: '9781787073654', pdfIsbn: '9781787076068', doi: '10.3726/b11179', pages: '480' },
+    description: 'Empirical book-length study of the relationship between Colombian paramilitary factions and the state from 1982 to 2007, emphasizing localistic coalitions, clientelistic institutions and varied mechanisms rather than a single hierarchical actor. It sharpens the authority and violence axes without describing every state institution or region.',
+  },
+  {
+    id: 'colombiaPeaceAgreementAssessment2021',
+    label: 'Jorge Luis Fabra-Zamora, Andrés Molina-Ochoa and Nancy C. Doubleday (eds.) — The Colombian Peace Agreement: A Multidisciplinary Assessment (2021)',
+    url: 'https://www.routledge.com/The-Colombian-Peace-Agreement-A-Multidisciplinary-Assessment/Fabra-Zamora-Molina-Ochoa-Doubleday/p/book/9780367528867',
+    note: 'Routledge record consulted for the edited volume (364 pages; ISBN 9780367528867; print ISBN 9780367528812). No chapter wording, quotation, table or scan is republished; the volume’s contributors, including negotiators, Special Jurisdiction for Peace judges, civil-society representatives and scholars, provide plural assessments of the agreement’s design and implementation challenges.',
+    accessDate: '2026-09-21', creators: ['Jorge Luis Fabra-Zamora', 'Andrés Molina-Ochoa', 'Nancy C. Doubleday'], institution: 'Routledge', publicationDate: '2021', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length multidisciplinary edited volume on the peace agreement', identifiers: { isbn: '9780367528867', printIsbn: '9780367528812', pages: '364' },
+    description: 'Interdisciplinary book-length assessment of the Colombian Final Agreement through peace studies, human rights, international law, transitional justice, political science and philosophy. Chapters address rural reform, gender, Afro-Colombian rights, justice, victims, legitimacy and democratic implementation, preserving disagreement rather than one verdict.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -6030,6 +6129,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') || source.id.startsWith('gundleParkerNewItalianRepublic') || source.id.startsWith('newellPoliticsItaly') || source.id.startsWith('cottaVerzichelliPoliticalInstitutionsItaly') || source.id.startsWith('ignaziRissoWellhoferItalianParties') || source.id.startsWith('italyPoliticalElection') ? 'Italian constitutional, party-system and political history'
           : source.id.startsWith('southKorea') ? 'South Korean constitutional, democratization and political history'
           : source.id.startsWith('lebanon') ? 'Lebanese postwar, constitutional, sectarian and political history'
+          : source.id.startsWith('colombia') ? 'Colombian constitutional, conflict, peace-process and political history'
           : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('weissProtest') || source.id.startsWith('weissHazis') || source.id.startsWith('gomezOsman') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
