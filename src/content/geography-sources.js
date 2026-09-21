@@ -6898,6 +6898,51 @@ const sources = [
     description: 'Comparative book-length study of the political turn to the left, hybrid-regime debate and democratic-quality decline in South America, with Ecuador as a principal reference case. It supplies a later political-science lens on the Citizens’ Revolution and democratic institutions without establishing a complete social, regional or post-2021 history.'
   },
   {
+    id: 'ecuadorExecutiveDecree1112024',
+    label: 'Daniel Noboa — Executive Decree No. 111 (9 January 2024)',
+    url: 'https://www.comunicacion.gob.ec/wp-content/uploads/2024/01/Decreto_Ejecutivo_No._111_20240009145200_20240009145207.pdf',
+    note: 'Official executive decree consulted as a primary security and emergency record, link only. No decree wording, translation, scan or page is republished; the government’s classification and mobilization order are distinguished from independent legal review, human-rights evidence, implementation and public consent.',
+    accessDate: '2026-09-21', creators: ['Daniel Noboa Azín'], institution: 'Presidencia de la República del Ecuador / Secretaría General de Comunicación', publicationDate: '2024-01-09', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary executive decree / official emergency-security record', identifiers: { decreeNumber: '111', decreeDate: '2024-01-09' },
+    description: 'Primary executive record adding an internal-armed-conflict basis to the state of exception and directing military and police intervention against named organized-crime actors. It establishes executive action and self-description, not an independent legal classification, human-rights outcome or uniform social experience.'
+  },
+  {
+    id: 'ecuadorCneReferendum2024',
+    label: 'Consejo Nacional Electoral Ecuador — Definitive Referendum and Popular Consultation Results (2024)',
+    url: 'https://www.cne.gob.ec/resultref2024/',
+    note: 'CNE results page consulted as the official record of the 21 April 2024 referendum and popular consultation, link only. No result table, ballot, scan or page is republished; the election-management record is distinguished from independent observation, voter reasoning, equal conditions and policy implementation.',
+    accessDate: '2026-09-21', creators: ['Consejo Nacional Electoral del Ecuador'], institution: 'Consejo Nacional Electoral del Ecuador', publicationDate: '2024-05-08', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official referendum and popular-consultation results record', identifiers: { electionDate: '2024-04-21', questions: '11', proclamationDate: '2024-05-08' },
+    description: 'Official final-results record for the eleven-question 2024 referendum and popular consultation, including constitutional, security, justice and economic-policy questions. It dates the electorate’s recorded choices without establishing a single public meaning, complete participation, campaign equality or later implementation.'
+  },
+  {
+    id: 'ecuadorCneElection2025',
+    label: 'Consejo Nacional Electoral Ecuador — Definitive 2025 General Election Results and Presidential Adjudication',
+    url: 'https://www.cne.gob.ec/cne-proclamo-resultados-definitivos-y-adjudico-las-dignidades-del-binomio-presidencial-a-daniel-noboa-azin-y-maria-jose-pinto/',
+    note: 'CNE final-results and adjudication record consulted for the 13 April 2025 second-round election, link only. No result table, candidate wording, scan or page is republished; the institutional result is distinguished from independent observation, voter motivation, equal conditions, policy delivery and later government performance.',
+    accessDate: '2026-09-21', creators: ['Consejo Nacional Electoral del Ecuador'], institution: 'Consejo Nacional Electoral del Ecuador', publicationDate: '2025-05-10', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential election results and adjudication record', identifiers: { electionDate: '2025-04-13', electionYear: '2025', office: 'President and Vice-President', presidentialTerm: '2025-2029' },
+    description: 'Official adjudication record for the 2025 presidential second round, which certified the elected presidential and vice-presidential binomial after administrative and jurisdictional remedies. It fixes a dated electoral endpoint without proving equal participation, fairness, public consensus or the character of the subsequent government.'
+  },
+  {
+    id: 'ecuadorCneReferendum2025',
+    label: 'Consejo Nacional Electoral Ecuador — Definitive Referendum and Popular Consultation Results (2025)',
+    url: 'https://www.cne.gob.ec/cne-proclamo-resultados-definitivos-del-referendum-y-consulta-popular-2025/',
+    note: 'CNE final-results record consulted for the 16 November 2025 referendum and popular consultation, link only. No result table, ballot, scan or page is republished; the official record is distinguished from independent observation, voter reasoning, constitutional consequence and subsequent implementation.',
+    accessDate: '2026-09-21', creators: ['Consejo Nacional Electoral del Ecuador'], institution: 'Consejo Nacional Electoral del Ecuador', publicationDate: '2025-12-01', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official referendum and popular-consultation results record', identifiers: { electionDate: '2025-11-16', questions: '4', proclamationDate: '2025-12-01' },
+    description: 'Official final-results record for the four-question 2025 referendum and popular consultation held after the presidential election. It establishes the recorded national result and a constitutional-contestation endpoint without proving why voters chose as they did, the social meaning of each question or later institutional effects.'
+  },
+  {
+    id: 'ecuadorBlankstenConstitutions2022',
+    label: 'George I. Blanksten — Ecuador: Constitutions and Caudillos (Voices Revived edition, 2022; original 1951)',
+    url: 'https://www.ucpress.edu/books/ecuador/hardcover',
+    note: 'University of California Press record consulted for the Voices Revived edition (2022; original 1951; 210 pages). No book wording, quotation, table, map or scan is republished; this historical constitutional and caudillo study is not projected onto the Noboa period or treated as a complete Ecuadorian social history.',
+    accessDate: '2026-09-21', creators: ['George I. Blanksten'], institution: 'University of California Press', publicationDate: '2022-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length constitutional and political history', identifiers: { isbn: '9780520374621', paperbackIsbn: '9780520349940', ebookIsbn: '9780520349957', doi: '10.1525/9780520349957', pages: '210', editionYear: '2022', originalPublicationYear: '1951' },
+    description: 'Book-length study of Ecuadorian constitutional instability, parties, executives, legislatures, elections and local government through the late 1940s, reissued in the Voices Revived programme. It supplies a historical institutional lens alongside later Ecuadorian scholarship, not direct evidence of 2023–2025 policy or public attitudes.'
+  },
+  {
     id: 'venezuelaConstitution1999Gaceta',
     label: 'Venezuela — Constitución de la República Bolivariana de Venezuela (1999, official Gaceta record)',
     url: 'https://www.oas.org/juridico/PDFs/mesicic4_ven_const_vene.pdf',
