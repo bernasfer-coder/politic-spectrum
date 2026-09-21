@@ -4661,6 +4661,51 @@ const sources = [
     sourceType: 'official election-administration and oversight report', identifiers: { electionDate: '2024-03-24' },
     description: 'Primary institutional report on the preparation, administration and counting oversight of Senegal’s 24 March 2024 presidential election. It is used alongside the Constitutional Council proclamation as a dated procedural witness, not as an independent quality assessment.',
   },
+  {
+    id: 'reyntjensModernRwanda2024',
+    label: 'Filip Reyntjens — Modern Rwanda: A Political History (2024)',
+    url: 'https://www.cambridge.org/core/books/modern-rwanda/5BF8051070233C3F7EF5CE8CB31AD034',
+    note: 'Cambridge University Press book record and front matter consulted for the 2024 monograph (224 pages; hardback ISBN 9781009284479; paperback ISBN 9781009284486; ebook ISBN 9781009284493; DOI 10.1017/9781009284493). No book wording, quotation, table, map or scan is republished; the longue-durée interpretation is attributed and not treated as a complete local or current-status account.',
+    accessDate: '2026-09-20', creators: ['Filip Reyntjens'], institution: 'Cambridge University Press', publicationDate: '2024-11-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of modern Rwanda', identifiers: { hardbackIsbn: '9781009284479', paperbackIsbn: '9781009284486', ebookIsbn: '9781009284493', doi: '10.1017/9781009284493', pages: '224' },
+    description: 'A recent book-length political history tracing Rwanda from the nineteenth century through colonialism, independence, the 1994 genocide and the RPF-led post-genocide order. Its chapter on post-genocide political governance supplies a critical, long-run perspective on state-building, militarisation, patronage and presidential power without being treated as a complete account of every Rwandan experience.',
+  },
+  {
+    id: 'folarinRwandaRadicalTransformation2023',
+    label: 'Sheriff F. Folarin — Rwanda’s Radical Transformation Since the End of the 1994 Genocide against the Tutsi (2023)',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-37011-3',
+    note: 'Springer Nature/Palgrave Macmillan book record consulted for the 2023 monograph (254 pages; hardback ISBN 9783031370106; softcover ISBN 9783031370137; ebook ISBN 9783031370113; DOI 10.1007/978-3-031-37011-3). No book wording, photograph, table or scan is republished; its fieldwork-informed account and affirmative interpretation are attributed and paired with critical scholarship.',
+    accessDate: '2026-09-20', creators: ['Sheriff F. Folarin'], institution: 'Palgrave Macmillan / Springer Nature', publicationDate: '2023-08-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of post-genocide Rwandan society, development and political transformation', identifiers: { hardbackIsbn: '9783031370106', softcoverIsbn: '9783031370137', ebookIsbn: '9783031370113', doi: '10.1007/978-3-031-37011-3', pages: '254' },
+    description: 'A book-length, fieldwork-informed account of Rwanda’s post-genocide transformation, including leadership, social programmes, national security, reconciliation, development and regional influence. It foregrounds resilience and state-led reconstruction while leaving room for critical comparison on political space, local experience and implementation.',
+  },
+  {
+    id: 'bachmannHistoryRwanda2023',
+    label: 'Klaus Bachmann — A History of Rwanda: From the Monarchy to Post-genocidal Justice (2023)',
+    url: 'https://www.routledge.com/A-History-of-Rwanda-From-the-Monarchy-to-Post-genocidal-Justice/Bachmann/p/book/9781032272351',
+    note: 'Routledge book record consulted for the 2023 monograph (274 pages; ISBN 9781032272351). No book wording, quotation, archive, illustration or scan is republished; Bachmann’s archival and historiographical intervention is attributed and not treated as a complete account of post-2017 politics or all local perspectives.',
+    accessDate: '2026-09-20', creators: ['Klaus Bachmann'], institution: 'Routledge', publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national and post-genocide political history', identifiers: { isbn: '9781032272351', pages: '274' },
+    description: 'A book-length history from the precolonial monarchy through colonialism, independence, the 1994 genocide and post-genocidal justice and reconstruction. Based on archival research and a stated effort to move beyond polarized narratives, it supplies historiographical context while not resolving every dispute about memory, justice, state power or later political practice.',
+  },
+  {
+    id: 'rwandaNecPresidentialElection2024',
+    label: 'National Electoral Commission of Rwanda — Final results of the presidential and legislative elections, July 2024',
+    url: 'https://nec.gov.rw/wp-content/uploads/2024/07/Elections-Results-22072024-1-English.pdf',
+    note: 'Official National Electoral Commission results record consulted for the 2024 presidential and legislative elections. No result table, scan or PDF page is republished; official returns are distinguished from independent observation, voter motives, equal competition, public consent and subsequent policy performance.',
+    accessDate: '2026-09-20', creators: ['National Electoral Commission of Rwanda'], institution: 'National Electoral Commission of Rwanda', publicationDate: '2024-07-22', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official presidential and legislative election results', identifiers: { electionDates: '2024-07-14 to 2024-07-16', presidentialResult: 'Paul Kagame 99.18 percent' },
+    description: 'Primary institutional record of the 2024 presidential and legislative election returns, including the national presidential result and provincial breakdowns. It anchors the case’s formal electoral endpoint without independently proving competition, equal participation, voter autonomy or later implementation.',
+  },
+  {
+    id: 'rwandaAuComesaObservation2024',
+    label: 'African Union and COMESA — Election Observation Mission report, Rwanda 2024',
+    url: 'https://papsrepository.africanunion.org/bitstreams/e0a00c5e-95e4-49cf-bf2f-8500cd091b11/download',
+    note: 'African Union/COMESA observation mission report consulted as an institutional election observation record. No report wording, table, scan or PDF page is republished; its observations are kept distinct from domestic official returns, opposition claims, voter experience and a general verdict on Rwanda’s political order.',
+    accessDate: '2026-09-20', creators: ['African Union and Common Market for Eastern and Southern Africa'], institution: 'African Union / COMESA', publicationDate: '2024', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'regional election-observation mission report', identifiers: { electionYear: '2024', mission: 'AU-COMESA' },
+    description: 'Institutional observation record for Rwanda’s 2024 presidential and parliamentary elections. It adds a regional procedural perspective to the official results while remaining bounded evidence about the electoral process rather than a complete account of political freedoms, social consent or the lived experience of all communities.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -4688,7 +4733,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
       : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
       : source.id.startsWith('uganda') || source.id.startsWith('kanyeihambaConstitutionalPoliticalHistoryUganda') || source.id.startsWith('mutibwaUganda') || source.id.startsWith('reidHistoryModernUganda') || source.id.startsWith('mamdaniPoliticsClassUganda') || source.id.startsWith('mamdaniSlowPoisonUganda') ? 'Ugandan decolonization, constitutional, military and movement-state history'
-      : source.id.startsWith('rwanda') || source.id.startsWith('reyntjensPoliticalGovernanceRwanda') || source.id.startsWith('thomsonRwandaPrecariousPeace') || source.id.startsWith('strausWaldorfRemakingRwanda') || source.id.startsWith('guichaouaFromWarToGenocide') || source.id.startsWith('prunierRwandaCrisis') ? 'Rwandan post-conflict, constitutional, developmental and political history'
+      : source.id.startsWith('rwanda') || source.id.startsWith('reyntjensPoliticalGovernanceRwanda') || source.id.startsWith('reyntjensModernRwanda2024') || source.id.startsWith('folarinRwandaRadicalTransformation2023') || source.id.startsWith('bachmannHistoryRwanda2023') || source.id.startsWith('thomsonRwandaPrecariousPeace') || source.id.startsWith('strausWaldorfRemakingRwanda') || source.id.startsWith('guichaouaFromWarToGenocide') || source.id.startsWith('prunierRwandaCrisis') ? 'Rwandan post-conflict, constitutional, developmental and political history'
       : source.id.startsWith('senegal') || source.id.startsWith('constructionEtatSenegal') || source.id.startsWith('villalonIslamicSocietySenegal') || source.id.startsWith('ndaoDemocraticConquestsSenegal') || source.id.startsWith('niangPropagandaCensorshipSenegal') || source.id.startsWith('gellarDemocracySenegal') || source.id.startsWith('galvanStateMasterFireSenegal') || source.id.startsWith('cisseMaturationDemocratiqueSenegal') || source.id.startsWith('kanteFayeGeopolitiqueSenegal') || source.id.startsWith('pigeaudSyllaDemocratieFrancafrique') ? 'Senegalese constitutional, democratic and political history'
       : source.id.startsWith('liberia') || source.id.startsWith('liebenow') || source.id.startsWith('sawyer') || source.id.startsWith('ellisMaskAnarchyLiberia') || source.id.startsWith('adebajoLiberia') ? 'Liberian constitutional, conflict, transitional-justice and political history'
       : source.id.startsWith('sierraLeone') || source.id.startsWith('harrisSierraLeone') || source.id.startsWith('gberieDirtyWarSierraLeone') || source.id.startsWith('keenConflictCollusionSierraLeone') || source.id.startsWith('mittonRebelsRottenStateSierraLeone') || source.id.startsWith('lahaiHumanRightsSierraLeone') ? 'Sierra Leonean constitutional, conflict, transitional-justice and political history'
