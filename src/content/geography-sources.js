@@ -5786,6 +5786,105 @@ const sources = [
     sourceType: 'book-length scholarly edited volume on contemporary Myanmar', identifiers: { isbn: '9789814818544', paperbackIsbn: '9789814818537', pages: '333' },
     description: 'Multi-author research volume on political, social and economic transformations during the reform era, including governance, rural life, social protection, politics and contested peace. It supplies plural contemporary perspectives while ending before the 2021 coup and not representing all communities or regions.',
   },
+  {
+    id: 'southKoreaConstitution1987Official',
+    label: 'Republic of Korea — Constitution of the Republic of Korea (1987, official English text)',
+    url: 'https://www.law.go.kr/lsInfoP.do?lsiSeq=61603&viewCls=engLsInfoR',
+    note: 'Korean Law Information Center official English constitutional text consulted for formal design and link only. No constitutional wording is republished; rights, popular sovereignty, separation of powers, presidential-parliamentary institutions, the Constitutional Court and economic-order provisions are distinguished from implementation and the experience of every resident or citizen.',
+    accessDate: '2026-09-21', creators: ['Republic of Korea'], institution: 'Korean Law Information Center / Ministry of Government Legislation', publicationDate: '1987-10-29', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Korean'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionRevision: '1987', promulgationDate: '1987-10-29' },
+    description: 'Primary legal witness to the Sixth Republic constitutional order: a democratic republic, elected institutions, rights, the National Assembly, courts, Constitutional Court, election commissions, local government and a mixed economic order. It records formal design rather than democratic quality, social equality, civilian control or uniform practice.',
+  },
+  {
+    id: 'southKoreaNec2024Assembly',
+    label: 'National Election Commission of the Republic of Korea — 22nd National Assembly election statistics (2024)',
+    url: 'https://www.nec.go.kr/site/eng/ex/bbs/View.do?bcIdx=235803&cbIdx=1273',
+    note: 'Republic of Korea National Election Commission resource-center record consulted for the official election-statistics link only. No spreadsheet values or table is republished; the record is distinguished from independent observation, party claims, turnout interpretation and the political experience of every candidate or voter.',
+    accessDate: '2026-09-21', creators: ['National Election Commission of the Republic of Korea'], institution: 'National Election Commission of the Republic of Korea', publicationDate: '2024-08-20', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Korean'],
+    sourceType: 'official electoral statistics record', identifiers: { election: '22nd National Assembly', electionDate: '2024-04-10' },
+    description: 'Official election-statistics record for the 2024 22nd National Assembly election, including candidate characteristics by party, education, previous occupation, gender and age. It anchors the contemporary electoral horizon without proving equal representation, electoral fairness, public consent or democratic quality.',
+  },
+  {
+    id: 'southKoreaConstitutionalCourtYoon2025',
+    label: 'Constitutional Court of Korea — Case on Impeachment Trial of President Yoon Suk-yeol (2024Hun-Na8, 4 April 2025)',
+    url: 'https://www.ccourt.go.kr/site/eng/decisions/casesearch/caseSearch.do',
+    note: 'Constitutional Court of Korea official English case-search record consulted for the final-decision date, disposition and link only. No judgment wording is republished; the Court’s holding is attributed and distinguished from political-party narratives, criminal proceedings, public opinion and later political developments.',
+    accessDate: '2026-09-21', creators: ['Constitutional Court of Korea'], institution: 'Constitutional Court of Korea', publicationDate: '2025-04-04', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Korean'],
+    sourceType: 'primary constitutional adjudication record', identifiers: { caseNumber: '2024Hun-Na8', decisionDate: '2025-04-04' },
+    description: 'Official constitutional adjudication record documenting the Court’s decision to uphold the impeachment and remove President Yoon Suk-yeol. It anchors the bounded 2024–2025 constitutional crisis while not substituting for the full Korean-language judgment, legislative record, military record or social history.',
+  },
+  {
+    id: 'southKoreaImDemocratization2020',
+    label: 'Hyug Baeg Im — Democratization and Democracy in South Korea, 1960–Present (2020)',
+    url: 'https://link.springer.com/book/10.1007/978-981-15-3703-5',
+    note: 'Palgrave Macmillan record consulted for the 2020 monograph (XXIII, 319 pages; print ISBN 9789811537028, electronic ISBN 9789811537035; DOI 10.1007/978-981-15-3703-5). No book wording, quotation, table or scan is republished; Im’s comparative political-science interpretation is attributed and period-bounded.',
+    accessDate: '2026-09-21', creators: ['Hyug Baeg Im'], institution: 'Palgrave Macmillan Singapore', publicationDate: '2020-08-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of South Korean democratization and democracy', identifiers: { isbn: '9789811537028', ebookIsbn: '9789811537035', doi: '10.1007/978-981-15-3703-5', pages: '319' },
+    description: 'Book-length analysis of South Korean democratization from the 1960s through the contemporary democratic order, including authoritarian development, the 1987 transition, democratic consolidation, industrial relations and the relationship between democracy and economic development. It supplies one interpretive perspective, not a complete social or Korean-language historiography.',
+  },
+  {
+    id: 'southKoreaSaxerTransition2002',
+    label: 'Carl J. Saxer — From Transition to Power Alternation: Democracy in South Korea, 1987–1997 (2002)',
+    url: 'https://www.routledge.com/From-Transition-to-Power-Alternation-Democracy-in-South-Korea-1987-1997/Saxer/p/book/9780415864923',
+    note: 'Routledge record consulted for the 2002 monograph (278 pages; ISBN 9780415864923). No book wording, quotation, table or scan is republished; Saxer’s argument about transition and incomplete consolidation is distinguished from later electoral, judicial and economic scholarship.',
+    accessDate: '2026-09-21', creators: ['Carl J. Saxer'], institution: 'Routledge', publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of South Korean democratic transition', identifiers: { isbn: '9780415864923', pages: '278' },
+    description: 'Book-length history and political analysis of the 1987 transition, 1992 presidential succession, 1997 opposition victory and early consolidation problem. It is a period-bounded account of institutional change, not a complete explanation of contemporary South Korea.',
+  },
+  {
+    id: 'southKoreaGuichardConstitutionalJustice2016',
+    label: 'Justine Guichard — Regime Transition and the Judicial Politics of Enmity: Democratic Inclusion and Exclusion in South Korean Constitutional Justice (2016)',
+    url: 'https://link.springer.com/book/10.1057/9781137531575',
+    note: 'Palgrave Macmillan record consulted for the 2016 monograph (XVIII, 248 pages; print ISBN 9781137575074, electronic ISBN 9781137531575; DOI 10.1057/9781137531575). No book wording, quotation, case table or scan is republished; the constitutional-justice interpretation is attributed and distinguished from a general democracy score.',
+    accessDate: '2026-09-21', creators: ['Justine Guichard'], institution: 'Palgrave Macmillan New York', publicationDate: '2016-01-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length socio-legal study of South Korean constitutional justice', identifiers: { isbn: '9781137575074', ebookIsbn: '9781137531575', doi: '10.1057/9781137531575', pages: '248' },
+    description: 'Socio-legal study of the Constitutional Court after the 1987 transition, including its role in rights, political exclusion, national-security disputes and the definition of constitutional enmity. It complicates liberal-democratic narratives without proving a uniform judicial or social experience.',
+  },
+  {
+    id: 'southKoreaKwonDevelopmentalState2021',
+    label: 'Hyeong-ki Kwon — Changes by Competition: The Evolution of the South Korean Developmental State (2021)',
+    url: 'https://academic.oup.com/book/39616',
+    note: 'Oxford University Press record consulted for the 2021 monograph (print ISBN 9780198866060, electronic ISBN 9780191898303; DOI 10.1093/oso/9780198866060.001.0001). No book wording, data, table or scan is republished; Kwon’s political-economy argument is distinguished from a simple developmental-state label or a complete national history.',
+    accessDate: '2026-09-21', creators: ['Hyeong-ki Kwon'], institution: 'Oxford University Press', publicationDate: '2021-02-11', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of South Korean developmental political economy', identifiers: { isbn: '9780198866060', ebookIsbn: '9780191898303', doi: '10.1093/oso/9780198866060.001.0001', pages: '240' },
+    description: 'Book-length political-economy study tracing the evolution of Korean state-led capitalism, elite competition, liberalization, globalization and the Asian financial crisis. It supplies a distinct account of economic governance and institutional adaptability, not a complete class, labor or regional history.',
+  },
+  {
+    id: 'southKoreaDoucettePostdevelopmental2024',
+    label: 'Jamie Doucette — The Postdevelopmental State: Dilemmas of Economic Democratization in Contemporary South Korea (2024)',
+    url: 'https://press.umich.edu/Books/T/The-Postdevelopmental-State3',
+    note: 'University of Michigan Press record consulted for the 2024 open-access monograph (234 pages; print ISBN 9780472057085, hardcover ISBN 9780472077083, electronic ISBN 9780472904686; DOI 10.3998/mpub.12875326). No book wording is republished; the open-access status and license are recorded for provenance while the political-economy argument remains attributed.',
+    accessDate: '2026-09-21', creators: ['Jamie Doucette'], institution: 'University of Michigan Press', publicationDate: '2024-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access book-length study of South Korean economic democratization', identifiers: { isbn: '9780472057085', hardcoverIsbn: '9780472077083', ebookIsbn: '9780472904686', doi: '10.3998/mpub.12875326', pages: '234', license: 'CC BY-NC 4.0' },
+    description: 'Open-access book-length study of pro-democratic reformers, social movements, economic democratization, inequality and the postdevelopmental state after the 2017 Candlelight mobilization. It adds a critical political-economy perspective and does not stand for every worker, generation, gender or region.',
+  },
+  {
+    id: 'southKoreaPardoShrimpWhale2022',
+    label: 'Ramon Pacheco Pardo — Shrimp to Whale: South Korea from the Forgotten War to K-Pop (2022)',
+    url: 'https://academic.oup.com/book/45393',
+    note: 'Oxford Academic and Hurst records consulted for the 2022 national history (Hurst hardback ISBN 9781787387041; Oxford electronic ISBN 9780197683514; Oxford print ISBN 9780197659656; DOI 10.1093/oso/9780197659656.001.0001). No book wording, quotation or scan is republished; Pardo’s accessible synthesis is paired with specialized constitutional, democratization and political-economy studies.',
+    accessDate: '2026-09-21', creators: ['Ramon Pacheco Pardo'], institution: 'Oxford University Press / Hurst', publicationDate: '2022-08-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national political and social history', identifiers: { isbn: '9781787387041', oxfordIsbn: '9780197659656', ebookIsbn: '9780197683514', doi: '10.1093/oso/9780197659656.001.0001', pages: '280' },
+    description: 'Broad book-length history of South Korea from postwar survival through dictatorship, economic growth, democratic transition, social transformation and the 2022 presidential horizon. It supplies national context and a distinct narrative synthesis, not a substitute for Korean-language, local or conflictual perspectives.',
+  },
+  {
+    id: 'southKoreaKimDemocratization2003',
+    label: 'Samuel S. Kim (ed.) — Korea’s Democratization (2003)',
+    url: 'https://www.cambridge.org/core/books/koreas-democratization/E3DE985C713FF357F00E8CDC76500B86',
+    note: 'Cambridge University Press record consulted for the edited volume (292 pages; ISBN 9780521823210 hardback, 9780521530224 paperback; DOI 10.1017/CBO9780511510229). No chapter wording, quotation or scan is republished; the multi-author volume is used as an independent scholarly perspective on consolidation, civil society, constitutional democracy and the developmental state.',
+    accessDate: '2026-09-21', creators: ['Samuel S. Kim'], institution: 'Cambridge University Press', publicationDate: '2003-05-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume on South Korean democratization', identifiers: { isbn: '9780521823210', paperbackIsbn: '9780521530224', doi: '10.1017/CBO9780511510229', pages: '292' },
+    description: 'Edited scholarly volume examining South Korean democratic transition and consolidation through civil society, national identity, economic development, constitutional democracy, electoral politics and regional or international contexts. It preserves plural scholarly lenses rather than a single national score.',
+  },
+  {
+    id: 'southKoreaDemocratizationSourcebook2016',
+    label: 'Namhee Lee and Kim Won (eds.) — The South Korean Democratization Movement: A Sourcebook (2016)',
+    url: 'https://www.aks.ac.kr/cms/usr/wap/selectAplctnData.do?bookSeq=4261&lang=kor&menuNo=2010112130&siteAplctnId=publishedBookAks',
+    note: 'Academy of Korean Studies official publisher record consulted for the 2016 English sourcebook (374 pages; ISBN 9791158661168). The volume translates and contextualizes selected movement documents; no source-document wording, image or scan is republished here. It is a primary-source collection with editorial framing, not a complete social history or a claim that all South Koreans shared the movement’s positions.',
+    accessDate: '2026-09-21', creators: ['Namhee Lee', 'Kim Won'], institution: 'Academy of Korean Studies Press', publicationDate: '2016-07-01', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Korean'],
+    sourceType: 'book-length primary-source collection / translated political documents', identifiers: { isbn: '9791158661168', pages: '374' },
+    description: 'English-language sourcebook of translated and contextualized documents from South Korean democratization movements from the 1960s through the late 1980s, including manifestos, newsletters, prison appeals, letters and poems. It makes movement voices visible while retaining selection, translation and editorial limits.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -5803,7 +5902,8 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
           : source.id.startsWith('knightMexican') || source.id.startsWith('eisenstadtCourtingDemocracyMexico') || source.id.startsWith('shirkMexicoNewPolitics') || source.id.startsWith('oxfordHandbookMexicanPolitics') || source.id.startsWith('olneyLocalMexico') || source.id.startsWith('middlebrookDilemmasPoliticalChangeMexico') || source.id.startsWith('mexicoIne') ? 'Mexican constitutional, democratic-transition and political history'
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') || source.id.startsWith('fulbrookHistoryGermany') || source.id.startsWith('zelikowRice') || source.id.startsWith('greenHoughMiskimmon') || source.id.startsWith('vonBeymeBusch') || source.id.startsWith('germanyBundestag') ? 'German postwar and reunified constitutional and political history'
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') || source.id.startsWith('gundleParkerNewItalianRepublic') || source.id.startsWith('newellPoliticsItaly') || source.id.startsWith('cottaVerzichelliPoliticalInstitutionsItaly') || source.id.startsWith('ignaziRissoWellhoferItalianParties') || source.id.startsWith('italyPoliticalElection') ? 'Italian constitutional, party-system and political history'
-         : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
+          : source.id.startsWith('southKorea') ? 'South Korean constitutional, democratization and political history'
+          : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('weissProtest') || source.id.startsWith('weissHazis') || source.id.startsWith('gomezOsman') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
          : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('longTantricStateBhutan') || source.id.startsWith('rizalRoyalSemiauthoritarianBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
