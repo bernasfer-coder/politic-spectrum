@@ -2,6 +2,8 @@
 
 An npm/Vite/React prototype for exploring political positions across six independent dimensions:
 
+Live site: [bernasfer-coder.github.io/politic-spectrum](https://bernasfer-coder.github.io/politic-spectrum/)
+
 1. Economic model: free-market ↔ collectivist
 2. Social values: traditionalist ↔ progressive
 3. Authority: libertarian ↔ authoritarian
