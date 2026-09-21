@@ -6763,6 +6763,42 @@ const sources = [
     description: 'Comparative political-science study of party strategy and voter representation in unequal democracies, including the Frente Amplio and Uruguay alongside Chile’s UDI. It supplies a party-voter linkage perspective and does not establish a complete account of Uruguayan institutions, society or later politics.'
   },
   {
+    id: 'uruguayStatePoliciesLacallePou2025',
+    label: 'Fundación de Cultura Universitaria — Uruguay 2020–2025: Estado y políticas públicas durante el gobierno de Luis Lacalle Pou (1st ed., 2025)',
+    url: 'https://fcu.edu.uy/p/uruguay-2020-2025-estado-y-politicas-publicas-durante-el-gobierno-de-luis-lacalle-pou',
+    note: 'Fundación de Cultura Universitaria publisher record consulted for the 394-page Spanish-language collective volume (1st ed., November 2025; ISBN 9789974217720). No book wording, quotation, table or scan is republished; the publisher describes it as public dissemination, so its multi-author policy synthesis is not treated as a peer-reviewed consensus or a complete post-2025 history.',
+    accessDate: '2026-09-21', creators: ['José Miguel Busquets', 'Andrea Delbono', 'Cecilia Rocha-Carpiuc', 'Gerardo Caetano', 'Inés Fynn', 'Adolfo Garcé García y Santos', 'Niki Johnson', 'Verónica Pérez-Bentancur', 'Daniela Vairo', 'Florencia Antía', 'Lucía Anzalone Santamarina', 'Germán Bidegain', 'Emiliano Clavijo', 'Virginia Coitinho', 'Martín Freigedo', 'Guillermo Fuentes', 'Julián González Guyer', 'Gabriela González Vaillant', 'Lucía González Cereceda', 'Lorena Infante', 'Camilo López Burian', 'Carlos Luján', 'María Ester Mancebo', 'Gabriela Mordecki', 'Carolina Neme', 'Lorena Repetto', 'Marcela Schenck', 'Diego Sempol', 'Carlos Tejera', 'Belén Villegas Plá', 'Cristina Zurbriggen'], institution: 'Fundación de Cultura Universitaria / Universidad de la República', publicationDate: '2025-11', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length public-policy and state study of Uruguay under the Lacalle Pou coalition', identifiers: { isbn: '9789974217720', pages: '394', edition: '1st' },
+    description: 'Collective Spanish-language study of the 2020–2025 Lacalle Pou government, including the coalition’s state and public-policy arenas, the COVID-19 pandemic, the Ley de Urgente Consideración and social-security reform. It supplies contemporary policy and institutional perspectives while its publisher’s public-dissemination framing and endpoint require caution about peer review, implementation and later developments.'
+  },
+  {
+    id: 'uruguayEleccionesComportamiento2024',
+    label: 'Elina Gómez Bonaglia, Camila Zeballos Lereté, Jaime Yaffé et al. — Elecciones y comportamiento electoral en una democracia de partidos: Ciclo electoral 2024 en Uruguay (2025)',
+    url: 'https://libros.fcu.edu.uy/index.php/fcu/en/catalog/book/142',
+    note: 'Fundación de Cultura Universitaria publisher record consulted for the Spanish-language collective volume on the 2024 electoral cycle (published 8 December 2025; 11 chapters). No book wording, quotation, table or scan is republished; the publisher record does not show an ISBN or page count, and the chapter-level work is not treated as a complete current-country history or uniform voter account.',
+    accessDate: '2026-09-21', creators: ['Elina Gómez Bonaglia', 'Camila Zeballos Lereté', 'Jaime Yaffé', 'Román Sugo', 'Nicolás Schmidt', 'Fernando Rosenblatt', 'Cecilia Rocha Carpiuc', 'Rosario Queirolo', 'Rafael Piñeiro-Rodríguez', 'Verónica Pérez-Bentancur', 'Martín Opertti', 'Juan A. Moraes', 'Felipe Monestier', 'Niki Johnson', 'Diego Luján', 'Esteban García Ortíz', 'Adolfo Garcé García y Santos', 'Inés Fynn', 'Fernando Filgueira', 'Daniel Chasquetti', 'Fabricio Carneiro', 'Antonio Cardarello', 'Yoana Cabrera', 'Daniel Buquet Corleto', 'Juan A. Bogliaccini', 'Federico Acosta y Lara', 'Daniela Vairo'], institution: 'Fundación de Cultura Universitaria / Departamento de Ciencia Política, Facultad de Ciencias Sociales, Universidad de la República', publicationDate: '2025-12-08', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length edited electoral study of Uruguay’s 2024 cycle', identifiers: { publicationDate: '2025-12-08', chapters: '11', bookSeries: 'Ciclo electoral 2024 en Uruguay' },
+    description: 'Collective Spanish-language analysis of Uruguay’s 2024 electoral cycle, including Frente Amplio’s return, vote and parliamentary results, the party system, runoff politics, social media, affective polarization and gender representation. The publisher record establishes the volume and scope, while full chapter-level and post-election implementation review remain open.'
+  },
+  {
+    id: 'uruguayCorteElectoralLUCReferendum2022',
+    label: 'Corte Electoral of Uruguay — referendum against 135 articles of Law 19.889 (2022)',
+    url: 'https://www.gub.uy/corte-electoral/tramites-y-servicios/servicios/resultados-del-referendum-contra-135-articulos-ley-urgente',
+    note: 'Corte Electoral service record consulted for the 27 March 2022 referendum against 135 articles of Law 19.889 (Ley de Urgente Consideración). No result table, ballot, scan or PDF is republished; the official result is a formal electoral witness, not independent observation, proof of equal conditions or evidence of a single social meaning.',
+    accessDate: '2026-09-21', creators: ['Corte Electoral de la República Oriental del Uruguay'], institution: 'Corte Electoral de la República Oriental del Uruguay', publicationDate: '2022-03-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official referendum results and institutional record', identifiers: { referendumDate: '2022-03-27', law: '19.889', challengedArticles: '135' },
+    description: 'Official electoral record of the 2022 referendum on 135 articles of Uruguay’s Ley de Urgente Consideración. It anchors a dated direct-democratic contest over the coalition’s legislative program without establishing voter motivation, policy effects or uniform public consent.'
+  },
+  {
+    id: 'uruguayCorteElectoral2024',
+    label: 'Corte Electoral of Uruguay — national elections and plebiscites (2024)',
+    url: 'https://www.gub.uy/corte-electoral/datos-y-estadisticas/estadisticas/resultados-elecciones-nacionales-del-2024',
+    note: 'Corte Electoral results portal consulted for the 27 October 2024 national election and associated plebiscites, including the published circuit and ballot result files. No result table, ballot, scan or downloadable data file is republished; the official record anchors the electoral endpoint but does not prove fairness, representativeness, voter reasoning or later implementation.',
+    accessDate: '2026-09-21', creators: ['Corte Electoral de la República Oriental del Uruguay'], institution: 'Corte Electoral de la República Oriental del Uruguay', publicationDate: '2024-10-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official national election results and plebiscite records', identifiers: { electionDate: '2024-10-27', electionYear: '2024' },
+    description: 'Official election-management record of Uruguay’s 2024 national election and associated plebiscites, including the national executive and legislative process and published result files. It establishes a dated institutional endpoint, not a complete account of campaign conditions, social divisions or the incoming government’s later performance.'
+  },
+  {
     id: 'ecuadorConstitution2008Asamblea',
     label: 'Ecuador — Constitución de la República del Ecuador (2008, official Asamblea Nacional record)',
     url: 'https://www.asambleanacional.gob.ec/sites/default/files/constituciondelarepublicadelecuador-incluyereformas-consultapopular7demayo.pdf',
