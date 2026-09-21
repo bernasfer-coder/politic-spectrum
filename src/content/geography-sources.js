@@ -6267,6 +6267,96 @@ const sources = [
     description: 'Comparative political-science chapter explaining democratic survival after 1983 through changed actor commitments, policy moderation, memory of dictatorship, civilian control and rejection of military rebellions despite severe economic crises. It is a distinct comparative interpretation, not a complete social or institutional history.'
   },
   {
+    id: 'boliviaConstitution2009Gaceta',
+    label: 'Estado Plurinacional de Bolivia — Constitución Política del Estado (2009)',
+    url: 'https://www.gacetaoficialdebolivia.gob.bo/app/webroot/archivos/constitucion.pdf',
+    note: 'Gaceta Oficial de Bolivia PDF consulted as the primary constitutional text. No constitutional wording, translation, scan excerpt or protected material is republished; the formal plurinational, democratic, rights and autonomy design is distinguished from implementation, public consent and the experience of every community.',
+    accessDate: '2026-09-21', creators: ['Estado Plurinacional de Bolivia'], institution: 'Gaceta Oficial de Bolivia', publicationDate: '2009-02-07', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '2009' },
+    description: 'Primary constitutional witness to Bolivia’s plurinational, intercultural, democratic and decentralized legal design, including autonomies, rights and plural legal and cultural orders. It establishes formal design, not uniform political practice or national ideological character.'
+  },
+  {
+    id: 'boliviaOepReferendum2016',
+    label: 'Órgano Electoral Plurinacional — Referendo Constitucional 2016',
+    url: 'https://web.oep.org.bo/procesos-electorales-y-consultas/referendos/referendo-constitucional-2016/',
+    note: 'OEP official referendum portal and general report consulted for the 21 February 2016 vote on the proposed amendment to presidential re-election. No result table, ballot wording or scan is republished; the official result is distinguished from voter motivation, equal conditions and the later 2019 crisis.',
+    accessDate: '2026-09-21', creators: ['Órgano Electoral Plurinacional de Bolivia'], institution: 'Tribunal Supremo Electoral / Órgano Electoral Plurinacional', publicationDate: '2016-02-21', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official constitutional referendum result and institutional report', identifiers: { referendum: 'Bolivia constitutional referendum 2016', date: '2016-02-21' },
+    description: 'Official electoral record of the 2016 constitutional referendum, including the proposed amendment and recorded rejection. It anchors a dated direct-democratic episode without proving uniform public reasoning or a complete account of constitutional politics.'
+  },
+  {
+    id: 'boliviaOepElection2019',
+    label: 'Órgano Electoral Plurinacional — Elecciones Generales 2019',
+    url: 'https://web.oep.org.bo/elecciones-generales-2019/',
+    note: 'OEP official election portal consulted for the 20 October 2019 general election and Tribunal Supremo Electoral records. No result table, ballot, candidate wording or scan is republished; the institutional record is paired with the OAS audit and does not by itself settle the contested crisis or public consent.',
+    accessDate: '2026-09-21', creators: ['Órgano Electoral Plurinacional de Bolivia'], institution: 'Tribunal Supremo Electoral / Órgano Electoral Plurinacional', publicationDate: '2019-10-20', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official general-election record', identifiers: { election: 'Bolivia general election 2019', date: '2019-10-20' },
+    description: 'Official institutional record of the 2019 presidential and legislative election sequence. It bounds the electoral episode and is not by itself a finding about electoral fairness, manipulation, voter motivation or the subsequent political crisis.'
+  },
+  {
+    id: 'boliviaOasAudit2019',
+    label: 'Organization of American States — Final Report of the Electoral Integrity Analysis Mission, Bolivia 2019',
+    url: 'https://www.oas.org/en/media_center/press_release.asp?sCodigo=E-109%2F19',
+    note: 'OAS official press release and Spanish report portal consulted for the December 2019 Electoral Integrity Analysis Mission. No report wording, table or scan is republished; the audit’s claims about serious irregularities, manipulation and confidence are attributed to the OAS and kept distinct from the OEP record, later scholarly disputes and a complete history of the crisis.',
+    accessDate: '2026-09-21', creators: ['Organization of American States'], institution: 'Organization of American States, Department of Electoral Cooperation and Observation', publicationDate: '2019-12-04', evidenceRole: 'contextual', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'international election-audit and observation report', identifiers: { report: 'Electoral Integrity Analysis Mission Bolivia 2019', date: '2019-12-04' },
+    description: 'Institutional audit of the 2019 election process alleging serious irregularities and intentional manipulation that prevented validation of the original result. It is a dated and attributed institutional finding, not a license to generalize one audit into every Bolivian political experience.'
+  },
+  {
+    id: 'boliviaOepElection2020',
+    label: 'Órgano Electoral Plurinacional — official results of the 2020 general election',
+    url: 'https://fuentedirecta.oep.org.bo/noticia/tse-presenta-los-resultados-oficiales-de-las-elecciones-generales-2020-y-proclama-a-los-candidatos-elegidos/',
+    note: 'OEP official results and proclamation record consulted for the 18 October 2020 general election. No result table, ballot, candidate wording or scan is republished; the record establishes the official electoral endpoint without proving uniform participation, representation, policy agreement or the later course of government.',
+    accessDate: '2026-09-21', creators: ['Tribunal Supremo Electoral de Bolivia'], institution: 'Órgano Electoral Plurinacional / Tribunal Supremo Electoral', publicationDate: '2020-11-18', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official general-election result and proclamation record', identifiers: { election: 'Bolivia general election 2020', date: '2020-10-18' },
+    description: 'Official results record for the 2020 general election and proclamation of the elected president, vice president and legislators. It anchors the democratic re-run after the 2019 crisis without serving as a complete account of electoral quality or public consent.'
+  },
+  {
+    id: 'boliviaKleinConciseHistory2011',
+    label: 'Herbert S. Klein — A Concise History of Bolivia (2nd ed., 2011)',
+    url: 'https://www.cambridge.org/core/books/a-concise-history-of-bolivia/B930561956D8668A848B7D55E20F3018',
+    note: 'Cambridge University Press record and front matter consulted for the second edition (2011; ISBN 9781107005686; digital ISBN 9780511976964; DOI 10.1017/CBO9780511976964; 296 pages). No book wording, quotation, table or scan is republished; Klein’s national synthesis is attributed and not treated as every Bolivian experience or a current assessment.',
+    accessDate: '2026-09-21', creators: ['Herbert S. Klein'], institution: 'Cambridge University Press', publicationDate: '2011-06-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern national history', identifiers: { isbn: '9781107005686', digitalIsbn: '9780511976964', doi: '10.1017/CBO9780511976964', pages: '296', edition: '2nd' },
+    description: 'Broad book-length history of Bolivia’s political, economic, social and cultural evolution, including the 1952 Revolution, democratic restoration and the emergence of Indigenous and mestizo political elites under Evo Morales. It supplies national context rather than a complete local, Indigenous-language or post-2020 history.'
+  },
+  {
+    id: 'boliviaDunkerleyRevolutionPower2007',
+    label: 'James Dunkerley — Bolivia: Revolution and the Power of History in the Present (2007)',
+    url: 'https://press.uchicago.edu/ucp/books/book/distributed/B/bo56545883.html',
+    note: 'University of London Press / University of Chicago Press distribution record consulted for the 2007 book. No essay wording, quotation, table or scan is republished; Dunkerley’s critical political-history interpretation is attributed and distinguished from a complete national, local or current account.',
+    accessDate: '2026-09-21', creators: ['James Dunkerley'], institution: 'University of London Press / Institute for the Study of the Americas', publicationDate: '2007', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of revolution and contemporary state power', identifiers: { isbn: '9781900039819', pages: '311' },
+    description: 'Book-length essays connecting the 1952 Revolution, neoliberal experiments, the rise of MAS and the political power of historical memory. It supplies a distinct critical lens and does not establish a uniform Bolivian political consciousness.'
+  },
+  {
+    id: 'boliviaHartenRiseMorales2011',
+    label: 'Sven Harten — The Rise of Evo Morales and the MAS (2011)',
+    url: 'https://www.bloomsbury.com/uk/rise-of-evo-morales-and-the-mas-9781848135253/',
+    note: 'Zed Books / Bloomsbury publisher record consulted for the 2011 monograph (ISBN 9781848135253; 274 pages). No book wording, interview, table or scan is republished; Harten’s political and biographical interpretation is attributed and not generalized to all MAS supporters, Indigenous communities or Bolivians.',
+    accessDate: '2026-09-21', creators: ['Sven Harten'], institution: 'Zed Books / Bloomsbury', publicationDate: '2011-04-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Evo Morales, MAS and social movements', identifiers: { isbn: '9781848135253', pages: '274' },
+    description: 'Book-length study of the historical and social-movement background to Morales and MAS, their state project, the new constitution and tensions within the democratic process. It supplies a focused movement–party–state perspective rather than a complete national history.'
+  },
+  {
+    id: 'boliviaWebberRebellionReform2011',
+    label: 'Jeffery R. Webber — From Rebellion to Reform in Bolivia (2011)',
+    url: 'https://www.haymarketbooks.org/books/354-from-rebellion-to-reform-in-bolivia',
+    note: 'Haymarket Books record consulted for the 2011 monograph (ISBN 9781608461066; 340 pages; ebook ISBN 9781608461073). No book wording, interview, table or scan is republished; Webber’s Marxist and activist-centered interpretation is attributed and kept distinct from official constitutional records and other scholarship.',
+    accessDate: '2026-09-21', creators: ['Jeffery R. Webber'], institution: 'Haymarket Books', publicationDate: '2011-04-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of class struggle, Indigenous liberation and MAS politics', identifiers: { isbn: '9781608461066', ebookIsbn: '9781608461073', pages: '340' },
+    description: 'Book-length interpretation of the mobilizations that preceded Morales, the contradictions of the first MAS term and the relationship between class struggle, Indigenous liberation, reform and state power, drawing on activist interviews. It is one situated perspective, not a complete account of every movement or locality.'
+  },
+  {
+    id: 'boliviaFarthingKohlEvosBolivia2014',
+    label: 'Linda C. Farthing and Benjamin H. Kohl — Evo’s Bolivia: Continuity and Change (2014)',
+    url: 'https://utpress.utexas.edu/9780292758681/',
+    note: 'University of Texas Press record consulted for the 2014 monograph (print ISBN 9780292758681; ebook ISBN 9780292757745; 272 pages). No book wording, table, quotation or scan is republished; Farthing and Kohl’s assessment is attributed and distinguished from a complete post-2014 history or a uniform social outcome.',
+    accessDate: '2026-09-21', creators: ['Linda C. Farthing', 'Benjamin H. Kohl'], institution: 'University of Texas Press', publicationDate: '2014-05-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length assessment of MAS government, social policy, resources and rights', identifiers: { isbn: '9780292758681', ebookIsbn: '9780292757745', pages: '272' },
+    description: 'Book-length assessment of continuity and change under MAS, including poverty, health and education, natural resources, women’s and Indigenous/minority rights and the tensions between government and social movements. It supplies a balanced policy lens rather than a complete local or post-2014 account.'
+  },
+  {
     id: 'uruguayConstitution1967Impo',
     label: 'Uruguay — Constitution of the Republic (1967, updated official text)',
     url: 'https://www.impo.com.uy/bases/constitucion/1967-1967',
@@ -6359,6 +6449,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
       : source.id.startsWith('gambia') || source.id.startsWith('hughesPerfectPoliticalHistoryGambia') || source.id.startsWith('saineParadoxThirdWaveGambia') || source.id.startsWith('saineCeesaySallStateSocietyGambia') || source.id.startsWith('nabanehAbebeSoweGambiaTransition') ? 'Gambian constitutional, democratization and political history'
       : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') || source.id.startsWith('southall') || source.id.startsWith('booysen') || source.id.startsWith('glaser') || source.id.startsWith('buthelezi') ? 'South African constitutional law and political history'
+      : source.id.startsWith('bolivia') ? 'Bolivian plurinational, constitutional and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
           : source.id.startsWith('philippine') || source.id.startsWith('thompsonAntiMarcos') || source.id.startsWith('timbermanChangelessLand') || source.id.startsWith('abinalesAmoroso') || source.id.startsWith('chopraPhilippines') || source.id.startsWith('bonoanDresselPhilippine') || source.id.startsWith('thompsonPhilippines') || source.id.startsWith('arugayEncinasGamesChanges') || source.id.startsWith('calimbahinDresselBeyondGeopolitics') ? 'Philippine constitutional, oligarchic and democratic political history'
           : source.id.startsWith('knightMexican') || source.id.startsWith('eisenstadtCourtingDemocracyMexico') || source.id.startsWith('shirkMexicoNewPolitics') || source.id.startsWith('oxfordHandbookMexicanPolitics') || source.id.startsWith('olneyLocalMexico') || source.id.startsWith('middlebrookDilemmasPoliticalChangeMexico') || source.id.startsWith('mexicoIne') ? 'Mexican constitutional, democratic-transition and political history'
