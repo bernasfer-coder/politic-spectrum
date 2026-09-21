@@ -6110,6 +6110,87 @@ const sources = [
     sourceType: 'book-length multidisciplinary edited volume on the peace agreement', identifiers: { isbn: '9780367528867', printIsbn: '9780367528812', pages: '364' },
     description: 'Interdisciplinary book-length assessment of the Colombian Final Agreement through peace studies, human rights, international law, transitional justice, political science and philosophy. Chapters address rural reform, gender, Afro-Colombian rights, justice, victims, legitimacy and democratic implementation, preserving disagreement rather than one verdict.',
   },
+  {
+    id: 'chileConstitution1980Bcn',
+    label: 'Junta de Gobierno of Chile — Constitution of the Republic of Chile, Decree Law 3464 (1980, official legal record)',
+    url: 'https://www.bcn.cl/leychile/navegar?cve=&i=&idLey=&idNorma=7129&idVersion=1980&tipoVersion=',
+    note: 'Biblioteca del Congreso Nacional / Ley Chile record consulted for the 1980 constitutional decree and its plebiscitary promulgation history. No constitutional wording is republished; formal design is distinguished from the conditions of the plebiscite, later amendments, implementation and public consent.',
+    accessDate: '2026-09-21', creators: ['Junta de Gobierno de la República de Chile'], institution: 'Biblioteca del Congreso Nacional de Chile / Ley Chile', publicationDate: '1980-08-08', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { decree: 'Decreto Ley 3464', promulgationDate: '1980-10-24' },
+    description: 'Primary legal witness to the 1980 Chilean constitutional design, including the institutional framework later used in the 1988–1990 transition. It establishes a text and legal history, not uniform political practice, democratic legitimacy or national ideological character.',
+  },
+  {
+    id: 'chileTricelPlebiscite1988',
+    label: 'Tribunal Calificador de Elecciones of Chile — Judgment of the 1988 national plebiscite (official record)',
+    url: 'https://tribunalcalificador.cl/wp-content/uploads/2020/11/SENTENCIA-PLEBISCITO-1988.pdf',
+    note: 'Tribunal Calificador de Elecciones record consulted for the official judgment and result of the 5 October 1988 plebiscite. No table or result wording is republished; the judgment anchors the electoral event without being treated as proof of uniform political motivation, fairness or social meaning.',
+    accessDate: '2026-09-21', creators: ['Tribunal Calificador de Elecciones de Chile'], institution: 'Tribunal Calificador de Elecciones de Chile', publicationDate: '1988', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official plebiscite judgment and results record', identifiers: { election: 'Chile national plebiscite 1988', date: '1988-10-05' },
+    description: 'Official judicial/electoral record anchoring the 1988 plebiscite that structured the transition horizon. It documents an institutional result, not a complete history of opposition, repression, campaign organization or public experience.',
+  },
+  {
+    id: 'chileTricelPlebiscite2020',
+    label: 'Tribunal Calificador de Elecciones of Chile — Official results of the 2020 constitutional plebiscite',
+    url: 'https://tribunalcalificador.cl/wp-content/uploads/2020/12/RESULTADOS-OFICIALES-PLEBSICITO-CONSTITUCION-2020-SITIO-WEB.xlsx',
+    note: 'Tribunal Calificador de Elecciones results portal consulted for the official 25 October 2020 constitutional plebiscite record. No result table is republished; the record anchors the constituent mandate without proving uniform public interpretation, representation or subsequent outcomes.',
+    accessDate: '2026-09-21', creators: ['Tribunal Calificador de Elecciones de Chile'], institution: 'Tribunal Calificador de Elecciones de Chile', publicationDate: '2020-10-25', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official constitutional plebiscite results record', identifiers: { election: 'Chile constitutional plebiscite 2020', date: '2020-10-25' },
+    description: 'Official electoral record anchoring the 2020 decision to initiate a constitutional process and select its institutional channel. It is evidence of a formal result, not by itself a measure of deliberation, public consent, representation or later constitutional success.',
+  },
+  {
+    id: 'chileTricelPlebiscite2022',
+    label: 'Tribunal Calificador de Elecciones of Chile — Official results of the 2022 constitutional plebiscite',
+    url: 'https://tribunalcalificador.cl/wp-content/uploads/2022/11/Resultados-definitivos-Plebiscito-Constitucional-2022.xlsb',
+    note: 'Tribunal Calificador de Elecciones results portal consulted for the official 4 September 2022 constitutional plebiscite record. No result table or proposed-constitution wording is republished; the record anchors the dated endpoint without proving uniform public reasoning, legitimacy or later constitutional development.',
+    accessDate: '2026-09-21', creators: ['Tribunal Calificador de Elecciones de Chile'], institution: 'Tribunal Calificador de Elecciones de Chile', publicationDate: '2022-09-04', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official constitutional plebiscite results record', identifiers: { election: 'Chile constitutional plebiscite 2022', date: '2022-09-04' },
+    description: 'Official electoral record anchoring the 2022 vote on the proposed constitution and the endpoint of this case. It records a formal result, not the whole constituent process, its social coalitions, public reasoning, institutional quality or post-2022 politics.',
+  },
+  {
+    id: 'chileBarrosConstitutionalism2002',
+    label: 'Robert Barros — Constitutionalism and Dictatorship: Pinochet, the Junta, and the 1980 Constitution (2002)',
+    url: 'https://www.cambridge.org/core/books/constitutionalism-and-dictatorship/contents/87D242E49DBBBFFEE9469D4DA1DB1B3A',
+    note: 'Cambridge University Press record consulted for the monograph (2002; ISBN 0521792185; DOI 10.1017/CBO9780511606298). No book wording, quotation, table or scan is republished; Barros’s legal-institutional interpretation is attributed and bounded to dictatorship and the 1988–1990 transition pathway.',
+    accessDate: '2026-09-21', creators: ['Robert Barros'], institution: 'Cambridge University Press', publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length constitutional and political history', identifiers: { isbn: '0521792185', doi: '10.1017/CBO9780511606298' },
+    description: 'Book-length study of the legalism of the Pinochet dictatorship, the 1980 Constitution, courts, decree-laws, emergency powers and the constitutional pathway into the 1988–1990 transition. It supplies a legal-institutional perspective, not a complete social history or current assessment.',
+  },
+  {
+    id: 'chileGarretonIncompleteDemocracy2004',
+    label: 'Manuel Antonio Garretón — Incomplete Democracy: Political Democratization in Chile and Latin America (2004 English translation)',
+    url: 'https://uncpress.org/9780807861578/incomplete-democracy/',
+    note: 'University of North Carolina Press record consulted for the English translation (2004; ISBN 9780807861578; 224 pages). No book wording, quotation or scan is republished; Garretón’s political-sociological interpretation of Chile’s return to democracy and incomplete democratization is attributed and not generalized to all Latin American or Chilean experience.',
+    accessDate: '2026-09-21', creators: ['Manuel Antonio Garretón'], institution: 'The University of North Carolina Press', publicationDate: '2004-07-21', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'book-length political sociology of democratization', identifiers: { isbn: '9780807861578', pages: '224', originalSpanish: '1995' },
+    description: 'Book-length political-sociological interpretation of Chile’s return to democracy, authoritarian legacies, political society and democratic incompleteness, alongside broader Latin American comparison. It contributes a distinct democratization lens rather than a full constitutional, economic or post-2004 history.',
+  },
+  {
+    id: 'chileHojmanPoliticalEconomy1993',
+    label: 'David E. Hojman — Chile: The Political Economy of Development and Democracy in the 1990s (1993)',
+    url: 'https://link.springer.com/book/10.1057/9780230376656',
+    note: 'Palgrave Macmillan record consulted for the monograph (1993; hardcover ISBN 9780333550519; DOI 10.1057/9780230376656; 242 pages). No book wording, table or scan is republished; Hojman’s political-economy analysis of democratic politics, markets, development, poverty and redistribution is attributed and period-bounded.',
+    accessDate: '2026-09-21', creators: ['David E. Hojman'], institution: 'Palgrave Macmillan', publicationDate: '1993-01-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy study', identifiers: { isbn: '9780333550519', ebookIsbn: '9780230376656', doi: '10.1057/9780230376656', pages: '242' },
+    description: 'Book-length study of the coexistence of democratic politics and market-oriented development in 1990s Chile, including growth, poverty, labor, housing, state and redistribution questions. It supplies an economic lens and does not establish later protest causes or uniform social outcomes.',
+  },
+  {
+    id: 'chileNavarreteTricotSocialOutburst2021',
+    label: 'Bernardo Navarrete and Victor Tricot (eds.) — The Social Outburst and Political Representation in Chile (2021)',
+    url: 'https://link.springer.com/book/10.1007/978-3-030-70320-2',
+    note: 'Springer Nature record consulted for the edited volume (2021; eBook ISBN 978-3-030-70320-2; hardcover ISBN 978-3-030-70319-6; 206 pages; DOI 10.1007/978-3-030-70320-2). No chapter wording, quotation, table or scan is republished; the volume’s plural studies of parties, social movements, Indigenous, feminist, student and water politics are attributed to contributors and period-bounded.',
+    accessDate: '2026-09-21', creators: ['Bernardo Navarrete', 'Victor Tricot'], institution: 'Springer Cham', publicationDate: '2021-07-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume on social movements and political representation', identifiers: { isbn: '9783030703196', ebookIsbn: '9783030703202', doi: '10.1007/978-3-030-70320-2', pages: '206' },
+    description: 'Edited volume analyzing the exhaustion of traditional party representation, post-transition social movements and the 2019 social outbreak, with chapters on Indigenous, university, feminist, water and constituent politics. It preserves plural perspectives rather than a single explanation of the uprising or all Chilean politics.',
+  },
+  {
+    id: 'chileGordonZolovWalls2022',
+    label: 'Terri Gordon-Zolov and Eric Zolov — The Walls of Santiago: Social Revolution and Political Aesthetics in Contemporary Chile (2022)',
+    url: 'https://www.berghahnbooks.com/title/Gordon-ZolovWalls',
+    note: 'Berghahn Books record consulted for the monograph (2022; hardcover ISBN 9781800732551; paperback ISBN 9781800733220; eISBN 9781807582944; 310 pages; DOI 10.3167/9781800732551). No photographs, chapter wording or protected material is republished; the authors’ visual and cultural interpretation is attributed and bounded to the 2019–2020 protest horizon.',
+    accessDate: '2026-09-21', creators: ['Terri Gordon-Zolov', 'Eric Zolov'], institution: 'Berghahn Books', publicationDate: '2022-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length visual and political history of social protest', identifiers: { isbn: '9781800732551', paperbackIsbn: '9781800733220', ebookIsbn: '9781807582944', doi: '10.3167/9781800732551', pages: '310' },
+    description: 'Book-length visual and political study of protest art, memory, feminist and Indigenous currents and the social revolution in Santiago from October 2019 through the COVID-19 lockdown. It adds cultural and visual evidence while remaining one situated interpretation rather than a complete national survey.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -6130,6 +6211,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
           : source.id.startsWith('southKorea') ? 'South Korean constitutional, democratization and political history'
           : source.id.startsWith('lebanon') ? 'Lebanese postwar, constitutional, sectarian and political history'
           : source.id.startsWith('colombia') ? 'Colombian constitutional, conflict, peace-process and political history'
+          : source.id.startsWith('chile') ? 'Chilean post-authoritarian constitutional, political-economy and constituent history'
           : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
         : source.id.startsWith('fernandoMalayan') || source.id.startsWith('crouchGovernmentMalaysia') || source.id.startsWith('weissProtest') || source.id.startsWith('weissHazis') || source.id.startsWith('gomezOsman') || source.id.startsWith('malaysia') || source.id.startsWith('tewMalaysia') || source.id.startsWith('wanHussain') ? 'Malayan and Malaysian constitutional and political history'
