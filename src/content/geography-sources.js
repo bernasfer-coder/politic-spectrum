@@ -7130,6 +7130,87 @@ const sources = [
     sourceType: 'French-language book-length study of state, nation, culture and democratization', identifiers: { isbn: '9782865371921', pages: '174' },
     description: 'French-language Haitian sociological essay published at the 1986–1987 rupture, linking the Duvalier legacy, state, nation, culture, migration, religion and the unfinished democratic project. It adds a materially different Haitian and Francophone perspective but predates later crises and is not a complete political history.'
   },
+  {
+    id: 'dominicanConstitution1963Official',
+    label: 'República Dominicana — Constitución de la Nación Dominicana de 1963',
+    url: 'https://consultoria.gov.do/Documents/GetDocument?reference=9bbd0452-eb2a-41fb-9f7a-c1014f734ddb',
+    note: 'Official Consultoría Jurídica del Poder Ejecutivo constitutional record consulted as a primary Spanish-language witness to the Constitution voted and proclaimed on 29 April 1963. No constitutional wording, translation, scan or page is republished; formal design is distinguished from implementation, public consent and the September 1963 coup.',
+    accessDate: '2026-09-21', creators: ['República Dominicana'], institution: 'Consultoría Jurídica del Poder Ejecutivo', publicationDate: '1963-04-29', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1963', promulgationDate: '1963-04-29', officialGazette: '8758' },
+    description: 'Official constitutional text for Juan Bosch’s short-lived post-Trujillo constitutional order, used for formal republican institutions and social and political commitments. It is primary evidence of constitutional design, not proof of broad agreement, equal implementation or the political causes of the coup.'
+  },
+  {
+    id: 'dominicanConstitution2010Official',
+    label: 'República Dominicana — Constitución de la República Dominicana de 2010',
+    url: 'https://www.consultoria.gov.do/Documents/GetDocument?reference=a8514323-0ac6-4c57-bcb9-f5c721e8bc3c',
+    note: 'Official Consultoría Jurídica del Poder Ejecutivo constitutional record consulted as a primary Spanish-language witness to the Constitution voted and proclaimed on 26 January 2010. No constitutional wording, translation, scan or page is republished; formal design, amendments and implementation remain distinct questions.',
+    accessDate: '2026-09-21', creators: ['República Dominicana'], institution: 'Consultoría Jurídica del Poder Ejecutivo', publicationDate: '2010-01-26', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '2010', promulgationDate: '2010-01-26', officialGazette: '10561' },
+    description: 'Official legal record for the later constitutional framework, used for sovereignty, representative institutions, rights, separation of powers and constitutional bodies. It establishes formal rules rather than uniform rights enforcement, institutional independence or current political performance.'
+  },
+  {
+    id: 'dominicanJceElectionArchive',
+    label: 'Junta Central Electoral — historical Dominican election results archive, 1962–2024',
+    url: 'https://jce.gob.do/Dependencias/Elecciones/Elecciones-Anteriores',
+    note: 'Official JCE election archive consulted as a primary institutional record and link only. No result table, wording, scan or page is republished; archived returns document electoral events and reported outcomes, not equal participation, voter experience, fairness or complete political legitimacy.',
+    accessDate: '2026-09-21', creators: ['Junta Central Electoral de la República Dominicana'], institution: 'Junta Central Electoral', publicationDate: '2024', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election-results archive', identifiers: { electionYears: '1962–2024' },
+    description: 'Official archive exposing historical election-result records from the post-Trujillo opening through the contemporary electoral sequence. It anchors the case’s dated election chronology while retaining the limits of institutional returns as evidence.'
+  },
+  {
+    id: 'dominicanJce2024Election',
+    label: 'Junta Central Electoral — Resultados definitivos de las elecciones presidenciales y congresuales de 2024',
+    url: 'https://elecciones2024.jce.gob.do/',
+    note: 'Official JCE 2024 election portal consulted as a primary electoral record and link only. No result table, wording, scan or page is republished; the definitive presidential and congressional record is an endpoint for the case, not proof of every voter’s experience or a post-2024 status judgment.',
+    accessDate: '2026-09-21', creators: ['Junta Central Electoral de la República Dominicana'], institution: 'Junta Central Electoral', publicationDate: '2024-05-19', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential and congressional election results', identifiers: { electionDate: '2024-05-19', electionCycle: '2024' },
+    description: 'Official portal for definitive presidential and congressional results and winner resolutions from the 19 May 2024 general election. It supplies the dated contemporary endpoint and reported institutional outcome without resolving broader representativeness or implementation.'
+  },
+  {
+    id: 'dominicanBalaguerRealidad1947',
+    label: 'Joaquín Balaguer — La realidad dominicana: semblanza de un país y de un régimen (1947)',
+    url: 'https://bd.bnphu.gob.do/items/ed19f151-6b65-4cef-91f1-dcaa07ae4a8d',
+    note: 'Biblioteca Nacional Pedro Henríquez Ureña record consulted for the 1947 Spanish-language primary political book (Imprenta Ferrari Hermanos, Buenos Aires; 186 pages). The digitized library record is linked for provenance; no extended book text or copyrighted passage is republished. Balaguer’s close association with the Trujillo regime makes this a situated self-legitimation source, not an impartial national history.',
+    accessDate: '2026-09-21', creators: ['Joaquín Balaguer'], institution: 'Biblioteca Nacional Pedro Henríquez Ureña', publicationDate: '1947', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary political text / regime-aligned self-legitimation', identifiers: { pages: '186' },
+    description: 'Primary political text articulating a favorable account of Trujillo-era state and national order. It is used to document regime language and political self-presentation, with its advocacy and positional limits kept explicit.'
+  },
+  {
+    id: 'dominicanHartlynDemocraticPolitics1998',
+    label: 'Jonathan Hartlyn — The Struggle for Democratic Politics in the Dominican Republic (1998)',
+    url: 'https://uncpress.org/9780807847077/the-struggle-for-democratic-politics-in-the-dominican-republic/',
+    note: 'University of North Carolina Press record consulted for the 1998 monograph (ISBN 9780807847077; 396 pages). No book wording, quotation, table, chapter or scan is republished; Hartlyn’s comparative and institutional interpretation is attributed and bounded to the publication horizon including the 1996 election.',
+    accessDate: '2026-09-21', creators: ['Jonathan Hartlyn'], institution: 'University of North Carolina Press', publicationDate: '1998-06-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-science history of democratic politics', identifiers: { isbn: '9780807847077', pages: '396' },
+    description: 'Book-length study of thirty-five years of Dominican politics, including the post-Trujillo rupture, Balaguer’s dominance, party competition, electoral conflict and the 1996 election. It supplies a central institutional-democratic interpretation rather than a complete social or current history.'
+  },
+  {
+    id: 'dominicanMoyaPonsNationalHistory1998',
+    label: 'Frank Moya Pons — The Dominican Republic: A National History (1998)',
+    url: 'https://books.google.com/books/about/The_Dominican_Republic.html?id=8BfRF9B02kgC',
+    note: 'Markus Wiener Publishers and library bibliographic records consulted for the 1998 English-language national history (543 pages; ISBN 9781558761926). No book wording, quotation, table, chapter or scan is republished; Moya Pons’s national synthesis is paired with specialized political and Trujillo-era studies and is not treated as every Dominican experience.',
+    accessDate: '2026-09-21', creators: ['Frank Moya Pons'], institution: 'Markus Wiener Publishers', publicationDate: '1998', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history', identifiers: { isbn: '9781558761926', pages: '543' },
+    description: 'Broad national history connecting the Dominican Republic’s political periods with socioeconomic development, colonial and postcolonial institutions and foreign occupations. It supplies national context for the bounded post-1961 case without replacing specialized studies or a present-day assessment.'
+  },
+  {
+    id: 'dominicanTuritsFoundations2003',
+    label: 'Richard Lee Turits — Foundations of Despotism: Peasants, the Trujillo Regime, and Modernity in Dominican History (2003)',
+    url: 'https://obnb.uk/p12650874-foundations-of-despotism-peasants-the-trujillo-regime-and-modernity-in-dominican-history',
+    note: 'Stanford University Press and Open British National Bibliography records consulted for the 2003 monograph (ISBN 0804743533; 384 pages). No book wording, quotation, table, chapter or scan is republished; Turits’s peasant-centered interpretation is attributed and bounded to the Trujillo-era history it studies.',
+    accessDate: '2026-09-21', creators: ['Richard Lee Turits'], institution: 'Stanford University Press', publicationDate: '2003', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length peasant, state-formation and political history', identifiers: { isbn: '0804743533', pages: '384' },
+    description: 'Book-length study of peasants, agrarian transformation, state formation and modernity under Trujillo. It adds a bottom-up social and political-economy perspective to national and institutional histories without being generalized to all later Dominican politics.'
+  },
+  {
+    id: 'dominicanDerbyDictatorsSeduction2009',
+    label: 'Lauren H. Derby — The Dictator’s Seduction: Politics and the Popular Imagination in the Era of Trujillo (2009)',
+    url: 'https://www.dukeupress.edu/the-dictators-seduction',
+    note: 'Duke University Press record consulted for the 2009 monograph (432 pages; cloth ISBN 9780822344865; paper ISBN 9780822344827). No book wording, quotation, table, image or scan is republished; Derby’s cultural history and oral/archival interpretation is attributed and bounded to Santo Domingo and the Trujillo era.',
+    accessDate: '2026-09-21', creators: ['Lauren H. Derby'], institution: 'Duke University Press', publicationDate: '2009-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length cultural and political history of the Trujillo dictatorship', identifiers: { clothIsbn: '9780822344865', paperIsbn: '9780822344827', pages: '432' },
+    description: 'Cultural history of the Trujillo regime as experienced in Santo Domingo, using archival and oral materials to analyze everyday domination, ritual, masculinity, race, class mobility and popular imagination. It is a city-centered lens, not a complete country history or post-1961 account.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -7204,6 +7285,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
