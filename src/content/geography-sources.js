@@ -6363,6 +6363,56 @@ const sources = [
     description: 'Comparative political-science chapter explaining democratic survival after 1983 through changed actor commitments, policy moderation, memory of dictatorship, civilian control and rejection of military rebellions despite severe economic crises. It is a distinct comparative interpretation, not a complete social or institutional history.'
   },
   {
+    id: 'argentinaDnu702023Official',
+    label: 'Argentina — Decreto de Necesidad y Urgencia 70/2023, Bases para la Reconstrucción de la Economía Argentina',
+    url: 'https://www.boletinoficial.gob.ar/detalleAviso/primera/301122/1',
+    note: 'Boletín Oficial de la República Argentina and InfoLEG records consulted for DNU 70/2023, dated 20 December 2023 and published 21 December 2023. No decree wording, article, scan or protected material is republished; the record establishes the executive’s formal emergency and deregulation program, not implementation, legality, economic effect or public consent.',
+    accessDate: '2026-09-21', creators: ['Presidencia de la Nación Argentina'], institution: 'Boletín Oficial de la República Argentina / InfoLEG',
+    publicationDate: '2023-12-21', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary executive decree / official legal record', identifiers: { decree: 'DNU 70/2023', decreeDate: '2023-12-20', publicationDate: '2023-12-21' },
+    description: 'Primary legal witness to the Milei administration’s initial emergency and deregulation program, including the stated bases for reconstructing the Argentine economy. It establishes formal executive action and not the decree’s complete implementation, judicial treatment, legislative reception or social effects.'
+  },
+  {
+    id: 'argentinaBasesLaw277422024Official',
+    label: 'Argentina — Ley 27.742, Ley de Bases y Puntos de Partida para la Libertad de los Argentinos (2024)',
+    url: 'https://www.argentina.gob.ar/normativa/nacional/401266/texto',
+    note: 'Argentina.gob.ar official legal record consulted for Law 27.742, sanctioned 27 June 2024 and published 8 July 2024. No statutory wording, article, scan or protected material is republished; the law establishes formal emergency, delegation and reform provisions, not uniform implementation, policy outcome or social consensus.',
+    accessDate: '2026-09-21', creators: ['Honorable Congreso de la Nación Argentina'], institution: 'Argentina.gob.ar / Honorable Congress of the Nation',
+    publicationDate: '2024-07-08', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary statute / official legal record', identifiers: { law: '27.742', sanctionDate: '2024-06-27', publicationDate: '2024-07-08' },
+    description: 'Primary statutory witness to the 2024 Ley de Bases, including the declared one-year public emergency and specified delegations in administrative, economic, financial and energy matters. It anchors the enacted reform program without proving implementation, judicial validity, economic causation or public support.'
+  },
+  {
+    id: 'argentinaSemanAscensoMilei2024',
+    label: 'Pablo Semán (coord.) — El ascenso de Milei: Claves para entender la derecha libertaria en Argentina (2024)',
+    url: 'https://www.sigloxxieditores.com/libro/el-ascenso-de-milei_53775/',
+    note: 'Siglo XXI Editores record consulted for the Spanish-language edited volume (published 15 April 2024; ISBN 978-84-323-2097-2; 208 pages). No chapter wording, interview, quotation, table or scan is republished; the contributors’ fieldwork and interpretations of the new libertarian right are attributed, situated and not generalized to every Argentine voter or community.',
+    accessDate: '2026-09-21', creators: ['Pablo Semán', 'Sergio Morresi', 'Ezequiel Saferstein', 'Melina Vázquez', 'Martín Vicente', 'Nicolás Welschinger'], institution: 'Siglo XXI Editores',
+    publicationDate: '2024-04-15', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length scholarly edited volume on the libertarian right', identifiers: { isbn: '9788432320972', pages: '208' },
+    description: 'Spanish-language edited volume using fieldwork and four chapters to analyze the demands, experiences and organization of Argentina’s new libertarian right, including anti-state and anti-caste language, plebeian identification and links with older right traditions. It is a contemporary social and political interpretation, not a complete national history or a uniform account of Milei’s electorate.'
+  },
+  {
+    id: 'argentinaDerechasEcheverriaVicenteBohoslavsky2023',
+    label: 'Ernesto Bohoslavsky, Olga Inés Echeverría and Martín Vicente (coords.) — Las derechas argentinas en el siglo XX: Tomo II, el retorno democrático y el largo plazo (2023)',
+    url: 'https://www.editorial.unicen.edu.ar/node/226',
+    note: 'Editorial UNICEN and IGEHCS-CONICET records consulted for the Spanish-language scholarly edited volume (2023; ISBN 978-987-4901-49-1; 190 pages). No chapter wording, quotation, table or scan is republished; the contributors’ histories of liberal-conservatism, nationalism, Catholic traditionalism, neoliberalism and the democratic period are attributed and their endpoint and chapter coverage remain visible.',
+    accessDate: '2026-09-21', creators: ['Ernesto Bohoslavsky', 'Olga Inés Echeverría', 'Martín Vicente'], institution: 'Editorial UNICEN / IGEHCS-CONICET-UNCPBA',
+    publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length scholarly edited volume on Argentine right-wing traditions', identifiers: { isbn: '9789874901491', pages: '190' },
+    description: 'Spanish-language edited volume tracing Argentine right-wing traditions from the democratic return through long-term perspectives on liberal-conservative, nationalist, Catholic, military and neoliberal actors. It supplies historical context for the later libertarian right while not serving as a complete account of 2023–2024 politics or every right-wing current.'
+  },
+  {
+    id: 'argentinaTorresHalvorsenMilei2024',
+    label: 'Fernanda Valeria Torres and Sam Halvorsen — “Somos liberales y somos populares”: Javier Milei y la ¿nueva derecha populista? (2024)',
+    url: 'https://www.memoria.fahce.unlp.edu.ar/libros/pm.6722/pm.6722.pdf',
+    note: 'Open CLACSO book chapter record consulted in *Convivialidades políticas y sociales en la pospandemia* (Buenos Aires, 2024; ISBN 978-987-813-799-5; pp. 53–75). The chapter studies La Libertad Avanza’s CABA 2021 electoral performance, territorial/digital organization, interviews and anti-caste discourse; no chapter wording, interview transcript, table or scan is republished. It is a subnational and pre-presidential study, not proof of the national electorate or later government practice.',
+    accessDate: '2026-09-21', creators: ['Fernanda Valeria Torres', 'Sam Halvorsen'], institution: 'CLACSO',
+    publicationDate: '2024-06', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'academic book chapter in open edited volume on post-pandemic politics', identifiers: { isbn: '9789878137995', book: 'Convivialidades políticas y sociales en la pospandemia', pages: '53–75' },
+    description: 'Spanish-language academic chapter examining the emergence and 2021 CABA electoral performance of Javier Milei’s force through territorial and digital organization, interviews and the liberal-popular and anti-caste vocabulary. It offers a subnational, pre-presidential perspective that must not be generalized to all Argentina or the later national administration.'
+  },
+  {
     id: 'peruConstitution1993Congress',
     label: 'Peru — Constitución Política del Perú de 1993, Congreso de la República',
     url: 'https://www.congreso.gob.pe/constitucion-del-peru-y-reglamento/',
