@@ -7131,6 +7131,76 @@ const sources = [
     description: 'French-language Haitian sociological essay published at the 1986–1987 rupture, linking the Duvalier legacy, state, nation, culture, migration, religion and the unfinished democratic project. It adds a materially different Haitian and Francophone perspective but predates later crises and is not a complete political history.'
   },
   {
+   id: 'russiaConstitution1993Official',
+    label: 'Constitution of the Russian Federation — adopted 12 December 1993, official English text',
+    url: 'https://www.constitution.ru/en/10003000-01.htm',
+    note: 'Official legal-text record consulted for the Constitution adopted by nationwide vote on 12 December 1993 and published on 25 December 1993. No constitutional wording is republished; the text is treated as evidence of formal design and state self-description, not proof of implementation, public consent or equal experience.',
+    accessDate: '2026-09-21', creators: ['Russian Federation'], institution: 'Constitution of the Russian Federation official publication record',
+    publicationDate: '1993-12-25', evidenceRole: 'primary', confidence: 'high', languages: ['Russian', 'English'],
+    sourceType: 'official constitution / legal text', identifiers: { adoptionDate: '1993-12-12' },
+    description: 'Primary constitutional record covering the federation, rights and freedoms, presidency, Federal Assembly, government, judiciary, local self-government and amendment procedures.'
+  },
+  {
+    id: 'russiaConstitutionAmendments2020Kremlin',
+    label: 'Russian Federation — Law on Constitutional Amendment No. 1-FKZ, 14 March 2020',
+    url: 'https://www.kremlin.ru/acts/bank/45280/print',
+    note: 'Official Kremlin publication of the 2020 constitutional-amendment law consulted in Russian. No legislative wording is republished; the amendment record is treated as a primary institutional and normative source, not as independent evidence of political consent or implementation.',
+    accessDate: '2026-09-21', creators: ['President of the Russian Federation', 'Federal Assembly of the Russian Federation'], institution: 'President of Russia / Kremlin',
+    publicationDate: '2020-03-14', evidenceRole: 'primary', confidence: 'high', languages: ['Russian'],
+    sourceType: 'official constitutional-amendment law / legal text', identifiers: { lawNumber: '1-FKZ' },
+    description: 'Primary record of the 2020 changes to the 1993 Constitution concerning the organization and functioning of public authority.'
+  },
+  {
+    id: 'russiaDumaPresidentialElection2024',
+    label: 'State Duma — Central Election Commission official result of the 2024 presidential election',
+    url: 'https://duma.gov.ru/news/59032/',
+    note: 'Official State Duma report reproducing the Central Election Commission announcement of the 15–17 March 2024 presidential-election result. The record anchors a dated institutional endpoint; it does not independently establish competitiveness, equal political voice, voter experience, legitimacy or public consent.',
+    accessDate: '2026-09-21', creators: ['State Duma of the Federal Assembly of the Russian Federation', 'Central Election Commission of the Russian Federation'], institution: 'State Duma of the Federal Assembly of the Russian Federation',
+    publicationDate: '2024-03-21', evidenceRole: 'primary', confidence: 'high', languages: ['Russian'],
+    sourceType: 'official election result / institutional record', identifiers: { electionDates: '2024-03-15/2024-03-17' },
+    description: 'Primary institutional record of the officially announced 2024 presidential-election result and turnout figures.'
+  },
+  {
+    id: 'russiaColtonWhatEveryoneNeeds2016',
+    label: 'Timothy J. Colton — Russia: What Everyone Needs to Know (2016)',
+    url: 'https://academic.oup.com/book/62913',
+    note: 'Oxford University Press record consulted for the 2016 book, print ISBN 9780199917808 and online ISBN 9780197570074. No book wording, quotation, table or scan is republished; the overview is not treated as a complete current history.',
+    accessDate: '2026-09-21', creators: ['Timothy J. Colton'], institution: 'Oxford University Press',
+    publicationDate: '2016-09-29', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history and political overview', identifiers: { isbn: '9780199917808', onlineIsbn: '9780197570074' },
+    description: 'Book-length overview of Russian geography, imperial and Soviet inheritances, post-Soviet democratization, Yeltsin, Putin, political economy and contemporary state–society challenges.'
+  },
+  {
+    id: 'russiaGillAuthoritarianPolity2015',
+    label: 'Graeme Gill — Building an Authoritarian Polity: Russia in Post-Soviet Times (2015)',
+    url: 'https://www.cambridge.org/core/books/building-an-authoritarian-polity/2401EA8C2249044B9FBCF864BF7D878A',
+    note: 'Cambridge University Press record consulted for the 238-page book, ISBN 9781107130081 and DOI 10.1017/CBO9781316417720. No book wording, quotation, table or scan is republished; the book’s regime-building argument is a situated scholarly interpretation.',
+    accessDate: '2026-09-21', creators: ['Graeme Gill'], institution: 'Cambridge University Press',
+    publicationDate: '2015-11-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative-politics and post-Soviet regime study', identifiers: { isbn: '9781107130081', doi: '10.1017/CBO9781316417720', pages: '238' },
+    description: 'Book-length analysis of how post-Soviet elites, electoral institutions, regime structure and elite stabilization produced an authoritarian polity in Russia.'
+  },
+  {
+    id: 'russiaStonerResurrected2021',
+    label: 'Kathryn E. Stoner — Russia Resurrected: Its Power and Purpose in a New Global Order (2021)',
+    url: 'https://academic.oup.com/book/39757',
+    note: 'Oxford University Press record consulted for the 317-page book, print ISBN 9780190860714 and online ISBN 9780190054571. No book wording, quotation, table or scan is republished; the analysis of state power and foreign-policy reach is one scholarly perspective rather than a national verdict.',
+    accessDate: '2026-09-21', creators: ['Kathryn E. Stoner'], institution: 'Oxford University Press',
+    publicationDate: '2021-02-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length international-relations and political-power study', identifiers: { isbn: '9780190860714', onlineIsbn: '9780190054571', pages: '317' },
+    description: 'Book-length assessment of Russian state power, domestic regime determinants, economic and demographic capacity, military resources and international reach under Putin.'
+  },
+  {
+    id: 'russiaSperlingSexPoliticsPutin2014',
+    label: 'Valerie Sperling — Sex, Politics, and Putin: Political Legitimacy in Russia (2014)',
+    url: 'https://academic.oup.com/book/4070',
+    note: 'Oxford University Press record consulted for the 360-page book, print ISBN 9780199324347 and online ISBN 9780199381890. No book wording, quotation, table or scan is republished; gendered legitimacy and activism are treated as a focused lens, not a complete account of Russia.',
+    accessDate: '2026-09-21', creators: ['Valerie Sperling'], institution: 'Oxford University Press',
+    publicationDate: '2014-11-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length gender, political-legitimacy and social-movement study', identifiers: { isbn: '9780199324347', onlineIsbn: '9780199381890', pages: '360' },
+    description: 'Book-length study of gender norms, sexualization, homophobia, patriotism, conscription, feminist activism and political legitimation in post-Soviet Russia.'
+  },
+  {
     id: 'chinaConstitution2018Official',
     label: 'People’s Republic of China — Constitution, 1982 text as amended through 2018, official English record',
     url: 'https://english.www.gov.cn/archive/lawregulations/201911/20/content_WS5ed8856ec6d0b3f0e9499913.html',
@@ -7541,6 +7611,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('russia') ? 'Russian post-Soviet constitutional, authoritarian and political history'
       : source.id.startsWith('china') ? 'Chinese revolutionary, party-state, reform and developmental political history'
       : source.id.startsWith('canada') ? 'Canadian federal, bilingual, Indigenous-rights, constitutional and political history'
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
