@@ -5498,6 +5498,78 @@ const sources = [
     sourceType: 'scholarly book chapter on constitutional norms and legitimacy', identifiers: { pages: '175-191', doi: '10.1007/978-981-99-9655-1_11' },
     description: 'Recent book chapter examining the relationship between formal constitutional provisions, political conventions and legitimacy pressures in Timor-Leste. It adds an institutional and normative perspective to the historical synthesis while retaining the chapter’s analytical scope.',
   },
+  {
+    id: 'cambodiaEcccHistoricalRecord',
+    label: 'Extraordinary Chambers in the Courts of Cambodia — official judicial and historical record',
+    url: 'https://eccc.gov.kh/en',
+    note: 'Official ECCC record consulted for the tribunal’s temporal jurisdiction, investigations, findings and residual archive. It records proceedings concerning senior Democratic Kampuchea leaders and those most responsible for crimes from 17 April 1975 to 6 January 1979; it is not a complete history of Cambodian society or a substitute for survivor, local and scholarly voices.',
+    accessDate: '2026-09-21', creators: ['Extraordinary Chambers in the Courts of Cambodia'], institution: 'Extraordinary Chambers in the Courts of Cambodia', publicationDate: '2023', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Khmer', 'French'],
+    sourceType: 'official judicial and historical record', identifiers: { temporalJurisdiction: '1975-04-17/1979-01-06' },
+    description: 'Primary judicial and archival record for the ECCC’s investigation and adjudication of crimes committed during Democratic Kampuchea. It anchors a legally documented part of the 1975–1979 period while retaining the limits of a tribunal record.',
+  },
+  {
+    id: 'cambodiaNec2023Election',
+    label: 'National Election Committee of Cambodia — provisional result of the 2023 National Assembly election',
+    url: 'https://www.nec.gov.kh/english/content/press-release-nec-proclaim-provisional-election-result-election-members-national-assembly',
+    note: 'Official NEC press release consulted for the provisional result of the 23 July 2023 election, proclaimed on 5 August 2023. It is used as a dated election-administration record and not as independent proof of competitiveness, fairness, equal participation, public consent or the political meaning of the result.',
+    accessDate: '2026-09-21', creators: ['National Election Committee of Cambodia'], institution: 'National Election Committee of Cambodia', publicationDate: '2023-08-05', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Khmer'],
+    sourceType: 'official election result record', identifiers: { electionDate: '2023-07-23' },
+    description: 'Primary election-administration record anchoring the case’s 2023 National Assembly endpoint. The provisional result supplies a dated institutional record while leaving questions of competition, participation, rights and implementation to independent evidence.',
+  },
+  {
+    id: 'chandlerHistoryCambodia2008',
+    label: 'David Chandler — A History of Cambodia (4th ed., 2008)',
+    url: 'https://obnb.uk/p13736161-a-history-of-cambodia',
+    note: 'British National Bibliography record consulted for the fourth edition, published by Westview Press in 2008. It is used as a broad national history, not as a complete account of every Cambodian community, later development or current political condition.',
+    accessDate: '2026-09-21', creators: ['David Chandler'], institution: 'Westview Press', publicationDate: '2008', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history', identifiers: { isbn: '9780813343631', pages: '365' },
+    description: 'Broad book-length national history supplying chronology and political context from earlier Cambodian history through the twentieth century and the post-1979 order. It is one synthesis among distinct political, economic and contemporary studies.',
+  },
+  {
+    id: 'hughesPoliticalEconomyCambodia2003',
+    label: 'Caroline Hughes — The Political Economy of Cambodia’s Transition, 1991–2001 (2003)',
+    url: 'https://library.eccc.gov.kh/bib/64',
+    note: 'ECCC Resource Centre catalog record consulted for Hughes’s RoutledgeCurzon book. It is used as a distinct book-length political-economy analysis of the post-Paris transition, not as a complete national history or independent proof of institutional success.',
+    accessDate: '2026-09-21', creators: ['Caroline Hughes'], institution: 'RoutledgeCurzon', publicationDate: '2003', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy study', identifiers: { isbn: '9780700717378', isbn10: '0700717374', pages: '260' },
+    description: 'Book-length analysis of Cambodia’s political economy during the 1991–2001 transition, adding a distinct account of power, institutions, aid and political change alongside broader national histories.',
+  },
+  {
+    id: 'robertsPoliticalTransitionCambodia2000',
+    label: 'David Roberts — Political Transition in Cambodia 1991–99: Power, Elitism and Democracy (2000)',
+    url: 'https://www.routledge.com/Political-Transition-in-Cambodia-1991-99-Power-Elitism-and-Democracy/Roberts/p/book/9780700714247',
+    note: 'Routledge and Ulster University records consulted for Roberts’s book on the 1991–1999 transition. It is used as an independent political interpretation of power, elitism and democracy around UNTAC and the early constitutional order, not as a complete account of later Cambodia.',
+    accessDate: '2026-09-21', creators: ['David Roberts'], institution: 'Routledge', publicationDate: '2000', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political transition study', identifiers: { isbn: '9780700714247', pages: '259' },
+    description: 'Book-length study of Cambodia’s 1991–1999 political transition, offering a distinct analysis of power, elitism, democracy and the early post-conflict order. Its period and analytical scope do not settle later authoritarian consolidation or all local experiences.',
+  },
+  {
+    id: 'etchesonRiseDemiseKampuchea1984',
+    label: 'Craig Etcheson — The Rise and Demise of Democratic Kampuchea (1984)',
+    url: 'https://www.routledge.com/The-Rise-And-Demise-Of-Democratic-Kampuchea/Etcheson/p/book/9780367311001',
+    note: 'Routledge record consulted for Etcheson’s book-length study of Democratic Kampuchea. It is used for a historically bounded account of revolutionary politics and the Khmer Rouge state, without reproducing copyrighted prose or treating its 1984 perspective as the final word on the period.',
+    accessDate: '2026-09-21', creators: ['Craig Etcheson'], institution: 'Westview Press', publicationDate: '1984', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length revolutionary political history', identifiers: { isbn: '0865316503', pages: '284' },
+    description: 'Early book-length study of the rise and collapse of Democratic Kampuchea and its revolutionary political order. It supplies a distinct historical lens for the 1975–1979 period while requiring triangulation with later scholarship and judicial evidence.',
+  },
+  {
+    id: 'strangioHunSensCambodia2014',
+    label: 'Sebastian Strangio — Hun Sen’s Cambodia (2014)',
+    url: 'https://library.khmerstudies.org/bib/13905',
+    note: 'Center for Khmer Studies catalog record consulted for Strangio’s Yale University Press book. It is used as a contemporary political history of the Hun Sen era, not as a current-country claim or a score for Cambodia, the CPP, opposition parties or any social group.',
+    accessDate: '2026-09-21', creators: ['Sebastian Strangio'], institution: 'Yale University Press', publicationDate: '2014', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length contemporary political history', identifiers: { isbn: '9780300190724', pages: '322' },
+    description: 'Book-length contemporary political history of Cambodia under Hun Sen, used to interpret post-1993 party-state power, patronage, opposition and international relations through its 2014 horizon.',
+  },
+  {
+    id: 'kheangUnCambodia2019',
+    label: 'Kheang Un — Cambodia (2019)',
+    url: 'https://www.cambridge.org/core/books/cambodia/6D6D419B9581E5204C34A5281AA76910',
+    note: 'Cambridge University Press record consulted for Un’s Cambridge Element. It is used as a recent book-length scholarly analysis of post-1993 state and regime making, electoral authoritarianism and political change, not as a complete national history or current status claim.',
+    accessDate: '2026-09-21', creators: ['Kheang Un'], institution: 'Cambridge University Press', publicationDate: '2019-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly political analysis', identifiers: { isbn: '9781108558648', ebookIsbn: '9781108457934', pages: '84', doi: '10.1017/9781108558648' },
+    description: 'Recent book-length scholarly analysis of Cambodia’s post-1993 political order, including party-state power, electoral authoritarianism, opposition and the return to authoritarian rule. It provides a distinct contemporary lens with a defined period and method.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -5557,6 +5629,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('solomon') || source.id.startsWith('larmourTaruaSolomon') || source.id.startsWith('crocombeTuzaSolomon') || source.id.startsWith('mooreHappyIsles') || source.id.startsWith('dinnenFirthPoliticsStateBuildingSolomon') || source.id.startsWith('keniloreaTellItAsItIsSolomon') || source.id.startsWith('akinColonialismMaasinaRuleSolomon') ? 'Solomon Islands constitutional, customary and postcolonial political history'
       : source.id.startsWith('png') || source.id.startsWith('griffinNelsonFirthPapua') || source.id.startsWith('dorneyPapua') || source.id.startsWith('mayStateSocietyPapua') || source.id.startsWith('howesPillaiPapua') || source.id.startsWith('howesDaviesFoxStruggleReformPapua') ? 'Papua New Guinean constitutional, customary and postcolonial political history'
         : source.id.startsWith('timor') || source.id.startsWith('molnarTimor') || source.id.startsWith('kammenIndependentTimor') || source.id.startsWith('foxBaboSoares') || source.id.startsWith('pereiraFeijoLongRoadTimor') || source.id.startsWith('roqueTimor') || source.id.startsWith('feijoConstitutionalNormsTimor') ? 'Timor-Leste decolonization, resistance and constitutional political history'
+        : source.id.startsWith('cambodia') || source.id.startsWith('chandlerHistoryCambodia') || source.id.startsWith('hughesPoliticalEconomyCambodia') || source.id.startsWith('robertsPoliticalTransitionCambodia') || source.id.startsWith('etchesonRiseDemiseKampuchea') || source.id.startsWith('strangioHunSensCambodia') || source.id.startsWith('kheangUnCambodia') ? 'Cambodian conflict, reconstruction and constitutional political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : 'Middle Eastern political history and geography',
