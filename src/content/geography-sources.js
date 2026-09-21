@@ -5309,6 +5309,96 @@ const sources = [
     sourceType: 'book-length Malaitan political and colonial history', identifiers: { isbn: '9780824838140', pages: '572' },
     description: 'Archival and fieldwork-based book-length history of Maasina Rule, Malaitan political organization, colonial interaction and the emergence of kastom as a governing and identity language. It provides a deep local political history before independence while explicitly remaining a bounded Malaita case.',
   },
+  {
+    id: 'pngConstitution1975Ombudsman',
+    label: 'Papua New Guinea Ombudsman Commission — Constitution of the Independent State of Papua New Guinea',
+    url: 'https://www.ombudsman.gov.pg/legislation/png-constitution/',
+    note: 'Official constitutional text consulted for the 15 August 1975 adoption, 16 September independence commencement, National Goals and Directive Principles, basic rights, Parliament, universal adult citizen suffrage, provincial government, customary law and the underlying law. It is used as a primary legal record; no text is republished and formal commitments are not treated as proof of implementation or consent.',
+    accessDate: '2026-09-21', creators: ['Papua New Guinea Ombudsman Commission'], institution: 'Ombudsman Commission of Papua New Guinea', publicationDate: '1975-09-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional text', identifiers: { adoptionDate: '1975-08-15', independenceDate: '1975-09-16' },
+    description: 'Primary constitutional record for Papua New Guinea’s independence settlement and home-grown constitutional order. It anchors sovereign statehood, rights, elected representation, National Goals, decentralization, custom and legal institutions as formal design rather than a complete account of political practice.',
+  },
+  {
+    id: 'pngConstitutionalPlanningCommittee1974Paclii',
+    label: 'Papua New Guinea Constitutional Planning Committee — Final Report (1974)',
+    url: 'https://www.paclii.org/pg/CPCRreport/main.htm',
+    note: 'Public legal archive consulted for the Constitutional Planning Committee’s 1974 final report and its chapters on national goals, equality and participation, sovereignty and self-reliance, natural resources, Papua New Guinean ways, executive, legislature, judiciary and decentralization. It is a primary constitution-making record, not a transcript of every local consultation or evidence that all recommendations were implemented.',
+    accessDate: '2026-09-21', creators: ['Papua New Guinea House of Assembly Constitutional Planning Committee'], institution: 'Pacific Islands Legal Information Institute', publicationDate: '1974-08-13', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional-planning report', identifiers: { reportDate: '1974-08-13' },
+    description: 'Primary report of the constitutional-planning process before independence, including national goals, participation, self-reliance, natural resources, customary and local forms of organization and institutional design. It provides the clearest primary evidence for the deliberately home-grown constitutional project while retaining the limits of a committee report.',
+  },
+  {
+    id: 'pngPngec2022PreliminaryResults',
+    label: 'Papua New Guinea Electoral Commission — 2022 National Election preliminary results portal',
+    url: 'https://results.pngec.picl.co.uk/',
+    note: 'Official Electoral Commission results-transmission portal consulted for the 2022 national election’s counting and declarations. The portal explicitly describes the data as provisional, progressive and preliminary; it is therefore used only as a dated administrative witness and not as final evidence of every result, electoral fairness, participation or public consent.',
+    accessDate: '2026-09-21', creators: ['Papua New Guinea Electoral Commission'], institution: 'Papua New Guinea Electoral Commission', publicationDate: '2022-07-04', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official election-results portal', identifiers: { electionPeriod: '2022-07-04/2022-07-22' },
+    description: 'Primary election-administration portal for the 2022 national election, preserving transmitted counting and declared-seat information while retaining its own warning that results were preliminary. It anchors the case’s electoral endpoint without silently upgrading provisional records into a complete audit.',
+  },
+  {
+    id: 'pngParliamentOpening2022Hansard',
+    label: 'National Parliament of Papua New Guinea — Official opening of the Eleventh National Parliament (2022)',
+    url: 'https://www.parliament.gov.pg/uploads/hansard/H-11-20220830-M02-D01.pdf',
+    note: 'Official parliamentary Hansard consulted for the 30 August 2022 opening of the Eleventh National Parliament, including the Governor-General’s account of the election, invitation to form government and parliamentary re-election of the prime minister. It is an institutional record of proceedings, not independent verification of the election or later performance.',
+    accessDate: '2026-09-21', creators: ['National Parliament of Papua New Guinea'], institution: 'National Parliament of Papua New Guinea', publicationDate: '2022-08-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary Hansard', identifiers: { sittingDate: '2022-08-30' },
+    description: 'Primary parliamentary record for the opening and government formation sequence after the 2022 national election. It documents formal institutional proceedings and attributed statements without being treated as a complete account of electoral conflict, representation or popular legitimacy.',
+  },
+  {
+    id: 'griffinNelsonFirthPapuaPoliticalHistory1979',
+    label: 'James Griffin, Hank Nelson and Stewart Firth — Papua New Guinea: A Political History (1979)',
+    url: 'https://openresearch-repository.anu.edu.au/items/5f253804-93d9-4fed-9be7-f14e457092e7',
+    note: 'ANU Pacific Institute bibliographic record consulted for the 280-page Heinemann Educational Australia history of the transition from late colonial government to independence. The work is used as an early scholarly political history, with period-specific framing and no republished prose.',
+    accessDate: '2026-09-21', creators: ['James Griffin', 'Hank Nelson', 'Stewart Firth'], institution: 'Heinemann Educational Australia', publicationDate: '1979', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history', identifiers: { isbn: '9780858591974', pages: '280' },
+    description: 'Early book-length political history of Papua New Guinea’s colonial and independence transition. It supplies historical context for representative institutions and state formation, while its 1979 vantage point cannot settle later political development or local interpretations.',
+  },
+  {
+    id: 'dorneyPapuaPeoplePolitics1990',
+    label: 'Sean Dorney — Papua New Guinea: People, Politics and History since 1975 (1990)',
+    url: 'https://ci.nii.ac.jp/ncid/BA64272128',
+    note: 'CiNii and library records consulted for the 345-page Random House Australia account of Papua New Guinea’s people, politics and history after independence. It is used as a distinct broad political and social perspective, not as a substitute for Papua New Guinean scholarship or a complete account after its publication horizon.',
+    accessDate: '2026-09-21', creators: ['Sean Dorney'], institution: 'Random House Australia', publicationDate: '1990', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-independence political and social history', identifiers: { isbn: '0091694612', pages: '345' },
+    description: 'Broad book-length account of Papua New Guinea’s first post-independence political and social history. It provides an independent narrative alongside Griffin–Nelson–Firth and later scholarship, while remaining bounded to an early postcolonial horizon.',
+  },
+  {
+    id: 'mayStateSocietyPapuaFirst25Years2001',
+    label: 'Ronald J. May — State and Society in Papua New Guinea: The First Twenty-Five Years (2001)',
+    url: 'https://researchportalplus.anu.edu.au/en/publications/state-and-society-in-papua-new-guinea-the-first-twenty-five-years/',
+    note: 'ANU research record consulted for the 445-page Crawford House volume bringing together May’s political and social studies from 1971–2001. Its chapters are treated as an attributed analytical collection rather than a single settled national consensus, and no copyrighted prose is republished.',
+    accessDate: '2026-09-21', creators: ['Ronald J. May'], institution: 'Crawford House Publishing', publicationDate: '2001', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political and social studies', identifiers: { isbn: '1863332049', pages: '445' },
+    description: 'Book-length collection on the first twenty-five years of state and society after independence, including political style, parties, constitutional form, the Defence Force, Bougainville and political economy. It deepens the record beyond formal constitutional design while preserving chapter-specific scope.',
+  },
+  {
+    id: 'mayStateSocietyPapua2001-2021',
+    label: 'R. J. May — State and Society in Papua New Guinea, 2001–2021 (2022)',
+    url: 'https://press.anu.edu.au/publications/series/pacific/state-society-papua-new-guinea-2001%E2%80%932021',
+    note: 'ANU Press open-access book record consulted for May’s 2022 update on political reform, parties, the 2007 preferential-voting change, the 2011 move against Somare, O’Neill and Marape, language, security, religion, identity and economic growth. The collection presents the author’s attributed analyses, not a complete or uncontested national history.',
+    accessDate: '2026-09-21', creators: ['R. J. May'], institution: 'ANU Press', publicationDate: '2022-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access scholarly political and social studies', identifiers: { isbn: '9781760465209', ebookIsbn: '9781760465216', doi: '10.22459/SSPNG.2022', pages: '321' },
+    description: 'Open book-length update of Papua New Guinea’s political and social development from 2001 through the election and performance of the Marape government to 2022. It provides a contemporary political perspective while leaving local-language, gender, regional and implementation evidence open.',
+  },
+  {
+    id: 'howesPillaiPapuaGovernmentEconomySociety2022',
+    label: 'Stephen Howes and Lekshmi N. Pillai (eds.) — Papua New Guinea: Government, Economy and Society (2022)',
+    url: 'https://press.anu.edu.au/publications/series/pacific/papua-new-guinea-government-economy-society',
+    note: 'ANU Press and library records consulted for the 262-page edited volume’s chapters on elections and politics, decentralization, crime and corruption, economic trajectory, livelihoods, urban and rural spaces, communication and media. Its multi-author survey is used to triangulate May and political histories; no chapter prose is republished.',
+    accessDate: '2026-09-21', creators: ['Stephen Howes', 'Lekshmi N. Pillai'], institution: 'ANU Press', publicationDate: '2022-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access scholarly edited book on government, economy and society', identifiers: { isbn: '9781760465025', ebookIsbn: '9781760465032', doi: '10.22459/PNG.2022', pages: '262' },
+    description: 'Peer-reviewed edited volume combining University of Papua New Guinea and ANU research on politics, decentralization, corruption, the economy, livelihoods, communication and social change. It adds a contemporary institutional and policy perspective without claiming uniform experience across provinces or communities.',
+  },
+  {
+    id: 'howesDaviesFoxStruggleReformPapua2025',
+    label: 'Stephen Howes et al. — Struggle, Reform, Boom and Bust: An Economic History of Papua New Guinea since Independence (2025)',
+    url: 'https://press.anu.edu.au/publications/series/pacific/struggle-reform-boom-bust',
+    note: 'ANU Press record consulted for the 415-page, seven-author economic history organized around 1975–1988, 1989–2003, the 2000s boom and the 2010s bust. It is used for historically bounded political-economy interpretation through the case endpoint, not as a current-country claim or a replacement for social and local histories.',
+    accessDate: '2026-09-21', creators: ['Stephen Howes', 'Martin Davies', 'Rohan Fox', 'Maholopa Laveil', 'Manoj K. Pandey', 'Kelly Samof', 'Dek Joe Sum'], institution: 'ANU Press', publicationDate: '2025-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length economic and political-economy history', identifiers: { isbn: '9781760466992', ebookIsbn: '9781760467005', doi: '10.22459/SRBB.2025', pages: '415' },
+    description: 'Recent book-length economic history of Papua New Guinea since independence, linking policy, institutions, resource dependence, political insecurity and growth across four periods. It supplies economic context for the six-axis interpretation while remaining distinct from a full political or social history.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -5366,6 +5456,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('samoa') || source.id.startsWith('meleiseaMakingModernSamoa') || source.id.startsWith('lawsonTraditionDemocracySamoa') || source.id.startsWith('meleiseaSamoasJourney') || source.id.startsWith('swainFonoSamoa') || source.id.startsWith('metiSamoa') ? 'Samoan constitutional, customary and political history'
       : source.id.startsWith('vanuatu') || source.id.startsWith('vanTrease') || source.id.startsWith('premdasSteeves') || source.id.startsWith('woodwardNewHebrides') || source.id.startsWith('brownCustomaryLawMelanesia') ? 'Vanuatuan constitutional, customary and decolonization history'
       : source.id.startsWith('solomon') || source.id.startsWith('larmourTaruaSolomon') || source.id.startsWith('crocombeTuzaSolomon') || source.id.startsWith('mooreHappyIsles') || source.id.startsWith('dinnenFirthPoliticsStateBuildingSolomon') || source.id.startsWith('keniloreaTellItAsItIsSolomon') || source.id.startsWith('akinColonialismMaasinaRuleSolomon') ? 'Solomon Islands constitutional, customary and postcolonial political history'
+      : source.id.startsWith('png') || source.id.startsWith('griffinNelsonFirthPapua') || source.id.startsWith('dorneyPapua') || source.id.startsWith('mayStateSocietyPapua') || source.id.startsWith('howesPillaiPapua') || source.id.startsWith('howesDaviesFoxStruggleReformPapua') ? 'Papua New Guinean constitutional, customary and postcolonial political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : 'Middle Eastern political history and geography',
