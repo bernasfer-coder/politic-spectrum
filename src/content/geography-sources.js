@@ -4850,6 +4850,78 @@ const sources = [
     sourceType: 'book-length scholarly edited volume on regional and international dimensions of the Syrian war', identifiers: { ebookIsbn: '9780429201967', pages: '340' },
     description: 'An edited scholarly analysis of the regional and international dimensions of the Syrian uprising and war, including Iran, Russia, Turkey, Gulf states, the United States, the European Union and Hizbullah. It is used to situate external power, not to infer a single Syrian national preference or political outcome.',
   },
+  {
+    id: 'unAfghanistanResolution2593',
+    label: 'United Nations Security Council — Resolution 2593 on Afghanistan (2021)',
+    url: 'https://digitallibrary.un.org/record/3938170/files/S_RES_2593_%282021%29-EN.pdf',
+    note: 'United Nations Security Council Resolution 2593, adopted on 30 August 2021, consulted as a primary international record immediately after the Taliban takeover. Its demands and humanitarian language are not treated as proof of implementation, recognition or domestic consent.',
+    accessDate: '2026-09-21', creators: ['United Nations Security Council'], institution: 'United Nations', publicationDate: '2021-08-30', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Arabic', 'French'],
+    sourceType: 'primary international political and humanitarian resolution', identifiers: { resolution: 'S/RES/2593 (2021)', pages: '2' },
+    description: 'A Security Council resolution demanding that Afghan territory not be used for attacks, reiterating counter-terrorism and human-rights concerns, and calling for humanitarian access and safe departure. It anchors international expectations at the new de facto order’s beginning rather than proving compliance.',
+  },
+  {
+    id: 'unAfghanistanHumanitarianResolution2615',
+    label: 'United Nations Security Council — Resolution 2615 on humanitarian assistance to Afghanistan (2021)',
+    url: 'https://press.un.org/en/2021/sc14750.doc.htm',
+    note: 'United Nations Security Council coverage of Resolution 2615, adopted unanimously on 22 December 2021, consulted as a primary institutional record. The humanitarian exemption is not treated as evidence of economic recovery, effective governance or political recognition.',
+    accessDate: '2026-09-21', creators: ['United Nations Security Council'], institution: 'United Nations', publicationDate: '2021-12-22', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official international sanctions and humanitarian record', identifiers: { resolution: 'S/RES/2615 (2021)' },
+    description: 'A Security Council record of the humanitarian exemption from the Taliban-related sanctions regime, adopted as Afghanistan faced severe economic and humanitarian crisis. It documents an international policy response while leaving distribution, access and political effects open to verification.',
+  },
+  {
+    id: 'unAfghanistanReport2023',
+    label: 'United Nations Secretary-General — Situation in Afghanistan and implications for international peace and security (2023)',
+    url: 'https://documents.un.org/access.nsf/get?DS=S%2F2023%2F151&Lang=E&OpenAgent=',
+    note: 'Secretary-General report A/77/772-S/2023/151, dated 27 February 2023, consulted as an official UNAMA and political, humanitarian and human-rights record. It reports institutional observations and does not independently establish every allegation or represent all Afghan experiences.',
+    accessDate: '2026-09-21', creators: ['United Nations Secretary-General'], institution: 'United Nations', publicationDate: '2023-02-27', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Arabic', 'French'],
+    sourceType: 'official Secretary-General report on Afghanistan', identifiers: { report: 'A/77/772-S/2023/151' },
+    description: 'A UN report on political, humanitarian and human-rights conditions under the Taliban de facto authorities, including restrictions on women and girls, economic fragility, humanitarian work and UNAMA’s mandate. It is a dated institutional witness, not a complete social history or legal judgment.',
+  },
+  {
+    id: 'unAfghanistanUNAMAMandateResolution2727',
+    label: 'United Nations Security Council — Resolution 2727 extending UNAMA’s Afghanistan mandate (2024)',
+    url: 'https://digitallibrary.un.org/record/4041095/files/S_RES_2727_%282024%29-EN.pdf',
+    note: 'United Nations Security Council Resolution 2727, adopted unanimously on 15 March 2024, consulted as a primary international record of the UNAMA mandate and engagement framework. It is not treated as proof of political recognition, territorial consent or successful implementation.',
+    accessDate: '2026-09-21', creators: ['United Nations Security Council'], institution: 'United Nations', publicationDate: '2024-03-15', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Arabic', 'French'],
+    sourceType: 'primary international mandate resolution', identifiers: { resolution: 'S/RES/2727 (2024)', pages: '1' },
+    description: 'A Security Council resolution extending UNAMA through 17 March 2025 and stressing sovereignty, national unity, field presence, coordination and freedom of movement. It anchors the international institutional horizon without treating UN engagement as recognition of the de facto authorities.',
+  },
+  {
+    id: 'unAfghanistanEngagementStatement2023',
+    label: 'United Nations Security Council — Meeting on engagement with Afghanistan’s de facto authorities (2023)',
+    url: 'https://press.un.org/en/2023/sc15541.doc.htm',
+    note: 'United Nations Security Council meeting coverage of 20 December 2023, including the Special Representative’s formulation that dialogue with the de facto authorities does not itself legitimize them. It is used as an official diplomatic record, not as independent verification of all statements reported in the meeting.',
+    accessDate: '2026-09-21', creators: ['United Nations Security Council'], institution: 'United Nations', publicationDate: '2023-12-20', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official international diplomatic meeting record', identifiers: { meeting: 'SC/15541', date: '2023-12-20' },
+    description: 'A Security Council meeting record on engagement, humanitarian needs, economic fragility and restrictions on women and girls. It helps distinguish pragmatic contact from formal recognition while preserving the contested and multi-actor nature of international policy.',
+  },
+  {
+    id: 'abbasReturnTaliban2023',
+    label: 'Hassan Abbas — The Return of the Taliban: Afghanistan after the Americans Left (2023)',
+    url: 'https://yalebooks.yale.edu/book/9780300271195/the-return-of-the-taliban/',
+    note: 'Yale University Press book record consulted for the 2023 monograph (256 pages; eBook ISBN 9780300271195; paperback ISBN 9780300278712). No book wording, quotation, image or scan is republished; Abbas’s analysis and contacts are attributed as one perspective on the post-2021 movement.',
+    accessDate: '2026-09-21', creators: ['Hassan Abbas'], institution: 'Yale University Press', publicationDate: '2023-05-23', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of the Taliban’s return', identifiers: { ebookIsbn: '9780300271195', paperbackIsbn: '9780300278712', pages: '256' },
+    description: 'A post-2021 account of the Taliban’s return, leadership, internal differences, consolidation of control and external relations. It supplies a movement-centred perspective and does not by itself establish nationwide consent, uniform administration or the experience of all Afghan communities.',
+  },
+  {
+    id: 'saikalHowLoseWar2024',
+    label: 'Amin Saikal — How to Lose a War: The Story of America’s Intervention in Afghanistan (2024)',
+    url: 'https://yalebooks.yale.edu/book/9780300266245/how-to-lose-a-war/',
+    note: 'Yale University Press book record consulted for the 2024 monograph (320 pages; hardcover ISBN 9780300266245; eBook ISBN 9780300277661). No book wording, quotation or scan is republished; Saikal’s intervention-centred interpretation is attributed and read alongside Taliban, civilian and institutional perspectives.',
+    accessDate: '2026-09-21', creators: ['Amin Saikal'], institution: 'Yale University Press', publicationDate: '2024-06-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history and critique of the US intervention in Afghanistan', identifiers: { isbn: '9780300266245', ebookIsbn: '9780300277661', pages: '320' },
+    description: 'A book-length account of the intervention from 9/11 through the fall of Kabul, focusing on strategy, state-building failure, Afghan political elites and the consequences of withdrawal. It is a distinct intervention and policy lens, not a complete account of Taliban rule or Afghan society after 2021.',
+  },
+  {
+    id: 'jacksonNegotiatingSurvival2021',
+    label: 'Ashley Jackson — Negotiating Survival: Civilian–Insurgent Relations in Afghanistan (2021)',
+    url: 'https://www.hurstpublishers.com/book/negotiating-survival/',
+    note: 'Hurst Publishers book record consulted for the 2021 monograph (328 pages; hardback ISBN 9781787384859; eBook ISBN 9781787387324), based on more than 400 interviews with Taliban and civilians. No book wording, quotation or scan is republished; the study’s pre-takeover fieldwork is not silently extended into a post-2021 nationwide claim.',
+    accessDate: '2026-09-21', creators: ['Ashley Jackson'], institution: 'Hurst Publishers', publicationDate: '2021-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length fieldwork study of civilian–insurgent relations', identifiers: { isbn: '9781787384859', ebookIsbn: '9781787387324', pages: '328' },
+    description: 'A bottom-up study of civilian bargaining, Taliban authority and insurgent governance based on extensive interviews. It supplies essential pre-takeover evidence about local agency and political authority that helps interpret the post-2021 order, while its temporal and regional limits remain explicit.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -4885,6 +4957,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('cameroon') || source.id.startsWith('ngohHistoryCameroon') || source.id.startsWith('josephRadicalNationalismCameroon') || source.id.startsWith('ngohSouthernCameroons') || source.id.startsWith('terrettaNationOutlawsCameroon') || source.id.startsWith('takougangKriegerPoliticalCrossroadsCameroon') || source.id.startsWith('bouopdaPoliticalHistoryCameroon') || source.id.startsWith('bouopdaAnglophoneCrisisCameroon') ? 'Cameroonian constitutional, decolonization, bilingual and Anglophone-crisis history'
       : source.id.startsWith('iraq') || source.id.startsWith('trippHistoryIraq') || source.id.startsWith('marrModernHistoryIraq') || source.id.startsWith('dawishaPoliticalHistoryIraq') || source.id.startsWith('dodgeIraq') || source.id.startsWith('haddadSectarianismIraq') || source.id.startsWith('alAliStruggleIraq') || source.id.startsWith('franzenPridePowerIraq') || source.id.startsWith('herringRangwalaIraq') ? 'Iraqi constitutional, occupation, sectarianization and political history'
       : source.id.startsWith('syria') || source.id.startsWith('unSyria') || source.id.startsWith('abboudSyria') || source.id.startsWith('hinnebuschImadySyrian') || source.id.startsWith('vanDamDestroyingNation') || source.id.startsWith('yassinKassabAlShami') || source.id.startsWith('listerSyrian') || source.id.startsWith('baczkoDorronsoroQuesnay') || source.id.startsWith('hinnebuschSaouliWarForSyria') ? 'Syrian constitutional, conflict and political history'
+      : source.id.startsWith('afghanistan') || source.id.startsWith('unAfghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') || source.id.startsWith('abbasReturnTaliban') || source.id.startsWith('saikalHowLoseWar') || source.id.startsWith('jacksonNegotiatingSurvival') ? 'Afghan constitutional, conflict and de facto-governance history'
       : source.id.startsWith('france') || source.id.startsWith('atkinFifthFrench') || source.id.startsWith('elgiePoliticalInstitutionsFrance') || source.id.startsWith('knappWrightGovernmentFrance') || source.id.startsWith('duhamelFoucaultFullaLazarRepublic') ? 'French constitutional, Fifth Republic and political history'
       : source.id.startsWith('burkina') || source.id.startsWith('harschBurkina') || source.id.startsWith('englebertBurkina') || source.id.startsWith('kaborePoliticalHistoryBurkina') || source.id.startsWith('englebertCotRevolutionBurkina') || source.id.startsWith('sankaraSpeeches') ? 'Burkinabè constitutional, revolutionary and political-transition history'
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
