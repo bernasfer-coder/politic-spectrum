@@ -4706,6 +4706,51 @@ const sources = [
     sourceType: 'regional election-observation mission report', identifiers: { electionYear: '2024', mission: 'AU-COMESA' },
     description: 'Institutional observation record for Rwanda’s 2024 presidential and parliamentary elections. It adds a regional procedural perspective to the official results while remaining bounded evidence about the electoral process rather than a complete account of political freedoms, social consent or the lived experience of all communities.',
   },
+  {
+    id: 'ethiopiaAuPretoriaCessation2022',
+    label: 'African Union — Cessation of Hostilities Agreement between the Government of Ethiopia and the TPLF (2022)',
+    url: 'https://www.peaceau.org/en/article/cessation-of-hostilities-agreement-between-the-government-of-the-federal-democratic-republic-of-ethiopia-and-the-tigray-peoples-liberation-front-tplf',
+    note: 'Official African Union record consulted for the Pretoria agreement announced on 2 November 2022. No agreement wording, quotation or PDF is republished; the signed instrument is distinguished from implementation, public consent, local experience, humanitarian access and accountability outcomes.',
+    accessDate: '2026-09-21', creators: ['African Union'], institution: 'African Union', publicationDate: '2022-11-02', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official peace agreement and cessation-of-hostilities record', identifiers: { agreementDate: '2022-11-02', location: 'Pretoria' },
+    description: 'Primary regional record of the cessation-of-hostilities agreement between Ethiopia’s federal government and the TPLF. It anchors formal commitments concerning cessation, sovereignty, humanitarian access, restoration of services, healing and reconciliation without independently proving their uniform implementation.',
+  },
+  {
+    id: 'ethiopiaAuPeaceMonitoring2023',
+    label: 'African Union — Joint Committee inaugurated to monitor the Northern Ethiopia peace agreement (2023)',
+    url: 'https://www.peaceau.org/en/article/monitoring-the-implementation-of-peace-agreement-for-northern-ethiopia-joint-committee-inaugurated-by-the-african-union',
+    note: 'Official African Union implementation-monitoring record consulted for the Joint Committee inauguration on 10 February 2023. No press-release wording or image is republished; institutional progress claims are kept distinct from independent verification, local voices, DDR completion, territorial return and civilian protection.',
+    accessDate: '2026-09-21', creators: ['African Union'], institution: 'African Union', publicationDate: '2023-02-10', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official peace-agreement monitoring and implementation record', identifiers: { meetingDate: '2023-02-10', agreement: 'Pretoria and Nairobi peace process' },
+    description: 'Primary institutional witness to the early monitoring architecture for the Northern Ethiopia peace agreement, including restoration of services, humanitarian access, disarmament and political dialogue concerns. It documents an implementation process rather than proving completion or uniform effects.',
+  },
+  {
+    id: 'ethiopiaJusticeTransitionalConsultation2023',
+    label: 'Ethiopian Ministry of Justice — Conclusion of public consultations on transitional-justice policy options in Oromia (2023)',
+    url: 'https://justice.gov.et/am/press-releases/conclusion-of-public-consultations-on-transitional-justice-policy-options-in-the-oromia-region/',
+    note: 'Ethiopian Ministry of Justice institutional record consulted for the 2023 Oromia consultations and the ministry’s stated national transitional-justice process. The official account is not treated as independent verification of representation, victim participation, policy adoption, implementation or local consent; no press-release wording or image is republished.',
+    accessDate: '2026-09-21', creators: ['Ethiopian Ministry of Justice'], institution: 'Federal Democratic Republic of Ethiopia, Ministry of Justice', publicationDate: '2023-05-13', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Amharic'],
+    sourceType: 'official transitional-justice consultation record', identifiers: { consultationPeriod: '2023-04-24 to 2023-05-13', region: 'Oromia' },
+    description: 'Primary government record describing public consultations on transitional-justice policy options in twelve Oromia towns, including the participant groups named by the ministry. It anchors an official consultation process while leaving its breadth, reception, legal follow-through and victim experience open to further research.',
+  },
+  {
+    id: 'plautVaughanTigrayWar2023',
+    label: 'Martin Plaut and Sarah Vaughan — Understanding Ethiopia’s Tigray War (2023)',
+    url: 'https://hurstpublishers.com/book/understanding-ethiopias-tigray-war/',
+    note: 'Hurst Publishers book record consulted for the 2023 monograph (392-page paperback; ISBN 9781787388116; ebook ISBN 9781805260639). No book wording, quotation, table, map or scan is republished; the conflict account is attributed and triangulated with Ethiopian, Tigrayan and institutional records.',
+    accessDate: '2026-09-21', creators: ['Martin Plaut', 'Sarah Vaughan'], institution: 'Hurst Publishers', publicationDate: '2023-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length conflict and political history of the Tigray War', identifiers: { isbn: '9781787388116', ebookIsbn: '9781805260639', pages: '392' },
+    description: 'A book-length account of the Tigray War’s origins, fighting, blockade, regional involvement and human costs, connecting the conflict to Ethiopia’s longer political history. It supplies a critical conflict-centred perspective rather than a complete account of all Ethiopian regions, actors or post-2022 implementation.',
+  },
+  {
+    id: 'erlichGreaterTigray2024',
+    label: 'Haggai Erlich — Greater Tigray and the Mysterious Magnetism of Ethiopia (2024)',
+    url: 'https://academic.oup.com/book/57485',
+    note: 'Oxford University Press book record consulted for the 2024 monograph (print ISBN 9780197769331; online ISBN 9780197782811; DOI 10.1093/oso/9780197769331.001.0001). No book wording, quotation, map or scan is republished; Erlich’s Tigrinya-speaking and Ethiopia–Eritrea historical lens is attributed and not treated as a complete national consensus.',
+    accessDate: '2026-09-21', creators: ['Haggai Erlich'], institution: 'Oxford University Press', publicationDate: '2024-01-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length regional and political history of Tigrinya-speaking Ethiopia and Eritrea', identifiers: { isbn: '9780197769331', onlineIsbn: '9780197782811', doi: '10.1093/oso/9780197769331.001.0001' },
+    description: 'An analytical history of Tigrinya-speaking actors and the Ethiopia–Eritrea political relationship, including the contemporary war and competing historical theses about Ethiopia’s political order. It offers a regionally focused interpretation that must be read alongside federal, Amhara, Oromo, local and other perspectives.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -4755,7 +4800,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('pakistan') || source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('jaffrelotPakistanCrossroads') || source.id.startsWith('rizviPoliticalConstitutionalEngineering') || source.id.startsWith('kamranChequeredPastPakistan') || source.id.startsWith('gilaniRitualElectionsPakistan') ? 'Pakistani constitutional, civil–military and electoral history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') || source.id.startsWith('ayeeAmoahAliduGhana') || source.id.startsWith('pallerDemocracyGhana') ? 'Ghanaian constitutional transition and political history'
       : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeriaInec') ? 'Nigerian constitutional, electoral and political history'
-        : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') ? 'Ethiopian revolutionary, federal and political history'
+        : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') || source.id.startsWith('ethiopiaAu') || source.id.startsWith('ethiopiaJusticeTransitional') || source.id.startsWith('plautVaughanTigrayWar') || source.id.startsWith('erlichGreaterTigray') ? 'Ethiopian revolutionary, federal, conflict and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
