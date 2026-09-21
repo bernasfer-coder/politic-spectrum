@@ -4751,6 +4751,105 @@ const sources = [
     sourceType: 'book-length regional and political history of Tigrinya-speaking Ethiopia and Eritrea', identifiers: { isbn: '9780197769331', onlineIsbn: '9780197782811', doi: '10.1093/oso/9780197769331.001.0001' },
     description: 'An analytical history of Tigrinya-speaking actors and the Ethiopia–Eritrea political relationship, including the contemporary war and competing historical theses about Ethiopia’s political order. It offers a regionally focused interpretation that must be read alongside federal, Amhara, Oromo, local and other perspectives.',
   },
+  {
+    id: 'syriaConstitution2012Constitute',
+    label: 'Syrian Arab Republic — Constitution of 2012 (Constitute Project edition)',
+    url: 'https://www.constituteproject.org/constitution/Syria_2012.pdf?lang=en',
+    note: 'Constitute Project edition of the 2012 Syrian Constitution consulted as an English-language primary constitutional text. The translation and formal constitutional design are not treated as proof of implementation, political consent, or rights practice during the conflict.',
+    accessDate: '2026-09-21', creators: ['Syrian Arab Republic'], institution: 'Constitute Project', publicationDate: '2012-02-26', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic', 'English'],
+    sourceType: 'primary constitutional text / institutional English translation', identifiers: { constitutionDate: '2012-02-26', pages: '28' },
+    description: 'The 2012 Syrian Constitution, used to anchor formal provisions on sovereignty, executive power, rights, elections, local administration and the state’s Arab identity. It documents an official legal design, not how institutions operated or how communities experienced the war.',
+  },
+  {
+    id: 'unSyriaResolution2254',
+    label: 'United Nations Security Council — Resolution 2254 (2015)',
+    url: 'https://digitallibrary.un.org/record/814715/files/S_RES_2254%282015%29-EN.pdf',
+    note: 'United Nations Security Council Resolution 2254, adopted unanimously on 18 December 2015, consulted as a primary international political and diplomatic record. Its calls for a Syrian-led transition, constitution and elections are not treated as evidence that those objectives were implemented.',
+    accessDate: '2026-09-21', creators: ['United Nations Security Council'], institution: 'United Nations', publicationDate: '2015-12-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary international legal and political resolution', identifiers: { resolution: 'S/RES/2254 (2015)', pages: '4' },
+    description: 'A UN Security Council resolution calling for a Syrian-led and Syrian-owned political process, inclusive governance, a new constitution, a ceasefire and UN-supervised free and fair elections. It is evidence of an international framework and diplomatic claim, not of domestic implementation or public agreement.',
+  },
+  {
+    id: 'unSyriaFallStatement2024',
+    label: 'United Nations Secretary-General — Statement on Syria (8 December 2024)',
+    url: 'https://www.un.org/sg/en/content/sg/statements/2024-12-08/statement-of-the-secretary-general-syria',
+    note: 'United Nations Secretary-General statement of 8 December 2024 consulted as an official institutional record concerning the fall of the Assad government and the opening of a possible transition. The statement is not treated as proof of successor legitimacy, public consent, or post-2024 stability.',
+    accessDate: '2026-09-21', creators: ['United Nations Secretary-General'], institution: 'United Nations', publicationDate: '2024-12-08', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official international statement on political transition', identifiers: { statementDate: '2024-12-08' },
+    description: 'An official UN statement marking the end of the Assad government and urging an inclusive, Syrian-led transition. It anchors the 2024 political endpoint used here while leaving subsequent authority, representation, security and constitutional outcomes outside this case’s claims.',
+  },
+  {
+    id: 'unSyriaSecurityCouncilDecember2024',
+    label: 'United Nations Security Council — Press statement on Syria (17 December 2024)',
+    url: 'https://press.un.org/en/2024/sc15943.doc.htm',
+    note: 'United Nations Security Council press statement of 17 December 2024 consulted as a primary institutional record. Its call for an inclusive Syrian-led and Syrian-owned process is kept distinct from evidence of implementation or broad political consent.',
+    accessDate: '2026-09-21', creators: ['United Nations Security Council'], institution: 'United Nations', publicationDate: '2024-12-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official international political statement on Syrian transition', identifiers: { statementDate: '2024-12-17' },
+    description: 'A Security Council statement reiterating the need for an inclusive Syrian-led and Syrian-owned political process after the 2024 regime collapse. It supplies an official diplomatic witness to the transition horizon, not a measurement of representation or implementation.',
+  },
+  {
+    id: 'abboudSyriaHotSpots2018',
+    label: 'Samer N. Abboud — Syria: Hot Spots in Global Politics, 2nd ed. (2018)',
+    url: 'https://uat.store.wiley.com/en-us/syria-hot-spots-in-global-politics-2nd-edition-p-9781509522408',
+    note: 'Polity/Wiley book record consulted for the second edition (304 pages; hardback ISBN 9781509522408; paperback ISBN 9781509522415; eBook ISBN 9781509522446). No book wording, quotation, table or scan is republished; the conflict analysis is attributed and used as one scholarly perspective.',
+    accessDate: '2026-09-21', creators: ['Samer N. Abboud'], institution: 'Polity Press', publicationDate: '2018-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history and conflict analysis', identifiers: { hardbackIsbn: '9781509522408', paperbackIsbn: '9781509522415', ebookIsbn: '9781509522446', pages: '304' },
+    description: 'A book-length political analysis of Syria’s descent into civil war, the conflict’s internationalization and the post-2015 stalemate. It provides a national and international lens but does not by itself represent all local, regional, social or displaced experiences.',
+  },
+  {
+    id: 'hinnebuschImadySyrianUprising2018',
+    label: 'Raymond Hinnebusch and Omar Imady (eds.) — The Syrian Uprising: Domestic Origins and Early Trajectory (2018)',
+    url: 'https://www.routledge.com/The-Syrian-Uprising-Domestic-Origins-and-Early-Trajectory/Hinnebusch-Imady/p/book/9781138500501',
+    note: 'Routledge book record consulted for the 2018 edited volume (343 pages; ISBN 9781138500501; eBook ISBN 9781315143798). The volume focuses on the uprising’s domestic origins and early trajectory; it is not used as a complete account of the later war or 2024 transition.',
+    accessDate: '2026-09-21', creators: ['Raymond Hinnebusch', 'Omar Imady'], institution: 'Routledge', publicationDate: '2018-02-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume on the Syrian uprising', identifiers: { isbn: '9781138500501', ebookIsbn: '9781315143798', pages: '343' },
+    description: 'A scholarly edited volume on the domestic causes and early trajectory of the 2011–2013 Syrian uprising. It is particularly useful for pre-war institutions, mobilization and early opposition dynamics, while leaving later fragmentation, foreign intervention and regime collapse to other sources.',
+  },
+  {
+    id: 'vanDamDestroyingNation2017',
+    label: 'Nikolaos van Dam — Destroying a Nation: The Civil War in Syria (2017)',
+    url: 'https://www.bloomsbury.com/uk/destroying-a-nation-9781784537975/',
+    note: 'Bloomsbury/I.B. Tauris book record consulted for the 2017 monograph (256 pages; ISBN 9781784537975). No book wording, quotation or scan is republished; this account is used as a critical political-history perspective rather than a comprehensive social history.',
+    accessDate: '2026-09-21', creators: ['Nikolaos van Dam'], institution: 'Bloomsbury Publishing / I.B. Tauris', publicationDate: '2017-07-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of the Syrian civil war', identifiers: { isbn: '9781784537975', pages: '256' },
+    description: 'A political history of the Syrian civil war, including regime disenchantment, opposition, armed conflict and obstacles to a political settlement. It contributes an experienced diplomatic and Syrian political perspective without exhausting local or civilian histories.',
+  },
+  {
+    id: 'yassinKassabAlShamiBurningCountry2018',
+    label: 'Robin Yassin-Kassab and Leila al-Shami — Burning Country: Syrians in Revolution and War (2018)',
+    url: 'https://www.plutobooks.com/product/burning-country/',
+    note: 'Pluto Press book record consulted for the 2018 edition (304 pages; paperback ISBN 9780745337821; eBook ISBN 9781786802798). No book wording, quotation, table or scan is republished; the authors’ situated revolution and civilian-opposition perspective is attributed and not generalized to all Syrians.',
+    accessDate: '2026-09-21', creators: ['Robin Yassin-Kassab', 'Leila al-Shami'], institution: 'Pluto Press', publicationDate: '2018-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Syrian revolution and war history', identifiers: { isbn: '9780745337821', ebookIsbn: '9781786802798', pages: '304' },
+    description: 'A revolution- and civilian-centred account of the 2011 uprising, grassroots organizations, militarization, Islamisms, dispossession and exile. It supplies a critical perspective from and about Syrian revolutionary networks, not a neutral or exhaustive account of regime supporters, minorities, territories or later transition politics.',
+  },
+  {
+    id: 'listerSyrianJihad2017',
+    label: 'Charles R. Lister — The Syrian Jihad: The Evolution of an Insurgency, revised ed. (2017)',
+    url: 'https://hurstpublishers.com/book/the-syrian-jihad-2/',
+    note: 'Hurst Publishers book record consulted for the revised 2017 edition (520 pages; ISBN 9781849048729). No book wording, quotation, table, map or scan is republished; its specialized focus on jihadist organizations is not treated as a history of all Syrian actors or communities.',
+    accessDate: '2026-09-21', creators: ['Charles R. Lister'], institution: 'Hurst Publishers', publicationDate: '2017-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Syrian jihadist insurgency', identifiers: { isbn: '9781849048729', pages: '520', edition: 'revised' },
+    description: 'A detailed study of Sunni jihadist organizations, Jabhat al-Nusra, ISIS and the armed insurgency. It documents one consequential field of the war and its international connections, but cannot stand for Syria’s full social, political, religious or territorial experience.',
+  },
+  {
+    id: 'baczkoDorronsoroQuesnayCivilWarSyria2018',
+    label: 'Adam Baczko, Gilles Dorronsoro and Arthur Quesnay — Civil War in Syria: Mobilization and Competing Social Orders (2018)',
+    url: 'https://www.cambridge.org/core/books/civil-war-in-syria/8C28D229D9A72A3EA408BF98CDF44E3D',
+    note: 'Cambridge University Press book record consulted for the 2018 monograph (print ISBN 9781108420808; eBook ISBN 9781108355322; DOI 10.1017/9781108355322). The authors’ fieldwork and interviews are used through the publisher record without reproducing copyrighted text; the study is bounded mainly to rebel-held orders and mobilization.',
+    accessDate: '2026-09-21', creators: ['Adam Baczko', 'Gilles Dorronsoro', 'Arthur Quesnay'], institution: 'Cambridge University Press', publicationDate: '2018-02-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length fieldwork-based study of Syrian civil war mobilization and social orders', identifiers: { isbn: '9781108420808', ebookIsbn: '9781108355322', doi: '10.1017/9781108355322' },
+    description: 'A fieldwork- and interview-based study of rebel-held institutions, mobilization and competing social orders. It sharpens the analysis of fragmented governance and local political authority while leaving regime-held, Kurdish-led, displaced and later transition experiences only partially covered.',
+  },
+  {
+    id: 'hinnebuschSaouliWarForSyria2019',
+    label: 'Raymond Hinnebusch and Adham Saouli (eds.) — The War for Syria: Regional and International Dimensions of the Syrian Uprising (2019)',
+    url: 'https://www.routledge.com/The-War-for-Syria-Regional-and-International-Dimensions-of-the-Syrian-Uprising/Hinnebusch-Saouli/p/book/9780429201967',
+    note: 'Routledge book record consulted for the 2019 edited volume (340 pages; eBook ISBN 9780429201967). No chapter wording, quotation or scan is republished; its focus on external actors is distinguished from domestic social and local-governance histories.',
+    accessDate: '2026-09-21', creators: ['Raymond Hinnebusch', 'Adham Saouli'], institution: 'Routledge', publicationDate: '2019-07-23', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume on regional and international dimensions of the Syrian war', identifiers: { ebookIsbn: '9780429201967', pages: '340' },
+    description: 'An edited scholarly analysis of the regional and international dimensions of the Syrian uprising and war, including Iran, Russia, Turkey, Gulf states, the United States, the European Union and Hizbullah. It is used to situate external power, not to infer a single Syrian national preference or political outcome.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -4785,6 +4884,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('chad') || source.id.startsWith('azevedoNationFutureChad') || source.id.startsWith('nolutshunguLimitsAnarchyChad') || source.id.startsWith('azevedoRootsViolenceChad') || source.id.startsWith('powellFrancesWarsChad') || source.id.startsWith('dingammadjiGovernmentsChad') || source.id.startsWith('buijtenhuijsTransitionChad') || source.id.startsWith('haggarTombalbayeChad') || source.id.startsWith('brodyCatchDictatorChad') ? 'Chadian constitutional, civil-war, intervention and transition history'
       : source.id.startsWith('cameroon') || source.id.startsWith('ngohHistoryCameroon') || source.id.startsWith('josephRadicalNationalismCameroon') || source.id.startsWith('ngohSouthernCameroons') || source.id.startsWith('terrettaNationOutlawsCameroon') || source.id.startsWith('takougangKriegerPoliticalCrossroadsCameroon') || source.id.startsWith('bouopdaPoliticalHistoryCameroon') || source.id.startsWith('bouopdaAnglophoneCrisisCameroon') ? 'Cameroonian constitutional, decolonization, bilingual and Anglophone-crisis history'
       : source.id.startsWith('iraq') || source.id.startsWith('trippHistoryIraq') || source.id.startsWith('marrModernHistoryIraq') || source.id.startsWith('dawishaPoliticalHistoryIraq') || source.id.startsWith('dodgeIraq') || source.id.startsWith('haddadSectarianismIraq') || source.id.startsWith('alAliStruggleIraq') || source.id.startsWith('franzenPridePowerIraq') || source.id.startsWith('herringRangwalaIraq') ? 'Iraqi constitutional, occupation, sectarianization and political history'
+      : source.id.startsWith('syria') || source.id.startsWith('unSyria') || source.id.startsWith('abboudSyria') || source.id.startsWith('hinnebuschImadySyrian') || source.id.startsWith('vanDamDestroyingNation') || source.id.startsWith('yassinKassabAlShami') || source.id.startsWith('listerSyrian') || source.id.startsWith('baczkoDorronsoroQuesnay') || source.id.startsWith('hinnebuschSaouliWarForSyria') ? 'Syrian constitutional, conflict and political history'
       : source.id.startsWith('france') || source.id.startsWith('atkinFifthFrench') || source.id.startsWith('elgiePoliticalInstitutionsFrance') || source.id.startsWith('knappWrightGovernmentFrance') || source.id.startsWith('duhamelFoucaultFullaLazarRepublic') ? 'French constitutional, Fifth Republic and political history'
       : source.id.startsWith('burkina') || source.id.startsWith('harschBurkina') || source.id.startsWith('englebertBurkina') || source.id.startsWith('kaborePoliticalHistoryBurkina') || source.id.startsWith('englebertCotRevolutionBurkina') || source.id.startsWith('sankaraSpeeches') ? 'Burkinabè constitutional, revolutionary and political-transition history'
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
