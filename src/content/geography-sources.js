@@ -6572,6 +6572,60 @@ const sources = [
     sourceType: 'book-length comparative political-science study of party-voter linkages', identifiers: { isbn: '9780199642649', onlineIsbn: '9780191778643', doi: '10.1093/acprof:oso/9780199642649.001.0001' },
     description: 'Comparative political-science study of party strategy and voter representation in unequal democracies, including the Frente Amplio and Uruguay alongside Chile’s UDI. It supplies a party-voter linkage perspective and does not establish a complete account of Uruguayan institutions, society or later politics.'
   },
+  {
+    id: 'ecuadorConstitution2008Asamblea',
+    label: 'Ecuador — Constitución de la República del Ecuador (2008, official Asamblea Nacional record)',
+    url: 'https://www.asambleanacional.gob.ec/sites/default/files/constituciondelarepublicadelecuador-incluyereformas-consultapopular7demayo.pdf',
+    note: 'Asamblea Nacional Ecuador PDF consulted as the primary constitutional record and link only. No constitutional wording, translation, scan or page is republished; formal rights, plurinational language, institutions and executive powers are distinguished from implementation, public consent, electoral fairness and later practice.',
+    accessDate: '2026-09-21', creators: ['Asamblea Constituyente de Ecuador'], institution: 'Asamblea Nacional del Ecuador', publicationDate: '2008-10-20', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '2008', publicationDate: '2008-10-20', officialRecord: 'Registro Oficial No. 449' },
+    description: 'Primary constitutional witness to the Montecristi refounding: popular sovereignty, rights, collective and environmental provisions, plurinational and intercultural language, public functions, executive and legislative arrangements, and the transition regime. The consulted PDF includes later reforms and is used for the text’s formal design, not as evidence of uniform political practice.'
+  },
+  {
+    id: 'ecuadorCneElection2023',
+    label: 'Consejo Nacional Electoral Ecuador — Resultados electorales de las elecciones generales anticipadas y consultas populares 2023',
+    url: 'https://www.cne.gob.ec/wp-content/uploads/2024/06/ResultadosElectoralesAnticipadasyConsultas2023.pdf',
+    note: 'CNE statistical publication consulted for the official 20 August 2023 first-round and subsequent election records, and link only. No result table, candidate wording, scan or page is republished; the electoral authority record is distinguished from independent observation, voter motivation, equal conditions and a general finding of democratic legitimacy.',
+    accessDate: '2026-09-21', creators: ['Consejo Nacional Electoral del Ecuador'], institution: 'Consejo Nacional Electoral del Ecuador', publicationDate: '2023-08-20', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election results / statistical institutional record', identifiers: { electionDate: '2023-08-20', election: 'Elecciones Generales Anticipadas 2023', reportDate: '2024-06' },
+    description: 'Institutional witness to the early presidential and legislative election called after the 2023 dissolution of the National Assembly, including official results and geographic breakdowns. It fixes the case’s endpoint without proving equal access, complete participation, absence of coercion or the meaning of every vote.'
+  },
+  {
+    id: 'ecuadorFreidenbergPachanoPoliticalSystem2016',
+    label: 'Flavia Freidenberg and Simón Pachano — El sistema político ecuatoriano (2016)',
+    url: 'https://repositorio.flacsoandes.org/items/d61cdf9b-1eb8-4c3b-96b8-d63551ec0ddd/full',
+    note: 'FLACSO Ecuador open-access record consulted for the Spanish-language book (2016; 351 pages; ISBN 9789978674611). No book wording, quotation, table or scan is republished; the authors’ institutional, party-system and actor analysis is attributed and bounded to its coverage and method.',
+    accessDate: '2026-09-21', creators: ['Flavia Freidenberg', 'Simón Pachano'], institution: 'FLACSO Ecuador', publicationDate: '2016', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length scholarly study of Ecuadorian institutions and political system', identifiers: { isbn: '9789978674611', pages: '351', publisher: 'FLACSO Ecuador', series: 'Atrio' },
+    description: 'Book-length systematic account of Ecuadorian political institutions, executive and legislative government, electoral systems, parties, Indigenous movement and regional social and political actors across more than three decades of democratic rule. It provides a national political-system lens rather than a complete local, social or post-2016 history.'
+  },
+  {
+    id: 'ecuadorBeckerIndiansLeftists2008',
+    label: 'Marc Becker — Indians and Leftists in the Making of Ecuador’s Modern Indigenous Movements (2008)',
+    url: 'https://www.dukeupress.edu/indians-and-leftists-in-the-making-of-ecuadors-modern-indigenous-movements',
+    note: 'Duke University Press bibliographic record consulted for the book (August 2008; 336 pages; paper ISBN 9780822342793; hardcover ISBN 9780822342564; eISBN 9780822381457). No book wording, quotation, table, image or scan is republished; Becker’s archival, press and interview-based interpretation is attributed and not generalized to every Indigenous community or later government.',
+    accessDate: '2026-09-21', creators: ['Marc Becker'], institution: 'Duke University Press', publicationDate: '2008-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Indigenous political and social-movement history', identifiers: { isbn: '9780822342793', hardcoverIsbn: '9780822342564', ebookIsbn: '9780822381457', pages: '336', doi: '10.1215/9780822381457' },
+    description: 'Book-length history of Indigenous political activism and Indigenous-leftist collaboration in Ecuador from early twentieth-century organizing through the 1990 uprising, based on documentary and archival evidence, national and Indigenous presses and interviews. It supplies a distinct movement history and does not stand for all Indigenous nations, regions, women, classes or post-1990 developments.'
+  },
+  {
+    id: 'ecuadorDeLaTorrePopulistSeduction2000',
+    label: 'Carlos de la Torre — Populist Seduction in Latin America: The Ecuadorian Experience (2000)',
+    url: 'https://www.loc.gov/item/hlas-bi2002000684',
+    note: 'Library of Congress Handbook of Latin American Studies record consulted for the Ohio University Center for International Studies monograph (2000; 185 pages; ISBN 0896802108). No book wording, quotation or scan is republished; the study’s populism and political-culture interpretation is attributed and bounded to Velasco Ibarra and Abdalá Bucaram.',
+    accessDate: '2026-09-21', creators: ['Carlos de la Torre'], institution: 'Ohio University Center for International Studies', publicationDate: '2000', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Ecuadorian populism and political culture', identifiers: { isbn: '0896802108', pages: '185', publisher: 'Ohio University Center for International Studies', series: 'Research in International Studies: Latin America Series; 32', lccn: '99058922' },
+    description: 'Book-length analysis of populism as social, cultural and political practice through the cases of José María Velasco Ibarra and Abdalá Bucaram. It contributes a focused account of popular participation, discourse and patron-client politics, not a complete history of Ecuador after 2000 or a claim that all Ecuadorian politics is populist.'
+  },
+  {
+    id: 'ecuadorPachanoGiroPolitico2021',
+    label: 'Simón Pachano — Giro político y democracia en Sudamérica y Ecuador (2021)',
+    url: 'https://repositorio.flacsoandes.org/items/06ed1755-8fe1-4c1b-a580-531b6510a6f6',
+    note: 'FLACSO Ecuador open-access record consulted for the Spanish-language book (2021; 172 pages; ISBN 9789978675908 print and 9789978675915 PDF). No book wording, quotation, table or scan is republished; Pachano’s comparative interpretation of left turns, hybrid regimes and democratic quality is attributed and bounded to its method and endpoint.',
+    accessDate: '2026-09-21', creators: ['Simón Pachano Holguín'], institution: 'FLACSO Ecuador', publicationDate: '2021', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length comparative study of democratic change and Ecuadorian politics', identifiers: { isbn: '9789978675908', pdfIsbn: '9789978675915', pages: '172', publisher: 'FLACSO Ecuador', doi: '10.46546/2021-24atrio' },
+    description: 'Comparative book-length study of the political turn to the left, hybrid-regime debate and democratic-quality decline in South America, with Ecuador as a principal reference case. It supplies a later political-science lens on the Citizens’ Revolution and democratic institutions without establishing a complete social, regional or post-2021 history.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -6587,6 +6641,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('peru') ? 'Peruvian constitutional, authoritarian and political history'
       : source.id.startsWith('paraguay') ? 'Paraguayan post-authoritarian, constitutional and political history'
       : source.id.startsWith('bolivia') ? 'Bolivian plurinational, constitutional and political history'
+      : source.id.startsWith('ecuador') ? 'Ecuadorian constitutional, Indigenous-movement and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
           : source.id.startsWith('philippine') || source.id.startsWith('thompsonAntiMarcos') || source.id.startsWith('timbermanChangelessLand') || source.id.startsWith('abinalesAmoroso') || source.id.startsWith('chopraPhilippines') || source.id.startsWith('bonoanDresselPhilippine') || source.id.startsWith('thompsonPhilippines') || source.id.startsWith('arugayEncinasGamesChanges') || source.id.startsWith('calimbahinDresselBeyondGeopolitics') ? 'Philippine constitutional, oligarchic and democratic political history'
           : source.id.startsWith('knightMexican') || source.id.startsWith('eisenstadtCourtingDemocracyMexico') || source.id.startsWith('shirkMexicoNewPolitics') || source.id.startsWith('oxfordHandbookMexicanPolitics') || source.id.startsWith('olneyLocalMexico') || source.id.startsWith('middlebrookDilemmasPoliticalChangeMexico') || source.id.startsWith('mexicoIne') ? 'Mexican constitutional, democratic-transition and political history'
