@@ -4976,6 +4976,69 @@ const sources = [
     sourceType: 'doctoral thesis on Tongan constitutional and political reform', identifiers: {},
     description: 'An original legal-cultural study of the 2010 constitutional reform, emphasizing partial devolution, power-sharing, monarchy, chiefly rank, ordinary citizens and the Tongan concept of constitutional change. Its qualitative and culturally grounded perspective is distinct from Campbell’s historical synthesis and remains bounded to the reform’s process and outcomes.',
   },
+  {
+    id: 'fijiGovernmentConstitution2013',
+    label: 'Government of Fiji — Constitution of the Republic of Fiji (2013)',
+    url: 'https://fiji.gov.fj/About-Fiji/Fijian-Constitution',
+    note: 'Official Government of Fiji page consulted for the 2013 Constitution in English, Hindi and iTaukei versions. It is used as the primary constitutional text and not as evidence of uniform consent, rights implementation or later institutional practice; no text is republished.',
+    accessDate: '2026-09-21', creators: ['Government of Fiji'], institution: 'Government of Fiji', publicationDate: '2013', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Hindi', 'iTaukei'],
+    sourceType: 'official constitution and multilingual constitutional record', identifiers: {},
+    description: 'Primary constitutional record for the post-coup republic, including state institutions, rights language, electoral government, public authority and the constitutional framing of Fiji’s civic and Indigenous political order. The official page does not by itself establish implementation or public approval.',
+  },
+  {
+    id: 'fijiElectionsOfficeGeneralElections',
+    label: 'Fijian Elections Office — General elections 2014, 2018 and 2022',
+    url: 'https://www.feo.org.fj/feo-general-elections/',
+    note: 'Official Fijian Elections Office portal consulted for the three general-election cycles held under the 2013 Constitution and for links to election law and results. It is treated as an administrative primary record, not as independent evidence of fairness, participation or representativeness.',
+    accessDate: '2026-09-21', creators: ['Fijian Elections Office'], institution: 'Fijian Elections Office', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral administration and results portal', identifiers: {},
+    description: 'Official electoral portal documenting the 2014, 2018 and 2022 general elections, election-law materials and administrative information. It anchors the post-2013 electoral sequence while leaving contested interpretation and social experience to independent scholarship and observation.',
+  },
+  {
+    id: 'fiji2022GeneralElectionReport',
+    label: 'Fijian Elections Office and Electoral Commission — 2022 General Election Joint Report',
+    url: 'https://www.parliament.gov.fj/wp-content/uploads/2023/11/131-2022-General-Election-Joint-Report-by-the-Electoral-Commission-and-Supervisor-of-Elections.pdf',
+    note: 'Official joint report by Fiji’s Electoral Commission and Supervisor of Elections, published through the Parliament website and consulted for the 2022 electoral administration and results record. It is not treated as a complete independent audit of political equality or public consent.',
+    accessDate: '2026-09-21', creators: ['Fijian Electoral Commission', 'Supervisor of Elections'], institution: 'Fijian Elections Office / Parliament of Fiji', publicationDate: '2023', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official general-election report', identifiers: {},
+    description: 'Primary report on Fiji’s 2022 general election, including the legal framework, election administration, results and related observer material. It documents the electoral endpoint used here without extending into later government performance or present political conditions.',
+  },
+  {
+    id: 'lalBrokenWavesFiji1992',
+    label: 'Brij V. Lal — Broken Waves: A History of the Fiji Islands in the Twentieth Century (1992)',
+    url: 'https://uhpress.hawaii.edu/title/broken-waves-a-history-of-the-fiji-islands-in-the-twentieth-century/?attribute_pa_format=hardback',
+    note: 'University of Hawai‘i Press catalogue record consulted for Lal’s book-length twentieth-century history of Fiji. The book is used as a national historical synthesis; no copyrighted prose is reproduced and its scope is not extended beyond the period and evidence it studies.',
+    accessDate: '2026-09-21', creators: ['Brij V. Lal'], institution: 'University of Hawai‘i Press', publicationDate: '1992', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national and political history', identifiers: { isbn: '9780824814182', pages: '424' },
+    description: 'Book-length history of twentieth-century Fiji that situates colonial legacies, indenture, Indigenous chiefly institutions, race, constitutional change and postcolonial political conflict in one national narrative. It supplies historical context rather than a single ideological classification.',
+  },
+  {
+    id: 'lawsonFailureDemocraticPoliticsFiji1991',
+    label: 'Stephanie Lawson — The Failure of Democratic Politics in Fiji (1991)',
+    url: 'https://academic.oup.com/book/53501',
+    note: 'Oxford University Press record consulted for Lawson’s independent book-length analysis of Fiji’s political institutions and the 1987 coups. Its argument is attributed and bounded to its historical and theoretical scope; no abstract language is republished.',
+    accessDate: '2026-09-21', creators: ['Stephanie Lawson'], institution: 'Oxford University Press / Oxford Academic', publicationDate: '1991', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political and constitutional analysis', identifiers: { isbn: '9780198273226', doi: '10.1093/oso/9780198273226.001.0001' },
+    description: 'Book-length political and historical analysis of Fiji’s postcolonial institutions, colonial legacies, ethnic divisions and the 1987 coups. It provides an independent interpretation of democratic failure and should not be treated as the sole account of Fiji or of later periods.',
+  },
+  {
+    id: 'lalAnotherWayFiji1998',
+    label: 'Brij V. Lal — Another Way: The Politics of Constitutional Reform in Post-coup Fiji (1998)',
+    url: 'https://books.google.com/books?id=_hu4AAAAIAAJ',
+    note: 'Library-style bibliographic record consulted for Lal’s book-length study of Fiji’s 1987 coups, the 1990 constitutional order, elections and constitutional-reform proposals. The record and book are used for attributed historical analysis, with no copyrighted text reproduced.',
+    accessDate: '2026-09-21', creators: ['Brij V. Lal'], institution: 'Asia Pacific Press / Australian National University', publicationDate: '1998', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length constitutional-reform study', identifiers: { isbn: '9780731523818', pages: '223' },
+    description: 'Book-length study of post-coup constitutional reform, including the 1990 Constitution, 1992 and 1994 elections, the Reeves Commission and proposals for a more inclusive constitutional order. It is a reform-centred perspective and not a complete account of the 2000 or 2006 coups or later constitutional practice.',
+  },
+  {
+    id: 'fraenkelFirthLalMilitaryTakeoverFiji2009',
+    label: 'Jon Fraenkel, Stewart Firth and Brij V. Lal (eds.) — The 2006 Military Takeover in Fiji: A Coup to End All Coups? (2009)',
+    url: 'https://press.anu.edu.au/publications/series/state-society-and-governance-melanesia/2006-military-takeover-fiji',
+    note: 'ANU Press record consulted for the open scholarly edited volume on Fiji’s 2006 military takeover and its political, social, legal and economic implications. Contributors include scholars and Fijian political and civic actors; the volume is not treated as a single unanimous interpretation.',
+    accessDate: '2026-09-21', creators: ['Jon Fraenkel', 'Stewart Firth', 'Brij V. Lal'], institution: 'ANU Press', publicationDate: '2009', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on coup, state and society', identifiers: { isbn: '9781921536502', ebookIsbn: '9781921536519', doi: '10.22459/MTF.04.2009', pages: '472' },
+    description: 'Open scholarly edited volume bringing together historical, political, legal, social and first-person perspectives on the 2006 takeover and its aftermath. It supports triangulation of coup narratives, military intervention, race, governance and civil society while preserving disagreement among contributors.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -5029,6 +5092,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeriaInec') ? 'Nigerian constitutional, electoral and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') || source.id.startsWith('ethiopiaAu') || source.id.startsWith('ethiopiaJusticeTransitional') || source.id.startsWith('plautVaughanTigrayWar') || source.id.startsWith('erlichGreaterTigray') ? 'Ethiopian revolutionary, federal, conflict and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('campbellTongasWayDemocracy') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') || source.id.startsWith('tupouTongaReform') ? 'Tongan constitutional, monarchical and political history'
+        : source.id.startsWith('fiji') || source.id.startsWith('lalBrokenWavesFiji') || source.id.startsWith('lawsonFailureDemocraticPoliticsFiji') || source.id.startsWith('lalAnotherWayFiji') || source.id.startsWith('fraenkelFirthLalMilitaryTakeoverFiji') ? 'Fijian constitutional, coup and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : 'Middle Eastern political history and geography',
