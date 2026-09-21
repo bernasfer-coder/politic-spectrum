@@ -6267,6 +6267,69 @@ const sources = [
     description: 'Comparative political-science chapter explaining democratic survival after 1983 through changed actor commitments, policy moderation, memory of dictatorship, civilian control and rejection of military rebellions despite severe economic crises. It is a distinct comparative interpretation, not a complete social or institutional history.'
   },
   {
+    id: 'peruConstitution1993Congress',
+    label: 'Peru — Constitución Política del Perú de 1993, Congreso de la República',
+    url: 'https://www.congreso.gob.pe/constitucion-del-peru-y-reglamento/',
+    note: 'Official Peruvian Congress constitutional page and linked 1993 text consulted as a primary legal witness and link only. No constitutional wording, translation, scan or PDF page is republished; formal structure, rights and institutional design are distinguished from implementation, consent and later political practice.',
+    accessDate: '2026-09-21', creators: ['República del Perú'], institution: 'Congreso de la República del Perú', publicationDate: '1993-12-29', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1993', promulgationDate: '1993-12-29' },
+    description: 'Primary constitutional witness to Peru’s post-autogolpe constitutional settlement, including the formal organization of the state, rights, Congress, executive authority, courts and constitutional guarantees. It establishes legal design rather than uniform practice or a national ideological character.'
+  },
+  {
+    id: 'peruOnpeElection2021',
+    label: 'Oficina Nacional de Procesos Electorales — Reporte Electoral n.º 124, Elecciones Generales 2021',
+    url: 'https://www.onpe.gob.pe/modEducacion/Biblioteca/Reporte-Electoral/2021/RE_124.pdf',
+    note: 'Official ONPE electoral report consulted for the 11 April 2021 first round and 6 June 2021 runoff, including presidential, congressional and Andean Parliament processes. No result table, ballot wording or PDF page is republished; the institutional record anchors dated procedures without proving equal conditions, voter motivation, fairness or public consent.',
+    accessDate: '2026-09-21', creators: ['Oficina Nacional de Procesos Electorales del Perú'], institution: 'Oficina Nacional de Procesos Electorales', publicationDate: '2021-06-06', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official general-election report and institutional statistics', identifiers: { report: 'ONPE Reporte Electoral 124', election: 'Peru general election 2021', firstRoundDate: '2021-04-11', runoffDate: '2021-06-06' },
+    description: 'Official electoral report documenting the 2021 general-election process, including the presidential first round and runoff, congressional election and Andean Parliament election. It supplies a dated institutional endpoint rather than a complete account of electoral quality, representation or political meaning.'
+  },
+  {
+    id: 'peruCarrionFujimoriLegacy2006',
+    label: 'Julio F. Carrión (ed.) — The Fujimori Legacy: The Rise of Electoral Authoritarianism in Peru (2006)',
+    url: 'https://www.psupress.org/books/titles/0-271-02747-9.html',
+    note: 'Pennsylvania State University Press record consulted for the English-language edited volume (2006; paperback ISBN 978-0-271-02748-7; 376 pages; DOI 10.5325/j.ctt7v107). No chapter wording, quotation, table or scan is republished; the contributors’ analyses of Fujimorismo are attributed and bounded to their periods, methods and standpoints.',
+    accessDate: '2026-09-21', creators: ['Julio F. Carrión'], institution: 'Pennsylvania State University Press', publicationDate: '2006', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited political study of electoral authoritarianism', identifiers: { isbn: '9780271027487', doi: '10.5325/j.ctt7v107', pages: '376', edition: '2006' },
+    description: 'Edited scholarly volume interpreting Fujimori’s rise and authoritarian regime through electoral authoritarianism, public opinion, weak parties, state reform, military backing, corruption, media collusion, economic policy and the 2000 collapse. It supplies multiple political-science perspectives rather than a complete national, local or post-2000 history.'
+  },
+  {
+    id: 'peruCotlerGromponeFujimorismo2001',
+    label: 'Julio Cotler and Romeo Grompone — El fujimorismo: ascenso y caída de un régimen autoritario (2001)',
+    url: 'https://fondoeditorial.iep.org.pe/producto/el-fujimorismo-ascenso-y-caida-de-un-regimen-autoritario/',
+    note: 'Instituto de Estudios Peruanos record consulted for the Spanish-language book (2001; ISBN 9972-51-050-6; 178 pages). No essay wording, quotation, table or scan is republished; the two authors’ interpretations of governance, sovereignty, authoritarian consolidation and transition are attributed and bounded to their methods and endpoint.',
+    accessDate: '2026-09-21', creators: ['Julio Cotler', 'Romeo Grompone'], institution: 'Instituto de Estudios Peruanos', publicationDate: '2001', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length Spanish-language political study', identifiers: { isbn: '9972510506', pages: '178' },
+    description: 'Spanish-language two-essay study of the Fujimori regime’s governance, sovereignty, institutional and social bases, economic reform, military control, political machines and transition after the 2000 collapse. It supplies a distinct Peruvian interpretation rather than a complete later democratic or local history.'
+  },
+  {
+    id: 'peruKenneyFujimoriCoup2004',
+    label: 'Charles D. Kenney — Fujimori’s Coup and the Breakdown of Democracy in Latin America (2004)',
+    url: 'https://undpress.nd.edu/9780268031725/fujimoris-coup-and-the-breakdown-of-democracy-in-latin-america/',
+    note: 'University of Notre Dame Press record consulted for the English-language monograph (2004; ISBN 9780268031725; 396 pages). No book wording, quantitative table, quotation or scan is republished; Kenney’s institutional and comparative argument is attributed and bounded to the 1992 breakdown and its historical context.',
+    accessDate: '2026-09-21', creators: ['Charles D. Kenney'], institution: 'University of Notre Dame Press', publicationDate: '2004-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative political-science study of democratic breakdown', identifiers: { isbn: '9780268031725', pages: '396', series: 'Kellogg Institute Series on Democracy and Development' },
+    description: 'Book-length study of the 1992 Peruvian autogolpe and democratic breakdown, arguing that institutional factors, especially the absence of a legislative majority, played a major role while testing competing explanations and comparing Latin American cases. It supplies a focused institutional lens, not a complete post-2000 or social history.'
+  },
+  {
+    id: 'peruElecciones2021Pucp2022',
+    label: 'Elecciones 2021. Pandemia, crisis y representación (2022)',
+    url: 'https://www.fondoeditorial.pucp.edu.pe/categorias/1338-elecciones-2021-pandemia-crisis-y-representacion.html',
+    note: 'Pontificia Universidad Católica del Perú Fondo Editorial record consulted for the Spanish-language edited volume (2022; ISBN 9786123178017; 420 pages). No chapter wording, quotation, table or scan is republished; the multi-method election analyses are attributed to their contributors and bounded to the 2021 contest and its crisis context.',
+    accessDate: '2026-09-21', creators: ['Contributors to the edited volume'], institution: 'Pontificia Universidad Católica del Perú, Fondo Editorial', publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length edited study of the 2021 general election', identifiers: { isbn: '9786123178017', pages: '420', edition: '1' },
+    description: 'Spanish-language edited volume using distinct approaches and methods to interpret Peru’s 2021 election, the pandemic and institutional crisis, eighteen-candidate first-round fragmentation, the Castillo–Fujimori runoff and the crisis of representation. It supplies a contemporary endpoint and not a complete account of all Peruvian localities or later politics.'
+  },
+  {
+    id: 'peruBarrenecheaVergaraDemocraciaAsaltada2024',
+    label: 'Rodrigo Barrenechea Carpio and Alberto Vergara (eds.) — Democracia asaltada: El colapso de la política peruana (y una advertencia para América Latina) (2024)',
+    url: 'https://faculty.up.edu.pe/es/publications/democracia-asaltada-el-colapso-de-la-pol%C3%ADtica-peruana-y-una-adver/',
+    note: 'Universidad del Pacífico FacultyUP and Fondo Editorial records consulted for the Spanish-language edited book (Lima, 2024; ISBN 978-9972-57-534-1; 334 pages). No chapter wording, quotation, table or scan is republished; the editors and contributors’ analysis of representation, rule of law and democratic deterioration is attributed and not projected beyond its evidence or through 2021.',
+    accessDate: '2026-09-21', creators: ['Rodrigo Barrenechea Carpio', 'Alberto Vergara'], institution: 'Universidad del Pacífico', publicationDate: '2024-06', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length edited study of democratic deterioration', identifiers: { isbn: '9789972575341', pages: '334', edition: '1' },
+    description: 'Spanish-language edited study of Peru’s post-2001 erosion of democratic representation and rule of law, including subnational and national political competition, the 2016–2021 crisis sequence, judicialization, corruption and the Castillo–Boluarte cycle. It supplies a recent scholarly interpretation while this case remains bounded to 2021 and does not assert a later current status.'
+  },
+  {
     id: 'paraguayConstitution1992Bacn',
     label: 'Paraguay — Constitución Nacional de 1992, Biblioteca y Archivo Central del Congreso Nacional',
     url: 'https://www.bacn.gov.py/leyesparaguayas/9580/constitucion-nacional-',
@@ -6521,6 +6584,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
       : source.id.startsWith('gambia') || source.id.startsWith('hughesPerfectPoliticalHistoryGambia') || source.id.startsWith('saineParadoxThirdWaveGambia') || source.id.startsWith('saineCeesaySallStateSocietyGambia') || source.id.startsWith('nabanehAbebeSoweGambiaTransition') ? 'Gambian constitutional, democratization and political history'
       : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') || source.id.startsWith('southall') || source.id.startsWith('booysen') || source.id.startsWith('glaser') || source.id.startsWith('buthelezi') ? 'South African constitutional law and political history'
+      : source.id.startsWith('peru') ? 'Peruvian constitutional, authoritarian and political history'
       : source.id.startsWith('paraguay') ? 'Paraguayan post-authoritarian, constitutional and political history'
       : source.id.startsWith('bolivia') ? 'Bolivian plurinational, constitutional and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
