@@ -6191,6 +6191,81 @@ const sources = [
     sourceType: 'book-length visual and political history of social protest', identifiers: { isbn: '9781800732551', paperbackIsbn: '9781800733220', ebookIsbn: '9781807582944', doi: '10.3167/9781800732551', pages: '310' },
     description: 'Book-length visual and political study of protest art, memory, feminist and Indigenous currents and the social revolution in Santiago from October 2019 through the COVID-19 lockdown. It adds cultural and visual evidence while remaining one situated interpretation rather than a complete national survey.',
   },
+  {
+    id: 'argentinaConstitution1994Official',
+    label: 'Argentina — Constitution of the Nation, Law 24.430 official text (1994/1995)',
+    url: 'https://www.argentina.gob.ar/normativa/nacional/804/texto',
+    note: 'Argentina.gob.ar / Honorable Congress official legal record consulted for the constitutional text and link only. No constitutional wording, translation, scan or page is republished; formal federal republican design and rights are distinguished from implementation, legitimacy, provincial experience and later political practice.',
+    accessDate: '2026-09-21', creators: ['Honorable Congreso de la Nación Argentina'], institution: 'Argentina.gob.ar / Honorable Congress of the Nation',
+    publicationDate: '1994-12-14', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { law: '24.430', constitutionalText: 'Argentina Constitution with reforms through 1994', publicationDate: '1995-01-10' },
+    description: 'Primary constitutional witness to Argentina’s federal representative republican form, rights, institutions, provincial relations and 1994 constitutional reform. It establishes legal design, not uniform political practice or national ideological character.'
+  },
+  {
+    id: 'argentinaConadepArchive1984',
+    label: 'Argentina — Archivo Nacional de la Memoria, CONADEP and Nunca Más archival record (1983–1985)',
+    url: 'https://www.argentina.gob.ar/node/421253',
+    note: 'Argentina.gob.ar Archivo Nacional sobre la desaparición de personas page consulted for the archive description and link only. No testimony, report wording, image, scan or protected archival material is republished; the archive’s existence and holdings are distinguished from a complete truth commission, uniform public memory or a final account of every victim and community.',
+    accessDate: '2026-09-21', creators: ['Comisión Nacional sobre la Desaparición de Personas', 'Archivo Nacional de la Memoria'], institution: 'Secretaría de Derechos Humanos de la Nación Argentina',
+    publicationDate: '1984', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary truth-and-memory archive / official institutional record', identifiers: { commissionYear: '1983', report: 'Nunca Más', reportYear: '1984', trialArchiveYear: '1985' },
+    description: 'Primary archival record for the CONADEP commission created after the dictatorship, the survivor and family testimonies associated with Nunca Más, and the incorporated 1985 Junta trial film archive. It anchors truth-and-justice institution building without proving complete accountability, consensus or uniform reception.'
+  },
+  {
+    id: 'argentinaCneElection2023',
+    label: 'Cámara Nacional Electoral — Argentina electoral process and definitive-scrutiny portal (2023)',
+    url: 'https://www.electoral.gov.ar/nuevo/paginas/btn/elecc2023.php',
+    note: 'Cámara Nacional Electoral official 2023 process portal consulted for the election sequence, definitive scrutiny and actas links only. No result table, ballot, candidate wording or PDF page is republished; an electoral authority’s record is distinguished from independent observation, voter motivation, equal conditions, public consent and a general finding of democratic legitimacy.',
+    accessDate: '2026-09-21', creators: ['Cámara Nacional Electoral de la República Argentina'], institution: 'Poder Judicial de la Nación Argentina / Cámara Nacional Electoral',
+    publicationDate: '2023-11-19', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential and national election process record', identifiers: { election: 'Argentine presidential and national elections 2023', runoffDate: '2023-11-19' },
+    description: 'Institutional witness to the 2023 PASO, general-election and second-round process, including official scrutiny and acta resources. It bounds the electoral endpoint without proving equal participation, electoral quality, voter experience or the political meaning of every vote.'
+  },
+  {
+    id: 'argentinaFeldFrancoDemocraciaHoraCero2015',
+    label: 'Claudia Feld and Marina Franco (eds.) — Democracia, hora cero: Actores, políticas y debates en los inicios de la posdictadura (2015)',
+    url: 'https://fce.com.ar/tienda/politica/democracia-hora-cero/',
+    note: 'Fondo de Cultura Económica Argentina publisher record consulted for the Spanish-language edited volume (2015; ISBN 9789877190687; 411 pages). No chapter wording, quotation, scan or protected material is republished; the contributors’ plural interpretations of 1983–1984 are attributed and period-bounded.',
+    accessDate: '2026-09-21', creators: ['Claudia Feld', 'Marina Franco'], institution: 'Fondo de Cultura Económica de Argentina', publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length scholarly edited volume on democratic transition, memory and justice', identifiers: { isbn: '9789877190687', pages: '411' },
+    description: 'Edited volume on actors, practices and debates from Alfonsín’s inauguration through the publication of Nunca Más. It supplies a Spanish-language social, legal, media, church and human-rights perspective on the uncertainty of early post-dictatorship politics rather than a complete national history.'
+  },
+  {
+    id: 'argentinaAdair1983Project2023',
+    label: 'Jennifer Adair — 1983: Un proyecto inconcluso (2023)',
+    url: 'https://fce.com.ar/tienda/historia/1983/',
+    note: 'Fondo de Cultura Económica Argentina publisher record consulted for the Spanish-language monograph (2023; ISBN 9789877194258; 328 pages). No book wording, letter, quotation, scan or protected material is republished; Adair’s social-history interpretation is attributed and bounded to the post-dictatorship period and her archive of citizen letters.',
+    accessDate: '2026-09-21', creators: ['Jennifer Adair'], institution: 'Fondo de Cultura Económica de Argentina', publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length social and political history of the democratic restoration', identifiers: { isbn: '9789877194258', pages: '328' },
+    description: 'Book-length social history of the 1983 democratic restoration, using citizens’ letters and food-access conflicts to examine expectations, social rights and the unfinished Alfonsín project. It adds a bottom-up lens but does not establish one uniform popular experience or explain the entire post-1983 order.'
+  },
+  {
+    id: 'argentinaPucciarelliCastellaniKirchnerismo2017',
+    label: 'Alfredo Pucciarelli and Ana Castellani (eds.) — Los años del kirchnerismo: La disputa hegemónica tras la crisis del orden neoliberal (2017)',
+    url: 'https://sigloxxieditores.com.ar/libro/los-anos-del-kirchnerismo/',
+    note: 'Siglo XXI Editores Argentina publisher record consulted for the Spanish-language edited volume (2017; ISBN 978-987-629-765-3; 416 pages). No chapter wording, quotation, scan or protected material is republished; the volume’s sociological interpretation is attributed to its contributors and bounded to the post-2001 and Kirchnerist sequence.',
+    accessDate: '2026-09-21', creators: ['Alfredo Pucciarelli', 'Ana Castellani'], institution: 'Siglo XXI Editores Argentina', publicationDate: '2017', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length scholarly edited volume on Kirchnerism and post-neoliberal political economy', identifiers: { isbn: '9789876297653', pages: '416' },
+    description: 'Edited sociological study of the post-2001 crisis and Kirchnerism as a heterogeneous struggle over authority, elites, international credit, public policy, rights and competing projects of the state. It preserves internal tension rather than treating Kirchnerism as a homogeneous doctrine or Argentina-wide consensus.'
+  },
+  {
+    id: 'argentinaKulfasTresKirchnerismos2019',
+    label: 'Matías Kulfas — Los tres kirchnerismos: Una historia de la economía argentina 2003–2015 (2019)',
+    url: 'https://sigloxxieditores.com.ar/libro/los-tres-kirchnerismos/',
+    note: 'Siglo XXI Editores Argentina publisher record consulted for the Spanish-language monograph (2019; ISBN 978-987-629-973-2; 240 pages). No book wording, data table, quotation, scan or protected material is republished; Kulfas’s political-economy account is attributed and distinguished from the edited volume and from a complete national economic history.',
+    accessDate: '2026-09-21', creators: ['Matías Kulfas'], institution: 'Siglo XXI Editores Argentina', publicationDate: '2019', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length political-economy history', identifiers: { isbn: '9789876299732', pages: '240' },
+    description: 'Book-length history of Argentina’s 2003–2015 economic cycle, including state intervention, debt restructuring, industrial and trade policy, fiscal expansion, social inclusion, inflation and productive-structure dilemmas. It supplies an economic lens and not a complete account of provincial, social, constitutional or post-2015 politics.'
+  },
+  {
+    id: 'argentinaMainwaringSimisonDemocracyHardPlaces2022',
+    label: 'Scott Mainwaring and Emilia Simison — Economic Crises, Military Rebellions, and Democratic Survival: Argentina, 1983–2021 (2022)',
+    url: 'https://doi.org/10.1093/oso/9780197598757.003.0007',
+    note: 'Oxford University Press chapter record consulted in Democracy in Hard Places (2022; DOI 10.1093/oso/9780197598757.003.0007; pages 188–227). No chapter wording, figure, quotation or scan is republished; the comparative-democracy argument is attributed and bounded to post-1983 democratic survival.',
+    accessDate: '2026-09-21', creators: ['Scott Mainwaring', 'Emilia Simison'], institution: 'Oxford University Press', publicationDate: '2022-07-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'academic book chapter in comparative-democracy volume', identifiers: { doi: '10.1093/oso/9780197598757.003.0007', book: 'Democracy in Hard Places', pages: '188–227' },
+    description: 'Comparative political-science chapter explaining democratic survival after 1983 through changed actor commitments, policy moderation, memory of dictatorship, civilian control and rejection of military rebellions despite severe economic crises. It is a distinct comparative interpretation, not a complete social or institutional history.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -6211,6 +6286,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
           : source.id.startsWith('southKorea') ? 'South Korean constitutional, democratization and political history'
           : source.id.startsWith('lebanon') ? 'Lebanese postwar, constitutional, sectarian and political history'
           : source.id.startsWith('colombia') ? 'Colombian constitutional, conflict, peace-process and political history'
+          : source.id.startsWith('argentina') ? 'Argentine constitutional, democratic-transition and political history'
           : source.id.startsWith('chile') ? 'Chilean post-authoritarian constitutional, political-economy and constituent history'
           : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
         : source.id.startsWith('wyattThailand') || source.id.startsWith('bakerPhongpaichit') || source.id.startsWith('batsonEndAbsolute') || source.id.startsWith('ferraraPoliticalDevelopment') || source.id.startsWith('chachavalpongpunCoupKing') || source.id.startsWith('thailand') || source.id.startsWith('siam') || source.id.startsWith('sugiyama') || source.id.startsWith('fuwongcharoen') ? 'Thai constitutional revolution and political history'
