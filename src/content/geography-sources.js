@@ -5120,6 +5120,105 @@ const sources = [
     sourceType: 'book-length constitutional history', identifiers: { isbn: '9789829003188', pages: '349' },
     description: 'Book-length study of Samoa’s constitutional conventions, self-government and independence settlement, including the relationship between elected institutions, customary authority and citizenship. It supplies constitutional detail while remaining a historical interpretation rather than proof of later practice.',
   },
+  {
+    id: 'vanuatuConstitution1980Gov',
+    label: 'Government of Vanuatu — Constitution of the Republic of Vanuatu (1980, consolidated editions)',
+    url: 'https://www.gov.vu/index.php/about/constitution-of-vanuatu',
+    note: 'Official Government of Vanuatu page consulted for linked English and French constitutional editions. The Constitution is used as a primary record of formal state design, language policy, rights, customary institutions, land, parliament, executive and courts; no constitutional wording is republished and the text does not by itself prove implementation or consent.',
+    accessDate: '2026-09-21', creators: ['Republic of Vanuatu'], institution: 'Government of Vanuatu', publicationDate: '1980', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French', 'Bislama'],
+    sourceType: 'official multilingual constitutional text and government portal', identifiers: {},
+    description: 'Primary constitutional record for the Republic of Vanuatu from independence, with official language links and consolidated amendments. It anchors sovereignty, universal franchise, political parties, rights, the Malvatumauri National Council of Chiefs, executive, judiciary, customary law, land and decentralization as formal design rather than a full history of practice.',
+  },
+  {
+    id: 'vanuatuParliamentaryHandbook',
+    label: 'Parliament of Vanuatu — Parliamentary Handbook and constitutional history',
+    url: 'https://parliament.gov.vu/images/Vanuatu_Parliamentary_Handbook.pdf',
+    note: 'Official parliamentary handbook consulted for the late condominium transition, 1975 representative institutions, the 1979 constitutional settlement, independence in 1980 and the Parliament’s formal Westminster-style design. It is an institutional account, not an independent history of political conflict or social representation.',
+    accessDate: '2026-09-21', creators: ['Parliament of the Republic of Vanuatu'], institution: 'Parliament of Vanuatu', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary handbook and institutional history', identifiers: {},
+    description: 'Primary institutional handbook documenting the parliamentary and constitutional transition from the Anglo-French condominium to the Republic of Vanuatu. Its official framing is paired with independent book-length scholarship and does not prove uniform implementation or popular agreement.',
+  },
+  {
+    id: 'vanuatuElectoralOfficeFramework',
+    label: 'Vanuatu Electoral Office — Electoral systems and legal framework',
+    url: 'https://electoral.gov.vu/about/electoral-systems-and-legal-framework',
+    note: 'Official Vanuatu Electoral Office page consulted for direct and indirect elections, the 52-member Parliament, the mixed FPTP/SNTV system, the advisory Malvatumauri and the 2023 political-party registry. The page is used as a dated institutional record and not as evidence of fairness, participation or present political stability.',
+    accessDate: '2026-09-21', creators: ['Vanuatu Electoral Office'], institution: 'Electoral Commission and Electoral Office of Vanuatu', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral systems and legal-framework portal', identifiers: {},
+    description: 'Primary administrative account of Vanuatu’s electoral arrangements and legal framework, including parliamentary, provincial and municipal elections, indirect elections and the advisory role of the National Council of Chiefs. It records formal procedure without replacing election-specific reports or independent analysis.',
+  },
+  {
+    id: 'vanuatu2020ElectionReport',
+    label: 'Vanuatu Electoral Office — General Election Report 2020',
+    url: 'https://electoral.gov.vu/images/PDFs/General_Election_Report_2020.pdf',
+    note: 'Official 2020 general-election report consulted for electoral administration, constituencies, candidates, results and the parliamentary endpoint of this case. It is a primary election record, not an independent audit of political equality, social inclusion or public legitimacy.',
+    accessDate: '2026-09-21', creators: ['Vanuatu Electoral Commission', 'Vanuatu Electoral Office'], institution: 'Electoral Commission and Electoral Office of Vanuatu', publicationDate: '2020', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official general-election report', identifiers: {},
+    description: 'Primary report on Vanuatu’s 2020 national general election, including preparations, polling, counting, candidate and constituency records, results and post-election formalities. It anchors a dated electoral outcome while leaving political interpretation and community experience open.',
+  },
+  {
+    id: 'vanuatu2022SnapElection',
+    label: 'Vanuatu Electoral Office — 2022 snap parliamentary election',
+    url: 'https://electoral.gov.vu/elections/2022-elections/2022-snap-parliamentary-election',
+    note: 'Official Electoral Office portal consulted for the 2022 snap election, the President’s dissolution of Parliament, the 13 October poll and publication of results on 23 October. The portal documents formal electoral events and does not establish representativeness, fairness or later government performance.',
+    accessDate: '2026-09-21', creators: ['Vanuatu Electoral Commission', 'Vanuatu Electoral Office'], institution: 'Electoral Commission and Electoral Office of Vanuatu', publicationDate: '2022-10-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official snap-election portal and results record', identifiers: { electionDate: '2022-10-13' },
+    description: 'Primary institutional record of Vanuatu’s 2022 snap parliamentary election, including the constitutional dissolution context and official results publication. It extends the case beyond 2020 without making a claim about post-election political outcomes.',
+  },
+  {
+    id: 'vanuatu2024Referendum',
+    label: 'Vanuatu Electoral Office — 2024 national referendum on constitutional amendments',
+    url: 'https://electoral.gov.vu/elections/2024-elections/2024-national-referendum',
+    note: 'Official Electoral Office notice consulted for the 2023 constitutional amendments concerning party switching and parliamentary stability and the 29 May 2024 referendum process. The record is used to document a constitutional-reform horizon, not to infer referendum consent or later implementation beyond the documented event.',
+    accessDate: '2026-09-21', creators: ['Vanuatu Electoral Commission', 'Vanuatu Electoral Office'], institution: 'Electoral Commission and Electoral Office of Vanuatu', publicationDate: '2024-05-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional-referendum record', identifiers: { referendumDate: '2024-05-29' },
+    description: 'Primary electoral record for Vanuatu’s first national referendum, held to determine whether constitutional provisions on party allegiance and parliamentary seats would take effect. It anchors a reform debate and dated vote without asserting the result’s political meaning beyond the official record.',
+  },
+  {
+    id: 'vanTreasePoliticsLandVanuatu1987',
+    label: 'Howard Van Trease — The Politics of Land in Vanuatu: From Colony to Independence (1987)',
+    url: 'https://books.google.com/books/about/The_Politics_of_Land_in_Vanuatu.html?id=3P6dJ5Et6eUC',
+    note: 'Library-style bibliographic record consulted for Van Trease’s book-length history of land, colonial law, customary ownership and independence politics. It is used for attributed historical analysis; no copyrighted prose is republished and land claims are not generalized to every island or community.',
+    accessDate: '2026-09-21', creators: ['Howard Van Trease'], institution: 'Institute of Pacific Studies, University of the South Pacific', publicationDate: '1987', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Vanuatuan land and political history', identifiers: { isbn: '9789820200043', pages: '313' },
+    description: 'Book-length study of land politics from colonial administration through independence, including alienated land, customary ownership, legal institutions and nationalist conflict. It provides a land-centred historical perspective that is essential for interpreting Vanuatu’s constitutional and economic order, while remaining bounded to its period and evidence.',
+  },
+  {
+    id: 'premdasSteevesPoliticsVanuatu1989',
+    label: 'Ralph R. Premdas and Jeffrey S. Steeves — Politics and Government in Vanuatu: From Colonial Unity to Post-colonial Disunity (1989)',
+    url: 'https://books.google.com/books/about/Politics_and_Government_in_Vanuatu.html?id=cnDjAAAAMAAJ',
+    note: 'Library-style bibliographic record consulted for Premdas and Steeves’ book-length political history of colonial unity, independence, parties, elections and postcolonial fragmentation. The study is used as an attributed external political-science perspective, not as the sole account of Vanuatu or a measure of present conditions.',
+    accessDate: '2026-09-21', creators: ['Ralph R. Premdas', 'Jeffrey S. Steeves'], institution: 'University of Saskatchewan / Queensland Centre for Southeast Asian Studies', publicationDate: '1989', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political and governmental history', identifiers: { isbn: '9780864433299', pages: '181' },
+    description: 'Book-length account of Vanuatu’s colonial and early postcolonial government, including independence, electoral politics, party competition, regional and linguistic divisions, and constitutional dilemmas. It supplies an independent political-science narrative complementary to Van Trease’s land-centred study.',
+  },
+  {
+    id: 'vanTreaseMelanesianPoliticsVanuatu1995',
+    label: 'Howard Van Trease (ed.) — Melanesian Politics: Stael Blong Vanuatu (1995)',
+    url: 'https://books.google.com/books/about/Melanesian_Politics.html?id=09Si7DQsVSoC',
+    note: 'Library-style bibliographic record consulted for the edited volume’s multi-author treatment of Vanuatu’s history, 1991 election, politicians, constituencies, political issues and regional identities. Contributors’ perspectives are kept distinct; no chapter prose is republished and the volume is not presented as a single consensus.',
+    accessDate: '2026-09-21', creators: ['Howard Van Trease'], institution: 'Institute of Pacific Studies, University of the South Pacific', publicationDate: '1995', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on Vanuatuan politics', identifiers: { pages: '499' },
+    description: 'Edited book bringing together historical, electoral, regional, party and first-person perspectives on Vanuatu’s political life. It makes local and island-level differences visible and complements national constitutional and governmental accounts without collapsing them into one ideological label.',
+  },
+  {
+    id: 'woodwardNewHebridesMemoir2014',
+    label: 'Keith Woodward — A Political Memoir of the Anglo-French Condominium of the New Hebrides (2014)',
+    url: 'https://press.anu.edu.au/publications/political-memoir-anglo-french-condominium-new-hebrides',
+    note: 'ANU Press open-access monograph record consulted for Woodward’s first-person account of late colonial administration and decolonization in the New Hebrides. It is a situated memoir by a former British official, paired with independent scholarship and constitutional sources; no memoir prose is republished.',
+    accessDate: '2026-09-21', creators: ['Keith Woodward'], institution: 'ANU Press', publicationDate: '2014-10', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access political memoir and decolonization history', identifiers: { isbn: '9781925021981', ebookIsbn: '9781925022209', doi: '10.22459/PMAFCNH.10.2014' },
+    description: 'First-person book-length account of the Anglo-French condominium, constitutional advancement and the decolonization process preceding Vanuatu’s independence. Its insider perspective illuminates colonial administration and bilateral relations but cannot stand for ni-Vanuatu political experience as a whole.',
+  },
+  {
+    id: 'brownCustomaryLawMelanesia2005',
+    label: 'Kenneth Brown — Reconciling Customary Law and Received Law in Melanesia: The Post-independence Experience in Solomon Islands and Vanuatu (2005)',
+    url: 'https://www.sclqld.org.au/catalogue/records/63548',
+    note: 'Supreme Court Library Queensland catalogue record consulted for Brown’s comparative book on customary and received law in Solomon Islands and Vanuatu. The source is used for attributed legal analysis of constitutional provisions and family-law examples; it does not provide a complete national history or prove uniform customary practice.',
+    accessDate: '2026-09-21', creators: ['Kenneth Brown'], institution: 'Charles Darwin University Press', publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'comparative book-length customary and constitutional-law study', identifiers: { isbn: '097576148X', pages: '248' },
+    description: 'Comparative book-length legal study of the interaction between introduced law, constitutional provisions and customary law in Vanuatu and Solomon Islands, including family law, custody and succession. It adds a legal-institutional perspective to political history while preserving the limits of comparative scope.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -5174,7 +5273,8 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') || source.id.startsWith('ethiopiaAu') || source.id.startsWith('ethiopiaJusticeTransitional') || source.id.startsWith('plautVaughanTigrayWar') || source.id.startsWith('erlichGreaterTigray') ? 'Ethiopian revolutionary, federal, conflict and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('campbellTongasWayDemocracy') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') || source.id.startsWith('tupouTongaReform') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('fiji') || source.id.startsWith('lalBrokenWavesFiji') || source.id.startsWith('lawsonFailureDemocraticPoliticsFiji') || source.id.startsWith('lalAnotherWayFiji') || source.id.startsWith('fraenkelFirthLalMilitaryTakeoverFiji') ? 'Fijian constitutional, coup and political history'
-        : source.id.startsWith('samoa') || source.id.startsWith('meleiseaMakingModernSamoa') || source.id.startsWith('lawsonTraditionDemocracySamoa') || source.id.startsWith('meleiseaSamoasJourney') || source.id.startsWith('swainFonoSamoa') || source.id.startsWith('metiSamoa') ? 'Samoan constitutional, customary and political history'
+      : source.id.startsWith('samoa') || source.id.startsWith('meleiseaMakingModernSamoa') || source.id.startsWith('lawsonTraditionDemocracySamoa') || source.id.startsWith('meleiseaSamoasJourney') || source.id.startsWith('swainFonoSamoa') || source.id.startsWith('metiSamoa') ? 'Samoan constitutional, customary and political history'
+      : source.id.startsWith('vanuatu') || source.id.startsWith('vanTrease') || source.id.startsWith('premdasSteeves') || source.id.startsWith('woodwardNewHebrides') || source.id.startsWith('brownCustomaryLawMelanesia') ? 'Vanuatuan constitutional, customary and decolonization history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : 'Middle Eastern political history and geography',
