@@ -6698,6 +6698,87 @@ const sources = [
     sourceType: 'Spanish-language book-length political history of Chavismo', identifiers: { isbn: '9788417014254', alternateIsbn: '9789803544157', pages: '394' },
     description: 'Spanish-language book-length analysis of the political and social processes of 2005–2015, including the rentier crisis, changing elites and political project, and the crisis of Venezuelan society. It adds a Venezuelan scholarly perspective and does not establish a complete local, minority, gendered or post-2015 history.'
   },
+  {
+    id: 'guyanaConstitution1980Parliament',
+    label: 'Guyana — Constitution of the Co-operative Republic of Guyana Act 1980, Parliament record',
+    url: 'https://www.parliament.gov.gy/constitution.pdf',
+    note: 'Official Parliament of Guyana constitutional PDF consulted as a primary legal record and link only. No constitutional wording, translation, scan or page is republished; formal presidential, parliamentary, rights and local-government design is distinguished from implementation, electoral fairness and later amendments.',
+    accessDate: '2026-09-21', creators: ['Parliament of Guyana'], institution: 'Parliament of Guyana', publicationDate: '1980-02-20', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1980', adoptionDate: '1980-02-20' },
+    description: 'Primary constitutional witness to the Co-operative Republic’s formal order: executive presidency, Parliament, fundamental rights, courts, electoral arrangements and local democratic organs. It records constitutional design rather than uniform practice or public consent.'
+  },
+  {
+    id: 'guyanaCarter2020Election',
+    label: 'The Carter Center — Final Report: 2020 General and Regional Elections in Guyana',
+    url: 'https://www.cartercenter.org/publication/final-report-2020-general-and-regional-elections-in-guyana/',
+    note: 'Carter Center final election-observation report published 16 June 2022, consulted as an attributed institutional record and link only. The report’s findings on election-day procedures, Region 4 tabulation, the national recount and observer access are not treated as proof of every voter’s experience, fraud causation, public consent or a complete electoral history.',
+    accessDate: '2026-09-21', creators: ['The Carter Center'], institution: 'The Carter Center', publicationDate: '2022-06-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final report', identifiers: { electionYear: '2020' },
+    description: 'Institutional observation record for the 2020 general and regional elections, including the breakdown in Region 4 tabulation, the 33-day recount and the report’s attributed assessment of the electoral process. It supplies a dated endpoint and not a national ideological characterization.'
+  },
+  {
+    id: 'guyanaCarterCaricomRecount2020',
+    label: 'The Carter Center — Carter Center Welcomes CARICOM Report on Credible Recount Process (16 June 2020)',
+    url: 'https://www.cartercenter.org/news/pr/2020/guyana-061620.html',
+    note: 'Carter Center institutional statement consulted as a contemporaneous record and link only. It reports CARICOM’s attributed conclusion that the recount results provided a basis for declaration while preserving the earlier concerns about Region 4 tabulation; no statement or recount wording is republished.',
+    accessDate: '2026-09-21', creators: ['The Carter Center'], institution: 'The Carter Center', publicationDate: '2020-06-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional election-observation statement', identifiers: { electionDate: '2020-03-02', recountCompletionDate: '2020-06-07' },
+    description: 'Contemporaneous institutional record of the CARICOM-supervised national recount and its place in the 2020 electoral resolution. It is used to distinguish recount acceptance from broader claims about the quality, legitimacy or social meaning of the election.'
+  },
+  {
+    id: 'guyanaSinghPlantationPolitics1988',
+    label: 'Chaitram Singh — Guyana: Politics in a Plantation Society (1988)',
+    url: 'https://www.bloomsbury.com/us/guyana-9780275929893/',
+    note: 'Praeger/Bloomsbury publisher record consulted for the 1988 monograph (ISBN 9780275929893; 178 pages). The book’s historical and political argument is used as attributed scholarship; the complete book and its cited archival apparatus were not independently collated, and no wording is republished.',
+    accessDate: '2026-09-21', creators: ['Chaitram Singh'], institution: 'Praeger / Bloomsbury Publishing', publicationDate: '1988-07-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly study of Guyanese politics and government', identifiers: { isbn: '9780275929893', pages: '178', series: 'Politics in Latin America' },
+    description: 'Book-length political study tracing Guyana’s path from late-colonial constitutional politics through independence, cooperative socialism, centralized decision-making and authoritarian tendencies. It supplies an institutional and political-economy lens rather than a complete social, local or post-1992 history.'
+  },
+  {
+    id: 'guyanaWilliamsCulturalStruggle1991',
+    label: 'Brackette F. Williams — Stains on My Name, War in My Veins: Guyana and the Politics of Cultural Struggle (1991)',
+    url: 'https://www.dukeupress.edu/stains-on-my-name-war-in-my-veins',
+    note: 'Duke University Press record consulted for the 1991 ethnographic monograph (paper ISBN 9780822311195; hardcover ISBN 9780822311140; eISBN 9780822381662; 342 pages). The publisher describes oral histories and rural Guyanese fieldwork; the full book and cited field archive were not independently collated, and no ethnographic wording is republished.',
+    accessDate: '2026-09-21', creators: ['Brackette F. Williams'], institution: 'Duke University Press', publicationDate: '1991-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length ethnography of identity, class, religion and nation building', identifiers: { isbn: '9780822311195', hardcoverIsbn: '9780822311140', ebookIsbn: '9780822381662', pages: '342', doi: '10.1215/9780822381662' },
+    description: 'Book-length ethnography of rural Guyanese struggles over nationhood, ethnic identity, religious belonging and class. It provides a ground-level counterpoint to institutional histories and does not stand for every locality or community.'
+  },
+  {
+    id: 'guyanaBulkanTrotzUnmasking2019',
+    label: 'Arif Bulkan and D. Alissa Trotz (eds.) — Unmasking the State: Politics, Society and Economy in Guyana 1992–2015 (2019)',
+    url: 'https://ianrandlepublishers.com/product/unmasking-the-state-politics-society-and-economy-in-guyana-1992-2015/',
+    note: 'Ian Randle Publishers record consulted for the 2019 edited volume (ISBN 9789766379810; 594 pages). Its multidisciplinary chapter range is used as a plural post-1992 perspective; the complete volume, individual chapters and underlying evidence were not independently collated, and no chapter wording is republished.',
+    accessDate: '2026-09-21', creators: ['Arif Bulkan', 'D. Alissa Trotz'], institution: 'Ian Randle Publishers', publicationDate: '2019-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on Guyanese politics, society and political economy', identifiers: { isbn: '9789766379810', pages: '594' },
+    description: 'Edited volume examining post-1992 governance, constitutional architecture, local government, public finance, race, gender, labor, Indigenous and environmental questions, and neoliberal insecurity. It adds diverse post-1992 perspectives without claiming a uniform Guyanese experience or complete post-2015 evidence.'
+  },
+  {
+    id: 'guyanaLewisForbesBurnham2024',
+    label: 'Linden F. Lewis — Forbes Burnham: The Life and Times of the Comrade Leader (2024)',
+    url: 'https://www.ubcpress.ca/forbes-burnham',
+    note: 'UBC Press/Rutgers University Press record consulted for the 2024 political biography (ISBN 9781978837515; 238 pages). The publisher describes archival research and interviews; the complete book and interview archive were not independently collated, and no biographical wording is republished.',
+    accessDate: '2026-09-21', creators: ['Linden F. Lewis'], institution: 'Rutgers University Press / UBC Press', publicationDate: '2024-01-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political biography and postcolonial Guyanese history', identifiers: { isbn: '9781978837515', pages: '238' },
+    description: 'Book-length study of Forbes Burnham’s leadership, the PNC, postcolonial state formation, nationalist, socialist and Pan-Africanist projects, ethnic polarization and executive power. It supplies a leader-centered archival and interview perspective, not a full account of all political actors or communities.'
+  },
+  {
+    id: 'guyanaHindsEthnoPolitics2010',
+    label: 'David Hinds — Ethno-Politics and Power Sharing in Guyana: History and Discourse (2010)',
+    url: 'https://www.newacademia.com/books/ethno-politics-and-power-sharing-in-guyana-history-and-discourse/',
+    note: 'New Academia Publishing record consulted for the 2010 monograph (ISBN 9780982806104; 224 pages). The author’s historical and power-sharing argument is used as attributed scholarship; bibliographic records report a 2011 edition with 210 pages, so the edition distinction is retained, and no book wording is republished.',
+    accessDate: '2026-09-21', creators: ['David Hinds'], institution: 'New Academia Publishing', publicationDate: '2010', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length study of ethnicity, power sharing and Guyanese political discourse', identifiers: { isbn: '9780982806104', pages: '224', editionNote: 'publisher record; 2011 library edition reports 210 pages' },
+    description: 'Book-length analysis of ethnic competition, power sharing and the search for governing arrangements in Guyana, extending the debate into the period of formal electoral democratization. It is an explicitly situated argument about multiethnic governance rather than a neutral score for all Guyanese.'
+  },
+  {
+    id: 'guyanaJaganWestOnTrial1966',
+    label: 'Cheddi Jagan — The West on Trial: The Fight for Guyana’s Freedom (1966; revised edition 1972)',
+    url: 'https://books.google.com/books/about/The_West_on_Trial.html?id=Z-FrAAAAMAAJ',
+    note: 'Google Books and library records consulted for Jagan’s primary political autobiography and anti-colonial history, originally published in 1966 and represented here through the 1972 revised International Publishers edition (ISBN 9780717803576; 435 pages). It is primary evidence of Jagan’s interpretation, not an uncontested national history; no wording is republished.',
+    accessDate: '2026-09-21', creators: ['Cheddi Jagan'], institution: 'International Publishers', publicationDate: '1966 (rev. 1972)', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary political autobiography and anti-colonial history', identifiers: { isbn: '9780717803576', pages: '435', originalPublicationYear: '1966' },
+    description: 'Primary account of British Guiana’s colonial political economy, elections, anti-colonial struggle and Jagan’s political interpretation through 1966. It anchors self-description and memory while requiring triangulation with the institutional, ethnographic and historical scholarship.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
