@@ -6266,6 +6266,87 @@ const sources = [
     sourceType: 'academic book chapter in comparative-democracy volume', identifiers: { doi: '10.1093/oso/9780197598757.003.0007', book: 'Democracy in Hard Places', pages: '188–227' },
     description: 'Comparative political-science chapter explaining democratic survival after 1983 through changed actor commitments, policy moderation, memory of dictatorship, civilian control and rejection of military rebellions despite severe economic crises. It is a distinct comparative interpretation, not a complete social or institutional history.'
   },
+  {
+    id: 'uruguayConstitution1967Impo',
+    label: 'Uruguay — Constitution of the Republic (1967, updated official text)',
+    url: 'https://www.impo.com.uy/bases/constitucion/1967-1967',
+    note: 'IMPO / Centro de Información Oficial record consulted for the Constitution’s official text and link only. No constitutional wording, translation, scan or page is republished; formal republican, rights and secular design are distinguished from implementation, legitimacy, departmental experience and later political practice.',
+    accessDate: '2026-09-21', creators: ['República Oriental del Uruguay'], institution: 'IMPO / Centro de Información Oficial', publicationDate: '1967-02-02', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1967' },
+    description: 'Primary constitutional witness to Uruguay’s sovereign republican institutions, rights and formally secular public order. It establishes legal design, not uniform political practice, public consent or national ideological character.'
+  },
+  {
+    id: 'uruguay1980PlebisciteDecree',
+    label: 'Uruguay — Decreto Constitucional N° 10/980, constitutional plebiscite record',
+    url: 'https://www.impo.com.uy/bases/decreto-constitucional/10-1980',
+    note: 'IMPO record consulted for Decreto Constitucional N° 10/980 and its proposed constitutional plebiscite. No decree wording or scan is republished; the legal proposal is distinguished from the exceptional conditions of the vote, later democratic practice and public consent.',
+    accessDate: '2026-09-21', creators: ['Gobierno cívico-militar del Uruguay'], institution: 'IMPO / Centro de Información Oficial', publicationDate: '1980-11-30', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional decree / official legal record', identifiers: { decree: 'Decreto Constitucional N° 10/980', referendumDate: '1980-11-30' },
+    description: 'Primary legal record of the civic-military regime’s proposed constitutional settlement. It documents an official constitutional instrument, not democratic legitimacy, uniform political support or the later negotiated transition.'
+  },
+  {
+    id: 'uruguayCorteElectoral1980',
+    label: 'Corte Electoral of Uruguay — 1980 constitutional plebiscite historical record',
+    url: 'https://www.gub.uy/corte-electoral/comunicacion/publicaciones/plebiscito-constitucional-1980',
+    note: 'Corte Electoral historical record consulted for the 30 November 1980 plebiscite, official result and exceptional political conditions. No result table or institutional wording is republished; the official account is distinguished from a complete history of repression, opposition, voter motivation or public consent.',
+    accessDate: '2026-09-21', creators: ['Corte Electoral de la República Oriental del Uruguay'], institution: 'Corte Electoral de la República Oriental del Uruguay', publicationDate: '2024-06-17', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official referendum result and institutional history', identifiers: { referendum: 'Uruguay constitutional plebiscite 1980', date: '1980-11-30', noVotes: '945176', yesVotes: '707118' },
+    description: 'Official electoral and institutional history of the 1980 constitutional plebiscite, including the recorded result and the exceptional conditions under which it occurred. It anchors a dated episode without proving uniform public reasoning or the whole transition history.'
+  },
+  {
+    id: 'uruguayCorteElectoral2019',
+    label: 'Corte Electoral of Uruguay — national elections, constitutional-security plebiscite and ballotage results (2019)',
+    url: 'https://www.gub.uy/corte-electoral/tematica/elecciones-nacionales-2019',
+    note: 'Corte Electoral thematic portal consulted for the 2019 national election, constitutional-security plebiscite and second-round records. No result table, ballot, candidate wording or PDF page is republished; the institutional record is distinguished from independent observation, voter motivation, equal conditions and a general finding of democratic legitimacy.',
+    accessDate: '2026-09-21', creators: ['Corte Electoral de la República Oriental del Uruguay'], institution: 'Corte Electoral de la República Oriental del Uruguay', publicationDate: '2019-11-24', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election results / constitutional plebiscite record', identifiers: { nationalElectionDate: '2019-10-27', runoffDate: '2019-11-24', plebiscite: 'constitutional-security plebiscite 2019' },
+    description: 'Institutional witness to Uruguay’s 2019 national election sequence, constitutional-security plebiscite and ballotage. It bounds the electoral endpoint without proving equal participation, electoral quality, voter experience or the political meaning of every vote.'
+  },
+  {
+    id: 'uruguayGillespieNegotiatingDemocracy1991',
+    label: 'Charles Guy Gillespie — Negotiating Democracy: Politicians and Generals in Uruguay (1991)',
+    url: 'https://pmb.parlamento.gub.uy/pmb/opac_css/index.php?id=14659&lvl=notice_display',
+    note: 'Biblioteca del Poder Legislativo catalogue record consulted for the Cambridge Latin American Studies monograph (1991; ISBN 9780521401524). No book wording, quotation, table or scan is republished; Gillespie’s account of politicians, generals and the transition is attributed and bounded to its period and method.',
+    accessDate: '2026-09-21', creators: ['Charles Guy Gillespie'], institution: 'Cambridge University Press', publicationDate: '1991', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph on military-civilian transition', identifiers: { isbn: '9780521401524', series: 'Cambridge Latin American Studies; 72', pages: '264' },
+    description: 'Book-length study of Uruguay’s military government, the Club Naval Pact, politicians, generals, parties and the return to civilian government. It supplies a transition and elite-bargaining perspective, not a complete social, economic or post-2004 history.'
+  },
+  {
+    id: 'uruguayBritoHumanRightsDemocratization1997',
+    label: 'Alexandra Barahona de Brito — Human Rights and Democratization in Latin America: Uruguay and Chile (1997)',
+    url: 'https://academic.oup.com/book/27235',
+    note: 'Oxford University Press record consulted for the comparative monograph (1997; DOI 10.1093/0198280386.001.0001). No book wording, quotation, table or scan is republished; Barahona de Brito’s transitional-justice interpretation is attributed and distinguished from a complete Uruguay-wide history or current assessment.',
+    accessDate: '2026-09-21', creators: ['Alexandra Barahona de Brito'], institution: 'Oxford University Press', publicationDate: '1997', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative transitional-justice and democratization study', identifiers: { doi: '10.1093/0198280386.001.0001' },
+    description: 'Comparative book-length study of human-rights legacies, democratization, truth, justice, amnesty and institutional reform in Uruguay and Chile. It supplies a distinct transitional-justice lens rather than a complete party-system, economic or local history.'
+  },
+  {
+    id: 'uruguayCaetanoRillaContemporaryHistory2005',
+    label: 'Gerardo Caetano and José Rilla — Historia contemporánea del Uruguay: de la colonia al siglo XXI (2nd ed., 2005)',
+    url: 'https://pmb.parlamento.gub.uy/pmb/opac_css/index.php?id=47697&lvl=notice_display',
+    note: 'Biblioteca del Poder Legislativo catalogue record consulted for the Spanish-language national history (2nd ed., 2005; ISBN 9974493293; 631 pages). No book wording, quotation, table or scan is republished; the broad synthesis is attributed and its endpoint is distinguished from later political developments and from every local or social experience.',
+    accessDate: '2026-09-21', creators: ['Gerardo Caetano', 'José Rilla'], institution: 'CLAEH / Ediciones de la Banda Oriental / Fin de Siglo', publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length national political and social history', identifiers: { isbn: '9974493293', pages: '631', edition: '2nd' },
+    description: 'Spanish-language national history from the colonial period through the early twenty-first century, including the 1973–1984 dictatorship and the 1985–2004 restoration, reform and crisis sequence. It supplies broad historical context rather than a complete post-2004 or local-regional account.'
+  },
+  {
+    id: 'uruguayMoreiraFinalDeJuego2004',
+    label: 'Constanza Moreira — Final de juego: del bipartidismo tradicional al triunfo de la izquierda en Uruguay (2004)',
+    url: 'https://books.google.com/books/about/Final_de_juego.html?id=O686-9GVl9QC',
+    note: 'Google Books / Ediciones Trilce record consulted for the Spanish-language monograph (2004; ISBN 9789974323704; 167 pages). No book wording, quotation, table or scan is republished; Moreira’s party-system interpretation is attributed and bounded to the transition from traditional bipartism through the Frente Amplio’s 2004 victory.',
+    accessDate: '2026-09-21', creators: ['Constanza Moreira'], institution: 'Ediciones Trilce', publicationDate: '2004', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length party-system and electoral history', identifiers: { isbn: '9789974323704', pages: '167' },
+    description: 'Spanish-language analysis of the decline of traditional two-party predominance, the Frente Amplio’s electoral rise and the political and social changes surrounding the 2004 election. It supplies a focused party-system lens, not a complete national history or uniform voter account.'
+  },
+  {
+    id: 'uruguayLunaSegmentedRepresentation2014',
+    label: 'Juan Pablo Luna — Segmented Representation: Political Party Strategies in Unequal Democracies (2014)',
+    url: 'https://academic.oup.com/book/4480',
+    note: 'Oxford University Press record consulted for the comparative monograph (2014; print ISBN 9780199642649; DOI 10.1093/acprof:oso/9780199642649.001.0001). No book wording, quotation, table or scan is republished; Luna’s comparison of Uruguay and Chile is attributed and not generalized to all party voters or all unequal democracies.',
+    accessDate: '2026-09-21', creators: ['Juan Pablo Luna'], institution: 'Oxford University Press', publicationDate: '2014-04-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative political-science study of party-voter linkages', identifiers: { isbn: '9780199642649', onlineIsbn: '9780191778643', doi: '10.1093/acprof:oso/9780199642649.001.0001' },
+    description: 'Comparative political-science study of party strategy and voter representation in unequal democracies, including the Frente Amplio and Uruguay alongside Chile’s UDI. It supplies a party-voter linkage perspective and does not establish a complete account of Uruguayan institutions, society or later politics.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -6286,6 +6367,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
           : source.id.startsWith('southKorea') ? 'South Korean constitutional, democratization and political history'
           : source.id.startsWith('lebanon') ? 'Lebanese postwar, constitutional, sectarian and political history'
           : source.id.startsWith('colombia') ? 'Colombian constitutional, conflict, peace-process and political history'
+          : source.id.startsWith('uruguay') ? 'Uruguayan constitutional, democratic-transition, party-system and political history'
           : source.id.startsWith('argentina') ? 'Argentine constitutional, democratic-transition and political history'
           : source.id.startsWith('chile') ? 'Chilean post-authoritarian constitutional, political-economy and constituent history'
           : source.id.startsWith('gluck') || source.id.startsWith('jansen') || source.id.startsWith('japan') || source.id.startsWith('takii') || source.id.startsWith('kokaze') || source.id.startsWith('youngJapan') || source.id.startsWith('dower') || source.id.startsWith('gordonModernJapan') || source.id.startsWith('curtisLogicJapanese') ? 'Japanese constitutional and political history'
