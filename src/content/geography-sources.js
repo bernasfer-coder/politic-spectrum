@@ -7131,6 +7131,60 @@ const sources = [
     description: 'French-language Haitian sociological essay published at the 1986–1987 rupture, linking the Duvalier legacy, state, nation, culture, migration, religion and the unfinished democratic project. It adds a materially different Haitian and Francophone perspective but predates later crises and is not a complete political history.'
   },
   {
+    id: 'canadaConstitutionActs1867to1982Official',
+    label: 'Canada — The Constitution Acts 1867 to 1982, Department of Justice consolidation',
+    url: 'https://laws-lois.justice.gc.ca/eng/const/',
+    note: 'Department of Justice Canada consolidation consulted as a primary constitutional record and link only. No constitutional wording, quotation, translation, scan or page is republished; formal design is distinguished from implementation, consent, lived experience and later constitutional practice.',
+    accessDate: '2026-09-21', creators: ['Department of Justice Canada'], institution: 'Government of Canada, Justice Laws Website', publicationDate: '1867–1982', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary constitutional acts / official legal consolidation', identifiers: { acts: '1867–1982', constitutionalText: 'Constitution Act 1867; Canada Act 1982; Constitution Act 1982' },
+    description: 'Official bilingual-accessible consolidation of the Constitution Act 1867 and Constitution Act 1982. It anchors federal and provincial institutions, distribution of legislative powers, the Charter, official-language provisions, Aboriginal and treaty rights and constitutional amendment procedures, while remaining evidence of legal design rather than proof of equal implementation or public agreement.'
+  },
+  {
+    id: 'canadaElections2025Official',
+    label: 'Elections Canada — Results of the 45th General Election, 28 April 2025',
+    url: 'https://www.elections.ca/res/cir/mapsCorner/ZZ/parlimap_45_e.pdf',
+    note: 'Elections Canada result poster consulted as a dated official federal-election record and link only. No map, result table, wording or PDF page is republished; the endpoint does not establish turnout quality, equal voice, voter experience, legitimacy or current government status beyond the dated election record.',
+    accessDate: '2026-09-21', creators: ['Elections Canada'], institution: 'Elections Canada', publicationDate: '2025-04-28', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official federal election result record', identifiers: { electionDate: '2025-04-28', electionNumber: '45', electionType: 'general election' },
+    description: 'Official Elections Canada map/poster documenting the 45th general election result on 28 April 2025. It supplies a dated electoral endpoint for the bounded case, not an exhaustive account of campaigns, administration, turnout, representation, Indigenous or local political experience.'
+  },
+  {
+    id: 'canadaConradConciseHistory2022',
+    label: 'Margaret Conrad — A Concise History of Canada, second edition (2022)',
+    url: 'https://www.cambridge.org/core/books/concise-history-of-canada/FE5B839F49D4FDDD5D60BC56ACD71090',
+    note: 'Cambridge University Press record consulted for the second edition (ISBN 9781108682367; 556 pages). No book wording, quotation, table, chapter or scan is republished; Conrad’s synthesis is attributed and not treated as every Canadian, Indigenous nation, province, region or community.',
+    accessDate: '2026-09-21', creators: ['Margaret Conrad'], institution: 'Cambridge University Press', publicationDate: '2022-08-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national social and political history', identifiers: { isbn: '9781108682367', hardbackIsbn: '9781108498463', paperbackIsbn: '9781108736374', pages: '556' },
+    description: 'Broad national history from Indigenous pasts and European conquest through Confederation and the contemporary period. Conrad emphasizes the contested nation and relationships among Indigenous peoples and settlers, French and English, Catholic and Protestant, women and men, rich and poor, providing a synthetic historical perspective rather than a complete account of every locality or political community.'
+  },
+  {
+    id: 'canadaSmithFederalism2005',
+    label: 'Jennifer Smith — Federalism (2005)',
+    url: 'https://www.ubcpress.ca/federalism',
+    note: 'UBC Press record consulted for the 2005 Canadian Democratic Audit monograph (ISBN 9780774810616; 208 pages). No book wording, quotation, table, chapter or scan is republished; Smith’s democratic-federalism assessment is attributed and bounded to institutional responsiveness, inclusiveness and participation.',
+    accessDate: '2026-09-21', creators: ['Jennifer Smith'], institution: 'UBC Press', publicationDate: '2005-01-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Canadian federalism and democratic governance', identifiers: { isbn: '9780774810616', pages: '208' },
+    description: 'Book-length analysis of how Canada became a federation and how federalism affects democratic responsiveness, inclusiveness and participation. Smith foregrounds Quebec nationalism, First Nations’ claims, regionalized party politics and shifting service delivery, offering a critical institutional lens rather than a complete national or social history.'
+  },
+  {
+    id: 'canadaBorrowsIndigenousConstitution2010',
+    label: 'John Borrows — Canada’s Indigenous Constitution (2010)',
+    url: 'https://utpdistribution.com/9781442686458/canadas-indigenous-constitution/',
+    note: 'University of Toronto Press distribution record consulted for the 2010 monograph (ISBN 9781442686458; 416 pages). No book wording, quotation, table, chapter or scan is republished; Borrows’s legal interpretation is attributed and does not stand for every Indigenous nation or Canadian legal experience.',
+    accessDate: '2026-09-21', creators: ['John Borrows'], institution: 'University of Toronto Press', publicationDate: '2010-12-31', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Indigenous legal and constitutional study', identifiers: { isbn: '9781442686458', pages: '416' },
+    description: 'Book-length legal study arguing that Canada’s constitutional order is incomplete without broader acceptance of Indigenous legal traditions. Borrows examines legal traditions, governments, courts, individuals, families and communities in a multi-juridical frame, supplying a distinct constitutional perspective rather than a uniform Indigenous or national position.'
+  },
+  {
+    id: 'canadaGagnonFederalism2006',
+    label: 'Alain-G. Gagnon, ed. — Le fédéralisme canadien contemporain: Fondements, traditions, institutions (2006)',
+    url: 'https://pum.umontreal.ca/catalogue/le-federalisme-canadien-contemporain',
+    note: 'Les Presses de l’Université de Montréal record consulted for the French-language edited volume (ISBN 9782760620209; 564 pages). No chapter wording, quotation, table or scan is republished; the contributors’ plural perspectives are attributed and not collapsed into a single Quebec or Canadian position.',
+    accessDate: '2026-09-21', creators: ['Alain-G. Gagnon, editor', 'Marie-Joie Brady', 'Michael Burgess', 'Linda Cardinal', 'Jean-François Caron', 'Marc Chevrier', 'Joseph Facal', 'Sarah Fortin', 'Dimitrios Karmis', 'Guy Laforest', 'Kenneth McRoberts', 'Alain Noël', 'Martin Papillon', 'Benoît Pelletier', 'François Rocher', 'Michel Seymour', 'Luc Thériault', 'Luc Turgeon', 'Yves Vaillancourt', 'Catherine Vallières-Roland', 'José Woehrling'], institution: 'Les Presses de l’Université de Montréal', publicationDate: '2006', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language scholarly edited volume on Canadian federalism', identifiers: { isbn: '9782760620209', pages: '564' },
+    description: 'French-language scholarly collection examining the foundations and traditions of federalism, federal-provincial and intergovernmental relations, democratic reform, fiscal imbalance, minority–majority relations and diversity management. It supplies multiple Quebec–Canada and institutional perspectives rather than a single national narrative.'
+  },
+  {
     id: 'unitedStatesDeclaration1776NationalArchives',
     label: 'United States — Declaration of Independence (1776), National Archives record',
     url: 'https://www.archives.gov/milestone-documents/declaration-of-independence',
@@ -7415,6 +7469,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('canada') ? 'Canadian federal, bilingual, Indigenous-rights, constitutional and political history'
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
