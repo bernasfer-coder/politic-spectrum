@@ -1941,6 +1941,50 @@ const sources = [
     description: 'Primary institutional results portal for Nigeria’s 2023 presidential and general elections. It anchors the endpoint’s official election record without, by itself, establishing equal access, accurate counting, uncoerced participation, judicial independence, opposition acceptance or the broader political meaning of the result.',
   },
   {
+    id: 'nigeriaTinubuInaugural2023',
+    label: 'Bola Ahmed Tinubu — First inaugural address (29 May 2023)',
+    url: 'https://statehouse.gov.ng/first-inaugural-address-by-president-bola-ahmed-tinubu-delivered-on-may-29-2023-at-the-eagle-square-abuja/',
+    note: 'Official State House transcription consulted for Tinubu’s inaugural address. No speech wording, quotation, scan or protected material is republished; the address is treated as executive self-description of the administration’s programme, not independent evidence of implementation, electoral fairness or public consent.',
+    accessDate: '2026-09-21',
+    creators: ['Bola Ahmed Tinubu'], institution: 'State House, Abuja',
+    publicationDate: '2023-05-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary presidential address / official political record', identifiers: { addressDate: '2023-05-29' },
+    description: 'Primary witness to the incoming administration’s stated constitutional, economic, security, social and foreign-policy programme, including its justification for phasing out petrol subsidies and pursuing exchange-rate reform. It records executive framing rather than subsequent effects or nationwide agreement.',
+  },
+  {
+    id: 'nigeriaTinubuNationalBroadcast2023',
+    label: 'Bola Ahmed Tinubu — National broadcast on current economic challenges (31 July 2023)',
+    url: 'https://fmino.gov.ng/full-text-of-the-national-broadcasty-by-president-bola-tinubu-to-nigerians-31-07-23/',
+    note: 'Federal Ministry of Information and National Orientation transcription consulted for Tinubu’s 31 July 2023 broadcast on the economic measures following subsidy removal. No speech wording, quotation, scan or protected material is republished; the broadcast documents official justification and proposed interventions, not verified results or social consensus.',
+    accessDate: '2026-09-21',
+    creators: ['Bola Ahmed Tinubu'], institution: 'Federal Ministry of Information and National Orientation, Nigeria',
+    publicationDate: '2023-07-31', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary national broadcast / official executive record', identifiers: { broadcastDate: '2023-07-31' },
+    description: 'Primary executive account of the fuel-subsidy and multiple-exchange-rate reforms, their stated distributive rationale, and proposed federal, state and local interventions during the initial cost-of-living shock. It does not establish implementation, economic outcomes or popular acceptance.',
+  },
+  {
+    id: 'nigeriaTinubuNationwideProtest2024',
+    label: 'Bola Ahmed Tinubu — Broadcast on the nationwide protest (4 August 2024)',
+    url: 'https://statehouse.gov.ng/president-tinubus-broadcast-on-the-nationwide-protest/',
+    note: 'Official State House transcription consulted for Tinubu’s 4 August 2024 broadcast on the #EndBadGovernance protests. No speech wording, quotation, scan or protected material is republished; the address is an executive account of protest, violence, reforms and public order, not an independent casualty, participation or rights investigation.',
+    accessDate: '2026-09-21',
+    creators: ['Bola Ahmed Tinubu'], institution: 'State House, Abuja',
+    publicationDate: '2024-08-04', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary presidential broadcast / official executive response', identifiers: { broadcastDate: '2024-08-04', protestPeriod: '2024-08-01 onward' },
+    description: 'Primary executive witness to the administration’s response to the nationwide cost-of-living protests, including its framing of youth grievances, violence, constitutional rights, security duties and reform measures. It documents official framing and commitments, not the movement’s full composition, causes, geographic variation or subsequent implementation.',
+  },
+  {
+    id: 'nigeriaNhrcProtestAdvisory2024',
+    label: 'National Human Rights Commission — advisory on the planned 1 August 2024 nationwide protests',
+    url: 'https://www.nhrc.gov.ng/nhrc-media/news-and-events/487-nationwide-protests-nhrc-issues-advisory-to-fg-urges-citizens-security-operatives-to-eschew-violence.html',
+    note: 'NHRC advisory and July 2024 bulletin record consulted for the Commission’s guidance to government, citizens and security agencies before the planned protests. No advisory wording, quotation, scan or PDF is republished; the oversight record is distinguished from executive, police, protester, judicial and independent-research perspectives.',
+    accessDate: '2026-09-21',
+    creators: ['National Human Rights Commission of Nigeria'], institution: 'National Human Rights Commission, Nigeria',
+    publicationDate: '2024-07-31', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official human-rights advisory / institutional oversight record', identifiers: { advisoryDate: '2024-07-31', plannedProtestDate: '2024-08-01' },
+    description: 'Primary oversight record urging respect for freedom of association and peaceful assembly, human-rights standards and public safety in the planned protests. It establishes an institutional rights framework and monitoring posture, not a complete account of later policing, casualties, participation or implementation.',
+  },
+  {
     id: 'bahruModernEthiopia2001',
     label: 'Bahru Zewde — A History of Modern Ethiopia, 1855–1991',
     url: 'https://boydellandbrewer.com/book/a-history-of-modern-ethiopia-1855-1991-9780852557860/?v=7885444af42e',
@@ -7921,7 +7965,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('bangladesh') || source.id.startsWith('vanSchendelHistoryBangladesh') || source.id.startsWith('riazBangladesh') || source.id.startsWith('choudhuryConstitutionalDevelopmentBangladesh') || source.id.startsWith('obaidullahParliamentBangladesh') ? 'Bangladeshi constitutional, parliamentary and political history'
       : source.id.startsWith('pakistan') || source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('jaffrelotPakistanCrossroads') || source.id.startsWith('rizviPoliticalConstitutionalEngineering') || source.id.startsWith('kamranChequeredPastPakistan') || source.id.startsWith('gilaniRitualElectionsPakistan') ? 'Pakistani constitutional, civil–military and electoral history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') || source.id.startsWith('ayeeAmoahAliduGhana') || source.id.startsWith('pallerDemocracyGhana') ? 'Ghanaian constitutional transition and political history'
-      : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeriaInec') ? 'Nigerian constitutional, electoral and political history'
+      : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeria') ? 'Nigerian constitutional, electoral and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') || source.id.startsWith('ethiopiaAu') || source.id.startsWith('ethiopiaJusticeTransitional') || source.id.startsWith('plautVaughanTigrayWar') || source.id.startsWith('erlichGreaterTigray') ? 'Ethiopian revolutionary, federal, conflict and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('campbellTongasWayDemocracy') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') || source.id.startsWith('tupouTongaReform') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('fiji') || source.id.startsWith('lalBrokenWavesFiji') || source.id.startsWith('lawsonFailureDemocraticPoliticsFiji') || source.id.startsWith('lalAnotherWayFiji') || source.id.startsWith('fraenkelFirthLalMilitaryTakeoverFiji') ? 'Fijian constitutional, coup and political history'
