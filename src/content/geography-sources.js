@@ -7131,6 +7131,56 @@ const sources = [
     description: 'French-language Haitian sociological essay published at the 1986–1987 rupture, linking the Duvalier legacy, state, nation, culture, migration, religion and the unfinished democratic project. It adds a materially different Haitian and Francophone perspective but predates later crises and is not a complete political history.'
   },
   {
+    id: 'cubaNationalAssemblyElection2023',
+    label: 'Consejo Electoral Nacional de Cuba — Resultados finales de las elecciones nacionales de 2023',
+    url: 'https://www.granma.cu/cuba/2023-03-30/resultados-finales-confirman-participacion-mayoritaria-del-pueblo-en-elecciones-nacionales-30-03-2023-22-03-05',
+    note: 'Official Cuban electoral results as reported from the Consejo Electoral Nacional by Granma were consulted as a dated institutional record and link only. No result table, wording, scan or page is republished; reported participation and election outcomes are distinguished from competitive pluralism, voter experience, equal voice and public consent.',
+    accessDate: '2026-09-21', creators: ['Consejo Electoral Nacional de Cuba'], institution: 'Granma, Órgano oficial del Comité Central del Partido Comunista de Cuba',
+    publicationDate: '2023-03-30', evidenceRole: 'primary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'official parliamentary election record', identifiers: { electionDate: '2023-03-26', assembly: 'Asamblea Nacional del Poder Popular' },
+    description: 'Dated official account of the 2023 election of the National Assembly under the 2019 Constitution, including the reported turnout and election of deputies. It anchors the case’s institutional endpoint without independently evaluating competition, representation or legitimacy.'
+  },
+  {
+    id: 'cubaKapciaInRevolution2008',
+    label: 'Antoni Kapcia — Cuba in Revolution: A History Since the Fifties (2008)',
+    url: 'https://press.uchicago.edu/ucp/books/book/distributed/C/bo6165991.html',
+    note: 'University of Chicago Press/Reaktion Books record consulted for the 2008 monograph (ISBN 9781861894021; 272 pages). No book wording, quotation, table, chapter or scan is republished; Kapcia’s interpretation is attributed and paired with distinct Spanish-language, social-history and institutional perspectives.',
+    accessDate: '2026-09-21', creators: ['Antoni Kapcia'], institution: 'Reaktion Books / University of Chicago Press',
+    publicationDate: '2008', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length revolutionary political history', identifiers: { isbn: '9781861894021', pages: '272' },
+    description: 'Book-length history of Cuba since 1959 emphasizing social change, popular participation, ideology, dissent, foreign relations, the Soviet collapse and revolutionary survival. It is a broad political interpretation, not a complete account of every locality or community.'
+  },
+  {
+    id: 'cubaMartinezFernandezRevolutionary2014',
+    label: 'Luis Martínez-Fernández — Revolutionary Cuba: A History (2014)',
+    url: 'https://academic.oup.com/florida-scholarship-online/book/23452',
+    note: 'University Press of Florida/Oxford Academic record consulted for the 2014 monograph (print ISBN 9780813049953; online ISBN 9780813050416). No book wording, quotation, table, chapter or scan is republished; the chronological interpretation is attributed and bounded to the book’s coverage.',
+    accessDate: '2026-09-21', creators: ['Luis Martínez-Fernández'], institution: 'University Press of Florida / Oxford University Press',
+    publicationDate: '2014-09-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length revolutionary national history', identifiers: { printIsbn: '9780813049953', onlineIsbn: '9780813050416' },
+    description: 'Interpretive history from Batista’s 1952 coup through revolutionary consolidation, Sovietization, the Special Period and post-Soviet survival. It offers a distinct chronological and political-economy synthesis without being treated as an exhaustive implementation or rights history.'
+  },
+  {
+    id: 'cubaRojasHistoriaMinima2015',
+    label: 'Rafael Rojas — Historia mínima de la Revolución cubana (2015)',
+    url: 'https://libros.colmex.mx/tienda/historia-minima-de-la-revolucion-cubana/',
+    note: 'El Colegio de México publisher record consulted for the Spanish-language monograph (ISBN 978-607-462-772-5; 201 pages). No book wording, quotation, table, chapter or scan is republished; Rojas’s interpretation is attributed and paired with English-language and institutional sources.',
+    accessDate: '2026-09-21', creators: ['Rafael Rojas'], institution: 'El Colegio de México',
+    publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'Spanish-language book-length revolutionary history', identifiers: { isbn: '9786074627725', pages: '201' },
+    description: 'Spanish-language synthesis of the political, economic, social and cultural transformation of Cuba from the 1950s through the 1970s, with a reflective final treatment of later developments. It materially broadens the language base while remaining a bounded interpretation.'
+  },
+  {
+    id: 'cubaGuerraVisionsPower2012',
+    label: 'Lillian Guerra — Visions of Power in Cuba: Revolution, Redemption, and Resistance, 1959–1971 (2012)',
+    url: 'https://www.loc.gov/item/hlas-bi2015004150',
+    note: 'Library of Congress Hispanic American Periodicals Index record consulted for the 2012 UNC Press monograph (ISBN 9780807835630; 467 pages). No book wording, quotation, table, image or scan is republished; Guerra’s citizen-centered interpretation is attributed and bounded to 1959–1971.',
+    accessDate: '2026-09-21', creators: ['Lillian Guerra'], institution: 'University of North Carolina Press / Library of Congress',
+    publicationDate: '2012', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length social and political history', identifiers: { isbn: '9780807835630', pages: '467' },
+    description: 'Social and political history centered on competing visions of revolution and socialism, everyday experience, peasants, intellectuals, Black activists, filmmakers, resistance and state-imposed limits. It adds a citizen-centered lens rather than a complete national institutional history.'
+  },
+  {
     id: 'dominicanConstitution1963Official',
     label: 'República Dominicana — Constitución de la Nación Dominicana de 1963',
     url: 'https://consultoria.gov.do/Documents/GetDocument?reference=9bbd0452-eb2a-41fb-9f7a-c1014f734ddb',
@@ -7285,6 +7335,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
