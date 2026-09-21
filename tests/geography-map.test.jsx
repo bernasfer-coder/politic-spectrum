@@ -111,8 +111,8 @@ describe('interactive atlas map', () => {
   it('opens the researched Brazil case and restores it after refresh', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    await user.click(map().getByRole('button', { name: 'Brazil: 2 matching cases' }));
-    expect(cards()).toHaveLength(2);
+    await user.click(map().getByRole('button', { name: 'Brazil: 3 matching cases' }));
+    expect(cards()).toHaveLength(3);
     expect(cards()[0]).toHaveTextContent(/Brazilian democratic constitutionalism|1985–1988/);
     expect(window.location.hash).toContain('country=brazil');
     expect(screen.getByRole('combobox', { name: /Country/ })).toHaveValue('brazil');
@@ -174,7 +174,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(127);
+    expect(cards()).toHaveLength(128);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });

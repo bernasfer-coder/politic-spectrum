@@ -13,8 +13,8 @@ test('country paths filter, persist and handle newly researched countries', asyn
   await page.reload();
   await expect(map.getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'World view', exact: true }).click();
-  await map.getByRole('button', { name: 'Brazil: 2 matching cases', exact: true }).click();
-  await expect(page.locator('.geo-card')).toHaveCount(2);
+  await map.getByRole('button', { name: 'Brazil: 3 matching cases', exact: true }).click();
+  await expect(page.locator('.geo-card')).toHaveCount(3);
   await expect(page.locator('.geo-card').first()).toContainText(/Brazilian democratic constitutionalism|1985–1988/);
   await page.reload();
   await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('brazil');
