@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(124);
+    expect(cards()).toHaveLength(125);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -70,7 +70,7 @@ describe('geographic atlas', () => {
     await user.selectOptions(screen.getByRole('combobox', { name: /Place \/ historical/ }), 'jerusalem');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: /Oceania/ }));
-    expect(cards()).toHaveLength(7);
+    expect(cards()).toHaveLength(8);
     expect(cards()[0]).toHaveTextContent('Tongan constitutional monarchy and democratic reform');
     expect(screen.getByRole('button', { name: /Oceania/ })).toHaveAttribute('aria-pressed', 'true');
     await user.click(within(screen.getByRole('group', { name: 'Browse continents' })).getByRole('button', { name: /Antarctica/ }));

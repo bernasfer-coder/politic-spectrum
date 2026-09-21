@@ -7131,6 +7131,60 @@ const sources = [
     description: 'French-language Haitian sociological essay published at the 1986–1987 rupture, linking the Duvalier legacy, state, nation, culture, migration, religion and the unfinished democratic project. It adds a materially different Haitian and Francophone perspective but predates later crises and is not a complete political history.'
   },
   {
+    id: 'australiaConstitution1900FederalRegister',
+    label: 'Commonwealth of Australia — Constitution Act 1900 and Constitution, Federal Register of Legislation record',
+    url: 'https://www.legislation.gov.au/C2004Q00685/latest/text',
+    note: 'Federal Register of Legislation record consulted as the primary constitutional source for the Commonwealth settlement, federal institutions and formal rights and amendment framework. No constitutional wording, scan or page is republished; formal design is distinguished from implementation, Indigenous sovereignty, equal participation and public consent.',
+    accessDate: '2026-09-21', creators: ['Commonwealth of Australia'], institution: 'Federal Register of Legislation', publicationDate: '1900-07-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { assentDate: '1900-07-09', commencementDate: '1901-01-01' },
+    description: 'Primary legal record for the Constitution of the Commonwealth of Australia: a federal parliamentary settlement with a Crown, Parliament, executive, judicature, state relations, rights-related provisions and amendment procedures. It is evidence of formal constitutional design rather than proof of uniform practice or political equality.'
+  },
+  {
+    id: 'australiaAecFederalElection2025',
+    label: 'Australian Electoral Commission — 2025 federal election results and report',
+    url: 'https://www.aec.gov.au/Elections/Federal_Elections/2025/index.htm',
+    note: 'Australian Electoral Commission results portal consulted for the federal election held on 3 May 2025 and the official results as at the return of the writs. The record anchors a dated institutional endpoint; it does not independently establish equal voice, voter experience, party ideology, legitimacy or the status of any later government.',
+    accessDate: '2026-09-21', creators: ['Australian Electoral Commission'], institution: 'Australian Electoral Commission', publicationDate: '2025-06-12', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official federal election result / institutional record', identifiers: { electionDate: '2025-05-03', resultsAtReturnOfWrits: '2025-06-12' },
+    description: 'Primary electoral record for the 2025 federal election, used only to date the case’s contemporary endpoint and identify the formally administered federal contest.'
+  },
+  {
+    id: 'australiaBongiornoDreamersSchemers2022',
+    label: 'Frank Bongiorno — Dreamers and Schemers: A Political History of Australia (2022)',
+    url: 'https://www.blackincbooks.com.au/books/dreamers-and-schemers',
+    note: 'La Trobe University Press / Black Inc. publisher and ANU research records consulted for the 480-page book (ISBN 9781760640095). No book wording, quotation, table or scan is republished; Bongiorno’s political history is attributed as one scholarly synthesis and its contemporary horizon is not extended beyond the book.',
+    accessDate: '2026-09-21', creators: ['Frank Bongiorno'], institution: 'La Trobe University Press', publicationDate: '2022-11-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history', identifiers: { isbn: '9781760640095', pages: '480' },
+    description: 'Book-length political history that follows Indigenous and colonial political settings, representative institutions, labor and party politics, federation, war, social change and later democratic life. It provides a broad political narrative, not a uniform national ideology or a substitute for First Nations histories.'
+  },
+  {
+    id: 'australiaMacintyreConciseHistory2014',
+    label: 'Stuart Macintyre — A Concise History of Australia, 3rd edition (2014)',
+    url: 'https://www.cambridge.org/core/books/a-concise-history-of-australia/671BD7593A703594EEFD3F4EE3BCEEB1',
+    note: 'Cambridge University Press record consulted for the third edition (ISBN 9780511809996; DOI 10.1017/CBO9780511809996). No book wording, quotation, table or scan is republished; Macintyre’s national history is treated as an independent period-bounded synthesis rather than a complete account of every Australian community.',
+    accessDate: '2026-09-21', creators: ['Stuart Macintyre'], institution: 'Cambridge University Press', publicationDate: '2014-06-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history', identifiers: { isbn: '9780511809996', doi: '10.1017/CBO9780511809996', edition: '3' },
+    description: 'Book-length national history linking Indigenous antiquity, colonial settlement, institutions, economic and social change, federation, war, migration and the political history through the Howard and 2007 election horizon. It supplies broad context but predates the 2023 referendum and 2025 election.'
+  },
+  {
+    id: 'australiaCurthoysTakingLiberty2018',
+    label: 'Ann Curthoys and Jessie Mitchell — Taking Liberty: Indigenous Rights and Settler Self-Government in Colonial Australia (2018)',
+    url: 'https://www.cambridge.org/core/books/taking-liberty/9105B2CD5A4FD5E9961EB0BBB8ACF022',
+    note: 'Cambridge University Press record consulted for the 448-page monograph (ISBN 9781107084858; DOI 10.1017/9781316027035). No book wording, quotation, table or scan is republished; the authors’ interpretation is used for the bounded colonial and Indigenous political foundations of later federal democracy.',
+    accessDate: '2026-09-21', creators: ['Ann Curthoys', 'Jessie Mitchell'], institution: 'Cambridge University Press', publicationDate: '2018-09-28', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Indigenous and colonial political history', identifiers: { isbn: '9781107084858', onlineIsbn: '9781316027035', doi: '10.1017/9781316027035', pages: '448' },
+    description: 'Book-length study of settler self-government, Indigenous dispossession, survival, resistance and political engagement in colonial Australia. It is a distinct corrective to histories centered only on settler institutions and does not establish one Indigenous political position.'
+  },
+  {
+    id: 'australiaPetersonSandersCitizenship1998',
+    label: 'Nicolas Peterson and Will Sanders (eds.) — Citizenship and Indigenous Australians: Changing Conceptions and Possibilities (1998)',
+    url: 'https://www.cambridge.org/core/books/citizenship-and-indigenous-australians/9617FBD9EED61BF49CDFBC4696FCFD51',
+    note: 'Cambridge University Press record consulted for the 240-page edited volume (ISBN 9780521627368). No chapter wording, quotation, table or scan is republished; the contributors’ arguments are attributed and bounded to citizenship, self-determination, the 1967 referendum, sovereignty and multicultural membership debates.',
+    accessDate: '2026-09-21', creators: ['Nicolas Peterson', 'Will Sanders'], institution: 'Cambridge University Press / Australian National University', publicationDate: '1998-06-28', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Indigenous citizenship and constitutional-politics study', identifiers: { isbn: '9780521627368', pages: '240' },
+    description: 'Scholarly edited volume examining the historical exclusion of Aboriginal and Torres Strait Islander people from full civic membership, changing citizenship concepts, self-determination, sovereignty, the 1967 referendum and possibilities for a plural political society. It is not a community-wide consensus or a complete post-1998 history.'
+  },
+  {
    id: 'russiaConstitution1993Official',
     label: 'Constitution of the Russian Federation — adopted 12 December 1993, official English text',
     url: 'https://www.constitution.ru/en/10003000-01.htm',
@@ -7611,6 +7665,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('australia') ? 'Australian federal, settler-colonial, labor and constitutional political history'
       : source.id.startsWith('russia') ? 'Russian post-Soviet constitutional, authoritarian and political history'
       : source.id.startsWith('china') ? 'Chinese revolutionary, party-state, reform and developmental political history'
       : source.id.startsWith('canada') ? 'Canadian federal, bilingual, Indigenous-rights, constitutional and political history'
