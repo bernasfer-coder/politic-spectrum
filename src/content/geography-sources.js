@@ -6896,6 +6896,69 @@ const sources = [
     sourceType: 'book-length national political history', identifiers: { isbn: '9789766370794', pages: '446' },
     description: 'Book-length narrative and analytical political history from the first elections in 1925 through the 2001 deadlock, covering self-government and party politics, Eric Williams, the NAR period, the 1990 attempted coup, structural adjustment and Basdeo Panday’s rise. It is a central political history but does not establish current practice after 2001.'
   },
+  {
+    id: 'barbadosConstitution1966Gov',
+    label: 'Government of Barbados — Constitution of Barbados, independence constitutional record (1966)',
+    url: 'https://www.gov.bb/Government/barbados-constitution',
+    note: 'Government of Barbados constitutional page consulted as a primary legal record and link only. No constitutional wording, translation, scan or page is republished; the page’s description of the 1966 settlement is distinguished from post-2021 republican amendments, implementation and public consent.',
+    accessDate: '2026-09-21', creators: ['Government of Barbados'], institution: 'Government of Barbados', publicationDate: '1966-11-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1966', independenceDate: '1966-11-30' },
+    description: 'Official constitutional record for the independence settlement, identifying the Constitution as supreme law and describing formal executive, legislative and parliamentary arrangements. It anchors constitutional design without establishing uniform practice, equal access or later republican implementation.'
+  },
+  {
+    id: 'barbadosEbc2022Election',
+    label: 'Electoral and Boundaries Commission — Report on the 2022 General Election of Barbados',
+    url: 'https://www.ebc.gov.bb/wp-content/uploads/2026/01/Election-Report-2022.pdf',
+    note: 'Official EBC election-report PDF consulted as a primary electoral and institutional record and link only. No result table, wording, scan or PDF page is republished; the report is distinguished from voter experience, opposition interpretation, constitutional legitimacy and later political practice.',
+    accessDate: '2026-09-21', creators: ['Electoral and Boundaries Commission of Barbados'], institution: 'Electoral and Boundaries Commission of Barbados', publicationDate: '2022', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary election report / official institutional record', identifiers: { electionDate: '2022-01-19' },
+    description: 'Official institutional report for the general election held after Barbados’s transition to a republic, providing a dated electoral and administrative endpoint. It records the Commission’s account of the contest without being treated as a complete judgment on representation, participation or democratic quality.'
+  },
+  {
+    id: 'barbadosCrc2024GIS',
+    label: 'Barbados Government Information Service — Constitution Reform Commission report handed to the President (30 September 2024)',
+    url: 'https://gisbarbados.gov.bb/blog/crc-hands-over-report-to-president-of-barbados/',
+    note: 'Official Barbados Government Information Service release consulted as a primary constitutional-reform record and link only. No report wording, draft-bill wording, quotation, scan or page is republished; recommendations and dissenting issues are distinguished from enactment, public consensus and later implementation.',
+    accessDate: '2026-09-21', creators: ['Barbados Government Information Service'], institution: 'Government Information Service, Barbados', publicationDate: '2024-09-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional-reform commission record / official government release', identifiers: { reportDate: '2024-09-16', handoverDate: '2024-09-30', pages: '360' },
+    description: 'Official record of the Constitutional Reform Commission’s handover of its 2024 report and draft bill, including the stated recommendations on fundamental rights, a human-rights commission, executive appointments, the presidency and the judiciary. It records a reform horizon rather than a new enacted constitution or uniform public agreement.'
+  },
+  {
+    id: 'barbadosWatsonLateColonial2019',
+    label: 'Hilbourne A. Watson — Errol Walton Barrow and the Postwar Transformation of Barbados, Vol. 1: The Late Colonial Period (2019)',
+    url: 'https://www.uwipress.com/9789766407117/errol-walton-barrow-and-the-postwar-transformation-of-barbados-vol-1/',
+    note: 'University of the West Indies Press record consulted for the monograph (ISBN 9789766407117; 330 pages). No book wording, quotation, table, chapter or scan is republished; Watson’s political-economy interpretation is attributed and bounded to the late-colonial period.',
+    accessDate: '2026-09-21', creators: ['Hilbourne A. Watson'], institution: 'University of the West Indies Press', publicationDate: '2019-07-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy history of late-colonial Barbados', identifiers: { isbn: '9789766407117', pages: '330' },
+    description: 'Book-length study of the political, labour, class and international forces that shaped Barbados’s late-colonial reform and decolonization, with attention to parties, working-class organizations, race, gender, poverty and sovereignty. It supplies a structural pre-independence perspective rather than a complete republic or post-2020 history.'
+  },
+  {
+    id: 'barbadosWatsonIndependence2020',
+    label: 'Hilbourne A. Watson — Errol Walton Barrow and the Postwar Transformation of Barbados, Vol. 2: The Independence Period, 1966–1976 (2020)',
+    url: 'https://www.uwipress.com/9789766407742/errol-walton-barrow-and-the-postwar-transformation-of-barbados-vol-2/',
+    note: 'University of the West Indies Press record consulted for the monograph (ISBN 9789766407742; 436 pages). No book wording, quotation, table, chapter or scan is republished; Watson’s analysis of the Barrow/DLP period is attributed and paired with distinct nation-building and grassroots perspectives.',
+    accessDate: '2026-09-21', creators: ['Hilbourne A. Watson'], institution: 'University of the West Indies Press', publicationDate: '2020-11-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy history of independent Barbados', identifiers: { isbn: '9789766407742', ebookIsbn: '9789766407766', pages: '436' },
+    description: 'Book-length analysis of Barbados’s first two decades of independence under Errol Barrow and the Democratic Labour Party, including foreign policy, public order, development planning, education, state power, women and gender. It offers a critical political-economy lens through 1987 rather than a complete account of later party alternation or republican reform.'
+  },
+  {
+    id: 'barbadosChamberlainNationBuilding2010',
+    label: 'Mary Chamberlain — Empire and Nation-Building in the Caribbean: Barbados, 1937–66 (2010)',
+    url: 'https://academic.oup.com/manchester-scholarship-online/book/29303',
+    note: 'Manchester University Press/Oxford Academic record consulted for the monograph (print ISBN 9780719078767; online ISBN 9781781701997; DOI 10.7228/manchester/9780719078767.001.0001). No book wording, quotation, table, chapter or scan is republished; Chamberlain’s social and cultural interpretation is attributed and bounded to 1937–1966.',
+    accessDate: '2026-09-21', creators: ['Mary Chamberlain'], institution: 'Manchester University Press', publicationDate: '2010-08-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of nation-building, decolonization and society', identifiers: { isbn: '9780719078767', onlineIsbn: '9781781701997', doi: '10.7228/manchester/9780719078767.001.0001' },
+    description: 'Book-length history of Barbados’s route from the 1937 crisis to independence, emphasizing the multiple social, cultural, gendered and migratory settings in which nation-building occurred. It provides an independent social-history perspective that complements political-economy and grassroots accounts.'
+  },
+  {
+    id: 'barbadosBecklesChattelHouse2004',
+    label: 'Hilary McD. Beckles — Chattel House Blues: Making of a Democratic Society in Barbados — From Clement Payne to Owen Arthur (2004)',
+    url: 'https://ianrandlepublishers.com/product/chattel-house-blues/',
+    note: 'Ian Randle Publishers record consulted for the monograph (ISBN 9789766370862; 248 pages). No book wording, quotation, table, chapter or scan is republished; Beckles’s people-centred interpretation is attributed and identified as a challenging thesis rather than an uncontested national account.',
+    accessDate: '2026-09-21', creators: ['Hilary McD. Beckles'], institution: 'Ian Randle Publishers', publicationDate: '2004', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length grassroots and democratic political history', identifiers: { isbn: '9789766370862', pages: '248' },
+    description: 'Book-length interpretation of modern Barbadian democracy through grassroots struggle, working-class enfranchisement, independence and the political legacy reaching the Owen Arthur period. It foregrounds popular agency and economic democracy while requiring triangulation with structural, social and institutional histories.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
