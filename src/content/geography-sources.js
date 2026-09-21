@@ -6626,6 +6626,78 @@ const sources = [
     sourceType: 'book-length comparative study of democratic change and Ecuadorian politics', identifiers: { isbn: '9789978675908', pdfIsbn: '9789978675915', pages: '172', publisher: 'FLACSO Ecuador', doi: '10.46546/2021-24atrio' },
     description: 'Comparative book-length study of the political turn to the left, hybrid-regime debate and democratic-quality decline in South America, with Ecuador as a principal reference case. It supplies a later political-science lens on the Citizens’ Revolution and democratic institutions without establishing a complete social, regional or post-2021 history.'
   },
+  {
+    id: 'venezuelaConstitution1999Gaceta',
+    label: 'Venezuela — Constitución de la República Bolivariana de Venezuela (1999, official Gaceta record)',
+    url: 'https://www.oas.org/juridico/PDFs/mesicic4_ven_const_vene.pdf',
+    note: 'OAS-hosted reproduction of the official Spanish constitutional record consulted as a primary text and link only. No constitutional wording, translation, scan or page is republished; formal popular-sovereignty, rights, participatory, executive, legislative, judicial and electoral provisions are distinguished from implementation, public consent and later political practice. The consulted version and subsequent amendment history require fuller Spanish original collation.',
+    accessDate: '2026-09-21', creators: ['Asamblea Nacional Constituyente de Venezuela'], institution: 'Gaceta Oficial de la República Bolivariana de Venezuela / Organization of American States', publicationDate: '1999-12-30', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1999', gazette: 'Gaceta Oficial No. 36.860' },
+    description: 'Primary witness to the Bolivarian constitutional refounding, including popular sovereignty, social and participatory rights, the presidency, National Assembly, courts, electoral authority, recall procedure and constitutional amendment architecture. It establishes formal design rather than uniform political practice, institutional independence or equal access.'
+  },
+  {
+    id: 'venezuelaCarter1998Election',
+    label: 'The Carter Center — Observation of the 1998 Venezuelan Elections',
+    url: 'https://www.cartercenter.org/documents/1151.pdf',
+    note: 'The Carter Center observation report was consulted for the 1998 presidential, legislative and regional electoral process, observer findings and post-election challenges. No result table, ballot, report passage or scan is republished; an international observer account is distinguished from a complete electoral history, voter motivation, equal access or uniform democratic legitimacy.',
+    accessDate: '2026-09-21', creators: ['The Carter Center'], institution: 'The Carter Center', publicationDate: '1999', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation report', identifiers: { electionYear: '1998', report: 'Observation of the 1998 Venezuelan Elections' },
+    description: 'Institutional witness to the electoral opening that brought Hugo Chávez to the presidency and to the surrounding legislative and regional contests. It fixes a dated starting point while preserving the difference between observation, official results and later scholarly interpretation.'
+  },
+  {
+    id: 'venezuelaCarter2024Election',
+    label: 'The Carter Center — Final Report: Observation of the 2024 Presidential Election in Venezuela',
+    url: 'https://www.cartercenter.org/publication/final-report-observation-of-the-2024-presidential-election-in-venezuela/',
+    note: 'The Carter Center landing page and linked final report, published 17 February 2025, were consulted for the July 2024 election process, transparency failures and observation limits. No report wording, result table, tally sheet, image or scan is republished; the report’s findings are attributed and do not by themselves settle every legal, social or international claim about the election or Venezuela after the endpoint.',
+    accessDate: '2026-09-21', creators: ['The Carter Center'], institution: 'The Carter Center', publicationDate: '2025-02-17', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'international election observation report', identifiers: { electionDate: '2024-07-28', reportDate: '2025-02-17', election: 'Venezuela presidential election' },
+    description: 'Institutional witness to the 2024 presidential election and its documented observation constraints. It anchors the case’s contemporary endpoint and the distinction between formal electoral administration, published evidence and contested legitimacy without making a post-2024 current-country claim.'
+  },
+  {
+    id: 'venezuelaHawkinsChavismo2010',
+    label: 'Kirk A. Hawkins — Venezuela’s Chavismo and Populism in Comparative Perspective (2010)',
+    url: 'https://www.cambridge.org/core/books/venezuelas-chavismo-and-populism-in-comparative-perspective/775976318AED6CC8A85E50F0806736D2',
+    note: 'Cambridge University Press bibliographic record and front matter consulted for the 2010 monograph (ISBN 9780521765039; 304 pages). The publisher’s argument and metadata are used as an attributed comparative interpretation; the complete book, underlying coding and Venezuelan-language scholarship were not independently collated, and no book wording is republished.',
+    accessDate: '2026-09-21', creators: ['Kirk A. Hawkins'], institution: 'Cambridge University Press', publicationDate: '2010-05-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative study of Chavismo and populism', identifiers: { isbn: '9780521765039', pages: '304', doi: '10.1017/CBO9780511730245' },
+    description: 'Book-length comparative analysis of Chavismo, populist ideas, organization, the Bolivarian Circles and government missions. It supplies a distinct ideational and organizational lens, not a complete national history, implementation audit or classification of every Venezuelan or chavista.'
+  },
+  {
+    id: 'venezuelaEllnerRethinking2008',
+    label: 'Steve Ellner — Rethinking Venezuelan Politics: Class, Conflict, and the Chávez Phenomenon (2008)',
+    url: 'https://www.rienner.com/title/Rethinking_Venezuelan_Politics_Class_Conflict_and_the_Chavez_Phenomenon',
+    note: 'Lynne Rienner publisher record consulted for the 2008 monograph (ISBN 9781588265609; 257 pages). The publisher description and bibliographic metadata support an attributed class, social-actor and political-history lens; the full book and its archival apparatus were not independently collated, and no book wording is republished.',
+    accessDate: '2026-09-21', creators: ['Steve Ellner'], institution: 'Lynne Rienner Publishers', publicationDate: '2008', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Venezuelan political history and class-conflict study', identifiers: { isbn: '9781588265609', paperbackIsbn: '9781588266996', pages: '257' },
+    description: 'Book-length political history emphasizing Venezuela’s economic and social cleavages, popular actors, opposition, the Chávez presidency, internal tensions and international trajectory. It provides a social and class-centered perspective rather than a complete account of every institution, locality or later period.'
+  },
+  {
+    id: 'venezuelaSmildeHellingerBolivarianDemocracy2011',
+    label: 'David Smilde and Daniel Hellinger (eds.) — Venezuela’s Bolivarian Democracy: Participation, Politics, and Culture under Chávez (2011)',
+    url: 'https://www.dukeupress.edu/venezuelas-bolivarian-democracy',
+    note: 'Duke University Press record consulted for the 2011 edited volume (ISBN 9780822349894; 408 pages). The contents and contributor perspectives are used as a plural book-length scholarly lens on participation, politics, culture, religion and polarization; the complete volume and each empirical chapter were not independently collated, and no chapter wording is republished.',
+    accessDate: '2026-09-21', creators: ['David Smilde', 'Daniel Hellinger'], institution: 'Duke University Press', publicationDate: '2011-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on participation, politics and culture', identifiers: { isbn: '9780822349894', pages: '408', doi: '10.1215/9780822394310' },
+    description: 'Edited book bringing together distinct perspectives on participation, political culture, class, conflict, religion, social movements, gender, media and the Bolivarian project. It prevents a single populist or authoritarian lens from standing for the whole period, while not constituting a complete post-2011 or local history.'
+  },
+  {
+    id: 'venezuelaCorralesAutocracyRising2023',
+    label: 'Javier Corrales — Autocracy Rising: How Venezuela Transitioned to Authoritarianism (2023)',
+    url: 'https://www.brookings.edu/books/autocracy-rising/',
+    note: 'Brookings Institution Press bibliographic record consulted for the 2023 monograph (ISBN 9780815738077; 256 pages). The publisher’s argument and metadata support an attributed analysis of party-system fragmentation, institutional capacity and democratic backsliding; the complete book, comparative dataset and post-publication evidence were not independently collated, and no book wording is republished.',
+    accessDate: '2026-09-21', creators: ['Javier Corrales'], institution: 'Brookings Institution Press', publicationDate: '2023-02-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Venezuelan democratic backsliding and authoritarian transition', identifiers: { isbn: '9780815738077', ebookIsbn: '9780815738084', pages: '256' },
+    description: 'Book-length account of Venezuela’s transition toward authoritarian rule through party-system asymmetry, institutional capacity, executive control and economic collapse. It supplies a later institutional and comparative lens that must be read alongside constitutional, social-movement and participatory interpretations.'
+  },
+  {
+    id: 'venezuelaLopezMayaOcaso2016',
+    label: 'Margarita López Maya — El ocaso del chavismo: Venezuela 2005–2015 (2016)',
+    url: 'https://books.google.com/books/about/El_ocaso_del_chavismo.html?id=X8PdDQAAQBAJ',
+    note: 'Google Books and library metadata for the Spanish-language Editorial Alfa monograph were consulted (2016; ISBN 9788417014254; 394 pages). The bibliographic record and publisher summary are used as an attributed Venezuelan scholarly perspective; the full book and cited primary archive were not independently collated, and no Spanish wording or translation is republished.',
+    accessDate: '2026-09-21', creators: ['Margarita López Maya'], institution: 'Editorial Alfa', publicationDate: '2016', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'Spanish-language book-length political history of Chavismo', identifiers: { isbn: '9788417014254', alternateIsbn: '9789803544157', pages: '394' },
+    description: 'Spanish-language book-length analysis of the political and social processes of 2005–2015, including the rentier crisis, changing elites and political project, and the crisis of Venezuelan society. It adds a Venezuelan scholarly perspective and does not establish a complete local, minority, gendered or post-2015 history.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
