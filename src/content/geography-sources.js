@@ -6851,6 +6851,51 @@ const sources = [
     sourceType: 'Dutch-language book-length social and political history', identifiers: { isbn: '9789087047481', pages: '368', language: 'Dutch' },
     description: 'Dutch-language social and political history from emancipation and colonial rule through independence, military rule, redemocratization and Bouterse-era politics to 2015. It adds a relevant-language perspective on institutions, parties, protest and political economy while leaving the 2015–2025 electoral endpoint to primary and institutional records.'
   },
+  {
+    id: 'trinidadConstitution1976Laws',
+    label: 'Republic of Trinidad and Tobago — Constitution of the Republic of Trinidad and Tobago (1976), official legal record',
+    url: 'https://www.laws.gov.tt/pdf/Constitution.pdf',
+    note: 'Trinidad and Tobago Digital Law Library constitutional PDF consulted as a primary legal record and link only. No constitutional wording, translation, scan or PDF page is republished; formal republican design is distinguished from implementation, party practice, crisis episodes and public consent.',
+    accessDate: '2026-09-21', creators: ['Republic of Trinidad and Tobago'], institution: 'Trinidad and Tobago Digital Law Library', publicationDate: '1976-08-01', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1976', commencementDate: '1976-08-01' },
+    description: 'Primary legal witness to the republican constitutional settlement after independence, including fundamental rights and the formal institutions of public authority. It establishes constitutional design rather than uniform democratic practice, equal access, social outcomes or public agreement.'
+  },
+  {
+    id: 'trinidadEbc2025Election',
+    label: 'Elections and Boundaries Commission — Detailed preliminary results of Trinidad and Tobago’s 2025 parliamentary elections',
+    url: 'https://ebctt.com/press-release-detailed-preliminary-results-of-the-2025-parliamentary-elections/',
+    note: 'Official EBC press release and linked detailed preliminary-results record consulted as a primary electoral source and link only. No result table, wording, scan or PDF page is republished; preliminary figures and later verification are distinguished from independent observation, voter experience, final adjudication and a complete judgment on political legitimacy.',
+    accessDate: '2026-09-21', creators: ['Elections and Boundaries Commission of Trinidad and Tobago'], institution: 'Elections and Boundaries Commission', publicationDate: '2025-04-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary preliminary electoral results / official institutional record', identifiers: { electionDate: '2025-04-28', releaseDate: '2025-04-30' },
+    description: 'Official preliminary-results record for the 28 April 2025 parliamentary election. The Commission notes that its detailed figures incorporated minor adjustments during continued verification; this bounds the endpoint without being treated as a complete account of representation, voter experience or later institutional practice.'
+  },
+  {
+    id: 'trinidadRyanRaceNationalism1972',
+    label: 'Selwyn D. Ryan — Race and Nationalism in Trinidad and Tobago: A Study of Decolonization in a Multiracial Society (1972)',
+    url: 'https://books.google.com/books/about/Race_and_Nationalism_in_Trinidad_and_Tob.html?id=nDoYAAAAYAAJ',
+    note: 'University of Toronto Press/Google Books record consulted for the 1972 monograph (ISBN 9780802052568; 509 pages). No book wording, quotation, table or scan is republished; Ryan’s interpretation is attributed and bounded to its documented decolonization horizon.',
+    accessDate: '2026-09-21', creators: ['Selwyn D. Ryan'], institution: 'University of Toronto Press', publicationDate: '1972', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of decolonization, race, nationalism and political institutions', identifiers: { isbn: '9780802052568', pages: '509' },
+    description: 'Book-length study of race relations, nationalism, political parties and groups, economic resources and decolonization in Trinidad and Tobago. It supplies an independent pre- and early-independence political interpretation rather than a complete history of the republic or later electoral practice.'
+  },
+  {
+    id: 'trinidadRyanGordonIndependence1988',
+    label: 'Selwyn D. Ryan and Gloria Gordon (eds.) — Trinidad and Tobago: The Independence Experience, 1962–1987 (1988)',
+    url: 'https://books.google.com/books?id=aud6AAAAMAAJ',
+    note: 'Google Books record consulted for the Institute of Social and Economic Research, University of the West Indies edited volume (ISBN 9789766180058; 599 pages). No chapter wording, quotation, table or scan is republished; the multi-author volume is treated as a set of attributed scholarly perspectives rather than a single national verdict.',
+    accessDate: '2026-09-21', creators: ['Selwyn D. Ryan', 'Gloria Gordon'], institution: 'Institute of Social and Economic Research, University of the West Indies', publicationDate: '1988', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on independence, institutions and political economy', identifiers: { isbn: '9789766180058', pages: '599', alternateIsbn: '9766180059' },
+    description: 'Edited book-length account of the independence experience from 1962 to 1987, with chapters on political, constitutional, social and economic institutions and actors. It extends the decolonization baseline through the republican settlement while leaving later party and electoral developments to other sources.'
+  },
+  {
+    id: 'trinidadMeighooPolitics2003',
+    label: 'Kirk Meighoo — Politics in a Half Made Society: Trinidad and Tobago 1925–2001 (2003)',
+    url: 'https://ianrandlepublishers.com/product/politics-in-a-half-made-society/',
+    note: 'Ian Randle Publishers record consulted for the monograph (ISBN 9789766370794; 446 pages). No book wording, quotation, table, chapter or scan is republished; Meighoo’s narrative and analysis are attributed and bounded to 2001.',
+    accessDate: '2026-09-21', creators: ['Kirk Meighoo'], institution: 'Ian Randle Publishers', publicationDate: '2003', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national political history', identifiers: { isbn: '9789766370794', pages: '446' },
+    description: 'Book-length narrative and analytical political history from the first elections in 1925 through the 2001 deadlock, covering self-government and party politics, Eric Williams, the NAR period, the 1990 attempted coup, structural adjustment and Basdeo Panday’s rise. It is a central political history but does not establish current practice after 2001.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
