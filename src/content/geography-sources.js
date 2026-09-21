@@ -7131,6 +7131,86 @@ const sources = [
     description: 'French-language Haitian sociological essay published at the 1986–1987 rupture, linking the Duvalier legacy, state, nation, culture, migration, religion and the unfinished democratic project. It adds a materially different Haitian and Francophone perspective but predates later crises and is not a complete political history.'
   },
   {
+    id: 'unitedStatesDeclaration1776NationalArchives',
+    label: 'United States — Declaration of Independence (1776), National Archives record',
+    url: 'https://www.archives.gov/milestone-documents/declaration-of-independence',
+    note: 'National Archives record consulted as a primary witness to the 1776 declaration of independence and its political language. No declaration wording, quotation, translation, scan or page is republished; founding claims are distinguished from later constitutional practice, citizenship and equality.',
+    accessDate: '2026-09-21', creators: ['Continental Congress'], institution: 'U.S. National Archives and Records Administration',
+    publicationDate: '1776-07-04', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary declaration / founding political text', identifiers: { declarationDate: '1776-07-04' },
+    description: 'Primary political text articulating the Continental Congress’s declaration of independence and political justification. It records a founding claim and political argument, not the lived inclusion, consent or rights of every person within the later United States.'
+  },
+  {
+    id: 'unitedStatesConstitution1787NationalArchives',
+    label: 'United States — Constitution of the United States (1787), National Archives transcript',
+    url: 'https://www.archives.gov/founding-docs/constitution-transcript',
+    note: 'National Archives transcript consulted as a primary constitutional record. No constitutional wording, quotation, translation, scan or page is republished; formal federal design is distinguished from implementation, state power, exclusion and later amendments.',
+    accessDate: '2026-09-21', creators: ['Constitutional Convention of 1787'], institution: 'U.S. National Archives and Records Administration',
+    publicationDate: '1787-09-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official archival record', identifiers: { signingDate: '1787-09-17', ratificationYear: '1788' },
+    description: 'Primary constitutional text establishing the federal framework, enumerated powers, federal-state relations, amendment process and formal institutional architecture of the United States. It is evidence of constitutional design rather than proof of universal inclusion, democratic consent or equal enforcement.'
+  },
+  {
+    id: 'unitedStatesConstitutionAmendments1795to1992NationalArchives',
+    label: 'United States — Constitution Amendments 11–27, National Archives record',
+    url: 'https://www.archives.gov/founding-docs/amendments-11-27',
+    note: 'National Archives compilation consulted for the constitutional amendments from 1795 through 1992, including the Reconstruction, women’s-suffrage, voting-age and presidential-succession amendments. No amendment wording, quotation, translation, scan or page is republished; formal amendment text is distinguished from implementation and political experience.',
+    accessDate: '2026-09-21', creators: ['U.S. Congress', 'State ratifying authorities'], institution: 'U.S. National Archives and Records Administration',
+    publicationDate: '1795–1992', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional amendments / official archival record', identifiers: { amendments: '11–27', period: '1795–1992' },
+    description: 'Official compilation of later constitutional amendments used to anchor changes in federalism, slavery, citizenship, equal protection, voting, executive succession and other institutional rules. It does not by itself establish effective rights, equal participation or public agreement.'
+  },
+  {
+    id: 'unitedStatesFec2024PresidentialResults',
+    label: 'Federal Election Commission — Official 2024 Presidential General Election Results',
+    url: 'https://www.fec.gov/resources/cms-content/documents/2024presgeresults.pdf',
+    note: 'Federal Election Commission compilation consulted as a dated official record of the 2024 presidential general-election result. No result table, wording, scan or page is republished; reported returns anchor an endpoint without proving equal participation, voter experience, representative consent or broader democratic quality.',
+    accessDate: '2026-09-21', creators: ['Federal Election Commission'], institution: 'Federal Election Commission',
+    publicationDate: '2024', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official presidential election results', identifiers: { electionYear: '2024', electionType: 'presidential general election' },
+    description: 'Official federal compilation of state-reported 2024 presidential general-election results. It supplies a dated electoral endpoint for the bounded case while leaving campaign finance, state administration, turnout, disenfranchisement, litigation and voter experience to separate evidence.'
+  },
+  {
+    id: 'unitedStatesWoodCreationAmericanRepublic1998',
+    label: 'Gordon S. Wood — The Creation of the American Republic, 1776–1787 (1998 edition)',
+    url: 'https://uncpress.org/9780807847237/the-creation-of-the-american-republic-1776-1787/',
+    note: 'Omohundro Institute and UNC Press record consulted for the 1998 edition of Wood’s 1776–1787 political history (ISBN 9780807847237; 680 pages). No book wording, quotation, table, chapter or scan is republished; Wood’s interpretation is attributed and bounded to the revolutionary and constitutional founding.',
+    accessDate: '2026-09-21', creators: ['Gordon S. Wood'], institution: 'Omohundro Institute of Early American History and Culture / University of North Carolina Press',
+    publicationDate: '1998-04-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly political history of the founding', identifiers: { isbn: '9780807847237', pages: '680', originalPublicationYear: '1969' },
+    description: 'Book-length study of revolutionary political culture and the creation of the American republic from 1776 to 1787. It supplies a major intellectual and institutional interpretation of the founding without being generalized into a complete history of every region, community or later period.'
+  },
+  {
+    id: 'unitedStatesFonerSecondFounding2019',
+    label: 'Eric Foner — The Second Founding: How the Civil War and Reconstruction Remade the Constitution (2019)',
+    url: 'https://wwnorton.co.uk/books/9780393358520-the-second-founding-e1324ec6-923e-43db-ae17-067cf2ef1833',
+    note: 'W. W. Norton record consulted for Foner’s book on the Reconstruction amendments (paperback ISBN 9780393358520; 304 pages; original publication 2019). No book wording, quotation, table, chapter or scan is republished; the interpretation is attributed and bounded to constitutional Reconstruction and its contested aftermath.',
+    accessDate: '2026-09-21', creators: ['Eric Foner'], institution: 'W. W. Norton & Company',
+    publicationDate: '2019', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly history of Reconstruction constitutionalism', identifiers: { paperbackIsbn: '9780393358520', pages: '304', originalPublicationYear: '2019' },
+    description: 'Book-length interpretation of the Thirteenth, Fourteenth and Fifteenth Amendments, their origins and later narrowing by courts and political forces. It foregrounds equality, citizenship and Black political rights while not serving as a complete history of all Reconstruction communities or later implementation.'
+  },
+  {
+    id: 'unitedStatesGerstleLibertyCoercion2015',
+    label: 'Gary Gerstle — Liberty and Coercion: The Paradox of American Government from the Founding to the Present (2015)',
+    url: 'https://www.jstor.org/stable/j.ctvcszzxx',
+    note: 'Princeton University Press and JSTOR record consulted for Gerstle’s 2015 book (ISBN 9780691162942; 472 pages). No book wording, quotation, table, chapter or scan is republished; the argument about federal and state power is attributed and bounded to its two-century political history.',
+    accessDate: '2026-09-21', creators: ['Gary Gerstle'], institution: 'Princeton University Press',
+    publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly history of state power and federalism', identifiers: { isbn: '9780691162942', pages: '472' },
+    description: 'Book-length legal and political history of the tension between liberty and coercive or welfare-making state power across federal and state institutions. It provides a distinct institutional lens on the United States without reducing the country to a single liberal or illiberal type.'
+  },
+  {
+    id: 'unitedStatesLeporeTheseTruths2018',
+    label: 'Jill Lepore — These Truths: A History of the United States (2018)',
+    url: 'https://wwnorton.co.uk/books/9780393635249-these-truths',
+    note: 'W. W. Norton record consulted for Lepore’s 2018 national history (ISBN 9780393635249; 960 pages). No book wording, quotation, table, chapter or scan is republished; its broad narrative is paired with specialized constitutional and state-power studies and is not treated as every American experience.',
+    accessDate: '2026-09-21', creators: ['Jill Lepore'], institution: 'W. W. Norton & Company',
+    publicationDate: '2018-10-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national political and social history', identifiers: { isbn: '9780393635249', pages: '960' },
+    description: 'Broad book-length history organized around political equality, natural rights, popular sovereignty and the contradictions of United States development. It adds a synthetic national narrative but cannot stand for all local, Indigenous, Black, immigrant, labor, gender, regional or transnational histories.'
+  },
+  {
     id: 'cubaNationalAssemblyElection2023',
     label: 'Consejo Electoral Nacional de Cuba — Resultados finales de las elecciones nacionales de 2023',
     url: 'https://www.granma.cu/cuba/2023-03-30/resultados-finales-confirman-participacion-mayoritaria-del-pueblo-en-elecciones-nacionales-30-03-2023-22-03-05',
@@ -7335,6 +7415,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
       : 'Middle Eastern political history and geography',
