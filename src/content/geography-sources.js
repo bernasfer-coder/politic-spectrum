@@ -7185,7 +7185,61 @@ const sources = [
     description: 'Scholarly edited volume examining the historical exclusion of Aboriginal and Torres Strait Islander people from full civic membership, changing citizenship concepts, self-determination, sovereignty, the 1967 referendum and possibilities for a plural political society. It is not a community-wide consensus or a complete post-1998 history.'
   },
   {
-   id: 'russiaConstitution1993Official',
+    id: 'newZealandConstitutionAct1986Official',
+    label: 'New Zealand — Constitution Act 1986, official legislation record',
+    url: 'https://www.legislation.govt.nz/act/public/1986/0114/latest/versions.aspx',
+    note: 'New Zealand Legislation record consulted as the primary constitutional source for the Crown, executive, House of Representatives, Parliament, courts, judicial independence and amendment framework. No statutory wording is republished; formal design is distinguished from Treaty practice, Māori authority, lived equality and later institutional implementation.',
+    accessDate: '2026-09-21', creators: ['New Zealand Parliament'], institution: 'New Zealand Legislation', publicationDate: '1986-12-13', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { enactmentDate: '1986-12-13' },
+    description: 'Primary constitutional record for New Zealand’s formal parliamentary and Crown-based order: the executive, House of Representatives, Parliament, courts and constitutional conventions are specified without establishing that formal institutions represent every community equally.'
+  },
+  {
+    id: 'newZealandElection2023Official',
+    label: 'New Zealand Electoral Commission — 2023 General Election official results',
+    url: 'https://www.electionresults.govt.nz/electionresults_2023/',
+    note: 'Electoral Commission results portal consulted for the 14 October 2023 general election and official results. The record anchors a dated institutional endpoint; it does not independently establish equal political voice, voter experience, party ideology, legitimacy or the status of any later government.',
+    accessDate: '2026-09-21', creators: ['New Zealand Electoral Commission'], institution: 'New Zealand Electoral Commission', publicationDate: '2023-11-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official general-election result / institutional record', identifiers: { electionDate: '2023-10-14', officialResultDate: '2023-11-03' },
+    description: 'Primary electoral record for the 2023 general election, used only to date the case’s contemporary endpoint and identify the formally administered MMP contest.'
+  },
+  {
+    id: 'newZealandOrangeTreaty2011',
+    label: 'Claudia Orange — The Treaty of Waitangi: A Study of Its Making, Interpretation and Significance, revised edition (2011)',
+    url: 'https://www.bwb.co.nz/books/the-treaty-of-waitangi',
+    note: 'Bridget Williams Books record consulted for the revised 2011 edition (ISBN 9781877242489; 356 pages). No book wording, quotation, table or scan is republished; Orange’s reconstruction of Treaty making, interpretation and Māori–Pākehā political meaning is attributed and bounded rather than treated as a single national consensus.',
+    accessDate: '2026-09-21', creators: ['Claudia Orange'], institution: 'Bridget Williams Books', publicationDate: '2011-01-28', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Treaty and constitutional history', identifiers: { isbn: '9781877242489', pages: '356', edition: 'revised' },
+    description: 'Book-length history of the Treaty of Waitangi’s making, interpretation and continuing political significance, used to distinguish Māori and Pākehā understandings and the Treaty’s constitutional afterlife from an undifferentiated national ideology.'
+  },
+  {
+    id: 'newZealandBelichParadiseReforged2002',
+    label: 'James Belich — Paradise Reforged: A History of the New Zealanders From the 1880s to the Year 2000 (2002)',
+    url: 'https://uhpress.hawaii.edu/title/paradise-reforged-a-history-of-the-new-zealanders-from-the-1880s-to-the-year-2000/',
+    note: 'University of Hawai‘i Press record consulted for the 606-page edition (ISBN 9780824825423). No book wording, quotation, table or scan is republished; Belich’s broad national synthesis is treated as one period-bounded interpretation and not as a complete account of Māori, Pacific, local or post-2000 experiences.',
+    accessDate: '2026-09-21', creators: ['James Belich'], institution: 'University of Hawai‘i Press', publicationDate: '2002-02-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national political and social history', identifiers: { isbn: '9780824825423', pages: '606' },
+    description: 'Broad political and social history of New Zealanders from the late nineteenth century through 2000, supplying national context for settler society, Māori–Pākehā relations, welfare, reform and identity without claiming a single national political position.'
+  },
+  {
+    id: 'newZealandWalkerStruggleWithoutEnd2004',
+    label: 'Ranginui Walker — Ka Whawhai Tonu Matou = Struggle Without End, revised edition (2004)',
+    url: 'https://natlib.govt.nz/records/20487538',
+    note: 'National Library of New Zealand record consulted for the revised Penguin edition (ISBN 0143019457; 462 pages). No book wording, quotation, table or scan is republished; Walker’s Māori-centered political history is kept distinct from a generalized Māori or New Zealand consensus.',
+    accessDate: '2026-09-21', creators: ['Ranginui Walker'], institution: 'Penguin Books New Zealand / National Library of New Zealand', publicationDate: '2004', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Māori political and historical perspective', identifiers: { isbn: '0143019457', pages: '462', edition: 'revised' },
+    description: 'Māori-centered political history of colonization, resistance, social change, Treaty politics and Māori resurgence, used as a distinct perspective rather than evidence that all iwi, Māori communities or Aotearoa share one political programme.'
+  },
+  {
+    id: 'newZealandPalmerTreatyLawConstitution2008',
+    label: 'Matthew S. R. Palmer — The Treaty of Waitangi in New Zealand’s Law and Constitution (2008)',
+    url: 'https://teherengawakapress.co.nz/products/the-treaty-of-waitangi-in-new-zealands-law-and-constitution',
+    note: 'Te Herenga Waka University Press record consulted for the 2008 monograph (ISBN 9780864735799). No book wording, quotation, table or scan is republished; Palmer’s legal-constitutional analysis is attributed and distinguished from Treaty history, Māori political diversity and the practical record of institutions.',
+    accessDate: '2026-09-21', creators: ['Matthew S. R. Palmer'], institution: 'Te Herenga Waka University Press', publicationDate: '2008-11-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length constitutional and Treaty-law study', identifiers: { isbn: '9780864735799' },
+    description: 'Legal and constitutional study of the Treaty of Waitangi’s place in New Zealand’s public law, used to connect formal constitutional design and Treaty interpretation without treating judicial or governmental recognition as complete implementation or a single ideology.'
+  },
+  {
+    id: 'russiaConstitution1993Official',
     label: 'Constitution of the Russian Federation — adopted 12 December 1993, official English text',
     url: 'https://www.constitution.ru/en/10003000-01.htm',
     note: 'Official legal-text record consulted for the Constitution adopted by nationwide vote on 12 December 1993 and published on 25 December 1993. No constitutional wording is republished; the text is treated as evidence of formal design and state self-description, not proof of implementation, public consent or equal experience.',
@@ -7665,6 +7719,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('newZealand') ? 'New Zealand Treaty, Māori, parliamentary, welfare and constitutional political history'
       : source.id.startsWith('australia') ? 'Australian federal, settler-colonial, labor and constitutional political history'
       : source.id.startsWith('russia') ? 'Russian post-Soviet constitutional, authoritarian and political history'
       : source.id.startsWith('china') ? 'Chinese revolutionary, party-state, reform and developmental political history'
