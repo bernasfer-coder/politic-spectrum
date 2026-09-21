@@ -6267,6 +6267,78 @@ const sources = [
     description: 'Comparative political-science chapter explaining democratic survival after 1983 through changed actor commitments, policy moderation, memory of dictatorship, civilian control and rejection of military rebellions despite severe economic crises. It is a distinct comparative interpretation, not a complete social or institutional history.'
   },
   {
+    id: 'paraguayConstitution1992Bacn',
+    label: 'Paraguay — Constitución Nacional de 1992, Biblioteca y Archivo Central del Congreso Nacional',
+    url: 'https://www.bacn.gov.py/leyesparaguayas/9580/constitucion-nacional-',
+    note: 'Official BACN constitutional text consulted as a primary legal witness and link only. No constitutional wording, translation, scan or PDF page is republished; formal republican, representative, participatory and pluralist design is distinguished from implementation, public consent and later political practice.',
+    accessDate: '2026-09-21', creators: ['República del Paraguay'], institution: 'Biblioteca y Archivo Central del Congreso Nacional', publicationDate: '1992-06-20', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1992', adoptionDate: '1992-06-20' },
+    description: 'Primary constitutional witness to Paraguay’s post-authoritarian republican settlement, including representative, participatory and pluralist design, elected institutions, courts and rights. It establishes formal design rather than uniform practice, democratic legitimacy or a national ideological character.'
+  },
+  {
+    id: 'paraguayTsjeElection2018',
+    label: 'Tribunal Superior de Justicia Electoral — Memoria y estadística electoral de las elecciones generales 2018',
+    url: 'https://tsje.gov.py/noticias/leer/8533-memoria-y-estadistica-electoral-de-las-elecciones-generales-2018--disponible-en-formato-digital.html',
+    note: 'Official TSJE election-memory and statistics record consulted for the 22 April 2018 general election and legislative, gubernatorial and departmental results. No result table, ballot, candidate wording or PDF page is republished; the official record is distinguished from independent observation, voter motivation and equal access.',
+    accessDate: '2026-09-21', creators: ['Tribunal Superior de Justicia Electoral de la República del Paraguay'], institution: 'Tribunal Superior de Justicia Electoral', publicationDate: '2018-04-22', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official general-election record and institutional statistics', identifiers: { election: 'Paraguay general election 2018', date: '2018-04-22' },
+    description: 'Official electoral record of Paraguay’s 2018 presidential, legislative, gubernatorial and departmental elections. It anchors a dated electoral process without proving uniform fairness, representation, participation or public agreement.'
+  },
+  {
+    id: 'paraguayTsjeElection2023',
+    label: 'Tribunal Superior de Justicia Electoral — Elecciones generales y departamentales 2023',
+    url: 'https://tsje.gov.py/elecciones-generales-2023.html',
+    note: 'Official TSJE 2023 election portal and proclamation/results records consulted for the 30 April 2023 general and departmental elections. No result table, ballot, candidate wording or portal extract is republished; the institutional record is distinguished from independent observation, voter motivation, equal conditions and public consent.',
+    accessDate: '2026-09-21', creators: ['Tribunal Superior de Justicia Electoral de la República del Paraguay'], institution: 'Tribunal Superior de Justicia Electoral', publicationDate: '2023-04-30', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official general-election result and proclamation record', identifiers: { election: 'Paraguay general election 2023', date: '2023-04-30' },
+    description: 'Official institutional record of Paraguay’s 2023 presidential, Senate, Chamber of Deputies, gubernatorial and departmental elections. It establishes the selected endpoint without proving uniform electoral quality, representation, participation or later government performance.'
+  },
+  {
+    id: 'paraguayOasObservation2023',
+    label: 'Organization of American States — Preliminary report of the Electoral Observation Mission, Paraguay 2023',
+    url: 'https://www.oas.org/en/media_center/press_release.asp?sCodigo=S-003/23',
+    note: 'OAS preliminary observation record consulted for the 2023 Paraguayan general election. The mission’s conclusions are attributed to an international institutional observer; no report wording, table or scan is republished, and the observation is not treated as proof of uniform electoral quality or public consent.',
+    accessDate: '2026-09-21', creators: ['Organization of American States'], institution: 'Organization of American States, Electoral Observation Mission', publicationDate: '2023-05-01', evidenceRole: 'contextual', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'international election-observation report', identifiers: { report: 'OAS Electoral Observation Mission Paraguay 2023', date: '2023-05-01' },
+    description: 'Institutional observation of Paraguay’s 2023 election, including electoral organization, technology, campaign finance, electoral justice, women’s and Indigenous participation and stakeholder consultation. It supplies an attributed observation rather than a complete election-quality or public-opinion study.'
+  },
+  {
+    id: 'paraguayLambertNicksonTransition1997',
+    label: 'Peter Lambert and Andrew Nickson (eds.) — The Transition to Democracy in Paraguay (1997)',
+    url: 'https://link.springer.com/book/10.1007/978-1-349-25767-6',
+    note: 'Palgrave Macmillan/Springer record consulted for the English-language edited volume (1997; ISBN 0333625027 / 031217523X; 230 pages; DOI 10.1007/978-1-349-25767-6). No chapter wording, quotation, table or scan is republished; the contributors’ transition arguments are attributed and bounded to their periods and methods.',
+    accessDate: '2026-09-21', creators: ['Peter Lambert', 'Andrew Nickson'], institution: 'Palgrave Macmillan', publicationDate: '1997', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited volume on democratization', identifiers: { isbn: '0333625027', alternateIsbn: '031217523X', doi: '10.1007/978-1-349-25767-6', pages: '230' },
+    description: 'Edited book-length study of Paraguay’s difficult transition, including the Stroessner legacy, corruption, parties, armed forces, left, women, peasantry, labor, Indigenous peoples and transition policies. It supplies multiple contributor perspectives, not a complete national or post-1997 history.'
+  },
+  {
+    id: 'paraguayLambertNicksonReader2012',
+    label: 'Peter Lambert and Andrew Nickson (eds.) — The Paraguay Reader: History, Culture, Politics (2012)',
+    url: 'https://www.dukeupress.edu/the-paraguay-reader',
+    note: 'Duke University Press record consulted for the English-language anthology (2012; 488 pages; ISBN 9780822352495 hardcover, 9780822352686 paperback, eISBN 9780822395393; DOI 10.1215/9780822395393). No anthology wording, literary passage, table or scan is republished; its mix of testimony, journalism, scholarship, political tracts and literature is kept distinct by genre and contributor.',
+    accessDate: '2026-09-21', creators: ['Peter Lambert', 'Andrew Nickson'], institution: 'Duke University Press', publicationDate: '2012-12-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited reader / documentary anthology', identifiers: { isbn: '9780822352495', paperbackIsbn: '9780822352686', ebookIsbn: '9780822395393', doi: '10.1215/9780822395393', pages: '488' },
+    description: 'Edited reader combining historical scholarship, testimony, journalism, political tracts and literature across Paraguayan history, with a substantial twentieth- and early-twenty-first-century section including the transition and the Fernando Lugo impeachment horizon. It is plural and genre-mixed rather than a single national interpretation.'
+  },
+  {
+    id: 'paraguayRomeroDemocracia2023',
+    label: 'Salvador Romero Ballivián — Democracia en Paraguay: elecciones, partidos y ciudadanía (2023)',
+    url: 'https://www.idea.int/publications/catalogue/democracia-en-paraguay-elecciones-partidos-y-ciudadania?lang=es',
+    note: 'International IDEA book record consulted for the Spanish-language study (2023; 125 pages; ISBN PDF 9789176716977, print 9789176716984; DOI 10.31752/idea.2023.79). International IDEA presents the publication under a CC BY-NC-SA 4.0 framework; this project uses original synthesis and a link only, not book text or adapted material.',
+    accessDate: '2026-09-21', creators: ['Salvador Romero Ballivián'], institution: 'International IDEA', publicationDate: '2023-11-05', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length political history of elections and parties', identifiers: { isbn: '9789176716984', pdfIsbn: '9789176716977', doi: '10.31752/idea.2023.79', pages: '125', license: 'CC BY-NC-SA 4.0' },
+    description: 'Spanish-language book-length analysis of Paraguay’s democracy, elections, parties and citizenship since the fall of Stroessner, including the transition, Colorado party dominance, 2008 alternation and interruption, Colorado return and the 2023 election. It argues from a political-science and historical synthesis and does not establish a uniform citizen experience.'
+  },
+  {
+    id: 'paraguayBordaMasiEstadoEconomia2011',
+    label: 'Fernando Masi and Dionisio Borda (eds.) — Estado y economía en Paraguay 1870–2010 (2011)',
+    url: 'https://www.cadep.org.py/uploads/2022/05/Estado-y-Economi%CC%81a-en-Paraguay-1870-2010.pdf',
+    note: 'CADEP/CLACSO records consulted for the Spanish-language edited volume (Asunción, 2011; ISBN 978-99967-623-8-3; 400 pages). No chapter wording, table, quotation or PDF page is republished; the volume’s economic-history, state-institutional and clientelism analyses are attributed and bounded to their periods and methods.',
+    accessDate: '2026-09-21', creators: ['Fernando Masi', 'Dionisio Borda'], institution: 'Centro de Análisis y Difusión de la Economía Paraguaya (CADEP)', publicationDate: '2011-11', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length edited economic and political history', identifiers: { isbn: '9789996762383', pages: '400' },
+    description: 'Spanish-language edited volume examining Paraguay’s economic history and development model from 1870 to 2010, including the agrarian/export economy, state strategies, institutional capacity and clientelism during the democratic and post-Stroessner period. It supplies a political-economy lens rather than a complete social, constitutional or local history.'
+  },
+  {
     id: 'boliviaConstitution2009Gaceta',
     label: 'Estado Plurinacional de Bolivia — Constitución Política del Estado (2009)',
     url: 'https://www.gacetaoficialdebolivia.gob.bo/app/webroot/archivos/constitucion.pdf',
@@ -6449,6 +6521,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
       : source.id.startsWith('gambia') || source.id.startsWith('hughesPerfectPoliticalHistoryGambia') || source.id.startsWith('saineParadoxThirdWaveGambia') || source.id.startsWith('saineCeesaySallStateSocietyGambia') || source.id.startsWith('nabanehAbebeSoweGambiaTransition') ? 'Gambian constitutional, democratization and political history'
       : source.id.startsWith('southAfrica') || source.id.startsWith('klug') || source.id.startsWith('roux') || source.id.startsWith('southall') || source.id.startsWith('booysen') || source.id.startsWith('glaser') || source.id.startsWith('buthelezi') ? 'South African constitutional law and political history'
+      : source.id.startsWith('paraguay') ? 'Paraguayan post-authoritarian, constitutional and political history'
       : source.id.startsWith('bolivia') ? 'Bolivian plurinational, constitutional and political history'
       : source.id.startsWith('brazil') || source.id.startsWith('martinez') || source.id.startsWith('pilatti') || source.id.startsWith('camaraBrazil') ? 'Brazilian constitutional law and democratic political history'
           : source.id.startsWith('philippine') || source.id.startsWith('thompsonAntiMarcos') || source.id.startsWith('timbermanChangelessLand') || source.id.startsWith('abinalesAmoroso') || source.id.startsWith('chopraPhilippines') || source.id.startsWith('bonoanDresselPhilippine') || source.id.startsWith('thompsonPhilippines') || source.id.startsWith('arugayEncinasGamesChanges') || source.id.startsWith('calimbahinDresselBeyondGeopolitics') ? 'Philippine constitutional, oligarchic and democratic political history'
