@@ -23,7 +23,7 @@ const mappedWorldCountries = feature(world, world.objects.countries).features.ma
   const id = atlasIds[item.id] ?? (item.id ? `map-${item.id}` : `map-${item.properties.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '')}`);
   return { id, name: atlasNames[id] ?? item.properties.name, path: path(item), bounds: path.bounds(item), placeIds: atlasPlaceIds[item.id] ?? [] };
 });
-const MAP_FALLBACK_COORDINATES = { tonga: [-175.2, -21.1] };
+const MAP_FALLBACK_COORDINATES = { tonga: [-175.2, -21.1], 'map-882': [-172.1, -13.8] };
 const fallbackCountries = GEOGRAPHY_COUNTRIES.filter(({ id }) => !mappedWorldCountries.some((country) => country.id === id) && MAP_FALLBACK_COORDINATES[id]).map(({ id, name }) => {
   const geometry = { type: 'Point', coordinates: MAP_FALLBACK_COORDINATES[id] };
   return { id, name, path: path(geometry), bounds: path.bounds(geometry), placeIds: [], isLocator: true };

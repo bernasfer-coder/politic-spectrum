@@ -5039,6 +5039,87 @@ const sources = [
     sourceType: 'scholarly edited book on coup, state and society', identifiers: { isbn: '9781921536502', ebookIsbn: '9781921536519', doi: '10.22459/MTF.04.2009', pages: '472' },
     description: 'Open scholarly edited volume bringing together historical, political, legal, social and first-person perspectives on the 2006 takeover and its aftermath. It supports triangulation of coup narratives, military intervention, race, governance and civil society while preserving disagreement among contributors.',
   },
+  {
+    id: 'samoaConstitution1960Oec',
+    label: 'Office of the Electoral Commission of Samoa — Constitution of the Independent State of Samoa (1960)',
+    url: 'https://www.oec.gov.ws/wp-content/uploads/2025/06/Constitution-of-the-Independent-State-of-Samoa-1960.pdf',
+    note: 'Official OEC-hosted constitutional text consulted in the English version. The text is used as a primary legal record for Samoa’s constitutional order; no constitutional wording is republished and the document does not by itself prove customary practice, equal participation or public consent.',
+    accessDate: '2026-09-21', creators: ['Independent State of Samoa'], institution: 'Office of the Electoral Commission of Samoa', publicationDate: '1960', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional text', identifiers: {},
+    description: 'Primary constitutional record for Samoa’s independence-era parliamentary, executive, judicial, electoral and customary-law framework, including provisions governing the Head of State, Legislative Assembly and political authority. It is read as formal design rather than a complete description of political practice.',
+  },
+  {
+    id: 'samoaOecResources',
+    label: 'Office of the Electoral Commission of Samoa — Legislation, elections and publications portal',
+    url: 'https://www.oec.gov.ws/resources/',
+    note: 'Official OEC resources page consulted for the Constitution, electoral legislation, 2021 General Elections Report and Commission of Inquiry materials in English and Samoan. It establishes the public institutional source trail but does not replace independent analysis of implementation or political conflict.',
+    accessDate: '2026-09-21', creators: ['Office of the Electoral Commission of Samoa'], institution: 'Office of the Electoral Commission of Samoa', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Samoan'],
+    sourceType: 'official electoral legislation and publications portal', identifiers: {},
+    description: 'Official source index for Samoa’s electoral laws, election reports, constitutional text and 2021 inquiry publications. It records the formal administrative archive and its language availability without implying that an official archive resolves all scholarly or community perspectives.',
+  },
+  {
+    id: 'samoa2021ElectionInquiryReport',
+    label: 'Samoa Commission of Inquiry — Commission of Inquiry into the General Elections 2021',
+    url: 'https://www.oec.gov.ws/wp-content/uploads/2024/09/230414-Commission-of-Inquiry-into-the-General-Elections-2021-Report-FINAL.pdf',
+    note: 'Official Commission of Inquiry report hosted by Samoa’s OEC, consulted for the institutional and social context of the 2021 election and constitutional crisis. Its findings and recommendations are treated as an official inquiry record, not as a complete or uncontested account of every Samoan community.',
+    accessDate: '2026-09-21', creators: ['Samoa Commission of Inquiry into the General Elections 2021'], institution: 'Office of the Electoral Commission of Samoa', publicationDate: '2023', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election inquiry report', identifiers: {},
+    description: 'Primary inquiry report on the 2021 general election, its constitutional deadlock and the institutional and social consequences identified by the commissioners. It provides official evidence about the crisis while leaving broader historical interpretation and community experience open.',
+  },
+  {
+    id: 'samoaFastCourtDecision2021',
+    label: 'Supreme Court of Samoa — FAST Party and others v Attorney-General and others (2021)',
+    url: 'https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/594/2021/05/17014648/FAST-Party-Ors-v-Attorney-General-Ors-Decision.pdf',
+    note: 'Mirrored copy of a Supreme Court of Samoa decision in the 2021 constitutional dispute, consulted as a primary judicial record. The mirror is used because a stable official court-hosted copy was not located; later appellate proceedings and the full 2021 legal sequence are not silently collapsed into this decision.',
+    accessDate: '2026-09-21', creators: ['Supreme Court of Samoa'], institution: 'Supreme Court of Samoa / mirrored judicial document', publicationDate: '2021-05-17', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'primary constitutional judgment / mirrored court record', identifiers: { decisionDate: '2021-05-17' },
+    description: 'Primary judicial record from the 2021 election and constitutional dispute, used to anchor claims about the court’s treatment of the Head of State, Parliament and the FAST challenge. Because the accessible copy is mirrored, it is paired with the official inquiry and constitutional text rather than treated as the entire crisis record.',
+  },
+  {
+    id: 'meleiseaMakingModernSamoa1987',
+    label: 'Malama Meleisea — The Making of Modern Samoa: Traditional Authority and Colonial Administration in the History of Western Samoa (1987)',
+    url: 'https://books.google.com/books/about/The_Making_of_Modern_Samoa.html?id=kMKgKanykIUC',
+    note: 'Library-style bibliographic record consulted for Meleisea’s book-length Samoan historical study. The book is used for attributed analysis of traditional authority, colonial administration and Samoan political history; no copyrighted prose is republished.',
+    accessDate: '2026-09-21', creators: ['Malama Meleisea'], institution: 'Institute of Pacific Studies, University of the South Pacific', publicationDate: '1987', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Samoan political and colonial history', identifiers: { isbn: '9789820200319', pages: '280' },
+    description: 'Book-length historical study of the interaction between Samoan traditional authority and colonial administration, drawing political history and customary institutions into the same account. It supplies an internally grounded historical perspective while ending before the later independence and 2021 crisis evidence.',
+  },
+  {
+    id: 'lawsonTraditionDemocracySamoa1996',
+    label: 'Stephanie Lawson — Tradition versus Democracy in the South Pacific: Fiji, Tonga and Western Samoa (1996)',
+    url: 'https://www.cambridge.org/core/books/tradition-versus-democracy-in-the-south-pacific/AE3CC1E997943561D36175D55F3020D2',
+    note: 'Cambridge University Press record consulted for Lawson’s comparative book-length analysis, including a dedicated Western Samoa case study. Its argument about tradition, democratization and universal suffrage is attributed and comparative, not treated as a complete Samoan political history.',
+    accessDate: '2026-09-21', creators: ['Stephanie Lawson'], institution: 'Cambridge University Press', publicationDate: '1996', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative political analysis', identifiers: { isbn: '9780521496384', doi: '10.1017/CBO9780511470165', pages: '244' },
+    description: 'Comparative political study of tradition, democracy and constitutional development in Fiji, Tonga and Western Samoa. The Samoan chapter treats universal suffrage and the preservation or transformation of customary authority as a political problem, providing an independent interpretive perspective rather than a national consensus.',
+  },
+  {
+    id: 'meleiseaSamoasJourney2012',
+    label: 'Malama Meleisea, Penelope Schoeffel Meleisea and Ellie Meleisea (eds.) — Samoa’s Journey 1962–2012: Aspects of History (2012)',
+    url: 'https://search.worldcat.org/es/title/Samoa%27s-journey-1962-2012-%3A-aspects-of-history/oclc/806299464',
+    note: 'WorldCat record consulted for the edited book published for Samoa’s first fifty years of independence. The collection is treated as a multi-author historical perspective with different topical scopes; it is not used to imply one unified interpretation or to republish chapter text.',
+    accessDate: '2026-09-21', creators: ['Malama Meleisea', 'Penelope Schoeffel Meleisea', 'Ellie Meleisea'], institution: 'Victoria University Press / National University of Samoa', publicationDate: '2012', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on independent Samoa', identifiers: { isbn: '9780864738356' },
+    description: 'Edited volume by Samoan and Pacific scholars surveying political, social, economic, cultural and institutional aspects of Samoa’s first fifty years of independence. It broadens the historical base beyond constitutional law while its chapter-specific methods and coverage remain explicit.',
+  },
+  {
+    id: 'swainFonoSamoa2022',
+    label: 'Peter Swain — Fono: The Contest for the Governance of Sāmoa (2022)',
+    url: 'https://teherengawakapress.co.nz/products/fono-the-contest-for-the-governance-of-samoa',
+    note: 'Te Herenga Waka University Press record consulted for Swain’s book-length history of Samoan governance through the 2021 general election and constitutional crisis. The publisher description is used only for cautious scope and metadata; no book prose is reproduced.',
+    accessDate: '2026-09-21', creators: ['Peter Swain'], institution: 'Te Herenga Waka University Press', publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Samoan governance and electoral history', identifiers: { isbn: '9781776920655', pages: '176' },
+    description: 'Book-length history of Samoan governance from settlement and colonial rule through indigenous institutions and the hard-fought 2021 general election. It supplies a recent political narrative that complements, rather than replaces, the official inquiry and constitutional records.',
+  },
+  {
+    id: 'metiSamoaMakingConstitution2002',
+    label: 'Lauofo Meti — Samoa: The Making of the Constitution (2002)',
+    url: 'https://books.google.com/books/about/Samoa.html?id=woecAAAAMAAJ',
+    note: 'Library-style bibliographic record consulted for Meti’s book-length study of Samoa’s constitutional conventions and independence settlement. It is used as a constitutional history source with no copyrighted text reproduced and no claim that formal settlement exhausted customary politics.',
+    accessDate: '2026-09-21', creators: ['Lauofo Meti'], institution: 'National University of Samoa', publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length constitutional history', identifiers: { isbn: '9789829003188', pages: '349' },
+    description: 'Book-length study of Samoa’s constitutional conventions, self-government and independence settlement, including the relationship between elected institutions, customary authority and citizenship. It supplies constitutional detail while remaining a historical interpretation rather than proof of later practice.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -5093,6 +5174,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') || source.id.startsWith('ethiopiaAu') || source.id.startsWith('ethiopiaJusticeTransitional') || source.id.startsWith('plautVaughanTigrayWar') || source.id.startsWith('erlichGreaterTigray') ? 'Ethiopian revolutionary, federal, conflict and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('campbellTongasWayDemocracy') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') || source.id.startsWith('tupouTongaReform') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('fiji') || source.id.startsWith('lalBrokenWavesFiji') || source.id.startsWith('lawsonFailureDemocraticPoliticsFiji') || source.id.startsWith('lalAnotherWayFiji') || source.id.startsWith('fraenkelFirthLalMilitaryTakeoverFiji') ? 'Fijian constitutional, coup and political history'
+        : source.id.startsWith('samoa') || source.id.startsWith('meleiseaMakingModernSamoa') || source.id.startsWith('lawsonTraditionDemocracySamoa') || source.id.startsWith('meleiseaSamoasJourney') || source.id.startsWith('swainFonoSamoa') || source.id.startsWith('metiSamoa') ? 'Samoan constitutional, customary and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : 'Middle Eastern political history and geography',

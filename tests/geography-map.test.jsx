@@ -16,8 +16,8 @@ afterEach(cleanup);
 
 describe('map geometry and filter contracts', () => {
   it('keeps all map IDs unique, finite and compatible with share URLs', () => {
-    expect(MAP_COUNTRIES).toHaveLength(178);
-    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(178);
+    expect(MAP_COUNTRIES).toHaveLength(179);
+    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(179);
     for (const item of MAP_COUNTRIES) {
       expect(item.path).toMatch(/^M/);
       expect(item.path).not.toMatch(/NaN|Infinity/);
@@ -167,7 +167,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(93);
+    expect(cards()).toHaveLength(94);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });
