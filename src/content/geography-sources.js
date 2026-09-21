@@ -5399,6 +5399,105 @@ const sources = [
     sourceType: 'book-length economic and political-economy history', identifiers: { isbn: '9781760466992', ebookIsbn: '9781760467005', doi: '10.22459/SRBB.2025', pages: '415' },
     description: 'Recent book-length economic history of Papua New Guinea since independence, linking policy, institutions, resource dependence, political insecurity and growth across four periods. It supplies economic context for the six-axis interpretation while remaining distinct from a full political or social history.',
   },
+  {
+    id: 'timorConstitution2002Mj',
+    label: 'Constituent Assembly of Timor-Leste — Constitution of the Democratic Republic of Timor-Leste (2002)',
+    url: 'https://www.mj.gov.tl/jornal/public/docs/ConstituicaoRDTL_Portugues.pdf',
+    note: 'Official Portuguese constitutional text consulted through Timor-Leste’s Ministry of Justice legal journal. It is used as a primary record of the 2002 sovereign constitutional settlement, rights, separation of powers, language, resistance recognition and international principles; no text is republished and formal design is not treated as proof of implementation or consent.',
+    accessDate: '2026-09-21', creators: ['Constituent Assembly of Timor-Leste'], institution: 'Ministry of Justice / Jornal da República, Timor-Leste', publicationDate: '2002-03-22', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official constitutional text', identifiers: { adoptionDate: '2002-03-22', independenceDate: '2002-05-20' },
+    description: 'Primary legal record of the Constitution adopted by the Constituent Assembly on 22 March 2002 and in force at restoration of independence. It anchors the formal democratic, rights-bearing, sovereign and semi-presidential order without settling later practice or every local interpretation.',
+  },
+  {
+    id: 'timorUN1999Agreement',
+    label: 'United Nations — Agreement between Indonesia and Portugal on the Question of East Timor (1999)',
+    url: 'https://digitallibrary.un.org/record/1492926?ln=en',
+    note: 'United Nations Digital Library record consulted for the 5 May 1999 tripartite agreements on East Timor, including the autonomy proposal and modalities for a direct ballot. It is treated as a primary diplomatic and legal record of the transition framework, not as proof that security obligations were fulfilled or that all Timorese voices were represented.',
+    accessDate: '2026-09-21', creators: ['United Nations Secretary-General', 'Government of Indonesia', 'Portuguese Republic'], institution: 'United Nations', publicationDate: '1999-05-05', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French', 'Portuguese'],
+    sourceType: 'primary diplomatic agreements and UN report', identifiers: { documentSymbol: 'A/53/951-S/1999/513' },
+    description: 'Primary record transmitting the agreements that structured the 1999 popular consultation and the division of responsibilities among Indonesia, Portugal and the United Nations. It anchors the diplomatic setting while preserving the gap between formal commitments and violent implementation.',
+  },
+  {
+    id: 'timorUN1999Consultation',
+    label: 'United Nations Secretary-General — East Timor popular consultation result (1999)',
+    url: 'https://press.un.org/en/1999/19990903.sgsm7119.html',
+    note: 'UN Secretary-General announcement and result record consulted for the 30 August 1999 ballot, certified vote totals and the subsequent violence and displacement. It is used as a dated primary institutional record; the result is not expanded into a claim about uniform consent, later political legitimacy or all social groups.',
+    accessDate: '2026-09-21', creators: ['United Nations Secretary-General'], institution: 'United Nations', publicationDate: '1999-09-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official UN consultation and diplomatic record', identifiers: { consultationDate: '1999-08-30', documentSymbol: 'SG/SM/7119' },
+    description: 'Primary UN record of the certified 1999 consultation result and the immediate post-ballot crisis. It documents the international transition and its coercive conditions without replacing local testimony, Indonesian records or scholarly interpretation.',
+  },
+  {
+    id: 'timorCne2023Parliament',
+    label: 'Timor-Leste National Electoral Commission — 2023 parliamentary election provisional tabulation (2023)',
+    url: 'https://cne.tl/tet/cne/eleisaunpn/',
+    note: 'Official CNE portal consulted for the provisional national tabulation record of the 21 May 2023 parliamentary election. It is used as a dated administrative primary source and its provisional status is retained; it does not independently establish electoral fairness, participation equality, party legitimacy or subsequent government performance.',
+    accessDate: '2026-09-21', creators: ['National Electoral Commission of Timor-Leste'], institution: 'Comissão Nacional de Eleições, Timor-Leste', publicationDate: '2023-05-21', evidenceRole: 'primary', confidence: 'high', languages: ['Tetum'],
+    sourceType: 'official election-results portal', identifiers: { electionDate: '2023-05-21' },
+    description: 'Primary election-administration record for the 2023 parliamentary endpoint, including the CNE’s provisional tabulation materials. It establishes a dated institutional horizon while leaving appeals, local variation and independent observation as separate evidence questions.',
+  },
+  {
+    id: 'timorGov2023ElectionCalendar',
+    label: 'Government of Timor-Leste — 2023 parliamentary election calendar (2023)',
+    url: 'https://timor-leste.gov.tl/?lang=en&p=32149',
+    note: 'Government election calendar consulted for the 2023 parliamentary election timetable, national tabulation, appeals and Court of Appeal validation sequence. It is an official administrative record, not independent evidence that the process was fair or uncontested.',
+    accessDate: '2026-09-21', creators: ['Government of Timor-Leste'], institution: 'Government of Timor-Leste', publicationDate: '2023', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election calendar and legal-administrative record', identifiers: { electionDate: '2023-05-21' },
+    description: 'Primary administrative record of the 2023 election and review timetable. It helps separate provisional tabulation from the later legal validation stage without supplying a complete account of election quality or political representation.',
+  },
+  {
+    id: 'molnarTimorPoliticsHistoryCulture2010',
+    label: 'Andrea Katalin Molnar — Timor Leste: Politics, History, and Culture (2010)',
+    url: 'https://www.routledge.com/Timor-Leste-Politics-History-and-Culture/Molnar/p/book/9780415809986',
+    note: 'Routledge record consulted for Molnar’s 224-page book, published in 2010 in the Routledge Contemporary Southeast Asia series. It is used as a broad political and cultural history through the early post-independence period; its 2009/2010 horizon cannot settle later governments, local-language scholarship or all Timorese experiences.',
+    accessDate: '2026-09-21', creators: ['Andrea Katalin Molnar'], institution: 'Routledge', publicationDate: '2010', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political, historical and cultural study', identifiers: { isbn: '9780415809986', pages: '224' },
+    description: 'Broad book-length overview of Timor-Leste’s precolonial, Portuguese, Indonesian, UN and early independent political history, with attention to language, culture, church activism, truth and reconciliation, security and oil politics. It provides one national synthesis rather than a complete or uncontested account.',
+  },
+  {
+    id: 'kammenIndependentTimorLeste2019',
+    label: 'Douglas Kammen — Independent Timor-Leste (2019)',
+    url: 'https://www.cambridge.org/core/books/independent-timorleste/3CF0029FAF4481528DBF87CE93CAF1A5',
+    note: 'Cambridge University Press record consulted for Kammen’s 84-page Cambridge Element, published in 2019. Its four-period analysis of rule, coercion, consent and post-2002 inducement is treated as an attributed scholarly interpretation, not a timeless national characterization or current-country judgment.',
+    accessDate: '2026-09-21', creators: ['Douglas Kammen'], institution: 'Cambridge University Press', publicationDate: '2019-03-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly political analysis', identifiers: { isbn: '9781108457583', ebookIsbn: '9781108558488', pages: '84', doi: '10.1017/9781108558488' },
+    description: 'Book-length political analysis of changing modes of rule in Timor-Leste across colonial, occupation, referendum and post-restoration periods. It supplies a distinct interpretation of coercion, consent and petroleum-era inducements, while remaining one analytical lens among several.',
+  },
+  {
+    id: 'foxBaboSoaresOutOfAshes2003',
+    label: 'James J. Fox and Dionisio Babo Soares (eds.) — Out of the Ashes: Destruction and Reconstruction of East Timor (2003)',
+    url: 'https://press.anu.edu.au/publications/out-ashes',
+    note: 'ANU Press record consulted for the 276-page edited volume on East Timor’s historical background, 1999 destruction and early reconstruction. The contributors include researchers and participants; their chapters are kept distinct and the volume is not treated as a single consensus or a complete post-2002 history.',
+    accessDate: '2026-09-21', creators: ['James J. Fox', 'Dionisio Babo Soares'], institution: 'ANU Press', publicationDate: '2003-11', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on transition and reconstruction', identifiers: { isbn: '9780975122914', ebookIsbn: '9780975122907', pages: '276', doi: '10.22459/OA.11.2003' },
+    description: 'Edited book-length collection combining historical perspectives, political analysis and participant knowledge on the 1999 referendum, violence, diplomacy, resistance, reconstruction and the transition toward independence. It preserves multiple standpoints and a deliberately early post-conflict horizon.',
+  },
+  {
+    id: 'pereiraFeijoLongRoadTimor2023',
+    label: 'Zélia Pereira and Rui Graça Feijó (eds.) — Timor-Leste’s Long Road to Independence: Transnational Perspectives (2023)',
+    url: 'https://www.degruyterbrill.com/document/doi/10.1515/9789048555703/html',
+    note: 'Amsterdam University Press record consulted for the 416-page scholarly edited volume published in 2023. Its transnational chapters cover Portuguese decolonization, Indonesian invasion and annexation, resistance, diplomacy, solidarity and the Catholic Church; it is used for the 1945–1999 independence trajectory and not silently extended to all post-2002 political practice.',
+    accessDate: '2026-09-21', creators: ['Zélia Pereira', 'Rui Graça Feijó'], institution: 'Amsterdam University Press', publicationDate: '2023-08-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on transnational decolonization and independence', identifiers: { ebookIsbn: '9789048555703', pages: '416', doi: '10.1515/9789048555703' },
+    description: 'Recent edited volume using a transnational perspective to connect Portuguese decolonization, Indonesian occupation, Timorese resistance, international diplomacy, solidarity networks and the United Nations. It triangulates national histories while remaining primarily a pre-independence and independence-process study.',
+  },
+  {
+    id: 'roqueTimorEtnografico2022',
+    label: 'Ricardo Roque — Timor Etnográfico: Etnografias Coloniais Portuguesas no Século XX (2022)',
+    url: 'https://www.ics.ulisboa.pt/livros/timor-etnografico-etnografias-coloniais-portuguesas-no-seculo-xx',
+    note: 'Instituto de Ciências Sociais, Universidade de Lisboa record consulted for Roque’s 386-page Portuguese-language book on twentieth-century Portuguese colonial ethnographies. It is used to complicate colonial knowledge and identity formation, not as a transparent account of Timorese society or a substitute for Timorese-language and oral histories.',
+    accessDate: '2026-09-21', creators: ['Ricardo Roque'], institution: 'Instituto de Ciências Sociais, Universidade de Lisboa', publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'Portuguese-language book on colonial ethnography and political knowledge', identifiers: { isbn: '9789726716747', pages: '386' },
+    description: 'Portuguese-language book-length study of colonial ethnographic production in twentieth-century Timor. It provides a critical perspective on how colonial knowledge represented Timorese society and identity, with explicit limits as to lived experience and later state history.',
+  },
+  {
+    id: 'feijoConstitutionalNormsTimor2024',
+    label: 'Rui Graça Feijó — Timor-Leste: Constitutional Provisions, Political Conventions and Legitimacy Under Strain (2024)',
+    url: 'https://link.springer.com/chapter/10.1007/978-981-99-9655-1_11',
+    note: 'Springer chapter record consulted for Feijó’s 2024 chapter, pp. 175–191, in the Palgrave Handbook of Political Norms in Southeast Asia. It is used as a recent scholarly interpretation of constitutional norms, conventions and legitimacy, not as independent proof of uniform implementation or current political status.',
+    accessDate: '2026-09-21', creators: ['Rui Graça Feijó'], institution: 'Palgrave Macmillan / Springer Nature', publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly book chapter on constitutional norms and legitimacy', identifiers: { pages: '175-191', doi: '10.1007/978-981-99-9655-1_11' },
+    description: 'Recent book chapter examining the relationship between formal constitutional provisions, political conventions and legitimacy pressures in Timor-Leste. It adds an institutional and normative perspective to the historical synthesis while retaining the chapter’s analytical scope.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -5457,6 +5556,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('vanuatu') || source.id.startsWith('vanTrease') || source.id.startsWith('premdasSteeves') || source.id.startsWith('woodwardNewHebrides') || source.id.startsWith('brownCustomaryLawMelanesia') ? 'Vanuatuan constitutional, customary and decolonization history'
       : source.id.startsWith('solomon') || source.id.startsWith('larmourTaruaSolomon') || source.id.startsWith('crocombeTuzaSolomon') || source.id.startsWith('mooreHappyIsles') || source.id.startsWith('dinnenFirthPoliticsStateBuildingSolomon') || source.id.startsWith('keniloreaTellItAsItIsSolomon') || source.id.startsWith('akinColonialismMaasinaRuleSolomon') ? 'Solomon Islands constitutional, customary and postcolonial political history'
       : source.id.startsWith('png') || source.id.startsWith('griffinNelsonFirthPapua') || source.id.startsWith('dorneyPapua') || source.id.startsWith('mayStateSocietyPapua') || source.id.startsWith('howesPillaiPapua') || source.id.startsWith('howesDaviesFoxStruggleReformPapua') ? 'Papua New Guinean constitutional, customary and postcolonial political history'
+        : source.id.startsWith('timor') || source.id.startsWith('molnarTimor') || source.id.startsWith('kammenIndependentTimor') || source.id.startsWith('foxBaboSoares') || source.id.startsWith('pereiraFeijoLongRoadTimor') || source.id.startsWith('roqueTimor') || source.id.startsWith('feijoConstitutionalNormsTimor') ? 'Timor-Leste decolonization, resistance and constitutional political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : 'Middle Eastern political history and geography',
