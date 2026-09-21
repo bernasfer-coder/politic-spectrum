@@ -7049,6 +7049,87 @@ const sources = [
     sourceType: 'book-length political biography and development history', identifiers: { isbn: '9789766409593', pages: '474' },
     description: 'Book-length political history through Wills O. Isaacs, connecting party life and development struggles with decolonization, the decline of sugar, migration, unemployment and industrialization from the 1930s into the twenty-first century. It offers a biographical and anthropological lens rather than a complete current-country account.'
   },
+  {
+    id: 'haitiConstitution1987Mef',
+    label: 'Ministère de l’Économie et des Finances d’Haïti — Constitution du 29 mars 1987',
+    url: 'https://mef.gouv.ht/cadre-reglementaire/constitution',
+    note: 'Official Haitian ministry legal page consulted as a primary constitutional record and link only. No constitutional wording, translation, scan or page is republished; formal design is distinguished from implementation, public consent and later political practice.',
+    accessDate: '2026-09-21', creators: ['Ministère de l’Économie et des Finances d’Haïti'], institution: 'Ministère de l’Économie et des Finances d’Haïti', publicationDate: '1987-03-29', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1987', promulgationDate: '1987-03-29' },
+    description: 'Official legal record for the post-Duvalier constitutional refoundation, used for the formal republican, rights, separation-of-powers and electoral design of the 1987 order. It anchors constitutional text rather than proving uniform implementation or lived equality.'
+  },
+  {
+    id: 'haitiOas1990Election',
+    label: 'Inter-American Commission on Human Rights — Annual Report 1990–1991, Haiti chapter',
+    url: 'https://cidh.oas.org/annualrep/90.91eng/chap.4c.htm',
+    note: 'OAS/IACHR annual-report chapter consulted as a primary inter-American human-rights and electoral record. No report wording or page is republished; its observer account and institutional findings are distinguished from a complete national history, public consent or later implementation.',
+    accessDate: '2026-09-21', creators: ['Inter-American Commission on Human Rights'], institution: 'Organization of American States', publicationDate: '1991', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary human-rights and electoral observation record', identifiers: { electionDate: '1990-12-16' },
+    description: 'Official inter-American record of the 1990 electoral opening, international observation, Aristide’s victory, the January 1991 attempted coup and the human-rights environment around the transition. It supplies a dated institutional witness rather than a complete account of Haitian political experience.'
+  },
+  {
+    id: 'haitiOas2002Situation',
+    label: 'Organization of American States — First report of the Secretary General to the Permanent Council on Haiti’s democratic and electoral situation',
+    url: 'https://www.oas.org/oaspage/Haiti_situation/cpdoc3671_02_eng.htm',
+    note: 'OAS report consulted as a primary diplomatic and institutional record and link only. No report wording, quotation or page is republished; the institutional diagnosis and proposed electoral measures are not treated as proof that reforms were implemented or that one political actor represented Haiti.',
+    accessDate: '2026-09-21', creators: ['Organization of American States, Secretary General'], institution: 'Organization of American States', publicationDate: '2002', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary regional diplomatic and electoral record', identifiers: { reportYear: '2002' },
+    description: 'Official OAS record of the post-2000 democratic and electoral crisis, including the organization’s concern with a credible Provisional Electoral Council and the rule-of-law horizon. It documents an institutional perspective, not a neutral or exhaustive account of Haitian politics.'
+  },
+  {
+    id: 'haitiOas2016Election',
+    label: 'Organization of American States — Status report of the Electoral Observation Mission in Haiti on the 2015–2016 elections',
+    url: 'https://www.oas.org/es/sap/deco/moe_informe/informe_moe_haiti2016_e.pdf',
+    note: 'OAS Electoral Observation Mission status report consulted as a primary electoral record and link only. No result table, wording, scan or PDF page is republished; the mission’s dated account is distinguished from voter experience, final legitimacy judgments and subsequent political practice.',
+    accessDate: '2026-09-21', creators: ['Organization of American States, Electoral Observation Mission'], institution: 'Organization of American States', publicationDate: '2016-01-28', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary electoral observation report', identifiers: { reportDate: '2016-01-28', electionCycle: '2015-2016' },
+    description: 'Official regional observation record for Haiti’s legislative, presidential, municipal and local electoral cycle, including the postponed presidential runoff. It establishes a dated endpoint and observer perspective without resolving all disputes about representation or legitimacy.'
+  },
+  {
+    id: 'haitiTrouillotStateNation2000',
+    label: 'Michel-Rolph Trouillot — Haiti: State Against Nation: The Origins and Legacy of Duvalierism (2000)',
+    url: 'https://nyupress.org/9780853457565/haiti-state-against-nation/',
+    note: 'Monthly Review Press/New York University Press record consulted for the 2000 monograph (ISBN 9780853457565; 225 pages). No book wording, quotation, table, chapter or scan is republished; Trouillot’s state–nation interpretation is attributed and period-bounded.',
+    accessDate: '2026-09-21', creators: ['Michel-Rolph Trouillot'], institution: 'Monthly Review Press', publicationDate: '2000-04-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length anthropological and political history of Duvalierism', identifiers: { isbn: '9780853457565', pages: '225' },
+    description: 'Book-length Haitian analysis of Duvalierist state formation, its historical roots and the post-Duvalier crisis, emphasizing the disjunction between state and nation, national-unity rhetoric and political violence. It is a foundational interpretation, not a complete history of every period or community.'
+  },
+  {
+    id: 'haitiFattonPredatoryRepublic2002',
+    label: 'Robert Fatton Jr. — Haiti’s Predatory Republic: The Unending Transition to Democracy (2002)',
+    url: 'https://www.rienner.com/title/Haiti_s_Predatory_Republic_The_Unending_Transition_to_Democracy',
+    note: 'Lynne Rienner publisher record consulted for the 2002 monograph (ISBN 9781588260604 hardcover / 9781588260857 paperback; 237 pages). No book wording, quotation, table, chapter or scan is republished; Fatton’s political analysis is attributed and bounded to 1986–2001.',
+    accessDate: '2026-09-21', creators: ['Robert Fatton Jr.'], institution: 'Lynne Rienner Publishers', publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-Duvalier political history', identifiers: { isbn: '9781588260604', paperbackIsbn: '9781588260857', pages: '237' },
+    description: 'Book-length study of Haiti from the fall of Duvalier through the 2001 crisis, analyzing class, state, civil society, Aristide, Lavalas, elections and the difficult construction of liberal democracy. It is a central political interpretation but does not establish uniform practice or later developments.'
+  },
+  {
+    id: 'haitiDupuyNewWorldOrder1997',
+    label: 'Alex Dupuy — Haiti in the New World Order: The Limits of the Democratic Revolution (1997)',
+    url: 'https://www.routledge.com/Haiti-In-The-New-World-Order-The-Limits-Of-The-Democratic-Revolution/Dupuy/p/book/9780367009588',
+    note: 'Routledge record consulted for the 1997 monograph (236 pages; current ISBN 9780367009588). No book wording, quotation, table, chapter or scan is republished; Dupuy’s account of the democratic movement, Aristide and the 1991 coup is attributed and period-bounded.',
+    accessDate: '2026-09-21', creators: ['Alex Dupuy'], institution: 'Routledge', publicationDate: '1997', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of post-Duvalier democratic politics', identifiers: { isbn: '9780367009588', pages: '236' },
+    description: 'Book-length study of Haiti’s democratic movement, the post-Duvalier transition, Aristide’s liberation theology and politics, the 1991 coup and the limits imposed by the international order. It complements institutional and state-centered accounts without being a complete national history.'
+  },
+  {
+    id: 'haitiFattonOuterPeriphery2013',
+    label: 'Robert Fatton Jr. — Haiti: Trapped in the Outer Periphery (2013)',
+    url: 'https://www.rienner.com/title/Haiti_Trapped_in_the_Outer_Periphery',
+    note: 'Lynne Rienner publisher record consulted for the 2013 monograph (ISBN 9781626370364; 230 pages). No book wording, quotation, table, chapter or scan is republished; Fatton’s post-earthquake political-economy and international-aid argument is attributed and distinguished from all Haitian perspectives.',
+    accessDate: '2026-09-21', creators: ['Robert Fatton Jr.'], institution: 'Lynne Rienner Publishers', publicationDate: '2013', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-earthquake political-economy study', identifiers: { isbn: '9781626370364', pages: '230' },
+    description: 'Book-length analysis of the political and economic predicament exposed by the January 2010 earthquake, including predatory rule, neoliberal structures, aid and international intervention. It supplies a post-earthquake lens rather than a complete account of the later electoral cycle or all local experience.'
+  },
+  {
+    id: 'haitiHurbonComprendreHaiti1987',
+    label: 'Laënnec Hurbon — Comprendre Haïti: Essai sur l’État, la nation, la culture (1987)',
+    url: 'https://classiques.uqam.ca/contemporains/hurbon_laennec/comprendre_haiti/comprendre_haiti.html',
+    note: 'Karthala, Bibliothèque nationale de France and Université du Québec à Montréal records consulted for the French-language 1987 monograph (ISBN 9782865371921; 174 pages). The authorized digital edition is linked for provenance; no extended book text, scan or copyrighted passage is republished here.',
+    accessDate: '2026-09-21', creators: ['Laënnec Hurbon'], institution: 'Éditions Karthala', publicationDate: '1987', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language book-length study of state, nation, culture and democratization', identifiers: { isbn: '9782865371921', pages: '174' },
+    description: 'French-language Haitian sociological essay published at the 1986–1987 rupture, linking the Duvalier legacy, state, nation, culture, migration, religion and the unfinished democratic project. It adds a materially different Haitian and Francophone perspective but predates later crises and is not a complete political history.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -7122,6 +7203,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
+      : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
