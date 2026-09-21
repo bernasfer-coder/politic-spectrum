@@ -7741,6 +7741,76 @@ const sources = [
     sourceType: 'book-length cultural and political history of the Trujillo dictatorship', identifiers: { clothIsbn: '9780822344865', paperIsbn: '9780822344827', pages: '432' },
     description: 'Cultural history of the Trujillo regime as experienced in Santo Domingo, using archival and oral materials to analyze everyday domination, ritual, masculinity, race, class mobility and popular imagination. It is a city-centered lens, not a complete country history or post-1961 account.'
   },
+  {
+    id: 'kenyaParliamentFinanceBill2024',
+    label: 'National Assembly of Kenya — Finance Bill, 2024 rejection record',
+    url: 'https://www.parliament.go.ke/index.php/node/22244',
+    note: 'Official National Assembly record consulted for the 25 July 2024 decision to delete all clauses of the Finance Bill, 2024 after the President’s reservations. No parliamentary wording, image, scan or PDF page is republished; the record documents the House’s formal action, not the full protest movement, policing experience or public consensus.',
+    accessDate: '2026-09-21', creators: ['National Assembly of Kenya'], institution: 'Parliament of Kenya',
+    publicationDate: '2024-07-25', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary parliamentary record / finance legislation', identifiers: { bill: 'Finance Bill, 2024; National Assembly Bill No. 30 of 2024' },
+    description: 'Primary parliamentary witness to the Finance Bill’s formal rejection after presidential reservations. It establishes the legislative endpoint of the episode without treating parliamentary procedure as a complete account of popular mobilization, fiscal politics or rights implementation.'
+  },
+  {
+    id: 'kenyaPresidentFinanceBillWithdrawal2024',
+    label: 'President of Kenya — Finance Bill withdrawal statement (26 June 2024)',
+    url: 'https://www.president.go.ke/president-ruto-declines-to-sign-finance-bill-calls-for-its-withdrawal/',
+    note: 'Official Presidential statement consulted for William Ruto’s 26 June 2024 refusal to sign and call to withdraw the Finance Bill. No speech wording, recording, image or transcript is republished; presidential self-presentation is distinguished from protester, parliamentary, judicial and oversight perspectives.',
+    accessDate: '2026-09-21', creators: ['William Ruto', 'Office of the President of Kenya'], institution: 'Office of the President of Kenya',
+    publicationDate: '2024-06-26', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary presidential statement / executive response', identifiers: { eventDate: '2024-06-26' },
+    description: 'Primary executive witness to the President’s stated response to the Finance Bill protests, including withdrawal, proposed dialogue and austerity directions. It documents executive framing and action, not the movement’s full demands, the legality of policing or subsequent implementation.'
+  },
+  {
+    id: 'kenyaIpoaFinanceBillProtests2024',
+    label: 'Independent Policing Oversight Authority — Monitoring report on policing of the 2024 protests',
+    url: 'https://www.ipoa.go.ke/frontAssets/uploads/resources/1730721006041124.pdf',
+    note: 'Official IPOA monitoring report consulted for the June–August 2024 Anti-Finance Bill and related protests across Nairobi and multiple counties. No report wording, table, scan or PDF page is republished; IPOA’s oversight mandate and monitoring method are kept distinct from judicial findings, police records, protester testimony and later research.',
+    accessDate: '2026-09-21', creators: ['Independent Policing Oversight Authority of Kenya'], institution: 'Independent Policing Oversight Authority (IPOA), Kenya',
+    publicationDate: '2024', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary police-oversight monitoring report / human-rights record', identifiers: { protestPeriod: '2024-06-18–2024-08-08' },
+    description: 'Primary oversight account of protest dates, geographic spread, legal framework, monitoring methods and documented policing concerns. It supports a bounded institutional account of the protests and police response, not a complete casualty, community or political-sociology history.'
+  },
+  {
+    id: 'kenyaHorowitzMultiethnicDemocracy2022',
+    label: 'Jeremy Horowitz — Multiethnic Democracy: The Logic of Elections and Policymaking in Kenya (2022)',
+    url: 'https://academic.oup.com/book/38927',
+    note: 'Oxford University Press record consulted for the 6 January 2022 book, print ISBN 9780198852735, online ISBN 9780191887093 and DOI 10.1093/oso/9780198852735.001.0001. No book wording, quotation, table, chapter or scan is republished; its voter, campaign and policy-outcome framework is attributed and does not replace post-2022 evidence.',
+    accessDate: '2026-09-21', creators: ['Jeremy Horowitz'], institution: 'Oxford University Press',
+    publicationDate: '2022-01-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of electoral competition and policymaking in Kenya', identifiers: { isbn: '9780198852735', onlineIsbn: '9780191887093', doi: '10.1093/oso/9780198852735.001.0001' },
+    description: 'Book-length empirical study of Kenya’s multiethnic electoral competition, swing voters, campaign appeals and policymaking. It supplies a focused account of electoral incentives before the 2022 contest and is not generalized to every Kenyan community or later protest.'
+  },
+  {
+    id: 'kenyaSteevesDemocracyChallenged2023',
+    label: 'Jeffrey Steeves — Democracy Challenged in the 2022 Presidential Succession in Kenya: The African Imperial President (2023)',
+    url: 'https://www.cambridgescholars.com/product/978-1-5275-3009-6',
+    note: 'Cambridge Scholars Publishing record consulted for the September 2023 book, 248 pages, print ISBN 9781036407568 and eBook ISBN 9781527530102. No book wording, quotation, table, chapter or scan is republished; Steeves’s account of 2018–2023 succession politics is attributed and bounded to its sources and publication horizon.',
+    accessDate: '2026-09-21', creators: ['Jeffrey Steeves'], institution: 'Cambridge Scholars Publishing',
+    publicationDate: '2023-09-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of presidential succession and electoral politics', identifiers: { isbn: '9781036407568', ebookIsbn: '9781527530102', pages: '248' },
+    description: 'Book-length analysis of the 2018–2022 succession struggle, campaigns, constitutional restrictions, presidential power and early 2023 opposition protests. It adds a contemporary executive and electoral perspective without representing all parties, counties, communities or post-2023 politics.'
+  },
+  {
+    id: 'kenyaNasongoPoliticsPostcolony2024',
+    label: 'Wanjala S. Nasong’o — Kenya and the Politics of a Postcolony (2024)',
+    url: 'https://anthempress.com/books/kenya-and-the-politics-of-a-postcolony-pdf',
+    note: 'Anthem Press record consulted for the August 2024 book, 246 pages and ISBN 9781839980282. No book wording, quotation, table, chapter or scan is republished; Nasong’o’s anticolonial, land, corruption and electoral interpretation is attributed and does not close regional, linguistic or post-2024 gaps.',
+    accessDate: '2026-09-21', creators: ['Wanjala S. Nasong’o'], institution: 'Anthem Press',
+    publicationDate: '2024-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length postcolonial political history of Kenya', identifiers: { isbn: '9781839980282', pages: '246' },
+    description: 'Book-length Kenyan interpretation of the postcolony, connecting anticolonial nationalism, land, corruption, political economy and electoral malpractice through the 2022 election. It provides a locally authored critical perspective and is not a complete analysis of the 2024 protest cycle or every Kenyan experience.'
+  },
+  {
+    id: 'kenyaNyabolaDigitalDemocracy2018',
+    label: 'Nanjala Nyabola — Digital Democracy, Analogue Politics: How the Internet Era is Transforming Politics in Kenya (2018)',
+    url: 'https://www.bloomsbury.com/us/digital-democracy-analogue-politics-9781786994318/',
+    note: 'Zed Books / Bloomsbury record consulted for the 15 December 2018 edition, 304 pages and ISBN 9781786994318. No book wording, quotation, table, chapter or scan is republished; the analysis of online activism and the 2017 election is used as historical context rather than evidence of the 2024 movement’s full composition.',
+    accessDate: '2026-09-21', creators: ['Nanjala Nyabola'], institution: 'Zed Books / Bloomsbury Academic',
+    publicationDate: '2018-12-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
+    description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
