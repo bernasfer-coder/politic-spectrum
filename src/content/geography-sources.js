@@ -6959,6 +6959,96 @@ const sources = [
     sourceType: 'book-length grassroots and democratic political history', identifiers: { isbn: '9789766370862', pages: '248' },
     description: 'Book-length interpretation of modern Barbadian democracy through grassroots struggle, working-class enfranchisement, independence and the political legacy reaching the Owen Arthur period. It foregrounds popular agency and economic democracy while requiring triangulation with structural, social and institutional histories.'
   },
+  {
+    id: 'jamaicaConstitution1962Legal',
+    label: 'Jamaica Legal Information Portal — Constitutional history and Jamaica Constitution (1944–1962)',
+    url: 'https://lipj.gov.jm/constitution',
+    note: 'Jamaica Legal Information Portal constitutional history and linked text consulted as a primary legal record and link only. No constitutional wording, translation, scan or page is republished; formal design and the portal’s historical account are distinguished from implementation, public consent and later reform.',
+    accessDate: '2026-09-21', creators: ['Jamaica Legal Information Portal'], institution: 'Ministry of Legal and Constitutional Affairs, Jamaica', publicationDate: '1962', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official legal history', identifiers: { constitutionYear: '1962', universalSuffrageConstitutionYear: '1944', independenceDate: '1962-08-06' },
+    description: 'Official legal record identifying the 1962 Constitution as the supreme instrument of independence and recording the 1944 universal-suffrage and elected-House settlement, with the 1953 ministerial system, 1958 federation and 1961 referendum as constitutional context. It anchors formal design rather than proving equal participation, implementation or popular agreement.'
+  },
+  {
+    id: 'jamaicaEcj2020Election',
+    label: 'Electoral Commission of Jamaica — General Election 2020 preliminary results',
+    url: 'https://www.ecj.com.jm/general-election-2020-preliminary-results/',
+    note: 'Official ECJ release consulted as a primary electoral record and link only. No result table, wording, scan or PDF page is republished; preliminary figures are distinguished from the final count, independent observation, voter experience and a complete judgment on representation or legitimacy.',
+    accessDate: '2026-09-21', creators: ['Electoral Commission of Jamaica'], institution: 'Electoral Commission of Jamaica', publicationDate: '2020-09-04', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary preliminary election results / official institutional record', identifiers: { electionDate: '2020-09-03', releaseDate: '2020-09-04' },
+    description: 'Official preliminary account of Jamaica’s 3 September 2020 general election, reporting the Commission’s preliminary seat and turnout figures while noting that final constituency counts would follow.'
+  },
+  {
+    id: 'jamaicaEcj2025Election',
+    label: 'Electoral Commission of Jamaica — September 3, 2025 general-election preliminary results',
+    url: 'https://www.ecj.com.jm/september-3-2025-elections-preliminary-results/',
+    note: 'Official ECJ release consulted as a primary contemporary electoral record and link only. No result table, wording, scan or PDF page is republished; the preliminary constituency account is distinguished from final certification, adjudication, voter experience and post-election institutional practice.',
+    accessDate: '2026-09-21', creators: ['Electoral Commission of Jamaica'], institution: 'Electoral Commission of Jamaica', publicationDate: '2025-09-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary preliminary election results / official institutional record', identifiers: { electionDate: '2025-09-03', releaseDate: '2025-09-03', turnout: '39.5% preliminary' },
+    description: 'Official preliminary account of the 3 September 2025 general election, reporting that the Jamaica Labour Party received the most votes in 34 constituencies and the People’s National Party in 29, with approximately 39.5% preliminary turnout. It bounds the endpoint without being treated as a final or complete account of political legitimacy.'
+  },
+  {
+    id: 'jamaicaCrc2024Report',
+    label: 'Jamaica Ministry of Legal and Constitutional Affairs — Report of the Constitutional Reform Committee (May 2024)',
+    url: 'https://mlca.gov.jm/wp-content/uploads/2024/05/MEDIA-FULL-CRC-REPORT-MAY-2024.pdf',
+    note: 'Official Constitutional Reform Committee report consulted as a primary reform record and link only. No report wording, draft-bill wording, quotation, scan or page is republished; recommendations and reform procedure are distinguished from enactment, public consensus and later implementation.',
+    accessDate: '2026-09-21', creators: ['Constitutional Reform Committee, Jamaica'], institution: 'Ministry of Legal and Constitutional Affairs, Jamaica', publicationDate: '2024-05-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional-reform commission report', identifiers: { reportDate: '2024-05-03' },
+    description: 'Official report on transition to a republic and other constitutional matters, including the recommendation to replace the monarch with a non-monarchical head of state and related accountability and institutional questions. It records a reform proposal rather than an enacted constitutional settlement.'
+  },
+  {
+    id: 'jamaicaMunroeDecolonization1972',
+    label: 'Trevor Munroe — The Politics of Constitutional Decolonization: Jamaica, 1944–62 (1972)',
+    url: 'https://books.google.com/books/about/The_Politics_of_Constitutional_Decoloniz.html?id=wUeHAAAAMAAJ',
+    note: 'University of the West Indies Institute of Social and Economic Research/Google Books record consulted for the 1972 monograph (239 pages). No book wording, quotation, table, chapter or scan is republished; Munroe’s constitutional-decolonization interpretation is attributed and bounded to 1944–1962.',
+    accessDate: '2026-09-21', creators: ['Trevor Munroe'], institution: 'Institute of Social and Economic Research, University of the West Indies', publicationDate: '1972', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of constitutional decolonization and Jamaican politics', identifiers: { pages: '239' },
+    description: 'Book-length study of Jamaica’s 1944–1962 constitutional decolonization, covering elections, parties, labour, federation, self-government and the independence Constitution. It establishes a pre-independence political history rather than a complete account of the republic or later reforms.'
+  },
+  {
+    id: 'jamaicaStoneClientelism1980',
+    label: 'Carl Stone — Democracy and Clientelism in Jamaica (1980)',
+    url: 'https://books.google.com/books/about/Democracy_and_Clientelism_in_Jamaica.html?id=TMV9QgAACAAJ',
+    note: 'Transaction Books/Google Books record consulted for the 1980 monograph (ISBN 9780878553488; 262 pages). No book wording, quotation, table, chapter or scan is republished; Stone’s clientelism framework is attributed and treated as one political-sociological interpretation rather than a complete national verdict.',
+    accessDate: '2026-09-21', creators: ['Carl Stone'], institution: 'Transaction Books', publicationDate: '1980', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political sociology of democracy and clientelism', identifiers: { isbn: '9780878553488', isbn10: '0878553487', pages: '262' },
+    description: 'Book-length political-sociological study of democracy, party organization and clientelist exchange in Jamaica. It is a central interpretive lens for post-independence political institutions and competition but does not establish uniform practice or later developments.'
+  },
+  {
+    id: 'jamaicaPaynePolitics1994',
+    label: 'Anthony J. Payne — Politics in Jamaica (revised edition, 1994)',
+    url: 'https://wplrc.ecc.edu.jm/cgi-bin/koha/opac-detail.pl?biblionumber=4003',
+    note: 'Jamaican library catalogue record consulted for the revised 1994 Ian Randle monograph (ISBN 9768100265; xii, 223 pages). No book wording, quotation, table, chapter or scan is republished; Payne’s post-independence synthesis is attributed and bounded to its publication horizon.',
+    accessDate: '2026-09-21', creators: ['Anthony J. Payne'], institution: 'Ian Randle Publishers', publicationDate: '1994', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length post-independence political history', identifiers: { isbn: '9768100265', pages: '223' },
+    description: 'Book-length assessment of Jamaica’s post-independence political landscape across ideological, economic, foreign-policy, organizational and sociocultural dimensions. It complements clientelism and social-movement studies but does not prove later or uniform national practice.'
+  },
+  {
+    id: 'jamaicaGrayRadicalism1991',
+    label: 'Obika Gray — Radicalism and Social Change in Jamaica, 1960–1972 (1991)',
+    url: 'https://utpress.org/9780870496615/radicalism-and-social-change-in-jamaica/',
+    note: 'University of Tennessee Press record consulted for the 1991 monograph (ISBN 9780870496615; 289 pages in the first-edition catalogue record). No book wording, quotation, table, chapter or scan is republished; Gray’s social and political interpretation is attributed and bounded to the first decade of independence.',
+    accessDate: '2026-09-21', creators: ['Obika Gray'], institution: 'University of Tennessee Press', publicationDate: '1991', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length social and political history of radicalism', identifiers: { isbn: '9780870496615', isbn10: '0870496611', pages: '289' },
+    description: 'Book-length study of radical social movements and political change in Jamaica during the first decade of independence, including party–union formations, Black Power-era currents, Rastafari symbolism, independent labour and urban popular politics. It is a bounded social-history lens rather than a complete history of Jamaica.'
+  },
+  {
+    id: 'jamaicaMordecaiCitizenship2014',
+    label: 'Rachel L. Mordecai — Citizenship Under Pressure: The 1970s in Jamaican Literature and Culture (2014)',
+    url: 'https://www.uwipress.com/9789766404581/citizenship-under-pressure/',
+    note: 'University of the West Indies Press record consulted for the 2014 monograph (ISBN 9789766404581; 292 pages). No book wording, quotation, table, chapter or scan is republished; Mordecai’s literary-cultural interpretation is attributed and bounded to 1972–1980.',
+    accessDate: '2026-09-21', creators: ['Rachel L. Mordecai'], institution: 'University of the West Indies Press', publicationDate: '2014-05-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of culture, politics, society and citizenship', identifiers: { isbn: '9789766404581', ebookIsbn: '9789766404772', pages: '292' },
+    description: 'Book-length study of the interaction of culture, politics and society in Jamaica’s 1970s, emphasizing contested claims about race, class, gender and citizenship through literary and other texts. It supplies an independent cultural-history perspective rather than a complete institutional history.'
+  },
+  {
+    id: 'jamaicaAustinBroosPolitics2024',
+    label: 'Diane Austin-Broos — Politics in an Island State: Wills O. Isaacs and Jamaica’s Struggle for Development (2024)',
+    url: 'https://www.uwipress.com/9789766409593/politics-in-an-island-state/',
+    note: 'University of the West Indies Press record consulted for the 2024 monograph (ISBN 9789766409593; 474 pages). No book wording, quotation, table, chapter or scan is republished; Austin-Broos’s biographical and political-history interpretation is attributed and paired with distinct institutional and social-movement studies.',
+    accessDate: '2026-09-21', creators: ['Diane Austin-Broos'], institution: 'University of the West Indies Press', publicationDate: '2024-08-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political biography and development history', identifiers: { isbn: '9789766409593', pages: '474' },
+    description: 'Book-length political history through Wills O. Isaacs, connecting party life and development struggles with decolonization, the decline of sugar, migration, unemployment and industrialization from the 1930s into the twenty-first century. It offers a biographical and anthropological lens rather than a complete current-country account.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -7030,7 +7120,8 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('timor') || source.id.startsWith('molnarTimor') || source.id.startsWith('kammenIndependentTimor') || source.id.startsWith('foxBaboSoares') || source.id.startsWith('pereiraFeijoLongRoadTimor') || source.id.startsWith('roqueTimor') || source.id.startsWith('feijoConstitutionalNormsTimor') ? 'Timor-Leste decolonization, resistance and constitutional political history'
         : source.id.startsWith('cambodia') || source.id.startsWith('chandlerHistoryCambodia') || source.id.startsWith('hughesPoliticalEconomyCambodia') || source.id.startsWith('robertsPoliticalTransitionCambodia') || source.id.startsWith('etchesonRiseDemiseKampuchea') || source.id.startsWith('strangioHunSensCambodia') || source.id.startsWith('kheangUnCambodia') ? 'Cambodian conflict, reconstruction and constitutional political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
-        : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
+      : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
+      : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
