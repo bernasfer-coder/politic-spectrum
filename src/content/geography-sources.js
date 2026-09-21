@@ -4922,6 +4922,60 @@ const sources = [
     sourceType: 'book-length fieldwork study of civilian–insurgent relations', identifiers: { isbn: '9781787384859', ebookIsbn: '9781787387324', pages: '328' },
     description: 'A bottom-up study of civilian bargaining, Taliban authority and insurgent governance based on extensive interviews. It supplies essential pre-takeover evidence about local agency and political authority that helps interpret the post-2021 order, while its temporal and regional limits remain explicit.',
   },
+  {
+    id: 'tongaElectionResultPortal',
+    label: 'Tonga Electoral Commission — Election result procedure and constituency results portal',
+    url: 'https://elections.gov.to/candidate-information/election-result/',
+    note: 'Official Tonga Electoral Commission result portal consulted for the legal and administrative description of constituency counting and first-past-the-post selection. The portal’s individual result records and Tongan-language materials were not independently collated; no result table, wording or image is republished.',
+    accessDate: '2026-09-21', creators: ['Tonga Electoral Commission'], institution: 'Kingdom of Tonga, Electoral Commission', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Tongan'],
+    sourceType: 'official electoral results and procedure portal', identifiers: {},
+    description: 'Primary institutional portal for Tonga’s constituency result process, including the first-past-the-post rule and the Supervisor of Elections’ announcement procedure. It establishes formal electoral administration but not turnout, fairness, social inclusion or the complete results history for every election in this case.',
+  },
+  {
+    id: 'tongaParliamentJudicialReview2024',
+    label: 'Legislative Assembly of Tonga — Supreme Court dismisses vote-of-no-confidence judicial review (2024)',
+    url: 'https://www.parliament.gov.to/en/media-centre/press-releases/supreme-court-dismisses-plaintiffs-action-in-the-vote-of-no-confidence-judicial-review-proceeding',
+    note: 'Official Legislative Assembly account of the Supreme Court’s 8 January 2024 decision, published 11 January 2024, consulted as a primary institutional record. It reports the Assembly’s account of the ruling and is not treated as a substitute for the full judgment or independent constitutional analysis.',
+    accessDate: '2026-09-21', creators: ['Legislative Assembly of Tonga'], institution: 'Legislative Assembly of Tonga', publicationDate: '2024-01-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary and judicial-review record', identifiers: { decisionDate: '2024-01-08' },
+    description: 'Official parliamentary record describing a Supreme Court decision on the justiciability of internal legislative proceedings concerning a vote of no confidence. It documents a separation-of-powers dispute while leaving the complete judgment, political reception and broader judicial practice open.',
+  },
+  {
+    id: 'tongaParliamentSovaleniResignation2024',
+    label: 'Legislative Assembly of Tonga — Resignation of Prime Minister Sovaleni and successor process (2024)',
+    url: 'https://parliament.gov.to/en/media-centre/latest-news/king-tupou-vi-accepts-resignation-of-prime-minister-sovaleni-ahead-of-no-confidence-vote',
+    note: 'Official Legislative Assembly report of 9 December 2024, consulted as a primary record of the Prime Minister’s resignation, the King’s acceptance and the constitutional nomination process. It records an institutional event and does not prove public approval, constitutional settlement or later implementation.',
+    accessDate: '2026-09-21', creators: ['Legislative Assembly of Tonga'], institution: 'Legislative Assembly of Tonga', publicationDate: '2024-12-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary transition record', identifiers: { eventDate: '2024-12-09' },
+    description: 'Official account of the King’s acceptance of Prime Minister Siaosi Sovaleni’s resignation ahead of a no-confidence vote and the subsequent process for nominating a Prime Minister Designate. It anchors the 2024 political endpoint without extending into later politics.',
+  },
+  {
+    id: 'tongaParliamentEkeElection2024',
+    label: 'Legislative Assembly of Tonga — Parliament elects Aisake Eke as Prime Minister Designate (2024)',
+    url: 'https://www.parliament.gov.to/en/media-centre/latest-news/parliament-elects-hon-dr-aisake-valu-eke-as-tonga-s-new-prime-minister-designate',
+    note: 'Official Legislative Assembly report of 24 December 2024, consulted as a primary record of the parliamentary vote selecting Aisake Eke as Prime Minister Designate. The report is not treated as independent evidence of representativeness, political stability or the later formal appointment.',
+    accessDate: '2026-09-21', creators: ['Legislative Assembly of Tonga'], institution: 'Legislative Assembly of Tonga', publicationDate: '2024-12-24', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary leadership-election record', identifiers: { eventDate: '2024-12-24' },
+    description: 'Official record of the Legislative Assembly’s 16–8 vote selecting Aisake Eke as Prime Minister Designate after Sovaleni’s resignation. It records a constitutional-parliamentary succession event and deliberately stops short of claims about subsequent government performance or public consent.',
+  },
+  {
+    id: 'campbellTongasWayDemocracy2011',
+    label: 'Ian C. Campbell — Tonga’s Way to Democracy (2011)',
+    url: 'https://libcat.canterbury.ac.nz/Record/1749487',
+    note: 'Canterbury University library catalogue record consulted for Campbell’s book-length account of Tonga’s twentieth- and early twenty-first-century political reform. The catalogue supplies publication and subject metadata; the complete book, Tongan-language sources and archives were not independently collated and no text is republished.',
+    accessDate: '2026-09-21', creators: ['Ian C. Campbell'], institution: 'Herodotus Press / Canterbury University library catalogue', publicationDate: '2011', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length Tongan constitutional and political history', identifiers: {},
+    description: 'Book-length study focused on Tonga’s constitutional amendments, democracy and politics in the twentieth and early twenty-first centuries. It offers a reform-centred perspective that complements Campbell’s broader national history while not proving popular consensus or complete implementation.',
+  },
+  {
+    id: 'tupouTongaReform2020',
+    label: 'Mele Ikatonga Selisa Tupou — The Process and Outcomes of the 2010 Constitutional Reform in Tonga (2020)',
+    url: 'https://ourarchive.otago.ac.nz/esploro/outputs/doctoral/The-process-and-outcomes-of-the/9926480427701891',
+    note: 'University of Otago doctoral-thesis record and abstract consulted for the 2020 study of Tonga’s 2010 reform, executive devolution, power-sharing and constitutional realism. The full thesis and Tongan-language field materials were not independently collated; no thesis text, quotation or scan is republished.',
+    accessDate: '2026-09-21', creators: ['Mele Ikatonga Selisa Tupou'], institution: 'University of Otago', publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Tongan'],
+    sourceType: 'doctoral thesis on Tongan constitutional and political reform', identifiers: {},
+    description: 'An original legal-cultural study of the 2010 constitutional reform, emphasizing partial devolution, power-sharing, monarchy, chiefly rank, ordinary citizens and the Tongan concept of constitutional change. Its qualitative and culturally grounded perspective is distinct from Campbell’s historical synthesis and remains bounded to the reform’s process and outcomes.',
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -4974,7 +5028,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') || source.id.startsWith('ayeeAmoahAliduGhana') || source.id.startsWith('pallerDemocracyGhana') ? 'Ghanaian constitutional transition and political history'
       : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeriaInec') ? 'Nigerian constitutional, electoral and political history'
         : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') || source.id.startsWith('ethiopiaAu') || source.id.startsWith('ethiopiaJusticeTransitional') || source.id.startsWith('plautVaughanTigrayWar') || source.id.startsWith('erlichGreaterTigray') ? 'Ethiopian revolutionary, federal, conflict and political history'
-        : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') ? 'Tongan constitutional, monarchical and political history'
+        : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('campbellTongasWayDemocracy') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') || source.id.startsWith('tupouTongaReform') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : 'Middle Eastern political history and geography',
