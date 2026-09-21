@@ -6779,6 +6779,78 @@ const sources = [
     sourceType: 'primary political autobiography and anti-colonial history', identifiers: { isbn: '9780717803576', pages: '435', originalPublicationYear: '1966' },
     description: 'Primary account of British Guiana’s colonial political economy, elections, anti-colonial struggle and Jagan’s political interpretation through 1966. It anchors self-description and memory while requiring triangulation with the institutional, ethnographic and historical scholarship.'
   },
+  {
+    id: 'surinameConstitution1987Gov',
+    label: 'Government of Suriname — Constitution of the Republic of Suriname (1987, amended 1992), official record',
+    url: 'https://gov.sr/thema/grondwet/',
+    note: 'Government of Suriname constitutional-information page consulted as a primary legal record and link only. No Dutch constitutional wording, translation, scan or page is republished; the 1987 Constitution and 1992 amendment are distinguished from implementation, military influence, electoral practice and later reform proposals.',
+    accessDate: '2026-09-21', creators: ['Government of Suriname'], institution: 'Government of Suriname', publicationDate: '1987-09-30', evidenceRole: 'primary', confidence: 'high', languages: ['Dutch'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '1987', amendmentYear: '1992' },
+    description: 'Official constitutional record for the post-military constitutional settlement: the Government of Suriname dates the current Constitution to 30 September 1987 and notes its 1992 amendment. It anchors formal institutions and rights without proving uniform democratic practice or public consent.'
+  },
+  {
+    id: 'surinameOas2020Election',
+    label: 'Organization of American States — Final Report of the Electoral Observation Mission for Suriname’s 25 May 2020 elections',
+    url: 'https://scm.oas.org/pdfs/2021/CP44365EREPORTSURINAME.pdf',
+    note: 'OAS Electoral Observation Mission final report consulted as an attributed institutional record and link only. No report wording, table, scan or PDF page is republished; observations and recommendations are distinguished from a complete history of voter experience, party consent, electoral legitimacy or subsequent government.',
+    accessDate: '2026-09-21', creators: ['Organization of American States'], institution: 'OAS Electoral Observation Mission', publicationDate: '2021', evidenceRole: 'contextual', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'international election-observation final report', identifiers: { electionDate: '2020-05-25' },
+    description: 'Institutional observation record for the 2020 National Assembly, district and local elections, including electoral administration, technology, justice, financing and women’s participation. It provides a dated democratic-process witness rather than a national ideological characterization.'
+  },
+  {
+    id: 'surinameOas2025Election',
+    label: 'Organization of American States — Preliminary Report of the Electoral Observation Mission for Suriname’s 25 May 2025 elections',
+    url: 'https://www.oas.org/fpdb/press/2025_SURINAME_EOM_General-Elections_Preliminary-Report_ENG.pdf',
+    note: 'OAS preliminary observation report consulted as an attributed institutional record and link only. No report wording, table, scan or PDF page is republished; the preliminary horizon is distinguished from a final verdict, constitutional implementation, government performance or current-country status.',
+    accessDate: '2026-09-21', creators: ['Organization of American States'], institution: 'OAS Electoral Observation Mission', publicationDate: '2025-05-27', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation preliminary report', identifiers: { electionDate: '2025-05-25' },
+    description: 'Contemporary institutional record for the 2025 general elections, addressing election-day administration, electoral authorities, technology, justice, financing, women’s participation and Indigenous participation. It bounds the endpoint while preserving the report’s recommendations and preliminary status.'
+  },
+  {
+    id: 'surinameChs2025Results',
+    label: 'Centraal Hoofdstembureau — official Suriname 2025 general-election results',
+    url: 'https://verkiezingen.gov.sr/actualiteit/chs-stelt-verkiezingsuitslag-vast',
+    note: 'Official Surinamese election-authority record consulted as a primary electoral source and link only. No result table, statement wording, scan or page is republished; the authority’s certified count is distinguished from independent observation, voter experience, party interpretation and a complete account of political representation.',
+    accessDate: '2026-09-21', creators: ['Centraal Hoofdstembureau van Suriname'], institution: 'Ministry of Home Affairs / Algemeen Secretariaat Verkiezingen', publicationDate: '2025-06-11', evidenceRole: 'primary', confidence: 'high', languages: ['Dutch'],
+    sourceType: 'primary electoral results / official institutional record', identifiers: { electionDate: '2025-05-25', certificationDate: '2025-06-10' },
+    description: 'Official record of the 2025 National Assembly, district-council and resort-council results, including the authority’s account of verification and identified procedural difficulties. It establishes a dated electoral endpoint without proving equal access or uniform representation.'
+  },
+  {
+    id: 'surinameHoefteLongTwentieth2014',
+    label: 'Rosemarijn Hoefte — Suriname in the Long Twentieth Century: Domination, Contestation, Globalization (2014)',
+    url: 'https://link.springer.com/book/10.1057/9781137360137',
+    note: 'Palgrave Macmillan/Springer publisher record consulted for the monograph (hardcover ISBN 9781137360120; eBook ISBN 9781137360137; XIII, 294 pages). No book wording, quotation, table, image or scan is republished; Hoefte’s intersectional social history is attributed and paired with political and Dutch-language perspectives.',
+    accessDate: '2026-09-21', creators: ['Rosemarijn Hoefte'], institution: 'Palgrave Macmillan', publicationDate: '2013-12-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length social and political history of modern Suriname', identifiers: { isbn: '9781137360120', ebookIsbn: '9781137360137', pages: '294', doi: '10.1057/9781137360137' },
+    description: 'Book-length intersectional history of Suriname’s long twentieth century, linking class, gender, ethnicity, state formation, colonial capitalism, bauxite, the military regime, Paramaribo and globalization. It supplies a broad structural account, not a complete post-2013 electoral or local history.'
+  },
+  {
+    id: 'surinameDewDifficultFlowering1978',
+    label: 'Edward Dew — The Difficult Flowering of Surinam: Ethnicity and Politics in a Plural Society (1978)',
+    url: 'https://link.springer.com/book/10.1007/978-94-017-3278-9',
+    note: 'Springer book record consulted for the political history (softcover ISBN 9789024720576; eBook ISBN 9789401732789; 234 pages). No chapter wording, quotation, scan or PDF is republished; Dew’s pre-independence analysis is attributed and not extended beyond its documented period.',
+    accessDate: '2026-09-21', creators: ['Edward Dew'], institution: 'Springer Dordrecht', publicationDate: '1978-07-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of ethnicity, parties and independence politics', identifiers: { isbn: '9789024720576', ebookIsbn: '9789401732789', pages: '234', doi: '10.1007/978-94-017-3278-9' },
+    description: 'Book-length study of Creole, Hindustani and Javanese political parties, ethnic pluralism, coalition breakdown and the struggle for independence through 1975. It provides a pre-independence political baseline rather than an account of military rule or later electoral practice.'
+  },
+  {
+    id: 'surinameDewTrouble1994',
+    label: 'Edward M. Dew — The Trouble in Suriname, 1975–1993 (1994)',
+    url: 'https://www.bloomsbury.com/us/trouble-in-suriname-19751993-9780275948344/',
+    note: 'Praeger/Bloomsbury publisher record consulted for the monograph (ISBN 9780275948344; 264 pages). No book wording, quotation, table, map, image or scan is republished; the account of coups, human-rights violations, guerrilla war and redemocratization is attributed and bounded to 1975–1993.',
+    accessDate: '2026-09-21', creators: ['Edward M. Dew'], institution: 'Praeger / Bloomsbury Publishing', publicationDate: '1994-11-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of post-independence Suriname', identifiers: { isbn: '9780275948344', pages: '264' },
+    description: 'Book-length political history of independence, military coups, human-rights violations, the interior war, economic collapse and the difficult restoration of civilian authority through 1993. It is a central political narrative but does not establish later democratic practice or every community’s experience.'
+  },
+  {
+    id: 'surinameRamsoedhOnbehagen2018',
+    label: 'Hans Ramsoedh — Surinaams onbehagen: Een sociale en politieke geschiedenis van Suriname, 1865–2015 (2018)',
+    url: 'https://www.cambridge.org/core/journals/international-review-of-social-history/article/hans-ramsoedh-surinaams-onbehagen-een-sociale-en-politieke-geschiedenis-van-suriname-1865-2015-verloren-hilversum2018-368-pp-ill-euro-2900/2FF7A909D12A91EB6B300DECAF83C9C3',
+    note: 'Verloren bibliographic record as reported in the International Review of Social History review consulted for the Dutch-language monograph (ISBN 9789087047481; 368 pages). No Dutch wording, translation, quotation, table, image or scan is republished; catalog records differ on extent, so the 368-page review record is retained and the edition uncertainty remains visible.',
+    accessDate: '2026-09-21', creators: ['Hans Ramsoedh'], institution: 'Uitgeverij Verloren', publicationDate: '2018', evidenceRole: 'secondary', confidence: 'medium', languages: ['Dutch'],
+    sourceType: 'Dutch-language book-length social and political history', identifiers: { isbn: '9789087047481', pages: '368', language: 'Dutch' },
+    description: 'Dutch-language social and political history from emancipation and colonial rule through independence, military rule, redemocratization and Bouterse-era politics to 2015. It adds a relevant-language perspective on institutions, parties, protest and political economy while leaving the 2015–2025 electoral endpoint to primary and institutional records.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
