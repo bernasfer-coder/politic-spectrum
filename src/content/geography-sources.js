@@ -7131,6 +7131,78 @@ const sources = [
     description: 'French-language Haitian sociological essay published at the 1986–1987 rupture, linking the Duvalier legacy, state, nation, culture, migration, religion and the unfinished democratic project. It adds a materially different Haitian and Francophone perspective but predates later crises and is not a complete political history.'
   },
   {
+    id: 'chinaConstitution2018Official',
+    label: 'People’s Republic of China — Constitution, 1982 text as amended through 2018, official English record',
+    url: 'https://english.www.gov.cn/archive/lawregulations/201911/20/content_WS5ed8856ec6d0b3f0e9499913.html',
+    note: 'Official State Council/National People’s Congress English record consulted as a primary constitutional witness and link only. No constitutional wording, quotation, translation, scan or page is republished; the text records formal state design and self-description, not implementation, public consent or every Chinese experience.',
+    accessDate: '2026-09-21', creators: ['National People’s Congress of the People’s Republic of China'], institution: 'Government of the People’s Republic of China, English.gov.cn', publicationDate: '2018-03-11', evidenceRole: 'primary', confidence: 'high', languages: ['English translation'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { adopted: '1982-12-04', latestAmendment: '2018-03-11', officialPageUpdated: '2019-11-20' },
+    description: 'Official English record of the 1982 Constitution as amended through 2018. It identifies the Communist Party’s leadership, the socialist state, people’s congresses, the State Council, courts, public and other forms of ownership, citizens’ rights and duties, ethnic-regional provisions and the constitutional framework; it is evidence of formal design and state language rather than proof of uniform practice.'
+  },
+  {
+    id: 'chinaCpcConstitution2022Official',
+    label: 'Chinese Communist Party — Constitution revised at the 20th National Congress (2022), official English record',
+    url: 'https://english.court.gov.cn/2022-10/27/c_824962.htm',
+    note: 'Official English record of the Party Constitution adopted at the 20th National Congress consulted as a primary party-organizational witness and link only. No party-constitutional wording, quotation, translation, scan or page is republished; its normative claims are distinguished from independent evidence about institutions or society.',
+    accessDate: '2026-09-21', creators: ['20th National Congress of the Communist Party of China'], institution: 'People’s Republic of China, English-language court information service / Xinhua', publicationDate: '2022-10-22', evidenceRole: 'primary', confidence: 'high', languages: ['English translation'],
+    sourceType: 'primary party constitution / official political record', identifiers: { congress: '20th National Congress', adopted: '2022-10-22' },
+    description: 'Official English record of the revised Constitution of the Communist Party of China, including its Marxist-Leninist and party-leadership framework, organizational principles and stated political program. It documents the party’s normative self-description, not the full operation, consent or contestation of the political order.'
+  },
+  {
+    id: 'chinaGovernmentWorkReport2024Official',
+    label: 'State Council of the People’s Republic of China — Report on the Work of the Government, adopted 11 March 2024',
+    url: 'https://english.www.gov.cn/news/202403/13/content_WS65f0dfccc6d0868f4e8e5079.html',
+    note: 'Official English record of the government work report delivered to and adopted by the second session of the 14th National People’s Congress in March 2024. No report wording, quotation, table, scan or attachment is republished; policy goals and official performance claims are distinguished from independent evaluation and social experience.',
+    accessDate: '2026-09-21', creators: ['State Council of the People’s Republic of China', 'Li Qiang'], institution: 'Government of the People’s Republic of China, English.gov.cn', publicationDate: '2024-03-11', evidenceRole: 'primary', confidence: 'high', languages: ['English translation'],
+    sourceType: 'primary government work report / official policy record', identifiers: { session: 'Second Session of the 14th National People’s Congress', reportDate: '2024-03-05', adoptionDate: '2024-03-11' },
+    description: 'Official report recording the government’s 2024 policy agenda and retrospective account of economic, social, security, technological and foreign-policy priorities. It supplies a dated endpoint and institutional self-description without proving implementation, public support, economic outcomes or current status after 2024.'
+  },
+  {
+    id: 'chinaSaichRebelRuler2021',
+    label: 'Tony Saich — From Rebel to Ruler: One Hundred Years of the Chinese Communist Party (2021)',
+    url: 'https://www.harvard.com/book/9780674988118',
+    note: 'Belknap Press/Harvard Book Store record consulted for Saich’s 2021 monograph (ISBN 9780674988118; 560 pages). No book wording, quotation, table, chapter or scan is republished; Saich’s broad party history is attributed and not treated as every Chinese, party, locality or period.',
+    accessDate: '2026-09-21', creators: ['Tony Saich'], institution: 'Belknap Press, Harvard University Press', publicationDate: '2021-07-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of the Chinese Communist Party', identifiers: { isbn: '9780674988118', pages: '560' },
+    description: 'Broad history of the Chinese Communist Party from its founding and revolutionary rise through Mao-era disasters, post-Mao reform and the party’s adaptation after the collapse of other communist regimes. It supplies a party-centered national trajectory and a flexibility argument without being a complete social, local, ethnic or dissident history.'
+  },
+  {
+    id: 'chinaWalderUnderMao2015',
+    label: 'Andrew G. Walder — China Under Mao: A Revolution Derailed (2015)',
+    url: 'https://www.degruyterbrill.com/document/doi/10.4159/9780674286689/html',
+    note: 'Harvard University Press/De Gruyter record consulted for Walder’s 1949–1976 monograph (ISBN 9780674058156; 433 pages). No book wording, quotation, table, chapter or scan is republished; Walder’s Mao-era interpretation is period-bounded and paired with post-Mao, local and institutional perspectives.',
+    accessDate: '2026-09-21', creators: ['Andrew G. Walder'], institution: 'Harvard University Press', publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of Mao-era China', identifiers: { isbn: '9780674058156', pages: '433', period: '1949–1976' },
+    description: 'Book-length history of the rise and fall of the Maoist state from 1949 to 1976, emphasizing leadership decisions, institutional consequences and the interaction of revolutionary achievement and catastrophe. It is a focused interpretation of Mao-era politics rather than a complete history of the People’s Republic or Chinese society.'
+  },
+  {
+    id: 'chinaPerryAnyuan2012',
+    label: 'Elizabeth J. Perry — Anyuan: Mining China’s Revolutionary Tradition (2012)',
+    url: 'https://www.ucpress.edu/books/anyuan/hardcover',
+    note: 'University of California Press record consulted for Perry’s local political and labor history (ISBN 9780520271890; 412 pages). No book wording, quotation, table, chapter or scan is republished; the Anyuan case is treated as a bounded local and symbolic history, not as representative of all Chinese workers or the whole revolution.',
+    accessDate: '2026-09-21', creators: ['Elizabeth J. Perry'], institution: 'University of California Press', publicationDate: '2012-10-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length local revolutionary, labor and political history', identifiers: { isbn: '9780520271890', pages: '412' },
+    description: 'Local study of the Anyuan coal mine and labor movement, showing how cultural positioning and patronage helped make a Communist system familiar and politically usable, while the revolutionary tradition remained contested. It supplies a grassroots corrective to party-centered narratives and is not a national survey.'
+  },
+  {
+    id: 'chinaNaughtonEconomy2018',
+    label: 'Barry J. Naughton — The Chinese Economy: Adaptation and Growth, second edition (2018)',
+    url: 'https://mitpress.mit.edu/9780262534796/the-chinese-economy/',
+    note: 'MIT Press record consulted for the second edition (ISBN 9780262534796; 608 pages). No book wording, quotation, table, chapter or scan is republished; Naughton’s political-economy synthesis is attributed and does not establish equal social outcomes or a single economic experience.',
+    accessDate: '2026-09-21', creators: ['Barry J. Naughton'], institution: 'The MIT Press', publicationDate: '2018-03-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy history since 1949', identifiers: { isbn: '9780262534796', ebookIsbn: '9780262344074', pages: '608' },
+    description: 'Broad analysis of China’s economy since 1949, including socialist legacies, reform, agriculture, industry, labor, technology, trade, finance, demography and environmental pressures. It provides an economic-institutional lens for state direction and market adaptation rather than a complete political or social history.'
+  },
+  {
+    id: 'chinaCabestanSystem2014',
+    label: 'Jean-Pierre Cabestan — Le système politique chinois: Un nouvel équilibre autoritaire (2014)',
+    url: 'https://www.pressesdesciencespo.fr/fr/livre/?GCOI=27246100820240',
+    note: 'Presses de Sciences Po record consulted for Cabestan’s French-language monograph (ISBN 9782724615005; 400 pages). No book wording, quotation, table, chapter or scan is republished; Cabestan’s institution-centered interpretation is attributed, period-bounded and not treated as a consensus or as every Chinese perspective.',
+    accessDate: '2026-09-21', creators: ['Jean-Pierre Cabestan'], institution: 'Presses de Sciences Po', publicationDate: '2014-03-27', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language book-length study of China’s political system', identifiers: { isbn: '9782724615005', pages: '400' },
+    description: 'French-language monograph analyzing the Chinese Communist Party, state, army, institutions, decision-making, cadre promotion, party-state–society relations and pressures from NGOs, the internet, activists, entrepreneurs and nationalism. It adds a relevant-language institutional perspective while acknowledging uncertainty and not claiming to settle China’s future.'
+  },
+  {
     id: 'canadaConstitutionActs1867to1982Official',
     label: 'Canada — The Constitution Acts 1867 to 1982, Department of Justice consolidation',
     url: 'https://laws-lois.justice.gc.ca/eng/const/',
@@ -7469,6 +7541,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('china') ? 'Chinese revolutionary, party-state, reform and developmental political history'
       : source.id.startsWith('canada') ? 'Canadian federal, bilingual, Indigenous-rights, constitutional and political history'
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
