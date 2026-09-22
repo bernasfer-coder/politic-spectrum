@@ -2483,7 +2483,7 @@ for (const [sourceId, evidenceRole, publicationDate, languages, confidence] of [
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
   const expectedBrazilianProfiles = sourceId === 'brazilConstitution1988'
-    ? ['encyclopedia:indigenous-relational-governance', 'encyclopedia:liberal-constitutionalist', 'geography:brazil-democratic-consolidation-and-polarization', 'geography:brazil-democratic-constitutional-founding', 'geography:brazil-post-2022-democratic-reconstruction-and-municipal-contestation']
+    ? ['encyclopedia:indigenous-relational-governance', 'encyclopedia:liberal-constitutionalist', 'geography:brazil-democratic-consolidation-and-polarization', 'geography:brazil-democratic-constitutional-founding', 'geography:brazil-post-2022-democratic-reconstruction-and-municipal-contestation', 'geography:brazil-post-2024-judicial-accountability-and-democratic-horizon']
     : ['dallariBrazilFundamentalRights1993', 'ramosBrazilJudicialReview2007'].includes(sourceId)
       ? ['encyclopedia:liberal-constitutionalist', 'geography:brazil-democratic-constitutional-founding']
       : ['encyclopedia:liberal-constitutionalist'];

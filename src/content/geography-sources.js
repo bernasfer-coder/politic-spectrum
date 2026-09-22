@@ -1213,6 +1213,51 @@ const sources = [
     description: 'Edited scholarly study of digital platforms, disinformation, electoral integrity, civic actors and the 2022 Brazilian election, including a chapter on the 8 January 2023 attacks. It supplies a contemporary communication and electoral perspective rather than a complete post-2024 political history or a single national consensus.',
   },
   {
+    id: 'brazilTseBolsonaroIneligibility2023',
+    label: 'Tribunal Superior Eleitoral — Bolsonaro ineligibility decision (2023)',
+    url: 'https://www.tse.jus.br/comunicacao/noticias/2023/Junho/por-maioria-de-votos-tse-declara-bolsonaro-inelegivel-por-8-anos',
+    note: 'Official TSE news record consulted for the 30 June 2023 decision declaring Jair Bolsonaro ineligible for eight years from the 2022 elections. No decision text, vote table, translation or media is republished; this is an institutional account of a formal electoral-court outcome, not independent observation of the evidence or its broader political reception.',
+    accessDate: '2026-09-22', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: '2023-06-30', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official electoral-court judgment summary / institutional record', identifiers: { case: 'Jair Bolsonaro 2022 ineligibility', decisionDate: '2023-06-30', term: '8 years from 2022 elections' },
+    description: 'Official TSE account of the formal ineligibility decision, used to anchor one layer of electoral accountability while keeping the complete judicial record, independent legal analysis and political reception distinct.'
+  },
+  {
+    id: 'brazilStfAp2668Final2025',
+    label: 'Supremo Tribunal Federal — Conclusion of AP 2668 (2025)',
+    url: 'https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=613814&ori=1',
+    note: 'Official STF institutional report consulted for the 12 September 2025 conclusion of criminal action AP 2668. No judgment wording, evidence, transcript, translation or media is republished; the institutional account is kept distinct from independent review, complete case-file analysis, implementation, appeal questions and public interpretation.',
+    accessDate: '2026-09-22', creators: ['Supremo Tribunal Federal'], institution: 'Supremo Tribunal Federal', publicationDate: '2025-09-12', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official Supreme Court judgment/news record', identifiers: { case: 'AP 2668', decisionDate: '2025-09-12' },
+    description: 'Official institutional record of the final AP 2668 judgment and its public account, used to anchor a dated judicial event rather than to supply complete independent findings or a measure of the event’s political meaning.'
+  },
+  {
+    id: 'brazilAronneUrbanoVargasBolsonaro2025',
+    label: 'Luciano Aronne de Abreu and Aline da Rosa Urbano — De Vargas a Bolsonaro: olhares sobre a democracia no Brasil (2025)',
+    url: 'https://editora.pucrs.br/livro/1813/',
+    note: 'EDIPUCRS record consulted for the Portuguese-language edited study (217 pages; print ISBN 978-65-5623-533-2; digital ISBN 978-65-5623-534-9; DOI 10.15448/1813). No book wording, quotation, table, image or scan is republished; its long-duration democratic and authoritarian interpretation is attributed and bounded.',
+    accessDate: '2026-09-22', creators: ['Luciano Aronne de Abreu', 'Aline da Rosa Urbano'], institution: 'EDIPUCRS', publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'book-length Portuguese-language edited historical study of Brazilian democracy', identifiers: { isbn: '9786556235332', digitalIsbn: '9786556235349', doi: '10.15448/1813', pages: '217' },
+    description: 'Portuguese-language edited collection on authoritarianism, democracy, conservative traditions, Vargas, the military dictatorship and the relationship between Bolsonaro-era New Right and extremist currents and longer Brazilian political history. It supplies a long-duration historical perspective, not a complete account of the 2025 trial or every Brazilian community.'
+  },
+  {
+    id: 'brazilSantosHatzikidiFacesAuthoritarianism2025',
+    label: 'Andreza Aruska de Souza Santos and Katerina Hatzikidi (eds.) — The Faces of Authoritarianism and Strategies of Dissent in Contemporary Brazil (2025)',
+    url: 'https://uclpress.co.uk/book/the-faces-of-authoritarianism-and-strategies-of-dissent-in-contemporary-brazil/',
+    note: 'UCL Press record consulted for the open-access edited study published 15 May 2025 (DOI 10.14324/111.9781800088207; PDF ISBN 9781800088207; EPUB ISBN 9781800088221; hardback ISBN 9781800088184; paperback ISBN 9781800088191; CC BY-NC 4.0). Only original paraphrase and a link are used; no chapter wording, quotation, table, image or scan is republished.',
+    accessDate: '2026-09-22', creators: ['Andreza Aruska de Souza Santos', 'Katerina Hatzikidi'], institution: 'UCL Press', publicationDate: '2025-05-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Portuguese'],
+    sourceType: 'book-length open-access interdisciplinary edited study of authoritarianism and dissent in contemporary Brazil', identifiers: { doi: '10.14324/111.9781800088207', pdfIsbn: '9781800088207', epubIsbn: '9781800088221', hardbackIsbn: '9781800088184', paperbackIsbn: '9781800088191', license: 'CC BY-NC 4.0' },
+    description: 'Open-access interdisciplinary edited study of authoritarianism and dissent around the Bolsonaro administration, including disinformation, evangelical activism, rural politics, local cases and democratic struggle. It supplies plural perspectives on the 2019–2023 context, not a complete national history or a book-level account of the 2025 AP 2668 trial.'
+  },
+  {
+    id: 'brazilAvritzerRennoCrisisDemocracy2025',
+    label: 'Leonardo Avritzer and Lucio R. Rennó — The Crisis of Democracy in Brazil (2025)',
+    url: 'https://link.springer.com/book/10.1007/978-3-032-10790-9',
+    note: 'Springer Cham record consulted for the 2025 book (DOI 10.1007/978-3-032-10790-9). No book wording, quotation, table, image or scan is republished; the authors’ account of transition dilemmas, democratic backsliding, judicial politicization, Bolsonarismo and the 2023 recovery is attributed and period-bounded.',
+    accessDate: '2026-09-22', creators: ['Leonardo Avritzer', 'Lucio R. Rennó'], institution: 'Springer Cham', publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of democratic backsliding and institutional crisis in Brazil', identifiers: { doi: '10.1007/978-3-032-10790-9' },
+    description: 'Book-length study of unresolved transition dilemmas, democratic instability since 2013, Bolsonaro-era backsliding, army self-restraint, institutional change, judicial politicization, Bolsonarismo and the difficult 2023 recovery. It supplies an independent institutional-crisis perspective, not a complete account of the 2025 judgment or every post-2025 development.'
+  },
+  {
     id: 'knightMexicanRevolution1986',
     label: 'Alan Knight — The Mexican Revolution',
     url: 'https://search.worldcat.org/title/The-Mexican-Revolution/oclc/12135091',
