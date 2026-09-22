@@ -4067,6 +4067,56 @@ const sources = [
     description: 'Primary institutional account of electoral administration and results for the 2020–2021 general elections. It documents the Commission’s own record and cannot alone establish equal participation, electoral fairness, uncoerced choice, public consensus or the experience of every locality.'
   },
   {
+    id: 'ugandaElectoralCommission2026GeneralElection',
+    label: 'Electoral Commission of Uganda — 2025/2026 General Elections roadmap and polling schedule',
+    url: 'https://www.ec.or.ug/election/20252026-general-elections',
+    note: 'Official Electoral Commission page consulted for the revised 2025/2026 presidential, parliamentary, local-government and special-interest election timetable and administrative roadmap. No schedule wording, PDF, result table or scan is republished; the page establishes electoral administration and dates, not fairness, final results or public consent.',
+    accessDate: '2026-09-22', creators: ['Electoral Commission of Uganda'], institution: 'Electoral Commission of Uganda',
+    publicationDate: '2026-01-19', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary electoral timetable and administration record', identifiers: { electionDate: '2026-01-15', cycle: '2025/2026' },
+    description: 'Official administrative witness for the 2025/2026 electoral cycle, including the 15 January 2026 presidential and parliamentary polling date, local-government and special-interest election sequence and the Commission’s electoral activities. It does not establish equal conditions, complete results or voter experience.'
+  },
+  {
+    id: 'ugandaAuComesaIgadElectionObservation2026',
+    label: 'AU–COMESA–IGAD Election Observation Mission — Preliminary Statement on Uganda’s 15 January 2026 General Elections',
+    url: 'https://www.peaceau.org/en/article/the-african-union-common-market-for-eastern-and-southern-africa-and-the-inter-governmental-authority-on-development-election-observation-mission-preliminary-statement-to-the-republic-of-uganda-15-january-2026-general-elections',
+    note: 'Official preliminary regional observation statement issued in Kampala on 17 January 2026. No statement wording, table, scan or adapted material is republished; its preliminary mandate and the promised final report remain distinct from final results, court records, party evidence and local accounts.',
+    accessDate: '2026-09-22', creators: ['African Union–COMESA–IGAD Election Observation Mission'], institution: 'African Union / COMESA / IGAD',
+    publicationDate: '2026-01-17', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary regional election-observation preliminary statement', identifiers: { electionDate: '2026-01-15', observers: '84', deployment: '2026-01-07–2026-01-19' },
+    description: 'Preliminary regional observer record on Uganda’s pre-election and Election Day environment, including rights, military involvement, internet restriction, opposition and civil-society conditions, voter-register concerns, selected orderly counting and an unfinished tally at issuance. It is not a final national result, casualty record or complete legitimacy assessment.'
+  },
+  {
+    id: 'ugandaEuElectionStatement2026',
+    label: 'European Union External Action Service — Statement by the Spokesperson on Uganda’s general elections (2026)',
+    url: 'https://www.eeas.europa.eu/eeas/uganda-statement-spokesperson-general-elections_en',
+    note: 'Official EU diplomatic statement consulted for its response to the 15 January 2026 general elections. No statement wording, quotation or scan is republished; the diplomatic response is kept distinct from regional observation, official administration, court records, party evidence and local experience.',
+    accessDate: '2026-09-22', creators: ['Spokesperson for the European Union External Action Service'], institution: 'European External Action Service',
+    publicationDate: '2026-01-17', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional statement'],
+    sourceType: 'primary diplomatic statement on an election', identifiers: { electionDate: '2026-01-15' },
+    description: 'Diplomatic response corroborating concerns about an uneven electoral playing field, arbitrary arrests of civil-society actors and an internet shutdown. It is a bounded external response, not an independent observation mission or a complete account of Ugandan political experience.'
+  },
+  {
+    id: 'ugandaWilkinsVokesElections2018',
+    label: 'Sam Wilkins and Richard Vokes (eds.) — Elections in Museveni’s Uganda (2018)',
+    url: 'https://www.routledge.com/Elections-in-Musevenis-Uganda/Wilkins-Vokes/p/book/9780367891237',
+    note: 'Routledge record consulted for the 2018, 258-page edited study and ISBN 9780367891237. No chapter wording, quotation, table, scan or adapted material is republished; its 2016-election analysis is treated as historical context rather than direct evidence for 2026.',
+    accessDate: '2026-09-22', creators: ['Sam Wilkins (editor)', 'Richard Vokes (editor)'], institution: 'Routledge',
+    publicationDate: '2018', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited study of Uganda’s 2016 elections and Museveni-era regime maintenance', identifiers: { isbn: '9780367891237', pages: '258' },
+    description: 'Edited book-length study of Uganda’s 2016 elections, NRM survival, patronage, coercion, fraud and local political culture. It supplies multiple scholarly perspectives on the late-Museveni order while remaining a period-bounded interpretation rather than a complete history of the 2021–2026 cycle.'
+  },
+  {
+    id: 'ugandaTapscottArbitraryStates2021',
+    label: 'Rebecca Tapscott — Arbitrary States: Social Control and Modern Authoritarianism in Museveni’s Uganda (2021)',
+    url: 'https://academic.oup.com/book/39312',
+    note: 'Oxford University Press record consulted for the 2021 monograph, print ISBN 9780198856474, online ISBN 9780191889745 and DOI 10.1093/oso/9780198856474.001.0001. No book wording, quotation, table, chapter or scan is republished; its fieldwork and argument remain distinct from official records and 2026 observation.',
+    accessDate: '2026-09-22', creators: ['Rebecca Tapscott'], institution: 'Oxford University Press',
+    publicationDate: '2021-06-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of social control and authoritarianism in Uganda', identifiers: { printIsbn: '9780198856474', onlineIsbn: '9780191889745', doi: '10.1093/oso/9780198856474.001.0001' },
+    description: 'Fieldwork-based study of local security, institutionalized arbitrariness, social control and authoritarian state consolidation in Museveni’s Uganda. It supplies a distinct institutional and local-security lens but does not by itself establish every region’s experience or the subsequent 2026 electoral record.'
+  },
+  {
     id: 'kanyeihambaConstitutionalPoliticalHistoryUganda2010',
     label: 'George W. Kanyeihamba — Constitutional and Political History of Uganda from 1894 to the Present (2nd ed., 2010)',
     url: 'https://books.google.co.ug/books?id=hTqEcgAACAAJ',
