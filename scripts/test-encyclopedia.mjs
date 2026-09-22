@@ -831,7 +831,7 @@ assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Ext
 assert.ok(christianDemocracyEntry.researchGaps.some((gap) => gap.startsWith('Compare Chile’s Revolución en Libertad')));
 for (const [sourceId, role, date, languages, profileEntries] of [
   ['dcItalyIdeasReconstructive1943', 'primary', '1943', ['Italian'], ['encyclopedia:christian-democratic', 'geography:italian-republican-constitutional-founding']],
-  ['italyConstitution1948', 'primary', '1948-01-01', ['Italian', 'English translation'], ['encyclopedia:christian-democratic', 'geography:italian-republican-constitutional-founding', 'geography:italian-republican-party-system-transformation']],
+  ['italyConstitution1948', 'primary', '1948-01-01', ['Italian', 'English translation'], ['encyclopedia:christian-democratic', 'geography:italian-republican-constitutional-founding', 'geography:italian-republican-party-system-transformation', 'geography:italian-post-2022-meloni-government-and-institutional-contestation']],
   ['forlenzaThomassenChristianDemocracy2024', 'secondary', '2024-04-02', ['English'], ['encyclopedia:christian-democratic']],
 ]) {
   assert.ok(christianDemocracyEntry.references.researchSourceIds.includes(sourceId), `${sourceId} needs an Italian Christian-democratic reference trail`);
