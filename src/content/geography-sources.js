@@ -8121,6 +8121,78 @@ const sources = [
     description: 'Primary account of British Guiana’s colonial political economy, elections, anti-colonial struggle and Jagan’s political interpretation through 1966. It anchors self-description and memory while requiring triangulation with the institutional, ethnographic and historical scholarship.'
   },
   {
+    id: 'guyanaNaturalResourceFundAct2021',
+    label: 'Parliament of Guyana — Natural Resource Fund Act 2021, Act No. 19 of 2021',
+    url: 'https://officialegazette.gov.gy/publications/b5969a62-ea87-4dff-969a-62ea876dff47',
+    note: 'Official Gazette legal supplement consulted as primary legislation and link only. No statutory wording, scan, table or PDF page is republished; the law establishes a fiscal framework and does not by itself demonstrate deposits, withdrawals, transparency in practice or distributive outcomes.',
+    accessDate: '2026-09-22', creators: ['Parliament of Guyana'], institution: 'Official Gazette of Guyana', publicationDate: '2021-12-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary legislation / official gazette', identifiers: { actNumber: '19 of 2021', gazetteDate: '2021-12-30' },
+    description: 'Statutory framework for Guyana’s Natural Resource Fund. The Act is evidence of formal fiscal governance design, not audited proof of implementation, public consent, or how oil revenues affect households and communities.'
+  },
+  {
+    id: 'guyanaIMFArticleIV2025',
+    label: 'International Monetary Fund — Guyana: 2025 Article IV Consultation, Country Report No. 25/103',
+    url: 'https://www.imf.org/-/media/files/publications/cr/2025/english/1guyea2025001-print-pdf.pdf',
+    note: 'IMF staff report published 7 May 2025, consulted as an attributed macroeconomic assessment and link only. No report text, tables or figures are republished; staff estimates and causal framing are not a household-distribution study or an independent audit of every oil-sector claim.',
+    accessDate: '2026-09-22', creators: ['International Monetary Fund'], institution: 'International Monetary Fund', publicationDate: '2025-05-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international financial institution Article IV staff report', identifiers: { reportNumber: '25/103', doi: '10.5089/9798229008860.002' },
+    description: 'Staff macroeconomic and policy assessment of oil-driven growth, public investment and economic risks. It supplies a dated cross-check, not a comprehensive distributional, environmental or local political-economy account.'
+  },
+  {
+    id: 'guyanaOasEom2025',
+    label: 'Organization of American States — Preliminary Report of the Electoral Observation Mission, Guyana General and Regional Elections 2025',
+    url: 'https://www.oas.org/fpdb/press/2025_GUYANA_EOM_General-Elections_Preliminary-Report_ENG.pdf',
+    note: 'OAS Electoral Observation Mission preliminary report dated 5 September 2025, consulted as attributed observation and link only. No text or tables are republished; the report describes a mission with observers in seven of ten regions and does not represent a full observation of every polling place or voter.',
+    accessDate: '2026-09-22', creators: ['Organization of American States Electoral Observation Mission'], institution: 'Organization of American States', publicationDate: '2025-09-05', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation preliminary report', identifiers: { electionYear: '2025', reportDate: '2025-09-05' },
+    description: 'Preliminary observer record of the 2025 general and regional elections, including the legal and administrative framework, reforms since 2020, polling and tabulation observations, and concerns described by the mission. Findings remain mission-attributed and bounded.'
+  },
+  {
+    id: 'guyanaGecom2025ElectionDeclaration',
+    label: 'Guyana Elections Commission — Declaration of Results, General and Regional Elections 2025',
+    url: 'https://gecom.org.gy/public/uploads/posts/2025/07_Sep_2025_1757219552_78c200cdb11fe96d12c1.pdf',
+    note: 'GECOM’s official press release of 6 September 2025 consulted as the election authority’s declaration and link only. No result table or document wording is republished; an official declaration establishes the declared outcome, not voter motives, campaign equality or a uniform mandate.',
+    accessDate: '2026-09-22', creators: ['Guyana Elections Commission'], institution: 'Guyana Elections Commission', publicationDate: '2025-09-06', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election result declaration', identifiers: { electionYear: '2025', declarationDate: '2025-09-06' },
+    description: 'Election authority declaration naming the official winner and elected presidential candidate in the 2025 general and regional elections. The source anchors institutional outcome only.'
+  },
+  {
+    id: 'guyanaCarterFinal2025',
+    label: 'The Carter Center — Final Report: 2025 General and Regional Elections in Guyana',
+    url: 'https://www.cartercenter.org/publication/final-report-2025-general-and-regional-elections-in-guyana/',
+    note: 'Carter Center final observer report, published 23 April 2026, consulted as an attributed institutional assessment and link only. No report text, tables or PDF pages are republished; improved tabulation findings and continuing concerns are kept separate, and observer conclusions are not treated as a complete survey or adjudication of all political conditions.',
+    accessDate: '2026-09-22', creators: ['The Carter Center'], institution: 'The Carter Center', publicationDate: '2026-04-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final report', identifiers: { electionYear: '2025', publicationDate: '2026-04-23' },
+    description: 'Final observer assessment of the 2025 general and regional elections, reporting smoother and more verifiable tabulation than in 2020 alongside continuing concerns involving election administration, voter lists, campaign finance, incumbency and media conditions. These are the Center’s attributed findings, not a judgment of every voter or polling place.'
+  },
+  {
+    id: 'guyanaCarterGECOMDeadlock2026',
+    label: 'The Carter Center — Carter Center Calls on Guyanese Officials to End Deadlock on Elections Commission Composition (5 August 2026)',
+    url: 'https://www.cartercenter.org/news/carter-center-calls-on-guyanese-officials-to-end-deadlock-on-elections-commission-composition/',
+    note: 'Carter Center statement based on its June 2026 stakeholder meetings, consulted as an attributed institutional position and link only. No statement wording is republished; its account of the GECOM-composition impasse and implications for local elections is not presented as an adjudicated finding or post-5-August status update.',
+    accessDate: '2026-09-22', creators: ['The Carter Center'], institution: 'The Carter Center', publicationDate: '2026-08-05', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-assistance institutional statement', identifiers: { statementDate: '2026-08-05', meetingsMonth: '2026-06' },
+    description: 'Dated institutional follow-up on the reported impasse over composition of Guyana’s Elections Commission and the Center’s recommendations concerning the legal framework for reflecting party configuration. It ends this case’s observation horizon and does not establish later developments.'
+  },
+  {
+    id: 'guyanaGlobalGuyana2024',
+    label: 'Oneka LaBennett — Global Guyana: Shaping Race, Gender, and Environment in the Caribbean and Beyond (2024)',
+    url: 'https://nyupress.org/9781479827015/global-guyana/',
+    note: 'NYU Press publisher record for the 2024 monograph (ISBN 9781479827015; 256 pages) consulted for bibliographic metadata and its described subject only; the full book and its cited evidence were not consulted in this pass. No book wording is republished, and it is not treated as a direct account of the 2020–2026 administration.',
+    accessDate: '2026-09-22', creators: ['Oneka LaBennett'], institution: 'NYU Press', publicationDate: '2024-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph', identifiers: { isbn: '9781479827015', pages: '256' },
+    description: 'Monograph on Guyana and Caribbean connections through race, gender and environment. Publisher metadata supplies a relevant analytical lens, not a substitute for consultation of the text or evidence of every community’s experience.'
+  },
+  {
+    id: 'guyanaGriffithOilClimate2024',
+    label: 'Ivelaw Lloyd Griffith (ed.) — Oil and Climate Change in the Guyana-Suriname Basin (2024)',
+    url: 'https://www.routledge.com/Oil-and-Climate-Change-in-the-Guyana-Suriname-Basin/Griffith/p/book/9781032598932',
+    note: 'Routledge publisher record and contents consulted for the 2024 edited volume (ISBN 9781032598932; 344 pages); the full volume and individual chapters were not consulted. No chapter wording is republished; its Guyana/Suriname regional scope and chapter-level perspectives are not treated as a single consensus or a comprehensive evaluation of Guyanese policy.',
+    accessDate: '2026-09-22', creators: ['Ivelaw Lloyd Griffith'], institution: 'Routledge', publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on oil, climate and political economy', identifiers: { isbn: '9781032598932', pages: '344' },
+    description: 'Edited volume on oil and climate change in the Guyana–Suriname Basin, including chapters on Guyana’s domestic politics, Natural Resource Fund and related governance questions. Its bibliographic record and contents identify relevant debates but do not stand in for full-text study.'
+  },
+  {
     id: 'surinameConstitution1987Gov',
     label: 'Government of Suriname — Constitution of the Republic of Suriname (1987, amended 1992), official record',
     url: 'https://gov.sr/thema/grondwet/',
@@ -9277,6 +9349,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('cambodia') || source.id.startsWith('chandlerHistoryCambodia') || source.id.startsWith('hughesPoliticalEconomyCambodia') || source.id.startsWith('robertsPoliticalTransitionCambodia') || source.id.startsWith('etchesonRiseDemiseKampuchea') || source.id.startsWith('strangioHunSensCambodia') || source.id.startsWith('kheangUnCambodia') ? 'Cambodian conflict, reconstruction and constitutional political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
+      : source.id.startsWith('guyana') ? 'Guyanese constitutional, electoral, political-economy and resource-governance history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
       : source.id.startsWith('newZealand') ? 'New Zealand Treaty, Māori, parliamentary, welfare and constitutional political history'
