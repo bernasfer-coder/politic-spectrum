@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(158);
+    expect(cards()).toHaveLength(159);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -38,6 +38,16 @@ describe('geographic atlas', () => {
     expect(context).toHaveTextContent('no six-axis score assigned');
     expect(context.compareDocumentPosition(cards()[0]) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(within(cards()[0]).getByRole('link', { name: /Related encyclopedia/ })).toHaveAttribute('href', '#encyclopedia/anti-colonial-liberation');
+  });
+
+  it('shows Nepal’s bounded 2025–2026 uprising case without scoring the country', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'nepal');
+    expect(cards()).toHaveLength(3);
+    expect(cards()[2]).toHaveTextContent('2025–2026');
+    expect(cards()[2]).toHaveTextContent('accountability');
+    expect(cards()[2]).toHaveTextContent('not a current-country assessment');
   });
 
   it('normalizes accented aliases and persists a timeline URL', async () => {

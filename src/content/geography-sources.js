@@ -9377,6 +9377,76 @@ const sources = [
     sourceType: 'Spanish-language book-length political interpretation of Bolivia’s post-Evo process', identifiers: { isbn: '9788446051749', pages: '272' },
     description: 'Book-length political interpretation of the Bolivian process after Evo Morales, published in 2022. Its positional context and coverage horizon are material limits; it is paired with independent organizational studies and election records and is not treated as a neutral or complete account of 2020–2025.'
   },
+  {
+    id: 'nepalOhchrSpecialProceduresCommunication2026',
+    label: 'United Nations Special Procedures — AL NPL (1.2025), communication concerning Nepal protests (8 January 2026)',
+    url: 'https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=30603',
+    note: 'The full 10-page UN Special Procedures communication was consulted. It transmits information and allegations received, requests the Government of Nepal’s response and expressly says the mandate holders do not wish to prejudge accuracy; it is not an investigative finding or judicial determination. No letter wording, annex text, translation, scan or PDF page is republished.',
+    accessDate: '2026-09-22', creators: ['United Nations Special Procedures mandate holders'], institution: 'Office of the United Nations High Commissioner for Human Rights (OHCHR), Special Procedures',
+    publicationDate: '2026-01-08', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'public UN Special Procedures communication to the Government of Nepal / complete PDF (10 pages)', identifiers: { communicationReference: 'AL NPL (1.2025)' },
+    description: 'Primary record of a public communication by six UN human-rights mandates conveying allegations concerning the 8–9 September 2025 demonstrations, detentions and use of force and requesting government information. It documents what the mandate holders received and asked, not independently verified events or legal liability.'
+  },
+  {
+    id: 'nepalIdeaAnnualReviewConstitutionBuilding2025',
+    label: 'International IDEA — Annual Review of Constitution-Building: 2025 (published 2026), Chapter 3',
+    url: 'https://www.idea.int/sites/default/files/2026-09/annual-review-of-constitution-building-2025.pdf',
+    note: 'The International IDEA catalogue and the full online text of Sharon Pia Hickey’s Nepal discussion in Chapter 3 were consulted; the annual review reports on 2025 but was published 9 September 2026 (94 pages). Its comparative constitutional analysis draws on attributed reporting and other sources, not original interviews with every movement constituency. No review wording, table, quotation, scan or PDF page is republished.',
+    accessDate: '2026-09-22', creators: ['Adem Kassie Abebe', 'Sharon Pia Hickey', 'Alexander Hudson', 'Eva Montero Ibarra', 'Alexandra Oancea', 'Kimana Zulueta-Fülscher'], institution: 'International Institute for Democracy and Electoral Assistance (International IDEA)',
+    publicationDate: '2026-09-09', publisher: 'International IDEA', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional annual constitutional review / full Nepal chapter consulted', identifiers: { pdfIsbn: '978-91-8137-216-8', htmlIsbn: '978-91-8137-217-5', doi: '10.31752/18859', pages: '94' },
+    description: 'Chapter 3, “Gen Z Mobilization and Pathways to Political, Constitutional, and Institutional Reform in 2025,” by Sharon Pia Hickey, compares Nepal with Madagascar. Its account documents disagreement among protest groups, disputes about the transitional route and the distinction between movement networks and the Rastriya Swatantra Party (RSP); it is an attributed institutional interpretation, not a representative survey or a book-length standalone history of Nepal’s episode.'
+  },
+  {
+    id: 'nepalElectionCommission2026Results',
+    label: 'Election Commission Nepal — Report to the President on the 2026 House of Representatives election results',
+    url: 'https://ebulletin.election.gov.np/2026/03/3043/',
+    note: 'Official Election Commission Nepal bulletin in Nepali, reporting submission of the House of Representatives result report to the President on 5 Chaitra 2082 and summarizing the 21 Falgun 2082 election. It is an institutional results record, not independent verification of campaign equality, individual vote motives or the protest movement’s representativeness. No table, text, translation or scan is republished.',
+    accessDate: '2026-09-22', creators: ['Election Commission Nepal'], institution: 'Election Commission Nepal',
+    publicationDate: '2026-03', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official House of Representatives election-results report / primary electoral record', identifiers: { electionDate: '2026-03-05', reportSubmissionNepaliDate: '2082-12-05' },
+    description: 'The Commission’s official bulletin records delivery of the 275-member House result to the President and reports the elected membership and election administration. It documents the official result and the Commission’s own account, not independent observation or a causal explanation of the outcome.'
+  },
+  {
+    id: 'nepalParliamentaryParties2082',
+    label: 'House of Representatives of Nepal — Parliamentary Parties 2082 (updated 26 March 2026)',
+    url: 'https://hr.parliament.gov.np/en/parliamentary-parties-2082',
+    note: 'Official House of Representatives parliamentary-party page consulted for its 26 March 2026 update and party membership totals. It is a primary parliamentary composition record; party seat totals do not show that a party organizationally represents protest groups or all their participants. No roster table, wording, translation or page image is republished.',
+    accessDate: '2026-09-22', creators: ['House of Representatives of Nepal'], institution: 'Federal Parliament Secretariat of Nepal',
+    publicationDate: '2026-03-26', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary party-composition record / primary institutional page', identifiers: { pageUpdated: '2026-03-26' },
+    description: 'The House Secretariat lists post-election parliamentary party membership, including the RSP’s 182 of 275 House members. This establishes seat composition, not the ideology of all members, voter motives, or a representative link between the RSP and every Gen Z protest network.'
+  },
+  {
+    id: 'nepalMofaKarkiTransitionBriefing2025',
+    label: 'Ministry of Foreign Affairs of Nepal — Sushila Karki’s diplomatic briefing (17 October 2025)',
+    url: 'https://mofa.gov.np/content/1680/diplomatic-briefing-by-the-rt--hon--mrs-/',
+    note: 'The full text of the Ministry-hosted 17 October 2025 briefing was consulted as an official primary statement by interim Prime Minister Sushila Karki. Its account of the government’s mandate is attributed self-description, not an independent constitutional ruling or proof of consensus. No speech wording, audio, image or transcript excerpt is reproduced.',
+    accessDate: '2026-09-22', creators: ['Sushila Karki'], institution: 'Ministry of Foreign Affairs of Nepal',
+    publicationDate: '2025-10-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official interim prime ministerial address / primary government statement', identifiers: { addressDate: '2025-10-17' },
+    description: 'Karki’s diplomatic briefing describes the interim administration as transitional and tasked with holding the 5 March 2026 House election, following her appointment on 12 September and the House dissolution. It records government self-description, not independent confirmation that the legal pathway was uncontested or the transition wholly non-political.'
+  },
+  {
+    id: 'nepalNhrcGenZRecommendations2026',
+    label: 'National Human Rights Commission of Nepal — Gen Z movement investigation recommendations to government (13 Jestha 2083)',
+    url: 'https://www.nhrcnepal.org/press_release/detail/883',
+    note: 'The NHRC’s official Nepali-language 13 Jestha 2083 press notice and linked one-page note were consulted. They document that the Commission considered the committee’s completed investigation and sent implementation recommendations to the Office of the Prime Minister; the underlying investigation and the recommendation detail are not reproduced here or treated as independently verified findings. No document wording, translation, scan or annex is republished.',
+    accessDate: '2026-09-22', creators: ['National Human Rights Commission of Nepal'], institution: 'National Human Rights Commission of Nepal',
+    publicationDate: '2026-05-27', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official national human-rights commission press release / primary institutional record', identifiers: { decisionMeetingNepaliDate: '2083-02-12', noticeNepaliDate: '2083-02-13' },
+    description: 'Official notice documenting that an NHRC investigation committee submitted its report and the Commission communicated recommendations on the September 2025 movement to the Government of Nepal for implementation. The notice itself does not provide a complete public evidentiary record or establish the implementation outcome.'
+  },
+  {
+    id: 'nepalKathmanduPostUprisingAccountability2026',
+    label: 'Durga Dulal — “Two days of Gen Z uprising, two versions of what happened” (10 September 2026)',
+    url: 'https://kathmandupost.com/national/2026/09/10/two-days-of-gen-z-uprising-two-versions-of-what-happened',
+    note: 'The complete Kathmandu Post report was consulted for its 10 September 2026 account of competing narratives and follow-up on the inquiry commissions. Its reporting and quotations are attributed to the named reporter and interviewees; descriptions of commission findings are not a substitute for the underlying reports, court records or testimony. No article wording, photograph or other copyrighted material is reproduced.',
+    accessDate: '2026-09-22', creators: ['Durga Dulal'], institution: 'The Kathmandu Post / Kantipur Publications',
+    publicationDate: '2026-09-10', publisher: 'The Kathmandu Post', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Nepal-based newspaper report on protest memory and accountability proceedings', identifiers: {},
+    description: 'A dated local report documents political disagreement over the meaning of 8–9 September 2025, distinguishes two inquiry processes, and reports subsequent arrests, Supreme Court releases and stalled follow-through as of publication. These are attributed reporting and interviews, not a final adjudication or a complete history of all protest participants.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));

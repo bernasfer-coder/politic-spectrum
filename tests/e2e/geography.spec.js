@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(158);
+  await expect(page.locator('.geo-card')).toHaveCount(159);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -41,6 +41,17 @@ test('shared cases link to the encyclopedia and bibliography, and return to the 
   await expect(card).toHaveCount(1);
 });
 
+test('the new Nepal period links its bounded claims to source records', async ({ page }) => {
+  await page.goto('/#geography?case=nepali-gen-z-uprising-and-electoral-accountability-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('2025–2026');
+  await expect(card).toContainText('not a current-country assessment');
+  await card.locator('.geo-evidence summary').click();
+  await card.getByRole('link', { name: 'Bibliography & rights record →' }).first().click();
+  await expect(page).toHaveURL(/#bibliography\/research-nepalConstitution2015$/);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -57,7 +68,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(158);
+  await expect(page.locator('.geo-card')).toHaveCount(159);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
