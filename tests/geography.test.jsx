@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(155);
+  expect(cards()).toHaveLength(156);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -38,6 +38,16 @@ describe('geographic atlas', () => {
     expect(context).toHaveTextContent('no six-axis score assigned');
     expect(context.compareDocumentPosition(cards()[0]) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(within(cards()[0]).getByRole('link', { name: /Related encyclopedia/ })).toHaveAttribute('href', '#encyclopedia/anti-colonial-liberation');
+  });
+
+  it('keeps Sudan’s 2023 war case separate from its earlier bounded history', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'sudan');
+    expect(cards()).toHaveLength(2);
+    expect(cards()[0]).toHaveTextContent('1989–2021');
+    expect(cards()[1]).toHaveTextContent('15 April 2023–7 September 2026');
+    expect(cards()[1]).toHaveTextContent('not a current-country classification');
   });
 
   it('normalizes accented aliases and persists a timeline URL', async () => {
