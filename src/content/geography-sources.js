@@ -6880,6 +6880,51 @@ const sources = [
     description: 'Spanish-language edited study of Peru’s post-2001 erosion of democratic representation and rule of law, including subnational and national political competition, the 2016–2021 crisis sequence, judicialization, corruption and the Castillo–Boluarte cycle. It supplies a recent scholarly interpretation while this case remains bounded to 2021 and does not assert a later current status.'
   },
   {
+    id: 'peruCongressVacancyCastillo2022',
+    label: 'Congreso de la República del Perú — Resolución del Congreso 001-2022-2023-CR, vacancia de Pedro Castillo (7 December 2022)',
+    url: 'https://busquedas.elperuano.pe/api/visor_html/2132939-1',
+    note: 'Official Peruvian legal publication consulted as a primary record of Congress’s 7 December 2022 vacancy resolution and the succession provision it invoked. No resolution wording, scan or legal quotation is republished; the institution’s characterization of Castillo’s attempted dissolution is distinguished from independent adjudication, popular consent or a complete account of the crisis.',
+    accessDate: '2026-09-22', creators: ['Congreso de la República del Perú'], institution: 'Congreso de la República del Perú / Diario Oficial El Peruano', publicationDate: '2022-12-07', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary legislative resolution / official legal record', identifiers: { resolution: '001-2022-2023-CR', date: '2022-12-07' },
+    description: 'Primary legislative record of the Peruvian Congress declaring the permanent incapacity and vacancy of President Pedro Castillo and applying the constitutional succession framework. It establishes what the legislature resolved and how it legally framed the event, not whether every factual or constitutional claim was uncontested.'
+  },
+  {
+    id: 'peruDefensoriaCrisisProtesta2023',
+    label: 'Defensoría del Pueblo — Informe Defensorial n.º 190: Crisis política y protesta social (7 March 2023)',
+    url: 'https://www.defensoria.gob.pe/informes/informe-defensorial-n-190/',
+    note: 'Official Peruvian Ombudsman report consulted as an institutional human-rights and protest record. No report wording, table, scan or PDF page is republished; its balance and recommendations are kept distinct from the government, Congress, protesters, police, armed forces and later judicial findings.',
+    accessDate: '2026-09-22', creators: ['Defensoría del Pueblo del Perú'], institution: 'Defensoría del Pueblo', publicationDate: '2023-03-07', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official ombudsman report on political crisis and social protest', identifiers: { report: 'Informe Defensorial n.º 190', period: '2022-12 to 2023-03' },
+    description: 'Institutional report documenting the political crisis and protest sequence, its regional and legal dimensions, the applicable human-rights framework and recommendations for a peaceful resolution. It is evidence of the Ombudsman’s documented findings and institutional position, not a complete local history or a final adjudication of every death, injury or responsibility.'
+  },
+  {
+    id: 'peruCongressBoluarteMessage2023',
+    label: 'Dina Boluarte — Mensaje a la Nación ante el Congreso (28 July 2023)',
+    url: 'https://www3.congreso.gob.pe/Docs/participacion/museo/congreso/files/mensajes/2021-2040/boluarte_2_2023-07-28.pdf',
+    note: 'Official Congressional archive copy of President Dina Boluarte’s 28 July 2023 message consulted as a primary self-description of government priorities and its account of the succession, security and governance context. No speech wording, scan or PDF page is republished; official claims are not treated as independent proof of democratic legitimacy, public consent or policy success.',
+    accessDate: '2026-09-22', creators: ['Dina Ercilia Boluarte Zegarra'], institution: 'Congreso de la República del Perú', publicationDate: '2023-07-28', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential address / parliamentary archive', identifiers: { address: 'Mensaje a la Nación ante el Congreso', date: '2023-07-28' },
+    description: 'Primary presidential address in which Boluarte presented her administration’s account of the constitutional succession, national conditions, security agenda and intended governance measures. It records executive self-description rather than an independent assessment of the crisis or an exhaustive policy history.'
+  },
+  {
+    id: 'peruAragonSanchezIlegitimidad2023',
+    label: 'Jorge Aragón and Diego Sánchez — La ilegitimidad del poder político en el Perú (2023)',
+    url: 'https://fondoeditorial.iep.org.pe/producto/la-ilegitimidad-del-poder-politico-en-el-peru-ebook/',
+    note: 'Instituto de Estudios Peruanos and Peruvian ISBN records consulted for the Spanish-language monograph (2023; print ISBN 978-612-326-251-8; 244 pages in the publisher record). No book wording, quotation, table or scan is republished; the authors’ conceptual and focus-group-based analysis of legitimacy is attributed and bounded rather than projected onto every Peruvian or locality.',
+    accessDate: '2026-09-22', creators: ['Jorge Aragón', 'Diego Sánchez'], institution: 'Instituto de Estudios Peruanos', publicationDate: '2023-11-29', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length Spanish-language political study of legitimacy and state–citizen relations', identifiers: { isbn: '9786123262518', pages: '244', edition: '1', series: 'Perú Problema' },
+    description: 'Book-length study of power, domination and political legitimacy in Peru, using conceptual analysis and discussion of citizen perceptions to examine the difficult relationship between state institutions and the people they govern. It supplies a legitimacy lens for the crisis period, not a full chronology, causal account or representative survey of every social group.'
+  },
+  {
+    id: 'peruCostaRomeroDemocraciaTomada2024',
+    label: 'Gino Costa and Carlos Romero — La democracia tomada: Pedro Castillo agudiza la crisis (2024)',
+    url: 'https://fondoeditorial.iep.org.pe/producto/la-democracia-tomada-pedro-castillo-agudiza-la-crisis/',
+    note: 'Instituto de Estudios Peruanos publisher record consulted for the Spanish-language book (2024; ISBN 978-612-326-280-8; 208 pages). No book wording, quotation, table or scan is republished; the authors’ interpretation of Castillo, Congress, corruption and authoritarian temptations is attributed and kept distinct from official records and other scholarly perspectives.',
+    accessDate: '2026-09-22', creators: ['Gino Costa', 'Carlos Romero'], institution: 'Instituto de Estudios Peruanos', publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length Spanish-language political study of the Castillo crisis', identifiers: { isbn: '9786123262808', pages: '208', edition: '1' },
+    description: 'Book-length political study of the conditions behind Pedro Castillo’s 2021 victory, the adverse governing environment, corruption and the failed autogolpe, arguing that the crisis involved pressures and authoritarian temptations from both left and right. It supplies an attributed interpretation of the Castillo phase, not a complete history of the Boluarte government or all protest actors.'
+  },
+  {
     id: 'paraguayConstitution1992Bacn',
     label: 'Paraguay — Constitución Nacional de 1992, Biblioteca y Archivo Central del Congreso Nacional',
     url: 'https://www.bacn.gov.py/leyesparaguayas/9580/constitucion-nacional-',
