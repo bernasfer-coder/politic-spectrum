@@ -3897,6 +3897,46 @@ const sources = [
     description: 'Book-length study focused on the Magufuli presidency, with chapters on political and economic context, anti-corruption, industrialization, revenue and mining, debt and international pressure, and democratic practice. It is a focused interpretation of one presidency, not a complete national history or proof of uniform Tanzanian experience.'
   },
   {
+    id: 'tanzaniaAuElectionObservation2025',
+    label: 'African Union Election Observation Mission — Preliminary Statement on Tanzania’s 2025 General Elections',
+    url: 'https://au.int/sites/default/files/pressreleases/45624-pr-preliminary-statement-african-union-elections-obervation-mission-to-the-tanzania-2025-general-elections.pdf',
+    note: 'Official African Union preliminary statement issued 5 November 2025, used as an institutional observation record for the 29 October general election. No statement wording, translation, scan or PDF page is republished; the preliminary mandate, later final report, domestic records and affected communities remain distinct research needs.',
+    accessDate: '2026-09-22', creators: ['African Union Election Observation Mission'], institution: 'African Union',
+    publicationDate: '2025-11-05', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary regional election-observation statement', identifiers: { electionDate: '2025-10-29' },
+    description: 'Preliminary continental observation record covering the political context, media and internet restrictions, polling, counting, security, protests and institutional reforms around Tanzania’s 2025 general election. It records the mission’s findings and recommendations, not a final judicial determination or a complete casualty, voter-motivation or local-experience history.'
+  },
+  {
+    id: 'tanzaniaEacElectionObservation2025',
+    label: 'East African Community Election Observation Mission — Preliminary Statement on Tanzania’s 2025 General Election',
+    url: 'https://www.eac.int/documents?controller=download&file=9a2481f7-e455-4ff4-884c-101b34e77b85&name=Preliminary+Statement+EAC+Observer+Mission+to+the+2025+URT+General+Election.pdf&task=download.file',
+    note: 'Official East African Community preliminary statement written 5 November 2025, used as a distinct regional observer record for the 27–29 October deployment. No statement wording, translation, scan or PDF page is republished; the mission’s selected-station scope and institutional standpoint are kept distinct from the AU, INEC, parties and every locality.',
+    accessDate: '2026-09-22', creators: ['East African Community Election Observation Mission'], institution: 'East African Community',
+    publicationDate: '2025-11-05', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary regional election-observation statement', identifiers: { electionDate: '2025-10-29', deployment: '2025-10-27–2025-10-29' },
+    description: 'Regional observer statement based on consultations and selected polling-station observations in mainland Tanzania and Zanzibar. It records both reported preparations and disruptions, including limited access and connectivity problems, without establishing a complete national account or final legitimacy finding.'
+  },
+  {
+    id: 'tanzaniaEuElectionStatement2025',
+    label: 'Council of the European Union — Statement on the elections in Tanzania (2025)',
+    url: 'https://www.consilium.europa.eu/en/press/press-releases/2025/11/02/tanzania-statement-by-the-high-representative-on-behalf-of-the-european-union-on-the-elections-in-tanzania/pdf/',
+    note: 'Official Council of the European Union statement issued 2 November 2025, used as a diplomatic response record to the proclaimed election results and reported violence, internet shutdown and civic-space concerns. No statement wording, translation, scan or PDF page is republished; it is not an independent election-observation report or a complete casualty record.',
+    accessDate: '2026-09-22', creators: ['High Representative of the European Union for Foreign Affairs and Security Policy'], institution: 'Council of the European Union',
+    publicationDate: '2025-11-02', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary diplomatic statement on an election', identifiers: { electionDate: '2025-10-29' },
+    description: 'Diplomatic statement recording the EU’s response to the proclaimed presidential results and reports of violence, fatalities, injuries, internet shutdown, irregularities, abductions and restrictions on civic-democratic space. It documents EU assessment and calls, not a comprehensive domestic or judicial finding.'
+  },
+  {
+    id: 'tanzaniaCollordWealthPower2024',
+    label: 'Michaela Collord — Wealth, Power, and Authoritarian Institutions: Comparing Dominant Parties and Parliaments in Tanzania and Uganda (2024)',
+    url: 'https://academic.oup.com/book/56203',
+    note: 'Oxford University Press book record consulted for the 2024 comparative monograph (online ISBN 9780191945335; print ISBN 9780192855183; DOI 10.1093/9780191945335.001.0001). No book wording, quotation, table, chapter or scan is republished; the Tanzania/Uganda comparison is attributed and does not replace Swahili, archival, party, parliamentary or post-2024 research.',
+    accessDate: '2026-09-22', creators: ['Michaela Collord'], institution: 'Oxford University Press',
+    publicationDate: '2024-03-11', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative study of dominant parties and parliaments in Tanzania and Uganda', identifiers: { onlineIsbn: '9780191945335', printIsbn: '9780192855183', doi: '10.1093/9780191945335.001.0001' },
+    description: 'Comparative book-length study of authoritarian parties and legislatures, wealth, state-led capitalist development and post-1980s private wealth in Tanzania and Uganda. Its fieldwork and institutional argument supplies contemporary political context for Tanzania, not a complete study of the Samia period or a uniform account of Tanzanian society.'
+  },
+  {
     id: 'kenyaConstitution2010Library',
     label: 'Government of Kenya / Presidential Library — Constitution of Kenya (2010)',
     url: 'https://www.presidentiallibrary.go.ke/documents/constitution-kenya-2010',
