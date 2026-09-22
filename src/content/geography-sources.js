@@ -681,6 +681,106 @@ const sources = [
     description: 'Critical French-language account of the anti-colonial movement, the population’s political history and the processes that elevated Houphouët-Boigny, offering a counterpoint to official or leader-centered narratives of the postcolonial order.'
   },
   {
+    id: 'coteDivCouncil2025Candidates',
+    label: 'Conseil constitutionnel de Côte d’Ivoire — Decision CI-2025-EP-006: definitive presidential candidate list (8 September 2025)',
+    url: 'https://www.conseil-constitutionnel.ci/sites/default/files/decision_ci-2025-ep-006_du_08.09.2025.pdf',
+    note: 'Official French Constitutional Council decision consulted as a primary legal record and linked without reproducing its text, tables or PDF pages. Its stated grounds and procedural determinations are attributed to the court; they are distinguished from party objections, observers’ assessments and independent legal review.',
+    accessDate: '2026-09-22', creators: ['Conseil constitutionnel de Côte d’Ivoire'], institution: 'Conseil constitutionnel de Côte d’Ivoire',
+    publicationDate: '2025-09-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional-court decision / presidential candidate eligibility', identifiers: { decision: 'CI-2025-EP-006/08-09/CC/SG', electionDate: '2025-10-25' },
+    description: 'Primary court record setting the final presidential candidate list and giving the Constitutional Council’s reasons in eligibility challenges. The ruling establishes what the court decided, not by itself whether the rules were independently applied or the contest was politically inclusive.'
+  },
+  {
+    id: 'coteDivCouncil2025Results',
+    label: 'Conseil constitutionnel de Côte d’Ivoire — Decision CI-2025-EP-007: definitive presidential results (4 November 2025)',
+    url: 'https://www.conseil-constitutionnel.ci/node/1110',
+    note: 'Official Council decision page and linked French PDF consulted for an attributed summary and link only. No result table, judgment wording, translation, scan or PDF page is republished; judicial proclamation is distinguished from independent assessment of competition, participation or public consent.',
+    accessDate: '2026-09-22', creators: ['Conseil constitutionnel de Côte d’Ivoire'], institution: 'Conseil constitutionnel de Côte d’Ivoire',
+    publicationDate: '2025-11-04', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional-court decision / final presidential election results', identifiers: { decision: 'CI-2025-EP-007/04-11/CC/SG', electionDate: '2025-10-25' },
+    description: 'Primary judicial record proclaiming the definitive result of the 25 October 2025 presidential election. It anchors the institutional outcome, not an inference about why electors voted or whether all groups regarded the process as legitimate.'
+  },
+  {
+    id: 'coteDivCei2025LegislativeResults',
+    label: 'Commission électorale indépendante de Côte d’Ivoire — Definitive legislative results outside two rerun constituencies (9 January 2026)',
+    url: 'https://www.cei.ci/communique-relatif-a-la-proclamation-des-resultats-definitifs-de-lelection-des-deputes-a-lassemblee-nationale-du-27-decembre-2025/',
+    note: 'Official CEI communiqué consulted and summarized as a link-only primary record. No vote table or communiqué wording is reproduced: the CEI states that the Constitutional Council annulled results and ordered reruns in Toumodi commune and Dualla–Massala, and that provisional results were definitive elsewhere pending those reruns.',
+    accessDate: '2026-09-22', creators: ['Commission électorale indépendante de Côte d’Ivoire'], institution: 'Commission électorale indépendante de Côte d’Ivoire',
+    publicationDate: '2026-01-09', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral commission communiqué / definitive legislative results', identifiers: { electionDate: '2025-12-27', legislativeTerm: '2026–2030' },
+    description: 'Primary CEI record of the 27 December 2025 legislative poll’s procedural endpoint: results were definitive in all but two constituencies, where court-ordered reruns remained due. It does not independently assess campaign equality or constituency-level voter experience.'
+  },
+  {
+    id: 'coteDivCei2026LegislativeReruns',
+    label: 'Commission électorale indépendante de Côte d’Ivoire — Definitive results for Toumodi and Dualla–Massala reruns (13 March 2026)',
+    url: 'https://cei.ci/communique-relatif-aux-resultats-definitifs-des-elections-des-deputes-a-lassemblee-nationale-dans-les-circonscriptions-electorales-n021-toumodi-commune-et-n204-dualla-et-mass/',
+    note: 'Official CEI French communiqué consulted and summarized as a link-only primary source. No candidate totals, table or communiqué text is reproduced. The CEI reports one result challenge in Dualla–Massala and says the Constitutional Council confirmed the provisional results in both rerun constituencies; its communiqué documents the institutions’ final procedural account, not a full independent observation.',
+    accessDate: '2026-09-22', creators: ['Commission électorale indépendante de Côte d’Ivoire'], institution: 'Commission électorale indépendante de Côte d’Ivoire',
+    publicationDate: '2026-03-13', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral commission communiqué / definitive repeat-election results', identifiers: { electionDate: '2026-02-21', constituencies: ['021 Toumodi Commune', '204 Dualla and Massala'] },
+    description: 'Primary administrative account closing the two legislative reruns ordered after the December 2025 election litigation. It records the CEI’s report of Constitutional Council confirmation and the final winners, not broader conclusions about nationwide competition or participation.'
+  },
+  {
+    id: 'coteDivIriAssessment2025',
+    label: 'International Republican Institute — Pre-Election Assessment Mission to Côte d’Ivoire (26 September 2025)',
+    url: 'https://www.iri.org/wp-content/uploads/2025/09/Statement-of-Findings_CotedIvoire_FINAL.pdf',
+    note: 'IRI’s seven-page English statement was read as an attributed pre-election assessment. It says the mission met more than 70 stakeholders and commends CEI preparations while identifying concerns about candidate eligibility decisions, voter registration, sponsorship transparency, reported intimidation and public information. This is not a post-election observation or adjudication; no report wording or tables are reproduced.',
+    accessDate: '2026-09-22', creators: ['International Republican Institute'], institution: 'International Republican Institute',
+    publicationDate: '2025-09-26', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional pre-election assessment / stakeholder mission report', identifiers: { pages: '7', missionDates: '2025-09-22/2025-09-26' },
+    description: 'An attributed assessment of the pre-election setting based on the mission’s reported meetings and analysis. The report distinguishes logistical preparation from concerns about choice, registration, transparency and intimidation; its prospective findings cannot establish what happened at every poll or after election day.'
+  },
+  {
+    id: 'coteDivIssAnalysis2025',
+    label: 'Institute for Security Studies — Côte d’Ivoire’s presidential election entrenches democratic fragility (7 November 2025)',
+    url: 'https://issafrica.org/iss-today/cote-d-ivoire-s-presidential-election-entrenches-democratic-fragility',
+    note: 'ISS Today’s English post-election analysis was read and is attributed to the Institute for Security Studies. It summarizes the official result, observer reporting, opposition criticism and reported pre-election incidents, then advances its own interpretation of democratic fragility. That analysis is not a court finding, comprehensive observation dataset or representative public-opinion survey; no text is reproduced.',
+    accessDate: '2026-09-22', creators: ['Institute for Security Studies'], institution: 'Institute for Security Studies',
+    publicationDate: '2025-11-07', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional post-election political analysis', identifiers: {},
+    description: 'Post-election synthesis distinguishing the official judicial result, observer reports and opposition challenges, while interpreting the contest as showing democratic fragility. Claims about fear, deaths, political exclusion and institutional independence remain attributed to ISS and the accounts it cites.'
+  },
+  {
+    id: 'coteDivAkindesYao2018',
+    label: 'Francis Akindès and Séverin Yao Kouamé (eds.) — Politique africaine 148: La Côte d’Ivoire sous Alassane Ouattara (2018)',
+    url: 'https://www.karthala.com/accueil/3225-politique-africaine-n-148-la-cote-d-ivoire-sous-alassane-ouattara-9782811119645.html',
+    note: 'Karthala’s bibliographic and issue-description record consulted for this 200-page French-language scholarly dossier (ISBN 9782811119645). The full contributions were not read here and no text is reproduced. The publisher synopsis situates post-2011 stabilization, reconciliation, inequality and land conflict; the volume is background, not direct evidence for the 2025 elections.',
+    accessDate: '2026-09-22', creators: ['Francis Akindès', 'Séverin Yao Kouamé'], institution: 'Karthala / Politique africaine',
+    publicationDate: '2018-04-15', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'book-length French-language scholarly edited journal dossier', identifiers: { isbn: '9782811119645', issue: '148', pages: '200' },
+    description: 'Multidisciplinary scholarly dossier on the Ouattara-era postwar order and its tensions, including reconciliation, inequality and rural land conflict. The bibliographic record and publisher synopsis were consulted, not all chapter texts; it does not document the later electoral episode directly.'
+  },
+  {
+    id: 'coteDivPaleThirdTerm2022',
+    label: 'Titi Palé — La dispute ivoirienne du troisième mandat: Chronique et analyse d’une crise aux enjeux d’avenir (2022)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/la-dispute-ivoirienne-du-troisieme-mandat/7318',
+    note: 'L’Harmattan’s French-language publisher record and synopsis consulted (ISBN 9782343251622; 184 pages; published 15 February 2022). The full monograph was not consulted and no prose is reproduced. Its author, series and stated scope are disclosed; publisher copy describes a 2020 third-term dispute, not evidence for the 2025–2026 cycle.',
+    accessDate: '2026-09-22', creators: ['Titi Palé'], institution: 'Éditions L’Harmattan',
+    publicationDate: '2022-02-15', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'book-length French-language political chronicle and analysis', identifiers: { isbn: '9782343251622', pages: '184', collection: 'Afriques en mutations' },
+    description: 'A focused monograph on the 2020 dispute over Ouattara’s third-term candidacy, its protagonists and political framing. The publisher record rather than the full book was consulted, so it is a bibliographic lead and bounded interpretive perspective, not a substitute for the primary 2020 court decision.'
+  },
+  {
+    id: 'coteDivOyekanmiPeacebuilding2025',
+    label: 'Omosefe Oyekanmi — Peacebuilding in Post-Conflict Côte d’Ivoire: Addressing Inequalities, Social Cohesion, and Conflict Resolution (2025)',
+    url: 'https://link.springer.com/book/10.1007/978-3-032-01654-6',
+    note: 'Springer Nature bibliographic description, chapter list and book metadata consulted for the 153-page monograph (eBook ISBN 978-3-032-01654-6; published 30 August 2025). The book itself was not read and no wording or figures are reproduced. Its post-conflict peacebuilding scope is relevant background but does not document the 2025 election or 2026 legislative reruns.',
+    accessDate: '2026-09-22', creators: ['Omosefe Oyekanmi'], institution: 'Springer Nature',
+    publicationDate: '2025-08-30', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length scholarly study of post-conflict peacebuilding in Côte d’Ivoire', identifiers: { isbn: '978-3-032-01654-6', hardcoverIsbn: '978-3-032-01653-9', pages: '153', doi: '10.1007/978-3-032-01654-6' },
+    description: 'A single-author scholarly book examining post-conflict reconciliation, inequality, peacebuilding and international and local interventions. Publisher metadata and chapter titles were consulted; it offers no direct evidence about election events after its publication and is not treated as national consensus.'
+  },
+  {
+    id: 'coteDivAkindesMilitaryOxford2021',
+    label: 'Simon A. Akindes — Côte d’Ivoire: The Military, Ruling Elites, and Political Power (Oxford Research Encyclopedia of Politics, 2021)',
+    url: 'https://doi.org/10.1093/acrefore/9780190228637.013.1809',
+    note: 'Oxford Academic reference-article record and abstract consulted; the article’s stated historical coverage ends with the 2011 war and postwar balance. It supplies one author’s political-history interpretation, not direct evidence for this case’s 2020–2026 elections; no text is reproduced.',
+    accessDate: '2026-09-22', creators: ['Simon A. Akindes'], institution: 'Oxford University Press',
+    publicationDate: '2021-08-31', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly political-history reference article / abstract and bibliographic record', identifiers: { doi: '10.1093/acrefore/9780190228637.013.1809' },
+    description: 'A longue-durée interpretation of civil–military relations, ruling elites, Ivoirité and French involvement through 2011. Its historic argument is relevant context but must not be extended into an account of the later party and electoral institutions without new evidence.'
+  },
+  {
     id: 'liberiaConstitution1986Judiciary',
     label: 'Judiciary of Liberia — Constitution of the Republic of Liberia, 1986',
     url: 'https://judiciary.gov.lr/constitution-of-liberia-2/',
@@ -9349,6 +9449,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('cambodia') || source.id.startsWith('chandlerHistoryCambodia') || source.id.startsWith('hughesPoliticalEconomyCambodia') || source.id.startsWith('robertsPoliticalTransitionCambodia') || source.id.startsWith('etchesonRiseDemiseKampuchea') || source.id.startsWith('strangioHunSensCambodia') || source.id.startsWith('kheangUnCambodia') ? 'Cambodian conflict, reconstruction and constitutional political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
+      : source.id.startsWith('coteDiv') ? 'Ivorian constitutional, post-conflict, political and electoral history'
       : source.id.startsWith('guyana') ? 'Guyanese constitutional, electoral, political-economy and resource-governance history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
