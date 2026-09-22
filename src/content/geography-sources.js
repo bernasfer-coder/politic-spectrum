@@ -7105,6 +7105,26 @@ const sources = [
     description: 'Institutional witness to the 2024 presidential election and its documented observation constraints. It anchors the case’s contemporary endpoint and the distinction between formal electoral administration, published evidence and contested legitimacy without making a post-2024 current-country claim.'
   },
   {
+    id: 'venezuelaUnFactFindingMission2025',
+    label: 'United Nations Human Rights Council Independent International Fact-Finding Mission on Venezuela — Report A/HRC/60/61 (2025)',
+    url: 'https://digitallibrary.un.org/record/4094630?ln=en',
+    note: 'United Nations Digital Library record consulted for the 6 October 2025 report covering the period from the 28 July 2024 presidential election through 31 August 2025. No report wording, table, translation, scan or PDF page is republished; its investigative mandate, evidentiary limits and relation to Venezuelan authorities remain distinct from electoral administration, courts, parties and local accounts.',
+    accessDate: '2026-09-22', creators: ['United Nations Human Rights Council Independent International Fact-Finding Mission on Venezuela'], institution: 'United Nations Human Rights Council',
+    publicationDate: '2025-10-06', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Spanish', 'French', 'Arabic'],
+    sourceType: 'primary international human-rights investigation report', identifiers: { symbol: 'A/HRC/60/61', coverage: '2024-07-28–2025-08-31' },
+    description: 'International investigative record covering the post-election protest and repression context and the 25 May 2025 parliamentary and regional elections. It documents a mandate-bound institutional finding, not a complete national history, final electoral judgment or account of every Venezuelan community.'
+  },
+  {
+    id: 'venezuelaUnOhchr2025',
+    label: 'United Nations High Commissioner for Human Rights — Situation of human rights in Venezuela, Report A/HRC/59/58 (2025)',
+    url: 'https://digitallibrary.un.org/record/4092617?ln=en',
+    note: 'United Nations Digital Library record consulted for the 28 August 2025 report covering 1 May 2024 through 30 April 2025. No report wording, table, translation, scan or PDF page is republished; the OHCHR mandate and period remain distinct from the Fact-Finding Mission, electoral authorities, courts, parties and local accounts.',
+    accessDate: '2026-09-22', creators: ['United Nations High Commissioner for Human Rights'], institution: 'Office of the United Nations High Commissioner for Human Rights',
+    publicationDate: '2025-08-28', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Spanish', 'French', 'Arabic'],
+    sourceType: 'primary United Nations human-rights situation report', identifiers: { symbol: 'A/HRC/59/58', coverage: '2024-05-01–2025-04-30' },
+    description: 'UN human-rights situation report covering civil, political, economic and social rights during the election and post-election period. It supplies a distinct institutional mandate and time window, not a complete account of political legitimacy, electoral results or lived experience.'
+  },
+  {
     id: 'venezuelaHawkinsChavismo2010',
     label: 'Kirk A. Hawkins — Venezuela’s Chavismo and Populism in Comparative Perspective (2010)',
     url: 'https://www.cambridge.org/core/books/venezuelas-chavismo-and-populism-in-comparative-perspective/775976318AED6CC8A85E50F0806736D2',
