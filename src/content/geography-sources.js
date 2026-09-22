@@ -9447,6 +9447,136 @@ const sources = [
     sourceType: 'Nepal-based newspaper report on protest memory and accountability proceedings', identifiers: {},
     description: 'A dated local report documents political disagreement over the meaning of 8–9 September 2025, distinguishes two inquiry processes, and reports subsequent arrests, Supreme Court releases and stalled follow-through as of publication. These are attributed reporting and interviews, not a final adjudication or a complete history of all protest participants.'
   },
+  {
+    id: 'lebanonParliamentAounElection2025',
+    label: 'Lebanese Parliament — Joseph Aoun presidential election session record (9 January 2025)',
+    url: 'https://www.lp.gov.lb/ContentRecordDetails?Id=33999',
+    note: 'The official parliamentary session report was consulted in Arabic. It records two rounds and the chamber’s announced results; it is a primary account of the legislature’s proceeding, not a judicial opinion on every constitutional issue raised during the session. No parliamentary wording, ballot image, translation or scan is republished.',
+    accessDate: '2026-09-22', creators: ['Lebanese Parliament'], institution: 'Lebanese Parliament',
+    publicationDate: '2025-01-09', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official parliamentary presidential-election session record / primary institutional source', identifiers: { sessionDate: '2025-01-09', reportedVotes: '71 in first round; 99 in second round' },
+    description: 'The chamber reports that it elected Joseph Aoun president on the second ballot after he received 71 votes in the first and 99 in the second. This establishes the official parliamentary result, not the candidates’ full political support, public preferences or the resolution of every constitutional interpretation.'
+  },
+  {
+    id: 'lebanonPcmSalamGovernmentFormation2025',
+    label: 'Presidency of the Council of Ministers of Lebanon — Nawaf Salam cabinet formation record (8 February 2025)',
+    url: 'https://www.pcm.gov.lb/arabic/subpg.aspx?pageid=13587',
+    note: 'The Lebanese Council of Ministers page was consulted in Arabic for its 8 February decrees forming the 78th government and listing its members. It documents the executive’s formal record, not the cabinet’s effective control, political independence or representativeness of all communities. No decree text or roster is reproduced.',
+    accessDate: '2026-09-22', creators: ['Presidency of the Council of Ministers of Lebanon'], institution: 'Presidency of the Council of Ministers of Lebanon',
+    publicationDate: '2025-02-08', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official cabinet-formation and ministerial record / primary government source', identifiers: { decrees: '52 and 53, 8 February 2025', governmentNumber: '78' },
+    description: 'The official page records the decrees designating Nawaf Salam as Prime Minister and forming the cabinet. It supports a dated institutional transition, not an inference that the new cabinet ended Lebanon’s economic, security or political crises.'
+  },
+  {
+    id: 'lebanonParliamentSalamConfidence2025',
+    label: 'Lebanese Parliament — Nawaf Salam government confidence vote (26 February 2025)',
+    url: 'https://lp.gov.lb/ContentRecordDetails?Id=34041',
+    note: 'The official parliamentary report of the ministerial-statement debate and roll call was consulted in Arabic. The record states 95 votes of confidence, 12 against and four abstentions. It records the vote and attributed debate, not policy implementation or public consent. No transcript or voting roster is reproduced.',
+    accessDate: '2026-09-22', creators: ['Lebanese Parliament'], institution: 'Lebanese Parliament',
+    publicationDate: '2025-02-26', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official parliamentary confidence-vote record / primary legislative source', identifiers: { reportedVote: '95 in favor; 12 against; 4 abstentions' },
+    description: 'The Parliament states that Nawaf Salam’s cabinet received confidence following debate on its ministerial statement. This establishes the reported legislative vote, not the delivery of the programme or consensus on its content.'
+  },
+  {
+    id: 'lebanonUNIFILCessation2024',
+    label: 'United Nations Interim Force in Lebanon — Statement on the cessation of hostilities (27 November 2024)',
+    url: 'https://peacekeeping.un.org/en/news/unifil-statement-27-november-2024',
+    note: 'UNIFIL’s 27 November 2024 public statement was consulted as an institutional response to the announcement of a cessation of hostilities and renewed commitment to Resolution 1701. It is not a monitoring finding that all violations ceased or that the arrangement was fully implemented. No statement wording or image is reproduced.',
+    accessDate: '2026-09-22', creators: ['United Nations Interim Force in Lebanon'], institution: 'United Nations Interim Force in Lebanon (UNIFIL)',
+    publicationDate: '2024-11-27', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official UN peacekeeping mission statement / primary institutional source', identifiers: { relatedResolution: 'United Nations Security Council resolution 1701 (2006)' },
+    description: 'The mission welcomed the announcement and described its readiness to support implementation. The statement anchors the date and institutional framing of the cessation arrangement; it does not establish complete compliance by any party.'
+  },
+  {
+    id: 'lebanonWorldBankRDNA2025',
+    label: 'World Bank — Lebanon Rapid Damage and Needs Assessment 2025 release (7 March 2025)',
+    url: 'https://www.worldbank.org/en/news/press-release/2025/03/07/lebanon-s-recovery-and-reconstruction-needs-estimated-at-us-11-billion',
+    note: 'The World Bank release accompanying its 2025 Lebanon Rapid Damage and Needs Assessment was consulted, including the assessment period and sectoral scope. The estimate covers impacts through 20 December 2024, not the renewed 2026 escalation, and is an institutional damage-and-needs assessment rather than a complete causal history or distributive account. No chart, table or report wording is reproduced.',
+    accessDate: '2026-09-22', creators: ['World Bank'], institution: 'World Bank',
+    publicationDate: '2025-03-07', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'international institutional conflict-damage and recovery assessment release', identifiers: { assessmentPeriodEnd: '2024-12-20', sectors: '10' },
+    description: 'The release summarizes a government-requested, World Bank-led assessment of physical damage, economic losses and recovery needs across ten sectors, using ground and remote methods. Its temporal boundary is material: it does not measure damage from the escalation beginning in March 2026.'
+  },
+  {
+    id: 'lebanonResolution2790UNIFIL2025',
+    label: 'United Nations Security Council — Resolution 2790 (2025), final extension and drawdown of UNIFIL',
+    url: 'https://digitallibrary.un.org/record/4087501/files/S_RES_2790_%282025%29-EN.pdf',
+    note: 'The adopted Security Council resolution was consulted through its official UN Digital Library record. It provides a prospective mandate and drawdown schedule; it is not evidence that the future withdrawal occurred or that the Lebanese state already held an exclusive security role. No resolution wording, scan or PDF page is reproduced.',
+    accessDate: '2026-09-22', creators: ['United Nations Security Council'], institution: 'United Nations',
+    publicationDate: '2025-08-28', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'adopted United Nations Security Council resolution / primary legal-institutional text', identifiers: { resolution: 'S/RES/2790 (2025)', meetingDate: '2025-08-28', mandateEndDate: '2026-12-31' },
+    description: 'The Council extended UNIFIL’s mandate for a final period through 31 December 2026 and set out a subsequent orderly drawdown and withdrawal. The resolution records an international decision and future schedule, not its implementation or an assessment of Lebanon’s domestic authority.'
+  },
+  {
+    id: 'lebanonPcmCabinetStateArms2026',
+    label: 'Presidency of the Council of Ministers of Lebanon — cabinet statement on state authority and military activity (2 March 2026)',
+    url: 'https://www.pcm.gov.lb/arabic/subpg.aspx?pageid=26902',
+    note: 'The Council of Ministers’ post-session statement, published by the Presidency of the Council of Ministers in Arabic, was consulted. It attributes the triggering rocket fire to Hezbollah and records the government’s declaration and orders; it is the executive’s stated position and directive, not independent verification of events, legal adjudication, or evidence of enforcement throughout the country. No statement wording or translation is reproduced.',
+    accessDate: '2026-09-22', creators: ['Council of Ministers of Lebanon'], institution: 'Presidency of the Council of Ministers of Lebanon',
+    publicationDate: '2026-03-02', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'published Council of Ministers statement / primary executive record', identifiers: { statementDate: '2026-03-02' },
+    description: 'The government stated that military or security operations outside state institutions were unacceptable, asserted state control over decisions of war and peace, and directed security bodies to act under law. These are official policy claims and instructions; they do not establish their constitutionality, political agreement or implementation.'
+  },
+  {
+    id: 'lebanonParliamentTermExtension2026',
+    label: 'Lebanese Parliament — approval of a two-year exceptional extension of its term (9 March 2026)',
+    url: 'https://lp.gov.lb/ContentRecordDetails?Id=35713',
+    note: 'The Parliament’s official Arabic report of its 9 March 2026 sitting was consulted. It says a law to extend the chamber’s term by two years passed with 76 votes. This records the chamber’s action, not a constitutional-court ruling on its validity or an independent assessment of the conditions for holding elections. No law text, vote list or session wording is reproduced.',
+    accessDate: '2026-09-22', creators: ['Lebanese Parliament'], institution: 'Lebanese Parliament',
+    publicationDate: '2026-03-09', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official parliamentary sitting and legislation report / primary legislative source', identifiers: { reportedVotes: '76 in favor', duration: 'two years' },
+    description: 'The Parliament reports that it adopted a law for an exceptional two-year extension of its own term. It documents the institutional action and reported vote, not the legality of the extension, the views of all electors or the completion of an election process.'
+  },
+  {
+    id: 'lebanonOfficialGazetteLaw41Extension2026',
+    label: 'Lebanon Official Gazette — Law No. 41 of 9 March 2026, exceptional extension of Parliament’s term',
+    url: 'https://www.pcm.gov.lb/arabic/subpg.aspx?pageid=26964',
+    note: 'The Presidency of the Council of Ministers’ Official Gazette index for issue 11M was consulted; it lists Law No. 41, dated 9 March 2026, on an exceptional extension of Parliament’s term. This is an index entry, not a full legal analysis of validity or challenges. No law wording, scan or PDF is reproduced.',
+    accessDate: '2026-09-22', creators: ['Presidency of the Council of Ministers of Lebanon'], institution: 'Presidency of the Council of Ministers of Lebanon, Official Gazette',
+    publicationDate: '2026-03-09', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official gazette index entry for enacted legislation / primary legal record', identifiers: { lawNumber: '41', gazetteIssue: '11M', lawDate: '2026-03-09' },
+    description: 'The official index identifies Law No. 41 with the stated subject and date, corroborating the parliamentary report that an extension law was approved. The index alone does not establish the law’s constitutionality or subsequent judicial treatment.'
+  },
+  {
+    id: 'lebanonAPTermExtension2026',
+    label: 'Associated Press — report on Parliament’s two-year term extension during the March 2026 conflict (9 March 2026)',
+    url: 'https://apnews.com/article/dcb94eb15145a3e9194f05727757822f',
+    note: 'The full Associated Press report was consulted as attributed reporting on the vote, its security context and the May 2026 election schedule. The report is not a legal opinion, court record, independent election assessment or definitive account of all reasons legislators supported the law. No article wording or photograph is reproduced.',
+    accessDate: '2026-09-22', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-03-09', publisher: 'Associated Press', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international news-agency report on parliamentary action and conflict context', identifiers: {},
+    description: 'AP reports the officially summarized 76–41 vote, four abstentions, and that the 2026 election had been scheduled for May as renewed hostilities displaced residents and affected polling feasibility. These are attributed reporting and context, not an independent ruling on the extension.'
+  },
+  {
+    id: 'lebanonOchaResponsePlanAddendum2026',
+    label: 'United Nations in Lebanon — Lebanon Response Plan 2026 Addendum (18 September 2026)',
+    url: 'https://lebanon.un.org/en/323037-lebanon-response-plan-2026-addendum',
+    note: 'The full public summary of the September–December 2026 response-plan addendum was consulted. It describes the UN and partner response framework and the reported humanitarian context; it does not adjudicate responsibility for hostilities or provide a complete political history. Its assessment is distinct from the World Bank’s 2025 damage period. No plan wording, table or image is reproduced.',
+    accessDate: '2026-09-22', creators: ['United Nations Office for the Coordination of Humanitarian Affairs', 'United Nations Resident Coordinator’s Office in Lebanon', 'United Nations Development Programme', 'United Nations High Commissioner for Refugees'], institution: 'United Nations in Lebanon',
+    publicationDate: '2026-09-18', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'inter-agency humanitarian response-plan addendum / institutional assessment', identifiers: { responsePeriod: '2026-09 to 2026-12', publishedDate: '2026-09-18' },
+    description: 'The addendum documents the humanitarian response framework after renewed hostilities beginning in March 2026, including displacement, infrastructure and service disruption, and continued socioeconomic pressures. It distinguishes the new escalation from the effects assessed through December 2024 in the World Bank’s earlier assessment.'
+  },
+  {
+    id: 'lebanonParliamentSalamConfidence2026',
+    label: 'Lebanese Parliament — government confidence debate and vote (16 September 2026)',
+    url: 'https://lp.gov.lb/ContentRecordDetails?Id=36998',
+    note: 'The Parliament’s official Arabic account of the 15–16 September general-policy debate and roll-call confidence vote was consulted. It reports 68 in favor, 12 against and two abstentions. It is an institutional record of the session, not evidence that the government’s policies were implemented or that every political bloc endorsed them. No debate transcript or roster is reproduced.',
+    accessDate: '2026-09-22', creators: ['Lebanese Parliament'], institution: 'Lebanese Parliament',
+    publicationDate: '2026-09-16', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official parliamentary general-policy debate and confidence-vote record / primary legislative source', identifiers: { debateDates: '2026-09-15 to 2026-09-16', reportedVotes: '68 in favor; 12 against; 2 abstentions' },
+    description: 'The parliamentary account records a two-day general-policy debate followed by renewed confidence in Nawaf Salam’s government. Debate topics included economic and social policy and sovereignty; the outcome establishes a vote, not the success of the government’s agenda.'
+  },
+  {
+    id: 'lebanonOrientDebateConfidence2026',
+    label: 'L’Orient Today — coverage of the September 2026 confidence debate and disputes over weapons, withdrawal and reconstruction (16 September 2026)',
+    url: 'https://today.lorientlejour.com/article/1547770/hezbollahs-weapons-at-heart-of-heated-exchanges-as-2027-budget-looms.html',
+    note: 'The L’Orient Today report was consulted for attributed coverage of speeches during the 15–16 September debate, including disagreement about state authority, Hezbollah’s arms, Israeli withdrawal, reconstruction and economic policy. Its article reports selected parliamentary statements and is not a representative survey or a full transcript. No article wording or photographs are reproduced.',
+    accessDate: '2026-09-22', creators: ['L’Orient Today staff'], institution: 'L’Orient Today / L’Orient-Le Jour',
+    publicationDate: '2026-09-16', publisher: 'L’Orient-Le Jour', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Lebanon-based newspaper report on parliamentary debate and contested state authority', identifiers: {},
+    description: 'The local report documents sharply competing statements during the confidence debate and identifies reconstruction, state control of weapons, Israeli withdrawal, taxes and social-policy demands as contested subjects. Attributed speeches demonstrate disagreement among legislators, not the positions of all citizens or communities.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));

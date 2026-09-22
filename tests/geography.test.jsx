@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(159);
+    expect(cards()).toHaveLength(160);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -48,6 +48,18 @@ describe('geographic atlas', () => {
     expect(cards()[2]).toHaveTextContent('2025–2026');
     expect(cards()[2]).toHaveTextContent('accountability');
     expect(cards()[2]).toHaveTextContent('not a current-country assessment');
+  });
+
+  it('shows Lebanon’s bounded post-2022 wartime transition without a country score', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-422');
+    expect(cards()).toHaveLength(2);
+    const card = cards()[1];
+    expect(card).toHaveTextContent('2022–2026');
+    expect(card).toHaveTextContent('18 September 2026');
+    expect(card).toHaveTextContent('not a current-country assessment');
+    expect(card).toHaveTextContent('No numerical six-axis positions');
   });
 
   it('normalizes accented aliases and persists a timeline URL', async () => {

@@ -223,6 +223,13 @@ const RIGHTS_RECORDS = {
       reviewedAt: '2026-09-16',
       notes: 'Original, bounded paraphrases and source links only. No quotations, translations of passages, images, maps, tables or source files reproduced. Selected reading or abstract-only access is recorded separately; online access is not republication permission.',
     }])),
+    ...Object.fromEntries(GEOGRAPHY_RESEARCH_SOURCES
+      .filter(({ id }) => ['lebanonParliamentAounElection2025', 'lebanonPcmSalamGovernmentFormation2025', 'lebanonParliamentSalamConfidence2025', 'lebanonUNIFILCessation2024', 'lebanonWorldBankRDNA2025', 'lebanonResolution2790UNIFIL2025', 'lebanonPcmCabinetStateArms2026', 'lebanonParliamentTermExtension2026', 'lebanonOfficialGazetteLaw41Extension2026', 'lebanonAPTermExtension2026', 'lebanonOchaResponsePlanAddendum2026', 'lebanonParliamentSalamConfidence2026', 'lebanonOrientDebateConfidence2026'].includes(id))
+      .map(({ id }) => [id, {
+        ...LINK_ONLY,
+        reviewedAt: '2026-09-22',
+        notes: 'Source reviewed for an original, bounded paraphrase and link only. No quotations, translations of passages, screenshots, tables, photographs, maps or source files are republished; the cited source’s statement, mandate or reporting scope is not expanded into an independent finding or claim of representativeness. No reuse licence was identified.',
+      }])),
     germanyCoalitionBreakScholz2024: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official Federal Government statement used for original synthesis and link only. No German speech wording, translation, scan or PDF page is republished; executive self-description remains distinct from coalition partners’ positions, independent causal analysis and public consent.' },
     germanyConfidenceVoteDissolution2024: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official Bundestag confidence-vote and early-election record used for original synthesis and link only. No parliamentary wording, vote table, translation, scan or PDF page is republished; the formal process remains distinct from the full political causes, campaign conditions and public mandate.' },
     germanyBundestagElection2025Official: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official Federal Returning Officer final-results record used for original synthesis and link only. No result table, CSV, PDF, translation or page extract is republished; the electoral endpoint remains distinct from voter motives, equal competition, democratic quality and later government performance.' },
