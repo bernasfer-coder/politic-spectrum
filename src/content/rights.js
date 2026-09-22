@@ -1538,4 +1538,18 @@ const RIGHTS_RECORDS = {
   },
 };
 
+Object.assign(RIGHTS_RECORDS, {
+  boliviaOepRunoffRules2025: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official OEP procedural publication linked for an original summary only. No constitutional or procedural wording, translation, scan or PDF page is republished; formal rules are not treated as proof of equal campaign conditions, voter consent or election quality.' },
+  boliviaOepElection2025FirstRound: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official OEP first-round results linked for original synthesis only. No result table, wording, scan or PDF page is republished; the declared result is not evidence of individual voter motives or a uniform national mandate.' },
+  boliviaOepRunoffResults2025: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official OEP national computation and proclamation linked for original synthesis only. No result table, wording, scan or PDF page is republished; the source’s inconsistent display of a raw total is not reproduced or silently reconciled.' },
+  boliviaOasRunoffPreliminary2025: { ...LINK_ONLY, reviewedAt: '2026-09-22', notes: 'OAS preliminary observer findings linked and attributed. No report text, tables or PDF pages are republished; observations are bounded to the mission’s preliminary sample and are not a final adjudication or full-population survey.' },
+  boliviaEueomFinal2025: { ...LINK_ONLY, reviewedAt: '2026-09-22', notes: 'EU Election Observation Mission final findings linked and attributed. No report text, tables or PDF pages are republished; recommendations are not presented as proof of implementation or uniform failure.' },
+  boliviaVelascoGuachallaElections2025Analysis2026: { ...LINK_ONLY, reviewedAt: '2026-09-22', notes: 'Peer-reviewed article linked for independently written analysis only. No article text, table or figure is reproduced; municipality-level aggregate associations are not presented as individual voter behavior.' },
+  boliviaAscarrunzAguilarElectionAnalysis2026: { ...LINK_ONLY, reviewedAt: '2026-09-22', notes: 'Article metadata and abstract linked for attributed summary only; full text was not consulted. No article text is reproduced; abstract-level interpretation remains provisional.' },
+  boliviaAnriaWhyMasCollapsed2025: { ...LINK_ONLY, reviewedAt: '2026-09-22', notes: 'Journal metadata and abstract linked for attributed analysis only; full text was not consulted. No article text is reproduced; causal claims remain attributed and provisional.' },
+  boliviaPoertnerCreatingPartisans2024: { ...LINK_ONLY, reviewedAt: '2026-09-22', notes: 'Publisher metadata and relevant chapter scope linked for original synthesis only. No book wording, chapter, tables or figures are reproduced; publisher access does not clear copyrighted content.' },
+  boliviaAnriaMovementParties2018: { ...LINK_ONLY, reviewedAt: '2026-09-22', notes: 'Publisher bibliographic record and front matter linked for original synthesis only. No book wording, tables or figures are reproduced; coverage predates the 2020–2025 case.' },
+  boliviaNogueraRetornoHumildes2022: { ...LINK_ONLY, reviewedAt: '2026-09-22', notes: 'Publisher metadata and description linked for attributed context only; the full monograph was not independently consulted. No book wording is reproduced; the author’s disclosed institutional advisory role and coverage horizon remain visible.' },
+});
+
 export { RIGHTS_RECORDS };

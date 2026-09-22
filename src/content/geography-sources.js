@@ -9106,6 +9106,105 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'boliviaOepRunoffRules2025',
+    label: 'Órgano Electoral Plurinacional — information on the 2025 presidential runoff and constitutional rules',
+    url: 'https://web.oep.org.bo/wp-content/uploads/2025/10/03-10-2025-SEPARATA-2DA-VUELTA-FINAL.pdf',
+    note: 'Official OEP public-information publication consulted for the constitutional and procedural explanation of the October 2025 second round. It records an institutional account of the rules, not an independent assessment of campaign equality or voter consent; no wording, tables or facsimile are republished.',
+    accessDate: '2026-09-22', creators: ['Órgano Electoral Plurinacional de Bolivia'], institution: 'Tribunal Supremo Electoral / Órgano Electoral Plurinacional', publicationDate: '2025-10-03', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election procedure and constitutional-rule publication', identifiers: { electionDate: '2025-10-19', constitutionalOrder: 'Constitution of 2009' },
+    description: 'OEP explanation of the runoff procedure and the institutional context of Bolivia’s 2025 presidential second round. It supports the bounded procedural chronology, not a broad judgment about democratic quality.'
+  },
+  {
+    id: 'boliviaOepElection2025FirstRound',
+    label: 'Órgano Electoral Plurinacional — official 2025 general-election results, first round',
+    url: 'https://web.oep.org.bo/wp-content/uploads/2025/08/30-08-2025-Separata-resultados-EG2025.pdf',
+    note: 'Official OEP results publication consulted for the 17 August 2025 general election and first-round presidential outcome. Result documentation is cited without reproducing tables; it establishes the announced institutional result, not voters’ motives or uniform public preferences.',
+    accessDate: '2026-09-22', creators: ['Órgano Electoral Plurinacional de Bolivia'], institution: 'Tribunal Supremo Electoral / Órgano Electoral Plurinacional', publicationDate: '2025-08-30', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official general-election results publication', identifiers: { election: 'Bolivia general election 2025', electionDate: '2025-08-17' },
+    description: 'Official first-round election publication used to establish the election sequence that led to the presidential runoff. It is not treated as proof of individual vote transfers, party ideology or a uniform national mandate.'
+  },
+  {
+    id: 'boliviaOepRunoffResults2025',
+    label: 'Órgano Electoral Plurinacional — official 2025 presidential runoff results and proclamation',
+    url: 'https://web.oep.org.bo/wp-content/uploads/2025/11/31-10-2025-separata-Revisado.pdf',
+    note: 'Official OEP national-computation and proclamation publication consulted for the 19 October 2025 presidential runoff. This record supports the declared winners and reported shares; raw vote totals are omitted because the institution’s online publication displays an inconsistency in one total. No result table, wording or facsimile is republished.',
+    accessDate: '2026-09-22', creators: ['Órgano Electoral Plurinacional de Bolivia'], institution: 'Tribunal Supremo Electoral / Órgano Electoral Plurinacional', publicationDate: '2025-10-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official national computation and election proclamation', identifiers: { election: 'Bolivia presidential runoff 2025', electionDate: '2025-10-19', proclamationDate: '2025-10-27' },
+    description: 'Official national computation and proclamation declaring Rodrigo Paz Pereira and Edmand Lara Montaño elected in the 2025 runoff. It anchors a documented electoral alternation, without resolving voter motives, quality across all localities or subsequent governing performance.'
+  },
+  {
+    id: 'boliviaOasRunoffPreliminary2025',
+    label: 'Organization of American States — Preliminary Report of the Electoral Observation Mission, Bolivia presidential runoff (2025)',
+    url: 'https://www.oas.org/fpdb/press/2025_BOLIVIA_EOM_Presidential_Runoff_Preliminary_Report_ENG.pdf',
+    note: 'OAS preliminary mission report consulted as an attributed observer account. It describes voting and counting at observed sites and also records accessibility and public-communication concerns; it is preliminary and observational, not a full census of polling places, a final adjudication or a verdict on every aspect of the election. No report wording or tables are reproduced.',
+    accessDate: '2026-09-22', creators: ['Organization of American States, Electoral Observation Mission'], institution: 'Organization of American States', publicationDate: '2025-10-20', evidenceRole: 'contextual', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'preliminary international election-observation report', identifiers: { electionDate: '2025-10-19', reportStatus: 'preliminary' },
+    description: 'OAS observers’ preliminary account of the presidential runoff, including generally orderly observed voting and counting alongside documented accessibility and communication shortcomings. The findings are bounded to the mission’s observations and provisional reporting.'
+  },
+  {
+    id: 'boliviaEueomFinal2025',
+    label: 'European Union Election Observation Mission — final findings on Bolivia’s 2025 general election and runoff',
+    url: 'https://www.eeas.europa.eu/eom-bolivia-2025/eu-election-observation-mission-publishes-final-findings-19-recommendations-strengthen-future_en?s=410499',
+    note: 'European External Action Service publication of the EU Election Observation Mission’s final findings, issued 8 December 2025, consulted for its scope and recommendations. The mission’s assessment is attributed; its recommendations on electoral transparency, candidacy procedures, campaign finance, media and digital rights are not recast as proof that every institution failed or that every recommendation was implemented.',
+    accessDate: '2026-09-22', creators: ['European Union Election Observation Mission to Bolivia'], institution: 'European External Action Service / European Union', publicationDate: '2025-12-08', evidenceRole: 'contextual', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'final international election-observation findings and recommendations', identifiers: { elections: 'Bolivia general election and presidential runoff 2025', recommendations: '19' },
+    description: 'Final EU mission findings on Bolivia’s August general election and October presidential runoff, accompanied by recommendations for future electoral administration. They provide an independent institutional observation perspective, not an ideological classification or full account of voter experience.'
+  },
+  {
+    id: 'boliviaVelascoGuachallaElections2025Analysis2026',
+    label: 'Vania Ximena Velasco Guachalla — “Shifting Political Cycles: Presidential Elections in Bolivia 2025” (2026)',
+    url: 'https://doi.org/10.53557/Elecciones.2026.v25n31.05.en',
+    note: 'Peer-reviewed article in Revista Elecciones 25(31), article e3105 (2026), DOI 10.53557/Elecciones.2026.v25n31.05.en. The full article was consulted. Its statistical analysis relates municipal aggregate results and explicitly does not identify individual-level vote transfers; its economic-crisis and political-renewal explanations remain the author’s interpretations. No article text, table or figure is reproduced.',
+    accessDate: '2026-09-22', creators: ['Vania Ximena Velasco Guachalla'], institution: 'Oficina Nacional de Procesos Electorales, Revista Elecciones', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed electoral-studies research article', identifiers: { doi: '10.53557/Elecciones.2026.v25n31.05.en', volume: '25', issue: '31', article: 'e3105' },
+    description: 'Municipality-level analysis of Bolivia’s 2025 presidential elections using aggregated electoral and census data. It reports associations between earlier MAS vote patterns and later candidate support; ecological inference does not establish individual voter behavior or a single national cause.'
+  },
+  {
+    id: 'boliviaAscarrunzAguilarElectionAnalysis2026',
+    label: 'Julio Ascarrunz and Raquel Aguilar — “Changes in continuity: Analysis of the 2025 general elections in Bolivia” (2026)',
+    url: 'https://doi.org/10.26851/RUCP.35.6',
+    note: 'Bibliographic record and abstract in Revista Uruguaya de Ciencia Política 35 (2026), pp. 1–24, DOI 10.26851/RUCP.35.6, consulted; full text was not available in the record reviewed. The abstract’s interpretation of party rupture alongside continuing territorial and ethnic cleavages is attributed to the authors and treated as provisional pending full-text review. No article text is reproduced.',
+    accessDate: '2026-09-22', creators: ['Julio Ascarrunz', 'Raquel Aguilar'], institution: 'Universidad de la República, Facultad de Ciencias Sociales', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'scholarly research article; abstract-only consultation', identifiers: { doi: '10.26851/RUCP.35.6', journal: 'Revista Uruguaya de Ciencia Política', volume: '35', pages: '1–24' },
+    description: 'Authors’ abstract interprets the 2025 result through economic and institutional crisis, party fracture and electoral change while arguing for continuing territorial and ethnic cleavages. Full-text access remains a research gap; the abstract is not treated as demonstrated representative opinion.'
+  },
+  {
+    id: 'boliviaAnriaWhyMasCollapsed2025',
+    label: 'Santiago Anria — “Why Bolivia’s MAS Collapsed” (2025)',
+    url: 'https://doi.org/10.1353/jod.2025.a970351',
+    note: 'Journal of Democracy 36(4) (October 2025), pp. 92–103, DOI 10.1353/jod.2025.a970351; bibliographic metadata and abstract were consulted, not full text. The author’s explanation emphasizes leadership centralization, succession and weakened movement–party ties; these are attributed analytical claims, not a substitute for later book-length research or evidence about every MAS supporter.',
+    accessDate: '2026-09-22', creators: ['Santiago Anria'], institution: 'National Endowment for Democracy / Johns Hopkins University Press', publicationDate: '2025-10', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'peer-reviewed political-analysis article; abstract-level consultation', identifiers: { doi: '10.1353/jod.2025.a970351', volume: '36', issue: '4', pages: '92–103' },
+    description: 'Anria’s 2025 interpretation of MAS’s electoral collapse foregrounds internal leadership, succession and movement–party relations. Abstract-level consultation only; the causal account is attributed and requires triangulation with full-text and book-length studies.'
+  },
+  {
+    id: 'boliviaPoertnerCreatingPartisans2024',
+    label: 'Mathias Poertner — Creating Partisans: The Organizational Roots of New Parties in Latin America (2024)',
+    url: 'https://www.cambridge.org/core/books/creating-partisans/26B39AEFB3F64901DC56AA9E771A3554',
+    note: 'Cambridge University Press book and chapter records consulted for the 2024 monograph (272 pages; ISBN 9781009446297; DOI 10.1017/9781009446327). Publisher bibliographic material and chapter scope were reviewed, not the entire book; no book wording, tables or figures are republished. It contributes movement–party organizational context, not direct evidence for the 2025 result.',
+    accessDate: '2026-09-22', creators: ['Mathias Poertner'], institution: 'Cambridge University Press', publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative study of movement-party organization', identifiers: { isbn: '9781009446297', paperbackIsbn: '9781009446280', doi: '10.1017/9781009446327', chapterDoi: '10.1017/9781009446327.003', pages: '272' },
+    description: 'Comparative book-length study of organizational roots of new Latin American parties, including MAS and movement–party relations. It offers context for how a movement-linked party can be built, not a history of MAS’s 2020–2025 split or a measure of current public support.'
+  },
+  {
+    id: 'boliviaAnriaMovementParties2018',
+    label: 'Santiago Anria — When Movements Become Parties: The Bolivian MAS in Comparative Perspective (2018)',
+    url: 'https://www.cambridge.org/core/books/when-movements-become-parties/F06BEE9DEA9BA4E7DCFBD9A87266FAB8',
+    note: 'Cambridge University Press record and front matter consulted for the 2018 monograph (ISBN 9781108427579; DOI 10.1017/9781108551755). Full book not consulted; no wording or figures are reproduced. Anria’s book-length account of MAS origins and institutionalization is distinct from the 2025 article by the same author and does not itself establish the later party split.',
+    accessDate: '2026-09-22', creators: ['Santiago Anria'], institution: 'Cambridge University Press', publicationDate: '2018', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative political-science study of MAS', identifiers: { isbn: '9781108427579', doi: '10.1017/9781108551755' },
+    description: 'Comparative book-length study of how MAS became an institutionalized movement-party, based on the Bolivian case. It supplies organizational history for interpreting later fractures but predates and cannot evidence the 2020–2025 events.'
+  },
+  {
+    id: 'boliviaNogueraRetornoHumildes2022',
+    label: 'Albert Noguera Fernández — El retorno de los humildes: El proceso de cambio en Bolivia después de Evo (2022)',
+    url: 'https://www.akal.com/libro/el-retorno-de-los-humildes_51755/',
+    note: 'Akal’s publisher record consulted for the Spanish-language 2022 book (272 pages; ISBN 9788446051749); the full monograph was not independently reviewed. The publisher identifies Noguera’s technical advisory role to Constituent Assembly commissions, which is disclosed as a positional consideration. Its interpretation concerns the post-Evo process through 2020, not the 2025 contest; no book wording is reproduced.',
+    accessDate: '2026-09-22', creators: ['Albert Noguera Fernández'], institution: 'Ediciones Akal', publicationDate: '2022-02-21', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'Spanish-language book-length political interpretation of Bolivia’s post-Evo process', identifiers: { isbn: '9788446051749', pages: '272' },
+    description: 'Book-length political interpretation of the Bolivian process after Evo Morales, published in 2022. Its positional context and coverage horizon are material limits; it is paired with independent organizational studies and election records and is not treated as a neutral or complete account of 2020–2025.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
