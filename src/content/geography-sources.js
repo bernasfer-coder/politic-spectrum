@@ -6248,12 +6248,12 @@ const sources = [
   },
   {
     id: 'fijiIdeaConstitutionBuilding2025',
-    label: 'Alexander Hudson — Thresholds for Approving Constitutional Change: Recent Events in Fiji and The Gambia (2026)',
+    label: 'International IDEA — Annual Review of Constitution-Building: 2025 (chapters on Syria, Fiji and The Gambia)',
     url: 'https://www.idea.int/publications/catalogue/html/annual-review-constitution-building-2025',
-    note: 'International IDEA Annual Review of Constitution-Building 2025 record consulted for the Fiji chapter and its comparative account of the 2025 bill, Supreme Court opinion and amendment thresholds. It is institutional comparative analysis, not a complete Fiji history or a substitute for the primary judgment.',
-    accessDate: '2026-09-22', creators: ['Alexander Hudson'], institution: 'International IDEA', publicationDate: '2026-09-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    note: 'International IDEA Annual Review of Constitution-Building 2025, published 9 September 2026, consulted for Kimana Zulueta-Fülscher’s comparative chapter on Bangladesh and Syria and Alexander Hudson’s chapter on Fiji and The Gambia. Used for attributed analysis and link only; no chapter wording, quotation, table or PDF is republished.',
+    accessDate: '2026-09-23', creators: ['Kimana Zulueta-Fülscher (chapter 2)', 'Alexander Hudson (chapter 4)'], institution: 'International Institute for Democracy and Electoral Assistance (International IDEA)', publicationDate: '2026-09-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
     sourceType: 'institutional comparative constitutional-reform review chapter', identifiers: { doi: '10.31752/18859', pages: '94', report: 'Annual Review of Constitution-Building: 2025' },
-    description: 'Institutional comparative analysis of constitutional amendment thresholds, including Fiji’s 2025 parliamentary failure and Supreme Court opinion. It supplies recent verification and comparative context while preserving the distinction between legal interpretation and political legitimacy.',
+    description: 'Comparative book-length annual review. Chapter 2 argues that Syria’s rapid transitional framework has concentrated power in the executive while the permanent-constitution path remains unclear; chapter 4 analyzes Fiji’s and The Gambia’s constitutional-amendment constraints. These are attributed, context-specific analyses, not comprehensive national histories or measures of political legitimacy.',
   },
   {
     id: 'fijiFraenkelDefeat2024',
@@ -9824,6 +9824,126 @@ const sources = [
     accessDate: '2026-09-23', creators: ['Sarah Shamim'], institution: 'Al Jazeera', publicationDate: '2026-09-08', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
     sourceType: 'first-anniversary news report with interviews', identifiers: { anniversary: '2026-09-08' },
     description: 'A dated review of the first year after the protests, reporting divergent activist and analyst assessments and selected legal developments. It provides a contemporaneous snapshot, not a comprehensive evaluation of implementation.'
+  },
+  {
+    id: 'syriaPostAssadArabicDeclaration2025',
+    label: 'Syrian Arab Republic — Constitutional Declaration (Arabic original, 13 March 2025)',
+    url: 'https://sana.sy/locals/2198312/?lang=ar',
+    note: 'Official SANA Arabic publication consulted as the original-language public record and link only. No constitutional wording, translation, image or scan is republished; consult the Arabic text for interpretation because the English companion is explicitly automated and unofficial.',
+    accessDate: '2026-09-23', creators: ['Syrian Arab Republic'], institution: 'Syrian Arab News Agency (SANA)',
+    publicationDate: '2025-03-13', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'primary constitutional declaration / official Arabic publication', identifiers: { adoptionDate: '2025-03-13' },
+    description: 'The original Arabic-language Constitutional Declaration is primary evidence of the transitional framework’s stated institutions, principles and temporal horizon. It documents formal design, not implementation, popular consent or uniform territorial authority.'
+  },
+  {
+    id: 'syriaPostAssadEnglishDeclaration2025',
+    label: 'Syrian Arab Republic — Constitutional Declaration of 13 March 2025 (automated English translation)',
+    url: 'https://constitutionnet.org/sites/default/files/2025-03/2025.03.13%20-%20Constitutional%20declaration%20%28English%29.pdf',
+    note: 'Presidency-attributed English PDF hosted by ConstitutionNet and explicitly marked automated translation; used only to locate provisions, alongside the Arabic original, not as an authoritative translation. No translated wording or page image is republished.',
+    accessDate: '2026-09-23', creators: ['Presidency of the Syrian Arab Republic'], institution: 'ConstitutionNet',
+    publicationDate: '2025-03-13', evidenceRole: 'primary', confidence: 'medium', languages: ['English (automated translation from Arabic)'],
+    sourceType: 'primary constitutional declaration / unofficial automated translation', identifiers: { adoptionDate: '2025-03-13', pages: '15' },
+    description: 'A Presidency-attributed, automated English translation of the March 2025 declaration. It supports provision-level navigation only; the Arabic original controls where wording or interpretation matters.'
+  },
+  {
+    id: 'syriaPostAssadAssemblyElectionUN2025',
+    label: 'United Nations Security Council — Syria briefing on indirect People’s Assembly elections (22 October 2025)',
+    url: 'https://digitallibrary.un.org/record/4092681/files/S_PV.10021-EN.pdf',
+    note: 'Official UN Security Council meeting record consulted for a dated account of the October 2025 indirect selection process and reported vacant seats. No transcript wording or PDF image is republished; the briefing is not independent election observation.',
+    accessDate: '2026-09-23', creators: ['United Nations Security Council'], institution: 'United Nations Digital Library',
+    publicationDate: '2025-10-22', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Security Council meeting record', identifiers: { document: 'S/PV.10021', meetingDate: '2025-10-22' },
+    description: 'A Security Council meeting record reporting that indirect elections for a transitional People’s Assembly were held on 5 October 2025, and that some seats remained vacant at the time of the briefing. It records a UN briefing, not an independent election assessment.'
+  },
+  {
+    id: 'syriaPostAssadUNSecurityCouncilMay2026',
+    label: 'United Nations Security Council — Syria briefing on Assembly vacancies and territorial integration (15 May 2026)',
+    url: 'https://digitallibrary.un.org/record/4114487/files/S_PV.10151-EN.pdf',
+    note: 'Official UN Security Council meeting record consulted for its dated account of 11 indirect Assembly seats still unelected in Hasakah and Ayn al-Arab/Kobane, continuing northeast integration talks, and conditions in Suwayda. No transcript wording or PDF image is republished; reported developments are bounded to the 15 May briefing.',
+    accessDate: '2026-09-23', creators: ['United Nations Security Council'], institution: 'United Nations Digital Library',
+    publicationDate: '2026-05-15', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Security Council meeting record', identifiers: { document: 'S/PV.10151', meetingDate: '2026-05-15' },
+    description: 'A dated UN briefing record describing incomplete indirect representation in northeastern districts, continuing military and civilian integration discussions with the SDF, displacement and local security challenges. It records the speaker’s account and institutional assessment, not a comprehensive country survey.'
+  },
+  {
+    id: 'syriaPostAssadAssemblyOpeningSana2026',
+    label: 'Syrian Arab News Agency — first session of the transitional People’s Assembly (12 July 2026)',
+    url: 'https://sana.sy/en/syria/2329149/',
+    note: 'Official state-news-agency account used as an attributed record of the Assembly’s inaugural sitting and reported attendance. No article wording or image is republished; SANA is government-affiliated, and its account does not independently verify the institution’s representativeness or complete membership.',
+    accessDate: '2026-09-23', creators: ['Syrian Arab News Agency'], institution: 'Syrian Arab News Agency (SANA)',
+    publicationDate: '2026-07-12', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official state-news-agency report on institutional proceedings', identifiers: { sittingDate: '2026-07-12' },
+    description: 'Reports that the transitional People’s Assembly held its first session on 12 July 2026 and that 206 members attended. The report is evidence of the government media account of the sitting, not proof that all planned seats were filled or that the process was representative.'
+  },
+  {
+    id: 'syriaPostAssadSDFIntegrationUN2026',
+    label: 'United Nations Secretary-General spokesperson — statement on Syria–SDF agreement (30 January 2026)',
+    url: 'https://www.un.org/sg/en/content/sg/statements/2026-01-30/statement-attributable-the-spokesperson-for-the-secretary-general-syria',
+    note: 'Official UN Secretary-General spokesperson statement consulted as an institutional record and link only. No statement wording is republished; the statement’s support and requests are distinct from evidence of agreement implementation or local consent.',
+    accessDate: '2026-09-23', creators: ['Spokesperson for the United Nations Secretary-General'], institution: 'United Nations Secretary-General',
+    publicationDate: '2026-01-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Secretary-General spokesperson statement', identifiers: { statementDate: '2026-01-30' },
+    description: 'Welcomes an agreement between Syrian authorities and the Syrian Democratic Forces and calls for its swift implementation, peaceful integration in northeast Syria, and protection of the rights of Syrian Kurds. It records the UN position, not implementation or community-wide preferences.'
+  },
+  {
+    id: 'syriaPostAssadSept2026DPPA',
+    label: 'United Nations Department of Political and Peacebuilding Affairs — Syria transition briefing (17 September 2026)',
+    url: 'https://dppa.un.org/en/node/136734',
+    note: 'Official DPPA summary of the Deputy Special Envoy’s Security Council briefing consulted for a current dated institutional account. No briefing wording or image is republished; UN priorities and assessment are attributed rather than treated as a neutral score or exhaustive account.',
+    accessDate: '2026-09-23', creators: ['United Nations Department of Political and Peacebuilding Affairs'], institution: 'United Nations',
+    publicationDate: '2026-09-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official UN political-affairs briefing summary', identifiers: { briefingDate: '2026-09-17' },
+    description: 'The UN summary describes continuing institutional and transition work, including the Assembly’s developing role, future elections and northeast integration, while calling for accountable institutions, wider participation, civic space, transitional justice, recovery and safe returns. It is the case’s latest dated institutional snapshot, not a country-wide audit.'
+  },
+  {
+    id: 'syriaPostAssadMarchJournalDemocracy2025',
+    label: 'Andrew F. March — “What Kind of State for Syria?”, Journal of Democracy 36(3) (July 2025), 156–168',
+    url: 'https://www.journalofdemocracy.org/articles/what-kind-of-state-for-syria/',
+    note: 'Journal of Democracy article record and linked essay consulted for an attributed constitutional-theory interpretation. No article wording, quotation or page image is republished; the author’s argument is not treated as an account of all Syrians or as a book-length history.',
+    accessDate: '2026-09-23', creators: ['Andrew F. March'], institution: 'Journal of Democracy / Johns Hopkins University Press',
+    publicationDate: '2025-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'constitutional-theory journal essay', identifiers: { volume: '36', issue: '3', pages: '156–168' },
+    description: 'Examines the 2025 declaration through Islamic constitutional thought, executive authority and civic rights. Its reading of centralized presidentialism and Islamic norms is a single scholarly interpretation; Article 3 must also be read with the declaration’s protections for belief and religious practice.'
+  },
+  {
+    id: 'syriaPostAssadAlAli2026',
+    label: 'Zaid Al-Ali — “Syria at a Crossroads: Enhancing Inclusiveness in a Highly Centralized Political Transition” (International IDEA, 20 April 2026)',
+    url: 'https://www.idea.int/publications/catalogue/html/syria-crossroads-enhancing-inclusiveness-highly-centralized-political',
+    note: 'International IDEA policy brief consulted as attributed analysis and link only. No brief wording, quotation, table or figure is republished; prescriptions and assessments remain the author’s and are not primary evidence.',
+    accessDate: '2026-09-23', creators: ['Zaid Al-Ali'], institution: 'International Institute for Democracy and Electoral Assistance (International IDEA)',
+    publicationDate: '2026-04-20', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'constitutional-transition policy brief', identifiers: { publicationDate: '2026-04-20' },
+    description: 'Analyzes centralization and participation in Syria’s transition and proposes inclusion and checks. It is a policy perspective, useful for framing contested institutional questions rather than establishing outcomes.'
+  },
+  {
+    id: 'syriaPostAssadEzzamouri2026',
+    label: 'Akram Ezzamouri — “Stabilising Syria without Reinforcing Authoritarianism: Priorities for Italy and Europe” (IAI Brief, 20 July 2026)',
+    url: 'https://www.iai.it/en/publications/c41/stabilising-syria-without-reinforcing-authoritarianism-priorities-italy-and-europe',
+    note: 'Istituto Affari Internazionali policy brief consulted for attributed analysis and link only. No brief wording, quotation or graphic is republished; its recommendations on European engagement are not treated as primary evidence or as a country-wide consensus.',
+    accessDate: '2026-09-23', creators: ['Akram Ezzamouri'], institution: 'Istituto Affari Internazionali (IAI)',
+    publicationDate: '2026-07-20', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'foreign-policy and transition policy brief', identifiers: { publicationDate: '2026-07-20' },
+    description: 'Assesses international engagement, centralization, accountability, inclusion, territorial cohesion and economic recovery from an Italian/European policy angle. Its policy recommendations and analysis are explicitly attributed and not a direct measure of Syrian public opinion.'
+  },
+  {
+    id: 'syriaPostAssadSaleh2026',
+    label: 'Layla Saleh — “Syria’s Political Transition: Towards a New Personalist Politics?” (Toda Peace Institute Report 323, 21 September 2026)',
+    url: 'https://toda.org/publications/policy-briefs-and-reports/syrias-political-transition-towards-a-new-personalist-politics/',
+    note: 'Toda Peace Institute Report 323 consulted as a very recent attributed analysis and link only. No report wording, quotation, image or download is republished; claims of personalization and limited contestation are the author’s assessment and should be tested against primary records and other scholarship.',
+    accessDate: '2026-09-23', creators: ['Layla Saleh'], institution: 'Toda Peace Institute',
+    publicationDate: '2026-09-21', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporary political-transition research report', identifiers: { report: '323', publicationDate: '2026-09-21' },
+    description: 'Uses the March 2025 declaration as a benchmark to argue that new institutions and presidential decrees accompany centralization and limited political contestation. This is one author’s current interpretation, not an independently established consensus.'
+  },
+  {
+    id: 'syriaPostAssadOHCHRJusticeCommissions2025',
+    label: 'UN Special Procedures — communication on Syria’s transitional-justice and missing-persons commissions (SYR 4/2025)',
+    url: 'https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=30038',
+    note: 'OHCHR-hosted Special Procedures communication consulted as an official rights-monitoring document and link only. No communication wording is republished; questions and recommendations by mandate-holders are distinguished from adjudicated findings.',
+    accessDate: '2026-09-23', creators: ['United Nations Special Procedures mandate holders'], institution: 'Office of the United Nations High Commissioner for Human Rights (OHCHR)',
+    publicationDate: '2025-07-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official human-rights communication', identifiers: { reference: 'SYR 4/2025', sent: '2025-07-14', reply: '2025-09-08' },
+    description: 'Records information received about the establishment of national transitional-justice and missing-persons commissions and the mandate-holders’ questions to the authorities. It documents scrutiny and process, not a court ruling or a completed assessment of commission performance.'
   },
 ];
 
