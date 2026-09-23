@@ -2160,6 +2160,96 @@ const sources = [
     description: 'Primary institutional record for the Commission’s 2024 presidential-election results, used as the endpoint for this dated case. It documents the official result record without settling electoral fairness, participation, opposition acceptance, policy consequences or developments after the 2024 election.',
   },
   {
+    id: 'ghanaCommonwealthObserver2024',
+    label: 'Commonwealth Observer Group — Ghana General Election: 7 December 2024',
+    url: 'https://thecommonwealth.org/sites/default/files/news-items/documents/GHANACOGReport-Final%20Report.pdf',
+    note: 'Commonwealth Observer Group final report consulted for original attributed synthesis and link only. No report wording, quotation, table or PDF page is republished; its invitation, deployment and observation scope are described, and its overall assessment is not treated as proof of every constituency or voter experience.',
+    accessDate: '2026-09-23', creators: ['Commonwealth Observer Group'], institution: 'Commonwealth Secretariat',
+    publicationDate: '2025-01-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation mission final report', identifiers: { electionDate: '2024-12-07' },
+    description: 'Independent observer-group report documenting the 7 December 2024 general election, official results available during its reporting, observer deployment and recommendations. Its findings are bounded by the group’s terms of reference and field observation; delayed constituency collation and local incidents are not erased by its overall assessment.'
+  },
+  {
+    id: 'ghanaAgyekumEtAlElection2025',
+    label: 'Humphrey Asamoah Agyekum et al. — Ghana’s 2024 Elections: Ghanaians Vote for Renewal and Accountability',
+    url: 'https://doi.org/10.1177/00020397251352867',
+    note: 'Peer-reviewed Africa Spectrum analysis consulted for original attributed synthesis and DOI link only. No article wording, quotation, table, figure, translation or PDF is republished; its account of voter concerns is interpretation, not a census of motives or a causal estimate.',
+    accessDate: '2026-09-23', creators: ['Humphrey Asamoah Agyekum', 'George M. Bob-Milliar', 'Karen Lauterbach', 'Alena Thiel'], institution: 'Africa Spectrum / SAGE',
+    publicationDate: '2025-06-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed election analysis', identifiers: { doi: '10.1177/00020397251352867', journal: 'Africa Spectrum', volume: '60', issue: '2', pages: '209–220' },
+    description: 'Multidisciplinary scholarly interpretation of the 2024 campaign and result, connecting existential and livelihood concerns, accountability and democratic resilience. Its arguments are attributed to the authors and distinguished from official election records and survey self-reports.'
+  },
+  {
+    id: 'ghanaKASGIMPAVoterStudy2025',
+    label: 'Samuel Kwaku Bonsu, Joseph Agyapong Darmoe and Anna Lena Sabroso-Wasserfall — Stocktaking Ghana’s Democracy: Voter Behaviour and Political Participation 2024/2025',
+    url: 'https://www.kas.de/documents/288604/0/DEMOCRACY%2BSTOCKTAKING.pdf/08479624-7719-2e04-96b0-27d0f3a033fd?t=1749225421934&version=1.0',
+    note: 'Konrad-Adenauer-Stiftung/GIMPA survey report consulted for original attributed synthesis and link only. No survey instrument, question wording, table, quotation or PDF page is republished; findings are self-reports within the study’s sampling and fieldwork design, not a single motive shared by all Ghanaian voters.',
+    accessDate: '2026-09-23', creators: ['Samuel Kwaku Bonsu', 'Joseph Agyapong Darmoe', 'Anna Lena Sabroso-Wasserfall'], institution: 'Konrad-Adenauer-Stiftung Ghana / Ghana Institute of Management and Public Administration',
+    publicationDate: '2025-06-06', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length empirical voter survey report', identifiers: { isbn: '978-9988-51-070-1', pages: '120' },
+    description: 'Large-scale survey study of voter behaviour and political participation around the 2024 election, reporting multistage sampling across Ghana’s regions and constituencies. Survey responses illuminate stated considerations but do not establish a uniform national motive, eliminate question or nonresponse effects, or substitute for independent replication.'
+  },
+  {
+    id: 'ghanaMoFBudget2025',
+    label: 'Ghana Ministry of Finance — Budget Statement and Economic Policy for the 2025 Financial Year',
+    url: 'https://mofep.gov.gh/budget-statements/2025',
+    note: 'Official Ministry of Finance budget statement and policy webpage consulted as a primary government source and link only. No budget wording, target table, quotation or PDF is republished; announced measures and forecasts are not treated as achieved outcomes.',
+    accessDate: '2026-09-23', creators: ['Ministry of Finance, Republic of Ghana'], institution: 'Ministry of Finance, Republic of Ghana',
+    publicationDate: '2025-03-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official annual budget statement and economic policy', identifiers: { fiscalYear: '2025', presentationDate: '2025-03-11' },
+    description: 'The incoming government’s first annual budget statement, presented to Parliament under the constitutional and public-finance framework. It documents stated priorities, proposed policy measures and fiscal projections at a dated point, not their subsequent implementation or distributional effects.'
+  },
+  {
+    id: 'ghanaIMFFifthReview2025',
+    label: 'International Monetary Fund — Ghana: Fifth Review Under the Extended Credit Facility Arrangement',
+    url: 'https://doi.org/10.5089/9798229034173.002',
+    note: 'IMF Staff Country Report 2025/343 consulted for attributed synthesis and DOI link only. No staff-report prose, quotation, table, chart or PDF is republished; IMF staff assessment, Ghanaian authorities’ commitments and the Executive Director’s statement remain institutionally distinct, and this is an ECF-program review rather than a general social-welfare evaluation.',
+    accessDate: '2026-09-23', creators: ['International Monetary Fund, African Department'], institution: 'International Monetary Fund',
+    publicationDate: '2025-12-22', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional country-program review and staff report', identifiers: { reportNumber: 'IMF Staff Country Report 2025/343', isbn: '9798229034173', doi: '10.5089/9798229034173.002', pages: '133' },
+    description: 'IMF staff report and associated materials for the fifth review of Ghana’s Extended Credit Facility arrangement. It assesses program targets, reforms and macroeconomic risks from a creditor-program perspective; its evaluations are not equated with household welfare, voter preferences or the whole political order.'
+  },
+  {
+    id: 'ghanaCDDOneYearAssessment2026',
+    label: 'CDD-Ghana — One-Year Assessment of the Mahama Administration: The Second Coming',
+    url: 'https://cddgh.org/2026/02/24/cdd-ghana-convenes-stakeholder-dialogue-on-the-mahama-administrations-first-year-in-office/',
+    note: 'CDD-Ghana’s 24 February 2026 account of its first-year assessment and roundtable consulted for original attributed synthesis and link only. No report wording, quotation or assessment table is republished; the same account says stakeholder feedback was to inform a later final version, so the linked roundtable-stage document is treated as a civic assessment with version-status uncertainty, not a final audit or book-length scholarly consensus.',
+    accessDate: '2026-09-23', creators: ['Ghana Center for Democratic Development (CDD-Ghana)'], institution: 'CDD-Ghana',
+    publicationDate: '2026-02-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'civic organization first-year assessment and public roundtable record', identifiers: { assessmentPeriod: '2025-01-07/2026-01-07' },
+    description: 'Civil-society assessment presented at a February 2026 stakeholder roundtable, covering governance, accountability, economy and jobs, environment and social development, security, and regional affairs. It provides attributed criticism and early-reform analysis; its own release account records planned revisions, and its judgments are not presented as settled or representative of all Ghanaians.'
+  },
+  {
+    id: 'ghanaCRCReviewDocuments2025',
+    label: 'Constitution Review Committee — official documents portal',
+    url: 'https://constitutionreviewgh.org/documents/',
+    note: 'Official Constitution Review Committee documents portal consulted as an institutional index and link only. No recommendation, report wording, quotation or PDF page is republished; the listing establishes the existence of review documents, not government acceptance, legislation, implementation or public consensus.',
+    accessDate: '2026-09-23', creators: ['Constitution Review Committee'], institution: 'Constitution Review Committee, Republic of Ghana',
+    evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official constitutional-review document repository', identifiers: {},
+    description: 'Institutional portal listing reports and documents associated with the constitutional review. It supports a narrow claim that recommendations entered a formal review process; interpretation of recommendations and their eventual legal status requires separate government, parliamentary and legal records.'
+  },
+  {
+    id: 'ghanaISDConstitutionReviewUpdate2026',
+    label: 'Ghana Information Services Department — Government position paper on constitutional review in the works',
+    url: 'https://www.isd.gov.gh/government-position-paper-on-constitutional-review-in-the-works-president-mahama/',
+    note: 'Official government Information Services Department report consulted as a primary record of the President’s 20 July 2026 update and link only. No statement wording, quotation, photograph or webpage text is republished; this reports an ongoing paper and announced next steps, not completed amendments or consensus.',
+    accessDate: '2026-09-23', creators: ['Information Services Department, Republic of Ghana'], institution: 'Information Services Department, Republic of Ghana',
+    publicationDate: '2026-07-20', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official government communication on constitutional review', identifiers: { announcementDate: '2026-07-20' },
+    description: 'Government communication reporting Cabinet consideration of constitutional-review recommendations and preparation of a Government Position Paper, with a subsequent implementation committee described as a next step. It documents the administration’s account and announced process at that date, not enactment or independent evaluation.'
+  },
+  {
+    id: 'ghanaGNAConstitutionImplementationCommittee2026',
+    label: 'Ghana News Agency — Attorney-General inaugurates Constitution Review Implementation Committee',
+    url: 'https://gna.org.gh/2026/08/attorney-general-inaugurates-11-member-constitution-review-implementation-committee/',
+    note: 'Ghana News Agency report of 29 August 2026 consulted for original attributed synthesis and link only. No news copy, quotation or photograph is republished; statements about the committee’s remit are attributed to the reported official statement, and inauguration is not treated as constitutional amendment or completed implementation.',
+    accessDate: '2026-09-23', creators: ['Joyce Danso', 'Ghana News Agency'], institution: 'Ghana News Agency',
+    publicationDate: '2026-08-29', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'national news-agency report of official committee inauguration', identifiers: { reportDate: '2026-08-29' },
+    description: 'Contemporaneous reporting that the Attorney-General inaugurated an 11-member committee to examine the Government Position Paper and CRC report and develop a framework for implementing proposals. It fixes the process endpoint while leaving all recommendations, future legislation and implementation unresolved.'
+  },
+  {
     id: 'adebanwiDemocracyNigeriaFourthRepublic2023',
     label: 'Wale Adebanwi (ed.) — Democracy and Nigeria’s Fourth Republic: Governance, Political Economy, and Party Politics 1999–2023',
     url: 'https://boydellandbrewer.com/book/democracy-and-nigerias-fourth-republic-9781847013798/?v=7885444af42e',
