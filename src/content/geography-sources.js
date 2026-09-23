@@ -9945,6 +9945,206 @@ const sources = [
     sourceType: 'official human-rights communication', identifiers: { reference: 'SYR 4/2025', sent: '2025-07-14', reply: '2025-09-08' },
     description: 'Records information received about the establishment of national transitional-justice and missing-persons commissions and the mandate-holders’ questions to the authorities. It documents scrutiny and process, not a court ruling or a completed assessment of commission performance.'
   },
+  {
+    id: 'bangladeshElectionCommission2026Results',
+    label: 'Bangladesh Election Commission — 13th Parliament Election Result and Result of Referendum 2026',
+    url: 'https://ecs.gov.bd/en/page/gazette-for-13th-national-parliament-election',
+    note: 'Official Bangladesh Election Commission portal reviewed 23 September 2026; it lists the 13th Parliament election and 2026 referendum results. The dynamic portal exposed result headings rather than the underlying tables in the consulted view, so numerical claims are separately attributed to identified reports of Commission Gazette corrections; no result sheet is republished.',
+    accessDate: '2026-09-23', creators: ['Bangladesh Election Commission'], institution: 'Bangladesh Election Commission',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Bengali'],
+    sourceType: 'official election and referendum results portal', identifiers: { election: '13th Parliament election', referendum: 'July Charter referendum, 2026' },
+    description: 'Institutional portal for the official 2026 parliamentary and referendum result record. It anchors the existence of those records, but its rendered page does not expose the underlying tables; BSS reporting is cited separately for the corrected referendum totals.'
+  },
+  {
+    id: 'bangladeshJulyCharterImplementationOrder2025',
+    label: 'Government of Bangladesh — July National Charter (Constitutional Reform) Implementation Order, 2025',
+    url: 'https://www.dpp.gov.bd/upload_file/gazettes/59217_55912.pdf',
+    note: 'Official Bengali-language Government Gazette scan, dated 13 November 2025, consulted as the primary legal record and link only. OCR was unreliable and no full independent translation was established; the Gazette’s title and formal existence are cited, while provision-level interpretation and implementation require Bengali legal review. No scan or wording is republished.',
+    accessDate: '2026-09-23', creators: ['Government of Bangladesh'], institution: 'Bangladesh Government Press / Department of Printing and Publications',
+    publicationDate: '2025-11-13', evidenceRole: 'primary', confidence: 'medium', languages: ['Bengali'],
+    sourceType: 'official gazette / constitutional implementation order', identifiers: { gazette: '59217_55912.pdf', date: '2025-11-13' },
+    description: 'Primary Bengali Gazette record of the July National Charter (Constitutional Reform) Implementation Order. The available scan is a witness to the promulgated instrument, not evidence that every proposed reform was subsequently enacted or implemented; provision-level translation remains open.'
+  },
+  {
+    id: 'bangladeshJulyNationalCharterEnglish2025',
+    label: 'National Consensus Commission — July National Charter 2025 (unofficial English translation)',
+    url: 'https://constitutionnet.org/sites/default/files/2025-11/Bangladesh%20July%20National%20Charter%202025%20%28English%20translation%29.pdf',
+    note: 'A 61-page English translation hosted by ConstitutionNet and identified as unofficial; the Charter was signed on 17 October 2025. Used as a navigation aid to the political compact and link only. The Bengali original controls; no Charter wording, translation passage, scan or PDF page is republished, and assent to the compact does not establish subsequent constitutional implementation.',
+    accessDate: '2026-09-23', creators: ['National Consensus Commission'], institution: 'National Consensus Commission / ConstitutionNet (International IDEA)',
+    publicationDate: '2025-10-17', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'political compact / unofficial English translation', identifiers: { signed: '2025-10-17', pages: '61', translation: 'unofficial English translation' },
+    description: 'English rendering of the July National Charter political agreement. Because it is explicitly unofficial, it is not treated as controlling legal text; the compact and its referendum are distinguished from legislation, amendment, uniform consent and implementation.'
+  },
+  {
+    id: 'bangladeshCommonwealthObserverReport2026',
+    label: 'Commonwealth Observer Group — Bangladesh Parliamentary Elections and Referendum, 12 February 2026 (final report)',
+    url: 'https://thecommonwealth.org/publications/bangladesh-parliamentary-elections-and-referendum-12-february-2026',
+    note: 'Final report of the Commonwealth Observer Group established at the invitation of Bangladesh’s Chief Election Commissioner, published 15 June 2026. The Group’s overall assessment and findings are attributed to its mandate and methodology, not presented as a neutral measurement of public consent; no report wording, table, image or PDF is republished.',
+    accessDate: '2026-09-23', creators: ['Commonwealth Observer Group'], institution: 'Commonwealth Secretariat',
+    publicationDate: '2026-06-15', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official international election-observation report', identifiers: { doi: '10.14217/htir5535', report: 'Bangladesh Parliamentary Elections and Referendum, 12 February 2026' },
+    description: 'Observer-group report records its assessment that the election was peaceful, orderly and transparent overall while noting the Awami League’s exclusion, limited public awareness of referendum substance, the secondary role of parties in Charter formation, low numbers of women constituency candidates and other inclusion concerns. These are the Group’s findings, not a country-wide ideological classification.'
+  },
+  {
+    id: 'bangladeshEuEomFinalRelease2026',
+    label: 'European Union Election Observation Mission — final-report release on the 12 February 2026 elections',
+    url: 'https://www.eeas.europa.eu/eom-bangladesh-2026/eu-eom-bangladesh-presents-its-final-report-19-recommendations-eu-stands-ready-support-bangladesh_en',
+    note: 'Official EU Election Observation Mission press release dated 28 April 2026 summarizing the mission’s final report after two months of country-wide observation. This catalog entry is the release, not the complete final report; the mission’s attributed assessment and recommendations are not treated as a final verdict on political legitimacy. No release wording or report material is republished.',
+    accessDate: '2026-09-23', creators: ['European Union Election Observation Mission Bangladesh 2026'], institution: 'European External Action Service / EU Election Observation Mission',
+    publicationDate: '2026-04-28', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election-observation mission final-report release', identifiers: { observers: '223 international observers', reportPresented: '2026-04-28' },
+    description: 'The mission described the election as credible and competently managed while identifying legal and procedural gaps, uneven campaign enforcement, weak campaign-finance oversight, low women-candidate participation and digital violence. The press release summarizes the mission’s own assessment; the full report and domestic responses remain separate evidence.'
+  },
+  {
+    id: 'bangladeshTibElectionTracking2026',
+    label: 'Transparency International Bangladesh — 13th National Election Process Tracking and Affidavits: TIB’s Observations (Executive Summary)',
+    url: 'https://www.ti-bangladesh.org/images/2026/report/election-process-tracking-affidavits/Executive-Summary-on-13th-Election-Process-Tracking-and-Affidavits-TIB-En.pdf',
+    note: 'TIB executive-summary report published 16 February 2026, 26 pages. Its election-process tracking selected 70 of 300 constituencies through random representative sampling; reported observations and allegations must remain attributed to TIB and are not paraphrased as proof about every polling place or a judicial finding. No report wording, table or PDF is republished.',
+    accessDate: '2026-09-23', creators: ['Transparency International Bangladesh research team'], institution: 'Transparency International Bangladesh',
+    publicationDate: '2026-02-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'civil-society election-monitoring report / executive summary', identifiers: { pages: '26', sample: '70 of 300 constituencies', publicationDate: '2026-02-16' },
+    description: 'TIB reports multiple election-day irregularities in 40 per cent of its 70 sampled constituencies, and describes the complaints and responses it observed. This is TIB’s sample finding, not an assertion that irregularities occurred in 40 per cent of all 300 constituencies; the report does not replace the official record, observer assessments, local reporting or adjudicated findings.'
+  },
+  {
+    id: 'bangladeshReferendumCorrectedGazetteBss2026',
+    label: 'Bangladesh Sangbad Sangstha — “EC publishes amended gazette on referendum results” (26 February 2026)',
+    url: 'https://www.bssnews.net/news/364239',
+    note: 'BSS news report dated 26 February 2026 summarizing the Election Commission’s amended Gazette. It distinguishes corrected from initially published counts: Yes 47,225,980; No 21,960,231; rejected 7,435,196; total votes cast 76,621,407. This is a secondary report of the EC correction, not the primary Gazette itself; no article wording or result table is republished.',
+    accessDate: '2026-09-23', creators: ['Bangladesh Sangbad Sangstha'], institution: 'Bangladesh Sangbad Sangstha (BSS)',
+    publicationDate: '2026-02-26', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'news report summarizing amended official referendum results', identifiers: { publicationDate: '2026-02-26', subject: 'Election Commission amended Gazette' },
+    description: 'Reports the Election Commission’s correction to the July Charter referendum result. Counts are attributed to BSS’s account of the amended Gazette and cross-checked for the Yes total against the Commonwealth Observer Group report; they establish a formal result, not the reasons for votes, breadth of awareness or implementation of the Charter.'
+  },
+  {
+    id: 'bangladeshAsianSurveyTransition2026',
+    label: 'Drew Stommes — “Bangladesh in 2024 and 2025: Hasina’s Downfall, Transitional Reforms, and the Road to Elections” (Asian Survey 66.2, 2026)',
+    url: 'https://online.ucpress.edu/as/article-abstract/66/2/340/217904/Bangladesh-in-2024-and-2025Hasina-s-Downfall?redirectedFrom=fulltext',
+    note: 'University of California Press article metadata and abstract consulted; full text was not accessible. The article covers 2024–25 and is not a study of the February 2026 election or subsequent implementation. Its abstract is an attributed scholarly frame, not a consensus or substitute for the restricted full text.',
+    accessDate: '2026-09-23', creators: ['Drew Stommes'], institution: 'University of California Press / Asian Survey',
+    publicationDate: '2026-04-01', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly journal article (abstract and metadata consulted)', identifiers: { doi: '10.1525/as.2026.66.2.340', journal: 'Asian Survey', volume: '66', issue: '2', pages: '340–350' },
+    description: 'The abstract frames the 2024–25 uprising, interim administration, reform commissions, Charter and preparations for elections, and flags minority insecurity and India relations. Full article access was unavailable; it supplies limited scholarly context for the 2024–25 lead-in only.'
+  },
+  {
+    id: 'bangladeshAhmedElectionTransition2026',
+    label: 'Shahbaz Ahmed — “Election within democratic transition: Evidence from 13th parliamentary election of Bangladesh” (Revista Elecciones 25.31, 2026)',
+    url: 'https://revistas.onpe.gob.pe/index.php/elecciones/article/view/445',
+    note: 'Journal landing page, abstract, metadata and DOI consulted; the abstract is the basis for this bounded paraphrase. It calls the poll a transition election and suggests partial re-legitimation, while also listing the absence of meaningful electoral competition after the Awami League’s suspension. This tension is retained rather than collapsed into a consensus; no article text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Shahbaz Ahmed'], institution: 'Revista Elecciones / Oficina Nacional de Procesos Electorales (Peru)',
+    publicationDate: '2026-07-22', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly journal article (publisher abstract and metadata consulted)', identifiers: { doi: '10.53557/Elecciones.2026.v25n31.07.en', journal: 'Revista Elecciones', volume: '25', issue: '31', article: 'e3107' },
+    description: 'One published election analysis interprets the 2026 vote as a transition election and partial re-legitimation, but its abstract also describes the absence of meaningful competition following Awami League suspension. The full claim and methods require reading the article; it is not treated as settled scholarly agreement.'
+  },
+  {
+    id: 'bangladeshSwpPoliticalRealignment2026',
+    label: 'Tobias Scholz and Leo Wigger — Bangladesh’s Political Realignment after the Parliamentary Elections (SWP Comment 13, March 2026)',
+    url: 'https://www.swp-berlin.org/publications/products/comments/2026C13_Bangladesh.pdf',
+    note: 'Five-page German Institute for International and Security Affairs analysis consulted in full. It describes orderly electoral procedure and raises concerns about pluralism, exclusion, gender and political Islam; these are the authors’ policy analysis and not an independent country-wide classification. The work identifies CC BY 4.0; this project still links and paraphrases only, without reproducing its text or figures.',
+    accessDate: '2026-09-23', creators: ['Tobias Scholz', 'Leo Wigger'], institution: 'Stiftung Wissenschaft und Politik (German Institute for International and Security Affairs)',
+    publicationDate: '2026-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'policy research commentary', identifiers: { doi: '10.18449/2026C13', report: 'SWP Comment 13/2026', pages: '5', licence: 'CC BY 4.0' },
+    description: 'Authors assess the 2026 election as procedurally orderly but identify democratic-pluralism, party-exclusion, gender-representation and religious-politics questions. Their interpretation is attributed, time-bounded and distinct from primary result records.'
+  },
+  {
+    id: 'bangladeshCharterImplementationDebateBdnews242026',
+    label: 'Salman Tareque Sakil — “July’s reform consensus faces mounting pressure from a divided opposition” (bdnews24.com, updated 8 September 2026)',
+    url: 'https://bdnews24.com/politics/adac618fa566',
+    note: 'Independent Bangladeshi outlet’s reported article was published 5 August 2026 and updated 8 September 2026. It attributes competing constitutional-amendment and structural-reform positions to government and opposition actors and reports that the government had no clear implementation timetable at that update. Reporting is evidence of the contemporary dispute, not a substitute for committee minutes, draft bills or the Bengali legal record.',
+    accessDate: '2026-09-23', creators: ['Salman Tareque Sakil'], institution: 'bdnews24.com',
+    publicationDate: '2026-08-05', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'current political reporting / attributed policy dispute', identifiers: { updated: '2026-09-08', publicationDate: '2026-08-05' },
+    description: 'Reports disagreement between the BNP government’s proposed parliamentary amendment route and opposition calls for broader structural reform; it records attributed statements and the reporter’s account as of 8 September 2026. The article does not establish the final implementation outcome.'
+  },
+  {
+    id: 'bangladeshNationsAspirationsJulyUprising2026',
+    label: 'Mohd Aminul Karim, Abdullah Shahnewaz, Shaila Solaiman, Md. Abu Hanif and Maliha Tabassum (eds.) — A Nation’s Aspirations: The July Uprising 2024 (2026)',
+    url: 'https://www.academia.edu/166924046/A_Nations_Aspirations',
+    note: 'Full text consulted through the editors’ Bangladesh University of Professionals Academia.edu profile. The title page identifies Bangladesh University of Professionals copyright, all rights reserved, Academic Press and Publishers Library, Dhaka, January 2026, and ISBN 978-984-29160-6-9. No wording, chapter, table, image or scan is reproduced. Its scope is the June–August 2024 uprising, not the 2026 election or referendum. The introduction itself cautions that the early chapters may not be authoritative and that casualties, reforms and outcomes remain contested; the localized graffiti study uses 57 works from Mirpur-12 and two interviews, not a national sample.',
+    accessDate: '2026-09-23', creators: ['Mohd Aminul Karim (chief editor)', 'Abdullah Shahnewaz', 'Shaila Solaiman', 'Md. Abu Hanif', 'Maliha Tabassum'], institution: 'Academic Press and Publishers Library, Dhaka, in collaboration with Bangladesh University of Professionals',
+    publicationDate: '2026-01', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length edited scholarly volume (full text consulted)', identifiers: { isbn: '978-984-29160-6-9', publisher: 'Academic Press and Publishers Library', place: 'Dhaka', publicationDate: '2026-01' },
+    description: 'Five chapters examine graffiti, cyber legislation, international-media framing, comparative revolutionary history and conflict stages. The volume supplies a published book-length account of selected 2024 uprising questions, with a Dhaka-localized empirical chapter and explicitly provisional framing; it is neither a comprehensive national history nor a book-length analysis of the later electoral and constitutional transition.'
+  },
+  {
+    id: 'bangladeshJulyUprisingBibliographicReviewRahman2026',
+    label: 'Moshiur Rahman — “Research on Bangladesh’s July Uprising 2024: A Systematised Bibliographic Review of Themes, Methods, Findings, and Gaps” (IJPIR 1.2, 2026)',
+    url: 'https://doi.org/10.65826/IJPIR.1.2.2026.31',
+    note: 'Full 16-page article consulted, published 12 May 2026, pp. 95–110, DOI 10.65826/IJPIR.1.2.2026.31. Rahman identifies at least 30 directly focused public outputs through 10 March 2026, but explicitly says the review is systematized rather than a full database-driven systematic review and does not claim to capture unpublished, inaccessible or unindexed work. The PDF states CC BY-NC-ND 4.0 while the landing page states CC BY 4.0; this project uses original paraphrase and a link only, and no adapted material.',
+    accessDate: '2026-09-23', creators: ['Moshiur Rahman'], institution: 'International Journal of Politics and International Relations',
+    publicationDate: '2026-05-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'systematised bibliographic review article (full text consulted)', identifiers: { doi: '10.65826/IJPIR.1.2.2026.31', journal: 'International Journal of Politics and International Relations', volume: '1', issue: '2', pages: '95–110', publicationDate: '2026-05-12', searchCutoff: '2026-03-10' },
+    description: 'Reviews the emerging 2024 uprising literature and concludes that the field was young, methodologically uneven and concentrated on urban, event-centred and short-term evidence, with longitudinal, district-level, survivor-centred and institutionally grounded gaps. Its search cutoff predates the 2026 election, so it maps the uprising literature rather than research on the full transition.'
+  },
+  {
+    id: 'bangladeshSoasUnfinishedRevolutionInsight2026',
+    label: 'Pallavi Roy, Mushtaq Khan, Muhammad Zakir Hossain Khan, Sabrina Jahan Shova and Niloy Binta Nasim Mahia — “Bangladesh: why the July Revolution remains unfinished” (SOAS ACE Research Insight, August 2026)',
+    url: 'https://ace.soas.ac.uk/publication/bangladesh-why-the-july-revolution-remains-unfinished/',
+    note: 'SOAS Anti-Corruption Evidence Research Insight dated August 2026 consulted. The page says it introduces forthcoming full research with the Change Initiative and summarizes the authors’ argument that broad mobilization networks had not become durable organizations capable of reshaping the political settlement. The underlying study and its complete evidence base were not available in this consultation; the insight is attributed research framing, not a fully verified finding.',
+    accessDate: '2026-09-23', creators: ['Pallavi Roy', 'Mushtaq Khan', 'Muhammad Zakir Hossain Khan', 'Sabrina Jahan Shova', 'Niloy Binta Nasim Mahia'], institution: 'SOAS Anti-Corruption Evidence, SOAS University of London',
+    publicationDate: '2026-08', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional research insight introducing forthcoming field research', identifiers: { publicationDate: '2026-08', status: 'full research paper forthcoming' },
+    description: 'Introduces a forthcoming political-settlements and Actor-Network Theory study, arguing that successful mass mobilization had not yet produced durable organizations for political transformation. Only the short research insight, not the full study or its evidence base, was consulted.'
+  },
+  {
+    id: 'bangladeshHossainBergmanMonsoonUprisingForthcoming2026',
+    label: 'Naomi Hossain and David Bergman — Bangladesh’s Monsoon Uprising: How a Student Revolt Toppled Asia’s Iron Lady (forthcoming 2026)',
+    url: 'https://link.springer.com/book/9789819239191',
+    note: 'Palgrave Macmillan/Springer Nature bibliographic record only. At the 23 September 2026 review cutoff, Springer listed the eBook for 1 October 2026 and hardcover for 28 October 2026 and stated that the title had not yet been released. No book content or publisher description is used as evidence; these are release details only, and the planned account is bounded to the 2024 uprising rather than the full 2024–2026 election and implementation sequence.',
+    accessDate: '2026-09-23', creators: ['Naomi Hossain', 'David Bergman'], institution: 'Palgrave Macmillan Singapore / Springer Nature',
+    publicationDate: 'forthcoming 2026-10-01 (eBook); 2026-10-28 (hardcover)', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'forthcoming book bibliographic record (not yet released at review cutoff)', identifiers: { hardcoverIsbn: '978-981-92-3919-1', ebookIsbn: '978-981-92-3920-7', softcoverIsbn: '978-981-92-3922-1', pages: 'XXV, 179', series: 'Politics of South Asia', publisher: 'Palgrave Macmillan Singapore', scheduledRelease: '2026-10-01 (eBook); 2026-10-28 (hardcover)' },
+    description: 'Springer describes a forthcoming extended analysis of the 2024 uprising. Since the electronic and print release dates fall after the case’s 23 September 2026 cutoff, this catalog record is a future research lead, not evidence about the events or their interpretation.'
+  },
+  {
+    id: 'bangladeshCriticalMediaPerspectivesUprising2026',
+    label: 'Didarul Islam Manik and Harisur Rahman (eds.) — Critical Media Perspectives on the 2024 Bangladesh Uprising: The Gen Z Revolution (2026)',
+    url: 'https://www.bloomsbury.com/uk/critical-media-perspectives-on-the-2024-bangladesh-uprising-9798216371533/',
+    note: 'Bloomsbury Academic publisher bibliographic record reviewed 23 September 2026; it lists a 368-page edited volume, ISBN 9798216371533 and publication date 3 September 2026. The page says institutional access is available via Bloomsbury Collections, but this title’s text was not consulted. Its table of contents and publisher description place it within media, digital activism, gendered representation and protest narratives during the 2024 uprising. It is a catalog lead for that bounded period, not evidence about the 2026 election or implementation; no publisher description or book text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Didarul Islam Manik (editor)', 'Harisur Rahman (editor)'], institution: 'Bloomsbury Academic / Bloomsbury Publishing',
+    publicationDate: '2026-09-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'edited scholarly book bibliographic record (text not consulted)', identifiers: { isbn: '9798216371533', pages: '368', publisher: 'Bloomsbury Academic', publicationDate: '2026-09-03' },
+    description: 'Publisher-listed collection on media sociology, digital activism, political communication, gendered media narratives, protest aesthetics and transnational coverage of the 2024 July Uprising. Its bibliographic record establishes the existence and stated scope of a further book-length work; its arguments and empirical basis have not been independently consulted.'
+  },
+  {
+    id: 'bangladeshShahabuddinInternationalLawBookForthcoming2026',
+    label: 'Mohammad Shahabuddin (ed.) — The July Revolution and International Law in Bangladesh (Routledge, catalog listing reviewed 2026)',
+    url: 'https://www.routledge.com/The-July-Revolution-and-International-Law-in-Bangladesh/Shahabuddin/p/book/9781041270614',
+    note: 'Routledge publisher record reviewed 23 September 2026. It describes a 224-page edited book (ISBN 9781041270614) and nine chapters on justice, accountability, reparations, minorities, geopolitics, peacekeeping, digital sovereignty and development after the July Revolution. The Routledge Contemporary South Asia series listing still labeled it forthcoming while giving 15 September 2026; the book page carried 2027 copyright metadata. No release or full text was independently verified, and no book content or publisher-description wording is used as evidence. Retained as a bibliographic follow-up, not evidence about the election or implementation.',
+    accessDate: '2026-09-23', creators: ['Mohammad Shahabuddin (editor)'], institution: 'Routledge / Taylor & Francis',
+    publicationDate: 'publisher catalog lists 2026-09-15; still labeled forthcoming at access', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'forthcoming edited book bibliographic record (release not verified)', identifiers: { isbn: '9781041270614', pages: '224', publisher: 'Routledge', series: 'Routledge Contemporary South Asia', scheduledRelease: '2026-09-15 (publisher listing; status still forthcoming on 2026-09-23)' },
+    description: 'Publisher-described edited collection examines international-law questions after the July Revolution, including accountability, reparations, minority protection, foreign relations, military peacekeeping, internet shutdowns and climate justice. The record concerns a 2024-uprising aftermath, not a consulted synthesis of the full 2024–2026 electoral and constitutional process.'
+  },
+  {
+    id: 'bangladeshJulyResolveFirstPersonStories2026',
+    label: 'The July Resolve — Stories from the July Movement (first-person testimony and narrative archive)',
+    url: 'https://thejulyresolve.com/stories',
+    note: 'The July Resolve’s own Stories page, consulted 23 September 2026, describes its collection as first-hand accounts, reflections and reporting from people who shaped or witnessed the July Movement. Individual curated narratives include injured participants, a transgender activist and family members of people killed. They are attributed retrospective testimonies and should not be treated as representative sampling, independently corroborated incident findings or evidence of a common movement-wide position. Copyright is asserted by the site; link only, with no testimony wording or images reproduced.',
+    accessDate: '2026-09-23', creators: ['The July Resolve'], institution: 'The July Resolve',
+    evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'curated first-person testimony and narrative archive', identifiers: { section: 'Stories from the July Movement', copyright: '© 2024 (site notice)' },
+    description: 'A curated online collection presenting first-person accounts and reporting about the 2024 July Movement. It adds individually attributed participant and family perspectives, including injury and loss, but is neither an oral-history sampling design nor independent verification of each account.'
+  },
+  {
+    id: 'bangladeshJulyUprisingPrisonLifeBookCatalog2025',
+    label: 'Saynth Sakhawat — জুলাই গণঅভ্যুত্থান ও জেলজীবন (July Uprising and Prison Life, 2025)',
+    url: 'https://opac.ulab.edu.bd/cgi-bin/koha/opac-detail.pl?biblionumber=12421',
+    note: 'University of Liberal Arts Bangladesh Library catalog record reviewed 23 September 2026: Bengali-language 143-page book, Biddaprokash, Dhaka, 2025, ISBN 9789849966975. The work itself was not consulted; the record and translated title alone do not establish genre, authorial standpoint, factual contents or representativeness. It is retained as a local-language bibliographic lead, not substantive evidence. No catalog text or book content is reproduced.',
+    accessDate: '2026-09-23', creators: ['Saynth Sakhawat'], institution: 'University of Liberal Arts Bangladesh Library',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'medium', languages: ['Bengali'],
+    sourceType: 'Bengali-language book library-catalog record (text not consulted)', identifiers: { isbn: '9789849966975', pages: '143', publisher: 'Biddaprokash', place: 'Dhaka', publicationDate: '2025', romanizedTitle: 'July gonoobhutthan o jeljibon' },
+    description: 'A university-library catalog documents a 2025 Bengali-language book with the translated title July Uprising and Prison Life. Because only catalog metadata was consulted, this source records a research lead rather than evidence about imprisonment or the uprising.'
+  },
+  {
+    id: 'bangladeshElectionCommissionAwamiLeagueSuspension2025',
+    label: 'Bangladesh Election Commission Secretariat — Gazette notice suspending Awami League registration (12 May 2025)',
+    url: 'https://www.dpp.gov.bd/upload_file/gazettes/57494_98364.pdf',
+    note: 'Official Bengali Gazette scan of Election Commission notice 17.00.0000.025.50.023.12-124, dated 12 May 2025 and published at Gazette page 4233. The Government Press archive title identifies suspension of the Awami League’s registration; the Election Commission’s current party page labels the party “Suspended.” The scan’s OCR is unreliable and provision-level Bengali legal review remains open. No scan or legal text is reproduced; the formal status does not establish the suspension’s legal merits, political support or members’ views.',
+    accessDate: '2026-09-23', creators: ['Bangladesh Election Commission Secretariat'], institution: 'Bangladesh Election Commission / Bangladesh Government Press',
+    publicationDate: '2025-05-12', evidenceRole: 'primary', confidence: 'high', languages: ['Bengali'],
+    sourceType: 'official gazette notice / political-party registration suspension', identifiers: { gazetteNotice: '17.00.0000.025.50.023.12-124', publicationDate: '2025-05-12', gazettePage: '4233' },
+    description: 'Primary institutional witness to the Election Commission’s formal suspension of the Awami League’s party registration in May 2025. It documents official status and the transition-era exclusion relevant to the 2026 election, not the contested legal, political or representational meaning of that measure.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
