@@ -10541,7 +10541,7 @@ export const BIBLIOGRAPHY_METADATA = {
     description: 'Book-length study of Sudan’s 1964 and 1985 civilian uprisings, using Arabic sources, interviews and archival materials to interpret civilian–military transitions and the relationship between Islamism and democratic politics. It supplies an attributed historical lens, not a complete 2019 revolution history.',
   },
   berridgeUnfinishedDemocracy2022: {
-    accessDate: '2026-09-20',
+    accessDate: '2026-09-23',
     creators: ['Willow Berridge', 'Alex de Waal', 'Justin Lynch', 'Raga Makawi'], institution: 'Oxford University Press',
     sourceType: 'book-length Sudanese revolution and transitional-politics history', evidenceRole: 'secondary', discipline: 'Sudanese constitutional, conflict and political history',
     publicationDate: '2022-08-01', publisher: 'Oxford University Press', identifiers: { isbn: '9780197657546', onlineIsbn: '9780197664506' }, confidence: 'high', languages: ['English'],
@@ -10560,6 +10560,37 @@ export const BIBLIOGRAPHY_METADATA = {
     sourceType: 'scholarly edited volume on constitutionalism and human rights', evidenceRole: 'secondary', discipline: 'Sudanese constitutional, conflict and political history',
     publicationDate: '2019', publisher: 'Routledge', identifiers: { isbn: '9781138652613' }, confidence: 'high', languages: ['English'],
     description: 'Scholarly edited volume on constitution-making, human rights, religion, minorities and legitimacy in Sudan and South Sudan. It supplies legal and constitutional perspectives, not proof that formal rights or settlements were uniformly implemented.',
+  },
+  crossUndoingRevolutionSudan2025: {
+    accessDate: '2026-09-23',
+    creators: ['Harry Cross'], institution: 'Hurst Publishers / African Arguments',
+    sourceType: 'book-length Sudanese political-economy monograph', evidenceRole: 'secondary', discipline: 'Sudanese constitutional, conflict and political history',
+    publicationDate: '2025', publisher: 'Hurst Publishers', identifiers: { isbn: '9781805263050', ebookIsbn: '9781805265122', pages: '216' }, confidence: 'medium', languages: ['English'],
+    description: 'A book-length study of Sudanese sovereign debt and economic policy from independence through the contemporary crisis. The publisher synopsis links the 2019 transition’s policy choices, debt and the 2021 coup; that framing is used as Cross’s attributed interpretation at synopsis level only, not as a comprehensive or independently verified account.',
+  },
+  sudanAuPscCoup2021: {
+    accessDate: '2026-09-23', creators: ['African Union Peace and Security Council'], institution: 'African Union',
+    sourceType: 'primary intergovernmental communiqué on Sudan’s transition', evidenceRole: 'primary', discipline: 'Sudanese constitutional, conflict and political history',
+    publicationDate: '2021-10-26', publisher: 'African Union Peace and Security Council', identifiers: { documentSymbol: 'PSC/PR/COMM.1041 (2021)', meeting: '1041st meeting' }, confidence: 'high', languages: ['English'],
+    description: 'Contemporaneous AU institutional record condemning the military seizure of power as an unconstitutional change, suspending Sudan’s participation in AU activities until civilian-led transitional authority was restored, and calling for adherence to the 2019 Constitutional Declaration and Juba Agreement. It records the AU’s position, not a court judgment or proof of implementation.',
+  },
+  sudanUnScPowerSharing2021: {
+    accessDate: '2026-09-23', creators: ['United Nations Security Council'], institution: 'United Nations',
+    sourceType: 'official Security Council meeting record / institutional coverage', evidenceRole: 'primary', discipline: 'Sudanese constitutional, conflict and political history',
+    publicationDate: '2021-12-10', publisher: 'United Nations Security Council', identifiers: { documentSymbol: 'SC/14730' }, confidence: 'high', languages: ['English'],
+    description: 'Contemporaneous UN record of the Council’s meeting on Sudan’s post-coup transition. It reports the 21 November Burhan–Hamdok agreement and includes distinct member-state and UN assessments; those statements do not constitute a complete legal analysis or establish broad domestic acceptance.',
+  },
+  sudanUnScFramework2022: {
+    accessDate: '2026-09-23', creators: ['United Nations Security Council'], institution: 'United Nations',
+    sourceType: 'official intergovernmental press statement on Sudan’s political process', evidenceRole: 'primary', discipline: 'Sudanese constitutional, conflict and political history',
+    publicationDate: '2022-12-08', publisher: 'United Nations Security Council', identifiers: { documentSymbol: 'SC/15132' }, confidence: 'high', languages: ['English'],
+    description: 'The Council welcomed the framework agreement while treating it as an essential step toward a proposed civilian-led transition, encouraging non-signatories to join and the signatories to address remaining issues and women’s participation. The statement documents UN positions and process expectations, not consensus or completed institutions.',
+  },
+  sudanAuPscStalemate2023: {
+    accessDate: '2026-09-23', creators: ['African Union Peace and Security Council'], institution: 'African Union',
+    sourceType: 'primary intergovernmental communiqué on Sudan’s political transition', evidenceRole: 'primary', discipline: 'Sudanese constitutional, conflict and political history',
+    publicationDate: '2023-02-06', publisher: 'African Union Peace and Security Council', identifiers: { documentSymbol: 'PSC/PR/COMM.1137 (2023)', meeting: '1137th meeting' }, confidence: 'high', languages: ['English'],
+    description: 'Contemporaneous AU institutional account that dates the transition stalemate, records the resignation of Abdalla Hamdok and failure to appoint a replacement, describes the proposed transition period under the December 2022 framework, and notes the January 2023 final-phase process. The AU’s description and requests do not prove agreement implementation or representativeness.',
   },
   algeriaFoundationalConstitutions: {
     accessDate: '2026-09-20', creators: ['Government of Algeria'], institution: 'Services du Premier Ministre algérien',

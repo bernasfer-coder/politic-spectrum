@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(156);
+  await expect(page.locator('.geo-card')).toHaveCount(157);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -57,7 +57,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(156);
+  await expect(page.locator('.geo-card')).toHaveCount(157);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -71,13 +71,15 @@ test('atlas cards and timeline are accessible and fit the viewport', async ({ pa
   expect(timelineResults.violations.filter(({ impact }) => ['critical', 'serious'].includes(impact))).toEqual([]);
 });
 
-test('Sudan’s 2023 war entry stays separate and date-bounded in the atlas', async ({ page }) => {
+test('Sudan’s post-coup transition and 2023 war stay separate and date-bounded in the atlas', async ({ page }) => {
   await page.goto('/#geography');
   await page.getByRole('combobox', { name: /Country/ }).selectOption('sudan');
   const cards = page.locator('.geo-card');
-  await expect(cards).toHaveCount(2);
+  await expect(cards).toHaveCount(3);
   await expect(cards.nth(0)).toContainText('1989–2021');
-  await expect(cards.nth(1)).toContainText('15 April 2023–7 September 2026');
-  await expect(cards.nth(1)).toContainText('not a current-country classification');
+  await expect(cards.nth(1)).toContainText('25 October 2021–14 April 2023');
+  await expect(cards.nth(1)).toContainText('not full-text reading');
+  await expect(cards.nth(2)).toContainText('15 April 2023–7 September 2026');
+  await expect(cards.nth(2)).toContainText('not a current-country classification');
   await expect(page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).resolves.toBe(true);
 });
