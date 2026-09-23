@@ -9106,6 +9106,126 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'unLibyaSGReportS2025611',
+    label: 'United Nations Secretary-General — Strategic review of the United Nations Support Mission in Libya (S/2025/611)',
+    url: 'https://digitallibrary.un.org/record/4090454/files/S_2025_611-EN.pdf',
+    note: 'United Nations Digital Library report consulted for the post-2021 national electoral impasse, institutional division and municipal election record. The report’s institutional account is attributed; no report wording, table, scan or PDF page is republished, and its account is not a representative survey of Libyan views.',
+    accessDate: '2026-09-23', creators: ['United Nations Secretary-General'], institution: 'United Nations Security Council / United Nations Digital Library',
+    publicationDate: '2025-09-30', evidenceRole: 'primary', confidence: 'high', languages: ['English; Arabic, Chinese, French, Russian and Spanish editions listed'],
+    sourceType: 'Secretary-General strategic review submitted to the Security Council / official institutional record', identifiers: { report: 'S/2025/611' },
+    description: 'Official strategic review describing the failure to hold national elections scheduled for December 2021, competing centers of power and municipal election rounds in 2024 and 2025. It is a dated UN institutional record and does not establish a national electoral mandate or public opinion.'
+  },
+  {
+    id: 'unLibyaSGReportS2026281',
+    label: 'United Nations Secretary-General — Report on the United Nations Support Mission in Libya (S/2026/281)',
+    url: 'https://digitallibrary.un.org/record/4108315/files/S_2026_281-EN.pdf',
+    note: 'UN report consulted for the 2025–2026 electoral-framework impasse and UNSMIL’s description of the smaller convening approach. No report wording, chart, scan or PDF page is republished; claims are attributed to the Secretary-General and bounded to the reporting period.',
+    accessDate: '2026-09-23', creators: ['United Nations Secretary-General'], institution: 'United Nations Security Council / United Nations Digital Library',
+    publicationDate: '2026-04-06', evidenceRole: 'primary', confidence: 'high', languages: ['English; Arabic, Chinese, French, Russian and Spanish editions listed'],
+    sourceType: 'Secretary-General report to the Security Council / official institutional record', identifiers: { report: 'S/2026/281' },
+    description: 'Dated institutional account of the UN-facilitated political process and the effort to resolve initial roadmap milestones through a smaller group after progress stalled. It documents the Mission’s process, not independent implementation evaluation or public consent.'
+  },
+  {
+    id: 'unLibyaSecurityCouncilBriefingAug2026',
+    label: 'United Nations Security Council — The situation in Libya, 10209th meeting (18 August 2026)',
+    url: 'https://transcripts.un.org/en/sc/10209',
+    note: 'Official meeting transcript consulted for Hanna Tetteh’s 18 August 2026 briefing on the three-pillar roadmap, the structured-dialogue endpoint and the remaining institutional milestones. Other speakers’ statements remain attributed to their governments; no transcript wording is reproduced.',
+    accessDate: '2026-09-23', creators: ['Hanna Serwaa Tetteh', 'United Nations Security Council'], institution: 'United Nations Official Document System / UN Meetings Coverage',
+    publicationDate: '2026-08-18', evidenceRole: 'primary', confidence: 'high', languages: ['English transcript'],
+    sourceType: 'official Security Council meeting transcript / diplomatic record', identifiers: { meeting: '10209' },
+    description: 'Primary institutional record of the Special Representative’s dated account of the UN roadmap’s election, structured-dialogue and executive-reunification pillars. It records a briefing and political positions rather than independent confirmation that planned steps have been implemented.'
+  },
+  {
+    id: 'unsmilLibyaSmallerConveningAgreement2026',
+    label: 'UNSMIL — Agreement on next steps towards national elections (30 August 2026)',
+    url: 'https://unsmil.unmissions.org/en/news/unsmil-welcomes-agreement-on-next-steps-towards-national-elections',
+    note: 'UNSMIL announcement consulted for the signing date and its description of proposed electoral-framework adjustments, a maximum 24-month election horizon and House of Representatives/High Council of State endorsement arrangements. This is the Mission’s announcement, not the full signed agreement; no agreement text is reconstructed or republished.',
+    accessDate: '2026-09-23', creators: ['United Nations Support Mission in Libya'], institution: 'UNSMIL',
+    publicationDate: '2026-08-30', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional notice; Arabic notice available'],
+    sourceType: 'official mediation-process announcement concerning a political agreement', identifiers: { eventDate: '2026-08-30' },
+    description: 'Official account of a Smaller Convening agreement addressing the first two roadmap milestones, including election-administration and legal-framework questions. Its terms are reported as provisions toward future action, not proof of legal enactment, complete endorsement or elections.'
+  },
+  {
+    id: 'unsmilLibyaHoREndorsement2026',
+    label: 'UNSMIL — House of Representatives’ endorsement of the Smaller Convening Agreement (15 September 2026)',
+    url: 'https://unsmil.unmissions.org/en/press-releases/unsmil-welcomes-house-of-representatives-endorsement-of-the-smaller-convening',
+    note: 'UNSMIL notice consulted for its report of House of Representatives endorsement at a 14 September session and an earlier joint statement by 103 members. This is the Mission’s account, not a House verbatim record; it does not establish High Council of State endorsement.',
+    accessDate: '2026-09-23', creators: ['United Nations Support Mission in Libya'], institution: 'UNSMIL',
+    publicationDate: '2026-09-15', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional notice; Arabic notice available'],
+    sourceType: 'official UN mediation mission statement about parliamentary action', identifiers: { eventDate: '2026-09-14' },
+    description: 'Dated notice reporting the House of Representatives’ endorsement of the Smaller Convening agreement. It is evidence of the Mission’s report of one chamber’s action, not proof of endorsement by both chambers or subsequent implementation.'
+  },
+  {
+    id: 'unsmilLibyaFollowupSep2026',
+    label: 'UNSMIL — Smaller Convening meets in Tunis to advance implementation (20 September 2026)',
+    url: 'https://unsmil.unmissions.org/en/news/smaller-convening-meets-in-tunis-to-advance-implementation-of-their-agreement',
+    note: 'UNSMIL follow-up notice consulted for the ninth meeting, participants’ stated commitment, reported House and Security Council support, continued outreach and planned early-October follow-up. It is an official Mission account of the meeting, not evidence that the agreement was implemented or that every stakeholder endorsed it.',
+    accessDate: '2026-09-23', creators: ['United Nations Support Mission in Libya'], institution: 'UNSMIL',
+    publicationDate: '2026-09-20', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional notice; Arabic notice available'],
+    sourceType: 'official mediation-process meeting notice', identifiers: { eventDate: '2026-09-20', evidenceCutoff: '2026-09-21' },
+    description: 'Most recent reviewed process notice for the case cutoff: members met to follow up implementation, reaffirmed their stated commitment and planned another meeting. The account documents continuing process activity rather than a national election, unified executive or completed settlement.'
+  },
+  {
+    id: 'hnecLibyaMunicipalResultsPortal',
+    label: 'Libya High National Elections Commission — Municipal election results portal',
+    url: 'https://results.hnec.ly/',
+    note: 'Official HNEC portal consulted for its separate 2024, 2025 and 2026 municipal-election result sections. Individual results are municipality-specific; the portal is not a national-election result and must not be treated as evidence of national executive unification.',
+    accessDate: '2026-09-23', creators: ['High National Elections Commission of Libya'], institution: 'High National Elections Commission of Libya',
+    publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['Arabic official portal'],
+    sourceType: 'official election-administration results portal', identifiers: { scope: 'municipal elections, 2024–2026' },
+    description: 'Primary administrative portal presenting municipal-election results in distinct annual and municipality-specific sections. It supports the existence of local electoral processes only where a particular result is documented, not a country-wide electoral mandate.'
+  },
+  {
+    id: 'worldBankLibyaEconomicMonitor2025',
+    label: 'World Bank — Libya Economic Monitor: Setting the Path towards Accountability and Transparency in Public Financial Management (December 2025)',
+    url: 'https://www.worldbank.org/en/news/press-release/2025/12/17/libya-sustained-strong-growth-requires-structural-change-to-improve-transparency-and-public-financial-management',
+    note: 'World Bank press release and cited Economic Monitor summary consulted for the dated 2025 macroeconomic projection and public-finance analysis. The 13.3 percent real-GDP figure is a projection made in December 2025, not a final measured result; no report tables or wording are republished.',
+    accessDate: '2026-09-23', creators: ['World Bank'], institution: 'World Bank',
+    publicationDate: '2025-12-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional country economic monitor / policy analysis', identifiers: { report: 'Libya Economic Monitor, December 2025' },
+    description: 'World Bank assessment of an oil-led recovery projection alongside fragmented budgets, weak fiscal discipline, transparency and service-delivery risks. It supplies macro-fiscal analysis, not household-level distribution, a national political survey or proof that a proposed fiscal reform was implemented.'
+  },
+  {
+    id: 'selmiLibyaTransition2025',
+    label: 'Noureddine Selmi — Libya in transition: governance challenges and civil society’s prospects in political and economic reforms (2025)',
+    url: 'https://doi.org/10.1080/23779497.2025.2449614',
+    note: 'The journal article’s bibliographic page, abstract, research methods and selected sections consulted. It reports qualitative meetings/discussions and 32 interviews conducted in late 2023 and early 2024; its purposive, bounded respondent group is not a probability sample or a national measure of Libyan opinion. No article wording or figure is republished.',
+    accessDate: '2026-09-23', creators: ['Noureddine Selmi'], institution: 'Global Security: Health, Science and Policy / Taylor & Francis',
+    publicationDate: '2025-01-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'journal research article using qualitative field research and interviews', identifiers: { doi: '10.1080/23779497.2025.2449614', volume: '10', issue: '1' },
+    description: 'A bounded qualitative study of governance, civil society and reform prospects, drawing on earlier field meetings and 32 interviews from 2023–2024. It adds situated participant perspectives but predates the 2026 agreement and cannot establish broad representativeness or later implementation.'
+  },
+  {
+    id: 'libyaWilliamsSinceQaddafi2025',
+    label: 'Stephanie T. Williams — Libya Since Qaddafi: Chaos and the Search for Peace (2025)',
+    url: 'https://academic.oup.com/book/61592',
+    note: 'Oxford University Press publisher book page, contents and chapter description consulted for bibliographic metadata and scope. The book is by a former UN mediator and senior U.S. diplomat; its full text was not independently reviewed, so its account is not used as a substitute for the dated UN records or as a complete 2021–2026 history.',
+    accessDate: '2026-09-23', creators: ['Stephanie T. Williams'], institution: 'Oxford University Press',
+    publicationDate: '2025-07-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history by a diplomatic participant', identifiers: { isbn: '9780197824955', onlineIsbn: '9780197828755', doi: '10.1093/oso/9780197824955.001.0001' },
+    description: 'Publisher-described account of Libya after Qaddafi, with a chapter on the 2021 election postponement and peace efforts. Its publication and participant perspective provide historical context; the reviewed record does not establish later agreement implementation.'
+  },
+  {
+    id: 'libyaSawaniUnfinishedTransformation2026',
+    label: 'Youssef Mohammad Sawani — Libya’s Struggle and Unfinished Transformation: Monarchy, Dictatorship, the Reform Dilemma, and the Betrayal of R2P (2026)',
+    url: 'https://link.springer.com/book/10.1007/978-3-032-22399-9',
+    note: 'Palgrave Macmillan/Springer publisher record, contents and front matter consulted for metadata and the author’s framing; no substantive chapter was reviewed. No book text, quotation, table or image is republished. It is recorded as a current book-length research lead, not as evidence for particular post-2021 events.',
+    accessDate: '2026-09-23', creators: ['Youssef Mohammad Sawani'], institution: 'Palgrave Macmillan / Springer Nature',
+    publicationDate: '2026-08-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length modern Libyan political history', identifiers: { isbn: '9783032223982', ebookIsbn: '9783032223999', doi: '10.1007/978-3-032-22399-9', pages: '356' },
+    description: 'Publisher-described modern history spanning monarchy, Qaddafi rule and post-2011 transformation, including a chapter titled “A Country in Crisis.” The bibliographic record and front matter alone do not verify chapter claims or supply a fully researched account of the 2021–2026 process.'
+  },
+  {
+    id: 'libyaELGamomSequencing2026',
+    label: 'Kamal Mustafa EL Gamom — The Problematic of Rebuilding the Fragile State in Post-2011 Libya: The Dialectic of Security, Democratic Transition, and Economic Reform (2026)',
+    url: 'https://doi.org/10.65405/z1sp0j35',
+    note: 'Publisher article page consulted for its English-rendered title, abstract, bibliographic metadata and listed references; the article is in Arabic and its full text was not reviewed. The abstract describes a documentary single-case approach and advances a security-first sequencing argument. Recorded as one attributed interpretation, not a consensus or demonstrated causal law. No article text, table or image is reproduced; the page states a CC BY 4.0 license.',
+    accessDate: '2026-09-23', creators: ['Kamal Mustafa EL Gamom'], institution: 'Comprehensive Journal of Science / University of Zawiya',
+    publicationDate: '2026-08-27', evidenceRole: 'secondary', confidence: 'medium', languages: ['Arabic; English title and abstract on publisher page'],
+    sourceType: 'Arabic-language political-science journal article (documentary single-case interpretation)', identifiers: { doi: '10.65405/z1sp0j35', volume: '11', issue: 'Supplement 41', pages: '2671–2686' },
+    description: 'A current Arabic-language argument about state reconstruction, security, democratic transition and economic reform. Its abstract presents a security-first sequence; neither that normative thesis nor its background claims are treated here as settled scholarship or as evidence of implementation of the 2026 roadmap.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9139,6 +9259,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
          : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('longTantricStateBhutan') || source.id.startsWith('rizalRoyalSemiauthoritarianBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
       : source.id.startsWith('afghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') ? 'Afghan constitutional, conflict and political history'
       : source.id.startsWith('nepal') || source.id.startsWith('whelptonHistoryNepal') || source.id.startsWith('huttHimalayanPeoplesWar') || source.id.startsWith('malagodiConstitutionalNationalismNepal') || source.id.startsWith('huttOntaPublicCultureNepal') || source.id.startsWith('ghaiCottrellNepal') ? 'Nepalese constitutional, conflict and political history'
+      : source.id.startsWith('libya') || source.id.startsWith('unLibya') || source.id.startsWith('unsmilLibya') || source.id.startsWith('hnecLibya') || source.id.startsWith('worldBankLibya') || source.id.startsWith('selmiLibya') ? 'Libyan constitutional, conflict and political history'
       : source.id.startsWith('sudan') || source.id.startsWith('woodwardSudan') || source.id.startsWith('berridgeCivilUprisingsSudan') || source.id.startsWith('berridgeUnfinishedDemocracy') || source.id.startsWith('deWaalRealPoliticsHorn') || source.id.startsWith('oetteBabikerConstitutionMaking') ? 'Sudanese constitutional, conflict and political history'
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
       : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
