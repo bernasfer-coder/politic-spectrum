@@ -9312,6 +9312,108 @@ const sources = [
   },
 ];
 
+sources.push(
+  {
+    id: 'syriaPostAssadDeclaration2025',
+    label: 'Syrian Arab Republic — Constitutional Declaration (13 March 2025; SyrianMemory archive of Presidential source)',
+    url: 'https://www.syrianmemory.org/archive/documents/67d431c2393d23527c78025d',
+    note: 'SyrianMemory catalog record and Arabic primary text attributed to the Presidency consulted for independent synthesis and link only. No constitutional wording, translation, image, scan or page extract is republished; formal provisions are not treated as evidence of implementation, consent or rights practice.',
+    accessDate: '2026-09-23', creators: ['Presidency of the Syrian Arab Republic'], institution: 'SyrianMemory Archive', publicationDate: '2025-03-13', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'original interim constitutional declaration / primary legal text', identifiers: { archiveCode: 'SMI/A200/989812', issued: '2025-03-13' },
+    description: 'The Presidency-issued Arabic Constitutional Declaration for the interim period. It records formal provisions on state unity, rights, religious status, legislative selection, presidential authority, judicial institutions and the five-year transition, not their implementation or representativeness.'
+  },
+  {
+    id: 'syriaPostAssadSanaDeclaration2025',
+    label: 'Syrian Arab News Agency (SANA) — President signs draft Constitutional Declaration (13 March 2025)',
+    url: 'https://sana.sy/uncategorized/2198040/',
+    note: 'Official Syrian state news-agency report consulted as a dated account of the signing and the expert committee’s public description; link and original summary only. No Arabic or translated report wording, image or scan is republished, and official self-description is not independent evaluation.',
+    accessDate: '2026-09-23', creators: ['Syrian Arab News Agency'], institution: 'Syrian Arab News Agency / Syrian Ministry of Information', publicationDate: '2025-03-13', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official news-agency account of constitutional declaration signing', identifiers: { eventDate: '2025-03-13' },
+    description: 'An official account of the interim president signing the declaration and the expert committee describing the intended five-year transition, Assembly, rights provisions and presidential executive authority. It records the government’s presentation, not independent assessment.'
+  },
+  {
+    id: 'syriaPostAssadPomepsStudies572025',
+    label: 'André Bank, Marc Lynch and Wendy Pearlman (eds.) — POMEPS Studies 57: Syria After Assad (December 2025)',
+    url: 'https://pomeps.org/pomeps-studies-57-syria-after-assad',
+    note: 'POMEPS publisher page and complete 106-page PDF consulted for original attributed synthesis and link only. No chapter wording, quotation, table, image or scan is republished; the thirteen contributions are individually situated rather than a single settled scholarly position.',
+    accessDate: '2026-09-23', creators: ['André Bank', 'Marc Lynch', 'Wendy Pearlman'], institution: 'Project on Middle East Political Science (POMEPS)', publicationDate: '2025-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume / multi-author political-studies collection', identifiers: { series: 'POMEPS Studies', number: '57', pages: '106', contributions: '13' },
+    description: 'A thirteen-paper scholarly collection by emerging scholars, many Syrian and with prior Syria research, on state consolidation, local governance, violence, displacement, transitional justice, security-sector reform and recovery. The introduction cautions that post-Assad does not mean post-war and that experiences differ by locality and community.'
+  },
+  {
+    id: 'syriaPostAssadSapag2025',
+    label: 'Pablo Sapag M. — Siria en perspectiva: De una crisis internacionalmente mediatizada a la reestructuración del Estado (3rd ed., 2025)',
+    url: 'https://www.ucm.es/ediciones-complutense/siria-en-perspectiva-de-una-crisis',
+    note: 'Ediciones Complutense publisher metadata and four-page opening sample consulted; the 350-page Spanish-language third edition includes events from late 2024. The complete book was not read. Its publisher description and opening framing are identified as the author’s account, not independent consensus; no book wording, image or scan is republished.',
+    accessDate: '2026-09-23', creators: ['Pablo Sapag M.'], institution: 'Ediciones Complutense, Universidad Complutense de Madrid', publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length Spanish-language political and communication history / updated monograph', identifiers: { isbn: '978-84-669-3924-9', pdfIsbn: '978-84-669-3925-6', pages: '350', edition: '3rd, revised' },
+    description: 'A substantially revised Spanish-language monograph that the publisher says includes the late-2024 regime change and first transition steps, set within a longer political, military, media and multi-confessional account. Only publisher metadata and the opening sample were consulted; it is an identified but not fully read book-level perspective.'
+  },
+  {
+    id: 'syriaPostAssadDiis2025',
+    label: 'Hetav Rojan — Syria in Transition: Mapping the Local and Transnational Actors Shaping Politics in Syria (DIIS Report 2025:08)',
+    url: 'https://pure.diis.dk/ws/files/27781088/Syria_in_transition_DIIS_Report_2025_08.pdf',
+    note: 'DIIS publisher PDF consulted for the report’s abstract, introduction, actor mapping and selected sections; all data are explicitly current only to 26 June 2025. The project publishes original synthesis and a link only, not the report, maps, images or tables; one private research copy is not permission to redistribute.',
+    accessDate: '2026-09-23', creators: ['Hetav Rojan'], institution: 'Danish Institute for International Studies (DIIS)', publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional field-mapping report on Syrian political and military actors', identifiers: { report: 'DIIS Report 2025:08', isbnPrint: '978-87-7236-197-0', isbnPdf: '978-87-7236-198-7', pages: '101', dataCutoff: '2025-06-26' },
+    description: 'A field guide mapping the central interim government, Kurdish-led northeast, Suwayda and transnational actors and their competing political orders, with data current to 26 June 2025. It is an institutional report rather than a book-length national history or a current account of 2026 integration.'
+  },
+  {
+    id: 'syriaPostAssadIdea2026',
+    label: 'Zaid Al-Ali — Syria at a Crossroads: Enhancing Inclusiveness in a Highly Centralized Political Transition (International IDEA Policy Brief, April 2026)',
+    url: 'https://www.idea.int/publications/catalogue/html/syria-crossroads-enhancing-inclusiveness-highly-centralized-political',
+    note: 'International IDEA page and policy brief consulted for original attributed synthesis and link only. No policy-brief wording, table, diagram or PDF page is republished; its assessment and scenarios are the author’s policy analysis rather than neutral measurement or consensus.',
+    accessDate: '2026-09-23', creators: ['Zaid Al-Ali'], institution: 'International IDEA', publicationDate: '2026-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'policy brief on constitutional process, presidential prerogatives and inclusion', identifiers: { doi: '10.31752/81713', isbn: '978-91-8137-149-9', pages: '13' },
+    description: 'A policy analysis of a highly centralized transition, constitutional-process design, civil-society participation and checks and balances. It recommends pathways for inclusion and is an attributed assessment, not an official record or consensus finding.'
+  },
+  {
+    id: 'syriaPostAssadToda2026',
+    label: 'Layla Saleh — Syria’s Political Transition: Towards a New Personalist Politics? (Toda Peace Institute Report 323, 21 September 2026)',
+    url: 'https://toda.org/publications/policy-briefs-and-reports/syrias-political-transition-towards-a-new-personalist-politics/',
+    note: 'Toda landing page and 11-page report consulted for original attributed synthesis and link only. No report wording, chart, image or PDF page is republished; the “personalist politics” thesis is Saleh’s analysis, not a measured score or scholarly consensus.',
+    accessDate: '2026-09-23', creators: ['Layla Saleh'], institution: 'Toda Peace Institute', publicationDate: '2026-09-21', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional policy report on post-Assad institutionalization and centralization', identifiers: { report: '323', pages: '11' },
+    description: 'A recent policy report evaluating institution-building against the March 2025 declaration and arguing that presidential decrees and appointment powers point toward an increasingly centralized, personalist order. This is an explicitly attributed interpretation.'
+  },
+  {
+    id: 'syriaPostAssadCommons2026',
+    label: 'Philip Loft — Syria in 2026: Interim Government and Kurdish Integration (House of Commons Library, CBP-10430, 2 September 2026)',
+    url: 'https://commonslibrary.parliament.uk/research-briefings/cbp-10430/',
+    note: 'UK House of Commons Library briefing consulted as a secondary synthesis and link only. Its summary dates the first Assembly meeting to June 2026, which conflicts with contemporaneous SANA and Associated Press accounts placing the inaugural sitting on 12 July; this case uses the latter date and the briefing only for other qualified reporting.',
+    accessDate: '2026-09-23', creators: ['Philip Loft'], institution: 'House of Commons Library, UK Parliament', publicationDate: '2026-09-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'parliamentary research briefing on Syria’s interim institutions and Kurdish integration', identifiers: { briefing: 'CBP-10430' },
+    description: 'A current parliamentary research briefing on the interim government, legislative selection, representation and 2026 Kurdish integration. The source contains a June/July first-session dating discrepancy; use it with the contemporaneous official and independent accounts cited alongside it.'
+  },
+  {
+    id: 'syriaPostAssadSanaAssemblySession2026',
+    label: 'Syrian Arab News Agency (SANA) — First session of the People’s Assembly opens (12 July 2026)',
+    url: 'https://sana.sy/peoples-assembly/2525096/',
+    note: 'Official Syrian news-agency account of the Assembly’s opening session and stated transitional functions consulted as a dated event record and link only. It represents an official account; no speech, proceeding, image or transcript is republished, and it does not establish independent representativeness.',
+    accessDate: '2026-09-23', creators: ['Syrian Arab News Agency'], institution: 'Syrian Arab News Agency / Syrian Ministry of Information', publicationDate: '2026-07-12', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official event record of the first interim People’s Assembly sitting', identifiers: { eventDate: '2026-07-12' },
+    description: 'An official report that the People’s Assembly held its first session in Damascus on 12 July 2026. It records the publicly announced institutional event and formal transition setting, not whether the legislature is representative or exercises independent oversight.'
+  },
+  {
+    id: 'syriaPostAssadAPAssemblySession2026',
+    label: 'Associated Press — Syria’s New Parliament Holds First Session Since Ouster of Ex-President Assad (12 July 2026)',
+    url: 'https://apnews.com/article/6be4ad499015beefcf40d47215bd75a7',
+    note: 'Associated Press contemporaneous reporting consulted as independent secondary corroboration of the 12 July inaugural session and electoral-college/appointment structure; link and original synthesis only. No AP wording, photographs or newswire copy are republished.',
+    accessDate: '2026-09-23', creators: ['Associated Press'], institution: 'Associated Press', publicationDate: '2026-07-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report on the interim parliament’s inaugural sitting', identifiers: { eventDate: '2026-07-12' },
+    description: 'Independent contemporaneous reporting that the interim parliament held its first session on 12 July 2026 and that two-thirds of its 210 seats were selected through electoral colleges while one-third were appointed by the interim president. It does not evaluate the full quality or representativeness of the process.'
+  },
+  {
+    id: 'syriaPostAssadAPIntegration2026',
+    label: 'Ghaith Alsayed and Abby Sewell — Kurdish-led Syrian Democratic Forces Group Says It Has Dissolved after Merging with the Syrian Army (Associated Press, 26 August 2026)',
+    url: 'https://apnews.com/article/syrian-democratic-forces-dissolution-mazloum-abdi-1b7d210c96d2c608007b0411db25f453',
+    note: 'Associated Press report consulted as contemporary secondary reporting of Mazloum Abdi’s public announcement; the stated merger is attributed to the speaker and not independently treated as proof that implementation is complete. Link and original synthesis only; no AP wording or photographs are republished.',
+    accessDate: '2026-09-23', creators: ['Ghaith Alsayed', 'Abby Sewell'], institution: 'Associated Press', publicationDate: '2026-08-26', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'news report on the public announcement of Syrian Democratic Forces dissolution and integration', identifiers: { eventDate: '2026-08-26' },
+    description: 'Reports that SDF commander Mazloum Abdi announced at a Damascus news conference that the force had merged with the Syrian army and would no longer operate independently. This is evidence of a dated announcement, not a completed independent audit of military or local-administration integration.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
