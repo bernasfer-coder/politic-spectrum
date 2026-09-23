@@ -9513,6 +9513,132 @@ sources.push(
     accessDate: '2026-09-23', creators: ['Tim Zick'], institution: 'Carolina Academic Press', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'book-length scholarly legal study / classroom monograph on executive power and First Amendment controversies', identifiers: { isbn: '978-1-5310-3493-1', ebookIsbn: '978-1-5310-3494-8', pages: '252' },
     description: 'The sampled contents map a doctrinal overview and chapters on retaliation, executive orders and official orthodoxies, higher education, immigration enforcement, press freedom, and information flow. This establishes the book’s topical architecture, not its substantive findings; the accessible sample’s foreword is by Ronald K. L. Collins, not Zick’s own analysis.'
   },
+  {
+    id: 'haitiPostAssassinationDupuy2024',
+    label: 'Alex Dupuy — Haiti since 1804: Critical Perspectives on Class, Power, and Gender (2024)',
+    url: 'https://www.bloomsbury.com/us/haiti-since-1804-9781538188255/',
+    note: 'Bloomsbury/Rowman & Littlefield publisher metadata and table of contents consulted: first edition, 6 February 2024, 170 pages, ISBN 9781538188255. Chapter 4 is titled “Whither Haiti After Moïse?”; that chapter and the complete book were not read. Link and original description only; no copyrighted text or excerpt is republished, and the publisher’s framing is not treated as independent verification.',
+    accessDate: '2026-09-23', creators: ['Alex Dupuy'], institution: 'Rowman & Littlefield / Bloomsbury Publishing', publicationDate: '2024-02-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly political-economy monograph', identifiers: { isbn: '9781538188255', pages: '170', edition: 'First edition' },
+    description: 'The publisher presents a political-economy history centered on class, power and gender and lists a chapter on Haiti after Moïse. The case records the bibliographic relevance while explicitly withholding claims about arguments in a chapter that was not consulted.'
+  },
+  {
+    id: 'haitiPostAssassinationJohnston2024',
+    label: 'Jake Johnston — Aid State: Elite Panic, Disaster Capitalism, and the Battle to Control Haiti (2024)',
+    url: 'https://cepr.net/books/aid-state/',
+    note: 'CEPR and Macmillan publisher records consulted for title, author and 2024 publication metadata; the description characterizes the book as based on field reporting and interviews. The full book was not read; link and attributed publisher description only, not independent scholarly corroboration or a neutral consensus.',
+    accessDate: '2026-09-23', creators: ['Jake Johnston'], institution: 'Center for Economic and Policy Research / St. Martin’s Press', publicationDate: '2024-01-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length reported political and aid history', identifiers: { isbn: '9781250284679' },
+    description: 'Johnston’s book uses reported interviews and field research to examine Haiti’s aid and international political economy, including the 2021 assassination-era crisis. Its distinct reported-witness approach is not equated with a peer-reviewed monograph, and its full argument was not consulted for this case.'
+  },
+  {
+    id: 'haitiPostAssassinationFatton2025',
+    label: 'Robert Fatton Jr. — “Crisis and Institutional Collapse in Haiti” (2025)',
+    url: 'https://online.ucpress.edu/currenthistory/article-abstract/124/859/48/205393/Crisis-and-Institutional-Collapse-in-Haiti',
+    note: 'University of California Press abstract and article metadata consulted for the peer-reviewed essay in Current History 124(859), February 2025, pp. 48–53, DOI 10.1525/curh.2025.124.859.48. Full article text was not consulted; no copyrighted wording is reproduced.',
+    accessDate: '2026-09-23', creators: ['Robert Fatton Jr.'], institution: 'Current History / University of California Press', publicationDate: '2025-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed political-science review article', identifiers: { doi: '10.1525/curh.2025.124.859.48', volume: '124', issue: '859', pages: '48–53' },
+    description: 'A peer-reviewed analysis of the Haitian institutional crisis. Only its abstract and bibliographic record were consulted; it is a relevant secondary lead, not a substitute for full-text reading or a book-length history.'
+  },
+  {
+    id: 'haitiPostAssassinationICG2025',
+    label: 'International Crisis Group — Locked in Transition: Politics and Violence in Haiti (2025)',
+    url: 'https://www.jstor.org/stable/resrep67796',
+    note: 'International Crisis Group report dated 19 February 2025, 43 pages; the report was consulted for its transition chronology and analysis. It is policy research with its own recommendations and institutional standpoint, not a book-length monograph or neutral adjudication; link and original paraphrase only.',
+    accessDate: '2026-09-23', creators: ['International Crisis Group'], institution: 'International Crisis Group', publicationDate: '2025-02-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional conflict-analysis report', identifiers: { pages: '43', reportDate: '2025-02-19' },
+    description: 'Policy analysis of Haiti’s post-assassination interim politics and violence, including the 2024 transitional arrangement. Its account is attributed to the organization and supplies context rather than a full social or national history.'
+  },
+  {
+    id: 'haitiPostAssassinationChathamHouse2026',
+    label: 'Roberta Maggi, Christopher Sabatini and Alexandra Farsari — A Roadmap for Security and Governance Reform in Haiti (2026)',
+    url: 'https://www.chathamhouse.org/2026/01/roadmap-security-and-governance-reform-haiti',
+    note: 'Chatham House research paper published 22 January and updated 5 May 2026 (ISBN 9781784136703); report and recommendations consulted. It is policy analysis rather than a peer-reviewed book or evidence that its proposed Haitian-led reforms were implemented. No report text, chart or image is reproduced.',
+    accessDate: '2026-09-23', creators: ['Roberta Maggi', 'Christopher Sabatini', 'Alexandra Farsari'], institution: 'Chatham House', publicationDate: '2026-01-22', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional security and governance policy research paper', identifiers: { isbn: '9781784136703', updated: '2026-05-05' },
+    description: 'The authors propose sequenced, Haitian-led security and governance reforms with international support and discuss the TPC mandate and election conditions. Recommendations are attributed proposals, not an implemented programme or a measure of Haitian public opinion.'
+  },
+  {
+    id: 'haitiTransitionCaricomDeclaration2024',
+    label: 'CARICOM — Outcome Declaration of the Conference on Haiti (11 March 2024)',
+    url: 'https://caricom.org/outcome-declaration-of-caricom-international-partners-and-haitian-stakeholders/',
+    note: 'CARICOM’s published declaration consulted as a primary record of the facilitator’s and participating stakeholders’ announced transitional framework. It does not establish that all Haitian political actors or communities participated, agreed or were represented; no document text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Caribbean Community (CARICOM)'], institution: 'CARICOM', publicationDate: '2024-03-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary diplomatic outcome declaration', identifiers: { date: '2024-03-11' },
+    description: 'The declaration records a CARICOM-facilitated arrangement proposed by participating Haitian stakeholders and partners, including a transitional council, government, security coordination and electoral preparation. It is evidence of an agreement process, not consensus or implementation.'
+  },
+  {
+    id: 'haitiTransitionAccord2024',
+    label: 'Haitian Political Accord for a Peaceful and Orderly Transition (3 April 2024)',
+    url: 'https://www.haitilibre.com/docs/accord-politique-pour-une-transition-pacifique-et-ordonnee.pdf',
+    note: 'The French-language signed political accord is linked through a copy hosted by HaitiLibre; the UN Panel of Experts report cites the accord in its transition chronology. This is a signatory political text, not legislation, evidence of universal consent or proof of implementation. No text or scan is reproduced.',
+    accessDate: '2026-09-23', creators: ['Signatories to the Haitian Political Accord'], institution: 'Haitian political signatories (copy hosted by HaitiLibre)', publicationDate: '2024-04-03', evidenceRole: 'primary', confidence: 'medium', languages: ['French'],
+    sourceType: 'primary political agreement (signatory text)', identifiers: { date: '2024-04-03' },
+    description: 'The accord documents commitments among its signatories on a peaceful transitional process. Its signatory scope and third-party-hosted copy are kept visible; it is not treated as law or as representative of every Haitian political current.'
+  },
+  {
+    id: 'haitiTransitionUnPanel2024',
+    label: 'United Nations Panel of Experts on Haiti — Final report, S/2024/704 (2024)',
+    url: 'https://docs.un.org/en/S/2024/704',
+    note: 'United Nations Security Council Panel of Experts report consulted as an official institutional record and link only. Its mandate and findings are attributed to the Panel; no report wording, table or image is reproduced.',
+    accessDate: '2026-09-23', creators: ['United Nations Security Council Panel of Experts on Haiti'], institution: 'United Nations', publicationDate: '2024', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary UN expert-panel report', identifiers: { symbol: 'S/2024/704' },
+    description: 'The report supplies a documented chronology of Haiti’s transitional arrangements and references the 2024 political texts. It is an institutional report with a defined mandate, not a complete political history or evidence of agreement beyond named participants.'
+  },
+  {
+    id: 'haitiTransitionNationalPact2026',
+    label: 'Pacte national pour la stabilité et l’organisation des élections (National Pact, February 2026)',
+    url: 'https://www.haitilibre.com/docs/pacte-national-pour-stabilite-et-organisation-elections.pdf',
+    note: 'French-language signatory pact, identified as Le Moniteur, Special No. 7; the linked copy is hosted by HaitiLibre, while the UN Secretary-General’s April 2026 report independently records its presentation, signatories and non-signatories. It is a political pact, not legislation or proof of national consensus. No wording or scan is reproduced.',
+    accessDate: '2026-09-23', creators: ['National Pact signatories'], institution: 'Le Moniteur (copy hosted by HaitiLibre)', publicationDate: '2026-02', evidenceRole: 'primary', confidence: 'medium', languages: ['French'],
+    sourceType: 'primary political pact (signatory document)', identifiers: { gazette: 'Le Moniteur, Special No. 7', date: '2026-02' },
+    description: 'The pact records goals for stability and electoral organization among its signatories. UN reporting identifies actors that did not sign and describes their concerns, so the pact is not a proxy for broad or unanimous political agreement.'
+  },
+  {
+    id: 'haitiTransitionUnApr2026',
+    label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/325 (14 April 2026)',
+    url: 'https://docs.un.org/en/S/2026/325',
+    note: 'Official Secretary-General/BINUH report consulted for the dated TPC mandate, executive transfer, constitutional claims and National Pact process. Institutional descriptions and attributed actor positions are kept distinct; no report text or table is reproduced.',
+    accessDate: '2026-09-23', creators: ['United Nations Secretary-General', 'United Nations Integrated Office in Haiti (BINUH)'], institution: 'United Nations', publicationDate: '2026-04-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary UN Secretary-General mission report', identifiers: { symbol: 'S/2026/325' },
+    description: 'The report documents the TPC mandate ending 7 February 2026, the Council of Ministers’ subsequent assertion of executive authority and disagreement over constitutional interpretation, plus the National Pact’s signatory and non-signatory process. It is a dated UN account, not adjudication of the legal dispute.'
+  },
+  {
+    id: 'haitiTransitionUnJul2026',
+    label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/574 (14 July 2026)',
+    url: 'https://docs.un.org/en/S/2026/574',
+    note: 'Official Secretary-General/BINUH report consulted for revised electoral rules, disagreement about CEP independence and the electoral timetable as of July 2026. The UN’s account is dated and attributed, not a full audit of Haitian institutions; no text or chart is reproduced.',
+    accessDate: '2026-09-23', creators: ['United Nations Secretary-General', 'United Nations Integrated Office in Haiti (BINUH)'], institution: 'United Nations', publicationDate: '2026-07-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary UN Secretary-General mission report', identifiers: { symbol: 'S/2026/574' },
+    description: 'The report records the electoral decree and calendar still under review and describes disputes around revisions and electoral-administration independence. It does not establish that the planned election occurred.'
+  },
+  {
+    id: 'haitiTransitionCepLegal2026',
+    label: 'Conseil Électoral Provisoire — Legal framework: 2 June 2026 electoral decree and 2 July amendment',
+    url: 'https://cephaiti.ht/cadre-legal/',
+    note: 'Official French-language CEP legal-framework page consulted as a primary record of the electoral decrees and the council’s formal remit. The page is the electoral authority’s own record, not independent assessment of institutional independence or implementation; no legal wording is reproduced.',
+    accessDate: '2026-09-23', creators: ['Conseil Électoral Provisoire (CEP)'], institution: 'Conseil Électoral Provisoire', publicationDate: '2026-07-02', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral legal framework and official record', identifiers: { decreeDate: '2026-06-02', amendmentDate: '2026-07-02' },
+    description: 'The CEP identifies the June decree as the legal framework for general-election organization and records its modification on 2 July 2026. The page describes formal provisions, not their execution, perceived independence or electoral fairness.'
+  },
+  {
+    id: 'haitiTransitionCepStatus2026',
+    label: 'Conseil Électoral Provisoire — Electoral-process status update (21 September 2026)',
+    url: 'https://cephaiti.ht/etat-davancement-du-processus-electoral-a-date/',
+    note: 'Official CEP press note dated 21 September 2026 consulted as a first-party operational snapshot. The council’s claims about registration centers and preparation are not independently audited; no tables, wording, translation or images are reproduced.',
+    accessDate: '2026-09-23', creators: ['Conseil Électoral Provisoire (CEP)'], institution: 'Conseil Électoral Provisoire', publicationDate: '2026-09-21', evidenceRole: 'primary', confidence: 'high', languages: ['French', 'Haitian Creole'],
+    sourceType: 'primary election-administration status report', identifiers: { reportDate: '2026-09-21' },
+    description: 'The CEP reports voter registration continuing, 1,285 registration/voting centers operational and candidate registration and filing still underway. It describes preparation, not a completed vote, independent observation or verified national participation.'
+  },
+  {
+    id: 'haitiTransitionCepNote602026',
+    label: 'Conseil Électoral Provisoire — Note de presse 60 (16 September 2026)',
+    url: 'https://cephaiti.ht/note-de-presse-60-16-septembre-2026/',
+    note: 'Official French-language CEP note consulted as a dated statement of the candidate-filing extension and continuing discussions with political actors and government about modifying the electoral decree. It is the institution’s statement, not evidence of the talks’ outcome or stakeholder consensus.',
+    accessDate: '2026-09-23', creators: ['Conseil Électoral Provisoire (CEP)'], institution: 'Conseil Électoral Provisoire', publicationDate: '2026-09-16', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral-administration press statement', identifiers: { note: '60', reportDate: '2026-09-16' },
+    description: 'The CEP says the deadline was extended to 9 October 2026 at the request of registered political groupings and that discussions on possible modification of the electoral decree continued. It does not establish a final revised calendar or agreement.'
+  },
 );
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));

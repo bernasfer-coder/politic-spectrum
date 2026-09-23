@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(160);
+  await expect(page.locator('.geo-card')).toHaveCount(161);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -57,7 +57,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(160);
+  await expect(page.locator('.geo-card')).toHaveCount(161);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -83,6 +83,26 @@ test('United States 2025–2026 executive-power case is separately bounded and t
   await card.getByRole('link', { name: 'Bibliography & rights record →' }).first().click();
   await expect(page).toHaveURL(/#bibliography\/research-us2025eo14215$/);
   const source = page.locator('#source-research-us2025eo14215');
+  await expect(source).toBeInViewport();
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: `geography:${caseId}`, exact: true }).click();
+  await expect(card).toHaveCount(1);
+});
+
+test('Haiti’s post-assassination transition is distinct, gap-bounded and traceable to its official electoral snapshot', async ({ page }) => {
+  const caseId = 'haitian-post-assassination-transition-and-electoral-reconstruction-2021-2026';
+  await page.goto(`/#geography?case=${caseId}`);
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('7 July 2021–21 September 2026');
+  await expect(card).toContainText('2017 through 6 July 2021 remains uncovered');
+  await expect(card).toContainText('not a completed vote');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('not the complete book');
+  await expect(card).toContainText('no numeric axis score');
+  await card.locator('a[href="#bibliography/research-haitiTransitionCepStatus2026"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-haitiTransitionCepStatus2026$/);
+  const source = page.locator('#source-research-haitiTransitionCepStatus2026');
   await expect(source).toBeInViewport();
   await source.getByText('Where this record is used', { exact: true }).click();
   await source.getByRole('link', { name: `geography:${caseId}`, exact: true }).click();
