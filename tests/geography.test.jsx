@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(157);
+    expect(cards()).toHaveLength(158);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -27,6 +27,16 @@ describe('geographic atlas', () => {
     await user.click(screen.getByRole('button', { name: 'Reset atlas filters' }));
     await user.selectOptions(screen.getByRole('combobox', { name: 'Connection' }), 'experimented');
     expect(cards()[0]).toHaveTextContent('Democratic confederalism');
+  });
+
+  it('shows Türkiye’s dated local-election case separately from the earlier national case', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'turkey');
+    expect(cards()).toHaveLength(4);
+    const turkeyCards = cards().map((card) => card.textContent).join(' ');
+    expect(turkeyCards).toContain('Türkiye’s 2024 local-election mandate and municipal contestation');
+    expect(turkeyCards).toContain('evidence through 24 August 2026');
   });
 
   it('shows label context before cases without inventing scored cards', async () => {

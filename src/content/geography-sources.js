@@ -5100,6 +5100,126 @@ const sources = [
     description: 'Edited book examining the AKP’s identity, early reformist discourse, reversal toward conservative nationalism, relationship with the secular establishment and military, European Union dimension and social bases. It foregrounds internal debate and interactive political processes rather than a fixed Islamist or secular label.'
   },
   {
+    id: 'turkeyYskLocalElections2024Official',
+    label: 'Supreme Election Council of Türkiye — 31 March 2024 local elections bulletin',
+    url: 'https://www.ysk.gov.tr/doc/dosyalar/docs/31%20MART%202024%20MAH%C4%B0%20%C4%B0DARELER%20B%C3%9CLTEN%C4%B0_01.07.2024.pdf',
+    note: 'Official YSK results bulletin consulted for the final metropolitan-mayor results, including Istanbul. Independent summary and link only; no tables, Turkish text or PDF pages are reproduced. Official totals establish declared results, not equal campaign conditions, voter motives or subsequent implementation.',
+    accessDate: '2026-09-23', creators: ['Yüksek Seçim Kurulu'], institution: 'Supreme Election Council of the Republic of Türkiye',
+    publicationDate: '2024-07-01', evidenceRole: 'primary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'primary local-election results / official statistical bulletin', identifiers: { electionDate: '2024-03-31' },
+    description: 'Official final results for the 31 March 2024 local elections. The Istanbul metropolitan mayoral table reports CHP candidate Ekrem İmamoğlu at 51.2 percent and AKP candidate Murat Kurum at 39.6 percent. It documents a particular municipality and contest, not a national ideological or demographic profile.'
+  },
+  {
+    id: 'turkeyCoeLocalElectionReport2024',
+    label: 'Council of Europe Congress — Local elections in Türkiye (31 March 2024), CG(2024)47-16',
+    url: 'https://rm.coe.int/0900001680b1c01c',
+    note: 'Council of Europe Congress observation report adopted in October 2024, consulted for its bounded election-observation findings and recommendations. Independent summary and link only; the Congress’s assessment is attributed to the observing institution and not presented as a court judgment or a claim about every locality.',
+    accessDate: '2026-09-23', creators: ['Congress of Local and Regional Authorities of the Council of Europe'], institution: 'Council of Europe',
+    publicationDate: '2024-10-17', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'international local-election observation report and recommendation', identifiers: { document: 'CG(2024)47-16', electionDate: '2024-03-31' },
+    description: 'Observation report from the Congress delegation’s 31 March 2024 mission. It describes election-day proceedings as calm and professional and the contests as competitive, while raising concerns about unequal campaign conditions and recording post-election disputes, including the Van mayoral mandate. Its observations have a specific institutional remit and date.'
+  },
+  {
+    id: 'turkeyCoeMayorsDeclaration2025',
+    label: 'Council of Europe Congress — Declaration 12 on the situation of local democracy in Türkiye',
+    url: 'https://rm.coe.int/colllection-of-adopted-texts-of-the-48th-session-2751-8611-8668-1/1680b514cf',
+    note: 'Congress of Local and Regional Authorities Declaration 12, adopted 27 March 2025, consulted for the Congress’s dated count and institutional criticism of replacing elected mayors with appointed trustees. Independent summary and link only; this is an attributed political-institutional assessment, not a judicial finding.',
+    accessDate: '2026-09-23', creators: ['Congress of Local and Regional Authorities of the Council of Europe'], institution: 'Council of Europe',
+    publicationDate: '2025-03-27', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'international local-democracy declaration', identifiers: { declaration: '12 (2025)', adoptedDate: '2025-03-27' },
+    description: 'The Congress states that by 24 March 2025 thirteen mayors elected in 2024 had been dismissed and replaced by trustees, and calls for the practice to end. This records the Congress’s count and normative position at a specified date, not a continuing count or independent finding on each underlying prosecution.'
+  },
+  {
+    id: 'turkeyEchrImamogluNotice2026',
+    label: 'European Court of Human Rights — notification to Türkiye of İmamoğlu v. Türkiye',
+    url: 'https://hudoc.echr.coe.int/app/conversion/pdf/?filename=Notification+to+Government+of+T%C3%BCrkiye+of+case+brought+by+Ekrem+Imamoglu.pdf&id=003-8510317-12075715&library=ECHR',
+    note: 'European Court of Human Rights notice published 13 April 2026, consulted for the procedural chronology and questions communicated to the respondent state. Independent summary and link only. The Court expressly explains that communication neither implies admissibility nor a finding of a Convention violation; the applicant’s allegations remain allegations.',
+    accessDate: '2026-09-23', creators: ['European Court of Human Rights'], institution: 'Council of Europe',
+    publicationDate: '2026-04-13', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international court case-notification / procedural record', identifiers: { case: 'İmamoğlu v. Türkiye', applicationDate: '2025-11-10', communicated: '2026-03-23' },
+    description: 'Procedural notice concerning İmamoğlu’s detention following his arrest on 19 March 2025 and pre-trial detention on 23 March. It records the applicant’s claims and pending domestic constitutional proceedings as reported in the notice; it is not an admissibility decision or merits judgment.'
+  },
+  {
+    id: 'turkeyApMunicipalMayorsVerdicts2026',
+    label: 'Associated Press — reporting on convictions of five opposition mayors in municipal-contracts case',
+    url: 'https://apnews.com/article/corruption-chp-istanbul-akpolat-aktas-7efdcec50605aee7a47235c8013f97bb',
+    note: 'Associated Press report published 24 August 2026, consulted for the reported trial outcome, defendants’ denials and attributed government and critics’ positions. It concerns a separate municipal-contracts prosecution; the report is not a substitute for the reasoned court judgment, which was not independently reviewed here.',
+    accessDate: '2026-09-23', creators: ['Andrew Wilks'], institution: 'Associated Press',
+    publicationDate: '2026-08-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'news report on municipal corruption trial and verdict', identifiers: { reportDate: '2026-08-24' },
+    description: 'Reports that an Istanbul court convicted five CHP municipal mayors in a municipal-contracts case after a seven-month trial, alongside defendants’ denials, the government’s assertion that the judiciary is independent and critics’ allegations of political motivation. Those positions are attributed; the report does not establish a general motive for all prosecutions or represent a complete judicial record.'
+  },
+  {
+    id: 'turkeyKubicekPathsDedemocratization2025',
+    label: 'Paul Kubicek (ed.) — Paths of De-democratization in Turkey',
+    url: 'https://www.peterlang.com/document/1707058',
+    note: 'Peter Lang publisher record consulted for the 2025 edited book, 226 pages, ISBN 9783034348683, e-book ISBN 9783034351249 and DOI 10.3726/b22534. Link-only bibliographic and abstract use; no chapter text or tables reproduced. The volume’s multiple contributions are not treated as consensus or as direct documentation of every 2024–2026 event.',
+    accessDate: '2026-09-23', creators: ['Paul Kubicek (editor)'], institution: 'Peter Lang',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume on Turkish political change', identifiers: { isbn: '9783034348683', ebookIsbn: '9783034351249', doi: '10.3726/b22534', pages: '226' },
+    description: 'Edited scholarly volume presenting historically, institutionally and ideologically distinct explanations of Turkish de-democratization, opposition and civil-society constraints. Used as contextual interpretation; it is not a monograph on the local-election episode covered here.'
+  },
+  {
+    id: 'turkeySertdemirCivicDeath2025',
+    label: 'Seçkin Sertdemir — Civic Death in Contemporary Turkey: Mass Surveillance and the Authoritarian State',
+    url: 'https://www.cambridge.org/core/books/civic-death-in-contemporary-turkey/898D9A2EFDC70B683667087DD11B8AEE',
+    note: 'Cambridge University Press bibliographic record consulted for the 248-page monograph (ISBN 9781009524612; DOI 10.1017/9781009524599; publisher lists 2025 edition, copyright 2024). No book wording or research data reproduced. Its analysis of surveillance and state securitization, including marginalized communities, is contextual and does not directly document the municipal prosecutions in this case.',
+    accessDate: '2026-09-23', creators: ['Seçkin Sertdemir'], institution: 'Cambridge University Press',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly study of surveillance and state power in contemporary Türkiye', identifiers: { isbn: '9781009524612', doi: '10.1017/9781009524599', pages: '248', copyrightYear: '2024' },
+    description: 'Book-length study of mass surveillance and the contemporary Turkish state, with attention to the lived effects of securitization on social groups. Supplies an analytically distinct account of state power, not a direct study or legal finding about the 2024 local-election mandates or 2025–2026 municipal cases.'
+  },
+  {
+    id: 'turkeyGuvencCityIsOurs2024',
+    label: 'Muna Güvenç — The City Is Ours: Spaces of Political Mobilization and Imaginaries of Nationhood in Turkey',
+    url: 'https://academic.oup.com/cornell-scholarship-online/book/58600',
+    note: 'Cornell University Press/Oxford Academic book record consulted for the 2024 monograph (243 pages; print ISBN 9781501774355; online ISBN 9781501774362; DOI 10.7591/cornell/9781501774355.001.0001). No book wording or data reproduced. Its historically and geographically bounded account of urban politics in Diyarbakır is not generalized to all Kurdish-majority municipalities or the 2024 national local elections.',
+    accessDate: '2026-09-23', creators: ['Muna Güvenç'], institution: 'Cornell University Press',
+    publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly urban history and political ethnography', identifiers: { isbn: '9781501774355', ebookIsbn: '9781501774362', doi: '10.7591/cornell/9781501774355.001.0001', pages: '243' },
+    description: 'Book-length study of urban political mobilization and nationhood imaginaries in Turkey, focused on Diyarbakır and an earlier historical period. Used to keep municipal space and Kurdish political experience visible as locally specific, not as a representative profile of Türkiye or every Kurdish community.'
+  },
+  {
+    id: 'turkeyEsenGumuscuYavuzyilmazNewRegime2025',
+    label: 'Berk Esen, Şebnem Gümüşçü and Hakan Yavuzyılmaz — Türkiye’nin Yeni Rejimi: Rekabetçi Otoriterlik',
+    url: 'https://iletisim.com.tr/kitap/turkiye-nin-yeni-rejimi-rekabetci-otoriterlik/10836',
+    note: 'İletişim Yayınları publisher record consulted for the Turkish-language 302-page book published November 2025, ISBN 9789750539091. Link-only bibliographic and publisher-description use; no book text, tables or data reproduced. The publisher’s competitive-authoritarian framing is an attributed scholarly lens, not a classification adopted as fact for every institution or locality.',
+    accessDate: '2026-09-23', creators: ['Berk Esen', 'Şebnem Gümüşçü', 'Hakan Yavuzyılmaz'], institution: 'İletişim Yayınları',
+    publicationDate: '2025-11', evidenceRole: 'secondary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'Turkish-language book-length scholarly analysis of regime and electoral politics', identifiers: { isbn: '9789750539091', pages: '302' },
+    description: 'Turkish-language scholarly book analyzing contemporary regime structure and competitive-authoritarianism arguments in light of elections and opposition politics. It provides a domestic-language analytical perspective, but its publisher record and description do not constitute direct evidence on each municipal case in the selected period.'
+  },
+  {
+    id: 'turkeyAbramiGascoEsenMunicipalElection2025',
+    label: 'Samuele Carlo Ayrton Abrami, Riccardo Gasco and Berk Esen — “Turkey’s 2024 municipal elections: a turning point for democratic resilience?”',
+    url: 'https://research.sabanciuniv.edu/id/eprint/51372/',
+    note: 'Sabancı University repository record and abstract consulted for this 2025 peer-reviewed article (DOI 10.1080/13629395.2025.2459558). Full text was not available at the repository record reviewed; claims here are limited to the abstract and attributed to the authors.',
+    accessDate: '2026-09-23', creators: ['Samuele Carlo Ayrton Abrami', 'Riccardo Gasco', 'Berk Esen'], institution: 'Sabancı University Research Database',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'peer-reviewed political-science article / repository abstract', identifiers: { doi: '10.1080/13629395.2025.2459558' },
+    description: 'Peer-reviewed study whose abstract interprets the 2024 local elections as a significant opposition breakthrough and asks whether the result marks democratic resilience. Because the full article was not consulted, only the abstract’s framing is used; the interpretation is not taken as evidence of a complete democratic reversal.'
+  },
+  {
+    id: 'turkeyAlemdarogluEtAlDemocraticRenewal2025',
+    label: 'Ayça Alemdaroğlu, Toygar Sinan Baykan, Ladin Bayurgil and Aytuğ Şaşmaz — “Turkey’s Hard Road to Democratic Renewal”',
+    url: 'https://www.journalofdemocracy.org/articles/turkeys-hard-road-to-democratic-renewal/',
+    note: 'Journal of Democracy article record consulted for the July 2025 publication (vol. 36, no. 3, pp. 121–134). The landing page and abstract-level description inform an attributed interpretation of post-election events; the full essay is not reproduced and particular legal allegations are checked against procedural or official records where available.',
+    accessDate: '2026-09-23', creators: ['Ayça Alemdaroğlu', 'Toygar Sinan Baykan', 'Ladin Bayurgil', 'Aytuğ Şaşmaz'], institution: 'Journal of Democracy',
+    publicationDate: '2025-07', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly political analysis of opposition and democratic renewal', identifiers: { volume: '36', issue: '3', pages: '121–134' },
+    description: 'Analysis of the 2024 local election and subsequent opposition contestation, drawing on field research as described by the journal record. Its assessment is attributed to the authors; it is one perspective and not an institutional finding.'
+  },
+  {
+    id: 'turkeyKimyaOzcanLocalPower2025',
+    label: 'Fırat Kimya and A. S. Özcan — “Local Power Play: The Post-Election Repression and Local Governance”',
+    url: 'https://works.swarthmore.edu/fac-poli-sci/748/',
+    note: 'Swarthmore College faculty-work record consulted for the article published in Democratization (vol. 32, no. 3, 2025, pp. 706–737; DOI 10.1080/13510347.2024.2385546). Only the abstract was available at the repository record reviewed. The article’s main case concerns earlier local governance, so it is comparative context rather than direct evidence for the 2024–2026 events.',
+    accessDate: '2026-09-23', creators: ['Fırat Kimya', 'A. S. Özcan'], institution: 'Swarthmore College Works',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'peer-reviewed comparative article on local governance and post-election repression', identifiers: { doi: '10.1080/13510347.2024.2385546', volume: '32', issue: '3', pages: '706–737' },
+    description: 'Peer-reviewed study connecting municipal power and local council governance with post-election repression, using an earlier İstanbul episode. Its abstract provides a comparative institutional lens but cannot establish the facts or motives in the later cases in this atlas entry.'
+  },
+  {
     id: 'antarcticTreaty1959',
     label: 'Antarctic Treaty Secretariat — The Antarctic Treaty',
     url: 'https://www.ats.aq/e/antarctictreaty.html?lang=en',
