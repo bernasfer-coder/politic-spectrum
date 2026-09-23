@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(157);
+  expect(cards()).toHaveLength(158);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -38,6 +38,16 @@ describe('geographic atlas', () => {
     expect(context).toHaveTextContent('no six-axis score assigned');
     expect(context.compareDocumentPosition(cards()[0]) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(within(cards()[0]).getByRole('link', { name: /Related encyclopedia/ })).toHaveAttribute('href', '#encyclopedia/anti-colonial-liberation');
+  });
+
+  it('keeps the 2025 South Korean succession distinct from the longer constitutional-history case', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-410');
+    expect(cards()).toHaveLength(2);
+    expect(cards()[0]).toHaveTextContent('South Korean constitutional-democratic and developmental order');
+    expect(cards()[1]).toHaveTextContent('South Korean 2025 impeachment, snap election and presidential succession');
+    expect(cards()[1]).toHaveTextContent('April–June 2025');
   });
 
   it('normalizes accented aliases and persists a timeline URL', async () => {

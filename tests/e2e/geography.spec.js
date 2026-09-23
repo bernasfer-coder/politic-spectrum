@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(157);
+  await expect(page.locator('.geo-card')).toHaveCount(158);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -57,7 +57,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(157);
+  await expect(page.locator('.geo-card')).toHaveCount(158);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -69,4 +69,12 @@ test('atlas cards and timeline are accessible and fit the viewport', async ({ pa
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
   const timelineResults = await new AxeBuilder({ page }).analyze();
   expect(timelineResults.violations.filter(({ impact }) => ['critical', 'serious'].includes(impact))).toEqual([]);
+});
+
+test('South Korea’s 2025 presidential succession is presented as a bounded event record', async ({ page }) => {
+  await page.goto('/#geography?country=map-410');
+  const cards = page.locator('.geo-card');
+  await expect(cards).toHaveCount(2);
+  await expect(cards.filter({ hasText: 'South Korean 2025 impeachment, snap election and presidential succession' })).toContainText('April–June 2025');
+  await expect(cards.filter({ hasText: 'South Korean 2025 impeachment, snap election and presidential succession' })).toContainText('not a score or ideological profile');
 });
