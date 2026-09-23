@@ -9502,16 +9502,16 @@ sources.push(
   {
     id: 'usEdelsonAboveLaw2026', label: 'Chris Edelson — Above the Law?: The Evolution of Emergency Presidential Power (Lynne Rienner Publishers, 2026)',
     url: 'https://www.rienner.com/title/Above_the_Law_The_Evolution_of_Emergency_Presidential_Power',
-    note: 'Publisher record and available overview/contents were consulted; full book was not read. Link and original summary only; no copyrighted wording, chapter, figure or image is reproduced, and no argument is inferred beyond the publisher’s description.',
+    note: 'The publisher-hosted 10-page excerpt, including its contents and opening chapter, was read alongside the title record; the rest of the 241-page book was not read. The excerpted claims are attributed to Edelson, not treated as consensus. Link and original summary only; no copyrighted wording, chapter, figure or image is reproduced.',
     accessDate: '2026-09-23', creators: ['Chris Edelson'], institution: 'Lynne Rienner Publishers', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'book-length scholarly monograph on U.S. emergency presidential power', identifiers: { hardcoverIsbn: '979-8-89616-687-0', pages: '241', chapter: 'Donald Trump’s Second Term: Toward American Monarchy' },
-    description: 'Publisher metadata describes a historical study of U.S. emergency executive authority through the second Trump term. The existence and scope are verified from publisher metadata; its argument remains unread and is a research follow-up.'
+    description: 'The contents identify a chapter on Trump’s second term, and the sampled opening chapter frames constitutional emergency authority as a balance between governmental capacity and legal checks. Edelson argues in this excerpt that postwar expansion, especially after 9/11, and congressional deference weakened external constraints. This is his attributed historical interpretation; the sample does not substitute for reading the full book or independently establishing each claim.'
   },
   {
     id: 'usZickTrump20FirstAmendment2026', label: 'Tim Zick — Trump 2.0: Executive Power and the First Amendment (Carolina Academic Press, 2026)',
     url: 'https://cap-press.com/books/isbn/9781531034931/Trump-2.0',
-    note: 'Publisher book record and public description were consulted; full book was not read. Link and original summary only; no copyrighted wording, classroom materials, chapter, figure or image is reproduced, and publisher characterization is not substituted for independent review.',
+    note: 'The publisher’s 12-page PDF sample was consulted for its table of contents and foreword only; it does not include Zick’s substantive chapters, and the full 252-page book was not read. Link and original summary only; no copyrighted wording, classroom materials, chapter, figure or image is reproduced, and publisher characterization is not substituted for independent review.',
     accessDate: '2026-09-23', creators: ['Tim Zick'], institution: 'Carolina Academic Press', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'book-length scholarly legal study / classroom monograph on executive power and First Amendment controversies', identifiers: { isbn: '978-1-5310-3493-1', ebookIsbn: '978-1-5310-3494-8', pages: '252' },
-    description: 'Publisher metadata describes a study of speech, press and related First Amendment controversies during the second Trump term, including institutional responses. The book is identified as a distinct legal perspective but its full arguments remain unread.'
+    description: 'The sampled contents map a doctrinal overview and chapters on retaliation, executive orders and official orthodoxies, higher education, immigration enforcement, press freedom, and information flow. This establishes the book’s topical architecture, not its substantive findings; the accessible sample’s foreword is by Ronald K. L. Collins, not Zick’s own analysis.'
   },
 );
 
