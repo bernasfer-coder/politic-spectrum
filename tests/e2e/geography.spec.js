@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(156);
+  await expect(page.locator('.geo-card')).toHaveCount(157);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -41,6 +41,22 @@ test('shared cases link to the encyclopedia and bibliography, and return to the 
   await expect(card).toHaveCount(1);
 });
 
+test('Bangladesh’s post-uprising case keeps charter proposals distinct from enacted law and links its primary text', async ({ page }) => {
+  await page.goto('/#geography?case=bangladeshi-post-2024-interim-and-electoral-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('Aug 2024–Sep 2026');
+  await expect(card).toContainText('does not establish that every Charter proposal had become constitutional law');
+  await card.locator('.geo-evidence summary').click();
+  await card.getByRole('link', { name: 'Bibliography & rights record →' }).nth(2).click();
+  await expect(page).toHaveURL(/#bibliography\/research-bangladeshJulyNationalCharter2025$/);
+  const source = page.locator('#source-research-bangladeshJulyNationalCharter2025');
+  await expect(source).toContainText('unofficial IDEA English translation');
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: 'geography:bangladeshi-post-2024-interim-and-electoral-transition', exact: true }).click();
+  await expect(card).toHaveCount(1);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -57,7 +73,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(156);
+  await expect(page.locator('.geo-card')).toHaveCount(157);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
