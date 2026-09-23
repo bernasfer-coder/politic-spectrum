@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(155);
+  expect(cards()).toHaveLength(156);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -38,6 +38,17 @@ describe('geographic atlas', () => {
     expect(context).toHaveTextContent('no six-axis score assigned');
     expect(context.compareDocumentPosition(cards()[0]) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(within(cards()[0]).getByRole('link', { name: /Related encyclopedia/ })).toHaveAttribute('href', '#encyclopedia/anti-colonial-liberation');
+  });
+
+  it('shows the bounded Mozambique post-2024 crisis case alongside its earlier histories', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'mozambique');
+    expect(cards()).toHaveLength(3);
+    const target = cards().find((card) => card.textContent.includes('2024–2026'));
+    expect(target).toBeTruthy();
+    expect(target).toHaveTextContent('post-election contestation and ongoing national dialogue');
+    expect(target).toHaveTextContent('Mozambican post-2024 election crisis and national dialogue');
   });
 
   it('normalizes accented aliases and persists a timeline URL', async () => {

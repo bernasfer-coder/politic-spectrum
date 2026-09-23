@@ -9106,6 +9106,86 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'mozambiqueInclusiveDialogueLaw2025',
+    label: 'Assembleia da República de Moçambique — Lei n.º 1/2025 approving the Political Commitment for an Inclusive National Dialogue',
+    url: 'https://dialogonacional.org.mz/wp-content/uploads/2025/10/BR_69_I_SERIE_SUPLEMENTO_2025.pdf',
+    note: 'Boletim da República, I Série, Supplement No. 69, consulted through the COTE document portal. The Gazette record identifies Law 1/2025, published 11 April 2025, approving the Political Commitment for an Inclusive National Dialogue. No statutory wording, scan or PDF page is republished; enactment is distinguished from implementation, representation or public consent.',
+    accessDate: '2026-09-23', creators: ['Assembleia da República de Moçambique'], institution: 'Imprensa Nacional de Moçambique / Boletim da República',
+    publicationDate: '2025-04-11', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official gazette / law approving the national-dialogue commitment', identifiers: { law: '1/2025', gazette: 'Boletim da República, I Série, Supplement No. 69' },
+    description: 'Primary legal record approving the political commitment signed on 5 March 2025 and providing statutory authority for the inclusive national-dialogue process. It establishes formal design, not equal participation, agreement on reforms or social legitimacy.'
+  },
+  {
+    id: 'mozambiqueInclusiveDialogueDecree2025',
+    label: 'Presidência da República de Moçambique — Decreto Presidencial n.º 17/2025 regulating the Inclusive National Dialogue',
+    url: 'https://dialogonacional.org.mz/wp-content/uploads/2025/10/BR_83_I_SERIE_SUPLEMENTO_2025-APROVADA-FINAL-12.5.2025.pdf',
+    note: 'Boletim da República, I Série, Supplement No. 83, consulted through the COTE document portal. No Portuguese decree wording, translation, scan or PDF page is republished; the institutional framework is not treated as proof of implementation, inclusion or consent.',
+    accessDate: '2026-09-23', creators: ['Presidência da República de Moçambique'], institution: 'Imprensa Nacional de Moçambique / Boletim da República',
+    publicationDate: '2025-05-05', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official presidential decree regulating the national-dialogue commission', identifiers: { decree: '17/2025', gazette: 'Boletim da República, I Série, Supplement No. 83' },
+    description: 'Primary legal record defining the structure and functions of the Technical Commission (COTE) tasked with implementing the Political Commitment for an Inclusive National Dialogue. Formal structure does not establish the quality or representativeness of participation.'
+  },
+  {
+    id: 'mozambiqueCoteDialogueProcess2026',
+    label: 'COTE / Cidadão Participa — Diálogo Nacional Inclusivo process record and 2026 activity reports',
+    url: 'https://www.cidadaoparticipa.org.mz/processes/dialogo-nacional',
+    note: 'Institutional participation-platform record consulted 23 September 2026. It lists the process period as 1 September 2025–30 October 2027, describes consultation and proposal stages, and hosts COTE and participation-platform reports. This is an official process record and self-description, not independent evidence that participation was representative, that agreements were reached or that reforms were implemented.',
+    accessDate: '2026-09-23', creators: ['Comissão Técnica do Diálogo Nacional Inclusivo', 'Cidadão Participa'], institution: 'COTE / Cidadão Participa',
+    evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'institutional dialogue-process portal and commission-report catalogue', identifiers: { processStart: '2025-09-01', scheduledEnd: '2027-10-30', report: 'COTE first-semester 2026 report' },
+    description: 'Institutional record of the national-dialogue calendar, consultation materials, submissions, participant-platform reports and COTE activity reporting. Its calendar and activity descriptions establish announced or reported process milestones rather than independent measurements of inclusion or results.'
+  },
+  {
+    id: 'mozambiqueCoteDiasporaHearings2026',
+    label: 'COTE — Public hearings with the Mozambican diaspora begin in South Africa (14 September 2026)',
+    url: 'https://dialogonacional.org.mz/2026/09/14/cote-inicia-audicoes-publicas-com-a-diaspora-mocambicana/',
+    note: 'Official COTE news item published 14 September 2026, reporting that diaspora hearings began in South Africa on 12 September and listing additional planned host countries and digital participation. No page wording, translation or image is republished; the commission’s account documents its reported activity, not the breadth or representativeness of diaspora participation.',
+    accessDate: '2026-09-23', creators: ['Comissão Técnica do Diálogo Nacional Inclusivo'], institution: 'COTE / Diálogo Nacional',
+    publicationDate: '2026-09-14', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official dialogue-commission process update', identifiers: { hearingStart: '2026-09-12' },
+    description: 'COTE’s dated report of opening public hearings with Mozambicans abroad, beginning in South Africa and announcing planned consultations in other diaspora locations. The update records the commission’s own process claims, not an independent participation audit.'
+  },
+  {
+    id: 'mozambiqueAmnestyPostElectionReport2025',
+    label: 'Amnesty International — Protest under attack: Human rights violations during Mozambique’s post-2024 election crackdown (2025)',
+    url: 'https://www.amnesty.org/en/documents/afr41/9225/2025/en/',
+    note: 'Amnesty International research report AFR 41/9225/2025, published 16 April 2025. Its stated investigation concerns protests from 21 October 2024 through 24 January 2025 and reports on alleged security-force violations and impeded access to information. No report wording, image, table or PDF page is reproduced; findings and any casualty estimates are attributed to the report and not presented as a universal total.',
+    accessDate: '2026-09-23', creators: ['Amnesty International'], institution: 'Amnesty International',
+    publicationDate: '2025-04-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Portuguese'],
+    sourceType: 'human-rights fact-finding report', identifiers: { report: 'AFR 41/9225/2025', investigatedPeriod: '2024-10-21 to 2025-01-24' },
+    description: 'Fact-finding report on protest policing, arrests, journalist treatment and impediments to information, using interviews and digitally verified visual material. Its investigative mandate and period are distinct from court adjudication, official casualty acknowledgements and other civil-society counts.'
+  },
+  {
+    id: 'mozambiqueNhamirreElectoralFraud2025',
+    label: 'Borges Joaquim Faduco Nhamirre — Rigging by the state apparatus: systemic electoral fraud in Mozambique jeopardizes the credibility of democracy and creates room for political violence (2025)',
+    url: 'https://doi.org/10.3389/fpos.2025.1479440',
+    note: 'Peer-reviewed original research article in Frontiers in Political Science 7 (2025), article 1479440, published 18 August 2025, DOI 10.3389/fpos.2025.1479440. The qualitative study reports documentary research, 28 anonymous key-informant interviews and the author’s earlier election-observation work. Its strong conclusions about systemic institutional manipulation are attributed to this study and require triangulation with court, observer and opposing records. No article wording, figure, table or passage is republished.',
+    accessDate: '2026-09-23', creators: ['Borges Joaquim Faduco Nhamirre'], institution: 'Frontiers in Political Science',
+    publicationDate: '2025-08-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed qualitative political-science research article', identifiers: { doi: '10.3389/fpos.2025.1479440', volume: '7', article: '1479440' },
+    description: 'A qualitative study of election administration and political contestation drawing on observer reports, documentary research, anonymous interviews and the author’s prior observation experience. The author’s causal interpretation is not treated as an uncontested judicial finding or a complete account of all political actors.'
+  },
+  {
+    id: 'mozambiqueBuenoMaschiettoElectoralCrisis2025',
+    label: 'Natália Bueno and Roberta Holanda Maschietto — The Electoral Crisis in Mozambique: A Portrait of Precarious and Non-Inclusive Peace (2025)',
+    url: 'https://cebri.org/revista/en/artigo/180/the-electoral-crisis-in-mozambique',
+    note: 'CEBRI-Journal online analysis by Natália Bueno and Roberta Holanda Maschietto, originally published in Portuguese on 27 February 2025; the English translation appeared 10 June 2026 and the journal states it was machine-assisted and reviewed by the author. The account is an attributed interpretation, not a complete participant survey or proof of social consensus. No article wording, table or image is republished.',
+    accessDate: '2026-09-23', creators: ['Natália Bueno', 'Roberta Holanda Maschietto'], institution: 'CEBRI-Revista',
+    publicationDate: '2025-02-27', evidenceRole: 'secondary', confidence: 'high', languages: ['Portuguese original', 'English translation'],
+    sourceType: 'research-journal analysis of the 2024 electoral crisis and peace dialogue', identifiers: { translationDate: '2026-06-10', originalLanguage: 'Portuguese' },
+    description: 'A researcher-authored interpretation linking the 2024 contestation to earlier party dominance and peacebuilding tensions, and discussing the political dialogue and questions of inclusion. Its claims about exclusion and legitimacy are attributed rather than generalized to every participant.'
+  },
+  {
+    id: 'mozambiqueBarrosoDialogueBrief2026',
+    label: 'Manuel Barroso Sevillano — Towards a New Peace Process in Mozambique? Opportunities and Challenges of the Inclusive National Dialogue, One Year On (2026)',
+    url: 'https://ideas.repec.org/p/iob/apbrfs/2026002.html',
+    note: 'University of Antwerp Institute of Development Policy (IOB), Analyses & Policy Briefs no. 70, May 2026, four pages. The brief analyzes opportunities and challenges one year after the 5 March 2025 commitment and reports on the process structure and early consultations. The author states the views are his own; fieldwork and critical assessments are attributed, not treated as consensus. No brief wording, figure or table is republished.',
+    accessDate: '2026-09-23', creators: ['Manuel Barroso Sevillano'], institution: 'Institute of Development Policy, University of Antwerp',
+    publicationDate: '2026-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'research-institute policy brief', identifiers: { series: 'IOB Analyses & Policy Briefs', number: '70', handle: 'RePEc:iob:apbrfs:2026002', pages: '4' },
+    description: 'A field-informed policy analysis of the dialogue’s first year, its institutional design, consultation and legitimacy challenges. It is a short policy brief rather than book-length scholarship or a final evaluation of the process.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
