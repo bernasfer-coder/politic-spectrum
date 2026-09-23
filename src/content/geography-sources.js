@@ -9097,6 +9097,96 @@ const sources = [
     description: 'Book-length Kenyan interpretation of the postcolony, connecting anticolonial nationalism, land, corruption, political economy and electoral malpractice through the 2022 election. It provides a locally authored critical perspective and is not a complete analysis of the 2024 protest cycle or every Kenyan experience.'
   },
   {
+    id: 'nepalNHRCGenZRecommendations2026',
+    label: 'National Human Rights Commission of Nepal — recommendations following its investigation of the Gen Z movement (27 May 2026)',
+    url: 'https://www.nhrcnepal.org/press_release/detail/883',
+    note: 'NHRC press release and linked recommendation report consulted as primary institutional evidence that the Commission issued findings and sent recommendations to the Government. Recommendations are not criminal convictions or proof of individual guilt; the report is the Commission’s institutional position, not an independent judicial judgment. No report wording, translation, table, scan or PDF is reproduced.',
+    accessDate: '2026-09-23', creators: ['National Human Rights Commission of Nepal'], institution: 'National Human Rights Commission of Nepal',
+    publicationDate: '2026-05-27', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali', 'English report'],
+    sourceType: 'official human-rights investigation and recommendations / institutional primary record', identifiers: {},
+    description: 'NHRC announcement and linked report concerning alleged human-rights violations on 8–9 September 2025. Used for the existence, date and attributed recommendations of the Commission, not as a court finding, final criminal-liability determination or complete account of contested events.'
+  },
+  {
+    id: 'nepalElectionCommission2026',
+    label: 'Election Commission Nepal — 2026 House of Representatives results report submitted to the President (19 March 2026)',
+    url: 'https://ebulletin.election.gov.np/2026/03/3043/',
+    note: 'Election Commission’s official Nepali-language report on submission of the completed House election results to the President consulted as a primary electoral record. No table, result text, translation, scan or PDF is reproduced; official totals establish certified institutional reporting, not by themselves electoral quality, equal voice or public consent.',
+    accessDate: '2026-09-23', creators: ['Election Commission Nepal'], institution: 'Election Commission Nepal',
+    publicationDate: '2026-03-19', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official parliamentary election results / primary institutional record', identifiers: { electionDate: '2026-03-05', seats: '275' },
+    description: 'Official Commission report records the completed 2026 House of Representatives result, the 165 first-past-the-post and 110 proportional-representation seats, candidate and voter totals, and result submission to the President. It is evidence of formal electoral procedure, not independent evaluation of the transition or the election.'
+  },
+  {
+    id: 'nepalInterimGovernmentAP2025',
+    label: 'Associated Press — Nepal appoints Sushila Karki as interim prime minister after the September 2025 protests (13 September 2025)',
+    url: 'https://apnews.com/article/nepal-protests-curfew-sushila-karki-9b315d03aa5adb18cba1f28b11da4dc5',
+    note: 'Associated Press reporting consulted for the appointment of former chief justice Sushila Karki as interim prime minister, dissolution of the House and announcement of a 5 March 2026 election after the September protests. The dispatch’s initial casualty estimate is not used as a final total; no copyrighted wording is reproduced.',
+    accessDate: '2026-09-23', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025-09-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international wire-service reporting on interim government formation', identifiers: {},
+    description: 'Contemporaneous report on the 2025 change of government and early-election timetable. It verifies the reported sequence and appointment, not the legal validity of the dissolution or a comprehensive account of the protests.'
+  },
+  {
+    id: 'nepalInterimAgreementRadioNepal2025',
+    label: 'Radio Nepal / RSS — Cabinet approves agreement with Gen Z representatives (11 December 2025)',
+    url: 'https://radionepalonline.com/en/2025/12/11/421292.html',
+    note: 'Public-service broadcaster’s RSS-based report consulted for the Cabinet’s 11 December 2025 decision concerning the ten-point agreement signed the previous day and the expanded inquiry mandate. It is reporting about the agreement, not the agreement’s original text or proof that all signatories or youth groups accepted it. No wording is reproduced.',
+    accessDate: '2026-09-23', creators: ['Radio Nepal', 'Rastriya Samachar Samiti'], institution: 'Public Service Broadcasting / Radio Nepal',
+    publicationDate: '2025-12-11', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'public-service-broadcaster report on interim political agreement', identifiers: {},
+    description: 'Reports Cabinet approval of a ten-point accord signed by Prime Minister Sushila Karki and Bhoj Bikram Thapa on behalf of movement representatives, and a decision to expand the government inquiry commission’s scope. It cannot stand for the movement’s fragmented organizations or establish implementation of every commitment.'
+  },
+  {
+    id: 'nepalFESNIPoReGenZStudy2026',
+    label: 'Santosh Sharma Poudel, Supun Dahal, Mallika Ojha and Suvexa Pradhan Tuladhar — Nepal’s Gen-Z Movement: Youth’s Views and Voices about Political Future (February 2026)',
+    url: 'https://nipore.org/wp-content/uploads/2026/04/Nepals-Gen-Z-Movement-Youths-Views-and-Voices-about-Political-Future-by-NIPoRe-and-FES_Protected-Copy.pdf',
+    note: 'February 2026 joint research report by Nepal Institute for Policy Research (NIPoRe) and Friedrich-Ebert-Stiftung (FES) Nepal consulted for its stated methods, youth perspectives and explicit limitations. The report is not a book-length history or a census of a unified movement; its pre-election sample, age range and subgroup limitations are retained. No text, graph, table or scan is reproduced; FES states commercial use requires permission.',
+    accessDate: '2026-09-23', creators: ['Santosh Sharma Poudel', 'Supun Dahal', 'Mallika Ojha', 'Suvexa Pradhan Tuladhar'], institution: 'Nepal Institute for Policy Research (NIPoRe) and Friedrich-Ebert-Stiftung Nepal',
+    publicationDate: '2026-02', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional youth survey and political research report', identifiers: {},
+    description: 'Research report on youth political views, mobilization and the pre-election horizon, with survey and qualitative components. Its own limitations note that preferences could shift before election day and that a very small “other” subgroup was excluded from disaggregated analysis; findings should not be generalized to all youth, all movement participants, all Nepalis or the electorate.'
+  },
+  {
+    id: 'nepalANFREL2026ElectionObservation',
+    label: 'Asian Network for Free Elections — Rebuilding Trust, Restoring Credibility: Accountability and Electoral Integrity in Nepal 2026 (13 May 2026)',
+    url: 'https://anfrel.org/wp-content/uploads/2026/05/ANFREL_2026-Nepal_Final-Report-ol-1.pdf',
+    note: 'ANFREL final assessment mission report and publication page consulted for its stated election observations and recommendations. The organization’s assessment is attributed rather than treated as a universal verdict; no report wording, chart, table, scan or PDF is reproduced.',
+    accessDate: '2026-09-23', creators: ['Asian Network for Free Elections'], institution: 'Asian Network for Free Elections (ANFREL)',
+    publicationDate: '2026-05-13', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'international civil-society election observation mission report', identifiers: {},
+    description: 'Final assessment of the 2026 House election. ANFREL describes election day as peaceful and orderly while recording concerns about accountability, campaign-code enforcement, observer access, campaign finance, voter information, accessibility and representation. These are attributed observer findings, not proof of uniform fairness or legitimacy.'
+  },
+  {
+    id: 'nepalElectionAP2026',
+    label: 'Binaj Gurubacharya / Associated Press — Former rapper’s fledgling political party sweeps Nepal’s first post-revolt election (12 March 2026)',
+    url: 'https://apnews.com/article/nepal-election-parliament-result-landslide-2cf0332dcc8f56e313c27e846b8cbed5',
+    note: 'Associated Press report consulted for the party-level seat result and post-election context, alongside the Election Commission’s official results report. Seat totals are attributed to published Commission results; no copyrighted wording or image is reproduced and the vote is not treated as a referendum on one ideology or every protest participant.',
+    accessDate: '2026-09-23', creators: ['Binaj Gurubacharya'], institution: 'Associated Press',
+    publicationDate: '2026-03-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international wire-service reporting on parliamentary election results', identifiers: { electionDate: '2026-03-05' },
+    description: 'Reports that the Rastriya Swatantra Party won 182 of 275 House seats, with 125 directly elected and 57 through proportional representation. It identifies the election result, not the motives of every voter, the ideology of a whole movement or subsequent accountability outcomes.'
+  },
+  {
+    id: 'nepalGovernmentPMProfile2026',
+    label: 'Office of the Prime Minister and Council of Ministers — official minister profile for Balendra Shah (accessed 23 September 2026)',
+    url: 'https://www.opmcm.gov.np/minister-detail/',
+    note: 'Continuously maintained official Prime Minister and Council of Ministers profile consulted as an administrative primary record of the officeholder and recorded assumption date. The office’s political characterizations are not adopted as independent findings; no page text or image is reproduced.',
+    accessDate: '2026-09-23', creators: ['Office of the Prime Minister and Council of Ministers, Government of Nepal'], institution: 'Government of Nepal',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official government officeholder record', identifiers: { officeAssumed: '2026-03-27' },
+    description: 'Official roster records Balendra Shah as prime minister from 27 March 2026. It establishes the government’s recorded officeholder and date, not a political classification or evaluation of the administration.'
+  },
+  {
+    id: 'nepalGenZAnniversaryKathmanduPost2026',
+    label: 'Durga Dulal — Two days of Gen Z uprising, two versions of what happened (The Kathmandu Post, 10 September 2026)',
+    url: 'https://kathmandupost.com/national/2026/09/10/two-days-of-gen-z-uprising-two-versions-of-what-happened',
+    note: 'One-year anniversary reporting consulted for competing accounts of 8–9 September, the distinct scopes of the NHRC and Karki-led inquiries, and the reported accountability status as of 10 September 2026. Findings, allegations and the journalist’s synthesis remain attributed; no copyrighted wording or photographs are reproduced.',
+    accessDate: '2026-09-23', creators: ['Durga Dulal'], institution: 'The Kathmandu Post / Kantipur Publications',
+    publicationDate: '2026-09-10', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'Nepali national newspaper anniversary reporting on inquiry and accountability', identifiers: {},
+    description: 'Reports that the political narratives of the two days remained contested and that inquiry recommendations had not produced full accountability one year later. It is a dated report, not a substitute for the full inquiry files, criminal records, victims’ testimony or book-length history.'
+  },
+  {
     id: 'kenyaNyabolaDigitalDemocracy2018',
     label: 'Nanjala Nyabola — Digital Democracy, Analogue Politics: How the Internet Era is Transforming Politics in Kenya (2018)',
     url: 'https://www.bloomsbury.com/us/digital-democracy-analogue-politics-9781786994318/',
