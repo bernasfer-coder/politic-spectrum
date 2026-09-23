@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(160);
+    expect(cards()).toHaveLength(161);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -47,6 +47,15 @@ describe('geographic atlas', () => {
     expect(caseCard).toHaveTextContent('Orr interprets this as a rightward party-system realignment');
     expect(caseCard).toHaveTextContent('did not collate all 24 actas');
     expect(caseCard).toHaveTextContent('does not assign Argentina, the electorate, LLA, Peronism or any other party a six-axis score');
+  });
+
+  it('shows the South African GNU as a bounded unscored 2024–2026 case', () => {
+    window.history.replaceState(null, '', '/#geography?case=south-african-2024-government-national-unity-coalition-transition');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('2024–2026');
+    expect(cards()[0]).toHaveTextContent('No six-axis scores are assigned');
+    expect(cards()[0]).toHaveTextContent('no book-length study of the complete period through 22 September 2026 was located');
   });
 
   it('shows label context before cases without inventing scored cards', async () => {
