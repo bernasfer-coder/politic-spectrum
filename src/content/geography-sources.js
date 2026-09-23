@@ -9320,6 +9320,141 @@ const sources = [
     description: 'French-language scholarly collection examining the foundations and traditions of federalism, federal-provincial and intergovernmental relations, democratic reform, fiscal imbalance, minority–majority relations and diversity management. It supplies multiple Quebec–Canada and institutional perspectives rather than a single national narrative.'
   },
   {
+    id: 'canadaOneCanadianEconomyAct2025',
+    label: 'Parliament of Canada — One Canadian Economy Act (Bill C-5), royal-assent text (26 June 2025)',
+    url: 'https://www.parl.ca/documentviewer/en/45-1/bill/C-5/royal-assent',
+    note: 'Official bilingual parliamentary text of the enacted statute. It establishes the Free Trade and Labour Mobility in Canada Act and Building Canada Act; statutory powers and purposes are distinguished from project designation, implementation, consultation quality and outcomes. Link-only citation; no text, image or table is reproduced.',
+    accessDate: '2026-09-23', creators: ['Parliament of Canada'], institution: 'Parliament of Canada', publicationDate: '2025-06-26', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary federal statute / enacted bill', identifiers: { bill: 'C-5, 45th Parliament, 1st Session', royalAssent: '2025-06-26', statute: 'One Canadian Economy Act' },
+    description: 'Primary legal record of Parliament’s statutory framework for interprovincial trade and labour mobility and the Building Canada Act’s national-interest project process. It establishes formal legal authority, not evidence that a project has been designated or that the laws have produced stated economic, environmental or rights outcomes.'
+  },
+  {
+    id: 'canadaHouseMembershipChanges2026',
+    label: 'House of Commons of Canada — Changes in Membership and party standings, 45th Parliament (accessed 23 September 2026)',
+    url: 'https://www.ourcommons.ca/members/en/party-standings/changes',
+    note: 'Official House of Commons chronological record of MP party-affiliation changes, vacancies and by-election entries. Used only for its dated parliamentary membership entries; a member’s party change is not a new voter mandate, and this page is not treated as a complete independent reconstruction of the House’s live seat count on every date.',
+    accessDate: '2026-09-23', creators: ['House of Commons of Canada'], institution: 'House of Commons of Canada', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'official parliamentary membership and party-change record', identifiers: { parliament: '45th Parliament, 1st Session', recordUpdatedThrough: '2026-08-31' },
+    description: 'Institutional record of changes in membership and party affiliation after the 2025 general election. It can establish the occurrence and stated date of listed changes, but not the reasons for a member’s decision, voter endorsement of a party switch or ideological uniformity.'
+  },
+  {
+    id: 'canadaByElectionsApril2026Official',
+    label: 'Elections Canada — Official results, 13 April 2026 federal by-elections',
+    url: 'https://www.elections.ca/content.aspx?dir=pas/2026/apr13/enr&document=index&lang=e&section=ele',
+    note: 'Official Elections Canada result tables for Terrebonne, Scarborough Southwest and University—Rosedale. They establish the certified district outcomes on the listed election date; they do not measure national public opinion or establish why electors voted as they did.',
+    accessDate: '2026-09-23', creators: ['Elections Canada'], institution: 'Elections Canada', publicationDate: '2026-04-13', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'official federal by-election results', identifiers: { electionDate: '2026-04-13', districts: 'Terrebonne; Scarborough Southwest; University—Rosedale' },
+    description: 'Official results for three federal by-elections. The Liberal victories are used as district-level parliamentary events, not as a proxy for a new national election or a whole-country ideological mandate.'
+  },
+  {
+    id: 'canadaCarneyDavosAddress2026',
+    label: 'Mark Carney — “Principled and pragmatic: Canada’s path,” World Economic Forum address (20 January 2026)',
+    url: 'https://www.pm.gc.ca/en/news/speeches/2026/01/20/principled-and-pragmatic-canadas-path-prime-minister-carney-addresses',
+    note: 'Prime Minister’s Office transcript of Carney’s public address. Terms such as “value-based realism,” sovereignty and diversification are treated as the government leader’s own framing, not as neutral description, proof of implementation or an independent assessment. No speech text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Mark Carney'], institution: 'Prime Minister of Canada', publicationDate: '2026-01-20', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'official political speech / executive self-description', identifiers: { event: 'World Economic Forum Annual Meeting', speechDate: '2026-01-20' },
+    description: 'Executive self-description of Canada’s intended external posture and economic and diplomatic priorities. It documents announced framing and commitments, not independent verification of policy delivery or effects.'
+  },
+  {
+    id: 'canadaCarneySpringSittingRemarks2026',
+    label: 'Mark Carney — remarks following the spring sitting of Parliament (25 June 2026)',
+    url: 'https://www.pm.gc.ca/en/news/speeches/2026/06/25/prime-minister-carney-delivers-remarks-following-conclusion-spring-sitting',
+    note: 'Prime Minister’s Office transcript. Carney’s description of his administration as a “majority government” is explicitly attributed to the speaker and is not substituted for an independently reconstructed date-by-date seat table. Government claims about its record remain self-reported.',
+    accessDate: '2026-09-23', creators: ['Mark Carney'], institution: 'Prime Minister of Canada', publicationDate: '2026-06-25', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'official political speech / executive self-description', identifiers: { speechDate: '2026-06-25', parliamentarySession: '45th Parliament, spring 2026 sitting' },
+    description: 'Dated executive account of the spring sitting and the Prime Minister’s characterization of parliamentary status and government activity. It is primary evidence of public framing, not an independent evaluation of legislation, implementation or outcomes.'
+  },
+  {
+    id: 'canadaCUSMAConsultationsReport2025',
+    label: 'Global Affairs Canada — Report on consultations concerning the Canada–United States–Mexico Agreement (19 September 2025)',
+    url: 'https://international.canada.ca/en/global-affairs/consultations/trade/2025-09-19-cusma/report',
+    note: 'Government-authored synthesis of the first CUSMA consultation phase, with a second phase announced for 20 September–3 November 2025. The department reports 5,143 submissions; its synthesis is attributed to the department and is not represented as a probability sample, public-opinion poll or consensus of Canadians.',
+    accessDate: '2026-09-23', creators: ['Global Affairs Canada'], institution: 'Global Affairs Canada', publicationDate: '2025-09-19', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'government consultation report', identifiers: { consultation: 'CUSMA review', reportedSubmissions: '5143', reportDate: '2025-09-19' },
+    description: 'Official synthesis of submissions and stakeholder views gathered for the scheduled CUSMA review. It documents the department’s consultation process and categorization, not a representative measure of public opinion or proof of policy consensus.'
+  },
+  {
+    id: 'canadaCounterTariffsSeptember2026Official',
+    label: 'Department of Finance Canada — U.S. products subject to counter-tariffs effective 8 September 2026',
+    url: 'https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html',
+    note: 'Official federal notice and product schedule. Used to document a dated Canadian counter-tariff measure and the government’s stated matching rationale; the notice is not evidence of tariff incidence, economic effect or subsequent negotiation outcomes.',
+    accessDate: '2026-09-23', creators: ['Department of Finance Canada'], institution: 'Department of Finance Canada', publicationDate: '2026-08', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'official trade measure and tariff schedule', identifiers: { effectiveDate: '2026-09-08', statedImportValue: 'CAD 27.6 billion' },
+    description: 'Official record of counter-tariffs on specified U.S. goods effective 8 September 2026. It establishes the measure, schedule and stated rationale, not its economic effects or the response of affected businesses and consumers.'
+  },
+  {
+    id: 'canadaDefenceIndustrialStrategy2026',
+    label: 'Government of Canada — Canada’s first Defence Industrial Strategy announcement (17 February 2026)',
+    url: 'https://www.pm.gc.ca/en/news/news-releases/2026/02/17/prime-minister-carney-launches-canadas-first-defence-industrial',
+    note: 'Prime Minister’s Office announcement of the federal strategy and its procurement preference, targets and strategic-autonomy rationale. Targets and announced preferences are plans, not achieved procurement shares or verified capacity; no claim of implementation or outcome is made from this announcement alone.',
+    accessDate: '2026-09-23', creators: ['Government of Canada'], institution: 'Prime Minister of Canada', publicationDate: '2026-02-17', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'official defence-industrial policy announcement', identifiers: { announcementDate: '2026-02-17', strategy: 'Canada’s first Defence Industrial Strategy' },
+    description: 'Government statement describing a planned domestic defence-industrial capacity and procurement approach. It supplies evidence of executive priorities and stated targets only, not proof that they were reached.'
+  },
+  {
+    id: 'canadaAssemblyFirstNationsBillC5Statement2025',
+    label: 'Assembly of First Nations — National Chief’s statement on Bill C-5 and consultation (10 June 2025)',
+    url: 'https://afn.ca/all-news/press-releases/statement-from-national-chief-regarding-building-canada-act-enormous-responsibility-rests-on-mps-and-senators-to-uphold-the-honour-of-the-crown/',
+    note: 'Statement by Assembly of First Nations National Chief Cindy Woodhouse Nepinak. It records the AFN’s attributed position that First Nations were given seven days to respond to an outline without the full consultative draft; the AFN is a national advocacy organization, and this statement is not treated as a consensus of First Nations, Inuit, Métis, every rights-holder or Indigenous government.',
+    accessDate: '2026-09-23', creators: ['Cindy Woodhouse Nepinak'], institution: 'Assembly of First Nations', publicationDate: '2025-06-10', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Indigenous organization statement on proposed federal legislation', identifiers: { statementDate: '2025-06-10', legislation: 'Bill C-5' },
+    description: 'Primary evidence of the Assembly of First Nations National Chief’s public position during Parliament’s consideration of Bill C-5. It documents one organization’s intervention and stated consultation concern, not an agreed view of all Indigenous nations or communities.'
+  },
+  {
+    id: 'canadaCanadianBarAssociationBillC5Submission2025',
+    label: 'Canadian Bar Association — preliminary submission on Bill C-5, One Canadian Economy Act',
+    url: 'https://www.cba.org/our-impact/submissions/bill-c-5-one-canadian-economy-act/',
+    note: 'Preliminary views submitted by the CBA’s National Aboriginal Law Section and National Environmental, Energy, and Resources Law Section. The page expressly says consensus had not been reached on all Aboriginal-law points; the sections’ legal concerns are attributed argument, not a court holding, a definitive interpretation or a position of every CBA member.',
+    accessDate: '2026-09-23', creators: ['National Aboriginal Law Section, Canadian Bar Association', 'National Environmental, Energy, and Resources Law Section, Canadian Bar Association'], institution: 'Canadian Bar Association', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'preliminary legal-policy submission on proposed federal legislation', identifiers: { bill: 'C-5, One Canadian Economy Act', status: 'preliminary views; no consensus on all Aboriginal-law points' },
+    description: 'Professional sections’ preliminary legal analysis identifies potential tensions between expedited national-interest project approvals, consultation and constitutionally protected Aboriginal and treaty rights. Its claims are a submission, not a judicial decision or final consensus opinion.'
+  },
+  {
+    id: 'canadaJacksonCanadianGovernmentPolitics2026',
+    label: 'Robert J. Jackson, Doreen Jackson, Royce Koop and Tamara A. Small — Canadian Government and Politics, 8th edition (2026)',
+    url: 'https://broadviewpress.com/product/canadian-government-and-politics-eighth-edition/',
+    note: 'Broadview Press publisher record consulted for bibliographic metadata and stated scope (ISBN 9781554816989; 456 pages; published 7 May 2026). Publisher description and contents only were consulted, not the full book; it is a broad political-science textbook covering the 2025 election, institutions, federalism, Indigenous peoples, executive and foreign policy, not a book-length evaluation of the entire 2025–2026 Carney period. Link-only, no text reproduced.',
+    accessDate: '2026-09-23', creators: ['Robert J. Jackson', 'Doreen Jackson', 'Royce Koop', 'Tamara A. Small'], institution: 'Broadview Press', publicationDate: '2026-05-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length Canadian government and politics textbook, 8th edition', identifiers: { isbn: '9781554816989', pages: '456', edition: '8th' },
+    description: 'Publisher-described contemporary textbook covering Canadian institutions, federalism, Indigenous peoples, political economy, elections including 2025 and foreign policy. It supplies broad institutional context; the publisher record is not a substitute for full-text engagement or focused evaluation of the 2025–2026 agenda.'
+  },
+  {
+    id: 'canadaWhitesideMcBrideCanadianState2025',
+    label: 'Heather Whiteside and Stephen McBride, eds. — The Canadian State (2025)',
+    url: 'https://fernwoodpublishing.ca/books/the-canadian-state',
+    note: 'Fernwood Publishing record consulted for bibliographic metadata and scope (288 pages; May 2025; print ISBN 9781773637396; PDF ISBN 9781773637402; EPUB ISBN 9781773637846); its 20-page publisher excerpt, including the editors’ introduction, was also reviewed. The editors present a critical political-economy account of capitalism and settler colonialism, with themes including land, extraction, energy, care, finance, services and trade. This is an attributed theoretical perspective, predates Bill C-5 and is not a direct study of the Carney government. The excerpt is not reproduced.',
+    accessDate: '2026-09-23', creators: ['Heather Whiteside, editor', 'Stephen McBride, editor'], institution: 'Fernwood Publishing', publicationDate: '2025-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on the Canadian state and political economy', identifiers: { paperbackIsbn: '9781773637396', pdfIsbn: '9781773637402', epubIsbn: '9781773637846', pages: '288' },
+    description: 'Edited scholarly collection offering a critical state-theoretical and political-economic account of capitalism and settler colonialism in Canada. The reviewed excerpt identifies the editors’ framework and themes; it does not establish the contributors’ agreement on each claim. The volume predates the events in this bounded case and is used as attributed analytical context, not direct evidence about later enactments.'
+  },
+  {
+    id: 'canadaFairleyForeignAffairsConstitution2025',
+    label: 'H. Scott Fairley — Foreign Affairs in the Canadian Constitution (2025)',
+    url: 'https://www.ubcpress.ca/foreign-affairs-in-the-canadian-constitution',
+    note: 'UBC Press record consulted for metadata (324 pages; hardcover and EPUB released 15 October 2025; paperback 15 July 2026; ISBNs 9780774872423, 9780774872454, 9780774872430; open-access PDF ISBN 9780774872447). The complete open-access book was consulted. Fairley argues that federal foreign-affairs authority has developed through constitutional evolution, practice and judicial interpretation into an integrated field; his legal thesis is attributed and is not treated as a judgment on Bill C-5 or the Carney government’s current policies.',
+    accessDate: '2026-09-23', creators: ['H. Scott Fairley'], institution: 'UBC Press', publicationDate: '2025-10-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access book-length constitutional and legal history of Canadian foreign-affairs powers', identifiers: { hardcoverIsbn: '9780774872423', epubIsbn: '9780774872454', paperbackIsbn: '9780774872430', pdfIsbn: '9780774872447', pages: '324' },
+    description: 'Open-access book-length legal and historical study of how Canada’s foreign-affairs powers developed through executive practice, federal–provincial division of powers, trade disputes and judicial interpretation. Fairley advances an attributed argument for integrated federal jurisdiction; it does not independently decide the legality or effects of the current government’s specific measures.'
+  },
+  {
+    id: 'canadaBlackHornsbyCarneyMiddlepowerism2026',
+    label: 'David R. Black and David J. Hornsby — “Decline or Renewal? The Carney Doctrine and the Prospects for Canadian Middlepowerism” (2026)',
+    url: 'https://doi.org/10.1177/00207020261487363',
+    note: 'Peer-reviewed research article, first published online 9 September 2026 in International Journal: Canada’s Journal of Global Policy Analysis (DOI 10.1177/00207020261487363). The authors judge evidence of renewal to be real but partial and identify constraints; this is a recent attributed scholarly interpretation, not consensus or a primary government record. No article text or quotation is reproduced.',
+    accessDate: '2026-09-23', creators: ['David R. Black', 'David J. Hornsby'], institution: 'International Journal: Canada’s Journal of Global Policy Analysis', publicationDate: '2026-09-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed scholarly journal article', identifiers: { doi: '10.1177/00207020261487363', journal: 'International Journal: Canada’s Journal of Global Policy Analysis', pages: 'OnlineFirst' },
+    description: 'Contemporary scholarly article applying a five-part framework to the Carney doctrine and prospects for Canadian middle-power internationalism. Its judgment of partial renewal and structural constraints is explicitly attributed to the authors and remains open to further debate and evidence.'
+  },
+  {
+    id: 'canadaDisbroweBillC5IndigenousRights2026',
+    label: 'Malcolm C. Disbrowe and Alanna G. Disbrowe — “Capital, control, and colonial continuities” (2026)',
+    url: 'https://doi.org/10.1177/11771801261436387',
+    note: 'Contemporary scholarly article/commentary, published online 9 April 2026 in AlterNative: An International Journal of Indigenous Peoples (DOI 10.1177/11771801261436387). It advances an explicitly Indigenous-centered and Marxist analysis of Bill C-5 with a Prairie focus. It is a situated interpretation, not a court ruling, a comprehensive national account or a consensus of Indigenous peoples. Link-only citation; no article text reproduced.',
+    accessDate: '2026-09-23', creators: ['Malcolm C. Disbrowe', 'Alanna G. Disbrowe'], institution: 'AlterNative: An International Journal of Indigenous Peoples', publicationDate: '2026-04-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly article / Indigenous-centered political-economic interpretation', identifiers: { doi: '10.1177/11771801261436387', journal: 'AlterNative: An International Journal of Indigenous Peoples', firstPublishedOnline: '2026-04-09' },
+    description: 'Situated article interpreting the passage and implications of Bill C-5 through capital, colonial continuity and Indigenous rights in the Canadian Prairies. Its scope and theoretical standpoint are stated rather than generalized to all regions, nations or rights-holders.'
+  },
+  {
     id: 'unitedStatesDeclaration1776NationalArchives',
     label: 'United States — Declaration of Independence (1776), National Archives record',
     url: 'https://www.archives.gov/milestone-documents/declaration-of-independence',
