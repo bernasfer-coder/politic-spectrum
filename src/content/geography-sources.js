@@ -9106,6 +9106,116 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'franceDissolutionDecree2024',
+    label: 'French Republic — Decree of 9 June 2024 dissolving the National Assembly',
+    url: 'https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049689651',
+    note: 'Official Journal decree consulted in French. It cites Article 12 of the Constitution and formally dissolves the National Assembly; this establishes the legal act, not the President’s full political reasoning or subsequent electoral effects.',
+    accessDate: '2026-09-23', creators: ['President of the French Republic'], institution: 'Légifrance / Journal officiel de la République française',
+    publicationDate: '2024-06-09', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary presidential decree / constitutional dissolution', identifiers: { date: '2024-06-09', journalIssue: 'JORF n°0134, 10 June 2024', nor: 'PREX2415533D' },
+    description: 'Primary legal record of the dissolution under Article 12, marking the beginning of the snap-election episode. It does not independently establish motive, democratic quality or public consent.'
+  },
+  {
+    id: 'franceBarnierCensure2024Assembly',
+    label: 'French National Assembly — Session record and successful motion of censure, 4 December 2024',
+    url: 'https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-mercredi-04-decembre-2024',
+    note: 'Official Assembly sitting record consulted in French. It records 331 votes for the first motion, against the required 288, after the Government invoked Article 49(3) on the 2025 Social Security financing bill; the chair records the motion’s adoption and the Article 50 requirement that the Prime Minister tender the Government’s resignation. No transcript wording is republished.',
+    accessDate: '2026-09-23', creators: ['French National Assembly'], institution: 'Assemblée nationale',
+    publicationDate: '2024-12-04', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official parliamentary transcript and censure vote', identifiers: { sittingDate: '2024-12-04', votesFor: '331', threshold: '288', constitutionalProvisions: 'Articles 49(3) and 50' },
+    description: 'Primary parliamentary record of a successful censure and its formal consequence for the Barnier Government. It records institutional procedure, not the full motivations of each deputy or a social consensus.'
+  },
+  {
+    id: 'franceBayrouConfidence2025Assembly',
+    label: 'French National Assembly — Confidence vote on François Bayrou Government, 8 September 2025',
+    url: 'https://questions.assemblee-nationale.fr/dyn/actualites-accueil-hub/vote-de-confiance-l-assemblee-nationale-a-desapprouve-la-declaration-de-politique-generale-du-gouvernement',
+    note: 'Official Assembly result and procedure notice consulted in French. It reports that the Government’s declaration under Article 49(1) was not approved (194 in favour, 364 against) and says Article 50 required the Prime Minister to tender the Government’s resignation. No vote table or wording is republished.',
+    accessDate: '2026-09-23', creators: ['French National Assembly'], institution: 'Assemblée nationale',
+    publicationDate: '2025-09-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official parliamentary confidence-vote notice', identifiers: { sittingDate: '2025-09-08', votesFor: '194', votesAgainst: '364', constitutionalProvisions: 'Articles 49(1) and 50' },
+    description: 'Primary institutional account of the defeat of Bayrou’s confidence request and the constitutional consequence. It documents a recorded Assembly vote, not its members’ complete political reasoning or later public opinion.'
+  },
+  {
+    id: 'franceBudget49Three2026Assembly',
+    label: 'French National Assembly — Article 49(3) motions on the 2026 Finance Bill, January 2026',
+    url: 'https://www.assemblee-nationale.fr/dyn/17/dossiers/engagement_responsabilite_gouvernement_plf_2026_2emepartie',
+    note: 'Official legislative dossier consulted for the Government’s 23 January 2026 use of Article 49(3) on the second part and whole of the 2026 Finance Bill, and for the two censure motions rejected on 27 January. The dossier records procedural outcomes, not the full merits of budget positions or a measure of support among the public.',
+    accessDate: '2026-09-23', creators: ['French National Assembly'], institution: 'Assemblée nationale',
+    publicationDate: '2026-01-23', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official legislative dossier / Article 49(3) and censure procedure', identifiers: { governmentAction: '2026-01-23', censureVotes: '2026-01-27', bill: 'Projet de loi de finances pour 2026' },
+    description: 'Primary legislative timeline showing a further use of Article 49(3) and the rejection of both censure motions on the 2026 Finance Bill. It anchors a narrow institutional account of budget procedure, not an evaluation of the budget’s distributional effects.'
+  },
+  {
+    id: 'franceFinanceLaw2026Legifrance',
+    label: 'French Republic — Finance Law for 2026, Law No. 2026-103 of 19 February 2026',
+    url: 'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053508155',
+    note: 'Official Légifrance legislation record consulted in French. The promulgated Finance Law authorizes state resources and expenditure for 2026; the text is linked rather than reproduced and its enactment does not establish the budget’s effects or public approval.',
+    accessDate: '2026-09-23', creators: ['French Republic'], institution: 'Légifrance / Journal officiel de la République française',
+    publicationDate: '2026-02-19', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary statute / annual finance law', identifiers: { lawNumber: '2026-103', promulgationDate: '2026-02-19', effectiveFrom: '2026-02-21' },
+    description: 'Primary legal endpoint for the selected budget sequence: the 2026 Finance Law was promulgated on 19 February and entered into force on 21 February 2026. Enactment alone does not show implementation or distributional outcomes.'
+  },
+  {
+    id: 'franceLecornuProfile2026InfoGouv',
+    label: 'French Government — Sébastien Lecornu official profile',
+    url: 'https://www.info.gouv.fr/personnalite/sebastien-lecornu',
+    note: 'Official Government profile consulted on 23 September 2026. It identifies Lecornu as Prime Minister from 26 February 2026 and lists his earlier 2025 appointments; the source is used only to date the officeholder in this review, not to infer policies or parliamentary support.',
+    accessDate: '2026-09-23', creators: ['Service d’information du Gouvernement'], institution: 'French Government, info.gouv.fr',
+    publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official executive biography / dated officeholder record', identifiers: { primeMinisterSince: '2026-02-26' },
+    description: 'Official dated profile used to identify the head of government for the 2026 budget phase. Biographical and officeholder information is not independent evidence of political programme or public legitimacy.'
+  },
+  {
+    id: 'franceCautresMuxelVoteSansIssues2025',
+    label: 'Bruno Cautrès and Anne Muxel (eds.) — Le vote sans issues: Chroniques électorales 2024 (PUG, 2025)',
+    url: 'https://www.pug.fr/produit/2168/9782706156915/le-vote-sans-issues',
+    note: 'Presses universitaires de Grenoble publisher catalogue record consulted in French for the edited volume, published May 2025 (print ISBN 9782706156915; print 340 pages, PDF 342 pages; Libres cours Politique). Only metadata and the publisher’s description were available for this task; no chapters, quotations, tables or scans are republished, and the individual contributors’ full arguments have not been independently read.',
+    accessDate: '2026-09-23', creators: ['Bruno Cautrès (editor)', 'Anne Muxel (editor)'], institution: 'Presses universitaires de Grenoble',
+    publicationDate: '2025-05', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length scholarly edited volume on the 2024 European and legislative elections', identifiers: { isbn: '9782706156915', printPages: '340', pdfPages: '342', collection: 'Libres cours Politique' },
+    description: 'Publisher description presents 24 contributors on electoral behaviour, institutions, campaign dynamics, voting and consequences, using election results and survey research. Its catalogue record establishes an available book-length research avenue, not a substitute for reading and attributing individual chapters.'
+  },
+  {
+    id: 'franceBarangerBeaudDissolution2025',
+    label: 'Denis Baranger and Olivier Beaud — La dissolution de la Ve République (Les Petits matins, 2025)',
+    url: 'https://www.assas-universite.fr/fr/recherche/publications/ouvrages/dissolution-ve-republique',
+    note: 'Paris-Panthéon-Assas University publication record consulted in French: November 2025, 242 pages, ISBN 978-2-36383-455-3. The university page describes the co-authors’ constitutional-law interpretation of dissolution and parliamentary crisis; only bibliographic metadata and this description were available, not the complete book, so its argument is attributed and not treated as settled consensus.',
+    accessDate: '2026-09-23', creators: ['Denis Baranger', 'Olivier Beaud'], institution: 'Université Paris-Panthéon-Assas; published by Les Petits matins',
+    publicationDate: '2025-11', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length constitutional-law analysis of the 2024 dissolution and Fifth Republic', identifiers: { isbn: '9782363834553', pages: '242' },
+    description: 'A public-law lens on the June 2024 dissolution and political impasse as summarized by the university record. Its precise legal and political arguments require full-text consultation before detailed use.'
+  },
+  {
+    id: 'franceGougouElectionCrisis2025',
+    label: 'Florent Gougou — The 2024 French legislative elections: maintaining elections, political crisis (West European Politics, 2025)',
+    url: 'https://doi.org/10.1080/01402382.2024.2411665',
+    note: 'Publisher article page and abstract consulted; the full text is access-restricted. Published online 21 October 2024 and in West European Politics 48(3), 2025, pp. 723–737, DOI 10.1080/01402382.2024.2411665. No article wording, table or figure is republished. The author’s “maintaining elections” and tripolar-competition interpretation is attributed, not treated as consensus.',
+    accessDate: '2026-09-23', creators: ['Florent Gougou'], institution: 'West European Politics / Taylor & Francis',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'peer-reviewed political-science article / publisher abstract', identifiers: { doi: '10.1080/01402382.2024.2411665', volume: '48', issue: '3', pages: '723–737' },
+    description: 'Political-science interpretation of the snap election, radical-right vote and seats, tripolar competition and minority government. Only the abstract and citation record were read for this case; detailed claims await full-text consultation.'
+  },
+  {
+    id: 'franceChabalBehrentDeluge2024',
+    label: 'Emile Chabal and Michael C. Behrent — The deluge: France’s 2024 legislative elections (Modern & Contemporary France, 2024)',
+    url: 'https://doi.org/10.1080/09639489.2024.2381787',
+    note: 'Publisher full-article listing and institutional research record consulted; selected accessible article text was reviewed. Published online 9 August 2024 in Modern & Contemporary France 32(3), pp. 329–337, DOI 10.1080/09639489.2024.2381787. No article text is reproduced; it is a contemporary commentary, not book-length scholarship or a complete post-election history.',
+    accessDate: '2026-09-23', creators: ['Emile Chabal', 'Michael C. Behrent'], institution: 'Modern & Contemporary France / Taylor & Francis',
+    publicationDate: '2024-08-09', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'peer-reviewed journal commentary / selected accessible text', identifiers: { doi: '10.1080/09639489.2024.2381787', volume: '32', issue: '3', pages: '329–337' },
+    description: 'Contemporary historical commentary on the unexpected dissolution and 2024 legislative campaign. Its claims are kept within the election episode and distinguished from the later 2025–2026 institutional record.'
+  },
+  {
+    id: 'franceBendjaballahSaugerGridlock2025',
+    label: 'Selma Bendjaballah and Nicolas Sauger — France: Political Developments and Data for 2024: From Bad to Worse: A Year of Gridlock (European Journal of Political Research Political Data Yearbook, 2025)',
+    url: 'https://doi.org/10.1111/2047-8852.70020',
+    note: 'Cambridge Core journal record and full HTML article consulted. Published in European Journal of Political Research Political Data Yearbook 64(1), December 2025, pp. 201–230, DOI 10.1111/2047-8852.70020; online 1 January 2026. No tables or article wording are reproduced. Its group and cabinet categories are attributed to the authors and are not official ideological classifications.',
+    accessDate: '2026-09-23', creators: ['Selma Bendjaballah', 'Nicolas Sauger'], institution: 'European Journal of Political Research Political Data Yearbook / Cambridge University Press',
+    publicationDate: '2025-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed annual political-development and data article / full HTML', identifiers: { doi: '10.1111/2047-8852.70020', volume: '64', issue: '1', pages: '201–230' },
+    description: 'Annual political-data account of the 2024 election, cabinet and Assembly composition. The authors describe the election as producing no clear winner or majority and document cabinet fragility and the censure of Barnier; these are their analytical descriptions, paired here with official records.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));

@@ -44,6 +44,8 @@ The pre-existing application still eagerly includes its large encyclopedia/bibli
 
 ## Next research and product phases
 
+- Case addition (23 September 2026): a separate France 2024–2026 snap-election, fragmented-parliament and budget-procedure case supplements the existing 1958–2024 Fifth Republic history without merging the periods or assigning France an ideological score. Official records and peer-reviewed political analyses support the dated chronology. The 2025 Cautrès–Muxel and Baranger–Beaud books are recorded as distinct electoral and constitutional further-reading perspectives, but only their publisher/university descriptions were available; full-text review remains an explicit gap.
+
 1. Deepen the starter cases with primary texts and independent implementation studies. In particular, the Nasserist example needs policy-specific evidence beyond its current abstract-level frame.
 2. Add separate Iraqi and Syrian Ba’athist regime cases; historical Kemalism; distinct Islamic modernist and Islamist traditions; and Labor, Revisionist and Religious Zionist traditions. None should be silently merged into a generic religious or nationalist score.
 3. Extend coverage beyond the pilot with the same actor/date/source requirements. Zero cases is a research gap, not evidence of historical absence.
