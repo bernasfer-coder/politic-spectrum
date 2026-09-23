@@ -7732,6 +7732,126 @@ const sources = [
     description: 'Book-length assessment of continuity and change under MAS, including poverty, health and education, natural resources, women’s and Indigenous/minority rights and the tensions between government and social movements. It supplies a balanced policy lens rather than a complete local or post-2014 account.'
   },
   {
+    id: 'boliviaOepFirstRound2025',
+    label: 'Órgano Electoral Plurinacional — official 2025 first-round national results portal',
+    url: 'https://computo2025-1v.oep.org.bo/',
+    note: 'Official OEP results portal consulted for the certified first-round national count and the runoff trigger. The live results record is not reproduced; first-round totals establish the electoral sequence, not voter motives, equal campaign conditions or a uniform political mandate.',
+    accessDate: '2026-09-23', creators: ['Tribunal Supremo Electoral de Bolivia'], institution: 'Órgano Electoral Plurinacional / Tribunal Supremo Electoral',
+    publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official national-election results portal', identifiers: { election: 'Bolivia general election first round 2025', date: '2025-08-17' },
+    description: 'Primary electoral record for the 17 August 2025 first round, including official tally data that sent Rodrigo Paz and Jorge Quiroga to the 19 October runoff. It documents formal results and does not independently explain the vote or represent every locality or electorate.'
+  },
+  {
+    id: 'boliviaOepRunoff2025',
+    label: 'Tribunal Supremo Electoral — official 2025 presidential runoff proclamation',
+    url: 'https://web.oep.org.bo/institucional-institucional/tse-proclama-resultados-oficiales-de-la-segunda-vuelta-electoral/',
+    note: 'The TSE’s 27 October 2025 public proclamation reports the official second-round count, tally-sheet coverage and winning ticket. This is the authoritative national result record; it is not evidence by itself of voter motivations, issue consensus, electoral equality or a government’s subsequent performance.',
+    accessDate: '2026-09-23', creators: ['Tribunal Supremo Electoral de Bolivia'], institution: 'Órgano Electoral Plurinacional / Tribunal Supremo Electoral',
+    publicationDate: '2025-10-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official runoff-election result and proclamation', identifiers: { election: 'Bolivia presidential runoff 2025', date: '2025-10-19' },
+    description: 'Official result: the PDC ticket of Rodrigo Paz Pereyra and Edmand Lara Montaño received 54.96% of valid votes and the Libre ticket of Jorge Quiroga and Juan Pablo Velasco 45.04%, based on 35,253 national and overseas tally sheets. The result anchors the presidential transfer without implying unanimous or uniform political support.'
+  },
+  {
+    id: 'boliviaEueomFinalReport2025',
+    label: 'European Union Election Observation Mission — Bolivia 2025 Final Report',
+    url: 'https://www.eeas.europa.eu/sites/default/files/2025/documents/EUEOM_Bolivia_2025_Final_Report.pdf',
+    note: 'The 8 December 2025 final report of the independent EU EOM was consulted as an attributed observer assessment, including its findings and 19 recommendations. No report text or table is republished; its overall positive assessment is not treated as proof that every dimension was equal, uncontroversial or fully resolved.',
+    accessDate: '2026-09-23', creators: ['European Union Election Observation Mission Bolivia 2025'], institution: 'European External Action Service / EU Election Observation Mission',
+    publicationDate: '2025-12-08', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'independent international election-observation final report', identifiers: { report: 'Bolivia 2025 General Elections and Presidential Run-Off', pages: '102' },
+    description: 'Final observation of the 17 August general election and 19 October presidential runoff. The mission characterized the process as competitive and the vote as credible and transparent overall, while issuing 19 recommendations concerning transparency, registration, finance, public media and digital rights. This is an attributed institutional assessment, not an exhaustive measure of social consent or democratic quality.'
+  },
+  {
+    id: 'boliviaOasRunoffReport2025',
+    label: 'Organization of American States — Preliminary Report of the Electoral Observation Mission in Bolivia’s 2025 Run-Off',
+    url: 'https://www.oas.org/fpdb/press/2025_BOLIVIA_EOM_Presidential_Runoff_Preliminary_Report_ENG.pdf',
+    note: 'The OAS mission’s preliminary English-language report was consulted for its direct observations of election-day procedures and its account of post-result demonstrations. The mission reports general procedural conformity where observed, notes accessibility shortcomings and localized post-election allegations; these observations neither settle every dispute nor substitute for a national history.',
+    accessDate: '2026-09-23', creators: ['Organization of American States, Electoral Observation Mission'], institution: 'Organization of American States',
+    publicationDate: '2025-10-20', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'preliminary international election-observation report', identifiers: { report: 'Presidential Run-Off Bolivia 2025', pages: '34' },
+    description: 'Observer account of the 19 October runoff. It reports that observed voting, closing, counting and transmission generally followed procedures, records shortcomings in preferential access for some voters, and describes small localized demonstrations and minor clashes after preliminary results. Its findings are limited to mission observations and the preliminary reporting window.'
+  },
+  {
+    id: 'boliviaUnirConflictPart12025',
+    label: 'Fundación UNIR Bolivia — Del desencuentro a la crisis: Conflictividad política en Bolivia (2025), first part',
+    url: 'https://unirbolivia.org/sites/default/files/2025-08/desencuentro-a-crisis-web-%281%29.pdf',
+    note: 'The complete public Spanish PDF was consulted for bibliographic metadata, contents, research design and the pre-election/post-election scenario sections; no protected prose, table or image is reproduced. This is the first phase of one Fundación UNIR research project, not an independent source from its second part; interviews and monitored sources have the organization’s stated scope and limits.',
+    accessDate: '2026-09-23', creators: ['Fundación UNIR Bolivia research team'], institution: 'Fundación UNIR Bolivia; with support from the Embassy of Sweden',
+    publicationDate: '2025-08-04', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length national conflict-monitoring study / first part', identifiers: { isbn: '978-99954-96-29-6', period: '2023–May 2025' },
+    description: 'A book-length report on political conflict from 2023 through May 2025, based on systematic media monitoring, mobilization analysis and more than 40 interviews in six departments, with a participatory prospective exercise about post-election risks. Its forward-looking scenarios are forecasts, not proof of later events; its coverage ends before the 2025 election.'
+  },
+  {
+    id: 'boliviaUnirConflictPart22025',
+    label: 'Fundación UNIR Bolivia — Del desencuentro a la crisis: Conflictividad política en Bolivia (2025), second part',
+    url: 'https://unirbolivia.org/sites/default/files/2025-12/del-desencuentro-a-la-crisis-2.pdf',
+    note: 'The complete public Spanish PDF and publisher record were consulted for bibliographic metadata, contents, methods, post-electoral synthesis and the stated cutoff; no protected prose, table or image is reproduced. Part two continues the same UNIR project as part one, so the volumes are not counted as two independent scholarly perspectives; interview and monitoring evidence is attributed to that organization.',
+    accessDate: '2026-09-23', creators: ['Fundación UNIR Bolivia research team'], institution: 'Fundación UNIR Bolivia; with support from the Embassy of Sweden',
+    publicationDate: '2025-12-10', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length national conflict-monitoring study / second part', identifiers: { isbn: '978-99954-96-30-2', period: 'June–November 2025', pages: '88' },
+    description: 'A book-length continuation covering June–November 2025, including the general election, runoff and inauguration, using conflict monitoring, interviews with actors and analysts in multiple departments and a prospective risk exercise. The authors describe ongoing yet comparatively contained conflict amid political transition; this is one attributed research team’s interpretation, not evidence that conflict ended or a consensus assessment. It does not cover 2026 policy outcomes.'
+  },
+  {
+    id: 'boliviaOkadaTamuraElection2026',
+    label: 'Isamu Okada and Eka Tamura — “The 2025 National Election in Bolivia: Government Change during an Economic Crisis” (2026)',
+    url: 'https://www.jstage.jst.go.jp/article/latinamericareport/43/0/43_42/_html/-char/en',
+    note: 'The full open-access article and metadata were consulted. Its explanation of economic voting and party fragmentation is explicitly the authors’ causal interpretation, not direct evidence of each voter’s motivation; no article prose, figure or table is reproduced.',
+    accessDate: '2026-09-23', creators: ['Isamu Okada', 'Eka Tamura'], institution: 'Latin America Report / J-STAGE',
+    publicationDate: '2026-01-31', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Japanese'],
+    sourceType: 'scholarly full-text journal article', identifiers: { doi: '10.24765/latinamericareport.43.0_42', volume: '43', pages: '42–55' },
+    description: 'Article analyzing the 2025 election and interpreting the transfer as linked to economic voting and the MAS split between Morales-aligned and other factions. It supplies one attributed explanation and does not establish that all voters acted for economic reasons or that party and cleavage dynamics ended.'
+  },
+  {
+    id: 'boliviaAscarrunzAguilarElection2026',
+    label: 'Julio Ascarrunz and Raquel Aguilar — “Changes in continuity: Analysis of the 2025 general elections in Bolivia” (2026)',
+    url: 'https://revistasfcs.edu.uy/index.php/rucp/en/article/view/697',
+    note: 'The journal page’s abstract, citation metadata and DOI were consulted; its linked full-text PDF returned an access error in this research session. The account’s interpretation of deinstitutionalization, volatility and persistent cleavages is therefore attributed to the abstract and authors, not independently checked against the full article; it is not generalized to all voters, Indigenous or non-Indigenous people, or localities. No protected article prose is reproduced.',
+    accessDate: '2026-09-23', creators: ['Julio Ascarrunz', 'Raquel Aguilar'], institution: 'Revista Uruguaya de Ciencia Política; Universidad Diego Portales and Universidad Mayor de San Andrés',
+    publicationDate: '2026-06-11', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish', 'English'],
+    sourceType: 'peer-reviewed scholarly journal article / abstract and metadata consulted', identifiers: { doi: '10.26851/RUCP.35.6', volume: '35', pages: '1–24' },
+    description: 'The authors’ abstract interprets 2025 as electoral volatility and leadership turnover alongside continuity in territorial and ethnic cleavages and party deinstitutionalization. The full PDF was not accessible in this session, so the synthesis is limited to the abstract; it is a distinct scholarly lens from Okada and Tamura, but not a book-length assessment or representative survey.'
+  },
+  {
+    id: 'boliviaPresidencyTransition2025',
+    label: 'Presidency of Bolivia — President Rodrigo Paz Pereira profile and assumption of office',
+    url: 'https://presidencia.gob.bo/index.php/presidente-de-bolivia/',
+    note: 'The official presidential profile states that Rodrigo Paz Pereira assumed the presidency on 8 November 2025. Used for the formal officeholder date only; the biography is institutional self-presentation and is not an independent assessment of policy, democratic legitimacy or public support.',
+    accessDate: '2026-09-23', creators: ['Plurinational State of Bolivia, Ministry of the Presidency'], institution: 'Presidency of the Plurinational State of Bolivia',
+    publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential institutional record', identifiers: { officeAssumed: '2025-11-08' },
+    description: 'Official record identifying Rodrigo Paz Pereira as president and giving 8 November 2025 as the date he assumed office. It anchors the transfer chronology without serving as a source for the government’s performance or the views of Bolivians.'
+  },
+  {
+    id: 'boliviaImfStaffLevelEff2026',
+    label: 'International Monetary Fund — Bolivia staff-level agreement on an Extended Fund Facility (29 July 2026)',
+    url: 'https://www.imf.org/en/news/articles/2026/07/29/pr26268-bolivia-imf-reaches-staff-level-agreement-on-an-extended-fund-facility-arrangement',
+    note: 'IMF staff’s 29 July press release describes a proposed 36-month, approximately US$1.9 billion EFF arrangement and explicitly states that it is subject to Executive Board approval and prior actions. This is not evidence of Board approval, disbursement or program outcomes; the intended policy design is attributed to staff and authorities.',
+    accessDate: '2026-09-23', creators: ['International Monetary Fund staff'], institution: 'International Monetary Fund',
+    publicationDate: '2026-07-29', evidenceRole: 'contextual', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'official international financial institution staff statement', identifiers: { release: '26/268', proposedArrangement: '36-month Extended Fund Facility' },
+    description: 'Records the staff-level agreement and stated objectives including stabilization, rebuilding reserves, fiscal and external adjustment, social safety nets and private-sector-led growth. Staff explicitly says the agreement is subject to IMF Executive Board approval and prior actions; the release is not proof the arrangement was approved or funds were received.'
+  },
+  {
+    id: 'boliviaPresidencyDieselPackage2026',
+    label: 'Bolivian Ministry of the Presidency — immediate support package after diesel-subsidy removal (19 September 2026)',
+    url: 'https://presidencia.gob.bo/index.php/nota_prensa/gobierno-presenta-paquete-de-acciones-inmediatas-para-proteger-a-las-familias-bolivianas/',
+    note: 'Official government announcement consulted for the stated diesel-policy change and proposed/announced compensation and productive-support measures. Beneficiary and fiscal amounts are government claims and were not independently audited here; the announcement documents policy framing and declared measures, not household effects, distributional incidence or implementation outcomes.',
+    accessDate: '2026-09-23', creators: ['Plurinational State of Bolivia, Ministry of the Presidency'], institution: 'Ministry of the Presidency of the Plurinational State of Bolivia',
+    publicationDate: '2026-09-19', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official government policy announcement', identifiers: { policyAnnounced: 'diesel subsidy removal and social/productive support', date: '2026-09-19' },
+    description: 'Government announcement presenting Bono Pepe II, productive credit, import-duty relief and tax measures as mitigation after diesel subsidy removal. It is primary evidence of the government’s public policy framing and declared actions, not independent verification of their reach or effects.'
+  },
+  {
+    id: 'boliviaPresidencyDieselScope2026',
+    label: 'Bolivian Ministry of the Presidency — public-transport impact claims after diesel-subsidy removal (22 September 2026)',
+    url: 'https://presidencia.gob.bo/index.php/nota_prensa/mas-del-80-de-vehiculos-del-servicio-publico-no-seran-afectados-por-la-eliminacion-de-la-subvencion-de-diesel/',
+    note: 'Official government communication reports YPFB/ANH vehicle-use figures and estimates which public-transport vehicles are affected. Figures and framing are the executive’s claims, not independently validated data; included as evidence that distribution and compensation were politically salient, not as proof of actual price incidence or public response.',
+    accessDate: '2026-09-23', creators: ['Plurinational State of Bolivia, Ministry of the Presidency'], institution: 'Ministry of the Presidency of the Plurinational State of Bolivia',
+    publicationDate: '2026-09-22', evidenceRole: 'primary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'official government policy communication', identifiers: { date: '2026-09-22', topic: 'diesel price and public transport' },
+    description: 'A contemporaneous executive account of claimed effects of the diesel-subsidy change on transport vehicles, attributed to the Ministry and its cited state agencies. It does not independently establish household or regional effects, the accuracy of the underlying database or public acceptance.'
+  },
+  {
     id: 'uruguayConstitution1967Impo',
     label: 'Uruguay — Constitution of the Republic (1967, updated official text)',
     url: 'https://www.impo.com.uy/bases/constitucion/1967-1967',
