@@ -9414,6 +9414,107 @@ sources.push(
   },
 );
 
+sources.push(
+  {
+    id: 'us2025eo14215', label: 'Executive Order 14215 — Ensuring Accountability for All Agencies (18 February 2025; 90 FR 10447)',
+    url: 'https://www.federalregister.gov/documents/2025/02/24/2025-03063/ensuring-accountability-for-all-agencies',
+    note: 'Official Federal Register text consulted for original summary and link only. No order wording or page image is reproduced; declared policy is kept distinct from implementation and legal effect.',
+    accessDate: '2026-09-23', creators: ['Donald J. Trump'], institution: 'Office of the Federal Register, National Archives and Records Administration', publicationDate: '2025-02-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'presidential executive order / Federal Register record', identifiers: { executiveOrder: '14215', federalRegister: '90 FR 10447', documentNumber: '2025-03063', published: '2025-02-24' },
+    description: 'Order describing presidential supervision of executive agencies and OIRA review of significant agency actions, with stated Federal Reserve monetary-policy exclusions. It records an executive policy and self-description, not its implementation or constitutionality.'
+  },
+  {
+    id: 'us2025eo14149', label: 'Executive Order 14149 — Restoring Freedom of Speech and Ending Federal Censorship (20 January 2025)',
+    url: 'https://www.govinfo.gov/app/details/DCPD-202500116',
+    note: 'GovInfo/Office of the Federal Register record consulted for date, title and original summary. No order text, quotation, scan or translation is reproduced; the administration’s stated framing is not treated as an independent finding.',
+    accessDate: '2026-09-23', creators: ['Donald J. Trump'], institution: 'Office of the Federal Register, National Archives and Records Administration', publicationDate: '2025-01-20', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'presidential executive order / GovInfo catalog record', identifiers: { executiveOrder: '14149', documentId: 'DCPD-202500116', published: '2025-01-28' },
+    description: 'Official catalog record for the order’s date, title and presidential attribution. The title documents official framing of the speech and censorship agenda, not independent evidence about prior conduct or subsequent policy effects.'
+  },
+  {
+    id: 'us2025eo14160', label: 'Executive Order 14160 — Protecting the Meaning and Value of American Citizenship (20 January 2025; 90 FR 8449)',
+    url: 'https://www.govinfo.gov/app/details/DCPD-202500127',
+    note: 'GovInfo/Office of the Federal Register primary record and text were consulted for original summary and link only. No order wording or image is republished; its policy statement is distinguished from the Court’s later merits ruling.',
+    accessDate: '2026-09-23', creators: ['Donald J. Trump'], institution: 'Office of the Federal Register, National Archives and Records Administration', publicationDate: '2025-01-20', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'presidential executive order / GovInfo catalog record', identifiers: { executiveOrder: '14160', documentId: 'DCPD-202500127', federalRegister: '90 FR 8449', published: '2025-01-29' },
+    description: 'Order directed federal departments and agencies not to recognize citizenship documentation in specified circumstances for certain U.S.-born children. It documents the policy and its stated legal rationale, not a final judicial interpretation.'
+  },
+  {
+    id: 'us2025trumpCasa2025', label: 'Supreme Court of the United States — Trump v. CASA, Inc., 606 U.S. 831 (27 June 2025)',
+    url: 'https://www.supremecourt.gov/opinions/24pdf/24a884_8n59.pdf',
+    note: 'Official slip opinion consulted for original procedural summary and link only. No opinion wording, quotation, image or scan is reproduced; the Court expressly did not decide the birthright-citizenship order’s merits in this application.',
+    accessDate: '2026-09-23', creators: ['Supreme Court of the United States'], institution: 'Supreme Court of the United States', publicationDate: '2025-06-27', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'Supreme Court opinion / interim-relief and equitable-remedy decision', identifiers: { citation: '606 U.S. 831 (2025)', docket: '24A884; 24A885; 24A886', decided: '2025-06-27' },
+    description: 'Partial stays limited universal injunctions to relief no broader than necessary for plaintiffs with standing; the Court did not address whether Executive Order 14160 violated the Citizenship Clause or Nationality Act.'
+  },
+  {
+    id: 'us2026trumpBarbara', label: 'Supreme Court of the United States — Trump v. Barbara (30 June 2026)',
+    url: 'https://www.supremecourt.gov/opinions/25pdf/25-365_4hdj.pdf',
+    note: 'Official Supreme Court opinion consulted for the syllabus, holding, vote and disposition; original summary and link only. No opinion wording, quotation, scan or image is reproduced.',
+    accessDate: '2026-09-23', creators: ['Supreme Court of the United States'], institution: 'Supreme Court of the United States', publicationDate: '2026-06-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'Supreme Court opinion / Fourteenth Amendment citizenship merits decision', identifiers: { citation: '609 U.S. ___ (2026)', docket: '25-365', decided: '2026-06-30' },
+    description: 'The Court held that children born in the United States to parents unlawfully or temporarily present are citizens at birth under the Fourteenth Amendment’s Citizenship Clause; the opinion affirmed the judgment below.'
+  },
+  {
+    id: 'us2026trumpSlaughter', label: 'Supreme Court of the United States — Trump v. Slaughter (29 June 2026)',
+    url: 'https://www.supremecourt.gov/opinions/25pdf/25-332_qn12.pdf',
+    note: 'Official Supreme Court opinion consulted for the syllabus, disposition and scope qualifications; original summary and link only. No opinion wording, quotation, scan or image is reproduced.',
+    accessDate: '2026-09-23', creators: ['Supreme Court of the United States'], institution: 'Supreme Court of the United States', publicationDate: '2026-06-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'Supreme Court opinion / presidential removal and FTC statutory-protection decision', identifiers: { citation: '609 U.S. ___ (2026)', docket: '25-332', decided: '2026-06-29' },
+    description: 'The Court reversed and remanded and held that the statutory tenure protections challenged in this case for FTC commissioners could not prevent presidential removal. The opinion identifies questions about other institutions that it did not decide.'
+  },
+  {
+    id: 'us2026trumpCook', label: 'Supreme Court of the United States — Trump v. Cook (29 June 2026)',
+    url: 'https://www.supremecourt.gov/opinions/25pdf/25a312_5468.pdf',
+    note: 'Official Supreme Court order and opinions consulted for disposition and limitations; original summary and link only. No opinion wording, quotation, scan or image is reproduced; interim procedural relief is not presented as a final merits decision.',
+    accessDate: '2026-09-23', creators: ['Supreme Court of the United States'], institution: 'Supreme Court of the United States', publicationDate: '2026-06-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'Supreme Court order / interim stay and due-process decision', identifiers: { citation: '609 U.S. 528 (2026)', docket: '25A312', decided: '2026-06-29' },
+    description: 'The Court denied the Government’s application to stay a preliminary injunction protecting Federal Reserve Governor Lisa Cook while litigation proceeded; it reserved factual findings and the ultimate question whether the alleged conduct justified removal.'
+  },
+  {
+    id: 'us2026learningResourcesTariffs', label: 'Supreme Court of the United States — Learning Resources, Inc. v. Trump and V.O.S. Selections, Inc. v. Trump (20 February 2026)',
+    url: 'https://www.supremecourt.gov/opinions/25pdf/24-1287_new_3135.pdf',
+    note: 'Official Supreme Court consolidated opinion consulted for syllabus, holding and separate dispositions; original summary and link only. No opinion wording, quotation, scan or image is reproduced.',
+    accessDate: '2026-09-23', creators: ['Supreme Court of the United States'], institution: 'Supreme Court of the United States', publicationDate: '2026-02-20', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'Supreme Court consolidated opinion / International Emergency Economic Powers Act tariffs', identifiers: { citation: '607 U.S. ___ (2026)', dockets: '24-1287; 25-250', decided: '2026-02-20' },
+    description: 'The Court held that IEEPA does not authorize the President to impose tariffs; it affirmed the Federal Circuit judgment in V.O.S. Selections and vacated and remanded the separate district-court case for lack of jurisdiction.'
+  },
+  {
+    id: 'usPublicLaw11921', label: 'United States Congress — Public Law 119-21 (4 July 2025)',
+    url: 'https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.pdf',
+    note: 'Official enacted statute from Congress.gov/GPO consulted for title, enactment and original summary. No statutory wording, table, scan or excerpt is republished; enactment is not treated as evidence of unanimity or broad public consent.',
+    accessDate: '2026-09-23', creators: ['119th United States Congress'], institution: 'U.S. Government Publishing Office / Congress.gov', publicationDate: '2025-07-04', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'federal public law / enacted statute', identifiers: { publicLaw: '119-21', congress: '119th', enacted: '2025-07-04' },
+    description: 'Enacted federal legislation adopted by Congress and signed on 4 July 2025, included as a dated congressional policy record alongside executive and judicial actions.'
+  },
+  {
+    id: 'usCrsInjunctions2026', label: 'Congressional Research Service — Nationwide Injunctions and Universal Judicial Relief One Year After Trump v. CASA, R49022 (7 July 2026)',
+    url: 'https://www.everycrsreport.com/reports/R49022.html',
+    note: 'CRS report consulted for its dated case counts, methodology and stated caveats; original attributed summary and link only. No report text, table or image is republished; litigation statuses can change after its cutoff.',
+    accessDate: '2026-09-23', creators: ['Congressional Research Service'], institution: 'Congressional Research Service', publicationDate: '2026-07-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'Congressional Research Service legal research report', identifiers: { report: 'R49022', cutoff: '2026-06-27', pages: 'report webpage' },
+    description: 'CRS describes its search and counting methodology and identifies 50 cases involving nationwide injunctions during the second Trump administration through 27 June 2026; the count is limited by the report’s methods and procedural caveats.'
+  },
+  {
+    id: 'usVDemDemocracyReport2026', label: 'Marina Nord, David Altman, Tiago Fernandes, Ana Good God and Staffan I. Lindberg — Democracy Report 2026: Unraveling the Democratic Era? (V-Dem Institute, March 2026)',
+    url: 'https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf',
+    note: 'Full public V-Dem report consulted for its U.S. chapter, summary and methodology notes; original attributed synthesis and link only. No report language, scores table, chart or image is reproduced or recast as this project’s six-axis profile.',
+    accessDate: '2026-09-23', creators: ['Marina Nord', 'David Altman', 'Tiago Fernandes', 'Ana Good God', 'Staffan I. Lindberg'], institution: 'V-Dem Institute, University of Gothenburg', publicationDate: '2026-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'institutional democracy-monitoring report and expert-coded comparative assessment', identifiers: { edition: '10th', dataset: 'V-Dem v16', assessedThrough: '2025' },
+    description: 'The report’s 2025 assessment characterizes U.S. change as rapid executive aggrandizement and marks a change in its liberal-democracy classification; the finding is attributed to V-Dem’s published framework and authors.'
+  },
+  {
+    id: 'usFreedomHouse2026', label: 'Freedom House — Freedom in the World 2026: United States',
+    url: 'https://freedomhouse.org/country/united-states/freedom-world/2026',
+    note: 'Full public 2026 country report consulted for 2025 period findings and scoring framework; original attributed synthesis and link only. No report wording, table, image or figure is reproduced; its rating is not interchangeable with V-Dem or this project’s axes.',
+    accessDate: '2026-09-23', creators: ['Freedom House'], institution: 'Freedom House', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'independent comparative freedom and political-rights country assessment', identifiers: { report: 'Freedom in the World 2026', assessedThrough: '2025', globalFreedomScore: '81/100; Free' },
+    description: 'The report documents 2025 institutional and civil-liberties declines while retaining its “Free” country classification and 81/100 rating, illustrating a distinct framework and threshold from V-Dem’s assessment.'
+  },
+  {
+    id: 'usEdelsonAboveLaw2026', label: 'Chris Edelson — Above the Law?: The Evolution of Emergency Presidential Power (Lynne Rienner Publishers, 2026)',
+    url: 'https://www.rienner.com/title/Above_the_Law_The_Evolution_of_Emergency_Presidential_Power',
+    note: 'Publisher record and available overview/contents were consulted; full book was not read. Link and original summary only; no copyrighted wording, chapter, figure or image is reproduced, and no argument is inferred beyond the publisher’s description.',
+    accessDate: '2026-09-23', creators: ['Chris Edelson'], institution: 'Lynne Rienner Publishers', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'book-length scholarly monograph on U.S. emergency presidential power', identifiers: { hardcoverIsbn: '979-8-89616-687-0', pages: '241', chapter: 'Donald Trump’s Second Term: Toward American Monarchy' },
+    description: 'Publisher metadata describes a historical study of U.S. emergency executive authority through the second Trump term. The existence and scope are verified from publisher metadata; its argument remains unread and is a research follow-up.'
+  },
+  {
+    id: 'usZickTrump20FirstAmendment2026', label: 'Tim Zick — Trump 2.0: Executive Power and the First Amendment (Carolina Academic Press, 2026)',
+    url: 'https://cap-press.com/books/isbn/9781531034931/Trump-2.0',
+    note: 'Publisher book record and public description were consulted; full book was not read. Link and original summary only; no copyrighted wording, classroom materials, chapter, figure or image is reproduced, and publisher characterization is not substituted for independent review.',
+    accessDate: '2026-09-23', creators: ['Tim Zick'], institution: 'Carolina Academic Press', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'book-length scholarly legal study / classroom monograph on executive power and First Amendment controversies', identifiers: { isbn: '978-1-5310-3493-1', ebookIsbn: '978-1-5310-3494-8', pages: '252' },
+    description: 'Publisher metadata describes a study of speech, press and related First Amendment controversies during the second Trump term, including institutional responses. The book is identified as a distinct legal perspective but its full arguments remain unread.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
@@ -9491,7 +9592,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('russia') ? 'Russian post-Soviet constitutional, authoritarian and political history'
       : source.id.startsWith('china') ? 'Chinese revolutionary, party-state, reform and developmental political history'
       : source.id.startsWith('canada') ? 'Canadian federal, bilingual, Indigenous-rights, constitutional and political history'
-      : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
+      : source.id.startsWith('us') || source.id.startsWith('unitedStates') ? 'United States constitutional, federal, executive-power and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
       : 'Middle Eastern political history and geography',

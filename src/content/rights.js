@@ -1567,4 +1567,21 @@ const RIGHTS_RECORDS = {
   },
 };
 
+Object.assign(RIGHTS_RECORDS.researchSources, {
+  us2025eo14215: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Official executive order used for original paraphrase and source link only. No order wording or image is reproduced; public access is not blanket commercial reuse permission, and announced policy is distinguished from implementation and legal effect.' },
+  us2025eo14149: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'GovInfo catalog record for an official presidential order; title, date and independent summary only. No order wording or image is reproduced; official self-description is not independent verification.' },
+  us2025eo14160: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Official presidential order used for original paraphrase and link only. No order wording, translation or image is reproduced; stated policy is distinguished from court holdings.' },
+  us2025trumpCasa2025: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Official Supreme Court opinion used for original case summary and link only. No opinion wording, quotation, scan or image is reproduced; interim-relief holding is distinguished from merits review.' },
+  us2026trumpBarbara: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Official Supreme Court opinion used for original summary and link only. No opinion wording, quotation, scan or image is reproduced; legal outcomes are summarized in original language.' },
+  us2026trumpSlaughter: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Official Supreme Court opinion used for original summary and link only. No opinion wording, quotation, scan or image is reproduced; the holding is restricted to the case and questions the Court reserved.' },
+  us2026trumpCook: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Official Supreme Court order/opinion used for original summary and link only. No wording, quotation, scan or image is reproduced; interim due-process relief is not presented as a final merits ruling.' },
+  us2026learningResourcesTariffs: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Official Supreme Court opinion used for original summary and link only. No opinion wording, quotation, scan or image is reproduced; separate dispositions in the consolidated dockets are preserved.' },
+  usPublicLaw11921: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Official enacted statute used for enactment metadata and original summary only. No statutory wording, table or image is reproduced; no blanket commercial reuse permission is assumed.' },
+  usCrsInjunctions2026: { ...LINK_ONLY, reviewedAt: '2026-09-23', notes: 'CRS report used for attributed summary, methodology and link only. No report wording, tables or images are reproduced; its date cutoff and counting caveats remain visible.' },
+  usVDemDemocracyReport2026: { ...LINK_ONLY, reviewedAt: '2026-09-23', notes: 'Copyrighted institutional report used for attributed summary and link only. No report wording, charts, scores tables or images are reproduced; V-Dem measures are not imported as this project’s six-axis scores.' },
+  usFreedomHouse2026: { ...LINK_ONLY, reviewedAt: '2026-09-23', notes: 'Copyrighted Freedom House report used for attributed summary and link only. No report wording, tables or graphics are reproduced; its rating is distinguished from other indices and this project’s six axes.' },
+  usEdelsonAboveLaw2026: { ...LINK_ONLY, reviewedAt: '2026-09-23', notes: 'Publisher metadata and public description only; full book not read. Copyrighted book is linked and its scope summarized without quotation, chapter text, figures or image; research remains incomplete at book level.' },
+  usZickTrump20FirstAmendment2026: { ...LINK_ONLY, reviewedAt: '2026-09-23', notes: 'Publisher metadata and public description only; full book not read. Copyrighted book is linked and its scope summarized without quotation, classroom materials, chapter text, figures or image; research remains incomplete at book level.' },
+});
+
 export { RIGHTS_RECORDS };
