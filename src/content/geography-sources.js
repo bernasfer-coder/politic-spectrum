@@ -9341,6 +9341,110 @@ const sources = [
   },
 ];
 
+sources.push(
+  {
+    id: 'southAfricaGnuStatementIntent2024',
+    label: 'South African GNU parties — Statement of Intent (14 June 2024)',
+    url: 'https://www.anc1912.org.za/wp-content/uploads/2024/06/Statement-of-Intent-of-the-2024-Government-of-National-Unity.pdf',
+    note: 'The signed parties’ primary political compact was consulted for its account of the GNU’s voluntary character, shared commitments, consensus and sufficient-consensus procedures, and institutional roles. It is linked, not reproduced; stated aims are not evidence of implementation or agreement on every policy.',
+    accessDate: '2026-09-23', creators: ['Parties to the 2024 Government of National Unity'], institution: 'African National Congress (host of the signed statement)',
+    publicationDate: '2024-06-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary political agreement / statement of intent',
+    description: 'The parties’ Statement of Intent documents the negotiated political framework and shared programme they adopted in June 2024. It is evidence of formal self-description and process, not of delivery, public consent or the constitutional status of a distinct governing institution.'
+  },
+  {
+    id: 'southAfricaOpeningParliament2024',
+    label: 'Cyril Ramaphosa — Opening of Parliament Address (18 July 2024)',
+    url: 'https://www.gov.za/PresidentRamaphosaOPA2024',
+    note: 'Official presidential address consulted as an executive self-description of the ten-party GNU and its stated programme. It is linked rather than reproduced; policy priorities and claims are not treated as independent evidence of outcomes.',
+    accessDate: '2026-09-23', creators: ['Cyril Ramaphosa'], institution: 'The Presidency of South Africa / Government Communication and Information System',
+    publicationDate: '2024-07-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official presidential address',
+    description: 'A dated executive account of the new GNU’s membership and policy priorities, useful for documenting official framing but not policy delivery or independent assessment.'
+  },
+  {
+    id: 'southAfricaMistraElectionCoalitions2024',
+    label: 'Susan Booysen (ed.) — MISTRA: Analysis of South Africa’s 2024 Elections and the Coalitions Aftermath (August 2024)',
+    url: 'https://mistra.org.za/mistra-publications/mistra-analysis-of-south-africas-2024-elections-and-the-coalitions-aftermath/',
+    note: 'MISTRA’s 120-page edited research report and linked full PDF consulted, including chapters on results, coalition negotiations, cabinet formation, provincial arrangements and early tests. The volume is cited and paraphrased only; its publication-stage analysis is not a mature assessment of the coalition through 2026.',
+    accessDate: '2026-09-23', creators: ['Susan Booysen (editor)'], institution: 'Mapungubwe Institute for Strategic Reflection (MISTRA)',
+    publicationDate: '2024-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited research report', identifiers: { pages: '120', publisher: 'Mapungubwe Institute for Strategic Reflection' },
+    description: 'A multi-author, book-length analysis of the 2024 election, negotiations and coalition aftermath. Its contemporaneous framing identifies open questions about ideological convergence and historical comparison rather than settling them.'
+  },
+  {
+    id: 'southAfricaSchulzHerzenbergSouthallElection2024',
+    label: 'Collette Schulz-Herzenberg and Roger Southall (eds.) — Election 2024, South Africa: Countdown to Coalition (2024)',
+    url: 'https://jacana.co.za/product/election-2024-south-africa-countdown-to-coalition/',
+    note: 'Jacana Media’s publisher book record consulted for full title, editors, publication date and ISBN; the study is used as an independent book-length election-and-coalition perspective, not as a retrospective account through 2026. No book text is reproduced; publisher and review listings differ on page count, so no page total is asserted.',
+    accessDate: '2026-09-23', creators: ['Collette Schulz-Herzenberg (editor)', 'Roger Southall (editor)'], institution: 'Jacana Media',
+    publicationDate: '2024-10', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on South African elections and coalition formation',
+    identifiers: { isbn: '9781431434534', publisher: 'Jacana Media' },
+    description: 'An edited book-length study of the 2024 election and the path toward coalition. It is a contemporaneous foundation for formation-era analysis, not a mid-term or full-period evaluation.'
+  },
+  {
+    id: 'southAfricaElectionBookReviewChan2025',
+    label: 'Stephen Chan — review of Election 2024, South Africa: Countdown to Coalition (2025)',
+    url: 'https://www.eisa.org/storage/2025/08/2025-journal-of-african-elections-v24n1-book-review-eisa.pdf',
+    note: 'Independent scholarly book review consulted for bibliographic confirmation and its explicit observation that a mid-term analysis of the GNU remained to be done. The review is linked and paraphrased only; it is not substituted for the reviewed volume or a later retrospective study.',
+    accessDate: '2026-09-23', creators: ['Stephen Chan'], institution: 'Journal of African Elections / Electoral Institute for Sustainable Democracy in Africa',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly book review', identifiers: { doi: '10.20940/JAE/2025/v24i1a6', journal: 'Journal of African Elections', volume: '24', issue: '1', pages: '125-126' },
+    description: 'A short academic review that places the edited volume in the election-to-coalition literature and identifies the need for subsequent mid-term assessment; it does not itself provide that assessment.'
+  },
+  {
+    id: 'southAfricaGnuLeadersRetreat2025',
+    label: 'GNU party leaders — statement following the Government of National Unity Leaders’ Retreat (3 November 2025)',
+    url: 'https://presidency.gov.za/statement-leaders-parties-government-national-unity',
+    note: 'Presidency-published joint statement consulted for the ten participating parties’ official self-description and its acknowledgment of difficulties in the 2025 budget process. It is linked rather than reproduced; descriptions of stability or progress remain attributed claims by governing-party leaders.',
+    accessDate: '2026-09-23', creators: ['Leaders of the parties in the Government of National Unity'], institution: 'The Presidency of South Africa',
+    publicationDate: '2025-11-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official joint political statement',
+    description: 'A joint, dated account from GNU party leaders that records membership, stated coordination and acknowledged budget-process tensions. It is evidence of coalition self-description, not an independent performance review.'
+  },
+  {
+    id: 'southAfricaDeputyPresidentGnuAnswers2025',
+    label: 'Paul Mashatile — answers to National Assembly questions on the GNU (11 November 2025)',
+    url: 'https://www.gov.za/news/speeches/deputy-president-paul-mashatile-answers-questions-oral-reply-national-assembly-11-nov',
+    note: 'Official parliamentary oral-reply record consulted for the executive’s account of the GNU, political differences and the Clearing House mechanism after budget negotiations. It is linked and paraphrased only; the Deputy President’s explanation remains an attributed government account.',
+    accessDate: '2026-09-23', creators: ['Paul Mashatile'], institution: 'National Assembly of South Africa / Government Communication and Information System',
+    publicationDate: '2025-11-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary oral-reply record',
+    description: 'A parliamentary record of the Deputy President’s attributed description of coalition differences and coordination mechanisms. It documents executive explanation, not an independent audit of those mechanisms.'
+  },
+  {
+    id: 'southAfricaGnuStateOfNation2026',
+    label: 'Cyril Ramaphosa — State of the Nation Address (12 February 2026)',
+    url: 'https://www.parliament.gov.za/state-nation-address-president-cyril-ramaphosa-12-february-2026',
+    note: 'Official parliamentary publication of the President’s 2026 address consulted as a dated executive self-assessment. It is linked, not reproduced; the address’s descriptions of progress and remaining problems are not independent outcome measures.',
+    accessDate: '2026-09-23', creators: ['Cyril Ramaphosa'], institution: 'Parliament of the Republic of South Africa',
+    publicationDate: '2026-02-12', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official presidential address / parliamentary record',
+    description: 'A dated presidential account of policy priorities and claimed progress under the GNU. It provides the executive’s perspective only and cannot establish implementation or social outcomes independently.'
+  },
+  {
+    id: 'southAfricaGnuExecutiveChanges2026',
+    label: 'The Presidency — President Ramaphosa announces changes to the national executive (30 June 2026)',
+    url: 'https://www.presidency.gov.za/president-ramaphosa-announces-changes-national-executive-1',
+    note: 'Official Presidency notice consulted for the President’s account of executive appointments and consultation with the DA as a GNU party. It is linked and paraphrased only; appointments document formal executive continuity, not coalition consensus or popular approval.',
+    accessDate: '2026-09-23', creators: ['The Presidency of South Africa'], institution: 'The Presidency of South Africa',
+    publicationDate: '2026-06-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official executive appointment notice',
+    description: 'A dated official record of cabinet changes and stated consultation with a GNU partner. It establishes a documented executive event, not a general assessment of coalition practice.'
+  },
+  {
+    id: 'southAfricaDaGnuPosition2026',
+    label: 'Geordin Hill-Lewis — “This is why the DA is in the Government of National Unity” (22 September 2026)',
+    url: 'https://www.da.org.za/2026/09/this-is-why-the-da-is-in-the-government-of-national-unity',
+    note: 'Democratic Alliance leader’s dated party-platform article consulted for the party’s stated rationale for continued GNU participation and criticism of the ANC. It is linked and paraphrased only, explicitly as partisan self-description rather than neutral or independent assessment.',
+    accessDate: '2026-09-23', creators: ['Geordin Hill-Lewis'], institution: 'Democratic Alliance',
+    publicationDate: '2026-09-22', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'political party leader’s statement',
+    description: 'A first-party account of the DA leader’s reasons for remaining in the GNU and his party’s critique of its coalition partner. It establishes the DA’s public position on that date, not broad public opinion or an independent evaluation.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,

@@ -279,7 +279,7 @@ for (const [sourceId, role, date] of [
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
   const southAfricaProfiles = sourceId === 'southAfricaConstitution1996Rights'
-    ? ['encyclopedia:liberal-constitutionalist', 'geography:south-africa-constitutional-transition', 'geography:south-african-postapartheid-democratic-dominance-and-coalition-transition']
+    ? ['encyclopedia:liberal-constitutionalist', 'geography:south-africa-constitutional-transition', 'geography:south-african-postapartheid-democratic-dominance-and-coalition-transition', 'geography:south-african-2024-government-national-unity-coalition-transition']
     : sourceId === 'southAfricaMakwanyaneCourt1995'
       ? ['encyclopedia:liberal-constitutionalist', 'geography:south-africa-constitutional-transition']
       : ['encyclopedia:liberal-constitutionalist'];

@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(157);
+    expect(cards()).toHaveLength(158);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -49,6 +49,16 @@ describe('geographic atlas', () => {
     expect(target).toBeTruthy();
     expect(target).toHaveTextContent('post-election contestation and ongoing national dialogue');
     expect(target).toHaveTextContent('Mozambican post-2024 election crisis and national dialogue');
+  });
+
+  it('shows the bounded South African GNU episode without assigning a national score', () => {
+    window.history.replaceState(null, '', '/#geography?case=south-african-2024-government-national-unity-coalition-transition');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('2024–2026');
+    expect(cards()[0]).toHaveTextContent('No six-axis scores are assigned');
+    expect(cards()[0]).toHaveTextContent('no book-length study of the complete period through 22 September 2026 was located');
+    expect(within(cards()[0]).getByRole('link', { name: /Liberal constitutionalist/ })).toHaveAttribute('href', '#encyclopedia/liberal-constitutionalist');
   });
 
   it('shows the bounded Zambian 2026 election case with attributed result and petition evidence', async () => {
