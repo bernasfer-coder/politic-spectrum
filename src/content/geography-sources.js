@@ -9108,6 +9108,99 @@ const sources = [
   },
 ];
 
+sources.push(
+  {
+    id: 'mexicoIneJudicialReformDecree2024',
+    label: 'Mexico — Constitutional Decree in Judicial Reform, DOF 15 September 2024 (Chamber of Deputies archive copy)',
+    url: 'https://www.diputados.gob.mx/LeyesBiblio/ref/dof/CPEUM_ref_258_15sep24.pdf',
+    note: 'Official legislative archive copy of the decree published in the Diario Oficial de la Federación on 15 September 2024. Used for an independent summary of the constitutional design and transitory provisions only; no statutory wording, translation, scan or excerpt is republished, and formal text is not evidence of implementation or popular consent.',
+    accessDate: '2026-09-24', creators: ['Estados Unidos Mexicanos'], institution: 'Cámara de Diputados del H. Congreso de la Unión',
+    publicationDate: '2024-09-15', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'constitutional amendment decree / official legal text', identifiers: { publicationDate: '2024-09-15', gazette: 'Diario Oficial de la Federación' },
+    description: 'Primary constitutional text establishing direct, free and secret elections for specified federal judicial offices and creating new administration and discipline bodies. It anchors the formal legal change and the staged transition, not the quality, independence or effects of the resulting institutions.'
+  },
+  {
+    id: 'mexicoIneJudicialElectionProcess2025',
+    label: 'Instituto Nacional Electoral — 2024–2025 Federal Judiciary Election process and stages',
+    url: 'https://ine.mx/eleccion-del-poder-judicial-de-la-federacion-2025/etapas-de-la-eleccion-del-poder-judicial-2025/',
+    note: 'Official INE process page consulted for the dated stages of the 2024–2025 extraordinary federal judicial election. Used as an administrative timeline, not as independent evidence of candidate knowledge, equal competition, voter motives or judicial independence.',
+    accessDate: '2026-09-24', creators: ['Instituto Nacional Electoral'], institution: 'Instituto Nacional Electoral',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election administration timeline', identifiers: { process: 'Proceso Electoral Extraordinario del Poder Judicial de la Federación 2024–2025' },
+    description: 'Primary electoral-administration timeline for the extraordinary federal judicial election, including the 1 June 2025 polling date and its formal stages. It records the authority’s process chronology rather than a broader assessment of democratic or judicial outcomes.'
+  },
+  {
+    id: 'mexicoIneJudicialResults2025',
+    label: 'Instituto Nacional Electoral — Agreement INE/CG564/2025, Supreme Court election validity and certificates',
+    url: 'https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/183703/CGex202506-15-ap-2-2-Gaceta.pdf',
+    note: 'Official INE General Council agreement of 15 June 2025, with associated record, consulted for the final count and declaration of validity for the Supreme Court election. No result table, candidate information, scan or PDF page is republished; the authority’s formal determination is kept distinct from turnout interpretation, contestation and later judicial performance.',
+    accessDate: '2026-09-24', creators: ['Consejo General del Instituto Nacional Electoral'], institution: 'Instituto Nacional Electoral',
+    publicationDate: '2025-06-15', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election results agreement and legal record', identifiers: { agreement: 'INE/CG564/2025', process: 'PEEPJF 2024–2025' },
+    description: 'Primary administrative record of the INE’s final count, assignment and validity declaration for the elected Supreme Court membership. It supports the narrow procedural account of official validation, not a claim that the process was uncontested or that the vote demonstrated broad endorsement.'
+  },
+  {
+    id: 'mexicoIneJudicialOath2025',
+    label: 'Suprema Corte de Justicia de la Nación — Agreement 4/2025, record of elected judges taking office',
+    url: 'https://sjf2.scjn.gob.mx/detalle/acuerdo/6059',
+    note: 'Official Supreme Court judicial-record entry for Agreement 4/2025, adopted 12 September 2025, which records the elected officeholders’ 1 September 2025 oath. No legal text, translation or page reproduction is included; the record establishes a formal transition date, not subsequent operation or performance.',
+    accessDate: '2026-09-24', creators: ['Pleno del Órgano de Administración Judicial del Poder Judicial de la Federación'], institution: 'Suprema Corte de Justicia de la Nación / Semanario Judicial de la Federación',
+    publicationDate: '2025-09-12', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official judicial agreement / institutional legal record', identifiers: { agreement: '4/2025', record: 'SJF2 6059', oathDate: '2025-09-01' },
+    description: 'Official judicial record confirming that elected officeholders took their oath on 1 September 2025. It supports the closing date of this case’s initial transition window, without implying that all reform stages or effects were complete.'
+  },
+  {
+    id: 'mexicoIneJudicialOasMission2025',
+    label: 'Organization of American States — Preliminary Report of the Electoral Observation Mission for Mexico’s 2025 Judicial Elections',
+    url: 'https://www.oas.org/fpdb/press/2025_MEXICO_MOE_Elecciones_Judiciales_-Informe_Preliminart_ESP.pdf',
+    note: 'Spanish-language preliminary report dated 6 June 2025 by the OAS Electoral Observation Mission, consulted as an institutional observer account. It reports direct observations and attributed stakeholder positions, but it is preliminary, its estimates were made while counts continued, and Mexico’s Foreign Ministry publicly disputed the Mission’s mandate; neither account is treated as a substitute for the underlying records or as a settled consensus.',
+    accessDate: '2026-09-24', creators: ['Organization of American States Electoral Observation Mission'], institution: 'Organization of American States',
+    publicationDate: '2025-06-06', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'preliminary international electoral observation report', identifiers: { mission: 'Mexico 2025 Federal Judiciary Election', reportDate: '2025-06-06' },
+    description: 'Contemporaneous observation and interviews on the legal process, candidacy, election administration and participation. The Mission’s preliminary estimate was approximately 13% participation for the Supreme Court election; it records sharply divergent views on whether popular selection would increase accountability or threaten judicial independence.'
+  },
+  {
+    id: 'mexicoIneJudicialSreResponse2025',
+    label: 'Secretaría de Relaciones Exteriores — Mexico’s official response to the OAS preliminary judicial-election report',
+    url: 'https://www.gob.mx/sre/prensa/mexico-objects-to-oas-preliminary-report-on-judicial-elections',
+    note: 'Official Mexican Foreign Ministry communiqué dated 7 June 2025, used to document the government’s public objection to the OAS Mission’s report and mandate. This is an interested state response, not an independent evaluation of the election or proof that the OAS account was correct or incorrect.',
+    accessDate: '2026-09-24', creators: ['Secretaría de Relaciones Exteriores de México'], institution: 'Secretaría de Relaciones Exteriores',
+    publicationDate: '2025-06-07', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'official diplomatic response to an election observation report', identifiers: { releaseDate: '2025-06-07' },
+    description: 'Primary source for the Mexican government’s stated dispute with the OAS observer mission over the report’s scope and authority. It makes the observer assessment’s contested reception visible without deciding the substantive disagreement.'
+  },
+  {
+    id: 'mexicoIneJudicialStorm2025',
+    label: 'Saúl López-Noriega and Javier Martín-Reyes (eds.) — The Judicial Storm: Implications of Mexico’s 2024 Reform',
+    url: 'https://eljuegodelacorte.nexos.com.mx/wp-content/uploads/2025/05/the-judicial-storm.pdf',
+    note: '154-page English-language edited collection published by Nexos/El Juego de la Corte in 2025 (ISBN 978-607-8564-83-5). Its contributors present critical, early analyses of judicial independence, candidate selection and institutional design; arguments belong to named contributors and do not constitute a scholarly consensus or measured post-reform outcome. The book identifies a CC BY-NC-ND 4.0 licence; this project links and paraphrases only and makes no adaptation or text reproduction.',
+    accessDate: '2026-09-24', creators: ['Saúl López-Noriega (editor)', 'Javier Martín-Reyes (editor)'], institution: 'Nexos / El Juego de la Corte',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length edited legal and institutional analysis', identifiers: { isbn: '978-607-8564-83-5', pages: '154', license: 'CC BY-NC-ND 4.0' },
+    description: 'A critical edited volume on Mexico’s 2024 judicial constitutional amendment and the 2025 election, including analysis of candidate selection, election design, discipline and independence. Published before the elected judiciary began work, it records arguments and forecasts rather than long-run consequences.'
+  },
+  {
+    id: 'mexicoIneJudicialLocalPerspectives2025',
+    label: 'Juan Vega Gómez et al. (coords.) — Reforma al Poder Judicial: perspectivas desde la justicia local',
+    url: 'https://archivos.juridicas.unam.mx/www/bjv/libros/16/7697/1a_7697.pdf',
+    note: 'Spanish-language UNAM Institute for Legal Research edited volume (Mexico City, 2025; Serie Enclave de Jurídicas 5; ISBN 978-607-587-216-2; DOI 10.22201/iij.9786075872162e.2025). Its chapters arose from a 14 August 2024 conference before the constitutional decree; it supplies scholarly proposals and local-justice perspectives, not evidence about the enacted reform or election outcomes. The university’s front matter reserves reproduction rights; this project links and paraphrases only.',
+    accessDate: '2026-09-24', creators: ['Juan Vega Gómez (coordinator)', 'Jaime Cárdenas Gracia (coordinator)', 'Pedro Salazar Ugarte (coordinator)', 'Paola Alejandra Sam Aguirre (coordinator)', 'Fernando Manuel Castro Figueroa (coordinator)'], institution: 'Universidad Nacional Autónoma de México, Instituto de Investigaciones Jurídicas',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length edited scholarly volume on local judicial reform', identifiers: { isbn: '978-607-587-216-2', doi: '10.22201/iij.9786075872162e.2025', series: 'Serie Enclave de Jurídicas 5' },
+    description: 'A Spanish-language collection of legal scholarship centered on subnational judiciaries, institutional design and possible reform paths. Because its originating conference preceded enactment, it is a useful counterpoint and pre-reform intellectual context, not an assessment of the 2025 federal election.'
+  },
+  {
+    id: 'mexicoIneJudicialAcademicReport2026',
+    label: 'Sergio López Ayllón and Diego Valadés (eds.) — Informe académico sobre la reforma judicial de 2024 en México',
+    url: 'https://libroblanco.juridicas.unam.mx/ejes-tematicos/las-elecciones-judiciales-federales',
+    note: 'Spanish-language book-length academic collective report edited by Sergio López Ayllón and Diego Valadés, first edition 1 April 2026 (ISBN 978-607-642-844-3), published by UNAM’s Institute for Legal Research. The federal-election chapter and selected results/aftermath materials were consulted; the local-election treatment is identified as preliminary and the report does not settle long-term causal consequences. The publisher states CC BY-NC-ND 4.0; this project links and paraphrases only, without reproducing or adapting text.',
+    accessDate: '2026-09-24', creators: ['Sergio López Ayllón (editor)', 'Diego Valadés (editor)'], institution: 'Universidad Nacional Autónoma de México, Instituto de Investigaciones Jurídicas',
+    publicationDate: '2026-04-01', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length academic collective report on the judicial reform and federal election', identifiers: { isbn: '978-607-642-844-3', firstEdition: '2026-04-01', license: 'CC BY-NC-ND 4.0' },
+    description: 'Retrospective Spanish-language academic report covering the 2024 constitutional amendment, federal judicial election, official results and early transition, with multiple authors and explicit differences in scope across topics. It establishes that 2025 was the first of two planned federal-renewal stages, the next set for 2027; it is not a long-run evaluation of the new judiciary.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
