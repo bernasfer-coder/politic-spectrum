@@ -10657,6 +10657,48 @@ export const BIBLIOGRAPHY_METADATA = {
     publicationDate: '2023-01-15', publisher: 'Oxford University Press / Hurst Publishers', identifiers: { isbn: '9780197661635', onlineIsbn: '9780197683552', doi: '10.1093/oso/9780197661635.001.0001' }, confidence: 'high', languages: ['English'],
     description: 'Edited volume on pluralism, civilian rule, civil society, party politics, Ennahda’s evolution, mobilization, youth precarity and security after 2011. Its contributors present a fragile and contested transition rather than a simple success story; the volume helps bridge the 2014 settlement and the pre-2022 crisis without proving uniform public consent.',
   },
+  tunisiaIsiePresidentialResults2024: {
+    accessDate: '2026-09-23', creators: ['Instance supérieure indépendante pour les élections (ISIE)'], institution: 'ISIE',
+    sourceType: 'official final presidential election results / decision', evidenceRole: 'primary', discipline: 'Tunisian elections and constitutional politics',
+    publicationDate: '2024-10-11', publisher: 'ISIE', identifiers: { decisionNumber: '2024-552' }, confidence: 'high', languages: ['Arabic'],
+    description: 'Official final-results decision for the 6 October 2024 presidential election. It anchors the certified result but does not establish campaign fairness, public consent or representativeness.',
+  },
+  tunisiaTAPPresidentialResults2024: {
+    accessDate: '2026-09-23', creators: ['Tunis Afrique Presse (TAP)'], institution: 'Tunis Afrique Presse',
+    sourceType: 'state news agency report on official election results', evidenceRole: 'secondary', discipline: 'Tunisian elections and constitutional politics',
+    publicationDate: '2024-10-11', publisher: 'Tunis Afrique Presse', identifiers: {}, confidence: 'high', languages: ['English'],
+    description: 'English-language report attributing the final presidential-election result and participation figures to ISIE’s official decision. The election authority’s decision remains the primary record.',
+  },
+  tunisiaAfricanUnionElectionObservation2024: {
+    accessDate: '2026-09-23', creators: ['African Union Election Observation Mission to Tunisia'], institution: 'African Union',
+    sourceType: 'international election-observation report', evidenceRole: 'secondary', discipline: 'Tunisian elections and constitutional politics',
+    publicationDate: '2024', publisher: 'African Union', identifiers: {}, confidence: 'medium', languages: ['French'],
+    description: 'African Union observer mission report on Tunisia’s 2024 presidential election. The full report and underlying observation materials were not independently collated in this research pass.',
+  },
+  biagiConstitutionBuildingArabSpring2025: {
+    accessDate: '2026-09-23', creators: ['Francesco Biagi'], institution: 'Cambridge University Press',
+    sourceType: 'comparative book-length constitutional study', evidenceRole: 'secondary', discipline: 'Comparative constitutionalism and North African political history',
+    publicationDate: '2025-01-09', publisher: 'Cambridge University Press', identifiers: { isbn: '9781009533645', ebookIsbn: '9781009533669', doi: '10.1017/9781009533669', pages: '340', series: 'ASCL Studies in Comparative Law' }, confidence: 'high', languages: ['English'],
+    description: 'Comparative book on post-2011 constitution-building in seven Arab states, including Tunisia. It supplies constitutional context, not a book-length account of Tunisia’s 2024 election or 2026 political-judicial record.',
+  },
+  desruesGobeSaiedCaesarism2026: {
+    accessDate: '2026-09-23', creators: ['Thierry Desrues', 'Éric Gobe'], institution: 'The Journal of North African Studies / Taylor & Francis',
+    sourceType: 'peer-reviewed journal article on Tunisian presidentialism', evidenceRole: 'secondary', discipline: 'Tunisian constitutional and political studies',
+    publicationDate: '2026', publisher: 'The Journal of North African Studies', identifiers: { doi: '10.1080/13629387.2025.2469056', journalVolume: '31', issue: '2', pages: '202–227' }, confidence: 'medium', languages: ['English'],
+    description: 'Peer-reviewed article interpreting Saied’s trajectory through a shift from inclusive populist constitutionalism toward Caesarism. These are the authors’ analytical terms rather than neutral institutional findings.',
+  },
+  tunisiaCassationConspiracy2026AP: {
+    accessDate: '2026-09-23', creators: ['Associated Press'], institution: 'Associated Press',
+    sourceType: 'independent news report citing state news agency and judicial sources', evidenceRole: 'secondary', discipline: 'Tunisian judiciary and political rights',
+    publicationDate: '2026-09-04', publisher: 'Associated Press', identifiers: {}, confidence: 'medium', languages: ['English'],
+    description: 'Contemporaneous AP report on the Court of Cassation’s reported rejection of appeals in the state-security case. It does not reproduce the reasoned judgment or establish the merits of the allegations.',
+  },
+  tunisiaCassationConspiracy2026HRW: {
+    accessDate: '2026-09-23', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    sourceType: 'human-rights organization statement and case briefing', evidenceRole: 'secondary', discipline: 'Tunisian judiciary and political rights',
+    publicationDate: '2026-09-03', publisher: 'Human Rights Watch', identifiers: {}, confidence: 'medium', languages: ['English'],
+    description: 'Human Rights Watch reports the cassation outcome for 34 defendants and characterizes the proceedings as unjust. The legal outcome and HRW’s due-process assessment are distinct claims.',
+  },
   libyaConstitution1951: {
     accessDate: '2026-09-20', creators: ['Kingdom of Libya and Libyan constitutional institutions'], institution: 'DCAF Libyan Legal Database',
     sourceType: 'primary constitutional text / official legal archive record', evidenceRole: 'primary', discipline: 'Libyan constitutional, conflict and political history',

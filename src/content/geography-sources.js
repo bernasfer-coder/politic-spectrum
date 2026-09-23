@@ -3618,6 +3618,76 @@ const sources = [
     description: 'Edited volume on pluralism, civilian rule, civil society, party politics, Ennahda’s evolution, mobilization, youth precarity and security after 2011. Its contributors present a fragile and contested transition rather than a simple success story; the volume helps bridge the 2014 settlement and the pre-2022 crisis without proving uniform public consent.',
   },
   {
+    id: 'tunisiaIsiePresidentialResults2024',
+    label: 'ISIE — Decision No. 2024-552 declaring the final results of the Tunisian presidential election (2024)',
+    url: 'https://www.isie.tn/ar/resultats-finals-election-presidentielle-2024/',
+    note: 'Official ISIE page for Decision No. 2024-552 consulted as the final-result primary record and link only. No decision wording, result table, scan or translation is republished; the decision establishes certified results, not campaign fairness, public consent or representativeness.',
+    accessDate: '2026-09-23', creators: ['Instance supérieure indépendante pour les élections (ISIE)'], institution: 'ISIE',
+    publicationDate: '2024-10-11', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official final presidential election results / decision', identifiers: { decisionNumber: '2024-552' },
+    description: 'Official primary record declaring final results of the 6 October 2024 Tunisian presidential election. It anchors the certified outcome; the result is not by itself evidence of competitive conditions or a representative national preference.'
+  },
+  {
+    id: 'tunisiaTAPPresidentialResults2024',
+    label: 'Tunis Afrique Presse — ISIE confirms final 2024 presidential results',
+    url: 'https://www.tap.info.tn/en/Presidentielle2024_EN/17983885-decision-on-final',
+    note: 'TAP report consulted as an attributed English-language transcription/summary of the official final-results decision. It supports the reported 90.69% result and 28.8% turnout; the ISIE decision remains the primary results witness. No article wording is republished.',
+    accessDate: '2026-09-23', creators: ['Tunis Afrique Presse (TAP)'], institution: 'Tunis Afrique Presse',
+    publicationDate: '2024-10-11', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'state news agency report on official election results', identifiers: {},
+    description: 'English-language TAP report of the final presidential-election decision and official participation figures. Used only to attribute numerical results to the announced official record, not to evaluate electoral fairness or public consent.'
+  },
+  {
+    id: 'tunisiaAfricanUnionElectionObservation2024',
+    label: 'African Union Election Observation Mission — Tunisia 2024 presidential election report',
+    url: 'https://papsrepository.africanunion.org/bitstreams/55b10913-9bab-4a2b-b2a6-0af840fa255d/download',
+    note: 'African Union repository record for its 2024 Tunisian presidential-election observation report, consulted for an institutional assessment and link only. The full report and underlying observation materials were not independently collated; no report wording, table or image is republished.',
+    accessDate: '2026-09-23', creators: ['African Union Election Observation Mission to Tunisia'], institution: 'African Union',
+    publicationDate: '2024', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'international election-observation report', identifiers: {},
+    description: 'African Union observer mission’s institutional report on the 2024 Tunisian presidential election. It offers a perspective distinct from the election authority and press coverage, but its full findings and fieldwork were not independently audited for this case.'
+  },
+  {
+    id: 'biagiConstitutionBuildingArabSpring2025',
+    label: 'Francesco Biagi — Constitution-Building After the Arab Spring: A Comparative Perspective (2025)',
+    url: 'https://www.cambridge.org/core/books/constitutionbuilding-after-the-arab-spring/6815C91853190782F9294B95B94C23AC',
+    note: 'Cambridge University Press title/frontmatter records consulted for the 9 January 2025 publication, author, 340-page extent, ISBNs, DOI and seven-country scope. The full book was not independently read; it addresses Tunisia’s 2014 and 2022 constitutions within a comparative frame ending in January 2023, not the 2024 election or 2026 court case.',
+    accessDate: '2026-09-23', creators: ['Francesco Biagi'], institution: 'Cambridge University Press',
+    publicationDate: '2025-01-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'comparative book-length constitutional study', identifiers: { isbn: '9781009533645', ebookIsbn: '9781009533669', doi: '10.1017/9781009533669', pages: '340', series: 'ASCL Studies in Comparative Law' },
+    description: 'Comparative monograph examining post-2011 constitution-building in Morocco, Algeria, Tunisia, Libya, Egypt, Syria and Jordan through drafting, institutional design, constitutional justice and citizenship questions. The publisher’s scope establishes its relevance to Tunisia’s constitutional sequence, not the post-2022 political record as a whole.'
+  },
+  {
+    id: 'desruesGobeSaiedCaesarism2026',
+    label: 'Thierry Desrues and Éric Gobe — Kais Saied’s governance: the Tunisian President’s drift from inclusive populist constitutionalism to “Caesarism” (2026)',
+    url: 'https://doi.org/10.1080/13629387.2025.2469056',
+    note: 'Journal of North African Studies publisher record consulted for authorship, publication details, abstract and DOI. The article is used as an attributed peer-reviewed interpretation; its full argument and source base were not independently reviewed and no wording is reproduced.',
+    accessDate: '2026-09-23', creators: ['Thierry Desrues', 'Éric Gobe'], institution: 'The Journal of North African Studies / Taylor & Francis',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'peer-reviewed journal article on Tunisian presidentialism', identifiers: { doi: '10.1080/13629387.2025.2469056', journalVolume: '31', issue: '2', pages: '202–227' },
+    description: 'Peer-reviewed study interpreting Saied’s presidency through a shift from inclusive populist constitutionalism toward Caesarism and drawing on his political discourse and constitutional/legal acts. Those terms remain the authors’ analytical frame, not a settled classification of Tunisia or Tunisians.'
+  },
+  {
+    id: 'tunisiaCassationConspiracy2026AP',
+    label: 'Associated Press — Tunisia’s top court upholds opposition convictions in a state-security case (4 September 2026)',
+    url: 'https://apnews.com/article/e796a45b0c98f4b639300a8691b947b6',
+    note: 'Associated Press report consulted for its account that the Court of Cassation rejected appeals and left convictions and sentences in force, citing TAP and judicial sources. The reasoned court judgment was not independently located; AP’s report is not treated as the judgment itself.',
+    accessDate: '2026-09-23', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-09-04', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'independent news report citing state news agency and judicial sources', identifiers: {},
+    description: 'Contemporaneous AP report on the Court of Cassation’s reported 3 September 2026 rejection of appeals in the state-security “conspiracy” case. It supports only the reported procedural outcome and sentencing status, not the merits of the allegations or the court’s reasoning.'
+  },
+  {
+    id: 'tunisiaCassationConspiracy2026HRW',
+    label: 'Human Rights Watch — Tunisia: court upholds “unjust” conspiracy convictions (3 September 2026)',
+    url: 'https://www.hrw.org/news/2026/09/03/tunisia-court-upholds-unjust-conspiracy-convictions',
+    note: 'Human Rights Watch statement consulted for its attributed account of the cassation outcome and its own due-process assessment. The organization’s characterization is explicitly reported as an advocacy-group judgment, not an independently established court finding; no statement wording is republished.',
+    accessDate: '2026-09-23', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2026-09-03', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'human-rights organization statement and case briefing', identifiers: {},
+    description: 'Human Rights Watch reports that the Court of Cassation confirmed the convictions and sentences of 34 people in the November 2025 state-security case and argues that the proceedings were unjust. The legal outcome and HRW’s due-process analysis are distinct claims with different evidentiary status.'
+  },
+  {
     id: 'libyaConstitution1951',
     label: 'DCAF / Libyan legal archive — Constitution of the Kingdom of Libya (1951)',
     url: 'https://security-legislation.ly/ar/latest-laws/%D8%AF%D8%B3%D8%AA%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D9%84%D9%8A%D8%A8%D9%8A%D8%A9-%D9%84%D8%B3%D9%86%D8%A9-1951/',
