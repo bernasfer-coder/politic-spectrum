@@ -2735,6 +2735,78 @@ const sources = [
     description: 'Official institutional report on Pakistan’s 2024 general election. It bounds the contemporary case at the election record and provides primary administrative evidence while leaving contested mandates, court decisions, party restrictions and post-election implementation open.'
   },
   {
+    id: 'pakistanTwentySixthAmendment2024',
+    label: 'Government of Pakistan — Constitution (Twenty-sixth Amendment) Act, 2024, Gazette of Pakistan',
+    url: 'https://na.gov.pk/uploads/documents/67bffcc9b1c95_762.pdf',
+    note: 'Official Gazette text for Act XXVI of 2024, enacted 21 October 2024 and stated to come into force at once. Used to verify the Judicial Commission, Chief Justice selection and tenure, and constitutional-bench provisions. The English Gazette is linked for original synthesis only; no wording, scan or PDF is republished, and its formal provisions do not prove judicial practice or public consent.',
+    accessDate: '2026-09-23', creators: ['Government of Pakistan', 'National Assembly Secretariat'], institution: 'Gazette of Pakistan, Extraordinary, Part I',
+    publicationDate: '2024-10-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'constitutional amendment / official Gazette', identifiers: { act: 'XXVI of 2024' },
+    description: 'Primary legal text for Pakistan’s Twenty-sixth Constitutional Amendment. It establishes the enacted wording and commencement, not the political motives, constitutionality, implementation or effects of the reforms.'
+  },
+  {
+    id: 'pakistanTwentySeventhAmendment2025',
+    label: 'Government of Pakistan — Constitution (Twenty-seventh Amendment) Act, 2025, Gazette of Pakistan',
+    url: 'https://na.gov.pk/uploads/documents/691ec19a6a212_270.pdf',
+    note: 'Official Gazette of Pakistan, Extraordinary, Part I, dated 13 November 2025; records presidential assent and immediate commencement of Act XXXII of 2025. Primary text for creation and jurisdiction of the FCC, Article 243 command changes and related constitutional provisions. No text or PDF is republished; exact formal law is distinguished from disputed legal or practical effects.',
+    accessDate: '2026-09-23', creators: ['Government of Pakistan', 'Senate Secretariat'], institution: 'Gazette of Pakistan, Extraordinary, Part I',
+    publicationDate: '2025-11-13', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'constitutional amendment / official Gazette', identifiers: { act: 'XXXII of 2025' },
+    description: 'Primary Gazette text of Pakistan’s Twenty-seventh Constitutional Amendment. It verifies enacted clauses and commencement, not their compatibility with international standards or subsequent institutional outcomes.'
+  },
+  {
+    id: 'pakistanConstitutionAsAmended27th2025',
+    label: 'Government of Pakistan, Ministry of Law and Justice — Constitution of Pakistan, Fourteenth Edition (amended to the Twenty-seventh Amendment)',
+    url: 'https://www.pakp.gov.pk/wp-content/uploads/2024/07/CoP27thA.pdf',
+    note: 'Ministry of Law and Justice’s official Fourteenth Edition, dated 21 November 2025 and stating that it incorporates amendments through the Twenty-seventh Amendment; hosted by the Provincial Assembly of Khyber Pakhtunkhwa. Used to check the consolidated Articles 175A–175L, 189–190 and 243. This English edition is linked, not republished; the host URL does not imply a reuse licence or settle Urdu-text and implementation questions.',
+    accessDate: '2026-09-23', creators: ['Government of Pakistan, Ministry of Law and Justice'], institution: 'Ministry of Law and Justice; hosted by Provincial Assembly of Khyber Pakhtunkhwa',
+    publicationDate: '2025-11-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'official consolidated Constitution / legal text', identifiers: { edition: '14th', amendedThrough: 'Twenty-seventh Amendment' },
+    description: 'Official consolidated constitutional text used for the operative wording after the 26th and 27th Amendments, including the FCC’s jurisdiction and Article 243. It establishes formal law, not actual practice, case outcomes or independent judicial evaluation.'
+  },
+  {
+    id: 'pakistanNationalAssemblyActsIndex2026',
+    label: 'National Assembly of Pakistan — Acts of Parliament register',
+    url: 'https://na.gov.pk/en/print_act.php',
+    note: 'Official register lists the Twenty-sixth Amendment Act (XXVI of 2024) on 21 October 2024 and the Twenty-seventh Amendment Act (XXXII of 2025) on 13 November 2025. Used to verify act identity and dates and to locate Gazette links; it is not a substitute for the operative text or a transcript of deliberation.',
+    accessDate: '2026-09-23', creators: ['National Assembly of Pakistan'], institution: 'National Assembly Secretariat',
+    publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'official legislative acts register', identifiers: {},
+    description: 'Official parliamentary index of enacted statutes, used to cross-check the titles and dates of the constitutional amendment Acts. The register alone does not establish legislative debate, consultation or implementation.'
+  },
+  {
+    id: 'pakistanSenateTwentySeventhAmendmentBill2025',
+    label: 'Senate of Pakistan — Bill Summary: Constitution (Twenty-seventh Amendment) Act, 2025',
+    url: 'https://senate.gov.pk/en/billsummary.php?bid=1724',
+    note: 'Official Senate bill-stage summary identifies this as a Government Bill and records its introduction, committee report and Senate consideration in November 2025. It provides a limited procedural trail for the initial bill, not a full debate transcript or evidence that all judges, parties or publics were consulted; the enacted Gazette controls where draft stages differ.',
+    accessDate: '2026-09-23', creators: ['Senate of Pakistan'], institution: 'Senate Secretariat',
+    publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'official parliamentary bill-stage summary', identifiers: { bill: '1724' },
+    description: 'Official Senate legislative-history summary for the initial Twenty-seventh Amendment bill. It corroborates selected procedural dates but is neither the final Act nor a full record of parliamentary deliberation.'
+  },
+  {
+    id: 'pakistanFederalConstitutionalCourtPressReleases2026',
+    label: 'Federal Constitutional Court of Pakistan — Press Releases',
+    url: 'https://fccp.gov.pk/press-release',
+    note: 'Official FCCP press-release index includes full-court and judicial-year commencement notices of 15–16 September 2026, among other 2026 institutional notices. Used narrowly to establish the Court’s reported institutional activity by the review horizon, not docket completeness, decisional independence, public accessibility or effectiveness; no institutional prose or media is republished.',
+    accessDate: '2026-09-23', creators: ['Federal Constitutional Court of Pakistan'], institution: 'Federal Constitutional Court of Pakistan',
+    publicationDate: '2026-09-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'official court press-release register', identifiers: {},
+    description: 'The Court’s own current institutional notice index, used only to date reported activity and the 2026–27 judicial-year opening. It is institutional self-report rather than independent evidence about court performance.'
+  },
+  {
+    id: 'pakistanICJ27thAmendment2025',
+    label: 'International Commission of Jurists — Pakistan: Dismantling Justice (13 November 2025)',
+    url: 'https://www.icj.org/pakistan-dismantling-justice-a-full-frontal-assault-on-the-rule-of-law/',
+    note: 'Critical statement by an international legal NGO on the 27th Amendment, also describing concerns about the 26th Amendment; used as an attributed assessment of appointments, transfers, jurisdiction and immunities. It is advocacy/legal analysis, not a Pakistani court judgment, official legislative history or consensus account. Link and independently paraphrase only; no page wording or image is republished.',
+    accessDate: '2026-09-23', creators: ['International Commission of Jurists'], institution: 'International Commission of Jurists',
+    publicationDate: '2025-11-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'legal NGO statement / attributed assessment', identifiers: {},
+    description: 'ICJ’s critical legal assessment of the 27th Amendment and judicial independence. It records the organization’s position and the provisions it discusses, not a binding adjudication or neutral finding of effects.'
+  },
+  {
+    id: 'pakistanUNSRJudicialIndependence2025',
+    label: 'UN Special Rapporteur on the independence of judges and lawyers — Communication OL PAK 14/2025 (28 November 2025)',
+    url: 'https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=30571',
+    note: 'Official communication by Special Rapporteur Margaret Satterthwaite to Pakistan following enactment of the 27th Amendment. The mandate states that the letter is not a comprehensive analysis and raises concerns about judicial appointments, transfers, jurisdiction, immunities and remedies. It is an expert mandate communication, not a court ruling; link and independently summarize only, with no text or PDF republished.',
+    accessDate: '2026-09-23', creators: ['Margaret Satterthwaite, UN Special Rapporteur on the independence of judges and lawyers'], institution: 'Office of the United Nations High Commissioner for Human Rights, Special Procedures',
+    publicationDate: '2025-11-28', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'UN Special Procedures communication / attributed expert assessment', identifiers: { reference: 'OL PAK 14/2025' },
+    description: 'Public communication by a UN mandate-holder about the amendment’s possible implications for judicial independence and human rights. It expresses concerns and requests careful review; it is not a binding finding by a UN court or treaty body.'
+  },
+  {
     id: 'jaffrelotPakistanCrossroads2016',
     label: 'Christophe Jaffrelot (ed.) — Pakistan at the Crossroads: Domestic Dynamics and External Pressures (2016)',
     url: 'https://cup.columbia.edu/book/pakistan-at-the-crossroads/9780231540254/',
