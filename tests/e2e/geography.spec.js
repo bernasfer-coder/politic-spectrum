@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(155);
+  await expect(page.locator('.geo-card')).toHaveCount(156);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -19,6 +19,19 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.goForward();
   await expect(page.locator('.geo-card')).toHaveCount(1);
+});
+
+test('Romania’s election-crisis case is bounded, sourced and searchable by country', async ({ page }) => {
+  await page.goto('/#geography');
+  await page.getByRole('combobox', { name: /Country/ }).selectOption('map-642');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('2024–2025');
+  await expect(card).toContainText('Romanian presidential-election annulment and repeat election');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('sources do not justify a stable six-axis score');
+  await expect(card).toContainText('without prejudging admissibility or merits');
+  await expect(card.getByRole('link', { name: 'Bibliography & rights record →' }).first()).toBeVisible();
 });
 
 test('shared cases link to the encyclopedia and bibliography, and return to the atlas', async ({ page }) => {
@@ -57,7 +70,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(155);
+  await expect(page.locator('.geo-card')).toHaveCount(156);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

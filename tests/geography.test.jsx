@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(155);
+    expect(cards()).toHaveLength(156);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -27,6 +27,16 @@ describe('geographic atlas', () => {
     await user.click(screen.getByRole('button', { name: 'Reset atlas filters' }));
     await user.selectOptions(screen.getByRole('combobox', { name: 'Connection' }), 'experimented');
     expect(cards()[0]).toHaveTextContent('Democratic confederalism');
+  });
+
+  it('shows Romania’s bounded election-annulment case and attributed evidence limits', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-642');
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('2024–2025');
+    expect(cards()[0]).toHaveTextContent('sources do not justify a stable six-axis score');
+    expect(cards()[0]).toHaveTextContent('without prejudging admissibility or merits');
   });
 
   it('shows label context before cases without inventing scored cards', async () => {

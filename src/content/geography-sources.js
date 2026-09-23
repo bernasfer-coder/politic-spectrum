@@ -9106,6 +9106,116 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'romaniaCcrElectionAnnulment2024',
+    label: 'Romanian Constitutional Court — Decision 32/2024 annulling the presidential election process (6 December 2024)',
+    url: 'https://legislatie.just.ro/Public/FormaPrintabila/00000G1NL9GYDZBK3E1028VNFCO1OA4E',
+    note: 'Official Romanian-language Constitutional Court decision and operative annulment record consulted. Its recital of declassified security documents, campaign-finance and online-campaign concerns is recorded as the Court’s stated reasoning, not independently verified fact. No decision text, translation or facsimile is reproduced.',
+    accessDate: '2026-09-23', creators: ['Curtea Constituțională a României'], institution: 'Portal Legislativ, Romanian Ministry of Justice',
+    publicationDate: '2024-12-06', evidenceRole: 'primary', confidence: 'high', languages: ['Romanian'],
+    sourceType: 'Romanian Constitutional Court decision / official legal record', identifiers: { decision: 'Hotărârea nr. 32/2024' },
+    description: 'Official legal record of the Constitutional Court’s 6 December 2024 decision to annul the presidential-election process. It establishes what the Court decided and the rationale it stated, not the truth of every allegation it recited or the proportionality and legality of the decision as assessed by other institutions.'
+  },
+  {
+    id: 'romaniaCcrRepeatElectionValidation2025',
+    label: 'Romanian Constitutional Court — Decision 43/2025 confirming the repeat presidential-election result (22 May 2025)',
+    url: 'https://legislatie.just.ro/Public/FormaPrintabila/00000G0K344VYUUK2TD045DHYUE6Y5A6',
+    note: 'Official Romanian-language Constitutional Court decision consulted for the 18 May 2025 runoff result and final validation. The decision is a primary result-validation record, not evidence of voter motives, campaign equality or public consensus. No text or result table is reproduced.',
+    accessDate: '2026-09-23', creators: ['Curtea Constituțională a României'], institution: 'Portal Legislativ, Romanian Ministry of Justice',
+    publicationDate: '2025-05-22', evidenceRole: 'primary', confidence: 'high', languages: ['Romanian'],
+    sourceType: 'Romanian Constitutional Court decision / official election-result validation', identifiers: { decision: 'Hotărârea nr. 43/2025' },
+    description: 'Official record confirming the 18 May 2025 second-round presidential result and concluding the repeat election’s legal validation. It anchors the case endpoint without implying that formal validation resolves every question about electoral quality or political legitimacy.'
+  },
+  {
+    id: 'romaniaVeniceCommissionAnnulmentStandards2025',
+    label: 'Venice Commission — Urgent Report on the Cancellation of Election Results by Constitutional Courts (CDL-AD(2025)003)',
+    url: 'https://www.venice.coe.int/webforms/documents/default.aspx?pdffile=CDL-AD%282025%29003-e',
+    note: 'English-language comparative legal report consulted for its scope, general standards and Romania chronology. The Commission expressly does not adjudicate the Romanian facts or assess the merits of the Constitutional Court’s particular decision; its principles are not attributed as a finding that the annulment was lawful or unlawful. No report text is reproduced.',
+    accessDate: '2026-09-23', creators: ['European Commission for Democracy through Law (Venice Commission)'], institution: 'Council of Europe',
+    publicationDate: '2025-01-27', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Council of Europe urgent comparative constitutional-law report', identifiers: { document: 'CDL-AD(2025)003' },
+    description: 'Comparative standards on constitutional-court cancellation of election results, alongside a concise account of the Romanian 2024 chronology. It is a general standards report rather than a Romanian factual inquiry or merits judgment.'
+  },
+  {
+    id: 'romaniaEcthrInterimMeasuresNotice2025',
+    label: 'European Court of Human Rights — No interim measures issued against annulment of Romanian presidential election (21 January 2025)',
+    url: 'https://hudoc.echr.coe.int/app/conversion/pdf/?filename=No+interim+measures+issued+against+annulment+of+Romanian+presidential+election.pdf&id=003-8138373-11400351&library=ECHR',
+    note: 'Court press notice consulted for the refusal of an interim-measures request. The notice says the request fell outside Rule 39’s scope and does not prejudge admissibility or the merits; it is not an ECtHR endorsement or merits ruling on the annulment. No notice wording or PDF page is reproduced.',
+    accessDate: '2026-09-23', creators: ['European Court of Human Rights'], institution: 'Council of Europe',
+    publicationDate: '2025-01-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'European Court of Human Rights procedural press notice', identifiers: { application: 'No. 37327/24' },
+    description: 'A narrowly procedural notice regarding a Rule 39 request. It establishes neither the admissibility or merits of a later application nor the legality of the underlying election annulment.'
+  },
+  {
+    id: 'romaniaOdihrRepeatElectionFinalReport2025',
+    label: 'OSCE/ODIHR — Romania’s repeat presidential election 2025: Limited Election Observation Mission Final Report',
+    url: 'https://odihr.osce.org/odihr/elections/romania/600313',
+    note: 'ODIHR publication page and final-report conclusions consulted. Findings are attributed to the limited observation mission: it assessed the repeat May 2025 election as efficiently managed with genuine political choice and respected association/assembly, while identifying weak oversight, online inauthentic-behaviour concerns, fragmented digital oversight and legal-certainty/inclusion problems. Observation is not a court judgment or a full audit of voter motives and every campaign event. No report prose or tables are reproduced.',
+    accessDate: '2026-09-23', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe',
+    publicationDate: '2025-10-28', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international limited election-observation mission final report', identifiers: { report: 'Romania 2025 repeat presidential election, final report' },
+    description: 'Independent international observation of the repeat May 2025 presidential election. Its findings document both administrative performance and remaining campaign, candidate-eligibility and online-oversight concerns, without treating one election observation as a total account of Romanian democracy.'
+  },
+  {
+    id: 'romaniaIancuMilitantDemocracy2025',
+    label: 'Bogdan Iancu — “Militant Democracy and Rule of Law in Three Paradoxes: The Annulment of the Romanian Presidential Elections” (2025)',
+    url: 'https://link.springer.com/article/10.1007/s40803-025-00245-8',
+    note: 'Full open-access English-language journal article and publisher metadata consulted. Iancu frames the annulment through militant-democracy and rule-of-law paradoxes and offers a critical constitutional analysis; this is an attributed scholarly argument, not a court holding or settled consensus. Only original synthesis and a link are published; no quotation, translation, figure or table is reproduced.',
+    accessDate: '2026-09-23', creators: ['Bogdan Iancu'], institution: 'Hague Journal on the Rule of Law, Springer Nature',
+    publicationDate: '2025-04-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed open-access legal article', identifiers: { doi: '10.1007/s40803-025-00245-8' },
+    description: 'Article-length legal interpretation of the annulment through the tensions between democratic self-defence, majority choice, constitutional procedure and judicial power. The author’s analysis is attributed and does not establish a final judicial or scholarly consensus.'
+  },
+  {
+    id: 'romaniaLorenzMarisPoliticsSociety2026',
+    label: 'Astrid Lorenz and Daniela-Maria Mariș (eds.) — Politics and Society in Romania: The Beginning of a New Transition? (2026)',
+    url: 'https://link.springer.com/book/10.1007/978-3-658-49515-2',
+    note: 'Publisher book page, bibliographic metadata, contents and abstracts consulted; the volume’s full chapters were not accessible. The chapter by Sergiu Mișcoiu on parties and elections (1990–2025) and Marius Balan on jurisdictional conflict among Parliament, President and Government are used only as publisher-disclosed research leads and contextual scholarly perspectives, not as independently reviewed evidence for event-specific claims. No book or chapter text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Astrid Lorenz', 'Daniela-Maria Mariș'], institution: 'Springer Wiesbaden',
+    publicationDate: '2026-01-01', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly edited book on Romanian politics and society', identifiers: { doi: '10.1007/978-3-658-49515-2', isbn: '978-3-658-49515-2', pages: 'VIII, 267' },
+    description: 'Edited volume on post-1989 Romanian politics and society, including publisher-listed chapters on political parties and elections through 2025 and jurisdictional conflict among Parliament, President and Government. Bibliographic and abstract-level consultation only; full-text verification remains outstanding.'
+  },
+  {
+    id: 'romaniaMiscoiuPartiesElections2026',
+    label: 'Sergiu Mișcoiu — “A Story of Splits and Mergers. Political Parties and Elections in Romania, 1990 to 2025” (2026)',
+    url: 'https://link.springer.com/chapter/10.1007/978-3-658-49515-2_8',
+    note: 'Publisher chapter page, metadata and abstract only; full chapter inaccessible. Its declared scope is Romania’s parties and elections, 1990–2025. No claim about its detailed explanation of the 2024–2025 crisis is made beyond the publisher’s metadata; it is a book-level contextual source and a priority for full-text follow-up.',
+    accessDate: '2026-09-23', creators: ['Sergiu Mișcoiu'], institution: 'Springer Wiesbaden',
+    publicationDate: '2026-01-02', evidenceRole: 'secondary', confidence: 'low', languages: ['English'],
+    sourceType: 'academic book chapter on Romanian parties and elections', identifiers: { doi: '10.1007/978-3-658-49515-2_8', pages: '121–143' },
+    description: 'Book chapter’s scope and publication metadata are catalogued as a research lead only. The full text, underlying sources and event-specific argument have not been reviewed.'
+  },
+  {
+    id: 'romaniaBalanConstitutionalJurisdiction2026',
+    label: 'Marius Balan — “Instabilities and Conflicts of Jurisdiction: Parliament, President, and Government in Romania” (2026)',
+    url: 'https://link.springer.com/chapter/10.1007/978-3-658-49515-2_9',
+    note: 'Publisher chapter page, contents and abstract only; full chapter inaccessible. The abstract identifies the December 2024 annulment crisis as an especially serious jurisdictional conflict. No detailed factual claim is attributed to the chapter without full-text review; a priority for follow-up.',
+    accessDate: '2026-09-23', creators: ['Marius Balan'], institution: 'Springer Wiesbaden',
+    publicationDate: '2026-01-02', evidenceRole: 'secondary', confidence: 'low', languages: ['English'],
+    sourceType: 'academic book chapter on Romanian constitutional jurisdiction', identifiers: { doi: '10.1007/978-3-658-49515-2_9', pages: '145–166' },
+    description: 'Book chapter with a declared focus on jurisdictional conflicts among Romania’s Parliament, President and Government. Publisher abstract only; its analysis and cited evidence remain to be checked in the full text.'
+  },
+  {
+    id: 'romaniaStanVanceaPostCommunistProgress2024',
+    label: 'Lavinia Stan and Diane Vancea (eds.) — Post-Communist Progress and Stagnation at 35: The Case of Romania (2024)',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-55750-7',
+    note: 'Publisher book page, bibliographic record, table of contents and chapter summaries consulted; the full edited volume was not accessible. Used as an independent, pre-crisis book-length context on post-1989 institutional development, parties, civil society, media and civil–military/intelligence relations, not as evidence about the 2024 election event. No text, chapter, quotation or table is reproduced.',
+    accessDate: '2026-09-23', creators: ['Lavinia Stan', 'Diane Vancea'], institution: 'Palgrave Macmillan Cham',
+    publicationDate: '2024-04-29', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly edited book on post-communist Romanian politics and society', identifiers: { doi: '10.1007/978-3-031-55750-7', isbn: '978-3-031-55750-7', pages: 'XXVII, 304' },
+    description: 'Independent edited book-length account of Romania’s post-communist institutional, party, civil-society and social development. Its contributors present distinct interpretations; publisher metadata and abstracts only were consulted here, and the book does not directly establish facts about the later annulment.'
+  },
+  {
+    id: 'romaniaMungiuPippidiGovernance2015',
+    label: 'Alina Mungiu-Pippidi — The Quest for Good Governance: How Societies Develop Control of Corruption (2015)',
+    url: 'https://www.cambridge.org/core/books/quest-for-good-governance/4FC4343AEFA5A729C0C95979AAAA8FCE',
+    note: 'Cambridge University Press monograph record, abstract and bibliographic metadata used as comparative background on governance and corruption-control frameworks. The book was not read in full and is not used to assert election-specific misconduct, Romanian outcomes in 2024, or current institutional performance. No book text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Alina Mungiu-Pippidi'], institution: 'Cambridge University Press',
+    publicationDate: '2015-01-01', evidenceRole: 'secondary', confidence: 'low', languages: ['English'],
+    sourceType: 'book-length comparative study of governance and corruption control', identifiers: { doi: '10.1017/CBO9781316286937', isbn: '9781316286937', pages: '314' },
+    description: 'Comparative governance framework consulted only at publisher-record level. It supplies a distinct book-length lens on institutional constraints, but not direct evidence about the Romanian election crisis.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9188,6 +9298,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
+      : source.id.startsWith('romania') ? 'Romanian constitutional, electoral and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
