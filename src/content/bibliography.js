@@ -4,6 +4,96 @@ import { GEOGRAPHY_SOURCE_METADATA } from './geography-sources.js';
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
   ...GEOGRAPHY_SOURCE_METADATA,
+  kraussPekkanenRiseFallLdp2011: {
+    accessDate: '2026-09-23', creators: ['Ellis S. Krauss', 'Robert J. Pekkanen'], institution: 'Cornell University Press',
+    sourceType: 'book-length scholarly study of Japanese party organization and electoral institutions', evidenceRole: 'secondary', discipline: 'Japanese politics and comparative political institutions',
+    publicationDate: '2011', publisher: 'Cornell University Press', identifiers: { isbn: '9780801476822', doi: '10.7591/9780801460029', pages: '318' }, confidence: 'high', languages: ['English'],
+    description: 'A book-length historical-institutionalist study of the Liberal Democratic Party, electoral rules, organizational adaptation and its 2009 loss of national power. It supplies a focused pre-episode frame for party organization, not an account of the Takaichi government or later coalition realignment.',
+  },
+  pekkanenOxfordHandbookJapanesePolitics2020: {
+    accessDate: '2026-09-23', creators: ['Robert J. Pekkanen (editor)', 'Saadia M. Pekkanen (editor)'], institution: 'Oxford University Press',
+    sourceType: 'scholarly edited reference volume on Japanese politics', evidenceRole: 'secondary', discipline: 'Japanese politics, institutions, political economy and international relations',
+    publicationDate: '2020-09-02', publisher: 'Oxford University Press', identifiers: { doi: '10.1093/oxfordhb/9780190050993.001.0001', printIsbn: '9780190050993', onlineIsbn: '9780190051006', printPublicationDate: '2022-01-13' }, confidence: 'high', languages: ['English'],
+    description: 'An edited state-of-the-field volume whose documented scope includes the Constitution, Diet, prime minister, parties, coalitions, public opinion, social policy and international security. It is a distinct book-length scholarly frame for Japanese politics, published before the 2025–2026 episode; publisher contents and bibliographic record were consulted, not every chapter.',
+  },
+  maclachlanJapanIn2025AsianSurvey2026: {
+    accessDate: '2026-09-23', creators: ['Patricia L. Maclachlan'], institution: 'University of California Press',
+    sourceType: 'peer-reviewed annual scholarly survey article', evidenceRole: 'secondary', discipline: 'Japanese domestic and foreign affairs',
+    publicationDate: '2026-04-01', publisher: 'Asian Survey 66(2), 191–203', identifiers: { doi: '10.1525/as.2026.66.2.191' }, confidence: 'medium', languages: ['English'],
+    description: 'A peer-reviewed annual survey article whose publisher abstract identifies Japan’s 2025 upper-house coalition loss, Takaichi’s LDP leadership and premiership, and external-policy uncertainty. The full article is access-controlled; this project uses its bibliographic record and abstract only, not as a substitute for the complete article or underlying sources.',
+  },
+  chaiCrabtreeTakaichiRepresentation2026: {
+    accessDate: '2026-09-23', creators: ['Peter Chai', 'Charles Crabtree'], institution: 'Monash University research repository / Asia-Pacific Journal: Japan Focus',
+    sourceType: 'peer-reviewed scholarly article on descriptive and substantive representation', evidenceRole: 'secondary', discipline: 'Japanese politics, gender and political representation',
+    publicationDate: '2026-04-15', publisher: 'Asia-Pacific Journal: Japan Focus 24, 1–6', identifiers: { volume: '24', pages: '1–6', issn: '1557-4660' }, confidence: 'medium', languages: ['English'],
+    description: 'A peer-reviewed article examining the distinction between Takaichi’s descriptive representation as the first woman prime minister and substantive gender representation after the 2026 lower-house supermajority. The institutional record supplies abstract and bibliographic metadata; this entry does not claim that the entire article or its underlying empirical literature was independently reviewed.',
+  },
+  japanLdpLeadershipElection2025: {
+    accessDate: '2026-09-23', creators: ['Liberal Democratic Party of Japan'], institution: 'Liberal Democratic Party of Japan',
+    sourceType: 'primary party leadership election record', evidenceRole: 'primary', discipline: 'Japanese party politics',
+    publicationDate: '2025-10-04', publisher: 'Liberal Democratic Party of Japan', identifiers: { electionDate: '2025-10-04', office: 'LDP president' }, confidence: 'high', languages: ['Japanese'],
+    description: 'The LDP’s own account of its 4 October 2025 presidential election records Sanae Takaichi’s runoff victory and the party’s internal vote totals. It establishes the party’s selection of its leader, not her national appointment, voter support or a change in public ideology.',
+  },
+  japanKomeitoCoalitionExit2025: {
+    accessDate: '2026-09-23', creators: ['Komeito; Tetsuo Saito'], institution: 'Komeito',
+    sourceType: 'primary party statement on coalition negotiations', evidenceRole: 'primary', discipline: 'Japanese coalition politics and party finance',
+    publicationDate: '2025-10-11', publisher: 'Komeito', identifiers: { announced: '2025-10-10' }, confidence: 'high', languages: ['Japanese'],
+    description: 'Komeito’s report of its leader’s 10 October announcement ending the LDP–Komeito governing partnership attributes the decision to disagreement over political-funds reform. This is evidence of Komeito’s stated rationale, not an independent finding about all causes or the LDP’s account.',
+  },
+  japanLdpJipCoalitionAgreement2025: {
+    accessDate: '2026-09-23', creators: ['Liberal Democratic Party of Japan', 'Japan Innovation Party'], institution: 'Liberal Democratic Party of Japan and Japan Innovation Party',
+    sourceType: 'primary coalition agreement and party announcement', evidenceRole: 'primary', discipline: 'Japanese coalition government and policy commitments',
+    publicationDate: '2025-10-20', publisher: 'Liberal Democratic Party of Japan', identifiers: { agreementDate: '2025-10-20', policyItems: '12' }, confidence: 'high', languages: ['Japanese'],
+    description: 'The parties’ signed coalition agreement and LDP announcement document the new governing partnership and its stated policy agenda, including prices, social security, constitutional and security questions and political reform. They record commitments, not their implementation, public support or policy effects.',
+  },
+  japanPrimeMinisterDesignation2025: {
+    accessDate: '2026-09-23', creators: ['House of Councillors, National Diet of Japan'], institution: 'House of Councillors, National Diet of Japan',
+    sourceType: 'primary parliamentary prime-ministerial designation record', evidenceRole: 'primary', discipline: 'Japanese parliamentary constitutional practice',
+    publicationDate: '2025-10-21', publisher: 'House of Councillors', identifiers: { sittingDate: '2025-10-21' }, confidence: 'high', languages: ['English'],
+    description: 'The upper-house institutional report records that the Diet held an open ballot followed by a runoff and designated Sanae Takaichi as prime minister on 21 October 2025. It establishes the formal parliamentary event, not political support beyond that vote.',
+  },
+  japanHouseCouncillorsElection2025Ipu: {
+    accessDate: '2026-09-23', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union, Parline',
+    sourceType: 'institutional parliamentary election results record', evidenceRole: 'primary', discipline: 'Japanese elections and parliamentary composition',
+    publicationDate: '2025-07-20', publisher: 'Inter-Parliamentary Union, Parline', identifiers: { electionDate: '2025-07-20', chamber: 'House of Councillors', officialResults: 'Ministry of Internal Affairs and Communications' }, confidence: 'high', languages: ['English'],
+    description: 'IPU Parline records the 20 July 2025 upper-house election, seats contested and chamber composition, citing Japanese election authorities. Its result establishes the LDP–Komeito coalition’s loss of a majority in that chamber; it does not explain voter motives or by itself describe the lower house or national executive.',
+  },
+  japanDissolutionAnnouncement2026Kantei: {
+    accessDate: '2026-09-23', creators: ['Sanae Takaichi, Prime Minister of Japan'], institution: 'Prime Minister’s Office of Japan',
+    sourceType: 'primary executive dissolution announcement', evidenceRole: 'primary', discipline: 'Japanese executive and electoral politics',
+    publicationDate: '2026-01-19', publisher: 'Prime Minister’s Office of Japan', identifiers: { announcedDissolutionDate: '2026-01-23' }, confidence: 'high', languages: ['Japanese'],
+    description: 'The prime minister’s 19 January press conference records her decision to dissolve the House on 23 January and her stated reasons for seeking an electoral decision. It is executive self-description, not evidence of voter motives or a neutral assessment of whether dissolution was necessary.',
+  },
+  japanDissolutionElectionCalendar2026Diet: {
+    accessDate: '2026-09-23', creators: ['House of Representatives, National Diet of Japan'], institution: 'House of Representatives, National Diet of Japan',
+    sourceType: 'primary parliamentary election chronology', evidenceRole: 'primary', discipline: 'Japanese parliamentary and electoral history',
+    publicationDate: '2026', publisher: 'House of Representatives', identifiers: { dissolutionDate: '2026-01-23', electionDate: '2026-02-08', nextDietConvocation: '2026-02-18' }, confidence: 'high', languages: ['Japanese'],
+    description: 'The official House election chronology lists the 51st general election following the 23 January 2026 dissolution, polling on 8 February and the 18 February post-election Diet session. It anchors dates, not campaign conditions, motives or democratic quality.',
+  },
+  japanHouseElectionResults2026Ipu: {
+    accessDate: '2026-09-23', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union, Parline',
+    sourceType: 'institutional parliamentary election results record', evidenceRole: 'primary', discipline: 'Japanese elections and parliamentary composition',
+    publicationDate: '2026-02-08', publisher: 'Inter-Parliamentary Union, Parline', identifiers: { electionDate: '2026-02-08', chamber: 'House of Representatives', seats: '465', officialResults: 'Ministry of Internal Affairs and Communications' }, confidence: 'high', languages: ['English'],
+    description: 'IPU Parline records party seat returns, turnout and elected-member sex for the 8 February 2026 House election, citing Japan’s Ministry of Internal Affairs and Communications among its sources. It reports 315 LDP candidates elected and notes a later independent affiliation that brought the LDP parliamentary group to 316; these are distinct counts, and neither measures voter motivation or consent.',
+  },
+  japanHouseComposition2026Diet: {
+    accessDate: '2026-09-23', creators: ['House of Representatives, National Diet of Japan'], institution: 'House of Representatives, National Diet of Japan',
+    sourceType: 'primary parliamentary membership roster', evidenceRole: 'primary', discipline: 'Japanese parliamentary composition',
+    publicationDate: '2026-02-18', publisher: 'House of Representatives', identifiers: { asOf: '2026-02-18', totalMembers: '465' }, confidence: 'high', languages: ['English'],
+    description: 'The official House composition table dated 18 February 2026 lists 316 members in the LDP group and 36 in the Japan Innovation Party group. It records parliamentary affiliation after the election, not only candidates elected under each party label.',
+  },
+  japanHouseElectionResults2026Soumu: {
+    accessDate: '2026-09-23', creators: ['Ministry of Internal Affairs and Communications, Japan'], institution: 'Ministry of Internal Affairs and Communications, Japan',
+    sourceType: 'primary national election results portal', evidenceRole: 'primary', discipline: 'Japanese electoral administration',
+    publicationDate: '2026-02-08', publisher: 'Ministry of Internal Affairs and Communications, Japan', identifiers: { electionDate: '2026-02-08', election: '51st House of Representatives general election' }, confidence: 'high', languages: ['Japanese'],
+    description: 'The ministry’s official election-results portal is cited by IPU Parline as a source for the 2026 House result. It is linked for primary-result provenance; this project does not reproduce its tables or treat election administration figures as independent evidence of fairness or voter motives.',
+  },
+  japanCabinetReshuffle2026Kantei: {
+    accessDate: '2026-09-23', creators: ['Prime Minister’s Office of Japan'], institution: 'Prime Minister’s Office of Japan',
+    sourceType: 'primary Cabinet inauguration and official executive record', evidenceRole: 'primary', discipline: 'Japanese executive institutions',
+    publicationDate: '2026-09-17', publisher: 'Prime Minister’s Office of Japan', identifiers: { eventDate: '2026-09-17', cabinet: 'Reshuffled Second Takaichi Cabinet' }, confidence: 'high', languages: ['Japanese', 'English'],
+    description: 'The official Prime Minister’s Office record documents the 17 September 2026 reshuffle of the Second Takaichi Cabinet. It supplies a dated endpoint for the case, not an evaluation of cabinet policy or a guarantee of status after that date.',
+  },
   indonesiaCourt90AgeRuling2023: {
     accessDate: '2026-09-23', creators: ['Mahkamah Konstitusi Republik Indonesia'], institution: 'Constitutional Court of the Republic of Indonesia',
     sourceType: 'primary constitutional adjudication / official judgment', evidenceRole: 'primary', discipline: 'Indonesian constitutional and electoral law',

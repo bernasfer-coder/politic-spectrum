@@ -1,0 +1,51 @@
+export const JAPAN_2025_GEOGRAPHY_LABELS = [{
+  id: 'japanese-2025-2026-ldp-coalition-realignment-and-takaichi-government',
+  name: 'Japanese 2025–2026 LDP coalition realignment and Takaichi government',
+  aliases: ['Japan political history 2025–2026', 'Takaichi cabinets 2025–2026', 'LDP–Komeito coalition break and LDP–JIP government', 'Japanese 2026 House of Representatives election'],
+  family: 'Postwar parliamentary, party-government, conservative and coalition traditions',
+  description: 'A bounded Japanese political-history case from the July 2025 House of Councillors election and October Liberal Democratic Party leadership and coalition changes through the 8 February 2026 House election and the documented 17 September Cabinet reshuffle. It traces the LDP’s selection of Sanae Takaichi, Komeito’s stated decision to end its governing partnership, the LDP–Japan Innovation Party agreement, Diet designation of the prime minister, snap dissolution and lower-house result. It distinguishes party and executive self-description, parliamentary membership and election returns, and campaign promises from policy implementation; it is not an ideological profile of Japan or Japanese people, nor a measure of voter motives or public consent.',
+  sourceIds: [
+    'kraussPekkanenRiseFallLdp2011', 'pekkanenOxfordHandbookJapanesePolitics2020',
+    'maclachlanJapanIn2025AsianSurvey2026', 'chaiCrabtreeTakaichiRepresentation2026',
+    'japanLdpLeadershipElection2025', 'japanKomeitoCoalitionExit2025', 'japanLdpJipCoalitionAgreement2025',
+    'japanPrimeMinisterDesignation2025', 'japanHouseCouncillorsElection2025Ipu',
+    'japanDissolutionAnnouncement2026Kantei', 'japanDissolutionElectionCalendar2026Diet',
+    'japanHouseElectionResults2026Ipu', 'japanHouseComposition2026Diet',
+    'japanHouseElectionResults2026Soumu', 'japanCabinetReshuffle2026Kantei',
+  ],
+  relatedEntries: [
+    { id: 'liberal-constitutionalist', note: 'The elected Diet, formal prime-ministerial designation and competitive lower-house election invite a bounded parliamentary-constitutional comparison; these records do not establish equal political access, accountability, policy outcomes or a comprehensive liberal-democratic classification.' },
+    { id: 'national-conservative', note: 'The coalition agreement and election campaign foreground national strength, constitutional revision and security policy; they are party and coalition programmes, not evidence that all Japanese voters or institutions share one national-conservative outlook.' },
+    { id: 'social-democratic', note: 'Cost-of-living, social-security and household-assistance measures appear in official coalition and executive statements, but those policy commitments do not classify the coalition as social democratic or establish implementation and distributional effects.' },
+    { id: 'militarist-imperialist', note: 'The agreement’s security and defence proposals warrant specific foreign-policy research; proposals and executive announcements alone do not demonstrate militarism, imperial intent or implemented outcomes.' },
+    { id: 'populist', note: 'The prime minister publicly framed the snap election as a request for voters to decide whether she should govern; that bounded appeal is not by itself sufficient to classify the cabinet or election as populist.' },
+  ],
+}];
+
+export const JAPAN_2025_GEOGRAPHY_CASES = [{
+  id: 'japanese-2025-2026-ldp-coalition-realignment-and-takaichi-government',
+  labelId: 'japanese-2025-2026-ldp-coalition-realignment-and-takaichi-government',
+  placeId: 'japan',
+  relationship: 'implemented',
+  actor: 'Sanae Takaichi and the Liberal Democratic Party; Komeito; the Japan Innovation Party; the National Diet and Cabinet; competing parliamentary parties and election administrators; and voters whose motivations cannot be inferred from aggregate results',
+  historicalSetting: 'Japan’s July 2025 House of Councillors election; LDP presidential election and Komeito coalition withdrawal in October 2025; LDP–Japan Innovation Party coalition agreement and prime-ministerial designation; January 2026 House dissolution; February snap election and new House composition; and the September 2026 Cabinet reshuffle',
+  startYear: 2025,
+  endYear: 2026,
+  periodLabel: '2025–2026 · coalition realignment, Takaichi premiership and snap lower-house election',
+  datePrecision: 'year',
+  evidenceKind: 'official party, Diet, executive and election records; two pre-period book-length scholarly frames; and peer-reviewed research-record abstracts',
+  confidence: 'medium',
+  reviewedAt: '2026-09-23',
+  claim: 'The July 2025 House of Councillors election left the LDP–Komeito governing bloc without a majority in that chamber: IPU Parline records 47 coalition seats among the 125 contested and 121 of 248 overall. The LDP’s own report says Sanae Takaichi won its 4 October presidential runoff; Komeito’s 11 October account attributes its 10 October decision to end the coalition to disagreement over political-funds reform, a statement of that party’s rationale rather than an independently adjudicated cause. On 20 October the LDP and Japan Innovation Party signed a coalition agreement; the House of Councillors records Takaichi’s designation as prime minister on 21 October after a runoff in the Diet. On 19 January 2026 Takaichi publicly announced her decision to dissolve the House; the House’s official election chronology records dissolution on 23 January and the general election on 8 February. IPU’s return reports 315 LDP candidates elected and 36 Japan Innovation Party members elected, then notes one independent joined the LDP; the House’s official composition record lists 316 LDP and 36 Japan Innovation Party members on 18 February. The distinction between 315 elected and 316 subsequent parliamentary affiliation is retained. IPU reports 68 women among the 465 elected members (14.6%). The official Prime Minister’s Office record documents a Cabinet reshuffle on 17 September 2026. These are dated institutional events, not evidence of why individual voters voted, policy success, public consent or an enduring ideological shift. Krauss and Pekkanen’s book-length study of LDP organization and electoral institutions ends before this episode; the Oxford Handbook is a distinct pre-period scholarly survey covering Japanese institutions, parties, coalitions, public policy and international relations. Patricia Maclachlan’s 2026 Asian Survey article reviews Japan’s 2025 political year, while Peter Chai and Charles Crabtree’s 2026 article explicitly distinguishes a woman’s descriptive presence in office from substantive gender representation. The book records and publisher abstracts provide context, not a period-specific book-length interpretation or scholarly consensus. The case therefore reports no six-axis scores: policy texts speak to economic and security agendas but not outcomes; the female premiership and the lower house’s 14.6% elected-women share are distinct measures and do not establish broader gender equality; the election and coalition agreement document authority arrangements and stated programmes, not implementation or voter motives; and the selected official records do not support a comprehensive identity, religion or foreign-policy classification.',
+  limitation: 'This is a bounded account of a Japanese governing-coalition and parliamentary sequence, not a six-axis score, current-country profile, or claim that Japan, Japanese voters, women, Takaichi, the LDP, Komeito, Japan Innovation Party, the Diet, Cabinet or any community represents one ideology. The LDP and Komeito give distinct party accounts of their coalition rupture; official party and government descriptions are attributed rather than treated as neutral explanations. The official 2026 election record distinguishes returned candidates from later parliamentary affiliation; seat totals do not establish voter motives, representativeness, fairness, public consent or a mandate on each coalition proposal. Coalition and Cabinet statements record commitments, not enactment, enforcement, social effects or foreign-policy results. The two book-length studies predate 2025; no period-specific book-length synthesis was located for this review date. Maclachlan’s article is publisher-accessible at abstract/metadata level only, and the Chai–Crabtree record was consulted for its abstract and bibliographic metadata, not used as a substitute for the underlying empirical literature. Japanese-language and full-text scholarly debate, Diet and party archives, campaign finance and election observation, women’s substantive representation, regional and local politics, Okinawan and Ainu histories, Zainichi and migrant communities, economic distribution, policy implementation, constitutional change, security outcomes and developments after 17 September 2026 remain open research tasks. No score, election-fairness verdict, policy-outcome finding or claim beyond the dated record is made.',
+  sourceIds: [
+    'kraussPekkanenRiseFallLdp2011', 'pekkanenOxfordHandbookJapanesePolitics2020',
+    'maclachlanJapanIn2025AsianSurvey2026', 'chaiCrabtreeTakaichiRepresentation2026',
+    'japanLdpLeadershipElection2025', 'japanKomeitoCoalitionExit2025', 'japanLdpJipCoalitionAgreement2025',
+    'japanPrimeMinisterDesignation2025', 'japanHouseCouncillorsElection2025Ipu',
+    'japanDissolutionAnnouncement2026Kantei', 'japanDissolutionElectionCalendar2026Diet',
+    'japanHouseElectionResults2026Ipu', 'japanHouseComposition2026Diet',
+    'japanHouseElectionResults2026Soumu', 'japanCabinetReshuffle2026Kantei',
+  ],
+  locator: 'Krauss and Pekkanen, The Rise and Fall of Japan’s LDP (2011); Pekkanen and Pekkanen, eds., The Oxford Handbook of Japanese Politics (online 2020; print 2022); Maclachlan, Asian Survey 66(2), 191–203 (2026; abstract); Chai and Crabtree, Asia-Pacific Journal: Japan Focus 24, 1–6 (2026; abstract/metadata); LDP and Komeito party records; House of Councillors prime-minister designation; IPU Parline 2025 upper-house and 2026 lower-house records; House of Representatives election chronology and 18 February composition; Prime Minister’s Office statements and 17 September cabinet record; Ministry of Internal Affairs and Communications 2026 election-results portal.'
+}];
