@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(156);
+  expect(cards()).toHaveLength(157);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -27,6 +27,16 @@ describe('geographic atlas', () => {
     await user.click(screen.getByRole('button', { name: 'Reset atlas filters' }));
     await user.selectOptions(screen.getByRole('combobox', { name: 'Connection' }), 'experimented');
     expect(cards()[0]).toHaveTextContent('Democratic confederalism');
+  });
+
+  it('keeps Lebanon’s contemporary continuation separately bounded from the post-Taif record', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-422');
+    expect(cards()).toHaveLength(2);
+    expect(cards()[0]).toHaveTextContent('Lebanese post-Taif consociational and protest order');
+    expect(cards()[1]).toHaveTextContent('Lebanese 2022–2026 presidential transition and sovereignty contestation');
+    expect(cards()[1]).toHaveTextContent('through 23 September 2026');
   });
 
   it('shows label context before cases without inventing scored cards', async () => {
