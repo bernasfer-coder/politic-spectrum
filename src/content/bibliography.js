@@ -4,6 +4,102 @@ import { GEOGRAPHY_SOURCE_METADATA } from './geography-sources.js';
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
   ...GEOGRAPHY_SOURCE_METADATA,
+  indonesiaCourt90AgeRuling2023: {
+    accessDate: '2026-09-23', creators: ['Mahkamah Konstitusi Republik Indonesia'], institution: 'Constitutional Court of the Republic of Indonesia',
+    sourceType: 'primary constitutional adjudication / official judgment', evidenceRole: 'primary', discipline: 'Indonesian constitutional and electoral law',
+    publicationDate: '2023-10-16', publisher: 'Constitutional Court of the Republic of Indonesia', identifiers: { caseNumber: '90/PUU-XXI/2023' }, confidence: 'high', languages: ['Indonesian'],
+    description: 'Official judgment establishing an age-eligibility exception for presidential and vice-presidential candidates who have held elected office, including regional-head office. It is primary evidence of the ruling, not of the later election’s fairness or public response.',
+  },
+  indonesiaEthicsCouncilAnwarUsman2023: {
+    accessDate: '2026-09-23', creators: ['Majelis Kehormatan Mahkamah Konstitusi'], institution: 'Constitutional Court of the Republic of Indonesia',
+    sourceType: 'primary judicial-ethics disposition / official institutional record', evidenceRole: 'primary', discipline: 'Indonesian constitutional institutions and judicial ethics',
+    publicationDate: '2023-11-07', publisher: 'Constitutional Court of the Republic of Indonesia', identifiers: {}, confidence: 'high', languages: ['English'],
+    description: 'Official account of the ethics body’s disposition concerning Chief Justice Anwar Usman in connection with the handling of Decision 90. The record identifies removal from the chief-justice position, not removal from the Court or nullification of the judgment.',
+  },
+  indonesiaKpuDecision5042024: {
+    accessDate: '2026-09-23', creators: ['Komisi Pemilihan Umum Republik Indonesia'], institution: 'Jaringan Dokumentasi dan Informasi Hukum Komisi Pemilihan Umum',
+    sourceType: 'primary presidential-election result / official legal record abstract', evidenceRole: 'primary', discipline: 'Indonesian election administration and constitutional history',
+    publicationDate: '2024-04-24', publisher: 'Komisi Pemilihan Umum Republik Indonesia', identifiers: { decisionNumber: '504 Tahun 2024' }, confidence: 'high', languages: ['Indonesian'],
+    description: 'Official KPU abstract for the national determination of the 2024 presidential-election result, recording the winning ticket and certified vote total. Certification is distinguished from independent evaluation of electoral conditions or voter motives.',
+  },
+  indonesiaPrabowoInauguration2024: {
+    accessDate: '2026-09-23', creators: ['Sekretariat Negara Republik Indonesia'], institution: 'Secretariat of State of the Republic of Indonesia',
+    sourceType: 'primary official inauguration record', evidenceRole: 'primary', discipline: 'Indonesian presidential succession and constitutional practice',
+    publicationDate: '2024-10-20', publisher: 'Secretariat of State of the Republic of Indonesia', identifiers: { term: '2024–2029' }, confidence: 'high', languages: ['Indonesian'],
+    description: 'Official executive record of Prabowo Subianto and Gibran Rakabuming Raka taking office on 20 October 2024. It establishes the formal succession event, not an assessment of election quality or later performance.',
+  },
+  indonesiaTniAmendmentLaw2025: {
+    accessDate: '2026-09-23', creators: ['Republik Indonesia'], institution: 'Database Peraturan Badan Pemeriksa Keuangan Republik Indonesia',
+    sourceType: 'primary statute / official legal-information database', evidenceRole: 'primary', discipline: 'Indonesian civil–military relations and statutory law',
+    publicationDate: '2025-03-26', publisher: 'Republic of Indonesia', identifiers: { lawNumber: '3 Tahun 2025', amends: 'Law No. 34 of 2004', status: 'in force' }, confidence: 'high', languages: ['Indonesian'],
+    description: 'Official record and linked full text of the 2025 amendment to the TNI Law. Articles 7 and 47 document legal changes to military non-war operations and categories of civilian posts open to active personnel; statutory permission alone does not establish appointment or implementation.',
+  },
+  indonesiaTniLawFormalReview2025: {
+    accessDate: '2026-09-23', creators: ['Mahkamah Konstitusi Republik Indonesia'], institution: 'Constitutional Court of the Republic of Indonesia',
+    sourceType: 'primary constitutional adjudication / official institutional summary', evidenceRole: 'primary', discipline: 'Indonesian constitutional review and military-law process',
+    publicationDate: '2025-09-17', publisher: 'Constitutional Court of the Republic of Indonesia', identifiers: { caseNumber: '81/PUU-XXIII/2025', reviewType: 'formal review' }, confidence: 'high', languages: ['English'],
+    description: 'Official Court account of rejection of a formal challenge to the enactment process, with four dissenting justices. Its scope is procedural review and it is not treated as a full substantive merits or implementation ruling.',
+  },
+  indonesiaTniLawOhchrCommunication2025: {
+    accessDate: '2026-09-23', creators: ['United Nations Special Procedures'], institution: 'Office of the United Nations High Commissioner for Human Rights',
+    sourceType: 'UN Special Procedures communication / allegations transmitted to government', evidenceRole: 'primary', discipline: 'Indonesian civil–military oversight and human-rights concerns',
+    publicationDate: '2025', publisher: 'Office of the United Nations High Commissioner for Human Rights', identifiers: { communication: 'AL IDN 3/2025' }, confidence: 'high', languages: ['English'],
+    description: 'Communication conveying concerns and information received about legislative consultation, accountability and civilian oversight in relation to the TNI Law amendment. It is not an adjudication, completed investigation or independently verified finding.',
+  },
+  indonesiaCoalitionsPresidents2023: {
+    accessDate: '2026-09-23', creators: ['Marcus Mietzner'], institution: 'Cornell University Press',
+    sourceType: 'book-length scholarly monograph', evidenceRole: 'secondary', discipline: 'Indonesian presidential politics, coalitions and democratic institutions',
+    publicationDate: '2023', publisher: 'Cornell University Press', identifiers: { isbn: '9781501772641', ebookIsbn: '9781501772665', doi: '10.7591/cornell/9781501772641.001.0001' }, confidence: 'high', languages: ['English'],
+    description: 'Book-length analysis of Indonesian presidential coalition-building and limits on presidential power. Used as historical and conceptual framing from earlier administrations, not direct evidence of the Prabowo government’s conduct.',
+  },
+  indonesiaJokowiPresidency2025: {
+    accessDate: '2026-09-23', creators: ['Sana Jaffrey', 'Eve Warburton'], institution: 'ISEAS–Yusof Ishak Institute',
+    sourceType: 'scholarly edited monograph / Indonesia Update Series', evidenceRole: 'secondary', discipline: 'Indonesian democracy, executive politics and political institutions',
+    publicationDate: '2025', publisher: 'ISEAS Publishing', identifiers: { isbn: '9789815306798', hardcoverIsbn: '9789815306828', pages: '311' }, confidence: 'high', languages: ['English'],
+    description: 'Peer-reviewed edited volume with distinct analyses of the Jokowi decade and its transition context. Contributors’ positions are attributed; the collection does not establish subsequent policy implementation or a single scholarly consensus.',
+  },
+  indonesiaPerspectivesDemocracy2025: {
+    accessDate: '2026-09-23', creators: ['Firman Noor', 'Sri Nuryanti'], institution: 'Research Center for Politics, National Research and Innovation Agency (BRIN)',
+    sourceType: 'scholarly edited book', evidenceRole: 'secondary', discipline: 'Indonesian democratic institutions, elections and political development',
+    publicationDate: '2025', publisher: 'Springer Nature Singapore / BRIN', identifiers: { doi: '10.1007/978-981-96-3137-7', pages: '215' }, confidence: 'high', languages: ['English'],
+    description: 'Edited research volume presenting Indonesian perspectives on democratic institutions and adjacent political issues. Publisher metadata and contents, rather than the complete volume, were consulted; it is one set of scholarly chapters, not a consensus report.',
+  },
+  indonesiaNugrohoSyariefTransition2025: {
+    accessDate: '2026-09-23', creators: ['Yanuar Nugroho', 'Sofie Syarief'], institution: 'ISEAS–Yusof Ishak Institute / Cambridge University Press',
+    sourceType: 'scholarly book chapter / annual Southeast Asian Affairs volume', evidenceRole: 'secondary', discipline: 'Indonesian leadership succession and political transition',
+    publicationDate: '2025', publisher: 'ISEAS Publishing / Cambridge University Press', identifiers: { volume: 'Southeast Asian Affairs 2025', pages: '142–158' }, confidence: 'medium', languages: ['English'],
+    description: 'Chapter-length analysis of the Jokowi-to-Prabowo transition. The publisher record and abstract were consulted; its account of coalition continuity and leadership is attributed and not substituted for primary election or legislative records.',
+  },
+  indonesiaBuehlerIndonesia2024: {
+    accessDate: '2026-09-23', creators: ['Michael Buehler'], institution: 'University of California Press',
+    sourceType: 'peer-reviewed annual political analysis', evidenceRole: 'secondary', discipline: 'Indonesian electoral politics and democratic institutions',
+    publicationDate: '2025', publisher: 'Asian Survey 65(2)', identifiers: { pages: '263–274', doi: '10.1525/as.2025.65.2.263' }, confidence: 'medium', languages: ['English'],
+    description: 'Annual peer-reviewed analysis of Indonesia in 2024, framed around Prabowo, patronage and political bargaining. Abstract-level evidence is used as one interpretation of the election period, not a full-text or locality-wide account.',
+  },
+  indonesiaBuehlerIndonesia2025: {
+    accessDate: '2026-09-23', creators: ['Michael Buehler'], institution: 'University of California Press',
+    sourceType: 'peer-reviewed annual political analysis', evidenceRole: 'secondary', discipline: 'Indonesian democratic contestation and executive politics',
+    publicationDate: '2026', publisher: 'Asian Survey 66(2)', identifiers: { pages: '277–288', doi: '10.1525/as.2026.66.2.277' }, confidence: 'medium', languages: ['English'],
+    description: 'Annual peer-reviewed analysis of Indonesia in 2025, interpreting first-year politics through democratic decline and dissent. Abstract-level evidence is cited cautiously; the complete article and its supporting evidence were not independently reviewed.',
+  },
+  indonesiaWadipalapaTransition2026: {
+    accessDate: '2026-09-23', creators: ['Rendy Wadipalapa', 'Poltak Nainggolan', 'Riris Katharina'], institution: 'Taylor & Francis / Universitas Airlangga',
+    sourceType: 'peer-reviewed legislative-studies article', evidenceRole: 'secondary', discipline: 'Indonesian legislative politics and executive transition',
+    publicationDate: '2026', publisher: 'The Journal of Legislative Studies 32(2)', identifiers: { pages: '263–280', doi: '10.1080/13572334.2025.2484488' }, confidence: 'medium', languages: ['English'],
+    description: 'Article interpreting the post-2024 legislative transition and the legislature’s role in succession. The bibliographic record and abstract were reviewed; its causal interpretation is distinguished from primary parliamentary records and is not treated as settled fact.',
+  },
+  indonesiaNgCommandPolitics2026: {
+    accessDate: '2026-09-23', creators: ['Jefferson Ng'], institution: 'ISEAS–Yusof Ishak Institute',
+    sourceType: 'peer-reviewed contemporary political analysis', evidenceRole: 'secondary', discipline: 'Indonesian civil–military relations and executive governance',
+    publicationDate: '2026', publisher: 'Contemporary Southeast Asia 48(2)', identifiers: { doi: '10.1355/cs48-2a' }, confidence: 'medium', languages: ['English'],
+    description: 'Article abstract interprets militarized governance under Prabowo and considers its organizational fragility. It is one scholarly interpretation; abstract-level consultation does not establish appointments, implementation or a general military takeover.',
+  },
+  indonesiaFachirahNurmiyatiPrabowo2026: {
+    accessDate: '2026-09-23', creators: ['Dhia Fachirah', 'Niken Nurmiyati'], institution: 'Universitas Islam Negeri Alauddin Makassar',
+    sourceType: 'peer-reviewed Indonesian political-science article', evidenceRole: 'secondary', discipline: 'Indonesian democratic change and presidential politics',
+    publicationDate: '2026', publisher: 'Jurnal Politik Profetik 14(1)', identifiers: { pages: '43–60', doi: '10.24252/profetik.v14i1a3' }, confidence: 'medium', languages: ['Indonesian', 'English'],
+    description: 'Indonesian-language article interpreting the first year of Prabowo’s presidency and debates about democratic regression. Bibliographic information and the published abstract were consulted; it is not presented as a national consensus or full independent verification of every claim.',
+  },
   pasettiColonialismCorporative2016: {
     accessDate: '2026-09-16',
     creators: ['Matteo Pasetti'],
