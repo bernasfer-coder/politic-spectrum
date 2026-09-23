@@ -223,6 +223,16 @@ const RIGHTS_RECORDS = {
       reviewedAt: '2026-09-16',
       notes: 'Original, bounded paraphrases and source links only. No quotations, translations of passages, images, maps, tables or source files reproduced. Selected reading or abstract-only access is recorded separately; online access is not republication permission.',
     }])),
+    ...Object.fromEntries([
+      'malaysiaGe2022Book2026', 'malaysiaGe2022Introduction2026', 'malaysiaMusaMadani2023',
+      'malaysiaSeaa2024', 'malaysiaSeaa2025', 'malaysiaSeaa2025Weiss', 'malaysiaSeaa2026', 'malaysiaMadaniOfficial',
+      'malaysiaSprStateElections2023', 'malaysiaSprSabahElection2025', 'malaysiaBernamaSabah2025',
+      'malaysiaPMOAppointment2022', 'malaysiaParliamentHansard2022', 'malaysiaPMOConfidenceVote2022',
+    ].map((id) => [id, {
+      ...LINK_ONLY,
+      reviewedAt: '2026-09-23',
+      notes: 'Used for attributed, original case synthesis and a link only. The ISEAS introduction preview and annual-volume abstracts do not clear reuse of the complete books or chapters; official and news-agency records likewise remain linked rather than republished. No source wording, translation, screenshot, table, election-result graphic or PDF page is reproduced.',
+    }])),
     germanyCoalitionBreakScholz2024: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official Federal Government statement used for original synthesis and link only. No German speech wording, translation, scan or PDF page is republished; executive self-description remains distinct from coalition partners’ positions, independent causal analysis and public consent.' },
     germanyConfidenceVoteDissolution2024: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official Bundestag confidence-vote and early-election record used for original synthesis and link only. No parliamentary wording, vote table, translation, scan or PDF page is republished; the formal process remains distinct from the full political causes, campaign conditions and public mandate.' },
     germanyBundestagElection2025Official: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-22', notes: 'Official Federal Returning Officer final-results record used for original synthesis and link only. No result table, CSV, PDF, translation or page extract is republished; the electoral endpoint remains distinct from voter motives, equal competition, democratic quality and later government performance.' },
