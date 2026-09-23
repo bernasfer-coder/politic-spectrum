@@ -9133,6 +9133,96 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'peruLaw31988Bicamerality2024',
+    label: 'Peru — Constitutional Amendment Law No. 31988 restoring bicameralism',
+    url: 'https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31988-TXM.pdf',
+    note: 'Official Congress legal text consulted for an independent summary and link only. No constitutional wording, translation, scan or PDF page is republished; constitutional design is distinguished from implementation and political effects.',
+    accessDate: '2026-09-23', creators: ['Congreso de la República del Perú'], institution: 'Congress of the Republic of Peru',
+    publicationDate: '2024-03-20', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'constitutional amendment / official legal text', identifiers: { law: '31988', publicationDate: '2024-03-20' },
+    description: 'Primary legal source for restoring a two-chamber Congress, with a Senate and Chamber of Deputies, and the amendment’s application to the next general election. It records formal law rather than the later conduct or effects of the 2026 legislature.'
+  },
+  {
+    id: 'peruJneElectionIndex2026',
+    label: 'Jurado Nacional de Elecciones — Elecciones Generales 2026 official record index',
+    url: 'https://portal.jne.gob.pe/portal/Pagina/Ver/979/page/Elecciones-Generales-2026',
+    note: 'JNE election-record index consulted to locate official first-round, runoff, congressional and proclamation records. The index is linked as an institutional finding aid; individual acts remain the controlling sources for specific legal claims.',
+    accessDate: '2026-09-23', creators: ['Jurado Nacional de Elecciones'], institution: 'Jurado Nacional de Elecciones (JNE)',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election and electoral-jurisdiction record index', identifiers: { electionYear: '2026' },
+    description: 'Institutional index to the JNE’s 2026 general-election acts and proclamations, including records for the presidential runoff and legislative elections. It is a guide to primary materials, not a substitute for each decision or the underlying tally.'
+  },
+  {
+    id: 'peruJneResolution1610RunoffReview2026',
+    label: 'Jurado Nacional de Elecciones — Resolución n.º 1610-2026-JNE (2 July 2026)',
+    url: 'https://busquedas.elperuano.pe/dispositivo/EX/2531489-1',
+    note: 'Official El Peruano publication of the JNE resolution consulted for an independent summary and link only. No resolution wording, vote table, translation or PDF page is republished; the tribunal’s review is attributed to the tribunal and is not called an independent audit.',
+    accessDate: '2026-09-23', creators: ['Jurado Nacional de Elecciones'], institution: 'Jurado Nacional de Elecciones; Diario Oficial El Peruano',
+    publicationDate: '2026-07-03', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'electoral-jurisdiction resolution / official legal publication', identifiers: { resolution: '1610-2026-JNE', decisionDate: '2026-07-02', publicationDate: '2026-07-03' },
+    description: 'Primary record of the JNE’s review of decentralized runoff proclamation acts against ONPE’s 100-percent tally reports. The JNE states that its comparison found no numerical inconsistencies and that the process was ready for proclamation; this is the tribunal’s own procedural finding, not independent observation.'
+  },
+  {
+    id: 'peruJneProclamationRunoff2026',
+    label: 'Jurado Nacional de Elecciones — JNE proclaims Keiko Fujimori president-elect (3 July 2026)',
+    url: 'https://portal.jne.gob.pe/portal/Pagina/Nota/20401',
+    note: 'JNE press notice consulted as an official proclamation announcement and link only. No result table, wording, image or page capture is republished; the notice is distinguished from independent observation and voter-motive evidence.',
+    accessDate: '2026-09-23', creators: ['Jurado Nacional de Elecciones'], institution: 'Jurado Nacional de Elecciones (JNE)',
+    publicationDate: '2026-07-03', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election result and proclamation announcement', identifiers: { electionDate: '2026-06-07', proclamationDate: '2026-07-03' },
+    description: 'Official JNE announcement that proclaims Keiko Fujimori president-elect with Luis Galarreta and Miguel Torres as vice presidents for 2026–2031 and reports the two tickets’ vote totals. It records the electoral authority’s result and legal act, not independent assessment, political mandate or the motivations of voters.'
+  },
+  {
+    id: 'peruDefensoriaGeneralElection2026',
+    label: 'Defensoría del Pueblo — Informe Defensorial n.º 274, Elecciones Generales 2026',
+    url: 'https://www.defensoria.gob.pe/informes/informe-defensorial-n-274/',
+    note: 'Peruvian Ombudsman report record consulted for its abstract, institutional findings and link only. No report wording, table, scan or PDF page is republished; its conclusions and recommendations are attributed to the Defensoría.',
+    accessDate: '2026-09-23', creators: ['Comité Electoral de la Defensoría del Pueblo'], institution: 'Defensoría del Pueblo (Peru)',
+    publicationDate: '2026-05-11', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'Ombudsman election-supervision report', identifiers: { report: 'Informe Defensorial 274', publicationDate: '2026-05-11' },
+    description: 'The Ombudsman’s nationwide report on first-round administration, including its supervisor deployment, coordination, training, communication, accessibility and technology findings and recommendations. It is an institutional supervisory perspective, not a substitute for each polling-site record or every voter’s experience.'
+  },
+  {
+    id: 'peruDefensoriaRunoff2026',
+    label: 'Defensoría del Pueblo — Informe Defensorial n.º 285, 2026 presidential runoff',
+    url: 'https://www.defensoria.gob.pe/informes/informe-defensorial-n-285/',
+    note: 'Peruvian Ombudsman report record consulted for its abstract, institutional findings and link only. No report wording, table, scan or PDF page is republished; its assessment of the second round is attributed to the Defensoría.',
+    accessDate: '2026-09-23', creators: ['Comité Electoral de la Defensoría del Pueblo'], institution: 'Defensoría del Pueblo (Peru)',
+    publicationDate: '2026-07-16', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'Ombudsman presidential-runoff supervision report', identifiers: { report: 'Informe Defensorial 285', publicationDate: '2026-07-16' },
+    description: 'Institutional follow-up on the 7 June presidential runoff, including the Ombudsman’s observations about logistics, accessibility, disinformation and competition. Its conclusions belong to the Defensoría’s supervisory mandate and do not replace independent local testimony.'
+  },
+  {
+    id: 'peruEUElectionObservationFinal2026',
+    label: 'European Union Election Observation Mission — Peru 2026 final report (Spanish edition)',
+    url: 'https://www.eeas.europa.eu/sites/default/files/2026/documents/Informe%20Final%20MOE%20UE%20Peru%202026_ESPA%C3%91OL.pdf',
+    note: 'European Union Election Observation Mission final report; Spanish edition is identified as a translation of the mission report. Consulted for attributed findings and link only. No wording, table, map or PDF page is republished; observer assessments are limited to the mission’s methodology and access.',
+    accessDate: '2026-09-23', creators: ['European Union Election Observation Mission in Peru'], institution: 'European Union Election Observation Mission',
+    publicationDate: '2026-08-17', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'international election-observation final report', identifiers: { electionYear: '2026', edition: 'Spanish translation' },
+    description: 'Final observer synthesis of the 2026 general election and presidential runoff, including the mission’s assessment of competition, administration, campaign conditions and disputes. Findings and candidate characterizations are attributed to the mission and are not treated as a universal account of voter experience.'
+  },
+  {
+    id: 'peruOASElectionObservationFinal2026',
+    label: 'Organization of American States Election Observation Mission — Peru 2026 presidential runoff final report',
+    url: 'https://www.oas.org/fpdb/press/2026_EOM_Peru_Presidential_Runoff_Second_Report_ENG.pdf',
+    note: 'OAS Electoral Observation Mission second and final report consulted for its attributed findings and link only. No report wording, table or PDF page is republished; its observation and vote-count analysis are bounded by the mission’s method, deployment and access.',
+    accessDate: '2026-09-23', creators: ['Organization of American States Electoral Observation Mission in Peru'], institution: 'Organization of American States (OAS)',
+    publicationDate: '2026-07-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final report', identifiers: { electionYear: '2026', pages: '31' },
+    description: 'OAS final report on the Peruvian presidential runoff and the sequence from voting through JNE proclamation. It provides an observer assessment and account of the narrow result and disputes, not an omniscient finding about every polling place or participant.'
+  },
+  {
+    id: 'peruGallardoVelardeGutarraVoting2026',
+    label: 'Marcelo Gallardo, Nicolás Velarde and Cristina Gutarra — “Information and voting: Evidence from Peru’s 2026 presidential election”',
+    url: 'https://arxiv.org/abs/2606.01687',
+    note: 'arXiv working-paper record consulted at abstract and metadata level only. It is not treated as peer reviewed; no full-text methods, data, replication material or results are relied upon to characterize Peruvian voters.',
+    accessDate: '2026-09-23', creators: ['Marcelo Gallardo', 'Nicolás Velarde', 'Cristina Gutarra'], institution: 'arXiv',
+    publicationDate: '2026-06-01', evidenceRole: 'secondary', confidence: 'low', languages: ['English'],
+    sourceType: 'working paper / preprint record', identifiers: { arxiv: '2606.01687', doi: '10.48550/arXiv.2606.01687' },
+    description: 'A first-round study listed as a 2026 preprint, recorded as an emerging literature lead only. Abstract and metadata do not establish the study’s methods, peer-review status, representativeness or conclusions about all voters.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));

@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(158);
+  expect(cards()).toHaveLength(159);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -48,6 +48,16 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('South Korean constitutional-democratic and developmental order');
     expect(cards()[1]).toHaveTextContent('South Korean 2025 impeachment, snap election and presidential succession');
     expect(cards()[1]).toHaveTextContent('April–June 2025');
+  });
+
+  it('keeps Peru’s 2026 election distinct from its earlier political-history cases', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-604');
+    expect(cards()).toHaveLength(3);
+    expect(cards()[2]).toHaveTextContent('Peruvian 2026 general election, bicameral return and presidential runoff');
+    expect(cards()[2]).toHaveTextContent('April–July 2026');
+    expect(cards()[2]).toHaveTextContent('no six-axis placement or score is assigned');
   });
 
   it('normalizes accented aliases and persists a timeline URL', async () => {
