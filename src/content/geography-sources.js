@@ -9186,6 +9186,159 @@ const sources = [
     sourceType: 'research-institute policy brief', identifiers: { series: 'IOB Analyses & Policy Briefs', number: '70', handle: 'RePEc:iob:apbrfs:2026002', pages: '4' },
     description: 'A field-informed policy analysis of the dialogue’s first year, its institutional design, consultation and legitimacy challenges. It is a short policy brief rather than book-length scholarship or a final evaluation of the process.'
   },
+  {
+    id: 'zambiaConstitutionConsolidated2025', label: 'Zambia — Constitution, consolidated to 18 December 2025',
+    url: 'https://media.zambialii.org/media/legislation/45867/source_file/ca81685b1b4ff9db/1991-1.pdf',
+    note: 'ZambiaLII consolidated constitutional text, with its editorial record identifying amendments through Act No. 13 of 2025. Used for original paraphrase of Articles 47 and 103 and linked legal text only; no statutory wording, PDF page, translation or image is republished. Formal rules do not establish implementation or access to a remedy.',
+    accessDate: '2026-09-23', creators: ['Republic of Zambia', 'Laws.Africa editorial consolidation'], institution: 'ZambiaLII / Laws.Africa',
+    publicationDate: '2025-12-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'consolidated primary constitutional text', identifiers: { act: 'Constitution of Zambia', consolidatedThrough: 'Act No. 13 of 2025', license: 'CC-BY' },
+    description: 'The consolidated legal text anchors the formal constitutional rules on proportional representation and presidential-election petitions. It is a source for legal design, not proof of how every provision was administered or adjudicated.'
+  },
+  {
+    id: 'zambiaConstitutionAmendmentAct13Of2025', label: 'Zambia — Constitution of Zambia (Amendment) Act No. 13 of 2025',
+    url: 'https://www.constitution.gov.zm/files/Acts_No_13_of_2025_Constitution_of_Zambia.pdf',
+    note: 'Official text of Act No. 13 of 2025, hosted by the Constitution of Zambia public consultation project. Used to summarize the mixed-member proportional representation amendment and its stated participation guarantees; no statutory wording or page image is republished.',
+    accessDate: '2026-09-23', creators: ['Republic of Zambia'], institution: 'Constitution of Zambia / Government of Zambia',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional amendment / official legal text', identifiers: { act: 'No. 13 of 2025', title: 'Constitution of Zambia (Amendment) Act' },
+    description: 'Primary legal evidence for the amended constitutional electoral framework. Enactment and formal guarantees are distinguished from implementation, allocation outcomes and representation in practice.'
+  },
+  {
+    id: 'zambiaECZResultsPortal2026', label: 'Electoral Commission of Zambia — 2026 General Election Results Portal',
+    url: 'https://results.elections.org.zm/',
+    note: 'Official results portal consulted on 23 September 2026. The portal is recorded as the electoral authority’s publication channel; accessible constituency-level and polling-station returns were not systematically available in the material reviewed, so the portal is not treated as an independently audited results dataset.',
+    accessDate: '2026-09-23', creators: ['Electoral Commission of Zambia'], institution: 'Electoral Commission of Zambia',
+    publicationDate: '2026-08', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official electoral results portal', identifiers: { election: '13 August 2026 General Election' },
+    description: 'Official ECZ publication channel for election results; this citation does not imply complete access to machine-readable station-level results or establish independent verification.'
+  },
+  {
+    id: 'zambiaStateHouseElectionDeclaration2026', label: 'State House Zambia — President Hichilema Secures Second Term in Decisive Election Victory (18 August 2026)',
+    url: 'https://www.sh.gov.zm/president-hakainde-hichilema-secures-second-term-in-decisive-election-victory/',
+    note: 'Official State House report relaying ECZ chairperson and returning officer Mwangala Zaloumis’s declaration. Used as an attributed executive account of the declared winner and reported totals, not as independent verification of counting or equal campaign conditions; no text or image is republished.',
+    accessDate: '2026-09-23', creators: ['State House Zambia'], institution: 'Office of the President of Zambia',
+    publicationDate: '2026-08-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official executive relay of electoral declaration', identifiers: { electionDate: '2026-08-13', declarationDate: '2026-08-18' },
+    description: 'Records the executive’s relay of the ECZ returning officer’s presidential declaration. It verifies what the government reported, not the accuracy of every tally or observer claim.'
+  },
+  {
+    id: 'zambiaCabinetInaugurationNotice2026', label: 'Cabinet Office Zambia — Swearing-in of President-elect set for 1 September 2026 following expiry of petition period (25 August 2026)',
+    url: 'https://www.cabinet.gov.zm/?p=11583',
+    note: 'Cabinet Office statement setting the inauguration date and reporting that the Judiciary had not received a presidential petition by the stated deadline. It is the executive’s account and is paired with contemporaneous Judiciary reporting that describes receipt of petition documents by another route; no statement wording is republished.',
+    accessDate: '2026-09-23', creators: ['Cabinet Office, Republic of Zambia'], institution: 'Cabinet Office Zambia',
+    publicationDate: '2026-08-25', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official executive statement on inauguration and petition deadline', identifiers: { inaugurationDate: '2026-09-01' },
+    description: 'Executive source for the inauguration schedule and its position on petition receipt. Its account is not substituted for the Judiciary or Constitutional Court record.'
+  },
+  {
+    id: 'zambiaSADCObserverPreliminary2026', label: 'SADC — International Election Observation Missions release preliminary statements on Zambia’s 2026 elections (15 August 2026)',
+    url: 'https://www.sadc.int/latest-news/international-election-observation-missions-release-preliminary-statements-zambias-2026',
+    note: 'SADC publication linking preliminary statements by regional and international observer missions. Observations concern their deployments and methods; statements differ in scope and are provisional. No report wording, tables or attachments are reproduced, and preliminary findings are not final legal or national verdicts.',
+    accessDate: '2026-09-23', creators: ['Southern African Development Community'], institution: 'SADC',
+    publicationDate: '2026-08-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'regional organization publication of preliminary election-observation statements', identifiers: { electionDate: '2026-08-13', status: 'preliminary' },
+    description: 'Provides access to preliminary observer statements, including the SADC mission’s geographic sample and reported observations. It is not a single comprehensive final report or a court determination.'
+  },
+  {
+    id: 'zambiaEUEOMPreliminary2026', label: 'European Union Election Observation Mission — Preliminary statement and assessment of Zambia’s 2026 general elections (August 2026)',
+    url: 'https://www.eeas.europa.eu/eom-zambia-2026/transparency-now-key-democratic-expectations-tested-competitive-uneven-playing-field_en',
+    note: 'EU Election Observation Mission preliminary assessment, consulted 23 September 2026. Findings on polling, competition, campaign conditions, tabulation and transparency are attributed to the mission and limited to its observation and assessment methods; no mission wording or image is reproduced. A final report was not located in this review.',
+    accessDate: '2026-09-23', creators: ['European Union Election Observation Mission to Zambia'], institution: 'European External Action Service',
+    publicationDate: '2026-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'preliminary international election-observation assessment', identifiers: { electionDate: '2026-08-13', status: 'preliminary' },
+    description: 'Mission assessment of the electoral process and the conditions observed. It is not a final report, a comprehensive account of all polling places or a judicial finding.'
+  },
+  {
+    id: 'zambiaEUSpokespersonElectionStatement2026', label: 'European External Action Service — Statement by the spokesperson on Zambia’s general elections (20 August 2026)',
+    url: 'https://www.eeas.europa.eu/eeas/zambia-statement-spokesperson-general-elections_en',
+    note: 'EU spokesperson’s diplomatic statement acknowledging the ECZ declaration and citing preliminary-observer concerns about counting and tabulation transparency. Used as EU institutional response, not as an observation mission’s full assessment or an independent recount; no statement wording is republished.',
+    accessDate: '2026-09-23', creators: ['European External Action Service spokesperson'], institution: 'European External Action Service',
+    publicationDate: '2026-08-20', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official diplomatic statement', identifiers: { statementDate: '2026-08-20' },
+    description: 'Documents the EU’s diplomatic response and attributed concerns, not a complete foreign-policy account or an adjudication of Zambia’s election.'
+  },
+  {
+    id: 'zambiaCCMGPreliminary2026', label: 'Christian Churches Monitoring Group — Preliminary statement on the conduct of the 2026 general elections (14 August 2026)',
+    url: 'https://ccmgzambia.org/ccmg-preliminary-statement-on-the-conduct-of-the-2026-general-elections/',
+    note: 'CCMG’s preliminary citizen-observer report and description of its deployed monitors, access and election-day observations. It records the coalition’s own method and provisional assessment; no wording, photographs or report tables are reproduced.',
+    accessDate: '2026-09-23', creators: ['Christian Churches Monitoring Group'], institution: 'CCMG Zambia',
+    publicationDate: '2026-08-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'preliminary domestic citizen election-observation statement', identifiers: { electionDate: '2026-08-13', status: 'preliminary' },
+    description: 'Nonpartisan coalition’s preliminary account of observed election conduct and monitoring conditions; not a final audit or a proxy for all religious organizations or voters.'
+  },
+  {
+    id: 'zambiaCCMGPRVTResults2026', label: 'Christian Churches Monitoring Group — Independent assessment of the accuracy of the official results for the 2026 presidential election (20 August 2026)',
+    url: 'https://ccmgzambia.org/ccmg-independent-assessment-of-the-accuracy-of-the-official-results-for-the-2026-presidential-election/',
+    note: 'CCMG’s independent process-and-results verification report. It states that estimates use official polling-station results reported by monitors at 1,491 of 1,500 sampled stations; it reports out-of-range official figures in 30 constituencies and concludes these do not alter its estimated presidential winner. This is an attributed PRVT assessment, not a recount or court finding. No text, tables or images are reproduced.',
+    accessDate: '2026-09-23', creators: ['Christian Churches Monitoring Group'], institution: 'CCMG Zambia',
+    publicationDate: '2026-08-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'citizen-observer parallel vote tabulation and results assessment', identifiers: { sampledStations: '1500', returnsReceived: '1491', coverage: '99.4%', status: 'observer assessment' },
+    description: 'CCMG explains its nationally representative sample, relies on official station returns rather than an exit poll or its own ballot count, reports constituency discrepancies, and states its estimates leave the presidential winner unchanged. Its allegations and methodology remain attributable to CCMG.'
+  },
+  {
+    id: 'zambiaPetitionFilingDisputeZambiaMonitor2026', label: 'Zambia Monitor — Conflicting executive and Judiciary accounts over petition documents (25 August 2026)',
+    url: 'https://www.zambiamonitor.com/confusion-reigns-as-executive-judiciary-issue-conflicting-claims-over-judicial-intervention-in-hichilema-election-victory-saga/',
+    note: 'Contemporaneous secondary report comparing Cabinet’s statement that no petition was received by the deadline with the Judiciary’s account that the Chief Justice received documents by email and referred the filing question to the Constitutional Court. Used to preserve the conflict, not to decide the legal status; no article wording is reproduced.',
+    accessDate: '2026-09-23', creators: ['Zambia Monitor'], institution: 'Zambia Monitor',
+    publicationDate: '2026-08-25', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous journalism reporting official institutional statements', identifiers: { petitionStatus: 'reported as unresolved on 2026-08-25' },
+    description: 'Reports two contemporaneous institutional accounts and the Constitutional Court referral; it is journalism, not the court docket or judgment.'
+  },
+  {
+    id: 'zambiaHRWCourtAccessElectionPetition2026', label: 'Human Rights Watch — Zambia: Closing of courts curbs access to justice (26 August 2026)',
+    url: 'https://www.hrw.org/news/2026/08/26/zambia-closing-courts-curbs-access-justice',
+    note: 'Human Rights Watch account of courthouse closure and cordoning on 24 August and attributed concerns about access to justice during the petition period. Used as an NGO’s documented rights assessment, not as a ruling on election-petition merits; no wording or image is reproduced.',
+    accessDate: '2026-09-23', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2026-08-26', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'human-rights organization report', identifiers: { incidentDate: '2026-08-24' },
+    description: 'Rights organization report on court access and attributed official explanations during the post-election period; it does not substitute for the court’s record.'
+  },
+  {
+    id: 'zambiaAmnestyKafwaya2026', label: 'Amnesty International — Zambia: Investigate killing of former minister and opposition figure Mutotwe Kafwaya (25 August 2026)',
+    url: 'https://www.amnesty.org/en/documents/afr63/1398/2026/en/',
+    note: 'Amnesty International statement/document AFR 63/1398/2026 reporting that former minister and opposition figure Mutotwe Kafwaya was shot and killed during a state-security operation on 14 August and calling for an independent investigation. The allegation and request are attributed to Amnesty; no report wording or PDF page is republished.',
+    accessDate: '2026-09-23', creators: ['Amnesty International'], institution: 'Amnesty International',
+    publicationDate: '2026-08-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'human-rights organization statement / urgent investigation call', identifiers: { document: 'AFR 63/1398/2026', incidentDate: '2026-08-14' },
+    description: 'Records Amnesty’s account and call for investigation; it is not a completed forensic inquiry, prosecution or judicial determination.'
+  },
+  {
+    id: 'zambiaEuropeanParliamentResolution2026', label: 'European Parliament — Resolution on the post-electoral repression in Zambia and the killing of Mutotwe Kafwaya (17 September 2026)',
+    url: 'https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026/2876(RSP)',
+    note: 'European Parliament Legislative Observatory procedure record identifies the resolution, completed procedure and adoption date, with a link to adopted text T10-0311/2026. Used only to document the parliamentary action and its framing; the resolution is not a domestic investigation or court judgment, and no text is republished.',
+    accessDate: '2026-09-23', creators: ['European Parliament'], institution: 'European Parliament Legislative Observatory',
+    publicationDate: '2026-09-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary resolution record', identifiers: { procedure: '2026/2876(RSP)', adoptedText: 'T10-0311/2026', adoptionDate: '2026-09-17' },
+    description: 'Official record of a European Parliament resolution on the stated subject, documenting external parliamentary scrutiny rather than establishing criminal liability or a domestic judicial finding.'
+  },
+  {
+    id: 'zambiaBandaKaabaHinfelaarNdulo2020', label: 'Tinenenji Banda, O’Brien Kaaba, Marja Hinfelaar and Muna Ndulo (eds.) — Democracy and Electoral Politics in Zambia (2020)',
+    url: 'https://www.ascleiden.nl/publications/democracy-and-electoral-politics-zambia',
+    note: 'African Studies Centre Leiden bibliographic record for the Brill edited volume, Afrika-Studiecentrum Series 40, ISBN 9789004425026. Catalog metadata only was consulted for this case; no chapters or page text are reproduced, and the volume supplies earlier electoral-political context rather than evidence about the 2026 election.',
+    accessDate: '2026-09-23', creators: ['Tinenenji Banda', 'O’Brien Kaaba', 'Marja Hinfelaar', 'Muna Ndulo'], institution: 'African Studies Centre Leiden / Brill',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume', identifiers: { isbn: '9789004425026', series: 'Afrika-Studiecentrum Series', volume: '40', publisher: 'Brill' },
+    description: 'Edited scholarly volume on Zambian democracy and electoral politics. This catalogue-level consultation does not support attributing any specific chapter argument or extending the volume’s period to 2026.'
+  },
+  {
+    id: 'zambiaLarmerOppositionHistory2011', label: 'Miles Larmer — Rethinking African Politics: A History of Opposition in Zambia (2011)',
+    url: 'https://books.google.com/books/about/Rethinking_African_Politics.html?id=GmksQBVj0ukC',
+    note: 'Google Books and library-catalog metadata for the Ashgate monograph, 321 pages, ISBN 9781409406273; catalog/preview metadata only was consulted. Its historical coverage ends with political change and continuity through 2010, so it is background rather than evidence about the 2026 election. No book wording or preview passage is reproduced.',
+    accessDate: '2026-09-23', creators: ['Miles Larmer'], institution: 'Ashgate Publishing',
+    publicationDate: '2011', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length scholarly political history', identifiers: { isbn: '9781409406273', pages: '321', coverageEnd: '2010' },
+    description: 'Monograph on the history of political opposition in Zambia, with a temporal endpoint before the contemporary case. Metadata and catalog scope are recorded; full-text claims are not used.'
+  },
+  {
+    id: 'zambiaOneZambiaManyHistories2008', label: 'Jan-Bart Gewald, Marja Hinfelaar and Giacomo Macola (eds.) — One Zambia, Many Histories: Towards a History of Post-colonial Zambia (2008)',
+    url: 'https://www.degruyterbrill.com/document/isbn/9789047433194/html',
+    note: 'Brill publisher record and independent scholarly catalog metadata for the edited volume, Afrika-Studiecentrum Series 12, 304 pages, ISBN 9789004165946. Bibliographic records only were consulted for this case; no chapter text is reproduced and the volume is historical context, not coverage of 2026.',
+    accessDate: '2026-09-23', creators: ['Jan-Bart Gewald', 'Marja Hinfelaar', 'Giacomo Macola'], institution: 'Brill',
+    publicationDate: '2008', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume', identifiers: { isbn: '9789004165946', pages: '304', series: 'Afrika-Studiecentrum Series 12', publisher: 'Brill' },
+    description: 'Edited postcolonial Zambian history with multiple scholarly contributions. Its catalog record supports bibliographic identification only here; specific chapter claims are not asserted.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9268,6 +9421,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
+      : source.id.startsWith('zambia') ? 'Zambian constitutional, electoral and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},

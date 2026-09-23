@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(156);
+    expect(cards()).toHaveLength(157);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -49,6 +49,18 @@ describe('geographic atlas', () => {
     expect(target).toBeTruthy();
     expect(target).toHaveTextContent('post-election contestation and ongoing national dialogue');
     expect(target).toHaveTextContent('Mozambican post-2024 election crisis and national dialogue');
+  });
+
+  it('shows the bounded Zambian 2026 election case with attributed result and petition evidence', async () => {
+    window.history.replaceState(null, '', '/#geography?case=zambian-2026-general-election-and-post-election-contestation');
+    renderAtlas();
+    const [card] = cards();
+    expect(cards()).toHaveLength(1);
+    expect(card).toHaveTextContent('2025–2026');
+    expect(card).toHaveTextContent('did not change the presidential winner');
+    expect(card).toHaveTextContent('petition accounts conflict');
+    expect(card).toHaveTextContent('no book-length study of this 2025–2026 episode was located');
+    expect(within(card).getByRole('link', { name: /Related encyclopedia/ })).toHaveAttribute('href', '#encyclopedia/liberal-constitutionalist');
   });
 
   it('normalizes accented aliases and persists a timeline URL', async () => {
