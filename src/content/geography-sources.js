@@ -2808,15 +2808,15 @@ const sources = [
   },
   {
     id: 'bangladeshEcpGeneralElection2018',
-    label: 'Bangladesh Election Commission — Eleventh National Parliament election results (2018)',
+    label: 'Bangladesh Election Commission — election-results portal (2018 record; 2026 parliamentary election and referendum listings)',
     url: 'https://ecs.gov.bd/en/page/election-results',
-    note: 'Election Commission result portal consulted as a primary institutional witness for the 30 December 2018 parliamentary election and its constituency-level results. The portal establishes the official result record, not fair competition, equal participation, absence of coercion or the complete political context; no table or portal wording is republished.',
-    accessDate: '2026-09-20',
+    note: 'Election Commission portal consulted as a primary institutional witness for the 30 December 2018 parliamentary result record; its current landing page also lists the 2026 13th Parliament election and referendum results. It establishes the Commission’s published records, not fair competition, equal participation, absence of coercion or the complete political context; no table or portal wording is republished.',
+    accessDate: '2026-09-23',
     creators: ['Bangladesh Election Commission'], institution: 'Bangladesh Election Commission',
     publicationDate: '2018-12-30', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Bengali'],
     sourceType: 'official electoral result / primary institutional record',
     identifiers: {},
-    description: 'Official result record for Bangladesh’s eleventh National Parliament election. It documents the Election Commission’s formal electoral record while leaving allegations, observation, litigation, party access and local variation to independent sources.'
+    description: 'Official result record for Bangladesh’s eleventh National Parliament election, displayed through a results portal that currently also lists the 13th Parliament election and 2026 referendum. The 2018 record documents the Commission’s formal electoral record; the updated page supplies a primary link to the newer result listings while leaving allegations, observation, party access and local variation to independent sources.'
   },
   {
     id: 'bangladeshEcpGeneralElection2024',
@@ -9249,6 +9249,66 @@ const sources = [
     publicationDate: '2018-12-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
+  },
+  {
+    id: 'bangladeshInterimAppointmentGazette2024',
+    label: 'Bangladesh Government Press — Extraordinary Gazette appointing Muhammad Yunus chief adviser to the interim government (8 August 2024)',
+    url: 'https://www.dpp.gov.bd/bgpress/index.php/document/get_extraordinary/55368',
+    note: 'Bangladesh Government Press gazette index and linked Bengali-language notice consulted for an original summary and link only. No gazette wording, translation, image or PDF is republished; the appointment records formal state action, not the interim government’s popular mandate or uniform practice.',
+    accessDate: '2026-09-23', creators: ['Cabinet Division, Government of Bangladesh'], institution: 'Department of Printing and Publications, Government of Bangladesh',
+    publicationDate: '2024-08-08', evidenceRole: 'primary', confidence: 'high', languages: ['Bangla'],
+    sourceType: 'primary appointment notice / extraordinary government gazette', identifiers: { gazetteDate: '2024-08-08', gazettePage: '22701' },
+    description: 'Official gazette index for the appointment of Muhammad Yunus as chief adviser to the interim government. It anchors the formal start of this case’s interim-administration horizon, not the circumstances, legitimacy or social representativeness of the transition.'
+  },
+  {
+    id: 'bangladeshTransitionEndpointGazette2026',
+    label: 'Bangladesh Government Press — Cabinet Division gazette on prime-ministerial appointment and dissolution of interim advisory council (17 February 2026)',
+    url: 'https://www.dpp.gov.bd/bgpress/index.php/document/get_extraordinary/60710',
+    note: 'Bangladesh Government Press extraordinary-gazette index consulted for an original summary and link only. No gazette wording, translation, image or PDF is republished; this records formal appointment and transition of offices, not subsequent policy performance or constitutional reform implementation.',
+    accessDate: '2026-09-23', creators: ['Cabinet Division, Government of Bangladesh'], institution: 'Department of Printing and Publications, Government of Bangladesh',
+    publicationDate: '2026-02-17', evidenceRole: 'primary', confidence: 'high', languages: ['Bangla'],
+    sourceType: 'primary appointment notice / extraordinary government gazette', identifiers: { gazetteDate: '2026-02-17', gazetteNumber: '59', gazettePage: '12963' },
+    description: 'Cabinet Division gazette index records Tarique Rahman’s appointment as prime minister and states that the interim advisory council is dissolved on formation of the new government. It supplies a formal endpoint for the bounded transition, not evidence about later implementation or performance.'
+  },
+  {
+    id: 'bangladeshCommonwealthObserverReport2026',
+    label: 'Commonwealth Observer Group — Bangladesh Parliamentary Elections and Referendum, 12 February 2026 (final report, 15 June 2026)',
+    url: 'https://thecommonwealth.org/publications/bangladesh-parliamentary-elections-and-referendum-12-february-2026',
+    note: 'Commonwealth Secretariat final observer report consulted for independent, attributed synthesis and link only. Its publication page states CC BY-NC-ND 4.0; no report wording, quotation, table, image or PDF is republished, and no derivative report is created. Findings are attributed to this invited observer mission and are not presented as universal voter experience or conclusive proof of legitimacy.',
+    accessDate: '2026-09-23', creators: ['Commonwealth Observer Group'], institution: 'Commonwealth Secretariat',
+    publicationDate: '2026-06-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final report', identifiers: { doi: '10.14217/htir5535', electionDate: '2026-02-12' },
+    description: 'Final report of the Commonwealth Observer Group invited to observe Bangladesh’s 12 February 2026 parliamentary election and July Charter referendum. The group described overall polling, counting and results management positively while also recording concerns about electoral pluralism, party access, public referendum awareness, women’s and youth participation, disability access and media freedom; these are its bounded observations and recommendations.'
+  },
+  {
+    id: 'bangladeshSwpPoliticalRealignment2026',
+    label: 'Tobias Scholz and Leo Wigger — “Bangladesh’s Political Realignment after the Parliamentary Elections: Hope for Stability, Concerns about Democratic Pluralism” (SWP Comment 2026/C 13)',
+    url: 'https://www.swp-berlin.org/10.18449/2026C13/',
+    note: 'Full five-page English SWP Comment consulted for attributed synthesis and link only. No wording, quotation, chart or PDF is republished; this policy analysis is a distinct interpretive perspective, not book-length scholarship, a neutral election observation or a consensus account.',
+    accessDate: '2026-09-23', creators: ['Tobias Scholz', 'Leo Wigger'], institution: 'Stiftung Wissenschaft und Politik (German Institute for International and Security Affairs)',
+    publicationDate: '2026-03-26', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'research-institute policy analysis / SWP Comment', identifiers: { doi: '10.18449/2026C13', series: 'SWP Comment 2026/C 13', pages: '5' },
+    description: 'Short analysis of the February 2026 parliamentary election and post-election political realignment. It discusses the outcome, party configuration, exclusion of the Awami League, referendum and unresolved July Charter implementation; it is a policy commentary rather than a book-length scholarly treatment.'
+  },
+  {
+    id: 'bangladeshStommesAsianSurvey2026',
+    label: 'Drew Stommes — “Bangladesh in 2024 and 2025: Hasina’s Downfall, Transitional Reforms, and the Road to Elections,” Asian Survey 66(2) (2026), 340–350',
+    url: 'https://doi.org/10.1525/as.2026.66.2.340',
+    note: 'University of California Press journal page consulted for bibliographic metadata and accessible abstract only; the full article is not accessible in this review. No abstract wording, article text, figure or table is republished; claims beyond the publisher’s abstract are not attributed to this source.',
+    accessDate: '2026-09-23', creators: ['Drew Stommes'], institution: 'Asian Survey / University of California Press',
+    publicationDate: '2026-04-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed research article; abstract and metadata consulted, full text not accessed', identifiers: { doi: '10.1525/as.2026.66.2.340', journal: 'Asian Survey', volume: '66', issue: '2', pages: '340–350' },
+    description: 'Peer-reviewed article metadata and abstract covering Bangladesh’s 2024–2025 transition, reform and preparations for elections. The abstract is a secondary interpretive pointer only; the full article was not consulted and it does not document the February 2026 endpoint.'
+  },
+  {
+    id: 'bangladeshMonsoonUprisingForthcoming2026',
+    label: 'Naomi Hossain and David Bergman — Bangladesh’s Monsoon Uprising: How a Student Revolt Toppled Asia’s Iron Lady (forthcoming, Palgrave Macmillan, 2026)',
+    url: 'https://link.springer.com/book/9789819239191',
+    note: 'Springer Nature / Palgrave Macmillan publisher record consulted for forthcoming-title metadata only. As of 23 September 2026 the publisher says the title has not yet been released; eBook is listed due 1 October 2026 and hardcover 28 October 2026. The book is not treated as an available or consulted source; no publisher-copy description, book text, quotation, image or figure is republished.',
+    accessDate: '2026-09-23', creators: ['Naomi Hossain', 'David Bergman'], institution: 'Palgrave Macmillan Singapore / Springer Nature',
+    publicationDate: '2026-10', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'forthcoming book publisher record; metadata only, not yet published at review date', identifiers: { ebookIsbn: '978-981-92-3920-7', hardcoverIsbn: '978-981-92-3919-1', series: 'Politics of South Asia' },
+    description: 'Publisher listing for a forthcoming book on the 2024 uprising and its post-uprising prospects. Because publication is scheduled after this review date, this record marks a visible book-level research gap and is not evidence for the case’s factual claims.'
   },
 ];
 

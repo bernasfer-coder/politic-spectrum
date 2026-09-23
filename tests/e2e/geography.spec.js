@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(157);
+  await expect(page.locator('.geo-card')).toHaveCount(158);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -57,7 +57,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(157);
+  await expect(page.locator('.geo-card')).toHaveCount(158);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -81,5 +81,18 @@ test('Sudan’s post-coup transition and 2023 war stay separate and date-bounded
   await expect(cards.nth(1)).toContainText('not full-text reading');
   await expect(cards.nth(2)).toContainText('15 April 2023–7 September 2026');
   await expect(cards.nth(2)).toContainText('not a current-country classification');
+  await expect(page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).resolves.toBe(true);
+});
+
+test('Bangladesh’s post-uprising interim administration and electoral transition remain date-bounded and unscored', async ({ page }) => {
+  await page.goto('/#geography');
+  await page.getByRole('combobox', { name: /Country/ }).selectOption('bangladesh');
+  const cards = page.locator('.geo-card');
+  await expect(cards).toHaveCount(3);
+  await expect(cards.nth(0)).toContainText('1972–2014');
+  await expect(cards.nth(1)).toContainText('2014–2024');
+  await expect(cards.nth(2)).toContainText('5 August 2024–17 February 2026');
+  await expect(cards.nth(2)).toContainText('No numeric six-axis placement is warranted');
+  await expect(cards.nth(2)).toContainText('forthcoming');
   await expect(page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).resolves.toBe(true);
 });

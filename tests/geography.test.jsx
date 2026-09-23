@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(157);
+    expect(cards()).toHaveLength(158);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -50,6 +50,18 @@ describe('geographic atlas', () => {
     expect(cards()[1]).toHaveTextContent('not full-text reading');
     expect(cards()[2]).toHaveTextContent('15 April 2023–7 September 2026');
     expect(cards()[2]).toHaveTextContent('not a current-country classification');
+  });
+
+  it('shows Bangladesh’s 2024–2026 interim and electoral transition as a separate, unscored case', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'bangladesh');
+    expect(cards()).toHaveLength(3);
+    expect(cards()[0]).toHaveTextContent('1972–2014');
+    expect(cards()[1]).toHaveTextContent('2014–2024');
+    expect(cards()[2]).toHaveTextContent('5 August 2024–17 February 2026');
+    expect(cards()[2]).toHaveTextContent('No numeric six-axis placement is warranted');
+    expect(cards()[2]).toHaveTextContent('forthcoming');
   });
 
   it('normalizes accented aliases and persists a timeline URL', async () => {
