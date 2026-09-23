@@ -6,8 +6,8 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 159);
-assert.equal(GEOGRAPHY_LABELS.length, 157);
+assert.equal(GEOGRAPHY_CASES.length, 160);
+assert.equal(GEOGRAPHY_LABELS.length, 158);
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
@@ -54,6 +54,12 @@ assert.equal(filterGeographyCases({ country: 'bangladesh' })[0].id, 'bangladeshi
 assert.equal(filterGeographyCases({ country: 'sri-lanka' })[0].id, 'sri-lankan-constitutional-presidential-order');
 assert.equal(filterGeographyCases({ country: 'nepal' })[0].id, 'nepali-constitutional-republican-transition');
 assert.equal(filterGeographyCases({ country: 'nepal' }).find(({ id }) => id === 'nepal-federal-constitutional-and-electoral-transition')?.id, 'nepal-federal-constitutional-and-electoral-transition');
+const nepalGenZTransition = filterGeographyCases({ country: 'nepal' }).find(({ id }) => id === 'nepali-gen-z-mobilization-and-2026-electoral-transition');
+assert.equal(nepalGenZTransition?.startYear, 2025);
+assert.equal(nepalGenZTransition?.endYear, 2026);
+assert.equal(nepalGenZTransition?.relationship, 'influenced');
+assert.ok(nepalGenZTransition?.sourceIds.includes('nepalNhcrGenZRecommendations2026'));
+assert.ok(nepalGenZTransition?.sourceIds.includes('nepalElectionCommission2026'));
 assert.equal(filterGeographyCases({ country: 'afghanistan' })[0].id, 'afghan-posttaliban-republican-order');
 assert.equal(filterGeographyCases({ country: 'burkina-faso' })[0].id, 'burkinabe-postcolonial-revolutionary-and-transition-history');
 assert.equal(filterGeographyCases({ country: 'sudan' })[0].id, 'sudanese-islamist-military-and-revolutionary-transition');
@@ -130,4 +136,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 159 dated cases, 157 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 160 dated cases, 158 unscored labels, citations, boundaries, filters and share URLs.');

@@ -9735,6 +9735,96 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'nepalNhcrGenZRecommendations2026',
+    label: 'National Human Rights Commission of Nepal — Recommendation arising from the investigation into the Gen Z movement (27 May 2026)',
+    url: 'https://www.nhrcnepal.org/decision/complaint_based_recommendations',
+    note: 'Official NHRC listing and linked investigation/recommendation document used as a primary institutional witness. The reviewed document is in Nepali; the page also presents an English-version link, but no English translation was independently verified here. No wording, table, scan or PDF is republished. Findings and recommendations are attributed to the Commission and are not a criminal-court judgment.',
+    accessDate: '2026-09-23', creators: ['National Human Rights Commission of Nepal'], institution: 'National Human Rights Commission of Nepal', publicationDate: '2026-05-27', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official human-rights investigation recommendations / institutional record', identifiers: { postedDate: '2026-05-27' },
+    description: 'The Commission’s public record of recommendations following an inquiry into the September 2025 Gen Z movement. Used for the Commission’s own documented account and recommendations, not as a judicial finding or a complete account of every participant or locality.'
+  },
+  {
+    id: 'nepalRightsGroupsGenZStatement2026',
+    label: 'Human Rights Watch, Amnesty International and International Commission of Jurists — “Nepal: Publish Reports on Violent Crackdowns on Protests” (13 February 2026)',
+    url: 'https://www.amnesty.org/ar/wp-content/uploads/2026/02/ASA3107152026ENGLISH.pdf',
+    note: 'Joint statement used for attributed human-rights organizations’ reporting and assessment, link only. The statement reports at least 76 deaths during 8–9 September 2025 and characterizes most as unlawful; this is the organizations’ assessment, not a court determination. No statement wording, PDF page or image is republished.',
+    accessDate: '2026-09-23', creators: ['Human Rights Watch', 'Amnesty International', 'International Commission of Jurists'], institution: 'Amnesty International (joint statement)', publicationDate: '2026-02-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'joint human-rights organization statement', identifiers: { documentNumber: 'ASA 31/0715/2026' },
+    description: 'Joint statement about deaths and alleged abuses during the September 2025 protests, inquiry-report publication and accountability. It is an attributed civil-society assessment and advocacy document, not a court judgment or official commission finding.'
+  },
+  {
+    id: 'nepalIdeaGenZConstitution2026',
+    label: 'Sharon Pia Hickey — “Gen Z Mobilization and Pathways to Political, Constitutional, and Institutional Reform in 2025,” chapter 3 in Annual Review of Constitution-Building: 2025 (International IDEA, 2026)',
+    url: 'https://www.idea.int/sites/default/files/2026-09/annual-review-of-constitution-building-2025.pdf',
+    note: 'International IDEA chapter metadata and full PDF consulted for an attributed comparative synthesis; the publication identifies CC BY-NC-SA 4.0, and this project uses an independently authored summary and link only. No chapter wording, quotation, image or table is republished. It treats Nepal and Madagascar as unfolding cases, not a settled causal or ideological classification. Published as the 2025 annual review in 2026.',
+    accessDate: '2026-09-23', creators: ['Sharon Pia Hickey'], institution: 'International Institute for Democracy and Electoral Assistance (International IDEA)', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional comparative constitution-building report chapter', identifiers: { chapter: '3', report: 'Annual Review of Constitution-Building: 2025' },
+    description: 'Comparative analysis of youth mobilization, constitutional pathways and institutional constraints, including Nepal’s September 2025 protest crisis, interim transition, disagreements among activist groups, the 2026 election and subsequent contested implementation. It is a chapter-length institutional analysis, not book-length country monograph.'
+  },
+  {
+    id: 'nepalGenZAgreement2025',
+    label: 'Government of Nepal and Gen Z representatives — 10-point agreement (10 December 2025; published transcription)',
+    url: 'https://ekantipur.com/news/2025/12/10/full-text-of-the-agreement-between-the-government-and-gen-g-representatives-16-48.html',
+    note: 'Nepali-language media transcription of the signed agreement consulted as a primary-text witness and link only; Radio Nepal separately reported the signing and cabinet approval. The named representatives are signatories, not proxies for every protester or youth group. No agreement wording, translation, screenshot or facsimile is republished.',
+    accessDate: '2026-09-23', creators: ['Government of Nepal', 'Signatories identified as Gen Z representatives'], institution: 'Agreement text published by Kantipur', publicationDate: '2025-12-10', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'published transcription of a political agreement / primary text', identifiers: { signingDate: '2025-12-10', points: '10' },
+    description: 'Text of an agreement between the interim government and specified Gen Z representatives on recognition of the movement, reform recommendations and elections. Its signatory scope and subsequent dissent must be distinguished from movement-wide consent.'
+  },
+  {
+    id: 'nepalRadioNepalAgreement2025',
+    label: 'Radio Nepal — Cabinet approves agreement with Gen Z representatives (11 December 2025)',
+    url: 'https://radionepalonline.com/en/2025/12/11/421292.html',
+    note: 'Public broadcaster report used to corroborate the signing, cabinet approval and stated plan to publish the agreement in the Gazette. It is an institutional news report rather than the Gazette itself; no report wording or image is republished.',
+    accessDate: '2026-09-23', creators: ['Radio Nepal'], institution: 'Radio Nepal', publicationDate: '2025-12-11', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'public broadcaster report on cabinet action', identifiers: { reportDate: '2025-12-11' },
+    description: 'Contemporaneous account of cabinet action on the agreement; it does not establish publication in the Gazette, implementation or endorsement by all activists.'
+  },
+  {
+    id: 'nepalElectionCommission2026',
+    label: 'Election Commission Nepal — 2026 House of Representatives election results submitted to the President (18 March 2026)',
+    url: 'https://ebulletin.election.gov.np/2026/03/3043/',
+    note: 'Official Election Commission notice used as a primary institutional date/result-submission record and link only. No result table, wording, screenshot or PDF is republished. Official returns establish the recorded result, not voter motives, equal campaign conditions or movement-wide endorsement.',
+    accessDate: '2026-09-23', creators: ['Election Commission Nepal'], institution: 'Election Commission Nepal', publicationDate: '2026-03-18', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official election-result submission / institutional record', identifiers: { electionDate: '2026-03-05', submittedToPresident: '2026-03-18' },
+    description: 'Election Commission record of the 2026 House election results being submitted to the President. Used to anchor the election date and formal result-delivery chronology; it does not by itself explain party support or voter motivations.'
+  },
+  {
+    id: 'nepalHouseCommonsElection2026',
+    label: 'Nigel Walker — Nepal: 2026 legislative election and future prospects (House of Commons Library, 2 June 2026)',
+    url: 'https://commonslibrary.parliament.uk/research-briefings/cbp-10622/',
+    note: 'UK House of Commons Library briefing used for the election-results table and attributed near-term context. The page contains an apparent internal chronology error referring to the protests as beginning in “September 2026,” although the briefing was published 2 June 2026; that sentence is not used for event chronology. Seat totals are cross-checked against Election Commission records. No briefing text or table is reproduced.',
+    accessDate: '2026-09-23', creators: ['Nigel Walker'], institution: 'House of Commons Library, UK Parliament', publicationDate: '2026-06-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'parliamentary research briefing', identifiers: { briefing: 'CBP-10622', electionDate: '2026-03-05' },
+    description: 'Briefing with party-level results, reporting that the Rastriya Swatantra Party won 182 of 275 seats. Its date typo and limits are explicitly recorded; the result is an electoral outcome, not a direct measure of youth opinion or protest-group continuity.'
+  },
+  {
+    id: 'nepalNiporeFesGenZReport2026',
+    label: 'Nepal Institute for Policy Research and Friedrich-Ebert-Stiftung Nepal Office — Nepal’s Gen-Z Movement: Youth’s Views and Voices about Political Future (2026)',
+    url: 'https://nipore.org/wp-content/uploads/2026/04/Nepals-Gen-Z-Movement-Youths-Views-and-Voices-about-Political-Future-by-NIPoRe-and-FES_Protected-Copy.pdf',
+    note: 'Institutional survey and focus-group report consulted for its methods and authors’ reported findings; no report wording, chart, table, dataset or PDF page is republished. The 865-person survey and 11 focus groups are not a census of protesters; survey and purposive qualitative methods have distinct scopes. The report predates the March 2026 election.',
+    accessDate: '2026-09-23', creators: ['Nepal Institute for Policy Research', 'Friedrich-Ebert-Stiftung Nepal Office'], institution: 'Nepal Institute for Policy Research and Friedrich-Ebert-Stiftung Nepal Office', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional youth-attitudes survey and focus-group report', identifiers: { surveyRespondents: '865', focusGroups: '11', surveyAgeRange: '16–28' },
+    description: 'Survey and qualitative research on young respondents’ accounts of the movement and political future, with stated coverage across provinces and selected municipalities. It records authors’ methods and interpretations, not the total views of protesters, all youth, or post-election public opinion.'
+  },
+  {
+    id: 'nepalMallaGenZRajniti2026',
+    label: 'Katak Malla — Nepalma Gen-Z Rajniti (नेपालमा जेन-जी राजनीति: उदय, चुनौती र सतर्कता) (Imprint Publishers, 2026; catalog listing)',
+    url: 'https://thuprai.com/book/nepalma-gen-z-rajniti/',
+    note: 'Thuprai catalog listing consulted only to verify the existence of a Nepali-language 2026 paperback attributed to Katak Malla and Imprint Publishers. Full text, ISBN and pagination were not verified or consulted; the retailer description is not treated as a scholarly review or evidence for the book’s arguments. No cover image, description or book text is republished.',
+    accessDate: '2026-09-23', creators: ['Katak Malla'], institution: 'Imprint Publishers (publisher named in Thuprai listing)', publicationDate: '2026', evidenceRole: 'contextual', confidence: 'medium', languages: ['Nepali'],
+    sourceType: 'catalog listing for a Nepali-language political book', identifiers: { edition: 'Paperback, 1st edition' },
+    description: 'A contemporary book-length treatment is listed, but this bibliographic witness does not establish scholarly review, contents, completeness or reliability. It is noted to keep the book-level evidence gap visible, not used to support substantive claims.'
+  },
+  {
+    id: 'nepalAlJazeeraGenZAnniversary2026',
+    label: 'Sarah Shamim — One year on from Nepal protests, have Gen Z demands been met? (Al Jazeera, 8 September 2026)',
+    url: 'https://www.aljazeera.com/news/2026/9/8/one-year-on-from-nepal-protests-have-gen-z-demands-been-met',
+    note: 'First-anniversary news report consulted for attributed interviews, disagreements about implementation and reported court/investigation status as of publication. Interviewees’ and analysts’ assessments remain attributed rather than treated as consensus or independent official findings. No article text, image or interview transcript is republished.',
+    accessDate: '2026-09-23', creators: ['Sarah Shamim'], institution: 'Al Jazeera', publicationDate: '2026-09-08', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'first-anniversary news report with interviews', identifiers: { anniversary: '2026-09-08' },
+    description: 'A dated review of the first year after the protests, reporting divergent activist and analyst assessments and selected legal developments. It provides a contemporaneous snapshot, not a comprehensive evaluation of implementation.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
