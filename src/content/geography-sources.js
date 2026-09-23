@@ -4506,13 +4506,13 @@ const sources = [
   },
   {
     id: 'ugandaElectoralCommission2026GeneralElection',
-    label: 'Electoral Commission of Uganda — 2025/2026 General Elections roadmap and polling schedule',
+    label: 'Electoral Commission of Uganda — 2025/2026 General Elections programme and updates',
     url: 'https://www.ec.or.ug/election/20252026-general-elections',
-    note: 'Official Electoral Commission page consulted for the revised 2025/2026 presidential, parliamentary, local-government and special-interest election timetable and administrative roadmap. No schedule wording, PDF, result table or scan is republished; the page establishes electoral administration and dates, not fairness, final results or public consent.',
-    accessDate: '2026-09-22', creators: ['Electoral Commission of Uganda'], institution: 'Electoral Commission of Uganda',
+    note: 'Official Electoral Commission page consulted for the 2025/2026 election programme and later linked notices. No schedule wording, PDF, results table or scan is republished; the landing page is not the national presidential returns record cited for aggregate percentages and does not establish fairness, consent or uniform local implementation.',
+    accessDate: '2026-09-23', creators: ['Electoral Commission of Uganda'], institution: 'Electoral Commission of Uganda',
     publicationDate: '2026-01-19', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
     sourceType: 'primary electoral timetable and administration record', identifiers: { electionDate: '2026-01-15', cycle: '2025/2026' },
-    description: 'Official administrative witness for the 2025/2026 electoral cycle, including the 15 January 2026 presidential and parliamentary polling date, local-government and special-interest election sequence and the Commission’s electoral activities. It does not establish equal conditions, complete results or voter experience.'
+    description: 'Official administrative witness for the 2025/2026 electoral cycle and linked programme updates. It documents election programming, not equal conditions, the complete national presidential returns, public consent or the experience of every locality.'
   },
   {
     id: 'ugandaAuComesaIgadElectionObservation2026',
@@ -4533,6 +4533,86 @@ const sources = [
     publicationDate: '2026-01-17', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional statement'],
     sourceType: 'primary diplomatic statement on an election', identifiers: { electionDate: '2026-01-15' },
     description: 'Diplomatic response corroborating concerns about an uneven electoral playing field, arbitrary arrests of civil-society actors and an internet shutdown. It is a bounded external response, not an independent observation mission or a complete account of Ugandan political experience.'
+  },
+  {
+    id: 'ugandaAuComesaIgadArrivalStatement2026',
+    label: 'AU–COMESA–IGAD Election Observation Mission — Uganda arrival statement (9 January 2026)',
+    url: 'https://www.peaceau.org/en/article/arrival-statement-african-union-common-market-for-eastern-and-southern-africa-inter-governmental-authority-on-development-election-observation-mission-to-the-15-january-2026-general-elections-in-the-republic-of-uganda',
+    note: 'Official mission-arrival statement consulted for observer composition, mandate and the announced plan for a later comprehensive report. No statement wording or scan is republished; an announcement that a report would follow is not evidence of its eventual publication.',
+    accessDate: '2026-09-23', creators: ['African Union–COMESA–IGAD Election Observation Mission'], institution: 'African Union / COMESA / IGAD',
+    publicationDate: '2026-01-09', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary regional election-observation mission arrival statement', identifiers: { electionDate: '2026-01-15', observers: '84' },
+    description: 'Institutional record announcing the joint mission, its 84 short-term observers and its planned comprehensive report. It establishes the stated mandate and intention, not the later report’s availability or the election’s merits.'
+  },
+  {
+    id: 'ugandaAuPapsDocumentIndex2026',
+    label: 'African Union Peace and Security Department — Uganda document-index search (consulted 23 September 2026)',
+    url: 'https://www.peaceau.org/en/resource/documents?conflict=&keywords=uganda&location=&organ=&theme=',
+    note: 'Institutional document-index search used only to record a targeted discovery check. The index returned the January 2026 arrival and preliminary statements in the reviewed results but no final Uganda mission report; absence from this search is not proof that no report was published elsewhere or under different indexing.',
+    accessDate: '2026-09-23', creators: ['African Union Commission, Political Affairs, Peace and Security Department'], institution: 'African Union',
+    evidenceRole: 'contextual', confidence: 'low', languages: ['English institutional index'],
+    sourceType: 'institutional document-index search / research-finding record', identifiers: { query: 'Uganda', checkedOn: '2026-09-23' },
+    description: 'A reproducible finding aid for the limited report-availability check described in the case limitation. It is not evidence about the election itself and cannot establish non-publication.'
+  },
+  {
+    id: 'ugandaSupremeCourtPetitionWithdrawal2026',
+    label: 'Supreme Court of Uganda — Kasibante Robert v Museveni, Presidential Election Application No. 3 of 2026, [2026] UGSC 7',
+    url: 'https://ulii.org/en/akn/ug/judgment/ugsc/2026/7/eng%402026-02-26',
+    note: 'Uganda Legal Information Institute case record, a Judiciary of Uganda Law Reporting Committee project, consulted for the order of 26 February 2026. No judgment wording or scan is republished. The reported disposition grants withdrawal and records the result as unchallenged; it is not a merits judgment validating disputed factual allegations.',
+    accessDate: '2026-09-23', creators: ['Supreme Court of Uganda'], institution: 'Uganda Legal Information Institute / Judiciary of Uganda Law Reporting Committee',
+    publicationDate: '2026-02-26', evidenceRole: 'primary', confidence: 'high', languages: ['English judicial record'],
+    sourceType: 'primary Supreme Court election-application order / official legal record', identifiers: { caseNumber: 'Presidential Election Application No. 3 of 2026', neutralCitation: '[2026] UGSC 7', decisionDate: '2026-02-26' },
+    description: 'Primary judicial record of the withdrawal disposition in Kasibante Robert v Yoweri Kaguta Museveni Tibuhaburwa and Others. It documents the procedural outcome and legal status of the declared result after withdrawal, not a trial determination of alleged irregularities or popular consent.'
+  },
+  {
+    id: 'ugandaJudiciaryPresidentialPetition2026',
+    label: 'Judiciary of Uganda — Supreme Court hears application in the presidential election petition (2026)',
+    url: 'https://judiciary.go.ug/data/news/1799/Supreme%20Court%20Hears%20Application%20in%20The%20Presidential%20Election%20Petition%20Challenging%20President%20Museveni/%27s%20Victory%20in%20The%20January%202026%20Elections.html',
+    note: 'Official Judiciary account of an interlocutory hearing consulted as a primary institutional record. No statement wording, pleading or scan is republished. Requested discovery and forensic access are attributed to the petitioner; they are not court findings that the alleged defects occurred.',
+    accessDate: '2026-09-23', creators: ['Judiciary of Uganda'], institution: 'Judiciary of Uganda',
+    publicationDate: '2026-02', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary court-administration report of election-petition proceedings', identifiers: { caseNumber: 'Presidential Election Petition No. 3 of 2026' },
+    description: 'Judiciary report on a Supreme Court hearing, including the petitioner’s requests for polling-station declaration forms and access to biometric and electronic transmission/tally systems. It records litigant requests and procedural context rather than judicial findings on their factual basis.'
+  },
+  {
+    id: 'ugandaOhchrSpecialCommunication2026',
+    label: 'UN Special Procedures — Communication to Uganda, AL UGA 1/2026 (16 January 2026)',
+    url: 'https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=30685',
+    note: 'Official UN Special Procedures communication consulted as a primary institutional document. No communication wording or PDF scan is republished. It transmits information received, raises questions and requests observations; it is not an adjudication or independent fact-finding determination, and attributed allegations remain such.',
+    accessDate: '2026-09-23', creators: ['UN Special Procedures mandate holders'], institution: 'Office of the United Nations High Commissioner for Human Rights',
+    publicationDate: '2026-01-16', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional communication'],
+    sourceType: 'primary UN human-rights special-procedures communication', identifiers: { reference: 'AL UGA 1/2026', communicationDate: '2026-01-16' },
+    description: 'Official communication recording concerns based on information received about Sarah Bireete’s detention, NGO suspensions and an internet restriction and asking the government to respond. Its procedural request does not establish the allegations as findings.'
+  },
+  {
+    id: 'ugandaElectoralCommissionLc1Complaints2026',
+    label: 'Electoral Commission of Uganda — Updated advisory on LC1 complaints (19 August 2026; list updated 27 August)',
+    url: 'https://www.ec.or.ug/node/868',
+    note: 'Official Commission advisory and linked complaint list consulted as a primary administrative record. The Commission’s statement that review was ongoing is time-bounded to the notice and does not establish the present disposition of every complaint. No advisory wording, attachment or list is reproduced.',
+    accessDate: '2026-09-23', creators: ['Electoral Commission of Uganda'], institution: 'Electoral Commission of Uganda',
+    publicationDate: '2026-08-19', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary local-election complaint advisory / official administrative record', identifiers: { localElectionDate: '2026-07-28', advisoryDate: '2026-08-19', complaintListUpdated: '2026-08-27' },
+    description: 'Commission notice that it had received challenges to LC1 processes and results in some villages/cells, was reviewing them, and advised local authorities to defer swearing-in in affected places. It records the Commission’s position at publication, not the final result of each complaint.'
+  },
+  {
+    id: 'ugandaMediaCentreInauguration2026',
+    label: 'Office of the President of Uganda — Museveni sworn in for seventh term (12 May 2026)',
+    url: 'https://mediacentre.go.ug/press-room/umc-808',
+    note: 'Official Office of the President statement hosted by Uganda Media Centre, consulted as a primary record of the inauguration and the government’s account. No speech wording, quotation or scan is republished; the executive’s description of the term is not an independent assessment of the election.',
+    accessDate: '2026-09-23', creators: ['Office of the President of Uganda'], institution: 'Uganda Media Centre / Office of the President',
+    publicationDate: '2026-05-12', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary presidential inauguration statement / official record', identifiers: { reference: 'UMC/UMC-808/20260512', inaugurationDate: '2026-05-12' },
+    description: 'Official record that Museveni was sworn in on 12 May 2026 for a seventh term. It establishes the executive’s public account of inauguration, not the fairness, legality or public acceptance of the election.'
+  },
+  {
+    id: 'ugandaApFinalResults2026',
+    label: 'Associated Press — Ugandan President Yoweri Museveni secures seventh term as opposition rejects results (17 January 2026)',
+    url: 'https://apnews.com/article/7ba4e6d8ecf1eace2cb9c46453594346',
+    note: 'Associated Press report consulted for contemporaneous reporting of the declared presidential percentages and opposition response. No article wording is reproduced; result figures are attributed to AP’s report of official results, and reported fraud claims remain attributed claims rather than findings by this source.',
+    accessDate: '2026-09-23', creators: ['Rodney Muhumuza'], institution: 'Associated Press',
+    publicationDate: '2026-01-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report on official presidential results and opposition response', identifiers: { electionDate: '2026-01-15', reportDate: '2026-01-17' },
+    description: 'Contemporaneous independent reporting that official results gave Museveni 71.65% and Kyagulanyi 24.72%, alongside the opposition’s rejection and allegations. It is not the official returns table, an observer report or a judicial finding.'
   },
   {
     id: 'ugandaWilkinsVokesElections2018',

@@ -99,6 +99,15 @@ assert.equal(filterGeographyCases({ country: 'kenya' })[0].id, 'kenyan-postcolon
 assert.ok(filterGeographyCases({ country: 'kenya' }).some(({ id }) => id === 'kenyan-ruto-era-succession-and-finance-bill-protest-order'));
 assert.equal(filterGeographyCases({ country: 'uganda' })[0].id, 'ugandan-postcolonial-constitutional-and-movement-transition');
 assert.ok(filterGeographyCases({ country: 'uganda' }).some(({ id }) => id === 'ugandan-late-museveni-order-and-2026-electoral-contestation'));
+const uganda2026Case = GEOGRAPHY_CASES.find(({ id }) => id === 'ugandan-late-museveni-order-and-2026-electoral-contestation');
+assert.equal(uganda2026Case.reviewedAt, '2026-09-23');
+for (const sourceId of ['ugandaSupremeCourtPetitionWithdrawal2026', 'ugandaOhchrSpecialCommunication2026', 'ugandaElectoralCommissionLc1Complaints2026', 'ugandaApFinalResults2026']) {
+  assert.ok(uganda2026Case.sourceIds.includes(sourceId), `Uganda 2026 case should cite ${sourceId}`);
+}
+assert.match(uganda2026Case.claim, /71\.65%.*24\.72%/);
+assert.match(uganda2026Case.claim, /did not adjudicate the evidentiary allegations on their merits/);
+assert.match(uganda2026Case.limitation, /cannot prove non-publication/);
+assert.match(uganda2026Case.limitation, /not a live assessment of current government/);
 assert.ok(filterGeographyCases({ country: 'map-862' }).some(({ id }) => id === 'venezuelan-post-2024-election-repression-and-2025-electoral-contestation'));
 assert.equal(filterGeographyCases({ country: 'rwanda' })[0].id, 'rwandan-postgenocide-constitutional-developmental-order');
 assert.equal(filterGeographyCases({ country: 'senegal' })[0].id, 'senegalese-postcolonial-constitutional-and-democratic-transition');
