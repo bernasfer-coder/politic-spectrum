@@ -16,8 +16,8 @@ afterEach(cleanup);
 
 describe('map geometry and filter contracts', () => {
   it('keeps all map IDs unique, finite and compatible with share URLs', () => {
-    expect(MAP_COUNTRIES).toHaveLength(179);
-    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(179);
+    expect(MAP_COUNTRIES).toHaveLength(180);
+    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(180);
     for (const item of MAP_COUNTRIES) {
       expect(item.path).toMatch(/^M/);
       expect(item.path).not.toMatch(/NaN|Infinity/);
@@ -26,6 +26,13 @@ describe('map geometry and filter contracts', () => {
     }
     expect(MAP_COUNTRIES_BY_ID['map-kosovo']).toBeDefined();
     expect(MAP_COUNTRIES_BY_ID.egypt.name).toBe('Egypt');
+    expect(MAP_COUNTRIES_BY_ID['map-192'].name).toBe('Cuba');
+    expect(MAP_COUNTRIES_BY_ID['map-840'].name).toBe('United States');
+    expect(MAP_COUNTRIES_BY_ID['map-124'].name).toBe('Canada');
+    expect(MAP_COUNTRIES_BY_ID['map-036'].name).toBe('Australia');
+    expect(MAP_COUNTRIES_BY_ID['map-554'].name).toBe('New Zealand');
+    expect(MAP_COUNTRIES_BY_ID['map-156'].name).toBe('China');
+    expect(MAP_COUNTRIES_BY_ID['map-643'].name).toBe('Russia');
     expect(MAP_COUNTRIES_BY_ID.portugal.name).toBe('Portugal');
     expect(MAP_COUNTRIES_BY_ID.spain.name).toBe('Spain');
     expect(MAP_COUNTRIES_BY_ID.germany.name).toBe('Germany');
@@ -104,8 +111,8 @@ describe('interactive atlas map', () => {
   it('opens the researched Brazil case and restores it after refresh', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    await user.click(map().getByRole('button', { name: 'Brazil: 2 matching cases' }));
-    expect(cards()).toHaveLength(2);
+    await user.click(map().getByRole('button', { name: 'Brazil: 4 matching cases' }));
+    expect(cards()).toHaveLength(4);
     expect(cards()[0]).toHaveTextContent(/Brazilian democratic constitutionalism|1985–1988/);
     expect(window.location.hash).toContain('country=brazil');
     expect(screen.getByRole('combobox', { name: /Country/ })).toHaveValue('brazil');
@@ -167,7 +174,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(111);
+    expect(cards()).toHaveLength(160);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });

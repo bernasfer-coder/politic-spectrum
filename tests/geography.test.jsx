@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(111);
+    expect(cards()).toHaveLength(160);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -27,6 +27,26 @@ describe('geographic atlas', () => {
     await user.click(screen.getByRole('button', { name: 'Reset atlas filters' }));
     await user.selectOptions(screen.getByRole('combobox', { name: 'Connection' }), 'experimented');
     expect(cards()[0]).toHaveTextContent('Democratic confederalism');
+  });
+
+  it('shows the bounded Bolivia 2025 election case and its documented evidence gap', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-068');
+    expect(cards()).toHaveLength(2);
+    const caseCard = screen.getByRole('article', { name: 'Bolivia’s 2025 elections and executive transition' });
+    expect(caseCard).toHaveTextContent('60,000-vote conflict');
+    expect(caseCard).toHaveTextContent('No event-specific book-length scholarship was located');
+  });
+
+  it('shows the bounded Argentina 2025 election, attributed analysis and source limits', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-032');
+    const caseCard = screen.getByRole('article', { name: 'Argentina’s 2025 national midterm legislative election' });
+    expect(caseCard).toHaveTextContent('Orr interprets this as a rightward party-system realignment');
+    expect(caseCard).toHaveTextContent('did not collate all 24 actas');
+    expect(caseCard).toHaveTextContent('does not assign Argentina, the electorate, LLA, Peronism or any other party a six-axis score');
   });
 
   it('shows label context before cases without inventing scored cards', async () => {
@@ -70,8 +90,8 @@ describe('geographic atlas', () => {
     await user.selectOptions(screen.getByRole('combobox', { name: /Place \/ historical/ }), 'jerusalem');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: /Oceania/ }));
-    expect(cards()).toHaveLength(7);
-    expect(cards()[0]).toHaveTextContent('Tongan constitutional monarchy and democratic reform');
+    expect(cards()).toHaveLength(13);
+    expect(cards()[0]).toHaveTextContent('New Zealand Treaty, bicultural, constitutional and welfare-democratic order');
     expect(screen.getByRole('button', { name: /Oceania/ })).toHaveAttribute('aria-pressed', 'true');
     await user.click(within(screen.getByRole('group', { name: 'Browse continents' })).getByRole('button', { name: /Antarctica/ }));
     expect(cards()).toHaveLength(1);

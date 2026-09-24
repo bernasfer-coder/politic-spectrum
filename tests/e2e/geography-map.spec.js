@@ -13,14 +13,26 @@ test('country paths filter, persist and handle newly researched countries', asyn
   await page.reload();
   await expect(map.getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'World view', exact: true }).click();
-  await map.getByRole('button', { name: 'Brazil: 2 matching cases', exact: true }).click();
-  await expect(page.locator('.geo-card')).toHaveCount(2);
+  await map.getByRole('button', { name: 'Brazil: 4 matching cases', exact: true }).click();
+  await expect(page.locator('.geo-card')).toHaveCount(4);
   await expect(page.locator('.geo-card').first()).toContainText(/Brazilian democratic constitutionalism|1985–1988/);
   await page.reload();
   await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('brazil');
   await page.goBack();
   await expect(map.getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
   expect(errors).toEqual([]);
+});
+
+test('DRC country polygon selects its single bounded conflict case', async ({ page }) => {
+  await page.goto('/#geography');
+  const map = page.getByRole('group', { name: 'Interactive world map' });
+  const drc = map.getByRole('button', { name: 'Democratic Republic of the Congo: 1 matching case', exact: true });
+  await expect(drc).toBeVisible();
+  await drc.click();
+  await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('map-180');
+  await expect(page.locator('.geo-card')).toHaveCount(1);
+  await expect(page.locator('.geo-card')).toContainText('parallel Washington and Doha political tracks');
+  await expect(drc).toHaveAttribute('aria-pressed', 'true');
 });
 
 test('markers and cross-border controls select places, not invented countries', async ({ page }, testInfo) => {
