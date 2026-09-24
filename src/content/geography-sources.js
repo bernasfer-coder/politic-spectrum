@@ -9169,6 +9169,96 @@ const sources = [
     sourceType: 'primary party manifesto landing page / campaign platform', identifiers: { electionDate: '2026-02-11' },
     description: 'Official campaign page labelled Manifesto 2026 and linking the party platform. This record establishes the party-authored primary source exists; the intermittently inaccessible PDF is not treated as independently reviewed in full.'
   },
+  {
+    id: 'nepalElectionCommission2026FinalResults',
+    label: 'Election Commission Nepal — 2026 House of Representatives election results report',
+    url: 'https://ebulletin.election.gov.np/2026/03/3043/',
+    note: 'Official Election Commission bulletin announcing submission of the final results report to the President, with results and administration summary. The indexed Nepali text was consulted because direct page retrieval timed out; no translation, table or text is reproduced, and the Commission’s self-assessment is not independent observation.',
+    accessDate: '2026-09-24', creators: ['Election Commission Nepal'], institution: 'Election Commission Nepal', publicationDate: '2026-03-19', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official final election-results bulletin / primary institutional record', identifiers: { electionDate: '2026-03-05' },
+    description: 'The Commission reports delivery of the final results to the President and records a 275-seat House, 179 men and 96 women elected, 164 party candidates and one independent under FPTP, six parties under PR, and observers. Official administrative data establish the reported institutional result, not campaign equality or public interpretation.'
+  },
+  {
+    id: 'nepalIPU2026Election',
+    label: 'Inter-Parliamentary Union — Nepal House of Representatives March 2026 election',
+    url: 'https://data.ipu.org/parliament/NP/NP-LC01/election/NP-LC01-E20260305/',
+    note: 'IPU Parline structured election profile consulted for dates, transition sequence, seat distribution and new legislature. Its record links official Election Commission sources; it is an inter-parliamentary secondary institutional compilation, not a full election-observation judgment.',
+    accessDate: '2026-09-24', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'inter-parliamentary election-results and legislature profile', identifiers: { electionDate: '2026-03-05' },
+    description: 'Records early-election status, dissolution of the outgoing House on 12 September 2025, interim Prime Minister Sushila Karki, 182 RSP seats (125 FPTP and 57 PR), swearing-in on 26 March, Balendra Shah’s appointment on 27 March and the first session on 2 April 2026. Data do not establish the voters’ motives or the movement’s ideological representativeness.'
+  },
+  {
+    id: 'nepalANFREL2026Observation',
+    label: 'Asian Network for Free Elections — Rebuilding Trust, Restoring Credibility: Accountability and Electoral Integrity in Nepal 2026',
+    url: 'https://anfrel.org/rebuilding-trust-restoring-credibility-accountability-and-electoral-integrity-in-nepal-2026/',
+    note: 'ANFREL’s 13 May 2026 final assessment report page and its published findings were consulted; the linked report is available there. This entry summarizes the organization’s observer findings in original paraphrase, not the full PDF; ANFREL describes a broad mission, while its observations and recommendations remain attributable to that mission.',
+    accessDate: '2026-09-24', creators: ['Asian Network for Free Elections'], institution: 'Asian Network for Free Elections (ANFREL)', publicationDate: '2026-05-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final assessment and report landing page', identifiers: { electionDate: '2026-03-05' },
+    description: 'ANFREL reports a generally peaceful and orderly election day, while also identifying uneven campaign-code enforcement, observer-access problems, campaign-finance transparency, accessibility, voter education and underrepresentation concerns. Its mission covered seven provinces and 35 districts; these observations are not claims that every polling station or voter experienced the same conditions.'
+  },
+  {
+    id: 'nepalHRWGenZProtest2025',
+    label: 'Human Rights Watch — Nepal: Unlawful Use of Force During “Gen Z” Protest (2025)',
+    url: 'https://www.hrw.org/news/2025/11/20/nepal-unlawful-use-of-force-during-gen-z-protest',
+    note: 'Human Rights Watch report published 19 November 2025 consulted as an independent rights investigation. HRW reports interviews with 52 people and verification of 50 videos, with research focused on Kathmandu; its findings and allegations are attributed and do not substitute for judicial findings or a complete national casualty audit.',
+    accessDate: '2026-09-24', creators: ['Human Rights Watch'], institution: 'Human Rights Watch', publicationDate: '2025-11-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Nepali'],
+    sourceType: 'human-rights investigation / interview and digital-evidence report', identifiers: {},
+    description: 'Documents HRW’s finding that police used disproportionate lethal force on 8 September, killing 17 protesters in Kathmandu; distinguishes the 8 September youth-led demonstration from 9 September arson, attacks and other violence, including people HRW says were not necessarily linked to the movement. HRW’s geographic scope and evidentiary assessment remain explicit.'
+  },
+  {
+    id: 'nepalUNGenZStatement2025',
+    label: 'United Nations in Nepal — Statement on the September 2025 violence',
+    url: 'https://nepal.un.org/en/301226-statement-united-nations-nepal',
+    note: 'UN in Nepal statement of 9 September 2025 consulted as an institutional primary statement. It calls for peaceful exercise of rights, proportionate law-enforcement response and independent investigation of allegations; it is not an adjudication of facts or liability.',
+    accessDate: '2026-09-24', creators: ['United Nations in Nepal'], institution: 'United Nations Resident Coordinator Office in Nepal', publicationDate: '2025-09-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official United Nations statement', identifiers: {},
+    description: 'The UN statement recognizes the loss of life and youth concerns, states that expression, information and peaceful assembly are protected, urges proportional law-enforcement response and calls for prompt, independent, transparent and impartial investigation of excessive-force allegations. It does not report investigation findings.'
+  },
+  {
+    id: 'nepalNHRCGenZRecommendations2026',
+    label: 'National Human Rights Commission Nepal — Recommendations on the investigation report concerning the Gen Z movement (2026)',
+    url: 'https://www.nhrcnepal.org/press_release/detail/883',
+    note: 'Official NHRC Nepali-language press release and linked recommendations, issued 27 May 2026, consulted as a primary human-rights body record. The detailed attachment is in Nepali and was not independently translated or fully collated; this entry records its release and referral, not unverified particulars of its findings.',
+    accessDate: '2026-09-24', creators: ['National Human Rights Commission Nepal'], institution: 'National Human Rights Commission Nepal', publicationDate: '2026-05-27', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official national human-rights commission press release and recommendations', identifiers: {},
+    description: 'The NHRC says its committee completed an investigation into human-rights violations during the September 2025 movement and that the Commission sent its decision and recommendations to the Government. The Nepali report requires expert-language review before substantive claims are made from it.'
+  },
+  {
+    id: 'nepalISASAccountability2026',
+    label: 'Puspa Sharma — Nepal’s Gen-Z Protest and Violence: Divergent Findings and Questions of Legitimacy (2026)',
+    url: 'https://www.isas.nus.edu.sg/papers/nepals-gen-z-protest-and-violence-divergent-findings-and-questions-of-legitimacy/',
+    note: 'NUS Institute of South Asian Studies analysis dated 3 June 2026 consulted. Claims about commissions, official publication, political action and credibility are attributed to Sharma as an analyst and checked against the NHRC announcement and contemporaneous reporting; this is not a peer-reviewed book or a settled legal judgment.',
+    accessDate: '2026-09-24', creators: ['Puspa Sharma'], institution: 'Institute of South Asian Studies, National University of Singapore', publicationDate: '2026-06-03', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional research commentary / policy analysis', identifiers: {},
+    description: 'Compares the NHRC committee’s recommendations with the interim-government inquiry commission chaired by Gauri Bahadur Karki, and questions the credibility and selectivity of the latter’s reported recommendations. The page says the Karki report had not officially been released as of 3 June; its competing accounts and legitimacy interpretations remain attributed.'
+  },
+  {
+    id: 'nepalKathmanduPostNHRCChallenge2026',
+    label: 'Durga Dulal — Oli, Lekhak and Gurung challenge NHRC report, demand basis for prosecution recommendations (2026)',
+    url: 'https://kathmandupost.com/national/2026/07/13/oli-lekhak-and-gurung-challenge-nhrc-report-demand-basis-for-prosecution-recommendations',
+    note: 'Kathmandu Post report published 13 July 2026 consulted for developments and named parties’ requests for information. Accusations, NHRC recommendations, legal challenges and reported timelines are attributed; none constitutes a criminal conviction or final judicial determination.',
+    accessDate: '2026-09-24', creators: ['Durga Dulal'], institution: 'The Kathmandu Post', publicationDate: '2026-07-13', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous legal and political reporting', identifiers: {},
+    description: 'Reports that named officials challenged the NHRC recommendations and sought underlying materials, that the NHRC cited witness protection and privacy in limiting disclosure, and that a Supreme Court show-cause notice had issued in one petition. As of the article date the recommendations and disclosure remained contested; no culpability is assumed.'
+  },
+  {
+    id: 'nepalKathmanduPostParliament2026',
+    label: 'Jaya Singh Mahara — Speaker instructs PM Shah to attend parliament, answer lawmakers (2026)',
+    url: 'https://kathmandupost.com/politics/2026/08/18/speaker-instructs-pm-shah-to-attend-parliament-answer-lawmakers',
+    note: 'Kathmandu Post report published 18 August 2026 consulted for early post-election parliamentary accountability. It reports a Speaker’s direction and an ongoing political dispute; a news article is not a full record of House proceedings, a constitutional judgment or evidence of later compliance.',
+    accessDate: '2026-09-24', creators: ['Jaya Singh Mahara'], institution: 'The Kathmandu Post', publicationDate: '2026-08-18', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous parliamentary and political reporting', identifiers: {},
+    description: 'Reports a Speaker’s direction that the Prime Minister attend and answer questions after opposition pressure and repeated nonattendance during scheduled sessions. The article also records a dispute over the Speaker’s independence; it does not resolve parliamentary accountability or establish the subsequent attendance record.'
+  },
+  {
+    id: 'nepalRSPBachapatra2026',
+    label: 'Rastriya Swatantra Party — Bacha Patra 2082 (2026 election commitment paper)',
+    url: 'https://rspnepal.org/manifesto',
+    note: 'Official RSP manifesto page identified in the party’s own domain and cited by NUS–ISAS; the web page exposed no readable text during this review, so this entry records the primary-source pointer and title only. No substantive platform wording, translation or policy commitment is claimed here.',
+    accessDate: '2026-09-24', creators: ['Rastriya Swatantra Party'], institution: 'Rastriya Swatantra Party', publicationDate: '2026', evidenceRole: 'primary', confidence: 'medium', languages: ['Nepali'],
+    sourceType: 'party-authored election commitment paper landing page', identifiers: { electionDate: '2026-03-05' },
+    description: 'Identifies the RSP’s party-authored Bacha Patra 2082 campaign document as a relevant primary source. The manifesto was not independently accessible in full for this review and supports no claim here about party ideology, program completeness or implementation.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
