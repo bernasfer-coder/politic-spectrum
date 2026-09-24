@@ -6,8 +6,12 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 155);
-assert.equal(GEOGRAPHY_LABELS.length, 153);
+assert.equal(GEOGRAPHY_CASES.length, 156);
+assert.equal(GEOGRAPHY_LABELS.length, 154);
+const nepalTransition = GEOGRAPHY_CASES.find(({ id }) => id === 'nepal-youth-protest-transition-and-2026-election');
+assert.ok(nepalTransition, 'the 2025–2026 Nepal transition is represented as one bounded case');
+assert.equal(nepalTransition.axisPositions, null, 'the Nepal transition has no unsupported numeric axis scores');
+assert.ok(nepalTransition.limitation.includes('through the NHRC inquiry report published 27 May 2026'));
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
@@ -127,4 +131,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 155 dated cases, 153 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 156 dated cases, 154 unscored labels, citations, boundaries, filters and share URLs.');
