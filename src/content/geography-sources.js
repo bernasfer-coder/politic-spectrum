@@ -1258,6 +1258,42 @@ const sources = [
     description: 'Book-length study of unresolved transition dilemmas, democratic instability since 2013, Bolsonaro-era backsliding, army self-restraint, institutional change, judicial politicization, Bolsonarismo and the difficult 2023 recovery. It supplies an independent institutional-crisis perspective, not a complete account of the 2025 judgment or every post-2025 development.'
   },
   {
+    id: 'brazilTseGeneralActs2026',
+    label: 'Tribunal Superior Eleitoral — Resolution No. 23.751, general acts for the 2026 election (26 February 2026)',
+    url: 'https://www.tse.jus.br/legislacao/compilada/res/2026/resolucao-no-23-751-de-26-de-fevereiro-de-2026',
+    note: 'Official Portuguese electoral regulation consulted for the election dates and offices covered in article 2. Linked and independently summarized only; no legal wording, translation, scan or facsimile is reproduced. The timetable is formal evidence, not an election result or evidence of equal access.',
+    accessDate: '2026-09-24', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: '2026-02-26', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'primary electoral regulation / official legal text', identifiers: { resolution: '23.751/2026', adoptionDate: '2026-02-26' },
+    description: 'The TSE resolution schedules the first round for 4 October and a possible second round for 25 October 2026, covering presidential and gubernatorial tickets, senators, federal and state/district deputies, and Fernando de Noronha’s district council. It records the formal electoral calendar and scope, not outcomes, campaign fairness or implementation.'
+  },
+  {
+    id: 'brazilTseCandidacies2026',
+    label: 'Tribunal Superior Eleitoral — 2026 presidential candidacy-registration decisions (11 September 2026)',
+    url: 'https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/eleicoes-2026-tem-12-candidaturas-na-disputa-pela-presidencia-da-republica',
+    note: 'Official TSE newsroom summary consulted for its report that twelve presidential candidacies remained in the race and that the Marçal–Avalanche request was denied. Linked and paraphrased only; the underlying case docket and opinions were not independently collated, and the institutional summary is attributed to the TSE.',
+    accessDate: '2026-09-24', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: '2026-09-11', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official electoral-court decision summary / candidacy-registration record', identifiers: { publicationDate: '2026-09-11' },
+    description: 'The TSE reports completion of presidential registration judgments, twelve candidacies then in contention, and denial of the Pablo Marçal–Leonardo Avalanche slate after failure to establish timely party-affiliation eligibility. It documents the Court’s stated disposition and rationale, not an independent assessment of every case or subsequent appeal.'
+  },
+  {
+    id: 'brazilTseDeepfakeDecision2026',
+    label: 'Tribunal Superior Eleitoral — AI-generated campaign-video and party-convention decision (1 September 2026)',
+    url: 'https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/tse-fixa-tese-sobre-deepfake-e-delimita-regra-para-as-eleicoes-2026',
+    note: 'Official TSE newsroom summary of one reported 2026 electoral case, consulted for the divided votes, stated deepfake test and context-sensitive early-campaign ruling. Linked and summarized independently only; no ruling text, image or video is reproduced, and the underlying docket and individual opinions were not collated.',
+    accessDate: '2026-09-24', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: '2026-09-01', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official electoral-court decision summary / digital campaign regulation', identifiers: { caseNumber: '0601315-97.2026.6.00.0000', decisionDate: '2026-09-01' },
+    description: 'The TSE reports a 5–2 definition of deepfake for election rules and a 4–3 decision that online transmission of a party convention is not by itself early electoral propaganda; the particular dispute concerned an AI-recreated video of Jair Bolsonaro supporting Flávio Bolsonaro. The summary records one case and split outcomes, not a broad platform-governance evaluation.'
+  },
+  {
+    id: 'brazilCoutoAbrucioTeixeiraElection2026',
+    label: 'Cláudio Gonçalves Couto, Fernando Luiz Abrucio and Marco Antonio Carvalho Teixeira — O caleidoscópio eleitoral de 2026: eleições congressuais, federalismo e disputa presidencial (2026)',
+    url: 'https://www.scielo.br/j/ea/a/JgyBXyMtD44CdWqq9sV7tsL/?lang=pt',
+    note: 'Full Portuguese-language article consulted on SciELO; published online 7 August 2026 in Estudos Avançados 40(117), DOI 10.1590/s0103-4014.2026.40117.002. The page identifies CC BY 4.0; this project uses an attributed original paraphrase and link only, reproducing no article text, translation, table or figure. Its argument is one scholarly interpretation, not consensus or a prediction.',
+    accessDate: '2026-09-24', creators: ['Cláudio Gonçalves Couto', 'Fernando Luiz Abrucio', 'Marco Antonio Carvalho Teixeira'], institution: 'Estudos Avançados / Universidade de São Paulo; Fundação Getulio Vargas EAESP', publicationDate: '2026-08-07', evidenceRole: 'secondary', confidence: 'high', languages: ['Portuguese', 'English abstract'],
+    sourceType: 'peer-reviewed journal article', identifiers: { doi: '10.1590/s0103-4014.2026.40117.002', volume: '40', issue: '117' },
+    description: 'The authors connect Brazil’s presidential, congressional and state-level 2026 contests and argue that post-2015 budget and party-finance changes have strengthened Congress, reduced presidential bargaining leverage and made coalition presidentialism more fragmented and polycentric. It is an attributed institutional analysis published before voting, not a forecast of results or a complete account of candidates, voters or policy platforms.'
+  },
+  {
     id: 'knightMexicanRevolution1986',
     label: 'Alan Knight — The Mexican Revolution',
     url: 'https://search.worldcat.org/title/The-Mexican-Revolution/oclc/12135091',
