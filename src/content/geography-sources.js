@@ -9106,6 +9106,69 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'barbadosCommonwealth2026Election',
+    label: 'Commonwealth Expert Team — Barbados General Election: 11 February 2026 (2026)',
+    url: 'https://comsec-web-static.s3.eu-west-1.amazonaws.com/s3fs-public/2026-06/Barbados%202026%20General%20Election%20Report.pdf?VersionId=iFpopQIWl1ZD5Qr1.vDnVwZjLikSJVsm',
+    note: 'Commonwealth Secretariat final report (64 pages), consulted as an attributed international observation and institutional assessment. The report says EBC official results were unavailable when it was written and explicitly bases its vote totals on local media; its positive overall assessment and recommendations are the Team’s conclusions, not a complete domestic audit. No report wording, table, scan or page is reproduced. The publication permits educational reproduction with full acknowledgement and prohibits resale; this catalogue provides a link and short factual description only.',
+    accessDate: '2026-09-24', creators: ['Commonwealth Expert Team'], institution: 'Commonwealth Secretariat', publicationDate: '2026-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation final report / institutional assessment', identifiers: { pages: '64', electionDate: '2026-02-11' },
+    description: 'Final report of the Commonwealth Expert Team invited to observe the 11 February 2026 Barbados election. It reports the Team’s observations on the election framework, campaign, voter register, participation, reported results and recommendations. Its explicit distinction between unavailable EBC official results and figures then reported in local media is retained.'
+  },
+  {
+    id: 'barbadosGazetteIndependentSenators2026',
+    label: 'Government of Barbados — Official Gazette, appointment of Independent Senators (26 February 2026)',
+    url: 'https://www.barbadosparliament.com/uploads/gazette/Gazette_February_26_2026_Part_C_VOL_CLXI_No_26.pdf',
+    note: 'Official Gazette, Part C, Vol. CLXI, No. 26, Government Notice No. 12. The two independent appointments are expressly made under Constitution section 75 and effective 20 February 2026. Used as a primary appointment record, not as evidence of later legislative conduct; no Gazette wording or scan is republished.',
+    accessDate: '2026-09-24', creators: ['Government of Barbados, Government Printing Department'], institution: 'Government of Barbados', publicationDate: '2026-02-26', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary legal notice / official Gazette', identifiers: { gazette: 'Part C, Vol. CLXI, No. 26', notice: 'No. 12', constitutionalProvision: 'section 75', effectiveDate: '2026-02-20' },
+    description: 'Official notice documenting appointment of Ryan Oneal Walters and Karina Shelina Christina Goodridge as Independent Senators, effective 20 February 2026. It distinguishes Senate composition from elected House of Assembly seat results but does not establish the conduct or impact of parliamentary scrutiny.'
+  },
+  {
+    id: 'barbadosAP2026Election',
+    label: 'Associated Press — Barbados’ prime minister clinches a third term in office after a clean sweep at the polls (11 February 2026)',
+    url: 'https://apnews.com/article/barbados-election-mia-mottley-sweep-seats-parliament-1f18884f46dcbd8c9033860adb857135',
+    note: 'Associated Press contemporaneous report consulted as an independent journalistic cross-check on the 30-seat BLP sweep and third consecutive term. The Commonwealth report’s caveat about missing official EBC results remains controlling for vote totals. Copyrighted report and photographs are linked only; no text or image is reproduced.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press', publicationDate: '2026-02-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'contemporaneous wire-service election report', identifiers: { electionDate: '2026-02-11' },
+    description: 'Contemporaneous report confirming that the BLP won all 30 elected House seats, giving Mia Mottley a third consecutive term. It is used for event-level corroboration, not as the official national results record or a broad assessment of democratic quality.'
+  },
+  {
+    id: 'barbadosNationCandidateExpenses2026',
+    label: 'Barry Alleyne — Bees spent nearly three times as much as Dems in 2026 poll (Nation News, 7 September 2026)',
+    url: 'https://nationnews.com/2026/09/07/bees-spent-nearly-three-times-as-much-as-dems-in-2026-poll/',
+    note: 'Nation News report states that its figures come from the EBC Return of Election Expenses published in the Sunday Sun. The underlying filed return is not linked or independently inspected here; the figures are described as candidate submissions, not party-wide spending or donor-source data. Copyrighted article linked only; no text or table is reproduced.',
+    accessDate: '2026-09-24', creators: ['Barry Alleyne'], institution: 'Nation News', publicationDate: '2026-09-07', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'local newspaper report on official candidate expense returns', identifiers: { returnReported: 'EBC Return of Election Expenses', electionDate: '2026-02-11' },
+    description: 'Reports candidate-expense totals published from EBC returns: BLP candidates BBD 1,555,108.07; DLP candidates BBD 565,929.97; total submissions BBD 2,190,152.33. It does not by itself measure party spending, campaign finance sources or the complete resource environment.'
+  },
+  {
+    id: 'barbadosNationCampaignFinance2026',
+    label: 'Nationnews Desk — Analysts: Candidates’ spending not as important (Nation News, 15 September 2026)',
+    url: 'https://nationnews.com/2026/09/15/analysts-candidates-spending-not-as-important/',
+    note: 'Nation News report attributing views on party funding disclosure and EBC verification capacity to political analysts Cynthia Barrow-Giles and Devaron Bruce. These are attributed expert opinions, not a court finding, official audit or independently verified statement of law. Copyrighted article linked only; no quotation reproduced.',
+    accessDate: '2026-09-24', creators: ['Nationnews Desk'], institution: 'Nation News', publicationDate: '2026-09-15', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'local newspaper report with attributed political-science commentary', identifiers: { publicationDate: '2026-09-15' },
+    description: 'Records attributed analysts’ concerns that candidate expense accounts do not show party-level spending or sources of party finance and that EBC verification capacity warrants scrutiny. These reported views are not a determination that returns were inaccurate.'
+  },
+  {
+    id: 'barbadosBLPManifesto2026',
+    label: 'Barbados Labour Party — Greater Will Our Nation Grow: Manifesto 2026',
+    url: 'https://www.blp.org.bb/wp-content/uploads/2026/01/BLP-Manifesto-2026.pdf',
+    note: 'Official party-hosted 2026 manifesto consulted as a primary record of the BLP’s campaign platform. The party’s statements are not independently verified policy outcomes or neutral evaluation; link only, with no manifesto text reproduced.',
+    accessDate: '2026-09-24', creators: ['Barbados Labour Party'], institution: 'Barbados Labour Party', publicationDate: '2026-02-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary party manifesto / campaign platform', identifiers: { electionDate: '2026-02-11' },
+    description: 'Party-authored platform for the 2026 general election. It is evidence of the BLP’s published claims and commitments only, not of implementation, feasibility or the electorate’s acceptance of each item.'
+  },
+  {
+    id: 'barbadosDLPManifesto2026',
+    label: 'Democratic Labour Party (Barbados) — Manifesto 2026',
+    url: 'https://dlpbds.org/dlpmanifesto/',
+    note: 'Official DLP manifesto landing page with a Download link, consulted as the party’s primary platform record. The linked PDF endpoint was intermittently unavailable to direct retrieval; no full-text claim is made from it here. Party statements are not independent policy assessment or evidence of implementation. Link only, no text reproduced.',
+    accessDate: '2026-09-24', creators: ['Democratic Labour Party (Barbados)'], institution: 'Democratic Labour Party (Barbados)', publicationDate: '2026', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'primary party manifesto landing page / campaign platform', identifiers: { electionDate: '2026-02-11' },
+    description: 'Official campaign page labelled Manifesto 2026 and linking the party platform. This record establishes the party-authored primary source exists; the intermittently inaccessible PDF is not treated as independently reviewed in full.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9188,6 +9251,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
+      : source.id.startsWith('barbados') ? 'Barbadian postcolonial, constitutional, electoral and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
