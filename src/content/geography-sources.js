@@ -9321,6 +9321,199 @@ sources.push(
   }
 );
 
+sources.push(
+  {
+    id: 'madagascarApOath2025',
+    label: 'Associated Press — Madagascar coup leader sworn in after military takeover (17 October 2025)',
+    url: 'https://apnews.com/article/a484f9233876ef559af0c2e3029f1f7a',
+    note: 'Contemporaneous Associated Press report used for the 17 October swearing-in, the preceding protests, the UN-attributed death toll and the reported parliamentary and military sequence. Claims and legal characterizations remain attributed; no article text or photograph is reproduced.',
+    accessDate: '2026-09-24', creators: ['Gerald Imray', 'Nqobile Ntshangase'], institution: 'Associated Press',
+    publicationDate: '2025-10-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'contemporaneous news report', identifiers: { publicationDate: '2025-10-17' },
+    description: 'Reports that Colonel Michael Randrianirina took the oath at the High Constitutional Court on 17 October, three days after the military announced it was taking power. The report attributes at least 22 deaths in the preceding protests to the United Nations and records AU suspension and the UN’s classification of the takeover. It is a contemporaneous account, not a legal judgment or census of protest participants.'
+  },
+  {
+    id: 'madagascarApTakeover2025',
+    label: 'Associated Press — Military colonel announces armed forces are taking control in Madagascar (14 October 2025)',
+    url: 'https://apnews.com/article/ab1e1eb1aca45fe7e80e81314ebdb0c6',
+    note: 'Contemporaneous Associated Press report consulted for the 14 October power announcement, Randrianirina’s attributed statement on constitutional and High Constitutional Court powers, and the preceding parliamentary impeachment vote. No article text, image or quotation is republished; reported claims are attributed.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025-10-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'contemporaneous news report', identifiers: { publicationDate: '2025-10-14' },
+    description: 'Reports the military announcement and the parliamentary vote to impeach President Andry Rajoelina. The suspension of the Constitution and High Constitutional Court powers is attributed to Randrianirina’s announcement; it is not treated here as a verified constitutional act or final legal account.'
+  },
+  {
+    id: 'madagascarAchprChangePower2025',
+    label: 'African Commission on Human and Peoples’ Rights — Press release on the change of power in Madagascar (29 October 2025)',
+    url: 'https://achpr.au.int/en/news/press-releases/2025-10-29/changement-de-pouvoir-en-republique-de-madagascar-eng',
+    note: 'African Commission statement consulted as an institutional human-rights and constitutional-order position, link only. No text, translation or image is republished. Its description and call for restoration are attributed to the Commission, not presented as a domestic court ruling.',
+    accessDate: '2026-09-24', creators: ['African Commission on Human and Peoples’ Rights'], institution: 'African Union',
+    publicationDate: '2025-10-29', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'regional human-rights institution statement', identifiers: { statementDate: '2025-10-29' },
+    description: 'The Commission dates the armed forces’ seizure of power to 14 October and the swearing-in to 17 October, and calls on de facto authorities and stakeholders to restore constitutional order through inclusive dialogue. This is the Commission’s position under regional human-rights and governance instruments, not a Malagasy judicial determination.'
+  },
+  {
+    id: 'madagascarAuDelegation2025',
+    label: 'African Union Commission — High-level delegation for dialogue and restoration of constitutional order in Madagascar (16 October 2025)',
+    url: 'https://au.int/en/pressreleases/20251016/au-deploys-high-level-delegation-engage-national-stakeholders-madagascar?qt-qt_documents_sp=0',
+    note: 'African Union Commission press release consulted for its diplomatic initiative and stated aim, link only. No release wording is reproduced; the AU’s constitutional-order framing is attributed and distinguished from domestic consent or outcome.',
+    accessDate: '2026-09-24', creators: ['African Union Commission'], institution: 'African Union',
+    publicationDate: '2025-10-16', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'regional organization press release', identifiers: { releaseDate: '2025-10-16' },
+    description: 'The AU Commission announced a high-level delegation and urged dialogue among Malagasy authorities, parties, civil society, youth representatives and other stakeholders toward a peaceful return to constitutional democratic order. It documents an external diplomatic position and process, not the inclusiveness or domestic acceptance of the transition.'
+  },
+  {
+    id: 'madagascarSadcTransitionCommunique2025',
+    label: 'Southern African Development Community — Extraordinary Summit communique on Madagascar (17 December 2025)',
+    url: 'https://www.sadc.int/sites/default/files/2025-12/English%20%E2%80%93%20Communiqu%C3%A9%20of%20the%20Extraordinary%20Summit%20of%20SADC%20Heads%20of%20State%20and%20Government%2017th%20December%202025%20Final%20Final.pdf',
+    note: 'Official SADC summit communique consulted as a regional institutional record and link only. No PDF text, page image or table is reproduced. Its calls, deadlines and procedural directions are SADC’s position and do not establish domestic implementation.',
+    accessDate: '2026-09-24', creators: ['Southern African Development Community'], institution: 'SADC',
+    publicationDate: '2025-12-17', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'regional summit communique', identifiers: { summitDate: '2025-12-17' },
+    description: 'SADC urged a Malagasy-owned inclusive dialogue, political-exile participation and fresh elections; it called for constitutional order and set a report/roadmap deadline of 28 February 2026 with follow-up updates in May, August and November. These are external regional directions and do not themselves demonstrate compliance or a settled election calendar.'
+  },
+  {
+    id: 'madagascarAuAssemblyDecision2026',
+    label: 'African Union Assembly — Decision 978 (XXXIX) on Madagascar and return to constitutional order (February 2026)',
+    url: 'https://au.int/sites/default/files/decisions/46188-Assembly_Decisions_31_March_E.pdf',
+    note: 'African Union Assembly decision consulted in the official decisions PDF and cited by its decision number/date, link only. No text or page image is reproduced. The Assembly’s description of an unconstitutional change and requested process is its institutional position, not a Malagasy court ruling.',
+    accessDate: '2026-09-24', creators: ['Assembly of the African Union'], institution: 'African Union',
+    publicationDate: '2026-02-14', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'regional organization assembly decision', identifiers: { decisionNumber: 'Assembly/AU/Dec.978(XXXIX)', sessionDates: '2026-02-14/2026-02-15' },
+    description: 'The Assembly describes the October 2025 episode as an unconstitutional change of government and calls for an inclusive national dialogue, a defined transition roadmap and a return to constitutional order and democratic governance, including support for constitutional drafting and elections. This is an AU position and program, not proof of completion or domestic legal status.'
+  },
+  {
+    id: 'madagascarSadcSummit2026',
+    label: 'Southern African Development Community — 46th Ordinary Summit communique, Madagascar paragraph (17 August 2026; Portuguese edition)',
+    url: 'https://sadc.int/pt-pt/not%C3%ADcias/comunicado-da-46a-cimeira-ordinaria-de-chefes-de-estado-e-de-governo-da-sadc-17-de-agosto',
+    note: 'Portuguese-language official SADC summit communique consulted for its brief Madagascar paragraph and link only. The independent English summary retains the institution’s attribution; no translated communique text is reproduced and the resolution’s status is not independently inferred.',
+    accessDate: '2026-09-24', creators: ['Southern African Development Community'], institution: 'SADC',
+    publicationDate: '2026-08-17', evidenceRole: 'contextual', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'regional summit communique / Portuguese-language official edition', identifiers: { summitDate: '2026-08-17' },
+    description: 'SADC’s August summit said a constructive dialogue had taken place and reaffirmed regional support for Madagascar’s reform and development agenda, inclusive governance, democratic institutions, accountability, human rights, civic participation and a return to constitutional normalcy. This is the regional organization’s assessment, not proof that constitutional normalcy had been restored.'
+  },
+  {
+    id: 'madagascarYouthConsultationLaunch2026',
+    label: 'Madagascar Ministry of Youth and Sports — launch of the National Youth Consultation for Refoundation (14 April 2026)',
+    url: 'https://www.mjs.gov.mg/lancement-officiel-de-la-concertation-nationale-des-jeunes-pour-la-refondation/',
+    note: 'Ministry page consulted in French as an official account of the launch and planned consultation process, link only. No French wording, image or page asset is reproduced; institutional description is not treated as an independent measure of participation or inclusion.',
+    accessDate: '2026-09-24', creators: ['Ministry of Youth and Sports of Madagascar'], institution: 'Government of Madagascar',
+    publicationDate: '2026-04-14', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'government programme announcement', identifiers: { launchDate: '2026-04-14' },
+    description: 'The Ministry records the opening of a National Youth Consultation for Refoundation and announces intended regional, district and commune-level consultations. It is evidence of the government’s announced process, not evidence that all youth were reached or that participants represented all Malagasy young people.'
+  },
+  {
+    id: 'madagascarYouthResolution2026',
+    label: 'Madagascar Ministry of Youth and Sports — final resolution of the National Youth Consultation (1 August 2026)',
+    url: 'https://www.mjs.gov.mg/concertation-nationale-des-jeunes-remise-officielle-de-la-resolution-finale/',
+    note: 'Ministry report consulted in French as an official record of the resolution handover and stated themes, link only. No resolution text or image is reproduced. The presence of delegates described as coming from 24 regions is attributed to the Ministry and is not treated as proof of population-wide representation or implementation.',
+    accessDate: '2026-09-24', creators: ['Ministry of Youth and Sports of Madagascar'], institution: 'Government of Madagascar',
+    publicationDate: '2026-08-01', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'government consultation and policy record', identifiers: { handoverDate: '2026-08-01' },
+    description: 'The Ministry says representatives from all 24 regions handed a final youth-consultation resolution to the transitional president, prime minister and other officials. It groups recommendations under governance and politics, social development, economic development, culture and environment, and records officials’ commitment to follow-up. It does not establish participant selection, the views of all youth, or implementation.'
+  },
+  {
+    id: 'madagascarUnescoYouthRefoundation2026',
+    label: 'UNESCO — Madagascar refoundation and youth consultations (4 September 2026)',
+    url: 'https://www.unesco.org/en/articles/madagascar-vers-une-refondation-portee-par-la-jeunesse',
+    note: 'UNESCO French-language institutional article consulted for its account of support to the Ministry’s process and the May–June regional consultations, link only. No text, image or participant data is reproduced. Its partner reporting is attributed and is not treated as an independent representativeness audit.',
+    accessDate: '2026-09-24', creators: ['UNESCO'], institution: 'United Nations Educational, Scientific and Cultural Organization',
+    publicationDate: '2026-09-04', evidenceRole: 'contextual', confidence: 'high', languages: ['French'],
+    sourceType: 'international organization programme account', identifiers: { publicationDate: '2026-09-04' },
+    description: 'UNESCO describes its support for national youth consultations coordinated with Malagasy ministries, including consultations conducted across 24 regions in May and June 2026 and work to update the National Youth Policy. This is an institutional partner account of process, not a population-wide survey or evidence of resulting policy implementation.'
+  },
+  {
+    id: 'madagascarHccFinanceDecision2026',
+    label: 'Madagascar High Constitutional Court — Decision 12-HCC/D3 on the 2026 supplementary finance law (15 July 2026)',
+    url: 'https://www.hcc.gov.mg/?p=10038',
+    note: 'Official HCC decision consulted in French as a legal record and link only. No legal wording or translation is reproduced. Its references to prior constitutional decisions and review of a finance law show a dated institutional proceeding, not a ruling on the legality of the October 2025 takeover or full constitutional restoration.',
+    accessDate: '2026-09-24', creators: ['Haute Cour Constitutionnelle de Madagascar'], institution: 'High Constitutional Court of Madagascar',
+    publicationDate: '2026-07-15', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'constitutional court decision / official legal record', identifiers: { decisionNumber: '12-HCC/D3', lawNumber: '2026-004' },
+    description: 'The Court’s decision reviews the 2026 supplementary finance law and cites the Constitution, its own decision 10-HCC/D3 of 14 October 2025, and a January 2026 opinion on the Senate mandate. It is evidence of a later formal court proceeding, but does not adjudicate the military takeover or establish that the prior constitutional order was fully restored.'
+  },
+  {
+    id: 'madagascarMarintheRajabaliCollectiveAction2026',
+    label: 'Gaëlle Marinthe and Yvana Hassim Rajabali — “Navigating social change and social harmony” (Political Psychology, 2026)',
+    url: 'https://doi.org/10.1111/pops.70177',
+    note: 'Peer-reviewed article record and abstract consulted; the full article and supplemental tables were not accessible in this review. No copyrighted prose, survey item or table is reproduced. Abstract-reported samples and associations are not assumed nationally representative and are not used as a proxy for all protesters or youth.',
+    accessDate: '2026-09-24', creators: ['Gaëlle Marinthe', 'Yvana Hassim Rajabali'], institution: 'Political Psychology / Wiley',
+    publicationDate: '2026-07-08', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'peer-reviewed political psychology article / abstract consulted', identifiers: { doi: '10.1111/pops.70177', issue: '47(4)', article: 'e70177' },
+    description: 'The abstract reports two studies, one during the transition (N=959) and one post-transition (N=258), testing associations between measured Gen Z and national identification, perceived injustice, efficacy, morality, collective action, activism and reconciliation. The abstract reports differing associations; without the full article and sampling details, these findings are cited as a study-specific lens, not population-level consensus.'
+  },
+  {
+    id: 'madagascarDesplatHybridAgency2026',
+    label: 'Patrick Desplat — “Gen Z Aspiration, Hybrid Agency, and the Madagascar Uprising” (Current History, 2026)',
+    url: 'https://doi.org/10.1525/curh.2026.125.871.167',
+    note: 'Journal bibliographic record and abstract consulted; full article text was not available. No article wording is reproduced. The abstract’s “hybrid agency” interpretation is attributed to the author and not treated as a consensus or as evidence of one unified youth agenda.',
+    accessDate: '2026-09-24', creators: ['Patrick Desplat'], institution: 'Current History / University of California Press',
+    publicationDate: '2026-05-01', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly journal article / abstract consulted', identifiers: { doi: '10.1525/curh.2026.125.871.167', volume: '125', issue: '871', pages: '167–173' },
+    description: 'The abstract interprets the mobilization as locally grounded yet expressed through transnational digital repertoires, and argues that horizontal protest did not automatically yield durable institutional reform. This is an attributed interpretive frame; the article’s full argument and evidence were not reviewed.'
+  },
+  {
+    id: 'madagascarShiDigitalActivism2025',
+    label: 'Xuefei Shi — “Gen Z, Digital Activism, and Regime Change in Madagascar” (SWP Megatrends Africa Spotlight 61, 29 October 2025)',
+    url: 'https://www.swp-berlin.org/en/publication/mta-spotlight-61-gen-z-digital-activism-and-regime-change-in-madagascar',
+    note: 'The complete SWP policy commentary was consulted for its account of digital coordination, grievances, protest and post-takeover tensions, link only. No wording, image or linked third-party material is reproduced. Its dramatic movement-wide descriptions are attributed to Shi and are not treated as a representative survey.',
+    accessDate: '2026-09-24', creators: ['Xuefei Shi'], institution: 'Stiftung Wissenschaft und Politik / Megatrends Africa',
+    publicationDate: '2025-10-29', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'policy research commentary', identifiers: { series: 'Megatrends Africa Spotlight 61' },
+    description: 'Shi analyzes online coordination, the water and electricity grievances, protest dynamics and the military-led aftermath, and argues that a decentralized youth movement had no unified institutional programme. This is one policy analyst’s interpretation and does not establish participants’ representativeness, the motives of every demonstrator or subsequent outcomes.'
+  },
+  {
+    id: 'madagascarWittUndoingCoups2020',
+    label: 'Antonia Witt — Undoing Coups: The African Union and Post-coup Intervention in Madagascar (2020)',
+    url: 'https://www.bloomsbury.com/us/undoing-coups-9781786996862/',
+    note: 'Publisher record and an openly available 31-page preview, including the introduction, consulted; the complete 304-page monograph was not read. Its analysis concerns the 2009–2014 crisis and AU intervention, not the 2025–2026 episode. No book text or preview pages are reproduced.',
+    accessDate: '2026-09-24', creators: ['Antonia Witt'], institution: 'Zed Books / Bloomsbury Publishing',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph / selected preview and introduction consulted', identifiers: { isbn: '9781786996862', pages: '304', publisher: 'Zed Books' },
+    description: 'A Madagascar-centered study of AU post-coup intervention and regional ordering during the 2009–2014 crisis. The consulted introduction cautions against equating post-coup intervention with democratization; this earlier case supplies a comparative institutional lens only, not evidence about the later transition.'
+  },
+  {
+    id: 'madagascarRatsimbaharisonCrisis2009',
+    label: 'Adrien M. Ratsimbaharison — The Political Crisis of March 2009 in Madagascar (2017)',
+    url: 'https://www.bloomsbury.com/us/political-crisis-of-march-2009-in-madagascar-9781442272354/',
+    note: 'Publisher bibliographic record and description/contents consulted; the 188-page monograph was not read in full. It treats the March 2009 conflict and mediation, not the 2025 events. Link and independent paraphrase only; no protected text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Adrien M. Ratsimbaharison'], institution: 'Rowman & Littlefield',
+    publicationDate: '2017', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph / publisher record consulted', identifiers: { isbn: '9781442272354', pages: '188', publisher: 'Rowman & Littlefield' },
+    description: 'A focused study of the 2009 political crisis and conflict mediation. It offers a distinct earlier episode for comparison and is not evidence of the causes, legality or outcomes of the 2025 change of power.'
+  },
+  {
+    id: 'madagascarRandrianjaEllisHistory2009',
+    label: 'Solofo Randrianja and Stephen Ellis — Madagascar: A Short History (2009)',
+    url: 'https://www.bibliovault.org/BV.book.epl?ISBN=9780226704203',
+    note: 'University of Chicago Press/BiblioVault bibliographic record and description consulted; the full national history was not read in this pass. It is included as broad historical further reading, not direct evidence about 2025–2026. Link-only; no book text or table is reproduced.',
+    accessDate: '2026-09-24', creators: ['Solofo Randrianja', 'Stephen Ellis'], institution: 'University of Chicago Press / BiblioVault',
+    publicationDate: '2009', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history / publisher record consulted', identifiers: { isbn: '9780226704203', publisher: 'University of Chicago Press' },
+    description: 'A broad modern history of Madagascar co-authored by Malagasy historian Solofo Randrianja and Stephen Ellis. It supplies national historical context, not an episode-specific account or a single account of Malagasy political experience.'
+  },
+  {
+    id: 'madagascarRazakamaharavoPeacebuilding2025',
+    label: 'Velomahanina Tahinjanahary Razakamaharavo — Peacebuilding in Madagascar: A Multi-Levelled Peace (2025)',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-91383-9',
+    note: 'Palgrave Macmillan/Springer bibliographic record, abstract and contents consulted; the complete 300-page book is subscription access and was not read. The book’s historical scope ends before the 2025 episode. Link-only; no book text, chart or table is reproduced.',
+    accessDate: '2026-09-24', creators: ['Velomahanina Tahinjanahary Razakamaharavo'], institution: 'Palgrave Macmillan / Springer Nature',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph / publisher metadata and abstract consulted', identifiers: { doi: '10.1007/978-3-031-91383-9', isbn: '9783031913839', pages: '300' },
+    description: 'A recent Madagascar-focused study of multi-level peacebuilding, political actors and institutions with a pre-2025 research horizon. It adds an independent peace-process lens but cannot establish events or outcomes after its stated historical period.'
+  },
+  {
+    id: 'madagascarRamasyHybridState2025',
+    label: 'Juvence F. Ramasy — Le façonnement de l’État en postcolonie indianocéanique: L’hybridité malgache (2025)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/le-faconnement-de-letat-en-postcolonie-indianoceanique/79246',
+    note: 'Publisher record and description for the French-language 298-page book consulted; the book and the unavailable sample chapter were not read in full. It is included as a postcolonial state-formation framework, not direct evidence of 2025–2026 events. Link-only; no text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Juvence F. Ramasy'], institution: 'Sépia / L’Harmattan',
+    publicationDate: '2025-06-26', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language book-length scholarly monograph / publisher record consulted', identifiers: { isbn: '9791033406327', pages: '298', publisher: 'Sépia' },
+    description: 'A French-language study of postcolonial state formation and the hybridity of the Malagasy state. The publisher description and metadata offer a contemporary scholarly framework to investigate, not a substitute for the full monograph or an interpretation of the later transition.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
@@ -9394,6 +9587,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
       : source.id.startsWith('malawi') ? 'Malawian constitutional, electoral, democratic-transition and political history'
+      : source.id.startsWith('madagascar') ? 'Malagasy protest, military transition, constitutional order and refoundation dialogue'
       : source.id.startsWith('newZealand') ? 'New Zealand Treaty, Māori, parliamentary, welfare and constitutional political history'
       : source.id.startsWith('australia') ? 'Australian federal, settler-colonial, labor and constitutional political history'
       : source.id.startsWith('russia') ? 'Russian post-Soviet constitutional, authoritarian and political history'
