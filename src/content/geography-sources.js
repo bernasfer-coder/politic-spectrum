@@ -581,6 +581,126 @@ const sources = [
     description: 'Archival French-language history of political parties and associations from 1946 through the early post-independence period and the 1968 coup. It adds locally rooted party-history evidence to the later constitutional, Tuareg, legitimacy and intervention studies.'
   },
   {
+    id: 'maliGovernmentConsultations2025Official',
+    label: 'Government of Mali — Recommendations of the April 2025 political consultations',
+    url: 'https://gouvernement.ml/revision-de-la-charte-des-partis-politiques-des-recommandations-fortes-pour-limiter-le-nombre-de-partis-et-reorganiser-le-schema-politique/',
+    note: 'Official government account published 30 April 2025, consulted for the authorities’ description of the consultation process and its recommendations, link only. It is evidence of official framing, not independent verification of inclusion, representation or public consent; no wording, image or page asset is republished.',
+    accessDate: '2026-09-24', creators: ['Government of Mali'], institution: 'Information Gouvernementale du Mali',
+    publicationDate: '2025-04-30', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official executive communication / political consultation record', identifiers: { consultationDates: '2025-04-16/17; 2025-04-28/29' },
+    description: 'The government’s account identifies regional, Bamako and diaspora consultations and reports recommendations concerning party reorganisation, dissolution, a renewable five-year presidential mandate from 2025 and electoral questions pending pacification. This is a primary witness to the executive’s presentation and not a neutral measure of who participated or how widely recommendations were supported.'
+  },
+  {
+    id: 'maliPoliticalActivitySuspensionDecree2025',
+    label: 'Mali — Decree No. 2025-0318/PT-RM suspending political-party activities (7 May 2025)',
+    url: 'https://sgg-mali.ml/JO/2025/mali-jo-2025-02-sp.pdf',
+    note: 'Official special Gazette No. 02 consulted for Decree No. 2025-0318/PT-RM, link only. No French legal wording, translation, scan or PDF page is republished; the decree records formal reasons and scope rather than necessity, application or rights-compliant practice.',
+    accessDate: '2026-09-24', creators: ['Republic of Mali'], institution: 'Secrétariat général du Gouvernement / Journal officiel',
+    publicationDate: '2025-05-07', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'presidential decree / official gazette', identifiers: { decree: '2025-0318/PT-RM', gazette: '2025 special no. 02' },
+    description: 'Primary legal record suspending, until further notice and on public-order grounds, party activities and activities of political associations and other organizations claiming a political character. It was later expressly repealed by Decree No. 2025-0339/PT-RM and must not be conflated with the subsequent dissolution.'
+  },
+  {
+    id: 'maliPartyCharterRepealLaw2025',
+    label: 'Mali — Law No. 2025-005 repealing the Political Parties Charter and opposition status (13 May 2025)',
+    url: 'https://sgg-mali.ml/JO/2025/mali-jo-2025-13-sp.pdf',
+    note: 'Official special Gazette No. 03 consulted for Law No. 2025-005, link only. No French legal wording, translation, scan or PDF page is republished; the statute establishes formal legal change, not its judicial review or every later application.',
+    accessDate: '2026-09-24', creators: ['Republic of Mali'], institution: 'Secrétariat général du Gouvernement / Journal officiel',
+    publicationDate: '2025-05-13', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'law / official gazette', identifiers: { law: '2025-005', adoptionDate: '2025-05-12', gazette: '2025 special no. 03' },
+    description: 'Primary legal text abrogating the 2005 Political Parties Charter and the 2015 law on the status of the political opposition. Article 2 envisages a future law to set conditions for party formation and activity; repeal should not be described as the same legal act as the following day’s blanket dissolution decree.'
+  },
+  {
+    id: 'maliPoliticalPartiesDissolutionDecree2025',
+    label: 'Mali — Decree No. 2025-0339/PT-RM dissolving political parties and political organisations (13 May 2025)',
+    url: 'https://sgg-mali.ml/JO/2025/mali-jo-2025-04-sp.pdf',
+    note: 'Official special Gazette No. 04 consulted for Decree No. 2025-0339/PT-RM, link only. No French legal wording, translation, scan or PDF page is republished; the decree documents the formal measure, not its constitutional validity, enforcement or social reach.',
+    accessDate: '2026-09-24', creators: ['Republic of Mali'], institution: 'Secrétariat général du Gouvernement / Journal officiel',
+    publicationDate: '2025-05-13', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'presidential decree / official gazette', identifiers: { decree: '2025-0339/PT-RM', signed: '2025-05-13', gazette: '2025 special no. 04, published 2025-05-16' },
+    description: 'Primary decree dissolving political parties and organizations of a political character nationwide, prohibiting meetings and other political activities by the dissolved organizations, and replacing the 7 May suspension decree. It also allows people holding public roles by party designation to continue in office but not as party representatives.'
+  },
+  {
+    id: 'maliTransitionCharterRevisionLaw2025',
+    label: 'Mali — Law No. 2025-029 revising the Transition Charter (8 July 2025)',
+    url: 'https://sgg-mali.ml/JO/2025/mali-jo-2025-08-sp.pdf',
+    note: 'Official special Gazette No. 08 consulted for Law No. 2025-029, link only. No French legal wording, translation, scan or PDF page is republished; formal charter terms are distinguished from implementation, constitutional adjudication and the date or conditions of any future election.',
+    accessDate: '2026-09-24', creators: ['Republic of Mali'], institution: 'Secrétariat général du Gouvernement / Journal officiel',
+    publicationDate: '2025-07-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'law revising a transition charter / official gazette', identifiers: { law: '2025-029', adoptionDate: '2025-07-03', gazette: '2025 special no. 08, published 2025-07-11' },
+    description: 'Primary legal text revising the Transition Charter. New Article 4 provides a five-year renewable mandate, as many times as necessary until pacification, but allows the period to be shortened once conditions for a transparent and peaceful presidential election exist; Articles 9 and 22 retain eligibility and an election, oath and transfer of office as the formal transition endpoint. The law does not specify a fixed election date.'
+  },
+  {
+    id: 'maliConstitution2023OfficialGazette',
+    label: 'Mali — Constitution of 22 July 2023, official Journal officiel text',
+    url: 'https://sgg-mali.ml/JO/2023/mali-jo-2023-13-sp-2.pdf',
+    note: 'Official Journal officiel constitutional text consulted for Article 39 and the 2023 constitutional framework, link only. No French wording, translation, scan or PDF page is republished; the formal rights text is not treated as proof of implementation or an adjudication of the 2025 dispute.',
+    accessDate: '2026-09-24', creators: ['Republic of Mali'], institution: 'Secrétariat général du Gouvernement / Journal officiel',
+    publicationDate: '2023-07-22', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'constitution / official gazette', identifiers: { promulgationDate: '2023-07-22', gazette: '2023 no. 13 special' },
+    description: 'Primary legal text. Article 39 states that political parties contribute to expression of the vote and form and exercise their activities freely under conditions set by law. This formal provision frames a constitutional tension with the 2025 repeals and dissolution; no judgment resolving that tension is asserted here.'
+  },
+  {
+    id: 'maliIDEAPartyDissolutionMay2025',
+    label: 'International IDEA — Mali, May 2025 Democracy Tracker update',
+    url: 'https://www.idea.int/democracytracker/report/mali/may-2025',
+    note: 'International IDEA Democracy Tracker page consulted for its independently sourced event chronology and protest context, link only. Its analysis and coding are attributed; no score, page wording, graphic or screenshot is reproduced.',
+    accessDate: '2026-09-24', creators: ['International Institute for Democracy and Electoral Assistance'], institution: 'International IDEA',
+    publicationDate: '2025-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional democracy-monitoring report / event tracker', identifiers: { country: 'Mali', update: 'May 2025' },
+    description: 'Dated institutional monitoring of the April consultations, opposition boycott, 3 May Bamako protest, dissolution of parties on 13 May and reported abductions of two opposition leaders on 8 May. The report cites primary and independent media and civil-society sources; its event chronology is not a substitute for the official texts.'
+  },
+  {
+    id: 'maliOHCHRPartyDissolutionExperts2025',
+    label: 'UN human-rights experts — Mali party dissolution statement (22 May 2025)',
+    url: 'https://www.ohchr.org/en/press-releases/2025/05/mali-dissolution-political-parties-step-wrong-direction-warn-un-experts',
+    note: 'OHCHR statement by independent UN human-rights mandate holders consulted for their attributed assessment and chronology, link only. Their interpretation is clearly distinguished from primary law and any binding court judgment; no release wording or image is republished.',
+    accessDate: '2026-09-24', creators: ['Office of the United Nations High Commissioner for Human Rights; independent UN experts'], institution: 'OHCHR',
+    publicationDate: '2025-05-22', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international human-rights mandate-holder statement', identifiers: { date: '2025-05-22' },
+    description: 'The experts identify the 13 May dissolution and repeal as a risk to political participation, freedom of association and expression, and call for inclusive dialogue. This is an attributed human-rights assessment, not a judicial holding.'
+  },
+  {
+    id: 'maliAssociatedPressPartyDissolution2025',
+    label: 'Associated Press — Mali dissolves political parties (13 May 2025)',
+    url: 'https://apnews.com/article/b9a97cc673cc11a804e023250fbecaea',
+    note: 'Associated Press contemporaneous report consulted for the decree announcement, protest context and attributed party responses, link only. No article wording, photograph, caption, scan or copied table is republished; quoted actors’ claims remain attributed.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025-05-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report', identifiers: { date: '2025-05-13' },
+    description: 'Contemporaneous reporting on the decree, preceding demonstrations and opposition leaders’ response. It supplements the Gazette as reporting and attributed testimony, not as the source of the decree’s legal text.'
+  },
+  {
+    id: 'maliISSPartyDissolutionAnalysis2025',
+    label: 'Fahiraman Rodrigue Koné and Fodé Maciré Dramé — Mali’s transition is at risk as political parties are dissolved (19 May 2025)',
+    url: 'https://issafrica.org/iss-today/mali-s-transition-is-at-risk-as-political-parties-are-dissolved',
+    note: 'Institute for Security Studies Africa analysis consulted for a regional policy interpretation and its account of party opposition, link only. The authors’ forecast and policy advocacy are attributed rather than treated as established outcome; no article text, image or chart is reproduced.',
+    accessDate: '2026-09-24', creators: ['Fahiraman Rodrigue Koné', 'Fodé Maciré Dramé'], institution: 'Institute for Security Studies Africa',
+    publicationDate: '2025-05-19', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'regional policy analysis', identifiers: { date: '2025-05-19' },
+    description: 'Contemporary analysis situates the May dissolution, protest and transition charter proposal within Mali’s political opening and the neighboring AES military governments. Its interpretation of risks and public response is not treated as representative or as proof of future consequences.'
+  },
+  {
+    id: 'maliHRWWorldReport2026',
+    label: 'Human Rights Watch — World Report 2026: Mali',
+    url: 'https://www.hrw.org/world-report/2026/country-chapters/mali',
+    note: 'Human Rights Watch annual report consulted retrospectively for its 2025 account, link only. The organization’s rights assessments remain attributed; no report wording, photograph, chart or page image is reproduced.',
+    accessDate: '2026-09-24', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'annual human-rights country report', identifiers: { reportingYear: '2025', edition: 'World Report 2026' },
+    description: 'Retrospective human-rights reporting states that between April and July 2025 the authorities banned parties and elevated Goïta to a renewable presidency without elections. It supports a post-hoc check of the legal sequence and civic-space context, not an all-purpose assessment of Malian society.'
+  },
+  {
+    id: 'maliArticle19PartyDissolutionBrief2025',
+    label: 'ARTICLE 19 — Dissolution of political parties in Mali: Legal briefing (2025)',
+    url: 'https://www.article19.org/wp-content/uploads/2025/12/FINALDissolution-of-political-parties-in-Mali9Dec2025.pdf',
+    note: 'ARTICLE 19 legal briefing consulted for a detailed rights-based analysis and retrospective timeline, link only. The publisher marks the publication CC BY-NC-SA 4.0, but this project reproduces no text, quotation, table or adaptation; its legal conclusions are attributed and not presented as a court ruling.',
+    accessDate: '2026-09-24', creators: ['ARTICLE 19'], institution: 'ARTICLE 19',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'civil-society legal briefing', identifiers: { title: 'Dissolution of political parties in Mali', license: 'CC BY-NC-SA 4.0' },
+    description: 'Legal briefing on the May 2025 repeal and dissolution, constitutional provisions, international and regional standards, and litigation reported as pending when the brief was prepared. Its freedom-of-expression and association analysis is an attributed advocacy position; it is not a binding constitutional judgment.'
+  },
+  {
     id: 'coteDivPresidenceConstitution2016',
     label: 'Présidence de la République de Côte d’Ivoire — Constitution de la troisième République (2016)',
     url: 'https://www.presidence.ci/en/ivory-coast/the-constitution/',
