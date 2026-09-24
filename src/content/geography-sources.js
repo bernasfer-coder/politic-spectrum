@@ -9304,6 +9304,87 @@ const sources = [
     sourceType: 'party-authored election commitment paper landing page', identifiers: { electionDate: '2026-03-05' },
     description: 'Identifies the RSP’s party-authored Bacha Patra 2082 campaign document as a relevant primary source. The manifesto was not independently accessible in full for this review and supports no claim here about party ideology, program completeness or implementation.'
   },
+  {
+    id: 'hondurasConstitution1982Tsc',
+    label: 'Honduras — Constitution of the Republic (1982; official Tribunal Superior de Cuentas library record)',
+    url: 'https://www.tsc.gob.hn/biblioteca/index.php/leyes/177-constitucion-de-la-republica-de-honduras',
+    note: 'Official legal-library record identifies Decree 131, adopted 11 January 1982, and lists later amendments. Used for the constitutional framework only; the page is not treated as a fully consolidated current text or an implementation audit.',
+    accessDate: '2026-09-24', creators: ['Asamblea Nacional Constituyente de Honduras'], institution: 'Tribunal Superior de Cuentas de Honduras', publicationDate: '1982-01-11', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'constitution / official legal-library record', identifiers: { decree: '131-1982' },
+    description: 'Official legal-library record for the 1982 Constitution. Establishes a constitutional primary-source pointer, not the entire amendment history, a consolidated witness, or proof of uniform institutional practice.'
+  },
+  {
+    id: 'hondurasCneCertification3014',
+    label: 'Consejo Nacional Electoral — Resolution 3014-2025, presidential election declaration (24 December 2025; reproduced by Leyes.HN)',
+    url: 'https://leyes.hn/documento/38854-resolucion-3014-2025-certificacion-de-declaratoria-de-elecciones-generales-2025-nivel-presidencial',
+    note: 'The linked legal-document page reproduces the CNE declaration and its tabulation. The record states the presidential declaration and its protocol base; it is not an independent observation report, and this copy is hosted by a third-party legal repository rather than the CNE.',
+    accessDate: '2026-09-24', creators: ['Consejo Nacional Electoral de Honduras'], institution: 'Consejo Nacional Electoral de Honduras (copy hosted by Leyes.HN)', publicationDate: '2025-12-24', evidenceRole: 'primary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'electoral authority declaration reproduced in a legal-document repository', identifiers: { resolution: '3014-2025' },
+    description: 'Primary-source copy of the CNE presidential declaration for the 2025 general election. The declaration reports 18,820 of 19,167 presidential tally acts processed (98.18%), with 333 inconsistent and 14 not received; those are the authority’s stated tabulation categories, not independently re-audited totals.'
+  },
+  {
+    id: 'hondurasOasEomCertification2025',
+    label: 'Organization of American States Electoral Observation Mission — statement on certification of Honduras’s presidential election (24 December 2025)',
+    url: 'https://www.oas.org/en/media_center/press_release.asp?sCodigo=E-093%2F25',
+    note: 'Official OAS EOM statement, issued on the day of certification. Its finding that the mission did not identify decisive fraudulent elements and its assessment of observed technical and institutional problems are attributed to the mission, not presented as an independent judicial ruling.',
+    accessDate: '2026-09-24', creators: ['OAS Electoral Observation Mission to Honduras'], institution: 'Organization of American States', publicationDate: '2025-12-24', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'official election-observation mission statement', identifiers: { release: 'E-093/25' },
+    description: 'Contemporaneous OAS mission statement taking note of certification, reporting delays, technological limitations, CNE and TJE internal conflict, deficient regulation, technical expertise constraints and violence at the special tally, while stating the mission found no evidence that the difficulties were intended or had the effect of altering the popular will.'
+  },
+  {
+    id: 'hondurasEuEomFinalReport2025',
+    label: 'European Union Election Observation Mission — Honduras 2025 final report (published 5 March 2026)',
+    url: 'https://www.eeas.europa.eu/sites/default/files/2026/documents/EU%20EOM%20HND%202025%20FR%20-%20EN.pdf',
+    note: 'Official EU EOM final report and EEAS report page consulted for attributed observer findings across the electoral cycle, including the result declaration, election-day observations, transmission delays, outstanding tally acts, institutional communication and post-election pressure. The mission’s scope and assessment are not identical to a judicial audit or every voter’s experience.',
+    accessDate: '2026-09-24', creators: ['European Union Election Observation Mission to Honduras 2025'], institution: 'European External Action Service / European Union', publicationDate: '2026-03-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final report', identifiers: {},
+    description: 'EU EOM final assessment of Honduras’s 2025 general election. The report records 40.26% for Nasry Asfura, 39.50% for Salvador Nasralla and 19.19% for Rixi Moncada, describes a delayed and incomplete results-transmission process and formal declaration on 98.2% of presidential tally acts, and offers bounded observer assessments of election day and subsequent institutional pressure.'
+  },
+  {
+    id: 'hondurasIdeaProtectingElections2026',
+    label: 'Cecilia Graciela Rodríguez Balmaceda — Protecting Elections in Honduras: Case Study (International IDEA, July 2026)',
+    url: 'https://www.idea.int/publications/catalogue/html/protecting-elections-honduras',
+    note: 'International IDEA case study uses documentary analysis and eight semi-structured interviews conducted February–March 2026. This is one authored institutional analysis, not a population survey, book-length monograph or consensus finding; the summary is independently paraphrased and linked only.',
+    accessDate: '2026-09-24', creators: ['Cecilia Graciela Rodríguez Balmaceda'], institution: 'International Institute for Democracy and Electoral Assistance (International IDEA)', publicationDate: '2026-07', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional case study / qualitative political analysis', identifiers: { series: 'Protecting Elections' },
+    description: 'A 28-page institutional case study of the 2025 electoral cycle, drawing on document analysis and eight interviews. It interprets institutional resilience alongside vulnerabilities involving electoral-body autonomy, polarized politics, disinformation, political violence, technical failures, narrow margins and inclusion; those interpretations are attributed to its author and method.'
+  },
+  {
+    id: 'hondurasSedenaInauguration2026',
+    label: 'Secretaría de Defensa Nacional — presidential inauguration, 27 January 2026',
+    url: 'https://sedena.gob.hn/noticias/toma-de-posesion-presidencial-2026',
+    note: 'Official SEDENA report documents the 27 January 2026 swearing-in of Nasry Asfura at Congress for the 2026–2030 term. It establishes the formal ceremony only, not an evaluation of the election or subsequent government performance.',
+    accessDate: '2026-09-24', creators: ['Secretaría de Defensa Nacional de Honduras'], institution: 'Secretaría de Defensa Nacional de Honduras', publicationDate: '2026-01-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official inauguration record', identifiers: {},
+    description: 'Official government account of the presidential inauguration and transfer into the 2026–2030 term; it is used for the date and formal event, not as independent verification of the prior election.'
+  },
+  {
+    id: 'arayaCoupPalmTreesHonduras2023',
+    label: 'Andrés León Araya — The Coup and the Palm Trees: Agrarian Conflict and Political Power in Honduras (University of Georgia Press, 2023)',
+    url: 'https://www.ugapress.org/9780820365381/the-coup-and-the-palm-trees/',
+    note: 'Publisher bibliographic record for a book-length study of Honduran agrarian conflict and political power. Used only as pre-2025 historical context; the complete monograph was not independently read for this case and it provides no direct evidence about the 2025 election.',
+    accessDate: '2026-09-24', creators: ['Andrés León Araya'], institution: 'University of Georgia Press', publicationDate: '2023-10-01', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length scholarly monograph', identifiers: { isbn13: ['9780820365381', '9780820367439'], pages: 240 },
+    description: 'Book-length history of agrarian politics and political power from the mid-twentieth century, including the 1963 and 2009 coups. The publisher description and bibliographic record were consulted; the full text was not read here, and this book is contextual rather than event-specific evidence.'
+  },
+  {
+    id: 'frankLongHonduranNight2018',
+    label: 'Dana Frank — The Long Honduran Night: Resistance, Terror, and the United States in the Aftermath of the Coup (Haymarket Books, 2018)',
+    url: 'https://ingramacademic.com/products/the-long-honduran-night-9781608469604',
+    note: 'Book-length account of political resistance and repression after the 2009 coup. Distributor bibliographic data were consulted; the full book was not independently read for this case and it is not evidence about the 2025 election.',
+    accessDate: '2026-09-24', creators: ['Dana Frank'], institution: 'Haymarket Books', publicationDate: '2018-11-27', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length scholarly political history', identifiers: { isbn13: '9781608469604', pages: 344 },
+    description: 'Book-length account of resistance and political repression in Honduras after the 2009 coup. Included as contextual scholarship only; distributor metadata does not substitute for full-text review or establish the later 2025 electoral episode.'
+  },
+  {
+    id: 'villacortaGoriGolpeElectoralHonduras2018',
+    label: 'Carmen Elena Villacorta Zuluaga and Esteban De Gori, eds. — Golpe electoral y crisis política en Honduras (CLACSO, 2018)',
+    url: 'https://libreria.clacso.org/publicacion.php?c=5&p=1474',
+    note: 'CLACSO catalogue and contents consulted for a Spanish-language edited volume on the 2009 coup’s political aftermath and the 2017 electoral crisis. Its situated critical framing and pre-2025 scope are retained; it does not document the 2025 election.',
+    accessDate: '2026-09-24', creators: ['Carmen Elena Villacorta Zuluaga', 'Esteban De Gori'], institution: 'Consejo Latinoamericano de Ciencias Sociales (CLACSO)', publicationDate: '2018-10', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'scholarly edited volume on Honduran electoral crisis and political history', identifiers: { isbn13: '978-987-722-370-5', editors: ['Carmen Elena Villacorta Zuluaga', 'Esteban De Gori'] },
+    description: 'Spanish-language edited collection on the Honduran 2009 coup and 2017 electoral crisis. Its catalogue includes a chapter by Eugenio Sosa on the period from the 2009 coup to the 2017 “golpe electoral”; catalog metadata and contents were consulted, not the full volume. Context only, not evidence for 2025.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9386,6 +9467,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
+      : source.id.startsWith('honduras') || source.id.startsWith('arayaCoupPalmTreesHonduras') || source.id.startsWith('frankLongHonduranNight') || source.id.startsWith('villacortaGoriGolpeElectoralHonduras') ? 'Honduran constitutional, electoral and political history'
       : source.id.startsWith('barbados') ? 'Barbadian postcolonial, constitutional, electoral and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
