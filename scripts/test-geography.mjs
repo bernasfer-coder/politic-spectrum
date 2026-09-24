@@ -6,8 +6,18 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 164);
-assert.equal(GEOGRAPHY_LABELS.length, 160);
+assert.equal(GEOGRAPHY_CASES.length, 165);
+assert.equal(GEOGRAPHY_LABELS.length, 161);
+const beninCoupCase = filterGeographyCases({ country: 'map-204' }).find(({ id }) => id === 'beninese-2025-coup-attempt-and-constitutional-response');
+assert.ok(beninCoupCase, 'the bounded Benin coup-attempt case should be discoverable by its mapped country');
+assert.equal(beninCoupCase.relationship, 'experimented');
+assert.equal(beninCoupCase.startYear, 2025);
+assert.equal(beninCoupCase.endYear, 2026);
+assert.equal(beninCoupCase.sourceIds.length, 14);
+assert.match(beninCoupCase.claim, /promulgated on 17 December—after the attempted takeover/);
+assert.match(beninCoupCase.claim, /the court judgment itself was not consulted/);
+assert.match(beninCoupCase.limitation, /no event-specific book-length study was located/);
+assert.ok(!('profile' in GEOGRAPHY_LABELS.find(({ id }) => id === beninCoupCase.labelId)));
 const bangladesh2026 = filterGeographyCases({ country: 'bangladesh' }).find(({ id }) => id === 'bangladeshi-2026-election-july-charter-and-reform-transition');
 assert.ok(bangladesh2026, 'the dated Bangladesh election and Charter case should be discoverable by country');
 assert.equal(bangladesh2026.relationship, 'influenced');
@@ -230,4 +240,4 @@ assert.ok(filterGeographyCases({ country: 'map-398' }).some(({ id }) => id === k
 assert.equal(context.bibliography.filter(({ citationIds }) => citationIds.researchSourceIds.includes('kazakhstanConstitution2026Kazakh')).length, 1);
 assert.equal(context.bibliography.find(({ citationIds }) => citationIds.researchSourceIds.includes('kazakhstanConstitution2026English'))?.languages?.[0], 'English (unofficial translation)');
 assert.equal(context.bibliography.find(({ citationIds }) => citationIds.researchSourceIds.includes('kazakhstanIsaacsPartySystemFormation2011'))?.discipline, 'Kazakhstani constitutional and political history');
-console.log('Geography tests passed: 164 dated cases, 160 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 165 dated cases, 161 unscored labels, citations, boundaries, filters and share URLs.');

@@ -10024,13 +10024,154 @@ sources.push(
     sourceType: 'domestic election-observation final-report publication listing; report not consulted', identifiers: { electionDate: '2026-06-01', reportDate: '2026-08-25' },
     description: 'The coalition’s publication index lists a final 7th General Election observation report. Since its contents were not accessed, this catalogue record documents a remaining domestic-observer evidence gap and supports no finding about the election.'
   },
+  {
+    id: 'beninConstitutionRev2019Court',
+    label: 'Constitutional Court of Benin — Constitution of 11 December 1990, as revised through 2019',
+    url: 'https://www.courconstitutionnelle.bj/files/documents/1677952525_constitution_de_.pdf',
+    note: 'Official Constitutional Court text used as the pre-event constitutional baseline and link only. No French wording, translation or page image is republished; constitutional design is not treated as proof of implementation or public consent.',
+    accessDate: '2026-09-24', creators: ['Republic of Benin'], institution: 'Constitutional Court of Benin',
+    publicationDate: '2019-11-07', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionOriginallyPromulgated: '1990-12-11', versionRecordDate: '2019-11-07' },
+    description: 'Official text of the Constitution in the version in force before the December 2025 promulgation. It supplies the formal constitutional framework for the bounded episode, not evidence that constitutional guarantees were uniformly implemented.'
+  },
+  {
+    id: 'beninConstitutionAmendment2025',
+    label: 'Government of Benin — Law No. 2025-20 revising the Constitution',
+    url: 'https://sgg.gouv.bj/doc/loi-2025-20/download',
+    note: 'Official legal text used for an independently worded chronology and link only. No French wording, translation, scan or page is republished; the amendment is distinguished from the legal framework in force on 7 December because promulgation followed the attempted takeover.',
+    accessDate: '2026-09-24', creators: ['Republic of Benin'], institution: 'Secrétariat général du Gouvernement du Bénin',
+    publicationDate: '2025-12-17', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional amendment / official legal record', identifiers: { lawNumber: '2025-20', adopted: '2025-11-14', constitutionalCourtDecision: '2025-12-12', promulgated: '2025-12-17' },
+    description: 'Official record of an amendment adopted before the 7 December event but found conforming by the Constitutional Court and promulgated afterward. It is used strictly to preserve chronology, not as a demonstrated cause of the attempted takeover.'
+  },
+  {
+    id: 'beninPresidencyStatement20251207',
+    label: 'Presidency of Benin — Patrice Talon’s address after the incident of 7 December 2025',
+    url: 'https://presidence.bj/article/385/le-president-patrice-talon-rassure-nation-apres-incident-dimanche-decembre-2025/',
+    note: 'Official presidential address consulted as a primary record of the government’s public framing and link only. No statement wording, video, translation or image is reproduced; the official use of “mutiny” is attributed rather than adopted as an independent finding.',
+    accessDate: '2026-09-24', creators: ['Patrice Talon'], institution: 'Presidency of the Republic of Benin',
+    publicationDate: '2025-12-07', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary presidential statement / official account', identifiers: { statementDate: '2025-12-07' },
+    description: 'The President’s same-day public account documents the executive’s initial description and response to the event. It is an official witness, not an independent investigation of the attempted takeover.'
+  },
+  {
+    id: 'beninCouncilReport20251208',
+    label: 'Government Secretariat General of Benin — Extraordinary Council of Ministers account, 8 December 2025',
+    url: 'https://sgg.gouv.bj/cm/2025-12-08/',
+    note: 'Official Council of Ministers account consulted as a primary government narrative and link only. No report wording, translation, image or page is republished; operational claims, casualty accounts, hostages and regional military assistance remain attributed to the government.',
+    accessDate: '2026-09-24', creators: ['Government of Benin'], institution: 'Secrétariat général du Gouvernement du Bénin',
+    publicationDate: '2025-12-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary government communiqué / official event account', identifiers: { meetingDate: '2025-12-08' },
+    description: 'The government’s detailed account of the attempted takeover, military response and regional assistance. It records the state’s account and announced investigations; it is not an independently verified operational report.'
+  },
+  {
+    id: 'beninEcowasStatement20251207',
+    label: 'ECOWAS Commission — Statement on the situation in the Republic of Benin, 7 December 2025',
+    url: 'https://www.ecowas.int/ecowas-statement-on-the-situation-in-the-republic-of-benin-07th-december-2025/',
+    note: 'Official ECOWAS statement consulted as a primary regional diplomatic record and link only. No statement wording, translation, PDF or page is republished; its constitutional-order judgment and offer of support are attributed to the organization.',
+    accessDate: '2026-09-24', creators: ['Economic Community of West African States'], institution: 'ECOWAS Commission',
+    publicationDate: '2025-12-07', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary regional diplomatic statement', identifiers: { statementDate: '2025-12-07' },
+    description: 'ECOWAS’s immediate condemnation and regional response to the attempted takeover. The statement records the organization’s position and intended support, not a neutral account of all operational details.'
+  },
+  {
+    id: 'beninAuStatement20251207',
+    label: 'African Union Commission — Statement on the attempted coup in Benin, 7 December 2025',
+    url: 'https://au.int/sites/default/files/pressreleases/45743-pr-Fr_Draft_CP_Communique_-_Attempted_Coup_in_Benin_7_Decemeber_2025.pdf',
+    note: 'Official AU Commission statement consulted as a primary regional institutional record and link only. No statement wording, translation, PDF page or image is republished; its condemnation under AU anti-coup norms is presented as the organization’s normative position.',
+    accessDate: '2026-09-24', creators: ['African Union Commission'], institution: 'African Union Commission',
+    publicationDate: '2025-12-07', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary regional organization statement', identifiers: { statementDate: '2025-12-07' },
+    description: 'The African Union Commission’s condemnation and constitutional-order framing of the attempted takeover, including reference to continental anti-coup instruments. It documents an institutional position rather than public opinion or an independent investigation.'
+  },
+  {
+    id: 'beninEcowasSummit20251214',
+    label: 'ECOWAS Authority — Conclusions of the 68th Ordinary Summit concerning Benin, 14 December 2025',
+    url: 'https://www.ecowas.int/ecowas-heads-of-state-reaffirm-commitment-to-democracy-peace-and-regional-stability-at-their-68th-summit-in-abuja/',
+    note: 'Official ECOWAS summit communiqué consulted as a primary regional institutional record and link only. No communiqué wording, translation or page is republished; deployment and response claims are attributed to the Authority of Heads of State and Government.',
+    accessDate: '2026-09-24', creators: ['Economic Community of West African States, Authority of Heads of State and Government'], institution: 'ECOWAS Commission',
+    publicationDate: '2025-12-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary regional summit communiqué', identifiers: { summitDate: '2025-12-14', publicationDate: '2025-12-17', summit: '68th Ordinary Session' },
+    description: 'The Authority’s later account says ECOWAS Standby Force elements were deployed and credits the response of Beninese security forces. This is a regional organization’s retrospective institutional account, not an independent operational audit.'
+  },
+  {
+    id: 'beninApCoup20251207',
+    label: 'Associated Press — Benin’s president condemns a foiled coup attempt, 7 December 2025',
+    url: 'https://apnews.com/article/benin-coup-soldiers-66ac8edf0e5acf6ebfa37c46131713c8',
+    note: 'Associated Press report consulted for independent reporting and link only. No article text or photograph is reproduced; the appearance on state television and claims by Beninese and ECOWAS officials retain their source attribution.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025-12-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report', identifiers: { reportDate: '2025-12-07' },
+    description: 'Independent report on soldiers’ appearance on state television, the Military Committee for Refoundation’s declaration and the government’s announcement that the attempt had been foiled. Statements on casualties, hostages and regional assistance are attributed to officials.'
+  },
+  {
+    id: 'beninApAftermath20251208',
+    label: 'Associated Press — Benin government says short-lived coup left casualties on both sides, 8 December 2025',
+    url: 'https://apnews.com/article/83aeb86128bf1e054e0e75110aaeced3',
+    note: 'Associated Press follow-up consulted for independent reporting and link only. No article wording or photograph is reproduced; casualty and event details remain attributed to the officials cited in the report.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025-12-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report', identifiers: { reportDate: '2025-12-08' },
+    description: 'Follow-up reporting on official statements about casualties and the continued search after the attempted takeover. It provides a source-attributed update rather than an independent casualty count or investigation.'
+  },
+  {
+    id: 'beninBanoutoPretrial20251216',
+    label: 'Banouto — Hearing of 30 alleged mutineers and one civilian at CRIET, 16 December 2025',
+    url: 'https://www.banouto.bj/societe/article/20251216-presentation-des-mutins-du-coup-detat-dejoue-a-la-criet-ce-qui-sest-passe-dhier-a-aujourdhui',
+    note: 'Beninese news outlet Banouto report consulted in French and link only. No article wording or image is republished; its account concerns preliminary custody proceedings and is not described as a conviction or proof of guilt.',
+    accessDate: '2026-09-24', creators: ['Banouto'], institution: 'Banouto',
+    publicationDate: '2025-12-16', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'Beninese news report on criminal proceedings', identifiers: { reportDate: '2025-12-16', reportedDefendants: '30 military suspects and one civilian' },
+    description: 'Local reporting on the first CRIET appearance and reported remand of 30 military suspects and one civilian. Its procedural snapshot is not a finding of guilt and should be checked against court records.'
+  },
+  {
+    id: 'beninCivicusProsecutions2026',
+    label: 'CIVICUS Monitor — Wave of arrests following the December 2025 coup attempt',
+    url: 'https://monitor.civicus.org/explore/wave-of-arrests-following-failed-coup-attempt/',
+    note: 'CIVICUS Monitor report consulted for original attributed synthesis and link only. No report wording, list, table or image is republished; its monitoring and press-freedom assessments are attributed and distinguished from the unconsulted court judgment.',
+    accessDate: '2026-09-24', creators: ['CIVICUS Monitor'], institution: 'CIVICUS',
+    publicationDate: '2026-03-25', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'civil-society civic-space and press-freedom monitoring report', identifiers: { reportDate: '2026-03-25', court: 'CRIET', caseDate: '2026-03-24' },
+    description: 'CIVICUS documents arrests, prosecutions and a journalist’s March 2026 sentence in the aftermath of the event, while raising civic-space concerns. The report is used for attributed monitoring, not as a substitute for court files.'
+  },
+  {
+    id: 'beninMfwaJournalistSentence20260331',
+    label: 'Media Foundation for West Africa — Benin: Journalist sentenced over social media post on attempted coup, 31 March 2026',
+    url: 'https://mfwa.org/country-highlights/benin-journalist-sentenced-over-social-media-post-on-attempted-coup/',
+    note: 'Media Foundation for West Africa report consulted for attributed press-freedom monitoring and link only. No article text or photograph is reproduced; Mitowadé’s defense and the Foundation’s concerns remain attributed, and the CRIET judgment itself was not consulted.',
+    accessDate: '2026-09-24', creators: ['Media Foundation for West Africa'], institution: 'Media Foundation for West Africa',
+    publicationDate: '2026-03-31', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'regional press-freedom monitoring report', identifiers: { reportDate: '2026-03-31', judgmentDate: '2026-03-24' },
+    description: 'Regional press-freedom organization’s account of the sentence against journalist Pascal Mitowadé, the defense he presented and concerns raised by media actors. It is not an independent legal analysis of the judgment.'
+  },
+  {
+    id: 'beninRiedlDemocraticOutliers2022',
+    label: 'Rachel Beatty Riedl — “Africa’s Democratic Outliers: Success amid Challenges in Benin and South Africa” (2022)',
+    url: 'https://academic.oup.com/book/43904/chapter/370127484',
+    note: 'Full-text Oxford University Press book chapter consulted for attributed historical context and link only. No chapter wording, quotation, table or figure is reproduced; its pre-2020 scope is not extended to the 2025 event.',
+    accessDate: '2026-09-24', creators: ['Rachel Beatty Riedl'], institution: 'Oxford University Press',
+    publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited-volume chapter / Beninese democratization history', identifiers: { doi: '10.1093/oso/9780197598757.003.0004', bookTitle: 'Democracy in Hard Places', editors: 'Scott Mainwaring; Tarek Masoud', chapter: '4', pages: '94–127', publisher: 'Oxford University Press' },
+    description: 'Full-text comparative chapter on democratic durability and institutional challenges in Benin and South Africa. It provides historical context for Benin’s post-1990 political development, not analysis of the 2025 attempted takeover or its aftermath.'
+  },
+  {
+    id: 'beninHoungnikpoDemocratization2001',
+    label: 'Mathurin C. Houngnikpo — Determinants of Democratization in Africa: A Comparative Study of Benin and Togo (2001)',
+    url: 'https://www.bloomsbury.com/uk/determinants-of-democratization-in-africa-9780761820642/',
+    note: 'Publisher record, description and table of contents consulted for bibliographic metadata only; the full monograph was not accessed. No book wording, quotation or scan is reproduced, no uncited book findings are attributed, and it is not evidence about the 2025 event.',
+    accessDate: '2026-09-24', creators: ['Mathurin C. Houngnikpo'], institution: 'University Press of America / Bloomsbury Publishing',
+    publicationDate: '2001-09-19', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length comparative study of democratization in Benin and Togo', identifiers: { isbn: '9780761820642', pages: '268', edition: '1st', publisher: 'University Press of America' },
+    description: 'Publisher-listed monograph comparing Benin and Togo, with sections on the national conferences, military and democratization. Only its catalogue description and contents were consulted; it is included as contextual bibliography and cannot substantiate a finding about the 2025 event.'
+  },
 );
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('kazakhstan') ? 'Kazakhstani constitutional and political history'
+  discipline: source.id.startsWith('benin') ? 'Beninese constitutional, military and political history'
+    : source.id.startsWith('kazakhstan') ? 'Kazakhstani constitutional and political history'
     : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'

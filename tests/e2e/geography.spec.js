@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(164);
+  await expect(page.locator('.geo-card')).toHaveCount(165);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -136,6 +136,24 @@ test('Côte d’Ivoire’s 2025–2026 election case separates court determinati
   await expect(bookRecord).toContainText('full book was not consulted');
 });
 
+test('Benin’s attempted takeover case separates the official account, institutional response and later speech case', async ({ page }) => {
+  await page.goto('/#geography?case=beninese-2025-coup-attempt-and-constitutional-response');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('Military Committee for Refoundation');
+  await expect(card).toContainText('promulgated on 17 December—after the attempted takeover');
+  await expect(card).toContainText('the court judgment itself was not consulted');
+  await expect(card).toContainText('No numerical six-axis placement is justified');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href="#bibliography/research-beninConstitutionAmendment2025"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-beninConstitutionAmendment2025$/);
+  const source = page.locator('#source-research-beninConstitutionAmendment2025');
+  await expect(source).toBeInViewport();
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: 'geography:beninese-2025-coup-attempt-and-constitutional-response', exact: true }).click();
+  await expect(card).toHaveCount(1);
+});
+
 test('Bangladesh’s 2025–2026 election and Charter case distinguishes the Order, result and pending reform record', async ({ page }) => {
   await page.goto('/#geography?case=bangladeshi-2026-election-july-charter-and-reform-transition');
   const card = page.locator('.geo-card');
@@ -186,7 +204,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(164);
+  await expect(page.locator('.geo-card')).toHaveCount(165);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
