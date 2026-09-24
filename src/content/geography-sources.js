@@ -9833,11 +9833,125 @@ const sources = [
   },
 ];
 
+sources.push(
+  {
+    id: 'kazakhstanConstitution2026Kazakh',
+    label: 'Republic of Kazakhstan — Constitution adopted by referendum on 15 March 2026 (official Kazakh text)',
+    url: 'https://old.adilet.zan.kz/kaz/docs/K2600000000',
+    note: 'Kazakh-language text published in the Ministry of Justice Legal Information System, Adilet, consulted as the primary legal witness for Articles 43, 52–54 and 94–96. No constitutional wording, translation or scan is republished; legal design is not equated with implementation, consent or electoral quality.',
+    accessDate: '2026-09-24', creators: ['Republic of Kazakhstan'], institution: 'Ministry of Justice of the Republic of Kazakhstan, Adilet Legal Information System',
+    publicationDate: '2026-03-15', evidenceRole: 'primary', confidence: 'high', languages: ['Kazakh'],
+    sourceType: 'primary constitutional text / official Kazakh-language legal record', identifiers: { adoptionDate: '2026-03-15', effectiveDate: '2026-07-01', citedArticles: '43, 52–54, 94–96' },
+    description: 'Official Kazakh legal text adopted by referendum, effective 1 July 2026. The cited provisions specify a single seven-year presidential term, the 145-member proportional Kurultai elected in one nationwide district, the replacement of the 1995 Constitution and Parliament, and transitional appointments. Textual rules establish constitutional design, not their practical operation.'
+  },
+  {
+    id: 'kazakhstanConstitution2026English',
+    label: 'Republic of Kazakhstan — 2026 Constitution, Adilet English unofficial translation',
+    url: 'https://old.adilet.zan.kz/eng/docs/K2600000000',
+    note: 'Adilet explicitly identifies this English version as an unofficial translation. It was consulted as a navigation aid to provisions and not treated as an authoritative English legal text; the official Kazakh version remains the primary witness. No translated wording is republished.',
+    accessDate: '2026-09-24', creators: ['Republic of Kazakhstan; Adilet Legal Information System'], institution: 'Ministry of Justice of the Republic of Kazakhstan, Adilet Legal Information System',
+    publicationDate: '2026-03-15', evidenceRole: 'primary', confidence: 'medium', languages: ['English (unofficial translation)'],
+    sourceType: 'unofficial English translation of a primary constitutional text / reading aid', identifiers: { adoptionDate: '2026-03-15', effectiveDate: '2026-07-01', translationStatus: 'unofficial' },
+    description: 'An English-language translation of the Constitution adopted by referendum, which Adilet labels unofficial. It assists with provision-level navigation only; claims about operative Kazakh text are checked against the original Kazakh legal record.'
+  },
+  {
+    id: 'kazakhstanReferendumDecree1170',
+    label: 'President of Kazakhstan — Decree No. 1170 on holding the 15 March 2026 republican referendum',
+    url: 'https://mirror.akorda.kz/ru/o-provedenii-15-marta-2026-goda-respublikanskogo-referenduma-111316',
+    note: 'Official Akorda Russian-language decree record dated 11 February 2026, consulted for the referendum date and question. No decree wording or translation is reproduced; the decree establishes the executive act, not the degree of public participation or choice.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Kazakhstan'], institution: 'Akorda, Official Website of the President of the Republic of Kazakhstan',
+    publicationDate: '2026-02-11', evidenceRole: 'primary', confidence: 'high', languages: ['Russian'],
+    sourceType: 'presidential decree / official referendum instrument', identifiers: { decreeNumber: '1170', decreeDate: '2026-02-11', referendumDate: '2026-03-15' },
+    description: 'The decree set 15 March 2026 for the republican referendum on the new Constitution and specified the question to be submitted. It documents the formal executive call, not the quality of deliberation or the views of all citizens.'
+  },
+  {
+    id: 'kazakhstanReferendumResultsCEC2026',
+    label: 'Central Referendum Commission of Kazakhstan — Certified results of the 15 March 2026 referendum',
+    url: 'https://election.gov.kz/eng/news/acts/index.php?ID=10122',
+    note: 'Official English-language commission resolution dated 17 March 2026. It records statutory totals and the commission’s determination that the referendum was valid and the Constitution adopted; it is an administrative primary record, not an independent audit or evidence of consent beyond its reported result. No result table or page is reproduced.',
+    accessDate: '2026-09-24', creators: ['Central Referendum Commission of the Republic of Kazakhstan'], institution: 'Central Election Commission of the Republic of Kazakhstan',
+    publicationDate: '2026-03-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official referendum resolution / certified results', identifiers: { referendumDate: '2026-03-15', resolutionDate: '2026-03-17', resolutionNumber: '12/24' },
+    description: 'The final resolution records the eligible electorate, participation, votes for and against, and invalid ballots, and applies the statutory validity and adoption tests. The certified figures are attributed to the election authority and do not independently establish equal access, informed choice or public consent.'
+  },
+  {
+    id: 'kazakhstanReferendumODIHRNAM2026',
+    label: 'OSCE/ODIHR — Kazakhstan referendum 2026 Needs Assessment Mission Report (25 February 2026)',
+    url: 'https://odihr.osce.org/sites/default/files/documents/official_documents/2026/02/KAZ%20Referendum_2026_NAM%20report_25.02.2026.pdf',
+    note: 'Full 17-page ODIHR Needs Assessment Mission Report consulted. The report records the mission’s assessment of legal and campaign conditions and attributes concerns to interlocutors; these are ODIHR’s pre-vote assessment and interview-based findings, not an observation of referendum-day events. No report wording or pages are reproduced.',
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe, ODIHR',
+    publicationDate: '2026-02-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international institutional referendum needs-assessment report', identifiers: { missionReportDate: '2026-02-25', pages: '17' },
+    description: 'ODIHR’s report describes its pre-referendum mission and review of the constitutional proposal and legal environment. It noted prior recommendations on inclusive consultation, balanced voter information, campaign access and fundamental freedoms that remained unaddressed; concerns about executive powers and checks and balances were attributed to interlocutors. This is an attributed institutional assessment, not the referendum result or a post-vote observation report.'
+  },
+  {
+    id: 'kazakhstanConstitutionalCourtInterpretation2026',
+    label: 'Constitutional Court of Kazakhstan — Normative Resolution No. 89-NP on limits for repeated appointments and elections (7 July 2026)',
+    url: 'https://www.gov.kz/memleket/entities/ksrk/press/news/details/1254243?lang=ru',
+    note: 'Official Russian-language Constitutional Court background note dated 7 July 2026, with the linked normative resolution. The note summarizes the Court’s official interpretation; the Kazakh full text is the controlling legal version. No judicial wording or translation is reproduced, and the holding is not treated as evidence of motive or a particular person’s future candidacy.',
+    accessDate: '2026-09-24', creators: ['Constitutional Court of the Republic of Kazakhstan'], institution: 'Constitutional Court of the Republic of Kazakhstan',
+    publicationDate: '2026-07-07', evidenceRole: 'primary', confidence: 'high', languages: ['Russian'],
+    sourceType: 'constitutional-court normative resolution / official case summary', identifiers: { resolutionNumber: '89-NP', resolutionDate: '2026-07-07' },
+    description: 'The Court interpreted specified 2026 term and appointment limits to attach to service under the new Constitution: holding a listed office under the 1995 Constitution was not itself a bar to election or appointment under the new text, and a post-commencement election or appointment counted as the first under the new limits. This summarizes a legal holding without inferring an individual’s candidacy or political motive.'
+  },
+  {
+    id: 'kazakhstanKurultaiResultsCEC2026',
+    label: 'Central Election Commission of Kazakhstan — Resolution No. 48/84 establishing Kurultai election results (25 August 2026; Russian)',
+    url: 'https://www.election.gov.kz/rus/news/acts/index.php?ID=10584',
+    note: 'Official Russian-language CEC resolution dated 25 August 2026 certifying 23 August results and distributing party-list mandates. It is the authority’s administrative record, not an independent evaluation of the contest; no result table or translation is reproduced.',
+    accessDate: '2026-09-24', creators: ['Central Election Commission of the Republic of Kazakhstan'], institution: 'Central Election Commission of the Republic of Kazakhstan',
+    publicationDate: '2026-08-25', evidenceRole: 'primary', confidence: 'high', languages: ['Russian'],
+    sourceType: 'official parliamentary election resolution / certified results and mandate distribution', identifiers: { electionDate: '2026-08-23', resolutionDate: '2026-08-25', resolutionNumber: '48/84', seats: '145' },
+    description: 'The CEC certified the first election to the 145-member Kurultai and allocated seats among parties crossing the statutory threshold. The result is reported as an official certification and kept distinct from independent assessment of pluralism, campaign access or voter experience.'
+  },
+  {
+    id: 'kazakhstanKurultaiODIHRPreliminary2026',
+    label: 'OSCE/ODIHR — Preliminary findings on Kazakhstan’s 23 August 2026 early parliamentary elections (24 August 2026)',
+    url: 'https://odihr.osce.org/odihr/667173',
+    note: 'ODIHR’s official 24 August 2026 release links its preliminary statement of findings and conclusions. The assessment is explicitly preliminary and attributed to an international observation mission; the full final report was not identified by this review date. No release wording or report material is reproduced.',
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe, ODIHR',
+    publicationDate: '2026-08-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation mission preliminary findings and conclusions', identifiers: { electionDate: '2026-08-23', statementDate: '2026-08-24', reportStatus: 'preliminary' },
+    description: 'ODIHR described the election as technically well prepared but held in an environment lacking political pluralism, with no distinct alternatives and all contesting parties supporting incumbent presidential policies; it also reported an undue advantage for the new Adilet party and raised concerns about late legal revisions and participation conditions. These are mission findings and not a final report or a judgment about every voter or locality.'
+  },
+  {
+    id: 'kazakhstanCummingsPowerElite2005',
+    label: 'Sally N. Cummings — Kazakhstan: Power and the Elite (I.B. Tauris, 2005)',
+    url: 'https://www.bloomsbury.com/uk/kazakhstan-9781860648540/',
+    note: 'Bloomsbury publisher catalogue record consulted for title, author, edition, publication date, ISBN, extent and the publisher’s description of the study. The book itself was not read in this pass. No book wording, quotation, table, scan or chapter is reproduced; its early post-independence account is contextual only and not evidence about the 2026 changes.',
+    accessDate: '2026-09-24', creators: ['Sally N. Cummings'], institution: 'I.B. Tauris, Bloomsbury Publishing',
+    publicationDate: '2005-06-22', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length study of Kazakhstan’s post-Soviet state formation and elite politics; publisher metadata only', identifiers: { isbn: '9781860648540', pages: '208', edition: '1st' },
+    description: 'The publisher describes a political study of state formation and elite politics in early independent Kazakhstan, drawing on official and academic materials and interviews. It offers historical context for post-Soviet institutions but predates the 2026 Constitution by two decades and is not treated as research on the present case.'
+  },
+  {
+    id: 'kazakhstanDaveEthnicityLanguagePower2007',
+    label: 'Bhavna Dave — Kazakhstan: Ethnicity, Language and Power (Routledge, 2007)',
+    url: 'https://www.routledge.com/Kazakhstan---Ethnicity-Language-and-Power-1st-Edition/Dave/p/book/9780203014899',
+    note: 'Routledge publisher catalogue record consulted for the 2007 first edition, 256-page extent, author, ISBN/DOI and publisher description; the full book was not consulted. No text, translation, table, figure or scan is reproduced. The work informs historical context on identity, language and state-building, not the intentions or reception of a 2026 constitutional text.',
+    accessDate: '2026-09-24', creators: ['Bhavna Dave'], institution: 'Routledge, Taylor & Francis',
+    publicationDate: '2007', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length study of ethnicity, language, state-building and power in Kazakhstan; publisher metadata only', identifiers: { isbn: '9780415363716', ebookIsbn: '9780203014899', doi: '10.4324/9780203014899', pages: '256', edition: '1st' },
+    description: 'The publisher frames the book around Kazakhstan’s national identity and statehood, ethnic relations, language politics, Soviet legacies and efforts to build a national state. It supplies a distinct contextual perspective, not event evidence about the 2026 referendum, Constitution or election.'
+  },
+  {
+    id: 'kazakhstanIsaacsPartySystemFormation2011',
+    label: 'Rico Isaacs — Party System Formation in Kazakhstan: Between Formal and Informal Politics (Routledge, 2011)',
+    url: 'https://www.routledge.com/Party-System-Formation-in-Kazakhstan-Between-Formal-and-Informal-Politics/Isaacs/p/book/9781138102347',
+    note: 'Routledge publisher catalogue record consulted for the first edition, author, 240-page extent, ISBN/DOI and stated argument; the complete monograph was not consulted. No book wording, quotation, table, scan or chapter is reproduced. The book offers a separate party-system and formal/informal politics lens but predates and cannot explain the 2026 order.',
+    accessDate: '2026-09-24', creators: ['Rico Isaacs'], institution: 'Routledge, Taylor & Francis',
+    publicationDate: '2011', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length study of Kazakhstani party-system formation and formal/informal politics; publisher metadata only', identifiers: { isbn: '9780415590235', ebookIsbn: '9781138102347', doi: '10.4324/9780203826003', pages: '240', edition: '1st' },
+    description: 'The publisher describes an account of party-system formation using formal institutional rules and informal relations, including elite networks, patronage and connections between parties and society. It is a pre-2026 historical interpretation and not evidence about the new constitution, referendum or Kurultai election.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
+  discipline: source.id.startsWith('kazakhstan') ? 'Kazakhstani constitutional and political history'
+    : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
