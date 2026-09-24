@@ -9106,6 +9106,136 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'myanmarPoliticalPartiesRegistrationLaw2023Moinfo',
+    label: 'Myanmar — Political Parties Registration Law, State Administration Council Law No. 15/2023',
+    url: 'https://www.moi.gov.mm/moi:eng/laws/9320',
+    note: 'Ministry of Information official English legal record consulted for the statute’s registration framework and link only. No statutory wording, translation, scan or PDF is republished; this records formal rules, not their uniform application or the motives and experience of every party.',
+    accessDate: '2026-09-24', creators: ['State Administration Council of Myanmar'], institution: 'Ministry of Information, Republic of the Union of Myanmar',
+    publicationDate: '2023-01-26', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary party-registration law / official legal record', identifiers: { lawNumber: '15/2023', enactmentDate: '2023-01-26' },
+    description: 'Primary legal text for the party-registration conditions in force before the 2025–2026 election. It establishes the rule framework; Kim Heesuk’s 2026 article abstract interprets its effects alongside election design and cancellations.'
+  },
+  {
+    id: 'myanmarMilitaryElectionOHCHR2025',
+    label: 'OHCHR — Background paper on Myanmar military’s plans to hold national elections (28 November 2025)',
+    url: 'https://bangkok.ohchr.org/sites/default/files/documents/2025-12/OHCHRMyanmar-Background-paper-on-military-elections-Nov25.pdf',
+    note: 'OHCHR Regional Office for South-East Asia five-page background paper consulted for attributed pre-election findings and link only. No report wording, quotation, table, translation, scan or PDF page is republished; the paper predates polling and is not a comprehensive post-election observation mission.',
+    accessDate: '2026-09-24', creators: ['Office of the United Nations High Commissioner for Human Rights'], institution: 'OHCHR Regional Office for South-East Asia',
+    publicationDate: '2025-11-28', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional background paper on planned military elections and human-rights risks', identifiers: { publicationDate: '2025-11-28', pages: '5' },
+    description: 'Pre-election institutional assessment reporting conflict, detention, restrictions on parties and civic space, voter pressure and displacement-related barriers. These are OHCHR-attributed findings and risks before polling, not a complete count of post-election participation or an adjudication of every reported incident.'
+  },
+  {
+    id: 'myanmarElectionUnheldAreasUEC2025',
+    label: 'Union Election Commission — Constituencies, wards and village-tracts where elections will not be held (27 December 2025)',
+    url: 'https://www.moi.gov.mm/moi:eng/index.php/announcements/19867',
+    note: 'Ministry of Information reproduces the UEC’s 27 December notice, consulted as an official administrative record and link only. No notice wording, election list, table, translation, screenshot or copy is republished; official reasons and geographic units are not treated as independently verified conditions on the ground.',
+    accessDate: '2026-09-24', creators: ['Union Election Commission of Myanmar'], institution: 'Union Election Commission / Ministry of Information',
+    publicationDate: '2025-12-27', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election commission notice reproduced by a government ministry', identifiers: { noticeDate: '2025-12-27', announcementNumbers: '56/2025; 141/2025; 103/2025; 170/2025' },
+    description: 'Official notice listing planned election phases and constituencies and subnational voting units excluded or unable to hold polling. It uses several non-equivalent geographic units and establishes the Commission’s published administrative account, not a single independently audited national coverage figure.'
+  },
+  {
+    id: 'myanmarElectionResultsMdn2026',
+    label: 'Union Election Commission — Secured votes of political parties (announcement 34/2026, 9 February 2026)',
+    url: 'https://www.mdn.gov.mm/en/uec-announces-secured-votes-political-parties',
+    note: 'State-run Myanmar Digital News report of UEC announcement 34/2026, published 10 February 2026, consulted for official result claims and link only. No result table, party wording, scan or data file is republished; official totals are distinguished from independent observation, electoral conditions and public consent.',
+    accessDate: '2026-09-24', creators: ['Union Election Commission of Myanmar'], institution: 'Myanmar Digital News / Ministry of Information',
+    publicationDate: '2026-02-10', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Union Election Commission party-vote announcement reproduced by state media', identifiers: { announcementNumber: '34/2026', noticeDate: '2026-02-09' },
+    description: 'Government-media record of the UEC’s reported party vote totals, percentages and elected representatives. It establishes the official result as announced, not the fairness of the process or an independent audit.'
+  },
+  {
+    id: 'myanmarElectionStudyKim2026',
+    label: 'Kim Heesuk — Proportional Representation System and the Trap of “Involution”: The Political Effects of Electoral Design in Myanmar’s 2025–26 General Elections (2026)',
+    url: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003343351',
+    note: 'Korea Citation Index record consulted for complete citation metadata and English/Korean abstracts only; the full 48-page article was not opened. No article wording, quotation, translation, table or PDF is republished; all claims about causal design effects are explicitly attributed to the abstract.',
+    accessDate: '2026-09-24', creators: ['Kim Heesuk'], institution: 'The Southeast Asian Review / Korean Association of Southeast Asian Studies',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['Korean', 'English'],
+    sourceType: 'journal article on electoral-system design and political effects', identifiers: { journal: 'The Southeast Asian Review', volume: '36', issue: '2', pages: '259–306', issn: '1229-6899', kciArticleId: 'ART003343351' },
+    description: 'KCI-indexed 2026 article on partial PR/MMP design, the prior FPTP framework, party-registration requirements, regional-party competition and election cancellations. Its accessible abstract argues that these arrangements constrained wider regional-party influence and recalibrated military rule; the full article and its evidence base remain unreviewed here.'
+  },
+  {
+    id: 'myanmarElectionProspectsBissinger2026',
+    label: 'Jared Bissinger — Watershed or Non-event? Myanmar’s 2025/26 Elections and Effects on its Economic Prospects (2026)',
+    url: 'https://bookshop.iseas.edu.sg/publication/7998',
+    note: 'ISEAS Publishing bibliographic page and publisher summary consulted for title, author, 24-page length, code TRS6/26 and ISBNs; the publication text itself was not consulted. No book wording, quotation, table or scan is republished; its economic forecasts are not treated as post-election outcomes or an opinion survey of all businesses.',
+    accessDate: '2026-09-24', creators: ['Jared Bissinger'], institution: 'ISEAS – Yusof Ishak Institute',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: '24-page ISEAS Trends research publication on election scenarios and economic prospects', identifiers: { isbn: '9789815361476', wholePublicationIsbn: '9789815361483', seriesCode: 'TRS6/26', pages: '24' },
+    description: 'The publisher summary describes business actors’ expectations and possible economic effects of the election, emphasizing uncertainty and the limits of political change. This is not a book-length study, a full-text review or evidence that projected effects occurred.'
+  },
+  {
+    id: 'myanmarElectionASEANChair2026',
+    label: 'ASEAN Chair — Press Statement by the Chair of the ASEAN Foreign Ministers’ Retreat (January 2026)',
+    url: 'https://asean.org/wp-content/uploads/2026/01/FINAL-Press-Statement-by-the-Chair-of-the-ASEAN-Foreign-Ministers-Retreat.pdf',
+    note: 'ASEAN Chair’s seven-page statement consulted for its attributed regional diplomatic position and link only. No statement wording, quotation, translation or PDF page is republished; its mention of the election’s conclusion is not represented as endorsement or collective non-recognition.',
+    accessDate: '2026-09-24', creators: ['Association of Southeast Asian Nations'], institution: 'ASEAN Chair, Philippines',
+    publicationDate: '2026-01-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official ASEAN Chair press statement', identifiers: { pages: '7', agendaItem: 'Myanmar / Five-Point Consensus' },
+    description: 'Records the Chair’s statement that the three election phases had concluded, while reiterating the Five-Point Consensus, inclusive-dialogue requirements and the importance of free, fair, peaceful, transparent, inclusive and credible elections. It does not say ASEAN endorsed or formally rejected the result.'
+  },
+  {
+    id: 'myanmarElectionOutcomeAp2026',
+    label: 'Associated Press — Myanmar military-backed party declared election winner as army plans new body to maintain control (4 February 2026)',
+    url: 'https://apnews.com/article/ce432b0d344e11b54a537d5f2c7b5dd9',
+    note: 'AP report consulted for its independent account of final official results and election context; link only. No article wording, quotation, photograph or graphic is republished; figures remain attributed to final UEC results and are not recast as independently audited totals.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-02-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent report on final results, party competition and military role', identifiers: { reportDate: '2026-02-04' },
+    description: 'Reports the USDP victory using final figures attributed to the Union Election Commission and situates it amid opposition exclusions, restricted dissent, appointed military legislators and the conflict-affected geography of polling. It is contemporaneous reporting, not an election observation mission.'
+  },
+  {
+    id: 'myanmarParliamentOpeningAp2026',
+    label: 'Associated Press — Myanmar’s parliament meets for first time in 5 years with military controlling most seats (16 March 2026)',
+    url: 'https://apnews.com/article/d5a1f9b01eca6da31c30e6919011236a',
+    note: 'AP’s 16 March 2026 reporting consulted for the date and events of the new legislature’s opening and its account of military-appointed and party-elected seats; link only. No article wording, image or table is republished; reported composition is not an independent audit of all members’ political behavior.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-03-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent report on parliamentary convening after the election', identifiers: { reportDate: '2026-03-16' },
+    description: 'Contemporaneous account of the first parliamentary session in more than five years, describing the military’s reserved legislative seats, the USDP result and the formal presidential-selection sequence. It documents the reported institutional opening, not a transition to civilian control.'
+  },
+  {
+    id: 'myanmarPresidentialElectionMPO2026',
+    label: 'Ministries of the President’s Office — Presidential Election: Senior General Min Aung Hlaing elected as President (3 April 2026)',
+    url: 'https://presoffministry.gov.mm/en/news/30241',
+    note: 'Official President’s Office account consulted as the state’s primary report of the presidential vote and link only. No office wording, table, image or page is republished; official vote counts and constitutional claims are not independent evidence of public consent or democratic quality.',
+    accessDate: '2026-09-24', creators: ['Ministries of the President’s Office, Republic of the Union of Myanmar'], institution: 'Ministries of the President’s Office',
+    publicationDate: '2026-04-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official executive-office report of parliamentary presidential election', identifiers: { electionDate: '2026-04-03', votesReported: '429' },
+    description: 'Official account says the parliamentary electoral college elected Min Aung Hlaing president on 3 April and reports the votes for the three nominees. It establishes the administration’s official account of the formal procedure, not independent assessment of the legislature or the political conditions.'
+  },
+  {
+    id: 'myanmarPresidentialElectionAp2026',
+    label: 'Associated Press — Myanmar’s parliament elects ruling general as president, keeping the army in charge (3 April 2026)',
+    url: 'https://apnews.com/article/c263b2d6175b82c5868e24496c975ff8',
+    note: 'AP’s 3 April 2026 account consulted for independent corroboration of the parliamentary vote and contemporary assessments of institutional continuity; link only. No article wording, photograph or graphic is republished; its characterization is attributed to the report and quoted sources.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-04-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent report on parliamentary presidential election and military succession', identifiers: { reportDate: '2026-04-03', votesReported: '429 of 584' },
+    description: 'Reports the parliamentary election of Min Aung Hlaing as president and explains the military-appointed and military-aligned parliamentary majority, his relinquishing the commander-in-chief position and the continuing conflict. Its “nominal return” characterization is news analysis, not a legal finding.'
+  },
+  {
+    id: 'myanmarPresidentAssumptionMPO2026',
+    label: 'Myanmar President’s Office — Newly elected President and Vice-Presidents assume office (11 April 2026; report published 12 April)',
+    url: 'https://myanmar-president-office.gov.mm/en/myanmars-newly-elected-president-and-vice-presidents-assume-office',
+    note: 'Official President’s Office report consulted for the office’s account of oaths and Union-level appointments, published 12 April 2026 and reporting the preceding day’s proceedings; link only. No government wording, list, photograph or scan is republished; formal assumption is distinguished from independent judgments of legitimacy or civilian control.',
+    accessDate: '2026-09-24', creators: ['President’s Office, Republic of the Union of Myanmar'], institution: 'Myanmar President’s Office',
+    publicationDate: '2026-04-12', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official President’s Office report on oaths and Union-level appointments', identifiers: { assumptionDate: '2026-04-11', reportDate: '2026-04-12' },
+    description: 'Official record says the elected president and vice-presidents took affirmations and Union-level officials were sworn in during the first regular session of the Third Pyidaungsu Hluttaw. It establishes formal assumption and the government’s description of the new administration, not independent evaluation of its composition or public mandate.'
+  },
+  {
+    id: 'myanmarPresidentialTransitionAp2026',
+    label: 'Associated Press — Myanmar military chief who led 2021 army takeover takes presidency after criticized election (10 April 2026)',
+    url: 'https://apnews.com/article/fca4366fed164acd0fb86d7f13891bc9',
+    note: 'AP’s 10 April 2026 reporting consulted for independent coverage of the oath and new government’s composition; link only. No article wording, photograph, quote or image is republished; the description of former generals and holdovers is attributed to AP’s reporting and does not replace a ministry-by-ministry prosopography.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-04-10', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent report on presidential assumption and cabinet composition', identifiers: { reportDate: '2026-04-10', oathDate: '2026-04-10' },
+    description: 'Reports Min Aung Hlaing’s oath as president and describes the new cabinet as largely including former generals and holdovers from the military-led government. This supports a bounded account of personnel continuity but not a full analysis of the cabinet or subsequent policy.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9187,6 +9317,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('canada') ? 'Canadian federal, bilingual, Indigenous-rights, constitutional and political history'
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
+      : source.id.startsWith('myanmar') ? 'Myanmar constitutional, military, election and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
