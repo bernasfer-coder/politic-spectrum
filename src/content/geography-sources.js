@@ -4930,6 +4930,146 @@ const sources = [
     description: 'Primary election record marking the return of provincial council elections within the selected horizon. It documents an official electoral process, not the quality or representativeness of local governance in every province.'
   },
   {
+    id: 'iraqIhecParliamentElection2025',
+    label: 'Iraq — 2025 Council of Representatives election, Independent High Electoral Commission final-results portal',
+    url: 'https://ihec.iq/final-results-2025/',
+    note: 'Official IHEC portal linking party, candidate, quota and governorate result files, consulted 24 September 2026. The repository links to the original Arabic record and publishes no tally table, translation, scan or page image; IHEC’s result is distinguished from IPU’s later data summary and from questions of fairness or representativeness.',
+    accessDate: '2026-09-24', creators: ['Independent High Electoral Commission of Iraq'], institution: 'Independent High Electoral Commission of Iraq',
+    evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official parliamentary election final-results portal', identifiers: { electionDate: '2025-11-11' },
+    description: 'Primary electoral source for Iraq’s 11 November 2025 Council of Representatives election. It links national and governorate party, candidate and minority-quota result files; it documents the Commission’s published result record but does not itself assess campaign conditions, turnout denominators, public consent or later coalition bargaining.'
+  },
+  {
+    id: 'iraqParliamentSixthTermOpening2025',
+    label: 'Iraq — Council of Representatives opening of the sixth electoral term and election of its Speaker, Parliament record',
+    url: 'https://iq.parliament.iq/en/2025/12/30/the-council-of-representatives-opens-its-sixth-electoral-cycle-and-elects-its-speaker-and-first-deputy-speaker/',
+    note: 'Official Council of Representatives report consulted for the opening of the sixth term and the parliamentary election of its Speaker and deputies. The site’s publication date and secondary chronologies differ by a day from some date labels for the opening sitting; the case therefore describes the sitting as occurring at the end of December rather than silently resolving that discrepancy. No page wording or image is republished.',
+    accessDate: '2026-09-24', creators: ['Council of Representatives of Iraq'], institution: 'Council of Representatives of Iraq',
+    evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary sitting record', identifiers: { electoralTerm: 'sixth' },
+    description: 'Primary parliamentary report documenting the first sitting of the sixth electoral term, members’ oath, and election of Haibat al-Halbousi as Speaker. It records formal institutional action and voting, not the quality of representation or agreement among all political constituencies.'
+  },
+  {
+    id: 'iraqParliamentPresidentElection2026',
+    label: 'Iraq — Council of Representatives election of Nizar Muhammad Said as President of the Republic (11 April 2026)',
+    url: 'https://iq.parliament.iq/en/2026/04/11/council-of-representatives-elects-nizar-muhammad-said-as-president-of-the-republic-of-iraq/',
+    note: 'Official Council of Representatives report consulted for the presidential ballots and parliamentary announcement. The second-round vote is a dated institutional record, not proof of public election or national consensus; no page text, quotation or image is republished.',
+    accessDate: '2026-09-24', creators: ['Council of Representatives of Iraq'], institution: 'Council of Representatives of Iraq',
+    publicationDate: '2026-04-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary presidential-election record', identifiers: { electionDate: '2026-04-11' },
+    description: 'Primary record of the Council’s two-round indirect election of Nizar Muhammad Said (Nizar Amidi) as President of the Republic. It documents members’ votes and constitutional procedure, not a direct popular mandate.'
+  },
+  {
+    id: 'iraqPresidentZaidiDesignation2026',
+    label: 'Iraq — Presidency statement on Ali al-Zaidi’s designation as prime-ministerial nominee (27 April 2026), carried by INA',
+    url: 'https://ina.iq/ar/political/261853-.html',
+    note: 'Arabic INA report reproducing a statement attributed to the Presidency of the Republic. It is used as a link to the original attributed statement; no Arabic wording or translation is reproduced. The statement’s characterization of the nominee and bloc is not treated as an independent evaluation of the political bargain.',
+    accessDate: '2026-09-24', creators: ['Presidency of the Republic of Iraq'], institution: 'Presidency of the Republic of Iraq / Iraqi News Agency',
+    publicationDate: '2026-04-27', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'presidential designation statement / official news-agency record', identifiers: { designationDate: '2026-04-27' },
+    description: 'A Presidency statement carried by the Iraqi News Agency records President Nizar Amidi’s formal designation of Ali al-Zaidi, nominated by the Coordination Framework, to form a government. The record is evidence of appointment and attributed official reasoning, not independent evidence that the coalition represented all voters.'
+  },
+  {
+    id: 'iraqParliamentZaidiConfidence2026',
+    label: 'Iraq — Council of Representatives vote on Ali al-Zaidi government programme and partial cabinet (14 May 2026)',
+    url: 'https://iq.parliament.iq/en/2026/05/14/council-of-representatives-votes-on-the-ministerial-curriculum-and-grants-confidence-to-the-government-of-mr-ali-al-zaydi/',
+    note: 'Official Council of Representatives report consulted for the 14 May confidence vote, attendance and initial ministerial approvals. The report states that fourteen ministers received confidence and separately names nominees who did not; the parliamentary presidency’s same-day statement says remaining positions still needed to be completed. No programme text, vote table, translation, image or page is republished.',
+    accessDate: '2026-09-24', creators: ['Council of Representatives of Iraq'], institution: 'Council of Representatives of Iraq',
+    publicationDate: '2026-05-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary confidence-vote record', identifiers: { voteDate: '2026-05-14', ministersApproved: '14' },
+    description: 'Primary parliamentary record that the Council approved the ministerial programme and granted confidence to Ali al-Zaidi as Prime Minister together with fourteen ministers, while several other nominees failed to receive confidence. Read with the parliamentary presidency’s same-day call to complete the remaining cabinet, it documents an initial partial government rather than a fully staffed cabinet.'
+  },
+  {
+    id: 'iraqParliamentCompleteCabinetStatement2026',
+    label: 'Iraq — Parliament Presidency statement urging completion of the cabinet after the confidence vote (14 May 2026)',
+    url: 'https://iq.parliament.iq/en/2026/05/14/meeting-of-parliaments-presidency/',
+    note: 'Official parliamentary presidency statement used to establish that cabinet formation remained incomplete immediately after the confidence vote. Its call to action is not proof of later implementation; no text or image is republished.',
+    accessDate: '2026-09-24', creators: ['Presidency of the Council of Representatives of Iraq'], institution: 'Council of Representatives of Iraq',
+    publicationDate: '2026-05-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary presidency statement', identifiers: { statementDate: '2026-05-14' },
+    description: 'Primary statement congratulating the government on the confidence vote while urging the Prime Minister to submit the remaining ministerial names. It marks the incompleteness of cabinet formation at the selected endpoint, not subsequent cabinet status.'
+  },
+  {
+    id: 'iraqUnSGElectionReport2025',
+    label: 'United Nations Secretary-General — Implementation of Security Council resolution 2732 (2024), Iraq report (S/2025/757, 20 November 2025)',
+    url: 'https://docs.un.org/en/S/2025/757',
+    note: 'Official UN Security Council document consulted for the Secretary-General’s summary of the 11 November election and turnout figures attributed to IHEC. It reports preliminary results and is a contemporaneous institutional account, not the Commission’s underlying dataset or an election-observation verdict; no report text or table is republished.',
+    accessDate: '2026-09-24', creators: ['United Nations Secretary-General'], institution: 'United Nations Security Council',
+    publicationDate: '2025-11-20', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'United Nations Security Council report on implementation of resolution 2732 (2024)', identifiers: { document: 'S/2025/757', publicationDate: '2025-11-20' },
+    description: 'The Secretary-General’s report records that, according to IHEC, reported turnout was 56.11 per cent, with about 12 million out of 21.4 million registered voters participating. It gives a contemporary institutional account of IHEC’s reported figures, not independent verification or a final adjudication of election quality.'
+  },
+  {
+    id: 'iraqIpuParliamentElection2025',
+    label: 'Iraq — November 2025 parliamentary election, Inter-Parliamentary Union Parline data page',
+    url: 'https://data.ipu.org/parliament/IQ/IQ-LC01/election/IQ-LC01-E20251111/',
+    note: 'IPU Parline election page consulted 24 September 2026 for its structured seat, candidate, membership and turnout fields. The page itself labels the results unofficial and identifies a Council source; it lists 21,404,291 voters and 46,118,000 registered voters (46.4%). The contemporaneous UN Secretary-General report, citing IHEC, instead records 56.11% and about 12 million of 21.4 million registered voters. The discrepancy is unresolved in the materials reviewed; neither figure is silently substituted for the other. No data table is reproduced.',
+    accessDate: '2026-09-24', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union',
+    evidenceRole: 'contextual', confidence: 'medium', languages: ['English'],
+    sourceType: 'intergovernmental parliamentary election data record', identifiers: { electionDate: '2025-11-11', resultStatus: 'page marks results unofficial' },
+    description: 'Structured secondary data record lists 329 seats and the Reconstruction and Development Coalition with 46 seats, and exposes the turnout denominator. It is used for cross-checking and measurement transparency, not substituted for IHEC’s primary files or represented as an independent observation mission.'
+  },
+  {
+    id: 'iraqEuElectionStatement2025',
+    label: 'European External Action Service — statement on Iraq’s parliamentary elections (12 November 2025)',
+    url: 'https://www.eeas.europa.eu/eeas/iraq-statement-spokesperson-parliamentary-elections_en',
+    note: 'Official EU spokesperson statement consulted for the election date, the Commission’s invitation to an EU Election Expert Mission and the EU’s announced position. It is an external diplomatic statement, not an election-observation finding or evidence of domestic reception; no text is republished.',
+    accessDate: '2026-09-24', creators: ['European External Action Service'], institution: 'European Union',
+    publicationDate: '2025-11-12', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'official diplomatic statement', identifiers: { statementDate: '2025-11-12' },
+    description: 'EU statement confirms the election date and says an Election Expert Mission was deployed at IHEC’s invitation. It records the EU’s public framing and mission mandate, not the mission’s later findings or a comprehensive assessment of election quality.'
+  },
+  {
+    id: 'iraqEuElectionExpertMissionFinalReport2026',
+    label: 'EU Election Expert Mission Iraq 2025 — final-report parliamentary document record (28 June 2026)',
+    url: 'https://www.parlament.gv.at/gegenstand/XXVIII/EU/80552',
+    note: 'Austrian Parliament register consulted for the existence, title, language, date and document identifier of the final EU Election Expert Mission report: RAT WK 9517/26 LIMITE, dated 28 June and received 29 June 2026. The register labels the document LIMITE; the full report was not accessed or reviewed for findings, and no assessment claims from it are used here.',
+    accessDate: '2026-09-24', creators: ['European Union Election Expert Mission Iraq 2025'], institution: 'Council of the European Union / Austrian Parliament document register',
+    publicationDate: '2026-06-28', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional record of a restricted election-expert mission report', identifiers: { document: 'RAT WK 9517/26 LIMITE', received: '2026-06-29' },
+    description: 'Institutional bibliographic record establishes that a final report on the 11 November 2025 election was created and tabled. Because the listed document is marked LIMITE and its text was not reviewed, this source marks a remaining evidence gap and supports no claim about the report’s findings.'
+  },
+  {
+    id: 'iraqCommonsLibraryFormationBriefing2026',
+    label: 'Philip Loft — “A new president and prime minister for Iraq: What challenges face the country in 2026?”, House of Commons Library (18 September 2026)',
+    url: 'https://commonslibrary.parliament.uk/research-briefings/cbp-10829/',
+    note: 'House of Commons Library briefing consulted 24 September 2026 for a current secondary synthesis of the 2025 election and constitutional appointment sequence. The selected scope stops at the initial 14 May confidence vote; later security, militia, economic and policy developments in this briefing are outside this case. No briefing wording or linked third-party reporting is reproduced.',
+    accessDate: '2026-09-24', creators: ['Philip Loft'], institution: 'House of Commons Library',
+    publicationDate: '2026-09-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'parliamentary research briefing', identifiers: { briefing: 'CBP-10829' },
+    description: 'Contemporary parliamentary research briefing summarizes Iraq’s election and the 2026 presidential and prime-ministerial selections, explains the constitutional sequence and notes political conventions. Its later policy and security material is not used to characterize this bounded election-and-investiture case.'
+  },
+  {
+    id: 'iraqTabassumElectionAssessment2026',
+    label: 'Tabassum — “Iraq Parliamentary Election 2025: An Assessment”, MP-IDSA Issue Brief (1 January 2026)',
+    url: 'https://idsa.in/wp-content/uploads/2026/01/Issue-Brief-Ms-Tabassum-01-January-2026.pdf',
+    note: 'Manohar Parrikar Institute for Defence Studies and Analyses issue brief consulted for a dated early assessment and its then-prospective government-formation expectations. It is an attributed strategic-policy analysis, not an independent election-observation report; predictions made before the 2026 investiture are not treated as outcomes. No text, table or PDF page is reproduced.',
+    accessDate: '2026-09-24', creators: ['Tabassum'], institution: 'Manohar Parrikar Institute for Defence Studies and Analyses (MP-IDSA)',
+    publicationDate: '2026-01-01', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'policy institute issue brief', identifiers: { publicationDate: '2026-01-01', pages: '10' },
+    description: 'A January 2026 account of fragmented representation and the then-unfinished government-formation process. Its prospective expectations are dated and not retrospectively presented as the eventual result; its shorthand about communal blocs is not adopted as an exhaustive account of Iraqi political identities.'
+  },
+  {
+    id: 'iraqRcdElectionBook2026',
+    label: 'Al-Rafidain Center for Dialogue — website announcement for Parliamentary Elections in Iraq 2025: Dynamics of Presence and Influence and Forecasting Future Paths',
+    url: 'https://alrafidaincenter.com/en/5122',
+    note: 'The RCD page is dated 16 April 2026 but describes a field survey for elections “scheduled for November 2025” and calls the vote upcoming, a chronology that cannot be reconciled from the page. It does not provide full author/editor, pagination, ISBN or edition metadata, and the linked full book was not independently reviewed. This unresolved page-date/content discrepancy is recorded as a bibliographic gap, not used as a retrospective source for results or 2026 investiture.',
+    accessDate: '2026-09-24', creators: ['Al-Rafidain Center for Dialogue'], institution: 'Al-Rafidain Center for Dialogue (RCD)',
+    publicationDate: '2026-04-16', evidenceRole: 'secondary', confidence: 'low', languages: ['English'],
+    sourceType: 'institutional website announcement with unresolved publication-date/content discrepancy', identifiers: { pageDate: '2026-04-16', referencedElectionDate: '2025-11' },
+    description: 'The page describes a book on electoral alliances, campaign equality, emerging parties and protest movements, minority representation, economic drivers, oversight and digital campaigning, drawing on a survey for a November 2025 election that it calls upcoming despite the page date of April 2026. The full book was not reviewed and the page’s chronology is unresolved, so it supports no claim about the election result.'
+  },
+  {
+    id: 'iraqCenturyStateMakingBook2025',
+    label: 'Marianna Charountaki, James R. Moore and Liam Anderson (eds.), A Century of State-Making in Iraq: Baghdad, Kurdistan, and the Development of the Constitution (Springer Nature, 2025)',
+    url: 'https://doi.org/10.1007/978-3-031-76029-7',
+    note: 'Wright State University and Springer-linked bibliographic records consulted for editors, title, 2025 publication, 320-page extent, ISBNs and DOI; publisher chapter descriptions were used only for constitutional and state-making context. The whole volume was not independently read as an account of the 2025 election; no chapter wording, table or figure is reproduced.',
+    accessDate: '2026-09-24', creators: ['Marianna Charountaki', 'James R. Moore', 'Liam Anderson'], institution: 'Springer Nature',
+    publicationDate: '2025-01-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume on Iraqi state-making, federalism and constitutional development', identifiers: { doi: '10.1007/978-3-031-76029-7', printIsbn: '9783031760280', electronicIsbn: '9783031760297', pages: '320' },
+    description: 'A book-length, multi-author study of Iraqi state-making, Baghdad–Kurdistan relations and constitutional development. Its historically bounded and chapter-specific arguments provide context for federal parliamentary institutions; it predates the 2025 election and cannot substantiate the later electoral outcome.'
+  },
+  {
     id: 'trippHistoryIraq2007',
     label: 'Charles Tripp, A History of Iraq, 3rd ed. (Cambridge University Press, 2007)',
     url: 'https://www.cambridge.org/core/books/a-history-of-iraq/2EC18785A6BBE4B5278C0133E9A0BB15',
