@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(155);
+  expect(cards()).toHaveLength(156);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -27,6 +27,16 @@ describe('geographic atlas', () => {
     await user.click(screen.getByRole('button', { name: 'Reset atlas filters' }));
     await user.selectOptions(screen.getByRole('combobox', { name: 'Connection' }), 'experimented');
     expect(cards()[0]).toHaveTextContent('Democratic confederalism');
+  });
+
+  it('shows the bounded Bolivia 2025 election case and its documented evidence gap', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-068');
+    expect(cards()).toHaveLength(2);
+    const caseCard = screen.getByRole('article', { name: 'Bolivia’s 2025 elections and executive transition' });
+    expect(caseCard).toHaveTextContent('60,000-vote conflict');
+    expect(caseCard).toHaveTextContent('No event-specific book-length scholarship was located');
   });
 
   it('shows label context before cases without inventing scored cards', async () => {

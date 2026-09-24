@@ -7732,6 +7732,60 @@ const sources = [
     description: 'Book-length assessment of continuity and change under MAS, including poverty, health and education, natural resources, women’s and Indigenous/minority rights and the tensions between government and social movements. It supplies a balanced policy lens rather than a complete local or post-2014 account.'
   },
   {
+    id: 'boliviaOepGeneralElection2025',
+    label: 'Órgano Electoral Plurinacional — Publicación de resultados, Elecciones Generales 2025 (first round)',
+    url: 'https://web.oep.org.bo/wp-content/uploads/2025/08/30-08-2025-Separata-resultados-EG2025.pdf',
+    note: 'Official first-round results booklet consulted directly, including its opening account of the national tally act and its combined national-and-exterior result summary. Only independently transcribed facts are summarized; no result table, ballot, PDF page, scan or protected prose is reproduced. The result record establishes official counts, not voter motives, equal campaign conditions or uniform representation.',
+    accessDate: '2026-09-24', creators: ['Órgano Electoral Plurinacional de Bolivia', 'Tribunal Supremo Electoral de Bolivia'], institution: 'Órgano Electoral Plurinacional / Tribunal Supremo Electoral', publicationDate: '2025-08-30', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official general-election results publication', identifiers: { election: 'Bolivia 2025 general election, first round', electionDate: '2025-08-17', tallyActDate: '2025-08-26' },
+    description: 'Official result record for the 17 August 2025 general election. The national-plus-exterior totals establish the first-round presidential ranking and reported ballot categories; they do not explain voters’ choices or independently measure election quality.'
+  },
+  {
+    id: 'boliviaOepRunoffResults2025',
+    label: 'Órgano Electoral Plurinacional — Publicación de resultados, Elecciones Generales 2025, segunda vuelta',
+    url: 'https://web.oep.org.bo/wp-content/uploads/2025/11/31-10-2025-separata-Revisado.pdf',
+    note: 'Official final-results booklet for the 19 October presidential runoff, consulted directly. Its combined national-and-exterior table and separate national and exterior totals were checked arithmetically against one another. This project publishes no result table, ballot, PDF page, scan or protected prose; the booklet is primary evidence of the declared count, not voter motivation, equal conditions or a complete election-integrity assessment.',
+    accessDate: '2026-09-24', creators: ['Órgano Electoral Plurinacional de Bolivia', 'Tribunal Supremo Electoral de Bolivia'], institution: 'Órgano Electoral Plurinacional / Tribunal Supremo Electoral', publicationDate: '2025-11-02', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential-runoff results publication', identifiers: { election: 'Bolivia 2025 presidential runoff', electionDate: '2025-10-19', publication: 'TSE final-results booklet', pages: '12' },
+    description: 'Official final count for the presidential and vice-presidential second round, including national and external voting. The printed component totals reconcile with the booklet’s aggregate table; a separate TSE proclamation page contains a conflicting PDC vote-count figure, which this case records rather than conceals.'
+  },
+  {
+    id: 'boliviaTseRunoffProclamation2025',
+    label: 'Tribunal Supremo Electoral — TSE proclaims official second-round results (27 October 2025)',
+    url: 'https://web.oep.org.bo/institucional-institucional/tse-proclama-resultados-oficiales-de-la-segunda-vuelta-electoral/',
+    note: 'Official TSE announcement consulted for the 27 October proclamation, attendance, processed tally statements, the Oruro appeal’s rejection as late, and the posted result prose. Its PDC figure (3,579,534) conflicts by 60,000 with the later final-results booklet (3,519,534); the discrepancy is explicitly retained, not silently harmonized. The announcement says the Oruro appeal was rejected in limine as untimely, which is not a merits ruling.',
+    accessDate: '2026-09-24', creators: ['Tribunal Supremo Electoral de Bolivia'], institution: 'Órgano Electoral Plurinacional / Tribunal Supremo Electoral', publicationDate: '2025-10-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election proclamation and institutional announcement', identifiers: { announcementDate: '2025-10-27', electionDate: '2025-10-19', discrepancy: 'PDC figure differs from final results booklet by 60,000' },
+    description: 'Official institutional announcement of the runoff proclamation. It is cited alongside—not in place of—the final results booklet because its prose contains a conflicting PDC vote count; its description of the appeal records a procedural rejection as late, not an adjudication on merits.'
+  },
+  {
+    id: 'boliviaPresidencyPaz2025',
+    label: 'Ministerio de la Presidencia — Presidente de Bolivia (Rodrigo Paz Pereira)',
+    url: 'https://presidencia.gob.bo/index.php/presidente-de-bolivia/',
+    note: 'Official Presidency profile consulted for the office-holder and its statement that Rodrigo Paz Pereira assumed the presidency on 8 November 2025. The page is a current institutional self-description and is used only to establish the dated transfer endpoint; no biographical prose, image or broader political evaluation is reproduced.',
+    accessDate: '2026-09-24', creators: ['Ministerio de la Presidencia del Estado Plurinacional de Bolivia'], institution: 'Ministerio de la Presidencia del Estado Plurinacional de Bolivia', publicationDate: '2025-11-08', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential-office profile', identifiers: { assumptionOfOffice: '2025-11-08', office: 'President of the Plurinational State of Bolivia' },
+    description: 'Official Presidency record confirming the date the incoming president assumed office. It establishes a dated institutional transition endpoint, not policy implementation, public consent or a current ideological assessment.'
+  },
+  {
+    id: 'boliviaEuEomFinalReport2025',
+    label: 'European Union Election Observation Mission — Final report presentation and recommendations (8 December 2025)',
+    url: 'https://www.eeas.europa.eu/moe-bolivia-2025/la-moe-ue-presenta-el-informe-final-con-19-recomendaciones-para-fortalecer-futuras-elecciones_es',
+    note: 'EEAS mission announcement consulted for its final-report presentation, deployment summary and five highlighted priorities among 19 recommendations. This is an institutional summary, not the full report or an independent re-audit; recommendations are attributed to the EU mission and are not converted into a blanket verdict on electoral legitimacy or every local experience.',
+    accessDate: '2026-09-24', creators: ['European Union Election Observation Mission Bolivia 2025'], institution: 'European External Action Service / EU Election Observation Mission Bolivia 2025', publicationDate: '2025-12-08', evidenceRole: 'contextual', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'international election-observation mission report announcement', identifiers: { reportPresentationDate: '2025-12-08', electionsObserved: '2025-08-17 and 2025-10-19', recommendations: '19' },
+    description: 'EU mission announcement that its final report made 19 recommendations, highlighting electoral-authority transparency, candidate-registration timelines, campaign-finance conditions, public-media independence and digital rights. These are attributed priorities for future reforms, not proof that every recommended deficiency occurred uniformly.'
+  },
+  {
+    id: 'okadaTamuraBoliviaElection2026',
+    label: 'Isamu Okada and Eka Tamura — The 2025 National Election in Bolivia: Government Change during an Economic Crisis (2026)',
+    url: 'https://www.jstage.jst.go.jp/article/latinamericareport/43/0/43_42/_html/-char/en',
+    note: 'J-STAGE article metadata, English abstract and full Japanese-language text consulted; published in volume 43 of Latin America Report, pp. 42–55, by the Institute of Developing Economies, Japan External Trade Organization (IDE-JETRO), with DOI 10.24765/latinamericareport.43.0_42 and online availability 31 January 2026. The authors’ economic-voting and MAS-factionalization explanation is attributed scholarly interpretation, not a finding about every voter; no article wording, translation, table or figure is reproduced.',
+    accessDate: '2026-09-24', creators: ['Isamu Okada', 'Eka Tamura'], institution: 'Institute of Developing Economies, Japan External Trade Organization (IDE-JETRO)', publicationDate: '2026-01-31', evidenceRole: 'secondary', confidence: 'high', languages: ['Japanese', 'English'],
+    sourceType: 'journal article (Japanese text; English abstract)', identifiers: { doi: '10.24765/latinamericareport.43.0_42', journal: 'Latin America Report', volume: '43', pages: '42–55', onlineDate: '2026-01-31' },
+    description: 'Event-specific scholarly analysis of the 2025 election, published in Japanese with an English abstract. The authors interpret the government change through economic voting and divisions within MAS; these causal claims are their interpretation and are not treated as population-wide motives or a settled account.'
+  },
+  {
     id: 'uruguayConstitution1967Impo',
     label: 'Uruguay — Constitution of the Republic (1967, updated official text)',
     url: 'https://www.impo.com.uy/bases/constitucion/1967-1967',
