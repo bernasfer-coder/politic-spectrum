@@ -9360,6 +9360,136 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'drcUnsgReportS2025590',
+    label: 'United Nations Secretary-General — MONUSCO report S/2025/590 (19 September 2025)',
+    url: 'https://monusco.unmissions.org/sites/default/files/unsg_report-s_2025_590-_n2524000.pdf',
+    note: 'Official 20-page Secretary-General report covering developments since 23 June 2025. Used for the distinct Washington and Doha diplomatic tracks, their stated terms and implementation milestones, MONUSCO access and protection reporting, and the report’s stated limits. No report wording, map, chart, table or PDF page is reproduced; mission reporting and parties’ positions are attributed rather than treated as court findings.',
+    accessDate: '2026-09-24', creators: ['United Nations Secretary-General'], institution: 'United Nations Security Council / MONUSCO',
+    publicationDate: '2025-09-19', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'United Nations Secretary-General report / primary institutional and peace-process record', identifiers: { document: 'S/2025/590', pages: '20' },
+    description: 'Dated UN account of the June 2025 Washington agreement between the DRC and Rwanda, the July Doha Declaration of Principles between the DRC government and AFC/M23, and reported progress and obstacles through September 2025. It distinguishes the separate processes and reports on the UN mission’s own access and protection work; its account is not a final verification of all parties’ conduct.'
+  },
+  {
+    id: 'drcAuDohaFramework2025',
+    label: 'African Union — signed Framework Agreement for a Comprehensive Peace Agreement between the DRC Government and AFC/M23 (15 November 2025)',
+    url: 'https://au.int/sites/default/files/documents/45656-doc-2025.11.15_-_SIGNED_Framework_Peace_Agreement_EN.pdf',
+    note: 'Official African Union-hosted signed English framework text, used as a primary witness to the parties, date and formal provisions. No agreement wording, translation, scan excerpt or PDF page is reproduced; signature and formal commitments do not prove implementation, compliance, inclusion or public consent.',
+    accessDate: '2026-09-24', creators: ['Government of the Democratic Republic of the Congo', 'Alliance Fleuve Congo / Mouvement du 23 mars'], institution: 'African Union',
+    publicationDate: '2025-11-15', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'signed peace-process framework / official agreement text', identifiers: { signatureDate: '2025-11-15', parties: 'Government of the DRC; AFC/M23' },
+    description: 'Primary agreement text for the November 2025 framework negotiated in Doha. Its formal terms are evidence of the parties’ stated commitments, not proof that a comprehensive peace agreement, durable ceasefire or restoration of state authority followed.'
+  },
+  {
+    id: 'drcAfcUnscListing2026',
+    label: 'United Nations Security Council Committee — Alliance Fleuve Congo (AFC) narrative summary of reasons for listing (14 July 2026)',
+    url: 'https://main.un.org/securitycouncil/en/content/alliance-fleuve-congo-afc',
+    note: 'Official 1533 Committee sanctions-list narrative made public on 14 July 2026. Used for the Committee’s formal listing and attributed account of AFC/M23 relations and conduct; a listing rationale is not represented as a judicial judgment or as a complete independent investigation. No narrative wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['United Nations Security Council Committee established pursuant to resolution 1533 (2004)'], institution: 'United Nations Security Council',
+    publicationDate: '2026-07-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary institutional sanctions-list narrative', identifiers: { listEntry: 'CDe.010', availableDate: '2026-07-14' },
+    description: 'The Committee identifies AFC as a politico-military movement operating in eastern DRC and allied with listed M23/ARC, and states the grounds and narrative for its listing. These are official sanctions findings and stated reasons, not a criminal conviction or evidence that every associated individual or community shares one political position.'
+  },
+  {
+    id: 'drcQatarExpandedVerification2026',
+    label: 'Qatar Ministry of Foreign Affairs — first field mission of the Expanded Joint Verification Mechanism Plus (27 August 2026)',
+    url: 'https://mofa.gov.qa/en/latest-articles/statements/state-of-qatar-welcomes-first-field-verification-mission-of-the-expanded-joint-verification-mechanism-plus-(-ejvm)-in-minembwe--eastern-democratic-republic-of-the-congo',
+    note: 'Official Qatari statement dated 27 August 2026, consulted for Qatar’s account that the first field verification mission took place near Minembwe on 24 August and for the mediator’s description of the process. Qatar is a participant and mediator; its statement is not an independent mission report or proof that the ceasefire was verified across the affected provinces. No wording or image is republished.',
+    accessDate: '2026-09-24', creators: ['State of Qatar, Ministry of Foreign Affairs'], institution: 'State of Qatar, Ministry of Foreign Affairs',
+    publicationDate: '2026-08-27', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official mediator statement / ceasefire-monitoring process', identifiers: { fieldMissionDate: '2026-08-24', location: 'Minembwe area' },
+    description: 'The mediator describes the Minembwe field mission as the first practical step toward operationalizing the Doha ceasefire-monitoring mechanism, calls for regular missions, and says negotiations on remaining protocols continue. It is evidence of Qatar’s official account and diplomatic position, not a neutral verification assessment.'
+  },
+  {
+    id: 'drcAmnestyMiningSites2026',
+    label: 'Amnesty International — DRC: “We didn’t come to play” (AFR 62/1454/2026, 21 September 2026)',
+    url: 'https://www.amnesty.org/en/documents/afr62/1454/2026/en/',
+    note: 'Amnesty International research briefing and linked English report, index AFR 62/1454/2026, dated 21 September 2026. Used only for its bounded findings at Rubaya in North Kivu and Lomera in South Kivu, attributed to M23; the project does not reproduce report wording, interviews, photographs or tables and does not present allegations as judicial determinations or as representative of every mine or community.',
+    accessDate: '2026-09-24', creators: ['Amnesty International'], institution: 'Amnesty International',
+    publicationDate: '2026-09-21', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French', 'Kinyarwanda', 'Kiswahili', 'Spanish', 'Russian', 'Arabic', 'Chinese'],
+    sourceType: 'human-rights research briefing / conflict-related abuses', identifiers: { index: 'AFR 62/1454/2026', locations: 'Rubaya, North Kivu; Lomera, South Kivu' },
+    description: 'The briefing says Amnesty documented killings, torture and ill-treatment, arbitrary detention, forced labour, forced recruitment and pillage by M23 at two named mining sites. Its findings are bounded to its documented locations, period and research; they are not a full conflict-violations inventory or adjudication.'
+  },
+  {
+    id: 'drcAcpMonuscoStatement2026',
+    label: 'Agence Congolaise de Presse — MONUSCO support for ceasefire verification and DDR (17 September 2026)',
+    url: 'https://acp.cd/nation/rdc-la-monusco-reaffirme-son-soutien-au-mecanisme-de-verification-du-cessez-le-feu/',
+    note: 'French-language Congolese national news-agency report dated 17 September 2026, attributing remarks to MONUSCO head James Swan and Congolese officials after a meeting with the Prime Minister. Used as local institutional reporting about the stated technical, logistical and security support and discussion of DDR; it is not a MONUSCO operational after-action report. No article wording or photograph is republished.',
+    accessDate: '2026-09-24', creators: ['Agence Congolaise de Presse'], institution: 'Agence Congolaise de Presse',
+    publicationDate: '2026-09-17', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'national news-agency report / attributed peace-process statement', identifiers: { dateline: 'Kinshasa, 17 September 2026' },
+    description: 'ACP reports MONUSCO’s stated support for the Doha ceasefire-verification mechanism and disarmament, demobilization and reintegration work concerning foreign armed groups, especially the FDLR. The account is attributed to participants and does not independently establish deployment, compliance or outcomes.'
+  },
+  {
+    id: 'drcIpIsWazalendo2026',
+    label: 'International Peace Information Service — The emergence of the Wazalendo in North Kivu (5 February 2026)',
+    url: 'https://ipisresearch.be/publication/the-emergence-of-the-wazalendo-in-the-fight-against-the-afc-m23-in-north-kivu-current-situation-challenges-and-prospects/',
+    note: 'IPIS report with an anonymized North Kivu civil-society partner, based on interviews and focus groups conducted in Goma, Sake and Nyiragongo from December 2024 to January 2025, before Goma fell. Used for an explicitly time-bounded account of Wazalendo groups and their contested relations with state forces and communities; no report text, interview, map, image or PDF page is reproduced.',
+    accessDate: '2026-09-24', creators: ['International Peace Information Service', 'Anonymized North Kivu civil-society partner'], institution: 'International Peace Information Service (IPIS)',
+    publicationDate: '2026-02-05', evidenceRole: 'secondary', confidence: 'medium', languages: ['English', 'French'],
+    sourceType: 'institutional field-research report / armed-group and community relations', identifiers: { fieldwork: '2024-12–2025-01', locations: 'Goma; Sake; Nyiragongo' },
+    description: 'The report presents interview-based analysis of the Wazalendo, an umbrella name used by varied armed groups opposing M23, and discusses local perceptions, abuses, state control and DDR dilemmas. Its interview window precedes the January 2025 fall of Goma and must not be projected unchanged into 2026.'
+  },
+  {
+    id: 'drcCicM23Brief2026',
+    label: 'Congo Research Group — The M23: A Fractious, Entrenched Rebellion (1 April 2026)',
+    url: 'https://cic.nyu.edu/resources/the-m23-a-fractious-entrenched-rebellion/',
+    note: 'English- and French-language policy brief by the Congo Research Group, published by NYU’s Center on International Cooperation on 1 April 2026. Its page says the analysis combines public sources, selected key-informant interviews and the Group’s regional work; used for attributed discussion of organization, alliances, recruitment and AFC/M23 tensions. It is not a book-length study, and no report wording or map is reproduced.',
+    accessDate: '2026-09-24', creators: ['Congo Research Group'], institution: 'Center on International Cooperation, New York University',
+    publicationDate: '2026-04-01', evidenceRole: 'secondary', confidence: 'medium', languages: ['English', 'French'],
+    sourceType: 'policy brief / conflict-group research and analysis', identifiers: { publicationDate: '2026-04-01' },
+    description: 'The brief examines the M23’s return, alliances, recruitment and internal tensions with the AFC political umbrella. The authors note limits in public knowledge about internal organization and draw on interviews and prior regional research; its interpretations are attributed and do not represent every Congolese or Rwandophone community.'
+  },
+  {
+    id: 'drcAutesserreTroubleCongo2010',
+    label: 'Séverine Autesserre — The Trouble with the Congo: Local Violence and the Failure of International Peacebuilding (2010)',
+    url: 'https://www.cambridge.org/core/books/trouble-with-the-congo/7BB825CE2132698D505F0A11B04A01B5',
+    note: 'Cambridge University Press book record consulted for bibliographic metadata and the publisher’s description of a 2003–2006 transition study based on field research and interviews. The monograph and cited records were not read in full for this update; it is contextual to the 2025–2026 case, not direct event evidence. No text, chapter, table or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Séverine Autesserre'], institution: 'Cambridge University Press',
+    publicationDate: '2010-06-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of local conflict and international peacebuilding in the DRC', identifiers: { isbnHardback: '9780521191005', isbnPaperback: '9780521156011', doi: '10.1017/CBO9780511761034', pages: '344' },
+    description: 'Publisher-described study of the DRC’s 2003–2006 transition, local rivalries over land, resources and power, and international peacebuilding’s limits. It offers an earlier local-level analytical lens, not direct evidence about current armed groups or the 2025–2026 negotiations.'
+  },
+  {
+    id: 'drcBerwoutsCongosViolentPeace2017',
+    label: 'Kris Berwouts — Congo’s Violent Peace: Conflict and Struggle Since the Great African War (2017)',
+    url: 'https://www.bloomsbury.com/uk/congos-violent-peace-9781783603701/',
+    note: 'Bloomsbury/Zed Books record consulted for bibliographic metadata and stated scope through the 2006 and 2011 elections and earlier M23 rebellion. The 2017 book predates the present case and is contextual only; no book wording, quotation, chapter, map or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Kris Berwouts'], institution: 'Zed Books / Bloomsbury Publishing',
+    publicationDate: '2017-07-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political history of conflict and political struggle in the DRC', identifiers: { isbn: '9781783603701', pages: '216', series: 'African Arguments' },
+    description: 'Book-length account of DRC conflict and political developments after the so-called Congo Wars through the 2011 election and earlier M23 uprising. Its publication horizon makes it historical context rather than evidence about the current rebellion or peace mechanisms.'
+  },
+  {
+    id: 'drcStearnsWarDoesntSayName2021',
+    label: 'Jason K. Stearns — The War That Doesn’t Say Its Name: The Unending Conflict in the Congo (2021)',
+    url: 'https://www.jstor.org/stable/j.ctv1nwbr0n',
+    note: 'Princeton University Press/JSTOR book record and publisher description consulted, including DOI 10.2307/j.ctv1nwbr0n and ISBNs 9780691194080 and 9780691224527. The full monograph was not read for this update; it is used as contextual scholarship on conflict after 2003, not direct evidence about events after 2021. No book wording, chapter, table or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Jason K. Stearns'], institution: 'Princeton University Press',
+    publicationDate: '2021', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of post-2003 conflict in eastern DRC', identifiers: { hardcoverIsbn: '9780691194080', ebookIsbn: '9780691224527', doi: '10.2307/j.ctv1nwbr0n', pages: '328' },
+    description: 'Publisher and catalog records describe a study of the post-2003 conflict, including Congolese and Rwandan state roles, armed groups, M23, local power and international peacekeeping. Its argument is not extended beyond its own historical horizon or treated as an explanation of the 2025–2026 events.'
+  },
+  {
+    id: 'drcMathysFracturedPasts2025',
+    label: 'Gillian Mathys — Fractured Pasts in Lake Kivu’s Borderlands: Conflicts, Connections and Mobility in Central Africa (2025)',
+    url: 'https://www.cambridge.org/core/books/fractured-pasts-in-lake-kivus-borderlands/28EE1FFBB2BDDA8814964DD39656B959',
+    note: 'Cambridge University Press record consulted for this 2025, 406-page monograph, DOI 10.1017/9781009463041, ISBNs 9781009463041, 9781009463058 and 9781009463072, and the publisher’s description of cross-border history from the nineteenth century to the present. The full book and its archival sources were not read for this update; it is long-run context, not event evidence. No text, chapter or map is reproduced.',
+    accessDate: '2026-09-24', creators: ['Gillian Mathys'], institution: 'Cambridge University Press',
+    publicationDate: '2025-07-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length regional history of Lake Kivu borderlands and cross-border mobility', identifiers: { hardbackIsbn: '9781009463058', paperbackIsbn: '9781009463072', ebookIsbn: '9781009463041', doi: '10.1017/9781009463041', pages: '406' },
+    description: 'Publisher record describes a long-run Lake Kivu regional history centered on mobility, connections, identity formation and borderland narratives rather than a one-dimensional mineral explanation. Its historical framing is contextual and does not independently explain the 2025–2026 conflict.'
+  },
+  {
+    id: 'drcMacolaViolentHistory2025',
+    label: 'Giacomo Macola — A Violent History: Power and Conflict in the Congo Basin from the Nineteenth Century to the Present (2025)',
+    url: 'https://lup.be/book/a-violent-history/',
+    note: 'Leuven University Press record consulted for this 272-page, peer-reviewed scholarly monograph, published 3 September 2025, ISBN 9789462704510, DOI 10.11116/9789461666260. The full book was not read for this update; its publisher-described longue durée account is context, not direct evidence about events after publication. No book wording, chapter or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Giacomo Macola'], institution: 'Leuven University Press',
+    publicationDate: '2025-09-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed book-length history of power and conflict in the Congo Basin', identifiers: { isbn: '9789462704510', doi: '10.11116/9789461666260', pages: '272' },
+    description: 'Publisher description presents a two-century account of political and military violence in the Congo Basin, including the Mobutu state’s collapse, the Great African War and continuing instability in the east. The wide historical frame is not substituted for granular contemporary reporting or local testimony.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9443,6 +9573,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
       : source.id.startsWith('kosovo') ? 'Kosovo post-independence constitutional, electoral and state-building history'
+      : source.id.startsWith('drc') ? 'Democratic Republic of the Congo eastern-conflict, regional diplomacy and peacebuilding history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
