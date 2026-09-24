@@ -167,6 +167,16 @@ describe('interactive atlas map', () => {
     expect(screen.getByRole('button', { name: 'Zoom out' })).toBeDisabled();
   });
 
+  it('keeps Haiti’s later transition distinct from the post-Duvalier case', async () => {
+    const user = userEvent.setup();
+    renderAtlas();
+    await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'map-332');
+    expect(cards()).toHaveLength(2);
+    expect(cards()[0]).toHaveTextContent('Haitian post-Duvalier constitutional and crisis order');
+    expect(cards()[1]).toHaveTextContent('Haitian post-Moïse transition and electoral horizon');
+    expect(cards()[1]).toHaveTextContent('through 21 September 2026');
+  });
+
   it('synchronizes map selections with browser history and reset', async () => {
     const user = userEvent.setup();
     renderAtlas();
@@ -174,7 +184,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(159);
+    expect(cards()).toHaveLength(160);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });

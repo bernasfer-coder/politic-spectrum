@@ -9599,6 +9599,129 @@ sources.push(
   },
 );
 
+sources.push(
+  {
+    id: 'haitiPostMoiseBinuhJan2026',
+    label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/31 (15 January 2026)',
+    url: 'https://documents.un.org/api/symbol/access?l=en&s=S%2F2026%2F31&t=pdf',
+    note: 'Official Security Council document consulted for its dated account of the transition, election preparations and competing proposals before the Transitional Presidential Council’s mandate ended. No report wording or table is reproduced; the report is an institutional account, not an independent legal ruling or public-opinion measure.',
+    accessDate: '2026-09-24', creators: ['United Nations Secretary-General'], institution: 'United Nations Security Council / BINUH',
+    publicationDate: '2026-01-15', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Secretary-General report to the UN Security Council', identifiers: { symbol: 'S/2026/31', pages: '16' },
+    description: 'Primary institutional chronology of Haiti’s transition and electoral preparations as of 15 January 2026, including disputes over arrangements after the Transitional Presidential Council. The report records the UN’s assessment and interlocutor positions, not a binding resolution of Haiti’s constitutional disagreements.'
+  },
+  {
+    id: 'haitiPostMoiseBinuhApr2026',
+    label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/325 (14 April 2026)',
+    url: 'https://digitallibrary.un.org/record/4109537',
+    note: 'Official UN Digital Library record for the Secretary-General’s report, consulted for its account of the post-7 February transition and inter-Haitian political initiatives. The report’s statements are attributed to the UN and cited interlocutors; no text or annex data are republished.',
+    accessDate: '2026-09-24', creators: ['United Nations Secretary-General'], institution: 'United Nations Security Council / BINUH',
+    publicationDate: '2026-04-14', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'Secretary-General report to the UN Security Council', identifiers: { symbol: 'S/2026/325', pages: '27' },
+    description: 'Reports the end of the Transitional Presidential Council mandate, transfer of executive power to the Council of Ministers under Prime Minister Alix Didier Fils-Aimé, continued debate over governance, a National Pact and electoral preparations. It documents the UN’s account and competing responses, not consensus or a court determination.'
+  },
+  {
+    id: 'haitiPostMoiseBinuhJul2026',
+    label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/574 (14 July 2026)',
+    url: 'https://documents.un.org/api/symbol/access?l=en&s=S%2F2026%2F574&t=pdf',
+    note: 'Official Security Council report consulted for the revised electoral decree, electoral budget and security/election context. No wording, tables or PDF pages are reproduced; this period report predates the CEP calendar published on 27 July and is not used to state the later schedule.',
+    accessDate: '2026-09-24', creators: ['United Nations Secretary-General'], institution: 'United Nations Security Council / BINUH',
+    publicationDate: '2026-07-14', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'Secretary-General report to the UN Security Council', identifiers: { symbol: 'S/2026/574', pages: '16' },
+    description: 'Dated UN account of political and security developments through July 2026, including a new electoral decree and budget revision. It predates the CEP’s 27 July calendar and is used for context, not as the latest electoral timetable.'
+  },
+  {
+    id: 'haitiPostMoiseCepLegalFramework2026',
+    label: 'Provisional Electoral Council of Haiti — electoral legal framework and 2026 decrees',
+    url: 'https://cephaiti.ht/cadre-legal/',
+    note: 'The CEP’s official legal-framework page identifies the 2 June 2026 electoral decree and a 2 July modifying decree. It is cited as the electoral body’s own legal-document index; no legal wording or scan is republished and the page is not treated as an independent judgment of the decrees’ validity.',
+    accessDate: '2026-09-24', creators: ['Conseil électoral provisoire (CEP)'], institution: 'Provisional Electoral Council of Haiti',
+    publicationDate: '2026-07-02', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral-law and decree index', identifiers: { decreeDate: '2026-06-02', amendmentDate: '2026-07-02' },
+    description: 'The official CEP page identifies the legal framework for voter registration, party accreditation, voting, tabulation, result proclamation and electoral disputes, and links a 2 July modifying decree. The official index establishes what the CEP identifies as its operative framework, not the completeness of implementation.'
+  },
+  {
+    id: 'haitiPostMoiseCepCalendar2026',
+    label: 'Provisional Electoral Council of Haiti — published 2026–2027 electoral calendar (27 July 2026)',
+    url: 'https://cephaiti.ht/2026/page/10/',
+    note: 'CEP archive page reproducing its 27 July calendar announcement. It states planned dates conditional on an acceptable security climate and sufficient funding. The announcement is linked and paraphrased independently; no calendar table is copied.',
+    accessDate: '2026-09-24', creators: ['Conseil électoral provisoire (CEP)'], institution: 'Provisional Electoral Council of Haiti',
+    publicationDate: '2026-07-27', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral-calendar announcement', identifiers: { firstRound: '2026-12-13', secondRound: '2027-02-21' },
+    description: 'The CEP’s 27 July announcement placed the first presidential and legislative round, together with a proposed constitutional-change ratification, on 13 December 2026, and a second round and territorial elections on 21 February 2027. The CEP explicitly conditioned these dates on security and funding; they are planned dates, not completed elections or an unconditional guarantee.'
+  },
+  {
+    id: 'haitiPostMoiseCepSep16Note2026',
+    label: 'Provisional Electoral Council of Haiti — Press Note 60 (16 September 2026)',
+    url: 'https://cephaiti.ht/note-de-presse-60-16-septembre-2026/',
+    note: 'CEP press note consulted for its extension of candidate-submission procedures and statement that discussions about a possible modification of the electoral decree continued. The note does not itself announce a replacement calendar; its institutional claims are attributed to the CEP.',
+    accessDate: '2026-09-24', creators: ['Conseil électoral provisoire (CEP)'], institution: 'Provisional Electoral Council of Haiti',
+    publicationDate: '2026-09-16', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral-administration press note', identifiers: { noteNumber: '60', filingExtensionThrough: '2026-10-09' },
+    description: 'The CEP granted approved political structures additional time through 9 October to complete candidate declarations and supporting documents, and said it was continuing discussions with political actors and government about a possible modification to the electoral decree. It does not state that the 27 July calendar had been formally replaced.'
+  },
+  {
+    id: 'haitiPostMoiseCepSep21Status2026',
+    label: 'Provisional Electoral Council of Haiti — electoral-process progress report (21 September 2026)',
+    url: 'https://cephaiti.ht/etat-davancement-du-processus-electoral-a-date/',
+    note: 'CEP progress statement dated 21 September, consulted for the Council’s own registration, center, party and candidate-platform figures. These are self-reported administrative metrics, not independently audited readiness measures; candidate filing remained open through 9 October.',
+    accessDate: '2026-09-24', creators: ['Conseil électoral provisoire (CEP)'], institution: 'Provisional Electoral Council of Haiti',
+    publicationDate: '2026-09-21', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral-administration progress statement', identifiers: { operationalCenters: '1285', registeredVoters: '628755', reportDate: '2026-09-21' },
+    description: 'The CEP reported 1,285 operational registration/voting centers, 628,755 registered voters, candidate submissions on its platform and training of registration, electoral-security and electoral-litigation personnel. These are figures reported by the administering body; the statement is not an independent security, access or election-readiness audit.'
+  },
+  {
+    id: 'haitiPostMoiseCaricomFeb2026',
+    label: 'CARICOM Conference of Heads of Government — statement on the end of Haiti’s Transitional Presidential Council (10 February 2026)',
+    url: 'https://caricom.org/statement-by-the-conference-of-heads-of-government-of-the-caribbean-community-caricom-end-of-the-transitional-presidential-council-in-haiti/',
+    note: 'Official CARICOM statement consulted for its attributed account of the Council’s departure and the Council of Ministers’ assumption of governance, and for CARICOM’s stated preference for Haitian-led and Haitian-owned dialogue. This is a regional diplomatic position, not proof of Haitian consensus.',
+    accessDate: '2026-09-24', creators: ['Conference of Heads of Government of the Caribbean Community'], institution: 'Caribbean Community (CARICOM)',
+    publicationDate: '2026-02-10', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official regional diplomatic statement', identifiers: { statementDate: '2026-02-10' },
+    description: 'CARICOM records that the Transitional Presidential Council stepped down at the end of its two-year tenure and Prime Minister Didier Fils-Aimé and the Council of Ministers assumed responsibility for governance. Its call for an inclusive, Haitian-led process is an institutional position, not evidence that all Haitian actors agreed.'
+  },
+  {
+    id: 'haitiPostMoiseChathamPoll2026',
+    label: 'Christopher Sabatini — What Haitians want from the next phase of UN and international support: May 2026 national survey',
+    url: 'https://www.chathamhouse.org/2026/08/what-haitians-want-next-phase-un-and-international-support/introduction',
+    note: 'Chatham House research paper and its stated survey methodology consulted. The 1,332-adult survey was conducted in Haitian Creole across the ten departments, but fieldwork was suspended in gang-controlled territories and weights were used to address displacement and sample imbalance. It is evidence about its designed sample, not a proxy for inaccessible people or every Haitian.',
+    accessDate: '2026-09-24', creators: ['Christopher Sabatini'], institution: 'Chatham House / Q-Q Research Consultants',
+    publicationDate: '2026-08-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Haitian Creole'],
+    sourceType: 'policy research paper reporting a national in-person public-opinion survey', identifiers: { isbn: '9781784136895', respondents: '1332', fieldwork: '2026-05-05/2026-05-21' },
+    description: 'Reports a May 2026 in-person survey of 1,332 adults in Haitian Creole across ten departments. Its findings identify security, elections, education and health care as major stated priorities and report mixed views of the Gang Suppression Force. The paper describes fieldwork exclusions in gang-controlled areas and displacement-related weighting; no one response is attributed to all Haitians.'
+  },
+  {
+    id: 'haitiPostMoiseGuerrier2025',
+    label: 'Eland Guerrier — La crise politique haïtienne: Analyse structurelle des causes et des facteurs',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/la-crise-politique-haitienne/78312',
+    note: 'L’Harmattan publisher record consulted for title, author, date, ISBN, length and publisher-described scope; the complete monograph was not consulted. The author’s own structural interpretation is not treated as a consensus statement or independent fact-check of later events.',
+    accessDate: '2026-09-24', creators: ['Eland Guerrier'], institution: 'Éditions L’Harmattan',
+    publicationDate: '2025-02-27', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length political and constitutional analysis', identifiers: { isbn: '9782336499000', pages: '262' },
+    description: 'A recent French-language monograph whose publisher describes a structural analysis of Haiti’s prolonged political crisis and institutional and intellectual context. The author’s academic and political-advisory roles are visible on the publisher record; its publisher synopsis is catalog metadata, not a reviewed argument or a neutral consensus.'
+  },
+  {
+    id: 'haitiPostMoiseFleurimond2024',
+    label: 'Wiener Kerns Fleurimond — De l’opposition à l’assassinat d’un chef d’État: Haïti, 220 ans de tragédie politique',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/de-l-8217-opposition-a-l-8217-assassinat-d-8217-un-chef-d-8217-etat/76149',
+    note: 'L’Harmattan publisher record consulted for bibliographic metadata and the author’s described journalistic/political-commentary background; the full book was not consulted. Publisher description supports only its stated scope and standpoint, not an independently verified account of the assassination or the post-2021 transition.',
+    accessDate: '2026-09-24', creators: ['Wiener Kerns Fleurimond'], institution: 'Éditions L’Harmattan',
+    publicationDate: '2024-07-25', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length political history and commentary', identifiers: { isbn: '9782336404592', pages: '452' },
+    description: 'A French-language political history published after the July 2021 assassination of President Jovenel Moïse. The publisher presents it as examining political opposition and struggles for power; the work’s full analysis was not consulted and is not used to establish disputed facts.'
+  },
+  {
+    id: 'haitiPostMoiseJohnston2024',
+    label: 'Jake Johnston — Aid State: Elite Panic, Disaster Capitalism, and the Battle to Control Haiti',
+    url: 'https://us.macmillan.com/books/9781250284686/aidstate/',
+    note: 'Macmillan publisher record consulted for bibliographic metadata and stated scope; the complete monograph was not consulted. Its critical account of international aid and intervention is recorded as a distinct authorial perspective, not adopted as neutral consensus or as direct evidence of the 2024–26 transition.',
+    accessDate: '2026-09-24', creators: ['Jake Johnston'], institution: 'St. Martin’s Press / Macmillan',
+    publicationDate: '2024-01-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length reported political-economy study', identifiers: { isbn: '9781250284686', hardcoverIsbn: '9781250284679', pages: '304' },
+    description: 'A book-length critical study of international aid, intervention and political economy in Haiti, described by its publisher as drawing on reporting and interviews. It offers a distinct authorial perspective on international actors; the full text was not consulted and it predates the current transition chronology.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
@@ -9630,6 +9753,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
          : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('longTantricStateBhutan') || source.id.startsWith('rizalRoyalSemiauthoritarianBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
       : source.id.startsWith('afghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') ? 'Afghan constitutional, conflict and political history'
       : source.id.startsWith('nepal') || source.id.startsWith('whelptonHistoryNepal') || source.id.startsWith('huttHimalayanPeoplesWar') || source.id.startsWith('malagodiConstitutionalNationalismNepal') || source.id.startsWith('huttOntaPublicCultureNepal') || source.id.startsWith('ghaiCottrellNepal') ? 'Nepalese constitutional, conflict and political history'
+      : source.id.startsWith('haitiPostMoise') ? 'Haitian post-Moïse transition, electoral administration and political history'
       : source.id.startsWith('southSudan') ? 'South Sudanese constitutional, peace-agreement, conflict and electoral-transition history'
       : source.id.startsWith('sudan') || source.id.startsWith('woodwardSudan') || source.id.startsWith('berridgeCivilUprisingsSudan') || source.id.startsWith('berridgeUnfinishedDemocracy') || source.id.startsWith('deWaalRealPoliticsHorn') || source.id.startsWith('oetteBabikerConstitutionMaking') ? 'Sudanese constitutional, conflict and political history'
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
