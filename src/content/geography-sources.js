@@ -6626,13 +6626,114 @@ const sources = [
     sourceType: 'book-length comparative study of democratic change and Ecuadorian politics', identifiers: { isbn: '9789978675908', pdfIsbn: '9789978675915', pages: '172', publisher: 'FLACSO Ecuador', doi: '10.46546/2021-24atrio' },
     description: 'Comparative book-length study of the political turn to the left, hybrid-regime debate and democratic-quality decline in South America, with Ecuador as a principal reference case. It supplies a later political-science lens on the Citizens’ Revolution and democratic institutions without establishing a complete social, regional or post-2021 history.'
   },
+  {
+    id: 'moldovaCecParliamentaryResults2025',
+    label: 'Central Electoral Commission of the Republic of Moldova — official results, parliamentary elections of 28 September 2025',
+    url: 'https://diaspora.cec.md/ro/alegeri/alegeri-parlamentare-28-septembrie-2025-2025/rezultate-alegeri',
+    note: 'Official cumulative results and allocation of the 101 parliamentary mandates, approved 5 October 2025 and sent to the Constitutional Court on 6 October. Romanian-language page consulted for an independent summary and link only; no result table or text is republished.',
+    accessDate: '2026-09-24', creators: ['Comisia Electorală Centrală a Republicii Moldova'], institution: 'Central Electoral Commission of the Republic of Moldova',
+    publicationDate: '2025-10-05', evidenceRole: 'primary', confidence: 'high', languages: ['Romanian'],
+    sourceType: 'official consolidated election results / electoral commission record', identifiers: { electionDate: '2025-09-28', decisionDate: '2025-10-05' },
+    description: 'Primary electoral record for the final vote aggregation, five qualifying contestants, mandate allocation and voter participation. It records the Commission’s official result and is not an independent observation of the process.'
+  },
+  {
+    id: 'moldovaConstitutionalCourtElection2025',
+    label: 'Constitutional Court of the Republic of Moldova — Judgment no. 12 of 16 October 2025, parliamentary election results and mandates',
+    url: 'https://new.constcourt.md/ccdocview.php?docid=882&l=ro&tip=hotariri',
+    note: 'Official Romanian-language judgment confirming the 28 September election results and validating the elected deputies’ mandates. Used for an independent legal and procedural summary and link only; no judgment wording, translation or scanned page is republished.',
+    accessDate: '2026-09-24', creators: ['Curtea Constituțională a Republicii Moldova'], institution: 'Constitutional Court of the Republic of Moldova',
+    publicationDate: '2025-10-16', evidenceRole: 'primary', confidence: 'high', languages: ['Romanian'],
+    sourceType: 'constitutional-court judgment / official election validation', identifiers: { judgment: 'No. 12', judgmentDate: '2025-10-16', electionDate: '2025-09-28' },
+    description: 'Primary judicial record of the Court’s confirmation of the results and validation of all 101 parliamentary mandates, including procedural history and objections considered in the validation proceeding.'
+  },
+  {
+    id: 'moldovaOdihrParliamentaryElection2025',
+    label: 'OSCE/ODIHR Election Observation Mission — Republic of Moldova Parliamentary Elections, 28 September 2025: Final Report (18 February 2026)',
+    url: 'https://odihr.osce.org/sites/default/files/documents/official_documents/2026/02/MLD%20Parliamentary%202025%20Final%20Report_18.02.2025_ENG.pdf',
+    note: 'Official English-language final report by the OSCE Office for Democratic Institutions and Human Rights, published 18 February 2026 (the downloadable filename retains “18.02.2025”). The international observation mission also included OSCE PA, PACE and European Parliament delegations. Used for attributed observation and analysis; no report text, table or PDF page is republished.',
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe',
+    publicationDate: '2026-02-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation mission final report', identifiers: { electionDate: '2025-09-28', reportDate: '2026-02-18', pages: '49' },
+    description: 'First-hand international observation of the electoral process. The report describes a competitive election and professionally managed preparations while documenting serious foreign interference, illicit financing, cyberattacks and disinformation, legal changes affecting certainty, late party-eligibility decisions and uneven voting-access concerns. Allegations and attribution remain attributed to the report and its cited actors.'
+  },
+  {
+    id: 'moldovaPromoLexParliamentaryElection2025',
+    label: 'Promo-LEX Election Observation Mission — Final Report, parliamentary elections of 28 September 2025 (28 January 2026)',
+    url: 'https://promolex.md/en/summary-report-observation-mission-for-the-parliamentary-elections-of-28-september-2025/',
+    note: 'Final report page of the Moldovan civil-society election observation mission, dated 28 January 2026. Consulted as a separate citizen-observation perspective and link only; no report text, translation, tables or PDF pages are republished. Promo-LEX observation is not a criminal investigation or a substitute for adjudicated findings.',
+    accessDate: '2026-09-24', creators: ['Promo-LEX Association, Election Observation Mission'], institution: 'Promo-LEX Association',
+    publicationDate: '2026-01-28', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Romanian'],
+    sourceType: 'domestic civil-society election observation final report', identifiers: { electionDate: '2025-09-28', reportDate: '2026-01-28' },
+    description: 'Independent domestic observation record used to triangulate election administration, campaign conduct, access and complaints. Its observations and allegations are attributed rather than treated as universal or adjudicated findings.'
+  },
+  {
+    id: 'moldovaParliamentConstitutionalTransition2025',
+    label: 'Parliament of the Republic of Moldova — first sitting of the 12th legislature and election of Speaker Igor Grosu (22 October 2025)',
+    url: 'https://multimedia.parlament.md/igor-grosu-a-fost-ales-presedinte-al-parlamentului/',
+    note: 'Official Parliament record of the first sitting of the 12th legislature and election of the Speaker, including the 55-vote total. Used for a procedural summary and link only; no official prose, photograph or document is republished.',
+    accessDate: '2026-09-24', creators: ['Parliament of the Republic of Moldova, Directorate for Communication and Public Relations'], institution: 'Parliament of the Republic of Moldova',
+    publicationDate: '2025-10-23', evidenceRole: 'primary', confidence: 'high', languages: ['Romanian'],
+    sourceType: 'official parliamentary record / legislature formation', identifiers: { legislature: 'XII', sittingDate: '2025-10-22' },
+    description: 'Primary parliamentary record of the new legislature’s first sitting and election of its Speaker, Igor Grosu, with 55 votes. Formal constitution and leadership do not establish the policy performance or representativeness of the legislature.'
+  },
+  {
+    id: 'moldovaGovernmentInvestiture2025',
+    label: 'Government of the Republic of Moldova — Cabinet Alexandru Munteanu invested and sworn in (31 October–1 November 2025)',
+    url: 'https://gov.md/ro/comunicate-de-presa/cabinetul-munteanu-fost-investit-de-parlament-prim-ministrul-alexandru-munteanu',
+    note: 'Official government record of Parliament’s confidence vote on 31 October 2025 (55 votes) and approval of the “EU, Peace, Development” programme; the Cabinet oath is recorded in a separate government release on 1 November. Government self-description is not independent evidence of programme implementation or outcomes.',
+    accessDate: '2026-09-24', creators: ['Government of the Republic of Moldova'], institution: 'Government of the Republic of Moldova',
+    publicationDate: '2025-10-31', evidenceRole: 'primary', confidence: 'high', languages: ['Romanian'],
+    sourceType: 'official government formation and investiture record', identifiers: { confidenceVoteDate: '2025-10-31', oathDate: '2025-11-01', votes: '55' },
+    description: 'Primary executive record for the post-election cabinet transition and the programme adopted at investiture. Policy claims are recorded as government statements, not independently established achievements.'
+  },
+  {
+    id: 'moldovaEuropeanCommissionCountryReport2025',
+    label: 'European Commission — Moldova Report 2025, Commission Staff Working Document SWD(2025) 758 final',
+    url: 'https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52025SC0758',
+    note: 'European Commission staff assessment used for dated accession and governance context and for cross-checking the observer findings. It reflects the Commission’s institutional perspective; no report text or tables are republished.',
+    accessDate: '2026-09-24', creators: ['European Commission'], institution: 'European Commission',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'European Commission country report / accession assessment', identifiers: { documentNumber: 'SWD(2025) 758 final', celex: '52025SC0758' },
+    description: 'Institutional assessment of Moldova’s accession-related reforms and political context in 2025. Its conclusions are attributed to the Commission and do not replace domestic records or independent observation.'
+  },
+  {
+    id: 'moldovaKingPoliticsOfCulture2000',
+    label: 'Charles King — The Moldovans: Romania, Russia, and the Politics of Culture (Hoover Institution Press, 2000)',
+    url: 'https://www.hoover.org/research/moldovans-romania-russia-and-politics-culture',
+    note: 'Hoover Institution Press/publisher catalogue record and bibliographic details for the English-language monograph (2000; 303 pages; ISBN 9780817997922). Used as long-range contextual scholarship on state formation and identity politics, not as a study of the 2025 election; original synthesis and link only.',
+    accessDate: '2026-09-24', creators: ['Charles King'], institution: 'Hoover Institution Press',
+    publicationDate: '2000', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national and political history', identifiers: { isbn: '9780817997922', pages: '303', publisher: 'Hoover Institution Press' },
+    description: 'Book-length study of Moldovan state and national formation, Russian, Romanian and Soviet cultural influences, identity politics and the uses of language and history. Its chronological endpoint predates the 2025 contest by decades.'
+  },
+  {
+    id: 'moldovaRoperSince1989Chapter2010',
+    label: 'Steven D. Roper — “Moldova since 1989,” in Central and Southeast European Politics since 1989 (Cambridge University Press, 2010), pp. 473–492',
+    url: 'https://doi.org/10.1017/CBO9780511803185.025',
+    note: 'Cambridge University Press chapter record: Steven D. Roper, in Sabrina P. Ramet (ed.), Central and Southeast European Politics since 1989, pp. 473–492 (2010), DOI 10.1017/CBO9780511803185.025. Abstract and bibliographic record consulted; full chapter access was not established. Used for a bounded institutional and Europeanization perspective through 2009 only.',
+    accessDate: '2026-09-24', creators: ['Steven D. Roper'], institution: 'Cambridge University Press',
+    publicationDate: '2010', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited-volume chapter on post-Soviet political development', identifiers: { doi: '10.1017/CBO9780511803185.025', pages: '473–492', editor: 'Sabrina P. Ramet', bookIsbn: '9780521888103' },
+    description: 'Scholarly chapter on post-1989 Moldovan political development, democratization, Europeanization and the unrecognized Transnistrian region. Its period and scope predate the 2025 election and do not support contemporary claims.'
+  },
+  {
+    id: 'moldovaGriffinStateCapture2024',
+    label: 'Aoife Griffin — State Capture in Moldova: The Role of the European Union (Tectum, 2024)',
+    url: 'https://www.nomos-shop.de/en/p/state-capture-in-moldova-gr-978-3-68900-119-3',
+    note: 'Publisher record for the English-language research monograph (Tectum, 30 August 2024; 74 pages; print ISBN 978-3-68900-119-3; eISBN 978-3-68900-120-9). Used as a focused, attributed account of state capture and EU engagement from 2009 through its pre-election publication horizon; not an account of the 2025 election. Original paraphrase and link only.',
+    accessDate: '2026-09-24', creators: ['Aoife Griffin'], institution: 'Tectum / Nomos',
+    publicationDate: '2024-08-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length research monograph on state capture and EU policy', identifiers: { isbn: '9783689001193', ebookIsbn: '9783689001209', pages: '74', series: 'Young Academics: EU Studies' },
+    description: 'Focused monograph on oligarchic state capture, Moldova’s democratic transition and the European Union’s response. The author’s analysis is distinct from King’s longer identity/state-formation history and Roper’s institutional account; it predates the 2025 election.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
+  discipline: source.id.startsWith('moldova') ? 'Moldovan parliamentary, electoral, constitutional and political history'
+    : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'

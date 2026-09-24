@@ -6,8 +6,12 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 111);
-assert.equal(GEOGRAPHY_LABELS.length, 109);
+assert.equal(GEOGRAPHY_CASES.length, 112);
+assert.equal(GEOGRAPHY_LABELS.length, 110);
+assert.equal(filterGeographyCases({ country: 'map-498' })[0].id, 'moldovan-2025-parliamentary-election-and-government-transition');
+assert.equal(filterGeographyCases({ case: 'moldovan-2025-parliamentary-election-and-government-transition' })[0].endYear, 2025);
+assert.equal(GEOGRAPHY_LABELS.find(({ id }) => id === 'moldovan-2025-parliamentary-election-and-government-transition')?.scores, undefined, 'the election case is not a scored profile');
+assert.match(GEOGRAPHY_LABELS.find(({ id }) => id === 'moldovan-2025-parliamentary-election-and-government-transition').description, /does not convert any party, campaign frame or election outcome into an ideology of Moldova/);
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
@@ -99,4 +103,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 111 dated cases, 109 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 112 dated cases, 110 unscored labels, citations, boundaries, filters and share URLs.');

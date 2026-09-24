@@ -20,6 +20,12 @@ test('country paths filter, persist and handle newly researched countries', asyn
   await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('brazil');
   await page.goBack();
   await expect(map.getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
+  const moldova = map.getByRole('button', { name: /Moldova: 1 matching case/ });
+  await moldova.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('.geo-card')).toHaveCount(1);
+  await expect(page.locator('.geo-card')).toContainText('Moldovan 2025 parliamentary election and government transition');
+  await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('map-498');
   expect(errors).toEqual([]);
 });
 
