@@ -9466,6 +9466,139 @@ sources.push(
   },
 );
 
+sources.push(
+  {
+    id: 'southSudanTransitionalConstitution2011',
+    label: 'Republic of South Sudan — Transitional Constitution (2011), Ministry of Justice copy',
+    url: 'https://www.mojca.gov.ss/wp-content/uploads/2023/03/Transitional-Constitution-of-the-Republic-of-South-Sudan-2011.pdf',
+    note: 'Ministry of Justice-hosted constitutional text used as a formal legal framework and link only. No constitutional wording, translation, scan or PDF page is republished; the text records formal design rather than implementation or political consent.',
+    accessDate: '2026-09-24', creators: ['Republic of South Sudan'], institution: 'Ministry of Justice and Constitutional Affairs of South Sudan',
+    publicationDate: '2011', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official transitional constitution / primary legal text', identifiers: { year: '2011' },
+    description: 'Primary constitutional framework for the independent Republic of South Sudan. It establishes formal institutions and rights but does not establish their later implementation or resolve the status of subsequent amendments.'
+  },
+  {
+    id: 'southSudanRarcss2018',
+    label: 'Parties to the South Sudan peace process — Revitalized Agreement on the Resolution of the Conflict in the Republic of South Sudan (R-ARCSS, 2018)',
+    url: 'https://docs.pca-cpa.org/2016/02/South-Sudan-Peace-Agreement-September-2018.pdf',
+    note: 'The 2018 signed agreement is consulted as a primary text through the Peace Agreements Database of the Peace Palace Library and used for independent summary and link only. No agreement wording or scan is republished; formal commitments are distinguished from implementation and the signatories’ later disputes.',
+    accessDate: '2026-09-24', creators: ['Parties to the South Sudan peace process'], institution: 'Intergovernmental Authority on Development / Peace Agreements Database',
+    publicationDate: '2018-09-12', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'peace agreement / primary transitional and conflict-settlement text', identifiers: { signingDate: '2018-09-12', acronym: 'R-ARCSS' },
+    description: 'Primary agreement text setting the revitalized peace and transitional framework. It documents formal commitments and institutions, not their fulfillment, the consent of every South Sudanese community or the future conduct of the scheduled election.'
+  },
+  {
+    id: 'southSudanIgadExtension2024',
+    label: 'IGAD Executive Secretary — statement on the South Sudan transitional-period extension (23 September 2024)',
+    url: 'https://igad.int/igad-executive-secretarys-statement-on-the-extension-of-south-sudans-transitional-period-and-call-for-renewed-efforts-in-implementing-the-revitalised-peace-agreement/',
+    note: 'IGAD statement consulted for its dated account of the agreed transition and election extension. It identifies IGAD as R-ARCSS guarantor and a regional mediator; its characterization of consensus is the organization’s diplomatic account, not an independent assessment of every party or citizen’s agreement.',
+    accessDate: '2026-09-24', creators: ['Workneh Gebeyehu', 'Intergovernmental Authority on Development'], institution: 'IGAD',
+    publicationDate: '2024-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'regional organization statement on a peace-agreement extension', identifiers: { extension: '24 months', transitionEnd: '2027-02', electionRescheduledTo: '2026-12', reportedExtensionNumber: 'fourth' },
+    description: 'Contemporaneous regional organization account that the transitional period was extended from February 2025 to February 2027 and elections moved from December 2024 to December 2026. This records IGAD’s statement and role, not a full implementation audit.'
+  },
+  {
+    id: 'southSudanRjmecQuarterly2025',
+    label: 'Reconstituted Joint Monitoring and Evaluation Commission — quarterly report on R-ARCSS implementation, fourth quarter 2025',
+    url: 'https://jmecsouthsudan.org/index.php/reports/rjmec-quarterly-reports/271-rjmec-quarterly-report-on-the-status-of-implementation-of-the-r-arcss-from-1st-october-to-31st-december-2025/file',
+    note: 'RJMEC monitoring report consulted as the agreement’s formal implementation body’s dated assessment. It is an institutional monitoring source, not an independent court ruling or a representative survey; its findings are bounded to the reporting period and assigned mandate.',
+    accessDate: '2026-09-24', creators: ['Reconstituted Joint Monitoring and Evaluation Commission'], institution: 'RJMEC',
+    publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official peace-agreement implementation monitoring report', identifiers: { reportingPeriod: '2025-10-01 to 2025-12-31' },
+    description: 'Quarterly monitor’s account of R-ARCSS implementation and electoral preconditions at the end of 2025. It supplies a dated institutional assessment, not evidence that every listed obstacle persisted unchanged through September 2026.'
+  },
+  {
+    id: 'southSudanAuPsc1364Communique2026',
+    label: 'African Union Peace and Security Council — Communiqué 1364 on developments in South Sudan (26 August 2026)',
+    url: 'https://retrievedfromwww.peaceau.org/en/article/communique-of-the-1364th-psc-meeting-held-on-26-august-2026-on-briefing-on-the-latest-developments-in-south-sudan',
+    note: 'Official AU Peace and Security Council communiqué consulted for the Council’s dated diplomatic assessment and calls. It records an institutional position rather than an independent election audit; its statements about security, political dialogue, funding and inclusion are attributed to the Council.',
+    accessDate: '2026-09-24', creators: ['African Union Peace and Security Council'], institution: 'African Union',
+    publicationDate: '2026-08-26', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official regional peace-and-security communiqué', identifiers: { meeting: '1364th PSC meeting', meetingDate: '2026-08-26' },
+    description: 'The Council notes the 22 December 2026 election commitment and reports party registrations, funding and administrative shortfalls, security fragility and a failed planned dialogue; it calls for inclusion, civic space, security, dispute mechanisms and participation. These are dated AU assessments and requests, not proof of nationwide conditions or public opinion.'
+  },
+  {
+    id: 'southSudanNecVoterRegistration2026',
+    label: 'National Elections Commission — statement on false voter-registration reports (2 September 2026)',
+    url: 'https://nec.gov.ss/press-statement-on-false-reports-about-voter-registration/',
+    note: 'NEC press statement consulted as the electoral commission’s own account of its registration records and preparations. It directly records the Commission’s position that registration had not started and no electoral register existed; this institutional statement does not independently audit all logistical readiness or guarantee that the future date will be met.',
+    accessDate: '2026-09-24', creators: ['National Elections Commission of South Sudan'], institution: 'National Elections Commission of South Sudan',
+    publicationDate: '2026-09-02', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election commission public statement', identifiers: { statementDate: '2026-09-02', scheduledPollingDate: '2026-12-22' },
+    description: 'The Commission states that voter registration had not begun and no electoral register or official registration figures existed as of 2 September 2026; it says registration and the 22 December poll remained planned. This is a dated commission record, not an election result or readiness certification.'
+  },
+  {
+    id: 'southSudanSsbcElectionActPassage2026',
+    label: 'South Sudan Broadcasting Corporation — account of passage of the National Elections Act amendment bill (21 September 2026)',
+    url: 'https://ssbc.gov.ss/news-detail.php?cat=news&id=823',
+    note: 'State broadcaster report consulted as an official-media account of legislative proceedings, not as the bill or a parliamentary transcript. Its assembly-size figure differs from SSBC’s same-day assent report; no figure from either report is treated as established until the enacted primary text is located.',
+    accessDate: '2026-09-24', creators: ['South Sudan Broadcasting Corporation'], institution: 'South Sudan Broadcasting Corporation',
+    publicationDate: '2026-09-21', evidenceRole: 'contextual', confidence: 'medium', languages: ['English'],
+    sourceType: 'state-broadcaster report of legislative proceedings', identifiers: { bill: 'National Elections Act, 2012 (Amendment) Bill, 2026', reportDate: '2026-09-21' },
+    description: 'State-media report that the legislature passed the bill and that it was sent for presidential assent. Because it is not the bill text and reports a membership figure different from the same-day assent notice, it supports only an attributed chronology.'
+  },
+  {
+    id: 'southSudanSsbcElectionActAssent2026',
+    label: 'South Sudan Broadcasting Corporation — account of presidential assent to the National Elections Act amendment (21 September 2026)',
+    url: 'https://www.ssbc.gov.ss/news-detail.php?cat=news&id=822',
+    note: 'State broadcaster report consulted for its attributed account of presidential assent and the government’s stated legal changes. The amended statute itself was not located; another same-day SSBC report gives a different National Legislative Assembly size, so contested membership details are omitted and the legal effects remain attributed to the broadcaster.',
+    accessDate: '2026-09-24', creators: ['South Sudan Broadcasting Corporation'], institution: 'South Sudan Broadcasting Corporation',
+    publicationDate: '2026-09-21', evidenceRole: 'contextual', confidence: 'medium', languages: ['English'],
+    sourceType: 'state-broadcaster report of presidential assent to electoral legislation', identifiers: { reportedAssentDate: '2026-09-21', bill: 'National Elections Act, 2012 (Amendment) Bill, 2026' },
+    description: 'SSBC reports assent to an election-law amendment, describes elections as delinked from the permanent constitution and census, and says incumbent executive leaders remain in office until an elected president assumes office. This is an attributed report of law, not a substitute for the missing Gazette or statute text.'
+  },
+  {
+    id: 'southSudanApNecChair2026',
+    label: 'Associated Press — NEC chairperson replaced ahead of planned South Sudan election (16 September 2026)',
+    url: 'https://apnews.com/article/south-sudan-election-president-salva-kiir-1c2cadb70c3e22d120de41be7684d6e0',
+    note: 'Associated Press report consulted for independently reported chronology and attributed legal analysis. No article wording or image is reproduced; analysts’ interpretations of the National Elections Act are attributed and are not presented as a court decision.',
+    accessDate: '2026-09-24', creators: ['Deng Machol', 'The Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-09-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report with attributed legal and political analysis', identifiers: { publicationDate: '2026-09-16' },
+    description: 'Reports the replacement of NEC chair Abednego Akok Kacuol by Gabriel Bol Deng Majok, the absence of a publicly stated reason in the announcement, and South Sudanese analysts’ concerns about statutory process and election preparation. These concerns are attributed, not judicial findings.'
+  },
+  {
+    id: 'southSudanApTransitionDissolution2026',
+    label: 'Associated Press — transitional institutions dissolved ahead of South Sudan’s planned December election (22 September 2026)',
+    url: 'https://apnews.com/article/south-sudan-elections-transitional-government-dissolved-de4306bb7092c6142741e5a899051154',
+    note: 'Associated Press report consulted for its account of the 22 September decree and attributed stakeholder reactions. The decree text was not independently located; AP’s reporting is used for chronology and explicitly attributed reactions, not to establish constitutionality or popular consent.',
+    accessDate: '2026-09-24', creators: ['Deng Machol', 'Joseph Falzetta', 'The Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-09-22', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report of executive decree and attributed reactions', identifiers: { reportedDecreeDate: '2026-09-22', scheduledElectionDate: '2026-12-22' },
+    description: 'Reports dissolution of the transitional government, national legislature, state governments and assemblies, and authorities in three administrative areas, with caretaker ministers appointed and the incumbent president remaining during the election period. It also records attributed rights-group and analyst concerns; the decree text and legal interpretation require primary verification.'
+  },
+  {
+    id: 'southSudanRoachFatefulStruggle2023',
+    label: 'Steven C. Roach — South Sudan’s Fateful Struggle: Building Peace in a State of War',
+    url: 'https://academic.oup.com/book/49417',
+    note: 'Oxford University Press publisher record and abstract consulted for bibliographic metadata and the book’s stated scope; the complete monograph was not consulted. It supplies historical interpretation of South Sudan’s pre- and post-civil-war political struggle, not evidence about the 2024–26 events. No book wording, quotation, table or scan is republished.',
+    accessDate: '2026-09-24', creators: ['Steven C. Roach'], institution: 'Oxford University Press',
+    publicationDate: '2023-09-28', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly political history', identifiers: { doi: '10.1093/oso/9780190057848.001.0001', printIsbn: '9780190057848', onlineIsbn: '9780190057879' },
+    description: 'OUP monograph on South Sudan’s state and post-civil-war political struggle, including party politics, patronage, peacebuilding, justice and civil society. Its publisher record and abstract provide context only; it predates the selected electoral-transition period.'
+  },
+  {
+    id: 'southSudanDayStatesDisorder2022',
+    label: 'Adam Day — States of Disorder, Ecosystems of Governance: Complexity Theory Applied to UN Statebuilding in the DRC and South Sudan',
+    url: 'https://academic.oup.com/book/41855',
+    note: 'Oxford University Press record and abstract consulted for bibliographic metadata and stated analytical scope; the complete monograph was not consulted. It provides a distinct study of UN statebuilding and governance in South Sudan and the DRC, not direct evidence about the 2024–26 transition. No book wording or figures are reproduced.',
+    accessDate: '2026-09-24', creators: ['Adam Day'], institution: 'Oxford University Press',
+    publicationDate: '2022-04-21', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly study of international statebuilding', identifiers: { doi: '10.1093/oso/9780192863898.001.0001', printIsbn: '9780192863898', onlineIsbn: '9780191954498' },
+    description: 'OUP monograph applying an ecosystem and complexity perspective to UN statebuilding in South Sudan and the Democratic Republic of the Congo. It is a distinct international-institutions perspective and predates this case.'
+  },
+  {
+    id: 'southSudanNouwenJamesSrinivasanPeace2020',
+    label: 'Sarah M. H. Nouwen, Laura M. James and Sharath Srinivasan (eds.) — Making and Breaking Peace in Sudan and South Sudan: The Comprehensive Peace Agreement and Beyond',
+    url: 'https://academic.oup.com/british-academy-scholarship-online/book/37560',
+    note: 'British Academy/Oxford Academic publisher record and abstract consulted for the edited volume’s metadata, contributors and stated scope; the complete volume was not consulted. Its chapters address peacemaking and conflict through the CPA-era and do not document the 2024–26 election transition. No chapter text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Sarah M. H. Nouwen (editor)', 'Laura M. James (editor)', 'Sharath Srinivasan (editor)'], institution: 'British Academy / Oxford University Press',
+    publicationDate: '2020-12-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume on peacemaking in Sudan and South Sudan', identifiers: { doi: '10.5871/bacad/9780197266953.001.0001', printIsbn: '9780197266953', onlineIsbn: '9780191938191' },
+    description: 'Edited scholarly volume by practitioners and researchers examining competing ideas and practices of peace, the CPA and later conflicts in Sudan and South Sudan. It contributes a distinct legal, economic, anthropological and political-science context, but predates the present case.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
@@ -9497,6 +9630,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
          : source.id.startsWith('phuntshoHistoryBhutan') || source.id.startsWith('kingaDemocraticTransitionBhutan') || source.id.startsWith('longTantricStateBhutan') || source.id.startsWith('rizalRoyalSemiauthoritarianBhutan') || source.id.startsWith('bhutan') || source.id.startsWith('dorjiProgressive') || source.id.startsWith('whitecrossBhutan') || source.id.startsWith('iyerBhutan') || source.id.startsWith('botheBhutan') ? 'Bhutanese constitutional transition and political history'
       : source.id.startsWith('afghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') ? 'Afghan constitutional, conflict and political history'
       : source.id.startsWith('nepal') || source.id.startsWith('whelptonHistoryNepal') || source.id.startsWith('huttHimalayanPeoplesWar') || source.id.startsWith('malagodiConstitutionalNationalismNepal') || source.id.startsWith('huttOntaPublicCultureNepal') || source.id.startsWith('ghaiCottrellNepal') ? 'Nepalese constitutional, conflict and political history'
+      : source.id.startsWith('southSudan') ? 'South Sudanese constitutional, peace-agreement, conflict and electoral-transition history'
       : source.id.startsWith('sudan') || source.id.startsWith('woodwardSudan') || source.id.startsWith('berridgeCivilUprisingsSudan') || source.id.startsWith('berridgeUnfinishedDemocracy') || source.id.startsWith('deWaalRealPoliticsHorn') || source.id.startsWith('oetteBabikerConstitutionMaking') ? 'Sudanese constitutional, conflict and political history'
       : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, conflict and political history'
       : source.id.startsWith('kenya') || source.id.startsWith('maxonKenya') || source.id.startsWith('branchKenya') || source.id.startsWith('cheesemanOxfordHandbookKenya') || source.id.startsWith('hornsbyKenya') || source.id.startsWith('murungaStruggleNewConstitution') ? 'Kenyan decolonization, constitutional, electoral and devolution history'
