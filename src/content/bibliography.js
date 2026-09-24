@@ -4,6 +4,17 @@ import { GEOGRAPHY_SOURCE_METADATA } from './geography-sources.js';
 // Missing bibliographic facts stay null instead of being inferred from a URL.
 export const BIBLIOGRAPHY_METADATA = {
   ...GEOGRAPHY_SOURCE_METADATA,
+  indiaWomenReservationAmendment2023: { ...GEOGRAPHY_SOURCE_METADATA.indiaWomenReservationAmendment2023, discipline: 'Indian constitutional and gender-representation history' },
+  indiaWomenReservationCommencement2026: { ...GEOGRAPHY_SOURCE_METADATA.indiaWomenReservationCommencement2026, discipline: 'Indian constitutional and gender-representation history' },
+  india131stAmendmentBill2026: { ...GEOGRAPHY_SOURCE_METADATA.india131stAmendmentBill2026, discipline: 'Indian constitutional, federal and electoral-boundary politics' },
+  indiaDelimitationBill2026: { ...GEOGRAPHY_SOURCE_METADATA.indiaDelimitationBill2026, discipline: 'Indian constitutional, federal and electoral-boundary politics' },
+  indiaParliamentDebateApril2026: { ...GEOGRAPHY_SOURCE_METADATA.indiaParliamentDebateApril2026, discipline: 'Indian parliamentary and constitutional politics' },
+  indiaGovernmentDelimitationPosition2026: { ...GEOGRAPHY_SOURCE_METADATA.indiaGovernmentDelimitationPosition2026, discipline: 'Indian parliamentary and constitutional politics' },
+  indiaParliamentOutcome2026: { ...GEOGRAPHY_SOURCE_METADATA.indiaParliamentOutcome2026, discipline: 'Indian parliamentary and constitutional politics' },
+  indiaParliamentBillDocket2026: { ...GEOGRAPHY_SOURCE_METADATA.indiaParliamentBillDocket2026, discipline: 'Indian parliamentary and constitutional politics' },
+  alamSivaramakrishnanElectoralBoundariesIndia2015: { ...GEOGRAPHY_SOURCE_METADATA.alamSivaramakrishnanElectoralBoundariesIndia2015, discipline: 'Indian electoral-boundary and constitutional studies' },
+  paiThoratPoliticsRepresentationIndia2022: { ...GEOGRAPHY_SOURCE_METADATA.paiThoratPoliticsRepresentationIndia2022, discipline: 'Indian gender representation and democratic politics' },
+  indiaDelimitationFollowupSep2026: { ...GEOGRAPHY_SOURCE_METADATA.indiaDelimitationFollowupSep2026, discipline: 'Indian contemporary legislative politics' },
   pasettiColonialismCorporative2016: {
     accessDate: '2026-09-16',
     creators: ['Matteo Pasetti'],
