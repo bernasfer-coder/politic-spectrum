@@ -9303,6 +9303,169 @@ sources.push(
   },
 );
 
+sources.push(
+  {
+    id: 'somaliaProvisionalConstitution2012Parliament',
+    label: 'Federal Republic of Somalia — Provisional Constitution (2012), Federal Parliament copy',
+    url: 'https://parliament.gov.so/wp-content/uploads/2024/12/Provisional-Constitution-2012.pdf',
+    note: 'Official Parliament-hosted English-language copy consulted as a primary constitutional text and link only. No constitutional wording or translated extract is republished. It establishes the earlier provisional framework; it does not by itself resolve the 2024–26 amendments’ legal status, implementation or consent.',
+    accessDate: '2026-09-23', creators: ['Federal Republic of Somalia'], institution: 'Federal Parliament of Somalia',
+    publicationDate: '2012-08-01', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'provisional constitution / official primary legal text', identifiers: { adoptionDate: '2012-08-01' },
+    description: 'Primary constitutional framework for the Federal Republic, including provisions concerning amendment, federal member states and the final-constitution process. Formal text is distinguished from later political practice and disputed claims of completion.'
+  },
+  {
+    id: 'somaliaConstitutionAmendmentsChapters1to4OPM',
+    label: 'Office of the Prime Minister of Somalia — Amendments to the Provisional Constitution, chapters 1–4 (official policy record)',
+    url: 'https://opm.gov.so/en/policies/amendments-to-the-provisional-constitution-of-the-federal-republic-of-somalia-chapters-1-4',
+    note: 'Official OPM policy page consulted as an attributed government account of the March 2024 parliamentary action and stated effective date. Its “View PDF” link resolved to an unrelated National Development Plan file during review; the amendment text itself was therefore not authenticated through that link. No amendment wording is republished.',
+    accessDate: '2026-09-23', creators: ['Federal Government of Somalia'], institution: 'Office of the Prime Minister of Somalia',
+    publicationDate: '2026-06-22', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official executive policy record concerning constitutional amendments', identifiers: { statedEffectiveDate: '2024-03-30', chapters: '1–4' },
+    description: 'Government account says Parliament approved amendments in March 2024 and describes a direct-suffrage, multiparty and executive-design package. Because the linked PDF was unrelated, those propositions are attributed to the OPM page rather than presented as independently text-verified law.'
+  },
+  {
+    id: 'somaliaConstitution2026Senate',
+    label: 'Federal Republic of Somalia — Constitution of the Federal Republic of Somalia 2026, Senate-hosted Somali text',
+    url: 'https://senate.gov.so/wp-json/filedeck/v1/download/12129',
+    note: 'Official Senate reference-documents page and its linked Somali-language PDF consulted as a primary-text witness and link only. The PDF cover is dated Mogadishu, 4 March 2026; this research did not independently authenticate Gazette publication, a referendum, or an authoritative English translation. No wording or translation is republished.',
+    accessDate: '2026-09-23', creators: ['Federal Republic of Somalia'], institution: 'Senate of the Federal Parliament of Somalia',
+    publicationDate: '2026-03-04', evidenceRole: 'primary', confidence: 'high', languages: ['Somali'],
+    sourceType: 'Senate-hosted constitutional primary text', identifiers: { documentDate: '2026-03-04', format: 'PDF', language: 'Somali' },
+    description: 'The Senate-hosted text is direct evidence that a constitutional document bearing the 2026 title and date exists. Its publication by one parliamentary chamber is not, on its own, an independent determination of promulgation, legal commencement, popular ratification or uniform implementation.'
+  },
+  {
+    id: 'somaliaPresidencyConstitution2026',
+    label: 'Villa Somalia — Constitution of the Federal Republic of Somalia (Presidency account, 2026)',
+    url: 'https://villasomalia.gov.so/constitution-2/',
+    note: 'Presidency-hosted page consulted as an institutional self-description and link only. Its claims that Parliament approved the text on 4 March, the President signed it on 8 March and the provisional period ended are attributed to the Presidency; they are not treated as independent evidence of popular consent, legal finality or implementation.',
+    accessDate: '2026-09-23', creators: ['Office of the President of the Federal Republic of Somalia'], institution: 'Villa Somalia',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official presidential constitutional-status statement', identifiers: { statedParliamentaryApproval: '2026-03-04', statedSignature: '2026-03-08' },
+    description: 'Records the presidency’s public account of the constitutional transition and its characterization of the new text. It is primary evidence of the institution’s position, not adjudication of the objections or a measure of public agreement.'
+  },
+  {
+    id: 'somaliaICRICConstitution2026',
+    label: 'Independent Constitutional Review and Implementation Commission — constitutional review updates (2026)',
+    url: 'https://icric.gov.so/',
+    note: 'Official constitutional-review commission website consulted for dated institutional updates and link only. Its account corroborates the review institutions’ description of parliamentary approval and presidential signature but is not an independent court ruling or evidence of referendum completion and broad political agreement.',
+    accessDate: '2026-09-23', creators: ['Independent Constitutional Review and Implementation Commission'], institution: 'ICRIC Somalia',
+    publicationDate: '2026-03-08', evidenceRole: 'primary', confidence: 'medium', languages: ['Somali', 'English'],
+    sourceType: 'official constitutional-review commission record', identifiers: { reportedApproval: '2026-03-04', reportedSignature: '2026-03-08' },
+    description: 'Institutional updates describe approval of amendments to chapters 5–15 and limited amendments to chapter 4 by both Houses, followed by presidential signature. The account documents official process claims, not their independent legal assessment or political acceptance.'
+  },
+  {
+    id: 'somaliaConstitutionNetSchmidt2026',
+    label: 'Jan Amilcar Schmidt — “From Provisional to Permanent Constitution? Assessing the End of Somalia’s Constitutional Review Process”',
+    url: 'https://constitutionnet.org/ar/node/20092',
+    note: 'ConstitutionNet analysis dated 7 April 2026 consulted for attributed specialist legal interpretation, not as a primary source or neutral consensus. Schmidt’s stated professional involvement in Somalia’s constitutional process and legal advisory work is relevant context for evaluating his perspective. Its chronology predates subsequent 2026 developments.',
+    accessDate: '2026-09-23', creators: ['Jan Amilcar Schmidt'], institution: 'ConstitutionNet / International IDEA',
+    publicationDate: '2026-04-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'comparative constitutional-law analysis', identifiers: { publicationDate: '2026-04-07' },
+    description: 'Named expert analysis of the 2024 and March 2026 constitutional votes, federal-member-state participation and the unresolved referendum and legitimacy questions. It is a reasoned legal interpretation by a participant-adviser, not a binding ruling or settled scholarly consensus.'
+  },
+  {
+    id: 'somaliaElectoralConstitutionReview2024',
+    label: 'Somali Dialogue Platform and Somali Public Agenda — Addressing Contentious Issues on Elections in the Constitutional Review Process',
+    url: 'https://somalipublicagenda.org/wp-content/uploads/2024/03/SPASDP_Policy_Paper_2024_ENGLISH.pdf',
+    note: 'March 2024 English-language civil-society policy paper consulted for its analysis of the electoral questions then under review. No text or table is republished. It predates the 2026 constitutional document and is not evidence that its recommendations were adopted or that the analysis represents all Somalis.',
+    accessDate: '2026-09-23', creators: ['Somali Dialogue Platform', 'Somali Public Agenda'], institution: 'Somali Public Agenda / Somali Dialogue Platform',
+    publicationDate: '2024-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'policy paper on constitutional review and elections', identifiers: { publicationDate: '2024-03' },
+    description: 'Locally grounded analysis of electoral design, sequencing and federal participation in the 2024 constitutional review. Its proposals and contemporaneous concerns are distinguished from subsequent legal text and later political developments.'
+  },
+  {
+    id: 'somaliaBridgingDivides2025',
+    label: 'Somali Public Agenda, Puntland Development and Research Centre, and Heinrich Böll Stiftung — Bridging Divides (2025)',
+    url: 'https://hoa.boell.org/sites/default/files/2025-08/bridging-divides-options-for-resolving-somalias-fgs-fms-disputes-constitutional-review-and-elections.pdf',
+    note: 'August 2025 English-language policy volume consulted for its institutional and federal-dispute analysis. No text, figure or table is republished; recommendations and contemporaneous analysis are not treated as enacted law or a representative public-opinion survey.',
+    accessDate: '2026-09-23', creators: ['Somali Public Agenda', 'Puntland Development and Research Centre', 'Heinrich Böll Stiftung — Horn of Africa'], institution: 'Somali Public Agenda / PDRC / Heinrich Böll Stiftung',
+    publicationDate: '2025-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'policy research volume on federal disputes, constitutional review and elections', identifiers: { publicationDate: '2025-08' },
+    description: 'Documents proposals and disputes over the federal–member-state relationship, constitutional review and electoral arrangements as of 2025. It provides locally situated policy analysis rather than a legal ruling or account of later implementation.'
+  },
+  {
+    id: 'somaliaAPBanadirElection2025',
+    label: 'Associated Press — “Somalis vote in the first one-person, one-vote local election in decades” (25 December 2025)',
+    url: 'https://apnews.com/article/somalia-mogadishu-council-election-a4d2f8d7091d531c3db5f2aa3ec46d0d',
+    note: 'Contemporaneous Associated Press report consulted for the bounded Banadir/Mogadishu municipal election and attributed contestation. The report is not evidence of a nationwide direct election, universal political access or a settled electoral roadmap.',
+    accessDate: '2026-09-23', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025-12-25', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report on a local election', identifiers: { electionDate: '2025-12-25', location: 'Banadir / Mogadishu' },
+    description: 'Reports a direct local vote for Banadir district councils and describes opposition criticism. The geographic and institutional scope is municipal; it must not be generalized to all federal or member-state elections.'
+  },
+  {
+    id: 'somaliaAPParliamentAmendments2026',
+    label: 'Associated Press — “Chaos erupts in Somalia’s parliament over proposed constitutional amendments” (28 January 2026)',
+    url: 'https://apnews.com/article/somalia-parliament-constitution-mandate-scuffle-f4c7d7e3826b64ca11ce819bcbd77399',
+    note: 'Contemporaneous Associated Press reporting consulted for the parliamentary disruption and attributed opposition allegations. It does not establish the truth of each allegation or substitute for parliamentary minutes, the constitutional text or judicial review.',
+    accessDate: '2026-09-23', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-01-28', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report on constitutional proceedings', identifiers: { publicationDate: '2026-01-28' },
+    description: 'Reports a disrupted parliamentary sitting during debate over proposed constitutional changes. Allegations, observed events and legal conclusions are kept distinct.'
+  },
+  {
+    id: 'somaliaSCRJuneForecast2026',
+    label: 'Security Council Report — June 2026 Monthly Forecast, Somalia section',
+    url: 'https://www.securitycouncilreport.org/atf/cf/%7B65BFCF9B-6D27-4E9C-8CD3-CF6E4FF96FF9%7D/2026_06_forecast.pdf',
+    note: 'Dated institutional analysis consulted for the reported parliamentary amendment, term provisions and positions attributed to opposition and federal-member-state actors. It is not a constitutional court judgment and does not establish subsequent implementation.',
+    accessDate: '2026-09-23', creators: ['Security Council Report'], institution: 'Security Council Report',
+    publicationDate: '2026-06', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'United Nations Security Council monthly forecast / expert institutional analysis', identifiers: { publicationDate: '2026-06' },
+    description: 'Provides a dated account of the March 2026 constitutional amendments, parliamentary terms and criticisms by opposition and member-state actors. It offers context and reported positions, not an adjudication of validity.'
+  },
+  {
+    id: 'somaliaUNTMISRoadmapStatement2026',
+    label: 'United Nations Transitional Assistance Mission in Somalia — statement on political dialogue and electoral roadmap (1 June 2026)',
+    url: 'https://untmis.unmissions.org/en/node/135555',
+    note: 'UN mission statement consulted for its dated diplomatic call for renewed dialogue and agreement on an election roadmap. It is an institutional position, not independent proof of domestic consensus, legal status or implementation.',
+    accessDate: '2026-09-23', creators: ['United Nations Transitional Assistance Mission in Somalia'], institution: 'United Nations',
+    publicationDate: '2026-06-01', evidenceRole: 'contextual', confidence: 'medium', languages: ['English'],
+    sourceType: 'official international mission statement', identifiers: { publicationDate: '2026-06-01' },
+    description: 'Records an international mission’s call for political dialogue and a timely, agreed electoral roadmap. Its appeal itself indicates a diplomatic concern; it does not resolve the parties’ disagreement.'
+  },
+  {
+    id: 'somaliaFikirElectionPledge2026',
+    label: 'FIKIR Institute — account of the reported September 2026 electoral pledge',
+    url: 'https://www.fikir.institute/insights/somalia-hassan-sheikh-election-deal-facilitation-beledweyne-2026',
+    note: 'Think-tank account dated 3 September 2026 consulted as a provisional, single-source report. It describes an attributed pledge to hold federal elections within seven months but notes the absence of a publicly signed accord, detailed timetable and confirmation that presidential and legislative contests are both covered; the report is not proof of an agreement or delivery.',
+    accessDate: '2026-09-23', creators: ['FIKIR Institute'], institution: 'FIKIR Institute',
+    publicationDate: '2026-09-03', evidenceRole: 'contextual', confidence: 'low', languages: ['English'],
+    sourceType: 'think-tank analysis of reported political facilitation', identifiers: { publicationDate: '2026-09-03' },
+    description: 'A provisional late-period account of an election-timing pledge and unresolved specifics. It is retained as a clearly attributed evidence gap, not as an established settlement or current-election fact.'
+  },
+  {
+    id: 'bereketeabStateBuildingIdentityHorn2017',
+    label: 'Redie Bereketeab (ed.) — State Building and National Identity Reconstruction in the Horn of Africa',
+    url: 'https://link.springer.com/book/10.1007/978-3-319-39892-1',
+    note: 'Publisher record and book metadata consulted for broad Horn of Africa state-building context; the complete volume was not consulted. Abdurahman Abdullahi (Baadiyow), “Reconstructing the National State of Somalia: The Role of Traditional Institutions and Authorities,” pp. 25–48, supplies a bounded scholarly chapter perspective. Published in 2017 and not evidence about the 2024–26 sequence. Link and paraphrase only; no book text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Redie Bereketeab (editor)', 'Abdurahman Abdullahi (chapter author)'], institution: 'Palgrave Macmillan',
+    publicationDate: '2017', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume and chapter on state-building', identifiers: { doi: '10.1007/978-3-319-39892-1', isbnHardcover: '978-3-319-39891-4', isbnEbook: '978-3-319-39892-1', pages: '246', chapterPages: '25–48' },
+    description: 'Edited scholarly work on state building and national identity in the Horn of Africa. Its Somalia chapter offers historical and institutional context, not a direct study of the later constitutional amendments or a consensus account of Somali political identity.'
+  },
+  {
+    id: 'keatingWaldmanWarPeaceSomalia2019',
+    label: 'Michael Keating and Matt Waldman (eds.) — War and Peace in Somalia: National Grievances, Local Conflict and Al-Shabaab',
+    url: 'https://academic.oup.com/book/35091',
+    note: 'Oxford University Press book record and scholarly framing consulted for the 2019 edited volume; the complete book was not consulted. It provides an independent conflict, peacebuilding and governance perspective but predates the 2024–26 case. Link and original paraphrase only; no book text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Michael Keating (editor)', 'Matt Waldman (editor)'], institution: 'Oxford University Press',
+    publicationDate: '2019-03-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume on conflict, governance and peacebuilding', identifiers: { doi: '10.1093/oso/9780190947910.001.0001', isbnPrint: '9780190947910', isbnOnline: '9780190055929' },
+    description: 'Scholarly collection on national grievances, local conflict, armed actors and peacebuilding in Somalia. It helps situate institutional disputes in a multilevel political setting but cannot substantiate events after publication.'
+  },
+  {
+    id: 'massoudShariaInshallahSomalia2021',
+    label: 'Mark Fathi Massoud — Shari‘a, Inshallah: Finding God in Somali Legal Politics',
+    url: 'https://www.cambridge.org/core/books/sharia-inshallah/AFF6E3D685A2D940E834BDA4F9431617',
+    note: 'Cambridge University Press record and scholarly framing consulted; the complete monograph was not consulted. It supplies a distinct legal-political perspective on Somali Islamic, customary and state law, not a direct account of the 2024–26 constitutional process. Link and original paraphrase only; no book text is reproduced.',
+    accessDate: '2026-09-23', creators: ['Mark Fathi Massoud'], institution: 'Cambridge University Press',
+    publicationDate: '2021-05-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph on Somali legal politics', identifiers: { doi: '10.1017/9781108965989', isbnPrint: '9781108832786', pages: '390' },
+    description: 'Monograph on the politics and practice of law in Somali settings, including interactions among state law, Islamic authority and customary institutions. It cautions against reducing legal or political practice to formal constitutional text or a single religious label.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
@@ -9383,6 +9546,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
+      : source.id.startsWith('somalia') || source.id.startsWith('bereketeabStateBuildingIdentityHorn') || source.id.startsWith('keatingWaldmanWarPeaceSomalia') || source.id.startsWith('massoudShariaInshallahSomalia') ? 'Somali and Horn of Africa state-building, constitutional, legal and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
