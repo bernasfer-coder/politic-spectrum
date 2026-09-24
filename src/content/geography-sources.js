@@ -9511,6 +9511,156 @@ sources.push(
     publicationDate: '2025-06-26', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
     sourceType: 'French-language book-length scholarly monograph / publisher record consulted', identifiers: { isbn: '9791033406327', pages: '298', publisher: 'Sépia' },
     description: 'A French-language study of postcolonial state formation and the hybridity of the Malagasy state. The publisher description and metadata offer a contemporary scholarly framework to investigate, not a substitute for the full monograph or an interpretation of the later transition.'
+  },
+  {
+    id: 'angolaConstitution2010ConstitutionalCourt',
+    label: 'Republic of Angola — Constitution of the Republic (Constitutional Court official text)',
+    url: 'https://tribunalconstitucional.ao/pt/constituicao/constituicao/',
+    note: 'Official Portuguese-language constitutional text consulted for an independent account of the formal constitutional and electoral framework. No wording, translation, scan or image is reproduced; legal design is not treated as proof of implementation or equal political competition.',
+    accessDate: '2026-09-24', creators: ['Republic of Angola'], institution: 'Constitutional Court of Angola',
+    publicationDate: '2010-02-05', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '2010', promulgationDate: '2010-02-05' },
+    description: 'Primary legal evidence for Angola’s formal constitutional order, rights and electoral institutions. It documents constitutional commitments, not their uniform realization in practice.'
+  },
+  {
+    id: 'angolaCneElection2022Results',
+    label: 'Angola National Electoral Commission — definitive national tabulation of the 24 August 2022 general election',
+    url: 'https://www.cne.ao/noticia/CNE%2Bpublica%2Bedital%2Bdos%2Bresultados%2Bdefinitvos%2Bdo%2Bapuramento%2Bnacional%2C%2Breferente%2B%C3%A0s%2BElei%C3%A7%C3%B5es%2BGerais%2Bdo%2Bdia%2B24%2Bde%2BAgosto%2Bde%2B2022',
+    note: 'Official CNE definitive-result notice used as the primary record of the declared national tally, link and independently authored summary only. No table or wording is republished; the official result is distinguished from opposition objections and independent assessments of process quality.',
+    accessDate: '2026-09-24', creators: ['Comissão Nacional Eleitoral de Angola'], institution: 'National Electoral Commission of Angola',
+    publicationDate: '2022-08-29', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'primary election result / official electoral record', identifiers: { electionDate: '2022-08-24', resultNoticeDate: '2022-08-29' },
+    description: 'Official national election result notice. It establishes what the electoral commission declared, not independent verification of the count or a final adjudication of competing political claims.'
+  },
+  {
+    id: 'angolaSadcpfElectionPreliminary2022',
+    label: 'SADC Parliamentary Forum — preliminary report of the Election Observation Mission to the 2022 Angola general elections',
+    url: 'https://www.sadcpf.org/index.php/en/media-release/press-release/594-preliminary-mission-report-by-the-sadc-parliamentary-forum-election-observation-mission-to-the-2022-angola-general-elections-by-honourable-adv-jacob-francis-nzwidamilimo-mudenda-head-of-mission-and-speaker-of-parliament',
+    note: 'The SADC Parliamentary Forum’s preliminary observer report is used as an attributed regional observer assessment. Its preliminary character and limited deployment locations are retained; it is not treated as a comprehensive nationwide audit or a judicial finding.',
+    accessDate: '2026-09-24', creators: ['SADC Parliamentary Forum Election Observation Mission'], institution: 'SADC Parliamentary Forum',
+    publicationDate: '2022-08-26', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'regional election-observation mission preliminary report', identifiers: { electionDate: '2022-08-24', reportStatus: 'preliminary' },
+    description: 'Preliminary report by a SADC Parliamentary Forum mission. It presents the mission’s own assessment and scope; its preliminary designation and limited observation footprint constrain generalization.'
+  },
+  {
+    id: 'angolaByePacatoloInglesDomingosElectionReport2022',
+    label: 'Vegard Bye, Carlos Pacatolo, Paulo Inglês and Nelson Domingos — The Politics of Angola’s 2022 General Elections (revised and expanded final report)',
+    url: 'https://www.scanteam.no/wp-content/uploads/2023/03/2022-Angola-Elections-Final-Report.pdf',
+    note: 'Full 2022 election-process research report consulted. Its authors’ critical findings are presented as their analysis, not as a court ruling or uncontested determination; the account is compared with the CNE record and the SADC Parliamentary Forum’s preliminary observer assessment.',
+    accessDate: '2026-09-24', creators: ['Vegard Bye', 'Carlos Pacatolo', 'Paulo Inglês', 'Nelson Domingos'], institution: 'Scanteam / Instituto Superior Politécnico Jean Piaget de Benguela',
+    publicationDate: '2022-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length election-process research report', identifiers: { doi: '10.13140/RG.2.2.31835.95525', pages: '48' },
+    description: 'Independent election-process study evaluating campaign conditions, media, electoral administration, counting and complaints. Its conclusions are a research interpretation of documented process evidence, not an official or judicial resolution.'
+  },
+  {
+    id: 'angolaAfterDosSantosAnthology2025',
+    label: 'Vegard Bye, Paulo Inglês, Aslak Orre, Justin Pearce and Ricardo Soares de Oliveira, editors — Angola after dos Santos: An Anthology on Continuity and Change',
+    url: 'https://www.cmi.no/publications/9589-angola-after-dos-santos-an-anthology-on-continuity-and-change',
+    note: 'Open-access scholarly edited volume published by CMI in June 2025; the introduction and selected chapters on opposition politics, courts and accountability, and 2022 campaign representation were consulted, not every chapter. Claims are attributed to their chapter authors and limited to each chapter’s evidence.',
+    accessDate: '2026-09-24', creators: ['Vegard Bye', 'Paulo Inglês', 'Aslak Orre', 'Justin Pearce', 'Ricardo Soares de Oliveira'], institution: 'Chr. Michelsen Institute',
+    publicationDate: '2025-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited volume / selected chapters consulted', identifiers: { isbn: '978-82-8062-859-6', pages: '364' },
+    description: 'Multi-author research on political continuity and change after José Eduardo dos Santos, including contemporary analyses of opposition, accountability and campaign media. The volume offers several attributed scholarly perspectives rather than a single national verdict.'
+  },
+  {
+    id: 'angolaBirminghamShortHistory2015',
+    label: 'David Birmingham — A Short History of Modern Angola (2015)',
+    url: 'https://api.pageplace.de/preview/DT0400.9780190613174_A26572054/preview-9780190613174_A26572054.pdf',
+    note: 'Publisher preview and bibliographic metadata consulted for broad historical orientation; the full book was not read. Used as contextual further reading, not as evidence for the 2022 result or 2025 protest events.',
+    accessDate: '2026-09-24', creators: ['David Birmingham'], institution: 'Oxford University Press / Hurst',
+    publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly national history / publisher preview consulted', identifiers: { isbn: '9780190271305' },
+    description: 'Concise modern political history of Angola, used here as a contextual reading lead only; its publication predates the events at the center of this case.'
+  },
+  {
+    id: 'angolaSoaresDeOliveiraMagnificentBeggarLand2015',
+    label: 'Ricardo Soares de Oliveira — Magnificent and Beggar Land: Angola Since the Civil War (2015)',
+    url: 'https://books.google.com/books/about/Magnificent_and_Beggar_Land.html?hl=en&id=mGJ2CAAAQBAJ&output=html_text',
+    note: 'Book metadata and publisher/preview description consulted; the full monograph was not read in this pass. Its postwar political-economy analysis is contextual background, not direct evidence for the 2022 tally or 2025 events.',
+    accessDate: '2026-09-24', creators: ['Ricardo Soares de Oliveira'], institution: 'Oxford University Press',
+    publicationDate: '2015', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph / bibliographic record and description consulted', identifiers: { isbn: '9780190251413', pages: '320' },
+    description: 'Scholarly account of post-civil-war state formation, political economy and ruling elites. It supplies historical context through a pre-2017 publication horizon only.'
+  },
+  {
+    id: 'angolaRoqueGoverningShadows2022',
+    label: 'Paula Cristina Roque — Governing in the Shadows: Angola’s Securitized State (2022)',
+    url: 'https://academic.oup.com/book/38888',
+    note: 'Publisher bibliographic record and abstract consulted; the full monograph was not read. It is a distinct institutional/security-state framework and is not treated as direct evidence for the case’s election or protest facts.',
+    accessDate: '2026-09-24', creators: ['Paula Cristina Roque'], institution: 'Oxford University Press',
+    publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph / publisher metadata and abstract consulted', identifiers: { doi: '10.1093/oso/9780197629895.001.0001', isbn: '9780197629895', eisbn: '9780197632949' },
+    description: 'Monograph examining Angola’s security apparatus and state-building in war and peacetime. The publisher description was consulted; its broader account is not substituted for event-specific evidence.'
+  },
+  {
+    id: 'angolaVerdeAtCrossroads2022',
+    label: 'Rui Santos Verde — Angola at the Crossroads: Between Kleptocracy and Development (2022)',
+    url: 'https://www.bloomsbury.com/us/angola-at-the-crossroads-9780755640560/',
+    note: 'Publisher bibliographic metadata and description consulted; the full book was not read. Its interpretation of reform and institutional change is attributed to Verde and is not adopted as the case’s settled conclusion.',
+    accessDate: '2026-09-24', creators: ['Rui Santos Verde'], institution: 'I.B. Tauris / Bloomsbury Publishing',
+    publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph / publisher record and description consulted', identifiers: { isbn: '9780755640560', pages: '216' },
+    description: 'A critical book-length interpretation of postwar Angola, reform claims and political-economic power. Only publisher metadata and description were consulted in this pass.'
+  },
+  {
+    id: 'angolaIrdpDieselIncrease2025',
+    label: 'Angola Institute for Regulation of Petroleum Derivatives — announcement of the diesel-price adjustment effective 4 July 2025',
+    url: 'https://ciam.gov.ao/ao/noticia/4274',
+    note: 'Government communication portal item quoting IRDP announcement consulted as an official policy notice. It records the announced price change and official rationale, not independent evidence of household effects, public support or all protest motivations.',
+    accessDate: '2026-09-24', creators: ['Instituto Regulador dos Derivados do Petróleo'], institution: 'IRDP / Centro de Imprensa Aníbal de Melo',
+    publicationDate: '2025-07-04', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official price-policy notice / government communication', identifiers: { effectiveDate: '2025-07-04' },
+    description: 'Official notice announcing an increase in the regulated diesel price from 300 to 400 kwanzas per litre and presenting the authorities’ subsidy-reform rationale. It is not a distributional-impact evaluation.'
+  },
+  {
+    id: 'angolaWorldBankGrowthProgram2026',
+    label: 'World Bank — Angola Resilient and Inclusive Growth Development Policy Financing Program Document (2026)',
+    url: 'https://documents1.worldbank.org/curated/en/099021026150512769/pdf/BOSIB-782e0e76-419d-4e70-ab1b-99058e7596a5.pdf',
+    note: 'World Bank program document consulted for its analysis of subsidy expenditure and direct and indirect household costs. It is an institutional policy-program assessment, not a survey of public opinion or independent verification of protest participants’ motives.',
+    accessDate: '2026-09-24', creators: ['World Bank'], institution: 'World Bank',
+    publicationDate: '2026-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional development-policy program document', identifiers: { projectId: 'P511848' },
+    description: 'Program analysis of fuel-subsidy spending and reform, including risks that removal affects disposable income, food and transport. Its economic context informs but cannot explain the full political meaning or social distribution of protests.'
+  },
+  {
+    id: 'angolaAssociatedPressStrikeToll2025',
+    label: 'Associated Press — Angola strike unrest spreads as authorities report deaths, injuries and arrests (30 July 2025)',
+    url: 'https://apnews.com/article/f5d1f653c0432d26952993738b0e4fa0',
+    note: 'Contemporaneous reporting consulted for the Presidency’s 30 July casualty and arrest figures, with attribution preserved. Other contemporaneous accounts reported different tolls; this item is not independent forensic confirmation.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025-07-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'contemporaneous wire-service reporting', identifiers: { eventDate: '2025-07-28/30' },
+    description: 'Contemporaneous report of the taxi-driver strike, protests and the Presidency’s reported tally of 22 deaths, 197 injuries and more than 1,200 arrests. Figures remain attributed and disputed across accounts.'
+  },
+  {
+    id: 'angolaAmnestyForceStrike2025',
+    label: 'Amnesty International — Angola: authorities must investigate allegations of unlawful use of force during the July 2025 strike (August 2025)',
+    url: 'https://www.amnesty.org/en/latest/news/2025/08/angola-authorities-must-investigate-allegations-of-unlawful-use-of-force-that-killed-22-people-during-strike/',
+    note: 'Human-rights organization account and advocacy assessment consulted. It attributes reported casualty totals and calls for investigation; it is not an independent judicial finding or forensic count.',
+    accessDate: '2026-09-24', creators: ['Amnesty International'], institution: 'Amnesty International',
+    publicationDate: '2025-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'human-rights documentation and advocacy statement', identifiers: { eventDate: '2025-07' },
+    description: 'Rights-focused account of the strike and allegations of unlawful force, reporting a death count that differs from other contemporaneous accounts. The figure and assessment are attributed to Amnesty and its cited sources.'
+  },
+  {
+    id: 'angolaOHCHRCommunication30326',
+    label: 'UN Special Procedures — communication concerning social distress and the July 2025 protests in Angola (communication 30326)',
+    url: 'https://spcommreports.ohchr.org/TmSearch/SummaryPrint?id=30326',
+    note: 'Special Procedures communication summarizing information received and sent to the government; allegations are retained as allegations. It is not a fact-finding mission, adjudication or official consolidated casualty record.',
+    accessDate: '2026-09-24', creators: ['Special Procedures of the UN Human Rights Council'], institution: 'Office of the United Nations High Commissioner for Human Rights',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'UN Special Procedures communication / allegations and government communication record', identifiers: { communicationId: '30326', eventDate: '2025-07' },
+    description: 'Documents allegations and information received about protest policing, arrests, injuries, deaths and social distress, including the challenge of reconciling reported totals. Its procedural status requires attribution rather than treating every reported detail as independently verified.'
+  },
+  {
+    id: 'angolaHumanRightsWatchWorldReport2026',
+    label: 'Human Rights Watch — World Report 2026: Angola',
+    url: 'https://www.hrw.org/world-report/2026/country-chapters/angola',
+    note: 'Annual country-chapter reporting consulted for HRW’s account that a police investigation was announced and its results had not been made public by the report’s cutoff. It is used as a dated human-rights monitor record, not a current post-cutoff update.',
+    accessDate: '2026-09-24', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'annual human-rights report / country chapter', identifiers: { reportYear: '2026', informationCutoff: '2025-09' },
+    description: 'Human Rights Watch’s annual account of Angola through its stated reporting horizon. It reports an announced investigation into the 2025 police response but says results were not public by the chapter’s cutoff; this does not establish what happened after that date.'
   }
 );
 
@@ -9586,7 +9736,8 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
-      : source.id.startsWith('malawi') ? 'Malawian constitutional, electoral, democratic-transition and political history'
+       : source.id.startsWith('angola') ? 'Angolan postwar, constitutional, electoral and political history'
+       : source.id.startsWith('malawi') ? 'Malawian constitutional, electoral, democratic-transition and political history'
       : source.id.startsWith('madagascar') ? 'Malagasy protest, military transition, constitutional order and refoundation dialogue'
       : source.id.startsWith('newZealand') ? 'New Zealand Treaty, Māori, parliamentary, welfare and constitutional political history'
       : source.id.startsWith('australia') ? 'Australian federal, settler-colonial, labor and constitutional political history'
