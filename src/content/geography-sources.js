@@ -9228,6 +9228,99 @@ const sources = [
   },
 ];
 
+sources.push(
+  {
+    id: 'malawiGovernmentGazettePresidentialResults2025',
+    label: 'Malawi Electoral Commission — 2025 presidential result and complaint determinations, Government Gazette No. 46 (24 September 2025)',
+    url: 'https://archive.gazettes.africa/archive/mw/2025/mw-government-gazette-dated-2025-09-24-no-46.pdf',
+    note: 'Primary official election record: the archived Government Gazette reproduces MEC General Notice No. 96, its presidential-result declaration and complaint determinations. The PDF endpoint returned 403 during this review, so the searchable Gazette text was checked against the EU EOM final report; no Gazette table, wording, scan or page image is republished. Complaints and MEC determinations are attributed, not treated as independent judicial findings.',
+    accessDate: '2026-09-24', creators: ['Malawi Electoral Commission'], institution: 'Malawi Government Gazette; archived by Gazettes Africa',
+    publicationDate: '2025-09-24', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary electoral declaration and complaint determinations / official gazette', identifiers: { gazetteNumber: '46', generalNotice: '96', resultDate: '2025-09-24' },
+    description: 'The notice declares Arthur Peter Mutharika elected President with 3,035,249 votes, stated as 56.75 per cent of valid votes, and prints MEC responses to complaints. It is an electoral authority’s primary declaration and response, not independent observation, proof that every complaint was resolved correctly, or a measure of voter motive.'
+  },
+  {
+    id: 'malawiEUElectionObservationFinalReport2025',
+    label: 'European Union Election Observation Mission — Malawi 2025 Final Report',
+    url: 'https://www.eeas.europa.eu/sites/default/files/2025/documents/EU%20EOM%20Malawi%202025%20Final%20Report.pdf',
+    note: 'The EU EOM final report was consulted for its election context, findings, limitations and the post-election account, especially its results and post-election-environment sections. Findings are attributed to an international observer mission invited by the MEC; observation samples and reported interlocutor views are not a census of voters or every locality. No report text, chart or PDF page is republished.',
+    accessDate: '2026-09-24', creators: ['European Union Election Observation Mission Malawi 2025'], institution: 'European External Action Service / European Union Election Observation Mission',
+    publicationDate: '2025-12-09', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final report', identifiers: { electionDate: '2025-09-16', reportDate: '2025-12-09' },
+    description: 'The mission assesses the election as competitive overall and documents the MEC result, the hung National Assembly, observer findings on polling and tabulation, candidate complaints and court proceedings, the peaceful transfer, and weaknesses in campaign conditions and media impartiality. Its descriptions such as “strategic protest vote” are interpretations by observers, not a directly measured explanation of each vote.'
+  },
+  {
+    id: 'malawiUNDPcsElectionSituationRoom2026',
+    label: 'National Initiative for Civic Education and partners — Malawi 2025 CSO-Led Election Situation Room Report (published 3 August 2026)',
+    url: 'https://www.undp.org/malawi/publications/malawi-2025-cso-led-election-situation-room-esr-report',
+    note: 'UNDP publication page and its report description consulted; the linked 26.1 MB report itself was not downloaded or read in full. Deployment figures, conclusions and listed incidents are therefore attributed to the report summary, not independently validated event-by-event or presented as independent corroboration of every result. Link only; no report text, dataset, table or image is republished.',
+    accessDate: '2026-09-24', creators: ['National Initiative for Civic Education Public Trust and participating civil-society organizations'], institution: 'United Nations Development Programme Malawi',
+    publicationDate: '2026-08-03', evidenceRole: 'contextual', confidence: 'medium', languages: ['English'],
+    sourceType: 'civil-society election monitoring report / institutional publication record', identifiers: { electionDate: '2025-09-16' },
+    description: 'The UNDP page describes nationwide Election Situation Room monitoring with 6,840 trained observers, incident and misinformation tracking, and a report conclusion that voting, counting and result transmission were generally peaceful, orderly and credible. It also lists concerns including alleged vote-buying, misinformation, security deployment and women’s underrepresentation. This is the report’s own summary; coverage design, incident-level data and the full report require further review.'
+  },
+  {
+    id: 'malawiGovernmentExecutiveElectionTransition2025',
+    label: 'Government of Malawi — Executive and presidential transition record (2025)',
+    url: 'https://www.malawi.gov.mw/index.php/60-executive',
+    note: 'Government executive-history page consulted for its dated statement that Mutharika was elected on 16 September and inaugurated on 4 October 2025. This is an official government chronology and self-description, not independent evaluation; its characterization of the handover as democratic resilience is not adopted as a finding. No page wording or image is republished.',
+    accessDate: '2026-09-24', creators: ['Government of Malawi'], institution: 'Government of Malawi',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official executive chronology / government record', identifiers: { electionDate: '2025-09-16', inaugurationDate: '2025-10-04' },
+    description: 'The executive page dates the election and inauguration and identifies the President and vice-presidential officeholders. Its retrospective framing is government self-description, not a neutral assessment of the electoral process or a complete present-day status record.'
+  },
+  {
+    id: 'malawiAssociatedPressElectionResult2025',
+    label: 'Associated Press — Former President Mutharika wins Malawi election (24 September 2025)',
+    url: 'https://apnews.com/article/07706188fde0f0314348e74919ee3e10',
+    note: 'Contemporaneous Associated Press report consulted for the announcement, Chakwera’s concession before the official declaration, and rounded result figures. The official Gazette and EU EOM report remain the primary/result records; AP’s attribution and timing are retained. No article text or photograph is republished.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025-09-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'contemporaneous news report', identifiers: { publicationDate: '2025-09-24' },
+    description: 'A contemporaneous report on the change in presidential office, with Chakwera’s concession and the MEC’s rounded vote totals. It supplies reporting context rather than a substitute for the Gazette, the complete official tally or independent observation.'
+  },
+  {
+    id: 'malawiPatelSvasandGovernmentPolitics2013',
+    label: 'Nandini Patel and Lars Svåsand (eds.) — Government and Politics in Malawi, 2nd ed. (2013)',
+    url: 'https://opac.mzuni.ac.mw/cgi-bin/koha/opac-detail.pl?biblionumber=4584',
+    note: 'Mzuzu University Library catalogue record consulted for editors, edition, date, publisher, pagination, ISBN and subjects only; the book’s chapters and full text were not consulted. It is used as earlier institutional and electoral context, not evidence about 2025.',
+    accessDate: '2026-09-24', creators: ['Nandini Patel', 'Lars Svåsand'], institution: 'Mzuzu University Library and Learning Resources Centre',
+    publicationDate: '2013', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book / catalogue record', identifiers: { isbn: '9789990800197', pages: 'vii, 370', edition: '2nd', publisher: 'Capital Printing Press' },
+    description: 'A Malawi-focused edited volume catalogued under elections, constitutional history, civil society and politics and government. It provides book-level further-reading context, but its 2013 publication cannot establish the 2025 election’s causes, conduct or outcomes.'
+  },
+  {
+    id: 'malawiEnglundDemocracyChameleons2002',
+    label: 'Harri Englund (ed.) — A Democracy of Chameleons: Politics and Culture in the New Malawi (2002)',
+    url: 'https://books.google.com/books?id=2dB_OAXzET0C',
+    note: 'Google Books bibliographic record and displayed publisher description/contents consulted; no full-book reading is claimed. It represents an early post-1994 multiparty-era collection, not the 2025 period or a single consensual Malawi-wide account. Link only; no chapter language is reproduced.',
+    accessDate: '2026-09-24', creators: ['Harri Englund'], institution: 'Nordic Africa Institute / Kachere Books',
+    publicationDate: '2002', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book / catalogue and publisher-description record', identifiers: { isbn: '9789171064998', pages: '208', publisher: 'Nordic Africa Institute' },
+    description: 'The collection presents research on politics and culture in the early multiparty period, including social and institutional topics and contributions by Malawi-based scholars. It is a distinct historical and cultural lens; catalog and preview metadata do not substitute for full-text review.'
+  },
+  {
+    id: 'malawiRompelGronemeyerPoliticalAffairs2020',
+    label: 'Matthias Rompel and Reimer Gronemeyer (eds.) — Malawi: Economy, Society and Political Affairs (2020)',
+    url: 'https://www.bloomsbury.com/us/malawi-9781786995865/',
+    note: 'Bloomsbury/Zed Books publisher record and available bibliographic/description material consulted, not the complete edited volume. Used only for pre-2025 economy, society and political-context further reading. No chapter text, table, photograph or scan is republished.',
+    accessDate: '2026-09-24', creators: ['Matthias Rompel', 'Reimer Gronemeyer'], institution: 'Zed Books / Bloomsbury Publishing',
+    publicationDate: '2020', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book / publisher record', identifiers: { isbn: '9781786995865', pages: '216', publisher: 'Zed Books' },
+    description: 'A book-length collection addressing Malawi’s economy, society and political affairs, including democratic consolidation and development themes. It supplies a broad social and political-economy context before 2025; the publisher record is not a reading of every contributor’s analysis.'
+  },
+  {
+    id: 'malawiSindimaFirstRepublic2002',
+    label: 'Harvey J. Sindima — Malawi’s First Republic: An Economic and Political Analysis (2002)',
+    url: 'https://www.bloomsbury.com/uk/malawis-first-republic-9780761823322/',
+    note: 'Bloomsbury/University Press of America bibliographic record and summary consulted; the book’s complete argument, data and cited records were not independently reviewed. Its subject is the 1964–1994 First Republic and it is used only as historical contrast, not as evidence of present or 2025 political practice.',
+    accessDate: '2026-09-24', creators: ['Harvey J. Sindima'], institution: 'University Press of America / Bloomsbury Publishing',
+    publicationDate: '2002-08-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly monograph / publisher record', identifiers: { isbn: '9780761823322', pages: '274', publisher: 'University Press of America' },
+    description: 'A historical political-economy study of Malawi’s First Republic, with chapters on one-party rule and political pluralism. The period and publisher synopsis make it useful for historical comparison only; they do not explain the later multiparty contest or establish a timeless Malawian political character.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
@@ -9300,6 +9393,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('malawi') ? 'Malawian constitutional, electoral, democratic-transition and political history'
       : source.id.startsWith('newZealand') ? 'New Zealand Treaty, Māori, parliamentary, welfare and constitutional political history'
       : source.id.startsWith('australia') ? 'Australian federal, settler-colonial, labor and constitutional political history'
       : source.id.startsWith('russia') ? 'Russian post-Soviet constitutional, authoritarian and political history'
