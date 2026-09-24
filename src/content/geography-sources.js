@@ -1,6 +1,116 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'hungaryNeoElectionComposition2026',
+    label: 'Hungary National Election Office — final 2026 National Assembly election results and composition',
+    url: 'https://vtr.valasztas.hu/ogy2026/orszaggyules-osszetetele',
+    note: 'Primary election-administration result and composition pages consulted for the final seat allocation. The interface is dynamically rendered; it is linked, not reproduced, and the IPU Parline record supplies an independently structured cross-check.',
+    accessDate: '2026-09-24', creators: ['Nemzeti Választási Iroda (National Election Office)'], institution: 'National Election Office of Hungary',
+    publicationDate: '2026-04-12', evidenceRole: 'primary', confidence: 'high', languages: ['Hungarian'],
+    sourceType: 'official parliamentary election result and Assembly composition', identifiers: { electionDate: '2026-04-12', resultPage: 'https://vtr.valasztas.hu/ogy2026/informaciok/mandatumszamitas-eredmenye' },
+    description: 'The election authority’s final result and legislature-composition pages provide the official source for the 141 TISZA, 52 Fidesz–KDNP and 6 Mi Hazánk seats. They document certified election outputs, not voter motives, campaign equality, public consent or subsequent institutional performance.'
+  },
+  {
+    id: 'hungaryIpuElectionRecord2026',
+    label: 'Inter-Parliamentary Union — Hungary National Assembly election record, 12 April 2026',
+    url: 'https://data.ipu.org/parliament/HU/HU-LC01/election/HU-LC01-E20260412/',
+    note: 'IPU Parline record cross-checked against the Hungarian National Election Office. It reproduces no external source text; its institutional synthesis is distinguished from the primary Hungarian election record and from analysis of fairness or voter motivation.',
+    accessDate: '2026-09-24', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union',
+    evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'intergovernmental parliamentary election database record', identifiers: { electionDate: '2026-04-12', seats: '199', turnout: '79.6%' },
+    description: 'Records the 199-seat Assembly, final party seat allocation, voter turnout, first sitting and government alternation, with links to National Assembly and election-office sources. It is a cross-check and structured parliamentary reference, not a full election-observation judgment.'
+  },
+  {
+    id: 'hungaryOdihrPreliminaryStatement2026',
+    label: 'OSCE/ODIHR — Hungary parliamentary elections 2026: preliminary findings and conclusions',
+    url: 'https://odihr.osce.org/odihr/663241',
+    note: 'The 13 April statement and linked preliminary report are cited only for the observer mission’s explicitly preliminary findings. No report wording, table, image or PDF extract is reproduced. It is not represented as a final comprehensive report or a judicial determination.',
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights', 'OSCE Parliamentary Assembly', 'Parliamentary Assembly of the Council of Europe'], institution: 'Organization for Security and Co-operation in Europe',
+    publicationDate: '2026-04-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Hungarian'],
+    sourceType: 'preliminary international election observation findings and press release', identifiers: { electionDate: '2026-04-12', reportType: 'Statement of Preliminary Findings and Conclusions' },
+    description: 'The international observation mission reports active voter engagement, genuine choice and efficient election administration while identifying systemic advantages for the ruling party, blurred state/party lines, biased media coverage, campaign-finance shortcomings and concerns about disputes. These are attributed preliminary assessments; the final comprehensive report was not located in this review.'
+  },
+  {
+    id: 'hungaryFundamentalLawSeventeenthAmendment2026',
+    label: 'Hungary — Seventeenth Amendment to the Fundamental Law (adopted 13 July 2026; promulgated 18 July)',
+    url: 'https://njt.jog.gov.hu/jogszabaly/2026-17-04-00',
+    note: 'Official Hungarian legal text consulted in the National Legislation Database for an independently authored legal chronology and summary. No statutory wording or unofficial translation is reproduced. Parliament’s preamble is identified as the legislature’s stated purpose, not treated as proof of the amendment’s effects or as an independent constitutional assessment.',
+    accessDate: '2026-09-24', creators: ['Országgyűlés (National Assembly of Hungary)'], institution: 'Nemzeti Jogszabálytár (National Legislation Database)',
+    publicationDate: '2026-07-19', evidenceRole: 'primary', confidence: 'high', languages: ['Hungarian'],
+    sourceType: 'primary constitutional amendment / official legal text', identifiers: { amendmentNumber: '17', adopted: '2026-07-13', promulgated: '2026-07-18', generalEffectiveDate: '2026-07-19', deferredProvisionsEffective: '2026-10-01' },
+    description: 'The official text records the amendment’s stated constitutional-democracy and rule-of-law objectives, changes to the Fundamental Law, a transitional clause ending the incumbent president’s term the day after entry into force, and provisions deferred until 1 October. It establishes adopted legal text and commencement rules, not constitutionality, consent or democratic effect.'
+  },
+  {
+    id: 'hungaryMtiPrimeMinisterElection2026',
+    label: 'Hungarian National News Agency — Magyar Péter elected prime minister at the Assembly’s inaugural sitting, 9 May 2026',
+    url: 'https://mti.hu/hirek/2026/05/09/ogy-alakulo-ules-megvalasztottak-miniszterelnoknek-magyar-petert',
+    note: 'MTI’s contemporaneous Hungarian-language report, on a service whose operations are funded by the National Assembly, records the vote and oath. It is linked and paraphrased only; the formal parliamentary event is cross-checked against IPU Parline.',
+    accessDate: '2026-09-24', creators: ['Magyar Távirati Iroda (MTI)'], institution: 'Duna Médiaszolgáltató Nonprofit Zrt. / Hungarian National News Agency',
+    publicationDate: '2026-05-09', evidenceRole: 'primary', confidence: 'high', languages: ['Hungarian'],
+    sourceType: 'contemporaneous official news-agency report of parliamentary proceedings', identifiers: { electionDate: '2026-05-09', votesFor: '140', votesAgainst: '54', abstentions: '1' },
+    description: 'Reports that the Assembly elected Péter Magyar prime minister by 140 votes to 54, with one abstention, and that he took the oath. It documents a parliamentary vote, not the political programme’s delivery or public consensus.'
+  },
+  {
+    id: 'hungarySandorPalaceBaka2026',
+    label: 'Sándor Palace — András Baka takes office as President of Hungary, 19 August 2026',
+    url: 'https://www.sandorpalota.hu/en/node/1287',
+    note: 'Official statement by the President’s Office consulted for the successor’s election and assumption of duties. It is linked and paraphrased only; no page wording or images are republished. Its chronology is read together with the constitutional amendment, not as an independent evaluation of that law.',
+    accessDate: '2026-09-24', creators: ['Sándor Palace, Office of the President of Hungary'], institution: 'Office of the President of Hungary',
+    publicationDate: '2026-08-19', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official presidential succession and assumption-of-office release', identifiers: { elected: '2026-08-11', tookOffice: '2026-08-19', amendment: 'Seventeenth Amendment to the Fundamental Law' },
+    description: 'The President’s Office says the National Assembly elected András Baka on 11 August after the Seventeenth Amendment created a vacancy, and that he assumed the full duties and powers of the head of state on 19 August. It also records Speaker Ágnes Forsthoffer’s temporary exercise of presidential duties.'
+  },
+  {
+    id: 'hungaryCsanadiDynamicsAuthoritarian2022',
+    label: 'Mária Csanádi, Imre Kovách, Márton Gerő and Miklós Hajdu — Dynamics of an Authoritarian System: Hungary, 2010–2021',
+    url: 'https://www.aup.nl/en/book/9789633865781/dynamics-of-an-authoritarian-system',
+    note: 'Amsterdam University Press/CEU Press catalogue record and table of contents consulted for bibliographic facts and stated historical scope; the full book was not read. Its publisher-described interpretation and evidence end in 2021 and are historical context, not evidence about the 2026 election or transition.',
+    accessDate: '2026-09-24', creators: ['Mária Csanádi', 'Imre Kovách', 'Márton Gerő', 'Miklós Hajdu'], institution: 'CEU Press / Amsterdam University Press',
+    publicationDate: '2022-07-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length multi-author study of Hungarian institutional and political economy', identifiers: { isbn: '9789633865781', pages: '420', periodCovered: '2010–2021' },
+    description: 'A four-author scholarly book whose publisher describes empirical chapters on institutional change, redistribution, public procurement and political-economic networks under the Orbán government through 2021. Publisher metadata and contents support its bibliographic and scope description only; the full argument was not consulted and the book predates this case.'
+  },
+  {
+    id: 'hungaryBosLorenzPoliticsSociety2022',
+    label: 'Ellen Bos and Astrid Lorenz (eds.) — Politics and Society in Hungary: (De-)Democratization, Orbán and the EU',
+    url: 'https://link.springer.com/book/10.1007/978-3-658-39826-2',
+    note: 'Springer’s book record and table of contents consulted for editorial, publication and scope metadata; the full edited volume was not read. Its chapters provide contextual coverage whose listed periods largely end by 2018; no 2026 event claim is drawn from it.',
+    accessDate: '2026-09-24', creators: ['Ellen Bos', 'Astrid Lorenz'], institution: 'Springer Wiesbaden',
+    publicationDate: '2022-12-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on Hungarian politics, society and Europeanization', identifiers: { doi: '10.1007/978-3-658-39826-2', ebookIsbn: '9783658398262', printIsbn: '9783658398255', pages: '244', edition: '1' },
+    description: 'A comparative edited volume on the Hungarian political system, parties, constitutionalism, society, media, policy and EU relations. Springer identifies the book as a 2023 copyright edition published in December 2022. Catalogue metadata and contents—not full chapters—were consulted; it supplies historical background rather than analysis of the 2026 transition.'
+  },
+  {
+    id: 'hungaryMagyarMadlovicsFieldGuide2022',
+    label: 'Bálint Magyar and Bálint Madlovics — A Concise Field Guide to Post-Communist Regimes: Actors, Institutions, and Dynamics',
+    url: 'https://research.ceu.edu/en/publications/a-concise-field-guide-to-post-communist-regimes-actors-institutio/',
+    note: 'CEU Research Pure record consulted for title, peer-reviewed book categorization, publication metadata and the authors’ regional conceptual scope; the full book was not consulted. It is a post-communist comparative framework, not a Hungary-specific account of the 2026 election.',
+    accessDate: '2026-09-24', creators: ['Bálint Magyar', 'Bálint Madlovics'], institution: 'Central European University Press',
+    publicationDate: '2022', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed book on comparative post-communist regimes', identifiers: { doi: '10.7829/j.ctv2cw0s62', isbn: '9789633865873', ebookIsbn: '9789633865880', pages: '252' },
+    description: 'A CEU Press book presenting a comparative conceptual vocabulary for post-communist political, market and communal action. The university repository categorizes it as a peer-reviewed book. It provides a regional analytic framework rather than a direct evaluation of the 2026 Hungarian electoral and constitutional sequence; only the record and abstract were consulted.'
+  },
+  {
+    id: 'hungaryBenedekOppositionStrategies2026',
+    label: 'István Benedek — “Polarizing transition? Opposition strategies and the rise of Péter Magyar and the Respect and Freedom Party (TISZA) in Hungary”',
+    url: 'https://link.springer.com/article/10.1057/s41295-026-00460-z',
+    note: 'Peer-reviewed Comparative European Politics article, published online 9 March 2026; full article consulted. It analyzes opposition strategy and TISZA’s rise before the 12 April election, so it is used as pre-election interpretation only, not as evidence about election results, the new government or later institutional effects. Linked and paraphrased; no text, figure or table is reproduced.',
+    accessDate: '2026-09-24', creators: ['István Benedek'], institution: 'Comparative European Politics / Springer Nature',
+    publicationDate: '2026-03-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed journal article on Hungarian opposition strategy', identifiers: { doi: '10.1057/s41295-026-00460-z', journal: 'Comparative European Politics', volume: '24', articleNumber: '24' },
+    description: 'Develops an interpretive framework for opposition tactics under regime uncertainty and analyzes the rise of TISZA and Péter Magyar through the pre-election period. Its scholarly typology and normative framing are attributed to the author and are temporally bounded before the April 2026 vote.'
+  },
+  {
+    id: 'hungaryMikolaElectionImplications2026',
+    label: 'Bálint Mikola — “The 2026 Hungarian General Elections and Their Implications for European Politics”',
+    url: 'https://onlinelibrary.wiley.com/doi/full/10.1111/jcms.70163',
+    note: 'Peer-reviewed JCMS: Journal of Common Market Studies article; Wiley lists first publication on 17 September 2026 and open-access availability. Full article consulted for its distinction between regime alteration, democratic recovery and reconsolidation. Its conclusions are attributed to the author, not treated as a final institutional verdict or settled scholarly consensus; linked and paraphrased without reproducing text or tables.',
+    accessDate: '2026-09-24', creators: ['Bálint Mikola'], institution: 'JCMS: Journal of Common Market Studies / Wiley',
+    publicationDate: '2026-09-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed post-election journal article', identifiers: { doi: '10.1111/jcms.70163', status: 'Early View; open access' },
+    description: 'A post-election analysis of Hungary’s 2026 parliamentary result and its European implications. Mikola calls the shift “regime alteration” while arguing that democratic reconsolidation remains unproven and depends on restoring institutional checks, accountability and political learning. These are one scholar’s current interpretation; the article does not establish the long-term outcome of the August transition.'
+  },
+  {
     id: 'burkinaConstitution1991Presidence',
     label: 'Burkina Faso — Constitution of 11 June 1991, Presidency fundamental-texts record',
     url: 'https://www.presidencedufaso.bf/textes-fondamentaux/',
@@ -9804,6 +9914,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
+      : source.id.startsWith('hungary') ? 'Hungarian constitutional, electoral and post-2010 political history'
       : source.id.startsWith('somalia') || source.id.startsWith('bereketeabStateBuildingIdentityHorn') || source.id.startsWith('keatingWaldmanWarPeaceSomalia') || source.id.startsWith('massoudShariaInshallahSomalia') ? 'Somali and Horn of Africa state-building, constitutional, legal and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,

@@ -20,6 +20,13 @@ test('country paths filter, persist and handle newly researched countries', asyn
   await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('brazil');
   await page.goBack();
   await expect(map.getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
+  await page.getByRole('button', { name: 'World view', exact: true }).click();
+  await map.getByRole('button', { name: 'Hungary: 1 matching case', exact: true }).click();
+  await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('map-348');
+  await expect(page.locator('.geo-card')).toHaveCount(1);
+  await expect(page.locator('.geo-card').first()).toContainText('Hungarian 2026 parliamentary alternation and constitutional transition');
+  await page.reload();
+  await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('map-348');
   expect(errors).toEqual([]);
 });
 
