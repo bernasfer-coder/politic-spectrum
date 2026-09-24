@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(157);
+  await expect(page.locator('.geo-card')).toHaveCount(158);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -77,6 +77,24 @@ test('Vanuatu’s 2023–2025 reform record keeps institutional evidence and out
   await expect(card).toHaveCount(1);
 });
 
+test('Tonga’s 2025 election and 2026 petition sequence keeps legal reporting attributed and bounded', async ({ page }) => {
+  await page.goto('/#geography?case=tongan-election-and-post-election-accountability-2025-2026');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('17 directly elected People’s Representatives and nine Noble Representatives');
+  await expect(card).toContainText('not a direct popular election of the Prime Minister');
+  await expect(card).toContainText('neither the judgments nor appellate reasons were available for independent reading');
+  await expect(card).toContainText('no result is asserted');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href="#bibliography/research-tongaMatangiTangimanaAppeal2026"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-tongaMatangiTangimanaAppeal2026$/);
+  const source = page.locator('#source-research-tongaMatangiTangimanaAppeal2026');
+  await expect(source).toBeInViewport();
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: 'geography:tongan-election-and-post-election-accountability-2025-2026', exact: true }).click();
+  await expect(card).toHaveCount(1);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -93,7 +111,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(157);
+  await expect(page.locator('.geo-card')).toHaveCount(158);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

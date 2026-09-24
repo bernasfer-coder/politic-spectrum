@@ -5745,6 +5745,114 @@ const sources = [
     description: 'An original legal-cultural study of the 2010 constitutional reform, emphasizing partial devolution, power-sharing, monarchy, chiefly rank, ordinary citizens and the Tongan concept of constitutional change. Its qualitative and culturally grounded perspective is distinct from Campbell’s historical synthesis and remains bounded to the reform’s process and outcomes.',
   },
   {
+    id: 'tongaElectoralCommissionElectionInformation2025',
+    label: 'Tonga Electoral Commission — National parliamentary election information (2025)',
+    url: 'https://elections.gov.to/to/about-us/election-information/',
+    note: 'Official Electoral Commission election-information page consulted on 24 September 2026. It identifies the scheduled 20 November 2025 national poll, 17 directly elected People’s Representatives, nine Noble Representatives, possible appointment of up to four non-elected Cabinet ministers, and the non-noble voter-registration age. The institutional account anchors the formal administrative description, not an independent assessment of electoral quality or lived access; no page wording or imagery is republished.',
+    accessDate: '2026-09-24', creators: ['Tonga Electoral Commission'], institution: 'Kingdom of Tonga, Tonga Electoral Commission', publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Tongan'],
+    sourceType: 'official election-administration and parliamentary-election information', identifiers: { electionDate: '2025-11-20', directlyElectedPeopleRepresentatives: '17', indirectlyElectedNobleRepresentatives: '9' },
+    description: 'Official institutional description of Tonga’s national parliamentary election structure and the 2025 election date. It documents the Commission’s account of the formal process, not participation equality, voter experience, campaign conduct or the result of later litigation.'
+  },
+  {
+    id: 'tongaIPUParlineElection2025',
+    label: 'Inter-Parliamentary Union — Tonga Legislative Assembly November 2025 election profile',
+    url: 'https://data.ipu.org/parliament/TO/TO-LC01/election/TO-LC01-E20251120/',
+    note: 'IPU Parline election profile consulted on 24 September 2026; its source field cites Tonga’s Legislative Assembly updates dated 23 November 2025 and 23 January 2026. The structured record reports that candidates stood as independents in a polity without a party system, eight new members, one woman among 17 directly elected representatives, and Parliament’s 15 December selection of Lord Fakafanua as Prime Minister-Designate. This institutional synthesis is not an observer report or a full independent audit; no data table is reproduced.',
+    accessDate: '2026-09-24', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union', publicationDate: '2026-01-23', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'parliamentary election results and legislature profile', identifiers: { electionDate: '2025-11-20', firstSession: '2025-12-15', constituencySeats: '17', nobleSeats: '9' },
+    description: 'Structured institutional profile of the 2025 general election and resulting Legislative Assembly, drawing on parliamentary and other linked records. It is used for the reported electoral sequence and representation details, not as proof of fair competition, public consent or a uniform political experience.'
+  },
+  {
+    id: 'tongaParliamentFakafanuaPMVote2025',
+    label: 'Legislative Assembly of Tonga — Lord Fakafanua elected Prime Minister-Designate (2025)',
+    url: 'https://parliament.gov.to/en/media-centre/latest-news/former-speaker-lord-fakafanua-elected-as-tongas-prime-minister-designate',
+    note: 'Official Legislative Assembly press release, created 16 December 2025, consulted as a primary record of the parliamentary vote. It reports Lord Fakafanua’s 16–10 victory over incumbent ʻAisake Eke and distinguishes the Assembly’s selection of a Prime Minister-Designate from the subsequent formal appointment. The release establishes the institution’s reported result, not voter preference for the PM or public consent; no press-release text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Legislative Assembly of Tonga'], institution: 'Legislative Assembly of Tonga', publicationDate: '2025-12-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary prime-minister-designate election record', identifiers: { eventDate: '2025-12-15', votes: '16–10' },
+    description: 'Official account of the newly elected Assembly’s vote selecting Lord Fakafanua as Prime Minister-Designate. It is a parliamentary succession record, not a claim that the electorate directly chose the Prime Minister or that the vote settled wider constitutional debate.'
+  },
+  {
+    id: 'tongaElectoralActRevised2020',
+    label: 'Kingdom of Tonga — Electoral Act, Chapter 04.08 (2020 Revised Edition)',
+    url: 'https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/1989/1989-0022/ElectoralAct_3.pdf',
+    note: 'Attorney General’s Office official legislation PDF identified as the 2020 Revised Edition of the Electoral Act (Chapter 04.08). Consulted as the primary statutory source for the legal setting of parliamentary elections and election petitions; subsequent amendments and the full application of each provision require separate verification. No statutory text or PDF page is reproduced.',
+    accessDate: '2026-09-24', creators: ['Kingdom of Tonga'], institution: 'Attorney General’s Office, Kingdom of Tonga', publicationDate: '2020', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral statute, revised edition', identifiers: { chapter: '04.08', edition: '2020 Revised Edition' },
+    description: 'Official statutory record for the electoral-law framework. It is contextual legal evidence and is not treated as a substitute for the specific court judgments, their appellate reasons or an evaluation of how the rules were experienced.'
+  },
+  {
+    id: 'tongaSupremeCourtElectionPetitionsIndex2026',
+    label: 'Tonga Attorney General’s Office — Supreme Court civil judgments index, CV-2026 (election petitions)',
+    url: 'https://ago.gov.to/cms/judgements/supreme-court-civil/category/247-cv-2026.html',
+    note: 'Official Attorney General’s Office judgment index consulted on 24 September 2026. It lists and links the 24 March 2026 judgment in ʻAisake Hoatatau Finau v Lataifaingataʻa Tangimana (CV 54/25) and the 6 May 2026 judgment and reasons in Uhilamoelangi Fasi v Semis Kioa Lafu Sika (CV 49/2025). The linked judgment PDFs timed out during this research pass, so the index verifies docket metadata only; findings and later appeals are attributed to the cited reporting, not represented as independently read judgments.',
+    accessDate: '2026-09-24', creators: ['Supreme Court of Tonga', 'Attorney General’s Office of Tonga'], institution: 'Attorney General’s Office, Kingdom of Tonga', publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official court judgment index and docket metadata', identifiers: { cases: 'CV 54/25; CV 49/2025', judgmentDates: '2026-03-24; 2026-05-06' },
+    description: 'Official court index that identifies two election-petition proceedings and provides access links to the first-instance judgments. Because the judgment files were not retrieved, the index is not treated as an account of the court’s reasoning or findings.'
+  },
+  {
+    id: 'tongaParliamentTangimanaAppealStay2026',
+    label: 'Legislative Assembly of Tonga — Tangimana retains seat pending Court of Appeal decision (2026)',
+    url: 'https://parliament.gov.to/en/media-centre/latest-news/peoples-representative-for-niua-17-constituency-continues-as-a-member-of-the-legislative-assembly-pending-the-decision-of-the-court-of-appeal',
+    note: 'Chief Clerk’s official Legislative Assembly press release of 24 April 2026, consulted as a primary institutional record. It states that a Supreme Court certificate voiding Tangimana’s election had been issued, but a stay dated 11 April paused unseating pending appeal. The source records the Assembly’s procedural status at that date only; it is not the judgment or the later appeal decision.',
+    accessDate: '2026-09-24', creators: ['Legislative Assembly of Tonga'], institution: 'Legislative Assembly of Tonga', publicationDate: '2026-04-24', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary record of an election-petition stay', identifiers: { underlyingCase: 'CV 54/2025 Finau v Tangimana', stayDate: '2026-04-11', releaseDate: '2026-04-24' },
+    description: 'Primary institutional chronology of the temporary stay affecting the Niua 17 seat while the appeal remained unresolved in April 2026. It must not be read as the final status of the member or the Court of Appeal’s reasons.'
+  },
+  {
+    id: 'tongaMatangiTangimanaAppeal2026',
+    label: 'Matangi Tonga — Niua 17 representative loses election-petition appeal (2026)',
+    url: 'https://matangitonga.to/2026/07/27/former-niuas-17-peoples-rep-loses-appeal-election-remains-void',
+    note: 'Matangi Tonga’s 27 July 2026 report and indexed article summary consulted for the reported Court of Appeal disposition of Tangimana’s appeal. The full article was blocked during retrieval; use only the bounded reported outcome and attribute it to the outlet. The Court of Appeal judgment itself was not retrieved, so no detailed reasoning is claimed and no article wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Matangi Tonga'], institution: 'Matangi Tonga', publicationDate: '2026-07-27', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'local news report on an election-petition appeal', identifiers: { constituency: 'Ongo Niuas 17', decisionDate: '2026-07-27' },
+    description: 'Local reporting that the Court of Appeal left the Supreme Court’s voiding of Tangimana’s election in place. It corroborates a dated procedural outcome; without the appellate judgment it does not support claims about the full reasoning or wider judicial practice.'
+  },
+  {
+    id: 'tongaMatangiSikaAppeal2026',
+    label: 'Matangi Tonga — Tongatapu 2 representative Semisi Sika loses appeal (2026)',
+    url: 'https://matangitonga.to/2026/07/27/former-tongatapu-2-pr-semisi-sika-loses-appeal',
+    note: 'Matangi Tonga report of 27 July 2026, updated 29 July, and its accessible indexed summary consulted for the reported dismissal of Sika’s appeal and continued voiding of the election. The full article was blocked during retrieval; the outcome is therefore attributed to the outlet and not treated as an independently read appellate judgment. No article wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Matangi Tonga'], institution: 'Matangi Tonga', publicationDate: '2026-07-27', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'local news report on an election-petition appeal', identifiers: { constituency: 'Tongatapu 2', decisionDate: '2026-07-27' },
+    description: 'Local reporting that the Court of Appeal dismissed Sika’s challenge and left his election void. The report supports the dated outcome, not a detailed analysis of reasons, the underlying first-instance case or a general verdict on election integrity.'
+  },
+  {
+    id: 'tongaMatangiFusimalohiAppeal2026',
+    label: 'Matangi Tonga — ʻEua 11 representative wins election-petition appeal (2026)',
+    url: 'https://matangitonga.to/2026/07/29/eua-11-peoples-representative-wins-appeal-election-petition',
+    note: 'Matangi Tonga report of 29 July 2026 and its accessible indexed summary consulted for the reported restoration of Taniela Fusimalohi’s seat after a successful appeal. The full article and Court of Appeal judgment were not retrieved; this source is used only as attributed reporting that the appellate outcome differed from the Tangimana and Sika outcomes. No article wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Matangi Tonga'], institution: 'Matangi Tonga', publicationDate: '2026-07-29', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'local news report on an election-petition appeal', identifiers: { constituency: 'ʻEua 11', decisionDate: '2026-07-29' },
+    description: 'Local reporting that a representative whose election had initially been voided over an alleged Starlink-related inducement won an appeal and returned to Parliament. The report illustrates variation in appellate outcomes, not a complete comparison of the judgments or proof that all petitions were identical.'
+  },
+  {
+    id: 'tongaTBCSikaElectionPetition2026',
+    label: 'Tonga Broadcasting Commission — Supreme Court finds Semisi Sika exceeded campaign-spending limit (2026)',
+    url: 'https://tbc.to/en/fakahalaiai-e-he-fakamaauanga-lahi-a-e-fakafofonga-kakai-tongatapu-2-semisi-sika-i-he-maumaui-a-e-lao-fili-fale-alea/',
+    note: 'Tonga Broadcasting Commission’s public-broadcaster report and indexed summary consulted for the May 2026 first-instance decision concerning Sika. The report says the Supreme Court found a breach of campaign-expense rules and declared the election void; the court’s own linked judgment was not retrieved, so the finding remains attributed to the broadcaster and docket rather than independently paraphrased from the reasons. No report wording or translation is reproduced.',
+    accessDate: '2026-09-24', creators: ['Tonga Broadcasting Commission'], institution: 'Tonga Broadcasting Commission', publicationDate: '2026-05', evidenceRole: 'secondary', confidence: 'medium', languages: ['English', 'Tongan'],
+    sourceType: 'public-broadcast report on an election-petition judgment', identifiers: { constituency: 'Tongatapu 2', underlyingCase: 'CV 49/2025 Fasi v Sika' },
+    description: 'Public-broadcast reporting on the Supreme Court’s reported decision in the Tongatapu 2 election petition. It is a secondary report of a legal event and is not substituted for the full judgment or appellate reasons.'
+  },
+  {
+    id: 'tongaMatangiTangimanaFirstInstance2026',
+    label: 'Matangi Tonga — Supreme Court voids Niua 17 election after bribery finding (2026)',
+    url: 'https://matangitonga.to/2026/04/08/election-voided-after-supreme-court-finds-mp-gave-fish-influence-votes',
+    note: 'Matangi Tonga report of 8 April 2026, updated 17 April, and its accessible indexed summary consulted for the Supreme Court’s reported 24 March finding in Finau v Tangimana. The full article was blocked during retrieval and the official judgment PDF timed out; the finding is explicitly attributed to Matangi Tonga, with the official docket index separately anchoring the case and date. No article wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Linny Folau', 'Matangi Tonga'], institution: 'Matangi Tonga', publicationDate: '2026-04-08', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'local news report on an election-petition judgment', identifiers: { constituency: 'Ongo Niuas 17', underlyingCase: 'CV 54/25 Finau v Tangimana', decisionDate: '2026-03-24' },
+    description: 'Local reporting on a Supreme Court election-petition outcome, including the reported finding that fish were distributed to influence votes within a prohibited period. It is a secondary account of one case, not a survey of electoral conduct or voter experience.'
+  },
+  {
+    id: 'tongaMatangiOctoberByelection2026',
+    label: 'Matangi Tonga — October 2026 by-elections for Tongatapu 2 and Ongo Niua 17',
+    url: 'https://matangitonga.to/2026/09/03/14-candidates-tonga-election',
+    note: 'Matangi Tonga report of 3 September 2026, citing the Tonga Electoral Commission’s published list, consulted for the two replacement-seat contests. It reports 14 registered candidates and polling scheduled for 8 October 2026. As of the 24 September 2026 research cutoff, the vote was still in the future; the candidate list and schedule are not election results, and the full premium article was not retrieved.',
+    accessDate: '2026-09-24', creators: ['Katalina Siasau', 'Matangi Tonga'], institution: 'Matangi Tonga', publicationDate: '2026-09-03', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'local news report on scheduled parliamentary by-elections', identifiers: { electionDate: '2026-10-08', registeredCandidates: '14', constituencies: 'Tongatapu 2; Ongo Niua 17' },
+    description: 'Dated reporting on the two vacancies and their announced by-election schedule. It establishes the research cutoff’s pending status only; results after 24 September 2026 are outside this case.'
+  },
+  {
     id: 'fijiGovernmentConstitution2013',
     label: 'Government of Fiji — Constitution of the Republic of Fiji (2013)',
     url: 'https://fiji.gov.fj/About-Fiji/Fijian-Constitution',
@@ -5946,9 +6054,9 @@ const sources = [
     id: 'lawsonTraditionDemocracySamoa1996',
     label: 'Stephanie Lawson — Tradition versus Democracy in the South Pacific: Fiji, Tonga and Western Samoa (1996)',
     url: 'https://www.cambridge.org/core/books/tradition-versus-democracy-in-the-south-pacific/AE3CC1E997943561D36175D55F3020D2',
-    note: 'Cambridge University Press record consulted for Lawson’s comparative book-length analysis, including a dedicated Western Samoa case study. Its argument about tradition, democratization and universal suffrage is attributed and comparative, not treated as a complete Samoan political history.',
-    accessDate: '2026-09-21', creators: ['Stephanie Lawson'], institution: 'Cambridge University Press', publicationDate: '1996', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
-    sourceType: 'book-length comparative political analysis', identifiers: { isbn: '9780521496384', doi: '10.1017/CBO9780511470165', pages: '244' },
+    note: 'Cambridge University Press and Google Books bibliographic/catalogue records and contents consulted. The comparative monograph includes a dedicated Tonga chapter, “The Monarchy Versus Democracy in the Kingdom of Tonga,” and a Western Samoa case study. Its argument about tradition and democratization is a comparative historical interpretation, not a complete history of either country or evidence about the 2025 Tonga election and 2026 petitions; the full book and chapters were not independently collated.',
+    accessDate: '2026-09-24', creators: ['Stephanie Lawson'], institution: 'Cambridge University Press', publicationDate: '1996', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative political history of Fiji, Tonga and Western Samoa', identifiers: { isbn: '9780521496384', doi: '10.1017/CBO9780511470165', pages: '244' },
     description: 'Comparative political study of tradition, democracy and constitutional development in Fiji, Tonga and Western Samoa. The Samoan chapter treats universal suffrage and the preservation or transformation of customary authority as a political problem, providing an independent interpretive perspective rather than a national consensus.',
   },
   {
