@@ -3618,6 +3618,106 @@ const sources = [
     description: 'Edited volume on pluralism, civilian rule, civil society, party politics, Ennahda’s evolution, mobilization, youth precarity and security after 2011. Its contributors present a fragile and contested transition rather than a simple success story; the volume helps bridge the 2014 settlement and the pre-2022 crisis without proving uniform public consent.',
   },
   {
+    id: 'tunisiaWGADOpinion352024',
+    label: 'UN Working Group on Arbitrary Detention — Opinion No. 35/2024 concerning eight individuals (Tunisia)',
+    url: 'https://digitallibrary.un.org/record/4069597/files/A_HRC_WGAD_2024_35-EN.pdf',
+    note: 'Official UN Human Rights Council opinion A/HRC/WGAD/2024/35, adopted at the Working Group’s 100th session (26–30 August 2024) and issued 8 October 2024. It concerns eight named people and finds their detention arbitrary under categories I, II and III. It is a primary international-law assessment of those detentions, not a judgment on the criminal merits or every defendant in the later mass trial; no wording or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['UN Working Group on Arbitrary Detention'], institution: 'United Nations Human Rights Council',
+    publicationDate: '2024-10-08', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French original'],
+    sourceType: 'primary international human-rights opinion', identifiers: { documentSymbol: 'A/HRC/WGAD/2024/35', opinion: '35/2024', session: '100th session, 26–30 August 2024' },
+    description: 'The Working Group concluded that the detention of eight named individuals was arbitrary under categories I, II and III, considering legal basis, protected political activity and fair-trial violations. Its limited personal scope and legal remit must not be conflated with an acquittal or a final domestic criminal judgment.'
+  },
+  {
+    id: 'tunisiaHRWAllConspirators2025',
+    label: 'Human Rights Watch — “All Conspirators”: How Tunisia Uses Arbitrary Detention to Crush Dissent (16 April 2025)',
+    url: 'https://www.hrw.org/report/2025/04/16/all-conspirators/how-tunisia-uses-arbitrary-detention-crush-dissent',
+    note: 'Human Rights Watch’s dated research report and interactive presentation. HRW says it reviewed the investigating judge’s 140-page closing order of 12 April 2024; this is HRW’s reported review, not public access to the complete investigative file or an independently examined full court dossier. Rights-based findings and characterizations are attributed to HRW; no report wording, image or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2025-04-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'human-rights research report on the investigation and detention case', identifiers: { reviewedDocument: 'Investigating judge closing order, 12 April 2024; 140 pages, as described by HRW' },
+    description: 'Documents the arrests beginning in February 2023, the May 2024 referral of 40 of 52 investigated defendants, and HRW’s analysis of the evidence and detention process. Its conclusions about evidentiary weakness and political use of detention remain attributed assessments, not adjudicated findings.'
+  },
+  {
+    id: 'tunisiaICJConspiracyTrial2025',
+    label: 'International Commission of Jurists — Mass verdicts and sentences in Tunisia’s “Conspiracy Case” (23 April 2025)',
+    url: 'https://www.icj.org/tunisia-mass-guilty-verdicts-and-draconian-sentences-the-ultimate-travesty-of-justice-in-the-conspiracy-case/',
+    note: 'ICJ legal advocacy statement published 23 April 2025. It reports 37 convictions among 40 defendants initially on trial, three severed cases, three hearing dates and its legal concerns about remote appearances, access to the courtroom, counsel and adversarial process. These are the organization’s sourced account and legal assessment, not a substitute for the full national judgment; no statement text is reproduced.',
+    accessDate: '2026-09-24', creators: ['International Commission of Jurists'], institution: 'International Commission of Jurists',
+    publicationDate: '2025-04-23', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Arabic'],
+    sourceType: 'international legal organization’s trial-monitoring and fair-trial assessment', identifiers: { trialHearings: '4 March, 11 April and 18 April 2025' },
+    description: 'A legal assessment of the first-instance proceedings and verdicts, with a reported defendant count and hearing chronology. It presents the ICJ’s conclusions under international fair-trial standards; it does not independently establish the full case file or replace a court record.'
+  },
+  {
+    id: 'tunisiaAmnestyConspiracyVerdict2025',
+    label: 'Amnesty International — Mass convictions after the “conspiracy” trial (19 April 2025)',
+    url: 'https://www.amnesty.org/en/latest/news/2025/04/tunisia-mass-convictions/',
+    note: 'Amnesty International statement issued 19 April 2025. Its account says 40 people were sentenced, whereas HRW/ICJ accounts describe 37 convictions from 40 initially on trial with three cases severed. This case preserves that contemporaneous reporting discrepancy because the full national judgment/docket was not located; Amnesty’s legal and political characterizations are attributed, and no statement text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Amnesty International'], institution: 'Amnesty International',
+    publicationDate: '2025-04-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French', 'Arabic', 'Spanish'],
+    sourceType: 'international human-rights organization’s contemporaneous trial report', identifiers: { trialStart: '2025-03-04', firstInstanceDecision: '2025-04-19' },
+    description: 'Records Amnesty’s contemporaneous account of the verdict, alleged fair-trial defects and detention history. Its reported count differs from other detailed contemporaneous monitors and is retained as such rather than silently harmonized.'
+  },
+  {
+    id: 'tunisiaIDEAConspiracyTracker2025',
+    label: 'International IDEA — Tunisia democracy tracker, April 2025 entry on the conspiracy-case verdict',
+    url: 'https://www.idea.int/democracytracker/report/tunisia/april-2025?pid=8044',
+    note: 'International IDEA’s April 2025 country tracker provides an institutional secondary account of the verdict and the political context, drawing on named contemporaneous sources. It is not an official court record or a complete trial transcript; no tracker wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['International Institute for Democracy and Electoral Assistance'], institution: 'International IDEA',
+    publicationDate: '2025-04', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional democracy-monitoring country report', identifiers: { tracker: 'Tunisia, April 2025' },
+    description: 'A concise, dated monitoring account that reports 37 convictions and the trial dates while placing the episode amid deterioration in political pluralism. It is useful as institutional synthesis, not independent access to the court file.'
+  },
+  {
+    id: 'tunisiaAmnestyCassationPreview2026',
+    label: 'Amnesty International — Final judicial avenue in the Tunisia “conspiracy” case (2 September 2026)',
+    url: 'https://www.amnesty.org/en/latest/news/2026/09/tunisia-final-judicial-avenue-to-overturn-convictions-in-unjust-conspiracy-case/',
+    note: 'Amnesty’s 2 September 2026 statement was published ahead of the Court of Cassation hearing on 3 September. Its background distinguishes the 37 first-instance convictions on 18 April 2025 from 34 appeal convictions on 27 November 2025. It is a pre-hearing source and does not itself report the final cassation disposition; advocacy judgments are attributed and no statement text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Amnesty International'], institution: 'Amnesty International',
+    publicationDate: '2026-09-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French', 'Arabic', 'Spanish'],
+    sourceType: 'human-rights organization’s pre-hearing case update', identifiers: { cassationHearing: '2026-09-03', appealDecision: '2025-11-27' },
+    description: 'Provides a pre-hearing procedural chronology: 37 first-instance convictions and 34 appeal convictions. Its claims about the fairness and political motivation of the proceedings are Amnesty’s assessment, not a judicial finding.'
+  },
+  {
+    id: 'tunisiaHRWCassation2026',
+    label: 'Human Rights Watch — Court of Cassation upholds convictions in Tunisia’s conspiracy case (3 September 2026)',
+    url: 'https://www.hrw.org/news/2026/09/03/tunisia-court-upholds-unjust-conspiracy-convictions',
+    note: 'HRW statement dated 3 September 2026 reports that the Court of Cassation upheld convictions and sentences for 34 people from the November 2025 appeal, with final terms from 5 to 45 years. The full cassation judgment or docket was not located for this review; HRW’s characterization of the convictions and proceedings remains attributed. No statement wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2026-09-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Arabic', 'French'],
+    sourceType: 'contemporaneous human-rights report on the final cassation decision', identifiers: { cassationDecision: '2026-09-03', personsReported: '34', reportedSentenceRangeYears: '5–45' },
+    description: 'Reports the final domestic court outcome after the November 2025 appellate phase. Because the primary cassation reasons were not available in the consulted record, this is an attributed report of the disposition, not a direct legal analysis of the judgment.'
+  },
+  {
+    id: 'tunisiaAPCassation2026',
+    label: 'Associated Press — Tunisia’s Court of Cassation rejects appeals in opposition-conspiracy case (4 September 2026)',
+    url: 'https://apnews.com/article/tunisia-opposition-crackdown-convictions-e796a45b0c98f4b639300a8691b947b6',
+    note: 'Associated Press report dated 4 September 2026 on the 3 September Court of Cassation decision. It reports the court rejected the defendants’ appeals, citing the state news agency TAP and judicial sources, and supplies independent news-agency corroboration of the disposition. The judgment itself was not located; no article wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-09-04', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'news-agency report on a final criminal appeal', identifiers: { cassationDecision: '2026-09-03' },
+    description: 'Contemporaneous reporting of the final appeal, based on Tunisian state news agency and judicial sources. It helps corroborate that appeals were rejected but is not a published judgment or a substitute for official docket access.'
+  },
+  {
+    id: 'tunisiaBiagiConstitutionBuilding2025',
+    label: 'Francesco Biagi — Constitution-Building After the Arab Spring: A Comparative Perspective (Cambridge University Press, 2025)',
+    url: 'https://www.cambridge.org/core/books/constitutionbuilding-after-the-arab-spring/6815C91853190782F9294B95B94C23AC',
+    note: 'Cambridge University Press catalog, abstract and contents consulted. Print publication year 2025 (online publication 31 December 2024), 340 pages, print ISBN 9781009533645, ebook ISBN 9781009533669, DOI 10.1017/9781009533669. Chapter 2 examines post-2011 forms of government and distribution of powers and identifies Tunisia’s 2014 Constitution as a semi-presidential system; full chapter text was not accessed. This book supplies only institutional background and predates the 2025–2026 trial outcomes; no book wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Francesco Biagi'], institution: 'Cambridge University Press',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative constitutional-law study with a Tunisia chapter', identifiers: { printIsbn: '9781009533645', ebookIsbn: '9781009533669', doi: '10.1017/9781009533669', chapterDoi: '10.1017/9781009533669.003', pages: '340', relevantChapter: 'Chapter 2, “Systems of Government and Distribution of Powers,” pp. 63–139' },
+    description: 'Comparative study of constitution-building in seven post-2011 Arab cases, including Tunisia. Its publisher abstract and chapter metadata situate the 2014 and 2022 constitutional design context; it does not cover the later mass criminal proceeding.'
+  },
+  {
+    id: 'tunisiaNaftiNotreAmiKaisSaied2024',
+    label: 'Hatem Nafti — Notre ami Kaïs Saïed: essai sur la démocrature tunisienne (Riveneuve, 2024)',
+    url: 'https://www.decitre.fr/livres/notre-ami-kais-saied-9782360137183.html',
+    note: 'French-language publisher/bookshop bibliographic records consulted for the 2024, 302-page essay (ISBN 9782360137183). The full book was not accessed; the description is used only to identify it as political context through 2024, not evidence about the 2025 trial or 2026 appeal. It is an essay, not presented here as peer-reviewed scholarship; no wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Hatem Nafti'], institution: 'Riveneuve',
+    publicationDate: '2024-09-12', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'French-language book-length political essay on the Saïed era', identifiers: { isbn: '9782360137183', pages: '302' },
+    description: 'French-language political essay on the Saïed presidency and authoritarian change, published before the trial verdicts. Its bibliographic record and publisher-level description support a contextual reading list, not claims about the later trial or uniform public support.'
+  },
+  {
     id: 'libyaConstitution1951',
     label: 'DCAF / Libyan legal archive — Constitution of the Kingdom of Libya (1951)',
     url: 'https://security-legislation.ly/ar/latest-laws/%D8%AF%D8%B3%D8%AA%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D9%84%D9%8A%D8%A8%D9%8A%D8%A9-%D9%84%D8%B3%D9%86%D8%A9-1951/',

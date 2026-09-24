@@ -6,7 +6,7 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 155);
+assert.equal(GEOGRAPHY_CASES.length, 156);
 assert.equal(GEOGRAPHY_LABELS.length, 153);
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
@@ -58,6 +58,12 @@ assert.equal(filterGeographyCases({ country: 'burkina-faso' })[0].id, 'burkinabe
 assert.equal(filterGeographyCases({ country: 'sudan' })[0].id, 'sudanese-islamist-military-and-revolutionary-transition');
 assert.equal(filterGeographyCases({ country: 'algeria' })[0].id, 'algerian-postwar-constitutional-hirak-transition');
 assert.equal(filterGeographyCases({ country: 'tunisia' })[0].id, 'tunisian-revolutionary-constitutional-transition');
+const tunisiaCase = GEOGRAPHY_CASES.find(({ id }) => id === 'tunisian-conspiracy-case-and-opposition-trial-2023-2026');
+assert.ok(tunisiaCase);
+assert.equal(tunisiaCase.startYear, 2023);
+assert.equal(tunisiaCase.endYear, 2026);
+assert.equal(tunisiaCase.relationship, 'influenced');
+assert.match(tunisiaCase.limitation, /not a comprehensive history of Tunisia after 2022/);
 assert.equal(filterGeographyCases({ country: 'libya' })[0].id, 'libyan-postcolonial-fragmented-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'morocco' })[0].id, 'moroccan-constitutional-monarchical-reform-transition');
 assert.ok(filterGeographyCases({ country: 'morocco' }).some(({ id }) => id === 'moroccan-post-2021-coalition-and-social-protection-horizon'));
@@ -127,4 +133,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 155 dated cases, 153 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 156 dated cases, 153 unscored labels, citations, boundaries, filters and share URLs.');
