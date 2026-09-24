@@ -5943,6 +5943,93 @@ export const BIBLIOGRAPHY_METADATA = {
     languages: ['Portuguese'],
     description: 'Official CNE record for the 10 March 2024 election to the Assembly of the Republic, including links to the official map and results. It documents electoral administration and the selected endpoint, not representativeness, voter experience, party ideology, policy outcomes or the meaning of the result.'
   },
+  portugal2025LegislativeCne: {
+    accessDate: '2026-09-24', creators: ['Comissão Nacional de Eleições'], institution: 'Comissão Nacional de Eleições',
+    sourceType: 'official legislative election page and result-map portal / Portuguese', evidenceRole: 'primary',
+    discipline: 'Portuguese electoral and constitutional history', publicationDate: '2025-05-18', publisher: 'Comissão Nacional de Eleições',
+    identifiers: { electionDate: '2025-05-18', officialMap: 'Mapa Oficial n.º 2-A/2025', correction: 'Declaração de Retificação n.º 31/2025/1' },
+    confidence: 'high', languages: ['Portuguese'],
+    description: 'CNE’s official page for the 18 May 2025 election links its legal result map, a later correction and the 19 March presidential decree calling the vote. The page anchors election and legal chronology, not political interpretation or voter motivation.'
+  },
+  portugal2025ParliamentResults: {
+    accessDate: '2026-09-24', creators: ['Assembleia da República'], institution: 'Assembleia da República',
+    sourceType: 'official parliamentary election-results page / English', evidenceRole: 'primary',
+    discipline: 'Portuguese parliamentary and electoral history', publicationDate: '2025-05-18', publisher: 'Assembleia da República',
+    identifiers: { legislature: 'XVII Legislature', electionDate: '2025-05-18' }, confidence: 'high', languages: ['English'],
+    description: 'The Parliament’s results page reports returned members and vote totals for the 18 May 2025 election, including the distinct PSD/CDS-PP and Azores coalition arrangements. It is a parliamentary result summary; the official CNE map is the legal result record.'
+  },
+  portugal2025OdihrEet: {
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe',
+    sourceType: 'Election Expert Team final report / English', evidenceRole: 'contextual', discipline: 'Election administration, campaign finance and political participation',
+    publicationDate: '2025-11-12', publisher: 'OSCE/ODIHR', identifiers: { team: 'Election Expert Team', experts: 4, reportDate: '2025-11-12' },
+    confidence: 'high', languages: ['English'],
+    description: 'ODIHR’s four-expert team report assessed campaign finance, campaigning including online, and women’s electoral participation. The team explicitly did not observe election-day proceedings systematically or comprehensively, so its scope is narrower than a full election-observation mission.'
+  },
+  mendesPortugalElection2025: {
+    accessDate: '2026-09-24', creators: ['Mariana S. Mendes'], institution: 'South European Society and Politics',
+    sourceType: 'open-access scholarly journal article / English', evidenceRole: 'secondary', discipline: 'Portuguese elections, party-system change and issue salience',
+    publicationDate: '2025-10-10', publisher: 'South European Society and Politics, 30(3), 469–494',
+    identifiers: { doi: '10.1080/13608746.2025.2567929', volume: '30', issue: '3', pages: '469–494' },
+    confidence: 'high', languages: ['English'],
+    description: 'Full open-access article consulted. Mendes interprets the 2025 election as a potential critical juncture in party-system transformation and discusses migration and issue salience; this is an attributed scholarly interpretation of the legislative contest, not evidence that the electorate shares one ideology.'
+  },
+  pimentaMagalhaesPortugalElection2025: {
+    accessDate: '2026-09-24', creators: ['David Pimenta', 'Pedro C. Magalhães'], institution: 'Revista Más Poder Local',
+    sourceType: 'election research note / English and Spanish', evidenceRole: 'secondary', discipline: 'Portuguese electoral behavior and party-system change',
+    publicationDate: '2025-07', publisher: 'Revista Más Poder Local, no. 61, 167–177',
+    identifiers: { doi: '10.56151/maspoderlocal.300', issue: '61', pages: '167–177' }, confidence: 'medium', languages: ['English', 'Spanish'],
+    description: 'The full 11-page research note was consulted. It analyzes campaign themes, party-system change and voter realignment, while its published table differs slightly from the official Parliament/CNE vote totals; official returns control all counts cited in this case.'
+  },
+  magalhaesCancelaPortuguesePartyBases2025: {
+    accessDate: '2026-09-24', creators: ['João Cancela', 'Pedro C. Magalhães'], institution: 'FCSH-NOVA and Instituto de Ciências Sociais, Universidade de Lisboa',
+    sourceType: 'Portuguese-language scholarly election-survey analysis / online research note', evidenceRole: 'secondary',
+    discipline: 'Portuguese electoral sociology and party-system change', publicationDate: '2025-05-23', publisher: 'Pedro C. Magalhães research site',
+    identifiers: { sample2025: '24,782 election-day survey respondents in continental Portugal' }, confidence: 'medium', languages: ['Portuguese'],
+    description: 'Full Portuguese text and methods consulted. The authors compare weighted election-day surveys from 2022, 2024 and 2025 and model demographic and geographic support. The estimates cover continental Portugal and are not official returns or a direct measure of individual motivation.'
+  },
+  russoPortugalSnapElection2026: {
+    accessDate: '2026-09-24', creators: ['Luís Russo'], institution: 'West European Politics',
+    sourceType: 'journal election report / English; publisher abstract consulted', evidenceRole: 'secondary',
+    discipline: 'Portuguese snap election and populist party competition', publicationDate: '2025-11-18', publisher: 'West European Politics, 49(4), 1133–1150 (2026)',
+    identifiers: { doi: '10.1080/01402382.2025.2579261', volume: '49', issue: '4', pages: '1133–1150', onlinePublicationDate: '2025-11-18' },
+    confidence: 'medium', languages: ['English'],
+    description: 'Publisher citation and abstract consulted; the complete article was not accessed. It supplies an additional attributed interpretation of the snap election, not independently verified event facts or an event-specific book-length history.'
+  },
+  portugal2026PresidentialFirstRoundCne: {
+    accessDate: '2026-09-24', creators: ['Comissão Nacional de Eleições'], institution: 'Comissão Nacional de Eleições',
+    sourceType: 'official presidential election page and result-map portal / Portuguese', evidenceRole: 'primary',
+    discipline: 'Portuguese presidential and electoral history', publicationDate: '2026-01-18', publisher: 'Comissão Nacional de Eleições',
+    identifiers: { electionDate: '2026-01-18', officialMap: 'Mapa Oficial n.º 1-A/2026' }, confidence: 'high', languages: ['Portuguese'],
+    description: 'CNE’s official first-round page links the 30 January 2026 result map, which records the first-round vote and the two candidates advancing to the runoff. It is a primary electoral record, not evidence of a single ideological mandate.'
+  },
+  portugal2026PresidentialSecondRoundCne: {
+    accessDate: '2026-09-24', creators: ['Comissão Nacional de Eleições'], institution: 'Comissão Nacional de Eleições',
+    sourceType: 'official presidential runoff page and polling-postponement record / Portuguese', evidenceRole: 'primary',
+    discipline: 'Portuguese presidential election administration', publicationDate: '2026-02-08', publisher: 'Comissão Nacional de Eleições',
+    identifiers: { electionDate: '2026-02-08', officialMap: 'Mapa Oficial n.º 1/2026' }, confidence: 'high', languages: ['Portuguese'],
+    description: 'CNE’s official page for the second presidential ballot links the final result map and decisions/list of local polling postponements. It records election administration and outcome, not voter motives or a complete assessment of campaign quality.'
+  },
+  portugal2026PresidentialFinalMap: {
+    accessDate: '2026-09-24', creators: ['Comissão Nacional de Eleições'], institution: 'Diário da República / Comissão Nacional de Eleições',
+    sourceType: 'official final presidential-election results map / Portuguese', evidenceRole: 'primary',
+    discipline: 'Portuguese presidential election law and results', publicationDate: '2026-02-26', publisher: 'Diário da República, 1.ª série, n.º 40',
+    identifiers: { officialMap: 'Mapa Oficial n.º 1/2026', electionDate: '2026-02-08' }, confidence: 'high', languages: ['Portuguese'],
+    description: 'Final CNE map for the 8 February runoff, reporting the votes and percentages for Seguro and Ventura and naming the elected candidate. Its notes also document discrepancies in registered-elector and counted-vote figures; those caveats accompany the final figures.'
+  },
+  portugal2026PresidentialWeatherNotice: {
+    accessDate: '2026-09-24', creators: ['Comissão Nacional de Eleições'], institution: 'Comissão Nacional de Eleições',
+    sourceType: 'official election-administration notice / Portuguese', evidenceRole: 'primary',
+    discipline: 'Portuguese election administration and voting access', publicationDate: '2026-02-07', publisher: 'Comissão Nacional de Eleições',
+    identifiers: { affectedParishes: 16, affectedAssemblies: 3, registeredElectors: 31862 }, confidence: 'high', languages: ['Portuguese'],
+    description: 'CNE’s 7 February statement attributes local postponements to adverse-weather forecasts and gives the number of affected polling locations and registered electors known at the time. It does not establish how every affected elector voted or experienced the postponement.'
+  },
+  portugal2026PresidentialInauguration: {
+    accessDate: '2026-09-24', creators: ['Presidency of the Portuguese Republic'], institution: 'Presidency of the Portuguese Republic',
+    sourceType: 'official investiture notice / Portuguese source with automated English version', evidenceRole: 'primary',
+    discipline: 'Portuguese constitutional and presidential succession', publicationDate: '2026-03-09', publisher: 'Presidency of the Portuguese Republic',
+    identifiers: { inaugurationDate: '2026-03-09', presidentNumber: 'XXI' }, confidence: 'high', languages: ['Portuguese', 'English (automated translation)'],
+    description: 'Official Presidency notice records António José Seguro’s 9 March 2026 investiture in the Assembly of the Republic. The English webpage is an automated translation of Portuguese text; the notice establishes the formal date and ceremony, not the subsequent policy record.'
+  },
   cdsHistoryOfficial: {
     accessDate: '2026-09-18',
     creators: ['Centro Democrático Social'],
