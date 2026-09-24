@@ -7462,6 +7462,86 @@ const sources = [
     description: 'Spanish-language academic chapter examining the emergence and 2021 CABA electoral performance of Javier Milei’s force through territorial and digital organization, interviews and the liberal-popular and anti-caste vocabulary. It offers a subnational, pre-presidential perspective that must not be generalized to all Argentina or the later national administration.'
   },
   {
+    id: 'argentinaLaw27781PaperBallot2024Official',
+    label: 'Argentina — Ley 27.781, Boleta Única Papel (2024)',
+    url: 'https://www.argentina.gob.ar/normativa/nacional/ley-27781-405395/texto',
+    note: 'Official Argentina.gob.ar text of Law 27.781, enacted 1 October and published 18 October 2024, consulted as a primary legal source and link only. No statutory wording, ballot design or scan is reproduced; formal law is distinguished from implementation and its effects on voting.',
+    accessDate: '2026-09-24', creators: ['Honorable Congreso de la Nación Argentina'], institution: 'Argentina.gob.ar / Honorable Congress of the Nation',
+    publicationDate: '2024-10-18', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary statute / official electoral-law record', identifiers: { law: '27.781', sanctionDate: '2024-10-01', publicationDate: '2024-10-18' },
+    description: 'Primary statutory record establishing the Boleta Única de Papel for national elections and modifying electoral-code and party-law provisions. It supports claims about formal voting rules, not how the ballot affected choices or election quality.'
+  },
+  {
+    id: 'argentinaLaw27783PasoSuspension2025Official',
+    label: 'Argentina — Ley 27.783 suspending PASO primaries during 2025',
+    url: 'https://www.argentina.gob.ar/normativa/nacional/---410378/texto',
+    note: 'Official Argentina.gob.ar text of Law 27.783, sanctioned 20 February and published 7 March 2025, consulted as a primary legal source and link only. No statutory wording, scan or page is reproduced; this records the one-year suspension, not a permanent repeal or its political effects.',
+    accessDate: '2026-09-24', creators: ['Honorable Congreso de la Nación Argentina'], institution: 'Argentina.gob.ar / Honorable Congress of the Nation',
+    publicationDate: '2025-03-07', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary statute / official electoral-law record', identifiers: { law: '27.783', sanctionDate: '2025-02-20', publicationDate: '2025-03-07' },
+    description: 'Primary statutory record suspending the open, simultaneous and compulsory primary elections for the 2025 electoral year and setting related deadline rules. It does not itself establish why parties or voters acted as they did.'
+  },
+  {
+    id: 'argentinaDecree3352025Official',
+    label: 'Argentina — Presidential Decree 335/2025 calling national legislative elections',
+    url: 'https://www.electoral.gob.ar/nuevo/paginas/pdf/Dto%20335-25.pdf',
+    note: 'Decree 335/2025, dated and published 20 May 2025, hosted by the Cámara Nacional Electoral; consulted as a primary executive legal record and link only. No decree wording, annex table, scan or PDF page is reproduced; the decree establishes the formal call and mandates due, not electoral outcomes.',
+    accessDate: '2026-09-24', creators: ['Presidencia de la Nación Argentina'], institution: 'Presidencia de la Nación / Cámara Nacional Electoral',
+    publicationDate: '2025-05-20', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary executive decree / official election call', identifiers: { decree: '335/2025', publicationDate: '2025-05-20', electionDate: '2025-10-26' },
+    description: 'Primary decree calling the electorate to choose national deputies and senators on 26 October 2025, listing 127 expiring deputy mandates and 24 Senate mandates from eight districts. It establishes the election’s formal scope, not results or voter motives.'
+  },
+  {
+    id: 'argentinaCneDefinitiveActs2025Official',
+    label: 'Cámara Nacional Electoral — definitive-scrutiny actas index, 2025 national general election',
+    url: 'https://www.electoral.gob.ar/nuevo/paginas/btn/actas2025.php',
+    note: 'CNE portal indexed the definitive-scrutiny actas for each of the 24 electoral districts; consulted for the official availability and district structure of those records, not as an independent recount. The actas themselves were not collated in this update, and no results table, candidate data or document image is republished.',
+    accessDate: '2026-09-24', creators: ['Cámara Nacional Electoral de la República Argentina'], institution: 'Poder Judicial de la Nación Argentina / Cámara Nacional Electoral',
+    evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official electoral-court index of definitive district scrutiny records', identifiers: { election: 'Argentina national legislative election 2025', districts: '24', recordType: 'definitive-scrutiny actas' },
+    description: 'Official index linking the definitive-scrutiny actas for all 24 electoral districts. It supports the existence and decentralized publication of primary records; this index alone does not supply a national aggregate or prove that the linked acts have been independently re-tabulated.'
+  },
+  {
+    id: 'argentinaCneAcordada1382025Official',
+    label: 'Cámara Nacional Electoral — Acordada 138/2025 on publication of provisional election results',
+    url: 'https://www.electoral.gob.ar/nuevo_legislacion/pdf/AE%20138-25%20CE.pdf',
+    note: 'CNE Acordada 138/2025 and the court’s legislative-compendium listing consulted as primary electoral-court records and link only. No order text or PDF page is reproduced; its provisional-result publication rule is kept distinct from definitive district scrutiny and proclamation.',
+    accessDate: '2026-09-24', creators: ['Cámara Nacional Electoral de la República Argentina'], institution: 'Poder Judicial de la Nación Argentina / Cámara Nacional Electoral',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary electoral-court acordada / official procedure', identifiers: { acordada: '138/2025', subject: 'Provisional publication of national legislative-election results by district' },
+    description: 'Primary court accord specifying criteria for publication of provisional returns by electoral district. It is not itself the definitive result record and does not establish vote totals.'
+  },
+  {
+    id: 'argentinaOrrLegislativeElection2025',
+    label: 'Analía Orr — “La Argentina de Milei: elecciones legislativas nacionales en 2025” (2026)',
+    url: 'https://doi.org/10.22201/iij.24487910e.2026.24.20861',
+    note: 'Full Spanish-language article and publisher record consulted. Bibliographic metadata is Revista Mexicana de Derecho Electoral 13(24), Jan–Jun 2026, e20861; the publisher page dates online publication 25 February 2026. Orr states that her results data were checked against a mixture of official, journalistic and academic sources; vote-share, chamber-composition and realignment claims are attributed to her, not presented as an independent recalc of the 24 district actas. The article is CC BY 4.0, but this entry uses original paraphrase and the DOI link only; no text, translation, table or figure is reproduced.',
+    accessDate: '2026-09-24', creators: ['Analía Orr'], institution: 'Revista Mexicana de Derecho Electoral / Instituto de Investigaciones Jurídicas, Universidad Nacional Autónoma de México',
+    publicationDate: '2026-02-25', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'scholarly journal article on Argentina’s 2025 legislative election', identifiers: { doi: '10.22201/iij.24487910e.2026.24.20861', journal: 'Revista Mexicana de Derecho Electoral', volume: '13', issue: '24', article: 'e20861', eissn: '2448-7910', license: 'CC BY 4.0' },
+    description: 'A Spanish-language institutional, party-system and electoral analysis of the 2025 midterm election. Orr reports vote and resulting-chamber figures using data she says were checked against official, press and academic material; she interprets them as a rightward realignment combined with continued legislative fragmentation. Those conclusions remain attributable and do not establish individual voter motivation, durable consensus or an ideological profile for all Argentina.'
+  },
+  {
+    id: 'argentinaBalsaWhyMilei2024',
+    label: 'Javier Balsa — ¿Por qué ganó Milei? Disputas por la hegemonía y la ideología en Argentina (2024)',
+    url: 'https://fce.com.ar/tienda/politica/por-que-gano-milei/',
+    note: 'Fondo de Cultura Económica publisher catalog record consulted for the Spanish-language monograph (2024, 427 pages, ISBN 9789877194739). The publisher description and bibliographic metadata, not the full text, were consulted for this case; it studies the 2021–2023 context and is not evidence about 2025 results. No book wording, quotation, table or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Javier Balsa'], institution: 'Fondo de Cultura Económica de Argentina',
+    publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length scholarly study of the 2023 Milei electoral rise', identifiers: { isbn: '9789877194739', pages: '427' },
+    description: 'Publisher metadata describes a study using more than fifteen surveys and fieldwork from 2021–2023 to interpret Milei’s rise, social and cultural conditions, and ideological disputes. It provides pre-election context only; the full monograph was not read for this case.'
+  },
+  {
+    id: 'argentinaGrimsonDesquiciados2024',
+    label: 'Alejandro Grimson (coord.) — Desquiciados: Los vertiginosos cambios que impulsa la extrema derecha en el mundo (2024)',
+    url: 'https://sigloxxieditores.com.ar/libro/desquiciados/',
+    note: 'Siglo XXI Editores publisher metadata consulted for the Spanish-language edited volume (first edition July 2024, 272 pages, ISBN 9789878013572). The publisher description/catalog record, not the full book, was consulted for this case; it predates the election and is used only as a contextual bibliography lead. No book wording, quotation, table or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Alejandro Grimson'], institution: 'Siglo XXI Editores',
+    publicationDate: '2024-07', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length edited study of contemporary far-right politics', identifiers: { isbn: '9789878013572', pages: '272', role: 'coordinator' },
+    description: 'The publisher describes a multidisciplinary and comparative collection addressing contemporary far-right change, with particular attention to Argentina, political identities and libertarian movement-building. It is pre-election context, not a history of the 2025 campaign or result; the full volume was not read for this entry.'
+  },
+  {
     id: 'peruConstitution1993Congress',
     label: 'Peru — Constitución Política del Perú de 1993, Congreso de la República',
     url: 'https://www.congreso.gob.pe/constitucion-del-peru-y-reglamento/',
