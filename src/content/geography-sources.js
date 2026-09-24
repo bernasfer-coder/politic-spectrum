@@ -9467,6 +9467,76 @@ const sources = [
     sourceType: '106-page edited scholarly volume on the post-Assad transition', identifiers: { series: 'POMEPS Studies', volume: '57', pages: '106', partnerNetwork: 'Arab Political Science Network' },
     description: 'A multi-author collection addressing central and local governance, security-sector reform, transitional justice, displacement and return, economic recovery and water. The chapters offer varied and sometimes competing arguments; they are not collapsed into a single scholarly consensus.'
   },
+  {
+    id: 'coteDivConstitutionalCouncilCandidates2025',
+    label: 'Conseil constitutionnel de Côte d’Ivoire — Décision n° CI-2025-EP-006/08-09/CC/SG, liste définitive des candidats (8 septembre 2025)',
+    url: 'https://www.conseil-constitutionnel.ci/sites/default/files/decision_ci-2025-ep-006_du_08.09.2025.pdf',
+    note: 'Official French-language Constitutional Council decision consulted as a primary legal record and linked for independent summary only. It records the Council’s rules and determinations, including the five admitted presidential candidates and its findings concerning Tidjane Thiam’s and Laurent Gbagbo’s voter registration and, for Gbagbo, invalid sponsorships. It also records the parties’ objections; no decision wording, translation, scan or PDF page is republished, and the institutional finding is not an independent merits review.',
+    accessDate: '2026-09-24', creators: ['Conseil constitutionnel de Côte d’Ivoire'], institution: 'Conseil constitutionnel de Côte d’Ivoire',
+    publicationDate: '2025-09-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary judicial decision / presidential-candidate eligibility and election-list ruling', identifiers: { decision: 'CI-2025-EP-006/08-09/CC/SG', decisionDate: '2025-09-08', electionDate: '2025-10-25', pages: '39' },
+    description: 'The Council’s definitive candidate-list decision sets out the legal framework and its determinations on candidate eligibility and registration. It is evidence of the court’s institutional reasoning and of arguments raised by the PPA-CI and PDCI-RDA, not an external assessment of the fairness of the rules or the electoral process.'
+  },
+  {
+    id: 'coteDivConstitutionalCouncilResults2025',
+    label: 'Conseil constitutionnel de Côte d’Ivoire — Décision n° CI-2025-EP-007/04-11/CC/SG, résultats définitifs de l’élection présidentielle (4 novembre 2025)',
+    url: 'https://www.conseil-constitutionnel.ci/sites/default/files/decision_2025-ep-007_du_04.11.2025.pdf',
+    note: 'Official four-page French-language Constitutional Council decision used as a primary witness to the Council-certified presidential result and election procedure. The record reports 50.10% turnout, 89.77% for Alassane Ouattara, no candidate complaints received by the court and the court’s finding that it saw no irregularity affecting the overall result. These are institutional findings, not independent evidence of equal competition, public consent or overall electoral quality; no decision text, translation, scan or table is republished.',
+    accessDate: '2026-09-24', creators: ['Conseil constitutionnel de Côte d’Ivoire'], institution: 'Conseil constitutionnel de Côte d’Ivoire',
+    publicationDate: '2025-11-04', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary judicial decision / definitive presidential-election results', identifiers: { decision: 'CI-2025-EP-007/04-11/CC/SG', decisionDate: '2025-11-04', electionDate: '2025-10-25', pages: '4' },
+    description: 'The final decision certifies the 25 October 2025 presidential result and records the Council’s review and complaint process. It establishes what the constitutional court decided, not the scope of independent observation or public acceptance.'
+  },
+  {
+    id: 'coteDivInternationalIdeaElection2025',
+    label: 'International IDEA — Presidential Election, 25 October 2025: Côte d’Ivoire election analysis',
+    url: 'https://www.idea.int/node/161045',
+    note: 'International IDEA’s fully consulted English-language country election page synthesizes the 2025 contest and identifies its own bibliography, including observer and media reporting. It is used as secondary institutional analysis, not as a primary record or independent election-observation report; its attributed reports, competing interpretations and analytical uncertainty are not converted into consensus findings.',
+    accessDate: '2026-09-24', creators: ['International Institute for Democracy and Electoral Assistance'], institution: 'International IDEA',
+    publicationDate: null, evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional election analysis / consulted synthesis with linked bibliography', identifiers: { electionDate: '2025-10-25', country: 'Côte d’Ivoire' },
+    description: 'A post-election institutional synthesis covering candidate exclusions, reported protests, turnout, observation, participation and competing readings of the 2016 constitutional change and presidential term limit. It distinguishes cited reporting from official results but is not a substitute for the primary rulings or a final observer report.'
+  },
+  {
+    id: 'coteDivAmnestyElectionRights2025',
+    label: 'Amnesty International — Côte d’Ivoire: The State of the World’s Human Rights 2025 country report (published 2026)',
+    url: 'https://www.amnesty.org/en/location/africa/west-and-central-africa/cote-divoire/report-cote-divoire/',
+    note: 'Amnesty International’s 2025 country chapter, published in its 2026 annual report, was consulted in full for its dated account of restrictions on assemblies, protest-related arrests and reported deaths. The 11-death and 1,658-arrest totals are explicitly attributed in the report to the National Security Council’s 13 November 2025 statement; no independent consolidated total is asserted. Amnesty’s rights assessments remain attributed, and no report wording, image or table is republished.',
+    accessDate: '2026-09-24', creators: ['Amnesty International'], institution: 'Amnesty International',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'annual human-rights country report / election-period rights assessment', identifiers: { reportingYear: '2025', annualReportYear: '2026', electionDate: '2025-10-25' },
+    description: 'Amnesty’s country report documents its assessment of civic-space restrictions during the presidential election period and reports official figures for deaths and arrests. The state-reported counts, Amnesty’s analysis and the official election certification are kept analytically distinct.'
+  },
+  {
+    id: 'coteDivCeiLegislativeResultsJanuary2026',
+    label: 'Commission électorale indépendante de Côte d’Ivoire — Résultats définitifs des élections législatives du 27 décembre 2025 (9 janvier 2026)',
+    url: 'https://cei.ci/communique-relatif-a-la-proclamation-des-resultats-definitifs-de-lelection-des-deputes-a-lassemblee-nationale-du-27-decembre-2025/',
+    note: 'Official French-language CEI communique consulted as a primary electoral record and linked for independent summary only. It says results became final in all but two constituencies, where the Constitutional Council ordered repeat elections; it therefore does not establish a final complete seat distribution on 9 January. No results table, wording, translation, scan or image is republished.',
+    accessDate: '2026-09-24', creators: ['Commission électorale indépendante de Côte d’Ivoire'], institution: 'Commission électorale indépendante de Côte d’Ivoire',
+    publicationDate: '2026-01-09', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral communique / definitive legislative results except two rerun constituencies', identifiers: { electionDate: '2025-12-27', communiqueDate: '2026-01-09', repeatConstituencies: '021 Toumodi; 204 Dualla and Massala' },
+    description: 'The CEI records the partial finalization of the National Assembly election results after constitutional litigation and the scheduled repetition of two constituency elections. This is a dated administrative record, not an evaluation of participation or legislative representation.'
+  },
+  {
+    id: 'coteDivCeiLegislativeRunoffsMarch2026',
+    label: 'Commission électorale indépendante de Côte d’Ivoire — Final results for Toumodi and Dualla–Massala repeat legislative elections (13 March 2026)',
+    url: 'https://cei.ci/communique-relatif-aux-resultats-definitifs-des-elections-des-deputes-a-lassemblee-nationale-dans-les-circonscriptions-electorales-n021-toumodi-commune-et-n204-dualla-et-mass/',
+    note: 'Official French-language CEI communique consulted as a primary record and linked for independent summary only. It records the 21 February 2026 reruns in two constituencies, one post-result petition in Dualla–Massala, the Constitutional Council’s confirmation by correspondence, and the named elected representatives. This closes only the documented two-seat rerun sequence; the communique does not establish wider electoral fairness, representation or public consent. No text, results table, translation or image is republished.',
+    accessDate: '2026-09-24', creators: ['Commission électorale indépendante de Côte d’Ivoire'], institution: 'Commission électorale indépendante de Côte d’Ivoire',
+    publicationDate: '2026-03-13', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral communique / final repeat legislative results and judicial review', identifiers: { electionDate: '2026-02-21', communiqueDate: '2026-03-13', repeatConstituencies: '021 Toumodi; 204 Dualla and Massala' },
+    description: 'The CEI reports the rerun and finalization of the two constituency results left unresolved after the December 2025 legislative election. Its account is an official record of the administrative and communicated court endpoint, not an independent election-quality assessment.'
+  },
+  {
+    id: 'coteDivBanegasCutoloWarPapers2025',
+    label: 'Richard Banégas and Armando Cutolo — La guerre des papiers en Côte d’Ivoire: Ethnographie politique de l’identification et de la citoyenneté (2025)',
+    url: 'https://www.karthala.com/accueil/3655-la-guerre-des-papiers-en-cote-d-ivoire-ethnographie-politique-de-l-identification-et-de-la-citoyennete-.html',
+    note: 'Karthala’s publisher catalogue supplies author, title, publication date (23 October 2025), series, ISBN 9782384093915 and 350-page extent, and describes the book’s decade of research on identity documents, citizenship and civic exclusion. Only the publisher page and metadata were consulted, not the book itself; it appeared two days before the presidential election and is strictly contextual, not a study or witness of the 25 October result or subsequent protests. No prose or promotional copy is reproduced.',
+    accessDate: '2026-09-24', creators: ['Richard Banégas', 'Armando Cutolo'], institution: 'Éditions Karthala',
+    publicationDate: '2025-10-23', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'book-length French-language political ethnography of identification and citizenship; publisher record only', identifiers: { isbn: '9782384093915', pages: '350', collection: 'Hommes et sociétés' },
+    description: 'The publisher describes a decade of inquiry into civil-status and identity documents, citizenship, postwar reform, biometric registration and civic exclusion, including recurring controversies around presidential candidates’ civil-status records. Because the full book was not consulted and it predates the election, it contextualizes but does not document this case’s specific candidacies or outcome.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9511,7 +9581,8 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('chad') || source.id.startsWith('azevedoNationFutureChad') || source.id.startsWith('nolutshunguLimitsAnarchyChad') || source.id.startsWith('azevedoRootsViolenceChad') || source.id.startsWith('powellFrancesWarsChad') || source.id.startsWith('dingammadjiGovernmentsChad') || source.id.startsWith('buijtenhuijsTransitionChad') || source.id.startsWith('haggarTombalbayeChad') || source.id.startsWith('brodyCatchDictatorChad') ? 'Chadian constitutional, civil-war, intervention and transition history'
       : source.id.startsWith('cameroon') || source.id.startsWith('ngohHistoryCameroon') || source.id.startsWith('josephRadicalNationalismCameroon') || source.id.startsWith('ngohSouthernCameroons') || source.id.startsWith('terrettaNationOutlawsCameroon') || source.id.startsWith('takougangKriegerPoliticalCrossroadsCameroon') || source.id.startsWith('bouopdaPoliticalHistoryCameroon') || source.id.startsWith('bouopdaAnglophoneCrisisCameroon') ? 'Cameroonian constitutional, decolonization, bilingual and Anglophone-crisis history'
       : source.id.startsWith('iraq') || source.id.startsWith('trippHistoryIraq') || source.id.startsWith('marrModernHistoryIraq') || source.id.startsWith('dawishaPoliticalHistoryIraq') || source.id.startsWith('dodgeIraq') || source.id.startsWith('haddadSectarianismIraq') || source.id.startsWith('alAliStruggleIraq') || source.id.startsWith('franzenPridePowerIraq') || source.id.startsWith('herringRangwalaIraq') ? 'Iraqi constitutional, occupation, sectarianization and political history'
-      : source.id.startsWith('syria') || source.id.startsWith('unSyria') || source.id.startsWith('abboudSyria') || source.id.startsWith('hinnebuschImadySyrian') || source.id.startsWith('vanDamDestroyingNation') || source.id.startsWith('yassinKassabAlShami') || source.id.startsWith('listerSyrian') || source.id.startsWith('baczkoDorronsoroQuesnay') || source.id.startsWith('hinnebuschSaouliWarForSyria') ? 'Syrian constitutional, conflict and political history'
+    : source.id.startsWith('coteDiv') || source.id.startsWith('mcgovernMakingWarCoteIvoire') || source.id.startsWith('bouquetGeopolitiqueCoteIvoire') || source.id.startsWith('koffiHouphouetMutations') || source.id.startsWith('baillyMultipartismeCoteIvoire') || source.id.startsWith('amondjiHouphouetCoteIvoire') ? 'Ivorian constitutional, electoral and political history'
+    : source.id.startsWith('syria') || source.id.startsWith('unSyria') || source.id.startsWith('abboudSyria') || source.id.startsWith('hinnebuschImadySyrian') || source.id.startsWith('vanDamDestroyingNation') || source.id.startsWith('yassinKassabAlShami') || source.id.startsWith('listerSyrian') || source.id.startsWith('baczkoDorronsoroQuesnay') || source.id.startsWith('hinnebuschSaouliWarForSyria') ? 'Syrian constitutional, conflict and political history'
       : source.id.startsWith('afghanistan') || source.id.startsWith('unAfghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') || source.id.startsWith('abbasReturnTaliban') || source.id.startsWith('saikalHowLoseWar') || source.id.startsWith('jacksonNegotiatingSurvival') ? 'Afghan constitutional, conflict and de facto-governance history'
       : source.id.startsWith('france') || source.id.startsWith('atkinFifthFrench') || source.id.startsWith('elgiePoliticalInstitutionsFrance') || source.id.startsWith('knappWrightGovernmentFrance') || source.id.startsWith('duhamelFoucaultFullaLazarRepublic') ? 'French constitutional, Fifth Republic and political history'
       : source.id.startsWith('burkina') || source.id.startsWith('harschBurkina') || source.id.startsWith('englebertBurkina') || source.id.startsWith('kaborePoliticalHistoryBurkina') || source.id.startsWith('englebertCotRevolutionBurkina') || source.id.startsWith('sankaraSpeeches') ? 'Burkinabè constitutional, revolutionary and political-transition history'

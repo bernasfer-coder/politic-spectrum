@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(159);
+  await expect(page.locator('.geo-card')).toHaveCount(160);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -113,6 +113,29 @@ test('Syria’s post-Assad transition keeps constitutional design, dated institu
   await expect(card).toHaveCount(1);
 });
 
+test('Côte d’Ivoire’s 2025–2026 election case separates court determinations, rights reporting and book context', async ({ page }) => {
+  await page.goto('/#geography?case=cote-divoire-2025-election-and-post-election-institutions');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('54,977 valid sponsorships against 75,003 required');
+  await expect(card).toContainText('50.10%');
+  await expect(card).toContainText('different attributions and are not reconciled');
+  await expect(card).toContainText('publisher metadata, not full-text consultation');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href="#bibliography/research-coteDivConstitutionalCouncilCandidates2025"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-coteDivConstitutionalCouncilCandidates2025$/);
+  const source = page.locator('#source-research-coteDivConstitutionalCouncilCandidates2025');
+  await expect(source).toBeInViewport();
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: 'geography:cote-divoire-2025-election-and-post-election-institutions', exact: true }).click();
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href="#bibliography/research-coteDivBanegasCutoloWarPapers2025"]').click();
+  const bookRecord = page.locator('#source-research-coteDivBanegasCutoloWarPapers2025');
+  await expect(bookRecord).toBeInViewport();
+  await expect(bookRecord).toContainText('full book was not consulted');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -129,7 +152,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(159);
+  await expect(page.locator('.geo-card')).toHaveCount(160);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
