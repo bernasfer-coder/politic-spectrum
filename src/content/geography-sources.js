@@ -1,6 +1,126 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'kosovoConstitutionAssembly2008',
+    label: 'Kosovo — Constitution of the Republic of Kosovo (official Assembly edition, as amended)',
+    url: 'https://www.assemblyofkosovo.org/Uploads/Data/Files/5/ConstitutionoftheRepublicofKosovovithamend.I-XXV_rwWEfAUpgP.pdf',
+    note: 'Official constitutional text consulted as the primary legal framework for Assembly formation, election of the government and dissolution. No wording, translation, scan or PDF page is republished; constitutional text is not treated as proof of timely or uncontested institutional practice.',
+    accessDate: '2026-09-24', creators: ['Republic of Kosovo'], institution: 'Assembly of the Republic of Kosovo',
+    publicationDate: '2008', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { constitutionYear: '2008', amendmentsThrough: 'XXV' },
+    description: 'The official English constitutional text is a primary source for the constitutional procedures engaged by the 2025–2026 election and government-formation sequence. Its formal provisions do not by themselves establish how the deadlines or procedures were applied in practice.'
+  },
+  {
+    id: 'kosovoCecGeneralElection2025',
+    label: 'Kosovo Central Election Commission — 9 February 2025 Assembly election and final results',
+    url: 'https://kqz-ks.org/zgjedhjet-e-pergjithshme/zgjedhjet-per-kuvend-te-kosoves-2025/',
+    note: 'Official Central Election Commission election and results record consulted for the 9 February 2025 Assembly election; the EU Election Observation Mission final report independently summarizes the certified result and process. No result table, ballot, image or source wording is republished; the official record does not establish voter motives or representativeness.',
+    accessDate: '2026-09-24', creators: ['Central Election Commission of Kosovo'], institution: 'Central Election Commission of Kosovo',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['Albanian'],
+    sourceType: 'official election-administration and results record', identifiers: { electionDate: '2025-02-09' },
+    description: 'The election authority’s record identifies the parliamentary election and its official results. Its procedural and numerical record is kept distinct from observer assessment and scholarly interpretation.'
+  },
+  {
+    id: 'kosovoEuEomFinalReport2025',
+    label: 'European Union Election Observation Mission — Kosovo parliamentary elections, 9 February 2025, final report',
+    url: 'https://www.eeas.europa.eu/sites/default/files/documents/2025/Final%20report%20Kosovo%202025%20EN.pdf',
+    note: 'The independent EU Election Observation Mission final report is used for attributed analysis of the 9 February election, election administration, campaign, post-election period and final 15 March results. The report states it is independent from EU institutions and without prejudice to status; no report wording, table, quotation or PDF page is reproduced.',
+    accessDate: '2026-09-24', creators: ['European Union Election Observation Mission Kosovo 2025'], institution: 'European Union Election Observation Mission',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation report', identifiers: { pages: '94', electionDate: '2025-02-09' },
+    description: 'The mission describes the election as peaceful and competitive while documenting problems in election administration, campaign conduct, media regulation, participation and results publication. Its findings are an observer assessment of a defined election, not a full account of Kosovo or its voters.'
+  },
+  {
+    id: 'kosovoAssemblyGovernmentFebruary2026',
+    label: 'Assembly of Kosovo — election of the government following the 28 December 2025 election',
+    url: 'https://assembly-kosova.org/shq/punesimi/per-publikun/lajmi/kuvendi-zgjodhi-qeverine-e-re-te-kosoves-me-k-36958/',
+    note: 'Official Assembly record dated 11 February 2026 used for the investiture of the government after the 28 December 2025 election. No speech wording, vote image or other text is reproduced; an investiture vote does not show unanimity, public consent or subsequent performance.',
+    accessDate: '2026-09-24', creators: ['Assembly of the Republic of Kosovo'], institution: 'Assembly of the Republic of Kosovo',
+    publicationDate: '2026-02-11', evidenceRole: 'primary', confidence: 'high', languages: ['Albanian'],
+    sourceType: 'official parliamentary record', identifiers: { voteDate: '2026-02-11' },
+    description: 'The Assembly states that Albin Kurti’s government was elected with 66 votes after the legislature formed from the 28 December 2025 election was constituted. This records the formal vote, not the earlier political dispute or later presidential election.'
+  },
+  {
+    id: 'kosovoCecEarlyElectionCertification2026',
+    label: 'Kosovo Central Election Commission — certification of the 7 June 2026 early Assembly election',
+    url: 'https://kqz-ks.org/dita-31-mbledhja-73-te-kqz-certifikoi-rezultatet-perfundimtare-te-zgjedhjeve-te-parakohshme-per-kuvendin-e-e-kosoves-7-qershor-2026/',
+    note: 'Official CEC record dated 8 July 2026 used for certification of the 7 June early election and the administrative endpoint after appeals. No result table, ballot, image or source wording is republished; certification is distinguished from independent observation and does not prove equal political conditions or voter motives.',
+    accessDate: '2026-09-24', creators: ['Central Election Commission of Kosovo'], institution: 'Central Election Commission of Kosovo',
+    publicationDate: '2026-07-08', evidenceRole: 'primary', confidence: 'high', languages: ['Albanian'],
+    sourceType: 'official election-administration and certification record', identifiers: { electionDate: '2026-06-07', certificationDate: '2026-07-08' },
+    description: 'The CEC record certifies the final result of the 7 June early parliamentary election. The PACE report supplies an attributed observation account and a results summary; neither record is treated as evidence of individual political beliefs.'
+  },
+  {
+    id: 'kosovoPaceElectionObservation2026',
+    label: 'Parliamentary Assembly of the Council of Europe — observation of Kosovo early Assembly elections, 7 June 2026, Doc. 16480',
+    url: 'https://pace.coe.int/en/files/36289/html',
+    note: 'Council of Europe Parliamentary Assembly Ad hoc Committee report, Doc. 16480, dated 15 September 2026. Used as an attributed observer account of the June election, certified results and institutional outlook; it reports limited observation scope and states that references to Kosovo are without prejudice to status and in line with UNSCR 1244. No report wording or tables are reproduced.',
+    accessDate: '2026-09-24', creators: ['Parliamentary Assembly of the Council of Europe Ad hoc Committee of the Bureau'], institution: 'Parliamentary Assembly of the Council of Europe',
+    publicationDate: '2026-09-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation report', identifiers: { document: 'Doc. 16480', electionDate: '2026-06-07' },
+    description: 'The report says its delegation was the only international organisation observing the June 2026 election and describes election day as calm, orderly and professionally administered at the limited stations observed, alongside structural and administrative concerns. It reports the certified results and, as of its 15 September publication, an unresolved Assembly and presidential-election process; later developments must be sourced separately.'
+  },
+  {
+    id: 'kosovoAssemblyConstitutionSeptember2026',
+    label: 'Assembly of Kosovo — constitution of the XI legislature, September 2026',
+    url: 'https://www.assemblyofkosovo.org/shq/punesimi/per-publikun/lajmi/konstituohet-legjislatura-xi-e-kuvendit-te-re-38048/',
+    note: 'Official Assembly account dated 13 September 2026 used for completion of the XI legislature’s constitutive session and election of deputy speakers. The Assembly’s record is used for the procedural event only; it does not resolve the constitutional challenges subsequently decided by the Constitutional Court.',
+    accessDate: '2026-09-24', creators: ['Assembly of the Republic of Kosovo'], institution: 'Assembly of the Republic of Kosovo',
+    publicationDate: '2026-09-13', evidenceRole: 'primary', confidence: 'high', languages: ['Albanian'],
+    sourceType: 'official parliamentary record', identifiers: { legislature: 'XI', sessionDate: '2026-09-13' },
+    description: 'The official account records the continuation of the constitutive session and selection of vice-presidents after the Speaker had been elected on 9 September. The Constitutional Court later found that constitution occurred after the applicable 30-day deadline.'
+  },
+  {
+    id: 'kosovoAssemblyGovernmentSeptember2026',
+    label: 'Assembly of Kosovo — election of the government, 13 September 2026',
+    url: 'https://www.assemblyofkosovo.org/shq/punesimi/per-publikun/lajmi/kuvendi-zgjodhi-qeverine-e-republikes-se-koso-38051/',
+    note: 'Official Assembly record of the 13 September 2026 government vote, used for the vote count and formal investiture only. The Constitutional Court’s 23 September notice is cited separately for its constitutional assessment; no speech wording or image is reproduced.',
+    accessDate: '2026-09-24', creators: ['Assembly of the Republic of Kosovo'], institution: 'Assembly of the Republic of Kosovo',
+    publicationDate: '2026-09-13', evidenceRole: 'primary', confidence: 'high', languages: ['Albanian'],
+    sourceType: 'official parliamentary record', identifiers: { voteDate: '2026-09-13' },
+    description: 'The Assembly records election of a new government headed by Albin Kurti with 62 votes. This is the parliamentary act challenged in joined Constitutional Court referrals, not a finding that all formation procedures met constitutional deadlines.'
+  },
+  {
+    id: 'kosovoConstitutionalCourtNoticeSeptember2026',
+    label: 'Constitutional Court of Kosovo — official notice on joined referrals KO256/26 and KO258/26, 23 September 2026',
+    url: 'https://gjk-ks.org/notifications/details/3466?title=Njoftim%20p%C3%ABr%20vendim%20n%C3%AB%20rastet%20KO256%2F26%20dhe%20KO258%2F26',
+    note: 'Official Albanian-language Constitutional Court notice dated 23 September 2026 used for the Court’s announced disposition of joined referrals KO256/26 and KO258/26. The notice says the government-election decision did not violate Article 95, the Assembly was constituted after the Article 66 deadline and the presidential-election period runs from 8 August to 6 October 2026. The full reasoned judgment and an official English translation were not available in the consulted record; this entry cites the notice, not unexamined reasoning. No court text or unofficial translation is reproduced.',
+    accessDate: '2026-09-24', creators: ['Constitutional Court of the Republic of Kosovo'], institution: 'Constitutional Court of the Republic of Kosovo',
+    publicationDate: '2026-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['Albanian'],
+    sourceType: 'official constitutional-court notice / primary legal record', identifiers: { referrals: 'KO256/26; KO258/26', decisionDate: '2026-09-23' },
+    description: 'The Court’s published notice gives the operative outcomes and deadline dates. It is a primary source for the Court’s public announcement, but not a substitute for the full judgment or its detailed reasoning.'
+  },
+  {
+    id: 'kosovoMustafaElectionAnalysis2025',
+    label: 'Artan Mustafa — “Kosovo’s 2025 Election: Party System ‘Decartelisation,’ Uncertainties with Government Formation, and Uneasiness with Trump”',
+    url: 'https://contemporarysee.org/allfiles/documents/file-163-kosovos-2025-election-party-system-decartelisation-uncertainties-with-government-formation-and-uneasiness-with-trump.pdf',
+    note: 'Artan Mustafa, “Kosovo’s 2025 Election: Party System ‘Decartelisation,’ Uncertainties with Government Formation, and Uneasiness with Trump,” Contemporary Southeastern Europe 12, no. 1 (2025), 39–50, DOI 10.25364/02.12:2025.1.4. Used as a situated scholarly election analysis and an attributed interpretation, not a neutral description of all voters or proof of a uniform ideology. No article text, translation, table or figure is republished.',
+    accessDate: '2026-09-24', creators: ['Artan Mustafa'], institution: 'Contemporary Southeastern Europe',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly election-analysis journal article', identifiers: { doi: '10.25364/02.12:2025.1.4', volume: '12', issue: '1', pages: '39–50' },
+    description: 'Mustafa uses cartel-party-system and illiberal-turn literature to interpret the February 2025 election and the rise of Vetëvendosje, while discussing government formation and external context. The article’s account is attributed, time-bounded scholarship rather than a profile of every party member or voter.'
+  },
+  {
+    id: 'kosovoArmakolasStateBuilding2017',
+    label: 'Ioannis Armakolas et al. (eds.) — State-building in Post-Independence Kosovo: Policy Challenges and Societal Considerations',
+    url: 'https://eprints.bournemouth.ac.uk/29637/',
+    note: 'Bournemouth University Research Online book record consulted for bibliographic metadata and scope only; the full text was not read for this case. The repository restricts access to research, scholarly or other non-commercial purposes and warns that third-party copyright remains with the respective owners. No book wording, quotation, table, chapter or scan is reproduced; the 2017 volume is contextual, not evidence about the 2025–2026 episode.',
+    accessDate: '2026-09-24', creators: ['Ioannis Armakolas', 'Agon Demjaha', 'Arolda Elbasani', 'Stephanie Schwandner-Sievers', 'Elton Skendaj', 'Nikolaos Tzifakis'], institution: 'Kosovo Foundation for Open Society',
+    publicationDate: '2017', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly edited book on post-independence state-building', identifiers: { isbn: '9789951503044' },
+    description: 'An edited volume on post-independence state-building, policy challenges, society and institutional development. It supplies earlier context for state-building debates but predates the electoral and constitutional episode documented here.'
+  },
+  {
+    id: 'kosovoHehirInternationals2024',
+    label: 'Aidan Hehir — Kosovo and the “Internationals”: Hope, Hubris, and the End of History',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-63374-4',
+    note: 'Palgrave Macmillan / Springer Nature bibliographic record consulted for metadata, chapter scope and the author’s stated argument; the full book was not read for this case. The record identifies the 2024 first edition, 284 pages, DOI 10.1007/978-3-031-63374-4 and e-book ISBN 978-3-031-63374-4. No book wording, quotation, table, chapter or scan is reproduced; its pre-2025 chapters are contextual, not direct evidence about the current episode.',
+    accessDate: '2026-09-24', creators: ['Aidan Hehir'], institution: 'Palgrave Macmillan, Springer Nature',
+    publicationDate: '2024', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly monograph on international intervention and state-building', identifiers: { doi: '10.1007/978-3-031-63374-4', isbn: '978-3-031-63374-4', hardcoverIsbn: '978-3-031-63373-7', pages: '284' },
+    description: 'A monograph examining post-1999 international administration, state-building and local agency, including a chapter on the rise of Vetëvendosje. It offers a distinct interpretive frame for the antecedent international and institutional setting, but its documented scope ends before the 2025–2026 elections.'
+  },
+  {
     id: 'burkinaConstitution1991Presidence',
     label: 'Burkina Faso — Constitution of 11 June 1991, Presidency fundamental-texts record',
     url: 'https://www.presidencedufaso.bf/textes-fondamentaux/',
@@ -9322,6 +9442,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('unitedStates') ? 'United States constitutional, federal, contested-democratic and political history'
       : source.id.startsWith('cuba') ? 'Cuban revolutionary, socialist, constitutional and political history'
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
+      : source.id.startsWith('kosovo') ? 'Kosovo post-independence constitutional, electoral and state-building history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},

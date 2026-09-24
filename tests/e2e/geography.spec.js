@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(157);
+  await expect(page.locator('.geo-card')).toHaveCount(158);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -64,6 +64,20 @@ test('Argentina 2025 case preserves the attributed interpretation and article ri
   await expect(record).toContainText('CC BY 4.0');
 });
 
+test('Kosovo 2025–2026 case keeps status and unresolved constitutional deadlines explicit', async ({ page }) => {
+  await page.goto('/#geography?case=kosovo-2025-26-electoral-constitutional-crisis');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('without prejudice to status');
+  await expect(card).toContainText('the presidential process remains unresolved');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href*="kosovoConstitutionalCourtNoticeSeptember2026"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-kosovoConstitutionalCourtNoticeSeptember2026$/);
+  const courtRecord = page.locator('#source-research-kosovoConstitutionalCourtNoticeSeptember2026');
+  await expect(courtRecord).toBeInViewport();
+  await expect(courtRecord).toContainText('The Court’s published notice gives the operative outcomes and deadline dates');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -80,7 +94,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(157);
+  await expect(page.locator('.geo-card')).toHaveCount(158);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
