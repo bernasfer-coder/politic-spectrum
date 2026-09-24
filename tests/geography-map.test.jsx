@@ -16,8 +16,8 @@ afterEach(cleanup);
 
 describe('map geometry and filter contracts', () => {
   it('keeps all map IDs unique, finite and compatible with share URLs', () => {
-    expect(MAP_COUNTRIES).toHaveLength(179);
-    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(179);
+    expect(MAP_COUNTRIES).toHaveLength(180);
+    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(180);
     for (const item of MAP_COUNTRIES) {
       expect(item.path).toMatch(/^M/);
       expect(item.path).not.toMatch(/NaN|Infinity/);
@@ -33,6 +33,8 @@ describe('map geometry and filter contracts', () => {
     expect(MAP_COUNTRIES_BY_ID.japan.name).toBe('Japan');
     expect(MAP_COUNTRIES_BY_ID.thailand.name).toBe('Thailand');
     expect(MAP_COUNTRIES_BY_ID.malaysia.name).toBe('Malaysia');
+    expect(MAP_COUNTRIES_BY_ID.singapore.name).toBe('Singapore');
+    expect(MAP_PLACE_MARKERS.find(({ id }) => id === 'singapore').shortName).toBe('Singapore');
     expect(MAP_COUNTRIES_BY_ID.bhutan.name).toBe('Bhutan');
     expect(MAP_COUNTRIES_BY_ID.ghana.name).toBe('Ghana');
     expect(MAP_COUNTRIES_BY_ID.ethiopia.name).toBe('Ethiopia');
@@ -167,7 +169,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(111);
+    expect(cards()).toHaveLength(112);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });

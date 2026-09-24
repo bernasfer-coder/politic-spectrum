@@ -12,6 +12,7 @@ const path = geoPath(projection);
 const atlasIds = { '004': 'afghanistan', '076': 'brazil', '050': 'bangladesh', '144': 'sri-lanka', '524': 'nepal', '148': 'chad', '250': 'france', '276': 'germany', '288': 'ghana', '356': 'india', '360': 'indonesia', '380': 'italy', '392': 'japan', '404': 'kenya', '466': 'mali', '562': 'niger', '566': 'nigeria', '586': 'pakistan', '608': 'philippines', '764': 'thailand', '458': 'malaysia', '064': 'bhutan', '231': 'ethiopia', '484': 'mexico', '620': 'portugal', '400': 'jordan', '414': 'kuwait', '512': 'oman', '682': 'saudi-arabia', '704': 'vietnam', '508': 'mozambique', '710': 'south-africa', '724': 'spain', '776': 'tonga', '646': 'rwanda', '686': 'senegal', '270': 'gambia', '694': 'sierra-leone', '430': 'liberia', '384': 'cote-divoire', '818': 'egypt', '012': 'algeria', '788': 'tunisia', '434': 'libya', '504': 'morocco', '729': 'sudan', '834': 'tanzania', '800': 'uganda', '716': 'zimbabwe', '368': 'iraq', '364': 'iran', '760': 'syria', '792': 'turkey' };
 atlasIds['120'] = 'cameroon';
 atlasIds['854'] = 'burkina-faso';
+atlasIds['702'] = 'singapore';
 const atlasPlaceIds = { '010': ['antarctica'] };
 const atlasNames = Object.fromEntries(GEOGRAPHY_COUNTRIES.map(({ id, name }) => [id, name]));
 
@@ -23,7 +24,7 @@ const mappedWorldCountries = feature(world, world.objects.countries).features.ma
   const id = atlasIds[item.id] ?? (item.id ? `map-${item.id}` : `map-${item.properties.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '')}`);
   return { id, name: atlasNames[id] ?? item.properties.name, path: path(item), bounds: path.bounds(item), placeIds: atlasPlaceIds[item.id] ?? [] };
 });
-const MAP_FALLBACK_COORDINATES = { tonga: [-175.2, -21.1], 'map-882': [-172.1, -13.8] };
+const MAP_FALLBACK_COORDINATES = { tonga: [-175.2, -21.1], 'map-882': [-172.1, -13.8], singapore: [103.8198, 1.3521] };
 const fallbackCountries = GEOGRAPHY_COUNTRIES.filter(({ id }) => !mappedWorldCountries.some((country) => country.id === id) && MAP_FALLBACK_COORDINATES[id]).map(({ id, name }) => {
   const geometry = { type: 'Point', coordinates: MAP_FALLBACK_COORDINATES[id] };
   return { id, name, path: path(geometry), bounds: path.bounds(geometry), placeIds: [], isLocator: true };
@@ -36,6 +37,7 @@ export const COUNTRY_OPTIONS = MAP_COUNTRIES.map(({ id, name }) => ({ id, name }
 
 // Rounded editorial navigation anchors, not surveyed points or territorial extents.
 export const MAP_PLACE_MARKERS = [
+  { id: 'singapore', coordinates: [103.8198, 1.3521], shortName: 'Singapore' },
   { id: 'baghdad', coordinates: [44.4, 33.3], shortName: 'Baghdad' },
   { id: 'damascus', coordinates: [36.3, 33.5], shortName: 'Damascus' },
   { id: 'jerusalem', coordinates: [35.2, 31.8], shortName: 'Jerusalem', dx: -15, dy: 18 },

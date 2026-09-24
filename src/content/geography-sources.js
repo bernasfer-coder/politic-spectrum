@@ -1,6 +1,96 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'eldSingaporeGe2025PollingDay',
+    label: 'Elections Department Singapore — Cooling-off and polling day for General Election 2025',
+    url: 'https://www.eld.gov.sg/press/2025/MR%20on%20Cooling-off%20and%20Polling%20Day%20for%20GE2025.pdf',
+    note: 'Official Elections Department release consulted to verify the polling date of 3 May 2025; linked and summarized independently. No wording, table, scan or PDF page is republished, and the election authority’s notice is not independent observation of campaign conditions.',
+    accessDate: '2026-09-24', creators: ['Elections Department Singapore'], institution: 'Elections Department Singapore',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election schedule / polling-day release', identifiers: { pollingDate: '2025-05-03' },
+    description: 'Official administrative notice establishing the scheduled polling day for Singapore’s 2025 general election. It is used only to anchor the date of the bounded case.'
+  },
+  {
+    id: 'eldSingaporeGe2025Results',
+    label: 'Elections Department Singapore — General Election 2025 final constituency results',
+    url: 'https://www.eld.gov.sg/finalresults2025.html',
+    note: 'Official Elections Department final-results portal consulted for published constituency-level returns. No result table, screenshot or site text is republished; official results document declared returns, not individual voter motivations or independent assessment of electoral conditions.',
+    accessDate: '2026-09-24', creators: ['Elections Department Singapore'], institution: 'Elections Department Singapore',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary general-election results', identifiers: { electionDate: '2025-05-03' },
+    description: 'Official constituency-level final results for the 2025 Singapore parliamentary general election. Returns support statements about seats and vote totals but do not establish why individuals voted as they did.'
+  },
+  {
+    id: 'pmoSingaporeWongGe2025',
+    label: 'Lawrence Wong — Swearing-in ceremony speech after Singapore General Election 2025',
+    url: 'https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-at-the-swearing-in-ceremony-2025/',
+    note: 'Prime Minister’s Office transcript consulted as a primary statement of the incumbent prime minister’s interpretation of the result and his first election as prime minister. No speech wording or excerpt is republished; the “mandate” characterization is attributed to Wong, not treated as independent evidence of voters’ motives.',
+    accessDate: '2026-09-24', creators: ['Lawrence Wong'], institution: 'Prime Minister’s Office, Singapore',
+    publicationDate: '2025-05-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'prime-ministerial speech / official transcript', identifiers: { speechDate: '2025-05-23' },
+    description: 'The prime minister’s post-election speech identifies the 2025 poll as his first general election as prime minister and PAP secretary-general and presents the outcome as a clear mandate. This is political self-description, not an independent measure of consent or motivation.'
+  },
+  {
+    id: 'pmoSingaporeWongGE2025Letter',
+    label: 'Lawrence Wong — Letter to PAP MPs on Rules of Prudence, 28 May 2025',
+    url: 'https://www.pmo.gov.sg/newsroom/letter-from-pm-lawrence-wong-to-pap-mps-on-rules-of-prudence-on-28-may-2025/',
+    note: 'Prime Minister’s Office letter published after the election, consulted as a primary statement by the party leader concerning PAP MPs and party-reported results. Its 87 of 97 elected seats and 65.6% vote-share claim is attributed to the incumbent party; no letter wording or excerpt is republished.',
+    accessDate: '2026-09-24', creators: ['Lawrence Wong'], institution: 'Prime Minister’s Office, Singapore',
+    publicationDate: '2025-05-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'prime-ministerial letter to governing-party members / official transcript', identifiers: { letterDate: '2025-05-28', publicationDate: '2025-05-29' },
+    description: 'Post-election letter from Prime Minister Lawrence Wong to PAP MPs. The leader reports the PAP’s 87 of 97 elected seats and 65.6% of votes. This is an attributable primary account by the governing party’s leader, not an independent interpretation of individual voter motives.'
+  },
+  {
+    id: 'ongSingaporeGE2025',
+    label: 'Elvin Ong — “Singapore’s 2025 General Election: A Mandate for the New Prime Minister” (2026)',
+    url: 'https://doi.org/10.1355/9789815361520-017',
+    note: 'ISEAS Publishing chapter record and publicly available abstract consulted; the full chapter requires access and was not reviewed. Chapter metadata, page range and DOI are recorded; claims drawn from its framing are limited to the abstract and attributed to Ong. No chapter text, table or figure is reproduced.',
+    accessDate: '2026-09-24', creators: ['Elvin Ong'], institution: 'ISEAS Publishing',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly edited-volume chapter on the 2025 Singapore general election', identifiers: { doi: '10.1355/9789815361520-017', pages: '251–262', volume: 'Southeast Asian Affairs 2026', editors: 'Terence Chong; Daljit Singh', isbn: '9789815361001' },
+    description: 'Event-specific scholarly chapter in the annual edited volume Southeast Asian Affairs 2026. The chapter’s title and publisher abstract interpret the election as a mandate for new prime minister Lawrence Wong; the full text was not consulted and the abstract is not treated as evidence of voter motivations.'
+  },
+  {
+    id: 'hisasueSingaporeGE2025',
+    label: 'Ryoichi Hisasue — “Singapore in 2025: General Election and the Start of the Second Wong Cabinet” (2026)',
+    url: 'https://doi.org/10.24765/asiadoukou.2026.0_353',
+    note: 'Full Japanese-language chapter read through the J-STAGE open full-text HTML. Its claims about electoral-district revisions and advantage to the PAP are recorded as the author’s analysis, not independently verified findings; the underlying boundary-review records and comparative campaign evidence were not collated here. No chapter text, table or figure is reproduced.',
+    accessDate: '2026-09-24', creators: ['Ryoichi Hisasue'], institution: 'Institute of Developing Economies, Japan External Trade Organization',
+    publicationDate: '2026-05-29', evidenceRole: 'secondary', confidence: 'medium', languages: ['Japanese'],
+    sourceType: 'scholarly yearbook chapter on Singapore’s 2025 election and cabinet', identifiers: { doi: '10.24765/asiadoukou.2026.0_353', pages: '353–376', volume: 'Yearbook of Asian Affairs 2026', issn: '0915-1109', onlineIssn: '2434-0847' },
+    description: 'Japanese-language full-text chapter reviewing Singapore’s 2025 general election and the second Wong cabinet. Hisasue reports the PAP’s vote and seat returns, WP representation and cabinet transition, and advances a critical interpretation that electoral-district revisions advantaged the PAP; that interpretation is attributed and the underlying primary evidence remains to be checked.'
+  },
+  {
+    id: 'mauzyMilneSingaporePolitics2002',
+    label: 'Diane K. Mauzy and R. S. Milne — Singapore Politics Under the People’s Action Party (2002)',
+    url: 'https://www.routledge.com/Singapore-Politics-Under-the-Peoples-Action-Party/Mauzy-Milne/p/book/9780415246538',
+    note: 'Routledge publisher record and contents information consulted as a bibliographic lead for a book-length historical study. The complete book was not reviewed for this case; no wording, quotation, table or image is reproduced, and its scope predates the 2025 election.',
+    accessDate: '2026-09-24', creators: ['Diane K. Mauzy', 'R. S. Milne'], institution: 'Routledge',
+    publicationDate: '2002', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length study of Singaporean politics and the PAP', identifiers: { isbn: '9780415246538' },
+    description: 'Book-length historical analysis of Singapore politics under PAP rule, including government, electoral and opposition politics, ideology and civil society. Publisher description and contents were consulted only; this work is contextual bibliography, not direct evidence about the 2025 election.'
+  },
+  {
+    id: 'tanGoverningGlobalCitySingapore2017',
+    label: 'Kenneth Paul Tan — Governing Global-City Singapore: Legacies and Futures After Lee Kuan Yew (2017)',
+    url: 'https://www.routledge.com/Governing-Global-City-Singapore-Legacies-and-Futures-After-Lee-Kuan-Yew/Tan/p/book/9781138344150',
+    note: 'Routledge publisher record and contents information consulted as a bibliographic lead; the complete book was not reviewed for this case. No book wording, quotation, table or image is reproduced; its analytical claims are not extended to the 2025 result.',
+    accessDate: '2026-09-24', creators: ['Kenneth Paul Tan'], institution: 'Routledge',
+    publicationDate: '2017', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length study of Singaporean governance and political change', identifiers: { isbn: '9781138344150', pages: '198' },
+    description: 'Book-length study of Singapore governance, global-city politics, the legacies of Lee Kuan Yew and possible political futures. Publisher description and contents were consulted only; this is contextual scholarship rather than direct evidence about 2025 voter behaviour.'
+  },
+  {
+    id: 'rahimBarrLimitsAuthoritarianSingapore2019',
+    label: 'Lily Zubaidah Rahim and Michael D. Barr, eds. — The Limits of Authoritarian Governance in Singapore’s Developmental State (2019)',
+    url: 'https://link.springer.com/book/10.1007/978-981-13-1556-5',
+    note: 'Palgrave Macmillan/Springer book record and contents information consulted as a bibliographic lead. The complete edited volume was not reviewed for this case; no chapter text, quotation, table or image is reproduced, and its essays are not treated as direct evidence about 2025.',
+    accessDate: '2026-09-24', creators: ['Lily Zubaidah Rahim', 'Michael D. Barr'], institution: 'Palgrave Macmillan',
+    publicationDate: '2019', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly edited volume on Singaporean governance and developmental state', identifiers: { isbn: '9789811315558', ebookIsbn: '9789811315565', doi: '10.1007/978-981-13-1556-5' },
+    description: 'Edited scholarly volume examining constraints and challenges around authoritarian governance and Singapore’s developmental state. The publisher record and contents information, not complete chapters, were consulted; it supplies contextual bibliographic perspective, not 2025 election evidence.'
+  },
+  {
     id: 'burkinaConstitution1991Presidence',
     label: 'Burkina Faso — Constitution of 11 June 1991, Presidency fundamental-texts record',
     url: 'https://www.presidencedufaso.bf/textes-fondamentaux/',
@@ -6647,6 +6737,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
           : source.id.startsWith('knightMexican') || source.id.startsWith('eisenstadtCourtingDemocracyMexico') || source.id.startsWith('shirkMexicoNewPolitics') || source.id.startsWith('oxfordHandbookMexicanPolitics') || source.id.startsWith('olneyLocalMexico') || source.id.startsWith('middlebrookDilemmasPoliticalChangeMexico') || source.id.startsWith('mexicoIne') ? 'Mexican constitutional, democratic-transition and political history'
         : source.id.startsWith('jarausch') || source.id.startsWith('nicholls') || source.id.startsWith('germanBasicLaw') || source.id.startsWith('fulbrookHistoryGermany') || source.id.startsWith('zelikowRice') || source.id.startsWith('greenHoughMiskimmon') || source.id.startsWith('vonBeymeBusch') || source.id.startsWith('germanyBundestag') ? 'German postwar and reunified constitutional and political history'
         : source.id.startsWith('ginsborg') || source.id.startsWith('dugganForce') || source.id.startsWith('italyConstitution') || source.id.startsWith('dcItaly') || source.id.startsWith('gundleParkerNewItalianRepublic') || source.id.startsWith('newellPoliticsItaly') || source.id.startsWith('cottaVerzichelliPoliticalInstitutionsItaly') || source.id.startsWith('ignaziRissoWellhoferItalianParties') || source.id.startsWith('italyPoliticalElection') ? 'Italian constitutional, party-system and political history'
+          : source.id.startsWith('singapore') || source.id.startsWith('hisasueSingapore') ? 'Singaporean electoral, constitutional and political history'
           : source.id.startsWith('southKorea') ? 'South Korean constitutional, democratization and political history'
           : source.id.startsWith('lebanon') ? 'Lebanese postwar, constitutional, sectarian and political history'
           : source.id.startsWith('colombia') ? 'Colombian constitutional, conflict, peace-process and political history'
