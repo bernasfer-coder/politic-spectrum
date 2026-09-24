@@ -6,7 +6,7 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 155);
+assert.equal(GEOGRAPHY_CASES.length, 156);
 assert.equal(GEOGRAPHY_LABELS.length, 153);
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
@@ -16,6 +16,11 @@ assert.equal(filterGeographyCases({ country: 'iran' })[0].id, 'iranian-postrevol
 assert.equal(filterGeographyCases({ country: 'india' })[0].id, 'india-independence-constitutional-founding');
 assert.equal(filterGeographyCases({ country: 'india' }).find(({ id }) => id === 'indian-postcolonial-democratic-and-majoritarian-politics')?.id, 'indian-postcolonial-democratic-and-majoritarian-politics');
 assert.equal(filterGeographyCases({ country: 'egypt' }).find(({ id }) => id === 'egyptian-postnasser-authoritarianism-revolution-and-recentralization')?.id, 'egyptian-postnasser-authoritarianism-revolution-and-recentralization');
+const turkeyCongressCase = GEOGRAPHY_CASES.find(({ id }) => id === 'turkish-chp-congress-litigation-and-opposition-fragmentation');
+assert.equal(turkeyCongressCase?.relationship, 'influenced');
+assert.ok(turkeyCongressCase?.sourceIds.includes('turkeyYskChpCongressDecision2026'));
+assert.match(turkeyCongressCase?.limitation ?? '', /no final Court of Cassation order/i);
+assert.equal(filterGeographyCases({ country: 'turkey' }).filter(({ placeId }) => placeId === 'turkey').length, 3);
 assert.equal(filterGeographyCases({ country: 'south-africa' }).find(({ id }) => id === 'south-african-postapartheid-democratic-dominance-and-coalition-transition')?.id, 'south-african-postapartheid-democratic-dominance-and-coalition-transition');
 assert.equal(filterGeographyCases({ country: 'brazil' })[0].id, 'brazil-democratic-constitutional-founding');
 assert.equal(filterGeographyCases({ country: 'brazil' }).find(({ id }) => id === 'brazil-democratic-consolidation-and-polarization')?.id, 'brazil-democratic-consolidation-and-polarization');
@@ -127,4 +132,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 155 dated cases, 153 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 156 dated cases, 153 unscored labels, citations, boundaries, filters and share URLs.');

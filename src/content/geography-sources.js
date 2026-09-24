@@ -4990,6 +4990,131 @@ const sources = [
     description: 'Official statistical witness to the 2023 presidential and parliamentary election horizon, including participation and announced results. It marks the selected contemporary endpoint without being treated as a complete political or social history.'
   },
   {
+    id: 'turkeyYskChpCongressDecision2026',
+    label: 'Supreme Election Council of Türkiye — Decision No. 2026/246 on the CHP congress litigation (22 May 2026)',
+    url: 'https://www.ysk.gov.tr/doc/karar/dosya/58015557/2026-246.pdf',
+    note: 'Official 12-page Turkish decision consulted for the YSK’s account of the Ankara Regional Court of Appeal ruling, the requests before the Council and the limit of its election-law jurisdiction. No text, translation, scan or PDF page is republished; the YSK decision does not independently adjudicate the underlying civil-litigation allegations or substitute for the Court of Cassation record.',
+    accessDate: '2026-09-24', creators: ['Yüksek Seçim Kurulu'], institution: 'Supreme Election Council of the Republic of Türkiye',
+    publicationDate: '2026-05-22', evidenceRole: 'primary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'primary election-board decision / official jurisdictional record',
+    identifiers: { decisionNumber: '2026/246', relatedCourtDecision: 'Ankara Regional Court of Appeal, 36th Civil Chamber, 2026/32 E., 2026/658 K.', decisionDate: '2026-05-22', pages: '12' },
+    description: 'Official decision recording the YSK’s review of petitions after the Ankara regional appellate court’s 21 May 2026 CHP congress ruling. It reproduces the civil court’s order and competing applications, then distinguishes YSK supervision of political-party election procedures from review of a civil appellate judgment, whose appeal route it identifies as the Court of Cassation. It is not a finding on the truth of every allegation in the underlying case.'
+  },
+  {
+    id: 'turkeyEuropeanCommissionReport2025',
+    label: 'European Commission — Türkiye Report 2025 (4 November 2025)',
+    url: 'https://enlargement.ec.europa.eu/document/download/4bb4ddd1-4f20-4ee0-92db-926996ec8dd1_en?filename=t%C3%BCrkiye-report-2025.pdf',
+    note: 'European Commission annual enlargement assessment consulted for its explicitly dated reporting horizon, political-pluralism, executive-power and local-governance findings. The report covers developments through 1 September 2025, before the 2026 appellate decision; its institutional judgments are attributed, and neither its context nor scope proves an executive direction in the specific CHP civil case.',
+    accessDate: '2026-09-24', creators: ['Directorate-General for Enlargement and Eastern Neighbourhood'], institution: 'European Commission',
+    publicationDate: '2025-11-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'official annual institutional monitoring report', identifiers: { reportingCutoff: '2025-09-01', publicationDate: '2025-11-04' },
+    description: 'The Commission’s 2025 country assessment reports pressure on opposition parties and municipalities, extensive presidential appointment and policy powers, and limitations on parliamentary oversight. These are attributed institutional assessments through 1 September 2025, not direct evidence about the later 2026 CHP congress appeal.'
+  },
+  {
+    id: 'turkeyChpCongressReport2025',
+    label: 'Cumhuriyet Halk Partisi — Kurultay Raporu: CHP’nin Kongre ve Kurultay Süreçlerine Yönelik Yargı Kuşatması',
+    url: 'https://en.chp.org.tr/yayin/chpnn-kongre-ve-kurultay-sureclerne-yonelk-yargi-kusatmasi/Open',
+    note: 'CHP’s own Turkish-language report consulted as a party-authored chronology and account of its litigation and Istanbul provincial-organization dispute. It is primary evidence of the party’s self-description and selected dates, not an independent or neutral adjudication; no report text, translation, scan or PDF is republished.',
+    accessDate: '2026-09-24', creators: ['Cumhuriyet Halk Partisi'], institution: 'Cumhuriyet Halk Partisi',
+    evidenceRole: 'primary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'political party report / self-description and litigation chronology',
+    identifiers: { language: 'Turkish', periodDiscussed: '2025' },
+    description: 'CHP’s account of court actions involving its Istanbul provincial organization and party congresses, including the party’s characterization of judicial intervention. It documents a litigant’s perspective and chronology, not the truth of all claims or an independent legal conclusion.'
+  },
+  {
+    id: 'turkeyHumanRightsWatchChpDecision2026',
+    label: 'Human Rights Watch — “Türkiye: Court Removes Leadership of Main Opposition Party” (22 May 2026)',
+    url: 'https://www.hrw.org/news/2026/05/22/turkiye-court-removes-leadership-of-main-opposition-party',
+    note: 'Human Rights Watch’s statement and legal assessment consulted as the organization’s attributed human-rights position. Its claims of political motivation and Convention implications are not treated as court findings or neutral descriptions; no expressive text is republished.',
+    accessDate: '2026-09-24', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2026-05-22', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'human-rights organization statement and legal assessment',
+    identifiers: { publicationDate: '2026-05-22', reviewedCourtDate: '2026-05-21' },
+    description: 'Human Rights Watch describes the 21 May order removing CHP chair Özgür Özel and restoring Kemal Kılıçdaroğlu as a serious rule-of-law and rights setback, and argues that the pattern reflects government efforts to sideline opposition. These remain HRW’s attributed assessment, distinct from the judgment and the government’s position.'
+  },
+  {
+    id: 'turkeyAssociatedPressCourtDecision2026',
+    label: 'Associated Press — “Standoff in Turkey’s main opposition party escalates” (22 May 2026)',
+    url: 'https://apnews.com/article/af4191515ee4413328f34e19f5fefffd',
+    note: 'Contemporaneous AP reporting consulted for the court-order timeline and the CHP/government positions. It is independent news reporting, not the judgment or an investigation of the allegations; claims of political motivation and party-congress misconduct remain attributed.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-05-22', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report', identifiers: { publicationDate: '2026-05-22' },
+    description: 'Reports the appellate court’s interim leadership intervention, immediate appeals and reactions from the opposition and government. It provides a contemporaneous account of a contested political and legal episode, not a substitute for the written court decisions.'
+  },
+  {
+    id: 'turkeyAssociatedPressYeniParty2026',
+    label: 'Associated Press — “Deposed Turkish opposition leader forms ‘New Party’ to challenge Erdogan” (24 July 2026)',
+    url: 'https://apnews.com/article/7e3e4e829cfa2aebde7034d11f2fba06',
+    note: 'AP report consulted for the 24 July 2026 party formation, Özel’s reported resignation from CHP and the number of departing legislators. The article records an attributed organizational event and contemporary reporting, not the new party’s eventual support or representativeness.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-07-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report', identifiers: { publicationDate: '2026-07-24', reportedFoundingLegislators: '91' },
+    description: 'Reports that Özgür Özel and 90 other legislators left CHP and registered a new party after the May court order. The number and event are attributed to reporting and party filings; the story does not establish the breakaway’s future electoral reach.'
+  },
+  {
+    id: 'turkeyTbmmYeniPartyGroup2026',
+    label: 'Türkiye Büyük Millet Meclisi — YENİ Party parliamentary group directory (consulted 24 September 2026)',
+    url: 'https://www.tbmm.gov.tr/Kurumsal/TelefonRehberiDetayParti?unitId=37a207b3-2dd5-44f2-94a5-019f95283475',
+    note: 'Official parliamentary directory consulted for the existence and leadership of the YENİ Party group in the Grand National Assembly. It documents parliamentary organization at the time of consultation, not the party’s electoral support, public mandate or the legal status of the CHP appeal.',
+    accessDate: '2026-09-24', creators: ['Türkiye Büyük Millet Meclisi'], institution: 'Grand National Assembly of Türkiye',
+    evidenceRole: 'primary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'official parliamentary party-group directory', identifiers: { legislature: '28th Grand National Assembly', accessDate: '2026-09-24' },
+    description: 'Official directory listing the YENİ Party parliamentary group and its group leadership. This is a primary institutional witness to parliamentary organization, not a measure of social representativeness or electoral strength.'
+  },
+  {
+    id: 'turkeyMedyascopeAppealStatus2026',
+    label: 'Özgecan Özgenç — “CHP butlan kararına temyiz başvurusunu kurultay yapmak için geri çekti” (Medyascope, 14 September 2026)',
+    url: 'https://medyascope.tv/2026/09/14/chp-butlan-kararina-temyiz-basvurusunu-geri-cekti/',
+    note: 'Turkish-language independent reporting consulted for CHP spokesperson Müslim Sarı’s announcement and competing accounts of whether separate appeals by Özgür Özel and complainant Lütfü Savaş remained active. Those procedural accounts are attributed; no Yargıtay docket entry or final judgment was independently verified in this research pass, and no article wording is republished.',
+    accessDate: '2026-09-24', creators: ['Özgecan Özgenç'], institution: 'Medyascope',
+    publicationDate: '2026-09-14', evidenceRole: 'secondary', confidence: 'medium', languages: ['Turkish'],
+    sourceType: 'independent news report on appeal status', identifiers: { publicationDate: '2026-09-14', reporter: 'Özgecan Özgenç' },
+    description: 'Reports that CHP withdrew its institutional appeal after announcing a regular congress calendar, while separate appeals and the finality of the May decision were disputed by parties to the litigation. It is not a court docket or final judicial resolution.'
+  },
+  {
+    id: 'turkeyDWTurkceYavasResignation2026',
+    label: 'DW Türkçe — “Mansur Yavaş CHP’den istifa etti, ‘bağımsız’ devam edecek” (23 September 2026)',
+    url: 'https://amp.dw.com/tr/mansur-yava%C5%9F-chpden-istifa-etti/a-79388276',
+    note: 'German public broadcaster DW’s Turkish-language reporting consulted for Ankara mayor Mansur Yavaş’s 23 September resignation announcement and subsequent departures by district mayors. DW records Yavaş’s own reference to the broader legal and political disputes, including the “absolute nullity” process, and the immediate CHP spokesperson exchange; the report does not establish that the court case alone caused each departure. No article wording or media is republished.',
+    accessDate: '2026-09-24', creators: ['DW Türkçe'], institution: 'Deutsche Welle',
+    publicationDate: '2026-09-23', evidenceRole: 'secondary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'independent public-broadcaster report', identifiers: { publicationDate: '2026-09-23', location: 'Ankara' },
+    description: 'Reports Ankara Mayor Mansur Yavaş’s departure from CHP and stated intention to continue as an independent, following public tensions with party leadership; also reports further district-mayor resignations. Yavaş cited a wider set of legal and political developments, including the CHP “absolute nullity” dispute, so the report is not evidence that one court case caused every departure.'
+  },
+  {
+    id: 'turkeyKubicekPathsDedemocratization2025',
+    label: 'Paul Kubicek (ed.) — Paths of De-democratization in Turkey (Peter Lang, 2025)',
+    url: 'https://www.peterlang.com/document/1707058',
+    note: 'Peter Lang’s peer-reviewed book and catalog record consulted for edition, chapter list, scope and identifiers. Copyrighted; link and original paraphrase only. The book offers plural analyses of democratic backsliding and opposition through the 2023 horizon and does not document the 2026 judgment.',
+    accessDate: '2026-09-24', creators: ['Paul Kubicek'], institution: 'Peter Lang Publishing Inc.',
+    publicationDate: '2025-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed scholarly edited volume',
+    identifiers: { isbn: '9783034348683', ebookIsbn: '9783034351249', epubIsbn: '9783034351256', doi: '10.3726/b22534', pages: '226', publicationYear: '2025' },
+    description: 'Peer-reviewed edited volume with multiple perspectives on Turkey’s democratic backsliding since 2010, opposition and civil society, political economy and institutional continuities. Its included CHP party-selection study and 2023 endpoint supply context, not direct evidence about 2025–2026 litigation.'
+  },
+  {
+    id: 'turkeyHazamaDominance2026',
+    label: 'Yasushi Hazama — The Dynamics of Dominance in Erdoğan’s Turkey: The Politics of Attraction (Edward Elgar, 2026)',
+    url: 'https://www.e-elgar.com/shop/gbp/the-dynamics-of-dominance-in-erdogan-s-turkey-9781035388226.html',
+    note: 'Edward Elgar publisher record consulted for title/subtitle, author, 2026 publication, extent and ISBN. Copyrighted; link and original paraphrase only. It provides a distinct account of party dominance over the preceding two decades, not event-specific evidence about the CHP case.',
+    accessDate: '2026-09-24', creators: ['Yasushi Hazama'], institution: 'Edward Elgar Publishing',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly monograph on Turkish party dominance', identifiers: { isbn: '9781035388226', pages: '288', publicationYear: '2026' },
+    description: 'A comparative, data-driven monograph on AKP and Erdoğan-era dominance, economic performance, social protection, political rhetoric and the decay of party attraction. It is used as a distinct long-run interpretation of the setting, not evidence about the 2025–2026 court case.'
+  },
+  {
+    id: 'turkeyEsenNewRegime2025',
+    label: 'Berk Esen, Şebnem Gümüşçü and Hakan Yavuzyılmaz — Türkiye’nin Yeni Rejimi: Rekabetçi Otoriterlik (İletişim Yayınları, 2025 printing)',
+    url: 'https://iletisim.com.tr/kitap/turkiye-nin-yeni-rejimi-rekabetci-otoriterlik/10836',
+    note: 'İletişim’s Turkish-language publisher record consulted for authors, title, November 2025 second printing of the first edition, page extent and ISBN. Copyrighted; link and original paraphrase only. The authors’ competitive-authoritarian interpretation is attributed and addresses the regime through the 2023 election, not the later court decision.',
+    accessDate: '2026-09-24', creators: ['Berk Esen', 'Şebnem Gümüşçü', 'Hakan Yavuzyılmaz'], institution: 'İletişim Yayınları',
+    publicationDate: '2025-11', evidenceRole: 'secondary', confidence: 'high', languages: ['Turkish'],
+    sourceType: 'book-length Turkish-language political-science study',
+    identifiers: { isbn: '9789750539091', pages: '302', printing: '2nd printing, 1st edition', originalPublication: '2023' },
+    description: 'A Turkish-language study interpreting the transformation of the Turkish political regime and opposition through the 2023 electoral horizon as competitive authoritarianism. It supplies a contemporaneous scholarly framework but is not a study of the 2025–2026 CHP congress litigation.'
+  },
+  {
     id: 'zurcherTurkeyModernHistory2017',
     label: 'Erik Jan Zürcher — Turkey: A Modern History, 4th ed. (I.B. Tauris, 2017)',
     url: 'https://www.bloomsbury.com/us/turkey-9781784531874/',
