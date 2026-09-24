@@ -9106,13 +9106,114 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'armeniaCecParliamentaryResults2026',
+    label: 'Central Electoral Commission of Armenia — Decision No. 259-A on the 7 June 2026 National Assembly election results (14 June 2026)',
+    url: 'https://www.elections.am/News/Item/2024',
+    note: 'Official CEC results record identified by the Constitutional Court’s DCC-1835 notice and the IPU source list; direct retrieval returned HTTP 403 on 24 September 2026. It is linked as the primary certification record but was not directly read here. Vote figures are cross-checked against contemporaneous Armenpress reporting; no table or source text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Central Electoral Commission of the Republic of Armenia'], institution: 'Central Electoral Commission of the Republic of Armenia',
+    publicationDate: '2026-06-14', evidenceRole: 'primary', confidence: 'medium', languages: ['Armenian'],
+    sourceType: 'official electoral certification / primary result decision', identifiers: { decisionNo: '259-A', electionDate: '2026-06-07' },
+    description: 'The CEC decision summarized the final results of Armenia’s regular National Assembly election held on 7 June 2026. The official court record confirms the decision date and number; the CEC page itself could not be directly retrieved during this review.'
+  },
+  {
+    id: 'armeniaConstitutionalCourtDcc1835',
+    label: 'Constitutional Court of Armenia — DCC-1835, 2026 National Assembly election-result dispute (4 July 2026)',
+    url: 'https://www.concourt.am/en/news/single/teghekatvowt-yown-5',
+    note: 'Official English-language court update and operative disposition, read together with the Court’s 2026 decision index. The Court says DCC-1835 left CEC Decision No. 259-A in force and was final upon promulgation; this summary is not a substitute for the full reasoned judgment. No decision text or image is reproduced.',
+    accessDate: '2026-09-24', creators: ['Constitutional Court of the Republic of Armenia'], institution: 'Constitutional Court of the Republic of Armenia',
+    publicationDate: '2026-07-07', evidenceRole: 'primary', confidence: 'high', languages: ['Armenian', 'English'],
+    sourceType: 'official Constitutional Court decision notice / primary legal record', identifiers: { decisionNo: 'DCC-1835', decisionDate: '2026-07-04', cecDecisionNo: '259-A' },
+    description: 'Official court notice of the final adjudication of applications by seven political forces concerning the CEC’s 14 June result decision. The operative disposition left that decision in force and stated that the judgment became final upon promulgation.'
+  },
+  {
+    id: 'armeniaOdihrNeedsAssessment2026',
+    label: 'OSCE/ODIHR — Needs Assessment Mission Report: Armenia parliamentary elections, 7 June 2026 (19 March 2026)',
+    url: 'https://odihr.osce.org/sites/default/files/documents/official_documents/2026/03/ARM_Parliamentary_2026_NAM%20Report_19.03.2026.pdf',
+    note: 'Official 19 March 2026 pre-election needs-assessment report, consulted for its executive summary and selected sections on the legal framework, campaign environment, media and dispute resolution. Its February interlocutors’ assessments are attributed perceptions before election day, not findings about the completed election. No report wording, table or PDF page is republished.',
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe',
+    publicationDate: '2026-03-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation needs-assessment report', identifiers: { electionDate: '2026-06-07', pages: '18' },
+    description: 'ODIHR’s February 2026 mission assessed election preparations and interlocutors’ concerns before polling. It records the closed-list national proportional system, revised electoral rules, institutional arrangements, geopolitical polarization and reported tensions involving the government and Armenian Apostolic Church; it is a pre-election snapshot, not a final observation report.'
+  },
+  {
+    id: 'armeniaOdihrPreliminaryStatement2026',
+    label: 'OSCE/ODIHR and international observers — Preliminary findings on Armenia’s 7 June 2026 parliamentary election (8 June 2026)',
+    url: 'https://odihr.osce.org/odihr/665473',
+    note: 'Official OSCE/ODIHR press release presenting the International Election Observation Mission’s preliminary statement, read as a preliminary observer assessment. Positive process findings and concerns about foreign pressure, campaign opportunities, criminal proceedings, rhetoric and polarization remain attributed to that mission; this is not a final report or a complete measure of election quality. No press-release wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights', 'OSCE Parliamentary Assembly', 'Parliamentary Assembly of the Council of Europe', 'European Parliament'], institution: 'International Election Observation Mission',
+    publicationDate: '2026-06-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observer preliminary statement and institutional release', identifiers: { electionDate: '2026-06-07', statementDate: '2026-06-08' },
+    description: 'The observer mission described a genuine choice and generally well-run election-day process while also recording concerns about external pressure, confrontational rhetoric, alleged violations, criminal proceedings and uneven campaign opportunities. Its conclusions were explicitly preliminary.'
+  },
+  {
+    id: 'armeniaIpuParlineElection2026',
+    label: 'Inter-Parliamentary Union — Armenia National Assembly, 7 June 2026 election and new legislature',
+    url: 'https://data.ipu.org/parliament/AM/AM-LC01/election/AM-LC01-E20260607/',
+    note: 'IPU Parline institutional election dataset consulted on 24 September 2026. Its page cites Armenian Parliament and Central Electoral Commission records and reports the seat distribution, turnout and first sitting; it is a secondary institutional compilation, not the CEC’s original certified tally. No downloaded dataset or page table is republished.',
+    accessDate: '2026-09-24', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union',
+    publicationDate: null, evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional parliamentary election dataset', identifiers: { electionDate: '2026-06-07', parliament: 'National Assembly' },
+    description: 'Parline reports 105 seats filled, with 64 for Civil Contract, 29 for Strong Armenia and 12 for Armenia Alliance; it records 58.9 per cent turnout, 37 women elected and the first sitting on 2 August 2026. Its source list points to Armenian parliamentary and CEC records.'
+  },
+  {
+    id: 'armeniaArmenpressFinalResults2026',
+    label: 'Armenpress — Central Electoral Commission announces final results of Armenia’s parliamentary elections (14 June 2026)',
+    url: 'https://armenpress.am/en/article/1252978',
+    note: 'Contemporaneous Armenpress report attributing the final vote totals and turnout to CEC Chair Vahagn Hovakimyan. Used as secondary reporting to cross-check figures because the linked CEC page was not retrievable in this review; no article text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Armenpress'], institution: 'Armenpress News Agency',
+    publicationDate: '2026-06-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'contemporaneous national news report of official election results', identifiers: { electionDate: '2026-06-07' },
+    description: 'Reports the CEC’s 14 June announcement, including Civil Contract’s 49.7456 per cent vote share, 1,476,769 participants and the three forces allocated National Assembly seats. The CEC remains the certifying authority.'
+  },
+  {
+    id: 'armeniaApElectionChallenge2026',
+    label: 'Associated Press — Armenia’s election result and opposition challenge (19 June 2026)',
+    url: 'https://apnews.com/article/1b6f7e89d8063dc57218619012f409cc',
+    note: 'Contemporaneous independent reporting used to document that opposition parties challenged the announced result and made allegations that authorities denied. Reported allegations are not treated as adjudicated facts; the later Constitutional Court disposition is cited separately. No article wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-06-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent contemporaneous election reporting', identifiers: { electionDate: '2026-06-07' },
+    description: 'Reports opposition applications challenging the result, allegations of electoral violations and official denials during the post-election litigation period. It supplies attributed contestation rather than a finding about whether each allegation occurred.'
+  },
+  {
+    id: 'armeniaOhanyanBroersVelvetRevolution2020',
+    label: 'Anna Ohanyan and Laurence Broers, eds. — Armenia’s Velvet Revolution: Authoritarian Decline and Civil Resistance in a Multipolar World (2020)',
+    url: 'https://www.bloomsbury.com/uk/armenias-velvet-revolution-9781788317177/',
+    note: 'Bloomsbury/I.B. Tauris publisher record and contents consulted; the 288-page scholarly edited volume is contextual scholarship on the 2018 revolution, civil society, regime change, geopolitics, gender and diaspora, not a study of the 2026 election. The complete book was not consulted and no chapter text, quotation, table or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Anna Ohanyan', 'Laurence Broers'], institution: 'I.B. Tauris / Bloomsbury Publishing',
+    publicationDate: '2020-09-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on Armenia’s 2018 Velvet Revolution and civil resistance', identifiers: { isbn: '9781788317177', pages: '288' },
+    description: 'Edited collection with distinct chapters on Armenia’s protest history, the Republican Party’s competitive-authoritarian system, civil society, nonviolent resistance, geopolitics, gendered public space and diaspora. It contextualizes prior political institutions but does not support claims about the 2026 campaign or electorate.'
+  },
+  {
+    id: 'armeniaGevorgyanCivilSocietyInstitutions2024',
+    label: 'Valentina Gevorgyan — Civil Society and Government Institutions in Armenia: Leaving Behind the “Post-Soviet” Title (2024)',
+    url: 'https://www.routledge.com/Civil-Society-and-Government-Institutions-in-Armenia-Leaving-Behind-the-Post-Soviet-Title/Gevorgyan/p/book/9781032669359',
+    note: 'Routledge publisher record, description and contents consulted for the 256-page monograph; the full book was not read. Its account of state–society relations since 1991 is contextual rather than direct evidence about the 2026 election. No book wording, quotation, table or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Valentina Gevorgyan'], institution: 'Routledge',
+    publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly monograph on Armenian civil society and government institutions since 1991', identifiers: { isbn: '9781032669359', pages: '256' },
+    description: 'A book-length study of relations between Armenian civil society and government institutions from 1991 through the post-2018 period, including legislation and institutional interaction. It is not an event-specific account of the June 2026 vote.'
+  },
+  {
+    id: 'armeniaAfter2018GevorgyanAntonyan2024',
+    label: 'Valentina Gevorgyan and Yulia Antonyan, eds. — Armenia after 2018: Social and Political Transformations (2024)',
+    url: 'https://www.peterlang.com/document/1396725',
+    note: 'Peter Lang publisher record, open-access front matter and selected sections consulted. The 196-page edited volume includes different scholarly framings of the 2018 transition and the 2020 war; only contextual use is made here. Peter Lang identifies CC BY 4.0, but this project publishes original synthesis and a link only; no book wording, table, figure or scan is reproduced.',
+    accessDate: '2026-09-24', creators: ['Valentina Gevorgyan', 'Yulia Antonyan'], institution: 'Peter Lang International Academic Publishers',
+    publicationDate: '2024-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access scholarly edited volume on Armenian political and social transformations after 2018', identifiers: { isbn: '9783034345866', ebookIsbn: '9783034348065', epubIsbn: '9783034348072', doi: '10.3726/b21429', pages: '196', license: 'CC BY 4.0' },
+    description: 'The seven-chapter volume treats democratic transition, security and post-war society through several distinct perspectives, including a critical account of the Velvet Revolution. It ends with the post-2020 setting and cannot explain the 2026 electoral result.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
+  discipline: source.id.startsWith('armenia') ? 'Armenian post-Soviet constitutional, civil-society, parliamentary and electoral history'
+    : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
