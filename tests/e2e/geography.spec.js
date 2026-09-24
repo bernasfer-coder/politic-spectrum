@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(160);
+  await expect(page.locator('.geo-card')).toHaveCount(161);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -136,6 +136,24 @@ test('Côte d’Ivoire’s 2025–2026 election case separates court determinati
   await expect(bookRecord).toContainText('full book was not consulted');
 });
 
+test('Bangladesh’s 2025–2026 election and Charter case distinguishes the Order, result and pending reform record', async ({ page }) => {
+  await page.goto('/#geography?case=bangladeshi-2026-election-july-charter-and-reform-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('13 Nov 2025–20 Sep 2026');
+  await expect(card).toContainText('Aggregate referendum counts reported publicly differ and are not reproduced or reconciled');
+  await expect(card).toContainText('not proof of enacted reforms or a settled constitutional order');
+  await expect(card).toContainText('No book-length scholarship focused on this 2025–2026 episode was identified');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href="#bibliography/research-bangladeshJulyCharterImplementationOrder2025"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-bangladeshJulyCharterImplementationOrder2025$/);
+  const source = page.locator('#source-research-bangladeshJulyCharterImplementationOrder2025');
+  await expect(source).toBeInViewport();
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: 'geography:bangladeshi-2026-election-july-charter-and-reform-transition', exact: true }).click();
+  await expect(card).toHaveCount(1);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -152,7 +170,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(160);
+  await expect(page.locator('.geo-card')).toHaveCount(161);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

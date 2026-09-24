@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-  expect(cards()).toHaveLength(160);
+  expect(cards()).toHaveLength(161);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -62,6 +62,16 @@ describe('geographic atlas', () => {
     await act(async () => { window.history.replaceState(null, '', '/#geography?country=iran'); window.dispatchEvent(new PopStateEvent('popstate')); });
     expect(cards()[0]).toHaveTextContent('1989');
     expect(screen.getByRole('combobox', { name: /Country/ })).toHaveValue('iran');
+  });
+
+  it('keeps Bangladesh’s 2025–2026 election and Charter case bounded and explicitly incomplete', () => {
+    window.history.replaceState(null, '', '/#geography?case=bangladeshi-2026-election-july-charter-and-reform-transition');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('2025–2026 July Charter order, election and reform debate');
+    expect(cards()[0]).toHaveTextContent('Aggregate referendum counts reported publicly differ and are not reproduced or reconciled');
+    expect(cards()[0]).toHaveTextContent('No book-length scholarship focused on this 2025–2026 episode was identified');
+    expect(cards()[0]).toHaveTextContent('not a political-spectrum score for Bangladeshis');
   });
 
   it('preserves contested-place access and tracks newly catalogued Oceania', async () => {

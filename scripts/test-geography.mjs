@@ -6,8 +6,16 @@ import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFA
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 160);
-assert.equal(GEOGRAPHY_LABELS.length, 157);
+assert.equal(GEOGRAPHY_CASES.length, 161);
+assert.equal(GEOGRAPHY_LABELS.length, 158);
+const bangladesh2026 = filterGeographyCases({ country: 'bangladesh' }).find(({ id }) => id === 'bangladeshi-2026-election-july-charter-and-reform-transition');
+assert.ok(bangladesh2026, 'the dated Bangladesh election and Charter case should be discoverable by country');
+assert.equal(bangladesh2026.relationship, 'influenced');
+assert.equal(bangladesh2026.startYear, 2025);
+assert.equal(bangladesh2026.endYear, 2026);
+assert.equal(bangladesh2026.sourceIds.length, 12);
+assert.match(bangladesh2026.limitation, /No book-length scholarship focused on this 2025–2026 episode was identified/);
+assert.match(bangladesh2026.claim, /Aggregate referendum counts reported publicly differ and are not reproduced or reconciled/);
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
@@ -184,4 +192,4 @@ assert.ok(!('profile' in GEOGRAPHY_LABELS.find(({ id }) => id === coteDivoireEle
 assert.ok(filterGeographyCases({ country: 'cote-divoire' }).some(({ id }) => id === coteDivoireElectionCase.id));
 assert.equal(context.bibliography.filter(({ citationIds }) => citationIds.researchSourceIds.includes('coteDivConstitutionalCouncilCandidates2025')).length, 1);
 assert.equal(context.bibliography.find(({ citationIds }) => citationIds.researchSourceIds.includes('coteDivBanegasCutoloWarPapers2025'))?.discipline, 'Ivorian constitutional, electoral and political history');
-console.log('Geography tests passed: 160 dated cases, 157 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 161 dated cases, 158 unscored labels, citations, boundaries, filters and share URLs.');
