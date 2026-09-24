@@ -1,6 +1,86 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'sloveniaOfficialElectionResult2026',
+    label: 'Slovenia — final National Assembly election result, Official Gazette RS no. 197/2026',
+    url: 'https://pisrs.si/api/uradni-list/objava/u20260197.pdf',
+    note: 'Final State Election Commission result minutes published in the Official Gazette of the Republic of Slovenia, no. 197/2026, on 7 April 2026. Used for independent summaries of the certified 88 general-franchise seats and separately elected Italian and Hungarian national-community representatives. No tables, candidate personal data, document images or text are reproduced; election returns do not establish voter motives or ideological representativeness.',
+    accessDate: '2026-09-24', creators: ['Državna volilna komisija Republike Slovenije'], institution: 'Uradni list Republike Slovenije / PISRS',
+    publicationDate: '2026-04-07', evidenceRole: 'primary', confidence: 'high', languages: ['Slovenian'],
+    sourceType: 'certified parliamentary election result / official gazette record', identifiers: { gazetteIssue: '197/2026', documentNumber: '2026-01-0857', minutesNumber: '041-5/2025-26', electionDate: '2026-03-22', pages: '22' },
+    description: 'The final legal record of the 22 March 2026 election: totals, valid and invalid ballots, list shares, allocation of 88 seats, elected candidates and the distinct elections for the Italian and Hungarian community representatives. It is an official results record, not independent observation or evidence of citizens’ policy preferences.'
+  },
+  {
+    id: 'sloveniaDvkElection2026',
+    label: 'Slovenia — State Election Commission, National Assembly election results (22 March 2026)',
+    url: 'https://www.dvk-rs.si/novica/volitve-v-drzavni-zbor/',
+    note: 'State Election Commission public results page and linked downloadable results consulted for an independent summary and source trace. The final Gazette minutes are used for the certified seat allocation. No downloadable spreadsheet, result table or page image is copied into the project.',
+    accessDate: '2026-09-24', creators: ['Državna volilna komisija Republike Slovenije'], institution: 'State Election Commission of the Republic of Slovenia',
+    publicationDate: '2026-03-22', evidenceRole: 'primary', confidence: 'high', languages: ['Slovenian'],
+    sourceType: 'official election authority results page', identifiers: { electionDate: '2026-03-22', officialGazetteIssue: '197/2026' },
+    description: 'The election authority’s event page reports overall turnout, valid ballots and list-level vote shares and links the final result minutes. Its operational result information is paired with the formal Gazette proclamation.'
+  },
+  {
+    id: 'sloveniaOdihrFinalReport2026',
+    label: 'OSCE/ODIHR — Slovenia, Parliamentary Elections, 22 March 2026: Final Report',
+    url: 'https://odihr.osce.org/odihr/666278',
+    note: 'Official OSCE/ODIHR final-report record, dated 3 July 2026, consulted with ODIHR’s published summary of findings. The assessment is used as attributed institutional analysis, not as a substitute for comprehensive polling-place observation or a scholarly monograph. No report text, tables, figures or images are reproduced.',
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe',
+    publicationDate: '2026-07-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election assessment final report', identifiers: { electionDate: '2026-03-22', reportDate: '2026-07-03', reportRecord: 'ODIHR 666278' },
+    description: 'ODIHR’s post-election assessment of the campaign, election administration, finance transparency, access to information and participation of underrepresented groups. Findings are limited to its mission design and should not be read as comprehensive observation of election-day voting, counting or tabulation.'
+  },
+  {
+    id: 'sloveniaOdihrMission2026',
+    label: 'OSCE/ODIHR — Election Assessment Mission, Slovenia parliamentary elections, 22 March 2026',
+    url: 'https://odihr.osce.org/node/661921',
+    note: 'ODIHR mission record consulted for deployment dates, mandate and methodology. It explicitly states that the Election Assessment Mission did not systematically or comprehensively observe election-day voting, counting and tabulation, though mission members visited a small number of polling stations.',
+    accessDate: '2026-09-24', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official international election mission scope and methodology record', identifiers: { electionDate: '2026-03-22', missionStart: '2026-03-04', missionEnd: '2026-03-26' },
+    description: 'Official record of ODIHR’s Election Assessment Mission remit, dates and focus. Its stated limits define how the final report can be interpreted and prevent treating the mission as a comprehensive observation mission.'
+  },
+  {
+    id: 'sloveniaGovernmentFormation2026',
+    label: 'Government of the Republic of Slovenia — About the Government (16th Government, 2026)',
+    url: 'https://www.gov.si/drzavni-organi/vlada/o-vladi/',
+    note: 'Official Slovenian Government page consulted for the National Assembly’s appointment date of the 16th Government and the page’s listed coalition parties. Independent paraphrase only; its coalition list is recorded with a source-consistency caveat because the official Prime Minister biography names a different, shorter list.',
+    accessDate: '2026-09-24', creators: ['Government Communication Office of the Republic of Slovenia'], institution: 'Government of the Republic of Slovenia',
+    publicationDate: '2026-07-02', evidenceRole: 'primary', confidence: 'high', languages: ['Slovenian'],
+    sourceType: 'official government and cabinet record', identifiers: { appointmentDate: '2026-06-04', government: '16th Government', coalitionTerm: '2026–2030' },
+    description: 'Government page recording cabinet appointment on 4 June 2026, executive functions and a five-party coalition list. Used for the dated cabinet-formation record; party membership is not normalized because a separate official biography lists only three partners.'
+  },
+  {
+    id: 'sloveniaPrimeMinisterProfile2026',
+    label: 'Government of the Republic of Slovenia — Janez Janša, Prime Minister biography and chronology',
+    url: 'https://www.gov.si/en/state-authorities/prime-minister/janez-jansa/',
+    note: 'Official Prime Minister biography consulted for the 22 May 2026 election with 51 National Assembly votes and 4 June government start. Its abbreviated coalition-partner list conflicts with the Government’s About page; it is not treated here as the exhaustive coalition record.',
+    accessDate: '2026-09-24', creators: ['Office of the Prime Minister of the Republic of Slovenia'], institution: 'Government of the Republic of Slovenia',
+    publicationDate: '2026-06-19', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official prime-ministerial biography and appointment chronology', identifiers: { primeMinisterElectionDate: '2026-05-22', voteCount: '51', governmentStart: '2026-06-04' },
+    description: 'Official chronology identifying Janša’s election as prime minister on 22 May 2026 by 51 votes and the new Government’s 4 June start. The page’s named coalition partners are inconsistent with the Government’s own coalition list and are not used as an exhaustive composition.'
+  },
+  {
+    id: 'sloveniaFinkHafnerPartySystem2024',
+    label: 'Danica Fink-Hafner — Party System Changes and Challenges to Democracy: Slovenia in a Comparative Perspective (2024)',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-54949-6',
+    note: 'Palgrave Macmillan open-access book and bibliographic record, including chapter 7, “Changes in the Party System (1989–2022),” pp. 161–204. The book provides attributed historical and comparative context only through the 2022 election horizon; it is not evidence about the 2026 contest. Original synthesis and links only; no book text, tables or figures reproduced.',
+    accessDate: '2026-09-24', creators: ['Danica Fink-Hafner'], institution: 'Palgrave Macmillan',
+    publicationDate: '2024-03-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access book-length comparative study of Slovenian party-system change', identifiers: { doi: '10.1007/978-3-031-54949-6', isbnHardcover: '978-3-031-54948-9', isbnEbook: '978-3-031-54949-6', pages: 'XVII, 236', chapter: '7', chapterPages: '161–204', publisher: 'Palgrave Macmillan' },
+    description: 'A comparative scholarly monograph tracing party-system dynamics from the democratic transition through 2022. It identifies distinct periods, persistent fragmentation, changing institutionalization and contextual factors in democracy’s trajectory; the author cautions that party-system instability alone does not explain democratic backsliding. Its endpoint predates the present case.'
+  },
+  {
+    id: 'sloveniaHacekPoliticsState2017',
+    label: 'Miro Haček, Simona Kukovič and Marjan Brezovšek — Slovenian Politics and the State (2017)',
+    url: 'https://www.bloomsbury.com/us/slovenian-politics-and-the-state-9781498565356/',
+    note: 'Lexington Books/Bloomsbury bibliographic record for the first edition (2017, 242 pages, ISBN 9781498565356). Used as a second, earlier book-length institutional perspective, not as evidence about the 2026 election or later practice. Publisher description and chapter list consulted; original summary and link only, with no book text or tables reproduced.',
+    accessDate: '2026-09-24', creators: ['Miro Haček', 'Simona Kukovič', 'Marjan Brezovšek'], institution: 'Lexington Books / Bloomsbury Publishing',
+    publicationDate: '2017-11-22', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length study of Slovenian political institutions and statehood', identifiers: { isbn: '9781498565356', pages: '242', edition: '1st', publisher: 'Lexington Books' },
+    description: 'A scholarly institutional study organized around democratic transition and consolidation, the Constitution, separation of powers, local government, political participation, democracy and the European Union. It supplies an earlier baseline, not a current assessment or event-specific account.'
+  },
+  {
     id: 'burkinaConstitution1991Presidence',
     label: 'Burkina Faso — Constitution of 11 June 1991, Presidency fundamental-texts record',
     url: 'https://www.presidencedufaso.bf/textes-fondamentaux/',
@@ -6632,7 +6712,8 @@ export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note })
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
+  discipline: source.id.startsWith('slovenia') ? 'Slovenian parliamentary, electoral and political history'
+    : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
