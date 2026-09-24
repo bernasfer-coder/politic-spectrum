@@ -9106,6 +9106,96 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'algeriaConstitutionRevision2026',
+    label: 'JORADP — Law No. 26-04 of 26 March 2026 revising the Constitution',
+    url: 'https://www.joradp.dz/FTP/jo-francais/2026/F2026022.pdf',
+    note: 'Official Journal No. 22, 26 March 2026, French-language legal witness. The law amends specified constitutional provisions and adds Article 226; cited as formal design only. No statutory wording, translation, table or facsimile is reproduced, and enactment does not establish implementation or political consensus.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire',
+    publicationDate: '2026-03-26', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional revision / official journal', identifiers: { law: '26-04', officialJournal: '22' },
+    description: 'Primary witness for the 2026 revision of Articles 87, 89, 91, 93, 121, 134, 138, 145, 180, 181, 202 and 224 and insertion of Article 226. It establishes the text of formal constitutional change, not the distribution of power in practice.'
+  },
+  {
+    id: 'algeriaElectoralOrganicLaw2026',
+    label: 'JORADP — Organic Law No. 26-05 amending the organic electoral law',
+    url: 'https://www.joradp.dz/FTP/jo-francais/2026/F2026024.pdf',
+    note: 'Official Journal No. 24, 4 April 2026, French-language legal witness amending and supplementing the organic electoral-law framework. Used to document formal election-administration rules; no statutory text or table is republished and the statute alone cannot establish neutral or uniform application.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire',
+    publicationDate: '2026-04-04', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral organic law / official journal', identifiers: { law: '26-05', officialJournal: '24' },
+    description: 'Primary legal witness to the 2026 amendments to the organic electoral regime, including the statutory framework for ANIE and election administration. Formal duties are distinguished from implementation.'
+  },
+  {
+    id: 'algeriaParliamentaryDistrictLaw2026',
+    label: 'JORADP — Law No. 26-07 of 8 April 2026 on electoral districts and parliamentary seats',
+    url: 'https://www.joradp.dz/FTP/jo-francais/2026/F2026026.pdf',
+    note: 'Law dated 8 April and published in Official Journal No. 26 on 9 April 2026. Its annexes set People’s National Assembly electoral districts and seat allocations; no tables are reproduced. The formal apportionment rule is not an independent assessment of equality or effects.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire',
+    publicationDate: '2026-04-09', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral-district and seat-allocation law / official journal', identifiers: { law: '26-07', officialJournal: '26' },
+    description: 'Primary witness for statutory constituency boundaries and National People’s Assembly seat allocation, including a population-based formula and wilaya boundaries. It records the legal design, not how voters or communities experienced the allocation.'
+  },
+  {
+    id: 'algeriaPoliticalPartiesOrganicLaw2026',
+    label: 'JORADP — Organic Law No. 26-08 on political parties',
+    url: 'https://www.joradp.dz/FTP/jo-francais/2026/F2026030.pdf',
+    note: 'Official Journal No. 30, 23 April 2026, French-language legal witness. Cited for the statutory framework governing political parties, including the text of Article 8; no statutory wording or translation is reproduced. The provision alone does not establish enforcement, actual party-language practice or effects on communities.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire',
+    publicationDate: '2026-04-23', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary political-parties organic law / official journal', identifiers: { law: '26-08', officialJournal: '30' },
+    description: 'Primary witness for the 2026 organic law on political parties. Its language provision is discussed narrowly as statutory text and not treated as evidence of effects or enforcement.'
+  },
+  {
+    id: 'algeriaLegislativeElection2026Final',
+    label: 'Algerian Constitutional Court — Final proclamation of the 2 July 2026 National People’s Assembly election',
+    url: 'https://cour-constitutionnelle.dz/2026/07/27/proclamation-du-3-safar-1448-correspondant-au-18-juillet-2026-portant-resultats-definitifs-de-lelection-des-membres-de-lassemblee-populaire-nationale-qui-a-eu-lieu-le-2-juillet-2026/?print=print',
+    note: 'Court proclamation dated 18 July 2026 and posted with detailed final-result tables on 27 July. Primary witness for official participation, seat allocation, appeals and judicially changed polling-station results; the judgment does not independently assess the campaign or resolve broader questions of electoral quality and representation.',
+    accessDate: '2026-09-24', creators: ['Constitutional Court of Algeria'], institution: 'Constitutional Court of Algeria',
+    publicationDate: '2026-07-27', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary constitutional-court election proclamation', identifiers: { proclamationDate: '2026-07-18', electionDate: '2026-07-02' },
+    description: 'Primary record of final results for the 2026 National People’s Assembly election. The Court records domestic and diaspora turnout, party seat distribution, demographic composition and disposition of 320 appeals; these are official findings, not an independent observation report.'
+  },
+  {
+    id: 'algeriaPresidentialElectionDispute2024LeMonde',
+    label: 'Hamid Nasri — “Algeria’s disputed election results and low turnout taint president’s re-election”',
+    url: 'https://www.lemonde.fr/en/le-monde-africa/article/2024/09/10/algeria-s-disputed-election-results-and-low-turnout-taint-president-s-re-election_6725487_124.html',
+    note: 'Le Monde reporting from Algiers, 10 September 2024. Used only for its contemporaneous account of preliminary-result confusion and attributed candidate objections; the final Constitutional Court proclamation is the source for definitive figures. No article wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Hamid Nasri'], institution: 'Le Monde',
+    publicationDate: '2024-09-10', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous election reporting', identifiers: {},
+    description: 'Contemporaneous reporting records candidate teams’ complaints about preliminary figures and turnout communication before final judicial proclamation. It is attributed journalism, not an election-observation mission or conclusive finding of fraud.'
+  },
+  {
+    id: 'algeriaLegislativeElection2026AP',
+    label: 'Associated Press — “Algerians vote in parliamentary elections while facing cost-of-living strains and candidate bans”',
+    url: 'https://apnews.com/article/algeria-algiers-parliamentary-elections-34653095427e8d0a4cae36ade1b2d5c1',
+    note: 'Associated Press report from Algiers, 2 July 2026. Political-party, candidate and government statements about candidate exclusions, purchasing power, public services and political freedoms are attributed; reporting is not a representative survey or independent election-observation report. No article wording is reproduced.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-07-02', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous parliamentary-election reporting', identifiers: {},
+    description: 'Contemporaneous report on the 2 July election, the electoral authority’s stated grounds for excluding candidates, candidates’ claims of unfair application, party campaign themes and cost-of-living concerns. Such attributed reports document claims and coverage, not every candidate’s case or population-wide attitudes.'
+  },
+  {
+    id: 'algeriaTechnicalReformIDEA2026',
+    label: 'Amar Rouabhi — “Algeria’s ‘Technical’ Constitutional Reform: Between Closing Procedural Gaps and Recalibrating Institutional Balances”',
+    url: 'https://constitutionnet.org/news/voices/algeria-reform-closing-procedural-gaps-recalibrating-institutional-balances',
+    note: 'International IDEA ConstitutionNet expert commentary by Amar Rouabhi, 7 May 2026. It interprets the reform as an institutional recalibration while noting the official technical framing; this is the author’s analysis, not a primary source or independent measure of implementation. No text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Amar Rouabhi'], institution: 'International IDEA / ConstitutionNet',
+    publicationDate: '2026-05-07', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'constitutional-law and institutional analysis', identifiers: {},
+    description: 'Expert interpretation of the 2026 amendments, their effects on executive authority, Parliament, judicial governance and electoral oversight, and the formal-legitimacy versus political-participation question. It is attributed interpretation and not a substitute for implementation research.'
+  },
+  {
+    id: 'algeriaBoukharsCivilianisingState2023',
+    label: 'Anouar Boukhars — “Plus ça change, plus c’est la même chose: The Herculean Task of Civilianising the Algerian State”',
+    url: 'https://www.cambridge.org/core/books/abs/geopolitics-and-governance-in-north-africa/plus-ca-change-plus-cest-la-meme-chose-the-herculean-task-of-civilianising-the-algerian-state/1809281331A56D569367CE855E8984F0',
+    note: 'Chapter 6, pp. 168–193, in Sarah Yerkes (ed.), Geopolitics and Governance in North Africa: Local Challenges, Global Implications (Edinburgh University Press, 2023; chapter published online 28 February 2025). Publisher chapter record consulted for bibliographic scope; it predates the 2024–2026 events and is contextual scholarship only. Full chapter not reviewed for this case; no chapter text is reproduced.',
+    accessDate: '2026-09-24', creators: ['Anouar Boukhars'], institution: 'Edinburgh University Press',
+    publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'academic edited-book chapter on Algerian state and civil–military relations', identifiers: { chapter: '6', pages: '168-193' },
+    description: 'Book-chapter context for debates over civilian authority and the Algerian state; not evidence of the later election episodes and not claimed as read in full for this case.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
