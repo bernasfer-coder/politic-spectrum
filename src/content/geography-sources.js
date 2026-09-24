@@ -6626,6 +6626,106 @@ const sources = [
     sourceType: 'book-length comparative study of democratic change and Ecuadorian politics', identifiers: { isbn: '9789978675908', pdfIsbn: '9789978675915', pages: '172', publisher: 'FLACSO Ecuador', doi: '10.46546/2021-24atrio' },
     description: 'Comparative book-length study of the political turn to the left, hybrid-regime debate and democratic-quality decline in South America, with Ecuador as a principal reference case. It supplies a later political-science lens on the Citizens’ Revolution and democratic institutions without establishing a complete social, regional or post-2021 history.'
   },
+  {
+    id: 'botswanaConstitutionSection32',
+    label: 'Constitution of Botswana — section 32 (official Parliament-hosted English witness)',
+    url: 'https://parliament.gov.bw/images/constitution.pdf',
+    note: 'Official Parliament-hosted constitutional witness consulted for section 32 and linked as a primary legal source only. The online witness does not identify its consolidation/version date; no constitutional wording, translation, scan or PDF page is republished. The formal presidential selection rule is distinguished from electoral practice and the quality of the 2024 contest.',
+    accessDate: '2026-09-24', creators: ['Republic of Botswana'], institution: 'Parliament of Botswana',
+    publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional text / Parliament-hosted legal witness', identifiers: { sections: '32(3)(a)–(d)', onlineVersion: 'version date not stated' },
+    description: 'Section 32 ties presidential election after dissolution of Parliament to declared support from more than half of the elected National Assembly seats. In the 2024 61-seat contest, this meant at least 31 declared supporters; it was not a separate direct presidential ballot. The text establishes formal design, not implementation or public consent.'
+  },
+  {
+    id: 'botswanaBopaElectionResults2024',
+    label: 'Botswana Press Agency — UDC clinches 36 parliamentary seats (3 November 2024)',
+    url: 'https://dailynews.gov.bw/news-detail/82945',
+    note: 'DailyNews carries this Botswana Press Agency (BOPA) results summary, consulted for the reported party and independent-member seat totals and linked only. It is government news-agency reporting, not the Independent Electoral Commission’s signed constituency return; no article wording, result table or image is republished.',
+    accessDate: '2026-09-24', creators: ['Botswana Press Agency'], institution: 'DailyNews / Botswana Government Communications and Information Services',
+    publicationDate: '2024-11-03', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'government news-agency report / post-election seat summary', identifiers: { publicationDate: '2024-11-03' },
+    description: 'Reports UDC 36, Botswana Congress Party 15, Botswana Patriotic Front 5, Botswana Democratic Party 4 and one independent member. Its post-election report documents the government news service’s contemporaneous result summary; it is cross-checked against IPU Parline and is not presented as an IEC declaration or election audit.'
+  },
+  {
+    id: 'botswanaIpuParlineElection2024',
+    label: 'Inter-Parliamentary Union PARLINE — Botswana National Assembly October 2024 election',
+    url: 'https://data.ipu.org/parliament/BW/BW-LC01/election/BW-LC01-E20241030/',
+    note: 'IPU PARLINE country/election record consulted for election date, 61 elected seats, seat totals and constitutional presidential-selection description; linked as an institutional comparative data source only. The record compiles official and secondary material and is not represented as an independent precinct-level audit. Voter-total and turnout figures are omitted because institutional records differ.',
+    accessDate: '2026-09-24', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union, PARLINE',
+    publicationDate: null, evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'inter-parliamentary election and legislature data record', identifiers: { electionDate: '2024-10-30', electedSeats: '61' },
+    description: 'Institutional parliamentary data record for the 30 October 2024 National Assembly election, seat totals and constitutional mechanism by which a presidential candidate supported by a majority of elected members is declared elected. It corroborates the bounded outcome without establishing voter motivations, equal campaign conditions or the quality of every constituency contest.'
+  },
+  {
+    id: 'botswanaApTransfer2024',
+    label: 'Associated Press — Botswana opposition victory and transfer of power (1 November 2024)',
+    url: 'https://apnews.com/article/80951b62fdb7169f073c2b13acaff1b6',
+    note: 'Associated Press reporting consulted for the sequence of President Mokgweetsi Masisi’s concession before final results and the subsequent announcement that UDC had secured a parliamentary majority; linked only. No article text, photograph or media is republished, and the report is not treated as an official return.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2024-11-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report on election result and concession', identifiers: { publicationDate: '2024-11-01' },
+    description: 'Contemporaneous independent reporting distinguishes the incumbent’s concession from the later formal announcement of the UDC majority. It corroborates the transfer sequence but does not replace the Constitution or institutional results record.'
+  },
+  {
+    id: 'botswanaCommonwealthObserver2024',
+    label: 'Commonwealth Expert Team — Botswana Presidential and National Assembly Elections, 30 October 2024 (report published 2025)',
+    url: 'https://production-new-commonwealth-files.s3.eu-west-2.amazonaws.com/s3fs-public/2025-09/botswana-cog-report-2024.pdf',
+    note: 'Commonwealth Expert Team final report consulted for its attributed observations on administration, participation and the campaign; linked only, with no report language, table or figure reproduced. The Commonwealth library catalogue displays an erroneous “18 October 2024” title date; the report cover correctly identifies the election date as 30 October 2024. Observer findings are not treated as a complete audit of every polling place or as proof of uniform experience.',
+    accessDate: '2026-09-24', creators: ['Commonwealth Expert Team'], institution: 'Commonwealth Secretariat',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation report', identifiers: { electionDate: '2024-10-30', reportYear: '2025', reportTitleDateCatalogueError: '18 October 2024 in catalogue; 30 October 2024 on report cover' },
+    description: 'Observer-team assessment of the October 2024 presidential and National Assembly elections, including electoral administration, participation, campaign/media conditions, voting, counting and results. The report records positive process observations alongside concerns including candidate inclusion, smaller-party media access, voter education and advance-poll ballot shortages; these remain the Team’s findings and do not establish every voter’s experience.'
+  },
+  {
+    id: 'botswanaTumedisoElections2026',
+    label: 'Bontle Tumediso — The 2024 Botswana Elections and the Demise of the Botswana Democratic Party (2026)',
+    url: 'https://academic.oup.com/afraf/article/125/499/323/8499740',
+    note: 'Peer-reviewed African Affairs article consulted in full and linked for original attributed synthesis only. No article wording, table, quotation or figure is republished. Its causal account is explicitly attributed to the author and not treated as proof of individual voter motives or a consensus explanation.',
+    accessDate: '2026-09-24', creators: ['Bontle Tumediso'], institution: 'African Affairs / Oxford Academic',
+    publicationDate: '2026-02-26', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed political-science article on the 2024 Botswana election', identifiers: { journal: 'African Affairs', volume: '125', issue: '499', pages: '323–339', doi: '10.1093/afraf/adag005' },
+    description: 'A Botswana political scientist’s retrospective analysis of the BDP’s 2024 loss. Tumediso argues that economic decline, governance and corruption concerns, internal party-primary disputes and opposition coordination contributed; this is a sourced scholarly interpretation, not an exclusive or independently proven explanation of each vote.'
+  },
+  {
+    id: 'botswanaDeJagerDuToitDominantParty2013',
+    label: 'Nicola de Jager and Pierre du Toit (eds.) — Friend or Foe? Dominant Party Systems in Southern Africa (2013)',
+    url: 'https://openuctpress.uct.ac.za/uctpress/catalog/book/9',
+    note: 'UCT Press publisher record and the open book, including David Sebudubudu and Mokganedi Zara Botlhomilwe’s Botswana chapter, “Interrogating the dominant party system in Botswana” (pp. 115–131), consulted for historical context. Original synthesis and bibliographic link only; no book wording, quotation, table, scan or figure is republished. The publisher identifies a CC BY 4.0 license; attribution and third-party-material conditions still apply.',
+    accessDate: '2026-09-24', creators: ['Nicola de Jager', 'Pierre du Toit'], institution: 'UCT Press / United Nations University Press',
+    publicationDate: '2013', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access scholarly edited volume on dominant-party systems', identifiers: { isbn: '9781919895567', ebookIsbn: '9781920516635', pages: '218', doi: '10.58331/UCTPRESS.9', botswanaChapter: 'David Sebudubudu and Mokganedi Zara Botlhomilwe, pp. 115–131' },
+    description: 'Comparative edited volume on party dominance and democratic competition in Southern Africa; its Botswana chapter studies the BDP-era system before the 2024 alternation. It supplies historical party-system context, not a prediction of the result or proof that electoral competition was uniformly fair.'
+  },
+  {
+    id: 'botswanaGoodDiamondsDemocracy2008',
+    label: 'Kenneth Good — Diamonds, Dispossession and Democracy in Botswana (2008)',
+    url: 'https://www.cambridge.org/core/books/abs/diamonds-dispossession-and-democracy-in-botswana/ruling-party-predominance/5559B52BCE230387CA0147DA7CA6510D',
+    note: 'Boydell & Brewer/Cambridge chapter record and abstract consulted for Good’s critical pre-2024 account of presidentialism and BDP predominance; linked only. No book or chapter text, quotation, table or figure is republished. This is an attributed, historically situated interpretation, not a description of the post-2024 order.',
+    accessDate: '2026-09-24', creators: ['Kenneth Good'], institution: 'James Currey / Boydell & Brewer; Cambridge Core chapter record',
+    publicationDate: '2008', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly monograph / publisher chapter record on Botswana’s ruling-party predominance', identifiers: { isbn: '9781847013125', ebookIsbn: '9781846156274', chapter: '3, Ruling Party Predominance, pp. 44–65', doi: '10.1515/9781846156274' },
+    description: 'Critical study of Botswana’s diamond political economy, presidentialism, dominant-party power and social consequences up to the mid-2000s. It is a distinct and contestable pre-2024 interpretation, valuable as context for long incumbency but not evidence about the 2024 transition itself.'
+  },
+  {
+    id: 'botswanaVanEerdQualityDemocracy2017',
+    label: 'Jonathan van Eerd — The Quality of Democracy in Africa: Opposition Competitiveness Rooted in Legacies of Cleavages (2017)',
+    url: 'https://link.springer.com/book/10.1007/978-3-319-50838-2',
+    note: 'Palgrave Macmillan publisher record and table of contents consulted for bibliographic scope; full book chapters were not consulted in this pass. The record identifies Botswana among four in-depth comparative cases. Link only; no book text, quotation, table, scan or figure is republished, and no claim about the 2024 outcome is inferred from this pre-election study.',
+    accessDate: '2026-09-24', creators: ['Jonathan van Eerd'], institution: 'Palgrave Macmillan / Springer Nature',
+    publicationDate: '2017-04-07', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length comparative study of opposition competitiveness and democratic quality', identifiers: { isbn: '9783319508375', ebookIsbn: '9783319508382', pages: '272', doi: '10.1007/978-3-319-50838-2' },
+    description: 'Comparative study of opposition competitiveness in African dominant-party systems, with Botswana, Lesotho, Ghana and Mali as in-depth cases. Used here only as publisher-record evidence that an independent book-length comparative literature exists; it does not establish the 2024 election’s causes or quality.'
+  },
+  {
+    id: 'botswanaUdcManifesto2024',
+    label: 'Umbrella for Democratic Change — 2024 Botswana Elections manifesto (party self-description)',
+    url: 'https://www.udc.org.bw/wp-content/uploads/2025/03/UDC-MANIFESTO-FOR-2024-BOTSWANA-ELECTIONS-short-2.pdf',
+    note: 'UDC campaign manifesto consulted as primary party self-description and linked only. No manifesto wording, campaign material, table or PDF page is republished; promises and self-characterisations are not treated as implemented policy, independently verified conditions or proof of the coalition’s representativeness.',
+    accessDate: '2026-09-24', creators: ['Umbrella for Democratic Change'], institution: 'Umbrella for Democratic Change',
+    publicationDate: '2024', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'political-party election manifesto / campaign self-description', identifiers: { electionYear: '2024', documentType: 'short manifesto' },
+    description: 'Coalition’s own short campaign document, including its stated economic and institutional commitments. It is evidence of campaign self-presentation only, not of voter motivations, coalition-wide ideological uniformity, later delivery or government practice.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -6698,6 +6798,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
         : source.id.startsWith('cambodia') || source.id.startsWith('chandlerHistoryCambodia') || source.id.startsWith('hughesPoliticalEconomyCambodia') || source.id.startsWith('robertsPoliticalTransitionCambodia') || source.id.startsWith('etchesonRiseDemiseKampuchea') || source.id.startsWith('strangioHunSensCambodia') || source.id.startsWith('kheangUnCambodia') ? 'Cambodian conflict, reconstruction and constitutional political history'
         : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
         : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
+      : source.id.startsWith('botswana') ? 'Botswanan parliamentary, dominant-party and electoral-transition history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
