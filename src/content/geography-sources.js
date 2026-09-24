@@ -9490,6 +9490,51 @@ const sources = [
     sourceType: 'peer-reviewed book-length history of power and conflict in the Congo Basin', identifiers: { isbn: '9789462704510', doi: '10.11116/9789461666260', pages: '272' },
     description: 'Publisher description presents a two-century account of political and military violence in the Congo Basin, including the Mobutu state’s collapse, the Great African War and continuing instability in the east. The wide historical frame is not substituted for granular contemporary reporting or local testimony.'
   },
+  {
+    id: 'algeriaConstitutionRevision2026', label: 'JORADP — Law No. 26-04 of 26 March 2026 revising the Constitution', url: 'https://www.joradp.dz/FTP/jo-francais/2026/F2026022.pdf',
+    note: 'Official Journal No. 22, 26 March 2026, French-language legal witness. Used for formal constitutional design only; no statutory wording or facsimile is reproduced, and enactment does not establish implementation or consensus.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire', publicationDate: '2026-03-26', evidenceRole: 'primary', confidence: 'high', languages: ['French'], sourceType: 'primary constitutional revision / official journal', identifiers: { law: '26-04', officialJournal: '22' }, description: 'Primary witness for the 2026 constitutional revision and insertion of Article 226; it establishes formal change, not power distribution in practice.'
+  },
+  {
+    id: 'algeriaElectoralOrganicLaw2026', label: 'JORADP — Organic Law No. 26-05 amending the organic electoral law', url: 'https://www.joradp.dz/FTP/jo-francais/2026/F2026024.pdf',
+    note: 'Official Journal No. 24, 4 April 2026, French-language legal witness for the electoral framework. No statutory text is republished; the statute cannot establish neutral or uniform application.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire', publicationDate: '2026-04-04', evidenceRole: 'primary', confidence: 'high', languages: ['French'], sourceType: 'primary electoral organic law / official journal', identifiers: { law: '26-05', officialJournal: '24' }, description: 'Primary legal witness to 2026 amendments to election administration and ANIE’s formal framework.'
+  },
+  {
+    id: 'algeriaParliamentaryDistrictLaw2026', label: 'JORADP — Law No. 26-07 of 8 April 2026 on electoral districts and parliamentary seats', url: 'https://www.joradp.dz/FTP/jo-francais/2026/F2026026.pdf',
+    note: 'Law dated 8 April and published in Official Journal No. 26. Its annexes set districts and seats; no tables are reproduced and the rule is not an independent assessment of equality or effects.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire', publicationDate: '2026-04-09', evidenceRole: 'primary', confidence: 'high', languages: ['French'], sourceType: 'primary electoral-district and seat-allocation law / official journal', identifiers: { law: '26-07', officialJournal: '26' }, description: 'Primary witness for statutory constituency boundaries and seat allocation.'
+  },
+  {
+    id: 'algeriaPoliticalPartiesOrganicLaw2026', label: 'JORADP — Organic Law No. 26-08 on political parties', url: 'https://www.joradp.dz/FTP/jo-francais/2026/F2026030.pdf',
+    note: 'Official Journal No. 30, 23 April 2026, French-language legal witness. Cited narrowly for the statutory party framework and Article 8; no wording or translation is reproduced.',
+    accessDate: '2026-09-24', creators: ['President of the Republic of Algeria'], institution: 'Journal officiel de la République algérienne démocratique et populaire', publicationDate: '2026-04-23', evidenceRole: 'primary', confidence: 'high', languages: ['French'], sourceType: 'primary political-parties organic law / official journal', identifiers: { law: '26-08', officialJournal: '30' }, description: 'Primary witness for the 2026 organic law on political parties; the language provision is not treated as evidence of enforcement or effects.'
+  },
+  {
+    id: 'algeriaLegislativeElection2026Final', label: 'Algerian Constitutional Court — Final proclamation of the 2 July 2026 National People’s Assembly election', url: 'https://cour-constitutionnelle.dz/2026/07/27/proclamation-du-3-safar-1448-correspondant-au-18-juillet-2026-portant-resultats-definitifs-de-lelection-des-membres-de-lassemblee-populaire-nationale-qui-a-eu-lieu-le-2-juillet-2026/?print=print',
+    note: 'Court proclamation dated 18 July 2026 and posted 27 July. Primary witness for official participation, seat allocation, appeals and judicially changed results; it does not independently assess campaign quality or representation.',
+    accessDate: '2026-09-24', creators: ['Constitutional Court of Algeria'], institution: 'Constitutional Court of Algeria', publicationDate: '2026-07-27', evidenceRole: 'primary', confidence: 'high', languages: ['French'], sourceType: 'primary constitutional-court election proclamation', identifiers: { proclamationDate: '2026-07-18', electionDate: '2026-07-02' }, description: 'Primary final-result record for the 2026 National People’s Assembly election, including official turnout, seats, demographics and appeals.'
+  },
+  {
+    id: 'algeriaPresidentialElectionDispute2024LeMonde', label: 'Hamid Nasri — “Algeria’s disputed election results and low turnout taint president’s re-election”', url: 'https://www.lemonde.fr/en/le-monde-africa/article/2024/09/10/algeria-s-disputed-election-results-and-low-turnout-taint-president-s-re-election_6725487_124.html',
+    note: 'Le Monde reporting from Algiers, 10 September 2024, used for attributed preliminary-result confusion and candidate objections; the final Court proclamation supplies definitive figures.',
+    accessDate: '2026-09-24', creators: ['Hamid Nasri'], institution: 'Le Monde', publicationDate: '2024-09-10', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'], sourceType: 'contemporaneous election reporting', identifiers: {}, description: 'Contemporaneous reporting of complaints before final judicial proclamation; not an observation mission or conclusive fraud finding.'
+  },
+  {
+    id: 'algeriaLegislativeElection2026AP', label: 'Associated Press — “Algerians vote in parliamentary elections while facing cost-of-living strains and candidate bans”', url: 'https://apnews.com/article/algeria-algiers-parliamentary-elections-34653095427e8d0a4cae36ade1b2d5c1',
+    note: 'Associated Press report from Algiers, 2 July 2026. Statements about candidate exclusions, purchasing power and political freedoms are attributed; this is not a representative survey or observation report.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press', publicationDate: '2026-07-02', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'], sourceType: 'contemporaneous parliamentary-election reporting', identifiers: {}, description: 'Contemporaneous report on the election, candidate exclusions and campaign themes; it does not establish every candidate’s case or population-wide attitudes.'
+  },
+  {
+    id: 'algeriaTechnicalReformIDEA2026', label: 'Amar Rouabhi — “Algeria’s ‘Technical’ Constitutional Reform”', url: 'https://constitutionnet.org/news/voices/algeria-reform-closing-procedural-gaps-recalibrating-institutional-balances',
+    note: 'International IDEA ConstitutionNet commentary, 7 May 2026. It is attributed analysis, not primary evidence or an implementation measure.',
+    accessDate: '2026-09-24', creators: ['Amar Rouabhi'], institution: 'International IDEA / ConstitutionNet', publicationDate: '2026-05-07', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'], sourceType: 'constitutional-law and institutional analysis', identifiers: {}, description: 'Expert interpretation of the 2026 amendments and institutional balances.'
+  },
+  {
+    id: 'algeriaBoukharsCivilianisingState2023', label: 'Anouar Boukhars — “Plus ça change, plus c’est la même chose: The Herculean Task of Civilianising the Algerian State”', url: 'https://www.cambridge.org/core/books/abs/geopolitics-and-governance-in-north-africa/plus-ca-change-plus-cest-la-meme-chose-the-herculean-task-of-civilianising-the-algerian-state/1809281331A56D569367CE855E8984F0',
+    note: 'Chapter 6 in Yerkes (ed.), Geopolitics and Governance in North Africa (Edinburgh University Press, 2023). Publisher record supplies contextual metadata; later events are not covered and the chapter was not read in full for this case.',
+    accessDate: '2026-09-24', creators: ['Anouar Boukhars'], institution: 'Edinburgh University Press', publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'academic edited-book chapter on Algerian state and civil–military relations', identifiers: { chapter: '6', pages: '168-193' }, description: 'Book-chapter context for civilian authority and the Algerian state, not evidence of the later election episodes.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -9574,6 +9619,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('dominican') ? 'Dominican post-Trujillo, constitutional, democratic-transition and political history'
       : source.id.startsWith('kosovo') ? 'Kosovo post-independence constitutional, electoral and state-building history'
       : source.id.startsWith('drc') ? 'Democratic Republic of the Congo eastern-conflict, regional diplomacy and peacebuilding history'
+      : source.id.startsWith('algeria') || source.id.startsWith('ruedyModernAlgeria') || source.id.startsWith('mcdougallHistoryAlgeria') || source.id.startsWith('willisAlgeriaHirak') || source.id.startsWith('serresSuspendedDisaster') || source.id.startsWith('allalBaamaraDakhliFabbianoHirak') ? 'Algerian constitutional, Hirak and political history'
       : 'Middle Eastern political history and geography',
   publicationDate: source.publicationDate, publisher: source.institution, confidence: source.confidence,
   languages: source.languages, description: source.description, identifiers: source.identifiers ?? {},
