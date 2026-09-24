@@ -9264,6 +9264,96 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'ukraineConstitution1996',
+    label: 'Verkhovna Rada of Ukraine — Constitution of Ukraine (1996; current consolidated edition and official English presentation)',
+    url: 'https://zakon.rada.gov.ua/rada/show/254%D0%BA/96-%D0%B2%D1%80.frame?lang=en',
+    note: 'Official Verkhovna Rada constitutional record consulted for an independent summary and link only. No constitutional wording or translated passage is reproduced; formal text is not treated as uniform practice, public consent or a complete account of disputed wartime interpretation.',
+    accessDate: '2026-09-24', creators: ['Verkhovna Rada of Ukraine'], institution: 'Verkhovna Rada of Ukraine',
+    publicationDate: '1996-06-28', evidenceRole: 'primary', confidence: 'high', languages: ['Ukrainian', 'English translation'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { document: '254к/96-ВР', adoptionDate: '1996-06-28', currentConsolidatedRevision: '2020-01-01', rightsRecord: 'Verkhovna Rada database states CC BY 4.0 unless otherwise specified' },
+    description: 'Primary constitutional witness to Ukraine’s institutional framework, including Article 83’s parliamentary continuity rule and Article 157’s ban on constitutional amendment during martial law or a state of emergency. The text establishes formal rules, not how every provision is interpreted or implemented.'
+  },
+  {
+    id: 'ukraineMartialLawAct2026',
+    label: 'Verkhovna Rada of Ukraine — Law No. 389-VIII on the Legal Regime of Martial Law (12 May 2015; revision 4 March 2026)',
+    url: 'https://zakon.rada.gov.ua/laws/show/389-19',
+    note: 'Official Verkhovna Rada legal record, current version identified as revised 4 March 2026, consulted for an independent summary and link only. No statutory language or translation is reproduced; the law’s formal authority is distinguished from its implementation and contested interpretation.',
+    accessDate: '2026-09-24', creators: ['Verkhovna Rada of Ukraine'], institution: 'Verkhovna Rada of Ukraine',
+    publicationDate: '2015-05-12', evidenceRole: 'primary', confidence: 'high', languages: ['Ukrainian'],
+    sourceType: 'primary statute / official legal record', identifiers: { law: '389-VIII', adoptionDate: '2015-05-12', consultedRevision: '2026-03-04' },
+    description: 'Primary legal framework for declaring and implementing martial law. Article 19 lists elections and constitutional amendment among the measures prohibited during the regime; the statute alone does not resolve every constitutional or political dispute about emergency powers.'
+  },
+  {
+    id: 'ukraineMartialLawDecree2022',
+    label: 'President of Ukraine — Decree 64/2022 martial-law approval record (24 February 2022)',
+    url: 'https://www.president.gov.ua/en/news/prezident-pidpisav-ukaz-pro-zaprovadzhennya-voyennogo-stanu-73109',
+    note: 'Official presidential account consulted as a contemporaneous executive record and link only. No decree wording, press text, image or translation is reproduced; this source establishes the reported act and approval, not an independent assessment of later governance or rights implementation.',
+    accessDate: '2026-09-24', creators: ['President of Ukraine', 'Office of the President of Ukraine'], institution: 'Office of the President of Ukraine',
+    publicationDate: '2022-02-24', evidenceRole: 'primary', confidence: 'high', languages: ['English translation', 'Ukrainian'],
+    sourceType: 'primary presidential decree announcement / executive record', identifiers: { decree: '64/2022', eventDate: '2022-02-24', parliamentaryApprovalVotes: '300' },
+    description: 'Contemporaneous official account states that President Volodymyr Zelenskyy signed Decree 64/2022, the Verkhovna Rada approved it by 300 votes and martial law began at 05:30 on 24 February 2022. It also records the executive’s stated temporary rights restrictions and is not independent monitoring.'
+  },
+  {
+    id: 'ukraineMartialLawExtension2026',
+    label: 'Verkhovna Rada of Ukraine — July 2026 approval of a further 90-day martial-law extension',
+    url: 'https://www.rada.gov.ua/print/274163.html',
+    note: 'Official Parliament press-service account consulted for an independent summary and link only. No parliamentary wording, voting data, image or PDF is reproduced; the announcement anchors the legal period stated by the institution and is not evidence of public consent or conditions throughout the territory.',
+    accessDate: '2026-09-24', creators: ['Verkhovna Rada of Ukraine Press Service'], institution: 'Verkhovna Rada of Ukraine',
+    publicationDate: '2026-07-14', evidenceRole: 'primary', confidence: 'high', languages: ['Ukrainian'],
+    sourceType: 'primary parliamentary approval announcement / martial-law extension', identifiers: { approvingLaw: '4928-IX', presidentialDecree: '596/2026', extensionStart: '2026-08-02', extensionDurationDays: '90', reportedThrough: '2026-10-31' },
+    description: 'Parliament’s official record reports approval of a further 90-day martial-law extension beginning 2 August 2026. It provides a dated contemporary endpoint, not a claim about developments after this research review.'
+  },
+  {
+    id: 'ukraineCouncilEuropeElections2023',
+    label: 'Yurii Kliuchkovskyi and Volodymyr Venher — Organisation and Holding of Elections in Post-War Ukraine: Prerequisites and Challenges (Council of Europe needs assessment, updated December 2023)',
+    url: 'https://rm.coe.int/en-organisation-and-holding-of-elections-in-post-war-ukraine/1680aedbaf',
+    note: 'Council of Europe needs-assessment report by local consultants Kliuchkovskyi and Venher, updated December 2023, consulted for an attributed legal and institutional summary and link only. Its authors state that opinions are their responsibility, not necessarily Council of Europe policy. The report permits only limited non-commercial extracts; no extract or text is republished here.',
+    accessDate: '2026-09-24', creators: ['Yurii Kliuchkovskyi', 'Volodymyr Venher'], institution: 'Council of Europe / National University of Kyiv-Mohyla Academy',
+    publicationDate: '2023-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional needs-assessment report / comparative electoral-law analysis', identifiers: { pages: '49', updated: '2023-12', project: 'Supporting Democratic Post-War Elections in Ukraine' },
+    description: 'Expert report on election prerequisites, legal restrictions during martial law, the continuity of Parliament, post-war election administration, voter rolls, candidacy and local government. It describes post-war restoration challenges and legal ambiguities rather than issuing a court judgment or complete democratic assessment.'
+  },
+  {
+    id: 'ukraineOHCHRReport2026',
+    label: 'UN Human Rights Monitoring Mission in Ukraine — Human-rights update for 1 December 2025–31 May 2026 (29 June 2026)',
+    url: 'https://ukraine.ohchr.org/en/Attacks-against-Ukraine-s-energy-infrastructure-and-update-on-the-human-rights-situation-in-Ukraine-1-December-2025-31-May-2026',
+    note: 'OHCHR Ukraine monitoring report page consulted for an attributed summary and link only. No report wording, translated passage, chart, cover or PDF is republished; the mission’s period, monitoring mandate and documented findings are not generalized to every event or community.',
+    accessDate: '2026-09-24', creators: ['UN Human Rights Monitoring Mission in Ukraine'], institution: 'Office of the United Nations High Commissioner for Human Rights',
+    publicationDate: '2026-06-29', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Ukrainian', 'Russian'],
+    sourceType: 'international human-rights monitoring report', identifiers: { reportingPeriod: '2025-12-01–2026-05-31', reportPublicationDate: '2026-06-29' },
+    description: 'Periodic monitoring update on civilian casualties and infrastructure attacks, prisoners of war, occupied territory and other human-rights developments through 31 May 2026. It provides a specific reporting window and institutional findings, not a complete country history or judicial verdict.'
+  },
+  {
+    id: 'ukraineKurasStateTransformation2025',
+    label: 'Oleg Rafalskiy and Galyna Zelenko (eds.) — Ukraine in Struggle: War and the Transformation of the State (2025)',
+    url: 'https://ipiend.gov.ua/wp-content/uploads/2026/04/ukr_u_borotby.pdf',
+    note: 'Full Ukrainian-language monograph and its bilingual title/contents pages consulted for original attributed synthesis and a link only. No passage, translation, table, quotation or PDF content is republished. The Kuras Institute identifies the work as CC BY 4.0 unless otherwise stipulated; this project retains link-only treatment and does not republish the book.',
+    accessDate: '2026-09-24', creators: ['Oleg Rafalskiy (editor)', 'Galyna Zelenko (editor)', 'Rostyslav Balaban', 'Svitlana Brekharya', 'Nataliia Kononenko', 'Tetyana Lyashenko', 'Svitlana Sytnyk'], institution: 'Kuras Institute of Political and Ethnic Studies, National Academy of Sciences of Ukraine',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['Ukrainian', 'English bibliographic and contents pages'],
+    sourceType: 'book-length Ukrainian-language political-science edited monograph', identifiers: { isbn: '978-617-14-0505-9', doi: '10.53317/978-617-14-0505-9', pages: '208', license: 'CC BY 4.0 as identified by publisher, subject to third-party material' },
+    description: 'Peer-reviewed institutional monograph on wartime transformations of Ukrainian state power, including power concentration and dispersion, bureaucratic competence, justice and anti-corruption, military administrations and territorial communities, and legitimacy. It is a Ukrainian scholarly interpretation, not a consensus verdict or proof of uniform practice.'
+  },
+  {
+    id: 'ukrainePlokhyRussoUkrainianWar2023',
+    label: 'Serhii Plokhy — The Russo-Ukrainian War: The Return of History (2023)',
+    url: 'https://wwnorton.co.uk/books/9781324051190-the-russo-ukrainian-war',
+    note: 'W. W. Norton publisher record consulted for original attributed synthesis and a link only. No monograph wording, quotation, chapter, map, image or scan is republished; the book’s historical account is bounded by its 2023 publication and is not used as direct evidence for later institutional practice.',
+    accessDate: '2026-09-24', creators: ['Serhii Plokhy'], institution: 'W. W. Norton & Company',
+    publicationDate: '2023-05-16', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length history of the Russo-Ukrainian War', identifiers: { isbn: '9781324051190', ebookIsbn: '9781324051206', pages: '400' },
+    description: 'Historical account of the war’s 2014 origins, 2022 full-scale invasion and the conflict’s historical, domestic and international dimensions through the book’s 2023 horizon. It provides a distinct historical synthesis rather than a full analysis of wartime constitutional institutions through 2026.'
+  },
+  {
+    id: 'ukraineYekelchykUkraine2020',
+    label: 'Serhy Yekelchyk — Ukraine: What Everyone Needs to Know (2nd ed., 2020)',
+    url: 'https://academic.oup.com/book/62838',
+    note: 'Oxford University Press book record consulted for original attributed synthesis and a link only. No monograph wording, quotation, chapter, table, image or scan is republished; its pre-2022 publication horizon is explicitly kept separate from claims about the full-scale invasion and later institutions.',
+    accessDate: '2026-09-24', creators: ['Serhy Yekelchyk'], institution: 'Oxford University Press',
+    publicationDate: '2020-11-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political and modern history of Ukraine', identifiers: { isbn: '9780197532102', onlineIsbn: '9780197569856', doi: '10.1093/wentk/9780197532102.001.0001', edition: '2' },
+    description: 'Second-edition synthesis on Ukrainian history, post-communist state-building, civic revolutions, the 2014 Crimea and Donbas conflict, and international context. It supplies context before the 24 February 2022 full-scale invasion and is not used to describe later wartime practice.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
