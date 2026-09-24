@@ -28,6 +28,7 @@ test('Brazil 2026 election coverage remains a dated pre-election snapshot', asyn
   await expect(card).toContainText('February–24 September 2026');
   await expect(card).toContainText('4 October');
   await expect(card).toContainText('no election result');
+  await expect(card).toContainText('substitution request filed on 14 September remained awaiting analysis');
   await expect(card).toContainText('Couto');
 });
 

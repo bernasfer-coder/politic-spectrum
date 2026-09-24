@@ -15,6 +15,7 @@ assert.equal(filterGeographyCases({ q: 'Ocalan' })[0].id, 'rojava-study-2020');
 assert.equal(filterGeographyCases({ country: 'iran' })[0].id, 'iranian-postrevolutionary-constitutional-and-electoral-order');
 assert.equal(filterGeographyCases({ country: 'brazil' }).find(({ id }) => id === 'brazil-2026-general-election-campaign-and-electoral-administration')?.datePrecision, 'snapshot');
 assert.match(filterGeographyCases({ case: 'brazil-2026-general-election-campaign-and-electoral-administration' })[0].claim, /not an election forecast/);
+assert.match(filterGeographyCases({ case: 'brazil-2026-general-election-campaign-and-electoral-administration' })[0].claim, /substitution request filed on 14 September remained awaiting analysis/);
 assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 135);
 assert.equal(filterGeographyCases({ country: 'india' })[0].id, 'india-independence-constitutional-founding');
 assert.equal(filterGeographyCases({ country: 'map-052' }).find(({ id }) => id === 'barbados-2026-general-election-and-parliamentary-accountability')?.id, 'barbados-2026-general-election-and-parliamentary-accountability');

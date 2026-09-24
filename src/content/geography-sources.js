@@ -1276,6 +1276,15 @@ const sources = [
     description: 'The TSE reports completion of presidential registration judgments, twelve candidacies then in contention, and denial of the Pablo Marçal–Leonardo Avalanche slate after failure to establish timely party-affiliation eligibility. It documents the Court’s stated disposition and rationale, not an independent assessment of every case or subsequent appeal.'
   },
   {
+    id: 'brazilTseCandidacyStatus20260922',
+    label: 'Tribunal Superior Eleitoral — 2026 candidacy-registration status update (updated 22 September 2026)',
+    url: 'https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/justica-eleitoral-julgou-mais-de-99-dos-pedidos-de-candidatura-para-as-eleicoes-2026',
+    note: 'Official TSE newsroom status report, originally published 15 September and updated 22 September. It is linked and independently paraphrased only; it summarizes the Court president’s reported counts and the status of one presidential substitution request, not an independently audited docket.',
+    accessDate: '2026-09-24', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: '2026-09-22', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official electoral-administration status report', identifiers: { publicationDate: '2026-09-15', updateDate: '2026-09-22' },
+    description: 'The TSE reports that 20,982 of 21,187 candidacy-registration requests had been judged, with 205 pending; it states that all initial presidential and vice-presidential registration requests were decided by 11 September, that 13 requests had been submitted, and that a replacement request filed on 14 September remained awaiting analysis. These are dated administrative figures and the Court’s reported status, not a final candidate list or independent assessment.'
+  },
+  {
     id: 'brazilTseDeepfakeDecision2026',
     label: 'Tribunal Superior Eleitoral — AI-generated campaign-video and party-convention decision (1 September 2026)',
     url: 'https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/tse-fixa-tese-sobre-deepfake-e-delimita-regra-para-as-eleicoes-2026',
