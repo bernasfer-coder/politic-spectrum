@@ -9944,6 +9944,86 @@ sources.push(
     sourceType: 'book-length study of Kazakhstani party-system formation and formal/informal politics; publisher metadata only', identifiers: { isbn: '9780415590235', ebookIsbn: '9781138102347', doi: '10.4324/9780203826003', pages: '240', edition: '1st' },
     description: 'The publisher describes an account of party-system formation using formal institutional rules and informal relations, including elite networks, patronage and connections between parties and society. It is a pre-2026 historical interpretation and not evidence about the new constitution, referendum or Kurultai election.'
   },
+  {
+    id: 'ethiopiaElectionProclamation2019Nebe',
+    label: 'Federal Democratic Republic of Ethiopia — Electoral Proclamation No. 1162/2019',
+    url: 'https://nebe.org.et/sites/default/files/Ethiopian-Electoral-Proclamtion-No-1162.pdf',
+    note: 'National Election Board of Ethiopia official Federal Negarit Gazette PDF, Proclamation No. 1162/2019, consulted for the statutory framework and link only. No wording, translation, table or scan is republished; law on the books is not proof of implementation or equal participation.',
+    accessDate: '2026-09-24', creators: ['Federal Democratic Republic of Ethiopia'], institution: 'National Election Board of Ethiopia / Federal Negarit Gazette',
+    publicationDate: '2019-10-16', evidenceRole: 'primary', confidence: 'high', languages: ['Amharic; English institutional witness'],
+    sourceType: 'primary electoral statute / official gazette', identifiers: { proclamation: '1162/2019', gazetteIssue: '25th Year No. 97' },
+    description: 'The consolidated Ethiopian electoral, political-party registration and election-code proclamation is a primary legal source for the framework the National Election Board and observer missions identify as governing the 2026 election. Formal law is distinguished from political competition, administrative practice, territorial coverage and public consent.'
+  },
+  {
+    id: 'ethiopiaAuElectionPreliminary2026',
+    label: 'African Union Election Observation Mission — Ethiopia 7th General Election preliminary statement (3 June 2026)',
+    url: 'https://old.peaceau.org/en/article/preliminary-statement-african-union-election-observation-mission-to-the-1-june-2026-general-elections-in-the-federal-democratic-republic-of-ethiopia-addis-ababa-3-june-2026',
+    note: 'African Union preliminary observer statement consulted as an institutional observation record and link only. Its sampled locations, favorable observations, stated limits and preliminary status are attributed; no statement wording, map, table or graphic is reproduced, and it is not a countrywide audit.',
+    accessDate: '2026-09-24', creators: ['African Union Election Observation Mission'], institution: 'African Union Commission',
+    publicationDate: '2026-06-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation preliminary statement', identifiers: { electionDate: '2026-06-01', reportDate: '2026-06-03' },
+    description: 'The mission reports its consultations and observations from 495 polling stations in 38 constituencies across eight regions, notes that voting did not take place in Tigray and parts of Oromia and Amhara, and says its fuller assessment of tallying and results would follow. It records what a limited, time-bounded observer mission assessed, not nationwide conditions.'
+  },
+  {
+    id: 'ethiopiaIgadElectionPreliminary2026',
+    label: 'IGAD Election Observation Mission — Ethiopia 7th General Election preliminary report (3 June 2026)',
+    url: 'https://igad.int/igad-election-observation-mission-to-the-7th-general-election-of-the-federal-democratic-republic-of-ethiopia-held-on-monday-june-1-2026-preliminary-report/',
+    note: 'IGAD preliminary observer report consulted as a regional intergovernmental observation record and link only. The mission’s invited, short-term and geographically bounded assessment is attributed; no report wording, table or graphic is reproduced, and its preliminary conclusions do not substitute for a final or nationwide audit.',
+    accessDate: '2026-09-24', creators: ['Intergovernmental Authority on Development Election Observation Mission'], institution: 'Intergovernmental Authority on Development (IGAD)',
+    publicationDate: '2026-06-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'regional election-observation preliminary report', identifiers: { electionDate: '2026-06-01', reportDate: '2026-06-03', observers: '26 short-term observers' },
+    description: 'IGAD records its observation and stakeholder consultations, notes that voting did not occur in Tigray and some parts of Amhara for security reasons, and offers an overall favorable preliminary assessment. Its limited deployment is not evidence about unobserved localities or a full independent tally audit.'
+  },
+  {
+    id: 'ethiopiaElectionFinalResults2026Ebc',
+    label: 'Ethiopian Broadcasting Corporation — NEBE announces final 7th General Election results (21 June 2026)',
+    url: 'https://www.ebc.et/english/Home/NewsDetails?NewsId=5745',
+    note: 'Ethiopian Broadcasting Corporation report of the National Election Board’s final-results announcement consulted for an attributed result summary and link only. The board’s announcement is distinguished from independent verification, election quality or public consent; no article wording or image is reproduced.',
+    accessDate: '2026-09-24', creators: ['Ethiopian Broadcasting Corporation'], institution: 'Ethiopian Broadcasting Corporation',
+    publicationDate: '2026-06-21', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'state broadcaster report of official election results', identifiers: { electionDate: '2026-06-01', resultAnnouncement: '2026-06-21' },
+    description: 'EBC attributes the final seat totals to the NEBE announcement and reports 438 House of Peoples’ Representatives seats for the Prosperity Party. The seat count is recorded as the announced result, not as an independent audit of all constituencies.'
+  },
+  {
+    id: 'ethiopiaElectionAssociatedPress2026',
+    label: 'Associated Press — Ethiopia’s ruling party retains parliamentary majority after June 2026 election (21 June 2026)',
+    url: 'https://apnews.com/article/e74f12119a40465e31f4d18941dbf89b',
+    note: 'Associated Press reporting consulted as independent contemporary journalism and link only. Official counts are attributed to NEBE; opposition criticisms and reported election conditions remain attributed to their respective sources. No article wording, photograph or graphic is reproduced.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-06-21', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'independent news report on election results and contestation', identifiers: { electionDate: '2026-06-01' },
+    description: 'AP reports the NEBE-announced Prosperity Party result, board-reported polling-station closures in parts of Oromia and Amhara, Tigray’s non-participation and opposition criticisms of the political climate. Those distinct attributions are not collapsed into an independent national finding about fraud or voter intent.'
+  },
+  {
+    id: 'ethiopiaAyeleElectoralAuthoritarianism2021',
+    label: 'Zemelak Ayitenew Ayele — “Constitutionalism and Electoral Authoritarianism in Ethiopia: From EPRDF to EPP” (2021)',
+    url: 'https://doi.org/10.1093/oso/9780192894779.003.0008',
+    note: 'Oxford Academic full chapter consulted in Charles M. Fombad and Nico Steytler (eds.), Democracy, Elections, and Constitutionalism in Africa (Oxford University Press, 2021), chapter 7, pp. 169–197. Original synthesis and a link only; no chapter wording, quotation, table or figure is republished. Its analysis predates the 2026 election and is context, not evidence about that contest.',
+    accessDate: '2026-09-24', creators: ['Zemelak Ayitenew Ayele'], institution: 'Oxford University Press',
+    publicationDate: '2021-03-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited-volume chapter / constitutional and electoral study', identifiers: { doi: '10.1093/oso/9780192894779.003.0008', bookDoi: '10.1093/oso/9780192894779.001.0001', bookTitle: 'Democracy, Elections, and Constitutionalism in Africa', editors: 'Charles M. Fombad; Nico Steytler', chapter: '7', pages: '169–197', printIsbn: '9780192894779', onlineIsbn: '9780191915727' },
+    description: 'Ayele analyzes how Ethiopia’s multiparty constitutional framework coexisted with EPRDF and early Prosperity Party dominance, and interprets electoral authoritarianism through party history, institutions and political-economic context. It supplies a dated analytical perspective through the early EPP period, not a classification of 2026.'
+  },
+  {
+    id: 'ethiopiaYusufDemocraticPredicaments2022',
+    label: 'Semir Yusuf — Ethiopia’s Democratic Predicaments: State–Society Dynamics and the Balance of Power (ISS Monograph 209, 2022)',
+    url: 'https://issafrica.s3.amazonaws.com/site/uploads/mono209.pdf',
+    note: 'Institute for Security Studies’ complete 64-page monograph consulted in its PDF edition. Original attributed synthesis and link only; no prose, quotation, table or image is republished. Its analysis addresses historical and post-2018 politics through the 2021 election, not the June 2026 contest.',
+    accessDate: '2026-09-24', creators: ['Semir Yusuf'], institution: 'Institute for Security Studies',
+    publicationDate: '2022-11', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'research monograph on Ethiopian democratization and state–society relations', identifiers: { series: 'ISS Monograph 209', pages: '64', titleOnReport: 'Ethiopia’s democratic predicaments: State–society dynamics and the balance of power' },
+    description: 'Yusuf develops a state–society power-asymmetry account of Ethiopia’s authoritarian persistence, post-2018 reforms, political contestation and the 2021 election. This independent, full-text historical interpretation frames questions for the 2026 evidence but cannot establish how that later election was conducted.'
+  },
+  {
+    id: 'ethiopiaCecoeFinalElectionReport2026',
+    label: 'Coalition of Ethiopian Civil Society Organizations for Elections — 7th General Election final-observation report (25 August 2026 listing)',
+    url: 'https://cecoe.org/download/cecoe-observation-report-on-ethiopias-7th-general-election/',
+    note: 'CECOE publication listing was consulted and identifies a final report dated 25 August 2026; the report contents were not accessed in this review. No findings are attributed to it, and its availability is recorded as a priority primary-source follow-up rather than evidence already synthesized.',
+    accessDate: '2026-09-24', creators: ['Coalition of Ethiopian Civil Society Organizations for Elections'], institution: 'Coalition of Ethiopian Civil Society Organizations for Elections (CECOE)',
+    publicationDate: '2026-08-25', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'domestic election-observation final-report publication listing; report not consulted', identifiers: { electionDate: '2026-06-01', reportDate: '2026-08-25' },
+    description: 'The coalition’s publication index lists a final 7th General Election observation report. Since its contents were not accessed, this catalogue record documents a remaining domestic-observer evidence gap and supports no finding about the election.'
+  },
 );
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
@@ -10007,7 +10087,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('pakistan') || source.id.startsWith('khanConstitutionalHistoryPakistan') || source.id.startsWith('talbotPakistan') || source.id.startsWith('shahArmyDemocracyPakistan') || source.id.startsWith('jaffrelotPakistanCrossroads') || source.id.startsWith('rizviPoliticalConstitutionalEngineering') || source.id.startsWith('kamranChequeredPastPakistan') || source.id.startsWith('gilaniRitualElectionsPakistan') ? 'Pakistani constitutional, civil–military and electoral history'
       : source.id.startsWith('ninsinDrahGhana') || source.id.startsWith('herbstPoliticsReformGhana') || source.id.startsWith('ghana') || source.id.startsWith('quashigahGhana') || source.id.startsWith('owusuGhana') || source.id.startsWith('gyampoGrahamGhana') || source.id.startsWith('jacquemotGhana') || source.id.startsWith('ayeeAmoahAliduGhana') || source.id.startsWith('pallerDemocracyGhana') ? 'Ghanaian constitutional transition and political history'
       : source.id.startsWith('adebanwiDemocracyNigeria') || source.id.startsWith('nwankpaNigeria') || source.id.startsWith('nigeria') ? 'Nigerian constitutional, electoral and political history'
-        : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') || source.id.startsWith('ethiopiaAu') || source.id.startsWith('ethiopiaJusticeTransitional') || source.id.startsWith('plautVaughanTigrayWar') || source.id.startsWith('erlichGreaterTigray') ? 'Ethiopian revolutionary, federal, conflict and political history'
+        : source.id.startsWith('bahruModernEthiopia') || source.id.startsWith('marcusHistoryEthiopia') || source.id.startsWith('mjpEthiopia') || source.id.startsWith('zemelakEthiopia') || source.id.startsWith('haileEthiopian') || source.id.startsWith('ethiopiaMonarchy') || source.id.startsWith('ethiopiaConstitution1995') || source.id.startsWith('ethiopiaNebeGeneralElection') || source.id.startsWith('andargachewEthiopianRevolution') || source.id.startsWith('tarekeEthiopianRevolution') || source.id.startsWith('lyonsPuzzleEthiopianPolitics') || source.id.startsWith('berheLayingPastToRestEthiopia') || source.id.startsWith('destaWakePoliticalReformsEthiopia') || source.id.startsWith('tarikuGebresenbetInsecurityEthiopia') || source.id.startsWith('ethiopiaAu') || source.id.startsWith('ethiopiaJusticeTransitional') || source.id.startsWith('ethiopiaElection') || source.id.startsWith('ethiopiaAyele') || source.id.startsWith('ethiopiaYusuf') || source.id.startsWith('ethiopiaCecoe') || source.id.startsWith('plautVaughanTigrayWar') || source.id.startsWith('erlichGreaterTigray') ? 'Ethiopian constitutional, electoral, federal, conflict and political history'
         : source.id.startsWith('campbellIslandKingdomTonga') || source.id.startsWith('campbellTongasWayDemocracy') || source.id.startsWith('woodEllemQueenSalote') || source.id.startsWith('tonga') || source.id.startsWith('newburyTonga') || source.id.startsWith('powlesTonga') || source.id.startsWith('tupouTongaReform') ? 'Tongan constitutional, monarchical and political history'
         : source.id.startsWith('fiji') || source.id.startsWith('lalBrokenWavesFiji') || source.id.startsWith('lawsonFailureDemocraticPoliticsFiji') || source.id.startsWith('lalAnotherWayFiji') || source.id.startsWith('fraenkelFirthLalMilitaryTakeoverFiji') ? 'Fijian constitutional, coup and political history'
       : source.id.startsWith('samoa') || source.id.startsWith('meleiseaMakingModernSamoa') || source.id.startsWith('lawsonTraditionDemocracySamoa') || source.id.startsWith('meleiseaSamoasJourney') || source.id.startsWith('swainFonoSamoa') || source.id.startsWith('metiSamoa') ? 'Samoan constitutional, customary and political history'
