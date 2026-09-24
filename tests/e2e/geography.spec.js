@@ -5,9 +5,9 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(158);
+  await expect(page.locator('.geo-card')).toHaveCount(159);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
-  await expect(page.locator('.geo-card')).toHaveCount(4);
+  await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
   await expect(page.getByRole('list', { name: 'Chronological geographic cases' })).toBeVisible();
   await page.reload();
@@ -16,7 +16,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await expect(page.locator('.geo-card')).toHaveCount(1);
   await page.goBack();
   await expect(page.getByRole('combobox', { name: 'Connection' })).toHaveValue('all');
-  await expect(page.locator('.geo-card')).toHaveCount(4);
+  await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.goForward();
   await expect(page.locator('.geo-card')).toHaveCount(1);
 });
@@ -95,6 +95,24 @@ test('Tonga’s 2025 election and 2026 petition sequence keeps legal reporting a
   await expect(card).toHaveCount(1);
 });
 
+test('Syria’s post-Assad transition keeps constitutional design, dated institutional evidence and attribution distinct', async ({ page }) => {
+  await page.goto('/#geography?case=syrian-post-assad-transition-and-state-reconstruction-2024-2026');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('automated translation');
+  await expect(card).toContainText('six women among 119 elected members');
+  await expect(card).toContainText('no evidence of a governmental policy or plan');
+  await expect(card).toContainText('not counted as a second scholarly perspective');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href="#bibliography/research-syriaPomepsStudies57"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-syriaPomepsStudies57$/);
+  const source = page.locator('#source-research-syriaPomepsStudies57');
+  await expect(source).toBeInViewport();
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: 'geography:syrian-post-assad-transition-and-state-reconstruction-2024-2026', exact: true }).click();
+  await expect(card).toHaveCount(1);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -111,7 +129,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(158);
+  await expect(page.locator('.geo-card')).toHaveCount(159);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

@@ -9377,6 +9377,96 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'syrianConstitutionalDeclaration2025',
+    label: 'Syrian Arab Republic — Constitutional Declaration (13 March 2025; Arabic original)',
+    url: 'https://sana.sy/locals/2198312/',
+    note: 'SANA’s official Arabic page links the Constitutional Declaration issued in March 2025. The English witness hosted by ConstitutionNet is explicitly labelled an automated translation (https://constitutionnet.org/sites/default/files/2025-03/2025.03.13%20-%20Constitutional%20declaration%20%28English%29.pdf); it is used only as a reading aid, not as an authoritative translation. Formal provisions are distinguished from implementation, consent and rights practice; no wording or PDF page is reproduced.',
+    accessDate: '2026-09-24', creators: ['Syrian Arab Republic'], institution: 'Presidency of the Syrian Arab Republic / Syrian Arab News Agency',
+    publicationDate: '2025-03-13', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'primary constitutional declaration / official Arabic legal text', identifiers: { issueDate: '2025-03-13', statedTransitionLength: 'five years' },
+    description: 'The Arabic-language Constitutional Declaration governing the transitional period. It supplies formal evidence about executive and legislative design, rights, cultural and linguistic provisions, economic objectives, transitional justice and religion; it does not demonstrate that those provisions were implemented.'
+  },
+  {
+    id: 'syrianNationalDialogueFinalStatement2025',
+    label: 'Syrian National Dialogue Conference — Final statement (25 February 2025)',
+    url: 'https://sana.sy/en/syria/348121/',
+    note: 'Official SANA publication of the Conference’s final statement, used as a primary record of what its signatories publicly called for. It is not independent evidence of conference representativeness, public consensus or implementation; no statement wording or image is republished.',
+    accessDate: '2026-09-24', creators: ['Syrian National Dialogue Conference'], institution: 'Syrian Arab News Agency',
+    publicationDate: '2025-02-25', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic', 'English'],
+    sourceType: 'primary conference statement / official political record', identifiers: { statementDate: '2025-02-25' },
+    description: 'The Conference’s closing statement called for a temporary constitutional framework, rights, political participation, accountability and economic development. It records an official conference statement, not who was represented or whether its recommendations were adopted.'
+  },
+  {
+    id: 'syrianSdfIntegrationAgreement2025',
+    label: 'Syrian Presidency and Syrian Democratic Forces — 10 March agreement on integration into state institutions',
+    url: 'https://sana.sy/presidency/2197003/',
+    note: 'SANA’s official Arabic page reproduces the agreement signed by President Ahmed al-Sharaa and SDF commander Mazloum Abdi on 10 March 2025. The signed commitments concerning Kurdish citizenship and rights, a ceasefire, territorial unity and integration are not treated as evidence of completed implementation, consent or a final political settlement; no agreement wording is republished.',
+    accessDate: '2026-09-24', creators: ['Ahmed al-Sharaa', 'Mazloum Abdi'], institution: 'Presidency of the Syrian Arab Republic / Syrian Arab News Agency',
+    publicationDate: '2025-03-10', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'primary political agreement / signed integration commitment', identifiers: { agreementDate: '2025-03-10', signatories: 'President of the Syrian Arab Republic; Commander of the Syrian Democratic Forces' },
+    description: 'A signed political agreement setting out commitments on representation, Kurdish citizenship and rights, a ceasefire, institutional integration in northeast Syria, displaced people and territorial unity. It documents agreed terms, not implementation or local consent.'
+  },
+  {
+    id: 'unSyriaAssemblyElectionBriefing2025',
+    label: 'United Nations Security Council — Syria meeting record S/PV.10021 (22 October 2025)',
+    url: 'https://digitallibrary.un.org/record/4092681/files/S_PV_10021-EN.pdf',
+    note: 'Official provisional Security Council meeting record, used for a dated UN account of the 5 October indirect People’s Assembly election, the elected-seat snapshot and reported participation concerns. The six-of-119 count refers to that briefing’s then-reported elected members, not the later whole Assembly; the record is not an independent election-observation mission or proof of public consent.',
+    accessDate: '2026-09-24', creators: ['United Nations Security Council'], institution: 'United Nations',
+    publicationDate: '2025-10-22', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Security Council meeting record / political-transition briefing', identifiers: { meetingRecord: 'S/PV.10021', meetingDate: '2025-10-22', electionDate: '2025-10-05' },
+    description: 'A contemporaneous UN briefing record on the indirect People’s Assembly elections, reported representation, criticisms and planned continuation of the process. It preserves the time-specific figures and the distinction between UN advice and direct electoral assistance.'
+  },
+  {
+    id: 'unSyriaCoastalCommissionReport2025',
+    label: 'Independent International Commission of Inquiry on Syria — Violations against civilians in coastal and western-central Syria (A/HRC/59/CRP.4, 11 August 2025)',
+    url: 'https://www.ecoi.net/en/file/local/2132228/a-hrc-59-crp4-en.pdf',
+    note: 'UN Human Rights Council Commission of Inquiry conference-room paper; linked through ECOI because the direct OHCHR PDF was not retrievable in this consultation. Its findings are confined to investigated incidents and the report’s stated evidentiary standard. Preserve the Commission’s finding that it found no evidence of a governmental policy or plan for the systematic attacks it described. No report text, table or image is reproduced.',
+    accessDate: '2026-09-24', creators: ['Independent International Commission of Inquiry on the Syrian Arab Republic'], institution: 'United Nations Human Rights Council / ECOI document mirror',
+    publicationDate: '2025-08-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official human-rights investigation / conference-room paper', identifiers: { report: 'A/HRC/59/CRP.4', period: 'January–March 2025', pages: '66' },
+    description: 'The Commission’s investigation into serious violations in coastal and western-central Syria. It reports violations by multiple actors, explains its methods and limits, and distinguishes individual or factional conduct from a central-government policy finding.'
+  },
+  {
+    id: 'syrianAssemblyCompletionRecord2026',
+    label: 'Syrian Arab News Agency — Account of People’s Assembly formation and appointed members (2 July 2026)',
+    url: 'https://sana.sy/peoples-assembly/2517062/',
+    note: 'Official Syrian news-agency retrospective used for dates and the government-side account of indirect voting, district extensions, vacant Suwayda seats and presidential appointments. Its claims of fairness, balance or representation are attributed self-description, not independent evaluation; the 119-seat UN snapshot from October 2025 is kept separate from the later appointment record. No wording or result table is reproduced.',
+    accessDate: '2026-09-24', creators: ['Syrian Arab News Agency'], institution: 'Syrian Arab News Agency / Ministry of Information',
+    publicationDate: '2026-07-02', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official legislative-institution formation and election-process record', identifiers: { articleDate: '2026-07-02', electionDates: '2025-10-05; 2025-10-23; 2026-03-17; 2026-05-24', appointedMembersAnnounced: '2026-07-01', remainingVacantDistrict: 'Suwayda' },
+    description: 'An official chronology of the People’s Assembly’s formation from election rules through indirect votes, later district ballots and presidential appointments. It documents the government’s institutional account and unresolved geographic gaps, not an independent assessment of electoral fairness or representation.'
+  },
+  {
+    id: 'unSyriaCommonCountryAnalysis2026',
+    label: 'United Nations in Syria — Common Country Analysis (31 March 2026)',
+    url: 'https://syria.un.org/en/312773-common-country-analysis-syria',
+    note: 'UN country analysis and linked report used for cross-sector institutional context on the political, social, economic and environmental recovery agenda after prolonged conflict. The UN states that it was developed with government, civil-society, national and international partners and academic experts; it is not a population-representative survey or an independent evaluation of every policy outcome. No report wording, tables or charts are republished.',
+    accessDate: '2026-09-24', creators: ['United Nations in the Syrian Arab Republic'], institution: 'United Nations',
+    publicationDate: '2026-03-31', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Arabic'],
+    sourceType: 'UN multi-sector country analysis / institutional research', identifiers: { publicationDate: '2026-03-31', framework: 'UN Sustainable Development Cooperation Framework 2027–2030' },
+    description: 'The UN’s integrated post-conflict analysis of Syria’s political, social, economic and environmental situation and transition from humanitarian response toward recovery and reconstruction. Its consultation base and institutional purpose are retained as scope limits.'
+  },
+  {
+    id: 'unSyriaTransitionBriefingSeptember2026',
+    label: 'United Nations Department of Political and Peacebuilding Affairs — Syria’s progress should create momentum for next steps in the transition (17 September 2026)',
+    url: 'https://dppa.un.org/en/node/136734',
+    note: 'UN DPPA account of the Deputy Special Envoy’s 17 September 2026 Security Council briefing, used to bound the current evidence cutoff and record the UN’s balanced characterization of advances and remaining challenges. It is an institutional diplomatic summary, not a comprehensive country assessment or evidence of implementation of each recommendation.',
+    accessDate: '2026-09-24', creators: ['Claudio Cordone', 'United Nations Department of Political and Peacebuilding Affairs'], institution: 'United Nations',
+    publicationDate: '2026-09-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official UN political-transition briefing summary', identifiers: { briefingDate: '2026-09-17', body: 'UN Security Council' },
+    description: 'The UN Deputy Special Envoy’s September 2026 assessment notes advances alongside significant challenges and calls for accountable institutions, broader participation, protected civic space, transitional justice, recovery and safe voluntary returns. It is a dated diplomatic summary, not proof that those goals were achieved.'
+  },
+  {
+    id: 'syriaPomepsStudies57',
+    label: 'Project on Middle East Political Science — POMEPS Studies 57: Syria After Assad (December 2025)',
+    url: 'https://pomeps.org/pomeps-studies-57-syria-after-assad',
+    note: 'Open 106-page multi-author research volume coordinated through POMEPS and the Arab Political Science Network, with contributors based in eight countries and including Syrian researchers. It is consulted as a book-length scholarly collection whose chapters make distinct arguments, not as peer-reviewed consensus or a representative survey; no chapter wording, quotation, figure or scan is republished.',
+    accessDate: '2026-09-24', creators: ['André Bank', 'Marc Lynch', 'Wendy Pearlman'], institution: 'Project on Middle East Political Science, Institute for Middle East Studies, George Washington University',
+    publicationDate: '2025-12', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: '106-page edited scholarly volume on the post-Assad transition', identifiers: { series: 'POMEPS Studies', volume: '57', pages: '106', partnerNetwork: 'Arab Political Science Network' },
+    description: 'A multi-author collection addressing central and local governance, security-sector reform, transitional justice, displacement and return, economic recovery and water. The chapters offer varied and sometimes competing arguments; they are not collapsed into a single scholarly consensus.'
+  },
 ];
 
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
