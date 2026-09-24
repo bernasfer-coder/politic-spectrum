@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(156);
+  await expect(page.locator('.geo-card')).toHaveCount(157);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -59,6 +59,24 @@ test('Tunisia’s 2023–2026 prosecution remains a bounded, source-linked case'
   await expect(card).toHaveCount(1);
 });
 
+test('Vanuatu’s 2023–2025 reform record keeps institutional evidence and outcomes bounded', async ({ page }) => {
+  await page.goto('/#geography?case=vanuatuan-party-reform-and-parliamentary-accountability-2023-2025');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('2023–2025');
+  await expect(card).toContainText('does not assert the motion’s eventual outcome');
+  await expect(card).toContainText('No 2026 status is asserted');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.getByRole('link', { name: 'Bibliography & rights record →' }).first()).toBeVisible();
+  await card.locator('a[href="#bibliography/research-vanuatu2023PartyReformGazette"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-vanuatu2023PartyReformGazette$/);
+  const source = page.locator('#source-research-vanuatu2023PartyReformGazette');
+  await expect(source).toBeInViewport();
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: 'geography:vanuatuan-party-reform-and-parliamentary-accountability-2023-2025', exact: true }).click();
+  await expect(card).toHaveCount(1);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -75,7 +93,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(156);
+  await expect(page.locator('.geo-card')).toHaveCount(157);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
