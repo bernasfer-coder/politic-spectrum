@@ -5354,6 +5354,156 @@ const sources = [
     description: 'Primary institutional record for the 2025 midterm national, local and BARMM election results used to extend the case’s documented endpoint. It establishes an electoral record but not the quality, equality, motives or social meaning of every contest.',
   },
   {
+    id: 'philippineImpeachmentScDecision2025',
+    label: 'Supreme Court of the Philippines — Duterte v. House of Representatives, G.R. Nos. 278353 and 278359 (25 July 2025)',
+    url: 'https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/69958',
+    note: 'Supreme Court E-Library decision used as the primary legal record of the first impeachment attempt’s disposition and the Court’s stated earliest recommencement date. The decision did not absolve Duterte or adjudicate the factual merits of the allegations; no extended passage is reproduced.',
+    accessDate: '2026-09-24', creators: ['Supreme Court of the Philippines, En Banc'], institution: 'Supreme Court E-Library',
+    publicationDate: '2025-07-25', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Supreme Court decision / impeachment and constitutional procedure', identifiers: { caseNumbers: 'G.R. Nos. 278353 and 278359' },
+    description: 'Primary judicial disposition declaring the 2025 Articles of Impeachment void under the one-year bar and due-process requirements and describing the earliest date for renewed proceedings. It concerns procedure, not Duterte’s guilt or innocence.'
+  },
+  {
+    id: 'philippineImpeachmentScResolution2026',
+    label: 'Supreme Court of the Philippines — Resolution denying reconsideration with finality, G.R. Nos. 278353 and 278359 (28 January 2026)',
+    url: 'https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/70257',
+    note: 'Official Supreme Court E-Library resolution consulted for the finality of the 2025 decision and its clarification of constitutional impeachment initiation and due process. Separate opinions are not treated as the Court’s majority holding; no resolution wording is republished.',
+    accessDate: '2026-09-24', creators: ['Supreme Court of the Philippines, En Banc'], institution: 'Supreme Court E-Library',
+    publicationDate: '2026-01-28', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Supreme Court resolution / reconsideration and impeachment procedure', identifiers: { caseNumbers: 'G.R. Nos. 278353 and 278359' },
+    description: 'Primary resolution denying reconsideration with finality and explaining constitutional modes of initiation. The Court states that its 2025 decision did not absolve the Vice President; it does not decide the factual allegations in a later case.'
+  },
+  {
+    id: 'philippineImpeachmentHouseCommittee2026',
+    label: 'House of Representatives Committee on Justice — 2026 impeachment docket and committee-report archive',
+    url: 'https://congress.gov.ph/committees/committee/view/0520?page=3',
+    note: 'Official committee archive used to trace the 2026 complaints, proceedings and adopted report. The docket’s filing, endorsement, referral and committee-action dates are kept distinct; this archive alone does not settle the constitutional meaning of initiation or prove the complaint allegations.',
+    accessDate: '2026-09-24', creators: ['House Committee on Justice'], institution: 'House of Representatives of the Philippines',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official House committee docket and legislative records', identifiers: { committee: 'Committee on Justice' },
+    description: 'House institutional record for complaints, committee proceedings and report disposition. The case uses it to distinguish procedural stages rather than infer that filing and constitutional initiation are legally identical.'
+  },
+  {
+    id: 'philippineImpeachmentHousePortal2026',
+    label: 'House of Representatives of the Philippines — official impeachment records portal (2026)',
+    url: 'https://www.congress.gov.ph/impeachment',
+    note: 'Official House portal for verified complaints and related impeachment documents. It is a primary-document locator; complainants’ statements are allegations, and a portal listing does not resolve the legal question of when each complaint was constitutionally initiated.',
+    accessDate: '2026-09-24', creators: ['House of Representatives of the Philippines'], institution: 'House of Representatives of the Philippines',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official legislative impeachment documents portal', identifiers: { congress: '20th Congress' },
+    description: 'House repository for verified complaints and related materials. The documents establish what was formally submitted or recorded, not the truth of allegations or the legal interpretation of every procedural date.'
+  },
+  {
+    id: 'philippineImpeachmentSenateDocuments2026',
+    label: 'Senate of the Philippines — Impeachment Documents repository (2026 proceedings)',
+    url: 'https://senate.gov.ph/services/impeachment-documents',
+    note: 'Official Senate repository for the Articles, pleadings and impeachment-court materials used as document locators. Assertions in pleadings remain attributed allegations, not findings; the linked materials are not republished.',
+    accessDate: '2026-09-24', creators: ['Senate of the Philippines'], institution: 'Senate of the Philippines',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'official legislative and impeachment-court document repository', identifiers: { chamber: '20th Congress of the Philippines' },
+    description: 'Official document index for the Senate’s impeachment proceedings. It provides a route to pleadings and court materials but does not itself establish the truth of allegations or substitute for a complete trial-record review.'
+  },
+  {
+    id: 'philippineImpeachmentHouseProbableCause2026',
+    label: 'House of Representatives — Justice panel finds probable cause on impeachment complaints (4 May 2026)',
+    url: 'https://congress.gov.ph/media/press-releases/9747',
+    note: 'House press release records the committee’s vote and institutional conclusion. It is the House’s own account, not independent adjudication or proof that any alleged conduct occurred.',
+    accessDate: '2026-09-24', creators: ['House of Representatives of the Philippines, Press and Public Affairs Bureau'], institution: 'House of Representatives of the Philippines',
+    publicationDate: '2026-05-04', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official House committee press release / probable-cause finding', identifiers: { committee: 'Committee on Justice' },
+    description: 'Official account of the House Committee on Justice’s probable-cause vote and recommendation to prepare a report and Articles for plenary action. It records legislative action, not a verdict on the underlying allegations.'
+  },
+  {
+    id: 'philippineImpeachmentHouseVote2026',
+    label: 'Philippine News Agency — House impeaches Vice President Sara Duterte, 257–25–9 (11 May 2026)',
+    url: 'https://www.pna.gov.ph/articles/1274780',
+    note: 'Contemporaneous government-newswire report for the House roll-call totals and procedural vote. The totals are attributed to PNA; the report and House action do not establish the complaint allegations as facts.',
+    accessDate: '2026-09-24', creators: ['Wilnard Bacelonia'], institution: 'Philippine News Agency / Presidential Communications Office',
+    publicationDate: '2026-05-11', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'government newswire report of a House impeachment vote', identifiers: { vote: '257 yes, 25 no, 9 abstentions' },
+    description: 'Contemporaneous report that the House approved the committee report and Articles by 257 votes to 25, with nine abstentions. This documents the reported vote, not guilt, conviction or popular opinion.'
+  },
+  {
+    id: 'philippineImpeachmentTransmission2026',
+    label: 'Philippine News Agency — House transmits impeachment Articles to the Senate (13 May 2026)',
+    url: 'https://www.pna.gov.ph/articles/1274991',
+    note: 'Contemporaneous report of formal transmittal and its timing, corroborating the House vote record. The report is kept distinct from Senate adjudication and the factual merits of the allegations.',
+    accessDate: '2026-09-24', creators: ['Wilnard Bacelonia'], institution: 'Philippine News Agency / Presidential Communications Office',
+    publicationDate: '2026-05-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'government newswire report of impeachment transmittal', identifiers: { transmittalDate: '2026-05-13' },
+    description: 'Reports the formal delivery of House-approved Articles to the Senate and marks the transition from House proceedings to the Senate phase. It does not establish a trial outcome.'
+  },
+  {
+    id: 'philippineImpeachmentSenateConvenes2026',
+    label: 'Senate of the Philippines — Senate convenes as impeachment court (18 May 2026)',
+    url: 'https://eclips.senate.gov.ph/congress/vp-impeachment-trial-on-as-senate-convenes-court',
+    note: 'Senate newsroom account records the chamber’s formal convening and oath of senator-judges. It is an institutional report, not a transcript or independent evaluation of the court’s proceedings.',
+    accessDate: '2026-09-24', creators: ['Senate of the Philippines, E-Library and Congressional Information System'], institution: 'Senate of the Philippines',
+    publicationDate: '2026-05-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Senate impeachment-court institutional record', identifiers: { event: 'Senate convened as impeachment court' },
+    description: 'Senate report that 23 senators took their oaths as judges after the chamber formally convened as the impeachment court. This is a dated procedural record, not a finding on the Articles.'
+  },
+  {
+    id: 'philippineImpeachmentSenateTrialRules2026',
+    label: 'Senate of the Philippines — Vice-presidential impeachment trial opens and initial rules are set (6 July 2026)',
+    url: 'https://eclips.senate.gov.ph/congress/vp-trial-starts-escudero-presides-sets-rules',
+    note: 'Senate newsroom account of the trial’s opening and presiding officer’s initial procedural interpretations. Those initial interpretations, including the 16-vote threshold, were later reconsidered by the court on 23 September; they are not presented as the final rule.',
+    accessDate: '2026-09-24', creators: ['Senate of the Philippines, E-Library and Congressional Information System'], institution: 'Senate of the Philippines',
+    publicationDate: '2026-07-06', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Senate impeachment-trial report and procedural record', identifiers: { event: 'opening of trial proper' },
+    description: 'Institutional account of the Senate’s trial proceedings and initial procedural decisions. The entry distinguishes the initial fixed-16 interpretation from the court’s 23 September ruling.'
+  },
+  {
+    id: 'philippineImpeachmentScMootness2026',
+    label: 'Supreme Court of the Philippines — Press Briefer on consolidated impeachment petitions (5 August 2026)',
+    url: 'https://sc.judiciary.gov.ph/press-briefer-august-05-2026/',
+    note: 'Court spokesperson’s simplified summary of the August 2026 resolution, used to report that the petitions became moot after House transmittal and Senate proceedings began. The briefer explicitly is not the full resolution; the contested House actions’ merits remain undecided by this disposition.',
+    accessDate: '2026-09-24', creators: ['Supreme Court of the Philippines, Office of the Spokesperson'], institution: 'Supreme Court of the Philippines',
+    publicationDate: '2026-08-05', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Supreme Court press briefer summarizing a resolution', identifiers: { caseNumbers: 'G.R. Nos. E-05546 and E-05667' },
+    description: 'Court summary of dismissal of consolidated petitions as moot after transmittal to the Senate and commencement of impeachment-court proceedings. It states the Court did not need to resolve completed House-process challenges; the complete resolutions were not yet linked on the briefer page.'
+  },
+  {
+    id: 'philippineImpeachmentThresholdVote2026',
+    label: 'Philippine News Agency — Senate impeachment court changes vote-threshold rule (23 September 2026)',
+    url: 'https://www.pna.gov.ph/articles/1284670',
+    note: 'Contemporaneous government-newswire account of the Senate impeachment court’s vote and the presiding officer’s explanation. The eventual denominator and verdict remained undetermined at the cutoff; the ruling was reported as pro hac vice for this trial.',
+    accessDate: '2026-09-24', creators: ['Wilnard Bacelonia'], institution: 'Philippine News Agency / Presidential Communications Office',
+    publicationDate: '2026-09-23', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'government newswire report of an impeachment-court ruling', identifiers: { vote: '13–1, with 6 not participating', date: '2026-09-23' },
+    description: 'Reports that the Senate impeachment court replaced a fixed 16-vote threshold with two-thirds of the members legally and factually capable of participating at judgment, with the eligible denominator to be determined on evidence. The article records no verdict and no automatically fixed new number.'
+  },
+  {
+    id: 'philippineImpeachmentPoliticalContext2026',
+    label: 'Associated Press — Philippine vice president impeached over alleged wealth and threats (11 May 2026)',
+    url: 'https://apnews.com/article/5d619c24ae6ef880d3c03bbcdccc1536',
+    note: 'Contemporaneous independent wire report used for political context and attributed descriptions of the allegations and executive-camp rift. Allegations remain attributed and unproven here; no inference is made about voter motives or the representativeness of political blocs.',
+    accessDate: '2026-09-24', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-05-11', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international newswire report on impeachment and political context', identifiers: {},
+    description: 'Independent contemporaneous reporting on the House vote, allegations as alleged, and the rupture between President Marcos Jr. and Vice President Duterte. It is not an adjudication or representative survey.'
+  },
+  {
+    id: 'philippineImpeachmentComplaintsFiledFebruary2026',
+    label: 'Jim Gomez, Associated Press — Philippine vice president faces two new impeachment bids (2 February 2026)',
+    url: 'https://apnews.com/article/philippines-vice-president-sara-duterte-impeachment-corruption-ff1df5501af66ff0ce98267d86100ff4',
+    note: 'Contemporaneous AP report documents two complaints filed on 2 February and summarizes their allegations and the preceding court ruling. It is secondary reporting; party allegations remain unproven, and its date is not itself a legal determination of constitutional initiation.',
+    accessDate: '2026-09-24', creators: ['Jim Gomez'], institution: 'Associated Press',
+    publicationDate: '2026-02-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international newswire report on renewed impeachment complaints', identifiers: {},
+    description: 'Independent reporting of the two complaint filings and allegations concerning confidential funds, unexplained wealth and a prior threat. It helps distinguish the filing date from the legal question of when an impeachment proceeding was initiated.'
+  },
+  {
+    id: 'tamasePrestoDuterteImpeachment2025',
+    label: 'Paolo S. Tamase and Athena Charanne Presto — Dribbling institutions and the Duterte impeachment (2025)',
+    url: 'https://doi.org/10.59425/eabc.1757152800',
+    note: 'East Asia Forum/ANU research-portal record and article consulted for the authors’ interpretation of the 2025 episode. It predates the 2026 renewed proceedings and is used only as an attributed explanation of the earlier constitutional dispute, not as evidence about later facts.',
+    accessDate: '2026-09-24', creators: ['Paolo S. Tamase', 'Athena Charanne Presto'], institution: 'East Asia Forum / Australian National University',
+    publicationDate: '2025-09-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly political-analysis article on the 2025 impeachment episode', identifiers: { doi: '10.59425/eabc.1757152800' },
+    description: 'Attributes constitutional and institutional concerns to the 2025 failed impeachment attempt and analyzes the crisis against Philippine democratic backsliding. Because it predates the renewed 2026 complaints and trial, it is not used to establish any 2026 event or outcome.'
+  },
+  {
     id: 'alonMakingJordan2007',
     label: 'Yoav Alon — The Making of Jordan: Tribes, Colonialism and the Modern State (2007)',
     url: 'https://www.bloomsbury.com/au/making-of-jordan-9781848850132/',

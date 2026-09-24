@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(161);
+  await expect(page.locator('.geo-card')).toHaveCount(162);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -154,6 +154,22 @@ test('Bangladesh’s 2025–2026 election and Charter case distinguishes the Ord
   await expect(card).toHaveCount(1);
 });
 
+test('Philippine impeachment trial stays distinct from countrywide ideology and from a conviction', async ({ page }) => {
+  await page.goto('/#geography?case=philippine-vice-presidential-impeachment-and-senate-trial-2026');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('28 Jan–23 Sep 2026');
+  await expect(card).toContainText('not a score or ideological profile of the Philippines');
+  await expect(card).toContainText('the eventual verdict');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href="#bibliography/research-philippineImpeachmentThresholdVote2026"]').click();
+  const source = page.locator('#source-research-philippineImpeachmentThresholdVote2026');
+  await expect(source).toBeInViewport();
+  await source.getByText('Where this record is used', { exact: true }).click();
+  await source.getByRole('link', { name: 'geography:philippine-vice-presidential-impeachment-and-senate-trial-2026', exact: true }).click();
+  await expect(card).toHaveCount(1);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -170,7 +186,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(161);
+  await expect(page.locator('.geo-card')).toHaveCount(162);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
