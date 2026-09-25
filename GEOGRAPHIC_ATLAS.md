@@ -4,7 +4,9 @@ Implemented first phase: 16 September 2026. Route: `#geography`.
 
 ## Purpose and scope
 
-Browse documented connections between political labels, actors, places and periods. This is distinct from the existing Research Atlas, which catalogues works, people and evidence coverage. The first collection has 10 cases across eight Middle Eastern political traditions, including North African and European connections. It is not a world-complete catalogue, a live political-control map, or eight newly scored reference profiles.
+Browse 212 documented connections between political labels, actors, places and periods, represented by 210 unscored case labels. This is distinct from the Research Atlas, which catalogues works, people and evidence coverage. Coverage spans multiple continents and periods but is selective rather than a complete country-by-country encyclopedia. It is not a live political-control map, and labels do not necessarily represent scored ideological profiles.
+
+Seychelles’ 2025 entry is bounded to the September–October presidential and National Assembly election cycle, its presidential runoff, formal results and 26 October inauguration. The Commission’s reports record National Assembly seat allocation and runoff turnout; the Gazette supplies the presidential declaration. Preliminary SADC, AU–COMESA and Francophonie assessments are attributed and bounded by their sample, remit and provisional status. Two books provide different postcolonial/political-economy contexts but neither studies 2025. No national ideology or six-axis score is inferred; final observer reports and event-specific book-length scholarship remain gaps.
 
 The public interface provides continent, region, country-locator, specific-place, label, relationship, period and text filters; chronological and card views; label explanations before cases; source-reading boundaries; and bibliography/encyclopedia cross-links. Filters, views and individual cases have shareable fragment URLs and survive refresh and browser history. Clipboard failure on the HTTP LAN site falls back to a selectable link.
 

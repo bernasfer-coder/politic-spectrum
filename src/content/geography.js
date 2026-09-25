@@ -2798,6 +2798,46 @@ GEOGRAPHY_CASES.push(caseRecord({
   locator: 'Lebanese Ministry of Interior and Municipalities, official candidate-level Beirut results PDF; Decree-Law 118/1977 legal locator and Lebanese Army Arabic municipal-law history; Mohammad Shqeir, Beirut 24/Asharq Al-Awsat (20 May 2025); Nemtala Eddé, L’Orient Today (8 May 2025); Sawalha (2010), Leonardsson (2023), and Parreira (2025) publisher/catalogue records.'
 }));
 
+GEOGRAPHY_PLACES.push({
+  id: 'seychelles-2025-general-election',
+  name: 'Seychelles — 2025 presidential and National Assembly elections',
+  type: 'Country-level presidential and parliamentary elections with runoff and presidential transfer (2025)',
+  countryIds: [],
+  continents: ['Africa'],
+  regions: ['East Africa', 'Western Indian Ocean'],
+  modernLocation: 'Republic of Seychelles, Western Indian Ocean',
+  note: 'A bounded account of the September–October 2025 presidential and National Assembly elections and the presidential handover. Seychelles has no dedicated geometry in the current country map; this place therefore uses no proxy-country locator. The record does not generalize to all Seychellois or assign a national ideological profile.'
+});
+
+GEOGRAPHY_LABELS.push({
+  id: 'seychelles-2025-general-election-and-transfer',
+  name: 'Seychelles’ 2025 presidential and National Assembly elections',
+  aliases: ['Seychelles general election 2025', 'Seychelles presidential election 2025', 'Seychelles National Assembly election 2025'],
+  family: 'Seychellois constitutional, electoral and multiparty political history',
+  description: 'A bounded record of the 2025 presidential and National Assembly contests, the constitutionally required presidential runoff, official results and subsequent transfer of office. Electoral Commission records establish the result; preliminary observer assessments are attributed and their limited coverage is stated. This label describes an episode, not an ideology of Seychelles, its electorate, parties or communities, and it carries no six-axis score.',
+  sourceIds: ['seychellesElectionReports2025Ecs', 'seychellesFirstBallotReport2025Ecs', 'seychellesSecondBallotReport2025Ecs', 'seychellesElectionsAct262', 'seychellesElectionGazette2025', 'seychellesSadcPreliminary2025', 'seychellesAuComesaPreliminary2025', 'seychellesOifPreliminary2025', 'seychellesHandoverStateHouse2025', 'seychellesSocialPolicyBook2011', 'seychellesRobinsonPostcolonialSeychelles2023'],
+  relatedEntries: []
+});
+
+GEOGRAPHY_CASES.push(caseRecord({
+  id: 'seychelles-2025-presidential-and-assembly-elections',
+  labelId: 'seychelles-2025-general-election-and-transfer',
+  placeId: 'seychelles-2025-general-election',
+  relationship: 'implemented',
+  actor: 'The Electoral Commission of Seychelles; presidential candidates Patrick Herminie (United Seychelles) and Wavel Ramkalawan (Linyon Demokratik Seselwa); National Assembly candidates and voters; and the incoming and outgoing presidents',
+  historicalSetting: 'Seychelles’ multiparty constitutional order and the 2025 simultaneous presidential and National Assembly election cycle, including a second presidential ballot and formal transfer of the presidency',
+  startYear: 2025,
+  endYear: 2025,
+  periodLabel: 'September–October 2025 · presidential and National Assembly elections',
+  datePrecision: 'snapshot',
+  evidenceKind: 'Electoral Commission reports and statutory text; Gazette result declaration; preliminary regional and Francophone observer statements; official State House record; contextual book-length political-economy and postcolonial history',
+  confidence: 'medium',
+  claim: 'The Electoral Commission records first-ballot voting on 25–27 September 2025 and a presidential runoff on 9–11 October after no first-round candidate passed the statutory more-than-50-percent threshold. Its first-round report records United Seychelles winning 19 National Assembly seats and LDS 15. The Commission’s second-ballot report records 77,045 registered electors, 66,819 ballots cast, 65,212 valid ballots and 1,607 rejected ballots. The 16 October Gazette declaration records Wavel Ramkalawan’s 30,823 votes (47.3% of valid votes) and declares Patrick Herminie elected; State House records Herminie’s 26 October inauguration. SADC’s preliminary mission statement described voting as orderly and peaceful, while also identifying concerns about nomination-period objections, voter-register access, state-media coverage and campaign-resource disparities; its polling-station observations were a limited sample, not a national representative audit. AU–COMESA and Francophonie also issued preliminary assessments, not final event-wide accounts. Campling, Confiance and Purvis’s country political-economy study through 2007 and Robinson’s study of René’s postcolonial rule through 2004 give distinct historical context only; neither studies the 2025 election. These records document a specific electoral and constitutional sequence, not a permanent national ideology, voter motive or six-axis position.',
+  limitation: 'The official election reports are Electoral Commission self-reports; observer statements are preliminary and differ in remit and geographic coverage. SADC’s station visits are a limited sample and its positive overall characterization does not erase the concerns it records. Final SADC and AU–COMESA reports were not located in this review, and the OIF statement covers only a portion of first-round polling. First-ballot election-report PDF metadata exposed through text extraction conflicts with the Electoral Commission portal’s 2025 title, although the report body discusses the 2025 dates; the portal title is used here and the metadata discrepancy is retained. The two book-length works supply earlier historical contexts, not independent scholarship on the 2025 events; complete texts were not consulted for this case. The full social, regional and party history of Seychelles, voter motives, campaign experience, later institutional performance and any event-specific book-length scholarship remain open research gaps.',
+  sourceIds: ['seychellesElectionReports2025Ecs', 'seychellesFirstBallotReport2025Ecs', 'seychellesSecondBallotReport2025Ecs', 'seychellesElectionsAct262', 'seychellesElectionGazette2025', 'seychellesSadcPreliminary2025', 'seychellesAuComesaPreliminary2025', 'seychellesOifPreliminary2025', 'seychellesHandoverStateHouse2025', 'seychellesSocialPolicyBook2011', 'seychellesRobinsonPostcolonialSeychelles2023'],
+  locator: 'Electoral Commission of Seychelles, 2025 Elections reports page, First Ballot Election Report (2025), Second Ballot Election Report (2025), and Elections Act, Cap. 262, ss. 37–38; Seychelles Gazette, Extraordinary Gazette No. 73, 16 October 2025, election declaration; SADC Electoral Observation Mission preliminary statement, September 2025; AU–COMESA and OIF preliminary statements; State House inauguration notice, 26 October 2025. Historical context: Campling, Confiance and Purvis (2011), full text consulted; Robinson (2023), publisher metadata and scholarly review consulted.'
+}));
+
 GEOGRAPHY_CASES.sort((a, b) => a.startYear - b.startYear);
 
 const bosniaElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'bosnia-and-herzegovina-general-election-2026');
