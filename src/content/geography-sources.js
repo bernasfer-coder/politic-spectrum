@@ -10171,6 +10171,16 @@ const sources = [
     description: 'Reports renewed clashes and the alliance’s response while recording competing claims about escalation and unresolved disagreements inside the coalition. Allegations and interview statements are attributed, not converted into verified operational facts.'
   },
   {
+    id: 'ethiopiaAllianceFoundingStatementAmharaAmerica2026',
+    label: 'Alliance for Survival — 20 September founding statement (full English text reproduced by Amhara Association of America)',
+    url: 'https://www.amharaamerica.org/post/statement-issued-by-the-ethiopian-peoples-forces-alliance-for-survival-alliance-for-survival',
+    note: 'The Amhara Association of America page reproduces the full English text attributed to the Ethiopian Peoples’ Forces Alliance for Survival and links a downloadable copy. The page gives the statement date as 20 September 2026 and carries the Association’s disclaimer that it does not endorse political organizations. The linked PDF redirected to a file host the browser could not retrieve; the HTML text was consulted. This is evidence of the declaration’s attributed wording and self-description, not independent authentication of signatures, member authorization or implementation. No wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Ethiopian Peoples’ Forces Alliance for Survival (attributed author)'], institution: 'Amhara Association of America (host)',
+    publicationDate: '2026-09-20', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'full English text of a political declaration reproduced by a third-party association; linked PDF not retrieved', identifiers: { statementDate: '2026-09-20', calendarDate: 'Meskerem 10, 2019 (Ethiopian calendar)' },
+    description: 'Full English text attributed to the Alliance for Survival, including its stated aims, self-described member list and appeal to resolve differences peacefully. It records the alliance’s own position, not independent proof that each named organization authorized participation or that the proposed coordination was implemented.'
+  },
+  {
     id: 'ethiopiaAllianceAuResponse2026',
     label: 'UMD Media — account of the Alliance for Survival’s 24 September response to the African Union',
     url: 'https://www.umdmedia.com/article/ethiopias-newly-established-alliance-for-survival-rejects-african-unions-characterization-calls-for-inclusive-national-dialogue-and-civilian-protection',
