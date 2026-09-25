@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(161);
+  await expect(page.locator('.geo-card')).toHaveCount(162);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -63,7 +63,6 @@ test('Argentina 2025 case preserves the attributed interpretation and article ri
   await expect(record).toBeInViewport();
   await expect(record).toContainText('CC BY 4.0');
 });
-
 test('South African GNU case preserves its bounded retrospective research gap', async ({ page }) => {
   await page.goto('/#geography?case=south-african-2024-government-national-unity-coalition-transition');
   const card = page.locator('.geo-card');
@@ -73,6 +72,20 @@ test('South African GNU case preserves its bounded retrospective research gap', 
   await card.locator('.geo-evidence summary').click();
   await expect(card).toContainText('no book-length study of the complete period through 22 September 2026 was located');
   await expect(card).toContainText('Susan Booysen');
+});
+
+test('Lebanon 2025–2026 case distinguishes the extension vote from the Constitutional Council ruling', async ({ page }) => {
+  await page.goto('/#geography?case=lebanese-2025-2026-presidential-transition-and-parliamentary-extension');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('76 MPs');
+  await expect(card).toContainText('unanimously rejected three petitions');
+  await expect(card).toContainText('not independently verify the security situation');
+  await expect(card).toContainText('No six-axis scores are assigned');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href*="lebanonConstitutionalCouncilExtension2026"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-lebanonConstitutionalCouncilExtension2026$/);
+  await expect(page.locator('#source-research-lebanonConstitutionalCouncilExtension2026')).toBeInViewport();
 });
 
 test('Kosovo 2025–2026 case keeps status and unresolved constitutional deadlines explicit', async ({ page }) => {
@@ -122,7 +135,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(161);
+  await expect(page.locator('.geo-card')).toHaveCount(162);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -135,3 +148,4 @@ test('atlas cards and timeline are accessible and fit the viewport', async ({ pa
   const timelineResults = await new AxeBuilder({ page }).analyze();
   expect(timelineResults.violations.filter(({ impact }) => ['critical', 'serious'].includes(impact))).toEqual([]);
 });
+

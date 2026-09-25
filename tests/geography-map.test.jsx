@@ -93,7 +93,6 @@ describe('map geometry and filter contracts', () => {
     expect(MAP_PLACE_MARKERS.every(({ point }) => point.every(Number.isFinite))).toBe(true);
   });
 });
-
 describe('interactive atlas map', () => {
   it('selects countries, replaces conflicting geography, and retains research filters', async () => {
     const user = userEvent.setup();
@@ -174,7 +173,8 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(161);
+    expect(cards()).toHaveLength(162);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });
+
