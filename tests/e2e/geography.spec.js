@@ -576,3 +576,14 @@ test('Uganda 2026 election distinguishes official parliamentary returns and a wi
   await expect(card).toContainText('numerical six-axis score is inferred');
 });
 
+test('Myanmar 2025–2026 election and government transition distinguish official acts from contested reach and assessment', async ({ page }) => {
+  await page.goto('/#geography?case=myanmar-post-2021-spring-revolution-and-competing-governance');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('54.22 per cent');
+  await expect(card).toContainText('263 of 330 townships');
+  await expect(card).toContainText('102 townships');
+  await expect(card).toContainText('not an independent audit');
+  await expect(card).toContainText('event-specific book-length scholarship');
+});
+
