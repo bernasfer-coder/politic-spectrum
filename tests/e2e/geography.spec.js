@@ -654,15 +654,17 @@ test('Oman 2026 decrees document cabinet structure without inferring succession 
   await expect(card).toContainText('no score or coordinate has been added');
 });
 
-test('South Sudan transition distinguishes enacted-law reporting from dissolution announcement', async ({ page }) => {
+test('South Sudan transition distinguishes legal instruments, caretaker reporting and disputed inclusion', async ({ page }) => {
   await page.goto('/#geography?case=south-sudan-2018-agreement-and-2026-electoral-transition');
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('R-ARCSS');
   await expect(card).toContainText('continuing fighting');
   await expect(card).toContainText('enacted text or Gazette publication was not located');
-  await expect(card).toContainText('unresolved distinction');
-  await expect(card).toContainText('does not warrant a single ideological label or six-axis placement');
+  await expect(card).toContainText('the order itself was not retrieved');
+  await expect(card).toContainText('not independent evidence of broad representation or consensus');
+  await expect(card).toContainText('attributed competing political positions');
+  await expect(card).toContainText('does not warrant one ideological label or six-axis placement');
   await expect(card).toContainText('no six-axis score is inferred');
 });
 
