@@ -1605,7 +1605,10 @@ for (const [sourceId, evidenceRole, publicationDate] of [
   assert.deepEqual(record.languages, ['English']);
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
-  assert.deepEqual(record.relationships.profileEntries, ['encyclopedia:anti-colonial-liberation']);
+  const expectedProfileEntries = sourceId === 'nasserCanalUsers1956'
+    ? ['encyclopedia:anti-colonial-liberation', 'geography:nasser-egypt']
+    : ['encyclopedia:anti-colonial-liberation'];
+  assert.deepEqual(record.relationships.profileEntries, expectedProfileEntries);
 }
 const suezDecree = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-suezNationalizationDecree1956');
 const suezTelegram = BIBLIOGRAPHY_RECORDS.find(({ id }) => id === 'research-frusNasserAnnouncement1956');
