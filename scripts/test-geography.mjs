@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 162);
-assert.equal(GEOGRAPHY_LABELS.length, 160);
+assert.equal(GEOGRAPHY_CASES.length, 163);
+assert.equal(GEOGRAPHY_LABELS.length, 161);
 assert.ok(GEOGRAPHY_CASES.some(({ id, startYear, endYear, relationship }) => id === 'algerian-2024-2026-constitutional-and-electoral-contestation' && startYear === 2024 && endYear === 2026 && relationship === 'implemented'));
 assert.equal(filterGeographyCases({ place: 'kosovo' }).length, 1);
 assert.equal(filterGeographyCases({ place: 'kosovo' })[0].id, 'kosovo-2025-26-electoral-constitutional-crisis');
@@ -106,6 +106,16 @@ assert.ok(lebanon2025.claim.includes('shorten the extended mandate and hold elec
 assert.ok(lebanon2025.limitation.includes('no event-specific monograph'));
 assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === lebanon2025.labelId)));
 assert.ok(filterGeographyCases({ country: 'map-422' }).some(({ id }) => id === lebanon2025.id));
+const cameroon2025 = GEOGRAPHY_CASES.find(({ id }) => id === 'cameroon-2025-presidential-election-and-constitutional-aftermath');
+assert.equal(cameroon2025?.startYear, 2025);
+assert.equal(cameroon2025?.endYear, 2026);
+assert.equal(cameroon2025?.confidence, 'medium');
+assert.ok(cameroon2025?.claim.includes('53.66%'));
+assert.ok(cameroon2025?.claim.includes('not an independent audit'));
+assert.ok(cameroon2025?.limitation.includes('full text'));
+assert.ok(cameroon2025?.sourceIds.includes('cameroonKouohMbongoCroiseeUrnes2026'));
+assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === cameroon2025.labelId)));
+assert.ok(filterGeographyCases({ country: 'cameroon' }).some(({ id }) => id === cameroon2025.id));
 assert.equal(filterGeographyCases({ country: 'map-170' })[0].id, 'colombian-constitutional-peace-and-contestation-order');
 assert.equal(filterGeographyCases({ country: 'map-032' })[0].id, 'argentine-postauthoritarian-democratic-and-crisis-order');
 assert.ok(filterGeographyCases({ country: 'map-032' }).some(({ id }) => id === 'argentine-milei-libertarian-presidential-refoundation-and-contestation'));
@@ -162,8 +172,9 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 139, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 140, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('lebanese-2025-2026-presidential-transition-and-parliamentary-extension'));
+assert.ok(implementedPost2000.includes('cameroon-2025-presidential-election-and-constitutional-aftermath'));
 assert.ok(!filterGeographyCases({ country: 'egypt' }).some(({ id }) => id === 'nasser-regional-legacy'), 'regional influence is not automatically a country claim');
 const all = filterGeographyCases({});
 assert.deepEqual(all.map(({ startYear }) => startYear), all.map(({ startYear }) => startYear).sort((a, b) => a - b));
@@ -173,4 +184,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 162 dated cases, 160 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 163 dated cases, 161 unscored labels, citations, boundaries, filters and share URLs.');

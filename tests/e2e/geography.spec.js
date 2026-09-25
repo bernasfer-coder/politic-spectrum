@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(162);
+  await expect(page.locator('.geo-card')).toHaveCount(163);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -119,6 +119,21 @@ test('DRC 2025–2026 case distinguishes parallel peace tracks and links evidenc
   await expect(card).toHaveCount(1);
 });
 
+test('Cameroon 2025 case distinguishes certified results, observer findings and limits', async ({ page }) => {
+  await page.goto('/#geography?case=cameroon-2025-presidential-election-and-constitutional-aftermath');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('53.66%');
+  await expect(card).toContainText('not an independent audit');
+  await expect(card).toContainText('No score is assigned to Cameroon');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href*="cameroonConstitutionalCouncilElectionResults2025"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-cameroonConstitutionalCouncilElectionResults2025$/);
+  const source = page.locator('#source-research-cameroonConstitutionalCouncilElectionResults2025');
+  await expect(source).toBeInViewport();
+  await expect(source).toContainText('No reuse licence identified');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -135,7 +150,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(162);
+  await expect(page.locator('.geo-card')).toHaveCount(163);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

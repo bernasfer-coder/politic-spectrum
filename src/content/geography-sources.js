@@ -311,6 +311,76 @@ const sources = [
     description: 'Contemporary institutional record of the 2025 presidential-election process, including the convening of the electorate, candidate documentation and electoral-register materials. It marks a dated research horizon rather than a complete result, participation or legitimacy assessment.'
   },
   {
+    id: 'cameroonConstitutionalCouncilElectionResults2025',
+    label: 'Cameroon Constitutional Council — certified official results of the 12 October 2025 presidential election',
+    url: 'https://dgtcfm.cm/wp-content/uploads/2025/10/Official-Results-Presidential-Election-English.pdf',
+    note: 'Certified Constitutional Council results reproduced by Cameroon’s Directorate General of Treasury, Financial and Monetary Cooperation. Used for the formally proclaimed totals and date only; it is an official result, not an independent audit or proof of equal competition, public consent or absence of irregularities.',
+    accessDate: '2026-09-25', creators: ['Constitutional Council of Cameroon'], institution: 'Certified document hosted by the Directorate General of Treasury, Financial and Monetary Cooperation',
+    publicationDate: '2025-10-27', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'certified constitutional-court election proclamation / official result', identifiers: { electionDate: '2025-10-12', proclamationDate: '2025-10-27' },
+    description: 'The certified proclamation records the Constitutional Council’s official presidential-election totals. Its result is reported as the court’s legal determination and kept distinct from civil-society estimates, observer assessments and opposition claims.'
+  },
+  {
+    id: 'cameroonAfricanUnionObserverReport2026',
+    label: 'African Union — Report of the Chairperson of the Commission on Elections in Africa and AU election observation missions (2026)',
+    url: 'https://papsrepository.africanunion.org/server/api/core/bitstreams/9c159a5e-7cfb-4d75-a8a8-59b5b8c14dcf/content',
+    note: 'African Union institutional report used for its attributed account of observer deployment, polling-day conditions and post-election tensions. The AU mission’s observation window and mandate were limited; its summary is not treated as a comprehensive audit of the electoral cycle or a judgment on all allegations.',
+    accessDate: '2026-09-25', creators: ['African Union Commission'], institution: 'African Union Peace and Security Department',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'African Union Commission report on elections and observation missions', identifiers: { reportSymbol: 'PSC/PR/RPT.1327 (2026)', countrySection: 'Cameroon, paragraphs 24–25' },
+    description: 'The report summarizes the AU election-observation mission and distinguishes its account of orderly election-day voting from the delayed results and subsequent tension. It is an institutional observer assessment with a bounded temporal and methodological scope.'
+  },
+  {
+    id: 'cameroonUnOhchrElectionCivicSpace2025',
+    label: 'UN Human Rights Office — Cameroon: civic-space and election-related concerns (2 September 2025)',
+    url: 'https://www.ungeneva.org/fr/news-media/news/2025/09/110112/cameroun-lonu-denonce-les-restrictions-de-lespace-civique-lapproche',
+    note: 'OHCHR warning reported by UN Geneva before the election, used as an attributed human-rights and civic-space assessment. Allegations and concerns are not converted into adjudicated findings or generalized beyond the incidents and period the Office described.',
+    accessDate: '2026-09-25', creators: ['Office of the United Nations High Commissioner for Human Rights'], institution: 'United Nations Office at Geneva',
+    publicationDate: '2025-09-02', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'UN human-rights office press briefing', identifiers: { event: '2025 presidential election preparations' },
+    description: 'The Office describes concerns about civic-space restrictions and reported intimidation and arrests in the pre-election period. This is an attributed institutional warning, not a complete observation of all candidates, regions or election-day conduct.'
+  },
+  {
+    id: 'cameroonAfricanCommissionPostElection2025',
+    label: 'African Commission on Human and Peoples’ Rights — statement on the post-election human-rights situation in Cameroon (31 October 2025)',
+    url: 'https://achpr.au.int/fr/news/communique-de-presse/2025-10-31/situation-des-droits-de-lhomme-en-republique-du-cameroun',
+    note: 'African Commission statement in French, used for its attributed concern about post-election deaths, injuries, force, arrests and internet restrictions, alongside its note about calm on election day and reported property damage. No casualty total is inferred; the statement calls for investigation and is not a judicial determination.',
+    accessDate: '2026-09-25', creators: ['African Commission on Human and Peoples’ Rights'], institution: 'African Union',
+    publicationDate: '2025-10-31', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'regional human-rights commission press statement', identifiers: { event: 'post-election protests and response' },
+    description: 'The Commission’s statement records its concerns and recommendations after the election. Its allegations and institutional characterization are attributed to the Commission and are not substituted for independent case-by-case verification or court findings.'
+  },
+  {
+    id: 'cameroonAssociatedPressPostElection2025',
+    label: 'Associated Press — Cameroon election aftermath and opposition claim (October 2025)',
+    url: 'https://apnews.com/article/c643ab44f7c7b846a00ad5bfcbe28759',
+    note: 'Contemporaneous Associated Press reporting consulted to document attributed opposition claims and the public aftermath alongside official and institutional sources. Reporting is not a precinct-level audit and does not independently establish the true result or every reported incident.',
+    accessDate: '2026-09-25', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'wire-service report on candidacy litigation and post-election contestation', identifiers: { event: '2025 presidential election' },
+    description: 'The report documents the exclusion challenge involving Maurice Kamto before the election and opposition contestation around the official outcome. It is used for what named actors said and the reported sequence, not as independent validation of vote totals.'
+  },
+  {
+    id: 'cameroonConstitutionAmendment2026VicePresident',
+    label: 'Republic of Cameroon — Law No. 2026/002 of 14 April 2026 amending the Constitution',
+    url: 'https://www.prc.cm/en/multimedia/documents/10676-law-2026-002-of-14-04-2026',
+    note: 'Official Presidency record of the enacted constitutional amendment, consulted as primary legal evidence and link only. The record establishes the formal institutional change, not its subsequent operation, political intent, public acceptance or effects on succession.',
+    accessDate: '2026-09-25', creators: ['Republic of Cameroon'], institution: 'Presidency of the Republic of Cameroon',
+    publicationDate: '2026-04-14', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary constitutional amendment / official legal record', identifiers: { lawNumber: '2026/002', promulgationDate: '2026-04-14' },
+    description: 'The constitutional amendment establishes a vice-presidency appointed by the President and sets out succession provisions. It is included as a bounded institutional aftermath of the election period, not as evidence that the new office has already altered political practice.'
+  },
+  {
+    id: 'cameroonKouohMbongoCroiseeUrnes2026',
+    label: 'Pascal Kouoh Mbongo — Le Cameroun à la croisée des urnes. Choses vues en 2025 (2026)',
+    url: 'https://www.pascalkouohmbongo.fr/livres/le-cameroun-%C3%A0-la-crois%C3%A9e-des-urnes',
+    note: 'Author-hosted bibliographic and descriptive record for a 381-page French-language book published by Éditions de l’Encoche in 2026. Full text was not consulted; metadata and author-supplied description are not independently confirmed here, and no ISBN or external library record was identified in this review. No book text is reproduced.',
+    accessDate: '2026-09-25', creators: ['Pascal Kouoh Mbongo'], institution: 'Éditions de l’Encoche (publisher as reported in the author-hosted record)',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'author-announced forthcoming book-length political and legal essay', identifiers: { pages: '381', publisher: 'Éditions de l’Encoche', scope: '2023–2025 campaign and election' },
+    description: 'The author describes a book on the 2023–2025 campaign and election, candidate selection, ELECAM, electoral lists, political discourse and the Constitutional Council. Because only the author’s record was reviewed, these are bibliographic and self-described scope details, not a synthesis of the book’s arguments or independently verified scholarly reception.'
+  },
+  {
     id: 'ngohHistoryCameroon1800',
     label: 'Victor Julius Ngoh — History of Cameroon Since 1800 (1996)',
     url: 'https://books.google.com/books/about/History_of_Cameroon_Since_1800.html?id=h5UPAQAAMAAJ',
