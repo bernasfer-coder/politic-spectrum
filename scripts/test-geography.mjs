@@ -18,6 +18,15 @@ assert.ok(farabiBaghdad?.limitation.includes('not a fresh collation of manuscrip
 assert.ok(farabiBaghdad?.limitation.includes('No ideological score or six-axis placement'));
 assert.ok(farabiBaghdad?.sourceIds.includes('gutasFarabiBiographyIranica'));
 assert.ok(farabiBaghdad?.sourceIds.includes('walzerFarabiPerfectState'));
+const farabiDamascus = GEOGRAPHY_CASES.find(({ id }) => id === 'farabi-damascus');
+assert.equal(farabiDamascus?.datePrecision, 'approximate');
+assert.equal(farabiDamascus?.confidence, 'medium');
+assert.ok(farabiDamascus?.claim.includes('completed it in Damascus by September 943'));
+assert.ok(farabiDamascus?.claim.includes('writing the Tanbīh in about 955–956'));
+assert.ok(farabiDamascus?.limitation.includes('not freshly collated here'));
+assert.ok(farabiDamascus?.limitation.includes('not proof of uninterrupted residence'));
+assert.ok(farabiDamascus?.sourceIds.includes('masudiTanbihDeGoejeEdition'));
+assert.ok(farabiDamascus?.sourceIds.includes('rosenthalFarabiCambridgeChapter'));
 const albaniaElection = GEOGRAPHY_CASES.find(({ id }) => id === 'albania-2025-parliamentary-election-and-diaspora-vote');
 assert.equal(albaniaElection?.confidence, 'medium');
 assert.equal(albaniaElection?.startYear, 2025);
