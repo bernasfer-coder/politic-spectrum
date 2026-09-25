@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 176);
-assert.equal(GEOGRAPHY_LABELS.length, 174);
+assert.equal(GEOGRAPHY_CASES.length, 177);
+assert.equal(GEOGRAPHY_LABELS.length, 175);
 const haitiTransition2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'haitian-2026-post-council-electoral-transition');
 assert.equal(haitiTransition2026?.datePrecision, 'snapshot');
 assert.equal(haitiTransition2026?.confidence, 'medium');
@@ -270,7 +270,12 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 151, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 152, 'the atlas should expose all dated post-2000 implemented cases');
+const egyptHouse = GEOGRAPHY_CASES.find(({ id }) => id === 'egyptian-2025-2026-house-election-and-parliamentary-formation');
+assert.equal(egyptHouse?.placeId, 'egypt-house-2025');
+assert.ok(egyptHouse?.claim.includes('32.41%'));
+assert.ok(egyptHouse?.limitation.includes('independent verification of turnout'));
+assert.ok(egyptHouse?.sourceIds.includes('egyptKotbHouseElection2025'));
 assert.ok(implementedPost2000.includes('haitian-2026-post-council-electoral-transition'));
 assert.ok(implementedPost2000.includes('lebanese-2025-2026-presidential-transition-and-parliamentary-extension'));
 assert.ok(implementedPost2000.includes('cameroon-2025-presidential-election-and-constitutional-aftermath'));
@@ -283,4 +288,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 176 dated cases, 174 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 177 dated cases, 175 unscored labels, citations, boundaries, filters and share URLs.');

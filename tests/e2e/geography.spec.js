@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(176);
+  await expect(page.locator('.geo-card')).toHaveCount(177);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -318,7 +318,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(176);
+  await expect(page.locator('.geo-card')).toHaveCount(177);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -330,5 +330,14 @@ test('atlas cards and timeline are accessible and fit the viewport', async ({ pa
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
   const timelineResults = await new AxeBuilder({ page }).analyze();
   expect(timelineResults.violations.filter(({ impact }) => ['critical', 'serious'].includes(impact))).toEqual([]);
+});
+
+test('Egypt 2025–2026 parliamentary case stays separate and displays attributed evidence limits', async ({ page }) => {
+  await page.goto('/#geography?case=egyptian-2025-2026-house-election-and-parliamentary-formation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('32.41%');
+  await expect(card).toContainText('independent verification of turnout');
+  await expect(card).toContainText('Kotb');
 });
 
