@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(164);
+  await expect(page.locator('.geo-card')).toHaveCount(165);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -151,6 +151,22 @@ test('Canada 2025 election case bounds the Terrebonne ruling and Nunavik access 
   await expect(source).toContainText('no blanket commercial-reuse licence');
 });
 
+test('Bangladesh transition case attributes observers and preserves the referendum evidence gap', async ({ page }) => {
+  await page.goto('/#geography?case=bangladesh-2024-uprising-interim-government-and-2026-election');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('women were four per cent of contestants');
+  await expect(card).toContainText('70-constituency sample');
+  await expect(card).toContainText('makes no claim about referendum totals');
+  await expect(card).toContainText('No scores or whole-country ideological labels are assigned');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href*="bangladeshEeom2026FinalReport"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-bangladeshEeom2026FinalReport$/);
+  const source = page.locator('#source-research-bangladeshEeom2026FinalReport');
+  await expect(source).toBeInViewport();
+  await expect(source).toContainText('No direct quotation is published');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -167,7 +183,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(164);
+  await expect(page.locator('.geo-card')).toHaveCount(165);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

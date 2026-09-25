@@ -9681,6 +9681,39 @@ const sources = [
 
 sources.push(
   {
+    id: 'bangladeshJulyNationalCharter2025Translation',
+    label: 'Bangladesh National Consensus Commission — July National Charter 2025 (unofficial English translation)',
+    url: 'https://constitutionnet.org/sites/default/files/2025-11/Bangladesh%20July%20National%20Charter%202025%20%28English%20translation%29.pdf',
+    note: 'Primary political text consulted in an unofficial English translation commissioned by International IDEA. Used to establish the reform proposals and recorded reservations in the published text, not unanimity, legal effect or implementation. The Bengali source text and all-party positions require further comparison; no wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Bangladesh National Consensus Commission'], institution: 'International IDEA / ConstitutionNet (translation host)',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'medium', languages: ['Bengali original; unofficial English translation'],
+    sourceType: 'primary political charter / unofficial translation', identifiers: { translation: 'International IDEA-commissioned, unofficial' },
+    description: 'Negotiated constitutional and institutional reform proposals following the 2024 uprising. Its recorded qualifications and reservations matter: the charter is evidence of a political process and proposed measures, not proof that every signatory agreed to every provision or that proposals were implemented.'
+  },
+  {
+    id: 'bangladeshEeom2026FinalReport',
+    label: 'European Union Election Observation Mission — Bangladesh 2026 Parliamentary Elections: Final Report',
+    url: 'https://www.eeas.europa.eu/sites/default/files/2026/documents/EU%20EOM%20Bangladesh%202026%20FR%20COMPLETE.pdf',
+    note: 'Independent election-observation mission final report, published after its 28 December 2025–4 March 2026 deployment. Used as an attributed assessment of process, representation and legal gaps; observer conclusions are not treated as an objective national democratic score. No report wording or tables are reproduced.',
+    accessDate: '2026-09-25', creators: ['European Union Election Observation Mission to Bangladesh'], institution: 'European External Action Service',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation mission final report', identifiers: { electionDate: '2026-02-12', pages: '78' },
+    description: 'A nationwide long-term election observation report covering the 12 February 2026 parliamentary election, campaign, voting, tabulation and post-election context. Its conclusions and limitations are attributed to the mission; it is not a complete political history or a country-wide ideological profile.'
+  },
+  {
+    id: 'bangladeshTibElectionTracking2026',
+    label: 'Transparency International Bangladesh — 13th National Election Process Tracking and Affidavits (2026)',
+    url: 'https://www.ti-bangladesh.org/en/articles/press-release/7440',
+    note: 'TIB public release summarizing its 2026 process-tracking research. Findings are attributed to the organization and its specified sample; the 70-constituency sample is not generalized as nationwide prevalence. Linked and paraphrased only; no report tables or wording are reproduced.',
+    accessDate: '2026-09-25', creators: ['Transparency International Bangladesh'], institution: 'Transparency International Bangladesh',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'civil-society election-process monitoring report and release', identifiers: { sample: '70 constituencies' },
+    description: 'Civil-society assessment of the 2026 parliamentary election process, reporting its own candidate-affidavit review and constituency sample. Its findings complement, but do not replace, official result records or nationwide observation.'
+  }
+);
+
+sources.push(
+  {
     id: 'southAfricaGnuStatementIntent2024',
     label: 'South African GNU parties — Statement of Intent (14 June 2024)',
     url: 'https://www.anc1912.org.za/wp-content/uploads/2024/06/Statement-of-Intent-of-the-2024-Government-of-National-Unity.pdf',
