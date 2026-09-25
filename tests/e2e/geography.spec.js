@@ -390,12 +390,16 @@ test('Sudan war case bounds OHCHR evidence and distinguishes formal ceasefire co
   await page.goto('/#geography?case=sudan-2023-25-war-fragmented-authority-and-civilian-protection');
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
-  await expect(card).toContainText('2023–2025');
+  await expect(card).toContainText('2023–2026');
   await expect(card).toContainText('at least 3,384 civilian deaths');
-  await expect(card).toContainText('not proof of compliance');
+  await expect(card).toContainText('not observance or settlement');
   await expect(card).toContainText('not a present-day control map');
+  await expect(card).toContainText('33.7 million people in need');
+  await expect(card).toContainText('not evidence of stakeholder consensus');
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href*="sudanJeddahShortCeasefire2023"]')).toBeVisible();
+  await expect(card.locator('a[href*="sudanUnicefHumanitarianMidYear2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="sudanQuintetKhartoumMission2026"]')).toBeVisible();
 });
 
 test('Côte d’Ivoire 2025 case distinguishes official results, limited observation and attributed rights reporting', async ({ page }) => {

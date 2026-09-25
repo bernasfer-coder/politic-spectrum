@@ -160,10 +160,12 @@ describe('geographic atlas', () => {
     window.history.replaceState(null, '', '/#geography?case=sudan-2023-25-war-fragmented-authority-and-civilian-protection');
     renderAtlas();
     expect(cards()).toHaveLength(1);
-    expect(cards()[0]).toHaveTextContent('2023–2025');
+    expect(cards()[0]).toHaveTextContent('2023–2026');
     expect(cards()[0]).toHaveTextContent('at least 3,384 civilian deaths');
-    expect(cards()[0]).toHaveTextContent('not a complete census or court judgment');
+    expect(cards()[0]).toHaveTextContent('not a complete census or judicial determination');
     expect(cards()[0]).toHaveTextContent('not a present-day control map');
+    expect(cards()[0]).toHaveTextContent('33.7 million people in need');
+    expect(cards()[0]).toHaveTextContent('not evidence of stakeholder consensus');
   });
 
   it('shows the bounded Côte d’Ivoire 2025 election and separates the official result from observer and rights evidence', () => {
