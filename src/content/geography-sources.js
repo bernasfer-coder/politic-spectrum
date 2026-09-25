@@ -9990,6 +9990,46 @@ const sources = [
     sourceType: 'independent international news-agency report', identifiers: { reportDate: '2026-09-21', announcementDate: '2026-09-20' },
     description: 'Independent reporting of the public coalition announcement and attributed member statements, while expressly leaving the extent of coordination unclear.'
   },
+  {
+    id: 'ethiopiaAucDeescalationSeptember2026',
+    label: 'African Union Commission Chairperson — statement on renewed tensions and escalation in northern Ethiopia',
+    url: 'https://www.au.int/en/pressreleases/20260923/chairperson-calls-restraint-and-immediate-de-escalation-northern-ethiopia',
+    note: 'Official African Union Commission Chairperson press release of 23 September 2026, consulted on 25 September. Claims about airport seizure/occupation, detention and hostilities are reported as the Chairperson’s account/concerns, not independently adjudicated findings. The Chairperson states that new political and military alliances risk destabilization, reaffirms the Pretoria Agreement and calls for restraint, cessation of escalatory action and direct talks.',
+    accessDate: '2026-09-25', creators: ['Mahmoud Ali Youssouf'], institution: 'African Union Commission, Office of the Chairperson',
+    publicationDate: '2026-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official regional-organization press release / diplomatic position', identifiers: { statementDate: '2026-09-23', agreement: 'Pretoria Agreement, 2 November 2022' },
+    description: 'The AU Chairperson’s official position on reported renewed northern hostilities and new political/military alliances. This is an institutional diplomatic statement, not an independent investigation of battlefield events or a legal ruling on the alliance.'
+  },
+  {
+    id: 'ethiopiaUkDeescalationSeptember2026',
+    label: 'UK Foreign, Commonwealth & Development Office — statement on escalation in northern Ethiopia, 24 September',
+    url: 'https://www.gov.uk/government/news/uk-statement-on-escalation-in-northern-ethiopia-24-september',
+    note: 'Official UK government statement published 24 September 2026 and consulted on 25 September. The UK condemns reported attacks by Tigray Defence Forces and airport takeovers, calls for an end to hostilities and AU-led dialogue, and rejects the alliance’s stated aim of overthrowing Ethiopia’s government. These are the UK’s diplomatic positions and attributions, not an independent battlefield investigation or assessment of Ethiopian public opinion.',
+    accessDate: '2026-09-25', creators: ['UK Government spokesperson'], institution: 'UK Foreign, Commonwealth & Development Office',
+    publicationDate: '2026-09-24', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official foreign-ministry press release / diplomatic position', identifiers: { statementDate: '2026-09-24' },
+    description: 'Official UK response distinguishing its opposition to the alliance’s stated overthrow aim from its call for de-escalation, civilian protection, aid access and AU-led dialogue. It records the UK position, not a legal determination.'
+  },
+  {
+    id: 'ethiopiaAlJazeeraAllianceEscalation2026',
+    label: 'Al Jazeera — reporting on renewed fighting, the Alliance for Survival and disputed accounts',
+    url: 'https://www.aljazeera.com/news/2026/9/24/fighting-widens-across-ethiopia-as-tigray-clashes-escalate',
+    note: 'Al Jazeera report dated 24 September 2026, consulted in full. It distinguishes statements by TPLF figures, an Abiy adviser, the UK, AU, Eritrean government and other named sources; the parties give opposing accounts of who initiated the renewed fighting. Alliance/member claims about attacks, foreign backing, operations and political aims remain attributed. Its conflict reporting is not treated as independently verified battlefield control or a legal status finding.',
+    accessDate: '2026-09-25', creators: ['Faisal Ali'], institution: 'Al Jazeera',
+    publicationDate: '2026-09-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous international reporting / multi-actor conflict account', identifiers: { reportDate: '2026-09-24' },
+    description: 'Reports renewed clashes and the alliance’s response while recording competing claims about escalation and unresolved disagreements inside the coalition. Allegations and interview statements are attributed, not converted into verified operational facts.'
+  },
+  {
+    id: 'ethiopiaAllianceAuResponse2026',
+    label: 'UMD Media — account of the Alliance for Survival’s 24 September response to the African Union',
+    url: 'https://www.umdmedia.com/article/ethiopias-newly-established-alliance-for-survival-rejects-african-unions-characterization-calls-for-inclusive-national-dialogue-and-civilian-protection',
+    note: 'UMD Media account published 24 September 2026, consulted in full. It attributes a response to the alliance following the AU statement and reports its calls for dialogue, civilian protection and humanitarian access. The outlet describes itself as working for rule of law in Tigray, Ethiopia and the Horn of Africa; this standpoint is disclosed. No direct original copy or official alliance account for the response was retrieved, and the outlet is not treated as independent verification of alliance claims.',
+    accessDate: '2026-09-25', creators: ['UMD Media'], institution: 'Understanding, Measuring, and Doing (UMD Media)',
+    publicationDate: '2026-09-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'advocacy-oriented news account reproducing an attributed political response', identifiers: { reportDate: '2026-09-24', statedEditorialFocus: 'Rule of Law in Tigray, Ethiopia, and the Horn of Africa' },
+    description: 'A report of the alliance’s response to the AU characterization. Its editorial/advocacy orientation and lack of a retrievable direct statement are explicit; the reported claims are not independently verified.'
+  },
 ];
 
 sources.push(
