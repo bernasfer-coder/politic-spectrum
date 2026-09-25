@@ -25,10 +25,21 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('no six-axis score');
   });
 
+  it('shows Sabah’s bounded 2025 election and distinguishes official returns from interpretation', () => {
+    window.history.replaceState(null, '', '/#geography?case=sabah-2025-state-election-and-chief-minister-appointment');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('29–30 November 2025');
+    expect(cards()[0]).toHaveTextContent('GRS) 29, Warisan 25');
+    expect(cards()[0]).toHaveTextContent('64.35%');
+    expect(cards()[0]).toHaveTextContent('same-author');
+    expect(cards()[0]).toHaveTextContent('No six-axis score is warranted');
+  });
+
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(191);
+    expect(cards()).toHaveLength(192);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
