@@ -798,13 +798,16 @@ assert.ok(ethiopianAlliance?.limitation.includes('stated editorial focus is rule
 assert.ok(ethiopianAlliance?.limitation.includes('do not represent all Ethiopian political organizations'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAllianceFoundingStatement2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAucDeescalationSeptember2026'));
+assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaUnSecretaryGeneralStatementSeptember2026'));
+assert.ok(ethiopianAlliance?.claim.includes('A separate statement attributed to the UN Secretary-General’s spokesperson'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaUkDeescalationSeptember2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAlJazeeraAllianceEscalation2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAllianceAuResponse2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaGoobjoogOnlfMembershipDispute2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaKuluOnlfMembershipDispute2026'));
 assert.ok(ethiopianAlliance?.limitation.includes('which faction was constitutionally or organizationally entitled to bind ONLF'));
-assert.ok(ethiopianAllianceLabel?.description.includes('initial AU, UK and coalition statements'));
+assert.ok(ethiopianAllianceLabel?.description.includes('initial AU, UN, UK and coalition statements'));
+assert.ok(ethiopianAllianceLabel?.sourceIds.includes('ethiopiaUnSecretaryGeneralStatementSeptember2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('lyonsPuzzleEthiopianPolitics2019'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('tarikuGebresenbetInsecurityEthiopia2026'));
 assert.ok(filterGeographyCases({ country: 'ethiopia' }).some(({ id }) => id === ethiopianAlliance?.id));

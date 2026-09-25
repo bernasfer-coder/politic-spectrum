@@ -10001,6 +10001,16 @@ const sources = [
     description: 'The AU Chairperson’s official position on reported renewed northern hostilities and new political/military alliances. This is an institutional diplomatic statement, not an independent investigation of battlefield events or a legal ruling on the alliance.'
   },
   {
+    id: 'ethiopiaUnSecretaryGeneralStatementSeptember2026',
+    label: 'United Nations in Ethiopia — Secretary-General statement on Ethiopia, 23 September 2026',
+    url: 'https://ethiopia.un.org/en/323246-un-secretary-general-statement-ethiopia',
+    note: 'UN Ethiopia page hosting a 23 September 2026 statement attributed to the Spokesperson for the UN Secretary-General, consulted 25 September. It records the Secretary-General’s concern over reported airport seizures/occupation and intensified fighting, and calls for restraint, civilian protection, humanitarian access and renewed AU-facilitated talks under the Pretoria framework. This is an official diplomatic position and relays reported events; it is not a separate field investigation or legal determination.',
+    accessDate: '2026-09-25', creators: ['Spokesperson for the UN Secretary-General'], institution: 'United Nations in Ethiopia / United Nations',
+    publicationDate: '2026-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official United Nations spokesperson statement / diplomatic position', identifiers: { statementDate: '2026-09-23', symbol: 'SG/SM/23299' },
+    description: 'The Secretary-General’s attributed position on reported northern Ethiopia escalation and requested humanitarian and diplomatic steps; the report is not treated as independent verification of the underlying battlefield events.'
+  },
+  {
     id: 'ethiopiaUkDeescalationSeptember2026',
     label: 'UK Foreign, Commonwealth & Development Office — statement on escalation in northern Ethiopia, 24 September',
     url: 'https://www.gov.uk/government/news/uk-statement-on-escalation-in-northern-ethiopia-24-september',
