@@ -36,10 +36,20 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('No six-axis score is warranted');
   });
 
+  it('shows the 2026 Malaysian term-limit bill as a proposal that did not pass', () => {
+    window.history.replaceState(null, '', '/#geography?case=malaysian-2026-prime-minister-term-limit-amendment');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('23 February–3 September 2026');
+    expect(cards()[0]).toHaveTextContent('146 in favour, 44 members not voting and 32 absent');
+    expect(cards()[0]).toHaveTextContent('No ideological classification or six-axis score is warranted');
+    expect(cards()[0]).toHaveTextContent('no event-specific book-length analysis was located');
+  });
+
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(192);
+    expect(cards()).toHaveLength(193);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');

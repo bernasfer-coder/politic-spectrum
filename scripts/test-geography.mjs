@@ -7,8 +7,16 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 192);
-assert.equal(GEOGRAPHY_LABELS.length, 190);
+assert.equal(GEOGRAPHY_CASES.length, 193);
+assert.equal(GEOGRAPHY_LABELS.length, 191);
+const malaysiaTermLimit = GEOGRAPHY_CASES.find(({ id }) => id === 'malaysian-2026-prime-minister-term-limit-amendment');
+assert.equal(malaysiaTermLimit?.relationship, 'advocated');
+assert.equal(malaysiaTermLimit?.placeId, 'malaysia-pm-term-limit-bill-2026');
+assert.ok(malaysiaTermLimit?.claim.includes('146 in favour, 44 members not voting and 32 absent'));
+assert.ok(malaysiaTermLimit?.claim.includes('two votes short of the 148 of 222 required'));
+assert.ok(malaysiaTermLimit?.claim.includes('no later vote or enacted amendment is established'));
+assert.ok(malaysiaTermLimit?.limitation.includes('no event-specific book-length analysis was located'));
+assert.ok(malaysiaTermLimit?.sourceIds.includes('malaysiaPrimeMinisterTermLimitHansard2026'));
 const sabahElection = GEOGRAPHY_CASES.find(({ id }) => id === 'sabah-2025-state-election-and-chief-minister-appointment');
 assert.equal(sabahElection?.placeId, 'sabah-2025-state-election');
 assert.ok(sabahElection?.claim.includes('GRS) 29, Warisan 25'));
