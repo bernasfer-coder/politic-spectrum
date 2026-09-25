@@ -792,6 +792,7 @@ assert.ok(ethiopianAlliance?.claim.includes('AP calls it'));
 assert.ok(ethiopianAlliance?.claim.includes('not evidence of a unified command'));
 assert.ok(ethiopianAlliance?.claim.includes('AU Commission Chairperson’s 23 September statement'));
 assert.ok(ethiopianAlliance?.claim.includes('conflicting accounts of who initiated the escalation'));
+assert.ok(ethiopianAlliance?.claim.includes('competing ONLF leadership claims'));
 assert.ok(ethiopianAlliance?.limitation.includes('returned HTTP 403'));
 assert.ok(ethiopianAlliance?.limitation.includes('stated editorial focus is rule of law in Tigray'));
 assert.ok(ethiopianAlliance?.limitation.includes('do not represent all Ethiopian political organizations'));
@@ -800,6 +801,9 @@ assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAucDeescalationSeptembe
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaUkDeescalationSeptember2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAlJazeeraAllianceEscalation2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAllianceAuResponse2026'));
+assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaGoobjoogOnlfMembershipDispute2026'));
+assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaKuluOnlfMembershipDispute2026'));
+assert.ok(ethiopianAlliance?.limitation.includes('which faction was constitutionally or organizationally entitled to bind ONLF'));
 assert.ok(ethiopianAllianceLabel?.description.includes('initial AU, UK and coalition statements'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('lyonsPuzzleEthiopianPolitics2019'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('tarikuGebresenbetInsecurityEthiopia2026'));

@@ -10030,6 +10030,26 @@ const sources = [
     sourceType: 'advocacy-oriented news account reproducing an attributed political response', identifiers: { reportDate: '2026-09-24', statedEditorialFocus: 'Rule of Law in Tigray, Ethiopia, and the Horn of Africa' },
     description: 'A report of the alliance’s response to the AU characterization. Its editorial/advocacy orientation and lack of a retrievable direct statement are explicit; the reported claims are not independently verified.'
   },
+  {
+    id: 'ethiopiaGoobjoogOnlfMembershipDispute2026',
+    label: 'Goobjoog English — ONLF faction confirms Alliance for Survival membership amid rival denial',
+    url: 'https://en.goobjoog.com/onlf-confirms-membership-in-ethiopias-new-alliance-for-survival/',
+    note: 'Goobjoog English report published 22 September 2026 and consulted in full. It reports a confirmation attributed to an ONLF Central Committee and a competing 21 September statement issued in ONLF’s name denying membership and affirming peaceful political work. It attributes the confirmation and allegations about rival leadership authority; those claims are not independently adjudicated here.',
+    accessDate: '2026-09-25', creators: ['Goobjoog News'], institution: 'Goobjoog English',
+    publicationDate: '2026-09-22', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous regional news report / intra-party membership dispute', identifiers: { reportDate: '2026-09-22', subject: 'ONLF representation and alliance membership' },
+    description: 'Reports opposing ONLF leadership claims about whether the organization authorized participation in the alliance; neither side’s authority is independently established by this report.'
+  },
+  {
+    id: 'ethiopiaKuluOnlfMembershipDispute2026',
+    label: 'Kulu Media — rival ONLF leadership claims over Alliance for Survival membership',
+    url: 'https://kulu-media.com/onlf-denies-joining-ethiopian-alliance/',
+    note: 'Kulu Media report published 23 September 2026 and consulted in full. It describes a denial attributed to Jigjiga-based ONLF leadership and a rival faction’s insistence that ONLF is a founding member; it says the dispute makes an unqualified yes-or-no description inaccurate. It points to Hiiraan Online and Goobjoog, so this is useful for documenting the contested claims, not independent corroboration of every underlying statement.',
+    accessDate: '2026-09-25', creators: ['Kulu Media News Desk'], institution: 'Kulu Media',
+    publicationDate: '2026-09-23', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous regional news report / competing organizational claims', identifiers: { reportDate: '2026-09-23', subject: 'ONLF leadership dispute and alliance membership' },
+    description: 'Records contradictory claims by rival ONLF leadership factions about alliance membership and representation; the report does not resolve which leadership was authorized.'
+  },
 ];
 
 sources.push(
