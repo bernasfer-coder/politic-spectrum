@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(203);
+  await expect(page.locator('.geo-card')).toHaveCount(204);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -66,6 +66,20 @@ test('Djibouti case distinguishes provisional observer denominators from the Con
   await expect(card).toContainText('No ideological label or six-axis score');
   await card.locator('.geo-evidence summary').click();
   await expect(card.getByRole('link', { name: /Constitutional Council of Djibouti/ })).toBeVisible();
+});
+
+test('Albania case separates first-time diaspora registration from the certified parliamentary result', async ({ page }) => {
+  await page.goto('/#geography?case=albania-2025-parliamentary-election-and-diaspora-vote');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('245,935 people in 85 countries');
+  await expect(card).toContainText('about 41,000 applications were rejected');
+  await expect(card).toContainText('83 seats for the Socialist Party');
+  await expect(card).toContainText('1,207 ballot boxes in Tirana');
+  await expect(card).toContainText('No national ideological label or six-axis score');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.getByRole('link', { name: /OSCE\/ODIHR/ })).toBeVisible();
+  await expect(card.getByRole('link', { name: /Central Election Commission of Albania/ }).first()).toBeVisible();
 });
 
 test('Bolivia 2025 case presents the official count discrepancy and limits', async ({ page }) => {
@@ -472,7 +486,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(203);
+  await expect(page.locator('.geo-card')).toHaveCount(204);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

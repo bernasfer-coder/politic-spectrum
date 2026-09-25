@@ -13,6 +13,17 @@ beforeEach(() => { window.localStorage.clear(); window.history.replaceState(null
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 describe('geographic atlas', () => {
+  it('presents Albania’s first postal out-of-country vote with the observer and official-result boundaries intact', () => {
+    window.history.replaceState(null, '', '/#geography?case=albania-2025-parliamentary-election-and-diaspora-vote');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('245,935 people in 85 countries');
+    expect(cards()[0]).toHaveTextContent('about 41,000 applications were rejected');
+    expect(cards()[0]).toHaveTextContent('1,207 ballot boxes in Tirana');
+    expect(cards()[0]).toHaveTextContent('not proof of unreported spending');
+    expect(cards()[0]).toHaveTextContent('No national ideological label or six-axis score');
+  });
+
   it('shows the bounded 2026 Japanese snap election and preserves attribution limits on electoral access', () => {
     window.history.replaceState(null, '', '/#geography?case=japanese-2026-snap-election-and-electoral-access');
     renderAtlas();
@@ -83,7 +94,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(203);
+    expect(cards()).toHaveLength(204);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
