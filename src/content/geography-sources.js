@@ -7163,6 +7163,51 @@ const sources = [
     description: 'Official constitutional adjudication record documenting the Court’s decision to uphold the impeachment and remove President Yoon Suk-yeol. It anchors the bounded 2024–2025 constitutional crisis while not substituting for the full Korean-language judgment, legislative record, military record or social history.',
   },
   {
+    id: 'southKoreaKoreaNetElectionTransfer2025',
+    label: 'Korea.net — Lee Jae Myung officially sworn in as nation’s 21st president (4 June 2025)',
+    url: 'https://www.korea.net/NewsFocus/policies/view?articleId=272644',
+    note: 'Official Republic of Korea government news service account consulted for the NEC confirmation, vote share and immediate commencement of Lee Jae-myung’s term after the snap election. This is an executive communications account of the result, not an election-observation assessment or evidence of voter motives. No article text or image is reproduced.',
+    accessDate: '2026-09-25', creators: ['Lee Jihae'], institution: 'Korea.net / Korean Culture and Information Service, Ministry of Culture, Sports and Tourism', publicationDate: '2025-06-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Korean', 'Japanese', 'Chinese', 'Arabic', 'Spanish', 'French', 'German', 'Russian', 'Vietnamese', 'Indonesian'],
+    sourceType: 'official government news account of election certification and presidential succession', identifiers: { electionDate: '2025-06-03', certificationDate: '2025-06-04', reportedVoteShare: '49.42%' },
+    description: 'Official government reporting attributes the result to the National Election Commission and states that Lee began his five-year term immediately after certification on 4 June 2025. It anchors the formal transfer after the vacancy without serving as an independent election assessment or a mandate/ideology interpretation.'
+  },
+  {
+    id: 'southKoreaYonhapElectionOutcome2025',
+    label: 'Yonhap News Agency — Lee elected president after martial-law turmoil (3 June 2025)',
+    url: 'https://en.yna.co.kr/view/AEN20250602004961315',
+    note: 'Independent Korean news-agency reporting consulted for the final tally, turnout and political context attributed to candidates and parties. Vote totals are reported as the NEC count, not independently recounted or treated as evidence of voter motives, unanimous consent or a uniform ideological mandate. No article wording, photograph or table is reproduced.',
+    accessDate: '2026-09-25', creators: ['Yonhap News Agency'], institution: 'Yonhap News Agency', publicationDate: '2025-06-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent Korean news-agency election report', identifiers: { electionDate: '2025-06-03', NECReportedVoteShare: 'Lee Jae-myung 49.42%; Kim Moon-soo 41.15%', reportedTurnout: '79.4%' },
+    description: 'Reports the NEC-certified snap presidential election outcome and immediate succession, with campaign claims and candidates’ statements attributed. It records a plural contested election result, not a referendum on the constitutional crisis or proof of public consensus.'
+  },
+  {
+    id: 'southKoreaYonhapInsurrectionVerdict2026',
+    label: 'Yonhap News Agency — Ex-President Yoon sentenced to life imprisonment over martial-law bid (19 February 2026)',
+    url: 'https://en.yna.co.kr/view/AEN20260219001854315?section=national%2Fnational',
+    note: 'Independent report of the Seoul Central District Court’s first-instance verdict and the court’s stated reasoning, as conveyed by the presiding judge during the proceeding. The ruling is attributed to the trial court; the report is not the judgment itself, a final appellate disposition or a complete criminal case file. No court or article wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Lee Haye-ah', 'Yonhap News Agency'], institution: 'Yonhap News Agency', publicationDate: '2026-02-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent report of a criminal court’s first-instance judgment', identifiers: { court: 'Seoul Central District Court', offense: 'leading an insurrection through the 3 December 2024 martial-law bid', disposition: 'conviction and life sentence at first instance' },
+    description: 'Reports the first-instance conviction and life sentence, identifying deployment of troops to the National Assembly and the court’s view of attempted legislative paralysis as central to its judgment. The judgment remained subject to appeal; this record does not establish the final criminal disposition.'
+  },
+  {
+    id: 'southKoreaYonhapInsurrectionAppeal2026',
+    label: 'Yonhap News Agency — Court begins former President Yoon’s insurrection appeals trial (27 April 2026)',
+    url: 'https://en.yna.co.kr/view/AEN20260427000952315',
+    note: 'Independent report on the first preliminary hearing at Seoul High Court after both Yoon and the special-counsel team appealed the 19 February first-instance ruling. It documents that appellate review had begun, not its eventual result or the merits of either appeal. No article wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Yonhap News Agency'], institution: 'Yonhap News Agency', publicationDate: '2026-04-27', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent report of appellate proceedings', identifiers: { court: 'Seoul High Court', proceeding: 'first preliminary hearing', eventDate: '2026-04-27', appealStatus: 'appeals by both Yoon and special counsel' },
+    description: 'Reports commencement of appellate review of the first-instance insurrection verdict. A preliminary hearing set procedure and scheduling; it is not a final appeal judgment.'
+  },
+  {
+    id: 'southKoreaApAppealStatusSeptember2026',
+    label: 'Kim Tong-hyung / Associated Press — South Korean appeals court reduces former first lady’s sentence over luxury gifts and favors (22 September 2026)',
+    url: 'https://apnews.com/article/south-korea-yoon-kim-keon-hee-gifts-5deeb100f04cbcbff18e53fa659a4ff',
+    note: 'Contemporary AP report primarily about a separate appeal involving Kim Keon Hee. This case cites it only for its brief status statement that Yoon had appealed his life sentence and remained in multiple proceedings; it is not evidence about the merits of the insurrection appeal or Kim Keon Hee’s separate judgment. No article wording or photograph is reproduced.',
+    accessDate: '2026-09-25', creators: ['Kim Tong-hyung', 'Associated Press'], institution: 'Associated Press', publicationDate: '2026-09-22', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'independent international news report with a dated appellate-status update', identifiers: { date: '2026-09-22', status: 'Yoon had appealed the first-instance life sentence; separate proceedings remain' },
+    description: 'Provides a late-September snapshot that Yoon had appealed the insurrection sentence. The report concerns separate legal proceedings and is not used to infer the outcome or merits of the main appeal.'
+  },
+  {
     id: 'southKoreaImDemocratization2020',
     label: 'Hyug Baeg Im — Democratization and Democracy in South Korea, 1960–Present (2020)',
     url: 'https://link.springer.com/book/10.1007/978-981-15-3703-5',
