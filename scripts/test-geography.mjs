@@ -65,6 +65,11 @@ assert.ok(nasserEgypt?.claim.includes('or a causal estimate of the reform alone'
 assert.ok(nasserEgypt?.limitation.includes('nor is the September 1952 agrarian decree attributed to Nasser personally'));
 assert.ok(nasserEgypt?.limitation.includes('Enforcement, tenancy/cooperative practice'));
 assert.ok(nasserEgypt?.sourceIds.includes('egyptAgrarianReformDecree1781952'));
+assert.ok(nasserEgypt?.sourceIds.includes('egyptAgrarianReformLawsArabic1954'));
+assert.ok(nasserEgypt?.claim.includes('direct reading of Article 1 in the Arabic 1954 statutory compilation confirms'));
+assert.ok(nasserEgypt?.claim.includes('formally set a 200-feddan agricultural-land ownership ceiling'));
+assert.ok(nasserEgypt?.claim.includes('appears to give a different issue date'));
+assert.ok(nasserEgypt?.limitation.includes('1954 Arabic compilation was checked at its title page and the opening pages'));
 assert.ok(nasserEgypt?.sourceIds.includes('saabAgrarianReformEgypt1967'));
 assert.ok(nasserEgypt?.sourceIds.includes('abdelMalekAgrarianReformEgypt1962'));
 assert.ok(nasserEgypt?.sourceIds.includes('ahramAgrarianReform74FarmersDay2026'));
