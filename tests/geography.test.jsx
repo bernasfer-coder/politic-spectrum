@@ -84,6 +84,16 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('Democratic confederalism');
   });
 
+  it('shows the updated Uganda election result and distinguishes a withdrawn petition from a merits ruling', () => {
+    window.history.replaceState(null, '', '/#geography?case=ugandan-late-museveni-order-and-2026-electoral-contestation');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('529-seat elected Parliament: NRM 371');
+    expect(cards()[0]).toHaveTextContent('closed procedurally, not tried to a merits judgment');
+    expect(cards()[0]).toHaveTextContent('The EAC record is preliminary');
+    expect(cards()[0]).toHaveTextContent('accessible here only through its abstract/extract');
+  });
+
   it('shows the bounded Bolivia 2025 election case and its documented evidence gap', async () => {
     const user = userEvent.setup();
     renderAtlas();

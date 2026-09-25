@@ -401,7 +401,17 @@ assert.ok(filterGeographyCases({ country: 'tanzania' }).some(({ id }) => id === 
 assert.equal(filterGeographyCases({ country: 'kenya' })[0].id, 'kenyan-postcolonial-constitutional-and-devolution-transition');
 assert.ok(filterGeographyCases({ country: 'kenya' }).some(({ id }) => id === 'kenyan-ruto-era-succession-and-finance-bill-protest-order'));
 assert.equal(filterGeographyCases({ country: 'uganda' })[0].id, 'ugandan-postcolonial-constitutional-and-movement-transition');
-assert.ok(filterGeographyCases({ country: 'uganda' }).some(({ id }) => id === 'ugandan-late-museveni-order-and-2026-electoral-contestation'));
+const uganda2026Case = filterGeographyCases({ country: 'uganda' }).find(({ id }) => id === 'ugandan-late-museveni-order-and-2026-electoral-contestation');
+assert.ok(uganda2026Case);
+assert.equal(uganda2026Case?.reviewedAt, '2026-09-25');
+assert.ok(uganda2026Case?.claim.includes('529-seat elected Parliament: NRM 371'));
+assert.ok(uganda2026Case?.claim.includes('procedurally, not tried to a merits judgment'));
+assert.ok(uganda2026Case?.claim.includes('publisher page exposes only an extract'));
+assert.ok(uganda2026Case?.limitation.includes('The EAC record is preliminary'));
+assert.ok(uganda2026Case?.limitation.includes('No population consensus, voter-motive claim, election-wide legitimacy verdict or numerical six-axis score is inferred'));
+assert.ok(uganda2026Case?.sourceIds.includes('ugandaECParliamentaryReturns2026'));
+assert.ok(uganda2026Case?.sourceIds.includes('ugandaKasibanteSupremeCourtJudgment2026'));
+assert.ok(uganda2026Case?.sourceIds.includes('ugandaAfricanAffairsSuccessionBriefing2026'));
 assert.ok(filterGeographyCases({ country: 'map-862' }).some(({ id }) => id === 'venezuelan-post-2024-election-repression-and-2025-electoral-contestation'));
 assert.equal(filterGeographyCases({ country: 'rwanda' })[0].id, 'rwandan-postgenocide-constitutional-developmental-order');
 assert.equal(filterGeographyCases({ country: 'senegal' })[0].id, 'senegalese-postcolonial-constitutional-and-democratic-transition');

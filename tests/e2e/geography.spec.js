@@ -552,3 +552,14 @@ test('Zambia locator opens the 2026 election and keeps the result-verification a
   await expect(zambia).toHaveAttribute('aria-pressed', 'true');
 });
 
+test('Uganda 2026 election distinguishes official parliamentary returns and a withdrawn presidential petition', async ({ page }) => {
+  await page.goto('/#geography?case=ugandan-late-museveni-order-and-2026-electoral-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('529-seat elected Parliament: NRM 371');
+  await expect(card).toContainText('closed procedurally, not tried to a merits judgment');
+  await expect(card).toContainText('The EAC record is preliminary');
+  await expect(card).toContainText('accessible here only through its abstract/extract');
+  await expect(card).toContainText('numerical six-axis score is inferred');
+});
+
