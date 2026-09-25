@@ -7,8 +7,18 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 183);
-assert.equal(GEOGRAPHY_LABELS.length, 181);
+assert.equal(GEOGRAPHY_CASES.length, 184);
+assert.equal(GEOGRAPHY_LABELS.length, 182);
+const somaliaTransition = GEOGRAPHY_CASES.find(({ id }) => id === 'somalia-2026-constitutional-transition-and-electoral-dispute');
+assert.equal(somaliaTransition?.datePrecision, 'snapshot');
+assert.equal(somaliaTransition?.relationship, 'implemented');
+assert.ok(somaliaTransition?.claim.includes('Article 195'));
+assert.ok(somaliaTransition?.limitation.includes('official English version'));
+assert.ok(somaliaTransition?.limitation.includes('No six-axis score') || somaliaTransition?.limitation.includes('six-axis score'));
+assert.ok(somaliaTransition?.sourceIds.includes('somaliaConstitution2026Senate'));
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'somalia-constitutional-transition-2026')?.countryIds[0], 'map-706');
+assert.equal(MAP_COUNTRIES_BY_ID['map-706']?.name, 'Somalia');
+assert.ok(MAP_COUNTRIES_BY_ID['map-706']?.path, 'Somalia should use its own world-map country geometry');
 const haitiTransition2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'haitian-2026-post-council-electoral-transition');
 assert.equal(haitiTransition2026?.datePrecision, 'snapshot');
 assert.equal(haitiTransition2026?.confidence, 'medium');
@@ -270,7 +280,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 157, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 158, 'the atlas should expose all dated post-2000 implemented cases');
 assert.equal(filterGeographyCases({ country: 'map-188' })[0].id, 'costa-rican-2026-national-election-and-transfer-of-office');
 assert.equal(filterGeographyCases({ country: 'map-222' })[0].id, 'el-salvador-2025-presidential-reelection-and-constitutional-reform');
 assert.equal(filterGeographyCases({ country: 'map-320' })[0].id, 'guatemala-2026-constitutional-court-renewal');
@@ -322,4 +332,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 183 dated cases, 181 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 184 dated cases, 182 unscored labels, citations, boundaries, filters and share URLs.');

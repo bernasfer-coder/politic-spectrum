@@ -10,6 +10,8 @@ The public interface provides continent, region, country-locator, specific-place
 
 Ukraine’s 2022–2026 entry is bounded to constitutional continuity, martial-law election restrictions and election-readiness issues through 25 September 2026. It cites the Constitution and latest located martial-law extension, while distinguishing the European Commission’s earlier institutional assessment from current law and using three publisher-record-only scholarly contexts. It is not a country score or a comprehensive account of wartime politics; direct judicial interpretations and up-to-date independent monitoring remain research gaps.
 
+Somalia’s 2026 entry is bounded to parliamentary adoption and presidential signature of the constitutional text, its Article 195 referendum procedure and the unresolved election-transition context through 25 September. The Federal Government’s characterization is distinguished from the Somali-language text’s referendum provisions and ConstitutionNet’s legal analysis; Article 195 is editorially paraphrased and lacks independent legal translation. Two earlier book-length perspectives provide context only, and are explicitly publisher-record/description-only. No referendum outcome, nationwide consensus, legal ruling, country ideology or six-axis score is inferred; further Somali-language legal review and independently sourced status evidence remain gaps.
+
 ## Evidence model
 
 `src/content/geography.js` holds independent place, label and case records. Each case has one primary relationship: developed, advocated, experimented, implemented, or influenced. Further meanings require another independently sourced case rather than a loose tag on a country.
