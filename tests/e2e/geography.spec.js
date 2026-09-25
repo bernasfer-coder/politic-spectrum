@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(208);
+  await expect(page.locator('.geo-card')).toHaveCount(209);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -540,7 +540,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(208);
+  await expect(page.locator('.geo-card')).toHaveCount(209);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -552,6 +552,22 @@ test('atlas cards and timeline are accessible and fit the viewport', async ({ pa
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
   const timelineResults = await new AxeBuilder({ page }).analyze();
   expect(timelineResults.violations.filter(({ impact }) => ['critical', 'serious'].includes(impact))).toEqual([]);
+});
+
+test('Russia 2026 Duma case keeps preliminary returns, OSCE non-invitation and occupied-territory context distinct', async ({ page }) => {
+  await page.goto('/#geography?case=russian-2026-state-duma-election-and-observation-dispute');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('18–25 September 2026');
+  await expect(card).toContainText('349 seats');
+  await expect(card).toContainText('preliminary projection of 355');
+  await expect(card).toContainText('no invitation');
+  await expect(card).toContainText('Resolution ES-11/4');
+  await expect(card).toContainText('no meaningful six-axis profile');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.getByRole('link', { name: /OSCE\/ODIHR/ })).toBeVisible();
+  await expect(card.getByRole('link', { name: /final State Duma results/ })).toBeVisible();
+  await expect(card.getByRole('link', { name: /General Assembly/ })).toBeVisible();
 });
 
 test('Egypt 2025–2026 parliamentary case stays separate and displays attributed evidence limits', async ({ page }) => {

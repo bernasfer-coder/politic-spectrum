@@ -9283,6 +9283,56 @@ const sources = [
     description: 'Edited volume on Treaty principles, tikanga, rangatiratanga, sovereignty, the UN Declaration on the Rights of Indigenous Peoples, mana whenua relationships and Treaty settlements. Its contributors and Māori-centered perspectives widen the contemporary evidence base while remaining distinct from the government bill’s self-description and from a single national consensus.',
   },
   {
+    id: 'russiaRbcDumaFinalResults2026',
+    label: 'RBC — Central Election Commission announces final State Duma results (25 September 2026)',
+    url: 'https://www.rbc.ru/politics/25/09/2026/6ab54ef29a7947ce79cd1aad',
+    note: 'Russian-language contemporaneous report by an RBC correspondent at the Central Election Commission’s announcement. It reports Ella Pamfilova’s final seat totals and stated election context; the CEC’s signed final resolution and full protocol set were not retrieved in this review. No article wording, image or video is reproduced.',
+    accessDate: '2026-09-25', creators: ['RBC', 'Ella Pamfilova'], institution: 'RBC',
+    publicationDate: '2026-09-25', evidenceRole: 'secondary', confidence: 'high', languages: ['Russian'],
+    sourceType: 'Russian-language contemporaneous news report of official final-result announcement', identifiers: { date: '2026-09-25' },
+    description: 'Reports the CEC chair’s announcement of final State Duma seat totals on 25 September 2026, including United Russia’s 349 seats and the breakdown by party-list and single-member districts.'
+  },
+  {
+    id: 'russiaOdihrNoInvitationDuma2026',
+    label: 'OSCE/ODIHR — Russian Federation did not invite observers to 2026 State Duma elections (6 August 2026)',
+    url: 'https://odihr.osce.org/odihr/667020',
+    note: 'Official OSCE/ODIHR and OSCE Parliamentary Assembly statement on the absence of an invitation and unsuccessful pre-election engagement. It establishes the organizations’ own account and commitments framework, not a comprehensive observation finding or a judgment on all voting procedures. No statement wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['OSCE Office for Democratic Institutions and Human Rights', 'OSCE Parliamentary Assembly'], institution: 'OSCE/ODIHR',
+    publicationDate: '2026-08-06', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official international-observation institution statement', identifiers: { date: '2026-08-06' },
+    description: 'Primary evidence of ODIHR and OSCE PA efforts to engage Russian authorities and their statement that Russia did not invite OSCE election observers for the 2026 State Duma elections.'
+  },
+  {
+    id: 'russiaCanadaDumaOccupiedTerritories2026',
+    label: 'Global Affairs Canada — statement on the 2026 State Duma elections and temporarily occupied territories of Ukraine (21 September 2026)',
+    url: 'https://www.canada.ca/en/global-affairs/news/2026/09/statement-by-minister-of-foreign-affairs-on-the-state-duma-elections-in-russia-and-the-temporarily-occupied-territories-of-ukraine.html',
+    note: 'Primary record of the Canadian foreign minister’s official position. Its condemnation and rejection are attributed to Canada and are not presented as a neutral observer verdict or as evidence of a uniform international response. No statement wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Global Affairs Canada', 'Anita Anand'], institution: 'Government of Canada',
+    publicationDate: '2026-09-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official foreign-ministry statement', identifiers: { date: '2026-09-21' },
+    description: 'Primary evidence of Canada’s official rejection of Russia’s voting in Ukraine’s temporarily occupied territories and its account of the election-observation context.'
+  },
+  {
+    id: 'russiaUnTerritorialIntegrityResolution2022',
+    label: 'United Nations General Assembly — Resolution ES-11/4, Territorial integrity of Ukraine (12 October 2022)',
+    url: 'https://docs.un.org/A/RES/ES-11/4',
+    note: 'Primary multilateral legal-political text adopted by the General Assembly. The resolution reaffirms Ukraine’s territorial integrity within internationally recognized borders and rejects the attempted annexations; it is cited for international status context, not as a direct record of the 2026 election. No resolution text is reproduced.',
+    accessDate: '2026-09-25', creators: ['United Nations General Assembly'], institution: 'United Nations',
+    publicationDate: '2022-10-12', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic', 'Chinese', 'English', 'French', 'Russian', 'Spanish'],
+    sourceType: 'United Nations General Assembly resolution', identifiers: { symbol: 'A/RES/ES-11/4' },
+    description: 'Primary source for the General Assembly’s stated position on Ukraine’s sovereignty and the attempted annexation of Donetsk, Kherson, Luhansk and Zaporizhzhia regions.'
+  },
+  {
+    id: 'russiaApDumaElection2026',
+    label: 'Associated Press — Russia’s first wartime State Duma election and preliminary returns (21 September 2026)',
+    url: 'https://apnews.com/article/russia-elections-kremlin-putin-5342c2757623f2e46e94b4c548e94213',
+    note: 'Contemporaneous independent reporting relaying preliminary Central Election Commission figures, reporting on the campaign and documenting attributed assessments. The article explicitly reports a count above 95%; its projected seat totals are not treated as the final certified result. No article wording or photograph is reproduced.',
+    accessDate: '2026-09-25', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-09-21', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent international news report', identifiers: { date: '2026-09-21' },
+    description: 'Contemporaneous reporting on the 18–20 September State Duma election, preliminary results attributed to the Central Election Commission, party-list and single-member outcomes, and voting organized in occupied Ukrainian regions.'
+  },
+  {
     id: 'russiaConstitution1993Official',
     label: 'Constitution of the Russian Federation — adopted 12 December 1993, official English text',
     url: 'https://www.constitution.ru/en/10003000-01.htm',
