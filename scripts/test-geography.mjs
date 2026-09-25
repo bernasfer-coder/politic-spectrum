@@ -486,6 +486,15 @@ assert.ok(uganda2026Case?.sourceIds.includes('ugandaECParliamentaryReturns2026')
 assert.ok(uganda2026Case?.sourceIds.includes('ugandaKasibanteSupremeCourtJudgment2026'));
 assert.ok(uganda2026Case?.sourceIds.includes('ugandaAfricanAffairsSuccessionBriefing2026'));
 assert.ok(filterGeographyCases({ country: 'map-862' }).some(({ id }) => id === 'venezuelan-post-2024-election-repression-and-2025-electoral-contestation'));
+const venezuela2026Case = filterGeographyCases({ country: 'map-862' }).find(({ id }) => id === 'venezuelan-post-2024-election-repression-and-2025-electoral-contestation');
+assert.equal(venezuela2026Case?.endYear, 2026);
+assert.equal(venezuela2026Case?.reviewedAt, '2026-09-25');
+assert.ok(venezuela2026Case?.claim.includes('800–1,000 releases'));
+assert.ok(venezuela2026Case?.claim.includes('no date had been set'));
+assert.ok(venezuela2026Case?.limitation.includes('English and Spanish official meeting transcripts differ'));
+assert.ok(venezuela2026Case?.limitation.includes('no new six-axis score'));
+assert.ok(venezuela2026Case?.sourceIds.includes('venezuelaUnFactFindingMission2026'));
+assert.ok(venezuela2026Case?.sourceIds.includes('venezuelaReutersElectionPromise2026'));
 assert.equal(filterGeographyCases({ country: 'rwanda' })[0].id, 'rwandan-postgenocide-constitutional-developmental-order');
 assert.equal(filterGeographyCases({ country: 'senegal' })[0].id, 'senegalese-postcolonial-constitutional-and-democratic-transition');
 assert.equal(filterGeographyCases({ country: 'gambia' })[0].id, 'gambian-postcolonial-constitutional-and-authoritarian-transition');

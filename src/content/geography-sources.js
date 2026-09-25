@@ -8540,6 +8540,24 @@ const sources = [
     description: 'UN human-rights situation report covering civil, political, economic and social rights during the election and post-election period. It supplies a distinct institutional mandate and time window, not a complete account of political legitimacy, electoral results or lived experience.'
   },
   {
+    id: 'venezuelaUnFactFindingMission2026',
+    label: 'United Nations Human Rights Council Independent International Fact-Finding Mission on Venezuela — Report A/HRC/63/57 (2026)',
+    url: 'https://transcripts.un.org/en/hrc/63/18',
+    note: 'The Mission chair’s presentation at the Human Rights Council’s 18 September 2026 interactive dialogue and the UN document record were consulted. The English and Spanish meeting transcripts differ on whether the report’s period ends 31 July or 31 August 2026; this case does not rely on a more precise cutoff. Findings remain those of a mandate-bound investigative mission, not a court judgment. Its estimate of 800–1,000 releases is explicitly uncertain because names and transparent verifiable data were not public. The dialogue also records Venezuela’s objections and other states’ positions. No report prose, translation, table or scan is republished.',
+    accessDate: '2026-09-25', creators: ['United Nations Human Rights Council Independent International Fact-Finding Mission on Venezuela'], institution: 'United Nations Human Rights Council', publicationDate: '2026-09', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'primary international human-rights investigation report and official presentation transcript', identifiers: { symbol: 'A/HRC/63/57', eventDate: '2026-01-03', reportPeriodEnglishTranscript: '2025-09-01–2026-07-31', reportPeriodSpanishTranscript: '2025-09-01–2026-08-31', estimate: '800–1,000 releases; uncertain and contested' },
+    description: 'The Mission’s 2026 account of the January 2026 political rupture and subsequent rights conditions. It reports changes to governing personnel and public activity alongside releases and reduced long-term arbitrary detention, while finding no sufficient indicators of a genuine, sustainable break in repressive structures; claims and uncertainty are attributed to the Mission.'
+  },
+  {
+    id: 'venezuelaReutersElectionPromise2026',
+    label: 'Reuters — “Venezuela’s Rodriguez promises elections in transition to full democracy” (23 September 2026)',
+    url: 'https://www.marketscreener.com/news/venezuela-s-rodriguez-promises-elections-ce785aded880f120',
+    note: 'Reuters reporting republished by MarketScreener, consulted for Delcy Rodríguez’s 23 September UN General Assembly pledge to hold elections, talks with opposition and the absence of a date. The pledge is not evidence that an election was scheduled or held, and the article reports continuing questions about eligibility and institutional independence. No article wording or image is reproduced.',
+    accessDate: '2026-09-25', creators: ['Anthony Esposito', 'Marianna Parraga', 'Vivian Sequera', 'Deisy Buitrago', 'Reuters'], institution: 'Reuters (republished by MarketScreener)', publicationDate: '2026-09-23', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'contemporaneous wire-service reporting', identifiers: { statementDate: '2026-09-23', electionDate: 'not announced in the report', originalPublisher: 'Reuters' },
+    description: 'Reports the interim president’s public promise of future elections, claimed dialogue and unresolved timetable. A statement of intent is distinguished from an official electoral calendar, institutional reform or implemented transition.'
+  },
+  {
     id: 'venezuelaHawkinsChavismo2010',
     label: 'Kirk A. Hawkins — Venezuela’s Chavismo and Populism in Comparative Perspective (2010)',
     url: 'https://www.cambridge.org/core/books/venezuelas-chavismo-and-populism-in-comparative-perspective/775976318AED6CC8A85E50F0806736D2',

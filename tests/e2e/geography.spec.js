@@ -602,3 +602,14 @@ test('Myanmar 2025–2026 election and government transition distinguish officia
   await expect(card).toContainText('event-specific book-length scholarship');
 });
 
+test('Venezuela 2026 transition keeps the UN findings attributed and the promised election unscheduled', async ({ page }) => {
+  await page.goto('/#geography?case=venezuelan-post-2024-election-repression-and-2025-electoral-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('genuine, sustainable break');
+  await expect(card).toContainText('800–1,000 releases');
+  await expect(card).toContainText('no date had been set');
+  await expect(card).toContainText('English and Spanish official meeting transcripts differ');
+  await expect(card).toContainText('no new six-axis score');
+});
+
