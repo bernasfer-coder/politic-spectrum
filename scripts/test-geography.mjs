@@ -9,6 +9,15 @@ const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entr
 assert.deepEqual(validateGeography(context), []);
 assert.equal(GEOGRAPHY_CASES.length, 205);
 assert.equal(GEOGRAPHY_LABELS.length, 203);
+const farabiBaghdad = GEOGRAPHY_CASES.find(({ id }) => id === 'farabi-baghdad');
+assert.equal(farabiBaghdad?.datePrecision, 'approximate');
+assert.equal(farabiBaghdad?.confidence, 'medium');
+assert.ok(farabiBaghdad?.claim.includes('remained there until late 942'));
+assert.ok(farabiBaghdad?.claim.includes('completion in Damascus by September 943'));
+assert.ok(farabiBaghdad?.limitation.includes('not a fresh collation of manuscripts'));
+assert.ok(farabiBaghdad?.limitation.includes('No ideological score or six-axis placement'));
+assert.ok(farabiBaghdad?.sourceIds.includes('gutasFarabiBiographyIranica'));
+assert.ok(farabiBaghdad?.sourceIds.includes('walzerFarabiPerfectState'));
 const albaniaElection = GEOGRAPHY_CASES.find(({ id }) => id === 'albania-2025-parliamentary-election-and-diaspora-vote');
 assert.equal(albaniaElection?.confidence, 'medium');
 assert.equal(albaniaElection?.startYear, 2025);
