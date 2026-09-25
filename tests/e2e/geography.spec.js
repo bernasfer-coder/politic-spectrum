@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(178);
+  await expect(page.locator('.geo-card')).toHaveCount(179);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -318,7 +318,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(178);
+  await expect(page.locator('.geo-card')).toHaveCount(179);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -349,5 +349,15 @@ test('Honduras 2025 election case distinguishes official returns, observation fi
   await expect(card).toContainText('40.26%');
   await expect(card).toContainText('no 2025–26 book-length scholarly treatment');
   await expect(card).toContainText('CESPAD');
+});
+
+test('Costa Rica 2026 case separates certified election results and institutional observations', async ({ page }) => {
+  await page.goto('/#geography?case=costa-rican-2026-national-election-and-transfer-of-office');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1,243,141');
+  await expect(card).toContainText('31 seats');
+  await expect(card).toContainText('does not measure campaign equality');
+  await expect(card).toContainText('institutional tensions');
 });
 
