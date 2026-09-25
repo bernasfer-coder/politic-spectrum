@@ -9571,6 +9571,46 @@ const sources = [
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
   {
+    id: 'kenyaUclProtestingHistory2026',
+    label: 'Henrietta L. Moore, Alex Boothroyd, Nikolaos Tzivanakis and Saffron Woodcraft — Protesting a History: Gen Z, the 2024–25 Uprisings, and Kenya’s New Political Consciousness (2026)',
+    url: 'https://discovery.ucl.ac.uk/id/eprint/10227555/',
+    note: 'UCL Institute for Global Prosperity working/discussion paper, published 2026; consulted in its repository record and abstract. It draws on a survey of 918 respondents aged 18–28 in Elgeyo-Marakwet and Nandi Counties and situates the protests in Kenyan state scholarship. It is not a book-length monograph, and its two-county rural survey cannot represent all Kenyan youth or the whole country. No text, tables or survey data are reproduced.',
+    accessDate: '2026-09-25', creators: ['Henrietta L. Moore', 'Alex Boothroyd', 'Nikolaos Tzivanakis', 'Saffron Woodcraft'], institution: 'UCL Institute for Global Prosperity',
+    publicationDate: '2026-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'open-access scholarly working/discussion paper', identifiers: { isbn: '9781913041717', repository: 'UCL Discovery 10227555', researchMethod: 'survey of 918 respondents aged 18–28 in Elgeyo-Marakwet and Nandi Counties' },
+    description: 'Scholarly working paper situating the 2024–2025 protests in the history of the Kenyan state, protest vernacular and digital tactics. Its rural survey reports that 13% of respondents participated, mostly online, and differentiates economic grievances in 2024 from security concerns in 2025; these findings are specific to the surveyed counties and sample, not a national prevalence estimate.'
+  },
+  {
+    id: 'kenyaFreedomIndexHalfYear2026',
+    label: 'Odipo Dev and Amnesty International Kenya — Kenya Freedom Index: Half-Year 2026 Report (11 August 2026)',
+    url: 'https://www.amnestykenya.org/odipodev-and-aik-release-the-freedom-index-half-year-2026-report-exposing-rising-protests-in-kenya-and-continued-use-of-lethal-force-and-deepening-rights-crisis/',
+    note: 'Joint human-rights research release consulted for its documented protest-event totals, citations to IPOA, KNCHR and Amnesty Kenya, and explicit data-collection note. Its index combines automated and manual searches of media/YouTube with human review and deduplication; it is a monitoring dataset, not an official census or a complete denominator. Death, injury and arrest counts are attributed to the named agencies, whose time windows and totals differ. No report wording, table or dataset is reproduced.',
+    accessDate: '2026-09-25', creators: ['Odipo Dev', 'Amnesty International Kenya'], institution: 'Odipo Dev and Amnesty International Kenya',
+    publicationDate: '2026-08-11', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'joint civil-society protest-monitoring report and dataset', identifiers: { coverage: '2025-01 to 2026-06', events: '1,292 reported protest events', methodology: 'automated and manual media/YouTube search; human review and deduplication' },
+    description: 'A monitoring dataset reports 1,292 protest events from January 2025 to June 2026 and summarizes agency-sourced fatalities, injuries, arrests and police dispersals. These are attributed and method-bound recorded events, not a complete count of all protests or violations; the report itself warns that the figures may not capture their full scale.'
+  },
+  {
+    id: 'kenyaHrwWorldReport2026',
+    label: 'Human Rights Watch — World Report 2026: Kenya',
+    url: 'https://www.hrw.org/world-report/2026/country-chapters/kenya',
+    note: 'Human Rights Watch’s annual country chapter consulted for its attributed reporting on the 2025 protest cycle, media restrictions, allegations against security forces, missing people and accountability. HRW is an independent advocacy organization, not a court or official investigative authority; allegations and organization-attributed totals remain attributed. No report wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'annual human-rights monitoring report', identifiers: { edition: 'World Report 2026', country: 'Kenya' },
+    description: 'Annual review of 2025 civic space, security-force abuses, protest policing, media restrictions and accountability. It summarizes allegations and reports from media and rights organizations; it does not establish individual criminal responsibility or a complete national incident count.'
+  },
+  {
+    id: 'kenyaApSecondAnniversary2026',
+    label: 'Evelyne Musambi / Associated Press — Hundreds arrested as Kenyans mark the anniversary of deadly protests in 2024 (25 June 2026)',
+    url: 'https://apnews.com/article/1abfae9815508354b31c4eb974f82f19',
+    note: 'Contemporaneous Associated Press reporting from Nairobi on the 25 June 2026 anniversary march, police deployment and arrests, competing government and family accounts of the reparations process, and reported prosecution status. Ministerial arrest figures and attributed statements are not independently verified nationwide totals; selected family testimony is illustrative, not representative. No article wording or image is reproduced.',
+    accessDate: '2026-09-25', creators: ['Evelyne Musambi', 'Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-06-25', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'independent international news report', identifiers: { date: '2026-06-25', place: 'Nairobi and other Kenyan towns' },
+    description: 'Reports the second-anniversary march and demands for compensation and accountability, 355 arrests attributed to the Interior Minister, police use of tear gas and barriers, and different accounts of a government compensation process. It documents the reported event and attributed claims, not the views of all protesters or families.'
+  },
+  {
     id: 'drcUnsgReportS2025590',
     label: 'United Nations Secretary-General — MONUSCO report S/2025/590 (19 September 2025)',
     url: 'https://monusco.unmissions.org/sites/default/files/unsg_report-s_2025_590-_n2524000.pdf',
