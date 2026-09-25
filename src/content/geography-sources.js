@@ -9780,6 +9780,69 @@ sources.push(
     publicationDate: '2026-09-22', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
     sourceType: 'political party leader’s statement',
     description: 'A first-party account of the DA leader’s reasons for remaining in the GNU and his party’s critique of its coalition partner. It establishes the DA’s public position on that date, not broad public opinion or an independent evaluation.'
+  },
+  {
+    id: 'canadaSupremeCourtTerrebonne2026',
+    label: 'Supreme Court of Canada — Terrebonne election appeal, 2026 SCC 31',
+    url: 'https://decisions.scc-csc.ca/scc-csc/scc-csc/en/21377/1/document.do',
+    note: 'Supreme Court reasons and official case-in-brief consulted for the annulment of the 2025 Terrebonne return. The decision concerns one electoral district and a one-vote margin; it is not a ruling invalidating the national election.',
+    accessDate: '2026-09-25', creators: ['Supreme Court of Canada'], institution: 'Supreme Court of Canada', publicationDate: '2026-09-18', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'Supreme Court judgment', identifiers: { neutralCitation: '2026 SCC 31', decisionDate: '2026-09-18' },
+    description: 'Reasons in the Terrebonne federal-election appeal. The Court set aside the one-vote 2025 result after an Elections Canada employee used an incorrect postal code on prepaid return envelopes and one ballot was not counted; the decision is bounded to that riding.'
+  },
+  {
+    id: 'canadaNunavikElectionInquiry2025',
+    label: 'Elections Canada — Voting services in Nunavik during the 45th general election: fact-finding inquiry (October 2025)',
+    url: 'https://elections.ca/content.aspx?dir=pas/45ge/nun&document=index&lang=e&section=ele',
+    note: 'Official fact-finding inquiry consulted for service-access findings in the 14 Nunavik northern villages. The report itself distinguishes an inquiry from an audit; findings are not generalized to other regions or used as a nationwide fairness judgment.',
+    accessDate: '2026-09-25', creators: ['Chief Planning and Audit Officer Branch, Internal Audit Division'], institution: 'Elections Canada', publicationDate: '2025-10', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Ungavamiutitut', 'Tasiujaqjuamiutitut'],
+    sourceType: 'official election-administration fact-finding inquiry', identifiers: { scope: '14 northern villages in Nunavik', complaints: '362' },
+    description: 'The inquiry found that planning, outreach and oversight weaknesses significantly hindered federal voting services in Nunavik and that some electors were denied the opportunity to vote or faced major barriers. Its defined regional scope and stated fact-finding limitations remain explicit.'
+  },
+  {
+    id: 'canadaByElectionsApril2026',
+    label: 'Elections Canada — By-elections, 13 April 2026, official results',
+    url: 'https://www.elections.ca/content.aspx?dir=pas/2026/apr13/enr&document=index&lang=e&section=ele',
+    note: 'Official validated results consulted for the three by-elections, including the rerun in Terrebonne. Seat wins and vote totals are reported as local results, not as evidence of national opinion or uniform political motivations.',
+    accessDate: '2026-09-25', creators: ['Elections Canada'], institution: 'Elections Canada', publicationDate: '2026-04-13', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'official by-election results', identifiers: { electionDate: '2026-04-13', ridings: 'Terrebonne; Scarborough Southwest; University–Rosedale' },
+    description: 'Official results for three federal by-elections, including the Terrebonne rerun after judicial annulment. The results document local returns and do not by themselves establish subsequent House membership after later elections or party changes.'
+  },
+  {
+    id: 'canadaByElectionsAugust2026',
+    label: 'Elections Canada — By-elections, 31 August 2026, official results',
+    url: 'https://enr.elections.ca/ElectoralDistricts.aspx?ed=2318&lang=e',
+    note: 'Official election-night/validated-result pages consulted for the 31 August by-elections. This source supports the district-level results only; it is not used as a current House party-standing source or as evidence of voter motivation.',
+    accessDate: '2026-09-25', creators: ['Elections Canada'], institution: 'Elections Canada', publicationDate: '2026-08-31', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'official by-election results', identifiers: { electionDate: '2026-08-31', ridings: 'Three federal electoral districts' },
+    description: 'Official results for three federal by-elections held on 31 August 2026. They establish local winners, not a uniform national shift or public motivation.'
+  },
+  {
+    id: 'canadaElectionBook2025PammettDornan',
+    label: 'Jon H. Pammett and Christopher Dornan, eds. — The Canadian Federal Election of 2025 (publisher listing, 2026)',
+    url: 'https://utpdistribution.com/9780228028758/the-canadian-federal-election-of-2025/',
+    note: 'McGill-Queen’s University Press distribution/publisher listing consulted for title, editors, projected publication date and extent only. The listing still marked the book not yet published/pre-order at consultation; its full text and scholarly arguments were not consulted and no claims are attributed to it.',
+    accessDate: '2026-09-25', creators: ['Jon H. Pammett, editor', 'Christopher Dornan, editor'], institution: 'McGill-Queen’s University Press', publicationDate: '2026-09-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'forthcoming edited book on a federal election', identifiers: { isbn: '9780228028758', pages: '320', status: 'publisher listing marked not yet published/pre-order' },
+    description: 'A forthcoming event-specific edited volume listing on campaign strategy, media, polling, disinformation, and voting behaviour. Metadata demonstrates that book-length analysis is appearing, but the book was not available for consultation and is not used as substantive evidence.'
+  },
+  {
+    id: 'canadaPekerConservativePopulistTurn2026',
+    label: 'Güven Peker — “A Right-Wing Populist Turn in the Conservative Party of Canada? Continuities and Ruptures Under the Leadership of Pierre Poilievre (2022–2025)”',
+    url: 'https://onlinelibrary.wiley.com/doi/full/10.1111/cars.70021',
+    note: 'Peer-reviewed article consulted for an attributed, actor-bounded analysis of Conservative Party leadership discourse through the 2025 campaign. It does not classify every Conservative, voter or the election as a whole.',
+    accessDate: '2026-09-25', creators: ['Güven Peker'], institution: 'Canadian Review of Sociology', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed journal article', identifiers: { doi: '10.1111/cars.70021' },
+    description: 'A multidimensional analysis of Pierre Poilievre’s political discourse and Conservative Party change across 2022–2025, treating populism as an analytical concept rather than a self-declared identity. The study is limited to its named actor and evidence window.'
+  },
+  {
+    id: 'canadaHarellEtAlElectionWorkingPaper2026',
+    label: 'Alison Harell, Lewis Krashinsky, Daniel Rubenson, and Laura Stephenson — “External Shocks and Internal Change: Explaining the Unlikely Results of the 2025 Canadian Federal Election” (working paper, 2026)',
+    url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7314480',
+    note: 'Authors’ working-paper record consulted and identified as a preprint, not peer-reviewed publication. Its survey-based interpretation is attributed as a provisional scholarly analysis and is not treated as settled voter motivation.',
+    accessDate: '2026-09-25', creators: ['Alison Harell', 'Lewis Krashinsky', 'Daniel Rubenson', 'Laura Stephenson'], institution: 'SSRN', publicationDate: '2026-08-03', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'survey-based political science working paper', identifiers: { ssrn: '7314480', status: 'preprint / not peer reviewed in this review' },
+    description: 'A Canada Election Study-based working paper interpreting issue salience, identity and external shocks in the 2025 result. Its explanations remain attributed and provisional; the election returns themselves do not disclose individual voter motives.'
   }
 );
 
