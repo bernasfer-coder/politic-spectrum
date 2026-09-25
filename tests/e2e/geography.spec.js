@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(200);
+  await expect(page.locator('.geo-card')).toHaveCount(201);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -460,7 +460,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(200);
+  await expect(page.locator('.geo-card')).toHaveCount(201);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -622,5 +622,17 @@ test('Oman 2026 decrees document cabinet structure without inferring succession 
   await expect(card).toContainText('not independently collated');
   await expect(card).toContainText('No inference about succession');
   await expect(card).toContainText('no score or coordinate has been added');
+});
+
+test('South Sudan transition distinguishes enacted-law reporting from dissolution announcement', async ({ page }) => {
+  await page.goto('/#geography?case=south-sudan-2018-agreement-and-2026-electoral-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('R-ARCSS');
+  await expect(card).toContainText('continuing fighting');
+  await expect(card).toContainText('enacted text or Gazette publication was not located');
+  await expect(card).toContainText('unresolved distinction');
+  await expect(card).toContainText('does not warrant a single ideological label or six-axis placement');
+  await expect(card).toContainText('no six-axis score is inferred');
 });
 
