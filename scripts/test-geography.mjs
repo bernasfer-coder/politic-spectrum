@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 207);
-assert.equal(GEOGRAPHY_LABELS.length, 205);
+assert.equal(GEOGRAPHY_CASES.length, 208);
+assert.equal(GEOGRAPHY_LABELS.length, 206);
 const farabiBaghdad = GEOGRAPHY_CASES.find(({ id }) => id === 'farabi-baghdad');
 assert.equal(farabiBaghdad?.datePrecision, 'approximate');
 assert.equal(farabiBaghdad?.confidence, 'medium');
@@ -585,6 +585,17 @@ assert.match(libya2026?.limitation ?? '', /does not establish the High Council o
 assert.ok(libya2026?.sourceIds.includes('libyaSmallerConveningFollowup2026'));
 assert.equal(filterGeographyCases({ country: 'morocco' })[0].id, 'moroccan-constitutional-monarchical-reform-transition');
 assert.ok(filterGeographyCases({ country: 'morocco' }).some(({ id }) => id === 'moroccan-post-2021-coalition-and-social-protection-horizon'));
+const moroccoElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'moroccan-2026-legislative-election-and-preliminary-observation');
+assert.equal(moroccoElection2026?.datePrecision, 'snapshot');
+assert.equal(moroccoElection2026?.reviewedAt, '2026-09-25');
+assert.match(moroccoElection2026?.claim ?? '', /PAM 97 seats, RNI 66, Istiqlal 65 and PJD 54/);
+assert.match(moroccoElection2026?.claim ?? '', /38\.08%.*38\.02%/);
+assert.match(moroccoElection2026?.limitation ?? '', /original full CNDH report was not retrieved/);
+assert.match(moroccoElection2026?.limitation ?? '', /event-specific book-level scholarship is unavailable/);
+assert.ok(moroccoElection2026?.sourceIds.includes('moroccoCndhPreliminary2026LeDesk'));
+assert.ok(moroccoElection2026?.sourceIds.includes('hibouTozyWeavingPoliticalTimeMorocco2025'));
+assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === moroccoElection2026?.labelId)));
+assert.ok(filterGeographyCases({ country: 'morocco' }).some(({ id }) => id === moroccoElection2026?.id));
 assert.equal(filterGeographyCases({ country: 'vietnam' })[0].id, 'vietnamese-socialist-constitutional-doi-moi-transition');
 assert.equal(filterGeographyCases({ country: 'map-418' })[0].id, 'lao-revolutionary-socialist-and-postsocialist-order');
 assert.equal(filterGeographyCases({ country: 'map-104' })[0].id, 'myanmar-constitutional-military-and-transition-order');
@@ -728,7 +739,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 179, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 180, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('djibouti-2025-amendment-and-2026-presidential-election'));
 assert.ok(implementedPost2000.includes('albania-2025-parliamentary-election-and-diaspora-vote'));
 assert.equal(filterGeographyCases({ country: 'map-188' })[0].id, 'costa-rican-2026-national-election-and-transfer-of-office');

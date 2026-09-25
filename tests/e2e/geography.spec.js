@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(207);
+  await expect(page.locator('.geo-card')).toHaveCount(208);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -54,6 +54,21 @@ test('Iran case distinguishes official protest tolls, UN findings and evidence l
   await expect(reportLink).toBeVisible();
   await reportLink.click();
   await expect(page).toHaveURL(/#bibliography\/research-iranFactFindingMissionHRC6361-2026$/);
+});
+
+test('Morocco 2026 election snapshot preserves provisional results, turnout discrepancy and CNDH limits', async ({ page }) => {
+  await page.goto('/#geography?case=moroccan-2026-legislative-election-and-preliminary-observation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('PAM 97 seats, RNI 66, Istiqlal 65 and PJD 54');
+  await expect(card).toContainText('38.08%');
+  await expect(card).toContainText('38.02%');
+  await expect(card).toContainText('results remained provisional');
+  await expect(card).toContainText('No claim is made about Morocco');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href="#bibliography/research-moroccoInteriorLegislativeResults2026"]')).toBeVisible();
+  await expect(card.locator('a[href="#bibliography/research-moroccoCndhPreliminary2026LeDesk"]')).toBeVisible();
+  await expect(card.locator('a[href="#bibliography/research-hibouTozyWeavingPoliticalTimeMorocco2025"]')).toBeVisible();
 });
 
 test('Djibouti case distinguishes provisional observer denominators from the Constitutional Council final result', async ({ page }) => {
@@ -525,7 +540,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(207);
+  await expect(page.locator('.geo-card')).toHaveCount(208);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

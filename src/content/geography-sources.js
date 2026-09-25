@@ -4100,6 +4100,76 @@ const sources = [
     description: 'Official legal and policy record for Morocco’s social-protection expansion project, including the staged extension of compulsory health insurance and related coverage objectives. It documents formal policy commitment and launch, not completed universal coverage or equal outcomes.',
   },
   {
+    id: 'moroccoInteriorLegislativeResults2026',
+    label: 'Morocco Ministry of the Interior — House of Representatives election preliminary results, 23 September 2026',
+    url: 'https://maroc.ma/en/news/2026-legislative-elections-pam-leads-97-seats-according-preliminary-results-minister-interior',
+    note: 'Official government portal’s English rendering of the Interior Minister’s preliminary results briefing, accessed 25 September 2026. The Ministry reports party seat totals and turnout, but separately publishes turnout as 38.02% rather than 38.08% in this results briefing. The portal still marks the result as provisional, with validation and government formation pending; no figures are treated as final or silently harmonized.',
+    accessDate: '2026-09-25', creators: ['Abdelouafi Laftit, Minister of the Interior'], institution: 'Kingdom of Morocco / Maroc.ma',
+    publicationDate: '2026-09-24', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic statement; English institutional rendering'],
+    sourceType: 'official ministerial preliminary election-results briefing', identifiers: { electionDate: '2026-09-23', chamber: 'House of Representatives', status: 'preliminary' },
+    description: 'The Ministry reports preliminary distribution of all 395 House seats: PAM 97, RNI 66, Istiqlal 65, PJD 54, and other parties 113; its own results briefing gives turnout as 38.08%. These are attributed provisional administrative results, not a final court-validated return, election-quality assessment, voter-motive record or proof of representation.'
+  },
+  {
+    id: 'moroccoMinistryTurnout2026',
+    label: 'Morocco Ministry of the Interior — legislative-election turnout announcement, 23 September 2026',
+    url: 'https://maroc.ma/en/news/legislative-elections-voter-turnout-reaches-3802-nationwide',
+    note: 'Official Maroc.ma/MAP rendering of the Interior Ministry’s 23 September turnout statement, accessed 25 September 2026. It reports 38.02% and says counting and validation were still in progress. This conflicts with the separate 24 September preliminary seat-results briefing, which reports 38.08%; retain both source-specific figures pending clarification.',
+    accessDate: '2026-09-25', creators: ['Ministry of the Interior of the Kingdom of Morocco'], institution: 'Kingdom of Morocco / Maroc.ma',
+    publicationDate: '2026-09-24', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic statement; English institutional rendering'],
+    sourceType: 'official election-administration turnout announcement', identifiers: { electionDate: '2026-09-23', turnoutAsReported: '38.02%', status: 'counting and validation in progress' },
+    description: 'The Ministry’s distinct turnout notice reports 38.02% nationwide and describes subsequent transmission and magistrate-chaired count-validation steps. The figure remains discrepant with the 38.08% printed in its preliminary seat-results briefing; neither notice is treated as final certification.'
+  },
+  {
+    id: 'moroccoCndhPreliminary2026LeDesk',
+    label: 'Conseil national des droits de l’Homme — preliminary observation report on Morocco’s 2026 legislative election (reported by Le Desk)',
+    url: 'https://ledesk.ma/live-content/legislatives-2026-participation-religion-argent-ia-le-premier-bilan-du-cndh/',
+    note: 'Le Desk’s French-language report, updated 25 September 2026, summarizes the CNDH chair’s presentation of its preliminary observation report. The original report was not retrieved here; all findings and counts are attributed to the CNDH as reported by Le Desk. The outlet’s copyright notice prohibits republication; this record supports original paraphrase and link only, not quotations or copied data tables.',
+    accessDate: '2026-09-25', creators: ['Conseil national des droits de l’Homme (CNDH), findings as reported by Le Desk'], institution: 'Le Desk / Pulse Media',
+    publicationDate: '2026-09-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'independent news report of a national human-rights institution’s preliminary election-observation findings', identifiers: { electionDate: '2026-09-23', reportStatus: 'preliminary', updated: '2026-09-25' },
+    description: 'Reports the CNDH’s provisional assessment, including its qualified overall account of voting procedures, two referred Tangier polling-station incidents, observer-access difficulties, low participation, gender and youth candidacy gaps, campaign uses of religious symbols, monitored AI-altered content and 93 electoral complaints. These are the CNDH’s sampled observations and press-conference account, not a full census, adjudicated finding or independent verification of every locality.'
+  },
+  {
+    id: 'moroccoCndhPreliminary2026MapRelay',
+    label: 'CNDH preliminary observation findings on the 2026 election — Spanish-language MAP rendering hosted by Maroc.ma',
+    url: 'https://www.maroc.ma/en/news/legislativas-2026-el-respeto-de-la-periodicidad-de-las-elecciones-una-oportunidad-renovada-para',
+    note: 'Maroc.ma page accessed 25 September 2026, carrying a Spanish-language MAP rendering of CNDH chair Amina Bouayach’s 24 September press-conference remarks on the preliminary observation report. This is an institutional news relay, not the original full report or an independent international observer assessment. Original Spanish presentation is not reproduced or translated in this project; paraphrase and link only.',
+    accessDate: '2026-09-25', creators: ['Amina Bouayach / Conseil national des droits de l’Homme (CNDH), relayed by MAP'], institution: 'Maghreb Arabe Presse (MAP), hosted by Kingdom of Morocco / Maroc.ma',
+    publicationDate: '2026-09-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish rendering of institutional briefing'],
+    sourceType: 'state-news-agency relay of a national human-rights institution’s preliminary observation briefing', identifiers: { electionDate: '2026-09-23', reportStatus: 'preliminary' },
+    description: 'Relays CNDH-reported observer coverage, its general description of polling-day conditions, recommendations on participation and access, and calls to publish investigation outcomes. It documents the Council’s attributed account only; sample-based observation cannot establish every polling place’s conditions or voters’ motives.'
+  },
+  {
+    id: 'moroccoApLegislativeElection2026',
+    label: 'Associated Press — Morocco’s 2026 parliamentary election and campaign context',
+    url: 'https://apnews.com/article/morocco-parliamentary-elections-ceuta-genz-046460d3e478cce506e77be052dbaa36',
+    note: 'Associated Press report published 22 September 2026 and accessed 25 September. Interviews and reporting describe issues raised in the campaign and the political context preceding polling; they are not a representative survey, election-observation finding or comprehensive account of Moroccan youth, protesters or voters. No article wording or photograph is reproduced.',
+    accessDate: '2026-09-25', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-09-22', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous independent news report and interviews', identifiers: { electionDate: '2026-09-23' },
+    description: 'Provides pre-election interview and reporting context on employment, living costs and public-service concerns, political trust and the continuing constitutional-monarchical setting. These are attributed campaign concerns and selected interviews, not a national opinion poll or proof of voter motivation.'
+  },
+  {
+    id: 'moroccoReutersLegislativeElection2026',
+    label: 'Ahmed Eljechtimi / Reuters — Morocco’s 2026 parliamentary election (English report syndicated by Internazionale)',
+    url: 'https://www.internazionale.it/ultime-notizie-reuters/2026/09/24/pam-party-wins-most-seats-in-morocco-s-parliamentary-election',
+    note: 'Reuters report by Ahmed Eljechtimi, dated 24 September 2026, accessed 25 September via Internazionale’s Reuters syndication page, which displays the original English report alongside an explicitly machine-translated Italian version. Used for independently attributed election context and analyst statements, not as a final result or representative measure of voter motives. No wording, photograph or licensed Reuters content is republished.',
+    accessDate: '2026-09-25', creators: ['Ahmed Eljechtimi'], institution: 'Reuters (syndicated by Internazionale)',
+    publicationDate: '2026-09-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['English original; Italian machine translation also displayed'],
+    sourceType: 'wire-service election report / syndicated original-language copy', identifiers: { electionDate: '2026-09-23', resultStatus: 'early / provisional' },
+    description: 'Reports preliminary seat totals and attributed analyst commentary on party positioning, monarchy, coalition bargaining and campaign issues. It offers an independent news account, not a comprehensive observer assessment, final certification, nationwide survey or event-specific scholarly analysis.'
+  },
+  {
+    id: 'hibouTozyWeavingPoliticalTimeMorocco2025',
+    label: 'Béatrice Hibou and Mohamed Tozy — Weaving Political Time in Morocco: The Imaginary of the State in the Neoliberal Age (2025)',
+    url: 'https://academic.oup.com/book/61443',
+    note: 'Oxford University Press book record and abstract consulted 25 September 2026. The full monograph was not consulted for this case; description and authorship are attributed to the publisher. No book wording, quotation, figure or chapter content is reproduced. Its broad history and methods offer contextual orientation only, not analysis of the 2026 election.',
+    accessDate: '2026-09-25', creators: ['Béatrice Hibou', 'Mohamed Tozy'], institution: 'Oxford University Press',
+    publicationDate: '2025-05-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English translation from French-language scholarship'],
+    sourceType: 'book-length scholarly political history and sociology of the Moroccan state', identifiers: { printIsbn: '9780197816684', onlineIsbn: '9780197828700', doi: '10.1093/oso/9780197816684.001.0001' },
+    description: 'Publisher describes a comparative study drawing on decades of fieldwork, interviews and primary documentation to analyze changing forms of Moroccan state power, legitimacy and authority from precolonial history to the contemporary neoliberal state. It is a book-level contextual perspective, not a study of the September 2026 election; full-text consultation remains a research gap.'
+  },
+  {
     id: 'millerHistoryModernMorocco2013',
     label: 'Susan Gilson Miller — A History of Modern Morocco (2013)',
     url: 'https://www.cambridge.org/core/books/history-of-modern-morocco/88606965E80CAC57471F2636CAFA885F',
