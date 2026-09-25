@@ -10387,6 +10387,29 @@ sources.push(
   { id: 'guyanaVasciannieElectionObservation2018', label: 'Lisa Ann Vasciannie — International Election Observation in the Commonwealth Caribbean: Race, Aid and Democratization (2018)', url: 'https://link.springer.com/book/10.1007/978-3-319-59069-1', note: 'Palgrave Macmillan/Springer publisher record, overview and table of contents consulted; the full monograph was not independently reviewed. Its Guyana case ends in 2015 and is historical context only, not evidence about the 2025 election. No book text is reproduced.', accessDate: '2026-09-25', creators: ['Lisa Ann Vasciannie'], institution: 'Palgrave Macmillan', publicationDate: '2018', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'book-length study of Caribbean electoral observation', identifiers: { doi: '10.1007/978-3-319-59069-1', hardcoverIsbn: '978-3-319-59068-4', ebookIsbn: '978-3-319-59069-1', paperbackIsbn: '978-3-319-86541-6', pages: 'XI, 224', edition: '1' }, description: 'Scholarly study of international election observation and Caribbean electoral politics, with a Guyana case from 1964–2015 and chapters on Electoral Politics in Guyana and Commonwealth Caribbean observation.' },
 );
 
+sources.push(
+  {
+    id: 'gambiaIecElectoralCalendar2026-2027',
+    label: 'Independent Electoral Commission of The Gambia — Electoral Calendar 2026–2027',
+    url: 'https://iec.gm/electoral-calendar-2026-2027/',
+    note: 'The IEC’s published calendar schedules the presidential poll for 5 December 2026 and lists the statutory notice, voter-registration, revising-court and nomination/campaign windows. It is a dated administrative plan, not evidence that future steps occurred; the nomination and campaign dates differ from a later September briefing reported by Gambia Daily, so the discrepancy is retained rather than harmonized. No calendar table is reproduced.',
+    accessDate: '2026-09-25', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    publicationDate: '2025-10-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral calendar / election-administration record', identifiers: { electionDate: '2026-12-05', calendarCycle: '2026–2027', publicationDate: '2025-10-09' },
+    description: 'Official schedule for supplementary registration and the 2026–2027 electoral cycle, including the presidential election date and statutory milestones. Future dates are planned events, not completed outcomes.'
+  },
+  {
+    id: 'gambiaDailyIecRoadmap2026',
+    label: 'Gambia Daily — IEC outlines roadmap for 2026 presidential election (14 September 2026)',
+    url: 'https://gambiadaily.gov.gm/iec-outlines-roadmap-for-2026-presidential-election/',
+    note: 'Government-owned Gambia Daily’s dated account of IEC Chairman Joseph Colley and Chief Electoral Officer Samboujang Njie’s stakeholder briefing. It reports a 5 December poll and nomination/campaign dates that differ from the IEC website’s published 2026–2027 calendar. This is a secondary report of officials’ remarks, not a replacement official notice; independently accessible revised IEC documentation was not located. Details are attributed and the discrepancy remains unresolved.',
+    accessDate: '2026-09-25', creators: ['Kumba Leigh'], institution: 'Gambia Daily',
+    publicationDate: '2026-09-14', evidenceRole: 'contextual', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous report of an electoral-commission stakeholder briefing', identifiers: { eventDate: '2026-09-14', outlet: 'government-owned press' },
+    description: 'Reports IEC preparations, the legal framework cited by officials, a scheduled polling date and a later timetable for nominations and campaigning; used to document the timetable discrepancy, not as an independent judgment of election quality.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
