@@ -7,8 +7,16 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 188);
-assert.equal(GEOGRAPHY_LABELS.length, 186);
+assert.equal(GEOGRAPHY_CASES.length, 189);
+assert.equal(GEOGRAPHY_LABELS.length, 187);
+const guyana2025 = GEOGRAPHY_CASES.find(({ id }) => id === 'guyana-2025-general-regional-election-and-transition');
+assert.equal(guyana2025?.datePrecision, 'year');
+assert.equal(guyana2025?.relationship, 'implemented');
+assert.ok(guyana2025?.claim.includes('16 to the newly formed WIN movement'));
+assert.ok(guyana2025?.claim.includes('distorted the level playing field'));
+assert.ok(guyana2025?.limitation.includes('Book-level scholarship on the 2025 event was unavailable'));
+assert.ok(guyana2025?.sourceIds.includes('guyanaCaricomEomFinal2025'));
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'guyana-general-election-2025')?.countryIds[0], 'map-328');
 const peru2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'peru-2026-general-election-and-runoff');
 assert.equal(peru2026?.datePrecision, 'snapshot');
 assert.equal(peru2026?.relationship, 'implemented');
@@ -321,7 +329,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 162, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 163, 'the atlas should expose all dated post-2000 implemented cases');
 assert.equal(filterGeographyCases({ country: 'map-188' })[0].id, 'costa-rican-2026-national-election-and-transfer-of-office');
 assert.equal(filterGeographyCases({ country: 'map-222' })[0].id, 'el-salvador-2025-presidential-reelection-and-constitutional-reform');
 assert.equal(filterGeographyCases({ country: 'map-320' })[0].id, 'guatemala-2026-constitutional-court-renewal');

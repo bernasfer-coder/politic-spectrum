@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(188);
+  await expect(page.locator('.geo-card')).toHaveCount(189);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -72,6 +72,16 @@ test('Peru 2026 election case keeps official returns distinct from observer asse
   await expect(card).toContainText('13 centres remained unopened');
   await expect(card).toContainText('not judicial findings or an independent recount');
   await expect(card).toContainText('No event-specific book-length scholarship was located');
+});
+
+test('Guyana 2025 election case separates results from observer findings on campaign conditions', async ({ page }) => {
+  await page.goto('/#geography?case=guyana-2025-general-regional-election-and-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('36 seats to the PPP/C, 16 to the newly formed WIN movement');
+  await expect(card).toContainText('state resources at 29 per cent');
+  await expect(card).toContainText('not a judicial finding that the declared result was invalid');
+  await expect(card).toContainText('Book-level scholarship on the 2025 event was unavailable');
 });
 test('South African GNU case preserves its bounded retrospective research gap', async ({ page }) => {
   await page.goto('/#geography?case=south-african-2024-government-national-unity-coalition-transition');
@@ -338,7 +348,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(188);
+  await expect(page.locator('.geo-card')).toHaveCount(189);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
