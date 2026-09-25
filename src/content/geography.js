@@ -1648,4 +1648,39 @@ GEOGRAPHY_CASES.push(caseRecord({
   locator: 'CEI, Élection du Président de la République, scrutin du 25 octobre 2025, résultats nationaux; Conseil constitutionnel, Décisions CI-2025-EP-006 (8 September) and CI-2025-EP-007 (4 November); ECOWAS–AU Preliminary Declaration (27 October; opening observations, §§18–21); Amnesty International, pre-election briefing (16 October) and Côte d’Ivoire 2025 annual country entry; Kofi Annan Foundation/Electoral Integrity Project pre-election analysis (June 2025); Marzin publisher record and pre-2021 McGovern, Bouquet and Koffi book records for context only.',
 }));
 
+GEOGRAPHY_LABELS.push({
+  id: 'burkina-faso-2026-party-dissolution-and-revolution-charter',
+  name: 'Burkina Faso party dissolution and Revolution Charter (2026)',
+  aliases: ['Burkina Faso political parties dissolved 2026', 'Burkina Faso Charte de la Révolution', 'Burkina Faso Révolution progressiste populaire 2026'],
+  family: 'Burkinabè constitutional, military-transition and revolutionary political history',
+  description: 'A bounded account of the 2026 dissolution of political parties, repeal of the party/opposition legal framework and adoption of a Revolution Charter during Burkina Faso’s military-led transition. Official institutional rationale and regional human-rights concerns are attributed separately; this is not a national ideological profile or a claim about public consensus.',
+  sourceIds: ['burkinaPoliticalPartiesDissolution2026Gov', 'burkinaPoliticalPartiesRepeal2026ALT', 'burkinaRevolutionCharter2026ALT', 'burkinaAchprPartyDissolution2026', 'burkinaHrwPartyDissolution2026', 'burkinaTransitionCharter2024Presidence', 'harschBurkinaHistory2017', 'englebertBurkinaStatehood1996'],
+  relatedEntries: [],
+});
+
+GEOGRAPHY_CASES.push(caseRecord({
+  id: 'burkina-faso-2026-party-dissolution-and-revolution-charter',
+  labelId: 'burkina-faso-2026-party-dissolution-and-revolution-charter',
+  placeId: 'burkina-faso',
+  relationship: 'implemented',
+  actor: 'Burkina Faso’s military-led executive and Council of Ministers; the Transitional Legislative Assembly; political parties and opposition actors affected by the measures; and the African Commission on Human and Peoples’ Rights. These institutions and actors are not treated as representing all Burkinabè.',
+  historicalSetting: 'The Council of Ministers’ 29 January 2026 approval of a decree dissolving political parties and a bill to repeal their legal framework; the Assembly’s 9 February vote; and its 2026 adoption of a Revolution Charter replacing the 2022 Transition Charter as amended in 2024.',
+  startYear: 2026, endYear: 2026,
+  periodLabel: '2026 · abolition of the party-law framework and institutional transition from the Transition Charter to a Revolution Charter',
+  datePrecision: 'snapshot',
+  evidenceKind: 'Official executive and legislative records, African Commission human-rights statement, attributed independent rights analysis; pre-2026 book-length political histories provide context only',
+  confidence: 'medium',
+  reviewedAt: '2026-09-25',
+  claim: `The Government Information Service reports that on 29 January 2026 the Council of Ministers adopted a decree dissolving political parties and formations and a bill to repeal the laws governing party operations, financing and opposition status. The Assembly’s report says that on 9 February it adopted the repeal bill, removing the 2001 party charter, 2009 party/campaign-finance law and statutory opposition framework; the African Commission likewise describes a law adopted that day. These are official and regional-institutional accounts of formal measures, not evidence that parties, political association or opposition activity disappeared in practice. The Assembly separately reports adoption in 2026 of a Revolution Charter to replace the 2022 Transition Charter as amended in 2024. It describes the new framework as recognizing the Révolution progressiste populaire, patriotic engagement and national sovereignty, and removing party representation from the legislature. That is the Assembly’s account of the text and stated institutional rationale; the Charter’s full text, promulgation and practical operation were not independently examined for this case.
+
+The African Commission expresses concern about potential effects on association, expression and participation in public affairs under the African Charter. Human Rights Watch situates the change within the longer military transition and contraction of political space. These are attributed analyses with different institutional roles, not court judgments. They should also be read alongside the authorities’ stated rationale of state refoundation, unity and security, rather than silently treating either official justification or critics’ interpretation as a complete account of public views.
+
+The authority dimension is directly engaged by the replacement of a transition framework and removal of party representation; formal enactment does not alone establish the subsequent distribution or exercise of power. The Charter’s progressive-popular, patriotic and sovereignty language documents the government’s official political vocabulary, not a verified ideology shared by the population. The available record is insufficient to assess the other axes, determine implementation or infer public consent. No six-axis scores or ideological archetype are assigned. Harsch’s English-language political history and Englebert’s distinct statehood/political-economy monograph offer book-length context for earlier periods, but both predate these 2026 measures and are not evidence about them. No book-length scholarly treatment of this 2026 episode was identified in this review.
+
+This remains a research snapshot of state-level legal and institutional change, not a full account of party members, civil society, customary and religious authorities, local communities, security conditions or political practices across the country.`,
+  limitation: `Bounded to official and institutional accounts available for the 2026 dissolution/repeal and Charter adoption; it does not establish promulgation of the new Charter, detailed legal effect, implementation, enforcement, ability to reorganize, or conditions on the ground. The Assembly and executive provide primary but interested institutional accounts. The African Commission statement raises rights concerns but is not a judicial ruling; HRW is independent rights analysis, not a complete census of restrictions or Burkinabè opinion. Harsch (2017) and Englebert (1996) are distinct book-length pre-event contexts and cannot fill the absence of contemporaneous scholarship. The full French-language Charter and Gazette, legislative debate record, implementation decrees, party and civil-society responses, locally grounded testimony, and later independent legal and scholarly analysis remain needed. No claims are made about a uniform national ideology, representative mandate, six-axis profile or public consensus; no protected text is reproduced.`,
+  sourceIds: ['burkinaPoliticalPartiesDissolution2026Gov', 'burkinaPoliticalPartiesRepeal2026ALT', 'burkinaRevolutionCharter2026ALT', 'burkinaAchprPartyDissolution2026', 'burkinaHrwPartyDissolution2026', 'burkinaTransitionCharter2024Presidence', 'harschBurkinaHistory2017', 'englebertBurkinaStatehood1996'],
+  locator: 'Government Information Service, Council of Ministers summary, 29 January 2026; Transitional Legislative Assembly, party-law repeal account (9 February 2026) and Revolution Charter adoption account (2026; published page date not established); African Commission on Human and Peoples’ Rights statement (13 February 2026); Human Rights Watch analysis (5 February 2026); Harsch (2017) and Englebert (1996) as pre-event contexts only.',
+}));
+
 GEOGRAPHY_CASES.sort((a, b) => a.startYear - b.startYear);

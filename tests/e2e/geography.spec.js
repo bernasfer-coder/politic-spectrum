@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(170);
+  await expect(page.locator('.geo-card')).toHaveCount(171);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -244,6 +244,15 @@ test('Côte d’Ivoire 2025 case distinguishes official results, limited observa
   await expect(card.locator('a[href*="coteDivAmnestyPreElectionProtests2025"]')).toBeVisible();
 });
 
+test('Burkina Faso 2026 case distinguishes the party-law vote, Revolution Charter and rights concerns', async ({ page }) => {
+  await page.goto('/#geography?case=burkina-faso-2026-party-dissolution-and-revolution-charter');
+  await expect(page.locator('.geo-card')).toHaveCount(1);
+  await expect(page.locator('.geo-card')).toContainText('9 February 2026');
+  await expect(page.locator('.geo-card')).toContainText('African Commission');
+  await expect(page.locator('.geo-card')).toContainText('No six-axis scores');
+  await expect(page.locator('.geo-card')).toContainText('pre-event contexts');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -260,7 +269,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(170);
+  await expect(page.locator('.geo-card')).toHaveCount(171);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

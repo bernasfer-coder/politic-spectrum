@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 170);
-assert.equal(GEOGRAPHY_LABELS.length, 168);
+assert.equal(GEOGRAPHY_CASES.length, 171);
+assert.equal(GEOGRAPHY_LABELS.length, 169);
 const coteDivoire2025 = GEOGRAPHY_CASES.find(({ id }) => id === 'cote-divoire-2025-presidential-election-candidacy-and-civic-space');
 assert.equal(coteDivoire2025?.startYear, 2025);
 assert.equal(coteDivoire2025?.endYear, 2025);
@@ -246,7 +246,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 146, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 147, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('lebanese-2025-2026-presidential-transition-and-parliamentary-extension'));
 assert.ok(implementedPost2000.includes('cameroon-2025-presidential-election-and-constitutional-aftermath'));
 assert.ok(!filterGeographyCases({ country: 'egypt' }).some(({ id }) => id === 'nasser-regional-legacy'), 'regional influence is not automatically a country claim');
@@ -258,4 +258,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 170 dated cases, 168 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 171 dated cases, 169 unscored labels, citations, boundaries, filters and share URLs.');
