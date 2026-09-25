@@ -25,6 +25,18 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('no six-axis score');
   });
 
+  it('shows Djibouti’s 2025 eligibility amendment and distinguishes provisional observer figures from the final court tally', () => {
+    window.history.replaceState(null, '', '/#geography?case=djibouti-2025-amendment-and-2026-presidential-election');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('2025–2026');
+    expect(cards()[0]).toHaveTextContent('204,874 votes, 97.01%');
+    expect(cards()[0]).toHaveTextContent('261,857 registered');
+    expect(cards()[0]).toHaveTextContent('256,467 registered');
+    expect(cards()[0]).toHaveTextContent('No ideological label or six-axis score');
+    expect(cards()[0]).toHaveTextContent('No event-specific book-length analysis was located');
+  });
+
   it('shows São Tomé and Príncipe’s 2026 parliamentary election only as a sourced pre-election snapshot', () => {
     window.history.replaceState(null, '', '/#geography?case=sao-tome-2026-national-assembly-election-pre-election');
     renderAtlas();
@@ -71,7 +83,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(202);
+    expect(cards()).toHaveLength(203);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
