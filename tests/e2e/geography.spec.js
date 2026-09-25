@@ -225,11 +225,15 @@ test('Bosnia 2026 pre-election snapshot distinguishes reported scanner arrival f
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('all scanners designated for the election had arrived in the country');
+  await expect(card).toContainText('will request 300 short-term observers');
+  await expect(card).toContainText('not confirmation of final deployment');
+  await expect(card).toContainText('arrival on 30 September and deployment on 2 October');
   await expect(card).toContainText('distribution of devices and ballots to municipal and city commissions was scheduled to begin on 27 September');
   await expect(card).toContainText('not a receipt or inventory record');
   await expect(card).toContainText('does not establish acceptance, configuration, local delivery, operator training or subsequent implementation');
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href*="bihFenaScannerDeliveryUpdate2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="bihOdihrMissionDeploymentSchedule2026"]')).toBeVisible();
 });
 
 test('Peru 2026 election case keeps official returns distinct from observer assessments', async ({ page }) => {

@@ -115,6 +115,10 @@ assert.ok(bosniaElection?.claim.includes('all scanners designated for the electi
 assert.ok(bosniaElection?.claim.includes('scheduled to begin on 27 September'));
 assert.ok(bosniaElection?.limitation.includes('does not establish acceptance, configuration, local delivery, operator training or subsequent implementation'));
 assert.ok(bosniaElection?.sourceIds.includes('bihFenaScannerDeliveryUpdate2026'));
+assert.ok(bosniaElection?.claim.includes('will request 300 short-term observers'));
+assert.ok(bosniaElection?.claim.includes('arrival on 30 September and deployment on 2 October'));
+assert.ok(bosniaElection?.limitation.includes('does not confirm actual short-term deployment'));
+assert.ok(bosniaElection?.sourceIds.includes('bihOdihrMissionDeploymentSchedule2026'));
 assert.ok(bosniaElection?.limitation.includes('not a record of the scheduled 4 October vote'));
 assert.ok(bosniaElection?.limitation.includes('No prediction'));
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === bosniaElection?.placeId)?.countryIds[0], 'map-070');

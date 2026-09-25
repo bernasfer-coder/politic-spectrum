@@ -2751,3 +2751,12 @@ GEOGRAPHY_CASES.push(caseRecord({
 }));
 
 GEOGRAPHY_CASES.sort((a, b) => a.startYear - b.startYear);
+
+const bosniaElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'bosnia-and-herzegovina-general-election-2026');
+const bosniaElectionLabel2026 = GEOGRAPHY_LABELS.find(({ id }) => id === 'bosnia-and-herzegovina-general-election-2026');
+bosniaElection2026.sourceIds.push('bihOdihrMissionDeploymentSchedule2026');
+bosniaElectionLabel2026.sourceIds.push('bihOdihrMissionDeploymentSchedule2026');
+bosniaElection2026.evidenceKind += '; official ODIHR mission composition and deployment schedule';
+bosniaElection2026.claim += ' ODIHR’s official mission page lists a core team of 13 experts and 26 long-term observers, and says the mission will request 300 short-term observers; its schedule lists their arrival on 30 September and deployment on 2 October. These are plans and requested numbers, not confirmation of final deployment.';
+bosniaElection2026.limitation += ' The official mission page gives planned/requested observer numbers and a future schedule; it does not confirm actual short-term deployment, final headcount or election findings.';
+bosniaElection2026.locator += ' ODIHR mission information page (consulted 25 September 2026), composition, short-term observer request and deployment schedule.';
