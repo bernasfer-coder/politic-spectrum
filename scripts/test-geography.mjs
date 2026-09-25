@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 174);
-assert.equal(GEOGRAPHY_LABELS.length, 172);
+assert.equal(GEOGRAPHY_CASES.length, 175);
+assert.equal(GEOGRAPHY_LABELS.length, 173);
 const haitiTransition2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'haitian-2026-post-council-electoral-transition');
 assert.equal(haitiTransition2026?.datePrecision, 'snapshot');
 assert.equal(haitiTransition2026?.confidence, 'medium');
@@ -154,6 +154,12 @@ assert.equal(filterGeographyCases({ country: 'algeria' })[0].id, 'algerian-postw
 assert.ok(filterGeographyCases({ country: 'algeria' }).some(({ id }) => id === 'algerian-2024-2026-constitutional-and-electoral-contestation'));
 assert.equal(filterGeographyCases({ country: 'tunisia' })[0].id, 'tunisian-revolutionary-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'libya' })[0].id, 'libyan-postcolonial-fragmented-constitutional-transition');
+const iraq2026 = filterGeographyCases({ country: 'iraq' }).find(({ id }) => id === 'iraqi-2025-election-and-2026-government-formation');
+assert.equal(iraq2026?.startYear, 2025);
+assert.equal(iraq2026?.endYear, 2026);
+assert.match(iraq2026?.claim ?? '', /14 ministers/);
+assert.match(iraq2026?.limitation ?? '', /does not establish the status of every portfolio after that date/);
+assert.ok(iraq2026?.sourceIds.includes('iraqElectionReportS2025757'));
 const libya2026 = filterGeographyCases({ country: 'libya' }).find(({ id }) => id === 'libyan-2026-smaller-convening-electoral-agreement');
 assert.equal(libya2026?.datePrecision, 'snapshot');
 assert.equal(libya2026?.relationship, 'advocated');
@@ -264,7 +270,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 149, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 150, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('haitian-2026-post-council-electoral-transition'));
 assert.ok(implementedPost2000.includes('lebanese-2025-2026-presidential-transition-and-parliamentary-extension'));
 assert.ok(implementedPost2000.includes('cameroon-2025-presidential-election-and-constitutional-aftermath'));
@@ -277,4 +283,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 174 dated cases, 172 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 175 dated cases, 173 unscored labels, citations, boundaries, filters and share URLs.');
