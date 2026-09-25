@@ -54,6 +54,14 @@ assert.ok(nasserEgypt?.sourceIds.includes('shechterEgypt1964Constitutions2025'))
 assert.ok(nasserEgypt?.sourceIds.includes('hannaGardnerArabSocialism1969'));
 assert.ok(nasserEgypt?.sourceIds.includes('nasserNationalCharterEnglish1962'));
 assert.ok(nasserEgypt?.sourceIds.includes('uarConstitution1964English'));
+assert.ok(nasserEgypt?.claim.includes('On agrarian reform, a contemporary FAO catalogue identifies'));
+assert.ok(nasserEgypt?.claim.includes('do not establish land redistributed'));
+assert.ok(nasserEgypt?.limitation.includes('nor is the September 1952 agrarian decree attributed to Nasser personally'));
+assert.ok(nasserEgypt?.limitation.includes('Land-distribution totals, enforcement'));
+assert.ok(nasserEgypt?.sourceIds.includes('egyptAgrarianReformDecree1781952'));
+assert.ok(nasserEgypt?.sourceIds.includes('saabAgrarianReformEgypt1967'));
+assert.ok(nasserEgypt?.sourceIds.includes('abdelMalekAgrarianReformEgypt1962'));
+assert.ok(nasserEgypt?.sourceIds.includes('ahramAgrarianReform74FarmersDay2026'));
 assert.ok(nasserEgypt?.sourceIds.includes('nasserCanalUsers1956'));
 const albaniaElection = GEOGRAPHY_CASES.find(({ id }) => id === 'albania-2025-parliamentary-election-and-diaspora-vote');
 assert.equal(albaniaElection?.confidence, 'medium');
