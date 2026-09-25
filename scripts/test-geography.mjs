@@ -7,8 +7,15 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 187);
-assert.equal(GEOGRAPHY_LABELS.length, 185);
+assert.equal(GEOGRAPHY_CASES.length, 188);
+assert.equal(GEOGRAPHY_LABELS.length, 186);
+const peru2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'peru-2026-general-election-and-runoff');
+assert.equal(peru2026?.datePrecision, 'snapshot');
+assert.equal(peru2026?.relationship, 'implemented');
+assert.ok(peru2026?.claim.includes('49,641'));
+assert.ok(peru2026?.claim.includes('13 centres remained unopened'));
+assert.ok(peru2026?.limitation.includes('Book-level scholarship on this specific 2026 event was unavailable'));
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'peru-general-election-2026')?.countryIds[0], 'map-604');
 const japan2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'japanese-2026-snap-election-and-electoral-access');
 assert.equal(japan2026?.datePrecision, 'snapshot');
 assert.equal(japan2026?.relationship, 'implemented');
@@ -314,7 +321,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 161, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 162, 'the atlas should expose all dated post-2000 implemented cases');
 assert.equal(filterGeographyCases({ country: 'map-188' })[0].id, 'costa-rican-2026-national-election-and-transfer-of-office');
 assert.equal(filterGeographyCases({ country: 'map-222' })[0].id, 'el-salvador-2025-presidential-reelection-and-constitutional-reform');
 assert.equal(filterGeographyCases({ country: 'map-320' })[0].id, 'guatemala-2026-constitutional-court-renewal');
@@ -366,4 +373,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 184 dated cases, 182 unscored labels, citations, boundaries, filters and share URLs.');
+console.log(`Geography tests passed: ${GEOGRAPHY_CASES.length} dated cases, ${GEOGRAPHY_LABELS.length} unscored labels, citations, boundaries, filters and share URLs.`);
