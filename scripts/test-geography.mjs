@@ -800,6 +800,9 @@ assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAllianceFoundingStateme
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAucDeescalationSeptember2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaUnSecretaryGeneralStatementSeptember2026'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaReutersTplfInternalDiscord2026'));
+assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaOlfPeaceNegotiationStatement2026'));
+assert.ok(ethiopianAlliance?.claim.includes('OLF), which is distinct from the listed Oromo Liberation Army (OLA)'));
+assert.ok(ethiopianAlliance?.limitation.includes('OLF is distinct from alliance-listed OLA'));
 assert.ok(ethiopianAlliance?.claim.includes('Reuters’ 24 September report describes further limits to any assumption of cohesion'));
 assert.ok(ethiopianAlliance?.claim.includes('A separate statement attributed to the UN Secretary-General’s spokesperson'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaUkDeescalationSeptember2026'));
@@ -811,6 +814,8 @@ assert.ok(ethiopianAlliance?.limitation.includes('which faction was constitution
 assert.ok(ethiopianAllianceLabel?.description.includes('initial AU, UN, UK and coalition statements'));
 assert.ok(ethiopianAllianceLabel?.sourceIds.includes('ethiopiaUnSecretaryGeneralStatementSeptember2026'));
 assert.ok(ethiopianAllianceLabel?.sourceIds.includes('ethiopiaReutersTplfInternalDiscord2026'));
+assert.ok(ethiopianAllianceLabel?.sourceIds.includes('ethiopiaOlfPeaceNegotiationStatement2026'));
+assert.ok(ethiopianAllianceLabel?.description.includes('OLF is distinct from the listed OLA'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('lyonsPuzzleEthiopianPolitics2019'));
 assert.ok(ethiopianAlliance?.sourceIds.includes('tarikuGebresenbetInsecurityEthiopia2026'));
 assert.ok(filterGeographyCases({ country: 'ethiopia' }).some(({ id }) => id === ethiopianAlliance?.id));

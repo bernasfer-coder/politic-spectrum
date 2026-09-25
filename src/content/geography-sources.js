@@ -10021,6 +10021,16 @@ const sources = [
     description: 'Reuters account of TPLF internal divisions and remaining TPLF–Fano territorial disagreements, relevant to but not determinative of the alliance’s cohesion or operational capacity.'
   },
   {
+    id: 'ethiopiaOlfPeaceNegotiationStatement2026',
+    label: 'Oromo Liberation Front — statement calling for peaceful negotiations in Oromiya, 24 September 2026',
+    url: 'https://oromoliberationfront.org/english/the-government-should-immediately-embark-on-genuine-peaceful-negotiation-in-oromiya/',
+    note: 'Official Oromo Liberation Front (OLF) statement, dated 24 September 2026 in its text and published on the organization’s website on 25 September, consulted in full. OLF calls for negotiations with the federal government and criticizes the northern coalition as a threat to Oromiya. This is a primary record of OLF’s own political position and framing, not independent verification of the allegations it makes. OLF is distinct from the Oromo Liberation Army (OLA), which contemporary accounts list as an Alliance for Survival member.',
+    accessDate: '2026-09-25', creators: ['Oromo Liberation Front'], institution: 'Oromo Liberation Front',
+    publicationDate: '2026-09-25', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'organization-issued political statement / primary position', identifiers: { statementDate: '2026-09-24', publicationDate: '2026-09-25', organization: 'OLF, distinct from OLA' },
+    description: 'Primary evidence of OLF’s stated call for negotiations and criticism of the coalition. Its claims about the coalition are attributed political framing, not independent findings or evidence of Oromo public opinion.'
+  },
+  {
     id: 'ethiopiaUkDeescalationSeptember2026',
     label: 'UK Foreign, Commonwealth & Development Office — statement on escalation in northern Ethiopia, 24 September',
     url: 'https://www.gov.uk/government/news/uk-statement-on-escalation-in-northern-ethiopia-24-september',
