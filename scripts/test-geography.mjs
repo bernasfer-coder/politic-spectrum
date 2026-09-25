@@ -7,8 +7,15 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 165);
-assert.equal(GEOGRAPHY_LABELS.length, 163);
+assert.equal(GEOGRAPHY_CASES.length, 166);
+assert.equal(GEOGRAPHY_LABELS.length, 164);
+const nepalTransition = GEOGRAPHY_CASES.find(({ id }) => id === 'nepal-2025-uprising-interim-order-and-2026-election');
+assert.equal(nepalTransition?.endYear, 2026);
+assert.equal(nepalTransition?.relationship, 'implemented');
+assert.ok(nepalTransition.claim.includes('no final merits judgment'));
+assert.ok(nepalTransition.claim.includes('not all Nepalis'));
+assert.ok(nepalTransition.limitation.includes('final court decision on the merits was not located'));
+assert.ok(nepalTransition.sourceIds.includes('nepalPariyarSeptemberRevolution2026'));
 assert.ok(GEOGRAPHY_CASES.some(({ id, startYear, endYear, relationship }) => id === 'algerian-2024-2026-constitutional-and-electoral-contestation' && startYear === 2024 && endYear === 2026 && relationship === 'implemented'));
 assert.equal(filterGeographyCases({ place: 'kosovo' }).length, 1);
 assert.equal(filterGeographyCases({ place: 'kosovo' })[0].id, 'kosovo-2025-26-electoral-constitutional-crisis');
@@ -189,7 +196,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 142, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 143, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('lebanese-2025-2026-presidential-transition-and-parliamentary-extension'));
 assert.ok(implementedPost2000.includes('cameroon-2025-presidential-election-and-constitutional-aftermath'));
 assert.ok(!filterGeographyCases({ country: 'egypt' }).some(({ id }) => id === 'nasser-regional-legacy'), 'regional influence is not automatically a country claim');
@@ -201,4 +208,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 165 dated cases, 163 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 166 dated cases, 164 unscored labels, citations, boundaries, filters and share URLs.');

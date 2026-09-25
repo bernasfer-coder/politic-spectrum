@@ -9681,6 +9681,99 @@ const sources = [
 
 sources.push(
   {
+    id: 'nepalElectionCommission2026FinalResults',
+    label: 'Election Commission Nepal — House of Representatives Election 2082 (2026): results report submitted to the President',
+    url: 'https://ebulletin.election.gov.np/2026/03/3043/',
+    note: 'Election Commission report summary under section 62 of the House of Representatives Member Election Act, 2017, presented to the President on 19 March 2026. Used for certified institutional totals and the Commission’s account of its process; this is not independent verification of fairness, voter motives or constitutional validity of the early election. No result table is reproduced.',
+    accessDate: '2026-09-25', creators: ['Election Commission Nepal'], institution: 'Election Commission Nepal',
+    publicationDate: '2026-03-19', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official election report and result summary', identifiers: { electionDate: '2026-03-05', statutoryBasis: 'House of Representatives Member Election Act, 2017, section 62' },
+    description: 'Official report of results for the 5 March 2026 House of Representatives election. It records 165 first-past-the-post and 110 proportional-representation seats, participation and elected members’ sex and legally defined inclusion categories. The Commission’s description does not alone establish effective representation or political consent.'
+  },
+  {
+    id: 'nepalElectionCommission2026ResultPortal',
+    label: 'Election Commission Nepal — House of Representatives Election 2082 results portal (2026)',
+    url: 'https://result.election.gov.np/',
+    note: 'Official Election Commission results portal consulted for party and constituency returns from the 5 March 2026 election. It records official results, not equal campaign conditions, voter motives, or independent verification. Dynamic tables are linked only and are not republished.',
+    accessDate: '2026-09-25', creators: ['Election Commission Nepal'], institution: 'Election Commission Nepal',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official election results database', identifiers: { electionDate: '2026-03-05' },
+    description: 'Official dynamic results database for Nepal’s 2026 House election. Results can establish declared seat totals and constituency-level outcomes but not public consensus, ideology or electoral quality by themselves.'
+  },
+  {
+    id: 'nepalInterimGovernmentOfficialChronology2025to2026',
+    label: 'Office of the Prime Minister and Council of Ministers — official prime-ministerial records for the 2025–2026 interim transition',
+    url: 'https://opmcm.gov.np/minister-detail/',
+    note: 'Government primary record consulted for Sushila Karki’s interim tenure and Balendra Shah’s assumption of office on 27 March 2026. The Office is an executive source; its dates establish formal chronology, not constitutional adjudication or independent assessment of the transition.',
+    accessDate: '2026-09-25', creators: ['Government of Nepal, Office of the Prime Minister and Council of Ministers'], institution: 'Office of the Prime Minister and Council of Ministers',
+    publicationDate: '2025–2026', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali', 'English'],
+    sourceType: 'official executive appointment and office chronology', identifiers: { transitionPeriod: '2025–2026' },
+    description: 'Official government chronology for the interim prime ministerial period and elected-government transition. It documents office-holding, not the validity of the disputed appointment and dissolution decisions.'
+  },
+  {
+    id: 'nepalSocialMediaRegistrationNotice2025',
+    label: 'Ministry of Communication and Information Technology — notice on social-media platform registration (2025)',
+    url: 'https://mocit.gov.np/content/13000/notice-from-the-ministry-of-communication-and/',
+    note: 'Official notice consulted as the Ministry’s stated rationale and registration directive preceding the September 2025 platform restrictions. It is evidence of the government’s expressed regulatory basis, not proof of necessity, proportionality or the policy’s purpose as experienced by users. No notice text is reproduced.',
+    accessDate: '2026-09-25', creators: ['Ministry of Communication and Information Technology, Government of Nepal'], institution: 'Government of Nepal',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'medium', languages: ['Nepali'],
+    sourceType: 'official regulatory notice / primary government record', identifiers: { framework: 'Directive for Managing the Use of Social Media Platforms, 2023' },
+    description: 'Government notice connected with registration and local-contact requirements for social-media platforms. The state’s stated compliance rationale is kept distinct from contemporary rights-monitoring and political interpretations of the restrictions.'
+  },
+  {
+    id: 'nepalAmnestySeptember2025UseOfForceBriefing',
+    label: 'Amnesty International — “We went there to raise our voice, not to be killed”: Nepal’s deadly crackdown on protesters',
+    url: 'https://www.amnesty.org/en/documents/asa31/0529/2025/en/',
+    note: 'Amnesty International briefing published 17 December 2025, based on eyewitness, organizer and hospital-worker interviews and open-source imagery. It assesses selected 8 September incidents in Kathmandu, not every protest or the total September death toll; its human-rights conclusions are attributed to Amnesty. No report passage, image or table is reproduced.',
+    accessDate: '2026-09-25', creators: ['Amnesty International'], institution: 'Amnesty International',
+    publicationDate: '2025-12-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'human-rights investigation briefing', identifiers: { document: 'ASA 31/0529/2025' },
+    description: 'Investigation of selected 8 September 2025 protest-policing incidents in Kathmandu. Amnesty assesses state use of force against international standards; the briefing is not an exhaustive investigation of all violence on 8–9 September.'
+  },
+  {
+    id: 'nepalNhrcGenZInvestigationRecommendations2026',
+    label: 'National Human Rights Commission Nepal — investigation report and recommendations on the Gen-Z movement (2026)',
+    url: 'https://www.nhrcnepal.org/press_release/detail/883',
+    note: 'Statutory National Human Rights Commission press note of 27 May 2026 reporting that its investigation committee submitted findings and the Commission sent recommendations to the Government. The linked Nepali report and recommendations are an institutional investigation and recommendation, not a criminal judgment; their politically contested conclusions require comparison with other inquiry and rights records. No wording or scanned material is reproduced.',
+    accessDate: '2026-09-25', creators: ['National Human Rights Commission Nepal'], institution: 'National Human Rights Commission Nepal',
+    publicationDate: '2026-05-27', evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'national human-rights commission investigation and recommendation', identifiers: { reportLanguage: 'Nepali', events: '2025-09-08 to 2025-09-09' },
+    description: 'Official notice that the Commission completed an inquiry into human-rights violations associated with the September 2025 movement and transmitted recommendations to the Government. The Commission’s conclusions are evidence of its findings and recommendations, not a court determination or complete social history.'
+  },
+  {
+    id: 'nepalDrcnHouseElectionObservation2026',
+    label: 'Democracy Resource Center Nepal — House of Representatives Election 2026: Observation Report',
+    url: 'https://www.democracyresource.org/wp-content/uploads/2026/06/DRCN_House-of-Representatives-Election-2026-Observation-Report_English_2026-1.pdf',
+    note: 'DRCN nationwide observer report published in June 2026, drawing on direct observation and interviews. It documents local process, security and representation concerns and gives the organization’s overall assessment; observations and interviewed perspectives are bounded rather than a national voter survey. No report prose or tables are reproduced.',
+    accessDate: '2026-09-25', creators: ['Democracy Resource Center Nepal'], institution: 'Democracy Resource Center Nepal',
+    publicationDate: '2026-06', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Nepali'],
+    sourceType: 'national civil-society election observation report', identifiers: { pages: '120', electionDate: '2026-03-05' },
+    description: 'Nationwide civil-society observation of election preparation, campaign, inclusion, security, voting and results. It records a generally peaceful election amid continuing security, observation-access and inclusion concerns; its conclusions belong to DRCN and its observation scope.'
+  },
+  {
+    id: 'nepalAnfrelHouseElectionObservation2026',
+    label: 'Asian Network for Free Elections — Rebuilding Trust, Restoring Credibility: Accountability and Electoral Integrity in Nepal 2026',
+    url: 'https://anfrel.org/rebuilding-trust-restoring-credibility-accountability-and-electoral-integrity-in-nepal-2026/',
+    note: 'ANFREL international election-observation mission final report, launched 13 May 2026. Its 20 observers covered 35 districts in all seven provinces. Used for attributed assessments of election day, campaign accountability and inclusion; this observer sample is not complete polling-station coverage or a national ideological verdict. No report text or tables are reproduced.',
+    accessDate: '2026-09-25', creators: ['Asian Network for Free Elections'], institution: 'Asian Network for Free Elections',
+    publicationDate: '2026-05-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation mission final report', identifiers: { observers: '20', districts: '35', provinces: '7' },
+    description: 'International observation of the 5 March 2026 House election. ANFREL reports an orderly election day alongside persistent accountability, enforcement and participation barriers; conclusions remain attributed to its methodology and field deployment.'
+  },
+  {
+    id: 'nepalPariyarSeptemberRevolution2026',
+    label: 'Bishnu Pariyar — “The September revolution: Gen Z mobilisation and cascading failures of platform governance, policing and state credibility in Nepal” (2026)',
+    url: 'https://doi.org/10.1080/01436597.2026.2658072',
+    note: 'Peer-reviewed, open-access research article in Third World Quarterly, published online 28 April 2026. Pariyar uses 35 semi-structured interviews with activists, journalists, lawyers and officials plus documentary and media sources; rural perspectives were under-represented and the study is explicitly not population-representative. Its mechanism-based interpretation is attributed to the author.',
+    accessDate: '2026-09-25', creators: ['Bishnu Pariyar'], institution: 'Third World Quarterly / Taylor & Francis',
+    publicationDate: '2026-04-28', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed qualitative research article on the September 2025 uprising', identifiers: { doi: '10.1080/01436597.2026.2658072', interviewCount: '35' },
+    description: 'Qualitative study of how platform restrictions, youth grievances, protest policing, crisis communication and institutional weakness interacted in the September 2025 political crisis. Findings illuminate mechanisms and interviewees’ interpretations, not the views of all Nepalis or all youth.'
+  }
+);
+
+sources.push(
+  {
     id: 'bangladeshJulyNationalCharter2025Translation',
     label: 'Bangladesh National Consensus Commission — July National Charter 2025 (unofficial English translation)',
     url: 'https://constitutionnet.org/sites/default/files/2025-11/Bangladesh%20July%20National%20Charter%202025%20%28English%20translation%29.pdf',
