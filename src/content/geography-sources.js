@@ -10011,6 +10011,16 @@ const sources = [
     description: 'The Secretary-General’s attributed position on reported northern Ethiopia escalation and requested humanitarian and diplomatic steps; the report is not treated as independent verification of the underlying battlefield events.'
   },
   {
+    id: 'ethiopiaReutersTplfInternalDiscord2026',
+    label: 'Reuters — reporting on TPLF internal divisions and uncertainty around the new alliance',
+    url: 'https://www.marketscreener.com/news/flush-with-allies-tigray-s-leaders-face-internal-discord-in-new-ethiopia-war-ce785aded08af321',
+    note: 'Reuters report by Aaron Ross, published 24 September 2026 and consulted in full through MarketScreener syndication. Reuters reports defections, internal disputes and a rival armed force in Tigray, and describes the TPLF and Fano as retaining competing land claims; interviewee, family-member, security-source and expert statements are attributed. Its account informs uncertainty about coalition cohesion but does not establish the degree of joint command or operational coordination.',
+    accessDate: '2026-09-25', creators: ['Aaron Ross'], institution: 'Reuters (republished by MarketScreener)',
+    publicationDate: '2026-09-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'international news-agency reporting / attributed analysis of internal political divisions', identifiers: { reportDate: '2026-09-24', originalPublisher: 'Reuters' },
+    description: 'Reuters account of TPLF internal divisions and remaining TPLF–Fano territorial disagreements, relevant to but not determinative of the alliance’s cohesion or operational capacity.'
+  },
+  {
     id: 'ethiopiaUkDeescalationSeptember2026',
     label: 'UK Foreign, Commonwealth & Development Office — statement on escalation in northern Ethiopia, 24 September',
     url: 'https://www.gov.uk/government/news/uk-statement-on-escalation-in-northern-ethiopia-24-september',
