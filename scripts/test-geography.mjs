@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 196);
-assert.equal(GEOGRAPHY_LABELS.length, 194);
+assert.equal(GEOGRAPHY_CASES.length, 197);
+assert.equal(GEOGRAPHY_LABELS.length, 195);
 const saoTomeElection = GEOGRAPHY_CASES.find(({ id }) => id === 'sao-tome-2026-national-assembly-election-pre-election');
 assert.equal(saoTomeElection?.datePrecision, 'snapshot');
 assert.equal(saoTomeElection?.reviewedAt, '2026-09-25');
@@ -34,6 +34,18 @@ assert.equal(GEOGRAPHY_COUNTRIES.find(({ id }) => id === 'map-894')?.name, 'Zamb
 assert.equal(MAP_COUNTRIES_BY_ID['map-894']?.name, 'Zambia');
 assert.ok(MAP_COUNTRIES_BY_ID['map-894']?.path, 'Zambia should use its own world-map country geometry');
 assert.ok(filterGeographyCases({ country: 'map-894' }).some(({ id }) => id === zambiaElection?.id));
+const ethiopiaElection = GEOGRAPHY_CASES.find(({ id }) => id === 'ethiopia-2026-seventh-general-election');
+assert.equal(ethiopiaElection?.datePrecision, 'snapshot');
+assert.equal(ethiopiaElection?.confidence, 'medium');
+assert.ok(ethiopiaElection?.claim.includes('won 438 HoPR seats'));
+assert.ok(ethiopiaElection?.claim.includes('AP reported 438 of 501 seats'));
+assert.ok(ethiopiaElection?.claim.includes('486 certified House results'));
+assert.ok(ethiopiaElection?.claim.includes('Tigray'));
+assert.ok(ethiopiaElection?.limitation.includes('no percentage is inferred'));
+assert.ok(ethiopiaElection?.sourceIds.includes('ethiopiaAuElectionObservation2026'));
+assert.ok(ethiopiaElection?.sourceIds.includes('lyonsPuzzleEthiopianPolitics2019'));
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'ethiopia-general-election-2026')?.countryIds[0], 'ethiopia');
+assert.ok(filterGeographyCases({ country: 'ethiopia' }).some(({ id }) => id === ethiopiaElection?.id));
 const malaysiaTermLimit = GEOGRAPHY_CASES.find(({ id }) => id === 'malaysian-2026-prime-minister-term-limit-amendment');
 assert.equal(malaysiaTermLimit?.relationship, 'advocated');
 assert.equal(malaysiaTermLimit?.placeId, 'malaysia-pm-term-limit-bill-2026');
@@ -392,7 +404,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 169, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 170, 'the atlas should expose all dated post-2000 implemented cases');
 assert.equal(filterGeographyCases({ country: 'map-188' })[0].id, 'costa-rican-2026-national-election-and-transfer-of-office');
 assert.equal(filterGeographyCases({ country: 'map-222' })[0].id, 'el-salvador-2025-presidential-reelection-and-constitutional-reform');
 assert.equal(filterGeographyCases({ country: 'map-320' })[0].id, 'guatemala-2026-constitutional-court-renewal');

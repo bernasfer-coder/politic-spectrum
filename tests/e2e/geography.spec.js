@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(196);
+  await expect(page.locator('.geo-card')).toHaveCount(197);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -72,6 +72,19 @@ test('São Tomé and Príncipe election remains a pre-poll case and is reachable
   await expect(card).toContainText('no findings about the 27 September vote');
   await expect(card).toContainText('No voting, counting, certified results');
   await page.getByRole('combobox', { name: /Place/ }).selectOption('sao-tome-legislative-election-2026');
+  await expect(card).toHaveCount(1);
+});
+
+test('Ethiopia 2026 election preserves the seat-denominator discrepancy and limited observation scope', async ({ page }) => {
+  await page.goto('/#geography?case=ethiopia-2026-seventh-general-election');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('won 438 HoPR seats');
+  await expect(card).toContainText('AP reported 438 of 501 seats');
+  await expect(card).toContainText('486 certified House results');
+  await expect(card).toContainText('Tigray');
+  await expect(card).toContainText('no percentage is inferred');
+  await page.getByRole('combobox', { name: /Place/ }).selectOption('ethiopia-general-election-2026');
   await expect(card).toHaveCount(1);
 });
 
@@ -419,7 +432,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(196);
+  await expect(page.locator('.geo-card')).toHaveCount(197);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();

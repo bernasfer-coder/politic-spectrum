@@ -2542,6 +2542,66 @@ const sources = [
     description: 'Recent book-length edited study of the escalation from 2015–2018 protests through the 2018–2021 transition, the 2020–2022 northern war and violence through 2024. It extends the contemporary evidence base while retaining regional, scholarly and temporal limits.'
   },
   {
+    id: 'ethiopiaNebeElectionPage2026',
+    label: 'National Election Board of Ethiopia — Seventh General Election official information and constituency records',
+    url: 'https://nebe.org.et/en/node/1213',
+    note: 'Official NEBE election page consulted on 25 September 2026 for the election’s institutional framework, constituency references and linked regional materials. The page is not a complete national return, independent audit or proof of equal access; linked materials are not republished.',
+    accessDate: '2026-09-25', creators: ['National Election Board of Ethiopia'], institution: 'National Election Board of Ethiopia',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election administration and constituency-record portal', identifiers: { election: 'Seventh General Election', pollingDate: '2026-06-01' },
+    description: 'Official Board page linking constituency and regional materials for the 2026 seventh general election. The portal establishes the Board’s published administrative record, not a complete independently checked result dataset or uniform participation.'
+  },
+  {
+    id: 'ethiopiaEbcNebeResults2026',
+    label: 'Ethiopian Broadcasting Corporation — report of NEBE’s 2026 seventh-general-election result announcement',
+    url: 'https://www.ebc.et/english/Home/NewsDetails?NewsId=5745',
+    note: 'EBC’s 21 June 2026 report identifies NEBE as the source of the announced result and names the announcement ceremony and participants. It is a state broadcaster’s report of the Board’s announcement, not the Board’s complete itemized return; separate reporting gives a different denominator, preserved as an uncertainty.',
+    accessDate: '2026-09-25', creators: ['Ethiopian Broadcasting Corporation'], institution: 'Ethiopian Broadcasting Corporation',
+    publicationDate: '2026-06-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official broadcaster report of election-authority result announcement', identifiers: { election: 'Seventh General Election', resultAnnouncement: '2026-06-21' },
+    description: 'Reports NEBE’s announcement that the Prosperity Party secured 438 House of Peoples’ Representatives seats and identifies other parties announced as represented. It does not independently audit the totals or resolve the total-seat denominator.'
+  },
+  {
+    id: 'ethiopiaAuElectionObservation2026',
+    label: 'African Union Election Observation Mission — preliminary statement on Ethiopia’s 1 June 2026 general elections',
+    url: 'https://www.peaceau.org/en/article/preliminary-statement-african-union-election-observation-mission-to-the-1-june-2026-general-elections-in-the-federal-democratic-republic-of-ethiopia-addis-ababa-3-june-2026',
+    note: 'AU mission preliminary statement consulted on 25 September 2026. Its 495 polling stations in 38 constituencies and eight-region footprint, pre-election assessment, and express limits on observing counts/results are retained. This preliminary regional observation is neither a nationwide audit nor a final mission report.',
+    accessDate: '2026-09-25', creators: ['African Union Election Observation Mission'], institution: 'African Union Commission, Political Affairs, Peace and Security Department',
+    publicationDate: '2026-06-03', evidenceRole: 'methodology', confidence: 'high', languages: ['English'],
+    sourceType: 'preliminary international election-observation mission statement', identifiers: { electionDate: '2026-06-01', observedStations: '495', observedConstituencies: '38' },
+    description: 'The AU mission’s preliminary appraisal of preparations, legal framework, campaign, observed polling and participation. It records the non-participation of Tigray and non-voting in some Amhara and Oromia constituencies, while reserving a full assessment of counting and results management for a later report.'
+  },
+  {
+    id: 'ethiopiaIgadElectionObservation2026',
+    label: 'IGAD Election Observation Mission — preliminary report on Ethiopia’s 1 June 2026 seventh general election',
+    url: 'https://igad.int/igad-election-observation-mission-to-the-7th-general-election-of-the-federal-democratic-republic-of-ethiopia-held-on-monday-june-1-2026-preliminary-report/',
+    note: 'IGAD’s preliminary report consulted on 25 September 2026 as a distinct regional observer account. It describes its own limited deployment and places that do not vote; favorable observations are not generalized beyond stations visited and are not a final or comprehensive nationwide assessment.',
+    accessDate: '2026-09-25', creators: ['Intergovernmental Authority on Development Election Observation Mission'], institution: 'Intergovernmental Authority on Development (IGAD)',
+    publicationDate: '2026-06-03', evidenceRole: 'methodology', confidence: 'high', languages: ['English'],
+    sourceType: 'preliminary regional election-observation report', identifiers: { electionDate: '2026-06-01', observers: '26 short-term observers' },
+    description: 'Preliminary regional observer account describing the legal framework, electoral administration and procedures at selected sites, alongside the absence of voting in Tigray and some Amhara areas. It is method-bounded and not a results audit.'
+  },
+  {
+    id: 'ethiopiaElectionReturnsAnalysis2026',
+    label: 'Ethio Elections / Ethiopia Insider — constituency-level analysis of Ethiopia’s seventh general-election returns',
+    url: 'https://ethioelections.com/2026/08/18442/',
+    note: 'Ethiopia Insider’s 28 August 2026 analysis states that it compared the constituency-level returns published by NEBE. It supplies a secondary reconstruction, not a Board-certified nationwide final table; its denominator (486 certified HoPR results) conflicts with a contemporaneous AP report describing 501 seats, so no percentage is calculated here.',
+    accessDate: '2026-09-25', creators: ['Ethio Elections / Ethiopia Insider'], institution: 'Ethiopia Insider',
+    publicationDate: '2026-08-28', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'independent election-data analysis based on published constituency returns', identifiers: { electionDate: '2026-06-01', dataHorizon: '2026-08-28' },
+    description: 'Secondary examination of published constituency results, unopposed races, party non-entry and competition across regions. Its quantitative findings rely on its own extraction and comparison of Board material, and should be checked against the underlying itemized records.'
+  },
+  {
+    id: 'ethiopiaApElectionResults2026',
+    label: 'Associated Press — reporting on Ethiopia’s 2026 general-election result and participation limits',
+    url: 'https://apnews.com/article/e74f12119a40465e31f4d18941dbf89b',
+    note: 'AP report of 21 June 2026 consulted for the final-results announcement and attributed opposition and observer concerns. It reports 438 of 501 House seats, whereas Ethiopia Insider’s later constituency-level reconstruction reports 486 certified results; the discrepancy is explicitly retained rather than harmonized by inference.',
+    accessDate: '2026-09-25', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-06-21', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news-agency report', identifiers: { electionDate: '2026-06-01', reportDate: '2026-06-21' },
+    description: 'Independent reporting on the official result, conflict-related polling interruptions, opposition complaints and the absence of Tigray from the election. Candidate and opposition assessments remain attributed; it is not a judicial or comprehensive observation finding.'
+  },
+  {
     id: 'campbellIslandKingdomTonga2015',
     label: 'Ian C. Campbell — Island Kingdom: Tonga Ancient and Modern',
     url: 'https://www.canterbury.ac.nz/about-uc/what-we-do/canterbury-university-press/canterbury-university-press-catalogue/island-kingdom-tonga-ancient-and-modern-third-edition',
