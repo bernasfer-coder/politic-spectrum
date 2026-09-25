@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 180);
-assert.equal(GEOGRAPHY_LABELS.length, 178);
+assert.equal(GEOGRAPHY_CASES.length, 181);
+assert.equal(GEOGRAPHY_LABELS.length, 179);
 const haitiTransition2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'haitian-2026-post-council-electoral-transition');
 assert.equal(haitiTransition2026?.datePrecision, 'snapshot');
 assert.equal(haitiTransition2026?.confidence, 'medium');
@@ -270,9 +270,12 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 155, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 156, 'the atlas should expose all dated post-2000 implemented cases');
 assert.equal(filterGeographyCases({ country: 'map-188' })[0].id, 'costa-rican-2026-national-election-and-transfer-of-office');
 assert.equal(filterGeographyCases({ country: 'map-222' })[0].id, 'el-salvador-2025-presidential-reelection-and-constitutional-reform');
+assert.equal(filterGeographyCases({ country: 'map-320' })[0].id, 'guatemala-2026-constitutional-court-renewal');
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'guatemala-constitutional-court-renewal-2026')?.countryIds[0], 'map-320');
+assert.ok(GEOGRAPHY_CASES.find(({ id }) => id === 'guatemala-2026-constitutional-court-renewal')?.limitation.includes('no six-axis score'));
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'el-salvador-constitutional-reform-2025')?.countryIds[0], 'map-222');
 assert.ok(GEOGRAPHY_CASES.find(({ id }) => id === 'el-salvador-2025-presidential-reelection-and-constitutional-reform')?.limitation.includes('2027 election has not yet occurred'));
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'costa-rica')?.countryIds[0], 'map-188');
@@ -297,4 +300,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 180 dated cases, 178 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 181 dated cases, 179 unscored labels, citations, boundaries, filters and share URLs.');

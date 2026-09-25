@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(180);
+  await expect(page.locator('.geo-card')).toHaveCount(181);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -318,7 +318,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(180);
+  await expect(page.locator('.geo-card')).toHaveCount(181);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -369,5 +369,16 @@ test('El Salvador 2025 case distinguishes enacted rule changes from future elect
   await expect(card).toContainText('six years');
   await expect(card).toContainText('2027 election has not yet occurred');
   await expect(card).toContainText('no six-axis score is warranted');
+});
+
+test('Guatemala 2026 Constitutional Court case separates the official renewal from attributed process concerns', async ({ page }) => {
+  await page.goto('/#geography?case=guatemala-2026-constitutional-court-renewal');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('Ninth Magistracy');
+  await expect(card).toContainText('14 April 2026');
+  await expect(card).toContainText('Myrna Mack');
+  await expect(card).toContainText('none is event-specific scholarship on the 2026 appointments');
+  await expect(card).toContainText('no six-axis score');
 });
 

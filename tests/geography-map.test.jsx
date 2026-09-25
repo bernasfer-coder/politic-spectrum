@@ -120,7 +120,7 @@ describe('interactive atlas map', () => {
     expect(screen.getByRole('complementary', { name: 'Map selection' })).toHaveTextContent('Brazil');
   });
 
-  it('supports roving keyboard focus, Enter and Space without 178 tab stops', async () => {
+  it('supports roving keyboard focus, Enter and Space without creating a tab stop per country', async () => {
     const user = userEvent.setup();
     renderAtlas();
     const egypt = map().getByRole('button', { name: /Egypt:/ });
@@ -174,7 +174,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(180);
+    expect(cards()).toHaveLength(181);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });
