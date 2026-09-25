@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(205);
+  await expect(page.locator('.geo-card')).toHaveCount(206);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -525,7 +525,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(205);
+  await expect(page.locator('.geo-card')).toHaveCount(206);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -712,5 +712,16 @@ test('Eritrea case distinguishes ratified constitutional design from later imple
   await expect(card).toContainText('The Eritrean Government’s own 2024 UPR report');
   await expect(card).toContainText('No two full-text, independent book-length analyses');
   await expect(card).toContainText('no six-axis score is assigned');
+});
+
+test('Missouri map litigation preserves the conflicting rulings and pre-deadline uncertainty', async ({ page }) => {
+  await page.goto('/#geography?case=missouri-2026-congressional-map-referendum-and-litigation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('did not decide the separate federal question');
+  await expect(card).toContainText('until 5 p.m. Central time on 28 September');
+  await expect(card).toContainText('no later disposition listed at the 25 September review');
+  await expect(card).toContainText('Gerrymandering” is not asserted here as a judicial finding');
+  await expect(card).toContainText('No ideological classification or six-axis score applies');
 });
 
