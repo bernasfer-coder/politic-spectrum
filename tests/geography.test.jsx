@@ -48,6 +48,19 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('No event-specific book-length analysis was located');
   });
 
+  it('shows Brazil’s 2026 general election only as a dated pre-election record', () => {
+    window.history.replaceState(null, '', '/#geography?case=brazil-2026-general-election-pre-election-snapshot');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('first round scheduled for 4 October');
+    expect(cards()[0]).toHaveTextContent('20,982');
+    expect(cards()[0]).toHaveTextContent('205 processes pending');
+    expect(cards()[0]).toHaveTextContent('980 decided matters still within an appeal period or under challenge');
+    expect(cards()[0]).toHaveTextContent('not evidence of actual threat prevalence');
+    expect(cards()[0]).toHaveTextContent('not a live update, forecast, result');
+    expect(cards()[0]).toHaveTextContent('No candidate is assigned an ideology');
+  });
+
   it('shows São Tomé and Príncipe’s 2026 parliamentary election only as a sourced pre-election snapshot', () => {
     window.history.replaceState(null, '', '/#geography?case=sao-tome-2026-national-assembly-election-pre-election');
     renderAtlas();

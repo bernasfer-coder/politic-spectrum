@@ -119,6 +119,21 @@ test('São Tomé and Príncipe election remains a pre-poll case and is reachable
   await expect(card).toHaveCount(1);
 });
 
+test('Brazil 2026 election snapshot distinguishes TSE-reported registration status from security planning', async ({ page }) => {
+  await page.goto('/#geography?case=brazil-2026-general-election-pre-election-snapshot');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('first round scheduled for 4 October');
+  await expect(card).toContainText('20,982 national candidacy-registration requests (99.02%)');
+  await expect(card).toContainText('205 processes pending');
+  await expect(card).toContainText('980 decided matters still within an appeal period or under challenge');
+  await expect(card).toContainText('not evidence of actual threat prevalence');
+  await expect(card).toContainText('not a live update, forecast, result');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.getByRole('link', { name: /nationwide candidate-registration status/ })).toBeVisible();
+  await expect(card.getByRole('link', { name: /election-security planning meeting/ })).toBeVisible();
+});
+
 test('Ethiopia 2026 election preserves the seat-denominator discrepancy and limited observation scope', async ({ page }) => {
   await page.goto('/#geography?case=ethiopia-2026-seventh-general-election');
   const card = page.locator('.geo-card');

@@ -1485,6 +1485,24 @@ const sources = [
     description: 'TSE publication notice describing the interim campaign-account data then available through DivulgaCandContas. It anchors transparency infrastructure and a specific reporting period; the record does not infer campaign-finance equality or final financial compliance.'
   },
   {
+    id: 'brazilTseCandidateRegistrationStatus2026',
+    label: 'Tribunal Superior Eleitoral — nationwide candidate-registration status (15 September 2026; updated 22 September)',
+    url: 'https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/justica-eleitoral-julgou-mais-de-99-dos-pedidos-de-candidatura-para-as-eleicoes-2026',
+    note: 'Official Portuguese TSE report, initially published 15 September and updated 22 September, consulted 25 September 2026. It attributes to the TSE president a count of 20,982 requests adjudicated (99.02%), 205 pending, and 980 decided matters still within an appeal period or under challenge; all 13 presidential-ticket requests had been decided by 11 September, while a 14 September substitution request was then pending. These are dated institutional totals, not an independent audit, the final status of each case or proof of equal competition. No article wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: '2026-09-15', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official election-court report of nationwide candidate-registration caseload', identifiers: { initialReportDate: '2026-09-15', updated: '2026-09-22', adjudicatedRequests: 20982, pendingProcesses: 205, decidedCasesAppealableOrContested: 980, adjudicatedSharePercent: 99.02 },
+    description: 'The TSE reports its nationwide candidate-registration caseload and a dated remainder of pending or still-contestable cases. The figures describe the Court’s report, not an independently audited final tally or a measure of electoral fairness.'
+  },
+  {
+    id: 'brazilTsePfSecurityPlanning2026',
+    label: 'Tribunal Superior Eleitoral and Federal Police — election-security planning meeting (24 September 2026)',
+    url: 'https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/tse-e-pf-definem-planejamento-para-seguranca-das-eleicoes-2026',
+    note: 'Official Portuguese TSE account consulted 25 September 2026 about a 24 September planning meeting with Federal Police personnel. It describes intended coordination on electoral crimes, violence, cybercrime, hate-related crimes and organized crime, among other subjects. This is an institutional account of preparations and stated priorities, not evidence that threats occurred at a particular level, that protections were implemented, or that polling was safe. No statement wording or image is reproduced.',
+    accessDate: '2026-09-25', creators: ['Tribunal Superior Eleitoral', 'Polícia Federal'], institution: 'Tribunal Superior Eleitoral and Federal Police', publicationDate: '2026-09-24', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official election-security planning notice', identifiers: { meetingDate: '2026-09-24', electionDate: '2026-10-04', participantsReported: 253 },
+    description: 'TSE account of an election-security planning meeting with the Federal Police; it documents stated preparation and priorities, not completed action or a security assessment.'
+  },
+  {
     id: 'oasBrazilElectionMissionAgreement2026',
     label: 'Organization of American States — agreement for its 2026 Brazil election observation mission (13 August 2026)',
     url: 'https://oas.org/pt/centro_midia/fotonoticia.asp?sCodigo=FNP-144988',
