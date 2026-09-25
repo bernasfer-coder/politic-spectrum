@@ -4123,7 +4123,7 @@ const sources = [
     id: 'moroccoCndhPreliminary2026LeDesk',
     label: 'Conseil national des droits de l’Homme — preliminary observation report on Morocco’s 2026 legislative election (reported by Le Desk)',
     url: 'https://ledesk.ma/live-content/legislatives-2026-participation-religion-argent-ia-le-premier-bilan-du-cndh/',
-    note: 'Le Desk’s French-language report, updated 25 September 2026, summarizes the CNDH chair’s presentation of its preliminary observation report. The original report was not retrieved here; all findings and counts are attributed to the CNDH as reported by Le Desk. The outlet’s copyright notice prohibits republication; this record supports original paraphrase and link only, not quotations or copied data tables.',
+    note: 'Le Desk’s French-language report, updated 25 September 2026, summarizes the CNDH chair’s presentation of its preliminary observation report. The full Arabic report is now separately cited from the CNDH repository; this news account remains secondary corroboration and its attributions are not counted as independent CNDH observations. The outlet’s copyright notice prohibits republication; link and original paraphrase only, no quotations or copied data tables.',
     accessDate: '2026-09-25', creators: ['Conseil national des droits de l’Homme (CNDH), findings as reported by Le Desk'], institution: 'Le Desk / Pulse Media',
     publicationDate: '2026-09-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
     sourceType: 'independent news report of a national human-rights institution’s preliminary election-observation findings', identifiers: { electionDate: '2026-09-23', reportStatus: 'preliminary', updated: '2026-09-25' },
@@ -4138,6 +4138,17 @@ const sources = [
     publicationDate: '2026-09-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish rendering of institutional briefing'],
     sourceType: 'state-news-agency relay of a national human-rights institution’s preliminary observation briefing', identifiers: { electionDate: '2026-09-23', reportStatus: 'preliminary' },
     description: 'Relays CNDH-reported observer coverage, its general description of polling-day conditions, recommendations on participation and access, and calls to publish investigation outcomes. It documents the Council’s attributed account only; sample-based observation cannot establish every polling place’s conditions or voters’ motives.'
+  },
+  {
+    id: 'moroccoCndhPreliminaryFullReport2026',
+    label: 'Conseil national des droits de l’Homme — Periodicity of elections and stakes of trust and participation: preliminary observation report (24 September 2026)',
+    url: 'https://cndh.ma/sites/default/files/2026-09/tqryr_mlahzt_alantkhabat_altshryyt_-_23_shtnbr_2026.pdf',
+    note: 'Official 52-page Arabic-language preliminary report released through the CNDH digital library on 24 September 2026 and consulted in full on 25 September. Counts, method and findings are paraphrased as the Council’s own preliminary observations. The report gives 733 of 1,538 communes and a minimum 3,915 observed polling stations against an approximate 40,700; this project does not recompute or repeat the report’s coverage percentage because its stated percentage does not reconcile with those rounded counts. No report wording, translation, table or facsimile is reproduced.',
+    accessDate: '2026-09-25', creators: ['Conseil national des droits de l’Homme (CNDH)'], institution: 'Conseil national des droits de l’Homme (Morocco)',
+    publicationDate: '2026-09-24', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic'],
+    sourceType: 'official 52-page preliminary national election-observation report / complete text consulted',
+    identifiers: { electionDate: '2026-09-23', reportStatus: 'preliminary', pages: '52', communesObserved: '733 of 1,538', minimumPollingStationsObserved: '3,915', approximatePollingStationsNationwide: '40,700', campaignObservers: '783', reviewedDigitalItems: '421', itemsReportedAiGeneratedOrModified: '116 (27.5%)' },
+    description: 'The CNDH describes its territorial sampling, campaign and polling-day observation, observer-access limits, two Tangier incidents referred for urgent investigation, preliminary procedural assessment, and participation/access recommendations. It reports that 116 of 421 digital items it reviewed were AI-generated or modified; that fraction describes the Council’s monitored material, not national prevalence. Its account is a primary source for what the institution observed and concluded, not an independent census, court finding or final election certification.'
   },
   {
     id: 'moroccoApLegislativeElection2026',
