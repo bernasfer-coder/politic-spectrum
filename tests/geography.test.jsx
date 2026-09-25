@@ -46,10 +46,22 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('no event-specific book-length analysis was located');
   });
 
+  it('shows Sweden’s bounded 2026 election result and keeps government formation unresolved', () => {
+    window.history.replaceState(null, '', '/#geography?case=sweden-2026-riksdag-election-and-government-formation');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('13–25 September 2026');
+    expect(cards()[0]).toHaveTextContent('Social Democrats 99');
+    expect(cards()[0]).toHaveTextContent('84.9 per cent');
+    expect(cards()[0]).toHaveTextContent('exploratory assignment, not her appointment');
+    expect(cards()[0]).toHaveTextContent('not be misreported as a full observation verdict');
+    expect(cards()[0]).toHaveTextContent('No score or permanent label for Sweden');
+  });
+
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(193);
+    expect(cards()).toHaveLength(194);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
