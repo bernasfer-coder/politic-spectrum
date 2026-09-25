@@ -127,6 +127,8 @@ assert.equal(eritreaTransition?.startYear, 1991);
 assert.equal(eritreaTransition?.endYear, 2026);
 assert.ok(eritreaTransition?.claim.includes('ratified Eritrea’s Constitution on 23 May 1997'));
 assert.ok(eritreaTransition?.claim.includes('the Constitution was never implemented'));
+assert.ok(eritreaTransition?.claim.includes('Riggan’s openly offered Introduction excerpt'));
+assert.ok(eritreaTransition?.claim.includes('not a representative account of Eritreans'));
 assert.ok(eritreaTransition?.limitation.includes('No two full-text, independent book-length analyses'));
 assert.ok(eritreaTransition?.limitation.includes('no six-axis score is assigned'));
 assert.ok(eritreaTransition?.sourceIds.includes('eritreaConstitution1997ConstituteProject'));
