@@ -35,6 +35,15 @@ test('DRC country polygon selects its single bounded conflict case', async ({ pa
   await expect(drc).toHaveAttribute('aria-pressed', 'true');
 });
 
+test('Seychelles election case is discoverable without a proxy country polygon', async ({ page }) => {
+  await page.goto('/#geography?place=seychelles-2025-general-election');
+  await expect(page.locator('.geo-card')).toHaveCount(1);
+  await expect(page.locator('.geo-card')).toContainText('30,823 votes');
+  await expect(page.locator('.geo-card')).toContainText('30,823 votes (47.3% of valid votes)');
+  await expect(page.locator('.geo-card')).toContainText('Final SADC and AU–COMESA reports were not located');
+});
+
+
 test('markers and cross-border controls select places, not invented countries', async ({ page }, testInfo) => {
   await page.goto('/#geography');
   await page.getByRole('button', { name: 'City & region markers', exact: true }).click();
