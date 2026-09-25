@@ -20,7 +20,7 @@ The public interface provides continent, region, country-locator, specific-place
 - No country, people or religion receives an ideological score. Related encyclopedia profiles are explicitly comparative, not aliases or exact matches.
 - Political-source handling is original synthesis and links only. No source prose, translated passage or image is republished. Abstract-only and selected-section consultations remain visible. The separately licensed map geometry is documented below.
 
-Geographic-case sources in `geography-sources.js` flow into the existing research registry, bibliography and rights records. Reused sources retain their original metadata and rights boundaries. The bibliography links back to individual cases. Recent additions include a separately bounded Colombia 2026 election-and-transition case; its observer reports, official records and older contextual books remain distinguished. No questionnaire, archetype or axis score is changed.
+Geographic-case sources in `geography-sources.js` flow into the existing research registry, bibliography and rights records. Reused sources retain their original metadata and rights boundaries. The bibliography links back to individual cases. Recent additions include separate, bounded Colombia 2026 and Tunisia 2024 election cases; official results, legal records, observer findings and older contextual books remain distinguished. No questionnaire, archetype or axis score is changed.
 
 ## Interactive map
 
