@@ -53,7 +53,7 @@ describe('geographic atlas', () => {
     renderAtlas();
     expect(cards()).toHaveLength(1);
     expect(cards()[0]).toHaveTextContent('27 September 2026');
-    expect(cards()[0]).toHaveTextContent('no findings about the 27 September vote');
+    expect(cards()[0]).toHaveTextContent('neither observer mission had published findings on the 27 September vote');
     expect(cards()[0]).toHaveTextContent('No voting, counting, certified results');
     expect(cards()[0]).toHaveTextContent('no ideological label or six-axis score');
   });
