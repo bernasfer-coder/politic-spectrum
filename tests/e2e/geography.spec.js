@@ -189,12 +189,17 @@ test('Gambia 2026 election remains a pre-election snapshot with the timetable co
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('5 December 2026');
-  await expect(card).toContainText('disagreement with the Commission’s published calendar');
+  await expect(card).toContainText('three records agree on the planned 5 December poll');
+  await expect(card).toContainText('30 October–5 November');
+  await expect(card).toContainText('9 November–2 December');
+  await expect(card).toContainText('3–14 November');
   await expect(card).toContainText('had not taken place');
   await expect(card).toContainText('National Builders Party, Gambia Labour Party and National Democratic Party');
   await expect(card).toContainText('do not say those parties will field presidential candidates');
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href*="gambiaIecElectoralCalendar2026-2027"]')).toBeVisible();
+  await expect(card.locator('a[href*="gambiaIecPresidentialNominationEvent2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="gambiaIecCampaignEvent2026"]')).toBeVisible();
   await expect(card.locator('a[href*="gambiaIecNationalBuildersRegistration2026"]')).toBeVisible();
   await expect(card.locator('a[href*="gambiaIecLabourPartyRegistration2026"]')).toBeVisible();
   await expect(card.locator('a[href*="gambiaIecNationalDemocraticRegistration2026"]')).toBeVisible();
