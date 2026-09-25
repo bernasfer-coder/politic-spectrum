@@ -735,6 +735,8 @@ test('South Sudan transition distinguishes legal instruments, caretaker reportin
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('R-ARCSS');
   await expect(card).toContainText('continuing fighting');
+  await expect(card).toContainText('voter registration had not started');
+  await expect(card).toContainText('not evidence of subsequent status or an assessment of national election readiness');
   await expect(card).toContainText('SSBC’s separate parliamentary-passage report says 332');
   await expect(card).toContainText('the authenticated 2026 Act/Gazette');
   await expect(card).toContainText('the order itself was not retrieved');
@@ -742,6 +744,8 @@ test('South Sudan transition distinguishes legal instruments, caretaker reportin
   await expect(card).toContainText('attributed competing political positions');
   await expect(card).toContainText('does not warrant one ideological label or six-axis placement');
   await expect(card).toContainText('no six-axis score is inferred');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href="#bibliography/research-southSudanNecNoRegistrationStatement2026"]')).toBeVisible();
 });
 
 test('Eritrea case distinguishes ratified constitutional design from later implementation', async ({ page }) => {

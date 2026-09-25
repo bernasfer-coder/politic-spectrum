@@ -187,11 +187,14 @@ assert.ok(southSudanTransition?.claim.includes('not independent evidence of broa
 assert.ok(southSudanTransition?.claim.includes('attributed competing political positions'));
 assert.ok(southSudanTransition?.limitation.includes('Republican Order text'));
 assert.ok(southSudanTransition?.claim.includes('does not warrant one ideological label or six-axis placement'));
+assert.ok(southSudanTransition?.claim.includes('On 2 September the NEC spokesperson stated that voter registration had not started'));
+assert.ok(southSudanTransition?.claim.includes('This is the NEC’s dated institutional account, not evidence of subsequent status'));
 assert.ok(southSudanTransition?.limitation.includes('no six-axis score is inferred'));
 assert.ok(southSudanTransition?.limitation.includes('South Sudanese-language scholarship'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanRarcss2018'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanUnSgReport2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanAuPsc1364Communique2026'));
+assert.ok(southSudanTransition?.sourceIds.includes('southSudanNecNoRegistrationStatement2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanElectionsActAssentSsbc2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanTransitionDissolutionSsbc2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanRepublicanOrderRadioTamazuj2026'));
