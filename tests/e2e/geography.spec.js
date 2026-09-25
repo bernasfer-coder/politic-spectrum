@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(210);
+  await expect(page.locator('.geo-card')).toHaveCount(211);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -553,7 +553,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(210);
+  await expect(page.locator('.geo-card')).toHaveCount(211);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -786,5 +786,19 @@ test('Lusaka mayoral petition separates attributed allegations, procedure and wi
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href*="zambiaLocalGovernmentElectionsTribunalRules2026"]')).toBeVisible();
   await expect(card.locator('a[href*="lusakaMayorPetitionWithdrawalLusakaTimes2026"]')).toBeVisible();
+});
+
+test('Beirut municipal-election case distinguishes statutory law from the reported parity convention', async ({ page }) => {
+  await page.goto('/#geography?case=beirut-2025-municipal-election-and-council-balance');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('40,251 votes');
+  await expect(card).toContainText('rather than a municipal-law quota');
+  await expect(card).toContainText('24-member city council');
+  await expect(card).toContainText('No event-specific book-length study was located in this review');
+  await expect(card).toContainText('no six-axis score is assigned');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="beirutMunicipalResults2025MoimPdf"]')).toBeVisible();
+  await expect(card.locator('a[href*="reconstructingBeirutSawalha2010"]')).toBeVisible();
 });
 
