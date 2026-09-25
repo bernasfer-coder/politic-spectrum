@@ -143,6 +143,16 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('page does not display a publication or revision date');
   });
 
+  it('keeps Bosnia’s late scanner-delivery statement distinct from completed election readiness', () => {
+    window.history.replaceState(null, '', '/#geography?case=bosnia-and-herzegovina-general-election-2026');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('all scanners designated for the election had arrived in the country');
+    expect(cards()[0]).toHaveTextContent('distribution of devices and ballots to municipal and city commissions was scheduled to begin on 27 September');
+    expect(cards()[0]).toHaveTextContent('not a receipt or inventory record');
+    expect(cards()[0]).toHaveTextContent('does not establish acceptance, configuration, local delivery, operator training or subsequent implementation');
+  });
+
   it('shows France’s 2027 budget timetable as prospective, not as an enacted outcome', () => {
     window.history.replaceState(null, '', '/#geography?case=france-2024-2026-minority-government-and-budget-crisis');
     renderAtlas();

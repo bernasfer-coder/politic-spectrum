@@ -205,6 +205,18 @@ test('Gambia 2026 election remains a pre-election snapshot with the timetable co
   await expect(card.locator('a[href*="gambiaIecNationalDemocraticRegistration2026"]')).toBeVisible();
 });
 
+test('Bosnia 2026 pre-election snapshot distinguishes reported scanner arrival from readiness', async ({ page }) => {
+  await page.goto('/#geography?case=bosnia-and-herzegovina-general-election-2026');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('all scanners designated for the election had arrived in the country');
+  await expect(card).toContainText('distribution of devices and ballots to municipal and city commissions was scheduled to begin on 27 September');
+  await expect(card).toContainText('not a receipt or inventory record');
+  await expect(card).toContainText('does not establish acceptance, configuration, local delivery, operator training or subsequent implementation');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="bihFenaScannerDeliveryUpdate2026"]')).toBeVisible();
+});
+
 test('Peru 2026 election case keeps official returns distinct from observer assessments', async ({ page }) => {
   await page.goto('/#geography?case=peru-2026-general-election-and-runoff');
   const card = page.locator('.geo-card');
