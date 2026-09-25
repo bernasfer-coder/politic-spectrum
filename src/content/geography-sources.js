@@ -9685,6 +9685,62 @@ const sources = [
     note: 'Chapter 6 in Yerkes (ed.), Geopolitics and Governance in North Africa (Edinburgh University Press, 2023). Publisher record supplies contextual metadata; later events are not covered and the chapter was not read in full for this case.',
     accessDate: '2026-09-24', creators: ['Anouar Boukhars'], institution: 'Edinburgh University Press', publicationDate: '2023', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'academic edited-book chapter on Algerian state and civil–military relations', identifiers: { chapter: '6', pages: '168-193' }, description: 'Book-chapter context for civilian authority and the Algerian state, not evidence of the later election episodes.'
   },
+  {
+    id: 'polandNecPresidentialResults2025', label: 'Polish National Electoral Commission — 2025 presidential election final result announcement',
+    url: 'https://info.pkw.gov.pl/uploaded_files/1748873119_obwieszczenie-pkw-o-wynikach-ponowne-glosowanie.pdf',
+    note: 'Official Polish-language final result announcement for the 1 June 2025 presidential run-off. Used for the certified totals only; no table, image or wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Państwowa Komisja Wyborcza'], institution: 'National Electoral Commission of Poland', publicationDate: '2025-06-02', evidenceRole: 'primary', confidence: 'high', languages: ['Polish'],
+    sourceType: 'official election result announcement', identifiers: { electionDate: '2025-06-01' }, description: 'The Commission announced the final presidential run-off results. Certification is distinguished from observer assessment and voter motivation.'
+  },
+  {
+    id: 'polandOdihrPresidentialElectionFinal2025', label: 'OSCE/ODIHR — Poland presidential election, 18 May and 1 June 2025, Limited Election Observation Mission final report',
+    url: 'https://cdn.osce.org/sites/default/files/f/documents/2/b/599685_0.pdf',
+    note: 'Final report of a limited election observation mission published 20 October 2025. Its own methodology states election-day observation was not systematic or comprehensive. Findings are attributed to the mission; no report wording or tables are reproduced.',
+    accessDate: '2026-09-25', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'OSCE/ODIHR', publicationDate: '2025-10-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international limited election observation mission final report', identifiers: { pages: '45', electionDates: '2025-05-18; 2025-06-01' }, description: 'Independent observer assessment of campaign, administration, polling, dispute resolution and post-election developments. It is not a comprehensive recount or a judgment on the election’s legal validity.'
+  },
+  {
+    id: 'polandSupremeCourtValidation2025', label: 'Supreme Court of Poland — resolution I NSW 9779/25 on validity of the 2025 presidential election',
+    url: 'https://www.sn.pl/pl/wszystkie-filmy/wybory-prezydenta-2025-posiedzenie-calego-sk%C5%82adu',
+    note: 'Court communication concerning the 1 July 2025 resolution by the Chamber of Extraordinary Control and Public Affairs. Used to record the chamber’s formal decision, not to settle the separate controversy over its standing or independence.',
+    accessDate: '2026-09-25', creators: ['Sąd Najwyższy'], institution: 'Supreme Court of Poland', publicationDate: '2025-07-01', evidenceRole: 'primary', confidence: 'high', languages: ['Polish'],
+    sourceType: 'official judicial communication and election-validity resolution', identifiers: { caseNumber: 'I NSW 9779/25', resolutionDate: '2025-07-01' }, description: 'The Court records that the chamber resolved that the election was valid. ODIHR separately discusses procedural transparency and concerns about the chamber.'
+  },
+  {
+    id: 'polandProsecutorBallotReview2025', label: 'Polish Prosecutor General — coordinated investigations into alleged election-related offences and ballot review',
+    url: 'https://www.gov.pl/web/prokuratura-krajowa/wybory-prezydenckie',
+    note: 'Official prosecutor communications, including correction of reported totals on 6 August 2025. Describes expert review of a non-random, model-selected sample of polling stations and ongoing investigations; not a nationwide representative recount or final judicial determination.',
+    accessDate: '2026-09-25', creators: ['Prokuratura Krajowa'], institution: 'National Public Prosecutor’s Office of Poland', publicationDate: '2025-08-06', evidenceRole: 'primary', confidence: 'medium', languages: ['Polish'],
+    sourceType: 'official prosecutorial investigation update', identifiers: { sampleSize: '250 selected precincts', updateDate: '2025-08-06' }, description: 'Reports the prosecutor’s investigative process and corrected discrepancies in selected ballot reviews. The selection method and procedural status limit generalization.'
+  },
+  {
+    id: 'polandSejmPresidentialOath2025', label: 'Sejm of the Republic of Poland — National Assembly record and presidential oath, 6 August 2025',
+    url: 'https://eli.sejm.gov.pl/eli/MP/2025/867/ogl/pol',
+    note: 'Official Polish-language parliamentary record of the National Assembly convened for the newly elected President’s oath. Used only to date the formal oath/assumption of office; no source wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Zgromadzenie Narodowe'], institution: 'Sejm of the Republic of Poland / National Assembly', publicationDate: '2025-08-06', evidenceRole: 'primary', confidence: 'high', languages: ['Polish'],
+    sourceType: 'official parliamentary record', identifiers: { legalGazette: 'Monitor Polski 2025 item 867', date: '2025-08-06' }, description: 'The official record documents the constitutional oath. It does not establish unanimity or public consent.'
+  },
+  {
+    id: 'polandEchrDoliskaFicek2021', label: 'European Court of Human Rights — Dolińska-Ficek and Ozimek v. Poland, judgment',
+    url: 'https://hudoc.echr.coe.int/app/conversion/pdf/?filename=Judgment+Dolinska-Ficek+and+Ozimek+v.+Poland+-+Poland+must+take+rapid+action+to+resolve+the+lack+of+independence+of+the+National+Council+of+the+Judiciary.pdf&id=003-7174935-9736233&library=ECHR',
+    note: 'ECHR judgment of 8 November 2021 concerning judicial appointment and the Chamber of Extraordinary Control and Public Affairs in a separate civil case. It is cited solely for institutional context; it did not concern the 2025 election.',
+    accessDate: '2026-09-25', creators: ['European Court of Human Rights'], institution: 'Council of Europe', publicationDate: '2021-11-08', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international human-rights court judgment', identifiers: { applicationNumbers: '49868/19 and 57511/19', judgmentDate: '2021-11-08' }, description: 'The Court found an Article 6 violation in the applicants’ cases linked to judicial appointment guarantees. The judgment is not a ruling on Polish election validity.'
+  },
+  {
+    id: 'polandSadurskiConstitutionalBreakdown2019', label: 'Wojciech Sadurski — Poland’s Constitutional Breakdown',
+    url: 'https://academic.oup.com/book/35012',
+    note: 'Book-level context based on Oxford University Press publisher metadata and description; the monograph predates the 2025 election and its full text was not consulted for this case. It is not event evidence.',
+    accessDate: '2026-09-25', creators: ['Wojciech Sadurski'], institution: 'Oxford University Press', publicationDate: '2019-05-16', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly monograph (publisher record/description consulted)', identifiers: { isbn: '9780198840503', doi: '10.1093/oso/9780198840503.001.0001' }, description: 'A book-length analysis of changes to Poland’s constitutional and rule-of-law institutions from 2015 through 2019, used only as historical background.'
+  },
+  {
+    id: 'polandOxfordHandbookPolitics2025', label: 'Katarzyna Walecka, Simona Guerra and Fernando Casal Bértoa (eds.) — The Oxford Handbook of Polish Politics',
+    url: 'https://academic.oup.com/edited-volume/61792',
+    note: 'Publisher record and contents consulted for book-level contemporary political context; the volume appeared after the election and its full text was not consulted. It is not evidence about the 2025 result or dispute.',
+    accessDate: '2026-09-25', creators: ['Katarzyna Walecka', 'Simona Guerra', 'Fernando Casal Bértoa'], institution: 'Oxford University Press', publicationDate: '2025-12-18', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly edited volume (publisher record/contents consulted)', identifiers: { isbn: '9780192873149', doi: '10.1093/oxfordhb/9780192873149.001.0001' }, description: 'Multi-author book-length reference on Polish politics, democratic transition and consolidation, institutions and party politics since 1989; publication postdates the episode.'
+  },
 ];
 
 sources.push(
