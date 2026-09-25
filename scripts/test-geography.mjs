@@ -51,6 +51,7 @@ assert.ok(nasserEgypt?.claim.includes('Radwan’s full-text preliminary ILO work
 assert.ok(nasserEgypt?.claim.includes('constructed household-budget poverty estimates'));
 assert.ok(nasserEgypt?.limitation.includes('does not establish causal effects attributable only to reform'));
 assert.ok(nasserEgypt?.limitation.includes('Mayfield’s publisher summary and contents'));
+assert.ok(nasserEgypt?.limitation.includes('not the relevant book chapters'));
 assert.ok(nasserEgypt?.claim.includes('do not establish a single timeless Nasserist doctrine'));
 assert.ok(nasserEgypt?.limitation.includes('president from the 1952 takeover'));
 assert.ok(nasserEgypt?.limitation.includes('OCR text was not checked against the facsimile'));
