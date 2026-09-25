@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 173);
-assert.equal(GEOGRAPHY_LABELS.length, 171);
+assert.equal(GEOGRAPHY_CASES.length, 174);
+assert.equal(GEOGRAPHY_LABELS.length, 172);
 const haitiTransition2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'haitian-2026-post-council-electoral-transition');
 assert.equal(haitiTransition2026?.datePrecision, 'snapshot');
 assert.equal(haitiTransition2026?.confidence, 'medium');
@@ -154,6 +154,12 @@ assert.equal(filterGeographyCases({ country: 'algeria' })[0].id, 'algerian-postw
 assert.ok(filterGeographyCases({ country: 'algeria' }).some(({ id }) => id === 'algerian-2024-2026-constitutional-and-electoral-contestation'));
 assert.equal(filterGeographyCases({ country: 'tunisia' })[0].id, 'tunisian-revolutionary-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'libya' })[0].id, 'libyan-postcolonial-fragmented-constitutional-transition');
+const libya2026 = filterGeographyCases({ country: 'libya' }).find(({ id }) => id === 'libyan-2026-smaller-convening-electoral-agreement');
+assert.equal(libya2026?.datePrecision, 'snapshot');
+assert.equal(libya2026?.relationship, 'advocated');
+assert.match(libya2026?.claim ?? '', /not proof that a unified executive or revised legal framework had been established/);
+assert.match(libya2026?.limitation ?? '', /does not establish the High Council of State’s institutional position/);
+assert.ok(libya2026?.sourceIds.includes('libyaSmallerConveningFollowup2026'));
 assert.equal(filterGeographyCases({ country: 'morocco' })[0].id, 'moroccan-constitutional-monarchical-reform-transition');
 assert.ok(filterGeographyCases({ country: 'morocco' }).some(({ id }) => id === 'moroccan-post-2021-coalition-and-social-protection-horizon'));
 assert.equal(filterGeographyCases({ country: 'vietnam' })[0].id, 'vietnamese-socialist-constitutional-doi-moi-transition');
@@ -271,4 +277,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 173 dated cases, 171 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 174 dated cases, 172 unscored labels, citations, boundaries, filters and share URLs.');
