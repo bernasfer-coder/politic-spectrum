@@ -41,6 +41,21 @@ test('shared cases link to the encyclopedia and bibliography, and return to the 
   await expect(card).toHaveCount(1);
 });
 
+test('Iran case distinguishes official protest tolls, UN findings and evidence limits', async ({ page }) => {
+  await page.goto('/#geography?case=iranian-postrevolutionary-constitutional-and-electoral-order');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('3,038 killed and 25,000 injured');
+  await expect(card).toContainText('could not determine a total under its methodology');
+  await expect(card).toContainText('not a judicial judgment');
+  await expect(card).toContainText('no 2025–2026 score');
+  await card.locator('.geo-evidence summary').click();
+  const reportLink = card.locator('a[href="#bibliography/research-iranFactFindingMissionHRC6361-2026"]');
+  await expect(reportLink).toBeVisible();
+  await reportLink.click();
+  await expect(page).toHaveURL(/#bibliography\/research-iranFactFindingMissionHRC6361-2026$/);
+});
+
 test('Bolivia 2025 case presents the official count discrepancy and limits', async ({ page }) => {
   await page.goto('/#geography?case=bolivia-2025-elections-and-executive-transition');
   const card = page.locator('.geo-card');
