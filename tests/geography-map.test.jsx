@@ -130,7 +130,8 @@ describe('interactive atlas map', () => {
     await user.keyboard('{ArrowRight}');
     expect(document.activeElement).toHaveAttribute('data-country', 'map-222');
     await user.keyboard(' ');
-    expect(cards()).toHaveLength(0);
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('El Salvador’s 2025 presidential-reelection and constitutional reform');
     expect(window.location.hash).toContain('country=map-222');
     expect(map().getAllByRole('button').filter((item) => item.tabIndex === 0)).toHaveLength(1);
   });
@@ -173,7 +174,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(179);
+    expect(cards()).toHaveLength(180);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });

@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(179);
+  await expect(page.locator('.geo-card')).toHaveCount(180);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -318,7 +318,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(179);
+  await expect(page.locator('.geo-card')).toHaveCount(180);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -359,5 +359,15 @@ test('Costa Rica 2026 case separates certified election results and institutiona
   await expect(card).toContainText('31 seats');
   await expect(card).toContainText('does not measure campaign equality');
   await expect(card).toContainText('institutional tensions');
+});
+
+test('El Salvador 2025 case distinguishes enacted rule changes from future election outcomes', async ({ page }) => {
+  await page.goto('/#geography?case=el-salvador-2025-presidential-reelection-and-constitutional-reform');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('Decree No. 371');
+  await expect(card).toContainText('six years');
+  await expect(card).toContainText('2027 election has not yet occurred');
+  await expect(card).toContainText('no six-axis score is warranted');
 });
 
