@@ -2838,6 +2838,47 @@ GEOGRAPHY_CASES.push(caseRecord({
   locator: 'Electoral Commission of Seychelles, 2025 Elections reports page, First Ballot Election Report (2025), Second Ballot Election Report (2025), and Elections Act, Cap. 262, ss. 37–38; Seychelles Gazette, Extraordinary Gazette No. 73, 16 October 2025, election declaration; SADC Electoral Observation Mission preliminary statement, September 2025; AU–COMESA and OIF preliminary statements; State House inauguration notice, 26 October 2025. Historical context: Campling, Confiance and Purvis (2011), full text consulted; Robinson (2023), publisher metadata and scholarly review consulted.'
 }));
 
+GEOGRAPHY_PLACES.push({
+  id: 'mauritius-2024-national-assembly-election',
+  name: 'Mauritius — 2024 National Assembly election and government transition',
+  type: 'Country / bounded parliamentary election, temporary platform-access restriction and transfer of government (2024)',
+  countryIds: [],
+  continents: ['Africa'],
+  regions: ['East Africa', 'Indian Ocean'],
+  modernLocation: 'Republic of Mauritius, Indian Ocean',
+  note: 'Limited to the 10 November 2024 National Assembly election, the election-period social-media access suspension and its 2 November lifting, the directly elected returns and the 13 November prime-ministerial oath. Mauritius has no dedicated geometry in the current 1:110m map, so no proxy country locator is assigned. The case does not characterize Mauritius, Mauritians, communities, parties, candidates or voters as a whole.'
+});
+
+GEOGRAPHY_LABELS.push({
+  id: 'mauritius-2024-election-and-transition',
+  name: 'Mauritius’ 2024 National Assembly election and transition',
+  aliases: ['Mauritius general election 2024', 'Mauritius National Assembly election 2024', 'Mauritius social media suspension 2024'],
+  family: 'Mauritian constitutional and electoral politics; election administration and communications access',
+  description: 'A bounded record of the 10 November 2024 National Assembly election, official directly elected returns, a temporary election-period social-media access suspension lifted before polling, preliminary observer assessments and the subsequent prime-ministerial oath. Official results, observer judgments, the regulator’s notice and press-reported details of the initial directive are kept distinct. This label is not an ideological classification of Mauritius, any community, party, candidate or voter and has no six-axis score.',
+  sourceIds: ['mauritiusEcs2024ElectionPage', 'mauritiusEcsDirectReturns2024', 'mauritiusICTALift2024', 'mauritiusApSocialMediaRestriction2024', 'mauritiusSadcPreliminary2024', 'mauritiusAuPreliminary2024', 'mauritiusEriksenCommonDenominators1998', 'mauritiusSandbrookSocialDemocracy2007', 'mauritiusBunwareeKasenallyParties2005', 'mauritiusRamgoolamSwearingIn2024'],
+  relatedEntries: []
+});
+
+GEOGRAPHY_CASES.push(caseRecord({
+  id: 'mauritius-2024-national-assembly-election-and-transition',
+  labelId: 'mauritius-2024-election-and-transition',
+  placeId: 'mauritius-2024-national-assembly-election',
+  relationship: 'implemented',
+  actor: 'The Office of the Electoral Commissioner and Electoral Supervisory Commission; Alliance du Changement and Organisation du Peuple de Rodrigues; the Information and Communication Technologies Authority; SADC and African Union observer missions; and the incoming and outgoing government',
+  historicalSetting: 'Mauritius’s November 2024 National Assembly election, including a short-lived pre-polling social-media access suspension, directly elected constituency returns, observer missions’ preliminary assessments and the prime-ministerial changeover',
+  startYear: 2024,
+  endYear: 2024,
+  periodLabel: '31 October–13 November 2024 · National Assembly election and government transition',
+  datePrecision: 'snapshot',
+  evidenceKind: 'Official Electoral Commissioner election index and return letter; ICT Authority lifting notice; contemporaneous Associated Press reporting on the initial restriction; preliminary SADC and AU observer statements; official prime-ministerial swearing-in notice; book-length historical contexts and a party/democracy research report consulted bibliographically only',
+  confidence: 'medium',
+  reviewedAt: '2026-09-25',
+  claim: 'The Office of the Electoral Commissioner’s 2024 National Assembly election portal dates the election to 10 November and indexes official election documents. Its letter to the Electoral Supervisory Commission, dated 12 November, identifies 60 successful Alliance du Changement candidates in Mauritius’s 20 constituencies and two successful Organisation du Peuple de Rodrigues candidates in Rodrigues: the 62 directly elected constituency returns. The Commission letter’s file title refers to additional seats, but the cited successful-candidate text is not treated as an additional-seat determination. The Government Information Service records Navinchandra Ramgoolam’s oath as Prime Minister on 13 November. Separately, AP reported that authorities ordered social-media access suspended from 31 October through the planned 11 November end date, with the government attributing the measure to national security after leaked call recordings. The recordings’ authenticity and the rationale are not established by the sources used here. The ICT Authority’s notice says that, following review and stakeholder consultation, the suspension was lifted with immediate effect on 2 November, before polling. SADC and AU statements are preliminary observer assessments rather than final reports or legal findings. The AU statement reports 50 observers deployed in nine districts, visits to 191 polling centres and 165 women among 891 candidates; these are mission-reported scope and nomination figures, not a national survey of polling practice or evidence about voter preferences. The two book-length works provide different pre-2024 contexts: Eriksen’s anthropological study of nation-building and political culture, and Sandbrook, Edelman, Heller and Teichman’s comparative political-economy chapter on Mauritius; only publisher/catalogue records or abstracts were consulted, and neither studies this election. Bunwaree and Kasenally’s 62-page EISA report is a focused earlier study of parties and democracy, but its full text was not consulted here and it is not counted as a book-length monograph. These materials support an account of this election episode, not a durable ideological label or six-axis score for Mauritius, any party, community, candidate or electorate.',
+  limitation: 'Snapshot through 25 September 2026 about events in November 2024. The Electoral Commissioner’s return letter establishes successful directly elected constituency candidates but the additional-seat process is not analyzed here. Official turnout data were excluded because institutional reports reviewed in this research use incompatible denominators and could not be reconciled to primary return-level records; no turnout rate is asserted. The regulator’s retrieved primary notice documents the lifting, while the initial directive and its terms/reasoning are described by AP and attributed to government; the directive itself, any court record, technical blocking measurements and affected-user evidence were not retrieved. SADC and AU statements are preliminary, have different mandates and observation coverage, and promised fuller reports; no final report was located in this review. Observer characterizations are attributed rather than treated as independent adjudications. Book-level works are contextual and publisher/abstract-level only, not event-specific or read in full; the EISA report is bibliographic-context only. French-language primary scholarship, complete local election-observation reports, systematic media-access evidence, individual voter experience, campaign and constituency-level analysis, and event-specific book-length research remain gaps. No collective voter motive, party ideology, country-wide ideological placement or score is inferred.',
+  sourceIds: ['mauritiusEcs2024ElectionPage', 'mauritiusEcsDirectReturns2024', 'mauritiusICTALift2024', 'mauritiusApSocialMediaRestriction2024', 'mauritiusSadcPreliminary2024', 'mauritiusAuPreliminary2024', 'mauritiusEriksenCommonDenominators1998', 'mauritiusSandbrookSocialDemocracy2007', 'mauritiusBunwareeKasenallyParties2005', 'mauritiusRamgoolamSwearingIn2024'],
+  locator: 'Office of the Electoral Commissioner, National Assembly Election 2024 page and letter EC/121/NAE/24 to the Electoral Supervisory Commission (12 November 2024); Information and Communication Technologies Authority communiqué (2 November 2024); Associated Press (1 November 2024); SADC and African Union preliminary observation statements (12 November 2024); Government Information Service, prime-ministerial oath notice (13 November 2024). Context only: Eriksen (1998) Routledge publisher record; Sandbrook et al. (2007), chapter 5 Cambridge University Press record/abstract; Bunwaree and Kasenally (2005), EISA Research Report 19 catalogue record.'
+}));
+
 GEOGRAPHY_CASES.sort((a, b) => a.startYear - b.startYear);
 
 const bosniaElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'bosnia-and-herzegovina-general-election-2026');
