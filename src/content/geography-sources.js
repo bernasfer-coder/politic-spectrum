@@ -1456,6 +1456,42 @@ const sources = [
     description: 'Book-length study of unresolved transition dilemmas, democratic instability since 2013, Bolsonaro-era backsliding, army self-restraint, institutional change, judicial politicization, Bolsonarismo and the difficult 2023 recovery. It supplies an independent institutional-crisis perspective, not a complete account of the 2025 judgment or every post-2025 development.'
   },
   {
+    id: 'brazilTseElection2026Portal',
+    label: 'Tribunal Superior Eleitoral — Eleições 2026 portal and calendar',
+    url: 'https://www.tse.jus.br/eleicoes/eleicoes-2026',
+    note: 'Official Portuguese TSE elections portal consulted 25 September 2026 for the general-election framework, dates, candidate and finance disclosure links, and the 14 September substitution deadline (subject to statutory exceptions). It is a changing institutional information page, not a final results record, independent audit or assessment of practical equality. No text or graphic is reproduced.',
+    accessDate: '2026-09-25', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official election administration portal and calendar', identifiers: { electionYear: '2026', firstRound: '2026-10-04', possibleSecondRound: '2026-10-25', snapshotDate: '2026-09-25' },
+    description: 'The TSE portal and calendar establish the scheduled 2026 general-election dates and link to candidature, account-disclosure and result services. At this pre-election cutoff they establish planned procedures, not voting, results, observation findings or the fulfilment of access guarantees.'
+  },
+  {
+    id: 'brazilTsePresidentialCandidacies2026',
+    label: 'Tribunal Superior Eleitoral — 12 presidential candidacies for the 2026 election (11 September 2026)',
+    url: 'https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/eleicoes-2026-tem-12-candidaturas-na-disputa-pela-presidencia-da-republica',
+    note: 'Official Portuguese TSE institutional report consulted 25 September 2026. It records the Electoral Court’s 11 September disposition of presidential-ticket registration requests, including approval of 12 tickets and denial of one named request on stated statutory grounds. This is a dated account of registration decisions, not a final election result, measure of competitiveness or view about the merits of candidates’ political claims. No decision text or news wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: '2026-09-11', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official electoral-court candidate-registration report', identifiers: { electionYear: '2026', office: 'President and Vice-President', decisionDate: '2026-09-11', registeredTicketsAtCutoff: 12 },
+    description: 'The TSE reports that it completed the reviewed presidential-ticket registration decisions on 11 September, with 12 tickets approved and one request denied. This is the Court’s dated procedural account and should not be generalized to every office or treated as proof of a settled campaign environment.'
+  },
+  {
+    id: 'brazilTsePartialCampaignAccounts2026',
+    label: 'Tribunal Superior Eleitoral — partial 2026 campaign-finance disclosures (15 September 2026)',
+    url: 'https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/tse-disponibiliza-dados-da-prestacao-de-contas-parcial-das-campanhas-eleitorais',
+    note: 'Official Portuguese TSE account consulted 25 September 2026. It states that campaign partial accounts were filed 9–13 September and cover reported receipts, resources and spending through 8 September, with data then made public. These are interim campaign disclosures, not audited final accounts or a complete measure of campaign influence, access or compliance. No account totals are reproduced.',
+    accessDate: '2026-09-25', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral', publicationDate: '2026-09-15', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official election-finance disclosure notice', identifiers: { electionYear: '2026', filingWindow: '2026-09-09/2026-09-13', activityCoveredThrough: '2026-09-08', publicationDate: '2026-09-15' },
+    description: 'TSE publication notice describing the interim campaign-account data then available through DivulgaCandContas. It anchors transparency infrastructure and a specific reporting period; the record does not infer campaign-finance equality or final financial compliance.'
+  },
+  {
+    id: 'oasBrazilElectionMissionAgreement2026',
+    label: 'Organization of American States — agreement for its 2026 Brazil election observation mission (13 August 2026)',
+    url: 'https://oas.org/pt/centro_midia/fotonoticia.asp?sCodigo=FNP-144988',
+    note: 'Official Portuguese OAS notice consulted 25 September 2026. It reports the agreement on guarantees and immunities for an OAS Election Observation Mission and names its chief for the 4 October general election and possible 25 October runoff. At this cutoff this is evidence of an agreed and planned mission, not deployment, observer findings or certification. No statement wording or image is reproduced.',
+    accessDate: '2026-09-25', creators: ['Organization of American States'], institution: 'Organization of American States, Department of Electoral Cooperation and Observation', publicationDate: '2026-08-13', evidenceRole: 'secondary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'intergovernmental organization notice of planned election observation', identifiers: { electionYear: '2026', agreementDate: '2026-08-13', electionDates: ['2026-10-04', '2026-10-25'], missionStatusAtCutoff: 'planned; no findings yet' },
+    description: 'OAS reports a formal agreement with the Brazilian government enabling its planned observation mission. The notice documents preparation and institutional cooperation only, not observed conditions, recommendations or a judgment on the election.'
+  },
+  {
     id: 'knightMexicanRevolution1986',
     label: 'Alan Knight — The Mexican Revolution',
     url: 'https://search.worldcat.org/title/The-Mexican-Revolution/oclc/12135091',

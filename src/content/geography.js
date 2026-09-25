@@ -2313,4 +2313,40 @@ Object.assign(southKoreaCase, {
   locator: 'Korean Law Information Center Constitution; National Election Commission 22nd National Assembly statistics and 2025 presidential-election certification as reported by Korea.net; Constitutional Court case-search record for 2024Hun-Na8; Yonhap reports of the February 2026 first-instance insurrection verdict and April preliminary appeal hearing; Associated Press 22 September appellate-status notice; Im, Saxer, Guichard, Kwon, Doucette, Pardo, Kim and Lee–Kim book records.'
 });
 
+// A dated, pre-poll snapshot of Brazil's 2026 general election; no result or
+// post-election judgment is inferred before voting has taken place.
+const brazilPlace = GEOGRAPHY_PLACES.find(({ id }) => id === 'brazil');
+brazilPlace.type = 'Country / post-authoritarian constitutional and democratic-contestation history (1985–2026)';
+brazilPlace.note = 'The cases are bounded to Brazil’s 1985–1988 democratic transition and constitutional founding, post-1988 democratic institutions and participation, the 2022–2024 reconstruction and municipal-contestation horizon, the 2025 judicial-accountability horizon, and a 25 September 2026 pre-election snapshot. The 2026 election entry records scheduled procedures, presidential-ticket registration, interim finance disclosures and planned observation only; it makes no claim about the outcome or post-election conditions. These are not scores for Brazilians, parties, regions, social groups or later governments.';
+
+GEOGRAPHY_LABELS.push({
+  id: 'brazil-2026-general-election-pre-election-snapshot',
+  name: 'Brazil 2026 general election — pre-election snapshot',
+  aliases: ['Brazilian general election 2026', 'Brazil presidential election 2026', 'Brazil election campaign September 2026'],
+  family: 'Brazilian constitutional electoral administration and democratic contestation',
+  description: 'A time-bounded record of Brazil’s 2026 general election as of 25 September, before the scheduled 4 October first round. It documents formal election administration, the TSE’s dated presidential-ticket registration decisions, partial campaign-finance disclosure and an agreed but not-yet-reported OAS observation mission. It is not a forecast, result, election-integrity verdict, national ideological profile or account of voter motives.',
+  sourceIds: ['brazilTseElection2026Portal', 'brazilTsePresidentialCandidacies2026', 'brazilTsePartialCampaignAccounts2026', 'oasBrazilElectionMissionAgreement2026', 'brazilAvritzerRennoCrisisDemocracy2025', 'brazilSantosHatzikidiFacesAuthoritarianism2025', 'brazilAronneUrbanoVargasBolsonaro2025'],
+  relatedEntries: []
+});
+
+GEOGRAPHY_CASES.push({
+  id: 'brazil-2026-general-election-pre-election-snapshot',
+  labelId: 'brazil-2026-general-election-pre-election-snapshot',
+  placeId: 'brazil',
+  relationship: 'implemented',
+  actor: 'Tribunal Superior Eleitoral and other electoral authorities; registered presidential tickets and political parties; campaign organizations; the Organization of American States, whose observation mission was planned but had not yet reported findings by the snapshot date',
+  historicalSetting: 'Brazil’s post-1988 constitutional electoral order and the 2026 general election, scheduled for 4 October with a possible presidential runoff on 25 October; snapshot taken 25 September, before polling',
+  startYear: 2026,
+  endYear: 2026,
+  periodLabel: '25 September 2026 · pre-election snapshot (first round scheduled for 4 October)',
+  datePrecision: 'snapshot',
+  evidenceKind: 'TSE 2026 election portal and calendar; official TSE presidential-ticket registration and partial-account reports; OAS notice of an agreed and planned election observation mission; three distinct book-length scholarly contexts published 2024–2025, none of which analyzes this still-unheld election',
+  confidence: 'medium',
+  reviewedAt: '2026-09-25',
+  claim: 'As of 25 September 2026, Brazil’s general election had not yet taken place. The TSE’s election portal scheduled the first round for 4 October and a possible second round for 25 October. In a report dated 11 September, the TSE said it had concluded its presidential-ticket registration decisions with 12 tickets approved and one request denied on stated eligibility grounds; this is a dated procedural account, not a judgment about competitiveness or the merits of all campaigns. The TSE announced on 15 September that partial campaign accounts had been filed between 9 and 13 September and covered reported financial activity through 8 September; these interim disclosures are not final or audited totals. The OAS reported an agreement enabling its planned observation mission and named its chief, but no deployment findings or post-election recommendations existed in the sources used at this cutoff. Avritzer and Rennó’s institutional-crisis study, the edited collections by Santos and Hatzikidi and by Aronne and Urbano offer distinct recent scholarly perspectives on democratic instability, authoritarianism, dissent and Brazil’s longer democratic history; they contextualize prior periods and do not explain this campaign or establish a shared national interpretation. The snapshot therefore documents institutions and scheduled activity, not voter motives, public consensus, candidate ideology, election quality, six-axis placement or an electoral outcome.',
+  limitation: 'This is a snapshot frozen at 25 September 2026, before the scheduled first round, not a live update, forecast, result, post-election assessment or score for Brazil, Brazilians, any candidate, party, voter, region, social group or government. The TSE is the authoritative source here for its own calendar, candidate-registration decisions and interim disclosures, but those records do not independently establish practical equality, media access, campaign-finance completeness, safety, accessibility, turnout, freedom from disinformation or the quality of electoral competition. The OAS agreement establishes a planned mission, not completed observation or findings. The presidential-ticket count does not describe every federal or state contest. The three book-length works provide distinct background perspectives but predate the election and are not event-specific scholarship. The candidate platforms, current court dockets and appeals affecting candidates, independent media-monitoring records, regional and diaspora access, campaign-finance audits, observer deployment and reports, voting, results, any runoff, litigation, transfer of office and subsequent government remain unreviewed research gaps. No candidate is assigned an ideology, and no six-axis or voter-motive inference is supported by this procedural pre-election material.',
+  sourceIds: ['brazilTseElection2026Portal', 'brazilTsePresidentialCandidacies2026', 'brazilTsePartialCampaignAccounts2026', 'oasBrazilElectionMissionAgreement2026', 'brazilAvritzerRennoCrisisDemocracy2025', 'brazilSantosHatzikidiFacesAuthoritarianism2025', 'brazilAronneUrbanoVargasBolsonaro2025'],
+  locator: 'TSE Eleições 2026 portal and calendar (consulted 25 September 2026); TSE presidential candidacy registration report (11 September); TSE partial campaign-account notice (15 September; activity through 8 September); OAS mission-agreement notice (13 August); Springer and UCL Press / EDIPUCRS publisher records for Avritzer–Rennó, Santos–Hatzikidi and Aronne–Urbano.'
+});
+
 GEOGRAPHY_CASES.sort((a, b) => a.startYear - b.startYear);
