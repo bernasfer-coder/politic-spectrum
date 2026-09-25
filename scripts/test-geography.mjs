@@ -174,7 +174,9 @@ const southSudanTransition = GEOGRAPHY_CASES.find(({ id }) => id === 'south-suda
 assert.equal(southSudanTransition?.confidence, 'medium');
 assert.equal(southSudanTransition?.startYear, 2018);
 assert.equal(southSudanTransition?.endYear, 2026);
-assert.ok(southSudanTransition?.claim.includes('enacted text or Gazette publication was not located'));
+assert.ok(southSudanTransition?.claim.includes('the enacted Act'));
+assert.ok(southSudanTransition?.claim.includes('SSBC’s separate parliamentary-passage report says 332'));
+assert.ok(southSudanTransition?.claim.includes('neither report nor the outlet substitutes for the enacted Act'));
 assert.ok(southSudanTransition?.claim.includes('the order itself was not retrieved'));
 assert.ok(southSudanTransition?.claim.includes('On 24 September the Presidency said'));
 assert.ok(southSudanTransition?.claim.includes('not independent evidence of broad representation or consensus'));
@@ -193,6 +195,8 @@ assert.ok(southSudanTransition?.sourceIds.includes('southSudanCaretakerSwearingS
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanInterPartyDialoguePresidency2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanCaretakerAppointmentsSudansPost2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanElectoralRoadmapAp2026'));
+assert.ok(southSudanTransition?.sourceIds.includes('southSudanPressElectionActDiscrepancy2026'));
+assert.ok(southSudanTransition?.limitation.includes('disagree on whether the amended legislature is 270 or 332'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanJohnsonNewHistory2016'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanRoachFatefulStruggle2023'));
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === southSudanTransition?.placeId)?.countryIds[0], 'map-728');

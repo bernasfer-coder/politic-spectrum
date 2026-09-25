@@ -726,7 +726,8 @@ test('South Sudan transition distinguishes legal instruments, caretaker reportin
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('R-ARCSS');
   await expect(card).toContainText('continuing fighting');
-  await expect(card).toContainText('enacted text or Gazette publication was not located');
+  await expect(card).toContainText('SSBC’s separate parliamentary-passage report says 332');
+  await expect(card).toContainText('the authenticated 2026 Act/Gazette');
   await expect(card).toContainText('the order itself was not retrieved');
   await expect(card).toContainText('not independent evidence of broad representation or consensus');
   await expect(card).toContainText('attributed competing political positions');
