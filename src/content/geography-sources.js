@@ -10221,7 +10221,88 @@ sources.push(
   { id: 'somaliaBereketeabStateBuilding2017', label: 'Redie Bereketeab, ed. — State Building and National Identity Reconstruction in the Horn of Africa (2017)', url: 'https://link.springer.com/book/10.1007/978-3-319-39892-1', note: 'Palgrave Macmillan publisher record and chapter metadata consulted; the full volume was not read. Its Somalia-specific chapter on traditional institutions and state reconstruction is used as an earlier scholarly perspective, not as evidence about the 2026 Constitution.', accessDate: '2026-09-25', creators: ['Redie Bereketeab'], institution: 'Palgrave Macmillan', publicationDate: '2017', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'book-length scholarly edited volume', identifiers: { doi: '10.1007/978-3-319-39892-1', chapter: 'Abdurahman Abdullahi Baadiyow, “Reconstructing the National State of Somalia,” pp. 25–48' }, description: 'Comparative Horn of Africa state-building volume, including a Somalia-specific chapter on traditional institutions and authorities.' },
 );
 
+sources.push(
+  {
+    id: 'belarusCecPresidentialResults2025', label: 'Central Election Commission of Belarus — final results of the 26 January 2025 presidential election',
+    url: 'https://www.rec.gov.by/ru/news-ru/view/zasedanie-tsentralnoj-komissii-po-voprosu-podvedenija-itogov-vyborov-prezidenta-respubliki-belarus-2126/',
+    note: 'Official CEC record of the 3 February 2025 meeting to summarize the presidential election result. Used for the Commission’s official totals, not as independent verification of the vote or voter preferences.',
+    accessDate: '2026-09-25', creators: ['Центральная комиссия Республики Беларусь по выборам и проведению республиканских референдумов'], institution: 'Central Election Commission of the Republic of Belarus', publicationDate: '2025-02-03', evidenceRole: 'primary', confidence: 'high', languages: ['Russian'],
+    sourceType: 'official election-administration result record', identifiers: { electionDate: '2025-01-26', finalResultsMeeting: '2025-02-03' }, description: 'The CEC announced the final result of the presidential election. The reported figures are official administrative results and are not independently audited here.'
+  },
+  {
+    id: 'belarusConstitution2022', label: 'Constitution of the Republic of Belarus — 2022 amendments, consolidated text',
+    url: 'https://www.refworld.org/sites/default/files/2025-04/constitution_of_the_republic_of_belarus.pdf',
+    note: 'English-language consolidated text of the Constitution after the 2022 amendments, distributed via Refworld and identified in the text as sourced from Belarus’s National Center of Legal Information. Articles 81 and the transitional clause are used for the stated term limit and its effective-date provision; no legal conclusion about prior terms is inferred.',
+    accessDate: '2026-09-25', creators: ['Republic of Belarus'], institution: 'National Center of Legal Information of the Republic of Belarus (text); Refworld (document host)', publicationDate: '2022', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'constitutional legal text', identifiers: { articles: '81; transitional provision', amendmentYear: '2022' }, description: 'The consolidated Constitution sets presidential eligibility, term and institutional provisions. Its language is cited as a primary legal text, not as evidence of implementation or international acceptance.'
+  },
+  {
+    id: 'belarusOdihrNoMission2025', label: 'OSCE/ODIHR — no election observation mission in Belarus due to lack of timely invitation (9 January 2025)',
+    url: 'https://odihr.osce.org/odihr/elections/584445',
+    note: 'Official OSCE/ODIHR and OSCE Parliamentary Assembly statement issued before the 26 January election. It records ODIHR’s account of the invitation process and inability to observe key stages; no election results are assessed in this release.',
+    accessDate: '2026-09-25', creators: ['OSCE Office for Democratic Institutions and Human Rights', 'OSCE Parliamentary Assembly'], institution: 'OSCE', publicationDate: '2025-01-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation institution statement', identifiers: { electionDate: '2025-01-26' }, description: 'ODIHR states that a timely invitation was lacking and that it could not observe key parts of the process.'
+  },
+  {
+    id: 'belarusBhcViasnaMonitoring2025', label: 'Belarusian Helsinki Committee and Viasna — Elections*2025 preliminary analytical observation report',
+    url: 'https://belhelcom.org/sites/default/files/report_2025_preliminary_1.pdf',
+    note: 'Joint expert monitoring report produced by the Human Rights Defenders for Free Elections campaign. Its stated method relies on open sources and messages from voters; it says repression, security risks, lack of access and limited transparency prevented full conventional observation. The report’s use of an asterisk for “elections*” is its own normative framing. Findings are attributed and not treated as a representative survey or independent count.',
+    accessDate: '2026-09-25', creators: ['Belarusian Helsinki Committee', 'Viasna Human Rights Center'], institution: 'Human Rights Defenders for Free Elections campaign', publicationDate: '2025-02-04', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'civil-society expert election-monitoring report', identifiers: { electionDate: '2025-01-26', pages: '43' }, description: 'Assesses the political and legal environment, nomination, campaign, early voting, election-day process and complaints using open-source and voter-submitted information under substantial monitoring constraints.'
+  },
+  {
+    id: 'belarusUnExpertsElection2025', label: 'UN Group of Independent Experts on Belarus — statement on the outcome of the 2025 presidential election',
+    url: 'https://www.ohchr.org/en/press-releases/2025/01/belarus-outcome-presidential-elections-likely-result-continuing-human-rights',
+    note: 'Statement issued 29 January 2025 by the Human Rights Council-mandated Group of Independent Experts. It expresses concern about the election outcome and continuing rights violations; it is an expert institutional assessment, not an observation mission, vote audit or judicial ruling.',
+    accessDate: '2026-09-25', creators: ['UN Group of Independent Experts on the Situation of Human Rights in Belarus'], institution: 'Office of the UN High Commissioner for Human Rights', publicationDate: '2025-01-29', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'UN independent-expert public statement', identifiers: { date: '2025-01-29' }, description: 'The Group links the election outcome to concern about ongoing rights conditions and notes the absence of a meaningful opposition campaign in the prevailing context.'
+  },
+  {
+    id: 'belarusHrcResolution2025', label: 'UN Human Rights Council Resolution 58/19 — Situation of human rights in Belarus',
+    url: 'https://docstore.ohchr.org/SelfServices/FilesHandler.ashx?enc=w2I99sdqd4CvrK%2FkvyD6%2BSNeQCG11YcXfGg8DDOMtoTJTds1xIKSpFBPyQ8Uy%2FxEYlzeIvIZC0JZ%2FSoQHjOU9g%3D%3D',
+    note: 'Resolution adopted 3 April 2025. Used for the Human Rights Council’s attributed concerns about the broader human-rights situation, including politically motivated detention and restrictions; the resolution is not a recount or election-specific court judgment.',
+    accessDate: '2026-09-25', creators: ['United Nations Human Rights Council'], institution: 'United Nations', publicationDate: '2025-04-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'intergovernmental human-rights resolution', identifiers: { resolution: 'A/HRC/RES/58/19', adopted: '2025-04-03' }, description: 'The Council’s resolution records its positions and requests concerning human rights in Belarus; findings are not converted into an election result claim.'
+  },
+  {
+    id: 'belarusEeasElectionStatement2025', label: 'European External Action Service — statement on the 26 January 2025 presidential election in Belarus',
+    url: 'https://www.eeas.europa.eu/eeas/statement-high-representative-vice-president-kaja-kallas-and-commissioner-enlargement-marta-kos-sham_en',
+    note: 'Statement by the EU High Representative and Commissioner for Enlargement on 26 January 2025. Its description of the election as neither free nor fair is attributed to EU institutions and is distinguished from official CEC figures and UN or civil-society assessments.',
+    accessDate: '2026-09-25', creators: ['Kaja Kallas', 'Marta Kos'], institution: 'European External Action Service', publicationDate: '2025-01-26', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official EU foreign-policy statement', identifiers: { date: '2025-01-26' }, description: 'The EU states its assessment and cites repression, restrictions on political participation and independent media, and the late OSCE/ODIHR invitation.'
+  },
+  {
+    id: 'belarusInauguration2025', label: 'Commonwealth of Independent States — report of the Belarusian presidential inauguration, 25 March 2025',
+    url: 'https://e-cis.info/news/566/126067/',
+    note: 'CIS institutional report relaying the Belarusian presidential press service’s record that Lukashenka took the oath and entered office on 25 March. Used only for the formal inauguration date and event, not the service’s electoral-legitimacy framing.',
+    accessDate: '2026-09-25', creators: ['Commonwealth of Independent States'], institution: 'CIS Executive Committee', publicationDate: '2025-03-25', evidenceRole: 'primary', confidence: 'medium', languages: ['Russian'],
+    sourceType: 'official intergovernmental event record relaying presidential-service information', identifiers: { date: '2025-03-25' }, description: 'Records the inauguration and oath as a formal event after the election; its account is not an independent evaluation of the vote.'
+  },
+  {
+    id: 'belarusWilsonModernHistory2021', label: 'Andrew Wilson — Belarus: The Last European Dictatorship (2021 new edition)',
+    url: 'https://yalebooks.yale.edu/book/9780300259216/belarus/',
+    note: 'Yale University Press publisher metadata and description consulted; the book predates the 2025 election and its full text was not consulted for this case. Historical/political context only, not evidence about the 2025 event.',
+    accessDate: '2026-09-25', creators: ['Andrew Wilson'], institution: 'Yale University Press', publicationDate: '2021-03-09', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length modern political history (publisher record/description consulted)', identifiers: { isbn: '9780300259216', ebookIsbn: '9780300260878', edition: 'New edition' }, description: 'Modern Belarusian history and politics from independence through the contested 2020 re-election and subsequent repression; contextual only for events after 2020.'
+  },
+  {
+    id: 'belarusFrearAdaptiveAuthoritarianism2019', label: 'Matthew Frear — Belarus under Lukashenka: Adaptive Authoritarianism',
+    url: 'https://www.routledge.com/Belarus-under-Lukashenka-Adaptive-Authoritarianism/Frear/p/book/9780415855273',
+    note: 'Routledge publisher record/description consulted; the 2019 monograph maps Belarusian presidential power, elites, elections, opposition and state-society relations before the 2020 and 2025 election episodes. Full text was not consulted for this entry; background only.',
+    accessDate: '2026-09-25', creators: ['Matthew Frear'], institution: 'Routledge', publicationDate: '2019', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly monograph on Belarusian politics (publisher record/description consulted)', identifiers: { isbn: '9780415855273', ebookIsbn: '9780203737910', pages: '202' }, description: 'Analyzes presidential power, elites, elections, opposition and civil society using an adaptive-authoritarianism framework; it predates the selected event.'
+  },
+  {
+    id: 'belarusHansburyCrisis2023', label: 'Paul Hansbury — Belarus in Crisis: From Domestic Unrest to the Russia-Ukraine War',
+    url: 'https://academic.oup.com/book/49395',
+    note: 'Oxford University Press metadata and abstract consulted; the book analyzes the 2020 domestic crisis, repression and Belarus’s role in Russia’s war on Ukraine, not the 2025 presidential election. Full text was not consulted; contextual perspective only.',
+    accessDate: '2026-09-25', creators: ['Paul Hansbury'], institution: 'Oxford University Press', publicationDate: '2023-07-01', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly monograph (publisher record/abstract consulted)', identifiers: { isbn: '9780197747704', onlineIsbn: '9780197756386', doi: '10.1093/oso/9780197747704.001.0001' }, description: 'A book-length analysis of the 2020 crisis, domestic repression, sanctions, statehood and the consequences of the Russia-Ukraine war; event-specific coverage of 2025 is not claimed.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
+
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
