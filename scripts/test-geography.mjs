@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 199);
-assert.equal(GEOGRAPHY_LABELS.length, 197);
+assert.equal(GEOGRAPHY_CASES.length, 200);
+assert.equal(GEOGRAPHY_LABELS.length, 198);
 const brazil2026Election = GEOGRAPHY_CASES.find(({ id }) => id === 'brazil-2026-general-election-pre-election-snapshot');
 assert.equal(brazil2026Election?.datePrecision, 'snapshot');
 assert.equal(brazil2026Election?.reviewedAt, '2026-09-25');
@@ -297,6 +297,16 @@ assert.equal(filterGeographyCases({ country: 'germany' }).find(({ id }) => id ==
 assert.ok(filterGeographyCases({ country: 'germany' }).some(({ id }) => id === 'german-post-2021-coalition-crisis-and-2025-electoral-contestation'));
 assert.equal(filterGeographyCases({ country: 'mexico' })[0].id, 'mexican-revolutionary-constitutional-founding');
 assert.equal(filterGeographyCases({ country: 'mexico' })[1].id, 'mexican-democratic-transition-and-electoral-competition');
+const mexicoJudicialReform = GEOGRAPHY_CASES.find(({ id }) => id === 'mexico-2024-2026-judicial-reform-first-election-and-initial-operation');
+assert.equal(mexicoJudicialReform?.reviewedAt, '2026-09-25');
+assert.equal(mexicoJudicialReform?.placeId, 'mexico');
+assert.equal(filterGeographyCases({ country: 'mexico' })[2]?.id, mexicoJudicialReform?.id);
+assert.ok(mexicoJudicialReform?.claim.includes('881 federal posts'));
+assert.ok(mexicoJudicialReform?.claim.includes('not all judges across Mexico'));
+assert.ok(mexicoJudicialReform?.limitation.includes('not a complete history of Mexico’s judiciary'));
+assert.ok(mexicoJudicialReform?.sourceIds.includes('mexicoOasJudicialElectionPreliminary2025'));
+assert.ok(mexicoJudicialReform?.sourceIds.includes('lopezAyllonValadesAcademicReportJudicialReform2026'));
+assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === mexicoJudicialReform?.labelId)));
 assert.equal(filterGeographyCases({ country: 'italy' })[0].id, 'italian-republican-constitutional-founding');
 assert.equal(filterGeographyCases({ country: 'japan' })[0].id, 'japanese-meiji-constitutional-founding');
 assert.equal(filterGeographyCases({ country: 'japan' }).find(({ id }) => id === 'japanese-postwar-constitutional-democratic-order')?.id, 'japanese-postwar-constitutional-democratic-order');
@@ -459,7 +469,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 172, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 173, 'the atlas should expose all dated post-2000 implemented cases');
 assert.equal(filterGeographyCases({ country: 'map-188' })[0].id, 'costa-rican-2026-national-election-and-transfer-of-office');
 assert.equal(filterGeographyCases({ country: 'map-222' })[0].id, 'el-salvador-2025-presidential-reelection-and-constitutional-reform');
 assert.equal(filterGeographyCases({ country: 'map-320' })[0].id, 'guatemala-2026-constitutional-court-renewal');
