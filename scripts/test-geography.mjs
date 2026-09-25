@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 181);
-assert.equal(GEOGRAPHY_LABELS.length, 179);
+assert.equal(GEOGRAPHY_CASES.length, 182);
+assert.equal(GEOGRAPHY_LABELS.length, 180);
 const haitiTransition2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'haitian-2026-post-council-electoral-transition');
 assert.equal(haitiTransition2026?.datePrecision, 'snapshot');
 assert.equal(haitiTransition2026?.confidence, 'medium');
@@ -276,6 +276,20 @@ assert.equal(filterGeographyCases({ country: 'map-222' })[0].id, 'el-salvador-20
 assert.equal(filterGeographyCases({ country: 'map-320' })[0].id, 'guatemala-2026-constitutional-court-renewal');
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'guatemala-constitutional-court-renewal-2026')?.countryIds[0], 'map-320');
 assert.ok(GEOGRAPHY_CASES.find(({ id }) => id === 'guatemala-2026-constitutional-court-renewal')?.limitation.includes('no six-axis score'));
+const yemenEscalation = GEOGRAPHY_CASES.find(({ id }) => id === 'yemen-2026-west-coast-escalation-and-displacement');
+assert.equal(yemenEscalation?.datePrecision, 'snapshot');
+assert.equal(yemenEscalation?.confidence, 'medium');
+assert.ok(yemenEscalation?.claim.includes('122,000 people displaced'));
+assert.ok(yemenEscalation?.claim.includes('3,672 casualties'));
+assert.ok(yemenEscalation?.claim.includes('not neutral adjudications'));
+assert.ok(yemenEscalation?.limitation.includes('automated, non-verbatim'));
+assert.ok(yemenEscalation?.limitation.includes('current events lack book-length treatment'));
+assert.ok(yemenEscalation?.sourceIds.includes('yemenLacknerPovertyAndConflict2022'));
+assert.ok(yemenEscalation?.sourceIds.includes('yemenDayRegionalismAndRebellion2012'));
+assert.equal(filterGeographyCases({ country: 'map-887' })[0]?.id, 'yemen-2026-west-coast-escalation-and-displacement');
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'yemen-west-coast-escalation-2026')?.countryIds[0], 'map-887');
+assert.equal(MAP_COUNTRIES_BY_ID['map-887']?.name, 'Yemen');
+assert.ok(MAP_COUNTRIES_BY_ID['map-887']?.path, 'Yemen should use its own world-map country geometry');
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'el-salvador-constitutional-reform-2025')?.countryIds[0], 'map-222');
 assert.ok(GEOGRAPHY_CASES.find(({ id }) => id === 'el-salvador-2025-presidential-reelection-and-constitutional-reform')?.limitation.includes('2027 election has not yet occurred'));
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'costa-rica')?.countryIds[0], 'map-188');
@@ -300,4 +314,4 @@ assert.equal(readGeographyState('#geography?label=missing&case=missing&view=map'
 assert.doesNotThrow(() => readGeographyState('#geography?q=%E0%A4%A&country=%'));
 assert.equal(readGeographyState(`#geography?q=${'x'.repeat(500)}`).q.length, 200);
 assert.equal(filterGeographyCases(readGeographyState('#geography?case=chp-statement-2025')).length, 1);
-console.log('Geography tests passed: 181 dated cases, 179 unscored labels, citations, boundaries, filters and share URLs.');
+console.log('Geography tests passed: 182 dated cases, 180 unscored labels, citations, boundaries, filters and share URLs.');
