@@ -5505,6 +5505,96 @@ const sources = [
     description: 'Primary institutional record for the 2025 midterm national, local and BARMM election results used to extend the case’s documented endpoint. It establishes an electoral record but not the quality, equality, motives or social meaning of every contest.',
   },
   {
+    id: 'philippinesDuterteImpeachmentSupremeCourt2025',
+    label: 'Supreme Court of the Philippines — Duterte v. House of Representatives, 25 July 2025 (official decision summary)',
+    url: 'https://sc.judiciary.gov.ph/sc-house-impeachment-complaint-vs-vp-duterte-barred-by-1-year-rule-due-process-or-fairness-applies-during-all-stages-of-impeachment-process/',
+    note: 'Supreme Court press briefer summarizing the 25 July 2025 en banc decision. Used for the Court’s stated disposition and constitutional grounds, not as a substitute for the full decision text. The ruling concerns procedural constitutionality; it does not adjudicate the truth of the allegations against Duterte. No court text is reproduced.',
+    accessDate: '2026-09-25', creators: ['Supreme Court of the Philippines'], institution: 'Supreme Court of the Philippines', publicationDate: '2025-07-25', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional-court decision briefer', identifiers: { case: 'Duterte v. House of Representatives', decisionDate: '2025-07-25' },
+    description: 'The Court states that it declared the Articles transmitted on 5 February 2025 unconstitutional under the one-year bar and due-process requirements. It also states that a subsequent complaint could be filed beginning 6 February 2026. These are the Court’s procedural holdings, not findings on the merits of the accusations.'
+  },
+  {
+    id: 'philippinesDuterteImpeachmentFinalResolution2026',
+    label: 'Supreme Court of the Philippines — final denial of reconsideration in Duterte v. House, 28 January 2026 (official briefer)',
+    url: 'https://sc.judiciary.gov.ph/press-briefer-january-29-2026/',
+    note: 'Supreme Court press briefer published 29 January 2026, summarizing the en banc resolution of 28 January. It reports that reconsideration was denied with finality and clarifies the procedural basis; it does not decide any later complaint or the factual merits of allegations. No text is reproduced.',
+    accessDate: '2026-09-25', creators: ['Supreme Court of the Philippines'], institution: 'Supreme Court of the Philippines', publicationDate: '2026-01-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional-court resolution briefer', identifiers: { case: 'Duterte v. House of Representatives', resolutionDate: '2026-01-28' },
+    description: 'The Court reports final denial of the House’s motion for reconsideration and reiterates that the 2025 transmittal was barred. This closes that first proceeding, not the distinct 2026 impeachment process.'
+  },
+  {
+    id: 'philippinesHouseDuterteImpeachmentVote2026',
+    label: 'House of Representatives of the Philippines — 11 May 2026 impeachment vote and transmission',
+    url: 'https://congress.gov.ph/media/press-releases?page=5',
+    note: 'Official House press-release index identifies the 11 May 2026 plenary vote as 257–25–9 and reports that the Articles were transmitted to the Senate. It is an institutional announcement, not an independent assessment of the complaints or proof of the alleged conduct. The House resolution and Articles are primary records; their allegations are not findings.',
+    accessDate: '2026-09-25', creators: ['House of Representatives of the Philippines'], institution: 'House of Representatives of the Philippines', publicationDate: '2026-05-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary vote and proceedings announcement', identifiers: { voteDate: '2026-05-11', vote: '257–25–9' },
+    description: 'The House record establishes the institutional vote and impeachment transmission in the 20th Congress. It does not establish the truth of the charges or predict the Senate court’s judgment.'
+  },
+  {
+    id: 'philippinesSenateImpeachmentCourtMay2026',
+    label: 'Philippine News Agency — Senate convenes as impeachment court, 18 May 2026',
+    url: 'https://www.pna.gov.ph/articles/1275265',
+    note: 'Government news agency report of the Senate’s 18 May 2026 organization as an impeachment court, receipt and referral of the Articles, issuance of a summons, and order to answer. Used as a dated procedural report; claims by the accused and House or Senate participants remain attributed, and the report is not a final judgment.',
+    accessDate: '2026-09-25', creators: ['Philippine News Agency'], institution: 'Philippine News Agency / Presidential Communications Office', publicationDate: '2026-05-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'government news-agency report of official Senate proceedings', identifiers: { date: '2026-05-18' },
+    description: 'Reports the Senate’s formal convening as an impeachment court and procedural orders on summons, answer and filings. This documents the start of the Senate proceeding, not the merits or its eventual verdict.'
+  },
+  {
+    id: 'philippinesSenateImpeachmentDocuments2026',
+    label: 'Senate of the Philippines — Impeachment Documents portal, Case No. 004-2026',
+    url: 'https://senate.gov.ph/services/impeachment-documents',
+    note: 'The Senate’s official portal identifies Case No. 004-2026 and provides prosecution filings, Articles of Impeachment and annexes. These are the prosecution’s allegations and evidentiary submissions, not adjudicated findings. No underlying complaint, annex, personal financial record or copyrighted filing is reproduced; this entry records the official docket and its limitations.',
+    accessDate: '2026-09-25', creators: ['Senate of the Philippines'], institution: 'Senate of the Philippines', publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official impeachment-court docket and party filings', identifiers: { case: '004-2026', congress: '20th Congress' },
+    description: 'Official Senate impeachment case portal listing prosecution documents and the Articles. It establishes the existence and formal filing context of the case, not the truth, admissibility or ultimate effect of accusations or exhibits.'
+  },
+  {
+    id: 'philippinesSenateImpeachmentReceipt2026',
+    label: 'Senate of the Philippines — formal receipt of the Articles of Impeachment, 14 May 2026',
+    url: 'https://senate.gov.ph/media/news-release/prib-senate-president-cayetano-signs-letter-on-vp-impeachment-assures-no-delay-in-proceedings',
+    note: 'Senate Public Relations and Information Bureau release reporting formal receipt from the House on 13 May and the Senate President’s letter of 14 May that scheduled convening of an impeachment court on 18 May, subject to procedural questions. It is an official institutional statement and planned calendar, not evidence about the allegations or a final judgment.',
+    accessDate: '2026-09-25', creators: ['Senate of the Philippines, Public Relations and Information Bureau'], institution: 'Senate of the Philippines', publicationDate: '2026-05-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Senate communication on receipt and impeachment procedure', identifiers: { receiptDate: '2026-05-13', letterDate: '2026-05-14' },
+    description: 'The Senate states that it received the transmitted Articles and records the Senate President’s notice to the House. The scheduled date was subject to procedural questions, so the later formal convening is cited separately.'
+  },
+  {
+    id: 'philippinesDuterteImpeachmentSupremeCourtAugust2026',
+    label: 'Supreme Court of the Philippines — 5 August 2026 disposition of challenges to House impeachment proceedings (official briefer)',
+    url: 'https://sc.judiciary.gov.ph/press-briefer-august-05-2026/',
+    note: 'Supreme Court press briefer for the en banc action of 5 August 2026. It reports dismissal as moot of consolidated petitions concerning House and Committee on Justice proceedings after the House had approved and transmitted Articles to the Senate. The briefer is used for the stated disposition only; it does not decide the truth of the charges or the later Senate trial’s evidentiary merits. Full reasoning is not reproduced.',
+    accessDate: '2026-09-25', creators: ['Supreme Court of the Philippines'], institution: 'Supreme Court of the Philippines', publicationDate: '2026-08-05', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional-court decision briefer', identifiers: { dispositionDate: '2026-08-05' },
+    description: 'The Court reports that the petitions had become moot after the House action and Senate transmittal. The disposition is not a merits ruling on the impeachment allegations or on the separate September voting-threshold challenge.'
+  },
+  {
+    id: 'philippinesSenateImpeachmentThreshold2026',
+    label: 'Philippine News Agency — Senate impeachment court ruling on conviction threshold, 23 September 2026',
+    url: 'https://www.pna.gov.ph/articles/1284670',
+    note: 'Government news-agency account of the impeachment court’s 13–1 vote, with six senator-judges not participating, on 23 September 2026. It reports the court’s new interpretation that the two-thirds denominator concerns members legally and factually capable of participating. This is a contested procedural ruling, not a conviction, acquittal or Supreme Court holding; no full transcript or Senate resolution was located for this review.',
+    accessDate: '2026-09-25', creators: ['Philippine News Agency'], institution: 'Philippine News Agency / Presidential Communications Office', publicationDate: '2026-09-23', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'government news-agency report of an impeachment-court ruling', identifiers: { date: '2026-09-23', vote: '13–1; six did not participate' },
+    description: 'Reports the Senate impeachment court’s change from its earlier fixed 16-vote interpretation to a capacity-based denominator for the constitutional two-thirds threshold. Petitions challenging that ruling were reported filed on 24 September; at the 25 September cutoff no Supreme Court disposition was located.'
+  },
+  {
+    id: 'philippinesImpeachmentThresholdChallenge2026',
+    label: 'Philippine News Agency — challenge to the impeachment-court threshold ruling, 25 September 2026',
+    url: 'https://www.pna.gov.ph/articles/1284858',
+    note: 'Dated government news-agency account reporting that petitions were filed at the Supreme Court on 24 September and that the impeachment court would continue absent Supreme Court intervention. The announced petitions and statements are attributed; filing is not a court ruling. The state-affiliated outlet’s procedural reporting is cross-checked against the House prosecution’s separately attributed statement and kept distinct from independent observer judgment.',
+    accessDate: '2026-09-25', creators: ['Philippine News Agency'], institution: 'Philippine News Agency / Presidential Communications Office', publicationDate: '2026-09-25', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'government news-agency report on pending constitutional litigation', identifiers: { reportDate: '2026-09-25', reportedPetitionDate: '2026-09-24' },
+    description: 'Reports the threshold challenge and the Senate president’s statement that proceedings would continue unless restrained. It records a contested and unresolved position as of its publication date, not the eventual validity of the threshold or trial outcome.'
+  },
+  {
+    id: 'philippinesHeydarianDynasticDemocracy2025',
+    label: 'Richard Javad Heydarian — “The Philippines’ Dynastic Democracy” (Journal of Democracy, 36.3, July 2025)',
+    url: 'https://www.journalofdemocracy.org/articles/the-philippines-dynastic-democracy/',
+    note: 'Journal of Democracy publisher page consulted for article metadata and abstract (vol. 36, no. 3, July 2025, pp. 146–155); the full essay is hosted by Project MUSE and was not consulted. Its account concerns the May 2025 election and then-potential impeachment, not the subsequent 2025 judgment or 2026 trial. Any framing of dynastic competition is attributed to Heydarian and is not a claim about all voters or Filipinos.',
+    accessDate: '2026-09-25', creators: ['Richard Javad Heydarian'], institution: 'Journal of Democracy / Johns Hopkins University Press', publicationDate: '2025-07', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'scholarly journal essay / publisher metadata and abstract consulted', identifiers: { volume: '36', issue: '3', pages: '146–155' },
+    description: 'The publisher describes an analysis of the 12 May 2025 election and its political landscape, including the contemporaneous possibility of an impeachment trial. It supplies an attributed pre-event frame only; it cannot substantiate or explain the 2026 proceedings.'
+  },
+  {
     id: 'alonMakingJordan2007',
     label: 'Yoav Alon — The Making of Jordan: Tribes, Colonialism and the Modern State (2007)',
     url: 'https://www.bloomsbury.com/au/making-of-jordan-9781848850132/',
