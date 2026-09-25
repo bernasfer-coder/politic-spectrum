@@ -435,6 +435,15 @@ assert.equal(filterGeographyCases({ country: 'mozambique' })[0].id, 'mozambican-
 assert.ok(filterGeographyCases({ country: 'mozambique' }).some(({ id }) => id === 'mozambican-post-2019-peace-insurgency-and-electoral-contestation'));
 assert.equal(filterGeographyCases({ country: 'tanzania' })[0].id, 'tanzanian-ujamaa-union-and-multiparty-transition');
 assert.ok(filterGeographyCases({ country: 'tanzania' }).some(({ id }) => id === 'tanzanian-samia-opening-and-2025-electoral-contestation'));
+const tanzania2025Case = filterGeographyCases({ country: 'tanzania' }).find(({ id }) => id === 'tanzanian-samia-opening-and-2025-electoral-contestation');
+assert.equal(tanzania2025Case?.endYear, 2026);
+assert.equal(tanzania2025Case?.reviewedAt, '2026-09-25');
+assert.ok(tanzania2025Case?.claim.includes('518 deaths across 11 regions'));
+assert.ok(tanzania2025Case?.claim.includes('not a final verified casualty total'));
+assert.ok(tanzania2025Case?.limitation.includes('no completed report or findings were located'));
+assert.ok(tanzania2025Case?.sourceIds.includes('tanzaniaChandeCommissionPresentation2026'));
+assert.ok(tanzania2025Case?.sourceIds.includes('tanzaniaHrwCommissionReview2026'));
+assert.ok(tanzania2025Case?.sourceIds.includes('tanzaniaLilaCommissionFieldwork2026'));
 assert.equal(filterGeographyCases({ country: 'kenya' })[0].id, 'kenyan-postcolonial-constitutional-and-devolution-transition');
 assert.ok(filterGeographyCases({ country: 'kenya' }).some(({ id }) => id === 'kenyan-ruto-era-succession-and-finance-bill-protest-order'));
 assert.equal(filterGeographyCases({ country: 'uganda' })[0].id, 'ugandan-postcolonial-constitutional-and-movement-transition');
