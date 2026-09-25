@@ -168,8 +168,16 @@ test('France 2024–2026 case distinguishes censure, confidence and budget-law r
   await expect(card).toContainText('331 votes for a motion of censure');
   await expect(card).toContainText('364 votes against François Bayrou’s policy statement');
   await expect(card).toContainText('Law No. 2026-103');
-  await expect(card).toContainText('2027 proposal');
+  await expect(card).toContainText('The 2027 budget horizon has since advanced beyond the 1 September press account');
+  await expect(card).toContainText('forecasts of 0.5% growth and 2.1% inflation for 2026');
+  await expect(card).toContainText('first part of the Finance Bill on 12–19 October');
+  await expect(card).toContainText('whole-bill vote planned for 17 November');
+  await expect(card).toContainText('The new budget proposal, scrutiny, votes and any enacted law remained future');
   await expect(card).toContainText('No two independent book-length scholarly studies');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="franceAssembleeBudgetScheduleJuly2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="franceAssembleeSessionCalendarSeptember2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="franceGovernmentMacroForecasts2027September2026"]')).toBeVisible();
 });
 
 test('South African GNU case preserves its bounded retrospective research gap', async ({ page }) => {

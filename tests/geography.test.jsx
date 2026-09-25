@@ -103,6 +103,16 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('disagreement with the Commission’s published calendar');
   });
 
+  it('shows France’s 2027 budget timetable as prospective, not as an enacted outcome', () => {
+    window.history.replaceState(null, '', '/#geography?case=france-2024-2026-minority-government-and-budget-crisis');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('forecasts of 0.5% growth and 2.1% inflation for 2026');
+    expect(cards()[0]).toHaveTextContent('first part of the Finance Bill on 12–19 October');
+    expect(cards()[0]).toHaveTextContent('whole-bill vote planned for 17 November');
+    expect(cards()[0]).toHaveTextContent('The new budget proposal, scrutiny, votes and any enacted law remained future');
+  });
+
   it('shows the bounded Bolivia 2025 election case and its documented evidence gap', async () => {
     const user = userEvent.setup();
     renderAtlas();
