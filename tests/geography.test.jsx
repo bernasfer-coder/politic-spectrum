@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(169);
+    expect(cards()).toHaveLength(170);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -57,6 +57,16 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('at least 3,384 civilian deaths');
     expect(cards()[0]).toHaveTextContent('not a complete census or court judgment');
     expect(cards()[0]).toHaveTextContent('not a present-day control map');
+  });
+
+  it('shows the bounded Côte d’Ivoire 2025 election and separates the official result from observer and rights evidence', () => {
+    window.history.replaceState(null, '', '/#geography?case=cote-divoire-2025-presidential-election-candidacy-and-civic-space');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('2025 · presidential election');
+    expect(cards()[0]).toHaveTextContent('3,759,030 votes (89.77%)');
+    expect(cards()[0]).toHaveTextContent('not a project audit of every polling station');
+    expect(cards()[0]).toHaveTextContent('does not support a six-axis profile');
   });
 
   it('shows the South African GNU as a bounded unscored 2024–2026 case', () => {
