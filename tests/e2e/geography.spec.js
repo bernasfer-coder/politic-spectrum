@@ -215,6 +215,8 @@ test('Gambia 2026 election remains a pre-election snapshot with the timetable co
   await expect(card).toContainText('30 October–5 November');
   await expect(card).toContainText('9 November–2 December');
   await expect(card).toContainText('3–14 November');
+  await expect(card).toContainText('Foroyaa’s 11 September report independently attributes');
+  await expect(card).toContainText('does not reproduce that notice, which was not retrieved');
   await expect(card).toContainText('had not taken place');
   await expect(card).toContainText('National Builders Party, Gambia Labour Party and National Democratic Party');
   await expect(card).toContainText('do not say those parties will field presidential candidates');

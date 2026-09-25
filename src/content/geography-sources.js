@@ -11195,6 +11195,23 @@ sources.push({
   description: 'The Commission’s current portal describes a voter-lookup service and lists polling localities; its public page is evidence of the information service, not independent verification of individual records or turnout.'
 });
 
+sources.push({
+  id: 'gambiaForoyaaIecRoadmap2026',
+  label: 'Yankuba Jallow — “IEC Sets Presidential Nomination Dates, Other Key Election Activities” (Foroyaa, 11 September 2026)',
+  url: 'https://foroyaa.net/iec-sets-presidential-nomination-dates-other-key-election-activities/',
+  note: 'Full article consulted on 25 September 2026. It reports IEC Chairman Joseph Colley’s 10 September stakeholder briefing, including nominations on 3–14 November and campaigning from 16 November, and says the statutory Gazette notice had been published and could be purchased from the Government Printing Corporation. The Gazette itself was not retrieved, and the article does not reproduce it; schedule details are attributed reporting of an official briefing, not direct inspection of the legally promulgated notice. No article wording is reproduced.',
+  accessDate: '2026-09-25',
+  creators: ['Yankuba Jallow'],
+  institution: 'Foroyaa Newspaper',
+  publicationDate: '2026-09-11',
+  evidenceRole: 'secondary',
+  confidence: 'high',
+  languages: ['English'],
+  sourceType: 'Gambian newspaper report of an IEC stakeholder briefing',
+  identifiers: { briefingDate: '2026-09-10', electionDate: '2026-12-05', gazetteNoticeReported: 'issued 2026-09-02' },
+  description: 'Reports the IEC chair’s announced nomination and campaign schedule, revising-court arrangements and the publication of the election Gazette notice. The announcement is evidence of what the official reportedly told stakeholders; it is not the Gazette or an IEC-authored revised calendar.'
+});
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
