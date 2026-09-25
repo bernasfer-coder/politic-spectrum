@@ -16,7 +16,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(168);
+    expect(cards()).toHaveLength(169);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -47,6 +47,16 @@ describe('geographic atlas', () => {
     expect(caseCard).toHaveTextContent('Orr interprets this as a rightward party-system realignment');
     expect(caseCard).toHaveTextContent('did not collate all 24 actas');
     expect(caseCard).toHaveTextContent('does not assign Argentina, the electorate, LLA, Peronism or any other party a six-axis score');
+  });
+
+  it('shows the bounded Sudan war case with attributed civilian-protection evidence', async () => {
+    window.history.replaceState(null, '', '/#geography?case=sudan-2023-25-war-fragmented-authority-and-civilian-protection');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('2023–2025');
+    expect(cards()[0]).toHaveTextContent('at least 3,384 civilian deaths');
+    expect(cards()[0]).toHaveTextContent('not a complete census or court judgment');
+    expect(cards()[0]).toHaveTextContent('not a present-day control map');
   });
 
   it('shows the South African GNU as a bounded unscored 2024–2026 case', () => {
