@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(166);
+  await expect(page.locator('.geo-card')).toHaveCount(167);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -184,6 +184,23 @@ test('Nepal 2025–2026 transition separates official returns from attributed ob
   await expect(source).toContainText('No direct quotation is published');
 });
 
+test('Colombia 2026 election case distinguishes certified transition from pending litigation', async ({ page }) => {
+  await page.goto('/#geography?case=colombia-2026-electoral-transition-and-contested-results');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('preconteo, which has no legal value');
+  await expect(card).toContainText('Resolution E-3181');
+  await expect(card).toContainText('7 August');
+  await expect(card).toContainText('did not resolve whether the alleged conduct occurred');
+  await expect(card).toContainText('No numerical scores or related ideological labels are assigned');
+  await card.locator('.geo-evidence summary').click();
+  await card.locator('a[href*="colombiaCouncilStateElectionChallengeAug2026"]').click();
+  await expect(page).toHaveURL(/#bibliography\/research-colombiaCouncilStateElectionChallengeAug2026$/);
+  const source = page.locator('#source-research-colombiaCouncilStateElectionChallengeAug2026');
+  await expect(source).toBeInViewport();
+  await expect(source).toContainText('not a final decision on the merits');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -200,7 +217,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(166);
+  await expect(page.locator('.geo-card')).toHaveCount(167);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
