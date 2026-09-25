@@ -5,9 +5,9 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(175);
+  await expect(page.locator('.geo-card')).toHaveCount(176);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
-  await expect(page.locator('.geo-card')).toHaveCount(4);
+  await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
   await expect(page.getByRole('list', { name: 'Chronological geographic cases' })).toBeVisible();
   await page.reload();
@@ -16,7 +16,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await expect(page.locator('.geo-card')).toHaveCount(1);
   await page.goBack();
   await expect(page.getByRole('combobox', { name: 'Connection' })).toHaveValue('all');
-  await expect(page.locator('.geo-card')).toHaveCount(4);
+  await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.goForward();
   await expect(page.locator('.geo-card')).toHaveCount(1);
 });
@@ -290,6 +290,18 @@ test('Iraq 2025–2026 case distinguishes the certified election and partial cab
   await expect(card.locator('a[href*="iraqCabinetCompletionAug2026Parliament"]')).toBeVisible();
 });
 
+test('Syria 2025–2026 case distinguishes indirect selection and presidential appointments', async ({ page }) => {
+  await page.goto('/#geography?case=syrian-2025-2026-transitional-peoples-assembly');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('not a direct nationwide popular election');
+  await expect(card).toContainText('15 women among those 70 appointees');
+  await expect(card).toContainText('does not support an ideology label or six-axis score');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="syriaConstitutionalDeclaration2025Sana"]')).toBeVisible();
+  await expect(card.locator('a[href*="syriaAtCrossroadsInternationalIDEA2026"]')).toBeVisible();
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -306,7 +318,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(175);
+  await expect(page.locator('.geo-card')).toHaveCount(176);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
