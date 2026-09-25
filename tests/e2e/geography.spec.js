@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(177);
+  await expect(page.locator('.geo-card')).toHaveCount(178);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -318,7 +318,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(177);
+  await expect(page.locator('.geo-card')).toHaveCount(178);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -339,5 +339,15 @@ test('Egypt 2025–2026 parliamentary case stays separate and displays attribute
   await expect(card).toContainText('32.41%');
   await expect(card).toContainText('independent verification of turnout');
   await expect(card).toContainText('Kotb');
+});
+
+test('Honduras 2025 election case distinguishes official returns, observation findings and the book-level gap', async ({ page }) => {
+  await page.goto('/#geography?case=honduran-2025-general-election-and-2026-transfer-of-office');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('98.18%');
+  await expect(card).toContainText('40.26%');
+  await expect(card).toContainText('no 2025–26 book-length scholarly treatment');
+  await expect(card).toContainText('CESPAD');
 });
 
