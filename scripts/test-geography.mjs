@@ -236,9 +236,12 @@ assert.ok(saoTomeElection?.claim.includes('poll remained scheduled for 27 Septem
 assert.equal(saoTomeElection?.confidence, 'medium');
 assert.ok(saoTomeElection?.claim.includes('Court rejected MCI-PS/PUN lists'));
 assert.ok(saoTomeElection?.claim.includes('petition and complaint'));
+assert.ok(saoTomeElection?.claim.includes('predates, and cannot be the disposition'));
+assert.ok(saoTomeElection?.claim.includes('linked PDF is image-only'));
 assert.ok(saoTomeElection?.claim.includes('specific reported incidents'));
 assert.ok(saoTomeElection?.claim.includes('neither observer mission had published findings'));
 assert.ok(saoTomeElection?.limitation.includes('Acórdão 50/2026'));
+assert.ok(saoTomeElection?.limitation.includes('cannot be that petition’s disposition'));
 assert.ok(saoTomeElection?.limitation.includes('No voting, counting, certified results'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeConstitutionalCourtLegislativeCandidacies2026'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeCplpObserverDeployment2026'));

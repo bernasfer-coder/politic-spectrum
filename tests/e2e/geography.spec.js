@@ -127,6 +127,8 @@ test('São Tomé and Príncipe election remains a pre-poll case and is reachable
   await expect(card).toContainText('27 September 2026');
   await expect(card).toContainText('Court rejected MCI-PS/PUN lists');
   await expect(card).toContainText('petition and complaint');
+  await expect(card).toContainText('cannot be the disposition of');
+  await expect(card).toContainText('linked PDF is image-only');
   await expect(card).toContainText('barricades and road blockages');
   await expect(card).toContainText('neither observer mission had published findings on the 27 September vote');
   await expect(card).toContainText('No voting, counting, certified results');
