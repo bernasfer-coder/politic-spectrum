@@ -19,6 +19,10 @@ assert.ok(russianDuma2026?.claim.includes('No book-length study of this 2026 ele
 assert.ok(russianDuma2026?.limitation.includes('original signed CEC final act and complete protocols were not retrieved'));
 assert.ok(russianDuma2026?.sourceIds.includes('russiaUnTerritorialIntegrityResolution2022'));
 assert.ok(russianDuma2026?.sourceIds.includes('russiaGillAuthoritarianPolity2015'));
+const saoTome2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'sao-tome-2026-national-assembly-election-pre-election');
+assert.ok(saoTome2026?.sourceIds.includes('saoTomeCenVoterLookup2026'));
+assert.ok(saoTome2026?.claim.includes('not the completeness or individual accuracy of the register'));
+assert.ok(saoTome2026?.limitation.includes('no individual record was queried'));
 const farabiBaghdad = GEOGRAPHY_CASES.find(({ id }) => id === 'farabi-baghdad');
 assert.equal(farabiBaghdad?.datePrecision, 'approximate');
 assert.equal(farabiBaghdad?.confidence, 'medium');

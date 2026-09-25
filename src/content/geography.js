@@ -2760,3 +2760,12 @@ bosniaElection2026.evidenceKind += '; official ODIHR mission composition and dep
 bosniaElection2026.claim += ' ODIHR’s official mission page lists a core team of 13 experts and 26 long-term observers, and says the mission will request 300 short-term observers; its schedule lists their arrival on 30 September and deployment on 2 October. These are plans and requested numbers, not confirmation of final deployment.';
 bosniaElection2026.limitation += ' The official mission page gives planned/requested observer numbers and a future schedule; it does not confirm actual short-term deployment, final headcount or election findings.';
 bosniaElection2026.locator += ' ODIHR mission information page (consulted 25 September 2026), composition, short-term observer request and deployment schedule.';
+
+const saoTomeElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'sao-tome-2026-national-assembly-election-pre-election');
+const saoTomeElectionLabel2026 = GEOGRAPHY_LABELS.find(({ id }) => id === 'sao-tome-2026-national-assembly-election');
+saoTomeElection2026.sourceIds.push('saoTomeCenVoterLookup2026');
+saoTomeElectionLabel2026.sourceIds.push('saoTomeCenVoterLookup2026');
+saoTomeElection2026.evidenceKind += '; CEN voter-registration and polling-place information portal';
+saoTomeElection2026.claim += ' The National Election Commission’s official portal lists the legislative, local and regional contests for 27 September and describes a service through which voters can check registration and assigned polling place; it lists polling localities in the districts, Príncipe and diaspora. This documents the Commission’s published information facility, not the completeness or individual accuracy of the register, actual voter access, or turnout.';
+saoTomeElection2026.limitation += ' The CEN portal’s lookup instructions and locality listings are not an audit of the register or proof that every voter could access or successfully use the service; no individual record was queried.';
+saoTomeElection2026.locator += ' National Election Commission voter-information portal (consulted 25 September 2026): registration/polling-place lookup instructions, locality listings and 27 September legislative, local and regional election calendar.';

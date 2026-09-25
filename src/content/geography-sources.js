@@ -11178,6 +11178,23 @@ sources.push(
   { id: 'ahramAgrarianReform74FarmersDay2026', label: 'Ahmed Reda — “From land reform to food and water security: Egypt marks 74th Farmer’s Day”', url: 'https://english.ahram.org.eg/NewsContentP/1/576300/Egypt/From-land-reform-to-food-and-water-security-Egypt-.aspx', note: 'Ahram Online retrospective dated 9 September 2026 consulted. The article’s description of the 1952 law is attributed to this present-day journalistic account and distinguished from the contemporaneous decree, the country’s agrarian-reform administration and independent outcome evaluation. No article wording or images are republished.', accessDate: '2026-09-25', creators: ['Ahmed Reda'], institution: 'Ahram Online', publicationDate: '2026-09-09', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'], sourceType: 'contemporary press retrospective with attributed government statements', identifiers: { section: 'Egypt / Society' }, description: 'A current anniversary account summarizes the reported legal design of Decree No. 178 and quotes current agricultural and irrigation ministers. It provides attributed context about the law, not independent evidence of how much land was distributed or who benefited.' },
 );
 
+sources.push({
+  id: 'saoTomeCenVoterLookup2026',
+  label: 'National Election Commission of São Tomé and Príncipe — 2026 voter-registration and polling-place lookup',
+  url: 'https://www.stpcen.st/',
+  note: 'The Commission’s official voter-information portal, consulted on 25 September 2026, says voters can check their registration and assigned voting place and displays constituency/locality listings including diaspora locations. It also lists legislative, local and regional elections for 27 September. This documents the Commission’s published lookup facility and stated purpose, not register completeness, usability, access by individual voters, or the accuracy of any personal record; no personal data were queried or reproduced.',
+  accessDate: '2026-09-25',
+  creators: ['Comissão Eleitoral Nacional de São Tomé e Príncipe'],
+  institution: 'National Election Commission of São Tomé and Príncipe',
+  publicationDate: null,
+  evidenceRole: 'primary',
+  confidence: 'high',
+  languages: ['Portuguese'],
+  sourceType: 'official election-administration voter-information portal',
+  identifiers: { electionsListed: 'legislative, municipal and regional elections, 2026-09-27', consultation: 'individual voter-registration and polling-place lookup' },
+  description: 'The Commission’s current portal describes a voter-lookup service and lists polling localities; its public page is evidence of the information service, not independent verification of individual records or turnout.'
+});
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
