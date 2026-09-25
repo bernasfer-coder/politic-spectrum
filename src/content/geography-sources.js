@@ -9960,6 +9960,36 @@ const sources = [
     accessDate: '2026-09-25', creators: ['Katarzyna Walecka', 'Simona Guerra', 'Fernando Casal Bértoa'], institution: 'Oxford University Press', publicationDate: '2025-12-18', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
     sourceType: 'scholarly edited volume (publisher record/contents consulted)', identifiers: { isbn: '9780192873149', doi: '10.1093/oxfordhb/9780192873149.001.0001' }, description: 'Multi-author book-length reference on Polish politics, democratic transition and consolidation, institutions and party politics since 1989; publication postdates the episode.'
   },
+  {
+    id: 'ethiopiaAllianceFoundingStatement2026',
+    label: 'Ethiopian Peoples’ Forces Alliance for Survival — founding announcement, as embedded by Al Jazeera',
+    url: 'https://x.com/OLF_OLA/status/2101722695964754370',
+    note: 'Primary announcement link surfaced in Al Jazeera’s 21 September report and attributed to the alliance. X returned 403 during this review, so the post and full founding statement were not independently retrieved; claims are cross-checked against AP and Addis Standard reporting and remain attributed. No statement wording is reproduced.',
+    accessDate: '2026-09-25', creators: ['Ethiopian Peoples’ Forces Alliance for Survival'], institution: 'Alliance announcement account (as embedded by Al Jazeera)',
+    publicationDate: '2026-09-20', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'linked founding statement / primary political announcement (not directly retrievable in this review)', identifiers: { platform: 'X', post: '2101722695964754370', announcementDate: '2026-09-20' },
+    description: 'The post URL is provided as the original announcement anchor; access failure is disclosed. It is not treated as a directly consulted text or independent proof of implementation, membership capacity, popular support or coordination.'
+  },
+  {
+    id: 'ethiopiaAddisStandardAlliance2026',
+    label: 'Addis Standard — report on seven Ethiopian opposition groups’ coalition announcement',
+    url: 'https://addisstandard.com/seven-ethiopian-armed-groups-formally-announce-formation-of-a-coalition/',
+    note: 'Addis Standard report dated 20 September 2026, consulted through its AllAfrica syndication because the publisher page returned 403. It reports the founding statement, membership and stated transitional objectives, and separately notes that the Oromo Liberation Army had characterized the prior emerging arrangement as only procedural consensus on 17 September. No implementation, unified command or representativeness is inferred.',
+    accessDate: '2026-09-25', creators: ['Addis Standard'], institution: 'Addis Standard (syndicated by AllAfrica Global Media)',
+    publicationDate: '2026-09-20', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'Ethiopian news report / contemporaneous account of founding statement', identifiers: { reportDate: '2026-09-20', syndicatedAt: 'AllAfrica' },
+    description: 'Contemporaneous reporting of the alliance’s announced name, seven listed organizations, stated opposition and proposed transitional process. The differing name forms in reporting are preserved rather than harmonized.'
+  },
+  {
+    id: 'ethiopiaApAlliance2026',
+    label: 'Associated Press — report on Ethiopian opposition groups’ alliance announcement',
+    url: 'https://apnews.com/article/ethiopia-politics-government-opposition-alliance-d348643aa604ebc074d8aade25c97efe',
+    note: 'Associated Press report published 21 September 2026 and consulted in full on 25 September. It reports seven members and the coalition’s objective as described by the groups, quotes a TPLF spokesman on political and possible military cooperation, reports that compatibility with the 2022 Pretoria agreement was contested by the spokesman, and notes that the practical degree of coordination was unclear. These are attributed statements and reported uncertainty, not independently verified military arrangements.',
+    accessDate: '2026-09-25', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-09-21', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent international news-agency report', identifiers: { reportDate: '2026-09-21', announcementDate: '2026-09-20' },
+    description: 'Independent reporting of the public coalition announcement and attributed member statements, while expressly leaving the extent of coordination unclear.'
+  },
 ];
 
 sources.push(

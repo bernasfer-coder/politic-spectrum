@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 206);
-assert.equal(GEOGRAPHY_LABELS.length, 204);
+assert.equal(GEOGRAPHY_CASES.length, 207);
+assert.equal(GEOGRAPHY_LABELS.length, 205);
 const farabiBaghdad = GEOGRAPHY_CASES.find(({ id }) => id === 'farabi-baghdad');
 assert.equal(farabiBaghdad?.datePrecision, 'approximate');
 assert.equal(farabiBaghdad?.confidence, 'medium');
@@ -784,6 +784,17 @@ assert.ok(filterGeographyCases({ country: 'map-804' }).some(({ id }) => id === u
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'ukraine')?.countryIds[0], 'map-804');
 assert.equal(MAP_COUNTRIES_BY_ID['map-804']?.name, 'Ukraine');
 assert.ok(MAP_COUNTRIES_BY_ID['map-804']?.path, 'Ukraine should use its own world-map country geometry');
+const ethiopianAlliance = GEOGRAPHY_CASES.find(({ id }) => id === 'ethiopian-opposition-alliance-announcement-2026');
+assert.equal(ethiopianAlliance?.relationship, 'advocated');
+assert.equal(ethiopianAlliance?.datePrecision, 'snapshot');
+assert.ok(ethiopianAlliance?.claim.includes('AP calls it'));
+assert.ok(ethiopianAlliance?.claim.includes('not evidence of a unified command'));
+assert.ok(ethiopianAlliance?.limitation.includes('inaccessible (HTTP 403)'));
+assert.ok(ethiopianAlliance?.limitation.includes('do not represent all Ethiopian political organizations'));
+assert.ok(ethiopianAlliance?.sourceIds.includes('ethiopiaAllianceFoundingStatement2026'));
+assert.ok(ethiopianAlliance?.sourceIds.includes('lyonsPuzzleEthiopianPolitics2019'));
+assert.ok(ethiopianAlliance?.sourceIds.includes('tarikuGebresenbetInsecurityEthiopia2026'));
+assert.ok(filterGeographyCases({ country: 'ethiopia' }).some(({ id }) => id === ethiopianAlliance?.id));
 assert.ok(!filterGeographyCases({ country: 'egypt' }).some(({ id }) => id === 'nasser-regional-legacy'), 'regional influence is not automatically a country claim');
 const all = filterGeographyCases({});
 assert.deepEqual(all.map(({ startYear }) => startYear), all.map(({ startYear }) => startYear).sort((a, b) => a - b));
