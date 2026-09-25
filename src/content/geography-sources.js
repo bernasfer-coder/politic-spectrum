@@ -10467,6 +10467,36 @@ sources.push(
     publicationDate: '2026-09-14', evidenceRole: 'contextual', confidence: 'medium', languages: ['English'],
     sourceType: 'contemporaneous report of an electoral-commission stakeholder briefing', identifiers: { eventDate: '2026-09-14', outlet: 'government-owned press' },
     description: 'Reports IEC preparations, the legal framework cited by officials, a scheduled polling date and a later timetable for nominations and campaigning; used to document the timetable discrepancy, not as an independent judgment of election quality.'
+  },
+  {
+    id: 'gambiaIecNationalBuildersRegistration2026',
+    label: 'Independent Electoral Commission of The Gambia — National Builders Party registration notice',
+    url: 'https://iec.gm/press-release-national-builders-party-officially-registered-as-a-political-party-in-the-gambia/',
+    note: 'The IEC’s 17 September 2026 notice records registration of the National Builders Party under section 106 of the Elections Act 2025. Registration is not presidential nomination, evidence the party will field a candidate, or evidence about its ideology or support. No notice text or party artwork is reproduced.',
+    accessDate: '2026-09-25', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    publicationDate: '2026-09-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official political-party registration notice', identifiers: { registrationDate: '2026-09-17', party: 'National Builders Party', acronym: 'NBP', legalBasis: 'Elections Act 2025, section 106' },
+    description: 'Records IEC registration of the National Builders Party before the scheduled 2026 presidential nomination period.'
+  },
+  {
+    id: 'gambiaIecLabourPartyRegistration2026',
+    label: 'Independent Electoral Commission of The Gambia — Gambia Labour Party registration notice',
+    url: 'https://iec.gm/press-release-gambia-labour-party-officially-registered-as-a-political-party-in-the-gambia/',
+    note: 'The IEC’s 17 September 2026 notice records registration of the Gambia Labour Party under section 106 of the Elections Act 2025. Registration is not presidential nomination, evidence the party will field a candidate, or evidence about its ideology or support. No notice text or party artwork is reproduced.',
+    accessDate: '2026-09-25', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    publicationDate: '2026-09-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official political-party registration notice', identifiers: { registrationDate: '2026-09-17', party: 'Gambia Labour Party', acronym: 'GLP', legalBasis: 'Elections Act 2025, section 106' },
+    description: 'Records IEC registration of the Gambia Labour Party before the scheduled 2026 presidential nomination period.'
+  },
+  {
+    id: 'gambiaIecNationalDemocraticRegistration2026',
+    label: 'Independent Electoral Commission of The Gambia — National Democratic Party registration notice',
+    url: 'https://iec.gm/press-release-national-democratic-party-officially-registered-as-a-political-party-in-the-gambia/',
+    note: 'The IEC’s 17 September 2026 notice records registration of the National Democratic Party under section 106 of the Elections Act 2025. Registration is not presidential nomination, evidence the party will field a candidate, or evidence about its ideology or support. No notice text or party artwork is reproduced.',
+    accessDate: '2026-09-25', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    publicationDate: '2026-09-17', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official political-party registration notice', identifiers: { registrationDate: '2026-09-17', party: 'National Democratic Party', acronym: 'NDP', legalBasis: 'Elections Act 2025, section 106' },
+    description: 'Records IEC registration of the National Democratic Party before the scheduled 2026 presidential nomination period.'
   }
 );
 

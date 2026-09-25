@@ -94,6 +94,15 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('accessible here only through its abstract/extract');
   });
 
+  it('shows Gambian party registrations as administrative context, not presidential nominations', () => {
+    window.history.replaceState(null, '', '/#geography?case=gambia-2026-presidential-election-pre-election-snapshot');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('National Builders Party, Gambia Labour Party and National Democratic Party');
+    expect(cards()[0]).toHaveTextContent('do not say those parties will field presidential candidates');
+    expect(cards()[0]).toHaveTextContent('disagreement with the Commission’s published calendar');
+  });
+
   it('shows the bounded Bolivia 2025 election case and its documented evidence gap', async () => {
     const user = userEvent.setup();
     renderAtlas();
