@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 209);
-assert.equal(GEOGRAPHY_LABELS.length, 207);
+assert.equal(GEOGRAPHY_CASES.length, 210);
+assert.equal(GEOGRAPHY_LABELS.length, 208);
 const russianDuma2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'russian-2026-state-duma-election-and-observation-dispute');
 assert.equal(russianDuma2026?.datePrecision, 'snapshot');
 assert.equal(russianDuma2026?.confidence, 'medium');
@@ -272,6 +272,16 @@ assert.equal(GEOGRAPHY_COUNTRIES.find(({ id }) => id === 'map-894')?.name, 'Zamb
 assert.equal(MAP_COUNTRIES_BY_ID['map-894']?.name, 'Zambia');
 assert.ok(MAP_COUNTRIES_BY_ID['map-894']?.path, 'Zambia should use its own world-map country geometry');
 assert.ok(filterGeographyCases({ country: 'map-894' }).some(({ id }) => id === zambiaElection?.id));
+const lusakaMayorPetition = GEOGRAPHY_CASES.find(({ id }) => id === 'lusaka-2026-mayoral-election-and-withdrawal-of-petition');
+assert.equal(lusakaMayorPetition?.datePrecision, 'snapshot');
+assert.equal(lusakaMayorPetition?.confidence, 'medium');
+assert.ok(lusakaMayorPetition?.claim.includes('195,041'));
+assert.ok(lusakaMayorPetition?.claim.includes('not to a judicial finding'));
+assert.ok(lusakaMayorPetition?.claim.includes('No reported source reviewed here establishes a merits determination'));
+assert.ok(lusakaMayorPetition?.limitation.includes('written preliminary ruling'));
+assert.ok(lusakaMayorPetition?.sourceIds.includes('zambiaLocalGovernmentElectionsTribunalRules2026'));
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === lusakaMayorPetition?.placeId)?.countryIds[0], 'map-894');
+assert.ok(filterGeographyCases({ country: 'map-894' }).some(({ id }) => id === lusakaMayorPetition?.id));
 const ethiopiaElection = GEOGRAPHY_CASES.find(({ id }) => id === 'ethiopia-2026-seventh-general-election');
 assert.equal(ethiopiaElection?.datePrecision, 'snapshot');
 assert.equal(ethiopiaElection?.confidence, 'medium');
@@ -773,7 +783,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 181, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 182, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('djibouti-2025-amendment-and-2026-presidential-election'));
 assert.ok(implementedPost2000.includes('albania-2025-parliamentary-election-and-diaspora-vote'));
 assert.equal(filterGeographyCases({ country: 'map-188' })[0].id, 'costa-rican-2026-national-election-and-transfer-of-office');

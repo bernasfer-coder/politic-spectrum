@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(209);
+  await expect(page.locator('.geo-card')).toHaveCount(210);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -553,7 +553,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(209);
+  await expect(page.locator('.geo-card')).toHaveCount(210);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -772,5 +772,19 @@ test('Missouri map litigation preserves the conflicting rulings and pre-deadline
   await expect(card).toContainText('no later disposition listed at the 25 September review');
   await expect(card).toContainText('Gerrymandering” is not asserted here as a judicial finding');
   await expect(card).toContainText('No ideological classification or six-axis score applies');
+});
+
+test('Lusaka mayoral petition separates attributed allegations, procedure and withdrawal reporting', async ({ page }) => {
+  await page.goto('/#geography?case=lusaka-2026-mayoral-election-and-withdrawal-of-petition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('200,029 and 195,041');
+  await expect(card).toContainText('not to a judicial finding');
+  await expect(card).toContainText('Diamond Media’s earlier 24 September report');
+  await expect(card).toContainText('No reported source reviewed here establishes a merits determination');
+  await expect(card).toContainText('no ideological classification or six-axis score');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="zambiaLocalGovernmentElectionsTribunalRules2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="lusakaMayorPetitionWithdrawalLusakaTimes2026"]')).toBeVisible();
 });
 
