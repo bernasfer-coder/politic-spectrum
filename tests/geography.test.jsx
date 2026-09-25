@@ -25,6 +25,16 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('no six-axis score');
   });
 
+  it('shows São Tomé and Príncipe’s 2026 parliamentary election only as a sourced pre-election snapshot', () => {
+    window.history.replaceState(null, '', '/#geography?case=sao-tome-2026-national-assembly-election-pre-election');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('27 September 2026');
+    expect(cards()[0]).toHaveTextContent('no findings about the 27 September vote');
+    expect(cards()[0]).toHaveTextContent('No voting, counting, certified results');
+    expect(cards()[0]).toHaveTextContent('no ideological label or six-axis score');
+  });
+
   it('shows Sabah’s bounded 2025 election and distinguishes official returns from interpretation', () => {
     window.history.replaceState(null, '', '/#geography?case=sabah-2025-state-election-and-chief-minister-appointment');
     renderAtlas();
@@ -61,7 +71,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(194);
+    expect(cards()).toHaveLength(195);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
