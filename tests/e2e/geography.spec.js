@@ -613,3 +613,14 @@ test('Venezuela 2026 transition keeps the UN findings attributed and the promise
   await expect(card).toContainText('no new six-axis score');
 });
 
+test('Oman 2026 decrees document cabinet structure without inferring succession or implementation', async ({ page }) => {
+  await page.goto('/#geography?case=oman-sultani-constitutional-order');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('Royal Decree 7/2026');
+  await expect(card).toContainText('Theyazin bin Haitham bin Tarik Deputy Prime Minister for Economic Affairs');
+  await expect(card).toContainText('not independently collated');
+  await expect(card).toContainText('No inference about succession');
+  await expect(card).toContainText('no score or coordinate has been added');
+});
+

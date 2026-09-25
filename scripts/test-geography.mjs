@@ -334,6 +334,15 @@ assert.equal(filterGeographyCases({ country: 'ethiopia' })[0].id, 'ethiopian-imp
 assert.equal(filterGeographyCases({ country: 'tonga' })[0].id, 'tongan-constitutional-reform-1875-2010');
 assert.equal(filterGeographyCases({ country: 'saudi-arabia' })[0].id, 'saudi-basic-law-shura-order');
 assert.equal(filterGeographyCases({ country: 'oman' })[0].id, 'oman-sultani-constitutional-order');
+const omanCabinetCase = filterGeographyCases({ country: 'oman' })[0];
+assert.equal(omanCabinetCase?.reviewedAt, '2026-09-25');
+assert.ok(omanCabinetCase?.claim.includes('Royal Decree 7/2026'));
+assert.ok(omanCabinetCase?.claim.includes('Sayyid Theyazin bin Haitham bin Tarik Deputy Prime Minister'));
+assert.ok(omanCabinetCase?.limitation.includes('annexes that remain to be collated'));
+assert.ok(omanCabinetCase?.limitation.includes('no score or coordinate has been added'));
+assert.ok(omanCabinetCase?.sourceIds.includes('omanCabinetRoyalDecree172026'));
+assert.ok(omanCabinetCase?.sourceIds.includes('omanEconomicOfficeRoyalDecree72026'));
+assert.ok(omanCabinetCase?.sourceIds.includes('omanForeignMinistryCouncilMinisters2026'));
 assert.equal(filterGeographyCases({ country: 'kuwait' })[0].id, 'kuwait-constitutional-parliamentary-order');
 assert.equal(filterGeographyCases({ country: 'jordan' })[0].id, 'jordanian-constitutional-monarchy');
 assert.equal(filterGeographyCases({ country: 'philippines' })[0].id, 'philippine-postauthoritarian-constitutionalism');
