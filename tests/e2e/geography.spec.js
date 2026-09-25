@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(171);
+  await expect(page.locator('.geo-card')).toHaveCount(172);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -253,6 +253,16 @@ test('Burkina Faso 2026 case distinguishes the party-law vote, Revolution Charte
   await expect(page.locator('.geo-card')).toContainText('pre-event contexts');
 });
 
+test('Mali 2025 case distinguishes the Gazette law, dissolution decree, protest response and attributed legal analysis', async ({ page }) => {
+  await page.goto('/#geography?case=mali-2025-party-dissolution-and-political-exclusion');
+  await expect(page.locator('.geo-card')).toHaveCount(1);
+  await expect(page.locator('.geo-card')).toContainText('Law No. 2025-005');
+  await expect(page.locator('.geo-card')).toContainText('2025-0339/PT-RM');
+  await expect(page.locator('.geo-card')).toContainText('at least 80 parties');
+  await expect(page.locator('.geo-card')).toContainText('not court judgments');
+  await expect(page.locator('.geo-card')).toContainText('no six-axis scores');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -269,7 +279,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(171);
+  await expect(page.locator('.geo-card')).toHaveCount(172);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
