@@ -13,10 +13,22 @@ beforeEach(() => { window.localStorage.clear(); window.history.replaceState(null
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 describe('geographic atlas', () => {
+  it('shows the bounded 2026 Japanese snap election and preserves attribution limits on electoral access', () => {
+    window.history.replaceState(null, '', '/#geography?case=japanese-2026-snap-election-and-electoral-access');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('23 January–15 June 2026');
+    expect(cards()[0]).toHaveTextContent('315 seats');
+    expect(cards()[0]).toHaveTextContent('44,642 polling stations');
+    expect(cards()[0]).toHaveTextContent('are attributed legislative claims');
+    expect(cards()[0]).toHaveTextContent('not evidence that any given elector was prevented from voting');
+    expect(cards()[0]).toHaveTextContent('no six-axis score');
+  });
+
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(186);
+    expect(cards()).toHaveLength(187);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');

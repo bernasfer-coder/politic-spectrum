@@ -10301,12 +10301,72 @@ sources.push(
   },
 );
 
+sources.push(
+  {
+    id: 'japan2026HouseElectionResultsSoumu', label: 'Japan Ministry of Internal Affairs and Communications — 51st House of Representatives election results (2026)',
+    url: 'https://www.soumu.go.jp/senkyo/51syusokuhou/index.html',
+    note: 'Official Ministry result portal for the 8 February 2026 House of Representatives election and Supreme Court justice review. The record is linked, not republished; results establish officially reported outcomes, not voter motives, equal campaign conditions or public consent on every policy.',
+    accessDate: '2026-09-25', creators: ['Ministry of Internal Affairs and Communications, Japan'], institution: 'Government of Japan, Ministry of Internal Affairs and Communications', publicationDate: '2026-02', evidenceRole: 'primary', confidence: 'high', languages: ['Japanese'],
+    sourceType: 'official national election result portal', identifiers: { election: '51st House of Representatives general election', electionDate: '2026-02-08' },
+    description: 'The responsible national ministry’s result portal for the 2026 general election. It is the primary institutional result source; the case uses the separate IPU record to present the LDP seat total carefully, distinguishing the 315 elected LDP members from an independent who joined after the election.'
+  },
+  {
+    id: 'japan2026ElectionIpuParline', label: 'Inter-Parliamentary Union — Japan House of Representatives February 2026 election',
+    url: 'https://data.ipu.org/parliament/JP/JP-LC01/election/JP-LC01-E20260208/',
+    note: 'IPU Parline result page consulted for the 8 February 2026 election. Its turnout note specifies that the displayed 56.3 per cent rate refers to the proportional-representation system; the case does not generalize it to every ballot. IPU records 315 LDP members elected and notes one independent joined the party afterward, making 316 a later parliamentary affiliation rather than the election-night seat count.',
+    accessDate: '2026-09-25', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union', publicationDate: '2026', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'international parliamentary election-results database', identifiers: { electionDate: '2026-02-08', seats: '465', voters: 'proportional-representation turnout measure' },
+    description: 'Structured contextual and comparative election data covering the 465 seats, candidate and member demographics, turnout measure, party results, new legislature and parliamentary opening. It is a secondary institutional compilation drawing on Japanese sources and named media, not a substitute for the official Japanese election record.'
+  },
+  {
+    id: 'japan2026PrimeMinisterDesignationDiet', label: 'Japan House of Representatives — prime-ministerial designation, 18 February 2026',
+    url: 'https://www.shugiin.go.jp/internet/itdb_honkaigi.nsf/html/honkai/keika20260218.htm',
+    note: 'Official plenary proceedings record the designated prime minister vote at the first special session following the election. It establishes the recorded House vote and procedural event, not policy consent or a referendum mandate.',
+    accessDate: '2026-09-25', creators: ['House of Representatives, National Diet of Japan'], institution: 'House of Representatives of Japan', publicationDate: '2026-02-18', evidenceRole: 'primary', confidence: 'high', languages: ['Japanese'],
+    sourceType: 'official parliamentary plenary proceedings', identifiers: { session: '221st Diet', meetingDate: '2026-02-18' },
+    description: 'The House minutes record 464 votes cast and Sanae Takaichi receiving 354 votes in the House’s designation of the prime minister on 18 February 2026. It anchors the formal post-election parliamentary transition.'
+  },
+  {
+    id: 'japan2026DissolutionPressConferenceKantei', label: 'Prime Minister’s Office of Japan — statement on House dissolution, 23 January 2026',
+    url: 'https://japan.kantei.go.jp/104/statement/202601/23kaiken.html',
+    note: 'Official transcript of Prime Minister Takaichi’s press conference announcing the House dissolution. It records the government’s public rationale and acknowledges the winter-weather and examination-season context; it is a primary statement of the executive’s position, not an independent evaluation of the decision.',
+    accessDate: '2026-09-25', creators: ['Sanae Takaichi, Prime Minister of Japan'], institution: 'Prime Minister’s Office of Japan', publicationDate: '2026-01-23', evidenceRole: 'primary', confidence: 'high', languages: ['Japanese', 'English'],
+    sourceType: 'official prime-ministerial press conference transcript', identifiers: { date: '2026-01-23', event: 'House dissolution and snap election announcement' },
+    description: 'The Prime Minister’s statement presents the administration’s reasons for seeking an early election and explicitly notes snow and the burden on examinees. Its claims are attributed to the speaker and are not treated as evidence of voter response.'
+  },
+  {
+    id: 'japan2026ElectionAccessDietDebate', label: 'Japan House of Representatives — Political Reform Special Committee, 15 June 2026',
+    url: 'https://www.shugiin.go.jp/internet/itdb_kaigiroku.nsf/html/kaigiroku/034322120260615003.htm',
+    note: 'Official Japanese-language Diet transcript, consulted for government answers and opposition questions about the 2026 short winter election. Assertions by members are attributed, not silently treated as adjudicated facts. The ministry official supplies administrative totals: 44,642 polling stations (787 fewer than 2024) and 18,686 early-closing stations (about 41.9 per cent). The transcript records the government’s snow-response, transport and access measures alongside legislators’ concerns about delayed notices, Braille materials, poster boards and overseas postal voting; specific local allegations were not independently audited here.',
+    accessDate: '2026-09-25', creators: ['House Political Reform Special Committee; Ministry of Internal Affairs and Communications officials; Diet members'], institution: 'House of Representatives of Japan', publicationDate: '2026-06-15', evidenceRole: 'primary', confidence: 'high', languages: ['Japanese'],
+    sourceType: 'official parliamentary committee minutes and ministerial testimony', identifiers: { session: '221st Diet', committee: 'Political Reform Special Committee, No. 3', meetingDate: '2026-06-15' },
+    description: 'A primary record of post-election parliamentary scrutiny. It establishes what elected members alleged and what ministry officials reported in response, without constituting an independent nationwide audit of accessibility, misinformation, campaign quality or voter exclusion.'
+  },
+  {
+    id: 'japan2026ElectionMediaStudyUesugiAkimoto', label: 'Shinichi Uesugi and Hiromi Akimoto — “How Television Covered the ‘Midwinter Snap Election’”',
+    url: 'https://www.jstage.jst.go.jp/article/bunken/76/7/76_2/_article/-char/en',
+    note: 'J-STAGE metadata and English abstract for the Japanese-language 2026 report consulted; no article text, survey table, quotation or figure is reproduced. It analyzes an online survey of television-election-coverage perceptions and broadcast content, so its findings are not generalized to the entire electorate or interpreted as causal evidence about vote choice.',
+    accessDate: '2026-09-25', creators: ['Shinichi Uesugi', 'Hiromi Akimoto'], institution: 'NHK Broadcasting Culture Research Institute', publicationDate: '2026-07-01', evidenceRole: 'secondary', confidence: 'high', languages: ['Japanese', 'English abstract'],
+    sourceType: 'Japanese-language research report on election media coverage', identifiers: { journal: 'The NHK Monthly Report on Broadcast Research', volume: '76', issue: '7', pages: '2–27', doi: '10.24634/bunken.76.7_2' },
+    description: 'The authors compare viewers’ perceptions with NHK and commercial broadcasters’ election coverage. Their abstract reports that many respondents considered television coverage positive but insufficient, while survey respondents’ concern about inadequate disinformation coverage was also reflected in the content analysis; online-sample and subject-matter limits remain.'
+  },
+  {
+    id: 'nagatomiJapaneseElectoralSystem2021', label: 'Kazuaki Nagatomi — The Operation of the Japanese Electoral System since 1994',
+    url: 'https://link.springer.com/book/10.1007/978-981-16-3985-2',
+    note: 'Springer Nature/Palgrave Macmillan book record, abstract and table of contents consulted; the monograph text was not independently reviewed for this case. It predates 2026 and is historical/institutional context only; no claim about the 2026 election is attributed to Nagatomi.',
+    accessDate: '2026-09-25', creators: ['Kazuaki Nagatomi'], institution: 'Palgrave Macmillan Singapore / Springer Nature', publicationDate: '2021-11-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly study of Japanese electoral systems', identifiers: { isbn: '978-981-16-3984-5', ebookIsbn: '978-981-16-3985-2', doi: '10.1007/978-981-16-3985-2', pages: 'XIV, 279' },
+    description: 'A book-length study of the mixed electoral system adopted in 1994 and its district/proportional mechanisms, party-support geography, seat translation and representation. Used as contextual scholarship on electoral-system structure, not as evidence about the February 2026 poll.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
+  discipline: source.id.startsWith('japan2026') || source.id.startsWith('nagatomiJapaneseElectoralSystem') ? 'Japanese elections, electoral access and parliamentary politics'
+    : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
