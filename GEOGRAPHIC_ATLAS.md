@@ -8,6 +8,8 @@ Browse documented connections between political labels, actors, places and perio
 
 The public interface provides continent, region, country-locator, specific-place, label, relationship, period and text filters; chronological and card views; label explanations before cases; source-reading boundaries; and bibliography/encyclopedia cross-links. Filters, views and individual cases have shareable fragment URLs and survive refresh and browser history. Clipboard failure on the HTTP LAN site falls back to a selectable link.
 
+Ukraine’s 2022–2026 entry is bounded to constitutional continuity, martial-law election restrictions and election-readiness issues through 25 September 2026. It cites the Constitution and latest located martial-law extension, while distinguishing the European Commission’s earlier institutional assessment from current law and using three publisher-record-only scholarly contexts. It is not a country score or a comprehensive account of wartime politics; direct judicial interpretations and up-to-date independent monitoring remain research gaps.
+
 ## Evidence model
 
 `src/content/geography.js` holds independent place, label and case records. Each case has one primary relationship: developed, advocated, experimented, implemented, or influenced. Further meanings require another independently sourced case rather than a loose tag on a country.
