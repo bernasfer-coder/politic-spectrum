@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(195);
+  await expect(page.locator('.geo-card')).toHaveCount(196);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -419,7 +419,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(195);
+  await expect(page.locator('.geo-card')).toHaveCount(196);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -521,5 +521,21 @@ test('Somalia locator opens its bounded 2026 constitutional transition and expos
   await expect(card).toContainText('requires independent Somali legal-language review');
   await expect(card).toContainText('No referendum result');
   await expect(somalia).toHaveAttribute('aria-pressed', 'true');
+});
+
+test('Zambia locator opens the 2026 election and keeps the result-verification and petition questions distinct', async ({ page }) => {
+  await page.goto('/#geography');
+  const map = page.getByRole('group', { name: 'Interactive world map' });
+  const zambia = map.getByRole('button', { name: 'Zambia: 1 matching case', exact: true });
+  await expect(zambia).toBeVisible();
+  await zambia.click();
+  await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('map-894');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('56.0% ±1.7');
+  await expect(card).toContainText('did not change the presidential winner');
+  await expect(card).toContainText('reported no decision on that referral');
+  await expect(card).toContainText('assigns no permanent ideology');
+  await expect(zambia).toHaveAttribute('aria-pressed', 'true');
 });
 
