@@ -118,6 +118,23 @@ for (const sourceId of ['laosKplCandidates2026', 'laosBtiCountryReport2026', 'la
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Laos rights/provenance review missing: ${sourceId}`);
 }
 assert.equal(filterGeographyCases({ country: 'map-104' })[0].id, 'myanmar-constitutional-military-and-transition-order');
+const myanmarSpring2026 = filterGeographyCases({ country: 'map-104' }).find(({ id }) => id === 'myanmar-post-2021-spring-revolution-and-competing-governance');
+assert.ok(myanmarSpring2026);
+assert.equal(myanmarSpring2026.startYear, 2021);
+assert.equal(myanmarSpring2026.endYear, 2026);
+assert.equal(myanmarSpring2026.reviewedAt, '2026-09-26');
+assert.ok(myanmarSpring2026.claim.includes('phase-III township totals differed across official announcements (61 versus 63)'));
+assert.ok(myanmarSpring2026.claim.includes('not independent verification'));
+assert.ok(myanmarSpring2026.claim.includes('not ASEAN endorsement'));
+assert.ok(myanmarSpring2026.claim.includes('investigative reporting is not a criminal judgment'));
+assert.ok(myanmarSpring2026.limitation.includes('none is an event-specific history'));
+assert.ok(myanmarSpring2026.limitation.includes('not a current-country ideological score'));
+for (const sourceId of ['myanmarElectionPhases2026Moi', 'myanmarElectionResults2026Uec', 'myanmarElectionHumanRightsOHCHR2026', 'myanmarIimmAnnualReport2026', 'myanmarElectionResultAP2026', 'myanmarPresidentElectionAP2026', 'myanmarPresidentElectionOfficial2026', 'myanmarAseanRetreatStatement2026']) {
+  assert.ok(myanmarSpring2026.sourceIds.includes(sourceId), `Myanmar 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Myanmar bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Myanmar rights/provenance review missing: ${sourceId}`);
+}
+assert.equal(filterGeographyCases({ country: 'map-104' }).find(({ id }) => id === 'myanmar-constitutional-military-and-transition-order')?.endYear, 2021);
 assert.equal(filterGeographyCases({ country: 'map-410' })[0].id, 'south-korean-constitutional-democratic-and-developmental-order');
 assert.equal(filterGeographyCases({ country: 'map-422' })[0].id, 'lebanese-posttaif-consociational-and-protest-order');
 const lebanon2026 = filterGeographyCases({ country: 'map-422' })[0];

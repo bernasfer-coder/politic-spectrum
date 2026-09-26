@@ -7027,6 +7027,78 @@ const sources = [
     description: 'Primary witness to the SAC’s 2025 announcement of a December multiparty general election and its framing of the military-government order as a transition toward multiparty democracy. It establishes an announced electoral horizon, not the occurrence, credibility, legality or representativeness of an election.',
   },
   {
+    id: 'myanmarElectionPhases2026Moi',
+    label: 'Myanmar Ministry of Information — Government account of the completed 2025–26 election phases (27 January 2026)',
+    url: 'https://www.moi.gov.mm/moi:eng/news/20148',
+    note: 'Official government account consulted as a primary statement and link only. It gives phase dates and the government’s reported township coverage, parties and turnout, while advancing the authorities’ own claims about voluntariness, fairness, violence and political legitimacy. No article wording, results table, image or scan is republished; these assertions are not independent observation.',
+    accessDate: '2026-09-26', creators: ['Myanmar Ministry of Information'], institution: 'Ministry of Information / Global New Light of Myanmar', publicationDate: '2026-01-27', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official government account of completed election phases', identifiers: { phases: '28 December 2025; 11 January 2026; 25 January 2026', governmentReportedTownships: '263 of 330', governmentReportedEligibleVoters: '24.22 million', governmentReportedParties: '57' },
+    description: 'Documents the authorities’ post-election narrative and reported dates, 263/330 township coverage, 57 participating parties and 24.22 million eligible voters. The source’s own phase-III reporting gives 61 townships while earlier official schedules reported 63; its claims about freedom, fairness, voluntary voting and public support are attributed, not treated as independently established.',
+  },
+  {
+    id: 'myanmarElectionResults2026Uec',
+    label: 'Union Election Commission of Myanmar — Announcement 34/2026, reported final party-vote and seat totals (9 February 2026)',
+    url: 'https://presoffministry.gov.mm/en/node/25015',
+    note: 'The President’s Office portal republishes the UEC announcement as an official election record. Used for an attributed summary and link only; no result table, image, downloadable data or wording is republished. Official counts establish what the commission reported, not electoral fairness, public consent or the completeness of competition.',
+    accessDate: '2026-09-26', creators: ['Union Election Commission of Myanmar'], institution: 'Union Election Commission / President’s Office portal', publicationDate: '2026-02-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election-commission announcement', identifiers: { announcement: '34/2026', date: '2026-02-09' },
+    description: 'Records the UEC’s announcement of party and candidate votes and seats for the 2025 multiparty general election. Use only for results as officially reported; it is not an independent assessment of electoral conditions or inclusion.',
+  },
+  {
+    id: 'myanmarElectionHumanRightsOHCHR2026',
+    label: 'UN High Commissioner for Human Rights — Volker Türk statement on the military-controlled ballot (30 January 2026)',
+    url: 'https://www.ecoi.net/en/document/2136385.html',
+    note: 'ECOI hosts the text of the OHCHR High Commissioner’s statement because the OHCHR page was inaccessible in this review; the original OHCHR URL is linked from the record. Used for attributed institutional concerns and original paraphrase only. No statement wording, quotation, image or scan is republished; stated casualties, arrests, coercion and exclusions remain attributed to the UN’s reported evidence and sources rather than adjudicated findings.',
+    accessDate: '2026-09-26', creators: ['Office of the United Nations High Commissioner for Human Rights', 'Volker Türk'], institution: 'OHCHR (statement mirrored by ECOI)', publicationDate: '2026-01-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'UN High Commissioner human-rights statement', identifiers: { originalOHCHRUrl: 'https://www.ohchr.org/en/press-releases/2026/01/myanmar-turk-says-military-controlled-ballot-exacerbates-violence-and-social' },
+    description: 'Reports OHCHR’s assessment of exclusion, coercion, violence, arrests and risks surrounding the military-organized election. It is an attributed institutional statement, not a judicial determination or an exhaustive account of all election-related violence.',
+  },
+  {
+    id: 'myanmarIimmAnnualReport2026',
+    label: 'Independent Investigative Mechanism for Myanmar — Annual Report statement on investigations and the 2025–26 election period (11 August 2026)',
+    url: 'https://iimm.un.org/en/node/459',
+    note: 'UN investigative mechanism statement and annual-report notice used for attributed synthesis and link only. No report wording, evidence, witness account, image or PDF page is reproduced. Investigative material and allegations are not presented as criminal convictions or final judicial findings; the Mechanism also investigates alleged atrocities by anti-military armed groups.',
+    accessDate: '2026-09-26', creators: ['Independent Investigative Mechanism for Myanmar'], institution: 'United Nations Human Rights Council mechanism', publicationDate: '2026-08-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'UN investigative-mechanism annual-report statement', identifiers: { reportingPeriod: '2025-07-01 to 2026-06-30' },
+    description: 'Describes the Mechanism’s investigations into attacks, detention, torture and sexual violence, including alleged election-law-related arrests and escalation ahead of January 2026 voting. It records investigative findings and evidence collection, not a court’s determination of individual criminal responsibility.',
+  },
+  {
+    id: 'myanmarElectionResultAP2026',
+    label: 'Associated Press — Final reported results and political context of Myanmar’s 2025–26 election (4 February 2026)',
+    url: 'https://apnews.com/article/ce432b0d344e11b54a537d5f2c7b5dd9',
+    note: 'Associated Press report used for independent secondary cross-check and original paraphrase only. No wording, photo, caption or article extract is republished. The AP attributes totals to the UEC and frames competition and military influence as reported context; this is not an election-observation mission.',
+    accessDate: '2026-09-26', creators: ['Associated Press'], institution: 'Associated Press', publicationDate: '2026-02-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report on official election results', identifiers: { reportedUSDPSeats: '339 of 586 national parliamentary seats' },
+    description: 'Cross-checks that the UEC announced the military-backed USDP as the winning party with 339 of 586 national parliamentary seats and reports restrictions and opposition exclusions. Neither the official total nor this news account alone establishes voter intent or comprehensive electoral assessment.',
+  },
+  {
+    id: 'myanmarPresidentElectionAP2026',
+    label: 'Associated Press — Parliament elects Min Aung Hlaing president (3 April 2026)',
+    url: 'https://apnews.com/article/c263b2d6175b82c5868e24496c975ff8',
+    note: 'Associated Press reporting used for attributed summary and link only. No article wording, photograph or media is republished. Contemporary interpretation of continued military influence is attributed to reporting and named actors, not treated as a new book-length scholarly consensus.',
+    accessDate: '2026-09-26', creators: ['Associated Press'], institution: 'Associated Press', publicationDate: '2026-04-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'news report on parliamentary presidential election', identifiers: { reportedElectionDate: '2026-04-03', electedPresident: 'Min Aung Hlaing' },
+    description: 'Reports parliament’s election of Min Aung Hlaing as president and places the formal transfer within the military’s continued political influence. It does not settle the legality or representativeness of the preceding election or establish uniform effective control.',
+  },
+  {
+    id: 'myanmarPresidentElectionOfficial2026',
+    label: 'President’s Office of Myanmar — Official report of the 3 April 2026 presidential election',
+    url: 'https://presoffministry.gov.mm/en/news/30241',
+    note: 'Official President’s Office report used for attributed officeholder, date and vote count, with a link only. No announcement wording, image or page capture is republished; the record of a constitutional procedure is not independent validation of the preceding election or the extent of subsequent civilian or military authority.',
+    accessDate: '2026-09-26', creators: ['President’s Office of the Republic of the Union of Myanmar'], institution: 'President’s Office of Myanmar', publicationDate: '2026-04-03', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary presidential-election report', identifiers: { electionDate: '2026-04-03', electedPresident: 'Min Aung Hlaing', reportedVotes: '429' },
+    description: 'Official account says the Presidential Electoral College elected Min Aung Hlaing president with 429 votes and records the vice-presidential results. This supports only the official procedural outcome, not electoral fairness, public consent or the character of the new government.',
+  },
+  {
+    id: 'myanmarAseanRetreatStatement2026',
+    label: 'ASEAN Chair — Press statement of the Foreign Ministers’ Retreat (January 2026)',
+    url: 'https://asean.org/wp-content/uploads/2026/01/FINAL-Press-Statement-by-the-Chair-of-the-ASEAN-Foreign-Affairs-Ministers-Retreat.pdf',
+    note: 'Official ASEAN chair statement consulted as a regional diplomatic record and link only. No statement wording, PDF page or image is republished. It notes the completion of three election phases while reiterating expectations for inclusive, free, fair, peaceful, transparent and credible elections; it is not evidence of ASEAN endorsement or recognition of the result.',
+    accessDate: '2026-09-26', creators: ['ASEAN Chair / Philippine Department of Foreign Affairs'], institution: 'Association of Southeast Asian Nations', publicationDate: '2026-01-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'ASEAN foreign-ministers’ official press statement', identifiers: { meeting: 'ASEAN Foreign Ministers’ Retreat', date: '2026-01-29' },
+    description: 'Records ASEAN’s official diplomatic position: notes the three completed phases and restates expectations for a peaceful, inclusive process and credible elections, alongside the Five-Point Consensus. It should not be paraphrased as endorsement or recognition of the election outcome.',
+  },
+  {
     id: 'southKoreaConstitution1987Official',
     label: 'Republic of Korea — Constitution of the Republic of Korea (1987, official English text)',
     url: 'https://www.law.go.kr/lsInfoP.do?lsiSeq=61603&viewCls=engLsInfoR',
@@ -10204,7 +10276,8 @@ export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note })
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('laos') ? 'Lao constitutional, political and electoral history'
+  discipline: source.id.startsWith('myanmar') ? 'Myanmar constitutional, military, conflict, human-rights, electoral and political history'
+    : source.id.startsWith('laos') ? 'Lao constitutional, political and electoral history'
     : source.id.startsWith('bulgaria') ? 'Bulgarian constitutional, electoral and post-communist political history'
     : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'

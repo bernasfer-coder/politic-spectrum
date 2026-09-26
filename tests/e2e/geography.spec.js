@@ -87,6 +87,20 @@ test('Laos 2026 election and parliamentary succession distinguish official data,
   await expect(card).toContainText('Draft laws and adopted planning resolutions are not treated as implemented outcomes');
 });
 
+test('Myanmar 2026 case distinguishes official election claims, UN reporting and the earlier transition record', async ({ page }) => {
+  await page.goto('/#geography?case=myanmar-post-2021-spring-revolution-and-competing-governance');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('28 December 2025, 11 and 25 January 2026');
+  await expect(card).toContainText('not independent verification');
+  await expect(card).toContainText('339 of 586 national parliamentary seats');
+  await expect(card).toContainText('not ASEAN endorsement');
+  await expect(card).toContainText('not a criminal judgment');
+  await expect(card).toContainText('No event-specific book-length scholarly history');
+  await expect(card).toContainText('not a current-country ideological score');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
