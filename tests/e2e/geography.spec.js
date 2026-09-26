@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(217);
+  await expect(page.locator('.geo-card')).toHaveCount(218);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -643,7 +643,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(217);
+  await expect(page.locator('.geo-card')).toHaveCount(218);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -930,5 +930,21 @@ test('Israel 2026 election snapshot separates list and candidate review and mark
   await expect(card.locator('a[href*="israelBasicLawKnessetSection7A"]')).toBeVisible();
   await expect(card.locator('a[href*="israelCecDisqualificationAdalah2026"]')).toBeVisible();
   await expect(card.locator('a[href*="israelLandauArabMinority1993"]')).toBeVisible();
+});
+
+test('Paraguay 2026 municipal election remains a pre-poll administrative snapshot', async ({ page }) => {
+  await page.goto('/#geography?case=paraguay-2026-municipal-election-pre-poll-snapshot');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('26 September 2026');
+  await expect(card).toContainText('4 October 2026');
+  await expect(card).toContainText('5,043,154');
+  await expect(card).toContainText('unofficial and non-binding');
+  await expect(card).toContainText('no preliminary or final result is available');
+  await expect(card).toContainText('No ideological label or six-axis placement');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="paraguayMunicipalElectionNumbers2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="paraguayMunicipalElectionTrepResolution1942026"]')).toBeVisible();
+  await expect(card.locator('a[href*="paraguayRomeroDemocracia2023"]')).toBeVisible();
 });
 

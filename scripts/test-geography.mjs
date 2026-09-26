@@ -7,8 +7,24 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 217);
-assert.equal(GEOGRAPHY_LABELS.length, 215);
+assert.equal(GEOGRAPHY_CASES.length, 218);
+assert.equal(GEOGRAPHY_LABELS.length, 216);
+const paraguayMunicipal2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'paraguay-2026-municipal-election-pre-poll-snapshot');
+assert.equal(paraguayMunicipal2026?.datePrecision, 'snapshot');
+assert.equal(paraguayMunicipal2026?.reviewedAt, '2026-09-26');
+assert.ok(paraguayMunicipal2026?.historicalSetting.includes('not a history of any municipality'));
+assert.ok(paraguayMunicipal2026?.claim.includes('5,043,154'));
+assert.ok(paraguayMunicipal2026?.claim.includes('non-binding'));
+assert.ok(paraguayMunicipal2026?.claim.includes('no preliminary or final result is available in this pre-poll snapshot'));
+assert.ok(paraguayMunicipal2026?.claim.includes('not independent security testing'));
+assert.ok(paraguayMunicipal2026?.limitation.includes('not an election result'));
+assert.ok(paraguayMunicipal2026?.limitation.includes('remain open research gaps'));
+assert.ok(paraguayMunicipal2026?.limitation.includes('No ideological label or six-axis placement'));
+for (const sourceId of ['paraguayConstitution1992Bacn', 'paraguayMunicipalElectionNumbers2026', 'paraguayMunicipalElectionSoftwareClosure2026', 'paraguayMunicipalElectionTrepResolution1942026', 'paraguayOECDPublicGovernance2018', 'paraguayLambertNicksonTransition1997', 'paraguayRomeroDemocracia2023']) {
+  assert.ok(paraguayMunicipal2026?.sourceIds.includes(sourceId), `Paraguay snapshot should cite ${sourceId}`);
+  assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes(sourceId)), `Paraguay source ${sourceId} should resolve in bibliography`);
+}
+assert.equal(filterGeographyCases({ country: 'map-600' }).filter(({ id }) => id.includes('paraguay')).length, 2);
 const israelElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'israel-26th-knesset-election-section-7a-review-2026');
 assert.equal(israelElection2026?.datePrecision, 'snapshot');
 assert.equal(israelElection2026?.reviewedAt, '2026-09-26');
@@ -958,7 +974,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 189, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 190, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('mauritius-2024-national-assembly-election-and-transition'));
 assert.ok(implementedPost2000.includes('seychelles-2025-presidential-and-assembly-elections'));
 assert.ok(implementedPost2000.includes('djibouti-2025-amendment-and-2026-presidential-election'));
