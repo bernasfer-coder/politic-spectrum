@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(219);
+  await expect(page.locator('.geo-card')).toHaveCount(220);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -656,7 +656,7 @@ test('Portugal 2026 presidential election preserves the official tally qualifica
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(219);
+  await expect(page.locator('.geo-card')).toHaveCount(220);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -959,5 +959,20 @@ test('Paraguay 2026 municipal election remains a pre-poll administrative snapsho
   await expect(card.locator('a[href*="paraguayMunicipalElectionNumbers2026"]')).toBeVisible();
   await expect(card.locator('a[href*="paraguayMunicipalElectionTrepResolution1942026"]')).toBeVisible();
   await expect(card.locator('a[href*="paraguayRomeroDemocracia2023"]')).toBeVisible();
+});
+
+test('Serbia 2026 parliamentary election remains a bounded pre-election snapshot', async ({ page }) => {
+  await page.goto('/#geography?case=serbia-early-parliamentary-election-2026-pre-election');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('25 October 2026');
+  await expect(card).toContainText('30 long-term observers');
+  await expect(card).toContainText('signed dissolution/election instruments were not retrieved directly');
+  await expect(card).toContainText('no election result, turnout');
+  await expect(card).toContainText('No six-axis score');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="serbiaRik29thSession2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="serbiaOdihrMission2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="serbiaDjokicConciseHistory2023"]')).toBeVisible();
 });
 
