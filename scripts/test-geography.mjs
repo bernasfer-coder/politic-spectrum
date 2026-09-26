@@ -43,6 +43,21 @@ for (const sourceId of ['vanuatu2025SnapElectionVeo', 'vanuatu2025SnapElectionGa
   assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Vanuatu bibliography source missing: ${sourceId}`);
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Vanuatu rights/provenance review missing: ${sourceId}`);
 }
+const zimbabweCase = GEOGRAPHY_CASES.find(({ id }) => id === 'zimbabwean-second-republic-and-2023-electoral-contestation');
+assert.equal(zimbabweCase.endYear, 2026);
+assert.equal(zimbabweCase.reviewedAt, '2026-09-26');
+assert.ok(zimbabweCase.claim.includes('Act 6 of 2026, gazetted 7 July'));
+assert.ok(zimbabweCase.claim.includes('not a judgment'));
+assert.ok(zimbabweCase.claim.includes('not a merits ruling'));
+assert.ok(zimbabweCase.limitation.includes('No conclusion is made about whether the Act is in force'));
+assert.ok(zimbabweCase.limitation.includes('event-specific book-length scholarship'));
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === zimbabweCase.labelId)?.aliases.includes('Zimbabwe political history 2017–2026'));
+assert.ok(GEOGRAPHY_CASES.some(({ id, endYear }) => id === 'zimbabwean-liberation-land-and-constitutional-transition' && endYear === 2018), 'the distinct Zimbabwe liberation and land-history case remains bounded and unchanged');
+for (const sourceId of ['zimbabweCAB3Bill2026Parliament', 'zimbabweCAB3Hansard2026', 'zimbabweConstitutionAmendmentAct6-2026', 'zimbabweVeritasCAB3Validity2026', 'zimbabweLawSocietyCAB3Submission2026', 'zimbabweConCourtCAB3AccessSeptember2026', 'zimbabweHofisiCAB3InternationalIDEA2026']) {
+  assert.ok(zimbabweCase.sourceIds.includes(sourceId), `Zimbabwe source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Zimbabwe bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Zimbabwe rights/provenance review missing: ${sourceId}`);
+}
 const guyanaCase = GEOGRAPHY_CASES.find(({ id }) => id === 'guyanese-postcolonial-cooperative-socialist-and-ethnic-coalitional-order');
 assert.equal(guyanaCase.endYear, 2026);
 assert.equal(guyanaCase.reviewedAt, '2026-09-26');

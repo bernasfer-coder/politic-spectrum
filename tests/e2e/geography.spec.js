@@ -288,6 +288,19 @@ test('Vanuatu update distinguishes 2025 official election records from the unres
   await expect(card).toContainText('no event-specific scholarly monograph');
 });
 
+test('Zimbabwe 2026 update distinguishes the gazetted amendment from competing legal interpretations and a procedural hearing', async ({ page }) => {
+  await page.goto('/#geography?case=zimbabwean-second-republic-and-2023-electoral-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('2017–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('Act 6 of 2026, gazetted 7 July');
+  await expect(card).toContainText('These are attributed, competing legal positions—not a judgment');
+  await expect(card).toContainText('the reported procedural question is not a merits ruling');
+  await expect(card).toContainText('No merits judgment or authoritative resolution');
+  await expect(card).toContainText('event-specific book-length scholarship');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
