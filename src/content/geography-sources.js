@@ -9261,6 +9261,58 @@ sources.push(
   }
 );
 
+sources.push(
+  {
+    id: 'colombiaRegistraduriaElectionCalendar2026', label: 'Registraduría Nacional del Estado Civil — 2026 Colombian election calendar and results portal', url: 'https://registraduria.gov.co/Elecciones-2026',
+    note: 'Official Registraduría calendar and election portal consulted for the dates of the congressional election (8 March), presidential first round (31 May) and runoff (21 June), and for the distinction between informative pre-count and legally effective scrutiny. The dynamic portal links to results systems; this record does not claim that every linked act or table was retrieved.',
+    accessDate: '2026-09-26', creators: ['Registraduría Nacional del Estado Civil'], institution: 'Registraduría Nacional del Estado Civil', publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election calendar and results portal', identifiers: { congressionalElection: '2026-03-08', presidentialFirstRound: '2026-05-31', presidentialRunoff: '2026-06-21' },
+    description: 'Official national election calendar and results navigation. The Registraduría distinguishes preliminary, informative pre-counts from the legally effective scrutiny process; dates anchor the case chronology but the page alone is not a detailed results record.'
+  },
+  {
+    id: 'colombiaCneFinalPresidentialElection2026', label: 'Consejo Nacional Electoral — 2026 presidential election declaration record (E-3181 listing)', url: 'https://www.cne.gov.co/resoluciones-cne-2026/cne-dgc-aceg-029557-2026-gen',
+    note: 'CNE official publication listing identifies “SALA PLENA No. E-3181 DE 2026,” published 24 June, as declaring the 2026–2030 presidential and vice-presidential election and ordering credentials. The linked full PDF timed out during access, so no vote totals or operative text are attributed directly to the act here.',
+    accessDate: '2026-09-26', creators: ['Consejo Nacional Electoral de Colombia'], institution: 'Consejo Nacional Electoral de Colombia', publicationDate: '2026-06-24', evidenceRole: 'primary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'official electoral authority resolution listing; linked act not retrieved', identifiers: { resolutionListing: 'SALA PLENA No. E-3181 DE 2026', publicationDate: '2026-06-24' },
+    description: 'Official CNE publication metadata for the declaration of the presidential and vice-presidential election and issuance of credentials. Only the listing metadata was inspected; it is not used as direct evidence for the reported detailed tally.'
+  },
+  {
+    id: 'colombiaCanalCapitalPresidentialScrutiny2026', label: 'Canal Capital — CNE concludes scrutiny and declares 2026 president-elect (24 June)', url: 'https://www.canalcapital.gov.co/actualidad/escrutinio-cne-declara-presidente-electo-abelardo-de-la-espriella/',
+    note: 'Secondary report of the CNE public scrutiny, consulted for the reported candidate totals and outcome. It identifies the act as E-381, whereas the CNE publication listing gives E-3181; it also reports 28,666 unmarked ballots, conflicting with El País’s 20,666. Neither discrepancy is silently reconciled, and no aggregate or ballot-category total is used as settled fact.',
+    accessDate: '2026-09-26', creators: ['Canal Capital'], institution: 'Canal Capital', publicationDate: '2026-06-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'news report of official electoral scrutiny', identifiers: { reportedResolution: 'E-381', candidates: 'Abelardo de la Espriella / Iván Cepeda' },
+    description: 'Reports the CNE scrutiny outcome and candidate vote totals for the 21 June runoff. Used only in conjunction with a second report and with explicit reservation because the underlying E-26 act was not retrieved and this report conflicts with another on ballot categories and resolution numbering.'
+  },
+  {
+    id: 'colombiaElPaisPresidentialScrutiny2026', label: 'Camila Osorio — “El Consejo Nacional Electoral termina el escrutinio y confirma la victoria de Abelardo de la Espriella” (24 June 2026)', url: 'https://elpais.com/america-colombia/elecciones-presidenciales/2026-06-24/el-consejo-nacional-electoral-termina-el-escrutinio-y-confirma-la-victoria-de-abelardo-de-la-espriella.html',
+    note: 'Secondary report consulted for the CNE scrutiny outcome and candidate totals. It reports 20,666 unmarked ballots, conflicting with Canal Capital’s 28,666; detailed totals and resolution number are not used as settled claims. The report is not a substitute for the underlying signed E-26 act.',
+    accessDate: '2026-09-26', creators: ['Camila Osorio'], institution: 'El País', publicationDate: '2026-06-24', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'news report of official electoral scrutiny', identifiers: { candidates: 'Abelardo de la Espriella / Iván Cepeda', electionDate: '2026-06-21' },
+    description: 'Independent press report of the CNE’s completed scrutiny and reported presidential outcome. Corroborates the candidate vote figures published by Canal Capital; its ballot-category count differs, so neither report is used to settle category totals.'
+  },
+  {
+    id: 'colombiaEuEomFirstRound2026', label: 'European Union Election Observation Mission — Preliminary statement, first round of the 2026 presidential election (2 June)', url: 'https://www.eeas.europa.eu/sites/default/files/2026/documents/PS%20First%20Round%20Presidential%20Election%20Colombia%202026.pdf',
+    note: 'EU Election Observation Mission preliminary statement consulted as an observer assessment with a defined scope. Security incidents, threats, campaign-finance weaknesses and interlocutor reports are attributed to the mission or its sources; these are not treated as adjudicated violations or as a complete account of every territory or campaign.',
+    accessDate: '2026-09-26', creators: ['European Union Election Observation Mission to Colombia'], institution: 'European External Action Service', publicationDate: '2026-06-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'international election-observation preliminary statement', identifiers: { electionRound: 'Presidential first round', electionDate: '2026-05-31' },
+    description: 'Observer assessment of the first-round campaign, electoral administration, political finance, information environment and security. It records mission observations and attributed reports within its mandate, not a judicial determination or exhaustive national census of incidents.'
+  },
+  {
+    id: 'colombiaOasFirstRound2026', label: 'Organization of American States Electoral Observation Mission — Second report on the 2026 presidential election (2 June)', url: 'https://www.oas.org/fpdb/press/2026_EOM_Colombia_Presidential_Elections_Second_Report_ENG.pdf',
+    note: 'OAS mission report for the 31 May first round consulted as a scoped observation report. It describes the mission’s sample of polling places and its observations of polling/counting; complaints cited from the government monitoring center remain reported complaints, not independently established violations.',
+    accessDate: '2026-09-26', creators: ['Organization of American States Electoral Observation Mission to Colombia'], institution: 'Organization of American States', publicationDate: '2026-06-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation report', identifiers: { electionRound: 'Presidential first round', electionDate: '2026-05-31', observedPollingPlaces: '412 polling sites; 1,340 tables' },
+    description: 'OAS observation of the first-round polling and counting, including a defined observation sample, election-day incidents and institutional reporting. It supplies a mission-bounded account and not proof of universal regularity, fraud, coercion or voter motives.'
+  },
+  {
+    id: 'colombiaCouncilStatePresidentialAnnulment2026', label: 'Council of State of Colombia — press release on an annulment action concerning the 2026 presidential election (24 August)', url: 'https://www.consejodeestado.gov.co/ordenesdeldia/prensa/fina.php',
+    note: 'Official court press archive entry dated 24 August consulted for the procedural status of one election-annulment action. The court reported admitting the action and denying interim suspension; it said the alleged psychological violence and its effect on the vote required evidence and were not decided on the merits. The underlying order, subsequent docket and later disposition were not independently retrieved.',
+    accessDate: '2026-09-26', creators: ['Consejo de Estado de Colombia, Sección Quinta'], institution: 'Council of State of Colombia', publicationDate: '2026-08-24', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official judicial press release / procedural record locator', identifiers: { court: 'Section Quinta', proceeding: 'Election annulment action; merits not decided in the cited release' },
+    description: 'Court-reported procedural stage of one challenge to the 2026 presidential election. It documents neither a final invalidation nor a finding that alleged campaign speech changed the result; later docket status remains unverified.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,

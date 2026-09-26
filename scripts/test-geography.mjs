@@ -70,6 +70,14 @@ assert.equal(filterGeographyCases({ country: 'map-104' })[0].id, 'myanmar-consti
 assert.equal(filterGeographyCases({ country: 'map-410' })[0].id, 'south-korean-constitutional-democratic-and-developmental-order');
 assert.equal(filterGeographyCases({ country: 'map-422' })[0].id, 'lebanese-posttaif-consociational-and-protest-order');
 assert.equal(filterGeographyCases({ country: 'map-170' })[0].id, 'colombian-constitutional-peace-and-contestation-order');
+const colombia2026 = filterGeographyCases({ country: 'map-170' }).find(({ id }) => id === 'colombian-constitutional-peace-and-contestation-order');
+assert.equal(colombia2026.endYear, 2026);
+assert.equal(colombia2026.reviewedAt, '2026-09-26');
+assert.ok(colombia2026.claim.includes('later docket and disposition of that case were not verified'));
+assert.ok(colombia2026.limitation.includes('No 2026 event-specific book-length scholarly analysis was located'));
+for (const sourceId of ['colombiaRegistraduriaElectionCalendar2026', 'colombiaCneFinalPresidentialElection2026', 'colombiaCanalCapitalPresidentialScrutiny2026', 'colombiaElPaisPresidentialScrutiny2026', 'colombiaEuEomFirstRound2026', 'colombiaOasFirstRound2026', 'colombiaCouncilStatePresidentialAnnulment2026']) {
+  assert.ok(colombia2026.sourceIds.includes(sourceId), `Colombia 2026 source missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'map-032' })[0].id, 'argentine-postauthoritarian-democratic-and-crisis-order');
 assert.ok(filterGeographyCases({ country: 'map-032' }).some(({ id }) => id === 'argentine-milei-libertarian-presidential-refoundation-and-contestation'));
 assert.equal(filterGeographyCases({ country: 'map-152' })[0].id, 'chilean-postauthoritarian-constitutional-and-constituent-order');
