@@ -79,13 +79,17 @@ assert.ok(tongaTransition2026?.claim.includes('effective 31 December'));
 assert.ok(tongaTransition2026?.claim.includes('Election Act section 21'));
 assert.ok(tongaTransition2026?.claim.includes('section 32(1)'));
 assert.ok(tongaTransition2026?.claim.includes('Fasi v Sika (CV49/2025)'));
+assert.ok(tongaTransition2026?.claim.includes('both appeals were dismissed on 27 July'));
+assert.ok(tongaTransition2026?.claim.includes('the Assembly unseated both members on 3 August'));
+assert.ok(tongaTransition2026?.claim.includes('14 candidates were nominated (nine for Tongatapu 2, five for Ongo Niua 17)'));
 assert.ok(tongaTransition2026?.claim.includes('the appeal judgments have not been independently retrieved or read'));
 assert.ok(tongaTransition2026?.claim.includes('polling remained in the future on 26 September'));
 assert.ok(tongaTransition2026?.limitation.includes('not studies of the 2025 election'));
 assert.ok(tongaTransition2026?.limitation.includes('appellate judgments were not located or read'));
+assert.ok(tongaTransition2026?.limitation.includes('scheduled for 8 October had not occurred'));
 assert.ok(tongaTransition2026?.limitation.includes('article pages returned HTTP 403'));
 assert.ok(tongaTransition2026?.limitation.includes('8 October had not occurred'));
-for (const sourceId of ['tongaElectionInformation2025', 'tongaElectionResults2025', 'tongaIpuElection2025', 'tongaParliamentFakafanuaElection2025', 'tongaParliamentCabinet2026', 'tongaAttorneyGeneralElectionJudgmentIndex2026', 'tongaSupremeCourtFinauTangimana2026', 'tongaSupremeCourtFasiSika2026', 'tongaParliamentNiua17AppealPending2026', 'matangiTangimanaAppeal2026', 'matangiSikaAppeal2026', 'matangiTongaByelectionCandidates2026']) {
+for (const sourceId of ['tongaElectionInformation2025', 'tongaElectionResults2025', 'tongaIpuElection2025', 'tongaParliamentFakafanuaElection2025', 'tongaParliamentCabinet2026', 'tongaAttorneyGeneralElectionJudgmentIndex2026', 'tongaSupremeCourtFinauTangimana2026', 'tongaSupremeCourtFasiSika2026', 'tongaParliamentNiua17AppealPending2026', 'matangiTangimanaAppeal2026', 'matangiSikaAppeal2026', 'matangiTongaAssemblyUnseatsTwo2026', 'matangiTongaByelectionCandidates2026']) {
   assert.ok(tongaTransition2026?.sourceIds.includes(sourceId), `Tonga transition should cite ${sourceId}`);
   assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes(sourceId)), `Tonga source ${sourceId} should resolve in bibliography`);
 }
