@@ -52,6 +52,18 @@ test('New Zealand 2026 update distinguishes scheduled election and future local-
   await expect(card).toContainText('no candidate, polling, result, turnout, observation or post-election conclusion is asserted');
 });
 
+test('France 2026 case distinguishes Article 49(3) budget adoption from the still-proposed 2027 budget', async ({ page }) => {
+  await page.goto('/#geography?case=french-fifth-republic-constitutional-and-political-history');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('two censure motions were rejected on 2 February');
+  await expect(card).toContainText('not an ordinary affirmative vote on the bill');
+  await expect(card).toContainText('not described as introduced, adopted or implemented');
+  await expect(card).toContainText('not an official parliamentary filing');
+  await expect(card).toContainText('none is a book-length scholarly account of the 2026 procedure');
+});
+
 test('Chile 2026 update separates the 2025 result, formal handover and limits on current interpretation', async ({ page }) => {
   await page.goto('/#geography?case=chilean-post-2022-constitutional-process-and-2025-electoral-transition');
   const card = page.locator('.geo-card');

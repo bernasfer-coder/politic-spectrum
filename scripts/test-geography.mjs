@@ -348,6 +348,15 @@ assert.equal(filterGeographyCases({ country: 'chad' })[0].id, 'chadian-postcolon
 assert.equal(filterGeographyCases({ country: 'cameroon' })[0].id, 'cameroonian-postcolonial-bilingual-and-anglophone-crisis-history');
 assert.ok(filterGeographyCases({ country: 'iraq' }).some(({ id }) => id === 'iraqi-postinvasion-constitutional-and-protest-transition'));
 assert.equal(filterGeographyCases({ country: 'france' }).find(({ id }) => id === 'french-fifth-republic-constitutional-and-political-history')?.id, 'french-fifth-republic-constitutional-and-political-history');
+const franceFifthRepublic = filterGeographyCases({ country: 'france' }).find(({ id }) => id === 'french-fifth-republic-constitutional-and-political-history');
+assert.equal(franceFifthRepublic.endYear, 2026);
+assert.equal(franceFifthRepublic.reviewedAt, '2026-09-26');
+assert.ok(franceFifthRepublic.claim.includes('not an ordinary affirmative vote on the bill'));
+assert.ok(franceFifthRepublic.claim.includes('not described as introduced, adopted or implemented'));
+assert.ok(franceFifthRepublic.limitation.includes('not an official parliamentary filing'));
+for (const sourceId of ['franceAssemblyBudget2026Adoption', 'franceOfficialJournalBudgetLaw2026', 'franceBarangerBeaudDissolution2025', 'franceSnegaroffBezzinaAnatomie2025', 'franceBendjaballahSaugerPoliticalData2024', 'franceParisienDraftBudget2027September2026']) {
+  assert.ok(franceFifthRepublic.sourceIds.includes(sourceId), `France 2026 source missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'zimbabwe' })[0].id, 'zimbabwean-liberation-land-and-constitutional-transition');
 assert.ok(filterGeographyCases({ country: 'zimbabwe' }).some(({ id }) => id === 'zimbabwean-second-republic-and-2023-electoral-contestation'));
 assert.equal(filterGeographyCases({ label: 'nasserism' }).length, 2);

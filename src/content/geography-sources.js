@@ -5141,6 +5141,42 @@ const sources = [
     description: 'Early book-length study of the occupation and its political legacy, useful for the provisional-administration phase and fragmentation of authority. It is read as one dated perspective within a larger bibliography.'
   },
   {
+    id: 'franceAssemblyBudget2026Adoption', label: 'Assemblée nationale — Projet de loi de finances pour 2026, lecture définitive et motions de censure (30 January–2 February 2026)', url: 'https://questions.assemblee-nationale.fr/dyn/actualites-accueil-hub/adoption-du-plf2026-en-lecture-definitive-apres-l-engagement-de-la-responsabilite-du-gouvernement-sur-le-projet-de-loi-et-le-rejet-de-2-motions-d',
+    note: 'Official Assembly record consulted for the Government’s 30 January 2026 engagement of responsibility under Article 49(3) and rejection on 2 February of two censure motions. The recorded procedure is summarized, not reproduced; it establishes formal parliamentary events, not consent, policy effectiveness or public opinion.',
+    accessDate: '2026-09-26', creators: ['Assemblée nationale'], institution: 'National Assembly of France', publicationDate: '2026-02-02', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official parliamentary proceedings / finance-bill adoption record', identifiers: { constitutionArticle: '49(3)', governmentResponsibilityEngaged: '2026-01-30', censureMotionsRejected: '2026-02-02' }, description: 'The National Assembly records that the Government engaged its responsibility on the 2026 finance bill under Article 49(3), after which two censure motions were rejected on 2 February; it treats the bill as definitively adopted. This is evidence of a constitutional procedure and its outcome, not a parliamentary majority vote on the bill or broad political agreement.'
+  },
+  {
+    id: 'franceOfficialJournalBudgetLaw2026', label: 'France — Law no. 2026-103 of 19 February 2026, initial budget for 2026', url: 'https://www.legifrance.gouv.fr/eli/jo/2026/2/20/0043',
+    note: 'Official Journal record consulted to verify promulgation and publication of the 2026 initial finance law. The statute is linked and independently summarized only; no text, translation, table or facsimile is republished, and enactment is not treated as proof of implementation or distributive effect.',
+    accessDate: '2026-09-26', creators: ['French Republic'], institution: 'Journal officiel de la République française / Légifrance', publicationDate: '2026-02-20', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official gazette / finance law', identifiers: { lawNumber: '2026-103', promulgationDate: '2026-02-19', publicationDate: '2026-02-20' }, description: 'Official Journal publication confirms that the 2026 initial finance law was promulgated on 19 February and published on 20 February 2026. It establishes enactment, not policy execution, political legitimacy or economic outcomes.'
+  },
+  {
+    id: 'franceBarangerBeaudDissolution2025', label: 'Pierre-Henri Baranger and Olivier Beaud, La Dissolution de la Ve République (Les Petits Matins, 2025)', url: 'https://www.lespetitsmatins.fr/catalogue/la-dissolution-de-la-ve-republique',
+    note: 'Publisher and university catalogue records consulted for an attributed French-language book-length constitutional interpretation of the 2024 dissolution. Original synthesis and link only: no book wording, quotation, image or scan is reproduced; this interpretation ends before the 2026 budget sequence.',
+    accessDate: '2026-09-26', creators: ['Pierre-Henri Baranger', 'Olivier Beaud'], institution: 'Les Petits Matins; Université Paris-Panthéon-Assas', publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language book-length constitutional-law study', identifiers: { isbn: '978-2-36383-455-3', pages: '242' }, description: 'Book-length constitutional analysis of dissolution under the Fifth Republic and the 2024 dissolution, providing a recent legal interpretation of the regime’s operation and vulnerabilities. Its argument is attributed and bounded to its topic; it is not a source for events after its publication.'
+  },
+  {
+    id: 'franceSnegaroffBezzinaAnatomie2025', label: 'Thomas Snégaroff and Anne-Charlène Bezzina, Ve République: anatomie d’un régime en crise (Les Arènes, 2025)', url: 'https://catalogue.bnf.fr/rechercher.do?index=TOUS3&numNotice=16907598&typeNotice=p',
+    note: 'Bibliothèque nationale de France catalogue record consulted for title, authors, publisher and 2025 publication. Link and original attributed synthesis only; no book wording, quotation, image or scan reproduced. Its diagnosis predates the 2026 budget events and is not projected onto them as an explanation.',
+    accessDate: '2026-09-26', creators: ['Thomas Snégaroff', 'Anne-Charlène Bezzina'], institution: 'Les Arènes; Bibliothèque nationale de France', publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'French-language book-length political and constitutional study', identifiers: { isbn: '9791037513823' }, description: 'A short book-length account by a historian and a constitutional scholar examining the Fifth Republic as a regime in crisis. It adds a distinct recent interpretation alongside the legal study of dissolution, but its 2025 publication cannot document 2026 events.'
+  },
+  {
+    id: 'franceBendjaballahSaugerPoliticalData2024', label: 'Selma Bendjaballah and Nicolas Sauger, “France: Political Developments and Data for 2024: From Bad to Worse: A Year of Gridlock,” European Journal of Political Research Political Data Yearbook 64 (2025)', url: 'https://onlinelibrary.wiley.com/doi/full/10.1111/2047-8852.70020',
+    note: 'Peer-reviewed annual political-data account consulted as a bounded scholarly cross-check on the 2024 election and ensuing institutional gridlock. Original synthesis and DOI link only; no article wording, figure or table is reproduced, and it does not cover the 2026 budget enactment.',
+    accessDate: '2026-09-26', creators: ['Selma Bendjaballah', 'Nicolas Sauger'], institution: 'European Journal of Political Research Political Data Yearbook', publicationDate: '2025-07-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed annual political-data article', identifiers: { doi: '10.1111/2047-8852.70020', volume: '64', pages: '201–230', reportingYear: '2024' }, description: 'Peer-reviewed account of French political developments and data for 2024, including the snap legislative election, divided Assembly and government instability. It offers a dated empirical and institutional cross-check, not a book-length political history or evidence about 2026.'
+  },
+  {
+    id: 'franceParisienDraftBudget2027September2026', label: 'Erwan Benezet, “A crucial step”: the 2027 budget draft reviewed by the High Council of Public Finances, Le Parisien (19 September 2026)', url: 'https://www.leparisien.fr/economie/une-etape-cruciale-la-copie-budgetaire-du-gouvernement-examinee-par-le-haut-conseil-des-finances-publiques-19-09-2026-46D5UCJB2JAVLDJXWLUB7UBASM.php',
+    note: 'Contemporaneous French reporting consulted for the government’s transmission of a 2027 budget draft to the High Council of Public Finances and the then-announced route to Cabinet and Parliament. Attributed reporting and link only; no article wording or image is reproduced. The proposal is not treated as enacted or as a settled parliamentary text.',
+    accessDate: '2026-09-26', creators: ['Erwan Benezet'], institution: 'Le Parisien', publicationDate: '2026-09-19', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'contemporaneous report on draft budget procedure', identifiers: { draftBudgetYear: '2027', articleDate: '2026-09-19' }, description: 'Reports that the Government had transmitted its 2027 finance-bill draft to the High Council for a required consultative assessment and expected to present it to Cabinet before filing to Parliament on 1 October. These were prospective procedural steps as of publication, not evidence that the draft had been introduced, adopted or implemented.'
+  },
+  {
     id: 'franceConstitution1958Conseil',
     label: 'France — Constitution of 4 October 1958, Constitutional Council QPC360 record',
     url: 'https://qpc360.conseil-constitutionnel.fr/constitution-4-octobre-1958',
