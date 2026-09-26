@@ -95,7 +95,7 @@ test('Iran case distinguishes official protest tolls, UN findings and evidence l
   await expect(page).toHaveURL(/#bibliography\/research-iranFactFindingMissionHRC6361-2026$/);
 });
 
-test('Morocco 2026 election snapshot preserves provisional results, turnout discrepancy and CNDH limits', async ({ page }) => {
+test('Morocco 2026 election snapshot distinguishes committee-proclaimed returns, turnout discrepancy and CNDH limits', async ({ page }) => {
   await page.goto('/#geography?case=moroccan-2026-legislative-election-and-preliminary-observation');
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
@@ -103,15 +103,18 @@ test('Morocco 2026 election snapshot preserves provisional results, turnout disc
   await expect(card).toContainText('PAM 97 seats, RNI 66, Istiqlal 65 and PJD 54');
   await expect(card).toContainText('38.08%');
   await expect(card).toContainText('38.02%');
-  await expect(card).toContainText('seat totals remain preliminary');
+  await expect(card).toContainText('“definitive” constituency results');
+  await expect(card).toContainText('not a Constitutional Court judgment or disposition of any petition');
+  await expect(card).toContainText('portal still displayed its result/validation workflow as in progress');
   await expect(card).toContainText('do not establish the views of voters or the ideology of Morocco');
   await expect(card).toContainText('733 of 1,538 communes');
   await expect(card).toContainText('116 (27.5%)');
   await expect(card).toContainText('30 days after announcement of the poll result');
   await expect(card).toContainText('declared winners remain in office until the Court annuls their election');
-  await expect(card).toContainText('the 30-day period is not calculated here');
+  await expect(card).toContainText('the 30-day appeal period has not been calculated');
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href="#bibliography/research-moroccoInteriorLegislativeResults2026"]')).toBeVisible();
+  await expect(card.locator('a[href="#bibliography/research-moroccoInteriorDefinitiveCommitteeResults2026"]')).toBeVisible();
   await expect(card.locator('a[href="#bibliography/research-moroccoCndhPreliminaryFullReport2026"]')).toBeVisible();
   await expect(card.locator('a[href="#bibliography/research-moroccoCndhPreliminary2026LeDesk"]')).toBeVisible();
   await expect(card.locator('a[href="#bibliography/research-moroccoConstitutionalCourtElectionDisputesLaw2026"]')).toBeVisible();

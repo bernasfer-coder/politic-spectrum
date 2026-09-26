@@ -4120,6 +4120,16 @@ const sources = [
     description: 'The Ministry reports preliminary distribution of all 395 House seats: PAM 97, RNI 66, Istiqlal 65, PJD 54, and other parties 113; its own results briefing gives turnout as 38.08%. These are attributed provisional administrative results, not a final court-validated return, election-quality assessment, voter-motive record or proof of representation.'
   },
   {
+    id: 'moroccoInteriorDefinitiveCommitteeResults2026',
+    label: 'Morocco Ministry of the Interior communiqué on results proclaimed by provincial and regional commissions, relayed by H24Info/MAP (25 September 2026)',
+    url: 'https://h24info.ma/maroc/legislatives-2026-maroc-resultats-definitifs/',
+    note: 'H24Info’s 25 September report, explicitly credited “avec MAP,” reproduces/paraphrases the Interior Minister’s communiqué: magistrate-chaired provincial and regional counting commissions completed counts, proclaimed constituency results, prepared procès-verbaux and deposited copies with the Constitutional Court; the communiqué says their totals match the Ministry’s earlier provisional general totals. This is a secondary relay of an official statement, not direct review of the communiqué or procès-verbaux. The distinction between committee-proclaimed “definitive” constituency returns and any Constitutional Court judgment is preserved.',
+    accessDate: '2026-09-26', creators: ['Ministry of the Interior of the Kingdom of Morocco (communiqué, as reported by H24Info with MAP)'], institution: 'H24Info / Maghreb Arabe Presse (MAP)',
+    publicationDate: '2026-09-25', evidenceRole: 'secondary', confidence: 'medium', languages: ['French'],
+    sourceType: 'news relay of an official ministerial communiqué on constituency-level election results', identifiers: { electionDate: '2026-09-23', communiquéDate: '2026-09-25', status: 'commission-proclaimed constituency results; copies deposited with Constitutional Court' },
+    description: 'Reports an Interior Ministry communiqué stating that judge-chaired provincial and regional commissions proclaimed their definitive constituency returns and lodged procès-verbal copies with the Constitutional Court, with totals corresponding to the previously announced ministry-wide preliminary totals. It does not establish a Constitutional Court judgment, disposition of a petition, or resolution of the separate turnout discrepancy.'
+  },
+  {
     id: 'moroccoMinistryTurnout2026',
     label: 'Morocco Ministry of the Interior — legislative-election turnout announcement, 23 September 2026',
     url: 'https://maroc.ma/en/news/legislative-elections-voter-turnout-reaches-3802-nationwide',
