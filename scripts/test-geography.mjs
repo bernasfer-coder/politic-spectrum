@@ -91,6 +91,21 @@ for (const sourceId of ['solomonDpaElectionStudy2024', 'solomonWoodNewUnfamiliar
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Solomon Islands rights/provenance review missing: ${sourceId}`);
 }
 assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === solomonIslandsCase.labelId)?.aliases.includes('Solomon Islands political history 1974–2026'));
+const tongaCase = GEOGRAPHY_CASES.find(({ id }) => id === 'tongan-post-2010-constitutional-and-electoral-transition');
+assert.equal(tongaCase.endYear, 2026);
+assert.equal(tongaCase.reviewedAt, '2026-09-26');
+assert.ok(tongaCase.claim.includes('16–10'));
+assert.ok(tongaCase.claim.includes('clause 50A(1)'));
+assert.ok(tongaCase.claim.includes('no new representatives had yet been elected to those seats'));
+assert.ok(tongaCase.limitation.includes('had not occurred by this review date'));
+assert.ok(tongaCase.limitation.includes('no event-specific book-length study of the 2025 election or 2026 appeals'));
+assert.ok(GEOGRAPHY_PLACES.find(({ id }) => id === 'tonga')?.note.includes('not completed results'));
+for (const sourceId of ['tongaParliamentFakafanuaElection2025', 'tongaPMOFakafanuaAppointment2025', 'tongaParliamentCabinet2026', 'tongaParliamentNiua17ElectionPetition2026', 'tongaElectoralCommission2025Results', 'australiaDFATTongaCountryBrief2026', 'tongaAppealsElectionPetitions2026', 'tongaABC2025ElectionDebate', 'fraenkelSenituliTongaDemocracyBrief2026']) {
+  assert.ok(tongaCase.sourceIds.includes(sourceId), `Tonga source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Tonga bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Tonga rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === tongaCase.labelId)?.aliases.includes('Tongan parliamentary reform 2010–2026'));
 const tunisiaCase = GEOGRAPHY_CASES.find(({ id }) => id === 'tunisian-revolutionary-constitutional-transition');
 assert.equal(tunisiaCase.endYear, 2024);
 assert.equal(tunisiaCase.reviewedAt, '2026-09-26');

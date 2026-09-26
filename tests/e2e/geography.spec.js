@@ -186,6 +186,19 @@ test('Solomon Islands case keeps historical scholarship separate from the 2026 c
   await expect(card).toContainText('Event-specific book-length scholarship on the March–May 2026 constitutional and parliamentary sequence');
 });
 
+test('Tonga case distinguishes official 2025 succession records, contested democracy analysis and pending by-elections', async ({ page }) => {
+  await page.goto('/#geography?case=tongan-post-2010-constitutional-and-electoral-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('16–10');
+  await expect(card).toContainText('clause 50A(1)');
+  await expect(card).toContainText('no new representatives had yet been elected to those seats');
+  await expect(card).toContainText('those polls had not occurred by this review date');
+  await expect(card).toContainText('The KAS and ABC accounts are attributed analysis and reporting, not book-length consensus or representative polling');
+  await expect(card).toContainText('no event-specific book-length study of the 2025 election or 2026 appeals');
+});
+
 test('Tunisia case distinguishes 2024 official results, preliminary observation and reported electoral disputes', async ({ page }) => {
   await page.goto('/#geography?case=tunisian-revolutionary-constitutional-transition');
   const card = page.locator('.geo-card');
