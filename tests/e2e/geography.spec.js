@@ -478,6 +478,8 @@ test('Bangladesh transition case attributes observers and preserves the referend
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('women were four per cent of contestants');
   await expect(card).toContainText('70-constituency sample');
+  await expect(card).toContainText('15 attended directly');
+  await expect(card).toContainText('not a judicial ruling');
   await expect(card).toContainText('makes no claim about referendum totals');
   await expect(card).toContainText('No scores or whole-country ideological labels are assigned');
   await card.locator('.geo-evidence summary').click();

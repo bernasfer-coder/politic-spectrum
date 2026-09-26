@@ -10628,6 +10628,26 @@ sources.push(
     publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
     sourceType: 'civil-society election-process monitoring report and release', identifiers: { sample: '70 constituencies' },
     description: 'Civil-society assessment of the 2026 parliamentary election process, reporting its own candidate-affidavit review and constituency sample. Its findings complement, but do not replace, official result records or nationwide observation.'
+  },
+  {
+    id: 'bangladeshBssConstitutionCommitteeSecondMeeting2026',
+    label: 'Bangladesh Sangbad Sangstha — Constitution amendment special committee holds second meeting (20 September 2026)',
+    url: 'https://www.bssnews.net/news/426491',
+    note: 'Contemporaneous report of the 13th Jatiya Sangsad committee’s second meeting, its attendance and stated plan to prepare draft amendments by the end of 2026. It is reporting about the committee, not the committee’s minutes or an enacted amendment; statements about future implementation remain attributed and prospective. Paraphrased and linked only.',
+    accessDate: '2026-09-26', creators: ['Bangladesh Sangbad Sangstha'], institution: 'Bangladesh Sangbad Sangstha',
+    publicationDate: '2026-09-20', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous parliamentary-proceedings news report', identifiers: {},
+    description: 'Reports that 15 of 26 invited July Charter signatory parties participated directly in the 20 September meeting, one submitted written proposals, and the committee aimed to prepare constitutional-amendment drafts within 2026. It supports an attributed snapshot of the continuing process, not a primary legal record or proof that the stated timetable was achieved.'
+  },
+  {
+    id: 'bangladeshDailyStarAmendmentCommitteeDispute2026',
+    label: 'The Daily Star — Constitution amendment talks face obstacles (21 September 2026)',
+    url: 'https://www.thedailystar.net/news/politics/news/constitution-amendment-talks-face-obstacles-4278391',
+    note: 'Independent Bangladeshi newspaper report on party non-attendance and competing positions after the committee’s second meeting. It documents reported statements and disagreement, not a judicial determination of the implementation order’s legal effect. Only a short bibliographic description and an independently written paraphrase are used; article wording and expressive content are not reproduced.',
+    accessDate: '2026-09-26', creators: ['The Daily Star staff correspondent'], institution: 'The Daily Star',
+    publicationDate: '2026-09-21', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous political-process reporting', identifiers: {},
+    description: 'Reports that 11 parties declined the special committee invitation and describes the dispute between the government’s proposed parliamentary-amendment route and opposition Jamaat-e-Islami’s position that the referendum-approved reform process should proceed through the Constitutional Reform Council. Party positions are attributed; the report does not resolve their legal claims or predict the eventual amendment.'
   }
 );
 

@@ -811,6 +811,12 @@ assert.equal(filterGeographyCases({ country: 'bangladesh' })[0].id, 'bangladeshi
 const bangladesh2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'bangladesh-2024-uprising-interim-government-and-2026-election');
 assert.equal(bangladesh2026?.endYear, 2026);
 assert.ok(bangladesh2026?.claim.includes('70-constituency sample'));
+assert.ok(bangladesh2026?.claim.includes('180 working days'));
+assert.ok(bangladesh2026?.claim.includes('15 attended directly'));
+assert.ok(bangladesh2026?.claim.includes('not a judicial ruling'));
+assert.ok(bangladesh2026?.sourceIds.includes('bangladeshBssConstitutionCommitteeSecondMeeting2026'));
+assert.ok(bangladesh2026?.sourceIds.includes('bangladeshDailyStarAmendmentCommitteeDispute2026'));
+assert.match(GEOGRAPHY_LABELS.find(({ id }) => id === bangladesh2026?.labelId)?.description ?? '', /September constitutional-implementation debate/);
 assert.ok(bangladesh2026?.limitation.includes('makes no claim about referendum totals'));
 assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === bangladesh2026?.labelId)));
 assert.equal(filterGeographyCases({ country: 'sri-lanka' })[0].id, 'sri-lankan-constitutional-presidential-order');
