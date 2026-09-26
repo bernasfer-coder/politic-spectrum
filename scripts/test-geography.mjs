@@ -103,6 +103,16 @@ assert.equal(filterGeographyCases({ country: 'map-152' })[0].id, 'chilean-postau
 assert.equal(filterGeographyCases({ country: 'map-858' })[0].id, 'uruguayan-postauthoritarian-democratic-and-party-system-order');
 assert.ok(filterGeographyCases({ country: 'map-858' }).some(({ id }) => id === 'uruguayan-lacalle-pou-coalition-and-orsi-electoral-transition'));
 assert.equal(filterGeographyCases({ country: 'map-068' })[0].id, 'bolivian-plurinational-constitutional-and-contested-democratic-order');
+const bolivia = filterGeographyCases({ country: 'map-068' })[0];
+assert.equal(bolivia.startYear, 2000);
+assert.equal(bolivia.endYear, 2025);
+assert.equal(bolivia.reviewedAt, '2026-09-26');
+assert.ok(bolivia.claim.includes('3,579,534 valid votes (54.96%)'));
+assert.ok(bolivia.evidenceKind.includes('two election-specific journal analyses (abstracts consulted)'));
+assert.ok(bolivia.limitation.includes('Book-length coverage specifically analyzing 2020–2025 was not located'));
+for (const sourceId of ['boliviaIachrAnnualReport2024', 'boliviaOepElection2025OfficialResults', 'boliviaOepRunoff2025OfficialResults', 'boliviaOepMandateTransmission2025', 'boliviaIpuParlineElection2025', 'boliviaEueomFinalReport2025', 'boliviaOasRunoffObservation2025', 'boliviaAscarrunzAguilarElection2026', 'boliviaAnriaMasCollapsed2025', 'boliviaIdeaElectionTracker2025', 'boliviaApRunoffElection2025']) {
+  assert.ok(bolivia.sourceIds.includes(sourceId), `Bolivia 2020–2025 source missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'map-600' })[0].id, 'paraguayan-postauthoritarian-party-dominant-and-fragile-democratic-order');
 const paraguay2026 = filterGeographyCases({ country: 'map-600' }).find(({ id }) => id === 'paraguayan-postauthoritarian-party-dominant-and-fragile-democratic-order');
 assert.equal(paraguay2026.endYear, 2026);

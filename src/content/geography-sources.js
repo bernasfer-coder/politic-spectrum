@@ -7971,6 +7971,97 @@ const sources = [
     description: 'Book-length assessment of continuity and change under MAS, including poverty, health and education, natural resources, women’s and Indigenous/minority rights and the tensions between government and social movements. It supplies a balanced policy lens rather than a complete local or post-2014 account.'
   },
   {
+    id: 'boliviaAnriaMovementsBecomeParties2018', label: 'Santiago Anria — When Movements Become Parties: The Bolivian MAS in Comparative Perspective (2018)', url: 'https://www.cambridge.org/core/books/when-movements-become-parties/F06BEE9DEA9BA4E7DCFBD9A87266FAB8',
+    note: 'Cambridge University Press publisher and catalog records consulted for bibliographic metadata and scope. The 2018 monograph predates the Arce presidency and is used only for historical context on MAS organization and movement–party relations. No book wording, quotation, interview, table or scan is republished.',
+    accessDate: '2026-09-26', creators: ['Santiago Anria'], institution: 'Cambridge University Press', publicationDate: '2018-10-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative political-science monograph on the Bolivian MAS', identifiers: { isbn: '9781108427579', ebookIsbn: '9781108551755', paperbackIsbn: '9781108446327' },
+    description: 'Comparative study of MAS as a movement-based party, its organizational relations with social movements and its internal development through the Morales period. The publisher record establishes subject and publication metadata; it does not supply book-level evidence about the 2020–2025 period.'
+  },
+  {
+    id: 'boliviaIachrAnnualReport2024', label: 'Inter-American Commission on Human Rights — Annual Report 2024, Bolivia section (published 2025)', url: 'https://www.oas.org/en/iachr/docs/annual/2024/chapters/IA2024_4A_EN.pdf',
+    note: 'IACHR annual report section consulted for its institutionally attributed account of political polarization, internal MAS-IPSP disputes, incomplete judicial elections and the 26 June 2024 military episode. The Commission calls that episode an alleged coup attempt in its annual narrative; this source is not treated as a complete causal inquiry or as a statement of all Bolivian views.',
+    accessDate: '2026-09-26', creators: ['Inter-American Commission on Human Rights'], institution: 'Organization of American States', publicationDate: '2025-03-26', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'inter-American human-rights monitoring report', identifiers: { document: 'OEA/Ser.L/V/II. Doc. 39 rev. 2', chapter: 'Chapter IV.A, Bolivia', reportingYear: '2024' },
+    description: 'The Commission records the 2024 split between MAS factions aligned with Evo Morales and President Luis Arce, resulting legislative tensions, contested judicial-election processes and an alleged coup attempt involving part of the Army. These are the Commission’s dated institutional findings and context, not a comprehensive national or social history.'
+  },
+  {
+    id: 'boliviaOepElection2025OfficialResults', label: 'Órgano Electoral Plurinacional — Official computation and proclamation of the 17 August 2025 general-election results (26 August 2025)', url: 'https://fuentedirecta.oep.org.bo/noticia/el-tse-aprueba-acta-del-computo-nacional-y-proclama-resultados-de-las-elecciones-generales-2025/',
+    note: 'OEP/Fuente Directa report of the Tribunal Supremo Electoral’s public approval of the national computation and proclamation, linked as an official electoral record. No result table, ballot, scan or wording is reproduced; administrative results do not establish voter motives, equal campaign conditions or subsequent performance.',
+    accessDate: '2026-09-26', creators: ['Tribunal Supremo Electoral de Bolivia', 'Órgano Electoral Plurinacional de Bolivia'], institution: 'Órgano Electoral Plurinacional / Servicio Intercultural de Fortalecimiento Democrático', publicationDate: '2025-08-26', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official general-election computation and result proclamation', identifiers: { electionDate: '2025-08-17', officialComputationDate: '2025-08-26', processedRecords: '35,253' },
+    description: 'Official account of the first-round national computation, the 35,253 processed records and the decision that a presidential runoff would follow. It anchors election administration and the formal result sequence, not election quality or voter reasoning.'
+  },
+  {
+    id: 'boliviaOepLegislature2025OfficialResults', label: 'Órgano Electoral Plurinacional — elected composition of the Plurinational Legislative Assembly (27 August 2025)', url: 'https://fuentedirecta.oep.org.bo/noticia/elecciones-generales-2025-cinco-organizaciones-politicas-tendran-representacion-en-la-asamblea-legislativa-plurinacional/',
+    note: 'Official OEP/Fuente Directa summary of the TSE national computation and seat distribution. The published account distinguishes legislative seats and supra-state representatives; this record is linked and paraphrased only, without republishing its graphics or tables.',
+    accessDate: '2026-09-26', creators: ['Tribunal Supremo Electoral de Bolivia', 'Órgano Electoral Plurinacional de Bolivia'], institution: 'Órgano Electoral Plurinacional / Servicio Intercultural de Fortalecimiento Democrático', publicationDate: '2025-08-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official parliamentary election result and seat-allocation summary', identifiers: { electionDate: '2025-08-17', lowerHouseSeats: '130', senateSeats: '36' },
+    description: 'Officially reported composition of the incoming legislature following the first-round general election, including PDC, LIBRE, Unity and smaller party representation. It records seat allocation rather than party cohesion, legislative conduct or public support after the election.'
+  },
+  {
+    id: 'boliviaOepRunoff2025OfficialResults', label: 'Tribunal Supremo Electoral — official results of the 19 October 2025 presidential runoff (27 October 2025)', url: 'https://web.oep.org.bo/institucional-institucional/tse-proclama-resultados-oficiales-de-la-segunda-vuelta-electoral/',
+    note: 'TSE public proclamation and SCORC official-computation figures consulted for the second-round result. No votes table, ballot or source wording is republished; the result establishes the legally proclaimed winner, not a common motive among voters or subsequent policy success.',
+    accessDate: '2026-09-26', creators: ['Tribunal Supremo Electoral de Bolivia'], institution: 'Órgano Electoral Plurinacional / Tribunal Supremo Electoral', publicationDate: '2025-10-27', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official presidential runoff computation and proclamation', identifiers: { electionDate: '2025-10-19', validVotesPDC: '3579534', sharePDC: '54.96%', validVotesLibre: '2884661', shareLibre: '45.04%', processedRecords: '35253' },
+    description: 'The TSE’s 100-percent processed official computation reports 3,579,534 valid votes (54.96 percent) for Rodrigo Paz and Edmand Lara of the PDC and 2,884,661 (45.04 percent) for Jorge Quiroga and Juan Pablo Velasco of LIBRE. It documents the result and turnout count, not the electorate’s uniform reasons or the new government’s performance.'
+  },
+  {
+    id: 'boliviaOepMandateTransmission2025', label: 'Órgano Electoral Plurinacional — presidential credentials and transfer-of-command schedule (4 November 2025)', url: 'https://fuentedirecta.oep.org.bo/noticia/tse-prepara-entrega-oficial-de-credenciales-a-los-mandatarios-electos-en-la-casa-de-la-libertad/',
+    note: 'Official TSE/Fuente Directa record of the elected-ticket credential ceremony and transfer-of-command schedule. It is used to establish the formal transition chronology only, not the subsequent government’s effectiveness or public mandate beyond the electoral result.',
+    accessDate: '2026-09-26', creators: ['Tribunal Supremo Electoral de Bolivia', 'Órgano Electoral Plurinacional de Bolivia'], institution: 'Órgano Electoral Plurinacional / Servicio Intercultural de Fortalecimiento Democrático', publicationDate: '2025-11-04', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official election-transition and credentialing notice', identifiers: { publicationDate: '2025-11-04', credentialsDate: '2025-11-05', transferOfCommandDate: '2025-11-08', constitutionalTerm: '2025–2030' },
+    description: 'The TSE record schedules credentialing of President-elect Rodrigo Paz and Vice-President-elect Edmand Lara on 5 November and the presidential transfer of command on 8 November, beginning the 2025–2030 constitutional term. It establishes procedure and chronology only.'
+  },
+  {
+    id: 'boliviaIpuParlineElection2025', label: 'Inter-Parliamentary Union — Bolivia Chamber of Deputies, August 2025 election results', url: 'https://data.ipu.org/parliament/BO/BO-LC01/election/BO-LC01-E20250817/',
+    note: 'IPU Parline election page consulted as a separately maintained parliamentary data synthesis and cross-check against the TSE’s published computation. It is secondary data, not the legal results authority; no table, spreadsheet or dataset extract is republished.',
+    accessDate: '2026-09-26', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union', publicationDate: '2025-10-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'international parliamentary election-results data synthesis', identifiers: { electionDate: '2025-08-17', turnout: '86.9%', chamberOfDeputies: '130', senate: '36' },
+    description: 'IPU Parline summarizes the election context, parliamentary seat allocation, turnout, first session and subsequent presidential runoff using TSE and other identified sources. It confirms that PDC was the largest party in both chambers without an outright majority and that MAS-IPSP won two Chamber of Deputies seats; data remain distinct from later legislative performance.'
+  },
+  {
+    id: 'boliviaEueomFinalReport2025', label: 'European Union Election Observation Mission — Bolivia 2025 final report (8 December 2025)', url: 'https://www.eeas.europa.eu/sites/default/files/2025/documents/EUEOM_Bolivia_2025_Final_Report.pdf',
+    note: 'Official report link and mission record consulted. The PDF fetch was unavailable in this review; specific summarized observer concerns in this case are drawn from the accessible International IDEA Tracker, which cites the EU report, and are not represented as a direct reading of the full PDF. No report text, tables or graphics are republished.',
+    accessDate: '2026-09-26', creators: ['European Union Election Observation Mission to Bolivia'], institution: 'European Union / European External Action Service', publicationDate: '2025-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'international election-observation mission final report', identifiers: { generalElectionDate: '2025-08-17', runoffDate: '2025-10-19', recommendations: '19' },
+    description: 'The mission’s final account covers electoral administration, candidate registration, campaign and media conditions, financing, election day, tabulation, adjudication and recommendations. It records well-organized voting alongside identified regulatory, information and campaign concerns; it is a bounded observer assessment rather than a book-length political history or a measure of every voter’s experience.'
+  },
+  {
+    id: 'boliviaOasRunoffObservation2025', label: 'Organization of American States — Electoral Observation Mission, 2025 presidential runoff preliminary report', url: 'https://www.oas.org/fpdb/press/2025_BOLIVIA_EOM_Presidential_Runoff_Preliminary_Report_ENG.pdf',
+    note: 'OAS Electoral Observation Mission preliminary report consulted for its scoped observer account of the runoff and its follow-up on earlier recommendations. Preliminary findings are attributed to the mission; allegations, referrals and final legal determinations are not conflated. No report text or tables are republished.',
+    accessDate: '2026-09-26', creators: ['Organization of American States, Electoral Observation Mission'], institution: 'Organization of American States', publicationDate: '2025-10', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'preliminary international election-observation report', identifiers: { electionDate: '2025-10-19', observers: '83 from 19 countries', deployment: 'nine departments and four cities abroad' },
+    description: 'The OAS mission reports its observation scope and follow-up from the first-round process, and describes the pre-runoff environment and complaints that it reviewed. The document is explicitly preliminary and does not replace final electoral acts, a court judgment on every allegation or a comprehensive national political history.'
+  },
+  {
+    id: 'boliviaAscarrunzAguilarElection2026', label: 'Julio Ascarrunz and Raquel Aguilar — “Changes in continuity: Analysis of the 2025 general elections in Bolivia” (2026)', url: 'https://revistasfcs.edu.uy/index.php/rucp/en/article/view/697',
+    note: 'The journal article landing page and abstract, DOI record and publication metadata consulted; the linked full Spanish text was not available in the research interface during this review. The published abstract’s argument is attributed to its authors, not presented as settled consensus or a representative claim about all Bolivians.',
+    accessDate: '2026-09-26', creators: ['Julio Ascarrunz', 'Raquel Aguilar'], institution: 'Revista Uruguaya de Ciencia Política', publicationDate: '2026-06-11', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish', 'English'],
+    sourceType: 'political-science journal article; journal abstract and bibliographic record consulted', identifiers: { doi: '10.26851/RUCP.35.6', volume: '35', pages: '1–24', section: 'Coyuntura electoral en América Latina' },
+    description: 'The authors’ abstract interprets the 2025 election as a conjuncture of economic crisis, institutional distrust and MAS-IPSP fracture, with leadership and electoral volatility alongside continued territorial and ethnic cleavages. The abstract is used as a bounded contemporary scholarly interpretation; full-text engagement, departmental data and rival local explanations remain needed.'
+  },
+  {
+    id: 'boliviaAnriaMasCollapsed2025', label: 'Santiago Anria — “Why Bolivia’s MAS Collapsed” (Journal of Democracy, October 2025)', url: 'https://www.journalofdemocracy.org/articles/why-bolivias-mas-collapsed/',
+    note: 'Journal of Democracy article metadata and online abstract consulted for a contemporary interpretation of MAS’s decline. The author’s explanation is identified as one analytical argument, not a settled causal account of all voters, social movements or Bolivian politics. No article text, quotation or graphic is reproduced.',
+    accessDate: '2026-09-26', creators: ['Santiago Anria'], institution: 'Journal of Democracy / Johns Hopkins University Press', publicationDate: '2025-10', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly political analysis / journal essay', identifiers: { volume: '36', issue: '4', pages: '92–103' },
+    description: 'Anria attributes MAS’s fracture and electoral marginalization to leadership succession problems, concentration of power, weakened pluralism and damaged connections with social movements, while noting possible persistence of a social base. This is a distinct authorial analysis, not an exhaustive account of the election or proof of one voter motive.'
+  },
+  {
+    id: 'boliviaIdeaElectionTracker2025', label: 'International IDEA — Global State of Democracy Tracker, “Bolivia - August 2025” (updated through the October runoff)', url: 'https://www.idea.int/democracytracker/report/bolivia/august-2025',
+    note: 'International IDEA’s full Democracy Tracker event page and its references to OEP, EU and OAS sources consulted. This is a secondary synthesis of observer reports and results, not an independent election-observation mission or a primary vote record; reported concerns remain attributed to the identified observers.',
+    accessDate: '2026-09-26', creators: ['International Institute for Democracy and Electoral Assistance'], institution: 'International IDEA', publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional democracy-monitoring event report with cited electoral and observation records', identifiers: { electionDate: '2025-08-17', runoffDate: '2025-10-19', framework: 'Global State of Democracy' },
+    description: 'The Tracker records the two-round 2025 sequence, results and turnout, and summarizes observers’ reported concerns about campaign media access, disinformation, candidate registration, campaign finance, electoral violence and gendered online abuse. It also reports women’s representation in the incoming legislature. These are source-attributed and bounded observations, not a full democratic assessment or a measure of every candidate’s or voter’s experience.'
+  },
+  {
+    id: 'boliviaApRunoffElection2025', label: 'Associated Press — Rodrigo Paz wins presidential runoff (19 October 2025)', url: 'https://apnews.com/article/bolivia-runoff-election-jorge-quiroga-rodrigo-paz-ef7643d07d8968452cdce784e75a7810',
+    note: 'Independent contemporaneous AP report consulted for campaign context and candidate policy proposals, and cross-checked against the TSE’s final proclamation. AP’s reporting and quoted analysts are not treated as primary election evidence, exhaustive public opinion or proof that a proposed policy was implemented.',
+    accessDate: '2026-09-26', creators: ['Associated Press'], institution: 'Associated Press', publicationDate: '2025-10-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent contemporaneous election report', identifiers: { publicationDate: '2025-10-19', electionDate: '2025-10-19' },
+    description: 'Contemporaneous coverage situating the runoff amid economic hardship and describing distinct campaign proposals, including a more gradual approach to market-oriented changes by Paz than Quiroga’s proposed adjustment. It supports bounded campaign context only, not the full causes of voter behavior or later policy implementation.'
+  },
+  {
     id: 'uruguayConstitution1967Impo',
     label: 'Uruguay — Constitution of the Republic (1967, updated official text)',
     url: 'https://www.impo.com.uy/bases/constitucion/1967-1967',
