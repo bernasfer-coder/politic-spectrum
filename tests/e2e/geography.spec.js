@@ -276,6 +276,18 @@ test('Japan 2026 update distinguishes elected seat totals, later affiliation and
   await expect(card).toContainText('do not constitute two book-length scholarly studies of the whole sequence');
 });
 
+test('Vanuatu update distinguishes 2025 official election records from the unresolved Torba schedule', async ({ page }) => {
+  await page.goto('/#geography?case=vanuatuan-decolonization-customary-and-constitutional-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1975–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('69.1% turnout');
+  await expect(card).toContainText('one woman among 52 elected members');
+  await expect(card).toContainText('occurrence, cancellation and current status are therefore unresolved');
+  await expect(card).toContainText('no event-specific scholarly monograph');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));

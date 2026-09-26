@@ -30,6 +30,19 @@ for (const sourceId of ['haitiCepCalendar2026', 'haitiCepStatusSeptember2026', '
   assert.ok(haitiCase.sourceIds.includes(sourceId), `Haiti source missing: ${sourceId}`);
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Haiti rights/provenance review missing: ${sourceId}`);
 }
+const vanuatuCase = GEOGRAPHY_CASES.find(({ id }) => id === 'vanuatuan-decolonization-customary-and-constitutional-transition');
+assert.equal(vanuatuCase.endYear, 2026);
+assert.equal(vanuatuCase.reviewedAt, '2026-09-26');
+assert.ok(vanuatuCase.claim.includes('69.1% turnout and one woman among 52 elected members'));
+assert.ok(vanuatuCase.claim.includes('occurrence, cancellation and current status are therefore unresolved'));
+assert.ok(vanuatuCase.limitation.includes('no claim is made that the election occurred, was cancelled or is pending'));
+assert.ok(vanuatuCase.limitation.includes('no event-specific scholarly monograph'));
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === vanuatuCase.labelId)?.aliases.includes('Vanuatu political history 1975–2026'));
+for (const sourceId of ['vanuatu2025SnapElectionVeo', 'vanuatu2025SnapElectionGazette', 'vanuatu2025SnapElectionIpu', 'vanuatu2025ProvincialElectionsMoia', 'vanuatu2026TorbaElectionSchedule', 'vanuatuNaupaWomenRepresentation2026']) {
+  assert.ok(vanuatuCase.sourceIds.includes(sourceId), `Vanuatu source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Vanuatu bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Vanuatu rights/provenance review missing: ${sourceId}`);
+}
 const guyanaCase = GEOGRAPHY_CASES.find(({ id }) => id === 'guyanese-postcolonial-cooperative-socialist-and-ethnic-coalitional-order');
 assert.equal(guyanaCase.endYear, 2026);
 assert.equal(guyanaCase.reviewedAt, '2026-09-26');
