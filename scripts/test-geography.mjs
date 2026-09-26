@@ -290,7 +290,13 @@ assert.ok(bosniaElection?.claim.includes('all scanners designated for the electi
 assert.ok(bosniaElection?.claim.includes('scheduled to begin on 27 September'));
 assert.ok(bosniaElection?.claim.includes('device testing/configuration, ballot printing and quality control, QR-code checks'));
 assert.ok(bosniaElection?.claim.includes('the administrator’s self-report'));
+assert.ok(bosniaElection?.claim.includes('published agenda for its 61st urgent session on 24 September'));
+assert.ok(bosniaElection?.claim.includes('These are agenda entries only'));
+assert.ok(bosniaElection?.claim.includes('neither that the proposals were adopted nor any accreditation, complaint finding or disposition'));
 assert.ok(bosniaElection?.limitation.includes('does not independently verify completion'));
+assert.ok(bosniaElection?.limitation.includes('not minutes or a disposition record'));
+assert.ok(bosniaElection?.sourceIds.includes('bihCecUrgentSessionAgenda20260924'));
+assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('bihCecUrgentSessionAgenda20260924')));
 assert.ok(bosniaElection?.sourceIds.includes('bihCecTechnologyPreparation20260925'));
 assert.ok(bosniaElection?.limitation.includes('does not establish acceptance, configuration, local delivery, operator training or subsequent implementation'));
 assert.ok(bosniaElection?.sourceIds.includes('bihFenaScannerDeliveryUpdate2026'));

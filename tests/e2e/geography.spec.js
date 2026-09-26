@@ -341,6 +341,9 @@ test('Bosnia 2026 pre-election snapshot distinguishes administrative self-report
   await expect(card).toContainText('arrival scheduled for 30 September and deployment for 2 October');
   await expect(card).toContainText('On 25 September, the CEC itself said key planned technology-preparation activities had been realized');
   await expect(card).toContainText('not an independent readiness audit');
+  await expect(card).toContainText('published agenda for its 61st urgent session on 24 September');
+  await expect(card).toContainText('These are agenda entries only');
+  await expect(card).toContainText('neither that the proposals were adopted nor any accreditation, complaint finding or disposition');
   await expect(card).toContainText('distribution of devices and ballots to municipal and city commissions was scheduled to begin on 27 September');
   await expect(card).toContainText('not a receipt or inventory record');
   await expect(card).toContainText('does not establish acceptance, configuration, local delivery, operator training or subsequent implementation');
@@ -348,6 +351,7 @@ test('Bosnia 2026 pre-election snapshot distinguishes administrative self-report
   await expect(card.locator('a[href*="bihFenaScannerDeliveryUpdate2026"]')).toBeVisible();
   await expect(card.locator('a[href*="bihOdihrMissionDeploymentSchedule2026"]')).toBeVisible();
   await expect(card.locator('a[href*="bihCecTechnologyPreparation20260925"]')).toBeVisible();
+  await expect(card.locator('a[href*="bihCecUrgentSessionAgenda20260924"]')).toBeVisible();
 });
 
 test('Peru 2026 election case keeps official returns distinct from observer assessments', async ({ page }) => {

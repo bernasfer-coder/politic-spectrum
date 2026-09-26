@@ -2990,10 +2990,16 @@ const bosniaElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'bosnia-and-h
 const bosniaElectionLabel2026 = GEOGRAPHY_LABELS.find(({ id }) => id === 'bosnia-and-herzegovina-general-election-2026');
 bosniaElection2026.sourceIds.push('bihOdihrMissionDeploymentSchedule2026');
 bosniaElectionLabel2026.sourceIds.push('bihOdihrMissionDeploymentSchedule2026');
+bosniaElection2026.sourceIds.push('bihCecUrgentSessionAgenda20260924');
+bosniaElectionLabel2026.sourceIds.push('bihCecUrgentSessionAgenda20260924');
 bosniaElection2026.evidenceKind += '; official ODIHR mission composition and deployment schedule';
+bosniaElection2026.evidenceKind += '; CEC’s published 61st urgent-session agenda (24 September 2026)';
 bosniaElection2026.claim += ' ODIHR’s official mission page lists a 13-expert core team and 26 long-term observers deployed in the country. It says 300 short-term observers will be requested, with arrival scheduled for 30 September and deployment for 2 October. The planned/requested short-term numbers are not confirmation of their actual deployment.';
+bosniaElection2026.claim += ' The CEC’s published agenda for its 61st urgent session on 24 September lists observer-accreditation reports, proposed appointments for result processing and confirmation, proposed decisions or draft conclusions in several Election Law complaint matters, and voter complaints. These are agenda entries only; they establish neither that the proposals were adopted nor any accreditation, complaint finding or disposition.';
 bosniaElection2026.limitation += ' The official ODIHR page distinguishes the 26 long-term observers listed as deployed from the 300 short-term observers still to be requested; future short-term schedule dates are not completed deployment or election findings.';
+bosniaElection2026.limitation += ' The CEC’s 24 September page is an agenda, not minutes or a disposition record; no decision or complaint outcome is inferred from the listed proposals and draft conclusions.';
 bosniaElection2026.locator += ' ODIHR mission information page (consulted 26 September 2026), deployed long-term observers, short-term observer request and deployment schedule.';
+bosniaElection2026.locator += ' CEC, Agenda for the 61st (Urgent) Session (24 September 2026), agenda items 2–17; proposals and draft conclusions are not treated as adopted decisions.';
 
 const saoTomeElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'sao-tome-2026-national-assembly-election-pre-election');
 const saoTomeElectionLabel2026 = GEOGRAPHY_LABELS.find(({ id }) => id === 'sao-tome-2026-national-assembly-election');
