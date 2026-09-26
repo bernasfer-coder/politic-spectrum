@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 217);
-assert.equal(GEOGRAPHY_LABELS.length, 215);
+assert.equal(GEOGRAPHY_CASES.length, 218);
+assert.equal(GEOGRAPHY_LABELS.length, 216);
 const greeceReferendum2015 = GEOGRAPHY_CASES.find(({ id }) => id === 'greece-2015-referendum-and-negotiations');
 assert.equal(greeceReferendum2015?.relationship, 'influenced');
 assert.equal(greeceReferendum2015?.startYear, 2015);
@@ -22,6 +22,16 @@ assert.ok(greeceReferendum2015?.sourceIds.includes('greeceReferendumDecree382015
 assert.ok(greeceReferendum2015?.sourceIds.includes('greeceAlexiouEuropeanDemos2019'));
 assert.equal(filterGeographyCases({ country: 'map-300' })[0]?.id, greeceReferendum2015?.id);
 assert.equal(filterGeographyCases({ place: 'greece-2015-referendum-and-negotiations' })[0]?.id, greeceReferendum2015?.id);
+const sierraLeoneUnity = GEOGRAPHY_CASES.find(({ id }) => id === 'sierra-leone-agreement-national-unity-and-electoral-reform-2023-26');
+assert.equal(sierraLeoneUnity?.startYear, 2023);
+assert.equal(sierraLeoneUnity?.endYear, 2026);
+assert.equal(sierraLeoneUnity?.confidence, 'medium');
+assert.ok(sierraLeoneUnity?.claim.includes('neither source adjudicates the disputed result'));
+assert.ok(sierraLeoneUnity?.claim.includes('not a representative poll'));
+assert.ok(sierraLeoneUnity?.limitation.includes('event-specific book-level scholarship remains unavailable'));
+assert.ok(sierraLeoneUnity?.sourceIds.includes('sierraLeoneTripartiteReport2024'));
+assert.ok(sierraLeoneUnity?.sourceIds.includes('sierraLeoneAhujaMcClendonElectoralRules2026'));
+assert.equal(filterGeographyCases({ country: 'sierra-leone' }).some(({ id }) => id === sierraLeoneUnity?.id), true);
 assert.equal(GEOGRAPHY_COUNTRIES.find(({ id }) => id === 'map-300')?.name, 'Greece');
 assert.equal(MAP_COUNTRIES_BY_ID['map-300']?.name, 'Greece');
 assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === greeceReferendum2015?.labelId)));
@@ -886,7 +896,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 188, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 189, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('romania-2024-presidential-annulment-and-2025-rerun'));
 assert.ok(implementedPost2000.includes('mauritius-2024-national-assembly-election-and-transition'));
 assert.ok(implementedPost2000.includes('seychelles-2025-presidential-and-assembly-elections'));

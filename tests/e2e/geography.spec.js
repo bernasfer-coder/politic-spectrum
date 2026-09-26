@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(217);
+  await expect(page.locator('.geo-card')).toHaveCount(218);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -618,7 +618,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(217);
+  await expect(page.locator('.geo-card')).toHaveCount(218);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -630,6 +630,18 @@ test('atlas cards and timeline are accessible and fit the viewport', async ({ pa
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
   const timelineResults = await new AxeBuilder({ page }).analyze();
   expect(timelineResults.violations.filter(({ impact }) => ['critical', 'serious'].includes(impact))).toEqual([]);
+});
+
+test('Sierra Leone unity agreement distinguishes consultation from adjudication and enacted reform', async ({ page }) => {
+  await page.goto('/#geography?case=sierra-leone-agreement-national-unity-and-electoral-reform-2023-26');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('18 October 2023');
+  await expect(card).toContainText('not a representative poll');
+  await expect(card).toContainText('recommendations equal implementation');
+  await expect(card).toContainText('event-specific book-level scholarship remains unavailable');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="sierraLeoneTripartiteReport2024"]')).toBeVisible();
 });
 
 test('Russia 2026 Duma case keeps preliminary returns, OSCE non-invitation and occupied-territory context distinct', async ({ page }) => {
