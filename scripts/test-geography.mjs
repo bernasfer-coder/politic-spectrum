@@ -259,6 +259,22 @@ assert.equal(filterGeographyCases({ country: 'sudan' })[0].id, 'sudanese-islamis
 assert.equal(filterGeographyCases({ country: 'algeria' })[0].id, 'algerian-postwar-constitutional-hirak-transition');
 assert.equal(filterGeographyCases({ country: 'tunisia' })[0].id, 'tunisian-revolutionary-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'libya' })[0].id, 'libyan-postcolonial-fragmented-constitutional-transition');
+const libya2026 = filterGeographyCases({ country: 'libya' })[0];
+assert.equal(libya2026.startYear, 1951);
+assert.equal(libya2026.endYear, 2026);
+assert.equal(libya2026.reviewedAt, '2026-09-26');
+assert.ok(libya2026.claim.includes('within no more than 24 months is a roadmap horizon, not a scheduled or held election'));
+assert.ok(libya2026.claim.includes('House of Representatives endorsement on 15 September'));
+assert.ok(libya2026.claim.includes('20 September follow-up meeting to advance implementation'));
+assert.ok(libya2026.claim.includes('not a representative poll, binding consensus or policy implementation'));
+assert.ok(libya2026.claim.includes('not audited evidence of consolidated fiscal practice or effects'));
+assert.ok(libya2026.limitation.includes('No event-specific book-length scholarship on the 2025–26 roadmap was located'));
+assert.ok(libya2026.limitation.includes('the latest dated material consulted, not a forecast or claim about what followed'));
+for (const sourceId of ['williamsLibyaSinceQaddafi2025', 'trauthigRuiningRevolution2025', 'aliLibyaSecurityTransition2025', 'unsmilStructuredDialogueRecommendations2026', 'unsmilSmallerConveningAgreement2026', 'unsmilHouseEndorsementSmallerConvening2026', 'unsmilSmallerConveningFollowup2026', 'cblUnifiedDevelopmentAgreement2025', 'cblUnifiedExpenditureImplementation2026']) {
+  assert.ok(libya2026.sourceIds.includes(sourceId), `Libya 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Libya bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Libya rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'morocco' })[0].id, 'moroccan-constitutional-monarchical-reform-transition');
 assert.ok(filterGeographyCases({ country: 'morocco' }).some(({ id }) => id === 'moroccan-post-2021-coalition-and-social-protection-horizon'));
 assert.equal(filterGeographyCases({ country: 'vietnam' })[0].id, 'vietnamese-socialist-constitutional-doi-moi-transition');

@@ -305,6 +305,21 @@ test('Côte d’Ivoire update separates 2025 court, observer and civic-space evi
   await expect(card).toContainText('do not establish voter motives');
 });
 
+test('Libya 2026 update distinguishes roadmap commitments, limited endorsements and implementation still underway', async ({ page }) => {
+  await page.goto('/#geography?case=libyan-postcolonial-fragmented-constitutional-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1951–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('commitment to work toward elections within no more than 24 months is a roadmap horizon');
+  await expect(card).toContainText('House of Representatives endorsement on 15 September');
+  await expect(card).toContainText('20 September follow-up meeting to advance implementation');
+  await expect(card).toContainText('not a scheduled or held election');
+  await expect(card).toContainText('not audited evidence of consolidated fiscal practice or effects');
+  await expect(card).toContainText('No event-specific book-length scholarship on the 2025–26 roadmap was located');
+  await expect(card).toContainText('not a forecast or claim about what followed');
+});
+
 test('Zimbabwe 2026 update distinguishes the gazetted amendment from competing legal interpretations and a procedural hearing', async ({ page }) => {
   await page.goto('/#geography?case=zimbabwean-second-republic-and-2023-electoral-contestation');
   const card = page.locator('.geo-card');
