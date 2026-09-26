@@ -10028,6 +10028,97 @@ sources.push(
   }
 );
 
+sources.push(
+  {
+    id: 'asatryanTalibanland2025',
+    label: 'Georgi Asatryan — Talibanland: Paradise Under the Shadow of Sabers in Afghanistan (2025)',
+    url: 'https://link.springer.com/book/10.1007/978-3-031-87580-9',
+    note: 'Palgrave Macmillan/Springer book record consulted for first-edition metadata, 257-page extent, ISBN 978-3-031-87580-9 and abstract describing Taliban rule, ideology, social context and international policy. The full monograph and its interview/source corpus were not independently collated; no wording is reproduced and its single-author interpretation is treated as one perspective, not a society-wide account.',
+    accessDate: '2026-09-26', creators: ['Georgi Asatryan'], institution: 'Palgrave Macmillan / Springer Nature',
+    publicationDate: '2025-04-30', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length study of Taliban rule and international relations',
+    identifiers: { isbn: '978-3-031-87580-9', hardcoverIsbn: '978-3-031-87579-3', doi: '10.1007/978-3-031-87580-9' },
+    description: 'A 2025 monograph examining Taliban ideology, social context, rule and the strategies of external powers. Publisher metadata and abstract support its scope as a book-length interpretive perspective; the full text was not consulted, and it does not verify events after its research horizon.'
+  },
+  {
+    id: 'larsonMukhopadhyaySharifiPowerAuthorityAfghanistan2025',
+    label: 'Anna Larson, Dipali Mukhopadhyay and Omar Sharifi, eds. — Power and Authority in Afghanistan: Rethinking Politics, Intervention and Rule (2025)',
+    url: 'https://www.bloomsbury.com/uk/power-and-authority-in-afghanistan-9780755647484/',
+    note: 'Bloomsbury/I.B. Tauris publisher record consulted for editors, publication date, 320-page extent, ISBN 9780755647484 and chapter list, including contributions on Taliban authority, women, minorities, intervention and the “Taliban 2.0” framing. The edited collection’s full chapters were not independently collated; no chapter wording is reproduced, and contributor arguments remain distinct rather than merged into a consensus.',
+    accessDate: '2026-09-26', creators: ['Anna Larson', 'Dipali Mukhopadhyay', 'Omar Sharifi'], institution: 'I.B. Tauris / Bloomsbury Publishing',
+    publicationDate: '2025-02-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited volume on Afghan power and authority',
+    identifiers: { isbn: '9780755647484' },
+    description: 'An edited collection of Afghan and international scholarship that reconsiders Afghan power, authority and intervention, with separately authored chapters on Taliban rule, women, minorities, institutional continuity and state-building. Publisher metadata and contents are used for bibliographic scope only; chapter claims are not attributed without reading their full texts.'
+  },
+  {
+    id: 'unamaAfghanistanPvpvImplementation2025',
+    label: 'UNAMA — Report on the Implementation, Enforcement and Impact of the PVPV Law in Afghanistan (10 April 2025)',
+    url: 'https://unama.unmissions.org/en/node/63865',
+    note: 'UNAMA’s report and release consulted for its stated six-month period after promulgation on 21 August 2024, monitoring basis and findings about provincial implementation committees, inspectors, discretionary enforcement and reported social/economic effects. English, Dari and Pashto report versions are linked; the underlying gazette text, complete observation dataset and local-language legal review were not independently collated. No report text, table or translation is reproduced.',
+    accessDate: '2026-09-26', creators: ['United Nations Assistance Mission in Afghanistan'], institution: 'United Nations',
+    publicationDate: '2025-04-10', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Dari', 'Pashto'],
+    sourceType: 'UN human-rights monitoring report on implementation of a de facto law',
+    identifiers: { lawPromulgationDate: '2024-08-21', reportingWindow: 'first six months of implementation' },
+    description: 'UNAMA reports its monitoring of implementation and effects of the de facto authorities’ propagation-of-virtue/prevention-of-vice law. Findings are attributed to UNAMA’s monitoring and stated time window, not treated as a nationwide census or as the law’s official gazette text.'
+  },
+  {
+    id: 'unAfghanistanSecretaryGeneralReportDecember2025',
+    label: 'UN Secretary-General — The Situation in Afghanistan and Its Implications for International Peace and Security (A/80/556–S/2025/789, 3 December 2025)',
+    url: 'https://digitallibrary.un.org/record/4095211',
+    note: 'UN Digital Library metadata and report consulted as a dated institutional account of political, humanitarian and human-rights developments since 5 September 2025. The report records, among other events, restrictions on Afghan women personnel entering UN premises from 7 September and an internet/communications blackout at the end of September; these remain attributed institutional observations. No report prose, table or map is reproduced.',
+    accessDate: '2026-09-26', creators: ['United Nations Secretary-General'], institution: 'United Nations',
+    publicationDate: '2025-12-03', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Arabic', 'Chinese', 'French', 'Russian', 'Spanish'],
+    sourceType: 'Secretary-General report to the UN General Assembly and Security Council',
+    identifiers: { documentSymbols: ['A/80/556', 'S/2025/789'] },
+    description: 'A 15-page UN report submitted under the continuing UNAMA mandate, summarizing a specified period of political, humanitarian and human-rights developments. It is an institutional source with temporal and mandate scope, not a substitute for local testimony or an independent census.'
+  },
+  {
+    id: 'iccAfghanistanWarrantsAkhundzadaHaqqani2025',
+    label: 'International Criminal Court — Afghanistan situation: arrest warrants for Haibatullah Akhundzada and Abdul Hakim Haqqani (8 July 2025)',
+    url: 'https://www.icc-cpi.int/afghanistan',
+    note: 'ICC situation page and Pre-Trial Chamber II notice consulted for the warrants and the Court’s stated “reasonable grounds to believe” standard concerning alleged persecution on gender grounds. A warrant is a judicial process step, not a conviction or final determination of individual guilt. Applications, full warrant decisions and subsequent litigation were not all independently collated; no allegation is restated as adjudicated fact.',
+    accessDate: '2026-09-26', creators: ['International Criminal Court, Pre-Trial Chamber II'], institution: 'International Criminal Court',
+    publicationDate: '2025-07-08', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'international criminal court notice of arrest warrants',
+    identifiers: { situation: 'Afghanistan', decisionDate: '2025-07-08', proceduralStatus: 'arrest warrants; not convictions' },
+    description: 'The ICC says Pre-Trial Chamber II issued arrest warrants after finding reasonable grounds to believe the suspects bear responsibility for the alleged crime against humanity of persecution on gender grounds. The procedural finding is not a conviction or a final adjudication of guilt.'
+  },
+  {
+    id: 'unamaAfghanistanWomenJusticeConsultation2026',
+    label: 'UN Women, UNAMA and IOM — Findings on women’s access to formal justice mechanisms (8 March 2026)',
+    url: 'https://unama.unmissions.org/en/node/134357',
+    note: 'UNAMA release consulted for the December 2025 in-person and online consultations with more than 800 women and 160 men and the reported access-to-formal-dispute-resolution findings. The release itself says perception-based findings reflect respondents’ perspectives and are not independent verification or legal/factual determinations. The full instruments, sampling weights, Dari/Pashto questionnaires and underlying dataset were not collated; no respondent-level data is reproduced.',
+    accessDate: '2026-09-26', creators: ['UN Women', 'United Nations Assistance Mission in Afghanistan', 'International Organization for Migration'], institution: 'United Nations / International Organization for Migration',
+    publicationDate: '2026-03-08', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Dari', 'Pashto'],
+    sourceType: 'institutional report of multi-mode perception consultations',
+    identifiers: { consultationPeriod: '2025-12', sample: 'over 800 women and 160 men', limitation: 'perception data; not legal/factual determinations' },
+    description: 'Reports consultation respondents’ accounts of access to formal and informal dispute resolution. Results are bounded to the consulted sample and stated method; they do not represent every Afghan woman or man or establish adjudicated facts.'
+  },
+  {
+    id: 'unamaAfghanistanDecree18JudicialSeparation2026',
+    label: 'UNAMA — Statement on Decree No. 18, “Code on Judicial Separation of Spouses” (21 May 2026)',
+    url: 'https://unama.unmissions.org/en/node/135470',
+    note: 'UNAMA’s statement consulted for the reported gazetting of Decree No. 18 by the de facto Ministry of Justice on 14 May 2026 and its account of the separation framework. UNAMA’s rights analysis is explicitly attributed; the decree itself and its authoritative Dari/Pashto gazette text, court implementation and subsequent amendment were not independently retrieved. No legal text or translation is reproduced.',
+    accessDate: '2026-09-26', creators: ['United Nations Assistance Mission in Afghanistan'], institution: 'United Nations',
+    publicationDate: '2026-05-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'UN statement on a reported official-gazette decree',
+    identifiers: { decreeNumber: '18', gazetteDate: '2026-05-14', title: 'Code on Judicial Separation of Spouses' },
+    description: 'UNAMA reports the publication of Decree No. 18 and analyzes its implications for women’s access to judicial separation. Its interpretation is attributed to UNAMA; the underlying official-language legal text and its implementation are separate verification tasks.'
+  },
+  {
+    id: 'worldBankAfghanistanEconomicMonitorAugust2026',
+    label: 'World Bank — Afghanistan Economic Monitor, August 2026 (published 23 September 2026)',
+    url: 'https://thedocs.worldbank.org/en/doc/3db2a0d3cfa93c37c9f4434fc4959e1f-0310012026/original/Afghanistan-Economic-Monitor-August-2026.pdf',
+    note: 'World Bank country-focus PDF consulted for August 2026 economic indicators, published 23 September. It draws on listed sources including World Bank monitoring, Afghanistan’s statistical authority, central-bank/trade data and WFP price data; the report labels some figures as estimates and describes trade, aid, returns and household pressures. Those are attributed institutional estimates, not an independent census or proof of policy effects. No chart, table or data extract is republished.',
+    accessDate: '2026-09-26', creators: ['World Bank, Macroeconomics, Trade and Investment Global Practice'], institution: 'World Bank',
+    publicationDate: '2026-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'monthly institutional economic-monitoring report',
+    identifiers: { reportingPeriod: 'August 2026', publicationDate: '2026-09-23', issue: '5 / FY2026' },
+    description: 'The monthly monitor reports inflation estimates, exchange-rate and trade indicators, domestic revenues and expenditures, declining aid and returnee-related pressure. The data are time-bound and some figures are explicitly estimates; no inference about uniform household experience or ideological orientation follows.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,

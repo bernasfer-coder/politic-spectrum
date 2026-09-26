@@ -79,6 +79,21 @@ for (const sourceId of ['nepalElectionCommission2026Results', 'nepalPrimeMiniste
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Nepal rights/provenance review missing: ${sourceId}`);
 }
 assert.equal(filterGeographyCases({ country: 'afghanistan' })[0].id, 'afghan-posttaliban-republican-order');
+const afghanEmirate2026 = filterGeographyCases({ country: 'afghanistan' }).find(({ id }) => id === 'afghan-taliban-de-facto-emirate-and-international-transition');
+assert.ok(afghanEmirate2026);
+assert.equal(afghanEmirate2026.endYear, 2026);
+assert.equal(afghanEmirate2026.reviewedAt, '2026-09-26');
+assert.ok(afghanEmirate2026.claim.includes('warrants and allegations are not convictions'));
+assert.ok(afghanEmirate2026.claim.includes('not independent verification or legal/factual determinations'));
+assert.ok(afghanEmirate2026.claim.includes('not a current-country ideological score'));
+assert.ok(afghanEmirate2026.limitation.includes('Two 2025 books now provide book-length interpretive perspectives'));
+assert.ok(afghanEmirate2026.limitation.includes('full PVPV and Decree No. 18 gazette texts in authoritative Dari/Pashto'));
+assert.equal(filterGeographyCases({ country: 'afghanistan' }).find(({ id }) => id === 'afghan-posttaliban-republican-order')?.endYear, 2021);
+for (const sourceId of ['asatryanTalibanland2025', 'larsonMukhopadhyaySharifiPowerAuthorityAfghanistan2025', 'unamaAfghanistanPvpvImplementation2025', 'unAfghanistanSecretaryGeneralReportDecember2025', 'iccAfghanistanWarrantsAkhundzadaHaqqani2025', 'unamaAfghanistanWomenJusticeConsultation2026', 'unamaAfghanistanDecree18JudicialSeparation2026', 'worldBankAfghanistanEconomicMonitorAugust2026']) {
+  assert.ok(afghanEmirate2026.sourceIds.includes(sourceId), `Afghanistan 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Afghanistan bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Afghanistan rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'burkina-faso' })[0].id, 'burkinabe-postcolonial-revolutionary-and-transition-history');
 assert.equal(filterGeographyCases({ country: 'sudan' })[0].id, 'sudanese-islamist-military-and-revolutionary-transition');
 assert.equal(filterGeographyCases({ country: 'algeria' })[0].id, 'algerian-postwar-constitutional-hirak-transition');
