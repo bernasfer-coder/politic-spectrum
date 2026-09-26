@@ -780,6 +780,8 @@ test('Somalia locator opens its bounded 2026 constitutional transition and expos
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('Article 195');
+  await expect(card).toContainText('catalogue date of 5 September 2026');
+  await expect(card).toContainText('cover is dated 4 March 2026');
   await expect(card).toContainText('requires independent Somali legal-language review');
   await expect(card).toContainText('No referendum result');
   await expect(somalia).toHaveAttribute('aria-pressed', 'true');

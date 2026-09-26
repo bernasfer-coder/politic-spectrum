@@ -169,6 +169,7 @@ const RESEARCH_WORK_RIGHTS = Object.fromEntries(
 );
 
 const RIGHTS_RECORDS = {
+    somaliaSenateConstitutionLibrarySeptember2026: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-26', notes: 'Official Senate catalogue record linked and summarized independently. The catalogue date (5 September) is kept distinct from the linked PDF cover date (4 March); it is not treated as evidence of a new enactment or amendment. No document or page image is republished.' },
     southAfricaGnuStatementIntent2024: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Original summary and official-hosted link only. The political compact is linked, not reproduced; no statement passage, scan or PDF is bundled, and stated commitments are not treated as proof of implementation.' },
     southAfricaOpeningParliament2024: { ...OFFICIAL_TEXT, reviewedAt: '2026-09-23', notes: 'Original attributed summary and official address link only. No address wording, image or transcript is reproduced; executive policy claims remain attributed and are not an independent outcome measure.' },
     southAfricaMistraElectionCoalitions2024: { ...LINK_ONLY, reviewedAt: '2026-09-23', notes: 'MISTRA publication record and report used for original attributed synthesis and link only. No chapter wording, quotation, chart, table or page image is republished; full text is not bundled.' },
