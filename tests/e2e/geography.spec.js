@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(216);
+  await expect(page.locator('.geo-card')).toHaveCount(217);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -616,7 +616,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(216);
+  await expect(page.locator('.geo-card')).toHaveCount(217);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -886,5 +886,22 @@ test('Latvia 2026 Saeima election remains a bounded pre-election snapshot with e
   await expect(card.locator('a[href*="latviaOdihrAssessmentMission2026"]')).toBeVisible();
   await expect(card.locator('a[href*="latviaVestnesisCandidateAudio2026"]')).toBeVisible();
   await expect(card.locator('a[href*="latviaAuersComparativePolitics2015"]')).toBeVisible();
+});
+
+test('Israel 2026 election snapshot separates list and candidate review and marks the cutoff', async ({ page }) => {
+  await page.goto('/#geography?case=israel-26th-knesset-election-section-7a-review-2026');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('27 October 2026');
+  await expect(card).toContainText('18–5, with one abstention');
+  await expect(card).toContainText('individual-candidate disqualification requires Supreme Court approval');
+  await expect(card).toContainText('Under section 7A(b)');
+  await expect(card).toContainText('underlying CEC minutes or signed decisions were not located');
+  await expect(card).toContainText('no ideological classification');
+  await expect(card).toContainText('their texts were not read for this case');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="israelBasicLawKnessetSection7A"]')).toBeVisible();
+  await expect(card.locator('a[href*="israelCecDisqualificationAdalah2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="israelLandauArabMinority1993"]')).toBeVisible();
 });
 
