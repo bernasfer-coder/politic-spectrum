@@ -117,6 +117,20 @@ assert.ok(spainPluralism2026.limitation.includes('No event-specific book-length 
 for (const sourceId of ['spainConstitutionalCourtAmnesty2025', 'spainCjeuSociedadCivilCatalana2026', 'spainCjeuAcvot2026', 'spainCongressInterestGroupsDecreeVote2026', 'spainBohiguesSendraPoliticalData2025']) {
   assert.ok(spainPluralism2026.sourceIds.includes(sourceId), `Spain 2026 source missing: ${sourceId}`);
 }
+const peruCrisis2026 = filterGeographyCases({ country: 'map-604' }).find(({ id }) => id === 'peruvian-post-2021-crisis-and-boluarte-transition');
+assert.equal(peruCrisis2026.endYear, 2026);
+assert.equal(peruCrisis2026.reviewedAt, '2026-09-26');
+assert.equal(filterGeographyCases({ country: 'map-604' }).find(({ id }) => id === 'peruvian-fujimori-to-fragmented-democratic-order').endYear, 2021);
+assert.ok(peruCrisis2026.claim.includes('overall credible and transparent'));
+assert.ok(peruCrisis2026.claim.includes('49,641'));
+assert.ok(peruCrisis2026.claim.includes('not voter motives, unanimity'));
+assert.ok(peruCrisis2026.limitation.includes('no event-specific book-length account of the 2026 election'));
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === peruCrisis2026.labelId)?.aliases.includes('Peru 2026 general election and presidential transfer'));
+for (const sourceId of ['peruEuEomFinalReport2026', 'peruOasRunoffObservationReport2026', 'peruJneProclamation2026', 'peruCongressFujimoriInauguration2026']) {
+  assert.ok(peruCrisis2026.sourceIds.includes(sourceId), `Peru 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Peru bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Peru rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'germany' })[0].id, 'west-german-constitutional-reconstruction');
 assert.equal(filterGeographyCases({ country: 'germany' }).find(({ id }) => id === 'german-reunified-constitutional-democratic-order')?.id, 'german-reunified-constitutional-democratic-order');
 assert.ok(filterGeographyCases({ country: 'germany' }).some(({ id }) => id === 'german-post-2021-coalition-crisis-and-2025-electoral-contestation'));
