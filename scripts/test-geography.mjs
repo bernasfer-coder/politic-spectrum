@@ -296,7 +296,11 @@ assert.ok(bosniaElection?.claim.includes('neither that the proposals were adopte
 assert.ok(bosniaElection?.limitation.includes('does not independently verify completion'));
 assert.ok(bosniaElection?.limitation.includes('not minutes or a disposition record'));
 assert.ok(bosniaElection?.sourceIds.includes('bihCecUrgentSessionAgenda20260924'));
+assert.ok(bosniaElection?.sourceIds.includes('bihCec61stSessionN1FenaReport20260924'));
+assert.ok(bosniaElection?.claim.includes('imposed fines in several cases concerning premature campaigning and minors’ participation in political activity'));
+assert.ok(bosniaElection?.limitation.includes('formal reasons and dispositions, appeals, payment and enforcement were not independently reviewed'));
 assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('bihCecUrgentSessionAgenda20260924')));
+assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('bihCec61stSessionN1FenaReport20260924')));
 assert.ok(bosniaElection?.sourceIds.includes('bihCecTechnologyPreparation20260925'));
 assert.ok(bosniaElection?.limitation.includes('does not establish acceptance, configuration, local delivery, operator training or subsequent implementation'));
 assert.ok(bosniaElection?.sourceIds.includes('bihFenaScannerDeliveryUpdate2026'));
