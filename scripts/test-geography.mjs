@@ -144,6 +144,15 @@ assert.ok(filterGeographyCases({ country: 'zimbabwe' }).some(({ id }) => id === 
 assert.equal(filterGeographyCases({ label: 'nasserism' }).length, 2);
 assert.equal(filterGeographyCases({ continent: 'Oceania' }).length, 13);
 assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-bicultural-constitutional-and-welfare-democratic-order');
+const newZealand2026 = filterGeographyCases({ country: 'map-554' }).find(({ id }) => id === 'new-zealand-post-2023-coalition-and-treaty-principles-contestation');
+assert.equal(newZealand2026.endYear, 2026);
+assert.equal(newZealand2026.reviewedAt, '2026-09-26');
+assert.ok(newZealand2026.claim.includes('no candidate, polling, result, turnout, observation or post-election conclusion is asserted'));
+assert.ok(newZealand2026.claim.includes('not yet in effect'));
+assert.ok(newZealand2026.limitation.includes('no event-specific book-length scholarly account was located'));
+for (const sourceId of ['newZealandElectoralAmendmentAct2025', 'newZealandJusticeCommitteeElectionInquiry2024', 'newZealandElectoralCommission2026KeyDates', 'newZealandElectoralCommissionMaoriRollAugust2026', 'newZealandLocalGovernmentSystemImprovementsAct2026', 'newZealandLocalGovernmentSystemImprovementsMinistry2026', 'newZealandLocalGovernmentActGovernmentRationale2026', 'newZealandIwiResponseCommitteeVoting2026']) {
+  assert.ok(newZealand2026.sourceIds.includes(sourceId), `New Zealand 2026 source missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 134, 'the atlas should expose all dated post-2000 implemented cases');

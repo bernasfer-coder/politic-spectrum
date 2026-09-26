@@ -41,6 +41,17 @@ test('shared cases link to the encyclopedia and bibliography, and return to the 
   await expect(card).toHaveCount(1);
 });
 
+test('New Zealand 2026 update distinguishes scheduled election and future local-government rules', async ({ page }) => {
+  await page.goto('/#geography?case=new-zealand-post-2023-coalition-and-treaty-principles-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('17,033 roll changes');
+  await expect(card).toContainText('565,092 enrolled voters of Māori descent');
+  await expect(card).toContainText('mid-March 2027');
+  await expect(card).toContainText('no candidate, polling, result, turnout, observation or post-election conclusion is asserted');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));

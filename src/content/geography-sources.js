@@ -8804,6 +8804,86 @@ const sources = [
     description: 'Edited volume on Treaty principles, tikanga, rangatiratanga, sovereignty, the UN Declaration on the Rights of Indigenous Peoples, mana whenua relationships and Treaty settlements. Its contributors and Māori-centered perspectives widen the contemporary evidence base while remaining distinct from the government bill’s self-description and from a single national consensus.',
   },
   {
+    id: 'newZealandElectoralAmendmentAct2025',
+    label: 'New Zealand — Electoral Amendment Act 2025 (Act No. 82 of 2025)',
+    url: 'https://www.legislation.govt.nz/act/public/2025/82/en/latest/',
+    note: 'Official statute record consulted for the law assented to 18 December 2025. The Act amends numerous electoral matters, including registration, advance polling, voter records, advertising, party and promoter expenditure, enrolment processes, and election administration. This broad law record is not used to infer an unexamined clause or implementation effect; specific 2026 deadlines are cited separately to the Electoral Commission.',
+    accessDate: '2026-09-26', creators: ['New Zealand Parliament'], institution: 'New Zealand Legislation / Parliamentary Counsel Office',
+    publicationDate: '2025-12-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary electoral amendment act / legal record', identifiers: { actNumber: '2025/82', royalAssent: '2025-12-18' },
+    description: 'Primary legislation amending the Electoral Act 1993 and related law ahead of the 2026 general election. It establishes enacted statutory changes, not their effect on access, voter experience, political equality, party outcomes or public confidence.'
+  },
+  {
+    id: 'newZealandJusticeCommitteeElectionInquiry2024',
+    label: 'New Zealand House of Representatives, Justice Committee — Inquiry into the 2023 General Election (I.7A, November 2024)',
+    url: 'https://selectcommittees.parliament.nz/view/SelectCommitteeReport/018d1b6b-7d22-4a67-3620-08dd01d456de',
+    note: 'Official 68-page Justice Committee report, presented in November 2024, consulted especially at pp. 35–37. It records Electoral Commission evidence that 20,386 already-enrolled Māori voters attempted to change between Māori and general rolls during the three-month exception window in 2023 (10,670 in one direction and 9,716 in the other), and records different committee members’ positions on same-day enrolment. The Commission said some roll-change requests were processed after the election. These are report-attributed counts and institutional testimony, not a measure of each elector’s intent or of the effect on representation.',
+    accessDate: '2026-09-26', creators: ['New Zealand House of Representatives, Justice Committee'], institution: 'New Zealand Parliament',
+    publicationDate: '2024-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary committee inquiry report', identifiers: { report: 'I.7A', pages: '68', relevantPages: '35–37', reportingElection: '2023 general election' },
+    description: 'Parliamentary inquiry into administration and legal settings for the 2023 general election, drawing on submissions, witnesses, Electoral Commission and Auditor-General material. It reports committee recommendations and recorded disagreements rather than a unified scholarly or Māori-community position.'
+  },
+  {
+    id: 'newZealandElectoralCommission2026KeyDates',
+    label: 'New Zealand Electoral Commission — Key dates for the 2026 General Election',
+    url: 'https://elections.nz/media-and-news/2026/key-dates-for-2026-general-election',
+    note: 'Electoral Commission timetable announced 21 January 2026 and consulted on 26 September. It schedules advance voting from 26 October, the final enrolment/update deadline for 25 October, election day on 7 November, and official results for 27 November. The named dates establish the published schedule only; they are not evidence of future polling, participation, candidates, results or operational experience.',
+    accessDate: '2026-09-26', creators: ['New Zealand Electoral Commission'], institution: 'New Zealand Electoral Commission',
+    publicationDate: '2026-01-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official general-election timetable and administrative notice', identifiers: { electionDay: '2026-11-07', advanceVotingStarts: '2026-10-26', enrolmentDeadline: '2026-10-25', officialResultDate: '2026-11-27' },
+    description: 'Primary administrative record of key dates for the 2026 general election. All future dates are treated as scheduled events as of the access date, not completed events or findings.'
+  },
+  {
+    id: 'newZealandElectoralCommissionMaoriRollAugust2026',
+    label: 'New Zealand Electoral Commission — Māori roll changes and enrolment before the 2026 election (18 August 2026)',
+    url: 'https://elections.nz/media-and-news/2026/new-media-and-news-page-2',
+    note: 'Electoral Commission news-page item titled “17,000 Māori voters change rolls,” dated 18 August 2026 and consulted in full on 26 September. The Commission reports transactions between 31 March and midnight 6 August, then states that already-enrolled Māori voters could no longer change roll type during the three months before the 7 November election; first-time enrollees could still choose a roll by 25 October. Its administrative counts are attributed to the Commission, are not an eligible-population denominator or turnout, and are not compared as like-for-like with 2023’s different transaction window and attempted changes.',
+    accessDate: '2026-09-26', creators: ['New Zealand Electoral Commission'], institution: 'New Zealand Electoral Commission',
+    publicationDate: '2026-08-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official Māori enrolment and roll-choice administrative release', identifiers: { eligibleTransactionWindow: '2026-03-31 to 2026-08-06', rollLockBegins: '2026-08-07', electionDay: '2026-11-07', enrolledVotersOfMaoriDescent: '565092' },
+    description: 'Electoral Commission administrative figures report 17,033 roll changes before the cutoff, 11,272 new enrolments, 31,865 detail updates, and 565,092 enrolled voters of Māori descent on 6 August. The totals document agency records and roll status, not population-wide support, eligibility, voting intention or turnout.'
+  },
+  {
+    id: 'newZealandLocalGovernmentSystemImprovementsAct2026',
+    label: 'New Zealand — Local Government (System Improvements) Amendment Act 2026 (Act No. 64 of 2026)',
+    url: 'https://www.legislation.govt.nz/act/public/2026/64/en/latest/',
+    note: 'Official statute and legislative-history record consulted on 26 September. The Act received Royal assent on 18 September 2026. Its Schedule 7 provisions restrict voting and quorum rights for specified non-elected local-authority committee members, with exceptions and a six-month transition; the Ministry for Cities, Environment, Regions and Transport identifies mid-March 2027 as the planned commencement of these specific provisions and states that the Auckland Houkura members are not excepted. Enactment is not evidence that the future rule has already been implemented or of its local effects.',
+    accessDate: '2026-09-26', creators: ['New Zealand Parliament'], institution: 'New Zealand Legislation / Parliamentary Counsel Office',
+    publicationDate: '2026-09-18', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary local-government amendment act / legal record', identifiers: { actNumber: '2026/64', royalAssent: '2026-09-18', votingProvisionTransition: 'six months after commencement' },
+    description: 'Primary statute amending local-government purposes, committee membership and voting, governance, council reporting and other matters. Its enactment and specified commencement provisions are distinguished from the government’s rationale, Māori and local-government responses, and future implementation.'
+  },
+  {
+    id: 'newZealandLocalGovernmentSystemImprovementsMinistry2026',
+    label: 'New Zealand Ministry for Cities, Environment, Regions and Transport — Local government system improvements',
+    url: 'https://www.mcert.govt.nz/our-work/local-government/local-government-policy/local-government-system-improvements/',
+    note: 'Current ministry guidance consulted 26 September 2026 for the Government’s stated aims, the statutory description of core services, the treatment of non-elected committee members, named exceptions and delayed commencement. The Ministry says the law refocuses councils on cost-effective infrastructure, public services and regulatory functions while preserving general competence; it also says non-elected members may continue to participate without voting or counting toward quorum, with specified exceptions that do not include Auckland Houkura appointments. This is official administrative explanation, not an independent assessment of local effects.',
+    accessDate: '2026-09-26', creators: ['New Zealand Ministry for Cities, Environment, Regions and Transport'], institution: 'New Zealand Government',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'official departmental implementation and policy guidance', identifiers: { relevantHeadings: 'What has changed; Non-elected committee members', implementationDate: 'mid-March 2027' },
+    description: 'Government explanation of the Local Government (System Improvements) Amendment Act 2026, including the stated rates, services and accountability rationale, provisions concerning non-elected committee members, exceptions and planned transition. Its own policy framing is not treated as a finding about the rights or impacts of the law.'
+  },
+  {
+    id: 'newZealandLocalGovernmentActGovernmentRationale2026',
+    label: 'New Zealand Local Government Minister — Bill passed to get councils back to basics (16 September 2026)',
+    url: 'https://www.beehive.govt.nz/release/bill-passed-get-councils-back-basics',
+    note: 'Minister Simon Watts’ official release after the bill’s third reading, consulted for the executive’s stated rationale: core services, rates, performance reporting and voting rights for elected committee members. The release predates Royal assent by two days and documents government self-description, not an independent evaluation or the enacted text.',
+    accessDate: '2026-09-26', creators: ['Hon Simon Watts, Minister of Local Government'], institution: 'New Zealand Government, Beehive.govt.nz',
+    publicationDate: '2026-09-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'ministerial statement and executive bill announcement', identifiers: { releaseDate: '2026-09-16', bill: 'Local Government (System Improvements) Amendment Bill' },
+    description: 'Official ministerial account of the government’s rationale for the bill’s service, cost, performance and elected-accountability provisions. It is evidence of executive framing, not a finding about the consequences of the policy.'
+  },
+  {
+    id: 'newZealandIwiResponseCommitteeVoting2026',
+    label: 'Whakaata Māori / Te Ao Māori News — Māori opposition to local government voting changes grows as iwi collective warns of Treaty rollback (9 June 2026)',
+    url: 'https://www.teaonews.co.nz/2026/06/09/maori-opposition-to-local-government-voting-changes-grows-as-iwi-collective-warns-of-treaty-rollback/',
+    note: 'Whakaata Māori’s Te Ao Māori News report consulted for statements by Te Kāhui Whakarehunga, Rangitāne o Wairarapa representative Mihirangi Hollings, Te Rūnanganui o Te Āti Awa chair Kura Moeahu, and Te Pātaka o Rongokako chief executive Ray Hall. Their view that the proposal weakens Māori participation and Treaty relationships is attributed to these named speakers and groups, not generalized to all iwi, Māori or councils. The article reported on a proposal before enactment; the enacted law and its exceptions are checked separately against official records.',
+    accessDate: '2026-09-26', creators: ['Māni Dunlop'], institution: 'Whakaata Māori / Te Ao Māori News',
+    publicationDate: '2026-06-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Māori public broadcaster news report with statements from iwi and Māori representatives', identifiers: { articleDate: '2026-06-09', subject: 'non-elected local authority committee voting rights' },
+    description: 'Contemporaneous reporting preserves a specific iwi collective’s and named Māori leaders’ critique of the proposed voting restriction and their stated understanding of participation and Treaty-based relationships. It is a situated response, not a community-wide consensus or legal adjudication.'
+  },
+  {
     id: 'russiaConstitution1993Official',
     label: 'Constitution of the Russian Federation — adopted 12 December 1993, official English text',
     url: 'https://www.constitution.ru/en/10003000-01.htm',
