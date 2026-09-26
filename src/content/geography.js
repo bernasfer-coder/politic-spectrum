@@ -2983,13 +2983,25 @@ saoTomeElection2026.limitation += ' The CEN portal’s lookup instructions and l
 saoTomeElection2026.locator += ' National Election Commission voter-information portal (consulted 25 September 2026): registration/polling-place lookup instructions, locality listings and 27 September legislative, local and regional election calendar.';
 
 const gambiaElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'gambia-2026-presidential-election-pre-election-snapshot');
-const gambiaElectionLabel2026 = GEOGRAPHY_LABELS.find(({ id }) => id === 'gambian-2026-presidential-election-pre-election-process');
+gambiaElection2026.reviewedAt = '2026-09-26';
+gambiaElection2026.periodLabel = 'As of 26 September 2026 · scheduled presidential election and pre-election administration';
 gambiaElection2026.sourceIds.push('gambiaForoyaaIecRoadmap2026');
-gambiaElectionLabel2026.sourceIds.push('gambiaForoyaaIecRoadmap2026');
-gambiaElection2026.evidenceKind += '; Foroyaa’s full report of the IEC chair’s 10 September stakeholder briefing';
-gambiaElection2026.claim += ' Foroyaa’s 11 September report independently attributes to IEC Chairman Joseph Colley’s 10 September stakeholder briefing the 3–14 November nomination period and a campaign beginning 16 November; it also reports that the statutory Gazette election notice had been issued and was available for purchase. The report does not reproduce that notice, which was not retrieved. It therefore corroborates what the IEC chair reportedly told stakeholders, but does not establish the Gazette’s exact nomination or campaign provisions or resolve the conflict with the calendar and undated event listings.';
-gambiaElection2026.limitation += ' Foroyaa’s account is reporting about the IEC chair’s stakeholder remarks and the existence/content of a Gazette notice, not the notice itself. The actual Gazette remained unavailable for direct comparison; the competing official calendar and undated event-page schedules therefore remain unresolved, and no legally controlling timeline is asserted.';
-gambiaElection2026.locator += ' Yankuba Jallow, Foroyaa (11 September 2026), full article, reporting IEC Chairman Joseph Colley’s 10 September stakeholder briefing, nomination and campaign dates, reported Gazette publication/availability, and stated election-day hours; the Gazette itself was not retrieved.';
+gambiaElection2026.evidenceKind += '; Foroyaa’s full report of the IEC chair’s 10 September stakeholder briefing and the Gazette notice';
+gambiaElection2026.claim = gambiaElection2026.claim.replace(
+  'Gambia Daily’s 14 September report of an IEC stakeholder briefing gives yet another schedule: nominations 3–14 November and campaigning 16 November–3 December. The report is not itself an amended IEC notice. These three records agree on the planned 5 December poll but do not establish which nomination/campaign timetable governs; their discrepancy remains unresolved.',
+  'Foroyaa’s 11 September report independently attributes to the IEC chair’s 10 September stakeholder briefing nominations on 3–14 November and campaigning beginning 16 November; Gambia Daily’s 14 September report gives the same schedule. Foroyaa also reports that the 2 September Gazette notice states polling would run nationwide from 8 a.m. to 5 p.m. on 5 December and names returning officers and collation arrangements, but it does not reproduce that notice, which was not retrieved. These reports corroborate what the chair reportedly told stakeholders, not which schedule was legally promulgated. All schedule versions agree on the planned 5 December poll but do not establish which nomination/campaign timetable governs; the official calendar and undated live listings remain unreconciled with the reported briefing.'
+).replace(
+  'The October–December activities lay in the future at this review date, so no candidate list, campaign characterization, election result, observer conclusion or turnout claim is included.',
+  'The nomination and campaign periods, polling and result remained in the future at this review date, so no candidate list, campaign characterization, election result, observer conclusion or turnout claim is included. The date announced for nomination forms to become available (21 September) has passed, but no direct IEC record confirming their distribution was located.'
+);
+gambiaElection2026.limitation = gambiaElection2026.limitation.replace('As of 25 September 2026,', 'As of 26 September 2026,').replace(
+  'no dated authoritative explanation of how the versions relate was located; this case does not resolve which schedule supersedes another.',
+  'no dated authoritative explanation of how the versions relate was located; the actual Gazette remained unavailable for direct comparison, so this case does not resolve which schedule supersedes another.'
+).replace(
+  'The press report is an account of officials’ remarks, not an independent observer assessment.',
+  'Foroyaa and Gambia Daily independently report the IEC chair’s briefing dates, but both remain press accounts rather than the Gazette itself or an independent observer assessment. The planned 21 September date for forms to become available has passed without a directly located IEC distribution record.'
+);
+gambiaElection2026.locator += ' Yankuba Jallow, Foroyaa (11 September 2026), full article, reporting IEC Chairman Joseph Colley’s 10 September stakeholder briefing, nomination/campaign dates, the reported Gazette publication and availability, polling hours and returning/collation officers; the Gazette itself was not retrieved.';
 
 GEOGRAPHY_PLACES.push({
   id: 'latvia-15th-saeima-election-2026',

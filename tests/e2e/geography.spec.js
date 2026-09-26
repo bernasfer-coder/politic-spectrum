@@ -260,7 +260,7 @@ test('Gambia 2026 election remains a pre-election snapshot with the timetable co
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('5 December 2026');
-  await expect(card).toContainText('three records agree on the planned 5 December poll');
+  await expect(card).toContainText('All schedule versions agree on the planned 5 December poll');
   await expect(card).toContainText('30 October–5 November');
   await expect(card).toContainText('9 November–2 December');
   await expect(card).toContainText('3–14 November');

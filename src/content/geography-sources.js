@@ -11023,7 +11023,7 @@ sources.push(
     label: 'Independent Electoral Commission of The Gambia — Electoral Calendar 2026–2027',
     url: 'https://iec.gm/electoral-calendar-2026-2027/',
     note: 'The IEC’s dated calendar schedules the presidential poll for 5 December 2026 and lists the statutory notice, voter-registration, revising-court and nomination/campaign windows. It is a plan, not evidence that future steps occurred. Its nomination/campaign windows differ both from the IEC’s currently listed event pages and from a later September briefing reported by Gambia Daily. No calendar table is reproduced.',
-    accessDate: '2026-09-25', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    accessDate: '2026-09-26', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
     publicationDate: '2025-10-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
     sourceType: 'official electoral calendar / election-administration record', identifiers: { electionDate: '2026-12-05', calendarCycle: '2026–2027', publicationDate: '2025-10-09' },
     description: 'Official schedule for supplementary registration and the 2026–2027 electoral cycle, including the presidential election date and statutory milestones. Future dates are planned events, not completed outcomes.'
@@ -11033,7 +11033,7 @@ sources.push(
     label: 'Independent Electoral Commission of The Gambia — Presidential Nomination event listing (2026)',
     url: 'https://iec.gm/event/presidential-nomination/',
     note: 'The IEC event page currently lists presidential nominations for 30 October–5 November 2026, with scrutiny on 6 November. The page does not display a publication or revision date, and does not explain its relationship to the IEC’s dated 2026–2027 calendar or a September briefing reported by Gambia Daily. It is evidence of what the official page displayed on access, not proof of a formally promulgated amendment or which schedule supersedes another. No page text or event media is reproduced.',
-    accessDate: '2026-09-25', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    accessDate: '2026-09-26', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
     publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
     sourceType: 'official electoral-commission event listing', identifiers: { eventDateRange: '2026-10-30/2026-11-05', scrutinyDate: '2026-11-06', pageRevisionDate: 'not displayed' },
     description: 'Current official page listing a presidential-nomination window and scrutiny date. Its publication/version history is not displayed; it is kept distinct from the dated electoral calendar and reported stakeholder briefing.'
@@ -11043,7 +11043,7 @@ sources.push(
     label: 'Independent Electoral Commission of The Gambia — Campaign Period event listing (2026)',
     url: 'https://iec.gm/event/campaign-period/',
     note: 'The IEC event page currently lists the campaign period as 9 November–2 December 2026. The page does not display a publication or revision date, and does not explain its relationship to the IEC’s dated 2026–2027 calendar or a September briefing reported by Gambia Daily. It is evidence of what the official page displayed on access, not proof of a formally promulgated amendment or which schedule supersedes another. No page text or event media is reproduced.',
-    accessDate: '2026-09-25', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    accessDate: '2026-09-26', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
     publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
     sourceType: 'official electoral-commission event listing', identifiers: { eventDateRange: '2026-11-09/2026-12-02', pageRevisionDate: 'not displayed' },
     description: 'Current official page listing a presidential campaign period. Its publication/version history is not displayed; it is kept distinct from the dated electoral calendar and reported stakeholder briefing.'
@@ -11301,8 +11301,8 @@ sources.push({
   id: 'gambiaForoyaaIecRoadmap2026',
   label: 'Yankuba Jallow — “IEC Sets Presidential Nomination Dates, Other Key Election Activities” (Foroyaa, 11 September 2026)',
   url: 'https://foroyaa.net/iec-sets-presidential-nomination-dates-other-key-election-activities/',
-  note: 'Full article consulted on 25 September 2026. It reports IEC Chairman Joseph Colley’s 10 September stakeholder briefing, including nominations on 3–14 November and campaigning from 16 November, and says the statutory Gazette notice had been published and could be purchased from the Government Printing Corporation. The Gazette itself was not retrieved, and the article does not reproduce it; schedule details are attributed reporting of an official briefing, not direct inspection of the legally promulgated notice. No article wording is reproduced.',
-  accessDate: '2026-09-25',
+  note: 'Full article consulted on 26 September 2026. It reports IEC Chairman Joseph Colley’s 10 September stakeholder briefing, including nominations on 3–14 November and campaigning from 16 November, and says the statutory Gazette notice had been published and could be purchased from the Government Printing Corporation. It reports that the notice gives the polling hours/date and names returning officers and collation centres, but does not reproduce it; the Gazette itself was not retrieved, and schedule details are attributed reporting, not direct inspection of the legally promulgated notice. No article wording is reproduced.',
+  accessDate: '2026-09-26',
   creators: ['Yankuba Jallow'],
   institution: 'Foroyaa Newspaper',
   publicationDate: '2026-09-11',

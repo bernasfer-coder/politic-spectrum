@@ -159,7 +159,8 @@ describe('geographic atlas', () => {
     expect(cards()).toHaveLength(1);
     expect(cards()[0]).toHaveTextContent('National Builders Party, Gambia Labour Party and National Democratic Party');
     expect(cards()[0]).toHaveTextContent('do not say those parties will field presidential candidates');
-    expect(cards()[0]).toHaveTextContent('three records agree on the planned 5 December poll');
+    expect(cards()[0]).toHaveTextContent('All schedule versions agree on the planned 5 December poll');
+    expect(cards()[0]).toHaveTextContent('the actual Gazette remained unavailable for direct comparison');
     expect(cards()[0]).toHaveTextContent('30 October–5 November');
     expect(cards()[0]).toHaveTextContent('9 November–2 December');
     expect(cards()[0]).toHaveTextContent('3–14 November');

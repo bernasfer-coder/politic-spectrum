@@ -413,14 +413,16 @@ const gambiaElection = GEOGRAPHY_CASES.find(({ id }) => id === 'gambia-2026-pres
 assert.equal(gambiaElection?.datePrecision, 'snapshot');
 assert.equal(gambiaElection?.relationship, 'implemented');
 assert.ok(gambiaElection?.claim.includes('5 December 2026'));
-assert.ok(gambiaElection?.claim.includes('three records agree on the planned 5 December poll'));
+assert.ok(gambiaElection?.claim.includes('All schedule versions agree on the planned 5 December poll'));
 assert.ok(gambiaElection?.claim.includes('30 October–5 November'));
 assert.ok(gambiaElection?.claim.includes('9 November–2 December'));
 assert.ok(gambiaElection?.claim.includes('3–14 November'));
+assert.ok(gambiaElection?.claim.includes('Foroyaa’s 11 September report independently attributes'));
 assert.ok(gambiaElection?.claim.includes('National Builders Party, Gambia Labour Party and National Democratic Party'));
 assert.ok(gambiaElection?.limitation.includes('not candidacy records'));
 assert.ok(gambiaElection?.limitation.includes('had not taken place'));
 assert.ok(gambiaElection?.limitation.includes('currently displayed but undated IEC nomination/campaign event pages'));
+assert.ok(gambiaElection?.limitation.includes('actual Gazette remained unavailable for direct comparison'));
 assert.ok(gambiaElection?.sourceIds.includes('gambiaIecElectoralCalendar2026-2027'));
 assert.ok(gambiaElection?.sourceIds.includes('gambiaIecPresidentialNominationEvent2026'));
 assert.ok(gambiaElection?.sourceIds.includes('gambiaIecCampaignEvent2026'));
@@ -428,8 +430,6 @@ assert.ok(gambiaElection?.sourceIds.includes('gambiaIecNationalBuildersRegistrat
 assert.ok(gambiaElection?.sourceIds.includes('gambiaIecLabourPartyRegistration2026'));
 assert.ok(gambiaElection?.sourceIds.includes('gambiaIecNationalDemocraticRegistration2026'));
 assert.ok(gambiaElection?.sourceIds.includes('gambiaForoyaaIecRoadmap2026'));
-assert.ok(gambiaElection?.claim.includes('Foroyaa’s 11 September report independently attributes'));
-assert.ok(gambiaElection?.limitation.includes('actual Gazette remained unavailable for direct comparison'));
 assert.ok(gambiaElection?.sourceIds.includes('hughesPerfectPoliticalHistoryGambia2006'));
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'gambia-presidential-election-2026')?.countryIds[0], 'gambia');
 assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === gambiaElection?.labelId)));
