@@ -10627,6 +10627,24 @@ export const BIBLIOGRAPHY_METADATA = {
     publicationDate: '2022-08-17', publisher: 'DCAF Tunisia Legal Database / Journal officiel de la République tunisienne', identifiers: {}, confidence: 'high', languages: ['French; Arabic original'],
     description: 'Primary legal witness for the 2022 Constitution, which formally narrates the 2010–2011 revolution and 25 July 2021 “correction,” replaces the 2014 institutional settlement and concentrates important executive powers in the presidency while retaining rights and elected assemblies. It establishes formal design, not public consent or implementation.',
   },
+  tunisiaIsiePresidentialElection2024: {
+    accessDate: '2026-09-26', creators: ['Instance Supérieure Indépendante pour les Élections (ISIE)'], institution: 'Independent High Authority for Elections of Tunisia',
+    sourceType: 'official election result and electoral data page', evidenceRole: 'primary', discipline: 'Tunisian electoral and constitutional history',
+    publicationDate: '2024-10-11', publisher: 'Independent High Authority for Elections of Tunisia', identifiers: { electionDate: '2024-10-06', finalDecision: 'ISIE Decision No. 552, 2024-10-11' }, confidence: 'high', languages: ['French data page; Arabic final decision'],
+    description: 'ISIE records the 6 October presidential vote, final result, registered electorate, participation and ballots. Its official count supports result claims only; it is not an independent assessment of election conditions or public consent.',
+  },
+  tunisiaAfricanUnionPreliminaryObservation2024: {
+    accessDate: '2026-09-26', creators: ['African Union Election Observation Mission'], institution: 'African Union Commission / Political Affairs, Peace and Security Department',
+    sourceType: 'preliminary election-observation statement', evidenceRole: 'contextual', discipline: 'Tunisian electoral and constitutional history',
+    publicationDate: '2024-10-09', publisher: 'African Union', identifiers: { electionDate: '2024-10-06', observers: '40 from 21 countries', coverage: '15 governorates', observationPeriod: '2024-09-29 to 2024-10-10' }, confidence: 'high', languages: ['English'],
+    description: 'The AU mission records its methodology, observations of election-day procedures and preliminary contextual findings. It commends peaceful polling and ISIE organization while noting low civic participation; because its own statement is preliminary and method-limited, it is not treated as a complete election-integrity or population-attitudes assessment.',
+  },
+  tunisiaInternationalIdeaElection2024: {
+    accessDate: '2026-09-26', creators: ['International Institute for Democracy and Electoral Assistance'], institution: 'International IDEA',
+    sourceType: 'institutional democracy-monitoring event report', evidenceRole: 'secondary', discipline: 'Tunisian electoral and constitutional history',
+    publicationDate: '2024-10', publisher: 'International IDEA', identifiers: { event: '2024-10-06 presidential election' }, confidence: 'high', languages: ['English'],
+    description: 'International IDEA summarizes the official result and reports disputes over candidate eligibility, the electoral legal framework, observer accreditation and opposition boycott, citing ISIE, the African Union and other reporting. These concerns are presented as attributed institutional reporting, not as an independently adjudicated finding.',
+  },
   perkinsHistoryModernTunisia2014: {
     accessDate: '2026-09-20', creators: ['Kenneth J. Perkins'], institution: 'Cambridge University Press',
     sourceType: 'book-length Tunisian national and political history', evidenceRole: 'secondary', discipline: 'Tunisian constitutional and political history',

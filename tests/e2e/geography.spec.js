@@ -114,6 +114,19 @@ test('Guyana case distinguishes 2025 declared results, observer assessments and 
   await expect(card).toContainText('not a current-country score');
 });
 
+test('Tunisia case distinguishes 2024 official results, preliminary observation and reported electoral disputes', async ({ page }) => {
+  await page.goto('/#geography?case=tunisian-revolutionary-constitutional-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('90.69%');
+  await expect(card).toContainText('28.79% turnout');
+  await expect(card).toContainText('rather than an independently adjudicated finding here');
+  await expect(card).toContainText('explicitly disclaimed an overall or final assessment');
+  await expect(card).toContainText('no event-specific book-level account of the 2024 election');
+  await expect(card).toContainText('no current status beyond this 2024 event endpoint');
+});
+
 test('Myanmar 2026 case distinguishes official election claims, UN reporting and the earlier transition record', async ({ page }) => {
   await page.goto('/#geography?case=myanmar-post-2021-spring-revolution-and-competing-governance');
   const card = page.locator('.geo-card');

@@ -46,6 +46,20 @@ for (const sourceId of ['guyanaCaricomElectionObservation2025', 'guyanaEuEomFina
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Guyana rights/provenance review missing: ${sourceId}`);
 }
 assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === guyanaCase.labelId)?.aliases.includes('Guyana political history 1966–2026'));
+const tunisiaCase = GEOGRAPHY_CASES.find(({ id }) => id === 'tunisian-revolutionary-constitutional-transition');
+assert.equal(tunisiaCase.endYear, 2024);
+assert.equal(tunisiaCase.reviewedAt, '2026-09-26');
+assert.ok(tunisiaCase.claim.includes('90.69%'));
+assert.ok(tunisiaCase.claim.includes('28.79% turnout'));
+assert.ok(tunisiaCase.claim.includes('preliminary statement'));
+assert.ok(tunisiaCase.claim.includes('six axes'));
+assert.ok(tunisiaCase.limitation.includes('no event-specific book-level account of the 2024 election'));
+for (const sourceId of ['tunisiaIsiePresidentialElection2024', 'tunisiaAfricanUnionPreliminaryObservation2024', 'tunisiaInternationalIdeaElection2024']) {
+  assert.ok(tunisiaCase.sourceIds.includes(sourceId), `Tunisia source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Tunisia bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Tunisia rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === tunisiaCase.labelId)?.aliases.includes('Tunisia presidential election 2024'));
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
