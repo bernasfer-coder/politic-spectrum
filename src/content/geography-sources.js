@@ -9597,6 +9597,62 @@ sources.push(
     accessDate: '2026-09-26', creators: ['Sharath Srinivasan'], institution: 'Oxford University Press', publicationDate: '2021-08-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
     sourceType: 'book-length scholarly study of peace-making, intervention and political conflict', identifiers: { doi: '10.1093/oso/9780197602720.001.0001', printIsbn: '9780197602720', onlineIsbn: '9780197610879' },
     description: 'Independent book-length analysis of the 2005 peace process, war in Darfur, the Nuba Mountains and Blue Nile, external intervention and Sudan’s 2019 civilian revolution. It is used as a historically bounded interpretation of peace-making and civil politics, not as evidence for the 2023–2026 war’s events.'
+  },
+  {
+    id: 'bangladeshEcpElection2026', label: 'Bangladesh Election Commission — Thirteenth National Parliament election and referendum results portal (2026)', url: 'https://ecs.gov.bd/en/page/gazette-for-13th-national-parliament-election',
+    note: 'Official Election Commission page consulted for its 2026 parliamentary-election and referendum result links and gazette records. The portal establishes the Commission’s official record and does not alone establish electoral fairness, equal participation, freedom from coercion or public consent; no result tables are republished.',
+    accessDate: '2026-09-26', creators: ['Bangladesh Election Commission'], institution: 'Bangladesh Election Commission', publicationDate: '2026-02-12', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Bengali'],
+    sourceType: 'official election and referendum results / primary institutional record', identifiers: { electionDate: '2026-02-12', parliament: '13th National Parliament' },
+    description: 'Official Election Commission results and gazette portal for the 12 February 2026 parliamentary election and concurrent referendum. It documents the Commission’s formal record; court-ordered delayed constituency results, corrected referendum figures, observer findings and constitutional implementation require separate sources.'
+  },
+  {
+    id: 'bangladeshReferendumGazette2026', label: 'Bangladesh Government Press / Election Commission — Gazette of the 12 February 2026 July National Charter referendum result', url: 'https://www.dpp.gov.bd/bgpress/index.php/document/get_extraordinary/60658',
+    note: 'Bangladesh Government Press extraordinary-gazette record consulted as the original official referendum-result notification. A later amended notification corrected vote totals; this first gazette is retained as a record of the initial publication, not as the final numerical result. No text, table, scan or PDF is republished.',
+    accessDate: '2026-09-26', creators: ['Bangladesh Election Commission Secretariat', 'Bangladesh Government Press'], institution: 'Bangladesh Government Press', publicationDate: '2026-02-13', evidenceRole: 'primary', confidence: 'high', languages: ['Bengali'],
+    sourceType: 'extraordinary government gazette / referendum-result primary record', identifiers: { gazetteDocument: '60658', referendumDate: '2026-02-12' },
+    description: 'Official initial gazette record for the referendum on the July National Charter (Constitutional Reform) Implementation Order, 2025. Its result totals were subsequently corrected by the Election Commission; the original notification documents the publication sequence rather than the final figures.'
+  },
+  {
+    id: 'bangladeshReferendumCorrection2026', label: 'Bangladesh Sangbad Sangstha — Election Commission issues amended gazette on referendum results (26 February 2026)', url: 'https://www.bssnews.net/news/364239',
+    note: 'BSS report consulted for the Election Commission’s corrigendum and the fact that the officially announced referendum totals were revised. BSS reproduces the corrected and previous figures but the corrigendum itself was not separately located in the Government Press archive; figures remain attributed to this report and must not be merged with provisional totals announced on 13 February. No article wording is republished.',
+    accessDate: '2026-09-26', creators: ['Bangladesh Sangbad Sangstha'], institution: 'Bangladesh Sangbad Sangstha', publicationDate: '2026-02-26', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'state news-agency report on an official Election Commission corrigendum', identifiers: { eventDate: '2026-02-25', reportDate: '2026-02-26' },
+    description: 'Reports the Election Commission’s amended gazette correcting Yes, No, rejected-ballot and total-vote figures from the referendum. It supports a dated account of the correction, not an independent audit of the count or a claim about voter motivation.'
+  },
+  {
+    id: 'bangladeshJulyCharterImplementationOrder2025', label: 'People’s Republic of Bangladesh — Implementation Order of the July National Charter (Constitutional Reform), 2025 (unofficial English translation)', url: 'https://constitutionnet.org/sites/default/files/2025-11/Bangladesh%20Implementation%20Order%20of%20the%20July%20National%20Charter%202025%20%28English%20translation%29.pdf',
+    note: 'Gazetted Order dated 13 November 2025 in an unofficial English translation commissioned by International IDEA. The translation records the proposed referendum, reform-council process and publication of later constitutional amendments; Bengali is authoritative. It is evidence of the instrument’s design, not proof that proposed reforms were completed or legally uncontested. No text or translation is republished.',
+    accessDate: '2026-09-26', creators: ['President of the People’s Republic of Bangladesh', 'International IDEA (translation commissioner)'], institution: 'Government of Bangladesh / International IDEA', publicationDate: '2025-11-13', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'gazetted constitutional-reform implementation order / unofficial English translation', identifiers: { order: 'No. 01 of 2025', gazetteDate: '2025-11-13', translationStatus: 'unofficial; commissioned by International IDEA' },
+    description: 'Unofficial English translation of the gazetted order that prescribed the referendum, a proposed Constitutional Reform Council and subsequent constitutional amendments. It distinguishes the vote from the council’s later reform and publication steps; it does not resolve constitutional validity or establish that proposals became operative amendments.'
+  },
+  {
+    id: 'bangladeshIpUParliamentElection2026', label: 'Inter-Parliamentary Union — Bangladesh parliamentary election results and institutional data (2026)', url: 'https://data.ipu.org/parliament/BD/BD-LC01/election/BD-LC01-E20260212/',
+    note: 'IPU Parline country and election record consulted as an institutional secondary compilation, including the delayed Chattogram results, subsequent by-elections, reserved seats, party standings and dispute over the proposed Constitutional Reform Council. Its data are kept distinct from the Election Commission’s primary records and do not represent an independent observation mission or adjudication of constitutionality.',
+    accessDate: '2026-09-26', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'inter-parliamentary institution election and parliamentary-data compilation', identifiers: { electionDate: '2026-02-12', legislature: 'Bangladesh 13th Parliament' },
+    description: 'Institutional account of the election, parliamentary composition, formation of government, July Charter referendum and implementation-council disagreement. It is a useful structured secondary source, not an election-observation report or legal ruling.'
+  },
+  {
+    id: 'bangladeshNewGovernmentGazette2026', label: 'Bangladesh Sangbad Sangstha — Interim government dissolved with formation of new government (17 February 2026)', url: 'https://www.bssnews.net/at-a-glance/361904',
+    note: 'BSS report consulted for the Cabinet Division gazette notification under Article 56(3) of the Constitution appointing Tarique Rahman Prime Minister and dissolving the interim Council of Advisers when the new government formed. The official notification is reported rather than independently linked here; this source documents formal succession, not the quality or representation of the new administration. No article wording is republished.',
+    accessDate: '2026-09-26', creators: ['Bangladesh Sangbad Sangstha', 'Cabinet Division'], institution: 'Bangladesh Sangbad Sangstha / Cabinet Division', publicationDate: '2026-02-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'state news-agency report quoting a Cabinet Division gazette notification', identifiers: { eventDate: '2026-02-17', constitutionalProvision: 'Article 56(3)' },
+    description: 'Reports the official notification ending the Yunus interim administration and appointing Tarique Rahman Prime Minister after the parliamentary election. It anchors the formal transition date, not subsequent policy implementation or political legitimacy.'
+  },
+  {
+    id: 'bangladeshHighCourtCharterReview2026', label: 'Bangladesh Sangbad Sangstha — High Court questions legality of the July National Charter implementation framework (3 March 2026)', url: 'https://b.bssnews.net/law-and-court/365444',
+    note: 'BSS account consulted for the High Court Division’s issuance of rules in two writ proceedings questioning the Implementation Order, referendum ordinance and Council oath. A rule is a notice requiring a response, not a final judgment invalidating the measures; the primary court orders and later case docket were not independently collated. No article wording is republished.',
+    accessDate: '2026-09-26', creators: ['Bangladesh Sangbad Sangstha'], institution: 'Bangladesh Sangbad Sangstha', publicationDate: '2026-03-03', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'state news-agency report of constitutional judicial-review proceedings', identifiers: { eventDate: '2026-03-03', court: 'High Court Division, Supreme Court of Bangladesh' },
+    description: 'Reports the issuance of rules in two writ cases challenging the legality of the 2025 Implementation Order, referendum ordinance and Council oath. It establishes that review was pending at the reported date, not the merits or final outcome.'
+  },
+  {
+    id: 'bangladeshTibPreElectionObservations2026', label: 'Transparency International Bangladesh — Executive Summary on Pre-Election and Referendum Observations (2026)', url: 'https://www.ti-bangladesh.org/images/2026/report/pre-election-referendum/Executive-Summary-on-Pre-Election-and-Referendum-Observations-TIB-En.pdf?v=1.1',
+    note: 'TIB’s English executive summary consulted for its preliminary observations from an explicitly ongoing pre-election process-tracking study. It reports concerns and allegations about administration, observer registration, campaigning, safety and the suspension of Awami League registration; it is an attributed civil-society monitoring and advocacy document, not a final election audit, court finding or complete account of voters. No report text, figure or table is republished.',
+    accessDate: '2026-09-26', creators: ['Transparency International Bangladesh'], institution: 'Transparency International Bangladesh', publicationDate: '2026-02-08', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'preliminary civil-society election and referendum monitoring report', identifiers: { scope: 'pre-election observations; full study pending at publication', edition: 'English executive summary' },
+    description: 'TIB’s preliminary process observations document reported concerns about the Election Commission, electoral administration and the campaign, including the exclusion of the Awami League after suspension of its registration. The report identifies itself as interim; it cannot alone establish nationwide practice, vote integrity or the post-election situation.'
   }
 );
 

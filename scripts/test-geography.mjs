@@ -53,6 +53,15 @@ assert.equal(filterGeographyCases({ country: 'indonesia' }).find(({ id }) => id 
 assert.equal(filterGeographyCases({ country: 'nigeria' })[0].id, 'nigerian-fourth-republic');
 assert.equal(filterGeographyCases({ country: 'pakistan' })[0].id, 'pakistani-constitutional-civilian-transition');
 assert.equal(filterGeographyCases({ country: 'bangladesh' })[0].id, 'bangladeshi-constitutional-parliamentary-order');
+const bangladesh2026 = filterGeographyCases({ country: 'bangladesh' }).find(({ id }) => id === 'bangladeshi-post-2014-dominant-party-and-july-uprising');
+assert.equal(bangladesh2026.endYear, 2026);
+assert.equal(bangladesh2026.reviewedAt, '2026-09-26');
+assert.ok(bangladesh2026.claim.includes('A rule initiated review; it was not a final merits judgment'));
+assert.ok(bangladesh2026.claim.includes('corrected its published totals'));
+assert.ok(bangladesh2026.limitation.includes('do not cover these current events'));
+for (const sourceId of ['bangladeshEcpElection2026', 'bangladeshReferendumGazette2026', 'bangladeshReferendumCorrection2026', 'bangladeshJulyCharterImplementationOrder2025', 'bangladeshIpUParliamentElection2026', 'bangladeshNewGovernmentGazette2026', 'bangladeshHighCourtCharterReview2026', 'bangladeshTibPreElectionObservations2026']) {
+  assert.ok(bangladesh2026.sourceIds.includes(sourceId), `Bangladesh 2026 source missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'sri-lanka' })[0].id, 'sri-lankan-constitutional-presidential-order');
 assert.equal(filterGeographyCases({ country: 'nepal' })[0].id, 'nepali-constitutional-republican-transition');
 assert.equal(filterGeographyCases({ country: 'nepal' }).find(({ id }) => id === 'nepal-federal-constitutional-and-electoral-transition')?.id, 'nepal-federal-constitutional-and-electoral-transition');

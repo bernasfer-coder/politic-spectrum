@@ -63,6 +63,17 @@ test('Uganda 2026 Supreme Court election-petition withdrawal is not presented as
   await expect(card).toContainText('no final AU–COMESA–IGAD report was located in this review');
 });
 
+test('Bangladesh 2026 referendum correction and Charter litigation remain distinct from completed constitutional reform', async ({ page }) => {
+  await page.goto('/#geography?case=bangladeshi-post-2014-dominant-party-and-july-uprising');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('subsequently corrected its published totals');
+  await expect(card).toContainText('A rule initiated review; it was not a final merits judgment');
+  await expect(card).toContainText('these are proposals and contested processes, not established outcomes');
+  await expect(card).toContainText('do not cover these current events');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
