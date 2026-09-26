@@ -18,6 +18,18 @@ assert.ok(argentinaMileiCase.limitation.includes('full book;'));
 assert.ok(argentinaMileiCase.sourceIds.includes('argentinaLaborModernizationLaw278022026Official'));
 assert.ok(argentinaMileiCase.sourceIds.includes('argentinaSaguierWorldAccordingToMilei2026'));
 assert.ok(GEOGRAPHY_CASES.some(({ id, endYear }) => id === 'argentine-postauthoritarian-democratic-and-crisis-order' && endYear === 2023), 'the distinct Argentina 1983–2023 case remains bounded and unchanged');
+const haitiCase = GEOGRAPHY_CASES.find(({ id }) => id === 'haitian-post-duvalier-constitutional-and-crisis-order');
+assert.equal(haitiCase.endYear, 2026);
+assert.equal(haitiCase.reviewedAt, '2026-09-26');
+assert.ok(haitiCase.claim.includes('conditional on security and financing'));
+assert.ok(haitiCase.claim.includes('not audited final totals'));
+assert.ok(haitiCase.limitation.includes('no election, referendum'));
+assert.ok(haitiCase.limitation.includes('remain research gaps'));
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === haitiCase.labelId)?.aliases.includes('Haiti political history 1986–2026'));
+for (const sourceId of ['haitiCepCalendar2026', 'haitiCepStatusSeptember2026', 'haitiUnSgReportTransitionApril2026', 'haitiBinuhOhchrQ22026', 'haitiTremariaPeaceOperations2026', 'haitiJohnstonAidState2024']) {
+  assert.ok(haitiCase.sourceIds.includes(sourceId), `Haiti source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Haiti rights/provenance review missing: ${sourceId}`);
+}
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);

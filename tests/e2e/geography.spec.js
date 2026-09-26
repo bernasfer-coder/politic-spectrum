@@ -140,6 +140,19 @@ test('Argentina 2026 update separates the midterm record, enacted law, delayed p
   await expect(card).toContainText('the separate 1983–2023 post-authoritarian case remains unchanged');
 });
 
+test('Haiti 2026 update distinguishes transition reporting, interim CEP figures and conditional future election dates', async ({ page }) => {
+  await page.goto('/#geography?case=haitian-post-duvalier-constitutional-and-crisis-order');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('the TPC mandate ended on 7 February');
+  await expect(card).toContainText('conditional on security and financing');
+  await expect(card).toContainText('628,755 registered voters');
+  await expect(card).toContainText('not audited final totals');
+  await expect(card).toContainText('no election, referendum, completed voter roll');
+  await expect(card).toContainText('remain research gaps');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));

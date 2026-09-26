@@ -9837,6 +9837,84 @@ const sources = [
     sourceType: 'book-length study of digital politics and civic mobilization in Kenya', identifiers: { isbn: '9781786994318', pages: '304' },
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
+  {
+    id: 'haitiUnSgReportTransitionApril2026', label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/325 (14 April 2026)', url: 'https://documents.un.org/api/symbol/access?l=en&s=S%2F2026%2F325&t=pdf',
+    note: 'UN Secretary-General report consulted for its dated, attributed account of the transition, national pact and political actors. Summary only; no report wording or figures are republished. The report records institutional claims and attributed criticism, not a finding that the pact represented all Haitians.',
+    accessDate: '2026-09-26', creators: ['United Nations Secretary-General'], institution: 'United Nations', publicationDate: '2026-04-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Secretary-General country and mission report', identifiers: { symbol: 'S/2026/325' }, description: 'Reports that the Transitional Presidential Council mandate ended on 7 February 2026, after which executive authority was transferred to the Council of Ministers led by Prime Minister Alix Didier Fils-Aimé; describes publication of the National Pact and records both signatories and criticism by non-signing political actors. Dated institutional reporting, not proof of consensus or effective control.'
+  },
+  {
+    id: 'haitiUnSgReportTransitionJuly2026', label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/574 (14 July 2026)', url: 'https://documents.un.org/api/symbol/access?l=en&s=S%2F2026%2F574&t=pdf',
+    note: 'UN Secretary-General report consulted for attributed developments during April–July 2026. No report wording, table or graphic is republished; operational descriptions and security claims are attributed to the reporting institution and date.',
+    accessDate: '2026-09-26', creators: ['United Nations Secretary-General'], institution: 'United Nations', publicationDate: '2026-07-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Secretary-General country and mission report', identifiers: { symbol: 'S/2026/574' }, description: 'Documents the revised electoral decree and budget, security constraints, and electoral preparations during April–July 2026. It records uncertainty around the earlier August election target and does not establish that scheduled elections occurred.'
+  },
+  {
+    id: 'haitiUnSgReportTransitionJanuary2026', label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/31 (15 January 2026)', url: 'https://digitallibrary.un.org/record/4099435/files/S_2026_31-EN.pdf',
+    note: 'UN Secretary-General report consulted as a contemporaneous record of the electoral schedule and transition before the later revised calendar. No report wording is republished; it is used to establish what was scheduled at that date, not a fulfilled event.',
+    accessDate: '2026-09-26', creators: ['United Nations Secretary-General'], institution: 'United Nations', publicationDate: '2026-01-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Secretary-General country and mission report', identifiers: { symbol: 'S/2026/31' }, description: 'Records the January 2026 transition and then-current electoral horizon. Its calendar is a dated snapshot superseded by Haiti’s CEP July 2026 publication.'
+  },
+  {
+    id: 'haitiCepCalendar2025', label: 'Haiti Provisional Electoral Council — Electoral calendar 2025 (initial schedule)', url: 'https://cephaiti.ht/calendrier-electoral-2025/',
+    note: 'CEP’s initial calendar consulted to distinguish its superseded 2025 schedule from the CEP’s later July 2026 calendar. No calendar image or text is republished; a published date is a plan conditional on stated security and financing requirements, not an election result.',
+    accessDate: '2026-09-26', creators: ['Conseil Électoral Provisoire'], institution: 'Conseil Électoral Provisoire', publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral calendar', identifiers: { initialFirstRound: '2026-08-30', revisedBy: '2026-07' }, description: 'The initial CEP schedule placed the first round on 30 August 2026. This date was superseded by the CEP calendar published in July 2026; both schedules were contingent on security and financing.'
+  },
+  {
+    id: 'haitiCepCalendar2026', label: 'Haiti Provisional Electoral Council — Official publication of the 2026–2027 electoral calendar (27 July 2026)', url: 'https://cephaiti.ht/publication-officielle-du-calendrier-electoral-2026-2027/',
+    note: 'CEP’s official calendar publication consulted as primary evidence of the announced schedule. No calendar wording or graphic is republished. Scheduled dates are conditional plans, not proof that the security, financing or other prerequisites are met, nor election outcomes.',
+    accessDate: '2026-09-26', creators: ['Conseil Électoral Provisoire'], institution: 'Conseil Électoral Provisoire', publicationDate: '2026-07-27', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral calendar', identifiers: { firstRound: '2026-12-13', secondRoundAndLocal: '2027-02-21', referendum: '2026-12-13' }, description: 'The CEP’s July 2026 calendar replaced the earlier 30 August first-round date with 13 December 2026 for the first round and referendum, and 21 February 2027 for the second round and local elections, subject to stated security and financing conditions.'
+  },
+  {
+    id: 'haitiCepStatusSeptember2026', label: 'Haiti Provisional Electoral Council — State of progress of the electoral process (21 September 2026)', url: 'https://cephaiti.ht/etat-davancement-du-processus-electoral-a-date/',
+    note: 'CEP’s own progress release consulted for its attributed administrative statistics and process update. No figures are treated as independently audited, final registration totals, completed candidacies, nationwide access, or election results; the institution’s denominator and definitions must accompany any use.',
+    accessDate: '2026-09-26', creators: ['Conseil Électoral Provisoire'], institution: 'Conseil Électoral Provisoire', publicationDate: '2026-09-21', evidenceRole: 'primary', confidence: 'medium', languages: ['French'],
+    sourceType: 'primary electoral-administration progress release', identifiers: { dataDate: '2026-09-21', voterRegistrationReported: '628755', operationalCentersReported: '1285' }, description: 'The CEP reports voter-registration, operational-centre and candidate-application figures as of 21 September while registration and filings remained in progress. These are self-reported interim process metrics, not completed or independently verified nationwide totals.'
+  },
+  {
+    id: 'haitiCepCandidateExtensionSeptember2026', label: 'Haiti Provisional Electoral Council — Press note 60: extension of candidate-registration deadline (16 September 2026)', url: 'https://cephaiti.ht/note-de-presse-60-16-septembre-2026/',
+    note: 'CEP press note consulted as a primary institutional announcement. No note wording is reproduced. It establishes an announced administrative extension and consultations, not the completion of candidate registration or an agreed change to the electoral decree.',
+    accessDate: '2026-09-26', creators: ['Conseil Électoral Provisoire'], institution: 'Conseil Électoral Provisoire', publicationDate: '2026-09-16', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral-administration press release', identifiers: { revisedCandidateDeadline: '2026-10-09' }, description: 'The CEP announced an extension of the candidate-registration window through 9 October and consultations with political actors and the government concerning possible modification of the electoral decree.'
+  },
+  {
+    id: 'haitiCepBureauSeptember2026', label: 'Haiti Provisional Electoral Council — Installation of the new bureau (24 September 2026)', url: 'https://cephaiti.ht/installation-du-nouveau-bureau-du-conseil-le-jeudi-24-septembre-2026/',
+    note: 'CEP institutional notice consulted for formal bureau appointments. No notice wording or images are republished; office succession alone is not evidence of neutrality, institutional capacity, public trust or electoral legitimacy.',
+    accessDate: '2026-09-26', creators: ['Conseil Électoral Provisoire'], institution: 'Conseil Électoral Provisoire', publicationDate: '2026-09-24', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral-council institutional notice', identifiers: { chair: 'Peterson Pierre-Louis', date: '2026-09-24' }, description: 'Records installation of a new CEP bureau and named office-holders. This is evidence of formal institutional succession, not a measure of independence or effective electoral administration.'
+  },
+  {
+    id: 'haitiGovernmentNationalPactFebruary2026', label: 'Government of Haiti — National Pact for Stability and the Organization of Elections (February 2026)', url: 'https://communication.gouv.ht/communiques/un-pacte-pour-refonder-la-stabilite-nationale-et-garantir-des-elections-credibles-en-haiti/',
+    note: 'Government communiqué consulted for how the executive publicly framed the National Pact. No communiqué wording is republished; an official endorsement is not evidence of broad social consensus, implementation or acceptance by non-signatories.',
+    accessDate: '2026-09-26', creators: ['Government of the Republic of Haiti'], institution: 'Government of the Republic of Haiti', publicationDate: '2026-02', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary government communiqué', identifiers: { pactPublicationInOfficialGazette: '2026-02-23' }, description: 'Presents the government’s stated aims for the National Pact, including stability, institutions and elections. It is evidence of executive framing only; the UN report documents signatories and attributed objections by groups that did not sign.'
+  },
+  {
+    id: 'haitiBinuhOhchrQ22026', label: 'BINUH and OHCHR — Quarterly Report on the Human Rights Situation in Haiti, April–June 2026 (25 August 2026)', url: 'https://binuh.unmissions.org/sites/default/files/2026-08/Q2%202026%20-%20EN-V3.pdf',
+    note: 'BINUH/OHCHR quarterly report consulted for dated, method-bound human-rights monitoring. No report wording, table or graphic is republished. Its incident counts and displacement estimate are attributed, period-specific measures, not a complete census or a basis for collapsing gang violence, self-defence groups and security-force operations into one actor.',
+    accessDate: '2026-09-26', creators: ['United Nations Integrated Office in Haiti', 'Office of the United Nations High Commissioner for Human Rights'], institution: 'United Nations', publicationDate: '2026-08-25', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'UN human-rights monitoring report', identifiers: { reportingPeriod: '2026-Q2', reportDate: '2026-08-25' }, description: 'Reports 1,408 people killed and 656 injured in the quarter across separately described violence categories and cites approximately 1.47 million internally displaced people as of May. The figures are attributed to UN monitoring and cited displacement data, bounded by source definitions and dates.'
+  },
+  {
+    id: 'haitiTremariaPeaceOperations2026', label: 'Stiven Tremaria — United Nations Peace Operations Revisited: The Case of Haiti (2026)', url: 'https://cup.columbia.edu/book/united-nations-peace-operations-revisited/9783847430742/',
+    note: 'Publisher book record and contents consulted for bibliographic verification and the work’s declared peace-operations focus. The monograph is linked, not reproduced; it is not represented as a comprehensive history of Haiti’s 2024–2026 transition or election preparations.',
+    accessDate: '2026-09-26', creators: ['Stiven Tremaria'], institution: 'Verlag Barbara Budrich', publicationDate: '2026-03-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly study of United Nations peace operations', identifiers: { isbn: '9783847430742' }, description: 'A 2026 book-length study focused on United Nations peace operations and Haiti. It offers a recent institutional and critical lens on international involvement, but not a comprehensive national political history or an account of election outcomes.'
+  },
+  {
+    id: 'haitiJohnstonAidState2024', label: 'Jake Johnston — Aid State: Elite Panic, Disaster Capitalism, and the Battle to Control Haiti (2024)', url: 'https://academic.macmillan.com/academictrade/9781250284679/aidstate/',
+    note: 'Publisher record consulted for the monograph’s metadata, scope and publication details. No book text, quotation, image or table is republished; the study’s post-earthquake aid and political-economy perspective is not extended beyond its documented period as a source for 2026 events.',
+    accessDate: '2026-09-26', creators: ['Jake Johnston'], institution: 'St. Martin’s Press', publicationDate: '2024', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length political-economy and disaster-governance study', identifiers: { isbn: '9781250284679', pages: '384' }, description: 'A book-length study of aid, elite responses and political power in post-earthquake Haiti. It supplies a distinct perspective on international assistance and reconstruction politics, not direct evidence of the 2026 transition or electoral process.'
+  },
+  {
+    id: 'haitiIcgLockedTransition2025', label: 'International Crisis Group — Locked in Transition: Politics and Violence in Haiti (2025)', url: 'https://www.jstor.org/stable/resrep67796',
+    note: 'International Crisis Group report record consulted as policy analysis through its publication period. No report wording is republished; it is supplemental to book-length scholarship and primary institutional records, and is not current evidence for later 2026 events.',
+    accessDate: '2026-09-26', creators: ['International Crisis Group'], institution: 'International Crisis Group', publicationDate: '2025-02-19', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'long-form conflict-analysis report', identifiers: { reportNumber: '107' }, description: 'A 43-page analysis of transition politics and violence published in February 2025. It supplies a detailed but time-bounded policy perspective, not a book-length scholarly monograph or evidence of subsequent developments.'
+  },
 ];
 
 sources.push(
