@@ -9628,6 +9628,106 @@ const sources = [
 
 sources.push(
   {
+    id: 'nepalElectionCommission2026Results',
+    label: 'Election Commission Nepal — House of Representatives election results submitted to the President (19 March 2026)',
+    url: 'https://ebulletin.election.gov.np/2026/03/3043/',
+    note: 'Election Commission official Nepali-language results summary dated 19 March 2026. Used as the primary institutional account of the 5 March election, returned membership, turnout and observer totals. Commission characterizations of the election as free, fair and peaceful are attributed, not independently treated as proof of quality or consent; its Muslim representation percentage differs from the UNDP report’s transcription and is left unresolved.',
+    accessDate: '2026-09-26', creators: ['Election Commission, Nepal'], institution: 'Election Commission, Nepal', publicationDate: '2026-03-19',
+    evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'official election result report / primary institutional record', identifiers: { electionDate: '2026-03-05', houseSeats: 275 },
+    description: 'The Commission reports 165 first-past-the-post and 110 proportional seats, 179 men and 96 women elected, social-group representation shares, voter-roll and vote counts, and domestic and international observers. Those reported data document a dated result, not campaign equality, voter motives, parliamentary performance or uniform representation.'
+  },
+  {
+    id: 'nepalPrimeMinisterOfficeBalendraShah2026',
+    label: 'Office of the Prime Minister and Council of Ministers — Prime Minister Balendra Shah profile (2026)',
+    url: 'https://www.opmcm.gov.np/minister-detail/',
+    note: 'Official Government of Nepal Prime Minister’s Office profile consulted for Shah’s stated assumption of office on 27 March 2026, the RSP’s near-two-thirds majority characterization and declared government priorities. Institutional descriptions of mandate, public demand and intended performance remain government claims, not independent findings or evidence of implemented policy.',
+    accessDate: '2026-09-26', creators: ['Office of the Prime Minister and Council of Ministers, Government of Nepal'], institution: 'Government of Nepal', publicationDate: '2026-03-27',
+    evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Nepali'],
+    sourceType: 'official executive profile / institutional statement', identifiers: { primeMinister: 'Balendra Shah', assumedOffice: '2026-03-27' },
+    description: 'The official profile identifies Balendra Shah as prime minister from 27 March 2026, describes the RSP as holding a near-two-thirds House majority and lists declared priorities. It provides evidence of office and official framing, not policy outcomes or public opinion.'
+  },
+  {
+    id: 'nepalElectionCommission2026ObservationDRCN',
+    label: 'Democracy Resource Center Nepal — House of Representatives Election 2026: Observation Report',
+    url: 'https://www.democracyresource.org/wp-content/uploads/2026/06/DRCN_House-of-Representatives-Election-2026-Observation-Report_English_2026-1.pdf',
+    note: 'Nepali civil-society organization’s nationwide observer report, consulted for election administration, voter registration, inclusion rules, campaign and polling conditions. Its observation areas and recommendations are attributed to DRCN; an observer sample does not represent every constituency or establish voter motives. No report text, tables or images are reproduced.',
+    accessDate: '2026-09-26', creators: ['Democracy Resource Center Nepal'], institution: 'Democracy Resource Center Nepal', publicationDate: '2026-06',
+    evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Nepali'],
+    sourceType: 'domestic election observation report', identifiers: { electionDate: '2026-03-05', observerCoverage: 'nationwide mission' },
+    description: 'DRCN documents legal and administrative arrangements for the snap election, including voter-list updates, an incomplete Election Commission membership, amended proportional-representation categories, and the 165/110 mixed electoral system; its report supplies independent civil-society observation rather than adjudicated findings.'
+  },
+  {
+    id: 'nepalElectionObservationANFREL2026',
+    label: 'Asian Network for Free Elections — Rebuilding Trust, Restoring Credibility: Accountability and Electoral Integrity in Nepal 2026',
+    url: 'https://anfrel.org/rebuilding-trust-restoring-credibility-accountability-and-electoral-integrity-in-nepal-2026/',
+    note: 'ANFREL final international observation-mission report and release, consulted for its declared 20-observer/35-district deployment, peaceful election-day assessment and concerns about campaign-code enforcement, observer access, accessibility, campaign finance and inclusion. Findings are attributed to this mission and its informants, not generalized into an overall certification or population-wide view. No report text is reproduced.',
+    accessDate: '2026-09-26', creators: ['Asian Network for Free Elections'], institution: 'Asian Network for Free Elections (ANFREL)', publicationDate: '2026-05-13',
+    evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international election observation mission report', identifiers: { electionDate: '2026-03-05', observers: 20, districts: 35 },
+    description: 'ANFREL’s final mission report assesses the 2026 House election after the September 2025 upheaval. It reports orderly polling while separately identifying perceived weak enforcement, campaign-finance transparency, uneven observer access, polling-station accessibility and underrepresentation, especially in first-past-the-post candidacies.'
+  },
+  {
+    id: 'nepalUNDPOnlineElectionMonitoring2026',
+    label: 'UNDP Nepal and UN Women — Use of Online Platforms in the Election of the House of Representatives (1 January–12 March 2026)',
+    url: 'https://www.undp.org/sites/g/files/zskgke326/files/2026-05/final-consolidated-report-2026.04.08bb.pdf',
+    note: 'Institutional monitoring report covering 1 January–12 March 2026 and received-result context. The report distinguishes automated analysis from human-coded posts, notes extraction and sample limits, and does not claim to measure all online speech or the electorate. Its official/commission demographic figures are compared with the ECN’s published figures; the discrepancy is preserved, not silently harmonized. No post text, chart or image is reproduced.',
+    accessDate: '2026-09-26', creators: ['United Nations Development Programme Nepal', 'UN Women Nepal'], institution: 'United Nations Development Programme / UN Women', publicationDate: '2026-04-08',
+    evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional election-integrity and online-platform monitoring report', identifiers: { observationPeriod: '2026-01-01/2026-03-12', reportDate: '2026-04-08' },
+    description: 'The report describes UN support to the Election Commission and limited AI-assisted and human review of online posts during the campaign. It contextualizes election-related hate speech, gendered and caste-related abuse and information integrity, while explicitly limiting inference to monitored samples and methods.'
+  },
+  {
+    id: 'nepalNationalHumanRightsCommissionYouthMovement2026',
+    label: 'National Human Rights Commission Nepal — notice transmitting investigation-report recommendations on the Gen Z movement (27 May 2026)',
+    url: 'https://www.nhrcnepal.org/press_release/detail/883',
+    note: 'Official NHRC Nepali-language press note and attached recommendation notice. It confirms the Commission’s committee completed an investigation, the Commission adopted recommendations concerning human-rights violations during 8–9 September 2025, and transmitted them to the Prime Minister and Council of Ministers. This notice does not by itself establish criminal liability, a final judicial finding or government implementation; the report, underlying evidence and Nepali-language legal context require specialist review. No text is republished.',
+    accessDate: '2026-09-26', creators: ['National Human Rights Commission, Nepal'], institution: 'National Human Rights Commission, Nepal', publicationDate: '2026-05-27',
+    evidenceRole: 'primary', confidence: 'high', languages: ['Nepali'],
+    sourceType: 'constitutional human-rights commission press notice / inquiry recommendation', identifiers: { events: '2025-09-08/2025-09-09', meetingDate: '2026-05-26' },
+    description: 'The constitutional human-rights body states it completed an inquiry and sent investigation-based recommendations on the protest-period human-rights violations to the government. Recommendations and investigations are not convictions or final court findings.'
+  },
+  {
+    id: 'nepalISASYouthProtestCommissionAnalysis2026',
+    label: 'Puspa Sharma — Nepal’s Gen-Z Protest and Violence: Divergent Findings and Questions of Legitimacy (2026)',
+    url: 'https://www.isas.nus.edu.sg/papers/nepals-gen-z-protest-and-violence-divergent-findings-and-questions-of-legitimacy/',
+    note: 'National University of Singapore Institute of South Asian Studies research brief, consulted as a named author’s contemporary analysis of the NHRC and government-formed inquiry processes. It is an institutional working paper, not a peer-reviewed monograph, court finding or independent verification of every allegation it summarizes. Claims about individuals remain attributed and are not reproduced as established facts.',
+    accessDate: '2026-09-26', creators: ['Puspa Sharma'], institution: 'Institute of South Asian Studies, National University of Singapore', publicationDate: '2026-06-03',
+    evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional research brief / contemporary political analysis', identifiers: {},
+    description: 'Sharma compares public recommendations from the NHRC and the interim-government inquiry into September 2025, describing divergence, legitimacy questions and an unresolved accountability process. Its interpretations are attributed rather than treated as adjudicated facts.'
+  },
+  {
+    id: 'nepalSupremeCourtHouseRulesInterimOrder2026',
+    label: 'Kathmandu Post — Supreme Court interim order on two House of Representatives rules (16 September 2026)',
+    url: 'https://kathmandupost.com/national/2026/09/16/supreme-court-puts-controversial-parliamentary-rules-on-hold',
+    note: 'Contemporaneous reporting on a five-member Constitutional Bench interim order staying House Rules 140(11) and 259. The underlying writ, complete signed interim order and later docket were not independently retrieved; the report expressly distinguishes prima-facie concerns and temporary suspension from a final ruling. The court’s reported action is attributed to the newspaper; no reported judgment wording is reproduced.',
+    accessDate: '2026-09-26', creators: ['Durga Dulal'], institution: 'The Kathmandu Post', publicationDate: '2026-09-16',
+    evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'contemporaneous legal and parliamentary reporting', identifiers: { reportedOrderDate: '2026-09-16', rules: ['140(11)', '259'], status: 'interim; final merits decision not located in this review' },
+    description: 'The report states that the Supreme Court temporarily stayed two House rules concerning amendment procedure and the legal status of House rules while a challenge proceeded. It describes a live bicameral constitutional dispute, not a final decision or a ruling against the Constitution as a whole.'
+  },
+  {
+    id: 'nepalPresidentConstitutionDayStatement2026',
+    label: 'President Ramchandra Paudel — Constitution Day address reported by Radio Nepal (19 September 2026)',
+    url: 'https://radionepalonline.com/en/2026/09/19/436299.html',
+    note: 'Public Service Broadcasting / Radio Nepal’s report of the President’s Constitution Day address. Used for official rhetoric about constitutional duties, federalism, inclusion, justice and service delivery, not as evidence those promises were implemented or of popular opinion. The complete speech and Nepali original were not independently collected; no speech excerpt is republished.',
+    accessDate: '2026-09-26', creators: ['Ramchandra Paudel'], institution: 'Office of the President of Nepal; report by Radio Nepal', publicationDate: '2026-09-19',
+    evidenceRole: 'primary', confidence: 'medium', languages: ['Nepali speech; English report'],
+    sourceType: 'official constitutional address reported by public-service broadcaster', identifiers: { occasion: 'Constitution Day 2083', addressDate: '2026-09-19' },
+    description: 'The report records the President’s public appeal for constitutional promises to be implemented, democratic and just governance, federalism and plural inclusion. It documents official framing rather than outcomes, a government programme or a uniform view of citizens.'
+  },
+  {
+    id: 'nepalDevelopmentUpdateWorldBankApril2026',
+    label: 'World Bank — Nepal Development Update: Growth Under Pressure (April 2026)',
+    url: 'https://documents1.worldbank.org/curated/en/099315004072621459/pdf/IDU-5fbb7a2f-51fb-4e48-aadc-2a447660fbe1.pdf',
+    note: 'World Bank country-development update consulted for macroeconomic context through the first half of fiscal 2025/26. Growth figures, the estimated unrest-related loss and forecasts are World Bank estimates with a specified fiscal-year and scenario horizon, not a political platform, final accounts or an attribution of the protest movement’s motives. No report text, table or chart is reproduced.',
+    accessDate: '2026-09-26', creators: ['World Bank'], institution: 'World Bank', publicationDate: '2026-04-08',
+    evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional macroeconomic country update', identifiers: { period: 'FY2025/26 first half; outlook through FY2027/28', documentDate: '2026-04-08' },
+    description: 'The update describes structural constraints, remittance dependence and spatial inequality, estimates economic losses associated with September 2025 unrest, and projects growth under stated risks and assumptions. It contextualizes policy capacity but does not measure the distributional experience of all households.'
+  },
+  {
     id: 'caboVerdeConstitution2010Assembly', label: 'National Assembly of Cabo Verde — Constitution of the Republic (1992 Constitution, second ordinary revision 2010)', url: 'https://www.parlamento.cv/Constituicao/',
     note: 'Official Assembly text consulted as a primary constitutional source and linked for readers. It is the 2010 consolidated revision of the 1992 Constitution; the Assembly notes that it does not replace the original Official Gazette publication. No text is reproduced, and constitutional design is not treated as proof of practice or equal participation.',
     accessDate: '2026-09-26', creators: ['Republic of Cabo Verde', 'National Assembly of Cabo Verde'], institution: 'National Assembly of Cabo Verde', publicationDate: '2010', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],

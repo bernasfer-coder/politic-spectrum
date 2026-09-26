@@ -64,7 +64,20 @@ for (const sourceId of ['bangladeshEcpElection2026', 'bangladeshReferendumGazett
 }
 assert.equal(filterGeographyCases({ country: 'sri-lanka' })[0].id, 'sri-lankan-constitutional-presidential-order');
 assert.equal(filterGeographyCases({ country: 'nepal' })[0].id, 'nepali-constitutional-republican-transition');
-assert.equal(filterGeographyCases({ country: 'nepal' }).find(({ id }) => id === 'nepal-federal-constitutional-and-electoral-transition')?.id, 'nepal-federal-constitutional-and-electoral-transition');
+const nepalFederal2026 = filterGeographyCases({ country: 'nepal' }).find(({ id }) => id === 'nepal-federal-constitutional-and-electoral-transition');
+assert.ok(nepalFederal2026);
+assert.equal(nepalFederal2026.endYear, 2026);
+assert.equal(nepalFederal2026.reviewedAt, '2026-09-26');
+assert.ok(nepalFederal2026.claim.includes('without implying a single youth platform'));
+assert.ok(nepalFederal2026.claim.includes('no final judgment is inferred'));
+assert.ok(nepalFederal2026.claim.includes('None of this is a numerical ideological score'));
+assert.ok(nepalFederal2026.limitation.includes('No 2025–26 event-specific book-length history was located'));
+assert.ok(nepalFederal2026.limitation.includes('exact underlying result tables and denominator conventions require Nepali-language reconciliation'));
+for (const sourceId of ['nepalElectionCommission2026Results', 'nepalPrimeMinisterOfficeBalendraShah2026', 'nepalElectionCommission2026ObservationDRCN', 'nepalElectionObservationANFREL2026', 'nepalUNDPOnlineElectionMonitoring2026', 'nepalNationalHumanRightsCommissionYouthMovement2026', 'nepalISASYouthProtestCommissionAnalysis2026', 'nepalSupremeCourtHouseRulesInterimOrder2026', 'nepalPresidentConstitutionDayStatement2026', 'nepalDevelopmentUpdateWorldBankApril2026']) {
+  assert.ok(nepalFederal2026.sourceIds.includes(sourceId), `Nepal 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Nepal bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Nepal rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'afghanistan' })[0].id, 'afghan-posttaliban-republican-order');
 assert.equal(filterGeographyCases({ country: 'burkina-faso' })[0].id, 'burkinabe-postcolonial-revolutionary-and-transition-history');
 assert.equal(filterGeographyCases({ country: 'sudan' })[0].id, 'sudanese-islamist-military-and-revolutionary-transition');
