@@ -7872,6 +7872,66 @@ const sources = [
     description: 'Spanish-language academic chapter examining the emergence and 2021 CABA electoral performance of Javier Milei’s force through territorial and digital organization, interviews and the liberal-popular and anti-caste vocabulary. It offers a subnational, pre-presidential perspective that must not be generalized to all Argentina or the later national administration.'
   },
   {
+    id: 'argentinaCneElection2025DefinitiveActs',
+    label: 'Cámara Nacional Electoral — definitive-scrutiny acts, 2025 national legislative elections',
+    url: 'https://www.electoral.gob.ar/nuevo/paginas/btn/actas2025.php',
+    note: 'Cámara Nacional Electoral portal consulted for its district-by-district definitive-scrutiny acts from the 26 October 2025 national legislative elections. No act, result table, ballot, or PDF page is reproduced; definitive electoral records establish the counted result in each district, not voter motivation, equal political voice, or a nationwide ideological mandate.',
+    accessDate: '2026-09-26', creators: ['Cámara Nacional Electoral de la República Argentina'], institution: 'Poder Judicial de la Nación Argentina / Cámara Nacional Electoral',
+    publicationDate: '2025-10-26', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official district-level definitive election-scrutiny acts', identifiers: { election: 'Argentine national legislative elections 2025', electionDate: '2025-10-26', recordType: 'district-level definitive scrutiny' },
+    description: 'Official CNE portal linking definitive-scrutiny acts for each electoral district in the 2025 national legislative election. The acts support district-specific electoral facts and should not be collapsed into a single undifferentiated national result or voter mandate.'
+  },
+  {
+    id: 'argentinaMidtermElection2025AP',
+    label: 'Isabel DeBre — “Milei triumphs in Argentine midterm elections” (2025)',
+    url: 'https://apnews.com/article/argentina-midterm-election-javier-milei-66d7c03825a7a0f56ce5808ff3ac1df4',
+    note: 'Associated Press report dated 26 October 2025 consulted for its contemporaneous summary of La Libertad Avanza’s legislative-election performance and seat gains by the party and allied blocs. AP’s aggregate and attribution remain journalistic reporting, not a substitute for the CNE’s district-level definitive acts, evidence of vote motivation, or proof of policy consent.',
+    accessDate: '2026-09-26', creators: ['Isabel DeBre'], institution: 'Associated Press',
+    publicationDate: '2025-10-26', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'contemporaneous international election reporting', identifiers: { electionDate: '2025-10-26', agency: 'Associated Press' },
+    description: 'Contemporaneous reporting on the 2025 midterm result and its legislative implications. It reports party and allied-bloc seat gains, but does not establish why individual voters chose as they did or prove a uniform national mandate.'
+  },
+  {
+    id: 'argentinaLaborModernizationLaw278022026Official',
+    label: 'Argentina — Ley 27.802, Ley de Modernización Laboral (2026)',
+    url: 'https://www.argentina.gob.ar/normativa/nacional/norma-423680/texto',
+    note: 'Argentina.gob.ar / InfoLEG official text consulted for Law 27.802, enacted 27 February and published 6 March 2026, and the official note recording Decree 408/2026’s postponement of Title II’s Fondo de Asistencia Laboral regime to 1 November 2026. No statutory wording is reproduced; enactment and the specific delayed commencement do not prove uniform implementation, judicial status, economic effect, or labor-market outcomes.',
+    accessDate: '2026-09-26', creators: ['Honorable Congreso de la Nación Argentina'], institution: 'Argentina.gob.ar / InfoLEG / Boletín Oficial de la República Argentina',
+    publicationDate: '2026-03-06', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary statute / official legal record', identifiers: { law: '27.802', sanctionDate: '2026-02-27', publicationDate: '2026-03-06', relatedDecree: '408/2026', delayedTitle: 'II — Fondo de Asistencia Laboral', delayedEffectiveDate: '2026-11-01' },
+    description: 'Primary legal record of the 2026 Labor Modernization Law. Its own official annotations state that a specific Title II fund regime’s commencement was later postponed to 1 November 2026; the statute does not itself establish the practical reach or effects of the broader reforms.'
+  },
+  {
+    id: 'argentinaDelfinoLodiPhenomenonMilei2025',
+    label: 'Andrea Delfino and Lourdes Lodi (comps.) — El fenómeno Milei: Agendas y perspectivas (2025)',
+    url: 'https://rephip.unr.edu.ar/items/4ef28008-b2cc-45c5-85ed-ceaae30bab23',
+    note: 'Universidad Nacional de Rosario repository and UNR Editora record consulted for the open Spanish-language digital edited volume (first edition, 2025; ISBN 978-987-702-726-6). The volume’s front matter and publisher description identify 11 short chapters on electoral and institutional questions, public policy, and ideological elements in La Libertad Avanza. No chapter wording, table, quotation, or scan is republished; its contributors’ perspectives are not treated as a single consensus or representative survey.',
+    accessDate: '2026-09-26', creators: ['Andrea Delfino', 'Lourdes Lodi'], institution: 'Universidad Nacional de Rosario / UNR Editora',
+    publicationDate: '2025', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'open-access scholarly edited volume on contemporary Argentine politics', identifiers: { isbn: '9789877027266', edition: '1st', format: 'digital PDF', chapters: '11', repository: 'https://hdl.handle.net/2133/29787' },
+    description: 'University-published collection of 11 short contributions spanning electoral, institutional, public-policy, and ideological interpretations of the Milei phenomenon. It adds several scholarly lenses, not a unified judgment, complete national survey, or proof of policy effects.'
+  },
+  {
+    id: 'argentinaDeGoriFortCastroEsterLeadershipMilei2026',
+    label: 'Esteban De Gori, Federico Ignacio Fort, Carla Castro and Bárbara Ester — El liderazgo de Javier Milei: Expectativas, emociones y consolidación (2026)',
+    url: 'https://bicyt.conicet.gov.ar/fichas/produccion/en/12894653',
+    note: 'CONICET’s BICYT/SIGEVA production record consulted for the book’s authors, year, Sans Soleil publisher and ISBN, and for the authors’ supplied research summary; the full book was not independently read for this entry. The record describes 67 qualitative interviews conducted September 2024–March 2025 focused on CABA, Greater Buenos Aires and interior Buenos Aires, followed by analysis linking the 2025 midterm setting with the first months of 2026. No interview text, book passage, or scan is reproduced; the geographically bounded sample is not nationally representative.',
+    accessDate: '2026-09-26', creators: ['Esteban De Gori', 'Federico Ignacio Fort', 'Carla Castro', 'Bárbara Ester'], institution: 'CONICET BICYT / Sans Soleil',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'book-length qualitative political study (bibliographic record and author-supplied abstract)', identifiers: { isbn: '9789873923234', studyPeriod: '2024–2026', interviews: '67', interviewDates: '2024-09 to 2025-03', fullTextConsulted: false },
+    description: 'A 2026 book-length qualitative study of Milei’s leadership, expectations and consolidation, based in part on 67 interviews in CABA and Buenos Aires Province and a later analysis of the 2025 midterm period and early 2026. This description follows the bibliographic record and author-supplied abstract; full-text arguments have not been independently assessed, and the interview geography cannot stand for Argentina as a whole.'
+  },
+  {
+    id: 'argentinaSaguierWorldAccordingToMilei2026',
+    label: 'Marcelo Saguier (ed.) — El mundo según Milei: El imaginario internacional de la Argentina libertaria (2026)',
+    url: 'https://unsamedita.unsam.edu.ar/product/el-mundo-segun-milei/',
+    note: 'UNSAM Edita publisher and the university’s Área de Estudios Internacionales publication record consulted for the first edition (August 2026), editor, scope and pagination (154 pages). The publisher describes an international-relations analysis of Milei-era international imaginaries, transnational far-right debates and foreign policy; the volume’s framing is attributed, not treated as neutral consensus. No chapter wording, quotation, or scan is republished.',
+    accessDate: '2026-09-26', creators: ['Marcelo Saguier'], institution: 'Universidad Nacional de San Martín / UNSAM Edita',
+    publicationDate: '2026-08', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'book-length international-relations study of Milei-era foreign-policy imaginaries', identifiers: { isbn: '9786316814234', ebookEan: '9786316814241', pages: '154', edition: '1st', subtitle: 'El imaginario internacional' },
+    description: 'University-press book edited by an international-relations scholar, addressing Argentina’s libertarian movement in global far-right and international-order debates, including foreign-policy imaginaries. It supplies an attributed scholarly lens for the external-relations axis, not a complete foreign-policy audit or final characterization of Argentina.'
+  },
+  {
     id: 'peruConstitution1993Congress',
     label: 'Peru — Constitución Política del Perú de 1993, Congreso de la República',
     url: 'https://www.congreso.gob.pe/constitucion-del-peru-y-reglamento/',

@@ -126,6 +126,20 @@ test('South Korea 2026 endpoint distinguishes the final obstruction judgment fro
   await expect(card).toContainText('books predate the 2024–2026 crisis');
 });
 
+test('Argentina 2026 update separates the midterm record, enacted law, delayed provision and limits of new scholarship', async ({ page }) => {
+  await page.goto('/#geography?case=argentine-milei-libertarian-presidential-refoundation-and-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('definitive-scrutiny acts by district');
+  await expect(card).toContainText('not why individuals voted');
+  await expect(card).toContainText('1 November 2026');
+  await expect(card).toContainText('CABA and Buenos Aires Province');
+  await expect(card).toContainText('full text was not independently examined');
+  await expect(card).toContainText('not a complete foreign-policy audit');
+  await expect(card).toContainText('the separate 1983–2023 post-authoritarian case remains unchanged');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));

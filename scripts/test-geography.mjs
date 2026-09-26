@@ -8,6 +8,16 @@ const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entr
 assert.deepEqual(validateGeography(context), []);
 assert.equal(GEOGRAPHY_CASES.length, 158);
 assert.equal(GEOGRAPHY_LABELS.length, 156);
+const argentinaMileiCase = GEOGRAPHY_CASES.find(({ id }) => id === 'argentine-milei-libertarian-presidential-refoundation-and-contestation');
+assert.equal(argentinaMileiCase.endYear, 2026);
+assert.equal(argentinaMileiCase.reviewedAt, '2026-09-26');
+assert.ok(argentinaMileiCase.claim.includes('1 November 2026'));
+assert.ok(argentinaMileiCase.claim.includes('not why individuals voted'));
+assert.ok(argentinaMileiCase.claim.includes('Buenos Aires Province'));
+assert.ok(argentinaMileiCase.limitation.includes('full book;'));
+assert.ok(argentinaMileiCase.sourceIds.includes('argentinaLaborModernizationLaw278022026Official'));
+assert.ok(argentinaMileiCase.sourceIds.includes('argentinaSaguierWorldAccordingToMilei2026'));
+assert.ok(GEOGRAPHY_CASES.some(({ id, endYear }) => id === 'argentine-postauthoritarian-democratic-and-crisis-order' && endYear === 2023), 'the distinct Argentina 1983–2023 case remains bounded and unchanged');
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
