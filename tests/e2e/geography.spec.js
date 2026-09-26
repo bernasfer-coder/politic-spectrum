@@ -74,6 +74,21 @@ test('Tonga case separates the 2025 parliamentary transition from pending Octobe
   await expect(card).toContainText('not independently verified here');
 });
 
+test('Ghana case separates 2025 transition, government fiscal targets and IMF assessment', async ({ page }) => {
+  await page.goto('/#geography?case=ghanaian-fourth-republic-democratic-consolidation-and-economic-strain');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('2001–2026');
+  await expect(card).toContainText('11 ministers had then been approved by Parliament and sworn in');
+  await expect(card).toContainText('1.5-percent-of-GDP primary surplus');
+  await expect(card).toContainText('IMF Executive Board’s 27 July 2026 release');
+  await expect(card).toContainText('not an exhaustive domestic audit');
+  await expect(card).toContainText('Event-specific book-length scholarship on the 2025–2026 administration');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="ghanaImfSixthReviewArticleIV2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="ghanaFinanceMinistryBudget2026"]')).toBeVisible();
+});
+
 test('shared cases link to the encyclopedia and bibliography, and return to the atlas', async ({ page }) => {
   await page.goto('/#geography?case=iran-constitution-1989');
   const card = page.locator('.geo-card');

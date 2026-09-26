@@ -712,6 +712,18 @@ assert.ok(filterGeographyCases({ country: 'japan' }).some(({ id }) => id === 'ja
 assert.equal(filterGeographyCases({ country: 'bhutan' })[0].id, 'bhutanese-democratic-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'ghana' })[0].id, 'ghanaian-fourth-republic-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'ghana' }).find(({ id }) => id === 'ghanaian-fourth-republic-democratic-consolidation-and-economic-strain')?.id, 'ghanaian-fourth-republic-democratic-consolidation-and-economic-strain');
+const ghanaFourthRepublic = GEOGRAPHY_CASES.find(({ id }) => id === 'ghanaian-fourth-republic-democratic-consolidation-and-economic-strain');
+assert.equal(ghanaFourthRepublic?.endYear, 2026);
+assert.equal(ghanaFourthRepublic?.reviewedAt, '2026-09-26');
+assert.ok(ghanaFourthRepublic?.claim.includes('7 January 2025'));
+assert.ok(ghanaFourthRepublic?.claim.includes('1.5-percent-of-GDP primary surplus'));
+assert.ok(ghanaFourthRepublic?.claim.includes('sixth and final ECF review'));
+assert.ok(ghanaFourthRepublic?.claim.includes('not independently audited'));
+assert.ok(ghanaFourthRepublic?.limitation.includes('2026 fiscal year was still in progress'));
+assert.ok(ghanaFourthRepublic?.limitation.includes('Event-specific book-length scholarship'));
+for (const id of ['ghanaParliamentNinthInauguration2025', 'ghanaPresidencyMinisterApprovals2025', 'ghanaFinanceMinistryBudget2026', 'ghanaImfSixthReviewArticleIV2026']) {
+  assert.ok(ghanaFourthRepublic?.sourceIds.includes(id), `Ghana case needs source ${id}`);
+}
 assert.equal(filterGeographyCases({ country: 'nigeria' }).find(({ id }) => id === 'nigerian-fourth-republic-post-2015-militarized-federal-contestation')?.id, 'nigerian-fourth-republic-post-2015-militarized-federal-contestation');
 assert.equal(filterGeographyCases({ country: 'nigeria' }).find(({ id }) => id === 'nigerian-renewed-hope-reform-and-endbadgovernance-contestation')?.id, 'nigerian-renewed-hope-reform-and-endbadgovernance-contestation');
 assert.equal(filterGeographyCases({ country: 'ethiopia' })[0].id, 'ethiopian-imperial-constitutionalization');
