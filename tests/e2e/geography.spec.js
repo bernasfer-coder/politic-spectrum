@@ -65,6 +65,25 @@ test('Uruguay case separates Orsi-era legal transition and executive self-report
   await expect(card.locator('a[href="https://www.gub.uy/presidencia/comunicacion/publicaciones/presidente-republica-yamandu-orsi-asamblea-general"]')).toHaveCount(1);
 });
 
+test('Kenya update attributes bounded protest monitoring and reparations records without extending its six-axis reading', async ({ page }) => {
+  await page.goto('/#geography?case=kenyan-ruto-era-succession-and-finance-bill-protest-order');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('65 fatalities, 342 civilian injuries and 171 police injuries');
+  await expect(card).toContainText('four-event, partial-geographic scope');
+  await expect(card).toContainText('918-person survey');
+  await expect(card).toContainText('two-county rural survey cannot represent Kenya’s youth');
+  await expect(card).toContainText('seven disappearance cases');
+  await expect(card).toContainText('361 arrests across eleven counties');
+  await expect(card).toContainText('not court findings');
+  await expect(card).toContainText('not completed compensation');
+  await expect(card).toContainText('not extend the earlier six-axis interpretation');
+  await expect(card.locator('a[href="https://www.ipoa.go.ke/frontAssets/uploads/resources/Monitoring_Report_on_Policing_of_the_June_and_July_250724_103648.pdf"]')).toHaveCount(1);
+  await expect(card.locator('a[href="https://discovery.ucl.ac.uk/id/eprint/10227555/"]')).toHaveCount(1);
+  await expect(card.locator('a[href="https://www.knchr.org/Our-Work/Reparations"]')).toHaveCount(1);
+});
+
 test('Spain 2026 update distinguishes partial constitutional review, two EU references and a separate legislative defeat', async ({ page }) => {
   await page.goto('/#geography?case=spanish-democratic-consolidation-and-regional-pluralism');
   const card = page.locator('.geo-card');

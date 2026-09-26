@@ -10971,6 +10971,56 @@ const sources = [
     description: 'Book-length study of Kenyan digital public life, online activism, gendered participation, disinformation and the 2017 election. It supplies a social-media and civic-mobilization lens that helps contextualize later networked protest without collapsing different periods or communities.'
   },
   {
+    id: 'kenyaIpoaJuneJulyProtests2025',
+    label: 'Independent Policing Oversight Authority — Monitoring Report on Policing of the June and July 2025 Protests',
+    url: 'https://www.ipoa.go.ke/frontAssets/uploads/resources/Monitoring_Report_on_Policing_of_the_June_and_July_250724_103648.pdf',
+    note: 'Official IPOA monitoring report consulted for four protest dates (12, 17 and 25 June and 7 July 2025) and the Authority’s position as at 23 July 2025. No report wording, table, image or scan is republished. Figures and findings remain attributed to IPOA’s limited monitoring/investigation scope and are not treated as a court-established or nationally exhaustive account.',
+    accessDate: '2026-09-26', creators: ['Independent Policing Oversight Authority of Kenya'], institution: 'Independent Policing Oversight Authority (IPOA), Kenya',
+    publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'primary police-oversight monitoring report', identifiers: { monitoringDates: '2025-06-12, 2025-06-17, 2025-06-25, 2025-07-07', figuresAsOf: '2025-07-23', pages: '24' },
+    description: 'IPOA states that it monitored policing at four demonstrations in some parts of Kenya and, as of 23 July, documented 65 fatalities, 342 civilian injuries and 171 police injuries; it reports autopsy attendance, complaints, observed policing-standard breaches, and violence and property destruction. Its figures reflect its stated window, mandate and methods, not a comprehensive or adjudicated total.'
+  },
+  {
+    id: 'kenyaKnchrReparationsFramework2026',
+    label: 'Kenya National Commission on Human Rights — Reparations framework for victims of human-rights violations, including demonstrations and protests (2026)',
+    url: 'https://www.knchr.org/Our-Work/Reparations',
+    note: 'KNCHR’s official portal and linked framework record consulted for the 2026 submission and draft-guideline process, including its stated basis in a presidential proclamation and Kerugoya High Court orders. No framework text or image is republished. The record establishes an institutional process and mandate claim, not delivered compensation, completed implementation or final judicial findings on protest allegations.',
+    accessDate: '2026-09-26', creators: ['Kenya National Commission on Human Rights'], institution: 'Kenya National Commission on Human Rights (KNCHR)',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'official human-rights commission reparations framework and public-participation record', identifiers: { constitutionalBasis: 'Article 254(2), Constitution of Kenya', relatedProceedings: 'Kerugoya High Court Constitutional Petitions E10, E11 and E14 of 2025 (consolidated)', gazetteNotice: '3114, 2026-03-06' },
+    description: 'KNCHR records submission of a national reparations framework addressing human-rights violations, including those arising from demonstrations and public protests, and publication of draft guidelines for public participation. This is evidence of a formal redress process, not proof that all claims were accepted or that remedies were paid.'
+  },
+  {
+    id: 'kenyaKnchrJuneProtests2026',
+    label: 'Kenya National Commission on Human Rights — Statement on violations reported following the 25 June 2026 protests (29 June 2026)',
+    url: 'https://www.knchr.org/Articles/ArtMID/2432/ArticleID/1258/Enforced-Disappearances-Torture-and-other-Human-Rights-Violations-following-the-25th-June-2026-Protests-Marking-the-2nd-Anniversary-of-the-2024-Gen-Z-Protests',
+    note: 'KNCHR press statement consulted as a dated commission monitoring and reporting record. No statement wording, photograph or PDF is republished. Its counts are explicitly the Commission’s documented or reported cases as described on 29 June 2026, with some incidents still being received, documented and verified; allegations are not presented as court findings or exhaustive national totals.',
+    accessDate: '2026-09-26', creators: ['Kenya National Commission on Human Rights'], institution: 'Kenya National Commission on Human Rights (KNCHR)',
+    publicationDate: '2026-06-29', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'official human-rights commission protest-monitoring statement', identifiers: { eventDate: '2026-06-25', statementDate: '2026-06-29', countiesNamed: '11' },
+    description: 'KNCHR says it monitored the 25 June anniversary demonstrations and reported seven disappearance incidents it said it documented and 361 arrests across eleven counties, alongside other allegations including torture and a shooting. The Commission states that it continued to receive, document and verify incidents. These are attributed institutional reports and calls for investigation, not independently adjudicated findings.'
+  },
+  {
+    id: 'kenyaUclProtestingHistory2026',
+    label: 'Henrietta L. Moore, Alex Boothroyd, Nikolaos Tzivanakis and Saffron Woodcraft — Protesting a History: Gen Z, the 2024–25 Uprisings, and Kenya’s New Political Consciousness (2026)',
+    url: 'https://discovery.ucl.ac.uk/id/eprint/10227555/',
+    note: 'UCL Discovery repository record and open-access working/discussion paper consulted. No paper wording, survey table or image is republished. The 918 respondents were aged 18–28 and surveyed in Elgeyo-Marakwet and Nandi Counties; this bounded rural survey is not generalized to Kenyan youth or all protest participation, and the authors leave their central political-consciousness question open.',
+    accessDate: '2026-09-26', creators: ['Henrietta L. Moore', 'Alex Boothroyd', 'Nikolaos Tzivanakis', 'Saffron Woodcraft'], institution: 'UCL Institute for Global Prosperity',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'university working/discussion paper using a two-county survey and qualitative analysis', identifiers: { isbn: '9781913041717', repositoryId: '10227555', surveyRespondents: '918', surveyAgeRange: '18–28', counties: 'Elgeyo-Marakwet and Nandi' },
+    description: 'The authors combine historical and protest-vernacular analysis with a survey of 918 young respondents in two counties; the repository record reports 13% participation among respondents, mostly online, and a shift in reported concerns from economic grievances in 2024 toward security concerns in 2025. The authors state that whether this constitutes a new political consciousness remains unresolved. Repository classifies this as a working/discussion paper.'
+  },
+  {
+    id: 'kenyaOumaDigitalSecurityArticle2025',
+    label: 'Samuel Juma Ouma — Youth, Digital Communication and National Security in Kenya: The Gen-Z Protests (2024–2025) (2025)',
+    url: 'https://journal.ndu.ac.ke/index.php/nsj/article/view/82',
+    note: 'Journal article page and DOI metadata consulted for original, attributed synthesis and link only. No article wording, interview material, table or image is republished. Its empirical and causal claims are those of one journal article and are not treated as independently verified or representative of all activists, journalists or policymakers.',
+    accessDate: '2026-09-26', creators: ['Samuel Juma Ouma'], institution: 'National Security: A Journal of the National Defence University-Kenya',
+    publicationDate: '2025-12-15', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'journal research article', identifiers: { doi: '10.64403/89txsx23', volume: '3', issue: '2', pages: '132–148', accepted: '2025-10-20' },
+    description: 'Ouma reports a mixed-methods study involving cross-platform analysis and 25 semi-structured interviews, interpreting digital mobilization, securitizing rhetoric and competing online narratives during the 2024–2025 protests. It contributes an event-specific analytical perspective but is not a book-length synthesis or independent adjudication of causal claims.'
+  },
+  {
     id: 'haitiUnSgReportTransitionApril2026', label: 'United Nations Secretary-General — Report on the United Nations Integrated Office in Haiti, S/2026/325 (14 April 2026)', url: 'https://documents.un.org/api/symbol/access?l=en&s=S%2F2026%2F325&t=pdf',
     note: 'UN Secretary-General report consulted for its dated, attributed account of the transition, national pact and political actors. Summary only; no report wording or figures are republished. The report records institutional claims and attributed criticism, not a finding that the pact represented all Haitians.',
     accessDate: '2026-09-26', creators: ['United Nations Secretary-General'], institution: 'United Nations', publicationDate: '2026-04-14', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
