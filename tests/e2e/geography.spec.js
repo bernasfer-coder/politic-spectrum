@@ -173,6 +173,19 @@ test('Nigeria 2026 case distinguishes scheduled 2027 polls from separate elector
   await expect(card).toContainText('no event-specific book-length study of the 2026 disputes');
 });
 
+test('Solomon Islands case keeps historical scholarship separate from the 2026 confidence and government transition', async ({ page }) => {
+  await page.goto('/#geography?case=solomon-islands-constitutional-customary-and-postcolonial-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('six book-length political histories');
+  await expect(card).toContainText('Terence Wood’s 2025 peer-reviewed analysis');
+  await expect(card).toContainText('26 of the 50 MPs voting against him');
+  await expect(card).toContainText('not proof of review, disclosure, repudiation or changed implementation');
+  await expect(card).toContainText('withdrawn in writing on 6 September before being moved and thus was not put to a vote');
+  await expect(card).toContainText('Event-specific book-length scholarship on the March–May 2026 constitutional and parliamentary sequence');
+});
+
 test('Tunisia case distinguishes 2024 official results, preliminary observation and reported electoral disputes', async ({ page }) => {
   await page.goto('/#geography?case=tunisian-revolutionary-constitutional-transition');
   const card = page.locator('.geo-card');

@@ -74,6 +74,23 @@ for (const sourceId of ['guyanaCaricomElectionObservation2025', 'guyanaEuEomFina
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Guyana rights/provenance review missing: ${sourceId}`);
 }
 assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === guyanaCase.labelId)?.aliases.includes('Guyana political history 1966–2026'));
+const solomonIslandsCase = GEOGRAPHY_CASES.find(({ id }) => id === 'solomon-islands-constitutional-customary-and-postcolonial-transition');
+assert.equal(solomonIslandsCase.endYear, 2026);
+assert.equal(solomonIslandsCase.reviewedAt, '2026-09-26');
+assert.ok(solomonIslandsCase.claim.includes('the Court of Appeal rejected that appeal'));
+assert.ok(solomonIslandsCase.claim.includes('26 of the 50 MPs voting against him'));
+assert.ok(solomonIslandsCase.claim.includes('one member absent and one spoiled ballot'));
+assert.ok(solomonIslandsCase.claim.includes('not proof of review, disclosure, repudiation or changed implementation'));
+assert.ok(solomonIslandsCase.claim.includes('before being moved and thus was not put to a vote'));
+assert.ok(solomonIslandsCase.limitation.includes('Event-specific book-length scholarship'));
+assert.ok(solomonIslandsCase.limitation.includes('High Court and Court of Appeal judgments and official Hansard division list'));
+assert.ok(GEOGRAPHY_PLACES.find(({ id }) => id === 'solomon-islands')?.note.includes('not a score for Solomon Islanders'));
+for (const sourceId of ['solomonDpaElectionStudy2024', 'solomonWoodNewUnfamiliarSea2025', 'solomonGovHighCourtJudgment2026', 'solomonCourtAppealMotion2026', 'solomonAbcManeleNoConfidence2026', 'solomonParliamentWaleElection2026', 'solomonApWaleSecurityReview2026', 'solomonParliamentWaleConfidenceWithdrawal2026', 'solomonAbcWaleNoConfidenceWithdrawal2026']) {
+  assert.ok(solomonIslandsCase.sourceIds.includes(sourceId), `Solomon Islands source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Solomon Islands bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Solomon Islands rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === solomonIslandsCase.labelId)?.aliases.includes('Solomon Islands political history 1974–2026'));
 const tunisiaCase = GEOGRAPHY_CASES.find(({ id }) => id === 'tunisian-revolutionary-constitutional-transition');
 assert.equal(tunisiaCase.endYear, 2024);
 assert.equal(tunisiaCase.reviewedAt, '2026-09-26');
