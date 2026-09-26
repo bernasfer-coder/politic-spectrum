@@ -264,6 +264,18 @@ test('Italy 2026 referendum is presented as a bounded Article 138 case with expl
   await expect(card).toContainText('a generalized public mandate');
 });
 
+test('Japan 2026 update distinguishes elected seat totals, later affiliation and live evidence limits', async ({ page }) => {
+  await page.goto('/#geography?case=japanese-post-2021-party-finance-and-2024-electoral-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('2021–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('LDP won 315 of 465 seats');
+  await expect(card).toContainText('one independent joining the LDP after the vote');
+  await expect(card).toContainText('not voter motives');
+  await expect(card).toContainText('do not constitute two book-length scholarly studies of the whole sequence');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));

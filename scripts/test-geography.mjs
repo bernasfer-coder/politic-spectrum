@@ -154,6 +154,20 @@ assert.equal(filterGeographyCases({ country: 'italy' })[0].id, 'italian-republic
 assert.equal(filterGeographyCases({ country: 'japan' })[0].id, 'japanese-meiji-constitutional-founding');
 assert.equal(filterGeographyCases({ country: 'japan' }).find(({ id }) => id === 'japanese-postwar-constitutional-democratic-order')?.id, 'japanese-postwar-constitutional-democratic-order');
 assert.ok(filterGeographyCases({ country: 'japan' }).some(({ id }) => id === 'japanese-post-2021-party-finance-and-2024-electoral-contestation'));
+const japanContemporary = filterGeographyCases({ country: 'japan' }).find(({ id }) => id === 'japanese-post-2021-party-finance-and-2024-electoral-contestation');
+assert.equal(japanContemporary.endYear, 2026);
+assert.equal(japanContemporary.reviewedAt, '2026-09-26');
+assert.ok(japanContemporary.claim.includes('won 315 of 465 seats'));
+assert.ok(japanContemporary.claim.includes('one independent joining the LDP after the vote'));
+assert.ok(japanContemporary.claim.includes('not numerical ideological scores'));
+assert.ok(japanContemporary.limitation.includes('not voter motives'));
+assert.ok(japanContemporary.limitation.includes('not constitute two book-length scholarly studies'));
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === japanContemporary.labelId)?.aliases.includes('Japan political history 2021–2026'));
+for (const sourceId of ['japanHouseCouncillorsElection2025', 'japanHouseElectionOfficialReport2026', 'japanHouseElectionChronology2026', 'japanTakaichiDesignation2025', 'japanTakaichiDissolutionPressConference2026', 'japanTakaichiCabinetSeptember2026', 'japanHouseElectionResults2026Ipu', 'ogikamiElectionBook2026', 'mikuriyaSerikawaReiwaCabinets2026', 'sukTakaichiAdministration2026', 'lipscyTakaichiAbePacificAffairs2026', 'pajonTakaichiLandslideIfri2026']) {
+  assert.ok(japanContemporary.sourceIds.includes(sourceId), `Japan source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Japan bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Japan rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'bhutan' })[0].id, 'bhutanese-democratic-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'ghana' })[0].id, 'ghanaian-fourth-republic-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'ghana' }).find(({ id }) => id === 'ghanaian-fourth-republic-democratic-consolidation-and-economic-strain')?.id, 'ghanaian-fourth-republic-democratic-consolidation-and-economic-strain');

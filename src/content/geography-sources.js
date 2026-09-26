@@ -1892,6 +1892,78 @@ const sources = [
     description: 'Official legal-record index anchoring the June 2024 promulgation of an amendment to Japan’s Political Funds Control Law. It documents the formal legal response to the funding controversy while leaving implementation, prosecution, parliamentary oversight and effects on party financing open.',
   },
   {
+    id: 'japanHouseCouncillorsElection2025', label: 'House of Councillors of Japan — 2025 election report', url: 'https://www.sangiin.go.jp/japanese/gianjoho/old_gaiyo/218/2180000-1-n.pdf',
+    note: 'Official Japanese-language election report consulted as a primary result source and linked for readers. No table, text, or scan is republished; results document official returns, not voter motives, campaign equality, or the reasons for party change.',
+    accessDate: '2026-09-26', creators: ['House of Councillors of Japan'], institution: 'National Diet of Japan, House of Councillors', publicationDate: '2025-07-20', evidenceRole: 'primary', confidence: 'high', languages: ['Japanese'],
+    sourceType: 'official upper-house election report', identifiers: { electionDate: '2025-07-20', electedMembers: '125' }, description: 'Official report for the 2025 House of Councillors election. Used with the subsequent House committee report to document the elected-seat result and turnout; it does not establish the electorate’s motives or a single ideological mandate.'
+  },
+  {
+    id: 'japanHouseElectionOfficialReport2026', label: 'House of Representatives of Japan — Political Reform Special Committee proceedings, 11 June 2026', url: 'https://www.shugiin.go.jp/internet/itdb_kaigiroku.nsf/html/kaigiroku/034322120260611002.htm',
+    note: 'Official committee proceedings consulted for the Minister of Internal Affairs and Communications’ report of the 2025 House of Councillors and February 2026 House of Representatives results. This is an official report within parliamentary proceedings, not independent analysis; no transcript text is republished.',
+    accessDate: '2026-09-26', creators: ['House of Representatives of Japan', 'Minister of Internal Affairs and Communications'], institution: 'National Diet of Japan, House of Representatives', publicationDate: '2026-06-11', evidenceRole: 'primary', confidence: 'high', languages: ['Japanese'],
+    sourceType: 'official parliamentary proceedings / election-results report', identifiers: { meetingDate: '2026-06-11', electionDates: ['2025-07-20', '2026-02-08'] }, description: 'Proceedings of the Political Reform Special Committee contain a ministerial report of official results for both 2025 and 2026 elections, including party seat totals and turnout. They anchor dated result facts, not voter motivations or causal explanations.'
+  },
+  {
+    id: 'japanHouseElectionChronology2026', label: 'House of Representatives of Japan — election and dissolution chronology', url: 'https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/senkyolist.htm',
+    note: 'Official House chronology consulted for dissolution, election and Diet-convening dates. It is linked rather than reproduced and establishes institutional dates only.',
+    accessDate: '2026-09-26', creators: ['House of Representatives of Japan'], institution: 'National Diet of Japan, House of Representatives', publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['Japanese'],
+    sourceType: 'official parliamentary election chronology', identifiers: { dissolutionDate: '2026-01-23', electionDate: '2026-02-08', dietConvened: '2026-02-18' }, description: 'Official parliamentary chronology records dissolution of the House on 23 January 2026, the 8 February election and the first post-election Diet meeting on 18 February.'
+  },
+  {
+    id: 'japanTakaichiDesignation2025', label: 'Prime Minister’s Office of Japan — Designation of Sanae Takaichi as prime minister', url: 'https://japan.kantei.go.jp/104/actions/202510/21shimei.html',
+    note: 'Official Kantei record consulted for the Diet designation and linked for readers. No statement text or image is republished; formal designation is not treated as a mandate for any particular policy.',
+    accessDate: '2026-09-26', creators: ['Prime Minister’s Office of Japan'], institution: 'Prime Minister’s Office of Japan', publicationDate: '2025-10-21', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Japanese'],
+    sourceType: 'official prime-ministerial designation record', identifiers: { designationDate: '2025-10-21', primeMinister: 'Sanae Takaichi' }, description: 'Kantei record of Takaichi’s designation as Japan’s 104th prime minister on 21 October 2025, establishing the formal leadership transition.'
+  },
+  {
+    id: 'japanTakaichiDissolutionPressConference2026', label: 'Prime Minister’s Office of Japan — Takaichi press conference on House dissolution and election', url: 'https://www.kantei.go.jp/jp/104/statement/2026/0119kaiken.html',
+    note: 'Japanese-language executive press conference consulted as a primary source for the prime minister’s stated rationale and agenda. No speech or translated text is reproduced; the account is explicitly government self-description, not evidence that the asserted rationale was shared by voters.',
+    accessDate: '2026-09-26', creators: ['Sanae Takaichi, Prime Minister of Japan'], institution: 'Prime Minister’s Office of Japan', publicationDate: '2026-01-19', evidenceRole: 'primary', confidence: 'high', languages: ['Japanese'],
+    sourceType: 'primary executive press conference', identifiers: { conferenceDate: '2026-01-19', dissolutionDate: '2026-01-23', electionDate: '2026-02-08' }, description: 'The prime minister’s press conference announces the planned dissolution and election and presents her own stated reasons concerning policy judgment, economic and fiscal direction, and security. It records executive framing, not independent evidence of public opinion or implementation.'
+  },
+  {
+    id: 'japanTakaichiCabinetSeptember2026', label: 'Prime Minister’s Office of Japan — Takaichi press conference after September 2026 cabinet reshuffle', url: 'https://japan.kantei.go.jp/105/speech/202609/0917kaiken.html',
+    note: 'Official provisional English translation of the prime minister’s 17 September press conference, published 18 September 2026. Consulted for the cabinet’s current self-described priorities only. No statement wording is republished; announced policies are not treated as implemented outcomes or as a direct expression of every citizen’s preferences.',
+    accessDate: '2026-09-26', creators: ['Sanae Takaichi, Prime Minister of Japan'], institution: 'Prime Minister’s Office of Japan', publicationDate: '2026-09-18', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Japanese'],
+    sourceType: 'official translated executive press conference', identifiers: { conferenceDate: '2026-09-17', publicationDate: '2026-09-18', cabinet: 'Reshuffled Second Takaichi Cabinet' }, description: 'The Kantei’s translated press conference documents the prime minister’s stated priorities after the reshuffled cabinet was inaugurated, including economic, fiscal and security agenda-setting. It is evidence of current executive self-description, not policy implementation.'
+  },
+  {
+    id: 'japanHouseElectionResults2026Ipu', label: 'Inter-Parliamentary Union — Japan House of Representatives February 2026 election results', url: 'https://data.ipu.org/parliament/JP/JP-LC01/election/JP-LC01-E20260208/',
+    note: 'IPU Parline institutional record consulted for the 2026 result, chamber composition and post-election affiliation change. No result table is reproduced; the post-election alignment is distinguished from votes and seats allocated to party candidates at the election.',
+    accessDate: '2026-09-26', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union, Parline', publicationDate: '2026-02-08', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional parliamentary election record', identifiers: { electionDate: '2026-02-08', chamber: 'House of Representatives', electedLdpSeats: '315', postElectionLdpAffiliation: '316', nipponIshinSeats: '36' }, description: 'IPU Parline documents party results and post-election chamber composition, including one independent joining the LDP after election day. It is used to keep elected returns distinct from subsequent affiliation and does not establish voter motives or ideology.'
+  },
+  {
+    id: 'ogikamiElectionBook2026', label: 'Chiki Ogiue, ed. — 「あの選挙」はなんだったのか: 2024衆院選・2025参院選を読み解く', url: 'https://www.seikyusha.co.jp/bd/isbn/9784787235688/',
+    note: 'Publisher catalogue consulted for full title, editorial and contributor metadata, ISBN, length, date and stated scope. The multi-author Japanese-language book was published before the February 2026 election, and its contents/full arguments were not independently reviewed; cited only as relevant book-length coverage of the 2024 and 2025 elections, not the 2026 result.',
+    accessDate: '2026-09-26', creators: ['Chiki Ogiue, editor and author', 'Chiki Lab, project', 'Ken Iida', 'Taku Sugawara', 'Masaki Hata', 'Seiko Mimaki', 'Momoko Nojo', 'Asako Tsuji', 'Tomoyo Nakamura', 'Natsuki Yasuda', 'Rei Nagai'], institution: 'Seikyusha', publicationDate: '2026-02-03', evidenceRole: 'secondary', confidence: 'medium', languages: ['Japanese'],
+    sourceType: 'Japanese-language multi-author book on recent elections', identifiers: { isbn: '9784787235688', pages: '272', edition: 'paperback' }, description: 'Publisher describes this 272-page edited volume as a cross-disciplinary introduction to the 2024 House and 2025 upper-house elections, with contributions on political science, data analysis, gender, social media, journalism and other perspectives. It adds recent Japanese-language book coverage but predates the 2026 lower-house election.'
+  },
+  {
+    id: 'mikuriyaSerikawaReiwaCabinets2026', label: 'Takashi Mikuriya and Yoichi Serikawa — 令和政権論: 今なぜ高市首相なのか', url: 'https://bookplus.nikkei.com/atcl/catalog/26/08/26/02747/',
+    note: 'Publisher catalogue consulted for author, title, date, ISBN, length and publisher description. This is a 336-page political-history dialogue between a scholar and an experienced political journalist, not a peer-reviewed monograph; its publisher synopsis and contents are used as scope evidence, not as independent verification of its political judgments.',
+    accessDate: '2026-09-26', creators: ['Takashi Mikuriya', 'Yoichi Serikawa'], institution: 'Nikkei Business Publications / Nikkei Publishing', publicationDate: '2026-09-14', evidenceRole: 'secondary', confidence: 'medium', languages: ['Japanese'],
+    sourceType: 'Japanese-language book-length political-history dialogue', identifiers: { isbn: '9784296127580', pages: '336', series: 'Nikkei Premier Series' }, description: 'Publisher presents a dialogue tracing Reiwa-era cabinets and the contemporary Takaichi government through political history and reporting. It offers timely Japanese-language interpretive context as of September 2026; its dialogue form and very recent publication mean that it does not substitute for independent specialist monographs or archival verification.'
+  },
+  {
+    id: 'sukTakaichiAdministration2026', label: 'Juhee Suk — “The Emergence of the Takaichi Administration and Political Dynamics: Focusing on Ideology, Policy Networks, and Mass Mobilization Strategies”', url: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003336881',
+    note: 'Korean Citation Index article record consulted for title, author, abstract, journal, volume, issue and pages. The analysis is attributed to its author and treated as one recent interpretation; no article text is republished and no unstated DOI is supplied.',
+    accessDate: '2026-09-26', creators: ['Juhee Suk'], institution: 'Korea Legislative Studies Institute', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'medium', languages: ['Korean', 'English'],
+    sourceType: 'peer-reviewed Korean-language political-science journal article', identifiers: { journal: 'Korean Journal of Legislative Studies', volume: '32', issue: '1', pages: '43–70', issn: '1226-0789' }, description: 'The article analyzes the 2025 Takaichi administration and 2026 election through ideology, policy networks and mobilization, advancing claims about leadership and political dynamics while acknowledging uncertainty about durable structural change. It is an attributed scholarly interpretation, not a book-length account or settled causal finding.'
+  },
+  {
+    id: 'lipscyTakaichiAbePacificAffairs2026', label: 'Phillip Y. Lipscy — “After the Landslide: The Takaichi and Abe Governments in Comparative Perspective”', url: 'https://doi.org/10.1080/0030851X.2026.2672229',
+    note: 'University of Toronto Munk School listing and Pacific Affairs publisher link consulted for author, date, article title, publication venue and abstract. The abstract is not reproduced; comparative conclusions are attributed to Lipscy and not presented as established outcomes.',
+    accessDate: '2026-09-26', creators: ['Phillip Y. Lipscy'], institution: 'Pacific Affairs / University of British Columbia', publicationDate: '2026-05-19', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'peer-reviewed academic journal article', identifiers: { journal: 'Pacific Affairs', doi: '10.1080/0030851X.2026.2672229' }, description: 'Comparative analysis of the Takaichi and Abe governments after the February 2026 landslide, discussing leadership capacity and constraints across domestic and foreign policy. It provides an independent scholarly interpretation rather than a book-length treatment or proof of later implementation.'
+  },
+  {
+    id: 'pajonTakaichiLandslideIfri2026', label: 'Céline Pajon — “Japan’s Takaichi Landslide: A New Face of Power”', url: 'https://www.ifri.org/sites/default/files/2026-02/ifri_pajon_japan_takaichi_landslide_2026.pdf',
+    note: 'IFRI’s 2026 policy paper consulted for attributed analysis of coalition change, the snap election and its policy context. It cites journalism and secondary materials; its claims remain those of the author, not primary evidence or settled findings. No paper text, chart or figure is reproduced.',
+    accessDate: '2026-09-26', creators: ['Céline Pajon'], institution: 'Institut français des relations internationales (Ifri)', publicationDate: '2026-02', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'institutional foreign-policy analysis', identifiers: { pages: '26', publicationMonth: '2026-02' }, description: 'Policy analysis of Takaichi’s 2026 electoral victory, coalition reshaping and external/security agenda. It provides a distinct institutional interpretation; its descriptions and forecasts are attributed and are not used as official election results or proof of policy effects.'
+  },
+  {
     id: 'wyattThailandShortHistory2004',
     label: 'David K. Wyatt — Thailand: A Short History',
     url: 'https://yalebooks.co.uk/book/9780300084757/thailand/',
