@@ -9313,6 +9313,58 @@ sources.push(
   }
 );
 
+sources.push(
+  {
+    id: 'sudanJeddahDeclaration2023', label: 'Sudanese Armed Forces and Rapid Support Forces — Jeddah Declaration of Commitment to Protect the Civilians of Sudan', url: 'https://2021-2025.state.gov/jeddah-declaration-of-commitment-to-protect-the-civilians-of-sudan/',
+    note: 'The signed 11 May 2023 declaration is reproduced on the U.S. Department of State’s archived site; the page explicitly warns that it is archival and no longer updated. It is used as a primary text for the parties’ stated commitments and the Saudi–U.S. facilitation, not as evidence that commitments were implemented or that the facilitators’ account is neutral.',
+    accessDate: '2026-09-26', creators: ['Sudanese Armed Forces', 'Rapid Support Forces'], institution: 'Facilitated by the Kingdom of Saudi Arabia and the United States of America; archived text hosted by the U.S. Department of State', publicationDate: '2023-05-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary declaration of commitments by parties to armed conflict', identifiers: { placeSigned: 'Jeddah', dateSigned: '2023-05-11' },
+    description: 'Signed declaration recording SAF and RSF commitments concerning civilians, humanitarian action and future ceasefire discussions. It documents formal commitments at one stage of the war, not compliance, an effective ceasefire or a political settlement.'
+  },
+  {
+    id: 'sudanUnHumanRightsReport2026', label: 'UN High Commissioner for Human Rights — Situation of human rights in the Sudan (A/HRC/61/24, 2026)', url: 'https://docs.un.org/en/A/HRC/61/24',
+    note: 'Official Human Rights Council report, issued 13 January 2026, covers 16 November 2024–15 November 2025. It describes 778 interviewed sources and remote monitoring under a “reasonable grounds to believe” standard; access constraints are explicit. Political appointments and governance declarations, allegations and findings are kept distinct, and its reporting period is not extended beyond 15 November 2025.',
+    accessDate: '2026-09-26', creators: ['Office of the United Nations High Commissioner for Human Rights', 'UN Expert on Human Rights in the Sudan'], institution: 'United Nations Human Rights Council', publicationDate: '2026-01-13', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'Arabic', 'Chinese', 'French', 'Russian', 'Spanish'],
+    sourceType: 'official human-rights monitoring report to the Human Rights Council', identifiers: { document: 'A/HRC/61/24', reportingPeriod: '2024-11-16 to 2025-11-15', method: '778 interviews; reasonable-grounds-to-believe standard' },
+    description: 'UN human-rights report documenting political/security developments, legal changes, civilian harm and access limits through 15 November 2025. It records the 2025 appointment of Kamil Idris and the Sudan Founding Alliance governance declaration in RSF-controlled areas as reported developments, without treating the rival claims as a settled constitutional order.'
+  },
+  {
+    id: 'sudanOchaHumanitarianPlan2026', label: 'UN Office for the Coordination of Humanitarian Affairs — Sudan Humanitarian Needs and Response Plan 2026', url: 'https://www.unocha.org/publications/report/sudan/sudan-humanitarian-needs-and-response-plan-2026-april-2026-enar',
+    note: 'OCHA’s 2026 plan, dated 1 February and published in April, consulted for the agency’s year-specific humanitarian needs estimates and its account of geographic conflict shifts. Estimates are explicitly tied to the plan’s 2026 planning frame and should not be read as a live census or political opinion measure.',
+    accessDate: '2026-09-26', creators: ['United Nations Office for the Coordination of Humanitarian Affairs'], institution: 'United Nations Office for the Coordination of Humanitarian Affairs', publicationDate: '2026-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Arabic'],
+    sourceType: 'inter-agency humanitarian needs and response plan', identifiers: { planningYear: '2026', dateInPlan: '2026-02-01', peopleInNeedEstimate: '33.7 million' },
+    description: 'OCHA plan estimates 33.7 million people need humanitarian assistance in Sudan in 2026 and describes improved return conditions in parts of central Sudan alongside intensified hostilities and protection needs in Darfur and Kordofan. It is humanitarian planning evidence, not a full conflict map or a political legitimacy assessment.'
+  },
+  {
+    id: 'sudanOchaSecurityCouncilBriefing2026', label: 'Tom Fletcher / OCHA — Security Council briefing on the humanitarian situation in Sudan (24 August 2026)', url: 'https://www.unocha.org/publications/report/sudan/mr-tom-fletcher-under-secretary-general-humanitarian-affairs-and-emergency-relief-coordinator-briefing-security-council-humanitarian-situation-sudan-24-august-2026',
+    note: 'OCHA’s delivered briefing consulted for the humanitarian-access and conflict geography snapshot on 24 August 2026. Civilian-death figures, drone activity, displacement, funding and access descriptions are attributed to the UN humanitarian coordinator and its operational reporting; this is not an independent military chronology or adjudication of responsibility.',
+    accessDate: '2026-09-26', creators: ['Tom Fletcher, Under-Secretary-General for Humanitarian Affairs and Emergency Relief Coordinator'], institution: 'United Nations Office for the Coordination of Humanitarian Affairs', publicationDate: '2026-08-24', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'official humanitarian briefing to the UN Security Council', identifiers: { briefingDate: '2026-08-24', speaker: 'Tom Fletcher' },
+    description: 'Operational UN account of front lines, drone attacks, displacement and humanitarian access across Sudan in August 2026, including Kordofan, Darfur and border areas. It provides an explicitly dated humanitarian snapshot rather than a complete assessment of political control.'
+  },
+  {
+    id: 'sudanRevolutionContinues2026', label: 'Barbara Casciarri, Alice Franck and Mohamed A.G. Bakhit (eds.) — “The Revolution Continues”: December’s Long March for a Fairer Sudan (2026)', url: 'https://link.springer.com/book/10.1007/978-3-031-98103-6',
+    note: 'Palgrave Macmillan/Springer publisher record consulted for editors, scope, publication dates, DOI, ISBN and chapter contents. Publisher description says the book’s fieldwork-based account follows the December Revolution through the 2023 war; the complete volume was not read here and is not used to establish 2026 battlefield facts or to represent all Sudanese political actors.',
+    accessDate: '2026-09-26', creators: ['Barbara Casciarri', 'Alice Franck', 'Mohamed A.G. Bakhit'], institution: 'Palgrave Macmillan / Springer Nature Switzerland', publicationDate: '2026-05-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on Sudan’s December Revolution and ongoing war', identifiers: { doi: '10.1007/978-3-031-98103-6', hardcoverIsbn: '9783031981029', ebookIsbn: '9783031981036', pages: '406' },
+    description: 'Interdisciplinary, fieldwork-based edited volume on the December Revolution as a continuing process through the April 2023 war, with chapters on political transitions, center–periphery relations, inequality, popular actors and war. It supplies contemporary scholarly framing while remaining distinct from a comprehensive history of the war or every community.'
+  },
+  {
+    id: 'sudanBerridgeTransitionsChapter2026', label: 'Willow Berridge — “Sudan’s Three Post-uprising Transitional Periods: Between Centre and Periphery, Revolution, and War” (2026)', url: 'https://doi.org/10.1007/978-3-031-98103-6_2',
+    note: 'Chapter metadata verified against the publisher and Newcastle University research repository: edited volume “The Revolution Continues,” editors Barbara Casciarri, Alice Franck and Mohamed A.G. Bakhit, pp. 35–54, print publication 7 May 2026, DOI 10.1007/978-3-031-98103-6_2. Full chapter text was not available in the institutional repository and was not read; the author’s framing is not represented as a direct quotation or full-text finding.',
+    accessDate: '2026-09-26', creators: ['Willow Berridge', 'Barbara Casciarri', 'Alice Franck', 'Mohamed A.G. Bakhit'], institution: 'Palgrave Macmillan; metadata cross-checked with Newcastle University ePrints', publicationDate: '2026-05-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited-volume chapter / publisher and university metadata', identifiers: { doi: '10.1007/978-3-031-98103-6_2', pages: '35–54', volumeIsbn: '9783031981029' },
+    description: 'Comparative chapter on Sudan’s 1964, 1985 and 2018–2019 post-uprising transitions, including the military, rebels, center–periphery divisions and the collapse into war. Publisher/repository metadata and summary establish its relevance; complete chapter contents were not accessed.'
+  },
+  {
+    id: 'sudanSrinivasanWhenPeaceKillsPolitics2021', label: 'Sharath Srinivasan — When Peace Kills Politics: International Intervention and Unending Wars in the Sudans (2021)', url: 'https://academic.oup.com/book/39808',
+    note: 'Oxford University Press publisher record consulted for author, publication date, title, ISBN and abstract. The book studies intervention and political transitions through 2019 and the North–South peace process; it predates the 2023 war, so its comparative argument is historical context, not an account of the present conflict.',
+    accessDate: '2026-09-26', creators: ['Sharath Srinivasan'], institution: 'Oxford University Press', publicationDate: '2021-08-01', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly study of peace-making, intervention and political conflict', identifiers: { doi: '10.1093/oso/9780197602720.001.0001', printIsbn: '9780197602720', onlineIsbn: '9780197610879' },
+    description: 'Independent book-length analysis of the 2005 peace process, war in Darfur, the Nuba Mountains and Blue Nile, external intervention and Sudan’s 2019 civilian revolution. It is used as a historically bounded interpretation of peace-making and civil politics, not as evidence for the 2023–2026 war’s events.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
