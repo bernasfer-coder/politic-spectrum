@@ -16,8 +16,8 @@ afterEach(cleanup);
 
 describe('map geometry and filter contracts', () => {
   it('keeps all map IDs unique, finite and compatible with share URLs', () => {
-    expect(MAP_COUNTRIES).toHaveLength(180);
-    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(180);
+    expect(MAP_COUNTRIES).toHaveLength(181);
+    expect(new Set(COUNTRY_OPTIONS.map(({ id }) => id)).size).toBe(181);
     for (const item of MAP_COUNTRIES) {
       expect(item.path).toMatch(/^M/);
       expect(item.path).not.toMatch(/NaN|Infinity/);
@@ -27,6 +27,8 @@ describe('map geometry and filter contracts', () => {
     expect(MAP_COUNTRIES_BY_ID['map-kosovo']).toBeDefined();
     expect(MAP_COUNTRIES_BY_ID.egypt.name).toBe('Egypt');
     expect(MAP_COUNTRIES_BY_ID['map-192'].name).toBe('Cuba');
+    expect(MAP_COUNTRIES_BY_ID['map-132'].name).toBe('Cabo Verde');
+    expect(MAP_COUNTRIES_BY_ID['map-132'].isLocator).toBe(true);
     expect(MAP_COUNTRIES_BY_ID['map-840'].name).toBe('United States');
     expect(MAP_COUNTRIES_BY_ID['map-124'].name).toBe('Canada');
     expect(MAP_COUNTRIES_BY_ID['map-036'].name).toBe('Australia');
@@ -174,7 +176,7 @@ describe('interactive atlas map', () => {
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'true');
     expect(cards()).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: 'Clear geographic selection' }));
-    expect(cards()).toHaveLength(156);
+    expect(cards()).toHaveLength(157);
     expect(map().getByRole('button', { name: /Iran:/ })).toHaveAttribute('aria-pressed', 'false');
   });
 });
