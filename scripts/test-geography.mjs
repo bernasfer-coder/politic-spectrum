@@ -386,6 +386,9 @@ assert.ok(southSudanTransition?.sourceIds.includes('southSudanTransitionDissolut
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanRepublicanOrderRadioTamazuj2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanCaretakerSwearingSsbc2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanInterPartyDialoguePresidency2026'));
+assert.ok(southSudanTransition?.sourceIds.includes('southSudanDialogueOppositionAbsenceRadioTamazuj20260924'));
+assert.ok(southSudanTransition?.claim.includes('representatives of major opposition groups did not attend the opening session'));
+assert.ok(southSudanTransition?.limitation.includes('subsequent dialogue participation and outcome'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanCaretakerAppointmentsSudansPost2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanElectoralRoadmapAp2026'));
 assert.ok(southSudanTransition?.sourceIds.includes('southSudanPressElectionActDiscrepancy2026'));
