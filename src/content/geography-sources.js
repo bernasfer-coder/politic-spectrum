@@ -9901,6 +9901,76 @@ const sources = [
     description: 'Broad book-length history organized around political equality, natural rights, popular sovereignty and the contradictions of United States development. It adds a synthetic national narrative but cannot stand for all local, Indigenous, Black, immigrant, labor, gender, regional or transnational histories.'
   },
   {
+    id: 'unitedStatesExecutiveOrder14148FederalRegister2025',
+    label: 'President of the United States — Executive Order 14148, Initial Rescissions of Harmful Executive Orders and Actions (20 January 2025)',
+    url: 'https://www.federalregister.gov/documents/2025/01/28/2025-01901/initial-rescissions-of-harmful-executive-orders-and-actions',
+    note: 'Federal Register publication of Executive Order 14148 consulted as a primary executive record and link only. No order text or image is republished; the revocations and administration’s stated rationale are distinguished from later implementation and measured outcomes.',
+    accessDate: '2026-09-26', creators: ['Donald J. Trump'], institution: 'Executive Office of the President / Federal Register',
+    publicationDate: '2025-01-28', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'executive order / Federal Register', identifiers: { executiveOrder: '14148', signedDate: '2025-01-20', federalRegisterCitation: '90 FR 8237' },
+    description: 'The order revokes a list of prior executive actions and states the incoming administration’s rationale. It documents an executive policy direction, not the full legal status of every revoked measure, implementation or public opinion.'
+  },
+  {
+    id: 'unitedStatesExecutiveOrder14160Citizenship2025',
+    label: 'President of the United States — Executive Order 14160, Protecting the Meaning and Value of American Citizenship (20 January 2025)',
+    url: 'https://www.federalregister.gov/documents/2025/01/29/2025-02007/protecting-the-meaning-and-value-of-american-citizenship',
+    note: 'Federal Register publication of Executive Order 14160 consulted as a primary executive record and link only. No order text is republished; the executive interpretation is distinguished from the courts’ later constitutional holding and from implementation.',
+    accessDate: '2026-09-26', creators: ['Donald J. Trump'], institution: 'Executive Office of the President / Federal Register',
+    publicationDate: '2025-01-29', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'executive order / Federal Register', identifiers: { executiveOrder: '14160', signedDate: '2025-01-20', federalRegisterCitation: '90 FR 8449' },
+    description: 'The order directs a narrowed interpretation of birthright citizenship for specified children born in the United States. It records an executive position that was challenged and later rejected on the merits by the Supreme Court in Trump v. Barbara.'
+  },
+  {
+    id: 'unitedStatesPublicLaw11921Congress2025',
+    label: 'United States Congress — Public Law 119–21 (H.R. 1), 4 July 2025',
+    url: 'https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.pdf',
+    note: 'Enrolled public law consulted through the official Congress.gov full-text PDF as a primary legislative record and link only. No statutory language or tables are reproduced; enacted text is distinguished from agency implementation, projected fiscal outcomes and lived effects.',
+    accessDate: '2026-09-26', creators: ['119th United States Congress'], institution: 'U.S. Congress / Government Publishing Office',
+    publicationDate: '2025-07-04', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'federal public law / reconciliation act', identifiers: { publicLaw: '119-21', bill: 'H.R. 1', enactedDate: '2025-07-04', congress: '119th' },
+    description: 'A broad reconciliation statute enacted by Congress and signed on 4 July 2025. Its multiple titles amend tax, nutrition, health, immigration, energy and other federal programs; the text establishes legislative choices, not their subsequent uniform effects.'
+  },
+  {
+    id: 'unitedStatesLearningResourcesTrumpSupremeCourt2026',
+    label: 'Supreme Court of the United States — Learning Resources, Inc. v. Trump (20 February 2026)',
+    url: 'https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf',
+    note: 'Official Supreme Court opinion consulted as a primary judicial record and link only. No opinion text or image is republished; the divided opinions and precise statutory holding are distinguished from tariff authorities available under other laws and from later executive action.',
+    accessDate: '2026-09-26', creators: ['Supreme Court of the United States'], institution: 'Supreme Court of the United States',
+    publicationDate: '2026-02-20', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Supreme Court opinion / statutory and separation-of-powers dispute', identifiers: { docket: '24-1287; 25-250', decisionDate: '2026-02-20', reporter: '607 U.S. ___ (2026)' },
+    description: 'The Court held that the International Emergency Economic Powers Act does not authorize the President to impose the challenged tariffs. The reasoning was divided, and the decision did not invalidate tariff authority Congress may delegate under other statutes.'
+  },
+  {
+    id: 'unitedStatesTrumpBarbaraSupremeCourt2026',
+    label: 'Supreme Court of the United States — Trump v. Barbara (30 June 2026)',
+    url: 'https://www.supremecourt.gov/opinions/25pdf/25-365_new_5if6.pdf',
+    note: 'Official Supreme Court opinion consulted as a primary constitutional and judicial record and link only. No opinion text or image is republished; the majority holding is distinguished from dissents, prior injunction rulings and subsequent implementation.',
+    accessDate: '2026-09-26', creators: ['Supreme Court of the United States'], institution: 'Supreme Court of the United States',
+    publicationDate: '2026-06-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Supreme Court opinion / Fourteenth Amendment citizenship dispute', identifiers: { docket: '25-365', argued: '2026-04-01', decisionDate: '2026-06-30', reporter: '609 U.S. ___ (2026)' },
+    description: 'The Court held that children born in the United States to parents unlawfully or temporarily present are citizens at birth under the Fourteenth Amendment. The opinion records constitutional adjudication of Executive Order 14160, not a complete account of immigration policy or all citizenship questions.'
+  },
+  {
+    id: 'unitedStatesGAOWorkforce2026',
+    label: 'U.S. Government Accountability Office — Federal Agency Workforce Changes: Update for July 2025 to January 2026 (17 June 2026)',
+    url: 'https://www.gao.gov/products/gao-26-108583',
+    note: 'GAO report and methods summary consulted as an institutional audit for Congress and linked only; no report text, chart or table is republished. Findings are bounded to reported data from 22 major CFO Act agencies, and GAO cautions that other factors also contributed to workforce changes.',
+    accessDate: '2026-09-26', creators: ['U.S. Government Accountability Office'], institution: 'U.S. Government Accountability Office',
+    publicationDate: '2026-06-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Congressional oversight report / federal workforce data review', identifiers: { report: 'GAO-26-108583', observationPeriod: '2025-01 to 2026-01', releaseDate: '2026-06-17' },
+    description: 'GAO reports that 22 major federal agencies recorded nearly 378,000 employee separations and about 127,000 hires in 2025; their workforce declined by nearly 256,000, or more than 11 percent, between December 2024 and January 2026. These descriptive agency totals do not alone isolate causation or represent the entire federal workforce.'
+  },
+  {
+    id: 'unitedStatesGAODHSGrants2026',
+    label: 'U.S. Government Accountability Office — DHS Grants: Approach to Terminations and Pauses Disrupted Some Program Activities (17 September 2026)',
+    url: 'https://www.gao.gov/products/gao-26-109097',
+    note: 'GAO report to Congress consulted as a bounded institutional audit and linked only. No report text or tables are republished; findings concern DHS grant actions from January through September 2025 and do not establish nationwide or uniform effects.',
+    accessDate: '2026-09-26', creators: ['U.S. Government Accountability Office'], institution: 'U.S. Government Accountability Office',
+    publicationDate: '2026-09-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'Congressional oversight report / federal grant implementation review', identifiers: { report: 'GAO-26-109097', observationPeriod: '2025-01 to 2025-09', releaseDate: '2026-09-17' },
+    description: 'GAO found that DHS terminated 362 grants and deobligated about $1.002 billion, while pauses and the approach to terminations disrupted some program activity; FEMA reinstated certain funds after a court order. It is an agency-specific review rather than an estimate of total federal savings or a general evaluation of the administration.'
+  },
+  {
     id: 'cubaNationalAssemblyElection2023',
     label: 'Consejo Electoral Nacional de Cuba — Resultados finales de las elecciones nacionales de 2023',
     url: 'https://www.granma.cu/cuba/2023-03-30/resultados-finales-confirman-participacion-mayoritaria-del-pueblo-en-elecciones-nacionales-30-03-2023-22-03-05',

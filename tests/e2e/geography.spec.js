@@ -74,6 +74,18 @@ test('Peru 2026 update balances observer assessments, narrow result and post-ina
   await expect(card).toContainText('no event-specific book-length account of the 2026 election');
 });
 
+test('United States 2026 update distinguishes executive orders, enacted law, court holdings and bounded GAO findings', async ({ page }) => {
+  await page.goto('/#geography?case=united-states-constitutional-federal-and-contested-democratic-order');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('did not authorize the challenged tariffs');
+  await expect(card).toContainText('citizens at birth under the Fourteenth Amendment');
+  await expect(card).toContainText('nearly 378,000 separations');
+  await expect(card).toContainText('no event-specific book-length scholarly history');
+  await expect(card).toContainText('not a complete history of the second Trump administration');
+});
+
 test('France 2026 case distinguishes Article 49(3) budget adoption from the still-proposed 2027 budget', async ({ page }) => {
   await page.goto('/#geography?case=french-fifth-republic-constitutional-and-political-history');
   const card = page.locator('.geo-card');

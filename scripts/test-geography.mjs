@@ -131,6 +131,20 @@ for (const sourceId of ['peruEuEomFinalReport2026', 'peruOasRunoffObservationRep
   assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Peru bibliography source missing: ${sourceId}`);
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Peru rights/provenance review missing: ${sourceId}`);
 }
+const unitedStates2026 = filterGeographyCases({ country: 'map-840' }).find(({ id }) => id === 'united-states-constitutional-federal-and-contested-democratic-order');
+assert.equal(unitedStates2026.endYear, 2026);
+assert.equal(unitedStates2026.reviewedAt, '2026-09-26');
+assert.ok(unitedStates2026.claim.includes('did not authorize the challenged tariffs'));
+assert.ok(unitedStates2026.claim.includes('citizens at birth under the Fourteenth Amendment'));
+assert.ok(unitedStates2026.claim.includes('22 major federal agencies'));
+assert.ok(unitedStates2026.claim.includes('not a blanket diagnosis'));
+assert.ok(unitedStates2026.limitation.includes('no event-specific book-length scholarly history'));
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === unitedStates2026.labelId)?.aliases.includes('United States political history 1776–2026'));
+for (const sourceId of ['unitedStatesExecutiveOrder14148FederalRegister2025', 'unitedStatesExecutiveOrder14160Citizenship2025', 'unitedStatesPublicLaw11921Congress2025', 'unitedStatesLearningResourcesTrumpSupremeCourt2026', 'unitedStatesTrumpBarbaraSupremeCourt2026', 'unitedStatesGAOWorkforce2026', 'unitedStatesGAODHSGrants2026']) {
+  assert.ok(unitedStates2026.sourceIds.includes(sourceId), `United States source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `United States bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `United States rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'germany' })[0].id, 'west-german-constitutional-reconstruction');
 assert.equal(filterGeographyCases({ country: 'germany' }).find(({ id }) => id === 'german-reunified-constitutional-democratic-order')?.id, 'german-reunified-constitutional-democratic-order');
 assert.ok(filterGeographyCases({ country: 'germany' }).some(({ id }) => id === 'german-post-2021-coalition-crisis-and-2025-electoral-contestation'));
