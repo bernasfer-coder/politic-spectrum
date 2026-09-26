@@ -24,6 +24,26 @@ assert.equal(MAP_COUNTRIES_BY_ID['map-376']?.name, 'Israel');
 assert.ok(filterGeographyCases({ country: 'map-376' }).some(({ id }) => id === israelElection2026?.id));
 assert.ok(israelElection2026?.sourceIds.includes('israelLandauArabMinority1993'));
 assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('israelLandauArabMinority1993'))?.note.includes('book text not read'));
+const tongaTransition2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'tongan-post-2010-constitutional-and-electoral-transition');
+assert.equal(tongaTransition2026?.endYear, 2026);
+assert.equal(tongaTransition2026?.reviewedAt, '2026-09-26');
+assert.ok(tongaTransition2026?.historicalSetting.includes('2025'));
+assert.ok(tongaTransition2026?.claim.includes('one woman directly elected'));
+assert.ok(tongaTransition2026?.claim.includes('16–10'));
+assert.ok(tongaTransition2026?.claim.includes('effective 31 December'));
+assert.ok(tongaTransition2026?.claim.includes('the appeal judgments and the by-election itself were not independently verified here'));
+assert.ok(tongaTransition2026?.claim.includes('polling remained in the future on 26 September'));
+assert.ok(tongaTransition2026?.limitation.includes('not studies of the 2025 election'));
+assert.ok(tongaTransition2026?.limitation.includes('direct article pages returned HTTP 403'));
+assert.ok(tongaTransition2026?.limitation.includes('8 October had not occurred'));
+for (const sourceId of ['tongaElectionInformation2025', 'tongaElectionResults2025', 'tongaIpuElection2025', 'tongaParliamentFakafanuaElection2025', 'tongaParliamentCabinet2026', 'tongaAttorneyGeneralElectionJudgmentIndex2026', 'tongaParliamentNiua17AppealPending2026', 'matangiTangimanaAppeal2026', 'matangiSikaAppeal2026', 'matangiTongaByelectionCandidates2026']) {
+  assert.ok(tongaTransition2026?.sourceIds.includes(sourceId), `Tonga transition should cite ${sourceId}`);
+  assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes(sourceId)), `Tonga source ${sourceId} should resolve in bibliography`);
+}
+assert.ok(tongaTransition2026?.sourceIds.includes('campbellIslandKingdomTonga2015'));
+assert.ok(tongaTransition2026?.sourceIds.includes('woodEllemQueenSalote1999'));
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'tonga')?.countryIds[0], 'tonga');
+assert.ok(filterGeographyCases({ country: 'tonga' }).some(({ id }) => id === tongaTransition2026?.id));
 const latviaElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'latvia-15th-saeima-election-2026-pre-election');
 assert.equal(latviaElection2026?.datePrecision, 'snapshot');
 assert.equal(latviaElection2026?.reviewedAt, '2026-09-26');

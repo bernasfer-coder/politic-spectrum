@@ -62,6 +62,18 @@ test('Mauritius election case distinguishes returns, platform restriction and pr
   await expect(card).toContainText('No collective voter motive');
 });
 
+test('Tonga case separates the 2025 parliamentary transition from pending October 2026 by-elections', async ({ page }) => {
+  await page.goto('/#geography?case=tongan-post-2010-constitutional-and-electoral-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('scheduled a general election for 20 November 2025');
+  await expect(card).toContainText('16–10');
+  await expect(card).toContainText('one woman was directly elected');
+  await expect(card).toContainText('14 candidates were nominated');
+  await expect(card).toContainText('polling remained in the future on 26 September');
+  await expect(card).toContainText('not independently verified here');
+});
+
 test('shared cases link to the encyclopedia and bibliography, and return to the atlas', async ({ page }) => {
   await page.goto('/#geography?case=iran-constitution-1989');
   const card = page.locator('.geo-card');
