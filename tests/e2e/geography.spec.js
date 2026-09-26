@@ -52,6 +52,19 @@ test('New Zealand 2026 update distinguishes scheduled election and future local-
   await expect(card).toContainText('no candidate, polling, result, turnout, observation or post-election conclusion is asserted');
 });
 
+test('Uruguay case separates Orsi-era legal transition and executive self-report from evaluated outcomes', async ({ page }) => {
+  await page.goto('/#geography?case=uruguayan-lacalle-pou-coalition-and-orsi-electoral-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1 March 2025 transfer of executive office');
+  await expect(card).toContainText('Law 20.446');
+  await expect(card).toContainText('Independent post-election scholarship');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('executive self-report, not independent findings');
+  await expect(card.locator('a[href="https://www.impo.com.uy/bases/leyes-originales/20446-2025"]')).toHaveCount(1);
+  await expect(card.locator('a[href="https://www.gub.uy/presidencia/comunicacion/publicaciones/presidente-republica-yamandu-orsi-asamblea-general"]')).toHaveCount(1);
+});
+
 test('Spain 2026 update distinguishes partial constitutional review, two EU references and a separate legislative defeat', async ({ page }) => {
   await page.goto('/#geography?case=spanish-democratic-consolidation-and-regional-pluralism');
   const card = page.locator('.geo-card');

@@ -9531,6 +9531,38 @@ const sources = [
     description: 'Official election-management record of Uruguay’s 2024 national election and associated plebiscites, including the national executive and legislative process and published result files. It establishes a dated institutional endpoint, not a complete account of campaign conditions, social divisions or the incoming government’s later performance.'
   },
   {
+    id: 'uruguayOrsiInvestiture2025',
+    label: 'Presidency of Uruguay — Yamandú Orsi investiture address to the General Assembly (1 March 2025)',
+    url: 'https://medios.presidencia.gub.uy/tav_portal/2025/noticias/AN_306/discurso-asuncion-orsi.pdf',
+    note: 'Official presidential investiture address consulted as primary evidence of the constitutional transfer and the incoming president’s own framing. No speech wording or PDF image is reproduced; an inaugural address is self-description, not evidence of implementation, consensus or outcomes.',
+    accessDate: '2026-09-26', creators: ['Yamandú Orsi', 'Presidency of the Eastern Republic of Uruguay'], institution: 'Presidency of the Eastern Republic of Uruguay', publicationDate: '2025-03-01', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary presidential investiture address / official record', identifiers: { speechDate: '2025-03-01', office: 'President of the Republic' }, description: 'Orsi’s official address at investiture before the General Assembly on 1 March 2025 marks the executive transfer and records the president’s stated interpretation of democratic restoration and government priorities. It does not establish subsequent action or public reception.'
+  },
+  {
+    id: 'uruguayOrsiFirstYearReport2026',
+    label: 'Presidency of Uruguay — Orsi first-year report to the General Assembly and Government Commitments Report (2 March 2026)',
+    url: 'https://www.gub.uy/presidencia/comunicacion/publicaciones/presidente-republica-yamandu-orsi-asamblea-general',
+    note: 'Presidency publication page and linked Government Commitments Report consulted as executive primary self-report. No report text, charts, photographs or PDF page are republished; claims of delivery are attributed to the government and are not independent evaluation or proof of uniform effects.',
+    accessDate: '2026-09-26', creators: ['Presidency of the Eastern Republic of Uruguay', 'Yamandú Orsi'], institution: 'Presidency of the Eastern Republic of Uruguay', publicationDate: '2026-03-02', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'executive accountability address and Government Commitments Report', identifiers: { reportDate: '2026-03-02', reviewPeriod: 'first year of administration' }, description: 'The Presidency records that Orsi reported on his administration’s first year to the General Assembly on 2 March 2026 and links a Government Commitments Report. This documents an executive accountability presentation and the government’s own reported status, not independent policy evaluation or causal outcomes.'
+  },
+  {
+    id: 'uruguayNationalBudget2025To2029',
+    label: 'Uruguay — Law 20.446: National Budget for 2025–2029 (promulgated 16 December 2025; published 8 January 2026)',
+    url: 'https://www.impo.com.uy/bases/leyes-originales/20446-2025',
+    note: 'IMPO’s official law text consulted as primary legal and budgetary evidence. No statutory wording, table or facsimile is reproduced; enacted appropriations and planning authority are distinguished from execution, distributional effects and policy success.',
+    accessDate: '2026-09-26', creators: ['General Assembly of the Eastern Republic of Uruguay'], institution: 'IMPO, Centro de Información Oficial', publicationDate: '2026-01-08', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary national budget law / official legal text', identifiers: { law: '20.446', promulgationDate: '2025-12-16', publicationDate: '2026-01-08', budgetPeriod: '2025–2029' }, description: 'Official text of the National Budget Law for 2025–2029, approved by the General Assembly and promulgated on 16 December 2025, published in the Official Gazette on 8 January 2026. It establishes statutory budget design and appropriations, not their subsequent execution or effects.'
+  },
+  {
+    id: 'uruguayBudgetAccount2025MEF2026',
+    label: 'Uruguay Ministry of Economy and Finance — Executive 2025 budget account and execution balance (30 June 2026)',
+    url: 'https://www.gub.uy/ministerio-economia-finanzas/politicas-y-gestion/rendicion-cuentas-balance-ejecucion-presupuestal-ejercicio-2025',
+    note: 'MEF official page consulted for the executive’s proposed 2025 budget account and execution-balance documents. No document wording, table, spreadsheet, chart or scan is republished; the June submission is a primary executive account, not an independent audit or a final account of social outcomes.',
+    accessDate: '2026-09-26', creators: ['Ministry of Economy and Finance of Uruguay'], institution: 'Ministry of Economy and Finance of Uruguay', publicationDate: '2026-06-30', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'executive budget-account and budget-execution submission / official fiscal records', identifiers: { fiscalYear: '2025', pageDate: '2026-06-30', documentStatus: 'executive project submitted for consideration' }, description: 'The Ministry page dated 30 June 2026 provides access to the Executive’s project for the Rendición de Cuentas y Balance de Ejecución Presupuestal for fiscal year 2025. It is a dated executive accountability record; its project status and scope should not be confused with independent evaluation or measured policy effects.'
+  },
+  {
     id: 'ecuadorConstitution2008Asamblea',
     label: 'Ecuador — Constitución de la República del Ecuador (2008, official Asamblea Nacional record)',
     url: 'https://www.asambleanacional.gob.ec/sites/default/files/constituciondelarepublicadelecuador-incluyereformas-consultapopular7demayo.pdf',
