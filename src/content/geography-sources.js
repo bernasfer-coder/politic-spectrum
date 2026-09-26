@@ -4239,6 +4239,69 @@ const sources = [
     description: 'Multidisciplinary edited volume on the Cabo Delgado conflict, its development, international humanitarian law, regional security and responses including private military assistance. It supplies a distinct conflict and regional-security perspective, not a complete history of Mozambique, every affected community or a final account of insurgent identity and causation.',
   },
   {
+    id: 'mozambiqueUnExpertsPostElection2024',
+    label: 'UN Special Procedures mandate holders — “Post-election violence and repression must stop” (15 November 2024)',
+    url: 'https://mozambique.un.org/pt/283692-mo%C3%A7ambique-viol%C3%AAncia-p%C3%B3s-eleitoral-e-a-repress%C3%A3o-devem-parar-dizem-os-peritos-da-onu',
+    note: 'UN Mozambique publication of a statement by Special Procedures mandate holders. The reported minimums are attributed to consistent reports and limited to the statement’s early post-election horizon; they are not a final or independently reconciled casualty count. No statement text or image is republished.',
+    accessDate: '2026-09-26', creators: ['UN Special Procedures mandate holders'], institution: 'United Nations Mozambique', publicationDate: '2024-11-15', evidenceRole: 'contextual', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official UN human-rights experts statement', identifiers: { date: '2024-11-15', minimumDeaths: '30', injured: '200', detained: '300' },
+    description: 'A contemporaneous statement by UN human-rights experts reporting at least 30 deaths, 200 injured and 300 detained in reports available by 15 November 2024. The bounded early estimate is distinct from later figures using longer periods and different methods.'
+  },
+  {
+    id: 'mozambiquePresidencyInclusiveDialogueMarch2025',
+    label: 'Presidency of Mozambique — meeting with Venâncio Mondlane and account of the political dialogue commitment (23 March 2025)',
+    url: 'https://presidencia.gov.mz/?p=697',
+    note: 'Official presidential account, used as evidence of what the Presidency announced, not as independent validation of public support, inclusiveness or implementation. The report identifies nine signatory formations and dialogue topics; no article wording is republished.',
+    accessDate: '2026-09-26', creators: ['Presidency of the Republic of Mozambique'], institution: 'Presidency of the Republic of Mozambique', publicationDate: '2025-03-23', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official presidential communiqué on political dialogue', identifiers: { date: '2025-03-23', signatoryFormations: '9' },
+    description: 'The Presidency reports President Daniel Chapo’s meeting with Venâncio Mondlane and says nine political formations signed a commitment for inclusive national dialogue, including discussion of constitutional revision and governance. It documents the official account and named signatories, not representative participation or agreed outcomes.'
+  },
+  {
+    id: 'mozambiqueNationalDialogueLaw2025',
+    label: 'Imprensa Nacional de Moçambique — Law No. 1/2025 approving the Political Commitment for an Inclusive National Dialogue (11 April 2025)',
+    url: 'https://www.inm.gov.mz/pt-br/content/assembleia-da-rep%C3%BAblica-suplemento-n%C2%BA-1-de-110425-pag-442-1-4-br-n%C2%BA-69-boletim-da-rep%C3%BAblica',
+    note: 'Official Gazette catalogue entry for Series I, Supplement 1, issue 69, 11 April 2025, pages 1–4. Primary legal publication; no law wording, scan or page image is reproduced. The law institutionalizes a commitment and does not establish consent or implementation.',
+    accessDate: '2026-09-26', creators: ['Assembleia da República de Moçambique'], institution: 'Imprensa Nacional de Moçambique', publicationDate: '2025-04-11', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official gazette publication / national-dialogue law', identifiers: { law: '1/2025', gazette: 'Boletim da República, Series I, Supplement 1, no. 69', pages: '1–4' },
+    description: 'Official Gazette catalogue record for the law approving the Political Commitment for an Inclusive National Dialogue, signed on 5 March 2025. It establishes a formal legal step, not successful dialogue, representative participation, public consensus or completed constitutional reform.'
+  },
+  {
+    id: 'mozambiquePresidencyDialogueImplementationApril2025',
+    label: 'Presidency of Mozambique — launch of the operational phase of the Inclusive National Dialogue (30 April 2025)',
+    url: 'https://presidencia.gov.mz/?p=1548',
+    note: 'Official presidential account of procedural actions and decisions. Assertions about unanimous approval, progress and inclusion are attributed to the Presidency and participants; they are not independent evaluations of implementation or representativeness. No communiqué wording is republished.',
+    accessDate: '2026-09-26', creators: ['Presidency of the Republic of Mozambique'], institution: 'Presidency of the Republic of Mozambique', publicationDate: '2025-04-30', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official presidential communiqué on dialogue-process implementation', identifiers: { date: '2025-04-30', institution: 'COTE' },
+    description: 'The Presidency reports approval of an action plan, terms for selecting civil-society representatives and operating rules for the Technical Commission (COTE), following enactment of the dialogue law. This is a record of announced institutional steps, not proof that later consultation or consensus was completed.'
+  },
+  {
+    id: 'mozambiqueUprCompilation2026',
+    label: 'OHCHR — Compilation of information prepared for Mozambique’s fourth Universal Periodic Review, A/HRC/WG.6/52/MOZ/2 (4 February 2026)',
+    url: 'https://documents.un.org/doc/undoc/gen/g26/002/44/pdf/g2600244.pdf',
+    note: 'Official OHCHR compilation that expressly summarizes information in prior UN documents under word limits. Used as a secondary source of attributed UN-country-team, mandate-holder and treaty-body reporting, not as an original fact-finding investigation; cite the report paragraphs rather than generalize across the population. No PDF wording or table is republished.',
+    accessDate: '2026-09-26', creators: ['Office of the United Nations High Commissioner for Human Rights'], institution: 'United Nations Human Rights Council, Working Group on the Universal Periodic Review', publicationDate: '2026-02-04', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'official UN human-rights review compilation', identifiers: { document: 'A/HRC/WG.6/52/MOZ/2', session: '52nd session', relevantParagraphs: '18–20' },
+    description: 'Compilation prepared for the May 2026 Universal Periodic Review. Paragraphs 18–20 summarize UN reporting on post-election violence and state that 742 criminal cases were opened, 31 involving security forces, with two indictments by April 2025. The underlying counts are attributed to UN country-team and Special Procedures sources and retain their time and method limits.'
+  },
+  {
+    id: 'mozambiqueCitizenParticipaDialogue2026',
+    label: 'Cidadão Participa — Inclusive National Dialogue process page and published timetable (accessed 26 September 2026)',
+    url: 'https://www.cidadaoparticipa.org.mz/processes/dialogo-nacional',
+    note: 'Dynamic process platform used only for its published process description and prospective timetable, not as evidence of completed phases, population-wide views, representative sampling or consensus. The page’s changing stage marker and future-dated milestones require fresh checking before any later endpoint is asserted. User submissions and comments are not reproduced.',
+    accessDate: '2026-09-26', creators: ['Cidadão Participa / Inclusive National Dialogue process'], institution: 'COTE-linked civic-participation platform', publicationDate: null, evidenceRole: 'contextual', confidence: 'medium', languages: ['Portuguese'],
+    sourceType: 'official participatory-process platform and prospective timetable', identifiers: { accessed: '2026-09-26', plannedHorizon: '2027' },
+    description: 'Process page describing the Inclusive National Dialogue and a staged timetable extending through 2027. Its dynamic content is evidence that phases and deadlines were published, not proof that future steps were completed or that platform participants represent Mozambicans generally.'
+  },
+  {
+    id: 'mozambiqueHrWPostElectionKillings2025',
+    label: 'Human Rights Watch — “Mozambique: No Arrests for Post-Election Political Killings” (13 April 2025)',
+    url: 'https://www.hrw.org/news/2025/04/13/mozambique-no-arrests-post-election-political-killings',
+    note: 'Human Rights Watch account based on remote interviews with 21 witnesses, relatives, journalists and police, covering a bounded set of alleged killings from October 2024 to March 2025. Its “at least ten” documented opposition-official cases are not a total-casualty census; allegations and absence of arrests are attributed as of publication. No report wording is republished.',
+    accessDate: '2026-09-26', creators: ['Human Rights Watch'], institution: 'Human Rights Watch', publicationDate: '2025-04-13', evidenceRole: 'contextual', confidence: 'medium', languages: ['English'],
+    sourceType: 'human-rights investigation based on remote interviews', identifiers: { publicationDate: '2025-04-13', interviewees: '21', period: '2024-10 to 2025-03' },
+    description: 'Documents ten opposition officials apparently killed between October 2024 and March 2025 based on remote interviews; at publication, the organization reported that no suspects had been identified or arrested in these cases. This bounded investigation and advocacy-source assessment are distinct from a comprehensive casualty accounting.'
+  },
+  {
     id: 'tanzaniaArticlesOfUnion1964Vpo',
     label: 'Vice President’s Office, United Republic of Tanzania — Articles of Union (1964)',
     url: 'https://www.vpo.go.tz/uploads/publications/en-1592553829-articles_of_union.pdf',

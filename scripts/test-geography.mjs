@@ -60,6 +60,21 @@ for (const sourceId of ['tunisiaIsiePresidentialElection2024', 'tunisiaAfricanUn
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Tunisia rights/provenance review missing: ${sourceId}`);
 }
 assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === tunisiaCase.labelId)?.aliases.includes('Tunisia presidential election 2024'));
+const mozambiqueCase = GEOGRAPHY_CASES.find(({ id }) => id === 'mozambican-post-2019-peace-insurgency-and-electoral-contestation');
+assert.equal(mozambiqueCase.endYear, 2026);
+assert.equal(mozambiqueCase.reviewedAt, '2026-09-26');
+assert.ok(mozambiqueCase.claim.includes('742 criminal cases'));
+assert.ok(mozambiqueCase.claim.includes('two had resulted in indictments by April 2025'));
+assert.ok(mozambiqueCase.claim.includes('not a universally settled total'));
+assert.ok(mozambiqueCase.claim.includes('not evidence that dialogue achieved consensus'));
+assert.ok(mozambiqueCase.limitation.includes('No event-specific book-length account'));
+assert.ok(mozambiqueCase.limitation.includes('changing status field'));
+for (const sourceId of ['mozambiqueUnExpertsPostElection2024', 'mozambiquePresidencyInclusiveDialogueMarch2025', 'mozambiqueNationalDialogueLaw2025', 'mozambiquePresidencyDialogueImplementationApril2025', 'mozambiqueUprCompilation2026', 'mozambiqueCitizenParticipaDialogue2026', 'mozambiqueHrWPostElectionKillings2025']) {
+  assert.ok(mozambiqueCase.sourceIds.includes(sourceId), `Mozambique source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Mozambique bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Mozambique rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === mozambiqueCase.labelId)?.aliases.includes('Mozambique political history 2019–2026'));
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);

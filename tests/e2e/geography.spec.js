@@ -127,6 +127,19 @@ test('Tunisia case distinguishes 2024 official results, preliminary observation 
   await expect(card).toContainText('no current status beyond this 2024 event endpoint');
 });
 
+test('Mozambique case distinguishes post-election reporting from 2025–26 dialogue steps and future plans', async ({ page }) => {
+  await page.goto('/#geography?case=mozambican-post-2019-peace-insurgency-and-electoral-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('742 criminal cases');
+  await expect(card).toContainText('two had resulted in indictments by April 2025');
+  await expect(card).toContainText('not a universally settled total');
+  await expect(card).toContainText('not evidence that dialogue achieved consensus');
+  await expect(card).toContainText('The platform timetable extends beyond this review date');
+  await expect(card).toContainText('No event-specific book-length account of the 2024 election crisis');
+});
+
 test('Myanmar 2026 case distinguishes official election claims, UN reporting and the earlier transition record', async ({ page }) => {
   await page.goto('/#geography?case=myanmar-post-2021-spring-revolution-and-competing-governance');
   const card = page.locator('.geo-card');
