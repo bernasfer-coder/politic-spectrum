@@ -11484,6 +11484,23 @@ sources.push({
 });
 
 sources.push({
+  id: 'saoTomeCenLogisticsAndRollUpdateTelaNon20260925',
+  label: 'Abel Veiga — “CEN anuncia aumento do número de eleitores, mas reclama pela logística que ainda não está a 100%” (Téla Nón, 25 September 2026)',
+  url: 'https://www.telanon.info/destaques/2026/09/25/54399/cen-anuncia-aumento-do-numero-de-eleitores-mas-reclama-pela-logistica-que-ainda-nao-esta-a-100/',
+  note: 'Téla Nón reports statements attributed to CEN president Jeudiger Nascimento on 25 September, including that logistics in São Tomé and Príncipe were “40%” guaranteed and that discussions with government were continuing to complete arrangements that day. The report also gives 142,764 voters for the July presidential election, 146,700 for the 27 September contests, and separately says automatic roll updates registered 4,800 new voters; those figures are internally inconsistent arithmetically (the two totals differ by 3,936), and no correction or underlying CEN register was located. It further reports the president’s assurance that complaints by 859 July voters whose names were missing had been resolved; this remains an attributed institutional claim, not independently verified evidence. No article wording, image or underlying record is reproduced.',
+  accessDate: '2026-09-26',
+  creators: ['Abel Veiga'],
+  institution: 'Téla Nón',
+  publicationDate: '2026-09-25',
+  evidenceRole: 'secondary',
+  confidence: 'medium',
+  languages: ['Portuguese'],
+  sourceType: 'local contemporaneous news report quoting the National Election Commission president',
+  identifiers: { interviewSubject: 'Jeudiger Nascimento, CEN president', publicationDate: '2026-09-25', electionDate: '2026-09-27', reportedRollCounts: '142,764 (July presidential); 146,700 (27 September polls); 4,800 new registrations claimed' },
+  description: 'Reports a CEN leader’s pre-election logistics concern and electoral-roll statements. The logistical percentage and promises remain attributable to the interview; the voter totals and claimed number of additions do not reconcile arithmetically.'
+});
+
+sources.push({
   id: 'gambiaForoyaaIecRoadmap2026',
   label: 'Yankuba Jallow — “IEC Sets Presidential Nomination Dates, Other Key Election Activities” (Foroyaa, 11 September 2026)',
   url: 'https://foroyaa.net/iec-sets-presidential-nomination-dates-other-key-election-activities/',

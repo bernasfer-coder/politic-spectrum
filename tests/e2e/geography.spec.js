@@ -84,6 +84,18 @@ test('São Tomé and Príncipe attributes polling-station training report to RST
   await expect(card.locator('a[href*="saoTomePollingStationTrainingRstp20260924"]').first()).toBeVisible();
 });
 
+test('São Tomé and Príncipe preserves CEN logistics statement and voter-roll discrepancy as attributed reporting', async ({ page }) => {
+  await page.goto('/#geography?case=sao-tome-2026-national-assembly-election-pre-election');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('Téla Nón reported remarks attributed to CEN president Jeudiger Nascimento');
+  await expect(card).toContainText('only “40%” guaranteed');
+  await expect(card).toContainText('Those figures do not reconcile arithmetically');
+  await expect(card).toContainText('not independently verified evidence');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="saoTomeCenLogisticsAndRollUpdateTelaNon20260925"]').first()).toBeVisible();
+});
+
 test('Tonga case separates the 2025 parliamentary transition from pending October 2026 by-elections', async ({ page }) => {
   await page.goto('/#geography?case=tongan-post-2010-constitutional-and-electoral-transition');
   const card = page.locator('.geo-card');
