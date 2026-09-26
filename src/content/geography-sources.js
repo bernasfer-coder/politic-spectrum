@@ -11896,6 +11896,105 @@ sources.push(
   }
 );
 
+sources.push(
+  {
+    id: 'yemenUnionAgreement1990UNPeacemaker',
+    label: 'Yemen — Agreement Establishing a Union between the Yemen Arab Republic and the People’s Democratic Republic of Yemen (22 April 1990)',
+    url: 'https://peacemaker.un.org/en/node/8902',
+    note: 'The UN Peacemaker record links the primary agreement and identifies its signatories and date. The agreement is used as evidence of the negotiated legal design of union, not proof that it was implemented evenly or accepted uniformly.' ,
+    accessDate: '2026-09-26', creators: ['Government of the Yemen Arab Republic', 'Government of the People’s Democratic Republic of Yemen'], institution: 'United Nations Peacemaker', publicationDate: '1990-04-22', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic', 'English'],
+    sourceType: 'primary inter-state agreement / legal record', identifiers: { agreementDate: '1990-04-22' }, description: 'The agreement provides the two predecessor states’ formal framework for merger, interim institutions and a single Republic of Yemen. Its proposed structures are read as constitutional design rather than evidence of later practice, equal power-sharing or durable integration.'
+  },
+  {
+    id: 'yemenConstitution1991UNPeacemaker',
+    label: 'Republic of Yemen — Constitution adopted 16 May 1991 (UN Peacemaker copy)',
+    url: 'https://peacemaker.un.org/sites/default/files/document/files/2022/07/yeyemenconstitutionenglish1991.pdf',
+    note: 'The UN Peacemaker record links an English copy of the 1991 constitutional text. It is treated as a primary legal witness to formal institutions only; the text does not establish uniform implementation or current control.' ,
+    accessDate: '2026-09-26', creators: ['Republic of Yemen'], institution: 'United Nations Peacemaker', publicationDate: '1991-05-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary constitutional text / institutional legal archive', identifiers: { adoptionDate: '1991-05-16' }, description: 'The Constitution records the formal political and institutional design adopted after unification. It is not treated as evidence that constitutional provisions were uniformly implemented or remain the operative framework across Yemen’s competing authorities.'
+  },
+  {
+    id: 'yemenNationalDialogueOSESGY2014',
+    label: 'Office of the UN Special Envoy for Yemen — National Dialogue Conference background and outcome (2013–2014)',
+    url: 'https://osesgy.unmissions.org/en/national-dialogue-conference',
+    note: 'The UN mission’s retrospective account is attributed as an institutional summary of the process and its convening. It is not treated as an independent evaluation of representativeness, implementation or consent.' ,
+    accessDate: '2026-09-26', creators: ['Office of the UN Special Envoy for Yemen'], institution: 'United Nations', publicationDate: '2014', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'UN political-process institutional record', identifiers: { conferenceDates: '2013-03-18/2014-01-25' }, description: 'The UN account reports a 565-delegate National Dialogue Conference, identifies participation by southern, Houthi, women, youth and civil-society constituencies, and records that the outcome proposed a federal transition. A proposal and institutional account do not establish implementation or broad political acceptance.'
+  },
+  {
+    id: 'yemenDreschModernHistory2000',
+    label: 'Paul Dresch — A History of Modern Yemen (Cambridge University Press, 2000)',
+    url: 'https://assets.cambridge.org/97805217/90925/sample/9780521790925ws.pdf',
+    note: 'Cambridge University Press bibliographic record and book metadata support an original, attributed synthesis and link only. The book’s account ends around unification and the following decade; it does not cover the later civil wars or 2026 events.' ,
+    accessDate: '2026-09-26', creators: ['Paul Dresch'], institution: 'Cambridge University Press', publicationDate: '2000', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly monograph', identifiers: { hardbackIsbn: '9780521790925', paperbackIsbn: '9780521794824' }, description: 'A modern political history, drawing on historical and anthropological scholarship, covering the imamate, republican revolution, North and South, state formation and unification through the 1990s. Used for historical context, not contemporary developments after its publication.'
+  },
+  {
+    id: 'yemenCarapicoCivilSociety1998',
+    label: 'Sheila Carapico — Civil Society in Yemen: The Political Economy of Activism in Modern Arabia (Cambridge University Press, 1998)',
+    url: 'https://doi.org/10.1017/CBO9780511584893',
+    note: 'Cambridge University Press book record used for an independent scholarly perspective and link only. Its study of civic participation and political economy is historically bounded and does not stand for every Yemeni organization or constituency.' ,
+    accessDate: '2026-09-26', creators: ['Sheila Carapico'], institution: 'Cambridge University Press', publicationDate: '1998', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly monograph', identifiers: { isbn: '9780521590983', doi: '10.1017/CBO9780511584893' }, description: 'A book-length study of Yemen’s civic participation, political economy, state–society relations, colonial activism, pluralism and political crisis. Used to contextualize civic and associational life rather than to generalize a single civil society or national consensus.'
+  },
+  {
+    id: 'yemenDayRegionalismRebellion2012',
+    label: 'Stephen W. Day — Regionalism and Rebellion in Yemen: A Troubled National Union (Cambridge University Press, 2012)',
+    url: 'https://doi.org/10.1017/CBO9781139135443',
+    note: 'Cambridge University Press publisher record used for an independent book-length account and link only. Its regional-fragmentation thesis is identified as Day’s interpretation, not adopted as a total explanation of Yemen.' ,
+    accessDate: '2026-09-26', creators: ['Stephen W. Day'], institution: 'Cambridge University Press', publicationDate: '2012', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly monograph', identifiers: { isbn: '9781107022157', doi: '10.1017/CBO9781139135443' }, description: 'Based on field research, this study examines post-1990 state formation, Saleh-era politics, the 1994 civil war, regionalism, and developments through the 2011 uprising. The author’s thesis is one scholarly interpretation and is not a claim that local identities or tribal structures explain all political action.'
+  },
+  {
+    id: 'yemenLacknerPovertyConflict2022',
+    label: 'Helen Lackner — Yemen: Poverty and Conflict (Routledge, 2022)',
+    url: 'https://www.routledge.com/Yemen-Poverty-and-Conflict/Lackner/p/book/9780367180508',
+    note: 'Routledge bibliographic and publisher descriptions support attributed synthesis and link only. The book’s analysis provides a political-economy perspective published during the conflict; it cannot verify later events or represent all regional experience.' ,
+    accessDate: '2026-09-26', creators: ['Helen Lackner'], institution: 'Routledge', publicationDate: '2022-07-15', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly monograph / political economy', identifiers: { paperbackIsbn: '9780367180508', hardbackIsbn: '9780367180492', doi: '10.4324/9780429059315' }, description: 'A book-length analysis of Yemen’s state formation, institutions, conflict and political economy, including fragmentation and the drivers of the civil war. Its explanatory framework is distinguished from primary records and later reporting.'
+  },
+  {
+    id: 'yemenBrandtTribesPolitics2017',
+    label: 'Marieke Brandt — Tribes and Politics in Yemen: A History of the Houthi Conflict (Hurst, 2017)',
+    url: 'https://doi.org/10.1093/oso/9780190673598.001.0001',
+    note: 'Oxford Academic and Hurst bibliographic records used for an independently researched, locally bounded history and link only. Brandt’s Sa‘dah and tribal focus is not generalized to all Houthis, Zaydis, tribes or Yemenis.' ,
+    accessDate: '2026-09-26', creators: ['Marieke Brandt'], institution: 'Hurst & Company; Oxford University Press', publicationDate: '2017', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly monograph / conflict history', identifiers: { isbn: '9781849046466', onlineIsbn: '9780190872649', doi: '10.1093/oso/9780190673598.001.0001' }, description: 'A book-length, ethnographically and historically grounded account of the Houthi conflict in Sa‘dah, tracing local histories, political agency and state relations. Its regional and social scope is deliberately not treated as a proxy for all Yemeni political life.'
+  },
+  {
+    id: 'yemenUNEnvoyBriefing2026',
+    label: 'Hans Grundberg — Briefing to the UN Security Council on Yemen (10 September 2026)',
+    url: 'https://osesgy.unmissions.org/en/news/briefing-by-the-un-special-envoy-for-yemen-hans-grundberg-to-the-security-council-2',
+    note: 'The Special Envoy’s dated Security Council briefing is a primary institutional statement of the UN mediation office and is linked without republication. Battlefield descriptions and reported control are treated as a dated, fluid UN account, not a definitive territorial survey.' ,
+    accessDate: '2026-09-26', creators: ['Hans Grundberg'], institution: 'Office of the UN Special Envoy for Yemen', publicationDate: '2026-09-10', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary UN political briefing / mediation statement', identifiers: { briefingDate: '2026-09-10' }, description: 'The Special Envoy reported intensified fighting across multiple frontlines and described the situation as fluid, while calling for political engagement and protection of civilians. The statement is an institutional briefing, not an independently verified map of front-line control.'
+  },
+  {
+    id: 'yemenAPMokhaOffensive2026',
+    label: 'Associated Press — Houthi takeover of Mokha amid renewed Yemen fighting (10 September 2026)',
+    url: 'https://apnews.com/article/e4e799701b382799a955969c212800ea',
+    note: 'AP reporting is linked and paraphrased with named competing official and movement sources retained. It is not used to independently resolve territorial control or the claims and motives of conflict parties.' ,
+    accessDate: '2026-09-26', creators: ['Ahmed Al-Haj', 'Fatma Khaled'], institution: 'Associated Press', publicationDate: '2026-09-10', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'independent news report / conflict reporting', identifiers: { reportDate: '2026-09-10' }, description: 'AP reported claims by Houthi and Yemeni officials that Ansar Allah had taken Mokha and described the UN envoy’s warning that renewed fighting had ended a period of relative calm. The event is attributed to reported sources and treated as a volatile snapshot, not a lasting control settlement.'
+  },
+  {
+    id: 'yemenIOMDisplacement2026',
+    label: 'International Organization for Migration — Yemen displacement update during West Coast escalation (13 September 2026)',
+    url: 'https://yemen.un.org/en/322641-iom-yemen-yemen-displacement-tops-85000-conflict-continues-2000-flee-to-djibouti',
+    note: 'IOM’s dated press release summarizes its Displacement Tracking Matrix and humanitarian observations. Its period-specific displacement figure is not presented as a complete national stock of internally displaced people or as an independently audited census.' ,
+    accessDate: '2026-09-26', creators: ['International Organization for Migration'], institution: 'United Nations in Yemen', publicationDate: '2026-09-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional displacement-monitoring update', identifiers: { reportDate: '2026-09-13', dataset: 'IOM Displacement Tracking Matrix' }, description: 'IOM reported 85,818 people as displaced in its cited operational reporting, including 82,164 since the beginning of September, as fighting spread across West Coast and South Taiz frontlines. These are dated operational monitoring figures and not a complete national displacement stock or census.'
+  },
+  {
+    id: 'yemenAPSouthernConstitution2026',
+    label: 'Associated Press — Southern Transitional Council announces constitution for an independent southern state (2 January 2026)',
+    url: 'https://apnews.com/article/yemen-saudi-arabia-uae-aden-hadramout-stc-47430060997b893492a4770841a6eab1',
+    note: 'The report is linked and paraphrased as a contemporaneous account of the STC announcement, with uncertainty about enforceability retained. The declared document is not represented as a recognized state, an implemented constitution or a referendum mandate.' ,
+    accessDate: '2026-09-26', creators: ['Ahmed Al-Haj', 'Fatma Khaled'], institution: 'Associated Press', publicationDate: '2026-01-02', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report / political declaration', identifiers: { reportDate: '2026-01-02' }, description: 'AP reported the STC’s announcement of a constitution for a proposed southern state and quoted its stated two-year interim period before a proposed self-determination referendum. AP explicitly reported uncertainty about implementation; this is an announcement by a separatist actor, not a new recognized sovereign state.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,

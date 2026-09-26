@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(158);
+  await expect(page.locator('.geo-card')).toHaveCount(159);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(4);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -462,6 +462,22 @@ test('Cameroon records the 2025 result and contested aftermath separately from t
   await expect(card.locator('a[href="https://apnews.com/article/cameroon-election-violence-protests-biya-tchiroma-32aed152d6d7228d58f438ce64cb7cf8"]')).toHaveCount(1);
 });
 
+test('Yemen distinguishes the union project, competing authority and dated conflict reporting', async ({ page }) => {
+  await page.goto('/#geography?case=yemeni-unification-and-fragmented-state-conflict');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1990–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('formal design, not evidence that union or constitutional authority operated evenly');
+  await expect(card).toContainText('Sa‘dah-focused ethnographic history');
+  await expect(card).toContainText('85,818 people as displaced');
+  await expect(card).toContainText('neither a complete census nor the total national IDP stock');
+  await expect(card).toContainText('not treated as an enacted constitution, recognized state or popular mandate');
+  await expect(card).toContainText('no national six-axis score');
+  await expect(card.locator('a[href="https://osesgy.unmissions.org/en/news/briefing-by-the-un-special-envoy-for-yemen-hans-grundberg-to-the-security-council-2"]')).toHaveCount(1);
+  await expect(card.locator('a[href="https://apnews.com/article/e4e799701b382799a955969c212800ea"]')).toHaveCount(1);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -478,7 +494,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(158);
+  await expect(page.locator('.geo-card')).toHaveCount(159);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
