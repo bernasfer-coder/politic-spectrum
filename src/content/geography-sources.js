@@ -10116,6 +10116,87 @@ sources.push(
     sourceType: 'monthly institutional economic-monitoring report',
     identifiers: { reportingPeriod: 'August 2026', publicationDate: '2026-09-23', issue: '5 / FY2026' },
     description: 'The monthly monitor reports inflation estimates, exchange-rate and trade indicators, domestic revenues and expenditures, declining aid and returnee-related pressure. The data are time-bound and some figures are explicitly estimates; no inference about uniform household experience or ideological orientation follows.'
+  },
+  {
+    id: 'laosKplCandidates2026',
+    label: 'Lao News Agency (KPL) — National Election Committee announces candidates for the 10th National Assembly election',
+    url: 'https://kpl.gov.la/en/detail.aspx?id=96606',
+    note: 'Official January 2026 announcement consulted for the candidate total and seat count before the 22 February poll. It reports 243 candidates for 175 seats. No candidate list or table is republished; the announcement is not independent assessment of competition or candidate access.',
+    accessDate: '2026-09-26', creators: ['Lao News Agency'], institution: 'Khaosan Pathet Lao (KPL)', publicationDate: '2026-01-26', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official national election candidate announcement', identifiers: { electionDate: '2026-02-22', candidates: '243', seats: '175' },
+    description: 'KPL reports the National Election Committee announcement of 243 candidates contesting 175 National Assembly seats. The official count establishes the announced ballot size, not pluralist party competition, equal access or voter choice.'
+  },
+  {
+    id: 'laosBtiCountryReport2026',
+    label: 'Bertelsmann Stiftung — BTI 2026 Laos Country Report',
+    url: 'https://bti-project.org/fileadmin/api/content/en/downloads/reports/country_report_2026_LAO.pdf',
+    note: 'The comparative country report was consulted for context only. Its stated review period ends 31 January 2025, so it cannot assess the February 2026 election or subsequent legislature. Original attributed synthesis and link only; no report text, figures or tables republished.',
+    accessDate: '2026-09-26', creators: ['Bertelsmann Stiftung'], institution: 'Bertelsmann Stiftung', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'comparative country assessment', identifiers: { reviewPeriod: '2023-02-01 to 2025-01-31', edition: 'BTI 2026' },
+    description: 'Independent comparative assessment of Laos for a period ending 31 January 2025. Relevant only as pre-election context; it is not evidence about the 2026 campaign, results or new Assembly.'
+  },
+  {
+    id: 'laosIpuParlineElection2026',
+    label: 'Inter-Parliamentary Union — Lao PDR National Assembly election, 22 February 2026, Parline record',
+    url: 'https://data.ipu.org/parliament/LA/LA-LC01/election/LA-LC01-E20260222/',
+    note: 'IPU Parline’s compiled institutional election record consulted for party/seat totals, registration and turnout data, and women elected. No result table is republished. This is a data record, not an election-observation mission or a finding about voter freedom, motivation or consent.',
+    accessDate: '2026-09-26', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union', publicationDate: '2026-02-22', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'institutional parliamentary election dataset', identifiers: { electionDate: '2026-02-22', candidates: '243', seats: '175', partiesCompeting: '1', registered: '4,764,384', voters: '4,670,050', turnout: '98.0%', womenElected: '52 (29.7%)' },
+    description: 'IPU Parline records one contesting party, the LPRP winning all 175 seats, turnout of 4,670,050 among 4,764,384 registered voters and 52 women elected (29.7%). Compiled electoral statistics do not establish voter motivation, fair competition, public consent or gender equality.'
+  },
+  {
+    id: 'laosKplResults2026',
+    label: 'Lao News Agency (KPL) — 175 deputies elected to the 10th National Assembly',
+    url: 'https://kpl.gov.la/En/detail.aspx/detail.aspx?id=97196',
+    note: 'Official 2 March 2026 report consulted for the National Election Committee’s announcement of 175 elected deputies across 18 constituencies. No list or table is republished; the announcement alone does not supply candidate-level votes or independent observation.',
+    accessDate: '2026-09-26', creators: ['Lao News Agency'], institution: 'Khaosan Pathet Lao (KPL)', publicationDate: '2026-03-02', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official national election results announcement', identifiers: { electionDate: '2026-02-22', elected: '175', constituencies: '18' },
+    description: 'KPL reports the election committee’s announcement of 175 elected deputies from 18 constituencies. The report is the official-results announcement, not candidate-level vote data or independent appraisal.'
+  },
+  {
+    id: 'laosKplTenthAssembly2026',
+    label: 'Lao News Agency (KPL) — 10th National Assembly inaugural session and election of state leadership',
+    url: 'https://kpl.gov.la/en/detail.aspx/detail.aspx?id=97597',
+    note: 'Official account of the 23–27 March 2026 inaugural session consulted for certification, leadership elections and adopted resolutions. The report says the Assembly adopted 20 resolutions, including the 2026–2030 National Socio-Economic Development Plan. No resolution text is republished; adoption is not treated as implementation or outcome.',
+    accessDate: '2026-09-26', creators: ['Lao News Agency'], institution: 'Khaosan Pathet Lao (KPL)', publicationDate: '2026-03-27', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary inaugural-session report', identifiers: { session: '2026-03-23 to 2026-03-27', legislature: '10th National Assembly', resolutions: '20', plan: '2026–2030 NSEDP' },
+    description: 'KPL reports member certification, the election of Xaysomphone Phomvihane as Speaker, Thongloun Sisoulith as State President and Sonexay Siphandone as Prime Minister, and adoption of 20 resolutions. This documents formal decisions, not implementation or independent evaluation.'
+  },
+  {
+    id: 'laosKplXaysomphoneDeath2026',
+    label: 'Lao News Agency (KPL) — memorial report for National Assembly President Xaysomphone Phomvihane',
+    url: 'https://kpl.gov.la/Fr/detail.aspx?id=105798',
+    note: 'Official KPL report consulted only to establish that National Assembly President Xaysomphone Phomvihane died on 8 August 2026. No memorial wording or image is republished; no cause of death is asserted.',
+    accessDate: '2026-09-26', creators: ['Lao News Agency'], institution: 'Khaosan Pathet Lao (KPL)', publicationDate: '2026-08-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official news-agency memorial notice', identifiers: { eventDate: '2026-08-08', office: 'President of the National Assembly' },
+    description: 'KPL reports the death on 8 August 2026 of Xaysomphone Phomvihane, then President of the National Assembly. Used solely to establish date and office in the succession chronology.'
+  },
+  {
+    id: 'laosKplActingSpeaker2026',
+    label: 'Lao News Agency (KPL) — Sounthone Xayachack appointed acting President of the National Assembly Standing Committee',
+    url: 'https://kpl.gov.la/Fr/detail.aspx?id=105903',
+    note: 'KPL report consulted for the appointment effective 18 August 2026 and its stated pending formal National Assembly resolution status. No report wording is republished; the acting appointment is distinguished from formal election/confirmation.',
+    accessDate: '2026-09-26', creators: ['Lao News Agency'], institution: 'Khaosan Pathet Lao (KPL)', publicationDate: '2026-08-20', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official report of acting parliamentary appointment', identifiers: { effectiveDate: '2026-08-18', appointee: 'Sounthone Xayachack', status: 'pending formal National Assembly resolution' },
+    description: 'KPL reports Sounthone Xayachack’s appointment as acting President of the National Assembly Standing Committee, effective 18 August, pending formal Assembly resolution. The interim status is retained.'
+  },
+  {
+    id: 'laosIpuParlineAssemblySeptember2026',
+    label: 'Inter-Parliamentary Union — Lao PDR Parliament, current composition and Speaker status',
+    url: 'https://data.ipu.org/parliament/LA/LA-LC01/',
+    note: 'IPU Parline current parliament record consulted 26 September 2026 as a cross-check on the Speaker vacancy and acting Speaker. This compiled institutional record is not independent reporting on the August appointment or parliamentary functioning; no data table is republished.',
+    accessDate: '2026-09-26', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union', publicationDate: '2026-09-26', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'institutional parliamentary composition record', identifiers: { reviewedDate: '2026-09-26', actingSpeakerSince: '2026-08-18', SpeakerOffice: 'vacant' },
+    description: 'IPU Parline lists the Speaker position as vacant and Sounthone Xayachack as acting Speaker from 18 August 2026. The database cross-checks formal status; it is not an election-observation assessment.'
+  },
+  {
+    id: 'laosKplStandingCommitteeSeptember2026',
+    label: 'Lao News Agency (KPL) — 10th National Assembly Standing Committee meeting, 21–22 September 2026',
+    url: 'https://kpl.gov.la/EN/detail.aspx?id=107686',
+    note: 'KPL report published 23 September consulted for the 21–22 September Standing Committee meeting chaired by Acting President Sounthone Xayachack and its review of proposals and five draft laws for a future Assembly session. Drafts are not enacted laws; no draft text or report passage is republished.',
+    accessDate: '2026-09-26', creators: ['Lao News Agency'], institution: 'Khaosan Pathet Lao (KPL)', publicationDate: '2026-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary committee meeting report', identifiers: { meetingDates: '2026-09-21 to 2026-09-22', publicationDate: '2026-09-23', draftBills: '5' },
+    description: 'KPL reports that the Standing Committee chaired by Acting President Sounthone reviewed proposals and five draft laws for the next Assembly session. The report documents committee business; it does not establish enactment or implementation.'
   }
 );
 
@@ -10123,7 +10204,8 @@ export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note })
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('bulgaria') ? 'Bulgarian constitutional, electoral and post-communist political history'
+  discipline: source.id.startsWith('laos') ? 'Lao constitutional, political and electoral history'
+    : source.id.startsWith('bulgaria') ? 'Bulgarian constitutional, electoral and post-communist political history'
     : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'

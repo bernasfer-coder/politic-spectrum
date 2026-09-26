@@ -74,6 +74,19 @@ test('Bangladesh 2026 referendum correction and Charter litigation remain distin
   await expect(card).toContainText('do not cover these current events');
 });
 
+test('Laos 2026 election and parliamentary succession distinguish official data, interim office and draft laws', async ({ page }) => {
+  await page.goto('/#geography?case=lao-post-2021-debt-stability-and-asean-chairmanship');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('4,670,050 among 4,764,384 registered voters (98.0%)');
+  await expect(card).toContainText('not an election-observation mission');
+  await expect(card).toContainText('pending formal Assembly resolution');
+  await expect(card).toContainText('BTI 2026 covers 1 February 2023–31 January 2025');
+  await expect(card).toContainText('five draft laws');
+  await expect(card).toContainText('Draft laws and adopted planning resolutions are not treated as implemented outcomes');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));

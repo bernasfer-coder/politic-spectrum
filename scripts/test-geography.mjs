@@ -103,6 +103,20 @@ assert.equal(filterGeographyCases({ country: 'morocco' })[0].id, 'moroccan-const
 assert.ok(filterGeographyCases({ country: 'morocco' }).some(({ id }) => id === 'moroccan-post-2021-coalition-and-social-protection-horizon'));
 assert.equal(filterGeographyCases({ country: 'vietnam' })[0].id, 'vietnamese-socialist-constitutional-doi-moi-transition');
 assert.equal(filterGeographyCases({ country: 'map-418' })[0].id, 'lao-revolutionary-socialist-and-postsocialist-order');
+const laos2026 = filterGeographyCases({ country: 'map-418' }).find(({ id }) => id === 'lao-post-2021-debt-stability-and-asean-chairmanship');
+assert.equal(laos2026.endYear, 2026);
+assert.equal(laos2026.reviewedAt, '2026-09-26');
+assert.ok(laos2026.claim.includes('4,670,050 among 4,764,384 registered voters (98.0%)'));
+assert.ok(laos2026.claim.includes('not an election-observation mission'));
+assert.ok(laos2026.claim.includes('pending formal Assembly resolution'));
+assert.ok(laos2026.claim.includes('these remain drafts, not enacted law'));
+assert.ok(laos2026.limitation.includes('BTI 2026 covers 1 February 2023–31 January 2025'));
+assert.ok(laos2026.limitation.includes('no event-specific book-length study of the 2026 election was located'));
+for (const sourceId of ['laosKplCandidates2026', 'laosBtiCountryReport2026', 'laosIpuParlineElection2026', 'laosKplResults2026', 'laosKplTenthAssembly2026', 'laosKplXaysomphoneDeath2026', 'laosKplActingSpeaker2026', 'laosIpuParlineAssemblySeptember2026', 'laosKplStandingCommitteeSeptember2026']) {
+  assert.ok(laos2026.sourceIds.includes(sourceId), `Laos 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Laos bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Laos rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'map-104' })[0].id, 'myanmar-constitutional-military-and-transition-order');
 assert.equal(filterGeographyCases({ country: 'map-410' })[0].id, 'south-korean-constitutional-democratic-and-developmental-order');
 assert.equal(filterGeographyCases({ country: 'map-422' })[0].id, 'lebanese-posttaif-consociational-and-protest-order');
