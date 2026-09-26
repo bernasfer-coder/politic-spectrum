@@ -9855,6 +9855,79 @@ sources.push(
   }
 );
 
+sources.push(
+  {
+    id: 'syriaConstitutionalDeclaration2025Sana', label: 'Syrian Arab News Agency — Presidential signing of the Constitutional Declaration (13 March 2025)', url: 'https://sana.sy/en/syria/349581/',
+    note: 'SANA, an official agency affiliated with Syria’s Ministry of Information, reports the declaration’s signing and summarizes the drafting committee’s account of its institutional provisions. Executive and committee descriptions are attributed to that official report, not treated as independent review or evidence of implementation.',
+    accessDate: '2026-09-26', creators: ['Syrian Arab News Agency', 'Syrian Presidency', 'Constitutional Declaration drafting committee'], institution: 'Syrian Arab News Agency / Ministry of Information', publicationDate: '2025-03-13', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official report on a transitional constitutional declaration', identifiers: { declarationPeriod: '2025 transitional period', reportDate: '2025-03-13' },
+    description: 'The official report says the transition is set for five years, assigns executive authority to the President and legislative responsibility to the People’s Assembly, and summarizes provisions on rights, courts and emergency power. These are reported formal-design claims, not evidence of independent checks or implementation.'
+  },
+  {
+    id: 'syriaConstitutionalDeclaration2025EnglishTranslation', label: 'Constitutional Declaration of the Syrian Arab Republic (automated English translation, 2025)', url: 'https://constitutionnet.org/sites/default/files/2025-03/2025.03.13%20-%20Constitutional%20declaration%20%28English%29.pdf',
+    note: 'A publicly hosted English rendering of the primary declaration that identifies itself as an automated translation and warns that section headings were added by the translator. It is consulted only to identify formal clauses provisionally; Arabic legal text controls, and no translated wording is republished or presented as authoritative.',
+    accessDate: '2026-09-26', creators: ['Syrian Presidency', 'Constitutional Declaration drafting committee'], institution: 'ConstitutionNet (host of an automated English translation)', publicationDate: '2025-03-13', evidenceRole: 'primary', confidence: 'medium', languages: ['Arabic', 'English'],
+    sourceType: 'primary constitutional declaration in automated, unofficial English translation', identifiers: { documentDate: '2025-03', translationStatus: 'automated; unofficial' },
+    description: 'The English rendering indicates an Islamic-referential constitutional design and clauses on belief and religious rites. Because the translation is explicitly automated, these clauses are treated only as provisional evidence of formal text, not legal interpretation, social practice or a profile of Syrian religious communities.'
+  },
+  {
+    id: 'syriaTransitionalGovernmentFormation2025Sana', label: 'Syrian Arab News Agency — Formation of the transitional government (30 March 2025)', url: 'https://sana.sy/en/syria/350809/',
+    note: 'Official SANA report listing the new cabinet and summarizing President Ahmad al-Sharaa’s stated programme. Policy pledges remain attributed intentions, not evidence of enactment, financing, results or public agreement.',
+    accessDate: '2026-09-26', creators: ['Syrian Arab News Agency', 'Syrian Presidency'], institution: 'Syrian Arab News Agency / Ministry of Information', publicationDate: '2025-03-30', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official cabinet-formation announcement and executive statement', identifiers: { governmentFormationDate: '2025-03-30' },
+    description: 'The report documents announcement of a new cabinet and the President’s declared priorities, including energy, agriculture, industry, currency and services. It records executive self-description, not delivery or outcomes.'
+  },
+  {
+    id: 'syriaPeoplesAssemblyElectionResults2025Sana', label: 'Syrian Arab News Agency — Official results of the 2025 People’s Assembly election process (6 October 2025)', url: 'https://sana.sy/en/politics/2271255/',
+    note: 'Official SANA account of results attributed to the Higher Committee for People’s Assembly Elections. The committee chair’s integrity assessment and officials’ claims of national representation are reported as self-descriptions, not independent observation or a finding of universal participation.',
+    accessDate: '2026-09-26', creators: ['Higher Committee for People’s Assembly Elections', 'Syrian Arab News Agency'], institution: 'Syrian Arab News Agency / Ministry of Information', publicationDate: '2025-10-06', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official report of indirect People’s Assembly election results', identifiers: { resultAnnouncement: '2025-10-06', reportedWinners: 119, reportedCandidates: 1578, electoralColleges: 49 },
+    description: 'The official report states that 119 candidates were selected from 1,578 candidates through 49 electoral colleges and that a presidentially appointed third remained separate from the election committee. It does not establish universal suffrage, competitive fairness or the representativeness of the process.'
+  },
+  {
+    id: 'syriaCoastalViolenceCommissionReport2025', label: 'UN Independent International Commission of Inquiry — Violations against civilians in coastal and western-central Syria, January–March 2025 (A/HRC/59/CRP.4)', url: 'https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session59/a-hrc-59-crp4-en.pdf',
+    note: 'The UN Commission of Inquiry report is linked as an institutional investigative record. It describes investigated incidents, interview methods, evidentiary standards and limitations; its conclusions are attributed to the Commission and are not judicial convictions or a complete national human-rights survey. No report text, map, case table or image is reproduced.',
+    accessDate: '2026-09-26', creators: ['Independent International Commission of Inquiry on the Syrian Arab Republic'], institution: 'United Nations Human Rights Council / Office of the High Commissioner for Human Rights', publicationDate: '2025-08-11', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'UN human-rights investigative report on civilian violations', identifiers: { document: 'A/HRC/59/CRP.4', period: '2025-01 through 2025-03' },
+    description: 'The Commission documents serious violations against civilians, primarily targeting Alawi communities, during the post-Assad transition; it attributes likely crimes to members of both pro-former-government forces and interim-government forces and private persons, while saying it found no evidence of a governmental policy or plan to carry out attacks. Its findings are not a court judgment.'
+  },
+  {
+    id: 'syriaSDFAgreementImplementationJanuary2026UN', label: 'United Nations DPPA — Briefing on Government–SDF talks and northeast integration (22 January 2026)', url: 'https://dppa.un.org/en/node/133812',
+    note: 'DPPA’s published summary of Assistant Secretary-General Khaled Khiari’s Security Council briefing records a rapidly evolving situation. Reported casualty, displacement and negotiation details remain attributed to the briefing and cited public sources; the update does not imply the agreement was fully implemented.',
+    accessDate: '2026-09-26', creators: ['Khaled Khiari', 'United Nations Department of Political and Peacebuilding Affairs'], institution: 'United Nations DPPA', publicationDate: '2026-01-22', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'UN political-affairs briefing summary on northeast Syria', identifiers: { briefingDate: '2026-01-22', agreementReferenced: '2025-03-10 Government–SDF agreement' },
+    description: 'The UN briefing says 4 January talks on implementing the March 2025 agreement made no progress; it then recounts Aleppo clashes, an 18 January ceasefire and a further short understanding, with implementation modalities unresolved. The sequence documents a contested process rather than completed integration.'
+  },
+  {
+    id: 'syriaPeoplesAssemblyInauguralSession2026Sana', label: 'Syrian Arab News Agency — People’s Assembly inaugural session (12 July 2026)', url: 'https://sana.sy/en/syria/2329124/',
+    note: 'SANA official report records the opening session, oath and officers chosen, and gives 206 attendees/members. It corroborates the event but does not independently establish the Assembly’s representativeness, powers in practice or public mandate.',
+    accessDate: '2026-09-26', creators: ['Syrian Arab News Agency', 'People’s Assembly of the Syrian Arab Republic'], institution: 'Syrian Arab News Agency / Ministry of Information', publicationDate: '2026-07-12', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official report of transitional legislature inaugural session', identifiers: { sessionDate: '2026-07-12', reportedAttendees: 206 },
+    description: 'The report says Assembly members took the constitutional oath and elected its speaker, deputies and secretary. The President’s description of the meeting as a state-building milestone is attributed official framing, not evidence of accountability or electoral inclusion.'
+  },
+  {
+    id: 'syriaSecurityCouncilBriefingJuly2026', label: 'United Nations Security Council — Syria briefing, 21 July 2026 (S/PV.10199)', url: 'https://documents.un.org/api/symbol/access?s=S%2FPV.10199',
+    note: 'Provisional Security Council verbatim record of Deputy Special Envoy Claudio Cordone and OCHA briefings, linked to the UN document system. It is an institutional snapshot and records reported facts and the briefers’ own assessments; those are not generalized to all Syrians or treated as a final investigation.',
+    accessDate: '2026-09-26', creators: ['United Nations Security Council', 'Claudio Cordone', 'Edem Wosornu'], institution: 'United Nations', publicationDate: '2026-07-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'provisional UN Security Council meeting record / political and humanitarian briefing', identifiers: { document: 'S/PV.10199', meetingDate: '2026-07-21' },
+    description: 'The Deputy Special Envoy records the interim Assembly’s opening, a new Constitutional Court, women’s and community-representation concerns, unfinished transitional justice and northeast integration, a continuing Suwayda impasse, insecurity, external military activity and difficult socioeconomic conditions. It also explicitly treats these institutions as milestones whose functioning and implementation remain to be tested.'
+  },
+  {
+    id: 'syriaSecurityCouncilTransitionSeptember2026DPPA', label: 'United Nations DPPA — Syria’s progress should create momentum for next steps in the transition (17 September 2026)', url: 'https://dppa.un.org/en/node/136734',
+    note: 'DPPA’s published account of the Deputy Special Envoy’s 17 September Security Council briefing was accessible through the UN search index when the page itself returned a fetch restriction. The synthesis therefore uses the page’s directly indexed text, not an unverified third-party paraphrase; it attributes the assessment and recommendations to the UN official.',
+    accessDate: '2026-09-26', creators: ['Claudio Cordone', 'United Nations Department of Political and Peacebuilding Affairs'], institution: 'United Nations DPPA', publicationDate: '2026-09-17', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'UN account of a Security Council political-transition briefing', identifiers: { briefingDate: '2026-09-17' },
+    description: 'The Deputy Special Envoy acknowledged important advances but said significant challenges remained, urging stronger accountable institutions, broader participation, civic-space protection and transitional justice, while calling for sustained support for recovery and safe, dignified, voluntary returns. These are UN assessment and recommendations, not a comprehensive country audit.'
+  },
+  {
+    id: 'syriaUNCommonCountryAnalysis2026', label: 'United Nations in Syria — Common Country Analysis (31 March 2026)', url: 'https://syria.un.org/en/312773-common-country-analysis-syria',
+    note: 'The UN country analysis is an institutional and consultative baseline across political, social, economic and environmental domains. Its scope and consultation methods govern its conclusions; it is not a monograph, independent electoral observation or proof that recovery pledges were achieved.',
+    accessDate: '2026-09-26', creators: ['United Nations Country Team in the Syrian Arab Republic'], institution: 'United Nations in Syria', publicationDate: '2026-03-31', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Arabic'],
+    sourceType: 'UN Common Country Analysis of development and recovery context', identifiers: { publicationDate: '2026-03-31' },
+    description: 'The assessment provides a post-conflict political, social, economic and environmental context for recovery planning after the 2025 transition developments. It supplies institutional context, not evidence of the success of a specific government programme or a uniform resident experience.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,

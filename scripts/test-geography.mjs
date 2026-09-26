@@ -90,6 +90,17 @@ for (const sourceId of ['lebanonPresidencyGovernmentAims2025', 'lebanonWorldBank
   assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Lebanon bibliography source missing: ${sourceId}`);
   assert.ok(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt === '2026-09-26', `Lebanon rights/provenance review missing: ${sourceId}`);
 }
+const syria2026 = filterGeographyCases({ country: 'syria' }).find(({ id }) => id === 'syrian-uprising-civil-war-and-fragmented-transition');
+assert.equal(syria2026.endYear, 2026);
+assert.equal(syria2026.reviewedAt, '2026-09-26');
+assert.ok(syria2026.claim.includes('automated translation'));
+assert.ok(syria2026.claim.includes('no total is inferred'));
+assert.ok(syria2026.limitation.includes('event-specific book-length scholarly analysis of that period was not located'));
+for (const sourceId of ['syriaConstitutionalDeclaration2025Sana', 'syriaConstitutionalDeclaration2025EnglishTranslation', 'syriaTransitionalGovernmentFormation2025Sana', 'syriaPeoplesAssemblyElectionResults2025Sana', 'syriaCoastalViolenceCommissionReport2025', 'syriaSDFAgreementImplementationJanuary2026UN', 'syriaPeoplesAssemblyInauguralSession2026Sana', 'syriaSecurityCouncilBriefingJuly2026', 'syriaSecurityCouncilTransitionSeptember2026DPPA', 'syriaUNCommonCountryAnalysis2026']) {
+  assert.ok(syria2026.sourceIds.includes(sourceId), `Syria 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Syria bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Syria rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'map-170' })[0].id, 'colombian-constitutional-peace-and-contestation-order');
 const sudanWar = filterGeographyCases({ country: 'sudan' }).find(({ id }) => id === 'sudanese-war-fragmented-authority-and-civilian-politics-2023-2026');
 assert.ok(sudanWar, 'Sudan’s post-2023 war must be independently represented');
