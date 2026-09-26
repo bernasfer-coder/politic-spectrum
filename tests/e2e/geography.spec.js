@@ -445,6 +445,23 @@ test('Zimbabwe 2026 update distinguishes the gazetted amendment from competing l
   await expect(card).toContainText('event-specific book-length scholarship');
 });
 
+test('Cameroon records the 2025 result and contested aftermath separately from the 2026 succession amendment', async ({ page }) => {
+  await page.goto('/#geography?case=cameroonian-postcolonial-bilingual-and-anglophone-crisis-history');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1960–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('53.66 percent to Issa Tchiroma Bakary’s 35.19 percent');
+  await expect(card).toContainText('orderly polling without major violence during the vote');
+  await expect(card).toContainText('interior minister’s 16 deaths and over 800 arrests');
+  await expect(card).toContainText('not converted here into a single settled toll');
+  await expect(card).toContainText('Law No. 2026/002 promulgated on 14 April');
+  await expect(card).toContainText('do not constitute event-specific book-length research');
+  await expect(card).toContainText('no single number is asserted');
+  await expect(card.locator('a[href="https://www.prc.cm/fr/actualites/actes/lois/8244-loi-n-2026-002-du-14-avril-2026-modifiant-et-completant-certaines-dispositions-de-la-constitution-du-02-juin-1972-modifiee-et-completee-par-la-loi-n-96-06-du-18-janvier-1996-et-la-loi-n-2008-001-du-14-avril-2008"]')).toHaveCount(1);
+  await expect(card.locator('a[href="https://apnews.com/article/cameroon-election-violence-protests-biya-tchiroma-32aed152d6d7228d58f438ce64cb7cf8"]')).toHaveCount(1);
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));

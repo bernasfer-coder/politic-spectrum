@@ -275,6 +275,86 @@ const sources = [
     description: 'Contemporary institutional record of the 2025 presidential-election process, including the convening of the electorate, candidate documentation and electoral-register materials. It marks a dated research horizon rather than a complete result, participation or legitimacy assessment.'
   },
   {
+    id: 'cameroonMincomElectionResults2025',
+    label: 'Cameroon Ministry of Communication — Government communication on the 2025 presidential-election results (2 November 2025)',
+    url: 'https://www.mincom.gov.cm/wp-content/uploads/2025/11/communication-gouvernementale-02-NOV-2025.pdf',
+    note: 'Official government communication consulted as the executive’s account of the Constitutional Council’s result and of the election. Its assertions of a free, peaceful and regular process are identified as government statements, not independent observation or a judicial finding about every allegation.',
+    accessDate: '2026-09-26', creators: ['Ministry of Communication of Cameroon'], institution: 'Government of the Republic of Cameroon / Ministry of Communication',
+    publicationDate: '2025-11-02', evidenceRole: 'primary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'primary government communication / official result summary', identifiers: { electionDate: '2025-10-12', resultProclamationDate: '2025-10-27' },
+    description: 'The government’s communication reports that the Constitutional Council proclaimed Paul Biya the winner on 27 October with 53.66 percent of valid votes and presents the government’s own assessment of the process. It is a primary record of the official executive account, not independent verification of electoral fairness or the opposition’s allegations.'
+  },
+  {
+    id: 'cameroonAuElectionReport2026',
+    label: 'African Union Commission — Report to the Peace and Security Council on Elections in Africa, PSC/PR/RPT.1327 (2026), Cameroon section',
+    url: 'https://amaniafrica-et.org/wp-content/uploads/1327-Rev1-Report-to-the-PSC-on-Elections-in-Africa-EN.pdf',
+    note: 'African Union Commission report PDF consulted via an Amani Africa-hosted copy; the institution and report number are retained so readers can distinguish the AU report from its mirror. The mission’s stated observation window and assessment are attributed to the AU and are not generalized to every location or the later protest period.',
+    accessDate: '2026-09-26', creators: ['African Union Commission'], institution: 'African Union Commission / African Union Election Observation Mission (copy hosted by Amani Africa)',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'African Union election-observation report / institutional assessment', identifiers: { reportNumber: 'PSC/PR/RPT.1327 (2026)', electionDate: '2025-10-12', observationWindow: '2025-10-06 to 2025-10-16' },
+    description: 'The AU report states that its 40 observers from 28 member states saw orderly polling without major violence during the 12 October vote, while noting delayed results and post-election tension. It reproduces official final percentages and is evidence of a bounded international mission’s assessment, not a comprehensive assessment of the post-election crackdown or domestic monitors’ findings.'
+  },
+  {
+    id: 'cameroonIdeaElectionAndProtests2025',
+    label: 'International IDEA — Cameroon October 2025 election and post-election violence, Democracy Tracker',
+    url: 'https://www.idea.int/democracytracker/report/cameroon/october-2025',
+    note: 'International IDEA Democracy Tracker entry consulted as an attributed institutional research synthesis, including its cited official results, observer assessments and protest reporting. Its account of deaths and arrests is source-attributed and is not treated as a final or independently audited toll.',
+    accessDate: '2026-09-26', creators: ['International Institute for Democracy and Electoral Assistance'], institution: 'International IDEA',
+    publicationDate: '2025-10', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional democracy-monitoring event report', identifiers: { electionDate: '2025-10-12', eventMonth: '2025-10' },
+    description: 'IDEA distinguishes the official result and Constitutional Council’s rejection of petitions from AU/ECCAS observers’ qualified assessment and domestic-monitor concerns. It records that the scale of post-election violence and attributed fatality reports exceeded the 2018 comparison, while maintaining that the reported figures derive from named external sources.'
+  },
+  {
+    id: 'cameroonHrwPostElectionCrackdown2025',
+    label: 'Human Rights Watch — Cameroon: Killings, Mass Arrests Follow Disputed Elections (12 November 2025)',
+    url: 'https://www.hrw.org/news/2025/11/12/cameroon-killings-mass-arrests-follow-disputed-elections',
+    note: 'Human Rights Watch’s 12 November 2025 report consulted for its explicitly bounded interviews, lawyer lists, and attributed death and detention estimates. The methods and source attribution are preserved; opposition-source counts and press reports are not presented as settled totals or court findings.',
+    accessDate: '2026-09-26', creators: ['Human Rights Watch'], institution: 'Human Rights Watch',
+    publicationDate: '2025-11-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'human-rights investigation / interview-based report', identifiers: { interviews: '20', protestsFrom: '2025-10-26', reportDate: '2025-11-12' },
+    description: 'HRW reports interviews with 20 relatives, lawyers and opposition members, and distinguishes media reports citing UN sources of 48 deaths from opposition interlocutors’ figure of 55 and the communications minister’s earlier statement that investigations continued. It also describes arrests and due-process concerns from lawyer lists it reviewed; these are method-bounded human-rights findings and attributed reports, not a complete nationwide census or judicial adjudication.'
+  },
+  {
+    id: 'cameroonAchprPostElectionStatement2025',
+    label: 'African Commission on Human and Peoples’ Rights — Statement on the human-rights situation in Cameroon (31 October 2025)',
+    url: 'https://achpr.au.int/en/news/press-releases/2025-10-31/situation-des-droits-de-lhomme-en-republique-du-cameroun-eng',
+    note: 'African Commission press release consulted for its own attributed human-rights position and recommendations. It expresses concern and calls for safeguards, accountability and an end to arbitrary detention; it is not represented as an investigative report establishing individual responsibility or verified casualty totals.',
+    accessDate: '2026-09-26', creators: ['African Commission on Human and Peoples’ Rights'], institution: 'African Union / African Commission on Human and Peoples’ Rights',
+    publicationDate: '2025-10-31', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'regional human-rights commission statement', identifiers: { statementDate: '2025-10-31', treaty: 'African Charter on Human and Peoples’ Rights' },
+    description: 'The Commission records concern about post-election violence and calls on the government to protect rights, investigate and prosecute perpetrators of violence, end arbitrary arrests and detention, and release people detained solely for exercising rights. This documents the Commission’s institutional response, not a completed fact-finding inquiry.'
+  },
+  {
+    id: 'cameroonApPostElectionDeathTolls2025',
+    label: 'Associated Press — Cameroon rights groups dispute government’s post-election protest death toll (13 November 2025)',
+    url: 'https://apnews.com/article/cameroon-election-violence-protests-biya-tchiroma-32aed152d6d7228d58f438ce64cb7cf8',
+    note: 'Associated Press report consulted for mutually conflicting, attributed casualty and arrest figures. The government’s 16, rights organizations’ approximately 30, and opposition figures’ 55 are reported as claims from named or identified sources, not harmonized into a spurious definitive count.',
+    accessDate: '2026-09-26', creators: ['Emmanuel Tumanjong'], institution: 'Associated Press',
+    publicationDate: '2025-11-13', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report / attributed post-election casualty estimates', identifiers: { reportDate: '2025-11-13', officialDeathToll: '16', rightsGroupEstimate: 'about 30', oppositionEstimate: '55' },
+    description: 'AP reports that the interior minister said 16 people were killed and over 800 arrested, a rights-group coordinator estimated about 30 deaths, and opposition figures cited by HRW put deaths at 55. These incompatible estimates document uncertainty and contested access to information; they do not establish a definitive fatality total.'
+  },
+  {
+    id: 'cameroonConstitutionAmendment2026Presidence',
+    label: 'Republic of Cameroon — Law No. 2026/002 of 14 April 2026 amending the Constitution, Presidency legal record',
+    url: 'https://www.prc.cm/fr/actualites/actes/lois/8244-loi-n-2026-002-du-14-avril-2026-modifiant-et-completant-certaines-dispositions-de-la-constitution-du-02-juin-1972-modifiee-et-completee-par-la-loi-n-96-06-du-18-janvier-1996-et-la-loi-n-2008-001-du-14-avril-2008',
+    note: 'Official Presidency law record and linked PDF consulted as the primary legal publication. No constitutional wording, translation, scan or PDF page is republished; the enactment establishes formal law, not how the new office will be staffed or exercised in practice.',
+    accessDate: '2026-09-26', creators: ['Republic of Cameroon'], institution: 'Presidency of the Republic of Cameroon',
+    publicationDate: '2026-04-14', evidenceRole: 'primary', confidence: 'high', languages: ['French', 'English'],
+    sourceType: 'primary constitutional amendment / official legal record', identifiers: { lawNumber: '2026/002', enactmentDate: '2026-04-14', constitutionalTextDate: '1972-06-02' },
+    description: 'The Presidency lists and links Law No. 2026/002 promulgated on 14 April 2026, amending the 1972 Constitution as amended in 1996 and 2008. Read with the contemporaneous AP account of the adopted measure, it records a formal constitutional change concerning the vice-presidential office and presidential succession; formal amendment is not treated as a subsequent appointment or proof of implementation.'
+  },
+  {
+    id: 'cameroonApVicePresidencyAmendment2026',
+    label: 'Associated Press — Cameroon lawmakers revive vice presidency, handing president authority over the post (5 April 2026)',
+    url: 'https://apnews.com/article/cameroon-paul-biya-constitution-vice-president-e61d6da634274a01e6f8d468470d406f',
+    note: 'Associated Press account of the 4 April joint-session vote consulted for the amendment’s provisions and competing government, opposition, bar-association and civil-society interpretations. Its publication predates 14 April promulgation; enacted status is separately sourced to the Presidency, and characterizations such as “monarchy” are attributed rather than adopted.',
+    accessDate: '2026-09-26', creators: ['Ngala Killian Chimtom'], institution: 'Associated Press',
+    publicationDate: '2026-04-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent news report / constitutional amendment analysis', identifiers: { parliamentaryVoteDate: '2026-04-04', vote: '200–18; 4 abstentions', priorVicePresidentialOfficeRemoved: '1972' },
+    description: 'AP reports Parliament’s vote to restore a vice-presidential office, the president’s power to appoint and dismiss its holder, delegated functions, and succession for the remainder of a seven-year term if the presidency becomes vacant. It contrasts the ruling party’s stability rationale with opposition, bar-association and SDF criticism about appointment-based legitimacy and institutional balance; these are attributed assessments, not a consensus.'
+  },
+  {
     id: 'ngohHistoryCameroon1800',
     label: 'Victor Julius Ngoh — History of Cameroon Since 1800 (1996)',
     url: 'https://books.google.com/books/about/History_of_Cameroon_Since_1800.html?id=h5UPAQAAMAAJ',

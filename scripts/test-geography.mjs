@@ -501,6 +501,20 @@ for (const sourceId of ['coteDivConstitutionalCouncilCandidates2025', 'coteDivCo
 }
 assert.equal(filterGeographyCases({ country: 'chad' })[0].id, 'chadian-postcolonial-civil-war-and-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'cameroon' })[0].id, 'cameroonian-postcolonial-bilingual-and-anglophone-crisis-history');
+const cameroonHistory2026 = filterGeographyCases({ country: 'cameroon' }).find(({ id }) => id === 'cameroonian-postcolonial-bilingual-and-anglophone-crisis-history');
+assert.equal(cameroonHistory2026.endYear, 2026);
+assert.equal(cameroonHistory2026.reviewedAt, '2026-09-26');
+assert.ok(cameroonHistory2026.claim.includes('53.66 percent to Issa Tchiroma Bakary’s 35.19 percent'));
+assert.ok(cameroonHistory2026.claim.includes('not converted here into a single settled toll'));
+assert.ok(cameroonHistory2026.claim.includes('appointed and dismissible by the president'));
+assert.ok(cameroonHistory2026.limitation.includes('do not constitute event-specific book-length research'));
+assert.ok(cameroonHistory2026.limitation.includes('no single number is asserted'));
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === cameroonHistory2026.labelId)?.aliases.includes('Cameroon 2025 election and 2026 constitutional amendment'));
+for (const sourceId of ['cameroonMincomElectionResults2025', 'cameroonAuElectionReport2026', 'cameroonIdeaElectionAndProtests2025', 'cameroonHrwPostElectionCrackdown2025', 'cameroonAchprPostElectionStatement2025', 'cameroonApPostElectionDeathTolls2025', 'cameroonConstitutionAmendment2026Presidence', 'cameroonApVicePresidencyAmendment2026']) {
+  assert.ok(cameroonHistory2026.sourceIds.includes(sourceId), `Cameroon source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Cameroon bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Cameroon rights/provenance review missing: ${sourceId}`);
+}
 assert.ok(filterGeographyCases({ country: 'iraq' }).some(({ id }) => id === 'iraqi-postinvasion-constitutional-and-protest-transition'));
 assert.equal(filterGeographyCases({ country: 'france' }).find(({ id }) => id === 'french-fifth-republic-constitutional-and-political-history')?.id, 'french-fifth-republic-constitutional-and-political-history');
 const franceFifthRepublic = filterGeographyCases({ country: 'france' }).find(({ id }) => id === 'french-fifth-republic-constitutional-and-political-history');
