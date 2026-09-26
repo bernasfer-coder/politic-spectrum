@@ -13,6 +13,18 @@ beforeEach(() => { window.localStorage.clear(); window.history.replaceState(null
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 describe('geographic atlas', () => {
+  it('shows Liberia’s proposed WECC as an uncompleted, contested legislation process rather than an operating court', () => {
+    window.history.replaceState(null, '', '/#geography?case=liberia-war-economic-crimes-court-establishment-process-2009-2026');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('OWECC-L');
+    expect(cards()[0]).toHaveTextContent('Legislature had yet to pass');
+    expect(cards()[0]).toHaveTextContent('not an enacted or functioning WECC');
+    expect(cards()[0]).toHaveTextContent('three WECC drafts');
+    expect(cards()[0]).toHaveTextContent('No ideology, related ideological label or six-axis score');
+    expect(cards()[0].querySelector('.geo-evidence a[href="#bibliography/research-liberiaTrcFindingsVolumeOne2009"]')).not.toBeNull();
+  });
+
   it('shows Romania’s annulment and rerun with institutional findings and observer assessment attributed', () => {
     window.history.replaceState(null, '', '/#geography?case=romania-2024-presidential-annulment-and-2025-rerun');
     renderAtlas();
@@ -118,7 +130,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(218);
+    expect(cards()).toHaveLength(219);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
