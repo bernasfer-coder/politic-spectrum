@@ -11441,6 +11441,29 @@ sources.push(
   }
 );
 
+sources.push(
+  {
+    id: 'moroccoConstitutionalCourtElectionDisputesLaw2026',
+    label: 'Morocco Constitutional Court — Organic Law No. 066-13, parliamentary election disputes, current text (Articles 32–39)',
+    url: 'https://www.cour-constitutionnelle.ma/Article?CC=6&Page=SPEC&id=56&tp=tx',
+    note: 'The Constitutional Court’s official Arabic text of Articles 32–39 was directly consulted on 26 September 2026; the Ministry of Digital Transition and Administrative Reform legal-database record for Law 066-13 reports its latest modification on 16 March 2026. Article 32 allows parliamentary-election challenges for 30 days after announcement of the poll result; Article 33 gives the Court one year after the appeal period expires to decide, with a reasoned extension permitted for the number or nature of appeals. Articles 34–39 address filing, process and remedies. This states formal law, not whether any 2026 appeal has been filed or decided. No Arabic wording or translation is reproduced.',
+    accessDate: '2026-09-26', creators: ['Kingdom of Morocco; Constitutional Court'], institution: 'Constitutional Court of the Kingdom of Morocco; Ministry of Digital Transition and Administrative Reform legal database',
+    publicationDate: '2014-08-13', evidenceRole: 'primary', confidence: 'high', languages: ['Arabic', 'French legal database metadata'],
+    sourceType: 'primary organic law / official current legal text and court procedural page', identifiers: { law: 'Organic Law No. 066-13', articles: '32–39', currentTextLastModified: '2026-03-16', electoralAppealPeriod: '30 days after announcement of result', courtDecisionPeriod: 'one year after appeal period expires; reasoned extension permitted' },
+    description: 'Current official legal text for parliamentary-election litigation before Morocco’s Constitutional Court. The stated appeal and adjudication periods must not be mistaken for evidence of case filings, outcomes, or final returns in the 2026 election.'
+  },
+  {
+    id: 'moroccoOrganicLawHouseRepresentatives2026',
+    label: 'Morocco — Organic Law No. 27-11 on the House of Representatives, current text (Articles 88–90)',
+    url: 'https://bdj.mmsp.gov.ma/Fr/Document/8481--La-loi-organique-n-27-11-promulgu%C3%A9e-par-le-dahir.aspx?KeyPath=594%2F596%2F595%2F8481',
+    note: 'The Ministry of Digital Transition and Administrative Reform’s official legal database was directly consulted on 26 September 2026; its record identifies Organic Law 27-11 and reports a latest modification date of 29 January 2026. Article 88 permits relevant electors and candidates, governors and the national-counting-commission secretary to challenge specified polling, centralization and counting-commission decisions before the Constitutional Court; declared winners remain in office until the Court annuls their election. Article 89 identifies the statutory grounds for partial or total annulment, while Article 90 addresses replacement or partial-election consequences. This paraphrases current formal law and does not establish a 2026 filing or judgment. No legal text or translation is reproduced.',
+    accessDate: '2026-09-26', creators: ['Kingdom of Morocco; Mohammed VI'], institution: 'Ministry of Digital Transition and Administrative Reform, Banque de Données Juridiques',
+    publicationDate: '2011-10-14', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary organic electoral law / official current consolidated legal-database text', identifiers: { law: 'Organic Law No. 27-11', articles: '88–90', originalPromulgation: '2011-10-14', currentTextLastModified: '2026-01-29' },
+    description: 'Official current legal-database record of the House electoral law. Its challenge and annulment provisions describe legal procedure, not the disposition or merits of any 2026 election dispute.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {

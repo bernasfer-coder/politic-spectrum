@@ -115,6 +115,18 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('Event-specific book-length scholarship was not identified');
   });
 
+  it('shows Morocco’s post-election legal appeal path without implying a filed case or final result', () => {
+    window.history.replaceState(null, '', '/#geography?case=moroccan-2026-legislative-election-and-preliminary-observation');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('23–26 September 2026');
+    expect(cards()[0]).toHaveTextContent('30 days after announcement of the poll result');
+    expect(cards()[0]).toHaveTextContent('declared winners remain in office until the Court annuls their election');
+    expect(cards()[0]).toHaveTextContent('the 30-day period is not calculated here');
+    expect(cards()[0]).toHaveTextContent('38.08%');
+    expect(cards()[0]).toHaveTextContent('38.02%');
+  });
+
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
