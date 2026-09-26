@@ -11465,6 +11465,51 @@ sources.push(
   }
 );
 
+sources.push(
+  {
+    id: 'latviaCvkVoting2026', label: 'Central Election Commission of Latvia — voting information for the 15th Saeima election',
+    url: 'https://www.cvk.lv/balsosana',
+    note: 'Official Latvian-language election page consulted 26 September 2026 for the scheduled 3 October poll, polling hours, voting options and eligibility documents. Independently paraphrased; no page wording, graphic or ballot material is reproduced. The schedule and facilities do not establish implementation or equal access.',
+    accessDate: '2026-09-26', creators: ['Central Election Commission of Latvia'], institution: 'Central Election Commission of Latvia', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['Latvian'], sourceType: 'official election-administration and voter-information page', identifiers: { election: '15th Saeima', electionDate: '2026-10-03', accessed: '2026-09-26' }, description: 'Official election information covering the scheduled polling day and hours, the ballot-deposit timetable, voter identification, voting anywhere in Latvia, home/care voting applications and overseas voting arrangements. It records published procedures, not participation outcomes.'
+  },
+  {
+    id: 'latviaCvkFaq2026', label: 'Central Election Commission of Latvia — 15th Saeima election frequently asked questions',
+    url: 'https://www.cvk.lv/biezak-uzdotie-jautajumi',
+    note: 'Official Latvian-language FAQ consulted 26 September 2026 for legal eligibility, five-district structure and the 2026 district seat allocation. Independently paraphrased; no wording or table is reproduced. These official rules do not establish their implementation or voter experience.',
+    accessDate: '2026-09-26', creators: ['Central Election Commission of Latvia'], institution: 'Central Election Commission of Latvia', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['Latvian'], sourceType: 'official election-administration FAQ', identifiers: { election: '15th Saeima', districts: 'Riga, Vidzeme, Zemgale, Latgale, Kurzeme', totalSeats: '100', accessed: '2026-09-26' }, description: 'The Commission states the 18+ citizen voter eligibility, five electoral districts, 2026 allocation of all 100 Saeima seats among the districts, and the published vote-deposit schedule. It is an official account of formal arrangements, not an independent implementation audit.'
+  },
+  {
+    id: 'latviaSaeimaElectionLaw', label: 'Republic of Latvia — Saeima Election Law (current consolidated Latvian text)',
+    url: 'https://likumi.lv/ta/id/35261-saeimas-velesanu-likums',
+    note: 'Current Latvian text in the official Likumi.lv legal database consulted 26 September 2026. Used as primary statutory evidence for voting eligibility and candidacy rules, with an independent summary and link only. No legal wording or translation is reproduced; legislation alone does not prove implementation or practical access.',
+    accessDate: '2026-09-26', creators: ['Republic of Latvia'], institution: 'Official Publisher of the Republic of Latvia, Likumi.lv', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['Latvian'], sourceType: 'current consolidated parliamentary election statute', identifiers: { law: 'Saeimas vēlēšanu likums', currentVersionAccessed: '2026-09-26', provisions: 'Sections 1, 3–4' }, description: 'Primary law states that Latvian citizens who have reached 18 on election day may vote, voters may vote in any electoral district, and citizens older than 21 may stand subject to legal restrictions. It does not establish how rules are applied in practice.'
+  },
+  {
+    id: 'latviaCvkCandidateFiling2026', label: 'Central Election Commission of Latvia — candidate-list filing for the 15th Saeima',
+    url: 'https://www.cvk.lv/kandidatu-iesniegsana',
+    note: 'Official Latvian-language candidate filing page consulted 26 September 2026. Used for the completed filing window, list-publication timetable and submission requirements, not to infer candidate platforms, list counts or campaign quality. No source text, candidate data or images are reproduced.',
+    accessDate: '2026-09-26', creators: ['Central Election Commission of Latvia'], institution: 'Central Election Commission of Latvia', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['Latvian'], sourceType: 'official candidate-nomination procedure page', identifiers: { election: '15th Saeima', filingWindow: '2026-06-20 to 2026-07-05', listPublicationDeadline: '2026-09-14', accessed: '2026-09-26' }, description: 'The page says candidate-list filing is closed, identifies the statutory submission window, and describes registered party/coalition submissions and the five electoral districts. It does not provide the analyzed complete candidate docket or party-program content.'
+  },
+  {
+    id: 'latviaOdihrAssessmentMission2026', label: 'OSCE/ODIHR — Latvia, Parliamentary Elections, 3 October 2026: Election Assessment Mission',
+    url: 'https://odihr.osce.org/node/666764',
+    note: 'Official OSCE/ODIHR mission page consulted 26 September 2026. Used for the EAM mandate, published composition and schedule, scope and explicit observation limitations. No mission text or image is reproduced; planned work and future reporting are not findings.',
+    accessDate: '2026-09-26', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'Organization for Security and Co-operation in Europe', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'official international election-assessment mission page', identifiers: { electionDate: '2026-10-03', missionOpening: '2026-09-15', missionClosing: '2026-10-08', coreTeam: '5 experts from 5 participating States', finalReport: 'planned after the election process' }, description: 'ODIHR records an invited Election Assessment Mission with a Riga-based five-expert core team and names the areas it will assess. It explicitly says the mission will visit only a limited number of polling stations and will not systematically observe voting, counting or tabulation; its final report is future.'
+  },
+  {
+    id: 'latviaAuersComparativePolitics2015', label: 'Daunis Auers — Comparative Politics and Government of the Baltic States: Estonia, Latvia and Lithuania in the 21st Century',
+    url: 'https://doi.org/10.1057/9781137369970',
+    note: 'Palgrave Macmillan/Springer publisher metadata, overview, contents and bibliographic record consulted 26 September 2026; book text not consulted. Citation and independent contextual description only, no text or scan reused. Published in 2015 and not evidence about the 2026 election.',
+    accessDate: '2026-09-26', creators: ['Daunis Auers'], institution: 'Palgrave Macmillan', publicationDate: '2015-03-17', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'comparative book-length political-science monograph / publisher metadata and contents consulted', identifiers: { title: 'Comparative Politics and Government of the Baltic States', subtitle: 'Estonia, Latvia and Lithuania in the 21st Century', publisher: 'Palgrave Macmillan, London', year: '2015', pages: 'XI, 269', hardcoverIsbn: '978-1-137-36996-3', ebookIsbn: '978-1-137-36997-0', doi: '10.1057/9781137369970', relevantChapters: 'Elected and Unelected Institutions; Elections, Referendums and Parties' }, description: 'A comparative institutional and electoral-history context for Estonia, Latvia and Lithuania. The publisher description and chapter contents provide bibliographic scope only; the monograph’s arguments have not been read for this case.'
+  },
+  {
+    id: 'latviaPlakansLatvians1995', label: 'Andrejs Plakans — The Latvians: A Short History',
+    url: 'https://hooverpress.bookstore.ipgbook.com/the-latvians-products-9780817993023.php',
+    note: 'Hoover Institution Press bookstore/publisher record consulted 26 September 2026 for author, publication details and stated historical scope; the book text was not consulted. Citation and bibliographic context only. The 1995 national history is not evidence about the 2026 election.',
+    accessDate: '2026-09-26', creators: ['Andrejs Plakans'], institution: 'Hoover Institution Press', publicationDate: '1995-07', evidenceRole: 'secondary', confidence: 'high', languages: ['English'], sourceType: 'book-length scholarly national history / publisher catalog record consulted', identifiers: { title: 'The Latvians: A Short History', series: 'Studies of Nationalities', year: '1995', pages: '278', isbn: '9780817993023' }, description: 'The publisher describes a national history extending from the early medieval period to the end of the twentieth century. The publisher synopsis is used only to establish scope; no historical argument from the unread book is asserted here.'
+  },
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
@@ -11547,6 +11592,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'
+      : source.id.startsWith('latvia') ? 'Latvian parliamentary institutions, electoral administration and political history'
       : source.id.startsWith('newZealand') ? 'New Zealand Treaty, Māori, parliamentary, welfare and constitutional political history'
       : source.id.startsWith('australia') ? 'Australian federal, settler-colonial, labor and constitutional political history'
       : source.id.startsWith('russia') ? 'Russian post-Soviet constitutional, authoritarian and political history'

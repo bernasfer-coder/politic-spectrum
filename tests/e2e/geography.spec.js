@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(215);
+  await expect(page.locator('.geo-card')).toHaveCount(216);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -603,7 +603,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(215);
+  await expect(page.locator('.geo-card')).toHaveCount(216);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
@@ -726,16 +726,17 @@ test('Somalia locator opens its bounded 2026 constitutional transition and expos
 test('Zambia locator opens the 2026 election and keeps the result-verification and petition questions distinct', async ({ page }) => {
   await page.goto('/#geography');
   const map = page.getByRole('group', { name: 'Interactive world map' });
-  const zambia = map.getByRole('button', { name: 'Zambia: 1 matching case', exact: true });
+  const zambia = map.getByRole('button', { name: 'Zambia: 2 matching cases', exact: true });
   await expect(zambia).toBeVisible();
   await zambia.click();
   await expect(page.getByRole('combobox', { name: /Country/ })).toHaveValue('map-894');
   const card = page.locator('.geo-card');
-  await expect(card).toHaveCount(1);
-  await expect(card).toContainText('56.0% ±1.7');
-  await expect(card).toContainText('did not change the presidential winner');
-  await expect(card).toContainText('reported no decision on that referral');
-  await expect(card).toContainText('assigns no permanent ideology');
+  await expect(card).toHaveCount(2);
+  const electionCard = card.filter({ hasText: '56.0% ±1.7' });
+  await expect(electionCard).toHaveCount(1);
+  await expect(electionCard).toContainText('did not change the presidential winner');
+  await expect(electionCard).toContainText('reported no decision on that referral');
+  await expect(electionCard).toContainText('assigns no permanent ideology');
   await expect(zambia).toHaveAttribute('aria-pressed', 'true');
 });
 
@@ -850,5 +851,20 @@ test('Beirut municipal-election case distinguishes statutory law from the report
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href*="beirutMunicipalResults2025MoimPdf"]')).toBeVisible();
   await expect(card.locator('a[href*="reconstructingBeirutSawalha2010"]')).toBeVisible();
+});
+
+test('Latvia 2026 Saeima election remains a bounded pre-election snapshot with explicit ODIHR limits', async ({ page }) => {
+  await page.goto('/#geography?case=latvia-15th-saeima-election-2026-pre-election');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('3 October 2026');
+  await expect(card).toContainText('100-member Saeima');
+  await expect(card).toContainText('no six-axis score is assigned');
+  await expect(card).toContainText('no systematic observation of voting, counting or tabulation');
+  await expect(card).toContainText('neither text was read for this case');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="latviaSaeimaElectionLaw"]')).toBeVisible();
+  await expect(card.locator('a[href*="latviaOdihrAssessmentMission2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="latviaAuersComparativePolitics2015"]')).toBeVisible();
 });
 
