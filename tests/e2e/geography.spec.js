@@ -276,20 +276,23 @@ test('Gambia 2026 election remains a pre-election snapshot with the timetable co
   await expect(card.locator('a[href*="gambiaIecNationalDemocraticRegistration2026"]')).toBeVisible();
 });
 
-test('Bosnia 2026 pre-election snapshot distinguishes reported scanner arrival from readiness', async ({ page }) => {
+test('Bosnia 2026 pre-election snapshot distinguishes administrative self-report from implementation', async ({ page }) => {
   await page.goto('/#geography?case=bosnia-and-herzegovina-general-election-2026');
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('all scanners designated for the election had arrived in the country');
-  await expect(card).toContainText('will request 300 short-term observers');
-  await expect(card).toContainText('not confirmation of final deployment');
-  await expect(card).toContainText('arrival on 30 September and deployment on 2 October');
+  await expect(card).toContainText('26 long-term observers deployed in the country');
+  await expect(card).toContainText('300 short-term observers will be requested');
+  await expect(card).toContainText('arrival scheduled for 30 September and deployment for 2 October');
+  await expect(card).toContainText('On 25 September, the CEC itself said key planned technology-preparation activities had been realized');
+  await expect(card).toContainText('not an independent readiness audit');
   await expect(card).toContainText('distribution of devices and ballots to municipal and city commissions was scheduled to begin on 27 September');
   await expect(card).toContainText('not a receipt or inventory record');
   await expect(card).toContainText('does not establish acceptance, configuration, local delivery, operator training or subsequent implementation');
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href*="bihFenaScannerDeliveryUpdate2026"]')).toBeVisible();
   await expect(card.locator('a[href*="bihOdihrMissionDeploymentSchedule2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="bihCecTechnologyPreparation20260925"]')).toBeVisible();
 });
 
 test('Peru 2026 election case keeps official returns distinct from observer assessments', async ({ page }) => {
