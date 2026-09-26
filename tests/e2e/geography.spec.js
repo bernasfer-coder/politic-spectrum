@@ -320,6 +320,19 @@ test('Libya 2026 update distinguishes roadmap commitments, limited endorsements 
   await expect(card).toContainText('not a forecast or claim about what followed');
 });
 
+test('Mali 2025–26 update distinguishes enacted party restrictions from government rationale and procedural court review', async ({ page }) => {
+  await page.goto('/#geography?case=malian-postcolonial-constitutional-and-military-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1960–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('Law 2025-005 repealed the party charter and opposition statute');
+  await expect(card).toContainText('no final merits ruling, annulment or restoration of multiparty rights');
+  await expect(card).toContainText('five-year renewable presidential mandate until pacification');
+  await expect(card).toContainText('No event-specific book-length study of the 2025–26 changes was located');
+  await expect(card).toContainText('not a present-status account after that date');
+});
+
 test('Zimbabwe 2026 update distinguishes the gazetted amendment from competing legal interpretations and a procedural hearing', async ({ page }) => {
   await page.goto('/#geography?case=zimbabwean-second-republic-and-2023-electoral-contestation');
   const card = page.locator('.geo-card');

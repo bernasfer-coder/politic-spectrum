@@ -494,6 +494,23 @@ for (const sourceId of ['italyJudicialReformConstitutionalLaw2025', 'italyJudici
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Italy rights/provenance review missing: ${sourceId}`);
 }
 assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === italy2026.labelId)?.aliases.includes('Italian judicial reform referendum 2026'));
+const mali2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'malian-postcolonial-constitutional-and-military-transition');
+assert.equal(mali2026.startYear, 1960);
+assert.equal(mali2026.endYear, 2026);
+assert.equal(mali2026.reviewedAt, '2026-09-26');
+assert.ok(mali2026.claim.includes('Law 2025-005 repealed the party charter and opposition statute'));
+assert.ok(mali2026.claim.includes('no final merits ruling, annulment or restoration of multiparty rights'));
+assert.ok(mali2026.claim.includes('an election schedule or completed pacification'));
+assert.ok(mali2026.claim.includes('this is an executive rationale, not evidence of consensus'));
+assert.ok(mali2026.claim.includes('not scores'));
+assert.ok(mali2026.limitation.includes('No event-specific book-length study of the 2025–26 changes was located'));
+assert.ok(mali2026.limitation.includes('not a present-status account after that date'));
+for (const sourceId of ['cisseTransitionHardeningMali2024', 'toureMultifacetedCrisisMali2024', 'maliPartyCharterRepeal2025Official', 'maliPartyDissolutionDecree2025Official', 'maliGovernmentRationale2025', 'maliTransitionCharterRevision2025Official', 'maliUnIndependentExpertReport2026', 'maliPartyDissolutionLegalAnalysis2025', 'maliPoliticalPartyCourtReferral2025', 'maliUnSecurityUpdateMay2026']) {
+  assert.ok(mali2026.sourceIds.includes(sourceId), `Mali 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Mali bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Mali rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === mali2026.labelId)?.aliases.includes('2025 political-party dissolution and transition charter'));
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 134, 'the atlas should expose all dated post-2000 implemented cases');

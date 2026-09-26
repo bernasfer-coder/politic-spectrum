@@ -665,6 +665,96 @@ const sources = [
     description: 'Archival French-language history of political parties and associations from 1946 through the early post-independence period and the 1968 coup. It adds locally rooted party-history evidence to the later constitutional, Tuareg, legitimacy and intervention studies.'
   },
   {
+    id: 'cisseTransitionHardeningMali2024',
+    label: 'Balla Cissé — Le durcissement du régime de transition au Mali (2024)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/le-durcissement-du-regime-de-transition-au-mali/16437',
+    note: 'L’Harmattan bibliographic record consulted 26 September 2026: 138 pages, ISBN 9782336418384, published 1 February 2024. Publisher description and catalog record only were consulted, not the full book. No wording, quotation, table, chapter or scan is republished; description is used only to characterize the book’s pre-2025 scope.',
+    accessDate: '2026-09-26', creators: ['Balla Cissé'], institution: 'L’Harmattan', publicationDate: '2024-02-01', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language constitutional and political study', identifiers: { isbn: '9782336418384', pages: '138' },
+    description: 'French-language account of the 2021–2024 hardening of Mali’s transition regime, constitutional change and election horizon. The publisher record establishes the book’s subject and bibliographic facts, not independent verification of every claim or coverage of subsequent 2025 enactments.'
+  },
+  {
+    id: 'toureMultifacetedCrisisMali2024',
+    label: 'Jabir Touré — Mali : une crise aux multiples facettes (2024)',
+    url: 'https://www.editions-harmattan.fr/catalogue/livre/mali-une-crise-aux-multiples-facettes/76547',
+    note: 'L’Harmattan bibliographic record consulted 26 September 2026: 212 pages, ISBN 9782336469843, published 26 September 2024. Catalog description only was consulted, not the full book. No wording, quotation, table, chapter or scan is republished; author-positioned security and geopolitical interpretation is not treated as neutral consensus or evidence about 2025–26.',
+    accessDate: '2026-09-26', creators: ['Jabir Touré'], institution: 'L’Harmattan', publicationDate: '2024-09-26', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length French-language security and geopolitical interpretation', identifiers: { isbn: '9782336469843', pages: '212' },
+    description: 'Author-positioned analysis of Mali’s multidimensional crisis, including security, defense and external actors. Used as a contextual book-length perspective with pre-2025 scope; the catalog description is not a substitute for full-text assessment.'
+  },
+  {
+    id: 'maliPartyCharterRepeal2025Official',
+    label: 'République du Mali — Loi n° 2025-005 portant abrogation de la Charte des partis politiques et du statut de l’opposition (13 mai 2025)',
+    url: 'https://sgg-mali.ml/JO/2025/mali-jo-2025-13-sp.pdf',
+    note: 'Primary legal text in Journal officiel de la République du Mali, special issue no. 03, consulted 26 September 2026. Link to official PDF only; no text or scan is reproduced. Establishes repeal of the cited party charter and opposition statute, not by itself the decree’s constitutionality, implementation or public consent.',
+    accessDate: '2026-09-26', creators: ['République du Mali'], institution: 'Secrétariat général du Gouvernement du Mali', publicationDate: '2025-05-13', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary statute / Journal officiel', identifiers: { law: '2025-005', date: '2025-05-13', gazette: 'Journal officiel, numéro spécial 03' },
+    description: 'Primary statute abrogating the 2005 political-party charter and 2015 statute of the political opposition, while referring the conditions for political parties to a future law. It documents an enacted legal change, not the content or later judicial validity of a replacement framework.'
+  },
+  {
+    id: 'maliPartyDissolutionDecree2025Official',
+    label: 'Présidence de la Transition du Mali — Décret n° 2025-0339/PT-RM portant dissolution des partis politiques et des organisations à caractère politique (13 mai 2025)',
+    url: 'https://sgg-mali.ml/JO/2025/mali-jo-2025-04-sp.pdf',
+    note: 'Primary decree in Journal officiel de la République du Mali, special issue no. 04 dated 16 May 2025, consulted 26 September 2026. Link only; no wording or scan is reproduced. Records the executive act and stated prohibitions, not its compatibility with the Constitution, proportionality, enforcement in every locality or a final court ruling.',
+    accessDate: '2026-09-26', creators: ['Présidence de la Transition du Mali'], institution: 'Secrétariat général du Gouvernement du Mali', publicationDate: '2025-05-13', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary executive decree / Journal officiel', identifiers: { decree: '2025-0339/PT-RM', date: '2025-05-13', gazette: 'Journal officiel, numéro spécial 04' },
+    description: 'Primary legal record dissolving political parties and political organizations and prohibiting their activities and meetings. Establishes the decree’s formal act and text, not its constitutionality, nationwide enforcement or societal representativeness.'
+  },
+  {
+    id: 'maliGovernmentRationale2025',
+    label: 'Ministère de l’Entrepreneuriat national, de l’Emploi et de la Formation professionnelle — Discours sur le bien-fondé du décret n° 2025-0339/PT-RM',
+    url: 'https://menefp.gouv.ml/discours-introductif-de-madame-la-ministre-sur-le-bien-fonde-de-la-decision-du-gouvernement-de-la-transition-portee-par-le-decret-n2025-0339-pt-rm-relatif-a-la-dissolution-des-partis-politiques/',
+    note: 'Official ministerial speech consulted 26 September 2026 as a primary witness to the government’s stated justification: refoundation-conference consultation, party proliferation and clientelism. This is an executive rationale, not independent evidence of consensus, necessity, proportionality, or the views of the whole population. No speech wording is reproduced.',
+    accessDate: '2026-09-26', creators: ['Ministère de l’Entrepreneuriat national, de l’Emploi et de la Formation professionnelle'], institution: 'Gouvernement du Mali', publicationDate: '2025', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary government speech / stated policy rationale', identifiers: { decree: '2025-0339/PT-RM' },
+    description: 'Government minister’s stated justification for dissolving political parties, including an appeal to the National Refoundation Conference and claims about party proliferation and clientelism. Documents the government position only, not consultation scope or representative public consent.'
+  },
+  {
+    id: 'maliTransitionCharterRevision2025Official',
+    label: 'République du Mali — Loi n° 2025-029 portant révision de la Charte de la Transition (8 juillet 2025)',
+    url: 'https://sgg-mali.ml/JO/2025/mali-jo-2025-08-sp.pdf',
+    note: 'Primary statute in Journal officiel de la République du Mali, special issue no. 08 dated 11 July 2025, consulted 26 September 2026. Link only; no wording or scan is reproduced. The enacted five-year renewable mandate is recorded as formal text; the “until pacification” condition and transition objectives do not establish an election date or completed pacification.',
+    accessDate: '2026-09-26', creators: ['République du Mali'], institution: 'Secrétariat général du Gouvernement du Mali', publicationDate: '2025-07-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary statute revising transition charter / Journal officiel', identifiers: { law: '2025-029', date: '2025-07-08', gazette: 'Journal officiel, numéro spécial 08' },
+    description: 'Primary statute revising the Transition Charter, including a five-year renewable presidential mandate until pacification and stated transition objectives. It is a legal witness and does not schedule or document a completed national election.'
+  },
+  {
+    id: 'maliUnIndependentExpertReport2026',
+    label: 'Conseil des droits de l’homme des Nations Unies — Rapport de l’Expert indépendant sur la situation des droits de l’homme au Mali, A/HRC/61/76 (12 février 2026)',
+    url: 'https://digitallibrary.un.org/record/4106528',
+    note: 'Official UN Digital Library record and report consulted 26 September 2026. The report covers 4 April–30 November 2025 and is linked, not reproduced. Its characterization of political and rights developments is explicitly attributed to the Independent Expert; it is an institutional assessment, not a judicial disposition or a full political history.',
+    accessDate: '2026-09-26', creators: ['Independent Expert on the situation of human rights in Mali'], institution: 'United Nations Human Rights Council', publicationDate: '2026-02-12', evidenceRole: 'contextual', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'UN Human Rights Council independent expert report', identifiers: { report: 'A/HRC/61/76', documentDate: '2026-02-12', coverage: '2025-04-04–2025-11-30' },
+    description: 'UN Independent Expert assessment of human-rights developments through November 2025, including the dissolution of parties and the revised transition charter. Its “setback” characterization is attributed to the expert, rather than presented as a court finding.'
+  },
+  {
+    id: 'maliPartyDissolutionLegalAnalysis2025',
+    label: 'ARTICLE 19 — Dissolution of political parties in Mali: legal analysis (9 December 2025)',
+    url: 'https://www.article19.org/wp-content/uploads/2025/12/FINALDissolution-of-political-parties-in-Mali9Dec2025.pdf',
+    note: 'ARTICLE 19 legal briefing consulted 26 September 2026, link only. Its conclusion that a blanket dissolution is disproportionate and lacks individualized judicial review is the organization’s legal analysis, not a binding ruling. No text, quotation or PDF pages are reproduced.',
+    accessDate: '2026-09-26', creators: ['ARTICLE 19'], institution: 'ARTICLE 19', publicationDate: '2025-12-09', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'civil-society legal analysis / human-rights briefing', identifiers: { publicationDate: '2025-12-09' },
+    description: 'Independent civil-society legal assessment of the party-dissolution decree and its human-rights implications. Its proportionality and review conclusions are attributed to ARTICLE 19 and are distinguished from primary law and subsequent judicial outcome.'
+  },
+  {
+    id: 'maliPoliticalPartyCourtReferral2025',
+    label: 'International IDEA — Mali: August 2025 democracy update',
+    url: 'https://www.idea.int/democracytracker/report/mali/august-2025',
+    note: 'International IDEA Democracy Tracker report consulted 26 September 2026, link only. It reports a Bamako court’s procedural stay of proceedings and constitutional referral in a challenge to the dissolution decree; this is not a final merits judgment, annulment, or verified restoration of multiparty rights.',
+    accessDate: '2026-09-26', creators: ['International IDEA'], institution: 'International Institute for Democracy and Electoral Assistance', publicationDate: '2025-08', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional democracy-monitoring update / reported judicial procedure', identifiers: { month: '2025-08' },
+    description: 'Reports a procedural pause and constitutional-question referral in litigation challenging dissolution. No final decision on constitutionality or merits is established by this update.'
+  },
+  {
+    id: 'maliUnSecurityUpdateMay2026',
+    label: 'United Nations Secretary-General Spokesperson — Daily Press Briefing, Mali (5 May 2026)',
+    url: 'https://www.un.org/sg/en/content/highlight/2026-05-05.html',
+    note: 'Official UN spokesperson briefing consulted 26 September 2026, link only. Its short account relays reports of coordinated attacks in several towns during the preceding week, civilian casualties and displacement; it is a dated contemporaneous update and is not used to assign responsibility, quantify total harm or establish subsequent conditions.',
+    accessDate: '2026-09-26', creators: ['Spokesperson for the Secretary-General'], institution: 'United Nations', publicationDate: '2026-05-05', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'official contemporaneous humanitarian and security briefing', identifiers: { briefingDate: '2026-05-05' },
+    description: 'Dated UN briefing reports attacks, civilian harm and displacement in Mali based on reports available on 5 May 2026. It anchors the case’s security horizon without asserting later status or actor responsibility.'
+  },
+  {
     id: 'coteDivPresidenceConstitution2016',
     label: 'Présidence de la République de Côte d’Ivoire — Constitution de la troisième République (2016)',
     url: 'https://www.presidence.ci/en/ivory-coast/the-constitution/',
@@ -11323,7 +11413,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('france') || source.id.startsWith('atkinFifthFrench') || source.id.startsWith('elgiePoliticalInstitutionsFrance') || source.id.startsWith('knappWrightGovernmentFrance') || source.id.startsWith('duhamelFoucaultFullaLazarRepublic') ? 'French constitutional, Fifth Republic and political history'
       : source.id.startsWith('burkina') || source.id.startsWith('harschBurkina') || source.id.startsWith('englebertBurkina') || source.id.startsWith('kaborePoliticalHistoryBurkina') || source.id.startsWith('englebertCotRevolutionBurkina') || source.id.startsWith('sankaraSpeeches') ? 'Burkinabè constitutional, revolutionary and political-transition history'
       : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
-      : source.id.startsWith('mali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
+      : source.id.startsWith('mali') || source.id.startsWith('cisseTransitionHardeningMali') || source.id.startsWith('toureMultifacetedCrisisMali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') || source.id.startsWith('kilamboMitiTanzaniaMagufuli') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
       : source.id.startsWith('mozambique') || source.id.startsWith('newittHistoryMozambique') || source.id.startsWith('hanlonMozambique') || source.id.startsWith('geffrayCauseArmesMozambique') || source.id.startsWith('manningPoliticsPeaceMozambique') ? 'Mozambican decolonization, socialist, conflict and constitutional history'
