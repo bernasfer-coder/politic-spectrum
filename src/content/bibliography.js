@@ -5943,6 +5943,48 @@ export const BIBLIOGRAPHY_METADATA = {
     languages: ['Portuguese'],
     description: 'Official CNE record for the 10 March 2024 election to the Assembly of the Republic, including links to the official map and results. It documents electoral administration and the selected endpoint, not representativeness, voter experience, party ideology, policy outcomes or the meaning of the result.'
   },
+  portugalLegislativeElection2025Official: {
+    accessDate: '2026-09-26',
+    creators: ['Comissão Nacional de Eleições'],
+    institution: 'Comissão Nacional de Eleições; Diário da República',
+    sourceType: 'official legislative election results and elected-members record / Portuguese primary source',
+    evidenceRole: 'primary',
+    discipline: 'Portuguese electoral and constitutional history',
+    publicationDate: '2025-05-31',
+    publisher: 'Diário da República, 1.ª série, n.º 104-A; Mapa Oficial n.º 2-A/2025',
+    identifiers: { electionDate: '2025-05-18', officialMap: 'Mapa Oficial n.º 2-A/2025', gazetteDate: '2025-05-31' },
+    confidence: 'high',
+    languages: ['Portuguese'],
+    description: 'CNE announcement and certified official map for the early 18 May 2025 election to the Assembly of the Republic, listing results and elected members by constituency. It establishes the official returns, including party mandate totals, but not voter motives, party ideology, campaign equality or policy implementation.'
+  },
+  mendesPortugalPoliticalSpace2025: {
+    accessDate: '2026-09-26',
+    creators: ['Mariana S. Mendes'],
+    institution: 'Taylor & Francis / South European Society and Politics',
+    sourceType: 'peer-reviewed political science journal article / publisher abstract and bibliographic record',
+    evidenceRole: 'secondary',
+    discipline: 'Portuguese elections, party-system change and political space',
+    publicationDate: '2025-07',
+    publisher: 'South European Society and Politics, 30(3), 469–494',
+    identifiers: { doi: '10.1080/13608746.2025.2567929', volume: '30', issue: '3', pages: '469-494' },
+    confidence: 'medium',
+    languages: ['English'],
+    description: 'Peer-reviewed analysis of the May 2025 election. Its abstract interprets the result as a potential critical juncture in party-system change, emphasizing Chega’s emergence as the second-largest parliamentary force, immigration’s growing salience and elements of agenda adoption by the mainstream right. Full text is subscriber-restricted and was not independently collated; claims are kept within the abstract’s attributed scope.'
+  },
+  portugalPresidentialRunoff2026Official: {
+    accessDate: '2026-09-26',
+    creators: ['Comissão Nacional de Eleições'],
+    institution: 'Comissão Nacional de Eleições; Diário da República',
+    sourceType: 'official presidential election results / Portuguese primary legal record',
+    evidenceRole: 'primary',
+    discipline: 'Portuguese presidential elections and constitutional history',
+    publicationDate: '2026-02-26',
+    publisher: 'Diário da República, 1.ª série, n.º 40; Mapa Oficial n.º 1/2026',
+    identifiers: { electionDate: '2026-02-08', officialMap: 'Mapa Oficial n.º 1/2026', gazetteDate: '2026-02-26' },
+    confidence: 'high',
+    languages: ['Portuguese'],
+    description: 'Certified official map for the 8 February 2026 presidential second round. It records António José Seguro elected with 3,502,613 votes (66.84% of valid votes) and André Ventura with 1,737,950 (33.16%), and itself notes discrepancies involving registered-elector and ballot totals. It establishes the official result, not voter motives, presidential performance or a parliamentary/ideological profile.'
+  },
   cdsHistoryOfficial: {
     accessDate: '2026-09-18',
     creators: ['Centro Democrático Social'],
