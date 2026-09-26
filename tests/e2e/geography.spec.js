@@ -924,12 +924,19 @@ test('Latvia 2026 Saeima election remains a bounded pre-election snapshot with e
   await expect(card).toContainText('no six-axis score is assigned');
   await expect(card).toContainText('no systematic observation of voting, counting or tabulation');
   await expect(card).toContainText('neither text was read for this case');
-  await expect(card).toContainText('all 1,428 candidates');
+  await expect(card).toContainText('1,434 candidates');
+  await expect(card).toContainText('1,428 candidates');
+  await expect(card).toContainText('difference of six');
+  await expect(card).toContainText('82 in-person stations and 37 postal-voting locations');
+  await expect(card).toContainText('criminal proceedings alone did not bar candidacy');
   await expect(card).toContainText('audio form');
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href*="latviaSaeimaElectionLaw"]')).toBeVisible();
   await expect(card.locator('a[href*="latviaOdihrAssessmentMission2026"]')).toBeVisible();
   await expect(card.locator('a[href*="latviaVestnesisCandidateAudio2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="latviaCvkCandidateFilingTotals2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="latviaCvkCandidateRemovalNotice2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="latviaCvkOverseasVoting2026"]')).toBeVisible();
   await expect(card.locator('a[href*="latviaAuersComparativePolitics2015"]')).toBeVisible();
 });
 

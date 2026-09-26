@@ -99,8 +99,14 @@ assert.equal(latviaElection2026?.reviewedAt, '2026-09-26');
 assert.equal(latviaElection2026?.placeId, 'latvia-15th-saeima-election-2026');
 assert.ok(latviaElection2026?.claim.includes('schedules the 15th Saeima election for 3 October 2026'));
 assert.ok(latviaElection2026?.claim.includes('five districts'));
-assert.ok(latviaElection2026?.claim.includes('information covering all 1,428 candidates'));
+assert.ok(latviaElection2026?.claim.includes('1,434 candidates for 100 seats'));
+assert.ok(latviaElection2026?.claim.includes('1,428 candidates'));
+assert.ok(latviaElection2026?.claim.includes('difference of six'));
+assert.ok(latviaElection2026?.claim.includes('82 in-person stations and 37 postal-voting locations'));
+assert.ok(latviaElection2026?.claim.includes('votes for the person would not be counted'));
 assert.ok(latviaElection2026?.claim.includes('available in audio form'));
+assert.ok(latviaElection2026?.limitation.includes('records reviewed did not explain the difference'));
+assert.ok(latviaElection2026?.limitation.includes('did not measure registration, ballot receipt, use, successful delivery'));
 assert.ok(latviaElection2026?.limitation.includes('did not independently enumerate or analyze'));
 assert.ok(latviaElection2026?.claim.includes('will not systematically observe voting, counting or tabulation'));
 assert.ok(latviaElection2026?.claim.includes('neither text was read for this case'));
@@ -109,6 +115,10 @@ assert.ok(latviaElection2026?.limitation.includes('no ideological label or six-a
 assert.ok(latviaElection2026?.sourceIds.includes('latviaSaeimaElectionLaw'));
 assert.ok(latviaElection2026?.sourceIds.includes('latviaOdihrAssessmentMission2026'));
 assert.ok(latviaElection2026?.sourceIds.includes('latviaVestnesisCandidateAudio2026'));
+for (const sourceId of ['latviaCvkCandidateFilingTotals2026', 'latviaCvkCandidateRemovalNotice2026', 'latviaCvkOverseasVoting2026']) {
+  assert.ok(latviaElection2026?.sourceIds.includes(sourceId), `Latvia snapshot should cite ${sourceId}`);
+  assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes(sourceId)), `Latvia source ${sourceId} should resolve in bibliography`);
+}
 assert.ok(latviaElection2026?.sourceIds.includes('latviaAuersComparativePolitics2015'));
 assert.ok(latviaElection2026?.sourceIds.includes('latviaPlakansLatvians1995'));
 assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === latviaElection2026?.labelId)));
