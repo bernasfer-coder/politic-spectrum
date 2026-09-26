@@ -2638,6 +2638,16 @@ const sources = [
     description: 'Preliminary regional observer account describing the legal framework, electoral administration and procedures at selected sites, alongside the absence of voting in Tigray and some Amhara areas. It is method-bounded and not a results audit.'
   },
   {
+    id: 'ethiopiaElectionWatchResults2026',
+    label: 'ElectionWatch Ethiopia — results of the 7th General Election',
+    url: 'https://electionwatch.et/results/',
+    note: 'Independent open-data portal consulted on 26 September 2026. Its results page states that its figures are based on public NEBE filings, debate broadcasts and party materials and advises readers to check the original source. It reports Prosperity Party 438 of 486 decided HoPR seats and 19 unattributed seats across the reported federal and regional totals. This distinguishes decided returns from the 501-seat chamber denominator used by AP, but is not NEBE’s consolidated return, and its underlying itemized filings and regional aggregates were not independently reconciled here. No data, chart, wording or image is reproduced.',
+    accessDate: '2026-09-26', creators: ['ElectionWatch Ethiopia'], institution: 'ElectionWatch Ethiopia',
+    evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'independent open-data portal aggregating publicly available election filings', identifiers: { electionDate: '2026-06-01', decidedHoPRReturns: '486', HoPRChamberSeats: '501', ProsperityPartyHoPRSeats: '438', allChamberSeatsPending: '19' },
+    description: 'The results page reports 3,167 seats decided, including 486 HoPR and 2,681 regional-council seats, and says the Board excludes constituencies awaiting recount or re-run. Its party breakdown lists 438 Prosperity Party HoPR seats (90.1% of 486 decided HoPR returns). These are the portal’s compilation and calculations from public materials, not a separately audited national tabulation; do not use its regional-council aggregate without reconciling the underlying records.'
+  },
+  {
     id: 'ethiopiaElectionReturnsAnalysis2026',
     label: 'Ethio Elections / Ethiopia Insider — constituency-level analysis of Ethiopia’s seventh general-election returns',
     url: 'https://ethioelections.com/2026/08/18442/',

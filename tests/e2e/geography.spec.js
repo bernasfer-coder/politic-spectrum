@@ -203,15 +203,17 @@ test('Brazil 2026 election snapshot distinguishes TSE-reported registration stat
   await expect(card.getByRole('link', { name: /election-security planning meeting/ })).toBeVisible();
 });
 
-test('Ethiopia 2026 election preserves the seat-denominator discrepancy and limited observation scope', async ({ page }) => {
+test('Ethiopia 2026 election distinguishes decided-return and full-chamber seat denominators', async ({ page }) => {
   await page.goto('/#geography?case=ethiopia-2026-seventh-general-election');
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('won 438 HoPR seats');
-  await expect(card).toContainText('AP reported 438 of 501 seats');
-  await expect(card).toContainText('486 certified House results');
+  await expect(card).toContainText('AP reported 438 of 501 House seats');
+  await expect(card).toContainText('486 decided HoPR returns');
+  await expect(card).toContainText('90.1% of that subset');
+  await expect(card).toContainText('not NEBE’s consolidated, independently audited national table');
   await expect(card).toContainText('Tigray');
-  await expect(card).toContainText('no percentage is inferred');
+  await expect(card).toContainText('no full-chamber share');
   await page.getByRole('combobox', { name: /Place/ }).selectOption('ethiopia-general-election-2026');
   await expect(card).toHaveCount(1);
 });

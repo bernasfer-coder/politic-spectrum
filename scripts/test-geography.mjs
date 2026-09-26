@@ -365,10 +365,13 @@ const ethiopiaElection = GEOGRAPHY_CASES.find(({ id }) => id === 'ethiopia-2026-
 assert.equal(ethiopiaElection?.datePrecision, 'snapshot');
 assert.equal(ethiopiaElection?.confidence, 'medium');
 assert.ok(ethiopiaElection?.claim.includes('won 438 HoPR seats'));
-assert.ok(ethiopiaElection?.claim.includes('AP reported 438 of 501 seats'));
-assert.ok(ethiopiaElection?.claim.includes('486 certified House results'));
+assert.ok(ethiopiaElection?.claim.includes('AP reported 438 of 501 House seats'));
+assert.ok(ethiopiaElection?.claim.includes('486 decided HoPR returns'));
+assert.ok(ethiopiaElection?.claim.includes('90.1% of that subset'));
+assert.ok(ethiopiaElection?.claim.includes('not NEBE’s consolidated, independently audited national table'));
 assert.ok(ethiopiaElection?.claim.includes('Tigray'));
-assert.ok(ethiopiaElection?.limitation.includes('no percentage is inferred'));
+assert.ok(ethiopiaElection?.limitation.includes('no full-chamber share'));
+assert.ok(ethiopiaElection?.sourceIds.includes('ethiopiaElectionWatchResults2026'));
 assert.ok(ethiopiaElection?.sourceIds.includes('ethiopiaAuElectionObservation2026'));
 assert.ok(ethiopiaElection?.sourceIds.includes('lyonsPuzzleEthiopianPolitics2019'));
 assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'ethiopia-general-election-2026')?.countryIds[0], 'ethiopia');

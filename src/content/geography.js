@@ -2921,6 +2921,27 @@ GEOGRAPHY_CASES.push(caseRecord({
   locator: '1987 Constitution, Article XI; Supreme Court of the Philippines press briefers for 25 July 2025, 29 January 2026 and 5 August 2026; House of Representatives 11 May 2026 vote announcement; Senate Case No. 004-2026 docket and 14 May Senate notice; Philippine News Agency reports on the 18 May convening, 23 September threshold ruling and 25 September pending challenge; Heydarian, Journal of Democracy 36(3) (July 2025), publisher abstract; Thompson (2023) and Arugay–Encinas-Franco (eds., 2024), publisher/book records only.'
 }));
 
+const ethiopiaElectionCase = GEOGRAPHY_CASES.find(({ id }) => id === 'ethiopia-2026-seventh-general-election');
+if (ethiopiaElectionCase) {
+  ethiopiaElectionCase.reviewedAt = '2026-09-26';
+  ethiopiaElectionCase.periodLabel = '1 June–26 September 2026 · seventh general election, results announcement and observer record';
+  ethiopiaElectionCase.limitation = ethiopiaElectionCase.limitation.replace('through 25 September 2026', 'through 26 September 2026');
+  ethiopiaElectionCase.evidenceKind = 'NEBE official election portal; EBC report of the Board’s result announcement; AU and IGAD preliminary observation; AP reporting; ElectionWatch and Ethiopia Insider independent analyses of public election filings; and two earlier book-length political histories consulted through publisher/catalogue records only';
+  ethiopiaElectionCase.claim = ethiopiaElectionCase.claim.replace(
+    'The published figures do not yield a stable denominator: AP reported 438 of 501 seats, while Ethiopia Insider’s later analysis of constituency returns reported 486 certified House results and further results pending. The materials reviewed do not establish that these counts use the same seat universe or stage. The case therefore records the 438 announced seats but calculates no vote or seat percentage and does not call the election fully concluded.',
+    'AP reported 438 of 501 House seats. ElectionWatch Ethiopia’s independent open-data results page separates the chamber’s 501 seats from 486 decided HoPR returns and lists 438 Prosperity Party seats among those decided, or 90.1% of that subset; its page reports 19 unattributed seats across federal and regional contests. This is consistent with full-chamber versus decided-return denominators, rather than necessarily contradictory counts. However, ElectionWatch aggregates public materials and is not NEBE’s consolidated, independently audited national table. We do not infer that all remaining seats are HoPR seats, calculate a percentage of the full chamber, or call the election fully concluded.'
+  ).replace(
+    'The return analysis adds a distinct data-based perspective on uncontested races and constituency competition, but its extraction and denominator require reconciliation with the underlying Board records.',
+    'ElectionWatch’s constituency-level results portal and Ethiopia Insider’s separate return analysis add data-based perspectives on decided returns and competition, but neither substitutes for checking NEBE’s underlying itemized records; regional-council aggregates and remaining constituencies remain unreconciled.'
+  );
+  ethiopiaElectionCase.limitation = ethiopiaElectionCase.limitation.replace(
+    'The result count of 438 is reported by EBC as NEBE’s announcement, but contemporaneous independent accounts differ over whether the denominator is 501 or 486 certified returns; no percentage is inferred and the Board’s itemized nationwide data, remaining reruns/recounts and complaints were not independently reconciled.',
+    'EBC attributes 438 HoPR seats to NEBE’s announcement. ElectionWatch reports 486 decided HoPR returns, the 501-seat chamber and 19 unattributed seats across its combined tally; AP reports 438 of 501. This clarifies that the denominators refer to different populations or stages, but ElectionWatch is an aggregation rather than NEBE’s consolidated return, and its itemized source filings, regional-council totals, recounts/re-runs and complaints were not independently reconciled. Its 90.1% figure describes only 438 of 486 decided HoPR returns; no full-chamber share or completed-tally claim is made.'
+  );
+  ethiopiaElectionCase.sourceIds.splice(4, 0, 'ethiopiaElectionWatchResults2026');
+  ethiopiaElectionCase.locator += '; ElectionWatch Ethiopia, results page (accessed 26 September 2026), with page-level statement of public NEBE, debate and party source materials';
+}
+
 GEOGRAPHY_CASES.push(caseRecord({
   id: 'new-zealand-2026-general-election-pre-election-snapshot',
   labelId: 'new-zealand-2026-general-election-pre-election',
