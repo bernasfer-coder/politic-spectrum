@@ -69,9 +69,12 @@ test('Tonga case separates the 2025 parliamentary transition from pending Octobe
   await expect(card).toContainText('scheduled a general election for 20 November 2025');
   await expect(card).toContainText('16–10');
   await expect(card).toContainText('one woman was directly elected');
+  await expect(card).toContainText('Election Act section 21');
+  await expect(card).toContainText('section 24 breach');
   await expect(card).toContainText('14 candidates were nominated');
   await expect(card).toContainText('polling remained in the future on 26 September');
-  await expect(card).toContainText('not independently verified here');
+  await expect(card).toContainText('the appeal judgments have not been independently retrieved or read');
+  await expect(card).toContainText('two constituency-specific first-instance findings');
 });
 
 test('Ghana case separates 2025 transition, government fiscal targets and IMF assessment', async ({ page }) => {

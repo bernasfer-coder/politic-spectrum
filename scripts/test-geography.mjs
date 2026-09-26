@@ -76,12 +76,16 @@ assert.ok(tongaTransition2026?.historicalSetting.includes('2025'));
 assert.ok(tongaTransition2026?.claim.includes('one woman directly elected'));
 assert.ok(tongaTransition2026?.claim.includes('16–10'));
 assert.ok(tongaTransition2026?.claim.includes('effective 31 December'));
-assert.ok(tongaTransition2026?.claim.includes('the appeal judgments and the by-election itself were not independently verified here'));
+assert.ok(tongaTransition2026?.claim.includes('Election Act section 21'));
+assert.ok(tongaTransition2026?.claim.includes('section 32(1)'));
+assert.ok(tongaTransition2026?.claim.includes('Fasi v Sika (CV49/2025)'));
+assert.ok(tongaTransition2026?.claim.includes('the appeal judgments have not been independently retrieved or read'));
 assert.ok(tongaTransition2026?.claim.includes('polling remained in the future on 26 September'));
 assert.ok(tongaTransition2026?.limitation.includes('not studies of the 2025 election'));
-assert.ok(tongaTransition2026?.limitation.includes('direct article pages returned HTTP 403'));
+assert.ok(tongaTransition2026?.limitation.includes('appellate judgments were not located or read'));
+assert.ok(tongaTransition2026?.limitation.includes('article pages returned HTTP 403'));
 assert.ok(tongaTransition2026?.limitation.includes('8 October had not occurred'));
-for (const sourceId of ['tongaElectionInformation2025', 'tongaElectionResults2025', 'tongaIpuElection2025', 'tongaParliamentFakafanuaElection2025', 'tongaParliamentCabinet2026', 'tongaAttorneyGeneralElectionJudgmentIndex2026', 'tongaParliamentNiua17AppealPending2026', 'matangiTangimanaAppeal2026', 'matangiSikaAppeal2026', 'matangiTongaByelectionCandidates2026']) {
+for (const sourceId of ['tongaElectionInformation2025', 'tongaElectionResults2025', 'tongaIpuElection2025', 'tongaParliamentFakafanuaElection2025', 'tongaParliamentCabinet2026', 'tongaAttorneyGeneralElectionJudgmentIndex2026', 'tongaSupremeCourtFinauTangimana2026', 'tongaSupremeCourtFasiSika2026', 'tongaParliamentNiua17AppealPending2026', 'matangiTangimanaAppeal2026', 'matangiSikaAppeal2026', 'matangiTongaByelectionCandidates2026']) {
   assert.ok(tongaTransition2026?.sourceIds.includes(sourceId), `Tonga transition should cite ${sourceId}`);
   assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes(sourceId)), `Tonga source ${sourceId} should resolve in bibliography`);
 }
