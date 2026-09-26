@@ -128,6 +128,14 @@ assert.equal(filterGeographyCases({ country: 'kenya' })[0].id, 'kenyan-postcolon
 assert.ok(filterGeographyCases({ country: 'kenya' }).some(({ id }) => id === 'kenyan-ruto-era-succession-and-finance-bill-protest-order'));
 assert.equal(filterGeographyCases({ country: 'uganda' })[0].id, 'ugandan-postcolonial-constitutional-and-movement-transition');
 assert.ok(filterGeographyCases({ country: 'uganda' }).some(({ id }) => id === 'ugandan-late-museveni-order-and-2026-electoral-contestation'));
+const uganda2026 = filterGeographyCases({ country: 'uganda' }).find(({ id }) => id === 'ugandan-late-museveni-order-and-2026-electoral-contestation');
+assert.equal(uganda2026.reviewedAt, '2026-09-26');
+assert.ok(uganda2026.claim.includes('[2026] UGSC 7 (26 February)'));
+assert.ok(uganda2026.claim.includes('not a merits ruling on the petition’s allegations'));
+assert.ok(uganda2026.limitation.includes('allegations were not decided on their merits'));
+for (const sourceId of ['ugandaJudiciaryKasibanteDiscoveryHearing2026', 'ugandaSupremeCourtKasibanteWithdrawal2026']) {
+  assert.ok(uganda2026.sourceIds.includes(sourceId), `Uganda post-election source missing: ${sourceId}`);
+}
 assert.ok(filterGeographyCases({ country: 'map-862' }).some(({ id }) => id === 'venezuelan-post-2024-election-repression-and-2025-electoral-contestation'));
 assert.equal(filterGeographyCases({ country: 'rwanda' })[0].id, 'rwandan-postgenocide-constitutional-developmental-order');
 assert.equal(filterGeographyCases({ country: 'senegal' })[0].id, 'senegalese-postcolonial-constitutional-and-democratic-transition');

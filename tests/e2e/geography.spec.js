@@ -52,6 +52,17 @@ test('New Zealand 2026 update distinguishes scheduled election and future local-
   await expect(card).toContainText('no candidate, polling, result, turnout, observation or post-election conclusion is asserted');
 });
 
+test('Uganda 2026 Supreme Court election-petition withdrawal is not presented as a merits ruling', async ({ page }) => {
+  await page.goto('/#geography?case=ugandan-late-museveni-order-and-2026-electoral-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('[2026] UGSC 7 (26 February)');
+  await expect(card).toContainText('petition and the connected discovery application');
+  await expect(card).toContainText('not a merits ruling on the petition’s allegations');
+  await expect(card).toContainText('no final AU–COMESA–IGAD report was located in this review');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));

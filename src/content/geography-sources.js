@@ -4529,6 +4529,26 @@ const sources = [
     description: 'Diplomatic response corroborating concerns about an uneven electoral playing field, arbitrary arrests of civil-society actors and an internet shutdown. It is a bounded external response, not an independent observation mission or a complete account of Ugandan political experience.'
   },
   {
+    id: 'ugandaJudiciaryKasibanteDiscoveryHearing2026',
+    label: 'Judiciary of Uganda — Supreme Court hears election-petition discovery application (28 January 2026)',
+    url: 'https://judiciary.go.ug/data/news/1799/Supreme%20Court%20Hears%20Application%20in%20The%20Presidential%20Election%20Petition%20Challenging%20President%20Museveni/%27s%20Victory%20in%20The%20January%202026%20Elections.html',
+    note: 'Official Judiciary news report posted 28 January 2026, consulted on 26 September. It describes Robert Kasibante’s request for access to polling-station declaration forms and electronic voter-verification, transmission and tallying data, including permission for forensic examination. This is a court-administration news account of the requested relief, not a judicial finding that irregularities occurred or that the systems were defective; the later disposition is checked against the reported Supreme Court judgment.',
+    accessDate: '2026-09-26', creators: ['Judiciary of the Republic of Uganda'], institution: 'Judiciary of the Republic of Uganda',
+    publicationDate: '2026-01-28', evidenceRole: 'primary', confidence: 'high', languages: ['English institutional record'],
+    sourceType: 'official judiciary news report on a pending presidential election petition', identifiers: { application: 'Presidential Election Application No. 1 of 2026', petition: 'Presidential Election Petition No. 1 of 2026', laterDecision: '[2026] UGSC 7' },
+    description: 'Official contemporaneous account of the applicant’s discovery request in litigation challenging the 15 January 2026 presidential election. The requested documents and forensic access are attributed as litigation relief, not proof of the allegations or of the court’s merits assessment.'
+  },
+  {
+    id: 'ugandaSupremeCourtKasibanteWithdrawal2026',
+    label: 'Supreme Court of Uganda — Kasibante Robert v Museveni and Others, Presidential Election Application No. 3 of 2026, [2026] UGSC 7 (26 February 2026)',
+    url: 'https://ulii.org/en/akn/ug/judgment/ugsc/2026/7/eng@2026-02-26',
+    note: 'Reported Supreme Court judgment consulted through the Uganda Legal Information Institute (ULII), a public-law access project of the Judiciary of Uganda’s Law Reporting Committee, on 26 September 2026. The Court granted Kasibante leave to withdraw his presidential-election petition and related discovery application, discontinued them and, under section 61(4), confirmed the previously declared candidate as duly elected; the costs order was divided, with a dissent. The judgment resolves the legal disposition following withdrawal; it does not adjudicate the underlying electoral non-compliance allegations or constitute a forensic audit. No judgment text is reproduced.',
+    accessDate: '2026-09-26', creators: ['Supreme Court of Uganda'], institution: 'Uganda Legal Information Institute / Judiciary of Uganda Law Reporting Committee',
+    publicationDate: '2026-02-26', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'reported Supreme Court judgment / election-petition disposition', identifiers: { neutralCitation: '[2026] UGSC 7', application: 'Presidential Election Application No. 3 of 2026', petition: 'Presidential Election Petition No. 1 of 2026', decisionDate: '2026-02-26' },
+    description: 'Primary judicial record of withdrawal and discontinuance of the 2026 presidential-election petition and related discovery application, and the Court’s consequent confirmation of the earlier declared candidate under statute. It is not a merits judgment on the alleged election irregularities, voter experience or overall fairness.'
+  },
+  {
     id: 'ugandaWilkinsVokesElections2018',
     label: 'Sam Wilkins and Richard Vokes (eds.) — Elections in Museveni’s Uganda (2018)',
     url: 'https://www.routledge.com/Elections-in-Musevenis-Uganda/Wilkins-Vokes/p/book/9780367891237',
