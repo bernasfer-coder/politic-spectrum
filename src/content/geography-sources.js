@@ -1,6 +1,90 @@
 // Consultation boundaries are part of the published bibliography, not hidden notes.
 const sources = [
   {
+    id: 'bulgariaOsceNeedsAssessment2026', label: 'OSCE/ODIHR — Needs Assessment Mission Report, Bulgaria early parliamentary elections, 19 April 2026', url: 'https://odihr.osce.org/sites/default/files/documents/official_documents/2026/03/Bulgaria%202026%20early%20parliamentary_%20NAM%20report_03.03.2026.pdf',
+    note: 'OSCE/ODIHR needs-assessment report consulted for its attributed account of the political context and proposed observation scope. No report text is reproduced; contextual descriptions are attributed to the mission and do not establish a single protester or voter motive.',
+    accessDate: '2026-09-26', creators: ['OSCE Office for Democratic Institutions and Human Rights'], institution: 'OSCE/ODIHR', publicationDate: '2026-03-03', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'election observation needs-assessment report', identifiers: { electionDate: '2026-04-19' }, description: 'ODIHR records the December 2025 government resignation following large-scale protests over a proposed budget and corruption allegations and describes the political and institutional context before deciding on an observation mission. This is institutional context-setting, not an independent causal study of every protest participant.'
+  },
+  {
+    id: 'bulgariaParliamentPrimeMinisterElection2026', label: 'National Assembly of Bulgaria — Rumen Radev elected prime minister and cabinet approved (8 May 2026)', url: 'https://www.parliament.bg/en/news/ID/6527',
+    note: 'Official National Assembly news record consulted for the appointment vote and cabinet approval, alongside the State Gazette’s promulgated decision. No parliamentary text is reproduced; formal selection is not treated as evidence of subsequent policy effectiveness.',
+    accessDate: '2026-09-26', creators: ['National Assembly of the Republic of Bulgaria'], institution: 'National Assembly of the Republic of Bulgaria', publicationDate: '2026-05-08', evidenceRole: 'primary', confidence: 'high', languages: ['Bulgarian', 'English'],
+    sourceType: 'primary parliamentary proceedings / official institutional record', identifiers: { legislature: '52nd National Assembly', decisionDate: '2026-05-08' }, description: 'The Assembly reports its 8 May vote electing Rumen Radev prime minister, approval of the proposed Council of Ministers and vote counts of 124 for, 70 against and 36 abstentions. It establishes formal parliamentary action, not later performance or consent.'
+  },
+  {
+    id: 'bulgariaConstitution1991Parliament', label: 'National Assembly of the Republic of Bulgaria — Constitution of the Republic of Bulgaria (1991, consolidated text)', url: 'https://www.parliament.bg/en/const',
+    note: 'Official Parliament constitutional text consulted as primary legal evidence and linked for readers. No constitutional wording, translation or scan is republished; formal parliamentary design is not treated as proof of implementation, electoral quality or public consent.',
+    accessDate: '2026-09-26', creators: ['Republic of Bulgaria', 'National Assembly of the Republic of Bulgaria'], institution: 'National Assembly of the Republic of Bulgaria', publicationDate: '1991-07-13', evidenceRole: 'primary', confidence: 'high', languages: ['Bulgarian', 'English'],
+    sourceType: 'primary constitutional text / official legal record', identifiers: { adoptionDate: '1991-07-12', promulgationDate: '1991-07-13' }, description: 'Official consolidated text recording the formal constitutional framework for Parliament, government and elections after communist rule; it provides legal context rather than evidence of later practice.'
+  },
+  {
+    id: 'bulgariaCecElection2026', label: 'Central Election Commission of Bulgaria — Decision 4807-NS: final seat allocation, 19 April 2026 National Assembly election', url: 'https://www.cik.bg/bg/decisions/4807/2026-04-23',
+    note: 'Official CEC decision consulted as a primary electoral record and linked for readers. No table or text is republished; the legal allocation is distinguished from observer assessments, voter motives and subsequent performance.',
+    accessDate: '2026-09-26', creators: ['Central Election Commission of the Republic of Bulgaria'], institution: 'Central Election Commission of the Republic of Bulgaria', publicationDate: '2026-04-23', evidenceRole: 'primary', confidence: 'high', languages: ['Bulgarian'],
+    sourceType: 'primary final election-results decision / official electoral record', identifiers: { decision: '4807-NS', electionDate: '2026-04-19' }, description: 'CEC decision adopting the official distribution of all 240 parliamentary mandates among five qualifying lists. It establishes seat allocation, not equal campaign conditions, voter motives or later policy implementation.'
+  },
+  {
+    id: 'bulgariaCecOpenData2026', label: 'Central Election Commission of Bulgaria — machine-readable results database, 19 April 2026 parliamentary election', url: 'https://results.cik.bg/pe202604/opendata/index.html',
+    note: 'CEC open-data portal and linked downloads consulted to verify the existence, scope and update basis of the official results dataset. No data file, table, interface text or geographic result is reproduced.',
+    accessDate: '2026-09-26', creators: ['Central Election Commission of the Republic of Bulgaria'], institution: 'Central Election Commission of the Republic of Bulgaria', publicationDate: '2026-04-23', evidenceRole: 'primary', confidence: 'high', languages: ['Bulgarian'],
+    sourceType: 'official election-results open-data portal / machine-readable primary dataset', identifiers: { decision: '4806-NS', electionDate: '2026-04-19' }, description: 'CEC states that the portal publishes the updated machine-readable database and metadata for the election, adopted by Decision 4806-NS. It enables audit and reuse but does not interpret fairness or voter motivation.'
+  },
+  {
+    id: 'bulgariaOscePreliminary2026', label: 'OSCE/ODIHR and PACE — Statement of Preliminary Findings and Conclusions, Bulgaria early parliamentary elections, 19 April 2026', url: 'https://odihr.osce.org/odihr/663349',
+    note: 'International Election Observation Mission statement and linked PDF consulted for attributed findings only. Its preliminary scope and mission methodology are retained; no report wording or table is republished, and findings are not generalized to every voter or locality.',
+    accessDate: '2026-09-26', creators: ['OSCE Office for Democratic Institutions and Human Rights', 'Parliamentary Assembly of the Council of Europe'], institution: 'OSCE/ODIHR and PACE International Election Observation Mission', publicationDate: '2026-04-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'preliminary international election-observation report', identifiers: { electionDate: '2026-04-19' }, description: 'Joint mission reports transparent and efficient administration and genuine voter choice while identifying legislative gaps, a last-minute amendment, polarized rhetoric and persistent allegations of vote buying and intimidation. These are preliminary observer assessments, not a final judgment on all electoral claims.'
+  },
+  {
+    id: 'bulgariaPaceObservation2026', label: 'Parliamentary Assembly of the Council of Europe — Observation of the early parliamentary elections in Bulgaria (Doc. 16429)', url: 'https://pace.coe.int/en/files/36054/html',
+    note: 'PACE rapporteur report consulted for the mission’s account and observation scope. No report text is republished; the document is distinguished from CEC legal results and the separate ODIHR preliminary statement.',
+    accessDate: '2026-09-26', creators: ['Chris Said'], institution: 'Parliamentary Assembly of the Council of Europe', publicationDate: '2026-06-18', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'parliamentary election-observation report / Council of Europe document', identifiers: { document: '16429', electionDate: '2026-04-19' }, description: 'PACE report situates the vote as Bulgaria’s eighth early parliamentary election since April 2021 and records its delegation’s methods, observations and recommendations. It is an observer account, not a complete political history or judgment on subsequent government performance.'
+  },
+  {
+    id: 'bulgariaParliamentConstitutingSession2026', label: 'National Assembly of Bulgaria — opening of the 52nd National Assembly (30 April 2026)', url: 'https://www.parliament.bg/en/news/ID/6522',
+    note: 'Official National Assembly record consulted for the opening and formal constitutional proceedings only. No parliamentary statement or text is republished; inauguration is not treated as proof of effective representation or political stability.',
+    accessDate: '2026-09-26', creators: ['National Assembly of the Republic of Bulgaria'], institution: 'National Assembly of the Republic of Bulgaria', publicationDate: '2026-04-30', evidenceRole: 'primary', confidence: 'high', languages: ['Bulgarian', 'English'],
+    sourceType: 'primary parliamentary proceeding / official institutional record', identifiers: { legislature: '52nd National Assembly' }, description: 'Assembly record documents the inaugural session and oath of deputies after the election. It establishes the legislature’s formal opening, not its later performance or democratic legitimacy.'
+  },
+  {
+    id: 'bulgariaStateGazettePrimeMinister2026', label: 'State Gazette of Bulgaria — National Assembly decision electing Rumen Radev prime minister (8 May 2026)', url: 'https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=243332',
+    note: 'Official State Gazette decision consulted as the primary legal record of the Assembly vote. No decision wording, facsimile or scan is republished; formal office-holding is not equated with policy delivery or public agreement.',
+    accessDate: '2026-09-26', creators: ['52nd National Assembly of the Republic of Bulgaria'], institution: 'State Gazette of the Republic of Bulgaria', publicationDate: '2026-05-12', evidenceRole: 'primary', confidence: 'high', languages: ['Bulgarian'],
+    sourceType: 'primary parliamentary decision published in the official gazette', identifiers: { gazetteIssue: '43', decisionDate: '2026-05-08', promulgationDate: '2026-05-12' }, description: 'Official gazette records the 52nd Assembly decision electing Rumen Radev prime minister on 8 May 2026; it establishes appointment, not later effectiveness or political orientation.'
+  },
+  {
+    id: 'bulgariaCramptonHistory2005', label: 'R. J. Crampton — A Concise History of Bulgaria (Cambridge University Press, 2005)', url: 'https://www.cambridge.org/core/books/a-concise-history-of-bulgaria/E5AC0A4C1CB30368CE2AA22AC7C7EBE',
+    note: 'Cambridge University Press metadata and abstract consulted; the book record identifies the edition and scope, but the complete book was not read for this case. No prose or protected content is reproduced.',
+    accessDate: '2026-09-26', creators: ['R. J. Crampton'], institution: 'Cambridge University Press', publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length national history / publisher metadata and abstract', identifiers: { isbn: '9780521850858', paperbackIsbn: '9780521616379' }, description: 'Second edition of a scholarly national history tracing Bulgaria’s political, social and economic development through EU accession, including communist rule, representative democracy, market transition, political culture, religion and minorities. Long-run context, not evidence about the 2025–26 election.'
+  },
+  {
+    id: 'bulgariaBellTransition1998', label: 'John D. Bell, ed. — Bulgaria in Transition: Politics, Economics, Society, and Culture after Communism (Westview Press, 1998)', url: 'https://www.routledge.com/Bulgaria-In-Transition-Politics-Economics-Society-And-Culture-After-Communism/Bell/p/book/9780367014988',
+    note: 'Routledge publisher record and catalog metadata consulted for title, editor and edition; the full edited collection was not read for this case. No chapter text or protected content is reproduced.',
+    accessDate: '2026-09-26', creators: ['John D. Bell'], institution: 'Westview Press / Routledge', publicationDate: '1998', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'scholarly edited book on Bulgaria’s post-communist transition / publisher metadata and description', identifiers: { isbn: '9780813390109', reprintIsbn: '9780367014988', pages: '345' }, description: 'Multi-author volume on Bulgarian politics, economics, society and culture after the 1989 end of communist rule. It supplies an independent early-transition perspective and predates the current episode by decades.'
+  },
+  {
+    id: 'bulgariaVachudovaEuropeUndivided2005', label: 'Milada Anna Vachudova — Europe Undivided: Democracy, Leverage, and Integration After Communism (Oxford University Press, 2005)', url: 'https://academic.oup.com/book/10194',
+    note: 'Oxford University Press book metadata and abstract consulted; the complete comparative monograph was not read for this case. No book text or protected content is reproduced.',
+    accessDate: '2026-09-26', creators: ['Milada Anna Vachudova'], institution: 'Oxford University Press', publicationDate: '2005', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length comparative political-science study / publisher metadata and abstract', identifiers: { isbn: '9780199241194', onlineIsbn: '9780191602382', doi: '10.1093/0199241198.001.0001' }, description: 'Comparative study of post-communist political competition and the effects of EU enlargement, including Bulgaria. It offers a distinct institutional lens through 2004, not a causal account or ideology classification of the 2026 vote.'
+  },
+  {
+    id: 'bulgariaApElection2026', label: 'Associated Press — Tired of political turmoil, Bulgarians give ex-president a convincing mandate for change (20 April 2026)', url: 'https://apnews.com/article/2f821c5a659a8ca4ab9dfe28b9138236',
+    note: 'Contemporary AP report consulted for secondary context and cross-checking against CEC records. No report text is republished; characterizations are attributed and are not substituted for the primary results.',
+    accessDate: '2026-09-26', creators: ['Associated Press'], institution: 'Associated Press', publicationDate: '2026-04-20', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'independent contemporaneous news report', identifiers: { publicationDate: '2026-04-20' }, description: 'Reports the result and background of repeated elections and December 2025 protests; contemporary reporting, not a scholarly history or a comprehensive account of voter motivations.'
+  },
+  {
+    id: 'bulgariaIpuElection2026', label: 'Inter-Parliamentary Union, Parline — Bulgaria National Assembly election results, 19 April 2026', url: 'https://data.ipu.org/parliament/BG/BG-LC01/election/BG-LC01-E20260419/',
+    note: 'IPU Parline data page consulted for an independently maintained comparison of turnout, results and government-formation facts; it identifies Assembly and Electoral Commission sources and additional reporting. No table or data file is republished.',
+    accessDate: '2026-09-26', creators: ['Inter-Parliamentary Union'], institution: 'Inter-Parliamentary Union', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'international parliamentary organization election-results data synthesis', identifiers: { electionDate: '2026-04-19' }, description: 'IPU Parline reports turnout, seat results, election context and May government formation, citing National Assembly and CEC sources alongside reporting. It is a secondary synthesis cross-checked against primary records.'
+  },
+  {
     id: 'burkinaConstitution1991Presidence',
     label: 'Burkina Faso — Constitution of 11 June 1991, Presidency fundamental-texts record',
     url: 'https://www.presidencedufaso.bf/textes-fondamentaux/',
@@ -9112,7 +9196,8 @@ export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note })
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {
   accessDate: source.accessDate ?? '2026-09-16', creators: source.creators, institution: source.institution,
   sourceType: source.sourceType, evidenceRole: source.evidenceRole,
-  discipline: source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
+  discipline: source.id.startsWith('bulgaria') ? 'Bulgarian constitutional, electoral and post-communist political history'
+    : source.id.startsWith('jordan') || source.id.startsWith('alonMakingJordan') || source.id.startsWith('andersonNationalistVoicesJordan') || source.id.startsWith('ryanJordan') || source.id.startsWith('wilsonKingAbdullahJordan') || source.id.startsWith('ashtonKingHusseinJordan') ? 'Jordanian constitutional, monarchical and political history'
     : source.id.startsWith('iranDataPortal') || source.id.startsWith('abrahamianHistoryModernIran') || source.id.startsWith('keddieModernIran') || source.id.startsWith('arjomandTurbanCrown') || source.id.startsWith('gheissariNasrDemocracyIran') || source.id.startsWith('arjomandAfterKhomeini') || source.id.startsWith('kamravaHowIslamRulesIran') ? 'Iranian revolutionary, constitutional, electoral and political history'
        : source.id.startsWith('turkey') || source.id.startsWith('zurcherTurkey') || source.id.startsWith('yavuzSecularismMuslimDemocracyTurkey') || source.id.startsWith('whiteMuslimNationalismNewTurks') || source.id.startsWith('cizreSecularIslamicPoliticsTurkey') ? 'Turkish constitutional, electoral and political history'
       : source.id.startsWith('antarctic') ? 'International law, environmental governance and political geography'
