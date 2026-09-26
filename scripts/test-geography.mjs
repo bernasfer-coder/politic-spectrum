@@ -409,6 +409,20 @@ assert.ok(newZealand2026.limitation.includes('no event-specific book-length scho
 for (const sourceId of ['newZealandElectoralAmendmentAct2025', 'newZealandJusticeCommitteeElectionInquiry2024', 'newZealandElectoralCommission2026KeyDates', 'newZealandElectoralCommissionMaoriRollAugust2026', 'newZealandLocalGovernmentSystemImprovementsAct2026', 'newZealandLocalGovernmentSystemImprovementsMinistry2026', 'newZealandLocalGovernmentActGovernmentRationale2026', 'newZealandIwiResponseCommitteeVoting2026']) {
   assert.ok(newZealand2026.sourceIds.includes(sourceId), `New Zealand 2026 source missing: ${sourceId}`);
 }
+const italy2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'italian-post-2022-meloni-government-and-institutional-contestation');
+assert.equal(italy2026.endYear, 2026);
+assert.equal(italy2026.reviewedAt, '2026-09-26');
+assert.ok(italy2026.claim.includes('Article 138 confirmatory referendum'));
+assert.ok(italy2026.claim.includes('approximately 54% No and 46% Yes'));
+assert.ok(italy2026.claim.includes('voter motives'));
+assert.ok(italy2026.limitation.includes('no event-specific book-length account'));
+assert.ok(italy2026.limitation.includes('a generalized public mandate'));
+for (const sourceId of ['italyJudicialReformConstitutionalLaw2025', 'italyJudicialReformReferendumCall2026', 'italyJudicialReformReferendumProclamation2026', 'apItalyJudicialReferendumResult2026']) {
+  assert.ok(italy2026.sourceIds.includes(sourceId), `Italy 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Italy bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Italy rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === italy2026.labelId)?.aliases.includes('Italian judicial reform referendum 2026'));
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 assert.equal(filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).length, 134, 'the atlas should expose all dated post-2000 implemented cases');

@@ -252,6 +252,18 @@ test('Ghana 2026 update distinguishes constitutional proposals, civic disagreeme
   await expect(card).toContainText('not a score for Ghanaians');
 });
 
+test('Italy 2026 referendum is presented as a bounded Article 138 case with explicit evidence limits', async ({ page }) => {
+  await page.goto('/#geography?case=italian-post-2022-meloni-government-and-institutional-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('2022–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('Article 138 confirmatory referendum');
+  await expect(card).toContainText('approximately 54% No and 46% Yes');
+  await expect(card).toContainText('no event-specific book-length account');
+  await expect(card).toContainText('a generalized public mandate');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
