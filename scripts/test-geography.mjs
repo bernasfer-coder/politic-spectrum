@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { BIBLIOGRAPHY_RECORDS, ENCYCLOPEDIA_ENTRIES, RESEARCH_SOURCES, RESEARCH_WORKS } from '../src/content/index.js';
+import { BIBLIOGRAPHY_RECORDS, ENCYCLOPEDIA_ENTRIES, RESEARCH_SOURCES, RESEARCH_WORKS, RIGHTS_RECORDS } from '../src/content/index.js';
 import { GEOGRAPHY_CASES, GEOGRAPHY_LABELS, GEOGRAPHY_RELATIONSHIPS } from '../src/content/geography.js';
 import { validateGeography } from '../src/content/validate-geography.js';
 import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFAULTS } from '../src/geography-model.js';
@@ -78,6 +78,18 @@ assert.equal(filterGeographyCases({ country: 'map-418' })[0].id, 'lao-revolution
 assert.equal(filterGeographyCases({ country: 'map-104' })[0].id, 'myanmar-constitutional-military-and-transition-order');
 assert.equal(filterGeographyCases({ country: 'map-410' })[0].id, 'south-korean-constitutional-democratic-and-developmental-order');
 assert.equal(filterGeographyCases({ country: 'map-422' })[0].id, 'lebanese-posttaif-consociational-and-protest-order');
+const lebanon2026 = filterGeographyCases({ country: 'map-422' })[0];
+assert.equal(lebanon2026.endYear, 2026);
+assert.equal(lebanon2026.reviewedAt, '2026-09-26');
+assert.ok(lebanon2026.claim.includes('Decision 7/2026'));
+assert.ok(lebanon2026.claim.includes('not evidence that those goals were achieved'));
+assert.ok(lebanon2026.claim.includes('not support treating a ceasefire announcement as full cessation'));
+assert.ok(lebanon2026.limitation.includes('book-length scholarship specifically analyzing the 2023–2026 sequence was not located'));
+for (const sourceId of ['lebanonPresidencyGovernmentAims2025', 'lebanonWorldBankReconstructionNeeds2025', 'lebanonGazetteLaw412026', 'lebanonConstitutionalCouncilDecision72026', 'lebanonUNIFILUpdateAugust2026', 'lebanonCommonsLibraryUNIFIL2026']) {
+  assert.ok(lebanon2026.sourceIds.includes(sourceId), `Lebanon source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Lebanon bibliography source missing: ${sourceId}`);
+  assert.ok(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt === '2026-09-26', `Lebanon rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'map-170' })[0].id, 'colombian-constitutional-peace-and-contestation-order');
 const sudanWar = filterGeographyCases({ country: 'sudan' }).find(({ id }) => id === 'sudanese-war-fragmented-authority-and-civilian-politics-2023-2026');
 assert.ok(sudanWar, 'Sudan’s post-2023 war must be independently represented');
