@@ -182,6 +182,26 @@ for (const sourceId of ['colombiaRegistraduriaElectionCalendar2026', 'colombiaCn
 assert.equal(filterGeographyCases({ country: 'map-032' })[0].id, 'argentine-postauthoritarian-democratic-and-crisis-order');
 assert.ok(filterGeographyCases({ country: 'map-032' }).some(({ id }) => id === 'argentine-milei-libertarian-presidential-refoundation-and-contestation'));
 assert.equal(filterGeographyCases({ country: 'map-152' })[0].id, 'chilean-postauthoritarian-constitutional-and-constituent-order');
+const chileTransition2026 = filterGeographyCases({ country: 'map-152' }).find(({ id }) => id === 'chilean-post-2022-constitutional-process-and-2025-electoral-transition');
+assert.ok(chileTransition2026);
+assert.equal(chileTransition2026.startYear, 2022);
+assert.equal(chileTransition2026.endYear, 2026);
+assert.equal(chileTransition2026.reviewedAt, '2026-09-26');
+assert.ok(chileTransition2026.claim.includes('58.17% of valid votes'));
+assert.ok(chileTransition2026.claim.includes('constitutional term would begin on 11 March 2026'));
+assert.ok(chileTransition2026.claim.includes('not voter motivations, a singular public will'));
+assert.ok(chileTransition2026.claim.includes('too recent and insufficiently book-studied'));
+assert.ok(chileTransition2026.limitation.includes('No event-specific book-length scholarly study of the 2025–26 electoral transition was located'));
+const chileTransitionAtlasLabel = GEOGRAPHY_LABELS.find(({ id }) => id === chileTransition2026.labelId);
+assert.ok(chileTransitionAtlasLabel.aliases.includes('Chile presidential transition and new legislature 2026'));
+assert.ok(chileTransitionAtlasLabel.sourceIds.includes('chileServelProclamation2026'));
+assert.ok(chileTransitionAtlasLabel.sourceIds.includes('chileSenateTransfer2026'));
+assert.equal(filterGeographyCases({ country: 'map-152' }).find(({ id }) => id === 'chilean-postauthoritarian-constitutional-and-constituent-order')?.endYear, 2022);
+for (const sourceId of ['chileServelProclamation2026', 'chileTricelProclamation2026', 'chileSenateInstallation2026', 'chileSenateTransfer2026', 'chilePresidencyInauguralAddress2026', 'chileIpuChamberElection2025']) {
+  assert.ok(chileTransition2026.sourceIds.includes(sourceId), `Chile transition source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Chile bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Chile rights/provenance review missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'map-858' })[0].id, 'uruguayan-postauthoritarian-democratic-and-party-system-order');
 assert.ok(filterGeographyCases({ country: 'map-858' }).some(({ id }) => id === 'uruguayan-lacalle-pou-coalition-and-orsi-electoral-transition'));
 assert.equal(filterGeographyCases({ country: 'map-068' })[0].id, 'bolivian-plurinational-constitutional-and-contested-democratic-order');

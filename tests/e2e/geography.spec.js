@@ -52,6 +52,19 @@ test('New Zealand 2026 update distinguishes scheduled election and future local-
   await expect(card).toContainText('no candidate, polling, result, turnout, observation or post-election conclusion is asserted');
 });
 
+test('Chile 2026 update separates the 2025 result, formal handover and limits on current interpretation', async ({ page }) => {
+  await page.goto('/#geography?case=chilean-post-2022-constitutional-process-and-2025-electoral-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('58.17% of valid votes');
+  await expect(card).toContainText('proclaimed him president-elect on 5 January');
+  await expect(card).toContainText('11 March 2026 transfer of presidential and legislative office');
+  await expect(card).toContainText('not voter motivations, a singular public will');
+  await expect(card).toContainText('No event-specific book-length scholarly study of the 2025–26 electoral transition was located');
+  await expect(card).toContainText('too recent and insufficiently book-studied here to support an updated six-axis characterization');
+});
+
 test('Uganda 2026 Supreme Court election-petition withdrawal is not presented as a merits ruling', async ({ page }) => {
   await page.goto('/#geography?case=ugandan-late-museveni-order-and-2026-electoral-contestation');
   const card = page.locator('.geo-card');
