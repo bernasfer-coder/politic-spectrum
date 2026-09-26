@@ -424,6 +424,19 @@ assert.equal(filterGeographyCases({ country: 'gambia' })[0].id, 'gambian-postcol
 assert.equal(filterGeographyCases({ country: 'sierra-leone' })[0].id, 'sierra-leone-postcolonial-constitutional-and-postconflict-transition');
 assert.equal(filterGeographyCases({ country: 'liberia' })[0].id, 'liberian-postcolonial-constitutional-and-postwar-transition');
 assert.equal(filterGeographyCases({ country: 'cote-divoire' })[0].id, 'cote-divoire-postcolonial-constitutional-and-postconflict-transition');
+const coteDiv2026 = filterGeographyCases({ country: 'cote-divoire' })[0];
+assert.equal(coteDiv2026.endYear, 2026);
+assert.equal(coteDiv2026.reviewedAt, '2026-09-26');
+assert.ok(coteDiv2026.periodLabel.includes('1960–2026'));
+assert.ok(coteDiv2026.claim.includes('received 60 presidential candidacy files and published a final list of five'));
+assert.ok(coteDiv2026.claim.includes('50.10% turnout'));
+assert.ok(coteDiv2026.claim.includes('35.04% participation'));
+assert.ok(coteDiv2026.claim.includes('rerun outcomes definitive on 13 March 2026'));
+assert.ok(coteDiv2026.claim.includes('do not establish voter motives'));
+assert.ok(coteDiv2026.limitation.includes('no event-specific book-length study of the 2025–26 election cycle was located'));
+for (const sourceId of ['coteDivConstitutionalCouncilCandidates2025', 'coteDivConstitutionalCouncilPresidentialFinal2025', 'coteDivCeiLegislativeResults2025', 'coteDivCeiLegislativeFinalOtherDistricts2026', 'coteDivCeiLegislativeRerunsFinal2026', 'coteDivEcowasAuObservation2025', 'coteDivArticle19CivicSpace2025', 'coteDivCivicusProtests2025']) {
+  assert.ok(coteDiv2026.sourceIds.includes(sourceId), `Côte d’Ivoire 2025–26 source missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'chad' })[0].id, 'chadian-postcolonial-civil-war-and-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'cameroon' })[0].id, 'cameroonian-postcolonial-bilingual-and-anglophone-crisis-history');
 assert.ok(filterGeographyCases({ country: 'iraq' }).some(({ id }) => id === 'iraqi-postinvasion-constitutional-and-protest-transition'));

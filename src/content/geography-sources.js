@@ -765,6 +765,86 @@ const sources = [
     description: 'Critical French-language account of the anti-colonial movement, the population’s political history and the processes that elevated Houphouët-Boigny, offering a counterpoint to official or leader-centered narratives of the postcolonial order.'
   },
   {
+    id: 'coteDivConstitutionalCouncilCandidates2025',
+    label: 'Conseil constitutionnel de Côte d’Ivoire — Décision n° CI-2025-EP-006 (8 September 2025)',
+    url: 'https://www.conseil-constitutionnel.ci/sites/default/files/documents/decision_ci-2025-ep-006_du_08.09.2025.pdf',
+    note: 'Official Constitutional Council decision consulted as a primary legal record of the final presidential candidate list. No judgment wording, translation, table or PDF page is republished; the Council’s eligibility determinations are attributed to the court and do not alone establish electoral fairness or equal political competition.',
+    accessDate: '2026-09-26', creators: ['Conseil constitutionnel de Côte d’Ivoire'], institution: 'Conseil constitutionnel de Côte d’Ivoire',
+    publicationDate: '2025-09-08', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary judicial decision / presidential candidate eligibility', identifiers: { decision: 'CI-2025-EP-006', electionDate: '2025-10-25' },
+    description: 'The Council records receipt of 60 candidacy files and publishes a final list of five candidates; it declares Laurent Gbagbo and Tidjane Thiam ineligible and holds that party petitions challenging Alassane Ouattara’s eligibility were inadmissible because the parties lacked standing after their nominated candidates’ applications were declared inadmissible. These are the court’s procedural and legal conclusions, not an independent assessment of fairness.'
+  },
+  {
+    id: 'coteDivConstitutionalCouncilPresidentialFinal2025',
+    label: 'Conseil constitutionnel de Côte d’Ivoire — Décision n° CI-2025-EP-007/04-11/CC/SG (4 November 2025)',
+    url: 'https://www.conseil-constitutionnel.ci/sites/default/files/decision_2025-ep-007_du_04.11.2025.pdf',
+    note: 'Official French Constitutional Council decision consulted as the final presidential-results and adjudication record. No decision wording, translation, results table or PDF page is republished; figures and the court’s finding of regularity are attributed to the Council, not treated as an independent determination of electoral fairness or public consent.',
+    accessDate: '2026-09-26', creators: ['Conseil constitutionnel de Côte d’Ivoire'], institution: 'Conseil constitutionnel de Côte d’Ivoire',
+    publicationDate: '2025-11-04', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary judicial decision / final presidential election results', identifiers: { decision: 'CI-2025-EP-007/04-11/CC/SG', electionDate: '2025-10-25' },
+    description: 'The Council’s final decision reports 50.10% turnout and declares Alassane Ouattara elected in the first round with 89.77% of valid votes; it states that it received no complaints and found no irregularity affecting the overall sincerity or result, and declares the poll regular. These are official adjudicative findings and reported results, not a substitute for observer, party, civic-space or voter-level evidence.'
+  },
+  {
+    id: 'coteDivCeiLegislativeResults2025',
+    label: 'Commission électorale indépendante de Côte d’Ivoire — Décision n° 003/CEI/EDAN/CC, provisional legislative results (29 December 2025)',
+    url: 'https://www.cei.ci/decision-n-003-cei-edan-cc-du-29-decembre-2025-portant-proclamation-des-resultats-provisoires-des-elections-des-deputes-a-lassemblee-nationale-du-27-decembre-2025/',
+    note: 'Official CEI decision consulted as a primary record of provisional results for the 27 December 2025 National Assembly election. No decision wording, table or annex is republished; its figures and explanations are attributed to the CEI, and this provisional record is not presented as the complete post-rerun outcome.',
+    accessDate: '2026-09-26', creators: ['Commission électorale indépendante de Côte d’Ivoire'], institution: 'Commission électorale indépendante de Côte d’Ivoire',
+    publicationDate: '2025-12-29', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'primary electoral decision / provisional legislative results', identifiers: { decision: '003/CEI/EDAN/CC', electionDate: '2025-12-27' },
+    description: 'The CEI records 35.04% participation and provisional party seat totals. It also records violence and ballot-box destruction in Marcory that prevented counting in five polling stations, while concluding that the affected ballots would not change the constituency outcome. This is an attributed election-administration account; later legal challenges and reruns changed the procedural status of two other constituencies.'
+  },
+  {
+    id: 'coteDivCeiLegislativeFinalOtherDistricts2026',
+    label: 'Commission électorale indépendante de Côte d’Ivoire — communiqué on final legislative results outside two rerun constituencies (9 January 2026)',
+    url: 'https://www.cei.ci/communique-relatif-a-la-proclamation-des-resultats-definitifs-de-lelection-des-deputes-a-lassemblee-nationale-du-27-decembre-2025/',
+    note: 'Official CEI communiqué consulted as a primary procedural update. No communiqué wording, list or attachment is republished; it distinguishes constituencies already final from the two annulled constituencies awaiting reruns.',
+    accessDate: '2026-09-26', creators: ['Commission électorale indépendante de Côte d’Ivoire'], institution: 'Commission électorale indépendante de Côte d’Ivoire',
+    publicationDate: '2026-01-09', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral communiqué / legislative results status', identifiers: { electionDate: '2025-12-27', communiquéDate: '2026-01-09' },
+    description: 'The CEI says that following constitutional litigation, results were annulled and voting ordered again in Toumodi Commune and Dualla–Massala; it makes the 29 December results definitive in all other constituencies pending those reruns. It documents a staged certification process, not the final nationwide tally after the later contests.'
+  },
+  {
+    id: 'coteDivCeiLegislativeRerunsFinal2026',
+    label: 'Commission électorale indépendante de Côte d’Ivoire — definitive results for Toumodi and Dualla–Massala legislative reruns (13 March 2026)',
+    url: 'https://cei.ci/communique-relatif-aux-resultats-definitifs-des-elections-des-deputes-a-lassemblee-nationale-dans-les-circonscriptions-electorales-n021-toumodi-commune-et-n204-dualla-et-mass/',
+    note: 'Official CEI communiqué consulted as the final procedural update for the two rerun constituencies. No communiqué wording, results table or attachment is republished; the CEI reports the Constitutional Council’s confirmation and the resulting definitive winners.',
+    accessDate: '2026-09-26', creators: ['Commission électorale indépendante de Côte d’Ivoire'], institution: 'Commission électorale indépendante de Côte d’Ivoire',
+    publicationDate: '2026-03-13', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official electoral communiqué / definitive rerun results', identifiers: { rerunDate: '2026-02-21', finalizationDate: '2026-03-13', constituencies: '021 and 204' },
+    description: 'The CEI reports that the National Assembly reruns in Toumodi Commune and Dualla–Massala were held on 21 February 2026, one challenge was filed in constituency 204, and the Constitutional Council confirmed the provisional results on 13 March; the communiqué then declares both results definitive. This closes the specified rerun stage, not broader questions of representation or electoral quality.'
+  },
+  {
+    id: 'coteDivEcowasAuObservation2025',
+    label: 'ECOWAS–African Union Joint Election Observation Mission — preliminary declaration on the 25 October 2025 presidential election (27 October 2025)',
+    url: 'https://www.peaceau.org/uploads/preliminary-declaration-rci.pdf',
+    note: 'Joint preliminary declaration consulted as an observer mission’s contemporaneous assessment. No declaration wording, translation, table or PDF page is republished; it is explicitly preliminary and bounded by the mission’s deployment, access and observation method.',
+    accessDate: '2026-09-26', creators: ['ECOWAS Commission', 'African Union'], institution: 'ECOWAS / African Union',
+    publicationDate: '2025-10-27', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'joint regional election-observation preliminary declaration', identifiers: { electionDate: '2025-10-25', declarationDate: '2025-10-27' },
+    description: 'The joint mission reports that most observed polling stations closed on schedule or shortly later, commonly because of late openings or logistical issues, and that observers generally described the atmosphere as peaceful and orderly; it also records isolated disruption, including an attack at a polling centre in Divo, and variation in participation. These are mission observations, not a comprehensive audit or a measure of every voter’s experience.'
+  },
+  {
+    id: 'coteDivArticle19CivicSpace2025',
+    label: 'ARTICLE 19 West Africa — “Côte d’Ivoire: Uphold free expression and ensure a safe, democratic election” (14 October 2025)',
+    url: 'https://www.article19.org/resources/cote-divoire-uphold-free-expression-and-ensure-a-safe-democratic-election/',
+    note: 'ARTICLE 19 West Africa advocacy and monitoring statement consulted for its attributed account of protest restrictions and detentions before the presidential vote. No report wording, quotation, table or image is republished; its human-rights assessment is distinguished from the government’s public-order rationale and election-observer findings.',
+    accessDate: '2026-09-26', creators: ['ARTICLE 19 West Africa'], institution: 'ARTICLE 19',
+    publicationDate: '2025-10-14', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'civil-society election and freedom-of-expression monitoring statement', identifiers: { publicationDate: '2025-10-14', protestDate: '2025-10-11' },
+    description: 'ARTICLE 19 reports that security forces dispersed an opposition protest in Abidjan on 11 October and that at least 237 people, including journalists and activists, were detained; it attributes the government’s explanation to public order and records civil-society objections to proportionality. The organization also notes that only five of 60 presidential candidacies were validated. This is a dated advocacy-monitoring account, not a judicial finding.'
+  },
+  {
+    id: 'coteDivCivicusProtests2025',
+    label: 'CIVICUS Monitor — presidential election and banned opposition protests in Côte d’Ivoire (31 October 2025)',
+    url: 'https://monitor.civicus.org/explore/presidential-elections-in-c%C3%B4te-divoire-hundreds-of-protesters-arrested-one-protester-killed-in-banned-opposition-protests/',
+    note: 'CIVICUS Monitor civic-space report consulted for its dated account of protest restrictions, arrests and reported death during the pre-election period. No report wording, quotation, table or image is republished; reported counts and characterizations remain attributed and are not independently generalized to all protests or political actors.',
+    accessDate: '2026-09-26', creators: ['CIVICUS Monitor'], institution: 'CIVICUS',
+    publicationDate: '2025-10-31', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'civil-society civic-space monitoring report', identifiers: { publicationDate: '2025-10-31', electionDate: '2025-10-25' },
+    description: 'CIVICUS Monitor reports that decrees prohibited opposition gatherings and describes arrests, court sentences and a death during October protests; it cites official statements, news reporting and civil-society sources. The report is a documented rights-monitoring perspective, not a comprehensive count or neutral national consensus.'
+  },
+  {
     id: 'liberiaConstitution1986Judiciary',
     label: 'Judiciary of Liberia — Constitution of the Republic of Liberia, 1986',
     url: 'https://judiciary.gov.lr/constitution-of-liberia-2/',

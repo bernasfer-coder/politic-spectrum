@@ -288,6 +288,23 @@ test('Vanuatu update distinguishes 2025 official election records from the unres
   await expect(card).toContainText('no event-specific scholarly monograph');
 });
 
+test('Côte d’Ivoire update separates 2025 court, observer and civic-space evidence from 2026 legislative reruns', async ({ page }) => {
+  await page.goto('/#geography?case=cote-divoire-postcolonial-constitutional-and-postconflict-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1960–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('received 60 presidential candidacy files and published a final list of five');
+  await expect(card).toContainText('50.10% turnout');
+  await expect(card).toContainText('declares the poll regular');
+  await expect(card).toContainText('preliminary observations of polling');
+  await expect(card).toContainText('ARTICLE 19 and CIVICUS separately document concerns about protest restrictions');
+  await expect(card).toContainText('35.04% participation');
+  await expect(card).toContainText('rerun outcomes definitive on 13 March 2026');
+  await expect(card).toContainText('no event-specific book-length study of the 2025–26 election cycle was located');
+  await expect(card).toContainText('do not establish voter motives');
+});
+
 test('Zimbabwe 2026 update distinguishes the gazetted amendment from competing legal interpretations and a procedural hearing', async ({ page }) => {
   await page.goto('/#geography?case=zimbabwean-second-republic-and-2023-electoral-contestation');
   const card = page.locator('.geo-card');
