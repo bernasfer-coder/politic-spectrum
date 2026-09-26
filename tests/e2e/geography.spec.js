@@ -71,7 +71,17 @@ test('São Tomé and Príncipe pre-election snapshot attributes campaign-close n
   await expect(card).toContainText('not a full transcript or independent observation');
   await expect(card).toContainText('does not establish campaign-wide compliance');
   await card.locator('.geo-evidence summary').click();
-  await expect(card.locator('a[href*="saoTomeRtpCampaignClose2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="saoTomeRtpCampaignClose2026"]').first()).toBeVisible();
+});
+
+test('São Tomé and Príncipe attributes polling-station training report to RSTP', async ({ page }) => {
+  await page.goto('/#geography?case=sao-tome-2026-national-assembly-election-pre-election');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('RSTP reported that the National Election Commission was reinforcing training for polling-station members');
+  await expect(card).toContainText('not a CEN training record');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="saoTomePollingStationTrainingRstp20260924"]').first()).toBeVisible();
 });
 
 test('Tonga case separates the 2025 parliamentary transition from pending October 2026 by-elections', async ({ page }) => {

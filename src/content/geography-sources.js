@@ -11467,6 +11467,23 @@ sources.push({
 });
 
 sources.push({
+  id: 'saoTomePollingStationTrainingRstp20260924',
+  label: 'Rádio Somos Todos Primos — “Eleição’26: CEN reforça capacitação de Membros de Mesa para as eleições de 27 de setembro” (24 September 2026)',
+  url: 'https://rstp.st/2026/09/24/eleicao26-cen-reforca-capacitacao-de-membros-de-mesa-para-as-eleicoes-de-27-de-setembro/',
+  note: 'RSTP’s report, published 24 September 2026, says the National Election Commission was reinforcing training for polling-station members countrywide following training of trainers, ahead of the combined legislative, local and regional polls. This is contemporaneous local reporting, not a CEN training record or independent confirmation of the reported geographic reach. No article text, image or purported CEN notice is reproduced.',
+  accessDate: '2026-09-26',
+  creators: ['Rádio Somos Todos Primos (RSTP)'],
+  institution: 'RSTP',
+  publicationDate: '2026-09-24',
+  evidenceRole: 'secondary',
+  confidence: 'medium',
+  languages: ['Portuguese'],
+  sourceType: 'local contemporaneous report on election administration',
+  identifiers: { reportedActivity: 'polling-station member training', reportedDate: '2026-09-24', electionDate: '2026-09-27' },
+  description: 'Reports CEN preparation for polling-station members ahead of the combined 27 September elections; not an official training record or evaluation.'
+});
+
+sources.push({
   id: 'gambiaForoyaaIecRoadmap2026',
   label: 'Yankuba Jallow — “IEC Sets Presidential Nomination Dates, Other Key Election Activities” (Foroyaa, 11 September 2026)',
   url: 'https://foroyaa.net/iec-sets-presidential-nomination-dates-other-key-election-activities/',

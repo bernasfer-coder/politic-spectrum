@@ -431,6 +431,9 @@ assert.ok(saoTomeElection?.claim.includes('the National Election Commission pres
 assert.ok(saoTomeElection?.claim.includes('not a full transcript or independent observation'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeElectoralLaw1990CampaignPeriod'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeRtpCampaignClose2026'));
+assert.ok(saoTomeElection?.sourceIds.includes('saoTomePollingStationTrainingRstp20260924'));
+assert.ok(saoTomeElection?.claim.includes('On 24 September, RSTP reported that the National Election Commission was reinforcing training'));
+assert.ok(saoTomeElection?.limitation.includes('only source located for the polling-station-member training'));
 assert.ok(saoTomeElection?.claim.includes('24:00 on the antevéspera of election day'));
 assert.ok(saoTomeElection?.limitation.includes('not evidence of compliance'));
 assert.equal(saoTomeElection?.confidence, 'medium');
@@ -453,6 +456,7 @@ assert.ok(saoTomeElection?.sourceIds.includes('saoTomeCplpObserverDeployment2026
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeCampaignProtestsDw2026'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeMciCandidacyChallengeRstp2026'));
 assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('saoTomeRtpCampaignClose2026')));
+assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('saoTomePollingStationTrainingRstp20260924')));
 assert.deepEqual(GEOGRAPHY_PLACES.find(({ id }) => id === 'sao-tome-legislative-election-2026')?.countryIds, []);
 assert.ok(filterGeographyCases({ ...GEOGRAPHY_DEFAULTS, continent: 'Africa' }).some(({ id }) => id === saoTomeElection.id));
 assert.ok(filterGeographyCases({ ...GEOGRAPHY_DEFAULTS, q: 'Sao Tome' }).some(({ id }) => id === saoTomeElection.id));
