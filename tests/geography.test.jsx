@@ -13,6 +13,17 @@ beforeEach(() => { window.localStorage.clear(); window.history.replaceState(null
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 describe('geographic atlas', () => {
+  it('shows Romania’s annulment and rerun with institutional findings and observer assessment attributed', () => {
+    window.history.replaceState(null, '', '/#geography?case=romania-2024-presidential-annulment-and-2025-rerun');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('annulled the entire presidential-election process');
+    expect(cards()[0]).toHaveTextContent('not independent verification');
+    expect(cards()[0]).toHaveTextContent('not a case-specific ruling on Romania');
+    expect(cards()[0]).toHaveTextContent('53.6 per cent');
+    expect(cards()[0]).toHaveTextContent('assign a national ideology, or supply six-axis coordinates');
+    expect(cards()[0]).toHaveTextContent('No event-specific monograph was located');
+  });
   it('presents Albania’s first postal out-of-country vote with the observer and official-result boundaries intact', () => {
     window.history.replaceState(null, '', '/#geography?case=albania-2025-parliamentary-election-and-diaspora-vote');
     renderAtlas();
@@ -107,7 +118,7 @@ describe('geographic atlas', () => {
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(215);
+    expect(cards()).toHaveLength(216);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
