@@ -84,6 +84,20 @@ test('Kenya update attributes bounded protest monitoring and reparations records
   await expect(card.locator('a[href="https://www.knchr.org/Our-Work/Reparations"]')).toHaveCount(1);
 });
 
+test('Ecuador distinguishes conditional CPCCS referendum procedure from the scheduled local election and its future result', async ({ page }) => {
+  await page.goto('/#geography?case=ecuadorian-noboa-security-referendum-and-reelection-order');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('authorized to continue');
+  await expect(card).toContainText('did not enact the amendment, call a referendum or supply a referendum date or result');
+  await expect(card).toContainText('29 November 2026');
+  await expect(card).toContainText('future election as of this review');
+  await expect(card).toContainText('do not independently justify extending that interpretation');
+  await expect(card.locator('a[href="https://esacc.corteconstitucional.gob.ec/storage/api/v1/10_DWL_FL/e2NhcnBldGE6J3RyYW1pdGUnLCB1dWlkOidhMDMxOGYwYy0wM2Y2LTQ1NzgtYmQxZi02MzUwYzcxM2EwNjAucGRmJ30%3D"]')).toHaveCount(1);
+  await expect(card.locator('a[href="https://www.cne.gob.ec/cne-aprobo-la-convocatoria-para-las-elecciones-seccionales-y-del-cpccs-2027/"]')).toHaveCount(1);
+});
+
 test('Spain 2026 update distinguishes partial constitutional review, two EU references and a separate legislative defeat', async ({ page }) => {
   await page.goto('/#geography?case=spanish-democratic-consolidation-and-regional-pluralism');
   const card = page.locator('.geo-card');

@@ -9653,6 +9653,33 @@ const sources = [
     description: 'Official final-results record for the four-question 2025 referendum and popular consultation held after the presidential election. It establishes the recorded national result and a constitutional-contestation endpoint without proving why voters chose as they did, the social meaning of each question or later institutional effects.'
   },
   {
+    id: 'ecuadorCourtCpccsReferendumReview2026',
+    label: 'Corte Constitucional del Ecuador — Dictamen 9-25-RC/26A on the proposed CPCCS appointment amendment',
+    url: 'https://esacc.corteconstitucional.gob.ec/storage/api/v1/10_DWL_FL/e2NhcnBldGE6J3RyYW1pdGUnLCB1dWlkOidhMDMxOGYwYy0wM2Y2LTQ1NzgtYmQxZi02MzUwYzcxM2EwNjAucGRmJ30%3D',
+    note: 'Official Constitutional Court judgment (19 March 2026; published in the Constitutional Edition of the Official Register on 16 April), consulted as primary legal record and link only. No judgment text is reproduced; the conditional ruling is not treated as a referendum call, enacted amendment or vote result.',
+    accessDate: '2026-09-26', creators: ['Corte Constitucional del Ecuador'], institution: 'Corte Constitucional del Ecuador', publicationDate: '2026-04-16', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official constitutional-court judgment on proposed amendment referendum wording', identifiers: { case: '9-25-RC', judgment: '9-25-RC/26A', decisionDate: '2026-03-19', officialRegisterPublicationDate: '2026-04-16' },
+    description: 'The Court gave conditional approval to the referendum question and introductory recitals concerning transfer of CPCCS appointment powers to the National Assembly, requiring a specific textual correction. It also required a further immediate compliance check before an executive referendum decree; this judgment alone did not call a referendum or change the Constitution.'
+  },
+  {
+    id: 'ecuadorCourtCpccsCompliance2026',
+    label: 'Corte Constitucional del Ecuador — April 2026 compliance bulletin for case 9-25-RC',
+    url: 'https://esacc.corteconstitucional.gob.ec/storage/api/v1/10_DWL_FL/e2NhcnBldGE6J3B1YmxpY2FjaW9uJywgdXVpZDonZDYyMGMxYzctNDY4Yi00NTg4LTljZmUtYTdjMWNiMDYyMzIzLnBkZid9',
+    note: 'Official Court bulletin summarizing compliance orders approved/notified during April 2026, consulted for its institutional summary of Auto 9-25-RC/26 and link only. No bulletin wording or scan is reproduced; procedural permission to continue is distinguished from a CNE referendum call, scheduled referendum date or result.',
+    accessDate: '2026-09-26', creators: ['Corte Constitucional del Ecuador'], institution: 'Corte Constitucional del Ecuador', publicationDate: '2026-04', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official Constitutional Court compliance-monitoring bulletin', identifiers: { case: '9-25-RC', auto: '9-25-RC/26', reportedPeriod: '2026-04' },
+    description: 'The Court reports that it found the President’s corrected text satisfied Dictamen 9-25-RC/26A, declared that order complied with and authorized continuation of the referendum procedure. This is an institutional summary of a procedural auto, not evidence that the referendum was subsequently called or held.'
+  },
+  {
+    id: 'ecuadorCneLocalCpccsElectionConvocation2026',
+    label: 'Consejo Nacional Electoral Ecuador — Convocation of the 2027 sectional and CPCCS elections (31 July 2026)',
+    url: 'https://www.cne.gob.ec/cne-aprobo-la-convocatoria-para-las-elecciones-seccionales-y-del-cpccs-2027/',
+    note: 'Official CNE convocation announcement consulted as a dated election-schedule record and link only. No ballot, list, result or scan is reproduced; 29 November 2026 is a scheduled future election date as of this review, not a completed vote or outcome.',
+    accessDate: '2026-09-26', creators: ['Consejo Nacional Electoral del Ecuador'], institution: 'Consejo Nacional Electoral del Ecuador', publicationDate: '2026-07-31', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official convocation announcement for sectional and CPCCS elections', identifiers: { electionDate: '2026-11-29', convocationDate: '2026-07-31', electionLabel: 'Elecciones Seccionales y del CPCCS 2027' },
+    description: 'The CNE announced the 29 November 2026 vote for provincial, municipal, parish and CPCCS offices, institutionally titled the 2027 sectional and CPCCS elections. This is distinct from the proposed constitutional referendum on CPCCS appointment powers and establishes no referendum or election result.'
+  },
+  {
     id: 'ecuadorBlankstenConstitutions2022',
     label: 'George I. Blanksten — Ecuador: Constitutions and Caudillos (Voices Revived edition, 2022; original 1951)',
     url: 'https://www.ucpress.edu/books/ecuador/hardcover',
