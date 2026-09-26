@@ -55,6 +55,18 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
   expect(errors).toEqual([]);
 });
 
+test('Sri Lanka NPP case dates the 2026 judicial-amendment determination and passage', async ({ page }) => {
+  await page.goto('/#geography');
+  await page.getByRole('combobox', { name: /Country/ }).selectOption('sri-lanka');
+  const card = page.locator('.geo-card').filter({ hasText: 'Sri Lankan NPP electoral transition and governing period' });
+  await expect(card).toHaveCount(1);
+  const evidence = card.locator('.geo-evidence');
+  await evidence.locator('summary').click();
+  await expect(evidence).toContainText('158–63');
+  await expect(evidence).toContainText('did not require a referendum');
+  await expect(evidence).toContainText('final Act/Gazette text were not independently located');
+});
+
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
   await expect(page.locator('.geo-card')).toHaveCount(112);

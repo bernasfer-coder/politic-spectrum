@@ -12,8 +12,13 @@ const sriLankaNppCase = GEOGRAPHY_CASES.find(({ id }) => id === 'sri-lankan-npp-
 assert.equal(sriLankaNppCase?.startYear, 2024);
 assert.equal(sriLankaNppCase?.endYear, 2026);
 assert.ok(sriLankaNppCase.sourceIds.includes('sriLankaImfCombinedReviews2026'));
+assert.ok(sriLankaNppCase.sourceIds.includes('sriLankaJudicialAmendmentCourtDetermination2026'));
+assert.ok(sriLankaNppCase.sourceIds.includes('sriLankaJudicialAmendmentPassage2026'));
+assert.ok(sriLankaNppCase.sourceIds.includes('sriLankaJudicialAmendmentCertificationReport2026'));
 assert.ok(sriLankaNppCase.sourceIds.includes('biyanwilaDebtCrisisSriLanka2023'));
 assert.ok(sriLankaNppCase.limitation.includes('full-period monograph'));
+assert.ok(sriLankaNppCase.limitation.includes('final Act text were not independently located'));
+assert.ok(sriLankaNppCase.claim.includes('158–63'));
 assert.ok(filterGeographyCases({ country: 'sri-lanka' }).some(({ id }) => id === sriLankaNppCase.id));
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
