@@ -290,7 +290,7 @@ assert.ok(filterGeographyCases({ country: 'map-728' }).some(({ id }) => id === s
 assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === southSudanTransition?.labelId)));
 const brazil2026Election = GEOGRAPHY_CASES.find(({ id }) => id === 'brazil-2026-general-election-pre-election-snapshot');
 assert.equal(brazil2026Election?.datePrecision, 'snapshot');
-assert.equal(brazil2026Election?.reviewedAt, '2026-09-25');
+assert.equal(brazil2026Election?.reviewedAt, '2026-09-26');
 assert.equal(brazil2026Election?.placeId, 'brazil');
 assert.ok(brazil2026Election?.claim.includes('had not yet taken place'));
 assert.ok(brazil2026Election?.claim.includes('12 tickets approved'));
@@ -300,7 +300,10 @@ assert.ok(brazil2026Election?.claim.includes('980 decided matters still within a
 assert.ok(brazil2026Election?.claim.includes('planning meeting with 253 Federal Police personnel'));
 assert.ok(brazil2026Election?.limitation.includes('not independent audits'));
 assert.ok(brazil2026Election?.claim.includes('interim disclosures'));
-assert.ok(brazil2026Election?.claim.includes('planned observation mission'));
+assert.ok(brazil2026Election?.claim.includes('will deploy international observation missions'));
+assert.ok(brazil2026Election?.claim.includes('lists seven organizations that it says will deploy international observation missions'));
+assert.ok(brazil2026Election?.claim.includes('roster marked updated 23 September'));
+assert.ok(brazil2026Election?.claim.includes('not proof that each mission had physically deployed'));
 assert.ok(brazil2026Election?.limitation.includes('not a live update, forecast, result'));
 assert.ok(brazil2026Election?.limitation.includes('No candidate is assigned an ideology'));
 assert.ok(brazil2026Election?.sourceIds.includes('brazilAvritzerRennoCrisisDemocracy2025'));
@@ -308,6 +311,8 @@ assert.ok(brazil2026Election?.sourceIds.includes('brazilSantosHatzikidiFacesAuth
 assert.ok(brazil2026Election?.sourceIds.includes('brazilTsePartialCampaignAccounts2026'));
 assert.ok(brazil2026Election?.sourceIds.includes('brazilTseCandidateRegistrationStatus2026'));
 assert.ok(brazil2026Election?.sourceIds.includes('brazilTsePfSecurityPlanning2026'));
+assert.ok(brazil2026Election?.sourceIds.includes('brazilTseInternationalObservationMissions2026'));
+assert.ok(brazil2026Election?.sourceIds.includes('brazilTseInternationalObserverRoster2026'));
 assert.ok(filterGeographyCases({ country: 'brazil' }).some(({ id }) => id === brazil2026Election.id));
 assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === brazil2026Election?.labelId)));
 const saoTomeElection = GEOGRAPHY_CASES.find(({ id }) => id === 'sao-tome-2026-national-assembly-election-pre-election');

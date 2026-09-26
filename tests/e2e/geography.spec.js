@@ -193,7 +193,7 @@ test('São Tomé and Príncipe election remains a pre-poll case and is reachable
   await expect(card).toHaveCount(1);
 });
 
-test('Brazil 2026 election snapshot distinguishes TSE-reported registration status from security planning', async ({ page }) => {
+test('Brazil 2026 election snapshot distinguishes official observer plans and roster from deployment or findings', async ({ page }) => {
   await page.goto('/#geography?case=brazil-2026-general-election-pre-election-snapshot');
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
@@ -203,9 +203,13 @@ test('Brazil 2026 election snapshot distinguishes TSE-reported registration stat
   await expect(card).toContainText('980 decided matters still within an appeal period or under challenge');
   await expect(card).toContainText('not evidence of actual threat prevalence');
   await expect(card).toContainText('not a live update, forecast, result');
+  await expect(card).toContainText('lists seven organizations that it says will deploy international observation missions');
+  await expect(card).toContainText('not proof that each mission had physically deployed');
   await card.locator('.geo-evidence summary').click();
   await expect(card.getByRole('link', { name: /nationwide candidate-registration status/ })).toBeVisible();
   await expect(card.getByRole('link', { name: /election-security planning meeting/ })).toBeVisible();
+  await expect(card.getByRole('link', { name: /international election-observation missions/ })).toBeVisible();
+  await expect(card.getByRole('link', { name: /international observer roster/ })).toBeVisible();
 });
 
 test('Ethiopia 2026 election distinguishes decided-return and full-chamber seat denominators', async ({ page }) => {

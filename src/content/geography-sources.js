@@ -1503,6 +1503,26 @@ const sources = [
     description: 'TSE account of an election-security planning meeting with the Federal Police; it documents stated preparation and priorities, not completed action or a security assessment.'
   },
   {
+    id: 'brazilTseInternationalObservationMissions2026',
+    label: 'Tribunal Superior Eleitoral — international election-observation missions for Brazil’s 2026 general elections',
+    url: 'https://international.tse.jus.br/en/assuntos-internacionais/copy_of_sessionfor-embassies',
+    note: 'Current TSE International Affairs page, directly consulted 26 September 2026. It lists seven organizations that it says will deploy international observation missions (OAS, ROJAE-CPLP, EU, UNIORE, PARLASUR, League of Arab States and Carter Center) and explains that international participation is subject to a TSE procedures agreement and institutional assessment, not automatic. This is the electoral court’s current statement of planned missions and rules; it does not by itself prove that each mission had physically deployed or had produced findings by the review date.',
+    accessDate: '2026-09-26', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral, International Affairs Directorate',
+    publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral-court information page on international observer-mission participation and planned missions', identifiers: { electionYear: '2026', missionOrganizationsListed: 7, status: 'TSE says missions will deploy; deployment and findings not established by this page' },
+    description: 'The TSE page lists seven international organizations expected to deploy observation missions and describes its procedures-agreement/assessment framework. It documents the court’s plan and accreditation terms, not completed field deployment, observation findings or election certification.'
+  },
+  {
+    id: 'brazilTseInternationalObserverRoster2026',
+    label: 'Tribunal Superior Eleitoral — international observer roster for the 2026 general elections (updated 23 September)',
+    url: 'https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/lista-de-pessoas-observadoras-internacionais',
+    note: 'Official two-page TSE PDF, explicitly dated as updated 23 September 2026, consulted 26 September. It lists named personnel for six of the seven international organizations named on the TSE missions page; for OAS, it says the nominal list will be published after mission activities conclude, with delivery of the final report. The file is linked as a provenance record only: individual names are not reproduced here, and a roster does not establish attendance, geographic coverage, fieldwork, independence findings or outcomes.',
+    accessDate: '2026-09-26', creators: ['Tribunal Superior Eleitoral'], institution: 'Tribunal Superior Eleitoral',
+    publicationDate: '2026-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['Portuguese'],
+    sourceType: 'official published list of international election observers', identifiers: { electionYear: '2026', rosterUpdated: '2026-09-23', pages: 2, namedOrganizationSections: 6, oasNames: 'to be published after mission activities and final report' },
+    description: 'A TSE list naming observers for EU, League of Arab States, PARLASUR, ROJAE/CPLP, UNIORE and Carter Center missions, while stating that the OAS nominal list will follow mission closure and final reporting. It establishes a published roster, not actual observer attendance or findings.'
+  },
+  {
     id: 'oasBrazilElectionMissionAgreement2026',
     label: 'Organization of American States — agreement for its 2026 Brazil election observation mission (13 August 2026)',
     url: 'https://oas.org/pt/centro_midia/fotonoticia.asp?sCodigo=FNP-144988',
