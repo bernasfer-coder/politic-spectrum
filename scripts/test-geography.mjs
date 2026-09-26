@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { BIBLIOGRAPHY_RECORDS, ENCYCLOPEDIA_ENTRIES, RESEARCH_SOURCES, RESEARCH_WORKS, RIGHTS_RECORDS } from '../src/content/index.js';
-import { GEOGRAPHY_CASES, GEOGRAPHY_LABELS, GEOGRAPHY_RELATIONSHIPS } from '../src/content/geography.js';
+import { GEOGRAPHY_CASES, GEOGRAPHY_LABELS, GEOGRAPHY_PLACES, GEOGRAPHY_RELATIONSHIPS } from '../src/content/geography.js';
 import { validateGeography } from '../src/content/validate-geography.js';
 import { filterGeographyCases, geographyHash, readGeographyState, GEOGRAPHY_DEFAULTS } from '../src/geography-model.js';
 
@@ -494,6 +494,22 @@ for (const sourceId of ['italyJudicialReformConstitutionalLaw2025', 'italyJudici
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Italy rights/provenance review missing: ${sourceId}`);
 }
 assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === italy2026.labelId)?.aliases.includes('Italian judicial reform referendum 2026'));
+const gambia2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'gambian-postcolonial-constitutional-and-authoritarian-transition');
+assert.equal(gambia2026.startYear, 1965);
+assert.equal(gambia2026.endYear, 2026);
+assert.equal(gambia2026.reviewedAt, '2026-09-26');
+assert.ok(gambia2026.claim.includes('failed at second reading in the National Assembly on 7 July 2025'));
+assert.ok(gambia2026.claim.includes('schedules the next presidential election for 5 December 2026'));
+assert.ok(gambia2026.claim.includes('the election is prospective'));
+assert.ok(gambia2026.claim.includes('not a fresh six-axis assessment of 2025–26'));
+assert.ok(gambia2026.limitation.includes('Event-specific book-length scholarship on the failed bill and scheduled 2026 contest was not located'));
+assert.ok(gambia2026.limitation.includes('not prove current public opinion, voter motives'));
+for (const sourceId of ['gambiaDraftConstitution2024', 'gambiaConstitutionBillRejectionIDEA2025', 'gambiaIecPresidentialCalendar2026', 'gambiaConstitutionBuildingAnnualReview2025']) {
+  assert.ok(gambia2026.sourceIds.includes(sourceId), `Gambia 2026 source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Gambia bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Gambia rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_PLACES.find(({ id }) => id === 'gambia')?.note.includes('election is upcoming'));
 const mali2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'malian-postcolonial-constitutional-and-military-transition');
 assert.equal(mali2026.startYear, 1960);
 assert.equal(mali2026.endYear, 2026);

@@ -333,6 +333,20 @@ test('Mali 2025–26 update distinguishes enacted party restrictions from govern
   await expect(card).toContainText('not a present-status account after that date');
 });
 
+test('The Gambia 2025–26 update separates the failed draft constitution from the scheduled election', async ({ page }) => {
+  await page.goto('/#geography?case=gambian-postcolonial-constitutional-and-authoritarian-transition');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('1965–2026');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('failed at second reading in the National Assembly on 7 July 2025');
+  await expect(card).toContainText('schedules the next presidential election for 5 December 2026');
+  await expect(card).toContainText('as of this review (26 September), the election is prospective');
+  await expect(card).toContainText('not a fresh six-axis assessment of 2025–26');
+  await expect(card).toContainText('Event-specific book-length scholarship on the failed bill and scheduled 2026 contest was not located');
+  await expect(card).toContainText('not prove current public opinion, voter motives');
+});
+
 test('Zimbabwe 2026 update distinguishes the gazetted amendment from competing legal interpretations and a procedural hearing', async ({ page }) => {
   await page.goto('/#geography?case=zimbabwean-second-republic-and-2023-electoral-contestation');
   const card = page.locator('.geo-card');

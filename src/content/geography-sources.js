@@ -1225,6 +1225,46 @@ const sources = [
     description: 'Post-2017 constitutional and governance scholarship on rights, rule of law, gender, accountability and the proposed new constitutional order. It extends the case beyond the election crisis while preserving the difference between reform proposals, institutional practice and current politics.'
   },
   {
+    id: 'gambiaDraftConstitution2024',
+    label: 'Republic of The Gambia — Final Draft Constitution (14 August 2024)',
+    url: 'https://data.gov.gm/wp-content/uploads/2024/10/LATEST-AND-FINAL-Draft-Constitution.2024-FOR-FIRST-GAZETTING-14-AUGUST-2024_.pdf',
+    note: 'Officially hosted 2024 draft constitutional text consulted 26 September 2026 as a primary witness to the proposed order. The National Assembly rejected the Constitution (Promulgation) Bill at second reading in July 2025; this draft was not enacted and is not presented as current law. Link only; no provisions, quotations, scans or adapted text are republished.',
+    accessDate: '2026-09-26', creators: ['Republic of The Gambia'], institution: 'Government of The Gambia',
+    publicationDate: '2024-08-14', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official draft constitution / primary legal text', identifiers: { draftDate: '2024-08-14' },
+    description: 'Primary evidence of the constitution proposed in 2024, including its institutional and presidential provisions. It establishes what was proposed, not the content of law in force after the bill failed.'
+  },
+  {
+    id: 'gambiaConstitutionBillRejectionIDEA2025',
+    label: 'International IDEA — The Gambia: Draft constitution rejected at second reading (July 2025)',
+    url: 'https://www.idea.int/democracytracker/report/gambia/july-2025',
+    note: 'International IDEA Democracy Tracker account consulted 26 September 2026 for the dated 7 July 2025 second-reading vote and attributed explanations of the reform dispute. This is an institutional secondary account, not a primary parliamentary record or a consensus account of the bill’s merits; no article wording is reproduced.',
+    accessDate: '2026-09-26', creators: ['International IDEA'], institution: 'International Institute for Democracy and Electoral Assistance',
+    publicationDate: '2025-07', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional democracy and constitutional-reform monitoring report', identifiers: { eventDate: '2025-07-07' },
+    description: 'Reports that the Constitution (Promulgation) Bill 2024 failed at second reading on 7 July 2025 and summarizes disputes around term limits, checks and balances and stakeholder inclusion. Its vote account is used with attribution; the failed draft did not replace the 1997 Constitution.'
+  },
+  {
+    id: 'gambiaIecPresidentialCalendar2026',
+    label: 'Independent Electoral Commission of The Gambia — Electoral Calendar 2026–2027',
+    url: 'https://iec.gm/electoral-calendar-2026-2027/',
+    note: 'Official IEC calendar consulted 26 September 2026. It schedules presidential election day for 5 December 2026 and nomination/correction days for 26 October–6 November 2026. The election is prospective at this review date; the calendar establishes a plan, not completion, fairness, participation or result. Link only; no table or wording is republished.',
+    accessDate: '2026-09-26', creators: ['Independent Electoral Commission of The Gambia'], institution: 'Independent Electoral Commission of The Gambia',
+    publicationDate: '2025-10-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral calendar', identifiers: { presidentialElectionDate: '2026-12-05', nominationPeriod: '2026-10-26/2026-11-06' },
+    description: 'The Commission’s schedule for the 2026 presidential election and the 2027 legislative and local elections. The presidential-election entry is future-dated as of 26 September 2026 and must not be described as an election result or settled candidacy field.'
+  },
+  {
+    id: 'gambiaConstitutionBuildingAnnualReview2025',
+    label: 'International IDEA — Annual Review of Constitution-Building: 2025',
+    url: 'https://doi.org/10.31752/18859',
+    note: 'Institutional annual-review volume and Gambia chapter consulted 26 September 2026. Bibliographic identifiers: DOI 10.31752/18859; ISBN 978-91-8137-216-8 (PDF), 978-91-8137-217-5 (HTML). The electronic publication is CC BY-NC-SA 4.0, but this repository uses original paraphrase and links only; no chapter text is adapted or reproduced.',
+    accessDate: '2026-09-26', creators: ['International Institute for Democracy and Electoral Assistance'], institution: 'International IDEA',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional annual-review volume with a country-focused constitutional-development chapter', identifiers: { doi: '10.31752/18859', isbnPdf: '978-91-8137-216-8', isbnHtml: '978-91-8137-217-5', pages: 'Gambia chapter 4.4' },
+    description: 'The Gambia chapter compares constitutional change and democratic transition and situates the 2025 reform failure in the high amendment threshold, weak political support and post-coup constitutional history. It supplies a book-length institutional synthesis, not event-specific monographic coverage of the scheduled 2026 election.'
+  },
+  {
     id: 'sepFarabiAtlas',
     label: 'Thérèse-Anne Druart — al-Farabi (Stanford Encyclopedia of Philosophy)',
     url: 'https://plato.stanford.edu/entries/al-farabi/',
