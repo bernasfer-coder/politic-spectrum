@@ -114,6 +114,18 @@ test('Myanmar 2026 case distinguishes official election claims, UN reporting and
   await expect(card).toContainText('not a current-country ideological score');
 });
 
+test('South Korea 2026 endpoint distinguishes the final obstruction judgment from the appealed insurrection case', async ({ page }) => {
+  await page.goto('/#geography?case=south-korean-constitutional-democratic-and-developmental-order');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('Lee Jae-myung’s succession');
+  await expect(card).toContainText('2026Do6500');
+  await expect(card).toContainText('dismissing both appeals');
+  await expect(card).toContainText('not the separate insurrection case');
+  await expect(card).toContainText('books predate the 2024–2026 crisis');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
