@@ -7,8 +7,8 @@ import { MAP_COUNTRIES_BY_ID } from '../src/geography-map-model.js';
 
 const context = { sourceIds: new Set(RESEARCH_SOURCES.map(({ id }) => id)), entryIds: new Set(Object.keys(ENCYCLOPEDIA_ENTRIES)), workIds: new Set(RESEARCH_WORKS.map(({ id }) => id)), bibliography: BIBLIOGRAPHY_RECORDS };
 assert.deepEqual(validateGeography(context), []);
-assert.equal(GEOGRAPHY_CASES.length, 218);
-assert.equal(GEOGRAPHY_LABELS.length, 216);
+assert.equal(GEOGRAPHY_CASES.length, 219);
+assert.equal(GEOGRAPHY_LABELS.length, 217);
 const paraguayMunicipal2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'paraguay-2026-municipal-election-pre-poll-snapshot');
 assert.equal(paraguayMunicipal2026?.datePrecision, 'snapshot');
 assert.equal(paraguayMunicipal2026?.reviewedAt, '2026-09-26');
@@ -25,6 +25,23 @@ for (const sourceId of ['paraguayConstitution1992Bacn', 'paraguayMunicipalElecti
   assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes(sourceId)), `Paraguay source ${sourceId} should resolve in bibliography`);
 }
 assert.equal(filterGeographyCases({ country: 'map-600' }).filter(({ id }) => id.includes('paraguay')).length, 2);
+const portugalPresidential2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'portugal-presidential-election-2026');
+assert.equal(portugalPresidential2026?.datePrecision, 'year');
+assert.equal(portugalPresidential2026?.reviewedAt, '2026-09-26');
+assert.ok(portugalPresidential2026?.claim.includes('3,502,613 (66.84%)'));
+assert.ok(portugalPresidential2026?.claim.includes('13,849 fewer registered electors'));
+assert.ok(portugalPresidential2026?.claim.includes('does not independently resolve them'));
+assert.ok(portugalPresidential2026?.claim.includes('not a national ideological classification'));
+assert.ok(portugalPresidential2026?.limitation.includes('not been reconciled against polling-station minutes'));
+assert.ok(portugalPresidential2026?.limitation.includes('No ideology label or six-axis placement is assigned'));
+assert.equal(GEOGRAPHY_PLACES.find(({ id }) => id === 'portugal')?.countryIds[0], 'portugal');
+assert.ok(filterGeographyCases({ country: 'portugal' }).some(({ id }) => id === portugalPresidential2026?.id));
+for (const sourceId of ['portugalPresidentialElectionCne2026', 'portugalPresidentialFirstRound2026Official', 'portugalPresidentialSecondRound2026Official', 'portugalConstitution1976Official', 'portugalPresidentialismBook2018', 'portugalFeijoModeratingPowerBook2020']) {
+  assert.ok(portugalPresidential2026?.sourceIds.includes(sourceId), `Portugal case should cite ${sourceId}`);
+  assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes(sourceId)), `Portugal source ${sourceId} should resolve in bibliography`);
+}
+assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('portugalPresidentialismBook2018'))?.note.includes('not read for this case'));
+assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('portugalFeijoModeratingPowerBook2020'))?.note.includes('Full text was not read for this election case'));
 const israelElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'israel-26th-knesset-election-section-7a-review-2026');
 assert.equal(israelElection2026?.datePrecision, 'snapshot');
 assert.equal(israelElection2026?.reviewedAt, '2026-09-26');
@@ -974,7 +991,7 @@ assert.equal(filterGeographyCases({ continent: 'Oceania' })[0].id, 'new-zealand-
 assert.equal(filterGeographyCases({ continent: 'Antarctica' })[0].id, 'antarctic-treaty-system');
 assert.equal(filterGeographyCases({ place: 'antarctica' })[0].labelId, 'antarctic-treaty-governance');
 const implementedPost2000 = filterGeographyCases({ period: '2000-onward', relationship: 'implemented' }).map(({ id }) => id);
-assert.equal(implementedPost2000.length, 190, 'the atlas should expose all dated post-2000 implemented cases');
+assert.equal(implementedPost2000.length, 191, 'the atlas should expose all dated post-2000 implemented cases');
 assert.ok(implementedPost2000.includes('mauritius-2024-national-assembly-election-and-transition'));
 assert.ok(implementedPost2000.includes('seychelles-2025-presidential-and-assembly-elections'));
 assert.ok(implementedPost2000.includes('djibouti-2025-amendment-and-2026-presidential-election'));

@@ -939,7 +939,7 @@ for (const [sourceId, role, date, languages] of [
   assert.equal(record.publicationStatus, 'link-only');
   assert.equal(record.directQuote, null);
   const expectedPortugueseProfiles = sourceId === 'portugalConstitution1976Official'
-    ? ['encyclopedia:christian-democratic', 'geography:portugal-democratic-transition-constitutional-founding', 'geography:portuguese-democratic-consolidation-and-europeanization']
+    ? ['encyclopedia:christian-democratic', 'geography:portugal-democratic-transition-constitutional-founding', 'geography:portuguese-democratic-consolidation-and-europeanization', 'geography:portugal-presidential-election-2026']
     : ['encyclopedia:christian-democratic'];
   assert.deepEqual(record.relationships.profileEntries, expectedPortugueseProfiles);
 }

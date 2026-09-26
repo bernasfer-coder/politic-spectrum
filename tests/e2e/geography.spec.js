@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(218);
+  await expect(page.locator('.geo-card')).toHaveCount(219);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -641,9 +641,22 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
   expect(errors).toEqual([]);
 });
 
+test('Portugal 2026 presidential election preserves the official tally qualifications', async ({ page }) => {
+  await page.goto('/#geography?case=portugal-presidential-election-2026');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('3,502,613 (66.84%)');
+  await expect(card).toContainText('13,849 fewer registered electors');
+  await expect(card).toContainText('does not independently resolve them');
+  await expect(card).toContainText('No ideology label or six-axis placement is assigned');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="2026_pr_2-sufragio_mapa_oficial_dr.pdf"]')).toBeVisible();
+  await expect(card.locator('a[href*="10.1007/978-3-030-53180-5"]')).toBeVisible();
+});
+
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(218);
+  await expect(page.locator('.geo-card')).toHaveCount(219);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
