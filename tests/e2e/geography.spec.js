@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(214);
+  await expect(page.locator('.geo-card')).toHaveCount(215);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -30,6 +30,19 @@ test('Philippines impeachment case separates the 2025 ruling from the pending 20
   await expect(card).toContainText('not findings on the accusations');
   await expect(card).toContainText('no disposition was located by this review cutoff');
   await expect(card).toContainText('Event-specific book-length scholarship was not identified');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.getByRole('link', { name: 'Bibliography & rights record →' }).first()).toBeVisible();
+});
+
+test('Moldova case distinguishes the referendum, validated mandates and ongoing accession talks', async ({ page }) => {
+  await page.goto('/#geography?case=moldova-constitutional-eu-accession-and-electoral-transition-2024-26');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('749,719 valid YES votes and 739,155 NO votes');
+  await expect(card).toContainText('PAS 55');
+  await expect(card).toContainText('negotiations remained in progress, not accession');
+  await expect(card).toContainText('No ideological label or six-axis score is assigned');
+  await expect(card).toContainText('Event-specific book-length scholarship');
   await card.locator('.geo-evidence summary').click();
   await expect(card.getByRole('link', { name: 'Bibliography & rights record →' }).first()).toBeVisible();
 });
@@ -579,7 +592,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(214);
+  await expect(page.locator('.geo-card')).toHaveCount(215);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
