@@ -11325,6 +11325,23 @@ sources.push({
 });
 
 sources.push({
+  id: 'saoTomeElectoralLaw1990CampaignPeriod',
+  label: 'National Assembly of São Tomé and Príncipe — Electoral Law No. 11/90 (official Diário da República scan)',
+  url: 'https://www2.camara.leg.br/saotomeeprincipe/legislacao/eleitoral/Lei%2011%2090%20DR%2017.PDF',
+  note: 'Official National Assembly legislative repository scan of Lei n.º 11/90 in Diário da República, No. 17 (17–26 November 1990), visually consulted on 26 September 2026 at printed page 366, Article 86. Article 86 sets the ordinary campaign-period end at 24:00 on the antevéspera of election day. Applied to the 27 September 2026 poll, the statutory period ended at midnight on 25 September / the start of 26 September. This is a paraphrase of the legal rule, not evidence that all actors complied with it; no text or scan is republished.',
+  accessDate: '2026-09-26',
+  creators: ['Democratic Republic of São Tomé and Príncipe'],
+  institution: 'National Assembly of São Tomé and Príncipe',
+  publicationDate: '1990-11',
+  evidenceRole: 'primary',
+  confidence: 'high',
+  languages: ['Portuguese'],
+  sourceType: 'official electoral law (scanned Diário da República text)',
+  identifiers: { law: 'Lei n.º 11/90', article: '86', gazette: 'Diário da República, No. 17', printedPage: '366' },
+  description: 'Primary legal source for the ordinary campaign-period boundary applicable to the scheduled 27 September 2026 National Assembly election.'
+});
+
+sources.push({
   id: 'gambiaForoyaaIecRoadmap2026',
   label: 'Yankuba Jallow — “IEC Sets Presidential Nomination Dates, Other Key Election Activities” (Foroyaa, 11 September 2026)',
   url: 'https://foroyaa.net/iec-sets-presidential-nomination-dates-other-key-election-activities/',

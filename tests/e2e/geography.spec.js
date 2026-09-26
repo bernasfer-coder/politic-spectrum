@@ -183,6 +183,8 @@ test('São Tomé and Príncipe election remains a pre-poll case and is reachable
   await expect(card).toContainText('neither observer mission had published findings on the 27 September vote');
   await expect(card).toContainText('Commission’s official portal lists');
   await expect(card).toContainText('not the completeness or individual accuracy of the register');
+  await expect(card).toContainText('24:00 on the antevéspera of election day');
+  await expect(card).toContainText('does not establish that all campaign actors complied');
   await expect(card).toContainText('No voting, counting, certified results');
   await page.getByRole('combobox', { name: /Place/ }).selectOption('sao-tome-legislative-election-2026');
   await expect(card).toHaveCount(1);

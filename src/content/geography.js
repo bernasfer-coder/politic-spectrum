@@ -2981,6 +2981,21 @@ saoTomeElection2026.evidenceKind += '; CEN voter-registration and polling-place 
 saoTomeElection2026.claim += ' The National Election Commission’s official portal lists the legislative, local and regional contests for 27 September and describes a service through which voters can check registration and assigned polling place; it lists polling localities in the districts, Príncipe and diaspora. This documents the Commission’s published information facility, not the completeness or individual accuracy of the register, actual voter access, or turnout.';
 saoTomeElection2026.limitation += ' The CEN portal’s lookup instructions and locality listings are not an audit of the register or proof that every voter could access or successfully use the service; no individual record was queried.';
 saoTomeElection2026.locator += ' National Election Commission voter-information portal (consulted 25 September 2026): registration/polling-place lookup instructions, locality listings and 27 September legislative, local and regional election calendar.';
+saoTomeElection2026.reviewedAt = '2026-09-26';
+saoTomeElection2026.periodLabel = 'Through 26 September 2026 · National Assembly election preparation, before polling';
+saoTomeElection2026.historicalSetting = saoTomeElection2026.historicalSetting.replace('The record is frozen on 25 September before voting;', 'The record is frozen on 26 September before voting;');
+saoTomeElection2026.evidenceKind += '; official Lei n.º 11/90, Article 86, directly visually consulted in the National Assembly’s Diário da República scan';
+saoTomeElection2026.claim += ' The National Assembly’s official scan of Electoral Law No. 11/90, Article 86, sets the ordinary campaign-period end at 24:00 on the antevéspera of election day. Applied to the scheduled 27 September poll, that is midnight at the end of 25 September / start of 26 September. This statutory boundary does not establish that all campaign actors complied with it, and no activity on 26 September is characterized here.';
+saoTomeElection2026.limitation = saoTomeElection2026.limitation.replace('This is a pre-election snapshot reviewed 25 September 2026.', 'This is a pre-election snapshot reviewed 26 September 2026, before polling scheduled for the next day.');
+saoTomeElection2026.limitation += ' Electoral Law No. 11/90, Article 86, sets the ordinary campaign period to end at 24:00 on the antevéspera of election day; for the scheduled 27 September poll this is the end of 25 September/start of 26 September. This states the statutory boundary, not evidence of compliance or a record of activity on 26 September.';
+saoTomeElection2026.locator += ' National Assembly, Lei n.º 11/90, Lei Eleitoral, Article 86, official Diário da República scan, printed p. 366 (visually consulted 26 September 2026).';
+saoTomeElection2026.sourceIds.push('saoTomeElectoralLaw1990CampaignPeriod');
+saoTomeElectionLabel2026.sourceIds.push('saoTomeElectoralLaw1990CampaignPeriod');
+saoTomeElectionLabel2026.description += ' The statute sets the ordinary campaign period to end at 24:00 on the antevéspera of election day; this is a legal timetable, not an assessment of compliance.';
+const saoTomeElectionPlace2026 = GEOGRAPHY_PLACES.find(({ id }) => id === 'sao-tome-legislative-election-2026');
+saoTomeElectionPlace2026.type = saoTomeElectionPlace2026.type.replace('as of 25 September 2026', 'as of 26 September 2026');
+saoTomeElectionPlace2026.note = saoTomeElectionPlace2026.note.replace('through 25 September.', 'through 26 September.');
+saoTomeElectionPlace2026.note += ' The statute sets the ordinary campaign period to end at 24:00 on the antevéspera; applied to the scheduled 27 September poll, this is the end of 25 September/start of 26 September, but it does not establish compliance.';
 
 const gambiaElection2026 = GEOGRAPHY_CASES.find(({ id }) => id === 'gambia-2026-presidential-election-pre-election-snapshot');
 gambiaElection2026.reviewedAt = '2026-09-26';

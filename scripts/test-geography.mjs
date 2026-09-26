@@ -312,8 +312,11 @@ assert.ok(filterGeographyCases({ country: 'brazil' }).some(({ id }) => id === br
 assert.ok(!('scores' in GEOGRAPHY_LABELS.find(({ id }) => id === brazil2026Election?.labelId)));
 const saoTomeElection = GEOGRAPHY_CASES.find(({ id }) => id === 'sao-tome-2026-national-assembly-election-pre-election');
 assert.equal(saoTomeElection?.datePrecision, 'snapshot');
-assert.equal(saoTomeElection?.reviewedAt, '2026-09-25');
+assert.equal(saoTomeElection?.reviewedAt, '2026-09-26');
 assert.ok(saoTomeElection?.claim.includes('poll remained scheduled for 27 September 2026'));
+assert.ok(saoTomeElection?.sourceIds.includes('saoTomeElectoralLaw1990CampaignPeriod'));
+assert.ok(saoTomeElection?.claim.includes('24:00 on the antevéspera of election day'));
+assert.ok(saoTomeElection?.limitation.includes('not evidence of compliance'));
 assert.equal(saoTomeElection?.confidence, 'medium');
 assert.ok(saoTomeElection?.claim.includes('rejected the coalition’s lists for Mé-Zóchi'));
 assert.ok(saoTomeElection?.claim.includes('petition and complaint'));
