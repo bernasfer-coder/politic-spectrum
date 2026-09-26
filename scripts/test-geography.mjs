@@ -435,9 +435,12 @@ assert.ok(saoTomeElection?.sourceIds.includes('saoTomePollingStationTrainingRstp
 assert.ok(saoTomeElection?.claim.includes('On 24 September, RSTP reported that the National Election Commission was reinforcing training'));
 assert.ok(saoTomeElection?.limitation.includes('only source located for the polling-station-member training'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeCenLogisticsAndRollUpdateTelaNon20260925'));
+assert.ok(saoTomeElection?.sourceIds.includes('saoTomeCenLogisticsBriefingLusaJornalTropical20260925'));
 assert.ok(saoTomeElection?.claim.includes('logistics within São Tomé and Príncipe were only “40%” guaranteed'));
+assert.ok(saoTomeElection?.claim.includes('outstanding 40% concerned funding for district and general tabulation after polling'));
+assert.ok(saoTomeElection?.claim.includes('29 of 859 registration complaints remained unresolved'));
 assert.ok(saoTomeElection?.claim.includes('Those figures do not reconcile arithmetically'));
-assert.ok(saoTomeElection?.limitation.includes('no underlying CEN statement, logistics inventory'));
+assert.ok(saoTomeElection?.limitation.includes('same-day Lusa reporting carried by Jornal Tropical specifies'));
 assert.ok(saoTomeElection?.claim.includes('24:00 on the antevéspera of election day'));
 assert.ok(saoTomeElection?.limitation.includes('not evidence of compliance'));
 assert.equal(saoTomeElection?.confidence, 'medium');
@@ -462,6 +465,7 @@ assert.ok(saoTomeElection?.sourceIds.includes('saoTomeMciCandidacyChallengeRstp2
 assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('saoTomeRtpCampaignClose2026')));
 assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('saoTomePollingStationTrainingRstp20260924')));
 assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('saoTomeCenLogisticsAndRollUpdateTelaNon20260925')));
+assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('saoTomeCenLogisticsBriefingLusaJornalTropical20260925')));
 assert.deepEqual(GEOGRAPHY_PLACES.find(({ id }) => id === 'sao-tome-legislative-election-2026')?.countryIds, []);
 assert.ok(filterGeographyCases({ ...GEOGRAPHY_DEFAULTS, continent: 'Africa' }).some(({ id }) => id === saoTomeElection.id));
 assert.ok(filterGeographyCases({ ...GEOGRAPHY_DEFAULTS, q: 'Sao Tome' }).some(({ id }) => id === saoTomeElection.id));

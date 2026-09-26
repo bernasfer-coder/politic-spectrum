@@ -90,10 +90,13 @@ test('São Tomé and Príncipe preserves CEN logistics statement and voter-roll 
   await expect(card).toHaveCount(1);
   await expect(card).toContainText('Téla Nón reported remarks attributed to CEN president Jeudiger Nascimento');
   await expect(card).toContainText('only “40%” guaranteed');
+  await expect(card).toContainText('outstanding 40% concerned funding for district and general tabulation after polling');
   await expect(card).toContainText('Those figures do not reconcile arithmetically');
+  await expect(card).toContainText('29 of 859 registration complaints remained unresolved');
   await expect(card).toContainText('not independently verified evidence');
   await card.locator('.geo-evidence summary').click();
   await expect(card.locator('a[href*="saoTomeCenLogisticsAndRollUpdateTelaNon20260925"]').first()).toBeVisible();
+  await expect(card.locator('a[href*="saoTomeCenLogisticsBriefingLusaJornalTropical20260925"]').first()).toBeVisible();
 });
 
 test('Tonga case separates the 2025 parliamentary transition from pending October 2026 by-elections', async ({ page }) => {

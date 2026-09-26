@@ -11501,6 +11501,23 @@ sources.push({
 });
 
 sources.push({
+  id: 'saoTomeCenLogisticsBriefingLusaJornalTropical20260925',
+  label: 'Lusa — “São Tomé/eleições: Comissão Eleitoral garante que tem pronta logística para votação de domingo” (Jornal Tropical, 25 September 2026)',
+  url: 'https://www.jornaltropical.st/sao-tome-eleicoes-comissao-eleitoral-garante-que-tem-pronta-logistica-para-votacao-de-domingo/',
+  note: 'This Lusa report, hosted by Jornal Tropical and dated 25 September, attributes remarks to CEN president Jeudiger do Nascimento at a press conference. It clarifies that the outstanding “40%” referred to financial provision for district and national tabulation after polling, while the president said material/logistical conditions for voting were guaranteed and discussions continued to finalize funding. The account also says 29 of 859 complaints were not resolved because supporting documents were missing, and attributes to him that names present on provisional lists were on final lists. These are reported institutional statements, not an independent logistics audit, voter-register audit or proof that no voter was excluded. Its 859-complaint framing differs from Téla Nón’s shorthand that all complaints of 859 people omitted in July had been resolved; whether the reports describe the same complaint set is not established. No article text or image is reproduced.',
+  accessDate: '2026-09-26',
+  creators: ['Agência Lusa'],
+  institution: 'Jornal Tropical (host publication)',
+  publicationDate: '2026-09-25',
+  evidenceRole: 'secondary',
+  confidence: 'medium',
+  languages: ['Portuguese'],
+  sourceType: 'news-agency report of election-commission press conference',
+  identifiers: { interviewSubject: 'Jeudiger do Nascimento, CEN president', conferenceDate: '2026-09-25', electionDate: '2026-09-27', authoringAgency: 'Agência Lusa' },
+  description: 'Reports the CEN president’s distinction between voting-day material logistics and funding for post-poll tallying, as well as registration-complaint figures; no underlying CEN documents or independent verification are provided.'
+});
+
+sources.push({
   id: 'gambiaForoyaaIecRoadmap2026',
   label: 'Yankuba Jallow — “IEC Sets Presidential Nomination Dates, Other Key Election Activities” (Foroyaa, 11 September 2026)',
   url: 'https://foroyaa.net/iec-sets-presidential-nomination-dates-other-key-election-activities/',
