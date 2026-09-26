@@ -2244,6 +2244,60 @@ const sources = [
     description: 'Primary institutional record for the Commission’s 2024 presidential-election results, used as the endpoint for this dated case. It documents the official result record without settling electoral fairness, participation, opposition acceptance, policy consequences or developments after the 2024 election.',
   },
   {
+    id: 'ghanaGovernmentResponseConstitutionReview2026',
+    label: 'Ghana News Agency — Government accepts key constitutional-review proposals (9 August 2026)',
+    url: 'https://gna.org.gh/2026/08/govt-accepts-key-constitutional-reforms/',
+    note: 'Ghana News Agency report on Government’s August response to the CRC recommendations. Used for attributed descriptions of accepted proposals and points of divergence; these remain proposals pending the constitutional and legislative process, not enacted amendments.',
+    accessDate: '2026-09-26', creators: ['Ghana News Agency'], institution: 'Ghana News Agency', publicationDate: '2026-08-09', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'national news-agency report on Government constitutional-review position', identifiers: { date: '2026-08-09', subject: 'Government response to Constitution Review Committee recommendations' },
+    description: 'Reports the Government position on selected Constitution Review Committee recommendations, including proposals concerning terms of office, District Chief Executives, citizen-initiated amendments and death-penalty abolition, alongside areas where Government differed from the Committee. Reports an executive position, not adoption, implementation or public consensus.'
+  },
+  {
+    id: 'ghanaConstitutionReviewReports2025to26',
+    label: 'Ghana Constitution Review 2025 — CRC final report, recommendations and Government position-paper repository',
+    url: 'https://constitutionreviewgh.org/documents/',
+    note: 'The Constitution Review Committee’s document repository lists the CRC 2025 recommendations/final reports and the Government position paper. Used as a catalogue locator; the implementation details are separately attributed to official announcements and Ghana News Agency reporting. A listed document is not evidence that proposals have been adopted as law.',
+    accessDate: '2026-09-26', creators: ['Constitution Review Committee 2025', 'Government of Ghana'], institution: 'Ghana Constitution Review 2025 / Office of the President Annex', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official constitutional-review document repository', identifiers: { repository: 'CRC 2025 reports and Government position paper' },
+    description: 'Official process site indexing the review committee’s recommendations and final report and the Government position paper. It locates primary reform documents, not proof of their implementation, legal effect or public consensus.'
+  },
+  {
+    id: 'ghanaConstitutionReviewImplementationCommittee2026',
+    label: 'Information Services Department, Ghana — Attorney General inaugurates Constitution Review Implementation Committee (31 August 2026)',
+    url: 'https://www.isd.gov.gh/attorney-general-inaugurates-committee-to-implement-constitutional-review-proposals/',
+    note: 'Official Information Services Department report on the inauguration and stated mandate of an 11-member implementation committee. Used for the announced institutional step and remit, not as evidence that the committee completed its work or that amendments were adopted.',
+    accessDate: '2026-09-26', creators: ['Information Services Department, Ghana'], institution: 'Information Services Department / Ministry of Information, Ghana', publicationDate: '2026-08-31', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official government announcement of constitutional-review implementation body', identifiers: { committee: 'Constitution Review Implementation Committee', members: '11', inaugurationDate: '2026-08-31' },
+    description: 'Official report that the Attorney General inaugurated an 11-member committee to examine the Government position paper alongside the CRC report and develop an implementation framework. This records formation and mandate, not outcomes or enacted amendments.'
+  },
+  {
+    id: 'ghanaWomenGroupsConstitutionReform2026',
+    label: 'Ghana News Agency — NETRIGHT and Affirmative Action Law Coalition contest constitutional-reform gender provisions (24 September 2026)',
+    url: 'https://gna.org.gh/2026/09/women-groups-rejects-constitutional-review-reforms-on-gender-equality/',
+    note: 'Ghana News Agency report on a consolidated position presented by NETRIGHT and the Affirmative Action Law Coalition. Their claims and proposals are attributed to the organizations and named speakers; the report documents an organized intervention, not population-wide opinion or a settled legal interpretation. No article wording or image is republished.',
+    accessDate: '2026-09-26', creators: ['Bertha Badu-Agyei', 'Ghana News Agency'], institution: 'Ghana News Agency', publicationDate: '2026-09-24', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'national news-agency report of civil-society constitutional-reform position', identifiers: { organizations: ['NETRIGHT', 'Affirmative Action Law Coalition'], date: '2026-09-24' },
+    description: 'Reports that NETRIGHT and the Affirmative Action Law Coalition challenged the Government’s proposed distribution of 24 proportional-representation seats among women, youth and persons with disabilities and called for stronger binding gender protections. This is one documented advocacy position, not a representative survey or evidence that the Government proposal has become law.'
+  },
+  {
+    id: 'ghanaBudget2026',
+    label: 'Ministry of Finance, Ghana — 2026 Budget Statement and Economic Policy',
+    url: 'https://mofep.gov.gh/sites/default/files/budget-statements/2026-Budget-Statement-and-Economic-Policy.pdf',
+    note: 'Official Government budget and policy statement, consulted for stated 2026 priorities and its retrospective claims about 2025. The Government’s performance language and targets are attributed as such; no tables or budget prose are reproduced, and budget appropriations are not equated with completed delivery or household outcomes.',
+    accessDate: '2026-09-26', creators: ['Ministry of Finance, Ghana'], institution: 'Ministry of Finance, Republic of Ghana', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary national budget statement and policy programme', identifiers: { fiscalYear: '2026', pages: '304' },
+    description: 'Official 2026 Budget Statement and Economic Policy setting out Government priorities, estimates, targets and retrospective account of 2025. It is a primary record of the executive’s fiscal programme and claims, not independent evaluation of outcomes or distribution.'
+  },
+  {
+    id: 'ghanaImfSixthReview2026',
+    label: 'International Monetary Fund — Ghana sixth ECF review and 2026 Article IV consultation (27 July 2026)',
+    url: 'https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-rev-req-36mo-pci',
+    note: 'IMF Executive Board press release and attributed institutional assessment following the final ECF review and 2026 Article IV consultation. IMF estimates, programme criteria, staff/Board judgments and forward-looking conditions are not independent household-level evidence or a complete account of domestic policy debate; the source is link-and-paraphrase only.',
+    accessDate: '2026-09-26', creators: ['International Monetary Fund'], institution: 'International Monetary Fund', publicationDate: '2026-07-27', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'international financial institution programme review and Article IV assessment', identifiers: { pressRelease: '26/260', programme: 'Extended Credit Facility, sixth and final review', consultation: '2026 Article IV', instrument: '36-month Policy Coordination Instrument' },
+    description: 'The IMF reports completion of Ghana’s final ECF review and conclusion of the 2026 Article IV consultation, with macroeconomic stabilization and debt-restructuring gains alongside remaining fiscal, financial-sector, state-enterprise and governance risks. Its findings and conditional recommendations are institutional assessments, not a universal account of welfare or ideology.'
+  },
+  {
     id: 'adebanwiDemocracyNigeriaFourthRepublic2023',
     label: 'Wale Adebanwi (ed.) — Democracy and Nigeria’s Fourth Republic: Governance, Political Economy, and Party Politics 1999–2023',
     url: 'https://boydellandbrewer.com/book/democracy-and-nigerias-fourth-republic-9781847013798/?v=7885444af42e',

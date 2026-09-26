@@ -75,6 +75,19 @@ for (const sourceId of ['mozambiqueUnExpertsPostElection2024', 'mozambiquePresid
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Mozambique rights/provenance review missing: ${sourceId}`);
 }
 assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === mozambiqueCase.labelId)?.aliases.includes('Mozambique political history 2019–2026'));
+const ghanaCurrent = GEOGRAPHY_CASES.find(({ id }) => id === 'ghanaian-fourth-republic-democratic-consolidation-and-economic-strain');
+assert.equal(ghanaCurrent.endYear, 2026);
+assert.equal(ghanaCurrent.reviewedAt, '2026-09-26');
+assert.ok(ghanaCurrent.claim.includes('not constitutional amendments already enacted'));
+assert.ok(ghanaCurrent.claim.includes('organized counter-position, not its prevalence or public consensus'));
+assert.ok(ghanaCurrent.claim.includes('These distinct assessments do not establish uniform household outcomes'));
+assert.ok(ghanaCurrent.limitation.includes('no event-specific book-length study of the 2025–26 Mahama administration'));
+for (const sourceId of ['ghanaConstitutionReviewReports2025to26', 'ghanaGovernmentResponseConstitutionReview2026', 'ghanaConstitutionReviewImplementationCommittee2026', 'ghanaWomenGroupsConstitutionReform2026', 'ghanaBudget2026', 'ghanaImfSixthReview2026']) {
+  assert.ok(ghanaCurrent.sourceIds.includes(sourceId), `Ghana source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Ghana bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Ghana rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === ghanaCurrent.labelId)?.aliases.includes('Ghana constitutional review 2025–2026'));
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);

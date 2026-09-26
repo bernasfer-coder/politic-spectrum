@@ -193,6 +193,19 @@ test('Haiti 2026 update distinguishes transition reporting, interim CEP figures 
   await expect(card).toContainText('remain research gaps');
 });
 
+test('Ghana 2026 update distinguishes constitutional proposals, civic disagreement and institutional economic assessments', async ({ page }) => {
+  await page.goto('/#geography?case=ghanaian-fourth-republic-democratic-consolidation-and-economic-strain');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('not constitutional amendments already enacted');
+  await expect(card).toContainText('An implementation committee was inaugurated on 31 August');
+  await expect(card).toContainText('organized counter-position, not its prevalence or public consensus');
+  await expect(card).toContainText('the IMF’s 27 July 2026 sixth-and-final ECF review');
+  await expect(card).toContainText('no event-specific book-length study');
+  await expect(card).toContainText('not a score for Ghanaians');
+});
+
 test('regional gaps, labels and malformed URLs are safe and honest', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
