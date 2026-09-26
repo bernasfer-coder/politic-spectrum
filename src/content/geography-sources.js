@@ -7726,6 +7726,96 @@ const sources = [
     description: 'Spanish-language edited volume examining Paraguay’s economic history and development model from 1870 to 2010, including the agrarian/export economy, state strategies, institutional capacity and clientelism during the democratic and post-Stroessner period. It supplies a political-economy lens rather than a complete social, constitutional or local history.'
   },
   {
+    id: 'paraguayTsjeMunicipalCalendar2026',
+    label: 'Tribunal Superior de Justicia Electoral — Municipal elections 2026 official portal and calendar',
+    url: 'https://elecciones.gov.py/',
+    note: 'Official TSJE election portal consulted on 26 September 2026 for the scheduled 4 October municipal poll, the 263-district scope, the offices being contested, candidate/election information and dated procedural calendar. It is a pre-election snapshot; no results, actual voter experience, mission findings or uniform implementation are inferred.',
+    accessDate: '2026-09-26', creators: ['Tribunal Superior de Justicia Electoral de la República del Paraguay'], institution: 'Tribunal Superior de Justicia Electoral', publicationDate: '2026-09-26', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official municipal-election portal and dated election calendar', identifiers: { election: 'Paraguay municipal elections 2026', scheduledElectionDate: '2026-10-04', districts: '263', term: '2026–2031', snapshotDate: '2026-09-26' },
+    description: 'Official TSJE portal records the scheduled 2026 municipal electoral process and its stages. On the stated access date the 4 October poll had not yet taken place; this record documents the announced process, not campaign quality or outcomes.'
+  },
+  {
+    id: 'paraguayTsjeMunicipalPrepSep222026',
+    label: 'Tribunal Superior de Justicia Electoral — Accreditation, free campaign publicity and final checks for the 2026 municipal election (22 September 2026)',
+    url: 'https://www.tsje.gov.py/noticias/leer/11995-inicia-periodo-de-acreditacion-de-apoderados-y-veedores--propaganda-gratuita-y-chequeo-final.html',
+    note: 'TSJE press notice published 22 September 2026 consulted for its own timetable: party agents and polling-table observers were to be accredited 22–25 September, free electoral publicity was scheduled 22 September–1 October, and the final check was scheduled 22 September–2 October. The notice is an electoral authority’s procedural account, not independent confirmation that each step occurred uniformly or a post-election assessment.',
+    accessDate: '2026-09-26', creators: ['Tribunal Superior de Justicia Electoral de la República del Paraguay'], institution: 'Tribunal Superior de Justicia Electoral, Department of Press', publicationDate: '2026-09-22', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official pre-election procedural notice', identifiers: { noticeDate: '2026-09-22', accreditationWindow: '2026-09-22 to 2026-09-25', freePublicityWindow: '2026-09-22 to 2026-10-01', finalCheckWindow: '2026-09-22 to 2026-10-02', scheduledElectionDate: '2026-10-04' },
+    description: 'Dated official account of the final pre-election timetable, covering accreditation of party agents and observers, free campaign publicity, a final check and the scheduled election in 263 districts. It reports scheduled stages rather than independent monitoring or a completed election.'
+  },
+  {
+    id: 'paraguayTsjeTrepResolution1942026',
+    label: 'Tribunal Superior de Justicia Electoral — Resolution 194/2026 and preliminary-results procedures (TREP)',
+    url: 'https://onafip.tsje.gov.py/trep',
+    note: 'Official TSJE portal entry reproducing the subject and relevant procedures of Resolution 194/2026, dated 28 August 2026, for the 4 October municipal election. It defines TREP as preliminary, informational and non-binding while the Electoral Justice completes official counts. The procedures establish formal design, not proof of correct operation, outcome or public confidence.',
+    accessDate: '2026-09-26', creators: ['Tribunal Superior de Justicia Electoral de la República del Paraguay'], institution: 'Tribunal Superior de Justicia Electoral', publicationDate: '2026-08-28', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary electoral regulation and official explanation of preliminary count procedures', identifiers: { resolution: '194/2026', resolutionDate: '2026-08-28', electionDate: '2026-10-04', system: 'Transmisión de Resultados Electorales Preliminares (TREP)' },
+    description: 'Official resolution entry setting procedures for transmitting preliminary results in the 2026 municipal election and distinguishing these early informational returns from the legally effective official count. It establishes the announced procedure, not its performance.'
+  },
+  {
+    id: 'paraguayTsjeObserverPlan2026',
+    label: 'Tribunal Superior de Justicia Electoral — International observers planned for the 2026 municipal election (2 September 2026)',
+    url: 'https://www.tsje.gov.py/noticias/leer/11962-elecciones-municipales-2026-contara-con-observacion-electoral-internacional.html',
+    note: 'TSJE notice of 2 September 2026 states that international electoral-observation missions were expected for the 4 October municipal election and names UNIORE, A-WEB, OAS and AMEA among anticipated participants. This is the election authority’s announcement of planned participation; it does not establish that missions deployed, what they observed, or their eventual conclusions.',
+    accessDate: '2026-09-26', creators: ['Tribunal Superior de Justicia Electoral de la República del Paraguay'], institution: 'Tribunal Superior de Justicia Electoral, Department of Press', publicationDate: '2026-09-02', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official announcement of planned international election observation', identifiers: { noticeDate: '2026-09-02', scheduledElectionDate: '2026-10-04', observersExpected: ['UNIORE', 'A-WEB', 'OAS', 'AMEA'] },
+    description: 'TSJE announcement that international observation bodies were expected to accompany stages of the municipal electoral process. It is evidence of the announced plan, not independent observation or certification.'
+  },
+  {
+    id: 'paraguayDecree4806Osfl2025',
+    label: 'Republic of Paraguay — Executive Decree 4806/2025 regulating Law 7363/2024 on nonprofit organizations',
+    url: 'https://ekuatia.set.gov.py/documents/20123/559197/DECRETO%2B4806_25.pdf/57a4cf36-c95f-b5d7-5467-4f4825fb608f?t=1768401783481.pdf',
+    note: 'Official 13-page Spanish-language decree issued by the Presidency and Ministry of Economy and Finance in Asunción on 23 October 2025, consulted as a primary legal text. Its preamble states the administration’s transparency, free-association and financial-compliance rationale; the text documents formal regulation, not subsequent uniform enforcement, legal validity or effects on every organization.',
+    accessDate: '2026-09-26', creators: ['Presidency of the Republic of Paraguay', 'Ministry of Economy and Finance of Paraguay'], institution: 'Republic of Paraguay, Presidency and Ministry of Economy and Finance', publicationDate: '2025-10-23', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'primary executive decree regulating nonprofit-organization law', identifiers: { decree: '4806/2025', date: '2025-10-23', regulatedLaw: '7363/2024', pages: '13' },
+    description: 'Primary decree regulating Law 7363/2024 on control, transparency and accountability for certain nonprofit organizations. The official text presents the executive’s stated rationale and requirements; its legal obligations are distinguished from civil-society critiques and judicial review.'
+  },
+  {
+    id: 'paraguayMefLaw7363Faq2026',
+    label: 'Paraguay Ministry of Economy and Finance — Frequently asked questions on Law 7363/2024 and Decree 4806/2025',
+    url: 'https://www.mef.gov.py/en/node/8534',
+    note: 'MEF’s public-facing FAQ consulted on 26 September 2026 for the government’s explanation of which nonprofit organizations it considers subject to additional registration, accounting, reporting and disclosure duties, applicable exceptions, and the registration timetable. It is administrative guidance, not the law’s complete text, an independent statutory interpretation or evidence that every organization has complied.',
+    accessDate: '2026-09-26', creators: ['Republic of Paraguay, Ministry of Economy and Finance'], institution: 'Ministry of Economy and Finance of Paraguay', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish', 'English'],
+    sourceType: 'official administrative guidance on nonprofit regulation', identifiers: { law: '7363/2024', implementingDecree: '4806/2025', accessDate: '2026-09-26' },
+    description: 'Government explanation that the additional regime applies to organizations meeting stated public-policy participation and funding conditions, outlines reporting and transparency requirements and lists exceptions. It records the administration’s interpretation and implementation advice, not independent legal analysis or enforcement outcomes.'
+  },
+  {
+    id: 'paraguayDecidamosPoliticalRights2025',
+    label: 'Decidamos — Informe de Derechos Humanos 2025: Derechos políticos en Paraguay (published 2026)',
+    url: 'https://decidamos.org.py/wp-content/uploads/2026/01/Informe-DDHH-2025Derechos-Politicos-Decidamos.pdf',
+    note: 'Spanish-language Paraguayan civil-society report published 5 January 2026, consulted in full for its discussion of the 2026 municipal calendar, electronic-voting technology and access to citizen audit. Its critical assessment and descriptions of TSJE practice are attributed to Decidamos and are not treated as a court finding or a representative survey of Paraguayan opinion.',
+    accessDate: '2026-09-26', creators: ['Decidamos — Campaña por la Expresión Ciudadana'], institution: 'Decidamos — Campaña por la Expresión Ciudadana', publicationDate: '2026-01-05', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'civil-society annual human-rights report chapter on political rights', identifiers: { reportingYear: '2025', publicationDate: '2026-01-05', pages: '18-page PDF' },
+    description: 'Civil-society review of political rights in Paraguay during 2025, including concerns about transparency, electoral technology and public participation in auditing. Its evaluations and stakeholder accounts remain attributed; it predates the 2026 election and cannot establish election-day performance.'
+  },
+  {
+    id: 'paraguayCodehupyCivicSpace2025',
+    label: 'Coordinadora de Derechos Humanos del Paraguay — Informe de Derechos Humanos 2025, chapter on Law 7363 and civic space',
+    url: 'https://www.codehupy.org.py/wp-content/uploads/2025/12/Informe-DDHH-2025_web.pdf',
+    note: 'Spanish-language annual civil-society human-rights report, consulted for the chapter on Law 7363/2024 and Decree 4806/2025. CODEHUPY argues that the decree’s definition of participation in public policy is ambiguous and that the rules burden association; these are the coalition’s legal and political assessments, not an adjudicated constitutional conclusion or an implementation study of every nonprofit.',
+    accessDate: '2026-09-26', creators: ['Coordinadora de Derechos Humanos del Paraguay (CODEHUPY)'], institution: 'Coordinadora de Derechos Humanos del Paraguay', publicationDate: '2025-12', evidenceRole: 'secondary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'civil-society annual human-rights report / country chapter', identifiers: { reportingYear: '2025', topic: 'Law 7363/2024 and civic space' },
+    description: 'Paraguayan human-rights coalition analysis of the nonprofit-law regulation and its reported implications for association and civic participation. It provides an attributed local critique, not a court decision or a survey of all organizations.'
+  },
+  {
+    id: 'paraguayAmnestyHumanRights2025',
+    label: 'Amnesty International — Paraguay 2025 human-rights report (published 2026)',
+    url: 'https://www.amnesty.org/en/location/americas/south-america/paraguay/report-paraguay/',
+    note: 'Amnesty International’s 2025 country review, published in its annual reporting cycle and accessed 26 September 2026. It reports the law’s coming into force, actions by a parliamentary commission and legal actions against five organizations, while criticizing restrictions on association. These are an international human-rights organization’s documented assessments, not court findings; no broader survey or uniform effect is claimed.',
+    accessDate: '2026-09-26', creators: ['Amnesty International'], institution: 'Amnesty International', publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'Spanish'],
+    sourceType: 'annual human-rights country report', identifiers: { reportingYear: '2025', country: 'Paraguay' },
+    description: 'Annual human-rights review of Paraguay covering the law on nonprofit organizations, freedom of association and assembly, political participation and other rights. Amnesty’s evaluations are attributed and distinguished from primary statutes, government rationale and judicial determinations.'
+  },
+  {
+    id: 'paraguaySobrevivenciaLawChallenge2026',
+    label: 'Sobrevivencia — Civil-society organizations file constitutional challenge to Law 7363 and Decree 4806 (21 July 2026)',
+    url: 'https://www.sobrevivencia.org.py/noticias/organizaciones-presentan-accion-de-inconstitucionalidad-contra-la-ley-garrote',
+    note: 'First-party report by one participating organization, Sobrevivencia, dated 21 July 2026, states that it and CODEHUPY and other civil-society organizations filed an action of unconstitutionality against parts of Law 7363/2024 and Decree 4806/2025. The filing and requested relief are attributed to the organization; the court docket, admissibility, interim relief and merits disposition were not independently located or verified.',
+    accessDate: '2026-09-26', creators: ['Sobrevivencia, Amigos de la Tierra Paraguay'], institution: 'Sobrevivencia, Amigos de la Tierra Paraguay', publicationDate: '2026-07-21', evidenceRole: 'secondary', confidence: 'medium', languages: ['Spanish'],
+    sourceType: 'first-party civil-society notice of constitutional litigation', identifiers: { actionDate: '2026-07-21', challengedLaw: '7363/2024', challengedDecree: '4806/2025' },
+    description: 'Participating organization’s account of a constitutional action challenging the nonprofit law and implementing decree. It documents the reported filing and requested suspension, not court acceptance, a suspension order or a final constitutional ruling.'
+  },
+  {
     id: 'boliviaConstitution2009Gaceta',
     label: 'Estado Plurinacional de Bolivia — Constitución Política del Estado (2009)',
     url: 'https://www.gacetaoficialdebolivia.gob.bo/app/webroot/archivos/constitucion.pdf',

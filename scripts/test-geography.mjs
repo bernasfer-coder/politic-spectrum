@@ -95,6 +95,15 @@ assert.equal(filterGeographyCases({ country: 'map-858' })[0].id, 'uruguayan-post
 assert.ok(filterGeographyCases({ country: 'map-858' }).some(({ id }) => id === 'uruguayan-lacalle-pou-coalition-and-orsi-electoral-transition'));
 assert.equal(filterGeographyCases({ country: 'map-068' })[0].id, 'bolivian-plurinational-constitutional-and-contested-democratic-order');
 assert.equal(filterGeographyCases({ country: 'map-600' })[0].id, 'paraguayan-postauthoritarian-party-dominant-and-fragile-democratic-order');
+const paraguay2026 = filterGeographyCases({ country: 'map-600' }).find(({ id }) => id === 'paraguayan-postauthoritarian-party-dominant-and-fragile-democratic-order');
+assert.equal(paraguay2026.endYear, 2026);
+assert.equal(paraguay2026.reviewedAt, '2026-09-26');
+assert.ok(paraguay2026.claim.includes('no 2026 results, election-day conditions or post-election judgments are asserted'));
+assert.ok(paraguay2026.claim.includes('I did not verify a court docket, admissibility ruling, interim order or merits judgment'));
+assert.ok(paraguay2026.limitation.includes('No event-specific book-length scholarly study of the 2024–2026 law/election sequence was located'));
+for (const sourceId of ['paraguayTsjeMunicipalCalendar2026', 'paraguayTsjeMunicipalPrepSep222026', 'paraguayTsjeTrepResolution1942026', 'paraguayTsjeObserverPlan2026', 'paraguayDecree4806Osfl2025', 'paraguayMefLaw7363Faq2026', 'paraguayDecidamosPoliticalRights2025', 'paraguayCodehupyCivicSpace2025', 'paraguayAmnestyHumanRights2025', 'paraguaySobrevivenciaLawChallenge2026']) {
+  assert.ok(paraguay2026.sourceIds.includes(sourceId), `Paraguay 2026 source missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'map-604' })[0].id, 'peruvian-fujimori-to-fragmented-democratic-order');
 assert.equal(filterGeographyCases({ country: 'map-218' })[0].id, 'ecuadorian-constitutional-dollarized-and-crisis-democratic-order');
 assert.ok(filterGeographyCases({ country: 'map-218' }).some(({ id }) => id === 'ecuadorian-noboa-security-referendum-and-reelection-order'));
