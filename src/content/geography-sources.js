@@ -5614,16 +5614,25 @@ const sources = [
     note: 'Government news-agency account of the impeachment court’s 13–1 vote, with six senator-judges not participating, on 23 September 2026. It reports the court’s new interpretation that the two-thirds denominator concerns members legally and factually capable of participating. This is a contested procedural ruling, not a conviction, acquittal or Supreme Court holding; no full transcript or Senate resolution was located for this review.',
     accessDate: '2026-09-25', creators: ['Philippine News Agency'], institution: 'Philippine News Agency / Presidential Communications Office', publicationDate: '2026-09-23', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
     sourceType: 'government news-agency report of an impeachment-court ruling', identifiers: { date: '2026-09-23', vote: '13–1; six did not participate' },
-    description: 'Reports the Senate impeachment court’s change from its earlier fixed 16-vote interpretation to a capacity-based denominator for the constitutional two-thirds threshold. Petitions challenging that ruling were reported filed on 24 September; at the 25 September cutoff no Supreme Court disposition was located.'
+    description: 'Reports the Senate impeachment court’s change from its earlier fixed 16-vote interpretation to a capacity-based denominator for the constitutional two-thirds threshold. This 23 September account is used for the ruling only; later petition filings and court status are sourced to dated reports published after it.'
   },
   {
     id: 'philippinesImpeachmentThresholdChallenge2026',
     label: 'Philippine News Agency — challenge to the impeachment-court threshold ruling, 25 September 2026',
     url: 'https://www.pna.gov.ph/articles/1284858',
-    note: 'Dated government news-agency account reporting that petitions were filed at the Supreme Court on 24 September and that the impeachment court would continue absent Supreme Court intervention. The announced petitions and statements are attributed; filing is not a court ruling. The state-affiliated outlet’s procedural reporting is cross-checked against the House prosecution’s separately attributed statement and kept distinct from independent observer judgment.',
+    note: 'Dated government news-agency account reporting that former executive secretary Vic Rodriguez filed a petition at the Supreme Court on 24 September and that the impeachment court would continue absent Supreme Court intervention. The reported filing and statements are attributed; filing is not a court ruling. This item reports one petition and should not be read as a complete docket search.',
     accessDate: '2026-09-25', creators: ['Philippine News Agency'], institution: 'Philippine News Agency / Presidential Communications Office', publicationDate: '2026-09-25', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
     sourceType: 'government news-agency report on pending constitutional litigation', identifiers: { reportDate: '2026-09-25', reportedPetitionDate: '2026-09-24' },
-    description: 'Reports the threshold challenge and the Senate president’s statement that proceedings would continue unless restrained. It records a contested and unresolved position as of its publication date, not the eventual validity of the threshold or trial outcome.'
+    description: 'Reports Vic Rodriguez’s petition and the Senate president’s statement that proceedings would continue unless restrained. It records one reported filing and a contested, unresolved position as of 25 September, not the eventual validity of the threshold or trial outcome.'
+  },
+  {
+    id: 'philstarThresholdPetitionsAndResumption2026',
+    label: 'Neil Jayson Servallos — Gatchalian: Without TRO, no stopping impeachment trial (The Philippine Star, 26 September 2026)',
+    url: 'https://www.philstar.com/headlines/2026/09/26/2558950/gatchalian-without-tro-no-stopping-impeachment-trial/amp/',
+    note: 'The Philippine Star report dated 26 September records Senate President Sherwin Gatchalian’s statement that the trial was scheduled to proceed the following Monday absent Supreme Court restraint, and reports Vic Rodriguez’s and Ernesto Francisco’s separate petitions and requested interim relief. These are attributed statements and reported filings, not a court disposition; the petition texts and Supreme Court docket were not retrieved. No article wording or image is reproduced.',
+    accessDate: '2026-09-26', creators: ['Neil Jayson Servallos'], institution: 'The Philippine Star / Philstar Global Corporation', publicationDate: '2026-09-26', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'newspaper report on pending constitutional litigation and scheduled trial proceedings', identifiers: { reportDate: '2026-09-26', petitioners: 'Vic Rodriguez; Ernesto Francisco', scheduledResumption: '2026-09-28' },
+    description: 'Reports two separately filed Supreme Court petitions challenging the Senate impeachment court’s denominator ruling and the Senate President’s stated intention to continue trial absent restraint. It documents an attributed procedural position and future schedule, not subsequent action or the merits of the constitutional question.'
   },
   {
     id: 'philippinesHeydarianDynasticDemocracy2025',

@@ -28,7 +28,9 @@ test('Philippines impeachment case separates the 2025 ruling from the pending 20
   await expect(card).toContainText('two successive impeachment proceedings');
   await expect(card).toContainText('denied with finality');
   await expect(card).toContainText('not findings on the accusations');
-  await expect(card).toContainText('no disposition was located by this review cutoff');
+  await expect(card).toContainText('No judicial disposition was located by this review cutoff');
+  await expect(card).toContainText('Ernesto Francisco filed a separate certiorari petition');
+  await expect(card).toContainText('planned to resume the trial on 28 September');
   await expect(card).toContainText('Event-specific book-length scholarship was not identified');
   await card.locator('.geo-evidence summary').click();
   await expect(card.getByRole('link', { name: 'Bibliography & rights record →' }).first()).toBeVisible();
