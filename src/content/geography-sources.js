@@ -555,6 +555,76 @@ const sources = [
     description: 'Political-economic history centered on Agadez and Tuareg societies, caravan trade, pastoralism, colonial and postcolonial economic structures, marginalization and the insertion of the region into the modern Nigerien state and economy. Its regional focus is a necessary limit as well as an evidentiary contribution.'
   },
   {
+    id: 'kimbaArmeePolitiqueNiger2008',
+    label: 'Idrissa Kimba (ed.) — Armée et politique au Niger (2008)',
+    url: 'https://doi.org/10.57054/codesria.pub.181',
+    note: 'CODESRIA Books and African Books Collective catalog records consulted 26 September 2026: Dakar, CODESRIA, 2008, ISBN 9782869782167, 288 pages. The multidisciplinary French-language volume includes historical and sociological chapters on military-state relations, coups, political officers, mutinies and women in uniform. Catalog records and the work’s scope are cited; no chapter wording, quotation, table or scan is republished, and the volume does not establish the causes of the 2026 mutiny.',
+    accessDate: '2026-09-26', creators: ['Idrissa Kimba'], institution: 'CODESRIA Books',
+    publicationDate: '2008-11-22', evidenceRole: 'secondary', confidence: 'high', languages: ['French'],
+    sourceType: 'book-length edited historical and sociological study of military–political relations', identifiers: { isbn: '9782869782167', pages: '288', doi: '10.57054/codesria.pub.181' },
+    description: 'Multidisciplinary long-run account of Nigerien military–political relations, including the formation of the national army, Kountché-era and later military regimes, military politicians, mutinies during democratization and women’s service. It adds a Niger-centered book-length lens for interpreting the recurrence of military intervention, not an explanation of post-2023 or 2026 events.'
+  },
+  {
+    id: 'nigerRefoundationPowersAbouKoini2026',
+    label: 'Abdoul Kader Abou Koini — « Réflexion critique sur l’organisation des pouvoirs publics dans la Charte nigérienne de la Refondation du 26 mars 2025 » (Afrilex, 2026)',
+    url: 'https://afrilex.u-bordeaux.fr/wp-content/uploads/2026/09/Afrilex_-Reflexion-critique-sur-lorganisation-des-pouvoirs-publics-dans-la-Charte-nigerienne-de-la-Refondation-du-26-mars-2026.pdf',
+    note: 'Afrilex journal PDF and author affiliation consulted 26 September 2026; 30-page French legal analysis by an assistant lecturer-researcher at Université Abdou Moumouni. It focuses on the Charter’s governing bodies and their relations, not citizens’ rights or empirical implementation. No article wording, quotation, table or page image is republished; its institutional critique is attributed to the author rather than treated as consensus.',
+    accessDate: '2026-09-26', creators: ['Abdoul Kader Abou Koini'], institution: 'Afrilex; Faculté des Sciences Juridiques et Politiques, Université Abdou Moumouni',
+    publicationDate: '2026-09', evidenceRole: 'secondary', confidence: 'high', languages: ['French', 'English'],
+    sourceType: 'scholarly constitutional-law article on transitional institutions', identifiers: { pages: '30', journal: 'Afrilex: Revue d’étude et de recherche sur le droit et l’administration dans les pays d’Afrique', issue: 'September 2026' },
+    description: 'Legal analysis of the March 2025 Refoundation Charter as a constitutionally ranked transitional text. The author argues that the institutional design strongly favors the executive and lacks a body performing parliamentary functions and a constitutional court; this is an attributed legal critique, not a measure of implementation or a representative Nigerien consensus.'
+  },
+  {
+    id: 'nigerRefoundationFirstYearANP2026',
+    label: 'Agence Nigérienne de Presse — « AN 1 de la Refondation au Niger : Mise en orbite des institutions adaptées et crédibles » (25 March 2026)',
+    url: 'https://anp.ne/an-1-de-la-refondation-au-niger-mise-en-orbite-des-institutions-adaptees-et-credibles/',
+    note: 'Nigerien Press Agency report, reproduced on the official government portal, consulted 26 September 2026. This is an official account of the authorities’ own institutional claims, not independent evaluation. The report itself says the CCR is advisory rather than legislative and describes an ad hoc human-rights body as still in preparation. No article wording or images are republished.',
+    accessDate: '2026-09-26', creators: ['Abdourahamane Salifou', 'Agence Nigérienne de Presse'], institution: 'Agence Nigérienne de Presse / Portail Officiel du Gouvernement du Niger',
+    publicationDate: '2026-03-25', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official state news-agency report on the first year of the Refoundation Charter', identifiers: { date: '2026-03-25', reportNumber: 'ANP 0164 March 2026' },
+    description: 'First-year official institutional inventory of the refoundation period. It reports the five-year, security-adjustable duration; the 194-member advisory CCR; executive and judicial bodies; the absence of legislative mandate for the CCR; and the contemplated human-rights body. These are the authorities’ reported design and implementation claims, not independent proof of inclusion, institutional checks, effectiveness, consent or rights protection.'
+  },
+  {
+    id: 'nigerRefoundationCouncilIPU2026',
+    label: 'Inter-Parliamentary Union — Governing Council, 216th session: Niger report (2026)',
+    url: 'https://www.ipu.org/file/23069/download',
+    note: 'Official Inter-Parliamentary Union Governing Council report consulted 26 September 2026. The IPU is an international parliamentary organization and external institutional monitor; its account distinguishes an appointed 194-member Advisory Council from a functioning elected parliament. No report wording or page image is republished.',
+    accessDate: '2026-09-26', creators: ['Inter-Parliamentary Union Governing Council'], institution: 'Inter-Parliamentary Union',
+    publicationDate: '2026', evidenceRole: 'secondary', confidence: 'high', languages: ['English', 'French'],
+    sourceType: 'institutional report on parliament and transitional institutions', identifiers: { session: '216th Governing Council' },
+    description: 'External parliamentary-institution report noting that Niger’s affiliation had been suspended in the absence of a functioning parliament and that the 194-member Advisory Council of the Refoundation was subsequently set up. It helps distinguish a consultative transition body from an elected legislature; the IPU’s institutional assessment is not a complete domestic political history.'
+  },
+  {
+    id: 'nigerRefoundationStrategy2026ANP',
+    label: 'Agence Nigérienne de Presse — lancement du processus d’élaboration de la Stratégie Nationale de la Refondation 2026–2030 (10 September 2026)',
+    url: 'https://anp.ne/niger-lancement-officiel-du-processus-delaboration-de-la-strategie-nationale-de-la-refondation-2026-2030/',
+    note: 'Nigerien Press Agency report consulted 26 September 2026. It reports the official launch of a strategy-drafting process and ministry-reported consultation totals; it does not establish that the strategy was finalized, adopted, implemented or representative. No article wording is republished.',
+    accessDate: '2026-09-26', creators: ['Salissou Soumana Karimou', 'Agence Nigérienne de Presse'], institution: 'Agence Nigérienne de Presse',
+    publicationDate: '2026-09-10', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official state news-agency report on a proposed national strategy', identifiers: { date: '2026-09-10', strategyHorizon: '2026–2030', reportNumber: 'ANP-113 September 2026' },
+    description: 'Report of the government’s launch of a process to draft a National Refoundation, Social Values and National Cohesion Strategy for 2026–2030. It relays government-reported early consultation numbers and invitations to stakeholders; it documents an announced drafting process, not an adopted policy, its representativeness or outcomes.'
+  },
+  {
+    id: 'nigerMutinyAP2026',
+    label: 'Associated Press — « Dozens of soldiers killed or arrested after an apparent mutiny in Niger’s capital, state TV reports » (29 August 2026)',
+    url: 'https://apnews.com/article/niger-niamey-gunfire-explosions-airport-presidential-district-77d0c701e5729f2779580ea557e0a2c3',
+    note: 'Associated Press field report consulted 26 September 2026. It independently reports gunfire and clashes in Niamey, relays official and state-broadcast accounts, and attributes contextual analysis to named security analysts and diplomats. Casualty and arrest counts and participants’ motives were not independently settled in the report; no article wording or images are republished.',
+    accessDate: '2026-09-26', creators: ['Associated Press'], institution: 'Associated Press',
+    publicationDate: '2026-08-29', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'independent news report on reported military mutiny and security response', identifiers: { date: '2026-08-29', location: 'Niamey' },
+    description: 'Contemporaneous reporting on the 28–29 August 2026 violence at Base 101 and other sensitive sites in Niamey, the competing official descriptions, and the response by loyalist forces. It records a reported mutiny and acute intra-security conflict; it does not establish a settled account of command, motive, casualties or broader public support.'
+  },
+  {
+    id: 'nigerMutinyGovernmentANP2026',
+    label: 'Conseil des Ministres du Niger, communiqué reported by Agence Nigérienne de Presse — events at Base 101, 28–29 August 2026 (4 September 2026)',
+    url: 'https://anp.ne/tentative-de-destabilisation-du-niger-une-documentation-consequente-constituee-et-le-pays-se-reserve-le-droit-dintenter-des-actions-devant-la-justice-internationale/',
+    note: 'Official Nigerien Press Agency account of a Council of Ministers communiqué, consulted 26 September 2026. It attributes allegations of foreign orchestration to the Nigerien government; those allegations are presented as the government’s position, not established fact. No communiqué wording is reproduced.',
+    accessDate: '2026-09-26', creators: ['Conseil des Ministres de la République du Niger', 'Agence Nigérienne de Presse'], institution: 'Agence Nigérienne de Presse / Conseil des Ministres de la République du Niger',
+    publicationDate: '2026-09-04', evidenceRole: 'primary', confidence: 'high', languages: ['French'],
+    sourceType: 'official Council of Ministers communiqué as reported by the state news agency', identifiers: { meetingDate: '2026-09-04', reportedIncident: 'night of 2026-08-28 to 2026-08-29' },
+    description: 'Primary witness to the government’s post-incident framing: it described events as a destabilization attempt involving elements of a special intelligence battalion at Base 101, alleged international and French-regime orchestration, and praised loyalist forces and AES, Algeria and Russia. These are official allegations and political framing, not independently substantiated findings.'
+  },
+  {
     id: 'maliConstitution1992Assemblee',
     label: 'Assemblée nationale du Mali — Constitution du Mali (1992)',
     url: 'https://assemblee-nationale.ml/constitution-du-mali',
@@ -11795,7 +11865,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('afghanistan') || source.id.startsWith('unAfghanistan') || source.id.startsWith('barfieldAfghanistan') || source.id.startsWith('rubinFragmentationAfghanistan') || source.id.startsWith('suhrkeWhenMoreLess') || source.id.startsWith('maleyAfghanistanWars') || source.id.startsWith('giustozziTalibanWar') || source.id.startsWith('abbasReturnTaliban') || source.id.startsWith('saikalHowLoseWar') || source.id.startsWith('jacksonNegotiatingSurvival') ? 'Afghan constitutional, conflict and de facto-governance history'
       : source.id.startsWith('france') || source.id.startsWith('atkinFifthFrench') || source.id.startsWith('elgiePoliticalInstitutionsFrance') || source.id.startsWith('knappWrightGovernmentFrance') || source.id.startsWith('duhamelFoucaultFullaLazarRepublic') ? 'French constitutional, Fifth Republic and political history'
       : source.id.startsWith('burkina') || source.id.startsWith('harschBurkina') || source.id.startsWith('englebertBurkina') || source.id.startsWith('kaborePoliticalHistoryBurkina') || source.id.startsWith('englebertCotRevolutionBurkina') || source.id.startsWith('sankaraSpeeches') ? 'Burkinabè constitutional, revolutionary and political-transition history'
-      : source.id.startsWith('niger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
+      : source.id.startsWith('niger') || source.id.startsWith('kimbaArmeePolitiqueNiger') || source.id.startsWith('milesHausalandDividedNiger') || source.id.startsWith('idrissaDecaloHistoricalDictionaryNiger') || source.id.startsWith('charlickPersonalRuleNiger') || source.id.startsWith('salifouQuestionTouaregNiger') || source.id.startsWith('koreTouaregRebellionNiger') || source.id.startsWith('gregoireTouaregsNiger') ? 'Nigerien constitutional, Hausa, Tuareg, democratization and political history'
       : source.id.startsWith('mali') || source.id.startsWith('cisseTransitionHardeningMali') || source.id.startsWith('toureMultifacetedCrisisMali') || source.id.startsWith('mannEmpiresNgosSahel') || source.id.startsWith('lecocqDisputedDesertMali') || source.id.startsWith('wingConstructingDemocracyMali') || source.id.startsWith('schulzPoliticalLegitimacyMali') || source.id.startsWith('wingGovernanceInterventionMali') || source.id.startsWith('fombaConstitutionMali') || source.id.startsWith('konarePoliticalPartiesMali') ? 'Malian constitutional, Tuareg, democratization and political history'
       : source.id.startsWith('zimbabwe') || source.id.startsWith('mlamboHistoryZimbabwe') || source.id.startsWith('raftopoulosMlamboBecomingZimbabwe') || source.id.startsWith('alexanderUnsettledLandZimbabwe') || source.id.startsWith('krigerZimbabweGuerrillaWar') ? 'Zimbabwean decolonization, liberation, land and constitutional history'
       : source.id.startsWith('tanzania') || source.id.startsWith('nyerereUjamaa') || source.id.startsWith('iliffeModernHistoryTanganyika') || source.id.startsWith('prattCriticalPhaseTanzania') || source.id.startsWith('coulsonPoliticalEconomyTanzania') || source.id.startsWith('trippChangingRulesTanzania') || source.id.startsWith('kilamboMitiTanzaniaMagufuli') ? 'Tanzanian decolonization, Ujamaa, Union and constitutional history'
