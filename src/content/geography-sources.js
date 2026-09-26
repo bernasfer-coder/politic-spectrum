@@ -9404,6 +9404,33 @@ const sources = [
     description: 'Reports the CEC chair’s announcement of final State Duma seat totals on 25 September 2026, including United Russia’s 349 seats and the breakdown by party-list and single-member districts.'
   },
   {
+    id: 'russiaPresidentialDecreeFirstDumaSession2026',
+    label: 'President of the Russian Federation — Decree No. 680 “On the First Session of the State Duma of the Federal Assembly of the Russian Federation of the Ninth Convocation” (25 September 2026)',
+    url: 'https://publication.pravo.gov.ru/document/0001202609250003',
+    note: 'The official publication identifier and decree title are recorded as cited by Garant; the official portal document page timed out during this review, so the decree text itself was not directly consulted. The scheduled 30 September, 10:00 first sitting is cross-checked against Interfax reporting that quotes the decree. This establishes a published legal record and a reported future schedule, not that the sitting occurred or that the chamber elected its officers. No decree text is reproduced.',
+    accessDate: '2026-09-26', creators: ['President of the Russian Federation'], institution: 'Official Portal of Legal Information of the Russian Federation', publicationDate: '2026-09-25', evidenceRole: 'primary', confidence: 'medium', languages: ['Russian'],
+    sourceType: 'officially published presidential decree (publication record identified; document text not retrieved)', identifiers: { decree: 'No. 680', publicationId: '0001202609250003', firstSession: '2026-09-30 10:00' },
+    description: 'Official publication record for the decree scheduling the first session of the ninth State Duma; the record page was unavailable for direct consultation in this review.'
+  },
+  {
+    id: 'russiaInterfaxFirstDumaSession2026',
+    label: 'Interfax — “The new Duma will convene for its first session on 30 September” (25 September 2026)',
+    url: 'https://www.interfax.ru/amp/1118472',
+    note: 'Russian-language contemporaneous report quoting Presidential Decree No. 680 and identifying its publication on the Kremlin site. Used to cross-check the published official-record identifier and scheduled date/time because the official legal-portal page timed out in this review. It does not establish that the future sitting occurred. No article wording is reproduced.',
+    accessDate: '2026-09-26', creators: ['Interfax'], institution: 'Interfax', publicationDate: '2026-09-25', evidenceRole: 'secondary', confidence: 'high', languages: ['Russian'],
+    sourceType: 'Russian-language contemporaneous report quoting a presidential decree', identifiers: { publicationDate: '2026-09-25', decree: 'No. 680', firstSession: '2026-09-30 10:00' },
+    description: 'Reports the presidential decree’s scheduled time for the ninth State Duma’s first sitting and that the decree takes effect upon official publication.'
+  },
+  {
+    id: 'russiaGarantDumaDecree2026',
+    label: 'Garant — “The CEC of Russia summarizes citizens’ voting in the elections to the State Duma of the ninth convocation” (25 September 2026)',
+    url: 'https://www.garant.ru/news/2251912/',
+    note: 'Directly consulted Russian-language legal-news recap. It identifies Presidential Decree No. 680, gives the Official Portal of Legal Information publication identifier 0001202609250003, and states the scheduled first sitting date/time. The portal’s document page itself timed out in this review, so Garant is cited only as the source for tracing the official record, not as a substitute for direct legal-text analysis. The event remained future at the cutoff. No article wording is reproduced.',
+    accessDate: '2026-09-26', creators: ['Mikhail Kukanov'], institution: 'Garant', publicationDate: '2026-09-25', evidenceRole: 'secondary', confidence: 'medium', languages: ['Russian'],
+    sourceType: 'Russian-language legal-news report and official-record locator', identifiers: { decree: 'No. 680', publicationId: '0001202609250003', firstSession: '2026-09-30 10:00' },
+    description: 'Identifies and links the official publication record for the decree scheduling the first ninth-convocation Duma sitting.'
+  },
+  {
     id: 'russiaOdihrNoInvitationDuma2026',
     label: 'OSCE/ODIHR — Russian Federation did not invite observers to 2026 State Duma elections (6 August 2026)',
     url: 'https://odihr.osce.org/odihr/667020',

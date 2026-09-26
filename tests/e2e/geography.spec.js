@@ -619,19 +619,23 @@ test('atlas cards and timeline are accessible and fit the viewport', async ({ pa
   expect(timelineResults.violations.filter(({ impact }) => ['critical', 'serious'].includes(impact))).toEqual([]);
 });
 
-test('Russia 2026 Duma case keeps preliminary returns, OSCE non-invitation and occupied-territory context distinct', async ({ page }) => {
+test('Russia 2026 Duma case separates final totals, future sitting, OSCE non-invitation and territorial dispute', async ({ page }) => {
   await page.goto('/#geography?case=russian-2026-state-duma-election-and-observation-dispute');
   const card = page.locator('.geo-card');
   await expect(card).toHaveCount(1);
-  await expect(card).toContainText('18–25 September 2026');
+  await expect(card).toContainText('18–26 September 2026');
   await expect(card).toContainText('349 seats');
   await expect(card).toContainText('preliminary projection of 355');
+  await expect(card).toContainText('30 September at 10:00');
+  await expect(card).toContainText('The sitting remained in the future');
+  await expect(card).toContainText('portal page timed out');
   await expect(card).toContainText('no invitation');
   await expect(card).toContainText('Resolution ES-11/4');
   await expect(card).toContainText('no meaningful six-axis profile');
   await card.locator('.geo-evidence summary').click();
   await expect(card.getByRole('link', { name: /OSCE\/ODIHR/ })).toBeVisible();
   await expect(card.getByRole('link', { name: /final State Duma results/ })).toBeVisible();
+  await expect(card.getByRole('link', { name: /first session/ }).first()).toBeVisible();
   await expect(card.getByRole('link', { name: /General Assembly/ })).toBeVisible();
 });
 
