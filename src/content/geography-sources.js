@@ -11348,6 +11348,99 @@ sources.push(
   { id: 'mauritiusRamgoolamSwearingIn2024', label: 'Government Information Service — Dr Navinchandra Ramgoolam sworn in as Prime Minister (13 November 2024)', url: 'https://primeminister.govmu.org/pm/?p=1', note: 'Official Government Information Service account states that Ramgoolam was sworn in at State House on 13 November 2024. It documents the formal appointment ceremony, not programme implementation or voter motivation.', accessDate: '2026-09-25', creators: ['Government Information Service, Mauritius'], institution: 'Prime Minister’s Office, Republic of Mauritius', publicationDate: '2024-11-13', evidenceRole: 'primary', confidence: 'high', languages: ['English'], sourceType: 'official government appointment announcement', identifiers: { oathDate: '2024-11-13', office: 'Prime Minister' }, description: 'Official account of the post-election prime-ministerial oath and appointment ceremony.' }
 );
 
+sources.push(
+  {
+    id: 'newZealandGeneralElectionDate2026',
+    label: 'New Zealand Prime Minister — 2026 general election date announcement (21 January 2026)',
+    url: 'https://www.beehive.govt.nz/release/general-election-be-held-7-november',
+    note: 'Official Beehive release records the Prime Minister’s announcement that the general election is scheduled for 7 November 2026 and states an intended parliamentary timetable. Statements about government performance in the release are political self-description, not independent economic or policy findings; announced dates are distinguished from later operational records.',
+    accessDate: '2026-09-26', creators: ['Christopher Luxon'], institution: 'Office of the Prime Minister, New Zealand', publicationDate: '2026-01-21', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official executive election-date announcement', identifiers: { electionDate: '2026-11-07', announced: '2026-01-21' },
+    description: 'The Prime Minister’s dated announcement of the 2026 general-election date, used for the fact of the announced schedule rather than executive claims about government performance.'
+  },
+  {
+    id: 'newZealandElectoralCommissionDates2026',
+    label: 'New Zealand Electoral Commission — key information and dates for the 2026 General Election',
+    url: 'https://elections.nz/guidance-and-rules/candidate-hub/key-information-and-dates',
+    note: 'The Electoral Commission’s current official timetable was consulted on 26 September 2026. It records candidate nominations opening on 7 September, parliamentary dissolution scheduled for 1 October, writ day on 4 October, nominations closing on 8 October, the 25 October enrolment deadline, advance voting from 26 October, polling on 7 November and official results due 27 November. These are published legal/administrative dates and future plans, not evidence that later stages occurred or were implemented as scheduled.',
+    accessDate: '2026-09-26', creators: ['New Zealand Electoral Commission'], institution: 'Electoral Commission Te Kaitiaki Take Kōwhiri', publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election-administration timetable', identifiers: { electionDate: '2026-11-07', candidateNominationsOpen: '2026-09-07', dissolutionScheduled: '2026-10-01', enrolmentDeadline: '2026-10-25', advanceVoting: '2026-10-26', officialResultsScheduled: '2026-11-27' },
+    description: 'Official, dynamically maintained 2026 election timetable. Future dates remain scheduled rather than completed events.'
+  },
+  {
+    id: 'newZealandParliamentLastSitting2026',
+    label: 'New Zealand House of Representatives — daily progress for 23 September 2026',
+    url: 'https://www3.parliament.nz/en/pb/daily-progress-in-the-house/daily-progress-for-wednesday-23-september-2026/',
+    note: 'The official House daily-progress record states that the House adjourned at 5.55 pm on 23 September and records proceedings on that sitting day. It is direct evidence of that sitting and adjournment, not of dissolution, a final legislative outcome not listed on the page, or a measure of public opinion.',
+    accessDate: '2026-09-26', creators: ['New Zealand House of Representatives'], institution: 'New Zealand Parliament', publicationDate: '2026-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official parliamentary daily proceeding record', identifiers: { sittingDate: '2026-09-23', adjournment: '17:55 NZST' },
+    description: 'Daily parliamentary record of the House’s actual last sitting before the scheduled election dissolution.'
+  },
+  {
+    id: 'newZealandParliamentElectionTimeline2026',
+    label: 'New Zealand Parliament — 2026 election-year timeline',
+    url: 'https://www3.parliament.nz/en/visit-and-learn/parliament-in-election-year/election-2026-timeline/',
+    note: 'Parliament’s election-year explainer lists 24 September as the expected final adjournment and 1 October as the scheduled dissolution, alongside subsequent statutory-election milestones. The word “expected” is retained: the separate official daily-progress record establishes the House’s actual 23 September adjournment. This timeline is a forward-looking institutional guide, not a record that later events occurred.',
+    accessDate: '2026-09-26', creators: ['New Zealand Parliament'], institution: 'New Zealand Parliament', publicationDate: '2026', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election-year timetable and parliamentary explainer', identifiers: { expectedFinalAdjournment: '2026-09-24', dissolutionScheduled: '2026-10-01' },
+    description: 'Parliament’s planned election calendar, kept distinct from actual sitting records and future procedural events.'
+  },
+  {
+    id: 'newZealandElectoralCommissionRegulatedPeriod2026',
+    label: 'New Zealand Electoral Commission — start of the 2026 regulated election-advertising period (7 August 2026)',
+    url: 'https://elections.nz/media-and-news/2026/start-of-the-regulated-period',
+    note: 'The Commission’s dated notice states that the three-month regulated advertising period began on 7 August and ends at midnight on 6 November; it gives statutory spending caps and states that the Māori Electoral Option for enrolled Māori voters closed to switching for the period. The notice establishes the Commission’s published rules and schedule, not campaign expenditure, compliance, access or voter behavior.',
+    accessDate: '2026-09-26', creators: ['New Zealand Electoral Commission'], institution: 'Electoral Commission Te Kaitiaki Take Kōwhiri', publicationDate: '2026-08-07', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official election-regulation notice', identifiers: { regulatedPeriod: '2026-08-07 to 2026-11-06', candidateCapNzd: '36000', partyCapBaseNzd: '1503000' },
+    description: 'Electoral Commission notice on the regulated campaign-spending interval and Māori Electoral Option deadline.'
+  },
+  {
+    id: 'newZealandElectoralCommissionGettingReady2026',
+    label: 'New Zealand Electoral Commission — Getting ready for the 2026 General Election (2 March 2026)',
+    url: 'https://elections.nz/assets/2026-General-Election/Getting-Ready-for-the-2026-General-Election.pdf',
+    note: 'The Commission’s two-page voter guide was directly consulted. It says enrolment closes on 25 October, voters must be enrolled before advance voting begins on 26 October, and voters cannot enrol at a voting place; it contrasts this with same-time enrolment and voting in the previous two elections. It also explains the Māori Electoral Option timing. This is the administrator’s explanation of rules after the Electoral Amendment Act 2025, not evidence of the law’s effects, registration completeness or turnout.',
+    accessDate: '2026-09-26', creators: ['New Zealand Electoral Commission'], institution: 'Electoral Commission Te Kaitiaki Take Kōwhiri', publicationDate: '2026-03-02', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official voter-information guide / PDF', identifiers: { enrolmentDeadline: '2026-10-25', advanceVotingStarts: '2026-10-26', changedRule: 'enrol before voting; no enrolment at voting place' },
+    description: 'Commission explanation of 2026 enrolment requirements and the Māori Electoral Option timetable, including the administrative change from the previous two elections.'
+  },
+  {
+    id: 'newZealandElectoralAmendmentAct2025',
+    label: 'New Zealand — Electoral Amendment Act 2025 (2025 No 82)',
+    url: 'https://www.legislation.govt.nz/act/public/2025/0082/latest/whole.html',
+    note: 'Official statutory publication record and contents were identified, but the legislation.govt.nz text returned HTTP 403 in this review and was not directly consulted. The Commission’s directly consulted 2 March 2026 voter guide is cited for its explanation of the rules affecting 2026 enrolment. This statute record is a research trail, not the sole support for any claim.',
+    accessDate: '2026-09-26', creators: ['New Zealand Parliament'], institution: 'New Zealand Legislation / Parliamentary Counsel Office', publicationDate: '2025-12-19', evidenceRole: 'primary', confidence: 'medium', languages: ['English'],
+    sourceType: 'primary electoral amendment statute / official record not retrievable in this review', identifiers: { actNumber: '2025 No 82', assent: '2025-12-19' },
+    description: 'Official record of the 2025 electoral amendments; included with an explicit direct-access limitation and reliance on the Electoral Commission’s 2026 administration guide for practical explanation.'
+  },
+  {
+    id: 'haywardGreavesTimperleyGovernmentPoliticsAotearoa2021',
+    label: 'Janine Hayward, Lara Greaves and Claire Timperley (eds.) — Government and Politics in Aotearoa New Zealand, 7th ed. (2021)',
+    url: 'https://ourarchive.otago.ac.nz/esploro/outputs/editedBook/Politics-and-government-of-Aotearoa-New/9926853446301891',
+    note: 'University of Otago repository metadata/abstract records Oxford University Press, ISBN 9780190325497, 7th edition and a scope through the COVID-19 response and 2020 election; the full book was not read for this snapshot. Used as a distinct book-length institutional-context lead only, not evidence of the 2026 campaign or current party positions.',
+    accessDate: '2026-09-26', creators: ['Janine Hayward', 'Lara Greaves', 'Claire Timperley'], institution: 'Oxford University Press', publicationDate: '2021-07-29', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly edited textbook / publisher and university-repository metadata only', identifiers: { edition: '7th', isbn: '9780190325497', pages: '500', coverage: 'political history, institutions, parties, elections and government through 2020' },
+    description: 'Edited academic introduction to Aotearoa New Zealand politics, consulted through university-repository and bibliographic metadata only and not used as evidence about the 2026 election.'
+  },
+  {
+    id: 'vowlesAimerKarpBanducciMillerSullivanMmpElection1999Book2002',
+    label: 'Jack Vowles et al. — Proportional Representation on Trial: The 1999 New Zealand General Election and the Fate of MMP (2002)',
+    url: 'https://aucklanduniversitypress.co.nz/proportional-representation-on-trial-the-1999-new-zealand-general-election-and-the-fate-of-mmp/',
+    note: 'Auckland University Press publisher record and synopsis were consulted; it identifies a 272-page, six-author book-length election study (ISBN 9781869402655) of the 1999 election, MMP, public attitudes and referendums. The full book was not read. This is a distinct historical election-study context, not evidence about the 2026 campaign, electorate or result.',
+    accessDate: '2026-09-26', creators: ['Jack Vowles', 'Peter Aimer', 'Jeffrey Karp', 'Susan Banducci', 'Raymond Miller', 'Ann Sullivan'], institution: 'Auckland University Press', publicationDate: '2002-12', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly election study / publisher metadata and synopsis only', identifiers: { isbn: '9781869402655', pages: '272', electionStudied: '1999', system: 'mixed-member proportional representation' },
+    description: 'A multi-author political-science study of an earlier MMP election and electoral-system development; publisher synopsis only, not event-specific evidence.'
+  },
+  {
+    id: 'millerDemocracyNewZealand2015',
+    label: 'Raymond Miller — Democracy in New Zealand (2015)',
+    url: 'https://aucklanduniversitypress.co.nz/democracy-in-new-zealand-/',
+    note: 'Auckland University Press metadata and description were consulted; the record identifies a 240-page 2015 monograph discussing constitutional institutions, Cabinet, Parliament, parties, leadership and elections with material including the 2014 election. The full book was not read; it is earlier political-system context, not evidence about 2026.',
+    accessDate: '2026-09-26', creators: ['Raymond Miller'], institution: 'Auckland University Press', publicationDate: '2015-05', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length scholarly political-science monograph / publisher metadata and description only', identifiers: { isbn: '9781869408350', pages: '240', coverage: 'institutions, parties and elections through 2014' },
+    description: 'A single-author book-length study of New Zealand democratic institutions and elections, recorded as contextual metadata only.'
+  }
+);
+
 export const GEOGRAPHY_RESEARCH_SOURCES = sources.map(({ id, label, url, note }) => ({ id, label, url, note }));
 
 export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source) => [source.id, {

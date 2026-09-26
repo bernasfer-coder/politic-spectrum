@@ -104,10 +104,21 @@ describe('geographic atlas', () => {
     expect(cards()[0]).toHaveTextContent('No score or permanent label for Sweden');
   });
 
+  it('shows New Zealand’s pre-election snapshot without treating scheduled dates as completed', () => {
+    window.history.replaceState(null, '', '/#geography?case=new-zealand-2026-general-election-pre-election-snapshot');
+    renderAtlas();
+    expect(cards()).toHaveLength(1);
+    expect(cards()[0]).toHaveTextContent('21 January–26 September 2026');
+    expect(cards()[0]).toHaveTextContent('nominations opened 7 September and remain open until 8 October');
+    expect(cards()[0]).toHaveTextContent('actually adjourned at 5.55 pm on 23 September');
+    expect(cards()[0]).toHaveTextContent('dissolution had not yet occurred');
+    expect(cards()[0]).toHaveTextContent('Event-specific book-length scholarship was not identified');
+  });
+
   it('filters by country, connection and period with a resettable empty state', async () => {
     const user = userEvent.setup();
     renderAtlas();
-    expect(cards()).toHaveLength(214);
+    expect(cards()).toHaveLength(215);
     await user.selectOptions(screen.getByRole('combobox', { name: /Country/ }), 'iran');
     expect(cards()).toHaveLength(2);
     expect(cards()[0]).toHaveTextContent('1979–2024');
@@ -255,7 +266,7 @@ describe('geographic atlas', () => {
     await user.selectOptions(screen.getByRole('combobox', { name: /Place \/ historical/ }), 'jerusalem');
     expect(cards()).toHaveLength(1);
     await user.click(screen.getByRole('button', { name: /Oceania/ }));
-    expect(cards()).toHaveLength(13);
+    expect(cards()).toHaveLength(14);
     expect(cards()[0]).toHaveTextContent('New Zealand Treaty, bicultural, constitutional and welfare-democratic order');
     expect(screen.getByRole('button', { name: /Oceania/ })).toHaveAttribute('aria-pressed', 'true');
     await user.click(within(screen.getByRole('group', { name: 'Browse continents' })).getByRole('button', { name: /Antarctica/ }));

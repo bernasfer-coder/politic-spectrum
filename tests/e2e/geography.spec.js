@@ -5,7 +5,7 @@ test('geographic filters, timeline, refresh and history preserve the selected vi
   await page.goto('/');
   await page.getByRole('tab', { name: /Geographic Atlas/ }).click();
   await expect(page.getByRole('heading', { name: /Ideas have histories/ })).toBeVisible();
-  await expect(page.locator('.geo-card')).toHaveCount(214);
+  await expect(page.locator('.geo-card')).toHaveCount(215);
   await page.getByRole('combobox', { name: /Country/ }).selectOption('syria');
   await expect(page.locator('.geo-card')).toHaveCount(5);
   await page.getByRole('button', { name: 'Timeline', exact: true }).click();
@@ -32,6 +32,21 @@ test('Philippines impeachment case separates the 2025 ruling from the pending 20
   await expect(card).toContainText('Event-specific book-length scholarship was not identified');
   await card.locator('.geo-evidence summary').click();
   await expect(card.getByRole('link', { name: 'Bibliography & rights record →' }).first()).toBeVisible();
+});
+
+test('New Zealand 2026 election snapshot distinguishes adjournment from scheduled dissolution and voting', async ({ page }) => {
+  await page.goto('/#geography?case=new-zealand-2026-general-election-pre-election-snapshot');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('21 January–26 September 2026');
+  await expect(card).toContainText('nominations opened 7 September and remain open until 8 October');
+  await expect(card).toContainText('actually adjourned at 5.55 pm on 23 September');
+  await expect(card).toContainText('dissolution had not yet occurred');
+  await expect(card).toContainText('cannot enrol at a voting place');
+  await expect(card).toContainText('Event-specific book-length scholarship was not identified');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="newZealandElectoralCommissionGettingReady2026"]')).toBeVisible();
+  await expect(card.locator('a[href*="haywardGreavesTimperleyGovernmentPoliticsAotearoa2021"]')).toBeVisible();
 });
 
 test('Mauritius election case distinguishes returns, platform restriction and preliminary observation', async ({ page }) => {
@@ -579,7 +594,7 @@ test('regional gaps, labels and malformed URLs are safe and honest', async ({ pa
 
 test('atlas cards and timeline are accessible and fit the viewport', async ({ page }, testInfo) => {
   await page.goto('/#geography');
-  await expect(page.locator('.geo-card')).toHaveCount(214);
+  await expect(page.locator('.geo-card')).toHaveCount(215);
   await page.getByRole('combobox', { name: 'Political label' }).selectOption('nasserism');
   await page.locator('.geo-card .geo-evidence summary').first().click();
   const cardsResults = await new AxeBuilder({ page }).analyze();
