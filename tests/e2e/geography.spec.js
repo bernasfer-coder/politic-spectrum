@@ -160,6 +160,19 @@ test('Guyana case distinguishes 2025 declared results, observer assessments and 
   await expect(card).toContainText('not a current-country score');
 });
 
+test('Nigeria 2026 case distinguishes scheduled 2027 polls from separate electoral-law proceedings', async ({ page }) => {
+  await page.goto('/#geography?case=nigerian-renewed-hope-reform-and-endbadgovernance-contestation');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('Electoral Act No. 1 of 2026');
+  await expect(card).toContainText('16 January 2027');
+  await expect(card).toContainText('set aside the May 20 Youth Party judgment on standing');
+  await expect(card).toContainText('reserved judgment after hearing INEC’s appeal');
+  await expect(card).toContainText('not a representative survey');
+  await expect(card).toContainText('no event-specific book-length study of the 2026 disputes');
+});
+
 test('Tunisia case distinguishes 2024 official results, preliminary observation and reported electoral disputes', async ({ page }) => {
   await page.goto('/#geography?case=tunisian-revolutionary-constitutional-transition');
   const card = page.locator('.geo-card');

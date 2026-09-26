@@ -2700,6 +2700,78 @@ const sources = [
     description: 'Primary oversight record urging respect for freedom of association and peaceful assembly, human-rights standards and public safety in the planned protests. It establishes an institutional rights framework and monitoring posture, not a complete account of later policing, casualties, participation or implementation.',
   },
   {
+    id: 'nigeriaElectoralAct2026Official',
+    label: 'Federal Republic of Nigeria — Electoral Act No. 1 of 2026 (assented 18 February; Official Gazette 2 March)',
+    url: 'https://nass.gov.ng/documents/download/11248',
+    note: 'National Assembly-hosted Official Gazette text consulted as the primary legal witness. The Act repeals the Electoral Act No. 13 of 2022; no provisions, translation, scan or table are reproduced. The enacted text establishes law, not implementation or a settled judicial interpretation of every provision.',
+    accessDate: '2026-09-26', creators: ['Federal Republic of Nigeria', 'National Assembly of Nigeria'], institution: 'Federal Republic of Nigeria / National Assembly', publicationDate: '2026-03-02', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'primary federal statute / Official Gazette', identifiers: { act: 'No. 1 of 2026', assentDate: '2026-02-18', gazette: 'No. 40, Vol. 113', gazetteDate: '2026-03-02', repealedAct: 'Electoral Act No. 13 of 2022' },
+    description: 'Official Gazette text of the Electoral Act 2026, signed 18 February and published 2 March. It is the primary legal basis for the current federal, state and FCT electoral-administration framework, subject to later amendment and judicial review.'
+  },
+  {
+    id: 'nigeriaInec2027CalendarSeptember2026',
+    label: 'Independent National Electoral Commission — current election calendar, accessed 26 September 2026',
+    url: 'https://inecnigeria.org/elections/calendar',
+    note: 'Current INEC calendar consulted as the official schedule/status page. Its short displayed titles list a nationwide “Presidential / House Of Assembly” election on 16 January 2027 and participating-state “Governorship / State House Of Assembly” elections on 6 February as upcoming; the labels are retained only to preserve their scope ambiguity. These are scheduled dates, not election outcomes; the live page may change and its update history is not exposed here.',
+    accessDate: '2026-09-26', creators: ['Independent National Electoral Commission of Nigeria'], institution: 'Independent National Electoral Commission', publicationDate: null, evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official live election calendar / primary institutional schedule', identifiers: { accessed: '2026-09-26', presidentialAndNationalAssembly: '2027-01-16', governorshipAndStateAssembly: '2027-02-06', statusAtAccess: 'upcoming' },
+    description: 'INEC’s public calendar gives the two scheduled 2027 election dates in its displayed terminology and marks them upcoming on the access date. The record does not establish final candidates, compliance, conduct, results, or whether the schedule will later change.'
+  },
+  {
+    id: 'nigeriaInec2027TimetableAppealsJune2026',
+    label: 'Independent National Electoral Commission — chairman’s account of appeals over the 2027 timetable (9 June 2026)',
+    url: 'https://inecnigeria.org/news-letters/why-we-appealed-court-judgments-on-2027-election-timetable-inec-chairman/',
+    note: 'INEC chairman’s published remarks consulted as the Commission’s own account of two Federal High Court suits and its appeals. This is a litigant institution’s description, not a substitute for certified judgments or the appellate decisions; its June status is not projected forward without a later source.',
+    accessDate: '2026-09-26', creators: ['Joash Amupitan', 'Independent National Electoral Commission of Nigeria'], institution: 'Independent National Electoral Commission', publicationDate: '2026-06-09', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'official electoral-commission statement by a party to litigation', identifiers: { suits: ['FHC/ABJ/CS/517/2026', 'FHC/ABJ/CS/720/2026'], statementDate: '2026-06-09' },
+    description: 'INEC identifies the Youth Party and Social Democratic Party proceedings, summarizes the May 2026 Federal High Court rulings, and says it appealed both. Its account documents the Commission’s position and June procedural status; it is not a neutral adjudication.'
+  },
+  {
+    id: 'nigeriaYouthPartyAppealJuly2026',
+    label: 'Premium Times — Court of Appeal sets aside Youth Party timetable judgment (16 July 2026)',
+    url: 'https://www.premiumtimesng.com/news/top-news/895937-appeal-court-sets-aside-judgement-nullifying-inecs-2027-election-guidelines.html',
+    note: 'Premium Times report of the Court of Appeal’s unanimous decision in the Youth Party timetable proceeding, citing the judgment and its disposition. Used for the reported appellate outcome, including that the Federal High Court judgment was set aside; no judgment prose is reproduced. The separate SDP proceeding and challenges to the 2026 Act are not conflated with this decision.',
+    accessDate: '2026-09-26', creators: ['Premium Times', 'Premium Times Agency Report'], institution: 'Premium Times', publicationDate: '2026-07-16', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'national investigative/news publication reporting an appellate judgment', identifiers: { suit: 'FHC/ABJ/CS/517/2026', judgmentDate: '2026-07-16', court: 'Court of Appeal, Abuja Division' },
+    description: 'Reports that the Court of Appeal set aside the 20 May Federal High Court judgment in Youth Party v INEC, with the appellate court finding the party lacked standing. This is a procedural disposition in that suit, not a general ruling on every deadline or a guarantee that the election timetable will remain unchanged.'
+  },
+  {
+    id: 'nigeriaZlpElectoralActAppealSeptember2026',
+    label: 'Premium Times — Supreme Court reserves judgment in INEC appeal over Electoral Act provisions (17 September 2026)',
+    url: 'https://www.premiumtimesng.com/news/top-news/910298-supreme-court-reserves-judgment-in-inec-appeal-over-electoral-act.html',
+    note: 'Premium Times report consulted for the 16 September Supreme Court hearing and reserved judgment on INEC’s appeal concerning provisions struck down by the Court of Appeal in litigation brought by Zenith Labour Party. It documents reported proceedings, not a final Supreme Court holding; no article wording is reproduced.',
+    accessDate: '2026-09-26', creators: ['Ndidiamaka Ede', 'Premium Times'], institution: 'Premium Times', publicationDate: '2026-09-17', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'national news report of pending Supreme Court electoral-law appeal', identifiers: { reportedHearing: '2026-09-16', parties: ['Independent National Electoral Commission', 'Zenith Labour Party'], statusAtPublication: 'judgment reserved' },
+    description: 'Reports that the Supreme Court heard INEC’s challenge to the Court of Appeal’s invalidation of Electoral Act 2026 provisions on party membership registers and nomination methods, then reserved judgment. The dispute is distinct from the Youth Party and SDP timetable suits; a reserved judgment is not a final holding.'
+  },
+  {
+    id: 'nigeriaElectionAdministrationReformsSuleSambo2026',
+    label: 'Babayo Sule and Usman Sambo — Election Administration and Reforms in Nigeria’s Fourth Republic',
+    url: 'https://www.bloomsbury.com/uk/election-administration-and-reforms-in-nigerias-fourth-republic-9781666974515/',
+    note: 'Bloomsbury Academic publisher record consulted for bibliographic details and stated scope of the book published 19 February 2026. The monograph’s full text and source base were not independently collated; it is used as a book-level election-administration perspective, not as direct evidence about the later 2026 litigation or 2027 cycle.',
+    accessDate: '2026-09-26', creators: ['Babayo Sule', 'Usman Sambo'], institution: 'Bloomsbury Academic', publicationDate: '2026-02-19', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length scholarly study of election administration and reform in Nigeria’s Fourth Republic', identifiers: { isbn: '9781666974515', ebookIsbn: '9781978772069', pages: '224', series: 'African Governance, Development, and Leadership', edition: '1st' },
+    description: 'Publisher metadata describes a book-length analysis of Fourth Republic election administration, electoral reforms, electronic processes, Smart Card Readers and BVAS. It offers a further scholarly lens on institutional administration, while its precise coverage of events after 2023 and the live 2027 timetable is not established by the publisher record.'
+  },
+  {
+    id: 'nigeriaStateGovernorsPowerPolitics2026',
+    label: 'Noah Echa Attah, Usman Sambo and Babayo Sule — Nigeria’s State Governors: Power and Politics in the Fourth Republic',
+    url: 'https://link.springer.com/book/10.1007/978-3-032-18679-9',
+    note: 'Palgrave Macmillan publisher record and metadata consulted for the 2026 book-length study of state governors and the second tier of Nigeria’s constitutional order. The monograph’s full text and state-level evidence were not independently collated; it is a relevant institutional perspective, not a proxy for every state or governor.',
+    accessDate: '2026-09-26', creators: ['Noah Echa Attah', 'Usman Sambo', 'Babayo Sule'], institution: 'Palgrave Macmillan / Springer Nature', publicationDate: '2026-04-13', evidenceRole: 'secondary', confidence: 'medium', languages: ['English'],
+    sourceType: 'book-length scholarly study of Nigerian state governors and federal politics', identifiers: { doi: '10.1007/978-3-032-18679-9', hardcoverIsbn: '978-3-032-18678-2', ebookIsbn: '978-3-032-18679-9', pages: 'xiv, 406', edition: '1st' },
+    description: 'Publisher metadata describes a book-length study of the power and politics of state governors as pivotal actors in the Fourth Republic’s federal system. Its focus adds a state-level institutional dimension, while the full account and variations across Nigeria’s states were not reviewed here.'
+  },
+  {
+    id: 'nigeriaIriPreElectionAssessment2027',
+    label: 'International Republican Institute — pre-election assessment mission to Nigeria’s 2027 general elections (21 August 2026)',
+    url: 'https://www.iri.org/resources/statement-of-findings-and-recommendations-iri-pre-election-assessment-mission-to-nigerias-2027-general-elections/',
+    note: 'IRI statement based on an expert mission in Nigeria on 17–21 August, two long-term analysts and consultations with more than 65 stakeholders. Findings and recommendations are attributed to the mission, not treated as a representative public survey, court finding, final election observation or proof of election outcomes. Link and summarize only; no report text or tables are reproduced.',
+    accessDate: '2026-09-26', creators: ['International Republican Institute'], institution: 'International Republican Institute', publicationDate: '2026-08-21', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional pre-election assessment / observation-mission findings and recommendations', identifiers: { assessmentDates: '2026-08-17/2026-08-21', stakeholderConsultations: 'more than 65', electionDateAssessed: '2027-01-16' },
+    description: 'IRI reports assessments of party competition, election preparations, legal ambiguities, election security and participation based on a time-bounded expert mission and stakeholder consultations. Its judgments and recommendations are attributed to IRI and are not a population-wide measure or final evaluation of the 2027 election.'
+  },
+  {
     id: 'bahruModernEthiopia2001',
     label: 'Bahru Zewde — A History of Modern Ethiopia, 1855–1991',
     url: 'https://boydellandbrewer.com/book/a-history-of-modern-ethiopia-1855-1991-9780852557860/?v=7885444af42e',

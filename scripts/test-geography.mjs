@@ -201,6 +201,20 @@ assert.equal(filterGeographyCases({ country: 'ghana' })[0].id, 'ghanaian-fourth-
 assert.equal(filterGeographyCases({ country: 'ghana' }).find(({ id }) => id === 'ghanaian-fourth-republic-democratic-consolidation-and-economic-strain')?.id, 'ghanaian-fourth-republic-democratic-consolidation-and-economic-strain');
 assert.equal(filterGeographyCases({ country: 'nigeria' }).find(({ id }) => id === 'nigerian-fourth-republic-post-2015-militarized-federal-contestation')?.id, 'nigerian-fourth-republic-post-2015-militarized-federal-contestation');
 assert.equal(filterGeographyCases({ country: 'nigeria' }).find(({ id }) => id === 'nigerian-renewed-hope-reform-and-endbadgovernance-contestation')?.id, 'nigerian-renewed-hope-reform-and-endbadgovernance-contestation');
+const nigeriaRenewedHope2026 = filterGeographyCases({ country: 'nigeria' }).find(({ id }) => id === 'nigerian-renewed-hope-reform-and-endbadgovernance-contestation');
+assert.equal(nigeriaRenewedHope2026.endYear, 2026);
+assert.equal(nigeriaRenewedHope2026.reviewedAt, '2026-09-26');
+assert.ok(nigeriaRenewedHope2026.claim.includes('16 January 2027'));
+assert.ok(nigeriaRenewedHope2026.claim.includes('set aside the May 20 Youth Party judgment on standing'));
+assert.ok(nigeriaRenewedHope2026.claim.includes('reserved judgment'));
+assert.ok(nigeriaRenewedHope2026.claim.includes('not a representative survey'));
+assert.ok(nigeriaRenewedHope2026.limitation.includes('no event-specific book-length study of the 2026 disputes'));
+for (const sourceId of ['nigeriaElectoralAct2026Official', 'nigeriaInec2027CalendarSeptember2026', 'nigeriaInec2027TimetableAppealsJune2026', 'nigeriaYouthPartyAppealJuly2026', 'nigeriaZlpElectoralActAppealSeptember2026', 'nigeriaElectionAdministrationReformsSuleSambo2026', 'nigeriaStateGovernorsPowerPolitics2026', 'nigeriaIriPreElectionAssessment2027']) {
+  assert.ok(nigeriaRenewedHope2026.sourceIds.includes(sourceId), `Nigeria source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Nigeria bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Nigeria rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === nigeriaRenewedHope2026.labelId)?.aliases.includes('Nigeria political history 2023–2026'));
 assert.equal(filterGeographyCases({ country: 'ethiopia' })[0].id, 'ethiopian-imperial-constitutionalization');
 assert.equal(filterGeographyCases({ country: 'tonga' })[0].id, 'tongan-constitutional-reform-1875-2010');
 assert.equal(filterGeographyCases({ country: 'saudi-arabia' })[0].id, 'saudi-basic-law-shura-order');
