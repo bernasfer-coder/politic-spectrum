@@ -10488,6 +10488,51 @@ sources.push(
     accessDate: '2026-09-26', creators: ['Lao News Agency'], institution: 'Khaosan Pathet Lao (KPL)', publicationDate: '2026-09-23', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
     sourceType: 'official parliamentary committee meeting report', identifiers: { meetingDates: '2026-09-21 to 2026-09-22', publicationDate: '2026-09-23', draftBills: '5' },
     description: 'KPL reports that the Standing Committee chaired by Acting President Sounthone reviewed proposals and five draft laws for the next Assembly session. The report documents committee business; it does not establish enactment or implementation.'
+  },
+  {
+    id: 'guyanaCaricomElectionObservation2025',
+    label: 'CARICOM Election Observation Mission — Report on Guyana’s 1 September 2025 General and Regional Elections',
+    url: 'https://caricom.org/wp-content/uploads/Final-Report-Submitted-to-Secretary-General.Formatted.pdf',
+    note: 'Final report submitted 10 October 2025, consulted as CARICOM’s bounded election-observation account and link only. Seat allocation, turnout, polling and campaign findings are attributed to the mission; its conclusion is not treated as proof of each voter’s motives or as consensus among observers. No report wording, table, map or page image is republished.',
+    accessDate: '2026-09-26', creators: ['CARICOM Election Observation Mission'], institution: 'Caribbean Community (CARICOM)', publicationDate: '2025-10-10', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'international regional election-observation final report', identifiers: { electionDate: '2025-09-01', pages: '54', reportSubmitted: '2025-10-10' },
+    description: 'CARICOM mission report on the 2025 general and regional election, including declared National Assembly seats, turnout, polling, tabulation, campaign conditions and recommendations. Its conclusions are attributed to this mission and its scope.'
+  },
+  {
+    id: 'guyanaEuEomFinalReport2025',
+    label: 'European Union Election Observation Mission — Final Report, Guyana General and Regional Elections, 1 September 2025',
+    url: 'https://www.eeas.europa.eu/sites/default/files/2025/documents/Final%20Report_EUEOMGuyana2025.pdf',
+    note: 'EU Election Observation Mission final report consulted for its distinct institutional assessment and link only. Its observations on polling, campaign conditions, inclusion, media and campaign finance are method-bounded findings, not universal accounts of voter experience or a population-wide ideological characterization. No report wording, tables, charts, maps or pages are republished.',
+    accessDate: '2026-09-26', creators: ['European Union Election Observation Mission'], institution: 'European External Action Service / European Union', publicationDate: '2026', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final report', identifiers: { electionDate: '2025-09-01', pages: '77', mission: 'EU EOM Guyana 2025' },
+    description: 'EU EOM final report assessing the 2025 general and regional elections. It distinguishes orderly polling and tabulation from its findings on incumbency advantage, campaign finance, media, political participation and inclusion.'
+  },
+  {
+    id: 'guyanaCarterFinalReport2025',
+    label: 'The Carter Center — Final Report: General and Regional Elections in Guyana (2025)',
+    url: 'https://www.cartercenter.org/publication/final-report-2025-general-and-regional-elections-in-guyana/',
+    note: 'Carter Center publication page dated 23 April 2026 links to the final report on its sixth observation mission. Consulted as an attributed observer source and link only; no report wording, table, image or PDF page is republished, and the mission is not treated as a substitute for independent scholarly history.',
+    accessDate: '2026-09-26', creators: ['The Carter Center'], institution: 'The Carter Center', publicationDate: '2026-04-23', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'international election-observation final report', identifiers: { electionYear: '2025', reportPublicationDate: '2026-04-23', missionNumber: 'sixth observation mission' },
+    description: 'Carter Center report and recommendations concerning Guyana’s 2025 general and regional elections. The report is an attributed election-observation account with a defined mission scope.'
+  },
+  {
+    id: 'guyanaCarterGECOMImpasseAugust2026',
+    label: 'The Carter Center — Statement on the GECOM composition impasse and electoral reform (5 August 2026)',
+    url: 'https://www.cartercenter.org/news/carter-center-calls-on-guyanese-officials-to-end-deadlock-on-elections-commission-composition/',
+    note: 'Carter Center statement following stakeholder discussions in June 2026, consulted as a contemporaneous institutional assessment and link only. Its account of a GECOM composition impasse and possible local-election and reform timetable effects remains explicitly attributed; this record does not independently establish legal deadlines, eventual delay, or later resolution. No wording or image is republished.',
+    accessDate: '2026-09-26', creators: ['The Carter Center'], institution: 'The Carter Center', publicationDate: '2026-08-05', evidenceRole: 'contextual', confidence: 'high', languages: ['English'],
+    sourceType: 'institutional statement on electoral commission composition and reform', identifiers: { statementDate: '2026-08-05', stakeholderDiscussions: 'June 2026' },
+    description: 'The Carter Center reports an impasse concerning GECOM membership and urges action on inclusive constitutional and electoral reform. Its forecast about local-election deadlines and next-election preparation is a dated institutional warning, not a confirmed outcome.'
+  },
+  {
+    id: 'guyanaLaBennettGlobalGuyana2024',
+    label: 'Oneka LaBennett — Global Guyana: Shaping Race, Gender, and Environment in the Caribbean and Beyond (2024)',
+    url: 'https://nyupress.org/9781479827015/global-guyana/',
+    note: 'NYU Press bibliographic and publisher-description page consulted 26 September 2026: paperback ISBN 9781479827015, 256 pages, published April 2024. This contextual book-length feminist ethnography contributes a gendered, racial and environmental political-economy perspective; publisher metadata and description are not treated as a substitute for full-text collation or as research on the 2025 election. Link and original synthesis only; no book wording, image or page is republished.',
+    accessDate: '2026-09-26', creators: ['Oneka LaBennett'], institution: 'New York University Press', publicationDate: '2024-04', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'book-length feminist ethnography and political-economy study', identifiers: { isbn: '9781479827015', pages: '256', title: 'Global Guyana: Shaping Race, Gender, and Environment in the Caribbean and Beyond' },
+    description: 'Book-length study drawing on archival research and oral history to examine Guyanese women’s gendered labor, racial formations, oil and sand extraction, ecological impacts and transnational Caribbean connections. Its subject and method add context but do not establish 2025 election findings.'
   }
 );
 

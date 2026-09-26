@@ -100,6 +100,20 @@ test('Laos 2026 election and parliamentary succession distinguish official data,
   await expect(card).toContainText('Draft laws and adopted planning resolutions are not treated as implemented outcomes');
 });
 
+test('Guyana case distinguishes 2025 declared results, observer assessments and the 2026 GECOM warning', async ({ page }) => {
+  await page.goto('/#geography?case=guyanese-postcolonial-cooperative-socialist-and-ethnic-coalitional-order');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('PPP/C 36, We Invest in Nationhood (WIN) 16, APNU 12 and Forward Guyana Movement 1 of 65 seats');
+  await expect(card).toContainText('CARICOM’s observer mission reports');
+  await expect(card).toContainText('the EU mission described efficient polling and tabulation');
+  await expect(card).toContainText('August 5 follow-up reports a continuing impasse');
+  await expect(card).toContainText('not an independently established adjudication');
+  await expect(card).toContainText('No event-specific book-length study of the 2025 election or 2026 commission impasse');
+  await expect(card).toContainText('not a current-country score');
+});
+
 test('Myanmar 2026 case distinguishes official election claims, UN reporting and the earlier transition record', async ({ page }) => {
   await page.goto('/#geography?case=myanmar-post-2021-spring-revolution-and-competing-governance');
   const card = page.locator('.geo-card');

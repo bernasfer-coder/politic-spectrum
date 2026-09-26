@@ -30,6 +30,22 @@ for (const sourceId of ['haitiCepCalendar2026', 'haitiCepStatusSeptember2026', '
   assert.ok(haitiCase.sourceIds.includes(sourceId), `Haiti source missing: ${sourceId}`);
   assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Haiti rights/provenance review missing: ${sourceId}`);
 }
+const guyanaCase = GEOGRAPHY_CASES.find(({ id }) => id === 'guyanese-postcolonial-cooperative-socialist-and-ethnic-coalitional-order');
+assert.equal(guyanaCase.endYear, 2026);
+assert.equal(guyanaCase.reviewedAt, '2026-09-26');
+assert.ok(guyanaCase.claim.includes('PPP/C 36, We Invest in Nationhood (WIN) 16, APNU 12 and Forward Guyana Movement 1 of 65 seats'));
+assert.ok(guyanaCase.claim.includes('These are attributed, method-bounded observer judgments'));
+assert.ok(guyanaCase.claim.includes('not a study of the 2025 election'));
+assert.ok(guyanaCase.claim.includes('not an independently established adjudication'));
+assert.ok(guyanaCase.claim.includes('These are dated institutional records and source-attributed interpretations, not numerical scores'));
+assert.ok(guyanaCase.limitation.includes('No event-specific book-length study of the 2025 election or 2026 commission impasse'));
+assert.ok(guyanaCase.limitation.includes('Post-August 2026 developments'));
+for (const sourceId of ['guyanaCaricomElectionObservation2025', 'guyanaEuEomFinalReport2025', 'guyanaCarterFinalReport2025', 'guyanaCarterGECOMImpasseAugust2026', 'guyanaLaBennettGlobalGuyana2024']) {
+  assert.ok(guyanaCase.sourceIds.includes(sourceId), `Guyana source missing: ${sourceId}`);
+  assert.ok(RESEARCH_SOURCES.some(({ id }) => id === sourceId), `Guyana bibliography source missing: ${sourceId}`);
+  assert.equal(RIGHTS_RECORDS.researchSources[sourceId]?.reviewedAt, '2026-09-26', `Guyana rights/provenance review missing: ${sourceId}`);
+}
+assert.ok(GEOGRAPHY_LABELS.find(({ id }) => id === guyanaCase.labelId)?.aliases.includes('Guyana political history 1966–2026'));
 for (const { id } of GEOGRAPHY_RELATIONSHIPS) assert.ok(GEOGRAPHY_CASES.some((item) => item.relationship === id));
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], startYear: 9999, sourceIds: ['missing'] }] }).length >= 3);
 assert.ok(validateGeography({ ...context, cases: [{ ...GEOGRAPHY_CASES[0], limitation: '', relationship: 'current-country-score' }] }).length >= 2);
