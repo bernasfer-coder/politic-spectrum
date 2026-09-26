@@ -11449,6 +11449,23 @@ sources.push({
 });
 
 sources.push({
+  id: 'saoTomeRtpCampaignClose2026',
+  label: 'RTP África — “Termino da campanha eleitoral em STP”, História do Dia, episode 88 (25 September 2026)',
+  url: 'https://www.rtp.pt/play/p15659/e956432/historia-do-dia',
+  note: 'RTP Play’s episode page, published 25 September 2026, describes the election campaign as officially ended and says the programme heard from the President of São Tomé and Príncipe’s National Election Commission. The page is a broadcaster’s programme summary, not a transcript or an independent observation of campaign compliance; the recording was not independently transcribed. No audio, wording or image is reproduced.',
+  accessDate: '2026-09-26',
+  creators: ['RTP África'],
+  institution: 'Rádio e Televisão de Portugal (RTP)',
+  publicationDate: '2026-09-25',
+  evidenceRole: 'secondary',
+  confidence: 'medium',
+  languages: ['Portuguese'],
+  sourceType: 'public-broadcaster radio programme episode and editorial summary',
+  identifiers: { programme: 'História do Dia', episode: '88', publicationDate: '2026-09-25', reportedSubject: 'official end of legislative, local and regional election campaigns; National Election Commission president interviewed' },
+  description: 'RTP África’s dated programme page reports that the campaign had officially ended and that the National Election Commission president was interviewed. This records the broadcaster’s summary, not a full transcript, independent monitoring or proof of compliance.'
+});
+
+sources.push({
   id: 'gambiaForoyaaIecRoadmap2026',
   label: 'Yankuba Jallow — “IEC Sets Presidential Nomination Dates, Other Key Election Activities” (Foroyaa, 11 September 2026)',
   url: 'https://foroyaa.net/iec-sets-presidential-nomination-dates-other-key-election-activities/',

@@ -421,7 +421,10 @@ const saoTomeElection = GEOGRAPHY_CASES.find(({ id }) => id === 'sao-tome-2026-n
 assert.equal(saoTomeElection?.datePrecision, 'snapshot');
 assert.equal(saoTomeElection?.reviewedAt, '2026-09-26');
 assert.ok(saoTomeElection?.claim.includes('poll remained scheduled for 27 September 2026'));
+assert.ok(saoTomeElection?.claim.includes('the National Election Commission president was interviewed'));
+assert.ok(saoTomeElection?.claim.includes('not a full transcript or independent observation'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeElectoralLaw1990CampaignPeriod'));
+assert.ok(saoTomeElection?.sourceIds.includes('saoTomeRtpCampaignClose2026'));
 assert.ok(saoTomeElection?.claim.includes('24:00 on the antevéspera of election day'));
 assert.ok(saoTomeElection?.limitation.includes('not evidence of compliance'));
 assert.equal(saoTomeElection?.confidence, 'medium');
@@ -436,12 +439,14 @@ assert.ok(saoTomeElection?.claim.includes('neither observer mission had publishe
 assert.ok(saoTomeElection?.limitation.includes('Acórdão 50/2026'));
 assert.ok(saoTomeElection?.limitation.includes('visually reviewed through its official docket link'));
 assert.ok(saoTomeElection?.limitation.includes('not independent forensic confirmation'));
+assert.ok(saoTomeElection?.limitation.includes('does not establish campaign-wide compliance'));
 assert.ok(saoTomeElection?.limitation.includes('No voting, counting, certified results'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeConstitutionalCourtLegislativeCandidacies2026'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeConstitutionalCourtAcordao502026'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeCplpObserverDeployment2026'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeCampaignProtestsDw2026'));
 assert.ok(saoTomeElection?.sourceIds.includes('saoTomeMciCandidacyChallengeRstp2026'));
+assert.ok(BIBLIOGRAPHY_RECORDS.find(({ citationIds }) => citationIds.researchSourceIds.includes('saoTomeRtpCampaignClose2026')));
 assert.deepEqual(GEOGRAPHY_PLACES.find(({ id }) => id === 'sao-tome-legislative-election-2026')?.countryIds, []);
 assert.ok(filterGeographyCases({ ...GEOGRAPHY_DEFAULTS, continent: 'Africa' }).some(({ id }) => id === saoTomeElection.id));
 assert.ok(filterGeographyCases({ ...GEOGRAPHY_DEFAULTS, q: 'Sao Tome' }).some(({ id }) => id === saoTomeElection.id));

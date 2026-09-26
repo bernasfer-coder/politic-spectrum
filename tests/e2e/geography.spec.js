@@ -62,6 +62,18 @@ test('Mauritius election case distinguishes returns, platform restriction and pr
   await expect(card).toContainText('No collective voter motive');
 });
 
+test('São Tomé and Príncipe pre-election snapshot attributes campaign-close notice to RTP', async ({ page }) => {
+  await page.goto('/#geography?case=sao-tome-2026-national-assembly-election-pre-election');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText('poll remained scheduled for 27 September 2026');
+  await expect(card).toContainText('the National Election Commission president was interviewed');
+  await expect(card).toContainText('not a full transcript or independent observation');
+  await expect(card).toContainText('does not establish campaign-wide compliance');
+  await card.locator('.geo-evidence summary').click();
+  await expect(card.locator('a[href*="saoTomeRtpCampaignClose2026"]')).toBeVisible();
+});
+
 test('Tonga case separates the 2025 parliamentary transition from pending October 2026 by-elections', async ({ page }) => {
   await page.goto('/#geography?case=tongan-post-2010-constitutional-and-electoral-transition');
   const card = page.locator('.geo-card');

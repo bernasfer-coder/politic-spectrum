@@ -3014,6 +3014,11 @@ saoTomeElection2026.locator += ' National Assembly, Lei n.º 11/90, Lei Eleitora
 saoTomeElection2026.sourceIds.push('saoTomeElectoralLaw1990CampaignPeriod');
 saoTomeElectionLabel2026.sourceIds.push('saoTomeElectoralLaw1990CampaignPeriod');
 saoTomeElectionLabel2026.description += ' The statute sets the ordinary campaign period to end at 24:00 on the antevéspera of election day; this is a legal timetable, not an assessment of compliance.';
+saoTomeElection2026.evidenceKind += '; RTP África/RTP Play’s 25 September programme listing summarizing the reported campaign close and CEN president interview';
+saoTomeElection2026.claim += ' RTP África’s 25 September programme page says the campaign had officially ended and that the National Election Commission president was interviewed. This is the broadcaster’s programme summary, not a full transcript or independent observation that all actors complied with the campaign rules; no campaign activity on 26 September is inferred.';
+saoTomeElection2026.limitation += ' The RTP Play page is a brief programme summary rather than a transcript; the CEN president’s interview was not independently transcribed, and the page does not establish campaign-wide compliance.';
+saoTomeElection2026.locator += ' RTP Play, História do Dia, episode 88 (25 September 2026): editorial summary says the campaign had officially ended and the CEN president was interviewed; recording not transcribed for this entry.';
+saoTomeElection2026.sourceIds.push('saoTomeRtpCampaignClose2026');
 const saoTomeElectionPlace2026 = GEOGRAPHY_PLACES.find(({ id }) => id === 'sao-tome-legislative-election-2026');
 saoTomeElectionPlace2026.type = saoTomeElectionPlace2026.type.replace('as of 25 September 2026', 'as of 26 September 2026');
 saoTomeElectionPlace2026.note = saoTomeElectionPlace2026.note.replace('through 25 September.', 'through 26 September.');
