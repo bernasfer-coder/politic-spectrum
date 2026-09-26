@@ -52,6 +52,17 @@ test('New Zealand 2026 update distinguishes scheduled election and future local-
   await expect(card).toContainText('no candidate, polling, result, turnout, observation or post-election conclusion is asserted');
 });
 
+test('Spain 2026 update distinguishes partial constitutional review, two EU references and a separate legislative defeat', async ({ page }) => {
+  await page.goto('/#geography?case=spanish-democratic-consolidation-and-regional-pluralism');
+  const card = page.locator('.geo-card');
+  await expect(card).toHaveCount(1);
+  await card.locator('.geo-evidence summary').click();
+  await expect(card).toContainText('partially granted a challenge');
+  await expect(card).toContainText('two distinct preliminary references');
+  await expect(card).toContainText('not evidence that the government fell');
+  await expect(card).toContainText('No event-specific book-length scholarly study');
+});
+
 test('France 2026 case distinguishes Article 49(3) budget adoption from the still-proposed 2027 budget', async ({ page }) => {
   await page.goto('/#geography?case=french-fifth-republic-constitutional-and-political-history');
   const card = page.locator('.geo-card');

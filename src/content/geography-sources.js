@@ -2626,6 +2626,51 @@ const sources = [
     description: 'Primary judicial record for the 2017 constitutional conflict over Catalonia’s referendum law. The judgment documents the Court’s legal reasoning and disposition; it does not settle the political, social or historical meaning of Catalan and Spanish national claims.',
   },
   {
+    id: 'spainConstitutionalCourtAmnesty2025',
+    label: 'Tribunal Constitucional de España — STC 137/2025 on Organic Law 1/2024 (26 June 2025)',
+    url: 'https://hj.tribunalconstitucional.es/es/Resolucion/Show/31575',
+    note: 'Official Constitutional Court judgment consulted in Spanish. It partially grants the challenge, declaring a portion of Article 1.1 unconstitutional within the stated scope, nullifying the second paragraph of Article 1.3 and interpreting Articles 13.2 and 13.3 to require hearing all parties; the rest of the challenge is dismissed. No judgment wording or dissent text is reproduced. This disposition is not characterized as wholesale invalidation or blanket approval of Organic Law 1/2024.',
+    accessDate: '2026-09-26', creators: ['Tribunal Constitucional de España'], institution: 'Tribunal Constitucional de España', publicationDate: '2025-06-26', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'constitutional-court judgment / primary legal record', identifiers: { ecli: 'ES:TC:2025:137' },
+    description: 'Primary judicial record of the Spanish Constitutional Court’s partial disposition of a challenge to the 2024 amnesty law. It establishes the Court’s own holdings and reasoning, not the resolution of every individual proceeding or the political legitimacy of the law.',
+  },
+  {
+    id: 'spainCjeuSociedadCivilCatalana2026',
+    label: 'Court of Justice of the European Union — Commission v Spain / Sociedad Civil Catalana, Case C-666/24, judgment of 16 July 2026',
+    url: 'https://curia.europa.eu/juris/document/document.jsf?docid=313635&doclang=en',
+    note: 'Official CJEU judgment consulted in English. It interprets the EU Terrorism Directive as not per se precluding the national amnesty for the referred conduct, subject to the ruling’s conditions concerning intentional serious human-rights breaches; national courts assess the relevant individual conduct. It also addresses the duty of sincere cooperation and effectiveness of the preliminary-reference procedure. No judgment wording is reproduced and the ruling is not treated as a disposition of every domestic case.',
+    accessDate: '2026-09-26', creators: ['Court of Justice of the European Union'], institution: 'Court of Justice of the European Union', publicationDate: '2026-07-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Court of Justice judgment / preliminary ruling', identifiers: { case: 'C-666/24', ecli: 'EU:C:2026:589' },
+    description: 'Primary EU judicial record resolving the referred questions within the scope of Case C-666/24. It clarifies EU-law conditions but leaves application to particular conduct to national courts and does not establish a general political assessment of Spain.',
+  },
+  {
+    id: 'spainCjeuAcvot2026',
+    label: 'Court of Justice of the European Union — ACVOT and Others, Case C-523/24, judgment of 16 July 2026 and official case docket',
+    url: 'https://infocuria.curia.europa.eu/tabs/redirect/juris/liste.jsf?num=c-523%2F24',
+    note: 'Official CJEU docket and judgment record consulted in English, cross-checked against the Court’s 16 July 2026 press release, which is expressly non-binding. The ruling addresses the referred questions on EU-budget financial interests and national procedural time limits; it does not find adverse EU-budget effects solely from a reduction in Spain’s national budget, and a national procedural rule cannot undermine the effectiveness of a pending preliminary reference. No press-release or judgment wording is reproduced; conclusions are confined to the referred questions.',
+    accessDate: '2026-09-26', creators: ['Court of Justice of the European Union'], institution: 'Court of Justice of the European Union', publicationDate: '2026-07-16', evidenceRole: 'primary', confidence: 'high', languages: ['English'],
+    sourceType: 'Court of Justice judgment and official case docket / preliminary ruling', identifiers: { case: 'C-523/24', ecli: 'EU:C:2026:588' },
+    description: 'Primary EU judicial record of the specific preliminary questions in Case C-523/24. The Court’s press communication is a non-binding aid to understanding; the judgment governs, and the decision does not resolve every domestic amnesty proceeding.',
+  },
+  {
+    id: 'spainCongressInterestGroupsDecreeVote2026',
+    label: 'Congreso de los Diputados — convalidation and repeal record for Royal Decree-Law 21/2026 (16–18 September 2026)',
+    url: 'https://www.congreso.es/es/busqueda-de-iniciativas?_iniciativas_id=130%2F000052&_iniciativas_legislatura=XV&_iniciativas_mode=mostrarDetalle&p_p_id=iniciativas&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal',
+    note: 'Official Congress initiative and plenary record consulted in Spanish. The convalidation motion was rejected on 16 September 2026 (155 votes in favour, 179 against, 12 abstentions); the docket records the decree-law as repealed, with the formal BOE publication dated 18 September. It is a specific measure and vote, not proof of a general legislative breakdown, public opinion, or the end of the government.',
+    accessDate: '2026-09-26', creators: ['Congreso de los Diputados'], institution: 'Congreso de los Diputados', publicationDate: '2026-09-18', evidenceRole: 'primary', confidence: 'high', languages: ['Spanish'],
+    sourceType: 'official legislative docket and recorded parliamentary vote', identifiers: { initiative: '130/000052', decreeLaw: 'Real Decreto-ley 21/2026' },
+    description: 'Primary parliamentary record of a concrete failed convalidation and subsequent repeal. It documents the recorded procedural outcome and vote totals, not motives of legislators or a representative judgment about Spain’s political system.',
+  },
+  {
+    id: 'spainBohiguesSendraPoliticalData2025',
+    label: 'Asbel Bohigues and Mariana Sendra — “Spain: Political developments and data in 2025: Entering the second half of the legislature with an embattled Government”',
+    url: 'https://www.cambridge.org/core/journals/political-data-yearbook/article/spain-political-developments-and-data-in-2025-entering-the-second-half-of-the-legislature-with-an-embattled-government/9A1312D44D7E05EE535147E564CA9A47',
+    note: 'Peer-reviewed Political Data Yearbook article, First View published 9 September 2026, DOI 10.1017/S2047884426100056, pp. 1–10. Publisher metadata and abstract consulted for the 2025 political chronology. No article wording, figure or table is reproduced. Allegations and investigations are attributed as reported developments, not treated as adjudicated findings; the article does not cover 2026 events.',
+    accessDate: '2026-09-26', creators: ['Asbel Bohigues', 'Mariana Sendra'], institution: 'Cambridge University Press', publicationDate: '2026-09-09', evidenceRole: 'secondary', confidence: 'high', languages: ['English'],
+    sourceType: 'peer-reviewed political-data yearbook article', identifiers: { doi: '10.1017/S2047884426100056', pages: '1–10', volume: 'First View' },
+    description: 'Peer-reviewed, dated account of 2025 government and parliamentary developments. It supplies a contemporary scholarly interpretation before the selected 2026 legal and legislative events, not a book-length political history or comprehensive explanation of coalition dynamics.',
+  },
+  {
     id: 'maxwellPortugueseDemocracy1995',
     label: 'Kenneth Maxwell — The Making of Portuguese Democracy',
     url: 'https://www.cambridge.org/core/books/the-making-of-portuguese-democracy/0C867CB2AC5BE5A81B1C1ED6DFCDD6DC',
@@ -10790,7 +10835,7 @@ export const GEOGRAPHY_SOURCE_METADATA = Object.fromEntries(sources.map((source)
       : source.id.startsWith('png') || source.id.startsWith('griffinNelsonFirthPapua') || source.id.startsWith('dorneyPapua') || source.id.startsWith('mayStateSocietyPapua') || source.id.startsWith('howesPillaiPapua') || source.id.startsWith('howesDaviesFoxStruggleReformPapua') ? 'Papua New Guinean constitutional, customary and postcolonial political history'
         : source.id.startsWith('timor') || source.id.startsWith('molnarTimor') || source.id.startsWith('kammenIndependentTimor') || source.id.startsWith('foxBaboSoares') || source.id.startsWith('pereiraFeijoLongRoadTimor') || source.id.startsWith('roqueTimor') || source.id.startsWith('feijoConstitutionalNormsTimor') ? 'Timor-Leste decolonization, resistance and constitutional political history'
         : source.id.startsWith('cambodia') || source.id.startsWith('chandlerHistoryCambodia') || source.id.startsWith('hughesPoliticalEconomyCambodia') || source.id.startsWith('robertsPoliticalTransitionCambodia') || source.id.startsWith('etchesonRiseDemiseKampuchea') || source.id.startsWith('strangioHunSensCambodia') || source.id.startsWith('kheangUnCambodia') ? 'Cambodian conflict, reconstruction and constitutional political history'
-        : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
+        : source.id.startsWith('maravallSpanish') || source.id.startsWith('tusellSpanish') || source.id.startsWith('spainConstitution') || source.id.startsWith('spainCjeu') || source.id.startsWith('spainCongressInterestGroups') || source.id.startsWith('spainBohiguesSendra') || source.id.startsWith('balfourPoliticsContemporarySpain') || source.id.startsWith('guntherMonteroBotellaDemocracySpain') || source.id.startsWith('magoneContemporarySpanishPolitics') || source.id.startsWith('muroLagoOxfordSpanishPolitics') || source.id.startsWith('bellidoConstitutionalDebatesSpain') || source.id.startsWith('spainElection2023Official') || source.id.startsWith('spainCataloniaCourt2017') ? 'Spanish democratic transition, constitutional and political history'
       : source.id.startsWith('maxwellPortuguese') || source.id.startsWith('rezolaPortuguese') || source.id.startsWith('costaPintoMonteiroPoliticalHistory') || source.id.startsWith('oxfordHandbookPortuguesePolitics') || source.id.startsWith('costaPintoTeixeiraEurocrisis') || source.id.startsWith('magonePortugalEuropeanUnion') || source.id.startsWith('portugalLegislativeElection2024Official') ? 'Portuguese democratic, constitutional, Europeanization and political history'
       : source.id.startsWith('jamaica') ? 'Jamaican labour, decolonization, constitutional and political history'
       : source.id.startsWith('haiti') ? 'Haitian post-Duvalier, constitutional, democratic-transition and political history'

@@ -107,6 +107,16 @@ assert.equal(filterGeographyCases({ country: 'portugal' })[0].id, 'portugal-demo
 assert.equal(filterGeographyCases({ country: 'south-africa' })[0].id, 'south-africa-constitutional-transition');
 assert.equal(filterGeographyCases({ country: 'spain' })[0].id, 'spain-democratic-transition-constitutional-founding');
 assert.equal(filterGeographyCases({ country: 'spain' }).find(({ id }) => id === 'spanish-democratic-consolidation-and-regional-pluralism')?.id, 'spanish-democratic-consolidation-and-regional-pluralism');
+const spainPluralism2026 = filterGeographyCases({ country: 'spain' }).find(({ id }) => id === 'spanish-democratic-consolidation-and-regional-pluralism');
+assert.equal(spainPluralism2026.endYear, 2026);
+assert.equal(spainPluralism2026.reviewedAt, '2026-09-26');
+assert.equal(filterGeographyCases({ country: 'spain' }).find(({ id }) => id === 'spain-democratic-transition-constitutional-founding').endYear, 1982);
+assert.ok(spainPluralism2026.claim.includes('partially granted a challenge'));
+assert.ok(spainPluralism2026.claim.includes('not evidence that the government fell'));
+assert.ok(spainPluralism2026.limitation.includes('No event-specific book-length scholarly study'));
+for (const sourceId of ['spainConstitutionalCourtAmnesty2025', 'spainCjeuSociedadCivilCatalana2026', 'spainCjeuAcvot2026', 'spainCongressInterestGroupsDecreeVote2026', 'spainBohiguesSendraPoliticalData2025']) {
+  assert.ok(spainPluralism2026.sourceIds.includes(sourceId), `Spain 2026 source missing: ${sourceId}`);
+}
 assert.equal(filterGeographyCases({ country: 'germany' })[0].id, 'west-german-constitutional-reconstruction');
 assert.equal(filterGeographyCases({ country: 'germany' }).find(({ id }) => id === 'german-reunified-constitutional-democratic-order')?.id, 'german-reunified-constitutional-democratic-order');
 assert.ok(filterGeographyCases({ country: 'germany' }).some(({ id }) => id === 'german-post-2021-coalition-crisis-and-2025-electoral-contestation'));
